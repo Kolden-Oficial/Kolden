@@ -1,0 +1,17 @@
+.env
+.env.*
+*.env
+data/
+s3_data/
+redis_data/
+*.pem
+*.key
+*.cert
+*.p12
+.claude/
+node_modules/
+.npm/
+*.log
+logs/
+.DS_Store
+Thumbs.db
