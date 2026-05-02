@@ -1,0 +1,134 @@
+# Kolden OS
+
+> Backbone operacional da Kolden e plataforma self-hosted de IA da empresa.
+> Filosofia: soberania de dados, vendor-agnóstico, testar todas as IAs do mercado.
+
+## 1. Identidade
+
+A **Kolden** é a empresa. O **Kolden OS** é a infraestrutura interna que sustenta as operações da empresa e, ao mesmo tempo, serve como banco de testes vivo de modelos e ferramentas de IA — proprietários e open-source — sob nosso controle.
+
+Princípios:
+- **Soberania de dados**: tudo roda localmente ou em infra própria. Nada essencial depende de SaaS de terceiros.
+- **Vendor-agnóstico**: testamos todos os provedores de LLM (OpenAI, Anthropic, Google, Mistral, DeepSeek, modelos locais via Ollama, etc.) lado a lado, com chaves trocáveis.
+- **Privacidade por padrão**: busca, storage e histórico de conversas vivem dentro da nossa rede.
+
+## 2. Estado atual
+
+- **Repositório**: `Koldenoficial/Kolden` (https://github.com/Koldenoficial/Kolden.git)
+- **Branch principal**: `main`
+- **Ambiente**: WSL2 (Linux 6.6, Ubuntu) em `/home/kolden/kolden/`
+- **Exposição**: localhost-only. Não há reverse proxy, TLS ou tunnel configurado.
+- **Stack ativa**: somente LobeHub (`./lobehub/`). Nada mais até segunda ordem.
+
+## 3. Arquitetura técnica
+
+Stack orquestrada por `lobehub/docker-compose.yml`, network bridge `lobe-network`.
+
+| Serviço      | Imagem                          | Portas (host)               | Persistência            | Função                                              |
+|--------------|---------------------------------|-----------------------------|-------------------------|------------------------------------------------------|
+| lobe         | `lobehub/lobehub`               | `3210`                      | —                       | UI/backend de chat com LLMs                          |
+| postgresql   | `paradedb/paradedb:latest-pg17` | `5432`                      | bind `./lobehub/data`   | Banco principal; ParadeDB = Postgres 17 + busca/BM25 |
+| redis        | `redis:7-alpine`                | `6379`                      | volume `redis_data`     | Cache, filas, sessão                                 |
+| rustfs       | `rustfs/rustfs:latest`          | `9000` (S3), `9001` (admin) | volume `rustfs-data`    | Storage S3-compatível (uploads em conversas)         |
+| rustfs-init  | `minio/mc:latest`               | —                           | —                       | Job one-shot: cria bucket `lobe` e aplica policy     |
+| searxng      | `searxng/searxng`               | só rede interna             | —                       | Motor de busca web privado consumido pelo LobeHub    |
+
+**Fluxo de dados**: LobeHub fala com Postgres (histórico, embeddings/BM25), Redis (cache/sessão), RustFS (S3 para mídia/avatares), SearxNG (busca web). Tudo via DNS interno do compose.
+
+**Arquivos de configuração relevantes**:
+- `lobehub/docker-compose.yml` — orquestração completa
+- `lobehub/.env` — secrets e portas (NÃO versionado)
+- `lobehub/bucket.config.json` — policy S3 do bucket `lobe` (leitura pública para servir mídia em conversas)
+- `lobehub/searxng-settings.yml` — configuração do SearxNG
+
+## 4. Padrões e convenções
+
+- **Idioma**: **PT-BR em tudo** — código, comentários, commits, docs, mensagens de erro custom. Identidade Kolden é em português; manter consistência mesmo em mensagens de commit.
+- **Commits**: estilo `tipo: assunto — detalhe` em minúsculas, com travessão (em-dash `—`, não hífen). Referência: `init: Kolden OS — estrutura base`.
+- **Estrutura de diretórios**: `kolden/<servico>/` — cada stack docker-compose vive isolada em sua pasta. Configs por serviço ficam dentro da própria pasta.
+- **Naming de containers**: prefixo `lobe-` na stack do LobeHub (`lobehub`, `lobe-postgres`, `lobe-redis`, `lobe-rustfs`, `lobe-rustfs-init`, `lobe-searxng`). Próximas stacks devem replicar o padrão `<stack>-<serviço>`.
+- **Variáveis**: tudo parametrizado via `.env` no diretório do serviço. Nada hardcoded em `docker-compose.yml`.
+- **Volumes**: dados crus em bind mount (`./data`) quando precisar inspecionar; volumes nomeados para o que não precisa ser tocado direto.
+
+## 5. Regras de segurança inegociáveis
+
+Estas regras valem mesmo em dev local. Não negociar.
+
+1. **Nunca versionar secrets**. `.env`, `.env.*`, `*.env`, `*.pem`, `*.key`, `*.cert`, `*.p12` estão no `.gitignore`. Antes de `git add`, conferir.
+2. **Nunca usar `git add -A` ou `git add .`** — sempre adicionar arquivos por nome. Evita commitar acidentalmente `.env`, `data/`, `redis_data/`, `s3_data/`.
+3. **Não expor portas para a rede**. Hoje 5432, 6379, 9000 e 9001 só ficam acessíveis em localhost porque o WSL2 isola. Se um dia migrar para VPS, *re-bindar para 127.0.0.1* ou colocar atrás de reverse proxy antes de qualquer outra coisa.
+4. **`bucket.config.json` torna o bucket `lobe` legível por qualquer um com a URL**. É necessário para servir mídia das conversas. Implicação: nada sensível deve ir parar lá. Tratar como CDN público.
+5. **Nunca rodar `--no-verify` em commits** ou bypassar hooks/assinatura sem pedido explícito.
+6. **Operações destrutivas exigem confirmação humana** — `docker compose down -v`, `rm -rf` em `data/`, `DROP DATABASE`, `git push --force`, `git reset --hard`. Mesmo que o caminho pareça óbvio, parar e perguntar.
+7. **Secrets do `.env` atual** (`KEY_VAULTS_SECRET`, `AUTH_SECRET`, `POSTGRES_PASSWORD`, `RUSTFS_SECRET_KEY`, `JWKS_KEY`) são adequados para localhost. Antes de qualquer exposição externa, **rotacionar todos**.
+
+## 6. Como trabalhamos juntos
+
+Estas são instruções operacionais para o Claude Code em sessões futuras.
+
+### Idioma
+PT-BR em tudo o que for produzido — commits, comentários, docs, PRs, mensagens. Inglês só quando o ecossistema impuser (nome de função em lib, chave de config externa, log de terceiro).
+
+### Plan-mode obrigatório antes de mexer em infra
+Qualquer alteração em `docker-compose.yml`, `.env`, `bucket.config.json`, `searxng-settings.yml`, volumes, ou que afete dados em `data/` precisa **passar por plan-mode antes**. Edits triviais em arquivos versionados (README, scripts auxiliares) podem ser diretos.
+
+### Commit policy estrita
+**Só commitar ou dar push quando o Ronan pedir com todas as letras.** Mesmo após terminar uma tarefa que claramente justifica commit, parar e esperar ordem. Não antecipar. Não sugerir ad nauseam.
+
+### Tom e profundidade
+Arquiteto técnico sênior. Direto. Sem otimismo performático ("ótima pergunta!"), sem hedging desnecessário, sem auto-elogio. Quando algo é incerto, dizer que é incerto. Quando uma decisão tem trade-off, nomear o trade-off.
+
+### Escopo
+Não adicionar features além do pedido. Não refatorar de carona. Não criar abstrações para "futuro hipotético". Bug fix conserta o bug — ponto.
+
+### Autonomia calibrada
+- **OK fazer direto**: leitura de arquivos, busca, edits em arquivos não-críticos versionados, builds e testes locais.
+- **Pedir confirmação**: qualquer coisa em §5, qualquer mudança em infra, qualquer ação que toque rede externa, qualquer git destrutivo.
+
+## 7. Comandos críticos
+
+```bash
+# Subir a stack
+cd ~/kolden/lobehub && docker compose up -d
+
+# Ver status
+docker compose ps
+
+# Logs em tempo real (lobe é o serviço principal)
+docker compose logs -f lobe
+
+# Derrubar preservando dados
+docker compose down
+
+# Derrubar APAGANDO volumes (redis_data, rustfs-data) — DESTRUTIVO
+docker compose down -v
+
+# Atualizar imagens
+docker compose pull && docker compose up -d
+
+# Acesso ao Postgres (ParadeDB)
+docker exec -it lobe-postgres psql -U postgres -d lobechat
+
+# Backup do banco
+docker exec lobe-postgres pg_dump -U postgres lobechat > backup_$(date +%Y%m%d).sql
+
+# UIs
+# LobeHub:        http://localhost:3210
+# RustFS console: http://localhost:9001
+```
+
+## 8. Fluxos de trabalho recorrentes
+
+- **Adicionar provedor de LLM novo**: editar `lobehub/.env` com a chave do provedor (vars padrão do LobeHub, e.g. `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`), `docker compose up -d` para reiniciar só o serviço `lobe`. Nunca commitar a chave.
+- **Inspecionar mídia armazenada**: console RustFS em `localhost:9001` (login com `RUSTFS_ACCESS_KEY`/`RUSTFS_SECRET_KEY` do `.env`).
+- **Resetar instalação preservando uploads**: `docker compose down`, `rm -rf lobehub/data` (apaga só Postgres), `docker compose up -d`.
+- **Mudar porta de algum serviço**: editar a variável correspondente em `.env` (`LOBE_PORT`, `RUSTFS_PORT`, `RUSTFS_ADMIN_PORT`), recriar com `docker compose up -d`.
+
+## 9. O que NÃO fazer
+
+- Não escrever em inglês arquivos de identidade do Kolden (READMEs, docs internas, CLAUDE.md).
+- Não introduzir nova stack/serviço sem pedido explícito.
+- Não alterar `searxng-settings.yml` sem entender o impacto — o arquivo tem 66KB de configuração de motores de busca.
+- Não rotacionar secrets sem combinar — quebra a sessão de quem está logado.
+- Não usar `mkdir -p data/` à toa — o diretório é criado pelo Postgres na primeira subida com permissões corretas (UID 999).
+- Não tentar fazer `git push` para `main` direto sem pedido. Não tem proteção de branch ainda; o cuidado é manual.
