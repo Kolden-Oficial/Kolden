@@ -1,0 +1,119 @@
+# Workflow de Desenvolvimento de História
+# Do conceito à narrativa polida
+
+workflow:
+  id: wf-story-development
+  name: "Desenvolvimento de História"
+  trigger: "*story-development"
+  entry_agent: story-chief
+  estimated_duration: "1-3 hours"
+  description: |
+    Desenvolvimento completo de história, do conceito bruto até a seleção de framework,
+    design estrutural, rascunho, análise e polimento. Direciona através de agentes
+    especialistas com base no gênero e adequação ao framework.
+
+  type: sequential
+  sequence:
+    - agent: story-chief
+      action: diagnose
+      creates: framework_selection
+    - agent: "{specialist}"
+      action: build-narrative
+      creates: draft
+    - agent: shawn-coyne
+      action: analyze-story
+      creates: analysis
+    - agent: "{specialist}"
+      action: build-narrative
+      creates: final_story
+
+phases:
+  - id: phase_1_concept
+    name: "Conceito e Seleção de Framework"
+    agent: story-chief
+    task: build-narrative.md
+    depends_on: []
+    description: "Analise o conceito, determine o gênero, selecione o melhor framework narrativo"
+    checkpoint:
+      gate: "Framework selecionado com o raciocínio confirmado pelo usuário"
+      veto: "PARE se o conceito estiver vago demais — faça perguntas esclarecedoras primeiro"
+    outputs:
+      - framework_selection
+      - genre_identification
+      - initial_concept_analysis
+
+  - id: phase_2_structure
+    name: "Construir a Estrutura Narrativa"
+    agent: "{routed by framework: joseph-campbell | blake-snyder | dan-harmon}"
+    task: build-narrative.md
+    depends_on: [phase_1_concept]
+    description: "Construa o framework estrutural completo com todos os beats definidos"
+    checkpoint:
+      gate: "Todos os beats estruturais preenchidos com pontos de virada e estados emocionais"
+      veto: "PARE se faltarem beats obrigatórios para o framework selecionado"
+    outputs:
+      - narrative_structure
+      - beat_sheet
+      - emotional_arc
+
+  - id: phase_3_draft
+    name: "Desenvolver e Rascunhar"
+    agent: "{same specialist from Phase 2}"
+    task: build-narrative.md
+    depends_on: [phase_2_structure]
+    support_agents: [matthew-dicks, kindra-hall]
+    description: "Expanda os beats em cenas/seções completas com diálogo, detalhe e emoção"
+    checkpoint:
+      gate: "Rascunho completo com todos os beats desenvolvidos em conteúdo narrativo"
+      veto: "PARE se algum beat ainda estiver em nível de esboço — todos devem ser expandidos"
+    outputs:
+      - story_draft
+      - scene_details
+
+  - id: phase_4_analysis
+    name: "Análise com o Story Grid"
+    agent: shawn-coyne
+    task: analyze-story.md
+    depends_on: [phase_3_draft]
+    description: "Analise o rascunho usando o Story Grid — conformidade de gênero, mudanças de valor, pontos de virada"
+    checkpoint:
+      gate: "Todos os problemas críticos identificados com prescrições específicas"
+      veto: "PARE se faltarem cenas obrigatórias do gênero — precisam ser resolvidas"
+    outputs:
+      - story_analysis
+      - diagnosis
+      - prescriptions
+
+  - id: phase_5_revise
+    name: "Revisão e Polimento"
+    agent: "{original framework specialist}"
+    task: build-narrative.md
+    depends_on: [phase_4_analysis]
+    description: "Aplique as prescrições da análise, revise estrutura e conteúdo"
+    checkpoint:
+      gate: "Todos os problemas críticos e graves da análise resolvidos"
+      veto: "PARE se problemas críticos permanecerem sem solução"
+    outputs:
+      - revised_draft
+      - revision_notes
+
+  - id: phase_6_final
+    name: "Revisão Final"
+    agent: story-chief
+    task: build-narrative.md
+    depends_on: [phase_5_revise]
+    description: "Checagem final de qualidade — coerência, impacto emocional, adequação ao público"
+    checkpoint:
+      gate: "A história está completa, coerente e pronta para o uso pretendido"
+      veto: "PARE se o arco emocional estiver quebrado ou a transformação for imerecida"
+    outputs:
+      - final_narrative
+      - quality_assessment
+
+completion_criteria:
+  - "Framework selecionado e confirmado com o usuário"
+  - "Todos os beats estruturais definidos e preenchidos"
+  - "Rascunho expandido com cenas completas e detalhe emocional"
+  - "Análise com o Story Grid concluída com prescrições"
+  - "Problemas críticos e graves resolvidos na revisão"
+  - "Narrativa final cumpre a promessa do gênero e o arco emocional"

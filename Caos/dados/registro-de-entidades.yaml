@@ -1,0 +1,278 @@
+# Registro de Entidades do Kolden
+#
+# Catálogo de tudo que o Caos já criou (agentes, squads, skills, hooks, subagents).
+# É o coração do loop de aprendizado: a Fase 0 consulta este arquivo antes de cada
+# criação para aplicar REUSE > ADAPT > CREATE (Constituição, Artigo VI).
+#
+# Só o subagent `curador` escreve aqui (ver .claude/regras/autoridade-de-subagent.md).
+#
+# Esquema de cada entidade:
+#   <id>:
+#     path: caminho relativo a partir da raiz do Kolden
+#     tipo: agente | squad | skill | hook | subagent
+#     dominio: conversacional | dados | trafego | copy | automacao | rag | outro
+#     proposito: uma frase
+#     keywords: [lista de termos para o keyword-match da Fase 0]
+#     usadoPor: [ids de quem depende desta entidade]
+#     dependencias: [ids dos quais esta entidade depende]
+#     adaptabilidade:
+#       score: 0.0-1.0   # quão fácil é adaptar sem quebrar
+#       restricoes: [o que NÃO pode mudar]
+#       pontosDeExtensao: [o que pode ser estendido]
+#     versao: x.y.z
+#     criadoEm: ISO-8601
+#
+# Regras de decisão da Fase 0 (relevância = sobreposição de keywords + domínio):
+#   relevancia >= 0.90  -> REUSE  (use a entidade direto)
+#   0.60 <= relevancia < 0.90 e adaptabilidade.score >= 0.6 -> ADAPT (mude <= 30%)
+#   sem correspondência  -> CREATE (registre na Fase 8 com justificativa)
+
+versao_do_registro: "1.1.0"
+atualizado_em: "2026-06-19"
+
+# NOTA: Os squads abaixo foram IMPORTADOS (modo importação, sancionado pelo Ronan) dos
+# arsenais validados xquads-squads e aiox-core, traduzidos para PT-BR e renomeados com a
+# mitologia grega. Status "importado-cru": ainda NÃO passaram pelo Ritual completo de 9 fases
+# (diagnóstico/PRD/maturity score). Refino por squad é dívida explícita da fase 2.
+# Procedência detalhada no _origem.md de cada pasta e em C:\Kolden\_staging\MANIFESTO-IMPORTACAO.md.
+
+entidades:
+  peitho:
+    path: "Peitho/"
+    tipo: squad
+    dominio: trafego
+    proposito: "Squad de tráfego pago multi-plataforma (Meta, Google, YouTube, TikTok) com 16 especialistas reais; unifica o PRD preexistente do Peitho."
+    keywords: [trafego, ads, meta, facebook, google-ads, youtube, tiktok, pixel, capi, roas, criativos, escala, midia-paga]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.7
+      restricoes: ["personas reais preservadas (não renomear especialistas)"]
+      pontosDeExtensao: ["integrar com Hermes (relatório semanal cron + WhatsApp)", "Ritual completo + PRD"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru
+    origem: "ohmyjahh/xquads-squads@dcb32f3 (traffic-masters)"
+
+  caliope:
+    path: "Caliope/"
+    tipo: squad
+    dominio: copy
+    proposito: "Squad de copywriting com lendas do direct response + módulo avançado copy-master (33 copywriters)."
+    keywords: [copy, copywriting, sales-letter, vsl, headline, email, oferta, persuasao, halbert, ogilvy, schwartz]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.7
+      restricoes: ["personas reais preservadas"]
+      pontosDeExtensao: ["Ritual completo + PRD", "swipe store de copy"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru
+    origem: "ohmyjahh/xquads-squads@dcb32f3 (copy-squad + copy-master)"
+
+  aglaia:
+    path: "Aglaia/"
+    tipo: squad
+    dominio: outro
+    proposito: "Squad de branding e brandbook (15 especialistas: Aaker, Neumeier, Ries, Sharp, StoryBrand)."
+    keywords: [marca, branding, brandbook, posicionamento, identidade, naming, arquetipos, storybrand]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.7
+      restricoes: ["personas reais preservadas"]
+      pontosDeExtensao: ["Ritual completo + PRD", "integrar com sobre-a-empresa/marca"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru
+    origem: "ohmyjahh/xquads-squads@dcb32f3 (brand-squad)"
+
+  harmonia:
+    path: "Harmonia/"
+    tipo: squad
+    dominio: outro
+    proposito: "Squad de UX/UI e web (8: Atomic Design, design systems, DesignOps, UI engineering, gerador visual)."
+    keywords: [design, ux, ui, web, design-system, atomic-design, figma, frontend, acessibilidade]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.7
+      restricoes: ["personas reais preservadas"]
+      pontosDeExtensao: ["Ritual completo + PRD", "integrar com Projetos/"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru
+    origem: "ohmyjahh/xquads-squads@dcb32f3 (design-squad)"
+
+  orfeu:
+    path: "Orfeu/"
+    tipo: squad
+    dominio: copy
+    proposito: "Squad de storytelling/narrativa (12: Campbell, Snyder, Klaff, Duarte, Ganz)."
+    keywords: [storytelling, narrativa, historia, pitch, apresentacao, hero-journey, story-grid]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.7
+      restricoes: ["personas reais preservadas"]
+      pontosDeExtensao: ["Ritual completo + PRD"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru
+    origem: "ohmyjahh/xquads-squads@dcb32f3 (storytelling)"
+
+  olimpo:
+    path: "Olimpo/"
+    tipo: squad
+    dominio: outro
+    proposito: "Squad C-Level / executivos (6: visão/CEO, COO, CMO, CTO, CIO, CAIO)."
+    keywords: [c-level, executivo, ceo, coo, cmo, cto, cio, caio, estrategia, governanca]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.8
+      restricoes: []
+      pontosDeExtensao: ["Ritual completo + PRD", "roteamento aos demais squads"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru
+    origem: "ohmyjahh/xquads-squads@dcb32f3 (c-level-squad)"
+
+  themis:
+    path: "Themis/"
+    tipo: squad
+    dominio: outro
+    proposito: "Squad de conselho estratégico / advisory board (11: Dalio, Munger, Naval, Thiel, Sinek)."
+    keywords: [conselho, advisory, estrategia, decisao, modelos-mentais, investimento]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.7
+      restricoes: ["personas reais preservadas"]
+      pontosDeExtensao: ["Ritual completo + PRD"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru
+    origem: "ohmyjahh/xquads-squads@dcb32f3 (advisory-board)"
+
+  metis:
+    path: "Metis/"
+    tipo: squad
+    dominio: dados
+    proposito: "Squad de analytics e growth (7: Kaushik, Ellis, Fader, customer success, comunidade)."
+    keywords: [analytics, dados, growth, ga4, mixpanel, amplitude, retencao, ltv, north-star, comunidade]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.7
+      restricoes: ["personas reais preservadas"]
+      pontosDeExtensao: ["Ritual completo + PRD", "integrar com Catalogoos (tracking)"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru
+    origem: "ohmyjahh/xquads-squads@dcb32f3 (data-squad)"
+
+  pluto:
+    path: "Pluto/"
+    tipo: squad
+    dominio: outro
+    proposito: "Squad de negócios e escala — framework Alex Hormozi (16: ofertas, leads, preço, fechamento, escala)."
+    keywords: [negocios, escala, oferta, leads, preco, vendas, hormozi, ltv, cac, modelo-de-negocio]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.7
+      restricoes: ["framework Hormozi preservado"]
+      pontosDeExtensao: ["Ritual completo + PRD"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru
+    origem: "ohmyjahh/xquads-squads@dcb32f3 (hormozi-squad)"
+
+  dionisio:
+    path: "Dionisio/"
+    tipo: squad
+    dominio: outro
+    proposito: "Squad de movimentos e comunidade (7: arquitetura de movimento, identidade, manifesto, impacto)."
+    keywords: [movimento, comunidade, tribo, identidade, manifesto, mobilizacao]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.7
+      restricoes: []
+      pontosDeExtensao: ["Ritual completo + PRD"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru
+    origem: "ohmyjahh/xquads-squads@dcb32f3 (movement)"
+
+  egide:
+    path: "Egide/"
+    tipo: squad
+    dominio: outro
+    proposito: "Squad de cybersecurity (15: pentest, AppSec, blue team, OSINT, resposta a incidente)."
+    keywords: [seguranca, cybersecurity, pentest, appsec, owasp, osint, blue-team, incidente, vulnerabilidade]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.7
+      restricoes: ["personas reais preservadas", "standards de segurança preservados"]
+      pontosDeExtensao: ["Ritual completo + PRD"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru
+    origem: "ohmyjahh/xquads-squads@dcb32f3 (cybersecurity)"
+
+  dedalo:
+    path: "Dedalo/"
+    tipo: squad
+    dominio: automacao
+    proposito: "Squad de domínio do Claude Code (8: hooks, MCP, skills, subagents, config, CI/CD)."
+    keywords: [claude-code, hooks, mcp, skills, subagents, settings, ci-cd, automacao]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.8
+      restricoes: ["dedup de versão idêntica do aiox-core"]
+      pontosDeExtensao: ["Ritual completo + PRD", "apoiar o próprio Caos"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru
+    origem: "ohmyjahh/xquads-squads@dcb32f3 (claude-code-mastery) — dedup com SynkraAI/aiox-core"
+
+  prometeu:
+    path: "Prometeu/"
+    tipo: squad
+    dominio: automacao
+    proposito: "Framework de engenharia de software AIOX (12 agentes: ciclo PRD→story→dev→QA→deploy)."
+    keywords: [engenharia, software, dev, qa, devops, arquitetura, story, epic, prd, aiox, ci-cd]
+    usadoPor: []
+    dependencias: [dedalo]
+    adaptabilidade:
+      score: 0.6
+      restricoes: ["framework grande", "tradução do conteúdo profundo em andamento"]
+      pontosDeExtensao: ["concluir tradução (tasks/docs)", "Ritual completo + PRD", "apoiar Projetos/"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-19T00:00:00Z"
+    status: importado-cru-parcial
+    origem: "SynkraAI/aiox-core@77265d5"
+
+_exemplos_antigos:
+  # Vazio na fundação. Cada criação preenche este bloco via Fase 8.
+  # Exemplo (apague quando o primeiro agente real for criado):
+  #
+  # agente-suporte-whatsapp:
+  #   path: "agentes/agente-suporte-whatsapp/"
+  #   tipo: agente
+  #   dominio: conversacional
+  #   proposito: "Atende clientes no WhatsApp, resolve dúvidas e escala casos complexos."
+  #   keywords: [suporte, atendimento, whatsapp, conversacional, faq, escalacao]
+  #   usadoPor: []
+  #   dependencias: []
+  #   adaptabilidade:
+  #     score: 0.8
+  #     restricoes: ["canal fixo: WhatsApp"]
+  #     pontosDeExtensao: ["trocar de canal", "adicionar base de conhecimento RAG"]
+  #   versao: "1.0.0"
+  #   criadoEm: "2026-06-11T00:00:00Z"

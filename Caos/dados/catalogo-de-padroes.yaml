@@ -1,0 +1,67 @@
+# Catálogo de Padrões de Arquitetura do Kolden
+#
+# Design patterns de agentes de IA, por tipo. O `pesquisador` (Fase 2) e o `arquiteto`
+# (Fase 3) consultam aqui para não recomeçar do zero: cada padrão traz quando usar,
+# as camadas típicas e os riscos conhecidos.
+#
+# Os padrões recomendados por categoria de agente vêm de dados/catalogo-de-roteamento.yaml.
+
+versao: "1.0.0"
+atualizado_em: "2026-06-11"
+
+padroes:
+
+  conversacional:
+    quando_usar: "O agente dialoga em tempo real com um humano (suporte, vendas, assistente)."
+    camadas_tipicas:
+      memoria: "Histórico da conversa + perfil do contato (curto prazo na sessão; longo prazo no CRM)."
+      skills: "Tom de voz, base de FAQ, roteiro de escalação."
+      hooks: "Bloquear afirmações proibidas (compliance); auditar conversas."
+      subagents: "Raro; só se houver tarefa pesada fora do diálogo."
+    riscos:
+      - "Alucinar política/preço — mitigue com fonte citada ou RAG."
+      - "Não escalar quando deveria — defina gatilho explícito de handoff humano."
+
+  rag:
+    quando_usar: "Respostas precisam vir de uma base de conhecimento própria, com citação."
+    camadas_tipicas:
+      memoria: "Store vetorial (Supabase/Neon) com os documentos indexados."
+      skills: "Estratégia de recuperação (chunking, top-k) e citação de fontes."
+      hooks: "Bloquear resposta sem fonte quando a política exigir."
+      subagents: "Indexador da base, se a ingestão for pesada."
+    riscos:
+      - "Responder fora da base — defina se é permitido e como sinalizar."
+      - "Base desatualizada — defina dono e frequência de atualização."
+
+  agentic:
+    quando_usar: "O agente toma decisões e executa ações em ferramentas externas (não só responde)."
+    camadas_tipicas:
+      memoria: "Estado da tarefa + log de ações executadas."
+      skills: "Planejamento de passos; uso de cada ferramenta."
+      hooks: "Confirmar ações irreversíveis; tetos de custo/orçamento (PreToolUse)."
+      subagents: "Especialistas por subtarefa quando o escopo for amplo."
+    riscos:
+      - "Ação irreversível sem confirmação — sempre vire hook, não só prompt."
+      - "Loop de ações sem critério de parada — defina limite por execução."
+
+  batch:
+    quando_usar: "Processamento agendado ou em lote, sem humano no loop em tempo real."
+    camadas_tipicas:
+      memoria: "Checkpoint de progresso para retomar de onde parou."
+      skills: "Regras de transformação e validação de saída."
+      hooks: "Auditoria de cada lote; alerta em falha."
+      subagents: "Workers paralelos para volumes grandes."
+    riscos:
+      - "Falha no meio do lote sem retomada — projete idempotência/checkpoint."
+      - "Saída silenciosamente errada — valide contra schema antes de persistir."
+
+  real-time:
+    quando_usar: "Resposta a eventos com baixa latência (webhooks, streams)."
+    camadas_tipicas:
+      memoria: "Mínima e rápida; estado essencial apenas."
+      skills: "Decisão enxuta por evento."
+      hooks: "Rate limit; dedupe de eventos."
+      subagents: "Evite; latência é prioridade."
+    riscos:
+      - "Eventos duplicados — dedupe explícito."
+      - "Pico de carga — defina degradação graciosa."

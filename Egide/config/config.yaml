@@ -1,0 +1,84 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Cybersecurity
+# Domínio: Operações de Segurança Ofensiva e Defensiva
+# Versão: 1.0.0
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: cybersecurity
+  display_name: "Squad de Cybersecurity"
+  version: "1.0.0"
+  domain: "Operações de Segurança Ofensiva e Defensiva"
+  description: |
+    Um squad completo de cibersegurança ofensiva e defensiva que combina especialistas
+    do mundo real com agentes operacionais especializados. De testes de penetração e red teaming (Peter Kim,
+    Georgia Weidman) a segurança de aplicações (Jim Manico), monitoramento de redes (Chris Sanders),
+    gestão de vulnerabilidades (Omar Santos) e liderança em segurança (Marcus Carey).
+
+    Os agentes operacionais cuidam de reconhecimento, enumeração, fuzzing, exploração, geração de
+    comandos e OSINT — sempre dentro de contextos éticos e autorizados. Toda operação ofensiva
+    exige autorização escrita explícita. Hackeie para proteger, nunca para causar dano.
+  keywords: [pentesting, red-team, blue-team, appsec, network-security, vulnerability, exploit, recon, osint, incident-response]
+  entry_agent: cyber-chief
+  created_at: "2026-03-05"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [cyber-chief]
+    purpose: "Triagem, roteamento, controle de qualidade, gate de autorização ética"
+  tier_1:
+    name: "Especialistas em Segurança"
+    agents: [peter-kim, georgia-weidman, jim-manico, chris-sanders, omar-santos, marcus-carey]
+    purpose: "Expertise de domínio em segurança ofensiva, segurança defensiva e operações de segurança"
+  tier_2:
+    name: "Agentes Operacionais de Ferramentas"
+    agents: [command-generator, cartographer, busterer, dirber, fuzzer, ripper, rogue, shannon-runner]
+    purpose: "Agentes de ferramentas especializados em reconhecimento, enumeração, fuzzing, ataques a credenciais, exploração e OSINT"
+
+agents:
+  cyber-chief:       { file: agents/cyber-chief.md, tier: 0, icon: "🛡️", focus: "Triagem, roteamento, gate ético" }
+  peter-kim:         { file: agents/peter-kim.md, tier: 1, icon: "⚔️", focus: "Testes de penetração, red teaming" }
+  georgia-weidman:   { file: agents/georgia-weidman.md, tier: 1, icon: "📱", focus: "Segurança mobile, desenvolvimento de exploits" }
+  jim-manico:        { file: agents/jim-manico.md, tier: 1, icon: "🔒", focus: "Segurança de aplicações, codificação segura" }
+  chris-sanders:     { file: agents/chris-sanders.md, tier: 1, icon: "📡", focus: "Monitoramento de redes, detecção de intrusões" }
+  omar-santos:       { file: agents/omar-santos.md, tier: 1, icon: "🔍", focus: "Gestão de vulnerabilidades, resposta a incidentes" }
+  marcus-carey:      { file: agents/marcus-carey.md, tier: 1, icon: "🎖️", focus: "Liderança em segurança, inteligência de ameaças" }
+  command-generator: { file: agents/command-generator.md, tier: 2, icon: "⌨️", focus: "Geração de comandos de segurança" }
+  cartographer:      { file: agents/cartographer.md, tier: 2, icon: "🗺️", focus: "Reconhecimento, mapeamento de redes" }
+  busterer:          { file: agents/busterer.md, tier: 2, icon: "🔨", focus: "Enumeração de diretórios e arquivos" }
+  dirber:            { file: agents/dirber.md, tier: 2, icon: "📂", focus: "Brute-forcing de diretórios web" }
+  fuzzer:            { file: agents/fuzzer.md, tier: 2, icon: "🎯", focus: "Fuzzing de entradas, teste de parâmetros" }
+  ripper:            { file: agents/ripper.md, tier: 2, icon: "🔑", focus: "Ataques a credenciais, quebra de hashes" }
+  rogue:             { file: agents/rogue.md, tier: 2, icon: "💀", focus: "Exploração, entrega de payloads" }
+  shannon-runner:    { file: agents/shannon-runner.md, tier: 2, icon: "🕵️", focus: "OSINT, inteligência de fontes abertas" }
+
+handoffs:
+  cyber-chief: { routes_to: [peter-kim, georgia-weidman, jim-manico, chris-sanders, omar-santos, marcus-carey, command-generator, cartographer, busterer, dirber, fuzzer, ripper, rogue, shannon-runner] }
+  peter-kim: { escalates_to: [cyber-chief] }
+  georgia-weidman: { escalates_to: [cyber-chief] }
+  jim-manico: { escalates_to: [cyber-chief] }
+  chris-sanders: { escalates_to: [cyber-chief] }
+  omar-santos: { escalates_to: [cyber-chief] }
+  marcus-carey: { escalates_to: [cyber-chief] }
+  command-generator: { escalates_to: [cyber-chief] }
+  cartographer: { escalates_to: [cyber-chief] }
+  busterer: { escalates_to: [cyber-chief] }
+  dirber: { escalates_to: [cyber-chief] }
+  fuzzer: { escalates_to: [cyber-chief] }
+  ripper: { escalates_to: [cyber-chief] }
+  rogue: { escalates_to: [cyber-chief] }
+  shannon-runner: { escalates_to: [cyber-chief] }
+
+cross_cutting:
+  quality_standards: { min_score: 7.0 }
+  ethical_framework:
+    authorization: "Todas as operações ofensivas exigem autorização escrita explícita"
+    scope: "Desafios de CTF, pentests autorizados, pesquisa defensiva, contextos educacionais"
+    prohibited: "Técnicas destrutivas, ataques de DoS, alvejamento em massa, comprometimento de cadeia de suprimentos, evasão de detecção para fins maliciosos"
+    principle: "Hackeie para proteger, nunca para causar dano"
+
+settings:
+  activation:
+    prefix: "cybersecurity"
+    example: "@cybersecurity:peter-kim"

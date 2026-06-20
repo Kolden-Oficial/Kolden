@@ -1,0 +1,351 @@
+# Template de Configuração para Projetos Architect-First
+#
+# Este template demonstra o princípio: Config > Hardcoding
+# Todos os valores mutáveis devem ser externalizados para arquivos de configuração como este.
+#
+# Uso:
+#   1. Copie este template para o diretório de configuração do seu projeto
+#   2. Renomeie para config.yaml ou config.{environment}.yaml
+#   3. Preencha os valores apropriados para o seu projeto
+#   4. NUNCA hardcode esses valores no código-fonte
+#   5. Carregue a configuração em runtime a partir deste arquivo
+
+# =============================================================================
+# Configuração do Sistema
+# =============================================================================
+system:
+  name: "my-project"                    # Nome do projeto/sistema
+  version: "1.0.0"                      # Versão atual
+  environment: "development"            # development|staging|production
+  debug: true                           # Habilitar modo debug
+
+# =============================================================================
+# Configurações da Aplicação
+# =============================================================================
+application:
+  host: "localhost"                     # Host da aplicação
+  port: 8000                            # Porta da aplicação
+  workers: 4                            # Número de processos worker
+  timeout: 30                           # Timeout da requisição (segundos)
+  max_connections: 100                  # Máximo de conexões concorrentes
+
+# =============================================================================
+# Configuração de Logging
+# =============================================================================
+logging:
+  level: "INFO"                         # DEBUG|INFO|WARNING|ERROR|CRITICAL
+  format: "json"                        # json|text
+  output: "stdout"                      # stdout|file
+  file_path: "logs/app.log"            # Caminho do arquivo de log (se output=file)
+  rotation:
+    enabled: true                       # Habilitar rotação de logs
+    max_size: "100MB"                  # Tamanho máximo antes da rotação
+    max_files: 10                      # Número de arquivos a manter
+
+# =============================================================================
+# Configuração de Banco de Dados
+# =============================================================================
+database:
+  primary:
+    engine: "postgresql"                # postgresql|mysql|sqlite
+    host: "localhost"
+    port: 5432
+    name: "myapp_dev"
+    username: "developer"
+    password: "${DB_PASSWORD}"          # Vinda de variável de ambiente
+    pool_size: 10                       # Tamanho do pool de conexões
+    pool_timeout: 30                    # Timeout do pool (segundos)
+    ssl_mode: "prefer"                  # disable|allow|prefer|require
+
+  replica:                              # Réplica de leitura opcional
+    enabled: false
+    host: "replica.localhost"
+    port: 5432
+    # ... mesma estrutura da primary
+
+# =============================================================================
+# Configuração de Cache
+# =============================================================================
+cache:
+  enabled: true
+  backend: "redis"                      # redis|memcached|memory
+  host: "localhost"
+  port: 6379
+  db: 0
+  password: "${REDIS_PASSWORD}"         # Vinda de variável de ambiente
+  ttl: 3600                             # TTL padrão em segundos
+  key_prefix: "myapp:"                  # Prefixo de chave para namespace
+
+# =============================================================================
+# Serviços Externos / Integrações
+# =============================================================================
+integrations:
+  # Exemplo: Integração com API externa
+  external_api:
+    enabled: true
+    base_url: "https://api.example.com"
+    api_key: "${EXTERNAL_API_KEY}"      # Vinda de variável de ambiente
+    timeout: 10                         # Timeout da requisição (segundos)
+    retry:
+      enabled: true
+      max_attempts: 3
+      backoff_factor: 2                 # Multiplicador de backoff exponencial
+
+  # Exemplo: Serviço de e-mail
+  email:
+    enabled: true
+    provider: "smtp"                    # smtp|sendgrid|ses
+    smtp_host: "smtp.example.com"
+    smtp_port: 587
+    smtp_user: "${EMAIL_USER}"
+    smtp_password: "${EMAIL_PASSWORD}"
+    from_address: "noreply@example.com"
+    from_name: "My Application"
+
+  # Exemplo: Armazenamento em nuvem
+  storage:
+    enabled: true
+    provider: "s3"                      # s3|gcs|azure
+    bucket: "my-app-uploads"
+    region: "us-east-1"
+    access_key: "${AWS_ACCESS_KEY}"
+    secret_key: "${AWS_SECRET_KEY}"
+    public_url_base: "https://cdn.example.com"
+
+# =============================================================================
+# Feature Flags
+# =============================================================================
+features:
+  new_feature_x:
+    enabled: false                      # Habilitar/desabilitar funcionalidade
+    rollout_percentage: 0               # Rollout gradual (0-100)
+    allowed_users: []                   # Lista de IDs de usuários permitidos
+
+  experimental_feature_y:
+    enabled: true
+    config:                             # Configuração específica da funcionalidade
+      threshold: 0.8
+      max_items: 100
+
+# =============================================================================
+# Configurações de Segurança
+# =============================================================================
+security:
+  # Autenticação
+  auth:
+    jwt:
+      secret: "${JWT_SECRET}"           # Vinda de variável de ambiente
+      algorithm: "HS256"
+      expiration: 3600                  # Expiração do token (segundos)
+      refresh_expiration: 604800        # Expiração do refresh token (7 dias)
+
+    session:
+      secret: "${SESSION_SECRET}"
+      cookie_name: "session_id"
+      secure: true                      # Somente HTTPS
+      http_only: true                   # Não acessível via JavaScript
+      same_site: "lax"                  # lax|strict|none
+
+  # Rate limiting
+  rate_limit:
+    enabled: true
+    requests_per_minute: 60
+    burst: 10                           # Tolerância de burst
+
+  # CORS
+  cors:
+    enabled: true
+    allowed_origins:
+      - "https://example.com"
+      - "https://app.example.com"
+    allowed_methods:
+      - "GET"
+      - "POST"
+      - "PUT"
+      - "DELETE"
+    allowed_headers:
+      - "Content-Type"
+      - "Authorization"
+    max_age: 3600
+
+# =============================================================================
+# Monitoramento & Observabilidade
+# =============================================================================
+monitoring:
+  # Métricas
+  metrics:
+    enabled: true
+    provider: "prometheus"              # prometheus|datadog|custom
+    port: 9090
+    path: "/metrics"
+
+  # Tracing distribuído
+  tracing:
+    enabled: true
+    provider: "jaeger"                  # jaeger|zipkin|datadog
+    endpoint: "http://localhost:14268/api/traces"
+    sample_rate: 0.1                    # Amostra 10% das requisições
+
+  # Health checks
+  health:
+    enabled: true
+    path: "/health"
+    checks:
+      - name: "database"
+        critical: true
+      - name: "cache"
+        critical: false
+      - name: "external_api"
+        critical: false
+
+# =============================================================================
+# Caminhos de Módulos/Expansion Packs
+# =============================================================================
+# CRÍTICO: Nunca hardcode caminhos de módulos no código-fonte
+# Sempre referencie módulos através da configuração
+modules:
+  expansion_packs_dir: "expansion-packs"
+
+  # Caminhos individuais de expansion pack (relativos à raiz do projeto)
+  creator_os: "expansion-packs/creator-os"
+  mmos_mind_mapper: "expansion-packs/mmos"
+  innerlens: "expansion-packs/innerlens"
+  etl_data_collector: "expansion-packs/etl-data-collector"
+
+  # Descoberta de módulos (alternativa a caminhos explícitos)
+  auto_discover:
+    enabled: true                       # Descobrir módulos automaticamente
+    search_paths:
+      - "expansion-packs"
+      - "plugins"
+    pattern: "*/module.yaml"           # Padrão do arquivo de metadados do módulo
+
+# =============================================================================
+# Caminhos de Arquivos & Diretórios
+# =============================================================================
+# CRÍTICO: Todos os caminhos de arquivo devem ser configuráveis, nunca hardcoded
+paths:
+  # Diretórios de entrada/saída
+  data_dir: "data"
+  output_dir: "outputs"
+  temp_dir: "/tmp/myapp"
+  upload_dir: "uploads"
+
+  # Diretórios da aplicação
+  templates_dir: "templates"
+  static_dir: "static"
+
+  # Caminhos de saída específicos
+  courses_output: "outputs/courses"
+  minds_output: "outputs/minds"
+  database_output: "outputs/database"
+
+# =============================================================================
+# Performance & Otimização
+# =============================================================================
+performance:
+  # Caching
+  cache_templates: true
+  cache_static_files: true
+
+  # Compressão
+  enable_compression: true
+  compression_level: 6                  # 1-9 (maior = mais compressão)
+  compression_min_size: 1024            # Tamanho mínimo para comprimir (bytes)
+
+  # Pool de conexões
+  http_pool_size: 10
+  http_pool_timeout: 30
+
+  # Processamento assíncrono
+  async_enabled: true
+  async_workers: 4
+  queue_backend: "redis"
+
+# =============================================================================
+# Desenvolvimento & Testes
+# =============================================================================
+development:
+  # Auto-reload em mudanças de código
+  auto_reload: true
+
+  # Barra de debug
+  debug_toolbar: true
+
+  # Mockar serviços externos
+  mock_external_services: true
+
+  # Dados de teste
+  use_test_data: true
+  test_data_path: "tests/fixtures"
+
+# =============================================================================
+# Sobrescritas Específicas por Ambiente
+# =============================================================================
+# Esta seção demonstra como lidar com configs específicas de ambiente
+# Na prática, use arquivos separados: config.dev.yaml, config.prod.yaml
+
+environments:
+  development:
+    debug: true
+    logging:
+      level: "DEBUG"
+    database:
+      name: "myapp_dev"
+
+  staging:
+    debug: false
+    logging:
+      level: "INFO"
+    database:
+      name: "myapp_staging"
+
+  production:
+    debug: false
+    logging:
+      level: "WARNING"
+    database:
+      name: "myapp_prod"
+    security:
+      rate_limit:
+        requests_per_minute: 100
+
+# =============================================================================
+# Configurações Customizadas da Aplicação
+# =============================================================================
+# Adicione aqui a configuração específica da sua aplicação
+custom:
+  # Exemplo: Limiares de lógica de negócio
+  thresholds:
+    max_upload_size: 10485760           # 10MB em bytes
+    min_password_length: 8
+    session_timeout: 1800               # 30 minutos
+
+  # Exemplo: Configurações específicas de funcionalidade
+  notification:
+    channels:
+      email: true
+      sms: false
+      push: true
+    batch_size: 100
+    retry_failed: true
+
+# =============================================================================
+# Metadados de Configuração
+# =============================================================================
+_metadata:
+  version: "1.0"
+  last_updated: "2024-01-01"
+  schema_version: "2.0"
+
+  # Regras de validação (opcional - para ferramentas de validação de config)
+  validation:
+    required_env_vars:
+      - "DB_PASSWORD"
+      - "JWT_SECRET"
+      - "SESSION_SECRET"
+
+    deprecated_keys:
+      - key: "old_setting"
+        replacement: "new_setting"
+        since: "0.9.0"

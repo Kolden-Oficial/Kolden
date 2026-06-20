@@ -1,0 +1,104 @@
+workflow:
+  id: wf-business-turnaround
+  name: "Reestruturação de Negócio"
+  version: "1.0.0"
+  description: |
+    Workflow completo de reestruturação de negócio. Audita o estado atual do negócio,
+    redesenha a oferta, constrói o sistema de geração de leads, otimiza precificação
+    e cria um framework de fechamento. Segue o playbook de empresas do portfólio Hormozi:
+    corrigir a oferta primeiro, depois os leads, depois o fechamento.
+  trigger: "*business-turnaround"
+  entry_agent: hormozi-chief
+  estimated_duration: "60-120 minutos"
+
+  type: sequential
+  sequence:
+    - agent: hormozi-audit
+      action: audit-business
+      creates: audit_report
+    - agent: hormozi-offers
+      action: create-offer
+      creates: offer
+    - agent: hormozi-leads
+      action: generate-leads
+      creates: lead_system
+    - agent: hormozi-pricing
+      action: set-pricing
+      creates: pricing_strategy
+    - agent: hormozi-closer
+      action: close-sale
+      creates: closing_framework
+
+phases:
+  - id: phase_0
+    name: "Auditoria do Negócio"
+    agent: hormozi-audit
+    task: audit-business.md
+    description: "Auditoria abrangente do motor de receita, da oferta, das operações e das restrições de crescimento. Identifica a restrição nº 1 e estabelece métricas de baseline."
+    outputs:
+      - audit_report: "markdown"
+      - constraint: "string"
+      - revenue_equation: "object"
+    checkpoint:
+      gate: "Restrição identificada com dados de suporte"
+      veto: "Dados insuficientes para diagnosticar — solicite mais métricas"
+
+  - id: phase_1
+    name: "Redesign da Oferta"
+    agent: hormozi-offers
+    task: create-offer.md
+    depends_on: [phase_0]
+    description: "Redesenhar a oferta usando a metodologia Grand Slam Offer. Aplicar a Value Equation, construir o bonus stack, elaborar a garantia e definir a precificação baseada em valor."
+    outputs:
+      - offer_architecture: "markdown"
+      - value_equation: "object"
+    checkpoint:
+      gate: "Razão valor-preço >= 10:1"
+      veto: "A oferta não resolve os problemas identificados na auditoria"
+
+  - id: phase_2
+    name: "Sistema de Geração de Leads"
+    agent: hormozi-leads
+    task: generate-leads.md
+    depends_on: [phase_1]
+    description: "Construir o sistema de geração de leads usando o framework $100M Leads. Desenhar iscas de leads, estratégias de canal e o plano de lançamento de 30 dias."
+    outputs:
+      - lead_system: "markdown"
+      - lead_magnet: "object"
+      - channel_plans: "list"
+    checkpoint:
+      gate: "O sistema de leads cobre pelo menos 2 das 4 fontes principais"
+      veto: "Nenhuma isca de leads desenhada ou canais inalcançáveis para a audiência"
+
+  - id: phase_3
+    name: "Otimização de Precificação"
+    agent: hormozi-pricing
+    task: set-pricing.md
+    depends_on: [phase_1]
+    description: "Definir a estratégia de precificação com base na oferta redesenhada. Aplicar precificação baseada em valor com tiers, opções de pagamento e plano de testes."
+    outputs:
+      - pricing_strategy: "markdown"
+      - price_tiers: "list"
+    checkpoint:
+      gate: "Preço definido com justificativa de valor de 10x"
+      veto: "Preço definido com base em equiparação a concorrentes em vez de valor"
+
+  - id: phase_4
+    name: "Framework de Fechamento de Vendas"
+    agent: hormozi-closer
+    task: close-sale.md
+    depends_on: [phase_1, phase_3]
+    description: "Construir o framework de vendas CLOSER para a oferta redesenhada no novo ponto de preço. Tratar objeções específicas do contexto de reestruturação."
+    outputs:
+      - closing_framework: "markdown"
+      - objection_matrix: "object"
+    checkpoint:
+      gate: "Script CLOSER completo com as 10 principais objeções tratadas"
+      veto: "O framework de fechamento não corresponde à nova precificação ou oferta"
+
+completion_criteria:
+  - "Negócio auditado com a restrição identificada"
+  - "Oferta redesenhada com Value Equation >= 10:1"
+  - "Sistema de geração de leads construído com plano de 30 dias"
+  - "Precificação otimizada com justificativa baseada em valor"
+  - "Framework de fechamento de vendas completo para a nova oferta"

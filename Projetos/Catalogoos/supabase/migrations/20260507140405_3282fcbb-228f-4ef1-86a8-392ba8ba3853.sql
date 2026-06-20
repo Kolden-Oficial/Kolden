@@ -1,0 +1,1 @@
+TRUNCATE TABLE public.conversions, public.clicks, public.leads, public.identities RESTART IDENTITY;

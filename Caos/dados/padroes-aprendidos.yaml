@@ -1,0 +1,55 @@
+# Padrões Aprendidos do Kolden
+#
+# O que funcionou (e o que não funcionou) ao criar agentes. Capturado na Fase 8 de cada
+# Ritual. Alimenta as próximas criações: o `pesquisador` e o `arquiteto` consultam aqui
+# para não reinventar decisões já validadas, e o `diagnosticador` evita perguntas que já
+# se mostraram inúteis.
+#
+# Só o subagent `curador` escreve aqui (ver .claude/regras/autoridade-de-subagent.md).
+#
+# Esquema de cada padrão:
+#   <id>:
+#     dominio: a que domínio se aplica (ou "geral")
+#     tipo: aceleracao_diagnostico | decisao_arquitetura | antipadrao
+#     padrao: o que se observou
+#     evidencia: [ids de agentes onde isso apareceu]
+#     recomendacao: o que fazer da próxima vez
+#     registradoEm: ISO-8601
+
+versao: "1.0.0"
+atualizado_em: "2026-06-11"
+
+padroes:
+  # Sementes iniciais derivadas das referências (aiox-core, xquads-squads).
+  # Serão refinadas e ampliadas a cada criação real.
+
+  squad-quando-3-ou-mais-especializacoes:
+    dominio: geral
+    tipo: decisao_arquitetura
+    padrao: >
+      Domínios que exigem 3+ especializações distintas com perspectivas que se beneficiam
+      de confronto/síntese tendem a funcionar melhor como squad (tier 0 + tier 1) do que
+      como um único agente sobrecarregado.
+    evidencia: ["referência: xquads-squads/advisory-board, copy-squad"]
+    recomendacao: "Na Fase 3, considere squad quando o diagnóstico listar 3+ papéis distintos."
+    registradoEm: "2026-06-11T00:00:00Z"
+
+  routing-por-keywords-barato:
+    dominio: geral
+    tipo: decisao_arquitetura
+    padrao: >
+      Roteamento por keyword-match (catálogo domínio→agente) resolve a maioria dos casos
+      de triagem sem custo de modelo e é fácil de auditar.
+    evidencia: ["referência: xquads-squads/*/data/routing-catalog.yaml"]
+    recomendacao: "Prefira routing por keywords antes de roteamento por LLM."
+    registradoEm: "2026-06-11T00:00:00Z"
+
+  guardrail-deve-ser-hook-nao-prompt:
+    dominio: geral
+    tipo: antipadrao
+    padrao: >
+      Confiar só no system prompt para impedir uma ação proibida falha sob pressão do
+      modelo. Proibição absoluta precisa virar hook determinístico (exit 2).
+    evidencia: ["referência: aiox-core constitution + Kolden criacao-de-hooks"]
+    recomendacao: "Toda proibição NÃO-NEGOCIÁVEL do PRD vira hook PreToolUse, não só texto."
+    registradoEm: "2026-06-11T00:00:00Z"

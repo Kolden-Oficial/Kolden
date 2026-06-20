@@ -1,0 +1,121 @@
+# Workflow de Apresentação para o Conselho
+# Coleta de Dados > Narrativa > Criação do Deck > Ensaio
+# Versão: 1.0.0
+
+workflow:
+  id: wf-board-presentation
+  name: "Apresentação para o Conselho"
+  version: "1.0.0"
+  trigger: "*board-presentation"
+  entry_agent: vision-chief
+  description: "Preparar uma apresentação para o conselho ou investidores reunindo dados de todos os domínios C-level, construindo uma narrativa coesa, montando o deck e ensaiando."
+  estimated_duration: "2-4 horas"
+  type: sequential
+  sequence:
+    - agent: coo-orchestrator
+      action: gather-data
+      creates: ops_data
+    - agent: vision-chief
+      action: craft-narrative
+      creates: narrative
+    - agent: cmo-architect
+      action: market-context
+      creates: market_data
+    - agent: vision-chief
+      action: finalize
+      creates: presentation
+
+
+inputs:
+  - name: purpose
+    required: true
+    description: "Propósito da apresentação (atualização do conselho, captação, revisão estratégica, plano anual)"
+  - name: audience
+    required: true
+    description: "Quem verá isto (conselho, investidores, consultivo, time)"
+  - name: financials
+    required: true
+    description: "Dados financeiros atuais (receita, queima, runway, KPIs)"
+  - name: time_period
+    required: false
+    default: "último trimestre"
+    description: "Período sendo reportado"
+  - name: key_decisions
+    required: false
+    description: "Decisões que precisam de input do conselho/investidores"
+
+
+phases:
+  - id: phase_1_data_gathering
+    name: "Coleta de Dados"
+    agent: coo-orchestrator
+    task: design-operations.md
+    depends_on: []
+    description: "Coletar dados operacionais, KPIs, progresso de OKR e métricas de time de todos os departamentos"
+    checkpoint:
+      gate: "Todas as métricas-chave coletadas com comparação período a período"
+      veto: "vision-chief rejeita se dados críticos estiverem ausentes ou não verificados"
+      required_output: "Pacote de dados consolidado com métricas financeiras, operacionais e de produto"
+
+  - id: phase_2_narrative
+    name: "Narrativa"
+    agent: vision-chief
+    task: set-vision.md
+    depends_on: [phase_1_data_gathering]
+    description: "Elaborar a narrativa estratégica que conecta os dados à visão e destaca as decisões-chave"
+    checkpoint:
+      gate: "A narrativa é honesta, voltada ao futuro e traz à tona os desafios reais"
+      veto: "Nenhum — o vision-chief é o dono da narrativa"
+      required_output: "Esboço da narrativa com mensagens-chave, vitórias, desafios e pedidos"
+
+  - id: phase_3_deck_creation
+    name: "Criação do Deck"
+    agent: cmo-architect
+    task: plan-go-to-market.md
+    depends_on: [phase_2_narrative]
+    description: "Construir o deck da apresentação com visuais claros, dados e fluxo narrativo"
+    checkpoint:
+      gate: "O deck segue a regra de uma mensagem por slide, dados visualizados e não em tabela"
+      veto: "vision-chief rejeita se o deck não corresponder à narrativa aprovada"
+      required_output: "Esboço do deck da apresentação (15-20 slides)"
+    deck_structure:
+      - "Abertura: Onde estamos e para onde vamos (1 slide)"
+      - "Sumário executivo: Vitórias-chave, desafios, pedidos (1 slide)"
+      - "Revisão financeira: Receita, queima, runway, unit economics (2-3 slides)"
+      - "Atualização de produto: Marcos, progresso do roadmap, métricas-chave (2-3 slides)"
+      - "Mercado e crescimento: Aquisição, retenção, dinâmicas de mercado (2-3 slides)"
+      - "Time e operações: Contratações, progresso de OKR, saúde operacional (1-2 slides)"
+      - "Iniciativas estratégicas: Progresso dos pilares estratégicos (2-3 slides)"
+      - "Desafios e riscos: Avaliação honesta com planos de mitigação (1-2 slides)"
+      - "Pedidos e decisões: O que precisamos do conselho (1 slide)"
+      - "Olhar adiante: Prioridades e metas do próximo trimestre (1 slide)"
+
+  - id: phase_4_rehearsal
+    name: "Ensaio"
+    agent: vision-chief
+    task: null
+    depends_on: [phase_3_deck_creation]
+    description: "Ensaiar a apresentação, preparar-se para perguntas difíceis e finalizar"
+    checkpoint:
+      gate: "A apresentação pode ser entregue no tempo alocado com buffer de Q&A"
+      veto: "Nenhum — fase de polimento final"
+      required_output: "Deck final, notas do apresentador, documento de FAQ, guia de tempo"
+    rehearsal_steps:
+      - "Cronometre a apresentação completa (meta: 60% do tempo alocado para Q&A)"
+      - "Identifique as 10 principais perguntas difíceis e prepare respostas"
+      - "Pratique o gancho de abertura (os primeiros 60 segundos são críticos)"
+      - "Revise cada número quanto à precisão"
+      - "Prepare slides de 'apêndice' para perguntas de aprofundamento"
+
+completion_criteria:
+  - "Dados reunidos de todos os departamentos e verificados"
+  - "Narrativa estratégica elaborada com avaliação honesta"
+  - "Deck construído com no máximo 20 slides, uma mensagem por slide"
+  - "As 10 principais perguntas difíceis preparadas com respostas"
+  - "Apresentação cronometrada e dentro da janela alocada"
+  - "Notas do apresentador completas para cada slide"
+
+error_handling:
+  missing_data: "Sinalize a lacuna, use a melhor estimativa disponível com divulgação clara. Nunca apresente números fabricados."
+  narrative_conflict: "Se os dados contradizem a narrativa, mude a narrativa (não os dados)."
+  time_pressure: "Se o tempo de preparação for curto, corte para os slides essenciais: financeiro, tração, pedidos."

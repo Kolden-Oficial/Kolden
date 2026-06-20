@@ -1,0 +1,26 @@
+---
+id: projeto-<slug>-leia-me
+titulo: "<Nome do Projeto> — visão geral"
+resumo: "O que é o projeto, status e como navegar."
+categoria: projeto
+palavras-chave: [projeto]
+status: rascunho
+atualizado-em: 2026-06-18
+relacionados: [prd, arquitetura, status]
+---
+
+# <Nome do Projeto>
+
+> Template de projeto. Copie a pasta `_modelo-projeto/` para `Projetos/<nome-do-projeto>/` e preencha.
+
+## O que é
+_1 parágrafo: objetivo do projeto e para quem._
+
+## Documentos
+- `prd.md` — requisitos
+- `arquitetura.md` — como é construído
+- `decisoes.md` — log de decisões (ADRs)
+- `status.md` — situação atual
+
+## Links
+_Código, deploy, recursos relacionados._

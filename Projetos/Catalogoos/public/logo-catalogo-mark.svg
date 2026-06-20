@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" role="img" aria-label="CataLogo">
+  <path d="M4 14 L20 4 L36 10 L36 28 L20 38 L4 28 Z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" fill="none"/>
+  <circle cx="25" cy="14" r="2.4" fill="currentColor"/>
+  <path d="M12 21 L18 27 L28 16" stroke="#FFC107" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

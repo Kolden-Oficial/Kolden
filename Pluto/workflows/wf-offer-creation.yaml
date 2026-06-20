@@ -1,0 +1,105 @@
+workflow:
+  id: wf-offer-creation
+  name: "Pipeline de Criação de Oferta"
+  version: "1.0.0"
+  description: |
+    Workflow completo de criação de oferta. Da ideação ao design da equação de valor,
+    estratégia de precificação, criação de copy, até o planejamento de lançamento.
+    Produz uma oferta pronta para o mercado com todos os materiais de apoio.
+  trigger: "*offer-pipeline"
+  entry_agent: hormozi-chief
+  estimated_duration: "45-90 minutos"
+
+  type: sequential
+  sequence:
+    - agent: hormozi-offers
+      action: create-offer
+      creates: offer
+    - agent: hormozi-pricing
+      action: set-pricing
+      creates: pricing
+    - agent: hormozi-hooks
+      action: create-hooks
+      creates: hooks
+    - agent: hormozi-closer
+      action: close-sale
+      creates: closing
+    - agent: hormozi-launch
+      action: plan-launch
+      creates: launch_plan
+
+phases:
+  - id: phase_0
+    name: "Ideação da Oferta"
+    agent: hormozi-offers
+    task: create-offer.md
+    description: "Mapear os resultados dos sonhos, identificar todos os problemas entre o cliente e seu objetivo, e construir a Grand Slam Offer usando a Value Equation."
+    outputs:
+      - offer_architecture: "markdown"
+      - value_equation: "object"
+      - bonus_stack: "list"
+      - guarantee: "string"
+    checkpoint:
+      gate: "Value Equation pontuada com todos os 4 quadrantes, razão valor-preço >= 10:1"
+      veto: "A oferta carece de um resultado dos sonhos claro ou não tem garantia"
+
+  - id: phase_1
+    name: "Precificação Baseada em Valor"
+    agent: hormozi-pricing
+    task: set-pricing.md
+    depends_on: [phase_0]
+    description: "Definir a arquitetura de precificação com base na Value Equation da oferta. Desenhar tiers, opções de pagamento e a narrativa de justificativa de preço."
+    outputs:
+      - pricing_strategy: "markdown"
+      - price_tiers: "list"
+      - payment_options: "list"
+    checkpoint:
+      gate: "Preço justificado pelo valor com a regra do 10x aplicada"
+      veto: "Preço definido por comparação com concorrentes em vez de pela entrega de valor"
+
+  - id: phase_2
+    name: "Ganchos (Hooks) e Mensagem"
+    agent: hormozi-hooks
+    task: create-hooks.md
+    depends_on: [phase_0]
+    description: "Criar ganchos (hooks) para a oferta em todos os canais — anúncios, conteúdo, e-mails, conversas de vendas. Esses hooks tornam-se a base da mensagem para toda a copy."
+    outputs:
+      - hook_package: "markdown"
+      - top_hooks: "list"
+    checkpoint:
+      gate: "Mínimo de 20 hooks pontuados e ranqueados em 4+ categorias"
+      veto: "Os hooks não correspondem à promessa central da oferta"
+
+  - id: phase_3
+    name: "Framework de Vendas"
+    agent: hormozi-closer
+    task: close-sale.md
+    depends_on: [phase_0, phase_1]
+    description: "Construir o framework de vendas CLOSER para vender a oferta. Inclui perguntas de descoberta, tratamento de objeções e scripts de fechamento."
+    outputs:
+      - closing_framework: "markdown"
+      - objection_matrix: "object"
+    checkpoint:
+      gate: "Script CLOSER completo com todos os 6 passos e as 10 principais objeções"
+      veto: "O script não se alinha com a estrutura de precificação e garantia"
+
+  - id: phase_4
+    name: "Estratégia de Lançamento"
+    agent: hormozi-launch
+    task: plan-launch.md
+    depends_on: [phase_0, phase_1, phase_2]
+    description: "Desenhar o plano de lançamento da nova oferta. Sequência de pré-lançamento, plano de abertura/fechamento de carrinho, sequências de e-mail e projeções de receita."
+    outputs:
+      - launch_plan: "markdown"
+      - email_sequence: "markdown"
+      - revenue_model: "object"
+    checkpoint:
+      gate: "Plano de lançamento completo com cronograma, sequência de e-mail e modelo de receita"
+      veto: "Cronograma de lançamento irrealista para a preparação exigida"
+
+completion_criteria:
+  - "Grand Slam Offer desenhada com Value Equation >= 10:1"
+  - "Precificação definida com tiers e opções de pagamento"
+  - "Pacote de hooks criado com mais de 20 hooks pontuados"
+  - "Framework de vendas CLOSER construído para a oferta"
+  - "Plano de lançamento completo com projeções de receita"

@@ -1,0 +1,69 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Storytelling
+# Domínio: Narrativa e Comunicação
+# Versão: 1.0.0
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: storytelling
+  display_name: "Squad de Storytelling"
+  version: "1.0.0"
+  domain: "Narrativa e Comunicação"
+  description: |
+    Squad de elite de mestres do storytelling, abrangendo mitologia, roteiro, narrativa pessoal,
+    storytelling de negócios, improvisação, pitching, apresentações e movimentos sociais. Da
+    Hero's Journey de Campbell ao Story Circle de Harmon, do Beat Sheet de Snyder ao
+    Story Grid de Coyne — todo framework narrativo já criado, unificado sob o mesmo teto.
+
+    Cobre seis domínios narrativos: estrutura mítica, arquitetura de história, narrativa pessoal,
+    storytelling de negócios, persuasão e performance, e narrativa de movimento. Cada especialista
+    traz décadas de ofício do mundo real destiladas em frameworks acionáveis.
+  keywords: [storytelling, narrative, screenwriting, mythology, presentations, brand-story, pitching, improv, social-movements, story-structure]
+  entry_agent: story-chief
+  created_at: "2026-03-05"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [story-chief]
+    purpose: "Triagem, roteamento, controle de qualidade, correspondência de domínio narrativo"
+  tier_1:
+    name: "Mestres do Storytelling"
+    agents: [joseph-campbell, dan-harmon, blake-snyder, shawn-coyne, matthew-dicks, kindra-hall, nancy-duarte, park-howell, keith-johnstone, oren-klaff, marshall-ganz]
+    purpose: "Expertise de domínio em todos os frameworks narrativos, da estrutura mítica aos movimentos sociais"
+
+agents:
+  story-chief:      { file: agents/story-chief.md, tier: 0, icon: "📖", focus: "Triagem, roteamento, correspondência de domínio narrativo" }
+  joseph-campbell:   { file: agents/joseph-campbell.md, tier: 1, icon: "🏛️", focus: "Hero's Journey, monomito, arquétipos" }
+  dan-harmon:        { file: agents/dan-harmon.md, tier: 1, icon: "🔄", focus: "Story Circle, escrita de TV/episódica" }
+  blake-snyder:      { file: agents/blake-snyder.md, tier: 1, icon: "🎬", focus: "Beat Sheet, estrutura de roteiro" }
+  shawn-coyne:       { file: agents/shawn-coyne.md, tier: 1, icon: "📊", focus: "Story Grid, gênero, análise de cena" }
+  matthew-dicks:     { file: agents/matthew-dicks.md, tier: 1, icon: "🎤", focus: "Narrativa pessoal, storytelling do Moth" }
+  kindra-hall:       { file: agents/kindra-hall.md, tier: 1, icon: "💼", focus: "Histórias de vendas, histórias que grudam" }
+  nancy-duarte:      { file: agents/nancy-duarte.md, tier: 1, icon: "📊", focus: "Apresentações, storytelling com dados" }
+  park-howell:       { file: agents/park-howell.md, tier: 1, icon: "🏷️", focus: "Storytelling de marca, framework ABT" }
+  keith-johnstone:   { file: agents/keith-johnstone.md, tier: 1, icon: "🎭", focus: "Improvisação, espontaneidade, status" }
+  oren-klaff:        { file: agents/oren-klaff.md, tier: 1, icon: "🎯", focus: "Pitching, controle de frame, neurofinanças" }
+  marshall-ganz:     { file: agents/marshall-ganz.md, tier: 1, icon: "✊", focus: "Narrativa pública, movimentos sociais" }
+
+handoffs:
+  story-chief: { routes_to: [joseph-campbell, dan-harmon, blake-snyder, shawn-coyne, matthew-dicks, kindra-hall, nancy-duarte, park-howell, keith-johnstone, oren-klaff, marshall-ganz] }
+  joseph-campbell: { escalates_to: [story-chief] }
+  dan-harmon: { escalates_to: [story-chief] }
+  blake-snyder: { escalates_to: [story-chief] }
+  shawn-coyne: { escalates_to: [story-chief] }
+  matthew-dicks: { escalates_to: [story-chief] }
+  kindra-hall: { escalates_to: [story-chief] }
+  nancy-duarte: { escalates_to: [story-chief] }
+  park-howell: { escalates_to: [story-chief] }
+  keith-johnstone: { escalates_to: [story-chief] }
+  oren-klaff: { escalates_to: [story-chief] }
+  marshall-ganz: { escalates_to: [story-chief] }
+
+cross_cutting:
+  quality_standards: { min_score: 7.0 }
+
+settings:
+  activation:
+    prefix: "storytelling"
+    example: "@storytelling:joseph-campbell"

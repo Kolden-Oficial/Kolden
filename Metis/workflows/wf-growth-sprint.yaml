@@ -1,0 +1,115 @@
+# Workflow de Sprint de Crescimento
+# Ciclo de 2 semanas: Analisar > Levantar Hipóteses > Experimentar > Medir > Iterar
+# Versão: 1.0.0
+
+workflow:
+  id: wf-growth-sprint
+  name: "Sprint de Crescimento"
+  version: "1.0.0"
+  trigger: "*growth-sprint"
+  entry_agent: data-chief
+  description: "Um ciclo de sprint de crescimento de 2 semanas que combina analytics, experimentação de growth e mensuração. Cada sprint produz aprendizados validados e alimenta o próximo ciclo."
+  estimated_duration: "2 semanas (com execução assíncrona)"
+  type: sequential
+  sequence:
+    - agent: avinash-kaushik
+      action: analyze-data
+      creates: analysis
+    - agent: sean-ellis
+      action: hypothesize
+      creates: experiments
+    - agent: sean-ellis
+      action: execute
+      creates: results
+    - agent: avinash-kaushik
+      action: measure
+      creates: learnings
+    - agent: data-chief
+      action: synthesize
+      creates: sprint_report
+
+  cadence: "Repetível a cada 2 semanas"
+
+inputs:
+  - name: product
+    required: true
+    description: "Produto ou serviço a ser crescido"
+  - name: north_star_metric
+    required: false
+    description: "NSM pré-definida (será descoberta se não for fornecida)"
+  - name: focus_area
+    required: false
+    description: "Estágio do AARRR a focar (acquisition, activation, retention, referral, revenue)"
+  - name: sprint_number
+    required: false
+    default: 1
+    description: "Número do sprint atual para acompanhar o histórico de iterações"
+
+
+phases:
+  - id: phase_1_analyze
+    name: "Analisar"
+    agent: avinash-kaushik
+    task: analyze-data.md
+    depends_on: []
+    description: "Revisar as métricas atuais, identificar lacunas e revelar a maior oportunidade"
+    checkpoint:
+      gate: "Perguntas de negócio definidas e mapeadas para o See-Think-Do-Care"
+      veto: "data-chief rejeita se a análise não tiver insights acionáveis"
+      required_output: "Framework de analytics com a OMTM identificada"
+
+  - id: phase_2_hypothesize
+    name: "Levantar Hipóteses"
+    agent: sean-ellis
+    task: measure-growth.md
+    depends_on: [phase_1_analyze]
+    description: "Gerar hipóteses de crescimento a partir da análise de funil e pontuá-las com ICE"
+    checkpoint:
+      gate: "Pelo menos 5 hipóteses geradas com pontuações ICE"
+      veto: "data-chief rejeita se as hipóteses não estiverem atreladas à North Star Metric"
+      required_output: "Backlog de experimentos ranqueado com os 2-3 melhores selecionados"
+
+  - id: phase_3_experiment
+    name: "Experimentar"
+    agent: sean-ellis
+    task: measure-growth.md
+    depends_on: [phase_2_hypothesize]
+    description: "Desenhar e lançar os experimentos mais bem ranqueados com controles e tracking"
+    checkpoint:
+      gate: "Os experimentos têm hipóteses claras, métricas de sucesso e guardrails"
+      veto: "data-chief rejeita experimentos sem rigor estatístico"
+      required_output: "Experimentos em execução com tracking confirmado"
+
+  - id: phase_4_measure
+    name: "Medir"
+    agent: avinash-kaushik
+    task: analyze-data.md
+    depends_on: [phase_3_experiment]
+    description: "Coletar resultados, calcular a significância e determinar vencedores/perdedores"
+    checkpoint:
+      gate: "Os resultados são estatisticamente significativos ou o experimento é estendido"
+      veto: "data-chief rejeita conclusões prematuras"
+      required_output: "Resultados dos experimentos com vereditos e aprendizados"
+
+  - id: phase_5_iterate
+    name: "Iterar"
+    agent: data-chief
+    task: null
+    depends_on: [phase_4_measure]
+    description: "Revisar os aprendizados do sprint, atualizar o modelo de crescimento e planejar o próximo sprint"
+    checkpoint:
+      gate: "Aprendizados documentados, prioridades do próximo sprint definidas"
+      veto: "Nenhum — o data-chief é o dono desta fase"
+      required_output: "Retrospectiva do sprint + plano do próximo sprint"
+
+completion_criteria:
+  - "Todos os experimentos têm vereditos claros (vencedor/perdedor/inconclusivo)"
+  - "Impacto na North Star Metric medido"
+  - "Aprendizados documentados no log de experimentos"
+  - "Backlog do próximo sprint atualizado com novas hipóteses"
+  - "Retrospectiva do sprint concluída"
+
+error_handling:
+  experiment_failure: "Documentar a falha, extrair aprendizados, não repetir a mesma hipótese"
+  insufficient_data: "Estender a duração do experimento em 1 semana. Se ainda for insuficiente, declarar inconclusivo."
+  escalation: "Se 3 sprints consecutivos não mostrarem melhora na NSM, escalar para o data-chief para revisão de estratégia"

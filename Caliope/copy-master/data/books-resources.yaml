@@ -1,0 +1,419 @@
+# Banco de Dados de Livros e Recursos: Copy Master Squad
+# Mais de 35 livros essenciais de copywriting, persuasão e resposta direta
+# Referência para todos os agentes — mapeia livros para domínios e frameworks
+
+books:
+
+  - title: "Breakthrough Advertising"
+    author: "Eugene Schwartz"
+    year: 1966
+    core_teaching: "A sofisticação do mercado e os níveis de consciência determinam a sua abordagem de copy — não as características do seu produto. Os 5 níveis de consciência (inconsciente, consciente do problema, consciente da solução, consciente do produto, totalmente consciente) ditam o tipo de lead, a franqueza da promessa e toda a estrutura do copy"
+    key_frameworks:
+      - "5 Levels of Awareness"
+      - "5 Levels of Market Sophistication"
+      - "38 Ways to Strengthen Headlines"
+      - "Intensification vs. Identification"
+      - "Mass Desire Channeling"
+    essential_for: [eugene-schwartz, copy-chief, todd-brown, stefan-georgi]
+
+  - title: "The Boron Letters"
+    author: "Gary Halbert"
+    year: 2013
+    core_teaching: "Cartas escritas da prisão para seu filho Bond, ensinando os fundamentos da resposta direta — pesquisa, seleção de lista, ofertas convincentes e a arte de escrever um copy conversacional que vende"
+    key_frameworks:
+      - "A-pile vs. B-pile Mail"
+      - "Star-Story-Solution"
+      - "The Halbert Index"
+      - "List-Offer-Copy Priority"
+      - "Grab-by-the-Throat Opening"
+    essential_for: [gary-halbert, john-carlton, copy-chief]
+
+  - title: "Scientific Advertising"
+    author: "Claude Hopkins"
+    year: 1923
+    core_teaching: "Publicidade é vendas impressas (salesmanship in print) — todo anúncio deve ser medido, testado e otimizado com base na resposta. Cupons, amostras e rastreamento são essenciais. Opiniões não valem nada; só os resultados importam"
+    key_frameworks:
+      - "Reason-Why Advertising"
+      - "Test Everything Principle"
+      - "Preemptive Claim Strategy"
+      - "Coupon Response Tracking"
+      - "Service Advertising"
+    essential_for: [claude-hopkins, john-caples, rosser-reeves, joanna-wiebe]
+
+  - title: "Tested Advertising Methods"
+    author: "John Caples"
+    year: 1932
+    core_teaching: "Metodologia de teste de headlines — como escrever, testar e medir headlines cientificamente. O primeiro livro a trazer testes rigorosos ao copywriting com resultados de antes/depois documentados"
+    key_frameworks:
+      - "29 Headline Formulas"
+      - "Split-Run Testing"
+      - "First 50 Words Rule"
+      - "Proven Headline Templates"
+      - "Direct vs. Indirect Headlines"
+    essential_for: [john-caples, claude-hopkins, copy-chief]
+
+  - title: "Reality in Advertising"
+    author: "Rosser Reeves"
+    year: 1961
+    core_teaching: "A Unique Selling Proposition (USP) — todo anúncio deve fazer uma proposta específica ao consumidor, uma que a concorrência não pode ou não oferece. A repetição de uma única ideia penetra na consciência pública"
+    key_frameworks:
+      - "USP (Unique Selling Proposition)"
+      - "Penetration vs. Usage Pull"
+      - "Vampire Creativity (criatividade que rouba a atenção da mensagem)"
+      - "Single Proposition Rule"
+    essential_for: [rosser-reeves, david-ogilvy, copy-chief]
+
+  - title: "Influence: The Psychology of Persuasion"
+    author: "Robert Cialdini"
+    year: 1984
+    core_teaching: "Seis (depois sete) princípios universais de persuasão que governam a aceitação humana — reciprocidade, compromisso/consistência, prova social, autoridade, afinidade, escassez e unidade"
+    key_frameworks:
+      - "6 Principles of Influence (original)"
+      - "7 Principles (with Unity)"
+      - "Click-Whirr Response Patterns"
+      - "Weapons of Influence"
+    essential_for: [robert-cialdini, blair-warren, joe-sugarman, copy-chief]
+
+  - title: "Pre-Suasion"
+    author: "Robert Cialdini"
+    year: 2016
+    core_teaching: "O que você faz ANTES de entregar a sua mensagem importa tanto quanto a própria mensagem — priming, enquadramento e direcionamento da atenção determinam a receptividade"
+    key_frameworks:
+      - "Pre-Suasion Windows"
+      - "Privileged Moments"
+      - "Unity Principle"
+      - "Attention Channeling"
+      - "Association Triggers"
+    essential_for: [robert-cialdini, eugene-schwartz, oren-klaff]
+
+  - title: "$100M Offers"
+    author: "Alex Hormozi"
+    year: 2021
+    core_teaching: "Como engenhar 'Grand Slam Offers' tão boas que as pessoas se sentem burras dizendo não — usando a Value Equation para maximizar o dream outcome e a probabilidade enquanto minimiza o time delay e o esforço"
+    key_frameworks:
+      - "Value Equation"
+      - "Grand Slam Offer"
+      - "Trim & Stack Method"
+      - "Scarcity/Urgency/Bonuses/Guarantee Framework"
+      - "Dream Outcome Mapping"
+    essential_for: [alex-hormozi, dan-kennedy, russell-brunson]
+
+  - title: "$100M Leads"
+    author: "Alex Hormozi"
+    year: 2023
+    core_teaching: "As quatro formas centrais de conseguir clientes — warm outreach, cold outreach, conteúdo, anúncios — e como construir sistemas de geração de leads que se compõem ao longo do tempo"
+    key_frameworks:
+      - "Core Four Lead Generation"
+      - "Lead Magnet Framework"
+      - "Lead-to-Customer Value Chain"
+      - "Advertising Scaling Rules"
+      - "100 Primary Offer Framework"
+    essential_for: [alex-hormozi, sabri-suby, frank-kern]
+
+  - title: "Sell Like Crazy"
+    author: "Sabri Suby"
+    year: 2019
+    core_teaching: "Um sistema passo a passo para converter tráfego frio em clientes usando uma 'Godfather Offer', a HVCO (High Value Content Offer) e um sistema de vendas estruturado"
+    key_frameworks:
+      - "Godfather Offer Strategy"
+      - "HVCO (High Value Content Offer)"
+      - "Dream Buyer Persona"
+      - "Magic Lantern Technique"
+      - "8-Phase Selling System"
+    essential_for: [sabri-suby, frank-kern, russell-brunson]
+
+  - title: "Never Split the Difference"
+    author: "Chris Voss"
+    year: 2016
+    core_teaching: "Técnicas de negociação de reféns do FBI aplicadas aos negócios — empatia tática, perguntas calibradas, rotulação, espelhamento e a auditoria de acusação como ferramentas de influência"
+    key_frameworks:
+      - "Tactical Empathy"
+      - "Labeling Emotions"
+      - "Mirroring Technique"
+      - "Accusation Audit"
+      - "Calibrated Questions (How/What)"
+      - "That's Right Moment"
+      - "Black Swan Theory"
+    essential_for: [chris-voss, blair-warren, oren-klaff]
+
+  - title: "Pitch Anything"
+    author: "Oren Klaff"
+    year: 2011
+    core_teaching: "O controle do frame determina o resultado de todo pitch — quem domina o frame vence. Use princípios de neurofinança e o método STRONG para apresentar ideias, captar capital e fechar negócios"
+    key_frameworks:
+      - "STRONG Method"
+      - "Frame Control Theory"
+      - "Crocodile Brain Theory"
+      - "Prize Frame"
+      - "Time Frame"
+      - "Hookpoint Concept"
+    essential_for: [oren-klaff, russell-brunson, alex-hormozi]
+
+  - title: "The 16-Word Sales Letter"
+    author: "Evaldo Albuquerque"
+    year: 2019
+    core_teaching: "Toda grande carta de vendas é construída sobre a mudança de UMA crença falsa. O framework de 16 palavras: o resultado desejado NÃO tem a ver com a crença falsa — tem a ver com o novo mecanismo"
+    key_frameworks:
+      - "16-Word Framework"
+      - "False Belief Identification"
+      - "Belief Shift Architecture"
+      - "6 Types of Great Leads"
+      - "Mechanism Naming"
+    essential_for: [evaldo-albuquerque, todd-brown, stefan-georgi, parris-lampropoulos]
+
+  - title: "Great Leads"
+    author: "Michael Masterson & John Forde"
+    year: 2011
+    core_teaching: "Seis tipos de leads para cartas de vendas — cada um pareado com um nível específico de consciência. O lead é a parte mais importante de qualquer peça de vendas, determinando tudo o que vem a seguir"
+    key_frameworks:
+      - "6 Lead Types: Offer, Promise, Problem-Solution, Big Secret, Proclamation, Story"
+      - "Lead-Awareness Matching Matrix"
+      - "Lead Length Guidelines"
+      - "Transition Techniques"
+    essential_for: [evaldo-albuquerque, stefan-georgi, gary-halbert, copy-chief]
+
+  - title: "The Ultimate Sales Letter"
+    author: "Dan Kennedy"
+    year: 1990
+    core_teaching: "Blueprint passo a passo para escrever cartas de vendas de resposta direta — da pesquisa, passando pelo rascunho, até o refinamento. Ênfase em entender o cliente antes de escrever uma única palavra"
+    key_frameworks:
+      - "28-Step Sales Letter Formula"
+      - "PAS (Problem-Agitate-Solve)"
+      - "Damaging Admission Technique"
+      - "Intimidating Specificity"
+      - "Pile-On Proof"
+    essential_for: [dan-kennedy, gary-halbert, john-carlton]
+
+  - title: "DotCom Secrets"
+    author: "Russell Brunson"
+    year: 2015
+    core_teaching: "A ciência da construção de funis — value ladders, temperatura de tráfego e tipos específicos de funil pareados com modelos de negócio. Todo negócio precisa de um funil, e todo funil precisa de um copy específico"
+    key_frameworks:
+      - "Value Ladder"
+      - "Hook-Story-Offer"
+      - "Traffic Temperature (hot/warm/cold)"
+      - "Attractive Character"
+      - "7 Funnel Types"
+    essential_for: [russell-brunson, frank-kern, sabri-suby]
+
+  - title: "Expert Secrets"
+    author: "Russell Brunson"
+    year: 2017
+    core_teaching: "Como criar um movimento de massa, tornar-se um líder carismático e usar a Epiphany Bridge para mudar crenças. O framework para vender através de histórias e construir uma tribo"
+    key_frameworks:
+      - "Epiphany Bridge"
+      - "3 Secrets Framework"
+      - "Perfect Webinar"
+      - "Stack Slide"
+      - "False Belief Patterns"
+      - "Mass Movement Blueprint"
+    essential_for: [russell-brunson, todd-brown, evaldo-albuquerque]
+
+  - title: "Cashvertising"
+    author: "Drew Eric Whitman"
+    year: 2008
+    core_teaching: "Técnicas de publicidade baseadas em psicologia — os 8 Desejos da Força Vital (Life-Force Desires) e os 9 Desejos Secundários que impulsionam todo comportamento humano e decisão de compra"
+    key_frameworks:
+      - "8 Life-Force Desires (LF8)"
+      - "9 Secondary Desires"
+      - "41 Advertising Techniques"
+      - "Ego Morphing"
+      - "Means-End Chain"
+    essential_for: [joe-sugarman, robert-cialdini, copy-chief]
+
+  - title: "How to Write a Good Advertisement"
+    author: "Victor Schwab"
+    year: 1962
+    core_teaching: "As 100 maiores headlines analisadas, com técnicas sistemáticas para escrever um copy que prende a atenção, sustenta o interesse, constrói o desejo e produz a ação"
+    key_frameworks:
+      - "100 Greatest Headlines (annotated)"
+      - "AIDA Application"
+      - "Schwab's 5-Step Formula"
+      - "44 Ways to Start Headlines"
+    essential_for: [john-caples, eugene-schwartz, copy-chief]
+
+  - title: "The Robert Collier Letter Book"
+    author: "Robert Collier"
+    year: 1931
+    core_teaching: "Entre na conversa que já está acontecendo na mente do leitor — combine com os pensamentos, desejos e emoções que ele já tem antes de tentar redirecioná-lo"
+    key_frameworks:
+      - "Enter the Conversation"
+      - "6 Essentials of Every Letter"
+      - "Emotional Appeal Hierarchy"
+      - "Picture-Word Technique"
+    essential_for: [robert-collier, gary-halbert, eugene-schwartz]
+
+  - title: "The Adweek Copywriting Handbook"
+    author: "Joe Sugarman"
+    year: 2006
+    core_teaching: "O conceito do Slippery Slide — cada elemento do copy tem um único propósito: fazer a próxima linha ser lida. Além de 30 gatilhos psicológicos que compelem as pessoas a comprar"
+    key_frameworks:
+      - "Slippery Slide"
+      - "30 Psychological Triggers"
+      - "Seeds of Curiosity"
+      - "Incubation Process"
+      - "Selling the Concept"
+    essential_for: [joe-sugarman, gary-bencivenga, copy-chief]
+
+  - title: "Ogilvy on Advertising"
+    author: "David Ogilvy"
+    year: 1983
+    core_teaching: "Os princípios da publicidade de construção de marca — pesquisa, fatos acima de adjetivos, história acima de venda, copy longo que educa, e o ofício da publicidade como uma disciplina de negócios"
+    key_frameworks:
+      - "Factual Headline Approach"
+      - "Brand Image Theory"
+      - "Long Copy Doctrine"
+      - "Research-Based Creative"
+      - "Big Idea Concept"
+    essential_for: [david-ogilvy, david-deutsch, copy-chief]
+
+  - title: "Made to Stick"
+    author: "Chip Heath & Dan Heath"
+    year: 2007
+    core_teaching: "Por que algumas ideias sobrevivem e outras morrem — o framework SUCCESs para tornar as mensagens memoráveis: Simples, Inesperadas, Concretas, Credíveis, Emocionais, Histórias (Stories)"
+    key_frameworks:
+      - "SUCCESs Model"
+      - "Curse of Knowledge"
+      - "Commander's Intent"
+      - "Credibility Spectrum"
+      - "Emotional vs. Analytical Appeals"
+    essential_for: [copy-chief, david-ogilvy, blair-warren]
+
+  - title: "The Breakthrough Copywriter"
+    author: "David Garfinkel"
+    year: 2017
+    core_teaching: "Como aplicar na prática os níveis de consciência e sofisticação de Schwartz — uma interpretação prática de Breakthrough Advertising com exemplos modernos"
+    key_frameworks:
+      - "Practical Awareness Application"
+      - "Market Sophistication Mapping"
+      - "Lead Selection Process"
+      - "Copy Cube (análise de copy multidimensional)"
+    essential_for: [eugene-schwartz, stefan-georgi, copy-chief]
+
+  - title: "Kick-Ass Copywriting Secrets of a Marketing Rebel"
+    author: "John Carlton"
+    year: 2002
+    core_teaching: "Escreva como você fala — um copy casual, irreverente, de nível de rua que conecta com pessoas reais. O SWS (Simple Writing System) para cartas de vendas de formato longo"
+    key_frameworks:
+      - "Simple Writing System (SWS)"
+      - "Salesman in Print"
+      - "Sales Detective Method"
+      - "Greased Chute (o Slippery Slide de Carlton)"
+    essential_for: [john-carlton, gary-halbert, ben-settle]
+
+  - title: "Autoresponder Madness"
+    author: "Andre Chaperon"
+    year: 2009
+    core_teaching: "E-mail tem a ver com construir relacionamentos através de narrativa em série — a Soap Opera Sequence cria um engajamento que torna a venda fácil"
+    key_frameworks:
+      - "Soap Opera Sequence"
+      - "Satellite Sequences"
+      - "Open Loop Architecture"
+      - "Story-Based Email Framework"
+      - "Engagement Arc"
+    essential_for: [andre-chaperon, ry-schwartz, ben-settle]
+
+  - title: "How to Write Copy That Sells"
+    author: "Ray Edwards"
+    year: 2016
+    core_teaching: "O framework PASTOR para escrever copy de vendas de forma sistemática — além de templates práticos para headlines, bullets, ofertas e garantias"
+    key_frameworks:
+      - "PASTOR Framework"
+      - "Headline Templates"
+      - "Bullet Writing System"
+      - "Irresistible Offer Formula"
+      - "Guarantee Templates"
+    essential_for: [copy-chief, russell-brunson, dan-kennedy]
+
+  - title: "Flip the Script"
+    author: "Oren Klaff"
+    year: 2019
+    core_teaching: "Controle de frame avançado — como inverter a dinâmica comprador-vendedor de modo que o comprador esteja perseguindo você, e não o contrário. Alinhamento de status e persuasão no estilo inception"
+    key_frameworks:
+      - "Status Alignment"
+      - "Inception (plantando ideias)"
+      - "Flash Roll"
+      - "Pre-Wired Ideas"
+      - "Buyer's Formula"
+    essential_for: [oren-klaff, chris-voss, alex-hormozi]
+
+  - title: "The One Sentence Persuasion Course"
+    author: "Blair Warren"
+    year: 2013
+    core_teaching: "As pessoas farão qualquer coisa por aqueles que encorajam seus sonhos, justificam seus fracassos, acalmam seus medos, confirmam suas suspeitas e atiram pedras em seus inimigos"
+    key_frameworks:
+      - "5 Triggers of Persuasion"
+      - "One Sentence Framework"
+      - "Enemy Identification"
+      - "Dream Encouragement"
+    essential_for: [blair-warren, robert-cialdini, russell-brunson]
+
+  - title: "Email Players Newsletter Archives"
+    author: "Ben Settle"
+    year: 2011
+    core_teaching: "Vender por e-mail diário como um negócio de estilo de vida — posicionamento anti-guru, formato infotainment, copy movido por personalidade que filtra o seu público e atrai fãs verdadeiros"
+    key_frameworks:
+      - "Infotainment Email Formula"
+      - "Anti-Hero Positioning"
+      - "Daily Email Discipline"
+      - "Audience Filtration"
+      - "Villains and Enemies"
+    essential_for: [ben-settle, dan-koe, andre-chaperon]
+
+  - title: "The RMBC Method"
+    author: "Stefan Georgi"
+    year: 2018
+    core_teaching: "Um processo sistemático de 4 etapas para escrever VSLs e cartas de vendas de formato longo — Research, Mechanism, Brief, Copy. Elimina o bloqueio criativo através de uma preparação exaustiva"
+    key_frameworks:
+      - "RMBC 4-Step Process"
+      - "Avatar Deep Dive"
+      - "Unique Mechanism Naming"
+      - "VSL Brief Template"
+      - "Fascination Research Method"
+    essential_for: [stefan-georgi, jon-benson, parris-lampropoulos]
+
+  - title: "The E5 Method"
+    author: "Todd Brown"
+    year: 2018
+    core_teaching: "Arquitetura de funil de marketing construída em torno de uma Big Idea e de um Unique Mechanism — cinco fases (Engage, Educate, Excite, Exchange, Execute) que movem os prospectos da atenção à ação"
+    key_frameworks:
+      - "E5 Method"
+      - "Big Idea Extraction"
+      - "Unique Mechanism Positioning"
+      - "Marketing Funnel Architecture"
+      - "Campaign Theme Development"
+    essential_for: [todd-brown, eugene-schwartz, stefan-georgi]
+
+  - title: "Triggers"
+    author: "Joe Sugarman"
+    year: 1999
+    core_teaching: "30 gatilhos psicológicos que compelem as pessoas a comprar — do storytelling e da curiosidade à autoridade e exclusividade. Cada gatilho é uma ferramenta a ser empregada estrategicamente"
+    key_frameworks:
+      - "30 Sales Triggers"
+      - "Storytelling Trigger"
+      - "Curiosity Trigger"
+      - "Consistency Trigger"
+      - "Linking Trigger"
+    essential_for: [joe-sugarman, robert-cialdini, gary-bencivenga]
+
+  - title: "Confessions of an Advertising Man"
+    author: "David Ogilvy"
+    year: 1963
+    core_teaching: "O negócio e o ofício da publicidade por dentro — como tocar uma agência, conquistar clientes, escrever copy eficaz e construir marcas que duram"
+    key_frameworks:
+      - "Brand Personality Building"
+      - "Research-Led Creativity"
+      - "Direct Response Principles for Brand"
+      - "Client Relationship Management"
+    essential_for: [david-ogilvy, david-deutsch, copy-chief]
+
+  - title: "My Life in Advertising"
+    author: "Claude Hopkins"
+    year: 1927
+    core_teaching: "A autobiografia de Hopkins detalhando as campanhas que construíram a resposta direta moderna — da cerveja Schlitz ao creme dental Pepsodent. Cada capítulo é um estudo de caso em métodos testados"
+    key_frameworks:
+      - "Preemptive Claim (Schlitz)"
+      - "Sampling Strategy"
+      - "Coupon Testing"
+      - "Reason-Why Copy"
+    essential_for: [claude-hopkins, john-caples, rosser-reeves]

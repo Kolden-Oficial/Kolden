@@ -1,0 +1,115 @@
+# Workflow de Reunião do Conselho
+# Sessão completa do conselho consultivo com consulta paralela aos conselheiros
+
+workflow:
+  id: wf-board-meeting
+  name: "Reunião do Conselho Consultivo"
+  trigger: "*board-meeting"
+  entry_agent: board-chair
+  estimated_duration: "1-2 horas"
+  description: |
+    Workflow estruturado de reunião do conselho onde uma questão estratégica é apresentada
+    a múltiplos conselheiros, cada um contribui com sua expertise de domínio, e o
+    presidente do conselho sintetiza uma recomendação unificada.
+
+  type: sequential
+  sequence:
+    - agent: board-chair
+      action: convene-board
+      creates: agenda
+    - agent: "{advisors}"
+      action: counsel
+      creates: perspectives
+    - agent: board-chair
+      action: synthesize
+      creates: recommendation
+
+phases:
+  - id: phase_1_frame
+    name: "Enquadrar a Questão"
+    agent: board-chair
+    task: convene-board.md
+    depends_on: []
+    description: "Definir a questão estratégica, as restrições e selecionar os conselheiros relevantes"
+    checkpoint:
+      gate: "Questão enquadrada com precisão, 3-5 conselheiros selecionados com justificativa"
+      veto: "HALT se a questão for vaga demais para um aporte consultivo significativo"
+    outputs:
+      - framed_question
+      - advisor_selection
+      - agenda
+
+  - id: phase_2_consult
+    name: "Consulta aos Conselheiros (Paralela)"
+    agent: "{3-5 conselheiros selecionados}"
+    task: convene-board.md
+    depends_on: [phase_1_frame]
+    description: "Cada conselheiro se manifesta através de seu framework específico"
+    parallel: true
+    advisor_slots:
+      - slot: "advisor_1"
+        framework: "{framework primário do conselheiro}"
+        deliverable: "Análise + recomendação + nível de confiança"
+      - slot: "advisor_2"
+        framework: "{framework primário do conselheiro}"
+        deliverable: "Análise + recomendação + nível de confiança"
+      - slot: "advisor_3"
+        framework: "{framework primário do conselheiro}"
+        deliverable: "Análise + recomendação + nível de confiança"
+      - slot: "advisor_4"
+        framework: "{framework primário do conselheiro (se selecionado)}"
+        deliverable: "Análise + recomendação + nível de confiança"
+      - slot: "advisor_5"
+        framework: "{framework primário do conselheiro (se selecionado)}"
+        deliverable: "Análise + recomendação + nível de confiança"
+    checkpoint:
+      gate: "Todos os conselheiros selecionados forneceram sua análise e recomendação"
+      veto: "HALT se algum conselheiro não tiver contexto suficiente para um aporte significativo"
+    outputs:
+      - individual_perspectives
+      - recommendations_per_advisor
+
+  - id: phase_3_synthesis
+    name: "Síntese e Debate"
+    agent: board-chair
+    task: convene-board.md
+    depends_on: [phase_2_consult]
+    description: "Cruzar referências entre as perspectivas, identificar concordâncias, discordâncias e tensões"
+    checkpoint:
+      gate: "Áreas de concordância e discordância mapeadas, pontos cegos identificados"
+      veto: "HALT se todos os conselheiros concordarem sem tensão — verifique groupthink (pensamento de grupo)"
+    outputs:
+      - synthesis_analysis
+      - tension_map
+      - blind_spots
+
+  - id: phase_4_recommend
+    name: "Recomendação Unificada"
+    agent: board-chair
+    task: convene-board.md
+    depends_on: [phase_3_synthesis]
+    description: "Entregar a recomendação sintetizada com visões divergentes e próximos passos"
+    checkpoint:
+      gate: "A recomendação inclui justificativa, dissidência, verificação contrária e próximos passos"
+      veto: "HALT se a recomendação ignorar argumentos dissidentes fortes sem tratá-los"
+    outputs:
+      - unified_recommendation
+      - contrarian_check
+      - next_steps
+
+completion_criteria:
+  - "Questão estratégica enquadrada com precisão e com restrições"
+  - "3-5 conselheiros consultados com perspectivas individuais documentadas"
+  - "A síntese identifica convergência, divergência e pontos cegos"
+  - "A recomendação unificada inclui visões dissidentes e verificação contrária"
+  - "Próximos passos claros definidos para a implementação"
+
+routing_guide:
+  investment_decisions: [ray-dalio, charlie-munger, peter-thiel]
+  scaling_strategy: [reid-hoffman, peter-thiel, naval-ravikant]
+  culture_crisis: [simon-sinek, brene-brown, patrick-lencioni]
+  founder_crossroads: [derek-sivers, yvon-chouinard, naval-ravikant]
+  leadership_challenge: [simon-sinek, brene-brown, patrick-lencioni]
+  market_entry: [peter-thiel, reid-hoffman, ray-dalio]
+  team_building: [patrick-lencioni, reid-hoffman, brene-brown]
+  exit_strategy: [charlie-munger, naval-ravikant, derek-sivers]
