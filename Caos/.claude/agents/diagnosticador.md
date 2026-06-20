@@ -54,3 +54,10 @@ orçamento por execução e quem aprova? (6) Que métrica, se cair, dispara um a
 Mais adiante, na pré-morte (Bloco 9): "Imagine que em 6 meses esse agente queimou R$50 mil
 à toa. O que aconteceu? Foi verba alterada sem aprovação, campanha ruim escalada, ou ele
 agiu sobre ruído de uma janela curta? Para cada um: como a gente perceberia e como recupera?"
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`diagnosticador`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

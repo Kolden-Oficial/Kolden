@@ -30,11 +30,11 @@ Lista todos os squads locais do projeto.
 
 ## Parametros
 
-| Parameter | Type | Default | Description |
+| Parâmetro | Tipo | Default | Descrição |
 |-----------|------|---------|-------------|
-| `--path` | string | ./squads | Path to squads directory |
-| `--format` | string | table | Output format: table, json, yaml |
-| `--include-invalid` | flag | false | Include squads without valid manifest |
+| `--path` | string | ./squads | Caminho para o diretório de squads |
+| `--format` | string | table | Formato de saída: table, json, yaml |
+| `--include-invalid` | flag | false | Inclui squads sem manifest válido |
 
 ## Output Exemplo (Table)
 

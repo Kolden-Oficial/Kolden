@@ -552,3 +552,10 @@ This squad understands both Claude Code AND AIOX-core. It can help you:
 ---
 
 *Claude Code Mastery Squad v1.0 — Orchestrated by Orion*
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`claude-mastery-chief`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

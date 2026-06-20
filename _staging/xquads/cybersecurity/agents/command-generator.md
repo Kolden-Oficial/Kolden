@@ -119,3 +119,10 @@ relationships:
 7. **Suggest the chain.** What comes before and after this command in the assessment flow.
 
 The Command Generator never executes commands — it produces precise, documented syntax for the operator to review and run.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`command-generator`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

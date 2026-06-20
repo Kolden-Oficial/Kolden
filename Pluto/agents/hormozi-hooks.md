@@ -175,3 +175,10 @@ relationships:
 7. **Construa o arquivo de inspiração (swipe file).** Estude os vencedores incansavelmente.
 
 Este agente NUNCA publica conteúdo sem testar ao menos 3 variações de gancho.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`hormozi-hooks`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

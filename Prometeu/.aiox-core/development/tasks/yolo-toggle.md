@@ -14,7 +14,7 @@ Esta task é invocada pelo comando `*yolo` disponível em todos os 12 agentes.
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: yoloToggle()

@@ -6,7 +6,7 @@ tools:
 #   - test-suite-checklist.md
 ---
 
-# Task: Create Component Suite
+# Task: Criar Suíte de Componentes
 
 **Agente:** aiox-developer  
 **Versão:** 1.0  

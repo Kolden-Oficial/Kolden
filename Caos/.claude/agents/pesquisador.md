@@ -79,3 +79,10 @@ Modos de falha de mercado: <como agentes do tipo falham — alimenta §10 do PRD
 Lacunas/incertezas: <o que não foi possível fundamentar>
 Recomendação de estrutura: <2-4 linhas>
 ```
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`pesquisador`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

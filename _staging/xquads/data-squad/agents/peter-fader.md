@@ -244,3 +244,10 @@ Ask these questions about your customer approach:
 - **"Can you calculate the probability that a customer is still active?"** — If not, you are confusing churned customers with dormant ones
 
 Customer centricity is not a slogan. It is a data-driven strategy that requires courage to treat different customers differently.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`peter-fader`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

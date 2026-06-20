@@ -2,9 +2,9 @@
 
 **Task**: Validação do Quality Gate de Pré-Push (Agnóstica de Repositório)
 
-**Purpose**: Executar verificações abrangentes de qualidade antes de enviar (push) código para o repositório remoto, garantindo que os padrões de qualidade de código, testes e segurança sejam atendidos.
+**Propósito**: Executar verificações abrangentes de qualidade antes de enviar (push) código para o repositório remoto, garantindo que os padrões de qualidade de código, testes e segurança sejam atendidos.
 
-**When to use**: Antes de enviar (push) código para o GitHub, sempre via comando `@github-devops *pre-push`.
+**Quando Usar**: Antes de enviar (push) código para o GitHub, sempre via comando `@github-devops *pre-push`.
 
 ## Modos de Execução
 
@@ -25,11 +25,11 @@
 - Execução com zero ambiguidade
 - **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (opcional, padrão: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: githubDevopsPrePushQualityGate()
@@ -134,7 +134,7 @@ constitutional_gate:
 
 ## Pré-Condições
 
-**Purpose:** Validar pré-requisitos ANTES da execução da tarefa (bloqueante)
+**Propósito:** Validar pré-requisitos ANTES da execução da tarefa (bloqueante)
 
 **Checklist:**
 
@@ -159,7 +159,7 @@ pre-conditions:
 
 ## Pós-Condições
 
-**Purpose:** Validar o sucesso da execução APÓS a conclusão da tarefa
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da tarefa
 
 **Checklist:**
 
@@ -177,7 +177,7 @@ post-conditions:
 
 ## Critérios de Aceite
 
-**Purpose:** Critérios definitivos de aprovação/reprovação para a conclusão da tarefa
+**Propósito:** Critérios definitivos de aprovação/reprovação para a conclusão da tarefa
 
 **Checklist:**
 
@@ -198,39 +198,39 @@ acceptance-criteria:
 **Recursos externos/compartilhados usados por esta tarefa:**
 
 - **Tool:** git
-  - **Purpose:** Operações de controle de versão
-  - **Source:** System CLI
+  - **Propósito:** Operações de controle de versão
+  - **Origem:** System CLI
 
 - **Tool:** npm
-  - **Purpose:** Executar scripts de qualidade (lint, test, typecheck, build)
-  - **Source:** System CLI
+  - **Propósito:** Executar scripts de qualidade (lint, test, typecheck, build)
+  - **Origem:** System CLI
 
 - **Tool:** gh (GitHub CLI)
-  - **Purpose:** Operações de PR do GitHub
-  - **Source:** System CLI
+  - **Propósito:** Operações de PR do GitHub
+  - **Origem:** System CLI
 
 ---
 
 ## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
 **Erros Comuns:**
 
-1. **Error:** Task Not Found (Tarefa Não Encontrada)
-   - **Cause:** A tarefa especificada não está registrada no sistema
-   - **Resolution:** Verificar o nome e o registro da tarefa
-   - **Recovery:** Listar as tarefas disponíveis, sugerir similares
+1. **Erro:** Task Not Found (Tarefa Não Encontrada)
+   - **Causa:** A tarefa especificada não está registrada no sistema
+   - **Resolução:** Verificar o nome e o registro da tarefa
+   - **Recuperação:** Listar as tarefas disponíveis, sugerir similares
 
-2. **Error:** Invalid Parameters (Parâmetros Inválidos)
-   - **Cause:** Os parâmetros da tarefa não correspondem ao schema esperado
-   - **Resolution:** Validar os parâmetros contra a definição da tarefa
-   - **Recovery:** Fornecer um template de parâmetros, rejeitar a execução
+2. **Erro:** Invalid Parameters (Parâmetros Inválidos)
+   - **Causa:** Os parâmetros da tarefa não correspondem ao schema esperado
+   - **Resolução:** Validar os parâmetros contra a definição da tarefa
+   - **Recuperação:** Fornecer um template de parâmetros, rejeitar a execução
 
-3. **Error:** Execution Timeout (Tempo de Execução Esgotado)
-   - **Cause:** A tarefa excede o tempo máximo de execução
-   - **Resolution:** Otimizar a tarefa ou aumentar o timeout
-   - **Recovery:** Encerrar a tarefa, limpar recursos, registrar o estado
+3. **Erro:** Execution Timeout (Tempo de Execução Esgotado)
+   - **Causa:** A tarefa excede o tempo máximo de execução
+   - **Resolução:** Otimizar a tarefa ou aumentar o timeout
+   - **Recuperação:** Encerrar a tarefa, limpar recursos, registrar o estado
 
 ---
 
@@ -249,7 +249,7 @@ token_usage: ~3,000-10,000 tokens
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A

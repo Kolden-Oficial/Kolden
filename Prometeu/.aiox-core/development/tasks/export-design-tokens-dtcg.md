@@ -1,8 +1,8 @@
-# Export Design Tokens to W3C DTCG
+# Exportar Design Tokens para W3C DTCG
 
 > Task ID: brad-export-design-tokens-dtcg  
-> Agent: Brad (Design System Architect)  
-> Version: 1.0.0
+> Agente: Brad (Arquiteto de Design System)  
+> Versão: 1.0.0
 
 ## Modos de Execução
 

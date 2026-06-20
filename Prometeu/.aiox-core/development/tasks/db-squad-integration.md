@@ -127,7 +127,7 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
 **Recursos externos/compartilhados usados por esta task:**
 

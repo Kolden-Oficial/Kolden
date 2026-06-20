@@ -1,4 +1,4 @@
-# Consolidate Patterns Using Intelligent Clustering
+# Consolidar Padrões Usando Clustering Inteligente
 
 > Task ID: brad-consolidate-patterns
 > Agent: Brad (Design System Architect)
@@ -152,32 +152,32 @@ acceptance-criteria:
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
 **Strategy:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Task Not Found
-   - **Cause:** Specified task not registered in system
-   - **Resolution:** Verify task name and registration
-   - **Recovery:** List available tasks, suggest similar
+1. **Error:** Task Não Encontrada
+   - **Cause:** Task especificada não registrada no sistema
+   - **Resolution:** Verificar o nome e o registro da task
+   - **Recovery:** Listar tasks disponíveis, sugerir similares
 
-2. **Error:** Invalid Parameters
-   - **Cause:** Task parameters do not match expected schema
-   - **Resolution:** Validate parameters against task definition
-   - **Recovery:** Provide parameter template, reject execution
+2. **Error:** Parâmetros Inválidos
+   - **Cause:** Os parâmetros da task não correspondem ao schema esperado
+   - **Resolution:** Validar os parâmetros contra a definição da task
+   - **Recovery:** Fornecer template de parâmetros, rejeitar a execução
 
-3. **Error:** Execution Timeout
-   - **Cause:** Task exceeds maximum execution time
-   - **Resolution:** Optimize task or increase timeout
-   - **Recovery:** Kill task, cleanup resources, log state
+3. **Error:** Timeout de Execução
+   - **Cause:** A task excede o tempo máximo de execução
+   - **Resolution:** Otimizar a task ou aumentar o timeout
+   - **Recovery:** Encerrar a task, limpar recursos, registrar o estado
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-20 min (estimated)
@@ -185,8 +185,8 @@ cost_estimated: $0.003-0.015
 token_usage: ~2,000-8,000 tokens
 ```
 
-**Optimization Notes:**
-- Iterative analysis with depth limits; cache intermediate results; batch similar operations
+**Notas de Otimização:**
+- Análise iterativa com limites de profundidade; cache de resultados intermediários; agrupar operações similares em lote
 
 ---
 
@@ -206,105 +206,105 @@ updated_at: 2025-11-17
 ---
 
 
-## Description
+## Descrição
 
-Reduce UI pattern redundancy by clustering similar patterns using intelligent algorithms (HSL color clustering at 5% threshold, semantic button grouping). Target: >80% reduction.
+Reduzir a redundância de padrões de UI agrupando padrões similares usando algoritmos inteligentes (clustering de cores HSL com limiar de 5%, agrupamento semântico de botões). Meta: >80% de redução.
 
-## Prerequisites
+## Pré-requisitos
 
-- Audit completed (*audit command run successfully)
-- .state.yaml exists with inventory results
-- pattern-inventory.json available
+- Auditoria concluída (comando *audit executado com sucesso)
+- .state.yaml existe com resultados do inventário
+- pattern-inventory.json disponível
 
 ## Workflow
 
-### Interactive Elicitation
+### Elicitação Interativa
 
-This task uses interactive elicitation to review consolidation decisions.
+Esta task usa elicitação interativa para revisar as decisões de consolidação.
 
-1. **Load Audit Results**
-   - Read .state.yaml to get inventory data
-   - Display current redundancy metrics
-   - Confirm user wants to proceed with consolidation
+1. **Carregar Resultados da Auditoria**
+   - Ler .state.yaml para obter os dados do inventário
+   - Exibir as métricas de redundância atuais
+   - Confirmar que o usuário deseja prosseguir com a consolidação
 
-2. **Review Clustering Parameters**
-   - HSL threshold for colors (default: 5%)
-   - Ask if user has manual overrides (patterns that shouldn't merge)
-   - Confirm output directory
+2. **Revisar Parâmetros de Clustering**
+   - Limiar HSL para cores (padrão: 5%)
+   - Perguntar se o usuário tem overrides manuais (padrões que não devem ser mesclados)
+   - Confirmar o diretório de saída
 
-3. **Present Consolidation Recommendations**
-   - Show before/after for each pattern type
-   - Ask for approval or adjustments
-   - Allow manual overrides before finalizing
+3. **Apresentar Recomendações de Consolidação**
+   - Mostrar antes/depois para cada tipo de padrão
+   - Pedir aprovação ou ajustes
+   - Permitir overrides manuais antes de finalizar
 
-### Steps
+### Passos
 
-1. **Load Audit Data**
-   - Read .state.yaml for inventory results
-   - Validate audit phase completed
-   - Extract pattern counts and scan path
-   - Validation: State file exists and contains inventory data
+1. **Carregar Dados da Auditoria**
+   - Ler .state.yaml para os resultados do inventário
+   - Validar que a fase de auditoria foi concluída
+   - Extrair as contagens de padrões e o caminho de varredura
+   - Validação: O arquivo de estado existe e contém dados do inventário
 
-2. **Cluster Colors by HSL Similarity**
-   - Extract all unique colors from codebase
-   - Convert hex to HSL color space
-   - Group colors within 5% HSL threshold
-   - Select most-used color in each cluster as primary
-   - Identify semantic relationships (primary-dark as hover state)
-   - Validation: Color clusters created with usage counts
+2. **Agrupar Cores por Similaridade HSL**
+   - Extrair todas as cores únicas do codebase
+   - Converter hex para o espaço de cor HSL
+   - Agrupar cores dentro do limiar HSL de 5%
+   - Selecionar a cor mais usada em cada cluster como primária
+   - Identificar relações semânticas (primary-dark como estado de hover)
+   - Validação: Clusters de cores criados com contagens de uso
 
-3. **Cluster Button Patterns by Semantic Purpose**
-   - Extract button class names and patterns
-   - Analyze naming for semantic meaning (primary, secondary, danger, etc)
-   - Group functionally equivalent buttons
-   - Recommend minimal variant set (primary, secondary, destructive)
-   - Validation: Button consolidation map created
+3. **Agrupar Padrões de Botões por Propósito Semântico**
+   - Extrair os nomes de classe e padrões dos botões
+   - Analisar a nomenclatura em busca de significado semântico (primary, secondary, danger, etc)
+   - Agrupar botões funcionalmente equivalentes
+   - Recomendar o conjunto mínimo de variantes (primary, secondary, destructive)
+   - Validação: Mapa de consolidação de botões criado
 
-4. **Consolidate Spacing Values**
-   - Extract all padding and margin values
-   - Identify base unit (4px or 8px)
-   - Propose spacing scale (xs, sm, md, lg, xl, 2xl, 3xl)
-   - Map existing values to scale
-   - Validation: Spacing scale generated
+4. **Consolidar Valores de Espaçamento**
+   - Extrair todos os valores de padding e margin
+   - Identificar a unidade base (4px ou 8px)
+   - Propor uma escala de espaçamento (xs, sm, md, lg, xl, 2xl, 3xl)
+   - Mapear os valores existentes para a escala
+   - Validação: Escala de espaçamento gerada
 
-5. **Consolidate Typography**
-   - Extract font sizes, weights, families
-   - Propose type scale (modular scale or fixed intervals)
-   - Consolidate similar weights (merge 500 and 600 if both exist)
-   - Recommend minimal font family set
-   - Validation: Typography scale created
+5. **Consolidar Tipografia**
+   - Extrair tamanhos, pesos e famílias de fontes
+   - Propor uma escala tipográfica (escala modular ou intervalos fixos)
+   - Consolidar pesos similares (mesclar 500 e 600 se ambos existirem)
+   - Recomendar o conjunto mínimo de famílias de fontes
+   - Validação: Escala tipográfica criada
 
-6. **Generate Consolidation Report**
-   - Create consolidation-report.md with before/after metrics
-   - Include reduction percentages for each pattern type
-   - Generate detailed cluster files (color-clusters.txt, button-consolidation.txt)
-   - Calculate overall reduction percentage
-   - Validation: Report shows >80% reduction or explain why not
+6. **Gerar Relatório de Consolidação**
+   - Criar consolidation-report.md com métricas de antes/depois
+   - Incluir percentuais de redução para cada tipo de padrão
+   - Gerar arquivos detalhados de cluster (color-clusters.txt, button-consolidation.txt)
+   - Calcular o percentual de redução geral
+   - Validação: O relatório mostra >80% de redução ou explica por que não
 
-7. **Create Pattern Mapping**
-   - Generate old-to-new mapping for each pattern type
-   - Document which old patterns map to which new tokens
-   - Create migration guide snippets
-   - Validation: Complete mapping for all patterns
+7. **Criar Mapeamento de Padrões**
+   - Gerar o mapeamento de antigo-para-novo para cada tipo de padrão
+   - Documentar quais padrões antigos mapeiam para quais novos tokens
+   - Criar trechos de guia de migração
+   - Validação: Mapeamento completo para todos os padrões
 
-8. **Update State File**
-   - Add consolidation section to .state.yaml
-   - Record before/after counts for all pattern types
-   - Update phase to "consolidation_complete"
-   - Log Brad's consolidation decisions
-   - Validation: State updated with consolidation data
+8. **Atualizar o Arquivo de Estado**
+   - Adicionar a seção de consolidação ao .state.yaml
+   - Registrar as contagens de antes/depois para todos os tipos de padrão
+   - Atualizar a fase para "consolidation_complete"
+   - Registrar as decisões de consolidação do Brad
+   - Validação: Estado atualizado com os dados de consolidação
 
-## Output
+## Saída
 
-- **consolidation-report.md**: Executive summary with reduction metrics
-- **color-clusters.txt**: Detailed color groupings with usage counts
-- **button-consolidation.txt**: Button semantic analysis and recommendations
-- **spacing-consolidation.txt**: Spacing scale proposal
-- **typography-consolidation.txt**: Typography scale proposal
-- **pattern-mapping.json**: Old pattern → new token mappings
-- **.state.yaml**: Updated with consolidation decisions
+- **consolidation-report.md**: Resumo executivo com métricas de redução
+- **color-clusters.txt**: Agrupamentos detalhados de cores com contagens de uso
+- **button-consolidation.txt**: Análise semântica de botões e recomendações
+- **spacing-consolidation.txt**: Proposta de escala de espaçamento
+- **typography-consolidation.txt**: Proposta de escala tipográfica
+- **pattern-mapping.json**: Mapeamentos de padrão antigo → novo token
+- **.state.yaml**: Atualizado com as decisões de consolidação
 
-### Output Format
+### Formato de Saída
 
 ```yaml
 # .state.yaml consolidation section
@@ -334,78 +334,81 @@ consolidation:
   target_met: true
 ```
 
-## Success Criteria
+## Critérios de Sucesso
 
-- [ ] >80% overall pattern reduction achieved
-- [ ] Color clustering uses HSL similarity (not just hex distance)
-- [ ] Button variants identified by semantic purpose
-- [ ] Spacing scale based on consistent base unit
-- [ ] Most-used patterns preserved as primary tokens
-- [ ] All consolidation decisions documented with rationale
-- [ ] User can review and override before finalizing
+- [ ] >80% de redução geral de padrões alcançada
+- [ ] O clustering de cores usa similaridade HSL (não apenas distância hex)
+- [ ] Variantes de botões identificadas por propósito semântico
+- [ ] Escala de espaçamento baseada em uma unidade base consistente
+- [ ] Padrões mais usados preservados como tokens primários
+- [ ] Todas as decisões de consolidação documentadas com justificativa
+- [ ] O usuário pode revisar e sobrepor (override) antes de finalizar
 
-## Error Handling
+## Tratamento de Erros
 
-- **No audit data found**: Exit with message to run *audit first
-- **Insufficient patterns to consolidate**: Report that codebase is already clean
-- **Cannot achieve 80% reduction**: Explain why and show actual reduction achieved
-- **Invalid state file**: Attempt to recover from backup or prompt re-audit
+- **Nenhum dado de auditoria encontrado**: Sair com mensagem para executar *audit primeiro
+- **Padrões insuficientes para consolidar**: Reportar que o codebase já está limpo
+- **Não é possível alcançar 80% de redução**: Explicar por que e mostrar a redução real alcançada
+- **Arquivo de estado inválido**: Tentar recuperar a partir do backup ou solicitar nova auditoria
 
-## Security Considerations
+## Considerações de Segurança
 
-- Read-only analysis of patterns (no code modification)
-- Validate user overrides to prevent injection
-- Handle malformed color values safely
-- Backup state file before overwriting
+- Análise somente-leitura dos padrões (sem modificação de código)
+- Validar os overrides do usuário para prevenir injeção
+- Tratar valores de cor malformados com segurança
+- Fazer backup do arquivo de estado antes de sobrescrever
 
-## Examples
+## Exemplos
 
-### Example 1: Successful Consolidation
-
-```bash
-*consolidate
-```
-
-Output:
-```
-🎨 CONSOLIDATING COLORS...
-Found 89 unique colors
-Clustering with 5% HSL threshold...
-
-CLUSTER 1 - Primary Blues (4 → 1):
-  #0066CC (234 uses) <- KEEP
-  #0065CB, #0067CD, #0064CA (merge)
-
-CLUSTER 2 - Error Reds (3 → 1):
-  #DC2626 (89 uses) <- KEEP
-  #DB2525, #DD2727 (merge)
-
-📊 CONSOLIDATION SUMMARY:
-| Pattern    | Before | After | Reduction |
-|------------|--------|-------|-----------|
-| Colors     | 89     | 12    | 86.5%     |
-| Buttons    | 47     | 3     | 93.6%     |
-| Spacing    | 19     | 7     | 63.2%     |
-| Typography | 21     | 10    | 52.4%     |
-| TOTAL      | 176    | 32    | 81.8%     |
-
-✅ TARGET MET: >80% reduction achieved
-✅ Report saved: outputs/design-system/my-app/consolidation/consolidation-report.md
-```
-
-### Example 2: User Override
+### Exemplo 1: Consolidação Bem-Sucedida
 
 ```bash
 *consolidate
-
-Brad: "Merge #0066CC and #0052A3?"
-User: "No, #0052A3 is intentional hover state"
-Brad: "Override recorded. Keeping both."
 ```
 
-## Notes
+Saída:
+```
+🎨 CONSOLIDANDO CORES...
+Encontradas 89 cores únicas
+Agrupando com limiar HSL de 5%...
 
-- HSL color space provides perceptual similarity (better than RGB/hex distance)
-- Most-used pattern in each cluster becomes the canonical token
-- Semantic button analysis looks for keywords: primary, main, secondary, default, danger, delete, destructive
-- Spacing scale should use consistent base unit (4px or 8px)
+CLUSTER 1 - Azuis Primários (4 → 1):
+  #0066CC (234 usos) <- MANTER
+  #0065CB, #0067CD, #0064CA (mesclar)
+
+CLUSTER 2 - Vermelhos de Erro (3 → 1):
+  #DC2626 (89 usos) <- MANTER
+  #DB2525, #DD2727 (mesclar)
+
+📊 RESUMO DA CONSOLIDAÇÃO:
+| Padrão     | Antes  | Depois | Redução   |
+|------------|--------|--------|-----------|
+| Cores      | 89     | 12     | 86.5%     |
+| Botões     | 47     | 3      | 93.6%     |
+| Espaçamento| 19     | 7      | 63.2%     |
+| Tipografia | 21     | 10     | 52.4%     |
+| TOTAL      | 176    | 32     | 81.8%     |
+
+✅ META ATINGIDA: >80% de redução alcançada
+✅ Relatório salvo: outputs/design-system/my-app/consolidation/consolidation-report.md
+```
+
+### Exemplo 2: Override do Usuário
+
+```bash
+*consolidate
+
+Brad: "Mesclar #0066CC e #0052A3?"
+Usuário: "Não, #0052A3 é um estado de hover intencional"
+Brad: "Override registrado. Mantendo ambos."
+```
+
+## Notas
+
+- O espaço de cor HSL fornece similaridade perceptual (melhor que distância RGB/hex)
+- O padrão mais usado em cada cluster torna-se o token canônico
+- A análise semântica de botões procura por palavras-chave: primary, main, secondary, default, danger, delete, destructive
+- A escala de espaçamento deve usar uma unidade base consistente (4px ou 8px)
+- Overrides manuais são respeitados e documentados
+- Execute isto após cada auditoria para prevenir a regressão de padrões
+- Brad diz: "Números não mentem. 82% de redução = economia real." ("Numbers don't lie. 82% reduction = real savings.")

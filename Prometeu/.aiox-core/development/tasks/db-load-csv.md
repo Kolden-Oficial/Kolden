@@ -1,35 +1,35 @@
 # Task: Load CSV Data Safely
 
-**Purpose**: Import CSV data using PostgreSQL COPY with staging table and validation
+**Propósito**: Importar dados CSV usando PostgreSQL COPY com tabela de staging e validação
 
 **Elicit**: true
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Antecipado Abrangente
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: dbLoadCsv()
@@ -75,9 +75,9 @@ atomic_layer: Config
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -93,9 +93,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução DEPOIS que a task termina
 
 **Checklist:**
 
@@ -111,9 +111,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
@@ -129,28 +129,28 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** neo4j-driver
-  - **Purpose:** Neo4j database connection and query execution
-  - **Source:** npm: neo4j-driver
+- **Ferramenta:** neo4j-driver
+  - **Propósito:** Conexão com banco de dados Neo4j e execução de queries
+  - **Fonte:** npm: neo4j-driver
 
-- **Tool:** query-validator
-  - **Purpose:** Cypher query syntax validation
-  - **Source:** .aiox-core/utils/db-query-validator.js
+- **Ferramenta:** query-validator
+  - **Propósito:** Validação de sintaxe de query Cypher
+  - **Fonte:** .aiox-core/utils/db-query-validator.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** db-query.js
-  - **Purpose:** Execute Neo4j queries with error handling
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/db-query.js
+  - **Propósito:** Executar queries Neo4j com tratamento de erros
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/db-query.js
 
 ---
 

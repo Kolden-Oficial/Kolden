@@ -27,7 +27,7 @@
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: extendPattern()
@@ -190,7 +190,7 @@ token_usage: ~1,000-3,000 tokens
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A

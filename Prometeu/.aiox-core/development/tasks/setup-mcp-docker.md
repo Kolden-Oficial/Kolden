@@ -1,10 +1,10 @@
 # Setup Docker MCP Toolkit
 
 **Task ID:** setup-mcp-docker
-**Version:** 2.2.0
-**Created:** 2025-12-08
-**Updated:** 2025-12-23
-**Agent:** @devops (Gage)
+**Versão:** 2.2.0
+**Criada:** 2025-12-08
+**Atualizada:** 2025-12-23
+**Agente:** @devops (Gage)
 
 ---
 

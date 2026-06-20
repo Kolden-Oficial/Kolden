@@ -71,111 +71,111 @@ atomic_layer: Molecule
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Task is registered; required parameters provided; dependencies met
+  - [ ] Task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas
     tipo: pre-condition
     blocker: true
     validação: |
-      Check task is registered; required parameters provided; dependencies met
-    error_message: "Pre-condition failed: Task is registered; required parameters provided; dependencies met"
+      Verificar que a task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas
+    error_message: "Pré-condição falhou: Task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas"
 ```
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a task ser concluída
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Task completed; exit code 0; expected outputs created
+  - [ ] Task concluída; exit code 0; saídas esperadas criadas
     tipo: post-condition
     blocker: true
     validação: |
-      Verify task completed; exit code 0; expected outputs created
-    error_message: "Post-condition failed: Task completed; exit code 0; expected outputs created"
+      Verificar que a task foi concluída; exit code 0; saídas esperadas criadas
+    error_message: "Pós-condição falhou: Task concluída; exit code 0; saídas esperadas criadas"
 ```
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Task completed as expected; side effects documented
+  - [ ] Task concluída conforme esperado; efeitos colaterais documentados
     tipo: acceptance-criterion
     blocker: true
     validação: |
-      Assert task completed as expected; side effects documented
-    error_message: "Acceptance criterion not met: Task completed as expected; side effects documented"
+      Assegurar que a task foi concluída conforme esperado; efeitos colaterais documentados
+    error_message: "Critério de aceite não atendido: Task concluída conforme esperado; efeitos colaterais documentados"
 ```
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** task-runner
-  - **Purpose:** Task execution and orchestration
-  - **Source:** .aiox-core/core/task-runner.js
+- **Ferramenta:** task-runner
+  - **Propósito:** Execução e orquestração de tasks
+  - **Origem:** .aiox-core/core/task-runner.js
 
-- **Tool:** logger
-  - **Purpose:** Execution logging and error tracking
-  - **Source:** .aiox-core/utils/logger.js
+- **Ferramenta:** logger
+  - **Propósito:** Registro de execução e rastreamento de erros
+  - **Origem:** .aiox-core/utils/logger.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** execute-task.js
-  - **Purpose:** Generic task execution wrapper
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/execute-task.js
+  - **Propósito:** Wrapper genérico de execução de task
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/execute-task.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Task Not Found
-   - **Cause:** Specified task not registered in system
-   - **Resolution:** Verify task name and registration
-   - **Recovery:** List available tasks, suggest similar
+1. **Erro:** Task Não Encontrada
+   - **Causa:** Task especificada não registrada no sistema
+   - **Resolução:** Verificar o nome e o registro da task
+   - **Recuperação:** Listar tasks disponíveis, sugerir semelhantes
 
-2. **Error:** Invalid Parameters
-   - **Cause:** Task parameters do not match expected schema
-   - **Resolution:** Validate parameters against task definition
-   - **Recovery:** Provide parameter template, reject execution
+2. **Erro:** Parâmetros Inválidos
+   - **Causa:** Parâmetros da task não correspondem ao schema esperado
+   - **Resolução:** Validar os parâmetros contra a definição da task
+   - **Recuperação:** Fornecer template de parâmetros, rejeitar execução
 
-3. **Error:** Execution Timeout
-   - **Cause:** Task exceeds maximum execution time
-   - **Resolution:** Optimize task or increase timeout
-   - **Recovery:** Kill task, cleanup resources, log state
+3. **Erro:** Timeout de Execução
+   - **Causa:** Task excede o tempo máximo de execução
+   - **Resolução:** Otimizar a task ou aumentar o timeout
+   - **Recuperação:** Encerrar a task, limpar recursos, registrar estado
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 2-5 min (estimated)
@@ -183,8 +183,8 @@ cost_estimated: $0.001-0.003
 token_usage: ~1,000-3,000 tokens
 ```
 
-**Optimization Notes:**
-- Parallelize independent operations; reuse atom results; implement early exits
+**Notas de Otimização:**
+- Paralelizar operações independentes; reutilizar resultados de átomos; implementar saídas antecipadas
 
 ---
 
@@ -203,55 +203,55 @@ updated_at: 2025-11-17
 
 ---
 
-# No checklists needed - this task manages real-time collaborative editing sessions, no document validation required
+# Nenhum checklist necessário - esta task gerencia sessões de edição colaborativa em tempo real, nenhuma validação de documento requerida
 tools:
   - github-cli
 ---
 
 # Collaborative Edit - AIOX Developer Task
 
-## Purpose
-Create and manage collaborative editing sessions for real-time component modification with multiple participants.
+## Propósito
+Criar e gerenciar sessões de edição colaborativa para modificação de componentes em tempo real com múltiplos participantes.
 
-## Command Pattern
+## Padrão de Comando
 ```
 *collaborative-edit <action> [options]
 ```
 
-## Actions
-- `start`: Start a new collaborative editing session
-- `join`: Join an existing session
-- `leave`: Leave current session
-- `end`: End a collaborative session
-- `status`: Check session status
+## Ações
+- `start`: Iniciar uma nova sessão de edição colaborativa
+- `join`: Entrar em uma sessão existente
+- `leave`: Sair da sessão atual
+- `end`: Encerrar uma sessão colaborativa
+- `status`: Verificar o status da sessão
 
-## Parameters
-### Start Session
-- `--component <path>`: Component to edit collaboratively
-- `--participants <users>`: Initial participants (comma-separated)
-- `--mode <mode>`: Editing mode (live, turn-based, review)
-- `--timeout <minutes>`: Session timeout
+## Parâmetros
+### Iniciar Sessão
+- `--component <path>`: Componente a ser editado colaborativamente
+- `--participants <users>`: Participantes iniciais (separados por vírgula)
+- `--mode <mode>`: Modo de edição (live, turn-based, review)
+- `--timeout <minutes>`: Timeout da sessão
 
-### Join Session
-- `--session-id <id>`: Session ID to join
-- `--role <role>`: Participant role (editor, reviewer, observer)
+### Entrar na Sessão
+- `--session-id <id>`: ID da sessão para entrar
+- `--role <role>`: Papel do participante (editor, reviewer, observer)
 
-## Examples
+## Exemplos
 ```bash
-# Start collaborative editing session
+# Iniciar sessão de edição colaborativa
 *collaborative-edit start --component aiox-core/agents/data-agent.md --participants alice,bob --mode live
 
-# Join existing session
+# Entrar em sessão existente
 *collaborative-edit join --session-id session-1234567890 --role editor
 
-# Check session status
+# Verificar status da sessão
 *collaborative-edit status --session-id session-1234567890
 
-# End session and merge changes
+# Encerrar sessão e mesclar mudanças
 *collaborative-edit end --session-id session-1234567890 --merge-strategy collaborative
 ```
 
-## Implementation
+## Implementação
 
 ```javascript
 const fs = require('fs').promises;
@@ -1061,49 +1061,49 @@ class CollaborativeEditTask extends EventEmitter {
 module.exports = CollaborativeEditTask;
 ```
 
-## Validation Rules
+## Regras de Validação
 
-### Session Management
-- Only one active session per component allowed
-- Session owner has administrative privileges
-- Participants must be invited or have appropriate permissions
-- Sessions timeout after specified duration
-- All edits must be tracked and versioned
+### Gerenciamento de Sessão
+- Apenas uma sessão ativa por componente é permitida
+- O dono da sessão tem privilégios administrativos
+- Participantes devem ser convidados ou ter as permissões apropriadas
+- Sessões expiram após a duração especificada
+- Todas as edições devem ser rastreadas e versionadas
 
-### Editing Modes
-- **Live**: Real-time collaborative editing with instant sync
-- **Turn-based**: Sequential editing with explicit turn management
-- **Review**: Changes require approval before applying
+### Modos de Edição
+- **Live**: Edição colaborativa em tempo real com sincronização instantânea
+- **Turn-based**: Edição sequencial com gerenciamento explícito de turnos
+- **Review**: Mudanças requerem aprovação antes de serem aplicadas
 
-### Conflict Prevention
-- Automatic locking for turn-based editing
-- Real-time conflict detection for live editing
-- Version tracking for all changes
-- Rollback capability for problematic edits
+### Prevenção de Conflitos
+- Bloqueio automático para edição turn-based
+- Detecção de conflitos em tempo real para edição live
+- Rastreamento de versão para todas as mudanças
+- Capacidade de rollback para edições problemáticas
 
-## Integration Points
+## Pontos de Integração
 
 ### Modification Synchronizer
-- Handles real-time synchronization of edits
-- Manages edit broadcasting and receiving
-- Tracks version consistency
-- Handles network interruptions
+- Trata a sincronização em tempo real das edições
+- Gerencia o envio e o recebimento de edições
+- Rastreia a consistência de versão
+- Trata interrupções de rede
 
 ### Conflict Manager
-- Detects and resolves editing conflicts
-- Manages locks and turn-based access
-- Handles merge strategies
-- Provides conflict visualization
+- Detecta e resolve conflitos de edição
+- Gerencia bloqueios e acesso turn-based
+- Trata estratégias de merge
+- Fornece visualização de conflitos
 
 ### Notification Service
-- Notifies participants of session events
-- Alerts on turn changes
-- Broadcasts edit notifications
-- Handles session invitations
+- Notifica os participantes sobre eventos da sessão
+- Alerta sobre mudanças de turno
+- Transmite notificações de edição
+- Trata convites de sessão
 
-## Security Considerations
-- Validate participant permissions
-- Encrypt sensitive session data
-- Audit all collaborative actions
-- Prevent unauthorized access to sessions
-- Secure communication channels 
+## Considerações de Segurança
+- Validar as permissões dos participantes
+- Criptografar dados sensíveis da sessão
+- Auditar todas as ações colaborativas
+- Prevenir acesso não autorizado às sessões
+- Canais de comunicação seguros 

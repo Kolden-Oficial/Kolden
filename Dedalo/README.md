@@ -54,3 +54,11 @@ O squad inclui 3 workflows multifásicos em `workflows/`:
 ---
 
 *Squad de Domínio do Claude Code — "Domine a ferramenta para dominar o ofício."*
+
+<!-- ritual-de-encerramento-central -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Todo agente deste squad, sempre que for acionado, ao final da sessão deve aprender algo. Antes de
+encerrar uma sessão com trabalho, acione a habilidade `ritual-de-encerramento` — reflita, extraia
+lições verificadas e grave-as na memória própria do agente (`<projeto>/agent-memory/<agent-id>.md`).
+Fonte única: `C:\Kolden\.claude\skills\ritual-de-encerramento\SKILL.md`. O reflexo `Stop` dispara
+isso automaticamente quando a sessão roda a partir da raiz do workspace.

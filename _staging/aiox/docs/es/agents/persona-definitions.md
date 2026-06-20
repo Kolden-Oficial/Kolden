@@ -499,3 +499,10 @@ Estos nombres estan listos para traduccion:
 **Estado del Documento:** Completo
 **Proximos Pasos:** Exportar a formato YAML, crear documento de fundamentos de arquetipos
 **Listo para Entrega:** Story 6.1.2 puede comenzar implementacion inmediatamente
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`persona-definitions`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

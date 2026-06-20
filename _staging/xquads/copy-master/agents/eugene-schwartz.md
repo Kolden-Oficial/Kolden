@@ -236,3 +236,10 @@ Ask: "Does this headline match the awareness level of the prospect?"
 - If the market is at Stage 5 sophistication and the headline makes a direct claim → FAIL
 
 The headline must be calibrated. There is no universal "good headline" — only headlines that match awareness and sophistication.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`eugene-schwartz`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

@@ -69,111 +69,111 @@ atomic_layer: Molecule
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Purpose:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Target exists; backup created; valid modification parameters
+  - [ ] Alvo existe; backup criado; parâmetros de modificação válidos
     tipo: pre-condition
     blocker: true
     validação: |
-      Check target exists; backup created; valid modification parameters
-    error_message: "Pre-condition failed: Target exists; backup created; valid modification parameters"
+      Verificar se o alvo existe; backup criado; parâmetros de modificação válidos
+    error_message: "Pré-condição falhou: Alvo existe; backup criado; parâmetros de modificação válidos"
 ```
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Purpose:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Modification applied; backup preserved; integrity verified
+  - [ ] Modificação aplicada; backup preservado; integridade verificada
     tipo: post-condition
     blocker: true
     validação: |
-      Verify modification applied; backup preserved; integrity verified
-    error_message: "Post-condition failed: Modification applied; backup preserved; integrity verified"
+      Verificar se a modificação foi aplicada; backup preservado; integridade verificada
+    error_message: "Pós-condição falhou: Modificação aplicada; backup preservado; integridade verificada"
 ```
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Purpose:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Changes applied correctly; original backed up; rollback possible
+  - [ ] Mudanças aplicadas corretamente; original com backup; rollback possível
     tipo: acceptance-criterion
     blocker: true
     validação: |
-      Assert changes applied correctly; original backed up; rollback possible
-    error_message: "Acceptance criterion not met: Changes applied correctly; original backed up; rollback possible"
+      Assegurar que as mudanças foram aplicadas corretamente; original com backup; rollback possível
+    error_message: "Critério de aceite não atendido: Mudanças aplicadas corretamente; original com backup; rollback possível"
 ```
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
 - **Tool:** file-system
-  - **Purpose:** File reading, modification, and backup
-  - **Source:** Node.js fs module
+  - **Purpose:** Leitura, modificação e backup de arquivos
+  - **Source:** Módulo fs do Node.js
 
 - **Tool:** ast-parser
-  - **Purpose:** Parse and modify code safely
+  - **Purpose:** Fazer parse e modificar código com segurança
   - **Source:** .aiox-core/utils/ast-parser.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** modify-file.js
-  - **Purpose:** Safe file modification with backup
+  - **Purpose:** Modificação segura de arquivo com backup
   - **Language:** JavaScript
   - **Location:** .aiox-core/scripts/modify-file.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
 **Strategy:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Target Not Found
-   - **Cause:** Specified resource does not exist
-   - **Resolution:** Verify target exists before modification
-   - **Recovery:** Suggest similar resources or create new
+1. **Error:** Alvo Não Encontrado
+   - **Cause:** O recurso especificado não existe
+   - **Resolution:** Verificar se o alvo existe antes da modificação
+   - **Recovery:** Sugerir recursos similares ou criar novo
 
-2. **Error:** Backup Failed
-   - **Cause:** Unable to create backup before modification
-   - **Resolution:** Check disk space and permissions
-   - **Recovery:** Abort modification, preserve original state
+2. **Error:** Backup Falhou
+   - **Cause:** Não foi possível criar o backup antes da modificação
+   - **Resolution:** Verificar espaço em disco e permissões
+   - **Recovery:** Abortar a modificação, preservar o estado original
 
-3. **Error:** Concurrent Modification
-   - **Cause:** Resource modified by another process
-   - **Resolution:** Implement file locking or retry logic
-   - **Recovery:** Retry with exponential backoff or merge changes
+3. **Error:** Modificação Concorrente
+   - **Cause:** Recurso modificado por outro processo
+   - **Resolution:** Implementar bloqueio de arquivo ou lógica de retry
+   - **Recovery:** Tentar novamente com backoff exponencial ou mesclar as mudanças
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 2-5 min (estimated)
@@ -182,7 +182,7 @@ token_usage: ~1,000-3,000 tokens
 ```
 
 **Optimization Notes:**
-- Parallelize independent operations; reuse atom results; implement early exits
+- Paralelizar operações independentes; reutilizar resultados de átomos; implementar saídas antecipadas (early exits)
 
 ---
 
@@ -207,115 +207,115 @@ checklists:
 
 # Update Manifest
 
-## Purpose
-To safely update team manifest files with new agent entries while maintaining YAML integrity and preventing corruption.
+## Propósito
+Atualizar com segurança os arquivos de manifesto de equipe (team manifest) com novas entradas de agente, mantendo a integridade do YAML e prevenindo corrupção.
 
-## Prerequisites
-- User authorization verified
-- Agent file already created
-- Backup capability available
-- YAML parser loaded
+## Pré-requisitos
+- Autorização do usuário verificada
+- Arquivo do agente já criado
+- Capacidade de backup disponível
+- Parser de YAML carregado
 
-## Interactive Elicitation Process
+## Processo de Elicitação Interativa
 
-### Step 1: Manifest Selection
+### Passo 1: Seleção do Manifesto
 ```
-ELICIT: Target Manifest
-1. Which team manifest to update? 
-   - team-all.yaml (all agents)
-   - team-fullstack.yaml (full stack development)
-   - team-no-ui.yaml (backend only)
-   - team-ide-minimal.yaml (minimal IDE setup)
-2. Is this the correct manifest for the agent's purpose?
-```
-
-### Step 2: Agent Categorization
-```
-ELICIT: Agent Classification
-1. What category does this agent belong to?
-   - development (coding, implementation)
-   - planning (PM, PO, architecture)
-   - quality (QA, testing, validation)
-   - specialty (UX, data, security)
-   - meta (framework, tooling)
-2. What tags should be applied? (comma-separated)
-3. Any special notes or restrictions?
+ELICIT: Manifesto Alvo
+1. Qual manifesto de equipe atualizar?
+   - team-all.yaml (todos os agentes)
+   - team-fullstack.yaml (desenvolvimento full stack)
+   - team-no-ui.yaml (apenas backend)
+   - team-ide-minimal.yaml (configuração mínima de IDE)
+2. Este é o manifesto correto para o propósito do agente?
 ```
 
-### Step 3: Team Composition
+### Passo 2: Categorização do Agente
 ```
-ELICIT: Team Integration
-1. Should this agent be included by default? (yes/no)
-2. Are there any agent dependencies?
-3. Should this replace an existing agent?
-4. Any incompatible agents?
+ELICIT: Classificação do Agente
+1. A qual categoria este agente pertence?
+   - development (codificação, implementação)
+   - planning (PM, PO, arquitetura)
+   - quality (QA, testes, validação)
+   - specialty (UX, dados, segurança)
+   - meta (framework, ferramental)
+2. Quais tags devem ser aplicadas? (separadas por vírgula)
+3. Alguma nota ou restrição especial?
 ```
 
-## Implementation Steps
+### Passo 3: Composição da Equipe
+```
+ELICIT: Integração da Equipe
+1. Este agente deve ser incluído por padrão? (yes/no)
+2. Existem dependências de agente?
+3. Isto deve substituir um agente existente?
+4. Algum agente incompatível?
+```
 
-1. **Backup Current Manifest**
+## Passos de Implementação
+
+1. **Backup do Manifesto Atual**
    ```javascript
    const backupPath = `${manifestPath}.backup-${Date.now()}`;
    await fs.copy(manifestPath, backupPath);
-   console.log(`✅ Backup created: ${backupPath}`);
+   console.log(`✅ Backup criado: ${backupPath}`);
    ```
 
-2. **Load and Parse Manifest**
+2. **Carregar e Fazer Parse do Manifesto**
    ```javascript
    const manifestContent = await fs.readFile(manifestPath, 'utf8');
    const manifest = yaml.load(manifestContent);
    
-   // Validate structure
+   // Validar estrutura
    if (!manifest.team || !manifest.agents) {
-     throw new Error('Invalid manifest structure');
+     throw new Error('Estrutura de manifesto inválida');
    }
    ```
 
-3. **Check for Duplicates**
+3. **Verificar Duplicatas**
    ```javascript
    const agentExists = manifest.agents.some(a => 
      a.id === agentId || a.file === agentFile
    );
    
    if (agentExists) {
-     // Prompt: Update existing or create new entry?
+     // Perguntar: Atualizar existente ou criar nova entrada?
    }
    ```
 
-4. **Add Agent Entry**
+4. **Adicionar Entrada do Agente**
    ```yaml
    agents:
      - id: {agent-id}
        file: agents/{agent-name}.md
-       name: {Agent Display Name}
+       name: {Nome de Exibição do Agente}
        category: {category}
        tags:
          - {tag1}
          - {tag2}
-       whenToUse: {description}
+       whenToUse: {descrição}
        defaultIncluded: {true|false}
    ```
 
-5. **Validate Updated Manifest**
+5. **Validar o Manifesto Atualizado**
    ```javascript
-   // Validate YAML syntax
+   // Validar sintaxe YAML
    try {
      yaml.load(yaml.dump(manifest));
    } catch (error) {
-     console.error('❌ Invalid YAML generated');
-     // Restore from backup
+     console.error('❌ YAML inválido gerado');
+     // Restaurar a partir do backup
    }
    
-   // Validate agent references
+   // Validar referências de agente
    for (const agent of manifest.agents) {
      const agentPath = path.join(root, agent.file);
      if (!await fs.exists(agentPath)) {
-       console.warn(`⚠️ Agent file not found: ${agent.file}`);
+       console.warn(`⚠️ Arquivo de agente não encontrado: ${agent.file}`);
      }
    }
    ```
 
-6. **Write Updated Manifest**
+6. **Gravar o Manifesto Atualizado**
    ```javascript
    const updatedYaml = yaml.dump(manifest, {
      indent: 2,
@@ -327,7 +327,7 @@ ELICIT: Team Integration
    await fs.writeFile(manifestPath, updatedYaml, 'utf8');
    ```
 
-7. **Update Memory Layer**
+7. **Atualizar a Camada de Memória**
    ```javascript
    await memoryClient.addMemory({
      type: 'manifest_updated',
@@ -340,69 +340,71 @@ ELICIT: Team Integration
    });
    ```
 
-8. **Verify Manifest Integrity**
-   - Attempt to load the updated manifest
-   - Check all agent references are valid
-   - Ensure no corruption occurred
-   - Test with actual agent activation
+8. **Verificar a Integridade do Manifesto**
+   - Tentar carregar o manifesto atualizado
+   - Verificar se todas as referências de agente são válidas
+   - Garantir que nenhuma corrupção ocorreu
+   - Testar com a ativação real do agente
 
-## Validation Checklist
-- [ ] Backup created successfully
-- [ ] Manifest structure preserved
-- [ ] No duplicate entries
-- [ ] YAML syntax valid
-- [ ] All agent files exist
-- [ ] Memory layer updated
-- [ ] Manifest loads correctly
+## Checklist de Validação
+- [ ] Backup criado com sucesso
+- [ ] Estrutura do manifesto preservada
+- [ ] Nenhuma entrada duplicada
+- [ ] Sintaxe YAML válida
+- [ ] Todos os arquivos de agente existem
+- [ ] Camada de memória atualizada
+- [ ] Manifesto carrega corretamente
 
-## Error Handling
-- If backup fails: Abort operation
-- If parse fails: Show error, don't proceed
-- If duplicate found: Offer options
-- If write fails: Restore from backup
-- If validation fails: Restore and report
+## Tratamento de Erros
+- Se o backup falhar: Abortar a operação
+- Se o parse falhar: Exibir erro, não prosseguir
+- Se for encontrada duplicata: Oferecer opções
+- Se a gravação falhar: Restaurar a partir do backup
+- Se a validação falhar: Restaurar e reportar
 
-## Rollback Procedure
+## Procedimento de Rollback
 ```javascript
 if (errorOccurred) {
-  console.log('🔄 Rolling back changes...');
+  console.log('🔄 Revertendo as mudanças...');
   try {
     await fs.copy(backupPath, manifestPath);
     
-    // Verify rollback success
+    // Verificar sucesso do rollback
     const rolledBackContent = await fs.readFile(manifestPath, 'utf8');
     const rolledBackManifest = yaml.load(rolledBackContent);
     
     if (rolledBackManifest && rolledBackManifest.agents) {
-      console.log('✅ Rollback complete - manifest restored');
+      console.log('✅ Rollback concluído - manifesto restaurado');
     } else {
-      console.error('❌ Rollback verification failed - manual intervention required');
-      console.error(`Backup location: ${backupPath}`);
+      console.error('❌ Verificação do rollback falhou - intervenção manual necessária');
+      console.error(`Local do backup: ${backupPath}`);
     }
   } catch (rollbackError) {
-    console.error('❌ CRITICAL: Rollback failed!', rollbackError);
-    console.error(`Manual restore required from: ${backupPath}`);
+    console.error('❌ CRÍTICO: Rollback falhou!', rollbackError);
+    console.error(`Restauração manual necessária a partir de: ${backupPath}`);
   }
 }
 ```
 
-## Success Output
+## Saída de Sucesso
 ```
-✅ Manifest updated successfully!
-📁 Manifest: {manifest-name}
-🤖 Agent added: {agent-name}
-📂 Backup saved: {backup-path}
-🔍 Verification:
-   - YAML syntax: ✓
-   - Agent files: ✓
-   - No duplicates: ✓
-📝 Next steps:
-   1. Test agent activation
-   2. Verify team composition
-   3. Commit changes
+✅ Manifesto atualizado com sucesso!
+📁 Manifesto: {manifest-name}
+🤖 Agente adicionado: {agent-name}
+📂 Backup salvo: {backup-path}
+🔍 Verificação:
+   - Sintaxe YAML: ✓
+   - Arquivos de agente: ✓
+   - Sem duplicatas: ✓
+📝 Próximos passos:
+   1. Testar a ativação do agente
+   2. Verificar a composição da equipe
+   3. Commitar as mudanças
 ```
 
-## Security Notes
-- Always create backup before modification
-- Validate all paths to prevent traversal
-- Log all m
+## Notas de Segurança
+- Sempre criar backup antes da modificação
+- Validar todos os caminhos para prevenir traversal
+- Registrar em log todas as mudanças no manifesto
+- Exigir autorização para atualizações do manifesto
+- Manter trilha de auditoria de todas as modificações 

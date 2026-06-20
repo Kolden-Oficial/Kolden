@@ -33,7 +33,7 @@ Executa a suíte de testes e valida a qualidade do código antes de marcar os te
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: qaRunTests()

@@ -1,36 +1,36 @@
-# QA Task: Add Follow-up to Backlog
+# Task de QA: Adicionar Follow-up ao Backlog
 
-**Agent:** @qa
-**Command:** `*backlog-add` (when used by @qa, defaults to type F)
-**Purpose:** Add follow-up item from QA review to backlog
-**Created:** 2025-01-16 (Story 6.1.2.6)
-
----
-
-## Execution Modes
-
-**Choose your execution mode:**
-
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
-
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
-
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
-
-**Parameter:** `mode` (optional, default: `interactive`)
+**Agente:** @qa
+**Comando:** `*backlog-add` (quando usado pelo @qa, assume o tipo F por padrão)
+**Propósito:** Adicionar item de follow-up da revisão de QA ao backlog
+**Criado:** 2025-01-16 (Story 6.1.2.6)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Modos de Execução
+
+**Escolha seu modo de execução:**
+
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro em log
+- Interação mínima do usuário
+- **Melhor para:** Tarefas simples e determinísticas
+
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
+
+### 3. Planejamento Pre-Flight - Planejamento Antecipado Abrangente
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com ambiguidade zero
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
+
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
+
+---
+
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: qaBacklogAddFollowup()
@@ -43,19 +43,19 @@ atomic_layer: Organism
   tipo: string
   origem: User Input
   obrigatório: true
-  validação: Must exist
+  validação: Deve existir
 
 - campo: criteria
   tipo: array
   origem: config
   obrigatório: true
-  validação: Non-empty validation criteria
+  validação: Critérios de validação não vazios
 
 - campo: strict
   tipo: boolean
   origem: User Input
   obrigatório: false
-  validação: Default: true
+  validação: Padrão: true
 
 **Saída:**
 - campo: validation_result
@@ -76,15 +76,15 @@ atomic_layer: Organism
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Validation rules loaded; target available for validation
+  - [ ] Regras de validação carregadas; alvo disponível para validação
     tipo: pre-condition
     blocker: true
     validação: |
@@ -94,15 +94,15 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Validation executed; results accurate; report generated
+  - [ ] Validação executada; resultados precisos; relatório gerado
     tipo: post-condition
     blocker: true
     validação: |
@@ -112,15 +112,15 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Validation rules applied; pass/fail accurate; actionable feedback
+  - [ ] Regras de validação aplicadas; pass/fail preciso; feedback acionável
     tipo: acceptance-criterion
     blocker: true
     validação: |
@@ -130,70 +130,70 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** validation-engine
-  - **Purpose:** Rule-based validation and reporting
-  - **Source:** .aiox-core/utils/validation-engine.js
+- **Ferramenta:** validation-engine
+  - **Propósito:** Validação e geração de relatórios baseada em regras
+  - **Origem:** .aiox-core/utils/validation-engine.js
 
-- **Tool:** schema-validator
-  - **Purpose:** JSON/YAML schema validation
-  - **Source:** ajv or similar
+- **Ferramenta:** schema-validator
+  - **Propósito:** Validação de schema JSON/YAML
+  - **Origem:** ajv ou similar
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** run-validation.js
-  - **Purpose:** Execute validation rules and generate report
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/run-validation.js
+  - **Propósito:** Executar regras de validação e gerar relatório
+  - **Linguagem:** JavaScript
+  - **Local:** .aiox-core/scripts/run-validation.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Validation Criteria Missing
-   - **Cause:** Required validation rules not defined
-   - **Resolution:** Ensure validation criteria loaded from config
-   - **Recovery:** Use default validation rules, log warning
+1. **Erro:** Critérios de Validação Ausentes
+   - **Causa:** Regras de validação obrigatórias não definidas
+   - **Resolução:** Garantir que os critérios de validação sejam carregados da config
+   - **Recuperação:** Usar regras de validação padrão, registrar aviso
 
-2. **Error:** Invalid Schema
-   - **Cause:** Target does not match expected schema
-   - **Resolution:** Update schema or fix target structure
-   - **Recovery:** Detailed validation error report
+2. **Erro:** Schema Inválido
+   - **Causa:** O alvo não corresponde ao schema esperado
+   - **Resolução:** Atualizar o schema ou corrigir a estrutura do alvo
+   - **Recuperação:** Relatório detalhado de erro de validação
 
-3. **Error:** Dependency Missing
-   - **Cause:** Required dependency for validation not found
-   - **Resolution:** Install missing dependencies
-   - **Recovery:** Abort with clear dependency list
+3. **Erro:** Dependência Ausente
+   - **Causa:** Dependência obrigatória para validação não encontrada
+   - **Resolução:** Instalar as dependências ausentes
+   - **Recuperação:** Abortar com lista clara de dependências
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
-duration_expected: 5-15 min (estimated)
+duration_expected: 5-15 min (estimado)
 cost_estimated: $0.003-0.010
 token_usage: ~3,000-10,000 tokens
 ```
 
-**Optimization Notes:**
-- Break into smaller workflows; implement checkpointing; use async processing where possible
+**Notas de Otimização:**
+- Dividir em workflows menores; implementar checkpointing; usar processamento assíncrono quando possível
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -209,9 +209,9 @@ updated_at: 2025-11-17
 ---
 
 
-## Task Flow
+## Fluxo da Task
 
-### 1. Elicit Follow-up Details
+### 1. Elicitar Detalhes do Follow-up
 ```yaml
 elicit: true
 questions:
@@ -251,7 +251,7 @@ questions:
     default: "TBD"
 ```
 
-### 2. Validate Related Story
+### 2. Validar a Story Relacionada
 ```javascript
 // QA review items MUST have a related story
 if (!relatedStory) {
@@ -274,7 +274,7 @@ if (matches.length > 1) {
 const storyFile = matches[0];
 ```
 
-### 3. Add to Backlog
+### 3. Adicionar ao Backlog
 ```javascript
 const { BacklogManager } = require('.aiox-core/scripts/backlog-manager');
 
@@ -296,7 +296,7 @@ const item = await manager.addItem({
 console.log(`✅ Follow-up added to backlog: ${item.id}`);
 ```
 
-### 4. Update Story QA Results (Optional)
+### 4. Atualizar QA Results da Story (Opcional)
 ```yaml
 elicit: true
 question: "Add reference to QA Results section in story?"
@@ -327,14 +327,14 @@ if (updateStory) {
 }
 ```
 
-### 5. Regenerate Backlog
+### 5. Regenerar o Backlog
 ```javascript
 await manager.generateBacklogFile();
 
 console.log('✅ Backlog updated: docs/stories/backlog.md');
 ```
 
-### 6. Summary Output
+### 6. Saída de Resumo
 ```markdown
 ## 📌 Follow-up Added to Backlog
 
@@ -359,7 +359,7 @@ ${priority === 'Critical' || priority === 'High'
 
 ---
 
-## Example Usage
+## Exemplo de Uso
 
 ```bash
 # During QA review of Story 6.1.2.6
@@ -382,29 +382,29 @@ Update story? yes
 
 ---
 
-## QA-Specific Rules
+## Regras Específicas de QA
 
-1. **Type is always F (Follow-up)** - QA creates follow-ups, not tech debt
-2. **Related story is required** - All QA items linked to reviewed story
-3. **Priority guidance:**
-   - Critical: Security issue, data corruption risk, blocking bug
-   - High: Important test gap, significant edge case
-   - Medium: Nice-to-have test, minor gap
-   - Low: Optional improvement
-4. **Story update recommended** - Keep follow-ups visible in story file
-
----
-
-## Error Handling
-
-- **No related story:** Require story ID, don't allow orphan follow-ups
-- **Story not found:** Show similar story names, allow retry
-- **QA Results section missing:** Log warning, skip story update
-- **Backlog locked:** Retry 3x with 1s delay
+1. **O tipo é sempre F (Follow-up)** - QA cria follow-ups, não dívida técnica
+2. **A story relacionada é obrigatória** - Todos os itens de QA vinculados à story revisada
+3. **Orientação de prioridade:**
+   - Critical: Problema de segurança, risco de corrupção de dados, bug bloqueante
+   - High: Lacuna importante de teste, edge case significativo
+   - Medium: Teste desejável, lacuna menor
+   - Low: Melhoria opcional
+4. **Atualização da story recomendada** - Manter os follow-ups visíveis no arquivo da story
 
 ---
 
-## Testing
+## Tratamento de Erros
+
+- **Sem story relacionada:** Exigir ID da story, não permitir follow-ups órfãos
+- **Story não encontrada:** Mostrar nomes de stories similares, permitir nova tentativa
+- **Seção QA Results ausente:** Registrar aviso, pular atualização da story
+- **Backlog travado:** Tentar novamente 3x com 1s de intervalo
+
+---
+
+## Testes
 
 ```bash
 # Test with sample story
@@ -419,7 +419,7 @@ Update story? yes
 
 ---
 
-**Related Tasks:**
-- `qa-review.md` - Comprehensive story review
-- `qa-gate.md` - Quality gate decision
-- `po-backlog-review.md` - PO reviews all follow-ups
+**Tasks Relacionadas:**
+- `qa-review.md` - Revisão abrangente da story
+- `qa-gate.md` - Decisão de quality gate
+- `po-backlog-review.md` - PO revisa todos os follow-ups

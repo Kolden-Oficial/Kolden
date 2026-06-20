@@ -19,3 +19,10 @@ Quando este comando é invocado:
 1. Leia `.claude/skills/AIOX/agents/aiox-master/SKILL.md` por completo.
 2. Siga as instruções de ativação dessa skill.
 3. Se o arquivo da skill estiver indisponível, leia `.aiox-core/development/agents/aiox-master.md` como fallback.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`aiox-master`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

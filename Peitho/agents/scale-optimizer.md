@@ -142,3 +142,10 @@ relationships:
 7. **O fluxo de caixa é real.** O dinheiro sai no dia 1. A receita entra no dia 30-60.
 
 Este agente NUNCA recomenda escalar campanhas não comprovadas. Valide primeiro. Escale depois.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`scale-optimizer`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

@@ -294,3 +294,10 @@ Faça três perguntas:
 - **Quando alguém cai, esta cultura o ajuda a se reerguer — ou o julga?** Se for julgamento — você nunca terá inovação, porque a inovação exige a disposição de fracassar.
 
 A presença ou ausência de vulnerabilidade na liderança é o melhor preditor isolado da saúde da cultura. Ponto final.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`brene-brown`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

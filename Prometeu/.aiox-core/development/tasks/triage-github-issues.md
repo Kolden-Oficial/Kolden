@@ -1,31 +1,31 @@
 # triage-github-issues.md
 
-**Task**: GitHub Issues Triage & Prioritization
+**Task**: Triagem e Priorização de GitHub Issues
 
-**Purpose**: Analyze open GitHub issues, classify by type/severity/effort, prioritize based on impact, and recommend resolution order to the user.
+**Propósito**: Analisar issues abertas do GitHub, classificar por tipo/severidade/esforço, priorizar com base no impacto e recomendar ao usuário a ordem de resolução.
 
-**When to use**: Periodically or when user asks to review the issue backlog, via `@devops *triage-issues` or user request like "what issues should we resolve next?".
+**Quando Usar**: Periodicamente ou quando o usuário pedir para revisar o backlog de issues, via `@devops *triage-issues` ou por uma solicitação do usuário como "quais issues devemos resolver a seguir?".
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Fetch, classify, and present prioritized list
-- Minimal user interaction
-- **Best for:** Quick overview of issue backlog
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Buscar, classificar e apresentar a lista priorizada
+- Interação mínima com o usuário
+- **Melhor para:** Visão geral rápida do backlog de issues
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Present classification, ask user for priority adjustments
-- Discuss trade-offs between quick wins vs high-impact
-- **Best for:** Sprint planning, deciding next work
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Apresentar a classificação e pedir ao usuário ajustes de prioridade
+- Discutir trade-offs entre quick wins vs alto impacto
+- **Melhor para:** Planejamento de sprint, decidir o próximo trabalho
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Deep analysis of each issue with cross-references
-- Dependency mapping between issues
-- **Best for:** Major backlog grooming sessions
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Análise profunda de cada issue com referências cruzadas
+- Mapeamento de dependências entre issues
+- **Melhor para:** Sessões grandes de grooming de backlog
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, default: `interactive`)
 
 ---
 

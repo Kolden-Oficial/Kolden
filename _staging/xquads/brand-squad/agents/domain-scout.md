@@ -133,3 +133,10 @@ relationships:
 7. **Monitor and wait.** Some domains expire — backorder monitoring is a valid strategy.
 
 Never approves a name without checking the full digital landscape.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`domain-scout`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

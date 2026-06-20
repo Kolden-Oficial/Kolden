@@ -138,83 +138,83 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-- **Tool:** Task tool (Claude Code built-in)
-  - **Purpose:** Spawn real subagents with isolated context
-  - **Source:** Claude Code runtime
+- **Tool:** Task tool (nativa do Claude Code)
+  - **Purpose:** Fazer spawn de subagentes reais com contexto isolado
+  - **Source:** Runtime do Claude Code
 
-- **Tool:** AskUserQuestion (Claude Code built-in)
-  - **Purpose:** Collect elicitation inputs before spawning subagents
-  - **Source:** Claude Code runtime
+- **Tool:** AskUserQuestion (nativa do Claude Code)
+  - **Purpose:** Coletar entradas de elicitação antes de fazer spawn dos subagentes
+  - **Source:** Runtime do Claude Code
 
-- **Tool:** Read tool (Claude Code built-in)
-  - **Purpose:** Read agent files, task files, data files, workflow YAML
-  - **Source:** Claude Code runtime
+- **Tool:** Read tool (nativa do Claude Code)
+  - **Purpose:** Ler arquivos de agente, arquivos de task, arquivos de dados, YAML de workflow
+  - **Source:** Runtime do Claude Code
 
 - **Tool:** workflow-state-manager
-  - **Purpose:** Create and manage workflow state
+  - **Purpose:** Criar e gerenciar o estado do workflow
   - **Source:** .aiox-core/development/scripts/workflow-state-manager.js
-  - **Lifecycle:** Deprecated for new story/epic lifecycle flows; use `.aiox-core/core/orchestration/session-state.js` outside legacy guided workflow execution
+  - **Lifecycle:** Depreciado para os novos fluxos de ciclo de vida de story/epic; use `.aiox-core/core/orchestration/session-state.js` fora da execução de workflow guiado legado
 
 - **Tool:** workflow-validator
-  - **Purpose:** Validate workflow before starting
+  - **Purpose:** Validar o workflow antes de iniciar
   - **Source:** .aiox-core/development/scripts/workflow-validator.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
 **Strategy:** retry-then-fallback
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Subagent returns no YAML block
-   - **Cause:** Subagent did not follow output format instructions
-   - **Resolution:** Attempt regex extraction of step_output from response
-   - **Recovery:** If extraction fails, re-spawn with explicit format reminder; after max_retries, request manual intervention
+1. **Error:** Subagente não retorna bloco YAML
+   - **Cause:** O subagente não seguiu as instruções de formato de saída
+   - **Resolution:** Tentar extração via regex de step_output a partir da resposta
+   - **Recovery:** Se a extração falhar, fazer re-spawn com um lembrete explícito de formato; após max_retries, solicitar intervenção manual
 
-2. **Error:** Subagent returns status: failed
-   - **Cause:** Task execution failed within the subagent
-   - **Resolution:** Check global_error_handling.max_retries_per_phase
-   - **Recovery:** Re-spawn with previous error as additional context; after max_retries, follow fallback strategy
+2. **Error:** Subagente retorna status: failed
+   - **Cause:** A execução da task falhou dentro do subagente
+   - **Resolution:** Verificar global_error_handling.max_retries_per_phase
+   - **Recovery:** Fazer re-spawn com o erro anterior como contexto adicional; após max_retries, seguir a estratégia de fallback
 
-3. **Error:** Routing condition cannot be evaluated
-   - **Cause:** Required value missing from state or no route matches
-   - **Resolution:** Display current values to user
-   - **Recovery:** Ask user to choose route manually
+3. **Error:** A condição de roteamento não pode ser avaliada
+   - **Cause:** Valor necessário ausente no estado ou nenhuma rota corresponde
+   - **Resolution:** Exibir os valores atuais ao usuário
+   - **Recovery:** Pedir ao usuário para escolher a rota manualmente
 
-4. **Error:** Agent file not found
-   - **Cause:** Agent referenced in step doesn't exist at resolved path
-   - **Resolution:** Check hybrid fallback paths
-   - **Recovery:** List available agents and ask user to choose
+4. **Error:** Arquivo de agente não encontrado
+   - **Cause:** O agente referenciado no step não existe no caminho resolvido
+   - **Resolution:** Verificar os caminhos de fallback de hybrid
+   - **Recovery:** Listar os agentes disponíveis e pedir ao usuário para escolher
 
-5. **Error:** Task file not found (uses field)
-   - **Cause:** Task referenced in step's 'uses' field doesn't exist
-   - **Resolution:** Check alternate paths
-   - **Recovery:** Skip task content in prompt (agent persona alone may suffice)
+5. **Error:** Arquivo de task não encontrado (campo uses)
+   - **Cause:** A task referenciada no campo 'uses' do step não existe
+   - **Resolution:** Verificar caminhos alternativos
+   - **Recovery:** Pular o conteúdo da task no prompt (a persona do agente sozinha pode ser suficiente)
 
 ---
 
 ## Performance
 
 ```yaml
-duration_per_invocation: 1-5 min (single step spawn + execution)
-cost_per_step: $0.01-0.10 (one API call per action step)
-token_usage: ~2,000-10,000 tokens per subagent call
-total_cost: Depends on workflow (N steps × cost_per_step)
+duration_per_invocation: 1-5 min (spawn + execução de um único step)
+cost_per_step: $0.01-0.10 (uma chamada de API por action step)
+token_usage: ~2.000-10.000 tokens por chamada de subagente
+total_cost: Depende do workflow (N steps × cost_per_step)
 ```
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
 version: 2.0.0
 dependencies:
-  - run-workflow.md (delegates to this task)
-  - subagent-step-prompt.md (template for prompt building)
+  - run-workflow.md (delega para esta task)
+  - subagent-step-prompt.md (template para construção de prompt)
   - workflow-state-manager.js
   - workflow-validator.js
 tags:
@@ -229,52 +229,52 @@ updated_at: 2026-02-01
 
 ---
 
-# Workflow Runtime Engine Task
+# Task Motor de Runtime de Workflow
 
-## Purpose
+## Propósito
 
-Execute workflows by spawning **real subagents** via the Task tool, **one step at a time**. Each invocation processes a single action step, spawns an isolated subagent, shows the output, and stops for user validation before proceeding. Unlike guided mode (persona-switching), each agent runs in its own context with full persona fidelity and zero contamination from other steps.
+Executar workflows fazendo spawn de **subagentes reais** via Task tool, **um step por vez**. Cada invocação processa um único action step, faz spawn de um subagente isolado, mostra a saída e para para validação do usuário antes de prosseguir. Diferente do modo guiado (persona-switching), cada agente roda em seu próprio contexto com fidelidade total de persona e zero contaminação de outros steps.
 
-## Prerequisites
+## Pré-requisitos
 
-- Workflow YAML validated and accessible
-- Template: `subagent-step-prompt.md` available at `.aiox-core/development/templates/`
-- Agent files accessible at resolved paths
-- Task files accessible at resolved paths (via `uses` field)
+- YAML de workflow validado e acessível
+- Template: `subagent-step-prompt.md` disponível em `.aiox-core/development/templates/`
+- Arquivos de agente acessíveis nos caminhos resolvidos
+- Arquivos de task acessíveis nos caminhos resolvidos (via campo `uses`)
 
 ---
 
-## Engine Loop (Step-by-Step)
+## Loop do Motor (Passo a Passo)
 
-The engine processes **ONE action step per invocation**. Phase markers and routing decisions are processed automatically (they don't require spawning). The engine stops after each action step so the user can validate the output before continuing.
+O motor processa **UM action step por invocação**. Marcadores de fase e decisões de roteamento são processados automaticamente (não exigem spawn). O motor para após cada action step para que o usuário possa validar a saída antes de continuar.
 
 ```
-Invocation 1: start    → init state → spawn step 1 → save → STOP (user validates)
-Invocation 2: continue → load state → spawn step 2 → save → STOP (user validates)
-Invocation 3: continue → load state → [routing: score OK] → spawn step 3 → save → STOP
+Invocação 1: start    → inicializa estado → spawn step 1 → salva → STOP (usuário valida)
+Invocação 2: continue → carrega estado → spawn step 2 → salva → STOP (usuário valida)
+Invocação 3: continue → carrega estado → [roteamento: score OK] → spawn step 3 → salva → STOP
 ...
-Invocation N: continue → load state → [end marker] → final report → DONE
+Invocação N: continue → carrega estado → [marcador de fim] → relatório final → DONE
 ```
 
 ---
 
-### Action: `start`
+### Ação: `start`
 
-Initialize a new workflow and execute the first action step.
+Inicializar um novo workflow e executar o primeiro action step.
 
-**1. Resolve workflow path** based on `target_context`:
+**1. Resolver o caminho do workflow** com base em `target_context`:
 - `core` → `.aiox-core/development/workflows/{workflow_name}.yaml`
 - `squad` → `squads/{squad_name}/workflows/{workflow_name}.yaml`
 - `hybrid` → `squads/{squad_name}/workflows/{workflow_name}.yaml`
 
-Read the workflow YAML file.
+Ler o arquivo YAML do workflow.
 
-**2. Validate workflow** using WorkflowValidator:
-- Must pass validation before proceeding
-- Display any warnings to the user
-- If validation fails → abort with error details
+**2. Validar o workflow** usando WorkflowValidator:
+- Deve passar na validação antes de prosseguir
+- Exibir quaisquer avisos ao usuário
+- Se a validação falhar → abortar com os detalhes do erro
 
-**3. Initialize state:**
+**3. Inicializar o estado:**
 
 ```yaml
 engine_state:
@@ -293,80 +293,80 @@ engine_state:
   retries: {}
 ```
 
-**4. Display header:**
+**4. Exibir cabeçalho:**
 ```
-=== Workflow Engine Started: {workflow_name} ===
-Mode: ENGINE (real subagent spawning, step-by-step)
-Instance: {instance_id}
-Total sequence items: {N} ({action_count} action steps)
+=== Workflow Engine Iniciado: {workflow_name} ===
+Modo: ENGINE (spawn de subagentes reais, passo a passo)
+Instância: {instance_id}
+Total de itens da sequência: {N} ({action_count} action steps)
 ```
 
-**5. Advance to first action step** — call the **Sequence Advancer** (see below).
+**5. Avançar para o primeiro action step** — chamar o **Avançador de Sequência** (ver abaixo).
 
-**6. Save state and STOP.**
+**6. Salvar o estado e PARAR.**
 
 ---
 
-### Action: `continue`
+### Ação: `continue`
 
-Resume from current position and execute the next action step.
+Retomar a partir da posição atual e executar o próximo action step.
 
-**1. Find and load** the active engine state file for this workflow.
+**1. Encontrar e carregar** o arquivo de estado de engine ativo para este workflow.
 
-**2. Verify** state.status is `active`. If not, show error.
+**2. Verificar** que state.status é `active`. Caso contrário, exibir erro.
 
-**3. Advance to next action step** — call the **Sequence Advancer** (see below).
+**3. Avançar para o próximo action step** — chamar o **Avançador de Sequência** (ver abaixo).
 
-**4. Save state and STOP.**
+**4. Salvar o estado e PARAR.**
 
 ---
 
-### Action: `status`
+### Ação: `status`
 
-Show progress without executing anything.
+Mostrar o progresso sem executar nada.
 
-**1. Load state.**
+**1. Carregar o estado.**
 
-**2. Generate status report:**
+**2. Gerar o relatório de status:**
 
 ```
-=== Engine Status: {workflow_name} ===
-Instance: {instance_id}
-Mode: ENGINE (step-by-step)
+=== Status do Engine: {workflow_name} ===
+Instância: {instance_id}
+Modo: ENGINE (passo a passo)
 Status: {active|completed|aborted}
-Phase: {current_phase}
-Progress: [{progress_bar}] {percentage}% ({completed}/{total_action_steps})
+Fase: {current_phase}
+Progresso: [{progress_bar}] {percentage}% ({completed}/{total_action_steps})
 
 --- Steps ---
   [x] {step_id}: {agent} — {action} (score: {score})
   [x] {step_id}: {agent} — {action}
-  [>] {step_id}: {agent} — {action}    <-- current
+  [>] {step_id}: {agent} — {action}    <-- atual
   [ ] {step_id}: {agent} — {action}
   ...
 
---- Routing Decisions ---
+--- Decisões de Roteamento ---
   {step}: {condition} = {value} → {route_chosen}
   ...
 
---- Last Step Output ---
-  {summary of most recent step's outputs}
+--- Saída do Último Step ---
+  {resumo das saídas do step mais recente}
 
-Next: *run-workflow {name} continue --mode=engine
+Próximo: *run-workflow {name} continue --mode=engine
 ```
 
 ---
 
-### Action: `skip`
+### Ação: `skip`
 
-Skip the current step (only if marked `optional: true`).
+Pular o step atual (somente se marcado como `optional: true`).
 
-**1. Load state.**
+**1. Carregar o estado.**
 
-**2. Identify the current step** at `current_step_index`.
+**2. Identificar o step atual** em `current_step_index`.
 
-**3. Verify** the step has `optional: true`. If not → error: "Step {id} is not optional."
+**3. Verificar** que o step tem `optional: true`. Caso contrário → erro: "Step {id} não é opcional."
 
-**4. Record skip** in state:
+**4. Registrar o skip** no estado:
 ```yaml
 step_results:
   {step_id}:
@@ -374,45 +374,45 @@ step_results:
     skipped_at: {timestamp}
 ```
 
-**5. Advance `current_step_index`** past the skipped step.
+**5. Avançar `current_step_index`** para além do step pulado.
 
-**6. Save state.**
+**6. Salvar o estado.**
 
-**7. Show** what was skipped and what comes next.
+**7. Mostrar** o que foi pulado e o que vem a seguir.
 
 ---
 
-### Action: `abort`
+### Ação: `abort`
 
-Abort the workflow.
+Abortar o workflow.
 
-**1. Load state.**
+**1. Carregar o estado.**
 
-**2. Set status to `aborted`.**
+**2. Definir status como `aborted`.**
 
-**3. Generate abort report:**
+**3. Gerar o relatório de abortamento:**
 ```
-=== Workflow Aborted: {workflow_name} ===
-Instance: {instance_id}
-Progress: {completed}/{total} action steps completed
+=== Workflow Abortado: {workflow_name} ===
+Instância: {instance_id}
+Progresso: {completed}/{total} action steps concluídos
 
-Completed steps:
+Steps concluídos:
   - {step_id}: {agent} — {action}
   ...
 
-Artifacts created:
-  - {list from step_results}
+Artefatos criados:
+  - {lista de step_results}
 
-State preserved at: .aiox/{instance_id}-engine-state.yaml
+Estado preservado em: .aiox/{instance_id}-engine-state.yaml
 ```
 
-**4. Save state.**
+**4. Salvar o estado.**
 
 ---
 
-### Sequence Advancer (Core Algorithm)
+### Avançador de Sequência (Algoritmo Central)
 
-This is the internal procedure called by both `start` and `continue`. It walks through the sequence from `current_step_index`, automatically processing non-action items, and stops when it hits an action step (to spawn it) or the end of the workflow.
+Este é o procedimento interno chamado tanto por `start` quanto por `continue`. Ele percorre a sequência a partir de `current_step_index`, processando automaticamente os itens não-action, e para quando encontra um action step (para fazer spawn dele) ou o fim do workflow.
 
 ```
 PROCEDURE advance_and_execute(state, workflow):
@@ -422,126 +422,126 @@ PROCEDURE advance_and_execute(state, workflow):
 
   LOOP:
     IF index >= length(sequence):
-      → Workflow complete. Generate Final Report. Set status=completed. RETURN.
+      → Workflow completo. Gerar Relatório Final. Definir status=completed. RETURN.
 
     item = sequence[index]
 
-    # --- Phase Marker ---
+    # --- Marcador de Fase ---
     IF item has 'phase' field:
       state.current_phase = item.name
-      Log: "--- Phase {item.phase}: {item.name} ---"
+      Log: "--- Fase {item.phase}: {item.name} ---"
       index = index + 1
       CONTINUE LOOP
 
-    # --- End Marker ---
+    # --- Marcador de Fim ---
     IF item has 'meta: end':
-      Log: "=== Workflow Complete ==="
-      Generate Final Report.
-      Set state.status = completed.
+      Log: "=== Workflow Completo ==="
+      Gerar Relatório Final.
+      Definir state.status = completed.
       RETURN.
 
-    # --- Routing Step ---
+    # --- Step de Roteamento ---
     IF item has 'meta: routing':
-      Execute Decision Router (see section below).
-      The router returns a new index (loop_back, continue, or complete).
-      IF complete → Generate Final Report. Set status=completed. RETURN.
-      index = {new index from router}
+      Executar Roteador de Decisão (ver seção abaixo).
+      O roteador retorna um novo index (loop_back, continue ou complete).
+      IF complete → Gerar Relatório Final. Definir status=completed. RETURN.
+      index = {novo index do roteador}
       CONTINUE LOOP
 
-    # --- Action Step (spawn subagent) ---
+    # --- Action Step (spawn de subagente) ---
     IF item has 'agent' field:
       state.current_step_index = index
-      Execute the step:
-        1. IF elicit=true → run Elicitation Handler
-        2. Resolve agent file path
-        3. Read agent file
-        4. Resolve task file path (from 'uses')
-        5. Read task file (if 'uses' defined)
-        6. Read data files (agent deps + workflow resources)
-        7. Collect requires from state.step_outputs
-        8. Build prompt (Subagent Prompt Builder)
-        9. Spawn subagent via Task tool
-        10. Parse output (Output Parser)
-        11. Store in state.step_results[{step_id}] and state.step_outputs
-      Display step result to user.
-      Advance index for next invocation:
+      Executar o step:
+        1. IF elicit=true → rodar Manipulador de Elicitação
+        2. Resolver o caminho do arquivo de agente
+        3. Ler o arquivo de agente
+        4. Resolver o caminho do arquivo de task (a partir de 'uses')
+        5. Ler o arquivo de task (se 'uses' definido)
+        6. Ler os arquivos de dados (deps do agente + recursos do workflow)
+        7. Coletar os requires de state.step_outputs
+        8. Construir o prompt (Construtor de Prompt do Subagente)
+        9. Fazer spawn do subagente via Task tool
+        10. Parsear a saída (Parser de Saída)
+        11. Armazenar em state.step_results[{step_id}] e state.step_outputs
+      Exibir o resultado do step ao usuário.
+      Avançar o index para a próxima invocação:
         state.current_step_index = index + 1
-      Show what comes next (preview):
-        Scan ahead to find next action step, show its agent/action.
-        "Next: @{next_agent} — {next_action}"
-        "Run: *run-workflow {name} continue --mode=engine"
-      RETURN (STOP — wait for user validation).
+      Mostrar o que vem a seguir (preview):
+        Escanear adiante para encontrar o próximo action step, mostrar seu agent/action.
+        "Próximo: @{next_agent} — {next_action}"
+        "Rodar: *run-workflow {name} continue --mode=engine"
+      RETURN (STOP — aguardar a validação do usuário).
 
   END LOOP
 ```
 
-**Display format after each action step:**
+**Formato de exibição após cada action step:**
 ```
 [Step {N}/{total_actions}] @{agent}: {action}
   Status: {completed|failed}
-  Score: {score if applicable}
-  Outputs: {list of output keys with brief values}
+  Score: {score se aplicável}
+  Saídas: {lista de chaves de saída com valores resumidos}
 
---- Output Preview ---
-{First 500 chars of the main output, or artifact summary}
+--- Preview da Saída ---
+{Primeiros 500 caracteres da saída principal, ou resumo do artefato}
 
---- What's Next ---
-  Phase: {next_phase if changing}
-  Next step: @{next_agent} — {next_action}
-  Command: *run-workflow {name} continue --mode=engine
-  (or: *run-workflow {name} skip --mode=engine  if next step is optional)
+--- O Que Vem a Seguir ---
+  Fase: {next_phase se mudar}
+  Próximo step: @{next_agent} — {next_action}
+  Comando: *run-workflow {name} continue --mode=engine
+  (ou: *run-workflow {name} skip --mode=engine  se o próximo step for opcional)
 ```
 
 ---
 
-### Final Report
+### Relatório Final
 
-Generated when the workflow reaches the end marker or a `complete` route.
+Gerado quando o workflow alcança o marcador de fim ou uma rota `complete`.
 
 ```
-=== Engine Execution Report ===
+=== Relatório de Execução do Engine ===
 Workflow: {workflow_name}
-Instance: {instance_id}
-Started: {started_at}
-Completed: {now}
-Mode: ENGINE (step-by-step)
+Instância: {instance_id}
+Iniciado: {started_at}
+Concluído: {now}
+Modo: ENGINE (passo a passo)
 
---- Steps Summary ---
+--- Resumo dos Steps ---
   [x] {step_id}: @{agent} — {action} (score: {score})
   [x] {step_id}: @{agent} — {action}
   ...
 
---- Routing Decisions ---
+--- Decisões de Roteamento ---
   {step}: {condition} = {value} → {route_chosen}
   ...
 
---- Final Outputs ---
+--- Saídas Finais ---
   {key}: {summary_value}
   ...
 
---- Artifacts ---
-  {list of all artifacts created across all steps}
+--- Artefatos ---
+  {lista de todos os artefatos criados em todos os steps}
 
-State saved to: .aiox/{instance_id}-engine-state.yaml
+Estado salvo em: .aiox/{instance_id}-engine-state.yaml
 ```
 
-After the report, ask the user if they want to create a handoff document.
+Após o relatório, perguntar ao usuário se ele deseja criar um documento de handoff.
 
 ---
 
-## Elicitation Handler
+## Manipulador de Elicitação
 
-For each step with `elicit: true`, the orchestrator collects input BEFORE spawning the subagent.
+Para cada step com `elicit: true`, o orquestrador coleta a entrada ANTES de fazer spawn do subagente.
 
-### Process
+### Processo
 
-1. Read the `notes` field of the current step in the workflow YAML
-2. If the step has a `uses` field, read the task file and find its `Entrada` section
-3. For each field in `Entrada` with `origem: User Input` and `obrigatório: true`:
-   - Use `AskUserQuestion` tool to ask the user
-   - Validate the response against the field's `validação` rule
-4. If no formal `Entrada` exists, extract questions from the step's `notes` field
-5. Aggregate all responses into a YAML block:
+1. Ler o campo `notes` do step atual no YAML do workflow
+2. Se o step tiver um campo `uses`, ler o arquivo de task e localizar sua seção `Entrada`
+3. Para cada campo em `Entrada` com `origem: User Input` e `obrigatório: true`:
+   - Usar a ferramenta `AskUserQuestion` para perguntar ao usuário
+   - Validar a resposta contra a regra `validação` do campo
+4. Se não existir uma `Entrada` formal, extrair as perguntas do campo `notes` do step
+5. Agregar todas as respostas em um bloco YAML:
 
 ```yaml
 user_input:
@@ -549,66 +549,66 @@ user_input:
   {field_name}: "{user_response}"
 ```
 
-6. Pass this block as `{{USER_INPUT}}` in the subagent prompt
+6. Passar esse bloco como `{{USER_INPUT}}` no prompt do subagente
 
-### Rules
+### Regras
 
-- Elicitation is collected by the orchestrator, NOT by the subagent
-- The subagent receives pre-collected inputs and does NOT ask questions
-- If the user declines to provide optional input, pass `null` for that field
-- For the first step with `elicit: true`, also collect workflow-level `inputs` if defined
+- A elicitação é coletada pelo orquestrador, NÃO pelo subagente
+- O subagente recebe entradas pré-coletadas e NÃO faz perguntas
+- Se o usuário se recusar a fornecer uma entrada opcional, passar `null` para esse campo
+- Para o primeiro step com `elicit: true`, coletar também os `inputs` a nível de workflow, se definidos
 
 ---
 
-## Subagent Prompt Builder
+## Construtor de Prompt do Subagente
 
-Constructs the complete prompt for a subagent using the template.
+Constrói o prompt completo para um subagente usando o template.
 
-### Process
+### Processo
 
-1. **Load template** from `.aiox-core/development/templates/subagent-step-prompt.md`
-2. **Extract agent info:**
-   - Read agent file → extract `agent.name` → `{{AGENT_NAME}}`
-   - Read agent file → extract `agent.title` → `{{AGENT_TITLE}}`
-   - Read agent file → extract full YAML block → `{{AGENT_YAML}}`
-3. **Extract task content:**
-   - Read task file (from `uses`) → full content → `{{TASK_CONTENT}}`
-   - If no `uses` field → set to "Execute the action described in Step Instructions"
-4. **Set context variables:**
-   - `{{WORKFLOW_NAME}}` from `workflow.name`
-   - `{{STEP_ID}}` from step's `id` field
-   - `{{PHASE_NAME}}` from current phase
-   - `{{ACTION}}` from step's `action` field
-5. **Build input data:**
-   - For each item in step's `requires`:
-     - Look up in `state.step_outputs`
-     - Format as YAML block → `{{INPUT_DATA}}`
-   - If no requires → set to "No previous step outputs required"
-6. **Build reference data:**
-   - Read each file from agent's `dependencies.data` list
-   - Read each file from workflow's `resources.data` list
-   - Concatenate contents → `{{REFERENCE_DATA}}`
-   - If no data files → set to "No reference data"
-7. **Set user input:**
-   - From elicitation results → `{{USER_INPUT}}`
-   - If `elicit: false` → set to "No user input required for this step"
-8. **Set step notes:**
-   - From step's `notes` field → `{{STEP_NOTES}}`
-   - If no notes → set to "Execute the action as described above"
-9. **Replace all variables** in the template string
-10. **Return the complete prompt**
+1. **Carregar o template** de `.aiox-core/development/templates/subagent-step-prompt.md`
+2. **Extrair informações do agente:**
+   - Ler o arquivo de agente → extrair `agent.name` → `{{AGENT_NAME}}`
+   - Ler o arquivo de agente → extrair `agent.title` → `{{AGENT_TITLE}}`
+   - Ler o arquivo de agente → extrair o bloco YAML completo → `{{AGENT_YAML}}`
+3. **Extrair o conteúdo da task:**
+   - Ler o arquivo de task (a partir de `uses`) → conteúdo completo → `{{TASK_CONTENT}}`
+   - Se não houver campo `uses` → definir como "Execute the action described in Step Instructions"
+4. **Definir as variáveis de contexto:**
+   - `{{WORKFLOW_NAME}}` a partir de `workflow.name`
+   - `{{STEP_ID}}` a partir do campo `id` do step
+   - `{{PHASE_NAME}}` a partir da fase atual
+   - `{{ACTION}}` a partir do campo `action` do step
+5. **Construir os dados de entrada:**
+   - Para cada item no `requires` do step:
+     - Buscar em `state.step_outputs`
+     - Formatar como bloco YAML → `{{INPUT_DATA}}`
+   - Se não houver requires → definir como "No previous step outputs required"
+6. **Construir os dados de referência:**
+   - Ler cada arquivo da lista `dependencies.data` do agente
+   - Ler cada arquivo da lista `resources.data` do workflow
+   - Concatenar os conteúdos → `{{REFERENCE_DATA}}`
+   - Se não houver arquivos de dados → definir como "No reference data"
+7. **Definir a entrada do usuário:**
+   - A partir dos resultados de elicitação → `{{USER_INPUT}}`
+   - Se `elicit: false` → definir como "No user input required for this step"
+8. **Definir as notas do step:**
+   - A partir do campo `notes` do step → `{{STEP_NOTES}}`
+   - Se não houver notes → definir como "Execute the action as described above"
+9. **Substituir todas as variáveis** na string do template
+10. **Retornar o prompt completo**
 
-### Path Resolution for Agent Files
+### Resolução de Caminho para Arquivos de Agente
 
 ```
 resolve_agent_path(agent_ref, target_context, squad_name):
-  # Handle explicit prefix
+  # Tratar prefixo explícito
   IF agent_ref starts with "core:":
     RETURN ".aiox-core/development/agents/{agent_ref without prefix}.md"
   IF agent_ref starts with "squad:":
     RETURN "squads/{squad_name}/agents/{agent_ref without prefix}.md"
 
-  # Context-based resolution
+  # Resolução baseada em contexto
   IF target_context == "core":
     RETURN ".aiox-core/development/agents/{agent_ref}.md"
   IF target_context == "squad":
@@ -618,10 +618,10 @@ resolve_agent_path(agent_ref, target_context, squad_name):
     core_path = ".aiox-core/development/agents/{agent_ref}.md"
     IF squad_path exists → RETURN squad_path
     IF core_path exists → RETURN core_path
-    ERROR: Agent not found in either context
+    ERROR: Agente não encontrado em nenhum dos contextos
 ```
 
-### Path Resolution for Task Files (uses field)
+### Resolução de Caminho para Arquivos de Task (campo uses)
 
 ```
 resolve_task_path(uses_ref, target_context, squad_name):
@@ -634,10 +634,10 @@ resolve_task_path(uses_ref, target_context, squad_name):
     core_path = ".aiox-core/development/tasks/{uses_ref}.md"
     IF squad_path exists → RETURN squad_path
     IF core_path exists → RETURN core_path
-    ERROR: Task not found in either context
+    ERROR: Task não encontrada em nenhum dos contextos
 ```
 
-### Path Resolution for Data Files
+### Resolução de Caminho para Arquivos de Dados
 
 ```
 resolve_data_path(data_ref, target_context, squad_name):
@@ -650,131 +650,131 @@ resolve_data_path(data_ref, target_context, squad_name):
     core_path = ".aiox-core/data/{data_ref}"
     IF squad_path exists → RETURN squad_path
     IF core_path exists → RETURN core_path
-    WARN: Data file not found, skip
+    WARN: Arquivo de dados não encontrado, pular
 ```
 
 ---
 
-## Output Parser
+## Parser de Saída
 
-Extracts structured output from the subagent's response.
+Extrai a saída estruturada da resposta do subagente.
 
-### Process
+### Processo
 
-1. **Search for YAML block** in the subagent response:
-   - Look for content between ` ```yaml ` and ` ``` ` markers
-   - Specifically look for a block starting with `step_output:`
-2. **Parse the YAML block** into a structured object
-3. **Validate required fields:**
-   - `status` must be `completed` or `failed`
-   - `outputs` must be an object (can be empty)
-4. **Extract outputs:**
-   - Map each key in `outputs` to `state.step_outputs[{step_id}].{key}`
-   - Store `score` if present
-   - Store `artifacts` list if present
-5. **Handle parse failures:**
-   - Attempt 1: Regex for `step_output:` block without YAML markers
-   - Attempt 2: Look for individual output fields mentioned in step's `outputs` list
-   - Attempt 3: Mark step as needing manual review
+1. **Buscar o bloco YAML** na resposta do subagente:
+   - Procurar conteúdo entre os marcadores ` ```yaml ` e ` ``` `
+   - Especificamente procurar um bloco que comece com `step_output:`
+2. **Parsear o bloco YAML** em um objeto estruturado
+3. **Validar os campos obrigatórios:**
+   - `status` deve ser `completed` ou `failed`
+   - `outputs` deve ser um objeto (pode estar vazio)
+4. **Extrair as saídas:**
+   - Mapear cada chave em `outputs` para `state.step_outputs[{step_id}].{key}`
+   - Armazenar `score` se presente
+   - Armazenar a lista `artifacts` se presente
+5. **Tratar falhas de parsing:**
+   - Tentativa 1: Regex para o bloco `step_output:` sem marcadores YAML
+   - Tentativa 2: Procurar os campos de saída individuais mencionados na lista `outputs` do step
+   - Tentativa 3: Marcar o step como necessitando de revisão manual
 
-### Regex Fallback Pattern
+### Padrão de Fallback de Regex
 
 ```
 /step_output:\s*\n([\s\S]*?)(?=\n[^\s]|\Z)/
 ```
 
-If the YAML block cannot be parsed:
-- Extract `status` from any line containing "status: completed" or "status: failed"
-- Extract individual output values by searching for each expected output key
-- Log a warning that structured parsing failed
+Se o bloco YAML não puder ser parseado:
+- Extrair `status` de qualquer linha contendo "status: completed" ou "status: failed"
+- Extrair os valores de saída individuais buscando cada chave de saída esperada
+- Registrar um aviso de que o parsing estruturado falhou
 
 ---
 
-## Decision Router
+## Roteador de Decisão
 
-Evaluates routing conditions and determines the next step.
+Avalia as condições de roteamento e determina o próximo step.
 
-### Process
+### Processo
 
-For each step with `meta: routing`:
+Para cada step com `meta: routing`:
 
-1. **Read the condition field** (e.g., `based_on_score_9p`, `based_on_compliance_score`)
-2. **Map condition to state value:**
-   - `based_on_score_9p` → look for `score_9p` in recent step outputs
-   - `based_on_compliance_score` → look for `compliance_score` in recent step outputs
-   - `based_on_validation_status` → look for `resultado_validado` or `status` in recent step outputs
-   - `based_on_pedro_approval` → look for `aprovacao_final` in recent step outputs
-3. **Evaluate each route:**
-   - Read the route's name to determine the threshold (e.g., `score_below_70`, `score_90_plus`)
-   - Compare the extracted value against the threshold
-   - Select the matching route
-4. **Execute the route action:**
-   - `loop_back` → Find the target step ID in the sequence, set step index to that position
-   - `continue` → Advance to the next step normally
-   - `continue_with_adjustments` → Log adjustments needed, advance to target step
-   - `apply_corrections` → Log corrections, advance to target step
-   - `complete` → Set workflow status to `completed`, jump to Final Report
-5. **Record decision in state:**
+1. **Ler o campo de condição** (ex.: `based_on_score_9p`, `based_on_compliance_score`)
+2. **Mapear a condição para o valor no estado:**
+   - `based_on_score_9p` → procurar `score_9p` nas saídas de steps recentes
+   - `based_on_compliance_score` → procurar `compliance_score` nas saídas de steps recentes
+   - `based_on_validation_status` → procurar `resultado_validado` ou `status` nas saídas de steps recentes
+   - `based_on_pedro_approval` → procurar `aprovacao_final` nas saídas de steps recentes
+3. **Avaliar cada rota:**
+   - Ler o nome da rota para determinar o limiar (ex.: `score_below_70`, `score_90_plus`)
+   - Comparar o valor extraído contra o limiar
+   - Selecionar a rota correspondente
+4. **Executar a ação da rota:**
+   - `loop_back` → Encontrar o ID do step de destino na sequência, definir o index do step para essa posição
+   - `continue` → Avançar normalmente para o próximo step
+   - `continue_with_adjustments` → Registrar os ajustes necessários, avançar para o step de destino
+   - `apply_corrections` → Registrar as correções, avançar para o step de destino
+   - `complete` → Definir o status do workflow como `completed`, saltar para o Relatório Final
+5. **Registrar a decisão no estado:**
 
 ```yaml
 decisions:
   - step: {routing_step_id}
     condition: {condition}
-    evaluated_value: {the value checked}
+    evaluated_value: {o valor verificado}
     route_chosen: {route_name}
     action: {loop_back|continue|complete}
-    target: {target_step_id if applicable}
+    target: {target_step_id se aplicável}
     timestamp: {ISO timestamp}
 ```
 
-### Threshold Extraction Rules
+### Regras de Extração de Limiar
 
-Parse the route key name to extract comparison:
+Parsear o nome da chave da rota para extrair a comparação:
 - `*_below_{N}` → value < N
 - `*_{N}_to_{M}` → N <= value <= M
 - `*_{N}_plus` → value >= N
-- `reprovado` → status equals "REPROVADO" or "failed" or false
-- `aprovado` / `approved` → status equals "APROVADO" or "completed" or true
-- `not_approved` → negation of approved
+- `reprovado` → status igual a "REPROVADO" ou "failed" ou false
+- `aprovado` / `approved` → status igual a "APROVADO" ou "completed" ou true
+- `not_approved` → negação de approved
 - `compliance_below_{N}` → compliance_score < N
 - `compliance_{N}_plus` → compliance_score >= N
 
-### Manual Routing Fallback
+### Fallback de Roteamento Manual
 
-If no route matches the evaluated value:
-1. Display current values to the user
-2. List available routes with their descriptions
-3. Use AskUserQuestion to let user choose
-4. Record as manual decision in state
+Se nenhuma rota corresponder ao valor avaliado:
+1. Exibir os valores atuais ao usuário
+2. Listar as rotas disponíveis com suas descrições
+3. Usar AskUserQuestion para deixar o usuário escolher
+4. Registrar como decisão manual no estado
 
 ---
 
-## Spawning a Subagent
+## Spawn de um Subagente
 
-The actual Task tool invocation for each action step.
+A invocação real da Task tool para cada action step.
 
-### Invocation Pattern
+### Padrão de Invocação
 
 ```
-Task tool call:
+Chamada da Task tool:
   description: "WF:{workflow_id} Step:{step_id} Agent:{agent_name}"
   subagent_type: "general-purpose"
-  prompt: {built prompt from Subagent Prompt Builder}
+  prompt: {prompt construído pelo Construtor de Prompt do Subagente}
 ```
 
-### Important Rules
+### Regras Importantes
 
-- Each subagent runs in an isolated context (separate process)
-- The subagent does NOT have access to the orchestrator's conversation history
-- The subagent does NOT have access to other subagents' outputs (only what's passed via prompt)
-- The subagent should NOT use AskUserQuestion (all inputs are pre-collected)
-- The orchestrator waits for the subagent to complete before proceeding
+- Cada subagente roda em um contexto isolado (processo separado)
+- O subagente NÃO tem acesso ao histórico de conversa do orquestrador
+- O subagente NÃO tem acesso às saídas de outros subagentes (apenas ao que é passado via prompt)
+- O subagente NÃO deve usar AskUserQuestion (todas as entradas são pré-coletadas)
+- O orquestrador aguarda a conclusão do subagente antes de prosseguir
 
 ---
 
-## State Persistence
+## Persistência de Estado
 
-State is saved after **every invocation** (start, continue, skip, abort). This enables resume across sessions.
+O estado é salvo após **cada invocação** (start, continue, skip, abort). Isso permite retomar entre sessões.
 
 ```yaml
 # .aiox/{instance-id}-engine-state.yaml
@@ -788,11 +788,11 @@ engine_state:
   started_at: {timestamp}
   updated_at: {current timestamp}
   status: active|completed|aborted
-  current_step_index: {index of NEXT step to process}
-  current_phase: {phase name}
-  last_completed_step: {id of last completed action step, or null}
-  action_steps_completed: {count}
-  action_steps_total: {count}
+  current_step_index: {index do PRÓXIMO step a processar}
+  current_phase: {nome da fase}
+  last_completed_step: {id do último action step concluído, ou null}
+  action_steps_completed: {contagem}
+  action_steps_total: {contagem}
 
   step_outputs:
     {step_id}:
@@ -802,47 +802,59 @@ engine_state:
   step_results:
     {step_id}:
       status: completed|failed|skipped
-      outputs: {parsed outputs}
-      score: {if applicable}
-      artifacts: [{list}]
+      outputs: {saídas parseadas}
+      score: {se aplicável}
+      artifacts: [{lista}]
       spawned_at: {timestamp}
       completed_at: {timestamp}
-      retries: {count}
+      retries: {contagem}
 
   decisions:
-    - {decision records from routing}
+    - {registros de decisão do roteamento}
 
   elicitation_responses:
     {step_id}:
       {field}: {value}
 ```
 
-### Resume Across Sessions
+### Retomar Entre Sessões
 
-The state file persists on disk. To resume in a new Claude Code session:
+O arquivo de estado persiste em disco. Para retomar em uma nova sessão do Claude Code:
 
 ```
 @aiox-master
 *run-workflow {name} continue --mode=engine
 ```
 
-The engine loads the state, reads `current_step_index`, and picks up exactly where it left off. All previous step outputs are available in `step_outputs` for the `requires` chain.
+O motor carrega o estado, lê `current_step_index` e retoma exatamente de onde parou. Todas as saídas de steps anteriores ficam disponíveis em `step_outputs` para a cadeia de `requires`.
 
 ---
 
-## Retry Logic
+## Lógica de Retry
 
-When a step fails:
+Quando um step falha:
 
-1. Check `workflow.global_error_handling.max_retries_per_phase` (default: 2)
-2. Check `state.retries[{step_id}]` count
-3. If retries < max:
-   - Increment retry counter
-   - Add previous error to the prompt as additional context:
+1. Verificar `workflow.global_error_handling.max_retries_per_phase` (padrão: 2)
+2. Verificar a contagem de `state.retries[{step_id}]`
+3. Se retries < max:
+   - Incrementar o contador de retry
+   - Adicionar o erro anterior ao prompt como contexto adicional:
      ```
-     ## Previous Attempt Failed
-     Error: {error description}
-     Previous output: {raw output if available}
-     Please fix the issues and try again.
+     ## Tentativa Anterior Falhou
+     Erro: {descrição do erro}
+     Saída anterior: {saída bruta, se disponível}
+     Por favor, corrija os problemas e tente novamente.
      ```
-   - Re-spawn the subagent
+   - Fazer re-spawn do subagente
+4. Se retries >= max:
+   - Exibir o erro ao usuário
+   - Oferecer opções:
+     1. Tentar novamente manualmente (o usuário fornece a entrada)
+     2. Pular o step (se opcional)
+     3. Abortar o workflow
+
+---
+
+## Formato de Saída
+
+O motor produz uma saída estruturada ao final da execução. Veja o Passo 6 (Relatório Final) na seção do Loop do Motor acima.

@@ -4,33 +4,33 @@
 > Agent: @ux-design-expert (Brad - Design System Architect)
 > Version: 1.0.0
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
 ### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
 
 - Executa pipeline completo automaticamente
-- Minimal user interaction
-- **Best for:** Pipelines de CI/CD, releases automatizados
+- Interação mínima com o usuário
+- **Melhor para:** Pipelines de CI/CD, releases automatizados
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[DEFAULT]**
 
 - Checkpoint entre cada step
 - Mostra resultados e pede confirmação
-- **Best for:** Primeira execução, validação manual
+- **Melhor para:** Primeira execução, validação manual
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
 
 - Analisa projeto antes de executar
 - Identifica potenciais problemas
-- **Best for:** Projetos complexos, primeira migração
+- **Melhor para:** Projetos complexos, primeira migração
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: run-design-system-pipeline
@@ -92,9 +92,9 @@ outputs:
 
 ---
 
-## Pre-Conditions
+## Pré-condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -124,9 +124,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a task ser concluída
 
 **Checklist:**
 
@@ -149,9 +149,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
@@ -176,59 +176,59 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** build-component
-  - **Purpose:** Build individual components
-  - **Source:** .aiox-core/development/tasks/build-component.md
+- **Ferramenta:** build-component
+  - **Propósito:** Build de componentes individuais
+  - **Origem:** .aiox-core/development/tasks/build-component.md
 
-- **Tool:** generate-documentation
-  - **Purpose:** Generate Pattern Library docs
-  - **Source:** .aiox-core/development/tasks/generate-documentation.md
+- **Ferramenta:** generate-documentation
+  - **Propósito:** Gerar docs do Pattern Library
+  - **Origem:** .aiox-core/development/tasks/generate-documentation.md
 
-- **Tool:** accessibility-audit
-  - **Purpose:** Run WCAG compliance checks
-  - **Source:** External: axe-core, pa11y, or similar
+- **Ferramenta:** accessibility-audit
+  - **Propósito:** Executar verificações de conformidade WCAG
+  - **Origem:** Externo: axe-core, pa11y, ou similar
 
-- **Tool:** calculate-roi
-  - **Purpose:** Calculate ROI metrics
-  - **Source:** .aiox-core/development/tasks/calculate-roi.md
+- **Ferramenta:** calculate-roi
+  - **Propósito:** Calcular métricas de ROI
+  - **Origem:** .aiox-core/development/tasks/calculate-roi.md
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** continue-on-warning
+**Estratégia:** continue-on-warning
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Build Failure
-   - **Cause:** TypeScript errors, missing dependencies, invalid imports
-   - **Resolution:** Fix errors and re-run build step only
-   - **Recovery:** Show error details, suggest fixes, offer to skip to next step
+1. **Erro:** Falha no Build
+   - **Causa:** Erros de TypeScript, dependências faltando, imports inválidos
+   - **Resolução:** Corrigir erros e re-executar apenas o step de build
+   - **Recuperação:** Mostrar detalhes do erro, sugerir correções, oferecer pular para o próximo step
 
-2. **Error:** Documentation Generation Failed
-   - **Cause:** Missing component metadata, invalid JSDoc
-   - **Resolution:** Add missing metadata, fix JSDoc syntax
-   - **Recovery:** Continue pipeline, flag for manual documentation
+2. **Erro:** Falha na Geração de Documentação
+   - **Causa:** Metadata de componente faltando, JSDoc inválido
+   - **Resolução:** Adicionar metadata faltando, corrigir sintaxe do JSDoc
+   - **Recuperação:** Continuar pipeline, sinalizar para documentação manual
 
-3. **Error:** Accessibility Violations (Critical)
-   - **Cause:** WCAG AA violations in components
-   - **Resolution:** Fix accessibility issues before proceeding
-   - **Recovery:** Generate remediation report, block pipeline if critical
+3. **Erro:** Violações de Acessibilidade (Críticas)
+   - **Causa:** Violações WCAG AA nos componentes
+   - **Resolução:** Corrigir problemas de acessibilidade antes de prosseguir
+   - **Recuperação:** Gerar relatório de correção, bloquear pipeline se crítico
 
-4. **Error:** ROI Calculation Failed
-   - **Cause:** Missing baseline metrics, no consolidation data
-   - **Resolution:** Run consolidation first or provide manual inputs
-   - **Recovery:** Skip ROI, complete pipeline with partial results
+4. **Erro:** Falha no Cálculo de ROI
+   - **Causa:** Métricas de baseline faltando, sem dados de consolidação
+   - **Resolução:** Executar consolidação primeiro ou fornecer inputs manuais
+   - **Recuperação:** Pular ROI, concluir pipeline com resultados parciais
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-15 min (full pipeline)
@@ -242,15 +242,15 @@ step_breakdown:
   roi: 1-2 min
 ```
 
-**Optimization Notes:**
+**Notas de Otimização:**
 
-- Run a11y checks in parallel with documentation generation
-- Cache build artifacts between runs
-- Skip unchanged components in incremental mode
+- Executar verificações de a11y em paralelo com a geração de documentação
+- Cachear artefatos de build entre execuções
+- Pular componentes inalterados no modo incremental
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -270,13 +270,13 @@ updated_at: 2025-01-30
 
 ---
 
-## Description
+## Descrição
 
 Pipeline automatizado pós-migração para Design System. Executa sequencialmente: build de componentes atômicos → geração de documentação do Pattern Library → auditoria de acessibilidade WCAG AA → cálculo de ROI e savings.
 
 Ideal para integração em CI/CD ou validação antes de releases.
 
-## Prerequisites
+## Pré-requisitos
 
 - Design System configurado no projeto
 - Componentes existentes para build
@@ -301,7 +301,7 @@ Ideal para integração em CI/CD ou validação antes de releases.
 └──────┴───────────────────┴───────────────────────────────────────┘
 ```
 
-### Step 1: Build Components
+### Step 1: Build de Componentes
 
 ```yaml
 step: build
@@ -318,19 +318,19 @@ action: Build de componentes atômicos
 5. Verificar TypeScript strict mode compliance
 6. Gerar bundle de componentes
 
-**Outputs:**
+**Saídas:**
 
 - `build_report.json` - Relatório de build
 - `compiled_tokens/` - Tokens compilados
 - `dist/` - Bundle de componentes
 
-**Validation:**
+**Validação:**
 
 - [ ] Build completo sem erros TypeScript
 - [ ] Todos os tokens compilados
 - [ ] Componentes exportados corretamente
 
-### Step 2: Generate Documentation
+### Step 2: Gerar Documentação
 
 ```yaml
 step: document
@@ -348,20 +348,20 @@ requires: build
 5. Atualizar changelog de componentes
 6. Build do Storybook (se configurado)
 
-**Outputs:**
+**Saídas:**
 
 - `docs/pattern-library/` - Documentação completa
 - `docs/api-reference/` - Referência de API
 - `docs/style-guide.md` - Guia de estilo
 - `storybook-static/` - Storybook build (se habilitado)
 
-**Validation:**
+**Validação:**
 
 - [ ] Todos os componentes documentados
 - [ ] Exemplos de código funcionais
 - [ ] Guia de estilo atualizado
 
-### Step 3: Accessibility Audit
+### Step 3: Auditoria de Acessibilidade
 
 ```yaml
 step: a11y
@@ -379,27 +379,27 @@ requires: document
 5. Verificar focus states e indicadores visuais
 6. Testar com múltiplos tamanhos de fonte
 
-**WCAG 2.1 AA Checklist:**
+**Checklist WCAG 2.1 AA:**
 
-- [ ] 1.4.3 Contrast (Minimum) - 4.5:1 for text
-- [ ] 1.4.11 Non-text Contrast - 3:1 for UI
-- [ ] 2.1.1 Keyboard - All functionality keyboard accessible
-- [ ] 2.4.7 Focus Visible - Focus indicator visible
-- [ ] 4.1.2 Name, Role, Value - ARIA attributes correct
+- [ ] 1.4.3 Contrast (Minimum) - 4.5:1 para texto
+- [ ] 1.4.11 Non-text Contrast - 3:1 para UI
+- [ ] 2.1.1 Keyboard - Toda funcionalidade acessível por teclado
+- [ ] 2.4.7 Focus Visible - Indicador de foco visível
+- [ ] 4.1.2 Name, Role, Value - Atributos ARIA corretos
 
-**Outputs:**
+**Saídas:**
 
 - `a11y/audit-report.json` - Relatório completo
 - `a11y/violations.md` - Lista de violações
 - `a11y/remediation-plan.md` - Plano de correção
 
-**Validation:**
+**Validação:**
 
 - [ ] Zero violações críticas (Level A)
 - [ ] Violações AA documentadas com plano de correção
 - [ ] Navegação por teclado funcional
 
-### Step 4: Calculate ROI
+### Step 4: Calcular ROI
 
 ```yaml
 step: roi
@@ -425,13 +425,13 @@ requires: a11y
 - Redução de bugs visuais
 - ROI ratio e breakeven point
 
-**Outputs:**
+**Saídas:**
 
 - `roi/roi-analysis.md` - Análise completa
 - `roi/executive-summary.md` - Resumo executivo
 - `roi/metrics-dashboard.json` - Dados para dashboard
 
-**Validation:**
+**Validação:**
 
 - [ ] Métricas de reuso calculadas
 - [ ] ROI ratio positivo
@@ -439,9 +439,9 @@ requires: a11y
 
 ---
 
-## Output
+## Saída
 
-### Final Pipeline Report
+### Relatório Final do Pipeline
 
 ```yaml
 # pipeline-report.yaml
@@ -495,7 +495,7 @@ summary:
 
 ---
 
-## Success Criteria
+## Critérios de Sucesso
 
 - [ ] Pipeline executa todos os 4 steps sem erros críticos
 - [ ] Build gera bundle de componentes válido
@@ -506,15 +506,15 @@ summary:
 
 ---
 
-## Examples
+## Exemplos
 
-### Example 1: Execução Completa (YOLO Mode)
+### Exemplo 1: Execução Completa (YOLO Mode)
 
 ```bash
 *run-design-system-pipeline --mode=yolo
 ```
 
-Output:
+Saída:
 
 ```
 🚀 Brad: Iniciando Design System Pipeline (YOLO mode)...
@@ -555,13 +555,13 @@ Output:
 Brad says: "Pipeline limpo. Ship it! 🚢"
 ```
 
-### Example 2: Execução Interativa
+### Exemplo 2: Execução Interativa
 
 ```bash
 *run-design-system-pipeline
 ```
 
-Output:
+Saída:
 
 ```
 🚀 Brad: Iniciando Design System Pipeline (Interactive mode)...
@@ -585,7 +585,7 @@ Output:
   ...
 ```
 
-### Example 3: Skip Steps
+### Exemplo 3: Pular Steps
 
 ```bash
 *run-design-system-pipeline --skip=document,roi
@@ -595,9 +595,9 @@ Executa apenas: build → a11y
 
 ---
 
-## Integration
+## Integração
 
-### CI/CD Integration
+### Integração CI/CD
 
 ```yaml
 # .github/workflows/design-system.yml
@@ -617,7 +617,7 @@ jobs:
         run: npx aiox-core task run-design-system-pipeline --mode=yolo
 ```
 
-### NPM Script
+### Script NPM
 
 ```json
 {
@@ -630,7 +630,7 @@ jobs:
 
 ---
 
-## Notes
+## Notas
 
 - Pipeline é idempotente - pode ser executado múltiplas vezes
 - Resultados são incrementais quando possível

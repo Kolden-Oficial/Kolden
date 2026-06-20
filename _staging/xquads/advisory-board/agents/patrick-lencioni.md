@@ -392,3 +392,10 @@ Health is the multiplier. A healthy organization exploits all the intelligence i
 The reason organizational health remains an advantage is that it requires courage, discipline, and persistence — not brilliance. And most leaders would rather chase the next strategic insight than do the hard, unglamorous, deeply human work of building a healthy team.
 
 That's the advantage. It's available to everyone. Almost nobody takes it.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`patrick-lencioni`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

@@ -1,12 +1,12 @@
 # delegate-to-external-executor.md
 
-**Task**: Delegate Implementation to External Executor
+**Task**: Delegar Implementação para Executor Externo
 
-**Purpose**: Standardize the orchestrator/executor split for AIOX workflows. The active AIOX runtime keeps authority over story interpretation, acceptance criteria validation, constitutional gates, review, and story updates while a separate CLI runtime performs only the implementation attempt.
+**Propósito**: Padronizar a separação orquestrador/executor para os workflows do AIOX. O runtime AIOX ativo mantém autoridade sobre a interpretação da story, validação dos critérios de aceite, gates constitucionais, revisão e atualizações da story, enquanto um runtime de CLI separado realiza apenas a tentativa de implementação.
 
-**When to use**: Use only for `@dev` implementation work where the story scope is clear enough to hand to another runtime. Do not use for PO, QA, SM, DevOps, architecture approval, or release authority.
+**Quando Usar**: Use somente para trabalho de implementação do `@dev` em que o escopo da story seja claro o suficiente para ser entregue a outro runtime. Não use para PO, QA, SM, DevOps, aprovação de arquitetura ou autoridade de release.
 
-## Task Definition
+## Definição da Task
 
 ```yaml
 task: delegateToExternalExecutor()
@@ -18,11 +18,11 @@ inputs:
   - campo: prompt
     tipo: string
     obrigatorio: true
-    validacao: Must cite acceptance criteria, story path, file scope, and explicit non-goals
+    validacao: Deve citar critérios de aceite, caminho da story, escopo de arquivos e não-objetivos explícitos
   - campo: slug
     tipo: string
     obrigatorio: true
-    validacao: Stable filesystem-safe run slug
+    validacao: Slug de execução estável e seguro para o sistema de arquivos
   - campo: story_id
     tipo: string
     obrigatorio: false
@@ -32,7 +32,7 @@ inputs:
   - campo: workdir
     tipo: string
     obrigatorio: false
-    default: Current project root
+    default: Raiz atual do projeto
   - campo: provider
     tipo: string
     obrigatorio: false
@@ -53,9 +53,9 @@ outputs:
     destino: Orchestrator review
 ```
 
-## Configuration
+## Configuração
 
-Delegation is disabled by default.
+A delegação está desabilitada por padrão.
 
 ```yaml
 dev:
@@ -69,40 +69,40 @@ external_executors:
   run_dir: .aiox/external-runs
 ```
 
-## Pre-Conditions
+## Pré-Condições
 
 ```yaml
 pre_conditions:
-  - [ ] External executor provider is installed and available on PATH.
-  - [ ] Working tree is clean, or existing intentional changes are already committed.
-  - [ ] Prompt cites the story path and acceptance criteria.
-  - [ ] Prompt lists allowed file scope and explicit non-goals.
-  - [ ] Delegated work is implementation work owned by @dev.
-  - [ ] Orchestrator has enough context to review the resulting diff.
+  - [ ] O provider do executor externo está instalado e disponível no PATH.
+  - [ ] A árvore de trabalho está limpa, ou as mudanças intencionais existentes já foram commitadas.
+  - [ ] O prompt cita o caminho da story e os critérios de aceite.
+  - [ ] O prompt lista o escopo de arquivos permitido e os não-objetivos explícitos.
+  - [ ] O trabalho delegado é trabalho de implementação de responsabilidade do @dev.
+  - [ ] O orquestrador tem contexto suficiente para revisar o diff resultante.
 ```
 
-## Execution
+## Execução
 
-### 1. Build the Prompt
+### 1. Construir o Prompt
 
-The orchestrator writes a prompt that contains:
+O orquestrador escreve um prompt que contém:
 
-- Story ID and story path
-- Acceptance criteria copied or summarized from the story
-- Allowed file paths or modules
-- Testing expectations
-- Constraints from Constitution and project rules
-- Explicit instruction that the executor must not update story status, checkboxes, File List, PRs, or releases
+- ID e caminho da story
+- Critérios de aceite copiados ou resumidos a partir da story
+- Caminhos de arquivos ou módulos permitidos
+- Expectativas de teste
+- Restrições da Constitution e das regras do projeto
+- Instrução explícita de que o executor não deve atualizar status da story, checkboxes, File List, PRs ou releases
 
-### 2. Start the Delegate Run
+### 2. Iniciar a Execução Delegada
 
-Use the wrapper:
+Use o wrapper:
 
 ```bash
 aiox-delegate codex -t <slug> -f <prompt_file> -d <workdir>
 ```
 
-The wrapper prints:
+O wrapper imprime:
 
 ```text
 STATUS=started
@@ -114,39 +114,39 @@ PROMPT=<run_dir>/prompt.md
 COMMAND=<provider command>
 ```
 
-### 3. Monitor Completion
+### 3. Monitorar a Conclusão
 
-The orchestrator may tail the log or wait for the PID. Do not mark story progress while the external executor is still running.
+O orquestrador pode acompanhar o log (tail) ou aguardar o PID. Não marque progresso da story enquanto o executor externo ainda estiver em execução.
 
-### 4. Review Output and Diff
+### 4. Revisar a Saída e o Diff
 
-The orchestrator must read:
+O orquestrador deve ler:
 
 - `<run_dir>/output.md`
 - `<run_dir>/<provider>.log`
 - `git diff`
 
-Then validate:
+Em seguida, valide:
 
 ```yaml
 review_checklist:
-  - [ ] Every acceptance criterion is satisfied.
-  - [ ] Diff scope matches the story and prompt.
-  - [ ] Article IV No Invention: every change traces to a requirement.
-  - [ ] Tests were added or updated when behavior changed.
-  - [ ] Lint, typecheck, and relevant tests pass.
-  - [ ] No story state was mutated before review approval.
+  - [ ] Todos os critérios de aceite estão satisfeitos.
+  - [ ] O escopo do diff corresponde à story e ao prompt.
+  - [ ] Artigo IV Sem Invenção: toda mudança rastreia a um requisito.
+  - [ ] Testes foram adicionados ou atualizados quando o comportamento mudou.
+  - [ ] Lint, typecheck e os testes relevantes passam.
+  - [ ] Nenhum estado da story foi modificado antes da aprovação da revisão.
 ```
 
-### 5. Accept or Iterate
+### 5. Aceitar ou Iterar
 
-- **Approved**: orchestrator updates story checkboxes, File List, status, and final validation evidence.
-- **Rejected**: orchestrator writes specific feedback and may start a new run with a new slug or iteration suffix.
+- **Aprovado**: o orquestrador atualiza os checkboxes da story, a File List, o status e as evidências finais de validação.
+- **Rejeitado**: o orquestrador escreve feedback específico e pode iniciar uma nova execução com um novo slug ou sufixo de iteração.
 
-## Anti-Patterns
+## Anti-padrões
 
-- Marking a story done by trusting the executor summary without reading the diff.
-- Delegating PO/QA/SM/DevOps authority to an external runtime.
-- Letting the executor create PRs, push, release, or mutate story state.
-- Delegating vague work without acceptance criteria and file scope.
-- Running with `danger-full-access` unless the surrounding environment is externally sandboxed.
+- Marcar uma story como concluída confiando no resumo do executor sem ler o diff.
+- Delegar autoridade de PO/QA/SM/DevOps a um runtime externo.
+- Permitir que o executor crie PRs, faça push, release ou modifique o estado da story.
+- Delegar trabalho vago sem critérios de aceite e escopo de arquivos.
+- Executar com `danger-full-access` a menos que o ambiente circundante esteja externamente isolado (sandboxed).

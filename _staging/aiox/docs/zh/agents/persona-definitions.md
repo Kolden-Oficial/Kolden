@@ -558,3 +558,10 @@
 **文档状态:** ✅ 完成
 **下一步:** 导出为YAML格式，创建原型原理文档
 **交接就绪:** Story 6.1.2可以立即开始实施
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`persona-definitions`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

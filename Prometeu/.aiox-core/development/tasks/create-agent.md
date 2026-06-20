@@ -66,80 +66,80 @@ Esta task cria um único agente de alta qualidade com base em metodologias pesqu
 INPUT (agent_purpose + domain + [specialist])
     ↓
 [PHASE 0: CONTEXT]
-    → Identify target pack
-    → Check if specialist-based or generic
+    → Identificar o pack alvo
+    → Verificar se é baseado em especialista ou genérico
     ↓
 [PHASE 1: RESEARCH]
-    → Check local knowledge (if specialist)
-    → Generate research prompt
-    → Execute deep research
+    → Verificar o conhecimento local (se especialista)
+    → Gerar o prompt de pesquisa
+    → Executar pesquisa profunda
     ↓
 [PHASE 2: EXTRACTION]
-    → Extract framework from research
-    → Classify tier
-    → Define persona
+    → Extrair o framework da pesquisa
+    → Classificar o tier
+    → Definir a persona
     ↓
 [PHASE 3: CREATION]
-    → Generate agent using template
-    → Include all 6 levels
-    → Apply voice_dna
+    → Gerar o agente usando o template
+    → Incluir todos os 6 níveis
+    → Aplicar voice_dna
     ↓
 [PHASE 4: VALIDATION]
-    → Run SC_AGT_001 quality gate
-    → Fix blocking issues
-    → Save agent file
+    → Executar o quality gate SC_AGT_001
+    → Corrigir problemas bloqueantes
+    → Salvar o arquivo do agente
     ↓
-[PHASE 5: OPERATIONAL INFRASTRUCTURE]  ← NEW
-    → Generate command_loader
-    → Create task stubs per command
-    → Create template stubs per output type
-    → Create checklist with veto conditions
-    → Update agent with Level 0 infrastructure
+[PHASE 5: OPERATIONAL INFRASTRUCTURE]  ← NOVO
+    → Gerar o command_loader
+    → Criar stubs de task por comando
+    → Criar stubs de template por tipo de saída
+    → Criar checklist com condições de veto
+    → Atualizar o agente com a infraestrutura de Nível 0
     ↓
-[PHASE 6: OPERATIONAL VALIDATION]  ← NEW
-    → Validate all files exist
-    → Validate task quality (steps + veto)
-    → Calculate maturity score (target >= 7.0)
+[PHASE 6: OPERATIONAL VALIDATION]  ← NOVO
+    → Validar que todos os arquivos existem
+    → Validar a qualidade da task (passos + veto)
+    → Calcular a pontuação de maturidade (meta >= 7.0)
     ↓
 [PHASE 7: HANDOFF]
-    → Present summary with operational status
-    → Document next steps
+    → Apresentar o resumo com o status operacional
+    → Documentar os próximos passos
     ↓
-OUTPUT: Agent file + Operational files + Quality Gate PASS + Maturity Score
+OUTPUT: Arquivo do agente + Arquivos operacionais + Quality Gate PASS + Pontuação de Maturidade
 ```
 
 ---
 
-## Inputs
+## Entradas
 
-| Parameter         | Type   | Required | Description                           | Example                |
-| ----------------- | ------ | -------- | ------------------------------------- | ---------------------- |
-| `agent_purpose`   | string | Yes      | What the agent should do              | `"Create sales pages"` |
-| `domain`          | string | Yes      | Domain/area of expertise              | `"copywriting"`        |
-| `specialist_slug` | string | No       | If based on human expert (snake_case) | `"gary_halbert"`       |
-| `specialist_name` | string | No       | Human-readable name                   | `"Gary Halbert"`       |
-| `pack_name`       | string | Yes      | Target squad                          | `"copy"`               |
-
----
-
-## Preconditions
-
-- [ ] Target pack exists at `squads/{pack_name}/`
-- [ ] squad-architect agent is active
-- [ ] WebSearch tool available (for research)
-- [ ] Write permissions for `squads/{pack_name}/agents/`
+| Parâmetro         | Tipo   | Obrigatório | Descrição                              | Exemplo                |
+| ----------------- | ------ | ----------- | -------------------------------------- | ---------------------- |
+| `agent_purpose`   | string | Sim         | O que o agente deve fazer              | `"Create sales pages"` |
+| `domain`          | string | Sim         | Domínio/área de expertise              | `"copywriting"`        |
+| `specialist_slug` | string | Não         | Se baseado em especialista humano (snake_case) | `"gary_halbert"`       |
+| `specialist_name` | string | Não         | Nome legível                           | `"Gary Halbert"`       |
+| `pack_name`       | string | Sim         | Squad alvo                             | `"copy"`               |
 
 ---
 
-## PHASE 0: CONTEXT
+## Pré-condições
 
-**Duration:** < 1 minute
-**Checkpoint:** None (fast validation)
-**Mode:** Automatic
+- [ ] O pack alvo existe em `squads/{pack_name}/`
+- [ ] O agente squad-architect está ativo
+- [ ] Ferramenta WebSearch disponível (para pesquisa)
+- [ ] Permissões de escrita para `squads/{pack_name}/agents/`
 
-### Step 0.1: Identify Target Pack
+---
 
-**Actions:**
+## FASE 0: CONTEXT (Contexto)
+
+**Duração:** < 1 minuto
+**Checkpoint:** Nenhum (validação rápida)
+**Modo:** Automático
+
+### Passo 0.1: Identificar o Pack Alvo
+
+**Ações:**
 
 ```yaml
 identify_pack:
@@ -153,7 +153,7 @@ identify_pack:
     option_2: 'Create agent standalone (not recommended)'
 ```
 
-**Decision Point:**
+**Ponto de Decisão:**
 
 ```text
 IF pack_name provided AND pack exists:
@@ -164,9 +164,9 @@ ELSE:
     → ASK: "Which pack should this agent belong to?"
 ```
 
-### Step 0.2: Classify Agent Type
+### Passo 0.2: Classificar o Tipo de Agente
 
-**Actions:**
+**Ações:**
 
 ```yaml
 classify_agent_type:
@@ -181,7 +181,7 @@ classify_agent_type:
     next_step: 'Generate research prompt for domain experts'
 ```
 
-**Output (PHASE 0):**
+**Saída (FASE 0):**
 
 ```yaml
 phase_0_output:
@@ -196,17 +196,17 @@ phase_0_output:
 
 ---
 
-## PHASE 1: RESEARCH
+## FASE 1: RESEARCH (Pesquisa)
 
-**Duration:** 5-15 minutes
-**Checkpoint:** SC_RES_002 (Agent Research Quality)
-**Mode:** Autonomous
+**Duração:** 5-15 minutos
+**Checkpoint:** SC_RES_002 (Qualidade da Pesquisa do Agente)
+**Modo:** Autônomo
 
-### Step 1.1: Check Local Knowledge (If Specialist)
+### Passo 1.1: Verificar o Conhecimento Local (Se Especialista)
 
-**Condition:** Only if `agent_type == "specialist_based"`
+**Condição:** Apenas se `agent_type == "specialist_based"`
 
-**Actions:**
+**Ações:**
 
 ```yaml
 check_local_knowledge:
@@ -231,7 +231,7 @@ check_local_knowledge:
     gap_identification: "What's missing for agent_purpose?"
 ```
 
-**Decision Point:**
+**Ponto de Decisão:**
 
 ```text
 IF coverage >= 70%:
@@ -245,9 +245,9 @@ ELSE:
     → research_mode = "full"
 ```
 
-### Step 1.2: Generate Research Prompt
+### Passo 1.2: Gerar o Prompt de Pesquisa
 
-**Actions:**
+**Ações:**
 
 ```yaml
 generate_research_prompt:
@@ -266,7 +266,7 @@ generate_research_prompt:
     validation_criteria: 'How to know research is sufficient'
 ```
 
-**Example Research Prompt:**
+**Exemplo de Prompt de Pesquisa:**
 
 ```yaml
 research_prompt:
@@ -289,9 +289,9 @@ research_prompt:
     - Quality criteria from his own writings
 ```
 
-### Step 1.3: Execute Deep Research
+### Passo 1.3: Executar Pesquisa Profunda
 
-**Actions:**
+**Ações:**
 
 ```yaml
 execute_research:
@@ -321,6 +321,7 @@ execute_research:
 
 **Checkpoint SC_RES_002:**
 
+
 ```yaml
 heuristic_id: SC_RES_002
 name: 'Agent Research Quality'
@@ -336,7 +337,7 @@ veto_conditions:
   - no_methodology_found → "Cannot create agent without methodology"
 ```
 
-**Output (PHASE 1):**
+**Saída (FASE 1):**
 
 ```yaml
 phase_1_output:
@@ -349,15 +350,15 @@ phase_1_output:
 
 ---
 
-## PHASE 2: EXTRACTION
+## FASE 2: EXTRACTION (Extração)
 
-**Duration:** 5-10 minutes
-**Checkpoint:** None (internal validation)
-**Mode:** Autonomous
+**Duração:** 5-10 minutos
+**Checkpoint:** Nenhum (validação interna)
+**Modo:** Autônomo
 
-### Step 2.1: Extract Framework from Research
+### Passo 2.1: Extrair o Framework da Pesquisa
 
-**Actions:**
+**Ações:**
 
 ```yaml
 extract_framework:
@@ -396,11 +397,11 @@ extract_framework:
       format: 'input → output'
 ```
 
-### Step 2.2: Classify Tier
+### Passo 2.2: Classificar o Tier
 
-**Apply: tier-system-framework.md**
+**Aplicar: tier-system-framework.md**
 
-**Actions:**
+**Ações:**
 
 ```yaml
 classify_tier:
@@ -430,9 +431,9 @@ classify_tier:
     rationale: 'Gary Halbert has documented $1B+ results, original methodology'
 ```
 
-### Step 2.3: Define Persona
+### Passo 2.3: Definir a Persona
 
-**Actions:**
+**Ações:**
 
 ```yaml
 define_persona:
@@ -455,7 +456,7 @@ define_persona:
     - 'Integration points'
 ```
 
-**Output (PHASE 2):**
+**Saída (FASE 2):**
 
 ```yaml
 phase_2_output:
@@ -470,17 +471,17 @@ phase_2_output:
 
 ---
 
-## PHASE 3: CREATION
+## FASE 3: CREATION (Criação)
 
-**Duration:** 5-10 minutes
-**Checkpoint:** None (validation in Phase 4)
-**Mode:** Autonomous
+**Duração:** 5-10 minutos
+**Checkpoint:** Nenhum (validação na Fase 4)
+**Modo:** Autônomo
 
-### Step 3.1: Generate Agent Using Template
+### Passo 3.1: Gerar o Agente Usando o Template
 
 **Template:** `templates/squad/agent-template.md`
 
-**Actions:**
+**Ações:**
 
 ```yaml
 generate_agent:
@@ -529,9 +530,9 @@ generate_agent:
     synergies: 'Related agents/workflows'
 ```
 
-### Step 3.2: Apply Voice DNA
+### Passo 3.2: Aplicar o Voice DNA
 
-**Actions:**
+**Ações:**
 
 ```yaml
 apply_voice_dna:
@@ -546,9 +547,9 @@ apply_voice_dna:
     tone_consistency: 'Match persona style'
 ```
 
-### Step 3.3: Add Completion Criteria
+### Passo 3.3: Adicionar os Critérios de Conclusão
 
-**Actions:**
+**Ações:**
 
 ```yaml
 add_completion_criteria:
@@ -568,7 +569,7 @@ add_completion_criteria:
       - '...'
 ```
 
-**Output (PHASE 3):**
+**Saída (FASE 3):**
 
 ```yaml
 phase_3_output:
@@ -580,17 +581,17 @@ phase_3_output:
 
 ---
 
-## PHASE 4: VALIDATION
+## FASE 4: VALIDATION (Validação)
 
-**Duration:** 2-5 minutes
-**Checkpoint:** SC_AGT_001 (Agent Quality Gate)
-**Mode:** Autonomous with retry
+**Duração:** 2-5 minutos
+**Checkpoint:** SC_AGT_001 (Quality Gate do Agente)
+**Modo:** Autônomo com retry
 
-### Step 4.1: Run Quality Gate SC_AGT_001
+### Passo 4.1: Executar o Quality Gate SC_AGT_001
 
 **Checklist:** `checklists/agent-quality-gate.md`
 
-**Actions:**
+**Ações:**
 
 ```yaml
 run_quality_gate:
@@ -625,7 +626,7 @@ run_quality_gate:
     - examples < 3 → "Insufficient examples"
 ```
 
-**Decision Point:**
+**Ponto de Decisão:**
 
 ```text
 IF all blocking requirements pass AND score >= 7.0:
@@ -635,9 +636,9 @@ ELSE:
     → GOTO Step 4.2 (Fix Issues)
 ```
 
-### Step 4.2: Fix Blocking Issues
+### Passo 4.2: Corrigir os Problemas Bloqueantes
 
-**Actions:**
+**Ações:**
 
 ```yaml
 fix_blocking_issues:
@@ -666,9 +667,9 @@ fix_blocking_issues:
   on_max_iterations: 'Flag for human review'
 ```
 
-### Step 4.3: Save Agent File
+### Passo 4.3: Salvar o Arquivo do Agente
 
-**Actions:**
+**Ações:**
 
 ```yaml
 save_agent:
@@ -681,7 +682,7 @@ save_agent:
     - log_creation
 ```
 
-**Output (PHASE 4):**
+**Saída (FASE 4):**
 
 ```yaml
 phase_4_output:
@@ -694,20 +695,20 @@ phase_4_output:
 
 ---
 
-## PHASE 5: OPERATIONAL INFRASTRUCTURE
+## FASE 5: OPERATIONAL INFRASTRUCTURE (Infraestrutura Operacional)
 
-**Duration:** 5-10 minutes
-**Checkpoint:** SC_AGT_004 (Operational Completeness)
-**Mode:** Autonomous
-**Reference:** `aprendizado/32-ANATOMIA-AGENTE-100-PORCENTO-REPLICAVEL.md`
+**Duração:** 5-10 minutos
+**Checkpoint:** SC_AGT_004 (Completude Operacional)
+**Modo:** Autônomo
+**Referência:** `aprendizado/32-ANATOMIA-AGENTE-100-PORCENTO-REPLICAVEL.md`
 
-> **Principio:** Um agente sem infraestrutura operacional e uma persona sem processo.
-> Ele SABE quem e, mas nao sabe COMO fazer nada de forma deterministica.
-> "Se o executor CONSEGUE improvisar, vai improvisar. E cada execucao sera diferente."
+> **Princípio:** Um agente sem infraestrutura operacional é uma persona sem processo.
+> Ele SABE quem é, mas não sabe COMO fazer nada de forma determinística.
+> "Se o executor CONSEGUE improvisar, vai improvisar. E cada execução será diferente."
 
-### Step 5.1: Generate Command Loader
+### Passo 5.1: Gerar o Command Loader
 
-**Actions:**
+**Ações:**
 
 ```yaml
 generate_command_loader:
@@ -745,9 +746,9 @@ generate_command_loader:
       reason: 'Without mapping, LLM will improvise the workflow'
 ```
 
-### Step 5.2: Create Task Stubs
+### Passo 5.2: Criar os Stubs de Task
 
-**Actions:**
+**Ações:**
 
 ```yaml
 create_task_stubs:
@@ -792,9 +793,9 @@ create_task_stubs:
       reason: 'PV004: If executor CAN do it wrong, process is wrong'
 ```
 
-### Step 5.3: Create Template Stubs
+### Passo 5.3: Criar os Stubs de Template
 
-**Actions:**
+**Ações:**
 
 ```yaml
 create_template_stubs:
@@ -822,9 +823,9 @@ create_template_stubs:
     - 'Command output is a simple list (*help)'
 ```
 
-### Step 5.4: Create Operational Checklist
+### Passo 5.4: Criar o Checklist Operacional
 
-**Actions:**
+**Ações:**
 
 ```yaml
 create_operational_checklist:
@@ -850,9 +851,9 @@ create_operational_checklist:
   content_source: "Derive from agent's completion_criteria and anti_patterns"
 ```
 
-### Step 5.5: Update Agent with Command Loader
+### Passo 5.5: Atualizar o Agente com o Command Loader
 
-**Actions:**
+**Ações:**
 
 ```yaml
 update_agent_file:
@@ -890,7 +891,7 @@ update_agent_file:
     - 'CRITICAL_LOADER_RULE is present verbatim'
 ```
 
-**Output (PHASE 5):**
+**Saída (FASE 5):**
 
 ```yaml
 phase_5_output:
@@ -904,15 +905,15 @@ phase_5_output:
 
 ---
 
-## PHASE 6: OPERATIONAL VALIDATION
+## FASE 6: OPERATIONAL VALIDATION (Validação Operacional)
 
-**Duration:** 2-5 minutes
-**Checkpoint:** SC_AGT_004 (Operational Completeness)
-**Mode:** Autonomous
+**Duração:** 2-5 minutos
+**Checkpoint:** SC_AGT_004 (Completude Operacional)
+**Modo:** Autônomo
 
-### Step 6.1: Validate File Existence
+### Passo 6.1: Validar a Existência dos Arquivos
 
-**Actions:**
+**Ações:**
 
 ```yaml
 validate_files_exist:
@@ -926,9 +927,9 @@ validate_files_exist:
     fix: 'Create the file or remove from command_loader'
 ```
 
-### Step 6.2: Validate Task Quality
+### Passo 6.2: Validar a Qualidade da Task
 
-**Actions:**
+**Ações:**
 
 ```yaml
 validate_task_quality:
@@ -949,9 +950,9 @@ validate_task_quality:
   threshold: 'Average >= 0.75 across all tasks'
 ```
 
-### Step 6.3: Calculate Maturity Score
+### Passo 6.3: Calcular a Pontuação de Maturidade
 
-**Actions:**
+**Ações:**
 
 ```yaml
 calculate_maturity:
@@ -970,22 +971,22 @@ calculate_maturity:
 
   levels:
     - range: '0-4'
-      level: 'Nivel 1 — Persona only (decorativo)'
+      level: 'Nível 1 — Apenas persona (decorativo)'
       verdict: 'FAIL - Agente incompleto'
 
     - range: '4-7'
-      level: 'Nivel 2 — Frameworks (funcional mas inconsistente)'
+      level: 'Nível 2 — Frameworks (funcional mas inconsistente)'
       verdict: 'CONDITIONAL - Pode publicar com plano de melhoria'
 
     - range: '7-9'
-      level: 'Nivel 3 — Completo (deterministico)'
+      level: 'Nível 3 — Completo (determinístico)'
       verdict: 'PASS - Agente operacional'
 
     - range: '9-10'
-      level: 'Nivel 3+ — Completo + integrado'
-      verdict: 'EXCELLENT - Agente producao'
+      level: 'Nível 3+ — Completo + integrado'
+      verdict: 'EXCELLENT - Agente produção'
 
-  target: '>= 7.0 (Nivel 3)'
+  target: '>= 7.0 (Nível 3)'
 
   veto_condition:
     - condition: 'Score < 4.0'
@@ -993,9 +994,9 @@ calculate_maturity:
       reason: 'Nivel 1 agents are decorative, not functional'
 ```
 
-### Step 6.4: Final Decision
+### Passo 6.4: Decisão Final
 
-**Actions:**
+**Ações:**
 
 ```yaml
 final_decision:
@@ -1019,27 +1020,27 @@ final_decision:
     - max_retries: 2
 ```
 
-**Output (PHASE 6):**
+**Saída (FASE 6):**
 
 ```yaml
 phase_6_output:
   files_validated: N
   tasks_quality_avg: 0.X
   maturity_score: X.X/10
-  maturity_level: 'Nivel N'
+  maturity_level: 'Nível N'
   decision: 'PASS | CONDITIONAL | FAIL'
 ```
 
 ---
 
-## PHASE 7: HANDOFF
+## FASE 7: HANDOFF
 
-**Duration:** < 1 minute
-**Mode:** Interactive
+**Duração:** < 1 minuto
+**Modo:** Interativo
 
-### Step 7.1: Present Agent Summary
+### Passo 7.1: Apresentar o Resumo do Agente
 
-**Actions:**
+**Ações:**
 
 ```yaml
 present_summary:
@@ -1065,9 +1066,9 @@ present_summary:
     - '*review-copy - Review existing copy'
 ```
 
-### Step 7.2: Document Next Steps
+### Passo 7.2: Documentar os Próximos Passos
 
-**Actions:**
+**Ações:**
 
 ```yaml
 next_steps:
@@ -1092,73 +1093,73 @@ next_steps:
 
 ---
 
-## Outputs
+## Saídas
 
-| Output         | Location                                                   | Description                                   |
-| -------------- | ---------------------------------------------------------- | --------------------------------------------- |
-| Agent File     | `squads/{pack_name}/agents/{agent_id}.md`                  | Complete agent definition with command_loader |
-| Task Files     | `squads/{pack_name}/tasks/{command}-workflow.md`           | Step-by-step per command                      |
-| Template Files | `squads/{pack_name}/templates/{output}-tmpl.md`            | Output format per type                        |
-| Checklist      | `squads/{pack_name}/checklists/{agent_id}-quality-gate.md` | Validation with veto conditions               |
-| Research File  | `docs/research/{specialist_slug}-{purpose}-research.md`    | Research documentation                        |
-| Updated README | `squads/{pack_name}/README.md`                             | Agent added to list                           |
-| Updated Config | `squads/{pack_name}/config.yaml`                           | Agent registered                              |
+| Saída          | Localização                                                | Descrição                                       |
+| -------------- | ---------------------------------------------------------- | ----------------------------------------------- |
+| Arquivo do Agente | `squads/{pack_name}/agents/{agent_id}.md`               | Definição completa do agente com command_loader |
+| Arquivos de Task | `squads/{pack_name}/tasks/{command}-workflow.md`         | Passo a passo por comando                       |
+| Arquivos de Template | `squads/{pack_name}/templates/{output}-tmpl.md`      | Formato de saída por tipo                       |
+| Checklist      | `squads/{pack_name}/checklists/{agent_id}-quality-gate.md` | Validação com condições de veto                 |
+| Arquivo de Pesquisa | `docs/research/{specialist_slug}-{purpose}-research.md` | Documentação da pesquisa                        |
+| README Atualizado | `squads/{pack_name}/README.md`                          | Agente adicionado à lista                       |
+| Config Atualizada | `squads/{pack_name}/config.yaml`                        | Agente registrado                               |
 
 ---
 
-## Validation Criteria (All Must Pass)
+## Critérios de Validação (Todos Devem Passar)
 
-### Structure
+### Estrutura
 
-- [ ] Agent file created at correct location
-- [ ] YAML block is valid
-- [ ] All 6 levels present (including Level 0: command_loader)
+- [ ] Arquivo do agente criado na localização correta
+- [ ] O bloco YAML é válido
+- [ ] Todos os 6 níveis presentes (incluindo o Nível 0: command_loader)
 
-### Content
+### Conteúdo
 
-- [ ] Lines >= 300
-- [ ] voice_dna complete with vocabulary
+- [ ] Linhas >= 300
+- [ ] voice_dna completo com vocabulário
 - [ ] output_examples >= 3
 - [ ] anti_patterns.never_do >= 5
-- [ ] completion_criteria defined
-- [ ] handoff_to defined
+- [ ] completion_criteria definido
+- [ ] handoff_to definido
 
-### Operational Infrastructure
+### Infraestrutura Operacional
 
-- [ ] command_loader maps ALL operational commands
-- [ ] CRITICAL_LOADER_RULE present in agent
-- [ ] Task file exists for each operational command
-- [ ] Each task file has steps (min 3) + veto conditions (min 1)
-- [ ] Template exists for each structured output type
-- [ ] At least 1 checklist with blocking veto conditions
-- [ ] dependencies list matches command_loader.requires
+- [ ] command_loader mapeia TODOS os comandos operacionais
+- [ ] CRITICAL_LOADER_RULE presente no agente
+- [ ] Arquivo de task existe para cada comando operacional
+- [ ] Cada arquivo de task tem passos (mín. 3) + condições de veto (mín. 1)
+- [ ] Template existe para cada tipo de saída estruturada
+- [ ] Pelo menos 1 checklist com condições de veto bloqueantes
+- [ ] A lista de dependencies corresponde a command_loader.requires
 
-### Quality
+### Qualidade
 
-- [ ] SC_AGT_001 score >= 7.0
-- [ ] SC_AGT_004 score >= 7.0 (maturity)
-- [ ] Research traceable
-- [ ] Tier assigned
+- [ ] Pontuação SC_AGT_001 >= 7.0
+- [ ] Pontuação SC_AGT_004 >= 7.0 (maturidade)
+- [ ] Pesquisa rastreável
+- [ ] Tier atribuído
 
-### Integration
+### Integração
 
-- [ ] README.md updated
-- [ ] config.yaml updated
-- [ ] All dependency files exist
-
----
-
-## Heuristics Reference
-
-| Heuristic ID | Name                     | Where Applied | Blocking |
-| ------------ | ------------------------ | ------------- | -------- |
-| SC_RES_002   | Agent Research Quality   | Phase 1       | Yes      |
-| SC_AGT_001   | Agent Quality Gate       | Phase 4       | Yes      |
-| SC_AGT_004   | Operational Completeness | Phase 6       | Yes      |
+- [ ] README.md atualizado
+- [ ] config.yaml atualizado
+- [ ] Todos os arquivos de dependência existem
 
 ---
 
-## Error Handling
+## Referência de Heurísticas
+
+| ID da Heurística | Nome                     | Onde Aplicada | Bloqueante |
+| ---------------- | ------------------------ | ------------- | ---------- |
+| SC_RES_002       | Qualidade da Pesquisa do Agente | Fase 1 | Sim        |
+| SC_AGT_001       | Quality Gate do Agente   | Fase 4        | Sim        |
+| SC_AGT_004       | Completude Operacional   | Fase 6        | Sim        |
+
+---
+
+## Tratamento de Erros
 
 ```yaml
 error_handling:
@@ -1179,20 +1180,20 @@ error_handling:
 
 ---
 
-## Integration with AIOX
+## Integração com o AIOX
 
-This task creates agents that:
+Esta task cria agentes que:
 
-- Follow AIOX agent definition standards (6 levels)
-- Can be activated with @pack:agent-id syntax
-- Integrate with memory layer
-- Support standard command patterns (`*help`, `*exit`, etc.)
-- Work within squad structure
-- Pass quality gate SC_AGT_001
+- Seguem os padrões de definição de agente do AIOX (6 níveis)
+- Podem ser ativados com a sintaxe @pack:agent-id
+- Integram-se à camada de memória
+- Suportam os padrões de comando padrão (`*help`, `*exit`, etc.)
+- Funcionam dentro da estrutura de squad
+- Passam no quality gate SC_AGT_001
 
 ---
 
-_Task Version: 3.0_
-_Last Updated: 2026-02-04_
-_Lines: 1100+_
-_Philosophy: "Se o processo de criacao PERMITE criar agente incompleto, agente incompleto vai ser criado."_
+_Versão da Task: 3.0_
+_Última Atualização: 2026-02-04_
+_Linhas: 1100+_
+_Filosofia: "Se o processo de criação PERMITE criar agente incompleto, agente incompleto vai ser criado."_

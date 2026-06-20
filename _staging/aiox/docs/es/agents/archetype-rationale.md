@@ -564,3 +564,10 @@ greeting = `${icon} ${name} el ${role} (${zodiac_symbol} ${archetype}) listo par
 **Autor:** @ux-design-expert (Uma) + @architect (Aria)
 **Fecha de Revision:** 2025-01-14
 **Proxima Revision:** Despues de implementacion de Story 6.1.2 (validar suposiciones)
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`Dex          # De persona-definitions.yaml`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

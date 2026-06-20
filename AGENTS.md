@@ -53,3 +53,12 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 3. **Nunca exponha segredos** (.env, chaves). Credenciais vivem no Infisical.
 4. **Confirme antes de alterar/criar** arquivos ou rodar comandos que mudam algo.
 5. **Seja direto** (muitas respostas saem por WhatsApp).
+6. **Encerre sempre aprendendo.** Ao final de toda sessão com trabalho, rode o Ritual de Encerramento (abaixo).
+
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+**Todo agente da Kolden, sempre que for acionado, ao final da sessão precisa aprender algo.**
+Antes de encerrar uma sessão em que houve trabalho (qualquer escrita, decisão ou descoberta):
+acione a habilidade **`ritual-de-encerramento`** — reflita sobre a sessão, extraia as lições
+verificadas e grave-as na sua memória própria (`MEMORY.md`). Nunca encerre sem ter aprendido
+e salvo algo. O reflexo `Stop` (`encerramento-aprendizado`) dispara isso automaticamente, mas
+a obrigação é do agente. A habilidade é a fonte única do processo: `.claude/skills/ritual-de-encerramento/SKILL.md`.
