@@ -1,35 +1,35 @@
 # Task: DB Env Check
 
-**Purpose**: Validate environment for DB operations without leaking secrets
+**Propósito**: Validar o ambiente para operações de DB sem vazar segredos
 
 **Elicit**: false
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro em log
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pré-Voo (Pre-Flight) - Planejamento Abrangente Antecipado
+- Fase de análise da tarefa (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: dbEnvCheck()
@@ -75,9 +75,9 @@ atomic_layer: Strategy
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -93,9 +93,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
@@ -111,9 +111,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de aprovação/reprovação para a conclusão da task
 
 **Checklist:**
 
@@ -129,57 +129,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** supabase
-  - **Purpose:** PostgreSQL database connection via Supabase client
-  - **Source:** @supabase/supabase-js
+- **Ferramenta:** supabase
+  - **Propósito:** Conexão com banco de dados PostgreSQL via cliente Supabase
+  - **Origem:** @supabase/supabase-js
 
-- **Tool:** query-validator
-  - **Purpose:** SQL query syntax validation
-  - **Source:** .aiox-core/utils/db-query-validator.js
+- **Ferramenta:** query-validator
+  - **Propósito:** Validação de sintaxe de queries SQL
+  - **Origem:** .aiox-core/utils/db-query-validator.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** db-query.js
-  - **Purpose:** Execute PostgreSQL queries with error handling via Supabase
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/db-query.js
+  - **Propósito:** Executar queries PostgreSQL com tratamento de erros via Supabase
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/db-query.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Connection Failed
-   - **Cause:** Unable to connect to Neo4j database
-   - **Resolution:** Check connection string, credentials, network
-   - **Recovery:** Retry with exponential backoff (max 3 attempts)
+1. **Erro:** Conexão Falhou
+   - **Causa:** Não foi possível conectar ao banco de dados Neo4j
+   - **Resolução:** Verificar a string de conexão, credenciais, rede
+   - **Recuperação:** Tentar novamente com backoff exponencial (máximo de 3 tentativas)
 
-2. **Error:** Query Syntax Error
-   - **Cause:** Invalid Cypher query syntax
-   - **Resolution:** Validate query syntax before execution
-   - **Recovery:** Return detailed syntax error, suggest fix
+2. **Erro:** Erro de Sintaxe na Query
+   - **Causa:** Sintaxe de query Cypher inválida
+   - **Resolução:** Validar a sintaxe da query antes da execução
+   - **Recuperação:** Retornar erro de sintaxe detalhado, sugerir correção
 
-3. **Error:** Transaction Rollback
-   - **Cause:** Query violates constraints or timeout
-   - **Resolution:** Review query logic and constraints
-   - **Recovery:** Automatic rollback, preserve data integrity
+3. **Erro:** Rollback de Transação
+   - **Causa:** A query viola restrições ou atinge timeout
+   - **Resolução:** Revisar a lógica da query e as restrições
+   - **Recuperação:** Rollback automático, preservar a integridade dos dados
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-20 min (estimated)
@@ -187,12 +187,12 @@ cost_estimated: $0.003-0.015
 token_usage: ~2,000-8,000 tokens
 ```
 
-**Optimization Notes:**
-- Iterative analysis with depth limits; cache intermediate results; batch similar operations
+**Notas de Otimização:**
+- Análise iterativa com limites de profundidade; armazenar em cache resultados intermediários; agrupar operações similares em lote
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -208,16 +208,16 @@ updated_at: 2025-11-17
 ---
 
 
-## Steps
+## Passos
 
-### 1. Validate Required Environment Variables
+### 1. Validar as Variáveis de Ambiente Obrigatórias
 
 ```bash
 test -n "$SUPABASE_DB_URL" || { echo "❌ Missing SUPABASE_DB_URL"; exit 1; }
 echo "✓ SUPABASE_DB_URL present (redacted)"
 ```
 
-### 2. Check SSL Mode and Pooler
+### 2. Verificar o Modo SSL e o Pooler
 
 ```bash
 case "$SUPABASE_DB_URL" in
@@ -228,7 +228,7 @@ esac
 echo "$SUPABASE_DB_URL" | grep -q "pooler" && echo "✓ Using pooler" || echo "⚠️ Consider pooler host"
 ```
 
-### 3. Check Client Versions
+### 3. Verificar as Versões do Cliente
 
 ```bash
 psql --version || { echo "❌ psql missing"; exit 1; }
@@ -236,7 +236,7 @@ pg_dump --version || { echo "❌ pg_dump missing"; exit 1; }
 echo "✓ PostgreSQL client tools available"
 ```
 
-### 4. Check Server Connectivity
+### 4. Verificar a Conectividade com o Servidor
 
 ```bash
 PSQL="psql \"$SUPABASE_DB_URL\" -v ON_ERROR_STOP=1 -t -c"
@@ -245,16 +245,16 @@ eval $PSQL "SELECT version();" > /dev/null && echo "✓ Database connection succ
 
 ---
 
-## Success Criteria
+## Critérios de Sucesso
 
-- All environment variables present
-- PostgreSQL client tools installed
-- Database connection successful
-- SSL and pooler configuration validated
+- Todas as variáveis de ambiente presentes
+- Ferramentas de cliente do PostgreSQL instaladas
+- Conexão com o banco de dados bem-sucedida
+- Configuração de SSL e pooler validada
 
-## Error Handling
+## Tratamento de Erros
 
-If any check fails:
-1. Show clear error message
-2. Provide remediation steps
-3. Exit with non-zero status
+Se qualquer verificação falhar:
+1. Exibir mensagem de erro clara
+2. Fornecer passos de remediação
+3. Sair com status diferente de zero

@@ -1,12 +1,12 @@
-# Browser Console Check Task
+# Task de Verificação do Console do Navegador
 
-Automated browser console error detection for frontend changes.
+Detecção automatizada de erros no console do navegador para mudanças de frontend.
 
-**Absorbed from:** Auto-Claude PR Review Phase 4.2 - Browser Console Check
+**Absorvido de:** Auto-Claude PR Review Phase 4.2 - Browser Console Check
 
 ---
 
-## Task Definition
+## Definição da Task
 
 ```yaml
 task: qaBrowserConsoleCheck()
@@ -26,7 +26,7 @@ outputs:
 
 ---
 
-## What This Checks
+## O Que Isto Verifica
 
 ```yaml
 console_checks:
@@ -80,7 +80,7 @@ console_checks:
 
 ## Workflow
 
-### Phase 1: Detect Pages to Test
+### Fase 1: Detectar Páginas para Testar
 
 ```yaml
 detect_pages:
@@ -99,7 +99,7 @@ detect_pages:
       - Use --pages parameter
 ```
 
-### Phase 2: Start Dev Server
+### Fase 2: Iniciar o Servidor de Desenvolvimento
 
 ```yaml
 start_server:
@@ -116,7 +116,7 @@ start_server:
   timeout: 60000ms
 ```
 
-### Phase 3: Visit Each Page
+### Fase 3: Visitar Cada Página
 
 ```yaml
 visit_pages:
@@ -136,7 +136,7 @@ visit_pages:
     - failed network requests
 ```
 
-### Phase 4: Analyze Results
+### Fase 4: Analisar Resultados
 
 ```yaml
 analyze:
@@ -151,7 +151,7 @@ analyze:
     - Check against ignore list
 ```
 
-### Phase 5: Generate Report
+### Fase 5: Gerar Relatório
 
 ```yaml
 report:
@@ -165,13 +165,13 @@ report:
 
 ---
 
-## Command
+## Comando
 
 ```
 *console-check {story-id} [--pages /path1,/path2] [--url http://localhost:3000]
 ```
 
-**Examples:**
+**Exemplos:**
 
 ```bash
 *console-check 6.3
@@ -181,7 +181,7 @@ report:
 
 ---
 
-## Console Report Format
+## Formato do Relatório de Console
 
 ```json
 {
@@ -267,7 +267,7 @@ ignore_patterns:
 
 ---
 
-## Integration with QA Review
+## Integração com a Revisão de QA
 
 ```yaml
 integration:
@@ -288,7 +288,7 @@ integration:
 
 ---
 
-## Playwright Integration
+## Integração com Playwright
 
 ```yaml
 playwright_script:
@@ -328,7 +328,7 @@ playwright_script:
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 metadata:

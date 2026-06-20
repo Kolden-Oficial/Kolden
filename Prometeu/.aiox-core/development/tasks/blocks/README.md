@@ -1,7 +1,7 @@
 # Sistema de Blocos de Task do AIOX
 
-> **Version:** 1.0.0
-> **Purpose:** Componentes atômicos e reutilizáveis para workflows de task
+> **Versão:** 1.0.0
+> **Propósito:** Componentes atômicos e reutilizáveis para workflows de task
 
 ## Visão Geral
 
@@ -74,31 +74,31 @@ Cada arquivo de bloco segue esta estrutura:
 # Block: {Name}
 
 > **Block ID:** `{kebab-case-id}`
-> **Version:** {semver}
-> **Type:** Reusable Include Block
+> **Versão:** {semver}
+> **Tipo:** Bloco de Include Reutilizável
 
-## Purpose
+## Propósito
 {Descrição em uma linha}
 
-## Input
+## Entrada
 {Tabela de parâmetros com tipos, padrões, descrições}
 
-## Output
+## Saída
 {Tabela de campos de saída com tipos e descrições}
 
-## Execution Steps
+## Passos de Execução
 {YAML ou pseudocódigo definindo os passos}
 
-## Usage
+## Uso
 {Exemplos de como incluir o bloco}
 
-## Files Accessed
+## Arquivos Acessados
 {Tabela de arquivos que o bloco lê/escreve}
 
-## Error Handling
+## Tratamento de Erros
 {Tabela de erros e comportamentos}
 
-## Notes
+## Notas
 {Contexto adicional}
 ```
 

@@ -266,3 +266,10 @@ Faça estas perguntas sobre cada métrica do seu dashboard:
 - **"Estamos medindo o cluster de audiência certo?"** — Métricas See para audiências See, métricas Do para audiências Do
 
 Se mais de 30% do seu dashboard falhar nesses testes, queime-o e comece de novo. Eu imploro!
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`avinash-kaushik`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

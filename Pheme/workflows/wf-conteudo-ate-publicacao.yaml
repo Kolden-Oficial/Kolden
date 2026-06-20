@@ -1,0 +1,115 @@
+workflow:
+  id: wf-conteudo-ate-publicacao
+  name: "Conteúdo até Publicação"
+  version: "1.0.0"
+  description: |
+    Workflow de ponta a ponta do squad Pheme: da estratégia à publicação real e à
+    leitura de métricas. A Social Chief (Pheme) faz a triagem do objetivo/rede,
+    o estrategista define pilar/ângulo/gancho, o especialista de formato cria a
+    peça, ela passa pela revisão de marca e pelo checklist de qualidade, o
+    publicador publica/agenda (Postiz/GHL) e o growth-analyst mede e propõe o
+    próximo teste rumo aos 100k.
+  trigger: "*conteudo-ate-publicacao"
+  entry_agent: social-chief
+  estimated_duration: "20-45 minutes"
+  type: sequential
+  sequence:
+    - agent: social-chief
+      action: diagnose-and-route
+      creates: briefing
+    - agent: content-strategist
+      action: pilar-angulo-gancho
+      creates: brief_criativo
+    - agent: "{especialista_de_formato}"
+      action: criar-peca
+      creates: peca_rascunho
+    - agent: social-chief
+      action: revisar-marca-e-qualidade
+      creates: peca_aprovada
+    - agent: publisher
+      action: publicar
+      creates: confirmacao_publicacao
+    - agent: growth-analyst
+      action: medir
+      creates: analise_e_proximo_teste
+
+phases:
+  - id: phase_0
+    name: "Triagem & Roteamento"
+    agent: social-chief
+    task: plano-de-conteudo.md
+    description: "Pheme identifica objetivo, rede e formato; roteia para o especialista certo e define o briefing (persona Kolden, pilar, CTA, restrições)."
+    outputs:
+      - briefing: "markdown"
+      - especialista_de_formato: "agent-id"
+    checkpoint:
+      gate: "Objetivo + rede + formato + especialista definidos"
+      veto: "Pedido ambíguo — pedir esclarecimento antes de prosseguir"
+
+  - id: phase_1
+    name: "Estratégia (Pilar/Ângulo/Gancho)"
+    agent: content-strategist
+    task: plano-de-conteudo.md
+    depends_on: [phase_0]
+    description: "Estrategista define pilar, ângulo e 3+ ganchos testáveis para a peça."
+    outputs:
+      - brief_criativo: "markdown"
+    checkpoint:
+      gate: "Pilar + ângulo + gancho recomendado presentes"
+      veto: "Sem gancho explícito — não avançar para produção"
+
+  - id: phase_2
+    name: "Criação da Peça"
+    agent: "{especialista_de_formato}"
+    task: "{tarefa_por_formato}"
+    depends_on: [phase_1]
+    description: "Especialista cria a peça. Tarefa selecionada por formato: roteiro-reel.md (vídeo curto), carrossel.md, thread.md (LinkedIn/X), pin.md (Pinterest), ou roteiro de YouTube."
+    outputs:
+      - peca_rascunho: "markdown"
+    checkpoint:
+      gate: "Peça completa com todas as seções do formato"
+      veto: "Peça incompleta ou fora do briefing"
+
+  - id: phase_3
+    name: "Revisão de Marca & Qualidade"
+    agent: social-chief
+    task: ../checklists/qualidade-conteudo.md
+    depends_on: [phase_2]
+    description: "Pheme aplica o checklist de qualidade e a lente de marca Kolden (Aglaia). Aprova ou devolve para ajuste."
+    outputs:
+      - peca_aprovada: "markdown"
+      - veredito: "string"
+    checkpoint:
+      gate: "Todos os itens CRÍTICOS [x] + alinhamento de marca"
+      veto: "Qualquer item CRÍTICO reprovado — devolver ao especialista"
+
+  - id: phase_4
+    name: "Publicação"
+    agent: publisher
+    task: publicar.md
+    depends_on: [phase_3]
+    description: "Publicador formata por rede, mostra preview, confirma e publica/agenda via Postiz (ou GHL) no melhor horário. Tokens via Infisical."
+    outputs:
+      - confirmacao_publicacao: "markdown"
+    checkpoint:
+      gate: "Preview confirmado + publicado/agendado + report (conta/horário/link)"
+      veto: "Sem aprovação explícita — não publicar"
+
+  - id: phase_5
+    name: "Métricas & Próximo Teste"
+    agent: growth-analyst
+    task: analise-metricas.md
+    depends_on: [phase_4]
+    description: "Growth-analyst coleta métricas, classifica dobrar/iterar/matar e define o próximo experimento, atualizando o roadmap até 100k."
+    outputs:
+      - analise_e_proximo_teste: "markdown"
+    checkpoint:
+      gate: "Análise + próximo teste de 1 variável definidos"
+      veto: "Sem próximo teste acionável"
+
+completion_criteria:
+  - "Objetivo diagnosticado e especialista roteado"
+  - "Peça criada com gancho forte pelo especialista certo"
+  - "Aprovada no checklist de qualidade e na marca Kolden"
+  - "Publicada/agendada via Postiz ou GHL com confirmação"
+  - "Métricas lidas e próximo teste definido rumo aos 100k"

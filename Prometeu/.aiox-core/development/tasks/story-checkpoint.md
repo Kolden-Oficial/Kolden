@@ -187,7 +187,7 @@ steps:
 action: save_session_state
 steps:
   1_save_state:
-    description: "Persist workflow state"
+    description: "Persistir o estado do workflow"
     location: ".aiox/workflow-state/${story_id}-state.yaml"
     content:
       workflow_id: development-cycle
@@ -200,123 +200,123 @@ steps:
       accumulated_context: {}
 
   2_confirm:
-    description: "Confirm state saved"
+    description: "Confirmar que o estado foi salvo"
     message: |
-      ✅ Workflow state saved!
+      ✅ Estado do workflow salvo!
 
-      To resume later, run:
+      Para retomar depois, execute:
         *workflow resume development-cycle
 
-      Or activate @po and run:
+      Ou ative o @po e execute:
         *validate-story-draft ${next_story}
 
   3_exit:
-    description: "Exit workflow"
+    description: "Sair do workflow"
     status: paused
 ```
 
-### REVIEW Action: Show Detailed Summary
+### Ação REVIEW: Mostrar Resumo Detalhado
 
 ```yaml
 action: show_detailed_summary
 steps:
   1_gather_data:
-    description: "Collect all changes"
+    description: "Coletar todas as mudanças"
     data:
-      - Git diff since workflow start
-      - All files created/modified/deleted
-      - Test results
-      - Quality gate findings
-      - PR details
+      - Git diff desde o início do workflow
+      - Todos os arquivos criados/modificados/excluídos
+      - Resultados dos testes
+      - Achados do quality gate
+      - Detalhes do PR
 
   2_display:
-    description: "Show detailed summary"
+    description: "Mostrar resumo detalhado"
     format: |
       ═══════════════════════════════════════════════════════════════════
-                         📊 DETAILED SUMMARY
+                         📊 RESUMO DETALHADO
       ═══════════════════════════════════════════════════════════════════
 
       Story: ${story_file}
-      Duration: ${duration}
+      Duração: ${duration}
 
       ─────────────────────────────────────────────────────────────────────
-      📁 FILES CHANGED
+      📁 ARQUIVOS ALTERADOS
       ─────────────────────────────────────────────────────────────────────
 
-      Created:
+      Criados:
       ${files_created.map(f => '  + ' + f).join('\n')}
 
-      Modified:
+      Modificados:
       ${files_modified.map(f => '  ~ ' + f).join('\n')}
 
       ─────────────────────────────────────────────────────────────────────
-      🧪 TEST RESULTS
+      🧪 RESULTADOS DOS TESTES
       ─────────────────────────────────────────────────────────────────────
 
-      Passed: ${test_results.passed}
-      Failed: ${test_results.failed}
-      Skipped: ${test_results.skipped}
+      Passaram: ${test_results.passed}
+      Falharam: ${test_results.failed}
+      Pulados: ${test_results.skipped}
 
       ─────────────────────────────────────────────────────────────────────
       ✅ QUALITY GATE
       ─────────────────────────────────────────────────────────────────────
 
-      Verdict: ${review_result.verdict}
-      Score: ${review_result.score}/100
+      Veredito: ${review_result.verdict}
+      Pontuação: ${review_result.score}/100
 
-      Findings:
+      Achados:
       ${review_result.findings.map(f => '  • ' + f).join('\n')}
 
       ═══════════════════════════════════════════════════════════════════
 
   3_return:
-    description: "Return to checkpoint"
-    action: "Re-display checkpoint options"
+    description: "Retornar ao checkpoint"
+    action: "Re-exibir as opções do checkpoint"
 ```
 
-### ABORT Action: Stop Epic
+### Ação ABORT: Parar o Epic
 
 ```yaml
 action: abort_epic
 steps:
   1_confirm:
-    description: "Confirm abort"
+    description: "Confirmar o abort"
     prompt: |
-      ⚠️ Are you sure you want to abort the epic?
+      ⚠️ Tem certeza de que quer abortar o epic?
 
-      This will:
-      - Stop the development cycle
-      - Save current progress
-      - NOT affect completed stories
+      Isto vai:
+      - Parar o ciclo de desenvolvimento
+      - Salvar o progresso atual
+      - NÃO afetar as stories concluídas
 
-      Abort? (yes/no)
+      Abortar? (yes/no)
 
   2_save_final_state:
-    description: "Save abort state"
+    description: "Salvar o estado de abort"
     location: ".aiox/workflow-state/${story_id}-state.yaml"
     status: aborted
 
   3_report:
-    description: "Report abort"
+    description: "Reportar o abort"
     message: |
-      ⛔ Epic aborted.
+      ⛔ Epic abortado.
 
-      Progress saved. Completed stories are unaffected.
+      Progresso salvo. As stories concluídas não são afetadas.
 
-      To review progress:
+      Para revisar o progresso:
         *backlog-summary
 
-      To restart:
+      Para reiniciar:
         *workflow development-cycle ${next_incomplete_story}
 
   4_exit:
-    description: "Exit workflow"
+    description: "Sair do workflow"
     status: aborted
 ```
 
 ---
 
-## Output
+## Saída
 
 ```yaml
 output:
@@ -327,27 +327,34 @@ output:
   next_story:
     type: path
     optional: true
-    description: "Path to next story (only if GO)"
+    description: "Caminho para a próxima story (somente se GO)"
 
   state_file:
     type: path
     optional: true
-    description: "Path to saved state file (if PAUSE or ABORT)"
+    description: "Caminho para o arquivo de estado salvo (se PAUSE ou ABORT)"
 ```
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-| Error | Handling |
+| Erro | Tratamento |
 |-------|----------|
-| No next story found | Display "Epic complete" message |
-| Next story not ready | Display warning, allow manual selection |
-| State save failed | Retry 3x, then warn user |
-| User timeout | Default to PAUSE after 30 minutes |
+| Nenhuma próxima story encontrada | Exibir a mensagem "Epic concluído" |
+| Próxima story não está pronta | Exibir aviso, permitir seleção manual |
+| Falha ao salvar o estado | Tentar novamente 3x, depois avisar o usuário |
+| Timeout do usuário | Padrão para PAUSE após 30 minutos |
 
 ---
 
-## Related
+## Relacionados
 
-- **Workflow:** `d
+- **Workflow:** `development-cycle.yaml`
+- **Módulo:** `workflow-executor.js`
+- **Story:** 11.3 (Development Cycle Workflow)
+- **Dependências:** Story 11.1 (Executor Assignment), Story 11.2 (Terminal Spawning)
+
+---
+
+*Task criada por @dev (Dex) para a Story 11.3*

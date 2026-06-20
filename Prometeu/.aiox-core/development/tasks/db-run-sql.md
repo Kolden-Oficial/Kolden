@@ -1,35 +1,35 @@
-# Task: Run SQL
+# Task: Executar SQL
 
-**Purpose**: Execute SQL file or inline SQL with transaction safety and timing
+**Propósito**: Executar arquivo SQL ou SQL inline com segurança transacional e medição de tempo
 
 **Elicit**: true
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha o modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Balanceado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Completo Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: dbRunSql()
@@ -42,19 +42,19 @@ atomic_layer: Config
   tipo: string
   origem: User Input
   obrigatório: true
-  validação: Valid SQL query
+  validação: Query SQL válida
 
 - campo: params
   tipo: object
   origem: User Input
   obrigatório: false
-  validação: Query parameters
+  validação: Parâmetros da query
 
 - campo: connection
   tipo: object
   origem: config
   obrigatório: true
-  validação: Valid PostgreSQL connection via Supabase
+  validação: Conexão PostgreSQL válida via Supabase
 
 **Saída:**
 - campo: query_result

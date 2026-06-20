@@ -1,29 +1,29 @@
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro em log
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução sem ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: createBrownfieldStory()
@@ -69,9 +69,9 @@ atomic_layer: Organism
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -87,9 +87,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
 
 **Checklist:**
 
@@ -105,9 +105,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de aprovação/reprovação para a conclusão da task
 
 **Checklist:**
 
@@ -123,57 +123,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** component-generator
-  - **Purpose:** Generate new components from templates
-  - **Source:** .aiox-core/scripts/component-generator.js
+- **Ferramenta:** component-generator
+  - **Propósito:** Gerar novos componentes a partir de templates
+  - **Origem:** .aiox-core/scripts/component-generator.js
 
-- **Tool:** file-system
-  - **Purpose:** File creation and validation
-  - **Source:** Node.js fs module
+- **Ferramenta:** file-system
+  - **Propósito:** Criação e validação de arquivos
+  - **Origem:** Node.js fs module
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** create-component.js
-  - **Purpose:** Component creation workflow
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/create-component.js
+  - **Propósito:** Workflow de criação de componente
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/create-component.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Resource Already Exists
-   - **Cause:** Target file/resource already exists in system
-   - **Resolution:** Use force flag or choose different name
-   - **Recovery:** Prompt user for alternative name or force overwrite
+1. **Erro:** Recurso Já Existe
+   - **Causa:** O arquivo/recurso de destino já existe no sistema
+   - **Resolução:** Use a flag force ou escolha um nome diferente
+   - **Recuperação:** Solicitar ao usuário um nome alternativo ou forçar a sobrescrita
 
-2. **Error:** Invalid Input
-   - **Cause:** Input name contains invalid characters or format
-   - **Resolution:** Validate input against naming rules (kebab-case, lowercase, no special chars)
-   - **Recovery:** Sanitize input or reject with clear error message
+2. **Erro:** Entrada Inválida
+   - **Causa:** O nome de entrada contém caracteres ou formato inválidos
+   - **Resolução:** Validar a entrada contra as regras de nomenclatura (kebab-case, minúsculas, sem caracteres especiais)
+   - **Recuperação:** Sanitizar a entrada ou rejeitar com uma mensagem de erro clara
 
-3. **Error:** Permission Denied
-   - **Cause:** Insufficient permissions to create resource
-   - **Resolution:** Check file system permissions, run with elevated privileges if needed
-   - **Recovery:** Log error, notify user, suggest permission fix
+3. **Erro:** Permissão Negada
+   - **Causa:** Permissões insuficientes para criar o recurso
+   - **Resolução:** Verificar as permissões do sistema de arquivos, executar com privilégios elevados se necessário
+   - **Recuperação:** Registrar o erro em log, notificar o usuário, sugerir a correção de permissão
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-15 min (estimated)
@@ -181,8 +181,8 @@ cost_estimated: $0.003-0.010
 token_usage: ~3,000-10,000 tokens
 ```
 
-**Optimization Notes:**
-- Break into smaller workflows; implement checkpointing; use async processing where possible
+**Notas de Otimização:**
+- Quebrar em workflows menores; implementar checkpointing; usar processamento assíncrono quando possível
 
 ---
 
@@ -207,94 +207,94 @@ checklists:
   - po-master-checklist.md
 ---
 
-# Create Brownfield Story Task
+# Task Criar Story Brownfield
 
-## Purpose
+## Propósito
 
-Create detailed, implementation-ready stories for brownfield projects where traditional sharded PRD/architecture documents may not exist. This task bridges the gap between various documentation formats (document-project output, brownfield PRDs, epics, or user documentation) and executable stories for the Dev agent.
+Criar stories detalhadas e prontas para implementação para projetos brownfield, onde documentos tradicionais de PRD/arquitetura fragmentados (sharded) podem não existir. Esta task preenche a lacuna entre vários formatos de documentação (saída do document-project, PRDs brownfield, epics ou documentação do usuário) e stories executáveis para o agente Dev.
 
-## When to Use This Task
+## Quando Usar Esta Task
 
-**Use this task when:**
+**Use esta task quando:**
 
-- Working on brownfield projects with non-standard documentation
-- Stories need to be created from document-project output
-- Working from brownfield epics without full PRD/architecture
-- Existing project documentation doesn't follow AIOX v4+ structure
-- Need to gather additional context from user during story creation
+- Trabalhar em projetos brownfield com documentação não padronizada
+- As stories precisarem ser criadas a partir da saída do document-project
+- Trabalhar a partir de epics brownfield sem PRD/arquitetura completos
+- A documentação existente do projeto não seguir a estrutura do AIOX v4+
+- For necessário reunir contexto adicional do usuário durante a criação da story
 
-**Use create-next-story when:**
+**Use create-next-story quando:**
 
-- Working with properly sharded PRD and v4 architecture documents
-- Following standard greenfield or well-documented brownfield workflow
-- All technical context is available in structured format
+- Trabalhar com PRD devidamente fragmentado (sharded) e documentos de arquitetura v4
+- Seguir o workflow padrão greenfield ou brownfield bem documentado
+- Todo o contexto técnico estiver disponível em formato estruturado
 
-## Task Execution Instructions
+## Instruções de Execução da Task
 
-### 0. Documentation Context
+### 0. Contexto de Documentação
 
-Check for available documentation in this order:
+Verifique a documentação disponível nesta ordem:
 
-1. **Sharded PRD/Architecture** (docs/prd/, docs/architecture/)
-   - If found, recommend using create-next-story task instead
+1. **PRD/Arquitetura Fragmentados (Sharded)** (docs/prd/, docs/architecture/)
+   - Se encontrados, recomende usar a task create-next-story em vez desta
 
-2. **Brownfield Architecture Document** (docs/brownfield-architecture.md or similar)
-   - Created by document-project task
-   - Contains actual system state, technical debt, workarounds
+2. **Documento de Arquitetura Brownfield** (docs/brownfield-architecture.md ou similar)
+   - Criado pela task document-project
+   - Contém o estado real do sistema, dívida técnica, workarounds
 
-3. **Brownfield PRD** (docs/prd.md)
-   - May contain embedded technical details
+3. **PRD Brownfield** (docs/prd.md)
+   - Pode conter detalhes técnicos embutidos
 
-4. **Epic Files** (docs/epics/ or similar)
-   - Created by brownfield-create-epic task
+4. **Arquivos de Epic** (docs/epics/ ou similar)
+   - Criados pela task brownfield-create-epic
 
-5. **User-Provided Documentation**
-   - Ask user to specify location and format
+5. **Documentação Fornecida pelo Usuário**
+   - Pergunte ao usuário a localização e o formato
 
-### 1. Story Identification and Context Gathering
+### 1. Identificação da Story e Coleta de Contexto
 
-#### 1.1 Identify Story Source
+#### 1.1 Identificar a Origem da Story
 
-Based on available documentation:
+Com base na documentação disponível:
 
-- **From Brownfield PRD**: Extract stories from epic sections
-- **From Epic Files**: Read epic definition and story list
-- **From User Direction**: Ask user which specific enhancement to implement
-- **No Clear Source**: Work with user to define the story scope
+- **A partir do PRD Brownfield**: Extrair stories das seções de epic
+- **A partir dos Arquivos de Epic**: Ler a definição do epic e a lista de stories
+- **A partir da Direção do Usuário**: Perguntar ao usuário qual melhoria específica implementar
+- **Sem Origem Clara**: Trabalhar com o usuário para definir o escopo da story
 
-#### 1.2 Gather Essential Context
+#### 1.2 Reunir o Contexto Essencial
 
-CRITICAL: For brownfield stories, you MUST gather enough context for safe implementation. Be prepared to ask the user for missing information.
+CRÍTICO: Para stories brownfield, você DEVE reunir contexto suficiente para uma implementação segura. Esteja preparado para pedir ao usuário as informações ausentes.
 
-**Required Information Checklist:**
+**Checklist de Informações Obrigatórias:**
 
-- [ ] What existing functionality might be affected?
-- [ ] What are the integration points with current code?
-- [ ] What patterns should be followed (with examples)?
-- [ ] What technical constraints exist?
-- [ ] Are there any "gotchas" or workarounds to know about?
+- [ ] Qual funcionalidade existente pode ser afetada?
+- [ ] Quais são os pontos de integração com o código atual?
+- [ ] Quais padrões devem ser seguidos (com exemplos)?
+- [ ] Quais restrições técnicas existem?
+- [ ] Há algum "gotcha" (pegadinha) ou workaround que deve ser conhecido?
 
-If any required information is missing, list the missing information and ask the user to provide it.
+Se qualquer informação obrigatória estiver ausente, liste as informações ausentes e peça ao usuário para fornecê-las.
 
-### 2. Extract Technical Context from Available Sources
+### 2. Extrair Contexto Técnico das Fontes Disponíveis
 
-#### 2.1 From Document-Project Output
+#### 2.1 A partir da Saída do Document-Project
 
-If using brownfield-architecture.md from document-project:
+Se usar o brownfield-architecture.md do document-project:
 
-- **Technical Debt Section**: Note any workarounds affecting this story
-- **Key Files Section**: Identify files that will need modification
-- **Integration Points**: Find existing integration patterns
-- **Known Issues**: Check if story touches problematic areas
-- **Actual Tech Stack**: Verify versions and constraints
+- **Seção de Dívida Técnica**: Anotar quaisquer workarounds que afetem esta story
+- **Seção de Arquivos-Chave**: Identificar os arquivos que precisarão de modificação
+- **Pontos de Integração**: Encontrar os padrões de integração existentes
+- **Problemas Conhecidos**: Verificar se a story toca em áreas problemáticas
+- **Stack Técnico Real**: Verificar versões e restrições
 
-## Configuration Dependencies
+## Dependências de Configuração
 
-This task requires the following configuration keys from `core-config.yaml`:
+Esta task requer as seguintes chaves de configuração de `core-config.yaml`:
 
-- **`qaLocation`**: QA output directory (typically docs/qa) - Required to write quality reports
+- **`qaLocation`**: Diretório de saída de QA (tipicamente docs/qa) - Necessário para escrever os relatórios de qualidade
 
-**Loading Config:**
+**Carregando a Config:**
 ```javascript
 const yaml = require('js-yaml');
 const fs = require('fs');
@@ -306,29 +306,29 @@ const config = yaml.load(fs.readFileSync(configPath, 'utf8'));
 const qaLocation = config.qa?.qaLocation || 'docs/qa';
 ```
 
-#### 2.2 From Brownfield PRD
+#### 2.2 A partir do PRD Brownfield
 
-If using brownfield PRD:
+Se usar o PRD brownfield:
 
-- **Technical Constraints Section**: Extract all relevant constraints
-- **Integration Requirements**: Note compatibility requirements
-- **Code Organization**: Follow specified patterns
-- **Risk Assessment**: Understand potential impacts
+- **Seção de Restrições Técnicas**: Extrair todas as restrições relevantes
+- **Requisitos de Integração**: Anotar os requisitos de compatibilidade
+- **Organização do Código**: Seguir os padrões especificados
+- **Avaliação de Risco**: Entender os impactos potenciais
 
-#### 2.3 From User Documentation
+#### 2.3 A partir da Documentação do Usuário
 
-Ask the user to help identify:
+Peça ao usuário ajuda para identificar:
 
-- Relevant technical specifications
-- Existing code examples to follow
-- Integration requirements
-- Testing approaches used in the project
+- Especificações técnicas relevantes
+- Exemplos de código existentes a seguir
+- Requisitos de integração
+- Abordagens de teste usadas no projeto
 
-### 3. Story Creation with Progressive Detail Gathering
+### 3. Criação da Story com Coleta Progressiva de Detalhes
 
-#### 3.1 Create Initial Story Structure
+#### 3.1 Criar a Estrutura Inicial da Story
 
-Start with the story template, filling in what's known:
+Comece com o template de story, preenchendo o que é conhecido:
 
 ```markdown
 # Story {{Enhancement Title}}
@@ -348,165 +348,165 @@ so that {{value_delivered}}.
 - Existing System Impact: {{brief assessment}}
 ```
 
-#### 3.2 Develop Acceptance Criteria
+#### 3.2 Desenvolver os Critérios de Aceite
 
-Critical: For brownfield, ALWAYS include criteria about maintaining existing functionality
+Crítico: Para brownfield, SEMPRE inclua critérios sobre a manutenção da funcionalidade existente
 
-Standard structure:
+Estrutura padrão:
 
-1. New functionality works as specified
-2. Existing {{affected feature}} continues to work unchanged  
-3. Integration with {{existing system}} maintains current behavior
-4. No regression in {{related area}}
-5. Performance remains within acceptable bounds
+1. A nova funcionalidade funciona conforme especificado
+2. A {{affected feature}} existente continua a funcionar sem alterações  
+3. A integração com {{existing system}} mantém o comportamento atual
+4. Sem regressão em {{related area}}
+5. A performance permanece dentro de limites aceitáveis
 
-#### 3.3 Gather Technical Guidance
+#### 3.3 Reunir Orientação Técnica
 
-Critical: This is where you'll need to be interactive with the user if information is missing
+Crítico: É aqui que você precisará ser interativo com o usuário se houver informação ausente
 
-Create Dev Technical Guidance section with available information:
+Crie a seção Dev Technical Guidance com as informações disponíveis:
 
 ```markdown
 ## Dev Technical Guidance
 
 ### Existing System Context
-[Extract from available documentation]
+[Extrair da documentação disponível]
 
 ### Integration Approach
-[Based on patterns found or ask user]
+[Com base nos padrões encontrados ou perguntar ao usuário]
 
 ### Technical Constraints
-[From documentation or user input]
+[Da documentação ou da entrada do usuário]
 
 ### Missing Information
 
-Critical: List anything you couldn't find that dev will need and ask for the missing information
+Crítico: Liste qualquer coisa que você não conseguiu encontrar e que o dev precisará, e peça as informações ausentes
 
-### 4. Task Generation with Safety Checks
+### 4. Geração de Tasks com Verificações de Segurança
 
-#### 4.1 Generate Implementation Tasks
+#### 4.1 Gerar as Tasks de Implementação
 
-Based on gathered context, create tasks that:
+Com base no contexto reunido, crie tasks que:
 
-- Include exploration tasks if system understanding is incomplete
-- Add verification tasks for existing functionality
-- Include rollback considerations
-- Reference specific files/patterns when known
+- Incluam tasks de exploração se o entendimento do sistema estiver incompleto
+- Adicionem tasks de verificação para a funcionalidade existente
+- Incluam considerações de rollback
+- Referenciem arquivos/padrões específicos quando conhecidos
 
-Example task structure for brownfield:
+Exemplo de estrutura de task para brownfield:
 
 ```markdown
 ## Tasks / Subtasks
 
-- [ ] Task 1: Analyze existing {{component/feature}} implementation
-  - [ ] Review {{specific files}} for current patterns
-  - [ ] Document integration points
-  - [ ] Identify potential impacts
+- [ ] Task 1: Analisar a implementação existente de {{component/feature}}
+  - [ ] Revisar {{specific files}} em busca dos padrões atuais
+  - [ ] Documentar os pontos de integração
+  - [ ] Identificar os impactos potenciais
 
-- [ ] Task 2: Implement {{new functionality}}
-  - [ ] Follow pattern from {{example file}}
-  - [ ] Integrate with {{existing component}}
-  - [ ] Maintain compatibility with {{constraint}}
+- [ ] Task 2: Implementar {{new functionality}}
+  - [ ] Seguir o padrão de {{example file}}
+  - [ ] Integrar com {{existing component}}
+  - [ ] Manter a compatibilidade com {{constraint}}
 
-- [ ] Task 3: Verify existing functionality
-  - [ ] Test {{existing feature 1}} still works
-  - [ ] Verify {{integration point}} behavior unchanged
-  - [ ] Check performance impact
+- [ ] Task 3: Verificar a funcionalidade existente
+  - [ ] Testar se {{existing feature 1}} ainda funciona
+  - [ ] Verificar se o comportamento de {{integration point}} não mudou
+  - [ ] Checar o impacto na performance
 
-- [ ] Task 4: Add tests
-  - [ ] Unit tests following {{project test pattern}}
-  - [ ] Integration test for {{integration point}}
-  - [ ] Update existing tests if needed
+- [ ] Task 4: Adicionar testes
+  - [ ] Testes unitários seguindo {{project test pattern}}
+  - [ ] Teste de integração para {{integration point}}
+  - [ ] Atualizar os testes existentes se necessário
 ```
 
-#### 4.4 Predict Quality Requirements and Agent Assignment
+#### 4.4 Prever Requisitos de Qualidade e Atribuição de Agentes
 
-**CRITICAL FOR BROWNFIELD:** This step populates the `🤖 CodeRabbit Integration` section with brownfield-specific quality gates. Brownfield stories have HIGHER RISK due to integration complexity, so quality planning is essential.
+**CRÍTICO PARA BROWNFIELD:** Este passo popula a seção `🤖 CodeRabbit Integration` com quality gates específicos de brownfield. Stories brownfield têm RISCO MAIS ALTO devido à complexidade de integração, então o planejamento de qualidade é essencial.
 
-**Integration Point Analysis:**
+**Análise dos Pontos de Integração:**
 
-Analyze the story's integration risks based on:
-- What existing functionality will be modified?
-- How many integration points are affected?
-- Is this touching core/critical functionality?
-- What is the blast radius of potential bugs?
+Analise os riscos de integração da story com base em:
+- Qual funcionalidade existente será modificada?
+- Quantos pontos de integração são afetados?
+- Isto está tocando em funcionalidade central/crítica?
+- Qual é o raio de impacto (blast radius) de bugs potenciais?
 
-**Brownfield-Specific Agent Assignment Rules:**
+**Regras de Atribuição de Agentes Específicas de Brownfield:**
 
-**If modifying existing database:**
-- **Assign**: @db-sage, @dev
-- **Rationale**: Database changes in brownfield require expert review for:
-  - Existing data migration impacts
-  - RLS policy compatibility
-  - Index performance on existing data
-  - Foreign key constraint conflicts
-- **Quality Gates**: Pre-Commit (schema validation), Pre-PR (SQL review), Pre-Deployment (migration testing)
+**Se modificar um banco de dados existente:**
+- **Atribuir**: @db-sage, @dev
+- **Justificativa**: Mudanças de banco de dados em brownfield exigem revisão especializada para:
+  - Impactos na migração de dados existentes
+  - Compatibilidade de políticas RLS
+  - Performance de índices em dados existentes
+  - Conflitos de restrições de foreign key
+- **Quality Gates**: Pre-Commit (validação de schema), Pre-PR (revisão de SQL), Pre-Deployment (teste de migration)
 
-**If changing existing APIs:**
-- **Assign**: @architect, @dev
-- **Rationale**: API changes risk breaking existing clients:
-  - Backward compatibility validation
-  - Contract versioning requirements
-  - Breaking change identification
-  - Client impact assessment
-- **Quality Gates**: Pre-Commit (contract validation), Pre-PR (backward compat check)
+**Se alterar APIs existentes:**
+- **Atribuir**: @architect, @dev
+- **Justificativa**: Mudanças de API arriscam quebrar clientes existentes:
+  - Validação de retrocompatibilidade
+  - Requisitos de versionamento de contrato
+  - Identificação de breaking changes
+  - Avaliação de impacto no cliente
+- **Quality Gates**: Pre-Commit (validação de contrato), Pre-PR (verificação de retrocompatibilidade)
 
-**If touching deployment/infrastructure:**
-- **Assign**: @github-devops, @dev
-- **Rationale**: Infrastructure changes need rollback safety:
-  - Environment-specific configuration validation
-  - Rollback procedure verification
-  - Zero-downtime deployment planning
-  - Feature flag implementation if needed
-- **Quality Gates**: Pre-Commit (config validation), Pre-Deployment (deep scan with rollback plan)
+**Se tocar em deployment/infraestrutura:**
+- **Atribuir**: @github-devops, @dev
+- **Justificativa**: Mudanças de infraestrutura precisam de segurança de rollback:
+  - Validação de configuração específica por ambiente
+  - Verificação do procedimento de rollback
+  - Planejamento de deployment sem downtime
+  - Implementação de feature flag se necessário
+- **Quality Gates**: Pre-Commit (validação de config), Pre-Deployment (deep scan com plano de rollback)
 
-**If affecting existing UI/UX:**
-- **Assign**: @ux-expert, @dev
-- **Rationale**: UI changes must maintain user experience consistency:
-  - Design system compliance
-  - Accessibility standards maintained
-  - User workflow continuity
-  - Browser compatibility preserved
-- **Quality Gates**: Pre-Commit (a11y validation), Pre-PR (UX consistency check)
+**Se afetar UI/UX existente:**
+- **Atribuir**: @ux-expert, @dev
+- **Justificativa**: Mudanças de UI devem manter a consistência da experiência do usuário:
+  - Conformidade com o design system
+  - Manutenção dos padrões de acessibilidade
+  - Continuidade do fluxo de trabalho do usuário
+  - Preservação da compatibilidade entre navegadores
+- **Quality Gates**: Pre-Commit (validação de a11y), Pre-PR (verificação de consistência de UX)
 
-**Risk-Based Quality Gate Determination:**
+**Determinação de Quality Gate Baseada em Risco:**
 
-**HIGH RISK** (affects core functionality, many integration points, production-critical):
+**ALTO RISCO** (afeta funcionalidade central, muitos pontos de integração, crítico para produção):
 - **Quality Gates**: Pre-Commit + Pre-PR + Pre-Deployment
-- **Additional Requirements**:
-  - Feature flag implementation recommended
-  - Phased rollout strategy
-  - Detailed rollback procedure
-  - Monitoring and alerting plan
-- **Focus Areas**:
-  - Regression prevention (existing functionality MUST work)
-  - Integration safety (new code doesn't break old code)
-  - Rollback readiness (changes are reversible)
-  - Performance impact (no degradation to existing features)
+- **Requisitos Adicionais**:
+  - Implementação de feature flag recomendada
+  - Estratégia de rollout faseado
+  - Procedimento de rollback detalhado
+  - Plano de monitoramento e alertas
+- **Áreas de Foco**:
+  - Prevenção de regressão (a funcionalidade existente DEVE funcionar)
+  - Segurança de integração (o novo código não quebra o código antigo)
+  - Prontidão de rollback (as mudanças são reversíveis)
+  - Impacto na performance (sem degradação das funcionalidades existentes)
 
-**MEDIUM RISK** (new feature with isolated scope, some integration):
+**RISCO MÉDIO** (nova funcionalidade com escopo isolado, alguma integração):
 - **Quality Gates**: Pre-Commit + Pre-PR
-- **Additional Requirements**:
-  - Integration testing with existing features
-  - Unit tests for new and affected code
-  - Documentation updates
-- **Focus Areas**:
-  - Integration points validated
-  - Existing patterns followed
-  - Error handling comprehensive
+- **Requisitos Adicionais**:
+  - Teste de integração com as funcionalidades existentes
+  - Testes unitários para o código novo e o afetado
+  - Atualizações de documentação
+- **Áreas de Foco**:
+  - Pontos de integração validados
+  - Padrões existentes seguidos
+  - Tratamento de erros abrangente
 
-**LOW RISK** (documentation, tests only, isolated bug fix):
+**BAIXO RISCO** (documentação, apenas testes, correção isolada de bug):
 - **Quality Gates**: Pre-Commit
-- **Additional Requirements**:
-  - Standard code review
-  - Basic testing
-- **Focus Areas**:
-  - Code quality standards
-  - Documentation clarity
+- **Requisitos Adicionais**:
+  - Revisão de código padrão
+  - Teste básico
+- **Áreas de Foco**:
+  - Padrões de qualidade de código
+  - Clareza da documentação
 
-**CodeRabbit Focus for Brownfield:**
+**Foco do CodeRabbit para Brownfield:**
 
-Regardless of story type, ALL brownfield stories must include these focus areas:
+Independentemente do tipo de story, TODAS as stories brownfield devem incluir estas áreas de foco:
 
 ```yaml
 🤖 CodeRabbit Integration:
@@ -545,7 +545,7 @@ Regardless of story type, ALL brownfield stories must include these focus areas:
       - Error handling: Graceful degradation for integration failures
 ```
 
-**Brownfield Example (HIGH RISK Database + API Story):**
+**Exemplo Brownfield (Story de Database + API de ALTO RISCO):**
 
 ```yaml
 🤖 CodeRabbit Integration:
@@ -591,34 +591,34 @@ Regardless of story type, ALL brownfield stories must include these focus areas:
       - Migration testing: Validated on copy of production data structure
 ```
 
-**Integration-Specific Considerations:**
+**Considerações Específicas de Integração:**
 
-When story involves specific integration patterns:
+Quando a story envolve padrões de integração específicos:
 
-**Database Integration:**
-- Focus: Existing data compatibility, migration safety, RLS policy consistency
-- Validation: Run migration on production-like data, verify all existing queries still work
+**Integração de Database:**
+- Foco: Compatibilidade de dados existentes, segurança de migration, consistência de políticas RLS
+- Validação: Rodar a migration em dados similares aos de produção, verificar que todas as queries existentes ainda funcionam
 
-**API Integration:**
-- Focus: Contract versioning, backward compatibility, client impact assessment
-- Validation: Integration tests with existing API clients, contract testing
+**Integração de API:**
+- Foco: Versionamento de contrato, retrocompatibilidade, avaliação de impacto no cliente
+- Validação: Testes de integração com clientes de API existentes, teste de contrato
 
-**Frontend Integration:**
-- Focus: User workflow continuity, design system compliance, accessibility preservation
-- Validation: Visual regression testing, user acceptance testing on existing flows
+**Integração de Frontend:**
+- Foco: Continuidade do fluxo de trabalho do usuário, conformidade com o design system, preservação da acessibilidade
+- Validação: Teste de regressão visual, teste de aceitação do usuário nos fluxos existentes
 
-**External System Integration:**
-- Focus: Graceful degradation, retry logic, error handling, monitoring
-- Validation: Failure scenario testing, circuit breaker validation
+**Integração de Sistema Externo:**
+- Foco: Degradação graciosa, lógica de retry, tratamento de erros, monitoramento
+- Validação: Teste de cenários de falha, validação de circuit breaker
 
-**Log Completion:**
-- After populating this section, log: "✅ Brownfield story analysis complete: [Primary Type] | Risk Level: [RISK] | Integration Points: [count] | Agents assigned: [agent list]"
+**Registrar a Conclusão em Log:**
+- Após popular esta seção, registre em log: "✅ Brownfield story analysis complete: [Primary Type] | Risk Level: [RISK] | Integration Points: [count] | Agents assigned: [agent list]"
 
-### 5. Risk Assessment and Mitigation
+### 5. Avaliação de Risco e Mitigação
 
-CRITICAL: for brownfield - always include risk assessment
+CRÍTICO: para brownfield - sempre inclua a avaliação de risco
 
-Add section for brownfield-specific risks:
+Adicione uma seção para riscos específicos de brownfield:
 
 ```markdown
 ## Risk Assessment
@@ -637,35 +637,35 @@ Add section for brownfield-specific risks:
 - [ ] Rollback procedure documented
 ```
 
-### 6. Final Story Validation
+### 6. Validação Final da Story
 
-Before finalizing:
+Antes de finalizar:
 
-1. **Completeness Check**:
-   - [ ] Story has clear scope and acceptance criteria
-   - [ ] Technical context is sufficient for implementation
-   - [ ] Integration approach is defined
-   - [ ] Risks are identified with mitigation
+1. **Verificação de Completude**:
+   - [ ] A story tem escopo claro e critérios de aceite
+   - [ ] O contexto técnico é suficiente para a implementação
+   - [ ] A abordagem de integração está definida
+   - [ ] Os riscos estão identificados com mitigação
 
-2. **Safety Check**:
-   - [ ] Existing functionality protection included
-   - [ ] Rollback plan is feasible
-   - [ ] Testing covers both new and existing features
+2. **Verificação de Segurança**:
+   - [ ] Proteção da funcionalidade existente incluída
+   - [ ] O plano de rollback é viável
+   - [ ] Os testes cobrem tanto as funcionalidades novas quanto as existentes
 
-3. **Information Gaps**:
-   - [ ] All critical missing information gathered from user
-   - [ ] Remaining unknowns documented for dev agent
-   - [ ] Exploration tasks added where needed
+3. **Lacunas de Informação**:
+   - [ ] Todas as informações críticas ausentes reunidas com o usuário
+   - [ ] As incógnitas remanescentes documentadas para o agente dev
+   - [ ] Tasks de exploração adicionadas onde necessário
 
-### 7. Story Output Format
+### 7. Formato de Saída da Story
 
-Save the story with appropriate naming:
+Salve a story com a nomenclatura apropriada:
 
-- If from epic: `docs/stories/epic-{n}-story-{m}.md`
-- If standalone: `docs/stories/brownfield-{feature-name}.md`
-- If sequential: Follow existing story numbering
+- Se a partir de epic: `docs/stories/epic-{n}-story-{m}.md`
+- Se standalone: `docs/stories/brownfield-{feature-name}.md`
+- Se sequencial: Seguir a numeração de stories existente
 
-Include header noting documentation context:
+Inclua o cabeçalho indicando o contexto de documentação:
 
 ```markdown
 # Story: {{Title}}
@@ -674,12 +674,12 @@ Include header noting documentation context:
 <!-- Context: Brownfield enhancement to {{existing system}} -->
 
 ## Status: Draft
-[Rest of story content...]
+[Resto do conteúdo da story...]
 ```
 
-### 8. Handoff Communication
+### 8. Comunicação de Handoff
 
-Provide clear handoff to the user:
+Forneça um handoff claro ao usuário:
 
 ```text
 Brownfield story created: {{story title}}
@@ -704,24 +704,23 @@ Next Steps:
 4. Dev agent can then implement with safety checks
 ```
 
-## Success Criteria
+## Critérios de Sucesso
 
-The brownfield story creation is successful when:
+A criação da story brownfield é bem-sucedida quando:
 
-1. Story can be implemented without requiring dev to search multiple documents
-2. Integration approach is clear and safe for existing system
-3. All available technical context has been extracted and organized
-4. Missing information has been identified and addressed
-5. Risks are documented with mitigation strategies
-6. Story includes verification of existing functionality
-7. Rollback approach is defined
+1. A story pode ser implementada sem exigir que o dev busque em múltiplos documentos
+2. A abordagem de integração é clara e segura para o sistema existente
+3. Todo o contexto técnico disponível foi extraído e organizado
+4. As informações ausentes foram identificadas e tratadas
+5. Os riscos estão documentados com estratégias de mitigação
+6. A story inclui a verificação da funcionalidade existente
+7. A abordagem de rollback está definida
 
-## Important Notes
+## Notas Importantes
 
-- This task is specifically for brownfield projects with non-standard documentation
-- Always prioritize existing system stability over new features
-- When in doubt, add exploration and verification tasks
-- It's better to ask the user for clarification than make assumptions
-- Each story should be self-contained for the dev agent
-- Include references to existing code patterns when available
- 
+- Esta task é especificamente para projetos brownfield com documentação não padronizada
+- Sempre priorize a estabilidade do sistema existente sobre as novas funcionalidades
+- Em caso de dúvida, adicione tasks de exploração e verificação
+- É melhor pedir esclarecimento ao usuário do que fazer suposições
+- Cada story deve ser autocontida para o agente dev
+- Inclua referências a padrões de código existentes quando disponíveis

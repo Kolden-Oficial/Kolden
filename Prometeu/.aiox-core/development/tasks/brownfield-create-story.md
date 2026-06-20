@@ -207,7 +207,7 @@ checklists:
   - po-master-checklist.md
 ---
 
-# Create Brownfield Story Task
+# Task: Criar Story Brownfield
 
 ## Propósito
 
@@ -254,111 +254,111 @@ Reúna contexto mínimo mas essencial sobre o projeto existente:
 - [ ] Limites de impacto identificados
 - [ ] Critérios de sucesso estabelecidos
 
-### 2. Story Creation
+### 2. Criação da Story
 
-Create a single focused story following this structure:
+Crie uma única story focada seguindo esta estrutura:
 
-#### Story Title
+#### Título da Story
 
 {{Specific Enhancement}} - Brownfield Addition
 
-#### User Story
+#### História de Usuário (User Story)
 
-As a {{user type}},
-I want {{specific action/capability}},
-So that {{clear benefit/value}}.
+Como {{user type}},
+Eu quero {{specific action/capability}},
+Para que {{clear benefit/value}}.
 
-#### Story Context
+#### Contexto da Story
 
-**Existing System Integration:**
+**Integração com Sistema Existente:**
 
-- Integrates with: {{existing component/system}}
-- Technology: {{relevant tech stack}}
-- Follows pattern: {{existing pattern to follow}}
-- Touch points: {{specific integration points}}
+- Integra com: {{existing component/system}}
+- Tecnologia: {{relevant tech stack}}
+- Segue o padrão: {{existing pattern to follow}}
+- Pontos de contato: {{specific integration points}}
 
-#### Acceptance Criteria
+#### Critérios de Aceite
 
-**Functional Requirements:**
+**Requisitos Funcionais:**
 
 1. {{Primary functional requirement}}
 2. {{Secondary functional requirement (if any)}}
 3. {{Integration requirement}}
 
-**Integration Requirements:** 4. Existing {{relevant functionality}} continues to work unchanged 5. New functionality follows existing {{pattern}} pattern 6. Integration with {{system/component}} maintains current behavior
+**Requisitos de Integração:** 4. O(A) {{relevant functionality}} existente continua funcionando sem alterações 5. A nova funcionalidade segue o padrão {{pattern}} existente 6. A integração com {{system/component}} mantém o comportamento atual
 
-**Quality Requirements:** 7. Change is covered by appropriate tests 8. Documentation is updated if needed 9. No regression in existing functionality verified
+**Requisitos de Qualidade:** 7. A mudança é coberta por testes apropriados 8. A documentação é atualizada se necessário 9. Nenhuma regressão na funcionalidade existente verificada
 
-#### Technical Notes
+#### Notas Técnicas
 
-- **Integration Approach:** {{how it connects to existing system}}
-- **Existing Pattern Reference:** {{link or description of pattern to follow}}
-- **Key Constraints:** {{any important limitations or requirements}}
+- **Abordagem de Integração:** {{how it connects to existing system}}
+- **Referência de Padrão Existente:** {{link or description of pattern to follow}}
+- **Restrições Principais:** {{any important limitations or requirements}}
 
-#### Definition of Done
+#### Definição de Pronto (Definition of Done)
 
-- [ ] Functional requirements met
-- [ ] Integration requirements verified
-- [ ] Existing functionality regression tested
-- [ ] Code follows existing patterns and standards
-- [ ] Tests pass (existing and new)
-- [ ] Documentation updated if applicable
+- [ ] Requisitos funcionais atendidos
+- [ ] Requisitos de integração verificados
+- [ ] Funcionalidade existente testada quanto a regressão
+- [ ] Código segue os padrões e standards existentes
+- [ ] Testes passam (existentes e novos)
+- [ ] Documentação atualizada se aplicável
 
-### 3. Risk and Compatibility Check
+### 3. Verificação de Risco e Compatibilidade
 
-**Minimal Risk Assessment:**
+**Avaliação de Risco Mínima:**
 
-- **Primary Risk:** {{main risk to existing system}}
-- **Mitigation:** {{simple mitigation approach}}
+- **Risco Primário:** {{main risk to existing system}}
+- **Mitigação:** {{simple mitigation approach}}
 - **Rollback:** {{how to undo if needed}}
 
-**Compatibility Verification:**
+**Verificação de Compatibilidade:**
 
-- [ ] No breaking changes to existing APIs
-- [ ] Database changes (if any) are additive only
-- [ ] UI changes follow existing design patterns
-- [ ] Performance impact is negligible
+- [ ] Nenhuma breaking change nas APIs existentes
+- [ ] Mudanças no banco de dados (se houver) são apenas aditivas
+- [ ] Mudanças de UI seguem os padrões de design existentes
+- [ ] Impacto de performance é negligenciável
 
-### 4. Validation Checklist
+### 4. Checklist de Validação
 
-Before finalizing the story, confirm:
+Antes de finalizar a story, confirme:
 
-**Scope Validation:**
+**Validação de Escopo:**
 
-- [ ] Story can be completed in one development session
-- [ ] Integration approach is straightforward
-- [ ] Follows existing patterns exactly
-- [ ] No design or architecture work required
+- [ ] A story pode ser concluída em uma sessão de desenvolvimento
+- [ ] A abordagem de integração é direta
+- [ ] Segue exatamente os padrões existentes
+- [ ] Nenhum trabalho de design ou arquitetura é necessário
 
-**Clarity Check:**
+**Verificação de Clareza:**
 
-- [ ] Story requirements are unambiguous
-- [ ] Integration points are clearly specified
-- [ ] Success criteria are testable
-- [ ] Rollback approach is simple
+- [ ] Os requisitos da story são inequívocos
+- [ ] Os pontos de integração estão claramente especificados
+- [ ] Os critérios de sucesso são testáveis
+- [ ] A abordagem de rollback é simples
 
-## Success Criteria
+## Critérios de Sucesso
 
-The story creation is successful when:
+A criação da story é bem-sucedida quando:
 
-1. Enhancement is clearly defined and appropriately scoped for single session
-2. Integration approach is straightforward and low-risk
-3. Existing system patterns are identified and will be followed
-4. Rollback plan is simple and feasible
-5. Acceptance criteria include existing functionality verification
+1. A melhoria está claramente definida e apropriadamente dimensionada para uma única sessão
+2. A abordagem de integração é direta e de baixo risco
+3. Os padrões do sistema existente estão identificados e serão seguidos
+4. O plano de rollback é simples e viável
+5. Os critérios de aceite incluem a verificação da funcionalidade existente
 
-## Important Notes
+## Notas Importantes
 
-- This task is for VERY SMALL brownfield changes only
-- If complexity grows during analysis, escalate to brownfield-create-epic
-- Always prioritize existing system integrity
-- When in doubt about integration complexity, use brownfield-create-epic instead
-- Stories should take no more than 4 hours of focused development work
+- Esta task é apenas para mudanças brownfield MUITO PEQUENAS
+- Se a complexidade crescer durante a análise, escale para brownfield-create-epic
+- Sempre priorize a integridade do sistema existente
+- Em caso de dúvida sobre a complexidade da integração, use brownfield-create-epic
+- Stories não devem levar mais do que 4 horas de trabalho de desenvolvimento focado
 
 ## Handoff
 next_agent: @po
 next_command: *validate-story-draft {story-id}
-condition: Brownfield story created from assessment
+condition: Story brownfield criada a partir da avaliação
 alternatives:
-  - agent: @sm, command: *draft, condition: Need additional stories from same assessment
+  - agent: @sm, command: *draft, condition: Necessário criar stories adicionais da mesma avaliação
  

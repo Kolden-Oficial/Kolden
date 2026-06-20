@@ -1,35 +1,35 @@
 # Task: Migration Dry-Run
 
-**Purpose**: Execute migration inside BEGIN…ROLLBACK to catch syntax/ordering errors
+**Propósito**: Executar a migration dentro de BEGIN…ROLLBACK para capturar erros de sintaxe/ordenação
 
 **Elicit**: true
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, default: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: dbDryRun()
@@ -75,9 +75,9 @@ outputs:
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -93,9 +93,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
 
 **Checklist:**
 
@@ -111,9 +111,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de aprovação/reprovação para a conclusão da task
 
 **Checklist:**
 
@@ -129,57 +129,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** supabase
-  - **Purpose:** PostgreSQL database connection via Supabase client
-  - **Source:** @supabase/supabase-js
+- **Ferramenta:** supabase
+  - **Propósito:** Conexão com banco de dados PostgreSQL via cliente Supabase
+  - **Origem:** @supabase/supabase-js
 
-- **Tool:** query-validator
-  - **Purpose:** SQL query syntax validation
-  - **Source:** .aiox-core/utils/db-query-validator.js
+- **Ferramenta:** query-validator
+  - **Propósito:** Validação de sintaxe de query SQL
+  - **Origem:** .aiox-core/utils/db-query-validator.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** db-query.js
-  - **Purpose:** Execute PostgreSQL queries with error handling via Supabase
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/db-query.js
+  - **Propósito:** Executar queries PostgreSQL com tratamento de erros via Supabase
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/db-query.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Connection Failed
-   - **Cause:** Unable to connect to Neo4j database
-   - **Resolution:** Check connection string, credentials, network
-   - **Recovery:** Retry with exponential backoff (max 3 attempts)
+1. **Erro:** Connection Failed
+   - **Causa:** Não foi possível conectar ao banco de dados Neo4j
+   - **Resolução:** Verifique a connection string, credenciais, rede
+   - **Recuperação:** Repetir com backoff exponencial (máx. 3 tentativas)
 
-2. **Error:** Query Syntax Error
-   - **Cause:** Invalid Cypher query syntax
-   - **Resolution:** Validate query syntax before execution
-   - **Recovery:** Return detailed syntax error, suggest fix
+2. **Erro:** Query Syntax Error
+   - **Causa:** Sintaxe de query Cypher inválida
+   - **Resolução:** Validar a sintaxe da query antes da execução
+   - **Recuperação:** Retornar erro de sintaxe detalhado, sugerir correção
 
-3. **Error:** Transaction Rollback
-   - **Cause:** Query violates constraints or timeout
-   - **Resolution:** Review query logic and constraints
-   - **Recovery:** Automatic rollback, preserve data integrity
+3. **Erro:** Transaction Rollback
+   - **Causa:** A query viola constraints ou atinge timeout
+   - **Resolução:** Revisar a lógica e as constraints da query
+   - **Recuperação:** Rollback automático, preservar a integridade dos dados
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-15 min (estimated)
@@ -187,8 +187,8 @@ cost_estimated: $0.003-0.010
 token_usage: ~3,000-10,000 tokens
 ```
 
-**Optimization Notes:**
-- Break into smaller workflows; implement checkpointing; use async processing where possible
+**Notas de Otimização:**
+- Quebrar em workflows menores; implementar checkpointing; usar processamento assíncrono quando possível
 
 ---
 
@@ -208,24 +208,24 @@ updated_at: 2025-11-17
 ---
 
 
-## Inputs
+## Entradas
 
-- `path` (string): Path to SQL migration file
+- `path` (string): Caminho para o arquivo de migration SQL
 
 ---
 
-## Process
+## Processo
 
-### 1. Confirm Migration File
+### 1. Confirmar o Arquivo de Migration
 
-Ask user to confirm:
-- Migration file path: `{path}`
-- Purpose of this migration
-- Expected changes (tables, functions, etc)
+Peça ao usuário para confirmar:
+- Caminho do arquivo de migration: `{path}`
+- Propósito desta migration
+- Mudanças esperadas (tabelas, funções, etc)
 
-### 2. Execute Dry-Run
+### 2. Executar o Dry-Run
 
-Run migration in transaction that will be rolled back:
+Rode a migration em uma transação que será revertida (rolled back):
 
 ```bash
 psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 <<'SQL'
@@ -237,16 +237,16 @@ ROLLBACK;
 SQL
 ```
 
-### 3. Report Results
+### 3. Reportar os Resultados
 
-**If successful:**
+**Se bem-sucedido:**
 ```
 ✓ Dry-run completed without errors
 ✓ Migration syntax is valid
 ✓ No dependency or ordering issues detected
 ```
 
-**If failed:**
+**Se falhar:**
 ```
 ❌ Dry-run failed
 Error: [error message]
@@ -256,38 +256,38 @@ Fix the migration and try again
 
 ---
 
-## What This Validates
+## O Que Isto Valida
 
-- ✅ SQL syntax correctness
-- ✅ Object dependencies exist
-- ✅ Execution order is valid
-- ✅ No constraint violations
-- ❌ Does NOT validate data correctness
-- ❌ Does NOT check performance
-
----
-
-## Next Steps After Success
-
-1. Review migration one more time
-2. Take snapshot: `*snapshot pre_migration`
-3. Apply migration: `*apply-migration {path}`
-4. Run smoke tests: `*smoke-test`
+- ✅ Correção da sintaxe SQL
+- ✅ Dependências de objetos existem
+- ✅ Ordem de execução é válida
+- ✅ Sem violações de constraints
+- ❌ NÃO valida a correção dos dados
+- ❌ NÃO verifica performance
 
 ---
 
-## Error Handling
+## Próximos Passos Após o Sucesso
 
-Common errors and fixes:
+1. Revise a migration mais uma vez
+2. Tire um snapshot: `*snapshot pre_migration`
+3. Aplique a migration: `*apply-migration {path}`
+4. Rode os smoke tests: `*smoke-test`
+
+---
+
+## Tratamento de Erros
+
+Erros comuns e correções:
 
 **"relation does not exist"**
-- Missing table/view dependency
-- Check if you need to create dependent objects first
+- Dependência de tabela/view ausente
+- Verifique se você precisa criar os objetos dependentes primeiro
 
 **"function does not exist"**
-- Function called before creation
-- Reorder: tables → functions → triggers
+- Função chamada antes da criação
+- Reordene: tabelas → funções → triggers
 
 **"syntax error"**
-- Check SQL syntax
-- Verify PostgreSQL version compatibility
+- Verifique a sintaxe SQL
+- Verifique a compatibilidade com a versão do PostgreSQL

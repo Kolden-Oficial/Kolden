@@ -1,35 +1,35 @@
 # Task: Impersonate User (RLS Testing)
 
-**Purpose**: Set session claims to emulate authenticated user for RLS testing
+**Propósito**: Definir os claims da sessão para emular um usuário autenticado em testes de RLS
 
 **Elicit**: true
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, default: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: dbImpersonate()
@@ -75,9 +75,9 @@ atomic_layer: Config
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -93,9 +93,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
 
 **Checklist:**
 
@@ -111,9 +111,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de aprovação/reprovação para a conclusão da task
 
 **Checklist:**
 
@@ -129,57 +129,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** neo4j-driver
-  - **Purpose:** Neo4j database connection and query execution
-  - **Source:** npm: neo4j-driver
+- **Ferramenta:** neo4j-driver
+  - **Propósito:** Conexão com banco de dados Neo4j e execução de queries
+  - **Origem:** npm: neo4j-driver
 
-- **Tool:** query-validator
-  - **Purpose:** Cypher query syntax validation
-  - **Source:** .aiox-core/utils/db-query-validator.js
+- **Ferramenta:** query-validator
+  - **Propósito:** Validação de sintaxe de query Cypher
+  - **Origem:** .aiox-core/utils/db-query-validator.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** db-query.js
-  - **Purpose:** Execute Neo4j queries with error handling
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/db-query.js
+  - **Propósito:** Executar queries Neo4j com tratamento de erros
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/db-query.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Connection Failed
-   - **Cause:** Unable to connect to Neo4j database
-   - **Resolution:** Check connection string, credentials, network
-   - **Recovery:** Retry with exponential backoff (max 3 attempts)
+1. **Erro:** Connection Failed
+   - **Causa:** Não foi possível conectar ao banco de dados Neo4j
+   - **Resolução:** Verifique a connection string, credenciais, rede
+   - **Recuperação:** Repetir com backoff exponencial (máx. 3 tentativas)
 
-2. **Error:** Query Syntax Error
-   - **Cause:** Invalid Cypher query syntax
-   - **Resolution:** Validate query syntax before execution
-   - **Recovery:** Return detailed syntax error, suggest fix
+2. **Erro:** Query Syntax Error
+   - **Causa:** Sintaxe de query Cypher inválida
+   - **Resolução:** Validar a sintaxe da query antes da execução
+   - **Recuperação:** Retornar erro de sintaxe detalhado, sugerir correção
 
-3. **Error:** Transaction Rollback
-   - **Cause:** Query violates constraints or timeout
-   - **Resolution:** Review query logic and constraints
-   - **Recovery:** Automatic rollback, preserve data integrity
+3. **Erro:** Transaction Rollback
+   - **Causa:** A query viola constraints ou atinge timeout
+   - **Resolução:** Revisar a lógica e as constraints da query
+   - **Recuperação:** Rollback automático, preservar a integridade dos dados
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 2-10 min (estimated)
@@ -187,8 +187,8 @@ cost_estimated: $0.001-0.008
 token_usage: ~800-2,500 tokens
 ```
 
-**Optimization Notes:**
-- Validate configuration early; use atomic writes; implement rollback checkpoints
+**Notas de Otimização:**
+- Validar a configuração cedo; usar escritas atômicas; implementar checkpoints de rollback
 
 ---
 
@@ -208,24 +208,24 @@ updated_at: 2025-11-17
 ---
 
 
-## Inputs
+## Entradas
 
-- `user_id` (uuid): User ID to impersonate
+- `user_id` (uuid): ID do usuário a ser personificado (impersonate)
 
 ---
 
-## Process
+## Processo
 
-### 1. Confirm Impersonation
+### 1. Confirmar a Personificação (Impersonation)
 
-Ask user:
-- User ID to impersonate: `{user_id}`
-- Purpose of impersonation (testing what?)
-- Queries you plan to run
+Pergunte ao usuário:
+- ID do usuário a personificar: `{user_id}`
+- Propósito da personificação (testar o quê?)
+- Queries que você planeja rodar
 
-**CRITICAL WARNING**: This is for testing only. Never use in production application code.
+**AVISO CRÍTICO**: Isto é apenas para testes. Nunca use em código de aplicação em produção.
 
-### 2. Set Session Claims
+### 2. Definir os Claims da Sessão
 
 ```bash
 psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 <<SQL
@@ -254,15 +254,15 @@ SELECT
 SQL
 ```
 
-### 3. Interactive SQL Session
+### 3. Sessão SQL Interativa
 
-Open interactive psql for testing:
+Abra um psql interativo para testes:
 
 ```bash
 psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1
 ```
 
-User can now run queries as this user:
+O usuário agora pode rodar queries como este usuário:
 
 ```sql
 -- Test queries
@@ -279,11 +279,11 @@ RESET ALL;
 
 ---
 
-## Testing Scenarios
+## Cenários de Teste
 
-### Positive Test (Should Succeed)
+### Teste Positivo (Deve Ter Sucesso)
 
-Test that user CAN access their own data:
+Teste que o usuário PODE acessar seus próprios dados:
 
 ```sql
 -- User should see their own records
@@ -293,9 +293,9 @@ SELECT * FROM users WHERE id = auth.uid();
 SELECT * FROM fragments WHERE user_id = auth.uid();
 ```
 
-### Negative Test (Should Fail or Return Empty)
+### Teste Negativo (Deve Falhar ou Retornar Vazio)
 
-Test that user CANNOT access others' data:
+Teste que o usuário NÃO PODE acessar dados de terceiros:
 
 ```sql
 -- Should return empty (not their data)
@@ -307,9 +307,9 @@ VALUES ('00000000-0000-0000-0000-000000000000', 'test');
 -- Expected: RLS policy violation
 ```
 
-### Multi-Tenant Test
+### Teste Multi-Tenant
 
-If using org-based isolation:
+Se estiver usando isolamento baseado em organização:
 
 ```sql
 -- Set org_id in JWT
@@ -328,9 +328,9 @@ SELECT * FROM projects;  -- Should only see org's projects
 
 ---
 
-## Common Use Cases
+## Casos de Uso Comuns
 
-### Test New RLS Policy
+### Testar uma Nova Policy de RLS
 
 ```sql
 -- 1. Apply new policy
@@ -348,9 +348,9 @@ RESET ALL;
 SELECT * FROM table_name;
 ```
 
-### Debug Access Issues
+### Depurar Problemas de Acesso
 
-User reports "can't see their data":
+O usuário relata "não consigo ver meus dados":
 
 ```sql
 -- 1. Impersonate the user
@@ -367,7 +367,7 @@ WHERE tablename = 'table_name';
 SELECT auth.uid(), user_id FROM table_name LIMIT 5;
 ```
 
-### Validate Multi-User Scenario
+### Validar Cenário Multi-Usuário
 
 ```sql
 -- User A
@@ -385,32 +385,32 @@ SELECT user_id, COUNT(*) FROM fragments GROUP BY user_id;
 
 ---
 
-## Important Notes
+## Notas Importantes
 
-### Session-Local Only
+### Apenas Local à Sessão
 
-Settings are session-local and reset when:
-- Session closes
-- `RESET ALL;` is executed
-- New connection is established
+As configurações são locais à sessão e são resetadas quando:
+- A sessão é fechada
+- `RESET ALL;` é executado
+- Uma nova conexão é estabelecida
 
-### Not for Production
+### Não Para Produção
 
-**Never use this in application code:**
-- ❌ Setting claims manually in app
-- ❌ Bypassing Supabase Auth
-- ✅ Only for testing and debugging
+**Nunca use isto em código de aplicação:**
+- ❌ Definir claims manualmente no app
+- ❌ Burlar o Supabase Auth
+- ✅ Apenas para testes e depuração
 
-### Service Role Bypasses RLS
+### A Service Role Burla o RLS
 
-If using service role key, RLS is bypassed completely:
-- Cannot test RLS with service role
-- Must use authenticated role
-- Service role sees ALL data
+Se estiver usando a chave de service role, o RLS é burlado completamente:
+- Não é possível testar RLS com a service role
+- É preciso usar a role authenticated
+- A service role enxerga TODOS os dados
 
-### Works with Functions
+### Funciona com Funções
 
-RLS policies respect these settings even in functions:
+As policies de RLS respeitam estas configurações mesmo dentro de funções:
 
 ```sql
 CREATE FUNCTION get_user_data() 
@@ -424,9 +424,9 @@ $$;
 
 ---
 
-## Exit Impersonation
+## Sair da Personificação (Impersonation)
 
-To stop impersonating:
+Para parar de personificar:
 
 ```sql
 -- Reset all session variables
@@ -438,12 +438,12 @@ RESET ALL;
 
 ---
 
-## Troubleshooting
+## Solução de Problemas
 
 ### "auth.uid() returns NULL"
 
-**Problem**: Claims not set correctly  
-**Fix**: Verify claim format and role setting
+**Problema**: Claims não definidos corretamente  
+**Correção**: Verifique o formato dos claims e a definição da role
 
 ```sql
 -- Check current settings
@@ -454,16 +454,16 @@ SELECT
 
 ### "Still seeing all data"
 
-**Problem**: Using service role or RLS not enabled  
-**Fix**: 
-1. Check connection string (should not be service role)
-2. Verify RLS enabled: `*rls-audit`
-3. Confirm policies exist
+**Problema**: Usando service role ou RLS não habilitado  
+**Correção**: 
+1. Verifique a connection string (não deve ser service role)
+2. Confirme que o RLS está habilitado: `*rls-audit`
+3. Confirme que existem policies
 
 ### "Permission denied"
 
-**Problem**: Role not set to authenticated  
-**Fix**: Ensure role is set:
+**Problema**: Role não definida como authenticated  
+**Correção**: Garanta que a role está definida:
 
 ```sql
 SELECT set_config('role', 'authenticated', true);
@@ -471,25 +471,25 @@ SELECT set_config('role', 'authenticated', true);
 
 ---
 
-## Integration with Workflow
+## Integração com o Workflow
 
-Typical testing workflow:
+Workflow de teste típico:
 
-1. Create/modify RLS policy
-2. `*dry-run migration.sql` - Syntax check
-3. `*apply-migration migration.sql` - Apply changes
-4. `*impersonate {test_user_id}` - Test as user
-5. Run test queries
-6. `*impersonate {other_user_id}` - Test isolation
-7. `*rls-audit` - Verify coverage
+1. Crie/modifique a policy de RLS
+2. `*dry-run migration.sql` - Verificação de sintaxe
+3. `*apply-migration migration.sql` - Aplicar mudanças
+4. `*impersonate {test_user_id}` - Testar como usuário
+5. Rodar queries de teste
+6. `*impersonate {other_user_id}` - Testar isolamento
+7. `*rls-audit` - Verificar cobertura
 
 ---
 
-## Security Reminder
+## Lembrete de Segurança
 
-🔒 **This is a testing tool only**  
+🔒 **Esta é apenas uma ferramenta de teste**  
 
-Never bypass Supabase Auth in production. Always use:
-- Supabase client with user authentication
-- Proper JWT tokens from auth.users
-- Real user sessions with valid credentials
+Nunca burle o Supabase Auth em produção. Sempre use:
+- Cliente Supabase com autenticação de usuário
+- Tokens JWT apropriados de auth.users
+- Sessões de usuário reais com credenciais válidas

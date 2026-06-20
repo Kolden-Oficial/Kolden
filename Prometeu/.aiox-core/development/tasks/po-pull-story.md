@@ -1,41 +1,41 @@
 ---
 tools:
-  - pm-tool  # Uses configured PM tool (ClickUp, GitHub, Jira, or local-only)
+  - pm-tool  # Usa a ferramenta de PM configurada (ClickUp, GitHub, Jira, ou somente-local)
 ---
 
 # pull-story
 
-**Purpose:** Pull story updates from the configured PM tool to check for external changes.
+**Propósito:** Puxar atualizações da story a partir da ferramenta de PM configurada para verificar mudanças externas.
 
-**When to Use:**
-- To check if story status changed in PM tool
-- Before starting work on a story (ensure you have latest state)
-- To detect if someone else updated the story in PM tool
+**Quando Usar:**
+- Para verificar se o status da story mudou na ferramenta de PM
+- Antes de iniciar o trabalho em uma story (garantir que você tem o estado mais recente)
+- Para detectar se outra pessoa atualizou a story na ferramenta de PM
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: poPullStory()
@@ -48,13 +48,13 @@ atomic_layer: Organism
   tipo: string
   origem: User Input
   obrigatório: true
-  validação: Must be registered task
+  validação: Deve ser uma task registrada
 
 - campo: parameters
   tipo: object
   origem: User Input
   obrigatório: false
-  validação: Valid task parameters
+  validação: Parâmetros de task válidos
 
 - campo: mode
   tipo: string
@@ -81,9 +81,9 @@ atomic_layer: Organism
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -99,9 +99,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a task ser concluída
 
 **Checklist:**
 
@@ -117,9 +117,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de aprovação/reprovação para conclusão da task
 
 **Checklist:**
 
@@ -135,57 +135,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** task-runner
-  - **Purpose:** Task execution and orchestration
-  - **Source:** .aiox-core/core/task-runner.js
+- **Ferramenta:** task-runner
+  - **Propósito:** Execução e orquestração de tasks
+  - **Fonte:** .aiox-core/core/task-runner.js
 
-- **Tool:** logger
-  - **Purpose:** Execution logging and error tracking
-  - **Source:** .aiox-core/utils/logger.js
+- **Ferramenta:** logger
+  - **Propósito:** Logging de execução e rastreamento de erros
+  - **Fonte:** .aiox-core/utils/logger.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** execute-task.js
-  - **Purpose:** Generic task execution wrapper
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/execute-task.js
+  - **Propósito:** Wrapper genérico de execução de task
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/execute-task.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Task Not Found
-   - **Cause:** Specified task not registered in system
-   - **Resolution:** Verify task name and registration
-   - **Recovery:** List available tasks, suggest similar
+1. **Erro:** Task Não Encontrada
+   - **Causa:** Task especificada não registrada no sistema
+   - **Resolução:** Verificar o nome e o registro da task
+   - **Recuperação:** Listar tasks disponíveis, sugerir similares
 
-2. **Error:** Invalid Parameters
-   - **Cause:** Task parameters do not match expected schema
-   - **Resolution:** Validate parameters against task definition
-   - **Recovery:** Provide parameter template, reject execution
+2. **Erro:** Parâmetros Inválidos
+   - **Causa:** Parâmetros da task não correspondem ao schema esperado
+   - **Resolução:** Validar parâmetros contra a definição da task
+   - **Recuperação:** Fornecer template de parâmetros, rejeitar a execução
 
-3. **Error:** Execution Timeout
-   - **Cause:** Task exceeds maximum execution time
-   - **Resolution:** Optimize task or increase timeout
-   - **Recovery:** Kill task, cleanup resources, log state
+3. **Erro:** Timeout de Execução
+   - **Causa:** Task excede o tempo máximo de execução
+   - **Resolução:** Otimizar a task ou aumentar o timeout
+   - **Recuperação:** Encerrar a task, limpar recursos, registrar o estado
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-15 min (estimated)
@@ -193,8 +193,8 @@ cost_estimated: $0.003-0.010
 token_usage: ~3,000-10,000 tokens
 ```
 
-**Optimization Notes:**
-- Break into smaller workflows; implement checkpointing; use async processing where possible
+**Notas de Otimização:**
+- Quebrar em workflows menores; implementar checkpointing; usar processamento assíncrono quando possível
 
 ---
 
@@ -214,7 +214,7 @@ updated_at: 2025-11-17
 ---
 
 
-## Task Inputs
+## Entradas da Task
 
 ```yaml
 required:
@@ -224,13 +224,13 @@ optional:
   - auto_merge: false # If true, automatically apply updates to local file
 ```
 
-## Prerequisites
+## Pré-requisitos
 
-- PM tool configured in `.aiox-pm-config.yaml` (or will use local-only mode)
+- Ferramenta de PM configurada em `.aiox-pm-config.yaml` (ou usará o modo somente-local)
 
-## Task Execution Steps
+## Passos de Execução da Task
 
-### Step 1: Get PM Adapter
+### Passo 1: Obter o PM Adapter
 
 ```javascript
 const { getPMAdapter, isPMToolConfigured } = require('../.aiox-core/scripts/pm-adapter-factory');
@@ -245,7 +245,7 @@ const adapter = getPMAdapter();
 console.log(`Pulling from ${adapter.getName()}...`);
 ```
 
-### Step 2: Pull Updates
+### Passo 2: Puxar Atualizações
 
 ```javascript
 const result = await adapter.pullStory(storyId);
@@ -262,9 +262,9 @@ if (result.success) {
 }
 ```
 
-### Step 3: Display Updates (if any)
+### Passo 3: Exibir Atualizações (se houver)
 
-If updates found:
+Se forem encontradas atualizações:
 
 ```markdown
 📥 Updates available from {PM_TOOL}:
@@ -275,9 +275,9 @@ If updates found:
 Review changes before merging to local file.
 ```
 
-### Step 4: Optional Auto-Merge
+### Passo 4: Auto-Merge Opcional
 
-If `auto_merge: true` and updates exist:
+Se `auto_merge: true` e existirem atualizações:
 
 ```javascript
 // Update local story file with pulled changes
@@ -285,26 +285,26 @@ If `auto_merge: true` and updates exist:
 // DO NOT overwrite local task progress or dev notes
 ```
 
-## Error Handling
+## Tratamento de Erros
 
-- **No PM tool configured**: Inform local-only mode (not an error)
-- **Story not found in PM tool**: Display helpful message
-- **Connection failed**: Show adapter-specific error
+- **Nenhuma ferramenta de PM configurada**: Informar o modo somente-local (não é um erro)
+- **Story não encontrada na ferramenta de PM**: Exibir mensagem útil
+- **Falha de conexão**: Mostrar o erro específico do adapter
 
-## Notes
+## Notas
 
-- LocalAdapter always returns {success: true, updates: null}
-- Current implementation is pull-only (unidirectional sync)
-- Auto-merge should be used cautiously to avoid overwriting local changes
-- Future enhancement: bidirectional sync with conflict resolution
+- O LocalAdapter sempre retorna {success: true, updates: null}
+- A implementação atual é somente-pull (sincronização unidirecional)
+- O auto-merge deve ser usado com cautela para evitar sobrescrever mudanças locais
+- Aprimoramento futuro: sincronização bidirecional com resolução de conflitos
 
-## Limitations (v1.0)
+## Limitações (v1.0)
 
-- **Unidirectional**: Only pulls status changes, not full content
-- **No conflict resolution**: Manual merge required if conflicts exist
-- **Limited field mapping**: Only status synced in v1.0
+- **Unidirecional**: Puxa apenas mudanças de status, não o conteúdo completo
+- **Sem resolução de conflitos**: Merge manual necessário se houver conflitos
+- **Mapeamento de campos limitado**: Apenas o status é sincronizado na v1.0
 
-## Integration with Story Manager
+## Integração com o Story Manager
 
 ```javascript
 const { pullStoryFromPM } = require('../.aiox-core/scripts/story-manager');

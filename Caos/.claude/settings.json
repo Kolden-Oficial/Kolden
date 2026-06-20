@@ -18,6 +18,20 @@
           {
             "type": "command",
             "command": "$CLAUDE_PROJECT_DIR/.claude/reflexos/pos-escrita.sh"
+          },
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/reflexos/marca-trabalho.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/reflexos/encerramento-aprendizado.sh"
           }
         ]
       }

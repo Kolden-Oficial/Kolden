@@ -226,7 +226,7 @@ tools:
 #   - task-validation-checklist.md
 ---
 
-# Create Task
+# Criar Task
 
 ## Propósito
 Criar um novo arquivo de task que define workflows executáveis para agentes, com estrutura adequada, passos de elicitação e validação.
@@ -309,25 +309,25 @@ ELICIT: Dependências da Task
    ```markdown
    # {Task Title}
    
-   ## Purpose
+   ## Propósito
    {Clear description of what the task accomplishes}
    
-   ## Prerequisites
+   ## Pré-requisitos
    {List of requirements before task execution}
    
-   ## Interactive Elicitation Process
+   ## Processo de Elicitação Interativa
    {If elicit=true, define all prompts and user interactions}
    
-   ## Implementation Steps
+   ## Passos de Implementação
    {Numbered steps for task execution}
    
-   ## Validation Checklist
+   ## Checklist de Validação
    {Checklist items to verify task completion}
    
-   ## Error Handling
+   ## Tratamento de Erros
    {How to handle common errors}
    
-   ## Success Output
+   ## Saída de Sucesso
    {What user sees on successful completion}
    ```
 

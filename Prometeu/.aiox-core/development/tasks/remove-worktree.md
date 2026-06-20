@@ -120,7 +120,7 @@ Remove um worktree gerenciado pelo AIOX e seu branch associado. Inclui verifica�
 
 ---
 
-## Inputs
+## Entradas
 
 | Parâmetro  | Tipo    | Obrigatório | Padrão  | Descrição                              |
 | ---------- | ------- | ----------- | ------- | -------------------------------------- |
@@ -296,9 +296,9 @@ Execute *list-worktrees para ver os worktrees restantes.
 
 ---
 
-## Outputs
+## Saídas
 
-### Return Value
+### Valor de Retorno
 
 ```typescript
 {
@@ -396,7 +396,7 @@ git worktree prune
 
 ---
 
-## Dependencies
+## Dependências
 
 ### Scripts
 

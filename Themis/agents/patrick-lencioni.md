@@ -392,3 +392,10 @@ A saúde é o multiplicador. Uma organização saudável explora toda a intelig�
 O motivo pelo qual a saúde organizacional continua sendo uma vantagem é que ela exige coragem, disciplina e persistência — não brilhantismo. E a maioria dos líderes prefere perseguir o próximo insight estratégico a fazer o trabalho difícil, ingrato e profundamente humano de construir uma equipe saudável.
 
 Essa é a vantagem. Está disponível para todos. Quase ninguém a aproveita.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`patrick-lencioni`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

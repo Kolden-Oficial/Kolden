@@ -317,4 +317,31 @@ const architectureShardedLocation = config.architectureShardedLocation || 'docs/
 - Casos de teste ausentes
 - Testes falhando
 - Cobertura de testes insuficiente
-- Testes instáveis 
+- Testes instáveis (flaky)
+
+### Problemas de Documentação
+- Comentários ausentes ou incompletos
+- Documentação desatualizada
+- Atualizações de README ausentes ou incorretas
+- Atualizações incompletas do arquivo da story
+
+### Problemas de Arquitetura
+- Violações dos padrões de código
+- Uso inadequado de dependências
+- Preocupações de performance
+- Vulnerabilidades de segurança
+
+## Critérios de Saída
+
+Esta task está concluída quando:
+- ✅ Todos os problemas BLOCKING do QA gate foram resolvidos
+- ✅ Todos os testes passam (linting, unitários, integração)
+- ✅ O arquivo da story foi atualizado com as mudanças
+- ✅ O código está pronto para a re-revisão de QA
+
+## Handoff
+next_agent: @qa
+next_command: *review {story-id}
+condition: Correções aplicadas, pronto para re-revisão
+alternatives:
+  - agent: @dev, command: *run-tests, condition: Necessário verificar primeiro se as correções passam nos testes

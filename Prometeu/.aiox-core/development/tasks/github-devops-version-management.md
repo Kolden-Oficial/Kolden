@@ -2,9 +2,9 @@
 
 **Task**: Gestão de Versão Semântica (Agnóstica de Repositório)
 
-**Purpose**: Analisar mudanças, recomendar incrementos de versão (bumps) e gerenciar o versionamento semântico para QUALQUER repositório usando o AIOX.
+**Propósito**: Analisar mudanças, recomendar incrementos de versão (bumps) e gerenciar o versionamento semântico para QUALQUER repositório usando o AIOX.
 
-**When to use**: Antes de criar um release, para determinar o número de versão apropriado com base nas mudanças.
+**Quando Usar**: Antes de criar um release, para determinar o número de versão apropriado com base nas mudanças.
 
 ## Modos de Execução
 
@@ -25,11 +25,11 @@
 - Execução com zero ambiguidade
 - **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (opcional, padrão: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: githubDevopsVersionManagement()
@@ -77,7 +77,7 @@ atomic_layer: Organism
 
 ## Pré-Condições
 
-**Purpose:** Validar pré-requisitos ANTES da execução da tarefa (bloqueante)
+**Propósito:** Validar pré-requisitos ANTES da execução da tarefa (bloqueante)
 
 **Checklist:**
 
@@ -95,7 +95,7 @@ pre-conditions:
 
 ## Pós-Condições
 
-**Purpose:** Validar o sucesso da execução APÓS a conclusão da tarefa
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da tarefa
 
 **Checklist:**
 
@@ -113,7 +113,7 @@ post-conditions:
 
 ## Critérios de Aceite
 
-**Purpose:** Critérios definitivos de aprovação/reprovação para a conclusão da tarefa
+**Propósito:** Critérios definitivos de aprovação/reprovação para a conclusão da tarefa
 
 **Checklist:**
 
@@ -134,12 +134,12 @@ acceptance-criteria:
 **Recursos externos/compartilhados usados por esta tarefa:**
 
 - **Tool:** task-runner
-  - **Purpose:** Execução e orquestração de tarefas
-  - **Source:** .aiox-core/core/task-runner.js
+  - **Propósito:** Execução e orquestração de tarefas
+  - **Origem:** .aiox-core/core/task-runner.js
 
 - **Tool:** logger
-  - **Purpose:** Logging de execução e rastreamento de erros
-  - **Source:** .aiox-core/utils/logger.js
+  - **Propósito:** Logging de execução e rastreamento de erros
+  - **Origem:** .aiox-core/utils/logger.js
 
 ---
 
@@ -148,32 +148,32 @@ acceptance-criteria:
 **Código específico do agente para esta tarefa:**
 
 - **Script:** execute-task.js
-  - **Purpose:** Wrapper genérico de execução de tarefas
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/execute-task.js
+  - **Propósito:** Wrapper genérico de execução de tarefas
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/execute-task.js
 
 ---
 
 ## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
 **Erros Comuns:**
 
-1. **Error:** Task Not Found (Tarefa Não Encontrada)
-   - **Cause:** A tarefa especificada não está registrada no sistema
-   - **Resolution:** Verificar o nome e o registro da tarefa
-   - **Recovery:** Listar as tarefas disponíveis, sugerir similares
+1. **Erro:** Task Not Found (Tarefa Não Encontrada)
+   - **Causa:** A tarefa especificada não está registrada no sistema
+   - **Resolução:** Verificar o nome e o registro da tarefa
+   - **Recuperação:** Listar as tarefas disponíveis, sugerir similares
 
-2. **Error:** Invalid Parameters (Parâmetros Inválidos)
-   - **Cause:** Os parâmetros da tarefa não correspondem ao schema esperado
-   - **Resolution:** Validar os parâmetros contra a definição da tarefa
-   - **Recovery:** Fornecer um template de parâmetros, rejeitar a execução
+2. **Erro:** Invalid Parameters (Parâmetros Inválidos)
+   - **Causa:** Os parâmetros da tarefa não correspondem ao schema esperado
+   - **Resolução:** Validar os parâmetros contra a definição da tarefa
+   - **Recuperação:** Fornecer um template de parâmetros, rejeitar a execução
 
-3. **Error:** Execution Timeout (Tempo de Execução Esgotado)
-   - **Cause:** A tarefa excede o tempo máximo de execução
-   - **Resolution:** Otimizar a tarefa ou aumentar o timeout
-   - **Recovery:** Encerrar a tarefa, limpar recursos, registrar o estado
+3. **Erro:** Execution Timeout (Tempo de Execução Esgotado)
+   - **Causa:** A tarefa excede o tempo máximo de execução
+   - **Resolução:** Otimizar a tarefa ou aumentar o timeout
+   - **Recuperação:** Encerrar a tarefa, limpar recursos, registrar o estado
 
 ---
 
@@ -192,7 +192,7 @@ token_usage: ~3,000-10,000 tokens
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A

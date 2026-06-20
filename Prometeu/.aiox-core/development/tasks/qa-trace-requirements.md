@@ -22,7 +22,7 @@
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: qaTraceRequirements()
@@ -128,11 +128,11 @@ acceptance-criteria:
 
 - **Tool:** validation-engine
   - **Propósito:** Validação baseada em regras e geração de relatórios
-  - **Source:** .aiox-core/utils/validation-engine.js
+  - **Origem:** .aiox-core/utils/validation-engine.js
 
 - **Tool:** schema-validator
   - **Propósito:** Validação de schema JSON/YAML
-  - **Source:** ajv ou similar
+  - **Origem:** ajv ou similar
 
 ---
 
@@ -142,8 +142,8 @@ acceptance-criteria:
 
 - **Script:** run-validation.js
   - **Propósito:** Executar regras de validação e gerar relatório
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/run-validation.js
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/run-validation.js
 
 ---
 
@@ -220,7 +220,7 @@ Criar uma matriz de rastreabilidade de requisitos que garanta que cada critério
 
 **IMPORTANTE**: Given-When-Then é usado aqui para documentar o mapeamento entre requisitos e testes, NÃO para escrever o código de teste real. Os testes devem seguir os padrões de teste do seu projeto (sem sintaxe BDD no código de teste).
 
-## Prerequisites
+## Pré-requisitos
 
 - Arquivo da story com critérios de aceite claros
 - Acesso aos arquivos de teste ou especificações de teste
@@ -294,9 +294,9 @@ coverage_gaps:
       description: 'Load test with 1000 concurrent connections'
 ```
 
-## Outputs
+## Saídas
 
-### Output 1: Bloco YAML do Gate
+### Saída 1: Bloco YAML do Gate
 
 **Gere para colar no arquivo de gate sob `trace`:**
 
@@ -314,7 +314,7 @@ trace:
   notes: 'See qa.qaLocation/assessments/{epic}.{story}-trace-{YYYYMMDD}.md'
 ```
 
-### Output 2: Relatório de Rastreabilidade
+### Saída 2: Relatório de Rastreabilidade
 
 **Salvar em:** `qa.qaLocation/assessments/{epic}.{story}-trace-{YYYYMMDD}.md`
 
@@ -457,7 +457,7 @@ Esta rastreabilidade alimenta os quality gates:
 - Lacunas menores → CONCERNS
 - Testes P0 ausentes do test-design → CONCERNS
 
-### Output 3: Linha de Hook da Story
+### Saída 3: Linha de Hook da Story
 
 **Imprima esta linha para a task de revisão citar:**
 

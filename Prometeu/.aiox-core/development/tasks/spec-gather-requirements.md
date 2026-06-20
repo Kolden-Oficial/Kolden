@@ -1,12 +1,12 @@
 # Spec Pipeline: Gather Requirements
 
-> **Phase:** 1 - Gather
-> **Owner Agent:** @pm
+> **Fase:** 1 - Gather
+> **Agente Responsável:** @pm
 > **Pipeline:** spec-pipeline
 
 ---
 
-## Purpose
+## Propósito
 
 Coletar e estruturar requisitos do usuário através de elicitation interativo. Transforma descrições informais em requisitos formais e categorizados.
 
@@ -20,7 +20,7 @@ autoClaude:
   pipelinePhase: spec-gather
 
   elicit: true
-  deterministic: false # LLM creativity needed for understanding intent
+  deterministic: false # Criatividade do LLM necessária para entender a intenção
   composable: true
 
   inputs:
@@ -65,9 +65,9 @@ autoClaude:
 
 ---
 
-## Execution Flow
+## Fluxo de Execução
 
-### Phase 1: Context Detection
+### Fase 1: Detecção de Contexto
 
 ```yaml
 steps:
@@ -80,9 +80,9 @@ steps:
       3. Existing spec → iterar sobre spec anterior
 ```
 
-### Phase 2: Elicitation (if source=user)
+### Fase 2: Elicitation (se source=user)
 
-**CRITICAL: This phase requires user interaction. Do NOT skip.**
+**CRÍTICO: Esta fase requer interação com o usuário. NÃO pule.**
 
 ```yaml
 elicitation:
@@ -91,7 +91,7 @@ elicitation:
   inspiration: GitHub Spec-Kit 9-category taxonomy
 
   questions:
-    # === Original 5 Categories ===
+    # === 5 Categorias Originais ===
 
     - id: q1-what
       category: functional
@@ -126,7 +126,7 @@ elicitation:
       question: 'Quais SUPOSIÇÕES estamos fazendo?'
       note: 'Documentar para validação posterior'
 
-    # === New 4 Categories (SDD Adoption) ===
+    # === 4 Novas Categorias (Adoção do SDD) ===
 
     - id: q6-domain
       category: domain-model
@@ -175,25 +175,25 @@ elicitation:
       note: 'Inconsistência terminológica causa bugs e confusão'
 ```
 
-### Phase 3: PRD Extraction (if source=prd)
+### Fase 3: Extração do PRD (se source=prd)
 
 ```yaml
 prd_extraction:
   enabled: true
 
   sections_to_extract:
-    - user_stories: 'Extract user stories as functional requirements'
-    - acceptance_criteria: 'Map to acceptance array'
-    - constraints: 'Technical and business constraints'
-    - nfrs: 'Non-functional requirements'
+    - user_stories: 'Extrair user stories como requisitos funcionais'
+    - acceptance_criteria: 'Mapear para o array de acceptance'
+    - constraints: 'Restrições técnicas e de negócio'
+    - nfrs: 'Requisitos não-funcionais'
 
   validation:
-    - Ensure all extracted items have clear descriptions
-    - Flag ambiguous requirements for clarification
-    - Cross-reference with PRD goals
+    - Garantir que todos os itens extraídos tenham descrições claras
+    - Sinalizar requisitos ambíguos para esclarecimento
+    - Cruzar com os goals do PRD
 ```
 
-### Phase 4: Structuring
+### Fase 4: Estruturação
 
 ```yaml
 structuring:
@@ -302,7 +302,7 @@ structuring:
 
 ---
 
-## Output Schema
+## Schema de Saída
 
 ```json
 {
@@ -368,7 +368,7 @@ structuring:
     },
     "domainModel": {
       "type": "array",
-      "description": "Entities and relationships (SDD q6)",
+      "description": "Entidades e relacionamentos (SDD q6)",
       "items": {
         "type": "object",
         "required": ["entity", "description"],
@@ -381,7 +381,7 @@ structuring:
     },
     "interactions": {
       "type": "array",
-      "description": "UX flows and states (SDD q7)",
+      "description": "Fluxos e estados de UX (SDD q7)",
       "items": {
         "type": "object",
         "required": ["flow", "description"],
@@ -394,7 +394,7 @@ structuring:
     },
     "edgeCases": {
       "type": "array",
-      "description": "Failure scenarios (SDD q8)",
+      "description": "Cenários de falha (SDD q8)",
       "items": {
         "type": "object",
         "required": ["scenario", "handling"],
@@ -407,7 +407,7 @@ structuring:
     },
     "terminology": {
       "type": "array",
-      "description": "Domain glossary (SDD q9)",
+      "description": "Glossário do domínio (SDD q9)",
       "items": {
         "type": "object",
         "required": ["term", "definition"],
@@ -436,9 +436,9 @@ structuring:
 
 ---
 
-## Integration
+## Integração
 
-### Command Integration (@pm)
+### Integração de Comando (@pm)
 
 ```yaml
 command:
@@ -451,7 +451,7 @@ command:
     - '*gather-requirements STORY-42 --source=prd --prd=docs/prd/feature-x.md'
 ```
 
-### Pipeline Integration
+### Integração com o Pipeline
 
 ```yaml
 pipeline:
@@ -466,7 +466,7 @@ pipeline:
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
 ```yaml
 errors:
@@ -488,11 +488,11 @@ errors:
 
 ---
 
-## Examples
+## Exemplos
 
-### Example 1: User Elicitation
+### Exemplo 1: Elicitation com o Usuário
 
-**Input:** "Quero adicionar login com Google"
+**Entrada:** "Quero adicionar login com Google"
 
 **Elicitation:**
 
@@ -513,11 +513,11 @@ Q4: Como sabemos que está PRONTO?
    And após autorização, está logado no sistema
 ```
 
-**Output:** `docs/stories/STORY-42/spec/requirements.json`
+**Saída:** `docs/stories/STORY-42/spec/requirements.json`
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 metadata:

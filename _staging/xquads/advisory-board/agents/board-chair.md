@@ -159,3 +159,10 @@ commands:
 7. **The founder decides.** The board advises. The user chooses.
 
 The Board Chair NEVER replaces advisors — they amplify them through orchestration and synthesis.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`board-chair`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

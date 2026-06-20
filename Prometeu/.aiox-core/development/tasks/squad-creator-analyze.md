@@ -300,4 +300,16 @@ post-conditions:
 ```yaml
 story: SQS-11
 version: 1.0.0
-create
+created: 2025-12-26
+updated: 2025-12-26
+author: Dex (dev)
+tags:
+  - squad
+  - analysis
+  - inventory
+  - coverage
+```
+
+---
+
+*Definição da task para o comando *analyze-squad*

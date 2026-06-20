@@ -165,3 +165,10 @@ Phase 5: Retention Infrastructure --> Nick Mehta (health scores, churn predictio
 Phase 6: Community Building --> David Spinks (SPACES model, community ROI)
 Phase 7: Final Review --> Data Chief (7-point quality criteria)
 ```
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`data-chief`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

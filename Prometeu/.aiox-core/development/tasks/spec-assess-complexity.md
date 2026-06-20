@@ -1,12 +1,12 @@
 # Spec Pipeline: Assess Complexity
 
-> **Phase:** 2 - Assess
-> **Owner Agent:** @architect
+> **Fase:** 2 - Assess
+> **Agente Responsável:** @architect
 > **Pipeline:** spec-pipeline
 
 ---
 
-## Purpose
+## Propósito
 
 Avaliar a complexidade de uma story/requisito para determinar quais fases do pipeline são necessárias. Classifica em SIMPLE, STANDARD ou COMPLEX, cada um ativando diferentes conjuntos de fases.
 
@@ -37,7 +37,7 @@ autoClaude:
       type: enum
       values: [SIMPLE, STANDARD, COMPLEX]
       required: false
-      description: Manual override for complexity
+      description: Override manual da complexidade
 
   outputs:
     - name: complexity.json
@@ -46,20 +46,20 @@ autoClaude:
       schema: complexity-schema
 
   verification:
-    type: none # Assessment is advisory
+    type: none # A avaliação é consultiva
 
   contextRequirements:
     projectContext: true
-    filesContext: true # Need to analyze codebase
+    filesContext: true # Necessário analisar o codebase
     implementationPlan: false
     spec: false
 ```
 
 ---
 
-## Complexity Dimensions
+## Dimensões de Complexidade
 
-### Dimension 1: Scope
+### Dimensão 1: Escopo
 
 ```yaml
 scope:
@@ -73,12 +73,12 @@ scope:
     5: '20+ arquivos, arquitetura inteira'
 
   analysis:
-    - Count files mentioned in requirements
-    - Estimate based on feature type
-    - Check existing patterns for similar features
+    - Contar arquivos mencionados nos requisitos
+    - Estimar com base no tipo de feature
+    - Verificar padrões existentes para features similares
 ```
 
-### Dimension 2: Integration
+### Dimensão 2: Integração
 
 ```yaml
 integration:
@@ -92,12 +92,12 @@ integration:
     5: 'Orquestração de múltiplos sistemas'
 
   analysis:
-    - Identify external services mentioned
-    - Check for authentication requirements
-    - Assess data flow complexity
+    - Identificar serviços externos mencionados
+    - Verificar requisitos de autenticação
+    - Avaliar a complexidade do fluxo de dados
 ```
 
-### Dimension 3: Infrastructure
+### Dimensão 3: Infraestrutura
 
 ```yaml
 infrastructure:
@@ -111,12 +111,12 @@ infrastructure:
     5: 'Nova infraestrutura (servidor, container, etc)'
 
   analysis:
-    - Check for database changes
-    - Identify new services needed
-    - Assess deployment impact
+    - Verificar mudanças de banco de dados
+    - Identificar novos serviços necessários
+    - Avaliar o impacto de deployment
 ```
 
-### Dimension 4: Knowledge
+### Dimensão 4: Conhecimento
 
 ```yaml
 knowledge:
@@ -130,12 +130,12 @@ knowledge:
     5: 'Área de domínio desconhecida, pesquisa necessária'
 
   analysis:
-    - Check existing patterns in codebase
-    - Identify new technologies mentioned
-    - Assess learning curve
+    - Verificar padrões existentes no codebase
+    - Identificar novas tecnologias mencionadas
+    - Avaliar a curva de aprendizado
 ```
 
-### Dimension 5: Risk
+### Dimensão 5: Risco
 
 ```yaml
 risk:
@@ -149,14 +149,14 @@ risk:
     5: 'Risco crítico, core do sistema'
 
   analysis:
-    - Assess user impact
-    - Check for security implications
-    - Evaluate reversibility
+    - Avaliar o impacto no usuário
+    - Verificar implicações de segurança
+    - Avaliar a reversibilidade
 ```
 
 ---
 
-## Classification Thresholds
+## Limiares de Classificação
 
 ```yaml
 thresholds:
@@ -187,9 +187,9 @@ thresholds:
 
 ---
 
-## Execution Flow
+## Fluxo de Execução
 
-### Step 1: Load Requirements
+### Passo 1: Carregar Requisitos
 
 ```yaml
 load:
@@ -198,7 +198,7 @@ load:
   validate: true
 ```
 
-### Step 2: Analyze Codebase (if needed)
+### Passo 2: Analisar o Codebase (se necessário)
 
 ```yaml
 codebase_analysis:
@@ -206,42 +206,42 @@ codebase_analysis:
 
   actions:
     - id: count_affected_files
-      description: 'Estimate files that will be modified'
+      description: 'Estimar os arquivos que serão modificados'
       method: |
-        1. Parse functional requirements
-        2. Identify components/modules mentioned
-        3. Search codebase for related files
-        4. Count unique files
+        1. Analisar os requisitos funcionais
+        2. Identificar componentes/módulos mencionados
+        3. Buscar no codebase por arquivos relacionados
+        4. Contar arquivos únicos
 
     - id: check_patterns
-      description: 'Check if similar patterns exist'
+      description: 'Verificar se existem padrões similares'
       method: |
-        1. Extract key concepts from requirements
-        2. Search for similar implementations
-        3. Assess reusability
+        1. Extrair conceitos-chave dos requisitos
+        2. Buscar por implementações similares
+        3. Avaliar a reusabilidade
 
     - id: identify_integrations
-      description: 'Find external integrations needed'
+      description: 'Encontrar as integrações externas necessárias'
       method: |
-        1. Parse requirements for external services
-        2. Check existing integrations
-        3. Identify new connections needed
+        1. Analisar os requisitos por serviços externos
+        2. Verificar integrações existentes
+        3. Identificar novas conexões necessárias
 ```
 
-### Step 3: Score Dimensions
+### Passo 3: Pontuar as Dimensões
 
 ```yaml
 scoring:
   action: evaluate_each_dimension
 
   process: |
-    For each dimension (scope, integration, infrastructure, knowledge, risk):
-    1. Apply scoring criteria
-    2. Document rationale
-    3. Assign score 1-5
+    Para cada dimensão (scope, integration, infrastructure, knowledge, risk):
+    1. Aplicar os critérios de pontuação
+    2. Documentar a justificativa
+    3. Atribuir pontuação de 1 a 5
 ```
 
-### Step 4: Calculate Result
+### Passo 4: Calcular o Resultado
 
 ```yaml
 calculation:
@@ -260,7 +260,7 @@ calculation:
       result = COMPLEX
 ```
 
-### Step 5: Generate Output
+### Passo 5: Gerar a Saída
 
 ```yaml
 output:
@@ -310,7 +310,7 @@ output:
 
 ---
 
-## Output Schema
+## Schema de Saída
 
 ```json
 {
@@ -354,9 +354,9 @@ output:
 
 ---
 
-## Integration
+## Integração
 
-### Command Integration (@architect)
+### Integração de Comando (@architect)
 
 ```yaml
 command:
@@ -369,7 +369,7 @@ command:
     - '*assess-complexity STORY-42 --complexity=COMPLEX'
 ```
 
-### Pipeline Integration
+### Integração com o Pipeline
 
 ```yaml
 pipeline:
@@ -390,7 +390,7 @@ pipeline:
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
 ```yaml
 errors:
@@ -412,13 +412,13 @@ errors:
 
 ---
 
-## Examples
+## Exemplos
 
-### Example: Login Feature Assessment
+### Exemplo: Avaliação da Feature de Login
 
-**Input:** requirements.json with Google OAuth login
+**Entrada:** requirements.json com login Google OAuth
 
-**Analysis:**
+**Análise:**
 
 ```
 Scope:       3 (auth module, login page, user service)
@@ -430,7 +430,7 @@ Risk:        3 (affects all users)
 Total:       13 → STANDARD
 ```
 
-**Output:**
+**Saída:**
 
 ```json
 {
@@ -444,7 +444,7 @@ Total:       13 → STANDARD
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 metadata:

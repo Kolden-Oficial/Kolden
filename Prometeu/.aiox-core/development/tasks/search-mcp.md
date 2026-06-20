@@ -1,10 +1,10 @@
-# Search MCP Catalog Task
+# Task Buscar Catálogo de MCP
 
-> Search and discover available MCP servers in the Docker MCP Toolkit catalog.
+> Buscar e descobrir servidores MCP disponíveis no catálogo do Docker MCP Toolkit.
 
 ---
 
-## Task Definition
+## Definição da Task
 
 ```yaml
 task: searchMcp()
@@ -18,7 +18,7 @@ elicit: true
   tipo: string
   origem: User Input
   obrigatorio: true
-  validacao: Search query for MCP catalog (e.g., "notion", "database", "slack")
+  validacao: Consulta de busca para o catálogo MCP (ex.: "notion", "database", "slack")
 
 **Saida:**
 - campo: mcp_results
@@ -28,23 +28,23 @@ elicit: true
 
 - campo: mcp_details
   tipo: object
-  destino: Console output (if user selects an MCP)
+  destino: Console output (se o usuário selecionar um MCP)
   persistido: false
 ```
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
 ```yaml
 pre-conditions:
-  - [ ] Docker MCP Toolkit running
+  - [ ] Docker MCP Toolkit em execução
     tipo: pre-condition
     blocker: true
     validacao: docker mcp --version succeeds
     error_message: "Docker MCP Toolkit required. Enable in Docker Desktop settings."
 
-  - [ ] Docker daemon running
+  - [ ] Docker daemon em execução
     tipo: pre-condition
     blocker: true
     validacao: docker info succeeds
@@ -53,9 +53,9 @@ pre-conditions:
 
 ---
 
-## Interactive Elicitation
+## Elicitação Interativa
 
-### Step 1: Search Query
+### Passo 1: Consulta de Busca
 
 ```
 ELICIT: MCP Search Query
@@ -73,7 +73,7 @@ Examples:
 → Enter search query: _______________
 ```
 
-### Step 2: Display Results
+### Passo 2: Exibir Resultados
 
 ```
 ELICIT: Search Results
@@ -98,7 +98,7 @@ Options:
 → Select option: ___
 ```
 
-### Step 3: Show MCP Details (Optional)
+### Passo 3: Exibir Detalhes do MCP (Opcional)
 
 ```
 ELICIT: MCP Details
@@ -130,9 +130,9 @@ Options:
 
 ---
 
-## Implementation Steps
+## Passos de Implementação
 
-### 1. Search the Catalog
+### 1. Buscar no Catálogo
 
 ```bash
 # Basic search
@@ -150,7 +150,7 @@ docker mcp catalog search "*"
 # mcp/postgres   PostgreSQL database access
 ```
 
-### 2. Get MCP Details
+### 2. Obter Detalhes do MCP
 
 ```bash
 # Get detailed info about an MCP
@@ -170,7 +170,7 @@ docker mcp catalog info notion
 #   - NOTION_API_KEY (required)
 ```
 
-### 3. Filter by Category (if supported)
+### 3. Filtrar por Categoria (se suportado)
 
 ```bash
 # Search by category
@@ -181,22 +181,22 @@ docker mcp catalog search --category automation
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
 ```yaml
 post-conditions:
-  - [ ] Search results displayed
+  - [ ] Resultados da busca exibidos
     tipo: post-condition
     blocker: false
-    validacao: User can see matching MCPs or "no results" message
+    validacao: O usuário consegue ver MCPs correspondentes ou a mensagem "no results"
     error_message: "Search failed - check Docker MCP connection"
 ```
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-### Error: No Results Found
+### Erro: Nenhum Resultado Encontrado
 
 ```
 Resolution:
@@ -206,7 +206,7 @@ Resolution:
 4. Browse full catalog: docker mcp catalog search "*"
 ```
 
-### Error: Docker MCP Not Available
+### Erro: Docker MCP Indisponível
 
 ```
 Resolution:
@@ -216,7 +216,7 @@ Resolution:
 4. Verify: docker mcp --version
 ```
 
-### Error: Catalog Timeout
+### Erro: Timeout do Catálogo
 
 ```
 Resolution:
@@ -228,7 +228,7 @@ Resolution:
 
 ---
 
-## Success Output
+## Saída de Sucesso
 
 ```
 ✅ MCP Catalog Search Complete
@@ -252,42 +252,42 @@ Next steps:
 
 ---
 
-## Common Search Examples
+## Exemplos Comuns de Busca
 
-| Search Query | Finds | Use Case |
+| Consulta de Busca | Encontra | Caso de Uso |
 |--------------|-------|----------|
-| `notion` | Notion workspace MCP | Document management |
-| `database` | postgres, mysql, sqlite, redis | Database access |
-| `slack` | Slack messaging MCP | Team communication |
-| `browser` | puppeteer, playwright | Browser automation |
-| `storage` | s3, gcs, azure-blob | Cloud storage |
-| `github` | GitHub API MCP | Repository management |
-| `*` | All available MCPs | Browse full catalog |
+| `notion` | MCP de workspace Notion | Gestão de documentos |
+| `database` | postgres, mysql, sqlite, redis | Acesso a banco de dados |
+| `slack` | MCP de mensageria Slack | Comunicação de equipe |
+| `browser` | puppeteer, playwright | Automação de navegador |
+| `storage` | s3, gcs, azure-blob | Armazenamento em nuvem |
+| `github` | MCP da API do GitHub | Gestão de repositório |
+| `*` | Todos os MCPs disponíveis | Navegar pelo catálogo completo |
 
 ---
 
-## Related Commands
+## Comandos Relacionados
 
-| Command | Description |
+| Comando | Descrição |
 |---------|-------------|
-| `*add-mcp` | Add an MCP server to Docker MCP Toolkit |
-| `*list-mcps` | List currently enabled MCPs |
-| `*remove-mcp` | Remove an MCP from Docker MCP Toolkit |
-| `*setup-mcp-docker` | Initial Docker MCP Toolkit setup |
+| `*add-mcp` | Adicionar um servidor MCP ao Docker MCP Toolkit |
+| `*list-mcps` | Listar MCPs atualmente habilitados |
+| `*remove-mcp` | Remover um MCP do Docker MCP Toolkit |
+| `*setup-mcp-docker` | Configuração inicial do Docker MCP Toolkit |
 
 ---
 
 ## Performance
 
 ```yaml
-duration_expected: 1-2 minutes
-cost_estimated: $0 (local Docker operation)
+duration_expected: 1-2 minutos
+cost_estimated: $0 (operação local do Docker)
 token_usage: ~200-500 tokens
 ```
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 task: search-mcp

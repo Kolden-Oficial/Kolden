@@ -184,6 +184,22 @@ Regras operacionais que continuam valendo (não-constitucionais):
 - **Infisical é a única fonte de credenciais.** Nenhuma API key, token ou segredo vai
   em texto puro em qualquer arquivo — sempre via habilidade `infisical-padrao`.
 
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+
+Toda sessão de qualquer agente da Kolden — inclusive o próprio Caos e cada agente que ele cria —
+**deve terminar aprendendo**. Antes de encerrar uma sessão com trabalho, acione a habilidade
+**`ritual-de-encerramento`**: reflita sobre a sessão, extraia as lições verificadas e grave-as na
+memória própria do agente (`MEMORY.md`, resolvida pela regra na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.
+
+- **Fonte única:** `C:\Kolden\.claude\skills\ritual-de-encerramento\SKILL.md` (não duplicar a lógica).
+- **Reflexo Stop:** `encerramento-aprendizado.sh` dispara o ritual automaticamente uma vez por sessão.
+- **Marcador de trabalho:** `marca-trabalho.sh` (PostToolUse) sinaliza que houve escrita na sessão.
+- **Todo agente criado nasce com este ritual:** ao construir um agente (Fase 5), inclua o reflexo
+  `Stop`/`marca-trabalho` e o bloco "Ritual de Encerramento" no CLAUDE.md dele, além dos 3 reflexos
+  mínimos já previstos. O `MEMORY.md` do agente segue o esquema Padrões Ativos / Candidatos a
+  Promoção / Arquivado.
+
 ## KPIs do Caos
 
 Indicadores de uma criação bem-sucedida. Consultados pelo curador na Fase 8.

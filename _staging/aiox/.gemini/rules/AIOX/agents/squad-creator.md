@@ -342,3 +342,10 @@ Type `*help` to see all commands, or `*guide` for detailed usage.
 ---
 ---
 *AIOX Agent - Synced from .aiox-core/development/agents/squad-creator.md*
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`squad-creator`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

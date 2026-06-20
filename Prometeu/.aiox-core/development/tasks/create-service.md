@@ -1,10 +1,10 @@
 # Create Service
 
-## Purpose
+## Propósito
 
-Create a new service using standardized Handlebars templates from WIS-10. Generates consistent TypeScript service structures with proper configuration, testing, and documentation.
+Criar um novo serviço usando templates Handlebars padronizados do WIS-10. Gera estruturas de serviço TypeScript consistentes, com configuração, testes e documentação adequados.
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: createService()
@@ -20,7 +20,7 @@ inputs:
     type: string
     required: true
     pattern: "^[a-z][a-z0-9-]*$"
-    validation: Must be kebab-case, start with letter
+    validation: Deve ser kebab-case, começar com letra
 
   - name: service_type
     type: enum
@@ -36,7 +36,7 @@ inputs:
   - name: description
     type: string
     required: true
-    validation: Non-empty, max 200 characters
+    validation: Não vazio, máximo de 200 caracteres
 
   - name: env_vars
     type: array
@@ -57,139 +57,139 @@ outputs:
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
 ```yaml
 pre-conditions:
-  - [ ] WIS-10 templates exist at .aiox-core/development/templates/service-template/
+  - [ ] Templates do WIS-10 existem em .aiox-core/development/templates/service-template/
     tipo: pre-condition
     blocker: true
-    validação: Check template directory exists with required .hbs files
-    error_message: "Templates not found. Run WIS-10 first."
+    validação: Verificar se o diretório de templates existe com os arquivos .hbs necessários
+    error_message: "Templates não encontrados. Rode o WIS-10 primeiro."
 
-  - [ ] Service name is unique (no existing service with same name)
+  - [ ] Nome do serviço é único (nenhum serviço existente com o mesmo nome)
     tipo: pre-condition
     blocker: true
-    validação: Check .aiox-core/infrastructure/services/{name}/ does not exist
-    error_message: "Service '{name}' already exists. Choose a different name."
+    validação: Verificar se .aiox-core/infrastructure/services/{name}/ não existe
+    error_message: "Serviço '{name}' já existe. Escolha um nome diferente."
 
-  - [ ] Service name follows kebab-case pattern
+  - [ ] Nome do serviço segue o padrão kebab-case
     tipo: pre-condition
     blocker: true
-    validação: Regex match ^[a-z][a-z0-9-]*$
-    error_message: "Invalid name. Use kebab-case (e.g., my-api-service)"
+    validação: Correspondência regex ^[a-z][a-z0-9-]*$
+    error_message: "Nome inválido. Use kebab-case (ex.: my-api-service)"
 ```
 
 ---
 
-## Interactive Elicitation Process
+## Processo de Elicitação Interativa
 
-### Step 1: Service Name
+### Passo 1: Nome do Serviço
 ```
-ELICIT: Service Name
+ELICIT: Nome do Serviço
 
-What is the service name?
-(Use kebab-case, e.g., "github-api", "file-processor", "auth-helper")
+Qual é o nome do serviço?
+(Use kebab-case, ex.: "github-api", "file-processor", "auth-helper")
 
-→ Validation: ^[a-z][a-z0-9-]*$
-→ Check: Unique (not existing)
-→ On invalid: Re-prompt with error message
-```
-
-### Step 2: Service Type
-```
-ELICIT: Service Type
-
-What type of service is this?
-
-1. api-integration - External API client with rate limiting and auth
-2. utility - Internal helper/utility service
-3. agent-tool - Tool for AIOX agents
-
-→ Default: utility
-→ If api-integration: Enable client.ts generation
+→ Validação: ^[a-z][a-z0-9-]*$
+→ Verificação: Único (não existente)
+→ Se inválido: Reapresentar prompt com mensagem de erro
 ```
 
-### Step 3: Authentication
+### Passo 2: Tipo de Serviço
 ```
-ELICIT: Authentication Required
+ELICIT: Tipo de Serviço
 
-Does this service require authentication?
+Que tipo de serviço é este?
 
-1. Yes - Include auth configuration and secure headers
-2. No - No authentication needed
+1. api-integration - Cliente de API externa com rate limiting e autenticação
+2. utility - Serviço auxiliar/utilitário interno
+3. agent-tool - Ferramenta para agentes AIOX
 
-→ Default: No
-→ If Yes: Add auth placeholders to config
-```
-
-### Step 4: Description
-```
-ELICIT: Service Description
-
-Brief description of the service:
-(Max 200 characters, will appear in README and JSDoc)
-
-→ Validation: Non-empty, <= 200 chars
+→ Padrão: utility
+→ Se api-integration: Habilitar a geração de client.ts
 ```
 
-### Step 5: Environment Variables
+### Passo 3: Autenticação
 ```
-ELICIT: Environment Variables
+ELICIT: Autenticação Necessária
 
-What environment variables does this service need?
-(Enter comma-separated list, or 'none')
+Este serviço requer autenticação?
 
-Examples: API_KEY, BASE_URL, TIMEOUT_MS
+1. Sim - Incluir configuração de autenticação e cabeçalhos seguros
+2. Não - Nenhuma autenticação necessária
 
-→ Default: none
-→ Parse: Split by comma, trim whitespace
-→ Generate: .env.example entries
+→ Padrão: Não
+→ Se Sim: Adicionar placeholders de autenticação à config
+```
+
+### Passo 4: Descrição
+```
+ELICIT: Descrição do Serviço
+
+Breve descrição do serviço:
+(Máximo de 200 caracteres, aparecerá no README e no JSDoc)
+
+→ Validação: Não vazio, <= 200 caracteres
+```
+
+### Passo 5: Variáveis de Ambiente
+```
+ELICIT: Variáveis de Ambiente
+
+Quais variáveis de ambiente este serviço precisa?
+(Insira uma lista separada por vírgula, ou 'none')
+
+Exemplos: API_KEY, BASE_URL, TIMEOUT_MS
+
+→ Padrão: none
+→ Parse: Dividir por vírgula, remover espaços em branco
+→ Gerar: Entradas no .env.example
 ```
 
 ---
 
-## Implementation Steps
+## Passos de Implementação
 
-### Step 0: Code Intelligence Duplicate Check (Pre-Scaffold)
+### Passo 0: Verificação de Duplicata por Code Intelligence (Pré-Scaffold)
 
-Before scaffolding the service, check if a similar service already exists using code intelligence:
+Antes de fazer o scaffold do serviço, verifique se um serviço similar já existe usando code intelligence:
 
 ```javascript
-// Code Intelligence pre-scaffold check (graceful — never blocks)
+// Verificação pré-scaffold de Code Intelligence (graciosa — nunca bloqueia)
 const { isCodeIntelAvailable } = require('.aiox-core/core/code-intel');
 const { checkBeforeWriting } = require('.aiox-core/core/code-intel/helpers/dev-helper');
 
 if (isCodeIntelAvailable()) {
   const result = await checkBeforeWriting(serviceName, description);
   if (result) {
-    // Display as advisory — does NOT block scaffold
+    // Exibir como aviso consultivo — NÃO bloqueia o scaffold
     console.log('⚠️  Code Intelligence Suggestion:');
     console.log(`   ${result.suggestion}`);
     console.log('   Consider REUSE or ADAPT before creating a new service.');
-    // In interactive mode: prompt user to confirm proceeding
-    // In YOLO mode: log and continue
+    // No modo interativo: solicitar ao usuário a confirmação para prosseguir
+    // No modo YOLO: registrar em log e continuar
   }
 }
-// If code intelligence not available: proceed normally (no impact)
+// Se o code intelligence não estiver disponível: prosseguir normalmente (sem impacto)
 ```
 
-### Step 1: Validate Inputs
+### Passo 1: Validar Entradas
 ```javascript
-// Validate service_name
+// Validar service_name
 const namePattern = /^[a-z][a-z0-9-]*$/;
 if (!namePattern.test(serviceName)) {
   throw new Error(`Invalid service name: ${serviceName}. Use kebab-case.`);
 }
 
-// Check uniqueness
+// Verificar unicidade
 const targetDir = `.aiox-core/infrastructure/services/${serviceName}/`;
 if (fs.existsSync(targetDir)) {
   throw new Error(`Service '${serviceName}' already exists.`);
 }
 ```
 
-### Step 2: Load Templates
+### Passo 2: Carregar Templates
 ```javascript
 const templateDir = '.aiox-core/development/templates/service-template/';
 const templates = [
@@ -198,18 +198,18 @@ const templates = [
   'types.ts.hbs',
   'errors.ts.hbs',
   'package.json.hbs',
-  'tsconfig.json',      // Static (no .hbs)
-  'jest.config.js',     // Static (no .hbs)
+  'tsconfig.json',      // Estático (sem .hbs)
+  'jest.config.js',     // Estático (sem .hbs)
   '__tests__/index.test.ts.hbs'
 ];
 
-// Conditional: client.ts.hbs only for api-integration
+// Condicional: client.ts.hbs apenas para api-integration
 if (serviceType === 'api-integration') {
   templates.push('client.ts.hbs');
 }
 ```
 
-### Step 3: Prepare Template Context
+### Passo 3: Preparar o Contexto do Template
 ```javascript
 const context = {
   serviceName: serviceName,                    // kebab-case
@@ -227,56 +227,56 @@ const context = {
 };
 ```
 
-### Step 4: Generate Files
+### Passo 4: Gerar Arquivos
 ```javascript
-// Create target directory
+// Criar o diretório alvo
 fs.mkdirSync(targetDir, { recursive: true });
 fs.mkdirSync(`${targetDir}__tests__/`, { recursive: true });
 
-// Process each template
+// Processar cada template
 for (const templateFile of templates) {
   const templatePath = `${templateDir}${templateFile}`;
   const isHandlebars = templateFile.endsWith('.hbs');
 
-  // Determine output filename
+  // Determinar o nome do arquivo de saída
   const outputFile = isHandlebars
     ? templateFile.replace('.hbs', '')
     : templateFile;
   const outputPath = `${targetDir}${outputFile}`;
 
   if (isHandlebars) {
-    // Render Handlebars template
+    // Renderizar o template Handlebars
     const template = fs.readFileSync(templatePath, 'utf8');
     const compiled = Handlebars.compile(template);
     const content = compiled(context);
     fs.writeFileSync(outputPath, content);
   } else {
-    // Copy static file
+    // Copiar o arquivo estático
     fs.copyFileSync(templatePath, outputPath);
   }
 }
 ```
 
-### Step 5: Post-Generation
+### Passo 5: Pós-Geração
 ```bash
-# Navigate to service directory
+# Navegar até o diretório do serviço
 cd .aiox-core/infrastructure/services/{service_name}/
 
-# Install dependencies
+# Instalar dependências
 npm install
 
-# Build TypeScript
+# Compilar o TypeScript
 npm run build
 
-# Run tests
+# Rodar os testes
 npm test
 ```
 
 ---
 
-## Handlebars Helpers Required
+## Helpers Handlebars Necessários
 
-The following helpers must be available:
+Os seguintes helpers devem estar disponíveis:
 
 ```javascript
 Handlebars.registerHelper('pascalCase', (str) => {
@@ -303,45 +303,45 @@ Handlebars.registerHelper('upperCase', (str) => {
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
 ```yaml
 post-conditions:
-  - [ ] All template files generated successfully
+  - [ ] Todos os arquivos de template gerados com sucesso
     tipo: post-condition
     blocker: true
-    validação: Verify all expected files exist in target directory
+    validação: Verificar se todos os arquivos esperados existem no diretório alvo
 
-  - [ ] TypeScript compiles without errors
+  - [ ] TypeScript compila sem erros
     tipo: post-condition
     blocker: false
-    validação: Run npm run build, check exit code
+    validação: Rodar npm run build, verificar o exit code
 
-  - [ ] Tests pass
+  - [ ] Testes passam
     tipo: post-condition
     blocker: false
-    validação: Run npm test, check exit code
+    validação: Rodar npm test, verificar o exit code
 ```
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-| Error | Cause | Resolution |
+| Erro | Causa | Resolução |
 |-------|-------|------------|
-| Service name exists | Directory already present | Prompt for different name |
-| Template not found | WIS-10 not installed | Error: "Run WIS-10 first" |
-| npm install fails | Network/package issues | Warning, continue without deps |
-| Build fails | TypeScript errors | Warning, show errors, continue |
-| Invalid name format | Name not kebab-case | Re-prompt with validation error |
+| Nome do serviço já existe | Diretório já presente | Solicitar um nome diferente |
+| Template não encontrado | WIS-10 não instalado | Erro: "Rode o WIS-10 primeiro" |
+| Falha no npm install | Problemas de rede/pacotes | Aviso, continuar sem dependências |
+| Falha no build | Erros de TypeScript | Aviso, exibir erros, continuar |
+| Formato de nome inválido | Nome não está em kebab-case | Reapresentar prompt com erro de validação |
 
-**Error Recovery Strategy:**
+**Estratégia de Recuperação de Erros:**
 ```javascript
-// Atomic generation - rollback on failure
+// Geração atômica - rollback em caso de falha
 try {
   generateAllFiles(targetDir, templates, context);
 } catch (error) {
-  // Clean up partial files
+  // Limpar arquivos parciais
   if (fs.existsSync(targetDir)) {
     fs.rmSync(targetDir, { recursive: true, force: true });
   }
@@ -354,41 +354,41 @@ try {
 ## Performance
 
 ```yaml
-duration_expected: 5-30s (excluding npm install)
+duration_expected: 5-30s (excluindo npm install)
 cost_estimated: $0.002-0.005
-token_usage: ~1,000-2,000 tokens
+token_usage: ~1.000-2.000 tokens
 ```
 
 ---
 
-## Success Output
+## Saída de Sucesso
 
 ```
 ============================================
- SERVICE CREATED SUCCESSFULLY
+ SERVIÇO CRIADO COM SUCESSO
 ============================================
 
- Service: {service_name}
- Type: {service_type}
- Location: .aiox-core/infrastructure/services/{service_name}/
+ Serviço: {service_name}
+ Tipo: {service_type}
+ Localização: .aiox-core/infrastructure/services/{service_name}/
 
- Files Created:
+ Arquivos Criados:
    README.md
    index.ts
    types.ts
    errors.ts
-   client.ts (if api-integration)
+   client.ts (se api-integration)
    package.json
    tsconfig.json
    jest.config.js
    __tests__/index.test.ts
 
- Next Steps:
+ Próximos Passos:
    1. cd .aiox-core/infrastructure/services/{service_name}
-   2. Review generated code
-   3. Implement service methods in index.ts
-   4. Add tests in __tests__/
-   5. Update environment variables as needed
+   2. Revisar o código gerado
+   3. Implementar os métodos do serviço em index.ts
+   4. Adicionar testes em __tests__/
+   5. Atualizar as variáveis de ambiente conforme necessário
 
 ============================================
 ```

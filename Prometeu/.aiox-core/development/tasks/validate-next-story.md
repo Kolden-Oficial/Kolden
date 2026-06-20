@@ -1,29 +1,29 @@
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro em log
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução sem ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: validateNextStory()
@@ -69,9 +69,9 @@ atomic_layer: Organism
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -87,9 +87,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
 
 **Checklist:**
 
@@ -105,9 +105,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de aprovação/reprovação para a conclusão da task
 
 **Checklist:**
 
@@ -123,57 +123,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** validation-engine
-  - **Purpose:** Rule-based validation and reporting
-  - **Source:** .aiox-core/utils/validation-engine.js
+- **Ferramenta:** validation-engine
+  - **Propósito:** Validação baseada em regras e geração de relatórios
+  - **Origem:** .aiox-core/utils/validation-engine.js
 
-- **Tool:** schema-validator
-  - **Purpose:** JSON/YAML schema validation
-  - **Source:** ajv or similar
+- **Ferramenta:** schema-validator
+  - **Propósito:** Validação de schema JSON/YAML
+  - **Origem:** ajv or similar
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** run-validation.js
-  - **Purpose:** Execute validation rules and generate report
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/run-validation.js
+  - **Propósito:** Executar as regras de validação e gerar o relatório
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/run-validation.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Validation Criteria Missing
-   - **Cause:** Required validation rules not defined
-   - **Resolution:** Ensure validation criteria loaded from config
-   - **Recovery:** Use default validation rules, log warning
+1. **Erro:** Critérios de Validação Ausentes
+   - **Causa:** As regras de validação obrigatórias não estão definidas
+   - **Resolução:** Garantir que os critérios de validação sejam carregados da config
+   - **Recuperação:** Usar as regras de validação padrão, registrar warning em log
 
-2. **Error:** Invalid Schema
-   - **Cause:** Target does not match expected schema
-   - **Resolution:** Update schema or fix target structure
-   - **Recovery:** Detailed validation error report
+2. **Erro:** Schema Inválido
+   - **Causa:** O alvo não corresponde ao schema esperado
+   - **Resolução:** Atualizar o schema ou corrigir a estrutura do alvo
+   - **Recuperação:** Relatório de erro de validação detalhado
 
-3. **Error:** Dependency Missing
-   - **Cause:** Required dependency for validation not found
-   - **Resolution:** Install missing dependencies
-   - **Recovery:** Abort with clear dependency list
+3. **Erro:** Dependência Ausente
+   - **Causa:** Dependência obrigatória para a validação não encontrada
+   - **Resolução:** Instalar as dependências ausentes
+   - **Recuperação:** Abortar com uma lista clara de dependências
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-15 min (estimated)
@@ -181,8 +181,8 @@ cost_estimated: $0.003-0.010
 token_usage: ~3,000-10,000 tokens
 ```
 
-**Optimization Notes:**
-- Break into smaller workflows; implement checkpointing; use async processing where possible
+**Notas de Otimização:**
+- Quebrar em workflows menores; implementar checkpointing; usar processamento assíncrono quando possível
 
 ---
 
@@ -208,296 +208,296 @@ checklists:
   - po-master-checklist.md
 ---
 
-# Validate Next Story Task
+# Task Validar a Próxima Story
 
-## Purpose
+## Propósito
 
-To comprehensively validate a story draft before implementation begins, ensuring it is complete, accurate, and provides sufficient context for successful development. This task identifies issues and gaps that need to be addressed, preventing hallucinations and ensuring implementation readiness.
+Validar de forma abrangente um rascunho de story antes do início da implementação, garantindo que ele esteja completo, preciso e forneça contexto suficiente para um desenvolvimento bem-sucedido. Esta task identifica problemas e lacunas que precisam ser tratados, prevenindo alucinações e garantindo a prontidão para implementação.
 
-## SEQUENTIAL Task Execution (Do not proceed until current Task is complete)
+## Execução SEQUENCIAL da Task (Não prossiga até que a Task atual esteja concluída)
 
-### 0. Load Core Configuration and Inputs
+### 0. Carregar a Configuração Central e as Entradas
 
-- Load `.aiox-core/core-config.yaml`
-- If the file does not exist, HALT and inform the user: "core-config.yaml not found. This file is required for story validation."
-- Extract key configurations: `devStoryLocation`, `prd.*`, `architecture.*`
-- Identify and load the following inputs:
-  - **Story file**: The drafted story to validate (provided by user or discovered in `devStoryLocation`)
-  - **Parent epic**: The epic containing this story's requirements
-  - **Architecture documents**: Based on configuration (sharded or monolithic)
-  - **Story template**: `.aiox-core/product/templates/story-tmpl.yaml` for completeness validation
+- Carregar `.aiox-core/core-config.yaml`
+- Se o arquivo não existir, PARE e informe ao usuário: "core-config.yaml not found. This file is required for story validation."
+- Extrair as configurações-chave: `devStoryLocation`, `prd.*`, `architecture.*`
+- Identificar e carregar as seguintes entradas:
+  - **Arquivo da story**: O rascunho da story a validar (fornecido pelo usuário ou descoberto em `devStoryLocation`)
+  - **Epic pai**: O epic que contém os requisitos desta story
+  - **Documentos de arquitetura**: Com base na configuração (sharded ou monolítico)
+  - **Template de story**: `.aiox-core/product/templates/story-tmpl.yaml` para a validação de completude
 
-### 1. Template Completeness Validation
+### 1. Validação de Completude do Template
 
-- Load `.aiox-core/product/templates/story-tmpl.yaml` and extract all section headings from the template
-- **Missing sections check**: Compare story sections against template sections to verify all required sections are present
-- **Placeholder validation**: Ensure no template placeholders remain unfilled (e.g., `{{EpicNum}}`, `{{role}}`, `_TBD_`)
-- **Agent section verification**: Confirm all sections from template exist for future agent use
-- **Structure compliance**: Verify story follows template structure and formatting
+- Carregar `.aiox-core/product/templates/story-tmpl.yaml` e extrair todos os títulos de seção do template
+- **Verificação de seções ausentes**: Comparar as seções da story com as seções do template para confirmar que todas as seções obrigatórias estão presentes
+- **Validação de placeholders**: Garantir que nenhum placeholder do template permaneça sem preenchimento (ex.: `{{EpicNum}}`, `{{role}}`, `_TBD_`)
+- **Verificação das seções de agente**: Confirmar que todas as seções do template existem para uso futuro pelos agentes
+- **Conformidade estrutural**: Verificar que a story segue a estrutura e a formatação do template
 
-### 1.1 Executor Assignment Validation (Story 11.1 - Projeto Bob)
+### 1.1 Validação da Atribuição de Executor (Story 11.1 - Projeto Bob)
 
-**PRD Reference:** AIOX v2.0 "Projeto Bob" - Section 5 (Dynamic Executor Assignment)
+**Referência de PRD:** AIOX v2.0 "Projeto Bob" - Seção 5 (Atribuição Dinâmica de Executor)
 
-**Required Fields Check:**
-- [ ] **executor** field present and not empty
-- [ ] **quality_gate** field present and not empty
-- [ ] **quality_gate_tools** field present as non-empty array
+**Verificação de Campos Obrigatórios:**
+- [ ] campo **executor** presente e não vazio
+- [ ] campo **quality_gate** presente e não vazio
+- [ ] campo **quality_gate_tools** presente como array não vazio
 
-**Constraint Validation:**
-- [ ] **executor != quality_gate** (CRITICAL - must be different)
-- [ ] **executor** is a known agent: @dev, @data-engineer, @devops, @ux-design-expert, @analyst, @architect
-- [ ] **quality_gate** is a known agent: @architect, @dev, @pm
+**Validação de Restrição:**
+- [ ] **executor != quality_gate** (CRÍTICO - devem ser diferentes)
+- [ ] **executor** é um agente conhecido: @dev, @data-engineer, @devops, @ux-design-expert, @analyst, @architect
+- [ ] **quality_gate** é um agente conhecido: @architect, @dev, @pm
 
-**Type-to-Executor Consistency:**
-| Work Type | Expected Executor | Expected Quality Gate |
+**Consistência Tipo-para-Executor:**
+| Tipo de Trabalho | Executor Esperado | Quality Gate Esperado |
 |-----------|-------------------|----------------------|
-| Code/Features/Logic | @dev | @architect |
+| Código/Features/Lógica | @dev | @architect |
 | Schema/DB/RLS/Migrations | @data-engineer | @dev |
 | Infra/CI/CD/Deploy | @devops | @architect |
-| Design/UI Components | @ux-design-expert | @dev |
-| Research/Investigation | @analyst | @pm |
-| Architecture Decisions | @architect | @pm |
+| Design/Componentes de UI | @ux-design-expert | @dev |
+| Pesquisa/Investigação | @analyst | @pm |
+| Decisões de Arquitetura | @architect | @pm |
 
-- [ ] Story content keywords match assigned executor type
-- [ ] Quality gate tools are appropriate for the executor type
+- [ ] As palavras-chave do conteúdo da story correspondem ao tipo de executor atribuído
+- [ ] As ferramentas do quality gate são apropriadas para o tipo de executor
 
-**Validation Result:**
-- [ ] PASS: All executor assignment fields valid
-- [ ] FAIL: Missing fields, invalid assignment, or executor == quality_gate
+**Resultado da Validação:**
+- [ ] PASS: Todos os campos de atribuição de executor válidos
+- [ ] FAIL: Campos ausentes, atribuição inválida, ou executor == quality_gate
 
-### 2. File Structure and Source Tree Validation
+### 2. Validação da Estrutura de Arquivos e da Árvore de Código-Fonte
 
-- **Refer to tools/cli/github-cli.yaml** for repository structure validation commands and file path verification operations
-- Consult the examples section for file listing and directory structure inspection patterns
-- **File paths clarity**: Are new/existing files to be created/modified clearly specified?
-- **Source tree relevance**: Is relevant project structure included in Dev Notes?
-- **Directory structure**: Are new directories/components properly located according to project structure?
-- **File creation sequence**: Do tasks specify where files should be created in logical order?
-- **Path accuracy**: Are file paths consistent with project structure from architecture docs?
+- **Consulte tools/cli/github-cli.yaml** para comandos de validação da estrutura do repositório e operações de verificação de caminhos de arquivo
+- Consulte a seção de exemplos para padrões de listagem de arquivos e inspeção da estrutura de diretórios
+- **Clareza dos caminhos de arquivo**: Os arquivos novos/existentes a serem criados/modificados estão claramente especificados?
+- **Relevância da árvore de código-fonte**: A estrutura relevante do projeto está incluída nas Dev Notes?
+- **Estrutura de diretórios**: Os novos diretórios/componentes estão devidamente localizados de acordo com a estrutura do projeto?
+- **Sequência de criação de arquivos**: As tasks especificam onde os arquivos devem ser criados, em ordem lógica?
+- **Precisão de caminhos**: Os caminhos de arquivo são consistentes com a estrutura do projeto dos documentos de arquitetura?
 
-### 3. UI/Frontend Completeness Validation (if applicable)
+### 3. Validação de Completude de UI/Frontend (se aplicável)
 
-- **Component specifications**: Are UI components sufficiently detailed for implementation?
-- **Styling/design guidance**: Is visual implementation guidance clear?
-- **User interaction flows**: Are UX patterns and behaviors specified?
-- **Responsive/accessibility**: Are these considerations addressed if required?
-- **Integration points**: Are frontend-backend integration points clear?
+- **Especificações de componentes**: Os componentes de UI estão suficientemente detalhados para a implementação?
+- **Orientação de estilização/design**: A orientação de implementação visual está clara?
+- **Fluxos de interação do usuário**: Os padrões e comportamentos de UX estão especificados?
+- **Responsividade/acessibilidade**: Essas considerações estão tratadas, se necessário?
+- **Pontos de integração**: Os pontos de integração frontend-backend estão claros?
 
-### 4. Acceptance Criteria Satisfaction Assessment
+### 4. Avaliação da Satisfação dos Critérios de Aceite
 
-- **AC coverage**: Will all acceptance criteria be satisfied by the listed tasks?
-- **AC testability**: Are acceptance criteria measurable and verifiable?
-- **Missing scenarios**: Are edge cases or error conditions covered?
-- **Success definition**: Is "done" clearly defined for each AC?
-- **Task-AC mapping**: Are tasks properly linked to specific acceptance criteria?
+- **Cobertura dos AC**: Todos os critérios de aceite serão satisfeitos pelas tasks listadas?
+- **Testabilidade dos AC**: Os critérios de aceite são mensuráveis e verificáveis?
+- **Cenários ausentes**: Os casos de borda ou condições de erro estão cobertos?
+- **Definição de sucesso**: O "concluído" está claramente definido para cada AC?
+- **Mapeamento Task-AC**: As tasks estão devidamente vinculadas a critérios de aceite específicos?
 
-### 5. Validation and Testing Instructions Review
+### 5. Revisão das Instruções de Validação e Teste
 
-- **Test approach clarity**: Are testing methods clearly specified?
-- **Test scenarios**: Are key test cases identified?
-- **Validation steps**: Are acceptance criteria validation steps clear?
-- **Testing tools/frameworks**: Are required testing tools specified?
-- **Test data requirements**: Are test data needs identified?
+- **Clareza da abordagem de teste**: Os métodos de teste estão claramente especificados?
+- **Cenários de teste**: Os principais casos de teste estão identificados?
+- **Passos de validação**: Os passos de validação dos critérios de aceite estão claros?
+- **Ferramentas/frameworks de teste**: As ferramentas de teste necessárias estão especificadas?
+- **Requisitos de dados de teste**: As necessidades de dados de teste estão identificadas?
 
-### 6. Security Considerations Assessment (if applicable)
+### 6. Avaliação de Considerações de Segurança (se aplicável)
 
-- **Security requirements**: Are security needs identified and addressed?
-- **Authentication/authorization**: Are access controls specified?
-- **Data protection**: Are sensitive data handling requirements clear?
-- **Vulnerability prevention**: Are common security issues addressed?
-- **Compliance requirements**: Are regulatory/compliance needs addressed?
+- **Requisitos de segurança**: As necessidades de segurança estão identificadas e tratadas?
+- **Autenticação/autorização**: Os controles de acesso estão especificados?
+- **Proteção de dados**: Os requisitos de tratamento de dados sensíveis estão claros?
+- **Prevenção de vulnerabilidades**: Os problemas comuns de segurança estão tratados?
+- **Requisitos de conformidade**: As necessidades regulatórias/de conformidade estão tratadas?
 
-### 7. Tasks/Subtasks Sequence Validation
+### 7. Validação da Sequência de Tasks/Subtasks
 
-- **Logical order**: Do tasks follow proper implementation sequence?
-- **Dependencies**: Are task dependencies clear and correct?
-- **Granularity**: Are tasks appropriately sized and actionable?
-- **Completeness**: Do tasks cover all requirements and acceptance criteria?
-- **Blocking issues**: Are there any tasks that would block others?
+- **Ordem lógica**: As tasks seguem a sequência de implementação adequada?
+- **Dependências**: As dependências entre tasks estão claras e corretas?
+- **Granularidade**: As tasks têm tamanho apropriado e são acionáveis?
+- **Completude**: As tasks cobrem todos os requisitos e critérios de aceite?
+- **Problemas de bloqueio**: Há alguma task que bloquearia outras?
 
-### 8. CodeRabbit Integration Validation (CONDITIONAL)
+### 8. Validação da Integração com CodeRabbit (CONDICIONAL)
 
-**CONDITIONAL STEP** - Check `coderabbit_integration.enabled` in core-config.yaml
+**PASSO CONDICIONAL** - Verifique `coderabbit_integration.enabled` no core-config.yaml
 
-**IF `coderabbit_integration.enabled: false`:**
-- SKIP this entire step
-- Verify the story contains the skip notice in the CodeRabbit Integration section:
+**SE `coderabbit_integration.enabled: false`:**
+- PULE este passo inteiro
+- Verifique se a story contém o aviso de pulo na seção CodeRabbit Integration:
   > **CodeRabbit Integration**: Disabled
-- Log: "ℹ️ CodeRabbit validation skipped - disabled in core-config.yaml"
-- Proceed to Step 9
+- Registre em log: "ℹ️ CodeRabbit validation skipped - disabled in core-config.yaml"
+- Prossiga para o Passo 9
 
-**IF `coderabbit_integration.enabled: true`:**
-- Validate ALL of the following:
+**SE `coderabbit_integration.enabled: true`:**
+- Valide TODOS os itens a seguir:
 
-**Section Presence:**
-- Is the `🤖 CodeRabbit Integration` section present?
-- Are all subsections populated (Story Type Analysis, Specialized Agents, Quality Gates, Self-Healing, Focus Areas)?
+**Presença da Seção:**
+- A seção `🤖 CodeRabbit Integration` está presente?
+- Todas as subseções estão preenchidas (Story Type Analysis, Specialized Agents, Quality Gates, Self-Healing, Focus Areas)?
 
-**Story Type Analysis:**
-- Is the primary story type correctly identified?
-- Does the complexity level match the story scope?
-- Are secondary types listed if applicable?
+**Análise do Tipo de Story:**
+- O tipo primário de story está corretamente identificado?
+- O nível de complexidade corresponde ao escopo da story?
+- Os tipos secundários estão listados, se aplicável?
 
-**Specialized Agent Assignment:**
-- Is @dev listed as primary agent (required for all stories)?
-- Are type-specific agents assigned appropriately?
-  - Database stories → @db-sage
-  - Frontend stories → @ux-expert
-  - Deployment stories → @github-devops
-  - Security stories → @architect
+**Atribuição de Agente Especializado:**
+- O @dev está listado como agente primário (obrigatório para todas as stories)?
+- Os agentes específicos por tipo estão atribuídos adequadamente?
+  - Stories de Database → @db-sage
+  - Stories de Frontend → @ux-expert
+  - Stories de Deployment → @github-devops
+  - Stories de Security → @architect
 
-**Quality Gate Tasks:**
-- Are all applicable quality gates defined as checkboxes?
-- Pre-Commit (@dev) - REQUIRED for all stories
-- Pre-PR (@github-devops) - Required if PR will be created
-- Pre-Deployment (@github-devops) - Required for production stories
+**Tasks de Quality Gate:**
+- Todos os quality gates aplicáveis estão definidos como checkboxes?
+- Pre-Commit (@dev) - OBRIGATÓRIO para todas as stories
+- Pre-PR (@github-devops) - Obrigatório se um PR for criado
+- Pre-Deployment (@github-devops) - Obrigatório para stories de produção
 
-**Self-Healing Configuration (Story 6.3.3):**
-- Is the self-healing configuration present?
-- Does the mode match the primary agent?
-  - @dev: light mode (2 iterations, 15 min, CRITICAL only)
-  - @qa: full mode (3 iterations, 30 min, CRITICAL+HIGH)
-  - @github-devops: check mode (report only)
-- Is the severity behavior documented?
+**Configuração de Self-Healing (Story 6.3.3):**
+- A configuração de self-healing está presente?
+- O modo corresponde ao agente primário?
+  - @dev: modo light (2 iterações, 15 min, somente CRITICAL)
+  - @qa: modo full (3 iterações, 30 min, CRITICAL+HIGH)
+  - @github-devops: modo check (apenas relatório)
+- O comportamento por severidade está documentado?
 
-**Focus Areas:**
-- Do focus areas match the story type?
-- Are type-specific validations listed?
-  - Database: service filters, schema compliance, RLS
-  - API: error handling, security, validation
-  - Frontend: accessibility, performance, responsive
+**Áreas de Foco:**
+- As áreas de foco correspondem ao tipo de story?
+- As validações específicas por tipo estão listadas?
+  - Database: service filters, conformidade de schema, RLS
+  - API: tratamento de erros, segurança, validação
+  - Frontend: acessibilidade, performance, responsividade
 
-**Validation Result:**
-- [ ] PASS: CodeRabbit section complete and accurate
-- [ ] PARTIAL: Section present but incomplete
-- [ ] FAIL: Section missing or critically incomplete
-- [ ] N/A: CodeRabbit disabled in core-config.yaml
+**Resultado da Validação:**
+- [ ] PASS: Seção do CodeRabbit completa e precisa
+- [ ] PARTIAL: Seção presente mas incompleta
+- [ ] FAIL: Seção ausente ou criticamente incompleta
+- [ ] N/A: CodeRabbit desabilitado no core-config.yaml
 
-### 8.1 Code Intelligence: No Duplicate Functionality (Auto-skip if unavailable)
+### 8.1 Code Intelligence: Sem Funcionalidade Duplicada (Auto-pular se indisponível)
 
-- **Check code intelligence availability:** Call `isCodeIntelAvailable()` from `.aiox-core/core/code-intel`
-- **If available:**
-  - Call `validateNoDuplicates(storyDescription)` from `.aiox-core/core/code-intel/helpers/story-helper`
-    - If `hasDuplicates: true`: Add to validation report as **Should-Fix** issue — "Potential duplicate functionality detected: {suggestion}". This is **advisory only** and does NOT block validation.
-    - If `hasDuplicates: false`: Add to report as PASS — "No duplicate functionality detected"
-  - Include result in the **Validation Result** section under "Code Intelligence Check"
-- **If NOT available:** Skip this step silently — validation proceeds exactly as before with no code intelligence items in report
+- **Verificar a disponibilidade do code intelligence:** Chamar `isCodeIntelAvailable()` de `.aiox-core/core/code-intel`
+- **Se disponível:**
+  - Chamar `validateNoDuplicates(storyDescription)` de `.aiox-core/core/code-intel/helpers/story-helper`
+    - Se `hasDuplicates: true`: Adicionar ao relatório de validação como problema **Should-Fix** — "Potential duplicate functionality detected: {suggestion}". Isto é **apenas consultivo** e NÃO bloqueia a validação.
+    - Se `hasDuplicates: false`: Adicionar ao relatório como PASS — "No duplicate functionality detected"
+  - Incluir o resultado na seção **Validation Result** sob "Code Intelligence Check"
+- **Se NÃO disponível:** Pule este passo silenciosamente — a validação prossegue exatamente como antes, sem itens de code intelligence no relatório
 
-### 9. Anti-Hallucination Verification
+### 9. Verificação Anti-Alucinação
 
-- **Epic Context Enrichment**: Import `EpicContextAccumulator` from `core/orchestration` and call `buildAccumulatedContext(epicId, storyN)` to enrich validation with accumulated epic context (progressive summarization within token limits)
-- **Refer to tools/mcp/context7.yaml** for library documentation lookup to verify technical claims against official sources
-- Consult the examples section for documentation verification patterns and library-specific queries
-- **Source verification**: Every technical claim must be traceable to source documents
-- **Architecture alignment**: Dev Notes content matches architecture specifications
-- **No invented details**: Flag any technical decisions not supported by source documents
-- **Reference accuracy**: Verify all source references are correct and accessible
-- **Fact checking**: Cross-reference claims against epic and architecture documents
+- **Enriquecimento do Contexto do Epic**: Importar `EpicContextAccumulator` de `core/orchestration` e chamar `buildAccumulatedContext(epicId, storyN)` para enriquecer a validação com o contexto acumulado do epic (sumarização progressiva dentro dos limites de tokens)
+- **Consulte tools/mcp/context7.yaml** para a consulta de documentação de bibliotecas a fim de verificar afirmações técnicas contra fontes oficiais
+- Consulte a seção de exemplos para padrões de verificação de documentação e queries específicas por biblioteca
+- **Verificação de fonte**: Toda afirmação técnica deve ser rastreável até os documentos de origem
+- **Alinhamento com a arquitetura**: O conteúdo das Dev Notes corresponde às especificações de arquitetura
+- **Sem detalhes inventados**: Sinalizar quaisquer decisões técnicas não suportadas pelos documentos de origem
+- **Precisão de referências**: Verificar se todas as referências de origem estão corretas e acessíveis
+- **Checagem de fatos**: Cruzar as afirmações com os documentos de epic e arquitetura
 
-### 10. Dev Agent Implementation Readiness
+### 10. Prontidão de Implementação do Dev Agent
 
-- **Self-contained context**: Can the story be implemented without reading external docs?
-- **Clear instructions**: Are implementation steps unambiguous?
-- **Complete technical context**: Are all required technical details present in Dev Notes?
-- **Missing information**: Identify any critical information gaps
-- **Actionability**: Are all tasks actionable by a development agent?
+- **Contexto autocontido**: A story pode ser implementada sem ler documentos externos?
+- **Instruções claras**: Os passos de implementação são inequívocos?
+- **Contexto técnico completo**: Todos os detalhes técnicos necessários estão presentes nas Dev Notes?
+- **Informações ausentes**: Identificar quaisquer lacunas críticas de informação
+- **Acionabilidade**: Todas as tasks são acionáveis por um agente de desenvolvimento?
 
-### 11. Generate Validation Report
+### 11. Gerar o Relatório de Validação
 
-Provide a structured validation report including:
+Forneça um relatório de validação estruturado incluindo:
 
-#### Template Compliance Issues
+#### Problemas de Conformidade com o Template
 
-- Missing sections from story template
-- Unfilled placeholders or template variables
-- Structural formatting issues
+- Seções ausentes do template de story
+- Placeholders ou variáveis de template não preenchidos
+- Problemas estruturais de formatação
 
-#### Critical Issues (Must Fix - Story Blocked)
+#### Problemas Críticos (Devem Ser Corrigidos - Story Bloqueada)
 
-- Missing essential information for implementation
-- Inaccurate or unverifiable technical claims
-- Incomplete acceptance criteria coverage
-- Missing required sections
+- Informações essenciais ausentes para a implementação
+- Afirmações técnicas imprecisas ou não verificáveis
+- Cobertura incompleta dos critérios de aceite
+- Seções obrigatórias ausentes
 
-#### Should-Fix Issues (Important Quality Improvements)
+#### Problemas Should-Fix (Melhorias de Qualidade Importantes)
 
-- Unclear implementation guidance
-- Missing security considerations
-- Task sequencing problems
-- Incomplete testing instructions
+- Orientação de implementação pouco clara
+- Considerações de segurança ausentes
+- Problemas de sequenciamento de tasks
+- Instruções de teste incompletas
 
-#### Nice-to-Have Improvements (Optional Enhancements)
+#### Melhorias Nice-to-Have (Aprimoramentos Opcionais)
 
-- Additional context that would help implementation
-- Clarifications that would improve efficiency
-- Documentation improvements
+- Contexto adicional que ajudaria a implementação
+- Esclarecimentos que melhorariam a eficiência
+- Melhorias de documentação
 
-#### Anti-Hallucination Findings
+#### Achados Anti-Alucinação
 
-- Unverifiable technical claims
-- Missing source references
-- Inconsistencies with architecture documents
-- Invented libraries, patterns, or standards
+- Afirmações técnicas não verificáveis
+- Referências de origem ausentes
+- Inconsistências com os documentos de arquitetura
+- Bibliotecas, padrões ou normas inventados
 
-#### CodeRabbit Integration Findings (CONDITIONAL)
+#### Achados de Integração com CodeRabbit (CONDICIONAL)
 
-**IF `coderabbit_integration.enabled: true`:**
+**SE `coderabbit_integration.enabled: true`:**
 
-- **Story Type Accuracy**: Is the story type correctly classified?
-- **Agent Assignment Completeness**: Are all required agents assigned?
-- **Quality Gate Coverage**: Are all applicable gates defined?
-- **Self-Healing Configuration**: Is Story 6.3.3 configuration present?
-- **Focus Areas Relevance**: Do focus areas match story type?
+- **Precisão do Tipo de Story**: O tipo de story está corretamente classificado?
+- **Completude da Atribuição de Agentes**: Todos os agentes necessários estão atribuídos?
+- **Cobertura de Quality Gate**: Todos os gates aplicáveis estão definidos?
+- **Configuração de Self-Healing**: A configuração da Story 6.3.3 está presente?
+- **Relevância das Áreas de Foco**: As áreas de foco correspondem ao tipo de story?
 
-**IF `coderabbit_integration.enabled: false`:**
+**SE `coderabbit_integration.enabled: false`:**
 
-- **Skip Notice Present**: Verify skip notice is rendered in story
-- **No Quality Gate Tasks**: Confirm no CodeRabbit checkboxes exist
-- **Manual Review Fallback**: Note that manual review process applies
+- **Aviso de Pulo Presente**: Verificar se o aviso de pulo está renderizado na story
+- **Sem Tasks de Quality Gate**: Confirmar que não existem checkboxes do CodeRabbit
+- **Fallback de Revisão Manual**: Observar que o processo de revisão manual se aplica
 
-#### Final Assessment
+#### Avaliação Final
 
-- **GO**: Story is ready for implementation
-- **NO-GO**: Story requires fixes before implementation
-- **Implementation Readiness Score**: 1-10 scale
-- **Confidence Level**: High/Medium/Low for successful implementation
+- **GO**: A story está pronta para implementação
+- **NO-GO**: A story requer correções antes da implementação
+- **Pontuação de Prontidão de Implementação**: Escala de 1 a 10
+- **Nível de Confiança**: Alto/Médio/Baixo para uma implementação bem-sucedida
 
-### 12. Post-Validation Status Update (MANDATORY)
+### 12. Atualização de Status Pós-Validação (OBRIGATÓRIO)
 
-**Reference:** `.claude/rules/story-lifecycle.md` — Draft → Ready transition is @po responsibility.
+**Referência:** `.claude/rules/story-lifecycle.md` — A transição Draft → Ready é responsabilidade do @po.
 
-**This step MUST be executed before presenting results to user.**
+**Este passo DEVE ser executado antes de apresentar os resultados ao usuário.**
 
-**Change Log format:** Use `{date: YYYY-MM-DD}` and `{version: MAJOR.MINOR.PATCH}`. Version MUST follow semantic bump rules: major for breaking changes, minor for features, patch for fixes/process updates. HALT if either value cannot be resolved deterministically.
+**Formato do Change Log:** Use `{date: YYYY-MM-DD}` e `{version: MAJOR.MINOR.PATCH}`. A versão DEVE seguir as regras de bump semântico: major para breaking changes, minor para features, patch para correções/atualizações de processo. PARE se qualquer um dos valores não puder ser resolvido de forma determinística.
 
-#### IF verdict is GO (score >= 7):
+#### SE o veredito for GO (pontuação >= 7):
 
-0. **Pre-check (blocking):**
-   - If current Status is not `**Draft**`, HALT and log: "Cannot apply GO transition: expected Draft, found {current status}."
-   - If Change Log section is missing, HALT and request user to restore template structure.
-1. **Update story Status field** in the story file: change `**Draft**` to `**Ready**`
-2. **Add Change Log entry:**
+0. **Pré-verificação (bloqueante):**
+   - Se o Status atual não for `**Draft**`, PARE e registre em log: "Cannot apply GO transition: expected Draft, found {current status}."
+   - Se a seção Change Log estiver ausente, PARE e solicite ao usuário que restaure a estrutura do template.
+1. **Atualizar o campo Status da story** no arquivo da story: alterar `**Draft**` para `**Ready**`
+2. **Adicionar entrada no Change Log:**
    ```text
    | {date: YYYY-MM-DD} | {version: MAJOR.MINOR.PATCH} | Validated GO ({score}/10) — Status: Draft → Ready | @po |
    ```
 3. **Log:** "✅ Story status updated: Draft → Ready"
 
-#### IF verdict is NO-GO (score < 7):
+#### SE o veredito for NO-GO (pontuação < 7):
 
-0. **Pre-check (blocking):**
-   - If current Status is not `**Draft**`, HALT and log: "Cannot apply NO-GO outcome: expected Draft, found {current status}."
-   - If Change Log section is missing, HALT and request user to restore template structure.
-1. **Keep** story Status as `**Draft**`
-2. **Add Change Log entry:**
+0. **Pré-verificação (bloqueante):**
+   - Se o Status atual não for `**Draft**`, PARE e registre em log: "Cannot apply NO-GO outcome: expected Draft, found {current status}."
+   - Se a seção Change Log estiver ausente, PARE e solicite ao usuário que restaure a estrutura do template.
+1. **Manter** o Status da story como `**Draft**`
+2. **Adicionar entrada no Change Log:**
    ```text
    | {date: YYYY-MM-DD} | {version: MAJOR.MINOR.PATCH} | Validation NO-GO — {reason summary} | @po |
    ```
 3. **Log:** "❌ Story remains Draft — fixes required before re-validation"
 
-#### Rationale
+#### Justificativa
 
-Status transitions defined in `story-lifecycle.md` are advisory (contextual rules). This step makes them imperative (procedural), ensuring agents always execute the transition as part of the workflow rather than relying on contextual rule awareness.
+As transições de status definidas em `story-lifecycle.md` são consultivas (regras contextuais). Este passo as torna imperativas (procedurais), garantindo que os agentes sempre executem a transição como parte do workflow, em vez de depender da consciência das regras contextuais.
 
 ---
 

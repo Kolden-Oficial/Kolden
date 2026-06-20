@@ -215,7 +215,7 @@ checklists:
 
 Cria cenários de teste abrangentes com recomendações apropriadas de nível de teste para a implementação da story.
 
-## Inputs
+## Entradas
 
 ```yaml
 required:
@@ -229,7 +229,7 @@ required:
 
 Projetar uma estratégia de teste completa que identifique o que testar, em qual nível (unit/integration/e2e) e por quê. Isso garante uma cobertura de teste eficiente sem redundância, mantendo limites de teste apropriados.
 
-## Dependencies
+## Dependências
 
 ```yaml
 data:
@@ -293,9 +293,9 @@ Garanta:
 - Caminhos críticos têm múltiplos níveis
 - Mitigações de risco são tratadas
 
-## Outputs
+## Saídas
 
-### Output 1: Documento de Design de Teste
+### Saída 1: Documento de Design de Teste
 
 **Salvar em:** `qa.qaLocation/assessments/{epic}.{story}-test-design-{YYYYMMDD}.md`
 
@@ -340,7 +340,7 @@ Designer: Quinn (Test Architect)
 5. P2+ as time permits
 ```
 
-### Output 2: Bloco YAML do Gate
+### Saída 2: Bloco YAML do Gate
 
 Gere para inclusão no quality gate:
 
@@ -358,7 +358,7 @@ test_design:
   coverage_gaps: [] # List any ACs without tests
 ```
 
-### Output 3: Referências de Trace
+### Saída 3: Referências de Trace
 
 Imprima para uso pela task trace-requirements:
 

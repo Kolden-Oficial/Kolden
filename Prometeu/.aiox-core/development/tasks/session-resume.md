@@ -5,14 +5,14 @@
 
 ---
 
-## Purpose
+## Propósito
 
-Handle session resume when Bob detects an existing `.session-state.yaml` file.
-Presents options to the user and executes the selected action.
+Tratar a retomada de sessão quando o Bob detecta um arquivo `.session-state.yaml` existente.
+Apresenta opções ao usuário e executa a ação selecionada.
 
 ---
 
-## Task Definition
+## Definição da Task
 
 ```yaml
 task: sessionResume
@@ -23,22 +23,22 @@ inputs:
   - field: projectRoot
     type: string
     required: true
-    description: Project root directory
+    description: Diretório raiz do projeto
 
 outputs:
   - field: action
     type: string
-    description: Selected action (continue|review|restart|discard)
+    description: Ação selecionada (continue|review|restart|discard)
   - field: storyPath
     type: string
-    description: Path to story to continue (if applicable)
+    description: Caminho para a story a continuar (se aplicável)
 ```
 
 ---
 
-## Execution Steps
+## Passos de Execução
 
-### Step 1: Load Session State
+### Passo 1: Carregar Estado da Sessão
 
 ```javascript
 const { loadSessionState } = require('.aiox-core/core/orchestration');
@@ -49,7 +49,7 @@ if (!sessionState) {
 }
 ```
 
-### Step 2: Check for Crash
+### Passo 2: Verificar Crash
 
 ```javascript
 const { SessionState } = require('.aiox-core/core/orchestration');
@@ -66,14 +66,14 @@ if (crashResult.isCrash) {
 }
 ```
 
-### Step 3: Present Resume Summary
+### Passo 3: Apresentar Resumo de Retomada
 
 ```javascript
 const summary = manager.getResumeSummary();
 console.log(summary);
 ```
 
-**Expected Output:**
+**Saída Esperada:**
 
 ```
 🔄 Sessão anterior detectada!
@@ -91,7 +91,7 @@ O que você quer fazer?
 [4] Iniciar novo épico (descarta sessão)
 ```
 
-### Step 4: Elicit User Choice
+### Passo 4: Elicitar Escolha do Usuário
 
 ```yaml
 elicit: true
@@ -107,7 +107,7 @@ options:
     label: "[4] Iniciar novo épico"
 ```
 
-### Step 5: Execute Selected Action
+### Passo 5: Executar Ação Selecionada
 
 ```javascript
 const { ResumeOption } = require('.aiox-core/core/orchestration');
@@ -152,9 +152,9 @@ switch (result.action) {
 
 ---
 
-## Integration with pm.md
+## Integração com pm.md
 
-This task should be called from `pm.md` during greeting when session state is detected:
+Esta task deve ser chamada a partir de `pm.md` durante a saudação quando o estado da sessão é detectado:
 
 ```yaml
 # In pm.md greeting-builder integration
@@ -167,13 +167,13 @@ on_activation:
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-| Error | Recovery |
+| Erro | Recuperação |
 |-------|----------|
-| Corrupted state file | Offer to discard and start fresh |
-| Invalid YAML | Parse error with file path, offer discard |
-| Missing required fields | Warn and offer partial recovery |
+| Arquivo de estado corrompido | Oferecer descartar e começar do zero |
+| YAML inválido | Erro de parse com o caminho do arquivo, oferecer descarte |
+| Campos obrigatórios ausentes | Avisar e oferecer recuperação parcial |
 
 ---
 

@@ -702,4 +702,16 @@ Após a revisão:
   - Mudanças de status (ex.: Review → Done)
   - Conclusões de tasks (checkboxes marcados)
   - Modificações na file list
-  - Atualizações de 
+  - Atualizações de Dev Notes ou Acceptance Criteria
+
+- **Nenhuma Ação Necessária**: A sincronização acontece de forma transparente ao usar os utilitários do story-manager. Se a sincronização falhar, o arquivo da story ainda é salvo localmente com uma mensagem de aviso.
+
+## Handoff
+next_agent: @dev
+next_command: *apply-qa-fixes
+condition: O veredito do QA é REJECT
+alternatives:
+  - agent: @devops, command: *push, condition: O veredito do QA é APPROVE
+  - agent: @dev, command: *fix-qa-issues, condition: Correção estruturada a partir de QA_FIX_REQUEST.md
+
+- **Sincronização Manual**: Se necessário, use: `npm run sync-story -- --story {epic}.{story}` 

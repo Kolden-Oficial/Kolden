@@ -782,54 +782,84 @@ class SyncDocumentationTask {
 module.exports = SyncDocumentationTask;
 ```
 
-## Integration Points
+## Pontos de Integração
 
-### Documentation Synchronizer
-- Core synchronization engine
-- Multi-strategy sync support
-- Automatic change detection
-- Real-time monitoring
+### Sincronizador de Documentação
+- Motor de sincronização central
+- Suporte a sincronização multi-estratégia
+- Detecção automática de mudanças
+- Monitoramento em tempo real
 
-### Sync Strategies
-- **JSDoc**: Sync code comments with markdown
-- **Markdown**: Update documentation sections
-- **Schema**: Sync YAML/JSON schemas
-- **API**: Update API documentation
-- **Examples**: Validate and update code examples
+### Estratégias de Sincronização
+- **JSDoc**: Sincronizar comentários de código com markdown
+- **Markdown**: Atualizar seções de documentação
+- **Schema**: Sincronizar schemas YAML/JSON
+- **API**: Atualizar documentação de API
+- **Examples**: Validar e atualizar exemplos de código
 
-### Documentation Sources
-- Markdown files (.md)
-- YAML manifests (.yaml, .yml)
-- JSON schemas (.json)
-- README files
-- Inline documentation
+### Fontes de Documentação
+- Arquivos Markdown (.md)
+- Manifestos YAML (.yaml, .yml)
+- Schemas JSON (.json)
+- Arquivos README
+- Documentação inline
 
-### Code Sources
-- JavaScript files (.js, .jsx)
-- TypeScript files (.ts, .tsx)
-- Task definitions
-- Agent manifests
-- Workflow configurations
+### Fontes de Código
+- Arquivos JavaScript (.js, .jsx)
+- Arquivos TypeScript (.ts, .tsx)
+- Definições de task
+- Manifestos de agente
+- Configurações de workflow
 
-## Synchronization Workflow
+## Workflow de Sincronização
 
-### Detection Phase
-1. Monitor file changes
-2. Identify linked documentation
-3. Detect content differences
-4. Calculate sync requirements
-5. Prioritize updates
+### Fase de Detecção
+1. Monitorar mudanças de arquivo
+2. Identificar a documentação vinculada
+3. Detectar diferenças de conteúdo
+4. Calcular os requisitos de sincronização
+5. Priorizar as atualizações
 
-### Analysis Phase
-1. Parse code changes
-2. Extract documentation elements
-3. Compare with existing docs
-4. Identify gaps and conflicts
-5. Generate sync plan
+### Fase de Análise
+1. Fazer parse das mudanças de código
+2. Extrair os elementos de documentação
+3. Comparar com a documentação existente
+4. Identificar lacunas e conflitos
+5. Gerar o plano de sincronização
 
-### Update Phase
-1. Apply sync strategies
-2. Update documentation files
-3. Preserve formatting
-4. Validate changes
-5. Record 
+### Fase de Atualização
+1. Aplicar as estratégias de sincronização
+2. Atualizar os arquivos de documentação
+3. Preservar a formatação
+4. Validar as mudanças
+5. Registrar o histórico de sincronização
+
+## Boas Práticas
+
+### Estrutura da Documentação
+- Manter a documentação próxima ao código
+- Usar nomenclatura consistente
+- Vincular explicitamente na documentação
+- Manter seções claras
+- Atualizar os exemplos regularmente
+
+### Configuração de Sincronização
+- Escolher estratégias apropriadas
+- Definir intervalos razoáveis
+- Revisar as mudanças regularmente
+- Monitorar o histórico de sincronização
+- Tratar conflitos de forma graciosa
+
+### Garantia de Qualidade
+- Validar após a sincronização
+- Testar os exemplos de código
+- Verificar a precisão da API
+- Verificar o alinhamento do schema
+- Manter o histórico de versões
+
+## Considerações de Segurança
+- Validar os caminhos de arquivo
+- Prevenir injeção na documentação
+- Proteger informações sensíveis
+- Auditar as operações de sincronização
+- Controlar as permissões de escrita 

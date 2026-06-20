@@ -1,0 +1,75 @@
+name: pheme-social-squad
+version: "1.0.0"
+short-title: "Pheme — Social & Conteúdo"
+description: "Squad de social media e criação de conteúdo de alta performance da marca Kolden. Orquestrador (Pheme) + 8 especialistas cobrindo estratégia, vídeo curto (Reels/TikTok/Shorts), carrossel, YouTube, LinkedIn/X, Pinterest, growth e publicação real (Postiz/GHL). Objetivo: levar as redes da Kolden a +100k seguidores com conteúdo orgânico."
+author: "Kolden / Caos"
+license: MIT
+slashPrefix: "pheme"
+
+aios:
+  minVersion: "4.0.0"
+  type: squad
+
+tags:
+  - social-media
+  - content-creation
+  - organic-growth
+  - reels
+  - tiktok
+  - shorts
+  - youtube
+  - carousel
+  - linkedin
+  - twitter-x
+  - pinterest
+  - publishing
+  - postiz
+  - gohighlevel
+
+components:
+  agents:
+    # Tier 0 — Orquestrador
+    - social-chief.md
+    # Tier 1A — Estratégia & Growth
+    - content-strategist.md
+    - growth-analyst.md
+    # Tier 1B — Criação por formato
+    - short-video-architect.md
+    - carousel-architect.md
+    - youtube-strategist.md
+    # Tier 1C — Plataformas de texto & descoberta
+    - linkedin-x-authority.md
+    - pinterest-strategist.md
+    # Tier 1D — Publicação
+    - publisher.md
+  tasks:
+    - plano-de-conteudo.md
+    - roteiro-reel.md
+    - carrossel.md
+    - thread.md
+    - pin.md
+    - publicar.md
+    - analise-metricas.md
+  workflows:
+    - wf-conteudo-ate-publicacao.yaml
+  checklists:
+    - qualidade-conteudo.md
+  data:
+    - routing-catalog.yaml
+
+config:
+  extends: extend
+
+# Arquitetura de Tiers (metadados — enriquecem o roteamento)
+# tier_0:  Orquestração — social-chief (Pheme)
+# tier_1a: Estratégia & Growth — content-strategist, growth-analyst
+# tier_1b: Criação por formato — short-video-architect, carousel-architect, youtube-strategist
+# tier_1c: Texto & Descoberta — linkedin-x-authority, pinterest-strategist
+# tier_1d: Publicação — publisher (Postiz / GoHighLevel)
+#
+# Fronteiras (REUSE > ADAPT > CREATE):
+#   Copy de legenda longa/CTA → reutiliza Caliope (copy-squad)
+#   Identidade visual / tom de marca Kolden → reutiliza Aglaia
+#   Comunidade / movimento → complementa Dionisio
+#   Métricas profundas / experimentos → complementa Metis
+#   Criativo de tráfego PAGO → fronteira com Peitho (Pheme = orgânico)

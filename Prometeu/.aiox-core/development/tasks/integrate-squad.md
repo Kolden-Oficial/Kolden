@@ -1,33 +1,33 @@
-# Integrate with Squad
+# Integrar com Squad
 
 > Task ID: atlas-integrate-Squad
-> Agent: Atlas (Design System Builder)
+> Agente: Atlas (Design System Builder)
 > Version: 1.0.0
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: integrateExpansionPack()
@@ -73,9 +73,9 @@ atomic_layer: Molecule
 
 ---
 
-## Pre-Conditions
+## Pré-condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -91,9 +91,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a task ser concluída
 
 **Checklist:**
 
@@ -109,9 +109,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
@@ -127,57 +127,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** task-runner
-  - **Purpose:** Task execution and orchestration
-  - **Source:** .aiox-core/core/task-runner.js
+- **Ferramenta:** task-runner
+  - **Propósito:** Execução e orquestração de tasks
+  - **Origem:** .aiox-core/core/task-runner.js
 
-- **Tool:** logger
-  - **Purpose:** Execution logging and error tracking
-  - **Source:** .aiox-core/utils/logger.js
+- **Ferramenta:** logger
+  - **Propósito:** Logging de execução e rastreamento de erros
+  - **Origem:** .aiox-core/utils/logger.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** execute-task.js
-  - **Purpose:** Generic task execution wrapper
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/execute-task.js
+  - **Propósito:** Wrapper genérico de execução de task
+  - **Linguagem:** JavaScript
+  - **Local:** .aiox-core/scripts/execute-task.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Task Not Found
-   - **Cause:** Specified task not registered in system
-   - **Resolution:** Verify task name and registration
-   - **Recovery:** List available tasks, suggest similar
+1. **Erro:** Task Não Encontrada
+   - **Causa:** Task especificada não registrada no sistema
+   - **Resolução:** Verificar o nome e o registro da task
+   - **Recuperação:** Listar tasks disponíveis, sugerir similares
 
-2. **Error:** Invalid Parameters
-   - **Cause:** Task parameters do not match expected schema
-   - **Resolution:** Validate parameters against task definition
-   - **Recovery:** Provide parameter template, reject execution
+2. **Erro:** Parâmetros Inválidos
+   - **Causa:** Parâmetros da task não correspondem ao schema esperado
+   - **Resolução:** Validar parâmetros contra a definição da task
+   - **Recuperação:** Fornecer template de parâmetros, rejeitar execução
 
-3. **Error:** Execution Timeout
-   - **Cause:** Task exceeds maximum execution time
-   - **Resolution:** Optimize task or increase timeout
-   - **Recovery:** Kill task, cleanup resources, log state
+3. **Erro:** Timeout de Execução
+   - **Causa:** Task excede o tempo máximo de execução
+   - **Resolução:** Otimizar a task ou aumentar o timeout
+   - **Recuperação:** Encerrar a task, limpar recursos, registrar o estado
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 2-5 min (estimated)
@@ -185,12 +185,12 @@ cost_estimated: $0.001-0.003
 token_usage: ~1,000-3,000 tokens
 ```
 
-**Optimization Notes:**
-- Parallelize independent operations; reuse atom results; implement early exits
+**Notas de Otimização:**
+- Paralelizar operações independentes; reutilizar resultados de atoms; implementar saídas antecipadas
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -206,47 +206,47 @@ updated_at: 2025-11-17
 ---
 
 
-## Description
+## Descrição
 
-Connect design system with MMOS, CreatorOS, or InnerLens squads. Generates pack-specific patterns, token variations, and integration documentation.
+Conectar o design system com os squads MMOS, CreatorOS ou InnerLens. Gera padrões específicos do pack, variações de tokens e documentação de integração.
 
-## Prerequisites
+## Pré-requisitos
 
-- Design system setup complete
-- Components built
-- Target squad installed
+- Setup do design system concluído
+- Componentes construídos
+- Squad alvo instalado
 
 ## Workflow
 
-### Steps
+### Passos
 
-1. **Detect Target Pack** - Identify MMOS, CreatorOS, or InnerLens
-2. **Load Pack Requirements** - Read pack-specific pattern needs
-3. **Generate Token Variations** - Personality/theme-based tokens
-4. **Generate Pack-Specific Patterns** - Custom components for pack
-5. **Create Integration Hooks** - Connect pack workflows
-6. **Generate Integration Docs** - Usage guide for pack
-7. **Test Integration** - Validate pack can use patterns
-8. **Update State** - Track integration completion
+1. **Detectar Pack Alvo** - Identificar MMOS, CreatorOS ou InnerLens
+2. **Carregar Requisitos do Pack** - Ler necessidades de padrões específicos do pack
+3. **Gerar Variações de Tokens** - Tokens baseados em personalidade/tema
+4. **Gerar Padrões Específicos do Pack** - Componentes customizados para o pack
+5. **Criar Hooks de Integração** - Conectar os workflows do pack
+6. **Gerar Docs de Integração** - Guia de uso para o pack
+7. **Testar Integração** - Validar que o pack consegue usar os padrões
+8. **Atualizar Estado** - Rastrear a conclusão da integração
 
-## Output
+## Saída
 
-- Pack-specific components
-- Token variations
-- Integration documentation
-- Example usage
+- Componentes específicos do pack
+- Variações de tokens
+- Documentação de integração
+- Exemplo de uso
 
-## Success Criteria
+## Critérios de Sucesso
 
-- [ ] Pack can import and use design system
-- [ ] Token variations work correctly
-- [ ] Pack-specific patterns functional
-- [ ] Integration documented
-- [ ] No regressions in pack functionality
+- [ ] O pack consegue importar e usar o design system
+- [ ] As variações de tokens funcionam corretamente
+- [ ] Os padrões específicos do pack estão funcionais
+- [ ] A integração está documentada
+- [ ] Sem regressões na funcionalidade do pack
 
-## Examples
+## Exemplos
 
-### MMOS Integration
+### Integração MMOS
 
 ```typescript
 // Personality token variations
@@ -270,7 +270,7 @@ Connect design system with MMOS, CreatorOS, or InnerLens squads. Generates pack-
 />
 ```
 
-### CreatorOS Integration
+### Integração CreatorOS
 
 ```typescript
 // Educational token variations
@@ -288,7 +288,7 @@ Connect design system with MMOS, CreatorOS, or InnerLens squads. Generates pack-
 />
 ```
 
-### InnerLens Integration
+### Integração InnerLens
 
 ```typescript
 // Minimal distraction tokens
@@ -305,10 +305,10 @@ Connect design system with MMOS, CreatorOS, or InnerLens squads. Generates pack-
 />
 ```
 
-## Notes
+## Notas
 
-- Each pack has unique requirements
-- Token variations maintain consistency
-- Pack-specific components extend base system
-- Integration is bidirectional (pack ↔ design system)
-- Document in pack's README
+- Cada pack tem requisitos únicos
+- As variações de tokens mantêm a consistência
+- Componentes específicos do pack estendem o sistema base
+- A integração é bidirecional (pack ↔ design system)
+- Documentar no README do pack

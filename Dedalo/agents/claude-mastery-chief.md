@@ -552,3 +552,10 @@ Este squad entende tanto o Claude Code QUANTO o AIOS-core. Ele pode ajudar você
 ---
 
 *Squad de Maestria em Claude Code v1.0 — Orquestrado por Orion*
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`claude-mastery-chief`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.
