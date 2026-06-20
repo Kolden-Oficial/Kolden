@@ -1,5 +1,6 @@
 # ===== Segredos / ambiente =====
 .env
+.env.*
 .env.local
 .env.*.local
 *.env
@@ -7,12 +8,19 @@
 secrets*
 *.pem
 *.key
+*.cert
 *.p12
 *.pfx
 *.ppk
 
 # Supabase CLI temp
 **/supabase/.temp/
+
+# ===== Dados / runtime =====
+data/
+s3_data/
+redis_data/
+logs/
 
 # ===== Python =====
 .venv/
@@ -28,6 +36,7 @@ __pycache__/
 
 # ===== Node / JS =====
 node_modules/
+.npm/
 .next/
 out/
 dist/
