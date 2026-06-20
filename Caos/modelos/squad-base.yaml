@@ -1,0 +1,52 @@
+# Manifesto de Squad — template
+#
+# Base para squads/<nome>/squad.yaml. Substitua os valores entre <>. Apague comentários
+# de instrução no arquivo final. Inspirado no padrão squad.yaml dos xquads-squads.
+
+squad:
+  nome: "<nome-do-squad>"          # kebab-case
+  versao: "1.0.0"
+  dominio: "<dominio principal>"   # ver dados/catalogo-de-roteamento.yaml
+  descricao: |
+    <1-2 frases: o que o squad resolve e para quem>
+  keywords: [<termos para roteamento e descoberta>]
+  agente_de_entrada: "<orquestrador>"   # tier 0
+  criado_em: "<ISO-8601>"
+
+tiers:
+  tier_0:
+    nome: "Orquestração"
+    agentes: ["<orquestrador>"]
+    proposito: "Triagem, roteamento, síntese e controle de qualidade. Não executa trabalho especializado."
+  tier_1:
+    nome: "<Especialistas do domínio>"
+    agentes: ["<especialista-1>", "<especialista-2>", "<especialista-3>"]
+    proposito: "Competência profunda; entregam o trabalho de fato."
+
+agentes:
+  <orquestrador>:
+    arquivo: "orquestrador.md"
+    tier: 0
+    foco: "roteamento + síntese"
+  <especialista-1>:
+    arquivo: "especialistas/<especialista-1>.md"
+    tier: 1
+    foco: "<foco em 1-3 frameworks>"
+  <especialista-2>:
+    arquivo: "especialistas/<especialista-2>.md"
+    tier: 1
+    foco: "<foco>"
+
+handoffs:
+  <orquestrador>:
+    roteia_para: ["<especialista-1>", "<especialista-2>", "<especialista-3>"]
+  <especialista-1>:
+    escala_para: ["<orquestrador>"]
+
+qualidade:
+  checklist: "checklists/qualidade-da-saida.md"
+  maturity_minimo: 7.0           # gate da Fase 7
+
+ativacao:
+  prefixo: "<nome-do-squad>"
+  exemplo: "@<orquestrador> ou /squad <tema>"

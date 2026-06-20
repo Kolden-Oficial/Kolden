@@ -1,0 +1,119 @@
+workflow:
+  id: wf-brand-creation
+  name: "Criação de Marca"
+  version: "1.0.0"
+  description: |
+    Workflow completo de criação de marca de ponta a ponta. Da pesquisa de
+    mercado ao posicionamento, naming, design de identidade e desenvolvimento
+    de brand story. Produz um sistema de marca completo pronto para lançamento.
+  trigger: "*brand-creation"
+  entry_agent: brand-chief
+  estimated_duration: "60-120 minutos"
+  type: sequential
+  sequence:
+    - agent: archetype-consultant
+      action: map-archetype
+      creates: archetype_profile
+    - agent: al-ries
+      action: create-positioning
+      creates: positioning_strategy
+    - agent: naming-strategist
+      action: generate-names
+      creates: naming_candidates
+    - agent: alina-wheeler
+      action: build-identity
+      creates: identity_system
+    - agent: donald-miller
+      action: create-brand-story
+      creates: brandscript
+    - agent: brand-chief
+      action: review
+      creates: brand_package
+
+phases:
+  - id: phase_0
+    name: "Pesquisa e Arquétipo"
+    agent: archetype-consultant
+    task: map-archetype.md
+    description: "Avaliar todos os 12 arquétipos em relação aos valores, ao público e ao cenário competitivo da marca. Selecionar o arquétipo primário e o secundário para orientar todas as decisões de marca subsequentes."
+    outputs:
+      - archetype_profile: "markdown"
+      - brand_expression_guide: "object"
+    checkpoint:
+      gate: "Arquétipo primário selecionado com guia de expressão"
+      veto: "Arquétipo conflita com os valores de marca declarados ou com as aspirações do público"
+
+  - id: phase_1
+    name: "Posicionamento"
+    agent: al-ries
+    task: create-positioning.md
+    depends_on: [phase_0]
+    description: "Definir a posição da marca no mercado. Analisar a categoria, identificar espaços em branco e criar a declaração de posicionamento, o tagline e os pontos de prova."
+    outputs:
+      - positioning_strategy: "markdown"
+      - positioning_statement: "string"
+      - tagline: "string"
+    checkpoint:
+      gate: "Posicionamento é relevante, diferenciado e crível"
+      veto: "Posição já dominada por um concorrente dominante"
+
+  - id: phase_2
+    name: "Naming"
+    agent: naming-strategist
+    task: generate-names.md
+    depends_on: [phase_1]
+    description: "Gerar e avaliar candidatos a nome com base na estratégia de posicionamento. Produzir mais de 30 candidatos, pontuar em 7 critérios e recomendar os 5 finalistas principais."
+    outputs:
+      - naming_candidates: "markdown"
+      - top_finalists: "list"
+    checkpoint:
+      gate: "Mínimo de 3 finalistas viáveis com pontuações e justificativa"
+      veto: "Todos os finalistas têm conflitos de marca registrada ou de domínio"
+
+  - id: phase_3
+    name: "Identidade Visual e Verbal"
+    agent: alina-wheeler
+    task: build-identity.md
+    depends_on: [phase_0, phase_1, phase_2]
+    description: "Desenhar o sistema de identidade completo — visual (cores, tipografia, direção de logo, fotografia) e verbal (voz, mensagens-chave, fundação da brand story)."
+    outputs:
+      - identity_system: "markdown"
+      - brand_guidelines: "markdown"
+    checkpoint:
+      gate: "Sistema de identidade completo com visual, verbal e governança"
+      veto: "Identidade contradiz o posicionamento ou o arquétipo"
+
+  - id: phase_4
+    name: "Brand Story"
+    agent: donald-miller
+    task: create-brand-story.md
+    depends_on: [phase_1, phase_3]
+    description: "Construir a narrativa da marca usando StoryBrand SB7. Criar o BrandScript, o one-liner, o copy do wireframe do site e as aplicações em pontos de contato."
+    outputs:
+      - brandscript: "markdown"
+      - one_liner: "string"
+      - website_copy: "markdown"
+    checkpoint:
+      gate: "BrandScript completo com todos os 7 elementos e aplicado aos pontos de contato"
+      veto: "Marca posicionada como herói em vez de guia"
+
+  - id: phase_5
+    name: "Pacote de Lançamento de Marca"
+    agent: brand-chief
+    task: review.md
+    depends_on: [phase_3, phase_4]
+    description: "O Brand Chief compila todos os entregáveis no pacote final de lançamento de marca. Revisa a consistência entre arquétipo, posicionamento, identidade e story. Fornece o roteiro de implementação."
+    outputs:
+      - brand_package: "markdown"
+      - implementation_roadmap: "object"
+    checkpoint:
+      gate: "Todos os elementos de marca consistentes e prontos para lançamento"
+      veto: "Inconsistências entre posicionamento, identidade e story"
+
+completion_criteria:
+  - "Arquétipo de marca definido com guia de expressão"
+  - "Estratégia de posicionamento completa com tagline"
+  - "Nome de marca selecionado entre os candidatos avaliados"
+  - "Sistema de identidade desenhado (visual + verbal)"
+  - "Brand story escrita com StoryBrand SB7"
+  - "Pacote de lançamento compilado com roteiro de implementação"

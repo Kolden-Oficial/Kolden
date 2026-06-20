@@ -1,0 +1,121 @@
+# Workflow de Narrativa de Marca
+# Ecossistema completo de storytelling de marca
+
+workflow:
+  id: wf-brand-narrative
+  name: "Sistema de Narrativa de Marca"
+  trigger: "*brand-narrative"
+  entry_agent: story-chief
+  estimated_duration: "2-4 hours"
+  description: |
+    Construir um ecossistema completo de narrativa de marca: história de origem, histórias de clientes,
+    visão de futuro, narrativa cultural e materiais prontos para apresentação.
+    Direciona através de especialistas em storytelling de marca, narrativa pessoal e apresentação.
+
+  type: sequential
+  sequence:
+    - agent: park-howell
+      action: build-narrative
+      creates: brand_story
+    - agent: kindra-hall
+      action: build-narrative
+      creates: customer_stories
+    - agent: marshall-ganz
+      action: write-manifesto
+      creates: movement_narrative
+    - agent: nancy-duarte
+      action: create-presentation
+      creates: presentation
+
+phases:
+  - id: phase_1_brand_story
+    name: "História Central da Marca"
+    agent: park-howell
+    task: build-narrative.md
+    depends_on: []
+    description: "Define a narrativa And-But-Therefore (ABT) da marca e a história central de identidade"
+    checkpoint:
+      gate: "ABT da marca definido com identidade, conflito e resolução claros"
+      veto: "PARE se os valores da marca não estiverem definidos — é preciso esclarecê-los antes do storytelling"
+    outputs:
+      - brand_abt
+      - brand_identity_narrative
+      - core_values_expressed
+
+  - id: phase_2_origin
+    name: "História de Origem"
+    agent: marshall-ganz
+    task: write-manifesto.md
+    depends_on: [phase_1_brand_story]
+    description: "Construa a história de origem do fundador/marca usando o Story of Self"
+    checkpoint:
+      gate: "A história de origem tem um momento pessoal autêntico e expressão clara de valores"
+      veto: "PARE se a história de origem for genérica ou carecer de verdade emocional"
+    outputs:
+      - origin_story
+      - founder_narrative
+
+  - id: phase_3_customer_stories
+    name: "Histórias de Clientes"
+    agent: kindra-hall
+    task: build-narrative.md
+    depends_on: [phase_1_brand_story]
+    description: "Construa as quatro histórias essenciais da marca: Valor, Fundador, Propósito, Cliente"
+    checkpoint:
+      gate: "Os quatro tipos de história rascunhados com exemplos específicos e identificáveis"
+      veto: "PARE se as histórias carecerem de especificidade — histórias genéricas não grudam"
+    outputs:
+      - value_story
+      - founder_story
+      - purpose_story
+      - customer_story
+
+  - id: phase_4_future_vision
+    name: "Narrativa de Visão de Futuro"
+    agent: nancy-duarte
+    task: create-presentation.md
+    depends_on: [phase_1_brand_story]
+    description: "Crie a narrativa do 'O Que Poderia Ser' (What Could Be) — o futuro que a marca está construindo"
+    checkpoint:
+      gate: "A visão de futuro é vívida, específica e emocionalmente cativante"
+      veto: "PARE se a visão for vaga ou desconectada dos valores da marca"
+    outputs:
+      - future_vision
+      - sparkline_structure
+
+  - id: phase_5_culture_narrative
+    name: "Narrativa de Cultura"
+    agent: marshall-ganz
+    task: write-manifesto.md
+    depends_on: [phase_2_origin, phase_3_customer_stories]
+    description: "Entrelace as histórias de origem e de clientes em um manifesto de movimento"
+    checkpoint:
+      gate: "A narrativa de cultura cria senso de pertencimento e identidade coletiva"
+      veto: "PARE se a narrativa exclui em vez de incluir"
+    outputs:
+      - culture_manifesto
+      - story_of_us
+
+  - id: phase_6_presentations
+    name: "Materiais de Apresentação"
+    agent: nancy-duarte
+    task: create-presentation.md
+    depends_on: [phase_4_future_vision, phase_5_culture_narrative]
+    support_agents: [oren-klaff]
+    description: "Empacote todas as narrativas em formatos prontos para apresentação"
+    checkpoint:
+      gate: "Pitch deck e narrativas de keynote completos com estruturas de sparkline"
+      veto: "PARE se as apresentações carecerem de uma chamada para ação clara"
+    outputs:
+      - investor_pitch
+      - keynote_narrative
+      - sales_deck
+      - brand_presentation
+
+completion_criteria:
+  - "Narrativa ABT central da marca definida"
+  - "História de origem construída com verdade emocional autêntica"
+  - "Quatro histórias essenciais da marca concluídas (Valor, Fundador, Propósito, Cliente)"
+  - "Narrativa de visão de futuro vívida e cativante"
+  - "Manifesto de cultura cria pertencimento e identidade"
+  - "Materiais de apresentação prontos com estruturas de sparkline e CTAs claras"

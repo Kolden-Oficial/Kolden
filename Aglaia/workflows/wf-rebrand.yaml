@@ -1,0 +1,86 @@
+workflow:
+  id: wf-rebrand
+  name: "Rebranding"
+  version: "1.0.0"
+  description: |
+    Workflow de rebranding para marcas existentes. Começa com uma auditoria
+    abrangente, revisa a validade do posicionamento, atualiza elementos de
+    identidade e renova o messaging. Preserva o que funciona e corrige o que não funciona.
+  trigger: "*rebrand"
+  entry_agent: brand-chief
+  estimated_duration: "45-90 minutos"
+  type: sequential
+  sequence:
+    - agent: david-aaker
+      action: audit-brand
+      creates: audit_report
+    - agent: al-ries
+      action: create-positioning
+      creates: positioning_review
+    - agent: alina-wheeler
+      action: build-identity
+      creates: updated_identity
+    - agent: donald-miller
+      action: create-brand-story
+      creates: updated_messaging
+
+phases:
+  - id: phase_0
+    name: "Auditoria de Marca"
+    agent: david-aaker
+    task: audit-brand.md
+    description: "Auditoria abrangente da saúde da marca usando o modelo de equity de Aaker e o identity prism de Kapferer. Identifica o que preservar, o que corrigir e o que reconstruir."
+    outputs:
+      - audit_report: "markdown"
+      - health_score: "number"
+      - preserve_list: "list"
+      - fix_list: "list"
+    checkpoint:
+      gate: "Auditoria completa com classificação clara de preservar/corrigir/reconstruir"
+      veto: "A auditoria revela que a marca está saudável — rebranding não se justifica"
+
+  - id: phase_1
+    name: "Revisão de Posicionamento"
+    agent: al-ries
+    task: create-positioning.md
+    depends_on: [phase_0]
+    description: "Reavaliar o posicionamento da marca em relação ao cenário competitivo atual. Determinar se a posição precisa mudar ou se a mesma posição precisa de uma execução mais forte."
+    outputs:
+      - positioning_review: "markdown"
+      - new_positioning: "string"
+      - change_magnitude: "string"
+    checkpoint:
+      gate: "Decisão de posicionamento tomada: manter, refinar ou pivotar"
+      veto: "Pivô de posicionamento proposto sem análise competitiva suficiente"
+
+  - id: phase_2
+    name: "Atualização de Identidade"
+    agent: alina-wheeler
+    task: build-identity.md
+    depends_on: [phase_0, phase_1]
+    description: "Atualizar a identidade visual e verbal com base nos achados da auditoria e na revisão de posicionamento. Preservar elementos sinalizados como fortes, redesenhar elementos sinalizados para reparo."
+    outputs:
+      - updated_identity: "markdown"
+      - change_summary: "list"
+    checkpoint:
+      gate: "Atualizações de identidade alinhadas ao novo posicionamento e preservam pontos fortes"
+      veto: "Mudanças destroem o brand equity existente sem justificativa"
+
+  - id: phase_3
+    name: "Renovação do Messaging"
+    agent: donald-miller
+    task: create-brand-story.md
+    depends_on: [phase_1, phase_2]
+    description: "Renovar a brand story e o messaging usando StoryBrand SB7. Atualizar o BrandScript, o one-liner e o copy dos pontos de contato para alinhar com o posicionamento e a identidade atualizados."
+    outputs:
+      - updated_brandscript: "markdown"
+      - updated_messaging: "markdown"
+    checkpoint:
+      gate: "Messaging consistente com o posicionamento e a identidade atualizados"
+      veto: "Story desconectada das capacidades reais da marca"
+
+completion_criteria:
+  - "Marca auditada com classificação de preservar/corrigir/reconstruir"
+  - "Posicionamento revisado e decisão tomada (manter, refinar ou pivotar)"
+  - "Identidade atualizada preservando pontos fortes e corrigindo fraquezas"
+  - "Messaging renovado com alinhamento ao StoryBrand"

@@ -1,0 +1,100 @@
+workflow:
+  id: wf-campaign-launch
+  name: "Lançamento de Campanha"
+  version: "1.0.0"
+  description: |
+    Lançamento completo de campanha de mídia paga. Da estratégia ao
+    desenvolvimento criativo, configuração de tracking, lançamento e otimização.
+    O Traffic Chief orquestra os especialistas de plataforma em cada fase.
+  trigger: "*campaign-launch"
+  entry_agent: traffic-chief
+  estimated_duration: "45-90 minutos"
+
+  type: sequential
+  sequence:
+    - agent: traffic-chief
+      action: create-ad-strategy
+      creates: strategy
+    - agent: ad-midas
+      action: create-ad-creative
+      creates: creatives
+    - agent: pixel-specialist
+      action: setup-tracking
+      creates: tracking
+    - agent: performance-analyst
+      action: analyze-performance
+      creates: analysis
+
+phases:
+  - id: phase_0
+    name: "Desenvolvimento de Estratégia"
+    agent: traffic-chief
+    task: create-ad-strategy.md
+    description: "Defina a arquitetura de público, a estrutura da campanha, os temas criativos, a alocação de orçamento e as metas de KPI da campanha."
+    outputs:
+      - ad_strategy: "markdown"
+      - audience_segments: "list"
+      - budget_allocation: "object"
+    checkpoint:
+      gate: "Estratégia concluída com públicos, estrutura, orçamento e KPIs definidos"
+      veto: "Falta dimensionamento de público ou alocação de orçamento"
+
+  - id: phase_1
+    name: "Desenvolvimento Criativo"
+    agent: ad-midas
+    task: create-ad-creative.md
+    depends_on: [phase_0]
+    description: "Desenvolva conceitos de criativos de anúncio com base na estratégia. Crie hooks, copy, direção visual e briefings de produção para cada etapa do funil."
+    outputs:
+      - creative_package: "markdown"
+      - production_briefs: "list"
+      - testing_plan: "object"
+    checkpoint:
+      gate: "Mínimo de 5 conceitos criativos com briefings prontos para produção"
+      veto: "Os criativos não correspondem ao mapeamento de público e etapa de funil da estratégia"
+
+  - id: phase_2
+    name: "Configuração de Rastreamento"
+    agent: pixel-specialist
+    task: setup-tracking.md
+    depends_on: [phase_0]
+    description: "Configure os pixels de rastreamento, eventos de conversão, APIs server-side, estratégia de UTM e modelo de atribuição. Faça QA de todo o rastreamento antes do lançamento."
+    outputs:
+      - tracking_setup: "markdown"
+      - qa_checklist: "list"
+    checkpoint:
+      gate: "Todos os eventos de conversão verificados disparando corretamente com QA aprovado"
+      veto: "Evento de conversão primário não está rastreando — não é possível lançar sem mensuração"
+
+  - id: phase_3
+    name: "Lançamento da Campanha"
+    agent: traffic-chief
+    task: create-ad-strategy.md
+    depends_on: [phase_1, phase_2]
+    description: "Execute o lançamento: monte as campanhas na plataforma, faça upload dos criativos, defina a segmentação, ative o rastreamento e coloque no ar. Monitore as primeiras 48 horas."
+    outputs:
+      - launch_checklist: "markdown"
+      - monitoring_plan: "object"
+    checkpoint:
+      gate: "Campanhas no ar, gastando e rastreamento confirmado"
+      veto: "Rastreamento não verificado pós-lançamento — pause até confirmar"
+
+  - id: phase_4
+    name: "Otimizar e Escalar"
+    agent: performance-analyst
+    task: analyze-performance.md
+    depends_on: [phase_3]
+    description: "Após 7 dias de dados, analise o desempenho, identifique vencedores e perdedores e forneça recomendações de otimização. Repasse ao scale-optimizer se a escala for justificada."
+    outputs:
+      - performance_report: "markdown"
+      - optimization_actions: "list"
+    checkpoint:
+      gate: "Desempenho analisado com recomendações acionáveis"
+      veto: "Dados insuficientes — estenda a fase de aprendizado antes de otimizar"
+
+completion_criteria:
+  - "Estratégia definida com públicos, estrutura e orçamento"
+  - "Criativos desenvolvidos com plano de testes"
+  - "Rastreamento verificado com QA aprovado"
+  - "Campanhas lançadas e gastando"
+  - "Primeira análise de desempenho concluída com plano de otimização"

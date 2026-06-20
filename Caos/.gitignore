@@ -1,0 +1,4 @@
+referencias/
+registros/auditoria.log
+.env
+*.local.json

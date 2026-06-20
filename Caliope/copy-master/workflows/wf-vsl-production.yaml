@@ -1,0 +1,124 @@
+workflow:
+  id: wf-vsl-production
+  name: "Produção de VSL Completa"
+  version: "2.0.0"
+  description: |
+    Workflow especializado para produção de Video Sales Letters. Combina o RMBC de
+    Stefan Georgi com o formato de Jon Benson, a camada de crença de Evaldo Albuquerque,
+    e revisão final do Copy Master Chief com auditoria de psicologia da persuasão.
+    Produz um script de VSL completo, production-ready, com notas visuais e de áudio.
+  trigger: "*vsl-production"
+  entry_agent: copy-master-chief
+  estimated_duration: "45-90 minutes"
+  type: sequential
+  sequence:
+    - agent: copy-master-chief
+      action: diagnose-vsl
+      creates: vsl_brief
+    - agent: stefan-georgi
+      action: write-rmbc-draft
+      creates: rmbc_draft
+    - agent: jon-benson
+      action: format-vsl
+      creates: formatted_vsl
+    - agent: evaldo-albuquerque
+      action: add-belief-layer
+      creates: belief_enhanced_vsl
+    - agent: copy-master-chief
+      action: psychology-checkpoint
+      creates: psychology_audit
+    - agent: copy-master-chief
+      action: final-review
+      creates: final_vsl
+
+phases:
+  - id: phase_0
+    name: "Brief e Estratégia da VSL"
+    agent: copy-master-chief
+    task: diagnose.md
+    description: "O Copy Master Chief recebe o brief da VSL, identifica o produto, a audiência, o nível de consciência, o mecanismo único e os elementos de prova. Define a estratégia RMBC e a duração-alvo. Define as metas de arquitetura de persuasão."
+    outputs:
+      - vsl_brief: "markdown"
+      - target_duration: "string"
+      - mechanism_name: "string"
+      - persuasion_goals: "markdown"
+    checkpoint:
+      gate: "Brief completo com o mecanismo identificado e a meta de duração definida"
+      veto: "Nenhum mecanismo único definido — não é possível prosseguir sem diferenciação"
+
+  - id: phase_1
+    name: "Rascunho RMBC (Stefan Georgi)"
+    agent: stefan-georgi
+    task: write-vsl-script.md
+    depends_on: [phase_0]
+    description: "Stefan Georgi escreve o núcleo da VSL usando o framework RMBC (Relate-Mechanism-Benefits-Close). Esta é a espinha dorsal estrutural da VSL. Inclui o mapeamento da Camada Psicológica com os princípios de Cialdini por seção do RMBC."
+    outputs:
+      - rmbc_draft: "markdown"
+      - hook_variants: "list"
+    checkpoint:
+      gate: "Todas as 4 seções do RMBC completas com hook, blocos de prova e sequência de close"
+      veto: "Faltando a seção Relate ou o Mechanism não nomeado"
+
+  - id: phase_2
+    name: "Otimização de Formato da VSL (Jon Benson)"
+    agent: jon-benson
+    task: write-vsl-script.md
+    depends_on: [phase_1]
+    description: "Jon Benson otimiza o script para o formato de VSL text-on-screen. Aplica seu estilo de micro-compromisso: frases curtas, pattern interrupts, slides de texto que param o scroll e ritmo conversacional. Garante que o script funcione como text-on-screen com narração em áudio."
+    outputs:
+      - formatted_vsl: "markdown"
+      - slide_count: "number"
+      - pacing_notes: "markdown"
+    checkpoint:
+      gate: "Script formatado para text-on-screen com marcações de slides e ritmo otimizado"
+      veto: "Frases longas demais para slides de texto (máximo de 15 palavras por slide de texto)"
+
+  - id: phase_3
+    name: "Camada de Crença (Evaldo Albuquerque)"
+    agent: evaldo-albuquerque
+    task: write-vsl-script.md
+    depends_on: [phase_2]
+    description: "Evaldo Albuquerque adiciona a camada que muda crenças. Identifica a One Belief que precisa mudar para que o prospecto compre, e tece elementos que quebram crenças ao longo de toda a VSL. Fortalece a mudança de paradigma da solução antiga para o novo mecanismo. Aplica as alavancas de Blair Warren para um impacto emocional mais profundo."
+    outputs:
+      - belief_enhanced_vsl: "markdown"
+      - one_belief: "string"
+      - belief_breaking_points: "list"
+    checkpoint:
+      gate: "One Belief identificada e elementos que quebram crenças tecidos em todas as seções do RMBC"
+      veto: "Nenhuma mudança de crença clara — a VSL não vai converter sem a mudança de paradigma"
+
+  - id: phase_4
+    name: "Checkpoint de Psicologia"
+    agent: copy-master-chief
+    task: review.md
+    depends_on: [phase_3]
+    description: "O Copy Master Chief verifica a arquitetura de persuasão completa: estrutura RMBC + formatação de Jon Benson + camada de crença de Evaldo + princípios de Cialdini + alavancas de Warren. Garante que todas as camadas funcionem juntas em harmonia, sem contradição."
+    outputs:
+      - psychology_audit: "markdown"
+      - layer_harmony: "boolean"
+    checkpoint:
+      gate: "As 3 camadas dos especialistas harmonizadas E mín. 5 princípios de Cialdini ativos E mín. 3 alavancas de Warren engajadas"
+      veto: "As camadas se contradizem OU a camada de crença mina a estrutura RMBC"
+
+  - id: phase_5
+    name: "Revisão Final e Entrega"
+    agent: copy-master-chief
+    task: critique-copy.md
+    depends_on: [phase_4]
+    description: "O Copy Master Chief realiza a crítica final de 8 pontos mais a auditoria de persuasão. Compila o pacote de VSL production-ready com o script, marcações de slides, notas de tempo, recomendações de teste A/B e a documentação da arquitetura de persuasão."
+    outputs:
+      - final_vsl: "markdown"
+      - critique_report: "markdown"
+      - production_package: "markdown"
+      - persuasion_architecture: "markdown"
+    checkpoint:
+      gate: "Nota composta >= 70% (VSLs exigem um patamar mais alto) E todas as verificações de psicologia aprovadas"
+      veto: "Nota < 50% — retornar para a Phase 1 para uma reescrita fundamental"
+
+completion_criteria:
+  - "Framework RMBC totalmente executado por Stefan Georgi"
+  - "Formato text-on-screen otimizado por Jon Benson"
+  - "Camada de crença adicionada por Evaldo Albuquerque"
+  - "Checkpoint de psicologia aprovado (Cialdini + Warren + arquitetura de crença)"
+  - "Crítica final aprovada com veredito Strong ou Elite (>= 70%)"
+  - "Pacote production-ready entregue com todas as notas e a arquitetura de persuasão"

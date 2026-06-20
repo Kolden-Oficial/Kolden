@@ -1,0 +1,94 @@
+# Catálogo de Roteamento: Squad Hormozi
+# Mapeia palavras-chave para agentes especialistas para roteamento rápido
+# Referenciado por: tasks/diagnose.md
+
+domains:
+  offer_creation:
+    keywords: [oferta, grand slam offer, oferta irresistível, value stack, bônus, garantia, reversão de risco, resultado dos sonhos]
+    primary_agent: hormozi-offers
+    secondary_agent: hormozi-pricing
+    description: "Criar ofertas irresistíveis usando o framework Grand Slam Offer"
+
+  lead_generation:
+    keywords: [leads, geração de leads, isca de leads, aquisição de clientes, tráfego, lista de leads, $100M leads, prospecção morna, prospecção fria]
+    primary_agent: hormozi-leads
+    secondary_agent: hormozi-ads
+    description: "Conseguir mais leads e clientes usando o framework $100M Leads"
+
+  pricing_strategy:
+    keywords: [precificação, cobrar mais, ponto de preço, precificação baseada em valor, precificação premium, aumento de preço, margens]
+    primary_agent: hormozi-pricing
+    secondary_agent: hormozi-offers
+    description: "Definir preços e cobrar mais usando a estratégia de precificação baseada em valor"
+
+  sales_copy:
+    keywords: [copy de vendas, copywriting, copy de landing page, página de vendas, texto de anúncio, escrever copy]
+    primary_agent: hormozi-copy
+    secondary_agent: hormozi-hooks
+    description: "Escrever copy de vendas no estilo Hormozi que converte"
+
+  paid_ads:
+    keywords: [anúncios, anúncios pagos, anúncios do Facebook, anúncios do Google, publicidade, gasto com anúncios, compra de mídia, tráfego pago]
+    primary_agent: hormozi-ads
+    secondary_agent: hormozi-hooks
+    description: "Rodar anúncios pagos com a estratégia de publicidade do Hormozi"
+
+  content_strategy:
+    keywords: [conteúdo, estratégia de conteúdo, máquina de conteúdo, redes sociais, orgânico, YouTube, cronograma de postagem]
+    primary_agent: hormozi-content
+    secondary_agent: hormozi-hooks
+    description: "Criar estratégia de conteúdo usando a metodologia da máquina de conteúdo"
+
+  hooks_headlines:
+    keywords: [hooks, headlines, atenção, parador de scroll, thumbnail, abertura, primeira linha, linha de assunto]
+    primary_agent: hormozi-hooks
+    secondary_agent: hormozi-copy
+    description: "Escrever ganchos (hooks) e headlines que capturam a atenção"
+
+  product_launch:
+    keywords: [lançamento, lançamento de produto, lançamento de negócio, ir ao mercado, MVP, primeiros clientes, estratégia de lançamento]
+    primary_agent: hormozi-launch
+    secondary_agent: hormozi-offers
+    description: "Lançar um produto ou negócio com a estratégia de lançamento do Hormozi"
+
+  sales_closing:
+    keywords: [fechar, fechamento, chamada de vendas, objeções, framework CLOSER, vendas por telefone, alto ticket, matrícula]
+    primary_agent: hormozi-closer
+    secondary_agent: hormozi-offers
+    description: "Fechar mais vendas usando o framework CLOSER"
+
+  workshop_design:
+    keywords: [workshop, seminário, evento, treinamento, masterclass, coaching em grupo, apresentação, webinar]
+    primary_agent: hormozi-workshop
+    secondary_agent: hormozi-closer
+    description: "Desenhar e entregar workshops que vendem"
+
+  churn_retention:
+    keywords: [churn, retenção, cancelar, LTV, lifetime value, manter clientes, reduzir churn, ascensão, onboarding]
+    primary_agent: hormozi-retention
+    secondary_agent: hormozi-scale
+    description: "Reduzir o churn (cancelamento) e maximizar o lifetime value do cliente"
+
+  business_scaling:
+    keywords: [escalar, escala, crescer, $1M, $10M, $100M, crescimento, expandir, contratar, sistemas, alavancagem]
+    primary_agent: hormozi-scale
+    secondary_agent: hormozi-models
+    description: "Escalar o negócio de $1M para $100M+ usando o framework de escala do Hormozi"
+
+  business_model:
+    keywords: [modelo de negócio, modelo, receita recorrente, assinatura, agência, SaaS, licenciamento, portfólio]
+    primary_agent: hormozi-models
+    secondary_agent: hormozi-scale
+    description: "Escolher ou consertar o modelo de negócio para máxima escalabilidade"
+
+  business_audit:
+    keywords: [auditoria, avaliar, diagnosticar, assessment, gargalo, restrição, melhoria, problemas]
+    primary_agent: hormozi-audit
+    secondary_agent: hormozi-models
+    description: "Auditar e avaliar um negócio em busca de oportunidades de melhoria"
+
+  general_strategy:
+    keywords: [estratégia, conselho, estratégia de negócio, o que eu devo fazer, direção, próximo passo, mentor]
+    primary_agent: hormozi-advisor
+    secondary_agent: hormozi-chief
+    description: "Estratégia e conselhos gerais de negócio na voz do Hormozi"

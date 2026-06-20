@@ -1,0 +1,140 @@
+# ============================================================================
+# Workflow: Auditoria Completa
+# Squad: claude-code-mastery
+# Version: 1.0.0
+# Purpose: Auditoria completa da configuração do Claude Code usando todos os agentes especialistas
+# ============================================================================
+
+workflow:
+  id: wf-audit-complete
+  name: "Auditoria Completa do Claude Code"
+  version: "1.0.0"
+  description: |
+    Auditoria abrangente que aproveita todos os agentes especialistas para avaliar
+    cada aspecto de uma configuração do Claude Code. Produz um relatório detalhado com
+    pontuações por domínio e recomendações acionáveis.
+
+  trigger: "*full-audit"
+  entry_agent: claude-mastery-chief
+  estimated_duration: "20-40 minutos"
+
+# ────────────────────────────────────────────────────────────────────────────
+# FASES
+# ────────────────────────────────────────────────────────────────────────────
+
+phases:
+
+  # ─── FASE 0: Varredura de Baseline ──────────────────────────────────────────
+  - id: phase_0
+    name: "Varredura de Baseline"
+    agent: claude-mastery-chief
+    task: audit-setup.md
+    description: "Auditoria rápida para estabelecer a pontuação de baseline e identificar áreas que precisam de revisão profunda."
+    outputs:
+      - baseline_score: "número (0-100)"
+      - areas_needing_review: "array de nomes de domínio"
+    checkpoint:
+      gate: "Varredura de baseline concluída com pontuação > 0"
+      veto: "Se o diretório .claude/ não existir, aborte — não há configuração do Claude Code para auditar"
+
+  # ─── FASE 1: Auditorias de Domínio em Paralelo ─────────────────────────────────────
+  - id: phase_1
+    name: "Auditorias Específicas por Domínio"
+    depends_on: [phase_0]
+    parallel: true
+    description: "Execute as auditorias de domínio em paralelo por eficiência."
+    sub_phases:
+
+      - id: phase_1a
+        name: "Auditoria de Configuração"
+        agent: config-engineer
+        task: audit-settings.md
+        description: "Auditar a hierarquia de settings, permissões e deny rules."
+        outputs:
+          - config_score: "número (0-100)"
+          - config_issues: "array"
+        checkpoint:
+          gate: "Arquivos de settings parseados sem erros"
+          veto: "Se o settings.json tiver erros de sintaxe, corrija antes de continuar"
+
+      - id: phase_1b
+        name: "Auditoria de Apodrecimento de Contexto"
+        agent: project-integrator
+        task: context-rot-audit.md
+        description: "Verificar o CLAUDE.md e as rules quanto a obsolescência e inchaço."
+        outputs:
+          - rot_score: "número (0-100, quanto menor = mais apodrecimento)"
+          - stale_entries: "array"
+        checkpoint:
+          gate: "CLAUDE.md e arquivos de rules acessíveis"
+          veto: "Se rot_score < 20, sinalize como CRITICAL antes de continuar"
+
+      - id: phase_1c
+        name: "Auditoria de MCP"
+        agent: mcp-integrator
+        task: mcp-workflow.md
+        description: "Verificar se os servidores MCP estão configurados, responsivos e dentro do orçamento de contexto."
+        outputs:
+          - mcp_score: "número (0-100)"
+          - context_budget_usage: "número (tokens)"
+        checkpoint:
+          gate: "Configuração MCP legível"
+          veto: "Se context_budget > 15K tokens, sinalize como WARNING"
+
+  # ─── FASE 2: Síntese ─────────────────────────────────────────────────────
+  - id: phase_2
+    name: "Síntese da Auditoria"
+    agent: claude-mastery-chief
+    depends_on: [phase_1]
+    description: "Sintetizar todas as auditorias de domínio em um relatório abrangente."
+    steps:
+      - "Agregar as pontuações de todas as auditorias de domínio"
+      - "Calcular a pontuação geral ponderada"
+      - "Classificar os problemas por severidade e impacto"
+      - "Gerar lista priorizada de recomendações"
+      - "Produzir resumo executivo"
+    outputs:
+      - overall_score: "número (0-100)"
+      - grade: "string (A-F)"
+      - top_recommendations: "array (máx 5)"
+      - full_report: "markdown"
+    checkpoint:
+      gate: "Todas as pontuações de domínio agregadas e relatório gerado"
+      veto: "Se qualquer pontuação de domínio for 0 (auditoria falhou ao executar), reexecute esse domínio"
+
+# ────────────────────────────────────────────────────────────────────────────
+# CONDIÇÕES DE VETO (nível de workflow)
+# ────────────────────────────────────────────────────────────────────────────
+
+veto_conditions:
+  - "Nenhum diretório .claude/ — nada para auditar"
+  - "settings.json com erros de sintaxe — corrija primeiro"
+  - "Problema crítico de segurança encontrado — resolva antes de gerar o relatório"
+
+# ────────────────────────────────────────────────────────────────────────────
+# PESOS DE PONTUAÇÃO
+# ────────────────────────────────────────────────────────────────────────────
+
+scoring:
+  weights:
+    configuration: 0.30
+    context_health: 0.25
+    mcp_integration: 0.20
+    baseline: 0.25
+
+  grade_thresholds:
+    A: 90
+    B: 80
+    C: 70
+    D: 60
+    F: 0
+
+# ────────────────────────────────────────────────────────────────────────────
+# CRITÉRIOS DE CONCLUSÃO
+# ────────────────────────────────────────────────────────────────────────────
+
+completion_criteria:
+  - "Todas as auditorias de domínio concluídas"
+  - "Pontuação geral calculada"
+  - "Top 5 recomendações geradas"
+  - "Relatório completo produzido"

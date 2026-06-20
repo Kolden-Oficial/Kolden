@@ -1,0 +1,111 @@
+# Workflow de Configuração de Analytics
+# Objetivos > Métricas > Dashboards > Reporting > Otimização
+# Versão: 1.0.0
+
+workflow:
+  id: wf-analytics-setup
+  name: "Configuração de Analytics"
+  version: "1.0.0"
+  trigger: "*analytics-setup"
+  entry_agent: data-chief
+  description: "Configuração completa da infraestrutura de analytics, desde objetivos de negócio até dashboards otimizados. Este é um workflow de configuração única que estabelece a base de mensuração."
+  estimated_duration: "4-8 horas"
+  type: sequential
+  sequence:
+    - agent: avinash-kaushik
+      action: define-goals
+      creates: goals_metrics
+    - agent: avinash-kaushik
+      action: build-dashboards
+      creates: dashboards
+    - agent: peter-fader
+      action: setup-clv
+      creates: clv_model
+    - agent: sean-ellis
+      action: setup-growth
+      creates: growth_metrics
+
+
+inputs:
+  - name: business
+    required: true
+    description: "Descrição e objetivos do negócio"
+  - name: channels
+    required: true
+    description: "Canais digitais ativos a serem medidos"
+  - name: tools
+    required: false
+    description: "Ferramentas de analytics existentes (GA4, Mixpanel, Amplitude, etc.)"
+  - name: team
+    required: false
+    description: "Quem usará os dashboards e relatórios"
+
+
+phases:
+  - id: phase_1_goals
+    name: "Objetivos"
+    agent: avinash-kaushik
+    task: analyze-data.md
+    depends_on: []
+    description: "Definir as perguntas de negócio e mapeá-las para o framework See-Think-Do-Care"
+    checkpoint:
+      gate: "3-5 perguntas de negócio definidas, cada uma mapeada para um estágio do STDC"
+      veto: "data-chief rejeita se as perguntas forem orientadas por vaidade"
+      required_output: "Perguntas de negócio com mapeamento STDC"
+
+  - id: phase_2_metrics
+    name: "Métricas"
+    agent: avinash-kaushik
+    task: analyze-data.md
+    depends_on: [phase_1_goals]
+    description: "Selecionar KPIs usando o DMMM, definir a OMTM, aplicar o teste E Daí? (So What)"
+    checkpoint:
+      gate: "No máximo 15 KPIs selecionados, cada um passando no teste E Daí? (So What)"
+      veto: "data-chief rejeita se qualquer métrica não conduzir a uma decisão"
+      required_output: "Framework DMMM com objetivos, metas, KPIs e targets"
+
+  - id: phase_3_dashboards
+    name: "Dashboards"
+    agent: avinash-kaushik
+    task: analyze-data.md
+    depends_on: [phase_2_metrics]
+    description: "Desenhar dashboards com estrutura STDC, linha de Ações (Actions row) e benchmarks"
+    checkpoint:
+      gate: "O dashboard tem no máximo 1 página por audiência, cada métrica anotada"
+      veto: "data-chief rejeita dashboards sem a linha de Ações (Actions row)"
+      required_output: "Documento de design do dashboard com wireframes"
+
+  - id: phase_4_reporting
+    name: "Reporting"
+    agent: peter-fader
+    task: optimize-retention.md
+    depends_on: [phase_3_dashboards]
+    description: "Adicionar métricas customer-centric, análise de coortes e acompanhamento de CLV"
+    checkpoint:
+      gate: "Estrutura de análise de coortes definida, segmentos de CLV mapeados"
+      veto: "data-chief rejeita se as métricas de retenção estiverem ausentes"
+      required_output: "Framework de reporting com camada customer-centric"
+
+  - id: phase_5_optimization
+    name: "Otimização"
+    agent: sean-ellis
+    task: measure-growth.md
+    depends_on: [phase_4_reporting]
+    description: "Definir o framework de experimentos de crescimento que usará estes analytics"
+    checkpoint:
+      gate: "Acompanhamento de experimentos integrado ao analytics, template de ICE pronto"
+      veto: "data-chief rejeita se os experimentos não puderem ser medidos com a configuração atual"
+      required_output: "Framework de experimentos de crescimento conectado ao analytics"
+
+completion_criteria:
+  - "Perguntas de negócio definidas e mapeadas para o STDC"
+  - "No máximo 15 KPIs selecionados com o framework DMMM"
+  - "Dashboards desenhados com a linha de Ações (Actions row)"
+  - "Camada de reporting customer-centric adicionada"
+  - "Framework de experimentos de crescimento integrado"
+  - "Plano de tracking documentado com fontes de dados e eventos"
+
+error_handling:
+  tool_gap: "Documentar as ferramentas ausentes e recomendar alternativas. Prosseguir com as ferramentas disponíveis."
+  data_gap: "Identificar métricas não mensuráveis, priorizar o fechamento das lacunas, projetar métricas proxy."
+  escalation: "Se os objetivos de negócio permanecerem obscuros após a Fase 1, escalar para o data-chief para alinhamento com os stakeholders."

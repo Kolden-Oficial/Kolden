@@ -1,0 +1,119 @@
+workflow:
+  id: wf-copy-review-cycle
+  name: "Ciclo de Revisão de Copy Master"
+  version: "2.0.0"
+  description: |
+    Ciclo iterativo de escrita-crítica-revisão com camada de psicologia da persuasão.
+    Um especialista produz o copy, o Copy Master Chief faz a crítica incluindo auditoria
+    de psicologia (Cialdini/Warren), e o especialista revisa com base no feedback.
+    Máximo de 3 iterações antes de escalação ou aprovação forçada.
+  trigger: "*copy-review-cycle"
+  entry_agent: copy-master-chief
+  estimated_duration: "20-45 minutes"
+  type: iterative
+  sequence:
+    - agent: "{specialist}"
+      action: write-draft
+      creates: draft_copy
+    - agent: copy-master-chief
+      action: psychology-checkpoint
+      creates: psychology_audit
+    - agent: copy-master-chief
+      action: critique
+      creates: critique_report
+    - agent: "{specialist}"
+      action: revise
+      creates: revised_copy
+    - agent: copy-master-chief
+      action: final-review
+      creates: final_verdict
+
+config:
+  max_iterations: 3
+  pass_threshold: 60
+  elite_threshold: 80
+  min_cialdini_principles: 3
+  min_warren_levers: 2
+
+phases:
+  - id: phase_0
+    name: "Produção Inicial"
+    agent: "{specialist}"
+    task: "{matched_task}"
+    description: "O especialista escreve o rascunho inicial usando a task apropriada (write-headline.md, write-sales-letter.md, write-webinar-script.md, etc.). A task é selecionada com base no tipo de copy solicitado. O rascunho deve incluir a Camada Psicológica."
+    outputs:
+      - draft_copy: "markdown"
+      - iteration: "number"
+    checkpoint:
+      gate: "Rascunho completo com todas as seções obrigatórias, incluindo a Camada Psicológica"
+      veto: "Rascunho incompleto ou faltando elementos críticos ou mapeamento de persuasão"
+
+  - id: phase_1
+    name: "Checkpoint de Psicologia"
+    agent: copy-master-chief
+    task: review.md
+    depends_on: [phase_0]
+    description: "O Copy Master Chief verifica a camada de psicologia da persuasão. Confere os princípios de Cialdini (mín. 3), as alavancas de Warren (mín. 2) e a integração natural. Sinaliza lacunas como itens WARN para a fase de crítica."
+    outputs:
+      - psychology_audit: "markdown"
+      - psychology_gaps: "list"
+    checkpoint:
+      gate: "Limites mínimos de psicologia atingidos"
+      veto: "Zero princípios de Cialdini presentes — rascunho fundamentalmente incompleto"
+
+  - id: phase_2
+    name: "Crítica do Chief"
+    agent: copy-master-chief
+    task: critique-copy.md
+    depends_on: [phase_1]
+    description: "O Copy Master Chief realiza a crítica aprimorada de 8 pontos mais a auditoria de psicologia da persuasão. Atribui notas, identifica a falha fatal, fornece uma lista de correções priorizada com exemplos de reescrita e inclui recomendações para as lacunas de psicologia."
+    outputs:
+      - critique_report: "markdown"
+      - composite_score: "number"
+      - verdict: "string"
+      - fix_list: "list"
+      - psychology_fixes: "list"
+    checkpoint:
+      gate: "Nota >= 60% E checkpoint de psicologia aprovado — aprovado para entrega"
+      veto: "Nota < 40% após a iteração 3 — escalar"
+
+  - id: phase_3
+    name: "Revisão do Especialista"
+    agent: "{specialist}"
+    task: "{matched_task}"
+    depends_on: [phase_2]
+    condition: "verdict != 'Elite' AND verdict != 'Strong' AND iteration < max_iterations"
+    description: "O especialista revisa o copy abordando todos os itens da lista de correções priorizada, incluindo as lacunas de psicologia. Foco na falha fatal primeiro, depois nas correções de psicologia, depois nas vitórias rápidas, depois nos itens restantes."
+    outputs:
+      - revised_copy: "markdown"
+      - changes_made: "list"
+    checkpoint:
+      gate: "Todas as correções de prioridade 1 abordadas E lacunas de psicologia resolvidas"
+      veto: "Falha fatal não abordada na revisão"
+
+  - id: phase_4
+    name: "Revisão Final"
+    agent: copy-master-chief
+    task: critique-copy.md
+    depends_on: [phase_3]
+    description: "O Copy Master Chief realiza a crítica final, incluindo a reauditoria de psicologia. Se a nota melhorou e passa do limite com o checkpoint de psicologia, aprova. Se não melhorou após o máximo de iterações, escala com os problemas documentados."
+    outputs:
+      - final_critique: "markdown"
+      - final_verdict: "string"
+    checkpoint:
+      gate: "Nota >= 60% E checkpoint de psicologia aprovado OU máximo de iterações atingido com exceções documentadas"
+      veto: "Nota diminuiu entre as iterações — investigar a causa raiz"
+
+iteration_rules:
+  on_pass: "Entregar o copy final com o relatório de crítica e a documentação da arquitetura de persuasão"
+  on_fail_under_max: "Retornar para a phase_3 com a lista de correções atualizada, incluindo as lacunas de psicologia"
+  on_max_reached: "Aprovar com as ressalvas documentadas OU escalar para o usuário"
+  score_regression: "Se a nota cair entre as iterações, parar e reavaliar a abordagem"
+  psychology_fail: "Se o checkpoint de psicologia falhar após a revisão, sinalizar para intervenção direta do Copy Master Chief"
+
+completion_criteria:
+  - "O copy alcança o veredito Strong ou Elite"
+  - "Checkpoint de psicologia aprovado (mín. 3 Cialdini, mín. 2 Warren)"
+  - "OU máximo de iterações atingido com todas as correções de prioridade 1 abordadas"
+  - "Relatório de crítica entregue com cada iteração documentada"
+  - "Copy final marcado como aprovado ou escalado com a arquitetura de persuasão"

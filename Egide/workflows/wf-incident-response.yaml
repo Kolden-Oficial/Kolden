@@ -1,0 +1,157 @@
+# Workflow de Resposta a Incidentes
+# Ciclo de tratamento de incidentes baseado no NIST 800-61
+
+workflow:
+  id: wf-incident-response
+  name: "Resposta a Incidentes"
+  trigger: "*incident-response"
+  entry_agent: omar-santos
+  estimated_duration: "1-8 horas (varia conforme a severidade)"
+  description: |
+    Workflow estruturado de resposta a incidentes seguindo o framework NIST 800-61.
+    Da detecção até contenção, erradicação, recuperação e lições aprendidas.
+
+  type: sequential
+  sequence:
+    - agent: omar-santos
+      action: detect
+      creates: detection_report
+    - agent: omar-santos
+      action: contain
+      creates: containment_plan
+    - agent: omar-santos
+      action: eradicate
+      creates: eradication
+    - agent: omar-santos
+      action: recover
+      creates: recovery
+    - agent: omar-santos
+      action: lessons-learned
+      creates: post_mortem
+
+phases:
+  - id: phase_1_detect
+    name: "Detecção e Triagem"
+    agent: omar-santos
+    task: respond-incident.md
+    depends_on: []
+    description: "Classificar o incidente, estabelecer a linha do tempo, avaliar a severidade"
+    checkpoint:
+      gate: "Incidente classificado com severidade (P1-P4) e raio de impacto estimado"
+      veto: "PARE se o incidente envolver exfiltração ativa de dados — escale para P1 imediatamente"
+    outputs:
+      - incident_classification
+      - severity_level
+      - initial_timeline
+      - ioc_list
+
+  - id: phase_2_contain
+    name: "Contenção"
+    agent: omar-santos
+    task: respond-incident.md
+    depends_on: [phase_1_detect]
+    support_agents: [chris-sanders, command-generator]
+    description: "Isolar sistemas afetados, preservar evidências, deter a propagação"
+    checkpoint:
+      gate: "Acesso do atacante cortado e evidências preservadas"
+      veto: "PARE se houver risco de destruição de evidências — preserve antes de qualquer outra ação"
+    actions:
+      - "Isolar sistemas afetados (segmentação de rede)"
+      - "Capturar dumps de memória e imagens de disco"
+      - "Bloquear IPs/domínios maliciosos no perímetro"
+      - "Desabilitar contas comprometidas"
+      - "Ativar monitoramento reforçado em sistemas adjacentes"
+    outputs:
+      - containment_actions
+      - preserved_evidence
+      - network_changes
+
+  - id: phase_3_eradicate
+    name: "Erradicação"
+    agent: omar-santos
+    task: respond-incident.md
+    depends_on: [phase_2_contain]
+    support_agents: [jim-manico, peter-kim]
+    description: "Remover a ameaça, corrigir vulnerabilidades, reconstruir sistemas comprometidos"
+    checkpoint:
+      gate: "Causa-raiz identificada e todos os artefatos maliciosos removidos"
+      veto: "PARE se a causa-raiz for desconhecida — não declare erradicado sem entender o ponto de entrada"
+    actions:
+      - "Identificar e documentar a causa-raiz"
+      - "Remover malware, backdoors e contas não autorizadas"
+      - "Corrigir vulnerabilidades exploradas"
+      - "Reconstruir sistemas comprometidos a partir de baselines limpas"
+      - "Varrer em busca de IOCs residuais"
+    outputs:
+      - root_cause_analysis
+      - eradication_confirmation
+      - patching_actions
+
+  - id: phase_4_recover
+    name: "Recuperação"
+    agent: omar-santos
+    task: respond-incident.md
+    depends_on: [phase_3_eradicate]
+    support_agents: [chris-sanders]
+    description: "Restaurar serviços, validar integridade, monitorar reincidência de comprometimento"
+    checkpoint:
+      gate: "Todos os serviços restaurados e monitoramento reforçado de 72 horas ativo"
+      veto: "PARE se a validação de integridade falhar — não restaure sistemas não verificados para produção"
+    actions:
+      - "Restaurar a partir de backups limpos e verificados"
+      - "Reintrodução gradual em produção"
+      - "Validar a integridade do sistema (checksums, baselines)"
+      - "Ativar monitoramento reforçado por 72 horas"
+      - "Atualizar regras de detecção com novos IOCs"
+    outputs:
+      - restored_services
+      - monitoring_status
+      - updated_detection_rules
+
+  - id: phase_5_lessons
+    name: "Lições Aprendidas"
+    agent: omar-santos
+    task: respond-incident.md
+    depends_on: [phase_4_recover]
+    support_agents: [marcus-carey]
+    description: "Revisão pós-incidente, documentação e melhoria de processos"
+    checkpoint:
+      gate: "Relatório pós-incidente completo com melhorias acionáveis"
+      veto: "NUNCA pule as lições aprendidas — mesmo em incidentes menores"
+    actions:
+      - "Conduzir revisão pós-incidente (em até 5 dias úteis)"
+      - "Documentar a linha do tempo completa com as decisões"
+      - "Identificar melhorias de processo"
+      - "Atualizar os playbooks de IR"
+      - "Criar pacotes de compartilhamento de IOC (se apropriado)"
+    outputs:
+      - incident_report
+      - lessons_learned
+      - playbook_updates
+      - ioc_packages
+
+completion_criteria:
+  - "Incidente classificado e triado dentro do SLA"
+  - "Contenção verificada — sem comprometimento em andamento"
+  - "Causa-raiz identificada e documentada"
+  - "Todos os sistemas afetados restaurados e validados"
+  - "Monitoramento reforçado ativo por no mínimo 72 horas"
+  - "Lições aprendidas documentadas com melhorias acionáveis"
+
+severity_sla:
+  P1_critical:
+    triage: "15 minutos"
+    containment: "1 hora"
+    executive_notification: "imediata"
+  P2_high:
+    triage: "30 minutos"
+    containment: "4 horas"
+    executive_notification: "em até 2 horas"
+  P3_medium:
+    triage: "2 horas"
+    containment: "24 horas"
+    executive_notification: "resumo diário"
+  P4_low:
+    triage: "24 horas"
+    containment: "1 semana"
+    executive_notification: "resumo semanal"

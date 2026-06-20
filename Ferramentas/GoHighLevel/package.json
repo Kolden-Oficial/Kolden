@@ -1,0 +1,20 @@
+{
+  "name": "ghl-automacao",
+  "version": "1.0.0",
+  "description": "Scripts de automação para GoHighLevel via API REST v2",
+  "type": "module",
+  "scripts": {
+    "list-fields": "tsx src/scripts/list-custom-fields.ts",
+    "create-field": "tsx src/scripts/create-custom-field.ts",
+    "create-project": "tsx src/scripts/create-project-with-jobs.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.15.0",
+    "typescript": "^5.4.0"
+  }
+}

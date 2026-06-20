@@ -1,0 +1,87 @@
+name: copy-squad
+version: "1.0.0"
+short-title: "Copy Squad"
+description: "Squad de elite com 23 agentes de copywriting — 22 copywriters lendários + 1 orquestrador. Cobre direct response, email, funis, VSLs, cartas de vendas, ofertas e copywriting de marca."
+author: "Synkra AIOS"
+license: MIT
+slashPrefix: "copy-squad"
+
+aios:
+  minVersion: "4.0.0"
+  type: squad
+
+tags:
+  - copywriting
+  - direct-response
+  - sales-letter
+  - email
+  - vsl
+  - funnel
+  - headline
+  - offer
+  - ad-copy
+  - launch
+  - brand-copy
+
+components:
+  agents:
+    # Tier 0 — Orquestrador
+    - copy-chief.md
+    # Tier 1A — Lendas da Resposta Direta
+    - gary-halbert.md
+    - eugene-schwartz.md
+    - claude-hopkins.md
+    - gary-bencivenga.md
+    - robert-collier.md
+    - john-carlton.md
+    - jim-rutz.md
+    # Tier 1B — Copy Moderna & Funis
+    - dan-kennedy.md
+    - frank-kern.md
+    - russell-brunson.md
+    - todd-brown.md
+    - stefan-georgi.md
+    - jon-benson.md
+    - ry-schwartz.md
+    # Tier 1C — Copy de E-mail & Relacionamento
+    - ben-settle.md
+    - andre-chaperon.md
+    - dan-koe.md
+    # Tier 1D — Ofertas & Páginas de Vendas
+    - joe-sugarman.md
+    - david-ogilvy.md
+    - clayton-makepeace.md
+    - parris-lampropoulos.md
+    - david-deutsch.md
+  tasks:
+    # Tarefas de Escrita
+    - write-headline.md
+    - write-sales-letter.md
+    - write-vsl-script.md
+    - write-email-sequence.md
+    - write-ad-copy.md
+    - write-landing-page.md
+    - write-bullets.md
+    - create-funnel-copy.md
+    - create-offer.md
+    # Tarefas de Análise & Revisão
+    - analyze-copy.md
+    - critique-copy.md
+    - diagnose.md
+    - review.md
+  workflows:
+    - wf-full-copy-project.yaml
+    - wf-copy-review-cycle.yaml
+  checklists:
+    - output-quality.md
+
+config:
+  extends: extend
+
+# Arquitetura de Tiers (metadados — não exigidos pelo schema, enriquecem o roteamento)
+# tier_architecture:
+#   tier_0: Orquestração — copy-chief
+#   tier_1a: Lendas da Resposta Direta — gary-halbert, eugene-schwartz, claude-hopkins, gary-bencivenga, robert-collier, john-carlton, jim-rutz
+#   tier_1b: Copy Moderna & Funis — dan-kennedy, frank-kern, russell-brunson, todd-brown, stefan-georgi, jon-benson, ry-schwartz
+#   tier_1c: E-mail & Relacionamento — ben-settle, andre-chaperon, dan-koe
+#   tier_1d: Ofertas & Páginas de Vendas — joe-sugarman, david-ogilvy, clayton-makepeace, parris-lampropoulos, david-deutsch

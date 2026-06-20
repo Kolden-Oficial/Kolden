@@ -1,0 +1,165 @@
+# ============================================================================
+# Workflow: Atualização de Conhecimento
+# Squad: claude-code-mastery
+# Version: 1.0.0
+# Purpose: Atualizar o conhecimento do squad a partir do changelog e do roadmap do Claude Code
+# ============================================================================
+
+workflow:
+  id: wf-knowledge-update
+  name: "Atualização de Conhecimento do Claude Code"
+  version: "1.0.0"
+  description: |
+    Workflow para atualizar a base de conhecimento do squad claude-code-mastery
+    a partir de fontes oficiais do Claude Code: changelog, documentação, posts de blog
+    e recursos da comunidade. Garante que o squad permaneça atualizado.
+
+  trigger: "*update-knowledge"
+  entry_agent: roadmap-sentinel
+  estimated_duration: "15-30 minutos"
+
+# ────────────────────────────────────────────────────────────────────────────
+# FASES
+# ────────────────────────────────────────────────────────────────────────────
+
+phases:
+
+  # ─── FASE 0: Coleta de Fontes ──────────────────────────────────────────
+  - id: phase_0
+    name: "Coleta de Fontes"
+    agent: roadmap-sentinel
+    description: |
+      Buscar as informações mais recentes de todas as fontes oficiais e da comunidade.
+    steps:
+      - "Buscar o CHANGELOG.md do Claude Code no GitHub"
+      - "Buscar os últimos releases na página de releases do GitHub"
+      - "Verificar a documentação oficial em code.claude.com/docs"
+      - "Verificar o blog da Anthropic em busca de anúncios do Claude Code"
+      - "Verificar fontes da comunidade (claudelog.com, claudefast.com)"
+    sources:
+      changelog: "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      releases: "https://github.com/anthropics/claude-code/releases"
+      docs: "https://code.claude.com/docs/en/overview"
+      blog: "https://claude.com/blog/"
+      community:
+        - "https://claudelog.com/claude-code-changelog/"
+        - "https://claudefa.st/blog/guide/changelog"
+    outputs:
+      - latest_version: "string (ex.: 1.0.47)"
+      - new_features: "array de descrições de recursos"
+      - breaking_changes: "array (se houver)"
+      - deprecations: "array (se houver)"
+    checkpoint:
+      gate: "Pelo menos o changelog e os releases buscados com sucesso"
+      veto: "Nenhuma fonte acessível (problema de rede)"
+
+  # ─── FASE 1: Análise de Delta ────────────────────────────────────────────
+  - id: phase_1
+    name: "Análise de Delta"
+    agent: roadmap-sentinel
+    depends_on: [phase_0]
+    description: |
+      Comparar as novas informações com a base de conhecimento atual do squad
+      para identificar o que precisa ser atualizado.
+    steps:
+      - "Ler o data/claude-code-quick-ref.yaml atual"
+      - "Comparar a lista de ferramentas, eventos de hook e recursos com a documentação mais recente"
+      - "Identificar novos recursos não presentes na base de conhecimento"
+      - "Identificar recursos obsoletos ainda presentes na base de conhecimento"
+      - "Avaliar o impacto em cada agente especialista"
+    outputs:
+      - delta_report:
+          new_features: "array"
+          deprecated_features: "array"
+          changed_features: "array"
+          affected_agents: "array de IDs de agentes"
+      - update_priority: "string (critical | important | minor | none)"
+    checkpoint:
+      gate: "Relatório de delta gerado"
+      veto: "Se update_priority for 'none', pule as fases restantes"
+
+  # ─── FASE 2: Atualização da Base de Conhecimento ─────────────────────────────────────
+  - id: phase_2
+    name: "Atualização da Base de Conhecimento"
+    agent: roadmap-sentinel
+    depends_on: [phase_1]
+    description: |
+      Atualizar os arquivos de dados do squad com as novas informações.
+    steps:
+      - "Atualizar o data/claude-code-quick-ref.yaml com os novos recursos"
+      - "Atualizar o data/hook-patterns.yaml se houver novos eventos de hook"
+      - "Atualizar o data/mcp-integration-catalog.yaml se houver novos MCPs"
+      - "Adicionar novas entradas aos arquivos de dados relevantes"
+      - "Remover entradas obsoletas"
+    outputs:
+      - files_updated: "array de caminhos de arquivos"
+      - entries_added: "número"
+      - entries_removed: "número"
+    checkpoint:
+      gate: "Todos os deltas identificados tratados nos arquivos de dados"
+      veto: "Remover entradas sem aviso de obsolescência"
+
+  # ─── FASE 3: Avaliação de Impacto nos Agentes ───────────────────────────────────
+  - id: phase_3
+    name: "Avaliação de Impacto nos Agentes"
+    agent: claude-mastery-chief
+    depends_on: [phase_2]
+    description: |
+      Avaliar quais agentes especialistas precisam de atualizações com base no delta.
+    steps:
+      - "Para cada agente afetado, identificar as seções impactadas"
+      - "Verificar se as referências de conhecimento do agente ainda estão precisas"
+      - "Sinalizar os agentes que precisam de atualizações de quick_reference ou commands"
+      - "Gerar recomendações de atualização por agente"
+    outputs:
+      - agent_updates:
+          - agent_id: "string"
+            sections_affected: "array"
+            priority: "string (critical | recommended | optional)"
+            recommendation: "string"
+    checkpoint:
+      gate: "Todos os agentes afetados avaliados"
+      veto: "N/A (apenas avaliação)"
+
+  # ─── FASE 4: Resumo e Notificação ────────────────────────────────────────
+  - id: phase_4
+    name: "Resumo da Atualização"
+    agent: claude-mastery-chief
+    depends_on: [phase_3]
+    description: |
+      Gerar o resumo final da atualização com próximos passos acionáveis.
+    steps:
+      - "Compilar o resumo da atualização"
+      - "Listar todas as mudanças feitas"
+      - "Listar as atualizações de agentes recomendadas"
+      - "Fornecer a comparação de versões (era → agora)"
+    outputs:
+      - update_report:
+          version_before: "string"
+          version_after: "string"
+          data_files_updated: "número"
+          agents_needing_update: "número"
+          summary: "string"
+
+# ────────────────────────────────────────────────────────────────────────────
+# CRITÉRIOS DE CONCLUSÃO
+# ────────────────────────────────────────────────────────────────────────────
+
+completion_criteria:
+  - "Todas as fontes oficiais verificadas"
+  - "Relatório de delta gerado"
+  - "Arquivos de dados da base de conhecimento atualizados"
+  - "Avaliação de impacto nos agentes concluída"
+  - "Relatório de resumo da atualização gerado"
+
+# ────────────────────────────────────────────────────────────────────────────
+# AGENDAMENTO
+# ────────────────────────────────────────────────────────────────────────────
+
+schedule:
+  recommended: "Executar após cada atualização de versão do Claude Code"
+  minimum: "Mensalmente"
+  trigger_on:
+    - "Usuário executa *update-knowledge ou *updates"
+    - "Mudança de versão do Claude Code detectada"
+    - "Usuário pergunta 'o que há de novo no Claude Code?'"

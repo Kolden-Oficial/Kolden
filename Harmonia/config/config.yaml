@@ -1,0 +1,65 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Design Squad
+# Domínio: Design Operations
+# Versão: 1.0.0
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: design-squad
+  display_name: "Design Squad"
+  version: "1.0.0"
+  domain: "Design Operations"
+  description: |
+    Um squad completo de design operations que combina pensadores de design systems de
+    classe mundial com agentes operacionais especializados. Da metodologia atomic design
+    (Brad Frost) ao design que escala (Dan Mall) e à liderança de DesignOps (Dave Malouf),
+    este squad cobre arquitetura de componentes, governança de design systems, pesquisa de UX,
+    implementação de UI, geração de assets visuais e colaboração entre design e desenvolvimento.
+
+    Quatro domínios de design: sistemas (criação e governança), operações (processo e ferramentas),
+    experiência (pesquisa e design de interação) e produção (implementação e assets).
+  keywords: [design-systems, ux, ui, atomic-design, components, design-ops, visual-design, prototyping, accessibility]
+  entry_agent: design-chief
+  created_at: "2026-03-05"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [design-chief]
+    purpose: "Triagem, roteamento, controle de qualidade, correspondência de domínio de design"
+  tier_1:
+    name: "Design Systems & Operações"
+    agents: [brad-frost, dan-mall, dave-malouf]
+    purpose: "Metodologia de design systems, estratégia organizacional e liderança de design operations"
+  tier_2:
+    name: "Especialistas de Design"
+    agents: [ux-designer, design-system-architect, visual-generator, ui-engineer]
+    purpose: "Pesquisa de UX, arquitetura de componentes, geração de assets visuais e produção de código de UI"
+
+agents:
+  design-chief:            { file: agents/design-chief.md, tier: 0, icon: "🎨", focus: "Triagem, roteamento, correspondência de domínio de design" }
+  brad-frost:              { file: agents/brad-frost.md, tier: 1, icon: "⚛️", focus: "Atomic design, desenvolvimento orientado a componentes" }
+  dan-mall:                { file: agents/dan-mall.md, tier: 1, icon: "📐", focus: "Design systems em escala, estratégia organizacional" }
+  dave-malouf:             { file: agents/dave-malouf.md, tier: 1, icon: "⚙️", focus: "DesignOps, otimização de processos, cultura de design" }
+  ux-designer:             { file: agents/ux-designer.md, tier: 2, icon: "🔬", focus: "Pesquisa de usuário, design de interação, acessibilidade" }
+  design-system-architect: { file: agents/design-system-architect.md, tier: 2, icon: "🏗️", focus: "Bibliotecas de componentes, implementação de design tokens" }
+  visual-generator:        { file: agents/visual-generator.md, tier: 2, icon: "🖼️", focus: "Geração de assets visuais, criação de imagens" }
+  ui-engineer:             { file: agents/ui-engineer.md, tier: 2, icon: "💻", focus: "Produção de código de UI, implementação de componentes" }
+
+handoffs:
+  design-chief: { routes_to: [brad-frost, dan-mall, dave-malouf, ux-designer, design-system-architect, visual-generator, ui-engineer] }
+  brad-frost: { escalates_to: [design-chief] }
+  dan-mall: { escalates_to: [design-chief] }
+  dave-malouf: { escalates_to: [design-chief] }
+  ux-designer: { escalates_to: [design-chief] }
+  design-system-architect: { escalates_to: [design-chief] }
+  visual-generator: { escalates_to: [design-chief] }
+  ui-engineer: { escalates_to: [design-chief] }
+
+cross_cutting:
+  quality_standards: { min_score: 7.0 }
+
+settings:
+  activation:
+    prefix: "design-squad"
+    example: "@design-squad:brad-frost"

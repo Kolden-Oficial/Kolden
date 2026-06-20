@@ -1,0 +1,179 @@
+# Workflow do GitHub Actions — Revisão Automatizada de PR com Claude Code
+# Squad: claude-code-mastery
+# Template: Coloque em .github/workflows/ e configure os secrets
+#
+# Pré-requisitos:
+#   1. Armazene ANTHROPIC_API_KEY nos secrets do repositório no GitHub
+#   2. Habilite "Allow GitHub Actions to create and approve pull requests" nas configurações do repositório
+#
+# Uso:
+#   Acionado automaticamente na abertura/atualização de PR. Publica um comentário de revisão com os achados.
+
+name: Revisão de PR com Claude Code
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review]
+    # Opcionalmente, limite a caminhos específicos:
+    # paths:
+    #   - 'src/**'
+    #   - 'packages/**'
+
+# Permissões necessárias para publicar comentários no PR
+permissions:
+  contents: read
+  pull-requests: write
+
+# Evita revisões concorrentes no mesmo PR
+concurrency:
+  group: claude-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    name: Revisão de Código do Claude
+    # Ignora PRs em rascunho e PRs criados por bots
+    if: |
+      !github.event.pull_request.draft &&
+      github.event.pull_request.user.login != 'dependabot[bot]' &&
+      github.event.pull_request.user.login != 'claude-code[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Obter Contexto do PR
+        id: pr-context
+        run: |
+          # Obtém o diff entre base e head
+          git diff origin/${{ github.base_ref }}...HEAD > /tmp/pr-diff.txt
+          DIFF_SIZE=$(wc -c < /tmp/pr-diff.txt)
+          FILES_CHANGED=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | wc -l)
+          echo "diff_size=$DIFF_SIZE" >> $GITHUB_OUTPUT
+          echo "files_changed=$FILES_CHANGED" >> $GITHUB_OUTPUT
+
+          # Obtém a lista de arquivos para contexto
+          git diff --name-only origin/${{ github.base_ref }}...HEAD > /tmp/files-changed.txt
+
+      - name: Ignorar PRs Grandes
+        if: steps.pr-context.outputs.diff_size > 200000
+        run: |
+          echo "PR diff is too large (${{ steps.pr-context.outputs.diff_size }} bytes). Skipping automated review."
+          echo "Consider breaking this PR into smaller changes."
+          exit 0
+
+      - name: Executar Revisão do Claude
+        id: review
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          # Trunca o diff para evitar limites de tokens (50KB)
+          head -c 50000 /tmp/pr-diff.txt > /tmp/pr-diff-truncated.txt
+
+          PROMPT="You are a senior code reviewer. Review this pull request diff and provide actionable feedback.
+
+          PR Title: ${{ github.event.pull_request.title }}
+          PR Description: ${{ github.event.pull_request.body }}
+          Files Changed: ${{ steps.pr-context.outputs.files_changed }}
+          Changed Files: $(cat /tmp/files-changed.txt)
+
+          Focus on:
+          1. Bugs and logic errors
+          2. Security vulnerabilities
+          3. Performance issues
+          4. Code quality and maintainability
+          5. Missing error handling
+          6. Test coverage gaps
+
+          Format your response as:
+          ## Summary
+          [1-2 sentence summary]
+
+          ## Findings
+          For each finding:
+          - **[SEVERITY]** File: description
+            Suggestion: how to fix
+
+          Severity levels: CRITICAL, HIGH, MEDIUM, LOW, INFO
+
+          ## Verdict
+          APPROVE / REQUEST_CHANGES / COMMENT
+
+          Diff:
+          $(cat /tmp/pr-diff-truncated.txt)"
+
+          claude -p \
+            --output-format text \
+            --max-turns 3 \
+            "$PROMPT" > /tmp/review-output.txt 2>/tmp/review-error.txt || true
+
+          # Verifica se a revisão foi gerada
+          if [ -s /tmp/review-output.txt ]; then
+            echo "review_success=true" >> $GITHUB_OUTPUT
+          else
+            echo "review_success=false" >> $GITHUB_OUTPUT
+            echo "Review generation failed. Error output:"
+            cat /tmp/review-error.txt
+          fi
+
+      - name: Publicar Comentário de Revisão
+        if: steps.review.outputs.review_success == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const review = fs.readFileSync('/tmp/review-output.txt', 'utf8');
+
+            // Verifica se já existe um comentário de revisão do Claude e o atualiza
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+
+            const existingComment = comments.find(c =>
+              c.body.includes('<!-- claude-code-review -->')
+            );
+
+            const body = `<!-- claude-code-review -->
+            ## Claude Code Review
+
+            ${review}
+
+            ---
+            *Automated review by [Claude Code](https://claude.ai/code) | Commit: \`${context.sha.substring(0, 7)}\` | Files: ${process.env.FILES_CHANGED}*`;
+
+            if (existingComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existingComment.id,
+                body: body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: body,
+              });
+            }
+        env:
+          FILES_CHANGED: ${{ steps.pr-context.outputs.files_changed }}
+
+      - name: Revisão Falhou
+        if: steps.review.outputs.review_success == 'false'
+        run: |
+          echo "::warning::Claude Code review could not be generated. This is non-blocking."

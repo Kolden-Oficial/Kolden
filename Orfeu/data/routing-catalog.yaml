@@ -1,0 +1,77 @@
+# ═══════════════════════════════════════════════════════════════════
+# Catálogo de Roteamento: Squad de Storytelling
+# Versão: 1.0.0
+# ═══════════════════════════════════════════════════════════════════
+
+domains:
+  hero_journey:
+    keywords: [hero's journey, jornada do herói, monomyth, monomito, mythic structure, estrutura mítica, archetypes, arquétipos, mythology, mitologia, collective unconscious, inconsciente coletivo, call to adventure, chamado à aventura]
+    primary_agent: joseph-campbell
+    secondary_agent: dan-harmon
+    description: "Padrões míticos universais, estrutura do monomito, arquétipos e padrões narrativos transculturais"
+
+  story_structure:
+    keywords: [beat sheet, story structure, estrutura de história, screenplay, roteiro, plot points, pontos de virada, three acts, três atos, save the cat, plot architecture, arquitetura de enredo]
+    primary_agent: blake-snyder
+    secondary_agent: shawn-coyne
+    description: "Arquitetura de enredo, beat sheets, estrutura de atos, pontos de virada e formatação de roteiro"
+
+  story_editing:
+    keywords: [story grid, editing, edição, genre, gênero, obligatory scenes, cenas obrigatórias, value shift, mudança de valor, scene analysis, análise de cena, conventions, convenções]
+    primary_agent: shawn-coyne
+    secondary_agent: blake-snyder
+    description: "Metodologia Story Grid, convenções de gênero, análise em nível de cena, diagnósticos editoriais"
+
+  tv_episodic:
+    keywords: [TV writing, roteiro de TV, episode structure, estrutura de episódio, story circle, series, séries, sitcom, pilot, piloto, writers room, sala de roteiristas, episodic, episódico]
+    primary_agent: dan-harmon
+    secondary_agent: blake-snyder
+    description: "Roteiro para televisão e episódico, Story Circle, estrutura de séries e dinâmica da sala de roteiristas"
+
+  presentations:
+    keywords: [presentation, apresentação, slides, keynote, pitch deck, data storytelling, storytelling com dados, TED talk, palestra TED, sparkline, visual narrative, narrativa visual]
+    primary_agent: nancy-duarte
+    secondary_agent: park-howell
+    description: "Design de apresentações, storytelling com dados, narrativa visual, criação de keynotes"
+
+  brand_storytelling:
+    keywords: [brand story, história de marca, business narrative, narrativa de negócio, ABT, marketing story, história de marketing, content marketing, marketing de conteúdo, brand identity, identidade de marca, and but therefore]
+    primary_agent: park-howell
+    secondary_agent: kindra-hall
+    description: "Estratégia de narrativa de marca, framework ABT, storytelling de negócios, marketing de conteúdo"
+
+  personal_stories:
+    keywords: [personal narrative, narrativa pessoal, memoir, memórias, vulnerability, vulnerabilidade, Moth, true stories, histórias reais, 5-second moment, momento de 5 segundos, homework for life]
+    primary_agent: matthew-dicks
+    secondary_agent: kindra-hall
+    description: "Storytelling pessoal, narrativa verdadeira a partir de experiência vivida, vulnerabilidade, momentos de transformação"
+
+  sales_stories:
+    keywords: [sales story, história de vendas, customer story, história do cliente, founder story, história do fundador, value story, história de valor, stories that stick, persuasion narrative, narrativa de persuasão]
+    primary_agent: kindra-hall
+    secondary_agent: oren-klaff
+    description: "Histórias de vendas e de negócios, as quatro histórias essenciais, narrativas de cliente e de fundador"
+
+  improvisation:
+    keywords: [improv, improvisação, spontaneity, espontaneidade, status, yes and, sim e, Theatresports, creative blocks, bloqueios criativos, unblocking, desbloqueio, free association, associação livre]
+    primary_agent: keith-johnstone
+    secondary_agent: matthew-dicks
+    description: "Técnicas de improvisação, espontaneidade, dinâmica de status, desbloqueio criativo"
+
+  pitching:
+    keywords: [pitch, frame control, controle de enquadramento, investor pitch, pitch para investidor, deal, negócio, neurofinance, neurofinanças, persuasion, persuasão, STRONG method, método STRONG, crocodile brain, cérebro reptiliano]
+    primary_agent: oren-klaff
+    secondary_agent: nancy-duarte
+    description: "Metodologia de pitch, controle de enquadramento, apresentações para investidores, persuasão baseada em neurofinanças"
+
+  social_movements:
+    keywords: [public narrative, narrativa pública, organizing, organização, movement, movimento, Story of Self, activism, ativismo, collective action, ação coletiva, Story of Us, Story of Now]
+    primary_agent: marshall-ganz
+    secondary_agent: joseph-campbell
+    description: "Narrativa pública para mudança social, organização comunitária, construção de movimentos"
+
+  general_storytelling:
+    keywords: [storytelling, narrative, narrativa, story, história, how to tell a story, como contar uma história, narrative craft, ofício narrativo, writing, escrita]
+    primary_agent: story-chief
+    secondary_agent: joseph-campbell
+    description: "Orientação geral de storytelling, questões narrativas entre domínios, seleção de framework"

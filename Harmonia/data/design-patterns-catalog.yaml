@@ -1,0 +1,276 @@
+# Catálogo de Padrões de Design
+# Referência para atomic design, tokens, acessibilidade e padrões de componentes
+# Versão: 1.0.0
+
+catalog:
+  version: "1.0.0"
+  last_updated: "2026-03-05"
+
+atomic_design:
+  description: "A metodologia de Brad Frost para construir design systems do menor ao maior"
+  source: "Atomic Design (2016) — bradfrost.com"
+  levels:
+    atoms:
+      description: "Os menores elementos de UI, indivisíveis"
+      examples:
+        - "Botão"
+        - "Campo de input"
+        - "Rótulo"
+        - "Ícone"
+        - "Badge"
+        - "Avatar"
+        - "Checkbox"
+        - "Botão de rádio"
+        - "Toggle switch"
+        - "Link"
+        - "Tag/chip"
+        - "Divisor"
+        - "Spinner/loader"
+        - "Tooltip"
+      characteristics:
+        - "Não podem ser divididos sem perder o significado"
+        - "Reutilizáveis em todos os contextos"
+        - "Estilizados com design tokens"
+        - "Acessíveis por padrão"
+
+    molecules:
+      description: "Grupos simples de átomos que funcionam como uma unidade"
+      examples:
+        - "Barra de busca (input + botão + ícone)"
+        - "Campo de formulário (rótulo + input + texto de ajuda + erro)"
+        - "Item de navegação (ícone + rótulo + badge)"
+        - "Objeto de mídia (imagem + bloco de texto)"
+        - "Cabeçalho de card (avatar + nome + subtítulo)"
+        - "Grupo de botões (múltiplos botões)"
+        - "Breadcrumb (links + separadores)"
+        - "Paginação (botões + indicadores de página)"
+        - "Alerta (ícone + mensagem + ação)"
+        - "Card de estatística (rótulo + valor + tendência)"
+      characteristics:
+        - "Composto de 2 a 3 átomos"
+        - "Propósito único e claro"
+        - "Reutilizável em múltiplos contextos"
+        - "Funcionalidade autocontida"
+
+    organisms:
+      description: "Grupos complexos de moléculas e átomos que formam seções distintas"
+      examples:
+        - "Barra de navegação (logo + itens de nav + busca + menu de usuário)"
+        - "Seção de formulário (título + descrição + campos do formulário + ações)"
+        - "Tabela de dados (cabeçalho + linhas + paginação + filtros)"
+        - "Card (cabeçalho + mídia + conteúdo + rodapé)"
+        - "Modal (overlay + cabeçalho + corpo + rodapé)"
+        - "Sidebar (logo + navegação + usuário + rodapé)"
+        - "Seção hero (título + descrição + CTA + mídia)"
+        - "Thread de comentários (comentários + formulário de resposta + ações)"
+        - "Listagem de produtos (filtros + grade + paginação)"
+        - "Widget de dashboard (título + gráfico + legenda + ações)"
+      characteristics:
+        - "Múltiplas moléculas trabalhando juntas"
+        - "Representa uma seção distinta da interface"
+        - "Pode conter lógica de negócio"
+        - "Repetido entre páginas com variações"
+
+    templates:
+      description: "Estruturas em nível de página que definem o layout e o posicionamento dos componentes"
+      examples:
+        - "Layout de dashboard (sidebar + cabeçalho + grade de conteúdo principal)"
+        - "Layout de artigo (cabeçalho + corpo + sidebar + rodapé)"
+        - "Layout de configurações (abas + seções de formulário)"
+        - "Layout de lista/detalhe (painel de lista + painel de detalhe)"
+        - "Layout de autenticação (card centralizado + fundo)"
+        - "Layout de página de marketing (hero + funcionalidades + depoimentos + CTA)"
+      characteristics:
+        - "Definem a estrutura geral da página"
+        - "Usam conteúdo placeholder"
+        - "Focam no layout, não no conteúdo"
+        - "Definições de grade responsiva"
+
+    pages:
+      description: "Instâncias específicas de templates com conteúdo real"
+      examples:
+        - "Homepage com copy de hero e itens em destaque reais"
+        - "Perfil de usuário com dados reais"
+        - "Detalhe de produto com produto real"
+      characteristics:
+        - "Templates preenchidos com conteúdo real"
+        - "Revelam casos extremos (nomes longos, imagens ausentes)"
+        - "Usados para revisão e testes finais"
+
+design_tokens:
+  description: "Decisões de design expressas como dados — a ponte entre design e código"
+  architecture:
+    global_tokens:
+      description: "Valores brutos sem significado semântico"
+      examples:
+        - "blue-500: #3B82F6"
+        - "spacing-4: 16px"
+        - "font-size-lg: 18px"
+        - "radius-md: 8px"
+        - "shadow-md: 0 4px 6px rgba(0,0,0,0.1)"
+      naming: "{category}-{property}-{variant}"
+
+    alias_tokens:
+      description: "Nomes semânticos que referenciam tokens globais"
+      examples:
+        - "color-primary: {blue-500}"
+        - "color-text-primary: {gray-900}"
+        - "color-bg-surface: {white}"
+        - "color-border-default: {gray-200}"
+        - "color-feedback-success: {green-500}"
+        - "color-feedback-error: {red-500}"
+      naming: "{category}-{semantic-name}"
+      theming: "Tokens de alias mudam entre temas (claro/escuro)"
+
+    component_tokens:
+      description: "Tokens específicos de componente que referenciam tokens de alias"
+      examples:
+        - "button-primary-bg: {color-primary}"
+        - "button-primary-text: {color-text-inverse}"
+        - "input-border: {color-border-default}"
+        - "card-shadow: {shadow-md}"
+        - "nav-bg: {color-bg-surface}"
+      naming: "{component}-{property}"
+      override: "Tokens de componente permitem customização por componente"
+
+  token_categories:
+    color:
+      subcategories: [brand, neutral, feedback, text, background, border, overlay]
+    typography:
+      subcategories: [family, size, weight, line-height, letter-spacing]
+    spacing:
+      subcategories: [inline, stack, inset, grid-gap]
+      base_unit: "4px"
+      scale: [0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 32, 40, 48, 64]
+    border:
+      subcategories: [width, radius, style, color]
+    shadow:
+      subcategories: [elevation-1, elevation-2, elevation-3, elevation-4]
+    motion:
+      subcategories: [duration, easing, property]
+      durations: ["100ms (micro)", "200ms (rápido)", "300ms (normal)", "500ms (lento)"]
+      easings: ["ease-in-out (padrão)", "ease-out (entrada)", "ease-in (saída)", "linear (progresso)"]
+    breakpoint:
+      values: ["sm: 640px", "md: 768px", "lg: 1024px", "xl: 1280px", "2xl: 1536px"]
+    z_index:
+      scale: ["base: 0", "dropdown: 1000", "sticky: 1100", "overlay: 1200", "modal: 1300", "popover: 1400", "toast: 1500"]
+
+wcag_accessibility:
+  standard: "WCAG 2.1 Nível AA"
+  source: "w3.org/WAI/WCAG21/"
+  requirements:
+    perceivable:
+      - category: "Alternativas de Texto"
+        rule: "Todo conteúdo não textual possui alternativas em texto"
+        implementation: "texto alt em imagens, aria-label em ícones, legendas em mídia"
+      - category: "Contraste de Cor"
+        rule: "Texto normal: mínimo de 4.5:1. Texto grande (18px+ em negrito ou 24px+): mínimo de 3:1"
+        implementation: "Verificar se todas as combinações de tokens atendem às proporções"
+      - category: "Contraste de Componentes de UI"
+        rule: "Elementos de UI não textuais: mínimo de 3:1 contra as cores adjacentes"
+        implementation: "Botões, inputs e indicadores de foco devem ser distinguíveis"
+      - category: "Não Usar Apenas a Cor"
+        rule: "A cor não deve ser o único meio de transmitir informação"
+        implementation: "Adicionar ícones, padrões ou texto junto aos indicadores de cor"
+
+    operable:
+      - category: "Navegação por Teclado"
+        rule: "Toda a funcionalidade disponível via teclado"
+        implementation: "Ordem de tab, ativação com Enter/Espaço, navegação por setas, Escape para fechar"
+      - category: "Foco Visível"
+        rule: "O indicador de foco é claramente visível"
+        implementation: "contorno sólido de 2px com offset, alto contraste (mínimo de 3:1)"
+      - category: "Alvo de Toque"
+        rule: "Alvo de toque mínimo de 44x44px para mobile"
+        implementation: "Padding ou dimensões mínimas em elementos interativos"
+      - category: "Sem Armadilhas de Teclado"
+        rule: "O usuário consegue sair de qualquer componente usando o teclado"
+        implementation: "Escape fecha modais/dropdowns, Tab percorre todos os elementos"
+
+    understandable:
+      - category: "Identificação de Erros"
+        rule: "Os erros são identificados e descritos em texto"
+        implementation: "Mensagens de erro abaixo dos campos, resumo no topo do formulário, aria-describedby"
+      - category: "Rótulos"
+        rule: "Todos os inputs possuem rótulos associados"
+        implementation: "Rótulo visível + pareamento for/id, ou aria-label para ícones isolados"
+      - category: "Navegação Consistente"
+        rule: "A navegação aparece na mesma ordem entre as páginas"
+        implementation: "Componente de nav fixo, ordenação consistente"
+
+    robust:
+      - category: "Uso de ARIA"
+        rule: "Usar papéis, estados e propriedades ARIA corretamente"
+        implementation: "role, aria-expanded, aria-selected, aria-live, aria-describedby"
+      - category: "Nome, Papel, Valor"
+        rule: "Componentes customizados expõem nome, papel e valor à tecnologia assistiva"
+        implementation: "Atributos ARIA adequados em widgets customizados"
+
+component_anatomy:
+  description: "Padrões de anatomia padrão para tipos comuns de componentes"
+  patterns:
+    button:
+      elements: [leading_icon, label, trailing_icon]
+      variants: [primary, secondary, tertiary, danger, ghost]
+      sizes: [sm, md, lg]
+      states: [default, hover, focus, active, disabled, loading]
+      accessibility: "role=button, aria-disabled, aria-busy (carregando)"
+
+    input:
+      elements: [label, input_field, leading_icon, trailing_icon, helper_text, error_message, character_count]
+      variants: [text, number, email, password, search, textarea]
+      sizes: [sm, md, lg]
+      states: [default, hover, focus, filled, disabled, error, success, readonly]
+      accessibility: "label for/id, aria-describedby (ajuda/erro), aria-invalid, required"
+
+    card:
+      elements: [media, header, title, subtitle, body, footer, actions, badge]
+      variants: [default, elevated, outlined, interactive]
+      states: [default, hover (se interativo), selected, loading (skeleton)]
+      accessibility: "role article, nível de heading, cards interativos precisam de role=button ou link"
+
+    modal:
+      elements: [overlay, container, header, close_button, body, footer, actions]
+      variants: [default, full_screen, side_panel, confirmation]
+      states: [opening, open, closing, closed]
+      accessibility: "role=dialog, aria-modal=true, focus trap, Escape para fechar, retornar o foco ao fechar"
+
+    table:
+      elements: [header, header_cell, body, row, cell, sort_indicator, pagination, empty_state]
+      variants: [default, striped, bordered, compact, sticky_header]
+      states: [loading, empty, populated, row_selected, row_expanded]
+      accessibility: "role=table, scope nos cabeçalhos, aria-sort, aria-selected, caption"
+
+designops_three_lenses:
+  description: "O framework de DesignOps de Dave Malouf — três lentes interconectadas"
+  source: "DesignOps Handbook / Rosenfeld Media"
+  lenses:
+    how_we_work_together:
+      name: "Pessoas & Cultura"
+      focus: "Estrutura de time, papéis, planos de carreira, contratação, colaboração, cultura"
+      maturity_levels:
+        1_ad_hoc: "Sem papéis definidos, designers trabalham isolados"
+        2_emerging: "Alguns papéis definidos, colaboração informal"
+        3_defined: "Papéis claros, planos de carreira, revisões de design regulares"
+        4_managed: "Gestão de time orientada a métricas, programas de mentoria"
+        5_optimized: "Times auto-organizados, cultura de melhoria contínua"
+
+    how_we_work:
+      name: "Processo & Fluxo de Trabalho"
+      focus: "Metodologia, ferramentas, handoff, cerimônias de revisão, documentação"
+      maturity_levels:
+        1_ad_hoc: "Sem processo consistente, cada designer trabalha de um jeito"
+        2_emerging: "Algumas práticas compartilhadas, ferramentas inconsistentes"
+        3_defined: "Fluxo de trabalho documentado, ferramentas padronizadas, cerimônias regulares"
+        4_managed: "Métricas de tempo de ciclo e qualidade, refinamento contínuo de processo"
+        5_optimized: "Fluxos automatizados, qualidade preditiva, integração perfeita com dev"
+
+    what_we_work_on:
+      name: "Ofício & Saída"
+      focus: "Design system, acessibilidade, qualidade visual, inovação, documentação"
+      maturity_levels:
+        1_ad_hoc: "Sem design system, UI inconsistente, acessibilidade desconhecida"
+        2_emerging: "Style guide básico, alguns componentes compartilhados, consciência de acessibilidade"
+        3_defined: "Design system em uso, conformidade WCAG AA, linguagem visual consistente"
+        4_managed: "Governança de design system, acessibilidade automatizada, tempo para inovação"
+        5_optimized: "O design system é produto, cultura de acessibilidade, inovação liderada por design"

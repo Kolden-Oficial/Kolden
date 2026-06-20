@@ -1,0 +1,129 @@
+# Referência de Frameworks de Copywriting
+# Referenciado pelos agentes especialistas para aplicação estruturada de metodologia
+
+frameworks:
+  aida:
+    source: "Elias St. Elmo Lewis (1898), popularizado pela indústria de resposta direta"
+    description: "A sequência fundamental de persuasão — Atenção, Interesse, Desejo, Ação (Attention, Interest, Desire, Action)"
+    components:
+      - name: "Attention"
+        description: "Título ou gancho que para o leitor e seleciona o público"
+      - name: "Interest"
+        description: "Copy de abertura que conquista o próximo parágrafo por meio de curiosidade ou relevância"
+      - name: "Desire"
+        description: "Benefícios, prova e projeção do futuro (future-pacing) que fazem o leitor querer o resultado"
+      - name: "Action"
+        description: "CTA claro com urgência que compele a resposta imediata"
+    when_to_use: "Estrutura padrão para qualquer copy persuasiva — páginas de vendas, anúncios, e-mails, VSLs"
+
+  pas:
+    source: "Dan Kennedy, amplamente adotado na resposta direta"
+    description: "Problem-Agitate-Solve (Problema-Agitar-Resolver) — agite a dor antes de apresentar a solução"
+    components:
+      - name: "Problem"
+        description: "Identifique o problema específico que o leitor enfrenta"
+      - name: "Agitate"
+        description: "Gire a faca — faça o problema parecer urgente e pessoal"
+      - name: "Solve"
+        description: "Apresente o produto como a solução lógica e inevitável"
+    when_to_use: "Copy de formato curto, anúncios, leads de e-mail, qualquer contexto em que o público esteja consciente do problema (problem-aware)"
+
+  rmbc:
+    source: "Stefan Georgi"
+    description: "Relate-Mechanism-Benefits-Close (Relacionar-Mecanismo-Benefícios-Fechamento) — o framework moderno de VSL"
+    components:
+      - name: "Relate"
+        description: "Abra com uma história ou cenário identificável que o prospecto já viveu"
+      - name: "Mechanism"
+        description: "Introduza o mecanismo único que torna esta solução diferente"
+      - name: "Benefits"
+        description: "Empilhe benefícios com projeção do futuro (future-pacing) e linguagem emocional"
+      - name: "Close"
+        description: "Ancoragem de preço, garantia, pilha de bônus (bonus stack), urgência e CTA"
+    when_to_use: "Cartas de Vendas em Vídeo (VSLs), páginas de vendas de formato longo, pitches de webinar"
+
+  bab:
+    source: "Fórmula clássica de copywriting, popularizada por diversos praticantes"
+    description: "Before-After-Bridge (Antes-Depois-Ponte) — pinte a transformação e depois faça a ponte até o produto"
+    components:
+      - name: "Before"
+        description: "Descreva a situação dolorosa atual do leitor"
+      - name: "After"
+        description: "Pinte o quadro da vida depois que o problema é resolvido"
+      - name: "Bridge"
+        description: "Posicione o produto como a ponte entre o antes e o depois"
+    when_to_use: "Copy de e-mail, posts de redes sociais, anúncios curtos, copy em estilo de depoimento"
+
+  four_ps:
+    source: "Henry Hoke Sr."
+    description: "Picture-Promise-Prove-Push (Imagem-Promessa-Prova-Empurrão) — sequência de persuasão visual"
+    components:
+      - name: "Picture"
+        description: "Pinte um quadro vívido do resultado desejado"
+      - name: "Promise"
+        description: "Faça uma promessa específica e ousada sobre o que o produto entrega"
+      - name: "Prove"
+        description: "Sustente a promessa com evidência — depoimentos, estatísticas, demonstrações"
+      - name: "Push"
+        description: "Empurre para a ação com urgência, escassez ou reversão de risco"
+    when_to_use: "Cartas de vendas, landing pages, qualquer copy que precise de fortes elementos de prova"
+
+  star_story_solution:
+    source: "Gary Halbert"
+    description: "Comece com um personagem, conte a história dele, revele a solução"
+    components:
+      - name: "Star"
+        description: "Introduza um personagem identificável (muitas vezes o próprio leitor ou alguém como ele)"
+      - name: "Story"
+        description: "Conte a jornada do personagem da luta até a descoberta"
+      - name: "Solution"
+        description: "Revele como o produto foi o ponto de virada"
+    when_to_use: "Cartas de vendas, VSLs, advertoriais, qualquer copy narrativa de formato longo"
+
+  soap_opera_sequence:
+    source: "Andre Chaperon (Autoresponder Madness), nomeada por Russell Brunson"
+    description: "Sequência de múltiplos e-mails que usa narrativa seriada com loops abertos (open loops)"
+    components:
+      - name: "Email 1: Set the Stage"
+        description: "Fisgue com uma abertura dramática, apresente o pano de fundo"
+      - name: "Email 2: High Drama"
+        description: "Aumente a tensão, aprofunde a história"
+      - name: "Email 3: Epiphany"
+        description: "Revele o ponto de virada — a descoberta ou o avanço"
+      - name: "Email 4: Hidden Benefits"
+        description: "Mostre resultados positivos inesperados, além da promessa principal"
+      - name: "Email 5: Urgency and CTA"
+        description: "Feche com urgência — a história exige ação agora"
+    when_to_use: "Sequências de e-mail após o opt-in, lançamentos de produto, qualquer campanha de e-mail seriada"
+
+  awareness_levels:
+    source: "Eugene Schwartz (Breakthrough Advertising, 1966)"
+    description: "Cinco níveis de consciência do prospecto que determinam a estratégia de título e de lead"
+    components:
+      - name: "Unaware"
+        description: "O prospecto não sabe que tem um problema. Comece com história, emoção ou identidade."
+      - name: "Problem-Aware"
+        description: "O prospecto conhece o problema, mas não a solução. Agite o problema, sugira a solução."
+      - name: "Solution-Aware"
+        description: "O prospecto sabe que existem soluções, mas não a sua. Diferencie por meio do mecanismo."
+      - name: "Product-Aware"
+        description: "O prospecto conhece seu produto, mas não comprou. Empilhe prova, trate objeções."
+      - name: "Most-Aware"
+        description: "O prospecto conhece e confia em você. Comece com a oferta, o negócio ou a urgência."
+    when_to_use: "Sempre — toda peça de copy deve ser calibrada ao nível de consciência do prospecto"
+
+  slippery_slide:
+    source: "Joe Sugarman (The Adweek Copywriting Handbook)"
+    description: "Cada elemento da copy existe para um único propósito — fazer o leitor ler a próxima linha"
+    components:
+      - name: "Compelling Headline"
+        description: "Único propósito: levá-lo a ler a primeira frase"
+      - name: "Short First Sentence"
+        description: "Tão fácil de ler que ele não consegue resistir a continuar"
+      - name: "Engaging Subheads"
+        description: "Reengaja quem está apenas passando os olhos e o puxa de volta para o corpo do texto"
+      - name: "Curiosity Seeds"
+        description: "Planta perguntas ao longo do texto que são respondidas mais adiante"
+      - name: "No Exit Points"
+        description: "Remova qualquer coisa que dê ao leitor permissão para parar"
+    when_to_use: "Toda copy — este é um princípio universal, não um formato. Aplique a cada peça."

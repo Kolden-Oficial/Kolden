@@ -1,0 +1,65 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad de Movimentos — Catálogo de Roteamento
+# Mapeia domínios para agentes especialistas, para roteamento inteligente
+# ═══════════════════════════════════════════════════════════════════
+
+domains:
+  movement_design:
+    keywords: [movimento, arquitetura, design-de-comunidade, estrutura-de-tribo, construcao-de-movimento, causa, blueprint, framework]
+    primary_agent: movement-architect
+    secondary_agent: identitario
+    description: "Arquitetura geral do movimento, estrutura de comunidade e design de tribo"
+
+  shared_experience:
+    keywords: [fenomenologia, experiencia-compartilhada, tensao, frustracao, aspiracao, experiencia-humana, experiencia-vivida, empatia]
+    primary_agent: fenomenologo
+    secondary_agent: movement-architect
+    description: "Análise fenomenológica das experiências humanas compartilhadas que alimentam movimentos"
+
+  identity_formation:
+    keywords: [identidade, pertencimento, tribo, nos-vs-eles, codigos-culturais, simbolos, valores, crencas, quem-somos]
+    primary_agent: identitario
+    secondary_agent: fenomenologo
+    description: "Arquitetura de identidade — definir quem somos, no que acreditamos, contra o que nos posicionamos"
+
+  growth_strategy:
+    keywords: [crescimento, ciclos, escala, atrair, ativar, sustentar, multiplicar, tracao, momentum, expansao]
+    primary_agent: estrategista-de-ciclo
+    secondary_agent: movement-architect
+    description: "Estratégia de ciclo de crescimento — fases atrair, ativar, sustentar, multiplicar"
+
+  manifesto_creation:
+    keywords: [manifesto, declaracao, narrativa, historia, mensagem, copywriting, grito-de-guerra, chamado-a-acao, propaganda]
+    primary_agent: manifestador
+    secondary_agent: identitario
+    description: "Escrita de manifesto, criação de narrativa e gritos de guerra para o movimento"
+
+  impact_measurement:
+    keywords: [impacto, metricas, medicao, KPIs, saude-da-comunidade, resultados, desfechos, ROI, impacto-social]
+    primary_agent: analista-de-impacto
+    secondary_agent: estrategista-de-ciclo
+    description: "Medição de impacto, métricas de saúde da comunidade e rastreamento de efeito no mundo real"
+
+  community_building:
+    keywords: [comunidade, membros, engajamento, rituais, eventos, encontros, onboarding, ativacao, retencao]
+    primary_agent: movement-architect
+    secondary_agent: estrategista-de-ciclo
+    description: "Construção de comunidade, engajamento de membros, rituais e design de encontros"
+
+  narrative_propagation:
+    keywords: [narrativa, propagacao, viralidade, boca-a-boca, storytelling, conteudo, midia, amplificacao, espalhamento]
+    primary_agent: manifestador
+    secondary_agent: fenomenologo
+    description: "Espalhar a narrativa do movimento por meio de storytelling e conteúdo"
+
+  belief_systems:
+    keywords: [crencas, visao-de-mundo, filosofia, principios, doutrina, ideologia, mentalidade, conviccao, paradigma]
+    primary_agent: fenomenologo
+    secondary_agent: identitario
+    description: "Análise profunda e construção de sistemas de crenças que sustentam movimentos"
+
+  tribal_identity:
+    keywords: [tribo, tribal, grupo-interno, grupo-externo, sinais, linguagem, codigo-de-vestimenta, insider, distintivo, ritual]
+    primary_agent: identitario
+    secondary_agent: manifestador
+    description: "Marcadores tribais, sinais de insider e rituais de identidade que unem os membros"

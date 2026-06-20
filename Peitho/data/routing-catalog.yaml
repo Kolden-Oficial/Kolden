@@ -1,0 +1,100 @@
+# Catálogo de Roteamento: Traffic Masters
+# Mapeia palavras-chave para agentes especialistas para roteamento rápido
+# Consultado por: tasks/diagnose.md
+
+domains:
+  facebook_meta_strategy:
+    keywords: [Facebook ads, Meta ads, estratégia Facebook, Instagram ads, Meta Business Suite, campanha Facebook]
+    primary_agent: molly-pittman
+    secondary_agent: depesh-mandalia
+    description: "Estratégia de anúncios Facebook/Meta — Pittman para Customer Value Journey, Mandalia para escala BPM"
+
+  facebook_scaling:
+    keywords: [escalar Facebook, aumentar investimento, orçamento Facebook, método BPM, escalar anúncios, escala horizontal, escala vertical]
+    primary_agent: depesh-mandalia
+    secondary_agent: ralph-burns
+    description: "Escalar o investimento em anúncios do Facebook de forma lucrativa usando BPM e métodos avançados de escala"
+
+  youtube_ads:
+    keywords: [YouTube ads, publicidade no YouTube, anúncios em vídeo, pre-roll, TrueView, campanha YouTube, viewability]
+    primary_agent: tom-breeze
+    secondary_agent: ad-midas
+    description: "Publicidade no YouTube — método Viewability de Breeze para performance de anúncios em vídeo"
+
+  google_ads:
+    keywords: [Google Ads, PPC, search ads, Performance Max, Google Shopping, display network, SEM, campanha Google]
+    primary_agent: kasim-aslam
+    secondary_agent: performance-analyst
+    description: "Google Ads e Performance Max — metodologia Solutions 8 de Aslam"
+
+  high_roi_facebook:
+    keywords: [alto ROI, ROI Facebook, Give-Give-Give-Ask, anúncios de relacionamento, Facebook high-ticket]
+    primary_agent: nicholas-kusmich
+    secondary_agent: molly-pittman
+    description: "Campanhas de Facebook de alto ROI usando o método Give-Give-Give-Ask de Kusmich"
+
+  brazil_latam_traffic:
+    keywords: [Brasil, LATAM, tráfego brasileiro, método Sobral, anúncios em português, mercado brasileiro]
+    primary_agent: pedro-sobral
+    secondary_agent: depesh-mandalia
+    description: "Gestão de tráfego para os mercados do Brasil e LATAM — Método Sobral"
+
+  ad_creative:
+    keywords: [criativo, criativo de anúncio, criativo em vídeo, anúncio em imagem, UGC, anúncio estático, estratégia de criativos, produção de anúncios]
+    primary_agent: ad-midas
+    secondary_agent: creative-analyst
+    description: "Estratégia, produção e otimização de criativos de anúncios"
+
+  media_buying:
+    keywords: [compra de mídia, configuração de campanha, conta de anúncios, estrutura de campanha, lances, alocação de orçamento, posicionamento]
+    primary_agent: media-buyer
+    secondary_agent: ralph-burns
+    description: "Execução de compra de mídia multiplataforma e gestão de campanhas"
+
+  performance_analysis:
+    keywords: [análise, performance, relatórios, dashboard, métricas, ROAS, CPA, CPL, análise de dados]
+    primary_agent: performance-analyst
+    secondary_agent: ads-analyst
+    description: "Análise de performance de campanhas, relatórios e interpretação de dados"
+
+  creative_testing:
+    keywords: [teste de criativos, teste A/B, split test, análise de criativos, fadiga de anúncios, criativo vencedor, iteração]
+    primary_agent: creative-analyst
+    secondary_agent: ad-midas
+    description: "Teste, análise e iteração de criativos para performance de anúncios"
+
+  campaign_scaling:
+    keywords: [escalar campanhas, escala, aumentar orçamento, escala lucrativa, lookalike, expandir, crescimento]
+    primary_agent: scale-optimizer
+    secondary_agent: depesh-mandalia
+    description: "Escalar campanhas de forma lucrativa em todas as plataformas"
+
+  tracking_attribution:
+    keywords: [rastreamento, pixel, atribuição, CAPI, conversion API, UTM, rastreamento server-side, iOS 14, cookies]
+    primary_agent: pixel-specialist
+    secondary_agent: performance-analyst
+    description: "Configuração de rastreamento, implementação de pixel e gestão de atribuição"
+
+  ad_account_audit:
+    keywords: [auditoria, auditoria de conta de anúncios, saúde da conta, otimização, desperdício, ineficiência, estrutura da conta]
+    primary_agent: ads-analyst
+    secondary_agent: performance-analyst
+    description: "Auditoria de conta de anúncios, verificação de saúde e recomendações de otimização"
+
+  budget_management:
+    keywords: [orçamento, orçamento de anúncios, investimento, financeiro, controle de custos, alocação, meta de ROAS, lucratividade]
+    primary_agent: fiscal
+    secondary_agent: scale-optimizer
+    description: "Planejamento, alocação de orçamento de anúncios e gestão financeira"
+
+  full_funnel_strategy:
+    keywords: [funil completo, estratégia de funil, topo de funil, fundo de funil, TOFU, MOFU, BOFU, jornada do cliente]
+    primary_agent: ralph-burns
+    secondary_agent: molly-pittman
+    description: "Estratégia de tráfego pago de funil completo — metodologia Tier 11 de Burns"
+
+  perpetual_traffic:
+    keywords: [perpetual traffic, evergreen, always-on, tráfego sustentável, anúncios de longo prazo, sistema perpétuo]
+    primary_agent: ralph-burns
+    secondary_agent: molly-pittman
+    description: "Sistema Perpetual Traffic para performance de anúncios sustentável e always-on"

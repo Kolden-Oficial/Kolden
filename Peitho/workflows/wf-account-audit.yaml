@@ -1,0 +1,88 @@
+workflow:
+  id: wf-account-audit
+  name: "Auditoria e Correção de Conta"
+  version: "1.0.0"
+  description: |
+    Workflow completo de auditoria de conta de anúncios. Diagnostica a saúde da conta,
+    identifica gastos desperdiçados, produz um plano de correção e estabelece
+    monitoramento contínuo. Usado para onboarding de novas contas ou correção
+    de contas com baixo desempenho.
+  trigger: "*account-audit"
+  entry_agent: traffic-chief
+  estimated_duration: "30-60 minutos"
+
+  type: sequential
+  sequence:
+    - agent: ads-analyst
+      action: audit-ad-account
+      creates: audit_report
+    - agent: pixel-specialist
+      action: setup-tracking
+      creates: tracking_review
+    - agent: performance-analyst
+      action: analyze-performance
+      creates: performance_report
+    - agent: fiscal
+      action: manage-budget
+      creates: budget_plan
+
+phases:
+  - id: phase_0
+    name: "Auditoria da Conta"
+    agent: ads-analyst
+    task: audit-ad-account.md
+    description: "Auditoria completa de saúde da conta em 8 dimensões. Pontue a conta, categorize as campanhas por nível de desempenho, identifique gastos desperdiçados e produza as listas de matar/escalar/corrigir."
+    outputs:
+      - audit_report: "markdown"
+      - health_score: "number"
+      - wasted_spend: "number"
+      - action_lists: "object"
+    checkpoint:
+      gate: "Auditoria concluída com todas as 8 dimensões pontuadas e campanhas classificadas por nível"
+      veto: "Dados insuficientes para uma auditoria significativa — solicite mais histórico"
+
+  - id: phase_1
+    name: "Verificação de Rastreamento"
+    agent: pixel-specialist
+    task: setup-tracking.md
+    depends_on: [phase_0]
+    description: "Verifique a precisão do rastreamento antes de tomar decisões de otimização. Se o rastreamento estiver quebrado, corrija-o antes de prosseguir. Isso evita otimizar com base em dados ruins."
+    outputs:
+      - tracking_status: "markdown"
+      - fixes_needed: "list"
+    checkpoint:
+      gate: "Rastreamento verificado ou problemas identificados com plano de correção"
+      veto: "Não é possível prosseguir com a otimização se o rastreamento da conversão primária estiver quebrado"
+
+  - id: phase_2
+    name: "Análise Profunda de Desempenho"
+    agent: performance-analyst
+    task: analyze-performance.md
+    depends_on: [phase_0, phase_1]
+    description: "Análise profunda de desempenho nos níveis de campanha, conjunto de anúncios e anúncio. Análise 80/20, identificação de tendências e diagnóstico de causa raiz para os de baixo desempenho."
+    outputs:
+      - performance_report: "markdown"
+      - top_insights: "list"
+    checkpoint:
+      gate: "Desempenho analisado com decomposição 80/20 e insights acionáveis"
+      veto: "Análise baseada em dados de rastreamento não verificados"
+
+  - id: phase_3
+    name: "Plano de Correção e Otimização de Orçamento"
+    agent: fiscal
+    task: manage-budget.md
+    depends_on: [phase_2]
+    description: "Crie o plano de realocação de orçamento com base nas conclusões da auditoria e do desempenho. Mate os de baixo desempenho, realoque para os vencedores e estabeleça um framework de gestão contínua."
+    outputs:
+      - budget_plan: "markdown"
+      - reallocation_schedule: "object"
+      - automated_rules: "list"
+    checkpoint:
+      gate: "Plano de orçamento concluído com realocação faseada e guardrails"
+      veto: "Realocação agressiva demais — fase ao longo de no mínimo 2 semanas"
+
+completion_criteria:
+  - "Conta auditada com scorecard de 8 dimensões"
+  - "Rastreamento verificado ou corrigido"
+  - "Desempenho analisado com decomposição 80/20"
+  - "Plano de realocação de orçamento criado com framework de monitoramento"
