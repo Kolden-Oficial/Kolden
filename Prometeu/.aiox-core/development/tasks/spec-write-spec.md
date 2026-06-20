@@ -1,12 +1,12 @@
-# Spec Pipeline: Write Specification
+# Spec Pipeline: Escrever Especificação
 
-> **Phase:** 4 - Write
-> **Owner Agent:** @pm
+> **Fase:** 4 - Escrever
+> **Agente Responsável:** @pm
 > **Pipeline:** spec-pipeline
 
 ---
 
-## Purpose
+## Propósito
 
 Produzir especificação completa e executável a partir dos artefatos das fases anteriores. O spec.md é o documento definitivo que guia a implementação - nenhuma invenção, apenas derivação dos inputs.
 
@@ -64,9 +64,9 @@ autoClaude:
 
 ## Constitutional Gate: No Invention
 
-> **Reference:** Constitution Article IV - No Invention (MUST)
-> **Severity:** BLOCK
-> **Enforcement:** Automatic validation before spec completion
+> **Referência:** Constitution Artigo IV - No Invention (MUST)
+> **Severidade:** BLOCK
+> **Aplicação:** Validação automática antes da conclusão da spec
 
 ```yaml
 constitutional_gate:
@@ -96,7 +96,7 @@ constitutional_gate:
     report_to: qa_critique_phase
 ```
 
-### No Invention Rule Details
+### Detalhes da Regra No Invention
 
 ```yaml
 no_invention_rule:
@@ -120,7 +120,7 @@ no_invention_rule:
 
 ---
 
-## Spec Template Structure
+## Estrutura do Template de Spec
 
 ````markdown
 # Spec: {story-title}
@@ -279,9 +279,9 @@ Feature: {feature name}
 
 ---
 
-## Execution Flow
+## Fluxo de Execução
 
-### Step 1: Load All Inputs
+### Passo 1: Carregar Todas as Entradas
 
 ```yaml
 load_inputs:
@@ -298,7 +298,7 @@ load_inputs:
     - Build dependency graph
 ````
 
-### Step 2: Generate Each Section
+### Passo 2: Gerar Cada Seção
 
 ```yaml
 generate_sections:
@@ -357,7 +357,7 @@ generate_sections:
       - Mark blocking status
 ```
 
-### Step 3: Validate Spec
+### Passo 3: Validar a Spec
 
 ```yaml
 validation:
@@ -376,7 +376,7 @@ validation:
     - warnings: string[]
 ```
 
-### Step 4: Write Spec File
+### Passo 4: Escrever o Arquivo da Spec
 
 ```yaml
 write_output:
@@ -389,9 +389,9 @@ write_output:
 
 ---
 
-## Integration
+## Integração
 
-### Command Integration (@pm)
+### Integração de Comando (@pm)
 
 ```yaml
 command:
@@ -403,7 +403,7 @@ command:
     - '*write-spec STORY-42'
 ```
 
-### Pipeline Integration
+### Integração com o Pipeline
 
 ```yaml
 pipeline:
@@ -427,89 +427,89 @@ pipeline:
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
 ```yaml
 errors:
   - id: missing-requirements
-    condition: 'requirements.json not found'
-    action: 'Halt - cannot write spec without requirements'
+    condition: 'requirements.json não encontrado'
+    action: 'Interromper - não é possível escrever a spec sem requirements'
     blocking: true
 
   - id: empty-functional
-    condition: 'No functional requirements'
-    action: 'Halt - spec needs at least one FR'
+    condition: 'Nenhum requisito funcional'
+    action: 'Interromper - a spec precisa de pelo menos um FR'
     blocking: true
 
   - id: unverified-dependency
-    condition: 'Dependency used but not in research.json'
-    action: 'Add warning, mark in spec with ⚠️'
+    condition: 'Dependência usada mas ausente em research.json'
+    action: 'Adicionar aviso, marcar na spec com ⚠️'
     blocking: false
 
   - id: no-acceptance-criteria
-    condition: 'FR has no acceptance criteria'
-    action: 'Add to Open Questions, generate suggested criteria'
+    condition: 'FR sem critérios de aceite'
+    action: 'Adicionar às Open Questions, gerar critérios sugeridos'
     blocking: false
 ```
 
 ---
 
-## Quality Checks
+## Verificações de Qualidade
 
 ```yaml
 quality_gates:
   - id: traceability
-    description: 'Every spec statement traces to input'
-    check: 'No orphan statements'
+    description: 'Toda afirmação da spec rastreia até uma entrada'
+    check: 'Nenhuma afirmação órfã'
 
   - id: completeness
-    description: 'All requirements addressed'
-    check: 'FR count in spec == FR count in requirements'
+    description: 'Todos os requisitos contemplados'
+    check: 'Contagem de FR na spec == contagem de FR em requirements'
 
   - id: testability
-    description: 'Every FR has test strategy'
-    check: 'Test section covers all FR-*'
+    description: 'Todo FR tem estratégia de teste'
+    check: 'A seção de testes cobre todos os FR-*'
 
   - id: no_invention
-    description: 'No assumed content'
-    check: 'All technical choices from research.json'
+    description: 'Nenhum conteúdo presumido'
+    check: 'Todas as escolhas técnicas vêm de research.json'
 ```
 
 ---
 
-## Examples
+## Exemplos
 
-### Example: Login Feature Spec
+### Exemplo: Spec de Funcionalidade de Login
 
-**Inputs:**
+**Entradas:**
 
-- requirements.json: FR-1 (Google OAuth login)
+- requirements.json: FR-1 (login com Google OAuth)
 - complexity.json: STANDARD, score 13
-- research.json: google-auth-library verified
+- research.json: google-auth-library verificada
 
-**Generated Spec Excerpt:**
+**Trecho da Spec Gerada:**
 
 ```markdown
-## 3. Technical Approach
+## 3. Abordagem Técnica
 
-### 3.1 Architecture Overview
+### 3.1 Visão Geral da Arquitetura
 
-Authentication flow using Google OAuth 2.0:
+Fluxo de autenticação usando Google OAuth 2.0:
 
-1. User clicks "Login with Google"
-2. Redirect to Google consent screen
-3. Receive authorization code
-4. Exchange for tokens (server-side)
-5. Create/update user session
+1. O usuário clica em "Login com Google"
+2. Redirecionamento para a tela de consentimento do Google
+3. Recebe o authorization code
+4. Troca por tokens (server-side)
+5. Cria/atualiza a sessão do usuário
 
-_Derived from FR-1 and research.json google-auth-library patterns_
+_Derivado do FR-1 e dos padrões da google-auth-library em research.json_
 
-## 4. Dependencies
+## 4. Dependências
 
-| Dependency          | Version | Purpose              | Verified |
-| ------------------- | ------- | -------------------- | -------- |
-| google-auth-library | ^9.0.0  | OAuth token handling | ✅       |
-| @auth/core          | ^0.18.0 | Session management   | ✅       |
+| Dependência         | Versão  | Propósito            | Verificada |
+| ------------------- | ------- | -------------------- | ---------- |
+| google-auth-library | ^9.0.0  | Tratamento de tokens OAuth | ✅   |
+| @auth/core          | ^0.18.0 | Gerenciamento de sessão    | ✅   |
 ```
 
 ---
@@ -533,4 +533,4 @@ metadata:
 ## Handoff
 next_agent: @qa
 next_command: *critique-spec {story-id}
-condition: Spec written (spec.md created)
+condition: Spec escrita (spec.md criado)

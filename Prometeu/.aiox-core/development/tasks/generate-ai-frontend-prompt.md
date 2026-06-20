@@ -186,7 +186,7 @@ token_usage: ~1,500-5,000 tokens
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A

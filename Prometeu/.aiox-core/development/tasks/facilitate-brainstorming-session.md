@@ -1,6 +1,6 @@
 ---
 id: facilitate-brainstorming-session
-name: Facilitate Brainstorming Session
+name: Facilitar Sessão de Brainstorming
 agent: aiox-master
 category: collaboration
 complexity: medium
@@ -461,7 +461,7 @@ token_usage: ~2,000-8,000 tokens
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A

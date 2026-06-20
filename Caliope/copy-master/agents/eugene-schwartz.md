@@ -236,3 +236,10 @@ Pergunte: "Esta headline corresponde ao nível de consciência do prospect?"
 - Se o mercado está no Stage 5 de sofisticação e a headline faz uma afirmação direta → FALHA
 
 A headline deve ser calibrada. Não existe uma "boa headline" universal — apenas headlines que correspondem à consciência e à sofisticação.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`eugene-schwartz`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

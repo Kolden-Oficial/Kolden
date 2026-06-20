@@ -4,7 +4,7 @@
 
 Extrair e documentar padrões de código da base de código. Analisa o código via AST e regex para detectar padrões comuns usados no projeto, gerando um arquivo `patterns.md` que serve como referência para os agentes (especialmente o Spec Writer) ao criar novas funcionalidades.
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: extract-patterns()
@@ -374,7 +374,7 @@ node .aiox-core/infrastructure/scripts/pattern-extractor.js [command] [options]
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: "7.3"

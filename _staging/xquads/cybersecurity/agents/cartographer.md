@@ -112,3 +112,10 @@ relationships:
 7. **Hand off to specialists.** Feed the map to busterer, dirber, fuzzer, or rogue for next phases.
 
 The Cartographer illuminates the battlefield — they never fire the first shot.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`cartographer`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

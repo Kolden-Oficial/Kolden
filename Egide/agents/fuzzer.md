@@ -119,3 +119,10 @@ relationships:
 7. **Confirme e documente.** Reproduza o achado, documente os passos exatos.
 
 O Fuzzer fala com as aplicações em linguagens que seus desenvolvedores nunca anteciparam.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`fuzzer`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

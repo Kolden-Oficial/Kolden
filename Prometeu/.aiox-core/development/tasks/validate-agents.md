@@ -1,119 +1,119 @@
-# Validate Agents Task
+# Task Validate Agents
 
 ---
-execution_mode: programmatic  # TOK-3: PTC-eligible — batch-scan all agent files in single Bash block
+execution_mode: programmatic  # TOK-3: elegível a PTC — batch-scan de todos os arquivos de agente em um único bloco Bash
 ---
 
-## Purpose
+## Propósito
 
-Validate all agent definition files for structural integrity, required fields,
-dependency existence, and unified activation pipeline reference.
+Validar todos os arquivos de definição de agente quanto à integridade estrutural, campos obrigatórios,
+existência de dependências e referência ao pipeline de ativação unificado.
 
-Story ACT-6: Framework integrity checking via `*validate-agents` command.
-
----
-
-## Parameters
-
-- **scope**: `all` (default) | `{agent-id}` - Validate all agents or a specific one
-- **strict**: `false` (default) | `true` - Fail on warnings in addition to errors
-- **output**: `summary` (default) | `detailed` - Output verbosity
+Story ACT-6: Verificação de integridade do framework via comando `*validate-agents`.
 
 ---
 
-## Execution Steps
+## Parâmetros
 
-### Step 1: Discover Agent Files
+- **scope**: `all` (padrão) | `{agent-id}` - Validar todos os agentes ou um específico
+- **strict**: `false` (padrão) | `true` - Falhar em avisos além de erros
+- **output**: `summary` (padrão) | `detailed` - Verbosidade da saída
 
-Scan `.aiox-core/development/agents/` for all `.md` files.
-Expected agents: dev, qa, architect, pm, po, sm, analyst, data-engineer, ux-design-expert, devops, aiox-master, squad-creator
+---
 
-### Step 2: Parse YAML Block
+## Passos de Execução
 
-For each agent file:
-1. Extract the YAML block between ` ```yaml ` and ` ``` ` fences
-2. Parse using `js-yaml.load()` (safe loader)
-3. If parse fails, try normalizing compact command format first
-4. Report parse errors with line numbers
+### Passo 1: Descobrir os Arquivos de Agente
 
-### Step 3: Validate Required Fields
+Varrer `.aiox-core/development/agents/` em busca de todos os arquivos `.md`.
+Agentes esperados: dev, qa, architect, pm, po, sm, analyst, data-engineer, ux-design-expert, devops, aiox-master, squad-creator
 
-| Field | Required | Default | Notes |
+### Passo 2: Parsear o Bloco YAML
+
+Para cada arquivo de agente:
+1. Extrair o bloco YAML entre as cercas ` ```yaml ` e ` ``` `
+2. Parsear usando `js-yaml.load()` (loader seguro)
+3. Se o parse falhar, tentar normalizar primeiro o formato de comando compacto
+4. Reportar erros de parse com números de linha
+
+### Passo 3: Validar os Campos Obrigatórios
+
+| Campo | Obrigatório | Padrão | Notas |
 |-------|----------|---------|-------|
-| `agent.id` | Yes | - | Must match filename |
-| `agent.name` | Yes | - | Human-readable name |
-| `agent.icon` | No | - | Emoji icon |
-| `persona_profile` | Yes | - | Must have greeting_levels |
-| `persona_profile.greeting_levels` | Yes | - | minimal, named, archetypal |
-| `persona.role` | Yes | - | Role description |
-| `commands` | Yes | [] | Array of command objects |
-| `activation-instructions` | Yes | - | Must include STEP 1-5 |
+| `agent.id` | Sim | - | Deve corresponder ao nome do arquivo |
+| `agent.name` | Sim | - | Nome legível por humanos |
+| `agent.icon` | Não | - | Ícone emoji |
+| `persona_profile` | Sim | - | Deve ter greeting_levels |
+| `persona_profile.greeting_levels` | Sim | - | minimal, named, archetypal |
+| `persona.role` | Sim | - | Descrição do papel |
+| `commands` | Sim | [] | Array de objetos de comando |
+| `activation-instructions` | Sim | - | Deve incluir STEP 1-5 |
 
-### Step 4: Validate Activation Pipeline Reference
+### Passo 4: Validar a Referência ao Pipeline de Ativação
 
-Check that STEP 3 in `activation-instructions` references:
+Verificar se o STEP 3 em `activation-instructions` referencia:
 - `unified-activation-pipeline.js` (Story ACT-6)
-- NOT the old `greeting-builder.js` direct reference
+- E NÃO a antiga referência direta a `greeting-builder.js`
 
-Report as WARNING if still referencing old path.
+Reportar como WARNING se ainda referenciar o caminho antigo.
 
-### Step 5: Validate Dependencies
+### Passo 5: Validar Dependências
 
-For each agent's `dependencies.tasks` list:
-1. Check that each referenced task file exists in `.aiox-core/development/tasks/`
-2. Report missing dependencies as ERRORS
+Para a lista `dependencies.tasks` de cada agente:
+1. Verificar se cada arquivo de task referenciado existe em `.aiox-core/development/tasks/`
+2. Reportar dependências ausentes como ERRORS
 
-For each agent's `dependencies.checklists` list:
-1. Check in `.aiox-core/development/checklists/`
-2. Report missing as WARNINGS
+Para a lista `dependencies.checklists` de cada agente:
+1. Verificar em `.aiox-core/development/checklists/`
+2. Reportar ausências como WARNINGS
 
-### Step 6: Validate Command Structure
+### Passo 6: Validar a Estrutura de Comandos
 
-For each command in `commands` array:
-1. Must have `name` field (string)
-2. `description` is recommended (WARNING if missing)
-3. `visibility` array is recommended for session-aware filtering
+Para cada comando no array `commands`:
+1. Deve ter o campo `name` (string)
+2. `description` é recomendado (WARNING se ausente)
+3. O array `visibility` é recomendado para filtragem ciente da sessão
 
-### Step 7: Cross-Agent Validation
+### Passo 7: Validação Cross-Agent
 
-1. Verify no duplicate agent IDs across files
-2. Verify all 12 expected agents are present
-3. Verify `*yolo` command exists (universal command)
+1. Verificar que não há IDs de agente duplicados entre os arquivos
+2. Verificar que todos os 12 agentes esperados estão presentes
+3. Verificar que o comando `*yolo` existe (comando universal)
 
-### Step 8: Generate Report
+### Passo 8: Gerar Relatório
 
-Output format:
+Formato de saída:
 
 ```
-=== Agent Validation Report ===
+=== Relatório de Validação de Agentes ===
 
-[PASS] dev.md - 15 commands, 8 tasks, pipeline: unified
-[PASS] qa.md - 12 commands, 6 tasks, pipeline: unified
-[WARN] devops.md - Missing visibility metadata on 5 commands
-[FAIL] broken-agent.md - YAML parse error at line 42
+[PASS] dev.md - 15 comandos, 8 tasks, pipeline: unified
+[PASS] qa.md - 12 comandos, 6 tasks, pipeline: unified
+[WARN] devops.md - Metadados de visibility ausentes em 5 comandos
+[FAIL] broken-agent.md - Erro de parse de YAML na linha 42
 
-Summary: 11 passed, 1 warning, 0 failed
+Resumo: 11 aprovados, 1 aviso, 0 falhos
 ```
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-- YAML parse errors: Report file, line number, error message
-- Missing files: Report expected path
-- Invalid fields: Report field name and expected format
-- Continue validation on errors (don't stop at first failure)
-
----
-
-## Dependencies
-
-- `js-yaml` - YAML parsing
-- `fs` - File system access
-- Agent files in `.aiox-core/development/agents/`
-- Task files in `.aiox-core/development/tasks/`
-- `unified-activation-pipeline.js` - Pipeline reference check
+- Erros de parse de YAML: Reportar arquivo, número da linha, mensagem de erro
+- Arquivos ausentes: Reportar o caminho esperado
+- Campos inválidos: Reportar o nome do campo e o formato esperado
+- Continuar a validação em caso de erros (não parar na primeira falha)
 
 ---
 
-*Story ACT-6 | Task: validate-agents | Created 2026-02-06*
+## Dependências
+
+- `js-yaml` - Parsing de YAML
+- `fs` - Acesso ao sistema de arquivos
+- Arquivos de agente em `.aiox-core/development/agents/`
+- Arquivos de task em `.aiox-core/development/tasks/`
+- `unified-activation-pipeline.js` - Verificação de referência ao pipeline
+
+---
+
+*Story ACT-6 | Task: validate-agents | Criado 2026-02-06*

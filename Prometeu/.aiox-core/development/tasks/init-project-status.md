@@ -1,36 +1,36 @@
 # init-project-status
 
 **Task ID:** init-project-status
-**Version:** 1.0
-**Created:** 2025-01-14 (Story 6.1.2.4)
-**Agent:** @devops (Gage)
+**Versão:** 1.0
+**Criado:** 2025-01-14 (Story 6.1.2.4)
+**Agente:** @devops (Gage)
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro em log
+- Interação mínima do usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Antecipado Abrangente
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com ambiguidade zero
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: initProjectStatus()
@@ -43,13 +43,13 @@ atomic_layer: Atom
   tipo: string
   origem: User Input
   obrigatório: true
-  validação: Valid directory path
+  validação: Caminho de diretório válido
 
 - campo: options
   tipo: object
   origem: User Input
   obrigatório: false
-  validação: Initialization options
+  validação: Opções de inicialização
 
 **Saída:**
 - campo: initialized_project
@@ -65,15 +65,15 @@ atomic_layer: Atom
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Directory is empty or force flag set; config valid
+  - [ ] Diretório vazio ou flag de force definida; config válida
     tipo: pre-condition
     blocker: true
     validação: |
@@ -83,15 +83,15 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Project initialized; config files created; structure valid
+  - [ ] Projeto inicializado; arquivos de config criados; estrutura válida
     tipo: post-condition
     blocker: true
     validação: |
@@ -101,15 +101,15 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Project structure correct; all config files valid
+  - [ ] Estrutura do projeto correta; todos os arquivos de config válidos
     tipo: acceptance-criterion
     blocker: true
     validação: |
@@ -119,54 +119,54 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** project-scaffolder
-  - **Purpose:** Generate project structure and config
-  - **Source:** .aiox-core/scripts/project-scaffolder.js
+- **Ferramenta:** project-scaffolder
+  - **Propósito:** Gerar a estrutura e a config do projeto
+  - **Origem:** .aiox-core/scripts/project-scaffolder.js
 
-- **Tool:** config-manager
-  - **Purpose:** Initialize configuration files
-  - **Source:** .aiox-core/utils/config-manager.js
+- **Ferramenta:** config-manager
+  - **Propósito:** Inicializar arquivos de configuração
+  - **Origem:** .aiox-core/utils/config-manager.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Directory Not Empty
-   - **Cause:** Target directory already contains files
-   - **Resolution:** Use force flag or choose empty directory
-   - **Recovery:** Prompt for confirmation, merge or abort
+1. **Erro:** Diretório Não Vazio
+   - **Causa:** O diretório alvo já contém arquivos
+   - **Resolução:** Usar a flag de force ou escolher um diretório vazio
+   - **Recuperação:** Solicitar confirmação, mesclar ou abortar
 
-2. **Error:** Initialization Failed
-   - **Cause:** Error creating project structure
-   - **Resolution:** Check permissions and disk space
-   - **Recovery:** Cleanup partial initialization, log error
+2. **Erro:** Falha na Inicialização
+   - **Causa:** Erro ao criar a estrutura do projeto
+   - **Resolução:** Verificar permissões e espaço em disco
+   - **Recuperação:** Limpar a inicialização parcial, registrar erro
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
-duration_expected: 0.5-2 min (estimated)
+duration_expected: 0.5-2 min (estimado)
 cost_estimated: $0.0001-0.0005
 token_usage: ~500-1,000 tokens
 ```
 
-**Optimization Notes:**
-- Minimize external dependencies; cache results if reusable; validate inputs early
+**Notas de Otimização:**
+- Minimizar dependências externas; cachear resultados se reutilizáveis; validar entradas cedo
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -182,39 +182,39 @@ updated_at: 2025-11-17
 ---
 
 
-## Description
+## Descrição
 
-Initialize dynamic project status tracking for agent activation context. This task sets up the project status feature that displays git state, recent work, and current story/epic information in agent greetings.
-
----
-
-## Inputs
-
-None (runs in current project directory)
+Inicializa o rastreamento dinâmico de status do projeto para o contexto de ativação de agentes. Esta task configura a funcionalidade de status do projeto que exibe o estado do git, o trabalho recente e as informações da story/epic atual nas saudações dos agentes.
 
 ---
 
-## Elicitation
+## Entradas
+
+Nenhuma (roda no diretório atual do projeto)
+
+---
+
+## Elicitação
 
 ```yaml
 elicit: false
 ```
 
-This task runs autonomously without user interaction.
+Esta task roda de forma autônoma, sem interação do usuário.
 
 ---
 
-## Steps
+## Passos
 
-### Step 1: Detect Git Repository
+### Passo 1: Detectar Repositório Git
 
-**Action:** Check if current directory is a git repository
+**Ação:** Verificar se o diretório atual é um repositório git
 
 ```bash
 git rev-parse --is-inside-work-tree 2>/dev/null
 ```
 
-**Exit Condition:** If not a git repo, display message and exit gracefully:
+**Condição de Saída:** Se não for um repo git, exibir mensagem e sair de forma graciosa:
 ```
 ⚠️  Project status feature requires a git repository.
     Initialize git first: git init
@@ -222,30 +222,30 @@ git rev-parse --is-inside-work-tree 2>/dev/null
 
 ---
 
-### Step 2: Check Current Configuration
+### Passo 2: Verificar a Configuração Atual
 
-**Action:** Read `.aiox-core/core-config.yaml` and check `projectStatus.enabled`
+**Ação:** Ler `.aiox-core/core-config.yaml` e verificar `projectStatus.enabled`
 
-**Logic:**
+**Lógica:**
 ```javascript
 const config = yaml.load(fs.readFileSync('.aiox-core/core-config.yaml'));
 const isEnabled = config?.projectStatus?.enabled === true;
 ```
 
-**If already enabled:**
+**Se já estiver habilitado:**
 ```
 ✅ Project status is already enabled in core-config.yaml
 ```
 
-Skip to Step 4.
+Pular para o Passo 4.
 
 ---
 
-### Step 3: Enable Project Status in Config
+### Passo 3: Habilitar o Status do Projeto na Config
 
-**Action:** Update `core-config.yaml` to enable project status
+**Ação:** Atualizar `core-config.yaml` para habilitar o status do projeto
 
-**Changes:**
+**Mudanças:**
 ```yaml
 projectStatus:
   enabled: true

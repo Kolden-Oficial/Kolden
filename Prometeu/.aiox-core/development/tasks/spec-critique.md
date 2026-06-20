@@ -1,12 +1,12 @@
 # Spec Pipeline: Critique Specification
 
-> **Phase:** 5 - Critique
-> **Owner Agent:** @qa
+> **Fase:** 5 - Critique
+> **Agente Responsável:** @qa
 > **Pipeline:** spec-pipeline
 
 ---
 
-## Purpose
+## Propósito
 
 Validar e criticar a especificação antes da implementação. Avalia accuracy, completeness, consistency, feasibility e alignment. Produz verdict (APPROVED/NEEDS_REVISION/BLOCKED) e pode sugerir correções.
 
@@ -72,229 +72,229 @@ autoClaude:
 
 ---
 
-## Critique Dimensions
+## Dimensões da Crítica
 
-### Dimension 1: Accuracy
+### Dimensão 1: Accuracy (Precisão)
 
 ```yaml
 accuracy:
-  description: 'Spec accurately reflects requirements'
+  description: 'A spec reflete os requisitos com precisão'
   weight: 25%
 
   checks:
     - id: acc-1
       name: 'Requirement Coverage'
-      question: 'Every FR-* from requirements.json is addressed in spec?'
+      question: 'Todo FR-* do requirements.json é tratado na spec?'
       severity: HIGH
 
     - id: acc-2
       name: 'No Phantom Requirements'
-      question: "Spec doesn't include features not in requirements?"
+      question: "A spec não inclui funcionalidades que não estão nos requisitos?"
       severity: HIGH
 
     - id: acc-3
       name: 'Correct Priority Mapping'
-      question: 'P0 requirements are prominent, P2 are optional?'
+      question: 'Requisitos P0 estão em destaque, P2 são opcionais?'
       severity: MEDIUM
 
     - id: acc-4
       name: 'NFR Addressed'
-      question: 'All NFR-* have corresponding spec sections?'
+      question: 'Todos os NFR-* têm seções correspondentes na spec?'
       severity: MEDIUM
 
   scoring:
-    5: 'All requirements accurately represented'
-    4: 'Minor omissions, no misrepresentations'
-    3: 'Some requirements unclear or incomplete'
-    2: 'Significant gaps or misrepresentations'
-    1: 'Major accuracy issues'
+    5: 'Todos os requisitos representados com precisão'
+    4: 'Omissões menores, nenhuma representação incorreta'
+    3: 'Alguns requisitos pouco claros ou incompletos'
+    2: 'Lacunas ou representações incorretas significativas'
+    1: 'Problemas graves de precisão'
 ```
 
-### Dimension 2: Completeness
+### Dimensão 2: Completeness (Completude)
 
 ```yaml
 completeness:
-  description: 'Spec has all necessary sections filled'
+  description: 'A spec tem todas as seções necessárias preenchidas'
   weight: 25%
 
   checks:
     - id: comp-1
       name: 'All Sections Present'
-      question: 'Overview, Requirements, Approach, Dependencies, Files, Testing, Risks all present?'
+      question: 'Overview, Requirements, Approach, Dependencies, Files, Testing, Risks todos presentes?'
       severity: HIGH
 
     - id: comp-2
       name: 'Testing Coverage'
-      question: 'Every FR has at least one test scenario?'
+      question: 'Todo FR tem pelo menos um cenário de teste?'
       severity: HIGH
 
     - id: comp-3
       name: 'Dependencies Listed'
-      question: 'All external dependencies identified with versions?'
+      question: 'Todas as dependências externas identificadas com versões?'
       severity: MEDIUM
 
     - id: comp-4
       name: 'Files Identified'
-      question: 'New and modified files listed with purposes?'
+      question: 'Arquivos novos e modificados listados com seus propósitos?'
       severity: MEDIUM
 
     - id: comp-5
       name: 'Risks Documented'
-      question: 'At least potential risks considered?'
+      question: 'Pelo menos os riscos potenciais foram considerados?'
       severity: LOW
 
   scoring:
-    5: 'Comprehensive, nothing missing'
-    4: 'Minor gaps in non-critical sections'
-    3: 'Some sections incomplete'
-    2: 'Multiple sections missing or empty'
-    1: 'Severely incomplete'
+    5: 'Abrangente, nada faltando'
+    4: 'Lacunas menores em seções não críticas'
+    3: 'Algumas seções incompletas'
+    2: 'Múltiplas seções ausentes ou vazias'
+    1: 'Gravemente incompleta'
 ```
 
-### Dimension 3: Consistency
+### Dimensão 3: Consistency (Consistência)
 
 ```yaml
 consistency:
-  description: 'Spec is internally consistent'
+  description: 'A spec é internamente consistente'
   weight: 20%
 
   checks:
     - id: con-1
       name: 'ID References Valid'
-      question: 'All FR-*/NFR-* references exist in requirements?'
+      question: 'Todas as referências FR-*/NFR-* existem nos requisitos?'
       severity: HIGH
 
     - id: con-2
       name: 'Dependency Consistency'
-      question: 'Dependencies in approach match dependencies section?'
+      question: 'As dependências na abordagem coincidem com a seção de dependências?'
       severity: MEDIUM
 
     - id: con-3
       name: 'Complexity Alignment'
-      question: 'Spec depth matches complexity level?'
+      question: 'A profundidade da spec corresponde ao nível de complexidade?'
       severity: LOW
 
     - id: con-4
       name: 'No Contradictions'
-      question: 'No conflicting statements between sections?'
+      question: 'Nenhuma afirmação conflitante entre as seções?'
       severity: HIGH
 
   scoring:
-    5: 'Fully consistent throughout'
-    4: 'Minor inconsistencies'
-    3: 'Some contradictions or mismatches'
-    2: 'Multiple inconsistencies'
-    1: 'Fundamentally inconsistent'
+    5: 'Totalmente consistente do início ao fim'
+    4: 'Inconsistências menores'
+    3: 'Algumas contradições ou divergências'
+    2: 'Múltiplas inconsistências'
+    1: 'Fundamentalmente inconsistente'
 ```
 
-### Dimension 4: Feasibility
+### Dimensão 4: Feasibility (Viabilidade)
 
 ```yaml
 feasibility:
-  description: 'Spec is technically feasible'
+  description: 'A spec é tecnicamente viável'
   weight: 15%
 
   checks:
     - id: feas-1
       name: 'Dependencies Available'
-      question: 'All listed dependencies exist and are compatible?'
+      question: 'Todas as dependências listadas existem e são compatíveis?'
       severity: HIGH
 
     - id: feas-2
       name: 'Technical Approach Sound'
-      question: 'Proposed architecture is achievable?'
+      question: 'A arquitetura proposta é alcançável?'
       severity: HIGH
 
     - id: feas-3
       name: 'Reasonable Scope'
-      question: 'Work fits within typical story scope?'
+      question: 'O trabalho cabe no escopo típico de uma story?'
       severity: MEDIUM
 
     - id: feas-4
       name: 'No Impossible Requirements'
-      question: 'All requirements are technically possible?'
+      question: 'Todos os requisitos são tecnicamente possíveis?'
       severity: HIGH
 
   scoring:
-    5: 'Clearly feasible'
-    4: 'Feasible with minor concerns'
-    3: 'Questionable feasibility'
-    2: 'Significant feasibility issues'
-    1: 'Not feasible as specified'
+    5: 'Claramente viável'
+    4: 'Viável com preocupações menores'
+    3: 'Viabilidade questionável'
+    2: 'Problemas significativos de viabilidade'
+    1: 'Não viável como especificada'
 ```
 
-### Dimension 5: Alignment
+### Dimensão 5: Alignment (Alinhamento)
 
 ```yaml
 alignment:
-  description: 'Spec aligns with project standards'
+  description: 'A spec se alinha aos padrões do projeto'
   weight: 15%
 
   checks:
     - id: align-1
       name: 'Tech Stack Alignment'
-      question: 'Technologies match project preferences?'
+      question: 'As tecnologias correspondem às preferências do projeto?'
       severity: MEDIUM
 
     - id: align-2
       name: 'Pattern Alignment'
-      question: 'Proposed patterns match existing codebase?'
+      question: 'Os padrões propostos correspondem ao codebase existente?'
       severity: MEDIUM
 
     - id: align-3
       name: 'Naming Conventions'
-      question: 'File/component names follow conventions?'
+      question: 'Os nomes de arquivos/componentes seguem as convenções?'
       severity: LOW
 
     - id: align-4
       name: 'Architecture Fit'
-      question: 'Fits within existing architecture?'
+      question: 'Encaixa-se na arquitetura existente?'
       severity: HIGH
 
   scoring:
-    5: 'Perfect alignment'
-    4: 'Minor deviations with justification'
-    3: 'Some misalignments'
-    2: 'Significant deviations'
-    1: 'Fundamentally misaligned'
+    5: 'Alinhamento perfeito'
+    4: 'Desvios menores com justificativa'
+    3: 'Alguns desalinhamentos'
+    2: 'Desvios significativos'
+    1: 'Fundamentalmente desalinhada'
 ```
 
 ---
 
-## Verdict Logic
+## Lógica do Veredito
 
 ```yaml
 verdict_rules:
   APPROVED:
     condition: |
-      - No HIGH severity issues
-      - Average score >= 4.0
-      - All dimensions >= 3
-    meaning: 'Spec ready for implementation'
-    next_action: 'Proceed to plan phase'
+      - Nenhum problema de severidade HIGH
+      - Pontuação média >= 4.0
+      - Todas as dimensões >= 3
+    meaning: 'Spec pronta para implementação'
+    next_action: 'Prosseguir para a fase de planejamento'
 
   NEEDS_REVISION:
     condition: |
-      - Has MEDIUM severity issues OR
-      - Average score between 3.0-3.9 OR
-      - Any dimension < 3 but no HIGH issues
-    meaning: 'Spec needs improvements before implementation'
-    next_action: 'Return to spec-write with feedback'
+      - Tem problemas de severidade MEDIUM OU
+      - Pontuação média entre 3.0-3.9 OU
+      - Qualquer dimensão < 3 mas sem problemas HIGH
+    meaning: 'Spec precisa de melhorias antes da implementação'
+    next_action: 'Retornar para o spec-write com feedback'
 
   BLOCKED:
     condition: |
-      - Has HIGH severity issues OR
-      - Average score < 3.0 OR
-      - Any dimension <= 1
-    meaning: 'Spec has critical issues'
-    next_action: 'Escalate to @architect or return to gather'
+      - Tem problemas de severidade HIGH OU
+      - Pontuação média < 3.0 OU
+      - Qualquer dimensão <= 1
+    meaning: 'Spec tem problemas críticos'
+    next_action: 'Escalar para o @architect ou retornar para o gather'
 ```
 
 ---
 
-## Execution Flow
+## Fluxo de Execução
 
-### Step 1: Load Artifacts
+### Passo 1: Carregar os Artefatos
 
 ```yaml
 load:
@@ -307,19 +307,19 @@ load:
     - research.json (optional)
 ```
 
-### Step 2: Run Dimension Checks
+### Passo 2: Rodar as Verificações de Dimensão
 
 ```yaml
 run_checks:
   for_each: dimension in [accuracy, completeness, consistency, feasibility, alignment]
 
-  process: 1. Execute each check in dimension
-    2. Record findings (pass/fail)
-    3. Assign severity to failures
-    4. Calculate dimension score
+  process: 1. Executar cada verificação na dimensão
+    2. Registrar os achados (pass/fail)
+    3. Atribuir severidade às falhas
+    4. Calcular a pontuação da dimensão
 ```
 
-### Step 3: Generate Issues
+### Passo 3: Gerar os Issues
 
 ```yaml
 generate_issues:
@@ -338,19 +338,19 @@ generate_issues:
     }
 ```
 
-### Step 4: Calculate Verdict
+### Passo 4: Calcular o Veredito
 
 ```yaml
 calculate_verdict:
   action: determine_verdict
 
-  process: 1. Count issues by severity
-    2. Calculate average score
-    3. Check minimum dimension scores
-    4. Apply verdict rules
+  process: 1. Contar issues por severidade
+    2. Calcular a pontuação média
+    3. Verificar as pontuações mínimas de dimensão
+    4. Aplicar as regras de veredito
 ```
 
-### Step 5: Generate Output
+### Passo 5: Gerar a Saída
 
 ```yaml
 generate_output:
@@ -469,9 +469,9 @@ generate_output:
 
 ---
 
-## Integration
+## Integração
 
-### Command Integration (@qa)
+### Integração de Comando (@qa)
 
 ```yaml
 command:
@@ -480,14 +480,14 @@ command:
   agent: qa
 
   flags:
-    --auto-fix: 'Apply auto-fixable suggestions'
+    --auto-fix: 'Aplicar as sugestões auto-corrigíveis'
 
   examples:
     - '*critique-spec STORY-42'
     - '*critique-spec STORY-42 --auto-fix'
 ```
 
-### Pipeline Integration
+### Integração de Pipeline
 
 ```yaml
 pipeline:
@@ -518,41 +518,41 @@ pipeline:
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
 ```yaml
 errors:
   - id: missing-spec
-    condition: 'spec.md not found'
-    action: 'Halt - cannot critique without spec'
+    condition: 'spec.md não encontrado'
+    action: 'Parar - não é possível criticar sem a spec'
     blocking: true
 
   - id: missing-requirements
-    condition: 'requirements.json not found'
-    action: 'Halt - cannot validate accuracy'
+    condition: 'requirements.json não encontrado'
+    action: 'Parar - não é possível validar a precisão'
     blocking: true
 
   - id: parse-error
-    condition: 'spec.md malformed'
-    action: 'Log parse issues, attempt partial critique'
+    condition: 'spec.md malformado'
+    action: 'Registrar problemas de parse, tentar crítica parcial'
     blocking: false
 ```
 
 ---
 
-## Examples
+## Exemplos
 
-### Example: Critique with Issues
+### Exemplo: Crítica com Issues
 
-**Input:** spec.md missing test section
+**Entrada:** spec.md sem a seção de testes
 
-**Output:**
+**Saída:**
 
 ```json
 {
   "storyId": "STORY-42",
   "verdict": "NEEDS_REVISION",
-  "verdictReason": "Missing test coverage for 2 functional requirements",
+  "verdictReason": "Cobertura de testes ausente para 2 requisitos funcionais",
   "scores": {
     "accuracy": 5,
     "completeness": 3,
@@ -566,19 +566,19 @@ errors:
       "id": "CRIT-1",
       "severity": "HIGH",
       "category": "completeness",
-      "description": "FR-1 (Google OAuth) has no test scenarios",
+      "description": "FR-1 (Google OAuth) não tem cenários de teste",
       "location": "spec.md#section-6",
-      "suggestion": "Add Given-When-Then test for OAuth flow",
+      "suggestion": "Adicionar teste Given-When-Then para o fluxo OAuth",
       "autoFixable": true
     }
   ],
-  "nextAction": "Return to spec-write with critique.json"
+  "nextAction": "Retornar para o spec-write com o critique.json"
 }
 ```
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 metadata:
@@ -597,7 +597,7 @@ metadata:
 ## Handoff
 next_agent: @architect
 next_command: *plan
-condition: Critique verdict is APPROVED
+condition: O veredito da crítica é APPROVED
 alternatives:
-  - agent: @pm, command: *write-spec, condition: Critique verdict is NEEDS_REVISION
-  - agent: @architect, command: *analyze-impact, condition: Critique verdict is BLOCKED
+  - agent: @pm, command: *write-spec, condition: O veredito da crítica é NEEDS_REVISION
+  - agent: @architect, command: *analyze-impact, condition: O veredito da crítica é BLOCKED

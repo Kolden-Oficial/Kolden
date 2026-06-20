@@ -1,39 +1,39 @@
-# Task: Security Audit
+# Task: Auditoria de Segurança
 
-**Purpose**: Comprehensive database security and quality audit (RLS coverage, schema design, full system)
+**Propósito**: Auditoria abrangente de segurança e qualidade de banco de dados (cobertura de RLS, design de schema, sistema completo)
 
 **Elicit**: true
 
-**Consolidated From (Story 6.1.2.3):**
-- `db-rls-audit.md` - RLS policy coverage checking
-- `schema-audit.md` - Schema design quality validation
+**Consolidado A Partir De (Story 6.1.2.3):**
+- `db-rls-audit.md` - Verificação de cobertura de políticas RLS
+- `schema-audit.md` - Validação da qualidade do design de schema
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints explícitos de decisão
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: securityAudit()
@@ -79,9 +79,9 @@ atomic_layer: Strategy
 
 ---
 
-## Pre-Conditions
+## Pré-condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -97,9 +97,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a task ser concluída
 
 **Checklist:**
 
@@ -115,9 +115,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
@@ -133,57 +133,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** security-scanner
-  - **Purpose:** Static security analysis and vulnerability detection
-  - **Source:** npm: eslint-plugin-security or similar
+- **Ferramenta:** security-scanner
+  - **Propósito:** Análise estática de segurança e detecção de vulnerabilidades
+  - **Origem:** npm: eslint-plugin-security ou similar
 
-- **Tool:** dependency-checker
-  - **Purpose:** Check for vulnerable dependencies
-  - **Source:** npm audit or snyk
+- **Ferramenta:** dependency-checker
+  - **Propósito:** Verificar dependências vulneráveis
+  - **Origem:** npm audit ou snyk
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** security-scan.js
-  - **Purpose:** Run security scans and generate reports
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/security-scan.js
+  - **Propósito:** Rodar varreduras de segurança e gerar relatórios
+  - **Linguagem:** JavaScript
+  - **Local:** .aiox-core/scripts/security-scan.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Scanner Unavailable
-   - **Cause:** Security scanner not installed or failed
-   - **Resolution:** Install scanner or check configuration
-   - **Recovery:** Skip scan with high-risk warning
+1. **Erro:** Scanner Indisponível
+   - **Causa:** Scanner de segurança não instalado ou falhou
+   - **Resolução:** Instalar o scanner ou verificar a configuração
+   - **Recuperação:** Pular a varredura com aviso de alto risco
 
-2. **Error:** Critical Vulnerability Detected
-   - **Cause:** High-severity security issue found
-   - **Resolution:** Review vulnerability report, apply patches
-   - **Recovery:** Block deployment, alert team
+2. **Erro:** Vulnerabilidade Crítica Detectada
+   - **Causa:** Problema de segurança de alta severidade encontrado
+   - **Resolução:** Revisar o relatório de vulnerabilidade, aplicar patches
+   - **Recuperação:** Bloquear o deployment, alertar a equipe
 
-3. **Error:** Scan Timeout
-   - **Cause:** Large codebase exceeds scan time limit
-   - **Resolution:** Reduce scope or increase timeout
-   - **Recovery:** Partial scan results with warning
+3. **Erro:** Timeout da Varredura
+   - **Causa:** Codebase grande excede o limite de tempo da varredura
+   - **Resolução:** Reduzir o escopo ou aumentar o timeout
+   - **Recuperação:** Resultados parciais da varredura com aviso
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-20 min (estimated)
@@ -191,12 +191,12 @@ cost_estimated: $0.003-0.015
 token_usage: ~2,000-8,000 tokens
 ```
 
-**Optimization Notes:**
-- Iterative analysis with depth limits; cache intermediate results; batch similar operations
+**Notas de Otimização:**
+- Análise iterativa com limites de profundidade; cachear resultados intermediários; agrupar operações similares em lote
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -212,9 +212,9 @@ updated_at: 2025-11-17
 ---
 
 
-## Elicitation
+## Levantamento (Elicitation)
 
-**Prompt user to select audit scope:**
+**Solicitar ao usuário que selecione o escopo da auditoria:**
 
 ```
 Select security audit scope:
@@ -226,17 +226,17 @@ Select security audit scope:
 Which scope? [rls/schema/full]:
 ```
 
-**Capture:** `{scope}`
+**Capturar:** `{scope}`
 
 ---
 
-## Process
+## Processo
 
-### Scope: RLS Audit
+### Escopo: Auditoria RLS
 
-**When:** User selects `rls` or `full`
+**Quando:** O usuário seleciona `rls` ou `full`
 
-**Purpose:** Report tables with/without RLS and list all policies
+**Propósito:** Reportar tabelas com/sem RLS e listar todas as políticas
 
 ```bash
 psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 <<'SQL'
@@ -302,11 +302,11 @@ SQL
 
 ---
 
-### Scope: Schema Audit
+### Escopo: Auditoria de Schema
 
-**When:** User selects `schema` or `full`
+**Quando:** O usuário seleciona `schema` ou `full`
 
-**Purpose:** Validate schema design quality and best practices
+**Propósito:** Validar a qualidade do design de schema e as boas práticas
 
 ```bash
 psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 <<'SQL'
@@ -404,13 +404,13 @@ SQL
 
 ---
 
-### Scope: Full Audit
+### Escopo: Auditoria Completa
 
-**When:** User selects `full`
+**Quando:** O usuário seleciona `full`
 
-**Executes:** Both RLS audit + Schema audit sequentially
+**Executa:** Auditoria RLS + Auditoria de Schema sequencialmente
 
-**Additional Checks:**
+**Verificações Adicionais:**
 
 ```bash
 psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 <<'SQL'
@@ -454,9 +454,9 @@ SQL
 
 ---
 
-## Output
+## Saída
 
-### RLS Audit Output
+### Saída da Auditoria RLS
 
 ```
 === RLS Coverage Audit ===
@@ -481,7 +481,7 @@ SQL
  internal_logs
 ```
 
-### Schema Audit Output
+### Saída da Auditoria de Schema
 
 ```
 === Schema Design Quality Audit ===
@@ -506,49 +506,49 @@ SQL
 
 ---
 
-## Interpretation
+## Interpretação
 
-### Critical Issues (Fix Immediately)
+### Problemas Críticos (Corrigir Imediatamente)
 
-- **RLS Disabled:** Tables without RLS are publicly accessible
-- **No Primary Keys:** Data integrity at risk
-- **Sensitive Columns Exposed:** PII/secrets without RLS protection
+- **RLS Desabilitado:** Tabelas sem RLS são acessíveis publicamente
+- **Sem Chaves Primárias:** Integridade dos dados em risco
+- **Colunas Sensíveis Expostas:** PII/segredos sem proteção de RLS
 
-### High Priority Issues (Fix Soon)
+### Problemas de Alta Prioridade (Corrigir em Breve)
 
-- **Missing Foreign Keys:** Data integrity and query performance
-- **Missing NOT NULL:** Data quality issues
-- **Missing Indexes on FKs:** Query performance degradation
+- **Chaves Estrangeiras Ausentes:** Integridade dos dados e performance de queries
+- **NOT NULL Ausente:** Problemas de qualidade dos dados
+- **Índices Ausentes em FKs:** Degradação da performance de queries
 
-### Medium Priority Issues (Technical Debt)
+### Problemas de Média Prioridade (Dívida Técnica)
 
-- **Missing Audit Timestamps:** Tracking challenges
-- **Inconsistent Naming:** Maintainability issues
-
----
-
-## Recommendations
-
-**After RLS Audit:**
-1. Enable RLS on all public tables: `ALTER TABLE {table} ENABLE ROW LEVEL SECURITY;`
-2. Create policies for all CRUD operations (use `*policy-apply` command)
-3. Test with `*test-as-user` command
-
-**After Schema Audit:**
-1. Add missing primary keys: `ALTER TABLE {table} ADD PRIMARY KEY (id);`
-2. Add missing foreign keys: `ALTER TABLE {table} ADD FOREIGN KEY ({col}) REFERENCES {ref_table}(id);`
-3. Add missing NOT NULL: `ALTER TABLE {table} ALTER COLUMN {col} SET NOT NULL;`
-4. Create indexes on foreign keys: `CREATE INDEX idx_{table}_{col} ON {table}({col});`
+- **Timestamps de Auditoria Ausentes:** Dificuldades de rastreamento
+- **Nomenclatura Inconsistente:** Problemas de manutenibilidade
 
 ---
 
-## Related Commands
+## Recomendações
 
-- `*policy-apply {table} {mode}` - Install RLS policies after audit
-- `*test-as-user {user_id}` - Test RLS policies
-- `*verify-order {migration}` - Validate migration DDL ordering
-- `*create-migration-plan` - Plan schema changes
+**Após a Auditoria RLS:**
+1. Habilitar RLS em todas as tabelas públicas: `ALTER TABLE {table} ENABLE ROW LEVEL SECURITY;`
+2. Criar políticas para todas as operações CRUD (use o comando `*policy-apply`)
+3. Testar com o comando `*test-as-user`
+
+**Após a Auditoria de Schema:**
+1. Adicionar chaves primárias ausentes: `ALTER TABLE {table} ADD PRIMARY KEY (id);`
+2. Adicionar chaves estrangeiras ausentes: `ALTER TABLE {table} ADD FOREIGN KEY ({col}) REFERENCES {ref_table}(id);`
+3. Adicionar NOT NULL ausente: `ALTER TABLE {table} ALTER COLUMN {col} SET NOT NULL;`
+4. Criar índices nas chaves estrangeiras: `CREATE INDEX idx_{table}_{col} ON {table}({col});`
 
 ---
 
-**Note:** This consolidated task replaces `db-rls-audit.md` and `schema-audit.md` (deprecated in v3.0)
+## Comandos Relacionados
+
+- `*policy-apply {table} {mode}` - Instalar políticas RLS após a auditoria
+- `*test-as-user {user_id}` - Testar políticas RLS
+- `*verify-order {migration}` - Validar a ordenação do DDL da migration
+- `*create-migration-plan` - Planejar mudanças de schema
+
+---
+
+**Nota:** Esta task consolidada substitui `db-rls-audit.md` e `schema-audit.md` (depreciados na v3.0)

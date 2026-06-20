@@ -1,15 +1,15 @@
-# QA Review Build: 10-Phase Quality Assurance Review
+# QA Review Build: Revisão de Qualidade em 10 Fases
 
-> **Phase:** QA Review
-> **Owner Agent:** @qa
+> **Fase:** QA Review
+> **Agente Responsável:** @qa
 > **Epic:** Epic 6 - QA Evolution
-> **Command:** `*review-build {story-id}`
+> **Comando:** `*review-build {story-id}`
 
 ---
 
-## Purpose
+## Propósito
 
-Execute a structured 10-phase quality assurance review of a completed build. This comprehensive review validates implementation against spec, runs automated tests, performs browser/database verification, conducts code review, checks for regressions, and produces a detailed QA report with clear APPROVE/REJECT signal.
+Executar uma revisão estruturada de qualidade em 10 fases de um build concluído. Esta revisão abrangente valida a implementação contra a spec, roda testes automatizados, realiza verificação de navegador/banco de dados, conduz revisão de código, checa regressões e produz um relatório de QA detalhado com sinal claro de APPROVE/REJECT.
 
 ---
 
@@ -70,9 +70,9 @@ autoClaude:
 
 ---
 
-## 10 Review Phases
+## 10 Fases de Revisão
 
-### Phase 0: Load Context
+### Fase 0: Carregar Contexto
 
 ```yaml
 phase: 0
@@ -120,7 +120,7 @@ validation:
   - Story file exists and contains acceptance criteria
 ```
 
-### Phase 1: Verify Subtasks Completed
+### Fase 1: Verificar Subtarefas Concluídas
 
 ```yaml
 phase: 1
@@ -207,7 +207,7 @@ output:
   filesDocumented: true|false
 ```
 
-### Phase 2: Initialize Environment
+### Fase 2: Inicializar o Ambiente
 
 ```yaml
 phase: 2
@@ -260,7 +260,7 @@ output:
     errors: '[list of errors if any]'
 ```
 
-### Phase 3: Automated Testing
+### Fase 3: Testes Automatizados
 
 ```yaml
 phase: 3
@@ -337,7 +337,7 @@ output:
       functions: '{percentage}'
 ```
 
-### Phase 4: Browser Verification
+### Fase 4: Verificação de Navegador
 
 ```yaml
 phase: 4
@@ -439,7 +439,7 @@ output:
       criticalCount: '{count}'
 ```
 
-### Phase 5: Database Validation
+### Fase 5: Validação de Banco de Dados
 
 ```yaml
 phase: 5
@@ -539,7 +539,7 @@ output:
     dataIntegrity: 'verified|unverified|not_applicable'
 ```
 
-### Phase 6: Code Review (Enhanced with Auto-Claude Absorption)
+### Fase 6: Revisão de Código (Aprimorada com Absorção do Auto-Claude)
 
 ```yaml
 phase: 6
@@ -790,7 +790,7 @@ output:
       warnings: '{count}'
 ```
 
-### Phase 7: Regression Testing
+### Fase 7: Testes de Regressão
 
 ```yaml
 phase: 7
@@ -842,7 +842,7 @@ output:
     regressionRisk: 'low|medium|high'
 ```
 
-### Phase 8: Generate Report
+### Fase 8: Gerar Relatório
 
 ```yaml
 phase: 8
@@ -979,7 +979,7 @@ output:
     generated: true
 ```
 
-### Phase 9: Update Implementation Plan
+### Fase 9: Atualizar o Plano de Implementação
 
 ```yaml
 phase: 9
@@ -1023,7 +1023,7 @@ output:
     fixRequestsCreated: '{count}'
 ```
 
-### Phase 10: Signal Completion
+### Fase 10: Sinalizar Conclusão
 
 ```yaml
 phase: 10
@@ -1080,7 +1080,7 @@ output:
 
 ---
 
-## Signal Logic
+## Lógica do Sinal
 
 ```yaml
 signal_rules:

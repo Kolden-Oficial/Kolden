@@ -19,3 +19,10 @@ When this command is invoked:
 1. Read `.claude/skills/AIOX/agents/ux-design-expert/SKILL.md` in full.
 2. Follow the activation instructions from that skill.
 3. If the skill file is unavailable, read `.aiox-core/development/agents/ux-design-expert.md` as fallback.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`ux-design-expert`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

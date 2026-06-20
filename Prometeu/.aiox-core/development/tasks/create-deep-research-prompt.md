@@ -1,25 +1,25 @@
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro em log
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução sem ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
@@ -34,146 +34,146 @@ atomic_layer: Template
 **Entrada:**
 - campo: name
   tipo: string
-  origem: User Input
+  origem: Entrada do Usuário
   obrigatório: true
-  validação: Must be non-empty, lowercase, kebab-case
+  validação: Deve ser não-vazio, minúsculo, kebab-case
 
 - campo: options
   tipo: object
-  origem: User Input
+  origem: Entrada do Usuário
   obrigatório: false
-  validação: Valid JSON object with allowed keys
+  validação: Objeto JSON válido com chaves permitidas
 
 - campo: force
   tipo: boolean
-  origem: User Input
+  origem: Entrada do Usuário
   obrigatório: false
-  validação: Default: false
+  validação: Padrão: false
 
 **Saída:**
 - campo: created_file
   tipo: string
-  destino: File system
+  destino: Sistema de arquivos
   persistido: true
 
 - campo: validation_report
   tipo: object
-  destino: Memory
+  destino: Memória
   persistido: false
 
 - campo: success
   tipo: boolean
-  destino: Return value
+  destino: Valor de retorno
   persistido: false
 ```
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar os pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Target does not already exist; required inputs provided; permissions granted
+  - [ ] O alvo ainda não existe; entradas obrigatórias fornecidas; permissões concedidas
     tipo: pre-condition
     blocker: true
     validação: |
-      Check target does not already exist; required inputs provided; permissions granted
-    error_message: "Pre-condition failed: Target does not already exist; required inputs provided; permissions granted"
+      Verificar se o alvo ainda não existe; entradas obrigatórias fornecidas; permissões concedidas
+    error_message: "Pré-condição falhou: O alvo ainda não existe; entradas obrigatórias fornecidas; permissões concedidas"
 ```
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Resource created successfully; validation passed; no errors logged
+  - [ ] Recurso criado com sucesso; validação aprovada; nenhum erro registrado
     tipo: post-condition
     blocker: true
     validação: |
-      Verify resource created successfully; validation passed; no errors logged
-    error_message: "Post-condition failed: Resource created successfully; validation passed; no errors logged"
+      Verificar se o recurso foi criado com sucesso; validação aprovada; nenhum erro registrado
+    error_message: "Pós-condição falhou: Recurso criado com sucesso; validação aprovada; nenhum erro registrado"
 ```
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Resource exists and is valid; no duplicate resources created
+  - [ ] O recurso existe e é válido; nenhum recurso duplicado criado
     tipo: acceptance-criterion
     blocker: true
     validação: |
-      Assert resource exists and is valid; no duplicate resources created
-    error_message: "Acceptance criterion not met: Resource exists and is valid; no duplicate resources created"
+      Afirmar que o recurso existe e é válido; nenhum recurso duplicado criado
+    error_message: "Critério de aceite não atendido: O recurso existe e é válido; nenhum recurso duplicado criado"
 ```
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** component-generator
-  - **Purpose:** Generate new components from templates
-  - **Source:** .aiox-core/scripts/component-generator.js
+- **Ferramenta:** component-generator
+  - **Propósito:** Gerar novos componentes a partir de templates
+  - **Origem:** .aiox-core/scripts/component-generator.js
 
-- **Tool:** file-system
-  - **Purpose:** File creation and validation
-  - **Source:** Node.js fs module
+- **Ferramenta:** file-system
+  - **Propósito:** Criação e validação de arquivos
+  - **Origem:** Módulo fs do Node.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** create-component.js
-  - **Purpose:** Component creation workflow
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/create-component.js
+  - **Propósito:** Workflow de criação de componente
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/create-component.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Resource Already Exists
-   - **Cause:** Target file/resource already exists in system
-   - **Resolution:** Use force flag or choose different name
-   - **Recovery:** Prompt user for alternative name or force overwrite
+1. **Erro:** Recurso Já Existe
+   - **Causa:** O arquivo/recurso alvo já existe no sistema
+   - **Resolução:** Usar a flag force ou escolher um nome diferente
+   - **Recuperação:** Solicitar ao usuário um nome alternativo ou forçar a sobrescrita
 
-2. **Error:** Invalid Input
-   - **Cause:** Input name contains invalid characters or format
-   - **Resolution:** Validate input against naming rules (kebab-case, lowercase, no special chars)
-   - **Recovery:** Sanitize input or reject with clear error message
+2. **Erro:** Entrada Inválida
+   - **Causa:** O nome de entrada contém caracteres ou formato inválidos
+   - **Resolução:** Validar a entrada contra as regras de nomenclatura (kebab-case, minúsculo, sem caracteres especiais)
+   - **Recuperação:** Sanitizar a entrada ou rejeitar com mensagem de erro clara
 
-3. **Error:** Permission Denied
-   - **Cause:** Insufficient permissions to create resource
-   - **Resolution:** Check file system permissions, run with elevated privileges if needed
-   - **Recovery:** Log error, notify user, suggest permission fix
+3. **Erro:** Permissão Negada
+   - **Causa:** Permissões insuficientes para criar o recurso
+   - **Resolução:** Verificar as permissões do sistema de arquivos, executar com privilégios elevados se necessário
+   - **Recuperação:** Registrar o erro, notificar o usuário, sugerir correção de permissão
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 3-8 min (estimated)
@@ -181,8 +181,8 @@ cost_estimated: $0.002-0.005
 token_usage: ~1,500-5,000 tokens
 ```
 
-**Optimization Notes:**
-- Cache template compilation; minimize data transformations; lazy load resources
+**Notas de Otimização:**
+- Cachear a compilação de templates; minimizar transformações de dados; carregar recursos sob demanda (lazy load)
 
 ---
 
@@ -201,192 +201,192 @@ updated_at: 2025-11-17
 
 ---
 
-# No checklists needed - this task creates research prompts, validation is built into the research methodology
+# Nenhum checklist necessário - esta task cria prompts de pesquisa; a validação está embutida na metodologia de pesquisa
 tools:
-  - exa               # Conduct deep research on markets and technologies
-  - context7          # Look up technical documentation and patterns
+  - exa               # Conduzir pesquisa profunda sobre mercados e tecnologias
+  - context7          # Consultar documentação técnica e padrões
 ---
 
-# Create Deep Research Prompt Task
+# Task Criar Prompt de Pesquisa Profunda
 
-This task helps create comprehensive research prompts for various types of deep analysis. It can process inputs from brainstorming sessions, project briefs, market research, or specific research questions to generate targeted prompts for deeper investigation.
+Esta task ajuda a criar prompts de pesquisa abrangentes para diversos tipos de análise profunda. Ela pode processar entradas de sessões de brainstorming, briefs de projeto, pesquisa de mercado ou perguntas de pesquisa específicas para gerar prompts direcionados a uma investigação mais aprofundada.
 
-## Purpose
+## Propósito
 
-Generate well-structured research prompts that:
+Gerar prompts de pesquisa bem estruturados que:
 
-- Define clear research objectives and scope
-- Specify appropriate research methodologies
-- Outline expected deliverables and formats
-- Guide systematic investigation of complex topics
-- Ensure actionable insights are captured
+- Definam objetivos e escopo de pesquisa claros
+- Especifiquem metodologias de pesquisa apropriadas
+- Delineiem os entregáveis e formatos esperados
+- Orientem a investigação sistemática de tópicos complexos
+- Garantam que insights acionáveis sejam capturados
 
-## Research Type Selection
+## Seleção do Tipo de Pesquisa
 
-CRITICAL: First, help the user select the most appropriate research focus based on their needs and any input documents they've provided.
+CRÍTICO: Primeiro, ajude o usuário a selecionar o foco de pesquisa mais apropriado com base em suas necessidades e em quaisquer documentos de entrada que ele tenha fornecido.
 
-### 1. Research Focus Options
+### 1. Opções de Foco da Pesquisa
 
-Present these numbered options to the user:
+Apresente estas opções numeradas ao usuário:
 
-1. **Product Validation Research**
+1. **Pesquisa de Validação de Produto**
 
-   - Validate product hypotheses and market fit
-   - Test assumptions about user needs and solutions
-   - Assess technical and business feasibility
-   - Identify risks and mitigation strategies
+   - Validar hipóteses de produto e o ajuste ao mercado (market fit)
+   - Testar premissas sobre necessidades dos usuários e soluções
+   - Avaliar a viabilidade técnica e de negócio
+   - Identificar riscos e estratégias de mitigação
 
-2. **Market Opportunity Research**
+2. **Pesquisa de Oportunidade de Mercado**
 
-   - Analyze market size and growth potential
-   - Identify market segments and dynamics
-   - Assess market entry strategies
-   - Evaluate timing and market readiness
+   - Analisar o tamanho do mercado e o potencial de crescimento
+   - Identificar segmentos e dinâmicas de mercado
+   - Avaliar estratégias de entrada no mercado
+   - Avaliar o timing e a prontidão do mercado
 
-3. **User & Customer Research**
+3. **Pesquisa de Usuário e Cliente**
 
-   - Deep dive into user personas and behaviors
-   - Understand jobs-to-be-done and pain points
-   - Map customer journeys and touchpoints
-   - Analyze willingness to pay and value perception
+   - Aprofundar nas personas e comportamentos dos usuários
+   - Entender os jobs-to-be-done e as dores
+   - Mapear as jornadas e os pontos de contato do cliente
+   - Analisar a disposição a pagar e a percepção de valor
 
-4. **Competitive Intelligence Research**
+4. **Pesquisa de Inteligência Competitiva**
 
-   - Detailed competitor analysis and positioning
-   - Feature and capability comparisons
-   - Business model and strategy analysis
-   - Identify competitive advantages and gaps
+   - Análise e posicionamento detalhados dos concorrentes
+   - Comparações de funcionalidades e capacidades
+   - Análise de modelo de negócio e estratégia
+   - Identificar vantagens competitivas e lacunas
 
-5. **Technology & Innovation Research**
+5. **Pesquisa de Tecnologia e Inovação**
 
-   - Assess technology trends and possibilities
-   - Evaluate technical approaches and architectures
-   - Identify emerging technologies and disruptions
-   - Analyze build vs. buy vs. partner options
+   - Avaliar tendências e possibilidades tecnológicas
+   - Avaliar abordagens técnicas e arquiteturas
+   - Identificar tecnologias emergentes e disrupções
+   - Analisar as opções de build vs. buy vs. partner
 
-6. **Industry & Ecosystem Research**
+6. **Pesquisa de Indústria e Ecossistema**
 
-   - Map industry value chains and dynamics
-   - Identify key players and relationships
-   - Analyze regulatory and compliance factors
-   - Understand partnership opportunities
+   - Mapear as cadeias de valor e dinâmicas da indústria
+   - Identificar os principais players e relacionamentos
+   - Analisar fatores regulatórios e de conformidade
+   - Entender as oportunidades de parceria
 
-7. **Strategic Options Research**
+7. **Pesquisa de Opções Estratégicas**
 
-   - Evaluate different strategic directions
-   - Assess business model alternatives
-   - Analyze go-to-market strategies
-   - Consider expansion and scaling paths
+   - Avaliar diferentes direções estratégicas
+   - Avaliar alternativas de modelo de negócio
+   - Analisar estratégias de go-to-market
+   - Considerar caminhos de expansão e escala
 
-8. **Risk & Feasibility Research**
+8. **Pesquisa de Risco e Viabilidade**
 
-   - Identify and assess various risk factors
-   - Evaluate implementation challenges
-   - Analyze resource requirements
-   - Consider regulatory and legal implications
+   - Identificar e avaliar diversos fatores de risco
+   - Avaliar os desafios de implementação
+   - Analisar os requisitos de recursos
+   - Considerar implicações regulatórias e legais
 
-9. **Custom Research Focus**
+9. **Foco de Pesquisa Personalizado**
 
-   - User-defined research objectives
-   - Specialized domain investigation
-   - Cross-functional research needs
+   - Objetivos de pesquisa definidos pelo usuário
+   - Investigação de domínio especializado
+   - Necessidades de pesquisa multifuncionais
 
-### 2. Input Processing
+### 2. Processamento das Entradas
 
-**If Project Brief provided:**
+**Se um Brief de Projeto for fornecido:**
 
-- Extract key product concepts and goals
-- Identify target users and use cases
-- Note technical constraints and preferences
-- Highlight uncertainties and assumptions
+- Extrair os principais conceitos e objetivos do produto
+- Identificar os usuários-alvo e os casos de uso
+- Anotar restrições e preferências técnicas
+- Destacar incertezas e premissas
 
-**If Brainstorming Results provided:**
+**Se Resultados de Brainstorming forem fornecidos:**
 
-- Synthesize main ideas and themes
-- Identify areas needing validation
-- Extract hypotheses to test
-- Note creative directions to explore
+- Sintetizar as principais ideias e temas
+- Identificar áreas que precisam de validação
+- Extrair hipóteses a testar
+- Anotar direções criativas a explorar
 
-**If Market Research provided:**
+**Se Pesquisa de Mercado for fornecida:**
 
-- Build on identified opportunities
-- Deepen specific market insights
-- Validate initial findings
-- Explore adjacent possibilities
+- Construir sobre as oportunidades identificadas
+- Aprofundar insights específicos de mercado
+- Validar os achados iniciais
+- Explorar possibilidades adjacentes
 
-**If Starting Fresh:**
+**Se Estiver Começando do Zero:**
 
-- Gather essential context through questions
-- Define the problem space
-- Clarify research objectives
-- Establish success criteria
+- Coletar o contexto essencial por meio de perguntas
+- Definir o espaço do problema
+- Esclarecer os objetivos da pesquisa
+- Estabelecer os critérios de sucesso
 
-## Process
+## Processo
 
-### 3. Research Prompt Structure
+### 3. Estrutura do Prompt de Pesquisa
 
-CRITICAL: collaboratively develop a comprehensive research prompt with these components.
+CRÍTICO: desenvolva colaborativamente um prompt de pesquisa abrangente com estes componentes.
 
-#### A. Research Objectives
+#### A. Objetivos da Pesquisa
 
-CRITICAL: collaborate with the user to articulate clear, specific objectives for the research.
+CRÍTICO: colabore com o usuário para articular objetivos claros e específicos para a pesquisa.
 
-- Primary research goal and purpose
-- Key decisions the research will inform
-- Success criteria for the research
-- Constraints and boundaries
+- Meta e propósito primário da pesquisa
+- Decisões-chave que a pesquisa irá informar
+- Critérios de sucesso para a pesquisa
+- Restrições e limites
 
-#### B. Research Questions
+#### B. Perguntas da Pesquisa
 
-CRITICAL: collaborate with the user to develop specific, actionable research questions organized by theme.
+CRÍTICO: colabore com o usuário para desenvolver perguntas de pesquisa específicas e acionáveis, organizadas por tema.
 
-**Core Questions:**
+**Perguntas Centrais:**
 
-- Central questions that must be answered
-- Priority ranking of questions
-- Dependencies between questions
+- Perguntas centrais que devem ser respondidas
+- Ranking de prioridade das perguntas
+- Dependências entre as perguntas
 
-**Supporting Questions:**
+**Perguntas de Apoio:**
 
-- Additional context-building questions
-- Nice-to-have insights
-- Future-looking considerations
+- Perguntas adicionais de construção de contexto
+- Insights desejáveis (nice-to-have)
+- Considerações voltadas para o futuro
 
-#### C. Research Methodology
+#### C. Metodologia da Pesquisa
 
-**Data Collection Methods:**
+**Métodos de Coleta de Dados:**
 
-- Secondary research sources
-- Primary research approaches (if applicable)
-- Data quality requirements
-- Source credibility criteria
+- Fontes de pesquisa secundária
+- Abordagens de pesquisa primária (se aplicável)
+- Requisitos de qualidade dos dados
+- Critérios de credibilidade das fontes
 
-**Analysis Frameworks:**
+**Frameworks de Análise:**
 
-- Specific frameworks to apply
-- Comparison criteria
-- Evaluation methodologies
-- Synthesis approaches
+- Frameworks específicos a aplicar
+- Critérios de comparação
+- Metodologias de avaliação
+- Abordagens de síntese
 
-#### D. Output Requirements
+#### D. Requisitos de Saída
 
-**Format Specifications:**
+**Especificações de Formato:**
 
-- Executive summary requirements
-- Detailed findings structure
-- Visual/tabular presentations
-- Supporting documentation
+- Requisitos do sumário executivo
+- Estrutura dos achados detalhados
+- Apresentações visuais/tabulares
+- Documentação de apoio
 
-**Key Deliverables:**
+**Entregáveis-Chave:**
 
-- Must-have sections and insights
-- Decision-support elements
-- Action-oriented recommendations
-- Risk and uncertainty documentation
+- Seções e insights obrigatórios (must-have)
+- Elementos de apoio à decisão
+- Recomendações orientadas à ação
+- Documentação de riscos e incertezas
 
-### 4. Prompt Generation
+### 4. Geração do Prompt
 
-**Research Prompt Template:**
+**Template do Prompt de Pesquisa:**
 
 ```markdown
 ## Research Objective
@@ -452,50 +452,50 @@ CRITICAL: collaborate with the user to develop specific, actionable research que
 [If applicable, any time constraints or phasing]
 ```
 
-### 5. Review and Refinement
+### 5. Revisão e Refinamento
 
-1. **Present Complete Prompt**
+1. **Apresentar o Prompt Completo**
 
-   - Show the full research prompt
-   - Explain key elements and rationale
-   - Highlight any assumptions made
+   - Mostrar o prompt de pesquisa completo
+   - Explicar os elementos-chave e a justificativa
+   - Destacar quaisquer premissas adotadas
 
-2. **Gather Feedback**
+2. **Coletar Feedback**
 
-   - Are the objectives clear and correct?
-   - Do the questions address all concerns?
-   - Is the scope appropriate?
-   - Are output requirements sufficient?
+   - Os objetivos estão claros e corretos?
+   - As perguntas tratam de todas as preocupações?
+   - O escopo é apropriado?
+   - Os requisitos de saída são suficientes?
 
-3. **Refine as Needed**
-   - Incorporate user feedback
-   - Adjust scope or focus
-   - Add missing elements
-   - Clarify ambiguities
+3. **Refinar Conforme Necessário**
+   - Incorporar o feedback do usuário
+   - Ajustar o escopo ou o foco
+   - Adicionar elementos faltantes
+   - Esclarecer ambiguidades
 
-### 6. Next Steps Guidance
+### 6. Orientação para os Próximos Passos
 
-**Execution Options:**
+**Opções de Execução:**
 
-1. **Use with AI Research Assistant**: Provide this prompt to an AI model with research capabilities
-2. **Guide Human Research**: Use as a framework for manual research efforts
-3. **Hybrid Approach**: Combine AI and human research using this structure
+1. **Usar com um Assistente de Pesquisa de IA**: Fornecer este prompt a um modelo de IA com capacidades de pesquisa
+2. **Orientar a Pesquisa Humana**: Usar como framework para os esforços de pesquisa manual
+3. **Abordagem Híbrida**: Combinar a pesquisa de IA e humana usando esta estrutura
 
-**Integration Points:**
+**Pontos de Integração:**
 
-- How findings will feed into next phases
-- Which team members should review results
-- How to validate findings
-- When to revisit or expand research
+- Como os achados alimentarão as próximas fases
+- Quais membros da equipe devem revisar os resultados
+- Como validar os achados
+- Quando revisitar ou expandir a pesquisa
 
-## Important Notes
+## Notas Importantes
 
-- The quality of the research prompt directly impacts the quality of insights gathered
-- Be specific rather than general in research questions
-- Consider both current state and future implications
-- Balance comprehensiveness with focus
-- Document assumptions and limitations clearly
-- Plan for iterative refinement based on initial findings
+- A qualidade do prompt de pesquisa impacta diretamente a qualidade dos insights coletados
+- Seja específico em vez de genérico nas perguntas de pesquisa
+- Considere tanto o estado atual quanto as implicações futuras
+- Equilibre a abrangência com o foco
+- Documente as premissas e limitações com clareza
+- Planeje um refinamento iterativo com base nos achados iniciais
 
 ## Handoff
 next_agent: @pm

@@ -5,7 +5,7 @@
 **Created:** 2025-12-08
 **Updated:** 2025-12-08
 **Agent:** @devops (Gage)
-**Story:** 5.10 - GitHub DevOps Setup for User Projects
+**Story:** 5.10 - Setup de GitHub DevOps para Projetos de Usuário
 
 ---
 
@@ -87,161 +87,161 @@ atomic_layer: Organism
 
 ---
 
-## Pre-Conditions
+## Pré-condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Git repository exists (.git directory present)
+  - [ ] Repositório Git existe (diretório .git presente)
     tipo: pre-condition
     blocker: true
     validação: |
       Test-Path ".git" (PowerShell) or [ -d .git ] (bash)
-    error_message: "Git repository not found. Run *environment-bootstrap first."
+    error_message: "Repositório Git não encontrado. Rode *environment-bootstrap primeiro."
 
-  - [ ] GitHub remote configured
+  - [ ] Remote do GitHub configurado
     tipo: pre-condition
     blocker: true
     validação: |
       git remote get-url origin
-    error_message: "GitHub remote not configured. Run *environment-bootstrap first."
+    error_message: "Remote do GitHub não configurado. Rode *environment-bootstrap primeiro."
 
-  - [ ] GitHub CLI authenticated
+  - [ ] GitHub CLI autenticado
     tipo: pre-condition
     blocker: true
     validação: |
       gh auth status
-    error_message: "GitHub CLI not authenticated. Run 'gh auth login'."
+    error_message: "GitHub CLI não autenticado. Rode 'gh auth login'."
 
-  - [ ] Repository exists on GitHub
+  - [ ] Repositório existe no GitHub
     tipo: pre-condition
     blocker: true
     validação: |
       gh repo view
-    error_message: "Repository not found on GitHub. Push changes first."
+    error_message: "Repositório não encontrado no GitHub. Faça push das mudanças primeiro."
 
-  - [ ] Not already configured (idempotency check)
+  - [ ] Ainda não configurado (verificação de idempotência)
     tipo: pre-condition
     blocker: false
     validação: |
       Check .aiox/devops-setup-report.yaml existence
-    warning_message: "DevOps setup already completed. Use --force to reconfigure."
+    warning_message: "Setup de DevOps já concluído. Use --force para reconfigurar."
 ```
 
 ---
 
-## Post-Conditions
+## Pós-condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução DEPOIS que a task termina
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] GitHub Actions workflows present in .github/workflows/
+  - [ ] Workflows do GitHub Actions presentes em .github/workflows/
     tipo: post-condition
     blocker: true
     validação: |
       Test-Path ".github/workflows/ci.yml"
-    error_message: "Workflow installation failed"
+    error_message: "Falha na instalação do workflow"
 
-  - [ ] CodeRabbit config present (if not skipped)
+  - [ ] Config do CodeRabbit presente (se não pulado)
     tipo: post-condition
     blocker: false
     validação: |
       Test-Path ".coderabbit.yaml"
-    warning_message: "CodeRabbit not configured"
+    warning_message: "CodeRabbit não configurado"
 
-  - [ ] DevOps setup report generated
+  - [ ] Relatório de setup de DevOps gerado
     tipo: post-condition
     blocker: false
     validação: |
       Test-Path ".aiox/devops-setup-report.yaml"
-    error_message: "Setup report not generated"
+    error_message: "Relatório de setup não gerado"
 ```
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] At least ci.yml workflow is installed and valid
+  - [ ] Pelo menos o workflow ci.yml está instalado e válido
     tipo: acceptance-criterion
     blocker: true
     validação: |
       Verify .github/workflows/ci.yml exists and is valid YAML
-    error_message: "CI workflow not installed"
+    error_message: "Workflow de CI não instalado"
 
-  - [ ] Workflows are customized for project type
+  - [ ] Workflows são customizados para o tipo de projeto
     tipo: acceptance-criterion
     blocker: false
     validação: |
       Check node_version, python_version, etc. match project
-    error_message: "Workflow customization failed"
+    error_message: "Falha na customização do workflow"
 
-  - [ ] Setup report documents all configurations
+  - [ ] Relatório de setup documenta todas as configurações
     tipo: acceptance-criterion
     blocker: true
     validação: |
       .aiox/devops-setup-report.yaml contains all setup details
-    error_message: "Setup report incomplete"
+    error_message: "Relatório de setup incompleto"
 ```
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
 - **Tool:** github-cli
-  - **Purpose:** Repository operations, branch protection, secrets
+  - **Propósito:** Operações de repositório, proteção de branch, secrets
   - **Source:** .aiox-core/infrastructure/tools/cli/github-cli.yaml
 
 - **Tool:** git
-  - **Purpose:** Local repository operations
+  - **Propósito:** Operações locais de repositório
   - **Source:** Built-in
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry-with-alternatives
+**Estratégia:** retry-with-alternatives
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Branch Protection API Failed
-   - **Cause:** Insufficient permissions or free tier limitations
-   - **Resolution:** Warn user about GitHub free tier limitations
-   - **Recovery:** Skip branch protection, document in report
+1. **Erro:** API de Proteção de Branch Falhou
+   - **Causa:** Permissões insuficientes ou limitações do tier gratuito
+   - **Resolução:** Avisar o usuário sobre as limitações do tier gratuito do GitHub
+   - **Recuperação:** Pular a proteção de branch, documentar no relatório
 
-2. **Error:** Workflow File Conflict
-   - **Cause:** Workflow files already exist
-   - **Resolution:** Prompt user to overwrite or merge
-   - **Recovery:** Backup existing, install new
+2. **Erro:** Conflito de Arquivo de Workflow
+   - **Causa:** Arquivos de workflow já existem
+   - **Resolução:** Solicitar ao usuário sobrescrever ou mesclar (merge)
+   - **Recuperação:** Fazer backup do existente, instalar o novo
 
-3. **Error:** Secrets Permission Denied
-   - **Cause:** Token doesn't have secrets scope
-   - **Resolution:** Re-authenticate with secrets scope
-   - **Recovery:** Skip secrets, provide manual instructions
+3. **Erro:** Permissão de Secrets Negada
+   - **Causa:** O token não tem o escopo de secrets
+   - **Resolução:** Reautenticar com o escopo de secrets
+   - **Recuperação:** Pular os secrets, fornecer instruções manuais
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 2-5 min
-cost_estimated: $0.00 (no AI tokens, API operations only)
-token_usage: ~300-500 tokens (for guidance only)
+cost_estimated: $0.00 (sem tokens de IA, apenas operações de API)
+token_usage: ~300-500 tokens (apenas para orientação)
 ```
 
 ---
@@ -263,82 +263,82 @@ tags:
 updated_at: 2025-12-08
 changelog:
   1.0.0:
-    - Initial implementation for Story 5.10
-    - GitHub Actions templates support
-    - CodeRabbit configuration
-    - Branch protection via gh api
-    - Secrets wizard integration
+    - Implementação inicial para a Story 5.10
+    - Suporte a templates do GitHub Actions
+    - Configuração do CodeRabbit
+    - Proteção de branch via gh api
+    - Integração com o wizard de secrets
 ```
 
 ---
 
-## Elicitation
+## Elicitação
 
 ```yaml
 elicit: true
 interaction_points:
-  - project_type: "What type of project is this? (node/python/go/rust/mixed)"
-  - workflows_select: "Which workflows do you want to install?"
-  - branch_protection: "Enable branch protection for main? (requires GitHub Pro for private repos)"
-  - secrets_configure: "Which secrets do you want to configure?"
+  - project_type: "Que tipo de projeto é este? (node/python/go/rust/mixed)"
+  - workflows_select: "Quais workflows você quer instalar?"
+  - branch_protection: "Habilitar proteção de branch para main? (requer GitHub Pro para repositórios privados)"
+  - secrets_configure: "Quais secrets você quer configurar?"
 ```
 
 ---
 
-## Process
+## Processo
 
-### Step 1: Verify Pre-Conditions
+### Passo 1: Verificar Pré-condições
 
-**Action:** Check all prerequisites are met
+**Ação:** Verificar se todos os pré-requisitos foram atendidos
 
 ```powershell
 echo "=== GitHub DevOps Setup Pre-Check ==="
 
 # Check Git repository
 if (-not (Test-Path ".git")) {
-  Write-Host "❌ Git repository not found"
+  Write-Host "❌ Repositório Git não encontrado"
   Write-Host "   Run: @devops *environment-bootstrap"
   exit 1
 }
-Write-Host "✅ Git repository found"
+Write-Host "✅ Repositório Git encontrado"
 
 # Check GitHub remote
 $remoteUrl = git remote get-url origin 2>$null
 if (-not $remoteUrl) {
-  Write-Host "❌ GitHub remote not configured"
+  Write-Host "❌ Remote do GitHub não configurado"
   exit 1
 }
-Write-Host "✅ GitHub remote: $remoteUrl"
+Write-Host "✅ Remote do GitHub: $remoteUrl"
 
 # Check GitHub CLI auth
 $ghStatus = gh auth status 2>&1
 if ($LASTEXITCODE -ne 0) {
-  Write-Host "❌ GitHub CLI not authenticated"
+  Write-Host "❌ GitHub CLI não autenticado"
   Write-Host "   Run: gh auth login"
   exit 1
 }
-Write-Host "✅ GitHub CLI authenticated"
+Write-Host "✅ GitHub CLI autenticado"
 
 # Check repo exists on GitHub
 gh repo view --json name 2>$null
 if ($LASTEXITCODE -ne 0) {
-  Write-Host "❌ Repository not found on GitHub"
+  Write-Host "❌ Repositório não encontrado no GitHub"
   exit 1
 }
-Write-Host "✅ Repository exists on GitHub"
+Write-Host "✅ Repositório existe no GitHub"
 
 # Check idempotency
 if (Test-Path ".aiox/devops-setup-report.yaml") {
-  Write-Host "⚠️  DevOps setup already completed"
+  Write-Host "⚠️  Setup de DevOps já concluído"
   Write-Host "   Use --force to reconfigure"
 }
 ```
 
 ---
 
-### Step 2: Detect Project Type
+### Passo 2: Detectar o Tipo de Projeto
 
-**Action:** Analyze project to determine type and customize workflows
+**Ação:** Analisar o projeto para determinar o tipo e customizar os workflows
 
 ```powershell
 echo "=== Detecting Project Type ==="
@@ -349,14 +349,14 @@ $detectedFeatures = @()
 # Node.js detection
 if (Test-Path "package.json") {
   $projectType = "node"
-  $detectedFeatures += "Node.js (package.json found)"
+  $detectedFeatures += "Node.js (package.json encontrado)"
 
   $pkg = Get-Content "package.json" | ConvertFrom-Json
   if ($pkg.devDependencies.typescript -or $pkg.dependencies.typescript) {
     $detectedFeatures += "TypeScript"
   }
   if ($pkg.devDependencies.jest -or $pkg.devDependencies.vitest) {
-    $detectedFeatures += "Test framework (Jest/Vitest)"
+    $detectedFeatures += "Framework de testes (Jest/Vitest)"
   }
   if ($pkg.devDependencies.eslint) {
     $detectedFeatures += "ESLint"
@@ -393,62 +393,62 @@ if (Test-Path "Cargo.toml") {
   $detectedFeatures += "Rust"
 }
 
-Write-Host "Project type: $projectType"
-Write-Host "Detected features:"
+Write-Host "Tipo de projeto: $projectType"
+Write-Host "Features detectadas:"
 $detectedFeatures | ForEach-Object { Write-Host "  - $_" }
 ```
 
-**Elicitation Point (if project type uncertain):**
+**Ponto de Elicitação (se o tipo de projeto for incerto):**
 
 ```
-Project type detection results:
+Resultados da detecção do tipo de projeto:
 
-Detected: node (Node.js/TypeScript project)
+Detectado: node (projeto Node.js/TypeScript)
 
-Features found:
+Features encontradas:
   ✓ package.json
   ✓ TypeScript
   ✓ ESLint
-  ✓ Jest tests
+  ✓ Testes Jest
 
-Is this correct? (Y/n): _
+Está correto? (Y/n): _
 
-Or select manually:
+Ou selecione manualmente:
   1. Node.js/TypeScript
   2. Python
   3. Go
   4. Rust
-  5. Mixed (multiple languages)
+  5. Mixed (múltiplas linguagens)
 ```
 
 ---
 
-### Step 3: Install GitHub Actions Workflows
+### Passo 3: Instalar os Workflows do GitHub Actions
 
-**Action:** Copy and customize workflow templates
+**Ação:** Copiar e customizar os templates de workflow
 
-**Elicitation Point:**
+**Ponto de Elicitação:**
 
 ```
 ╔════════════════════════════════════════════════════════════════════════╗
-║              GITHUB ACTIONS WORKFLOW SELECTION                          ║
+║              SELEÇÃO DE WORKFLOW DO GITHUB ACTIONS                      ║
 ╠════════════════════════════════════════════════════════════════════════╣
 ║                                                                         ║
-║  Available workflows for Node.js projects:                              ║
+║  Workflows disponíveis para projetos Node.js:                          ║
 ║                                                                         ║
-║  [1] ci.yml           - Lint, TypeCheck, Test on PRs (RECOMMENDED)     ║
-║  [2] pr-automation.yml - Quality summary, coverage report               ║
-║  [3] release.yml      - Release automation on tags                      ║
+║  [1] ci.yml           - Lint, TypeCheck, Test em PRs (RECOMENDADO)     ║
+║  [2] pr-automation.yml - Resumo de qualidade, relatório de cobertura    ║
+║  [3] release.yml      - Automação de release em tags                    ║
 ║                                                                         ║
-║  Select workflows to install (comma-separated, or 'all'):               ║
-║  Default: 1,2 (ci + pr-automation)                                      ║
+║  Selecione os workflows a instalar (separados por vírgula, ou 'all'):    ║
+║  Padrão: 1,2 (ci + pr-automation)                                       ║
 ║                                                                         ║
-║  Selection: _                                                           ║
+║  Seleção: _                                                             ║
 ║                                                                         ║
 ╚════════════════════════════════════════════════════════════════════════╝
 ```
 
-**Workflow Installation:**
+**Instalação do Workflow:**
 
 ```powershell
 echo "=== Installing GitHub Actions Workflows ==="
@@ -469,48 +469,48 @@ $ciWorkflow = $ciTemplate `
 
 $ciWorkflow | Out-File -FilePath ".github/workflows/ci.yml" -Encoding utf8
 
-Write-Host "✅ Installed ci.yml"
+Write-Host "✅ ci.yml instalado"
 
 # Copy pr-automation.yml
 Copy-Item ".aiox-core/infrastructure/templates/github-workflows/pr-automation.yml.template" `
   -Destination ".github/workflows/pr-automation.yml"
-Write-Host "✅ Installed pr-automation.yml"
+Write-Host "✅ pr-automation.yml instalado"
 
 # Copy release.yml
 Copy-Item ".aiox-core/infrastructure/templates/github-workflows/release.yml.template" `
   -Destination ".github/workflows/release.yml"
-Write-Host "✅ Installed release.yml"
+Write-Host "✅ release.yml instalado"
 ```
 
 ---
 
-### Step 4: Configure CodeRabbit
+### Passo 4: Configurar o CodeRabbit
 
-**Action:** Generate CodeRabbit configuration based on project structure
+**Ação:** Gerar a configuração do CodeRabbit com base na estrutura do projeto
 
-**Elicitation Point:**
+**Ponto de Elicitação:**
 
 ```
 ╔════════════════════════════════════════════════════════════════════════╗
-║              CODERABBIT CONFIGURATION                                   ║
+║              CONFIGURAÇÃO DO CODERABBIT                                 ║
 ╠════════════════════════════════════════════════════════════════════════╣
 ║                                                                         ║
-║  CodeRabbit provides automated code review on PRs.                      ║
+║  O CodeRabbit fornece revisão de código automatizada em PRs.           ║
 ║                                                                         ║
-║  Review profile options:                                                ║
-║  [1] chill     - Minimal feedback, only critical issues                 ║
-║  [2] balanced  - Moderate feedback (RECOMMENDED)                        ║
-║  [3] assertive - Comprehensive feedback, strict standards               ║
+║  Opções de perfil de revisão:                                          ║
+║  [1] chill     - Feedback mínimo, apenas problemas críticos             ║
+║  [2] balanced  - Feedback moderado (RECOMENDADO)                       ║
+║  [3] assertive - Feedback abrangente, padrões rígidos                   ║
 ║                                                                         ║
-║  Select profile (1/2/3): _                                              ║
+║  Selecione o perfil (1/2/3): _                                         ║
 ║                                                                         ║
-║  ⚠️  Note: Install CodeRabbit GitHub App after setup:                   ║
+║  ⚠️  Nota: Instale o GitHub App do CodeRabbit após o setup:            ║
 ║      https://github.com/apps/coderabbitai                               ║
 ║                                                                         ║
 ╚════════════════════════════════════════════════════════════════════════╝
 ```
 
-**CodeRabbit Configuration:**
+**Configuração do CodeRabbit:**
 
 ```powershell
 echo "=== Configuring CodeRabbit ==="
@@ -525,8 +525,8 @@ if (Test-Path "src") {
   $pathInstructions += @"
     - path: "src/**"
       instructions: |
-        Focus on code quality, performance, and security.
-        Check for proper error handling and input validation.
+        Foque em qualidade de código, performance e segurança.
+        Verifique o tratamento de erros adequado e a validação de entrada.
 "@
 }
 
@@ -534,8 +534,8 @@ if (Test-Path "tests" -or Test-Path "__tests__") {
   $pathInstructions += @"
     - path: "**/*.test.*"
       instructions: |
-        Ensure test coverage and edge cases.
-        Verify mock implementations are correct.
+        Garanta a cobertura de testes e os casos de borda (edge cases).
+        Verifique se as implementações de mock estão corretas.
 "@
 }
 
@@ -543,7 +543,7 @@ if (Test-Path "docs") {
   $pathInstructions += @"
     - path: "docs/**"
       instructions: |
-        Check clarity and completeness of documentation.
+        Verifique a clareza e a completude da documentação.
 "@
 }
 
@@ -554,43 +554,43 @@ $coderabbitConfig = $coderabbitConfig `
 
 $coderabbitConfig | Out-File -FilePath ".coderabbit.yaml" -Encoding utf8
 
-Write-Host "✅ Created .coderabbit.yaml"
+Write-Host "✅ .coderabbit.yaml criado"
 Write-Host ""
-Write-Host "📌 IMPORTANT: Install the CodeRabbit GitHub App:"
+Write-Host "📌 IMPORTANTE: Instale o GitHub App do CodeRabbit:"
 Write-Host "   https://github.com/apps/coderabbitai"
 ```
 
 ---
 
-### Step 5: Configure Branch Protection
+### Passo 5: Configurar a Proteção de Branch
 
-**Action:** Set up branch protection rules via GitHub API
+**Ação:** Configurar regras de proteção de branch via API do GitHub
 
-**Elicitation Point:**
+**Ponto de Elicitação:**
 
 ```
 ╔════════════════════════════════════════════════════════════════════════╗
-║              BRANCH PROTECTION CONFIGURATION                            ║
+║              CONFIGURAÇÃO DE PROTEÇÃO DE BRANCH                         ║
 ╠════════════════════════════════════════════════════════════════════════╣
 ║                                                                         ║
-║  Branch protection ensures code quality before merge.                   ║
+║  A proteção de branch garante a qualidade do código antes do merge.    ║
 ║                                                                         ║
-║  ⚠️  Note: Some features require GitHub Pro (paid) for private repos.   ║
+║  ⚠️  Nota: Alguns recursos exigem GitHub Pro (pago) p/ repos privados. ║
 ║                                                                         ║
-║  Protection rules for 'main':                                           ║
-║  [1] Required status checks (lint, test, typecheck)                     ║
-║  [2] Require PR reviews before merge                                    ║
-║  [3] Require conversation resolution                                    ║
-║  [4] Prevent force pushes                                               ║
+║  Regras de proteção para 'main':                                       ║
+║  [1] Status checks obrigatórios (lint, test, typecheck)                 ║
+║  [2] Exigir revisões de PR antes do merge                              ║
+║  [3] Exigir resolução de conversas                                     ║
+║  [4] Impedir force pushes                                              ║
 ║                                                                         ║
-║  Enable branch protection? (Y/n): _                                     ║
+║  Habilitar proteção de branch? (Y/n): _                               ║
 ║                                                                         ║
-║  Number of required reviewers (0-6, default: 1): _                      ║
+║  Número de revisores obrigatórios (0-6, padrão: 1): _                  ║
 ║                                                                         ║
 ╚════════════════════════════════════════════════════════════════════════╝
 ```
 
-**Branch Protection Setup:**
+**Setup da Proteção de Branch:**
 
 ```bash
 echo "=== Configuring Branch Protection ==="
@@ -617,45 +617,45 @@ gh api \
   -f "allow_deletions=false"
 
 if [ $? -eq 0 ]; then
-  echo "✅ Branch protection enabled for 'main'"
+  echo "✅ Proteção de branch habilitada para 'main'"
 else
-  echo "⚠️  Branch protection setup failed"
-  echo "   This may be due to GitHub free tier limitations for private repos"
-  echo "   Manual setup: Settings → Branches → Add branch protection rule"
+  echo "⚠️  Falha no setup da proteção de branch"
+  echo "   Isso pode ser devido às limitações do tier gratuito do GitHub para repos privados"
+  echo "   Setup manual: Settings → Branches → Add branch protection rule"
 fi
 ```
 
 ---
 
-### Step 6: Secrets Wizard
+### Passo 6: Wizard de Secrets
 
-**Action:** Interactive wizard to configure repository secrets
+**Ação:** Wizard interativo para configurar os secrets do repositório
 
-**Elicitation Point:**
+**Ponto de Elicitação:**
 
 ```
 ╔════════════════════════════════════════════════════════════════════════╗
-║              SECRETS CONFIGURATION WIZARD                               ║
+║              WIZARD DE CONFIGURAÇÃO DE SECRETS                          ║
 ╠════════════════════════════════════════════════════════════════════════╣
 ║                                                                         ║
-║  Repository secrets are encrypted values used by GitHub Actions.        ║
+║  Secrets de repositório são valores criptografados usados pelo Actions. ║
 ║                                                                         ║
-║  Common secrets for your project type:                                  ║
+║  Secrets comuns para o seu tipo de projeto:                            ║
 ║                                                                         ║
-║  [1] CODECOV_TOKEN        - Coverage reporting (optional)               ║
-║  [2] NPM_TOKEN            - NPM publishing (if library)                 ║
-║  [3] VERCEL_TOKEN         - Vercel deployment (if frontend)             ║
-║  [4] RAILWAY_TOKEN        - Railway deployment (if backend)             ║
-║  [5] SUPABASE_URL         - Supabase connection (if using)              ║
-║  [6] SUPABASE_ANON_KEY    - Supabase anonymous key                      ║
-║  [7] SUPABASE_SERVICE_KEY - Supabase service key (for CI)               ║
+║  [1] CODECOV_TOKEN        - Relatório de cobertura (opcional)           ║
+║  [2] NPM_TOKEN            - Publicação no NPM (se for biblioteca)       ║
+║  [3] VERCEL_TOKEN         - Deploy na Vercel (se for frontend)          ║
+║  [4] RAILWAY_TOKEN        - Deploy na Railway (se for backend)          ║
+║  [5] SUPABASE_URL         - Conexão Supabase (se estiver usando)        ║
+║  [6] SUPABASE_ANON_KEY    - Chave anônima do Supabase                   ║
+║  [7] SUPABASE_SERVICE_KEY - Chave de serviço do Supabase (para CI)      ║
 ║                                                                         ║
-║  Select secrets to configure (comma-separated, or 'skip'): _            ║
+║  Selecione os secrets a configurar (separados por vírgula, ou 'skip'): _ ║
 ║                                                                         ║
 ╚════════════════════════════════════════════════════════════════════════╝
 ```
 
-**Secrets Configuration:**
+**Configuração de Secrets:**
 
 ```powershell
 echo "=== Configuring Secrets ==="
@@ -665,10 +665,10 @@ $secretsConfigured = @()
 # Configure selected secrets
 foreach ($secret in $selectedSecrets) {
   Write-Host ""
-  Write-Host "Configuring $secret..."
+  Write-Host "Configurando $secret..."
 
   # Prompt for value (masked input)
-  $value = Read-Host -AsSecureString "Enter value for $secret"
+  $value = Read-Host -AsSecureString "Digite o valor para $secret"
   $plainValue = [Runtime.InteropServices.Marshal]::PtrToStringAuto(
     [Runtime.InteropServices.Marshal]::SecureStringToBSTR($value)
   )
@@ -677,29 +677,29 @@ foreach ($secret in $selectedSecrets) {
   echo $plainValue | gh secret set $secret
 
   if ($LASTEXITCODE -eq 0) {
-    Write-Host "✅ $secret configured"
+    Write-Host "✅ $secret configurado"
     $secretsConfigured += $secret
   } else {
-    Write-Host "❌ Failed to set $secret"
+    Write-Host "❌ Falha ao definir $secret"
   }
 }
 
 Write-Host ""
-Write-Host "Secrets configured: $($secretsConfigured.Count)"
+Write-Host "Secrets configurados: $($secretsConfigured.Count)"
 ```
 
 ---
 
-### Step 7: Generate Setup Report
+### Passo 7: Gerar o Relatório de Setup
 
-**Action:** Create comprehensive setup report
+**Ação:** Criar um relatório de setup abrangente
 
 ```powershell
 echo "=== Generating DevOps Setup Report ==="
 
 $report = @"
-# AIOX DevOps Setup Report
-# Generated: $(Get-Date -Format "yyyy-MM-ddTHH:mm:ss")
+# Relatório de Setup de DevOps do AIOX
+# Gerado em: $(Get-Date -Format "yyyy-MM-ddTHH:mm:ss")
 
 setup:
   completed: true
@@ -736,16 +736,16 @@ secrets_configured:
 $(($secretsConfigured | ForEach-Object { "  - $_" }) -join "`n")
 
 next_steps:
-  - "Install CodeRabbit GitHub App: https://github.com/apps/coderabbitai"
-  - "Create first PR to test CI/CD"
-  - "Configure additional secrets as needed"
-  - "Review branch protection settings: Settings → Branches"
+  - "Instale o GitHub App do CodeRabbit: https://github.com/apps/coderabbitai"
+  - "Crie o primeiro PR para testar o CI/CD"
+  - "Configure secrets adicionais conforme necessário"
+  - "Revise as configurações de proteção de branch: Settings → Branches"
 
 validation_checklist:
-  - "[x] GitHub Actions workflows installed"
-  - "[$(if($coderabbitConfigured){'x'}else{' '})] CodeRabbit configured"
-  - "[$(if($branchProtectionEnabled){'x'}else{' '})] Branch protection enabled"
-  - "[$(if($secretsConfigured.Count -gt 0){'x'}else{' '})] Repository secrets configured"
+  - "[x] Workflows do GitHub Actions instalados"
+  - "[$(if($coderabbitConfigured){'x'}else{' '})] CodeRabbit configurado"
+  - "[$(if($branchProtectionEnabled){'x'}else{' '})] Proteção de branch habilitada"
+  - "[$(if($secretsConfigured.Count -gt 0){'x'}else{' '})] Secrets de repositório configurados"
 "@
 
 # Ensure .aiox directory exists
@@ -753,117 +753,122 @@ New-Item -ItemType Directory -Path ".aiox" -Force | Out-Null
 
 $report | Out-File -FilePath ".aiox/devops-setup-report.yaml" -Encoding utf8
 
-Write-Host "✅ Setup report saved to .aiox/devops-setup-report.yaml"
+Write-Host "✅ Relatório de setup salvo em .aiox/devops-setup-report.yaml"
 ```
 
 ---
 
-### Step 8: Final Summary
+### Passo 8: Resumo Final
 
-**Action:** Display completion summary and next steps
+**Ação:** Exibir o resumo de conclusão e os próximos passos
 
 ```
 ╔═══════════════════════════════════════════════════════════════════════════╗
-║              ✅ GITHUB DEVOPS SETUP COMPLETE                              ║
+║              ✅ SETUP DE GITHUB DEVOPS CONCLUÍDO                          ║
 ╠═══════════════════════════════════════════════════════════════════════════╣
 ║                                                                            ║
-║  Repository: https://github.com/username/my-project                        ║
-║  Project Type: node (Node.js/TypeScript)                                   ║
+║  Repositório: https://github.com/username/my-project                       ║
+║  Tipo de Projeto: node (Node.js/TypeScript)                                ║
 ║                                                                            ║
 ╠═══════════════════════════════════════════════════════════════════════════╣
-║  Configuration Summary                                                     ║
+║  Resumo da Configuração                                                    ║
 ╠═══════════════════════════════════════════════════════════════════════════╣
 ║                                                                            ║
 ║  GitHub Actions:                                                           ║
 ║    ✅ ci.yml - Lint, TypeCheck, Test                                      ║
-║    ✅ pr-automation.yml - Quality summary, coverage                        ║
-║    ✅ release.yml - Release automation                                     ║
+║    ✅ pr-automation.yml - Resumo de qualidade, cobertura                   ║
+║    ✅ release.yml - Automação de release                                   ║
 ║                                                                            ║
 ║  CodeRabbit:                                                               ║
-║    ✅ .coderabbit.yaml created (profile: balanced)                        ║
-║    ⚠️  Install GitHub App: https://github.com/apps/coderabbitai            ║
+║    ✅ .coderabbit.yaml criado (perfil: balanced)                          ║
+║    ⚠️  Instale o GitHub App: https://github.com/apps/coderabbitai          ║
 ║                                                                            ║
-║  Branch Protection (main):                                                 ║
-║    ✅ Required status checks: lint, typecheck, test                        ║
-║    ✅ Require 1 PR review                                                  ║
-║    ✅ Prevent force pushes                                                 ║
+║  Proteção de Branch (main):                                                ║
+║    ✅ Status checks obrigatórios: lint, typecheck, test                    ║
+║    ✅ Exigir 1 revisão de PR                                              ║
+║    ✅ Impedir force pushes                                                ║
 ║                                                                            ║
-║  Secrets Configured:                                                       ║
+║  Secrets Configurados:                                                     ║
 ║    ✅ CODECOV_TOKEN                                                        ║
-║    ⏭️  Others skipped (configure later via Settings → Secrets)             ║
+║    ⏭️  Outros pulados (configure depois via Settings → Secrets)            ║
 ║                                                                            ║
 ╠═══════════════════════════════════════════════════════════════════════════╣
-║  NEXT STEPS                                                                ║
+║  PRÓXIMOS PASSOS                                                           ║
 ╠═══════════════════════════════════════════════════════════════════════════╣
 ║                                                                            ║
-║  1. Install CodeRabbit GitHub App (required for code review):              ║
+║  1. Instale o GitHub App do CodeRabbit (necessário p/ revisão de código): ║
 ║     https://github.com/apps/coderabbitai                                   ║
 ║                                                                            ║
-║  2. Create your first PR to test the CI/CD pipeline:                       ║
+║  2. Crie seu primeiro PR para testar o pipeline de CI/CD:                  ║
 ║     git checkout -b feature/test-ci                                        ║
 ║     git commit --allow-empty -m "chore: test CI pipeline"                  ║
 ║     git push -u origin feature/test-ci                                     ║
 ║     gh pr create --title "Test CI Pipeline" --body "Testing CI setup"      ║
 ║                                                                            ║
-║  3. Commit the DevOps configuration:                                       ║
+║  3. Faça commit da configuração de DevOps:                                 ║
 ║     git add .github/ .coderabbit.yaml .aiox/                              ║
 ║     git commit -m "chore: add DevOps configuration [Story 5.10]"          ║
 ║     git push                                                               ║
 ║                                                                            ║
-║  Report saved: .aiox/devops-setup-report.yaml                             ║
+║  Relatório salvo: .aiox/devops-setup-report.yaml                          ║
 ║                                                                            ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
 
-— Gage, DevOps configured with confidence 🚀
+— Gage, DevOps configurado com confiança 🚀
 ```
 
 ---
 
-## Validation Checklist
+## Checklist de Validação
 
-- [ ] Pre-conditions verified (git, remote, gh auth)
-- [ ] Project type detected
-- [ ] GitHub Actions workflows installed
-- [ ] CodeRabbit configuration created
-- [ ] Branch protection configured (if supported)
-- [ ] Secrets configured (if selected)
-- [ ] Setup report generated
-- [ ] Next steps presented to user
-
----
-
-## Troubleshooting
-
-### Issue 1: Branch protection API returns 403
-
-**Error:** `Resource not accessible by personal access token`
-
-**Fix:**
-1. For private repos on free tier, branch protection requires GitHub Pro
-2. Re-authenticate with correct scopes: `gh auth login --scopes repo,admin:repo_hook`
-3. Manual setup via GitHub UI: Settings → Branches
-
-### Issue 2: Workflow validation fails
-
-**Error:** `Invalid workflow file`
-
-**Fix:**
-1. Validate YAML syntax: `yamllint .github/workflows/ci.yml`
-2. Check for tab characters (use spaces only)
-3. Verify action versions are valid
-
-### Issue 3: CodeRabbit not reviewing PRs
-
-**Fix:**
-1. Verify GitHub App is installed: https://github.com/apps/coderabbitai
-2. Check app has access to the repository
-3. Verify .coderabbit.yaml is in the default branch
+- [ ] Pré-condições verificadas (git, remote, gh auth)
+- [ ] Tipo de projeto detectado
+- [ ] Workflows do GitHub Actions instalados
+- [ ] Configuração do CodeRabbit criada
+- [ ] Proteção de branch configurada (se suportada)
+- [ ] Secrets configurados (se selecionados)
+- [ ] Relatório de setup gerado
+- [ ] Próximos passos apresentados ao usuário
 
 ---
 
-## References
+## Solução de Problemas
 
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [GitHub Branch Protection API](https://docs.github.com/en/rest/branches/branch-protection)
-- [CodeRabbit Documentation](https://docs.coderabbit.ai/)
-- [Story 5.10 - GitHub DevOps Setup](docs/storie
+### Problema 1: A API de proteção de branch retorna 403
+
+**Erro:** `Resource not accessible by personal access token`
+
+**Correção:**
+1. Para repos privados no tier gratuito, a proteção de branch requer GitHub Pro
+2. Reautentique com os escopos corretos: `gh auth login --scopes repo,admin:repo_hook`
+3. Setup manual via UI do GitHub: Settings → Branches
+
+### Problema 2: A validação do workflow falha
+
+**Erro:** `Invalid workflow file`
+
+**Correção:**
+1. Valide a sintaxe YAML: `yamllint .github/workflows/ci.yml`
+2. Verifique a presença de caracteres de tabulação (use apenas espaços)
+3. Verifique se as versões das actions são válidas
+
+### Problema 3: O CodeRabbit não está revisando os PRs
+
+**Correção:**
+1. Verifique se o GitHub App está instalado: https://github.com/apps/coderabbitai
+2. Verifique se o app tem acesso ao repositório
+3. Verifique se o .coderabbit.yaml está no branch padrão
+
+---
+
+## Referências
+
+- [Documentação do GitHub Actions](https://docs.github.com/en/actions)
+- [API de Proteção de Branch do GitHub](https://docs.github.com/en/rest/branches/branch-protection)
+- [Documentação do CodeRabbit](https://docs.coderabbit.ai/)
+- [Story 5.10 - GitHub DevOps Setup](docs/stories/v4.0.4/sprint-5/story-5.10-github-devops-user-projects.md)
+
+---
+
+**Status:** ✅ Pronto para Produção
+**Testado Em:** Windows 11, macOS Sonoma, Ubuntu 22.04

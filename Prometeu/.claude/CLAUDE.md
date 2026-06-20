@@ -286,6 +286,14 @@ Seguir Conventional Commits:
 - Mantenha contexto da story atual sendo trabalhada
 - Salve estado importante antes de operações longas
 
+### Ritual de Encerramento (auto-aprendizado obrigatório)
+Toda sessão com trabalho deve terminar aprendendo. Antes de encerrar, acione a habilidade
+`ritual-de-encerramento`: reflita, extraia lições verificadas e grave-as no **MEMORY.md canônico**
+do agente AIOX (`.aiox-core/development/agents/{id}/MEMORY.md`) — Padrões Ativos / Candidatos a
+Promoção / Arquivado. O reflexo `Stop` (`encerramento-aprendizado.sh`) dispara isso automaticamente
+uma vez por sessão; `marca-trabalho.sh` (PostToolUse) sinaliza que houve escrita. Fonte única do
+processo: `C:\Kolden\.claude\skills\ritual-de-encerramento\SKILL.md`. Nunca duplicar a memória canônica.
+
 ### Recuperação de Erros
 - Sempre forneça sugestões de recuperação para falhas
 - Inclua contexto do erro em mensagens ao usuário

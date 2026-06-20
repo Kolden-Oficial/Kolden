@@ -32,7 +32,7 @@ Varredura automatizada de vulnerabilidades de segurança para anti-padrões comu
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: qaSecurityChecklist()

@@ -585,3 +585,10 @@ It contains a comprehensive agent definition with:
 - **8 commands** (principles, diagnose, machine, cycle, meritocracy, pain-reflect, portfolio, world-order)
 - **4 complementary relationships** and **3 contrasting relationships** with other advisory board agents
 - **10-point "How Ray Dalio Thinks"** section explaining his reasoning patterns
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`ray-dalio`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

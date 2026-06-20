@@ -266,3 +266,10 @@ Faça três perguntas:
 - **"Eu ainda faria isto se permanecesse deste tamanho para sempre?"** (Se não, você está construindo uma armadilha, não um negócio.)
 
 Um negócio que você ama no seu tamanho atual vale mais do que um negócio que você odiará 10x maior. Escala não é o objetivo. Liberdade é o objetivo. Simplicidade é a estratégia.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`derek-sivers`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

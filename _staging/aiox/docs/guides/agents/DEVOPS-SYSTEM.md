@@ -635,3 +635,10 @@ npm audit --ignore-advisories=ADVISORY_ID
 
 *Documento gerado pelo Sistema AIOX - 2026-02-04*
 *Mantido por: @devops*
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`DEVOPS-SYSTEM`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

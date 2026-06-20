@@ -1,34 +1,34 @@
 # Task: Setup Database
 
-**Purpose**: Interactive database project setup (Supabase, PostgreSQL, MongoDB, MySQL, SQLite)
+**Propósito**: Configuração interativa de projeto de banco de dados (Supabase, PostgreSQL, MongoDB, MySQL, SQLite)
 
 **Elicit**: true
 
-**Renamed From (Story 6.1.2.3):**
-- `db-supabase-setup.md` - Now database-agnostic (supports 5+ DB types)
+**Renomeado De (Story 6.1.2.3):**
+- `db-supabase-setup.md` - Agora agnóstico de banco de dados (suporta 5+ tipos de DB)
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints explícitos de decisão
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Antecipado Abrangente
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução sem ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
@@ -67,9 +67,9 @@ atomic_layer: Config
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -85,9 +85,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a task ser concluída
 
 **Checklist:**
 
@@ -103,9 +103,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
@@ -121,52 +121,52 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** project-scaffolder
-  - **Purpose:** Generate project structure and config
-  - **Source:** .aiox-core/scripts/project-scaffolder.js
+- **Ferramenta:** project-scaffolder
+  - **Propósito:** Gerar estrutura de projeto e configuração
+  - **Fonte:** .aiox-core/scripts/project-scaffolder.js
 
-- **Tool:** config-manager
-  - **Purpose:** Initialize configuration files
-  - **Source:** .aiox-core/utils/config-manager.js
+- **Ferramenta:** config-manager
+  - **Propósito:** Inicializar arquivos de configuração
+  - **Fonte:** .aiox-core/utils/config-manager.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** init-project.js
-  - **Purpose:** Project initialization workflow
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/init-project.js
+  - **Propósito:** Workflow de inicialização do projeto
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/init-project.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Directory Not Empty
-   - **Cause:** Target directory already contains files
-   - **Resolution:** Use force flag or choose empty directory
-   - **Recovery:** Prompt for confirmation, merge or abort
+1. **Erro:** Directory Not Empty
+   - **Causa:** O diretório alvo já contém arquivos
+   - **Resolução:** Usar flag force ou escolher um diretório vazio
+   - **Recuperação:** Solicitar confirmação, mesclar ou abortar
 
-2. **Error:** Initialization Failed
-   - **Cause:** Error creating project structure
-   - **Resolution:** Check permissions and disk space
-   - **Recovery:** Cleanup partial initialization, log error
+2. **Erro:** Initialization Failed
+   - **Causa:** Erro ao criar a estrutura do projeto
+   - **Resolução:** Verificar permissões e espaço em disco
+   - **Recuperação:** Limpar inicialização parcial, registrar erro
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 2-10 min (estimated)
@@ -174,12 +174,12 @@ cost_estimated: $0.001-0.008
 token_usage: ~800-2,500 tokens
 ```
 
-**Optimization Notes:**
-- Validate configuration early; use atomic writes; implement rollback checkpoints
+**Notas de Otimização:**
+- Validar configuração cedo; usar escritas atômicas; implementar checkpoints de rollback
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -195,12 +195,12 @@ updated_at: 2025-11-17
 ---
 
 
-## Elicitation
+## Elicitação
 
-**Step 1: Detect or prompt for database type**
+**Passo 1: Detectar ou solicitar o tipo de banco de dados**
 
 ```bash
-# Auto-detect from PRD or tech stack if available
+# Auto-detectar a partir do PRD ou tech stack, se disponível
 if grep -qiE "supabase|postgres" docs/prd/*.yaml docs/architecture/*.yaml 2>/dev/null; then
   DETECTED_DB="postgresql"
   echo "📊 Detected database: PostgreSQL/Supabase"
@@ -218,36 +218,36 @@ else
 fi
 ```
 
-**Prompt user:**
+**Solicitar ao usuário:**
 
 ```
-Select database type:
+Selecione o tipo de banco de dados:
 
 1. **supabase** - PostgreSQL + RLS + Realtime + Edge Functions
-2. **postgresql** - Standard PostgreSQL (self-hosted or managed)
-3. **mongodb** - NoSQL document database
-4. **mysql** - MySQL or MariaDB relational database
-5. **sqlite** - Embedded SQLite database
+2. **postgresql** - PostgreSQL padrão (self-hosted ou gerenciado)
+3. **mongodb** - Banco de dados de documentos NoSQL
+4. **mysql** - Banco de dados relacional MySQL ou MariaDB
+5. **sqlite** - Banco de dados SQLite embarcado
 
-Which database? [supabase/postgresql/mongodb/mysql/sqlite]:
+Qual banco de dados? [supabase/postgresql/mongodb/mysql/sqlite]:
 ```
 
-**Capture:** `{db_type}` (default: $DETECTED_DB if available)
+**Captura:** `{db_type}` (padrão: $DETECTED_DB se disponível)
 
 ---
 
-## Process by Database Type
+## Processo por Tipo de Banco de Dados
 
-### Type: Supabase
+### Tipo: Supabase
 
-**When:** User selects `supabase`
+**Quando:** O usuário seleciona `supabase`
 
-#### Step 1: Install Supabase CLI
+#### Passo 1: Instalar o Supabase CLI
 
 ```bash
 \echo '=== Installing Supabase CLI ==='
 
-# Check if already installed
+# Verificar se já está instalado
 if command -v supabase &> /dev/null; then
   echo "✓ Supabase CLI already installed: $(supabase --version)"
 else
@@ -266,19 +266,19 @@ else
 fi
 ```
 
-#### Step 2: Initialize Supabase Project
+#### Passo 2: Inicializar o Projeto Supabase
 
 ```bash
 \echo ''
 \echo '=== Initializing Supabase Project ==='
 
-# Initialize local project
+# Inicializar projeto local
 supabase init
 
 echo "✓ Created supabase/ directory structure"
 ```
 
-#### Step 3: Create Standard Directories
+#### Passo 3: Criar Diretórios Padrão
 
 ```bash
 mkdir -p supabase/migrations
@@ -289,7 +289,7 @@ mkdir -p supabase/functions
 echo "✓ Created standard Supabase directories"
 ```
 
-####Step 4: Create Starter Migration
+#### Passo 4: Criar Migration Inicial
 
 ```bash
 cat > supabase/migrations/$(date +%Y%m%d%H%M%S)_initial_schema.sql <<'SQL'
@@ -335,7 +335,7 @@ SQL
 echo "✓ Created initial migration"
 ```
 
-#### Step 5: Create Starter Seed Data
+#### Passo 5: Criar Seed Data Inicial
 
 ```bash
 cat > supabase/seed.sql <<'SQL'
@@ -352,7 +352,7 @@ SQL
 echo "✓ Created seed data file"
 ```
 
-#### Step 6: Start Local Development
+#### Passo 6: Iniciar Desenvolvimento Local
 
 ```bash
 \echo ''
@@ -372,11 +372,11 @@ echo "  4. supabase status - View local services"
 
 ---
 
-### Type: PostgreSQL (Standard)
+### Tipo: PostgreSQL (Padrão)
 
-**When:** User selects `postgresql`
+**Quando:** O usuário seleciona `postgresql`
 
-#### Step 1: Create Project Structure
+#### Passo 1: Criar Estrutura do Projeto
 
 ```bash
 \echo '=== Setting Up PostgreSQL Project ==='
@@ -388,7 +388,7 @@ mkdir -p database/scripts
 echo "✓ Created PostgreSQL project structure"
 ```
 
-#### Step 2: Create Connection Config
+#### Passo 2: Criar Configuração de Conexão
 
 ```bash
 cat > database/.env.example <<'ENV'
@@ -408,7 +408,7 @@ cp database/.env.example database/.env
 echo "✓ Created .env configuration"
 ```
 
-#### Step 3: Create Initial Migration
+#### Passo 3: Criar Migration Inicial
 
 ```bash
 cat > database/migrations/001_initial_schema.sql <<'SQL'
@@ -445,7 +445,7 @@ SQL
 echo "✓ Created initial migration"
 ```
 
-#### Step 4: Create Migration Runner Script
+#### Passo 4: Criar Script Executor de Migrations
 
 ```bash
 cat > database/scripts/migrate.sh <<'BASH'
@@ -472,11 +472,11 @@ echo "✓ Created migration runner"
 
 ---
 
-### Type: MongoDB
+### Tipo: MongoDB
 
-**When:** User selects `mongodb`
+**Quando:** O usuário seleciona `mongodb`
 
-#### Step 1: Create Project Structure
+#### Passo 1: Criar Estrutura do Projeto
 
 ```bash
 \echo '=== Setting Up MongoDB Project ==='
@@ -488,7 +488,7 @@ mkdir -p database/schemas
 echo "✓ Created MongoDB project structure"
 ```
 
-#### Step 2: Create Connection Config
+#### Passo 2: Criar Configuração de Conexão
 
 ```bash
 cat > database/.env.example <<'ENV'
@@ -508,7 +508,7 @@ cp database/.env.example database/.env
 echo "✓ Created .env configuration"
 ```
 
-#### Step 3: Create Initial Schema
+#### Passo 3: Criar Schema Inicial
 
 ```bash
 cat > database/schemas/users.js <<'JS'
@@ -541,7 +541,7 @@ JS
 echo "✓ Created user schema"
 ```
 
-#### Step 4: Create Seed Data
+#### Passo 4: Criar Seed Data
 
 ```bash
 cat > database/seeds/users.json <<'JSON'
@@ -559,11 +559,11 @@ echo "✓ Created seed data"
 
 ---
 
-### Type: MySQL
+### Tipo: MySQL
 
-**When:** User selects `mysql`
+**Quando:** O usuário seleciona `mysql`
 
-#### Step 1: Create Project Structure
+#### Passo 1: Criar Estrutura do Projeto
 
 ```bash
 \echo '=== Setting Up MySQL Project ==='
@@ -575,7 +575,7 @@ mkdir -p database/scripts
 echo "✓ Created MySQL project structure"
 ```
 
-#### Step 2: Create Connection Config
+#### Passo 2: Criar Configuração de Conexão
 
 ```bash
 cat > database/.env.example <<'ENV'
@@ -595,7 +595,7 @@ cp database/.env.example database/.env
 echo "✓ Created .env configuration"
 ```
 
-#### Step 3: Create Initial Migration
+#### Passo 3: Criar Migration Inicial
 
 ```bash
 cat > database/migrations/001_initial_schema.sql <<'SQL'
@@ -617,11 +617,11 @@ echo "✓ Created initial migration"
 
 ---
 
-### Type: SQLite
+### Tipo: SQLite
 
-**When:** User selects `sqlite`
+**Quando:** O usuário seleciona `sqlite`
 
-#### Step 1: Create Project Structure
+#### Passo 1: Criar Estrutura do Projeto
 
 ```bash
 \echo '=== Setting Up SQLite Project ==='
@@ -632,7 +632,7 @@ mkdir -p database/seeds
 echo "✓ Created SQLite project structure"
 ```
 
-#### Step 2: Create Initial Migration
+#### Passo 2: Criar Migration Inicial
 
 ```bash
 cat > database/migrations/001_initial_schema.sql <<'SQL'
@@ -658,7 +658,7 @@ SQL
 echo "✓ Created initial migration"
 ```
 
-#### Step 3: Create Database
+#### Passo 3: Criar o Banco de Dados
 
 ```bash
 sqlite3 database/myapp_development.db < database/migrations/001_initial_schema.sql
@@ -668,7 +668,7 @@ echo "✓ Created SQLite database"
 
 ---
 
-## Common Next Steps (All Databases)
+## Próximos Passos Comuns (Todos os Bancos de Dados)
 
 ```
 📋 Database setup complete!
@@ -690,9 +690,9 @@ Related commands:
 
 ---
 
-## Output Examples
+## Exemplos de Saída
 
-### Supabase Output
+### Saída do Supabase
 
 ```
 === Installing Supabase CLI ===
@@ -714,7 +714,7 @@ Started supabase local development setup.
 ✓ Supabase is running locally
 ```
 
-### PostgreSQL Output
+### Saída do PostgreSQL
 
 ```
 === Setting Up PostgreSQL Project ===
@@ -728,14 +728,14 @@ Started supabase local development setup.
 
 ---
 
-## Related Commands
+## Comandos Relacionados
 
-- `*env-check` - Validate database environment variables
-- `*bootstrap` - Alternative setup command with more options
-- `*create-schema` - Design database schema
-- `*apply-migration` - Run migrations
-- `*setup-supabase` - Legacy command (deprecated, use `*setup-database supabase`)
+- `*env-check` - Validar variáveis de ambiente do banco de dados
+- `*bootstrap` - Comando de setup alternativo com mais opções
+- `*create-schema` - Projetar o schema do banco de dados
+- `*apply-migration` - Executar migrations
+- `*setup-supabase` - Comando legado (depreciado, use `*setup-database supabase`)
 
 ---
 
-**Note:** This task replaces `db-supabase-setup.md` with database-agnostic version (renamed in Story 6.1.2.3)
+**Nota:** Esta task substitui `db-supabase-setup.md` pela versão agnóstica de banco de dados (renomeada na Story 6.1.2.3)

@@ -360,3 +360,10 @@ When multiple agents could handle a request:
 | blair-warren | One-sentence persuasion, identity validation, emotional resonance |
 | chris-voss | Tactical empathy, negotiation, labeling, objection handling |
 | oren-klaff | Pitch Anything, frame control, status alignment, neurofinance |
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`copy-master-chief`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

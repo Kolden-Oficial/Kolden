@@ -215,7 +215,7 @@ checklists:
 
 Gera uma matriz abrangente de avaliação de risco para a implementação de uma story usando análise de probabilidade × impacto.
 
-## Inputs
+## Entradas
 
 ```yaml
 required:
@@ -362,9 +362,9 @@ mitigation:
   timeline: 'Before deployment'
 ```
 
-## Outputs
+## Saídas
 
-### Output 1: Bloco YAML do Gate
+### Saída 1: Bloco YAML do Gate
 
 Gere para colar no arquivo de gate sob `risk_summary`:
 
@@ -393,7 +393,7 @@ risk_summary:
       - 'Add security alerts for auth endpoints'
 ```
 
-### Output 2: Relatório em Markdown
+### Saída 2: Relatório em Markdown
 
 **Salvar em:** `qa.qaLocation/assessments/{epic}.{story}-risk-{YYYYMMDD}.md`
 
@@ -548,7 +548,7 @@ Com base no perfil de risco, recomende:
 - Senão → Gate = PASS
 - Riscos não mitigados → Documentar no gate
 
-### Output 3: Linha de Hook da Story
+### Saída 3: Linha de Hook da Story
 
 **Imprima esta linha para a task de revisão citar:**
 

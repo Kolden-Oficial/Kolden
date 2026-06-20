@@ -47,16 +47,16 @@ Cria um novo squad seguindo a arquitetura task-first do AIOX.
 
 ## Parametros
 
-| Parameter | Type | Default | Description |
+| Parâmetro | Tipo | Default | Descrição |
 |-----------|------|---------|-------------|
-| `name` | string | - | Squad name (kebab-case, required) |
-| `--description` | string | "Custom squad" | Squad description |
-| `--author` | string | git user.name | Author name |
-| `--license` | string | MIT | License type |
+| `name` | string | - | Nome do squad (kebab-case, obrigatório) |
+| `--description` | string | "Custom squad" | Descrição do squad |
+| `--author` | string | git user.name | Nome do autor |
+| `--license` | string | MIT | Tipo de licença |
 | `--template` | string | basic | Template: basic, etl, agent-only |
-| `--config-mode` | string | extend | Config inheritance: extend, override, none |
-| `--skip-validation` | flag | false | Skip initial validation |
-| `--yes` | flag | false | Skip interactive prompts, use defaults |
+| `--config-mode` | string | extend | Herança de config: extend, override, none |
+| `--skip-validation` | flag | false | Pular a validação inicial |
+| `--yes` | flag | false | Pular prompts interativos, usar defaults |
 
 ## Elicitacao Interativa
 
@@ -84,7 +84,7 @@ Cria um novo squad seguindo a arquitetura task-first do AIOX.
 
 ## Templates Disponiveis
 
-| Template | Description | Components |
+| Template | Descrição | Componentes |
 |----------|-------------|------------|
 | `basic` | Estrutura minima | 1 agent, 1 task |
 | `etl` | Processamento de dados | 2 agents, 3 tasks, scripts |
@@ -100,7 +100,7 @@ o squad referencia esses arquivos ao invés de criar cópias locais:
 ```
 ./squads/meu-dominio-squad/
 ├── squad.yaml                    # Manifest (referencia docs/framework/)
-├── README.md                     # Documentacao
+├── README.md                     # Documentação
 ├── config/
 │   └── .gitkeep                 # Configs em docs/framework/
 ├── agents/
@@ -119,7 +119,7 @@ Quando o projeto NÃO tem `docs/framework/`, cria arquivos locais:
 ├── squad.yaml                    # Manifest
 ├── README.md                     # Documentacao
 ├── config/
-│   ├── coding-standards.md      # Extends/override core
+│   ├── coding-standards.md      # Estende/sobrescreve o core
 │   ├── tech-stack.md            # Tecnologias do squad
 │   └── source-tree.md           # Estrutura documentada
 ├── agents/
@@ -167,10 +167,10 @@ components:
 
 config:
   extends: extend
-  # SQS-10: References project-level files when docs/framework/ exists
-  coding-standards: ../../docs/framework/CODING-STANDARDS.md   # or config/coding-standards.md
-  tech-stack: ../../docs/framework/TECH-STACK.md               # or config/tech-stack.md
-  source-tree: ../../docs/framework/SOURCE-TREE.md             # or config/source-tree.md
+  # SQS-10: Referencia arquivos de nível de projeto quando docs/framework/ existe
+  coding-standards: ../../docs/framework/CODING-STANDARDS.md   # ou config/coding-standards.md
+  tech-stack: ../../docs/framework/TECH-STACK.md               # ou config/tech-stack.md
+  source-tree: ../../docs/framework/SOURCE-TREE.md             # ou config/source-tree.md
 
 dependencies:
   node: []
@@ -182,71 +182,71 @@ tags:
   - automation
 ```
 
-## Flow
+## Fluxo
 
 ```
-1. Parse arguments
-   ├── If name provided → validate kebab-case
-   └── If no name → prompt for name
+1. Parsear argumentos
+   ├── Se nome fornecido → validar kebab-case
+   └── Se sem nome → solicitar o nome
 
-2. Check if squad exists
-   ├── If exists → error with suggestion
-   └── If not exists → continue
+2. Verificar se o squad já existe
+   ├── Se existe → erro com sugestão
+   └── Se não existe → continuar
 
-3. Collect configuration
-   ├── If --yes flag → use all defaults
-   └── If interactive → elicit each option
+3. Coletar a configuração
+   ├── Se flag --yes → usar todos os defaults
+   └── Se interativo → elicitar cada opção
 
-4. Generate squad structure
-   ├── Create directories
-   ├── Generate squad.yaml from template
-   ├── Generate config files
-   ├── Generate example agent (if requested)
-   ├── Generate example task (if requested)
-   └── Add .gitkeep to empty directories
+4. Gerar a estrutura do squad
+   ├── Criar diretórios
+   ├── Gerar squad.yaml a partir do template
+   ├── Gerar arquivos de config
+   ├── Gerar agent de exemplo (se solicitado)
+   ├── Gerar task de exemplo (se solicitada)
+   └── Adicionar .gitkeep aos diretórios vazios
 
-5. Run initial validation
-   ├── If --skip-validation → skip
-   └── If validation → run squad-validator
+5. Rodar a validação inicial
+   ├── Se --skip-validation → pular
+   └── Se validação → rodar squad-validator
 
-6. Display success message
-   └── Show next steps
+6. Exibir a mensagem de sucesso
+   └── Mostrar os próximos passos
 ```
 
 ## Output de Sucesso
 
 ```
-✅ Squad created successfully!
+✅ Squad criado com sucesso!
 
-📁 Location: ./squads/meu-dominio-squad/
+📁 Local: ./squads/meu-dominio-squad/
 
-📋 Next steps:
+📋 Próximos passos:
    1. cd squads/meu-dominio-squad
-   2. Customize squad.yaml with your details
-   3. Create your agents in agents/
-   4. Create tasks in tasks/ (task-first!)
-   5. Validate: @squad-creator *validate-squad meu-dominio-squad
+   2. Customize squad.yaml com seus detalhes
+   3. Crie seus agents em agents/
+   4. Crie tasks em tasks/ (task-first!)
+   5. Valide: @squad-creator *validate-squad meu-dominio-squad
 
-📚 Documentation:
+📚 Documentação:
    - Squad Guide: docs/guides/squads-guide.md
    - Task Format: .aiox-core/docs/standards/TASK-FORMAT-SPECIFICATION-V1.md
 
-🚀 When ready to share:
-   - Local only: Keep in ./squads/ (private)
-   - Public: @squad-creator *publish-squad meu-dominio-squad
+🚀 Quando estiver pronto para compartilhar:
+   - Apenas local: Mantenha em ./squads/ (privado)
+   - Público: @squad-creator *publish-squad meu-dominio-squad
    - API: @squad-creator *sync-squad-synkra meu-dominio-squad
 ```
 
-## Error Handling
+## Tratamento de Erros
 
-| Error | Cause | Resolution |
+| Erro | Causa | Resolução |
 |-------|-------|------------|
-| `INVALID_NAME` | Name not kebab-case | Use lowercase with hyphens |
-| `SQUAD_EXISTS` | Squad already exists | Choose different name or delete existing |
-| `PERMISSION_DENIED` | Can't write to squads/ | Check directory permissions |
-| `VALIDATION_FAILED` | Generated squad invalid | Check error details, fix manually |
+| `INVALID_NAME` | Nome não está em kebab-case | Use minúsculas com hífens |
+| `SQUAD_EXISTS` | Squad já existe | Escolha outro nome ou exclua o existente |
+| `PERMISSION_DENIED` | Não é possível escrever em squads/ | Verifique as permissões do diretório |
+| `VALIDATION_FAILED` | Squad gerado inválido | Verifique os detalhes do erro, corrija manualmente |
 
-## Implementation
+## Implementação
 
 ```javascript
 const { SquadGenerator } = require('./.aiox-core/development/scripts/squad');
@@ -304,9 +304,9 @@ async function createSquad(options) {
 }
 ```
 
-## Related
+## Relacionado
 
-- **Agent:** @squad-creator (Craft)
+- **Agente:** @squad-creator (Craft)
 - **Script:** squad-generator.js
 - **Validator:** squad-validator.js (SQS-3)
 - **Loader:** squad-loader.js (SQS-2)

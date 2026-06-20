@@ -8,38 +8,38 @@ checklists:
 
 # Create Brownfield Epic Task
 
-## Purpose
+## Propósito
 
-Create a single epic for smaller brownfield enhancements that don't require the full PRD and Architecture documentation process. This task is for isolated features or modifications that can be completed within a focused scope.
+Criar um único epic para enhancements brownfield menores que não exigem o processo completo de documentação de PRD e Arquitetura. Esta task é para features ou modificações isoladas que podem ser concluídas dentro de um escopo focado.
 
-## When to Use This Task
+## Quando Usar Esta Task
 
-**Use this task when:**
+**Use esta task quando:**
 
-- The enhancement can be completed in 1-3 stories
-- No significant architectural changes are required
-- The enhancement follows existing project patterns
-- Integration complexity is minimal
-- Risk to existing system is low
+- O enhancement pode ser concluído em 1-3 stories
+- Nenhuma mudança arquitetural significativa é necessária
+- O enhancement segue padrões existentes do projeto
+- A complexidade de integração é mínima
+- O risco ao sistema existente é baixo
 
-**Use the full brownfield PRD/Architecture process when:**
+**Use o processo completo de PRD/Arquitetura brownfield quando:**
 
-- The enhancement requires multiple coordinated stories
-- Architectural planning is needed
-- Significant integration work is required
-- Risk assessment and mitigation planning is necessary
+- O enhancement requer múltiplas stories coordenadas
+- É necessário planejamento arquitetural
+- É necessário trabalho de integração significativo
+- É necessário avaliação de risco e planejamento de mitigação
 
 
-## Configuration Dependencies
+## Dependências de Configuração
 
-This task requires the following configuration keys from `core-config.yaml`:
+Esta task requer as seguintes chaves de configuração de `core-config.yaml`:
 
-- **`devStoryLocation`**: Location of story files (typically docs/stories)
+- **`devStoryLocation`**: Localização dos arquivos de story (tipicamente docs/stories)
 
-- **`prdShardedLocation`**: Location for sharded PRD documents (typically docs/prd) - Required to access product requirements
-- **`architectureShardedLocation`**: Location for sharded architecture documents (typically docs/architecture) - Required to read/write architecture documentation
+- **`prdShardedLocation`**: Localização dos documentos de PRD fragmentados (tipicamente docs/prd) - Necessário para acessar os requisitos de produto
+- **`architectureShardedLocation`**: Localização dos documentos de arquitetura fragmentados (tipicamente docs/architecture) - Necessário para ler/escrever a documentação de arquitetura
 
-**Loading Config:**
+**Carregando Config:**
 ```javascript
 const yaml = require('js-yaml');
 const fs = require('fs');
@@ -53,14 +53,14 @@ const prdShardedLocation = config.prdShardedLocation || 'docs/prd'; // prdSharde
 const architectureShardedLocation = config.architectureShardedLocation || 'docs/architecture'; // architectureShardedLocation
 ```
 
-## Instructions
+## Instruções
 
-### 0. Code Intelligence: Codebase Overview (Optional — Auto-skip if unavailable)
+### 0. Inteligência de Código: Visão Geral do Codebase (Opcional — Pulado automaticamente se indisponível)
 
-> **Condition:** Only execute if `isCodeIntelAvailable()` returns true.
-> If no code intelligence provider is available, skip this step silently and proceed to Step 1.
+> **Condição:** Execute somente se `isCodeIntelAvailable()` retornar true.
+> Se nenhum provedor de inteligência de código estiver disponível, pule este passo silenciosamente e prossiga para o Passo 1.
 
-When code intelligence is available, enrich the epic with real codebase data:
+Quando a inteligência de código estiver disponível, enriqueça o epic com dados reais do codebase:
 
 ```javascript
 const { isCodeIntelAvailable } = require('.aiox-core/core/code-intel');
@@ -78,73 +78,73 @@ if (isCodeIntelAvailable()) {
 }
 ```
 
-**If data is available, add this section to the epic:**
+**Se os dados estiverem disponíveis, adicione esta seção ao epic:**
 
-#### Codebase Intelligence
+#### Inteligência de Código
 
-| Metric | Value |
+| Métrica | Valor |
 |--------|-------|
-| Project Overview | {{overview.codebase summary}} |
-| File Statistics | {{overview.stats}} |
-| Dependency Depth | {{depGraph.summary.depth}} |
-| Total Dependencies | {{depGraph.summary.totalDeps}} |
+| Visão Geral do Projeto | {{overview.codebase summary}} |
+| Estatísticas de Arquivos | {{overview.stats}} |
+| Profundidade de Dependências | {{depGraph.summary.depth}} |
+| Total de Dependências | {{depGraph.summary.totalDeps}} |
 
-**Dependency Graph Summary:**
+**Resumo do Grafo de Dependências:**
 {{depGraph.dependencies key relationships}}
 
-> **Note:** This section is auto-generated from code intelligence. Values are real codebase data, not estimates.
+> **Nota:** Esta seção é gerada automaticamente a partir da inteligência de código. Os valores são dados reais do codebase, não estimativas.
 
 ---
 
-### 1. Project Analysis (Required)
+### 1. Análise do Projeto (Obrigatório)
 
-Before creating the epic, gather essential information about the existing project:
+Antes de criar o epic, reúna informações essenciais sobre o projeto existente:
 
-**Existing Project Context:**
+**Contexto do Projeto Existente:**
 
-- [ ] Project purpose and current functionality understood
-- [ ] Existing technology stack identified
-- [ ] Current architecture patterns noted
-- [ ] Integration points with existing system identified
+- [ ] Propósito do projeto e funcionalidade atual compreendidos
+- [ ] Stack de tecnologia existente identificada
+- [ ] Padrões de arquitetura atuais anotados
+- [ ] Pontos de integração com o sistema existente identificados
 
-**Enhancement Scope:**
+**Escopo do Enhancement:**
 
-- [ ] Enhancement clearly defined and scoped
-- [ ] Impact on existing functionality assessed
-- [ ] Required integration points identified
-- [ ] Success criteria established
+- [ ] Enhancement claramente definido e escopado
+- [ ] Impacto na funcionalidade existente avaliado
+- [ ] Pontos de integração necessários identificados
+- [ ] Critérios de sucesso estabelecidos
 
-### 2. Epic Creation
+### 2. Criação do Epic
 
-Create a focused epic following this structure:
+Crie um epic focado seguindo esta estrutura:
 
-#### Epic Title
+#### Título do Epic
 
 {{Enhancement Name}} - Brownfield Enhancement
 
-#### Epic Goal
+#### Objetivo do Epic
 
 {{1-2 sentences describing what the epic will accomplish and why it adds value}}
 
-#### Epic Description
+#### Descrição do Epic
 
-**Existing System Context:**
+**Contexto do Sistema Existente:**
 
-- Current relevant functionality: {{brief description}}
-- Technology stack: {{relevant existing technologies}}
-- Integration points: {{where new work connects to existing system}}
+- Funcionalidade relevante atual: {{brief description}}
+- Stack de tecnologia: {{relevant existing technologies}}
+- Pontos de integração: {{where new work connects to existing system}}
 
-**Enhancement Details:**
+**Detalhes do Enhancement:**
 
-- What's being added/changed: {{clear description}}
-- How it integrates: {{integration approach}}
-- Success criteria: {{measurable outcomes}}
+- O que está sendo adicionado/alterado: {{clear description}}
+- Como se integra: {{integration approach}}
+- Critérios de sucesso: {{measurable outcomes}}
 
-#### Stories (Enhanced with Quality Planning)
+#### Stories (Aprimoradas com Planejamento de Qualidade)
 
-**🔧 Dynamic Executor Assignment (Story 11.1 - Projeto Bob)**
+**🔧 Atribuição Dinâmica de Executor (Story 11.1 - Projeto Bob)**
 
-Use the executor-assignment module to automatically assign executor and quality gate for each story:
+Use o módulo executor-assignment para atribuir automaticamente o executor e o quality gate de cada story:
 
 ```javascript
 // .aiox-core/core/orchestration/executor-assignment.js
@@ -162,32 +162,32 @@ const assignment = assignExecutorFromContent(storyContent);
 // }
 ```
 
-**Executor Assignment Table:**
+**Tabela de Atribuição de Executor:**
 
-| Work Type | Keywords | Executor | Quality Gate |
+| Tipo de Trabalho | Palavras-chave | Executor | Quality Gate |
 |-----------|----------|----------|--------------|
-| Code/Features/Logic | feature, logic, handler, service, api | @dev | @architect |
+| Código/Features/Lógica | feature, logic, handler, service, api | @dev | @architect |
 | Schema/DB/RLS/Migrations | schema, table, migration, rls, query, database | @data-engineer | @dev |
 | Infra/CI/CD/Deploy | ci/cd, deploy, docker, kubernetes, pipeline | @devops | @architect |
-| Design/UI Components | component, ui, design, interface, accessibility | @ux-design-expert | @dev |
-| Research/Investigation | research, investigate, analyze, poc | @analyst | @pm |
-| Architecture Decisions | architecture, design_decision, pattern, scalability | @architect | @pm |
+| Design/Componentes de UI | component, ui, design, interface, accessibility | @ux-design-expert | @dev |
+| Pesquisa/Investigação | research, investigate, analyze, poc | @analyst | @pm |
+| Decisões de Arquitetura | architecture, design_decision, pattern, scalability | @architect | @pm |
 
-**CRITICAL RULES:**
-- [ ] **executor != quality_gate** (ALWAYS different)
-- [ ] Include `executor`, `quality_gate`, and `quality_gate_tools` in each story YAML frontmatter
-- [ ] Log assignment for traceability
+**REGRAS CRÍTICAS:**
+- [ ] **executor != quality_gate** (SEMPRE diferentes)
+- [ ] Inclua `executor`, `quality_gate` e `quality_gate_tools` no frontmatter YAML de cada story
+- [ ] Registre a atribuição para rastreabilidade
 
-List 1-3 focused stories that complete the epic, including predicted quality gates and specialized agent assignments:
+Liste 1-3 stories focadas que completam o epic, incluindo os quality gates previstos e as atribuições de agentes especializados:
 
-**Story Structure with Quality Predictions:**
+**Estrutura da Story com Previsões de Qualidade:**
 
-Each story should include:
-- Story title and brief description
-- Predicted specialized agents (based on story type)
-- Quality gates (Pre-Commit, Pre-PR, Pre-Deployment if applicable)
+Cada story deve incluir:
+- Título da story e breve descrição
+- Agentes especializados previstos (com base no tipo da story)
+- Quality gates (Pre-Commit, Pre-PR, Pre-Deployment se aplicável)
 
-**Story YAML Frontmatter Template (Required Fields):**
+**Template de Frontmatter YAML da Story (Campos Obrigatórios):**
 
 ```yaml
 # Every story MUST include these fields in YAML frontmatter
@@ -196,167 +196,167 @@ quality_gate: "@dev"                  # MUST be different from executor
 quality_gate_tools: [schema_validation, migration_review, rls_test]
 ```
 
-**Examples:**
+**Exemplos:**
 
 1. **Story 1: {{Database Migration Story}}**
-   - Description: {{Add new table for feature X with RLS policies}}
-   - **Executor Assignment**: `executor: @data-engineer`, `quality_gate: @dev`
-   - **Quality Gate Tools**: `[schema_validation, migration_review, rls_test]`
+   - Descrição: {{Add new table for feature X with RLS policies}}
+   - **Atribuição de Executor**: `executor: @data-engineer`, `quality_gate: @dev`
+   - **Ferramentas do Quality Gate**: `[schema_validation, migration_review, rls_test]`
    - **Quality Gates**:
-     - Pre-Commit: Schema validation, service filter verification
-     - Pre-PR: SQL review, migration safety check
-   - **Focus**: Service filters (.eq('service', 'ttcx')), RLS policies, foreign keys
+     - Pre-Commit: Validação de schema, verificação de filtro de serviço
+     - Pre-PR: Revisão de SQL, verificação de segurança da migration
+   - **Foco**: Filtros de serviço (.eq('service', 'ttcx')), políticas RLS, foreign keys
 
 2. **Story 2: {{API Integration Story}}**
-   - Description: {{Create REST endpoint for feature X}}
-   - **Predicted Agents**: @dev, @architect (if new patterns)
+   - Descrição: {{Create REST endpoint for feature X}}
+   - **Agentes Previstos**: @dev, @architect (se houver novos padrões)
    - **Quality Gates**:
-     - Pre-Commit: Security scan, error handling validation
-     - Pre-PR: API contract validation, backward compatibility check
-   - **Focus**: Input validation, authentication, error responses
+     - Pre-Commit: Varredura de segurança, validação de tratamento de erros
+     - Pre-PR: Validação de contrato de API, verificação de retrocompatibilidade
+   - **Foco**: Validação de entrada, autenticação, respostas de erro
 
 3. **Story 3: {{Deployment Story}}**
-   - Description: {{Deploy feature X to production with configuration}}
-   - **Predicted Agents**: @dev, @github-devops (deployment coordination)
+   - Descrição: {{Deploy feature X to production with configuration}}
+   - **Agentes Previstos**: @dev, @github-devops (coordenação de deployment)
    - **Quality Gates**:
-     - Pre-Commit: Configuration validation
-     - Pre-PR: Environment consistency check
-     - Pre-Deployment: Full security scan, rollback plan validation
-   - **Focus**: Secrets management, environment config, zero-downtime deployment
+     - Pre-Commit: Validação de configuração
+     - Pre-PR: Verificação de consistência de ambiente
+     - Pre-Deployment: Varredura completa de segurança, validação do plano de rollback
+   - **Foco**: Gerenciamento de secrets, configuração de ambiente, deployment com zero downtime
 
-**Agent Assignment Guide for Epic Planning:**
+**Guia de Atribuição de Agentes para Planejamento de Epic:**
 
-When breaking down epic into stories, predict agents based on:
+Ao decompor o epic em stories, preveja os agentes com base em:
 
-- **Database Changes** → Include @db-sage in story planning
-- **API/Backend Changes** → Include @architect for contract review
-- **Frontend/UI Changes** → Include @ux-expert for accessibility
-- **Deployment/Infrastructure** → Include @github-devops for coordination
-- **Security Features** → Ensure @dev focuses on OWASP validation
+- **Mudanças de Banco de Dados** → Inclua @db-sage no planejamento da story
+- **Mudanças de API/Backend** → Inclua @architect para revisão de contrato
+- **Mudanças de Frontend/UI** → Inclua @ux-expert para acessibilidade
+- **Deployment/Infraestrutura** → Inclua @github-devops para coordenação
+- **Funcionalidades de Segurança** → Garanta que @dev foque na validação OWASP
 
-**Quality Gate Prediction Guidance:**
+**Orientação para Previsão de Quality Gate:**
 
-- **All Stories**: Must include Pre-Commit review (@dev)
-- **Stories Creating PRs**: Include Pre-PR validation (@github-devops)
-- **Production Deployments**: Include Pre-Deployment scan (@github-devops)
-- **HIGH RISK Stories**: Consider feature flags and phased rollout
+- **Todas as Stories**: Devem incluir revisão Pre-Commit (@dev)
+- **Stories que Criam PRs**: Inclua validação Pre-PR (@github-devops)
+- **Deployments de Produção**: Inclua varredura Pre-Deployment (@github-devops)
+- **Stories de ALTO RISCO**: Considere feature flags e rollout em fases
 
-This quality planning during epic creation ensures:
-- Story creators know which agents to consult
-- Quality gates are planned upfront, not retrofitted
-- Risk-appropriate validation is built into each story
-- Specialized expertise is allocated correctly
+Este planejamento de qualidade durante a criação do epic garante:
+- Os criadores de stories sabem quais agentes consultar
+- Os quality gates são planejados antecipadamente, não adaptados depois
+- Validação apropriada ao risco é incorporada em cada story
+- A expertise especializada é alocada corretamente
 
-#### Compatibility Requirements
+#### Requisitos de Compatibilidade
 
-- [ ] Existing APIs remain unchanged
-- [ ] Database schema changes are backward compatible
-- [ ] UI changes follow existing patterns
-- [ ] Performance impact is minimal
+- [ ] APIs existentes permanecem inalteradas
+- [ ] Mudanças de schema do banco de dados são retrocompatíveis
+- [ ] Mudanças de UI seguem padrões existentes
+- [ ] Impacto de performance é mínimo
 
-#### Risk Mitigation
+#### Mitigação de Risco
 
-- **Primary Risk:** {{main risk to existing system}}
-- **Mitigation:** {{how risk will be addressed}}
-- **Rollback Plan:** {{how to undo changes if needed}}
+- **Risco Primário:** {{main risk to existing system}}
+- **Mitigação:** {{how risk will be addressed}}
+- **Plano de Rollback:** {{how to undo changes if needed}}
 
-**Quality Assurance Strategy:**
+**Estratégia de Garantia de Qualidade:**
 
-Proactive quality validation reduces risk to existing systems:
+A validação proativa de qualidade reduz o risco aos sistemas existentes:
 
-- **CodeRabbit Validation**: All stories include pre-commit reviews
-  - Database stories: @db-sage validates schema compliance, service filters, RLS policies
-  - API stories: @architect validates contracts, backward compatibility
-  - Deployment stories: @github-devops validates configuration, rollback readiness
+- **Validação CodeRabbit**: Todas as stories incluem revisões pre-commit
+  - Stories de banco de dados: @db-sage valida conformidade de schema, filtros de serviço, políticas RLS
+  - Stories de API: @architect valida contratos, retrocompatibilidade
+  - Stories de deployment: @github-devops valida configuração, prontidão de rollback
 
-- **Specialized Expertise**: Agent assignment ensures domain experts review relevant changes
-  - Prevents architectural drift
-  - Catches integration issues early
-  - Validates security considerations
-  - Ensures accessibility standards
+- **Expertise Especializada**: A atribuição de agentes garante que especialistas de domínio revisem as mudanças relevantes
+  - Previne deriva arquitetural
+  - Captura problemas de integração cedo
+  - Valida considerações de segurança
+  - Garante padrões de acessibilidade
 
-- **Quality Gates Aligned with Risk**:
-  - LOW RISK: Pre-Commit validation only
-  - MEDIUM RISK: Pre-Commit + Pre-PR validation
-  - HIGH RISK: Pre-Commit + Pre-PR + Pre-Deployment validation
+- **Quality Gates Alinhados ao Risco**:
+  - BAIXO RISCO: Apenas validação Pre-Commit
+  - MÉDIO RISCO: Validação Pre-Commit + Pre-PR
+  - ALTO RISCO: Validação Pre-Commit + Pre-PR + Pre-Deployment
 
-- **Regression Prevention**:
-  - Each story includes tasks to verify existing functionality
-  - Integration tests validate compatibility
-  - Performance testing prevents degradation
-  - Feature flags enable safe rollout if needed
+- **Prevenção de Regressão**:
+  - Cada story inclui tasks para verificar a funcionalidade existente
+  - Testes de integração validam a compatibilidade
+  - Testes de performance previnem degradação
+  - Feature flags permitem rollout seguro se necessário
 
-**Example Quality Risk Mitigation:**
+**Exemplo de Mitigação de Risco de Qualidade:**
 
-For an epic adding payment processing:
-- Risk: Breaking existing checkout flow
-- Quality Mitigation:
-  - @db-sage reviews schema changes for payment tables
-  - @architect validates API contracts with existing payment gateway
-  - Pre-Deployment scan validates no hardcoded secrets
-  - Phased rollout: 5% → 25% → 50% → 100% of users
-  - Monitoring alerts on transaction failures
-  - 1-click rollback procedure documented and tested
+Para um epic que adiciona processamento de pagamentos:
+- Risco: Quebrar o fluxo de checkout existente
+- Mitigação de Qualidade:
+  - @db-sage revisa as mudanças de schema das tabelas de pagamento
+  - @architect valida os contratos de API com o gateway de pagamento existente
+  - A varredura Pre-Deployment valida que não há secrets hardcoded
+  - Rollout em fases: 5% → 25% → 50% → 100% dos usuários
+  - Alertas de monitoramento sobre falhas de transação
+  - Procedimento de rollback de 1 clique documentado e testado
 
 #### Definition of Done
 
-- [ ] All stories completed with acceptance criteria met
-- [ ] Existing functionality verified through testing
-- [ ] Integration points working correctly
-- [ ] Documentation updated appropriately
-- [ ] No regression in existing features
+- [ ] Todas as stories concluídas com os critérios de aceite atendidos
+- [ ] Funcionalidade existente verificada através de testes
+- [ ] Pontos de integração funcionando corretamente
+- [ ] Documentação atualizada apropriadamente
+- [ ] Nenhuma regressão nas features existentes
 
-### 3. Validation Checklist
+### 3. Checklist de Validação
 
-Before finalizing the epic, ensure:
+Antes de finalizar o epic, garanta:
 
-**Scope Validation:**
+**Validação de Escopo:**
 
-- [ ] Epic can be completed in 1-3 stories maximum
-- [ ] No architectural documentation is required
-- [ ] Enhancement follows existing patterns
-- [ ] Integration complexity is manageable
+- [ ] O epic pode ser concluído em no máximo 1-3 stories
+- [ ] Nenhuma documentação arquitetural é necessária
+- [ ] O enhancement segue padrões existentes
+- [ ] A complexidade de integração é gerenciável
 
-**Risk Assessment:**
+**Avaliação de Risco:**
 
-- [ ] Risk to existing system is low
-- [ ] Rollback plan is feasible
-- [ ] Testing approach covers existing functionality
-- [ ] Team has sufficient knowledge of integration points
+- [ ] O risco ao sistema existente é baixo
+- [ ] O plano de rollback é viável
+- [ ] A abordagem de testes cobre a funcionalidade existente
+- [ ] A equipe tem conhecimento suficiente dos pontos de integração
 
-**Completeness Check:**
+**Verificação de Completude:**
 
-- [ ] Epic goal is clear and achievable
-- [ ] Stories are properly scoped
-- [ ] Success criteria are measurable
-- [ ] Dependencies are identified
+- [ ] O objetivo do epic é claro e alcançável
+- [ ] As stories estão devidamente escopadas
+- [ ] Os critérios de sucesso são mensuráveis
+- [ ] As dependências estão identificadas
 
-### 4. Handoff to Story Manager
+### 4. Handoff para o Story Manager
 
-Once the epic is validated, provide this handoff to the Story Manager:
+Uma vez que o epic esteja validado, forneça este handoff ao Story Manager:
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Balanceado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução sem ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
@@ -371,26 +371,26 @@ atomic_layer: Organism
 **Entrada:**
 - campo: task
   tipo: string
-  origem: User Input
+  origem: Entrada do Usuário
   obrigatório: true
-  validação: Must be registered task
+  validação: Deve ser uma task registrada
 
 - campo: parameters
   tipo: object
-  origem: User Input
+  origem: Entrada do Usuário
   obrigatório: false
-  validação: Valid task parameters
+  validação: Parâmetros de task válidos
 
 - campo: mode
   tipo: string
-  origem: User Input
+  origem: Entrada do Usuário
   obrigatório: false
   validação: yolo|interactive|pre-flight
 
 **Saída:**
 - campo: execution_result
   tipo: object
-  destino: Memory
+  destino: Memória
   persistido: false
 
 - campo: logs
@@ -400,117 +400,117 @@ atomic_layer: Organism
 
 - campo: state
   tipo: object
-  destino: State management
+  destino: Gerenciamento de estado
   persistido: true
 ```
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Task is registered; required parameters provided; dependencies met
+  - [ ] Task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas
     tipo: pre-condition
     blocker: true
     validação: |
-      Check task is registered; required parameters provided; dependencies met
-    error_message: "Pre-condition failed: Task is registered; required parameters provided; dependencies met"
+      Verificar que a task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas
+    error_message: "Pré-condição falhou: Task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas"
 ```
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a task ser concluída
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Task completed; exit code 0; expected outputs created
+  - [ ] Task concluída; código de saída 0; saídas esperadas criadas
     tipo: post-condition
     blocker: true
     validação: |
-      Verify task completed; exit code 0; expected outputs created
-    error_message: "Post-condition failed: Task completed; exit code 0; expected outputs created"
+      Verificar que a task concluída; código de saída 0; saídas esperadas criadas
+    error_message: "Pós-condição falhou: Task concluída; código de saída 0; saídas esperadas criadas"
 ```
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de aprovação/reprovação para conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Task completed as expected; side effects documented
+  - [ ] Task concluída conforme esperado; efeitos colaterais documentados
     tipo: acceptance-criterion
     blocker: true
     validação: |
-      Assert task completed as expected; side effects documented
-    error_message: "Acceptance criterion not met: Task completed as expected; side effects documented"
+      Afirmar que a task concluída conforme esperado; efeitos colaterais documentados
+    error_message: "Critério de aceite não atendido: Task concluída conforme esperado; efeitos colaterais documentados"
 ```
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** task-runner
-  - **Purpose:** Task execution and orchestration
-  - **Source:** .aiox-core/core/task-runner.js
+- **Ferramenta:** task-runner
+  - **Propósito:** Execução e orquestração de tasks
+  - **Fonte:** .aiox-core/core/task-runner.js
 
-- **Tool:** logger
-  - **Purpose:** Execution logging and error tracking
-  - **Source:** .aiox-core/utils/logger.js
+- **Ferramenta:** logger
+  - **Propósito:** Logging de execução e rastreamento de erros
+  - **Fonte:** .aiox-core/utils/logger.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** execute-task.js
-  - **Purpose:** Generic task execution wrapper
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/execute-task.js
+  - **Propósito:** Wrapper genérico de execução de task
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/execute-task.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Task Not Found
-   - **Cause:** Specified task not registered in system
-   - **Resolution:** Verify task name and registration
-   - **Recovery:** List available tasks, suggest similar
+1. **Erro:** Task Não Encontrada
+   - **Causa:** Task especificada não registrada no sistema
+   - **Resolução:** Verificar o nome e o registro da task
+   - **Recuperação:** Listar tasks disponíveis, sugerir similares
 
-2. **Error:** Invalid Parameters
-   - **Cause:** Task parameters do not match expected schema
-   - **Resolution:** Validate parameters against task definition
-   - **Recovery:** Provide parameter template, reject execution
+2. **Erro:** Parâmetros Inválidos
+   - **Causa:** Parâmetros da task não correspondem ao schema esperado
+   - **Resolução:** Validar parâmetros contra a definição da task
+   - **Recuperação:** Fornecer template de parâmetros, rejeitar a execução
 
-3. **Error:** Execution Timeout
-   - **Cause:** Task exceeds maximum execution time
-   - **Resolution:** Optimize task or increase timeout
-   - **Recovery:** Kill task, cleanup resources, log state
+3. **Erro:** Timeout de Execução
+   - **Causa:** Task excede o tempo máximo de execução
+   - **Resolução:** Otimizar a task ou aumentar o timeout
+   - **Recuperação:** Encerrar a task, limpar recursos, registrar o estado
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-15 min (estimated)
@@ -518,12 +518,12 @@ cost_estimated: $0.003-0.010
 token_usage: ~3,000-10,000 tokens
 ```
 
-**Optimization Notes:**
-- Break into smaller workflows; implement checkpointing; use async processing where possible
+**Notas de Otimização:**
+- Quebrar em workflows menores; implementar checkpointing; usar processamento assíncrono quando possível
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -539,35 +539,35 @@ updated_at: 2025-11-17
 ---
 
 
-**Story Manager Handoff:**
+**Handoff para o Story Manager:**
 
-"Please develop detailed user stories for this brownfield epic. Key considerations:
+"Por favor, desenvolva user stories detalhadas para este epic brownfield. Considerações-chave:
 
-- This is an enhancement to an existing system running {{technology stack}}
-- Integration points: {{list key integration points}}
-- Existing patterns to follow: {{relevant existing patterns}}
-- Critical compatibility requirements: {{key requirements}}
-- Each story must include verification that existing functionality remains intact
+- Este é um enhancement a um sistema existente rodando {{technology stack}}
+- Pontos de integração: {{list key integration points}}
+- Padrões existentes a seguir: {{relevant existing patterns}}
+- Requisitos críticos de compatibilidade: {{key requirements}}
+- Cada story deve incluir a verificação de que a funcionalidade existente permanece intacta
 
-The epic should maintain system integrity while delivering {{epic goal}}."
+O epic deve manter a integridade do sistema enquanto entrega {{epic goal}}."
 
 ---
 
-## Success Criteria
+## Critérios de Sucesso
 
-The epic creation is successful when:
+A criação do epic é bem-sucedida quando:
 
-1. Enhancement scope is clearly defined and appropriately sized
-2. Integration approach respects existing system architecture
-3. Risk to existing functionality is minimized
-4. Stories are logically sequenced for safe implementation
-5. Compatibility requirements are clearly specified
-6. Rollback plan is feasible and documented
+1. O escopo do enhancement está claramente definido e dimensionado adequadamente
+2. A abordagem de integração respeita a arquitetura do sistema existente
+3. O risco à funcionalidade existente é minimizado
+4. As stories estão logicamente sequenciadas para uma implementação segura
+5. Os requisitos de compatibilidade estão claramente especificados
+6. O plano de rollback é viável e documentado
 
-## Important Notes
+## Notas Importantes
 
-- This task is specifically for SMALL brownfield enhancements
-- If the scope grows beyond 3 stories, consider the full brownfield PRD process
-- Always prioritize existing system integrity over new functionality
-- When in doubt about scope or complexity, escalate to full brownfield planning
+- Esta task é especificamente para enhancements brownfield PEQUENOS
+- Se o escopo crescer além de 3 stories, considere o processo completo de PRD brownfield
+- Sempre priorize a integridade do sistema existente sobre novas funcionalidades
+- Em caso de dúvida sobre escopo ou complexidade, escale para o planejamento brownfield completo
  

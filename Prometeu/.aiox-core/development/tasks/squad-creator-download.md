@@ -26,29 +26,29 @@ Checklist:
 
 # *download-squad
 
-Downloads public squads from the aiox-squads GitHub repository to use in your project.
+Baixa squads públicos do repositório GitHub aiox-squads para usar no seu projeto.
 
-## Usage
+## Uso
 
 ```bash
 @squad-creator
 
-# List available squads
+# Listar squads disponíveis
 *download-squad --list
 
-# Download a squad
+# Baixar um squad
 *download-squad etl-squad
 
-# Download specific version
+# Baixar versão específica
 *download-squad etl-squad@2.0.0
 
-# Overwrite existing
+# Sobrescrever existente
 *download-squad etl-squad --overwrite
 ```
 
-## Examples
+## Exemplos
 
-### List Available Squads
+### Listar Squads Disponíveis
 
 ```
 *download-squad --list
@@ -65,7 +65,7 @@ Community:
   └── ml-squad@0.3.0 - Machine learning pipelines
 ```
 
-### Download Squad
+### Baixar Squad
 
 ```
 *download-squad etl-squad
@@ -82,41 +82,41 @@ Squad installed! Next steps:
   2. Activate: @squad-creator *activate etl-squad
 ```
 
-## Options
+## Opções
 
-| Option | Description |
+| Opção | Descrição |
 |--------|-------------|
-| `--list` | List all available squads from registry |
-| `--version` | Download specific version (e.g., @2.0.0) |
-| `--overwrite` | Overwrite if squad already exists locally |
-| `--verbose` | Show detailed download progress |
+| `--list` | Lista todos os squads disponíveis no registry |
+| `--version` | Baixa versão específica (ex.: @2.0.0) |
+| `--overwrite` | Sobrescreve se o squad já existir localmente |
+| `--verbose` | Mostra o progresso detalhado do download |
 
-## How It Works
+## Como Funciona
 
 ```
-1. Fetch registry.json from aiox-squads
-   ├── Contains official and community squads
-   └── Includes version and metadata
+1. Buscar registry.json em aiox-squads
+   ├── Contém squads oficiais e da comunidade
+   └── Inclui versão e metadados
 
-2. Find requested squad
-   ├── Search official squads first
-   └── Then community squads
+2. Encontrar o squad solicitado
+   ├── Buscar primeiro nos squads oficiais
+   └── Depois nos da comunidade
 
-3. Download via GitHub API
-   ├── Get directory listing
-   └── Download each file recursively
+3. Baixar via GitHub API
+   ├── Obter a listagem do diretório
+   └── Baixar cada arquivo recursivamente
 
-4. Validate downloaded squad
-   ├── Run SquadValidator
-   └── Report warnings/errors
+4. Validar o squad baixado
+   ├── Rodar SquadValidator
+   └── Reportar warnings/errors
 
-5. Load manifest
-   └── Confirm installation
+5. Carregar o manifest
+   └── Confirmar a instalação
 ```
 
-## Registry Structure
+## Estrutura do Registry
 
-The registry.json in aiox-squads contains:
+O registry.json em aiox-squads contém:
 
 ```json
 {
@@ -142,26 +142,26 @@ The registry.json in aiox-squads contains:
 }
 ```
 
-## Error Handling
+## Tratamento de Erros
 
-| Error | Cause | Solution |
+| Erro | Causa | Solução |
 |-------|-------|----------|
-| `SQUAD_NOT_FOUND` | Squad not in registry | Check available squads with --list |
-| `SQUAD_EXISTS` | Already downloaded | Use --overwrite flag |
-| `REGISTRY_FETCH_ERROR` | Network issue | Check connection |
-| `RATE_LIMIT` | GitHub API limit | Set GITHUB_TOKEN env var |
+| `SQUAD_NOT_FOUND` | Squad ausente no registry | Verifique os squads disponíveis com --list |
+| `SQUAD_EXISTS` | Já foi baixado | Use a flag --overwrite |
+| `REGISTRY_FETCH_ERROR` | Problema de rede | Verifique a conexão |
+| `RATE_LIMIT` | Limite da GitHub API | Defina a variável de ambiente GITHUB_TOKEN |
 
-## Implementation
+## Implementação
 
-Uses `SquadDownloader` class from:
+Usa a classe `SquadDownloader` de:
 - `.aiox-core/development/scripts/squad/squad-downloader.js`
 
-## Related Tasks
+## Tasks Relacionadas
 
-- `*validate-squad` - Validate downloaded squad
-- `*publish-squad` - Publish your squad to registry
-- `*create-squad` - Create new local squad
+- `*validate-squad` - Validar squad baixado
+- `*publish-squad` - Publicar seu squad no registry
+- `*create-squad` - Criar novo squad local
 
-## Related Story
+## Story Relacionada
 
 - **SQS-6:** Download & Publish Tasks (Sprint 8)

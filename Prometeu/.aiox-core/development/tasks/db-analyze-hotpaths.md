@@ -493,41 +493,41 @@ GROUP BY user_id;
 
 ---
 
-## BUFFERS Output Interpretation
+## Interpretação da Saída de BUFFERS
 
-**Good (Cached):**
+**Bom (Em Cache):**
 ```
 Buffers: shared hit=100
 ```
-= 100 blocks found in cache (no disk I/O)
+= 100 blocos encontrados no cache (sem I/O de disco)
 
-**Bad (Disk Reads):**
+**Ruim (Leituras de Disco):**
 ```
 Buffers: shared hit=10 read=990
 ```
-= Only 10 blocks cached, 990 read from disk
+= Apenas 10 blocos em cache, 990 lidos do disco
 
-**Very Bad (Temp Files):**
+**Muito Ruim (Arquivos Temporários):**
 ```
 Buffers: temp read=5000 written=5000
 ```
-= Query spilled to disk (work_mem too small)
+= A query usou disco (work_mem muito pequeno)
 
-**Target:** Maximize "shared hit", minimize "shared read", zero "temp"
+**Alvo:** Maximizar "shared hit", minimizar "shared read", zerar "temp"
 
 ---
 
-## Supabase-Specific Notes
+## Notas Específicas do Supabase
 
-### Using with Supabase Client (PostgREST)
+### Usando com o Supabase Client (PostgREST)
 
-Enable explain in SQL editor first (dev only):
+Habilite o explain primeiro no editor SQL (apenas dev):
 ```sql
 -- Run once in Dashboard SQL Editor
 ALTER DATABASE postgres SET app.settings.explain TO 'on';
 ```
 
-Then use in code:
+Depois use no código:
 ```javascript
 const { data, error } = await supabase
   .from('posts')
@@ -536,37 +536,37 @@ const { data, error } = await supabase
   .explain({ analyze: true, buffers: true })
 ```
 
-### Supabase Studio Integration
+### Integração com o Supabase Studio
 
-- Navigate to: **Query Performance Report**
-- Select slow query
-- Click **"indexes" tab** for index_advisor recommendations
-- One-click to create migration
-
----
-
-## Prerequisites
-
-- pg_stat_statements extension enabled (default in Supabase)
-- Sufficient database activity to populate statistics
-- For index_advisor: index_advisor extension (Supabase Pro+)
+- Navegue até: **Query Performance Report**
+- Selecione a query lenta
+- Clique na **aba "indexes"** para as recomendações do index_advisor
+- Um clique para criar a migration
 
 ---
 
-## Best Practices
+## Pré-requisitos
 
-1. **Always use BUFFERS**: `EXPLAIN (ANALYZE, BUFFERS)`
-2. **Look for patterns**: One slow query often indicates a systemic issue
-3. **Update statistics**: Run `ANALYZE` after significant data changes
-4. **Test indexes**: Create indexes CONCURRENTLY in production
-5. **Re-measure**: After optimizations, re-run this analysis
-6. **RLS Performance**: Wrap auth functions in SELECT for 19x speedup
+- Extensão pg_stat_statements habilitada (padrão no Supabase)
+- Atividade de banco de dados suficiente para popular as estatísticas
+- Para o index_advisor: extensão index_advisor (Supabase Pro+)
 
 ---
 
-## References
+## Boas Práticas
+
+1. **Sempre use BUFFERS**: `EXPLAIN (ANALYZE, BUFFERS)`
+2. **Procure por padrões**: Uma query lenta frequentemente indica um problema sistêmico
+3. **Atualize as estatísticas**: Rode `ANALYZE` após mudanças significativas de dados
+4. **Teste os índices**: Crie índices CONCURRENTLY em produção
+5. **Re-meça**: Após as otimizações, reexecute esta análise
+6. **Performance de RLS**: Envolva funções de auth em SELECT para um ganho de 19x
+
+---
+
+## Referências
 
 - [PostgreSQL EXPLAIN Documentation](https://www.postgresql.org/docs/current/sql-explain.html)
 - [Supabase Query Optimization](https://supabase.com/docs/guides/database/query-optimization)
 - [Supabase RLS Performance](https://supabase.com/docs/guides/troubleshooting/rls-performance-and-best-practices-Z5Jjwv)
-- [index_advisor Extension](https://supabase.com/docs/guides/database/e
+- [index_advisor Extension](https://supabase.com/docs/guides/database/extensions/index_advisor)

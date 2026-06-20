@@ -1,45 +1,45 @@
 # improve-self
 
 **Task ID:** `improve-self`  
-**Version:** 2.0.0  
+**Versão:** 2.0.0  
 **Status:** Active
 
 ---
 
-## Purpose
+## Propósito
 
-Enable the meta-agent to improve its own capabilities with comprehensive safeguards. This task allows self-modification with mandatory safety checks, backups, and user approval.
-
----
-
-## Execution Modes
-
-**Choose your execution mode:**
-
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
-
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
-
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
-
-**Parameter:** `mode` (optional, default: `interactive`)
-
-**Valid values:** `yolo`, `interactive`, `preflight`
-
-**Note:** For self-improvement tasks, interactive mode is strongly recommended to ensure user awareness and approval of changes.
+Permitir que o meta-agente melhore suas próprias capacidades com salvaguardas abrangentes. Esta task permite a automodificação com verificações de segurança obrigatórias, backups e aprovação do usuário.
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Modos de Execução
+
+**Escolha o modo de execução:**
+
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
+
+### 2. Modo Interativo - Balanceado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
+
+### 3. Planejamento Pre-Flight - Planejamento Completo Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
+
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
+
+**Valores válidos:** `yolo`, `interactive`, `preflight`
+
+**Nota:** Para tasks de auto-melhoria, o modo interativo é fortemente recomendado para garantir a consciência e a aprovação do usuário sobre as mudanças.
+
+---
+
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: improveSelf()
@@ -85,212 +85,212 @@ atomic_layer: Molecule
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Task is registered; required parameters provided; dependencies met
+  - [ ] A task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas
     tipo: pre-condition
     blocker: true
     validação: |
-      Check task is registered; required parameters provided; dependencies met
-    error_message: "Pre-condition failed: Task is registered; required parameters provided; dependencies met"
+      Verificar se a task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas
+    error_message: "Pré-condição falhou: A task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas"
 ```
 
 ---
 
-## Step-by-Step Execution
+## Execução Passo a Passo
 
-### Step 1: Request Validation
+### Passo 1: Validação da Solicitação
 
-**Purpose:** Validate improvement request against safety rules
+**Propósito:** Validar a solicitação de melhoria contra as regras de segurança
 
-**Actions:**
-1. Parse improvement request
-2. Check against safety rules
-3. Verify scope limitations
-4. Detect recursive improvements
+**Ações:**
+1. Parsear a solicitação de melhoria
+2. Verificar contra as regras de segurança
+3. Verificar limitações de escopo
+4. Detectar melhorias recursivas
 
-**Validation:**
-- Request is valid
-- No safety violations
-- Scope within limits
-- No recursive improvements detected
-
----
-
-### Step 2: Capability Analysis
-
-**Purpose:** Analyze current implementation and identify improvement opportunities
-
-**Actions:**
-1. Analyze current implementation
-2. Identify improvement opportunities
-3. Assess feasibility and risks
-4. Generate capability report
-
-**Validation:**
-- Analysis completed
-- Opportunities identified
-- Risks assessed
-- Report generated
+**Validação:**
+- A solicitação é válida
+- Nenhuma violação de segurança
+- Escopo dentro dos limites
+- Nenhuma melhoria recursiva detectada
 
 ---
 
-### Step 3: Improvement Planning
+### Passo 2: Análise de Capacidades
 
-**Purpose:** Generate specific improvement plan with implementation details
+**Propósito:** Analisar a implementação atual e identificar oportunidades de melhoria
 
-**Actions:**
-1. Generate specific changes
-2. Create implementation plan
-3. Identify affected components
-4. Estimate impact and benefits
+**Ações:**
+1. Analisar a implementação atual
+2. Identificar oportunidades de melhoria
+3. Avaliar viabilidade e riscos
+4. Gerar relatório de capacidades
 
-**Validation:**
-- Plan generated
-- Changes specified
-- Components identified
-- Impact estimated
-
----
-
-### Step 4: Safety Validation
-
-**Purpose:** Validate improvement plan against safety constraints
-
-**Actions:**
-1. Check for breaking changes
-2. Verify interface preservation
-3. Validate security implications
-4. Ensure rollback capability
-
-**Validation:**
-- No breaking changes
-- Interfaces preserved
-- Security validated
-- Rollback available
+**Validação:**
+- Análise concluída
+- Oportunidades identificadas
+- Riscos avaliados
+- Relatório gerado
 
 ---
 
-### Step 5: Backup Creation
+### Passo 3: Planejamento da Melhoria
 
-**Purpose:** Create full backup before applying changes
+**Propósito:** Gerar um plano de melhoria específico com detalhes de implementação
 
-**Actions:**
-1. Full backup of affected files
-2. State snapshot for recovery
-3. Version control checkpoint
-4. Recovery plan documentation
+**Ações:**
+1. Gerar mudanças específicas
+2. Criar plano de implementação
+3. Identificar componentes afetados
+4. Estimar impacto e benefícios
 
-**Validation:**
-- Backup created
-- State saved
-- Checkpoint created
-- Recovery plan documented
-
----
-
-### Step 6: Sandbox Testing
-
-**Purpose:** Test improvements in isolated environment
-
-**Actions:**
-1. Create isolated test environment
-2. Apply changes in sandbox
-3. Run comprehensive test suite
-4. Validate functionality
-
-**Validation:**
-- Sandbox created
-- Changes applied
-- Tests passed
-- Functionality validated
+**Validação:**
+- Plano gerado
+- Mudanças especificadas
+- Componentes identificados
+- Impacto estimado
 
 ---
 
-### Step 7: User Approval
+### Passo 4: Validação de Segurança
 
-**Purpose:** Request explicit user approval before applying changes
+**Propósito:** Validar o plano de melhoria contra as restrições de segurança
 
-**Actions:**
-1. Present improvement plan
-2. Show test results
-3. Display risk assessment
-4. Request explicit approval
+**Ações:**
+1. Verificar breaking changes
+2. Verificar a preservação de interfaces
+3. Validar implicações de segurança
+4. Garantir capacidade de rollback
 
-**Validation:**
-- Plan presented
-- Results shown
-- Risks disclosed
-- Approval obtained
-
----
-
-### Step 8: Change Application
-
-**Purpose:** Apply approved improvements to production
-
-**Actions:**
-1. Apply approved changes
-2. Monitor for issues
-3. Validate in production
-4. Track performance metrics
-
-**Validation:**
-- Changes applied
-- No issues detected
-- Production validated
-- Metrics tracked
+**Validação:**
+- Nenhuma breaking change
+- Interfaces preservadas
+- Segurança validada
+- Rollback disponível
 
 ---
 
-## Post-Conditions
+### Passo 5: Criação de Backup
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Criar um backup completo antes de aplicar as mudanças
+
+**Ações:**
+1. Backup completo dos arquivos afetados
+2. Snapshot de estado para recuperação
+3. Checkpoint de controle de versão
+4. Documentação do plano de recuperação
+
+**Validação:**
+- Backup criado
+- Estado salvo
+- Checkpoint criado
+- Plano de recuperação documentado
+
+---
+
+### Passo 6: Teste em Sandbox
+
+**Propósito:** Testar as melhorias em ambiente isolado
+
+**Ações:**
+1. Criar ambiente de teste isolado
+2. Aplicar mudanças no sandbox
+3. Executar suíte de testes abrangente
+4. Validar funcionalidade
+
+**Validação:**
+- Sandbox criado
+- Mudanças aplicadas
+- Testes aprovados
+- Funcionalidade validada
+
+---
+
+### Passo 7: Aprovação do Usuário
+
+**Propósito:** Solicitar aprovação explícita do usuário antes de aplicar as mudanças
+
+**Ações:**
+1. Apresentar o plano de melhoria
+2. Mostrar os resultados dos testes
+3. Exibir a avaliação de risco
+4. Solicitar aprovação explícita
+
+**Validação:**
+- Plano apresentado
+- Resultados mostrados
+- Riscos divulgados
+- Aprovação obtida
+
+---
+
+### Passo 8: Aplicação das Mudanças
+
+**Propósito:** Aplicar as melhorias aprovadas à produção
+
+**Ações:**
+1. Aplicar as mudanças aprovadas
+2. Monitorar por problemas
+3. Validar em produção
+4. Rastrear métricas de performance
+
+**Validação:**
+- Mudanças aplicadas
+- Nenhum problema detectado
+- Produção validada
+- Métricas rastreadas
+
+---
+
+## Pós-Condições
+
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Task completed; exit code 0; expected outputs created
+  - [ ] Task concluída; código de saída 0; saídas esperadas criadas
     tipo: post-condition
     blocker: true
     validação: |
-      Verify task completed; exit code 0; expected outputs created
+      Verificar se a task foi concluída; código de saída 0; saídas esperadas criadas
     rollback: true
-    error_message: "Post-condition failed: Task completed; exit code 0; expected outputs created"
+    error_message: "Pós-condição falhou: Task concluída; código de saída 0; saídas esperadas criadas"
 ```
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Validate story requirements AFTER workflow (non-blocking, can be manual)
+**Propósito:** Validar os requisitos da story APÓS o workflow (não-bloqueante, pode ser manual)
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Task completed as expected; side effects documented
+  - [ ] Task concluída conforme esperado; efeitos colaterais documentados
     tipo: acceptance-criterion
     blocker: false
     story: N/A
     manual_check: true
     validação: |
-      Assert task completed as expected; side effects documented
-    error_message: "Acceptance criterion not met: Task completed as expected; side effects documented"
+      Asseverar que a task foi concluída conforme esperado; efeitos colaterais documentados
+    error_message: "Critério de aceite não atendido: Task concluída conforme esperado; efeitos colaterais documentados"
 ```
 
 ---
 
-## Tools (External/Shared)
+## Ferramentas (Externas/Compartilhadas)
 
-**Purpose:** Catalog reusable tools used by multiple agents
+**Propósito:** Catalogar ferramentas reutilizáveis usadas por múltiplos agentes
 
 ```yaml
 **Tools:**
@@ -315,9 +315,9 @@ acceptance-criteria:
 
 ---
 
-## Scripts (Agent-Specific)
+## Scripts (Específicos do Agente)
 
-**Purpose:** Agent-specific code for this task
+**Propósito:** Código específico do agente para esta task
 
 ```yaml
 **Scripts:**
@@ -344,37 +344,37 @@ acceptance-criteria:
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** abort
+**Estratégia:** abort
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Safety Validation Failed
-   - **Cause:** Improvement plan violates safety rules
-   - **Resolution:** Review safety constraints, modify plan
-   - **Recovery:** Reject improvement, log reason, suggest alternatives
+1. **Erro:** Validação de Segurança Falhou
+   - **Causa:** O plano de melhoria viola as regras de segurança
+   - **Resolução:** Revisar as restrições de segurança, modificar o plano
+   - **Recuperação:** Rejeitar a melhoria, registrar o motivo, sugerir alternativas
 
-2. **Error:** Sandbox Testing Failed
-   - **Cause:** Tests fail in sandbox environment
-   - **Resolution:** Fix issues in improvement plan
-   - **Recovery:** Rollback sandbox, restore backup, reject improvement
+2. **Erro:** Teste em Sandbox Falhou
+   - **Causa:** Os testes falham no ambiente de sandbox
+   - **Resolução:** Corrigir os problemas no plano de melhoria
+   - **Recuperação:** Reverter o sandbox, restaurar o backup, rejeitar a melhoria
 
-3. **Error:** User Rejected Improvement
-   - **Cause:** User did not approve improvement plan
-   - **Resolution:** Accept user decision, log feedback
-   - **Recovery:** Cleanup temporary files, exit gracefully
+3. **Erro:** Usuário Rejeitou a Melhoria
+   - **Causa:** O usuário não aprovou o plano de melhoria
+   - **Resolução:** Aceitar a decisão do usuário, registrar o feedback
+   - **Recuperação:** Limpar arquivos temporários, sair graciosamente
 
-4. **Error:** Emergency Rollback Required
-   - **Cause:** Critical failure during change application
-   - **Resolution:** Immediately restore backup
-   - **Recovery:** Restore all files from backup, log incident, alert user
+4. **Erro:** Rollback de Emergência Necessário
+   - **Causa:** Falha crítica durante a aplicação das mudanças
+   - **Resolução:** Restaurar imediatamente o backup
+   - **Recuperação:** Restaurar todos os arquivos a partir do backup, registrar o incidente, alertar o usuário
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-15 min (estimated)
@@ -382,14 +382,14 @@ cost_estimated: $0.002-0.008
 token_usage: ~2,000-5,000 tokens
 ```
 
-**Optimization Notes:**
-- Cache capability analysis results
-- Parallelize sandbox tests where possible
-- Implement early exits on safety violations
+**Notas de Otimização:**
+- Fazer cache dos resultados da análise de capacidades
+- Paralelizar os testes de sandbox onde for possível
+- Implementar saídas antecipadas em violações de segurança
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: STORY-6.1.7.2
@@ -406,7 +406,7 @@ tags:
 updated_at: 2025-01-17
 ```
 
-## Task Flow
+## Fluxo da Task
 
 ```mermaid
 graph TD
@@ -435,91 +435,91 @@ graph TD
     P --> Q[Generate Report]
 ```
 
-## Required Input
+## Entrada Obrigatória
 
 ```yaml
-request: "Description of desired self-improvement"
-scope: "specific|general"  # specific = targeted improvement, general = broad optimization
-target_areas:  # Optional list of areas to improve
+request: "Descrição da auto-melhoria desejada"
+scope: "specific|general"  # specific = melhoria direcionada, general = otimização ampla
+target_areas:  # Lista opcional de áreas a melhorar
   - performance
   - error_handling
   - capabilities
   - code_quality
-constraints:  # Optional safety constraints
+constraints:  # Restrições de segurança opcionais
   max_files: 10
   require_tests: true
   preserve_interfaces: true
 ```
 
-## Execution Steps
+## Passos de Execução
 
-1. **Request Validation**
-   - Parse improvement request
-   - Check against safety rules
-   - Verify scope limitations
-   - Detect recursive improvements
+1. **Validação da Solicitação**
+   - Parsear a solicitação de melhoria
+   - Verificar contra as regras de segurança
+   - Verificar limitações de escopo
+   - Detectar melhorias recursivas
 
-2. **Capability Analysis**
-   - Analyze current implementation
-   - Identify improvement opportunities
-   - Assess feasibility and risks
-   - Generate capability report
+2. **Análise de Capacidades**
+   - Analisar a implementação atual
+   - Identificar oportunidades de melhoria
+   - Avaliar viabilidade e riscos
+   - Gerar relatório de capacidades
 
-3. **Improvement Planning**
-   - Generate specific changes
-   - Create implementation plan
-   - Identify affected components
-   - Estimate impact and benefits
+3. **Planejamento da Melhoria**
+   - Gerar mudanças específicas
+   - Criar plano de implementação
+   - Identificar componentes afetados
+   - Estimar impacto e benefícios
 
-4. **Safety Validation**
-   - Check for breaking changes
-   - Verify interface preservation
-   - Validate security implications
-   - Ensure rollback capability
+4. **Validação de Segurança**
+   - Verificar breaking changes
+   - Verificar a preservação de interfaces
+   - Validar implicações de segurança
+   - Garantir capacidade de rollback
 
-5. **Backup Creation**
-   - Full backup of affected files
-   - State snapshot for recovery
-   - Version control checkpoint
-   - Recovery plan documentation
+5. **Criação de Backup**
+   - Backup completo dos arquivos afetados
+   - Snapshot de estado para recuperação
+   - Checkpoint de controle de versão
+   - Documentação do plano de recuperação
 
-6. **Sandbox Testing**
-   - Create isolated test environment
-   - Apply changes in sandbox
-   - Run comprehensive test suite
-   - Validate functionality
+6. **Teste em Sandbox**
+   - Criar ambiente de teste isolado
+   - Aplicar mudanças no sandbox
+   - Executar suíte de testes abrangente
+   - Validar funcionalidade
 
-7. **User Approval**
-   - Present improvement plan
-   - Show test results
-   - Display risk assessment
-   - Request explicit approval
+7. **Aprovação do Usuário**
+   - Apresentar o plano de melhoria
+   - Mostrar os resultados dos testes
+   - Exibir a avaliação de risco
+   - Solicitar aprovação explícita
 
-8. **Change Application**
-   - Apply approved changes
-   - Monitor for issues
-   - Validate in production
-   - Track performance metrics
+8. **Aplicação das Mudanças**
+   - Aplicar as mudanças aprovadas
+   - Monitorar por problemas
+   - Validar em produção
+   - Rastrear métricas de performance
 
-9. **Post-Implementation**
-   - Update documentation
-   - Record in modification history
-   - Generate metrics report
-   - Schedule follow-up review
+9. **Pós-Implementação**
+   - Atualizar a documentação
+   - Registrar no histórico de modificações
+   - Gerar relatório de métricas
+   - Agendar revisão de acompanhamento
 
-## Output Format
+## Formato de Saída
 
 ```yaml
 improvement_id: "self-imp-{timestamp}-{hash}"
 status: "completed|failed|rolled_back"
 analysis:
   current_capabilities:
-    - capability: "error handling"
+    - capability: "tratamento de erros"
       score: 7.5
-      issues: ["no retry logic", "basic error messages"]
+      issues: ["sem lógica de retry", "mensagens de erro básicas"]
   proposed_improvements:
-    - area: "error handling"
-      changes: ["add retry mechanism", "enhance error context"]
+    - area: "tratamento de erros"
+      changes: ["adicionar mecanismo de retry", "enriquecer o contexto de erro"]
       impact: "medium"
       risk: "low"
 modifications:
@@ -545,40 +545,40 @@ rollback_info:
   restore_command: "node restore.js backup-123"
 ```
 
-## Safety Rules
+## Regras de Segurança
 
-### Mandatory Safeguards
-1. **No Core System Modifications**
-   - Cannot modify bootstrap files
-   - Cannot change security validators
-   - Cannot alter rollback mechanisms
-   - Cannot modify safety checks
+### Salvaguardas Obrigatórias
+1. **Sem Modificações no Sistema Central**
+   - Não pode modificar arquivos de bootstrap
+   - Não pode alterar validadores de segurança
+   - Não pode alterar mecanismos de rollback
+   - Não pode modificar verificações de segurança
 
-2. **Recursive Protection**
-   - Detect circular improvements
-   - Limit improvement depth to 1
-   - Track improvement history
-   - Prevent infinite loops
+2. **Proteção Recursiva**
+   - Detectar melhorias circulares
+   - Limitar a profundidade de melhoria a 1
+   - Rastrear o histórico de melhorias
+   - Prevenir loops infinitos
 
-3. **Interface Preservation**
-   - All public APIs must remain compatible
-   - Task interfaces cannot change
-   - Command signatures preserved
-   - Configuration formats maintained
+3. **Preservação de Interfaces**
+   - Todas as APIs públicas devem permanecer compatíveis
+   - As interfaces de task não podem mudar
+   - As assinaturas de comando preservadas
+   - Os formatos de configuração mantidos
 
-4. **Test Requirements**
-   - All changes must have tests
-   - Existing tests must pass
-   - Coverage cannot decrease
-   - Performance benchmarks met
+4. **Requisitos de Teste**
+   - Todas as mudanças devem ter testes
+   - Os testes existentes devem passar
+   - A cobertura não pode diminuir
+   - Benchmarks de performance atingidos
 
-5. **Approval Gates**
-   - User approval required
-   - Change summary mandatory
-   - Risk assessment shown
-   - Rollback plan available
+5. **Gates de Aprovação**
+   - Aprovação do usuário obrigatória
+   - Resumo das mudanças obrigatório
+   - Avaliação de risco exibida
+   - Plano de rollback disponível
 
-### Safe Mode Fallback
+### Fallback de Modo Seguro
 ```javascript
 // Always maintain safe mode entry point
 if (process.env.AIOX_SAFE_MODE === 'true') {
@@ -587,7 +587,7 @@ if (process.env.AIOX_SAFE_MODE === 'true') {
 }
 ```
 
-## Implementation
+## Implementação
 
 ```javascript
 const CapabilityAnalyzer = require('../scripts/capability-analyzer');
@@ -770,7 +770,7 @@ module.exports = {
 };
 ```
 
-## Dependencies
+## Dependências
 - capability-analyzer.js
 - improvement-validator.js
 - sandbox-tester.js
@@ -778,46 +778,46 @@ module.exports = {
 - modification-history.js
 - git-wrapper.js
 
-## Test Requirements
-- Sandbox environment setup
-- Mock improvement scenarios
-- Safety validation tests
-- Rollback verification
-- Metrics accuracy tests
+## Requisitos de Teste
+- Configuração do ambiente de sandbox
+- Cenários de melhoria mockados
+- Testes de validação de segurança
+- Verificação de rollback
+- Testes de acurácia de métricas
 
-## Security Considerations
-- All improvements require explicit approval
-- Sandbox testing mandatory
-- Full backup before changes
-- Emergency rollback available
-- Audit trail maintained
-- Safe mode bypass available
+## Considerações de Segurança
+- Todas as melhorias exigem aprovação explícita
+- Teste em sandbox obrigatório
+- Backup completo antes das mudanças
+- Rollback de emergência disponível
+- Trilha de auditoria mantida
+- Bypass de modo seguro disponível
 
-## Common Improvements
-1. **Error Handling Enhancement**
-   - Add retry logic
-   - Improve error messages
-   - Add context tracking
+## Melhorias Comuns
+1. **Enriquecimento do Tratamento de Erros**
+   - Adicionar lógica de retry
+   - Melhorar as mensagens de erro
+   - Adicionar rastreamento de contexto
 
-2. **Performance Optimization**
-   - Optimize algorithms
-   - Add caching layers
-   - Reduce I/O operations
+2. **Otimização de Performance**
+   - Otimizar algoritmos
+   - Adicionar camadas de cache
+   - Reduzir operações de I/O
 
-3. **Capability Extension**
-   - Add new utility functions
-   - Enhance existing features
-   - Improve integrations
+3. **Extensão de Capacidades**
+   - Adicionar novas funções utilitárias
+   - Enriquecer funcionalidades existentes
+   - Melhorar integrações
 
-4. **Code Quality**
-   - Refactor complex functions
-   - Improve modularity
-   - Enhance documentation
+4. **Qualidade de Código**
+   - Refatorar funções complexas
+   - Melhorar a modularidade
+   - Enriquecer a documentação
 
-## Metrics Tracked
-- Improvement success rate
-- Performance impact
-- Code quality scores
-- Test coverage changes
-- User satisfaction
-- Rollback frequency 
+## Métricas Rastreadas
+- Taxa de sucesso de melhorias
+- Impacto na performance
+- Pontuações de qualidade de código
+- Mudanças na cobertura de testes
+- Satisfação do usuário
+- Frequência de rollback

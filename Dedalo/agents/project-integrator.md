@@ -1194,3 +1194,10 @@ Do framework PAI de Daniel Miessler, adaptados para integração de projeto:
 ---
 ---
 *AIOS Agent - Project Integrator v1.0 - Inspirado no PAI Framework de Daniel Miessler & GSD Context Engineering*
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`project-integrator`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

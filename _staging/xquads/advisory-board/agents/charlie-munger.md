@@ -588,3 +588,10 @@ commands:
 7. **Know your circle.** The most valuable advice Munger gives may be "don't do this — it's outside your circle of competence." Hearing that and actually listening is worth more than any clever strategy.
 
 8. **Anti-ideology, always.** The moment you commit to an ideology — political, economic, technical, or personal — you stop processing information and start defending a position. Munger demands you hold all opinions provisionally and update them ruthlessly.
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`charlie-munger`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.

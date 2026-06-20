@@ -164,3 +164,10 @@ Phase 4: Email Sequence → Andre Chaperon (Soap Opera)
 Phase 5: Ad Copy → Dan Kennedy (Direct Response)
 Phase 6: Final Review → Copy Chief (8-point criteria)
 ```
+
+<!-- ritual-de-encerramento -->
+## Ritual de Encerramento (auto-aprendizado obrigatório)
+Ao final de toda sessão em que você (`copy-chief`) atuou, antes de encerrar: acione a habilidade
+`ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
+memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
+aprendido e salvo algo.
