@@ -1,0 +1,110 @@
+# Índice machine-readable do cérebro da Kolden (sobre-a-empresa).
+# Convenção alinhada ao Caos. Atualize ao adicionar/alterar docs.
+versao: 1
+atualizado-em: 2026-06-18
+documentos:
+  - id: sobre-a-empresa-leia-me
+    caminho: leia-me.md
+    categoria: identidade
+    status: vigente
+  - id: visao-geral
+    caminho: identidade/visao-geral.md
+    categoria: identidade
+    status: rascunho
+  - id: missao-visao-valores
+    caminho: identidade/missao-visao-valores.md
+    categoria: identidade
+    status: rascunho
+  - id: historia
+    caminho: identidade/historia.md
+    categoria: identidade
+    status: rascunho
+  - id: organograma
+    caminho: identidade/organograma.md
+    categoria: identidade
+    status: rascunho
+  - id: icp-e-personas
+    caminho: mercado-e-posicionamento/icp-e-personas.md
+    categoria: mercado
+    status: rascunho
+  - id: ofertas-e-produtos
+    caminho: mercado-e-posicionamento/ofertas-e-produtos.md
+    categoria: mercado
+    status: rascunho
+  - id: posicionamento
+    caminho: mercado-e-posicionamento/posicionamento.md
+    categoria: mercado
+    status: rascunho
+  - id: concorrencia
+    caminho: mercado-e-posicionamento/concorrencia.md
+    categoria: mercado
+    status: rascunho
+  - id: voz-e-tom
+    caminho: marca/voz-e-tom.md
+    categoria: marca
+    status: rascunho
+  - id: mensagens-chave
+    caminho: marca/mensagens-chave.md
+    categoria: marca
+    status: rascunho
+  - id: identidade-visual
+    caminho: marca/identidade-visual.md
+    categoria: marca
+    status: rascunho
+  - id: processos
+    caminho: operacao/processos.md
+    categoria: operacao
+    status: rascunho
+  - id: metricas-e-okrs
+    caminho: operacao/metricas-e-okrs.md
+    categoria: operacao
+    status: rascunho
+  - id: glossario-empresa
+    caminho: glossario.md
+    categoria: identidade
+    status: rascunho
+  - id: faq
+    caminho: faq.md
+    categoria: identidade
+    status: rascunho
+  # Áreas / organização (visão lógica; agentes não são movidos)
+  - id: areas-leia-me
+    caminho: areas/leia-me.md
+    categoria: organizacao
+    status: vigente
+  - id: area-ceo-topo
+    caminho: areas/ceo-topo.md
+    categoria: organizacao
+    status: rascunho
+  - id: area-operacoes
+    caminho: areas/operacoes.md
+    categoria: organizacao
+    status: rascunho
+  - id: area-financas
+    caminho: areas/financas.md
+    categoria: organizacao
+    status: rascunho
+  - id: area-tecnologia
+    caminho: areas/tecnologia.md
+    categoria: organizacao
+    status: rascunho
+  - id: area-receita
+    caminho: areas/receita.md
+    categoria: organizacao
+    status: rascunho
+  - id: area-pessoas-rh
+    caminho: areas/pessoas-rh.md
+    categoria: organizacao
+    status: rascunho
+  - id: area-marketing
+    caminho: areas/marketing.md
+    categoria: organizacao
+    status: rascunho
+  - id: area-governanca
+    caminho: areas/governanca.md
+    categoria: organizacao
+    status: rascunho
+  - id: area-inovacao
+    caminho: areas/inovacao.md
+    categoria: organizacao
+    status: rascunho

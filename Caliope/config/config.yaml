@@ -1,0 +1,238 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Copy Squad
+# Domínio: Copywriting & Resposta Direta
+# Versão: 1.0.0
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: copy-squad
+  display_name: "Copy Squad"
+  version: "1.0.0"
+  domain: "Copywriting de elite — resposta direta, e-mail, funis, VSLs, cartas de vendas, ofertas e copy de marca"
+  description: |
+    Squad de 23 agentes de copywriting — 22 copywriters lendários + 1 orquestrador.
+    Cada agente é um clone de alta fidelidade de um mestre real do copywriting, cobrindo
+    resposta direta, e-mail, funis, VSLs, cartas de vendas, ofertas e copywriting de marca.
+  keywords: [copywriting, direct response, sales letter, email, VSL, funnel, headline, offer, ad copy, launch, bullets, brand copy]
+  entry_agent: copy-chief
+  created_at: "2026-03-05"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [copy-chief]
+    purpose: "Triar demandas de copywriting, rotear ao especialista certo, controle de qualidade"
+  tier_1a:
+    name: "Lendas da Resposta Direta"
+    agents: [gary-halbert, eugene-schwartz, claude-hopkins, gary-bencivenga, robert-collier, john-carlton, jim-rutz]
+    purpose: "Mestres clássicos da resposta direta — formato longo, impresso, mala direta"
+  tier_1b:
+    name: "Copy Moderna & Funis"
+    agents: [dan-kennedy, frank-kern, russell-brunson, todd-brown, stefan-georgi, jon-benson, ry-schwartz]
+    purpose: "Copy da era digital — VSLs, funis, webinars, lançamentos"
+  tier_1c:
+    name: "E-mail & Relacionamento"
+    agents: [ben-settle, andre-chaperon, dan-koe]
+    purpose: "Sequências de e-mail, e-mails diários, copy de nutrição"
+  tier_1d:
+    name: "Ofertas & Páginas de Vendas"
+    agents: [joe-sugarman, david-ogilvy, clayton-makepeace, parris-lampropoulos, david-deutsch]
+    purpose: "Arquitetura de ofertas, anúncios impressos, copy financeira/de saúde"
+
+agents:
+  copy-chief:
+    file: agents/copy-chief.md
+    tier: 0
+    icon: "🎖️"
+    focus: "Orquestração, roteamento, revisão de copy"
+  gary-halbert:
+    file: agents/gary-halbert.md
+    tier: 1a
+    icon: "✍️"
+    focus: "Cartas de vendas, narrativa emocional, mala direta"
+  eugene-schwartz:
+    file: agents/eugene-schwartz.md
+    tier: 1a
+    icon: "🧠"
+    focus: "Títulos, níveis de consciência, breakthrough advertising"
+  claude-hopkins:
+    file: agents/claude-hopkins.md
+    tier: 1a
+    icon: "📊"
+    focus: "Publicidade científica, testes, copy de reason-why"
+  gary-bencivenga:
+    file: agents/gary-bencivenga.md
+    tier: 1a
+    icon: "🎯"
+    focus: "Bullet points, fascinações, persuasão"
+  robert-collier:
+    file: agents/robert-collier.md
+    tier: 1a
+    icon: "💌"
+    focus: "Cartas de empatia, mala direta clássica, psicologia do leitor"
+  john-carlton:
+    file: agents/john-carlton.md
+    tier: 1a
+    icon: "🔥"
+    focus: "Formato longo informal, copy de rua (street-smart)"
+  jim-rutz:
+    file: agents/jim-rutz.md
+    tier: 1a
+    icon: "📰"
+    focus: "Aberturas de magalog, mala direta de formato longo"
+  dan-kennedy:
+    file: agents/dan-kennedy.md
+    tier: 1b
+    icon: "💰"
+    focus: "Marketing No-BS, estrutura de ofertas, ad copy"
+  frank-kern:
+    file: agents/frank-kern.md
+    tier: 1b
+    icon: "🌊"
+    focus: "Copy de lançamento, sequências comportamentais, anúncios digitais"
+  russell-brunson:
+    file: agents/russell-brunson.md
+    tier: 1b
+    icon: "📈"
+    focus: "Copy de funil, roteiros de webinar, Perfect Webinar"
+  todd-brown:
+    file: agents/todd-brown.md
+    tier: 1b
+    icon: "💡"
+    focus: "Big idea, Método E5, conceitos de campanha"
+  stefan-georgi:
+    file: agents/stefan-georgi.md
+    tier: 1b
+    icon: "🎬"
+    focus: "Roteiros de VSL, método RMBC"
+  jon-benson:
+    file: agents/jon-benson.md
+    tier: 1b
+    icon: "📹"
+    focus: "Inventor da VSL, cartas de vendas em vídeo"
+  ry-schwartz:
+    file: agents/ry-schwartz.md
+    tier: 1b
+    icon: "📧"
+    focus: "E-mails baseados em consciência, copy de marca pessoal"
+  ben-settle:
+    file: agents/ben-settle.md
+    tier: 1c
+    icon: "📬"
+    focus: "E-mails diários, engajamento anti-guru"
+  andre-chaperon:
+    file: agents/andre-chaperon.md
+    tier: 1c
+    icon: "🎭"
+    focus: "Soap opera sequences, narrativa por e-mail"
+  dan-koe:
+    file: agents/dan-koe.md
+    tier: 1c
+    icon: "🧩"
+    focus: "Copy de marca pessoal, negócio de uma pessoa só"
+  joe-sugarman:
+    file: agents/joe-sugarman.md
+    tier: 1d
+    icon: "🛒"
+    focus: "Gatilhos psicológicos, anúncios impressos"
+  david-ogilvy:
+    file: agents/david-ogilvy.md
+    tier: 1d
+    icon: "👔"
+    focus: "Elegância de marca, copy premium"
+  clayton-makepeace:
+    file: agents/clayton-makepeace.md
+    tier: 1d
+    icon: "💊"
+    focus: "Copy financeira/de saúde, power bullets"
+  parris-lampropoulos:
+    file: agents/parris-lampropoulos.md
+    tier: 1d
+    icon: "🏆"
+    focus: "Resposta direta financeira/de saúde"
+  david-deutsch:
+    file: agents/david-deutsch.md
+    tier: 1d
+    icon: "🎩"
+    focus: "Persuasão sofisticada, páginas de vendas premium"
+
+handoffs:
+  copy-chief:
+    routes_to: [gary-halbert, eugene-schwartz, claude-hopkins, gary-bencivenga, robert-collier, john-carlton, jim-rutz, dan-kennedy, frank-kern, russell-brunson, todd-brown, stefan-georgi, jon-benson, ry-schwartz, ben-settle, andre-chaperon, dan-koe, joe-sugarman, david-ogilvy, clayton-makepeace, parris-lampropoulos, david-deutsch]
+  gary-halbert:
+    collaborates_with: [john-carlton, eugene-schwartz]
+    escalates_to: [copy-chief]
+  eugene-schwartz:
+    collaborates_with: [gary-halbert, todd-brown]
+    escalates_to: [copy-chief]
+  claude-hopkins:
+    collaborates_with: [gary-bencivenga]
+    escalates_to: [copy-chief]
+  gary-bencivenga:
+    collaborates_with: [clayton-makepeace, claude-hopkins]
+    escalates_to: [copy-chief]
+  robert-collier:
+    collaborates_with: [jim-rutz]
+    escalates_to: [copy-chief]
+  john-carlton:
+    collaborates_with: [gary-halbert]
+    escalates_to: [copy-chief]
+  jim-rutz:
+    collaborates_with: [robert-collier]
+    escalates_to: [copy-chief]
+  dan-kennedy:
+    collaborates_with: [joe-sugarman, frank-kern]
+    escalates_to: [copy-chief]
+  frank-kern:
+    collaborates_with: [russell-brunson, dan-kennedy]
+    escalates_to: [copy-chief]
+  russell-brunson:
+    collaborates_with: [frank-kern, todd-brown]
+    escalates_to: [copy-chief]
+  todd-brown:
+    collaborates_with: [eugene-schwartz, russell-brunson]
+    escalates_to: [copy-chief]
+  stefan-georgi:
+    collaborates_with: [jon-benson]
+    escalates_to: [copy-chief]
+  jon-benson:
+    collaborates_with: [stefan-georgi]
+    escalates_to: [copy-chief]
+  ry-schwartz:
+    collaborates_with: [dan-koe]
+    escalates_to: [copy-chief]
+  ben-settle:
+    collaborates_with: [dan-koe, andre-chaperon]
+    escalates_to: [copy-chief]
+  andre-chaperon:
+    collaborates_with: [ben-settle]
+    escalates_to: [copy-chief]
+  dan-koe:
+    collaborates_with: [ry-schwartz, ben-settle]
+    escalates_to: [copy-chief]
+  joe-sugarman:
+    collaborates_with: [dan-kennedy]
+    escalates_to: [copy-chief]
+  david-ogilvy:
+    collaborates_with: [david-deutsch]
+    escalates_to: [copy-chief]
+  clayton-makepeace:
+    collaborates_with: [parris-lampropoulos, gary-bencivenga]
+    escalates_to: [copy-chief]
+  parris-lampropoulos:
+    collaborates_with: [clayton-makepeace]
+    escalates_to: [copy-chief]
+  david-deutsch:
+    collaborates_with: [david-ogilvy]
+    escalates_to: [copy-chief]
+
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  conflict_resolution: "Quando os agentes discordam, o Copy Chief media usando o nível de consciência + o contexto de mercado"
+  collaboration: "O Copy Chief pode designar um agente primário + secundário para projetos complexos"
+
+settings:
+  activation:
+    prefix: "copy-squad"
+    example: "@copy-squad:gary-halbert"

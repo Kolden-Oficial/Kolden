@@ -1,0 +1,323 @@
+# Catálogo de Integração MCP — Servidores Recomendados por Caso de Uso
+# Squad: claude-code-mastery
+# Última atualização: 2026-03-02
+
+version: "1.0.0"
+
+# Servidores MCP (Model Context Protocol) estendem o Claude Code com capacidades externas.
+# Este catálogo organiza os servidores por caso de uso, com estimativas de instalação e custo.
+
+categories:
+
+  # ---------------------------------------------------------------------------
+  # DESENVOLVIMENTO — Ferramentas centrais de fluxo de trabalho de dev
+  # ---------------------------------------------------------------------------
+  development:
+    description: "Ferramentas centrais de fluxo de trabalho de desenvolvimento"
+    servers:
+      - name: filesystem
+        package: "@modelcontextprotocol/server-filesystem"
+        transport: stdio
+        context_cost_estimate: low
+        install_command: "npx -y @modelcontextprotocol/server-filesystem /path/to/allowed/dir"
+        use_cases:
+          - "Ler/escrever arquivos em diretórios sandboxed"
+          - "Listar o conteúdo de diretórios"
+          - "Buscar arquivos por padrão"
+        config_example: |
+          {
+            "mcpServers": {
+              "filesystem": {
+                "command": "npx",
+                "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/me/projects"]
+              }
+            }
+          }
+        notes: "Redundante com as ferramentas nativas Read/Write/Glob do Claude Code. Use apenas para acesso sandboxed."
+
+      - name: git
+        package: "@modelcontextprotocol/server-git"
+        transport: stdio
+        context_cost_estimate: low
+        install_command: "npx -y @modelcontextprotocol/server-git"
+        use_cases:
+          - "Operações Git (status, diff, log, commit)"
+          - "Gerenciamento de branches"
+          - "Análise de blame e histórico"
+        notes: "A ferramenta nativa Bash com a CLI do git costuma ser suficiente."
+
+      - name: docker
+        package: "@modelcontextprotocol/server-docker"
+        transport: stdio
+        context_cost_estimate: low
+        install_command: "npx -y @modelcontextprotocol/server-docker"
+        use_cases:
+          - "Gerenciamento de containers (iniciar, parar, listar)"
+          - "Gerenciamento de imagens"
+          - "Operações de Docker Compose"
+
+      - name: github
+        package: "@modelcontextprotocol/server-github"
+        transport: stdio
+        context_cost_estimate: medium
+        install_command: "npx -y @modelcontextprotocol/server-github"
+        use_cases:
+          - "Gerenciamento de PRs (criar, revisar, merge)"
+          - "Rastreamento de issues"
+          - "Operações de repositório"
+          - "Busca de código entre repositórios"
+        env_vars:
+          - GITHUB_PERSONAL_ACCESS_TOKEN
+        notes: "Alternativa à CLI gh. Fornece acesso estruturado via API."
+
+  # ---------------------------------------------------------------------------
+  # PESQUISA — Coleta de informações e documentação
+  # ---------------------------------------------------------------------------
+  research:
+    description: "Coleta de informações e consulta de documentação"
+    servers:
+      - name: exa
+        package: "exa-mcp-server"
+        transport: stdio
+        context_cost_estimate: medium
+        install_command: "npx -y exa-mcp-server"
+        use_cases:
+          - "Busca na web com resultados otimizados por IA"
+          - "Pesquisa e análise competitiva"
+          - "Encontrar exemplos de código e documentação"
+          - "Eventos atuais e notícias"
+        env_vars:
+          - EXA_API_KEY
+        config_example: |
+          {
+            "mcpServers": {
+              "exa": {
+                "command": "npx",
+                "args": ["-y", "exa-mcp-server"],
+                "env": { "EXA_API_KEY": "your-key-here" }
+              }
+            }
+          }
+
+      - name: context7
+        package: "@upstash/context7-mcp"
+        transport: stdio
+        context_cost_estimate: low
+        install_command: "npx -y @upstash/context7-mcp"
+        use_cases:
+          - "Consulta de documentação de bibliotecas (React, Next.js, etc.)"
+          - "Referência de API para qualquer pacote npm/pip"
+          - "Docs atualizadas sem busca na web"
+        config_example: |
+          {
+            "mcpServers": {
+              "context7": {
+                "command": "npx",
+                "args": ["-y", "@upstash/context7-mcp"]
+              }
+            }
+          }
+        notes: "Não requer chave de API. Plano gratuito disponível."
+
+      - name: web-search
+        package: "@anthropic-ai/web-search-mcp"
+        transport: stdio
+        context_cost_estimate: medium
+        install_command: "npx -y @anthropic-ai/web-search-mcp"
+        use_cases:
+          - "Busca geral na web"
+          - "Consulta de informações em tempo real"
+
+  # ---------------------------------------------------------------------------
+  # COMUNICAÇÃO — Notificações de equipe e mensageria
+  # ---------------------------------------------------------------------------
+  communication:
+    description: "Ferramentas de comunicação e notificação de equipe"
+    servers:
+      - name: slack
+        package: "@modelcontextprotocol/server-slack"
+        transport: stdio
+        context_cost_estimate: medium
+        install_command: "npx -y @modelcontextprotocol/server-slack"
+        use_cases:
+          - "Enviar mensagens para canais do Slack"
+          - "Ler o histórico do canal para contexto"
+          - "Postar notificações de build/deploy"
+          - "Automação de standup da equipe"
+        env_vars:
+          - SLACK_BOT_TOKEN
+          - SLACK_TEAM_ID
+
+      - name: email
+        package: "mcp-server-email"
+        transport: stdio
+        context_cost_estimate: low
+        install_command: "npx -y mcp-server-email"
+        use_cases:
+          - "Enviar notificações por e-mail"
+          - "Ler e-mails para contexto"
+          - "Redigir respostas de e-mail"
+        env_vars:
+          - EMAIL_SMTP_HOST
+          - EMAIL_SMTP_USER
+          - EMAIL_SMTP_PASS
+
+  # ---------------------------------------------------------------------------
+  # BANCO DE DADOS — Armazenamento e consulta de dados
+  # ---------------------------------------------------------------------------
+  database:
+    description: "Acesso e gerenciamento de banco de dados"
+    servers:
+      - name: supabase
+        package: "@supabase/mcp-server-supabase"
+        transport: stdio
+        context_cost_estimate: medium
+        install_command: "npx -y @supabase/mcp-server-supabase"
+        use_cases:
+          - "Consultas e mutações no banco de dados"
+          - "Inspeção de schema"
+          - "Gerenciamento de migrations"
+          - "Gerenciamento de políticas RLS"
+          - "Deploy de edge functions"
+        env_vars:
+          - SUPABASE_ACCESS_TOKEN
+        config_example: |
+          {
+            "mcpServers": {
+              "supabase": {
+                "command": "npx",
+                "args": ["-y", "@supabase/mcp-server-supabase", "--access-token", "your-token"]
+              }
+            }
+          }
+
+      - name: postgres
+        package: "@modelcontextprotocol/server-postgres"
+        transport: stdio
+        context_cost_estimate: medium
+        install_command: "npx -y @modelcontextprotocol/server-postgres"
+        use_cases:
+          - "Consultas PostgreSQL diretas"
+          - "Inspeção e análise de schema"
+          - "Exploração de dados"
+        env_vars:
+          - POSTGRES_CONNECTION_STRING
+
+      - name: sqlite
+        package: "@modelcontextprotocol/server-sqlite"
+        transport: stdio
+        context_cost_estimate: low
+        install_command: "npx -y @modelcontextprotocol/server-sqlite"
+        use_cases:
+          - "Consultas a banco de dados SQLite local"
+          - "Desenvolvimento de banco de dados embarcado"
+          - "Prototipagem de modelos de dados"
+
+  # ---------------------------------------------------------------------------
+  # NAVEGADOR — Automação web e testes
+  # ---------------------------------------------------------------------------
+  browser:
+    description: "Automação de navegador, testes e interação com a web"
+    servers:
+      - name: playwright
+        package: "@anthropic-ai/mcp-server-playwright"
+        transport: stdio
+        context_cost_estimate: high
+        install_command: "npx -y @anthropic-ai/mcp-server-playwright"
+        use_cases:
+          - "Automação de navegador e testes"
+          - "Captura de screenshots para verificação visual"
+          - "Preenchimento de formulários e testes de interação"
+          - "Inspeção de logs do console"
+          - "Execução de testes E2E"
+        notes: "Alto custo de contexto devido aos snapshots do DOM. Use com critério."
+        config_example: |
+          {
+            "mcpServers": {
+              "playwright": {
+                "command": "npx",
+                "args": ["-y", "@anthropic-ai/mcp-server-playwright"]
+              }
+            }
+          }
+
+      - name: puppeteer
+        package: "@anthropic-ai/mcp-server-puppeteer"
+        transport: stdio
+        context_cost_estimate: high
+        install_command: "npx -y @anthropic-ai/mcp-server-puppeteer"
+        use_cases:
+          - "Automação de navegador headless"
+          - "Geração de PDF"
+          - "Captura de screenshots"
+        notes: "O Playwright geralmente é preferido ao Puppeteer para novos projetos."
+
+  # ---------------------------------------------------------------------------
+  # DESIGN — Ferramentas de UI/UX
+  # ---------------------------------------------------------------------------
+  design:
+    description: "Ferramentas de design e UI/UX"
+    servers:
+      - name: 21st-dev-magic
+        package: "@21st-dev/magic-mcp"
+        transport: stdio
+        context_cost_estimate: medium
+        install_command: "npx -y @21st-dev/magic-mcp"
+        use_cases:
+          - "Gerar componentes de UI a partir de descrições"
+          - "Integração com design system"
+          - "Busca em bibliotecas de componentes"
+        env_vars:
+          - TWENTY_FIRST_API_KEY
+
+      - name: figma
+        package: "figma-mcp-server"
+        transport: stdio
+        context_cost_estimate: high
+        install_command: "npx -y figma-mcp-server"
+        use_cases:
+          - "Extrair design tokens de arquivos do Figma"
+          - "Ler especificações de componentes"
+          - "Tradução de design para código"
+        env_vars:
+          - FIGMA_ACCESS_TOKEN
+
+  # ---------------------------------------------------------------------------
+  # MONITORAMENTO — Observabilidade e rastreamento de erros
+  # ---------------------------------------------------------------------------
+  monitoring:
+    description: "Monitoramento de aplicações e rastreamento de erros"
+    servers:
+      - name: sentry
+        package: "@sentry/mcp-server"
+        transport: stdio
+        context_cost_estimate: medium
+        install_command: "npx -y @sentry/mcp-server"
+        use_cases:
+          - "Consultar eventos de erro e stack traces"
+          - "Analisar frequência e impacto de erros"
+          - "Depurar problemas em produção com contexto"
+        env_vars:
+          - SENTRY_AUTH_TOKEN
+
+# ---------------------------------------------------------------------------
+# GUIA DE SELEÇÃO DE TRANSPORTE
+# ---------------------------------------------------------------------------
+transport_guide:
+  stdio:
+    description: "Comunicação por processo local via stdin/stdout"
+    when_to_use: "Servidores locais, pacotes npm, o mais comum"
+    pros: ["Configuração simples", "Sem overhead de rede", "Funciona offline"]
+    cons: ["Não pode ser compartilhado entre máquinas", "Gerenciamento do ciclo de vida do processo"]
+
+  http_streamable:
+    description: "Comunicação baseada em HTTP (protocolo mais novo)"
+    when_to_use: "Servidores remotos, serviços hospedados em nuvem, servidores compartilhados pela equipe"
+    pros: ["Compartilhável", "Agnóstico de linguagem", "Stateless"]
+    cons: ["Latência de rede", "Requer um servidor em execução"]
+
+  sse:
+    description: "Server-Sent Events (legado)"
+    when_to_use: "Servidores legados ainda não migrados para HTTP Streamable"
+    pros: ["Amplo suporte"]
+    cons: ["Sendo descontinuado", "Streaming unidirecional"]

@@ -1,0 +1,348 @@
+# Workflow do GitHub Actions — CI com Claude Code
+# Squad: claude-code-mastery
+# Template: Coloque em .github/workflows/ e configure os secrets
+#
+# Pré-requisitos:
+#   1. Armazene ANTHROPIC_API_KEY nos secrets do repositório no GitHub
+#   2. Ferramentas padrão de CI (Node.js, npm) disponíveis
+#
+# Funcionalidades:
+#   - Verificações padrão de CI (lint, typecheck, test)
+#   - Análise de qualidade do Claude Code nos arquivos alterados
+#   - Detecção de lacunas na cobertura de testes
+#   - Geração automática de testes ausentes (opcional, acionamento manual)
+
+name: CI com Claude Code
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch:
+    inputs:
+      generate_tests:
+        description: 'Gerar automaticamente os testes ausentes'
+        required: false
+        type: boolean
+        default: false
+      quality_check:
+        description: 'Executar a análise de qualidade do Claude'
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: write
+
+jobs:
+  # -----------------------------------------------------------------------
+  # Job 1: Verificações padrão de CI (sempre executa)
+  # -----------------------------------------------------------------------
+  standard-ci:
+    name: Lint, Typecheck, Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Instalar Dependências
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Verificação de Tipos
+        run: npm run typecheck
+
+      - name: Testar
+        run: npm test -- --coverage --ci
+        env:
+          CI: true
+
+      - name: Enviar Cobertura
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
+          retention-days: 7
+
+  # -----------------------------------------------------------------------
+  # Job 2: Análise de qualidade do Claude Code (em PRs e acionamento manual)
+  # -----------------------------------------------------------------------
+  claude-quality:
+    name: Análise de Qualidade do Claude
+    needs: standard-ci
+    if: |
+      github.event_name == 'pull_request' ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.quality_check == 'true')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Identificar Arquivos-Fonte Alterados
+        id: changed-files
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BASE="${{ github.base_ref }}"
+          else
+            BASE="HEAD~1"
+          fi
+
+          # Obtém os arquivos-fonte alterados (exclui testes, configs, docs)
+          FILES=$(git diff --name-only origin/$BASE...HEAD 2>/dev/null || git diff --name-only $BASE...HEAD \
+            | grep -E '\.(ts|tsx|js|jsx|py|rs|go)$' \
+            | grep -v -E '\.(test|spec|stories)\.' \
+            | grep -v -E '(node_modules|dist|build|\.next)/' \
+            | head -10)
+
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          echo "$FILES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+          FILE_COUNT=$(echo "$FILES" | grep -c . || echo "0")
+          echo "count=$FILE_COUNT" >> $GITHUB_OUTPUT
+
+      - name: Executar Análise de Qualidade
+        if: steps.changed-files.outputs.count > 0
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          # Monta o conteúdo dos arquivos para análise (limite total de 30KB)
+          FILE_CONTENTS=""
+          TOTAL_SIZE=0
+          MAX_SIZE=30000
+
+          for FILE in ${{ steps.changed-files.outputs.files }}; do
+            if [ -f "$FILE" ]; then
+              FILE_SIZE=$(wc -c < "$FILE")
+              NEW_TOTAL=$((TOTAL_SIZE + FILE_SIZE))
+              if [ $NEW_TOTAL -lt $MAX_SIZE ]; then
+                FILE_CONTENTS="$FILE_CONTENTS
+          --- FILE: $FILE ---
+          $(cat "$FILE")
+          --- END FILE ---
+          "
+                TOTAL_SIZE=$NEW_TOTAL
+              fi
+            fi
+          done
+
+          PROMPT="Analyze these source files for code quality. For each file, check:
+          1. Code complexity (functions over 30 lines, deep nesting)
+          2. Missing error handling
+          3. Potential null/undefined issues
+          4. Performance concerns (N+1 queries, unnecessary re-renders)
+          5. Security issues (injection, XSS, exposed secrets)
+          6. Missing input validation
+
+          Output JSON:
+          {
+            \"score\": 1-10,
+            \"files\": [
+              {
+                \"file\": \"path\",
+                \"issues\": [
+                  {\"severity\": \"high|medium|low\", \"line\": N, \"issue\": \"description\", \"fix\": \"suggestion\"}
+                ]
+              }
+            ],
+            \"summary\": \"overall assessment\"
+          }
+
+          Files:
+          $FILE_CONTENTS"
+
+          claude -p \
+            --output-format text \
+            --max-turns 3 \
+            "$PROMPT" > /tmp/quality-results.txt 2>/dev/null || true
+
+      - name: Publicar Resultados de Qualidade
+        if: steps.changed-files.outputs.count > 0 && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let results = '';
+            try {
+              results = fs.readFileSync('/tmp/quality-results.txt', 'utf8');
+            } catch {
+              results = 'Quality analysis could not be completed.';
+            }
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+
+            const existing = comments.find(c =>
+              c.body.includes('<!-- claude-quality-analysis -->')
+            );
+
+            const body = `<!-- claude-quality-analysis -->
+            ## Code Quality Analysis
+
+            ${results}
+
+            ---
+            *Analysis by Claude Code CI*`;
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body: body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: body,
+              });
+            }
+
+  # -----------------------------------------------------------------------
+  # Job 3: Geração automática de testes ausentes (apenas acionamento manual)
+  # -----------------------------------------------------------------------
+  generate-tests:
+    name: Gerar Testes Ausentes
+    needs: standard-ci
+    if: |
+      github.event_name == 'workflow_dispatch' &&
+      github.event.inputs.generate_tests == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Instalar Dependências
+        run: |
+          npm ci
+          npm install -g @anthropic-ai/claude-code
+
+      - name: Encontrar Arquivos Sem Testes
+        id: untested
+        run: |
+          # Encontra os arquivos-fonte que não têm arquivos de teste correspondentes
+          UNTESTED=""
+          for FILE in $(find src -name '*.ts' -o -name '*.tsx' | grep -v -E '\.(test|spec|stories|d)\.' | grep -v __tests__ | head -5); do
+            TEST_FILE="${FILE%.ts}.test.ts"
+            TEST_FILE2="${FILE%.tsx}.test.tsx"
+            DIR_TEST="$(dirname "$FILE")/__tests__/$(basename "${FILE%.ts}").test.ts"
+            if [ ! -f "$TEST_FILE" ] && [ ! -f "$TEST_FILE2" ] && [ ! -f "$DIR_TEST" ]; then
+              UNTESTED="$UNTESTED $FILE"
+            fi
+          done
+
+          echo "files=$UNTESTED" >> $GITHUB_OUTPUT
+          echo "Found untested files: $UNTESTED"
+
+      - name: Gerar Testes
+        if: steps.untested.outputs.files != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          for FILE in ${{ steps.untested.outputs.files }}; do
+            echo "Generating tests for: $FILE"
+
+            claude -p \
+              --output-format text \
+              --max-turns 5 \
+              --dangerously-skip-permissions \
+              "Generate comprehensive unit tests for the file '$FILE'. Requirements:
+              - Use Jest and React Testing Library (if React component)
+              - Test all exported functions/components
+              - Include edge cases and error scenarios
+              - Follow existing test patterns in this project
+              - Write the test file to the co-located path (same directory, .test.ts extension)
+              - Do NOT modify the source file
+              Read the source file first, then write the test file." || true
+          done
+
+      - name: Verificar Testes Gerados
+        run: |
+          # Executa apenas os arquivos de teste recém-gerados
+          NEW_TESTS=$(git diff --name-only | grep -E '\.(test|spec)\.' || echo "")
+          if [ -n "$NEW_TESTS" ]; then
+            echo "Running generated tests: $NEW_TESTS"
+            npx jest $NEW_TESTS --passWithNoTests || true
+          else
+            echo "No new test files generated"
+          fi
+
+      - name: Criar PR com os Testes
+        run: |
+          if git diff --quiet; then
+            echo "No test files generated"
+            exit 0
+          fi
+
+          git config user.name "claude-code[bot]"
+          git config user.email "claude-code[bot]@users.noreply.github.com"
+
+          BRANCH="test/auto-generate-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH"
+          git add '*.test.ts' '*.test.tsx'
+          git commit -m "test: auto-generate unit tests for untested files
+
+          Generated by Claude Code CI pipeline.
+
+          Co-Authored-By: Claude Code <noreply@anthropic.com>"
+
+          git push origin "$BRANCH"
+
+          gh pr create \
+            --title "test: auto-generated unit tests" \
+            --body "## Auto-Generated Tests
+
+          These tests were automatically generated by Claude Code for files lacking test coverage.
+
+          **Action Required:** Review generated tests before merging. Auto-generated tests may need adjustments.
+
+          ### Files Tested
+          $(echo '${{ steps.untested.outputs.files }}' | tr ' ' '\n' | sed 's/^/- /')
+
+          ---
+          *Generated by Claude Code CI*" \
+            --base "${{ github.ref_name }}" \
+            --head "$BRANCH"
+        env:
+          GH_TOKEN: ${{ github.token }}

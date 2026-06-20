@@ -1,0 +1,135 @@
+# Workflow do Framework de Decisão
+# Análise estruturada de decisão por múltiplas lentes
+
+workflow:
+  id: wf-decision-framework
+  name: "Framework de Decisão"
+  trigger: "*decision-framework"
+  entry_agent: board-chair
+  estimated_duration: "45-90 minutos"
+  description: |
+    Aplicar um framework estruturado de decisão combinando modelos mentais (Munger),
+    princípios (Dalio), pensamento contrário (Thiel) e raciocínio por primeiros
+    princípios (Naval) para chegar a uma decisão de alta qualidade.
+
+  type: sequential
+  sequence:
+    - agent: board-chair
+      action: frame-decision
+      creates: decision_context
+    - agent: charlie-munger
+      action: mental-models
+      creates: model_analysis
+    - agent: ray-dalio
+      action: principles
+      creates: principles_analysis
+    - agent: peter-thiel
+      action: contrarian
+      creates: contrarian_view
+    - agent: board-chair
+      action: synthesize
+      creates: final_decision
+
+phases:
+  - id: phase_1_problem
+    name: "Definição do Problema"
+    agent: board-chair
+    task: convene-board.md
+    depends_on: []
+    description: "Definir o problema com clareza, identificar o tipo de decisão e mapear as restrições"
+    checkpoint:
+      gate: "Problema enunciado com precisão, com critérios de decisão e restrições definidos"
+      veto: "HALT se o problema for, na verdade, múltiplos problemas — decomponha primeiro"
+    outputs:
+      - problem_statement
+      - decision_criteria
+      - constraints_map
+
+  - id: phase_2_mental_models
+    name: "Análise por Modelos Mentais"
+    agent: charlie-munger
+    task: seek-investment-counsel.md
+    depends_on: [phase_1_problem]
+    description: "Aplicar a teia de modelos mentais de Munger ao problema"
+    checkpoint:
+      gate: "Pelo menos 3 modelos mentais aplicados com a inversão concluída"
+      veto: "HALT se a análise mostrar um viés cognitivo claro conduzindo a decisão"
+    models_to_apply:
+      - "Inversão — O que faria isto falhar?"
+      - "Círculo de Competência — Nós realmente entendemos este domínio?"
+      - "Pensamento de Segunda Ordem — O que acontece depois do primeiro efeito?"
+      - "Margem de Segurança — Que folga existe se as suposições estiverem erradas?"
+      - "Custo de Oportunidade — Do que estamos abrindo mão ao escolher isto?"
+    outputs:
+      - mental_models_analysis
+      - inversion_results
+      - bias_identification
+
+  - id: phase_3_principles
+    name: "Análise Baseada em Princípios"
+    agent: ray-dalio
+    task: seek-investment-counsel.md
+    depends_on: [phase_1_problem]
+    description: "Aplicar o framework de princípios de Dalio — transparência radical e credibilidade (believability)"
+    checkpoint:
+      gate: "Valor esperado calculado, teste de estresse concluído"
+      veto: "HALT se suposições-chave não puderem ser validadas"
+    principles_to_apply:
+      - "Transparência Radical — Quais são as verdades incômodas?"
+      - "Decisão Ponderada por Credibilidade — De quem é a opinião que mais importa aqui?"
+      - "Dor + Reflexão = Progresso — O que a experiência passada ensina?"
+      - "Valor Esperado — Resultados ponderados por probabilidade"
+      - "Teste de Estresse — E se as suposições estiverem 50% erradas?"
+    outputs:
+      - principles_analysis
+      - expected_value
+      - stress_test_results
+
+  - id: phase_4_contrarian
+    name: "Verificação Contrária"
+    agent: peter-thiel
+    task: seek-investment-counsel.md
+    depends_on: [phase_2_mental_models, phase_3_principles]
+    description: "Desafiar a sabedoria convencional e testar o otimismo definido"
+    checkpoint:
+      gate: "Perspectiva contrária entregue, consenso desafiado"
+      veto: "HALT se todos concordarem e ninguém tiver desafiado a premissa"
+    questions:
+      - "Que verdade importante pouquíssimas pessoas concordam com você?"
+      - "Esta é uma decisão 0-para-1 ou uma decisão 1-para-n?"
+      - "Estamos sendo otimistas definidos (plano específico) ou indefinidos (apenas esperando)?"
+      - "Qual é o argumento mais forte CONTRA o consenso emergente?"
+      - "Há um segredo aqui — algo que sabemos e que os outros não sabem?"
+    outputs:
+      - contrarian_analysis
+      - consensus_challenge
+      - definite_plan_assessment
+
+  - id: phase_5_recommendation
+    name: "Recomendação Final"
+    agent: board-chair
+    task: convene-board.md
+    depends_on: [phase_4_contrarian]
+    support_agents: [naval-ravikant]
+    description: "Sintetizar todas as análises em uma recomendação final"
+    checkpoint:
+      gate: "A recomendação é clara, bem fundamentada e leva em conta a visão contrária"
+      veto: "HALT se a recomendação não sobreviver à verificação contrária"
+    naval_overlay:
+      - "Qual escolha cria mais alavancagem?"
+      - "Qual melhor se compõe ao longo de décadas?"
+      - "Qual se alinha com conhecimento específico?"
+    outputs:
+      - final_recommendation
+      - decision_rationale
+      - risk_mitigation
+      - monitoring_plan
+
+completion_criteria:
+  - "Problema definido com precisão, com critérios e restrições"
+  - "Pelo menos 3 modelos mentais aplicados (Munger)"
+  - "Análise baseada em princípios concluída com valor esperado (Dalio)"
+  - "A verificação contrária desafiou o consenso emergente (Thiel)"
+  - "Alavancagem e capitalização composta avaliadas (Naval)"
+  - "A recomendação final sobrevive a todas as lentes analíticas"
+  - "Plano de mitigação de risco e de monitoramento definido"

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 240 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 10%;
+
+    --primary: 142 71% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 5% 93%;
+    --secondary-foreground: 240 10% 20%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+
+    --accent: 142 71% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 142 71% 45%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 240 4% 46%;
+    --sidebar-primary: 142 71% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 5% 96%;
+    --sidebar-accent-foreground: 240 10% 10%;
+    --sidebar-border: 240 6% 90%;
+    --sidebar-ring: 142 71% 45%;
+
+    --chart-green: 142 71% 45%;
+    --chart-blue: 217 91% 60%;
+    --chart-orange: 25 95% 53%;
+    --chart-purple: 262 83% 58%;
+    --chart-red: 0 84% 60%;
+
+    --success: 142 71% 45%;
+    --warning: 38 92% 50%;
+    --info: 217 91% 60%;
+
+    /* CataLogo brand tokens (landing pages /lp/*) */
+    --brand-yellow: 45 100% 51%;        /* #FFC107 */
+    --brand-yellow-foreground: 230 51% 12%;
+    --brand-navy: 230 51% 12%;          /* #0D1330 */
+    --brand-navy-foreground: 0 0% 100%;
+    --brand-coral: 358 100% 67%;        /* #FF5A5F */
+    --brand-green: 161 100% 39%;        /* #00C896 */
+    --brand-shopee: 14 86% 55%;         /* #EE4D2D */
+    --brand-telegram: 200 76% 49%;      /* #229ED9 */
+    --brand-yellow-deep: 42 100% 44%;   /* #E0A800 */
+    --brand-yellow-soft: 47 100% 80%;   /* #FFE89A */
+    --brand-yellow-tint: 49 100% 94%;   /* #FFF8E0 */
+    --brand-navy-2: 230 49% 18%;        /* #161D44 */
+    --brand-navy-3: 230 41% 25%;        /* #232A57 */
+    --brand-coral-deep: 358 73% 59%;    /* #E64449 */
+    --brand-coral-soft: 358 100% 92%;   /* #FFD8DA */
+    --brand-green-deep: 165 100% 33%;   /* #00A87E */
+    --brand-green-soft: 156 73% 87%;    /* #C8F4E5 */
+    --brand-cream: 42 39% 95%;          /* #F7F4EC */
+
+    /* Premium surface tokens (landing) */
+    --surface-soft: 210 40% 98%;        /* #F8FAFC */
+    --surface-muted: 210 40% 96%;       /* #F1F5F9 */
+    --border-subtle: 214 32% 91%;
+  }
+
+  .dark {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 95%;
+
+    --card: 240 10% 6%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 240 10% 6%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 142 71% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 5% 13%;
+    --secondary-foreground: 0 0% 85%;
+
+    --muted: 240 5% 13%;
+    --muted-foreground: 240 4% 55%;
+
+    --accent: 142 71% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 142 71% 45%;
+
+    --sidebar-background: 240 10% 5%;
+    --sidebar-foreground: 240 4% 55%;
+    --sidebar-primary: 142 71% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 5% 10%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 142 71% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  code, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 rounded-lg;
+  }
+
+  /* Glassmorphism over dark backgrounds */
+  .glass-dark {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-card-light {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px -8px rgba(13, 19, 48, 0.12);
+  }
+
+  /* Premium yellow CTA button */
+  .btn-yellow-premium {
+    background-image: linear-gradient(180deg, #FFCB2D 0%, #FFC107 55%, #F0B500 100%);
+    color: hsl(var(--brand-navy));
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(13, 19, 48, 0.08), 0 6px 16px -6px rgba(255, 193, 7, 0.5);
+    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+  }
+  .btn-yellow-premium:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px -6px rgba(255, 193, 7, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    filter: brightness(1.04);
+  }
+  .btn-yellow-premium:active {
+    transform: translateY(0);
+  }
+
+  /* Hero radial backdrop on navy */
+  .bg-hero-radial {
+    background-color: hsl(var(--brand-navy));
+    background-image:
+      radial-gradient(circle at 85% 15%, rgba(255, 193, 7, 0.10) 0%, transparent 45%),
+      radial-gradient(circle at 10% 85%, rgba(34, 158, 217, 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+  }
+
+  .bg-dot-grid {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.06) 1px, transparent 0);
+    background-size: 28px 28px;
+  }
+
+  .glow-soft-yellow {
+    filter: drop-shadow(0 0 40px rgba(255, 193, 7, 0.25));
+  }
+
+  .glow-soft-green {
+    filter: drop-shadow(0 0 12px rgba(0, 200, 150, 0.45));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-glow-pulse,
+  .animate-pulse-glow {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,114 @@
+# Workflow de Lançamento de Movimento
+# Construção completa de movimento em 5 fases, da faísca ao impacto
+# Versão: 1.0.0
+
+workflow:
+  id: wf-movement-launch
+  name: "Lançamento de Movimento"
+  version: "1.0.0"
+  trigger: "*build-movement"
+  entry_agent: movement-chief
+  description: "Orquestra o processo completo de construção de movimento através de 5 fases especialistas. Cada fase se baseia na anterior, com gates de checkpoint entre as fases."
+  estimated_duration: "2-4 horas"
+  type: sequential
+  sequence:
+    - agent: fenomenologo
+      action: analyze-phenomenon
+      creates: phenomenon_analysis
+    - agent: identitario
+      action: create-identity
+      creates: identity_system
+    - agent: manifestador
+      action: write-manifesto
+      creates: manifesto
+    - agent: estrategista-de-ciclo
+      action: build-movement
+      creates: growth_plan
+    - agent: analista-de-impacto
+      action: measure-impact
+      creates: impact_metrics
+
+
+inputs:
+  - name: cause
+    required: true
+    description: "A causa, ideia ou marca em torno da qual construir um movimento"
+  - name: audience
+    required: true
+    description: "Público-alvo ou descrição da comunidade"
+  - name: context
+    required: false
+    description: "Contexto de mercado, ativos de marca existentes"
+  - name: intensity
+    required: false
+    default: "regional"
+    description: "Escala: de base, regional, nacional, global"
+
+
+phases:
+  - id: phase_1_spark
+    name: "Faísca"
+    agent: fenomenologo
+    task: analyze-phenomenon.md
+    depends_on: []
+    description: "Identificar a experiência vivida e a tensão coletiva que acenderão o movimento"
+    checkpoint:
+      gate: "Validade da faísca — a tensão identificada tem intensidade de grau-movimento (>= 3/5)?"
+      veto: "o movement-chief pode rejeitar se a tensão for superficial ou fabricada"
+      required_output: "spark-analysis com movement_potential >= MÉDIO"
+
+  - id: phase_2_identity
+    name: "Identidade"
+    agent: identitario
+    task: create-identity.md
+    depends_on: [phase_1_spark]
+    description: "Arquitetar o sistema de crenças, os marcadores tribais, os rituais e os sinais de grupo interno"
+    checkpoint:
+      gate: "Coerência da identidade — a identidade emerge naturalmente da faísca validada?"
+      veto: "o movement-chief pode rejeitar se a identidade contradiz ou ignora a análise da faísca"
+      required_output: "identity-architecture com Pilha de Identidade completa"
+
+  - id: phase_3_ignition
+    name: "Ignição"
+    agent: manifestador
+    task: write-manifesto.md
+    depends_on: [phase_2_identity]
+    description: "Criar o manifesto, a história de origem, o grito de guerra e o plano de ignição"
+    checkpoint:
+      gate: "Alinhamento do manifesto — o manifesto expressa autenticamente a identidade?"
+      veto: "o movement-chief pode rejeitar se o manifesto parecer genérico ou desalinhado com a identidade"
+      required_output: "manifesto com todos os 7 componentes + grito de guerra"
+
+  - id: phase_4_growth
+    name: "Crescimento"
+    agent: estrategista-de-ciclo
+    task: build-movement.md
+    depends_on: [phase_3_ignition]
+    description: "Projetar o Volante de Crescimento: Atrair > Ativar > Sustentar > Multiplicar"
+    checkpoint:
+      gate: "Viabilidade do crescimento — o volante é realista para o estágio atual do movimento?"
+      veto: "o movement-chief pode rejeitar se o plano de crescimento exceder os recursos atuais ou pular estágios"
+      required_output: "growth-strategy com todas as 4 fases do volante"
+
+  - id: phase_5_impact
+    name: "Impacto"
+    agent: analista-de-impacto
+    task: measure-impact.md
+    depends_on: [phase_4_growth]
+    description: "Definir a pirâmide de impacto, as métricas, o painel de saúde da comunidade e o índice de vitalidade"
+    checkpoint:
+      gate: "Completude da medição — todos os 5 níveis da pirâmide estão cobertos com métricas acionáveis?"
+      veto: "o movement-chief pode rejeitar se as métricas forem imensuráveis ou desconectadas da causa"
+      required_output: "impact-framework com índice de vitalidade e cadência de relatórios"
+
+completion_criteria:
+  - "Todas as 5 fases concluídas com checkpoints aprovados"
+  - "6 documentos entregáveis produzidos (faísca, identidade, manifesto, ignição, crescimento, impacto)"
+  - "Coerência ponta a ponta validada pelo movement-chief"
+  - "Grito de guerra e crença central consistentes em todos os documentos"
+  - "Linha de base do Índice de Vitalidade estabelecida"
+
+error_handling:
+  phase_failure: "Retornar à fase que falhou com feedback específico. Não pular fases."
+  checkpoint_veto: "O agente precisa revisar a saída e reenviar. Máximo de 2 ciclos de revisão por fase."
+  escalation: "Se uma fase falhar após 2 revisões, escalar para o movement-chief para intervenção manual."

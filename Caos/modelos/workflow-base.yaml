@@ -1,0 +1,45 @@
+# Workflow de Squad — template (DAG)
+#
+# Base para squads/<nome>/workflows/wf-<principal>.yaml. Um workflow é um grafo de fases
+# com dependências explícitas e checkpoints que falham cedo. Inspirado nos workflows como
+# DAG do aiox-core (workflow-execution.md) e dos xquads-squads (wf-*.yaml).
+# Substitua os valores entre <>. Apague comentários de instrução no arquivo final.
+
+workflow:
+  id: "wf-<nome>"
+  gatilho: "*<comando-que-inicia>"
+  agente_de_entrada: "<orquestrador>"
+  duracao_estimada: "<ex.: 1-3 horas>"
+  tipo: "sequential"            # sequential | parallel
+
+fases:
+  - id: "fase_1_<nome>"
+    agente: "<especialista ou orquestrador>"
+    acao: "<o que faz>"
+    depends_on: []
+    checkpoint:
+      gate: "<critério de sucesso para avançar>"
+      veto: "<condição de falha que interrompe o workflow (HALT)>"
+    saidas: ["<artefato produzido>"]
+
+  - id: "fase_2_<nome>"
+    agente: "<especialista>"
+    acao: "<o que faz>"
+    depends_on: ["fase_1_<nome>"]
+    checkpoint:
+      gate: "<critério de sucesso>"
+      veto: "<condição de HALT>"
+    saidas: ["<artefato>"]
+
+  - id: "fase_3_sintese"
+    agente: "<orquestrador>"
+    acao: "Sintetiza as saídas e aplica o checklist de qualidade."
+    depends_on: ["fase_2_<nome>"]
+    checkpoint:
+      gate: "Checklist qualidade-da-saida.md: todos os itens CRITICAL atendidos"
+      veto: "Qualquer item CRITICAL falhou → volta ao especialista responsável"
+    saidas: ["entrega-final"]
+
+criterios_de_conclusao:
+  - "<critério final 1>"
+  - "<critério final 2>"

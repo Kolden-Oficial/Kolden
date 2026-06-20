@@ -1,0 +1,207 @@
+# Frameworks de Movimento — Dados de Referência
+# Modelos canônicos usados por todos os agentes do Squad de Movimentos
+# Versão: 1.0.0
+
+phase_model:
+  name: "Modelo de Movimento em 5 Fases"
+  description: "Fases sequenciais para construir um movimento do insight ao impacto"
+  phases:
+    - id: spark
+      name: "Faísca"
+      description: "Identificar a tensão, frustração ou aspiração compartilhada"
+      entry_criteria:
+        - "Público-alvo definido"
+        - "Causa ou ideia articulada"
+      exit_criteria:
+        - "Experiência vivida identificada e documentada"
+        - "Tensão coletiva mapeada com intensidade >= 3/5"
+        - "Narrativa compartilhada destilada com núcleo narrativo"
+        - "Potencial de movimento avaliado como >= MÉDIO"
+      primary_agent: fenomenologo
+      secondary_agent: movement-architect
+
+    - id: identity
+      name: "Identidade"
+      description: "Definir quem somos, no que acreditamos, contra o que nos posicionamos"
+      entry_criteria:
+        - "Análise da faísca validada"
+        - "Potencial de movimento >= MÉDIO"
+      exit_criteria:
+        - "Sistema de crenças definido com convicção central"
+        - "Marcadores tribais projetados (linguagem, visual, comportamental)"
+        - "Pelo menos 5 rituais criados"
+        - "Gradiente de pertencimento com 5 níveis"
+      primary_agent: identitario
+      secondary_agent: manifestador
+
+    - id: ignition
+      name: "Ignição"
+      description: "Criar o manifesto, semear os primeiros seguidores, construir rituais"
+      entry_criteria:
+        - "Arquitetura de identidade completa"
+        - "Pilha de Identidade validada"
+      exit_criteria:
+        - "Manifesto escrito com todos os 7 componentes"
+        - "Grito de guerra definido"
+        - "Primeiro ritual projetado"
+        - "Estratégia de círculo fundador definida"
+      primary_agent: manifestador
+      secondary_agent: estrategista-de-ciclo
+
+    - id: growth
+      name: "Crescimento"
+      description: "Escalar através de ciclos — atrair, ativar, sustentar, multiplicar"
+      entry_criteria:
+        - "Manifesto completo e aprovado"
+        - "Pelo menos um ritual operacional"
+      exit_criteria:
+        - "Volante de Crescimento projetado com todas as 4 fases"
+        - "Estratégia de canais definida"
+        - "Ritual de ativação testado"
+        - "Gatilhos de multiplicação identificados"
+      primary_agent: estrategista-de-ciclo
+      secondary_agent: analista-de-impacto
+
+    - id: impact
+      name: "Impacto"
+      description: "Medir e amplificar o impacto no mundo real"
+      entry_criteria:
+        - "Estratégia de crescimento definida"
+        - "Comunidade existe (mesmo que pequena)"
+      exit_criteria:
+        - "Pirâmide de Impacto definida com 5 níveis"
+        - "Matriz de métricas completa"
+        - "Fórmula do Índice de Vitalidade estabelecida"
+        - "Cadência de relatórios definida"
+      primary_agent: analista-de-impacto
+      secondary_agent: movement-chief
+
+identity_stack:
+  name: "Pilha de Identidade"
+  description: "5 camadas de identidade de movimento, da fundacional à expressiva"
+  layers:
+    - level: 1
+      name: "Valores"
+      description: "Valores centrais que formam a fundação (3-5 valores)"
+      examples: ["liberdade", "autenticidade", "coragem", "comunidade", "justiça"]
+    - level: 2
+      name: "Crenças"
+      description: "Declarações de convicção que traduzem valores em visão de mundo"
+      format: "Nós acreditamos que..."
+      types: ["central", "de apoio", "aspiracional", "contrária"]
+    - level: 3
+      name: "Comportamentos"
+      description: "Ações e hábitos que demonstram pertencimento"
+      examples: ["prática diária", "declaração pública", "apoio entre pares"]
+    - level: 4
+      name: "Símbolos"
+      description: "Marcadores visuais e verbais que identificam os membros"
+      examples: ["logo", "cores", "bordões", "gestos de mão", "vestuário"]
+    - level: 5
+      name: "Rituais"
+      description: "Práticas repetidas que reforçam o pertencimento"
+      types: ["iniciação", "diário", "encontro", "celebração", "narração"]
+
+manifesto_anatomy:
+  name: "Anatomia do Manifesto em 7 Componentes"
+  description: "O projeto estrutural de um manifesto de movimento"
+  components:
+    - order: 1
+      name: "Declaração da Realidade"
+      description: "Abrir com uma verdade inegável sobre o estado atual"
+      purpose: "Criar reconhecimento e concordância instantâneos"
+    - order: 2
+      name: "Articulação da Dor"
+      description: "Nomear a frustração que as pessoas sentem mas raramente dizem em voz alta"
+      purpose: "Construir conexão emocional por meio de vulnerabilidade compartilhada"
+    - order: 3
+      name: "Declarações de Crença"
+      description: "3-7 declarações 'Nós acreditamos' em intensidade ascendente"
+      purpose: "Definir a visão de mundo do movimento e criar pertencimento"
+    - order: 4
+      name: "Nomeação do Inimigo"
+      description: "Identificar a força sistêmica à qual o movimento se opõe"
+      purpose: "Unir os membros contra um adversário comum (nunca uma pessoa)"
+    - order: 5
+      name: "Visão do Futuro"
+      description: "Pintar um retrato específico e sensorial da terra prometida"
+      purpose: "Inspirar a ação tornando o futuro tangível"
+    - order: 6
+      name: "Chamado à Ação"
+      description: "Um passo concreto que qualquer um pode dar hoje"
+      purpose: "Converter emoção em ação"
+    - order: 7
+      name: "Grito de Guerra"
+      description: "Uma frase que captura tudo"
+      purpose: "Dar ao movimento um chamado de reunião memorável e repetível"
+
+growth_flywheel:
+  name: "Volante de Crescimento"
+  description: "Ciclo de 4 fases para escalar um movimento"
+  phases:
+    - id: attract
+      name: "Atrair"
+      description: "Atrair membros potenciais por meio da mensagem do movimento"
+      tactics: ["marketing de conteúdo", "distribuição do manifesto", "prova social", "boca a boca", "eventos"]
+    - id: activate
+      name: "Ativar"
+      description: "Converter pessoas interessadas em participantes ativos"
+      tactics: ["ritual de iniciação", "primeira vitória", "sistema de apadrinhamento", "sequência de onboarding", "pequeno compromisso"]
+    - id: sustain
+      name: "Sustentar"
+      description: "Manter os membros engajados e aprofundando o compromisso"
+      tactics: ["rituais regulares", "cadência de conteúdo", "eventos comunitários", "reconhecimento", "acompanhamento de progresso"]
+    - id: multiply
+      name: "Multiplicar"
+      description: "Empoderar os membros para recrutar e liderar"
+      tactics: ["programas de indicação", "papéis de embaixador", "núcleos locais", "ensinar-para-aprender", "conteúdo compartilhável"]
+
+impact_pyramid:
+  name: "Pirâmide de Impacto"
+  description: "5 níveis de impacto de movimento, da consciência à transformação"
+  levels:
+    - level: 1
+      name: "Consciência"
+      description: "As pessoas sabem que o movimento existe"
+      metrics: ["alcance", "impressões", "menções", "cobertura de mídia"]
+    - level: 2
+      name: "Engajamento"
+      description: "As pessoas interagem com o movimento"
+      metrics: ["participantes ativos", "presença em eventos", "engajamento com conteúdo", "volume de conversas"]
+    - level: 3
+      name: "Compromisso"
+      description: "As pessoas se identificam como membros"
+      metrics: ["membros autodeclarados", "participação em rituais", "taxa de contribuição", "retenção"]
+    - level: 4
+      name: "Defesa Ativa"
+      description: "Os membros recrutam outros ativamente"
+      metrics: ["taxa de indicação", "conteúdo gerado pelo usuário", "número de embaixadores", "crescimento orgânico"]
+    - level: 5
+      name: "Transformação"
+      description: "Ocorre mudança no mundo real"
+      metrics: ["mudança de comportamento", "impacto em políticas", "mudanças na indústria", "adoção cultural"]
+
+ritual_architecture:
+  name: "Arquitetura de Rituais"
+  description: "Framework para projetar rituais de movimento"
+  types:
+    - type: "Iniciação"
+      frequency: "Uma vez (na entrada)"
+      purpose: "Marcar a transição de forasteiro a membro"
+      emotional_arc: "antecipação > desafio > pertencimento"
+    - type: "Diário"
+      frequency: "Diário ou quase diário"
+      purpose: "Reforçar a identidade por meio de pequenas ações repetidas"
+      emotional_arc: "intenção > ação > satisfação"
+    - type: "Encontro"
+      frequency: "Semanal ou mensal"
+      purpose: "Fortalecer os laços por meio de experiência compartilhada"
+      emotional_arc: "conexão > energia > compromisso"
+    - type: "Celebração"
+      frequency: "Em marcos"
+      purpose: "Reconhecer conquistas e reforçar o progresso"
+      emotional_arc: "reflexão > gratidão > orgulho"
+    - type: "Narração"
+      frequency: "Contínuo"
+      purpose: "Compartilhar histórias de transformação pessoal"
+      emotional_arc: "vulnerabilidade > reconhecimento > inspiração"

@@ -1,0 +1,130 @@
+# Workflow de Planejamento Estratégico
+# Visão > Estratégia > Operações > Marketing > Tecnologia > IA
+# Versão: 1.0.0
+
+workflow:
+  id: wf-strategic-planning
+  name: "Planejamento Estratégico"
+  version: "1.0.0"
+  trigger: "*strategic-planning"
+  entry_agent: vision-chief
+  description: "Planejamento estratégico abrangente que flui da visão através de todos os domínios C-level. Cada fase adiciona uma camada de profundidade estratégica, resultando em um plano empresarial alinhado."
+  estimated_duration: "4-8 horas"
+  type: sequential
+  sequence:
+    - agent: vision-chief
+      action: set-vision
+      creates: vision
+    - agent: coo-orchestrator
+      action: design-operations
+      creates: ops_plan
+    - agent: cmo-architect
+      action: plan-go-to-market
+      creates: gtm_plan
+    - agent: cto-architect
+      action: evaluate-technology
+      creates: tech_plan
+    - agent: caio-architect
+      action: ai-strategy
+      creates: ai_plan
+
+
+inputs:
+  - name: company
+    required: true
+    description: "Nome e descrição da empresa"
+  - name: industry
+    required: true
+    description: "Setor ou segmento de mercado"
+  - name: current_state
+    required: true
+    description: "Estágio atual, receita, tamanho do time, desafios-chave"
+  - name: planning_horizon
+    required: false
+    default: "3 anos"
+    description: "Horizonte de planejamento estratégico"
+
+
+phases:
+  - id: phase_1_vision
+    name: "Visão"
+    agent: vision-chief
+    task: set-vision.md
+    depends_on: []
+    description: "Definir missão, visão, valores centrais e direção estratégica"
+    checkpoint:
+      gate: "Missão e visão são específicas, inspiradoras e acionáveis"
+      veto: "vision-chief se autovalida; nenhum veto externo neste estágio"
+      required_output: "Missão, visão, valores centrais, análise das 5 Forças de Porter"
+
+  - id: phase_2_strategy
+    name: "Estratégia"
+    agent: vision-chief
+    task: set-vision.md
+    depends_on: [phase_1_vision]
+    description: "Definir pilares estratégicos, Matriz BCG e roadmap de 3 anos"
+    checkpoint:
+      gate: "3-5 pilares estratégicos definidos com OKRs e donos"
+      veto: "vision-chief rejeita pilares que não fecham a lacuna estratégica"
+      required_output: "Pilares estratégicos com resultados-chave mensuráveis"
+
+  - id: phase_3_operations
+    name: "Operações"
+    agent: coo-orchestrator
+    task: design-operations.md
+    depends_on: [phase_2_strategy]
+    description: "Desenhar o framework operacional para executar a estratégia"
+    checkpoint:
+      gate: "OKRs alinhados aos pilares estratégicos, processos mapeados"
+      veto: "vision-chief rejeita se as operações não sustentarem as prioridades estratégicas"
+      required_output: "Mapa de processos, framework de OKR, cadência operacional"
+
+  - id: phase_4_marketing
+    name: "Marketing"
+    agent: cmo-architect
+    task: plan-go-to-market.md
+    depends_on: [phase_2_strategy]
+    description: "Desenhar a estratégia de go-to-market alinhada à direção estratégica"
+    checkpoint:
+      gate: "A estratégia de GTM sustenta os pilares estratégicos com KPIs mensuráveis"
+      veto: "vision-chief rejeita se o posicionamento contradiz a direção estratégica"
+      required_output: "Análise de mercado, posicionamento, estratégia de canais, plano de lançamento"
+
+  - id: phase_5_technology
+    name: "Tecnologia"
+    agent: cto-architect
+    task: evaluate-technology.md
+    depends_on: [phase_2_strategy]
+    description: "Avaliar e planejar a estratégia de tecnologia para habilitar o roadmap"
+    checkpoint:
+      gate: "O roadmap de tecnologia habilita os pilares estratégicos, dívida crítica endereçada"
+      veto: "vision-chief rejeita se o roadmap de tecnologia não sustentar o cronograma de negócio"
+      required_output: "Avaliação de tecnologia, radar, ADRs, roadmap de tecnologia"
+
+  - id: phase_6_ai
+    name: "Estratégia de IA"
+    agent: caio-architect
+    task: evaluate-technology.md
+    depends_on: [phase_5_technology]
+    description: "Definir a estratégia de IA e o roadmap de maturidade sobreposto ao plano de tecnologia"
+    checkpoint:
+      gate: "Oportunidades de IA mapeadas aos pilares estratégicos com estimativas de ROI"
+      veto: "vision-chief rejeita iniciativas de IA sem valor de negócio claro"
+      required_output: "Avaliação de maturidade de IA, mapa de oportunidades, plano de implementação"
+
+completion_criteria:
+  - "Visão, missão e valores definidos e validados"
+  - "3-5 pilares estratégicos com OKRs e donos"
+  - "Framework operacional alinhado à estratégia"
+  - "Estratégia de GTM com posicionamento e plano de canais"
+  - "Roadmap de tecnologia habilitando as prioridades estratégicas"
+  - "Oportunidades de IA identificadas e priorizadas"
+  - "Todas as fases produzem entregáveis que referenciam os pilares estratégicos"
+
+error_handling:
+  misalignment: "Se qualquer fase produzir uma saída desalinhada dos pilares estratégicos, retorne àquela fase com feedback específico do vision-chief."
+  resource_conflict: "Se operações, marketing e tecnologia competirem por recursos, escale para o vision-chief para priorização."
+  escalation: "O vision-chief tem autoridade final sobre todos os trade-offs estratégicos."
+
+parallel_execution:
+  note: "As fases 3, 4 e 5 podem rodar em paralelo, já que todas dependem apenas da Fase 2. A Fase 6 depende da Fase 5."

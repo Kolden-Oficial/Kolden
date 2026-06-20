@@ -1,0 +1,91 @@
+# Catálogo de Roteamento do Kolden
+#
+# Mapeia o pedido do usuário a uma CATEGORIA de agente. A Fase 1 (Diagnóstico) usa este
+# catálogo para detectar o domínio por keyword-match e carregar a trilha de perguntas
+# especializada (em .claude/skills/diagnostico-de-agente/contexto.md), em vez de aplicar
+# o mesmo questionário genérico a todos.
+#
+# Inspirado no padrão routing-catalog.yaml dos squads (xquads-squads).
+#
+# Como usar (Fase 1):
+#   1. Extraia keywords do pedido do usuário.
+#   2. Conte as correspondências por categoria; a de maior pontuação é o domínio detectado.
+#   3. Carregue a trilha (perguntas_chave) dessa categoria e os padrões recomendados.
+#   4. Em empate ou baixa confiança, pergunte ao usuário qual categoria descreve melhor.
+
+versao: "1.0.0"
+atualizado_em: "2026-06-11"
+
+categorias:
+
+  conversacional:
+    descricao: "Atendimento, suporte, FAQ, vendas conversacionais, assistentes de chat."
+    keywords: [suporte, atendimento, chat, whatsapp, telegram, faq, duvida, cliente, assistente, conversa, sac]
+    perguntas_chave:
+      - "Qual canal (WhatsApp, Telegram, web)? Há limite de tamanho de resposta?"
+      - "Quando o agente deve escalar para um humano? Qual o gatilho?"
+      - "Qual o tom de voz da marca? Há vocabulário proibido?"
+      - "O agente consulta alguma base de conhecimento? (FAQ, docs, RAG)"
+      - "O que ele NUNCA pode prometer ou afirmar (compliance)?"
+    padroes_recomendados: [conversacional, rag]
+
+  dados:
+    descricao: "Análise de dados, ETL, BI, relatórios, SQL, métricas."
+    keywords: [dados, analise, etl, sql, bi, relatorio, dashboard, metrica, kpi, planilha, dataset]
+    perguntas_chave:
+      - "Quais fontes de dados? (banco, planilha, API)"
+      - "O agente apenas lê ou também escreve/transforma dados?"
+      - "Qual o formato de saída esperado? (relatório, gráfico, tabela)"
+      - "Há dados sensíveis? Que pastas/tabelas são permitidas e proibidas?"
+      - "Periodicidade: sob demanda, agendado ou tempo real?"
+    padroes_recomendados: [batch, rag]
+
+  trafego:
+    descricao: "Mídia paga, gestão de campanhas, otimização de anúncios."
+    keywords: [trafego, anuncio, campanha, meta, ads, google, facebook, instagram, orcamento, roas, cpa, otimizacao]
+    perguntas_chave:
+      - "Quais plataformas? (Meta Ads, Google Ads...)"
+      - "Qual o teto de orçamento por execução? Quem aprova mudanças de verba?"
+      - "Quais métricas-alvo? (ROAS, CPA, CTR)"
+      - "O agente executa mudanças ou só recomenda? (guardrail de orçamento é crítico)"
+      - "Como ele reporta resultados e com que frequência?"
+    padroes_recomendados: [agentic, batch]
+
+  copy:
+    descricao: "Copywriting, criação de textos persuasivos, e-mails, páginas de venda."
+    keywords: [copy, copywriting, texto, email, headline, vsl, pagina, venda, persuasao, oferta, anuncio]
+    perguntas_chave:
+      - "Qual formato? (e-mail, página de venda, anúncio, VSL)"
+      - "Qual o nível de consciência do público (Eugene Schwartz)?"
+      - "Qual o objetivo: lead, venda, nutrição, lançamento?"
+      - "Há framework de persuasão preferido? Voz da marca?"
+      - "Quais afirmações são proibidas (compliance/claims)?"
+    padroes_recomendados: [conversacional]
+
+  automacao:
+    descricao: "Integrações, orquestração entre sistemas, webhooks, workflows."
+    keywords: [automacao, integracao, webhook, api, workflow, make, n8n, zapier, orquestracao, sincronizacao, crm]
+    perguntas_chave:
+      - "Quais sistemas conecta? (CRM, e-mail, planilhas, APIs)"
+      - "O que dispara o fluxo? (evento, agendamento, manual)"
+      - "Quais ações são irreversíveis e exigem confirmação?"
+      - "Como tratar falha de um sistema no meio do fluxo? (retry, rollback)"
+      - "Quais credenciais e onde ficam no Infisical?"
+    padroes_recomendados: [agentic, batch]
+
+  rag:
+    descricao: "Conhecimento sobre base própria, busca semântica, Q&A em documentos."
+    keywords: [conhecimento, rag, busca, semantica, documentos, base, embeddings, vetorial, pesquisa, manual]
+    perguntas_chave:
+      - "Qual a base de conhecimento? (docs, site, banco)"
+      - "Com que frequência a base muda? Quem a atualiza?"
+      - "O agente pode responder fora da base ou só com fontes citadas?"
+      - "Como tratar pergunta sem resposta na base?"
+      - "Qual store vetorial? (Supabase, Neon)"
+    padroes_recomendados: [rag, conversacional]
+
+  outro:
+    descricao: "Fallback quando nenhuma categoria pontua. Use o diagnóstico genérico."
+    keywords: []
+    perguntas_chave: []
+    padroes_recomendados: []

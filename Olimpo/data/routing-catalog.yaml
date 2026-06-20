@@ -1,0 +1,65 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad C-Level — Catálogo de Roteamento
+# Mapeia domínios para agentes especialistas para roteamento inteligente
+# ═══════════════════════════════════════════════════════════════════
+
+domains:
+  company_vision:
+    keywords: [visão, missão, propósito, north-star, estratégia, direção, longo-prazo, roadmap, conselho, stakeholders]
+    primary_agent: vision-chief
+    secondary_agent: coo-orchestrator
+    description: "Visão da empresa, definição de missão, direção estratégica e relações com o conselho"
+
+  operational_excellence:
+    keywords: [operações, processos, eficiência, otimização, KPIs, OKRs, escala, fluxo-de-trabalho, lean, six-sigma, SOPs]
+    primary_agent: coo-orchestrator
+    secondary_agent: vision-chief
+    description: "Excelência operacional, otimização de processos e eficiência organizacional"
+
+  marketing_strategy:
+    keywords: [marketing, marca, posicionamento, go-to-market, GTM, geração-de-demanda, conscientização, campanhas, mensagem, ICP]
+    primary_agent: cmo-architect
+    secondary_agent: vision-chief
+    description: "Estratégia de marca, geração de demanda, posicionamento e planejamento de go-to-market"
+
+  technology_decisions:
+    keywords: [tecnologia, tech-stack, arquitetura, engenharia, build-vs-buy, microsserviços, API, DevOps, plataforma, SaaS]
+    primary_agent: cto-architect
+    secondary_agent: cio-engineer
+    description: "Estratégia de tecnologia, decisões de arquitetura, cultura de engenharia e escolhas de plataforma"
+
+  infrastructure:
+    keywords: [infraestrutura, cloud, segurança, conformidade, GDPR, SOC2, arquitetura-de-dados, governança-de-TI, sistemas, integração, DevSecOps]
+    primary_agent: cio-engineer
+    secondary_agent: cto-architect
+    description: "Infraestrutura, segurança, conformidade, arquitetura de dados e governança de TI"
+
+  ai_strategy:
+    keywords: [IA, inteligência-artificial, machine-learning, ML, LLM, automação, transformação-digital, MLOps, ética-em-IA, IA-generativa]
+    primary_agent: caio-architect
+    secondary_agent: cto-architect
+    description: "Estratégia de IA, operações de ML, transformação digital e adoção de IA responsável"
+
+  digital_transformation:
+    keywords: [transformação, digital, modernização, legado, migração, gestão-de-mudanças, inovação, disrupção, ágil-em-escala]
+    primary_agent: caio-architect
+    secondary_agent: cio-engineer
+    description: "Estratégia de transformação digital, modernização de legado e mudança organizacional"
+
+  go_to_market:
+    keywords: [go-to-market, lançamento, precificação, empacotamento, canais, distribuição, sales-enablement, entrada-no-mercado, competitivo]
+    primary_agent: cmo-architect
+    secondary_agent: coo-orchestrator
+    description: "Estratégia de go-to-market, lançamento de produto, precificação e planejamento de canais"
+
+  team_scaling:
+    keywords: [contratação, equipe, escala, org-design, cultura, liderança, gestão, retenção, talento, organograma, remoto]
+    primary_agent: coo-orchestrator
+    secondary_agent: vision-chief
+    description: "Escala de equipe, design organizacional, construção de cultura e estratégia de talentos"
+
+  fundraising:
+    keywords: [captação, investidores, pitch, valuation, series, seed, venture-capital, VC, anjos, runway, cap-table, term-sheet]
+    primary_agent: vision-chief
+    secondary_agent: cmo-architect
+    description: "Estratégia de captação, relações com investidores, preparação de pitch e planejamento financeiro"

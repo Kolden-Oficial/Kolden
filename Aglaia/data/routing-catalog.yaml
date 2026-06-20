@@ -1,0 +1,82 @@
+# Catálogo de Roteamento: Brand Squad
+# Mapeia palavras-chave para agentes especialistas para roteamento rápido
+# Referenciado por: tasks/diagnose.md
+
+domains:
+  brand_equity:
+    keywords: [valor de marca, brand equity, valor da marca, lealdade de marca, awareness de marca, conhecimento de marca, associações de marca, modelo de equity, CBBE]
+    primary_agent: david-aaker
+    secondary_agent: kevin-keller
+    description: "Mensuração, construção e gestão de brand equity"
+
+  brand_identity:
+    keywords: [identidade de marca, identity prism, prisma de identidade, DNA de marca, personalidade de marca, cultura de marca, essência de marca]
+    primary_agent: jean-noel-kapferer
+    secondary_agent: alina-wheeler
+    description: "Sistemas de identidade de marca — o Identity Prism de Kapferer e a definição do DNA de marca"
+
+  positioning:
+    keywords: [posicionamento, categoria, foco, diferenciação, possuir uma palavra, criação de categoria, posição competitiva]
+    primary_agent: al-ries
+    secondary_agent: marty-neumeier
+    description: "Posicionamento de mercado e estratégia de categoria — os princípios de posicionamento de Ries"
+
+  evidence_based:
+    keywords: [how brands grow, disponibilidade mental, disponibilidade física, ativos distintivos, alcance, penetração, marketing de massa]
+    primary_agent: byron-sharp
+    secondary_agent: kevin-keller
+    description: "Marketing baseado em evidências — a metodologia How Brands Grow de Sharp"
+
+  messaging:
+    keywords: [StoryBrand, messaging, mensagem, one-liner, brand script, copy de site, funil de marketing, clarifique sua mensagem]
+    primary_agent: donald-miller
+    secondary_agent: miller-sticky-brand
+    description: "Framework de messaging StoryBrand — mensagem clara que vende"
+
+  visual_identity:
+    keywords: [logo, logotipo, identidade visual, brand guidelines, manual de marca, sistema de design, elementos de marca, pontos de contato]
+    primary_agent: alina-wheeler
+    secondary_agent: archetype-consultant
+    description: "Sistemas de identidade visual, brand guidelines e sistemas de design"
+
+  brand_culture:
+    keywords: [cultura de marca, marca empregadora, marca interna, fusão, experiência do colaborador, alinhamento de cultura]
+    primary_agent: denise-yohn
+    secondary_agent: donald-miller
+    description: "Fusão marca-cultura — alinhar a cultura interna com a promessa externa da marca"
+
+  startup_brand:
+    keywords: [marca de startup, marca DTC, lançar marca, marca desde o primeiro dia, marca nova, criação de marca]
+    primary_agent: emily-heyward
+    secondary_agent: marty-neumeier
+    description: "Branding de startup e DTC — construir marca desde o primeiro dia"
+
+  luxury_brand:
+    keywords: [luxo, premium, prestígio, estratégia de luxo, anti-leis, alto padrão, exclusivo]
+    primary_agent: jean-noel-kapferer
+    secondary_agent: david-aaker
+    description: "Estratégia de marca de luxo e premium — as anti-leis do luxo de Kapferer"
+
+  naming:
+    keywords: [naming, nome de marca, renomear, geração de nome, domínio, estratégia de nome, nomenclatura]
+    primary_agent: naming-strategist
+    secondary_agent: domain-scout
+    description: "Estratégia de naming de marca, geração de nomes e disponibilidade de domínio"
+
+  archetype:
+    keywords: [arquétipo, personalidade de marca, caráter de marca, Jung, herói, rebelde, sábio, mago, cara comum]
+    primary_agent: archetype-consultant
+    secondary_agent: jean-noel-kapferer
+    description: "Arquétipos e personalidade de marca — framework junguiano para o caráter da marca"
+
+  brand_architecture:
+    keywords: [arquitetura de marca, submarcas, branded house, house of brands, portfólio, hierarquia de marca, extensões]
+    primary_agent: david-aaker
+    secondary_agent: kevin-keller
+    description: "Arquitetura de marca e estratégia de portfólio — submarcas, extensões, gestão de portfólio"
+
+  differentiation_debate:
+    keywords: [diferenciação vs distintividade, devemos diferenciar, zag, brand gap, diferenciação radical]
+    primary_agent: marty-neumeier
+    secondary_agent: byron-sharp
+    description: "Debate diferenciação vs distintividade — o Zag de Neumeier vs a distintividade de Sharp. Roteie ambos para uma visão equilibrada."

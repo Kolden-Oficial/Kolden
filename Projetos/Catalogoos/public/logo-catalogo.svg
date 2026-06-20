@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" fill="none" role="img" aria-label="CataLogo">
+  <!-- Glyph: minimal price tag with checkmark -->
+  <g transform="translate(2, 6)">
+    <path d="M3 12 L18 3 L33 8 L33 26 L18 35 L3 26 Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" fill="none"/>
+    <circle cx="22" cy="12" r="2.2" fill="currentColor"/>
+    <path d="M11 19 L16 24 L25 14" stroke="#FFC107" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <!-- Wordmark: single weight, single color -->
+  <text x="48" y="32" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="22" fill="currentColor" letter-spacing="-0.6">CataLogo</text>
+</svg>
