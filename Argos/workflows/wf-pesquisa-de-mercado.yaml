@@ -1,0 +1,135 @@
+# Workflow de Pesquisa de Mercado — Argos
+# Do macro (TAM/tendências) ao micro (concorrente post-a-post), com gate de confiabilidade
+# que falha cedo: nenhum dado sem proveniência avança.
+# Versão: 1.0.0
+
+workflow:
+  id: wf-pesquisa-de-mercado
+  name: "Pesquisa de Mercado — do macro ao micro"
+  version: "1.0.0"
+  trigger: "*journey"
+  entry_agent: argos-chief
+  description: "A jornada completa de inteligência de mercado: definir escopo, dimensionar o mercado, mapear SERP/links, varrer as redes sociais (fan-out), coletar anúncios pagos, consolidar concorrência e sintetizar um relatório 100% citado. Cada fase tem um checkpoint que pode dar HALT por falta de proveniência ou autorização."
+  estimated_duration: "1 sessão de trabalho profundo (coletas pesadas e zona cinza correm sob autorização)"
+  type: sequential
+
+inputs:
+  - name: nicho
+    required: true
+    description: "O mercado/nicho a pesquisar (ex.: 'cursos de inglês online no Brasil')"
+  - name: concorrentes
+    required: false
+    description: "Lista de concorrentes-alvo (serão descobertos se não fornecidos)"
+  - name: geografia
+    required: false
+    description: "Recorte geográfico (país/região/idioma)"
+  - name: profundidade
+    required: false
+    description: "macro (só mercado) | meso (concorrência) | micro (raio-X de concorrente) | completo"
+
+phases:
+  - id: phase_0_escopo
+    name: "Triagem & Escopo"
+    agent: argos-chief
+    task: diagnose.md
+    depends_on: []
+    description: "Definir nicho, geografia, concorrentes-alvo, profundidade (macro/meso/micro) e se a coleta exigirá zona cinza (autorização antecipada via compliance-sentinela)"
+    checkpoint:
+      gate: "Escopo, profundidade e lista de concorrentes definidos; necessidade de zona cinza decidida"
+      veto: "argos-chief pede esclarecimento se o pedido for ambíguo; HALT se zona cinza for necessária e não autorizada"
+      required_output: "Plano de pesquisa: nicho, geografia, concorrentes, trilhas (orgânico/pago/SEO/sizing), modo (verde/cinza)"
+
+  - id: phase_1_sizing
+    name: "Visão Macro / Sizing"
+    agent: market-sizer
+    secondary: [research-synthesizer]
+    task: dimensionar-mercado.md
+    depends_on: [phase_0_escopo]
+    description: "Dimensionar TAM/SAM/SOM (top-down e bottom-up) e ler tendências macro e comportamento de audiência"
+    checkpoint:
+      gate: "TAM/SAM/SOM com método declarado e cada número com fonte + data"
+      veto: "argos-chief dá HALT em número sem fonte/método ou TAM 'de cima pra baixo' como verdade absoluta"
+      required_output: "Sumário de mercado: TAM/SAM/SOM (método+fonte), tendências datadas"
+
+  - id: phase_2_serp_links
+    name: "SERP/SEO & Mapa de Links"
+    agent: serp-seo-cartografo
+    secondary: [web-harvester]
+    task: mapear-serp-e-links.md
+    depends_on: [phase_0_escopo]
+    description: "Rankings, palavras-chave, backlinks, footprint digital dos concorrentes e extração exaustiva de links"
+    checkpoint:
+      gate: "Mapa de presença digital por concorrente; links deduplicados e classificados"
+      veto: "argos-chief rejeita links sem deduplicação/proveniência ou volume de busca inventado"
+      required_output: "Mapa SERP/SEO + footprint digital + lista de links por concorrente"
+
+  - id: phase_3_social
+    name: "Presença Orgânica por Rede (fan-out)"
+    agent: [social-instagram, social-tiktok, social-youtube, social-linkedin, social-x, social-facebook, social-reddit]
+    secondary: [compliance-sentinela]
+    task: scan-rede.md
+    depends_on: [phase_0_escopo]
+    parallel: true
+    description: "Varredura paralela das 7 redes: perfis, frequência, engajamento, top posts, tendências. Coleta autenticada só sob autorização do sentinela"
+    checkpoint:
+      gate: "Dossiê por rede com timestamp de coleta; cada métrica com fonte"
+      veto: "argos-chief dá HALT em dado de rede sem fonte ao vivo, ou em coleta de zona cinza não autorizada"
+      required_output: "Dossiê orgânico por rede (perfis, métricas observáveis, top posts) — pago marcado para a fase 4"
+
+  - id: phase_4_pago
+    name: "Inteligência de Pago"
+    agent: ads-intel
+    task: ad-library-scan.md
+    depends_on: [phase_0_escopo]
+    description: "Coletar anúncios ativos nas ad libraries públicas (Meta/Google/TikTok/LinkedIn): criativos, datas, ângulos"
+    checkpoint:
+      gate: "Painel de anúncios ativos por concorrente com fonte (ad library) + data observada"
+      veto: "argos-chief dá HALT se 'anúncio ativo' não tiver URL/print da library, ou se pago for misturado com orgânico"
+      required_output: "Painel de anúncios pagos por concorrente (criativos, longevidade=inferência, ângulos)"
+
+  - id: phase_5_consolidacao
+    name: "Consolidação de Concorrência"
+    agent: competitor-mapper
+    task: dossie-concorrente.md
+    depends_on: [phase_1_sizing, phase_2_serp_links, phase_3_social, phase_4_pago]
+    description: "Fundir orgânico + pago + SEO/links num dossiê por concorrente, com as trilhas separadas"
+    checkpoint:
+      gate: "Dossiê completo por concorrente cruzando os canais; orgânico e pago em colunas distintas"
+      veto: "argos-chief rejeita dossiê com contradição entre fontes não resolvida ou trilhas misturadas"
+      required_output: "Dossiê por concorrente (identidade, posicionamento, orgânico, pago, SEO, lacunas)"
+
+  - id: phase_6_sintese
+    name: "Cross-check & Síntese"
+    agent: research-synthesizer
+    task: sintetizar-relatorio.md
+    depends_on: [phase_5_consolidacao]
+    description: "Verificação adversarial de cada afirmação, citação obrigatória e montagem do relatório macro→micro"
+    checkpoint:
+      gate: "Checklist de confiabilidade (ARGOS-CL-001) 100% dos CRÍTICOS aprovados"
+      veto: "GATE INVIOLÁVEL — HALT em qualquer dado sem fonte+timestamp, número de fonte única como 'verificado', ou zona cinza não autorizada"
+      required_output: "Relatório de inteligência macro→micro, 100% citado, com rótulos de confiança"
+
+  - id: phase_7_entrega
+    name: "Entrega + Aprovação + Handoff"
+    agent: argos-chief
+    depends_on: [phase_6_sintese]
+    description: "Apresentar o relatório; operações que mudam algo (cron de monitoramento, nova coleta cinza) exigem aprovação humana; preparar handoff aos squads de execução"
+    checkpoint:
+      gate: "Relatório entregue; handoffs nomeados; nada que 'muda o mundo' executado sem aprovação"
+      veto: "argos-chief não agenda monitoramento recorrente nem executa zona cinza sem aprovação humana explícita"
+      required_output: "Relatório final + pacote(s) de handoff (Peitho/Pheme/Caliope/Pluto/Aletheia/Metis)"
+
+completion_criteria:
+  - "O mercado foi dimensionado com método declarado (TAM/SAM/SOM)"
+  - "Todos os concorrentes-alvo foram mapeados cross-rede (orgânico + pago + SEO)"
+  - "Todo dado no relatório tem proveniência (fonte + timestamp) e rótulo de confiança"
+  - "Operações de zona cinza, se houve, foram autorizadas e sinalizadas"
+  - "O relatório macro→micro foi entregue 100% citado, com handoffs preparados"
+
+error_handling:
+  dado_sem_proveniencia: "HALT na síntese. Voltar à fase de origem para coletar fonte+timestamp ou rebaixar a 'não confirmado'. NÃO publicar."
+  fonte_unica: "Marcar 'fonte única — não confirmado' e tentar segunda fonte independente antes de promover a verificado."
+  anti_bot_ban: "Erro 403/429 ou captcha: backoff + Scrapling stealth; rotação de proxy via compliance-sentinela; cair para fonte alternativa legítima."
+  zona_cinza_necessaria: "Se a única via for scraping autenticado: PARAR e pedir autorização humana ao compliance-sentinela (conta/proxy descartável). Sem autorização, reportar a lacuna honestamente."
+  dado_obsoleto: "Sinalizar idade; rebaixar dados acima do limite de recência; priorizar coleta ao vivo."
+  escalada: "Decisões que mudam o mundo (agendar monitoramento, queimar conta) são sempre do Ronan; o squad entrega a inteligência, não executa sozinho."

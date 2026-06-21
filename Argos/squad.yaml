@@ -1,0 +1,193 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Argos
+# Domínio: Inteligência de Mercado por Scraping (do macro ao micro)
+# Versão: 1.0.0
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: argos
+  display_name: "Argos — Inteligência de Mercado & Scraping (o deus das pesquisas)"
+  version: "1.0.0"
+  domain: "Pesquisa de Mercado, Inteligência Competitiva e Scraping (do macro ao micro)"
+  description: |
+    Um squad de inteligência de mercado que vai do macro ao micro: dimensiona o mercado
+    (TAM/SAM/SOM), lê tendências e comportamento de audiência no topo; e desce até o
+    concorrente individual analisado post-a-post na base. Mapeia toda a presença orgânica
+    e paga de um mercado e de seus concorrentes em todas as redes sociais (Instagram, TikTok,
+    YouTube, LinkedIn, X/Twitter, Facebook, Reddit), coleta anúncios em ad libraries públicas,
+    extrai links e SEO/SERP, e revela os "dados que só o scraping mostra" — sempre com fonte
+    e timestamp em cada dado.
+
+    Argos é o gigante grego de cem olhos (Panoptes) que tudo vê e nunca dorme por inteiro:
+    o squad é vigilância de mercado onipresente e contínua. É a camada de INTELIGÊNCIA da
+    Kolden — descobre e verifica a verdade do mercado, depois faz handoff para os squads de
+    execução (Peitho, Pheme, Caliope, Pluto, Aletheia, Metis). O apetite de risco é HÍBRIDO:
+    a base usa fontes legítimas (APIs oficiais, ad libraries públicas, SERP, web pública); o
+    scraping de área cinzenta (redes sociais via credencial) vive num módulo isolado opt-in,
+    sob o portão do compliance-sentinela.
+  keywords: [pesquisa-de-mercado, market-research, inteligencia-competitiva, competitive-intelligence, concorrente, concorrencia, competitor, benchmark, scraping, scrape, raspagem, crawler, crawl, extrair-dados, extrair-links, tam, sam, som, tamanho-de-mercado, sizing, tendencias, trends, audiencia, comportamento, ad-library, biblioteca-de-anuncios, anuncios, organico, pago, seo, serp, ranking, palavras-chave, backlinks, instagram, tiktok, youtube, linkedin, twitter, x, facebook, reddit, dossie, osint]
+  entry_agent: argos-chief
+  created_at: "2026-06-20"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [argos-chief]
+    purpose: "Triagem, definição de escopo (macro/micro/rede), roteamento, síntese e o gate de confiabilidade. Nunca scrapeia diretamente."
+  tier_1:
+    name: "Inteligência Funcional"
+    agents: [web-harvester, serp-seo-cartografo, ads-intel, market-sizer, competitor-mapper, research-synthesizer]
+    purpose: "Coleta e análise por função: scraping geral/anti-bot, SERP/SEO/links, inteligência de pago (ad libraries), sizing macro, consolidação de concorrência e síntese com citação."
+  tier_2:
+    name: "Redes Sociais (orgânico)"
+    agents: [social-instagram, social-tiktok, social-youtube, social-linkedin, social-x, social-facebook, social-reddit]
+    purpose: "Especialistas por rede: anatomia, algoritmo, métricas e via de acesso legítima de cada plataforma; escalam ao sentinela quando precisam de zona cinza."
+  tier_3:
+    name: "Compliance"
+    agents: [compliance-sentinela]
+    purpose: "Guardião de ToS. Classifica cada operação VERDE/CINZA, é o único portão para o módulo cinza e gerencia contas/proxies descartáveis. Encarna o veto do squad."
+
+agents:
+  argos-chief:
+    file: agents/argos-chief.md
+    tier: 0
+    icon: "👁️"
+    focus: "Orquestração, escopo macro→micro, roteamento, síntese e gate de confiabilidade (fonte+timestamp+cross-check)"
+  web-harvester:
+    file: agents/web-harvester.md
+    tier: 1
+    icon: "🕸️"
+    focus: "Scraping web geral, anti-bot/stealth, render JS, extração exaustiva de links (Scrapling/Scrapy/Crawlee + browser_* Hermes)"
+  serp-seo-cartografo:
+    file: agents/serp-seo-cartografo.md
+    tier: 1
+    icon: "🗺️"
+    focus: "SERP, rankings, keywords, backlinks, sitemaps, mapa de propriedades digitais do concorrente"
+  ads-intel:
+    file: agents/ads-intel.md
+    tier: 1
+    icon: "📢"
+    focus: "Inteligência de pago via ad libraries públicas (Meta/Google/TikTok/LinkedIn); criativos, datas, segmentação inferida"
+  market-sizer:
+    file: agents/market-sizer.md
+    tier: 1
+    icon: "📐"
+    focus: "TAM/SAM/SOM top-down e bottom-up, tendências, dados oficiais e Apollo para sizing de empresas"
+  competitor-mapper:
+    file: agents/competitor-mapper.md
+    tier: 1
+    icon: "🎯"
+    focus: "Dossiê por concorrente cruzando orgânico + pago + SEO em todas as redes; separa as trilhas"
+  research-synthesizer:
+    file: agents/research-synthesizer.md
+    tier: 1
+    icon: "🧠"
+    focus: "Pesquisa LLM multi-fonte (GPT-Researcher), cross-check adversarial, citação obrigatória, relatório macro→micro"
+  social-instagram:
+    file: agents/social-instagram.md
+    tier: 2
+    icon: "📸"
+    focus: "Instagram: perfis, Reels, engajamento, hashtags, criadores; via legítima (embed/web/SERP) ou escala ao sentinela"
+  social-tiktok:
+    file: agents/social-tiktok.md
+    tier: 2
+    icon: "🎵"
+    focus: "TikTok: vídeos, sons, hashtags, Creative Center, tendências; via legítima ou zona cinza sob sentinela"
+  social-youtube:
+    file: agents/social-youtube.md
+    tier: 2
+    icon: "▶️"
+    focus: "YouTube: canais, vídeos, métricas públicas, tags, tendências (Data API / web)"
+  social-linkedin:
+    file: agents/social-linkedin.md
+    tier: 2
+    icon: "💼"
+    focus: "LinkedIn: páginas de empresa, headcount, contratações, posts, anúncios; legítimo ou sentinela"
+  social-x:
+    file: agents/social-x.md
+    tier: 2
+    icon: "🐦"
+    focus: "X/Twitter: perfis, posts, engajamento, tendências (x_search via xAI; twscrape só pela zona cinza)"
+  social-facebook:
+    file: agents/social-facebook.md
+    tier: 2
+    icon: "👥"
+    focus: "Facebook: páginas, grupos públicos, Ad Library (transparência de página), engajamento"
+  social-reddit:
+    file: agents/social-reddit.md
+    tier: 2
+    icon: "🤖"
+    focus: "Reddit: subreddits, threads, sentimento de comunidade, dores reais discutidas (API pública)"
+  compliance-sentinela:
+    file: agents/compliance-sentinela.md
+    tier: 3
+    icon: "🛡️"
+    focus: "Classificação ToS VERDE/CINZA, portão único do módulo cinza, contas/proxies descartáveis via Infisical, veto"
+
+handoffs:
+  # Roteamento interno (orquestrador → especialistas)
+  argos-chief:
+    routes_to: [web-harvester, serp-seo-cartografo, ads-intel, market-sizer, competitor-mapper, research-synthesizer, social-instagram, social-tiktok, social-youtube, social-linkedin, social-x, social-facebook, social-reddit, compliance-sentinela]
+  web-harvester:
+    escalates_to: [argos-chief, compliance-sentinela]
+  serp-seo-cartografo:
+    escalates_to: [argos-chief]
+  ads-intel:
+    escalates_to: [argos-chief]
+  market-sizer:
+    escalates_to: [argos-chief]
+  competitor-mapper:
+    escalates_to: [argos-chief, research-synthesizer]
+  research-synthesizer:
+    escalates_to: [argos-chief]
+  social-instagram:
+    escalates_to: [argos-chief, compliance-sentinela]
+  social-tiktok:
+    escalates_to: [argos-chief, compliance-sentinela]
+  social-youtube:
+    escalates_to: [argos-chief, compliance-sentinela]
+  social-linkedin:
+    escalates_to: [argos-chief, compliance-sentinela]
+  social-x:
+    escalates_to: [argos-chief, compliance-sentinela]
+  social-facebook:
+    escalates_to: [argos-chief, compliance-sentinela]
+  social-reddit:
+    escalates_to: [argos-chief, compliance-sentinela]
+  compliance-sentinela:
+    escalates_to: [argos-chief]
+
+# Handoffs externos: Argos descobre e verifica; os squads de execução agem sobre a inteligência.
+external_handoffs:
+  inteligencia_de_trafego:
+    to: peitho
+    artifact: "Dossiê de anúncios ativos do concorrente + ângulos pagos que funcionam → estratégia de mídia"
+  insumos_de_conteudo:
+    to: pheme
+    artifact: "Top posts orgânicos, formatos e cadência por rede → calendário e produção de conteúdo"
+  angulos_de_copy:
+    to: caliope
+    artifact: "Dores reais (Reddit/reviews), promessas e ganchos que performam → copy e VSL"
+  oferta_e_preco:
+    to: pluto
+    artifact: "Preços e posicionamento dos concorrentes + lacunas de mercado → oferta e precificação"
+  evidencia_de_mercado:
+    to: aletheia
+    artifact: "Sizing e sinais de demanda → validação de hipótese de mercado (entrada do funil)"
+  benchmark_de_metricas:
+    to: metis
+    artifact: "Benchmarks de engajamento/crescimento do setor → North Star e metas de growth"
+
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad — viram reflexo PreToolUse + checklist + checkpoint de workflow.
+  veto:
+    nada_sem_proveniencia: "HALT em qualquer relatório que contenha dado-fato sem fonte explícita + timestamp de coleta. Dado sem origem é descartado ou rebaixado a 'não confirmado'."
+    zona_cinza_sem_autorizacao: "HALT em qualquer scraping autenticado / módulo cinza sem confirmação humana explícita na sessão + conta/proxy descartável via Infisical."
+
+settings:
+  activation:
+    prefix: "argos"
+    example: "@argos:competitor-mapper"
+    modulo_cinza: false   # opt-in explícito por sessão; o compliance-sentinela é o único portão
