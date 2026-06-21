@@ -1,0 +1,13 @@
+# Ambientes e dependências instaladas (reconstruíveis via requirements.txt / package.json)
+motor/.venv/
+motor/crawlee-node/node_modules/
+**/__pycache__/
+*.pyc
+
+# Estado efêmero dos reflexos e logs de auditoria
+.claude/.estado/
+registros/*.log
+
+# Saídas de coleta temporárias
+*.tmp
+links.json

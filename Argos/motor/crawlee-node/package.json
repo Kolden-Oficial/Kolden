@@ -1,0 +1,14 @@
+{
+  "name": "argos-crawlee-node",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Camada JS do motor Argos — Crawlee (pool de browsers para JS pesado). Invocada pela fachada motor/argos-engine.py.",
+  "scripts": {
+    "harvest": "node harvest.mjs"
+  },
+  "dependencies": {
+    "crawlee": "^3.17.0",
+    "playwright": "^1.49.0"
+  }
+}
