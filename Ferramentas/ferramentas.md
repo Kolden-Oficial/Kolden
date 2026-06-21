@@ -49,6 +49,7 @@ GitHub, fórum, API) e status de MCP.
 | Exa | `/kolden/prod/EXA_API_KEY` | [Exa](Exa/ferramentas.md) | ✅ |
 | Firecrawl | `/kolden/prod/FIRECRAWL_API_KEY` | [Firecrawl](Firecrawl/ferramentas.md) | ✅ |
 | Browserbase | `/kolden/prod/BROWSERBASE_API_KEY`, `/kolden/prod/BROWSERBASE_PROJECT_ID` | [Browserbase](Browserbase/ferramentas.md) | ✅ |
+| Apify | `/kolden/dev/APIFY_TOKEN`, `/kolden/dev/APIFY_USER_ID` | [Apify](Apify/ferramentas.md) | ✅ |
 | Context7 | `/kolden/prod/CONTEXT7_API_KEY` | [Context7](Context7/ferramentas.md) | ✅ |
 
 ## ☁️ Infra / Deploy
@@ -80,6 +81,7 @@ GitHub, fórum, API) e status de MCP.
 | Ferramenta | Credenciais (Infisical) | Manual | MCP |
 |------------|-------------------------|--------|-----|
 | GoHighLevel | `/kolden/prod/GHL_PIT_KEY`, `GHL_AGENCY_KEY`, `GHL_LOCATION_ID` (+ tokens em `dev`) | [GoHighLevel](GoHighLevel/ferramentas.md) | 🔌 |
+| Postiz *(publicação social — self-host)* | `/kolden/prod/POSTIZ_API_KEY`, `POSTIZ_API_URL`, `POSTIZ_JWT_SECRET` *(a cadastrar)* | [Postiz](Postiz/ferramentas.md) | 🟡 |
 | Meta (Ads / Conversions API) *(dev)* | `/kolden/dev/META_CAPI_TOKEN`, `/kolden/dev/META_PIXEL_ID` | [Meta](Meta/ferramentas.md) | 🟡 |
 | Synter *(dev)* | `/kolden/dev/SYNTER_API_KEY` | [Synter](Synter/ferramentas.md) | ✅ |
 

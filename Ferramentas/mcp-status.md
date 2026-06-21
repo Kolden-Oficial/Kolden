@@ -65,6 +65,7 @@ Estado final dos servidores MCP (`claude mcp list`). Atualizado em 2026-06-18.
 | Railway | O `RAILWAY_API_TOKEN` é um **Project Token** (GraphQL `me` → Not Authorized); o CLI 5.15.0 está instalado | Criar **Account Token** em railway.app/account/tokens, atualizar `RAILWAY_API_TOKEN`, depois `claude mcp add --scope user railway -- infisical run … -- railway mcp` |
 | Deepgram | Não há CLI `dg` em npm/winget/pip (binário GitHub); a **API key é válida** p/ uso direto | Instalar binário de github.com/deepgram/cli/releases → `claude mcp add --scope user deepgram -- infisical run … -- dg mcp` |
 | Glama | A `GLAMA_API_KEY` (`glama_…`) é a API geral; o **Gateway LLM** rejeita ("unrecognized API key prefix") | Gerar uma key na seção **Gateway** do Glama e atualizar `GLAMA_API_KEY` |
+| Apify | Chave `APIFY_TOKEN` (+ `APIFY_USER_ID`) cadastrada no env **dev**; camada `apify` do motor do Argos validada com actor real; MCP **oficial** ainda não adicionado via `claude mcp add` | Rodar `claude mcp add --scope user apify -- infisical run --projectId=43d90b85-ca09-437c-b8f2-364b5cbe6093 --env=dev -- npx -y @apify/actors-mcp-server` (detalhes em `Apify/ferramentas.md`) |
 
 > **Upstash:** ✅ resolvido — conectado em user scope com `--email adm@kolden.com.br` (key lida do env, sem `bash`).
 

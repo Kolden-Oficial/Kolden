@@ -27,8 +27,8 @@
 #   0.60 <= relevancia < 0.90 e adaptabilidade.score >= 0.6 -> ADAPT (mude <= 30%)
 #   sem correspondência  -> CREATE (registre na Fase 8 com justificativa)
 
-versao_do_registro: "1.1.0"
-atualizado_em: "2026-06-19"
+versao_do_registro: "1.3.0"
+atualizado_em: "2026-06-21"
 
 # NOTA: Os squads abaixo foram IMPORTADOS (modo importação, sancionado pelo Ronan) dos
 # arsenais validados xquads-squads e aiox-core, traduzidos para PT-BR e renomeados com a
@@ -250,13 +250,134 @@ entidades:
     usadoPor: []
     dependencias: [dedalo]
     adaptabilidade:
-      score: 0.6
-      restricoes: ["framework grande", "tradução do conteúdo profundo em andamento"]
-      pontosDeExtensao: ["concluir tradução (tasks/docs)", "Ritual completo + PRD", "apoiar Projetos/"]
+      score: 0.7
+      restricoes: ["framework grande"]
+      pontosDeExtensao: ["Ritual completo + PRD", "apoiar Projetos/"]
     versao: "1.0.0"
     criadoEm: "2026-06-19T00:00:00Z"
-    status: importado-cru-parcial
+    traducaoConcluidaEm: "2026-06-20T00:00:00Z"
+    status: importado-cru
     origem: "SynkraAI/aiox-core@77265d5"
+
+  aletheia:
+    path: "Aletheia/"
+    tipo: squad
+    dominio: outro
+    proposito: "Squad de Discovery & Lean Validation (8: Blank, Fitzpatrick, Ulwick, Ries, Bland, Maurya, Savoia). Entrada do funil de criação: leva ideia crua a MVP validado e faz handoff para os squads de execução."
+    keywords: [descoberta, discovery, validacao, validation, entrevista, mom-test, jobs-to-be-done, jtbd, customer-development, lean-startup, mvp, experimento, hipotese, lean-canvas, pretotipagem, pretotyping, problema-solucao, product-market-fit, demanda, tam, sam, som]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.8
+      restricoes: ["personas reais preservadas (Blank, Fitzpatrick, Ulwick, Ries, Bland, Maurya, Savoia)", "veto build-sem-evidência é inviolável"]
+      pontosDeExtensao: ["adicionar especialista de pesquisa de mercado quantitativa", "integrar handoffs por arquivo com sobre-a-empresa/mercado-e-posicionamento/"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-20T00:00:00Z"
+    status: criado-pelo-ritual
+    origem: "CREATE (Ritual de 9 fases do Caos; ADAPT parcial de metis para métricas de validação via handoff). Fecha as lacunas 1-3 de descoberta/validação do roteiro do-zero-ao-MVP."
+
+  argos:
+    path: "Argos/"
+    tipo: squad
+    dominio: dados
+    proposito: "Squad de inteligência de mercado por scraping, do macro ao micro (15 agentes: orquestrador + 6 funcionais + 7 por rede social + sentinela de compliance). Dimensiona mercado (TAM/SAM/SOM), mapeia concorrentes orgânico+pago em todas as redes, extrai links/SEO, com dados ultra-confiáveis (fonte+timestamp+cross-check). Camada de inteligência: faz handoff para os squads de execução."
+    keywords: [pesquisa-de-mercado, market-research, inteligencia-competitiva, concorrente, scraping, raspagem, crawler, extrair-links, tam, sam, som, sizing, tendencias, ad-library, anuncios, organico, pago, seo, serp, backlinks, instagram, tiktok, youtube, linkedin, twitter, x, facebook, reddit, dossie, osint, audiencia]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.75
+      restricoes: ["veto nada-sem-proveniência inviolável (fonte+timestamp+cross-check)", "veto zona-cinza-sem-autorização inviolável (só via compliance-sentinela)", "separação orgânico×pago", "motor vendorizado de terceiros (ver _origem.md)"]
+      pontosDeExtensao: ["vendorizar scrapers do módulo cinza sob autorização nominal", "integrar com Hermes (cron de monitoramento + WhatsApp)", "memória vetorial p/ snapshots históricos (Supabase/Neon)"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-21T00:00:00Z"
+    status: criado-pelo-ritual
+    origem: "CREATE (Ritual de 9 fases do Caos). Motor de scraping vendorizado: Scrapling@c0f012d, Scrapy@c9f952c, gpt-researcher@b364917, Crawlee@15e77ef, Skyvern@9ba9f28 (ver Argos/_origem.md). Compliance híbrido: base verde + módulo cinza isolado opt-in."
+
+  # ── Repositórios vendorizados pelo Argos (motor de scraping) ──
+  vendor-scrapling:
+    path: "Argos/motor/scrapling/"
+    tipo: skill
+    dominio: dados
+    proposito: "Engine base de scraping anti-bot/stealth com seletores adaptativos (vendorizado). Usado pela camada 'antibot'/'estatico' do motor Argos."
+    keywords: [scraping, anti-bot, stealth, fetcher, seletor-adaptativo, scrapling]
+    usadoPor: [argos]
+    dependencias: []
+    adaptabilidade:
+      score: 0.5
+      restricoes: ["vendor de terceiro — atualizar via re-clone deliberado"]
+      pontosDeExtensao: ["chamado pela fachada motor/argos-engine.py"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-21T00:00:00Z"
+    status: importado-cru
+    origem: "D4Vinci/Scrapling@c0f012d6625528a756e3852bad9ae7500c223579 (BSD-3)"
+
+  vendor-scrapy:
+    path: "Argos/motor/scrapy/"
+    tipo: skill
+    dominio: dados
+    proposito: "Framework de crawl em escala, dedup de URL e extração exaustiva de links (vendorizado). Camada 'crawl' do motor Argos."
+    keywords: [crawl, scrapy, links, sitemap, dedup, spider]
+    usadoPor: [argos]
+    dependencias: []
+    adaptabilidade:
+      score: 0.5
+      restricoes: ["vendor de terceiro"]
+      pontosDeExtensao: ["spider em motor/spiders/links_spider.py"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-21T00:00:00Z"
+    status: importado-cru
+    origem: "scrapy/scrapy@c9f952c2584f490cd2e5c843980212abc67c2971 (BSD-3)"
+
+  vendor-gpt-researcher:
+    path: "Argos/motor/gpt-researcher/"
+    tipo: skill
+    dominio: rag
+    proposito: "Agente de pesquisa LLM multi-retriever com citação e relatório (vendorizado). Camada 'research' do motor Argos."
+    keywords: [pesquisa, llm, multi-retriever, citacao, relatorio, gpt-researcher]
+    usadoPor: [argos]
+    dependencias: []
+    adaptabilidade:
+      score: 0.6
+      restricoes: ["vendor de terceiro"]
+      pontosDeExtensao: ["retrievers plugados nos backends Hermes (Exa/Tavily/Firecrawl)"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-21T00:00:00Z"
+    status: importado-cru
+    origem: "assafelovic/gpt-researcher@b364917f55ea579c47e5ef3f038f7e56f51213df (Apache-2.0)"
+
+  vendor-crawlee:
+    path: "Argos/motor/crawlee/"
+    tipo: skill
+    dominio: dados
+    proposito: "Crawling assíncrono multi-browser (Node) para JS pesado (vendorizado). Camada 'js' do motor Argos."
+    keywords: [crawl, crawlee, node, playwright, js, browser-pool]
+    usadoPor: [argos]
+    dependencias: []
+    adaptabilidade:
+      score: 0.5
+      restricoes: ["vendor de terceiro (Node)"]
+      pontosDeExtensao: ["runner em motor/crawlee-node/harvest.mjs"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-21T00:00:00Z"
+    status: importado-cru
+    origem: "apify/crawlee@15e77ef78849f42ffcf13f44a014d5df43eebc26 (Apache-2.0)"
+
+  vendor-skyvern:
+    path: "Argos/motor/skyvern/"
+    tipo: skill
+    dominio: dados
+    proposito: "Automação de browser por visão LLM em DOM hostil (vendorizado). Camada 'visao' do motor Argos. ATENÇÃO: AGPL-3.0 — uso interno; revisar antes de distribuição externa."
+    keywords: [browser, visao, vision, automacao, dom-hostil, skyvern, agpl]
+    usadoPor: [argos]
+    dependencias: []
+    adaptabilidade:
+      score: 0.5
+      restricoes: ["vendor de terceiro", "AGPL-3.0 — não distribuir externamente sem revisão jurídica"]
+      pontosDeExtensao: ["combinar com vision_analyze nativo do Hermes"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-21T00:00:00Z"
+    status: importado-cru
+    origem: "Skyvern-AI/skyvern@9ba9f28dd3176ec9bc0204c675184ea4a362a7f3 (AGPL-3.0)"
 
 _exemplos_antigos:
   # Vazio na fundação. Cada criação preenche este bloco via Fase 8.
