@@ -1,0 +1,58 @@
+# Índice machine-readable da Biblioteca de Mentes do Liceu.
+# Curado pelo `bibliotecario` (tier 2). Federado: a mente vive no seu arquivo
+# canônico; este índice APONTA para ele — nunca duplica conteúdo nem move arquivos.
+# Convenção alinhada ao Caos e ao indice.yaml do sobre-a-empresa.
+versao: 1
+atualizado-em: 2026-06-22
+principio: "índice federado — caminho-canonico aponta ao arquivo onde a mente vive; nunca duplicar"
+
+# Campos por mente (schema espelha o frontmatter de mentes/_modelo-dossie.md):
+#   id                 — kebab-case, único (ex.: ernest-dichter)
+#   nome               — nome completo
+#   dominio            — lista de domínios (ex.: [marketing, psicanalise])
+#   status             — em-disseccao | rascunho | vigente | arquivado
+#   caminho-canonico   — onde a mente VIVE (dossiê novo OU persona de squad existente)
+#   linhagens          — slugs em linhagens/ que conectam esta mente
+#   frameworks_kolden  — slugs em frameworks/ que esta mente alimenta
+#   persona_canonica   — se já é agente num squad, aponta o .md (não duplicar); senão null
+#   confianca_da_fonte — alta | media | baixa (média ponderada das afirmações do dossiê)
+
+# Populado pelo `bibliotecario` a cada dissecação/indexação. Começa VAZIO.
+# Abaixo, UMA entrada de EXEMPLO (comentada) com todos os campos — não é uma mente real:
+mentes:
+  - id: edward-bernays
+    nome: "Edward Bernays"
+    dominio: [relacoes-publicas, propaganda, psicanalise-aplicada, marketing]
+    status: vigente
+    caminho-canonico: mentes/edward-bernays/dossie.md
+    linhagens: [psicanalise-do-desejo]
+    frameworks_kolden: [matriz-de-desejo-inconsciente]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: ernest-dichter
+    nome: "Ernest Dichter"
+    dominio: [marketing, psicanalise, comportamento-do-consumidor]
+    status: vigente
+    caminho-canonico: mentes/ernest-dichter/dossie.md
+    linhagens: [psicanalise-do-desejo]
+    frameworks_kolden: [matriz-de-desejo-inconsciente]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: jacques-lacan
+    nome: "Jacques Lacan"
+    dominio: [psicanalise, filosofia, semiotica]
+    status: vigente
+    caminho-canonico: mentes/jacques-lacan/dossie.md
+    linhagens: [psicanalise-do-desejo]
+    frameworks_kolden: [matriz-de-desejo-inconsciente]
+    persona_canonica: null
+    confianca_da_fonte: media
+  #
+  # Exemplo de mente JÁ existente num squad (indexada por referência, não duplicada):
+  # - id: eugene-schwartz
+  #   nome: "Eugene Schwartz"
+  #   dominio: [copywriting]
+  #   status: vigente
+  #   caminho-canonico: ../Caliope/agents/eugene-schwartz.md
+  #   persona_canonica: ../Caliope/agents/eugene-schwartz.md
+  #   confianca_da_fonte: alta

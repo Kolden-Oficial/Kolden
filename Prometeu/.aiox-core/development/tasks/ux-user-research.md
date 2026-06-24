@@ -1,4 +1,4 @@
-# User Research & Needs Analysis
+# Pesquisa de Usuário e Análise de Necessidades
 
 > **Task ID:** ux-user-research
 > **Agent:** UX-Design Expert
@@ -7,30 +7,30 @@
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro de logs
+- Interação mínima do usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Antecipado Abrangente
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução sem ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: uxUserResearch()
@@ -76,9 +76,9 @@ atomic_layer: Strategy
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -94,9 +94,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
@@ -112,9 +112,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
@@ -130,57 +130,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** task-runner
-  - **Purpose:** Task execution and orchestration
-  - **Source:** .aiox-core/core/task-runner.js
+- **Ferramenta:** task-runner
+  - **Propósito:** Execução e orquestração de tasks
+  - **Fonte:** .aiox-core/core/task-runner.js
 
-- **Tool:** logger
-  - **Purpose:** Execution logging and error tracking
-  - **Source:** .aiox-core/utils/logger.js
+- **Ferramenta:** logger
+  - **Propósito:** Registro de logs de execução e rastreamento de erros
+  - **Fonte:** .aiox-core/utils/logger.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** execute-task.js
-  - **Purpose:** Generic task execution wrapper
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/execute-task.js
+  - **Propósito:** Wrapper genérico de execução de task
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/execute-task.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Task Not Found
-   - **Cause:** Specified task not registered in system
-   - **Resolution:** Verify task name and registration
-   - **Recovery:** List available tasks, suggest similar
+1. **Erro:** Task Not Found
+   - **Causa:** Task especificada não registrada no sistema
+   - **Resolução:** Verificar o nome e o registro da task
+   - **Recuperação:** Listar tasks disponíveis, sugerir similares
 
-2. **Error:** Invalid Parameters
-   - **Cause:** Task parameters do not match expected schema
-   - **Resolution:** Validate parameters against task definition
-   - **Recovery:** Provide parameter template, reject execution
+2. **Erro:** Invalid Parameters
+   - **Causa:** Parâmetros da task não correspondem ao schema esperado
+   - **Resolução:** Validar parâmetros contra a definição da task
+   - **Recuperação:** Fornecer template de parâmetros, rejeitar execução
 
-3. **Error:** Execution Timeout
-   - **Cause:** Task exceeds maximum execution time
-   - **Resolution:** Optimize task or increase timeout
-   - **Recovery:** Kill task, cleanup resources, log state
+3. **Erro:** Execution Timeout
+   - **Causa:** Task excede o tempo máximo de execução
+   - **Resolução:** Otimizar a task ou aumentar o timeout
+   - **Recuperação:** Encerrar a task, limpar recursos, registrar estado
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-20 min (estimated)
@@ -188,12 +188,12 @@ cost_estimated: $0.003-0.015
 token_usage: ~2,000-8,000 tokens
 ```
 
-**Optimization Notes:**
-- Iterative analysis with depth limits; cache intermediate results; batch similar operations
+**Notas de Otimização:**
+- Análise iterativa com limites de profundidade; cachear resultados intermediários; agrupar operações similares em lote
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -209,309 +209,309 @@ updated_at: 2025-11-17
 ---
 
 
-## 📋 Description
+## 📋 Descrição
 
-Conduct comprehensive user research, interviews, surveys, and needs analysis to understand target users, their pain points, goals, and behaviors. Generate personas, user journey maps, and actionable design insights.
-
----
-
-## 🎯 Objectives
-
-- Understand who the users are (demographics, behaviors, goals)
-- Identify pain points and frustrations in current solutions
-- Discover opportunities for improvement
-- Create evidence-based personas and user journeys
-- Document insights that drive design decisions
+Conduza pesquisa de usuário abrangente, entrevistas, surveys e análise de necessidades para entender os usuários-alvo, suas dores, objetivos e comportamentos. Gere personas, mapas de jornada do usuário e insights de design acionáveis.
 
 ---
 
-## 📊 Research Methods
+## 🎯 Objetivos
 
-### Method 1: User Interviews
-**When to use:** Deep qualitative insights, early discovery
-**Participants:** 5-10 users (representative sample)
-**Duration:** 30-60 minutes per interview
-**Output:** Interview transcripts, key quotes, themes
+- Entender quem são os usuários (demografia, comportamentos, objetivos)
+- Identificar dores e frustrações nas soluções atuais
+- Descobrir oportunidades de melhoria
+- Criar personas e jornadas de usuário baseadas em evidências
+- Documentar insights que orientam decisões de design
 
-### Method 2: Surveys
-**When to use:** Quantitative validation, large sample
-**Participants:** 50+ users
-**Duration:** 10-15 minutes to complete
-**Output:** Statistical data, usage patterns, preferences
+---
 
-### Method 3: Analytics Review
-**When to use:** Behavioral data, existing products
-**Source:** Google Analytics, Mixpanel, Hotjar, etc.
-**Output:** Usage patterns, drop-off points, popular features
+## 📊 Métodos de Pesquisa
 
-### Method 4: Competitor Analysis
-**When to use:** Market context, best practices
-**Scope:** 3-5 competitors
-**Output:** Feature comparison, UX patterns, opportunities
+### Método 1: Entrevistas com Usuários
+**Quando Usar:** Insights qualitativos profundos, descoberta inicial
+**Participantes:** 5-10 usuários (amostra representativa)
+**Duração:** 30-60 minutos por entrevista
+**Saída:** Transcrições de entrevistas, citações-chave, temas
 
-### Method 5: Contextual Inquiry
-**When to use:** Observe users in natural environment
-**Duration:** 2-4 hours per session
-**Output:** Workflow observations, environment insights
+### Método 2: Surveys
+**Quando Usar:** Validação quantitativa, amostra grande
+**Participantes:** 50+ usuários
+**Duração:** 10-15 minutos para completar
+**Saída:** Dados estatísticos, padrões de uso, preferências
+
+### Método 3: Revisão de Analytics
+**Quando Usar:** Dados comportamentais, produtos existentes
+**Fonte:** Google Analytics, Mixpanel, Hotjar, etc.
+**Saída:** Padrões de uso, pontos de abandono, funcionalidades populares
+
+### Método 4: Análise de Concorrentes
+**Quando Usar:** Contexto de mercado, melhores práticas
+**Escopo:** 3-5 concorrentes
+**Saída:** Comparação de funcionalidades, padrões de UX, oportunidades
+
+### Método 5: Inquérito Contextual
+**Quando Usar:** Observar usuários em ambiente natural
+**Duração:** 2-4 horas por sessão
+**Saída:** Observações de workflow, insights do ambiente
 
 ---
 
 ## 🔄 Workflow
 
-### Step 1: Define Research Objectives
-**Interactive Elicitation:**
+### Passo 1: Definir Objetivos de Pesquisa
+**Elicitação Interativa:**
 
 ```
-What are your research goals? (Choose 1-3 or type custom)
+Quais são seus objetivos de pesquisa? (Escolha 1-3 ou digite personalizado)
 
-1. Understand user needs and pain points
-2. Validate product concept or feature idea
-3. Improve existing product UX
-4. Identify new opportunities
-5. Compare against competitors
-6. Create user personas
-7. Custom (describe your goals)
+1. Entender necessidades e dores dos usuários
+2. Validar conceito de produto ou ideia de funcionalidade
+3. Melhorar a UX de um produto existente
+4. Identificar novas oportunidades
+5. Comparar com concorrentes
+6. Criar personas de usuário
+7. Personalizado (descreva seus objetivos)
 
-Your selection: _____
+Sua seleção: _____
 ```
 
-**Follow-up questions:**
-- Who are your target users? (Demographics, roles, tech-savviness)
-- What's your timeline? (Days/weeks available)
-- What resources do you have? (Budget, access to users)
-- What do you already know? (Existing data, assumptions)
+**Perguntas de acompanhamento:**
+- Quem são seus usuários-alvo? (Demografia, papéis, familiaridade com tecnologia)
+- Qual é o seu prazo? (Dias/semanas disponíveis)
+- Quais recursos você tem? (Orçamento, acesso a usuários)
+- O que você já sabe? (Dados existentes, suposições)
 
 ---
 
-### Step 2: Select Research Methods
-Based on objectives, recommend methods:
+### Passo 2: Selecionar Métodos de Pesquisa
+Com base nos objetivos, recomende métodos:
 
 ```
-Recommended research methods for your goals:
+Métodos de pesquisa recomendados para seus objetivos:
 
-[X] User Interviews (5-10 participants)
-    - Best for: Deep insights, "why" questions
-    - Time: 2-3 weeks
-    - Cost: Low (if recruiting internally)
+[X] Entrevistas com Usuários (5-10 participantes)
+    - Melhor para: Insights profundos, perguntas de "por quê"
+    - Tempo: 2-3 semanas
+    - Custo: Baixo (se recrutar internamente)
 
-[ ] Surveys (50+ participants)
-    - Best for: Quantitative validation
-    - Time: 1-2 weeks
-    - Cost: Low (use Google Forms/Typeform)
+[ ] Surveys (50+ participantes)
+    - Melhor para: Validação quantitativa
+    - Tempo: 1-2 semanas
+    - Custo: Baixo (use Google Forms/Typeform)
 
-[ ] Analytics Review
-    - Best for: Current usage patterns
-    - Time: 3-5 days
-    - Cost: Free (existing data)
+[ ] Revisão de Analytics
+    - Melhor para: Padrões de uso atuais
+    - Tempo: 3-5 dias
+    - Custo: Grátis (dados existentes)
 
-Which methods do you want to use? (Type numbers, e.g., 1,3)
-Your selection: _____
+Quais métodos você quer usar? (Digite números, ex.: 1,3)
+Sua seleção: _____
 ```
 
 ---
 
-### Step 3: Prepare Research Materials
+### Passo 3: Preparar Materiais de Pesquisa
 
-**For Interviews:**
-- Create interview script (10-15 open-ended questions)
-- Prepare consent forms
-- Set up recording tools (with permission)
-- Schedule sessions
+**Para Entrevistas:**
+- Criar roteiro de entrevista (10-15 perguntas abertas)
+- Preparar termos de consentimento
+- Configurar ferramentas de gravação (com permissão)
+- Agendar sessões
 
-**For Surveys:**
-- Draft survey questions (max 20 questions)
-- Use mix of multiple choice + open-ended
-- Set up survey tool (Google Forms, Typeform, SurveyMonkey)
-- Plan distribution channels
+**Para Surveys:**
+- Rascunhar perguntas do survey (máximo de 20 perguntas)
+- Usar mix de múltipla escolha + perguntas abertas
+- Configurar ferramenta de survey (Google Forms, Typeform, SurveyMonkey)
+- Planejar canais de distribuição
 
-**For Analytics:**
-- Define key metrics to review
-- Set date range for analysis
-- Prepare dashboard views
-
----
-
-### Step 4: Conduct Research
-
-**Interview Tips:**
-- Build rapport first (5 min)
-- Ask open-ended questions ("Tell me about...")
-- Probe deeper ("Why is that important?")
-- Observe body language and tone
-- Stay neutral, don't lead responses
-- Record key quotes verbatim
-
-**Survey Tips:**
-- Keep it short (10-15 min max)
-- Clear, unbiased questions
-- Include screening questions
-- Test with 2-3 people first
+**Para Analytics:**
+- Definir métricas-chave a revisar
+- Definir intervalo de datas para análise
+- Preparar visualizações de dashboard
 
 ---
 
-### Step 5: Analyze Findings
+### Passo 4: Conduzir a Pesquisa
 
-**Synthesis Process:**
-1. Review all data (transcripts, responses, analytics)
-2. Extract key insights and quotes
-3. Identify themes and patterns
-4. Cluster similar findings
-5. Prioritize by frequency and impact
+**Dicas para Entrevistas:**
+- Construa rapport primeiro (5 min)
+- Faça perguntas abertas ("Me conte sobre...")
+- Aprofunde ("Por que isso é importante?")
+- Observe a linguagem corporal e o tom
+- Mantenha-se neutro, não induza as respostas
+- Registre as citações-chave literalmente
 
-**Affinity Mapping:**
-- Write findings on sticky notes (digital or physical)
-- Group similar insights together
-- Name each group (theme)
-- Identify relationships between themes
+**Dicas para Surveys:**
+- Mantenha curto (10-15 min no máximo)
+- Perguntas claras e imparciais
+- Inclua perguntas de triagem (screening)
+- Teste com 2-3 pessoas primeiro
 
 ---
 
-### Step 6: Create Personas
+### Passo 5: Analisar os Achados
 
-**Persona Template:**
+**Processo de Síntese:**
+1. Revise todos os dados (transcrições, respostas, analytics)
+2. Extraia insights e citações-chave
+3. Identifique temas e padrões
+4. Agrupe achados similares
+5. Priorize por frequência e impacto
+
+**Mapeamento de Afinidade:**
+- Escreva os achados em notas adesivas (digitais ou físicas)
+- Agrupe insights similares
+- Nomeie cada grupo (tema)
+- Identifique relações entre os temas
+
+---
+
+### Passo 6: Criar Personas
+
+**Template de Persona:**
 
 ```markdown
 ## Persona: [Name]
 
-### Demographics
-- Age: [Range]
-- Role: [Job title]
-- Tech Savviness: [Beginner/Intermediate/Expert]
-- Location: [Geography]
+### Demografia
+- Idade: [Range]
+- Papel: [Job title]
+- Familiaridade com Tecnologia: [Beginner/Intermediate/Expert]
+- Localização: [Geography]
 
-### Goals
+### Objetivos
 - [Primary goal]
 - [Secondary goal]
 - [Aspirational goal]
 
-### Pain Points
+### Dores
 - [Frustration 1]
 - [Frustration 2]
 - [Frustration 3]
 
-### Behaviors
+### Comportamentos
 - [How they currently solve this problem]
 - [Tools they use]
 - [Typical workflow]
 
-### Quote
+### Citação
 > "[Memorable quote from research]"
 
-### Needs from Product
+### Necessidades em Relação ao Produto
 - [Need 1]
 - [Need 2]
 - [Need 3]
 ```
 
-**Create 2-4 personas** (primary + secondary users)
+**Crie 2-4 personas** (usuários primários + secundários)
 
 ---
 
-### Step 7: Document User Journeys
+### Passo 7: Documentar as Jornadas do Usuário
 
-**Journey Map Components:**
-- **Stages:** Discovery → Consideration → Purchase → Use → Loyalty
-- **Actions:** What user does at each stage
-- **Thoughts:** What they're thinking ("Will this work for me?")
-- **Emotions:** Emotional state (😊 😐 😞)
-- **Pain Points:** Friction and frustrations
-- **Opportunities:** Where we can improve
+**Componentes do Mapa de Jornada:**
+- **Estágios:** Descoberta → Consideração → Compra → Uso → Fidelização
+- **Ações:** O que o usuário faz em cada estágio
+- **Pensamentos:** O que ele está pensando ("Isso vai funcionar para mim?")
+- **Emoções:** Estado emocional (😊 😐 😞)
+- **Dores:** Atritos e frustrações
+- **Oportunidades:** Onde podemos melhorar
 
-**Format:**
+**Formato:**
 ```
-Stage: [Stage Name]
+Estágio: [Stage Name]
 -----
-Actions:
+Ações:
   - [Action 1]
   - [Action 2]
 
-Thoughts:
+Pensamentos:
   - "[Thought 1]"
   - "[Thought 2]"
 
-Emotions: [😊/😐/😞]
+Emoções: [😊/😐/😞]
 
-Pain Points:
+Dores:
   - [Pain 1]
   - [Pain 2]
 
-Opportunities:
+Oportunidades:
   - [Opportunity 1]
   - [Opportunity 2]
 ```
 
 ---
 
-### Step 8: Generate Actionable Insights
+### Passo 8: Gerar Insights Acionáveis
 
-**Insight Template:**
+**Template de Insight:**
 
 ```markdown
-## Key Insight #[N]: [One-sentence insight]
+## Insight-Chave #[N]: [One-sentence insight]
 
-**Evidence:**
+**Evidência:**
 - [Data point 1]
 - [Quote 1]
 - [Quote 2]
 
-**Impact:** [HIGH/MEDIUM/LOW]
+**Impacto:** [HIGH/MEDIUM/LOW]
 
-**Implications for Design:**
+**Implicações para o Design:**
 - [Design implication 1]
 - [Design implication 2]
 
-**Recommended Actions:**
+**Ações Recomendadas:**
 1. [Action 1]
 2. [Action 2]
 ```
 
-Generate 5-10 key insights ranked by impact.
+Gere 5-10 insights-chave ordenados por impacto.
 
 ---
 
-## 📤 Outputs
+## 📤 Saídas
 
-All artifacts saved to: `outputs/ux-research/{project}/`
+Todos os artefatos salvos em: `outputs/ux-research/{project}/`
 
-### Required Files:
-1. **research-summary.md** - Executive summary of findings
-2. **personas.md** - 2-4 user personas
-3. **user-journeys.md** - Journey maps for key scenarios
-4. **insights.md** - 5-10 actionable insights
-5. **raw-data/** - Interview transcripts, survey responses
+### Arquivos Obrigatórios:
+1. **research-summary.md** - Resumo executivo dos achados
+2. **personas.md** - 2-4 personas de usuário
+3. **user-journeys.md** - Mapas de jornada para cenários-chave
+4. **insights.md** - 5-10 insights acionáveis
+5. **raw-data/** - Transcrições de entrevistas, respostas de surveys
 
-### Optional Files:
-6. **interview-script.md** - Questions used
-7. **survey-questions.md** - Survey instrument
-8. **affinity-map.jpg** - Photo of synthesis work
-9. **analytics-summary.md** - Analytics findings
-
----
-
-## ✅ Success Criteria
-
-- [ ] Research objectives clearly defined
-- [ ] Appropriate methods selected and executed
-- [ ] Minimum sample size achieved (5+ interviews or 50+ surveys)
-- [ ] Data analyzed and synthesized
-- [ ] 2-4 personas created with evidence backing
-- [ ] User journey maps document complete workflows
-- [ ] 5-10 actionable insights generated
-- [ ] Insights prioritized by impact
-- [ ] All outputs documented in `outputs/ux-research/{project}/`
-- [ ] `.state.yaml` updated with research completion
+### Arquivos Opcionais:
+6. **interview-script.md** - Perguntas utilizadas
+7. **survey-questions.md** - Instrumento do survey
+8. **affinity-map.jpg** - Foto do trabalho de síntese
+9. **analytics-summary.md** - Achados de analytics
 
 ---
 
-## 🔄 Integration with Other Tasks
+## ✅ Critérios de Sucesso
 
-**Next Steps:**
-- `*wireframe` - Use personas and insights to inform wireframe design
-- `*create-front-end-spec` - Reference user needs in specifications
-- `*build` - Ensure components meet user requirements
+- [ ] Objetivos de pesquisa claramente definidos
+- [ ] Métodos apropriados selecionados e executados
+- [ ] Tamanho mínimo de amostra atingido (5+ entrevistas ou 50+ surveys)
+- [ ] Dados analisados e sintetizados
+- [ ] 2-4 personas criadas com respaldo de evidências
+- [ ] Mapas de jornada do usuário documentam workflows completos
+- [ ] 5-10 insights acionáveis gerados
+- [ ] Insights priorizados por impacto
+- [ ] Todas as saídas documentadas em `outputs/ux-research/{project}/`
+- [ ] `.state.yaml` atualizado com a conclusão da pesquisa
 
-**State Management:**
-Updates `.state.yaml` with:
+---
+
+## 🔄 Integração com Outras Tasks
+
+**Próximos Passos:**
+- `*wireframe` - Use personas e insights para orientar o design de wireframe
+- `*create-front-end-spec` - Referencie as necessidades do usuário nas especificações
+- `*build` - Garanta que os componentes atendam aos requisitos do usuário
+
+**Gerenciamento de Estado:**
+Atualiza `.state.yaml` com:
 - `user_research_complete: true`
 - `personas: [list of persona names]`
 - `key_insights: [list of insights]`
@@ -519,41 +519,41 @@ Updates `.state.yaml` with:
 
 ---
 
-## 📚 Templates & Resources
+## 📚 Templates e Recursos
 
-**Interview Script Starter:**
+**Roteiro Inicial de Entrevista:**
 ```
-1. Tell me about your role and how you currently [do task X]
-2. What are your main goals when [doing task X]?
-3. Walk me through your typical workflow for [task X]
-4. What's the most frustrating part of [task X]?
-5. If you had a magic wand, how would you change [task X]?
-6. What tools do you currently use for [task X]?
-7. How do you measure success for [task X]?
-8. Tell me about a time when [task X] went really well
-9. Tell me about a time when [task X] went poorly
-10. Is there anything else I should know about [task X]?
+1. Me conte sobre o seu papel e como você atualmente [faz a tarefa X]
+2. Quais são seus principais objetivos ao [fazer a tarefa X]?
+3. Me guie pelo seu workflow típico para [tarefa X]
+4. Qual é a parte mais frustrante de [tarefa X]?
+5. Se você tivesse uma varinha mágica, como mudaria [tarefa X]?
+6. Quais ferramentas você usa atualmente para [tarefa X]?
+7. Como você mede o sucesso de [tarefa X]?
+8. Me conte sobre uma vez em que [tarefa X] correu muito bem
+9. Me conte sobre uma vez em que [tarefa X] correu mal
+10. Há algo mais que eu deveria saber sobre [tarefa X]?
 ```
 
-**Survey Question Types:**
-- Demographic (screening)
-- Multiple choice (quantify preferences)
-- Likert scale (measure sentiment 1-5)
-- Ranking (prioritize features)
-- Open-ended (discover unexpected insights)
+**Tipos de Pergunta de Survey:**
+- Demográfica (triagem)
+- Múltipla escolha (quantificar preferências)
+- Escala Likert (medir sentimento 1-5)
+- Ranking (priorizar funcionalidades)
+- Aberta (descobrir insights inesperados)
 
 ---
 
-## ⚠️ Common Pitfalls
+## ⚠️ Armadilhas Comuns
 
-1. **Leading questions** - Don't ask "Don't you think X is better?" → Ask "How do you compare X and Y?"
-2. **Too small sample** - 1-2 interviews isn't enough → Aim for 5-10 minimum
-3. **Confirmation bias** - Don't only talk to happy users → Include frustrated users
-4. **No synthesis** - Don't just collect data → Find patterns and themes
-5. **Ignoring context** - Don't just ask questions → Observe actual behavior
+1. **Perguntas indutoras** - Não pergunte "Você não acha que X é melhor?" → Pergunte "Como você compara X e Y?"
+2. **Amostra muito pequena** - 1-2 entrevistas não são suficientes → Mire em 5-10 no mínimo
+3. **Viés de confirmação** - Não fale apenas com usuários satisfeitos → Inclua usuários frustrados
+4. **Sem síntese** - Não apenas colete dados → Encontre padrões e temas
+5. **Ignorar o contexto** - Não apenas faça perguntas → Observe o comportamento real
 
 ---
 
-**Created:** 2025-11-12
+**Criado:** 2025-11-12
 **Story:** 4.3 - UX-Design-Expert Merge
 **Version:** 1.0.0

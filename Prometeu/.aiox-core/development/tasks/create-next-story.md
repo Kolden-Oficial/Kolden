@@ -1,29 +1,29 @@
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro em log
+- Interação mínima do usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Antecipado Abrangente
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com ambiguidade zero
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: createNextStory()
@@ -36,19 +36,19 @@ atomic_layer: Organism
   tipo: string
   origem: User Input
   obrigatório: true
-  validação: Must be non-empty, lowercase, kebab-case
+  validação: Deve ser não vazio, minúsculo, kebab-case
 
 - campo: options
   tipo: object
   origem: User Input
   obrigatório: false
-  validação: Valid JSON object with allowed keys
+  validação: Objeto JSON válido com chaves permitidas
 
 - campo: force
   tipo: boolean
   origem: User Input
   obrigatório: false
-  validação: Default: false
+  validação: Padrão: false
 
 **Saída:**
 - campo: created_file
@@ -69,15 +69,15 @@ atomic_layer: Organism
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Target does not already exist; required inputs provided; permissions granted
+  - [ ] O alvo ainda não existe; entradas obrigatórias fornecidas; permissões concedidas
     tipo: pre-condition
     blocker: true
     validação: |
@@ -87,15 +87,15 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Resource created successfully; validation passed; no errors logged
+  - [ ] Recurso criado com sucesso; validação aprovada; nenhum erro registrado
     tipo: post-condition
     blocker: true
     validação: |
@@ -105,15 +105,15 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Resource exists and is valid; no duplicate resources created
+  - [ ] O recurso existe e é válido; nenhum recurso duplicado criado
     tipo: acceptance-criterion
     blocker: true
     validação: |
@@ -123,70 +123,70 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** component-generator
-  - **Purpose:** Generate new components from templates
-  - **Source:** .aiox-core/scripts/component-generator.js
+- **Ferramenta:** component-generator
+  - **Propósito:** Gerar novos componentes a partir de templates
+  - **Origem:** .aiox-core/scripts/component-generator.js
 
-- **Tool:** file-system
-  - **Purpose:** File creation and validation
-  - **Source:** Node.js fs module
+- **Ferramenta:** file-system
+  - **Propósito:** Criação e validação de arquivos
+  - **Origem:** Módulo fs do Node.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** create-component.js
-  - **Purpose:** Component creation workflow
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/create-component.js
+  - **Propósito:** Workflow de criação de componente
+  - **Linguagem:** JavaScript
+  - **Local:** .aiox-core/scripts/create-component.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Resource Already Exists
-   - **Cause:** Target file/resource already exists in system
-   - **Resolution:** Use force flag or choose different name
-   - **Recovery:** Prompt user for alternative name or force overwrite
+1. **Erro:** Recurso Já Existe
+   - **Causa:** O arquivo/recurso alvo já existe no sistema
+   - **Resolução:** Usar a flag de force ou escolher um nome diferente
+   - **Recuperação:** Solicitar ao usuário um nome alternativo ou sobrescrever com force
 
-2. **Error:** Invalid Input
-   - **Cause:** Input name contains invalid characters or format
-   - **Resolution:** Validate input against naming rules (kebab-case, lowercase, no special chars)
-   - **Recovery:** Sanitize input or reject with clear error message
+2. **Erro:** Entrada Inválida
+   - **Causa:** O nome de entrada contém caracteres ou formato inválidos
+   - **Resolução:** Validar a entrada conforme as regras de nomenclatura (kebab-case, minúsculo, sem caracteres especiais)
+   - **Recuperação:** Sanitizar a entrada ou rejeitar com mensagem de erro clara
 
-3. **Error:** Permission Denied
-   - **Cause:** Insufficient permissions to create resource
-   - **Resolution:** Check file system permissions, run with elevated privileges if needed
-   - **Recovery:** Log error, notify user, suggest permission fix
+3. **Erro:** Permissão Negada
+   - **Causa:** Permissões insuficientes para criar o recurso
+   - **Resolução:** Verificar permissões do sistema de arquivos, rodar com privilégios elevados se necessário
+   - **Recuperação:** Registrar erro, notificar o usuário, sugerir correção de permissão
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
-duration_expected: 5-15 min (estimated)
+duration_expected: 5-15 min (estimado)
 cost_estimated: $0.003-0.010
 token_usage: ~3,000-10,000 tokens
 ```
 
-**Optimization Notes:**
-- Break into smaller workflows; implement checkpointing; use async processing where possible
+**Notas de Otimização:**
+- Dividir em workflows menores; implementar checkpointing; usar processamento assíncrono quando possível
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -202,87 +202,87 @@ updated_at: 2025-11-17
 ---
 
 tools:
-  - github-cli        # Access repository structure and previous stories
-  - context7          # Look up documentation for technical requirements
-  - clickup           # Manage story metadata and tracking
+  - github-cli        # Acessa a estrutura do repositório e as stories anteriores
+  - context7          # Consulta documentação para requisitos técnicos
+  - clickup           # Gerencia metadados e rastreamento da story
 checklists:
   - po-master-checklist.md
 ---
 
-# Create Next Story Task
+# Task Criar Próxima Story
 
-## Purpose
+## Propósito
 
-To identify the next logical story based on project progress and epic definitions, and then to prepare a comprehensive, self-contained, and actionable story file using the `Story Template`. This task ensures the story is enriched with all necessary technical context, requirements, and acceptance criteria, making it ready for efficient implementation by a Developer Agent with minimal need for additional research or finding its own context.
+Identificar a próxima story lógica com base no progresso do projeto e nas definições de epic, e então preparar um arquivo de story abrangente, autossuficiente e acionável usando o `Story Template`. Esta task garante que a story seja enriquecida com todo o contexto técnico, requisitos e critérios de aceite necessários, deixando-a pronta para implementação eficiente por um Developer Agent com mínima necessidade de pesquisa adicional ou de buscar seu próprio contexto.
 
-## SEQUENTIAL Task Execution (Do not proceed until current Task is complete)
+## Execução SEQUENCIAL da Task (Não prossiga até que a Task atual esteja concluída)
 
-### 0. Load Core Configuration and Check Workflow
+### 0. Carregar a Configuração Central e Verificar o Workflow
 
-- Load `aiox-core/core-config.yaml` from the project root
-- If the file does not exist, HALT and inform the user: "core-config.yaml not found. This file is required for story creation. You can either: 1) Copy it from GITHUB aiox-core/core-config.yaml and configure it for your project OR 2) Run the AIOX installer against your project to upgrade and add the file automatically. Please add and configure core-config.yaml before proceeding."
-- Extract key configurations: `devStoryLocation`, `prd.*`, `architecture.*`, `workflow.*`
+- Carregar `aiox-core/core-config.yaml` da raiz do projeto
+- Se o arquivo não existir, PARE e informe o usuário: "core-config.yaml not found. This file is required for story creation. You can either: 1) Copy it from GITHUB aiox-core/core-config.yaml and configure it for your project OR 2) Run the AIOX installer against your project to upgrade and add the file automatically. Please add and configure core-config.yaml before proceeding."
+- Extrair as configurações-chave: `devStoryLocation`, `prd.*`, `architecture.*`, `workflow.*`
 
-### 1. Identify Next Story for Preparation
+### 1. Identificar a Próxima Story para Preparação
 
-#### 1.1 Locate Epic Files and Review Existing Stories
+#### 1.1 Localizar os Arquivos de Epic e Revisar as Stories Existentes
 
-- **Refer to tools/cli/github-cli.yaml** for repository navigation commands and file listing operations
-- Consult the examples section for branch and file structure inspection patterns
-- Based on `prdSharded` from config, locate epic files (sharded location/pattern or monolithic PRD sections)
-- If `devStoryLocation` has story files, load the highest `{epicNum}.{storyNum}.story.md` file
-- **If highest story exists:**
-  - Verify status is 'Done'. If not, alert user: "ALERT: Found incomplete story! File: {lastEpicNum}.{lastStoryNum}.story.md Status: [current status] You should fix this story first, but would you like to accept risk & override to create the next story in draft?"
-  - If proceeding, select next sequential story in the current epic
-  - If epic is complete, prompt user: "Epic {epicNum} Complete: All stories in Epic {epicNum} have been completed. Would you like to: 1) Begin Epic {epicNum + 1} with story 1 2) Select a specific story to work on 3) Cancel story creation"
-  - **CRITICAL**: NEVER automatically skip to another epic. User MUST explicitly instruct which story to create.
-- **If no story files exist:** The next story is ALWAYS 1.1 (first story of first epic)
-- Announce the identified story to the user: "Identified next story for preparation: {epicNum}.{storyNum} - {Story Title}"
+- **Consulte tools/cli/github-cli.yaml** para os comandos de navegação do repositório e operações de listagem de arquivos
+- Consulte a seção de exemplos para padrões de inspeção de branch e estrutura de arquivos
+- Com base em `prdSharded` da config, localize os arquivos de epic (localização/padrão shardeado ou seções monolíticas do PRD)
+- Se `devStoryLocation` tiver arquivos de story, carregue o arquivo `{epicNum}.{storyNum}.story.md` de maior numeração
+- **Se a story de maior numeração existir:**
+  - Verificar se o status é 'Done'. Se não, alertar o usuário: "ALERT: Found incomplete story! File: {lastEpicNum}.{lastStoryNum}.story.md Status: [current status] You should fix this story first, but would you like to accept risk & override to create the next story in draft?"
+  - Se prosseguir, selecionar a próxima story sequencial no epic atual
+  - Se o epic estiver completo, solicitar ao usuário: "Epic {epicNum} Complete: All stories in Epic {epicNum} have been completed. Would you like to: 1) Begin Epic {epicNum + 1} with story 1 2) Select a specific story to work on 3) Cancel story creation"
+  - **CRÍTICO**: NUNCA pular automaticamente para outro epic. O usuário DEVE instruir explicitamente qual story criar.
+- **Se não existirem arquivos de story:** A próxima story é SEMPRE a 1.1 (primeira story do primeiro epic)
+- Anunciar a story identificada ao usuário: "Identified next story for preparation: {epicNum}.{storyNum} - {Story Title}"
 
-### 1.2 Code Intelligence: Duplicate Detection & File Suggestions (Auto-skip if unavailable)
+### 1.2 Code Intelligence: Detecção de Duplicatas e Sugestões de Arquivos (Auto-pulada se indisponível)
 
-- **Check code intelligence availability:** Call `isCodeIntelAvailable()` from `.aiox-core/core/code-intel`
-- **If available:**
-  - Call `detectDuplicateStory(storyDescription)` from `.aiox-core/core/code-intel/helpers/story-helper`
-    - If matches found: Display advisory warning to user — "Similar functionality found: {warning}". This is **advisory only** and does NOT block story creation.
-  - Call `suggestRelevantFiles(storyDescription)` from `.aiox-core/core/code-intel/helpers/story-helper`
-    - If files found: Pre-populate a "Suggested Files" note in the Dev Notes section with the relevant file references
-- **If NOT available:** Skip this step silently — story creation proceeds exactly as before
+- **Verificar a disponibilidade de code intelligence:** Chamar `isCodeIntelAvailable()` de `.aiox-core/core/code-intel`
+- **Se disponível:**
+  - Chamar `detectDuplicateStory(storyDescription)` de `.aiox-core/core/code-intel/helpers/story-helper`
+    - Se forem encontradas correspondências: Exibir aviso consultivo ao usuário — "Similar functionality found: {warning}". Isto é **apenas consultivo** e NÃO bloqueia a criação da story.
+  - Chamar `suggestRelevantFiles(storyDescription)` de `.aiox-core/core/code-intel/helpers/story-helper`
+    - Se forem encontrados arquivos: Pré-preencher uma nota "Suggested Files" na seção Dev Notes com as referências de arquivo relevantes
+- **Se NÃO disponível:** Pular este passo silenciosamente — a criação da story prossegue exatamente como antes
 
-### 2. Gather Story Requirements and Previous Story Context
+### 2. Reunir os Requisitos da Story e o Contexto da Story Anterior
 
-- Extract story requirements from the identified epic file
-- If previous story exists, review Dev Agent Record sections for:
-  - Completion Notes and Debug Log References
-  - Implementation deviations and technical decisions
-  - Challenges encountered and lessons learned
-- Extract relevant insights that inform the current story's preparation
+- Extrair os requisitos da story do arquivo de epic identificado
+- Se existir uma story anterior, revisar as seções Dev Agent Record para:
+  - Completion Notes e Debug Log References
+  - Desvios de implementação e decisões técnicas
+  - Desafios encontrados e lições aprendidas
+- Extrair insights relevantes que informem a preparação da story atual
 
-### 3. Gather Architecture Context
+### 3. Reunir o Contexto de Arquitetura
 
-#### 3.1 Determine Architecture Reading Strategy
+#### 3.1 Determinar a Estratégia de Leitura da Arquitetura
 
-- **Refer to tools/mcp/context7.yaml** for library documentation lookup and technical context research
-- Consult the examples section for querying library-specific documentation patterns
-- **If `architectureVersion: >= v4` and `architectureSharded: true`**: Read `{architectureShardedLocation}/index.md` then follow structured reading order below
-- **Else**: Use monolithic `architectureFile` for similar sections
+- **Consulte tools/mcp/context7.yaml** para a consulta de documentação de bibliotecas e pesquisa de contexto técnico
+- Consulte a seção de exemplos para padrões de consulta de documentação específica de bibliotecas
+- **Se `architectureVersion: >= v4` e `architectureSharded: true`**: Ler `{architectureShardedLocation}/index.md` e então seguir a ordem de leitura estruturada abaixo
+- **Caso contrário**: Usar o `architectureFile` monolítico para seções similares
 
-#### 3.2 Read Architecture Documents Based on Story Type
+#### 3.2 Ler os Documentos de Arquitetura Conforme o Tipo de Story
 
-**CRITICAL: File Fallback Strategy**
+**CRÍTICO: Estratégia de Fallback de Arquivos**
 
-When attempting to read architecture files, use this fallback order:
-1. Try primary filename (e.g., `tech-stack.md`)
-2. If not found, try fallback alternatives from `devLoadAlwaysFilesFallback` in core-config.yaml
-3. If still not found, check for Portuguese equivalents
-4. If none exist, note the 
-## Configuration Dependencies
+Ao tentar ler arquivos de arquitetura, use esta ordem de fallback:
+1. Tentar o nome de arquivo primário (ex.: `tech-stack.md`)
+2. Se não for encontrado, tentar as alternativas de fallback de `devLoadAlwaysFilesFallback` no core-config.yaml
+3. Se ainda não for encontrado, verificar equivalentes em português
+4. Se nenhum existir, anotar o 
+## Dependências de Configuração
 
-This task requires the following configuration keys from `core-config.yaml`:
+Esta task requer as seguintes chaves de configuração do `core-config.yaml`:
 
-- **`qaLocation`**: QA output directory (typically docs/qa) - Required to write quality reports
+- **`qaLocation`**: Diretório de saída do QA (tipicamente docs/qa) - Necessário para escrever relatórios de qualidade
 
-**Loading Config:**
+**Carregando a Config:**
 ```javascript
 const yaml = require('js-yaml');
 const fs = require('fs');
@@ -294,9 +294,9 @@ const config = yaml.load(fs.readFileSync(configPath, 'utf8'));
 const qaLocation = config.qa?.qaLocation || 'docs/qa';
 ```
 
-missing file in Dev Notes
+arquivo ausente nas Dev Notes
 
-**Common Fallback Mappings:**
+**Mapeamentos Comuns de Fallback:**
 ```yaml
 tech-stack.md → [technology-stack.md, pilha-tecnologica.md, stack.md]
 coding-standards.md → [code-standards.md, padroes-de-codigo.md, standards.md]
@@ -305,61 +305,61 @@ testing-strategy.md → [test-strategy.md, estrategia-de-testes.md]
 database-schema.md → [db-schema.md, esquema.md, schema.md]
 ```
 
-**For ALL Stories (try in fallback order):**
+**Para TODAS as Stories (tentar na ordem de fallback):**
 - tech-stack.md
-- unified-project-structure.md (or project-structure.md, source-tree.md)
+- unified-project-structure.md (ou project-structure.md, source-tree.md)
 - coding-standards.md
 - testing-strategy.md
 
-**For Backend/API Stories, additionally:**
+**Para Stories de Backend/API, adicionalmente:**
 - data-models.md
 - database-schema.md
 - backend-architecture.md
-- rest-api-spec.md (or api-spec.md, api-design.md)
+- rest-api-spec.md (ou api-spec.md, api-design.md)
 - external-apis.md
 
-**For Frontend/UI Stories, additionally:**
+**Para Stories de Frontend/UI, adicionalmente:**
 - frontend-architecture.md
 - components.md
-- core-workflows.md (or workflows.md, user-flows.md)
+- core-workflows.md (ou workflows.md, user-flows.md)
 - data-models.md
 
-**For Full-Stack Stories:** Read both Backend and Frontend sections above
+**Para Stories Full-Stack:** Ler ambas as seções de Backend e Frontend acima
 
-**Important:** When a fallback file is used, note it in Dev Notes:
+**Importante:** Quando um arquivo de fallback for usado, anote-o nas Dev Notes:
 ```
 [Note: Using fallback file 'pilha-tecnologica.md' instead of 'tech-stack.md']
 ```
 
-#### 3.3 Extract Story-Specific Technical Details
+#### 3.3 Extrair Detalhes Técnicos Específicos da Story
 
-Extract ONLY information directly relevant to implementing the current story. Do NOT invent new libraries, patterns, or standards not in the source documents.
+Extrair APENAS informações diretamente relevantes para implementar a story atual. NÃO invente novas bibliotecas, padrões ou standards que não estejam nos documentos de origem.
 
-Extract:
+Extrair:
 
-- Specific data models, schemas, or structures the story will use
-- API endpoints the story must implement or consume
-- Component specifications for UI elements in the story
-- File paths and naming conventions for new code
-- Testing requirements specific to the story's features
-- Security or performance considerations affecting the story
+- Modelos de dados, schemas ou estruturas específicos que a story usará
+- Endpoints de API que a story deve implementar ou consumir
+- Especificações de componentes para elementos de UI na story
+- Caminhos de arquivo e convenções de nomenclatura para o novo código
+- Requisitos de teste específicos das funcionalidades da story
+- Considerações de segurança ou performance que afetam a story
 
-ALWAYS cite source documents: `[Source: architecture/{filename}.md#{section}]`
+SEMPRE cite os documentos de origem: `[Source: architecture/{filename}.md#{section}]`
 
-### 4. Verify Project Structure Alignment
+### 4. Verificar o Alinhamento da Estrutura do Projeto
 
-- Cross-reference story requirements with Project Structure Guide from `docs/architecture/unified-project-structure.md`
-- Ensure file paths, component locations, or module names align with defined structures
-- Document any structural conflicts in "Project Structure Notes" section within the story draft
+- Cruzar os requisitos da story com o Project Structure Guide de `docs/architecture/unified-project-structure.md`
+- Garantir que caminhos de arquivo, localizações de componentes ou nomes de módulos estejam alinhados com as estruturas definidas
+- Documentar quaisquer conflitos estruturais na seção "Project Structure Notes" dentro do rascunho da story
 
-### 5. Populate Story Template with Full Context
+### 5. Preencher o Story Template com o Contexto Completo
 
-#### 5.1 Get Workspace Structure and Verify Epic
+#### 5.1 Obter a Estrutura do Workspace e Verificar o Epic
 
-- **Refer to tools/mcp/clickup.yaml** - Review the 'story_creation_workflow' example for complete step-by-step guidance
-- **Step 1: Get Workspace Hierarchy**
-  - Call `get_workspace_hierarchy` (no parameters needed)
-  - Extract the Backlog list ID from response:
+- **Consulte tools/mcp/clickup.yaml** - Revise o exemplo 'story_creation_workflow' para orientação completa passo a passo
+- **Passo 1: Obter a Hierarquia do Workspace**
+  - Chamar `get_workspace_hierarchy` (nenhum parâmetro necessário)
+  - Extrair o ID da lista Backlog da resposta:
     ```javascript
     // Response structure:
     {
@@ -371,18 +371,18 @@ ALWAYS cite source documents: `[Source: architecture/{filename}.md#{section}]`
       }]
     }
     ```
-  - **CRITICAL:** Store this numeric list_id for use in Step 5.3
+  - **CRÍTICO:** Armazenar este list_id numérico para uso no Passo 5.3
   - Log: "✅ Found Backlog list (list_id: {backlog_list_id})"
 
-- **Step 2: Search for Epic in Backlog**
-  - Use `get_workspace_tasks` with parameters:
-    - list_ids: [{backlog_list_id}]  # From Step 1
+- **Passo 2: Buscar o Epic no Backlog**
+  - Usar `get_workspace_tasks` com os parâmetros:
+    - list_ids: [{backlog_list_id}]  # Do Passo 1
     - tags: ["epic-{epicNum}"]
     - status: ["Planning", "In Progress"]
 
-- **If Epic NOT found:**
-  - HALT execution
-  - Display error: "❌ Epic {epicNum} not found in ClickUp Backlog list.
+- **Se o Epic NÃO for encontrado:**
+  - PARAR a execução
+  - Exibir o erro: "❌ Epic {epicNum} not found in ClickUp Backlog list.
     Please create Epic task with:
     - Name: 'Epic {epicNum}: {Epic Title}'
     - List: Backlog (list_id: {backlog_list_id})
@@ -390,22 +390,22 @@ ALWAYS cite source documents: `[Source: architecture/{filename}.md#{section}]`
     - Status: Planning or In Progress
     Then retry story creation."
 
-- **If Epic found:**
-  - Capture epic_task_id for parent relationship
+- **Se o Epic for encontrado:**
+  - Capturar epic_task_id para o relacionamento pai
   - Log: "✅ Found Epic {epicNum} (task_id: {epic_task_id})"
 
-#### 5.2 Prepare Story File and Metadata
+#### 5.2 Preparar o Arquivo da Story e os Metadados
 
-- **Refer to tools/mcp/clickup.yaml** for create_task parameters and validation requirements when creating story tracking tasks
-- Use validator 'validate-create-task' to check assignee format (must be array)
-- Consult the examples section for custom_field format patterns
-- Note the API complexity section regarding assignee format mismatch between create and update operations
-- Create new story file: `{devStoryLocation}/{epicNum}.{storyNum}.story.md` using Story Template
-- Fill in basic story information: Title, Status (Draft), Story statement, Acceptance Criteria from Epic
+- **Consulte tools/mcp/clickup.yaml** para os parâmetros de create_task e requisitos de validação ao criar as tasks de rastreamento de story
+- Usar o validador 'validate-create-task' para verificar o formato de assignee (deve ser array)
+- Consulte a seção de exemplos para padrões de formato de custom_field
+- Observe a seção de complexidade da API quanto à incompatibilidade de formato de assignee entre as operações de create e update
+- Criar o novo arquivo de story: `{devStoryLocation}/{epicNum}.{storyNum}.story.md` usando o Story Template
+- Preencher as informações básicas da story: Title, Status (Draft), declaração da story, Acceptance Criteria do Epic
 
-##### 5.2.1 Prepare ClickUp Metadata for Frontmatter
+##### 5.2.1 Preparar os Metadados do ClickUp para o Frontmatter
 
-- Prepare ClickUp section structure (will be populated after ClickUp task creation):
+- Preparar a estrutura da seção ClickUp (será preenchida após a criação da task no ClickUp):
   ```yaml
   clickup:
     task_id: ""  # To be filled
@@ -415,13 +415,13 @@ ALWAYS cite source documents: `[Source: architecture/{filename}.md#{section}]`
     last_sync: ""  # To be filled
   ```
 
-#### 5.3 Create Story Task in ClickUp
+#### 5.3 Criar a Task da Story no ClickUp
 
-- **Refer to tools/mcp/clickup.yaml** - Review the 'story_creation_workflow' example for complete parameter reference
-- **CRITICAL:** Use validator 'validate-create-task' to prevent format errors
-- **CRITICAL:** Use numeric list_id from Step 5.1, NOT a list name string
+- **Consulte tools/mcp/clickup.yaml** - Revise o exemplo 'story_creation_workflow' para a referência completa de parâmetros
+- **CRÍTICO:** Usar o validador 'validate-create-task' para prevenir erros de formato
+- **CRÍTICO:** Usar o list_id numérico do Passo 5.1, NÃO uma string com o nome da lista
 
-**Task Creation Parameters:**
+**Parâmetros de Criação da Task:**
 ```yaml
 list_id: "{backlog_list_id}"  # MUST be numeric string from 5.1 (e.g., "901317181013")
 name: "Story {epicNum}.{storyNum}: {Story Title}"
@@ -442,23 +442,23 @@ custom_fields:
     value: "Draft"
 ```
 
-**Validation Notes:**
-- list_id MUST be numeric string (validated by /^\d+$/)
-- Using "Backlog" or other non-numeric values will fail validation
-- assignees (if provided) must be array, not object
+**Notas de Validação:**
+- O list_id DEVE ser uma string numérica (validada por /^\d+$/)
+- Usar "Backlog" ou outros valores não numéricos falhará na validação
+- assignees (se fornecido) deve ser array, não object
 
-**Response Handling:**
-- **Capture:** story_task_id from response
+**Tratamento da Resposta:**
+- **Capturar:** story_task_id da resposta
 - **Log:** "✅ Story task created in ClickUp: {story_task_id}"
 
-**Error Handling:**
-- If create_task fails with validation error, display the exact error and parameters used
-- If API error occurs, log error but continue (local story still valid)
-- Warn user: "⚠️ Story created locally but ClickUp sync failed: {error_message}"
+**Tratamento de Erros:**
+- Se create_task falhar com erro de validação, exibir o erro exato e os parâmetros usados
+- Se ocorrer um erro de API, registrar o erro mas continuar (a story local ainda é válida)
+- Avisar o usuário: "⚠️ Story created locally but ClickUp sync failed: {error_message}"
 
-#### 5.4 Update Story Frontmatter with ClickUp Data
+#### 5.4 Atualizar o Frontmatter da Story com os Dados do ClickUp
 
-- Update the frontmatter YAML clickup section with captured values:
+- Atualizar a seção clickup do YAML de frontmatter com os valores capturados:
   ```yaml
   clickup:
     task_id: "{story_task_id from 5.3}"
@@ -467,12 +467,12 @@ custom_fields:
     url: "https://app.clickup.com/t/{story_task_id}"
     last_sync: "{current ISO 8601 timestamp}"
   ```
-- Save story file with updated frontmatter
+- Salvar o arquivo da story com o frontmatter atualizado
 - Log: "✅ Story task created in ClickUp: {story_task_id}"
 
-#### 5.2.5 Predict Specialized Agents and CodeRabbit Tasks
+#### 5.2.5 Prever os Agentes Especializados e as Tasks do CodeRabbit
 
-**CONDITIONAL STEP** - Check `coderabbit_integration.enabled` in core-config.yaml
+**PASSO CONDICIONAL** - Verificar `coderabbit_integration.enabled` no core-config.yaml
 
 ```yaml
 # core-config.yaml check
@@ -480,9 +480,9 @@ coderabbit_integration:
   enabled: true|false  # ← This controls whether to populate CodeRabbit section
 ```
 
-**IF `coderabbit_integration.enabled: false`:**
-- SKIP this entire step (5.2.5)
-- In the story file, render only the skip notice in the CodeRabbit Integration section:
+**SE `coderabbit_integration.enabled: false`:**
+- PULAR este passo inteiro (5.2.5)
+- No arquivo da story, renderizar apenas o aviso de skip na seção CodeRabbit Integration:
   ```markdown
   ## 🤖 CodeRabbit Integration
 
@@ -493,139 +493,139 @@ coderabbit_integration:
   > To enable, set `coderabbit_integration.enabled: true` in core-config.yaml
   ```
 - Log: "ℹ️ CodeRabbit Integration disabled - skipping quality gate configuration"
-- Proceed to Step 5.3
+- Prosseguir para o Passo 5.3
 
-**IF `coderabbit_integration.enabled: true`:**
-- Continue with full CodeRabbit section population below
-- Include self-healing configuration based on Story 6.3.3
+**SE `coderabbit_integration.enabled: true`:**
+- Continuar com o preenchimento completo da seção CodeRabbit abaixo
+- Incluir a configuração de self-healing baseada na Story 6.3.3
 
 ---
 
-**CRITICAL:** This step populates the `🤖 CodeRabbit Integration` section created by the story template. Use the architecture context gathered in Step 3 and story requirements from Step 2 to predict which specialized agents and quality gates are needed.
+**CRÍTICO:** Este passo preenche a seção `🤖 CodeRabbit Integration` criada pelo story template. Use o contexto de arquitetura reunido no Passo 3 e os requisitos da story do Passo 2 para prever quais agentes especializados e quality gates são necessários.
 
-**Story Type Detection Rules:**
+**Regras de Detecção do Tipo de Story:**
 
-Analyze the story's technical characteristics based on:
-- Acceptance Criteria keywords
-- Architecture files referenced in Step 3.2
-- Data models, APIs, or components mentioned in epic
-- File locations and affected systems
+Analise as características técnicas da story com base em:
+- Palavras-chave dos Acceptance Criteria
+- Arquivos de arquitetura referenciados no Passo 3.2
+- Modelos de dados, APIs ou componentes mencionados no epic
+- Localizações de arquivos e sistemas afetados
 
-**Type 1: Database Story**
+**Tipo 1: Story de Database**
 
-**Detection Indicators:**
-- References to `database-schema.md` or `data-models.md`
-- Acceptance Criteria mention: schema, table, migration, RLS, foreign key, index
-- File locations include `supabase/migrations/` or database-related paths
+**Indicadores de Detecção:**
+- Referências a `database-schema.md` ou `data-models.md`
+- Acceptance Criteria mencionam: schema, table, migration, RLS, foreign key, index
+- Localizações de arquivo incluem `supabase/migrations/` ou caminhos relacionados a banco de dados
 
-**Assignment:**
-- **Primary Agents**: @db-sage, @dev
-- **Quality Gates**: Pre-Commit (schema validation), Pre-PR (SQL review)
-- **Focus Areas**:
-  - Service filters: `.eq('service', 'ttcx')` on ALL queries
-  - Schema compliance: Foreign keys, indexes, constraints properly defined
-  - RLS policies: Row-level security configured and tested
-  - Migration safety: Reversible, tested in dev environment
+**Atribuição:**
+- **Agentes Primários**: @db-sage, @dev
+- **Quality Gates**: Pre-Commit (validação de schema), Pre-PR (revisão de SQL)
+- **Áreas de Foco**:
+  - Filtros de serviço: `.eq('service', 'ttcx')` em TODAS as queries
+  - Conformidade de schema: Foreign keys, índices, constraints devidamente definidos
+  - Políticas RLS: Row-level security configurado e testado
+  - Segurança de migration: Reversível, testada em ambiente de dev
 
-**Type 2: API Story**
+**Tipo 2: Story de API**
 
-**Detection Indicators:**
-- References to `rest-api-spec.md` or `backend-architecture.md`
-- Acceptance Criteria mention: endpoint, API, service, controller, route
-- File locations include `api/src/` or backend paths
+**Indicadores de Detecção:**
+- Referências a `rest-api-spec.md` ou `backend-architecture.md`
+- Acceptance Criteria mencionam: endpoint, API, service, controller, route
+- Localizações de arquivo incluem `api/src/` ou caminhos de backend
 
-**Assignment:**
-- **Primary Agents**: @dev, @architect (if new patterns)
-- **Quality Gates**: Pre-Commit (security scan), Pre-PR (API contract validation)
-- **Focus Areas**:
-  - Error handling: Try-catch blocks, proper error responses (4xx, 5xx)
-  - Security: Input validation, authentication, authorization checks
-  - Validation: Request/response schema validation
-  - API contracts: Consistent with `rest-api-spec.md`
+**Atribuição:**
+- **Agentes Primários**: @dev, @architect (se houver novos padrões)
+- **Quality Gates**: Pre-Commit (varredura de segurança), Pre-PR (validação de contrato de API)
+- **Áreas de Foco**:
+  - Tratamento de erros: Blocos try-catch, respostas de erro adequadas (4xx, 5xx)
+  - Segurança: Validação de entrada, verificações de autenticação e autorização
+  - Validação: Validação de schema de request/response
+  - Contratos de API: Consistentes com `rest-api-spec.md`
 
-**Type 3: Frontend Story**
+**Tipo 3: Story de Frontend**
 
-**Detection Indicators:**
-- References to `frontend-architecture.md` or `components.md`
-- Acceptance Criteria mention: UI, component, page, form, display, user interface
-- File locations include `src/components/` or frontend paths
+**Indicadores de Detecção:**
+- Referências a `frontend-architecture.md` ou `components.md`
+- Acceptance Criteria mencionam: UI, component, page, form, display, user interface
+- Localizações de arquivo incluem `src/components/` ou caminhos de frontend
 
-**Assignment:**
-- **Primary Agents**: @ux-expert, @dev
-- **Quality Gates**: Pre-Commit (a11y validation), Pre-PR (UX consistency check)
-- **Focus Areas**:
-  - Accessibility: WCAG 2.1 AA compliance (semantic HTML, ARIA labels, keyboard navigation)
-  - Performance: Component optimization, lazy loading, code splitting
-  - Responsive design: Mobile-first approach, breakpoints tested
-  - UX consistency: Follows design system patterns
+**Atribuição:**
+- **Agentes Primários**: @ux-expert, @dev
+- **Quality Gates**: Pre-Commit (validação de a11y), Pre-PR (verificação de consistência de UX)
+- **Áreas de Foco**:
+  - Acessibilidade: Conformidade WCAG 2.1 AA (HTML semântico, labels ARIA, navegação por teclado)
+  - Performance: Otimização de componentes, lazy loading, code splitting
+  - Design responsivo: Abordagem mobile-first, breakpoints testados
+  - Consistência de UX: Segue os padrões do design system
 
-**Type 4: Deployment/Infrastructure Story**
+**Tipo 4: Story de Deploy/Infraestrutura**
 
-**Detection Indicators:**
-- Acceptance Criteria mention: deploy, CI/CD, environment, configuration, infrastructure
-- References to deployment pipelines or environment configuration
-- File locations include `.github/workflows/`, `docker/`, or config files
+**Indicadores de Detecção:**
+- Acceptance Criteria mencionam: deploy, CI/CD, environment, configuration, infrastructure
+- Referências a pipelines de deploy ou configuração de ambiente
+- Localizações de arquivo incluem `.github/workflows/`, `docker/` ou arquivos de config
 
-**Assignment:**
-- **Primary Agents**: @github-devops, @dev
-- **Quality Gates**: Pre-Commit (config validation), Pre-Deployment (deep scan)
-- **Focus Areas**:
-  - CI/CD: Pipeline configuration, test coverage enforcement
-  - Secrets management: No hardcoded credentials, proper secret handling
-  - Environment config: Proper variable usage, validation of required vars
-  - Rollback readiness: Changes are reversible, documented rollback procedure
+**Atribuição:**
+- **Agentes Primários**: @github-devops, @dev
+- **Quality Gates**: Pre-Commit (validação de config), Pre-Deployment (varredura profunda)
+- **Áreas de Foco**:
+  - CI/CD: Configuração de pipeline, imposição de cobertura de testes
+  - Gestão de secrets: Sem credenciais hardcoded, manuseio adequado de secrets
+  - Config de ambiente: Uso adequado de variáveis, validação de variáveis obrigatórias
+  - Prontidão para rollback: Mudanças reversíveis, procedimento de rollback documentado
 
-**Type 5: Security Story**
+**Tipo 5: Story de Segurança**
 
-**Detection Indicators:**
-- Acceptance Criteria mention: authentication, authorization, security, encryption, vulnerability
-- References to security patterns or threat models
-- Implements OWASP-related features
+**Indicadores de Detecção:**
+- Acceptance Criteria mencionam: authentication, authorization, security, encryption, vulnerability
+- Referências a padrões de segurança ou threat models
+- Implementa funcionalidades relacionadas ao OWASP
 
-**Assignment:**
-- **Primary Agents**: @dev, @architect
-- **Quality Gates**: Pre-Commit (SAST scan), Pre-PR (security review)
-- **Focus Areas**:
-  - OWASP Top 10: Injection prevention, XSS protection, auth vulnerabilities
-  - Timing attacks: Constant-time comparisons for sensitive operations
-  - Data protection: Encryption at rest/transit, proper sanitization
-  - Authentication: Secure session management, password handling
+**Atribuição:**
+- **Agentes Primários**: @dev, @architect
+- **Quality Gates**: Pre-Commit (varredura SAST), Pre-PR (revisão de segurança)
+- **Áreas de Foco**:
+  - OWASP Top 10: Prevenção de injeção, proteção XSS, vulnerabilidades de auth
+  - Ataques de timing: Comparações de tempo constante para operações sensíveis
+  - Proteção de dados: Criptografia em repouso/trânsito, sanitização adequada
+  - Autenticação: Gerenciamento seguro de sessão, manuseio de senhas
 
-**Type 6: Architecture Story**
+**Tipo 6: Story de Arquitetura**
 
-**Detection Indicators:**
-- Acceptance Criteria mention: refactor, pattern, architecture, scalability
-- Affects multiple layers or introduces new patterns
-- References to `backend-architecture.md` or system design
+**Indicadores de Detecção:**
+- Acceptance Criteria mencionam: refactor, pattern, architecture, scalability
+- Afeta múltiplas camadas ou introduz novos padrões
+- Referências a `backend-architecture.md` ou system design
 
-**Assignment:**
-- **Primary Agents**: @architect, @dev
-- **Quality Gates**: Pre-Commit (pattern validation), Pre-PR (architecture review)
-- **Focus Areas**:
-  - Patterns: Follows established architectural patterns
-  - Scalability: Performance considerations, load handling
-  - Maintainability: Code organization, separation of concerns
-  - Backward compatibility: Existing functionality preserved
+**Atribuição:**
+- **Agentes Primários**: @architect, @dev
+- **Quality Gates**: Pre-Commit (validação de padrão), Pre-PR (revisão de arquitetura)
+- **Áreas de Foco**:
+  - Padrões: Segue os padrões arquiteturais estabelecidos
+  - Escalabilidade: Considerações de performance, manuseio de carga
+  - Manutenibilidade: Organização de código, separação de responsabilidades
+  - Retrocompatibilidade: Funcionalidade existente preservada
 
-**Type 7: Integration Story**
+**Tipo 7: Story de Integração**
 
-**Detection Indicators:**
-- Acceptance Criteria mention: integration, external API, webhook, third-party
-- References to `external-apis.md`
-- Connects to external systems
+**Indicadores de Detecção:**
+- Acceptance Criteria mencionam: integration, external API, webhook, third-party
+- Referências a `external-apis.md`
+- Conecta-se a sistemas externos
 
-**Assignment:**
-- **Primary Agents**: @dev, @architect, @github-devops
-- **Quality Gates**: Pre-Commit, Pre-PR (integration safety)
-- **Focus Areas**:
-  - Backward compatibility: Existing integrations unaffected
-  - API contracts: Proper versioning, contract testing
-  - Error handling: Graceful degradation, retry logic
-  - Documentation: Integration points clearly documented
+**Atribuição:**
+- **Agentes Primários**: @dev, @architect, @github-devops
+- **Quality Gates**: Pre-Commit, Pre-PR (segurança de integração)
+- **Áreas de Foco**:
+  - Retrocompatibilidade: Integrações existentes não afetadas
+  - Contratos de API: Versionamento adequado, contract testing
+  - Tratamento de erros: Degradação graciosa, lógica de retry
+  - Documentação: Pontos de integração claramente documentados
 
-**Populate CodeRabbit Integration Section:**
+**Preencher a Seção CodeRabbit Integration:**
 
-Based on the detected story type(s), populate the template fields:
+Com base no(s) tipo(s) de story detectado(s), preencha os campos do template:
 
 ```yaml
 🤖 CodeRabbit Integration:
@@ -659,22 +659,22 @@ Based on the detected story type(s), populate the template fields:
       - [Focus area 4 if applicable]
 ```
 
-**Multi-Type Stories:**
+**Stories de Múltiplos Tipos:**
 
-If story spans multiple types (e.g., Database + API):
-- List primary type first (the one with most work)
-- List secondary type(s) in order of importance
-- Combine agent assignments (no duplicates)
-- Include ALL relevant focus areas from both types
-- Use highest quality gate requirement (e.g., if either requires Pre-Deployment, include it)
+Se a story abranger múltiplos tipos (ex.: Database + API):
+- Listar o tipo primário primeiro (aquele com mais trabalho)
+- Listar o(s) tipo(s) secundário(s) em ordem de importância
+- Combinar as atribuições de agente (sem duplicatas)
+- Incluir TODAS as áreas de foco relevantes de ambos os tipos
+- Usar o requisito de quality gate mais alto (ex.: se qualquer um exigir Pre-Deployment, incluí-lo)
 
-**Complexity Determination:**
+**Determinação de Complexidade:**
 
-- **Low**: Single file/component, well-defined scope, minimal dependencies
-- **Medium**: Multiple files, moderate scope, some cross-system interaction
-- **High**: Many files, complex scope, multiple systems, new patterns, or security-critical
+- **Low**: Arquivo/componente único, escopo bem definido, dependências mínimas
+- **Medium**: Múltiplos arquivos, escopo moderado, alguma interação cross-system
+- **High**: Muitos arquivos, escopo complexo, múltiplos sistemas, novos padrões ou crítico para segurança
 
-**Example Output (Database + API Story):**
+**Exemplo de Saída (Story de Database + API):**
 
 ```yaml
 🤖 CodeRabbit Integration:
@@ -721,67 +721,67 @@ If story spans multiple types (e.g., Database + API):
       - HIGH issues: document_only (noted in Dev Notes)
 ```
 
-**Self-Healing Configuration (Story 6.3.3):**
+**Configuração de Self-Healing (Story 6.3.3):**
 
-After populating the basic CodeRabbit sections, add the Self-Healing Configuration based on the primary agent:
+Após preencher as seções básicas do CodeRabbit, adicione a Configuração de Self-Healing com base no agente primário:
 
-| Primary Agent | Mode | Max Iterations | Timeout | Severity Filter |
+| Agente Primário | Modo | Máx. de Iterações | Timeout | Filtro de Severidade |
 |---------------|------|----------------|---------|-----------------|
 | @dev | light | 2 | 15 min | CRITICAL |
 | @qa | full | 3 | 30 min | CRITICAL, HIGH |
 | @github-devops | check | 0 | N/A | report_only |
 
-**Severity Behavior Matrix:**
+**Matriz de Comportamento por Severidade:**
 
-| Severity | @dev (light) | @qa (full) | @github-devops (check) |
+| Severidade | @dev (light) | @qa (full) | @github-devops (check) |
 |----------|--------------|------------|------------------------|
 | CRITICAL | auto_fix | auto_fix | report_only |
 | HIGH | document_only | auto_fix | report_only |
 | MEDIUM | ignore | document_as_debt | report_only |
 | LOW | ignore | ignore | ignore |
 
-Use the primary agent from "Specialized Agent Assignment" to determine which self-healing configuration to document.
+Use o agente primário de "Specialized Agent Assignment" para determinar qual configuração de self-healing documentar.
 
-**Log Completion:**
-- After populating this section, log: "✅ Story type analysis complete: [Primary Type] | Agents assigned: [agent list] | Quality gates: [gate count] | Self-healing: [mode]"
+**Log de Conclusão:**
+- Após preencher esta seção, registrar: "✅ Story type analysis complete: [Primary Type] | Agents assigned: [agent list] | Quality gates: [gate count] | Self-healing: [mode]"
 
-- **`Dev Notes` section (CRITICAL):**
-  - CRITICAL: This section MUST contain ONLY information extracted from architecture documents. NEVER invent or assume technical details.
-  - Include ALL relevant technical details from Steps 2-3, organized by category:
-    - **Previous Story Insights**: Key learnings from previous story
-    - **Data Models**: Specific schemas, validation rules, relationships [with source references]
-    - **API Specifications**: Endpoint details, request/response formats, auth requirements [with source references]
-    - **Component Specifications**: UI component details, props, state management [with source references]
-    - **File Locations**: Exact paths where new code should be created based on project structure
-    - **Testing Requirements**: Specific test cases or strategies from testing-strategy.md
-    - **Technical Constraints**: Version requirements, performance considerations, security rules
-  - Every technical detail MUST include its source reference: `[Source: architecture/{filename}.md#{section}]`
-  - If information for a category is not found in the architecture docs, explicitly state: "No specific guidance found in architecture docs"
-- **`Tasks / Subtasks` section:**
-  - Generate detailed, sequential list of technical tasks based ONLY on: Epic Requirements, Story AC, Reviewed Architecture Information
-  - Each task must reference relevant architecture documentation
-  - Include unit testing as explicit subtasks based on the Testing Strategy
-  - Link tasks to ACs where applicable (e.g., `Task 1 (AC: 1, 3)`)
-- Add notes on project structure alignment or discrepancies found in Step 4
+- **Seção `Dev Notes` (CRÍTICO):**
+  - CRÍTICO: Esta seção DEVE conter APENAS informações extraídas dos documentos de arquitetura. NUNCA invente ou assuma detalhes técnicos.
+  - Incluir TODOS os detalhes técnicos relevantes dos Passos 2-3, organizados por categoria:
+    - **Previous Story Insights**: Principais aprendizados da story anterior
+    - **Data Models**: Schemas específicos, regras de validação, relacionamentos [com referências de origem]
+    - **API Specifications**: Detalhes de endpoint, formatos de request/response, requisitos de auth [com referências de origem]
+    - **Component Specifications**: Detalhes de componentes de UI, props, gerenciamento de estado [com referências de origem]
+    - **File Locations**: Caminhos exatos onde o novo código deve ser criado com base na estrutura do projeto
+    - **Testing Requirements**: Casos de teste ou estratégias específicas de testing-strategy.md
+    - **Technical Constraints**: Requisitos de versão, considerações de performance, regras de segurança
+  - Cada detalhe técnico DEVE incluir sua referência de origem: `[Source: architecture/{filename}.md#{section}]`
+  - Se a informação de uma categoria não for encontrada nos docs de arquitetura, declarar explicitamente: "No specific guidance found in architecture docs"
+- **Seção `Tasks / Subtasks`:**
+  - Gerar uma lista detalhada e sequencial de tasks técnicas baseada APENAS em: Epic Requirements, Story AC, Reviewed Architecture Information
+  - Cada task deve referenciar a documentação de arquitetura relevante
+  - Incluir testes unitários como subtasks explícitas com base na Testing Strategy
+  - Vincular as tasks aos ACs quando aplicável (ex.: `Task 1 (AC: 1, 3)`)
+- Adicionar notas sobre o alinhamento da estrutura do projeto ou discrepâncias encontradas no Passo 4
 
-### 6. Story Draft Completion and Review
+### 6. Conclusão e Revisão do Rascunho da Story
 
-- **Refer to tools/mcp/clickup.yaml** for update_task and get_task operations when managing story status and metadata
-- Consult the validation requirements section before updating task status
-- Review all sections for completeness and accuracy
-- Verify all source references are included for technical details
-- Ensure tasks align with both epic requirements and architecture constraints
-- Update status to "Draft" and save the story file
-- Execute `.aiox-core/development/tasks/execute-checklist` `.aiox-core/product/checklists/story-draft-checklist`
-- Provide summary to user including:
-  - Story created: `{devStoryLocation}/{epicNum}.{storyNum}.story.md`
+- **Consulte tools/mcp/clickup.yaml** para as operações update_task e get_task ao gerenciar o status e os metadados da story
+- Consulte a seção de requisitos de validação antes de atualizar o status da task
+- Revisar todas as seções quanto à completude e precisão
+- Verificar se todas as referências de origem estão incluídas para os detalhes técnicos
+- Garantir que as tasks estejam alinhadas com os requisitos do epic e as restrições de arquitetura
+- Atualizar o status para "Draft" e salvar o arquivo da story
+- Executar `.aiox-core/development/tasks/execute-checklist` `.aiox-core/product/checklists/story-draft-checklist`
+- Fornecer um resumo ao usuário incluindo:
+  - Story criada: `{devStoryLocation}/{epicNum}.{storyNum}.story.md`
   - Status: Draft
-  - Key technical components included from architecture docs
-  - Any deviations or conflicts noted between epic and architecture
-  - Checklist Results
-  - Next steps: For Complex stories, suggest the user carefully review the story draft and also optionally have the PO run the task `.aiox-core/development/tasks/validate-next-story`
+  - Principais componentes técnicos incluídos a partir dos docs de arquitetura
+  - Quaisquer desvios ou conflitos observados entre o epic e a arquitetura
+  - Resultados do Checklist
+  - Próximos passos: Para stories Complexas, sugerir que o usuário revise cuidadosamente o rascunho da story e, opcionalmente, peça ao PO para rodar a task `.aiox-core/development/tasks/validate-next-story`
 
-**ClickUp Integration Note:** This task now includes Epic verification (Section 5.1), ClickUp story task creation (Section 5.3), and automatic frontmatter updates (Section 5.4). Stories are created as subtasks of their parent Epic in ClickUp's Backlog list. If Epic verification or ClickUp sync fails, the story file will still be created locally with a warning message.
+**Nota sobre a Integração com o ClickUp:** Esta task agora inclui a verificação do Epic (Seção 5.1), a criação da task de story no ClickUp (Seção 5.3) e as atualizações automáticas do frontmatter (Seção 5.4). As stories são criadas como subtasks do seu Epic pai na lista Backlog do ClickUp. Se a verificação do Epic ou a sincronização com o ClickUp falhar, o arquivo da story ainda será criado localmente com uma mensagem de aviso.
 
 ## Handoff
 next_agent: @po

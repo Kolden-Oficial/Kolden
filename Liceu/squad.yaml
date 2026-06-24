@@ -1,0 +1,152 @@
+# Manifesto do Squad Liceu — Biblioteca de Mentes da Kolden
+# Nascido pelo Ritual do Caos (9 fases). PRD aprovado em prd-de-ia.md.
+
+squad:
+  name: liceu
+  display_name: "Liceu — Biblioteca de Mentes (a escola de Aristóteles)"
+  version: "1.0.0"
+  domain: "Gestão de conhecimento / dissecação de mentes-referência / síntese de frameworks operacionais"
+  description: |
+    Disseca o cérebro de grandes especialistas mundiais (qualquer domínio de uma empresa),
+    separando engenharia documentada de mito/folclore, mapeando linhagens intelectuais
+    (herdou_de / influenciou) e destilando frameworks operacionais para os squads.
+    Cataloga por referência as ~100 mentes já existentes nos squads (sem mover nada) e
+    disseca as novas. Não executa (copy/tráfego/oferta) nem instancia agentes — handoff
+    aos squads de execução e ao Caos.
+  keywords: [mente, dissecar, dissecação, especialista, pensador, gênio, linhagem, genealogia,
+             framework, mental-model, modelo-mental, biblioteca, conhecimento, fato-vs-folclore,
+             quem-influenciou, herdou-de, sistematizar, replicar-cérebro, dossiê, encarnar]
+  entry_agent: liceu-chief
+  created_at: "2026-06-22"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [liceu-chief]
+    purpose: "Triagem (nome vs tema/linhagem), escopo, roteamento, gate de candura factual, síntese final."
+  tier_1:
+    name: "Dissecação"
+    agents: [biografo, cartografo-de-modelos, ceptico-verificador, lexicografo]
+    purpose: "Pesquisa profunda da mente: biografia/obras, modelos/frameworks, fato×folclore, vocabulário/operação."
+  tier_2:
+    name: "Estrutura & Conexão"
+    agents: [genealogista, bibliotecario]
+    purpose: "Grafo de linhagens e curadoria do índice federado + registro de entidades."
+  tier_3:
+    name: "Operacionalização"
+    agents: [sintetizador, ponte-de-encarnacao]
+    purpose: "Mente/linhagem → framework operacional; handoff ao Caos quando vira agente conversável."
+
+agents:
+  liceu-chief:
+    file: agents/liceu-chief.md
+    tier: 0
+    icon: "🏛️"
+    focus: "Orquestração, escopo (nome vs tema), roteamento, gate de candura (fato×folclore) e síntese."
+  biografo:
+    file: agents/biografo.md
+    tier: 1
+    icon: "📜"
+    focus: "Biografia, carreira, obras-fonte datadas, contexto histórico. Datação resolve atribuição."
+  cartografo-de-modelos:
+    file: agents/cartografo-de-modelos.md
+    tier: 1
+    icon: "🗺️"
+    focus: "Extrai mental_models, core_frameworks e core_principles da obra primária."
+  ceptico-verificador:
+    file: agents/ceptico-verificador.md
+    tier: 1
+    icon: "🔬"
+    focus: "Separa engenharia-documentada × mito/folclore; verificação adversarial; DONO do gate de candura."
+  lexicografo:
+    file: agents/lexicografo.md
+    tier: 1
+    icon: "✒️"
+    focus: "signature_vocabulary, padrões linguísticos e a seção 'Como X Opera' (8-10 passos no estilo da mente)."
+  genealogista:
+    file: agents/genealogista.md
+    tier: 2
+    icon: "🌳"
+    focus: "Grafo de linhagens (herdou_de/influenciou); cria/atualiza linhagens/ e o índice de linhagens."
+  bibliotecario:
+    file: agents/bibliotecario.md
+    tier: 2
+    icon: "📚"
+    focus: "Índice federado (indice-mestre.md + indice.yaml) e registro em registro-de-entidades. Indexa por referência."
+  sintetizador:
+    file: agents/sintetizador.md
+    tier: 3
+    icon: "⚗️"
+    focus: "Destila mente/linhagem em framework operacional (N passos) + procedencia.md citando cada mente."
+  ponte-de-encarnacao:
+    file: agents/ponte-de-encarnacao.md
+    tier: 3
+    icon: "🌉"
+    focus: "Prepara o brief e faz handoff ao Caos quando uma mente deve virar agente conversável. Nunca cria o agente."
+
+# Rotas internas (handoffs dentro do squad)
+handoffs:
+  liceu-chief:
+    routes_to: [biografo, cartografo-de-modelos, ceptico-verificador, lexicografo, genealogista, bibliotecario, sintetizador, ponte-de-encarnacao]
+  biografo:
+    escalates_to: [ceptico-verificador, liceu-chief]
+  cartografo-de-modelos:
+    escalates_to: [ceptico-verificador, liceu-chief]
+  ceptico-verificador:
+    escalates_to: [liceu-chief]
+    note: "Portão de candura: rebaixa fato sem fonte para folclore antes de qualquer entrega."
+  lexicografo:
+    escalates_to: [liceu-chief]
+  genealogista:
+    routes_to: [bibliotecario]
+    escalates_to: [liceu-chief]
+  bibliotecario:
+    escalates_to: [liceu-chief]
+  sintetizador:
+    routes_to: [ponte-de-encarnacao]
+    escalates_to: [liceu-chief]
+  ponte-de-encarnacao:
+    escalates_to: [liceu-chief]
+    handoff_externo: caos
+
+# Handoffs externos (Liceu estrutura conhecimento; outros aplicam)
+external_handoffs:
+  framework_para_copy:
+    to: caliope
+    artifact: "Framework operacional (ângulos, dores, gatilhos) + dossiês das mentes-fonte (copywriters)."
+  framework_para_marca:
+    to: aglaia
+    artifact: "Framework de arquétipo/posicionamento + dossiês (Jung, Aaker, Sharp…)."
+  framework_para_trafego:
+    to: peitho
+    artifact: "Framework de ângulos persuasivos + procedência (Bernays, Dichter…)."
+  framework_para_oferta:
+    to: pluto
+    artifact: "Framework de desejo/valor percebido + procedência."
+  encarnar_mente:
+    to: caos
+    artifact: "Brief de encarnação (dossiê = ~80% do diagnóstico) para o Ritual de 9 fases. Exige aprovação humana."
+  pesquisa_de_mercado:
+    to: argos
+    note: "Liceu disseca PENSADORES; pedido de MERCADO/CONCORRENTE vai ao Argos. Fronteira explícita."
+  motor_de_pesquisa:
+    to: argos
+    note: "Para fontes hostis/profundas, o ceptico-verificador escala ao motor do Argos (research-synthesizer/GPT-Researcher). Sem motor próprio."
+
+# Qualidade e vetos (invioláveis)
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+    checklist: checklists/output-quality.md
+    checklist_id: LICEU-CL-001
+  veto:
+    nada_vira_fato_sem_fonte: "HALT em qualquer afirmação factual na seção 'Engenharia documentada' sem fonte primária + ano. Vai para 'Mito e folclore' com rótulo de confiança."
+    nenhum_dossie_sem_linhagem: "HALT em qualquer dossiê sem tentativa de herdou_de/influenciou (ou 'isolado' justificado)."
+    nenhum_framework_sem_procedencia: "HALT em qualquer framework sem procedencia.md citando as mentes de origem."
+    nao_mover_persona: "HALT em mover/renomear/duplicar persona que já é agente num squad. Só indexa/enriquece por referência."
+    nao_encarnar_sozinho: "HALT em criar agente conversável dentro do Liceu. Encarnação é handoff ao Caos com aprovação humana."
+
+settings:
+  activation:
+    prefix: "liceu"
+    example: "@liceu:ceptico-verificador"

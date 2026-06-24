@@ -81,6 +81,11 @@ Peitho (tráfego), Caliope (copy) e Pluto (oferta) com verdade de mercado verifi
 | Crawlee (vendorizado, Node) | crawling assíncrono multi-browser p/ JS pesado | `motor/crawlee-node/` via terminal | — |
 | Skyvern (vendorizado) | automação por visão LLM em DOM hostil | `motor/` via terminal | Infisical (LLM) |
 | Apify (actors gerenciados) | coleta gerenciada via actors prontos do Store (infra/proxies do lado da Apify) | camada `apify` do `motor/` via terminal **ou** MCP `@apify/actors-mcp-server` | Infisical: `/kolden/dev/APIFY_TOKEN`, `/kolden/dev/APIFY_USER_ID` (env dev) |
+| SociaVault (descoberta de virais) | vídeos/posts virais multi-plataforma (TikTok/IG/YT/X) por engajamento/trending | camada `viral` do `motor/` via terminal (REST, `X-API-Key`) | Infisical: `/kolden/dev/SOCIAVAULT_API_KEY` |
+| Speechmatics (transcrição pt-BR) | STT com diarização para transcrever conteúdo viral → copy | camada `transcrever` do `motor/` (SDK `speechmatics-python`) | Infisical: `/kolden/dev/SPEECHMATICS_API_KEY` |
+| Deepgram (transcrição — reuso) | STT fallback/realtime da camada `transcrever` | camada `transcrever` (`--engine deepgram`) | Infisical: `/kolden/prod/DEEPGRAM_API_KEY` |
+| yt-dlp (download) | baixa áudio/vídeo (TikTok/IG/YT) antes da transcrição | camada `transcrever` do `motor/` (CLI, OSS) | — |
+| Windsor.ai (conector de dados) | ETL de dados de marketing (Ads/GA4/CRM) para sizing/concorrência | API REST (`connectors.windsor.ai`) **ou** MCP `mcp.windsor.ai` | Infisical: `/kolden/dev/WINDSOR_API_KEY` |
 | Scrapers sociais (módulo cinza) | coleta autenticada por rede (ToS-risco) | `modulo-cinza/` via sentinela | Infisical: `/kolden/argos/cinza/*` |
 
 *Sem invenção de capacidade (Art. IV): nada além desta tabela. Sem credencial em texto puro (Art. VII).*

@@ -1,45 +1,45 @@
-# Greenfield Fullstack Workflow
+# Workflow Greenfield Fullstack
 
 > **EN** | [PT](../../aiox-workflows/greenfield-fullstack-workflow.md) | [ES](../../es/aiox-workflows/greenfield-fullstack-workflow.md)
 
 ---
 
-**Full documentation available in:** [Portuguese Version](../../aiox-workflows/greenfield-fullstack-workflow.md)
+**Documentação completa disponível em:** [Versão em Português](../../aiox-workflows/greenfield-fullstack-workflow.md)
 
 ---
 
-## Summary
+## Resumo
 
-The **Greenfield Fullstack Workflow** is designed for creating new full-stack applications from scratch. It orchestrates the complete development lifecycle including:
+O **Workflow Greenfield Fullstack** foi projetado para criar novas aplicações full-stack do zero. Ele orquestra o ciclo de vida completo de desenvolvimento, incluindo:
 
-- Project scaffolding and structure setup
-- Backend API development
-- Frontend UI development
-- Database schema design
-- Integration between layers
-- CI/CD pipeline configuration
+- Scaffolding do projeto e configuração da estrutura
+- Desenvolvimento da API de backend
+- Desenvolvimento da UI de frontend
+- Design do schema de banco de dados
+- Integração entre as camadas
+- Configuração de pipeline de CI/CD
 
-### When to Use
+### Quando Usar
 
-- Starting a brand new full-stack project
-- Building applications with both frontend and backend components
-- Projects requiring coordinated development across all layers
+- Iniciar um projeto full-stack totalmente novo
+- Construir aplicações com componentes de frontend e backend
+- Projetos que exigem desenvolvimento coordenado em todas as camadas
 
-### Key Agents
+### Agentes Principais
 
-- `@architect` - System architecture and design
-- `@dev` - Implementation
-- `@data-engineer` - Database design
-- `@qa` - Quality assurance
+- `@architect` - Arquitetura e design de sistema
+- `@dev` - Implementação
+- `@data-engineer` - Design de banco de dados
+- `@qa` - Garantia de qualidade
 
-### Main Phases
+### Fases Principais
 
-1. **Discovery** - Requirements gathering and architecture planning
-2. **Setup** - Project scaffolding and configuration
-3. **Development** - Iterative story-driven development
-4. **Integration** - Component integration and testing
-5. **Deployment** - CI/CD and release preparation
+1. **Descoberta** - Levantamento de requisitos e planejamento de arquitetura
+2. **Setup** - Scaffolding e configuração do projeto
+3. **Desenvolvimento** - Desenvolvimento iterativo orientado a stories
+4. **Integração** - Integração e testes de componentes
+5. **Deploy** - CI/CD e preparação para release
 
 ---
 
-*For complete details, diagrams, and step-by-step instructions, see the [Portuguese documentation](../../aiox-workflows/greenfield-fullstack-workflow.md).*
+*Para detalhes completos, diagramas e instruções passo a passo, veja a [documentação em Português](../../aiox-workflows/greenfield-fullstack-workflow.md).*

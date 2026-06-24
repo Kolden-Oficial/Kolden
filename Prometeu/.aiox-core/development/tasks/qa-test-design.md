@@ -1,32 +1,32 @@
 <!--
-## Modos de Execução
+## Modos de ExecuÃ§Ã£o
 
-**Escolha seu modo de execução:**
+**Escolha seu modo de execuÃ§Ã£o:**
 
-### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
-- Tomada de decisão autônoma com registro em log
-- Interação mínima com o usuário
-- **Melhor para:** Tarefas simples e determinísticas
+### 1. Modo YOLO - RÃ¡pido, AutÃ´nomo (0-1 prompts)
+- Tomada de decisÃ£o autÃ´noma com registro em log
+- InteraÃ§Ã£o mÃ­nima com o usuÃ¡rio
+- **Melhor para:** Tarefas simples e determinÃ­sticas
 
-### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
-- Checkpoints explícitos de decisão
-- Explicações educativas
-- **Melhor para:** Aprendizado, decisões complexas
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃƒO]**
+- Checkpoints explÃ­citos de decisÃ£o
+- ExplicaÃ§Ãµes educativas
+- **Melhor para:** Aprendizado, decisÃµes complexas
 
 ### 3. Planejamento Pre-Flight - Planejamento Antecipado Abrangente
-- Fase de análise da tarefa (identificar todas as ambiguidades)
-- Execução sem ambiguidade
-- **Melhor para:** Requisitos ambíguos, trabalho crítico
+- Fase de anÃ¡lise da tarefa (identificar todas as ambiguidades)
+- ExecuÃ§Ã£o sem ambiguidade
+- **Melhor para:** Requisitos ambÃ­guos, trabalho crÃ­tico
 
-**Parâmetro:** `mode` (opcional, padrão: `interactive`)
+**ParÃ¢metro:** `mode` (opcional, padrÃ£o: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: qaTestDesign()
-responsável: Quinn (Guardian)
+responsÃ¡vel: Quinn (Guardian)
 responsavel_type: Agente
 atomic_layer: Config
 
@@ -34,22 +34,22 @@ atomic_layer: Config
 - campo: target
   tipo: string
   origem: User Input
-  obrigatório: true
-  validação: Must exist
+  obrigatÃ³rio: true
+  validaÃ§Ã£o: Must exist
 
 - campo: criteria
   tipo: array
   origem: config
-  obrigatório: true
-  validação: Non-empty validation criteria
+  obrigatÃ³rio: true
+  validaÃ§Ã£o: Non-empty validation criteria
 
 - campo: strict
   tipo: boolean
   origem: User Input
-  obrigatório: false
-  validação: Default: true
+  obrigatÃ³rio: false
+  validaÃ§Ã£o: Default: true
 
-**Saída:**
+**SaÃ­da:**
 - campo: validation_result
   tipo: boolean
   destino: Return value
@@ -68,9 +68,9 @@ atomic_layer: Config
 
 ---
 
-## Pré-Condições
+## PrÃ©-CondiÃ§Ãµes
 
-**Propósito:** Validar os pré-requisitos ANTES da execução da task (bloqueante)
+**PropÃ³sito:** Validar os prÃ©-requisitos ANTES da execuÃ§Ã£o da task (bloqueante)
 
 **Checklist:**
 
@@ -79,16 +79,16 @@ pre-conditions:
   - [ ] Validation rules loaded; target available for validation
     tipo: pre-condition
     blocker: true
-    validação: |
+    validaÃ§Ã£o: |
       Check validation rules loaded; target available for validation
-    error_message: "Pré-condição falhou: regras de validação carregadas; alvo disponível para validação"
+    error_message: "PrÃ©-condiÃ§Ã£o falhou: regras de validaÃ§Ã£o carregadas; alvo disponÃ­vel para validaÃ§Ã£o"
 ```
 
 ---
 
-## Pós-Condições
+## PÃ³s-CondiÃ§Ãµes
 
-**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
+**PropÃ³sito:** Validar o sucesso da execuÃ§Ã£o APÃ“S a conclusÃ£o da task
 
 **Checklist:**
 
@@ -97,16 +97,16 @@ post-conditions:
   - [ ] Validation executed; results accurate; report generated
     tipo: post-condition
     blocker: true
-    validação: |
+    validaÃ§Ã£o: |
       Verify validation executed; results accurate; report generated
-    error_message: "Pós-condição falhou: validação executada; resultados precisos; relatório gerado"
+    error_message: "PÃ³s-condiÃ§Ã£o falhou: validaÃ§Ã£o executada; resultados precisos; relatÃ³rio gerado"
 ```
 
 ---
 
-## Critérios de Aceite
+## CritÃ©rios de Aceite
 
-**Propósito:** Critérios definitivos de aprovação/reprovação para a conclusão da task
+**PropÃ³sito:** CritÃ©rios definitivos de aprovaÃ§Ã£o/reprovaÃ§Ã£o para a conclusÃ£o da task
 
 **Checklist:**
 
@@ -115,9 +115,9 @@ acceptance-criteria:
   - [ ] Validation rules applied; pass/fail accurate; actionable feedback
     tipo: acceptance-criterion
     blocker: true
-    validação: |
+    validaÃ§Ã£o: |
       Assert validation rules applied; pass/fail accurate; actionable feedback
-    error_message: "Critério de aceite não atendido: regras de validação aplicadas; aprovação/reprovação precisa; feedback acionável"
+    error_message: "CritÃ©rio de aceite nÃ£o atendido: regras de validaÃ§Ã£o aplicadas; aprovaÃ§Ã£o/reprovaÃ§Ã£o precisa; feedback acionÃ¡vel"
 ```
 
 ---
@@ -127,21 +127,21 @@ acceptance-criteria:
 **Recursos externos/compartilhados usados por esta task:**
 
 - **Tool:** validation-engine
-  - **Propósito:** Validação baseada em regras e geração de relatórios
+  - **PropÃ³sito:** ValidaÃ§Ã£o baseada em regras e geraÃ§Ã£o de relatÃ³rios
   - **Source:** .aiox-core/utils/validation-engine.js
 
 - **Tool:** schema-validator
-  - **Propósito:** Validação de schema JSON/YAML
+  - **PropÃ³sito:** ValidaÃ§Ã£o de schema JSON/YAML
   - **Source:** ajv ou similar
 
 ---
 
 ## Scripts
 
-**Código específico do agente para esta task:**
+**CÃ³digo especÃ­fico do agente para esta task:**
 
 - **Script:** run-validation.js
-  - **Propósito:** Executar regras de validação e gerar relatório
+  - **PropÃ³sito:** Executar regras de validaÃ§Ã£o e gerar relatÃ³rio
   - **Language:** JavaScript
   - **Location:** .aiox-core/scripts/run-validation.js
 
@@ -149,30 +149,30 @@ acceptance-criteria:
 
 ## Tratamento de Erros
 
-**Estratégia:** retry
+**EstratÃ©gia:** retry
 
 **Erros Comuns:**
 
-1. **Erro:** Critérios de Validação Ausentes
-   - **Causa:** Regras de validação obrigatórias não definidas
-   - **Resolução:** Garantir que os critérios de validação sejam carregados da config
-   - **Recuperação:** Usar regras de validação padrão, registrar aviso
+1. **Erro:** CritÃ©rios de ValidaÃ§Ã£o Ausentes
+   - **Causa:** Regras de validaÃ§Ã£o obrigatÃ³rias nÃ£o definidas
+   - **ResoluÃ§Ã£o:** Garantir que os critÃ©rios de validaÃ§Ã£o sejam carregados da config
+   - **RecuperaÃ§Ã£o:** Usar regras de validaÃ§Ã£o padrÃ£o, registrar aviso
 
-2. **Erro:** Schema Inválido
-   - **Causa:** O alvo não corresponde ao schema esperado
-   - **Resolução:** Atualizar o schema ou corrigir a estrutura do alvo
-   - **Recuperação:** Relatório detalhado de erro de validação
+2. **Erro:** Schema InvÃ¡lido
+   - **Causa:** O alvo nÃ£o corresponde ao schema esperado
+   - **ResoluÃ§Ã£o:** Atualizar o schema ou corrigir a estrutura do alvo
+   - **RecuperaÃ§Ã£o:** RelatÃ³rio detalhado de erro de validaÃ§Ã£o
 
-3. **Erro:** Dependência Ausente
-   - **Causa:** Dependência obrigatória para a validação não encontrada
-   - **Resolução:** Instalar as dependências ausentes
-   - **Recuperação:** Abortar com lista clara de dependências
+3. **Erro:** DependÃªncia Ausente
+   - **Causa:** DependÃªncia obrigatÃ³ria para a validaÃ§Ã£o nÃ£o encontrada
+   - **ResoluÃ§Ã£o:** Instalar as dependÃªncias ausentes
+   - **RecuperaÃ§Ã£o:** Abortar com lista clara de dependÃªncias
 
 ---
 
 ## Performance
 
-**Métricas Esperadas:**
+**MÃ©tricas Esperadas:**
 
 ```yaml
 duration_expected: 2-10 min (estimated)
@@ -180,8 +180,8 @@ cost_estimated: $0.001-0.008
 token_usage: ~800-2,500 tokens
 ```
 
-**Notas de Otimização:**
-- Validar a configuração cedo; usar escritas atômicas; implementar checkpoints de rollback
+**Notas de OtimizaÃ§Ã£o:**
+- Validar a configuraÃ§Ã£o cedo; usar escritas atÃ´micas; implementar checkpoints de rollback
 
 ---
 
@@ -200,7 +200,7 @@ updated_at: 2025-11-17
 
 ---
 
- Powered by AIOX™ Core -->
+ Powered by AIOXâ„¢ Core -->
 
 ---
 tools:
@@ -213,7 +213,7 @@ checklists:
 
 # test-design
 
-Cria cenários de teste abrangentes com recomendações apropriadas de nível de teste para a implementação da story.
+Cria cenÃ¡rios de teste abrangentes com recomendaÃ§Ãµes apropriadas de nÃ­vel de teste para a implementaÃ§Ã£o da story.
 
 ## Entradas
 
@@ -225,11 +225,11 @@ required:
   - story_slug: '{slug}' # If missing, derive from title (lowercase, hyphenated)
 ```
 
-## Propósito
+## PropÃ³sito
 
-Projetar uma estratégia de teste completa que identifique o que testar, em qual nível (unit/integration/e2e) e por quê. Isso garante uma cobertura de teste eficiente sem redundância, mantendo limites de teste apropriados.
+Projetar uma estratÃ©gia de teste completa que identifique o que testar, em qual nÃ­vel (unit/integration/e2e) e por quÃª. Isso garante uma cobertura de teste eficiente sem redundÃ¢ncia, mantendo limites de teste apropriados.
 
-## Dependências
+## DependÃªncias
 
 ```yaml
 data:
@@ -241,35 +241,35 @@ data:
 
 ### 1. Analisar os Requisitos da Story
 
-Decomponha cada critério de aceite em cenários testáveis. Para cada AC:
+Decomponha cada critÃ©rio de aceite em cenÃ¡rios testÃ¡veis. Para cada AC:
 
 - Identifique a funcionalidade central a testar
-- Determine as variações de dados necessárias
-- Considere as condições de erro
+- Determine as variaÃ§Ãµes de dados necessÃ¡rias
+- Considere as condiÃ§Ãµes de erro
 - Anote os casos extremos (edge cases)
 
-### 2. Aplicar o Framework de Nível de Teste
+### 2. Aplicar o Framework de NÃ­vel de Teste
 
-**Referência:** Carregue `test-levels-framework.md` para critérios detalhados
+**ReferÃªncia:** Carregue `test-levels-framework.md` para critÃ©rios detalhados
 
-Regras rápidas:
+Regras rÃ¡pidas:
 
-- **Unit**: Lógica pura, algoritmos, cálculos
-- **Integration**: Interações entre componentes, operações de DB
-- **E2E**: Jornadas críticas do usuário, conformidade
+- **Unit**: LÃ³gica pura, algoritmos, cÃ¡lculos
+- **Integration**: InteraÃ§Ãµes entre componentes, operaÃ§Ãµes de DB
+- **E2E**: Jornadas crÃ­ticas do usuÃ¡rio, conformidade
 
 ### 3. Atribuir Prioridades
 
-**Referência:** Carregue `test-priorities-matrix.md` para classificação
+**ReferÃªncia:** Carregue `test-priorities-matrix.md` para classificaÃ§Ã£o
 
-Atribuição rápida de prioridade:
+AtribuiÃ§Ã£o rÃ¡pida de prioridade:
 
-- **P0**: Crítico para receita, segurança, conformidade
-- **P1**: Jornadas centrais do usuário, frequentemente usadas
-- **P2**: Funcionalidades secundárias, funções de admin
+- **P0**: CrÃ­tico para receita, seguranÃ§a, conformidade
+- **P1**: Jornadas centrais do usuÃ¡rio, frequentemente usadas
+- **P2**: Funcionalidades secundÃ¡rias, funÃ§Ãµes de admin
 - **P3**: Bom ter, raramente usado
 
-### 4. Projetar Cenários de Teste
+### 4. Projetar CenÃ¡rios de Teste
 
 Para cada necessidade de teste identificada, crie:
 
@@ -289,13 +289,13 @@ test_scenario:
 Garanta:
 
 - Cada AC tem ao menos um teste
-- Sem cobertura duplicada entre níveis
-- Caminhos críticos têm múltiplos níveis
-- Mitigações de risco são tratadas
+- Sem cobertura duplicada entre nÃ­veis
+- Caminhos crÃ­ticos tÃªm mÃºltiplos nÃ­veis
+- MitigaÃ§Ãµes de risco sÃ£o tratadas
 
-## Saídas
+## SaÃ­das
 
-### Saída 1: Documento de Design de Teste
+### SaÃ­da 1: Documento de Design de Teste
 
 **Salvar em:** `qa.qaLocation/assessments/{epic}.{story}-test-design-{YYYYMMDD}.md`
 
@@ -340,9 +340,9 @@ Designer: Quinn (Test Architect)
 5. P2+ as time permits
 ```
 
-### Saída 2: Bloco YAML do Gate
+### SaÃ­da 2: Bloco YAML do Gate
 
-Gere para inclusão no quality gate:
+Gere para inclusÃ£o no quality gate:
 
 ```yaml
 test_design:
@@ -358,7 +358,7 @@ test_design:
   coverage_gaps: [] # List any ACs without tests
 ```
 
-### Saída 3: Referências de Trace
+### SaÃ­da 3: ReferÃªncias de Trace
 
 Imprima para uso pela task trace-requirements:
 
@@ -372,16 +372,16 @@ P0 tests identified: {count}
 Antes de finalizar, verifique:
 
 - [ ] Cada AC tem cobertura de teste
-- [ ] Os níveis de teste são apropriados (sem testar em excesso)
-- [ ] Sem cobertura duplicada entre níveis
-- [ ] Prioridades alinhadas com o risco de negócio
-- [ ] Os IDs de teste seguem a convenção de nomenclatura
-- [ ] Os cenários são atômicos e independentes
+- [ ] Os nÃ­veis de teste sÃ£o apropriados (sem testar em excesso)
+- [ ] Sem cobertura duplicada entre nÃ­veis
+- [ ] Prioridades alinhadas com o risco de negÃ³cio
+- [ ] Os IDs de teste seguem a convenÃ§Ã£o de nomenclatura
+- [ ] Os cenÃ¡rios sÃ£o atÃ´micos e independentes
 
-## Princípios Chave
+## PrincÃ­pios Chave
 
 - **Shift left**: Prefira unit sobre integration, integration sobre E2E
 - **Baseado em risco**: Foque no que pode dar errado
-- **Cobertura eficiente**: Teste uma vez no nível certo
-- **Manutenibilidade**: Considere a manutenção de teste a longo prazo
-- **Feedback rápido**: Testes rápidos rodam primeiro
+- **Cobertura eficiente**: Teste uma vez no nÃ­vel certo
+- **Manutenibilidade**: Considere a manutenÃ§Ã£o de teste a longo prazo
+- **Feedback rÃ¡pido**: Testes rÃ¡pidos rodam primeiro

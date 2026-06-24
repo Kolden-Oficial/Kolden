@@ -1,12 +1,25 @@
 # KOLDEN — Fábrica de Agentes
 
-> **Versão:** 3.1.0 | **Atualizado:** 2026-06-17
+> **Versão:** 3.3.0 | **Atualizado:** 2026-06-22
 
 A camada acima deste arquivo é a **Constituição** (`constituicao.md`): princípios
 versionados e inegociáveis com gates por fase. Este `CLAUDE.md` descreve *como* o Caos
 opera; a Constituição descreve *o que nunca pode ser violado*. Em conflito, a Constituição vence.
 
 **Changelog**
+- 3.3.0 — Pipeline de Absorção de Repositório (`/absorver <url>`): ingestão segura de repos do
+  GitHub em 8 fases (F0 histórico/dedup → F7 registro), com gate de segurança estático (subagente
+  `auditor-de-seguranca` + Egide), quarentena `_staging/quarentena/` reforçada pelo reflexo
+  `bloqueio-de-quarentena.sh`, ledger `dados/repositorios-absorvidos.yaml`, e a habilidade
+  `auditoria-de-squad` (máquina de diff unificada: benchmark = repo OU padrão-ouro). Constituição
+  Art. VIII (v2.3.0).
+- 3.2.0 — Fase 5 reescrita como Construção em cascata (5.0→5.6: orquestrador → especialistas →
+  habilidades → MCPs → reflexos/memória → referências por camada), alinhada à Constituição v2.2.0;
+  habilidade `criacao-de-mcp` (wrapper do mcp-builder) na 5.4; herança histórica obrigatória por
+  camada via `heranca-de-especialista` + schema `modelos/especialista-historico.md` (fonte híbrida:
+  `referencias/biblioteca/` local + web); checklist reorganizado em cascata N0→N6 com motor
+  `checklist-runner`; escopo interno/cliente na Rodada 0 do diagnóstico (LGPD/handoff condicionais);
+  anatomia de squad corrigida para o padrão-ouro real (raiz `C:\Kolden\<Nome>\`, `agents/`, `CLAUDE.md`).
 - 3.1.0 — KPIs do Caos adicionados (seção própria com 6 indicadores); glossário centralizado em `glossario.md`; roadmap expandido e pontas abertas em `leia-me.md`.
 - 3.0.0 — Terminologia em português (habilidades, especialistas, reflexos); agentes criados
   nascem como irmãos do Caos em `C:\Kolden\<NomeMitológico>\` (não mais dentro de
@@ -95,9 +108,17 @@ A autoridade de cada fase está em `.claude/regras/autoridade-de-especialistas.m
 4. **PRD de IA** — use a habilidade `geracao-de-prd` com `modelos/prd-de-ia.md`. Apresente ao
    usuário e **aguarde aprovação explícita** (Constituição, Artigo III) antes de escrever
    qualquer arquivo do agente.
-5. **Construção** — após aprovação, crie o agente em `C:\Kolden\<NomeMitológico>\`. Use as
-   habilidades `criacao-de-skill`, `criacao-de-hooks`, `criacao-de-subagent` e, para times,
-   `criacao-de-squad`. O especialista `redator-de-prompts` escreve o CLAUDE.md do agente.
+5. **Construção (em cascata)** — após aprovação, crie o agente em `C:\Kolden\<NomeMitológico>\`
+   seguindo a **ordem canônica** (Constituição v2.2.0, gates 5.0→5.6). Cada etapa só inicia
+   quando a anterior fecha; em agente SOLO as etapas 5.1/5.2 colapsam.
+   - **5.0** O `arquiteto` produz o plano de construção (ordem topológica do PRD §11).
+   - **5.1** **Orquestrador** (tier 0) — `criacao-de-squad`. Gate: roteia, não executa; `roster:` declarado.
+   - **5.2** **Especialistas** — `criacao-de-subagent`. Gate: `tools:` restritas + formato de retorno.
+   - **5.3** **Habilidades por especialista** — `criacao-de-skill`. Gate: cada habilidade liga ao seu dono; sem órfãs.
+   - **5.4** **MCPs/APIs próprios** — `criacao-de-mcp` (só se o PRD §5 pedir integração a construir). Gate: REUSE checado, Infisical, registro `tipo: mcp`.
+   - **5.5** **Reflexos + memória** — `criacao-de-hooks`. Gate: ≥3 reflexos + ritual-de-encerramento e `MEMORY.md`.
+   - **5.6** **Referências por camada** — `heranca-de-especialista` + `busca-de-referencias`. Gate: herança histórica (biography + core_frameworks) preenchida por camada, fonte score ≥7, sem cópia literal.
+   - **5b** O especialista `redator-de-prompts` escreve o CLAUDE.md do agente ancorado nesta cascata.
 6. **Revisão** — delegue ao especialista `revisor` a auditoria contra
    `modelos/checklist-de-qualidade.md` **e** contra a Constituição. Corrija tudo que apontar.
 7. **Teste de Comportamento** — delegue ao especialista `testador`. Ele instancia o agente,
@@ -142,16 +163,41 @@ em `C:\Kolden\<NomeDoSquad>\`. A anatomia completa está em `.claude/skills/cria
 
 ```
 C:\Kolden\<NomeDoSquad>\
-├── CLAUDE.md
+├── CLAUDE.md               ← identidade do squad (orquestrador + roster + restrições)
 ├── squad.yaml              ← manifesto (tiers, agentes, handoffs, qualidade)
 ├── prd-de-ia.md
-├── orquestrador.md         ← tier 0 (roteamento + síntese)
-├── especialistas/          ← tier 1, um arquivo por especialista
-├── catalogo-de-roteamento.yaml
+├── README.md
+├── MEMORY.md               ← memória do squad (Padrões / Candidatos / Arquivado)
+├── instalacao.md
+├── roteiro-de-teste.md
+├── agents/                 ← tier 0 (`<squad>-chief.md`) + especialistas tier 1
+├── data/                   ← routing-catalog.yaml + frameworks
 ├── workflows/
 ├── checklists/
-└── instalacao.md
+├── tasks/
+└── .claude/                ← skills/, reflexos/, settings.json
 ```
+
+## Pipeline de Absorção de Repositório (`/absorver <url>`)
+
+Além de criar agentes, o Caos **absorve repositórios do GitHub** para aprimorar os squads
+existentes. Quando o Ronan manda uma URL, use a habilidade `ingestao-de-repositorio` (8 fases com
+gates). Segurança é a **prioridade #1** e é um gate BLOCK antes de qualquer leitura profunda.
+
+- **F0 Histórico** — consulta `dados/repositorios-absorvidos.yaml`; repo repetido é identificado na
+  hora (mesmo SHA = nada a fazer; SHA novo = incremental).
+- **F1 Quarentena** — `git clone --depth 1` em `_staging/quarentena/`, remove `.git`; nada é executado.
+- **F2 Segurança (BLOCK)** — subagente `auditor-de-seguranca` faz análise estática e delega ao squad
+  `Egide`; veredito SAFE/QUARENTENA/REJEITAR. Sem SAFE, não avança.
+- **F3 Compreensão 100%** → **F4 Mapeamento ao registro** (temos squad/skill equivalente?).
+- **F5 Plano (BLOCK)** — `auditoria-de-squad` (benchmark = o repo) gera o plano de aprimoramento
+  arquivo-por-arquivo; **para para aprovação** (Art. III). Se não temos, avisa e propõe criar.
+- **F6 Aplicação + qualidade** (cascata N0→N6, maturity ≥7.0) → **F7 Registro** (ledger, procedência,
+  memória).
+
+Regras invioláveis da absorção estão na Constituição, **Artigo VIII**. O reflexo
+`bloqueio-de-quarentena.sh` impede execução de código sob a quarentena; execução dinâmica só em
+Docker isolado com autorização nominal (sentinela `.docker-aprovado`).
 
 ## Regras invioláveis
 

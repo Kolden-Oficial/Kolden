@@ -4,26 +4,26 @@ responsável: @squad-creator
 responsável_type: agent
 atomic_layer: task
 Entrada: |
-  - squad_path: Path to the squad directory to migrate (required)
-  - dry_run: If true, preview changes without modifying files (--dry-run)
-  - verbose: If true, show detailed output (--verbose)
+  - squad_path: Caminho para o diretório do squad a migrar (obrigatório)
+  - dry_run: Se true, prévia das mudanças sem modificar arquivos (--dry-run)
+  - verbose: Se true, exibe saída detalhada (--verbose)
 Saída: |
-  - migration_result: Object with { success, actions, validation, backupPath }
-  - report: Formatted migration report
-  - exit_code: 0 if successful, 1 if failed
+  - migration_result: Objeto com { success, actions, validation, backupPath }
+  - report: Relatório de migração formatado
+  - exit_code: 0 se bem-sucedido, 1 se falhar
 Checklist:
-  - "[ ] Analyze squad for migration needs"
-  - "[ ] Create backup in .backup/"
-  - "[ ] Execute migration actions"
-  - "[ ] Validate migrated squad"
-  - "[ ] Generate migration report"
+  - "[ ] Analisar o squad quanto às necessidades de migração"
+  - "[ ] Criar backup em .backup/"
+  - "[ ] Executar as ações de migração"
+  - "[ ] Validar o squad migrado"
+  - "[ ] Gerar relatório de migração"
 ---
 
 # *migrate-squad
 
-Migrates legacy squad formats to AIOX 2.1 standard.
+Migra formatos legados de squad para o padrão AIOX 2.1.
 
-## Usage
+## Uso
 
 ```
 @squad-creator
@@ -41,28 +41,28 @@ Migrates legacy squad formats to AIOX 2.1 standard.
 *migrate-squad ./squads/my-pack --verbose
 ```
 
-## Parameters
+## Parâmetros
 
-| Parameter | Type | Default | Description |
+| Parâmetro | Tipo | Padrão | Descrição |
 |-----------|------|---------|-------------|
-| `squad_path` | string | - | Full path to squad directory (required) |
-| `--dry-run` | flag | false | Preview changes without modifying files |
-| `--verbose` | flag | false | Show detailed migration output |
+| `squad_path` | string | - | Caminho completo para o diretório do squad (obrigatório) |
+| `--dry-run` | flag | false | Prévia das mudanças sem modificar arquivos |
+| `--verbose` | flag | false | Exibir saída detalhada da migração |
 
-## Migration Detection
+## Detecção de Migração
 
-The migrator detects the following legacy patterns:
+O migrador detecta os seguintes padrões legados:
 
-| Pattern | Detection | Migration Action |
+| Padrão | Detecção | Ação de Migração |
 |---------|-----------|------------------|
-| `config.yaml` | Legacy manifest name | Rename to `squad.yaml` |
-| Flat structure | No `tasks/`, `agents/` dirs | Create directory structure |
-| Missing `aiox.type` | Field not present | Add `aiox.type: squad` |
-| Missing `aiox.minVersion` | Field not present | Add `aiox.minVersion: 2.1.0` |
-| Missing `name` | Field not present | Infer from directory name |
-| Missing `version` | Field not present | Add `version: 1.0.0` |
+| `config.yaml` | Nome de manifesto legado | Renomear para `squad.yaml` |
+| Estrutura plana | Sem diretórios `tasks/`, `agents/` | Criar estrutura de diretórios |
+| `aiox.type` ausente | Campo não presente | Adicionar `aiox.type: squad` |
+| `aiox.minVersion` ausente | Campo não presente | Adicionar `aiox.minVersion: 2.1.0` |
+| `name` ausente | Campo não presente | Inferir do nome do diretório |
+| `version` ausente | Campo não presente | Adicionar `version: 1.0.0` |
 
-## Flow
+## Fluxo
 
 ```
 1. Analyze Squad
@@ -95,9 +95,9 @@ The migrator detects the following legacy patterns:
    └── Validation result
 ```
 
-## Output Example
+## Exemplo de Saída
 
-### Analysis Phase
+### Fase de Análise
 
 ```
 ═══════════════════════════════════════════════════════════
@@ -126,7 +126,7 @@ PLANNED ACTIONS:
 ═══════════════════════════════════════════════════════════
 ```
 
-### Migration Result
+### Resultado da Migração
 
 ```
 ───────────────────────────────────────────────────────────
@@ -148,7 +148,7 @@ MIGRATION RESULT:
 ═══════════════════════════════════════════════════════════
 ```
 
-### Dry-Run Mode
+### Modo Dry-Run
 
 ```
 ───────────────────────────────────────────────────────────
@@ -166,9 +166,9 @@ MIGRATION RESULT:
 ═══════════════════════════════════════════════════════════
 ```
 
-## Rollback Procedure
+## Procedimento de Rollback
 
-If migration fails or produces unexpected results, restore from backup:
+Se a migração falhar ou produzir resultados inesperados, restaure a partir do backup:
 
 ```bash
 # List available backups
@@ -185,18 +185,18 @@ cp -r ./squads/my-squad/.backup/pre-migration-1703318400000/. ./squads/my-squad/
 ls ./squads/my-squad/
 ```
 
-## Error Codes
+## Códigos de Erro
 
-| Code | Severity | Description |
+| Código | Severidade | Descrição |
 |------|----------|-------------|
-| `SQUAD_NOT_FOUND` | Error | Squad directory doesn't exist |
-| `NO_MANIFEST` | Error | No config.yaml or squad.yaml found |
-| `BACKUP_FAILED` | Error | Failed to create backup |
-| `MIGRATION_FAILED` | Error | Action execution failed |
-| `VALIDATION_FAILED` | Warning | Post-migration validation found issues |
-| `INVALID_PATH` | Error | Invalid squad path provided |
+| `SQUAD_NOT_FOUND` | Error | O diretório do squad não existe |
+| `NO_MANIFEST` | Error | Nenhum config.yaml ou squad.yaml encontrado |
+| `BACKUP_FAILED` | Error | Falha ao criar o backup |
+| `MIGRATION_FAILED` | Error | Falha na execução de uma ação |
+| `VALIDATION_FAILED` | Warning | A validação pós-migração encontrou problemas |
+| `INVALID_PATH` | Error | Caminho de squad inválido fornecido |
 
-## Implementation
+## Implementação
 
 ```javascript
 const { SquadMigrator } = require('./.aiox-core/development/scripts/squad');
@@ -234,10 +234,10 @@ async function migrateSquad(options) {
 }
 ```
 
-## Related
+## Relacionados
 
 - **Story:** SQS-7 (Squad Migration Tool)
-- **Dependencies:** squad-migrator.js, squad-validator.js
+- **Dependências:** squad-migrator.js, squad-validator.js
 - **Schema:** .aiox-core/schemas/squad-schema.json
-- **Agent:** @squad-creator (Craft)
-- **Similar Tasks:** *validate-squad, *create-squad
+- **Agente:** @squad-creator (Craft)
+- **Tasks Similares:** *validate-squad, *create-squad

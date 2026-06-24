@@ -1,38 +1,38 @@
-# Migration Validation Task
+# Task de Validação de Migrations
 
-Validate database migrations are properly created and applied for schema changes.
+Valida se as migrations de banco de dados estão corretamente criadas e aplicadas para as mudanças de schema.
 
-**Absorbed from:** Auto-Claude PR Review Phase 5
-
----
-
-## Execution Modes
-
-**Choose your execution mode:**
-
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-
-- Autonomous validation with logging
-- Minimal user interaction
-- **Best for:** CI/CD integration
-
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-
-- Explains migration requirements
-- Educational context about database changes
-- **Best for:** Learning, understanding migrations
-
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-
-- Full migration audit
-- Zero ambiguity execution
-- **Best for:** Production deployments
-
-**Parameter:** `mode` (optional, default: `interactive`)
+**Absorvida de:** Auto-Claude PR Review Phase 5
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Modos de Execução
+
+**Escolha seu modo de execução:**
+
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+
+- Validação autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** integração de CI/CD
+
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[DEFAULT]**
+
+- Explica os requisitos da migration
+- Contexto educativo sobre mudanças no banco de dados
+- **Melhor para:** aprendizado, entender migrations
+
+### 3. Pre-Flight Planning - Planejamento Completo Antecipado
+
+- Auditoria completa das migrations
+- Execução sem ambiguidade
+- **Melhor para:** deploys em produção
+
+**Parâmetro:** `mode` (opcional, default: `interactive`)
+
+---
+
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: qaMigrationValidation()
@@ -43,25 +43,25 @@ atomic_layer: Molecule
 **Entrada:**
 - campo: story_id
   tipo: string
-  origem: User Input
+  origem: Input do Usuário
   obrigatorio: true
-  validacao: Must be valid story ID format (e.g., "6.3")
+  validacao: Deve estar em formato válido de story ID (ex.: "6.3")
 
 - campo: framework
   tipo: string
-  origem: Auto-detect or explicit
+  origem: Autodetecção ou explícito
   obrigatorio: false
   validacao: "supabase" | "prisma" | "drizzle" | "django" | "rails" | "sequelize"
 
 **Saida:**
 - campo: migration_report
   tipo: object
-  destino: Return value
+  destino: Valor de retorno
   persistido: false
 
 - campo: issues_found
   tipo: number
-  destino: Memory
+  destino: Memória
   persistido: false
 
 - campo: report_file
@@ -72,36 +72,36 @@ atomic_layer: Molecule
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Database framework detected
+  - [ ] Framework de banco de dados detectado
     tipo: pre-condition
     blocker: true
     validacao: |
-      One of: supabase/, prisma/, drizzle/, migrations/, db/
-    error_message: "Pre-condition failed: No database framework detected."
+      Um de: supabase/, prisma/, drizzle/, migrations/, db/
+    error_message: "Pré-condição falhou: Nenhum framework de banco de dados detectado."
 
-  - [ ] Schema changes detected in diff
+  - [ ] Mudanças de schema detectadas no diff
     tipo: pre-condition
     blocker: false
     validacao: |
-      Changes in schema files, models, or migration directories
-    error_message: "Info: No schema changes detected, validation may be skipped."
+      Mudanças em arquivos de schema, models ou diretórios de migration
+    error_message: "Info: Nenhuma mudança de schema detectada, a validação pode ser pulada."
 ```
 
 ---
 
-## Supported Frameworks
+## Frameworks Suportados
 
 ### 1. Supabase
 
-**Detection:**
+**Detecção:**
 
 ```
 supabase/
@@ -110,25 +110,25 @@ supabase/
 └── config.toml
 ```
 
-**Validation Commands:**
+**Comandos de Validação:**
 
 ```bash
-supabase db diff          # Check for pending schema changes
-supabase migration list   # List migrations status
-supabase db lint          # Lint SQL migrations
+supabase db diff          # Verifica mudanças de schema pendentes
+supabase migration list   # Lista o status das migrations
+supabase db lint          # Faz lint das migrations SQL
 ```
 
-**Checks:**
+**Verificações:**
 
-- [ ] Migration SQL file exists for schema changes
-- [ ] Migration applied locally (supabase db reset)
-- [ ] No pending schema diff
-- [ ] RLS policies included if new tables
-- [ ] Rollback migration exists (down.sql or reversible)
+- [ ] Arquivo SQL de migration existe para as mudanças de schema
+- [ ] Migration aplicada localmente (supabase db reset)
+- [ ] Nenhum diff de schema pendente
+- [ ] Políticas RLS incluídas se houver novas tabelas
+- [ ] Migration de rollback existe (down.sql ou reversível)
 
 ### 2. Prisma
 
-**Detection:**
+**Detecção:**
 
 ```
 prisma/
@@ -137,25 +137,25 @@ prisma/
     └── */migration.sql
 ```
 
-**Validation Commands:**
+**Comandos de Validação:**
 
 ```bash
-npx prisma migrate status     # Check migration status
-npx prisma validate           # Validate schema
-npx prisma db pull --preview  # Compare with DB
+npx prisma migrate status     # Verifica o status da migration
+npx prisma validate           # Valida o schema
+npx prisma db pull --preview  # Compara com o DB
 ```
 
-**Checks:**
+**Verificações:**
 
-- [ ] schema.prisma updated with new models/fields
-- [ ] Migration generated (prisma migrate dev)
-- [ ] Migration applied locally
-- [ ] No drift between schema and DB
-- [ ] Indexes defined for foreign keys
+- [ ] schema.prisma atualizado com novos models/campos
+- [ ] Migration gerada (prisma migrate dev)
+- [ ] Migration aplicada localmente
+- [ ] Nenhum drift entre o schema e o DB
+- [ ] Índices definidos para foreign keys
 
 ### 3. Drizzle
 
-**Detection:**
+**Detecção:**
 
 ```
 drizzle/
@@ -164,22 +164,22 @@ drizzle/
     └── *.sql
 ```
 
-**Validation Commands:**
+**Comandos de Validação:**
 
 ```bash
-npx drizzle-kit generate  # Generate migrations
-npx drizzle-kit check     # Check schema
+npx drizzle-kit generate  # Gera as migrations
+npx drizzle-kit check     # Verifica o schema
 ```
 
-**Checks:**
+**Verificações:**
 
-- [ ] Schema file updated
-- [ ] Migration SQL generated
-- [ ] Types exported correctly
+- [ ] Arquivo de schema atualizado
+- [ ] Migration SQL gerada
+- [ ] Tipos exportados corretamente
 
 ### 4. Django
 
-**Detection:**
+**Detecção:**
 
 ```
 */models.py
@@ -187,24 +187,24 @@ npx drizzle-kit check     # Check schema
 manage.py
 ```
 
-**Validation Commands:**
+**Comandos de Validação:**
 
 ```bash
-python manage.py makemigrations --dry-run  # Check pending
-python manage.py showmigrations            # List status
-python manage.py migrate --plan            # Show plan
+python manage.py makemigrations --dry-run  # Verifica pendências
+python manage.py showmigrations            # Lista o status
+python manage.py migrate --plan            # Mostra o plano
 ```
 
-**Checks:**
+**Verificações:**
 
-- [ ] Migration files created for model changes
-- [ ] Migrations apply without errors
-- [ ] No unapplied migrations
-- [ ] Reversible migrations (has reverse operations)
+- [ ] Arquivos de migration criados para as mudanças de model
+- [ ] Migrations aplicam sem erros
+- [ ] Nenhuma migration não aplicada
+- [ ] Migrations reversíveis (têm operações de reversão)
 
 ### 5. Rails (ActiveRecord)
 
-**Detection:**
+**Detecção:**
 
 ```
 db/
@@ -213,23 +213,23 @@ db/
     └── *.rb
 ```
 
-**Validation Commands:**
+**Comandos de Validação:**
 
 ```bash
-rails db:migrate:status   # Check status
-rails db:migrate:redo     # Test reversibility
+rails db:migrate:status   # Verifica o status
+rails db:migrate:redo     # Testa a reversibilidade
 ```
 
-**Checks:**
+**Verificações:**
 
-- [ ] Migration file exists
-- [ ] Migration runs forward
-- [ ] Migration runs backward (reversible)
-- [ ] schema.rb updated
+- [ ] Arquivo de migration existe
+- [ ] Migration roda para frente
+- [ ] Migration roda para trás (reversível)
+- [ ] schema.rb atualizado
 
 ### 6. Sequelize
 
-**Detection:**
+**Detecção:**
 
 ```
 migrations/
@@ -238,32 +238,32 @@ models/
 ├── index.js
 ```
 
-**Validation Commands:**
+**Comandos de Validação:**
 
 ```bash
-npx sequelize-cli db:migrate:status  # Check status
+npx sequelize-cli db:migrate:status  # Verifica o status
 ```
 
-**Checks:**
+**Verificações:**
 
-- [ ] Migration file created
-- [ ] Up and down methods defined
-- [ ] Migration applies successfully
+- [ ] Arquivo de migration criado
+- [ ] Métodos up e down definidos
+- [ ] Migration aplica com sucesso
 
 ---
 
-## Command
+## Comando
 
 ```
 *validate-migrations {story-id} [--framework supabase|prisma|drizzle|django|rails|sequelize]
 ```
 
-**Parameters:**
+**Parâmetros:**
 
-- `story-id` (required): Story identifier (e.g., "6.3")
-- `--framework` (optional): Force specific framework (default: auto-detect)
+- `story-id` (obrigatório): Identificador da story (ex.: "6.3")
+- `--framework` (opcional): Força um framework específico (default: autodetecção)
 
-**Examples:**
+**Exemplos:**
 
 ```bash
 *validate-migrations 6.3
@@ -274,9 +274,9 @@ npx sequelize-cli db:migrate:status  # Check status
 
 ## Workflow
 
-### Phase 1: Detect Framework
+### Fase 1: Detectar o Framework
 
-1. Check for framework indicators:
+1. Verificar os indicadores de framework:
 
    ```javascript
    const frameworks = {
@@ -289,22 +289,22 @@ npx sequelize-cli db:migrate:status  # Check status
    };
    ```
 
-2. Select detected framework (or use `--framework`)
+2. Selecionar o framework detectado (ou usar `--framework`)
 
-3. If multiple detected, prefer:
-   - Explicit `--framework` flag
-   - Most recent migration timestamp
-   - Prompt user for selection
+3. Se múltiplos forem detectados, preferir:
+   - Flag `--framework` explícita
+   - Timestamp de migration mais recente
+   - Solicitar a seleção ao usuário
 
-### Phase 2: Detect Schema Changes
+### Fase 2: Detectar Mudanças de Schema
 
-1. Get modified files:
+1. Obter os arquivos modificados:
 
    ```bash
    git diff --name-only HEAD~1
    ```
 
-2. Identify schema-related changes:
+2. Identificar mudanças relacionadas a schema:
 
    ```javascript
    const schemaPatterns = {
@@ -317,53 +317,53 @@ npx sequelize-cli db:migrate:status  # Check status
    };
    ```
 
-3. Categorize changes:
-   - New tables/models
-   - Modified columns
-   - New indexes
-   - New constraints
-   - RLS policies (Supabase)
+3. Categorizar as mudanças:
+   - Novas tabelas/models
+   - Colunas modificadas
+   - Novos índices
+   - Novas constraints
+   - Políticas RLS (Supabase)
 
-### Phase 3: Validate Migrations
+### Fase 3: Validar as Migrations
 
-For each detected schema change:
+Para cada mudança de schema detectada:
 
-1. **Check migration exists:**
-   - Is there a corresponding migration file?
-   - Does migration timestamp match schema change?
+1. **Verificar se a migration existe:**
+   - Existe um arquivo de migration correspondente?
+   - O timestamp da migration bate com a mudança de schema?
 
-2. **Validate migration content:**
-   - Does migration match schema change?
-   - Are all columns/types correct?
-   - Are indexes included?
-   - Are constraints defined?
+2. **Validar o conteúdo da migration:**
+   - A migration corresponde à mudança de schema?
+   - Todas as colunas/tipos estão corretos?
+   - Os índices estão incluídos?
+   - As constraints estão definidas?
 
-3. **Check reversibility:**
-   - Down migration exists?
-   - Reversible operations used?
-   - Data preservation considered?
+3. **Verificar a reversibilidade:**
+   - A migration de down existe?
+   - Operações reversíveis foram usadas?
+   - A preservação de dados foi considerada?
 
-4. **Test locally:**
-   - Run migration forward
-   - Run migration backward (if reversible)
-   - Check for errors
+4. **Testar localmente:**
+   - Rodar a migration para frente
+   - Rodar a migration para trás (se reversível)
+   - Verificar erros
 
-### Phase 4: Additional Checks
+### Fase 4: Verificações Adicionais
 
-**For Supabase specifically:**
+**Especificamente para Supabase:**
 
-- [ ] RLS policies for new tables
-- [ ] Grant statements for roles
-- [ ] Edge function permissions
+- [ ] Políticas RLS para novas tabelas
+- [ ] Statements de grant para roles
+- [ ] Permissões de edge function
 
-**For all frameworks:**
+**Para todos os frameworks:**
 
-- [ ] Foreign key indexes
-- [ ] NOT NULL constraints with defaults
-- [ ] Data migration for existing rows
-- [ ] Enum type handling
+- [ ] Índices de foreign key
+- [ ] Constraints NOT NULL com defaults
+- [ ] Migração de dados para linhas existentes
+- [ ] Tratamento de tipo enum
 
-### Phase 5: Generate Report
+### Fase 5: Gerar o Relatório
 
 ```json
 {
@@ -384,7 +384,7 @@ For each detected schema change:
 
 ---
 
-## Issue Format
+## Formato do Problema
 
 ```json
 {
@@ -407,39 +407,39 @@ For each detected schema change:
 
 ---
 
-## Severity Mapping
+## Mapeamento de Severidade
 
-| Issue Type                           | Severity | Blocking    |
+| Tipo de Problema                     | Severidade | Bloqueante  |
 | ------------------------------------ | -------- | ----------- |
-| Missing migration for schema change  | CRITICAL | Yes         |
-| Migration doesn't match schema       | CRITICAL | Yes         |
-| Non-reversible destructive migration | HIGH     | Recommended |
-| Missing index on foreign key         | MEDIUM   | No          |
-| Missing RLS policy (Supabase)        | HIGH     | Recommended |
-| Migration not tested locally         | HIGH     | Recommended |
-| No down migration                    | MEDIUM   | No          |
+| Migration ausente para mudança de schema | CRITICAL | Sim         |
+| Migration não corresponde ao schema  | CRITICAL | Sim         |
+| Migration destrutiva não reversível  | HIGH     | Recomendado |
+| Índice ausente em foreign key        | MEDIUM   | Não         |
+| Política RLS ausente (Supabase)      | HIGH     | Recomendado |
+| Migration não testada localmente     | HIGH     | Recomendado |
+| Sem migration de down                | MEDIUM   | Não         |
 
 ---
 
-## Integration with QA Review
+## Integração com a Revisão de QA
 
-This task integrates into the QA review pipeline:
+Esta task se integra ao pipeline de revisão de QA:
 
 ```
 *review-build {story}
-├── Phase 1-5: Standard checks
-├── Phase 6.0: Library Validation
-├── Phase 6.1: Security Checklist
-├── Phase 6.2: Migration Validation ← THIS TASK
-└── Phase 7-10: Continue review
+├── Fase 1-5: Verificações padrão
+├── Fase 6.0: Validação de Bibliotecas
+├── Fase 6.1: Checklist de Segurança
+├── Fase 6.2: Validação de Migrations ← ESTA TASK
+└── Fase 7-10: Continuar a revisão
 ```
 
-**Trigger:** Automatically called during `*review-build` if schema changes detected
-**Manual:** Can be run standalone via `*validate-migrations`
+**Gatilho:** Chamada automaticamente durante o `*review-build` se mudanças de schema forem detectadas
+**Manual:** Pode ser executada isoladamente via `*validate-migrations`
 
 ---
 
-## Example Output
+## Exemplo de Saída
 
 ```json
 {
@@ -524,60 +524,60 @@ This task integrates into the QA review pipeline:
 
 ---
 
-## Checklist Template
+## Template de Checklist
 
-For each migration review:
+Para cada revisão de migration:
 
 ```yaml
 migration_checklist:
   existence:
-    - [ ] Migration file exists for each schema change
-    - [ ] Migration timestamp is recent
-    - [ ] Migration naming follows convention
+    - [ ] Arquivo de migration existe para cada mudança de schema
+    - [ ] O timestamp da migration é recente
+    - [ ] A nomenclatura da migration segue a convenção
 
   content:
-    - [ ] SQL/code matches intended schema change
-    - [ ] Column types are correct
-    - [ ] Constraints are defined (NOT NULL, UNIQUE, etc.)
-    - [ ] Default values specified where needed
+    - [ ] SQL/código corresponde à mudança de schema pretendida
+    - [ ] Os tipos de coluna estão corretos
+    - [ ] As constraints estão definidas (NOT NULL, UNIQUE, etc.)
+    - [ ] Valores default especificados onde necessário
 
   indexes:
-    - [ ] Primary keys defined
-    - [ ] Foreign key indexes created
-    - [ ] Query-pattern indexes added
+    - [ ] Chaves primárias definidas
+    - [ ] Índices de foreign key criados
+    - [ ] Índices por padrão de query adicionados
 
   security:
-    - [ ] RLS policies for new tables (Supabase)
-    - [ ] Grants/permissions configured
-    - [ ] Sensitive columns protected
+    - [ ] Políticas RLS para novas tabelas (Supabase)
+    - [ ] Grants/permissões configurados
+    - [ ] Colunas sensíveis protegidas
 
   reversibility:
-    - [ ] Down migration exists
-    - [ ] Down migration tested
-    - [ ] Data preservation considered
+    - [ ] Migration de down existe
+    - [ ] Migration de down testada
+    - [ ] Preservação de dados considerada
 
   testing:
-    - [ ] Migration runs locally
-    - [ ] Migration is idempotent (can run twice)
-    - [ ] Existing data preserved/migrated
+    - [ ] A migration roda localmente
+    - [ ] A migration é idempotente (pode rodar duas vezes)
+    - [ ] Dados existentes preservados/migrados
 ```
 
 ---
 
-## Exit Criteria
+## Critérios de Saída
 
-This task is complete when:
+Esta task está completa quando:
 
-- Database framework detected
-- All schema changes identified
-- Migration files validated against changes
-- Missing migrations reported
-- RLS policies checked (if Supabase)
-- Reversibility assessed
-- Report generated with severity classification
-- Blocking recommendation provided
+- O framework de banco de dados foi detectado
+- Todas as mudanças de schema foram identificadas
+- Os arquivos de migration foram validados contra as mudanças
+- Migrations ausentes foram reportadas
+- Políticas RLS foram verificadas (se Supabase)
+- A reversibilidade foi avaliada
+- O relatório foi gerado com classificação de severidade
+- A recomendação de bloqueio foi fornecida
 
 ---
 
-_Absorbed from Auto-Claude PR Review System - Phase 5_
+_Absorvida do Auto-Claude PR Review System - Phase 5_
 _AIOX QA Enhancement v1.0_

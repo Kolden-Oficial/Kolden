@@ -139,9 +139,9 @@ Next steps:
 └──────────────────────────────────────────────────┘
 ```
 
-## API Integration
+## Integração com a API
 
-### Request
+### Requisição
 
 ```javascript
 POST ${SYNKRA_API_URL}/squads/sync
@@ -163,7 +163,7 @@ Content-Type: application/json
 }
 ```
 
-### Response (Success)
+### Resposta (Sucesso)
 
 ```json
 {
@@ -178,7 +178,7 @@ Content-Type: application/json
 }
 ```
 
-### Response (Error)
+### Resposta (Erro)
 
 ```json
 {
@@ -187,9 +187,9 @@ Content-Type: application/json
 }
 ```
 
-## Implementation Guide
+## Guia de Implementação
 
-### For Agent Execution
+### Para Execução pelo Agente
 
 ```javascript
 // 1. Parse squad path from arguments
@@ -285,9 +285,9 @@ if (result.success) {
 }
 ```
 
-## Error Handling
+## Tratamento de Erros
 
-| Error | Causa | Solução |
+| Erro | Causa | Solução |
 |-------|-------|---------|
 | `squad.yaml not found` | Caminho inválido | Verifique o path do squad |
 | `Validation failed` | Squad não passa na validação | Execute `*validate-squad` primeiro |
@@ -296,20 +296,20 @@ if (result.success) {
 | `403 Forbidden` | Sem permissão para operação | Verifique permissões da API key |
 | `Squad not found or not owned` | Tentando atualizar squad de outro workspace | Verifique ownership |
 
-## Related Tasks
+## Tasks Relacionadas
 
 - `*create-squad` - Criar novo squad local
 - `*validate-squad` - Validar squad antes de sync
 - `*describe-squad` - Ver detalhes do squad
 - `*list-squads` - Listar squads disponíveis
 
-## Related Story
+## Story Relacionada
 
 - **SQS-5:** SquadSyncService for Synkra API (Sprint 8)
 
 ## Changelog
 
-| Version | Date | Description |
+| Versão | Data | Descrição |
 |---------|------|-------------|
-| 1.0.0 | 2025-12-23 | Full implementation (Story SQS-5) |
-| 0.1.0 | 2025-12-18 | Initial placeholder |
+| 1.0.0 | 2025-12-23 | Implementação completa (Story SQS-5) |
+| 0.1.0 | 2025-12-18 | Placeholder inicial |

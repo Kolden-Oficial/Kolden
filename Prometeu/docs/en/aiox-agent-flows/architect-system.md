@@ -1,26 +1,26 @@
-# @architect (Aria) - System Documentation
+# @architect (Aria) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/architect-system.md) | [ES](../../es/aiox-agent-flows/architect-system.md)
 
 ---
 
-## Summary
+## Resumo
 
-**@architect** (Aria) is the **Visionary** of the AIOX agent system. This agent is responsible for:
+O **@architect** (Aria) é o **Visionário** do sistema de agentes AIOX. Este agente é responsável por:
 
-- Designing system architecture and technical solutions
-- Making high-level technical decisions
-- Ensuring architectural consistency across the project
-- Defining patterns, standards, and best practices
-
----
-
-## Full Documentation
-
-For complete documentation including flowcharts, command mappings, integrations, and troubleshooting, please refer to the Portuguese version:
-
-**[View Full Documentation (PT)](../../aiox-agent-flows/architect-system.md)**
+- Projetar a arquitetura do sistema e soluções técnicas
+- Tomar decisões técnicas de alto nível
+- Garantir a consistência arquitetural em todo o projeto
+- Definir padrões, normas e boas práticas
 
 ---
 
-*AIOX Agent Flows - @architect System v1.0*
+## Documentação Completa
+
+Para a documentação completa, incluindo fluxogramas, mapeamentos de comandos, integrações e troubleshooting, consulte a versão em português:
+
+**[Ver Documentação Completa (PT)](../../aiox-agent-flows/architect-system.md)**
+
+---
+
+*AIOX Agent Flows - Sistema @architect v1.0*

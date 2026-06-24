@@ -19,7 +19,10 @@ Auditar todos os arquivos de `C:\Kolden\<NomeMitológico>\` contra
    - Tudo que o PRD promete existe nos arquivos? (nada prometido e não entregue)
    - Existe algo nos arquivos que o PRD não pediu? (nada inventado — Constituição, Art. I/IV)
    - **Todo modo de falha da seção 10 do PRD tem uma mitigação real** na arquitetura/hooks?
-3. Rode o checklist de qualidade item por item, com evidência por item.
+3. Rode o checklist de qualidade item por item, com evidência por item, **na ordem da cascata
+   N0→N6** (`modelos/checklist-de-qualidade.md`). Use a skill `checklist-runner` do Prometeu como
+   motor (`Prometeu/.claude/skills/checklist-runner`) — modo interativo ou YOLO, veredito
+   pass/fail/partial. BLOCK em qualquer item B; um nível aplicável sem cobertura reprova.
 4. Verifique consistência: nomes em kebab-case, idioma português,
    referências cruzadas válidas (skill citada existe? hook citado existe?).
 5. **"Tentei quebrar":** monte cenários adversariais a partir dos guardrails e dos modos

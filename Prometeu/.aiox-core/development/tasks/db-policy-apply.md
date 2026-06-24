@@ -1,65 +1,65 @@
-# Task: Aplicar Template de Política RLS
+# Task: Aplicar Template de PolÃ­tica RLS
 
-**Propósito**: Instalar políticas RLS KISS ou granulares em uma tabela
+**PropÃ³sito**: Instalar polÃ­ticas RLS KISS ou granulares em uma tabela
 
 **Elicit**: true
 
 ---
 
-## Modos de Execução
+## Modos de ExecuÃ§Ã£o
 
-**Escolha seu modo de execução:**
+**Escolha seu modo de execuÃ§Ã£o:**
 
-### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
-- Tomada de decisão autônoma com registro em log
-- Interação mínima com o usuário
-- **Melhor para:** Tarefas simples e determinísticas
+### 1. Modo YOLO - RÃ¡pido, AutÃ´nomo (0-1 prompts)
+- Tomada de decisÃ£o autÃ´noma com registro em log
+- InteraÃ§Ã£o mÃ­nima com o usuÃ¡rio
+- **Melhor para:** Tarefas simples e determinÃ­sticas
 
-### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
-- Checkpoints de decisão explícitos
-- Explicações educativas
-- **Melhor para:** Aprendizado, decisões complexas
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃƒO]**
+- Checkpoints de decisÃ£o explÃ­citos
+- ExplicaÃ§Ãµes educativas
+- **Melhor para:** Aprendizado, decisÃµes complexas
 
 ### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
-- Fase de análise da task (identificar todas as ambiguidades)
-- Execução sem ambiguidade
-- **Melhor para:** Requisitos ambíguos, trabalho crítico
+- Fase de anÃ¡lise da task (identificar todas as ambiguidades)
+- ExecuÃ§Ã£o sem ambiguidade
+- **Melhor para:** Requisitos ambÃ­guos, trabalho crÃ­tico
 
-**Parâmetro:** `mode` (opcional, padrão: `interactive`)
+**ParÃ¢metro:** `mode` (opcional, padrÃ£o: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: dbPolicyApply()
-responsável: Dara (Sage)
+responsÃ¡vel: Dara (Sage)
 responsavel_type: Agente
 atomic_layer: Config
 
 **Entrada:**
 - campo: query
   tipo: string
-  origem: Entrada do Usuário
-  obrigatório: true
-  validação: Query SQL válida
+  origem: Entrada do UsuÃ¡rio
+  obrigatÃ³rio: true
+  validaÃ§Ã£o: Query SQL vÃ¡lida
 
 - campo: params
   tipo: object
-  origem: Entrada do Usuário
-  obrigatório: false
-  validação: Parâmetros da query
+  origem: Entrada do UsuÃ¡rio
+  obrigatÃ³rio: false
+  validaÃ§Ã£o: ParÃ¢metros da query
 
 - campo: connection
   tipo: object
   origem: config
-  obrigatório: true
-  validação: Conexão PostgreSQL válida via Supabase
+  obrigatÃ³rio: true
+  validaÃ§Ã£o: ConexÃ£o PostgreSQL vÃ¡lida via Supabase
 
-**Saída:**
+**SaÃ­da:**
 - campo: query_result
   tipo: array
-  destino: Memória
+  destino: MemÃ³ria
   persistido: false
 
 - campo: records_affected
@@ -69,62 +69,62 @@ atomic_layer: Config
 
 - campo: execution_time
   tipo: number
-  destino: Memória
+  destino: MemÃ³ria
   persistido: false
 ```
 
 ---
 
-## Pré-Condições
+## PrÃ©-CondiÃ§Ãµes
 
-**Propósito:** Validar os pré-requisitos ANTES da execução da task (bloqueante)
+**PropÃ³sito:** Validar os prÃ©-requisitos ANTES da execuÃ§Ã£o da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Conexão com o banco de dados estabelecida; sintaxe da query válida
+  - [ ] ConexÃ£o com o banco de dados estabelecida; sintaxe da query vÃ¡lida
     tipo: pre-condition
     blocker: true
-    validação: |
-      Verificar se a conexão com o banco de dados está estabelecida; sintaxe da query válida
-    error_message: "Pré-condição falhou: Conexão com o banco de dados estabelecida; sintaxe da query válida"
+    validaÃ§Ã£o: |
+      Verificar se a conexÃ£o com o banco de dados estÃ¡ estabelecida; sintaxe da query vÃ¡lida
+    error_message: "PrÃ©-condiÃ§Ã£o falhou: ConexÃ£o com o banco de dados estabelecida; sintaxe da query vÃ¡lida"
 ```
 
 ---
 
-## Pós-Condições
+## PÃ³s-CondiÃ§Ãµes
 
-**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
+**PropÃ³sito:** Validar o sucesso da execuÃ§Ã£o DEPOIS que a task Ã© concluÃ­da
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Query executada; resultados retornados; transação commitada
+  - [ ] Query executada; resultados retornados; transaÃ§Ã£o commitada
     tipo: post-condition
     blocker: true
-    validação: |
-      Verificar se a query foi executada; resultados retornados; transação commitada
-    error_message: "Pós-condição falhou: Query executada; resultados retornados; transação commitada"
+    validaÃ§Ã£o: |
+      Verificar se a query foi executada; resultados retornados; transaÃ§Ã£o commitada
+    error_message: "PÃ³s-condiÃ§Ã£o falhou: Query executada; resultados retornados; transaÃ§Ã£o commitada"
 ```
 
 ---
 
-## Critérios de Aceite
+## CritÃ©rios de Aceite
 
-**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
+**PropÃ³sito:** CritÃ©rios definitivos de pass/fail para a conclusÃ£o da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Dados persistidos corretamente; constraints respeitadas; sem dados órfãos
+  - [ ] Dados persistidos corretamente; constraints respeitadas; sem dados Ã³rfÃ£os
     tipo: acceptance-criterion
     blocker: true
-    validação: |
-      Afirmar que os dados foram persistidos corretamente; constraints respeitadas; sem dados órfãos
-    error_message: "Critério de aceite não atendido: Dados persistidos corretamente; constraints respeitadas; sem dados órfãos"
+    validaÃ§Ã£o: |
+      Afirmar que os dados foram persistidos corretamente; constraints respeitadas; sem dados Ã³rfÃ£os
+    error_message: "CritÃ©rio de aceite nÃ£o atendido: Dados persistidos corretamente; constraints respeitadas; sem dados Ã³rfÃ£os"
 ```
 
 ---
@@ -134,52 +134,52 @@ acceptance-criteria:
 **Recursos externos/compartilhados usados por esta task:**
 
 - **Ferramenta:** neo4j-driver
-  - **Propósito:** Conexão com o banco de dados Neo4j e execução de queries
+  - **PropÃ³sito:** ConexÃ£o com o banco de dados Neo4j e execuÃ§Ã£o de queries
   - **Origem:** npm: neo4j-driver
 
 - **Ferramenta:** query-validator
-  - **Propósito:** Validação da sintaxe de queries Cypher
+  - **PropÃ³sito:** ValidaÃ§Ã£o da sintaxe de queries Cypher
   - **Origem:** .aiox-core/utils/db-query-validator.js
 
 ---
 
 ## Scripts
 
-**Código específico do agente para esta task:**
+**CÃ³digo especÃ­fico do agente para esta task:**
 
 - **Script:** db-query.js
-  - **Propósito:** Executar queries Neo4j com tratamento de erros
+  - **PropÃ³sito:** Executar queries Neo4j com tratamento de erros
   - **Linguagem:** JavaScript
-  - **Localização:** .aiox-core/scripts/db-query.js
+  - **LocalizaÃ§Ã£o:** .aiox-core/scripts/db-query.js
 
 ---
 
 ## Tratamento de Erros
 
-**Estratégia:** abort
+**EstratÃ©gia:** abort
 
 **Erros Comuns:**
 
-1. **Erro:** Falha na Conexão
-   - **Causa:** Não foi possível conectar ao banco de dados Neo4j
-   - **Resolução:** Verificar a string de conexão, credenciais, rede
-   - **Recuperação:** Retentar com backoff exponencial (máximo de 3 tentativas)
+1. **Erro:** Falha na ConexÃ£o
+   - **Causa:** NÃ£o foi possÃ­vel conectar ao banco de dados Neo4j
+   - **ResoluÃ§Ã£o:** Verificar a string de conexÃ£o, credenciais, rede
+   - **RecuperaÃ§Ã£o:** Retentar com backoff exponencial (mÃ¡ximo de 3 tentativas)
 
 2. **Erro:** Erro de Sintaxe na Query
-   - **Causa:** Sintaxe de query Cypher inválida
-   - **Resolução:** Validar a sintaxe da query antes da execução
-   - **Recuperação:** Retornar erro de sintaxe detalhado, sugerir correção
+   - **Causa:** Sintaxe de query Cypher invÃ¡lida
+   - **ResoluÃ§Ã£o:** Validar a sintaxe da query antes da execuÃ§Ã£o
+   - **RecuperaÃ§Ã£o:** Retornar erro de sintaxe detalhado, sugerir correÃ§Ã£o
 
-3. **Erro:** Rollback de Transação
+3. **Erro:** Rollback de TransaÃ§Ã£o
    - **Causa:** A query viola constraints ou atinge timeout
-   - **Resolução:** Revisar a lógica da query e as constraints
-   - **Recuperação:** Rollback automático, preservar a integridade dos dados
+   - **ResoluÃ§Ã£o:** Revisar a lÃ³gica da query e as constraints
+   - **RecuperaÃ§Ã£o:** Rollback automÃ¡tico, preservar a integridade dos dados
 
 ---
 
 ## Performance
 
-**Métricas Esperadas:**
+**MÃ©tricas Esperadas:**
 
 ```yaml
 duration_expected: 2-10 min (estimated)
@@ -187,8 +187,8 @@ cost_estimated: $0.001-0.008
 token_usage: ~800-2,500 tokens
 ```
 
-**Notas de Otimização:**
-- Validar a configuração cedo; usar escritas atômicas; implementar checkpoints de rollback
+**Notas de OtimizaÃ§Ã£o:**
+- Validar a configuraÃ§Ã£o cedo; usar escritas atÃ´micas; implementar checkpoints de rollback
 
 ---
 
@@ -208,7 +208,7 @@ updated_at: 2025-11-17
 ---
 
 
-## 🚀 NOVO: Use o Instalador Automatizado de Políticas RLS (RECOMENDADO)
+## ðŸš€ NOVO: Use o Instalador Automatizado de PolÃ­ticas RLS (RECOMENDADO)
 
 **Economia de Tokens: 89% | Economia de Tempo: ~85%**
 
@@ -230,22 +230,22 @@ updated_at: 2025-11-17
 #   - 89% token savings
 ```
 
-**OU continue com a instalação manual da política abaixo:**
+**OU continue com a instalaÃ§Ã£o manual da polÃ­tica abaixo:**
 
 ---
 
 ## Entradas
 
-- `table` (string): Nome da tabela em que aplicar a política
-- `mode` (string): 'kiss' ou 'granular' - tipo de política
+- `table` (string): Nome da tabela em que aplicar a polÃ­tica
+- `mode` (string): 'kiss' ou 'granular' - tipo de polÃ­tica
 
 ---
 
-## Processo (Método Manual)
+## Processo (MÃ©todo Manual)
 
 ### 1. Validar as Entradas
 
-Verifique se a tabela existe e se o modo é válido:
+Verifique se a tabela existe e se o modo Ã© vÃ¡lido:
 
 ```bash
 echo "Validating inputs..."
@@ -256,22 +256,22 @@ psql "$SUPABASE_DB_URL" -c \
   SELECT 1 FROM information_schema.tables
   WHERE table_schema = 'public' AND table_name = '{table}'
 );" | grep -q t || {
-  echo "❌ Table '{table}' not found"
+  echo "âŒ Table '{table}' not found"
   exit 1
 }
 
 # Check mode
 if [[ "{mode}" != "kiss" && "{mode}" != "granular" ]]; then
-  echo "❌ Invalid mode: {mode}"
+  echo "âŒ Invalid mode: {mode}"
   echo "   Use 'kiss' or 'granular'"
   exit 1
 fi
 
-echo "✓ Table exists: {table}"
-echo "✓ Mode: {mode}"
+echo "âœ“ Table exists: {table}"
+echo "âœ“ Mode: {mode}"
 ```
 
-### 2. Verificar Políticas Existentes
+### 2. Verificar PolÃ­ticas Existentes
 
 Exiba o status atual de RLS:
 
@@ -296,12 +296,12 @@ echo ""
 echo "RLS enabled on {table}?"
 psql "$SUPABASE_DB_URL" -c \
 "SELECT relrowsecurity FROM pg_class WHERE relname = '{table}';" \
-| grep -q t && echo "✓ Yes" || echo "⚠️  No (will be enabled)"
+| grep -q t && echo "âœ“ Yes" || echo "âš ï¸  No (will be enabled)"
 ```
 
-### 3. Pedir Confirmação ao Usuário
+### 3. Pedir ConfirmaÃ§Ã£o ao UsuÃ¡rio
 
-Apresente a política que será aplicada com base no modo:
+Apresente a polÃ­tica que serÃ¡ aplicada com base no modo:
 
 **Se mode = 'kiss':**
 ```
@@ -311,7 +311,7 @@ Will apply KISS policy to {table}:
 - Uses: (select auth.uid()) = user_id [PERFORMANCE OPTIMIZED]
 - Applies to: SELECT, INSERT, UPDATE, DELETE
 
-⚠️  CRITICAL PERFORMANCE NOTE:
+âš ï¸  CRITICAL PERFORMANCE NOTE:
 Wrapping auth.uid() in SELECT provides 99.99% performance improvement
 by allowing PostgreSQL to cache the function result.
 
@@ -329,9 +329,9 @@ Will apply granular policies to {table}:
 Continue? (yes/no)
 ```
 
-Obtenha a confirmação antes de prosseguir.
+Obtenha a confirmaÃ§Ã£o antes de prosseguir.
 
-### 4. Gerar o SQL da Política
+### 4. Gerar o SQL da PolÃ­tica
 
 Com base no modo, gere o SQL apropriado:
 
@@ -349,7 +349,7 @@ CREATE POLICY "{table}_policy"
   FOR ALL
   TO authenticated
   USING (
-    -- ✅ CRITICAL: Wrap auth.uid() in SELECT for 99.99% performance gain
+    -- âœ… CRITICAL: Wrap auth.uid() in SELECT for 99.99% performance gain
     -- This allows PostgreSQL to cache the function result per statement
     (select auth.uid()) IS NOT NULL AND
     (select auth.uid()) = user_id
@@ -376,7 +376,7 @@ DROP POLICY IF EXISTS "{table}_update" ON {table};
 DROP POLICY IF EXISTS "{table}_delete" ON {table};
 
 -- SELECT: Users read own rows
--- ✅ Wrapping auth.uid() in SELECT provides 99.99% performance improvement
+-- âœ… Wrapping auth.uid() in SELECT provides 99.99% performance improvement
 CREATE POLICY "{table}_select"
   ON {table}
   FOR SELECT
@@ -429,7 +429,7 @@ COMMENT ON POLICY "{table}_delete" ON {table} IS 'Users can delete own rows (cac
 
 ### 5. Criar o Arquivo de Migration
 
-Salve o SQL da política em um arquivo de migration:
+Salve o SQL da polÃ­tica em um arquivo de migration:
 
 ```bash
 TS=$(date +%Y%m%d%H%M%S)
@@ -450,7 +450,7 @@ BEGIN;
 COMMIT;
 EOF
 
-echo "✓ Migration created: $MIGRATION_FILE"
+echo "âœ“ Migration created: $MIGRATION_FILE"
 ```
 
 ### 6. Aplicar a Migration
@@ -463,9 +463,9 @@ echo "Applying migration..."
 # (This will create snapshots, apply, verify)
 ```
 
-### 7. Testar as Políticas
+### 7. Testar as PolÃ­ticas
 
-Verifique se as políticas funcionam corretamente:
+Verifique se as polÃ­ticas funcionam corretamente:
 
 ```bash
 echo "Testing RLS policies..."
@@ -481,19 +481,19 @@ EOF
 # (Requires setting up test user - provide instructions)
 
 echo ""
-echo "✓ Policy tests complete"
-echo "  ⚠️  Manual testing recommended:"
+echo "âœ“ Policy tests complete"
+echo "  âš ï¸  Manual testing recommended:"
 echo "    - Use *impersonate to test as specific user"
 echo "    - Verify each operation (SELECT, INSERT, UPDATE, DELETE)"
 ```
 
 ---
 
-## Saída
+## SaÃ­da
 
 Exiba o resumo:
 ```
-✅ RLS POLICY APPLIED
+âœ… RLS POLICY APPLIED
 
 Table:     {table}
 Mode:      {mode}
@@ -514,20 +514,20 @@ Next steps:
 ### KISS vs Granular
 
 **KISS** (Keep It Simple, Stupid):
-- ✅ Política única para todas as operações
-- ✅ Mais fácil de entender
-- ✅ Menos verboso
-- ❌ Menos flexível
+- âœ… PolÃ­tica Ãºnica para todas as operaÃ§Ãµes
+- âœ… Mais fÃ¡cil de entender
+- âœ… Menos verboso
+- âŒ Menos flexÃ­vel
 
 **Granular**:
-- ✅ Políticas separadas por operação
-- ✅ Controle granular
-- ✅ Pode ter lógica diferente por operação
-- ❌ Mais verboso
+- âœ… PolÃ­ticas separadas por operaÃ§Ã£o
+- âœ… Controle granular
+- âœ… Pode ter lÃ³gica diferente por operaÃ§Ã£o
+- âŒ Mais verboso
 
-### Padrões Comuns
+### PadrÃµes Comuns
 
-**Leitura Pública, Escrita Autenticada (Otimizado para Performance):**
+**Leitura PÃºblica, Escrita Autenticada (Otimizado para Performance):**
 ```sql
 -- SELECT: Public
 CREATE POLICY "{table}_select" ON {table}
@@ -562,68 +562,68 @@ CREATE POLICY "{table}_tenant" ON {table}
 
 ### Dicas de Performance
 
-**Otimização Crítica de Performance:**
+**OtimizaÃ§Ã£o CrÃ­tica de Performance:**
 Sempre envolva `auth.uid()` em um statement `SELECT`:
 ```sql
--- ❌ SLOW (99.99% slower)
+-- âŒ SLOW (99.99% slower)
 USING (auth.uid() = user_id)
 
--- ✅ FAST (cached per statement)
+-- âœ… FAST (cached per statement)
 USING ((select auth.uid()) = user_id)
 ```
 
 **Por que isso importa:**
 - Sem SELECT: o PostgreSQL chama `auth.uid()` para CADA linha
 - Com SELECT: o PostgreSQL cacheia o resultado para o statement inteiro
-- Ganho de performance: **99.99%** (essencialmente 10.000x mais rápido em tabelas grandes)
+- Ganho de performance: **99.99%** (essencialmente 10.000x mais rÃ¡pido em tabelas grandes)
 
-**Recomendações de Índices:**
-- Sempre indexe as colunas usadas nas políticas (ex.: `user_id`, `tenant_id`)
+**RecomendaÃ§Ãµes de Ãndices:**
+- Sempre indexe as colunas usadas nas polÃ­ticas (ex.: `user_id`, `tenant_id`)
 - Exemplo: `CREATE INDEX idx_{table}_user_id ON {table}(user_id);`
-- Ganho de performance: **99.94%** quando combinado com funções de auth envolvidas
+- Ganho de performance: **99.94%** quando combinado com funÃ§Ãµes de auth envolvidas
 
 ---
 
-## Avisos de Segurança ⚠️
+## Avisos de SeguranÃ§a âš ï¸
 
-### CRÍTICO: NÃO Use raw_user_meta_data nas Políticas
+### CRÃTICO: NÃƒO Use raw_user_meta_data nas PolÃ­ticas
 
 ```sql
--- ❌ DANGEROUS - User can modify this data!
+-- âŒ DANGEROUS - User can modify this data!
 CREATE POLICY "bad_policy" ON {table}
   USING (
     (auth.jwt() -> 'user_metadata' ->> 'role') = 'admin'
   );
 ```
 
-**Por que é perigoso:** `raw_user_meta_data` pode ser modificado pelo usuário através do Supabase Auth client. Um atacante pode definir `{ "role": "admin" }` e burlar a segurança!
+**Por que Ã© perigoso:** `raw_user_meta_data` pode ser modificado pelo usuÃ¡rio atravÃ©s do Supabase Auth client. Um atacante pode definir `{ "role": "admin" }` e burlar a seguranÃ§a!
 
 **Alternativa segura:** Use `raw_app_meta_data` (somente do servidor):
 ```sql
--- ✅ SAFE - Only server can modify app_metadata
+-- âœ… SAFE - Only server can modify app_metadata
 CREATE POLICY "safe_policy" ON {table}
   USING (
     (auth.jwt() -> 'app_metadata' ->> 'role') = 'admin'
   );
 ```
 
-### Verificação de NULL no Auth
+### VerificaÃ§Ã£o de NULL no Auth
 
-Sempre verifique se o usuário está autenticado:
+Sempre verifique se o usuÃ¡rio estÃ¡ autenticado:
 ```sql
--- ❌ Missing NULL check
+-- âŒ Missing NULL check
 USING (auth.uid() = user_id)  -- Fails silently for anon users
 
--- ✅ Explicit authentication check
+-- âœ… Explicit authentication check
 USING (
   (select auth.uid()) IS NOT NULL AND
   (select auth.uid()) = user_id
 )
 ```
 
-### Depuração de Políticas
+### DepuraÃ§Ã£o de PolÃ­ticas
 
-Habilite as políticas RLS no SQL Editor (apenas dev):
+Habilite as polÃ­ticas RLS no SQL Editor (apenas dev):
 ```sql
 -- Temporarily disable RLS for debugging (DANGEROUS - dev only!)
 ALTER TABLE {table} DISABLE ROW LEVEL SECURITY;
@@ -634,20 +634,20 @@ ALTER TABLE {table} ENABLE ROW LEVEL SECURITY;
 
 ---
 
-## Pré-requisitos
+## PrÃ©-requisitos
 
 A tabela deve ter:
-- Coluna `user_id UUID` (para políticas baseadas em usuário)
-- Ou coluna `tenant_id` (para políticas baseadas em tenant)
-- **Índices em todas as colunas de filtro da política** (crítico para a performance!)
+- Coluna `user_id UUID` (para polÃ­ticas baseadas em usuÃ¡rio)
+- Ou coluna `tenant_id` (para polÃ­ticas baseadas em tenant)
+- **Ãndices em todas as colunas de filtro da polÃ­tica** (crÃ­tico para a performance!)
   - `CREATE INDEX idx_{table}_user_id ON {table}(user_id);`
 
 ---
 
 ## Tratamento de Erros
 
-Se a aplicação da política falhar:
-1. Verifique se a tabela tem as colunas necessárias (user_id, etc.)
-2. Verifique se auth.uid() está disponível (Supabase)
-3. Verifique se há políticas existentes com os mesmos nomes
-4. Reverta a migration se necessário: `*rollback`
+Se a aplicaÃ§Ã£o da polÃ­tica falhar:
+1. Verifique se a tabela tem as colunas necessÃ¡rias (user_id, etc.)
+2. Verifique se auth.uid() estÃ¡ disponÃ­vel (Supabase)
+3. Verifique se hÃ¡ polÃ­ticas existentes com os mesmos nomes
+4. Reverta a migration se necessÃ¡rio: `*rollback`

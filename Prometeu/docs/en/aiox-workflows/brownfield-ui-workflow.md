@@ -1,51 +1,51 @@
-# Brownfield UI Workflow
+# Workflow Brownfield de UI
 
 > **EN** | [PT](../../aiox-workflows/brownfield-ui-workflow.md) | [ES](../../es/aiox-workflows/brownfield-ui-workflow.md)
 
 ---
 
-**Full documentation available in:** [Portuguese Version](../../aiox-workflows/brownfield-ui-workflow.md)
+**Documentação completa disponível em:** [Versão em Português](../../aiox-workflows/brownfield-ui-workflow.md)
 
 ---
 
-## Summary
+## Resumo
 
-The **Brownfield UI Workflow** is designed for evolving existing frontend applications. It addresses:
+O **Workflow Brownfield de UI** foi projetado para evoluir aplicações frontend existentes. Ele aborda:
 
-- Component refactoring and modernization
-- Design system integration
-- State management improvements
-- Accessibility enhancements
-- Performance optimization
+- Refatoração e modernização de componentes
+- Integração com design system
+- Melhorias no gerenciamento de estado
+- Melhorias de acessibilidade
+- Otimização de performance
 
-### When to Use
+### Quando Usar
 
-- Adding features to existing frontend applications
-- UI/UX improvements and modernization
-- Component library migration
-- Design system adoption
-- After completing brownfield-discovery
+- Adicionar funcionalidades a aplicações frontend existentes
+- Melhorias e modernização de UI/UX
+- Migração de biblioteca de componentes
+- Adoção de design system
+- Após concluir o brownfield-discovery
 
-### Prerequisites
+### Pré-requisitos
 
-- Run `brownfield-discovery` first if unfamiliar with the project
-- Understand existing component patterns
+- Execute o `brownfield-discovery` primeiro caso não conheça o projeto
+- Compreenda os padrões de componentes existentes
 
-### Key Agents
+### Agentes Principais
 
-- `@ux-design-expert` - Design guidance
-- `@architect` - Frontend architecture evolution
-- `@dev` - UI implementation
-- `@qa` - Visual regression testing
+- `@ux-design-expert` - Orientação de design
+- `@architect` - Evolução da arquitetura de frontend
+- `@dev` - Implementação de UI
+- `@qa` - Testes de regressão visual
 
-### Main Phases
+### Fases Principais
 
-1. **Component Audit** - Existing UI review
-2. **Design Alignment** - Design system mapping
-3. **Refactoring** - Component modernization
-4. **Enhancement** - New feature implementation
-5. **Polish** - Accessibility and performance
+1. **Auditoria de Componentes** - Revisão da UI existente
+2. **Alinhamento de Design** - Mapeamento do design system
+3. **Refatoração** - Modernização de componentes
+4. **Aprimoramento** - Implementação de novas funcionalidades
+5. **Polimento** - Acessibilidade e performance
 
 ---
 
-*For complete details, diagrams, and step-by-step instructions, see the [Portuguese documentation](../../aiox-workflows/brownfield-ui-workflow.md).*
+*Para detalhes completos, diagramas e instruções passo a passo, veja a [documentação em Português](../../aiox-workflows/brownfield-ui-workflow.md).*

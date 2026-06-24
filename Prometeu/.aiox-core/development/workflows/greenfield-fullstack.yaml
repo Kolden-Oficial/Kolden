@@ -1,10 +1,10 @@
 workflow:
   id: greenfield-fullstack
-  name: Greenfield Full-Stack Application Development
+  name: Desenvolvimento Greenfield de Aplicação Full-Stack
   description: >-
-    Agent workflow for building full-stack applications from concept to development.
-    Supports both comprehensive planning for complex projects and rapid prototyping for simple ones.
-    Includes Phase 0 environment bootstrap for proper tooling setup.
+    Workflow de agentes para construir aplicações full-stack do conceito ao desenvolvimento.
+    Suporta tanto o planejamento abrangente para projetos complexos quanto a prototipagem rápida para os simples.
+    Inclui o bootstrap de ambiente da Fase 0 para a configuração adequada do ferramental.
   type: greenfield
   version: "1.0"
   project_types:
@@ -19,18 +19,18 @@ workflow:
     confirmation_required: true
 
   phases:
-    - phase_0: Environment Bootstrap
-    - phase_1: Discovery & Planning
-    - phase_2: Document Sharding
-    - phase_3: Development Cycle
+    - phase_0: Bootstrap de Ambiente
+    - phase_1: Descoberta e Planejamento
+    - phase_2: Fragmentação de Documentos
+    - phase_3: Ciclo de Desenvolvimento
 
   sequence:
     # ═══════════════════════════════════════════════════════════════════════════
-    # PHASE 0: ENVIRONMENT BOOTSTRAP
+    # FASE 0: BOOTSTRAP DE AMBIENTE
     # ═══════════════════════════════════════════════════════════════════════════
     - phase: 0
-      name: Environment Bootstrap
-      description: "Setup development environment before starting project planning"
+      name: Bootstrap de Ambiente
+      description: "Configurar o ambiente de desenvolvimento antes de iniciar o planejamento do projeto"
 
     - id: devops-environment-bootstrap
       agent: devops
@@ -45,24 +45,24 @@ workflow:
       task: environment-bootstrap.md
       optional: false
       notes: |
-        CRITICAL FIRST STEP - Run before any planning:
+        PRIMEIRO PASSO CRÍTICO - Execute antes de qualquer planejamento:
         - @devops → *environment-bootstrap
-        - Verifies/installs CLIs (git, gh, node, supabase, railway)
-        - Authenticates services (GitHub, Supabase, Railway)
-        - Creates Git repository locally and on GitHub
-        - Scaffolds AIOX project structure
-        - Generates environment report
+        - Verifica/instala CLIs (git, gh, node, supabase, railway)
+        - Autentica serviços (GitHub, Supabase, Railway)
+        - Cria o repositório Git localmente e no GitHub
+        - Estrutura o esqueleto do projeto AIOX
+        - Gera o relatório de ambiente
 
-        SKIP CONDITIONS:
-        - Only skip if project already has .aiox/environment-report.json
-        - Re-run if switching machines or team members join
+        CONDIÇÕES PARA PULAR:
+        - Só pule se o projeto já tiver .aiox/environment-report.json
+        - Reexecute ao trocar de máquina ou quando novos membros da equipe entrarem
 
     # ═══════════════════════════════════════════════════════════════════════════
-    # PHASE 1: DISCOVERY & PLANNING
+    # FASE 1: DESCOBERTA E PLANEJAMENTO
     # ═══════════════════════════════════════════════════════════════════════════
     - phase: 1
-      name: Discovery & Planning
-      description: "Create all planning artifacts (project brief, PRD, specs, architecture)"
+      name: Descoberta e Planejamento
+      description: "Criar todos os artefatos de planejamento (project brief, PRD, specs, arquitetura)"
 
     - id: analyst-project-brief
       agent: analyst
@@ -72,14 +72,14 @@ workflow:
       optional_steps:
         - brainstorming-session
         - market-research-prompt
-      notes: "Can do brainstorming first, then optional deep research before creating project brief. SAVE OUTPUT: Copy final project-brief.md to your project's docs/ folder."
+      notes: "Pode fazer brainstorming primeiro, depois pesquisa aprofundada opcional antes de criar o project brief. SALVAR SAÍDA: Copie o project-brief.md final para a pasta docs/ do seu projeto."
 
     - id: pm-create-prd
       agent: pm
       creates: prd.md
       duration_estimate: "30-60 min"
       requires: project-brief.md
-      notes: "Creates PRD from project brief using prd-tmpl. SAVE OUTPUT: Copy final prd.md to your project's docs/ folder."
+      notes: "Cria o PRD a partir do project brief usando prd-tmpl. SALVAR SAÍDA: Copie o prd.md final para a pasta docs/ do seu projeto."
 
     - id: ux-create-frontend-spec
       agent: ux-design-expert
@@ -88,7 +88,7 @@ workflow:
       requires: prd.md
       optional_steps:
         - user-research-prompt
-      notes: "Creates UI/UX specification using front-end-spec-tmpl. SAVE OUTPUT: Copy final front-end-spec.md to your project's docs/ folder."
+      notes: "Cria a especificação de UI/UX usando front-end-spec-tmpl. SALVAR SAÍDA: Copie o front-end-spec.md final para a pasta docs/ do seu projeto."
 
     - id: ux-generate-v0-prompt
       agent: ux-design-expert
@@ -96,7 +96,7 @@ workflow:
       duration_estimate: "15-30 min"
       requires: front-end-spec.md
       condition: user_wants_ai_generation
-      notes: "OPTIONAL BUT RECOMMENDED: Generate AI UI prompt for tools like v0, Lovable, etc. Use the generate-ai-frontend-prompt task. User can then generate UI in external tool and download project structure."
+      notes: "OPCIONAL MAS RECOMENDADO: Gerar prompt de UI por IA para ferramentas como v0, Lovable, etc. Use a task generate-ai-frontend-prompt. O usuário pode então gerar a UI na ferramenta externa e baixar a estrutura do projeto."
 
     - id: architect-create-architecture
       agent: architect
@@ -108,7 +108,7 @@ workflow:
       optional_steps:
         - technical-research-prompt
         - review-generated-ui-structure
-      notes: "Creates comprehensive architecture using fullstack-architecture-tmpl. If user generated UI with v0/Lovable, can incorporate the project structure into architecture. May suggest changes to PRD stories or new stories. SAVE OUTPUT: Copy final fullstack-architecture.md to your project's docs/ folder."
+      notes: "Cria a arquitetura abrangente usando fullstack-architecture-tmpl. Se o usuário gerou a UI com v0/Lovable, pode incorporar a estrutura do projeto na arquitetura. Pode sugerir mudanças nas stories do PRD ou novas stories. SALVAR SAÍDA: Copie o fullstack-architecture.md final para a pasta docs/ do seu projeto."
 
     - id: pm-update-prd
       agent: pm
@@ -116,14 +116,14 @@ workflow:
       duration_estimate: "15-30 min"
       requires: fullstack-architecture.md
       condition: architecture_suggests_prd_changes
-      notes: "If architect suggests story changes, update PRD and re-export the complete unredacted prd.md to docs/ folder."
+      notes: "Se o arquiteto sugerir mudanças nas stories, atualize o PRD e re-exporte o prd.md completo e sem redações para a pasta docs/."
 
     - id: po-validate-artifacts
       agent: po
       validates: all_artifacts
       uses: po-master-checklist
       duration_estimate: "15-30 min"
-      notes: "Validates all documents for consistency and completeness. May require updates to any document."
+      notes: "Valida todos os documentos quanto à consistência e completude. Pode exigir atualizações em qualquer documento."
 
     - id: po-delegate-fixes
       agent: po
@@ -132,48 +132,48 @@ workflow:
       updates: any_flagged_documents
       duration_estimate: "15-30 min"
       condition: po_checklist_issues
-      notes: "If PO finds issues, PO delegates fixes to the relevant agent and re-validates updated documents in docs/ folder."
+      notes: "Se o PO encontrar problemas, o PO delega as correções ao agente relevante e revalida os documentos atualizados na pasta docs/."
 
     - meta: guidance
       id: project-setup-guidance
       action: guide_project_structure
       condition: user_has_generated_ui
-      notes: "If user generated UI with v0/Lovable: For polyrepo setup, place downloaded project in separate frontend repo alongside backend repo. For monorepo, place in apps/web or packages/frontend directory. Review architecture document for specific guidance."
+      notes: "Se o usuário gerou a UI com v0/Lovable: Para configuração polyrepo, coloque o projeto baixado em um repositório frontend separado ao lado do repositório backend. Para monorepo, coloque no diretório apps/web ou packages/frontend. Revise o documento de arquitetura para orientação específica."
 
     - meta: guidance
       id: development-order-guidance
       action: guide_development_sequence
-      notes: "Based on PRD stories: If stories are frontend-heavy, start with frontend project/directory first. If backend-heavy or API-first, start with backend. For tightly coupled features, follow story sequence in monorepo setup. Reference sharded PRD epics for development order."
+      notes: "Com base nas stories do PRD: Se as stories forem majoritariamente de frontend, comece primeiro pelo projeto/diretório de frontend. Se forem majoritariamente de backend ou API-first, comece pelo backend. Para funcionalidades fortemente acopladas, siga a sequência de stories na configuração monorepo. Consulte os epics fragmentados do PRD para a ordem de desenvolvimento."
 
     # ═══════════════════════════════════════════════════════════════════════════
-    # PHASE 2: DOCUMENT SHARDING
+    # FASE 2: FRAGMENTAÇÃO DE DOCUMENTOS
     # ═══════════════════════════════════════════════════════════════════════════
     - phase: 2
-      name: Document Sharding
-      description: "Break down PRD and architecture into development-ready chunks"
+      name: Fragmentação de Documentos
+      description: "Quebrar o PRD e a arquitetura em blocos prontos para o desenvolvimento"
 
     - id: po-shard-documents
       agent: po
       action: shard_documents
       creates: sharded_docs
       duration_estimate: "15-30 min"
-      requires:  # all validated artifacts must be saved in project docs/ folder
+      requires:  # todos os artefatos validados devem estar salvos na pasta docs/ do projeto
         - prd.md
         - front-end-spec.md
         - fullstack-architecture.md
       notes: |
-        Shard documents for IDE development:
-        - Option A: Use PO agent to shard: @po then ask to shard docs/prd.md
-        - Option B: Manual: Drag shard-doc task + docs/prd.md into chat
-        - Creates docs/prd/ and docs/architecture/ folders with sharded content
-        - Generates: source-tree.md, tech-stack.md, coding-standards.md
+        Fragmente os documentos para o desenvolvimento na IDE:
+        - Opção A: Use o agente PO para fragmentar: @po e então peça para fragmentar docs/prd.md
+        - Opção B: Manual: Arraste a task shard-doc + docs/prd.md para o chat
+        - Cria as pastas docs/prd/ e docs/architecture/ com o conteúdo fragmentado
+        - Gera: source-tree.md, tech-stack.md, coding-standards.md
 
     # ═══════════════════════════════════════════════════════════════════════════
-    # PHASE 3: DEVELOPMENT CYCLE
+    # FASE 3: CICLO DE DESENVOLVIMENTO
     # ═══════════════════════════════════════════════════════════════════════════
     - phase: 3
-      name: Development Cycle
-      description: "Iterative story implementation with QA review"
+      name: Ciclo de Desenvolvimento
+      description: "Implementação iterativa de stories com revisão de QA"
 
     - id: sm-create-story
       agent: sm
@@ -183,10 +183,10 @@ workflow:
       requires: sharded_docs
       repeats: for_each_epic
       notes: |
-        Story creation cycle:
-        - SM Agent (New Chat): @sm → *create
-        - Creates next story from sharded docs
-        - Story starts in "Draft" status
+        Ciclo de criação de story:
+        - Agente SM (Novo Chat): @sm → *create
+        - Cria a próxima story a partir dos docs fragmentados
+        - A story começa no status "Draft"
 
     - id: pm-review-draft-story
       agent: pm
@@ -198,10 +198,10 @@ workflow:
       optional: true
       condition: user_wants_story_review
       notes: |
-        OPTIONAL: Review and approve draft story
-        - NOTE: story-review task coming soon
-        - Review story completeness and alignment
-        - Update story status: Draft → Approved
+        OPCIONAL: Revisar e aprovar a story em rascunho
+        - NOTA: task story-review em breve
+        - Revisar a completude e o alinhamento da story
+        - Atualizar o status da story: Draft → Approved
 
     - id: dev-implement-story
       agent: dev
@@ -210,10 +210,10 @@ workflow:
       duration_estimate: "1-4 hours"
       requires: story.md
       notes: |
-        Dev Agent (New Chat): @dev
-        - Implements approved story
-        - Updates File List with all changes
-        - Marks story as "Review" when complete
+        Agente Dev (Novo Chat): @dev
+        - Implementa a story aprovada
+        - Atualiza a File List com todas as mudanças
+        - Marca a story como "Review" ao concluir
 
     - id: qa-review-implementation
       agent: qa
@@ -223,11 +223,11 @@ workflow:
       requires: implementation_files
       optional: true
       notes: |
-        OPTIONAL: QA Agent (New Chat): @qa → review-story
-        - Senior dev review with refactoring ability
-        - Fixes small issues directly
-        - Leaves checklist for remaining items
-        - Updates story status (Review → Done or stays Review)
+        OPCIONAL: Agente QA (Novo Chat): @qa → review-story
+        - Revisão de dev sênior com capacidade de refatoração
+        - Corrige pequenos problemas diretamente
+        - Deixa um checklist para os itens restantes
+        - Atualiza o status da story (Review → Done ou permanece Review)
 
     - id: dev-address-qa-feedback
       agent: dev
@@ -237,16 +237,16 @@ workflow:
       duration_estimate: "30-60 min"
       condition: qa_left_unchecked_items
       notes: |
-        If QA left unchecked items:
-        - Dev Agent (New Chat): Address remaining items
-        - Return to QA for final approval
+        Se o QA deixou itens não marcados:
+        - Agente Dev (Novo Chat): Tratar os itens restantes
+        - Retornar ao QA para aprovação final
 
     - meta: repeat
       target_steps: [sm-create-story, dev-implement-story, qa-review-implementation]
       condition: stories_remaining
       notes: |
-        Repeat story cycle (SM → Dev → QA) for all epic stories
-        Continue until all stories in PRD are complete
+        Repita o ciclo de story (SM → Dev → QA) para todas as stories do epic
+        Continue até que todas as stories no PRD estejam concluídas
 
     - id: po-epic-retrospective
       agent: po
@@ -256,17 +256,17 @@ workflow:
       condition: epic_complete
       optional: true
       notes: |
-        OPTIONAL: After epic completion
-        - NOTE: epic-retrospective task coming soon
-        - Validate epic was completed correctly
-        - Document learnings and improvements
+        OPCIONAL: Após a conclusão do epic
+        - NOTA: task epic-retrospective em breve
+        - Validar que o epic foi concluído corretamente
+        - Documentar aprendizados e melhorias
 
     - meta: end
       action: project_complete
       notes: |
-        All stories implemented and reviewed!
-        Project development phase complete.
-        Reference: .aiox-core/data/aiox-kb.md#IDE Development Workflow
+        Todas as stories implementadas e revisadas!
+        Fase de desenvolvimento do projeto concluída.
+        Referência: .aiox-core/data/aiox-kb.md#IDE Development Workflow
 
   flow_diagram: |
     ```mermaid
@@ -349,36 +349,36 @@ workflow:
 
   decision_guidance:
     when_to_use:
-      - Building production-ready applications
-      - Multiple team members will be involved
-      - Complex feature requirements
-      - Need comprehensive documentation
-      - Long-term maintenance expected
-      - Enterprise or customer-facing applications
+      - Construir aplicações prontas para produção
+      - Múltiplos membros da equipe estarão envolvidos
+      - Requisitos de funcionalidade complexos
+      - Necessidade de documentação abrangente
+      - Manutenção de longo prazo esperada
+      - Aplicações corporativas ou voltadas ao cliente
     when_not_to_use:
-      - Simple API-only project without frontend (use greenfield-service)
-      - Frontend-only project without backend (use greenfield-ui)
-      - Enhancing existing application (use brownfield-fullstack)
-      - Technical debt assessment on existing project (use brownfield-discovery)
+      - Projeto simples apenas de API sem frontend (use greenfield-service)
+      - Projeto apenas de frontend sem backend (use greenfield-ui)
+      - Aprimorar aplicação existente (use brownfield-fullstack)
+      - Avaliação de dívida técnica em projeto existente (use brownfield-discovery)
 
   handoff_prompts:
-    # Phase 0 → Phase 1
-    bootstrap_to_analyst: "Environment bootstrap complete! Git repo created, CLIs verified, project structure ready. Start a new chat with @analyst to create the project brief."
+    # Fase 0 → Fase 1
+    bootstrap_to_analyst: "Bootstrap de ambiente concluído! Repositório Git criado, CLIs verificadas, estrutura do projeto pronta. Inicie um novo chat com @analyst para criar o project brief."
 
-    # Phase 1 internal
-    analyst_to_pm: "Project brief is complete. Save it as docs/project-brief.md in your project, then create the PRD."
-    pm_to_ux: "PRD is ready. Save it as docs/prd.md in your project, then create the UI/UX specification."
-    ux_to_architect: "UI/UX spec complete. Save it as docs/front-end-spec.md in your project, then create the fullstack architecture."
-    architect_review: "Architecture complete. Save it as docs/fullstack-architecture.md. Do you suggest any changes to the PRD stories or need new stories added?"
-    architect_to_pm: "Please update the PRD with the suggested story changes, then re-export the complete prd.md to docs/."
-    updated_to_po: "All documents ready in docs/ folder. Please validate all artifacts for consistency."
-    po_issues: "PO found issues with [document]. Please return to [agent] to fix and re-save the updated document."
+    # Interno da Fase 1
+    analyst_to_pm: "O project brief está completo. Salve-o como docs/project-brief.md no seu projeto, depois crie o PRD."
+    pm_to_ux: "O PRD está pronto. Salve-o como docs/prd.md no seu projeto, depois crie a especificação de UI/UX."
+    ux_to_architect: "A spec de UI/UX está completa. Salve-a como docs/front-end-spec.md no seu projeto, depois crie a arquitetura fullstack."
+    architect_review: "A arquitetura está completa. Salve-a como docs/fullstack-architecture.md. Você sugere alguma mudança nas stories do PRD ou precisa adicionar novas stories?"
+    architect_to_pm: "Por favor, atualize o PRD com as mudanças de story sugeridas, depois re-exporte o prd.md completo para docs/."
+    updated_to_po: "Todos os documentos prontos na pasta docs/. Por favor, valide todos os artefatos quanto à consistência."
+    po_issues: "O PO encontrou problemas com [documento]. Por favor, retorne ao [agente] para corrigir e re-salvar o documento atualizado."
 
-    # Phase 1 → Phase 2
-    phase1_to_phase2: "All planning artifacts validated. Now shard documents for development: @po → *shard-doc docs/prd.md"
+    # Fase 1 → Fase 2
+    phase1_to_phase2: "Todos os artefatos de planejamento validados. Agora fragmente os documentos para o desenvolvimento: @po → *shard-doc docs/prd.md"
 
-    # Phase 2 → Phase 3
-    phase2_to_phase3: "Documents sharded! source-tree.md, tech-stack.md, coding-standards.md created. Start development: @sm → *create-story"
+    # Fase 2 → Fase 3
+    phase2_to_phase3: "Documentos fragmentados! source-tree.md, tech-stack.md, coding-standards.md criados. Inicie o desenvolvimento: @sm → *create-story"
 
-    # Completion
-    complete: "All stories implemented and reviewed. Project development phase complete!"
+    # Conclusão
+    complete: "Todas as stories implementadas e revisadas. Fase de desenvolvimento do projeto concluída!"

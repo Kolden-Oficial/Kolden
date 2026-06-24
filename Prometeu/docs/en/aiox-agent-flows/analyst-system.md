@@ -1,26 +1,26 @@
-# @analyst (Atlas) - System Documentation
+# @analyst (Atlas) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/analyst-system.md) | [ES](../../es/aiox-agent-flows/analyst-system.md)
 
 ---
 
-## Summary
+## Resumo
 
-**@analyst** (Atlas) is the **Researcher** of the AIOX agent system. This agent is responsible for:
+O **@analyst** (Atlas) é o **Pesquisador** do sistema de agentes AIOX. Este agente é responsável por:
 
-- Conducting research and analysis tasks
-- Gathering and synthesizing information
-- Providing data-driven insights for decision making
-- Supporting other agents with research capabilities
-
----
-
-## Full Documentation
-
-For complete documentation including flowcharts, command mappings, integrations, and troubleshooting, please refer to the Portuguese version:
-
-**[View Full Documentation (PT)](../../aiox-agent-flows/analyst-system.md)**
+- Conduzir tasks de pesquisa e análise
+- Coletar e sintetizar informações
+- Fornecer insights orientados por dados para a tomada de decisão
+- Apoiar os demais agentes com capacidades de pesquisa
 
 ---
 
-*AIOX Agent Flows - @analyst System v1.0*
+## Documentação Completa
+
+Para a documentação completa, incluindo fluxogramas, mapeamentos de comandos, integrações e troubleshooting, consulte a versão em português:
+
+**[Ver Documentação Completa (PT)](../../aiox-agent-flows/analyst-system.md)**
+
+---
+
+*AIOX Agent Flows - Sistema @analyst v1.0*

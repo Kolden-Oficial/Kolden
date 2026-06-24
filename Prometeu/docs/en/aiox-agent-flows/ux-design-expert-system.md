@@ -1,26 +1,26 @@
-# @ux-design-expert (Uma) - System Documentation
+# @ux-design-expert (Uma) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/ux-design-expert-system.md) | [ES](../../es/aiox-agent-flows/ux-design-expert-system.md)
 
 ---
 
-## Summary
+## Resumo
 
-**@ux-design-expert** (Uma) is the **Designer** of the AIOX agent system. This agent is responsible for:
+O **@ux-design-expert** (Uma) é o **Designer** do sistema de agentes AIOX. Este agente é responsável por:
 
-- User experience design and research
-- Creating wireframes and prototypes
-- Defining UI patterns and design systems
-- Ensuring usability and accessibility
-
----
-
-## Full Documentation
-
-For complete documentation including flowcharts, command mappings, integrations, and troubleshooting, please refer to the Portuguese version:
-
-**[View Full Documentation (PT)](../../aiox-agent-flows/ux-design-expert-system.md)**
+- Design e pesquisa de experiência do usuário
+- Criar wireframes e protótipos
+- Definir padrões de UI e design systems
+- Garantir usabilidade e acessibilidade
 
 ---
 
-*AIOX Agent Flows - @ux-design-expert System v1.0*
+## Documentação Completa
+
+Para a documentação completa, incluindo fluxogramas, mapeamentos de comandos, integrações e troubleshooting, consulte a versão em português:
+
+**[Ver Documentação Completa (PT)](../../aiox-agent-flows/ux-design-expert-system.md)**
+
+---
+
+*AIOX Agent Flows - Sistema @ux-design-expert v1.0*

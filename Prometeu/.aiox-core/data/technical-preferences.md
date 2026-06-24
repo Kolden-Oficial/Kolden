@@ -1,51 +1,51 @@
-# User-Defined Preferred Patterns and Preferences
+# Padrões e Preferências Definidos pelo Usuário
 
 ## Tech Presets
 
-AIOX provides pre-defined architecture presets for common technology stacks.
-Location: `.aiox-core/data/tech-presets/`
+O AIOX fornece presets de arquitetura pré-definidos para stacks de tecnologia comuns.
+Local: `.aiox-core/data/tech-presets/`
 
-### Available Presets
+### Presets Disponíveis
 
-| Preset         | Technologies                                                     | Best For                                                 |
+| Preset         | Tecnologias                                                     | Melhor Para                                              |
 | -------------- | ---------------------------------------------------------------- | -------------------------------------------------------- |
-| `nextjs-react` | Next.js 16+, React, TypeScript, Tailwind, Zustand, React Query  | Fullstack web apps, SaaS, E-commerce, Dashboards         |
+| `nextjs-react` | Next.js 16+, React, TypeScript, Tailwind, Zustand, React Query  | Apps web fullstack, SaaS, E-commerce, Dashboards         |
 | `go`           | Go 1.24+, Chi/Gin, pgx/sqlc, Testify, Testcontainers            | APIs, microsserviços, workers concorrentes               |
 | `java`         | Java 21+, Spring Boot, Spring Data JPA, Flyway, JUnit           | Sistemas enterprise, domínios complexos, APIs críticas   |
 | `rust`         | Rust 1.77+, Axum, Tokio, SQLx, thiserror                        | Serviços de alta confiabilidade e alta performance        |
 | `csharp`       | C# 13, .NET 9, ASP.NET Core, EF Core, FluentValidation, xUnit   | Backends enterprise em stack Microsoft                    |
 | `php`          | PHP 8.3+, Laravel 11, Eloquent, Pest/PHPUnit                    | Sistemas web e APIs de negócio em ecossistema Laravel    |
 
-### How to Use Presets
+### Como Usar os Presets
 
-1. **During Architecture Creation:**
-   - When using `@architect *create-doc architecture`, the template will prompt for preset selection
-   - Load the preset file to get detailed patterns, standards, and templates
+1. **Durante a Criação de Arquitetura:**
+   - Ao usar `@architect *create-doc architecture`, o template solicitará a seleção do preset
+   - Carregue o arquivo do preset para obter padrões, standards e templates detalhados
 
-2. **During Development:**
-   - Reference the preset when asking `@dev` to implement features
-   - Example: "Follow the go preset patterns for this service"
+2. **Durante o Desenvolvimento:**
+   - Referencie o preset ao pedir ao `@dev` para implementar funcionalidades
+   - Exemplo: "Follow the go preset patterns for this service"
 
-3. **Creating New Presets:**
-   - Copy `_template.md` and fill in technology-specific details
-   - Add to the table above when complete
+3. **Criando Novos Presets:**
+   - Copie `_template.md` e preencha os detalhes específicos da tecnologia
+   - Adicione à tabela acima quando concluído
 
-### Preset Contents
+### Conteúdo do Preset
 
-Each preset includes:
+Cada preset inclui:
 
-- **Design Patterns:** Recommended patterns with examples
-- **Project Structure:** Folder organization
-- **Tech Stack:** Libraries and versions
-- **Coding Standards:** Naming conventions, critical rules
-- **Testing Strategy:** What to test, coverage goals
-- **File Templates:** Ready-to-use code templates
+- **Design Patterns:** Padrões recomendados com exemplos
+- **Estrutura do Projeto:** Organização de pastas
+- **Tech Stack:** Bibliotecas e versões
+- **Padrões de Código:** Convenções de nomenclatura, regras críticas
+- **Estratégia de Testes:** O que testar, metas de cobertura
+- **Templates de Arquivo:** Templates de código prontos para uso
 
-## Active Preset
+## Preset Ativo
 
-> **Current:** `nextjs-react` (Next.js 16+, React, TypeScript, Tailwind, Zustand)
+> **Atual:** `nextjs-react` (Next.js 16+, React, TypeScript, Tailwind, Zustand)
 
-The active preset is automatically loaded when @dev is activated. To change:
+O preset ativo é carregado automaticamente quando o @dev é ativado. Para mudar:
 
 ```yaml
 # .aiox-core/core-config.yaml
@@ -55,13 +55,13 @@ techPreset:
 
 ---
 
-## User Preferences
+## Preferências do Usuário
 
-> Add your personal/team preferences below. These will be used by agents during development.
+> Adicione suas preferências pessoais/de equipe abaixo. Elas serão usadas pelos agentes durante o desenvolvimento.
 
-### Preferred Technologies
+### Tecnologias Preferidas
 
-<!-- Uncomment and fill in your preferences
+<!-- Descomente e preencha suas preferências
 | Category | Preference | Notes |
 |----------|------------|-------|
 | Frontend Framework | Next.js | Using App Router |
@@ -71,18 +71,18 @@ techPreset:
 | ORM | Prisma | Type-safe queries |
 -->
 
-### Coding Style Preferences
+### Preferências de Estilo de Código
 
-<!-- Uncomment and fill in your preferences
+<!-- Descomente e preencha suas preferências
 - Prefer functional components over class components
 - Use named exports over default exports
 - Prefer explicit error handling over try/catch wrapping
 -->
 
-### Project-Specific Rules
+### Regras Específicas do Projeto
 
-<!-- Add any project-specific rules that agents should follow -->
+<!-- Adicione quaisquer regras específicas do projeto que os agentes devem seguir -->
 
 ---
 
-_Updated: 2026-02-19_
+_Atualizado: 2026-02-19_

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kolden — Starter de Componentes</title>
+  <!-- Lato (gratuita). Eurostile é comercial: substituída por fallback na web. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Saira+Semi+Condensed:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../02-tokens/tokens.css" />
+  <style>
+    /* O starter consome SOMENTE os tokens (var(--ds-*)). Nada de hex solto aqui. */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--ds-bg-default);
+      color: var(--ds-text-default);
+      font-family: var(--ds-font-base);
+      font-size: var(--ds-font-size-body);
+      line-height: var(--ds-line-normal);
+      padding: var(--ds-space-12);
+    }
+    .ds-eyebrow {
+      font-family: var(--ds-font-accent);
+      font-size: var(--ds-font-size-eyebrow);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ds-text-accent);
+    }
+    h1 { font-size: var(--ds-font-size-h1); font-weight: var(--ds-weight-black); line-height: var(--ds-line-tight); margin: var(--ds-space-2) 0 var(--ds-space-8); color: var(--ds-text-strong); }
+    h2 { font-size: var(--ds-font-size-h3); font-weight: var(--ds-weight-bold); margin: var(--ds-space-12) 0 var(--ds-space-4); }
+    section { max-width: 880px; }
+    .row { display: flex; flex-wrap: wrap; gap: var(--ds-space-3); align-items: center; }
+
+    /* ---------- Botão ---------- */
+    .ds-btn {
+      font-family: var(--ds-font-base);
+      font-size: var(--ds-font-size-body);
+      font-weight: var(--ds-weight-bold);
+      border: 1px solid transparent;
+      border-radius: var(--ds-radius-md);
+      padding: var(--ds-space-3) var(--ds-space-6);
+      cursor: pointer;
+      transition: filter .15s ease, background .15s ease, box-shadow .15s ease;
+    }
+    .ds-btn:focus-visible { outline: 2px solid var(--ds-border-focus); outline-offset: 2px; }
+    /* Primário: scarlet + texto INK (AA 5.43:1) — nunca texto branco aqui */
+    .ds-btn--primary { background: var(--ds-accent); color: var(--ds-accent-contrast); }
+    .ds-btn--primary:hover { box-shadow: var(--ds-shadow-glow); filter: brightness(1.05); }
+    .ds-btn--primary:active { filter: brightness(0.92); }
+    /* Secundário: contorno sobre escuro */
+    .ds-btn--secondary { background: transparent; color: var(--ds-text-default); border-color: var(--ds-border); }
+    .ds-btn--secondary:hover { border-color: var(--ds-text-default); }
+    .ds-btn:disabled { background: var(--ds-bg-surface-2); color: var(--ds-text-muted); border-color: transparent; cursor: not-allowed; box-shadow: none; filter: none; }
+
+    /* ---------- Link ---------- */
+    .ds-link { color: var(--ds-text-accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+    .ds-link:hover { text-decoration-thickness: 2px; }
+    .ds-link:focus-visible { outline: 2px solid var(--ds-border-focus); outline-offset: 2px; border-radius: 2px; }
+
+    /* ---------- Input ---------- */
+    .ds-field { display: flex; flex-direction: column; gap: var(--ds-space-2); max-width: 360px; }
+    .ds-label { font-size: var(--ds-font-size-small); color: var(--ds-text-default); }
+    .ds-input {
+      font-family: var(--ds-font-base); font-size: var(--ds-font-size-body);
+      background: var(--ds-bg-surface-2); color: var(--ds-text-strong);
+      border: 1px solid var(--ds-border); border-radius: var(--ds-radius-md);
+      padding: var(--ds-space-3) var(--ds-space-4);
+    }
+    .ds-input::placeholder { color: var(--ds-text-muted); }
+    .ds-input:focus { outline: none; border-color: var(--ds-border-focus); box-shadow: 0 0 0 3px rgba(255,61,34,0.25); }
+    .ds-input[aria-invalid="true"] { border-color: var(--ds-accent); }
+    .ds-error { font-size: var(--ds-font-size-small); color: var(--ds-text-accent); }
+    .ds-input:disabled { opacity: .5; cursor: not-allowed; }
+
+    /* ---------- Card ---------- */
+    .ds-card {
+      background: var(--ds-bg-surface); border: 1px solid var(--ds-border);
+      border-radius: var(--ds-radius-lg); padding: var(--ds-space-6);
+      box-shadow: var(--ds-shadow-md); max-width: 360px;
+    }
+    .ds-card h3 { margin: 0 0 var(--ds-space-2); font-size: var(--ds-font-size-h4); color: var(--ds-text-strong); }
+    .ds-card p { margin: 0 0 var(--ds-space-4); color: var(--ds-text-default); }
+
+    /* ---------- Badge ---------- */
+    .ds-badge {
+      display: inline-block; font-family: var(--ds-font-accent);
+      font-size: var(--ds-font-size-eyebrow); text-transform: uppercase; letter-spacing: 0.06em;
+      padding: var(--ds-space-1) var(--ds-space-3); border-radius: var(--ds-radius-pill);
+    }
+    .ds-badge--accent { background: var(--ds-accent); color: var(--ds-accent-contrast); }
+    .ds-badge--neutral { background: var(--ds-bg-surface-2); color: var(--ds-text-default); border: 1px solid var(--ds-border); }
+  </style>
+</head>
+<body>
+  <section>
+    <p class="ds-eyebrow">Kolden Design System</p>
+    <h1>Starter de Componentes</h1>
+    <p>Todos os componentes consomem apenas os design tokens (<code>var(--ds-*)</code>). Esta página
+       também serve como verificação visual do <code>tokens.css</code>.</p>
+
+    <h2>Botões</h2>
+    <div class="row">
+      <button class="ds-btn ds-btn--primary">Ação primária</button>
+      <button class="ds-btn ds-btn--secondary">Secundário</button>
+      <button class="ds-btn ds-btn--primary" disabled>Desabilitado</button>
+    </div>
+
+    <h2>Link</h2>
+    <p>Entre para a <a class="ds-link" href="#">mentoria Kolden</a> e acelere seu LTV.</p>
+
+    <h2>Campo de formulário</h2>
+    <div class="ds-field">
+      <label class="ds-label" for="email">E-mail</label>
+      <input class="ds-input" id="email" type="email" placeholder="voce@empresa.com" />
+    </div>
+    <div class="ds-field" style="margin-top:1rem">
+      <label class="ds-label" for="email2">E-mail (erro)</label>
+      <input class="ds-input" id="email2" type="email" value="invalido" aria-invalid="true" aria-describedby="err2" />
+      <span class="ds-error" id="err2">Informe um e-mail válido.</span>
+    </div>
+
+    <h2>Card</h2>
+    <div class="ds-card">
+      <span class="ds-badge ds-badge--accent">Novo</span>
+      <h3 style="margin-top:0.75rem">Ecossistema Kolden</h3>
+      <p>Gestão de alta performance para impulsionar negócios digitais e locais.</p>
+      <button class="ds-btn ds-btn--primary">Entrar</button>
+    </div>
+
+    <h2>Badges</h2>
+    <div class="row">
+      <span class="ds-badge ds-badge--accent">Destaque</span>
+      <span class="ds-badge ds-badge--neutral">Neutro</span>
+    </div>
+  </section>
+</body>
+</html>

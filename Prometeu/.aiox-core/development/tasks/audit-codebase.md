@@ -1,33 +1,33 @@
-# Audit Codebase for UI Pattern Redundancy
+# Auditar Codebase por Redundância de Padrões de UI
 
 > Task ID: brad-audit-codebase
-> Agent: Brad (Design System Architect)
-> Version: 1.0.0
+> Agente: Brad (Design System Architect)
+> Versão: 1.0.0
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha o modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro em log
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Balanceado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints explícitos de decisão
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Completo Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: auditCodebase()
@@ -40,19 +40,19 @@ atomic_layer: Strategy
   tipo: string
   origem: User Input
   obrigatório: true
-  validação: Valid path or identifier
+  validação: Caminho ou identificador válido
 
 - campo: options
   tipo: object
   origem: config
   obrigatório: false
-  validação: Analysis configuration
+  validação: Configuração de análise
 
 - campo: depth
   tipo: number
   origem: User Input
   obrigatório: false
-  validação: Default: 1 (0-3)
+  validação: Padrão: 1 (0-3)
 
 **Saída:**
 - campo: analysis_report
@@ -73,111 +73,111 @@ atomic_layer: Strategy
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Target exists and is accessible; analysis tools available
+  - [ ] O alvo existe e está acessível; ferramentas de análise disponíveis
     tipo: pre-condition
     blocker: true
     validação: |
-      Check target exists and is accessible; analysis tools available
-    error_message: "Pre-condition failed: Target exists and is accessible; analysis tools available"
+      Verificar que o alvo existe e está acessível; ferramentas de análise disponíveis
+    error_message: "Pré-condição falhou: O alvo existe e está acessível; ferramentas de análise disponíveis"
 ```
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a task ser concluída
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Analysis complete; report generated; no critical issues
+  - [ ] Análise concluída; relatório gerado; sem problemas críticos
     tipo: post-condition
     blocker: true
     validação: |
-      Verify analysis complete; report generated; no critical issues
-    error_message: "Post-condition failed: Analysis complete; report generated; no critical issues"
+      Verificar que a análise está concluída; relatório gerado; sem problemas críticos
+    error_message: "Pós-condição falhou: Análise concluída; relatório gerado; sem problemas críticos"
 ```
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Analysis accurate; all targets covered; report complete
+  - [ ] Análise precisa; todos os alvos cobertos; relatório completo
     tipo: acceptance-criterion
     blocker: true
     validação: |
-      Assert analysis accurate; all targets covered; report complete
-    error_message: "Acceptance criterion not met: Analysis accurate; all targets covered; report complete"
+      Assegurar que a análise é precisa; todos os alvos cobertos; relatório completo
+    error_message: "Critério de aceite não atendido: Análise precisa; todos os alvos cobertos; relatório completo"
 ```
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** code-analyzer
-  - **Purpose:** Static code analysis and metrics
-  - **Source:** .aiox-core/utils/code-analyzer.js
+- **Ferramenta:** code-analyzer
+  - **Propósito:** Análise estática de código e métricas
+  - **Origem:** .aiox-core/utils/code-analyzer.js
 
-- **Tool:** file-system
-  - **Purpose:** Recursive directory traversal
-  - **Source:** Node.js fs module
+- **Ferramenta:** file-system
+  - **Propósito:** Travessia recursiva de diretórios
+  - **Origem:** Módulo fs do Node.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** analyze-codebase.js
-  - **Purpose:** Codebase analysis and reporting
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/analyze-codebase.js
+  - **Propósito:** Análise de codebase e geração de relatórios
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/analyze-codebase.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** fallback
+**Estratégia:** fallback
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Target Not Accessible
-   - **Cause:** Path does not exist or permissions denied
-   - **Resolution:** Verify path and check permissions
-   - **Recovery:** Skip inaccessible paths, continue with accessible ones
+1. **Erro:** Alvo Não Acessível
+   - **Causa:** O caminho não existe ou permissões negadas
+   - **Resolução:** Verificar o caminho e checar as permissões
+   - **Recuperação:** Pular caminhos inacessíveis, continuar com os acessíveis
 
-2. **Error:** Analysis Timeout
-   - **Cause:** Analysis exceeds time limit for large codebases
-   - **Resolution:** Reduce analysis depth or scope
-   - **Recovery:** Return partial results with timeout warning
+2. **Erro:** Timeout da Análise
+   - **Causa:** A análise excede o limite de tempo para codebases grandes
+   - **Resolução:** Reduzir a profundidade ou o escopo da análise
+   - **Recuperação:** Retornar resultados parciais com aviso de timeout
 
-3. **Error:** Memory Limit Exceeded
-   - **Cause:** Large codebase exceeds memory allocation
-   - **Resolution:** Process in batches or increase memory limit
-   - **Recovery:** Graceful degradation to summary analysis
+3. **Erro:** Limite de Memória Excedido
+   - **Causa:** Codebase grande excede a alocação de memória
+   - **Resolução:** Processar em lotes ou aumentar o limite de memória
+   - **Recuperação:** Degradação graciosa para análise em resumo
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-20 min (estimated)
@@ -185,12 +185,12 @@ cost_estimated: $0.003-0.015
 token_usage: ~2,000-8,000 tokens
 ```
 
-**Optimization Notes:**
-- Iterative analysis with depth limits; cache intermediate results; batch similar operations
+**Notas de Otimização:**
+- Análise iterativa com limites de profundidade; cachear resultados intermediários; agrupar operações similares em lote
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -206,109 +206,109 @@ updated_at: 2025-11-17
 ---
 
 
-## Description
+## Descrição
 
-Scan codebase to detect UI pattern redundancies (buttons, colors, spacing, typography, forms) and quantify technical debt with hard metrics. Brad's specialty: showing you the horror show you've created.
+Varre o codebase para detectar redundâncias de padrões de UI (botões, cores, espaçamento, tipografia, formulários) e quantificar a dívida técnica com métricas concretas. A especialidade do Brad: mostrar o show de horrores que você criou.
 
-## Prerequisites
+## Pré-requisitos
 
-- Codebase with UI code (React, Vue, HTML, or vanilla CSS)
-- Bash shell access
-- grep, find, awk utilities available
+- Codebase com código de UI (React, Vue, HTML ou CSS puro)
+- Acesso ao shell Bash
+- Utilitários grep, find, awk disponíveis
 
 ## Workflow
 
-### Interactive Elicitation
+### Elicitação Interativa
 
-This task uses interactive elicitation to gather scan parameters.
+Esta task usa elicitação interativa para coletar os parâmetros de varredura.
 
-1. **Gather Scan Parameters**
-   - Ask for scan path (e.g., ./src, ./app, ./components)
-   - Detect frameworks automatically or ask for confirmation
-   - Confirm output directory (default: outputs/design-system/{project}/audit/)
+1. **Coletar Parâmetros de Varredura**
+   - Perguntar pelo caminho de varredura (ex.: ./src, ./app, ./components)
+   - Detectar frameworks automaticamente ou pedir confirmação
+   - Confirmar o diretório de saída (padrão: outputs/design-system/{project}/audit/)
 
-2. **Validate Scan Path**
-   - Check path exists and is readable
-   - Count total files to scan
-   - Estimate scan time (100k LOC ~2 min)
+2. **Validar o Caminho de Varredura**
+   - Verificar se o caminho existe e é legível
+   - Contar o total de arquivos a varrer
+   - Estimar o tempo de varredura (100k LOC ~2 min)
 
-3. **Confirm and Execute**
-   - Show scan plan summary
-   - Ask for confirmation before starting
-   - Begin pattern detection
+3. **Confirmar e Executar**
+   - Exibir o resumo do plano de varredura
+   - Pedir confirmação antes de iniciar
+   - Iniciar a detecção de padrões
 
-### Steps
+### Passos
 
-1. **Validate Environment**
-   - Check scan path exists
-   - Verify read permissions
-   - Create output directory structure
-   - Validation: Path exists and is readable
+1. **Validar o Ambiente**
+   - Verificar se o caminho de varredura existe
+   - Verificar as permissões de leitura
+   - Criar a estrutura do diretório de saída
+   - Validação: O caminho existe e é legível
 
-2. **Detect Frameworks**
-   - Count React/JSX files (*.jsx, *.tsx)
-   - Count Vue files (*.vue)
-   - Count HTML files (*.html)
-   - Count CSS files (*.css, *.scss, *.sass)
-   - Validation: At least 1 UI file type found
+2. **Detectar Frameworks**
+   - Contar arquivos React/JSX (*.jsx, *.tsx)
+   - Contar arquivos Vue (*.vue)
+   - Contar arquivos HTML (*.html)
+   - Contar arquivos CSS (*.css, *.scss, *.sass)
+   - Validação: Ao menos 1 tipo de arquivo de UI encontrado
 
-3. **Scan Button Patterns**
-   - Detect button elements (<button, <Button, className="btn")
-   - Count total button instances across all files
-   - Extract unique button class names and patterns
-   - Calculate redundancy factor (instances / unique patterns)
-   - Validation: Patterns detected or zero if none exist
+3. **Varrer Padrões de Botão**
+   - Detectar elementos de botão (<button, <Button, className="btn")
+   - Contar o total de instâncias de botão em todos os arquivos
+   - Extrair nomes de classe e padrões de botão únicos
+   - Calcular o fator de redundância (instâncias / padrões únicos)
+   - Validação: Padrões detectados ou zero se nenhum existir
 
-4. **Scan Color Usage**
-   - Extract hex colors (#RGB, #RRGGBB)
-   - Extract rgb/rgba colors
-   - Count unique color values
-   - Count total color usage instances
-   - Identify top 10 most-used colors
-   - Calculate redundancy factor
-   - Validation: Color list generated
+4. **Varrer Uso de Cores**
+   - Extrair cores hexadecimais (#RGB, #RRGGBB)
+   - Extrair cores rgb/rgba
+   - Contar valores de cor únicos
+   - Contar o total de instâncias de uso de cor
+   - Identificar as 10 cores mais usadas
+   - Calcular o fator de redundância
+   - Validação: Lista de cores gerada
 
-5. **Scan Spacing Patterns**
-   - Extract padding values (padding: Npx)
-   - Extract margin values (margin: Npx)
-   - Count unique spacing values
-   - Identify most common patterns
-   - Validation: Spacing inventory complete
+5. **Varrer Padrões de Espaçamento**
+   - Extrair valores de padding (padding: Npx)
+   - Extrair valores de margin (margin: Npx)
+   - Contar valores de espaçamento únicos
+   - Identificar os padrões mais comuns
+   - Validação: Inventário de espaçamento completo
 
-6. **Scan Typography**
-   - Extract font-family declarations
-   - Extract font-size values
-   - Extract font-weight values
-   - Count unique typography patterns
-   - Validation: Typography catalog created
+6. **Varrer Tipografia**
+   - Extrair declarações de font-family
+   - Extrair valores de font-size
+   - Extrair valores de font-weight
+   - Contar padrões de tipografia únicos
+   - Validação: Catálogo de tipografia criado
 
-7. **Scan Form Patterns**
-   - Count input elements
-   - Extract unique input class patterns
-   - Count form elements
-   - Extract unique form patterns
-   - Validation: Form patterns documented
+7. **Varrer Padrões de Formulário**
+   - Contar elementos input
+   - Extrair padrões de classe de input únicos
+   - Contar elementos form
+   - Extrair padrões de form únicos
+   - Validação: Padrões de formulário documentados
 
-8. **Generate Inventory Report**
-   - Create pattern-inventory.json with all metrics
-   - Include scan metadata (timestamp, path, file counts)
-   - Calculate redundancy factors for each pattern type
-   - Validation: Valid JSON output generated
+8. **Gerar Relatório de Inventário**
+   - Criar pattern-inventory.json com todas as métricas
+   - Incluir metadados da varredura (timestamp, caminho, contagens de arquivos)
+   - Calcular os fatores de redundância para cada tipo de padrão
+   - Validação: Saída JSON válida gerada
 
-9. **Create State File**
-   - Generate .state.yaml for Atlas handoff
-   - Record all pattern counts and metrics
-   - Log agent history
-   - Set phase to "audit_complete"
-   - Validation: State file created and valid YAML
+9. **Criar Arquivo de Estado**
+   - Gerar .state.yaml para o handoff do Atlas
+   - Registrar todas as contagens de padrões e métricas
+   - Registrar o histórico do agente em log
+   - Definir a fase como "audit_complete"
+   - Validação: Arquivo de estado criado e YAML válido
 
-## Output
+## Saída
 
-- **pattern-inventory.json**: Structured data with all pattern counts, redundancy factors, and usage statistics
-- **.state.yaml**: Brad's state file for handoff to Atlas or next command
-- **Console summary**: Key metrics displayed for immediate review
+- **pattern-inventory.json**: Dados estruturados com todas as contagens de padrões, fatores de redundância e estatísticas de uso
+- **.state.yaml**: Arquivo de estado do Brad para handoff ao Atlas ou ao próximo comando
+- **Resumo no console**: Métricas-chave exibidas para revisão imediata
 
-### Output Format
+### Formato de Saída
 
 ```json
 {
@@ -354,39 +354,39 @@ This task uses interactive elicitation to gather scan parameters.
 }
 ```
 
-## Success Criteria
+## Critérios de Sucesso
 
-- [ ] Scan completes in <2 minutes for 100k LOC
-- [ ] All pattern types detected (buttons, colors, spacing, typography, forms)
-- [ ] Redundancy factors calculated for measurable patterns
-- [ ] Valid JSON output generated with complete data
-- [ ] State file created for next command (consolidate/tokenize)
-- [ ] No scan errors or missing permissions
+- [ ] A varredura é concluída em <2 minutos para 100k LOC
+- [ ] Todos os tipos de padrão detectados (botões, cores, espaçamento, tipografia, formulários)
+- [ ] Fatores de redundância calculados para os padrões mensuráveis
+- [ ] Saída JSON válida gerada com dados completos
+- [ ] Arquivo de estado criado para o próximo comando (consolidate/tokenize)
+- [ ] Sem erros de varredura ou permissões faltantes
 
-## Error Handling
+## Tratamento de Erros
 
-- **Scan path does not exist**: Exit with clear error message, suggest valid paths
-- **No UI files found**: Warn user, check if path is correct or files exist
-- **Permission denied**: Explain which directory needs read access
-- **Partial scan failure**: Log which files failed, continue with remaining files, report incomplete data
+- **Caminho de varredura não existe**: Encerrar com mensagem de erro clara, sugerir caminhos válidos
+- **Nenhum arquivo de UI encontrado**: Avisar o usuário, verificar se o caminho está correto ou se os arquivos existem
+- **Permissão negada**: Explicar qual diretório precisa de acesso de leitura
+- **Falha parcial na varredura**: Registrar quais arquivos falharam, continuar com os arquivos restantes, reportar dados incompletos
 
-## Security Considerations
+## Considerações de Segurança
 
-- Read-only access to codebase (no writes during scan)
-- No code execution during pattern detection
-- Validate file paths to prevent directory traversal
-- Handle malformed files gracefully (invalid CSS/JSX)
-- Skip binary files and large non-text files
+- Acesso somente-leitura ao codebase (sem escritas durante a varredura)
+- Sem execução de código durante a detecção de padrões
+- Validar os caminhos de arquivo para prevenir directory traversal
+- Tratar arquivos malformados de forma graciosa (CSS/JSX inválido)
+- Pular arquivos binários e arquivos não-texto grandes
 
-## Examples
+## Exemplos
 
-### Example 1: React Codebase Scan
+### Exemplo 1: Varredura de Codebase React
 
 ```bash
 *audit ./src
 ```
 
-Output:
+Saída:
 ```
 🔍 Brad: Scanning ./src for UI chaos...
 
@@ -411,19 +411,19 @@ Output:
 ✅ State saved: outputs/design-system/my-app/.state.yaml
 ```
 
-### Example 2: Vue Codebase Scan
+### Exemplo 2: Varredura de Codebase Vue
 
 ```bash
 *audit ./components
 ```
 
-Output shows Vue-specific patterns (v-btn, el-button, etc.)
+A saída mostra padrões específicos de Vue (v-btn, el-button, etc.)
 
-## Notes
+## Notas
 
-- Redundancy factor >3x indicates significant technical debt
-- Colors >50 unique values = major consolidation opportunity
-- Buttons >20 variations = serious pattern explosion
-- Run this audit periodically to prevent pattern regression
-- Brad recommends: If redundancy factors are high, run *consolidate next
-- For cost analysis of this waste, run *calculate-roi after audit
+- Fator de redundância >3x indica dívida técnica significativa
+- Cores >50 valores únicos = grande oportunidade de consolidação
+- Botões >20 variações = explosão séria de padrões
+- Rode esta auditoria periodicamente para prevenir a regressão de padrões
+- Brad recomenda: Se os fatores de redundância estiverem altos, rode *consolidate em seguida
+- Para a análise de custo desse desperdício, rode *calculate-roi após a auditoria

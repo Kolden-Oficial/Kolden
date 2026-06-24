@@ -35,13 +35,13 @@ preset:
 
 ---
 
-## Design Patterns (The Essential 5)
+## Design Patterns (Os 5 Essenciais)
 
-> **Critical:** Estes 5 patterns eliminam 95% dos bugs e permitem ao Claude Code trabalhar com máxima eficiência.
+> **Crítico:** Estes 5 patterns eliminam 95% dos bugs e permitem ao Claude Code trabalhar com máxima eficiência.
 
 ### Pattern 1: Contract Pattern (Shared DTOs)
 
-**Purpose:** Definir contratos compartilhados entre frontend e backend para prevenir bugs de integração
+**Propósito:** Definir contratos compartilhados entre frontend e backend para prevenir bugs de integração
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 10/10
 
@@ -108,7 +108,7 @@ export class UserResponseDto {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Frontend espera `token`, backend retorna `accessToken`
 - Tipagem divergente entre camadas
@@ -119,7 +119,7 @@ export class UserResponseDto {
 
 ### Pattern 2: NestJS Module Pattern
 
-**Purpose:** Organizar backend em módulos coesos e testáveis com Dependency Injection
+**Propósito:** Organizar backend em módulos coesos e testáveis com Dependency Injection
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 9/10
 
@@ -216,7 +216,7 @@ export class AuthController {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Serviços com dependências circulares
 - Lógica de negócio em controllers
@@ -227,7 +227,7 @@ export class AuthController {
 
 ### Pattern 3: Angular Signals + Service Pattern
 
-**Purpose:** Gerenciar estado no frontend com Signals e serviços injetáveis — sem NgRx para apps de médio porte
+**Propósito:** Gerenciar estado no frontend com Signals e serviços injetáveis — sem NgRx para apps de médio porte
 
 **Execution Score:** 9/10 | **Anti-Bug Score:** 9/10
 
@@ -315,7 +315,7 @@ export class LoginComponent {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Estado mutável espalhado por componentes
 - Change detection desnecessária (Signals são granulares)
@@ -326,7 +326,7 @@ export class LoginComponent {
 
 ### Pattern 4: NestJS Guard + Decorator Pattern
 
-**Purpose:** Proteger endpoints com guards reutilizáveis e decorators declarativos
+**Propósito:** Proteger endpoints com guards reutilizáveis e decorators declarativos
 
 **Execution Score:** 9/10 | **Anti-Bug Score:** 10/10
 
@@ -373,7 +373,7 @@ export class AdminController {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Verificações de autorização duplicadas em cada controller
 - Esquecer de proteger um endpoint
@@ -384,7 +384,7 @@ export class AdminController {
 
 ### Pattern 5: Builder Pattern (Tests Only)
 
-**Purpose:** Criar fixtures de teste facilmente no Angular e NestJS
+**Propósito:** Criar fixtures de teste facilmente no Angular e NestJS
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 8/10
 
@@ -426,14 +426,14 @@ it('should show admin menu', () => {
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 ```text
 /
-├── frontend/                    # Angular 21 application
+├── frontend/                    # Aplicação Angular 21
 │   ├── src/
 │   │   ├── app/
-│   │   │   ├── features/        # Feature-based organization
+│   │   │   ├── features/        # Organização baseada em features
 │   │   │   │   ├── auth/
 │   │   │   │   │   ├── login/
 │   │   │   │   │   │   ├── login.component.ts
@@ -449,13 +449,13 @@ it('should show admin menu', () => {
 │   │   │   │   ├── pipes/
 │   │   │   │   └── interceptors/
 │   │   │   ├── core/
-│   │   │   │   ├── http/         # HttpClient config, interceptors
-│   │   │   │   └── error/        # Error handling global
-│   │   │   └── app.config.ts     # Standalone bootstrap
+│   │   │   │   ├── http/         # Config do HttpClient, interceptors
+│   │   │   │   └── error/        # Tratamento de erro global
+│   │   │   └── app.config.ts     # Bootstrap standalone
 │   │   └── environments/
 │   └── angular.json
 │
-├── backend/                     # NestJS application
+├── backend/                     # Aplicação NestJS
 │   ├── src/
 │   │   ├── features/            # Módulos de negócio
 │   │   │   ├── auth/
@@ -474,7 +474,7 @@ it('should show admin menu', () => {
 │   │   │   ├── interceptors/
 │   │   │   └── pipes/           # Validation pipes
 │   │   ├── config/              # ConfigModule, env vars
-│   │   ├── database/            # Prisma setup
+│   │   ├── database/            # Setup do Prisma
 │   │   │   ├── prisma.service.ts
 │   │   │   └── migrations/
 │   │   └── main.ts
@@ -492,7 +492,7 @@ it('should show admin menu', () => {
 
 ## Tech Stack
 
-| Category | Technology | Version | Purpose |
+| Categoria | Tecnologia | Versão | Propósito |
 |----------|-----------|---------|---------|
 | Frontend Framework | Angular | 21+ | SPA com Signals e Standalone |
 | Backend Framework | NestJS | 11+ | API REST modular |
@@ -510,7 +510,7 @@ it('should show admin menu', () => {
 | CSS | Tailwind CSS | ^3.4.0 | Utility-first |
 | UI Components | Angular Material 21 | ^21.0.0 | Componentes acessíveis |
 
-### Required Dependencies
+### Dependências Necessárias
 
 ```bash
 # Frontend
@@ -528,11 +528,11 @@ npx prisma init
 
 ---
 
-## Coding Standards
+## Padrões de Código
 
-### Naming Conventions
+### Convenções de Nomenclatura
 
-| Element | Convention | Example |
+| Elemento | Convenção | Exemplo |
 |---------|-----------|---------|
 | Components | PascalCase + Component | `LoginComponent` |
 | Services | PascalCase + Service | `AuthService` |
@@ -544,7 +544,7 @@ npx prisma init
 | Signals | camelCase (sem prefixo) | `user`, `loading` |
 | Arquivos | kebab-case | `auth.service.ts` |
 
-### Critical Rules
+### Regras Críticas
 
 1. **Standalone Components:** Todos os componentes Angular devem ser `standalone: true` — sem NgModules de feature
 2. **Signals para estado local/global:** Use Signals em vez de BehaviorSubject para estado de UI
@@ -601,7 +601,7 @@ export class HttpExceptionFilter implements ExceptionFilter {
 }
 ```
 
-### TypeScript Config (ambos frontend e backend)
+### TypeScript Config (frontend e backend)
 
 ```json
 {
@@ -616,9 +616,9 @@ export class HttpExceptionFilter implements ExceptionFilter {
 
 ---
 
-## Testing Strategy
+## Estratégia de Testes
 
-### Test Pyramid
+### Pirâmide de Testes
 
 ```text
          /\
@@ -630,7 +630,7 @@ export class HttpExceptionFilter implements ExceptionFilter {
    /----------------\
 ```
 
-### NestJS Unit Test Template
+### Template de Teste Unitário NestJS
 
 ```typescript
 // backend/src/features/auth/auth.service.spec.ts
@@ -665,7 +665,7 @@ describe('AuthService', () => {
 });
 ```
 
-### Angular Unit Test Template
+### Template de Teste Unitário Angular
 
 ```typescript
 // frontend/src/app/features/auth/auth.service.spec.ts
@@ -705,9 +705,9 @@ describe('AuthService', () => {
 
 ---
 
-## Token Economy Strategies
+## Estratégias de Economia de Tokens
 
-### Strategy 1: Mostrar o módulo de referência
+### Estratégia 1: Mostrar o módulo de referência
 
 ```text
 // BOM: ~300 tokens mostrando o padrão
@@ -716,7 +716,7 @@ describe('AuthService', () => {
 Apenas troque a entidade para Product"
 ```
 
-### Strategy 2: DTOs como documentação
+### Estratégia 2: DTOs como documentação
 
 ```typescript
 // DTO substitui 50+ linhas de explicação
@@ -727,7 +727,7 @@ export class CreateProductDto {
 }
 ```
 
-### Strategy 3: Testes como especificação
+### Estratégia 3: Testes como especificação
 
 ```text
 "Faça estes testes passarem:
@@ -738,15 +738,15 @@ it('should require admin role')"
 
 ---
 
-## Bug Prevention Stack
+## Stack de Prevenção de Bugs
 
-| Layer | Catches | Implementation |
+| Camada | Captura | Implementação |
 |-------|---------|---------------|
 | TypeScript Strict | 60% | `strict: true` em ambos projetos |
 | class-validator (NestJS) | 15% | DTOs com decorators de validação |
 | Angular Reactive Forms | 10% | Validators built-in + Validators customizados |
 | Zod (shared) | 10% | Schemas em `/shared/contracts/` |
-| Jest + Angular Testing | 5% | Edge cases e regressões |
+| Jest + Angular Testing | 5% | Casos de borda e regressões |
 
 > **Zod vs class-validator:** Use **Zod** for runtime-parsed shared schemas (e.g. API response shapes, env validation). Use **class-validator** for NestJS request body DTOs (required by `ValidationPipe`). They serve different layers.
 
@@ -769,7 +769,7 @@ export type Env = z.infer<typeof envSchema>;
 
 ---
 
-## Patterns to AVOID
+## Padrões a EVITAR
 
 ```typescript
 // ✗ NgModule de feature (use Standalone)

@@ -1,26 +1,26 @@
-# @pm (Morgan) - System Documentation
+# @pm (Morgan) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/pm-system.md) | [ES](../../es/aiox-agent-flows/pm-system.md)
 
 ---
 
-## Summary
+## Resumo
 
-**@pm** (Morgan) is the **Strategist** of the AIOX agent system. This agent is responsible for:
+O **@pm** (Morgan) é o **Estrategista** do sistema de agentes AIOX. Este agente é responsável por:
 
-- Product management and strategic planning
-- Defining product vision and roadmap
-- Prioritizing features and requirements
-- Stakeholder communication and alignment
-
----
-
-## Full Documentation
-
-For complete documentation including flowcharts, command mappings, integrations, and troubleshooting, please refer to the Portuguese version:
-
-**[View Full Documentation (PT)](../../aiox-agent-flows/pm-system.md)**
+- Product management e planejamento estratégico
+- Definir a visão de produto e o roadmap
+- Priorizar funcionalidades e requisitos
+- Comunicação e alinhamento com stakeholders
 
 ---
 
-*AIOX Agent Flows - @pm System v1.0*
+## Documentação Completa
+
+Para a documentação completa, incluindo fluxogramas, mapeamentos de comandos, integrações e troubleshooting, consulte a versão em português:
+
+**[Ver Documentação Completa (PT)](../../aiox-agent-flows/pm-system.md)**
+
+---
+
+*AIOX Agent Flows - Sistema @pm v1.0*

@@ -31,11 +31,11 @@ preset:
 
 ---
 
-## Design Patterns (The Essential 5)
+## Design Patterns (Os 5 Essenciais)
 
 ### Pattern 1: Contract Interface Pattern
 
-**Purpose:** Definir contratos por contexto para reduzir acoplamento entre camadas.
+**Propósito:** Definir contratos por contexto para reduzir acoplamento entre camadas.
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 9/10
 
@@ -50,12 +50,12 @@ public interface IOrderRepository
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Dependencia direta do EF em use case
 - Quebra em cascata ao trocar persistencia
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Contrato estavel e mockavel
 - Facilita testes isolados
@@ -64,7 +64,7 @@ public interface IOrderRepository
 
 ### Pattern 2: Use Case Handler Pattern
 
-**Purpose:** Isolar regra de negocio em handlers orientados a comando.
+**Propósito:** Isolar regra de negocio em handlers orientados a comando.
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 9/10
 
@@ -91,12 +91,12 @@ public sealed class PlaceOrderHandler
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Logica em controller
 - Fluxos sem ordem transacional clara
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Fluxo unico por caso de uso
 - Facil de observar, testar e evoluir
@@ -105,7 +105,7 @@ public sealed class PlaceOrderHandler
 
 ### Pattern 3: Repository Adapter Pattern
 
-**Purpose:** Encapsular EF Core e mapeamentos fora da camada de aplicacao.
+**Propósito:** Encapsular EF Core e mapeamentos fora da camada de aplicacao.
 
 **Execution Score:** 9/10 | **Anti-Bug Score:** 9/10
 
@@ -134,12 +134,12 @@ public sealed class EfOrderRepository : IOrderRepository
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - ORM vazando para dominio
 - Regras de persistencia espalhadas
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Infra fica concentrada
 - Permite testes de integracao dedicados
@@ -148,7 +148,7 @@ public sealed class EfOrderRepository : IOrderRepository
 
 ### Pattern 4: Domain Event + Outbox Pattern
 
-**Purpose:** Garantir consistencia entre transacao local e integracoes externas.
+**Propósito:** Garantir consistencia entre transacao local e integracoes externas.
 
 **Execution Score:** 8/10 | **Anti-Bug Score:** 9/10
 
@@ -163,12 +163,12 @@ public interface IOutboxWriter
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Eventos perdidos apos commit
 - Integracoes inconsistentes
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Publicacao resiliente via outbox
 - Separacao entre transacao de negocio e entrega de evento
@@ -177,7 +177,7 @@ public interface IOutboxWriter
 
 ### Pattern 5: Test Builder Pattern
 
-**Purpose:** Reduzir ruido em testes unitarios e de integracao.
+**Propósito:** Reduzir ruido em testes unitarios e de integracao.
 
 **Execution Score:** 8/10 | **Anti-Bug Score:** 8/10
 
@@ -191,19 +191,19 @@ public sealed class PlaceOrderCommandBuilder
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Setup repetitivo e propenso a erro
 - Testes menos legiveis
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Setup centralizado
 - Cenarios com intencao explicita
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 ```text
 /src
@@ -217,7 +217,7 @@ public sealed class PlaceOrderCommandBuilder
   /App.E2ETests
 ```
 
-### Structure Rationale
+### Justificativa da Estrutura
 
 - **Domain isolated:** Sem dependencia de frameworks
 - **Application orchestrates:** Casos de uso e contratos
@@ -227,7 +227,7 @@ public sealed class PlaceOrderCommandBuilder
 
 ## Tech Stack
 
-| Category | Technology | Version | Purpose |
+| Categoria | Tecnologia | Versão | Propósito |
 | -------- | ---------- | ------- | ------- |
 | Runtime | .NET | 9+ | Plataforma principal |
 | Language | C# | 13 | Linguagem base |
@@ -239,7 +239,7 @@ public sealed class PlaceOrderCommandBuilder
 | Assertion | FluentAssertions | latest | Assertivas legiveis |
 | Integration | Testcontainers | latest | Infra real em testes |
 
-### Required Dependencies
+### Dependências Necessárias
 
 ```bash
 dotnet add src/App.Api package Microsoft.AspNetCore.OpenApi
@@ -254,11 +254,11 @@ dotnet add tests/App.IntegrationTests package DotNet.Testcontainers
 
 ---
 
-## Coding Standards
+## Padrões de Código
 
-### Naming Conventions
+### Convenções de Nomenclatura
 
-| Element | Convention | Example |
+| Elemento | Convenção | Exemplo |
 | ------- | ---------- | ------- |
 | Projects | `App.<Layer>` | `App.Application` |
 | Classes | PascalCase | `PlaceOrderHandler` |
@@ -267,7 +267,7 @@ dotnet add tests/App.IntegrationTests package DotNet.Testcontainers
 | Files | Match class name | `PlaceOrderHandler.cs` |
 | Constants | UPPER_SNAKE_CASE | `MAX_BATCH_SIZE` |
 
-### Critical Rules
+### Regras Críticas
 
 1. **CancellationToken Mandatory:** Todo IO async recebe `CancellationToken`.
 2. **No Business Logic in Controllers:** Apenas parse e delegacao.
@@ -275,7 +275,7 @@ dotnet add tests/App.IntegrationTests package DotNet.Testcontainers
 4. **Validation Before Use Case:** Rejeitar input invalido cedo.
 5. **Exception Mapping:** Erros de dominio mapeados para HTTP padrao.
 
-### .NET Quality Baseline
+### Baseline de Qualidade .NET
 
 ```bash
 dotnet format
@@ -285,9 +285,9 @@ dotnet test
 
 ---
 
-## Testing Strategy
+## Estratégia de Testes
 
-### Test Pyramid
+### Pirâmide de Testes
 
 ```text
          /\
@@ -299,25 +299,25 @@ dotnet test
    /----------------\
 ```
 
-### What to Test
+### O Que Testar
 
-#### Always Test (Critical)
+#### Sempre Testar (Crítico)
 
 - [ ] Regras de dominio
 - [ ] Handlers de comando e query
 - [ ] Validadores de entrada
 
-#### Consider Testing
+#### Considerar Testar
 
 - [ ] Policies/autorizacao
 - [ ] Serializacao de contratos externos
 
-#### Never Test
+#### Nunca Testar
 
 - [ ] Framework internals
 - [ ] Getters/setters sem regra
 
-### Coverage Goals
+### Metas de Cobertura
 
 ```text
 - Domain/Application: 90%+
@@ -325,7 +325,7 @@ dotnet test
 - Overall: 75%+
 ```
 
-### Test Template
+### Template de Teste
 
 ```csharp
 public class PlaceOrderHandlerTests
@@ -349,25 +349,25 @@ public class PlaceOrderHandlerTests
 
 ---
 
-## Token Economy Strategies
+## Estratégias de Economia de Tokens
 
-### Strategy 1: Command + Handler Focus
+### Estratégia 1: Foco em Command + Handler
 
 Prompts devem referenciar `Command`, `Handler`, `Validator` da feature alvo.
 
-### Strategy 2: Reuse Existing Layer Skeleton
+### Estratégia 2: Reusar o Esqueleto de Camada Existente
 
 Copiar pasta de uma feature de referencia reduz contexto de geracao.
 
-### Strategy 3: Infrastructure as Secondary Step
+### Estratégia 3: Infraestrutura como Passo Secundário
 
 Primeiro dominio/aplicacao, depois adapter EF/HTTP.
 
 ---
 
-## Bug Prevention Stack
+## Stack de Prevenção de Bugs
 
-| Layer | Catches | Implementation |
+| Camada | Captura | Implementação |
 | ----- | ------- | -------------- |
 | Compiler + nullable refs | 35% | NRT habilitado |
 | Validation + handlers | 35% | FluentValidation + use case boundaries |
@@ -376,7 +376,7 @@ Primeiro dominio/aplicacao, depois adapter EF/HTTP.
 
 ---
 
-## Patterns to AVOID
+## Padrões a EVITAR
 
 ### Fat Service with Mixed Responsibilities
 
@@ -392,9 +392,9 @@ Chamadas longas sem cancelamento causam travas e leaks.
 
 ---
 
-## File Templates
+## Templates de Arquivo
 
-### Contract Template
+### Template de Contract
 
 ```csharp
 public interface IEmailGateway
@@ -403,7 +403,7 @@ public interface IEmailGateway
 }
 ```
 
-### Handler Template
+### Template de Handler
 
 ```csharp
 public sealed class UseCaseHandler
@@ -415,7 +415,7 @@ public sealed class UseCaseHandler
 }
 ```
 
-### Endpoint Template
+### Template de Endpoint
 
 ```csharp
 app.MapPost("/orders", async (PlaceOrderRequest request, PlaceOrderHandler handler, CancellationToken ct) =>
@@ -427,15 +427,15 @@ app.MapPost("/orders", async (PlaceOrderRequest request, PlaceOrderHandler handl
 
 ---
 
-## Integration with AIOX
+## Integração com o AIOX
 
-### Recommended Workflow
+### Workflow Recomendado
 
 1. `@architect` define fronteiras por camada usando preset `csharp`
 2. `@dev` implementa handlers e adapters por feature
 3. `@qa` valida integridade async e cobertura de regras de negocio
 
-### AIOX Commands
+### Comandos AIOX
 
 ```bash
 @dev "Follow the csharp preset patterns for this service"
@@ -444,7 +444,7 @@ app.MapPost("/orders", async (PlaceOrderRequest request, PlaceOrderHandler handl
 
 ---
 
-## Checklist for New Features
+## Checklist para Novas Features
 
 ```markdown
 - [ ] Definir command/query e contracts
@@ -459,9 +459,9 @@ app.MapPost("/orders", async (PlaceOrderRequest request, PlaceOrderHandler handl
 
 ## Changelog
 
-| Date       | Version | Changes |
+| Data       | Versão  | Mudanças |
 | ---------- | ------- | ------- |
-| 2026-02-19 | 1.0.0   | Initial C# preset |
+| 2026-02-19 | 1.0.0   | Preset C# inicial |
 
 ---
 

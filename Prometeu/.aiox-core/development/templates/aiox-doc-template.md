@@ -1,40 +1,40 @@
-# AIOX Documentation Template
+# Template de Documentação AIOX
 
-**Version:** 1.0.0
-**Last Updated:** 2026-01-28
-**Status:** Active
-
----
-
-## Overview
-
-This document provides the standard template structure for AIOX documentation. All documentation in the AIOX framework should follow this template to ensure consistency and ease of navigation.
+**Versão:** 1.0.0
+**Última Atualização:** 2026-01-28
+**Status:** Ativo
 
 ---
 
-## Usage
+## Visão Geral
 
-### Creating New Documentation
-
-1. Copy this template to your target location
-2. Replace placeholder sections with actual content
-3. Remove any sections that are not applicable
-4. Follow the i18n guidelines if creating multilingual docs
-
-### Template Variables
-
-| Variable      | Description       | Example                         |
-| ------------- | ----------------- | ------------------------------- |
-| `{{TITLE}}`   | Document title    | "Agent Configuration Guide"     |
-| `{{VERSION}}` | Document version  | "1.0.0"                         |
-| `{{DATE}}`    | Last updated date | "2026-01-28"                    |
-| `{{STATUS}}`  | Document status   | "Active", "Draft", "Deprecated" |
+Este documento fornece a estrutura de template padrão para a documentação AIOX. Toda a documentação no framework AIOX deve seguir este template para garantir consistência e facilidade de navegação.
 
 ---
 
-## Template Structure
+## Uso
 
-### Minimal Template
+### Criando Nova Documentação
+
+1. Copie este template para o local de destino
+2. Substitua as seções de placeholder pelo conteúdo real
+3. Remova quaisquer seções que não se apliquem
+4. Siga as diretrizes de i18n se estiver criando docs multilíngues
+
+### Variáveis do Template
+
+| Variável      | Descrição              | Exemplo                         |
+| ------------- | ---------------------- | ------------------------------- |
+| `{{TITLE}}`   | Título do documento    | "Guia de Configuração de Agente"|
+| `{{VERSION}}` | Versão do documento    | "1.0.0"                         |
+| `{{DATE}}`    | Data da última atualização | "2026-01-28"                |
+| `{{STATUS}}`  | Status do documento    | "Active", "Draft", "Deprecated" |
+
+---
+
+## Estrutura do Template
+
+### Template Mínimo
 
 ```markdown
 # {{TITLE}}
@@ -47,20 +47,20 @@ This document provides the standard template structure for AIOX documentation. A
 
 ## Overview
 
-Brief description of the document's purpose.
+Breve descrição do propósito do documento.
 
 ---
 
 ## Content
 
-Main content goes here.
+O conteúdo principal vai aqui.
 
 ---
 
 _Last Updated: {{DATE}} | AIOX Framework Team_
 ```
 
-### Full Template with i18n
+### Template Completo com i18n
 
 ```markdown
 # {{TITLE}}
@@ -86,15 +86,15 @@ _Last Updated: {{DATE}} | AIOX Framework Team_
 
 ## Overview
 
-Brief description of what this document covers and its purpose within the AIOX framework.
+Breve descrição do que este documento abrange e seu propósito dentro do framework AIOX.
 
 ### Key Points
 
 | Aspect            | Description              |
 | ----------------- | ------------------------ |
-| **Purpose**       | What problem this solves |
-| **Audience**      | Who should read this     |
-| **Prerequisites** | What readers should know |
+| **Purpose**       | Qual problema isto resolve |
+| **Audience**      | Quem deve ler isto       |
+| **Prerequisites** | O que os leitores devem saber |
 
 ---
 
@@ -102,7 +102,7 @@ Brief description of what this document covers and its purpose within the AIOX f
 
 ### Subsection 1.1
 
-Content with code examples:
+Conteúdo com exemplos de código:
 
 \`\`\`javascript
 // Example code
@@ -111,7 +111,7 @@ const example = "value";
 
 ### Subsection 1.2
 
-Content with diagrams:
+Conteúdo com diagramas:
 
 \`\`\`
 ┌─────────────────┐
@@ -162,7 +162,7 @@ _Last Updated: {{DATE}} | AIOX Framework Team_
 
 ---
 
-## Section Templates
+## Templates de Seção
 
 ### Architecture Decision Record (ADR)
 
@@ -182,13 +182,13 @@ _Last Updated: {{DATE}} | AIOX Framework Team_
 
 ## Context
 
-What is the issue that we're seeing that is motivating this decision or change?
+Qual é o problema que estamos observando que motiva esta decisão ou mudança?
 
 ---
 
 ## Decision
 
-What is the change that we're proposing and/or doing?
+Qual é a mudança que estamos propondo e/ou fazendo?
 
 ---
 
@@ -196,17 +196,17 @@ What is the change that we're proposing and/or doing?
 
 ### Positive
 
-- Benefit 1
-- Benefit 2
+- Benefício 1
+- Benefício 2
 
 ### Negative
 
-- Drawback 1
-- Drawback 2
+- Desvantagem 1
+- Desvantagem 2
 
 ### Neutral
 
-- Observation 1
+- Observação 1
 
 ---
 
@@ -219,7 +219,7 @@ What is the change that we're proposing and/or doing?
 _Decision made as part of {{STORY_ID}}._
 ```
 
-### Guide Template
+### Template de Guia
 
 ```markdown
 # {{TITLE}} Guide
@@ -236,10 +236,10 @@ _Decision made as part of {{STORY_ID}}._
 
 ## Prerequisites
 
-Before starting, ensure you have:
+Antes de começar, certifique-se de ter:
 
-- [ ] Prerequisite 1
-- [ ] Prerequisite 2
+- [ ] Pré-requisito 1
+- [ ] Pré-requisito 2
 
 ---
 
@@ -247,7 +247,7 @@ Before starting, ensure you have:
 
 \`\`\`bash
 
-# Quick start command
+# Comando de início rápido
 
 aiox command --flag
 \`\`\`
@@ -258,17 +258,17 @@ aiox command --flag
 
 ### Step 1: {{STEP_TITLE}}
 
-Description of step 1.
+Descrição do passo 1.
 
 \`\`\`bash
 
-# Command for step 1
+# Comando para o passo 1
 
 \`\`\`
 
 ### Step 2: {{STEP_TITLE}}
 
-Description of step 2.
+Descrição do passo 2.
 
 ---
 
@@ -276,8 +276,8 @@ Description of step 2.
 
 | Option    | Type    | Default | Description |
 | --------- | ------- | ------- | ----------- |
-| `option1` | string  | `""`    | Description |
-| `option2` | boolean | `false` | Description |
+| `option1` | string  | `""`    | Descrição   |
+| `option2` | boolean | `false` | Descrição   |
 
 ---
 
@@ -285,13 +285,13 @@ Description of step 2.
 
 ### Issue: {{ISSUE_DESCRIPTION}}
 
-**Cause:** Explanation of why this happens.
+**Cause:** Explicação de por que isto acontece.
 
 **Solution:**
 
 \`\`\`bash
 
-# Fix command
+# Comando de correção
 
 \`\`\`
 
@@ -306,7 +306,7 @@ Description of step 2.
 _Last Updated: {{DATE}} | AIOX Framework Team_
 ```
 
-### API/Reference Template
+### Template de API/Referência
 
 ```markdown
 # {{COMPONENT}} Reference
@@ -322,7 +322,7 @@ _Last Updated: {{DATE}} | AIOX Framework Team_
 
 ## Overview
 
-Brief description of the component.
+Breve descrição do componente.
 
 ---
 
@@ -338,10 +338,10 @@ function {{METHOD_NAME}}(param1: Type1, param2: Type2): ReturnType
 
 | Parameter | Type    | Required | Description |
 | --------- | ------- | -------- | ----------- |
-| `param1`  | `Type1` | Yes      | Description |
-| `param2`  | `Type2` | No       | Description |
+| `param1`  | `Type1` | Yes      | Descrição   |
+| `param2`  | `Type2` | No       | Descrição   |
 
-**Returns:** `ReturnType` - Description of return value.
+**Returns:** `ReturnType` - Descrição do valor de retorno.
 
 **Example:**
 
@@ -364,8 +364,8 @@ property2?: number;
 
 | Property    | Type     | Required | Description |
 | ----------- | -------- | -------- | ----------- |
-| `property1` | `string` | Yes      | Description |
-| `property2` | `number` | No       | Description |
+| `property1` | `string` | Yes      | Descrição   |
+| `property2` | `number` | No       | Descrição   |
 
 ---
 
@@ -374,73 +374,73 @@ _Last Updated: {{DATE}} | AIOX Framework Team_
 
 ---
 
-## i18n Guidelines
+## Diretrizes de i18n
 
-### File Structure
+### Estrutura de Arquivos
 
 ```
 docs/
-├── en/              # English (primary)
+├── en/              # Inglês (primário)
 │   └── guides/
 │       └── example.md
-├── pt/              # Portuguese
+├── pt/              # Português
 │   └── guides/
 │       └── example.md
-└── es/              # Spanish
+└── es/              # Espanhol
     └── guides/
         └── example.md
 ```
 
-### Language Header
+### Cabeçalho de Idioma
 
-Always include the language navigation header:
+Sempre inclua o cabeçalho de navegação de idioma:
 
 ```markdown
 > **EN** | [PT](../pt/path/file.md) | [ES](../es/path/file.md)
 ```
 
-### Translation Notes
+### Notas de Tradução
 
-- Keep technical terms in English (API, CLI, etc.)
-- Translate UI text and descriptions
-- Maintain consistent terminology across documents
-- Update all language versions when making changes
+- Mantenha termos técnicos em inglês (API, CLI, etc.)
+- Traduza textos de UI e descrições
+- Mantenha terminologia consistente entre documentos
+- Atualize todas as versões de idioma ao fazer mudanças
 
 ---
 
-## Style Guide
+## Guia de Estilo
 
-### Headings
+### Cabeçalhos
 
-- Use `#` for document title (only one per document)
-- Use `##` for main sections
-- Use `###` for subsections
-- Use `####` sparingly for deeper nesting
+- Use `#` para o título do documento (apenas um por documento)
+- Use `##` para seções principais
+- Use `###` para subseções
+- Use `####` com moderação para aninhamento mais profundo
 
-### Code Blocks
+### Blocos de Código
 
-- Always specify language for syntax highlighting
-- Use `bash` for shell commands
-- Use `javascript` or `typescript` for code examples
-- Use `yaml` for configuration files
+- Sempre especifique o idioma para realce de sintaxe
+- Use `bash` para comandos de shell
+- Use `javascript` ou `typescript` para exemplos de código
+- Use `yaml` para arquivos de configuração
 
-### Tables
+### Tabelas
 
-- Use tables for structured data comparisons
-- Keep tables simple and readable
-- Use alignment for better readability
+- Use tabelas para comparações de dados estruturados
+- Mantenha as tabelas simples e legíveis
+- Use alinhamento para melhor legibilidade
 
 ### Links
 
-- Use relative paths for internal links
-- Use descriptive link text (not "click here")
-- Verify all links are valid
+- Use caminhos relativos para links internos
+- Use texto de link descritivo (não "clique aqui")
+- Verifique se todos os links são válidos
 
 ---
 
-## Examples
+## Exemplos
 
-### Example 1: Creating an Agent Guide
+### Exemplo 1: Criando um Guia de Agente
 
 ```markdown
 # Creating Custom Agents
@@ -457,18 +457,18 @@ Always include the language navigation header:
 
 ## Overview
 
-This guide explains how to create custom agents for the AIOX framework.
+Este guia explica como criar agentes customizados para o framework AIOX.
 
 ## Prerequisites
 
-- [ ] AIOX Core installed
-- [ ] Understanding of agent concepts
+- [ ] AIOX Core instalado
+- [ ] Compreensão dos conceitos de agente
 
 ## Creating an Agent
 
 ### Step 1: Define Agent Metadata
 
-Create a new file in `.aiox-core/development/agents/`:
+Crie um novo arquivo em `.aiox-core/development/agents/`:
 
 \`\`\`yaml
 id: custom-agent
@@ -483,11 +483,11 @@ _Last Updated: 2026-01-28 | AIOX Framework Team_
 
 ---
 
-## Related Documents
+## Documentos Relacionados
 
-- [AIOX Framework Documentation](/docs/README.md)
-- [Contributing Guide](/CONTRIBUTING.md)
-- [Style Guide](/docs/guides/style-guide.md)
+- [Documentação do Framework AIOX](/docs/README.md)
+- [Guia de Contribuição](/CONTRIBUTING.md)
+- [Guia de Estilo](/docs/guides/style-guide.md)
 
 ---
 

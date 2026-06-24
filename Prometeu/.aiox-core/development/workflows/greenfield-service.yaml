@@ -1,10 +1,10 @@
 workflow:
   id: greenfield-service
-  name: Greenfield Service/API Development
+  name: Desenvolvimento Greenfield de Serviço/API
   version: "1.0"
   description: >-
-    Agent workflow for building backend services from concept to development.
-    Supports both comprehensive planning for complex services and rapid prototyping for simple APIs.
+    Workflow de agentes para construir serviços backend do conceito ao desenvolvimento.
+    Suporta tanto o planejamento abrangente para serviços complexos quanto a prototipagem rápida para APIs simples.
   type: greenfield
   project_types:
     - rest-api
@@ -19,17 +19,17 @@ workflow:
     confirmation_required: true
 
   phases:
-    - phase_1: Discovery & Planning
-    - phase_2: Document Sharding
-    - phase_3: Development Cycle
+    - phase_1: Descoberta e Planejamento
+    - phase_2: Fragmentação de Documentos
+    - phase_3: Ciclo de Desenvolvimento
 
   sequence:
     # ═══════════════════════════════════════════════════════════════════════════
-    # PHASE 1: DISCOVERY & PLANNING
+    # FASE 1: DESCOBERTA E PLANEJAMENTO
     # ═══════════════════════════════════════════════════════════════════════════
     - phase: 1
-      name: Discovery & Planning
-      description: "Create all planning artifacts (project brief, PRD, architecture)"
+      name: Descoberta e Planejamento
+      description: "Criar todos os artefatos de planejamento (project brief, PRD, arquitetura)"
 
     - id: analyst-project-brief
       agent: analyst
@@ -38,14 +38,14 @@ workflow:
       optional_steps:
         - brainstorming-session
         - market-research-prompt
-      notes: "Can do brainstorming first, then optional deep research before creating project brief. SAVE OUTPUT: Copy final project-brief.md to your project's docs/ folder."
+      notes: "Pode fazer brainstorming primeiro, depois pesquisa aprofundada opcional antes de criar o project brief. SALVAR SAÍDA: Copie o project-brief.md final para a pasta docs/ do seu projeto."
 
     - id: pm-create-prd
       agent: pm
       creates: prd.md
       duration_estimate: "30-60 min"
       requires: project-brief.md
-      notes: "Creates PRD from project brief using prd-tmpl, focused on API/service requirements. SAVE OUTPUT: Copy final prd.md to your project's docs/ folder."
+      notes: "Cria o PRD a partir do project brief usando prd-tmpl, focado em requisitos de API/serviço. SALVAR SAÍDA: Copie o prd.md final para a pasta docs/ do seu projeto."
 
     - id: architect-create-architecture
       agent: architect
@@ -54,7 +54,7 @@ workflow:
       requires: prd.md
       optional_steps:
         - technical-research-prompt
-      notes: "Creates backend/service architecture using architecture-tmpl. May suggest changes to PRD stories or new stories. SAVE OUTPUT: Copy final architecture.md to your project's docs/ folder."
+      notes: "Cria a arquitetura de backend/serviço usando architecture-tmpl. Pode sugerir mudanças nas stories do PRD ou novas stories. SALVAR SAÍDA: Copie o architecture.md final para a pasta docs/ do seu projeto."
 
     - id: pm-update-prd
       agent: pm
@@ -62,14 +62,14 @@ workflow:
       duration_estimate: "15-30 min"
       requires: architecture.md
       condition: architecture_suggests_prd_changes
-      notes: "If architect suggests story changes, update PRD and re-export the complete unredacted prd.md to docs/ folder."
+      notes: "Se o arquiteto sugerir mudanças nas stories, atualize o PRD e re-exporte o prd.md completo e sem redações para a pasta docs/."
 
     - id: po-validate-artifacts
       agent: po
       validates: all_artifacts
       uses: po-master-checklist
       duration_estimate: "15-30 min"
-      notes: "Validates all documents for consistency and completeness. May require updates to any document."
+      notes: "Valida todos os documentos quanto à consistência e completude. Pode exigir atualizações em qualquer documento."
 
     - id: po-delegate-fixes
       agent: po
@@ -79,35 +79,35 @@ workflow:
       duration_estimate: "15-30 min"
       condition: po_checklist_issues
       returns_to: po-validate-artifacts
-      notes: "If PO finds issues, PO delegates fixes to the relevant agent. After fixes are applied, returns to po-validate-artifacts for re-validation before proceeding to Phase 2."
+      notes: "Se o PO encontrar problemas, o PO delega as correções ao agente relevante. Após as correções serem aplicadas, retorna para po-validate-artifacts para revalidação antes de prosseguir para a Fase 2."
 
     # ═══════════════════════════════════════════════════════════════════════════
-    # PHASE 2: DOCUMENT SHARDING
+    # FASE 2: FRAGMENTAÇÃO DE DOCUMENTOS
     # ═══════════════════════════════════════════════════════════════════════════
     - phase: 2
-      name: Document Sharding
-      description: "Break down PRD and architecture into development-ready chunks"
+      name: Fragmentação de Documentos
+      description: "Quebrar o PRD e a arquitetura em blocos prontos para o desenvolvimento"
 
     - id: po-shard-documents
       agent: po
       action: shard_documents
       creates: sharded_docs
       duration_estimate: "15-30 min"
-      requires:  # all validated artifacts must be saved in project docs/ folder
+      requires:  # todos os artefatos validados devem estar salvos na pasta docs/ do projeto
         - prd.md
         - architecture.md
       notes: |
-        Shard documents for IDE development:
-        - Option A: Use PO agent to shard: @po then ask to shard docs/prd.md
-        - Option B: Manual: Drag shard-doc task + docs/prd.md into chat
-        - Creates docs/prd/ and docs/architecture/ folders with sharded content
+        Fragmente os documentos para o desenvolvimento na IDE:
+        - Opção A: Use o agente PO para fragmentar: @po e então peça para fragmentar docs/prd.md
+        - Opção B: Manual: Arraste a task shard-doc + docs/prd.md para o chat
+        - Cria as pastas docs/prd/ e docs/architecture/ com o conteúdo fragmentado
 
     # ═══════════════════════════════════════════════════════════════════════════
-    # PHASE 3: DEVELOPMENT CYCLE
+    # FASE 3: CICLO DE DESENVOLVIMENTO
     # ═══════════════════════════════════════════════════════════════════════════
     - phase: 3
-      name: Development Cycle
-      description: "Iterative story implementation with QA review"
+      name: Ciclo de Desenvolvimento
+      description: "Implementação iterativa de stories com revisão de QA"
 
     - id: sm-create-story
       agent: sm
@@ -117,10 +117,10 @@ workflow:
       requires: sharded_docs
       repeats: for_each_epic
       notes: |
-        Story creation cycle:
-        - SM Agent (New Chat): @sm → *create
-        - Creates next story from sharded docs
-        - Story starts in "Draft" status
+        Ciclo de criação de story:
+        - Agente SM (Novo Chat): @sm → *create
+        - Cria a próxima story a partir dos docs fragmentados
+        - A story começa no status "Draft"
 
     - id: pm-review-draft-story
       agent: pm
@@ -132,10 +132,10 @@ workflow:
       optional: true
       condition: user_wants_story_review
       notes: |
-        OPTIONAL: Review and approve draft story
-        - NOTE: story-review task coming soon
-        - Review story completeness and alignment
-        - Update story status: Draft → Approved
+        OPCIONAL: Revisar e aprovar a story em rascunho
+        - NOTA: task story-review em breve
+        - Revisar a completude e o alinhamento da story
+        - Atualizar o status da story: Draft → Approved
 
     - id: dev-implement-story
       agent: dev
@@ -144,10 +144,10 @@ workflow:
       duration_estimate: "1-4 hours"
       requires: story.md
       notes: |
-        Dev Agent (New Chat): @dev
-        - Implements approved story
-        - Updates File List with all changes
-        - Marks story as "Review" when complete
+        Agente Dev (Novo Chat): @dev
+        - Implementa a story aprovada
+        - Atualiza a File List com todas as mudanças
+        - Marca a story como "Review" ao concluir
 
     - id: qa-review-implementation
       agent: qa
@@ -157,11 +157,11 @@ workflow:
       requires: implementation_files
       optional: true
       notes: |
-        OPTIONAL: QA Agent (New Chat): @qa → review-story
-        - Senior dev review with refactoring ability
-        - Fixes small issues directly
-        - Leaves checklist for remaining items
-        - Updates story status (Review → Done or stays Review)
+        OPCIONAL: Agente QA (Novo Chat): @qa → review-story
+        - Revisão de dev sênior com capacidade de refatoração
+        - Corrige pequenos problemas diretamente
+        - Deixa um checklist para os itens restantes
+        - Atualiza o status da story (Review → Done ou permanece Review)
 
     - id: dev-address-qa-feedback
       agent: dev
@@ -171,16 +171,16 @@ workflow:
       duration_estimate: "30-60 min"
       condition: qa_left_unchecked_items
       notes: |
-        If QA left unchecked items:
-        - Dev Agent (New Chat): Address remaining items
-        - Return to QA for final approval
+        Se o QA deixou itens não marcados:
+        - Agente Dev (Novo Chat): Tratar os itens restantes
+        - Retornar ao QA para aprovação final
 
     - meta: repeat
       target_steps: [sm-create-story, dev-implement-story, qa-review-implementation]
       condition: stories_remaining
       notes: |
-        Repeat story cycle (SM → Dev → QA) for all epic stories
-        Continue until all stories in PRD are complete
+        Repita o ciclo de story (SM → Dev → QA) para todas as stories do epic
+        Continue até que todas as stories no PRD estejam concluídas
 
     - id: po-epic-retrospective
       agent: po
@@ -190,17 +190,17 @@ workflow:
       condition: epic_complete
       optional: true
       notes: |
-        OPTIONAL: After epic completion
-        - NOTE: epic-retrospective task coming soon
-        - Validate epic was completed correctly
-        - Document learnings and improvements
+        OPCIONAL: Após a conclusão do epic
+        - NOTA: task epic-retrospective em breve
+        - Validar que o epic foi concluído corretamente
+        - Documentar aprendizados e melhorias
 
     - meta: end
       action: project_complete
       notes: |
-        All stories implemented and reviewed!
-        Service development phase complete.
-        Reference: .aiox-core/data/aiox-kb.md#IDE Development Workflow
+        Todas as stories implementadas e revisadas!
+        Fase de desenvolvimento do serviço concluída.
+        Referência: .aiox-core/data/aiox-kb.md#IDE Development Workflow
 
   flow_diagram: |
     ```mermaid
@@ -253,24 +253,24 @@ workflow:
 
   decision_guidance:
     when_to_use:
-      - Building production APIs or microservices
-      - Multiple endpoints and complex business logic
-      - Need comprehensive documentation and testing
-      - Multiple team members will be involved
-      - Long-term maintenance expected
-      - Enterprise or external-facing APIs
+      - Construir APIs ou microsserviços de produção
+      - Múltiplos endpoints e lógica de negócio complexa
+      - Necessidade de documentação e testes abrangentes
+      - Múltiplos membros da equipe estarão envolvidos
+      - Manutenção de longo prazo esperada
+      - APIs corporativas ou voltadas para fora
     when_not_to_use:
-      - Simple CRUD API with fewer than 3 endpoints (use rapid prototyping)
-      - Adding features to existing service (use brownfield-service)
-      - Full-stack application with frontend (use greenfield-fullstack)
-      - Frontend-only project (use greenfield-ui)
-      - Technical debt assessment on existing project (use brownfield-discovery)
+      - API CRUD simples com menos de 3 endpoints (use prototipagem rápida)
+      - Adicionar funcionalidades a serviço existente (use brownfield-service)
+      - Aplicação full-stack com frontend (use greenfield-fullstack)
+      - Projeto apenas de frontend (use greenfield-ui)
+      - Avaliação de dívida técnica em projeto existente (use brownfield-discovery)
 
   handoff_prompts:
-    analyst_to_pm: "Project brief is complete. Save it as docs/project-brief.md in your project, then create the PRD."
-    pm_to_architect: "PRD is ready. Save it as docs/prd.md in your project, then create the service architecture."
-    architect_review: "Architecture complete. Save it as docs/architecture.md. Do you suggest any changes to the PRD stories or need new stories added?"
-    architect_to_pm: "Please update the PRD with the suggested story changes, then re-export the complete prd.md to docs/."
-    updated_to_po: "All documents ready in docs/ folder. Please validate all artifacts for consistency."
-    po_issues: "PO found issues with [document]. Please return to [agent] to fix and re-save the updated document."
-    complete: "All planning artifacts validated and saved in docs/ folder. Move to IDE environment to begin development."
+    analyst_to_pm: "O project brief está completo. Salve-o como docs/project-brief.md no seu projeto, depois crie o PRD."
+    pm_to_architect: "O PRD está pronto. Salve-o como docs/prd.md no seu projeto, depois crie a arquitetura do serviço."
+    architect_review: "A arquitetura está completa. Salve-a como docs/architecture.md. Você sugere alguma mudança nas stories do PRD ou precisa adicionar novas stories?"
+    architect_to_pm: "Por favor, atualize o PRD com as mudanças de story sugeridas, depois re-exporte o prd.md completo para docs/."
+    updated_to_po: "Todos os documentos prontos na pasta docs/. Por favor, valide todos os artefatos quanto à consistência."
+    po_issues: "O PO encontrou problemas com [documento]. Por favor, retorne ao [agente] para corrigir e re-salvar o documento atualizado."
+    complete: "Todos os artefatos de planejamento validados e salvos na pasta docs/. Vá para o ambiente da IDE para iniciar o desenvolvimento."

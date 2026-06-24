@@ -1,51 +1,51 @@
-# Brownfield Service Workflow
+# Workflow Brownfield de Serviço
 
 > **EN** | [PT](../../aiox-workflows/brownfield-service-workflow.md) | [ES](../../es/aiox-workflows/brownfield-service-workflow.md)
 
 ---
 
-**Full documentation available in:** [Portuguese Version](../../aiox-workflows/brownfield-service-workflow.md)
+**Documentação completa disponível em:** [Versão em Português](../../aiox-workflows/brownfield-service-workflow.md)
 
 ---
 
-## Summary
+## Resumo
 
-The **Brownfield Service Workflow** is designed for evolving existing backend services and APIs. It focuses on:
+O **Workflow Brownfield de Serviço** foi projetado para evoluir serviços de backend e APIs existentes. Ele foca em:
 
-- API versioning and backward compatibility
-- Database migration strategies
-- Service refactoring patterns
-- Performance optimization
-- Security enhancements
+- Versionamento de API e compatibilidade retroativa
+- Estratégias de migração de banco de dados
+- Padrões de refatoração de serviços
+- Otimização de performance
+- Melhorias de segurança
 
-### When to Use
+### Quando Usar
 
-- Extending existing APIs with new endpoints
-- Refactoring backend services
-- Database schema evolution
-- Performance improvements in services
-- After completing brownfield-discovery
+- Estender APIs existentes com novos endpoints
+- Refatorar serviços de backend
+- Evolução de schema de banco de dados
+- Melhorias de performance em serviços
+- Após concluir o brownfield-discovery
 
-### Prerequisites
+### Pré-requisitos
 
-- Run `brownfield-discovery` first if unfamiliar with the project
-- Understand existing API contracts
+- Execute o `brownfield-discovery` primeiro caso não conheça o projeto
+- Compreenda os contratos de API existentes
 
-### Key Agents
+### Agentes Principais
 
-- `@architect` - Service evolution strategy
-- `@dev` - Backend implementation
-- `@data-engineer` - Migration planning
-- `@qa` - API contract testing
+- `@architect` - Estratégia de evolução do serviço
+- `@dev` - Implementação de backend
+- `@data-engineer` - Planejamento de migrations
+- `@qa` - Testes de contrato de API
 
-### Main Phases
+### Fases Principais
 
-1. **Contract Analysis** - Existing API review
-2. **Migration Planning** - Data and API versioning strategy
-3. **Implementation** - Service changes
-4. **Data Migration** - Database updates
-5. **Validation** - Contract and regression tests
+1. **Análise de Contrato** - Revisão da API existente
+2. **Planejamento de Migração** - Estratégia de versionamento de dados e API
+3. **Implementação** - Mudanças no serviço
+4. **Migração de Dados** - Atualizações do banco de dados
+5. **Validação** - Testes de contrato e de regressão
 
 ---
 
-*For complete details, diagrams, and step-by-step instructions, see the [Portuguese documentation](../../aiox-workflows/brownfield-service-workflow.md).*
+*Para detalhes completos, diagramas e instruções passo a passo, veja a [documentação em Português](../../aiox-workflows/brownfield-service-workflow.md).*

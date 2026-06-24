@@ -1,50 +1,50 @@
-# Brownfield Discovery Workflow
+# Workflow de Brownfield Discovery
 
 > **EN** | [PT](../../aiox-workflows/brownfield-discovery-workflow.md) | [ES](../../es/aiox-workflows/brownfield-discovery-workflow.md)
 
 ---
 
-**Full documentation available in:** [Portuguese Version](../../aiox-workflows/brownfield-discovery-workflow.md)
+**Documentação completa disponível em:** [Versão em Português](../../aiox-workflows/brownfield-discovery-workflow.md)
 
 ---
 
-## Summary
+## Resumo
 
-The **Brownfield Discovery Workflow** is the essential first step when working with existing projects. It provides systematic analysis of:
+O **Workflow de Brownfield Discovery** é o primeiro passo essencial ao trabalhar com projetos existentes. Ele fornece uma análise sistemática de:
 
-- Codebase structure and architecture
-- Technology stack identification
-- Dependency analysis
-- Code quality assessment
-- Documentation gaps
-- Technical debt identification
+- Estrutura e arquitetura da codebase
+- Identificação da stack de tecnologia
+- Análise de dependências
+- Avaliação da qualidade de código
+- Lacunas de documentação
+- Identificação de dívida técnica
 
-### When to Use
+### Quando Usar
 
-- Starting work on an unfamiliar existing project
-- Onboarding to a new codebase
-- Auditing a project before major changes
-- Understanding system architecture before evolution
+- Ao iniciar trabalho em um projeto existente desconhecido
+- No onboarding a uma nova codebase
+- Ao auditar um projeto antes de mudanças significativas
+- Para entender a arquitetura do sistema antes de evoluí-lo
 
-### Key Agents
+### Agentes Principais
 
-- `@analyst` - Research and analysis
-- `@architect` - Architecture assessment
-- `@dev` - Technical evaluation
-- `@qa` - Quality analysis
+- `@analyst` - Pesquisa e análise
+- `@architect` - Avaliação de arquitetura
+- `@dev` - Avaliação técnica
+- `@qa` - Análise de qualidade
 
-### Main Phases
+### Fases Principais
 
-1. **Structure Analysis** - Directory and file organization
-2. **Tech Stack** - Frameworks, libraries, and tools identification
-3. **Architecture Mapping** - System design understanding
-4. **Quality Assessment** - Code health and technical debt
-5. **Documentation** - Generating discovery report
+1. **Análise de Estrutura** - Organização de diretórios e arquivos
+2. **Tech Stack** - Identificação de frameworks, bibliotecas e ferramentas
+3. **Mapeamento de Arquitetura** - Entendimento do design do sistema
+4. **Avaliação de Qualidade** - Saúde do código e dívida técnica
+5. **Documentação** - Geração do relatório de discovery
 
-### Output
+### Saída
 
-A comprehensive discovery document that enables informed decisions for subsequent brownfield workflows.
+Um documento de discovery abrangente que viabiliza decisões informadas para os workflows brownfield subsequentes.
 
 ---
 
-*For complete details, diagrams, and step-by-step instructions, see the [Portuguese documentation](../../aiox-workflows/brownfield-discovery-workflow.md).*
+*Para detalhes completos, diagramas e instruções passo a passo, consulte a [documentação em Português](../../aiox-workflows/brownfield-discovery-workflow.md).*

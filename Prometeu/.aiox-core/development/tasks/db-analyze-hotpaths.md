@@ -1,65 +1,65 @@
 # Task: Analisar Caminhos Quentes de Query
 
-**Propósito**: Rodar EXPLAIN ANALYZE em queries comuns/críticas para identificar problemas de performance
+**PropÃ³sito**: Rodar EXPLAIN ANALYZE em queries comuns/crÃ­ticas para identificar problemas de performance
 
 **Elicit**: true
 
 ---
 
-## Modos de Execução
+## Modos de ExecuÃ§Ã£o
 
-**Escolha seu modo de execução:**
+**Escolha seu modo de execuÃ§Ã£o:**
 
-### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
-- Tomada de decisão autônoma com registro em log
-- Interação mínima com o usuário
-- **Melhor para:** Tarefas simples e determinísticas
+### 1. Modo YOLO - RÃ¡pido, AutÃ´nomo (0-1 prompts)
+- Tomada de decisÃ£o autÃ´noma com registro em log
+- InteraÃ§Ã£o mÃ­nima com o usuÃ¡rio
+- **Melhor para:** Tarefas simples e determinÃ­sticas
 
-### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
-- Checkpoints de decisão explícitos
-- Explicações educativas
-- **Melhor para:** Aprendizado, decisões complexas
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃƒO]**
+- Checkpoints de decisÃ£o explÃ­citos
+- ExplicaÃ§Ãµes educativas
+- **Melhor para:** Aprendizado, decisÃµes complexas
 
 ### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
-- Fase de análise da task (identificar todas as ambiguidades)
-- Execução sem ambiguidade
-- **Melhor para:** Requisitos ambíguos, trabalho crítico
+- Fase de anÃ¡lise da task (identificar todas as ambiguidades)
+- ExecuÃ§Ã£o sem ambiguidade
+- **Melhor para:** Requisitos ambÃ­guos, trabalho crÃ­tico
 
-**Parâmetro:** `mode` (opcional, padrão: `interactive`)
+**ParÃ¢metro:** `mode` (opcional, padrÃ£o: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: dbAnalyzeHotpaths()
-responsável: Dara (Sage)
+responsÃ¡vel: Dara (Sage)
 responsavel_type: Agente
 atomic_layer: Strategy
 
 **Entrada:**
 - campo: query
   tipo: string
-  origem: Entrada do Usuário
-  obrigatório: true
-  validação: Query SQL válida
+  origem: Entrada do UsuÃ¡rio
+  obrigatÃ³rio: true
+  validaÃ§Ã£o: Query SQL vÃ¡lida
 
 - campo: params
   tipo: object
-  origem: Entrada do Usuário
-  obrigatório: false
-  validação: Parâmetros da query
+  origem: Entrada do UsuÃ¡rio
+  obrigatÃ³rio: false
+  validaÃ§Ã£o: ParÃ¢metros da query
 
 - campo: connection
   tipo: object
   origem: config
-  obrigatório: true
-  validação: Conexão PostgreSQL válida via Supabase
+  obrigatÃ³rio: true
+  validaÃ§Ã£o: ConexÃ£o PostgreSQL vÃ¡lida via Supabase
 
-**Saída:**
+**SaÃ­da:**
 - campo: query_result
   tipo: array
-  destino: Memória
+  destino: MemÃ³ria
   persistido: false
 
 - campo: records_affected
@@ -69,62 +69,62 @@ atomic_layer: Strategy
 
 - campo: execution_time
   tipo: number
-  destino: Memória
+  destino: MemÃ³ria
   persistido: false
 ```
 
 ---
 
-## Pré-Condições
+## PrÃ©-CondiÃ§Ãµes
 
-**Propósito:** Validar os pré-requisitos ANTES da execução da task (bloqueante)
+**PropÃ³sito:** Validar os prÃ©-requisitos ANTES da execuÃ§Ã£o da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Conexão com o banco de dados estabelecida; sintaxe da query válida
+  - [ ] ConexÃ£o com o banco de dados estabelecida; sintaxe da query vÃ¡lida
     tipo: pre-condition
     blocker: true
-    validação: |
-      Verificar se a conexão com o banco de dados está estabelecida; sintaxe da query válida
-    error_message: "Pré-condição falhou: Conexão com o banco de dados estabelecida; sintaxe da query válida"
+    validaÃ§Ã£o: |
+      Verificar se a conexÃ£o com o banco de dados estÃ¡ estabelecida; sintaxe da query vÃ¡lida
+    error_message: "PrÃ©-condiÃ§Ã£o falhou: ConexÃ£o com o banco de dados estabelecida; sintaxe da query vÃ¡lida"
 ```
 
 ---
 
-## Pós-Condições
+## PÃ³s-CondiÃ§Ãµes
 
-**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
+**PropÃ³sito:** Validar o sucesso da execuÃ§Ã£o DEPOIS que a task Ã© concluÃ­da
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Query executada; resultados retornados; transação commitada
+  - [ ] Query executada; resultados retornados; transaÃ§Ã£o commitada
     tipo: post-condition
     blocker: true
-    validação: |
-      Verificar se a query foi executada; resultados retornados; transação commitada
-    error_message: "Pós-condição falhou: Query executada; resultados retornados; transação commitada"
+    validaÃ§Ã£o: |
+      Verificar se a query foi executada; resultados retornados; transaÃ§Ã£o commitada
+    error_message: "PÃ³s-condiÃ§Ã£o falhou: Query executada; resultados retornados; transaÃ§Ã£o commitada"
 ```
 
 ---
 
-## Critérios de Aceite
+## CritÃ©rios de Aceite
 
-**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
+**PropÃ³sito:** CritÃ©rios definitivos de pass/fail para a conclusÃ£o da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Dados persistidos corretamente; constraints respeitadas; sem dados órfãos
+  - [ ] Dados persistidos corretamente; constraints respeitadas; sem dados Ã³rfÃ£os
     tipo: acceptance-criterion
     blocker: true
-    validação: |
-      Afirmar que os dados foram persistidos corretamente; constraints respeitadas; sem dados órfãos
-    error_message: "Critério de aceite não atendido: Dados persistidos corretamente; constraints respeitadas; sem dados órfãos"
+    validaÃ§Ã£o: |
+      Afirmar que os dados foram persistidos corretamente; constraints respeitadas; sem dados Ã³rfÃ£os
+    error_message: "CritÃ©rio de aceite nÃ£o atendido: Dados persistidos corretamente; constraints respeitadas; sem dados Ã³rfÃ£os"
 ```
 
 ---
@@ -134,52 +134,52 @@ acceptance-criteria:
 **Recursos externos/compartilhados usados por esta task:**
 
 - **Ferramenta:** neo4j-driver
-  - **Propósito:** Conexão com o banco de dados Neo4j e execução de queries
+  - **PropÃ³sito:** ConexÃ£o com o banco de dados Neo4j e execuÃ§Ã£o de queries
   - **Origem:** npm: neo4j-driver
 
 - **Ferramenta:** query-validator
-  - **Propósito:** Validação da sintaxe de queries Cypher
+  - **PropÃ³sito:** ValidaÃ§Ã£o da sintaxe de queries Cypher
   - **Origem:** .aiox-core/utils/db-query-validator.js
 
 ---
 
 ## Scripts
 
-**Código específico do agente para esta task:**
+**CÃ³digo especÃ­fico do agente para esta task:**
 
 - **Script:** db-query.js
-  - **Propósito:** Executar queries Neo4j com tratamento de erros
+  - **PropÃ³sito:** Executar queries Neo4j com tratamento de erros
   - **Linguagem:** JavaScript
-  - **Localização:** .aiox-core/scripts/db-query.js
+  - **LocalizaÃ§Ã£o:** .aiox-core/scripts/db-query.js
 
 ---
 
 ## Tratamento de Erros
 
-**Estratégia:** fallback
+**EstratÃ©gia:** fallback
 
 **Erros Comuns:**
 
-1. **Erro:** Falha na Conexão
-   - **Causa:** Não foi possível conectar ao banco de dados Neo4j
-   - **Resolução:** Verificar a string de conexão, credenciais, rede
-   - **Recuperação:** Retentar com backoff exponencial (máximo de 3 tentativas)
+1. **Erro:** Falha na ConexÃ£o
+   - **Causa:** NÃ£o foi possÃ­vel conectar ao banco de dados Neo4j
+   - **ResoluÃ§Ã£o:** Verificar a string de conexÃ£o, credenciais, rede
+   - **RecuperaÃ§Ã£o:** Retentar com backoff exponencial (mÃ¡ximo de 3 tentativas)
 
 2. **Erro:** Erro de Sintaxe na Query
-   - **Causa:** Sintaxe de query Cypher inválida
-   - **Resolução:** Validar a sintaxe da query antes da execução
-   - **Recuperação:** Retornar erro de sintaxe detalhado, sugerir correção
+   - **Causa:** Sintaxe de query Cypher invÃ¡lida
+   - **ResoluÃ§Ã£o:** Validar a sintaxe da query antes da execuÃ§Ã£o
+   - **RecuperaÃ§Ã£o:** Retornar erro de sintaxe detalhado, sugerir correÃ§Ã£o
 
-3. **Erro:** Rollback de Transação
+3. **Erro:** Rollback de TransaÃ§Ã£o
    - **Causa:** A query viola constraints ou atinge timeout
-   - **Resolução:** Revisar a lógica da query e as constraints
-   - **Recuperação:** Rollback automático, preservar a integridade dos dados
+   - **ResoluÃ§Ã£o:** Revisar a lÃ³gica da query e as constraints
+   - **RecuperaÃ§Ã£o:** Rollback automÃ¡tico, preservar a integridade dos dados
 
 ---
 
 ## Performance
 
-**Métricas Esperadas:**
+**MÃ©tricas Esperadas:**
 
 ```yaml
 duration_expected: 5-20 min (estimated)
@@ -187,8 +187,8 @@ cost_estimated: $0.003-0.015
 token_usage: ~2,000-8,000 tokens
 ```
 
-**Notas de Otimização:**
-- Análise iterativa com limites de profundidade; cachear resultados intermediários; agrupar operações similares
+**Notas de OtimizaÃ§Ã£o:**
+- AnÃ¡lise iterativa com limites de profundidade; cachear resultados intermediÃ¡rios; agrupar operaÃ§Ãµes similares
 
 ---
 
@@ -211,15 +211,15 @@ updated_at: 2025-11-17
 ## Entradas
 
 - `queries_file` (opcional): Caminho para o arquivo com queries rotuladas a analisar
-- Se não for fornecido, analisa os padrões comuns de pg_stat_statements
+- Se nÃ£o for fornecido, analisa os padrÃµes comuns de pg_stat_statements
 
 ---
 
 ## Processo
 
-### 1. Habilitar as Extensões Necessárias
+### 1. Habilitar as ExtensÃµes NecessÃ¡rias
 
-Garantir que o monitoramento de performance esteja disponível:
+Garantir que o monitoramento de performance esteja disponÃ­vel:
 
 ```bash
 echo "Enabling performance extensions..."
@@ -234,7 +234,7 @@ CREATE EXTENSION IF NOT EXISTS index_advisor;
 SELECT 'Extensions ready' AS status;
 EOF
 
-echo "✓ Extensions enabled"
+echo "âœ“ Extensions enabled"
 ```
 
 ### 2. Identificar as Queries Quentes
@@ -260,7 +260,7 @@ LIMIT 20;
 EOF
 ```
 
-Pergunte ao usuário:
+Pergunte ao usuÃ¡rio:
 ```
 Top 20 slow queries found.
 Select query numbers to analyze (comma-separated, e.g., 1,3,5):
@@ -269,7 +269,7 @@ Or type 'all' to analyze all:
 
 ### 3. Rodar EXPLAIN ANALYZE com BUFFERS
 
-Para cada query selecionada, rode uma análise abrangente:
+Para cada query selecionada, rode uma anÃ¡lise abrangente:
 
 ```bash
 echo "Analyzing query performance..."
@@ -301,9 +301,9 @@ EXPLAIN (
 EOF
 ```
 
-### 4. Gerar Recomendações de Índices
+### 4. Gerar RecomendaÃ§Ãµes de Ãndices
 
-Use a extensão index_advisor (específica do Supabase):
+Use a extensÃ£o index_advisor (especÃ­fica do Supabase):
 
 ```bash
 echo "Generating index recommendations..."
@@ -314,7 +314,7 @@ SELECT *
 FROM index_advisor('{actual_query}');
 
 -- Alternative: Supabase Studio has Index Advisor UI
--- Navigate to: Query Performance Report → Select query → "indexes" tab
+-- Navigate to: Query Performance Report â†’ Select query â†’ "indexes" tab
 EOF
 ```
 
@@ -325,36 +325,36 @@ Identifique problemas comuns de performance:
 ```bash
 echo "Performance Issue Checklist:"
 echo ""
-echo "🔍 Sequential Scans:"
+echo "ðŸ” Sequential Scans:"
 echo "   - Look for: 'Seq Scan on table_name'"
 echo "   - Problem if: Large tables (>1000 rows) + filter removes many rows"
 echo "   - Fix: Add index on filter columns"
 echo ""
-echo "🔍 Row Count Mismatches:"
+echo "ðŸ” Row Count Mismatches:"
 echo "   - Compare: rows=XXXX (estimated) vs actual rows=YYYY"
 echo "   - Problem if: Estimate differs by >10x from actual"
 echo "   - Fix: ANALYZE table_name; (update statistics)"
 echo ""
-echo "🔍 Buffer Cache Misses:"
+echo "ðŸ” Buffer Cache Misses:"
 echo "   - Look for: 'shared read' in BUFFERS output"
 echo "   - Problem if: High compared to 'shared hit'"
 echo "   - Fix: Increase shared_buffers, optimize query, add indexes"
 echo ""
-echo "🔍 Temporary Files:"
+echo "ðŸ” Temporary Files:"
 echo "   - Look for: 'temp read' or 'temp written' in BUFFERS"
 echo "   - Problem: Query using disk for sorting/hashing (work_mem too small)"
 echo "   - Fix: Increase work_mem, optimize query, add indexes"
 echo ""
-echo "🔍 Nested Loops:"
+echo "ðŸ” Nested Loops:"
 echo "   - Look for: 'Nested Loop' with high row counts"
 echo "   - Problem if: Loops=10000+ iterations"
 echo "   - Fix: Add indexes on join columns, consider Hash Join"
 echo ""
 ```
 
-### 6. Criar o Relatório de Análise
+### 6. Criar o RelatÃ³rio de AnÃ¡lise
 
-Gere um relatório em markdown com os achados:
+Gere um relatÃ³rio em markdown com os achados:
 
 ```bash
 REPORT_FILE="supabase/docs/performance-analysis-$(date +%Y%m%d%H%M%S).md"
@@ -417,17 +417,17 @@ cat > "$REPORT_FILE" << 'MDEOF'
 
 MDEOF
 
-echo "✓ Report: $REPORT_FILE"
+echo "âœ“ Report: $REPORT_FILE"
 ```
 
 ---
 
-## Saída
+## SaÃ­da
 
-Exibir o resumo e os próximos passos:
+Exibir o resumo e os prÃ³ximos passos:
 
 ```
-✅ HOT PATH ANALYSIS COMPLETE
+âœ… HOT PATH ANALYSIS COMPLETE
 
 Queries analyzed: {count}
 Report: supabase/docs/performance-analysis-{timestamp}.md
@@ -449,9 +449,9 @@ Index Recommendations:
 
 ---
 
-## Padrões Comuns de Query a Verificar
+## PadrÃµes Comuns de Query a Verificar
 
-### Padrão 1: Dados Específicos do Usuário
+### PadrÃ£o 1: Dados EspecÃ­ficos do UsuÃ¡rio
 ```sql
 -- Hot path: Get user's posts
 SELECT * FROM posts WHERE user_id = 'xxx';
@@ -460,7 +460,7 @@ SELECT * FROM posts WHERE user_id = 'xxx';
 -- Verify: USING (auth.uid() = user_id) is wrapped in SELECT for RLS performance
 ```
 
-### Padrão 2: Joins
+### PadrÃ£o 2: Joins
 ```sql
 -- Hot path: Posts with author info
 SELECT p.*, u.name
@@ -470,7 +470,7 @@ JOIN users u ON p.user_id = u.id;
 -- Check: Index on posts(user_id)? Index on users(id) should exist (PK)
 ```
 
-### Padrão 3: Filtros + Ordenações
+### PadrÃ£o 3: Filtros + OrdenaÃ§Ãµes
 ```sql
 -- Hot path: Recent published posts
 SELECT * FROM posts
@@ -481,7 +481,7 @@ LIMIT 10;
 -- Check: Index on (status, created_at DESC)?
 ```
 
-### Padrão 4: Agregações
+### PadrÃ£o 4: AgregaÃ§Ãµes
 ```sql
 -- Hot path: User post count
 SELECT user_id, COUNT(*)
@@ -493,7 +493,7 @@ GROUP BY user_id;
 
 ---
 
-## Interpretação da Saída de BUFFERS
+## InterpretaÃ§Ã£o da SaÃ­da de BUFFERS
 
 **Bom (Em Cache):**
 ```
@@ -507,7 +507,7 @@ Buffers: shared hit=10 read=990
 ```
 = Apenas 10 blocos em cache, 990 lidos do disco
 
-**Muito Ruim (Arquivos Temporários):**
+**Muito Ruim (Arquivos TemporÃ¡rios):**
 ```
 Buffers: temp read=5000 written=5000
 ```
@@ -517,7 +517,7 @@ Buffers: temp read=5000 written=5000
 
 ---
 
-## Notas Específicas do Supabase
+## Notas EspecÃ­ficas do Supabase
 
 ### Usando com o Supabase Client (PostgREST)
 
@@ -527,7 +527,7 @@ Habilite o explain primeiro no editor SQL (apenas dev):
 ALTER DATABASE postgres SET app.settings.explain TO 'on';
 ```
 
-Depois use no código:
+Depois use no cÃ³digo:
 ```javascript
 const { data, error } = await supabase
   .from('posts')
@@ -536,35 +536,35 @@ const { data, error } = await supabase
   .explain({ analyze: true, buffers: true })
 ```
 
-### Integração com o Supabase Studio
+### IntegraÃ§Ã£o com o Supabase Studio
 
-- Navegue até: **Query Performance Report**
+- Navegue atÃ©: **Query Performance Report**
 - Selecione a query lenta
-- Clique na **aba "indexes"** para as recomendações do index_advisor
+- Clique na **aba "indexes"** para as recomendaÃ§Ãµes do index_advisor
 - Um clique para criar a migration
 
 ---
 
-## Pré-requisitos
+## PrÃ©-requisitos
 
-- Extensão pg_stat_statements habilitada (padrão no Supabase)
-- Atividade de banco de dados suficiente para popular as estatísticas
-- Para o index_advisor: extensão index_advisor (Supabase Pro+)
+- ExtensÃ£o pg_stat_statements habilitada (padrÃ£o no Supabase)
+- Atividade de banco de dados suficiente para popular as estatÃ­sticas
+- Para o index_advisor: extensÃ£o index_advisor (Supabase Pro+)
 
 ---
 
-## Boas Práticas
+## Boas PrÃ¡ticas
 
 1. **Sempre use BUFFERS**: `EXPLAIN (ANALYZE, BUFFERS)`
-2. **Procure por padrões**: Uma query lenta frequentemente indica um problema sistêmico
-3. **Atualize as estatísticas**: Rode `ANALYZE` após mudanças significativas de dados
-4. **Teste os índices**: Crie índices CONCURRENTLY em produção
-5. **Re-meça**: Após as otimizações, reexecute esta análise
-6. **Performance de RLS**: Envolva funções de auth em SELECT para um ganho de 19x
+2. **Procure por padrÃµes**: Uma query lenta frequentemente indica um problema sistÃªmico
+3. **Atualize as estatÃ­sticas**: Rode `ANALYZE` apÃ³s mudanÃ§as significativas de dados
+4. **Teste os Ã­ndices**: Crie Ã­ndices CONCURRENTLY em produÃ§Ã£o
+5. **Re-meÃ§a**: ApÃ³s as otimizaÃ§Ãµes, reexecute esta anÃ¡lise
+6. **Performance de RLS**: Envolva funÃ§Ãµes de auth em SELECT para um ganho de 19x
 
 ---
 
-## Referências
+## ReferÃªncias
 
 - [PostgreSQL EXPLAIN Documentation](https://www.postgresql.org/docs/current/sql-explain.html)
 - [Supabase Query Optimization](https://supabase.com/docs/guides/database/query-optimization)

@@ -1,26 +1,26 @@
-# @squad-creator (Nova) - System Documentation
+# @squad-creator (Nova) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/squad-creator-system.md) | [ES](../../es/aiox-agent-flows/squad-creator-system.md)
 
 ---
 
-## Summary
+## Resumo
 
-**@squad-creator** (Nova) is the **Creator** of the AIOX agent system. This agent is responsible for:
+O **@squad-creator** (Nova) é o **Criador** do sistema de agentes AIOX. Este agente é responsável por:
 
-- Creating and configuring new agent squads
-- Defining squad compositions and roles
-- Setting up squad-specific workflows
-- Managing squads and customizations
-
----
-
-## Full Documentation
-
-For complete documentation including flowcharts, command mappings, integrations, and troubleshooting, please refer to the Portuguese version:
-
-**[View Full Documentation (PT)](../../aiox-agent-flows/squad-creator-system.md)**
+- Criar e configurar novos squads de agentes
+- Definir composições e papéis dos squads
+- Configurar workflows específicos de cada squad
+- Gerenciar squads e customizações
 
 ---
 
-*AIOX Agent Flows - @squad-creator System v1.0*
+## Documentação Completa
+
+Para a documentação completa, incluindo fluxogramas, mapeamentos de comandos, integrações e troubleshooting, consulte a versão em português:
+
+**[Ver Documentação Completa (PT)](../../aiox-agent-flows/squad-creator-system.md)**
+
+---
+
+*AIOX Agent Flows - Sistema @squad-creator v1.0*

@@ -1,29 +1,29 @@
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, default: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: indexDocs()
@@ -69,9 +69,9 @@ atomic_layer: Molecule
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -87,9 +87,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
 
 **Checklist:**
 
@@ -105,9 +105,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de aprovação/reprovação para a conclusão da task
 
 **Checklist:**
 
@@ -123,57 +123,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** markdown-renderer
-  - **Purpose:** Markdown parsing and rendering
-  - **Source:** npm: marked or similar
+- **Ferramenta:** markdown-renderer
+  - **Propósito:** Parsing e renderização de Markdown
+  - **Origem:** npm: marked ou similar
 
-- **Tool:** template-engine
-  - **Purpose:** Document template processing
-  - **Source:** .aiox-core/product/templates/
+- **Ferramenta:** template-engine
+  - **Propósito:** Processamento de templates de documento
+  - **Origem:** .aiox-core/product/templates/
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** generate-docs.js
-  - **Purpose:** Documentation generation from templates
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/generate-docs.js
+  - **Propósito:** Geração de documentação a partir de templates
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/generate-docs.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** fallback
+**Estratégia:** fallback
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Template Not Found
-   - **Cause:** Specified template does not exist
-   - **Resolution:** Verify template path in config
-   - **Recovery:** Use default template, log warning
+1. **Erro:** Template Not Found
+   - **Causa:** O template especificado não existe
+   - **Resolução:** Verifique o caminho do template na config
+   - **Recuperação:** Use o template padrão, registre um warning
 
-2. **Error:** Invalid Markdown
-   - **Cause:** Source contains invalid markdown syntax
-   - **Resolution:** Validate markdown before processing
-   - **Recovery:** Sanitize markdown, continue processing
+2. **Erro:** Invalid Markdown
+   - **Causa:** A origem contém sintaxe markdown inválida
+   - **Resolução:** Valide o markdown antes de processar
+   - **Recuperação:** Sanitize o markdown, continue o processamento
 
-3. **Error:** Generation Failed
-   - **Cause:** Template rendering error or missing data
-   - **Resolution:** Check template syntax and data availability
-   - **Recovery:** Fallback to simple template, log error
+3. **Erro:** Generation Failed
+   - **Causa:** Erro de renderização do template ou dados ausentes
+   - **Resolução:** Verifique a sintaxe do template e a disponibilidade dos dados
+   - **Recuperação:** Fallback para um template simples, registre o erro
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 2-5 min (estimated)
@@ -181,8 +181,8 @@ cost_estimated: $0.001-0.003
 token_usage: ~1,000-3,000 tokens
 ```
 
-**Optimization Notes:**
-- Parallelize independent operations; reuse atom results; implement early exits
+**Notas de Otimização:**
+- Paralelize operações independentes; reutilize resultados de átomos; implemente saídas antecipadas
 
 ---
 
@@ -201,68 +201,68 @@ updated_at: 2025-11-17
 
 ---
 
-# No checklists needed - this task maintains documentation index, validation is through file system checks
+# Nenhum checklist necessário - esta task mantém o índice de documentação, a validação é feita por verificações no sistema de arquivos
 tools:
   - github-cli
 ---
 
 # Index Documentation Task
 
-## Purpose
+## Propósito
 
-This task maintains the integrity and completeness of the `docs/index.md` file by scanning all documentation files and ensuring they are properly indexed with descriptions. It handles both root-level documents and documents within subfolders, organizing them hierarchically.
+Esta task mantém a integridade e a completude do arquivo `docs/index.md` ao varrer todos os arquivos de documentação e garantir que estejam devidamente indexados com descrições. Ela trata tanto os documentos de nível raiz quanto os documentos dentro de subpastas, organizando-os hierarquicamente.
 
-## Task Instructions
+## Instruções da Task
 
-You are now operating as a Documentation Indexer. Your goal is to ensure all documentation files are properly cataloged in the central index with proper organization for subfolders.
+Você agora opera como um Indexador de Documentação. Seu objetivo é garantir que todos os arquivos de documentação estejam devidamente catalogados no índice central, com a organização adequada para as subpastas.
 
-### Required Steps
+### Passos Obrigatórios
 
-1. First, locate and scan:
+1. Primeiro, localize e varra:
 
-   - The `docs/` directory and all subdirectories
-   - The existing `docs/index.md` file (create if absent)
-   - All markdown (`.md`) and text (`.txt`) files in the documentation structure
-   - Note the folder structure for hierarchical organization
+   - O diretório `docs/` e todos os subdiretórios
+   - O arquivo `docs/index.md` existente (crie se ausente)
+   - Todos os arquivos markdown (`.md`) e de texto (`.txt`) na estrutura de documentação
+   - Anote a estrutura de pastas para a organização hierárquica
 
-2. For the existing `docs/index.md`:
+2. Para o `docs/index.md` existente:
 
-   - Parse current entries
-   - Note existing file references and descriptions
-   - Identify any broken links or missing files
-   - Keep track of already-indexed content
-   - Preserve existing folder sections
+   - Parseie as entradas atuais
+   - Anote as referências de arquivos e descrições existentes
+   - Identifique quaisquer links quebrados ou arquivos ausentes
+   - Mantenha o controle do conteúdo já indexado
+   - Preserve as seções de pasta existentes
 
-3. For each documentation file found:
+3. Para cada arquivo de documentação encontrado:
 
-   - Extract the title (from first heading or filename)
-   - Generate a brief description by analyzing the content
-   - Create a relative markdown link to the file
-   - Check if it's already in the index
-   - Note which folder it belongs to (if in a subfolder)
-   - If missing or outdated, prepare an update
+   - Extraia o título (do primeiro heading ou do nome do arquivo)
+   - Gere uma breve descrição analisando o conteúdo
+   - Crie um link markdown relativo para o arquivo
+   - Verifique se ele já está no índice
+   - Anote a qual pasta ele pertence (se estiver em uma subpasta)
+   - Se ausente ou desatualizado, prepare uma atualização
 
-4. For any missing or non-existent files found in index:
+4. Para quaisquer arquivos ausentes ou inexistentes encontrados no índice:
 
-   - Present a list of all entries that reference non-existent files
-   - For each entry:
-     - Show the full entry details (title, path, description)
-     - Ask for explicit confirmation before removal
-     - Provide option to update the path if file was moved
-     - Log the decision (remove/update/keep) for final report
+   - Apresente uma lista de todas as entradas que referenciam arquivos inexistentes
+   - Para cada entrada:
+     - Mostre os detalhes completos da entrada (título, caminho, descrição)
+     - Peça confirmação explícita antes da remoção
+     - Forneça a opção de atualizar o caminho se o arquivo foi movido
+     - Registre a decisão (remover/atualizar/manter) para o relatório final
 
-5. Update `docs/index.md`:
-   - Maintain existing structure and organization
-   - Create level 2 sections (`##`) for each subfolder
-   - List root-level documents first
-   - Add missing entries with descriptions
-   - Update outdated entries
-   - Remove only entries that were confirmed for removal
-   - Ensure consistent formatting throughout
+5. Atualize o `docs/index.md`:
+   - Mantenha a estrutura e a organização existentes
+   - Crie seções de nível 2 (`##`) para cada subpasta
+   - Liste os documentos de nível raiz primeiro
+   - Adicione as entradas ausentes com descrições
+   - Atualize as entradas desatualizadas
+   - Remova apenas as entradas que foram confirmadas para remoção
+   - Garanta formatação consistente em todo o arquivo
 
-### Index Structure Format
+### Formato da Estrutura do Índice
 
-The index should be organized as follows:
+O índice deve ser organizado da seguinte forma:
 
 ```markdown
 # Documentation Index
@@ -299,9 +299,9 @@ Description of nested document.
 
 ```
 
-### Index Entry Format
+### Formato de Entrada do Índice
 
-Each entry should follow this format:
+Cada entrada deve seguir este formato:
 
 ```markdown
 ### [Document Title](relative/path/to/file.md)
@@ -309,80 +309,80 @@ Each entry should follow this format:
 Brief description of the document's purpose and contents.
 ```
 
-### Rules of Operation
+### Regras de Operação
 
-1. NEVER modify the content of indexed files
-2. Preserve existing descriptions in index.md when they are adequate
-3. Maintain any existing categorization or grouping in the index
-4. Use relative paths for all links (starting with `./`)
-5. Ensure descriptions are concise but informative
-6. NEVER remove entries without explicit confirmation
-7. Report any broken links or inconsistencies found
-8. Allow path updates for moved files before considering removal
-9. Create folder sections using level 2 headings (`##`)
-10. Sort folders alphabetically, with root documents listed first
-11. Within each section, sort documents alphabetically by title
+1. NUNCA modifique o conteúdo dos arquivos indexados
+2. Preserve as descrições existentes no index.md quando forem adequadas
+3. Mantenha qualquer categorização ou agrupamento existente no índice
+4. Use caminhos relativos para todos os links (começando com `./`)
+5. Garanta que as descrições sejam concisas mas informativas
+6. NUNCA remova entradas sem confirmação explícita
+7. Reporte quaisquer links quebrados ou inconsistências encontradas
+8. Permita atualizações de caminho para arquivos movidos antes de considerar a remoção
+9. Crie seções de pasta usando headings de nível 2 (`##`)
+10. Ordene as pastas alfabeticamente, com os documentos raiz listados primeiro
+11. Dentro de cada seção, ordene os documentos alfabeticamente por título
 
-### Process Output
+### Saída do Processo
 
-The task will provide:
+A task fornecerá:
 
-1. A summary of changes made to index.md
-2. List of newly indexed files (organized by folder)
-3. List of updated entries
-4. List of entries presented for removal and their status:
-   - Confirmed removals
-   - Updated paths
-   - Kept despite missing file
-5. Any new folders discovered
-6. Any other issues or inconsistencies found
+1. Um resumo das mudanças feitas no index.md
+2. Lista de arquivos recém-indexados (organizados por pasta)
+3. Lista de entradas atualizadas
+4. Lista de entradas apresentadas para remoção e seu status:
+   - Remoções confirmadas
+   - Caminhos atualizados
+   - Mantidas apesar do arquivo ausente
+5. Quaisquer novas pastas descobertas
+6. Quaisquer outros problemas ou inconsistências encontradas
 
-### Handling Missing Files
+### Tratamento de Arquivos Ausentes
 
-For each file referenced in the index but not found in the filesystem:
+Para cada arquivo referenciado no índice mas não encontrado no sistema de arquivos:
 
-1. Present the entry:
+1. Apresente a entrada:
 
    ```markdown
-   Missing file detected:
-   Title: [Document Title]
-   Path: relative/path/to/file.md
-   Description: Existing description
-   Section: [Root Documents | Folder Name]
+   Arquivo ausente detectado:
+   Título: [Document Title]
+   Caminho: relative/path/to/file.md
+   Descrição: Descrição existente
+   Seção: [Documentos Raiz | Nome da Pasta]
 
-   Options:
+   Opções:
 
-   1. Remove this entry
-   2. Update the file path
-   3. Keep entry (mark as temporarily unavailable)
+   1. Remover esta entrada
+   2. Atualizar o caminho do arquivo
+   3. Manter a entrada (marcar como temporariamente indisponível)
 
-   Please choose an option (1/2/3):
+   Por favor, escolha uma opção (1/2/3):
    ```
 
-2. Wait for user confirmation before taking any action
-3. Log the decision for the final report
+2. Aguarde a confirmação do usuário antes de tomar qualquer ação
+3. Registre a decisão para o relatório final
 
-### Special Cases
+### Casos Especiais
 
-1. **Sharded Documents**: If a folder contains an `index.md` file, treat it as a sharded document:
+1. **Documentos Shardeados**: Se uma pasta contém um arquivo `index.md`, trate-a como um documento shardeado:
 
-   - Use the folder's `index.md` title as the section title
-   - List the folder's documents as subsections
-   - Note in the description that this is a multi-part document
+   - Use o título do `index.md` da pasta como o título da seção
+   - Liste os documentos da pasta como subseções
+   - Anote na descrição que este é um documento de múltiplas partes
 
-2. **README files**: Convert `README.md` to more descriptive titles based on content
+2. **Arquivos README**: Converta `README.md` para títulos mais descritivos com base no conteúdo
 
-3. **Nested Subfolders**: For deeply nested folders, maintain the hierarchy but limit to 2 levels in the main index. Deeper structures should have their own index files.
+3. **Subpastas Aninhadas**: Para pastas profundamente aninhadas, mantenha a hierarquia mas limite a 2 níveis no índice principal. Estruturas mais profundas devem ter seus próprios arquivos de índice.
 
-## Required Input
+## Entrada Necessária
 
-Please provide:
+Por favor, forneça:
 
-1. Location of the `docs/` directory (default: `./docs`)
-2. Confirmation of write access to `docs/index.md`
-3. Any specific categorization preferences
-4. Any files or directories to exclude from indexing (e.g., `.git`, `node_modules`)
-5. Whether to include hidden files/folders (starting with `.`)
+1. Localização do diretório `docs/` (default: `./docs`)
+2. Confirmação de acesso de escrita ao `docs/index.md`
+3. Quaisquer preferências específicas de categorização
+4. Quaisquer arquivos ou diretórios a excluir da indexação (ex.: `.git`, `node_modules`)
+5. Se deve incluir arquivos/pastas ocultos (começando com `.`)
 
-Would you like to proceed with documentation indexing? Please provide the required input above.
+Deseja prosseguir com a indexação da documentação? Por favor, forneça a entrada necessária acima.
  

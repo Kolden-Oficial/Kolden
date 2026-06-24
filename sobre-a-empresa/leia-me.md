@@ -26,7 +26,7 @@ Esta pasta concentra **tudo sobre a Kolden** para consumo de IAs e pessoas. Cada
 | `identidade/` | visao-geral · missao-visao-valores · historia · organograma |
 | `areas/` | organização por departamento (visão lógica) + elenco de agentes/pessoas por área |
 | `mercado-e-posicionamento/` | icp-e-personas · ofertas-e-produtos · posicionamento · concorrencia |
-| `marca/` | voz-e-tom · mensagens-chave · identidade-visual |
+| `marca/` | voz-e-tom · mensagens-chave · identidade-visual · **`design-system/`** (kit completo de identidade: tokens, componentes, assets) |
 | `operacao/` | processos · metricas-e-okrs |
 | (raiz) | glossario.md · faq.md · indice.yaml |
 
