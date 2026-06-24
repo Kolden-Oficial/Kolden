@@ -30,11 +30,11 @@ preset:
 
 ---
 
-## Design Patterns (The Essential 5)
+## Design Patterns (Os 5 Essenciais)
 
 ### Pattern 1: Contract Interface Pattern
 
-**Purpose:** Isolar casos de uso de implementacoes concretas de infra.
+**Propósito:** Isolar casos de uso de implementacoes concretas de infra.
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 9/10
 
@@ -51,12 +51,12 @@ interface OrderRepositoryContract
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Dependencia direta do Eloquent no dominio
 - Dificuldade em mockar persistencia
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Contratos claros para IoC container
 - Testes unitarios sem banco real
@@ -65,7 +65,7 @@ interface OrderRepositoryContract
 
 ### Pattern 2: Service / Action Pattern
 
-**Purpose:** Centralizar regra de negocio fora de controllers.
+**Propósito:** Centralizar regra de negocio fora de controllers.
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 9/10
 
@@ -93,12 +93,12 @@ final class PlaceOrderAction
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Regra em controller
 - Fluxo de negocio fragmentado
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Caso de uso unico e auditavel
 - Facil de validar por testes focados
@@ -107,7 +107,7 @@ final class PlaceOrderAction
 
 ### Pattern 3: Repository Adapter Pattern
 
-**Purpose:** Encapsular detalhes de Eloquent/Query Builder.
+**Propósito:** Encapsular detalhes de Eloquent/Query Builder.
 
 **Execution Score:** 9/10 | **Anti-Bug Score:** 9/10
 
@@ -135,12 +135,12 @@ final class EloquentOrderRepository implements OrderRepositoryContract
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - SQL/ORM espalhado
 - Mudancas de schema afetando regras de negocio
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Ponto unico de persistencia
 - Facil trocar implementacao futura
@@ -149,7 +149,7 @@ final class EloquentOrderRepository implements OrderRepositoryContract
 
 ### Pattern 4: Domain Event Pattern
 
-**Purpose:** Disparar efeitos colaterais de forma desacoplada.
+**Propósito:** Disparar efeitos colaterais de forma desacoplada.
 
 **Execution Score:** 8/10 | **Anti-Bug Score:** 8/10
 
@@ -168,12 +168,12 @@ final readonly class OrderPlaced
 Event::dispatch(new OrderPlaced($order->id(), $order->customerId()));
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Side effects sincronos no fluxo principal
 - Integracoes acopladas ao caso de uso
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Listeners independentes
 - Melhor evolucao de integracoes
@@ -182,7 +182,7 @@ Event::dispatch(new OrderPlaced($order->id(), $order->customerId()));
 
 ### Pattern 5: Factory/Builder Pattern (Tests Only)
 
-**Purpose:** Gerar fixtures consistentes com baixa repeticao.
+**Propósito:** Gerar fixtures consistentes com baixa repeticao.
 
 **Execution Score:** 8/10 | **Anti-Bug Score:** 8/10
 
@@ -197,19 +197,19 @@ $command = PlaceOrderData::fromArray([
 ]);
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Setup duplicado em testes
 - Casos de teste pouco expressivos
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Fixtures padronizadas
 - Facil variar cenarios sem ruido
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 ```text
 /app
@@ -236,7 +236,7 @@ $command = PlaceOrderData::fromArray([
   /Feature
 ```
 
-### Structure Rationale
+### Justificativa da Estrutura
 
 - **Domain protegido:** Regras sem dependencia Laravel quando possivel
 - **Application explicita:** Acoes orientadas a caso de uso
@@ -246,7 +246,7 @@ $command = PlaceOrderData::fromArray([
 
 ## Tech Stack
 
-| Category | Technology | Version | Purpose |
+| Categoria | Tecnologia | Versão | Propósito |
 | -------- | ---------- | ------- | ------- |
 | Language | PHP | 8.3+ | Runtime principal |
 | Framework | Laravel | 11+ | API, DI, eventos |
@@ -257,7 +257,7 @@ $command = PlaceOrderData::fromArray([
 | Style | Laravel Pint | latest | Padrao de codigo |
 | Static Analysis | PHPStan | latest | Analise estatica |
 
-### Required Dependencies
+### Dependências Necessárias
 
 ```bash
 composer require laravel/framework
@@ -270,11 +270,11 @@ composer require --dev laravel/pint
 
 ---
 
-## Coding Standards
+## Padrões de Código
 
-### Naming Conventions
+### Convenções de Nomenclatura
 
-| Element | Convention | Example |
+| Elemento | Convenção | Exemplo |
 | ------- | ---------- | ------- |
 | Classes | PascalCase | `PlaceOrderAction` |
 | Interfaces | Suffix `Contract` | `OrderRepositoryContract` |
@@ -283,7 +283,7 @@ composer require --dev laravel/pint
 | Config keys | snake_case | `queue_connection` |
 | Migration files | timestamp_snake_case | `2026_02_19_000000_create_orders_table.php` |
 
-### Critical Rules
+### Regras Críticas
 
 1. **Thin Controllers:** Controller delega para Action e retorna Resource.
 2. **Validation at Edge:** Form Request para todo endpoint mutavel.
@@ -291,7 +291,7 @@ composer require --dev laravel/pint
 4. **Typed DTOs:** Evitar arrays soltos no core da regra.
 5. **Explicit Transactions:** Fluxos multi-passo com `DB::transaction`.
 
-### PHP Quality Baseline
+### Baseline de Qualidade PHP
 
 ```bash
 vendor/bin/pint
@@ -301,9 +301,9 @@ php artisan test
 
 ---
 
-## Testing Strategy
+## Estratégia de Testes
 
-### Test Pyramid
+### Pirâmide de Testes
 
 ```text
          /\
@@ -315,25 +315,25 @@ php artisan test
    /-------------\
 ```
 
-### What to Test
+### O Que Testar
 
-#### Always Test (Critical)
+#### Sempre Testar (Crítico)
 
 - [ ] Regras de dominio e calculos
 - [ ] Actions principais
 - [ ] Validacao de requests
 
-#### Consider Testing
+#### Considerar Testar
 
 - [ ] Listeners de eventos
 - [ ] Jobs de fila com retries
 
-#### Never Test
+#### Nunca Testar
 
 - [ ] Comportamento interno do framework
 - [ ] Codigo trivial sem regra
 
-### Coverage Goals
+### Metas de Cobertura
 
 ```text
 - Domain/Application: 90%+
@@ -341,7 +341,7 @@ php artisan test
 - Overall: 75%+
 ```
 
-### Test Template
+### Template de Teste
 
 ```php
 it('places an order successfully', function () {
@@ -361,25 +361,25 @@ it('places an order successfully', function () {
 
 ---
 
-## Token Economy Strategies
+## Estratégias de Economia de Tokens
 
-### Strategy 1: Action-First Instructions
+### Estratégia 1: Instruções Action-First
 
 Pedir alteracoes em `Action + Contract + Test` reduz ruido.
 
-### Strategy 2: Reuse Form Request
+### Estratégia 2: Reusar Form Request
 
 Usar validações existentes em vez de explicar regras em prosa.
 
-### Strategy 3: Feature Tests as Spec
+### Estratégia 3: Feature Tests como Spec
 
 Definir endpoints e asserts antes da implementacao.
 
 ---
 
-## Bug Prevention Stack
+## Stack de Prevenção de Bugs
 
-| Layer | Catches | Implementation |
+| Camada | Captura | Implementação |
 | ----- | ------- | -------------- |
 | Form Request validation | 30% | Regras na borda HTTP |
 | Domain/action tests | 40% | Unit + feature tests |
@@ -388,7 +388,7 @@ Definir endpoints e asserts antes da implementacao.
 
 ---
 
-## Patterns to AVOID
+## Padrões a EVITAR
 
 ### Fat Controller + Fat Model Mix
 
@@ -404,9 +404,9 @@ Regras baseadas apenas em arrays sem DTO tipado.
 
 ---
 
-## File Templates
+## Templates de Arquivo
 
-### Contract Template
+### Template de Contract
 
 ```php
 interface NotificationGatewayContract
@@ -415,7 +415,7 @@ interface NotificationGatewayContract
 }
 ```
 
-### Action Template
+### Template de Action
 
 ```php
 final class UseCaseAction
@@ -427,7 +427,7 @@ final class UseCaseAction
 }
 ```
 
-### Controller Template
+### Template de Controller
 
 ```php
 final class OrdersController
@@ -443,15 +443,15 @@ final class OrdersController
 
 ---
 
-## Integration with AIOX
+## Integração com o AIOX
 
-### Recommended Workflow
+### Workflow Recomendado
 
 1. `@architect` define boundaries do modulo com preset `php`
 2. `@dev` implementa Actions, Contracts e adapters por contexto
 3. `@qa` valida consistencia de requests, transacoes e testes
 
-### AIOX Commands
+### Comandos AIOX
 
 ```bash
 @dev "Follow the php preset patterns for this feature"
@@ -460,7 +460,7 @@ final class OrdersController
 
 ---
 
-## Checklist for New Features
+## Checklist para Novas Features
 
 ```markdown
 - [ ] Definir DTO e Action da feature
@@ -475,9 +475,9 @@ final class OrdersController
 
 ## Changelog
 
-| Date       | Version | Changes |
+| Data       | Versão  | Mudanças |
 | ---------- | ------- | ------- |
-| 2026-02-19 | 1.0.0   | Initial PHP preset |
+| 2026-02-19 | 1.0.0   | Preset PHP inicial |
 
 ---
 

@@ -1,0 +1,103 @@
+# Grafo de linhagens intelectuais — Liceu (Biblioteca de Mentes).
+# Mantido pelo `genealogista` (tier 2). Modela o grafo bidirecional de quem
+# herdou de quem e quem influenciou quem. Cada linhagem nomeada tem um .md em linhagens/.
+# Toda aresta carrega NATUREZA (direta | inferida | zeitgeist) e FONTE — sem fonte, fica "inferida".
+versao: 1
+atualizado-em: 2026-06-22
+
+# NODES — uma entrada por mente que participa de alguma linhagem.
+#   id               — kebab-case (espelha o id em indice.yaml)
+#   nome             — nome completo
+#   caminho-canonico — onde a mente vive (dossiê novo OU persona de squad existente)
+# Exemplo comentado de campo:
+#   - id: ernest-dichter
+#     nome: "Ernest Dichter"
+#     caminho-canonico: mentes/ernest-dichter/dossie.md
+nodes:
+  - id: sigmund-freud
+    nome: "Sigmund Freud"
+    caminho-canonico: null            # raiz da linhagem — dossiê a dissecar
+  - id: edward-bernays
+    nome: "Edward Bernays"
+    caminho-canonico: mentes/edward-bernays/dossie.md
+  - id: ernest-dichter
+    nome: "Ernest Dichter"
+    caminho-canonico: mentes/ernest-dichter/dossie.md
+  - id: vance-packard
+    nome: "Vance Packard"
+    caminho-canonico: null
+  - id: louis-cheskin
+    nome: "Louis Cheskin"
+    caminho-canonico: null
+  - id: carl-jung
+    nome: "Carl Jung"
+    caminho-canonico: null
+  - id: jacques-lacan
+    nome: "Jacques Lacan"
+    caminho-canonico: mentes/jacques-lacan/dossie.md
+  - id: victor-gruen
+    nome: "Victor Gruen"
+    caminho-canonico: null
+  - id: philip-kotler
+    nome: "Philip Kotler"
+    caminho-canonico: null
+  - id: roland-barthes
+    nome: "Roland Barthes"
+    caminho-canonico: null
+
+# EDGES — uma entrada por relação de influência (aresta dirigida de->para).
+#   de        — id da mente de origem
+#   para      — id da mente de destino
+#   tipo      — herdou-de | influenciou
+#   natureza  — direta (fonte primária: foi aluno, leu, citou) |
+#               inferida (plausível, sem prova primária) |
+#               zeitgeist (ar do tempo / influência difusa, não pessoal)
+#   fonte     — obra/URL + ano que sustenta a aresta (obrigatória se natureza=direta)
+edges:
+  - de: sigmund-freud
+    para: edward-bernays
+    tipo: influenciou
+    natureza: direta
+    fonte: "Bernays é sobrinho (duplo) de Freud e aplica sua teoria — 'Propaganda' (1928)"
+  - de: edward-bernays
+    para: ernest-dichter
+    tipo: influenciou
+    natureza: direta
+    fonte: "Dichter estende a aplicação psicanalítica de Bernays ao produto — 'The Strategy of Desire' (1960)"
+  - de: sigmund-freud
+    para: ernest-dichter
+    tipo: influenciou
+    natureza: direta
+    fonte: "Dichter aplica a psicanálise freudiana ao consumo (pesquisa motivacional)"
+  - de: ernest-dichter
+    para: vance-packard
+    tipo: influenciou
+    natureza: direta
+    fonte: "Packard documenta e critica a pesquisa motivacional — 'The Hidden Persuaders' (1957)"
+  - de: ernest-dichter
+    para: louis-cheskin
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — ambos operam motivação/percepção de embalagem na mesma corrente"
+  - de: sigmund-freud
+    para: jacques-lacan
+    tipo: influenciou
+    natureza: direta
+    fonte: "Lacan: 'retorno a Freud' — releitura do desejo via objet petit a, 'Écrits' (1966)"
+  - de: sigmund-freud
+    para: carl-jung
+    tipo: influenciou
+    natureza: direta
+    fonte: "Jung foi discípulo de Freud antes da ruptura (inconsciente coletivo/arquétipos)"
+
+# LINHAGENS — linhagens nomeadas (cada uma com um arquivo .md em linhagens/).
+#   slug      — kebab-case (= nome do arquivo, sem .md)
+#   titulo    — título legível
+#   arquivo   — caminho do .md da linhagem
+#   mentes    — ids das mentes que compõem a linhagem (em ordem do grafo)
+linhagens:
+  - slug: psicanalise-do-desejo
+    titulo: "A psicanálise do desejo aplicada ao consumo"
+    arquivo: linhagens/psicanalise-do-desejo.md
+    mentes: [sigmund-freud, edward-bernays, ernest-dichter, vance-packard, louis-cheskin,
+             carl-jung, jacques-lacan, victor-gruen, philip-kotler, roland-barthes]

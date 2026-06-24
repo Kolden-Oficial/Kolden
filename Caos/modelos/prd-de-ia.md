@@ -6,6 +6,7 @@
 | Data | AAAA-MM-DD |
 | Autor | <usuário> + Caos |
 | Status | rascunho / aprovado / em produção |
+| Escopo | interno / cliente — <se cliente: conta/cliente> |
 | Nome mitológico | <nome escolhido na Rodada 0> |
 | Pronúncia | <pronúncia em pt-BR> |
 
@@ -28,6 +29,8 @@ que mede a ausência do pior caso). Ex.: "reduz tempo de análise de 2h para 15m
 - Conhecimentos de domínio:
 - Tarefas que executa (verbos):
 - Fora de escopo (o que NÃO faz):
+- **Metodologias / frameworks herdados** (especialistas históricos da área e suas obras/métodos —
+  base da herança de inteligência; fonte em `referencias/biblioteca/` ou web score ≥ 7):
 
 ## 5. Ferramentas e integrações
 | Ferramenta | Função no agente | Acesso (API/MCP/CLI) | Credencial |
@@ -48,6 +51,15 @@ que mede a ausência do pior caso). Ex.: "reduz tempo de análise de 2h para 15m
 - Proibições absolutas (cada uma vira um hook):
 - Limites de custo/uso:
 - Critérios de escalação para humano:
+
+**Se escopo = cliente (preencher; senão "n/a"):**
+- LGPD / PII: que dados pessoais trafegam, base de consentimento, o que nunca vai a log/memória.
+- Retenção e expurgo: prazo de guarda e como apaga.
+- Isolamento: dados do cliente segregados de outros clientes e do interno da Kolden.
+- Handoff: responsável humano pela conta + SLA + protocolo de entrega.
+- Fronteira: nunca expor interno da Kolden; recusa cita política.
+- Segredos: credenciais em `/kolden/cliente-<x>/` (Infisical), nunca misturadas com as internas.
+- Aprovação de produção: dono da conta do cliente (além do Ronan).
 
 ## 9. Jornada
 - Cenário feliz (passo a passo):
@@ -70,6 +82,12 @@ cria um teste adversarial para ela. Liste todos os modos de falha relevantes.
 - Camada 4 — subagents:
 - Camada 5 — distribuição:
 - Mitigação por modo de falha (§10): <modo → componente que o mitiga>
+- **Referência histórica herdada (por camada — Fase 5.6):**
+  | Camada/entidade | Especialista ou metodologia | Frameworks herdados | Fonte (local/web + score) |
+  |---|---|---|---|
+  | orquestrador | | | |
+  | especialista <id> | | | |
+  | habilidade <nome> | | | |
 
 ## 12. Histórico de versões
 | Versão | Data | Mudança |

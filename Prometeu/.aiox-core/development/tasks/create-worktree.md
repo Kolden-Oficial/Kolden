@@ -1,33 +1,33 @@
 # create-worktree
 
 **Task ID:** create-worktree
-**Version:** 1.0
-**Created:** 2026-01-28 (Story 1.3)
-**Agent:** @devops (Gage)
+**Versão:** 1.0
+**Criado:** 2026-01-28 (Story 1.3)
+**Agente:** @devops (Gage)
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts) **[DEFAULT]**
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts) **[PADRÃO]**
 
-- Autonomous worktree creation
-- Minimal user interaction
-- **Best for:** Quick story setup
+- Criação autônoma de worktree
+- Interação mínima do usuário
+- **Melhor para:** Setup rápido de story
 
-### 2. Interactive Mode - Balanced, Educational (2-3 prompts)
+### 2. Modo Interativo - Equilibrado, Educativo (2-3 prompts)
 
-- Confirms story ID and options
-- Shows worktree path before creation
-- **Best for:** First-time users
+- Confirma o ID da story e as opções
+- Mostra o caminho do worktree antes da criação
+- **Melhor para:** Usuários de primeira viagem
 
-**Parameter:** `mode` (optional, default: `yolo`)
+**Parâmetro:** `mode` (opcional, padrão: `yolo`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: createWorktree()
@@ -40,13 +40,13 @@ inputs:
     tipo: string
     origem: User Input
     obrigatório: true
-    validação: Valid story identifier (e.g., 'STORY-42', '1.3', 'fix-auth')
+    validação: Identificador de story válido (ex.: 'STORY-42', '1.3', 'fix-auth')
 
   - campo: options
     tipo: object
     origem: User Input
     obrigatório: false
-    validação: Optional configuration overrides
+    validação: Sobrescritas de configuração opcionais
 
 outputs:
   - campo: worktree_info
@@ -62,25 +62,25 @@ outputs:
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 ```yaml
 pre-conditions:
-  - [ ] Current directory is a git repository
+  - [ ] O diretório atual é um repositório git
     tipo: pre-condition
     blocker: true
     validação: git rev-parse --is-inside-work-tree
     error_message: "Not a git repository. Initialize git first."
 
-  - [ ] WorktreeManager is available
+  - [ ] WorktreeManager está disponível
     tipo: pre-condition
     blocker: true
     validação: Script exists at .aiox-core/infrastructure/scripts/worktree-manager.js
     error_message: "WorktreeManager not found. Ensure AIOX is properly installed."
 
-  - [ ] Max worktrees limit not reached
+  - [ ] Limite máximo de worktrees não atingido
     tipo: pre-condition
     blocker: true
     validação: Current worktrees < maxWorktrees (default: 10)
@@ -89,19 +89,19 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 ```yaml
 post-conditions:
-  - [ ] Worktree directory exists
+  - [ ] O diretório do worktree existe
     tipo: post-condition
     blocker: true
     validação: Directory exists at .aiox/worktrees/{storyId}
     error_message: "Worktree directory was not created."
 
-  - [ ] Branch exists
+  - [ ] O branch existe
     tipo: post-condition
     blocker: true
     validação: Branch auto-claude/{storyId} exists
@@ -110,80 +110,80 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
 ```yaml
 acceptance-criteria:
-  - [ ] Worktree created with isolated git state
+  - [ ] Worktree criado com estado git isolado
     tipo: acceptance-criterion
     blocker: true
 
-  - [ ] Branch follows naming convention auto-claude/{storyId}
+  - [ ] O branch segue a convenção de nomenclatura auto-claude/{storyId}
     tipo: acceptance-criterion
     blocker: true
 
-  - [ ] Worktree appears in list
+  - [ ] O worktree aparece na lista
     tipo: acceptance-criterion
     blocker: true
 ```
 
 ---
 
-## Tools
+## Ferramentas
 
-**External resources used by this task:**
+**Recursos externos usados por esta task:**
 
-- **Tool:** WorktreeManager
-  - **Purpose:** Git worktree operations
-  - **Source:** .aiox-core/infrastructure/scripts/worktree-manager.js
+- **Ferramenta:** WorktreeManager
+  - **Propósito:** Operações de git worktree
+  - **Origem:** .aiox-core/infrastructure/scripts/worktree-manager.js
 
-- **Tool:** git
-  - **Purpose:** Version control operations
-  - **Source:** System git installation
-
----
-
-## Description
-
-Creates an isolated Git worktree for developing a story in parallel. Each worktree has its own working directory and branch, enabling multiple stories to be worked on simultaneously without conflicts.
-
-**Use cases:**
-
-- Start working on a new story in isolation
-- Enable Auto-Claude to develop stories autonomously
-- Run parallel development tracks
+- **Ferramenta:** git
+  - **Propósito:** Operações de controle de versão
+  - **Origem:** Instalação git do sistema
 
 ---
 
-## Inputs
+## Descrição
 
-| Parameter  | Type   | Required | Default | Description                                |
+Cria um worktree Git isolado para desenvolver uma story em paralelo. Cada worktree tem seu próprio diretório de trabalho e branch, permitindo que várias stories sejam trabalhadas simultaneamente sem conflitos.
+
+**Casos de uso:**
+
+- Começar a trabalhar em uma nova story de forma isolada
+- Habilitar o Auto-Claude a desenvolver stories de forma autônoma
+- Rodar trilhas de desenvolvimento paralelas
+
+---
+
+## Entradas
+
+| Parâmetro  | Tipo   | Obrigatório | Padrão | Descrição                                |
 | ---------- | ------ | -------- | ------- | ------------------------------------------ |
-| `story_id` | string | Yes      | -       | Story identifier (e.g., 'STORY-42', '1.3') |
+| `story_id` | string | Sim      | -       | Identificador de story (ex.: 'STORY-42', '1.3') |
 
 ---
 
-## Elicitation
+## Elicitação
 
 ```yaml
 elicit: false
 ```
 
-This task runs autonomously. If story_id is not provided, prompt once.
+Esta task roda de forma autônoma. Se story_id não for fornecido, solicitar uma vez.
 
 ---
 
-## Steps
+## Passos
 
-### Step 1: Validate Git Repository
+### Passo 1: Validar o Repositório Git
 
-**Action:** Verify current directory is a git repository
+**Ação:** Verificar se o diretório atual é um repositório git
 
 ```bash
 git rev-parse --is-inside-work-tree 2>/dev/null
 ```
 
-**Exit Condition:** If not a git repo:
+**Condição de Saída:** Se não for um repo git:
 
 ```
 ❌ Not a git repository.
@@ -192,17 +192,17 @@ git rev-parse --is-inside-work-tree 2>/dev/null
 
 ---
 
-### Step 2: Parse Story ID
+### Passo 2: Analisar o ID da Story
 
-**Action:** Extract and validate story ID from input
+**Ação:** Extrair e validar o ID da story a partir da entrada
 
-**Validation:**
+**Validação:**
 
-- Must be non-empty string
-- Can contain alphanumeric, hyphens, dots, underscores
-- Examples: `STORY-42`, `1.3`, `fix-auth-bug`
+- Deve ser uma string não vazia
+- Pode conter alfanuméricos, hífens, pontos, underscores
+- Exemplos: `STORY-42`, `1.3`, `fix-auth-bug`
 
-**If missing, prompt:**
+**Se ausente, solicitar:**
 
 ```
 📝 Enter story ID for the worktree:
@@ -211,9 +211,9 @@ git rev-parse --is-inside-work-tree 2>/dev/null
 
 ---
 
-### Step 3: Check Existing Worktree
+### Passo 3: Verificar Worktree Existente
 
-**Action:** Verify worktree doesn't already exist
+**Ação:** Verificar se o worktree ainda não existe
 
 ```javascript
 const WorktreeManager = require('./.aiox-core/infrastructure/scripts/worktree-manager.js');
@@ -221,7 +221,7 @@ const manager = new WorktreeManager();
 const exists = await manager.exists(storyId);
 ```
 
-**If exists:**
+**Se existir:**
 
 ```
 ⚠️  Worktree for '{storyId}' already exists.
@@ -233,9 +233,9 @@ const exists = await manager.exists(storyId);
 
 ---
 
-### Step 4: Check Worktree Limit
+### Passo 4: Verificar o Limite de Worktrees
 
-**Action:** Ensure we haven't reached max worktrees
+**Ação:** Garantir que não atingimos o máximo de worktrees
 
 ```javascript
 const count = await manager.getCount();
@@ -244,7 +244,7 @@ if (count.total >= manager.maxWorktrees) {
 }
 ```
 
-**If limit reached:**
+**Se o limite for atingido:**
 
 ```
 ❌ Maximum worktrees limit (10) reached.
@@ -258,24 +258,24 @@ if (count.total >= manager.maxWorktrees) {
 
 ---
 
-### Step 5: Create Worktree
+### Passo 5: Criar o Worktree
 
-**Action:** Create the worktree using WorktreeManager
+**Ação:** Criar o worktree usando o WorktreeManager
 
 ```javascript
 const worktreeInfo = await manager.create(storyId);
 ```
 
-**Creates:**
+**Cria:**
 
-- Directory: `.aiox/worktrees/{storyId}/`
+- Diretório: `.aiox/worktrees/{storyId}/`
 - Branch: `auto-claude/{storyId}`
 
 ---
 
-### Step 6: Display Success
+### Passo 6: Exibir Sucesso
 
-**Action:** Show creation confirmation
+**Ação:** Mostrar a confirmação de criação
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
@@ -296,9 +296,9 @@ Next Steps:
 
 ---
 
-## Outputs
+## Saídas
 
-### Return Value
+### Valor de Retorno
 
 ```typescript
 interface WorktreeInfo {
@@ -311,74 +311,74 @@ interface WorktreeInfo {
 }
 ```
 
-### File System
+### Sistema de Arquivos
 
-- `.aiox/worktrees/{storyId}/` - Isolated worktree directory
-
----
-
-## Validation
-
-- [ ] Worktree directory exists and is accessible
-- [ ] Git branch `auto-claude/{storyId}` exists
-- [ ] Worktree appears in `git worktree list`
-- [ ] Worktree is clean (no uncommitted changes)
+- `.aiox/worktrees/{storyId}/` - Diretório isolado do worktree
 
 ---
 
-## Error Handling
+## Validação
 
-### Not a Git Repository
+- [ ] O diretório do worktree existe e está acessível
+- [ ] O branch git `auto-claude/{storyId}` existe
+- [ ] O worktree aparece em `git worktree list`
+- [ ] O worktree está limpo (sem mudanças não commitadas)
 
-**Error:**
+---
+
+## Tratamento de Erros
+
+### Não é um Repositório Git
+
+**Erro:**
 
 ```
 ❌ Not a git repository.
 ```
 
-**Resolution:** Run `git init` first.
+**Resolução:** Rodar `git init` primeiro.
 
-### Worktree Already Exists
+### Worktree Já Existe
 
-**Error:**
+**Erro:**
 
 ```
 ⚠️  Worktree for '{storyId}' already exists.
 ```
 
-**Resolution:** Use existing worktree or remove it first.
+**Resolução:** Usar o worktree existente ou removê-lo primeiro.
 
-### Max Worktrees Reached
+### Máximo de Worktrees Atingido
 
-**Error:**
+**Erro:**
 
 ```
 ❌ Maximum worktrees limit (10) reached.
 ```
 
-**Resolution:** Run `*cleanup-worktrees` or `*remove-worktree`.
+**Resolução:** Rodar `*cleanup-worktrees` ou `*remove-worktree`.
 
-### Git Worktree Command Failed
+### Comando Git Worktree Falhou
 
-**Error:**
+**Erro:**
 
 ```
 ❌ Failed to create worktree: {error.message}
 ```
 
-**Resolution:** Check git status and ensure no conflicts.
+**Resolução:** Verificar o status do git e garantir que não há conflitos.
 
 ---
 
 ## Rollback
 
-To remove a created worktree:
+Para remover um worktree criado:
 
 ```bash
 *remove-worktree {storyId}
 ```
 
-Or manually:
+Ou manualmente:
 
 ```bash
 git worktree remove .aiox/worktrees/{storyId}
@@ -387,33 +387,33 @@ git branch -d auto-claude/{storyId}
 
 ---
 
-## Performance Notes
+## Notas de Performance
 
-- **Creation time:** ~500ms-2s (depends on repo size)
-- **Disk usage:** Same as shallow clone (hardlinks for objects)
-- **Branch overhead:** Minimal (just ref pointer)
+- **Tempo de criação:** ~500ms-2s (depende do tamanho do repo)
+- **Uso de disco:** Igual a um shallow clone (hardlinks para objetos)
+- **Overhead de branch:** Mínimo (apenas o ponteiro de ref)
 
 ---
 
-## Dependencies
+## Dependências
 
 ### Scripts
 
-- `.aiox-core/infrastructure/scripts/worktree-manager.js` - Core manager
+- `.aiox-core/infrastructure/scripts/worktree-manager.js` - Gerenciador principal
 
-### NPM Packages
+### Pacotes NPM
 
-- `execa` - Git command execution
-- `chalk` - Terminal colors
+- `execa` - Execução de comandos git
+- `chalk` - Cores no terminal
 
-### Git Commands Used
+### Comandos Git Usados
 
-- `git worktree add` - Create worktree
-- `git branch` - Create/manage branches
+- `git worktree add` - Criar worktree
+- `git branch` - Criar/gerenciar branches
 
 ---
 
-## Related
+## Relacionados
 
 - **Story:** 1.3 - CLI Commands for Worktree Management
 - **Script:** `.aiox-core/infrastructure/scripts/worktree-manager.js`
@@ -421,9 +421,9 @@ git branch -d auto-claude/{storyId}
 
 ---
 
-## Command Registration
+## Registro de Comando
 
-This task is exposed as CLI command `*create-worktree` in @devops agent:
+Esta task é exposta como o comando CLI `*create-worktree` no agente @devops:
 
 ```yaml
 commands:
@@ -432,6 +432,6 @@ commands:
 
 ---
 
-**Status:** ✅ Production Ready
-**Tested On:** Windows, Linux, macOS
-**Git Requirement:** git >= 2.5 (worktree support)
+**Status:** ✅ Pronto para Produção
+**Testado Em:** Windows, Linux, macOS
+**Requisito Git:** git >= 2.5 (suporte a worktree)

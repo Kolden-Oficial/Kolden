@@ -75,9 +75,9 @@ atomic_layer: Strategy
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -93,9 +93,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
 
 **Checklist:**
 
@@ -111,9 +111,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de aprovação/reprovação para a conclusão da task
 
 **Checklist:**
 
@@ -129,57 +129,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** neo4j-driver
-  - **Purpose:** Neo4j database connection and query execution
-  - **Source:** npm: neo4j-driver
+- **Ferramenta:** neo4j-driver
+  - **Propósito:** Conexão com banco de dados Neo4j e execução de queries
+  - **Origem:** npm: neo4j-driver
 
-- **Tool:** query-validator
-  - **Purpose:** Cypher query syntax validation
-  - **Source:** .aiox-core/utils/db-query-validator.js
+- **Ferramenta:** query-validator
+  - **Propósito:** Validação de sintaxe de query Cypher
+  - **Origem:** .aiox-core/utils/db-query-validator.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** db-query.js
-  - **Purpose:** Execute Neo4j queries with error handling
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/db-query.js
+  - **Propósito:** Executar queries Neo4j com tratamento de erros
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/db-query.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Connection Failed
-   - **Cause:** Unable to connect to Neo4j database
-   - **Resolution:** Check connection string, credentials, network
-   - **Recovery:** Retry with exponential backoff (max 3 attempts)
+1. **Erro:** Connection Failed
+   - **Causa:** Não foi possível conectar ao banco de dados Neo4j
+   - **Resolução:** Verifique a connection string, credenciais, rede
+   - **Recuperação:** Repetir com backoff exponencial (máx. 3 tentativas)
 
-2. **Error:** Query Syntax Error
-   - **Cause:** Invalid Cypher query syntax
-   - **Resolution:** Validate query syntax before execution
-   - **Recovery:** Return detailed syntax error, suggest fix
+2. **Erro:** Query Syntax Error
+   - **Causa:** Sintaxe de query Cypher inválida
+   - **Resolução:** Validar a sintaxe da query antes da execução
+   - **Recuperação:** Retornar erro de sintaxe detalhado, sugerir correção
 
-3. **Error:** Transaction Rollback
-   - **Cause:** Query violates constraints or timeout
-   - **Resolution:** Review query logic and constraints
-   - **Recovery:** Automatic rollback, preserve data integrity
+3. **Erro:** Transaction Rollback
+   - **Causa:** A query viola constraints ou atinge timeout
+   - **Resolução:** Revisar a lógica e as constraints da query
+   - **Recuperação:** Rollback automático, preservar a integridade dos dados
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-20 min (estimated)
@@ -187,8 +187,8 @@ cost_estimated: $0.003-0.015
 token_usage: ~2,000-8,000 tokens
 ```
 
-**Optimization Notes:**
-- Iterative analysis with depth limits; cache intermediate results; batch similar operations
+**Notas de Otimização:**
+- Análise iterativa com limites de profundidade; cache de resultados intermediários; agrupar operações similares em lote
 
 ---
 
@@ -208,9 +208,9 @@ updated_at: 2025-11-17
 ---
 
 
-## Process
+## Processo
 
-### Run Comprehensive RLS Audit
+### Rodar a Auditoria Abrangente de RLS
 
 ```bash
 psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 <<'SQL'
@@ -276,35 +276,35 @@ SQL
 
 ---
 
-## Output Interpretation
+## Interpretação do Output
 
-### RLS Status
+### Status do RLS
 
-**✓ ENABLED** - Table has RLS active (good)  
-**❌ DISABLED** - Table has no RLS (security risk)
+**✓ ENABLED** - A tabela tem RLS ativo (bom)  
+**❌ DISABLED** - A tabela não tem RLS (risco de segurança)
 
-### Policy Coverage
+### Cobertura de Policies
 
-**Good coverage:**
-- 1 policy with `FOR ALL` (KISS approach), OR
-- 4 policies covering SELECT, INSERT, UPDATE, DELETE (granular)
+**Boa cobertura:**
+- 1 policy com `FOR ALL` (abordagem KISS), OU
+- 4 policies cobrindo SELECT, INSERT, UPDATE, DELETE (granular)
 
-**Incomplete coverage:**
-- Enabled RLS but 0 policies = nobody can access
-- 1-3 policies (granular) = some operations not covered
+**Cobertura incompleta:**
+- RLS habilitado mas 0 policies = ninguém consegue acessar
+- 1-3 policies (granular) = algumas operações não cobertas
 
-**No coverage:**
-- RLS disabled = full access without restrictions
+**Sem cobertura:**
+- RLS desabilitado = acesso total sem restrições
 
 ---
 
-## Common Issues & Fixes
+## Problemas Comuns e Correções
 
-### Issue: Table has RLS but no policies
+### Problema: A tabela tem RLS mas não tem policies
 
-**Problem**: RLS enabled but no policies defined  
-**Impact**: Table is inaccessible to all users  
-**Fix**: Add policies or disable RLS
+**Problema**: RLS habilitado mas nenhuma policy definida  
+**Impacto**: A tabela fica inacessível para todos os usuários  
+**Correção**: Adicione policies ou desabilite o RLS
 
 ```sql
 -- Add KISS policy
@@ -317,31 +317,31 @@ USING (auth.uid() = user_id)
 WITH CHECK (auth.uid() = user_id);
 ```
 
-Or use: `*policy-apply table_name kiss`
+Ou use: `*policy-apply table_name kiss`
 
-### Issue: Table has no RLS
+### Problema: A tabela não tem RLS
 
-**Problem**: Table accessible without restrictions  
-**Impact**: Security vulnerability, data exposure  
-**Fix**: Enable RLS and add policies
+**Problema**: Tabela acessível sem restrições  
+**Impacto**: Vulnerabilidade de segurança, exposição de dados  
+**Correção**: Habilite o RLS e adicione policies
 
 ```sql
 ALTER TABLE table_name ENABLE ROW LEVEL SECURITY;
 -- Then add policies
 ```
 
-### Issue: Incomplete policy coverage (granular)
+### Problema: Cobertura de policy incompleta (granular)
 
-**Problem**: RLS enabled with 1-3 policies (not covering all operations)  
-**Impact**: Some operations may be blocked unexpectedly  
-**Fix**: Either add missing policies or switch to KISS approach
+**Problema**: RLS habilitado com 1-3 policies (sem cobrir todas as operações)  
+**Impacto**: Algumas operações podem ser bloqueadas inesperadamente  
+**Correção**: Adicione as policies faltantes ou mude para a abordagem KISS
 
 ---
 
-## Recommended Actions
+## Ações Recomendadas
 
-### For Public Data
-Tables that should be publicly readable:
+### Para Dados Públicos
+Tabelas que deveriam ser legíveis publicamente:
 
 ```sql
 -- Public read, authenticated write
@@ -356,15 +356,15 @@ TO authenticated
 WITH CHECK (auth.uid() = user_id);
 ```
 
-### For User-Owned Data
-Use KISS policy:
+### Para Dados de Propriedade do Usuário
+Use a policy KISS:
 
 ```bash
 *policy-apply table_name kiss
 ```
 
-### For Multi-Tenant Data
-Organization-scoped access:
+### Para Dados Multi-Tenant
+Acesso com escopo de organização:
 
 ```sql
 CREATE POLICY "org_isolation"
@@ -376,9 +376,9 @@ WITH CHECK (org_id = (auth.jwt() ->> 'org_id')::uuid);
 
 ---
 
-## Testing RLS Policies
+## Testando Policies de RLS
 
-After fixing issues, test with:
+Após corrigir os problemas, teste com:
 
 ```bash
 *impersonate {user_id}
@@ -387,25 +387,25 @@ After fixing issues, test with:
 
 ---
 
-## Best Practices
+## Boas Práticas
 
-✅ **Enable RLS on all tables with sensitive data**  
-✅ **Use KISS policies for simple owner-based access**  
-✅ **Document why RLS is disabled if intentional**  
-✅ **Test policies with real user contexts**  
-✅ **Index columns used in RLS policies**  
-✅ **Run this audit after every migration**
+✅ **Habilite o RLS em todas as tabelas com dados sensíveis**  
+✅ **Use policies KISS para acesso simples baseado em proprietário**  
+✅ **Documente por que o RLS está desabilitado, se for intencional**  
+✅ **Teste as policies com contextos de usuário reais**  
+✅ **Indexe as colunas usadas nas policies de RLS**  
+✅ **Rode esta auditoria após cada migration**
 
-❌ **Don't enable RLS without policies**  
-❌ **Don't use service role to bypass RLS in app code**  
-❌ **Don't forget to test negative cases**
+❌ **Não habilite o RLS sem policies**  
+❌ **Não use a service role para burlar o RLS no código da aplicação**  
+❌ **Não esqueça de testar os casos negativos**
 
 ---
 
-## Integration with Workflow
+## Integração com o Workflow
 
-Run RLS audit:
-1. After migrations: `*smoke-test` → `*rls-audit`
-2. Before production deploy: `*rls-audit`
-3. Regular security reviews: `*rls-audit`
-4. When adding new tables: `*rls-audit`
+Rode a auditoria de RLS:
+1. Após migrations: `*smoke-test` → `*rls-audit`
+2. Antes do deploy em produção: `*rls-audit`
+3. Revisões de segurança regulares: `*rls-audit`
+4. Ao adicionar novas tabelas: `*rls-audit`

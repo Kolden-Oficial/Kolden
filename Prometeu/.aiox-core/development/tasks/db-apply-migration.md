@@ -1,35 +1,35 @@
-# Task: Apply Migration (with snapshot + advisory lock)
+# Task: Aplicar Migration (com snapshot + advisory lock)
 
-**Purpose**: Safely apply a migration with pre/post snapshots and exclusive lock
+**Propósito**: Aplicar uma migration com segurança, com snapshots pré/pós e lock exclusivo
 
 **Elicit**: true
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro em log
+- Interação mínima do usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Antecipado Abrangente
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com ambiguidade zero
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: dbApplyMigration()
@@ -42,19 +42,19 @@ atomic_layer: Organism
   tipo: string
   origem: User Input
   obrigatório: true
-  validação: Valid SQL query
+  validação: Query SQL válida
 
 - campo: params
   tipo: object
   origem: User Input
   obrigatório: false
-  validação: Query parameters
+  validação: Parâmetros da query
 
 - campo: connection
   tipo: object
   origem: config
   obrigatório: true
-  validação: Valid PostgreSQL connection via Supabase
+  validação: Conexão PostgreSQL válida via Supabase
 
 **Saída:**
 - campo: query_result
@@ -75,15 +75,15 @@ atomic_layer: Organism
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Database connection established; query syntax valid
+  - [ ] Conexão com o banco de dados estabelecida; sintaxe da query válida
     tipo: pre-condition
     blocker: true
     validação: |
@@ -93,15 +93,15 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Query executed; results returned; transaction committed
+  - [ ] Query executada; resultados retornados; transação commitada
     tipo: post-condition
     blocker: true
     validação: |
@@ -111,15 +111,15 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Data persisted correctly; constraints respected; no orphaned data
+  - [ ] Dados persistidos corretamente; constraints respeitadas; sem dados órfãos
     tipo: acceptance-criterion
     blocker: true
     validação: |
@@ -129,70 +129,70 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** neo4j-driver
-  - **Purpose:** Neo4j database connection and query execution
-  - **Source:** npm: neo4j-driver
+- **Ferramenta:** neo4j-driver
+  - **Propósito:** Conexão e execução de queries no banco Neo4j
+  - **Origem:** npm: neo4j-driver
 
-- **Tool:** query-validator
-  - **Purpose:** Cypher query syntax validation
-  - **Source:** .aiox-core/utils/db-query-validator.js
+- **Ferramenta:** query-validator
+  - **Propósito:** Validação de sintaxe de query Cypher
+  - **Origem:** .aiox-core/utils/db-query-validator.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** db-query.js
-  - **Purpose:** Execute Neo4j queries with error handling
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/db-query.js
+  - **Propósito:** Executar queries Neo4j com tratamento de erros
+  - **Linguagem:** JavaScript
+  - **Local:** .aiox-core/scripts/db-query.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Connection Failed
-   - **Cause:** Unable to connect to Neo4j database
-   - **Resolution:** Check connection string, credentials, network
-   - **Recovery:** Retry with exponential backoff (max 3 attempts)
+1. **Erro:** Falha de Conexão
+   - **Causa:** Não foi possível conectar ao banco Neo4j
+   - **Resolução:** Verificar a string de conexão, credenciais, rede
+   - **Recuperação:** Tentar novamente com backoff exponencial (máx. 3 tentativas)
 
-2. **Error:** Query Syntax Error
-   - **Cause:** Invalid Cypher query syntax
-   - **Resolution:** Validate query syntax before execution
-   - **Recovery:** Return detailed syntax error, suggest fix
+2. **Erro:** Erro de Sintaxe da Query
+   - **Causa:** Sintaxe de query Cypher inválida
+   - **Resolução:** Validar a sintaxe da query antes da execução
+   - **Recuperação:** Retornar erro de sintaxe detalhado, sugerir correção
 
-3. **Error:** Transaction Rollback
-   - **Cause:** Query violates constraints or timeout
-   - **Resolution:** Review query logic and constraints
-   - **Recovery:** Automatic rollback, preserve data integrity
+3. **Erro:** Rollback de Transação
+   - **Causa:** A query viola constraints ou atinge timeout
+   - **Resolução:** Revisar a lógica e as constraints da query
+   - **Recuperação:** Rollback automático, preservar a integridade dos dados
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
-duration_expected: 5-15 min (estimated)
+duration_expected: 5-15 min (estimado)
 cost_estimated: $0.003-0.010
 token_usage: ~3,000-10,000 tokens
 ```
 
-**Optimization Notes:**
-- Break into smaller workflows; implement checkpointing; use async processing where possible
+**Notas de Otimização:**
+- Dividir em workflows menores; implementar checkpointing; usar processamento assíncrono quando possível
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -208,27 +208,27 @@ updated_at: 2025-11-17
 ---
 
 
-## Inputs
+## Entradas
 
-- `path` (string): Path to SQL migration file
+- `path` (string): Caminho do arquivo de migration SQL
 
 ---
 
-## Process
+## Processo
 
-### 1. Pre-Flight Checks
+### 1. Verificações Pre-Flight
 
-Ask user to confirm:
-- Migration file: `{path}`
-- Database: `$SUPABASE_DB_URL` (redacted)
-- Dry-run completed? (yes/no)
-- Backup/snapshot taken? (will be done automatically)
+Pedir ao usuário para confirmar:
+- Arquivo de migration: `{path}`
+- Banco de dados: `$SUPABASE_DB_URL` (omitido)
+- Dry-run concluído? (yes/no)
+- Backup/snapshot feito? (será feito automaticamente)
 
-**CRITICAL**: If user says dry-run not done, stop and recommend: `*dry-run {path}`
+**CRÍTICO**: Se o usuário disser que o dry-run não foi feito, parar e recomendar: `*dry-run {path}`
 
-### 2. Acquire Advisory Lock
+### 2. Adquirir o Advisory Lock
 
-Ensure no concurrent migrations:
+Garantir que não há migrations concorrentes:
 
 ```bash
 psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 -c \
@@ -238,9 +238,9 @@ psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 -c \
 echo "✓ Migration lock acquired"
 ```
 
-### 3. Pre-Migration Snapshot
+### 3. Snapshot Pré-Migration
 
-Create schema-only snapshot before changes:
+Criar um snapshot apenas do schema antes das mudanças:
 
 ```bash
 TS=$(date +%Y%m%d%H%M%S)
@@ -253,9 +253,9 @@ echo "✓ Pre-migration snapshot: supabase/snapshots/${TS}_before.sql"
 echo $TS > /tmp/dbsage_migration_ts
 ```
 
-### 4. Apply Migration
+### 4. Aplicar a Migration
 
-Run migration in transaction:
+Rodar a migration em transação:
 
 ```bash
 echo "Applying migration..."
@@ -270,9 +270,9 @@ else
 fi
 ```
 
-### 5. Post-Migration Snapshot
+### 5. Snapshot Pós-Migration
 
-Create snapshot after changes:
+Criar um snapshot após as mudanças:
 
 ```bash
 TS=$(cat /tmp/dbsage_migration_ts)
@@ -283,7 +283,7 @@ pg_dump "$SUPABASE_DB_URL" --schema-only --clean --if-exists \
 echo "✓ Post-migration snapshot: supabase/snapshots/${TS}_after.sql"
 ```
 
-### 6. Generate Diff (Optional)
+### 6. Gerar Diff (Opcional)
 
 ```bash
 diff -u "supabase/snapshots/${TS}_before.sql" \
@@ -293,7 +293,7 @@ diff -u "supabase/snapshots/${TS}_before.sql" \
 echo "✓ Diff saved: supabase/snapshots/${TS}_diff.patch"
 ```
 
-### 7. Release Advisory Lock
+### 7. Liberar o Advisory Lock
 
 ```bash
 psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 -c \
@@ -302,18 +302,18 @@ psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 -c \
 echo "✓ Migration lock released"
 ```
 
-### 8. Post-Migration Actions
+### 8. Ações Pós-Migration
 
-Present options to user:
+Apresentar opções ao usuário:
 
-**1. Run smoke tests** - `*smoke-test`  
-**2. Check RLS coverage** - `*rls-audit`  
-**3. Verify query performance** - `*analyze-hotpaths`  
-**4. Done for now**
+**1. Rodar smoke tests** - `*smoke-test`  
+**2. Verificar cobertura de RLS** - `*rls-audit`  
+**3. Verificar a performance das queries** - `*analyze-hotpaths`  
+**4. Concluído por enquanto**
 
 ---
 
-## Success Output
+## Saída de Sucesso
 
 ```
 ✅ Migration Applied Successfully
@@ -333,28 +333,28 @@ Next steps:
 
 ---
 
-## Rollback Instructions
+## Instruções de Rollback
 
-If migration needs to be undone:
+Se a migration precisar ser desfeita:
 
 ```bash
 *rollback supabase/snapshots/{TS}_before.sql
 ```
 
-Or create manual rollback script in `supabase/rollback/{TS}_rollback.sql`
+Ou criar um script manual de rollback em `supabase/rollback/{TS}_rollback.sql`
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-### Migration Fails Mid-Execution
+### A Migration Falha no Meio da Execução
 
-1. PostgreSQL transaction is rolled back automatically
-2. Advisory lock released on disconnect
-3. Pre-migration snapshot still available
-4. Database unchanged
+1. A transação do PostgreSQL é revertida automaticamente
+2. O advisory lock é liberado na desconexão
+3. O snapshot pré-migration continua disponível
+4. O banco de dados permanece inalterado
 
-### Lock Already Held
+### Lock Já Adquirido
 
 ```
 ❌ Another migration is running
@@ -363,19 +363,19 @@ Wait for completion or check for stuck locks:
 SELECT * FROM pg_locks WHERE locktype = 'advisory';
 ```
 
-### Snapshot Creation Fails
+### Falha na Criação do Snapshot
 
-- Check disk space
-- Verify pg_dump version compatibility
-- Check database permissions
+- Verificar o espaço em disco
+- Verificar a compatibilidade da versão do pg_dump
+- Verificar as permissões do banco de dados
 
 ---
 
-## Safety Features
+## Recursos de Segurança
 
-✅ Advisory lock prevents concurrent migrations  
-✅ Pre/post snapshots for comparison  
-✅ ON_ERROR_STOP prevents partial application  
-✅ Transaction-wrapped execution  
-✅ Automatic diff generation  
-✅ Rollback instructions provided
+✅ O advisory lock previne migrations concorrentes  
+✅ Snapshots pré/pós para comparação  
+✅ ON_ERROR_STOP previne aplicação parcial  
+✅ Execução envolvida em transação  
+✅ Geração automática de diff  
+✅ Instruções de rollback fornecidas

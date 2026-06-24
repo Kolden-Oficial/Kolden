@@ -1,6 +1,6 @@
-# Task: Review External Contributor PR
+# Task: Revisar PR de Contribuidor Externo
 
-## Metadata
+## Metadados
 
 ```yaml
 id: review-contributor-pr
@@ -11,23 +11,23 @@ priority: high
 story: NOG-17
 ```
 
-## Description
+## Descrição
 
-Formal security review process for external contributor PRs before merging. This task ensures PRs from fork contributors are reviewed for security risks not present in internal team PRs.
+Processo formal de revisão de segurança para PRs de contribuidores externos antes do merge. Esta task garante que PRs de contribuidores em forks sejam revisados quanto a riscos de segurança não presentes em PRs da equipe interna.
 
-## Pre-Conditions
+## Pré-Condições
 
-- PR is from an external contributor (fork-based)
-- PR has passed automated CI checks (or CI was skipped due to fork restrictions)
-- CodeRabbit review completed (check for hidden content in PR description)
+- O PR é de um contribuidor externo (baseado em fork)
+- O PR passou nos checks automatizados de CI (ou o CI foi pulado devido a restrições de fork)
+- Revisão do CodeRabbit concluída (verificar conteúdo oculto na descrição do PR)
 
-## Inputs
+## Entradas
 
-- `{pr_number}` - GitHub PR number to review
+- `{pr_number}` - Número do PR do GitHub a revisar
 
-## Execution
+## Execução
 
-### Step 1: Identify PR Scope
+### Passo 1: Identificar o Escopo do PR
 
 ```bash
 # Get PR details
@@ -41,49 +41,49 @@ gh pr view {pr_number} --json files,additions,deletions,author,body
 # Docs = docs/, *.md
 ```
 
-**Elicit:** "PR #{pr_number} classified as: {type}. Proceeding with {type} security checklist."
+**Elicit:** "PR #{pr_number} classificado como: {type}. Prosseguindo com o checklist de segurança de {type}."
 
-### Step 2: Security Checklist (by PR type)
+### Passo 2: Checklist de Segurança (por tipo de PR)
 
-#### For CI/Workflow PRs (.github/)
+#### Para PRs de CI/Workflow (.github/)
 
-- [ ] No `pull_request_target` with explicit checkout added
-- [ ] No new secrets references (`${{ secrets.* }}`)
-- [ ] No permission escalation (`permissions: write-all`, `contents: write` where unnecessary)
-- [ ] Action versions use known, trusted publishers
-- [ ] Action versions are SHA-pinned (not tag-based)
-- [ ] No `workflow_dispatch` with dangerous inputs
-- [ ] No new `env:` blocks exposing sensitive data
+- [ ] Nenhum `pull_request_target` com checkout explícito adicionado
+- [ ] Nenhuma nova referência a secrets (`${{ secrets.* }}`)
+- [ ] Nenhuma escalação de permissão (`permissions: write-all`, `contents: write` onde desnecessário)
+- [ ] Versões de actions usam publishers conhecidos e confiáveis
+- [ ] Versões de actions estão fixadas por SHA (não baseadas em tag)
+- [ ] Nenhum `workflow_dispatch` com inputs perigosos
+- [ ] Nenhum novo bloco `env:` expondo dados sensíveis
 
-#### For Test PRs (tests/)
+#### Para PRs de Teste (tests/)
 
-- [ ] No `require('https')`, `require('http')`, `require('net')`, `require('dns')` imports
-- [ ] No `fetch()`, `XMLHttpRequest`, or network calls
-- [ ] No `fs.readFileSync` outside test fixtures
-- [ ] No `process.env` access to sensitive variables
-- [ ] No `child_process` usage (`execSync`, `spawn`, etc.)
-- [ ] `require()` paths point to legitimate project modules only
-- [ ] No exfiltration patterns (base64 encoding + network call)
+- [ ] Nenhum import de `require('https')`, `require('http')`, `require('net')`, `require('dns')`
+- [ ] Nenhum `fetch()`, `XMLHttpRequest` ou chamada de rede
+- [ ] Nenhum `fs.readFileSync` fora dos fixtures de teste
+- [ ] Nenhum acesso `process.env` a variáveis sensíveis
+- [ ] Nenhum uso de `child_process` (`execSync`, `spawn`, etc.)
+- [ ] Os caminhos de `require()` apontam apenas para módulos legítimos do projeto
+- [ ] Nenhum padrão de exfiltração (codificação base64 + chamada de rede)
 
-#### For Code PRs (packages/, .aiox-core/, bin/)
+#### Para PRs de Código (packages/, .aiox-core/, bin/)
 
-- [ ] No new dependencies added without justification
-- [ ] No changes to `package.json` scripts (`preinstall`, `postinstall`)
-- [ ] No `.env` file reads or credential handling changes
-- [ ] No `shell: true` in any exec/spawn calls
-- [ ] No string-based command construction (use array args)
-- [ ] CodeRabbit review completed (check for hidden content in PR description)
+- [ ] Nenhuma nova dependência adicionada sem justificativa
+- [ ] Nenhuma mudança nos scripts do `package.json` (`preinstall`, `postinstall`)
+- [ ] Nenhuma leitura de arquivo `.env` ou mudança no tratamento de credenciais
+- [ ] Nenhum `shell: true` em qualquer chamada exec/spawn
+- [ ] Nenhuma construção de comando baseada em string (use argumentos em array)
+- [ ] Revisão do CodeRabbit concluída (verificar conteúdo oculto na descrição do PR)
 
-#### For Config PRs (.gitmodules, *.config.*)
+#### Para PRs de Config (.gitmodules, *.config.*)
 
-- [ ] No URL changes to external/unknown repositories
-- [ ] No new submodule additions
-- [ ] Config values are expected and documented
-- [ ] No hooks modifications that could alter behavior
+- [ ] Nenhuma mudança de URL para repositórios externos/desconhecidos
+- [ ] Nenhuma adição de novo submódulo
+- [ ] Os valores de config são esperados e documentados
+- [ ] Nenhuma modificação de hooks que possa alterar o comportamento
 
-### Step 3: Automated Scan
+### Passo 3: Varredura Automatizada
 
-Run the appropriate grep command based on PR type:
+Execute o comando grep apropriado com base no tipo de PR:
 
 ```bash
 # For test PRs - check for suspicious patterns
@@ -99,23 +99,23 @@ gh pr diff {pr_number} -- '.github/' | grep -E "(permissions:|secrets\.|pull_req
 gh pr view {pr_number} --json body --jq '.body' | grep -iE "(<picture|<source|<img.*onerror|<!--.*ignore.*instruct)"
 ```
 
-**Elicit:** "Scan results: {summary}. {findings_count} suspicious patterns found."
+**Elicit:** "Resultados da varredura: {summary}. {findings_count} padrões suspeitos encontrados."
 
-### Step 4: Decision Matrix
+### Passo 4: Matriz de Decisão
 
-| PR Changes | Risk Level | Required Actions |
+| Mudanças no PR | Nível de Risco | Ações Necessárias |
 |-----------|-----------|-----------------|
-| Documentation only | LOW | Standard review |
-| Test files only | MEDIUM | Security scan + grep |
-| Source code | MEDIUM-HIGH | Security scan + careful review |
-| CI/Workflows | HIGH | Security scan + SHA audit + 2 approvals |
-| package.json | HIGH | Block until verified |
-| .gitmodules | MEDIUM | URL verification required |
-| Config files | MEDIUM | Value verification required |
+| Apenas documentação | LOW | Revisão padrão |
+| Apenas arquivos de teste | MEDIUM | Varredura de segurança + grep |
+| Código-fonte | MEDIUM-HIGH | Varredura de segurança + revisão cuidadosa |
+| CI/Workflows | HIGH | Varredura de segurança + auditoria de SHA + 2 aprovações |
+| package.json | HIGH | Bloquear até verificação |
+| .gitmodules | MEDIUM | Verificação de URL necessária |
+| Arquivos de config | MEDIUM | Verificação de valores necessária |
 
-### Step 5: Merge Decision
+### Passo 5: Decisão de Merge
 
-**Elicit:** Present checklist results and ask for confirmation:
+**Elicit:** Apresente os resultados do checklist e peça confirmação:
 
 ```
 ## Contributor PR Security Review Summary
@@ -137,16 +137,16 @@ gh pr view {pr_number} --json body --jq '.body' | grep -iE "(<picture|<source|<i
 Proceed with merge? (y/n)
 ```
 
-## Post-Conditions
+## Pós-Condições
 
-- PR reviewed with security checklist appropriate to its type
-- Automated scan completed with no unresolved findings
-- Decision logged (approve, request changes, or block)
-- If merged: enforce_admins temporarily disabled if needed, then re-enabled
+- PR revisado com o checklist de segurança apropriado ao seu tipo
+- Varredura automatizada concluída sem achados não resolvidos
+- Decisão registrada (aprovar, solicitar mudanças ou bloquear)
+- Se mergeado: enforce_admins temporariamente desabilitado se necessário, depois reabilitado
 
-## Notes
+## Notas
 
-- For PRs that modify `.github/workflows/`, require 2 maintainer approvals
-- For PRs from **trusted contributors** (e.g., @riaworks with prior merged security PRs), standard review may suffice for docs/test PRs
-- Always re-enable enforce_admins immediately after merge
-- Reference research: `docs/research/2026-02-21-ci-security-external-prs/`
+- Para PRs que modificam `.github/workflows/`, exija 2 aprovações de mantenedores
+- Para PRs de **contribuidores confiáveis** (ex.: @riaworks com PRs de segurança já mergeados anteriormente), a revisão padrão pode ser suficiente para PRs de docs/teste
+- Sempre reabilite o enforce_admins imediatamente após o merge
+- Pesquisa de referência: `docs/research/2026-02-21-ci-security-external-prs/`

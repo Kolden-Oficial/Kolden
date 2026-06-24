@@ -1,25 +1,25 @@
-# {{COMPONENTNAME}} Template
+# Template {{COMPONENTNAME}}
 
 > {{DESCRIPTION}}
 > Squad: {{SQUADNAME}}
-> Created: {{CREATEDAT}}
+> Criado: {{CREATEDAT}}
 {{#IF STORYID}}
 > Story: {{STORYID}}
 {{/IF}}
 
 ---
 
-## Template Variables
+## Variáveis do Template
 
-| Variable | Type | Required | Description |
+| Variável | Tipo | Obrigatório | Descrição |
 |----------|------|----------|-------------|
-| `{{VAR1}}` | string | Yes | Description of variable 1 |
-| `{{VAR2}}` | string | No | Description of variable 2 |
-| `{{VAR3}}` | date | No | Description of variable 3 |
+| `{{VAR1}}` | string | Sim | Descrição da variável 1 |
+| `{{VAR2}}` | string | Não | Descrição da variável 2 |
+| `{{VAR3}}` | date | Não | Descrição da variável 3 |
 
 ---
 
-## Usage
+## Uso
 
 ```javascript
 const { renderTemplate } = require('.aiox-core/infrastructure/scripts/template-engine');
@@ -33,45 +33,45 @@ const result = await renderTemplate('{{COMPONENTNAME}}.md', {
 
 ---
 
-## Template Content
+## Conteúdo do Template
 
 <!-- BEGIN TEMPLATE -->
 
 # {{VAR1}}
 
-> Created: {{VAR3}}
+> Criado: {{VAR3}}
 
-## Section 1
+## Seção 1
 
 {{VAR2}}
 
-### Subsection 1.1
+### Subseção 1.1
 
-Content here...
+Conteúdo aqui...
 
-### Subsection 1.2
+### Subseção 1.2
 
-Content here...
+Conteúdo aqui...
 
-## Section 2
+## Seção 2
 
-Additional content...
+Conteúdo adicional...
 
-## Section 3
+## Seção 3
 
-Final content...
+Conteúdo final...
 
 ---
 
-*Generated from {{COMPONENTNAME}} template*
+*Gerado a partir do template {{COMPONENTNAME}}*
 
 <!-- END TEMPLATE -->
 
 ---
 
-## Examples
+## Exemplos
 
-### Example 1: Basic Usage
+### Exemplo 1: Uso Básico
 
 ```javascript
 const result = await renderTemplate('{{COMPONENTNAME}}.md', {
@@ -81,7 +81,7 @@ const result = await renderTemplate('{{COMPONENTNAME}}.md', {
 });
 ```
 
-### Example 2: With Conditionals
+### Exemplo 2: Com Condicionais
 
 ```javascript
 const result = await renderTemplate('{{COMPONENTNAME}}.md', {
@@ -94,4 +94,4 @@ const result = await renderTemplate('{{COMPONENTNAME}}.md', {
 
 ---
 
-*Template created by squad-creator*
+*Template criado por squad-creator*

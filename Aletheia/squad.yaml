@@ -1,0 +1,134 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Aletheia
+# Domínio: Customer Discovery & Lean Validation (entrada do funil de criação)
+# Versão: 1.0.0
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: aletheia
+  display_name: "Aletheia — Discovery & Lean Validation"
+  version: "1.0.0"
+  domain: "Descoberta de Cliente & Validação Enxuta de Negócio"
+  description: |
+    Um squad que leva uma ideia crua de negócio até um MVP validado com evidência real de
+    mercado. Reúne os mestres da descoberta qualitativa (Steve Blank — Customer Development,
+    Rob Fitzpatrick — The Mom Test, Tony Ulwick — Jobs-to-Be-Done), da validação enxuta
+    (Eric Ries — Lean Startup, David Bland — Testing Business Ideas, Ash Maurya — Running Lean)
+    e do teste de demanda de mercado (Alberto Savoia — Pretotyping).
+
+    Aletheia é a deusa grega da verdade e do desvelamento: o squad existe para desvelar a dor
+    real do cliente por baixo das suposições do fundador, e impedir que se construa o que
+    ninguém quer. É a ENTRADA do funil de criação da Kolden — valida, depois faz handoff para
+    os squads de execução (Aglaia, Pluto, Harmonia, Caliope, Prometeu, Metis).
+  keywords: [descoberta, discovery, validacao, validation, entrevista, mom-test, jobs-to-be-done, jtbd, customer-development, lean-startup, mvp, experimento, hipotese, lean-canvas, pretotipagem, pretotyping, problema-solucao, product-market-fit, mercado, demanda, tam, sam, som]
+  entry_agent: aletheia-chief
+  created_at: "2026-06-20"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [aletheia-chief]
+    purpose: "Triagem, roteamento e síntese — conecta o estágio de validação certo (problema, solução, mercado) ao especialista certo. Nunca executa o trabalho especializado."
+  tier_1:
+    name: "Descoberta de Cliente"
+    agents: [steve-blank, rob-fitzpatrick, tony-ulwick]
+    purpose: "Customer Development, técnica de entrevista (The Mom Test) e Jobs-to-Be-Done — desvelar a dor real e a necessidade não atendida."
+  tier_2:
+    name: "Validação Enxuta"
+    agents: [eric-ries, david-bland, ash-maurya]
+    purpose: "Build-Measure-Learn e tipos de MVP, mapa de assunções e biblioteca de experimentos, Lean Canvas e problem-solution fit."
+  tier_3:
+    name: "Mercado & Demanda"
+    agents: [alberto-savoia]
+    purpose: "Pretotipagem, teste de demanda real (skin-in-the-game) e sizing pragmático antes de qualquer build."
+
+agents:
+  aletheia-chief:
+    file: agents/aletheia-chief.md
+    tier: 0
+    icon: "🔎"
+    focus: "Orquestração, triagem e roteamento entre descoberta, validação e mercado; síntese e gate de evidência"
+  steve-blank:
+    file: agents/steve-blank.md
+    tier: 1
+    icon: "🚪"
+    focus: "Customer Development, get out of the building, market types, earlyvangelists, pivot"
+  rob-fitzpatrick:
+    file: agents/rob-fitzpatrick.md
+    tier: 1
+    icon: "🎙️"
+    focus: "The Mom Test, roteiro de entrevista sem viés, commitment & advancement"
+  tony-ulwick:
+    file: agents/tony-ulwick.md
+    tier: 1
+    icon: "🎯"
+    focus: "Jobs-to-Be-Done, Outcome-Driven Innovation, opportunity score, segmentação por necessidades"
+  eric-ries:
+    file: agents/eric-ries.md
+    tier: 2
+    icon: "🔁"
+    focus: "Lean Startup, Build-Measure-Learn, tipos de MVP, innovation accounting, pivot vs persevere"
+  david-bland:
+    file: agents/david-bland.md
+    tier: 2
+    icon: "🧪"
+    focus: "Testing Business Ideas, assumptions mapping, test/learning cards, biblioteca de experimentos"
+  ash-maurya:
+    file: agents/ash-maurya.md
+    tier: 2
+    icon: "📋"
+    focus: "Running Lean, Lean Canvas, problem-solution fit, traction roadmap, riskiest assumptions"
+  alberto-savoia:
+    file: agents/alberto-savoia.md
+    tier: 3
+    icon: "🚦"
+    focus: "Pretotyping, teste de demanda, XYZ hypothesis, skin-in-the-game data, sizing pragmático"
+
+handoffs:
+  # Roteamento interno (orquestrador → especialistas)
+  aletheia-chief:
+    routes_to: [steve-blank, rob-fitzpatrick, tony-ulwick, eric-ries, david-bland, ash-maurya, alberto-savoia]
+  steve-blank:
+    escalates_to: [aletheia-chief]
+  rob-fitzpatrick:
+    escalates_to: [aletheia-chief]
+  tony-ulwick:
+    escalates_to: [aletheia-chief]
+  eric-ries:
+    escalates_to: [aletheia-chief]
+  david-bland:
+    escalates_to: [aletheia-chief]
+  ash-maurya:
+    escalates_to: [aletheia-chief]
+  alberto-savoia:
+    escalates_to: [aletheia-chief]
+
+# Handoffs externos: Aletheia valida, os squads de execução constroem.
+external_handoffs:
+  dor_e_icp_validados:
+    to: aglaia
+    artifact: "Síntese de descoberta + ICP/persona validados → posicionamento e personas; preenche sobre-a-empresa/mercado-e-posicionamento/"
+  proposta_de_valor_e_preco:
+    to: pluto
+    artifact: "UVP validada → oferta (hormozi-offers) e precificação (hormozi-pricing)"
+  prototipo_e_lp:
+    to: [harmonia, caliope]
+    artifact: "Tipo de MVP escolhido → UX/UI (Harmonia) e copy de landing page (Caliope)"
+  mvp_funcional:
+    to: prometeu
+    artifact: "Critérios de validação + escopo mínimo → build via geracao-de-prd"
+  metricas_de_validacao:
+    to: metis
+    artifact: "North Star e métrica de validação → instrumentação (sean-ellis, avinash-kaushik)"
+
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Veto inviolável do squad — vira reflexo PreToolUse (não só prompt).
+  veto:
+    no_build_sem_evidencia: "HALT em qualquer recomendação de 'construir' sem dor validada + hipótese falsificável + métrica de validação + critério de kill."
+
+settings:
+  activation:
+    prefix: "aletheia"
+    example: "@aletheia:rob-fitzpatrick"

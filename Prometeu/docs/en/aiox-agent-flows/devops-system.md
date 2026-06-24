@@ -1,26 +1,26 @@
-# @devops (Gage) - System Documentation
+# @devops (Gage) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/devops-system.md) | [ES](../../es/aiox-agent-flows/devops-system.md)
 
 ---
 
-## Summary
+## Resumo
 
-**@devops** (Gage) is the **Guardian** of the AIOX agent system. This agent is responsible for:
+O **@devops** (Gage) é o **Guardião** do sistema de agentes AIOX. Este agente é responsável por:
 
-- Managing CI/CD pipelines and deployments
-- Handling git operations (exclusive push authority)
-- Managing MCP infrastructure and integrations
-- Ensuring system reliability and security
-
----
-
-## Full Documentation
-
-For complete documentation including flowcharts, command mappings, integrations, and troubleshooting, please refer to the Portuguese version:
-
-**[View Full Documentation (PT)](../../aiox-agent-flows/devops-system.md)**
+- Gerenciar pipelines de CI/CD e deployments
+- Conduzir operações git (autoridade exclusiva de push)
+- Gerenciar a infraestrutura e as integrações MCP
+- Garantir a confiabilidade e a segurança do sistema
 
 ---
 
-*AIOX Agent Flows - @devops System v1.0*
+## Documentação Completa
+
+Para a documentação completa, incluindo fluxogramas, mapeamentos de comandos, integrações e troubleshooting, consulte a versão em português:
+
+**[Ver Documentação Completa (PT)](../../aiox-agent-flows/devops-system.md)**
+
+---
+
+*AIOX Agent Flows - Sistema @devops v1.0*

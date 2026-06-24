@@ -2,34 +2,34 @@
 
 **Task**: Investigate and Resolve GitHub Issue
 
-**Purpose**: End-to-end workflow for investigating, planning, implementing, testing, and closing a GitHub issue following project standards (Constitution, Story-Driven, Quality Gates).
+**Propósito**: Workflow ponta a ponta para investigar, planejar, implementar, testar e fechar uma issue do GitHub seguindo os padrões do projeto (Constitution, Story-Driven, Quality Gates).
 
-**When to use**: After selecting an issue from triage, via `@devops *resolve-issue {number}` or user request like "resolve issue #138".
+**Quando Usar**: Após selecionar uma issue na triagem, via `@devops *resolve-issue {number}` ou por solicitação do usuário como "resolver a issue #138".
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Investigate, fix, test, commit, push, close — minimal prompts
-- Decisions logged but not confirmed
-- **Best for:** Quick fixes (XS/S effort), well-defined bugs, chore tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Investigar, corrigir, testar, commitar, fazer push, fechar — prompts mínimos
+- Decisões registradas mas não confirmadas
+- **Melhor para:** Correções rápidas (esforço XS/S), bugs bem definidos, tarefas de chore
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Checkpoints at investigation, plan, implementation, and push
-- User confirms approach before major changes
-- **Best for:** Most issues, medium complexity
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints na investigação, plano, implementação e push
+- O usuário confirma a abordagem antes de mudanças importantes
+- **Melhor para:** A maioria das issues, complexidade média
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Full investigation + research + detailed plan BEFORE any code
-- User approves plan, then autonomous execution
-- **Best for:** Complex issues, multi-file changes, unknown root cause
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Investigação completa + pesquisa + plano detalhado ANTES de qualquer código
+- O usuário aprova o plano, depois execução autônoma
+- **Melhor para:** Issues complexas, mudanças em múltiplos arquivos, causa raiz desconhecida
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, default: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: resolveGithubIssue()
@@ -74,9 +74,9 @@ atomic_layer: Organism
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -113,56 +113,56 @@ pre-conditions:
 
 ---
 
-## Workflow Steps
+## Passos do Workflow
 
-### Phase 1: Investigate (understand the issue)
+### Fase 1: Investigar (entender a issue)
 
-**Goal:** Fully understand the problem before writing any code.
+**Objetivo:** Entender completamente o problema antes de escrever qualquer código.
 
 ```yaml
 steps:
   1_fetch_issue:
     command: gh issue view {issue_number} --json title,body,labels,comments,assignees
     output: issue_data
-    purpose: Get full issue details including comments with context
+    purpose: Obter os detalhes completos da issue, incluindo comentários com contexto
 
   2_analyze_issue:
-    action: Read issue body and comments carefully
+    action: Ler o corpo e os comentários da issue cuidadosamente
     extract:
-      - What is the reported problem?
-      - What is the expected behavior?
-      - What is the actual behavior?
-      - Are there reproduction steps?
-      - Are there error messages or logs?
-      - Which files/modules are likely affected?
+      - Qual é o problema reportado?
+      - Qual é o comportamento esperado?
+      - Qual é o comportamento real?
+      - Há passos de reprodução?
+      - Há mensagens de erro ou logs?
+      - Quais arquivos/módulos provavelmente são afetados?
     output: issue_analysis
 
   3_codebase_investigation:
-    action: Search codebase for affected code
+    action: Buscar no codebase pelo código afetado
     tools:
-      - Grep: Search for keywords from issue (error messages, function names, file paths)
-      - Glob: Find related files by pattern
-      - Read: Read suspect files to understand current behavior
+      - Grep: Buscar palavras-chave da issue (mensagens de erro, nomes de funções, caminhos de arquivo)
+      - Glob: Encontrar arquivos relacionados por padrão
+      - Read: Ler arquivos suspeitos para entender o comportamento atual
     output: affected_files[]
-    purpose: Confirm root cause and scope of change
+    purpose: Confirmar a causa raiz e o escopo da mudança
 
   4_research_if_needed:
-    condition: Issue involves external standards, APIs, or unfamiliar technology
+    condition: A issue envolve padrões externos, APIs ou tecnologia desconhecida
     action: |
-      Use /tech-search skill for deep research:
-        - External format specifications (e.g., Copilot .agent.md format)
-        - API documentation changes
-        - Best practices for the technology involved
-      Research output saved to docs/research/{date}-{slug}/
+      Use a skill /tech-search para pesquisa aprofundada:
+        - Especificações de formato externo (ex.: formato Copilot .agent.md)
+        - Mudanças em documentação de API
+        - Boas práticas para a tecnologia envolvida
+      Saída da pesquisa salva em docs/research/{date}-{slug}/
     output: research_findings (optional)
     examples:
-      - Issue #138: Required /tech-search for GitHub Copilot custom agents format
-      - Issue #159: No research needed (simple rename across codebase)
+      - Issue #138: Exigiu /tech-search para o formato de agents customizados do GitHub Copilot
+      - Issue #159: Nenhuma pesquisa necessária (rename simples no codebase)
 ```
 
-**Checkpoint (Interactive/Pre-Flight modes):**
+**Checkpoint (modos Interativo/Pre-Flight):**
 
-Present investigation summary to user:
+Apresente o resumo da investigação ao usuário:
 ```
 Investigation Summary for Issue #{number}:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -184,14 +184,14 @@ Proposed Approach:
 Proceed with implementation? (Y/n)
 ```
 
-### Phase 2: Plan (design the solution)
+### Fase 2: Planejar (projetar a solução)
 
-**Goal:** Create a clear implementation plan before touching code.
+**Objetivo:** Criar um plano de implementação claro antes de tocar no código.
 
 ```yaml
 steps:
   1_identify_changes:
-    action: List all files that need to be created, modified, or deleted
+    action: Listar todos os arquivos que precisam ser criados, modificados ou deletados
     output: change_manifest[]
     format: |
       | Action | File | Description |
@@ -202,98 +202,98 @@ steps:
       | RENAME | old-name → new-name | Extension change |
 
   2_check_dependencies:
-    action: Verify if changes affect other systems
+    action: Verificar se as mudanças afetam outros sistemas
     checks:
-      - Does this change affect the installer? (packages/installer/)
-      - Does this change affect IDE sync? (.aiox-core/infrastructure/scripts/ide-sync/)
-      - Does this change affect tests? (tests/)
-      - Does this change affect documentation? (docs/)
-      - Does this change affect CI/CD? (.github/workflows/)
-      - Does this change affect other agents? (.aiox-core/development/agents/)
+      - Esta mudança afeta o installer? (packages/installer/)
+      - Esta mudança afeta o IDE sync? (.aiox-core/infrastructure/scripts/ide-sync/)
+      - Esta mudança afeta os testes? (tests/)
+      - Esta mudança afeta a documentação? (docs/)
+      - Esta mudança afeta o CI/CD? (.github/workflows/)
+      - Esta mudança afeta outros agents? (.aiox-core/development/agents/)
     output: dependency_impacts[]
 
   3_verify_ids_gate:
-    action: IDS G4 - Check Entity Registry for reusable patterns
+    action: IDS G4 - Verificar o Entity Registry por padrões reutilizáveis
     gate: G4 (Dev Context - Informational, non-blocking)
     checks:
-      - Are there existing patterns/utilities that solve part of this?
-      - Can existing code be ADAPTED (< 30% change) instead of creating new?
-      - If creating new entities, prepare registry entry
+      - Existem padrões/utilitários existentes que resolvem parte disto?
+      - O código existente pode ser ADAPTADO (mudança < 30%) em vez de criar algo novo?
+      - Se criar novas entidades, prepare a entrada no registry
     output: ids_decision (REUSE/ADAPT/CREATE per entity)
 
   4_plan_tests:
-    action: Determine test strategy
+    action: Determinar a estratégia de testes
     checks:
-      - Existing tests that need updating?
-      - New tests required?
-      - Manual validation steps?
+      - Testes existentes que precisam ser atualizados?
+      - Novos testes necessários?
+      - Passos de validação manual?
     output: test_plan
 ```
 
-### Phase 3: Implement (make the changes)
+### Fase 3: Implementar (fazer as mudanças)
 
-**Goal:** Execute the plan with quality and safety.
+**Objetivo:** Executar o plano com qualidade e segurança.
 
 ```yaml
 steps:
   1_implement_changes:
-    action: Apply changes following the plan from Phase 2
+    action: Aplicar as mudanças seguindo o plano da Fase 2
     rules:
-      - Follow project conventions (CLAUDE.md)
-      - Use absolute imports, never relative
-      - No `any` in TypeScript
-      - kebab-case files, PascalCase components
-      - Conventional Commits for commit message
-      - Reference issue number in commit: "fix(scope): description (#N)"
+      - Seguir as convenções do projeto (CLAUDE.md)
+      - Usar imports absolutos, nunca relativos
+      - Sem `any` em TypeScript
+      - Arquivos kebab-case, componentes PascalCase
+      - Conventional Commits para a mensagem de commit
+      - Referenciar o número da issue no commit: "fix(scope): description (#N)"
 
   2_parallel_execution:
-    condition: Multiple independent changes can be made simultaneously
-    action: Use Task tool with subagents for parallel work
+    condition: Múltiplas mudanças independentes podem ser feitas simultaneamente
+    action: Usar a Task tool com subagents para trabalho paralelo
     examples:
-      - Issue #159: 5 parallel agents for bulk rename across 136 files
-      - Issue #138: Sequential (transformer → config → sync → cleanup)
+      - Issue #159: 5 agents paralelos para rename em lote em 136 arquivos
+      - Issue #138: Sequencial (transformer → config → sync → cleanup)
     guidance: |
-      Use parallel agents when:
-        - Changes are to independent files with no cross-dependencies
-        - Bulk operations across many files (>10 files with similar changes)
-        - Research + implementation can overlap
-      Use sequential when:
-        - Later changes depend on earlier ones
-        - Config changes must be tested before file operations
-        - New code must exist before references to it
+      Use agents paralelos quando:
+        - As mudanças são em arquivos independentes sem dependências cruzadas
+        - Operações em lote em muitos arquivos (>10 arquivos com mudanças similares)
+        - Pesquisa + implementação podem se sobrepor
+      Use sequencial quando:
+        - Mudanças posteriores dependem das anteriores
+        - Mudanças de config devem ser testadas antes de operações de arquivo
+        - O novo código deve existir antes das referências a ele
 
   3_handle_edge_cases:
-    action: Watch for common pitfalls from past sessions
+    action: Atentar para armadilhas comuns de sessões anteriores
     known_pitfalls:
-      - Email addresses inside strings may match rename patterns (Issue #159: security@synkra/aiox-core.dev)
-      - YAML parser converts "KEY: value" to objects, not strings (Issue #138: core_principles)
-      - Windows bash escapes `!` in inline scripts (use temp .js files instead of node -e)
-      - Replace_all may match unintended occurrences (always verify with Grep after bulk changes)
-      - Submodule `pro` shows as modified even when unchanged (ignore in git status)
+      - Endereços de e-mail dentro de strings podem casar com padrões de rename (Issue #159: security@synkra/aiox-core.dev)
+      - O parser YAML converte "KEY: value" em objetos, não strings (Issue #138: core_principles)
+      - O bash do Windows escapa `!` em scripts inline (use arquivos .js temporários em vez de node -e)
+      - Replace_all pode casar com ocorrências não intencionais (sempre verifique com Grep após mudanças em lote)
+      - O submódulo `pro` aparece como modificado mesmo quando inalterado (ignore no git status)
     mitigation: |
-      After bulk changes:
-        1. Grep for the old pattern to verify completeness
-        2. Grep for corruption patterns (partial replacements)
-        3. Read a sample of changed files to verify correctness
+      Após mudanças em lote:
+        1. Faça Grep do padrão antigo para verificar a completude
+        2. Faça Grep de padrões de corrupção (substituições parciais)
+        3. Leia uma amostra dos arquivos alterados para verificar a correção
 
   4_regenerate_manifests:
-    condition: Changes affect files tracked by install manifest
+    condition: As mudanças afetam arquivos rastreados pelo install manifest
     action: |
-      Run: node scripts/generate-install-manifest.js
-      This regenerates .aiox-core/install-manifest.yaml
-    when: Any file in .aiox-core/ or packages/ is created, modified, or deleted
+      Rode: node scripts/generate-install-manifest.js
+      Isto regenera o .aiox-core/install-manifest.yaml
+    when: Qualquer arquivo em .aiox-core/ ou packages/ é criado, modificado ou deletado
 
   5_run_ide_sync:
-    condition: Changes affect agent definitions or IDE sync system
+    condition: As mudanças afetam definições de agent ou o sistema de IDE sync
     action: |
-      Run: node .aiox-core/infrastructure/scripts/ide-sync/index.js sync --verbose
-      Verify all IDEs sync without errors
-    when: Changes to .aiox-core/development/agents/ or ide-sync/
+      Rode: node .aiox-core/infrastructure/scripts/ide-sync/index.js sync --verbose
+      Verifique se todas as IDEs sincronizam sem erros
+    when: Mudanças em .aiox-core/development/agents/ ou ide-sync/
 ```
 
-### Phase 4: Validate (test and verify)
+### Fase 4: Validar (testar e verificar)
 
-**Goal:** Ensure changes are correct and don't break anything.
+**Objetivo:** Garantir que as mudanças estão corretas e não quebram nada.
 
 ```yaml
 steps:
@@ -301,40 +301,40 @@ steps:
     command: npm test
     must_pass: true
     on_failure: |
-      Analyze test output, fix failures, re-run.
-      Do NOT proceed to commit if tests fail.
+      Analise a saída dos testes, corrija as falhas, rode novamente.
+      NÃO prossiga para o commit se os testes falharem.
 
   2_verify_changes:
-    action: Manual verification
+    action: Verificação manual
     checks:
-      - [ ] All files listed in plan were changed
-      - [ ] No unintended files were modified
-      - [ ] Grep confirms old patterns are gone (for bulk changes)
-      - [ ] Sample output looks correct (for format changes)
-      - [ ] No secrets or credentials in changed files
+      - [ ] Todos os arquivos listados no plano foram alterados
+      - [ ] Nenhum arquivo não intencional foi modificado
+      - [ ] O Grep confirma que os padrões antigos sumiram (para mudanças em lote)
+      - [ ] A amostra de saída parece correta (para mudanças de formato)
+      - [ ] Nenhum segredo ou credencial nos arquivos alterados
 
   3_lint_check:
     command: npm run lint
     must_pass: false
-    note: Warn if lint fails but don't block (some projects may not have lint)
+    note: Avise se o lint falhar mas não bloqueie (alguns projetos podem não ter lint)
 ```
 
-### Phase 5: Commit & Push
+### Fase 5: Commit e Push
 
-**Goal:** Create a clean, well-documented commit and push to remote.
+**Objetivo:** Criar um commit limpo e bem documentado e fazer push para o remote.
 
 ```yaml
 steps:
   1_stage_changes:
-    action: Stage ONLY files related to this issue
+    action: Fazer stage APENAS dos arquivos relacionados a esta issue
     rules:
-      - Use specific file names, NOT "git add -A" or "git add ."
-      - Exclude unrelated changes (pro submodule, coverage files, etc.)
-      - Exclude .env, credentials, and sensitive files
-      - Include regenerated manifests if applicable
+      - Use nomes de arquivo específicos, NÃO "git add -A" ou "git add ."
+      - Exclua mudanças não relacionadas (submódulo pro, arquivos de coverage, etc.)
+      - Exclua .env, credenciais e arquivos sensíveis
+      - Inclua os manifests regenerados se aplicável
 
   2_commit:
-    action: Create commit following Conventional Commits
+    action: Criar o commit seguindo Conventional Commits
     format: |
       {type}({scope}): {description} (#{issue_number})
 
@@ -353,8 +353,8 @@ steps:
     command: git push origin {branch}
     authority: "@devops EXCLUSIVE — only this agent pushes to remote"
     on_failure: |
-      Check if branch has upstream: git push -u origin {branch}
-      Check for conflicts: git pull --rebase origin {branch}
+      Verifique se o branch tem upstream: git push -u origin {branch}
+      Verifique conflitos: git pull --rebase origin {branch}
 
   4_close_issue:
     command: |
@@ -372,125 +372,125 @@ steps:
       - {validation_details}
       EOF
       )"
-    purpose: Close with detailed resolution comment for future reference
+    purpose: Fechar com um comentário de resolução detalhado para referência futura
 ```
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] All planned changes implemented
+  - [ ] Todas as mudanças planejadas implementadas
     tipo: post-condition
     blocker: true
 
-  - [ ] Tests pass (npm test exit code 0)
+  - [ ] Testes passam (npm test com código de saída 0)
     tipo: post-condition
     blocker: true
 
-  - [ ] Changes committed with proper message referencing issue
+  - [ ] Mudanças commitadas com mensagem apropriada referenciando a issue
     tipo: post-condition
     blocker: true
 
-  - [ ] Changes pushed to remote
+  - [ ] Mudanças enviadas (push) para o remote
     tipo: post-condition
     blocker: true
 
-  - [ ] Issue closed with resolution comment
+  - [ ] Issue fechada com comentário de resolução
     tipo: post-condition
     blocker: true
 ```
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de aprovação/reprovação para a conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Issue root cause identified and documented in close comment
+  - [ ] Causa raiz da issue identificada e documentada no comentário de fechamento
     tipo: acceptance-criterion
     blocker: true
 
-  - [ ] Fix addresses the reported problem completely
+  - [ ] A correção resolve o problema reportado completamente
     tipo: acceptance-criterion
     blocker: true
 
-  - [ ] No regressions introduced (all existing tests pass)
+  - [ ] Nenhuma regressão introduzida (todos os testes existentes passam)
     tipo: acceptance-criterion
     blocker: true
 
-  - [ ] Commit follows Conventional Commits format with issue reference
+  - [ ] O commit segue o formato Conventional Commits com referência à issue
     tipo: acceptance-criterion
     blocker: true
 
-  - [ ] Issue closed on GitHub with detailed resolution
+  - [ ] Issue fechada no GitHub com resolução detalhada
     tipo: acceptance-criterion
     blocker: true
 
-  - [ ] If research was needed, saved to docs/research/
+  - [ ] Se a pesquisa foi necessária, salva em docs/research/
     tipo: acceptance-criterion
     blocker: false
 ```
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** gh (GitHub CLI)
-  - **Purpose:** Fetch issue details, close issues, add comments
-  - **Source:** System CLI
-  - **Required:** true
+- **Ferramenta:** gh (GitHub CLI)
+  - **Propósito:** Buscar detalhes da issue, fechar issues, adicionar comentários
+  - **Origem:** System CLI
+  - **Obrigatório:** true
 
-- **Tool:** git
-  - **Purpose:** Stage, commit, push changes
-  - **Source:** System CLI
-  - **Required:** true
-  - **Authority:** @devops EXCLUSIVE for push operations
+- **Ferramenta:** git
+  - **Propósito:** Stage, commit, push de mudanças
+  - **Origem:** System CLI
+  - **Obrigatório:** true
+  - **Autoridade:** @devops EXCLUSIVO para operações de push
 
-- **Tool:** npm
-  - **Purpose:** Run tests (npm test), lint, build
-  - **Source:** System CLI
-  - **Required:** true
+- **Ferramenta:** npm
+  - **Propósito:** Rodar testes (npm test), lint, build
+  - **Origem:** System CLI
+  - **Obrigatório:** true
 
-- **Tool:** /tech-search (skill)
-  - **Purpose:** Deep research when issue involves external specs/APIs
-  - **Source:** .claude/skills/tech-search
-  - **Required:** false (only when research needed)
+- **Ferramenta:** /tech-search (skill)
+  - **Propósito:** Pesquisa aprofundada quando a issue envolve specs/APIs externas
+  - **Origem:** .claude/skills/tech-search
+  - **Obrigatório:** false (apenas quando a pesquisa é necessária)
 
-- **Tool:** Grep/Glob/Read
-  - **Purpose:** Codebase investigation during Phase 1
-  - **Source:** Claude Code native tools
-  - **Required:** true
+- **Ferramenta:** Grep/Glob/Read
+  - **Propósito:** Investigação do codebase durante a Fase 1
+  - **Origem:** Ferramentas nativas do Claude Code
+  - **Obrigatório:** true
 
-- **Tool:** Task (subagents)
-  - **Purpose:** Parallel execution for bulk operations
-  - **Source:** Claude Code native tool
-  - **Required:** false (only for large-scope changes)
+- **Ferramenta:** Task (subagents)
+  - **Propósito:** Execução paralela para operações em lote
+  - **Origem:** Ferramenta nativa do Claude Code
+  - **Obrigatório:** false (apenas para mudanças de grande escopo)
 
 ---
 
-## Dependencies
+## Dependências
 
 ```yaml
 dependencies:
   tasks:
-    - triage-github-issues.md        # Upstream: triage feeds into resolve
-    - github-devops-pre-push-quality-gate.md  # Optional: full quality gate before push
+    - triage-github-issues.md        # Upstream: a triagem alimenta o resolve
+    - github-devops-pre-push-quality-gate.md  # Opcional: quality gate completo antes do push
   checklists: []
   templates: []
   skills:
-    - tech-search                     # For deep research when needed
+    - tech-search                     # Para pesquisa aprofundada quando necessário
   tools:
     - gh (GitHub CLI)
     - git
@@ -499,43 +499,43 @@ dependencies:
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** checkpoint-and-recover
+**Estratégia:** checkpoint-and-recover
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Issue already closed
-   - **Cause:** Someone else closed the issue
-   - **Resolution:** Verify with `gh issue view`, report to user
-   - **Recovery:** Skip close step, still commit if fix was needed
+1. **Erro:** Issue já fechada
+   - **Causa:** Outra pessoa fechou a issue
+   - **Resolução:** Verifique com `gh issue view`, reporte ao usuário
+   - **Recuperação:** Pule o passo de fechamento, ainda commite se a correção foi necessária
 
-2. **Error:** Tests fail after implementation
-   - **Cause:** Code change introduced regression
-   - **Resolution:** Analyze test output, fix the issue
-   - **Recovery:** Do NOT push. Fix tests first, then retry Phase 4-5
+2. **Erro:** Testes falham após a implementação
+   - **Causa:** A mudança de código introduziu uma regressão
+   - **Resolução:** Analise a saída dos testes, corrija o problema
+   - **Recuperação:** NÃO faça push. Corrija os testes primeiro, depois repita as Fases 4-5
 
-3. **Error:** Push rejected (behind remote)
-   - **Cause:** Remote has new commits
-   - **Resolution:** `git pull --rebase origin {branch}` then retry push
-   - **Recovery:** If rebase has conflicts, resolve and re-test
+3. **Erro:** Push rejeitado (atrás do remote)
+   - **Causa:** O remote tem novos commits
+   - **Resolução:** `git pull --rebase origin {branch}` e depois tente o push novamente
+   - **Recuperação:** Se o rebase tiver conflitos, resolva e re-teste
 
-4. **Error:** Bulk replace corrupts unintended strings
-   - **Cause:** Pattern matches inside URLs, emails, or compound identifiers
-   - **Resolution:** Grep for corruption patterns immediately after replace
-   - **Recovery:** Manual fix of affected files, re-verify
-   - **Prevention:** Use targeted edits instead of global replace when pattern is ambiguous
+4. **Erro:** Substituição em lote corrompe strings não intencionais
+   - **Causa:** O padrão casa dentro de URLs, e-mails ou identificadores compostos
+   - **Resolução:** Faça Grep de padrões de corrupção imediatamente após a substituição
+   - **Recuperação:** Correção manual dos arquivos afetados, re-verifique
+   - **Prevenção:** Use edições direcionadas em vez de substituição global quando o padrão for ambíguo
 
-5. **Error:** Research needed but /tech-search unavailable
-   - **Cause:** Skill not loaded or external search failing
-   - **Resolution:** Fall back to manual WebSearch + WebFetch
-   - **Recovery:** Document findings manually in docs/research/
+5. **Erro:** Pesquisa necessária mas /tech-search indisponível
+   - **Causa:** Skill não carregada ou busca externa falhando
+   - **Resolução:** Recorra a WebSearch + WebFetch manual
+   - **Recuperação:** Documente os achados manualmente em docs/research/
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected:
@@ -576,33 +576,33 @@ related_tasks:
 
 ---
 
-## Lessons Learned (from past sessions)
+## Lições Aprendidas (de sessões anteriores)
 
-These patterns were identified from real issue resolution sessions and should guide execution:
+Estes padrões foram identificados em sessões reais de resolução de issues e devem guiar a execução:
 
-### Issue #159 (Bulk Rename) — Parallel + Edge Cases
-- **Pattern:** 5 parallel agents for 136 files, split by directory
-- **Pitfall:** `@synkra/aiox-core` inside email `security@synkra/aiox-core.dev` was corrupted
-- **Lesson:** Always Grep for edge cases AFTER bulk replacements
+### Issue #159 (Rename em Lote) — Paralelismo + Casos de Borda
+- **Padrão:** 5 agents paralelos para 136 arquivos, divididos por diretório
+- **Armadilha:** `@synkra/aiox-core` dentro do e-mail `security@synkra/aiox-core.dev` foi corrompido
+- **Lição:** Sempre faça Grep de casos de borda DEPOIS de substituições em lote
 
-### Issue #138 (Copilot Format) — Research-First
-- **Pattern:** /tech-search before implementation, 6-phase plan from research
-- **Pitfall:** YAML parsed `CRITICAL: value` as `{CRITICAL: value}` object instead of string
-- **Lesson:** Handle both string and object formats when processing YAML arrays
+### Issue #138 (Formato Copilot) — Pesquisa Primeiro
+- **Padrão:** /tech-search antes da implementação, plano de 6 fases a partir da pesquisa
+- **Armadilha:** O YAML parseou `CRITICAL: value` como objeto `{CRITICAL: value}` em vez de string
+- **Lição:** Trate tanto o formato string quanto o de objeto ao processar arrays YAML
 
-### Issue #174 (Package Name) — Quick Win
-- **Pattern:** Small, focused fix in 1 file, immediate validation
-- **Lesson:** Quick wins should still follow full validate → commit → push → close cycle
+### Issue #174 (Nome do Pacote) — Vitória Rápida
+- **Padrão:** Correção pequena e focada em 1 arquivo, validação imediata
+- **Lição:** Vitórias rápidas ainda devem seguir o ciclo completo validar → commit → push → close
 
-### Email Removal — User Feedback Mid-Session
-- **Pattern:** User noticed non-existent emails during issue resolution
-- **Lesson:** Be responsive to user feedback even when working on a different issue
+### Remoção de E-mail — Feedback do Usuário no Meio da Sessão
+- **Padrão:** O usuário notou e-mails inexistentes durante a resolução da issue
+- **Lição:** Seja responsivo ao feedback do usuário mesmo quando trabalhando em outra issue
 
 ---
 
-## Integration with @devops Agent
+## Integração com o Agente @devops
 
-Called via `@devops *resolve-issue {number}` command.
+Chamado via comando `@devops *resolve-issue {number}`.
 
-**Upstream:** `*triage-issues` → user selects issue → `*resolve-issue {number}`
-**Downstream:** After resolution → `*triage-issues` again for next issue (if in batch mode)
+**Upstream:** `*triage-issues` → o usuário seleciona a issue → `*resolve-issue {number}`
+**Downstream:** Após a resolução → `*triage-issues` novamente para a próxima issue (se em modo batch)

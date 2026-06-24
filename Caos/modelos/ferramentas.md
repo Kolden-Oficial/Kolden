@@ -38,6 +38,20 @@ Apague estas instruções no arquivo final. Substitua os blocos entre <>.
 - **Se falhar:** <...>
 - **Limites:** <...>
 
+## MCPs próprios (construídos pelo Caos)
+
+Diferencie **MCP consumido** (já existe no catálogo `sobre-a-empresa/Ferramentas/` — você só conecta e usa) de
+**MCP construído** (integração própria do Kolden, criada na Fase 5.4 via habilidade
+`criacao-de-mcp`). Liste aqui apenas os MCPs/APIs que ESTE agente construiu.
+
+| MCP próprio | Fluxos que expõe (tools) | Stack | Credencial (Infisical) | Eval |
+|---|---|---|---|---|
+| <ex.: kolden-crm> | <`sincronizar_contato`, `mover_no_funil`> | <FastMCP / Node> | <`/kolden/prod/...`> | <10 Q&A ok> |
+
+Cada MCP construído precisa: tools de fluxo (não 1:1 de endpoint), erros acionáveis em pt-BR,
+`annotations` de segurança por tool, credenciais só via Infisical e o harness de avaliação
+(~10 perguntas) passando. Detalhes na habilidade `criacao-de-mcp`.
+
 ## Stack de referência do Kolden
 
 Ao escolher ferramentas, priorize a stack interna (ver `CLAUDE.md`): OpenRouter e Eden AI

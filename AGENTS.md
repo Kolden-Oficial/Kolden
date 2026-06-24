@@ -7,12 +7,12 @@
 Operação do **Ronan**. A descrição oficial (modelo de negócio, mercado, marca) está em construção em `sobre-a-empresa/` — **um squad de pesquisa vai definir e preencher**. Enquanto estiver `status: rascunho`, **não afirme** detalhes de negócio: diga que está em definição.
 
 ## Números do workspace (estado atual)
-- **16 squads** de agentes (nomes da mitologia grega) — **176 agentes** nas pastas `agents/`.
+- **17 squads** de agentes (nomes da mitologia grega) — **185 agentes** nas pastas `agents/`.
 - **Prometeu**: framework de engenharia AIOX com **12 agentes** em `Prometeu/.aiox-core/development/agents/`.
-- **Caos**: fábrica de agentes com **10 especialistas internos** + **13 skills**.
-- **Total**: **198 agentes** mapeados arquivo-a-arquivo.
+- **Caos**: fábrica de agentes com **9 especialistas internos** + **13 skills**.
+- **Total**: **206 agentes** mapeados (185 squads + 12 Prometeu + 9 Caos).
 - **Ferramentas**: ~30 tools/APIs catalogadas; **14 MCPs conectados**, 8 aguardando OAuth.
-- **Projetos** em desenvolvimento: `omiron`, `Catalogoos` (Tracker Flow).
+- **Projetos** em desenvolvimento: `omiron`, `CataLogo` (Tracker Flow).
 - **Infra do Kolden OS** (stack LobeHub) roda no WSL2 — ver `CLAUDE.md` (não é parte deste workspace de agentes Windows).
 
 ---
@@ -31,19 +31,18 @@ Operação do **Ronan**. A descrição oficial (modelo de negócio, mercado, mar
 ### 📁 Projetos/ — produtos e iniciativas
 Novos projetos seguem o template `Projetos/_modelo-projeto/` (leia-me, prd, arquitetura, decisoes, status).
 - `Projetos/omiron/` — app de monitoramento terapêutico (Next.js 15, TypeScript, Prisma, Supabase). Tem `CLAUDE.md` e `AGENTS.md` próprios.
-- `Projetos/Catalogoos/` — plataforma **Tracker Flow** de rastreamento de conversões e integrações S2S (Meta CAPI, TikTok, GHL, GA4) (React 18 + Vite, Supabase, shadcn/ui, Tailwind).
+- `Projetos/CataLogo/` — plataforma **Tracker Flow** de rastreamento de conversões e integrações S2S (Meta CAPI, TikTok, GHL, GA4) (React 18 + Vite, Supabase, shadcn/ui, Tailwind).
 - `Projetos/sprints/` — registro de sprints.
 
 ### 🤖 Agentes e infraestrutura (pastas que existem)
 - `Caos/` — fábrica de agentes de IA (ritual de criação). Leia `Caos/CLAUDE.md`, `Caos/constituicao.md`, `Caos/glossario.md`.
 - `Hermes/` — runtime que executa os assistentes (gateway WhatsApp, OpenRouter, Infisical). **Projeto vendorizado da Nous Research** (`hermes-agent`, docs em inglês) — **não é um squad nativo Kolden**.
-- `Ferramentas/` — catálogo de tools/APIs/MCPs: `Ferramentas/ferramentas.md`, `Ferramentas/mcp-status.md`. Credenciais só no **Infisical**.
+- `sobre-a-empresa/Ferramentas/` — catálogo de tools/APIs/MCPs: `sobre-a-empresa/Ferramentas/ferramentas.md`, `sobre-a-empresa/Ferramentas/mcp-status.md`. Credenciais só no **Infisical**.
 
-### ⚙️ Infraestrutura de sistema (raiz)
-- `agent-memory/` — memória persistente do workspace (`workspace-kolden.md`): padrões ativos e aprendizados que sobrevivem entre sessões (Ritual de Encerramento).
-- `registros/` — logs de auditoria: `aprendizado.log` (sessões de aprendizado) e `auditoria.log` (operações críticas).
-- `_staging/` — **temporário**: clones de import (`aiox/`, `xquads/`) + `MANIFESTO-IMPORTACAO.md`. Limpável após a dívida de Ritual/PRD por squad ser endereçada.
-- `Bloco` — **arquivo órfão vazio (0 bytes)**. Propósito desconhecido; candidato a remoção (confirmar com o Ronan).
+### ⚙️ Infraestrutura de sistema (em `.claude/`)
+- `.claude/agent-memory/` — memória persistente do workspace (`workspace-kolden.md`): padrões ativos e aprendizados que sobrevivem entre sessões (Ritual de Encerramento).
+- `.claude/registros/` — logs de auditoria: `aprendizado.log` (sessões de aprendizado) e `auditoria.log` (operações críticas).
+- `.claude/_staging/` — **temporário**: clones de import (`aiox/`, `xquads/`) + `MANIFESTO-IMPORTACAO.md`. Limpável após a dívida de Ritual/PRD por squad ser endereçada.
 
 ---
 
@@ -170,6 +169,17 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 - `social-instagram`, `social-tiktok`, `social-youtube`, `social-linkedin`, `social-x`, `social-facebook`, `social-reddit` — inteligência orgânica por rede social.
 - `compliance-sentinela` — Guardião de ToS: classifica verde/cinza, portão único da zona cinza.
 
+**Liceu/** — Biblioteca de Mentes (9 agentes). **A escola de Aristóteles**: disseca o cérebro de grandes especialistas mundiais separando engenharia documentada de mito/folclore, mapeia linhagens intelectuais (herdou_de/influenciou) e destila frameworks operacionais para os squads. Cataloga por referência as ~100 mentes já existentes nos squads (sem mover). Não executa nem instancia agentes — handoff aos squads de execução e ao Caos. Sem motor próprio (REUSE do Argos). Nascido no Caos. → `Liceu/README.md`
+- `liceu-chief` — Orquestrador: escopo (nome vs linhagem), roteamento e gate de candura (fato×folclore).
+- `biografo` — Biografia, carreira, obras-fonte datadas e contexto histórico.
+- `cartografo-de-modelos` — Extrai mental_models, frameworks e princípios da obra primária.
+- `ceptico-verificador` — Separa engenharia documentada de mito/folclore; dono do gate de candura.
+- `lexicografo` — Vocabulário-assinatura, padrões linguísticos e "Como X Opera".
+- `genealogista` — Grafo de linhagens (herdou_de/influenciou); mantém o índice de linhagens.
+- `bibliotecario` — Índice federado + registro de entidades; indexa por referência.
+- `sintetizador` — Destila mente/linhagem em framework operacional + procedência.
+- `ponte-de-encarnacao` — Handoff ao Caos quando a mente deve virar agente conversável.
+
 **Olimpo/** — C-Level / Executivos (6 agentes). → `Olimpo/README.md`
 - `vision-chief` — CEO/Orquestrador: define a visão e roteia ao executivo certo.
 - `coo-orchestrator` — COO: excelência operacional, processos, escala, KPIs/OKRs.
@@ -274,9 +284,10 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 
 ## 🏭 Infraestrutura de agentes
 
-### Caos/ — fábrica de agentes (10 especialistas internos + 13 skills)
+### Caos/ — fábrica de agentes (9 especialistas internos + 13 skills)
 Ritual de criação em 9 fases, sob a `Caos/constituicao.md` (versionada). Aplica **REUSE > ADAPT > CREATE** via registro de entidades. Leia `Caos/CLAUDE.md` e `Caos/leia-me.md`. Especialistas em `Caos/.claude/agents/`:
 - `arquiteto` — Topologia solo/squad com análise de anti-padrões.
+- `auditor-de-seguranca` — Auditoria de segurança de agentes/entidades (SAST, segredos, conformidade constitucional).
 - `curador` — Consulta o registro de entidades (REUSE > ADAPT > CREATE).
 - `diagnosticador` — Diagnóstico das 7 faculdades ("O Ser") com detecção de pré-morte.
 - `pesquisador` — Estado da arte e benchmarking de mercado (score ≥8).
@@ -284,16 +295,14 @@ Ritual de criação em 9 fases, sob a `Caos/constituicao.md` (versionada). Aplic
 - `revisor` — Revisão contra checklist de qualidade e conformidade constitucional.
 - `testador` — Teste de comportamento com maturity score (0–10).
 - `vigia` — Vigia de ecossistema: digest datado e estado-da-arte vivo.
-- `gohighlevel` — Integração de GoHighLevel (CRM e automação de vendas).
-- `LobeHub` — Integração de LobeHub (interface de chat conversacional).
 
 Skills do Caos (`Caos/.claude/skills/`): `busca-de-referencias`, `consulta-ao-registro`, `criacao-de-hooks`, `criacao-de-skill`, `criacao-de-squad`, `criacao-de-subagent`, `diagnostico-de-agente`, `geracao-de-prd`, `infisical-padrao`, `registro-de-entidade`, `verificacao-de-alinhamento`, `vigia-de-ecossistema` (+ catálogo).
 
 ### Hermes/ — runtime de execução (vendorizado)
 Projeto **Nous Research** (`hermes-agent`) integrado ao workspace; docs em inglês. Executa os assistentes em CLI/TUI e gateways (WhatsApp, Telegram, Discord, Slack, Signal…), com OpenRouter como provider e segredos via Infisical. **Não é um squad nativo Kolden** e não tem agentes Kolden próprios — é a camada que *roda* assistentes. Ver `Hermes/README.md` e `Hermes/AGENTS.md` (guia de contribuição).
 
-### Ferramentas/ — catálogo de tools, APIs e MCPs
-Índice mestre `Ferramentas/ferramentas.md`; estado dos MCPs em `Ferramentas/mcp-status.md`; validação de APIs em `Ferramentas/api-validation.md`. ~30 ferramentas catalogadas; **14 MCPs conectados**, 8 aguardando OAuth, 3 follow-ups de credencial. **Credenciais SEMPRE via Infisical — nunca em texto puro.**
+### sobre-a-empresa/Ferramentas/ — catálogo de tools, APIs e MCPs
+Índice mestre `sobre-a-empresa/Ferramentas/ferramentas.md`; estado dos MCPs em `sobre-a-empresa/Ferramentas/mcp-status.md`; validação de APIs em `sobre-a-empresa/Ferramentas/api-validation.md`. ~30 ferramentas catalogadas; **14 MCPs conectados**, 8 aguardando OAuth, 3 follow-ups de credencial. **Credenciais SEMPRE via Infisical — nunca em texto puro.**
 
 ---
 

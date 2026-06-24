@@ -263,37 +263,37 @@ projectStatus:
   maxRecentCommits: 2
 ```
 
-**Confirmation:**
+**Confirmação:**
 ```
 ✅ Enabled projectStatus in core-config.yaml
 ```
 
 ---
 
-### Step 4: Create .aiox Directory
+### Passo 4: Criar o Diretório .aiox
 
-**Action:** Ensure `.aiox/` directory exists
+**Ação:** Garantir que o diretório `.aiox/` exista
 
 ```bash
 mkdir -p .aiox
 ```
 
-**Note:** Directory is created if missing, no error if exists.
+**Nota:** O diretório é criado se estiver ausente, sem erro se já existir.
 
 ---
 
-### Step 5: Initialize Status Cache
+### Passo 5: Inicializar o Cache de Status
 
-**Action:** Load project status for the first time
+**Ação:** Carregar o status do projeto pela primeira vez
 
 ```javascript
 const { loadProjectStatus } = require('./.aiox-core/scripts/project-status-loader.js');
 const status = await loadProjectStatus();
 ```
 
-**Verification:** Check that `.aiox/project-status.yaml` was created with valid content.
+**Verificação:** Verificar se `.aiox/project-status.yaml` foi criado com conteúdo válido.
 
-**Sample Cache Content:**
+**Exemplo de Conteúdo do Cache:**
 ```yaml
 status:
   branch: main
@@ -309,18 +309,18 @@ timestamp: 1705238400000
 ttl: 60
 ```
 
-**Confirmation:**
+**Confirmação:**
 ```
 ✅ Initialized project status cache (.aiox/project-status.yaml)
 ```
 
 ---
 
-### Step 6: Test Status Display
+### Passo 6: Testar a Exibição do Status
 
-**Action:** Simulate agent activation to verify status displays correctly
+**Ação:** Simular a ativação de um agente para verificar se o status é exibido corretamente
 
-**Method:** Load status and format for display
+**Método:** Carregar o status e formatar para exibição
 
 ```javascript
 const { loadProjectStatus, formatStatusDisplay } = require('./.aiox-core/scripts/project-status-loader.js');
@@ -335,29 +335,29 @@ console.log('\nType *help to see available commands!');
 
 ---
 
-### Step 7: Update .gitignore
+### Passo 7: Atualizar o .gitignore
 
-**Action:** Ensure `.aiox/project-status.yaml` is gitignored
+**Ação:** Garantir que `.aiox/project-status.yaml` esteja no gitignore
 
-**Check:** Look for `.aiox/project-status.yaml` entry in `.gitignore`
+**Verificação:** Procurar a entrada `.aiox/project-status.yaml` no `.gitignore`
 
-**If missing:** Add entry to `.gitignore`
+**Se ausente:** Adicionar a entrada ao `.gitignore`
 
 ```gitignore
 # AIOX Project Status Cache (auto-generated)
 .aiox/project-status.yaml
 ```
 
-**Confirmation:**
+**Confirmação:**
 ```
 ✅ Added .aiox/project-status.yaml to .gitignore
 ```
 
 ---
 
-### Step 8: Display Success Summary
+### Passo 8: Exibir o Resumo de Sucesso
 
-**Action:** Show complete setup summary
+**Ação:** Mostrar o resumo completo da configuração
 
 ```
 ╔═══════════════════════════════════════════════════════════╗
@@ -380,127 +380,127 @@ Documentation: docs/guides/project-status-feature.md
 
 ---
 
-## Outputs
+## Saídas
 
-### Files Created
+### Arquivos Criados
 
-- `.aiox/project-status.yaml` - Status cache file (gitignored)
+- `.aiox/project-status.yaml` - Arquivo de cache de status (no gitignore)
 
-### Files Modified
+### Arquivos Modificados
 
-- `.aiox-core/core-config.yaml` - projectStatus section enabled (if was disabled)
-- `.gitignore` - Added cache file entry (if missing)
+- `.aiox-core/core-config.yaml` - Seção projectStatus habilitada (se estava desabilitada)
+- `.gitignore` - Adicionada a entrada do arquivo de cache (se ausente)
 
-### System State
+### Estado do Sistema
 
-- Project status feature: **ENABLED**
-- All 11 agents will now display project context on activation
-
----
-
-## Validation
-
-- [ ] `.aiox/project-status.yaml` exists and contains valid YAML
-- [ ] `core-config.yaml` has `projectStatus.enabled: true`
-- [ ] `.gitignore` includes `.aiox/project-status.yaml`
-- [ ] Test agent activation shows status display
-- [ ] Git repository detected correctly
-- [ ] Cache TTL is 60 seconds
+- Funcionalidade de status do projeto: **HABILITADA**
+- Todos os 11 agentes passarão a exibir o contexto do projeto na ativação
 
 ---
 
-## Error Handling
+## Validação
 
-### Not a Git Repository
+- [ ] `.aiox/project-status.yaml` existe e contém YAML válido
+- [ ] `core-config.yaml` tem `projectStatus.enabled: true`
+- [ ] `.gitignore` inclui `.aiox/project-status.yaml`
+- [ ] A ativação de teste do agente mostra a exibição do status
+- [ ] Repositório git detectado corretamente
+- [ ] O TTL do cache é de 60 segundos
 
-**Error:**
+---
+
+## Tratamento de Erros
+
+### Não é um Repositório Git
+
+**Erro:**
 ```
 ⚠️  Project status feature requires a git repository.
 ```
 
-**Resolution:**
+**Resolução:**
 ```bash
 git init
 ```
 
-### core-config.yaml Not Found
+### core-config.yaml Não Encontrado
 
-**Error:**
+**Erro:**
 ```
 ❌ Could not find .aiox-core/core-config.yaml
    Are you in the project root directory?
 ```
 
-**Resolution:** Navigate to project root before running task.
+**Resolução:** Navegar até a raiz do projeto antes de rodar a task.
 
-### Permission Denied on .aiox Directory
+### Permissão Negada no Diretório .aiox
 
-**Error:**
+**Erro:**
 ```
 ❌ Cannot create .aiox directory: Permission denied
 ```
 
-**Resolution:** Check file system permissions for project directory.
+**Resolução:** Verificar as permissões do sistema de arquivos para o diretório do projeto.
 
 ---
 
 ## Rollback
 
-To disable project status tracking:
+Para desabilitar o rastreamento de status do projeto:
 
-1. **Edit core-config.yaml:**
+1. **Editar core-config.yaml:**
    ```yaml
    projectStatus:
      enabled: false
    ```
 
-2. **Remove cache file:**
+2. **Remover o arquivo de cache:**
    ```bash
    rm .aiox/project-status.yaml
    ```
 
-3. **Restart agent sessions** - new activations won't load status
+3. **Reiniciar as sessões de agente** - novas ativações não carregarão o status
 
 ---
 
-## Performance Notes
+## Notas de Performance
 
-- **First load:** ~80-100ms (git commands + file I/O)
-- **Cached load:** ~5-10ms (YAML read only)
-- **Cache invalidation:** Automatic after 60 seconds
-- **Agent overhead:** Minimal (<100ms added to activation)
+- **Primeira carga:** ~80-100ms (comandos git + I/O de arquivo)
+- **Carga em cache:** ~5-10ms (apenas leitura de YAML)
+- **Invalidação do cache:** Automática após 60 segundos
+- **Overhead do agente:** Mínimo (<100ms adicionados à ativação)
 
 ---
 
-## Dependencies
+## Dependências
 
 ### Scripts
 
-- `.aiox-core/scripts/project-status-loader.js` - Core status loader
+- `.aiox-core/scripts/project-status-loader.js` - Carregador de status principal
 
-### NPM Packages
+### Pacotes NPM
 
-- `js-yaml` - YAML parsing (already in project dependencies)
-- `execa` - Git command execution (already in project dependencies)
+- `js-yaml` - Parsing de YAML (já nas dependências do projeto)
+- `execa` - Execução de comandos git (já nas dependências do projeto)
 
-### Git Commands Used
+### Comandos Git Usados
 
-- `git rev-parse --is-inside-work-tree` - Detect git repo
-- `git branch --show-current` - Get current branch (git >= 2.22)
-- `git rev-parse --abbrev-ref HEAD` - Fallback for older git
-- `git status --porcelain` - Get modified files
-- `git log -2 --oneline --no-decorate` - Get recent commits
+- `git rev-parse --is-inside-work-tree` - Detectar repo git
+- `git branch --show-current` - Obter o branch atual (git >= 2.22)
+- `git rev-parse --abbrev-ref HEAD` - Fallback para git mais antigo
+- `git status --porcelain` - Obter arquivos modificados
+- `git log -2 --oneline --no-decorate` - Obter commits recentes
 
 ---
 
-## Related
+## Relacionados
 
 - **Story:** 6.1.2.4 - Dynamic Project Status Context
-- **Documentation:** `docs/guides/project-status-feature.md`
-- **Config:** `.aiox-core/core-config.yaml` (projectStatus section)
+- **Documentação:** `docs/guides/project-status-feature.md`
+- **Config:** `.aiox-core/core-config.yaml` (seção projectStatus)
 
 ---
 
-**Status:** ✅ Production Ready
-**Tested On:** Windows, Linux, macOS
-**Git Requirement:** git >= 2.0 (2.22+ recommended)
+**Status:** ✅ Pronto para Produção
+**Testado Em:** Windows, Linux, macOS
+**Requisito Git:** git >= 2.0 (2.22+ recomendado)

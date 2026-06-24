@@ -29,7 +29,7 @@
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: triageGithubIssues()
@@ -43,7 +43,7 @@ atomic_layer: Organism
   origem: User Input
   obrigatorio: false
   validacao: |
-    Optional filters: { state: 'open', labels: [], assignee: '', limit: 30 }
+    Filtros opcionais: { state: 'open', labels: [], assignee: '', limit: 30 }
   default: { state: 'open', limit: 30 }
 
 - campo: mode
@@ -70,85 +70,85 @@ atomic_layer: Organism
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] GitHub CLI authenticated (gh auth status)
+  - [ ] GitHub CLI autenticada (gh auth status)
     tipo: pre-condition
     blocker: true
     validacao: |
-      Run: gh auth status
-      Must show authenticated user
+      Rode: gh auth status
+      Deve mostrar o usuário autenticado
     error_message: "GitHub CLI not authenticated. Run: gh auth login"
 
-  - [ ] Repository has GitHub remote configured
+  - [ ] Repositório com remote do GitHub configurado
     tipo: pre-condition
     blocker: true
     validacao: |
-      Run: git remote -v
-      Must show github.com remote
+      Rode: git remote -v
+      Deve mostrar um remote github.com
     error_message: "No GitHub remote found. Add with: git remote add origin <url>"
 ```
 
 ---
 
-## Workflow Steps
+## Passos do Workflow
 
-### Phase 1: Fetch Issues
+### Fase 1: Buscar Issues
 
 ```bash
-# Fetch all open issues with labels and metadata
+# Busca todas as issues abertas com labels e metadados
 gh issue list --state open --limit 50 --json number,title,labels,createdAt,updatedAt,comments,assignees,milestone
 
-# Also check for stale issues (>90 days without activity)
+# Verifica também issues obsoletas (>90 dias sem atividade)
 gh issue list --state open --limit 50 --json number,title,updatedAt --jq '.[] | select(.updatedAt < (now - 7776000 | todate))'
 ```
 
-### Phase 2: Classify Each Issue
+### Fase 2: Classificar Cada Issue
 
-For each issue, determine:
+Para cada issue, determine:
 
-| Dimension | Values | How to Determine |
+| Dimensão | Valores | Como Determinar |
 |-----------|--------|-----------------|
-| **Type** | BUG, FEATURE, ENHANCEMENT, DOCS, CHORE, SECURITY | From labels + title keywords + issue body |
-| **Severity** | P0-Critical, P1-High, P2-Medium, P3-Low, P4-Cosmetic | Impact on users, workaround availability |
-| **Effort** | XS (<1h), S (1-4h), M (4-8h), L (1-2d), XL (>2d) | Files affected, complexity, research needed |
-| **Impact** | HIGH, MEDIUM, LOW | Users affected x frequency x severity |
-| **Quick Win** | YES/NO | Effort <= S AND Severity >= P2 |
+| **Type** | BUG, FEATURE, ENHANCEMENT, DOCS, CHORE, SECURITY | A partir de labels + palavras-chave do título + corpo da issue |
+| **Severity** | P0-Critical, P1-High, P2-Medium, P3-Low, P4-Cosmetic | Impacto nos usuários, disponibilidade de workaround |
+| **Effort** | XS (<1h), S (1-4h), M (4-8h), L (1-2d), XL (>2d) | Arquivos afetados, complexidade, pesquisa necessária |
+| **Impact** | HIGH, MEDIUM, LOW | Usuários afetados x frequência x severidade |
+| **Quick Win** | YES/NO | Effort <= S E Severity >= P2 |
 
-**Classification Heuristics:**
+**Heurísticas de Classificação:**
 
 ```yaml
 type_detection:
-  BUG: title contains "bug", "broken", "error", "fix", "crash", "fail"
-  SECURITY: title contains "security", "vulnerability", "CVE", labels include "security"
-  DOCS: title contains "docs", "documentation", "readme", labels include "documentation"
-  CHORE: title contains "chore", "cleanup", "refactor", "rename", "update"
-  FEATURE: title contains "feat", "add", "implement", "new"
-  ENHANCEMENT: title contains "improve", "enhance", "optimize", "better"
+  BUG: título contém "bug", "broken", "error", "fix", "crash", "fail"
+  SECURITY: título contém "security", "vulnerability", "CVE", labels incluem "security"
+  DOCS: título contém "docs", "documentation", "readme", labels incluem "documentation"
+  CHORE: título contém "chore", "cleanup", "refactor", "rename", "update"
+  FEATURE: título contém "feat", "add", "implement", "new"
+  ENHANCEMENT: título contém "improve", "enhance", "optimize", "better"
 
 severity_detection:
-  P0: labels include "critical", body mentions "production down" or "data loss"
-  P1: labels include "high", "important", type is SECURITY
-  P2: labels include "medium", type is BUG without workaround
-  P3: labels include "low", type is ENHANCEMENT
-  P4: type is DOCS or CHORE with no user impact
+  P0: labels incluem "critical", corpo menciona "production down" ou "data loss"
+  P1: labels incluem "high", "important", tipo é SECURITY
+  P2: labels incluem "medium", tipo é BUG sem workaround
+  P3: labels incluem "low", tipo é ENHANCEMENT
+  P4: tipo é DOCS ou CHORE sem impacto no usuário
 
 effort_estimation:
-  - Read issue body for scope indicators
-  - Check if issue references specific files/modules
-  - Check if similar issues were resolved (time taken)
-  - Consider: research needed? multiple files? tests required? installer changes?
+  - Ler o corpo da issue em busca de indicadores de escopo
+  - Verificar se a issue referencia arquivos/módulos específicos
+  - Verificar se issues similares foram resolvidas (tempo levado)
+  - Considerar: precisa de pesquisa? múltiplos arquivos? testes necessários? mudanças no installer?
 ```
 
-### Phase 3: Prioritize
+### Fase 3: Priorizar
 
-**Priority Score Formula:**
+**Fórmula de Pontuação de Prioridade:**
 
 ```
 priority_score = (severity_weight * 3) + (impact_weight * 2) + (quick_win_bonus) - (effort_penalty)
@@ -159,37 +159,37 @@ quick_win_bonus: YES=5, NO=0
 effort_penalty: XS=0, S=1, M=3, L=5, XL=8
 ```
 
-**Priority Tiers:**
+**Níveis de Prioridade:**
 
-| Tier | Score Range | Action |
+| Nível | Faixa de Pontuação | Ação |
 |------|------------|--------|
-| **NOW** | >= 30 | Resolve immediately (P0/P1, security) |
-| **NEXT** | 20-29 | Resolve in current sprint |
-| **SOON** | 10-19 | Schedule for next sprint |
-| **BACKLOG** | < 10 | Keep in backlog, review monthly |
+| **NOW** | >= 30 | Resolver imediatamente (P0/P1, segurança) |
+| **NEXT** | 20-29 | Resolver no sprint atual |
+| **SOON** | 10-19 | Agendar para o próximo sprint |
+| **BACKLOG** | < 10 | Manter no backlog, revisar mensalmente |
 
-### Phase 4: Present to User
+### Fase 4: Apresentar ao Usuário
 
-**Output Format:**
+**Formato de Saída:**
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-GitHub Issues Triage Report
+Relatório de Triagem de GitHub Issues
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Repository: {owner}/{repo}
-Open Issues: {count}
-Date: {date}
+Repositório: {owner}/{repo}
+Issues Abertas: {count}
+Data: {date}
 
-NOW (resolve immediately):
+NOW (resolver imediatamente):
   #123 [BUG/P1] Agent files not recognized by Copilot    S  ← Quick Win
   #456 [SECURITY/P0] Exposed credentials in config       M
 
-NEXT (current sprint):
+NEXT (sprint atual):
   #789 [BUG/P2] Submodule blocks push after merge        M
   #101 [ENHANCEMENT/P2] Add batch rename support          S  ← Quick Win
 
-SOON (next sprint):
+SOON (próximo sprint):
   #202 [FEATURE/P3] English README                        L
   #303 [DOCS/P3] Update API documentation                 S
 
@@ -199,122 +199,122 @@ BACKLOG:
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Recommendation: Start with #{top_issue} ({reason}).
-Pick an issue number to investigate, or say "resolve #N".
+Recomendação: Comece pela #{top_issue} ({reason}).
+Escolha um número de issue para investigar, ou diga "resolve #N".
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
-### Phase 5: User Decision
+### Fase 5: Decisão do Usuário
 
 **elicit: true**
 
-Present the triage report and wait for user to:
-1. Select an issue to investigate → hand off to `*resolve-issue {number}`
-2. Adjust priorities → re-sort and present again
-3. Close stale issues → `gh issue close {number} --comment "Closing as stale"`
-4. Request more detail on specific issue → `gh issue view {number}`
+Apresente o relatório de triagem e aguarde o usuário para:
+1. Selecionar uma issue para investigar → fazer handoff para `*resolve-issue {number}`
+2. Ajustar prioridades → reordenar e apresentar novamente
+3. Fechar issues obsoletas → `gh issue close {number} --comment "Closing as stale"`
+4. Solicitar mais detalhes sobre uma issue específica → `gh issue view {number}`
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] All open issues classified with type, severity, and effort
+  - [ ] Todas as issues abertas classificadas com tipo, severidade e esforço
     tipo: post-condition
     blocker: false
     validacao: |
-      Every issue in report has Type, Severity, and Effort columns filled
+      Toda issue no relatório tem as colunas Type, Severity e Effort preenchidas
 
-  - [ ] Priority ranking presented to user
+  - [ ] Ranking de prioridade apresentado ao usuário
     tipo: post-condition
     blocker: true
     validacao: |
-      User has seen the prioritized triage report
+      O usuário viu o relatório de triagem priorizado
 
-  - [ ] User has selected next action (resolve, close, or defer)
+  - [ ] Usuário selecionou a próxima ação (resolver, fechar ou adiar)
     tipo: post-condition
     blocker: false
     validacao: |
-      User has made a decision on at least one issue
+      O usuário tomou uma decisão sobre pelo menos uma issue
 ```
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Triage report covers all open issues (or up to limit)
+  - [ ] O relatório de triagem cobre todas as issues abertas (ou até o limit)
     tipo: acceptance-criterion
     blocker: true
 
-  - [ ] Each issue has type, severity, effort, and priority tier
+  - [ ] Cada issue tem tipo, severidade, esforço e nível de prioridade
     tipo: acceptance-criterion
     blocker: true
 
-  - [ ] Quick wins are clearly identified
+  - [ ] Os quick wins estão claramente identificados
     tipo: acceptance-criterion
     blocker: true
 
-  - [ ] User-facing output is a clean, scannable table
+  - [ ] A saída voltada ao usuário é uma tabela limpa e fácil de escanear
     tipo: acceptance-criterion
     blocker: true
 ```
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** gh (GitHub CLI)
-  - **Purpose:** Fetch issues, labels, comments, close stale issues
-  - **Source:** System CLI
-  - **Required:** true
+- **Ferramenta:** gh (GitHub CLI)
+  - **Propósito:** Buscar issues, labels, comentários, fechar issues obsoletas
+  - **Fonte:** CLI do sistema
+  - **Obrigatório:** true
 
-- **Tool:** git
-  - **Purpose:** Detect repository remote URL
-  - **Source:** System CLI
-  - **Required:** true
+- **Ferramenta:** git
+  - **Propósito:** Detectar a URL do remote do repositório
+  - **Fonte:** CLI do sistema
+  - **Obrigatório:** true
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** graceful-fallback
+**Estratégia:** graceful-fallback
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** GitHub CLI not authenticated
-   - **Cause:** `gh` not logged in
-   - **Resolution:** Run `gh auth login`
-   - **Recovery:** Prompt user to authenticate
+1. **Erro:** GitHub CLI não autenticada
+   - **Causa:** `gh` sem login
+   - **Resolução:** Rode `gh auth login`
+   - **Recuperação:** Solicitar ao usuário que se autentique
 
-2. **Error:** Rate limit exceeded
-   - **Cause:** Too many API calls
-   - **Resolution:** Wait and retry, or use `--limit` to reduce scope
-   - **Recovery:** Present partial results
+2. **Erro:** Limite de taxa (rate limit) excedido
+   - **Causa:** Chamadas de API em excesso
+   - **Resolução:** Aguardar e tentar novamente, ou usar `--limit` para reduzir o escopo
+   - **Recuperação:** Apresentar resultados parciais
 
-3. **Error:** No open issues
-   - **Cause:** Repository has no open issues
-   - **Resolution:** Report clean backlog
-   - **Recovery:** Suggest checking closed issues or creating new ones
+3. **Erro:** Nenhuma issue aberta
+   - **Causa:** O repositório não tem issues abertas
+   - **Resolução:** Reportar backlog limpo
+   - **Recuperação:** Sugerir verificar issues fechadas ou criar novas
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 1-3 min
@@ -324,10 +324,10 @@ token_usage: ~2,000-5,000 tokens
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
-story: N/A (operational task)
+story: N/A (task operacional)
 version: 1.0.0
 dependencies:
   tasks: []
@@ -349,8 +349,8 @@ related_tasks:
 
 ---
 
-## Integration with @devops Agent
+## Integração com o Agente @devops
 
-Called via `@devops *triage-issues` command or user request to analyze the issue backlog.
+Chamada via comando `@devops *triage-issues` ou por solicitação do usuário para analisar o backlog de issues.
 
-**Handoff:** When user selects an issue to resolve, hand off to `*resolve-issue {number}`.
+**Handoff:** Quando o usuário seleciona uma issue para resolver, faça o handoff para `*resolve-issue {number}`.

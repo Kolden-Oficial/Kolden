@@ -23,7 +23,7 @@
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: createDeepResearchPrompt()
@@ -186,7 +186,7 @@ token_usage: ~1,500-5,000 tokens
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -500,7 +500,7 @@ CRÍTICO: colabore com o usuário para desenvolver perguntas de pesquisa especí
 ## Handoff
 next_agent: @pm
 next_command: *write-spec
-condition: Research complete (research.json created)
+condition: Pesquisa concluída (research.json criado)
 alternatives:
-  - agent: @architect, command: *analyze-impact, condition: Research reveals higher complexity than expected
+  - agent: @architect, command: *analyze-impact, condition: A pesquisa revela complexidade maior que o esperado
  

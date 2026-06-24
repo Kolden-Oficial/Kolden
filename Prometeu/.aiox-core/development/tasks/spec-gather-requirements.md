@@ -547,6 +547,6 @@ metadata:
 ## Handoff
 next_agent: @architect
 next_command: *analyze-impact
-condition: Requirements gathered (requirements.json created)
+condition: Requisitos coletados (requirements.json criado)
 alternatives:
-  - agent: @pm, command: *write-spec, condition: SIMPLE complexity, skip assessment
+  - agent: @pm, command: *write-spec, condition: Complexidade SIMPLE, pular a avaliação

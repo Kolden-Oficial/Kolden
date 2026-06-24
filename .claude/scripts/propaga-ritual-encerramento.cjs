@@ -19,7 +19,7 @@ const MARK_AGENT = '<!-- ritual-de-encerramento -->';
 const MARK_CENTRAL = '<!-- ritual-de-encerramento-central -->';
 
 // Pastas top-level ignoradas na varredura (não contêm agentes a marcar aqui)
-const SKIP_TOP = new Set(['.claude', '.git', 'node_modules', 'sobre-a-empresa', 'Ferramentas', '_staging']);
+const SKIP_TOP = new Set(['.claude', '.git', 'node_modules', 'sobre-a-empresa']);
 // Squads/projetos cujo doc central já foi editado à mão (não re-tocar)
 const SKIP_CENTRAL = new Set(['Caos', 'Prometeu']);
 // Nomes de arquivo dentro de agents/ que NÃO são agentes

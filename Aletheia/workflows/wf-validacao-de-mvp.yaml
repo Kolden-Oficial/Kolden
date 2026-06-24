@@ -1,0 +1,108 @@
+# Workflow de Validação de MVP — Aletheia
+# Da ideia crua à decisão (perseverar/pivotar/parar), com gate de evidência que falha cedo.
+# Versão: 1.0.0
+
+workflow:
+  id: wf-validacao-de-mvp
+  name: "Validação de MVP — da ideia à decisão"
+  version: "1.0.0"
+  trigger: "*journey"
+  entry_agent: aletheia-chief
+  description: "A jornada completa de validação enxuta: descobrir a dor real, estruturar a necessidade, mapear e testar as assunções mais arriscadas, escolher o menor MVP, provar demanda e decidir. Cada fase tem um checkpoint que pode dar HALT antes de qualquer build."
+  estimated_duration: "1 sessão de trabalho profundo (entrevistas reais correm em paralelo, fora do squad)"
+  type: sequential
+
+inputs:
+  - name: idea
+    required: true
+    description: "A ideia crua de negócio/produto a validar"
+  - name: founder_assumptions
+    required: false
+    description: "O que o fundador está assumindo como verdade (será extraído se não fornecido)"
+  - name: target_customer
+    required: false
+    description: "Quem é o cliente-alvo inicial (será refinado na descoberta)"
+
+phases:
+  - id: phase_1_descoberta
+    name: "Descoberta da Dor"
+    agent: rob-fitzpatrick
+    secondary: [steve-blank]
+    task: interview-customers.md
+    depends_on: []
+    description: "Sair do prédio e entrevistar (Mom Test) para validar se a dor é real, frequente e cara — fatos do passado, não opiniões sobre o futuro"
+    checkpoint:
+      gate: "Dor validada com amostra mínima de clientes reais; segmento específico identificado"
+      veto: "aletheia-chief dá HALT se a 'evidência' for opinião/elogio/hipótese, ou se o roteiro tiver perguntas enviesadas"
+      required_output: "Síntese de descoberta: dor, segmento (who-where), earlyvangelists, evidência"
+
+  - id: phase_2_necessidade
+    name: "Estruturar a Necessidade"
+    agent: tony-ulwick
+    task: map-job.md
+    depends_on: [phase_1_descoberta]
+    description: "Mapear o job-to-be-done, os outcomes desejados e pontuar a oportunidade (importância × satisfação) para achar o que está subatendido"
+    checkpoint:
+      gate: "Job articulado + outcomes subatendidos identificados (opportunity score)"
+      veto: "aletheia-chief rejeita se o foco voltar para features pedidas em vez de outcomes"
+      required_output: "Job map + lista de outcomes priorizados por oportunidade"
+
+  - id: phase_3_assuncoes
+    name: "Mapear Assunções"
+    agent: david-bland
+    secondary: [ash-maurya]
+    task: map-assumptions.md
+    depends_on: [phase_2_necessidade]
+    description: "Modelar o negócio (Lean Canvas), listar as assunções de desejabilidade/viabilidade/exequibilidade e priorizar a mais arriscada (leap of faith) por importância × evidência"
+    checkpoint:
+      gate: "Assunção mais arriscada identificada e priorizada; Lean Canvas preenchido"
+      veto: "aletheia-chief rejeita se a assunção mais arriscada não for a escolhida para testar primeiro"
+      required_output: "Mapa de assunções (2x2) + Lean Canvas + riskiest assumption"
+
+  - id: phase_4_experimento
+    name: "Desenhar o Experimento / MVP"
+    agent: eric-ries
+    secondary: [david-bland]
+    task: design-experiment.md
+    depends_on: [phase_3_assuncoes]
+    description: "Escolher o MENOR MVP que testa a assunção mais arriscada e escrever o test card (hipótese / teste / métrica / critério de sucesso / critério de kill)"
+    checkpoint:
+      gate: "Test card completo com critério de sucesso E critério de kill; tipo de MVP é o mínimo viável"
+      veto: "aletheia-chief dá HALT se faltar métrica de validação ou critério de kill"
+      required_output: "Test card + tipo de MVP escolhido + métrica de validação"
+
+  - id: phase_5_demanda
+    name: "Testar a Demanda"
+    agent: alberto-savoia
+    task: test-demand.md
+    depends_on: [phase_4_experimento]
+    description: "Pretotipar para coletar skin-in-the-game data (comportamento real), formular a XYZ hypothesis e dimensionar o mercado de baixo pra cima"
+    checkpoint:
+      gate: "Demanda testada com dados de comportamento real; XYZ hypothesis avaliada"
+      veto: "aletheia-chief rejeita TAM 'de cima pra baixo' sem teste de demanda real"
+      required_output: "Resultado do pretotype + leitura de demanda + sizing pragmático"
+
+  - id: phase_6_decisao
+    name: "Gate + Decisão"
+    agent: aletheia-chief
+    task: decide.md
+    depends_on: [phase_5_demanda]
+    description: "Rodar o gate de evidência (8 critérios) sobre toda a jornada e decidir: perseverar, pivotar ou parar. Se perseverar para build, preparar o handoff."
+    checkpoint:
+      gate: "Decisão clara (perseverar/pivotar/parar) fundamentada na evidência; se build, gate de evidência 100% aprovado"
+      veto: "GATE INVIOLÁVEL — HALT se recomendar build sem dor validada + hipótese falsificável + métrica + critério de kill"
+      required_output: "Painel de decisão + (se build) pacote de handoff ao squad de execução"
+
+completion_criteria:
+  - "A dor foi validada com evidência de comportamento real (não opinião)"
+  - "A assunção mais arriscada foi testada com o menor experimento possível"
+  - "Existe decisão explícita: perseverar, pivotar ou parar"
+  - "Se perseverar para build: gate de evidência aprovado e handoff preparado"
+  - "Se pivotar/parar: aprendizado documentado e próximo passo definido"
+
+error_handling:
+  dor_nao_validada: "HALT antes de solução. Voltar à descoberta (Fitzpatrick/Blank) ou matar a ideia. NÃO avançar para experimento/MVP."
+  evidencia_fraca: "Se a evidência é só 'dizem' (não 'fazem'), desenhar um experimento mais forte (Bland) antes de decidir."
+  amostra_insuficiente: "Ampliar entrevistas/pretotype. Se persistir, declarar inconclusivo — nunca inferir PMF de amostra pequena."
+  pressao_para_construir: "Expor as assunções não testadas, propor o menor experimento para a mais arriscada, e só liberar build após evidência. O veto não negocia."
+  escalada: "Decisão de build/kill é sempre do fundador; o squad entrega a verdade, não a permissão."

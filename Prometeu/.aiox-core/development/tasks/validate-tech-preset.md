@@ -4,28 +4,28 @@ responsável: @architect
 responsável_type: agent
 atomic_layer: task
 Entrada: |
-  - preset_path: Path to the tech preset file (default: .aiox-core/data/tech-presets/)
-  - name: Preset name without extension (e.g., "nextjs-react")
-  - strict: If true, warnings become errors (default: false)
-  - fix: If true, create story for fixes (default: false)
+  - preset_path: Caminho para o arquivo de tech preset (padrão: .aiox-core/data/tech-presets/)
+  - name: Nome do preset sem extensão (ex.: "nextjs-react")
+  - strict: Se true, warnings viram erros (padrão: false)
+  - fix: Se true, cria story para correções (padrão: false)
 Saída: |
-  - validation_result: Object with { valid, errors, warnings, suggestions }
-  - report: Formatted report for display
-  - story_path: Path to created story (if --fix and errors found)
+  - validation_result: Objeto com { valid, errors, warnings, suggestions }
+  - report: Relatório formatado para exibição
+  - story_path: Caminho para a story criada (se --fix e erros encontrados)
 Checklist:
-  - [ ] Resolve preset path
-  - [ ] Parse and validate metadata YAML block
-  - [ ] Validate required sections
-  - [ ] Check content quality
-  - [ ] Format result for output
-  - [ ] Create fix story if requested
+  - [ ] Resolver o caminho do preset
+  - [ ] Parsear e validar o bloco YAML de metadata
+  - [ ] Validar as seções obrigatórias
+  - [ ] Verificar a qualidade do conteúdo
+  - [ ] Formatar o resultado para saída
+  - [ ] Criar story de correção se solicitado
 ---
 
 # \*validate-tech-preset
 
-Validates a tech preset file against required structure and metadata fields.
+Valida um arquivo de tech preset contra a estrutura e os campos de metadata obrigatórios.
 
-## Usage
+## Uso
 
 ```
 @architect
@@ -35,21 +35,21 @@ Validates a tech preset file against required structure and metadata fields.
 *validate-tech-preset --all
 ```
 
-## Parameters
+## Parâmetros
 
-| Parameter     | Type   | Default | Description                             |
+| Parâmetro     | Tipo   | Padrão  | Descrição                               |
 | ------------- | ------ | ------- | --------------------------------------- |
-| `preset_path` | string | -       | Full path to preset file                |
-| `name`        | string | -       | Preset name (resolves to tech-presets/) |
-| `--strict`    | flag   | false   | Treat warnings as errors                |
-| `--fix`       | flag   | false   | Create story to fix found issues        |
-| `--all`       | flag   | false   | Validate all presets in directory       |
+| `preset_path` | string | -       | Caminho completo para o arquivo do preset |
+| `name`        | string | -       | Nome do preset (resolve para tech-presets/) |
+| `--strict`    | flag   | false   | Tratar warnings como erros              |
+| `--fix`       | flag   | false   | Criar story para corrigir problemas encontrados |
+| `--all`       | flag   | false   | Validar todos os presets no diretório   |
 
-## Validation Checks
+## Verificações de Validação
 
-### 1. Metadata Validation
+### 1. Validação de Metadata
 
-Checks the YAML metadata block for required fields:
+Verifica o bloco YAML de metadata em busca dos campos obrigatórios:
 
 ```yaml
 preset:
@@ -62,26 +62,26 @@ preset:
   not_suitable_for: []# Warning if missing
 ```
 
-### 2. Required Sections Validation
+### 2. Validação das Seções Obrigatórias
 
-| Section                | Required | Description                  |
-| ---------------------- | -------- | ---------------------------- |
-| Design Patterns        | Yes      | Must have at least 1 pattern |
-| Project Structure      | Yes      | Must have folder structure   |
-| Tech Stack             | Yes      | Must have technology table   |
-| Coding Standards       | Yes      | Must have naming conventions |
-| Testing Strategy       | Yes      | Must have test approach      |
-| File Templates         | No       | Warning if missing           |
-| Error Handling         | No       | Warning if missing           |
-| Performance Guidelines | No       | Warning if missing           |
+| Seção                  | Obrigatória | Descrição                       |
+| ---------------------- | ----------- | ------------------------------- |
+| Design Patterns        | Sim         | Deve ter ao menos 1 padrão      |
+| Project Structure      | Sim         | Deve ter estrutura de pastas    |
+| Tech Stack             | Sim         | Deve ter tabela de tecnologias  |
+| Coding Standards       | Sim         | Deve ter convenções de nomenclatura |
+| Testing Strategy       | Sim         | Deve ter abordagem de testes    |
+| File Templates         | Não         | Warning se ausente              |
+| Error Handling         | Não         | Warning se ausente              |
+| Performance Guidelines | Não         | Warning se ausente              |
 
-### 3. Content Quality Checks
+### 3. Verificações de Qualidade do Conteúdo
 
-- **Design Patterns**: Must have Purpose, Scores, Code Example
-- **Tech Stack**: Table must have Category, Technology, Version, Purpose
-- **Coding Standards**: Must have Good/Bad examples
+- **Design Patterns**: Deve ter Purpose, Scores, Code Example
+- **Tech Stack**: A tabela deve ter Category, Technology, Version, Purpose
+- **Coding Standards**: Deve ter exemplos Good/Bad
 
-## Flow
+## Fluxo
 
 ````
 1. Resolve preset path
@@ -110,7 +110,7 @@ preset:
    └── Save to docs/stories/
 ````
 
-## Output Example
+## Exemplo de Saída
 
 ```
 Validating tech preset: nextjs-react.md
@@ -138,24 +138,24 @@ Warnings: 3
 Result: VALID (with warnings)
 ```
 
-## Error Codes
+## Códigos de Erro
 
-| Code                   | Severity | Description                            |
-| ---------------------- | -------- | -------------------------------------- |
-| `PRESET_NOT_FOUND`     | Error    | Preset file not found                  |
-| `METADATA_MISSING`     | Error    | No YAML metadata block found           |
-| `METADATA_PARSE_ERROR` | Error    | YAML parse error                       |
-| `FIELD_MISSING`        | Error    | Required metadata field missing        |
-| `FIELD_INVALID`        | Error    | Field value invalid (e.g., bad semver) |
-| `SECTION_MISSING`      | Error    | Required section not found             |
-| `PATTERN_INCOMPLETE`   | Error    | Design pattern missing required fields |
-| `NOT_SUITABLE_MISSING` | Warning  | not_suitable_for not defined           |
-| `SECTION_RECOMMENDED`  | Warning  | Recommended section missing            |
-| `EXAMPLE_MISSING`      | Warning  | Good/Bad example missing               |
+| Código                 | Severidade | Descrição                              |
+| ---------------------- | ---------- | -------------------------------------- |
+| `PRESET_NOT_FOUND`     | Error      | Arquivo do preset não encontrado       |
+| `METADATA_MISSING`     | Error      | Nenhum bloco YAML de metadata encontrado |
+| `METADATA_PARSE_ERROR` | Error      | Erro de parsing do YAML                |
+| `FIELD_MISSING`        | Error      | Campo obrigatório de metadata ausente  |
+| `FIELD_INVALID`        | Error      | Valor de campo inválido (ex.: semver malformado) |
+| `SECTION_MISSING`      | Error      | Seção obrigatória não encontrada       |
+| `PATTERN_INCOMPLETE`   | Error      | Design pattern sem campos obrigatórios |
+| `NOT_SUITABLE_MISSING` | Warning    | not_suitable_for não definido          |
+| `SECTION_RECOMMENDED`  | Warning    | Seção recomendada ausente              |
+| `EXAMPLE_MISSING`      | Warning    | Exemplo Good/Bad ausente               |
 
-## Fix Story Generation
+## Geração da Story de Correção
 
-When `--fix` is used and issues are found:
+Quando `--fix` é usado e problemas são encontrados:
 
 ```markdown
 # Story: Fix Tech Preset - {name}
@@ -179,8 +179,8 @@ Fix validation issues in tech preset {name}.md
 - Preset: .aiox-core/data/tech-presets/{name}.md
 ```
 
-## Related
+## Relacionados
 
-- **Agent:** @architect (Aria)
-- **Location:** .aiox-core/data/tech-presets/
-- **Similar:** validate-squad (validation pattern reference)
+- **Agente:** @architect (Aria)
+- **Localização:** .aiox-core/data/tech-presets/
+- **Similar:** validate-squad (referência de padrão de validação)

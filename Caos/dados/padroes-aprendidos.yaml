@@ -16,8 +16,8 @@
 #     recomendacao: o que fazer da próxima vez
 #     registradoEm: ISO-8601
 
-versao: "1.0.0"
-atualizado_em: "2026-06-11"
+versao: "1.1.0"
+atualizado_em: "2026-06-20"
 
 padroes:
   # Sementes iniciais derivadas das referências (aiox-core, xquads-squads).
@@ -53,3 +53,26 @@ padroes:
     evidencia: ["referência: aiox-core constitution + Kolden criacao-de-hooks"]
     recomendacao: "Toda proibição NÃO-NEGOCIÁVEL do PRD vira hook PreToolUse, não só texto."
     registradoEm: "2026-06-11T00:00:00Z"
+
+  veto-semantico-multicamada:
+    dominio: geral
+    tipo: decisao_arquitetura
+    padrao: >
+      Quando o "veto" é um gate de RACIOCÍNIO (ex.: "não recomende build sem evidência"), um
+      hook determinístico não consegue julgá-lo sozinho. A mitigação robusta é multicamada:
+      regra no orquestrador (veto_rules) + item CRITICAL no checklist (gate) + checkpoint com
+      `veto` no workflow + reflexo PreToolUse para a parte mecânica (segredos, comandos destrutivos).
+    evidencia: ["aletheia"]
+    recomendacao: "Separe o veto mecânico (reflexo) do veto semântico (prompt+checklist+workflow); não finja que um hook resolve um gate de julgamento."
+    registradoEm: "2026-06-20T00:00:00Z"
+
+  squad-de-validacao-precede-execucao:
+    dominio: geral
+    tipo: decisao_arquitetura
+    padrao: >
+      Squads de "entrada de funil" (descoberta/validação) entregam mais valor quando NÃO executam
+      e fazem handoff explícito (por arquivo/contexto) para os squads de execução já existentes,
+      em vez de duplicar capacidade. O ADAPT vira um handoff, não uma cópia.
+    evidencia: ["aletheia -> aglaia/pluto/harmonia/caliope/prometeu/metis"]
+    recomendacao: "Para squads novos que tocam domínios já cobertos, defina handoffs nomeados no squad.yaml (external_handoffs) em vez de reimplementar."
+    registradoEm: "2026-06-20T00:00:00Z"

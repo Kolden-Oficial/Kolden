@@ -12,7 +12,7 @@ agent: devops
 elicit: false
 ```
 
-## Description
+## Descrição
 
 Valida todos os links internos em arquivos markdown no diretório `docs/`. Detecta:
 
@@ -20,7 +20,7 @@ Valida todos os links internos em arquivos markdown no diretório `docs/`. Detec
 2. **Marcações incorretas** - marcados "coming soon" mas arquivo existe
 3. **Conteúdo planejado** - links marcados "coming soon" (roadmap)
 
-## Usage
+## Uso
 
 ```bash
 # Relatório completo
@@ -38,13 +38,13 @@ python scripts/check-markdown-links.py --fix
 
 ## Exit Codes
 
-| Code | Meaning                                          |
-| ---- | ------------------------------------------------ |
-| 0    | Todos os links válidos (ou apenas "coming soon") |
-| 1    | Links quebrados encontrados                      |
-| 2    | Marcações incorretas encontradas                 |
+| Código | Significado                                      |
+| ------ | ------------------------------------------------ |
+| 0      | Todos os links válidos (ou apenas "coming soon") |
+| 1      | Links quebrados encontrados                      |
+| 2      | Marcações incorretas encontradas                 |
 
-## CI Integration
+## Integração com CI
 
 Adicionar ao GitHub Actions:
 
@@ -76,7 +76,7 @@ O modo `--fix` automaticamente:
 python scripts/check-markdown-links.py --fix
 ```
 
-## Output Example
+## Exemplo de Saída
 
 ```
 ======================================================================
@@ -108,7 +108,7 @@ SUMMARY
   Unique destinations to create: 8
 ```
 
-## Related
+## Relacionados
 
 - `scripts/check-markdown-links.py` - Script de verificação
 - `docs/` - Diretório de documentação

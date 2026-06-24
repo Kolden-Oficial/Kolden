@@ -1,31 +1,31 @@
-# Deep Research Prompt Template
+# Template de Prompt de Deep Research
 
 **Template ID:** research-prompt-template-v1
-**Purpose:** Generate structured deep research prompts for agent creation
-**Based On:** Meta-framework for Deep Research prompt construction
+**Propósito:** Gerar prompts estruturados de deep research para criação de agentes
+**Baseado Em:** Meta-framework para construção de prompts de Deep Research
 
 ---
 
-## Template Variables
+## Variáveis do Template
 
-| Variable                   | Type   | Description              | Example                              |
+| Variável                   | Tipo   | Descrição                | Exemplo                              |
 | -------------------------- | ------ | ------------------------ | ------------------------------------ |
-| `{{specialist_name}}`      | string | Human expert name        | "Gary Halbert"                       |
-| `{{specialist_slug}}`      | string | Slug format              | "gary_halbert"                       |
-| `{{activity}}`             | string | Specific activity        | "sales-page"                         |
-| `{{activity_expanded}}`    | string | Expanded description     | "Sales Page Creation"                |
-| `{{domain}}`               | string | Domain area              | "copywriting"                        |
-| `{{time_period}}`          | string | Relevant years           | "1970-2007"                          |
-| `{{agent_purpose}}`        | string | What agent does          | "Create high-converting sales pages" |
-| `{{local_knowledge_note}}` | string | What's already available | "Already have 3,520 lines..."        |
-| `{{scope_items}}`          | array  | 4-6 research angles      | [...]                                |
-| `{{requirements}}`         | array  | 3-4 research parameters  | [...]                                |
-| `{{sources}}`              | array  | 3-4 source types         | [...]                                |
-| `{{deliverables}}`         | array  | 3-5 expected outputs     | [...]                                |
+| `{{specialist_name}}`      | string | Nome do especialista humano | "Gary Halbert"                    |
+| `{{specialist_slug}}`      | string | Formato slug             | "gary_halbert"                       |
+| `{{activity}}`             | string | Atividade específica     | "sales-page"                         |
+| `{{activity_expanded}}`    | string | Descrição expandida      | "Sales Page Creation"                |
+| `{{domain}}`               | string | Área de domínio          | "copywriting"                        |
+| `{{time_period}}`          | string | Anos relevantes          | "1970-2007"                          |
+| `{{agent_purpose}}`        | string | O que o agente faz       | "Create high-converting sales pages" |
+| `{{local_knowledge_note}}` | string | O que já está disponível | "Already have 3,520 lines..."        |
+| `{{scope_items}}`          | array  | 4-6 ângulos de pesquisa  | [...]                                |
+| `{{requirements}}`         | array  | 3-4 parâmetros de pesquisa | [...]                              |
+| `{{sources}}`              | array  | 3-4 tipos de fonte       | [...]                                |
+| `{{deliverables}}`         | array  | 3-5 saídas esperadas     | [...]                                |
 
 ---
 
-## Prompt Template
+## Template de Prompt
 
 ```markdown
 # Deep Research Prompt: {{specialist_name}} {{activity_expanded}} Methodology
@@ -105,9 +105,9 @@
 
 ---
 
-## Pre-Built Scope Templates by Domain
+## Templates de Escopo Pré-Construídos por Domínio
 
-### Copywriting (Specialist-Based)
+### Copywriting (Baseado em Especialista)
 
 ```yaml
 scope_templates:
@@ -155,7 +155,7 @@ scope_templates:
         - 'Comparison: excellent vs weak examples'
 ```
 
-### Product Management (Generic)
+### Product Management (Genérico)
 
 ```yaml
 scope_templates:
@@ -196,7 +196,7 @@ scope_templates:
         - 'Prevention techniques'
 ```
 
-### Sales (Specialist-Based)
+### Sales (Baseado em Especialista)
 
 ```yaml
 scope_templates:
@@ -238,9 +238,9 @@ scope_templates:
 
 ---
 
-## Requirements Templates by Research Mode
+## Templates de Requisitos por Modo de Pesquisa
 
-### Comprehensive (No Local Knowledge)
+### Comprehensive (Sem Conhecimento Local)
 
 ```yaml
 requirements_comprehensive:
@@ -250,7 +250,7 @@ requirements_comprehensive:
   - 'Document both what TO DO and what NOT to do'
 ```
 
-### Complementary (Has Local Knowledge)
+### Complementary (Tem Conhecimento Local)
 
 ```yaml
 requirements_complementary:
@@ -262,7 +262,7 @@ requirements_complementary:
 
 ---
 
-## Sources Templates by Domain
+## Templates de Fontes por Domínio
 
 ### Copywriting
 
@@ -309,9 +309,9 @@ sources_sales:
 
 ---
 
-## Deliverables Templates
+## Templates de Entregáveis
 
-### Standard Deliverables Set
+### Conjunto Padrão de Entregáveis
 
 ```yaml
 deliverables_standard:
@@ -331,7 +331,7 @@ deliverables_standard:
     description: 'Common mistakes and how to avoid them'
 ```
 
-### Extended Deliverables (Deep Research)
+### Entregáveis Estendidos (Deep Research)
 
 ```yaml
 deliverables_extended:
@@ -353,9 +353,9 @@ deliverables_extended:
 
 ---
 
-## Example: Fully Rendered Prompt
+## Exemplo: Prompt Totalmente Renderizado
 
-### Input Variables
+### Variáveis de Entrada
 
 ```yaml
 specialist_name: 'Eugene Schwartz'
@@ -368,7 +368,7 @@ agent_purpose: 'Create headlines that capture attention and qualify prospects'
 local_knowledge_note: "Have 'Breakthrough Advertising' excerpts (450 lines)"
 ```
 
-### Rendered Output
+### Saída Renderizada
 
 ```markdown
 # Deep Research Prompt: Eugene Schwartz Headline Creation Methodology
@@ -471,16 +471,16 @@ testing methodology.
 
 ---
 
-## Usage Notes
+## Notas de Uso
 
-1. **Variable Substitution:** Replace all `{{variables}}` with actual values
-2. **Scope Selection:** Choose 4-6 most relevant angles from templates
-3. **Adaptation:** Modify sub-points based on specific agent purpose
-4. **Local Knowledge:** Adjust research mode based on existing material
-5. **YOLO Mode:** Skip clarifying questions in autonomous execution
+1. **Substituição de Variáveis:** Substitua todas as `{{variables}}` por valores reais
+2. **Seleção de Escopo:** Escolha os 4-6 ângulos mais relevantes dos templates
+3. **Adaptação:** Modifique os sub-pontos com base no propósito específico do agente
+4. **Conhecimento Local:** Ajuste o modo de pesquisa com base no material existente
+5. **Modo YOLO:** Pule as perguntas de esclarecimento na execução autônoma
 
 ---
 
-**Template Version:** 1.0.0
-**Created:** 2026-01-22
-**Part of:** squads/squad-architect
+**Versão do Template:** 1.0.0
+**Criado:** 2026-01-22
+**Parte de:** squads/squad-architect

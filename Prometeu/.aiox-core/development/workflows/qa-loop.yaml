@@ -1,13 +1,13 @@
 workflow:
   id: qa-loop
-  name: QA Loop Orchestrator - Review Fix Re-review Cycle
+  name: Orquestrador do QA Loop - Ciclo Revisão Correção Re-revisão
   version: "1.0"
   description: >-
-    Automated QA loop that orchestrates the review → fix → re-review cycle.
-    Runs up to maxIterations (default 5), tracking each iteration's results.
-    Escalates to human when max iterations reached or manual stop requested.
+    QA loop automatizado que orquestra o ciclo revisão → correção → re-revisão.
+    Executa até maxIterations (padrão 5), rastreando os resultados de cada iteração.
+    Escala para um humano quando o máximo de iterações é atingido ou quando uma parada manual é solicitada.
 
-    Part of Epic 6 - QA Evolution: Autonomous Development Engine (ADE).
+    Parte do Epic 6 - QA Evolution: Autonomous Development Engine (ADE).
 
   type: loop
   project_types:
@@ -16,16 +16,16 @@ workflow:
     - qa-automation
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              TRIGGER CONFIGURATION
+  #                              CONFIGURAÇÃO DE GATILHOS
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   triggers:
-    # Primary trigger: Explicit command to start loop
+    # Gatilho primário: Comando explícito para iniciar o loop
     - event: command
       command: "*qa-loop"
       action: start_loop
 
-    # Start from specific phase
+    # Iniciar a partir de uma fase específica
     - event: command
       command: "*qa-loop-review"
       action: run_step
@@ -36,51 +36,51 @@ workflow:
       action: run_step
       step: fix
 
-    # Stop command (AC5)
+    # Comando de parada (AC5)
     - event: command
       command: "*stop-qa-loop"
       action: stop_loop
 
-    # Resume command
+    # Comando de retomada
     - event: command
       command: "*resume-qa-loop"
       action: resume_loop
 
-    # Force escalation
+    # Forçar escalonamento
     - event: command
       command: "*escalate-qa-loop"
       action: escalate
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              CONFIGURATION
+  #                              CONFIGURAÇÃO
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   config:
-    # AC2: Maximum iterations (configurable)
+    # AC2: Máximo de iterações (configurável)
     maxIterations: 5
     configPath: autoClaude.qaLoop.maxIterations
 
-    # Progress tracking
+    # Rastreamento de progresso
     showProgress: true
     verbose: true
 
-    # Status file location (AC4)
+    # Localização do arquivo de status (AC4)
     statusFile: qa/loop-status.json
 
-    # Dashboard integration (AC7)
+    # Integração com o dashboard (AC7)
     dashboardStatusPath: .aiox/dashboard/status.json
     legacyStatusPath: .aiox/status.json
 
-    # Timeout per phase (milliseconds)
-    reviewTimeout: 1800000  # 30 minutes
-    fixTimeout: 3600000     # 60 minutes
+    # Timeout por fase (milissegundos)
+    reviewTimeout: 1800000  # 30 minutos
+    fixTimeout: 3600000     # 60 minutos
 
-    # Retry configuration
+    # Configuração de retentativas
     maxRetries: 2
     retryDelay: 5000
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              LOOP STATUS SCHEMA (AC4)
+  #                              SCHEMA DO STATUS DO LOOP (AC4)
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   status_schema:
@@ -97,26 +97,26 @@ workflow:
         issuesFound: number
         fixedAt: ISO-8601 | null
         issuesFixed: number | null
-        duration: number  # milliseconds
+        duration: number  # milissegundos
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              WORKFLOW SEQUENCE
+  #                              SEQUÊNCIA DO WORKFLOW
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   sequence:
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # STEP 1: REVIEW (QA Agent)
+    # PASSO 1: REVISÃO (Agente QA)
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: review
       phase: 1
-      phase_name: "QA Review"
+      phase_name: "Revisão QA"
       agent: qa
 
       description: >-
-        Execute comprehensive QA review of the story implementation.
-        Produces a verdict: APPROVE, REJECT, or BLOCKED.
+        Executa uma revisão de QA abrangente da implementação da story.
+        Produz um veredito: APPROVE, REJECT ou BLOCKED.
 
       task: qa-review-story.md
 
@@ -133,7 +133,7 @@ workflow:
       timeout: "{config.reviewTimeout}"
 
       on_success:
-        log: "Review complete: {verdict} ({issuesFound} issues)"
+        log: "Revisão concluída: {verdict} ({issuesFound} problemas)"
         next: check_verdict
 
       on_failure:
@@ -142,43 +142,43 @@ workflow:
         on_exhausted: escalate
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # STEP 2: CHECK VERDICT (AC1)
+    # PASSO 2: VERIFICAR VEREDITO (AC1)
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: check_verdict
       phase: 2
-      phase_name: "Verdict Check"
+      phase_name: "Verificação do Veredito"
       agent: system
 
       description: >-
-        Evaluate the review verdict and determine next action.
-        APPROVE = complete, REJECT = continue to fix, BLOCKED = escalate.
+        Avalia o veredito da revisão e determina a próxima ação.
+        APPROVE = concluir, REJECT = continuar para a correção, BLOCKED = escalar.
 
       condition_check:
         - condition: verdict == "APPROVE"
           action: complete
-          log: "Story APPROVED after {currentIteration} iteration(s)"
+          log: "Story APPROVED após {currentIteration} iteração(ões)"
 
         - condition: verdict == "BLOCKED"
           action: escalate
-          reason: "QA review BLOCKED - requires human intervention"
+          reason: "Revisão de QA BLOCKED - requer intervenção humana"
 
         - condition: verdict == "REJECT"
           action: continue
           next: create_fix_request
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # STEP 3: CREATE FIX REQUEST (QA Agent)
+    # PASSO 3: CRIAR PEDIDO DE CORREÇÃO (Agente QA)
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: create_fix_request
       phase: 3
-      phase_name: "Create Fix Request"
+      phase_name: "Criar Pedido de Correção"
       agent: qa
 
       description: >-
-        Generate a structured fix request document from review findings.
-        Prioritizes issues and provides actionable fix instructions.
+        Gera um documento estruturado de pedido de correção a partir dos achados da revisão.
+        Prioriza os problemas e fornece instruções de correção acionáveis.
 
       task: qa-create-fix-request.md
 
@@ -192,25 +192,25 @@ workflow:
         - prioritizedIssues
 
       on_success:
-        log: "Fix request created with {prioritizedIssues.length} prioritized issues"
+        log: "Pedido de correção criado com {prioritizedIssues.length} problemas priorizados"
         next: fix_issues
 
       on_failure:
         action: continue
-        fallback: "Use raw gate file for fixes"
+        fallback: "Usar o arquivo de gate bruto para as correções"
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # STEP 4: FIX ISSUES (Dev Agent)
+    # PASSO 4: CORRIGIR PROBLEMAS (Agente Dev)
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: fix_issues
       phase: 4
-      phase_name: "Apply Fixes"
+      phase_name: "Aplicar Correções"
       agent: dev
 
       description: >-
-        Developer agent applies fixes based on the fix request.
-        Runs tests and validates changes.
+        O agente desenvolvedor aplica as correções com base no pedido de correção.
+        Roda os testes e valida as mudanças.
 
       task: dev-apply-qa-fixes.md
 
@@ -226,7 +226,7 @@ workflow:
       timeout: "{config.fixTimeout}"
 
       on_success:
-        log: "Fixed {issuesFixed} of {issuesFound} issues"
+        log: "Corrigidos {issuesFixed} de {issuesFound} problemas"
         next: increment_iteration
 
       on_failure:
@@ -234,36 +234,36 @@ workflow:
         max_retries: "{config.maxRetries}"
         on_exhausted:
           action: escalate
-          reason: "Dev agent unable to apply fixes after retries"
+          reason: "Agente Dev incapaz de aplicar as correções após as retentativas"
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # STEP 5: INCREMENT ITERATION (AC2)
+    # PASSO 5: INCREMENTAR ITERAÇÃO (AC2)
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: increment_iteration
       phase: 5
-      phase_name: "Check Iteration"
+      phase_name: "Verificar Iteração"
       agent: system
 
       description: >-
-        Increment iteration counter and check against max.
-        If max reached, escalate to human (AC3).
+        Incrementa o contador de iterações e verifica contra o máximo.
+        Se o máximo for atingido, escala para um humano (AC3).
 
       action: increment_and_check
 
       condition_check:
         - condition: currentIteration >= maxIterations
           action: escalate
-          reason: "Max iterations ({maxIterations}) reached without APPROVE"
-          log: "Max iterations reached - escalating to human"
+          reason: "Máximo de iterações ({maxIterations}) atingido sem APPROVE"
+          log: "Máximo de iterações atingido - escalando para um humano"
 
         - condition: currentIteration < maxIterations
           action: continue
           next: review
-          log: "Starting iteration {currentIteration + 1}/{maxIterations}"
+          log: "Iniciando a iteração {currentIteration + 1}/{maxIterations}"
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              ESCALATION (AC3)
+  #                              ESCALONAMENTO (AC3)
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   escalation:
@@ -276,50 +276,50 @@ workflow:
       - manual_escalate
 
     action:
-      log: "Escalating to human with full context"
+      log: "Escalando para um humano com o contexto completo"
       status: "escalated"
 
       context_package:
         - loop-status.json
-        - all gate files from history
-        - all fix requests
-        - summary of iterations
+        - todos os arquivos de gate do histórico
+        - todos os pedidos de correção
+        - resumo das iterações
 
       notification:
         message: |
-          QA Loop Escalation for {storyId}
+          Escalonamento do QA Loop para {storyId}
 
-          Reason: {escalation.reason}
-          Iterations completed: {currentIteration}
-          Last verdict: {history[-1].verdict}
-          Outstanding issues: {history[-1].issuesFound - history[-1].issuesFixed}
+          Motivo: {escalation.reason}
+          Iterações concluídas: {currentIteration}
+          Último veredito: {history[-1].verdict}
+          Problemas pendentes: {history[-1].issuesFound - history[-1].issuesFixed}
 
-          Review the context package and decide:
-          1. Resume loop: *resume-qa-loop {storyId}
-          2. Manually fix and approve
-          3. Reject story and create follow-up
+          Revise o pacote de contexto e decida:
+          1. Retomar o loop: *resume-qa-loop {storyId}
+          2. Corrigir e aprovar manualmente
+          3. Rejeitar a story e criar um follow-up
 
         channels: [log, console]
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              WORKFLOW COMPLETION (AC6)
+  #                              CONCLUSÃO DO WORKFLOW (AC6)
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   completion:
     success_message: |
       ╔══════════════════════════════════════════════════════════════╗
-      ║  QA Loop Complete                                            ║
+      ║  QA Loop Concluído                                           ║
       ╚══════════════════════════════════════════════════════════════╝
 
-      Story:       {storyId}
-      Status:      {status}
-      Iterations:  {currentIteration}/{maxIterations}
-      Final Verdict: {history[-1].verdict}
+      Story:        {storyId}
+      Status:       {status}
+      Iterações:    {currentIteration}/{maxIterations}
+      Veredito Final: {history[-1].verdict}
 
-      Iteration History:
+      Histórico de Iterações:
       {history.map(h => `  ${h.iteration}. ${h.verdict} - ${h.issuesFound} found, ${h.issuesFixed || 0} fixed`).join('\n')}
 
-      Duration: {totalDuration}
+      Duração: {totalDuration}
 
     summary:
       storyId: "{storyId}"
@@ -335,61 +335,61 @@ workflow:
       - summary.md
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              ERROR HANDLING
+  #                              TRATAMENTO DE ERROS
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   error_handling:
     missing_story_id:
-      message: "Story ID is required"
-      suggestion: "Usage: *qa-loop STORY-42"
+      message: "O ID da story é obrigatório"
+      suggestion: "Uso: *qa-loop STORY-42"
       action: prompt
 
     review_timeout:
-      message: "Review phase timed out"
-      suggestion: "Check QA agent status and retry: *resume-qa-loop {storyId}"
+      message: "A fase de revisão atingiu o timeout"
+      suggestion: "Verifique o status do agente QA e tente novamente: *resume-qa-loop {storyId}"
       action: escalate
 
     fix_timeout:
-      message: "Fix phase timed out"
-      suggestion: "Check Dev agent status and retry: *resume-qa-loop {storyId}"
+      message: "A fase de correção atingiu o timeout"
+      suggestion: "Verifique o status do agente Dev e tente novamente: *resume-qa-loop {storyId}"
       action: escalate
 
     invalid_status:
-      message: "Loop status file is corrupted or invalid"
-      suggestion: "Reset loop: *qa-loop {storyId} --reset"
+      message: "O arquivo de status do loop está corrompido ou inválido"
+      suggestion: "Resete o loop: *qa-loop {storyId} --reset"
       action: halt
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              STOP/RESUME SUPPORT (AC5)
+  #                              SUPORTE A PARAR/RETOMAR (AC5)
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   control:
     stop:
       command: "*stop-qa-loop"
       action: |
-        - Set status to "stopped"
-        - Save current state to loop-status.json
-        - Log: "QA loop stopped at iteration {currentIteration}"
-        - Allow resume later
+        - Definir o status como "stopped"
+        - Salvar o estado atual em loop-status.json
+        - Log: "QA loop parado na iteração {currentIteration}"
+        - Permitir retomada posterior
 
     resume:
       command: "*resume-qa-loop"
       action: |
-        - Load state from loop-status.json
-        - Verify status was "stopped" or "escalated"
-        - Set status to "in_progress"
-        - Continue from last step
-        - Log: "QA loop resumed at iteration {currentIteration}"
+        - Carregar o estado de loop-status.json
+        - Verificar se o status era "stopped" ou "escalated"
+        - Definir o status como "in_progress"
+        - Continuar a partir do último passo
+        - Log: "QA loop retomado na iteração {currentIteration}"
 
     reset:
       command: "*qa-loop --reset"
       action: |
-        - Delete loop-status.json
-        - Start fresh loop
-        - Log: "QA loop reset for {storyId}"
+        - Excluir loop-status.json
+        - Iniciar um loop novo
+        - Log: "QA loop resetado para {storyId}"
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              DASHBOARD INTEGRATION (AC7)
+  #                              INTEGRAÇÃO COM O DASHBOARD (AC7)
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   integration:
@@ -416,14 +416,14 @@ workflow:
         message: "QA Loop APPROVED: {storyId}"
         channels: [log]
       on_escalate:
-        message: "QA Loop ESCALATED: {storyId} - needs attention"
+        message: "QA Loop ESCALATED: {storyId} - requer atenção"
         channels: [log]
       on_stop:
         message: "QA Loop STOPPED: {storyId}"
         channels: [log]
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              METADATA
+  #                              METADADOS
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   metadata:

@@ -1,26 +1,26 @@
-# @qa (Quinn) - System Documentation
+# @qa (Quinn) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/qa-system.md) | [ES](../../es/aiox-agent-flows/qa-system.md)
 
 ---
 
-## Summary
+## Resumo
 
-**@qa** (Quinn) is the **Guardian** of quality in the AIOX agent system. This agent is responsible for:
+O **@qa** (Quinn) é o **Guardião** da qualidade no sistema de agentes AIOX. Este agente é responsável por:
 
-- Testing and quality assurance
-- Writing and executing test cases
-- Validating acceptance criteria
-- Ensuring code quality and standards compliance
-
----
-
-## Full Documentation
-
-For complete documentation including flowcharts, command mappings, integrations, and troubleshooting, please refer to the Portuguese version:
-
-**[View Full Documentation (PT)](../../aiox-agent-flows/qa-system.md)**
+- Testes e garantia de qualidade (quality assurance)
+- Escrever e executar casos de teste
+- Validar os acceptance criteria
+- Garantir a qualidade do código e a conformidade com os padrões
 
 ---
 
-*AIOX Agent Flows - @qa System v1.0*
+## Documentação Completa
+
+Para a documentação completa, incluindo fluxogramas, mapeamentos de comandos, integrações e troubleshooting, consulte a versão em português:
+
+**[Ver Documentação Completa (PT)](../../aiox-agent-flows/qa-system.md)**
+
+---
+
+*AIOX Agent Flows - Sistema @qa v1.0*

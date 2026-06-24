@@ -267,6 +267,111 @@ def cmd_apify(args) -> dict:
     return _harvest_apify(args.actor, args.input, args.modo)
 
 
+def _descobrir_virais(path: str, params_json: str, modo: str) -> dict:
+    """Descoberta de vídeos/posts virais via SociaVault (multi-plataforma TikTok/IG/YT/X...).
+    `path` e `params` seguem a doc da SociaVault (não inventamos endpoints aqui)."""
+    import os
+    import json as _json
+    try:
+        import requests  # type: ignore
+    except Exception as e:  # noqa: BLE001
+        return _faltou_dep("viral", f"requests ({e})")
+    key = os.environ.get("SOCIAVAULT_API_KEY")
+    if not key:
+        return _envelope("sociavault", modo, None, "viral",
+                         erro="SOCIAVAULT_API_KEY ausente no ambiente. Rode sob `infisical run ... --env=dev`.")
+    try:
+        params = _json.loads(params_json) if params_json else {}
+    except Exception as e:  # noqa: BLE001
+        return _envelope("sociavault", modo, None, "viral", erro=f"--params não é JSON válido: {e}")
+    url = "https://api.sociavault.com/v1/" + path.lstrip("/")
+    try:
+        r = requests.get(url, headers={"X-API-Key": key}, params=params, timeout=60)
+        r.raise_for_status()
+        dados = r.json()
+    except Exception as e:  # noqa: BLE001
+        return _envelope(url, modo, None, "viral", erro=f"Falha na SociaVault: {e}")
+    return _envelope(url, modo, dados, "viral")
+
+
+def _stt_speechmatics(audio_path: str):
+    """Transcrição via Speechmatics (melhor pt-BR). Retorna texto (str) ou {'erro': ...}."""
+    import os
+    key = os.environ.get("SPEECHMATICS_API_KEY")
+    if not key:
+        return {"erro": "SPEECHMATICS_API_KEY ausente. Rode sob `infisical run ... --env=dev`."}
+    try:
+        from speechmatics.models import ConnectionSettings  # type: ignore
+        from speechmatics.batch_client import BatchClient  # type: ignore
+    except Exception as e:  # noqa: BLE001
+        return {"erro": f"speechmatics-python não instalado ({e}). pip install speechmatics-python"}
+    cfg = {"type": "transcription", "transcription_config": {"language": "pt", "diarization": "speaker"}}
+    settings = ConnectionSettings(url="https://asr.api.speechmatics.com/v2", auth_token=key)
+    try:
+        with BatchClient(settings) as client:
+            job_id = client.submit_job(audio=audio_path, transcription_config=cfg["transcription_config"])
+            return client.wait_for_completion(job_id, transcription_format="txt")
+    except Exception as e:  # noqa: BLE001
+        return {"erro": f"Falha Speechmatics: {e}"}
+
+
+def _stt_deepgram(audio_path: str):
+    """Transcrição via Deepgram (fallback / realtime). Retorna texto (str) ou {'erro': ...}."""
+    import os
+    key = os.environ.get("DEEPGRAM_API_KEY")
+    if not key:
+        return {"erro": "DEEPGRAM_API_KEY ausente. Rode sob `infisical run ... --env=prod`."}
+    try:
+        from deepgram import DeepgramClient, PrerecordedOptions  # type: ignore
+    except Exception as e:  # noqa: BLE001
+        return {"erro": f"deepgram-sdk não instalado ({e}). pip install deepgram-sdk"}
+    try:
+        dg = DeepgramClient(key)
+        with open(audio_path, "rb") as f:
+            source = {"buffer": f.read()}
+        opts = PrerecordedOptions(model="nova-2", language="pt-BR", diarize=True, smart_format=True)
+        resp = dg.listen.prerecorded.v("1").transcribe_file(source, opts)
+        return resp["results"]["channels"][0]["alternatives"][0]["transcript"]
+    except Exception as e:  # noqa: BLE001
+        return {"erro": f"Falha Deepgram: {e}"}
+
+
+def _transcrever(url: str, engine: str, modo: str) -> dict:
+    """Baixa o áudio do vídeo (yt-dlp) e transcreve (Speechmatics padrão; Deepgram fallback).
+    Para o time de copy: extrair ganchos/estrutura de vídeos virais → handoff Caliope."""
+    import os
+    import glob
+    import subprocess
+    import tempfile
+    tmpdir = tempfile.mkdtemp(prefix="argos_audio_")
+    out_tmpl = os.path.join(tmpdir, "audio.%(ext)s")
+    try:
+        subprocess.run(["yt-dlp", "-x", "--audio-format", "mp3", "-o", out_tmpl, url],
+                       capture_output=True, text=True, timeout=300, check=True)
+    except FileNotFoundError:
+        return _faltou_dep("transcrever", "yt-dlp (pip install yt-dlp)")
+    except Exception as e:  # noqa: BLE001
+        return _envelope(url, modo, None, "transcrever", erro=f"Falha no yt-dlp: {e}")
+    arquivos = glob.glob(os.path.join(tmpdir, "audio.*"))
+    if not arquivos:
+        return _envelope(url, modo, None, "transcrever", erro="yt-dlp não produziu áudio.")
+    texto = _stt_deepgram(arquivos[0]) if engine == "deepgram" else _stt_speechmatics(arquivos[0])
+    if isinstance(texto, dict):  # erro encapsulado
+        return _envelope(url, modo, None, "transcrever", erro=texto.get("erro"))
+    return _envelope(url, modo, {"engine": engine, "texto": texto}, "transcrever")
+
+
+def cmd_viral(args) -> dict:
+    bloqueio = _bloqueia_cinza(args.modo)
+    if bloqueio:
+        return bloqueio
+    return _descobrir_virais(args.path, args.params, args.modo)
+
+
+def cmd_transcrever(args) -> dict:
+    return _transcrever(args.url, args.engine, "verde")
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(prog="argos-engine", description="Motor de scraping unificado do Argos")
     sub = parser.add_subparsers(dest="cmd", required=True)
@@ -293,6 +398,17 @@ def main(argv=None) -> int:
     p_a.add_argument("--input", default="", help="JSON de input do actor (ex.: '{\"startUrls\":[{\"url\":\"...\"}]}')")
     p_a.add_argument("--modo", default="verde", choices=["verde", "cinza"])
     p_a.set_defaults(func=cmd_apify)
+
+    p_v = sub.add_parser("viral", help="Descoberta de vídeos/posts virais via SociaVault (SOCIAVAULT_API_KEY via Infisical)")
+    p_v.add_argument("--path", required=True, help="Path da API SociaVault conforme a doc, ex.: scrape/tiktok/profile")
+    p_v.add_argument("--params", default="", help="JSON de query params, ex.: '{\"handle\":\"...\"}'")
+    p_v.add_argument("--modo", default="verde", choices=["verde", "cinza"])
+    p_v.set_defaults(func=cmd_viral)
+
+    p_t = sub.add_parser("transcrever", help="Baixa o áudio (yt-dlp) e transcreve (Speechmatics pt-BR; Deepgram fallback)")
+    p_t.add_argument("--url", required=True, help="URL do vídeo (TikTok/IG/YouTube)")
+    p_t.add_argument("--engine", default="speechmatics", choices=["speechmatics", "deepgram"])
+    p_t.set_defaults(func=cmd_transcrever)
 
     args = parser.parse_args(argv)
     resultado = args.func(args)

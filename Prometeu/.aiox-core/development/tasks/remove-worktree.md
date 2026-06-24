@@ -7,31 +7,31 @@
 
 ---
 
-## Modos de Execução
+## Modos de ExecuÃ§Ã£o
 
-**Escolha seu modo de execução:**
+**Escolha seu modo de execuÃ§Ã£o:**
 
-### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+### 1. Modo YOLO - RÃ¡pido, AutÃ´nomo (0-1 prompts)
 
-- Remove o worktree sem confirmação
-- Só pergunta se houver mudanças não commitadas
-- **Melhor para:** Limpeza após o merge
+- Remove o worktree sem confirmaÃ§Ã£o
+- SÃ³ pergunta se houver mudanÃ§as nÃ£o commitadas
+- **Melhor para:** Limpeza apÃ³s o merge
 
-### 2. Modo Interativo - Seguro, com Confirmação (2-3 prompts) **[PADRÃO]**
+### 2. Modo Interativo - Seguro, com ConfirmaÃ§Ã£o (2-3 prompts) **[PADRÃƒO]**
 
-- Sempre confirma antes da remoção
-- Mostra os detalhes do worktree antes da exclusão
-- **Melhor para:** Segurança em produção
+- Sempre confirma antes da remoÃ§Ã£o
+- Mostra os detalhes do worktree antes da exclusÃ£o
+- **Melhor para:** SeguranÃ§a em produÃ§Ã£o
 
-**Parâmetro:** `mode` (opcional, padrão: `interactive`)
+**ParÃ¢metro:** `mode` (opcional, padrÃ£o: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: removeWorktree()
-responsável: Gage (DevOps)
+responsÃ¡vel: Gage (DevOps)
 responsavel_type: Agente
 atomic_layer: Atom
 
@@ -39,15 +39,15 @@ inputs:
   - campo: story_id
     tipo: string
     origem: User Input
-    obrigatório: true
-    validação: Valid story identifier
+    obrigatÃ³rio: true
+    validaÃ§Ã£o: Valid story identifier
 
   - campo: force
     tipo: boolean
     origem: User Input
-    obrigatório: false
+    obrigatÃ³rio: false
     default: false
-    validação: Force removal even with uncommitted changes
+    validaÃ§Ã£o: Force removal even with uncommitted changes
 
 outputs:
   - campo: removed
@@ -63,69 +63,69 @@ outputs:
 
 ---
 
-## Pré-Condições
+## PrÃ©-CondiÃ§Ãµes
 
 ```yaml
 pre-conditions:
   - [ ] Current directory is a git repository
     tipo: pre-condition
     blocker: true
-    validação: git rev-parse --is-inside-work-tree
-    error_message: "Não é um repositório git."
+    validaÃ§Ã£o: git rev-parse --is-inside-work-tree
+    error_message: "NÃ£o Ã© um repositÃ³rio git."
 
   - [ ] Worktree exists for story
     tipo: pre-condition
     blocker: true
-    validação: manager.exists(storyId) === true
-    error_message: "Worktree não encontrado para esta story."
+    validaÃ§Ã£o: manager.exists(storyId) === true
+    error_message: "Worktree nÃ£o encontrado para esta story."
 
   - [ ] Not currently in the worktree being removed
     tipo: pre-condition
     blocker: true
-    validação: cwd !== worktreePath
-    error_message: "Não é possível remover o worktree enquanto estiver dentro dele."
+    validaÃ§Ã£o: cwd !== worktreePath
+    error_message: "NÃ£o Ã© possÃ­vel remover o worktree enquanto estiver dentro dele."
 ```
 
 ---
 
-## Pós-Condições
+## PÃ³s-CondiÃ§Ãµes
 
 ```yaml
 post-conditions:
   - [ ] Worktree directory removed
     tipo: post-condition
     blocker: true
-    validação: Directory .aiox/worktrees/{storyId} does not exist
-    error_message: "O diretório do worktree ainda existe."
+    validaÃ§Ã£o: Directory .aiox/worktrees/{storyId} does not exist
+    error_message: "O diretÃ³rio do worktree ainda existe."
 
   - [ ] Branch deleted (unless --keep-branch)
     tipo: post-condition
     blocker: false
-    validação: Branch auto-claude/{storyId} does not exist
-    error_message: "O branch não foi deletado (pode estar mergeado)."
+    validaÃ§Ã£o: Branch auto-claude/{storyId} does not exist
+    error_message: "O branch nÃ£o foi deletado (pode estar mergeado)."
 ```
 
 ---
 
-## Descrição
+## DescriÃ§Ã£o
 
-Remove um worktree gerenciado pelo AIOX e seu branch associado. Inclui verificações de segurança para mudanças não commitadas e oferece opções de remoção forçada.
+Remove um worktree gerenciado pelo AIOX e seu branch associado. Inclui verificaÃ§Ãµes de seguranÃ§a para mudanÃ§as nÃ£o commitadas e oferece opÃ§Ãµes de remoÃ§Ã£o forÃ§ada.
 
-**Recursos de Segurança:**
+**Recursos de SeguranÃ§a:**
 
-- Avisa sobre mudanças não commitadas
-- Confirma antes da exclusão (modo interativo)
-- Não pode remover enquanto estiver dentro do worktree
-- Registra a remoção para a trilha de auditoria
+- Avisa sobre mudanÃ§as nÃ£o commitadas
+- Confirma antes da exclusÃ£o (modo interativo)
+- NÃ£o pode remover enquanto estiver dentro do worktree
+- Registra a remoÃ§Ã£o para a trilha de auditoria
 
 ---
 
 ## Entradas
 
-| Parâmetro  | Tipo    | Obrigatório | Padrão  | Descrição                              |
+| ParÃ¢metro  | Tipo    | ObrigatÃ³rio | PadrÃ£o  | DescriÃ§Ã£o                              |
 | ---------- | ------- | ----------- | ------- | -------------------------------------- |
 | `story_id` | string  | Sim         | -       | Identificador da story a ser removida  |
-| `force`    | boolean | Não         | `false` | Forçar remoção com mudanças não commitadas |
+| `force`    | boolean | NÃ£o         | `false` | ForÃ§ar remoÃ§Ã£o com mudanÃ§as nÃ£o commitadas |
 
 ---
 
@@ -135,15 +135,15 @@ Remove um worktree gerenciado pelo AIOX e seu branch associado. Inclui verifica�
 elicit: true # Confirms before destructive operation
 ```
 
-Pergunta por confirmação no modo interativo.
+Pergunta por confirmaÃ§Ã£o no modo interativo.
 
 ---
 
 ## Passos
 
-### Passo 1: Validar Repositório Git
+### Passo 1: Validar RepositÃ³rio Git
 
-**Ação:** Verificar se o diretório atual é um repositório git
+**AÃ§Ã£o:** Verificar se o diretÃ³rio atual Ã© um repositÃ³rio git
 
 ```bash
 git rev-parse --is-inside-work-tree 2>/dev/null
@@ -153,20 +153,20 @@ git rev-parse --is-inside-work-tree 2>/dev/null
 
 ### Passo 2: Parsear o Story ID
 
-**Ação:** Extrair e validar o story ID a partir da entrada
+**AÃ§Ã£o:** Extrair e validar o story ID a partir da entrada
 
 **Se ausente, perguntar:**
 
 ```
-📝 Digite o story ID do worktree a remover:
-   Execute *list-worktrees para ver os worktrees disponíveis.
+ðŸ“ Digite o story ID do worktree a remover:
+   Execute *list-worktrees para ver os worktrees disponÃ­veis.
 ```
 
 ---
 
 ### Passo 3: Verificar se o Worktree Existe
 
-**Ação:** Verificar se o worktree existe
+**AÃ§Ã£o:** Verificar se o worktree existe
 
 ```javascript
 const WorktreeManager = require('./.aiox-core/infrastructure/scripts/worktree-manager.js');
@@ -174,22 +174,22 @@ const manager = new WorktreeManager();
 const exists = await manager.exists(storyId);
 ```
 
-**Se não existir:**
+**Se nÃ£o existir:**
 
 ```
-❌ Worktree não encontrado para a story '{storyId}'.
+âŒ Worktree nÃ£o encontrado para a story '{storyId}'.
 
-Worktrees disponíveis:
+Worktrees disponÃ­veis:
 {list from manager.list()}
 
-Você quis dizer um destes?
+VocÃª quis dizer um destes?
 ```
 
 ---
 
-### Passo 4: Obter Informações do Worktree
+### Passo 4: Obter InformaÃ§Ãµes do Worktree
 
-**Ação:** Recuperar os detalhes do worktree
+**AÃ§Ã£o:** Recuperar os detalhes do worktree
 
 ```javascript
 const worktree = await manager.get(storyId);
@@ -198,7 +198,7 @@ const worktree = await manager.get(storyId);
 **Exibir:**
 
 ```
-📁 Detalhes do Worktree
+ðŸ“ Detalhes do Worktree
 
 Story:              {storyId}
 Path:               .aiox/worktrees/{storyId}
@@ -210,9 +210,9 @@ Status:             {status}
 
 ---
 
-### Passo 5: Verificar Mudanças Não Commitadas
+### Passo 5: Verificar MudanÃ§as NÃ£o Commitadas
 
-**Ação:** Avisar se houver mudanças não commitadas
+**AÃ§Ã£o:** Avisar se houver mudanÃ§as nÃ£o commitadas
 
 ```javascript
 if (worktree.uncommittedChanges > 0 && !force) {
@@ -223,38 +223,38 @@ if (worktree.uncommittedChanges > 0 && !force) {
 **Aviso:**
 
 ```
-⚠️  ATENÇÃO: Mudanças Não Commitadas Detectadas!
+âš ï¸  ATENÃ‡ÃƒO: MudanÃ§as NÃ£o Commitadas Detectadas!
 
-Este worktree possui {uncommittedChanges} mudanças não commitadas.
-Removê-lo irá APAGAR PERMANENTEMENTE essas mudanças.
+Este worktree possui {uncommittedChanges} mudanÃ§as nÃ£o commitadas.
+RemovÃª-lo irÃ¡ APAGAR PERMANENTEMENTE essas mudanÃ§as.
 
-Arquivos com mudanças:
+Arquivos com mudanÃ§as:
   - src/component.tsx
   - src/utils.ts
   - ...
 
-Opções:
-  1. Commitar as mudanças primeiro : cd .aiox/worktrees/{storyId} && git commit
+OpÃ§Ãµes:
+  1. Commitar as mudanÃ§as primeiro : cd .aiox/worktrees/{storyId} && git commit
   2. Mergear no branch base         : *merge-worktree {storyId}
-  3. Remover forçado (perde dados)  : *remove-worktree {storyId} --force
+  3. Remover forÃ§ado (perde dados)  : *remove-worktree {storyId} --force
 
-Prosseguir com a remoção? [y/N]:
+Prosseguir com a remoÃ§Ã£o? [y/N]:
 ```
 
 ---
 
-### Passo 6: Confirmar Remoção (Interativo)
+### Passo 6: Confirmar RemoÃ§Ã£o (Interativo)
 
-**Ação:** Confirmar antes da remoção no modo interativo
+**AÃ§Ã£o:** Confirmar antes da remoÃ§Ã£o no modo interativo
 
 ```
-🗑️  Confirmar Remoção
+ðŸ—‘ï¸  Confirmar RemoÃ§Ã£o
 
-Você está prestes a remover:
-  • Worktree: .aiox/worktrees/{storyId}
-  • Branch:   auto-claude/{storyId}
+VocÃª estÃ¡ prestes a remover:
+  â€¢ Worktree: .aiox/worktrees/{storyId}
+  â€¢ Branch:   auto-claude/{storyId}
 
-Esta ação não pode ser desfeita.
+Esta aÃ§Ã£o nÃ£o pode ser desfeita.
 
 Digite 'yes' para confirmar:
 ```
@@ -263,7 +263,7 @@ Digite 'yes' para confirmar:
 
 ### Passo 7: Remover o Worktree
 
-**Ação:** Executar a remoção
+**AÃ§Ã£o:** Executar a remoÃ§Ã£o
 
 ```javascript
 await manager.remove(storyId, { force: options.force });
@@ -278,16 +278,16 @@ await manager.remove(storyId, { force: options.force });
 
 ### Passo 8: Exibir Sucesso
 
-**Ação:** Confirmar que a remoção foi concluída
+**AÃ§Ã£o:** Confirmar que a remoÃ§Ã£o foi concluÃ­da
 
 ```
-╔══════════════════════════════════════════════════════════════╗
-║  ✅ Worktree Removido com Sucesso                           ║
-╚══════════════════════════════════════════════════════════════╝
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  âœ… Worktree Removido com Sucesso                           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 Removido:
-  • Worktree: .aiox/worktrees/{storyId}
-  • Branch:   auto-claude/{storyId}
+  â€¢ Worktree: .aiox/worktrees/{storyId}
+  â€¢ Branch:   auto-claude/{storyId}
 
 Worktrees restantes: {count.total}
 
@@ -296,7 +296,7 @@ Execute *list-worktrees para ver os worktrees restantes.
 
 ---
 
-## Saídas
+## SaÃ­das
 
 ### Valor de Retorno
 
@@ -309,71 +309,71 @@ Execute *list-worktrees para ver os worktrees restantes.
 
 ---
 
-## Validação
+## ValidaÃ§Ã£o
 
-- [ ] O diretório do worktree não existe mais
-- [ ] O branch não existe mais (a menos que mergeado em outro branch)
-- [ ] O worktree não aparece mais na lista
+- [ ] O diretÃ³rio do worktree nÃ£o existe mais
+- [ ] O branch nÃ£o existe mais (a menos que mergeado em outro branch)
+- [ ] O worktree nÃ£o aparece mais na lista
 
 ---
 
 ## Tratamento de Erros
 
-### Worktree Não Encontrado
+### Worktree NÃ£o Encontrado
 
 **Erro:**
 
 ```
-❌ Worktree não encontrado para a story '{storyId}'.
+âŒ Worktree nÃ£o encontrado para a story '{storyId}'.
 ```
 
-**Resolução:** Verifique o story ID com `*list-worktrees`.
+**ResoluÃ§Ã£o:** Verifique o story ID com `*list-worktrees`.
 
 ### Atualmente Dentro do Worktree
 
 **Erro:**
 
 ```
-❌ Não é possível remover o worktree enquanto estiver dentro dele.
+âŒ NÃ£o Ã© possÃ­vel remover o worktree enquanto estiver dentro dele.
 
-   Diretório atual: .aiox/worktrees/{storyId}
+   DiretÃ³rio atual: .aiox/worktrees/{storyId}
 
    Navegue para fora primeiro:
      cd {projectRoot}
 ```
 
-**Resolução:** Saia do worktree com `cd` primeiro.
+**ResoluÃ§Ã£o:** Saia do worktree com `cd` primeiro.
 
-### Mudanças Não Commitadas (sem --force)
+### MudanÃ§as NÃ£o Commitadas (sem --force)
 
 **Erro:**
 
 ```
-⚠️  O worktree possui mudanças não commitadas.
+âš ï¸  O worktree possui mudanÃ§as nÃ£o commitadas.
 
     Use --force para remover mesmo assim:
       *remove-worktree {storyId} --force
 
-    Ou commite/mergeie as mudanças primeiro.
+    Ou commite/mergeie as mudanÃ§as primeiro.
 ```
 
-**Resolução:** Use `--force` ou trate as mudanças.
+**ResoluÃ§Ã£o:** Use `--force` ou trate as mudanÃ§as.
 
 ### Comando Git Falhou
 
 **Erro:**
 
 ```
-❌ Falha ao remover o worktree: {error.message}
+âŒ Falha ao remover o worktree: {error.message}
 ```
 
-**Resolução:** Verifique o git status, pode ser necessária limpeza manual.
+**ResoluÃ§Ã£o:** Verifique o git status, pode ser necessÃ¡ria limpeza manual.
 
 ---
 
 ## Limpeza Manual
 
-Se a remoção automática falhar:
+Se a remoÃ§Ã£o automÃ¡tica falhar:
 
 ```bash
 # Remover o worktree
@@ -382,7 +382,7 @@ git worktree remove .aiox/worktrees/{storyId} --force
 # Deletar o branch
 git branch -D auto-claude/{storyId}
 
-# Limpar referências de worktree
+# Limpar referÃªncias de worktree
 git worktree prune
 ```
 
@@ -390,13 +390,13 @@ git worktree prune
 
 ## Notas de Performance
 
-- **Tempo de remoção:** ~200-500ms
-- **Espaço em disco:** Liberado imediatamente (hardlinks removidos)
-- **Branch:** Deletado se não estiver mergeado em outro lugar
+- **Tempo de remoÃ§Ã£o:** ~200-500ms
+- **EspaÃ§o em disco:** Liberado imediatamente (hardlinks removidos)
+- **Branch:** Deletado se nÃ£o estiver mergeado em outro lugar
 
 ---
 
-## Dependências
+## DependÃªncias
 
 ### Scripts
 
@@ -418,7 +418,7 @@ git worktree prune
 
 ## Registro de Comando
 
-Esta task é exposta como o comando de CLI `*remove-worktree` no agente @devops:
+Esta task Ã© exposta como o comando de CLI `*remove-worktree` no agente @devops:
 
 ```yaml
 commands:
@@ -428,6 +428,6 @@ commands:
 
 ---
 
-**Status:** ✅ Production Ready
+**Status:** âœ… Production Ready
 **Tested On:** Windows, Linux, macOS
 **Git Requirement:** git >= 2.5 (worktree support)

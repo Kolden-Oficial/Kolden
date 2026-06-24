@@ -1,7 +1,7 @@
 # Índice machine-readable do cérebro da Kolden (sobre-a-empresa).
 # Convenção alinhada ao Caos. Atualize ao adicionar/alterar docs.
 versao: 1
-atualizado-em: 2026-06-18
+atualizado-em: 2026-06-22
 documentos:
   - id: sobre-a-empresa-leia-me
     caminho: leia-me.md
@@ -50,7 +50,44 @@ documentos:
   - id: identidade-visual
     caminho: marca/identidade-visual.md
     categoria: marca
-    status: rascunho
+    status: vigente
+  # Design System (kit de identidade — marca/design-system/)
+  - id: ds-leia-me
+    caminho: marca/design-system/leia-me.md
+    categoria: marca
+    status: vigente
+  - id: ds-cores
+    caminho: marca/design-system/01-fundamentos/cores.md
+    categoria: marca
+    status: vigente
+  - id: ds-tipografia
+    caminho: marca/design-system/01-fundamentos/tipografia.md
+    categoria: marca
+    status: vigente
+  - id: ds-logo
+    caminho: marca/design-system/01-fundamentos/logo.md
+    categoria: marca
+    status: vigente
+  - id: ds-grafismos
+    caminho: marca/design-system/01-fundamentos/grafismos-e-auxiliares.md
+    categoria: marca
+    status: vigente
+  - id: ds-tom-visual
+    caminho: marca/design-system/01-fundamentos/tom-visual.md
+    categoria: marca
+    status: vigente
+  - id: ds-componentes
+    caminho: marca/design-system/03-componentes/leia-me.md
+    categoria: marca
+    status: vigente
+  - id: ds-aplicacoes
+    caminho: marca/design-system/04-aplicacoes/exemplos.md
+    categoria: marca
+    status: vigente
+  - id: ds-indice-assets
+    caminho: marca/design-system/assets/indice-assets.md
+    categoria: marca
+    status: vigente
   - id: processos
     caminho: operacao/processos.md
     categoria: operacao

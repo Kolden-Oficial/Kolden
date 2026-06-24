@@ -154,32 +154,32 @@ acceptance-criteria:
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Connection Failed
-   - **Cause:** Unable to connect to Neo4j database
-   - **Resolution:** Check connection string, credentials, network
-   - **Recovery:** Retry with exponential backoff (max 3 attempts)
+1. **Erro:** Connection Failed
+   - **Causa:** Não foi possível conectar ao banco de dados Neo4j
+   - **Resolução:** Verificar connection string, credenciais, rede
+   - **Recuperação:** Retentar com backoff exponencial (máximo 3 tentativas)
 
-2. **Error:** Query Syntax Error
-   - **Cause:** Invalid Cypher query syntax
-   - **Resolution:** Validate query syntax before execution
-   - **Recovery:** Return detailed syntax error, suggest fix
+2. **Erro:** Query Syntax Error
+   - **Causa:** Sintaxe de query Cypher inválida
+   - **Resolução:** Validar a sintaxe da query antes da execução
+   - **Recuperação:** Retornar erro de sintaxe detalhado, sugerir correção
 
-3. **Error:** Transaction Rollback
-   - **Cause:** Query violates constraints or timeout
-   - **Resolution:** Review query logic and constraints
-   - **Recovery:** Automatic rollback, preserve data integrity
+3. **Erro:** Transaction Rollback
+   - **Causa:** A query viola constraints ou atinge timeout
+   - **Resolução:** Revisar a lógica da query e as constraints
+   - **Recuperação:** Rollback automático, preservar a integridade dos dados
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 2-10 min (estimated)
@@ -187,12 +187,12 @@ cost_estimated: $0.001-0.008
 token_usage: ~800-2,500 tokens
 ```
 
-**Optimization Notes:**
-- Validate configuration early; use atomic writes; implement rollback checkpoints
+**Notas de Otimização:**
+- Validar a configuração cedo; usar escritas atômicas; implementar checkpoints de rollback
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -208,29 +208,29 @@ updated_at: 2025-11-17
 ---
 
 
-## Inputs
+## Entradas
 
-- `table` (string): Target table name
-- `csv_file` (string): Path to CSV file
+- `table` (string): Nome da tabela de destino
+- `csv_file` (string): Caminho para o arquivo CSV
 
 ---
 
-## Process
+## Processo
 
-### 1. Validate Inputs
+### 1. Validar Entradas
 
-Check file exists and table exists:
+Verificar se o arquivo existe e se a tabela existe:
 
 ```bash
 echo "Validating inputs..."
 
-# Check CSV file exists
+# Verificar se o arquivo CSV existe
 [ -f "{csv_file}" ] || {
   echo "❌ File not found: {csv_file}"
   exit 1
 }
 
-# Check table exists
+# Verificar se a tabela existe
 psql "$SUPABASE_DB_URL" -c \
 "SELECT EXISTS (
   SELECT 1 FROM information_schema.tables
@@ -240,15 +240,15 @@ psql "$SUPABASE_DB_URL" -c \
   exit 1
 }
 
-# Count CSV rows
+# Contar linhas do CSV
 ROW_COUNT=$(wc -l < "{csv_file}" | tr -d ' ')
 echo "✓ CSV file: {csv_file} ($ROW_COUNT rows)"
 echo "✓ Target table: {table}"
 ```
 
-### 2. Preview CSV Structure
+### 2. Pré-visualizar a Estrutura do CSV
 
-Show first few rows:
+Mostrar as primeiras linhas:
 
 ```bash
 echo "CSV Preview (first 5 rows):"
@@ -259,23 +259,23 @@ read CONFIRM
 [ "$CONFIRM" = "yes" ] || { echo "Aborted"; exit 0; }
 ```
 
-### 3. Create Staging Table
+### 3. Criar a Tabela de Staging
 
-Import to staging first for validation:
+Importar primeiro para a staging para validação:
 
 ```bash
 echo "Creating staging table..."
 
 psql "$SUPABASE_DB_URL" << 'EOF'
--- Create staging table with same structure as target
+-- Criar tabela de staging com a mesma estrutura da tabela de destino
 CREATE TEMP TABLE {table}_staging (LIKE {table} INCLUDING ALL);
 
--- Or if you need to define structure manually:
+-- Ou, se você precisar definir a estrutura manualmente:
 -- CREATE TEMP TABLE {table}_staging (
 --   id TEXT,
 --   name TEXT,
 --   created_at TEXT
---   -- Define all columns as TEXT initially for flexible parsing
+--   -- Defina todas as colunas como TEXT inicialmente para parsing flexível
 -- );
 
 SELECT 'Staging table created' AS status;
@@ -284,14 +284,14 @@ EOF
 echo "✓ Staging table ready"
 ```
 
-### 4. COPY Data to Staging
+### 4. COPY dos Dados para a Staging
 
-Use PostgreSQL COPY command (fastest method):
+Usar o comando COPY do PostgreSQL (método mais rápido):
 
 ```bash
 echo "Loading CSV into staging table..."
 
-# Method 1: Using psql \copy (client-side file)
+# Método 1: Usando psql \copy (arquivo no lado do cliente)
 psql "$SUPABASE_DB_URL" << 'EOF'
 \copy {table}_staging FROM '{csv_file}' WITH (
   FORMAT csv,
@@ -303,40 +303,40 @@ psql "$SUPABASE_DB_URL" << 'EOF'
 );
 EOF
 
-# Method 2: Server-side COPY (if file is on server)
+# Método 2: COPY no lado do servidor (se o arquivo estiver no servidor)
 # COPY {table}_staging FROM '/path/to/file.csv' WITH (FORMAT csv, HEADER true);
 
 echo "✓ Data loaded to staging"
 ```
 
-### 5. Validate Data
+### 5. Validar os Dados
 
-Run validation checks before merging:
+Rodar verificações de validação antes do merge:
 
 ```bash
 echo "Validating staged data..."
 
 psql "$SUPABASE_DB_URL" << 'EOF'
--- Check row count
+-- Verificar a contagem de linhas
 SELECT COUNT(*) AS staged_rows FROM {table}_staging;
 
--- Check for NULL in required columns (example)
+-- Verificar NULL em colunas obrigatórias (exemplo)
 SELECT COUNT(*) AS null_ids
 FROM {table}_staging
 WHERE id IS NULL;
 
--- Check for duplicates (example)
+-- Verificar duplicatas (exemplo)
 SELECT id, COUNT(*) AS duplicates
 FROM {table}_staging
 GROUP BY id
 HAVING COUNT(*) > 1;
 
--- Check data types can be converted (example)
+-- Verificar se os tipos de dados podem ser convertidos (exemplo)
 SELECT
   COUNT(*) FILTER (WHERE created_at::timestamptz IS NULL) AS invalid_dates
 FROM {table}_staging;
 
--- Any validation failures?
+-- Alguma falha de validação?
 SELECT
   CASE
     WHEN EXISTS (SELECT 1 FROM {table}_staging WHERE id IS NULL) THEN
@@ -355,9 +355,9 @@ read CONFIRM
 [ "$CONFIRM" = "yes" ] || { echo "Aborted - data in staging table for review"; exit 1; }
 ```
 
-### 6. Merge to Target Table
+### 6. Merge para a Tabela de Destino
 
-Use UPSERT pattern for idempotency:
+Usar o padrão UPSERT para idempotência:
 
 ```bash
 echo "Merging to target table..."
@@ -365,10 +365,10 @@ echo "Merging to target table..."
 psql "$SUPABASE_DB_URL" << 'EOF'
 BEGIN;
 
--- Insert new rows or update existing (idempotent)
+-- Inserir novas linhas ou atualizar as existentes (idempotente)
 INSERT INTO {table} (id, name, created_at, ...)
 SELECT
-  id::uuid,                  -- Cast to proper types
+  id::uuid,                  -- Fazer cast para os tipos corretos
   name,
   created_at::timestamptz,
   ...
@@ -376,9 +376,9 @@ FROM {table}_staging
 ON CONFLICT (id) DO UPDATE SET
   name = EXCLUDED.name,
   created_at = EXCLUDED.created_at,
-  updated_at = NOW();  -- Update timestamp
+  updated_at = NOW();  -- Atualizar o timestamp
 
--- Get counts
+-- Obter as contagens
 SELECT
   (SELECT COUNT(*) FROM {table}) AS final_count,
   (SELECT COUNT(*) FROM {table}_staging) AS imported_count;
@@ -391,9 +391,9 @@ EOF
 echo "✓ Data merged successfully"
 ```
 
-### 7. Cleanup
+### 7. Limpeza
 
-Drop staging table:
+Remover a tabela de staging:
 
 ```bash
 echo "Cleaning up..."
@@ -407,9 +407,9 @@ echo "✓ Cleanup complete"
 
 ---
 
-## Output
+## Saída
 
-Display import summary:
+Exibir o resumo da importação:
 
 ```
 ✅ CSV IMPORT COMPLETE
@@ -432,48 +432,48 @@ Next steps:
 
 ---
 
-## Best Practices
+## Boas Práticas
 
-### CSV Format Requirements
+### Requisitos de Formato do CSV
 
-**Required:**
-- UTF-8 encoding
-- Consistent delimiters (comma recommended)
-- Header row with column names
-- Quoted strings if they contain delimiters
+**Obrigatório:**
+- Codificação UTF-8
+- Delimitadores consistentes (vírgula recomendada)
+- Linha de cabeçalho com os nomes das colunas
+- Strings entre aspas se contiverem delimitadores
 
-**Example:**
+**Exemplo:**
 ```csv
 id,name,email,created_at
 "user-1","John Doe","john@example.com","2024-01-01 00:00:00"
 "user-2","Jane Smith","jane@example.com","2024-01-02 00:00:00"
 ```
 
-### Handling Large Files
+### Lidando com Arquivos Grandes
 
-For CSV files > 100MB or > 1M rows:
+Para arquivos CSV > 100MB ou > 1M de linhas:
 
-1. **Split the file:**
+1. **Dividir o arquivo:**
 ```bash
 split -l 100000 large.csv chunk_
 ```
 
-2. **Import in batches:**
+2. **Importar em lotes:**
 ```bash
 for file in chunk_*; do
   *load-csv {table} $file
 done
 ```
 
-3. **Or use streaming COPY:**
+3. **Ou usar COPY em streaming:**
 ```bash
 cat large.csv | psql "$SUPABASE_DB_URL" -c \
   "COPY {table} FROM STDIN WITH (FORMAT csv, HEADER true);"
 ```
 
-### Data Type Conversion
+### Conversão de Tipos de Dados
 
-Always cast from TEXT to proper types in SELECT:
+Sempre faça cast de TEXT para os tipos corretos no SELECT:
 
 ```sql
 SELECT
@@ -487,107 +487,107 @@ FROM {table}_staging
 
 ---
 
-## Common Issues
+## Problemas Comuns
 
-### Issue 1: Character Encoding
+### Problema 1: Codificação de Caracteres
 
-**Error:** `invalid byte sequence for encoding "UTF8"`
+**Erro:** `invalid byte sequence for encoding "UTF8"`
 
-**Fix:**
+**Correção:**
 ```bash
-# Convert to UTF-8
+# Converter para UTF-8
 iconv -f ISO-8859-1 -t UTF-8 input.csv > output.csv
 ```
 
-### Issue 2: Quote/Delimiter Conflicts
+### Problema 2: Conflitos de Aspas/Delimitador
 
-**Error:** `unterminated CSV quoted field`
+**Erro:** `unterminated CSV quoted field`
 
-**Fix:** Adjust COPY parameters:
+**Correção:** Ajustar os parâmetros do COPY:
 ```sql
 COPY table FROM 'file.csv' WITH (
-  DELIMITER ';',    -- Change delimiter
-  QUOTE '''',       -- Change quote character
-  ESCAPE '\'       -- Change escape character
+  DELIMITER ';',    -- Mudar o delimitador
+  QUOTE '''',       -- Mudar o caractere de aspas
+  ESCAPE '\'       -- Mudar o caractere de escape
 );
 ```
 
-### Issue 3: NULL Values
+### Problema 3: Valores NULL
 
-**Error:** `null value in column "id" violates not-null constraint`
+**Erro:** `null value in column "id" violates not-null constraint`
 
-**Fix:** Define NULL representation:
+**Correção:** Definir a representação de NULL:
 ```sql
 COPY table FROM 'file.csv' WITH (
-  NULL 'NULL',      -- Treat literal "NULL" as NULL
-  -- Or NULL ''     -- Treat empty strings as NULL
+  NULL 'NULL',      -- Tratar o literal "NULL" como NULL
+  -- Or NULL ''     -- Tratar strings vazias como NULL
 );
 ```
 
 ---
 
-## Security Notes
+## Notas de Segurança
 
-- **Never** COPY from untrusted sources without validation
-- Always use staging table first
-- Validate data types and constraints before merging
-- Check for SQL injection in CSV content (though COPY is safe)
-- Consider row-level security (RLS) when loading to Supabase
+- **Nunca** faça COPY de fontes não confiáveis sem validação
+- Sempre use primeiro a tabela de staging
+- Valide os tipos de dados e as constraints antes do merge
+- Verifique SQL injection no conteúdo do CSV (embora o COPY seja seguro)
+- Considere row-level security (RLS) ao carregar no Supabase
 
 ---
 
-## Performance Tips
+## Dicas de Performance
 
-1. **Disable triggers during bulk load:**
+1. **Desabilitar triggers durante a carga em massa:**
 ```sql
 ALTER TABLE {table} DISABLE TRIGGER ALL;
--- Load data
+-- Carregar os dados
 ALTER TABLE {table} ENABLE TRIGGER ALL;
 ```
 
-2. **Drop indexes, load, recreate:**
+2. **Remover índices, carregar, recriar:**
 ```sql
--- Only for initial loads, not updates!
+-- Apenas para cargas iniciais, não para atualizações!
 DROP INDEX idx_name;
--- Load data
+-- Carregar os dados
 CREATE INDEX CONCURRENTLY idx_name ON {table}(column);
 ```
 
-3. **Use UNLOGGED tables for staging:**
+3. **Usar tabelas UNLOGGED para staging:**
 ```sql
 CREATE UNLOGGED TABLE {table}_staging (...);
--- Faster writes, but not crash-safe
+-- Escritas mais rápidas, mas não seguras contra crash
 ```
 
-4. **Batch commits:**
+4. **Commits em lote:**
 ```sql
--- For very large loads
+-- Para cargas muito grandes
 BEGIN;
-COPY ... -- Load 100k rows
+COPY ... -- Carregar 100k linhas
 COMMIT;
 BEGIN;
-COPY ... -- Load next 100k rows
+COPY ... -- Carregar as próximas 100k linhas
 COMMIT;
 ```
 
 ---
 
-## Alternative: INSERT from Application
+## Alternativa: INSERT a partir da Aplicação
 
-For small datasets (<1000 rows), can use regular INSERT:
+Para conjuntos de dados pequenos (<1000 linhas), pode-se usar o INSERT comum:
 
 ```javascript
-// Supabase client example
+// Exemplo de client do Supabase
 const { data, error } = await supabase
   .from('table')
   .upsert(csvData, { onConflict: 'id' })
 ```
 
-But COPY is **10-100x faster** for bulk loads!
+Mas o COPY é **10-100x mais rápido** para cargas em massa!
 
 ---
 
-## References
+## Referências
 
-- [PostgreSQL COPY Documentation](https://www.postgresql.org/docs/current/sql-copy.html)
-- [psql \copy Command](https://www.postgresql.org/docs/current/app-psql.html)
+- [Documentação do PostgreSQL COPY](https://www.postgresql.org/docs/current/sql-copy.html)
+- [Comando psql \copy](https://www.postgresql.org/docs/current/app-psql.html)

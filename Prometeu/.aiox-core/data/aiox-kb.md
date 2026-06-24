@@ -1,53 +1,53 @@
-# AIOX Knowledge Base
+# Base de Conhecimento AIOX
 
-## Overview
+## Visão Geral
 
-AIOX-Method is a framework that combines AI agents with Agile development methodologies. The v4 system introduces a modular architecture with improved dependency management, bundle optimization, and support for both web and IDE environments.
+O AIOX-Method é um framework que combina agentes de IA com metodologias de desenvolvimento Ágil. O sistema v4 introduz uma arquitetura modular com gestão de dependências aprimorada, otimização de bundles e suporte tanto para ambientes web quanto IDE.
 
-### Key Features
+### Principais Funcionalidades
 
-- **Modular Agent System**: Specialized AI agents for each Agile role
-- **Build System**: Automated dependency resolution and optimization
-- **Dual Environment Support**: Optimized for both web UIs and IDEs
-- **Reusable Resources**: Portable templates, tasks, and checklists
-- **Slash Command Integration**: Quick agent switching and control
+- **Sistema Modular de Agentes**: Agentes de IA especializados para cada papel Ágil
+- **Sistema de Build**: Resolução automática e otimização de dependências
+- **Suporte a Dois Ambientes**: Otimizado tanto para UIs web quanto para IDEs
+- **Recursos Reutilizáveis**: Templates, tasks e checklists portáveis
+- **Integração com Slash Commands**: Troca e controle rápidos de agentes
 
-### When to Use AIOX
+### Quando Usar o AIOX
 
-- **New Projects (Greenfield)**: Complete end-to-end development
-- **Existing Projects (Brownfield)**: Feature additions and enhancements
-- **Team Collaboration**: Multiple roles working together
-- **Quality Assurance**: Structured testing and validation
-- **Documentation**: Professional PRDs, architecture docs, user stories
+- **Novos Projetos (Greenfield)**: Desenvolvimento completo de ponta a ponta
+- **Projetos Existentes (Brownfield)**: Adição e aprimoramento de funcionalidades
+- **Colaboração em Equipe**: Múltiplos papéis trabalhando juntos
+- **Garantia de Qualidade**: Testes e validação estruturados
+- **Documentação**: PRDs profissionais, documentos de arquitetura, user stories
 
-## How AIOX Works
+## Como o AIOX Funciona
 
-### The Core Method
+### O Método Central
 
-AIOX transforms you into a "Vibe CEO" - directing a team of specialized AI agents through structured workflows. Here's how:
+O AIOX transforma você em um "Vibe CEO" - dirigindo um time de agentes de IA especializados por meio de workflows estruturados. Veja como:
 
-1. **You Direct, AI Executes**: You provide vision and decisions; agents handle implementation details
-2. **Specialized Agents**: Each agent masters one role (PM, Developer, Architect, etc.)
-3. **Structured Workflows**: Proven patterns guide you from idea to deployed code
-4. **Clean Handoffs**: Fresh context windows ensure agents stay focused and effective
+1. **Você Dirige, a IA Executa**: Você fornece visão e decisões; os agentes cuidam dos detalhes de implementação
+2. **Agentes Especializados**: Cada agente domina um papel (PM, Developer, Architect, etc.)
+3. **Workflows Estruturados**: Padrões comprovados guiam você da ideia ao código implantado
+4. **Handoffs Limpos**: Janelas de contexto novas garantem que os agentes permaneçam focados e eficazes
 
-### The Two-Phase Approach
+### A Abordagem em Duas Fases
 
-#### Phase 1: Planning (Web UI - Cost Effective)
+#### Fase 1: Planejamento (Web UI - Custo-Efetivo)
 
-- Use large context windows (Gemini's 1M tokens)
-- Generate comprehensive documents (PRD, Architecture)
-- Leverage multiple agents for brainstorming
-- Create once, use throughout development
+- Use janelas de contexto grandes (1M de tokens do Gemini)
+- Gere documentos abrangentes (PRD, Arquitetura)
+- Aproveite múltiplos agentes para brainstorming
+- Crie uma vez, use durante todo o desenvolvimento
 
-#### Phase 2: Development (IDE - Implementation)
+#### Fase 2: Desenvolvimento (IDE - Implementação)
 
-- Shard documents into manageable pieces
-- Execute focused SM → Dev cycles
-- One story at a time, sequential progress
-- Real-time file operations and testing
+- Fragmente (shard) os documentos em pedaços gerenciáveis
+- Execute ciclos focados SM → Dev
+- Uma story por vez, progresso sequencial
+- Operações de arquivo e testes em tempo real
 
-### The Development Loop
+### O Loop de Desenvolvimento
 
 ```text
 1. SM Agent (New Chat) → Creates next story from sharded docs
@@ -58,164 +58,164 @@ AIOX transforms you into a "Vibe CEO" - directing a team of specialized AI agent
 6. Repeat until epic complete
 ```
 
-### Why This Works
+### Por Que Isto Funciona
 
-- **Context Optimization**: Clean chats = better AI performance
-- **Role Clarity**: Agents don't context-switch = higher quality
-- **Incremental Progress**: Small stories = manageable complexity
-- **Human Oversight**: You validate each step = quality control
-- **Document-Driven**: Specs guide everything = consistency
+- **Otimização de Contexto**: Chats limpos = melhor performance da IA
+- **Clareza de Papel**: Agentes não fazem troca de contexto = qualidade mais alta
+- **Progresso Incremental**: Stories pequenas = complexidade gerenciável
+- **Supervisão Humana**: Você valida cada passo = controle de qualidade
+- **Orientado a Documentos**: Specs guiam tudo = consistência
 
-## Getting Started
+## Primeiros Passos
 
-### Quick Start Options
+### Opções de Início Rápido
 
-#### Option 1: Web UI
+#### Opção 1: Web UI
 
-**Best for**: ChatGPT, Claude, Gemini users who want to start immediately
+**Melhor para**: Usuários de ChatGPT, Claude, Gemini que querem começar imediatamente
 
-1. Navigate to `dist/teams/`
-2. Copy `team-fullstack.txt` content
-3. Create new Gemini Gem or CustomGPT
-4. Upload file with instructions: "Your critical operating instructions are attached, do not break character as directed"
-5. Type `/help` to see available commands
+1. Navegue até `dist/teams/`
+2. Copie o conteúdo de `team-fullstack.txt`
+3. Crie um novo Gemini Gem ou CustomGPT
+4. Faça upload do arquivo com as instruções: "Your critical operating instructions are attached, do not break character as directed"
+5. Digite `/help` para ver os comandos disponíveis
 
-#### Option 2: IDE Integration
+#### Opção 2: Integração com IDE
 
-**Best for**: Cursor, Claude Code, Gemini CLI, Github Copilot users
+**Melhor para**: Usuários de Cursor, Claude Code, Gemini CLI, Github Copilot
 
 ```bash
 # Interactive installation (recommended)
 npx aiox-core install
 ```
 
-**Installation Steps**:
+**Passos de Instalação**:
 
-- Choose "Complete installation"
-- Select your IDE from supported options:
-  - **Cursor**: Native AI integration
-  - **Claude Code**: Anthropic's official IDE
-  - **GitHub Copilot**: VS Code extension with AI peer programming assistant
+- Escolha "Complete installation"
+- Selecione sua IDE dentre as opções suportadas:
+  - **Cursor**: Integração nativa com IA
+  - **Claude Code**: IDE oficial da Anthropic
+  - **GitHub Copilot**: Extensão do VS Code com assistente de programação em par via IA
 
-**Note for VS Code Users**: AIOX-Method assumes when you mention "VS Code" that you're using it with an AI-powered extension like GitHub Copilot. Standard VS Code without AI capabilities cannot run AIOX agents.
+**Nota para Usuários de VS Code**: O AIOX-Method assume que, quando você menciona "VS Code", está usando-o com uma extensão potencializada por IA como o GitHub Copilot. O VS Code padrão sem capacidades de IA não consegue executar agentes AIOX.
 
-**Verify Installation**:
+**Verifique a Instalação**:
 
-- `.aiox-core/` folder created with all agents
-- IDE-specific integration files created
-- All agent commands/rules/modes available
+- Pasta `.aiox-core/` criada com todos os agentes
+- Arquivos de integração específicos da IDE criados
+- Todos os comandos/regras/modos de agentes disponíveis
 
-**Remember**: At its core, AIOX-Method is about mastering and harnessing prompt engineering. Any IDE with AI agent support can use AIOX - the framework provides the structured prompts and workflows that make AI development effective
+**Lembre-se**: Em sua essência, o AIOX-Method trata de dominar e aproveitar a engenharia de prompts. Qualquer IDE com suporte a agentes de IA pode usar o AIOX - o framework fornece os prompts estruturados e workflows que tornam o desenvolvimento com IA eficaz
 
-### Environment Selection Guide
+### Guia de Seleção de Ambiente
 
-**Use Web UI for**:
+**Use a Web UI para**:
 
-- Initial planning and documentation (PRD, architecture)
-- Cost-effective document creation (especially with Gemini)
-- Brainstorming and analysis phases
-- Multi-agent consultation and planning
+- Planejamento e documentação iniciais (PRD, arquitetura)
+- Criação de documentos com custo-efetivo (especialmente com o Gemini)
+- Fases de brainstorming e análise
+- Consulta e planejamento multi-agente
 
-**Use IDE for**:
+**Use a IDE para**:
 
-- Active development and coding
-- File operations and project integration
-- Document sharding and story management
-- Implementation workflow (SM/Dev cycles)
+- Desenvolvimento e codificação ativos
+- Operações de arquivo e integração com o projeto
+- Fragmentação (sharding) de documentos e gestão de stories
+- Workflow de implementação (ciclos SM/Dev)
 
-**Cost-Saving Tip**: Create large documents (PRDs, architecture) in web UI, then copy to `docs/prd.md` and `docs/architecture.md` in your project before switching to IDE for development.
+**Dica de Economia de Custo**: Crie documentos grandes (PRDs, arquitetura) na web UI, depois copie para `docs/prd.md` e `docs/architecture.md` no seu projeto antes de mudar para a IDE para desenvolvimento.
 
-### IDE-Only Workflow Considerations
+### Considerações sobre o Workflow Somente-IDE
 
-**Can you do everything in IDE?** Yes, but understand the tradeoffs:
+**Você pode fazer tudo na IDE?** Sim, mas entenda os tradeoffs:
 
-**Pros of IDE-Only**:
+**Prós do Somente-IDE**:
 
-- Single environment workflow
-- Direct file operations from start
-- No copy/paste between environments
-- Immediate project integration
+- Workflow em ambiente único
+- Operações de arquivo diretas desde o início
+- Sem copy/paste entre ambientes
+- Integração imediata com o projeto
 
-**Cons of IDE-Only**:
+**Contras do Somente-IDE**:
 
-- Higher token costs for large document creation
-- Smaller context windows (varies by IDE/model)
-- May hit limits during planning phases
-- Less cost-effective for brainstorming
+- Custos de token mais altos para criação de documentos grandes
+- Janelas de contexto menores (varia por IDE/modelo)
+- Pode atingir limites durante as fases de planejamento
+- Menos custo-efetivo para brainstorming
 
-**Using Web Agents in IDE**:
+**Usando Agentes Web na IDE**:
 
-- **NOT RECOMMENDED**: Web agents (PM, Architect) have rich dependencies designed for large contexts
-- **Why it matters**: Dev agents are kept lean to maximize coding context
-- **The principle**: "Dev agents code, planning agents plan" - mixing breaks this optimization
+- **NÃO RECOMENDADO**: Agentes web (PM, Architect) têm dependências ricas projetadas para contextos grandes
+- **Por que importa**: Agentes Dev são mantidos enxutos para maximizar o contexto de codificação
+- **O princípio**: "Dev agents code, planning agents plan" - misturá-los quebra essa otimização
 
-**About aiox-master and aiox-orchestrator**:
+**Sobre aiox-master e aiox-orchestrator**:
 
-- **aiox-master**: orchestrates across agents and governs framework work, but delegates specialized tasks by default
-- **Still use specialized agents for planning**: PM, Architect, and UX Expert have tuned personas that produce better results
-- **Why specialization matters**: Each agent's personality and focus creates higher quality outputs
-- **If using aiox-master/orchestrator**: Fine for planning phases, but...
+- **aiox-master**: orquestra entre agentes e governa o trabalho de framework, mas delega tasks especializadas por padrão
+- **Ainda use agentes especializados para planejamento**: PM, Architect e UX Expert têm personas ajustadas que produzem melhores resultados
+- **Por que a especialização importa**: A personalidade e o foco de cada agente criam saídas de maior qualidade
+- **Se estiver usando aiox-master/orchestrator**: Tudo bem para fases de planejamento, mas...
 
-**CRITICAL RULE for Development**:
+**REGRA CRÍTICA para Desenvolvimento**:
 
-- **ALWAYS use SM agent for story creation** - Never use aiox-master or aiox-orchestrator
-- **ALWAYS use Dev agent for implementation** - Never use aiox-master or aiox-orchestrator
-- **Why this matters**: SM and Dev agents are specifically optimized for the development workflow
-- **No exceptions**: Even if using aiox-master for everything else, switch to SM → Dev for implementation
+- **SEMPRE use o agente SM para criação de story** - Nunca use aiox-master ou aiox-orchestrator
+- **SEMPRE use o agente Dev para implementação** - Nunca use aiox-master ou aiox-orchestrator
+- **Por que isto importa**: Os agentes SM e Dev são especificamente otimizados para o workflow de desenvolvimento
+- **Sem exceções**: Mesmo que use aiox-master para todo o resto, mude para SM → Dev para implementação
 
-**Best Practice for IDE-Only**:
+**Boas Práticas para Somente-IDE**:
 
-1. Use PM/Architect/UX agents for planning (better than aiox-master)
-2. Create documents directly in project
-3. Shard immediately after creation
-4. **MUST switch to SM agent** for story creation
-5. **MUST switch to Dev agent** for implementation
-6. Keep planning and coding in separate chat sessions
+1. Use os agentes PM/Architect/UX para planejamento (melhor que aiox-master)
+2. Crie documentos diretamente no projeto
+3. Fragmente (shard) imediatamente após a criação
+4. **DEVE mudar para o agente SM** para criação de story
+5. **DEVE mudar para o agente Dev** para implementação
+6. Mantenha planejamento e codificação em sessões de chat separadas
 
-## Core Configuration (core-config.yaml)
+## Configuração Central (core-config.yaml)
 
-**New in V4**: The `aiox-core/core-config.yaml` file is a critical innovation that enables AIOX to work seamlessly with any project structure, providing maximum flexibility and backwards compatibility.
+**Novo na V4**: O arquivo `aiox-core/core-config.yaml` é uma inovação crítica que permite ao AIOX trabalhar perfeitamente com qualquer estrutura de projeto, oferecendo máxima flexibilidade e retrocompatibilidade.
 
-### What is core-config.yaml?
+### O que é o core-config.yaml?
 
-This configuration file acts as a map for AIOX agents, telling them exactly where to find your project documents and how they're structured. It enables:
+Este arquivo de configuração age como um mapa para os agentes AIOX, dizendo a eles exatamente onde encontrar os documentos do seu projeto e como estão estruturados. Ele permite:
 
-- **Version Flexibility**: Work with V3, V4, or custom document structures
-- **Custom Locations**: Define where your documents and shards live
-- **Developer Context**: Specify which files the dev agent should always load
-- **Debug Support**: Built-in logging for troubleshooting
+- **Flexibilidade de Versão**: Trabalhar com estruturas de documento V3, V4 ou customizadas
+- **Locais Customizados**: Definir onde seus documentos e shards vivem
+- **Contexto do Desenvolvedor**: Especificar quais arquivos o agente dev deve sempre carregar
+- **Suporte a Debug**: Logging integrado para troubleshooting
 
-### Key Configuration Areas
+### Áreas-Chave de Configuração
 
-#### PRD Configuration
+#### Configuração do PRD
 
-- **prdVersion**: Tells agents if PRD follows v3 or v4 conventions
-- **prdSharded**: Whether epics are embedded (false) or in separate files (true)
-- **prdShardedLocation**: Where to find sharded epic files
-- **epicFilePattern**: Pattern for epic filenames (e.g., `epic-{n}*.md`)
+- **prdVersion**: Informa aos agentes se o PRD segue convenções v3 ou v4
+- **prdSharded**: Se os epics estão embutidos (false) ou em arquivos separados (true)
+- **prdShardedLocation**: Onde encontrar os arquivos de epic fragmentados
+- **epicFilePattern**: Padrão para nomes de arquivo de epic (ex.: `epic-{n}*.md`)
 
-#### Architecture Configuration
+#### Configuração da Arquitetura
 
-- **architectureVersion**: v3 (monolithic) or v4 (sharded)
-- **architectureSharded**: Whether architecture is split into components
-- **architectureShardedLocation**: Where sharded architecture files live
+- **architectureVersion**: v3 (monolítica) ou v4 (fragmentada)
+- **architectureSharded**: Se a arquitetura está dividida em componentes
+- **architectureShardedLocation**: Onde vivem os arquivos de arquitetura fragmentados
 
-#### Developer Files
+#### Arquivos do Desenvolvedor
 
-- **devLoadAlwaysFiles**: List of files the dev agent loads for every task
-- **devDebugLog**: Where dev agent logs repeated failures
-- **agentCoreDump**: Export location for chat conversations
+- **devLoadAlwaysFiles**: Lista de arquivos que o agente dev carrega para toda task
+- **devDebugLog**: Onde o agente dev registra falhas repetidas
+- **agentCoreDump**: Local de exportação das conversas de chat
 
-### Why It Matters
+### Por Que Importa
 
-1. **No Forced Migrations**: Keep your existing document structure
-2. **Gradual Adoption**: Start with V3 and migrate to V4 at your pace
-3. **Custom Workflows**: Configure AIOX to match your team's process
-4. **Intelligent Agents**: Agents automatically adapt to your configuration
+1. **Sem Migrações Forçadas**: Mantenha sua estrutura de documentos existente
+2. **Adoção Gradual**: Comece com V3 e migre para V4 no seu ritmo
+3. **Workflows Customizados**: Configure o AIOX para combinar com o processo da sua equipe
+4. **Agentes Inteligentes**: Os agentes se adaptam automaticamente à sua configuração
 
-### Common Configurations
+### Configurações Comuns
 
-**Legacy V3 Project**:
+**Projeto Legado V3**:
 
 ```yaml
 prdVersion: v3
@@ -224,7 +224,7 @@ architectureVersion: v3
 architectureSharded: false
 ```
 
-**V4 Optimized Project**:
+**Projeto Otimizado V4**:
 
 ```yaml
 prdVersion: v4
@@ -235,81 +235,81 @@ architectureSharded: true
 architectureShardedLocation: docs/architecture
 ```
 
-## Core Philosophy
+## Filosofia Central
 
 ### Vibe CEO'ing
 
-You are the "Vibe CEO" - thinking like a CEO with unlimited resources and a singular vision. Your AI agents are your high-powered team, and your role is to:
+Você é o "Vibe CEO" - pensando como um CEO com recursos ilimitados e uma visão singular. Seus agentes de IA são seu time de alta performance, e seu papel é:
 
-- **Direct**: Provide clear instructions and objectives
-- **Refine**: Iterate on outputs to achieve quality
-- **Oversee**: Maintain strategic alignment across all agents
+- **Dirigir**: Fornecer instruções e objetivos claros
+- **Refinar**: Iterar sobre as saídas para alcançar qualidade
+- **Supervisionar**: Manter o alinhamento estratégico entre todos os agentes
 
-### Core Principles
+### Princípios Centrais
 
-1. **MAXIMIZE_AI_LEVERAGE**: Push the AI to deliver more. Challenge outputs and iterate.
-2. **QUALITY_CONTROL**: You are the ultimate arbiter of quality. Review all outputs.
-3. **STRATEGIC_OVERSIGHT**: Maintain the high-level vision and ensure alignment.
-4. **ITERATIVE_REFINEMENT**: Expect to revisit steps. This is not a linear process.
-5. **CLEAR_INSTRUCTIONS**: Precise requests lead to better outputs.
-6. **DOCUMENTATION_IS_KEY**: Good inputs (briefs, PRDs) lead to good outputs.
-7. **START_SMALL_SCALE_FAST**: Test concepts, then expand.
-8. **EMBRACE_THE_CHAOS**: Adapt and overcome challenges.
+1. **MAXIMIZE_AI_LEVERAGE**: Pressione a IA para entregar mais. Questione as saídas e itere.
+2. **QUALITY_CONTROL**: Você é o árbitro final da qualidade. Revise todas as saídas.
+3. **STRATEGIC_OVERSIGHT**: Mantenha a visão de alto nível e garanta o alinhamento.
+4. **ITERATIVE_REFINEMENT**: Espere revisitar passos. Este não é um processo linear.
+5. **CLEAR_INSTRUCTIONS**: Solicitações precisas levam a melhores saídas.
+6. **DOCUMENTATION_IS_KEY**: Boas entradas (briefs, PRDs) levam a boas saídas.
+7. **START_SMALL_SCALE_FAST**: Teste conceitos, depois expanda.
+8. **EMBRACE_THE_CHAOS**: Adapte-se e supere os desafios.
 
-### Key Workflow Principles
+### Princípios-Chave de Workflow
 
-1. **Agent Specialization**: Each agent has specific expertise and responsibilities
-2. **Clean Handoffs**: Always start fresh when switching between agents
-3. **Status Tracking**: Maintain story statuses (Draft → Approved → InProgress → Done)
-4. **Iterative Development**: Complete one story before starting the next
-5. **Documentation First**: Always start with solid PRD and architecture
+1. **Especialização de Agentes**: Cada agente tem expertise e responsabilidades específicas
+2. **Handoffs Limpos**: Sempre comece do zero ao trocar entre agentes
+3. **Rastreamento de Status**: Mantenha os status das stories (Draft → Approved → InProgress → Done)
+4. **Desenvolvimento Iterativo**: Conclua uma story antes de começar a próxima
+5. **Documentação Primeiro**: Sempre comece com um PRD e arquitetura sólidos
 
-## Agent System
+## Sistema de Agentes
 
-### Core Development Team
+### Time Central de Desenvolvimento
 
-| Agent       | Role               | Primary Functions                       | When to Use                            |
+| Agente      | Papel              | Funções Principais                      | Quando Usar                            |
 | ----------- | ------------------ | --------------------------------------- | -------------------------------------- |
-| `analyst`   | Business Analyst   | Market research, requirements gathering | Project planning, competitive analysis |
-| `pm`        | Product Manager    | PRD creation, feature prioritization    | Strategic planning, roadmaps           |
-| `architect` | Solution Architect | System design, technical architecture   | Complex systems, scalability planning  |
-| `dev`       | Developer          | Code implementation, debugging          | All development tasks                  |
-| `qa`        | QA Specialist      | Test planning, quality assurance        | Testing strategies, bug validation     |
-| `ux-expert` | UX Designer        | UI/UX design, prototypes                | User experience, interface design      |
-| `po`        | Product Owner      | Backlog management, story validation    | Story refinement, acceptance criteria  |
-| `sm`        | Scrum Master       | Sprint planning, story creation         | Project management, workflow           |
+| `analyst`   | Business Analyst   | Pesquisa de mercado, levantamento de requisitos | Planejamento de projeto, análise competitiva |
+| `pm`        | Product Manager    | Criação de PRD, priorização de funcionalidades  | Planejamento estratégico, roadmaps      |
+| `architect` | Solution Architect | Design de sistema, arquitetura técnica  | Sistemas complexos, planejamento de escalabilidade |
+| `dev`       | Developer          | Implementação de código, debugging      | Todas as tasks de desenvolvimento       |
+| `qa`        | QA Specialist      | Planejamento de testes, garantia de qualidade   | Estratégias de teste, validação de bugs |
+| `ux-expert` | UX Designer        | Design UI/UX, protótipos                | Experiência do usuário, design de interface |
+| `po`        | Product Owner      | Gestão de backlog, validação de stories | Refinamento de stories, critérios de aceite |
+| `sm`        | Scrum Master       | Planejamento de sprint, criação de stories      | Gestão de projeto, workflow             |
 
-### Meta Agents
+### Meta Agentes
 
-| Agent               | Role             | Primary Functions                     | When to Use                       |
+| Agente              | Papel            | Funções Principais                    | Quando Usar                       |
 | ------------------- | ---------------- | ------------------------------------- | --------------------------------- |
-| `aiox-orchestrator` | Team Coordinator | Multi-agent workflows, role switching | Complex multi-role tasks          |
-| `aiox-master`       | Master Orchestrator | Framework governance, routing, meta-operations | Multi-agent coordination and framework work |
+| `aiox-orchestrator` | Team Coordinator | Workflows multi-agente, troca de papel | Tasks complexas multi-papel       |
+| `aiox-master`       | Master Orchestrator | Governança do framework, roteamento, meta-operações | Coordenação multi-agente e trabalho de framework |
 
-### Agent Interaction Commands
+### Comandos de Interação com Agentes
 
-#### IDE-Specific Syntax
+#### Sintaxe Específica por IDE
 
-**Agent Loading by IDE**:
+**Carregamento de Agente por IDE**:
 
-- **Claude Code**: `/agent-name` (e.g., `/aiox-master`)
-- **Cursor**: `@agent-name` (e.g., `@aiox-master`)
-- **GitHub Copilot**: Open the Chat view (`⌃⌘I` on Mac, `Ctrl+Alt+I` on Windows/Linux) and select **Agent** from the chat mode selector.
+- **Claude Code**: `/agent-name` (ex.: `/aiox-master`)
+- **Cursor**: `@agent-name` (ex.: `@aiox-master`)
+- **GitHub Copilot**: Abra a Chat view (`⌃⌘I` no Mac, `Ctrl+Alt+I` no Windows/Linux) e selecione **Agent** no seletor de modo de chat.
 
-**Chat Management Guidelines**:
+**Diretrizes de Gestão de Chat**:
 
-- **Claude Code, Cursor**: Start new chats when switching agents
+- **Claude Code, Cursor**: Inicie novos chats ao trocar de agentes
 
-**Common Task Commands**:
+**Comandos Comuns de Task**:
 
-- `*help` - Show available commands
-- `*status` - Show current context/progress
-- `*exit` - Exit the agent mode
-- `*shard-doc docs/prd.md prd` - Shard PRD into manageable pieces
-- `*shard-doc docs/architecture.md architecture` - Shard architecture document
-- `*create` - Run create-next-story task (SM agent)
+- `*help` - Mostrar comandos disponíveis
+- `*status` - Mostrar contexto/progresso atual
+- `*exit` - Sair do modo agente
+- `*shard-doc docs/prd.md prd` - Fragmentar o PRD em pedaços gerenciáveis
+- `*shard-doc docs/architecture.md architecture` - Fragmentar o documento de arquitetura
+- `*create` - Executar a task create-next-story (agente SM)
 
-**In Web UI**:
+**Na Web UI**:
 
 ```text
 /pm create-doc prd
@@ -319,327 +319,327 @@ You are the "Vibe CEO" - thinking like a CEO with unlimited resources and a sing
 /switch agent-name - Change active agent (if orchestrator available)
 ```
 
-## Team Configurations
+## Configurações de Time
 
-### Pre-Built Teams
+### Times Pré-Construídos
 
 #### Team All
 
-- **Includes**: All 10 agents + orchestrator
-- **Use Case**: Complete projects requiring all roles
+- **Inclui**: Todos os 10 agentes + orchestrator
+- **Caso de Uso**: Projetos completos exigindo todos os papéis
 - **Bundle**: `team-all.txt`
 
 #### Team Fullstack
 
-- **Includes**: PM, Architect, Developer, QA, UX Expert
-- **Use Case**: End-to-end web/mobile development
+- **Inclui**: PM, Architect, Developer, QA, UX Expert
+- **Caso de Uso**: Desenvolvimento web/mobile de ponta a ponta
 - **Bundle**: `team-fullstack.txt`
 
 #### Team No-UI
 
-- **Includes**: PM, Architect, Developer, QA (no UX Expert)
-- **Use Case**: Backend services, APIs, system development
+- **Inclui**: PM, Architect, Developer, QA (sem UX Expert)
+- **Caso de Uso**: Serviços de backend, APIs, desenvolvimento de sistema
 - **Bundle**: `team-no-ui.txt`
 
-## Core Architecture
+## Arquitetura Central
 
-### System Overview
+### Visão Geral do Sistema
 
-The AIOX-Method is built around a modular architecture centered on the `aiox-core` directory, which serves as the brain of the entire system. This design enables the framework to operate effectively in both IDE environments (like Cursor, VS Code) and web-based AI interfaces (like ChatGPT, Gemini).
+O AIOX-Method é construído em torno de uma arquitetura modular centrada no diretório `aiox-core`, que serve como o cérebro de todo o sistema. Esse design permite que o framework opere eficazmente tanto em ambientes IDE (como Cursor, VS Code) quanto em interfaces de IA baseadas em web (como ChatGPT, Gemini).
 
-### Key Architectural Components
+### Componentes Arquiteturais Principais
 
-#### 1. Agents (`.aiox-core/development/agents/`)
+#### 1. Agentes (`.aiox-core/development/agents/`)
 
-- **Purpose**: Each markdown file defines a specialized AI agent for a specific Agile role (PM, Dev, Architect, etc.)
-- **Structure**: Contains YAML headers specifying the agent's persona, capabilities, and dependencies
-- **Dependencies**: Lists of tasks, templates, checklists, and data files the agent can use
-- **Startup Instructions**: Can load project-specific documentation for immediate context
+- **Propósito**: Cada arquivo markdown define um agente de IA especializado para um papel Ágil específico (PM, Dev, Architect, etc.)
+- **Estrutura**: Contém cabeçalhos YAML especificando a persona, capacidades e dependências do agente
+- **Dependências**: Listas de tasks, templates, checklists e arquivos de dados que o agente pode usar
+- **Instruções de Inicialização**: Podem carregar documentação específica do projeto para contexto imediato
 
-#### 2. Agent Teams (`.aiox-core/development/agent-teams/`)
+#### 2. Times de Agentes (`.aiox-core/development/agent-teams/`)
 
-- **Purpose**: Define collections of agents bundled together for specific purposes
-- **Examples**: `team-all.yaml` (comprehensive bundle), `team-fullstack.yaml` (full-stack development)
-- **Usage**: Creates pre-packaged contexts for web UI environments
+- **Propósito**: Definir coleções de agentes agrupados para propósitos específicos
+- **Exemplos**: `team-all.yaml` (bundle abrangente), `team-fullstack.yaml` (desenvolvimento full-stack)
+- **Uso**: Cria contextos pré-empacotados para ambientes web UI
 
 #### 3. Workflows (`.aiox-core/development/workflows/`)
 
-- **Purpose**: YAML files defining prescribed sequences of steps for specific project types
-- **Types**: Greenfield (new projects) and Brownfield (existing projects) for UI, service, and fullstack development
-- **Structure**: Defines agent interactions, artifacts created, and transition conditions
+- **Propósito**: Arquivos YAML que definem sequências prescritas de passos para tipos específicos de projeto
+- **Tipos**: Greenfield (novos projetos) e Brownfield (projetos existentes) para desenvolvimento de UI, serviço e fullstack
+- **Estrutura**: Define interações entre agentes, artefatos criados e condições de transição
 
-#### 4. Reusable Resources
+#### 4. Recursos Reutilizáveis
 
-- **Templates** (`.aiox-core/product/templates/`): Markdown templates for PRDs, architecture specs, user stories
-- **Tasks** (`.aiox-core/development/tasks/`): Instructions for specific repeatable actions like "shard-doc" or "create-next-story"
-- **Checklists** (`.aiox-core/product/checklists/`): Quality assurance checklists for validation and review
-- **Data** (`.aiox-core/data/`): Core knowledge base and technical preferences
+- **Templates** (`.aiox-core/product/templates/`): Templates Markdown para PRDs, specs de arquitetura, user stories
+- **Tasks** (`.aiox-core/development/tasks/`): Instruções para ações repetíveis específicas como "shard-doc" ou "create-next-story"
+- **Checklists** (`.aiox-core/product/checklists/`): Checklists de garantia de qualidade para validação e revisão
+- **Data** (`.aiox-core/data/`): Base de conhecimento central e preferências técnicas
 
-### Dual Environment Architecture
+### Arquitetura de Dois Ambientes
 
-#### IDE Environment
+#### Ambiente IDE
 
-- Users interact directly with agent markdown files
-- Agents can access all dependencies dynamically
-- Supports real-time file operations and project integration
-- Optimized for development workflow execution
+- Os usuários interagem diretamente com os arquivos markdown dos agentes
+- Os agentes podem acessar todas as dependências dinamicamente
+- Suporta operações de arquivo em tempo real e integração com o projeto
+- Otimizado para execução do workflow de desenvolvimento
 
-#### Web UI Environment
+#### Ambiente Web UI
 
-- Uses pre-built bundles from `dist/teams` for stand alone 1 upload files for all agents and their assets with an orchestrating agent
-- Single text files containing all agent dependencies are in `dist/agents/` - these are unnecessary unless you want to create a web agent that is only a single agent and not a team
-- Created by the web-builder tool for upload to web interfaces
-- Provides complete context in one package
+- Usa bundles pré-construídos de `dist/teams` como arquivos autônomos de upload único para todos os agentes e seus assets com um agente orquestrador
+- Arquivos de texto únicos contendo todas as dependências dos agentes estão em `dist/agents/` - estes são desnecessários, a menos que você queira criar um agente web que seja apenas um único agente e não um time
+- Criados pela ferramenta web-builder para upload em interfaces web
+- Fornece contexto completo em um único pacote
 
-### Template Processing System
+### Sistema de Processamento de Templates
 
-AIOX employs a sophisticated template system with three key components:
+O AIOX emprega um sistema sofisticado de templates com três componentes-chave:
 
-1. **Template Format** (`utils/aiox-doc-template.md`): Defines markup language for variable substitution and AI processing directives from yaml templates
-2. **Document Creation** (`tasks/create-doc.md`): Orchestrates template selection and user interaction to transform yaml spec to final markdown output
-3. **Advanced Elicitation** (`tasks/advanced-elicitation.md`): Provides interactive refinement through structured brainstorming
+1. **Formato de Template** (`utils/aiox-doc-template.md`): Define a linguagem de marcação para substituição de variáveis e diretivas de processamento de IA a partir de templates yaml
+2. **Criação de Documento** (`tasks/create-doc.md`): Orquestra a seleção de template e a interação com o usuário para transformar a spec yaml na saída markdown final
+3. **Elicitação Avançada** (`tasks/advanced-elicitation.md`): Fornece refinamento interativo por meio de brainstorming estruturado
 
-### Technical Preferences Integration
+### Integração de Preferências Técnicas
 
-The `technical-preferences.md` file serves as a persistent technical profile that:
+O arquivo `technical-preferences.md` serve como um perfil técnico persistente que:
 
-- Ensures consistency across all agents and projects
-- Eliminates repetitive technology specification
-- Provides personalized recommendations aligned with user preferences
-- Evolves over time with lessons learned
+- Garante consistência entre todos os agentes e projetos
+- Elimina a especificação repetitiva de tecnologia
+- Fornece recomendações personalizadas alinhadas às preferências do usuário
+- Evolui ao longo do tempo com as lições aprendidas
 
-### Build and Delivery Process
+### Processo de Build e Entrega
 
-The `web-builder.js` tool creates web-ready bundles by:
+A ferramenta `web-builder.js` cria bundles prontos para web ao:
 
-1. Reading agent or team definition files
-2. Recursively resolving all dependencies
-3. Concatenating content into single text files with clear separators
-4. Outputting ready-to-upload bundles for web AI interfaces
+1. Ler os arquivos de definição de agente ou time
+2. Resolver recursivamente todas as dependências
+3. Concatenar o conteúdo em arquivos de texto únicos com separadores claros
+4. Gerar bundles prontos para upload para interfaces de IA web
 
-This architecture enables seamless operation across environments while maintaining the rich, interconnected agent ecosystem that makes AIOX powerful.
+Esta arquitetura permite operação fluida entre ambientes enquanto mantém o ecossistema de agentes rico e interconectado que torna o AIOX poderoso.
 
-## Complete Development Workflow
+## Workflow Completo de Desenvolvimento
 
-### Planning Phase (Web UI Recommended - Especially Gemini!)
+### Fase de Planejamento (Web UI Recomendado - Especialmente Gemini!)
 
-**Ideal for cost efficiency with Gemini's massive context:**
+**Ideal para eficiência de custo com o contexto massivo do Gemini:**
 
-**For Brownfield Projects - Start Here!**:
+**Para Projetos Brownfield - Comece Aqui!**:
 
-1. **Upload entire project to Gemini Web** (GitHub URL, files, or zip)
-2. **Document existing system**: `/analyst` → `*document-project`
-3. **Creates comprehensive docs** from entire codebase analysis
+1. **Faça upload do projeto inteiro para o Gemini Web** (URL do GitHub, arquivos ou zip)
+2. **Documente o sistema existente**: `/analyst` → `*document-project`
+3. **Cria docs abrangentes** a partir da análise de todo o codebase
 
-**For All Projects**:
+**Para Todos os Projetos**:
 
-1. **Optional Analysis**: `/analyst` - Market research, competitive analysis
-2. **Project Brief**: Create foundation document (Analyst or user)
-3. **PRD Creation**: `/pm create-doc prd` - Comprehensive product requirements
-4. **Architecture Design**: `/architect create-doc architecture` - Technical foundation
-5. **Validation & Alignment**: `/po` run master checklist to ensure document consistency
-6. **Document Preparation**: Copy final documents to project as `docs/prd.md` and `docs/architecture.md`
+1. **Análise Opcional**: `/analyst` - Pesquisa de mercado, análise competitiva
+2. **Project Brief**: Crie o documento de fundação (Analyst ou usuário)
+3. **Criação de PRD**: `/pm create-doc prd` - Requisitos de produto abrangentes
+4. **Design de Arquitetura**: `/architect create-doc architecture` - Fundação técnica
+5. **Validação e Alinhamento**: `/po` execute o master checklist para garantir consistência dos documentos
+6. **Preparação de Documentos**: Copie os documentos finais para o projeto como `docs/prd.md` e `docs/architecture.md`
 
-#### Example Planning Prompts
+#### Exemplos de Prompts de Planejamento
 
-**For PRD Creation**:
+**Para Criação de PRD**:
 
 ```text
 "I want to build a [type] application that [core purpose].
 Help me brainstorm features and create a comprehensive PRD."
 ```
 
-**For Architecture Design**:
+**Para Design de Arquitetura**:
 
 ```text
 "Based on this PRD, design a scalable technical architecture
 that can handle [specific requirements]."
 ```
 
-### Critical Transition: Web UI to IDE
+### Transição Crítica: Web UI para IDE
 
-**Once planning is complete, you MUST switch to IDE for development:**
+**Uma vez que o planejamento esteja completo, você DEVE mudar para a IDE para desenvolvimento:**
 
-- **Why**: Development workflow requires file operations, real-time project integration, and document sharding
-- **Cost Benefit**: Web UI is more cost-effective for large document creation; IDE is optimized for development tasks
-- **Required Files**: Ensure `docs/prd.md` and `docs/architecture.md` exist in your project
+- **Por quê**: O workflow de desenvolvimento exige operações de arquivo, integração em tempo real com o projeto e fragmentação de documentos
+- **Benefício de Custo**: A Web UI é mais custo-efetiva para criação de documentos grandes; a IDE é otimizada para tasks de desenvolvimento
+- **Arquivos Necessários**: Garanta que `docs/prd.md` e `docs/architecture.md` existam no seu projeto
 
-### IDE Development Workflow
+### Workflow de Desenvolvimento na IDE
 
-**Prerequisites**: Planning documents must exist in `docs/` folder
+**Pré-requisitos**: Os documentos de planejamento devem existir na pasta `docs/`
 
-1. **Document Sharding** (CRITICAL STEP):
-   - Documents created by PM/Architect (in Web or IDE) MUST be sharded for development
-   - Two methods to shard:
-     a) **Manual**: Drag `shard-doc` task + document file into chat
-     b) **Agent**: Ask `@aiox-master` or `@po` to shard documents
-   - Shards `docs/prd.md` → `docs/prd/` folder
-   - Shards `docs/architecture.md` → `docs/architecture/` folder
-   - **WARNING**: Do NOT shard in Web UI - copying many small files is painful!
+1. **Fragmentação de Documentos** (PASSO CRÍTICO):
+   - Documentos criados pelo PM/Architect (na Web ou IDE) DEVEM ser fragmentados para desenvolvimento
+   - Dois métodos para fragmentar:
+     a) **Manual**: Arraste a task `shard-doc` + o arquivo do documento para o chat
+     b) **Agente**: Peça ao `@aiox-master` ou `@po` para fragmentar os documentos
+   - Fragmenta `docs/prd.md` → pasta `docs/prd/`
+   - Fragmenta `docs/architecture.md` → pasta `docs/architecture/`
+   - **AVISO**: NÃO fragmente na Web UI - copiar muitos arquivos pequenos é doloroso!
 
-2. **Verify Sharded Content**:
-   - At least one `epic-n.md` file in `docs/prd/` with stories in development order
-   - Source tree document and coding standards for dev agent reference
-   - Sharded docs for SM agent story creation
+2. **Verifique o Conteúdo Fragmentado**:
+   - Pelo menos um arquivo `epic-n.md` em `docs/prd/` com stories em ordem de desenvolvimento
+   - Documento de árvore de código-fonte e padrões de codificação para referência do agente dev
+   - Docs fragmentados para criação de story do agente SM
 
-Resulting Folder Structure:
+Estrutura de Pastas Resultante:
 
-- `docs/prd/` - Broken down PRD sections
-- `docs/architecture/` - Broken down architecture sections
-- `docs/stories/` - Generated user stories
+- `docs/prd/` - Seções do PRD divididas
+- `docs/architecture/` - Seções da arquitetura divididas
+- `docs/stories/` - User stories geradas
 
-1. **Development Cycle** (Sequential, one story at a time):
+1. **Ciclo de Desenvolvimento** (Sequencial, uma story por vez):
 
-   **CRITICAL CONTEXT MANAGEMENT**:
-   - **Context windows matter!** Always use fresh, clean context windows
-   - **Model selection matters!** Use most powerful thinking model for SM story creation
-   - **ALWAYS start new chat between SM, Dev, and QA work**
+   **GESTÃO CRÍTICA DE CONTEXTO**:
+   - **Janelas de contexto importam!** Sempre use janelas de contexto novas e limpas
+   - **A seleção de modelo importa!** Use o modelo de pensamento mais poderoso para criação de story do SM
+   - **SEMPRE inicie um novo chat entre o trabalho de SM, Dev e QA**
 
-   **Step 1 - Story Creation**:
-   - **NEW CLEAN CHAT** → Select powerful model → `@sm` → `*create`
-   - SM executes create-next-story task
-   - Review generated story in `docs/stories/`
-   - Update status from "Draft" to "Approved"
+   **Passo 1 - Criação de Story**:
+   - **NOVO CHAT LIMPO** → Selecione um modelo poderoso → `@sm` → `*create`
+   - O SM executa a task create-next-story
+   - Revise a story gerada em `docs/stories/`
+   - Atualize o status de "Draft" para "Approved"
 
-   **Step 2 - Story Implementation**:
-   - **NEW CLEAN CHAT** → `@dev`
-   - Agent asks which story to implement
-   - Include story file content to save dev agent lookup time
-   - Dev follows tasks/subtasks, marking completion
-   - Dev maintains File List of all changes
-   - Dev marks story as "Review" when complete with all tests passing
+   **Passo 2 - Implementação da Story**:
+   - **NOVO CHAT LIMPO** → `@dev`
+   - O agente pergunta qual story implementar
+   - Inclua o conteúdo do arquivo da story para poupar tempo de busca do agente dev
+   - O Dev segue tasks/subtasks, marcando a conclusão
+   - O Dev mantém a File List de todas as mudanças
+   - O Dev marca a story como "Review" quando concluída com todos os testes passando
 
-   **Step 3 - Senior QA Review**:
-   - **NEW CLEAN CHAT** → `@qa` → execute review-story task
-   - QA performs senior developer code review
-   - QA can refactor and improve code directly
-   - QA appends results to story's QA Results section
-   - If approved: Status → "Done"
-   - If changes needed: Status stays "Review" with unchecked items for dev
+   **Passo 3 - Revisão Sênior de QA**:
+   - **NOVO CHAT LIMPO** → `@qa` → execute a task review-story
+   - O QA realiza uma revisão de código de desenvolvedor sênior
+   - O QA pode refatorar e melhorar o código diretamente
+   - O QA anexa os resultados à seção QA Results da story
+   - Se aprovado: Status → "Done"
+   - Se mudanças forem necessárias: Status permanece "Review" com itens desmarcados para o dev
 
-   **Step 4 - Repeat**: Continue SM → Dev → QA cycle until all epic stories complete
+   **Passo 4 - Repetir**: Continue o ciclo SM → Dev → QA até que todas as stories do epic estejam concluídas
 
-**Important**: Only 1 story in progress at a time, worked sequentially until all epic stories complete.
+**Importante**: Apenas 1 story em andamento por vez, trabalhada sequencialmente até que todas as stories do epic estejam concluídas.
 
-### Status Tracking Workflow
+### Workflow de Rastreamento de Status
 
-Stories progress through defined statuses:
+As stories progridem por status definidos:
 
 - **Draft** → **Approved** → **InProgress** → **Done**
 
-Each status change requires user verification and approval before proceeding.
+Cada mudança de status requer verificação e aprovação do usuário antes de prosseguir.
 
-### Workflow Types
+### Tipos de Workflow
 
-#### Greenfield Development
+#### Desenvolvimento Greenfield
 
-- Business analysis and market research
-- Product requirements and feature definition  
-- System architecture and design
-- Development execution
-- Testing and deployment
+- Análise de negócio e pesquisa de mercado
+- Requisitos de produto e definição de funcionalidades
+- Arquitetura e design de sistema
+- Execução do desenvolvimento
+- Testes e deploy
 
-#### Brownfield Enhancement (Existing Projects)
+#### Aprimoramento Brownfield (Projetos Existentes)
 
-**Key Concept**: Brownfield development requires comprehensive documentation of your existing project for AI agents to understand context, patterns, and constraints.
+**Conceito-Chave**: O desenvolvimento brownfield exige documentação abrangente do seu projeto existente para que os agentes de IA entendam contexto, padrões e restrições.
 
-**Complete Brownfield Workflow Options**:
+**Opções de Workflow Brownfield Completo**:
 
-**Option 1: PRD-First (Recommended for Large Codebases/Monorepos)**:
+**Opção 1: PRD-First (Recomendado para Codebases Grandes/Monorepos)**:
 
-1. **Upload project to Gemini Web** (GitHub URL, files, or zip)
-2. **Create PRD first**: `@pm` → `*create-doc brownfield-prd`
-3. **Focused documentation**: `@analyst` → `*document-project`
-   - Analyst asks for focus if no PRD provided
-   - Choose "single document" format for Web UI
-   - Uses PRD to document ONLY relevant areas
-   - Creates one comprehensive markdown file
-   - Avoids bloating docs with unused code
+1. **Faça upload do projeto para o Gemini Web** (URL do GitHub, arquivos ou zip)
+2. **Crie o PRD primeiro**: `@pm` → `*create-doc brownfield-prd`
+3. **Documentação focada**: `@analyst` → `*document-project`
+   - O Analyst pede o foco se nenhum PRD for fornecido
+   - Escolha o formato "single document" para Web UI
+   - Usa o PRD para documentar SOMENTE áreas relevantes
+   - Cria um único arquivo markdown abrangente
+   - Evita inchar os docs com código não utilizado
 
-**Option 2: Document-First (Good for Smaller Projects)**:
+**Opção 2: Document-First (Bom para Projetos Menores)**:
 
-1. **Upload project to Gemini Web**
-2. **Document everything**: `@analyst` → `*document-project`
-3. **Then create PRD**: `@pm` → `*create-doc brownfield-prd`
-   - More thorough but can create excessive documentation
+1. **Faça upload do projeto para o Gemini Web**
+2. **Documente tudo**: `@analyst` → `*document-project`
+3. **Depois crie o PRD**: `@pm` → `*create-doc brownfield-prd`
+   - Mais minucioso, mas pode criar documentação excessiva
 
-4. **Requirements Gathering**:
-   - **Brownfield PRD**: Use PM agent with `brownfield-prd-tmpl`
-   - **Analyzes**: Existing system, constraints, integration points
-   - **Defines**: Enhancement scope, compatibility requirements, risk assessment
-   - **Creates**: Epic and story structure for changes
+4. **Levantamento de Requisitos**:
+   - **Brownfield PRD**: Use o agente PM com `brownfield-prd-tmpl`
+   - **Analisa**: Sistema existente, restrições, pontos de integração
+   - **Define**: Escopo do aprimoramento, requisitos de compatibilidade, avaliação de risco
+   - **Cria**: Estrutura de epic e story para as mudanças
 
-5. **Architecture Planning**:
-   - **Brownfield Architecture**: Use Architect agent with `brownfield-architecture-tmpl`
-   - **Integration Strategy**: How new features integrate with existing system
-   - **Migration Planning**: Gradual rollout and backwards compatibility
-   - **Risk Mitigation**: Addressing potential breaking changes
+5. **Planejamento de Arquitetura**:
+   - **Brownfield Architecture**: Use o agente Architect com `brownfield-architecture-tmpl`
+   - **Estratégia de Integração**: Como as novas funcionalidades se integram com o sistema existente
+   - **Planejamento de Migração**: Rollout gradual e retrocompatibilidade
+   - **Mitigação de Risco**: Tratamento de potenciais breaking changes
 
-**Brownfield-Specific Resources**:
+**Recursos Específicos de Brownfield**:
 
 **Templates**:
 
-- `brownfield-prd-tmpl.md`: Comprehensive enhancement planning with existing system analysis
-- `brownfield-architecture-tmpl.md`: Integration-focused architecture for existing systems
+- `brownfield-prd-tmpl.md`: Planejamento de aprimoramento abrangente com análise do sistema existente
+- `brownfield-architecture-tmpl.md`: Arquitetura focada em integração para sistemas existentes
 
 **Tasks**:
 
-- `document-project`: Generates comprehensive documentation from existing codebase
-- `brownfield-create-epic`: Creates single epic for focused enhancements (when full PRD is overkill)
-- `brownfield-create-story`: Creates individual story for small, isolated changes
+- `document-project`: Gera documentação abrangente a partir do codebase existente
+- `brownfield-create-epic`: Cria um único epic para aprimoramentos focados (quando um PRD completo é exagero)
+- `brownfield-create-story`: Cria uma story individual para mudanças pequenas e isoladas
 
-**When to Use Each Approach**:
+**Quando Usar Cada Abordagem**:
 
-**Full Brownfield Workflow** (Recommended for):
+**Workflow Brownfield Completo** (Recomendado para):
 
-- Major feature additions
-- System modernization
-- Complex integrations
-- Multiple related changes
+- Grandes adições de funcionalidades
+- Modernização de sistema
+- Integrações complexas
+- Múltiplas mudanças relacionadas
 
-**Quick Epic/Story Creation** (Use when):
+**Criação Rápida de Epic/Story** (Use quando):
 
-- Single, focused enhancement
-- Isolated bug fixes
-- Small feature additions
-- Well-documented existing system
+- Aprimoramento único e focado
+- Correções de bugs isoladas
+- Pequenas adições de funcionalidades
+- Sistema existente bem documentado
 
-**Critical Success Factors**:
+**Fatores Críticos de Sucesso**:
 
-1. **Documentation First**: Always run `document-project` if docs are outdated/missing
-2. **Context Matters**: Provide agents access to relevant code sections
-3. **Integration Focus**: Emphasize compatibility and non-breaking changes
-4. **Incremental Approach**: Plan for gradual rollout and testing
+1. **Documentação Primeiro**: Sempre execute `document-project` se os docs estiverem desatualizados/ausentes
+2. **Contexto Importa**: Forneça aos agentes acesso às seções de código relevantes
+3. **Foco na Integração**: Enfatize compatibilidade e mudanças não disruptivas
+4. **Abordagem Incremental**: Planeje para rollout e testes graduais
 
-**For detailed guide**: See `docs/working-in-the-brownfield.md`
+**Para um guia detalhado**: Veja `docs/working-in-the-brownfield.md`
 
-## Document Creation Best Practices
+## Boas Práticas de Criação de Documentos
 
-### Required File Naming for Framework Integration
+### Nomenclatura de Arquivos Necessária para Integração com o Framework
 
-- `docs/prd.md` - Product Requirements Document
-- `docs/architecture.md` - System Architecture Document
+- `docs/prd.md` - Documento de Requisitos de Produto
+- `docs/architecture.md` - Documento de Arquitetura do Sistema
 
-**Why These Names Matter**:
+**Por Que Esses Nomes Importam**:
 
-- Agents automatically reference these files during development
-- Sharding tasks expect these specific filenames
-- Workflow automation depends on standard naming
+- Os agentes referenciam automaticamente esses arquivos durante o desenvolvimento
+- As tasks de fragmentação esperam esses nomes de arquivo específicos
+- A automação de workflow depende da nomenclatura padrão
 
-### Cost-Effective Document Creation Workflow
+### Workflow de Criação de Documentos com Custo-Efetivo
 
-**Recommended for Large Documents (PRD, Architecture):**
+**Recomendado para Documentos Grandes (PRD, Arquitetura):**
 
-1. **Use Web UI**: Create documents in web interface for cost efficiency
-2. **Copy Final Output**: Save complete markdown to your project
-3. **Standard Names**: Save as `docs/prd.md` and `docs/architecture.md`
-4. **Switch to IDE**: Use IDE agents for development and smaller documents
+1. **Use a Web UI**: Crie documentos na interface web para eficiência de custo
+2. **Copie a Saída Final**: Salve o markdown completo no seu projeto
+3. **Nomes Padrão**: Salve como `docs/prd.md` e `docs/architecture.md`
+4. **Mude para a IDE**: Use agentes da IDE para desenvolvimento e documentos menores
 
-### Document Sharding
+### Fragmentação de Documentos
 
-Templates with Level 2 headings (`##`) can be automatically sharded:
+Templates com cabeçalhos de Nível 2 (`##`) podem ser fragmentados automaticamente:
 
-**Original PRD**:
+**PRD Original**:
 
 ```markdown
 ## Goals and Background Context
@@ -648,26 +648,26 @@ Templates with Level 2 headings (`##`) can be automatically sharded:
 ## Success Metrics
 ```
 
-**After Sharding**:
+**Após a Fragmentação**:
 
 - `docs/prd/goals-and-background-context.md`
 - `docs/prd/requirements.md`
 - `docs/prd/user-interface-design-goals.md`
 - `docs/prd/success-metrics.md`
 
-Use the `shard-doc` task or `@kayvan/markdown-tree-parser` tool for automatic sharding.
+Use a task `shard-doc` ou a ferramenta `@kayvan/markdown-tree-parser` para fragmentação automática.
 
-## ClickUp Integration Workflow
+## Workflow de Integração com o ClickUp
 
-### Overview
+### Visão Geral
 
-AIOX integrates with ClickUp for project management and story tracking. When creating stories using the `create-next-story` task, agents must follow a specific workflow to correctly interact with the ClickUp MCP server.
+O AIOX integra-se com o ClickUp para gestão de projetos e rastreamento de stories. Ao criar stories usando a task `create-next-story`, os agentes devem seguir um workflow específico para interagir corretamente com o servidor MCP do ClickUp.
 
-### Critical Workflow Pattern
+### Padrão Crítico de Workflow
 
-**ALWAYS use this 2-step process:**
+**SEMPRE use este processo de 2 passos:**
 
-#### Step 1: Get Workspace Hierarchy
+#### Passo 1: Obter a Hierarquia do Workspace
 ```javascript
 // Call get_workspace_hierarchy (no parameters needed)
 const hierarchy = await clickup.get_workspace_hierarchy();
@@ -684,9 +684,9 @@ const hierarchy = await clickup.get_workspace_hierarchy();
 }
 ```
 
-**Store the numeric list_id** for use in Step 2.
+**Armazene o list_id numérico** para uso no Passo 2.
 
-#### Step 2: Create Task with Discovered list_id
+#### Passo 2: Criar a Task com o list_id Descoberto
 ```yaml
 # Call create_task with these parameters:
 list_id: "901317181013"  # ← MUST be numeric string from Step 1
@@ -704,18 +704,18 @@ custom_fields:
     value: "5.2"
 ```
 
-### Validation Requirements
+### Requisitos de Validação
 
-**Critical Rules:**
-- `list_id` MUST be a numeric string (validated by `/^\d+$/`)
-- Using `"Backlog"` or other non-numeric values WILL FAIL
-- `assignees` (if provided) must be an array: `[123, 456]`
-- `custom_fields` must be array of objects with `id` and `value`
+**Regras Críticas:**
+- `list_id` DEVE ser uma string numérica (validada por `/^\d+$/`)
+- Usar `"Backlog"` ou outros valores não numéricos VAI FALHAR
+- `assignees` (se fornecido) deve ser um array: `[123, 456]`
+- `custom_fields` deve ser um array de objetos com `id` e `value`
 
-### Common Errors and Solutions
+### Erros Comuns e Soluções
 
-#### Error: "list_id must be a numeric string"
-**Cause:** Used list name instead of numeric ID
+#### Erro: "list_id must be a numeric string"
+**Causa:** Usou o nome da lista em vez do ID numérico
 ```yaml
 # ❌ Wrong
 list_id: "Backlog"
@@ -724,8 +724,8 @@ list_id: "Backlog"
 list_id: "901317181013"
 ```
 
-#### Error: "assignees must be array"
-**Cause:** Used object format instead of array
+#### Erro: "assignees must be array"
+**Causa:** Usou formato de objeto em vez de array
 ```yaml
 # ❌ Wrong
 assignees: {add: [456]}
@@ -734,8 +734,8 @@ assignees: {add: [456]}
 assignees: [456]
 ```
 
-#### Error: "custom_fields must be an array"
-**Cause:** Invalid field structure
+#### Erro: "custom_fields must be an array"
+**Causa:** Estrutura de campo inválida
 ```yaml
 # ❌ Wrong
 custom_fields: "field-value"
@@ -746,20 +746,20 @@ custom_fields:
     value: "field-value"
 ```
 
-### Quick Reference
+### Referência Rápida
 
-**When creating stories:**
-1. Always call `get_workspace_hierarchy` first
-2. Extract numeric `list_id` from response
-3. Use that `list_id` in `create_task`
-4. Store returned `task_id` in story frontmatter
+**Ao criar stories:**
+1. Sempre chame `get_workspace_hierarchy` primeiro
+2. Extraia o `list_id` numérico da resposta
+3. Use esse `list_id` em `create_task`
+4. Armazene o `task_id` retornado no frontmatter da story
 
-**Where to find examples:**
-- Complete workflow: `aiox-core/tools/mcp/clickup.yaml` (story_creation_workflow section)
-- Task instructions: `.aiox-core/development/tasks/create-next-story.md` (sections 5.1 and 5.3)
-- Validators: `aiox-core/tools/mcp/clickup.yaml` (executable_knowledge section)
+**Onde encontrar exemplos:**
+- Workflow completo: `aiox-core/tools/mcp/clickup.yaml` (seção story_creation_workflow)
+- Instruções da task: `.aiox-core/development/tasks/create-next-story.md` (seções 5.1 e 5.3)
+- Validadores: `aiox-core/tools/mcp/clickup.yaml` (seção executable_knowledge)
 
-**Response Handling:**
+**Tratamento da Resposta:**
 ```yaml
 # After successful create_task, update story frontmatter:
 clickup:
@@ -770,147 +770,149 @@ clickup:
   last_sync: "2025-10-10T14:30:00Z"
 ```
 
-### Performance Tips
+### Dicas de Performance
 
-- Cache workspace hierarchy during session
-- Reuse list_id for multiple story creations
-- Pre-fetch epic task IDs at story creation start
-- Validate parameters before MCP call using built-in validators
+- Faça cache da hierarquia do workspace durante a sessão
+- Reutilize o list_id para múltiplas criações de story
+- Pré-busque os IDs de task de epic no início da criação de story
+- Valide os parâmetros antes da chamada MCP usando os validadores integrados
 
-## Usage Patterns and Best Practices
+## Padrões de Uso e Boas Práticas
 
-### Environment-Specific Usage
+### Uso Específico por Ambiente
 
-**Web UI Best For**:
+**Web UI Melhor Para**:
 
-- Initial planning and documentation phases
-- Cost-effective large document creation
-- Agent consultation and brainstorming
-- Multi-agent workflows with orchestrator
+- Fases iniciais de planejamento e documentação
+- Criação de documentos grandes com custo-efetivo
+- Consulta de agentes e brainstorming
+- Workflows multi-agente com orchestrator
 
-**IDE Best For**:
+**IDE Melhor Para**:
 
-- Active development and implementation
-- File operations and project integration
-- Story management and development cycles
-- Code review and debugging
+- Desenvolvimento e implementação ativos
+- Operações de arquivo e integração com o projeto
+- Gestão de stories e ciclos de desenvolvimento
+- Revisão de código e debugging
 
-### Quality Assurance
+### Garantia de Qualidade
 
-- Use appropriate agents for specialized tasks
-- Follow Agile ceremonies and review processes
-- Maintain document consistency with PO agent
-- Regular validation with checklists and templates
+- Use os agentes apropriados para tasks especializadas
+- Siga as cerimônias Ágeis e os processos de revisão
+- Mantenha a consistência dos documentos com o agente PO
+- Validação regular com checklists e templates
 
-### Performance Optimization
+### Otimização de Performance
 
-- Use specific agents vs. `aiox-master` for focused tasks
-- Choose appropriate team size for project needs
-- Leverage technical preferences for consistency
-- Regular context management and cache clearing
+- Use agentes específicos em vez de `aiox-master` para tasks focadas
+- Escolha o tamanho de time apropriado para as necessidades do projeto
+- Aproveite as preferências técnicas para consistência
+- Gestão de contexto regular e limpeza de cache
 
-## Success Tips
+## Dicas de Sucesso
 
-- **Use Gemini for big picture planning** - The team-fullstack bundle provides collaborative expertise
-- **Use aiox-master for document organization** - Sharding creates manageable chunks
-- **Follow the SM → Dev cycle religiously** - This ensures systematic progress
-- **Keep conversations focused** - One agent, one task per conversation
-- **Review everything** - Always review and approve before marking complete
+- **Use o Gemini para planejamento de visão geral** - O bundle team-fullstack fornece expertise colaborativa
+- **Use o aiox-master para organização de documentos** - A fragmentação cria pedaços gerenciáveis
+- **Siga o ciclo SM → Dev religiosamente** - Isso garante progresso sistemático
+- **Mantenha as conversas focadas** - Um agente, uma task por conversa
+- **Revise tudo** - Sempre revise e aprove antes de marcar como concluído
 
-## Contributing to AIOX-Method
+## Contribuindo para o AIOX-Method
 
-### Quick Contribution Guidelines
+### Diretrizes Rápidas de Contribuição
 
-For full details, see `CONTRIBUTING.md`. Key points:
+Para detalhes completos, veja `CONTRIBUTING.md`. Pontos-chave:
 
 **Fork Workflow**:
 
-1. Fork the repository
-2. Create feature branches
-3. Submit PRs to `next` branch (default) or `main` for critical fixes only
-4. Keep PRs small: 200-400 lines ideal, 800 lines maximum
-5. One feature/fix per PR
+1. Faça fork do repositório
+2. Crie feature branches
+3. Submeta PRs para a branch `next` (padrão) ou `main` apenas para correções críticas
+4. Mantenha os PRs pequenos: 200-400 linhas ideal, 800 linhas máximo
+5. Uma feature/correção por PR
 
-**PR Requirements**:
+**Requisitos de PR**:
 
-- Clear descriptions (max 200 words) with What/Why/How/Testing
+- Descrições claras (máx 200 palavras) com What/Why/How/Testing
 - Use conventional commits (feat:, fix:, docs:)
-- Atomic commits - one logical change per commit
-- Must align with guiding principles
+- Commits atômicos - uma mudança lógica por commit
+- Deve estar alinhado aos princípios norteadores
 
-**Core Principles** (from docs/GUIDING-PRINCIPLES.md):
+**Princípios Centrais** (de docs/GUIDING-PRINCIPLES.md):
 
-- **Dev Agents Must Be Lean**: Minimize dependencies, save context for code
-- **Natural Language First**: Everything in markdown, no code in core
-- **Core vs Squads**: Core for universal needs, squads for specialized domains
-- **Design Philosophy**: "Dev agents code, planning agents plan"
+- **Dev Agents Must Be Lean**: Minimize dependências, poupe contexto para código
+- **Natural Language First**: Tudo em markdown, sem código no core
+- **Core vs Squads**: Core para necessidades universais, squads para domínios especializados
+- **Filosofia de Design**: "Dev agents code, planning agents plan"
 
 ## Squads
 
-### What Are Squads?
+### O que São Squads?
 
-Squads extend AIOX-Method beyond traditional software development into ANY domain. They provide specialized agent teams, templates, and workflows while keeping the core framework lean and focused on development.
+Squads estendem o AIOX-Method para além do desenvolvimento de software tradicional, alcançando QUALQUER domínio. Eles fornecem times de agentes especializados, templates e workflows, mantendo o framework central enxuto e focado em desenvolvimento.
 
-### Why Use Squads?
+### Por Que Usar Squads?
 
-1. **Keep Core Lean**: Dev agents maintain maximum context for coding
-2. **Domain Expertise**: Deep, specialized knowledge without bloating core
-3. **Community Innovation**: Anyone can create and share squads
-4. **Modular Design**: Install only what you need
+1. **Mantenha o Core Enxuto**: Agentes Dev mantêm máximo contexto para codificação
+2. **Expertise de Domínio**: Conhecimento profundo e especializado sem inchar o core
+3. **Inovação da Comunidade**: Qualquer um pode criar e compartilhar squads
+4. **Design Modular**: Instale apenas o que você precisa
 
-### Available Squads
+### Squads Disponíveis
 
-**Technical Squads**:
+**Squads Técnicos**:
 
-- **Infrastructure/DevOps**: Cloud architects, SRE experts, security specialists
-- **Game Development**: Game designers, level designers, narrative writers
-- **Mobile Development**: iOS/Android specialists, mobile UX experts
-- **Data Science**: ML engineers, data scientists, visualization experts
+- **Infrastructure/DevOps**: Arquitetos de nuvem, especialistas em SRE, especialistas em segurança
+- **Game Development**: Game designers, level designers, roteiristas narrativos
+- **Mobile Development**: Especialistas iOS/Android, especialistas em UX mobile
+- **Data Science**: Engenheiros de ML, cientistas de dados, especialistas em visualização
 
-**Non-Technical Squads**:
+**Squads Não-Técnicos**:
 
-- **Business Strategy**: Consultants, financial analysts, marketing strategists
-- **Creative Writing**: Plot architects, character developers, world builders
-- **Health & Wellness**: Fitness trainers, nutritionists, habit engineers
-- **Education**: Curriculum designers, assessment specialists
-- **Legal Support**: Contract analysts, compliance checkers
+- **Business Strategy**: Consultores, analistas financeiros, estrategistas de marketing
+- **Creative Writing**: Arquitetos de enredo, desenvolvedores de personagens, construtores de mundos
+- **Health & Wellness**: Treinadores fitness, nutricionistas, engenheiros de hábitos
+- **Education**: Designers de currículo, especialistas em avaliação
+- **Legal Support**: Analistas de contrato, verificadores de conformidade
 
-**Specialty Squads**:
+**Squads de Especialidade**:
 
-- **Expansion Creator**: Tools to build your own squads
-- **RPG Game Master**: Tabletop gaming assistance
-- **Life Event Planning**: Wedding planners, event coordinators
-- **Scientific Research**: Literature reviewers, methodology designers
+- **Expansion Creator**: Ferramentas para construir seus próprios squads
+- **RPG Game Master**: Assistência para jogos de mesa
+- **Life Event Planning**: Planejadores de casamento, coordenadores de eventos
+- **Scientific Research**: Revisores de literatura, designers de metodologia
 
-### Using Squads
+### Usando Squads
 
-1. **Browse Available Squads**: Check `squads/` directory
-2. **Get Inspiration**: See `docs/squads.md` for detailed examples and ideas
-3. **Install via CLI**:
+1. **Navegue pelos Squads Disponíveis**: Verifique o diretório `squads/`
+2. **Busque Inspiração**: Veja `docs/squads.md` para exemplos e ideias detalhados
+3. **Instale via CLI**:
 
    ```bash
    npx aiox-core install
    # Select "Install squad" option
    ```
 
-4. **Use in Your Workflow**: Installed squads integrate seamlessly with existing agents
+4. **Use no Seu Workflow**: Squads instalados se integram perfeitamente com os agentes existentes
 
-### Creating Custom Squads
+### Criando Squads Customizados
 
-Use the **squad-creator** squad to build your own:
+Use o squad **squad-creator** para construir o seu próprio:
 
-1. **Define Domain**: What expertise are you capturing?
-2. **Design Agents**: Create specialized roles with clear boundaries
-3. **Build Resources**: Tasks, templates, checklists for your domain
-4. **Test & Share**: Validate with real use cases, share with community
+1. **Defina o Domínio**: Qual expertise você está capturando?
+2. **Projete os Agentes**: Crie papéis especializados com limites claros
+3. **Construa os Recursos**: Tasks, templates, checklists para o seu domínio
+4. **Teste e Compartilhe**: Valide com casos de uso reais, compartilhe com a comunidade
 
-**Key Principle**: Squads democratize expertise by making specialized knowledge accessible through AI agents.
+**Princípio-Chave**: Squads democratizam a expertise ao tornar o conhecimento especializado acessível por meio de agentes de IA.
 
-## Getting Help
+## Obtendo Ajuda
 
-- **Commands**: Use `*/*help` in any environment to see available commands
-- **Agent Switching**: Use `*/*switch agent-name` with orchestrator for role changes
-- **Documentation**: Check `docs/` folder for project-specific context
-- **Community**: Discord and GitHub resources available for support
-- **Contributing**: See `CONTRIBUTING.md` for full guidelines
+- **Comandos**: Use `*/*help` em qualquer ambiente para ver os comandos disponíveis
+- **Troca de Agentes**: Use `*/*switch agent-name` com o orchestrator para mudanças de papel
+- **Documentação**: Verifique a pasta `docs/` para contexto específico do projeto
+- **Comunidade**: Recursos do Discord e GitHub disponíveis para suporte
+- **Contribuindo**: Veja `CONTRIBUTING.md` para diretrizes completas
  
+</content>
+</invoke>

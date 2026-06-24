@@ -19,6 +19,20 @@ Some 0-2 pontos por dimensão. Gate de entrega: **≥ 7.0 E todo modo de falha p
 | Ferramentas alcançáveis | não documentadas | documentadas, acesso incerto | documentadas + acesso/credencial OK |
 | Clareza e aderência ao formato | ambíguo | aceitável | sem ambiguidade + formato exato |
 
+### Cobertura por nível da cascata (N0→N6)
+Além do score, confirme que **nenhum nível aplicável ficou em branco** (espelha o
+`checklist-de-qualidade.md`). Um nível aplicável sem cobertura reprova, mesmo com score alto.
+
+| Nível | Aplicável? | Coberto? |
+|---|---|---|
+| N0 Ecossistema (escopo, constituição, anti-falha) | sim | <sim/não> |
+| N1 Orquestrador (só squad) | <sim/não> | |
+| N2 Especialistas (tools, retorno, herança) | <sim/não> | |
+| N3 Habilidades | <sim/não> | |
+| N4 MCPs/APIs próprios | <sim/não> | |
+| N5 Memória | sim | |
+| N6 Referências / herança histórica | sim | |
+
 ## Testes — Cenário feliz
 
 ### CF-1 — <nome do cenário>

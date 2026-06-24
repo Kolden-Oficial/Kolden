@@ -13,7 +13,8 @@ outro; quando uma tarefa está fora do seu escopo, ele delega de volta ao Caos, 
 | 2. Pesquisa | `pesquisador` | — | Relatório de padrões + antipadrões |
 | 3. Arquitetura | `arquiteto` | Decisão solo vs squad; desenho das camadas/tiers | Blueprint |
 | 4. PRD de IA | Caos (habilidade `geracao-de-prd`) | Emitir o PRD e pedir aprovação | `prd-de-ia.md` (aguarda aprovação) |
-| 5. Construção | Caos + habilidades de criação | Escrever os arquivos do agente em `C:\Kolden\<NomeMitológico>\` | Estrutura completa do agente |
+| 5.0 Plano de construção | `arquiteto` | Definir a ordem topológica da cascata a partir do PRD §11 | Plano de construção (sequência 5.1→5.6) |
+| 5. Construção (cascata) | Caos + habilidades de criação | Escrever os arquivos do agente em `C:\Kolden\<NomeMitológico>\` na ordem 5.1→5.6 | Estrutura completa do agente |
 | 5b. CLAUDE.md | `redator-de-prompts` | Escrever o `CLAUDE.md` do agente criado | Identidade e operação do agente |
 | 6. Revisão | `revisor` | **Emitir veredito APROVADO/REPROVADO** | Relatório de auditoria |
 | 7. Teste de Comportamento | `testador` | **Aprovar comportamento e maturity score** | Roteiro de teste + score |

@@ -1,0 +1,26 @@
+# Índice de frameworks operacionais — Liceu (Biblioteca de Mentes).
+# Mantido pelo `sintetizador` (tier 3). Cada framework destila uma mente ou uma
+# linhagem inteira em N passos acionáveis, e TODO framework tem procedencia.md
+# citando de qual mente veio cada passo (veto nenhum_framework_sem_procedencia).
+versao: 1
+atualizado-em: 2026-06-22
+
+# Estrutura em disco por framework:
+#   frameworks/<slug>/framework.md     — os N passos acionáveis
+#   frameworks/<slug>/procedencia.md   — cada passo rastreado à mente de origem (OBRIGATÓRIO)
+#
+# Campos por framework:
+#   slug                 — kebab-case (= nome da pasta)
+#   titulo               — título legível
+#   mentes-fonte         — ids das mentes que sustentam o framework
+#   linhagem             — slug da linhagem de origem (ou null se vem de mente única)
+#   squads-consumidores  — squads que aplicam o framework no handoff (ex.: [caliope, peitho])
+#   status               — em-sintese | rascunho | vigente | arquivado
+#
+frameworks:
+  - slug: matriz-de-desejo-inconsciente
+    titulo: "Matriz de Desejo Inconsciente"
+    mentes-fonte: [carl-jung, sigmund-freud, edward-bernays, ernest-dichter, jacques-lacan, philip-kotler, roland-barthes]
+    linhagem: psicanalise-do-desejo
+    squads-consumidores: [caliope, aglaia, peitho, pluto]
+    status: vigente

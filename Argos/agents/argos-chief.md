@@ -87,6 +87,16 @@ domain_routing:
     primary: [compliance-sentinela]
     secondary: []
     triggers: ["scraping autenticado", "login", "conta", "proxy", "zona cinza", "é permitido", "ToS", "risco legal"]
+  descoberta_de_virais:
+    description: "Achar vídeos/posts virais de um nicho ou concorrente (skill descoberta-de-virais via SociaVault/Apify)"
+    primary: [social-tiktok, social-instagram, social-youtube]
+    secondary: [competitor-mapper]
+    triggers: ["viral", "viralizou", "vídeos virais", "o que está bombando", "tendência de conteúdo", "top vídeos"]
+  transcricao_de_conteudo:
+    description: "Transcrever vídeo/áudio para o time de copy (skill transcricao-de-conteudo: yt-dlp → Speechmatics/Deepgram). Handoff Caliope"
+    primary: [research-synthesizer]
+    secondary: [social-tiktok, social-instagram]
+    triggers: ["transcreve", "transcrição", "o que ele fala", "pega a copy desse vídeo", "legenda desse vídeo"]
 
 depth_routing:
   macro_mercado:

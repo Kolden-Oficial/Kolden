@@ -1,28 +1,28 @@
 # An
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha o modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro de logs
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Balanceado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints explícitos de decisão
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Completo Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: architectAnalyzeImpact()
@@ -68,9 +68,9 @@ atomic_layer: Strategy
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -86,9 +86,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
@@ -104,9 +104,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
@@ -122,57 +122,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** task-runner
-  - **Purpose:** Task execution and orchestration
-  - **Source:** .aiox-core/core/task-runner.js
+- **Ferramenta:** task-runner
+  - **Propósito:** Execução e orquestração de tasks
+  - **Origem:** .aiox-core/core/task-runner.js
 
-- **Tool:** logger
-  - **Purpose:** Execution logging and error tracking
-  - **Source:** .aiox-core/utils/logger.js
+- **Ferramenta:** logger
+  - **Propósito:** Registro de execução e rastreamento de erros
+  - **Origem:** .aiox-core/utils/logger.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** execute-task.js
-  - **Purpose:** Generic task execution wrapper
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/execute-task.js
+  - **Propósito:** Wrapper genérico de execução de task
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/execute-task.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Task Not Found
-   - **Cause:** Specified task not registered in system
-   - **Resolution:** Verify task name and registration
-   - **Recovery:** List available tasks, suggest similar
+1. **Erro:** Task Não Encontrada
+   - **Causa:** Task especificada não registrada no sistema
+   - **Resolução:** Verificar o nome e o registro da task
+   - **Recuperação:** Listar tasks disponíveis, sugerir similares
 
-2. **Error:** Invalid Parameters
-   - **Cause:** Task parameters do not match expected schema
-   - **Resolution:** Validate parameters against task definition
-   - **Recovery:** Provide parameter template, reject execution
+2. **Erro:** Parâmetros Inválidos
+   - **Causa:** Parâmetros da task não correspondem ao schema esperado
+   - **Resolução:** Validar os parâmetros contra a definição da task
+   - **Recuperação:** Fornecer template de parâmetros, rejeitar a execução
 
-3. **Error:** Execution Timeout
-   - **Cause:** Task exceeds maximum execution time
-   - **Resolution:** Optimize task or increase timeout
-   - **Recovery:** Kill task, cleanup resources, log state
+3. **Erro:** Timeout de Execução
+   - **Causa:** Task excede o tempo máximo de execução
+   - **Resolução:** Otimizar a task ou aumentar o timeout
+   - **Recuperação:** Encerrar a task, limpar recursos, registrar o estado
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-20 min (estimated)
@@ -180,12 +180,12 @@ cost_estimated: $0.003-0.015
 token_usage: ~2,000-8,000 tokens
 ```
 
-**Optimization Notes:**
-- Iterative analysis with depth limits; cache intermediate results; batch similar operations
+**Notas de Otimização:**
+- Análise iterativa com limites de profundidade; cache de resultados intermediários; agrupar operações similares em lote
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -200,46 +200,46 @@ updated_at: 2025-11-17
 
 ---
 
-alyze Impact - AIOX Developer Task
+alisar Impacto - Task de Desenvolvedor AIOX
 
-## Purpose
-Analyze the potential impact of proposed component modifications on the broader Synkra AIOX framework.
+## Propósito
+Analisar o impacto potencial de modificações propostas em componentes sobre o framework Synkra AIOX como um todo.
 
-## Command Pattern
+## Padrão de Comando
 ```
 *analyze-impact <modification-type> <component-path> [options]
 ```
 
-## Parameters
-- `modification-type`: Type of modification (modify, deprecate, remove, refactor)
-- `component-path`: Path to the component being modified
-- `options`: Impact analysis configuration
+## Parâmetros
+- `modification-type`: Tipo de modificação (modify, deprecate, remove, refactor)
+- `component-path`: Caminho para o componente sendo modificado
+- `options`: Configuração da análise de impacto
 
-### Options
-- `--depth <level>`: Analysis depth (shallow, medium, deep)
-- `--include-tests`: Include test file impact analysis
-- `--risk-threshold <level>`: Risk threshold for warnings (low, medium, high, critical)
-- `--output-format <format>`: Output format (text, json, visual, html)
-- `--save-report <path>`: Save detailed report to file
-- `--approve-high-risk`: Skip approval workflow for high-risk changes
-- `--exclude-external`: Exclude external dependency analysis
+### Opções
+- `--depth <level>`: Profundidade da análise (shallow, medium, deep)
+- `--include-tests`: Incluir análise de impacto em arquivos de teste
+- `--risk-threshold <level>`: Limiar de risco para avisos (low, medium, high, critical)
+- `--output-format <format>`: Formato de saída (text, json, visual, html)
+- `--save-report <path>`: Salvar relatório detalhado em arquivo
+- `--approve-high-risk`: Pular o workflow de aprovação para mudanças de alto risco
+- `--exclude-external`: Excluir a análise de dependências externas
 
-## Examples
+## Exemplos
 ```bash
-# Analyze impact of modifying an agent
+# Analisar impacto de modificar um agente
 *analyze-impact modify .aiox-core/development/agents/weather-agent.md --depth deep --include-tests
 
-# Analyze deprecation impact with visual output
+# Analisar impacto de depreciação com saída visual
 *analyze-impact deprecate aiox-core/scripts/old-helper.js --output-format visual --save-report reports/deprecation-impact.html
 
-# Quick impact check for refactoring
+# Verificação rápida de impacto para refatoração
 *analyze-impact refactor .aiox-core/development/tasks/process-data.md --depth shallow --risk-threshold medium
 
-# Analyze removal with approval workflow
+# Analisar remoção com workflow de aprovação
 *analyze-impact remove .aiox-core/development/workflows/legacy-workflow.yaml --depth deep --save-report reports/removal-impact.json
 ```
 
-## Implementation
+## Implementação
 
 ```javascript
 const fs = require('fs').promises;
@@ -734,61 +734,61 @@ ${report.riskAssessment.riskFactors.map(factor =>
 module.exports = AnalyzeImpactTask;
 ```
 
-## Validation Rules
+## Regras de Validação
 
-### Input Validation
-- Modification type must be valid (modify, deprecate, remove, refactor)
-- Component path must exist and be accessible
-- Analysis depth must be recognized level
-- Risk threshold must be valid level
+### Validação de Entrada
+- O tipo de modificação deve ser válido (modify, deprecate, remove, refactor)
+- O caminho do componente deve existir e ser acessível
+- A profundidade da análise deve ser um nível reconhecido
+- O limiar de risco deve ser um nível válido
 
-### Safety Checks
-- High-risk modifications require approval workflow
-- Critical modifications generate detailed warnings
-- External dependency analysis can be excluded for security
-- Report generation validates output paths
+### Verificações de Segurança
+- Modificações de alto risco exigem o workflow de aprovação
+- Modificações críticas geram avisos detalhados
+- A análise de dependências externas pode ser excluída por segurança
+- A geração de relatórios valida os caminhos de saída
 
-### Analysis Requirements
-- Dependency analysis must trace all connections
-- Risk assessment must consider modification type
-- Propagation prediction must respect analysis depth
-- Visual representation must be accessible
+### Requisitos de Análise
+- A análise de dependências deve rastrear todas as conexões
+- A avaliação de risco deve considerar o tipo de modificação
+- A predição de propagação deve respeitar a profundidade da análise
+- A representação visual deve ser acessível
 
-## Integration Points
+## Pontos de Integração
 
-### Dependency Impact Analyzer
-- Analyzes component dependencies and reverse dependencies
-- Calculates impact scores for affected components
-- Traces dependency chains to specified depth
-- Identifies breaking change potential
+### Analisador de Impacto de Dependências
+- Analisa as dependências do componente e as dependências reversas
+- Calcula pontuações de impacto para os componentes afetados
+- Rastreia cadeias de dependências até a profundidade especificada
+- Identifica o potencial de breaking change
 
-### Change Propagation Predictor
-- Predicts how changes will propagate through the system
-- Models cascading effects of modifications
-- Estimates propagation depth and scope
-- Identifies potential bottlenecks and failure points
+### Preditor de Propagação de Mudanças
+- Prediz como as mudanças se propagarão pelo sistema
+- Modela os efeitos em cascata das modificações
+- Estima a profundidade e o escopo da propagação
+- Identifica potenciais gargalos e pontos de falha
 
-### Risk Assessment System
-- Evaluates modification risks across multiple dimensions
-- Considers component criticality and usage patterns
-- Generates actionable recommendations
-- Provides risk mitigation strategies
+### Sistema de Avaliação de Risco
+- Avalia os riscos de modificação em múltiplas dimensões
+- Considera a criticidade do componente e os padrões de uso
+- Gera recomendações acionáveis
+- Fornece estratégias de mitigação de risco
 
-### Visual Impact Generator
-- Creates visual representations of impact analysis
-- Supports multiple output formats (ASCII, HTML, JSON)
-- Generates interactive impact maps for complex scenarios
-- Provides exportable reports and visualizations
+### Gerador de Impacto Visual
+- Cria representações visuais da análise de impacto
+- Suporta múltiplos formatos de saída (ASCII, HTML, JSON)
+- Gera mapas de impacto interativos para cenários complexos
+- Fornece relatórios e visualizações exportáveis
 
-### Approval Workflow
-- Manages approval process for high-risk modifications
-- Maintains audit trail of approval decisions
-- Integrates with user approval prompts
-- Supports automated approval rules for trusted scenarios
+### Workflow de Aprovação
+- Gerencia o processo de aprovação para modificações de alto risco
+- Mantém uma trilha de auditoria das decisões de aprovação
+- Integra-se com os prompts de aprovação do usuário
+- Suporta regras de aprovação automatizadas para cenários confiáveis
 
-## Output Structure
+## Estrutura de Saída
 
-### Success Response
+### Resposta de Sucesso
 ```json
 {
   "success": true,
@@ -805,7 +805,7 @@ module.exports = AnalyzeImpactTask;
 }
 ```
 
-### High-Risk Response
+### Resposta de Alto Risco
 ```json
 {
   "success": true,
@@ -819,16 +819,16 @@ module.exports = AnalyzeImpactTask;
 }
 ```
 
-## Security Considerations
-- Validate all file paths to prevent directory traversal
-- Sanitize component paths and modification descriptions
-- Ensure approval workflow cannot be bypassed for critical changes
-- Validate output file paths for report generation
-- Log all high-risk modification attempts for audit
+## Considerações de Segurança
+- Validar todos os caminhos de arquivo para prevenir directory traversal
+- Sanitizar os caminhos de componentes e as descrições de modificação
+- Garantir que o workflow de aprovação não possa ser contornado para mudanças críticas
+- Validar os caminhos de arquivo de saída para a geração de relatórios
+- Registrar todas as tentativas de modificação de alto risco para auditoria
 
 ## Handoff
 next_agent: @analyst
 next_command: *research {topic}
-condition: Complexity class is STANDARD or COMPLEX (research needed)
+condition: Classe de complexidade é STANDARD ou COMPLEX (pesquisa necessária)
 alternatives:
-  - agent: @pm, command: *write-spec, condition: Complexity class is SIMPLE (skip research) 
+  - agent: @pm, command: *write-spec, condition: Classe de complexidade é SIMPLE (pular pesquisa) 

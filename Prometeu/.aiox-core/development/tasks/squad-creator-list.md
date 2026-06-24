@@ -95,39 +95,39 @@ count: 2
 path: ./squads
 ```
 
-## Status Indicators
+## Indicadores de Status
 
-| Status | Icon | Description |
+| Status | Ícone | Descrição |
 |--------|------|-------------|
-| valid | ✅ | Valid squad.yaml manifest |
-| deprecated | ⚠️ | Using config.yaml (deprecated) |
-| invalid | ❌ | No manifest found |
+| valid | ✅ | Manifest squad.yaml válido |
+| deprecated | ⚠️ | Usando config.yaml (depreciado) |
+| invalid | ❌ | Nenhum manifest encontrado |
 
-## Flow
+## Fluxo
 
 ```
-1. Parse arguments
-   ├── Get path (default: ./squads)
-   └── Get format (default: table)
+1. Parsear argumentos
+   ├── Obter path (default: ./squads)
+   └── Obter format (default: table)
 
-2. List squads
-   ├── Call SquadGenerator.listLocal()
-   └── Get array of squad info
+2. Listar squads
+   ├── Chamar SquadGenerator.listLocal()
+   └── Obter o array com info dos squads
 
-3. Filter results
-   ├── If --include-invalid → show all
-   └── If not → filter out invalid
+3. Filtrar resultados
+   ├── Se --include-invalid → mostrar todos
+   └── Se não → filtrar os inválidos
 
-4. Format output
-   ├── If table → format as ASCII table
-   ├── If json → JSON.stringify
-   └── If yaml → yaml.dump
+4. Formatar a saída
+   ├── Se table → formatar como tabela ASCII
+   ├── Se json → JSON.stringify
+   └── Se yaml → yaml.dump
 
-5. Display result
-   └── Output formatted list
+5. Exibir o resultado
+   └── Imprimir a lista formatada
 ```
 
-## Implementation
+## Implementação
 
 ```javascript
 const { SquadGenerator } = require('./.aiox-core/development/scripts/squad');
@@ -198,9 +198,9 @@ function formatTable(squads, squadsPath) {
 }
 ```
 
-## Empty State
+## Estado Vazio
 
-When no squads are found:
+Quando nenhum squad é encontrado:
 
 ```
 No squads found in ./squads/
@@ -210,16 +210,16 @@ Create one with: @squad-creator *create-squad my-squad
 Or download a public squad: @squad-creator *download-squad squad-name
 ```
 
-## Error Handling
+## Tratamento de Erros
 
-| Error | Cause | Resolution |
+| Erro | Causa | Resolução |
 |-------|-------|------------|
-| `ENOENT` | Squads directory doesn't exist | Will return empty list |
-| `PERMISSION_DENIED` | Can't read directory | Check permissions |
+| `ENOENT` | Diretório de squads não existe | Retornará uma lista vazia |
+| `PERMISSION_DENIED` | Não é possível ler o diretório | Verifique as permissões |
 
-## Related
+## Relacionado
 
-- **Agent:** @squad-creator (Craft)
-- **Script:** squad-generator.js (listLocal method)
+- **Agente:** @squad-creator (Craft)
+- **Script:** squad-generator.js (método listLocal)
 - **Create:** *create-squad
 - **Validate:** *validate-squad

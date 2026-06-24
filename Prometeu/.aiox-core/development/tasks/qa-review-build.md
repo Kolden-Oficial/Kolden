@@ -1107,7 +1107,7 @@ signal_rules:
 
 ---
 
-## Command Integration
+## Integração de Comando
 
 ```yaml
 command:
@@ -1128,9 +1128,9 @@ command:
 
 ---
 
-## Output Files
+## Arquivos de Saída
 
-### Primary Output: qa_report.md
+### Saída Primária: qa_report.md
 
 ```yaml
 location: docs/stories/{storyId}/qa/qa_report.md
@@ -1143,7 +1143,7 @@ contents:
   - signal_with_reason
 ```
 
-### Secondary Output: status.json
+### Saída Secundária: status.json
 
 ```yaml
 location: .aiox/status.json
@@ -1156,7 +1156,7 @@ updates:
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
 ```yaml
 errors:
@@ -1183,9 +1183,9 @@ errors:
 
 ---
 
-## Integration with QA Agent
+## Integração com o Agente de QA
 
-This task is automatically triggered by the `*review-build` command in the @qa agent:
+Esta task é disparada automaticamente pelo comando `*review-build` no agente @qa:
 
 ```yaml
 agent_integration:
@@ -1206,7 +1206,7 @@ agent_integration:
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 metadata:

@@ -1,50 +1,50 @@
-# Brownfield Fullstack Workflow
+# Workflow Brownfield Fullstack
 
 > **EN** | [PT](../../aiox-workflows/brownfield-fullstack-workflow.md) | [ES](../../es/aiox-workflows/brownfield-fullstack-workflow.md)
 
 ---
 
-**Full documentation available in:** [Portuguese Version](../../aiox-workflows/brownfield-fullstack-workflow.md)
+**Documentação completa disponível em:** [Versão em Português](../../aiox-workflows/brownfield-fullstack-workflow.md)
 
 ---
 
-## Summary
+## Resumo
 
-The **Brownfield Fullstack Workflow** is designed for evolving existing full-stack applications. It handles:
+O **Workflow Brownfield Fullstack** foi projetado para evoluir aplicações full-stack existentes. Ele trata de:
 
-- Impact analysis across frontend and backend
-- Coordinated changes between layers
-- Backward compatibility considerations
-- Migration strategies
-- Regression prevention
+- Análise de impacto entre frontend e backend
+- Mudanças coordenadas entre camadas
+- Considerações de compatibilidade retroativa
+- Estratégias de migração
+- Prevenção de regressões
 
-### When to Use
+### Quando Usar
 
-- Adding features to existing full-stack applications
-- Refactoring across multiple layers
-- Major enhancements requiring frontend and backend changes
-- After completing brownfield-discovery
+- Adicionar funcionalidades a aplicações full-stack existentes
+- Refatorar através de múltiplas camadas
+- Melhorias importantes que exigem mudanças no frontend e no backend
+- Após concluir o brownfield-discovery
 
-### Prerequisites
+### Pré-requisitos
 
-- Run `brownfield-discovery` first if unfamiliar with the project
-- Understand existing architecture and patterns
+- Execute o `brownfield-discovery` primeiro caso não conheça o projeto
+- Compreenda a arquitetura e os padrões existentes
 
-### Key Agents
+### Agentes Principais
 
-- `@architect` - Change impact analysis
-- `@dev` - Implementation across layers
-- `@data-engineer` - Database migrations
-- `@qa` - Regression testing
+- `@architect` - Análise de impacto das mudanças
+- `@dev` - Implementação entre as camadas
+- `@data-engineer` - Migrations de banco de dados
+- `@qa` - Testes de regressão
 
-### Main Phases
+### Fases Principais
 
-1. **Impact Analysis** - Understanding affected areas
-2. **Planning** - Coordinated change strategy
-3. **Backend Changes** - API and service modifications
-4. **Frontend Changes** - UI updates and integration
-5. **Validation** - End-to-end testing
+1. **Análise de Impacto** - Compreensão das áreas afetadas
+2. **Planejamento** - Estratégia de mudança coordenada
+3. **Mudanças no Backend** - Modificações de API e serviços
+4. **Mudanças no Frontend** - Atualizações de UI e integração
+5. **Validação** - Testes end-to-end
 
 ---
 
-*For complete details, diagrams, and step-by-step instructions, see the [Portuguese documentation](../../aiox-workflows/brownfield-fullstack-workflow.md).*
+*Para detalhes completos, diagramas e instruções passo a passo, veja a [documentação em Português](../../aiox-workflows/brownfield-fullstack-workflow.md).*

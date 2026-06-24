@@ -6,63 +6,63 @@ tools:
 #   - test-suite-checklist.md
 ---
 
-# Task: Criar Suíte de Componentes
+# Task: Criar SuÃ­te de Componentes
 
 **Agente:** aiox-developer  
-**Versão:** 1.0  
+**VersÃ£o:** 1.0  
 **Comando:** *create-suite
 
-## Modos de Execução
+## Modos de ExecuÃ§Ã£o
 
-**Escolha seu modo de execução:**
+**Escolha seu modo de execuÃ§Ã£o:**
 
-### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
-- Tomada de decisão autônoma com logging
-- Interação mínima com o usuário
-- **Melhor para:** Tarefas simples e determinísticas
+### 1. Modo YOLO - RÃ¡pido, AutÃ´nomo (0-1 prompts)
+- Tomada de decisÃ£o autÃ´noma com logging
+- InteraÃ§Ã£o mÃ­nima com o usuÃ¡rio
+- **Melhor para:** Tarefas simples e determinÃ­sticas
 
-### 2. Modo Interativo - Balanceado, Educativo (5-10 prompts) **[PADRÃO]**
-- Checkpoints de decisão explícitos
-- Explicações educativas
-- **Melhor para:** Aprendizado, decisões complexas
+### 2. Modo Interativo - Balanceado, Educativo (5-10 prompts) **[PADRÃƒO]**
+- Checkpoints de decisÃ£o explÃ­citos
+- ExplicaÃ§Ãµes educativas
+- **Melhor para:** Aprendizado, decisÃµes complexas
 
 ### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
-- Fase de análise da task (identificar todas as ambiguidades)
-- Execução sem ambiguidade
-- **Melhor para:** Requisitos ambíguos, trabalho crítico
+- Fase de anÃ¡lise da task (identificar todas as ambiguidades)
+- ExecuÃ§Ã£o sem ambiguidade
+- **Melhor para:** Requisitos ambÃ­guos, trabalho crÃ­tico
 
-**Parâmetro:** `mode` (opcional, padrão: `interactive`)
+**ParÃ¢metro:** `mode` (opcional, padrÃ£o: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: createSuite()
-responsável: Uma (Empathizer)
+responsÃ¡vel: Uma (Empathizer)
 responsavel_type: Agente
 atomic_layer: Molecule
 
 **Entrada:**
 - campo: name
   tipo: string
-  origem: Entrada do Usuário
-  obrigatório: true
-  validação: Deve ser não-vazio, minúsculas, kebab-case
+  origem: Entrada do UsuÃ¡rio
+  obrigatÃ³rio: true
+  validaÃ§Ã£o: Deve ser nÃ£o-vazio, minÃºsculas, kebab-case
 
 - campo: options
   tipo: object
-  origem: Entrada do Usuário
-  obrigatório: false
-  validação: Objeto JSON válido com chaves permitidas
+  origem: Entrada do UsuÃ¡rio
+  obrigatÃ³rio: false
+  validaÃ§Ã£o: Objeto JSON vÃ¡lido com chaves permitidas
 
 - campo: force
   tipo: boolean
-  origem: Entrada do Usuário
-  obrigatório: false
-  validação: Padrão: false
+  origem: Entrada do UsuÃ¡rio
+  obrigatÃ³rio: false
+  validaÃ§Ã£o: PadrÃ£o: false
 
-**Saída:**
+**SaÃ­da:**
 - campo: created_file
   tipo: string
   destino: Sistema de arquivos
@@ -70,7 +70,7 @@ atomic_layer: Molecule
 
 - campo: validation_report
   tipo: object
-  destino: Memória
+  destino: MemÃ³ria
   persistido: false
 
 - campo: success
@@ -81,56 +81,56 @@ atomic_layer: Molecule
 
 ---
 
-## Pré-Condições
+## PrÃ©-CondiÃ§Ãµes
 
-**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
+**PropÃ³sito:** Validar prÃ©-requisitos ANTES da execuÃ§Ã£o da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Alvo ainda não existe; entradas obrigatórias fornecidas; permissões concedidas
+  - [ ] Alvo ainda nÃ£o existe; entradas obrigatÃ³rias fornecidas; permissÃµes concedidas
     tipo: pre-condition
     blocker: true
-    validação: |
-      Verificar que alvo ainda não existe; entradas obrigatórias fornecidas; permissões concedidas
-    error_message: "Pré-condição falhou: Alvo ainda não existe; entradas obrigatórias fornecidas; permissões concedidas"
+    validaÃ§Ã£o: |
+      Verificar que alvo ainda nÃ£o existe; entradas obrigatÃ³rias fornecidas; permissÃµes concedidas
+    error_message: "PrÃ©-condiÃ§Ã£o falhou: Alvo ainda nÃ£o existe; entradas obrigatÃ³rias fornecidas; permissÃµes concedidas"
 ```
 
 ---
 
-## Pós-Condições
+## PÃ³s-CondiÃ§Ãµes
 
-**Propósito:** Validar o sucesso da execução APÓS a task ser concluída
+**PropÃ³sito:** Validar o sucesso da execuÃ§Ã£o APÃ“S a task ser concluÃ­da
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Recurso criado com sucesso; validação aprovada; nenhum erro registrado
+  - [ ] Recurso criado com sucesso; validaÃ§Ã£o aprovada; nenhum erro registrado
     tipo: post-condition
     blocker: true
-    validação: |
-      Verificar que recurso criado com sucesso; validação aprovada; nenhum erro registrado
-    error_message: "Pós-condição falhou: Recurso criado com sucesso; validação aprovada; nenhum erro registrado"
+    validaÃ§Ã£o: |
+      Verificar que recurso criado com sucesso; validaÃ§Ã£o aprovada; nenhum erro registrado
+    error_message: "PÃ³s-condiÃ§Ã£o falhou: Recurso criado com sucesso; validaÃ§Ã£o aprovada; nenhum erro registrado"
 ```
 
 ---
 
-## Critérios de Aceite
+## CritÃ©rios de Aceite
 
-**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
+**PropÃ³sito:** CritÃ©rios definitivos de pass/fail para a conclusÃ£o da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Recurso existe e é válido; nenhum recurso duplicado criado
+  - [ ] Recurso existe e Ã© vÃ¡lido; nenhum recurso duplicado criado
     tipo: acceptance-criterion
     blocker: true
-    validação: |
-      Afirmar que recurso existe e é válido; nenhum recurso duplicado criado
-    error_message: "Critério de aceite não atendido: Recurso existe e é válido; nenhum recurso duplicado criado"
+    validaÃ§Ã£o: |
+      Afirmar que recurso existe e Ã© vÃ¡lido; nenhum recurso duplicado criado
+    error_message: "CritÃ©rio de aceite nÃ£o atendido: Recurso existe e Ã© vÃ¡lido; nenhum recurso duplicado criado"
 ```
 
 ---
@@ -140,52 +140,52 @@ acceptance-criteria:
 **Recursos externos/compartilhados usados por esta task:**
 
 - **Ferramenta:** component-generator
-  - **Propósito:** Gerar novos componentes a partir de templates
+  - **PropÃ³sito:** Gerar novos componentes a partir de templates
   - **Fonte:** .aiox-core/scripts/component-generator.js
 
 - **Ferramenta:** file-system
-  - **Propósito:** Criação e validação de arquivos
-  - **Fonte:** Módulo fs do Node.js
+  - **PropÃ³sito:** CriaÃ§Ã£o e validaÃ§Ã£o de arquivos
+  - **Fonte:** MÃ³dulo fs do Node.js
 
 ---
 
 ## Scripts
 
-**Código específico do agente para esta task:**
+**CÃ³digo especÃ­fico do agente para esta task:**
 
 - **Script:** create-component.js
-  - **Propósito:** Workflow de criação de componentes
+  - **PropÃ³sito:** Workflow de criaÃ§Ã£o de componentes
   - **Linguagem:** JavaScript
-  - **Localização:** .aiox-core/scripts/create-component.js
+  - **LocalizaÃ§Ã£o:** .aiox-core/scripts/create-component.js
 
 ---
 
 ## Tratamento de Erros
 
-**Estratégia:** retry
+**EstratÃ©gia:** retry
 
 **Erros Comuns:**
 
-1. **Erro:** Recurso Já Existe
-   - **Causa:** Arquivo/recurso alvo já existe no sistema
-   - **Resolução:** Use a flag force ou escolha um nome diferente
-   - **Recuperação:** Solicitar ao usuário um nome alternativo ou forçar sobrescrita
+1. **Erro:** Recurso JÃ¡ Existe
+   - **Causa:** Arquivo/recurso alvo jÃ¡ existe no sistema
+   - **ResoluÃ§Ã£o:** Use a flag force ou escolha um nome diferente
+   - **RecuperaÃ§Ã£o:** Solicitar ao usuÃ¡rio um nome alternativo ou forÃ§ar sobrescrita
 
-2. **Erro:** Entrada Inválida
-   - **Causa:** Nome de entrada contém caracteres ou formato inválidos
-   - **Resolução:** Validar a entrada contra as regras de nomenclatura (kebab-case, minúsculas, sem caracteres especiais)
-   - **Recuperação:** Sanitizar a entrada ou rejeitar com mensagem de erro clara
+2. **Erro:** Entrada InvÃ¡lida
+   - **Causa:** Nome de entrada contÃ©m caracteres ou formato invÃ¡lidos
+   - **ResoluÃ§Ã£o:** Validar a entrada contra as regras de nomenclatura (kebab-case, minÃºsculas, sem caracteres especiais)
+   - **RecuperaÃ§Ã£o:** Sanitizar a entrada ou rejeitar com mensagem de erro clara
 
-3. **Erro:** Permissão Negada
-   - **Causa:** Permissões insuficientes para criar o recurso
-   - **Resolução:** Verificar permissões do sistema de arquivos, executar com privilégios elevados se necessário
-   - **Recuperação:** Registrar o erro, notificar o usuário, sugerir correção de permissão
+3. **Erro:** PermissÃ£o Negada
+   - **Causa:** PermissÃµes insuficientes para criar o recurso
+   - **ResoluÃ§Ã£o:** Verificar permissÃµes do sistema de arquivos, executar com privilÃ©gios elevados se necessÃ¡rio
+   - **RecuperaÃ§Ã£o:** Registrar o erro, notificar o usuÃ¡rio, sugerir correÃ§Ã£o de permissÃ£o
 
 ---
 
 ## Performance
 
-**Métricas Esperadas:**
+**MÃ©tricas Esperadas:**
 
 ```yaml
 duration_expected: 2-5 min (estimated)
@@ -193,8 +193,8 @@ cost_estimated: $0.001-0.003
 token_usage: ~1,000-3,000 tokens
 ```
 
-**Notas de Otimização:**
-- Paralelizar operações independentes; reutilizar resultados de átomos; implementar saídas antecipadas
+**Notas de OtimizaÃ§Ã£o:**
+- Paralelizar operaÃ§Ãµes independentes; reutilizar resultados de Ã¡tomos; implementar saÃ­das antecipadas
 
 ---
 
@@ -214,78 +214,78 @@ updated_at: 2025-11-17
 ---
 
 
-## Descrição
-Cria múltiplos componentes relacionados em uma única operação em lote com resolução de dependências e suporte a transações.
+## DescriÃ§Ã£o
+Cria mÃºltiplos componentes relacionados em uma Ãºnica operaÃ§Ã£o em lote com resoluÃ§Ã£o de dependÃªncias e suporte a transaÃ§Ãµes.
 
-## Contexto Necessário
+## Contexto NecessÃ¡rio
 - Entendimento da estrutura do projeto
 - Relacionamentos entre componentes
-- Componentes existentes para resolução de dependências
+- Componentes existentes para resoluÃ§Ã£o de dependÃªncias
 
-## Pré-requisitos
-- O agente aiox-developer está ativo
-- O sistema de templates está configurado
+## PrÃ©-requisitos
+- O agente aiox-developer estÃ¡ ativo
+- O sistema de templates estÃ¡ configurado
 - team-manifest.yaml existe
 
-## Elicitação Interativa
-1. Seleção do tipo de suíte (pacote de agente, suíte de workflow, coleção de tasks, customizado)
-2. Configuração de componentes com base no tipo de suíte
-3. Validação de dependências
-4. Prévia de todos os componentes a serem criados
-5. Confirmação antes da criação em lote
+## ElicitaÃ§Ã£o Interativa
+1. SeleÃ§Ã£o do tipo de suÃ­te (pacote de agente, suÃ­te de workflow, coleÃ§Ã£o de tasks, customizado)
+2. ConfiguraÃ§Ã£o de componentes com base no tipo de suÃ­te
+3. ValidaÃ§Ã£o de dependÃªncias
+4. PrÃ©via de todos os componentes a serem criados
+5. ConfirmaÃ§Ã£o antes da criaÃ§Ã£o em lote
 
 ## Passos do Workflow
 
-### 1. Seleção do Tipo de Suíte
-- **Ação:** Escolher entre tipos de suíte predefinidos ou customizado
-- **Validação:** Garantir que o tipo de suíte é suportado
+### 1. SeleÃ§Ã£o do Tipo de SuÃ­te
+- **AÃ§Ã£o:** Escolher entre tipos de suÃ­te predefinidos ou customizado
+- **ValidaÃ§Ã£o:** Garantir que o tipo de suÃ­te Ã© suportado
 
 ### 2. Configurar Componentes
-- **Ação:** Coletar a configuração para cada componente da suíte
-- **Validação:** Validar convenções de nomenclatura e dependências
+- **AÃ§Ã£o:** Coletar a configuraÃ§Ã£o para cada componente da suÃ­te
+- **ValidaÃ§Ã£o:** Validar convenÃ§Ãµes de nomenclatura e dependÃªncias
 
-### 3. Analisar Dependências
-- **Ação:** Construir o grafo de dependências entre os componentes
-- **Validação:** Verificar dependências circulares
+### 3. Analisar DependÃªncias
+- **AÃ§Ã£o:** Construir o grafo de dependÃªncias entre os componentes
+- **ValidaÃ§Ã£o:** Verificar dependÃªncias circulares
 
-### 4. Prévia da Suíte
-- **Ação:** Exibir a prévia de todos os componentes a serem criados
-- **Validação:** Confirmação do usuário obrigatória
+### 4. PrÃ©via da SuÃ­te
+- **AÃ§Ã£o:** Exibir a prÃ©via de todos os componentes a serem criados
+- **ValidaÃ§Ã£o:** ConfirmaÃ§Ã£o do usuÃ¡rio obrigatÃ³ria
 
 ### 5. Criar Componentes
-- **Ação:** Criar os componentes na ordem de dependência
-- **Validação:** Cada componente deve ser criado com sucesso
+- **AÃ§Ã£o:** Criar os componentes na ordem de dependÃªncia
+- **ValidaÃ§Ã£o:** Cada componente deve ser criado com sucesso
 
 ### 6. Atualizar Manifesto
-- **Ação:** Atualizar o team-manifest.yaml com todos os novos componentes
-- **Validação:** O manifesto deve permanecer um YAML válido
+- **AÃ§Ã£o:** Atualizar o team-manifest.yaml com todos os novos componentes
+- **ValidaÃ§Ã£o:** O manifesto deve permanecer um YAML vÃ¡lido
 
 ## Tratamento de Erros
-- **Dependências Ausentes:** Solicitar a criação ou a seleção de uma existente
+- **DependÃªncias Ausentes:** Solicitar a criaÃ§Ã£o ou a seleÃ§Ã£o de uma existente
 - **Conflitos de Nome:** Exibir componentes existentes e sugerir alternativas
-- **Falhas de Criação:** Oferecer rollback da transação inteira
-- **Erros de Manifesto:** Exibir o diff e permitir correção manual
+- **Falhas de CriaÃ§Ã£o:** Oferecer rollback da transaÃ§Ã£o inteira
+- **Erros de Manifesto:** Exibir o diff e permitir correÃ§Ã£o manual
 
-## Saída
+## SaÃ­da
 - Status de sucesso/falha para cada componente
-- ID da transação para potencial rollback
+- ID da transaÃ§Ã£o para potencial rollback
 - Manifesto atualizado com todos os novos componentes
-- Resumo dos arquivos criados e suas localizações
+- Resumo dos arquivos criados e suas localizaÃ§Ãµes
 
-## Considerações de Segurança
-- Todo código gerado é validado pelo SecurityChecker
-- Os caminhos de arquivo são sanitizados para prevenir traversal
-- O log de transação é protegido contra escrita
+## ConsideraÃ§Ãµes de SeguranÃ§a
+- Todo cÃ³digo gerado Ã© validado pelo SecurityChecker
+- Os caminhos de arquivo sÃ£o sanitizados para prevenir traversal
+- O log de transaÃ§Ã£o Ã© protegido contra escrita
 
 ## Notas
-- Suporta criação atômica (tudo ou nada)
-- O log de transação habilita a funcionalidade de rollback
-- A resolução de dependências garante a ordem correta de criação
+- Suporta criaÃ§Ã£o atÃ´mica (tudo ou nada)
+- O log de transaÃ§Ã£o habilita a funcionalidade de rollback
+- A resoluÃ§Ã£o de dependÃªncias garante a ordem correta de criaÃ§Ã£o
 
 ## Handoff
 next_agent: @dev
 next_command: *run-tests
-condition: Suíte de testes criada, pronta para execução
+condition: SuÃ­te de testes criada, pronta para execuÃ§Ã£o
 alternatives:
-  - agent: @qa, command: *review {story-id}, condition: Testes escritos como parte da revisão
-- A funcionalidade de prévia ajuda a evitar erros 
+  - agent: @qa, command: *review {story-id}, condition: Testes escritos como parte da revisÃ£o
+- A funcionalidade de prÃ©via ajuda a evitar erros 

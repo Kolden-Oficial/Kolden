@@ -18,7 +18,8 @@ Princípios:
 - **Branch principal**: `main`
 - **Ambiente**: WSL2 (Linux 6.6, Ubuntu) em `/home/kolden/kolden/`
 - **Exposição**: localhost-only. Não há reverse proxy, TLS ou tunnel configurado.
-- **Stack ativa**: somente LobeHub (`./lobehub/`). Nada mais até segunda ordem.
+- **Stack ativa (infra de serviços)**: somente LobeHub (`./lobehub/`). Nada mais até segunda ordem.
+- **Dois planos do mesmo repositório**: (1) **infra self-hosted** — a stack LobeHub descrita abaixo, que roda no WSL; (2) **workspace de agentes de IA** — squads, fábrica de agentes (Caos), runtime (Hermes) e catálogo de ferramentas, com checkout em `C:\Kolden\` (Windows). O índice operacional do plano de agentes é **`AGENTS.md`** — leia-o antes de operar com squads/agentes. Ver §10.
 
 ## 3. Arquitetura técnica
 
@@ -132,3 +133,19 @@ docker exec lobe-postgres pg_dump -U postgres lobechat > backup_$(date +%Y%m%d).
 - Não rotacionar secrets sem combinar — quebra a sessão de quem está logado.
 - Não usar `mkdir -p data/` à toa — o diretório é criado pelo Postgres na primeira subida com permissões corretas (UID 999).
 - Não tentar fazer `git push` para `main` direto sem pedido. Não tem proteção de branch ainda; o cuidado é manual.
+
+## 10. Workspace de agentes de IA (`C:\Kolden\`)
+
+O segundo plano do repositório (ver §2) é o ecossistema de agentes de IA. Seu índice/entrypoint é **`AGENTS.md`** — fonte de verdade para qualquer agente operando na Kolden. Este CLAUDE.md cobre a **infra**; o AGENTS.md cobre os **agentes**. Os dois devem permanecer cruzados e consistentes.
+
+Estado atual (verificado arquivo-a-arquivo):
+
+- **16 squads** (nomes da mitologia grega) — **185 agentes** em `<Squad>/agents/`. Cada squad tem `README.md` + `agents/` + `tasks/` + `workflows/` + `checklists/` + `squad.yaml` (exceções: `Dedalo` usa `config.yaml`; `Liceu` sem `workflows/`). Padrão: 1 orquestrador (tier 0) + especialistas. Marketing & Criação: `Pheme` (9), `Peitho` (16), `Caliope` (23), `Aglaia` (15), `Harmonia` (8), `Orfeu` (12). Estratégia & Negócios: `Aletheia` (8), `Argos` (15), `Liceu` (9), `Olimpo` (6), `Themis` (11), `Metis` (7), `Pluto` (16), `Dionisio` (7). Engenharia & Segurança: `Dedalo` (8), `Egide` (15).
+- **`Prometeu/`** — framework de engenharia AIOX com **12 agentes** em `Prometeu/.aiox-core/development/agents/` (base vendorizada `@aiox-squads/core`).
+- **`Caos/`** — fábrica de agentes: ritual de criação em 9 fases sob `Caos/constituicao.md`, com **9 especialistas internos** + **13 skills**. Aplica REUSE > ADAPT > CREATE via registro de entidades.
+- **`Hermes/`** — runtime de execução vendorizado da **Nous Research** (`hermes-agent`, docs em inglês). Roda os assistentes (gateways WhatsApp/Telegram/etc., OpenRouter, Infisical). **Não é squad nativo.**
+- **`sobre-a-empresa/`** — "cérebro" da empresa em construção (~30 docs, maioria `status: rascunho`). Não afirmar detalhes de negócio enquanto for rascunho. Contém também **`sobre-a-empresa/Ferramentas/`** — catálogo de ~30 tools/APIs/MCPs (`sobre-a-empresa/Ferramentas/ferramentas.md`, `mcp-status.md`). **Credenciais sempre via Infisical** (consistente com §5).
+- **`Projetos/`** — `omiron` (Next.js 15) e `CataLogo`/Tracker Flow (React+Vite), além do template `_modelo-projeto/`.
+- **Sistema (em `.claude/`)**: `.claude/agent-memory/` (memória persistente do workspace), `.claude/registros/` (logs de auditoria e aprendizado), `.claude/_staging/` (clones de import, temporário).
+
+Total: **206 agentes** mapeados (185 squads + 12 Prometeu + 9 Caos). Convenções (PT-BR, kebab-case), regra de segredos (§5) e commit policy (§6) deste CLAUDE.md valem igualmente no plano de agentes.

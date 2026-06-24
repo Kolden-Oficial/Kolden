@@ -1,13 +1,13 @@
 workflow:
   id: spec-pipeline
-  name: Spec Pipeline - Requirements to Specification
+  name: Spec Pipeline - De Requisitos a Especificação
   version: "1.0"
   description: >-
     Pipeline completo que transforma requisitos informais em especificações
     executáveis. Orquestra 5 fases: Gather → Assess → Research → Write → Critique.
     Adapta as fases baseado na complexidade do requisito.
 
-    Part of the Auto-Claude ADE (Autonomous Development Engine) infrastructure.
+    Parte da infraestrutura do Auto-Claude ADE (Autonomous Development Engine).
 
   type: pipeline
   project_types:
@@ -16,21 +16,21 @@ workflow:
     - spec-generation
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              TRIGGER CONFIGURATION
+  #                              CONFIGURAÇÃO DE GATILHOS
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   triggers:
-    # Primary trigger: Explicit command
+    # Gatilho primário: Comando explícito
     - event: command
       command: "*create-spec"
       action: run_pipeline
 
-    # Secondary trigger: New story created
+    # Gatilho secundário: Nova story criada
     - event: story_created
       condition: projectConfig.autoSpec.enabled === true
       action: run_pipeline
 
-    # Agent-specific triggers
+    # Gatilhos específicos de agente
     - event: command
       command: "*gather-requirements"
       action: run_phase
@@ -57,35 +57,35 @@ workflow:
       phase: critique
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              CONFIGURATION
+  #                              CONFIGURAÇÃO
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   config:
-    # Auto-spec when story is created
+    # Auto-spec quando a story é criada
     autoSpec:
       enabled: false
       trigger: story_created
 
-    # Progress tracking
+    # Rastreamento de progresso
     showProgress: true
     verbose: true
 
-    # Retry configuration
+    # Configuração de retentativa
     maxRetries: 2
     retryDelay: 1000
 
-    # Gate behavior
-    strictGate: true  # BLOCKED verdict halts pipeline
+    # Comportamento do gate
+    strictGate: true  # O veredito BLOCKED interrompe o pipeline
 
-    # Output directory pattern
+    # Padrão do diretório de saída
     outputDir: docs/stories/{storyId}/spec/
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              COMPLEXITY-BASED PHASES
+  #                              FASES BASEADAS EM COMPLEXIDADE
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   phases:
-    # SIMPLE: Minimal pipeline for straightforward tasks
+    # SIMPLE: Pipeline mínimo para tarefas diretas
     SIMPLE:
       description: "Tarefa direta, padrões existentes"
       steps:
@@ -94,7 +94,7 @@ workflow:
         - critique
       estimated_time: "30-60 min"
 
-    # STANDARD: Full pipeline for moderate complexity
+    # STANDARD: Pipeline completo para complexidade moderada
     STANDARD:
       description: "Complexidade moderada, alguma pesquisa necessária"
       steps:
@@ -106,7 +106,7 @@ workflow:
         - plan
       estimated_time: "2-4 hours"
 
-    # COMPLEX: Extended pipeline with revision loop
+    # COMPLEX: Pipeline estendido com loop de revisão
     COMPLEX:
       description: "Alta complexidade, múltiplas iterações"
       steps:
@@ -120,11 +120,11 @@ workflow:
         - plan
       estimated_time: "4-8 hours"
       flags:
-        - "Architectural review recommended"
-        - "Consider breaking into smaller stories"
+        - "Revisão arquitetural recomendada"
+        - "Considere quebrar em stories menores"
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              PRE-FLIGHT CHECKS
+  #                              VERIFICAÇÕES PRÉ-EXECUÇÃO
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   pre_flight:
@@ -132,7 +132,7 @@ workflow:
 
     checks:
       - id: story_exists
-        description: "Verify story directory exists or can be created"
+        description: "Verificar se o diretório da story existe ou pode ser criado"
         script: |
           const fs = require('fs');
           const path = `docs/stories/${storyId}`;
@@ -141,40 +141,40 @@ workflow:
           }
           return true;
         blocking: true
-        error: "Cannot create story directory"
+        error: "Não foi possível criar o diretório da story"
 
       - id: no_existing_spec
-        description: "Check for existing spec (avoid overwrite)"
+        description: "Verificar se há spec existente (evitar sobrescrita)"
         script: |
           const fs = require('fs');
           const specPath = `docs/stories/${storyId}/spec/spec.md`;
           return !fs.existsSync(specPath);
         blocking: false
-        warning: "Existing spec found - will iterate"
+        warning: "Spec existente encontrada - vai iterar"
 
       - id: agents_available
-        description: "Verify required agents are configured"
+        description: "Verificar se os agentes necessários estão configurados"
         check: "All spec pipeline agents have autoClaude.specPipeline defined"
         blocking: true
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              WORKFLOW SEQUENCE
+  #                              SEQUÊNCIA DO WORKFLOW
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   sequence:
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # PHASE 1: GATHER REQUIREMENTS
+    # FASE 1: COLETAR REQUISITOS
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: gather
       phase: 1
-      phase_name: "Gather Requirements"
+      phase_name: "Coletar Requisitos"
       agent: pm
 
       description: >-
-        Collect and structure requirements from user input, PRD, or existing spec.
-        Creates requirements.json with functional, non-functional, constraints.
+        Coletar e estruturar requisitos a partir da entrada do usuário, do PRD ou de spec existente.
+        Cria requirements.json com requisitos funcionais, não funcionais e restrições.
 
       task: spec-gather-requirements.md
 
@@ -186,28 +186,28 @@ workflow:
       outputs:
         - requirements.json
 
-      elicit: true  # Requires user interaction
+      elicit: true  # Requer interação do usuário
 
       on_success:
-        log: "✅ Requirements gathered: {requirements.functional.length} FR, {requirements.nonFunctional.length} NFR"
+        log: "✅ Requisitos coletados: {requirements.functional.length} FR, {requirements.nonFunctional.length} NFR"
         next: assess
 
       on_failure:
         action: halt
-        error: "Failed to gather requirements"
+        error: "Falha ao coletar requisitos"
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # PHASE 2: ASSESS COMPLEXITY
+    # FASE 2: AVALIAR COMPLEXIDADE
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: assess
       phase: 2
-      phase_name: "Assess Complexity"
+      phase_name: "Avaliar Complexidade"
       agent: architect
 
       description: >-
-        Evaluate complexity across 5 dimensions: scope, integration, infrastructure,
-        knowledge, risk. Determines which pipeline phases are needed.
+        Avaliar a complexidade em 5 dimensões: escopo, integração, infraestrutura,
+        conhecimento, risco. Determina quais fases do pipeline são necessárias.
 
       task: spec-assess-complexity.md
 
@@ -222,26 +222,26 @@ workflow:
       skip_if: "source === 'simple' OR overrideComplexity === 'SIMPLE'"
 
       on_success:
-        log: "📊 Complexity assessed: {complexity.result} (score: {complexity.totalScore})"
-        dynamic_phases: true  # Use complexity.result to determine phases
+        log: "📊 Complexidade avaliada: {complexity.result} (score: {complexity.totalScore})"
+        dynamic_phases: true  # Usa complexity.result para determinar as fases
         next: research
 
       on_failure:
         action: continue
-        fallback: "Assume STANDARD complexity"
+        fallback: "Assumir complexidade STANDARD"
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # PHASE 3: RESEARCH DEPENDENCIES
+    # FASE 3: PESQUISAR DEPENDÊNCIAS
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: research
       phase: 3
-      phase_name: "Research Dependencies"
+      phase_name: "Pesquisar Dependências"
       agent: analyst
 
       description: >-
-        Research external dependencies using Context7 (library docs) and EXA (web search).
-        Validates technologies and gathers implementation patterns.
+        Pesquisar dependências externas usando Context7 (docs de bibliotecas) e EXA (busca na web).
+        Valida tecnologias e reúne padrões de implementação.
 
       task: spec-research-dependencies.md
 
@@ -260,25 +260,25 @@ workflow:
         - exa
 
       on_success:
-        log: "🔍 Research complete: {research.dependencies.length} dependencies, {research.unverifiedClaims.length} unverified"
+        log: "🔍 Pesquisa concluída: {research.dependencies.length} dependências, {research.unverifiedClaims.length} não verificadas"
         next: spec
 
       on_failure:
         action: continue
-        fallback: "Proceed with minimal research output"
+        fallback: "Prosseguir com saída mínima de pesquisa"
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # PHASE 4: WRITE SPECIFICATION
+    # FASE 4: ESCREVER ESPECIFICAÇÃO
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: spec
       phase: 4
-      phase_name: "Write Specification"
+      phase_name: "Escrever Especificação"
       agent: pm
 
       description: >-
-        Generate complete spec.md from all previous artifacts.
-        No invention - only derive content from inputs.
+        Gerar o spec.md completo a partir de todos os artefatos anteriores.
+        Sem invenção - derivar o conteúdo apenas das entradas.
 
       task: spec-write-spec.md
 
@@ -292,25 +292,25 @@ workflow:
         - spec.md
 
       on_success:
-        log: "📝 Specification written: docs/stories/{storyId}/spec/spec.md"
+        log: "📝 Especificação escrita: docs/stories/{storyId}/spec/spec.md"
         next: critique
 
       on_failure:
         action: halt
-        error: "Failed to write specification"
+        error: "Falha ao escrever a especificação"
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # PHASE 5: CRITIQUE SPECIFICATION
+    # FASE 5: CRITICAR ESPECIFICAÇÃO
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: critique
       phase: 5
-      phase_name: "Critique Specification"
+      phase_name: "Criticar Especificação"
       agent: qa
 
       description: >-
-        Quality gate that validates spec against requirements.
-        Evaluates accuracy, completeness, consistency, feasibility, alignment.
+        Quality gate que valida a spec em relação aos requisitos.
+        Avalia precisão, completude, consistência, viabilidade e alinhamento.
 
       task: spec-critique.md
 
@@ -324,37 +324,37 @@ workflow:
       outputs:
         - critique.json
 
-      gate: true  # Blocking gate
+      gate: true  # Gate bloqueante
 
       on_verdict:
         APPROVED:
-          log: "✅ Spec APPROVED (score: {critique.scores.average})"
+          log: "✅ Spec APROVADA (score: {critique.scores.average})"
           next: plan
           action: continue
 
         NEEDS_REVISION:
-          log: "⚠️ Spec NEEDS_REVISION: {critique.verdictReason}"
+          log: "⚠️ Spec PRECISA DE REVISÃO: {critique.verdictReason}"
           action: return_to_spec
           pass: [critique.json, critique.autoFixes]
           max_iterations: 2
 
         BLOCKED:
-          log: "🛑 Spec BLOCKED: {critique.verdictReason}"
+          log: "🛑 Spec BLOQUEADA: {critique.verdictReason}"
           action: halt
           escalate_to: "@architect"
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # PHASE 5b: REVISE SPECIFICATION (COMPLEX only)
+    # FASE 5b: REVISAR ESPECIFICAÇÃO (apenas COMPLEX)
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: revise
       phase: "5b"
-      phase_name: "Revise Specification"
+      phase_name: "Revisar Especificação"
       agent: pm
 
       description: >-
-        Apply critique feedback and auto-fixes to improve specification.
-        Only runs for COMPLEX pipeline or when NEEDS_REVISION.
+        Aplicar o feedback da crítica e as correções automáticas para melhorar a especificação.
+        Só roda no pipeline COMPLEX ou quando NEEDS_REVISION.
 
       condition: "complexity.result === 'COMPLEX' OR critique.verdict === 'NEEDS_REVISION'"
 
@@ -367,21 +367,21 @@ workflow:
         - spec.md (updated)
 
       on_success:
-        log: "🔄 Specification revised based on critique"
+        log: "🔄 Especificação revisada com base na crítica"
         next: critique_2
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # PHASE 5c: SECOND CRITIQUE (COMPLEX only)
+    # FASE 5c: SEGUNDA CRÍTICA (apenas COMPLEX)
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: critique_2
       phase: "5c"
-      phase_name: "Second Critique"
+      phase_name: "Segunda Crítica"
       agent: qa
 
       description: >-
-        Second quality gate for revised specification.
-        More lenient on MEDIUM issues if improvements shown.
+        Segundo quality gate para a especificação revisada.
+        Mais tolerante com problemas MEDIUM se forem demonstradas melhorias.
 
       condition: "complexity.result === 'COMPLEX'"
 
@@ -403,27 +403,27 @@ workflow:
           next: plan
         NEEDS_REVISION:
           action: halt
-          error: "Spec failed second critique - manual intervention needed"
+          error: "A spec falhou na segunda crítica - intervenção manual necessária"
         BLOCKED:
           action: halt
           escalate_to: "@architect"
 
     # ═════════════════════════════════════════════════════════════════════════════════
-    # PHASE 6: CREATE IMPLEMENTATION PLAN
+    # FASE 6: CRIAR PLANO DE IMPLEMENTAÇÃO
     # ═════════════════════════════════════════════════════════════════════════════════
 
     - step: plan
       phase: 6
-      phase_name: "Create Implementation Plan"
+      phase_name: "Criar Plano de Implementação"
       agent: architect
 
       description: >-
-        Generate implementation plan from approved specification.
-        Breaks spec into tasks, identifies dependencies, estimates effort.
+        Gerar o plano de implementação a partir da especificação aprovada.
+        Quebra a spec em tasks, identifica dependências, estima o esforço.
 
       condition: "critique.verdict === 'APPROVED'"
 
-      task: plan-create-implementation.md  # Future task
+      task: plan-create-implementation.md  # Task futura
 
       inputs:
         storyId: "{storyId}"
@@ -434,34 +434,34 @@ workflow:
         - plan.json
 
       on_success:
-        log: "📋 Implementation plan created"
+        log: "📋 Plano de implementação criado"
         complete: true
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              WORKFLOW COMPLETION
+  #                              CONCLUSÃO DO WORKFLOW
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   completion:
     success_message: |
       ╔══════════════════════════════════════════════════════════════╗
-      ║  ✅ Spec Pipeline Complete                                   ║
+      ║  ✅ Spec Pipeline Concluído                                  ║
       ╚══════════════════════════════════════════════════════════════╝
 
       Story:       {storyId}
-      Complexity:  {complexity.result}
-      Verdict:     {critique.verdict}
+      Complexidade: {complexity.result}
+      Veredito:    {critique.verdict}
       Score:       {critique.scores.average}/5
 
-      📁 Artifacts:
+      📁 Artefatos:
          • docs/stories/{storyId}/spec/requirements.json
          • docs/stories/{storyId}/spec/complexity.json
          • docs/stories/{storyId}/spec/research.json
          • docs/stories/{storyId}/spec/spec.md
          • docs/stories/{storyId}/spec/critique.json
 
-      📌 Next Steps:
-         • Review spec.md
-         • Run @dev *develop {storyId}
+      📌 Próximos Passos:
+         • Revisar o spec.md
+         • Rodar @dev *develop {storyId}
 
     outputs:
       - storyId
@@ -472,37 +472,37 @@ workflow:
       - critique.json
 
     next_steps:
-      - "Review specification: docs/stories/{storyId}/spec/spec.md"
-      - "Start development: @dev *develop {storyId}"
-      - "View critique: docs/stories/{storyId}/spec/critique.json"
+      - "Revisar a especificação: docs/stories/{storyId}/spec/spec.md"
+      - "Iniciar o desenvolvimento: @dev *develop {storyId}"
+      - "Ver a crítica: docs/stories/{storyId}/spec/critique.json"
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              ERROR HANDLING
+  #                              TRATAMENTO DE ERROS
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   error_handling:
     missing_story_id:
-      message: "Story ID is required"
-      suggestion: "Usage: *create-spec STORY-42"
+      message: "O ID da story é obrigatório"
+      suggestion: "Uso: *create-spec STORY-42"
       action: prompt
 
     phase_failed:
-      message: "Phase {phase} failed"
-      suggestion: "Check logs and retry: *create-spec {storyId} --resume"
+      message: "A fase {phase} falhou"
+      suggestion: "Verifique os logs e tente novamente: *create-spec {storyId} --resume"
       action: halt
 
     max_iterations_reached:
-      message: "Max revision iterations reached"
-      suggestion: "Manual intervention needed - escalating to @architect"
+      message: "Número máximo de iterações de revisão atingido"
+      suggestion: "Intervenção manual necessária - escalando para @architect"
       action: escalate
 
     critique_blocked:
-      message: "Specification blocked by QA gate"
-      suggestion: "Review critique.json and address HIGH severity issues"
+      message: "Especificação bloqueada pelo QA gate"
+      suggestion: "Revise o critique.json e trate os problemas de severidade HIGH"
       action: halt
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              RESUME SUPPORT
+  #                              SUPORTE A RETOMADA
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   resume:
@@ -530,32 +530,32 @@ workflow:
       critique_complete: plan
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              INTEGRATION
+  #                              INTEGRAÇÃO
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   integration:
-    # Integration with status.json
+    # Integração com status.json
     status_json:
       track_pipeline: true
       field: specPipeline
       update_on_each_phase: true
 
-    # Integration with project status
+    # Integração com o status do projeto
     project_status:
       update_story_status: true
       status_field: specStatus
 
-    # Notification hooks
+    # Hooks de notificação
     notifications:
       on_complete:
-        message: "Spec ready for {storyId}"
+        message: "Spec pronta para {storyId}"
         channels: [log]
       on_blocked:
-        message: "Spec blocked for {storyId} - needs attention"
+        message: "Spec bloqueada para {storyId} - precisa de atenção"
         channels: [log]
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              METADATA
+  #                              METADADOS
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   metadata:

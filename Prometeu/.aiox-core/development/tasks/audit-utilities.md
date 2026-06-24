@@ -2,30 +2,30 @@
 
 # audit-utilities
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha o modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Balanceado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Completo Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: auditUtilities()
@@ -38,19 +38,19 @@ atomic_layer: Strategy
   tipo: string
   origem: User Input
   obrigatório: true
-  validação: Valid path or identifier
+  validação: Caminho ou identificador válido
 
 - campo: options
   tipo: object
   origem: config
   obrigatório: false
-  validação: Analysis configuration
+  validação: Configuração de análise
 
 - campo: depth
   tipo: number
   origem: User Input
   obrigatório: false
-  validação: Default: 1 (0-3)
+  validação: Padrão: 1 (0-3)
 
 **Saída:**
 - campo: analysis_report
@@ -71,111 +71,111 @@ atomic_layer: Strategy
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Target exists and is accessible; analysis tools available
+  - [ ] Target existe e está acessível; ferramentas de análise disponíveis
     tipo: pre-condition
     blocker: true
     validação: |
-      Check target exists and is accessible; analysis tools available
-    error_message: "Pre-condition failed: Target exists and is accessible; analysis tools available"
+      Verificar se o target existe e está acessível; ferramentas de análise disponíveis
+    error_message: "Pré-condição falhou: Target existe e está acessível; ferramentas de análise disponíveis"
 ```
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Analysis complete; report generated; no critical issues
+  - [ ] Análise completa; relatório gerado; nenhum problema crítico
     tipo: post-condition
     blocker: true
     validação: |
-      Verify analysis complete; report generated; no critical issues
-    error_message: "Post-condition failed: Analysis complete; report generated; no critical issues"
+      Verificar se a análise está completa; relatório gerado; nenhum problema crítico
+    error_message: "Pós-condição falhou: Análise completa; relatório gerado; nenhum problema crítico"
 ```
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Analysis accurate; all targets covered; report complete
+  - [ ] Análise precisa; todos os targets cobertos; relatório completo
     tipo: acceptance-criterion
     blocker: true
     validação: |
-      Assert analysis accurate; all targets covered; report complete
-    error_message: "Acceptance criterion not met: Analysis accurate; all targets covered; report complete"
+      Assegurar que a análise está precisa; todos os targets cobertos; relatório completo
+    error_message: "Critério de aceite não atendido: Análise precisa; todos os targets cobertos; relatório completo"
 ```
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** code-analyzer
-  - **Purpose:** Static code analysis and metrics
-  - **Source:** .aiox-core/utils/code-analyzer.js
+- **Ferramenta:** code-analyzer
+  - **Propósito:** Análise estática de código e métricas
+  - **Origem:** .aiox-core/utils/code-analyzer.js
 
-- **Tool:** file-system
-  - **Purpose:** Recursive directory traversal
-  - **Source:** Node.js fs module
+- **Ferramenta:** file-system
+  - **Propósito:** Travessia recursiva de diretórios
+  - **Origem:** Módulo fs do Node.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** analyze-codebase.js
-  - **Purpose:** Codebase analysis and reporting
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/analyze-codebase.js
+  - **Propósito:** Análise e geração de relatórios da codebase
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/analyze-codebase.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** fallback
+**Estratégia:** fallback
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Target Not Accessible
-   - **Cause:** Path does not exist or permissions denied
-   - **Resolution:** Verify path and check permissions
-   - **Recovery:** Skip inaccessible paths, continue with accessible ones
+1. **Erro:** Target Não Acessível
+   - **Causa:** O caminho não existe ou as permissões foram negadas
+   - **Resolução:** Verificar o caminho e checar as permissões
+   - **Recuperação:** Pular caminhos inacessíveis, continuar com os acessíveis
 
-2. **Error:** Analysis Timeout
-   - **Cause:** Analysis exceeds time limit for large codebases
-   - **Resolution:** Reduce analysis depth or scope
-   - **Recovery:** Return partial results with timeout warning
+2. **Erro:** Timeout da Análise
+   - **Causa:** A análise excede o limite de tempo para codebases grandes
+   - **Resolução:** Reduzir a profundidade ou o escopo da análise
+   - **Recuperação:** Retornar resultados parciais com aviso de timeout
 
-3. **Error:** Memory Limit Exceeded
-   - **Cause:** Large codebase exceeds memory allocation
-   - **Resolution:** Process in batches or increase memory limit
-   - **Recovery:** Graceful degradation to summary analysis
+3. **Erro:** Limite de Memória Excedido
+   - **Causa:** A codebase grande excede a alocação de memória
+   - **Resolução:** Processar em lotes ou aumentar o limite de memória
+   - **Recuperação:** Degradação graciosa para análise de resumo
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-20 min (estimated)
@@ -183,12 +183,12 @@ cost_estimated: $0.003-0.015
 token_usage: ~2,000-8,000 tokens
 ```
 
-**Optimization Notes:**
-- Iterative analysis with depth limits; cache intermediate results; batch similar operations
+**Notas de Otimização:**
+- Análise iterativa com limites de profundidade; cache de resultados intermediários; agrupar operações similares em lote
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -203,15 +203,15 @@ updated_at: 2025-11-17
 
 ---
 
-## Configuration Dependencies
+## Dependências de Configuração
 
-This task requires the following configuration keys from `core-config.yaml`:
+Esta task requer as seguintes chaves de configuração do `core-config.yaml`:
 
-- **`devStoryLocation`**: Location of story files (typically docs/stories)
+- **`devStoryLocation`**: Localização dos arquivos de story (tipicamente docs/stories)
 
-- **`qaLocation`**: QA output directory (typically docs/qa) - Required to write quality reports and gate files
+- **`qaLocation`**: Diretório de saída de QA (tipicamente docs/qa) - Necessário para escrever relatórios de qualidade e arquivos de gate
 
-**Loading Config:**
+**Carregando a Config:**
 ```javascript
 const yaml = require('js-yaml');
 const fs = require('fs');
@@ -224,49 +224,49 @@ const dev_story_location = config.devStoryLocation;
 const qaLocation = config.qaLocation || 'docs/qa'; // qaLocation
 ```
 
-## Purpose
+## Propósito
 
-Systematically audit all utilities in `.aiox-core/scripts/` to determine their functional status, classify them as WORKING/FIXABLE/DEPRECATED, and generate actionable recommendations for maintenance and cleanup.
+Auditar sistematicamente todos os utilitários em `.aiox-core/scripts/` para determinar seu status funcional, classificá-los como WORKING/FIXABLE/DEPRECATED e gerar recomendações acionáveis para manutenção e limpeza.
 
-## Classification Criteria
+## Critérios de Classificação
 
 ### ✅ WORKING
-- Executes without errors
-- Dependencies installed
-- Integrated with at least one agent/task
-- Documentation exists (inline or external)
+- Executa sem erros
+- Dependências instaladas
+- Integrado com pelo menos um agente/task
+- Documentação existe (inline ou externa)
 
 ### 🔧 FIXABLE
-- Executes with minor errors (missing deps, syntax fixes)
-- Core logic sound, needs integration
-- Fix effort estimated <4 hours
-- Concept valuable enough to justify fix
+- Executa com erros menores (dependências faltantes, correções de sintaxe)
+- Lógica central sólida, precisa de integração
+- Esforço de correção estimado em <4 horas
+- Conceito valioso o suficiente para justificar a correção
 
 ### 🗑️ DEPRECATED
-- Non-functional, major rewrites needed
-- Obsolete concept (replaced by better approach)
-- Fix effort >8 hours
-- Low value relative to effort
+- Não funcional, necessita de reescritas profundas
+- Conceito obsoleto (substituído por uma abordagem melhor)
+- Esforço de correção >8 horas
+- Baixo valor em relação ao esforço
 
-## Execution Steps
+## Passos de Execução
 
-### Step 1: Run Automated Testing
+### Passo 1: Rodar Testes Automatizados
 
-Execute the test-utilities.js script to test all utilities:
+Execute o script test-utilities.js para testar todos os utilitários:
 
 ```bash
 node .aiox-core/scripts/test-utilities.js
 ```
 
-This will:
-- Attempt to require() each utility
-- Check for missing dependencies
-- Test exported functions
-- Classify as WORKING/FIXABLE/DEPRECATED based on errors
+Isto irá:
+- Tentar fazer require() de cada utilitário
+- Verificar dependências faltantes
+- Testar funções exportadas
+- Classificar como WORKING/FIXABLE/DEPRECATED com base nos erros
 
-### Step 2: Verify Integration Status
+### Passo 2: Verificar o Status de Integração
 
-Run integration scan to find utility usage:
+Rode a varredura de integração para encontrar o uso dos utilitários:
 
 ```bash
 # For each utility, count references in agents and tasks
@@ -277,82 +277,82 @@ for util in .aiox-core/scripts/*.js; do
 done
 ```
 
-### Step 3: Manual Classification Review
+### Passo 3: Revisão Manual de Classificação
 
-For utilities with ambiguous status:
-- Review source code quality
-- Estimate completion percentage
-- Assess concept value
-- Calculate fix effort estimate
+Para utilitários com status ambíguo:
+- Revisar a qualidade do código-fonte
+- Estimar o percentual de conclusão
+- Avaliar o valor do conceito
+- Calcular a estimativa de esforço de correção
 
-### Step 4: Generate Priority Scoring
+### Passo 4: Gerar Pontuação de Prioridade
 
-For FIXABLE utilities, calculate priority score:
+Para utilitários FIXABLE, calcule a pontuação de prioridade:
 
 ```
 Priority Score = (Integration Count × 10) + (Completion % × 5) - (Fix Hours)
 ```
 
-Higher scores = higher priority for fixing
+Pontuações mais altas = maior prioridade para correção
 
-### Step 5: Make Story 3.19 Decision
+### Passo 5: Tomar a Decisão da Story 3.19
 
-Determine if memory-layer capabilities exist:
-- Search for memory-related utilities
-- IF found AND classified FIXABLE:
-  - Estimate fix effort vs 20h threshold
-  - Assess core functionality completion (>60%?)
-  - Recommend GO/NO-GO/DEFER
+Determinar se existem capacidades de camada de memória:
+- Buscar utilitários relacionados a memória
+- SE encontrado E classificado como FIXABLE:
+  - Estimar o esforço de correção vs o limiar de 20h
+  - Avaliar a conclusão da funcionalidade central (>60%?)
+  - Recomendar GO/NO-GO/DEFER
 
-### Step 6: Generate Audit Report
+### Passo 6: Gerar o Relatório de Auditoria
 
-Create comprehensive report with:
-- Summary statistics (X WORKING, Y FIXABLE, Z DEPRECATED)
-- Per-utility details (status, errors, integration count, recommendation)
-- Fix priority list (ranked FIXABLE utilities)
-- Cleanup list (DEPRECATED utilities to remove)
-- Story 3.19 activation recommendation
+Criar um relatório abrangente com:
+- Estatísticas de resumo (X WORKING, Y FIXABLE, Z DEPRECATED)
+- Detalhes por utilitário (status, erros, contagem de integração, recomendação)
+- Lista de prioridade de correção (utilitários FIXABLE ranqueados)
+- Lista de limpeza (utilitários DEPRECATED a remover)
+- Recomendação de ativação da Story 3.19
 
-## Output
+## Saída
 
-**Primary**: `UTILITIES-AUDIT-REPORT.md` in project root or docs/
+**Principal**: `UTILITIES-AUDIT-REPORT.md` na raiz do projeto ou em docs/
 
-**Format**:
+**Formato**:
 ```markdown
-# Framework Utilities Audit Report
+# Relatório de Auditoria de Utilitários do Framework
 
-## Executive Summary
-- Total Utilities: X
+## Resumo Executivo
+- Total de Utilitários: X
 - ✅ WORKING: Y (Z%)
 - 🔧 FIXABLE: A (B%)
 - 🗑️ DEPRECATED: C (D%)
 
-## Detailed Findings
+## Achados Detalhados
 
-### WORKING Utilities
+### Utilitários WORKING
 ...
 
-### FIXABLE Utilities (Priority Ranked)
+### Utilitários FIXABLE (Ranqueados por Prioridade)
 ...
 
-### DEPRECATED Utilities (Cleanup Candidates)
+### Utilitários DEPRECATED (Candidatos a Limpeza)
 ...
 
-## Story 3.19 Decision
+## Decisão da Story 3.19
 ...
 ```
 
-## Success Criteria
+## Critérios de Sucesso
 
-- All 81 utilities audited without crashes
-- Classification is consistent and reproducible
-- Integration counts accurate
-- Report is actionable for Story 3.18 (cleanup)
-- Story 3.19 decision has clear rationale
+- Todos os 81 utilitários auditados sem crashes
+- A classificação é consistente e reproduzível
+- Contagens de integração precisas
+- O relatório é acionável para a Story 3.18 (limpeza)
+- A decisão da Story 3.19 tem justificativa clara
 
-## Notes
+## Notas
 
-- Run from project root directory
-- Requires Node.js environment
-- May take 5-10 minutes for full audit
-- Some utilities may have circular dependencies - handle gracefully
+- Rodar a partir do diretório raiz do projeto
+- Requer ambiente Node.js
+- Pode levar de 5 a 10 minutos para a auditoria completa
+- Alguns utilitários podem ter dependências circulares - trate com elegância

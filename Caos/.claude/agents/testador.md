@@ -38,7 +38,8 @@ declaradas são alcançáveis. Emitir um maturity score de 0 a 10.
    - Clareza/ausência de ambiguidade e aderência ao formato
 5. Gate: **score ≥ 7.0** para liberar a Fase 8. Além disso, **todo modo de falha da seção 10
    precisa ter passado** no seu teste adversarial — um único modo desprotegido reprova,
-   independentemente do score.
+   independentemente do score. Confirme também a **cobertura por nível N0→N6** (tabela em
+   `modelos/roteiro-de-teste.md`): nenhum nível aplicável pode ficar em branco.
 
 # Restrições
 - Você NÃO corrige nada — reporta os cenários que falharam e o porquê.

@@ -1,50 +1,50 @@
-# Auto Worktree Workflow
+# Workflow de Worktree Automático
 
 > **EN** | [PT](../../aiox-workflows/auto-worktree-workflow.md) | [ES](../../es/aiox-workflows/auto-worktree-workflow.md)
 
 ---
 
-**Full documentation available in:** [Portuguese Version](../../aiox-workflows/auto-worktree-workflow.md)
+**Documentação completa disponível em:** [Versão em Português](../../aiox-workflows/auto-worktree-workflow.md)
 
 ---
 
-## Summary
+## Resumo
 
-The **Auto Worktree Workflow** manages Git worktrees for parallel development. It automates:
+O **Workflow de Worktree Automático** gerencia worktrees do Git para desenvolvimento paralelo. Ele automatiza:
 
-- Worktree creation for feature branches
-- Environment setup in new worktrees
-- Worktree cleanup after merge
-- Branch management and synchronization
+- Criação de worktree para feature branches
+- Configuração de ambiente em novos worktrees
+- Limpeza de worktree após o merge
+- Gerenciamento e sincronização de branches
 
-### When to Use
+### Quando Usar
 
-- Working on multiple features simultaneously
-- Isolating experimental changes
-- Parallel development without stashing
-- Review of pull requests locally
+- Trabalhar em múltiplas funcionalidades simultaneamente
+- Isolar mudanças experimentais
+- Desenvolvimento paralelo sem stashing
+- Revisão de pull requests localmente
 
-### Key Agents
+### Agentes Principais
 
-- `@devops` - Git operations (exclusive push authority)
-- `@dev` - Development in worktrees
+- `@devops` - Operações de Git (autoridade exclusiva de push)
+- `@dev` - Desenvolvimento em worktrees
 
-### Main Phases
+### Fases Principais
 
-1. **Creation** - New worktree from branch
-2. **Setup** - Dependencies and environment configuration
-3. **Development** - Work in isolated worktree
-4. **Sync** - Keeping worktrees updated
-5. **Cleanup** - Removing merged worktrees
+1. **Criação** - Novo worktree a partir de uma branch
+2. **Setup** - Dependências e configuração de ambiente
+3. **Desenvolvimento** - Trabalho em worktree isolado
+4. **Sincronização** - Mantendo os worktrees atualizados
+5. **Limpeza** - Remoção de worktrees já mesclados
 
-### Benefits
+### Benefícios
 
-- No context switching with git stash
-- Multiple features in parallel
-- Clean separation of concerns
-- Easy PR review setup
+- Sem troca de contexto com git stash
+- Múltiplas funcionalidades em paralelo
+- Separação limpa de responsabilidades
+- Configuração fácil para revisão de PR
 
-### Commands
+### Comandos
 
 ```bash
 # Create worktree for feature branch
@@ -59,4 +59,4 @@ git worktree remove ../feature-name
 
 ---
 
-*For complete details, diagrams, and step-by-step instructions, see the [Portuguese documentation](../../aiox-workflows/auto-worktree-workflow.md).*
+*Para detalhes completos, diagramas e instruções passo a passo, veja a [documentação em Português](../../aiox-workflows/auto-worktree-workflow.md).*

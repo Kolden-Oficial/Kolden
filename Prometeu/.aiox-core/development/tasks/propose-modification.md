@@ -36,13 +36,13 @@ atomic_layer: Molecule
   tipo: string
   origem: User Input
   obrigatório: true
-  validação: Must be registered task
+  validação: Deve ser uma task registrada
 
 - campo: parameters
   tipo: object
   origem: User Input
   obrigatório: false
-  validação: Valid task parameters
+  validação: Parâmetros de task válidos
 
 - campo: mode
   tipo: string
@@ -77,11 +77,11 @@ atomic_layer: Molecule
 
 ```yaml
 pre-conditions:
-  - [ ] Task is registered; required parameters provided; dependencies met
+  - [ ] A task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas
     tipo: pre-condition
     blocker: true
     validação: |
-      Check task is registered; required parameters provided; dependencies met
+      Verificar se a task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas
     error_message: "Pré-condição falhou: a task está registrada; os parâmetros obrigatórios foram fornecidos; as dependências foram atendidas"
 ```
 
@@ -95,11 +95,11 @@ pre-conditions:
 
 ```yaml
 post-conditions:
-  - [ ] Task completed; exit code 0; expected outputs created
+  - [ ] Task concluída; código de saída 0; saídas esperadas criadas
     tipo: post-condition
     blocker: true
     validação: |
-      Verify task completed; exit code 0; expected outputs created
+      Verificar se a task foi concluída; código de saída 0; saídas esperadas criadas
     error_message: "Pós-condição falhou: a task foi concluída; código de saída 0; as saídas esperadas foram criadas"
 ```
 
@@ -113,11 +113,11 @@ post-conditions:
 
 ```yaml
 acceptance-criteria:
-  - [ ] Task completed as expected; side effects documented
+  - [ ] Task concluída conforme esperado; efeitos colaterais documentados
     tipo: acceptance-criterion
     blocker: true
     validação: |
-      Assert task completed as expected; side effects documented
+      Assegurar que a task foi concluída conforme esperado; efeitos colaterais documentados
     error_message: "Critério de aceite não atendido: a task foi concluída conforme esperado; os efeitos colaterais foram documentados"
 ```
 
@@ -127,13 +127,13 @@ acceptance-criteria:
 
 **Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** task-runner
+- **Ferramenta:** task-runner
   - **Propósito:** Execução e orquestração de tasks
-  - **Source:** .aiox-core/core/task-runner.js
+  - **Origem:** .aiox-core/core/task-runner.js
 
-- **Tool:** logger
+- **Ferramenta:** logger
   - **Propósito:** Logging de execução e rastreamento de erros
-  - **Source:** .aiox-core/utils/logger.js
+  - **Origem:** .aiox-core/utils/logger.js
 
 ---
 
@@ -143,8 +143,8 @@ acceptance-criteria:
 
 - **Script:** execute-task.js
   - **Propósito:** Wrapper genérico de execução de task
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/execute-task.js
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/execute-task.js
 
 ---
 
@@ -205,7 +205,7 @@ checklists:
   - change-checklist.md
 ---
 
-# Propose Modification - AIOX Developer Task
+# Propor Modificação - Task de Desenvolvedor AIOX
 
 ## Propósito
 Criar e enviar propostas de modificação para revisão e aprovação colaborativa dentro do framework Synkra AIOX.
