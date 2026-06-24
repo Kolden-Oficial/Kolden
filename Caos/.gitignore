@@ -2,3 +2,5 @@ referencias/
 registros/auditoria.log
 .env
 *.local.json
+# Código de terceiro em quarentena — nunca versionar (Constituição, Art. VIII)
+_staging/quarentena/

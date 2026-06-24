@@ -1,9 +1,9 @@
 workflow:
   id: brownfield-service
-  name: Brownfield Service/API Enhancement
+  name: Aprimoramento Brownfield de Serviço/API
   description: >-
-    Agent workflow for enhancing existing backend services and APIs with new features,
-    modernization, or performance improvements. Handles existing system analysis and safe integration.
+    Workflow de agentes para aprimorar serviços backend e APIs existentes com novas funcionalidades,
+    modernização ou melhorias de performance. Lida com a análise do sistema existente e a integração segura.
   type: brownfield
   version: "1.0"
   project_types:
@@ -18,14 +18,14 @@ workflow:
     confirmation_required: true
 
   phases:
-    - phase_1: Service Analysis & Planning
-    - phase_2: Document Sharding
-    - phase_3: Development Cycle
+    - phase_1: Análise e Planejamento do Serviço
+    - phase_2: Fragmentação de Documentos
+    - phase_3: Ciclo de Desenvolvimento
 
   sequence:
     - phase: 1
-      name: Service Analysis & Planning
-      description: "Analyze existing service and create planning artifacts"
+      name: Análise e Planejamento do Serviço
+      description: "Analisar o serviço existente e criar os artefatos de planejamento"
 
     - id: architect-service-analysis
       step: service_analysis
@@ -33,7 +33,7 @@ workflow:
       action: document-project  # task-reference
       creates: [project-documentation.md]
       duration_estimate: "30-60 min"
-      notes: "Review existing service documentation, codebase, performance metrics, and identify integration dependencies."
+      notes: "Revisar a documentação do serviço existente, a base de código, as métricas de performance e identificar as dependências de integração."
 
     - id: pm-create-prd
       agent: pm
@@ -41,7 +41,7 @@ workflow:
       uses: brownfield-prd-tmpl
       duration_estimate: "30-60 min"
       requires: existing_service_analysis
-      notes: "Creates comprehensive PRD focused on service enhancement with existing system analysis. SAVE OUTPUT: Copy final prd.md to your project's docs/ folder."
+      notes: "Cria um PRD abrangente focado no aprimoramento do serviço com a análise do sistema existente. SALVAR SAÍDA: Copie o prd.md final para a pasta docs/ do seu projeto."
 
     - id: architect-create-architecture
       agent: architect
@@ -49,14 +49,14 @@ workflow:
       uses: brownfield-architecture-tmpl
       duration_estimate: "30-60 min"
       requires: prd.md
-      notes: "Creates architecture with service integration strategy and API evolution planning. SAVE OUTPUT: Copy final architecture.md to your project's docs/ folder."
+      notes: "Cria a arquitetura com a estratégia de integração do serviço e o planejamento da evolução da API. SALVAR SAÍDA: Copie o architecture.md final para a pasta docs/ do seu projeto."
 
     - id: po-validate-artifacts
       agent: po
       validates: all_artifacts
       uses: po-master-checklist
       duration_estimate: "15-30 min"
-      notes: "Validates all documents for service integration safety and API compatibility. May require updates to any document."
+      notes: "Valida todos os documentos quanto à segurança da integração do serviço e à compatibilidade da API. Pode exigir atualizações em qualquer documento."
 
     - id: po-delegate-fixes
       agent: po
@@ -65,11 +65,11 @@ workflow:
       updates: any_flagged_documents
       duration_estimate: "15-30 min"
       condition: po_checklist_issues
-      notes: "If PO finds issues, PO delegates fixes to the relevant agent and re-validates updated documents in docs/ folder."
+      notes: "Se o PO encontrar problemas, o PO delega as correções ao agente relevante e revalida os documentos atualizados na pasta docs/."
 
     - phase: 2
-      name: Document Sharding
-      description: "Break down PRD and architecture into development-ready chunks"
+      name: Fragmentação de Documentos
+      description: "Quebrar o PRD e a arquitetura em blocos prontos para o desenvolvimento"
 
     - id: po-shard-documents
       agent: po
@@ -80,14 +80,14 @@ workflow:
         - prd.md
         - architecture.md
       notes: |
-        Shard documents for IDE development:
-        - Option A: Use PO agent to shard: @po then ask to shard docs/prd.md
-        - Option B: Manual: Drag shard-doc task + docs/prd.md into chat
-        - Creates docs/prd/ and docs/architecture/ folders with sharded content
+        Fragmente os documentos para o desenvolvimento na IDE:
+        - Opção A: Use o agente PO para fragmentar: @po e então peça para fragmentar docs/prd.md
+        - Opção B: Manual: Arraste a task shard-doc + docs/prd.md para o chat
+        - Cria as pastas docs/prd/ e docs/architecture/ com o conteúdo fragmentado
 
     - phase: 3
-      name: Development Cycle
-      description: "Iterative story implementation with QA review"
+      name: Ciclo de Desenvolvimento
+      description: "Implementação iterativa de stories com revisão de QA"
 
     - id: sm-create-story
       agent: sm
@@ -97,10 +97,10 @@ workflow:
       requires: sharded_docs
       repeats: for_each_epic
       notes: |
-        Story creation cycle:
-        - SM Agent (New Chat): @sm → *create
-        - Creates next story from sharded docs
-        - Story starts in "Draft" status
+        Ciclo de criação de story:
+        - Agente SM (Novo Chat): @sm → *create
+        - Cria a próxima story a partir dos docs fragmentados
+        - A story começa no status "Draft"
 
     - id: pm-review-draft-story
       agent: pm
@@ -112,10 +112,10 @@ workflow:
       optional: true
       condition: user_wants_story_review
       notes: |
-        OPTIONAL: Review and approve draft story
-        - NOTE: story-review task coming soon
-        - Review story completeness and alignment
-        - Update story status: Draft → Approved
+        OPCIONAL: Revisar e aprovar a story em rascunho
+        - NOTA: task story-review em breve
+        - Revisar a completude e o alinhamento da story
+        - Atualizar o status da story: Draft → Approved
 
     - id: dev-implement-story
       agent: dev
@@ -124,10 +124,10 @@ workflow:
       duration_estimate: "1-4 hours"
       requires: story.md
       notes: |
-        Dev Agent (New Chat): @dev
-        - Implements approved story
-        - Updates File List with all changes
-        - Marks story as "Review" when complete
+        Agente Dev (Novo Chat): @dev
+        - Implementa a story aprovada
+        - Atualiza a File List com todas as mudanças
+        - Marca a story como "Review" ao concluir
 
     - id: qa-review-implementation
       agent: qa
@@ -137,11 +137,11 @@ workflow:
       requires: implementation_files
       optional: true
       notes: |
-        OPTIONAL: QA Agent (New Chat): @qa → review-story
-        - Senior dev review with refactoring ability
-        - Fixes small issues directly
-        - Leaves checklist for remaining items
-        - Updates story status (Review → Done or stays Review)
+        OPCIONAL: Agente QA (Novo Chat): @qa → review-story
+        - Revisão de dev sênior com capacidade de refatoração
+        - Corrige pequenos problemas diretamente
+        - Deixa um checklist para os itens restantes
+        - Atualiza o status da story (Review → Done ou permanece Review)
 
     - id: dev-address-qa-feedback
       agent: dev
@@ -151,16 +151,16 @@ workflow:
       duration_estimate: "30-60 min"
       condition: qa_left_unchecked_items
       notes: |
-        If QA left unchecked items:
-        - Dev Agent (New Chat): Address remaining items
-        - Return to QA for final approval
+        Se o QA deixou itens não marcados:
+        - Agente Dev (Novo Chat): Tratar os itens restantes
+        - Retornar ao QA para aprovação final
 
     - meta: repeat
       target_steps: [sm-create-story, pm-review-draft-story, dev-implement-story, qa-review-implementation, dev-address-qa-feedback]
       condition: stories_remaining
       notes: |
-        Repeat story cycle (SM → Dev → QA) for all epic stories
-        Continue until all stories in PRD are complete
+        Repita o ciclo de story (SM → Dev → QA) para todas as stories do epic
+        Continue até que todas as stories no PRD estejam concluídas
 
     - id: po-epic-retrospective
       agent: po
@@ -170,17 +170,17 @@ workflow:
       condition: epic_complete
       optional: true
       notes: |
-        OPTIONAL: After epic completion
-        - NOTE: epic-retrospective task coming soon
-        - Validate epic was completed correctly
-        - Document learnings and improvements
+        OPCIONAL: Após a conclusão do epic
+        - NOTA: task epic-retrospective em breve
+        - Validar que o epic foi concluído corretamente
+        - Documentar aprendizados e melhorias
 
     - meta: end
       action: project_complete
       notes: |
-        All stories implemented and reviewed!
-        Project development phase complete.
-        Reference: .aiox-core/data/aiox-kb.md#IDE Development Workflow
+        Todas as stories implementadas e revisadas!
+        Fase de desenvolvimento do projeto concluída.
+        Referência: .aiox-core/data/aiox-kb.md#IDE Development Workflow
 
   flow_diagram: |
     ```mermaid
@@ -225,20 +225,20 @@ workflow:
 
   decision_guidance:
     when_to_use:
-      - Service enhancement requires coordinated stories
-      - API versioning or breaking changes needed
-      - Database schema changes required
-      - Performance or scalability improvements needed
-      - Multiple integration points affected
+      - O aprimoramento do serviço requer stories coordenadas
+      - Versionamento de API ou breaking changes necessários
+      - Mudanças no schema do banco de dados necessárias
+      - Melhorias de performance ou escalabilidade necessárias
+      - Múltiplos pontos de integração afetados
     when_not_to_use:
-      - New service from scratch (use greenfield-service)
-      - Frontend enhancement (use brownfield-ui)
-      - Full-stack enhancement (use brownfield-fullstack)
-      - Comprehensive technical debt audit (use brownfield-discovery)
+      - Novo serviço do zero (use greenfield-service)
+      - Aprimoramento de frontend (use brownfield-ui)
+      - Aprimoramento full-stack (use brownfield-fullstack)
+      - Auditoria abrangente de dívida técnica (use brownfield-discovery)
 
   handoff_prompts:
-    architect_to_pm: "Service analysis complete. Create comprehensive PRD with service integration strategy."
-    pm_to_architect: "PRD ready. Save it as docs/prd.md, then create the service architecture."
-    architect_to_po: "Architecture complete. Save it as docs/architecture.md. Please validate all artifacts for service integration safety."
-    po_issues: "PO found issues with [document]. Please return to [agent] to fix and re-save the updated document."
-    complete: "All planning artifacts validated and saved in docs/ folder. Move to IDE environment to begin development."
+    architect_to_pm: "Análise do serviço concluída. Crie um PRD abrangente com a estratégia de integração do serviço."
+    pm_to_architect: "PRD pronto. Salve-o como docs/prd.md, depois crie a arquitetura do serviço."
+    architect_to_po: "Arquitetura concluída. Salve-a como docs/architecture.md. Por favor, valide todos os artefatos quanto à segurança da integração do serviço."
+    po_issues: "O PO encontrou problemas com [documento]. Por favor, retorne ao [agente] para corrigir e re-salvar o documento atualizado."
+    complete: "Todos os artefatos de planejamento validados e salvos na pasta docs/. Vá para o ambiente da IDE para iniciar o desenvolvimento."

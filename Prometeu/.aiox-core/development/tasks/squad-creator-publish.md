@@ -27,30 +27,30 @@ Checklist:
 
 # *publish-squad
 
-Publishes a local squad to the aiox-squads GitHub repository via Pull Request.
+Publica um squad local no repositório GitHub aiox-squads via Pull Request.
 
-## Prerequisites
+## Pré-requisitos
 
-- GitHub CLI installed and authenticated: `gh auth login`
-- Squad must pass validation with no errors
-- Squad must have required manifest fields (name, version)
+- GitHub CLI instalado e autenticado: `gh auth login`
+- O squad deve passar na validação sem erros
+- O squad deve ter os campos obrigatórios do manifest (name, version)
 
-## Usage
+## Uso
 
 ```bash
 @squad-creator
 
-# Publish squad (creates PR)
+# Publicar squad (cria PR)
 *publish-squad ./squads/my-squad
 
-# Preview without creating PR
+# Preview sem criar PR
 *publish-squad ./squads/my-squad --dry-run
 
-# Verbose output
+# Saída detalhada
 *publish-squad ./squads/my-squad --verbose
 ```
 
-## Examples
+## Exemplos
 
 ### Dry Run (Preview)
 
@@ -79,7 +79,7 @@ Components:
 Run without --dry-run to create the actual PR.
 ```
 
-### Publish (Create PR)
+### Publicar (Criar PR)
 
 ```
 *publish-squad ./squads/my-squad
@@ -106,58 +106,58 @@ Next steps:
   3. Address any feedback
 ```
 
-## Options
+## Opções
 
-| Option | Description |
+| Opção | Descrição |
 |--------|-------------|
-| `--dry-run` | Preview publish without creating PR |
-| `--verbose` | Show detailed progress |
-| `--category` | Squad category (default: community) |
+| `--dry-run` | Preview da publicação sem criar PR |
+| `--verbose` | Mostra o progresso detalhado |
+| `--category` | Categoria do squad (default: community) |
 
 ## Workflow
 
 ```
-1. Validate squad
-   ├── Run SquadValidator
-   └── Must pass with 0 errors
+1. Validar o squad
+   ├── Rodar SquadValidator
+   └── Deve passar com 0 erros
 
-2. Load manifest
-   ├── Extract name, version, author
-   └── Extract components list
+2. Carregar o manifest
+   ├── Extrair name, version, author
+   └── Extrair a lista de components
 
-3. Check GitHub auth
-   └── Verify gh auth status
+3. Verificar a autenticação do GitHub
+   └── Verificar o status de gh auth
 
-4. Create/check fork
-   └── Fork SynkraAI/aiox-squads if needed
+4. Criar/verificar o fork
+   └── Fazer fork de SynkraAI/aiox-squads se necessário
 
-5. Clone fork to temp directory
-   └── Shallow clone for speed
+5. Clonar o fork em um diretório temporário
+   └── Shallow clone para mais velocidade
 
-6. Create branch
+6. Criar a branch
    └── squad/{squad-name}
 
-7. Copy squad files
-   └── To packages/{squad-name}/
+7. Copiar os arquivos do squad
+   └── Para packages/{squad-name}/
 
-8. Update registry.json
-   ├── Add to community section
-   └── Sort alphabetically
+8. Atualizar registry.json
+   ├── Adicionar à seção community
+   └── Ordenar alfabeticamente
 
-9. Commit and push
-   └── Include metadata in commit message
+9. Commitar e dar push
+   └── Incluir metadados na mensagem de commit
 
-10. Create PR
-    ├── Generate PR body from manifest
-    └── Target main branch
+10. Criar o PR
+    ├── Gerar o corpo do PR a partir do manifest
+    └── Direcionar à branch main
 
-11. Cleanup
-    └── Remove temp directory
+11. Limpeza
+    └── Remover o diretório temporário
 ```
 
-## PR Body Template
+## Template do Corpo do PR
 
-The generated PR body includes:
+O corpo do PR gerado inclui:
 
 ```markdown
 ## New Squad: {name}
@@ -183,47 +183,47 @@ The generated PR body includes:
 - [ ] No sensitive data included
 ```
 
-## Error Handling
+## Tratamento de Erros
 
-| Error | Cause | Solution |
+| Erro | Causa | Solução |
 |-------|-------|----------|
-| `AUTH_REQUIRED` | Not authenticated | Run `gh auth login` |
-| `VALIDATION_FAILED` | Squad has errors | Fix errors with `*validate-squad` |
-| `SQUAD_NOT_FOUND` | Invalid path | Check squad path exists |
-| `MANIFEST_ERROR` | Missing name/version | Update squad.yaml |
-| `PR_ERROR` | GitHub CLI error | Check `gh` is working |
+| `AUTH_REQUIRED` | Não autenticado | Execute `gh auth login` |
+| `VALIDATION_FAILED` | Squad tem erros | Corrija os erros com `*validate-squad` |
+| `SQUAD_NOT_FOUND` | Caminho inválido | Verifique se o path do squad existe |
+| `MANIFEST_ERROR` | name/version ausentes | Atualize squad.yaml |
+| `PR_ERROR` | Erro do GitHub CLI | Verifique se o `gh` está funcionando |
 
-## Requirements
+## Requisitos
 
-### Manifest Fields
+### Campos do Manifest
 
-Required for publishing:
+Obrigatórios para publicação:
 ```yaml
 # squad.yaml
-name: my-squad          # Required
-version: 1.0.0          # Required
-description: "..."      # Recommended
-author: your-name       # Recommended
+name: my-squad          # Obrigatório
+version: 1.0.0          # Obrigatório
+description: "..."      # Recomendado
+author: your-name       # Recomendado
 ```
 
-### Validation Rules
+### Regras de Validação
 
-Squad must pass validation:
-- Valid squad.yaml with required fields
-- Task files in tasks/ directory
-- No critical errors
+O squad deve passar na validação:
+- squad.yaml válido com os campos obrigatórios
+- Arquivos de task no diretório tasks/
+- Nenhum erro crítico
 
-## Implementation
+## Implementação
 
-Uses `SquadPublisher` class from:
+Usa a classe `SquadPublisher` de:
 - `.aiox-core/development/scripts/squad/squad-publisher.js`
 
-## Related Tasks
+## Tasks Relacionadas
 
-- `*validate-squad` - Validate before publishing
-- `*download-squad` - Download published squads
-- `*create-squad` - Create new local squad
+- `*validate-squad` - Validar antes de publicar
+- `*download-squad` - Baixar squads publicados
+- `*create-squad` - Criar novo squad local
 
-## Related Story
+## Story Relacionada
 
 - **SQS-6:** Download & Publish Tasks (Sprint 8)

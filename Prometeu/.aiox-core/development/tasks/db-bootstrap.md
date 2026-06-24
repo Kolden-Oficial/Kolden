@@ -129,57 +129,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** supabase
-  - **Purpose:** PostgreSQL database connection via Supabase client
-  - **Source:** @supabase/supabase-js
+- **Ferramenta:** supabase
+  - **Propósito:** Conexão com banco de dados PostgreSQL via cliente Supabase
+  - **Fonte:** @supabase/supabase-js
 
-- **Tool:** query-validator
-  - **Purpose:** SQL query syntax validation
-  - **Source:** .aiox-core/utils/db-query-validator.js
+- **Ferramenta:** query-validator
+  - **Propósito:** Validação de sintaxe de query SQL
+  - **Fonte:** .aiox-core/utils/db-query-validator.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** db-query.js
-  - **Purpose:** Execute PostgreSQL queries with error handling via Supabase
+  - **Propósito:** Executar queries PostgreSQL com tratamento de erros via Supabase
   - **Language:** JavaScript
   - **Location:** .aiox-core/scripts/db-query.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Connection Failed
-   - **Cause:** Unable to connect to Neo4j database
-   - **Resolution:** Check connection string, credentials, network
-   - **Recovery:** Retry with exponential backoff (max 3 attempts)
+1. **Erro:** Connection Failed
+   - **Causa:** Não foi possível conectar ao banco de dados Neo4j
+   - **Resolução:** Verificar a connection string, as credenciais e a rede
+   - **Recuperação:** Tentar novamente com backoff exponencial (máximo de 3 tentativas)
 
-2. **Error:** Query Syntax Error
-   - **Cause:** Invalid Cypher query syntax
-   - **Resolution:** Validate query syntax before execution
-   - **Recovery:** Return detailed syntax error, suggest fix
+2. **Erro:** Query Syntax Error
+   - **Causa:** Sintaxe de query Cypher inválida
+   - **Resolução:** Validar a sintaxe da query antes da execução
+   - **Recuperação:** Retornar erro de sintaxe detalhado, sugerir correção
 
-3. **Error:** Transaction Rollback
-   - **Cause:** Query violates constraints or timeout
-   - **Resolution:** Review query logic and constraints
-   - **Recovery:** Automatic rollback, preserve data integrity
+3. **Erro:** Transaction Rollback
+   - **Causa:** A query viola constraints ou atinge timeout
+   - **Resolução:** Revisar a lógica da query e as constraints
+   - **Recuperação:** Rollback automático, preservar a integridade dos dados
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-15 min (estimated)
@@ -187,12 +187,12 @@ cost_estimated: $0.003-0.010
 token_usage: ~3,000-10,000 tokens
 ```
 
-**Optimization Notes:**
-- Break into smaller workflows; implement checkpointing; use async processing where possible
+**Notas de Otimização:**
+- Dividir em workflows menores; implementar checkpointing; usar processamento assíncrono sempre que possível
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -208,20 +208,20 @@ updated_at: 2025-11-17
 ---
 
 
-## Process
+## Processo
 
-### 1. Confirm Project Setup
+### 1. Confirmar a Configuração do Projeto
 
-Ask user:
+Pergunte ao usuário:
 
-**Project name**: (e.g., "mmos-platform")
+**Nome do projeto**: (ex.: "mmos-platform")
 
-**Include starter templates?**
-1. Minimal - Directories only
-2. Standard - Directories + READMEs + config
-3. Full - Everything + baseline schema example
+**Incluir templates iniciais?**
+1. Minimal - Apenas diretórios
+2. Standard - Diretórios + READMEs + config
+3. Full - Tudo + exemplo de schema baseline
 
-### 2. Create Directory Structure
+### 2. Criar a Estrutura de Diretórios
 
 ```bash
 mkdir -p supabase/{migrations,seeds,tests,rollback,snapshots,docs}
@@ -235,18 +235,18 @@ echo "✓ Created directories:
   supabase/docs/          - Documentation"
 ```
 
-### 3. Create Core Files
+### 3. Criar os Arquivos Centrais
 
 #### supabase/migrations/README.md
 
 ```markdown
 # Migrations
 
-## Naming: YYYYMMDDHHMMSS_description.sql
+## Nomenclatura: YYYYMMDDHHMMSS_description.sql
 
-Example: 20251026120000_baseline_schema.sql
+Exemplo: 20251026120000_baseline_schema.sql
 
-## Order (within each file):
+## Ordem (dentro de cada arquivo):
 1. Extensions
 2. Tables + Constraints
 3. Functions
@@ -267,14 +267,14 @@ Example: 20251026120000_baseline_schema.sql
 ```markdown
 # Seeds
 
-## Naming: YYYYMMDDHHMMSS_description_seed.sql
+## Nomenclatura: YYYYMMDDHHMMSS_description_seed.sql
 
-## Types:
-- Required: Data app needs to function
-- Test: Sample data for development
-- Reference: Lookup tables (countries, categories)
+## Tipos:
+- Required: Dados que o app precisa para funcionar
+- Test: Dados de exemplo para desenvolvimento
+- Reference: Tabelas de lookup (países, categorias)
 
-## Idempotent pattern:
+## Padrão idempotente:
 INSERT INTO table (id, name) VALUES (1, 'value')
 ON CONFLICT (id) DO NOTHING;
 ```
@@ -284,14 +284,14 @@ ON CONFLICT (id) DO NOTHING;
 ```markdown
 # Tests
 
-## Smoke tests (post-migration validation):
-- Tables exist
-- RLS enabled
-- Policies installed
-- Functions callable
-- Basic queries work
+## Smoke tests (validação pós-migration):
+- Tabelas existem
+- RLS habilitado
+- Políticas instaladas
+- Funções chamáveis
+- Queries básicas funcionam
 
-## Run: *smoke-test
+## Executar: *smoke-test
 ```
 
 #### supabase/rollback/README.md
@@ -299,20 +299,20 @@ ON CONFLICT (id) DO NOTHING;
 ```markdown
 # Rollback
 
-## Snapshots (automatic):
-Created by *apply-migration and *snapshot commands
-Located in: ../snapshots/
+## Snapshots (automáticos):
+Criados pelos comandos *apply-migration e *snapshot
+Localizados em: ../snapshots/
 
-## Manual rollback scripts:
-Write explicit undo operations for complex migrations
+## Scripts de rollback manuais:
+Escreva operações de desfazer explícitas para migrations complexas
 
-Example: YYYYMMDDHHMMSS_rollback_description.sql
+Exemplo: YYYYMMDDHHMMSS_rollback_description.sql
 ```
 
 #### supabase/.gitignore
 
 ```gitignore
-# Local dev
+# Dev local
 .env
 .env.local
 .branches
@@ -322,11 +322,11 @@ Example: YYYYMMDDHHMMSS_rollback_description.sql
 .DS_Store
 Thumbs.db
 
-# Optional: Snapshots (if too large for git)
+# Opcional: Snapshots (se grandes demais para o git)
 # snapshots/*.sql
 ```
 
-### 4. Generate config.toml (if Standard or Full)
+### 4. Gerar config.toml (se Standard ou Full)
 
 ```toml
 # Supabase Local Development Config
@@ -356,13 +356,13 @@ site_url = "http://localhost:3000"
 # See: https://supabase.com/docs/guides/cli/config
 ```
 
-### 5. Create Baseline Schema (if Full option)
+### 5. Criar o Schema Baseline (se opção Full)
 
 #### supabase/migrations/00000000000000_baseline.sql
 
 ```sql
--- Baseline Schema
--- Run after: supabase init
+-- Schema Baseline
+-- Executar após: supabase init
 
 BEGIN;
 
@@ -370,7 +370,7 @@ BEGIN;
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 
--- Example table (customize for your project)
+-- Tabela de exemplo (customize para o seu projeto)
 CREATE TABLE IF NOT EXISTS public.profiles (
     id UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
     username TEXT UNIQUE,
@@ -380,7 +380,7 @@ CREATE TABLE IF NOT EXISTS public.profiles (
     updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Updated_at trigger
+-- Trigger de updated_at
 CREATE OR REPLACE FUNCTION public.handle_updated_at()
 RETURNS TRIGGER AS $$
 BEGIN
@@ -415,12 +415,12 @@ GRANT SELECT, INSERT, UPDATE ON public.profiles TO authenticated;
 COMMIT;
 ```
 
-### 6. Create Initial Smoke Test
+### 6. Criar o Smoke Test Inicial
 
 #### supabase/tests/smoke_test.sql
 
 ```sql
--- Basic smoke test
+-- Smoke test básico
 SET client_min_messages = warning;
 
 \echo 'Checking tables...'
@@ -438,32 +438,32 @@ WHERE schemaname='public';
 \echo '✓ Smoke test complete'
 ```
 
-### 7. Create Migration Log
+### 7. Criar o Log de Migration
 
 #### supabase/docs/migration-log.md
 
 ```markdown
 # Migration Log
 
-## Format:
-### Version X.Y.Z - Description (Date)
+## Formato:
+### Version X.Y.Z - Descrição (Data)
 - Migration: filename.sql
 - Status: ✅ Success / ❌ Failed / ⏪ Rolled Back
-- Changes: What changed
-- Rollback: How to undo
+- Changes: O que mudou
+- Rollback: Como desfazer
 
 ---
 
-## Baseline (Initial)
+## Baseline (Inicial)
 - Migration: 00000000000000_baseline.sql
 - Status: ⏳ Pending
-- Changes: Initial project structure
+- Changes: Estrutura inicial do projeto
 - Rollback: N/A (baseline)
 ```
 
 ---
 
-## Success Output
+## Saída de Sucesso
 
 ```
 ✅ Supabase Project Bootstrapped
@@ -493,31 +493,31 @@ Documentation:
 
 ---
 
-## Environment Setup
+## Configuração de Ambiente
 
-Create `.env` file in project root:
+Crie o arquivo `.env` na raiz do projeto:
 
 ```bash
-# Supabase Database Connection
-# Get from: https://app.supabase.com/project/_/settings/database
+# Conexão com o Banco de Dados Supabase
+# Obtenha em: https://app.supabase.com/project/_/settings/database
 
-# Pooler (recommended for migrations)
+# Pooler (recomendado para migrations)
 SUPABASE_DB_URL="postgresql://postgres.[PASSWORD]@[PROJECT-REF].supabase.co:6543/postgres?sslmode=require"
 
-# Direct (for backups/analysis)
+# Direto (para backups/análise)
 # SUPABASE_DB_URL="postgresql://postgres.[PASSWORD]@[PROJECT-REF].supabase.co:5432/postgres?sslmode=require"
 ```
 
-**Security**:
-- ✅ Added to .gitignore
-- ✅ Use pooler (port 6543)
-- ✅ Require SSL
+**Segurança**:
+- ✅ Adicionado ao .gitignore
+- ✅ Usar pooler (porta 6543)
+- ✅ Exigir SSL
 
 ---
 
-## Project Options
+## Opções de Projeto
 
-### Minimal (Directories Only)
+### Minimal (Apenas Diretórios)
 ```
 supabase/
 ├── migrations/
@@ -527,7 +527,7 @@ supabase/
 ├── snapshots/
 └── docs/
 ```
-**Use for**: Existing projects, simple setups
+**Use para**: Projetos existentes, configurações simples
 
 ### Standard (+ READMEs + Config)
 ```
@@ -536,56 +536,56 @@ supabase/
 + .gitignore
 + migration-log.md
 ```
-**Use for**: New projects, team environments
+**Use para**: Projetos novos, ambientes de equipe
 
-### Full (+ Baseline Schema)
+### Full (+ Schema Baseline)
 ```
 + baseline.sql migration
 + smoke_test.sql
 + Example profiles table
 + RLS policies
 ```
-**Use for**: Greenfield projects, learning
+**Use para**: Projetos greenfield, aprendizado
 
 ---
 
-## Integration with Existing Projects
+## Integração com Projetos Existentes
 
-If `supabase/` already exists:
+Se `supabase/` já existir:
 
 ```bash
-# Backup existing
+# Fazer backup do existente
 mv supabase supabase.backup
 
-# Bootstrap new
+# Bootstrap do novo
 *bootstrap
 
-# Merge as needed
+# Mesclar conforme necessário
 cp supabase.backup/migrations/* supabase/migrations/
 ```
 
 ---
 
-## Customization
+## Customização
 
-### For Your Project
+### Para o Seu Projeto
 
-Replace baseline.sql with your tables:
-- Copy schema from existing DB
-- Or design with: `*create-schema`
-- Then create migration file
+Substitua o baseline.sql pelas suas tabelas:
+- Copie o schema de um DB existente
+- Ou projete com: `*create-schema`
+- Depois crie o arquivo de migration
 
-### Team Standards
+### Padrões da Equipe
 
-Edit READMEs to add:
-- Team-specific naming conventions
-- Required reviewers for migrations
-- Deployment procedures
-- Contact information
+Edite os READMEs para adicionar:
+- Convenções de nomenclatura específicas da equipe
+- Revisores obrigatórios para migrations
+- Procedimentos de deploy
+- Informações de contato
 
-### CI/CD Integration
+### Integração CI/CD
 
-Add to pipeline:
+Adicione ao pipeline:
 
 ```yaml
 # .github/workflows/db-test.yml
@@ -597,46 +597,46 @@ Add to pipeline:
 
 ---
 
-## Next Steps After Bootstrap
+## Próximos Passos Após o Bootstrap
 
-1. **Environment**: Set SUPABASE_DB_URL
-2. **Validate**: `*env-check`
-3. **Design**: `*create-schema` (or use existing)
-4. **Migrate**: `*apply-migration baseline.sql`
-5. **Test**: `*smoke-test`
+1. **Ambiente**: Defina SUPABASE_DB_URL
+2. **Validar**: `*env-check`
+3. **Projetar**: `*create-schema` (ou use o existente)
+4. **Migrar**: `*apply-migration baseline.sql`
+5. **Testar**: `*smoke-test`
 6. **Snapshot**: `*snapshot baseline`
-7. **Document**: Update migration-log.md
+7. **Documentar**: Atualize o migration-log.md
 
 ---
 
-## Common Issues
+## Problemas Comuns
 
 ### "Directory already exists"
 
-**Problem**: supabase/ folder exists  
-**Options**:
-1. Backup and replace (recommended)
-2. Merge manually
-3. Choose different directory
+**Problema**: a pasta supabase/ existe  
+**Opções**:
+1. Fazer backup e substituir (recomendado)
+2. Mesclar manualmente
+3. Escolher um diretório diferente
 
 ### "No permission to create directories"
 
-**Problem**: Insufficient file permissions  
-**Fix**: Check you're in project root with write access
+**Problema**: Permissões de arquivo insuficientes  
+**Correção**: Verifique se você está na raiz do projeto com acesso de escrita
 
 ### "Config conflicts with existing Supabase project"
 
-**Problem**: Already using Supabase CLI  
-**Solution**: Bootstrap is compatible with Supabase CLI
-- Keep existing config
-- Use bootstrap for organization only
+**Problema**: Já usando o Supabase CLI  
+**Solução**: O Bootstrap é compatível com o Supabase CLI
+- Mantenha a configuração existente
+- Use o bootstrap apenas para organização
 
 ---
 
-## Related Commands
+## Comandos Relacionados
 
-- `*create-schema` - Design schema interactively
-- `*apply-migration {path}` - Run first migration
-- `*smoke-test` - Validate setup
-- `*snapshot baseline` - Create initial snapshot
-- `*env-check` - Validate environment
+- `*create-schema` - Projetar o schema interativamente
+- `*apply-migration {path}` - Executar a primeira migration
+- `*smoke-test` - Validar a configuração
+- `*snapshot baseline` - Criar o snapshot inicial
+- `*env-check` - Validar o ambiente

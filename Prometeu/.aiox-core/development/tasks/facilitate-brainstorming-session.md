@@ -1,119 +1,119 @@
 ---
 id: facilitate-brainstorming-session
-name: Facilitar Sessão de Brainstorming
+name: Facilitar SessÃ£o de Brainstorming
 agent: aiox-master
 category: collaboration
 complexity: medium
 tools:
-  - clickup        # Capturar ideias e organizá-las
-  - mcp            # Chamar agentes especializados para expertise de domínio
+  - clickup        # Capturar ideias e organizÃ¡-las
+  - mcp            # Chamar agentes especializados para expertise de domÃ­nio
 checklists:
   - aiox-master-checklist.md
 ---
 
-# Facilitar Sessão de Brainstorming
+# Facilitar SessÃ£o de Brainstorming
 
-## Propósito
+## PropÃ³sito
 
-Conduzir uma sessão de brainstorming estruturada com múltiplos agentes de IA (e, opcionalmente, participantes humanos) para gerar, categorizar e priorizar ideias para funcionalidades, soluções ou decisões estratégicas.
+Conduzir uma sessÃ£o de brainstorming estruturada com mÃºltiplos agentes de IA (e, opcionalmente, participantes humanos) para gerar, categorizar e priorizar ideias para funcionalidades, soluÃ§Ãµes ou decisÃµes estratÃ©gicas.
 
 ## Entrada
 
-### Parâmetros Obrigatórios
+### ParÃ¢metros ObrigatÃ³rios
 
 - **topic**: `string`
-  - **Descrição**: O desafio, a oportunidade ou a pergunta sobre a qual fazer o brainstorming
-  - **Exemplo**: "Como podemos melhorar o onboarding de usuários no AIOX?"
-  - **Validação**: Deve ter pelo menos 20 caracteres
+  - **DescriÃ§Ã£o**: O desafio, a oportunidade ou a pergunta sobre a qual fazer o brainstorming
+  - **Exemplo**: "Como podemos melhorar o onboarding de usuÃ¡rios no AIOX?"
+  - **ValidaÃ§Ã£o**: Deve ter pelo menos 20 caracteres
 
 - **session_goal**: `string`
-  - **Descrição**: Qual resultado é desejado desta sessão
-  - **Opções**: `"ideation"` (gerar muitas ideias), `"solution"` (resolver um problema), `"strategy"` (planejamento estratégico)
-  - **Padrão**: `"ideation"`
+  - **DescriÃ§Ã£o**: Qual resultado Ã© desejado desta sessÃ£o
+  - **OpÃ§Ãµes**: `"ideation"` (gerar muitas ideias), `"solution"` (resolver um problema), `"strategy"` (planejamento estratÃ©gico)
+  - **PadrÃ£o**: `"ideation"`
 
-### Parâmetros Opcionais
+### ParÃ¢metros Opcionais
 
 - **participating_agents**: `array<string>`
-  - **Descrição**: IDs de agentes para convidar para a sessão
-  - **Padrão**: Auto-seleção com base no tópico (usando análise breve)
+  - **DescriÃ§Ã£o**: IDs de agentes para convidar para a sessÃ£o
+  - **PadrÃ£o**: Auto-seleÃ§Ã£o com base no tÃ³pico (usando anÃ¡lise breve)
   - **Exemplo**: `["po", "architect", "ux-expert", "github-devops"]`
 
 - **time_limit**: `number`
-  - **Descrição**: Duração da sessão em minutos
-  - **Padrão**: `30`
+  - **DescriÃ§Ã£o**: DuraÃ§Ã£o da sessÃ£o em minutos
+  - **PadrÃ£o**: `30`
   - **Faixa**: `10-60`
 
 - **output_format**: `string`
-  - **Descrição**: Como organizar a saída final
-  - **Opções**: `"categorized"` (por tema), `"prioritized"` (por valor), `"actionable"` (com próximos passos)
-  - **Padrão**: `"categorized"`
+  - **DescriÃ§Ã£o**: Como organizar a saÃ­da final
+  - **OpÃ§Ãµes**: `"categorized"` (por tema), `"prioritized"` (por valor), `"actionable"` (com prÃ³ximos passos)
+  - **PadrÃ£o**: `"categorized"`
 
 - **context_documents**: `array<string>`
-  - **Descrição**: Caminhos de arquivo opcionais para contexto (PRD, backlog, documentos de arquitetura)
+  - **DescriÃ§Ã£o**: Caminhos de arquivo opcionais para contexto (PRD, backlog, documentos de arquitetura)
   - **Exemplo**: `["docs/prd.md", "docs/backlog.md"]`
 
-## Saída
+## SaÃ­da
 
 - **ideas**: `array<object>`
   - **Estrutura**: `{ id, text, source_agent, category, priority, rationale }`
-  - **Descrição**: Todas as ideias geradas com metadados
+  - **DescriÃ§Ã£o**: Todas as ideias geradas com metadados
 
 - **categories**: `array<object>`
   - **Estrutura**: `{ name, ideas_count, top_ideas }`
-  - **Descrição**: Ideias agrupadas por tema
+  - **DescriÃ§Ã£o**: Ideias agrupadas por tema
 
 - **prioritized_recommendations**: `array<object>`
   - **Estrutura**: `{ idea, value_score, effort_estimate, roi, next_steps }`
-  - **Descrição**: As 5-10 melhores ideias com próximos passos acionáveis
+  - **DescriÃ§Ã£o**: As 5-10 melhores ideias com prÃ³ximos passos acionÃ¡veis
 
 - **session_summary**: `object`
   - **Estrutura**: `{ topic, duration, agents_participated, ideas_generated, key_insights }`
-  - **Descrição**: Metadados e insights da sessão
+  - **DescriÃ§Ã£o**: Metadados e insights da sessÃ£o
 
 - **clickup_board_url**: `string` (opcional)
-  - **Descrição**: Quadro do ClickUp com as ideias organizadas (se a integração com o ClickUp estiver habilitada)
+  - **DescriÃ§Ã£o**: Quadro do ClickUp com as ideias organizadas (se a integraÃ§Ã£o com o ClickUp estiver habilitada)
 
 ## Processo
 
-### Fase 1: Configuração e Carregamento de Contexto (5 min)
+### Fase 1: ConfiguraÃ§Ã£o e Carregamento de Contexto (5 min)
 
 1. **Carregar Contexto**
    - Se `context_documents` for fornecido, ler e resumir os pontos-chave
-   - Extrair restrições, requisitos ou objetivos relevantes
+   - Extrair restriÃ§Ãµes, requisitos ou objetivos relevantes
 
 2. **Selecionar Agentes Participantes**
-   - Se `participating_agents` não for fornecido:
-     - Analisar o tópico usando análise breve
-     - Identificar domínios relevantes (ex.: "user onboarding" → ux-expert, po, copywriter)
+   - Se `participating_agents` nÃ£o for fornecido:
+     - Analisar o tÃ³pico usando anÃ¡lise breve
+     - Identificar domÃ­nios relevantes (ex.: "user onboarding" â†’ ux-expert, po, copywriter)
      - Auto-selecionar de 3 a 5 agentes apropriados
-   - Log: "✅ Participantes da sessão: [lista de agentes]"
+   - Log: "âœ… Participantes da sessÃ£o: [lista de agentes]"
 
-3. **Definir a Estrutura da Sessão**
+3. **Definir a Estrutura da SessÃ£o**
    - Com base em `session_goal`:
-     - **Ideation**: Pensamento divergente (gerar o máximo de ideias)
+     - **Ideation**: Pensamento divergente (gerar o mÃ¡ximo de ideias)
      - **Solution**: Pensamento convergente (avaliar e refinar)
      - **Strategy**: Frameworks estruturados (SWOT, OKRs, etc.)
 
-### Fase 2: Pensamento Divergente - Geração de Ideias (10-15 min)
+### Fase 2: Pensamento Divergente - GeraÃ§Ã£o de Ideias (10-15 min)
 
 4. **Rodada 1: Ideias Iniciais (5 min)**
    - Solicitar a cada agente: "Gere de 3 a 5 ideias para: {topic}"
    - Coletar as respostas
-   - Sem avaliação ainda (brainstorming puro)
+   - Sem avaliaÃ§Ã£o ainda (brainstorming puro)
 
 5. **Rodada 2: Construir sobre as Ideias (5 min)**
    - Compartilhar todas as ideias com os agentes
-   - Solicitar: "Construa sobre ou remixe as ideias existentes. Gere de 2 a 3 novas ideias inspiradas no que você vê."
+   - Solicitar: "Construa sobre ou remixe as ideias existentes. Gere de 2 a 3 novas ideias inspiradas no que vocÃª vÃª."
    - Coletar as respostas
 
 6. **Rodada 3: Cartas Coringa (2 min)**
-   - Solicitar: "Gere de 1 a 2 ideias não convencionais ou do tipo 'e se?'"
+   - Solicitar: "Gere de 1 a 2 ideias nÃ£o convencionais ou do tipo 'e se?'"
    - Encorajar a tomada de risco criativo
 
-### Fase 3: Pensamento Convergente - Categorização (5-10 min)
+### Fase 3: Pensamento Convergente - CategorizaÃ§Ã£o (5-10 min)
 
 7. **Categorizar Ideias**
-   - Usar IA para identificar temas/padrões
+   - Usar IA para identificar temas/padrÃµes
    - Agrupar as ideias em 3 a 7 categorias
    - Exemplos de categorias: "Quick Wins", "Big Bets", "Research Needed", "Technical Solutions", "UX Improvements"
 
@@ -121,81 +121,81 @@ Conduzir uma sessão de brainstorming estruturada com múltiplos agentes de IA (
    - Identificar ideias similares
    - Mesclar ou vincular conceitos relacionados
 
-### Fase 4: Avaliação e Priorização (5-10 min)
+### Fase 4: AvaliaÃ§Ã£o e PriorizaÃ§Ã£o (5-10 min)
 
 9. **Pontuar Ideias** (se `output_format: "prioritized"`)
-   - Critérios:
-     - **Valor**: Impacto sobre usuários/negócio (1-10)
-     - **Esforço**: Complexidade de desenvolvimento (1-10)
-     - **ROI**: Razão Valor/Esforço
-     - **Alinhamento**: Aderência à estratégia/objetivos (1-10)
-   - Calcular as pontuações agregadas
+   - CritÃ©rios:
+     - **Valor**: Impacto sobre usuÃ¡rios/negÃ³cio (1-10)
+     - **EsforÃ§o**: Complexidade de desenvolvimento (1-10)
+     - **ROI**: RazÃ£o Valor/EsforÃ§o
+     - **Alinhamento**: AderÃªncia Ã  estratÃ©gia/objetivos (1-10)
+   - Calcular as pontuaÃ§Ãµes agregadas
 
 10. **Selecionar as Melhores Ideias**
-    - Identificar as 5-10 melhores ideias com base nas pontuações
+    - Identificar as 5-10 melhores ideias com base nas pontuaÃ§Ãµes
     - Para cada uma, gerar:
-      - **Justificativa**: Por que esta ideia é valiosa
-      - **Próximos Passos**: Ações concretas para persegui-la
+      - **Justificativa**: Por que esta ideia Ã© valiosa
+      - **PrÃ³ximos Passos**: AÃ§Ãµes concretas para persegui-la
 
-### Fase 5: Documentação e Acionabilidade (5 min)
+### Fase 5: DocumentaÃ§Ã£o e Acionabilidade (5 min)
 
-11. **Criar Relatório da Sessão**
+11. **Criar RelatÃ³rio da SessÃ£o**
     - Resumo de todas as ideias
-    - Visão categorizada
-    - Recomendações priorizadas
-    - Metadados da sessão
+    - VisÃ£o categorizada
+    - RecomendaÃ§Ãµes priorizadas
+    - Metadados da sessÃ£o
 
 12. **Exportar para o ClickUp** (opcional)
-    - Se a integração com o ClickUp estiver habilitada:
+    - Se a integraÃ§Ã£o com o ClickUp estiver habilitada:
       - Criar o quadro: "Brainstorm: {topic}"
       - Adicionar ideias como tarefas com as categorias como tags
-      - Vincular ao relatório da sessão
+      - Vincular ao relatÃ³rio da sessÃ£o
 
 ## Checklist
 
-### Pré-condições
+### PrÃ©-condiÃ§Ãµes
 
-- [ ] O tópico é bem definido e específico o suficiente
-  - **Validação**: `topic.length >= 20 && topic.includes('?') || topic.includes('how') || topic.includes('what')`
-  - **Erro**: "Tópico muito vago. Forneça uma pergunta ou um desafio específico."
+- [ ] O tÃ³pico Ã© bem definido e especÃ­fico o suficiente
+  - **ValidaÃ§Ã£o**: `topic.length >= 20 && topic.includes('?') || topic.includes('how') || topic.includes('what')`
+  - **Erro**: "TÃ³pico muito vago. ForneÃ§a uma pergunta ou um desafio especÃ­fico."
 
-- [ ] O objetivo da sessão é válido
-  - **Validação**: `["ideation", "solution", "strategy"].includes(session_goal)`
+- [ ] O objetivo da sessÃ£o Ã© vÃ¡lido
+  - **ValidaÃ§Ã£o**: `["ideation", "solution", "strategy"].includes(session_goal)`
 
 - [ ] Os agentes participantes existem (se fornecidos)
-  - **Validação**: Verificar os IDs dos agentes contra os agentes disponíveis
-  - **Erro**: "Agente '{agent_id}' não encontrado"
+  - **ValidaÃ§Ã£o**: Verificar os IDs dos agentes contra os agentes disponÃ­veis
+  - **Erro**: "Agente '{agent_id}' nÃ£o encontrado"
 
-### Pós-condições
+### PÃ³s-condiÃ§Ãµes
 
 - [ ] Pelo menos 10 ideias geradas
-  - **Validação**: `ideas.length >= 10`
-  - **Erro**: "Ideias insuficientes. Estenda a sessão ou adicione mais agentes."
+  - **ValidaÃ§Ã£o**: `ideas.length >= 10`
+  - **Erro**: "Ideias insuficientes. Estenda a sessÃ£o ou adicione mais agentes."
 
-- [ ] Todas as ideias têm categorias
-  - **Validação**: `ideas.every(i => i.category)`
+- [ ] Todas as ideias tÃªm categorias
+  - **ValidaÃ§Ã£o**: `ideas.every(i => i.category)`
 
-- [ ] As 5 melhores ideias têm próximos passos
-  - **Validação**: `prioritized_recommendations.slice(0, 5).every(r => r.next_steps)`
+- [ ] As 5 melhores ideias tÃªm prÃ³ximos passos
+  - **ValidaÃ§Ã£o**: `prioritized_recommendations.slice(0, 5).every(r => r.next_steps)`
 
-- [ ] O resumo da sessão está completo
-  - **Validação**: `session_summary.ideas_generated > 0 && session_summary.agents_participated.length > 0`
+- [ ] O resumo da sessÃ£o estÃ¡ completo
+  - **ValidaÃ§Ã£o**: `session_summary.ideas_generated > 0 && session_summary.agents_participated.length > 0`
 
-### Critérios de Aceite
+### CritÃ©rios de Aceite
 
-- [ ] A sessão produz recomendações acionáveis
+- [ ] A sessÃ£o produz recomendaÃ§Ãµes acionÃ¡veis
   - **Tipo**: acceptance
-  - **Verificação Manual**: true
-  - **Critério**: O usuário consegue agir imediatamente sobre pelo menos 3 ideias
+  - **VerificaÃ§Ã£o Manual**: true
+  - **CritÃ©rio**: O usuÃ¡rio consegue agir imediatamente sobre pelo menos 3 ideias
 
-- [ ] As ideias são diversas e cobrem múltiplas perspectivas
+- [ ] As ideias sÃ£o diversas e cobrem mÃºltiplas perspectivas
   - **Tipo**: acceptance
-  - **Verificação Manual**: false
+  - **VerificaÃ§Ã£o Manual**: false
   - **Teste**: `categories.length >= 3`
 
 ## Templates
 
-### Template de Relatório da Sessão
+### Template de RelatÃ³rio da SessÃ£o
 
 ```markdown
 # Brainstorming Session: {topic}
@@ -251,72 +251,72 @@ ${rec.next_steps.map(step => `- ${step}`).join('\n')}
 ## Ferramentas
 
 - **clickup**:
-  - **Versão**: 1.0.0
+  - **VersÃ£o**: 1.0.0
   - **Usado Para**: Exportar ideias para um quadro do ClickUp para acompanhamento
-  - **Opcional**: Sim (o usuário pode optar por não usar)
+  - **Opcional**: Sim (o usuÃ¡rio pode optar por nÃ£o usar)
 
 - **mcp**:
-  - **Versão**: 1.0.0
-  - **Usado Para**: Chamar agentes especializados para ideias específicas de domínio
-  - **Compartilhado Com**: Todas as sessões de brainstorming
+  - **VersÃ£o**: 1.0.0
+  - **Usado Para**: Chamar agentes especializados para ideias especÃ­ficas de domÃ­nio
+  - **Compartilhado Com**: Todas as sessÃµes de brainstorming
 
 ## Performance
 
-- **Duração Esperada**: 30 minutos (configurável: 10-60 min)
+- **DuraÃ§Ã£o Esperada**: 30 minutos (configurÃ¡vel: 10-60 min)
 - **Custo Estimado**: $0.05-0.15 (depende da quantidade de agentes e rodadas)
-- **Cacheável**: false (as sessões são únicas)
-- **Paralelizável**: true (os agentes podem gerar ideias simultaneamente)
+- **CacheÃ¡vel**: false (as sessÃµes sÃ£o Ãºnicas)
+- **ParalelizÃ¡vel**: true (os agentes podem gerar ideias simultaneamente)
 
 ## Tratamento de Erros
 
-- **Estratégia**: fallback
+- **EstratÃ©gia**: fallback
 - **Fallback**: Se um agente falhar, continuar com os agentes restantes
 - **Retry**:
-  - **Máximo de Tentativas**: 2
+  - **MÃ¡ximo de Tentativas**: 2
   - **Backoff**: linear
   - **Backoff MS**: 1000
 - **Abortar Workflow**: false (continuar mesmo se alguns agentes falharem)
-- **Notificação**: log + relatório de resumo
+- **NotificaÃ§Ã£o**: log + relatÃ³rio de resumo
 
 ## Metadata
 
 - **Story**: N/A (capacidade do framework)
-- **Versão**: 1.0.0
-- **Dependências**: Nenhuma
+- **VersÃ£o**: 1.0.0
+- **DependÃªncias**: Nenhuma
 - **Autor**: Brad Frost Clone
 - **Criado**: 2025-11-13
 - **Atualizado**: 2025-11-13
 
 ---
 
-## Modos de Execução
+## Modos de ExecuÃ§Ã£o
 
-**Escolha seu modo de execução:**
+**Escolha seu modo de execuÃ§Ã£o:**
 
-### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
-- Tomada de decisão autônoma com registro em log
-- Interação mínima com o usuário
-- **Melhor para:** Tarefas simples e determinísticas
+### 1. Modo YOLO - RÃ¡pido, AutÃ´nomo (0-1 prompts)
+- Tomada de decisÃ£o autÃ´noma com registro em log
+- InteraÃ§Ã£o mÃ­nima com o usuÃ¡rio
+- **Melhor para:** Tarefas simples e determinÃ­sticas
 
-### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
-- Checkpoints de decisão explícitos
-- Explicações educativas
-- **Melhor para:** Aprendizado, decisões complexas
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃƒO]**
+- Checkpoints de decisÃ£o explÃ­citos
+- ExplicaÃ§Ãµes educativas
+- **Melhor para:** Aprendizado, decisÃµes complexas
 
-### 3. Planejamento Pré-Voo - Planejamento Abrangente Antecipado
-- Fase de análise da tarefa (identificar todas as ambiguidades)
-- Execução sem ambiguidade
-- **Melhor para:** Requisitos ambíguos, trabalho crítico
+### 3. Planejamento PrÃ©-Voo - Planejamento Abrangente Antecipado
+- Fase de anÃ¡lise da tarefa (identificar todas as ambiguidades)
+- ExecuÃ§Ã£o sem ambiguidade
+- **Melhor para:** Requisitos ambÃ­guos, trabalho crÃ­tico
 
-**Parâmetro:** `mode` (opcional, padrão: `interactive`)
+**ParÃ¢metro:** `mode` (opcional, padrÃ£o: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: facilitateBrainstormingSession()
-responsável: Atlas (Decoder)
+responsÃ¡vel: Atlas (Decoder)
 responsavel_type: Agente
 atomic_layer: Strategy
 
@@ -324,22 +324,22 @@ atomic_layer: Strategy
 - campo: task
   tipo: string
   origem: User Input
-  obrigatório: true
-  validação: Must be registered task
+  obrigatÃ³rio: true
+  validaÃ§Ã£o: Must be registered task
 
 - campo: parameters
   tipo: object
   origem: User Input
-  obrigatório: false
-  validação: Valid task parameters
+  obrigatÃ³rio: false
+  validaÃ§Ã£o: Valid task parameters
 
 - campo: mode
   tipo: string
   origem: User Input
-  obrigatório: false
-  validação: yolo|interactive|pre-flight
+  obrigatÃ³rio: false
+  validaÃ§Ã£o: yolo|interactive|pre-flight
 
-**Saída:**
+**SaÃ­da:**
 - campo: execution_result
   tipo: object
   destino: Memory
@@ -358,9 +358,9 @@ atomic_layer: Strategy
 
 ---
 
-## Pré-Condições
+## PrÃ©-CondiÃ§Ãµes
 
-**Propósito:** Validar pré-requisitos ANTES da execução da tarefa (bloqueante)
+**PropÃ³sito:** Validar prÃ©-requisitos ANTES da execuÃ§Ã£o da tarefa (bloqueante)
 
 **Checklist:**
 
@@ -369,16 +369,16 @@ pre-conditions:
   - [ ] Task is registered; required parameters provided; dependencies met
     tipo: pre-condition
     blocker: true
-    validação: |
+    validaÃ§Ã£o: |
       Check task is registered; required parameters provided; dependencies met
     error_message: "Pre-condition failed: Task is registered; required parameters provided; dependencies met"
 ```
 
 ---
 
-## Pós-Condições
+## PÃ³s-CondiÃ§Ãµes
 
-**Propósito:** Validar o sucesso da execução APÓS a conclusão da tarefa
+**PropÃ³sito:** Validar o sucesso da execuÃ§Ã£o APÃ“S a conclusÃ£o da tarefa
 
 **Checklist:**
 
@@ -387,16 +387,16 @@ post-conditions:
   - [ ] Task completed; exit code 0; expected outputs created
     tipo: post-condition
     blocker: true
-    validação: |
+    validaÃ§Ã£o: |
       Verify task completed; exit code 0; expected outputs created
     error_message: "Post-condition failed: Task completed; exit code 0; expected outputs created"
 ```
 
 ---
 
-## Critérios de Aceite
+## CritÃ©rios de Aceite
 
-**Propósito:** Critérios definitivos de aprovação/reprovação para conclusão da tarefa
+**PropÃ³sito:** CritÃ©rios definitivos de aprovaÃ§Ã£o/reprovaÃ§Ã£o para conclusÃ£o da tarefa
 
 **Checklist:**
 
@@ -405,7 +405,7 @@ acceptance-criteria:
   - [ ] Task completed as expected; side effects documented
     tipo: acceptance-criterion
     blocker: true
-    validação: |
+    validaÃ§Ã£o: |
       Assert task completed as expected; side effects documented
     error_message: "Acceptance criterion not met: Task completed as expected; side effects documented"
 ```
@@ -414,41 +414,41 @@ acceptance-criteria:
 
 ## Scripts
 
-**Código específico do agente para esta tarefa:**
+**CÃ³digo especÃ­fico do agente para esta tarefa:**
 
 - **Script:** execute-task.js
-  - **Propósito:** Wrapper genérico de execução de tarefas
+  - **PropÃ³sito:** Wrapper genÃ©rico de execuÃ§Ã£o de tarefas
   - **Linguagem:** JavaScript
-  - **Localização:** .aiox-core/scripts/execute-task.js
+  - **LocalizaÃ§Ã£o:** .aiox-core/scripts/execute-task.js
 
 ---
 
 ## Tratamento de Erros
 
-**Estratégia:** retry
+**EstratÃ©gia:** retry
 
 **Erros Comuns:**
 
-1. **Erro:** Task Não Encontrada
-   - **Causa:** A tarefa especificada não está registrada no sistema
-   - **Resolução:** Verifique o nome e o registro da tarefa
-   - **Recuperação:** Liste as tarefas disponíveis, sugira similares
+1. **Erro:** Task NÃ£o Encontrada
+   - **Causa:** A tarefa especificada nÃ£o estÃ¡ registrada no sistema
+   - **ResoluÃ§Ã£o:** Verifique o nome e o registro da tarefa
+   - **RecuperaÃ§Ã£o:** Liste as tarefas disponÃ­veis, sugira similares
 
-2. **Erro:** Parâmetros Inválidos
-   - **Causa:** Os parâmetros da tarefa não correspondem ao schema esperado
-   - **Resolução:** Valide os parâmetros em relação à definição da tarefa
-   - **Recuperação:** Forneça um template de parâmetros, rejeite a execução
+2. **Erro:** ParÃ¢metros InvÃ¡lidos
+   - **Causa:** Os parÃ¢metros da tarefa nÃ£o correspondem ao schema esperado
+   - **ResoluÃ§Ã£o:** Valide os parÃ¢metros em relaÃ§Ã£o Ã  definiÃ§Ã£o da tarefa
+   - **RecuperaÃ§Ã£o:** ForneÃ§a um template de parÃ¢metros, rejeite a execuÃ§Ã£o
 
-3. **Erro:** Timeout de Execução
-   - **Causa:** A tarefa excede o tempo máximo de execução
-   - **Resolução:** Otimize a tarefa ou aumente o timeout
-   - **Recuperação:** Encerre a tarefa, limpe os recursos, registre o estado
+3. **Erro:** Timeout de ExecuÃ§Ã£o
+   - **Causa:** A tarefa excede o tempo mÃ¡ximo de execuÃ§Ã£o
+   - **ResoluÃ§Ã£o:** Otimize a tarefa ou aumente o timeout
+   - **RecuperaÃ§Ã£o:** Encerre a tarefa, limpe os recursos, registre o estado
 
 ---
 
 ## Performance
 
-**Métricas Esperadas:**
+**MÃ©tricas Esperadas:**
 
 ```yaml
 duration_expected: 5-20 min (estimated)
@@ -456,8 +456,8 @@ cost_estimated: $0.003-0.015
 token_usage: ~2,000-8,000 tokens
 ```
 
-**Notas de Otimização:**
-- Análise iterativa com limites de profundidade; cache de resultados intermediários; agrupamento de operações similares
+**Notas de OtimizaÃ§Ã£o:**
+- AnÃ¡lise iterativa com limites de profundidade; cache de resultados intermediÃ¡rios; agrupamento de operaÃ§Ãµes similares
 
 ---
 
@@ -479,39 +479,39 @@ updated_at: 2025-11-17
 
 ## Exemplos de Uso
 
-### Exemplo 1: Ideação de Funcionalidades
+### Exemplo 1: IdeaÃ§Ã£o de Funcionalidades
 
 ```bash
 aiox activate Maestro
-aiox brainstorm "Como podemos melhorar o onboarding de usuários do AIOX para usuários não técnicos?"
+aiox brainstorm "Como podemos melhorar o onboarding de usuÃ¡rios do AIOX para usuÃ¡rios nÃ£o tÃ©cnicos?"
 ```
 
-**Saída**: 25 ideias em 5 categorias, as 10 melhores priorizadas com próximos passos
+**SaÃ­da**: 25 ideias em 5 categorias, as 10 melhores priorizadas com prÃ³ximos passos
 
-### Exemplo 2: Resolução de Problemas com Agentes Específicos
+### Exemplo 2: ResoluÃ§Ã£o de Problemas com Agentes EspecÃ­ficos
 
 ```bash
-aiox brainstorm "Como reduzir a latência da API em consultas ao banco de dados?" \
+aiox brainstorm "Como reduzir a latÃªncia da API em consultas ao banco de dados?" \
   --agents="db-sage,architect,github-devops" \
   --goal="solution" \
   --format="actionable"
 ```
 
-**Saída**: Soluções técnicas focadas com passos de implementação
+**SaÃ­da**: SoluÃ§Ãµes tÃ©cnicas focadas com passos de implementaÃ§Ã£o
 
-### Exemplo 3: Planejamento Estratégico
+### Exemplo 3: Planejamento EstratÃ©gico
 
 ```bash
-aiox brainstorm "Qual deveria ser nossa estratégia de expansão open-source para o Q1 de 2026?" \
+aiox brainstorm "Qual deveria ser nossa estratÃ©gia de expansÃ£o open-source para o Q1 de 2026?" \
   --agents="po,architect,github-devops" \
   --goal="strategy" \
   --context="docs/prd.md,docs/open-source-roadmap.md"
 ```
 
-**Saída**: Recomendações estratégicas alinhadas com os planos existentes
+**SaÃ­da**: RecomendaÃ§Ãµes estratÃ©gicas alinhadas com os planos existentes
 
 ---
 
 **Tarefas Relacionadas:**
-- `create-next-story` - Converter ideias em stories acionáveis
+- `create-next-story` - Converter ideias em stories acionÃ¡veis
 - `analyze-framework` - Analisar as capacidades do framework em busca de ideias de melhoria

@@ -2,62 +2,62 @@
 
 > Task ID: brad-export-design-tokens-dtcg  
 > Agente: Brad (Arquiteto de Design System)  
-> Versão: 1.0.0
+> VersÃ£o: 1.0.0
 
-## Modos de Execução
+## Modos de ExecuÃ§Ã£o
 
-**Escolha seu modo de execução:**
+**Escolha seu modo de execuÃ§Ã£o:**
 
-### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
-- Tomada de decisão autônoma com registro em log
-- Interação mínima com o usuário
-- **Melhor para:** Tarefas simples e determinísticas
+### 1. Modo YOLO - RÃ¡pido, AutÃ´nomo (0-1 prompts)
+- Tomada de decisÃ£o autÃ´noma com registro em log
+- InteraÃ§Ã£o mÃ­nima com o usuÃ¡rio
+- **Melhor para:** Tarefas simples e determinÃ­sticas
 
-### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
-- Checkpoints de decisão explícitos
-- Explicações educativas
-- **Melhor para:** Aprendizado, decisões complexas
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃƒO]**
+- Checkpoints de decisÃ£o explÃ­citos
+- ExplicaÃ§Ãµes educativas
+- **Melhor para:** Aprendizado, decisÃµes complexas
 
 ### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
-- Fase de análise da task (identificar todas as ambiguidades)
-- Execução sem ambiguidade
-- **Melhor para:** Requisitos ambíguos, trabalho crítico
+- Fase de anÃ¡lise da task (identificar todas as ambiguidades)
+- ExecuÃ§Ã£o sem ambiguidade
+- **Melhor para:** Requisitos ambÃ­guos, trabalho crÃ­tico
 
-**Parâmetro:** `mode` (opcional, padrão: `interactive`)
+**ParÃ¢metro:** `mode` (opcional, padrÃ£o: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: exportDesignTokensDtcg()
-responsável: Uma (Empathizer)
+responsÃ¡vel: Uma (Empathizer)
 responsavel_type: Agente
 atomic_layer: Molecule
 
 **Entrada:**
 - campo: task
   tipo: string
-  origem: Entrada do Usuário
-  obrigatório: true
-  validação: Deve ser uma task registrada
+  origem: Entrada do UsuÃ¡rio
+  obrigatÃ³rio: true
+  validaÃ§Ã£o: Deve ser uma task registrada
 
 - campo: parameters
   tipo: object
-  origem: Entrada do Usuário
-  obrigatório: false
-  validação: Parâmetros de task válidos
+  origem: Entrada do UsuÃ¡rio
+  obrigatÃ³rio: false
+  validaÃ§Ã£o: ParÃ¢metros de task vÃ¡lidos
 
 - campo: mode
   tipo: string
-  origem: Entrada do Usuário
-  obrigatório: false
-  validação: yolo|interactive|pre-flight
+  origem: Entrada do UsuÃ¡rio
+  obrigatÃ³rio: false
+  validaÃ§Ã£o: yolo|interactive|pre-flight
 
-**Saída:**
+**SaÃ­da:**
 - campo: execution_result
   tipo: object
-  destino: Memória
+  destino: MemÃ³ria
   persistido: false
 
 - campo: logs
@@ -67,62 +67,62 @@ atomic_layer: Molecule
 
 - campo: state
   tipo: object
-  destino: Gestão de estado
+  destino: GestÃ£o de estado
   persistido: true
 ```
 
 ---
 
-## Pré-Condições
+## PrÃ©-CondiÃ§Ãµes
 
-**Propósito:** Validar os pré-requisitos ANTES da execução da task (bloqueante)
+**PropÃ³sito:** Validar os prÃ©-requisitos ANTES da execuÃ§Ã£o da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas
+  - [ ] Task estÃ¡ registrada; parÃ¢metros obrigatÃ³rios fornecidos; dependÃªncias atendidas
     tipo: pre-condition
     blocker: true
-    validação: |
-      Verificar se a task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas
-    error_message: "Pré-condição falhou: Task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas"
+    validaÃ§Ã£o: |
+      Verificar se a task estÃ¡ registrada; parÃ¢metros obrigatÃ³rios fornecidos; dependÃªncias atendidas
+    error_message: "PrÃ©-condiÃ§Ã£o falhou: Task estÃ¡ registrada; parÃ¢metros obrigatÃ³rios fornecidos; dependÃªncias atendidas"
 ```
 
 ---
 
-## Pós-Condições
+## PÃ³s-CondiÃ§Ãµes
 
-**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
+**PropÃ³sito:** Validar o sucesso da execuÃ§Ã£o DEPOIS que a task Ã© concluÃ­da
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Task concluída; exit code 0; saídas esperadas criadas
+  - [ ] Task concluÃ­da; exit code 0; saÃ­das esperadas criadas
     tipo: post-condition
     blocker: true
-    validação: |
-      Verificar se a task foi concluída; exit code 0; saídas esperadas criadas
-    error_message: "Pós-condição falhou: Task concluída; exit code 0; saídas esperadas criadas"
+    validaÃ§Ã£o: |
+      Verificar se a task foi concluÃ­da; exit code 0; saÃ­das esperadas criadas
+    error_message: "PÃ³s-condiÃ§Ã£o falhou: Task concluÃ­da; exit code 0; saÃ­das esperadas criadas"
 ```
 
 ---
 
-## Critérios de Aceite
+## CritÃ©rios de Aceite
 
-**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
+**PropÃ³sito:** CritÃ©rios definitivos de pass/fail para a conclusÃ£o da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Task concluída conforme o esperado; efeitos colaterais documentados
+  - [ ] Task concluÃ­da conforme o esperado; efeitos colaterais documentados
     tipo: acceptance-criterion
     blocker: true
-    validação: |
-      Afirmar que a task foi concluída conforme o esperado; efeitos colaterais documentados
-    error_message: "Critério de aceite não atendido: Task concluída conforme o esperado; efeitos colaterais documentados"
+    validaÃ§Ã£o: |
+      Afirmar que a task foi concluÃ­da conforme o esperado; efeitos colaterais documentados
+    error_message: "CritÃ©rio de aceite nÃ£o atendido: Task concluÃ­da conforme o esperado; efeitos colaterais documentados"
 ```
 
 ---
@@ -132,52 +132,52 @@ acceptance-criteria:
 **Recursos externos/compartilhados usados por esta task:**
 
 - **Ferramenta:** task-runner
-  - **Propósito:** Execução e orquestração de tasks
+  - **PropÃ³sito:** ExecuÃ§Ã£o e orquestraÃ§Ã£o de tasks
   - **Origem:** .aiox-core/core/task-runner.js
 
 - **Ferramenta:** logger
-  - **Propósito:** Registro de execução e rastreamento de erros
+  - **PropÃ³sito:** Registro de execuÃ§Ã£o e rastreamento de erros
   - **Origem:** .aiox-core/utils/logger.js
 
 ---
 
 ## Scripts
 
-**Código específico do agente para esta task:**
+**CÃ³digo especÃ­fico do agente para esta task:**
 
 - **Script:** execute-task.js
-  - **Propósito:** Wrapper genérico de execução de task
+  - **PropÃ³sito:** Wrapper genÃ©rico de execuÃ§Ã£o de task
   - **Linguagem:** JavaScript
-  - **Localização:** .aiox-core/scripts/execute-task.js
+  - **LocalizaÃ§Ã£o:** .aiox-core/scripts/execute-task.js
 
 ---
 
 ## Tratamento de Erros
 
-**Estratégia:** retry
+**EstratÃ©gia:** retry
 
 **Erros Comuns:**
 
-1. **Erro:** Task Não Encontrada
-   - **Causa:** Task especificada não está registrada no sistema
-   - **Resolução:** Verificar o nome e o registro da task
-   - **Recuperação:** Listar tasks disponíveis, sugerir similares
+1. **Erro:** Task NÃ£o Encontrada
+   - **Causa:** Task especificada nÃ£o estÃ¡ registrada no sistema
+   - **ResoluÃ§Ã£o:** Verificar o nome e o registro da task
+   - **RecuperaÃ§Ã£o:** Listar tasks disponÃ­veis, sugerir similares
 
-2. **Erro:** Parâmetros Inválidos
-   - **Causa:** Os parâmetros da task não correspondem ao schema esperado
-   - **Resolução:** Validar os parâmetros contra a definição da task
-   - **Recuperação:** Fornecer template de parâmetros, rejeitar a execução
+2. **Erro:** ParÃ¢metros InvÃ¡lidos
+   - **Causa:** Os parÃ¢metros da task nÃ£o correspondem ao schema esperado
+   - **ResoluÃ§Ã£o:** Validar os parÃ¢metros contra a definiÃ§Ã£o da task
+   - **RecuperaÃ§Ã£o:** Fornecer template de parÃ¢metros, rejeitar a execuÃ§Ã£o
 
-3. **Erro:** Timeout de Execução
-   - **Causa:** A task excede o tempo máximo de execução
-   - **Resolução:** Otimizar a task ou aumentar o timeout
-   - **Recuperação:** Encerrar a task, limpar recursos, registrar o estado
+3. **Erro:** Timeout de ExecuÃ§Ã£o
+   - **Causa:** A task excede o tempo mÃ¡ximo de execuÃ§Ã£o
+   - **ResoluÃ§Ã£o:** Otimizar a task ou aumentar o timeout
+   - **RecuperaÃ§Ã£o:** Encerrar a task, limpar recursos, registrar o estado
 
 ---
 
 ## Performance
 
-**Métricas Esperadas:**
+**MÃ©tricas Esperadas:**
 
 ```yaml
 duration_expected: 2-5 min (estimated)
@@ -185,8 +185,8 @@ cost_estimated: $0.001-0.003
 token_usage: ~1,000-3,000 tokens
 ```
 
-**Notas de Otimização:**
-- Paralelizar operações independentes; reutilizar resultados de átomos; implementar saídas antecipadas
+**Notas de OtimizaÃ§Ã£o:**
+- Paralelizar operaÃ§Ãµes independentes; reutilizar resultados de Ã¡tomos; implementar saÃ­das antecipadas
 
 ---
 
@@ -206,14 +206,14 @@ updated_at: 2025-11-17
 ---
 
 
-## Descrição
+## DescriÃ§Ã£o
 
-Produzir exportações de Design Tokens W3C (DTCG v2025.10) a partir do arquivo canônico de tokens em YAML. Valida a conformidade com o schema, o uso de cores OKLCH e publica os artefatos para as plataformas downstream (web, iOS, Android, Flutter).
+Produzir exportaÃ§Ãµes de Design Tokens W3C (DTCG v2025.10) a partir do arquivo canÃ´nico de tokens em YAML. Valida a conformidade com o schema, o uso de cores OKLCH e publica os artefatos para as plataformas downstream (web, iOS, Android, Flutter).
 
-## Pré-requisitos
+## PrÃ©-requisitos
 
 - tokens.yaml gerado via *tokenize (camadas core/semantic/component presentes)
-- Node.js ≥ 18 / Python ≥ 3.10 (para as ferramentas de validação)
+- Node.js â‰¥ 18 / Python â‰¥ 3.10 (para as ferramentas de validaÃ§Ã£o)
 - DTCG CLI ou validador de schema instalado (`npm install -g @designtokens/cli` recomendado)
 
 ## Workflow
@@ -226,49 +226,49 @@ Produzir exportações de Design Tokens W3C (DTCG v2025.10) a partir do arquivo 
 2. **Gerar o JSON DTCG**
    - Transformar o YAML na estrutura JSON DTCG
    - Garantir que cada token inclua `$type`, `$value`, e opcionalmente `$description`
-   - Mapear as referências usando o estilo `{layers.semantic.color.primary}`
+   - Mapear as referÃªncias usando o estilo `{layers.semantic.color.primary}`
    - Salvar como `tokens.dtcg.json`
 
 3. **Produzir Bundles por Plataforma (Opcional)**
-   - Rodar o Style Dictionary / scripts customizados para saídas específicas de plataforma
+   - Rodar o Style Dictionary / scripts customizados para saÃ­das especÃ­ficas de plataforma
    - Alvos: web (CSS), Android (XML), iOS (Swift), Flutter (Dart)
    - Armazenar em `tokens/exports/{platform}/`
 
 4. **Validar**
    - `dtcg validate tokens.dtcg.json`
    - Fazer lint dos valores OKLCH (garantir o formato `oklch()`, sinalizar fallback para hex)
-   - Confirmar que as referências resolvem (sem caminhos ausentes)
+   - Confirmar que as referÃªncias resolvem (sem caminhos ausentes)
 
 5. **Documentar e Publicar**
-   - Atualizar `docs/tokens/README.md` com detalhes da exportação, versão, changelog
-   - Anexar a saída do validador e as métricas de cobertura
+   - Atualizar `docs/tokens/README.md` com detalhes da exportaÃ§Ã£o, versÃ£o, changelog
+   - Anexar a saÃ­da do validador e as mÃ©tricas de cobertura
    - Atualizar `.state.yaml` (caminho de tokens.dtcg, status do validador, timestamp)
 
-## Saída
+## SaÃ­da
 
-- `tokens.dtcg.json` (compatível com W3C)
+- `tokens.dtcg.json` (compatÃ­vel com W3C)
 - Bundles de plataforma opcionais (CSS, Android XML, Swift, Flutter)
-- Relatório de validação (`tokens/validation/dtcg-report.json`)
-- Seção de tokens atualizada em `.state.yaml`
+- RelatÃ³rio de validaÃ§Ã£o (`tokens/validation/dtcg-report.json`)
+- SeÃ§Ã£o de tokens atualizada em `.state.yaml`
 
-## Critérios de Sucesso
+## CritÃ©rios de Sucesso
 
 - [ ] tokens.dtcg.json passa no validador W3C com zero erros
-- [ ] Espaço de cor OKLCH utilizado; fallbacks documentados
-- [ ] Referências (`$value`) resolvem entre as camadas
-- [ ] Exportações de plataforma atualizadas (se habilitadas) e testadas com smoke test
-- [ ] Documentação + changelog atualizados com versão/data
-- [ ] `.state.yaml` reflete o caminho e o status da exportação dtcg
+- [ ] EspaÃ§o de cor OKLCH utilizado; fallbacks documentados
+- [ ] ReferÃªncias (`$value`) resolvem entre as camadas
+- [ ] ExportaÃ§Ãµes de plataforma atualizadas (se habilitadas) e testadas com smoke test
+- [ ] DocumentaÃ§Ã£o + changelog atualizados com versÃ£o/data
+- [ ] `.state.yaml` reflete o caminho e o status da exportaÃ§Ã£o dtcg
 
 ## Tratamento de Erros
 
-- **Schema inválido**: Capturar a saída do validador, corrigir os tokens problemáticos, reexecutar a exportação
-- **Referência ausente**: Rastrear a origem no YAML, garantir que o token existe ou ajustar o alias
-- **Formato de cor não suportado**: Converter para OKLCH ou usar fallback com explicação
-- **Falha na exportação de plataforma**: Reverter a etapa específica da plataforma, sinalizar ação de follow-up
+- **Schema invÃ¡lido**: Capturar a saÃ­da do validador, corrigir os tokens problemÃ¡ticos, reexecutar a exportaÃ§Ã£o
+- **ReferÃªncia ausente**: Rastrear a origem no YAML, garantir que o token existe ou ajustar o alias
+- **Formato de cor nÃ£o suportado**: Converter para OKLCH ou usar fallback com explicaÃ§Ã£o
+- **Falha na exportaÃ§Ã£o de plataforma**: Reverter a etapa especÃ­fica da plataforma, sinalizar aÃ§Ã£o de follow-up
 
 ## Notas
 
-- Manter as versões dos tokens com versionamento semântico (ex.: 1.1.0 para novos tokens)
+- Manter as versÃµes dos tokens com versionamento semÃ¢ntico (ex.: 1.1.0 para novos tokens)
 - Coordenar com as equipes de plataforma antes de breaking changes (ex.: renomear tokens)
-- Armazenar os relatórios de validação junto aos artefatos para auditoria/conformidade
+- Armazenar os relatÃ³rios de validaÃ§Ã£o junto aos artefatos para auditoria/conformidade

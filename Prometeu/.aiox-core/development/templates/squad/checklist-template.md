@@ -1,82 +1,82 @@
-# {{COMPONENTNAME}} Checklist
+# Checklist {{COMPONENTNAME}}
 
 > {{DESCRIPTION}}
 > Squad: {{SQUADNAME}}
-> Created: {{CREATEDAT}}
+> Criado: {{CREATEDAT}}
 {{#IF STORYID}}
 > Story: {{STORYID}}
 {{/IF}}
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-Before starting, verify:
+Antes de começar, verifique:
 
-- [ ] Pre-condition 1
-- [ ] Pre-condition 2
-- [ ] Pre-condition 3
-
----
-
-## Checklist Items
-
-### Category 1: Setup
-
-| # | Item | Status | Notes |
-|---|------|--------|-------|
-| 1.1 | Item description | [ ] | |
-| 1.2 | Item description | [ ] | |
-| 1.3 | Item description | [ ] | |
-
-### Category 2: Implementation
-
-| # | Item | Status | Notes |
-|---|------|--------|-------|
-| 2.1 | Item description | [ ] | |
-| 2.2 | Item description | [ ] | |
-| 2.3 | Item description | [ ] | |
-
-### Category 3: Validation
-
-| # | Item | Status | Notes |
-|---|------|--------|-------|
-| 3.1 | Item description | [ ] | |
-| 3.2 | Item description | [ ] | |
-| 3.3 | Item description | [ ] | |
+- [ ] Pré-condição 1
+- [ ] Pré-condição 2
+- [ ] Pré-condição 3
 
 ---
 
-## Post-Conditions
+## Itens do Checklist
 
-After completion, verify:
+### Categoria 1: Setup
 
-- [ ] Post-condition 1
-- [ ] Post-condition 2
-- [ ] Post-condition 3
+| # | Item | Status | Notas |
+|---|------|--------|-------|
+| 1.1 | Descrição do item | [ ] | |
+| 1.2 | Descrição do item | [ ] | |
+| 1.3 | Descrição do item | [ ] | |
+
+### Categoria 2: Implementação
+
+| # | Item | Status | Notas |
+|---|------|--------|-------|
+| 2.1 | Descrição do item | [ ] | |
+| 2.2 | Descrição do item | [ ] | |
+| 2.3 | Descrição do item | [ ] | |
+
+### Categoria 3: Validação
+
+| # | Item | Status | Notas |
+|---|------|--------|-------|
+| 3.1 | Descrição do item | [ ] | |
+| 3.2 | Descrição do item | [ ] | |
+| 3.3 | Descrição do item | [ ] | |
 
 ---
 
-## Sign-off
+## Pós-Condições
 
-| Role | Name | Date | Signature |
+Após a conclusão, verifique:
+
+- [ ] Pós-condição 1
+- [ ] Pós-condição 2
+- [ ] Pós-condição 3
+
+---
+
+## Assinatura
+
+| Papel | Nome | Data | Assinatura |
 |------|------|------|-----------|
-| Creator | | | |
-| Reviewer | | | |
-| Approver | | | |
+| Criador | | | |
+| Revisor | | | |
+| Aprovador | | | |
 
 ---
 
-## Usage
+## Uso
 
 ```bash
-# Use this checklist with:
+# Use este checklist com:
 *checklist {{COMPONENTNAME}}
 
-# Or reference in tasks:
+# Ou referencie em tasks:
 checklist: {{COMPONENTNAME}}.md
 ```
 
 ---
 
-*Checklist created by squad-creator*
+*Checklist criado por squad-creator*

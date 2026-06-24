@@ -39,6 +39,11 @@ credencial vive em texto puro em nenhum arquivo do squad; só a referência ao c
 | **Crawlee** (vendorizado, Node) | crawling assíncrono multi-browser p/ JS pesado | motor vendorizado — `motor/crawlee-node/` via terminal | — |
 | **Skyvern** (vendorizado) | automação por visão LLM em DOM hostil | motor vendorizado — `motor/argos-engine.py` via terminal | `/kolden/argos` (LLM) |
 | **Apify** (actors gerenciados) | coleta gerenciada via actors prontos do Apify Store (scrapers de redes sociais, Maps, e-commerce, SERP — infra/proxies/anti-bot do lado da Apify) | camada `apify` do `motor/argos-engine.py` via terminal **ou** MCP `@apify/actors-mcp-server` | `/kolden/dev/APIFY_TOKEN`, `/kolden/dev/APIFY_USER_ID` (chave compartilhada, env **dev**; rodar com `infisical run --env=dev`) |
+| **SociaVault** (descoberta de virais) | dados sociais multi-plataforma (TikTok/IG/YT/X/LinkedIn/Reddit): vídeos/posts virais por engajamento, trending de hashtag/som/criador | camada `viral` do `motor/argos-engine.py` via terminal (REST, header `X-API-Key`) | `/kolden/dev/SOCIAVAULT_API_KEY` (env **dev**) |
+| **Speechmatics** (transcrição) | STT de alta qualidade em **pt-BR** (diarização, timestamps) para transcrever conteúdo viral → copy | camada `transcrever` do `motor/argos-engine.py` via terminal (SDK `speechmatics-python`) | `/kolden/dev/SPEECHMATICS_API_KEY` (env **dev**) |
+| **Deepgram** (transcrição — reuso) | STT (fallback/realtime) da camada `transcrever` | camada `transcrever` (`--engine deepgram`) via terminal | `/kolden/prod/DEEPGRAM_API_KEY` (já no catálogo) |
+| **yt-dlp** (download) | baixa o áudio/vídeo de TikTok/IG/YouTube antes da transcrição | camada `transcrever` do `motor/` (CLI, OSS Unlicense) | — |
+| **Windsor.ai** (conector de dados) | ETL de dados de marketing (Ads/GA4/CRM de 325+ fontes) — consolida métricas para sizing/concorrência. NÃO é descoberta de virais | API REST (`connectors.windsor.ai`, query `api_key`) **ou** MCP `mcp.windsor.ai` | `/kolden/dev/WINDSOR_API_KEY` (env **dev**) |
 | **twscrape / instaloader / TikTokApi / Douyin** | coleta social autenticada (ToS-risco) — só sob aprovação humana | **módulo cinza** — `modulo-cinza/` via `compliance-sentinela` | `/kolden/argos/cinza/*` (contas/proxies descartáveis) |
 
 *Sem invenção de capacidade (Art. IV): nada além desta tabela. Sem credencial em texto puro (Art. VII).*
@@ -52,9 +57,9 @@ Cada agente só usa o que está abaixo (subconjunto da tabela). Fiel ao `squad.y
 | **argos-chief** (0) | Nenhuma de coleta — orquestra, roteia e sintetiza. Lê resultados dos especialistas; aciona o `compliance-sentinela` para autorizar zona cinza. Infisical só por delegação. |
 | **web-harvester** (1) | `browser_*`, `web_extract` (Hermes); Scrapling, Scrapy, Crawlee, **Apify** (motor — actors gerenciados p/ coleta difícil/em escala); MCP Firecrawl; Infisical |
 | **serp-seo-cartografo** (1) | `web_search`, `web_extract` (Hermes); MCP Firecrawl / Tavily / Exa; Scrapy (sitemaps/links); Infisical |
-| **ads-intel** (1) | `browser_*`, `vision_analyze` (Hermes — ler criativos); MCP Firecrawl (ad libraries); Infisical |
-| **market-sizer** (1) | `web_search` (Hermes); MCP Apollo (bottom-up); MCP Tavily / Exa (fontes oficiais); GPT-Researcher (motor); Infisical |
-| **competitor-mapper** (1) | Consolida saídas dos demais; `web_extract` (Hermes); MCP Firecrawl / Exa para preencher lacunas; Infisical |
+| **ads-intel** (1) | `browser_*`, `vision_analyze` (Hermes — ler criativos); MCP Firecrawl (ad libraries); **Windsor** (dados de plataformas de ads); Infisical |
+| **market-sizer** (1) | `web_search` (Hermes); MCP Apollo (bottom-up); MCP Tavily / Exa (fontes oficiais); GPT-Researcher (motor); **Windsor** (dados de ads/analytics consolidados); Infisical |
+| **competitor-mapper** (1) | Consolida saídas dos demais; `web_extract` (Hermes); MCP Firecrawl / Exa para preencher lacunas; **SociaVault** (virais do concorrente, skill `descoberta-de-virais`); Infisical |
 | **research-synthesizer** (1) | GPT-Researcher (motor — cross-check + citação); `web_search` / `web_extract` (Hermes); MCP Tavily / Exa; Infisical |
 | **social-instagram** (2) | `web_search`, `web_extract`, `browser_*`, `vision_analyze` (Hermes — via legítima embed/web/SERP); MCP Firecrawl; escala ao sentinela para instaloader em `modulo-cinza/` |
 | **social-tiktok** (2) | `web_search`, `browser_*`, `vision_analyze` (Hermes — Creative Center / perfis públicos); MCP Firecrawl; escala ao sentinela para TikTokApi em `modulo-cinza/` |
@@ -64,6 +69,10 @@ Cada agente só usa o que está abaixo (subconjunto da tabela). Fiel ao `squad.y
 | **social-facebook** (2) | `browser_*`, `web_extract`, `vision_analyze` (Hermes — páginas/grupos públicos, Ad Library/transparência); MCP Firecrawl; escala ao sentinela |
 | **social-reddit** (2) | `web_search`, `web_extract` (Hermes — API pública/threads); MCP Tavily / Exa; Infisical (chave da API Reddit quando usada) |
 | **compliance-sentinela** (3) | **Único portão** do `modulo-cinza/` (twscrape / instaloader / TikTokApi); MCP Browserbase (sessões isoladas); Infisical `/kolden/argos/cinza/*` (contas/proxies descartáveis). Não produz inteligência — autoriza, isola e queima contas. |
+
+**Capacidades transversais (skills):**
+- **Descoberta de virais** (`descoberta-de-virais`): os `social-*` e o `competitor-mapper` acham vídeos/posts virais via **SociaVault** (`viral`) + Apify + TikTok Creative Center + YouTube Data API.
+- **Transcrição** (`transcricao-de-conteudo`): qualquer especialista pode pedir a camada `transcrever` (yt-dlp → **Speechmatics**/Deepgram) para virar um vídeo viral em texto e fazer **handoff ao Caliope** (copy).
 
 ## Infisical — paths
 

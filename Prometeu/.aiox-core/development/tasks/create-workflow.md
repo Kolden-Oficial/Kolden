@@ -1,51 +1,51 @@
 ---
 
-## Execution Modes
+## Modos de ExecuÃ§Ã£o
 
-**Choose your execution mode:**
+**Escolha o modo de execuÃ§Ã£o:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - RÃ¡pido, AutÃ´nomo (0-1 prompts)
+- Tomada de decisÃ£o autÃ´noma com registro de logs
+- InteraÃ§Ã£o mÃ­nima com o usuÃ¡rio
+- **Melhor para:** Tasks simples e determinÃ­sticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Balanceado, Educativo (5-10 prompts) **[PADRÃƒO]**
+- Checkpoints de decisÃ£o explÃ­citos
+- ExplicaÃ§Ãµes educativas
+- **Melhor para:** Aprendizado, decisÃµes complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Completo Antecipado
+- Fase de anÃ¡lise da task (identificar todas as ambiguidades)
+- ExecuÃ§Ã£o com zero ambiguidade
+- **Melhor para:** Requisitos ambÃ­guos, trabalho crÃ­tico
 
-**Parameter:** `mode` (optional, default: `interactive`)
-
----
-
-## Step 0: IDS Registry Check (Advisory)
-
-Before proceeding, check the Entity Registry for existing artifacts:
-
-1. Extract intent keywords from user's request
-2. Run `FrameworkGovernor.preCheck(intent, 'workflow')`
-3. If REUSE match found (>=90% relevance):
-   - Display match and ask user: "Existing workflow found. REUSE instead of creating new?"
-4. If ADAPT match found (60-89%):
-   - Display adaptation candidate: "Similar workflow exists. ADAPT instead of creating new?"
-5. If CREATE (no match or user chooses):
-   - Log decision with justification and proceed to Step 1
-6. If IDS unavailable (timeout/error): Warn and proceed normally
-
-**NOTE:** This step is advisory and does NOT block creation. User always has final decision.
+**ParÃ¢metro:** `mode` (opcional, padrÃ£o: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Passo 0: VerificaÃ§Ã£o no Registry IDS (Consultivo)
+
+Antes de prosseguir, verifique no Entity Registry os artefatos existentes:
+
+1. Extraia as palavras-chave de intenÃ§Ã£o da solicitaÃ§Ã£o do usuÃ¡rio
+2. Execute `FrameworkGovernor.preCheck(intent, 'workflow')`
+3. Se uma correspondÃªncia REUSE for encontrada (>=90% de relevÃ¢ncia):
+   - Exiba a correspondÃªncia e pergunte ao usuÃ¡rio: "Workflow existente encontrado. REUTILIZAR em vez de criar um novo?"
+4. Se uma correspondÃªncia ADAPT for encontrada (60-89%):
+   - Exiba o candidato Ã  adaptaÃ§Ã£o: "Existe um workflow similar. ADAPTAR em vez de criar um novo?"
+5. Se CREATE (sem correspondÃªncia ou o usuÃ¡rio escolher):
+   - Registre a decisÃ£o com justificativa e prossiga para o Passo 1
+6. Se o IDS estiver indisponÃ­vel (timeout/erro): Avise e prossiga normalmente
+
+**NOTA:** Este passo Ã© consultivo e NÃƒO bloqueia a criaÃ§Ã£o. O usuÃ¡rio sempre tem a decisÃ£o final.
+
+---
+
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: createWorkflow()
-responsável: Orion (Commander)
+responsÃ¡vel: Orion (Commander)
 responsavel_type: Agente
 atomic_layer: Config
 
@@ -53,34 +53,34 @@ atomic_layer: Config
 - campo: name
   tipo: string
   origem: User Input
-  obrigatório: true
-  validação: Must be non-empty, lowercase, kebab-case
+  obrigatÃ³rio: true
+  validaÃ§Ã£o: Deve ser nÃ£o-vazio, em minÃºsculas, em kebab-case
 
 - campo: target_context
   tipo: string
   origem: User Input
-  obrigatório: false
-  validação: Must be "core", "squad", or "hybrid". Default: "core"
+  obrigatÃ³rio: false
+  validaÃ§Ã£o: Deve ser "core", "squad" ou "hybrid". PadrÃ£o: "core"
 
 - campo: squad_name
   tipo: string
   origem: User Input
-  obrigatório: false (required when target_context="squad" or "hybrid")
-  validação: Must be kebab-case, squad must exist in squads/
+  obrigatÃ³rio: false (obrigatÃ³rio quando target_context="squad" ou "hybrid")
+  validaÃ§Ã£o: Deve ser kebab-case, o squad deve existir em squads/
 
 - campo: options
   tipo: object
   origem: User Input
-  obrigatório: false
-  validação: Valid JSON object with allowed keys
+  obrigatÃ³rio: false
+  validaÃ§Ã£o: Objeto JSON vÃ¡lido com chaves permitidas
 
 - campo: force
   tipo: boolean
   origem: User Input
-  obrigatório: false
-  validação: Default: false
+  obrigatÃ³rio: false
+  validaÃ§Ã£o: PadrÃ£o: false
 
-**Saída:**
+**SaÃ­da:**
 - campo: created_file
   tipo: string
   destino: File system
@@ -99,117 +99,117 @@ atomic_layer: Config
 
 ---
 
-## Pre-Conditions
+## PrÃ©-CondiÃ§Ãµes
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**PropÃ³sito:** Validar prÃ©-requisitos ANTES da execuÃ§Ã£o da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Target does not already exist; required inputs provided; permissions granted
+  - [ ] O alvo ainda nÃ£o existe; as entradas obrigatÃ³rias foram fornecidas; as permissÃµes foram concedidas
     tipo: pre-condition
     blocker: true
-    validação: |
-      Check target does not already exist; required inputs provided; permissions granted
-    error_message: "Pre-condition failed: Target does not already exist; required inputs provided; permissions granted"
-  - [ ] When target_context="squad" or "hybrid", squad directory must exist at squads/{squad_name}/
+    validaÃ§Ã£o: |
+      Verifique se o alvo ainda nÃ£o existe; se as entradas obrigatÃ³rias foram fornecidas; se as permissÃµes foram concedidas
+    error_message: "PrÃ©-condiÃ§Ã£o falhou: O alvo ainda nÃ£o existe; as entradas obrigatÃ³rias foram fornecidas; as permissÃµes foram concedidas"
+  - [ ] Quando target_context="squad" ou "hybrid", o diretÃ³rio do squad deve existir em squads/{squad_name}/
     tipo: pre-condition
     blocker: true
-    validação: |
-      If target_context is "squad" or "hybrid", verify squads/{squad_name}/ exists and has a valid squad.yaml
-    error_message: "Pre-condition failed: Squad '{squad_name}' not found in squads/"
+    validaÃ§Ã£o: |
+      Se target_context for "squad" ou "hybrid", verifique se squads/{squad_name}/ existe e possui um squad.yaml vÃ¡lido
+    error_message: "PrÃ©-condiÃ§Ã£o falhou: Squad '{squad_name}' nÃ£o encontrado em squads/"
 ```
 
 ---
 
-## Post-Conditions
+## PÃ³s-CondiÃ§Ãµes
 
-**Purpose:** Validate execution success AFTER task completes
+**PropÃ³sito:** Validar o sucesso da execuÃ§Ã£o APÃ“S a conclusÃ£o da task
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Resource created successfully; validation passed; no errors logged
+  - [ ] Recurso criado com sucesso; validaÃ§Ã£o aprovada; nenhum erro registrado
     tipo: post-condition
     blocker: true
-    validação: |
-      Verify resource created successfully; validation passed; no errors logged
-    error_message: "Post-condition failed: Resource created successfully; validation passed; no errors logged"
+    validaÃ§Ã£o: |
+      Verifique se o recurso foi criado com sucesso; se a validaÃ§Ã£o foi aprovada; se nenhum erro foi registrado
+    error_message: "PÃ³s-condiÃ§Ã£o falhou: Recurso criado com sucesso; validaÃ§Ã£o aprovada; nenhum erro registrado"
 ```
 
 ---
 
-## Acceptance Criteria
+## CritÃ©rios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**PropÃ³sito:** CritÃ©rios definitivos de aprovaÃ§Ã£o/reprovaÃ§Ã£o para a conclusÃ£o da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Resource exists and is valid; no duplicate resources created
+  - [ ] O recurso existe e Ã© vÃ¡lido; nenhum recurso duplicado foi criado
     tipo: acceptance-criterion
     blocker: true
-    validação: |
-      Assert resource exists and is valid; no duplicate resources created
-    error_message: "Acceptance criterion not met: Resource exists and is valid; no duplicate resources created"
+    validaÃ§Ã£o: |
+      Afirme que o recurso existe e Ã© vÃ¡lido; que nenhum recurso duplicado foi criado
+    error_message: "CritÃ©rio de aceite nÃ£o atendido: O recurso existe e Ã© vÃ¡lido; nenhum recurso duplicado foi criado"
 ```
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** component-generator
-  - **Purpose:** Generate new components from templates
-  - **Source:** .aiox-core/scripts/component-generator.js
+- **Ferramenta:** component-generator
+  - **PropÃ³sito:** Gerar novos componentes a partir de templates
+  - **Origem:** .aiox-core/scripts/component-generator.js
 
-- **Tool:** file-system
-  - **Purpose:** File creation and validation
-  - **Source:** Node.js fs module
+- **Ferramenta:** file-system
+  - **PropÃ³sito:** CriaÃ§Ã£o e validaÃ§Ã£o de arquivos
+  - **Origem:** MÃ³dulo fs do Node.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**CÃ³digo especÃ­fico do agente para esta task:**
 
 - **Script:** create-component.js
-  - **Purpose:** Component creation workflow
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/create-component.js
+  - **PropÃ³sito:** Workflow de criaÃ§Ã£o de componente
+  - **Linguagem:** JavaScript
+  - **LocalizaÃ§Ã£o:** .aiox-core/scripts/create-component.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** abort
+**EstratÃ©gia:** abort
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Resource Already Exists
-   - **Cause:** Target file/resource already exists in system
-   - **Resolution:** Use force flag or choose different name
-   - **Recovery:** Prompt user for alternative name or force overwrite
+1. **Erro:** Recurso JÃ¡ Existe
+   - **Causa:** O arquivo/recurso alvo jÃ¡ existe no sistema
+   - **ResoluÃ§Ã£o:** Use a flag force ou escolha um nome diferente
+   - **RecuperaÃ§Ã£o:** Solicite ao usuÃ¡rio um nome alternativo ou force a sobrescrita
 
-2. **Error:** Invalid Input
-   - **Cause:** Input name contains invalid characters or format
-   - **Resolution:** Validate input against naming rules (kebab-case, lowercase, no special chars)
-   - **Recovery:** Sanitize input or reject with clear error message
+2. **Erro:** Entrada InvÃ¡lida
+   - **Causa:** O nome de entrada contÃ©m caracteres ou formato invÃ¡lidos
+   - **ResoluÃ§Ã£o:** Valide a entrada contra as regras de nomenclatura (kebab-case, minÃºsculas, sem caracteres especiais)
+   - **RecuperaÃ§Ã£o:** Sanitize a entrada ou rejeite com uma mensagem de erro clara
 
-3. **Error:** Permission Denied
-   - **Cause:** Insufficient permissions to create resource
-   - **Resolution:** Check file system permissions, run with elevated privileges if needed
-   - **Recovery:** Log error, notify user, suggest permission fix
+3. **Erro:** PermissÃ£o Negada
+   - **Causa:** PermissÃµes insuficientes para criar o recurso
+   - **ResoluÃ§Ã£o:** Verifique as permissÃµes do sistema de arquivos, execute com privilÃ©gios elevados se necessÃ¡rio
+   - **RecuperaÃ§Ã£o:** Registre o erro, notifique o usuÃ¡rio, sugira a correÃ§Ã£o de permissÃ£o
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**MÃ©tricas Esperadas:**
 
 ```yaml
 duration_expected: 2-10 min (estimated)
@@ -217,12 +217,12 @@ cost_estimated: $0.001-0.008
 token_usage: ~800-2,500 tokens
 ```
 
-**Optimization Notes:**
-- Validate configuration early; use atomic writes; implement rollback checkpoints
+**Notas de OtimizaÃ§Ã£o:**
+- Valide a configuraÃ§Ã£o cedo; use escritas atÃ´micas; implemente checkpoints de rollback
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -244,97 +244,97 @@ tools:
 #   - workflow-validation-checklist.md
 ---
 
-# Create Workflow
+# Criar Workflow
 
-## Purpose
-To create a new workflow definition that orchestrates multiple agents and tasks for complex multi-step processes in Synkra AIOX.
+## PropÃ³sito
+Criar uma nova definiÃ§Ã£o de workflow que orquestra mÃºltiplos agentes e tasks para processos complexos de mÃºltiplas etapas no Synkra AIOX.
 
-## Prerequisites
-- User authorization verified
-- Clear understanding of workflow goals
-- Knowledge of participating agents and tasks
-- Memory layer client initialized
+## PrÃ©-requisitos
+- AutorizaÃ§Ã£o do usuÃ¡rio verificada
+- CompreensÃ£o clara dos objetivos do workflow
+- Conhecimento dos agentes e tasks participantes
+- Cliente da camada de memÃ³ria inicializado
 
-## Interactive Elicitation Process
+## Processo de ElicitaÃ§Ã£o Interativa
 
-### Step 0: Target Context
+### Passo 0: Contexto Alvo
 ```
-ELICIT: Target Context
-1. Where should this workflow be created? (core / squad / hybrid)
-2. If squad or hybrid: Which squad? (kebab-case name, e.g., "pedro-valerio")
-```
-
-### Step 1: Workflow Overview
-```
-ELICIT: Workflow Basic Information
-1. What is the workflow name? (e.g., "feature-development", "bug-fix")
-2. What is the primary goal of this workflow?
-3. What type of project is this for? (greenfield/brownfield, UI/service/fullstack)
-4. What is the expected outcome?
+ELICIT: Contexto Alvo
+1. Onde este workflow deve ser criado? (core / squad / hybrid)
+2. Se squad ou hybrid: Qual squad? (kebab-case name, e.g., "pedro-valerio")
 ```
 
-### Step 2: Workflow Sequence Design
+### Passo 1: VisÃ£o Geral do Workflow
+```
+ELICIT: InformaÃ§Ãµes BÃ¡sicas do Workflow
+1. Qual Ã© o nome do workflow? (e.g., "feature-development", "bug-fix")
+2. Qual Ã© o objetivo principal deste workflow?
+3. Para que tipo de projeto isto Ã©? (greenfield/brownfield, UI/service/fullstack)
+4. Qual Ã© o resultado esperado?
+```
+
+### Passo 2: Design da SequÃªncia do Workflow
 ```text
-ELICIT: Workflow Sequence and Flow
-1. What are the main execution steps/phases? (e.g., "planning", "implementation", "testing")
-2. What is the exact step order (`workflow.sequence`)?
-3. Are there any parallel activities?
-4. Are there decision points or conditional flows?
-5. What are the exit criteria for each step?
+ELICIT: SequÃªncia e Fluxo do Workflow
+1. Quais sÃ£o as principais etapas/fases de execuÃ§Ã£o? (e.g., "planning", "implementation", "testing")
+2. Qual Ã© a ordem exata das etapas (`workflow.sequence`)?
+3. Existem atividades paralelas?
+4. Existem pontos de decisÃ£o ou fluxos condicionais?
+5. Quais sÃ£o os critÃ©rios de saÃ­da para cada etapa?
 ```
 
-### Step 3: Agent Orchestration
+### Passo 3: OrquestraÃ§Ã£o de Agentes
 ```text
-ELICIT: Agent Participation
-For each workflow step:
-1. Which agent(s) are involved?
-2. What are their specific responsibilities?
-3. How do agents hand off work between steps?
-4. Are there any approval requirements?
+ELICIT: ParticipaÃ§Ã£o de Agentes
+Para cada etapa do workflow:
+1. Qual(is) agente(s) estÃ¡(Ã£o) envolvido(s)?
+2. Quais sÃ£o suas responsabilidades especÃ­ficas?
+3. Como os agentes fazem o handoff do trabalho entre etapas?
+4. Existem requisitos de aprovaÃ§Ã£o?
 ```
 
-### Step 4: Resource Requirements
+### Passo 4: Requisitos de Recursos
 ```
-ELICIT: Resources and Dependencies
-1. What templates are needed?
-2. What data files are required?
-3. Are there external dependencies?
-4. What are the input requirements?
-5. What outputs are produced?
+ELICIT: Recursos e DependÃªncias
+1. Quais templates sÃ£o necessÃ¡rios?
+2. Quais arquivos de dados sÃ£o obrigatÃ³rios?
+3. Existem dependÃªncias externas?
+4. Quais sÃ£o os requisitos de entrada?
+5. Quais saÃ­das sÃ£o produzidas?
 ```
 
-## Implementation Steps
+## Passos de ImplementaÃ§Ã£o
 
-1. **Validate Workflow Design**
-   - Check for circular dependencies
-   - Validate agent availability
-   - Ensure logical flow progression
-   - Verify all resources exist
+1. **Validar o Design do Workflow**
+   - Verifique se hÃ¡ dependÃªncias circulares
+   - Valide a disponibilidade dos agentes
+   - Garanta uma progressÃ£o de fluxo lÃ³gica
+   - Verifique se todos os recursos existem
 
-2. **Generate Workflow Structure**
+2. **Gerar a Estrutura do Workflow**
    ```yaml
    workflow:
      id: {workflow-name}
-     name: {Workflow Display Name}
+     name: {Nome de ExibiÃ§Ã£o do Workflow}
      version: {semver}
-     description: {Purpose and overview}
+     description: {PropÃ³sito e visÃ£o geral}
      type: {greenfield|brownfield}
      scope: {ui|service|fullstack}
  
-     # Optional compatibility metadata (non-executable)
+     # Metadados de compatibilidade opcionais (nÃ£o executÃ¡veis)
      phases:
-       - phase_1: {phase label}
-       - phase_2: {phase label}
+       - phase_1: {rÃ³tulo da fase}
+       - phase_2: {rÃ³tulo da fase}
  
-     # Canonical executable contract
+     # Contrato executÃ¡vel canÃ´nico
      sequence:
        - step: {step-slug}
          id: {step-id}
          phase: {1..N}
-         phase_name: {Phase Display Name}
+         phase_name: {Nome de ExibiÃ§Ã£o da Fase}
          agent: {agent-id}
          task: {task-name}
-         action: {what happens}
+         action: {o que acontece}
          requires: {previous-step-id}
          outputs:
            - {artifact-name}
@@ -346,31 +346,31 @@ ELICIT: Resources and Dependencies
            action: workflow_complete
 
      handoff_prompts:
-       {from}_to_{to}: {handoff guidance}
+       {from}_to_{to}: {orientaÃ§Ã£o de handoff}
    ```
 
-3. **Add Security Controls**
-   - Step authorization requirements
-   - Data access restrictions
-   - Audit logging points
-   - Approval workflows
+3. **Adicionar Controles de SeguranÃ§a**
+   - Requisitos de autorizaÃ§Ã£o de etapa
+   - RestriÃ§Ãµes de acesso a dados
+   - Pontos de registro de auditoria
+   - Workflows de aprovaÃ§Ã£o
 
-4. **Create Workflow File**
-   - Resolve output path based on target_context:
-     - `core` → `.aiox-core/development/workflows/{workflow-name}.yaml`
-     - `squad` → `squads/{squad_name}/workflows/{workflow-name}.yaml`
-     - `hybrid` → `squads/{squad_name}/workflows/{workflow-name}.yaml`
-   - Write structured YAML definition
-   - Include comprehensive documentation
+4. **Criar o Arquivo de Workflow**
+   - Resolva o caminho de saÃ­da com base em target_context:
+     - `core` â†’ `.aiox-core/development/workflows/{workflow-name}.yaml`
+     - `squad` â†’ `squads/{squad_name}/workflows/{workflow-name}.yaml`
+     - `hybrid` â†’ `squads/{squad_name}/workflows/{workflow-name}.yaml`
+   - Escreva a definiÃ§Ã£o YAML estruturada
+   - Inclua documentaÃ§Ã£o abrangente
 
-4.5. **Update Squad Manifest** (when target_context="squad" or "hybrid")
-   - Load `squads/{squad_name}/squad.yaml`
-   - Initialize `components.workflows` array if it does not exist
-   - Add workflow filename to `components.workflows[]` (skip if already present)
-   - Create backup of `squad.yaml` before saving
-   - Save updated manifest
+4.5. **Atualizar o Manifesto do Squad** (quando target_context="squad" ou "hybrid")
+   - Carregue `squads/{squad_name}/squad.yaml`
+   - Inicialize o array `components.workflows` se ele nÃ£o existir
+   - Adicione o nome do arquivo do workflow a `components.workflows[]` (pule se jÃ¡ estiver presente)
+   - Crie um backup de `squad.yaml` antes de salvar
+   - Salve o manifesto atualizado
 
-5. **Update Memory Layer**
+5. **Atualizar a Camada de MemÃ³ria**
    ```javascript
    await memoryClient.addMemory({
      type: 'workflow_created',
@@ -386,45 +386,45 @@ ELICIT: Resources and Dependencies
    });
    ```
 
-6. **Generate Documentation**
-   - Create workflow diagram (text-based)
-   - Document each step's purpose
-   - List all handoff points
-   - Include troubleshooting guide
+6. **Gerar DocumentaÃ§Ã£o**
+   - Crie o diagrama do workflow (baseado em texto)
+   - Documente o propÃ³sito de cada etapa
+   - Liste todos os pontos de handoff
+   - Inclua um guia de soluÃ§Ã£o de problemas
 
-## Validation Checklist
-- [ ] Workflow name is unique and valid
-- [ ] All sequence steps have clear purposes
-- [ ] Agent assignments are valid
-- [ ] No circular dependencies
-- [ ] All resources exist
-- [ ] Transitions are logical
-- [ ] Security controls defined
-- [ ] Memory layer updated
+## Checklist de ValidaÃ§Ã£o
+- [ ] O nome do workflow Ã© Ãºnico e vÃ¡lido
+- [ ] Todas as etapas da sequÃªncia tÃªm propÃ³sitos claros
+- [ ] As atribuiÃ§Ãµes de agentes sÃ£o vÃ¡lidas
+- [ ] Sem dependÃªncias circulares
+- [ ] Todos os recursos existem
+- [ ] As transiÃ§Ãµes sÃ£o lÃ³gicas
+- [ ] Os controles de seguranÃ§a estÃ£o definidos
+- [ ] A camada de memÃ³ria foi atualizada
 
-## Error Handling
-- If workflow exists: Offer versioning or update
-- If agents missing: List required agents
-- If circular dependency: Show cycle and suggest fix
-- If resources missing: List and offer to create
+## Tratamento de Erros
+- Se o workflow existir: OfereÃ§a versionamento ou atualizaÃ§Ã£o
+- Se houver agentes ausentes: Liste os agentes necessÃ¡rios
+- Se houver dependÃªncia circular: Mostre o ciclo e sugira uma correÃ§Ã£o
+- Se houver recursos ausentes: Liste-os e ofereÃ§a-se para criÃ¡-los
 
-## Success Output
+## SaÃ­da de Sucesso
 ```
-✅ Workflow '{workflow-name}' created successfully!
-📁 Location: {resolved-path}
-   (core → .aiox-core/development/workflows/{workflow-name}.yaml)
-   (squad → squads/{squad_name}/workflows/{workflow-name}.yaml)
-   (hybrid → squads/{squad_name}/workflows/{workflow-name}.yaml)
-📊 Workflow Summary:
-   - Context: {target_context} {squad_name if applicable}
-   - Steps: {step-count}
-   - Agents: {agent-list}
-   - Type: {workflow-type}
-🚀 To use: Select workflow when starting new project
+âœ… Workflow '{workflow-name}' criado com sucesso!
+ðŸ“ LocalizaÃ§Ã£o: {resolved-path}
+   (core â†’ .aiox-core/development/workflows/{workflow-name}.yaml)
+   (squad â†’ squads/{squad_name}/workflows/{workflow-name}.yaml)
+   (hybrid â†’ squads/{squad_name}/workflows/{workflow-name}.yaml)
+ðŸ“Š Resumo do Workflow:
+   - Contexto: {target_context} {squad_name if applicable}
+   - Passos: {step-count}
+   - Agentes: {agent-list}
+   - Tipo: {workflow-type}
+ðŸš€ Para usar: Selecione o workflow ao iniciar um novo projeto
 ```
 
-## Workflow Execution Notes
-- Workflows are selected during project initialization
-- Each step execution is logged in memory
-- Progress tracking available through memory queries
-- Agents automatically receive step-specific context
+## Notas de ExecuÃ§Ã£o de Workflow
+- Os workflows sÃ£o selecionados durante a inicializaÃ§Ã£o do projeto
+- A execuÃ§Ã£o de cada etapa Ã© registrada na memÃ³ria
+- O rastreamento de progresso estÃ¡ disponÃ­vel atravÃ©s de consultas Ã  memÃ³ria
+- Os agentes recebem automaticamente o contexto especÃ­fico de cada etapa

@@ -1,45 +1,45 @@
-# Greenfield Service Workflow
+# Workflow Greenfield de Serviço
 
 > **EN** | [PT](../../aiox-workflows/greenfield-service-workflow.md) | [ES](../../es/aiox-workflows/greenfield-service-workflow.md)
 
 ---
 
-**Full documentation available in:** [Portuguese Version](../../aiox-workflows/greenfield-service-workflow.md)
+**Documentação completa disponível em:** [Versão em Português](../../aiox-workflows/greenfield-service-workflow.md)
 
 ---
 
-## Summary
+## Resumo
 
-The **Greenfield Service Workflow** is designed for creating new backend services and APIs from scratch. It focuses on:
+O **Workflow Greenfield de Serviço** foi projetado para criar novos serviços de backend e APIs do zero. Ele foca em:
 
-- API design and specification
-- Service architecture patterns
-- Database modeling
-- Authentication and authorization
-- API documentation (OpenAPI/Swagger)
-- Testing strategies for services
+- Design e especificação de API
+- Padrões de arquitetura de serviços
+- Modelagem de banco de dados
+- Autenticação e autorização
+- Documentação de API (OpenAPI/Swagger)
+- Estratégias de teste para serviços
 
-### When to Use
+### Quando Usar
 
-- Building a new backend service or microservice
-- Creating REST or GraphQL APIs
-- Developing backend-only projects without frontend components
+- Construir um novo serviço de backend ou microsserviço
+- Criar APIs REST ou GraphQL
+- Desenvolver projetos exclusivamente de backend, sem componentes de frontend
 
-### Key Agents
+### Agentes Principais
 
-- `@architect` - Service architecture and API design
-- `@dev` - Backend implementation
-- `@data-engineer` - Database schema design
-- `@qa` - API testing and quality
+- `@architect` - Arquitetura de serviço e design de API
+- `@dev` - Implementação de backend
+- `@data-engineer` - Design de schema de banco de dados
+- `@qa` - Testes de API e qualidade
 
-### Main Phases
+### Fases Principais
 
-1. **API Design** - Contract-first API specification
-2. **Architecture** - Service patterns and structure
-3. **Data Layer** - Database design and migrations
-4. **Implementation** - Service logic development
-5. **Testing** - Integration and contract tests
+1. **Design de API** - Especificação de API contract-first
+2. **Arquitetura** - Padrões e estrutura do serviço
+3. **Camada de Dados** - Design de banco de dados e migrations
+4. **Implementação** - Desenvolvimento da lógica do serviço
+5. **Testes** - Testes de integração e de contrato
 
 ---
 
-*For complete details, diagrams, and step-by-step instructions, see the [Portuguese documentation](../../aiox-workflows/greenfield-service-workflow.md).*
+*Para detalhes completos, diagramas e instruções passo a passo, veja a [documentação em Português](../../aiox-workflows/greenfield-service-workflow.md).*

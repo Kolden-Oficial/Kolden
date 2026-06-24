@@ -1,37 +1,37 @@
 # {{Squad Name}}
 
-{{Brief description of what this Squad does}}
+{{Breve descrição do que este Squad faz}}
 
-## Installation
+## Instalação
 
 ```bash
 npm install {{squad-name}}
 ```
 
-## Usage
+## Uso
 
 ```bash
-# Activate the agent
+# Ativar o agente
 @{{agent-name}}
 
-# Use commands
+# Usar comandos
 *{{command-name}}
 ```
 
-## Features
+## Funcionalidades
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Funcionalidade 1
+- Funcionalidade 2
+- Funcionalidade 3
 
-## Documentation
+## Documentação
 
-See the [full documentation](docs/README.md) for detailed usage.
+Veja a [documentação completa](docs/README.md) para uso detalhado.
 
-## Contributing
+## Contribuindo
 
-Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
+Contribuições são bem-vindas! Veja [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## License
+## Licença
 
-MIT License - see [LICENSE](LICENSE)
+Licença MIT - veja [LICENSE](LICENSE)

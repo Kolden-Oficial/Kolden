@@ -10,6 +10,9 @@ scrapy               # crawl em escala, dedup de URL, extração exaustiva de li
 gpt-researcher       # pesquisa LLM multi-retriever + citação + relatório (Apache-2.0)
 skyvern              # automação por visão LLM em DOM hostil (AGPL-3.0 — uso interno; ver _origem.md)
 apify-client         # cliente oficial da Apify: roda actors gerenciados do Store (camada `apify`)
+requests             # camada `viral` (SociaVault, REST com header X-API-Key)
+yt-dlp               # camada `transcrever`: baixa áudio de TikTok/IG/YouTube (Unlicense / domínio público)
+speechmatics-python  # camada `transcrever`: STT pt-BR (engine padrão); Deepgram (deepgram-sdk) é fallback opcional
 
 # Observações:
 # - Scrapling e Skyvern usam Playwright; rode `playwright install chromium` após o pip install.

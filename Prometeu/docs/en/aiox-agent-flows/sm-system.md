@@ -1,26 +1,26 @@
-# @sm (River) - System Documentation
+# @sm (River) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/sm-system.md) | [ES](../../es/aiox-agent-flows/sm-system.md)
 
 ---
 
-## Summary
+## Resumo
 
-**@sm** (River) is the **Facilitator** of the AIOX agent system. This agent is responsible for:
+O **@sm** (River) é o **Facilitador** do sistema de agentes AIOX. Este agente é responsável por:
 
-- Scrum Master duties and agile facilitation
-- Managing sprints and ceremonies
-- Removing blockers and impediments
-- Ensuring team collaboration and flow
-
----
-
-## Full Documentation
-
-For complete documentation including flowcharts, command mappings, integrations, and troubleshooting, please refer to the Portuguese version:
-
-**[View Full Documentation (PT)](../../aiox-agent-flows/sm-system.md)**
+- Funções de Scrum Master e facilitação ágil
+- Gerenciar sprints e cerimônias
+- Remover blockers e impedimentos
+- Garantir a colaboração e o fluxo da equipe
 
 ---
 
-*AIOX Agent Flows - @sm System v1.0*
+## Documentação Completa
+
+Para a documentação completa, incluindo fluxogramas, mapeamentos de comandos, integrações e troubleshooting, consulte a versão em português:
+
+**[Ver Documentação Completa (PT)](../../aiox-agent-flows/sm-system.md)**
+
+---
+
+*AIOX Agent Flows - Sistema @sm v1.0*

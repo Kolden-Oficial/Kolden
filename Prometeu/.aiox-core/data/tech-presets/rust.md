@@ -31,11 +31,11 @@ preset:
 
 ---
 
-## Design Patterns (The Essential 5)
+## Design Patterns (Os 5 Essenciais)
 
 ### Pattern 1: Trait Contract Pattern
 
-**Purpose:** Definir fronteiras estaveis entre dominio e infraestrutura.
+**Propósito:** Definir fronteiras estaveis entre dominio e infraestrutura.
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 10/10
 
@@ -50,12 +50,12 @@ pub trait OrderRepository: Send + Sync {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Acoplamento com driver de banco
 - Mudancas de infra quebrando use cases
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Traits tornam contratos explicitos e mockaveis
 - Ownership evita estados invalidos compartilhados
@@ -64,7 +64,7 @@ pub trait OrderRepository: Send + Sync {
 
 ### Pattern 2: Use Case Service Pattern
 
-**Purpose:** Centralizar regras de negocio em funcoes puras + dependencias injetadas.
+**Propósito:** Centralizar regras de negocio em funcoes puras + dependencias injetadas.
 
 **Execution Score:** 9/10 | **Anti-Bug Score:** 9/10
 
@@ -89,12 +89,12 @@ where
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Regra duplicada em handlers
 - Sequencia de passos inconsistente
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Fluxo explicito com `Result`
 - Estado imutavel por padrao
@@ -103,7 +103,7 @@ where
 
 ### Pattern 3: Error Enum Pattern
 
-**Purpose:** Padronizar erros de dominio e infraestrutura sem strings soltas.
+**Propósito:** Padronizar erros de dominio e infraestrutura sem strings soltas.
 
 **Execution Score:** 9/10 | **Anti-Bug Score:** 9/10
 
@@ -121,12 +121,12 @@ pub enum AppError {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Tratamento inconsistente de falhas
 - Perda de contexto de erro
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Match exhaustivo previne casos nao tratados
 - Conversoes ficam declarativas
@@ -135,7 +135,7 @@ pub enum AppError {
 
 ### Pattern 4: Tokio Task Supervisor Pattern
 
-**Purpose:** Executar jobs concorrentes com shutdown limpo e controle de falhas.
+**Propósito:** Executar jobs concorrentes com shutdown limpo e controle de falhas.
 
 **Execution Score:** 8/10 | **Anti-Bug Score:** 8/10
 
@@ -153,12 +153,12 @@ pub async fn run_worker(stop: CancellationToken) {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Tasks orfas em deploy/shutdown
 - Loop infinito sem cancelamento
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Cancel token explicito
 - Convergencia previsivel em encerramento
@@ -167,7 +167,7 @@ pub async fn run_worker(stop: CancellationToken) {
 
 ### Pattern 5: Builder Pattern (Tests Only)
 
-**Purpose:** Construir cenarios de teste sem repeticao extensa.
+**Propósito:** Construir cenarios de teste sem repeticao extensa.
 
 **Execution Score:** 8/10 | **Anti-Bug Score:** 8/10
 
@@ -194,19 +194,19 @@ impl PlaceOrderBuilder {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Setup repetitivo
 - Testes menos legiveis
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Cenarios ficam declarativos
 - Evolucao de command centralizada
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 ```text
 /src
@@ -226,7 +226,7 @@ impl PlaceOrderBuilder {
   /e2e                      # Fluxos ponta a ponta
 ```
 
-### Structure Rationale
+### Justificativa da Estrutura
 
 - **Bounded modules:** Cada contexto com fronteiras fortes
 - **Traits first:** Contratos antes de adapter
@@ -236,7 +236,7 @@ impl PlaceOrderBuilder {
 
 ## Tech Stack
 
-| Category | Technology | Version | Purpose |
+| Categoria | Tecnologia | Versão | Propósito |
 | -------- | ---------- | ------- | ------- |
 | Language | Rust | 1.77+ | Runtime principal |
 | Web | Axum | ^0.8 | API HTTP assíncrona |
@@ -248,7 +248,7 @@ impl PlaceOrderBuilder {
 | Unit Test | rstest | latest | Parametrizacao de testes |
 | Integration Test | testcontainers | latest | Dependencias reais |
 
-### Required Dependencies
+### Dependências Necessárias
 
 ```bash
 cargo add axum tokio --features full
@@ -264,11 +264,11 @@ cargo add --dev testcontainers
 
 ---
 
-## Coding Standards
+## Padrões de Código
 
-### Naming Conventions
+### Convenções de Nomenclatura
 
-| Element | Convention | Example |
+| Elemento | Convenção | Exemplo |
 | ------- | ---------- | ------- |
 | Modules | snake_case | `order_service` |
 | Structs/Enums | PascalCase | `OrderService`, `AppError` |
@@ -277,7 +277,7 @@ cargo add --dev testcontainers
 | Constants | UPPER_SNAKE_CASE | `MAX_RETRIES` |
 | Tests | `should_*` | `should_reject_empty_items` |
 
-### Critical Rules
+### Regras Críticas
 
 1. **No `unwrap()` in Production Paths:** Use `?` e tratamento explicito.
 2. **Error Boundaries:** Converter erros de infra para `AppError` na borda.
@@ -285,7 +285,7 @@ cargo add --dev testcontainers
 4. **Async Discipline:** Evitar blocking calls no runtime tokio.
 5. **Public API Minimal:** Exportar apenas o necessario via `mod.rs`.
 
-### Rust Quality Baseline
+### Baseline de Qualidade Rust
 
 ```bash
 cargo fmt --all
@@ -295,9 +295,9 @@ cargo test --all
 
 ---
 
-## Testing Strategy
+## Estratégia de Testes
 
-### Test Pyramid
+### Pirâmide de Testes
 
 ```text
          /\
@@ -309,25 +309,25 @@ cargo test --all
    /----------------\
 ```
 
-### What to Test
+### O Que Testar
 
-#### Always Test (Critical)
+#### Sempre Testar (Crítico)
 
 - [ ] Invariantes de dominio
 - [ ] Conversoes de erro
 - [ ] Casos de uso principais e falhas
 
-#### Consider Testing
+#### Considerar Testar
 
 - [ ] Handlers Axum com req/res reais
 - [ ] Timeouts e cancelamento em workers
 
-#### Never Test
+#### Nunca Testar
 
 - [ ] Implementacao interna de crates terceiros
 - [ ] Codigo gerado sem regra adicional
 
-### Coverage Goals
+### Metas de Cobertura
 
 ```text
 - Domain/Application: 90%+
@@ -335,7 +335,7 @@ cargo test --all
 - Overall: 75%+
 ```
 
-### Test Template
+### Template de Teste
 
 ```rust
 #[tokio::test]
@@ -353,25 +353,25 @@ async fn should_place_order_successfully() {
 
 ---
 
-## Token Economy Strategies
+## Estratégias de Economia de Tokens
 
-### Strategy 1: Pass Trait + Test First
+### Estratégia 1: Passar Trait + Teste Primeiro
 
 Pedir implementacao com base em trait e teste alvo reduz contexto.
 
-### Strategy 2: Reuse Module Skeleton
+### Estratégia 2: Reusar Esqueleto de Módulo
 
 Criar um modulo referencia e copiar padrao para features novas.
 
-### Strategy 3: Keep Lifetimes Hidden Where Possible
+### Estratégia 3: Manter Lifetimes Ocultos Onde Possível
 
 Usar tipos owns em boundaries publicos para prompts mais objetivos.
 
 ---
 
-## Bug Prevention Stack
+## Stack de Prevenção de Bugs
 
-| Layer | Catches | Implementation |
+| Camada | Captura | Implementação |
 | ----- | ------- | -------------- |
 | Compiler ownership model | 40% | Borrow checker |
 | Clippy + lint rigor | 25% | `-D warnings` |
@@ -380,7 +380,7 @@ Usar tipos owns em boundaries publicos para prompts mais objetivos.
 
 ---
 
-## Patterns to AVOID
+## Padrões a EVITAR
 
 ### `unwrap()` Everywhere
 
@@ -396,9 +396,9 @@ Uso de `static mut` ou estados globais sem `Mutex/RwLock`.
 
 ---
 
-## File Templates
+## Templates de Arquivo
 
-### Port Template
+### Template de Port
 
 ```rust
 #[async_trait::async_trait]
@@ -407,7 +407,7 @@ pub trait NotificationPort {
 }
 ```
 
-### Service Template
+### Template de Service
 
 ```rust
 pub struct UseCaseService<R> {
@@ -421,7 +421,7 @@ impl<R: RepositoryPort> UseCaseService<R> {
 }
 ```
 
-### Handler Template
+### Template de Handler
 
 ```rust
 pub async fn create_order(
@@ -436,15 +436,15 @@ pub async fn create_order(
 
 ---
 
-## Integration with AIOX
+## Integração com o AIOX
 
-### Recommended Workflow
+### Workflow Recomendado
 
 1. `@architect` define modules e boundaries pelo preset `rust`
 2. `@dev` implementa use cases com traits e erros tipados
 3. `@qa` valida cobertura de invariantes e resiliencia async
 
-### AIOX Commands
+### Comandos AIOX
 
 ```bash
 @dev "Follow the rust preset patterns for this service"
@@ -453,7 +453,7 @@ pub async fn create_order(
 
 ---
 
-## Checklist for New Features
+## Checklist para Novas Features
 
 ```markdown
 - [ ] Definir trait ports e command/response
@@ -468,9 +468,9 @@ pub async fn create_order(
 
 ## Changelog
 
-| Date       | Version | Changes |
+| Data       | Versão  | Mudanças |
 | ---------- | ------- | ------- |
-| 2026-02-19 | 1.0.0   | Initial Rust preset |
+| 2026-02-19 | 1.0.0   | Preset Rust inicial |
 
 ---
 

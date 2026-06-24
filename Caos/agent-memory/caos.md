@@ -12,6 +12,14 @@
 - `squad.yaml` VIVO (Aletheia/Pheme) usa chaves estruturais em INGLÊS (`squad/name/display_name/tiers/agents/handoffs/external_handoffs/cross_cutting/settings`), divergindo do `modelos/squad-base.yaml` (PT: `nome/dominio/agentes`). Para nova squad seguir a convenção VIVA: chaves em inglês, só prosa/descrições em PT | 2026-06-20
 - Fan-out de 3 Explore agents em paralelo abre bem uma criação de squad de domínio novo: (1) fábrica Caos + critérios/scorecard, (2) anatomia de squad viva + runtime Hermes, (3) garimpo externo (GitHub). Reúne todo o contexto antes do Plan agent | 2026-06-20
 
+### Evolução da própria fábrica (meta-arquitetura)
+- Pedido de "nova capacidade" pode já existir à mão em squads reais: o padrão de herança histórica (`real_person:true` + `biography` + `core_frameworks`) estava em produção (`Aletheia/agents/eric-ries.md`, `Caliope/agents/david-ogilvy.md`). O gap era a FÁBRICA gerar sistematicamente, não inventar → rebaixa CREATE para ADAPT. Antes de propor skill nova, grep nos squads existentes pelo padrão | 2026-06-22
+- Docs do Caos (`modelos/`, `CLAUDE.md`) DIVERGEM dos squads vivos e ficam desatualizados: `criacao-de-squad/SKILL.md` ainda apontava `squads/<nome>/`, `system-prompt.md`, `especialistas/` — o real (Aletheia) é raiz `C:\Kolden\<Nome>\` + `agents/<chief>.md` + `CLAUDE.md`. Ao mexer na fábrica, conformar a doc ao padrão-ouro REAL, não ao texto antigo | 2026-06-22
+- REUSE cross-projeto sem duplicar: `criacao-de-mcp` virou wrapper fino do `Prometeu/.claude/skills/mcp-builder`; checklist roda via `checklist-runner` do Prometeu. Padrão: referência por caminho + registrar a dependência como entidade com `usadoPor:` (não copiar a lógica). Não importar arquivos de `.aiox-core/` (camada L2 read-only) | 2026-06-22
+- Fase 5 ganhou ordem topológica com gate entre etapas (5.0→5.6: orquestrador→especialistas→habilidades→MCPs→reflexos/memória→referências). Mitigar rigidez em SOLO fazendo as etapas 5.1/5.2 COLAPSAREM (orquestrador = o próprio agente) em vez de criar dois fluxos separados | 2026-06-22
+- Distinção interno/cliente: melhor como RAMO CONDICIONAL no diagnóstico (Rodada 0 pergunta sempre; Rodadas 3/5 ramificam LGPD/handoff só se cliente) do que como rodada nova — evita burocratizar criação interna trivial | 2026-06-22
+- Fonte de referência híbrida (decisão do Ronan): ler `referencias/biblioteca/<dominio>/` (PDFs/planilhas locais) ANTES da web; web só complementa. Material local de figura histórica vai direto à extração sem re-triagem de score | 2026-06-22
+
 ### Pesquisa de Mercado / Scraping (Argos)
 - REUSE existe na camada de RUNTIME, não só no registro de entidades: ANTES de vendorizar repo externo para um agente, checar `Hermes/toolsets.py` (web_search/web_extract/browser_*/x_search/vision_analyze) + MCPs da sessão (Firecrawl/Tavily/Exa/Apollo/Browserbase). Muito do "precisa clonar repo" já é tool nativa. No Argos: base = tools Hermes; vendorizar só anti-bot/stealth (Scrapling), crawl-escala (Scrapy), JS pesado (Crawlee), visão (Skyvern), pesquisa-LLM (GPT-Researcher) | 2026-06-20
 - Domínio com risco de compliance/ToS (scraping social): separar FISICAMENTE um `modulo-cinza/` opt-in (`settings.activation.modulo_cinza: false`) com guardrail PreToolUse (HALT sem confirmação) + um especialista-sentinela dedicado como único portão + credenciais em path Infisical segregado (`/kolden/<agente>/cinza/*`). Não descartar a capacidade nem embuti-la no fluxo principal. O apetite de risco é decisão do usuário (AskUserQuestion) | 2026-06-20
@@ -30,6 +38,7 @@
 ## Candidatos a Promoção
 <!-- Padrões vistos em 3+ agentes — candidatos para CLAUDE.md ou regras -->
 - **REUSE inclui a camada de runtime (tools nativas Hermes + MCPs), não só o registro de entidades — checar antes de vendorizar/criar capacidade** | Origem: Caos (Argos), Aletheia, Peitho | Detectado: 2026-06-20
+- **Antes de CRIAR uma capacidade nova, grep nos squads/agentes vivos: o padrão pode já existir à mão (rebaixa CREATE→ADAPT). A doc do Caos costuma estar atrás do que os squads reais já fazem** | Origem: Caos (herança histórica), criacao-de-squad, Aletheia | Detectado: 2026-06-22
 
 ## Arquivado
 <!-- Padrões não mais relevantes — mantidos para histórico -->

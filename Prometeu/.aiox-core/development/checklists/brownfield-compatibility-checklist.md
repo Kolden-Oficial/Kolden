@@ -1,114 +1,114 @@
-# Brownfield Compatibility Checklist
+# Checklist de Compatibilidade Brownfield
 
 > Story AIOX-DIFF-4.3.2: Checklist formal de compatibilidade retroativa
 
-## Pre-Migration Compatibility Check
+## Verificação de Compatibilidade Pré-Migração
 
-### 1. Source Control Status
-- [ ] All changes committed to version control
-- [ ] Working branch created from main/master
-- [ ] Remote backup verified (push before migration)
+### 1. Status do Controle de Versão
+- [ ] Todas as mudanças commitadas no controle de versão
+- [ ] Branch de trabalho criado a partir de main/master
+- [ ] Backup remoto verificado (push antes da migração)
 
-### 2. Existing Configuration Preservation
-- [ ] `.env` files backed up (never overwritten by AIOX)
-- [ ] `package.json` scripts preserved
-- [ ] Existing linting config (.eslintrc, .prettierrc) detected
-- [ ] CI/CD workflows (.github/workflows) inventoried
+### 2. Preservação da Configuração Existente
+- [ ] Arquivos `.env` com backup (nunca sobrescritos pelo AIOX)
+- [ ] Scripts do `package.json` preservados
+- [ ] Configuração de linting existente (.eslintrc, .prettierrc) detectada
+- [ ] Workflows de CI/CD (.github/workflows) inventariados
 
-### 3. Dependency Compatibility
-- [ ] Node.js version compatible (>=18)
-- [ ] No conflicting global dependencies
-- [ ] Lock file (package-lock.json/yarn.lock) preserved
+### 3. Compatibilidade de Dependências
+- [ ] Versão do Node.js compatível (>=18)
+- [ ] Nenhuma dependência global conflitante
+- [ ] Lock file (package-lock.json/yarn.lock) preservado
 
-### 4. Directory Structure Analysis
-- [ ] `docs/` directory status checked (empty/existing)
-- [ ] `.aiox-core/` not present (fresh install)
-- [ ] No naming conflicts with AIOX directories
+### 4. Análise da Estrutura de Diretórios
+- [ ] Status do diretório `docs/` verificado (vazio/existente)
+- [ ] `.aiox-core/` não presente (instalação nova)
+- [ ] Nenhum conflito de nomes com os diretórios do AIOX
 
-## During Migration Checks
+## Verificações Durante a Migração
 
-### 5. Non-Destructive Operations
-- [ ] AIOX creates new files, never overwrites existing
-- [ ] Merge conflicts surfaced for user decision
-- [ ] Original files preserved with `.backup` if conflict
+### 5. Operações Não Destrutivas
+- [ ] AIOX cria novos arquivos, nunca sobrescreve os existentes
+- [ ] Conflitos de merge expostos para decisão do usuário
+- [ ] Arquivos originais preservados com `.backup` em caso de conflito
 
-### 6. Configuration Merge Strategy
-- [ ] Existing `.gitignore` entries preserved + AIOX entries added
-- [ ] TypeScript config extended (not replaced) if existing
-- [ ] ESLint rules merged (not overwritten)
+### 6. Estratégia de Merge de Configuração
+- [ ] Entradas existentes do `.gitignore` preservadas + entradas do AIOX adicionadas
+- [ ] Config do TypeScript estendido (não substituído) se existente
+- [ ] Regras do ESLint mescladas (não sobrescritas)
 
-### 7. Rollback Points
-- [ ] Pre-migration commit hash recorded
-- [ ] AIOX files clearly identified (can be removed cleanly)
-- [ ] No modifications to existing source code during install
+### 7. Pontos de Rollback
+- [ ] Hash do commit pré-migração registrado
+- [ ] Arquivos do AIOX claramente identificados (podem ser removidos de forma limpa)
+- [ ] Nenhuma modificação no código-fonte existente durante a instalação
 
-## Post-Migration Validation
+## Validação Pós-Migração
 
-### 8. Existing Functionality
-- [ ] `npm test` passes (if tests existed before)
-- [ ] `npm run build` succeeds (if build existed)
-- [ ] Application starts normally
+### 8. Funcionalidade Existente
+- [ ] `npm test` passa (se já existiam testes antes)
+- [ ] `npm run build` é bem-sucedido (se existia build)
+- [ ] Aplicação inicia normalmente
 
-### 9. AIOX Integration
-- [ ] `npx aiox-core doctor` reports healthy
-- [ ] Agent activation works (@dev, @architect, etc.)
-- [ ] Existing docs not duplicated
+### 9. Integração do AIOX
+- [ ] `npx aiox-core doctor` reporta saudável
+- [ ] Ativação de agentes funciona (@dev, @architect, etc.)
+- [ ] Docs existentes não duplicados
 
-### 10. Rollback Verification
-- [ ] `git diff HEAD~1` shows only AIOX additions
-- [ ] `git checkout HEAD~1 -- .` would restore pre-AIOX state
-- [ ] No orphaned AIOX processes or files
+### 10. Verificação de Rollback
+- [ ] `git diff HEAD~1` mostra apenas adições do AIOX
+- [ ] `git checkout HEAD~1 -- .` restauraria o estado pré-AIOX
+- [ ] Nenhum processo ou arquivo órfão do AIOX
 
 ---
 
-## Compatibility Matrix
+## Matriz de Compatibilidade
 
-| Existing Config | AIOX Behavior | User Action Required |
+| Configuração Existente | Comportamento do AIOX | Ação do Usuário Necessária |
 |-----------------|---------------|---------------------|
-| `.eslintrc.*` | Detect + preserve | None |
-| `.prettierrc.*` | Detect + preserve | None |
-| `tsconfig.json` | Extend (not replace) | Review extends |
-| `jest.config.*` | Detect + preserve | None |
-| `docs/*.md` | Skip (don't overwrite) | Manual merge if needed |
-| `.github/workflows/*` | Inventory only | User decides integration |
-| `package.json` scripts | Preserve all | None |
+| `.eslintrc.*` | Detectar + preservar | Nenhuma |
+| `.prettierrc.*` | Detectar + preservar | Nenhuma |
+| `tsconfig.json` | Estender (não substituir) | Revisar os extends |
+| `jest.config.*` | Detectar + preservar | Nenhuma |
+| `docs/*.md` | Pular (não sobrescrever) | Merge manual se necessário |
+| `.github/workflows/*` | Apenas inventariar | Usuário decide a integração |
+| Scripts do `package.json` | Preservar todos | Nenhuma |
 
-## Rollback Procedure
+## Procedimento de Rollback
 
-If migration fails or is unwanted:
+Se a migração falhar ou não for desejada:
 
 ```bash
-# Option 1: Full rollback to pre-migration state
+# Opção 1: Rollback completo para o estado pré-migração
 git checkout HEAD~1 -- .
 
-# Option 2: Remove only AIOX files
+# Opção 2: Remover apenas os arquivos do AIOX
 rm -rf .aiox-core/
 rm -rf docs/architecture/ docs/prd/ docs/stories/
-# Review and revert .gitignore AIOX entries
+# Revisar e reverter as entradas do AIOX no .gitignore
 
-# Option 3: Soft rollback (keep docs, remove runtime)
+# Opção 3: Rollback suave (manter docs, remover runtime)
 rm -rf .aiox-core/
 ```
 
 ---
 
-## Checklist Usage
+## Uso do Checklist
 
-**Pre-Migration:**
+**Pré-Migração:**
 ```bash
-# Run compatibility check
+# Rodar verificação de compatibilidade
 npx aiox-core doctor --pre-migration
 ```
 
-**Post-Migration:**
+**Pós-Migração:**
 ```bash
-# Validate migration
+# Validar a migração
 npx aiox-core doctor
-npm test  # if tests exist
-npm run build  # if build exists
+npm test  # se houver testes
+npm run build  # se houver build
 ```
 
 ---
 
-*AIOX Brownfield Compatibility Checklist v1.0*
+*Checklist de Compatibilidade Brownfield do AIOX v1.0*
 *Story AIOX-DIFF-4.3.2*

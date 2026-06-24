@@ -1,50 +1,50 @@
-# Story Development Cycle Workflow
+# Workflow do Story Development Cycle
 
 > **EN** | [PT](../../aiox-workflows/story-development-cycle-workflow.md) | [ES](../../es/aiox-workflows/story-development-cycle-workflow.md)
 
 ---
 
-**Full documentation available in:** [Portuguese Version](../../aiox-workflows/story-development-cycle-workflow.md)
+**Documentação completa disponível em:** [Versão em Português](../../aiox-workflows/story-development-cycle-workflow.md)
 
 ---
 
-## Summary
+## Resumo
 
-The **Story Development Cycle Workflow** is the core development process in AIOX. It orchestrates the complete lifecycle of implementing a user story:
+O **Workflow do Story Development Cycle** é o processo central de desenvolvimento no AIOX. Ele orquestra o ciclo de vida completo da implementação de uma user story:
 
-- Story breakdown and task creation
-- Test-first development approach
-- Iterative implementation
-- Code review and quality gates
-- Documentation updates
+- Decomposição da story e criação de tasks
+- Abordagem de desenvolvimento test-first
+- Implementação iterativa
+- Revisão de código e quality gates
+- Atualizações de documentação
 
-### When to Use
+### Quando Usar
 
-- For every story implementation in AIOX
-- Called by greenfield and brownfield workflows
-- After spec-pipeline approval
+- Para toda implementação de story no AIOX
+- Chamado pelos workflows greenfield e brownfield
+- Após a aprovação do spec-pipeline
 
-### Key Agents
+### Agentes Principais
 
-- `@po` - Story management
-- `@dev` - Implementation
-- `@qa` - Quality assurance
+- `@po` - Gestão de stories
+- `@dev` - Implementação
+- `@qa` - Garantia de qualidade
 - `@devops` - Deployment
 
-### Main Phases
+### Fases Principais
 
-1. **Preparation** - Story review and task breakdown
-2. **Development** - Test-first implementation cycle
-3. **Quality** - Code review and testing
-4. **Integration** - Merge and deployment preparation
-5. **Closure** - Story completion and documentation
+1. **Preparação** - Revisão da story e decomposição em tasks
+2. **Desenvolvimento** - Ciclo de implementação test-first
+3. **Qualidade** - Revisão de código e testes
+4. **Integração** - Preparação de merge e deployment
+5. **Encerramento** - Conclusão da story e documentação
 
-### Execution Modes
+### Modos de Execução
 
-- **YOLO** - Fully autonomous execution
-- **Interactive** - Human checkpoints at key decisions
-- **Pre-Flight** - Planning only, no execution
+- **YOLO** - Execução totalmente autônoma
+- **Interactive** - Checkpoints humanos em decisões-chave
+- **Pre-Flight** - Apenas planejamento, sem execução
 
 ---
 
-*For complete details, diagrams, and step-by-step instructions, see the [Portuguese documentation](../../aiox-workflows/story-development-cycle-workflow.md).*
+*Para detalhes completos, diagramas e instruções passo a passo, consulte a [documentação em Português](../../aiox-workflows/story-development-cycle-workflow.md).*

@@ -1,53 +1,53 @@
-# Memory Audit Checklist
+# Checklist de Auditoria de Memória
 
-Periodic checklist for maintaining agent MEMORY.md hygiene across all 10 agents.
+Checklist periódico para manter a higiene do MEMORY.md dos agentes em todos os 10 agentes.
 
-**Frequency:** Once per sprint or after completing an epic.
-**Executor:** Any agent (`@po *execute-checklist memory-audit-checklist`)
-
----
-
-## Steps
-
-### Step 1: Read All MEMORY.md Files
-- [ ] Read all 10 agent MEMORY.md files under `.aiox-core/development/agents/*/MEMORY.md`
-- [ ] Confirm each file has the 3-section structure: `## Active Patterns`, `## Promotion Candidates`, `## Archived`
-
-### Step 2: Identify Cross-Agent Patterns
-- [ ] Cross-reference Active Patterns across all 10 files
-- [ ] Flag patterns that appear in **3+ agent MEMORY.md files** as promotion candidates
-- [ ] Document each candidate with: pattern text, which agents contain it, count
-
-### Step 3: Record Promotion Candidates
-- [ ] For each cross-agent pattern found in Step 2, add to `## Promotion Candidates` in the originating agent's MEMORY.md
-- [ ] Use format: `- **{pattern}** | Source: {agent} | Detected: {YYYY-MM-DD}`
-- [ ] If pattern already exists in Promotion Candidates, skip (no duplicates)
-
-### Step 4: Identify Stale Entries
-- [ ] Review Active Patterns for entries contradicted by current codebase
-- [ ] Review Active Patterns for entries superseded by newer patterns or code changes
-- [ ] Review Active Patterns for entries no longer relevant to current project state
-
-### Step 5: Archive Stale Entries
-- [ ] Move stale entries from `## Active Patterns` to `## Archived`
-- [ ] Use format: `- ~~{pattern}~~ | Archived: {YYYY-MM-DD} | Reason: {reason}`
-- [ ] Valid reasons: "superseded by {X}", "contradicted by {Y}", "no longer relevant"
-
-### Step 6: Report Summary
-- [ ] Total active patterns across all agents
-- [ ] New promotion candidates identified this audit
-- [ ] Entries newly archived this audit
-- [ ] Recommended actions (e.g., "elevate pattern X to .claude/rules/")
+**Frequência:** Uma vez por sprint ou após concluir um epic.
+**Executor:** Qualquer agente (`@po *execute-checklist memory-audit-checklist`)
 
 ---
 
-## Expected Cross-Agent Patterns
+## Passos
 
-Common patterns that typically appear in multiple agents:
+### Passo 1: Ler Todos os Arquivos MEMORY.md
+- [ ] Ler todos os 10 arquivos MEMORY.md dos agentes em `.aiox-core/development/agents/*/MEMORY.md`
+- [ ] Confirmar que cada arquivo tem a estrutura de 3 seções: `## Active Patterns`, `## Promotion Candidates`, `## Archived`
 
-| Pattern | Expected Agents | Action |
+### Passo 2: Identificar Padrões Entre Agentes
+- [ ] Cruzar referências dos Active Patterns em todos os 10 arquivos
+- [ ] Sinalizar padrões que aparecem em **3 ou mais arquivos MEMORY.md de agentes** como candidatos a promoção
+- [ ] Documentar cada candidato com: texto do padrão, quais agentes o contêm, contagem
+
+### Passo 3: Registrar Candidatos a Promoção
+- [ ] Para cada padrão entre agentes encontrado no Passo 2, adicionar em `## Promotion Candidates` no MEMORY.md do agente de origem
+- [ ] Usar o formato: `- **{pattern}** | Source: {agent} | Detected: {YYYY-MM-DD}`
+- [ ] Se o padrão já existir em Promotion Candidates, pular (sem duplicatas)
+
+### Passo 4: Identificar Entradas Obsoletas
+- [ ] Revisar os Active Patterns em busca de entradas contraditas pelo codebase atual
+- [ ] Revisar os Active Patterns em busca de entradas substituídas por padrões mais recentes ou mudanças de código
+- [ ] Revisar os Active Patterns em busca de entradas que não são mais relevantes ao estado atual do projeto
+
+### Passo 5: Arquivar Entradas Obsoletas
+- [ ] Mover entradas obsoletas de `## Active Patterns` para `## Archived`
+- [ ] Usar o formato: `- ~~{pattern}~~ | Archived: {YYYY-MM-DD} | Reason: {reason}`
+- [ ] Razões válidas: "superseded by {X}", "contradicted by {Y}", "no longer relevant"
+
+### Passo 6: Reportar Resumo
+- [ ] Total de padrões ativos em todos os agentes
+- [ ] Novos candidatos a promoção identificados nesta auditoria
+- [ ] Entradas recém-arquivadas nesta auditoria
+- [ ] Ações recomendadas (ex.: "elevar o padrão X para `.claude/rules/`")
+
+---
+
+## Padrões Esperados Entre Agentes
+
+Padrões comuns que tipicamente aparecem em múltiplos agentes:
+
+| Padrão | Agentes Esperados | Ação |
 |---------|----------------|--------|
-| "NEVER push — delegate to @devops" | dev, qa, analyst, sm, data-engineer, ux | Promote to `.claude/rules/` |
-| CommonJS module system | dev, analyst, sm, data-engineer, ux, architect | Already in CLAUDE.md |
-| Conventional commits format | dev, qa, devops, analyst, sm, data-engineer, ux | Already in CLAUDE.md |
-| kebab-case for files | dev, analyst, sm, data-engineer, ux | Already in CLAUDE.md |
+| "NEVER push — delegate to @devops" | dev, qa, analyst, sm, data-engineer, ux | Promover para `.claude/rules/` |
+| Sistema de módulos CommonJS | dev, analyst, sm, data-engineer, ux, architect | Já está no CLAUDE.md |
+| Formato Conventional commits | dev, qa, devops, analyst, sm, data-engineer, ux | Já está no CLAUDE.md |
+| kebab-case para arquivos | dev, analyst, sm, data-engineer, ux | Já está no CLAUDE.md |

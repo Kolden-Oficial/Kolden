@@ -22,6 +22,8 @@ MCPs (Firecrawl/Tavily/Exa) não derem conta.
 | DOM hostil / precisa "ver" a página | **Skyvern** + `vision_analyze` (via fachada) |
 | Pesquisa multi-fonte + relatório citado | **GPT-Researcher** (via fachada) |
 | Coleta gerenciada por actor pronto | **Apify** (via fachada — subcomando `apify`) |
+| Descoberta de vídeos virais (multi-plataforma) | **SociaVault** (subcomando `viral`) — ver skill `descoberta-de-virais` |
+| Transcrever vídeo/áudio → texto (copy) | **yt-dlp + Speechmatics/Deepgram** (subcomando `transcrever`) — ver skill `transcricao-de-conteudo` |
 | Zona ToS-cinza (login) | **NÃO use o motor** — escale ao `compliance-sentinela` (modulo-cinza/) |
 
 ## Contrato da fachada

@@ -1,33 +1,33 @@
-# Audit Tailwind v4 Configuration & Utility Health
+# Auditoria de Configuração do Tailwind v4 e Saúde dos Utilitários
 
 > Task ID: brad-audit-tailwind-config  
-> Agent: Brad (Design System Architect)  
-> Version: 1.0.0
+> Agente: Brad (Design System Architect)  
+> Versão: 1.0.0
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha o modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro de logs
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Balanceado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Completo Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: auditTailwindConfig()
@@ -40,19 +40,19 @@ atomic_layer: Strategy
   tipo: string
   origem: User Input
   obrigatório: true
-  validação: Valid path or identifier
+  validação: Caminho ou identificador válido
 
 - campo: options
   tipo: object
   origem: config
   obrigatório: false
-  validação: Analysis configuration
+  validação: Configuração de análise
 
 - campo: depth
   tipo: number
   origem: User Input
   obrigatório: false
-  validação: Default: 1 (0-3)
+  validação: Padrão: 1 (0-3)
 
 **Saída:**
 - campo: analysis_report
@@ -73,97 +73,97 @@ atomic_layer: Strategy
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Target exists and is accessible; analysis tools available
+  - [ ] Alvo existe e está acessível; ferramentas de análise disponíveis
     tipo: pre-condition
     blocker: true
     validação: |
-      Check target exists and is accessible; analysis tools available
-    error_message: "Pre-condition failed: Target exists and is accessible; analysis tools available"
+      Verificar se o alvo existe e está acessível; ferramentas de análise disponíveis
+    error_message: "Pré-condição falhou: Alvo existe e está acessível; ferramentas de análise disponíveis"
 ```
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Analysis complete; report generated; no critical issues
+  - [ ] Análise completa; relatório gerado; nenhum problema crítico
     tipo: post-condition
     blocker: true
     validação: |
-      Verify analysis complete; report generated; no critical issues
-    error_message: "Post-condition failed: Analysis complete; report generated; no critical issues"
+      Verificar se a análise está completa; relatório gerado; nenhum problema crítico
+    error_message: "Pós-condição falhou: Análise completa; relatório gerado; nenhum problema crítico"
 ```
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Analysis accurate; all targets covered; report complete
+  - [ ] Análise precisa; todos os alvos cobertos; relatório completo
     tipo: acceptance-criterion
     blocker: true
     validação: |
-      Assert analysis accurate; all targets covered; report complete
-    error_message: "Acceptance criterion not met: Analysis accurate; all targets covered; report complete"
+      Assegurar que a análise é precisa; todos os alvos cobertos; relatório completo
+    error_message: "Critério de aceite não atendido: Análise precisa; todos os alvos cobertos; relatório completo"
 ```
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** analyze-codebase.js
-  - **Purpose:** Codebase analysis and reporting
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/analyze-codebase.js
+  - **Propósito:** Análise e relatório do codebase
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/analyze-codebase.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** fallback
+**Estratégia:** fallback
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Target Not Accessible
-   - **Cause:** Path does not exist or permissions denied
-   - **Resolution:** Verify path and check permissions
-   - **Recovery:** Skip inaccessible paths, continue with accessible ones
+1. **Erro:** Alvo Não Acessível
+   - **Causa:** O caminho não existe ou as permissões foram negadas
+   - **Resolução:** Verificar o caminho e checar as permissões
+   - **Recuperação:** Pular os caminhos inacessíveis, continuar com os acessíveis
 
-2. **Error:** Analysis Timeout
-   - **Cause:** Analysis exceeds time limit for large codebases
-   - **Resolution:** Reduce analysis depth or scope
-   - **Recovery:** Return partial results with timeout warning
+2. **Erro:** Timeout de Análise
+   - **Causa:** A análise excede o limite de tempo para codebases grandes
+   - **Resolução:** Reduzir a profundidade ou o escopo da análise
+   - **Recuperação:** Retornar resultados parciais com aviso de timeout
 
-3. **Error:** Memory Limit Exceeded
-   - **Cause:** Large codebase exceeds memory allocation
-   - **Resolution:** Process in batches or increase memory limit
-   - **Recovery:** Graceful degradation to summary analysis
+3. **Erro:** Limite de Memória Excedido
+   - **Causa:** O codebase grande excede a alocação de memória
+   - **Resolução:** Processar em lotes ou aumentar o limite de memória
+   - **Recuperação:** Degradação graciosa para análise de resumo
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-20 min (estimated)
@@ -171,12 +171,12 @@ cost_estimated: $0.003-0.015
 token_usage: ~2,000-8,000 tokens
 ```
 
-**Optimization Notes:**
-- Iterative analysis with depth limits; cache intermediate results; batch similar operations
+**Notas de Otimização:**
+- Análise iterativa com limites de profundidade; cache de resultados intermediários; agrupar operações similares em lote
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -192,79 +192,79 @@ updated_at: 2025-11-17
 ---
 
 
-## Description
+## Descrição
 
-Review Tailwind CSS v4 setup to guarantee @theme layering, content scanning, utility hygiene, and performance baselines are correct. Produces remediation plan and metrics.
+Revisar a configuração do Tailwind CSS v4 para garantir que a camada de `@theme`, a varredura de content, a higiene dos utilitários e as baselines de performance estejam corretas. Produz um plano de remediação e métricas.
 
-## Prerequisites
+## Pré-requisitos
 
-- Tailwind v4 installed (or upgrade plan underway)
-- Access to codebase for static analysis
-- Ability to run Tailwind build locally
+- Tailwind v4 instalado (ou plano de upgrade em andamento)
+- Acesso ao codebase para análise estática
+- Capacidade de rodar o build do Tailwind localmente
 
 ## Workflow
 
-1. **Collect Context**
-   - Locate primary CSS entry (`app.css`, `src/styles.css`, etc.)
-   - Identify additional `@imports`, custom utilities, plugins
-   - Read `.state.yaml` for current Tailwind metadata (if available)
+1. **Coletar Contexto**
+   - Localizar o ponto de entrada CSS primário (`app.css`, `src/styles.css`, etc.)
+   - Identificar `@imports` adicionais, utilitários customizados, plugins
+   - Ler o `.state.yaml` para obter os metadados atuais do Tailwind (se disponível)
 
-2. **Validate @theme Layers**
-   - Ensure tokens defined within `@theme` grouped as core → semantic → component
-   - Confirm dark mode overrides (`[data-theme="dark"]`) map to semantic tokens
-   - Check no residual `theme.extend` references exist
+2. **Validar as Camadas @theme**
+   - Garantir que os tokens definidos dentro de `@theme` estejam agrupados como core → semantic → component
+   - Confirmar que os overrides de modo escuro (`[data-theme="dark"]`) mapeiam para tokens semânticos
+   - Verificar que não existem referências residuais a `theme.extend`
 
-3. **Inspect @layer Usage**
-   - `@layer base`: Resets, typography, `focus-visible`
-   - `@layer components`: Reusable abstractions (e.g., `.form-label`)
-   - `@layer utilities`: Custom utility definitions with `@utility`
-   - Verify ordering (base → components → utilities) and duplication avoidance
+3. **Inspecionar o Uso de @layer**
+   - `@layer base`: Resets, tipografia, `focus-visible`
+   - `@layer components`: Abstrações reutilizáveis (ex.: `.form-label`)
+   - `@layer utilities`: Definições de utilitários customizados com `@utility`
+   - Verificar a ordenação (base → components → utilities) e evitar duplicação
 
-4. **Content & Purge Coverage**
-   - Review Tailwind CLI entry for `content` globs (JIT purge)
-   - Ensure glob coverage includes `.tsx`, `.jsx`, `.mdx`, Storybook stories, templates
-   - Flag false negatives (classes generated dynamically) and propose safelist
+4. **Cobertura de Content e Purge**
+   - Revisar o ponto de entrada do Tailwind CLI quanto aos globs de `content` (purge JIT)
+   - Garantir que a cobertura de globs inclua `.tsx`, `.jsx`, `.mdx`, stories do Storybook, templates
+   - Sinalizar falsos negativos (classes geradas dinamicamente) e propor safelist
 
-5. **Utility Health Scan**
-   - Run class collision detection (tailwind-merge or eslint-plugin-tailwindcss)
-   - Identify redundant custom utilities replaced by tokens/variants
-   - Detect legacy classes (e.g., `outline-none` instead of `outline-hidden`)
+5. **Varredura de Saúde dos Utilitários**
+   - Rodar detecção de colisão de classes (tailwind-merge ou eslint-plugin-tailwindcss)
+   - Identificar utilitários customizados redundantes substituídos por tokens/variants
+   - Detectar classes legadas (ex.: `outline-none` em vez de `outline-hidden`)
 
-6. **Performance Snapshot**
-   - Record build metrics (cold + incremental)
-   - Capture CSS bundle size, number of utilities generated
-   - Compare with target benchmarks (Oxide reference)
+6. **Snapshot de Performance**
+   - Registrar métricas de build (cold + incremental)
+   - Capturar o tamanho do bundle CSS, número de utilitários gerados
+   - Comparar com os benchmarks-alvo (referência Oxide)
 
-7. **Report & Remediation**
-   - Summarize findings (pass/warn/fail) in `docs/reports/tailwind-audit.md`
-   - Provide prioritized action list (tokens to add, utilities to remove, config fixes)
-   - Update `.state.yaml` with audit timestamp, benchmark data, outstanding actions
+7. **Relatório e Remediação**
+   - Resumir os achados (pass/warn/fail) em `docs/reports/tailwind-audit.md`
+   - Fornecer uma lista de ações priorizadas (tokens a adicionar, utilitários a remover, correções de config)
+   - Atualizar o `.state.yaml` com timestamp da auditoria, dados de benchmark, ações pendentes
 
-## Output
+## Saída
 
-- Audit report (`docs/reports/tailwind-audit.md`)
-- Updated `.state.yaml` under `tooling.tailwind` (validation + metrics)
-- Optional lint/config patches (ESLint Tailwind rules, Prettier plugin settings)
+- Relatório de auditoria (`docs/reports/tailwind-audit.md`)
+- `.state.yaml` atualizado em `tooling.tailwind` (validação + métricas)
+- Patches opcionais de lint/config (regras ESLint do Tailwind, configurações do plugin Prettier)
 
-## Success Criteria
+## Critérios de Sucesso
 
-- [ ] `@theme` defines full token stack with no missing categories
-- [ ] `@layer` usage consistent and free of duplicate definitions
-- [ ] Content paths cover 100% of templates (no orphaned utilities)
-- [ ] tailwind-merge/eslint scans zero conflicts or all logged issues resolved
-- [ ] Build metrics captured (cold/incremental) and comparable to prior baseline
-- [ ] Recommendations documented with owners + due dates
-- [ ] `.state.yaml` updated (`tailwind_theme_validated: true/false`) and audit timestamp logged
+- [ ] `@theme` define a stack completa de tokens sem categorias faltando
+- [ ] O uso de `@layer` é consistente e livre de definições duplicadas
+- [ ] Os caminhos de content cobrem 100% dos templates (nenhum utilitário órfão)
+- [ ] As varreduras de tailwind-merge/eslint têm zero conflitos ou todos os problemas registrados resolvidos
+- [ ] Métricas de build capturadas (cold/incremental) e comparáveis à baseline anterior
+- [ ] Recomendações documentadas com responsáveis + prazos
+- [ ] `.state.yaml` atualizado (`tailwind_theme_validated: true/false`) e timestamp da auditoria registrado
 
-## Tools & Commands
+## Ferramentas e Comandos
 
-- Tailwind CLI build: `npx tailwindcss -i ./app.css -o ./dist.css --watch`
-- Utility audit: `npx @tailwindcss/oxide --analyze`
-- ESLint Tailwind plugin: `eslint --ext .tsx src`
-- tailwind-merge checker: integrate via ESLint rule `tailwindcss/no-contradicting-classname`
+- Build do Tailwind CLI: `npx tailwindcss -i ./app.css -o ./dist.css --watch`
+- Auditoria de utilitários: `npx @tailwindcss/oxide --analyze`
+- Plugin ESLint do Tailwind: `eslint --ext .tsx src`
+- Verificador tailwind-merge: integrar via regra ESLint `tailwindcss/no-contradicting-classname`
 
-## Notes
+## Notas
 
-- Encourage automated linting (ESLint + prettier-plugin-tailwindcss) post-audit
-- Document class naming conventions (order: layout → size → spacing → typography → color → effect)
-- Track manual overrides (safelist patterns, arbitrary values) for future cleanup
+- Incentivar o linting automatizado (ESLint + prettier-plugin-tailwindcss) após a auditoria
+- Documentar as convenções de nomenclatura de classes (ordem: layout → size → spacing → typography → color → effect)
+- Rastrear os overrides manuais (padrões de safelist, valores arbitrários) para limpeza futura

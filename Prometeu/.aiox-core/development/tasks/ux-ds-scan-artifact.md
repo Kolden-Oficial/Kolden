@@ -1,36 +1,36 @@
 # Design System Artifact Scanner
 
 > **Task ID:** ux-ds-scan-artifact
-> **Agent:** UX-Design Expert
-> **Phase:** Universal (works with any phase)
-> **Interactive:** Yes (elicit=true)
+> **Agente:** UX-Design Expert
+> **Fase:** Universal (funciona com qualquer fase)
+> **Interativo:** Sim (elicit=true)
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Antecipado Abrangente
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: uxDsScanArtifact()
@@ -76,9 +76,9 @@ atomic_layer: Strategy
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -94,9 +94,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a task ser concluída
 
 **Checklist:**
 
@@ -112,9 +112,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
@@ -130,57 +130,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** task-runner
-  - **Purpose:** Task execution and orchestration
-  - **Source:** .aiox-core/core/task-runner.js
+- **Ferramenta:** task-runner
+  - **Propósito:** Execução e orquestração de tasks
+  - **Fonte:** .aiox-core/core/task-runner.js
 
-- **Tool:** logger
-  - **Purpose:** Execution logging and error tracking
-  - **Source:** .aiox-core/utils/logger.js
+- **Ferramenta:** logger
+  - **Propósito:** Logging de execução e rastreamento de erros
+  - **Fonte:** .aiox-core/utils/logger.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** execute-task.js
-  - **Purpose:** Generic task execution wrapper
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/execute-task.js
+  - **Propósito:** Wrapper genérico de execução de task
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/execute-task.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Task Not Found
-   - **Cause:** Specified task not registered in system
-   - **Resolution:** Verify task name and registration
-   - **Recovery:** List available tasks, suggest similar
+1. **Erro:** Task Not Found
+   - **Causa:** Task especificada não registrada no sistema
+   - **Resolução:** Verificar o nome da task e o registro
+   - **Recuperação:** Listar tasks disponíveis, sugerir similares
 
-2. **Error:** Invalid Parameters
-   - **Cause:** Task parameters do not match expected schema
-   - **Resolution:** Validate parameters against task definition
-   - **Recovery:** Provide parameter template, reject execution
+2. **Erro:** Invalid Parameters
+   - **Causa:** Parâmetros da task não correspondem ao schema esperado
+   - **Resolução:** Validar parâmetros contra a definição da task
+   - **Recuperação:** Fornecer template de parâmetros, rejeitar execução
 
-3. **Error:** Execution Timeout
-   - **Cause:** Task exceeds maximum execution time
-   - **Resolution:** Optimize task or increase timeout
-   - **Recovery:** Kill task, cleanup resources, log state
+3. **Erro:** Execution Timeout
+   - **Causa:** Task excede o tempo máximo de execução
+   - **Resolução:** Otimizar a task ou aumentar o timeout
+   - **Recuperação:** Encerrar a task, limpar recursos, registrar estado
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-20 min (estimated)
@@ -188,12 +188,12 @@ cost_estimated: $0.003-0.015
 token_usage: ~2,000-8,000 tokens
 ```
 
-**Optimization Notes:**
-- Iterative analysis with depth limits; cache intermediate results; batch similar operations
+**Notas de Otimização:**
+- Análise iterativa com limites de profundidade; cachear resultados intermediários; agrupar operações similares em lote
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -209,108 +209,108 @@ updated_at: 2025-11-17
 ---
 
 
-## 📋 Description
+## 📋 Descrição
 
-Analyze HTML/React artifacts (files, screenshots, or live URLs) to extract design patterns, components, and design tokens. Automatically detect atoms, molecules, organisms following Atomic Design methodology. Generate component build suggestions and design system recommendations.
-
----
-
-## 🎯 Objectives
-
-- Scan existing UI artifacts for design patterns
-- Extract components at atomic, molecular, and organism levels
-- Identify design tokens (colors, typography, spacing, etc.)
-- Generate component build recommendations
-- Provide design system migration path
+Analisar artefatos HTML/React (arquivos, screenshots ou URLs ao vivo) para extrair padrões de design, componentes e design tokens. Detectar automaticamente atoms, molecules, organisms seguindo a metodologia Atomic Design. Gerar sugestões de construção de componentes e recomendações de design system.
 
 ---
 
-## 📊 Supported Artifact Types
+## 🎯 Objetivos
 
-### Type 1: HTML Files
-**Format:** .html, .htm
-**Analysis:** Parse DOM, extract styles, identify components
-**Speed:** Fast (< 5 seconds)
+- Escanear artefatos de UI existentes em busca de padrões de design
+- Extrair componentes nos níveis atomic, molecular e organism
+- Identificar design tokens (cores, tipografia, espaçamento, etc.)
+- Gerar recomendações de construção de componentes
+- Fornecer um caminho de migração para design system
 
-### Type 2: React Components
-**Format:** .jsx, .tsx, .js with JSX
-**Analysis:** AST parsing, prop extraction, component structure
-**Speed:** Fast (< 10 seconds)
+---
 
-### Type 3: Screenshots
-**Format:** .png, .jpg, .jpeg
-**Analysis:** Visual pattern recognition (requires AI vision)
-**Speed:** Moderate (10-30 seconds)
+## 📊 Tipos de Artefato Suportados
 
-### Type 4: Live URLs
-**Format:** https://example.com
-**Analysis:** Fetch + parse, full DOM analysis
-**Speed:** Moderate (15-45 seconds depending on page)
+### Tipo 1: Arquivos HTML
+**Formato:** .html, .htm
+**Análise:** Parsear DOM, extrair estilos, identificar componentes
+**Velocidade:** Rápida (< 5 segundos)
+
+### Tipo 2: Componentes React
+**Formato:** .jsx, .tsx, .js com JSX
+**Análise:** Parsing de AST, extração de props, estrutura de componentes
+**Velocidade:** Rápida (< 10 segundos)
+
+### Tipo 3: Screenshots
+**Formato:** .png, .jpg, .jpeg
+**Análise:** Reconhecimento visual de padrões (requer visão de IA)
+**Velocidade:** Moderada (10-30 segundos)
+
+### Tipo 4: URLs ao Vivo
+**Formato:** https://example.com
+**Análise:** Fetch + parse, análise completa do DOM
+**Velocidade:** Moderada (15-45 segundos dependendo da página)
 
 ---
 
 ## 🔄 Workflow
 
-### Step 1: Specify Artifact
-**Interactive Elicitation:**
+### Passo 1: Especificar Artefato
+**Elicitação Interativa:**
 
 ```
-What type of artifact do you want to scan?
+Que tipo de artefato você quer escanear?
 
-1. HTML file (local path)
-2. React component file (.jsx/.tsx)
-3. Screenshot image (.png/.jpg)
-4. Live website URL
+1. Arquivo HTML (caminho local)
+2. Arquivo de componente React (.jsx/.tsx)
+3. Imagem de screenshot (.png/.jpg)
+4. URL de site ao vivo
 
-Your selection: _____
+Sua seleção: _____
 
-Provide the path or URL:
-Your input: _____
+Forneça o caminho ou URL:
+Sua entrada: _____
 ```
 
 ---
 
-### Step 2: Scan & Parse Artifact
+### Passo 2: Escanear e Parsear o Artefato
 
-**HTML/React Parsing:**
-1. Load file content
-2. Parse DOM/AST structure
-3. Extract all elements with attributes
-4. Identify unique patterns
-5. Group similar elements
+**Parsing de HTML/React:**
+1. Carregar o conteúdo do arquivo
+2. Parsear a estrutura DOM/AST
+3. Extrair todos os elementos com atributos
+4. Identificar padrões únicos
+5. Agrupar elementos similares
 
-**Screenshot Analysis:**
-1. Load image
-2. Detect UI regions (header, content, footer)
-3. Identify buttons, inputs, cards, etc.
-4. Extract color palette
-5. Measure spacing patterns
+**Análise de Screenshot:**
+1. Carregar a imagem
+2. Detectar regiões da UI (header, content, footer)
+3. Identificar buttons, inputs, cards, etc.
+4. Extrair a paleta de cores
+5. Medir padrões de espaçamento
 
-**Live URL Fetching:**
-1. Fetch page HTML
-2. Download inline styles
-3. Parse external CSS (if accessible)
-4. Extract computed styles
-5. Identify interactive components
+**Fetch de URL ao Vivo:**
+1. Buscar o HTML da página
+2. Baixar estilos inline
+3. Parsear CSS externo (se acessível)
+4. Extrair estilos computados
+5. Identificar componentes interativos
 
 ---
 
-### Step 3: Extract Design Tokens
+### Passo 3: Extrair Design Tokens
 
 **Color Tokens:**
 ```
 colors:
   primary:
-    - "#3B82F6" (used 42 times)
-    - "#2563EB" (used 18 times)
+    - "#3B82F6" (usado 42 vezes)
+    - "#2563EB" (usado 18 vezes)
   secondary:
-    - "#10B981" (used 23 times)
+    - "#10B981" (usado 23 vezes)
   neutral:
-    - "#F3F4F6" (used 67 times - backgrounds)
-    - "#6B7280" (used 45 times - text)
-    - "#1F2937" (used 38 times - headings)
+    - "#F3F4F6" (usado 67 vezes - backgrounds)
+    - "#6B7280" (usado 45 vezes - text)
+    - "#1F2937" (usado 38 vezes - headings)
   accent:
-    - "#F59E0B" (used 12 times)
+    - "#F59E0B" (usado 12 vezes)
 ```
 
 **Typography Tokens:**
@@ -321,7 +321,7 @@ typography:
     - "JetBrains Mono, monospace" (code)
   fontSizes:
     - 12px (labels, captions)
-    - 14px (body text) ← most common
+    - 14px (body text) ← mais comum
     - 16px (default)
     - 20px (h3)
     - 24px (h2)
@@ -358,210 +358,210 @@ borderRadius:
 shadows:
   - none (flat design)
   - sm: "0 1px 2px rgba(0,0,0,0.05)"
-  - md: "0 4px 6px rgba(0,0,0,0.1)" ← most common
+  - md: "0 4px 6px rgba(0,0,0,0.1)" ← mais comum
   - lg: "0 10px 15px rgba(0,0,0,0.1)"
 ```
 
 ---
 
-### Step 4: Identify Components (Atomic Design)
+### Passo 4: Identificar Componentes (Atomic Design)
 
-**Atoms (Fundamental Building Blocks):**
+**Atoms (Blocos de Construção Fundamentais):**
 ```
 atoms:
   - Button
     variants: [primary, secondary, outline, ghost]
-    count: 47 instances
+    count: 47 instâncias
     styles: {padding: 8px 16px, borderRadius: 4px, ...}
 
   - Input
     types: [text, email, password, number, search]
-    count: 23 instances
+    count: 23 instâncias
     styles: {height: 40px, border: 1px solid #D1D5DB, ...}
 
   - Label
-    count: 31 instances
+    count: 31 instâncias
     styles: {fontSize: 14px, fontWeight: 500, ...}
 
   - Icon
     set: [check, x, chevron-down, search, user, settings]
-    count: 89 instances
+    count: 89 instâncias
     size: 16px, 20px, 24px
 
   - Badge
-    count: 12 instances
+    count: 12 instâncias
     variants: [success, warning, error, info]
 ```
 
-**Molecules (Simple Combinations):**
+**Molecules (Combinações Simples):**
 ```
 molecules:
   - FormField (Label + Input + Helper Text)
-    count: 18 instances
-    pattern: Vertical stack with 4px gap
+    count: 18 instâncias
+    pattern: Pilha vertical com 4px de gap
 
   - SearchBar (Input + Icon + Optional Button)
-    count: 3 instances
-    pattern: Horizontal flex with icon prefix
+    count: 3 instâncias
+    pattern: Flex horizontal com prefixo de ícone
 
   - Card (Border + Padding + Shadow)
-    count: 24 instances
+    count: 24 instâncias
     pattern: 16px padding, 8px borderRadius, md shadow
 
   - NavItem (Icon + Label + Optional Badge)
-    count: 8 instances (in navigation)
-    pattern: Horizontal flex, 12px gap
+    count: 8 instâncias (na navegação)
+    pattern: Flex horizontal, 12px gap
 
   - StatDisplay (Label + Number + Trend Icon)
-    count: 6 instances (dashboard)
-    pattern: Vertical stack, number emphasized
+    count: 6 instâncias (dashboard)
+    pattern: Pilha vertical, número enfatizado
 ```
 
-**Organisms (Complex Sections):**
+**Organisms (Seções Complexas):**
 ```
 organisms:
   - Header (Logo + Navigation + Search + Profile)
-    count: 1 instance (global)
+    count: 1 instância (global)
     complexity: HIGH
 
   - ProductCard (Image + Title + Description + Price + CTA)
-    count: 16 instances (grid)
+    count: 16 instâncias (grid)
     complexity: MEDIUM
 
   - DataTable (Headers + Rows + Pagination + Actions)
-    count: 2 instances
+    count: 2 instâncias
     complexity: HIGH
 
   - Modal (Overlay + Header + Body + Footer + Close)
-    count: 3 instances (login, confirm, settings)
+    count: 3 instâncias (login, confirm, settings)
     complexity: MEDIUM
 
   - Form (Multiple Fields + Validation + Submit)
-    count: 4 instances
+    count: 4 instâncias
     complexity: MEDIUM
 ```
 
 ---
 
-### Step 5: Calculate Pattern Redundancy
+### Passo 5: Calcular Redundância de Padrões
 
-**Redundancy Analysis:**
+**Análise de Redundância:**
 ```
-Pattern: Buttons
+Padrão: Buttons
 ----
-Total instances: 47
-Unique variations: 12 (based on style clustering)
-Optimal set: 3 (primary, secondary, outline)
-Reduction: 75% (12 → 3)
-Maintenance savings: 37.5 hours/month → 9.4 hours/month
+Total de instâncias: 47
+Variações únicas: 12 (baseado em clustering de estilo)
+Conjunto ótimo: 3 (primary, secondary, outline)
+Redução: 75% (12 → 3)
+Economia de manutenção: 37.5 horas/mês → 9.4 horas/mês
 
-Pattern: Colors
+Padrão: Colors
 ----
-Total colors: 89 hex values
-After clustering (5% HSL threshold): 18 distinct colors
-Optimal token set: 12 tokens
-Reduction: 86.5% (89 → 12)
+Total de cores: 89 valores hex
+Após clustering (threshold de 5% HSL): 18 cores distintas
+Conjunto ótimo de tokens: 12 tokens
+Redução: 86.5% (89 → 12)
 
-Pattern: Spacing Values
+Padrão: Spacing Values
 ----
-Total unique values: 47 px values
-After normalization to 4px scale: 12 values
-Optimal set: 8 tokens (4, 8, 12, 16, 24, 32, 48, 64)
-Reduction: 74.5% (47 → 12)
+Total de valores únicos: 47 valores em px
+Após normalização para a escala de 4px: 12 valores
+Conjunto ótimo: 8 tokens (4, 8, 12, 16, 24, 32, 48, 64)
+Redução: 74.5% (47 → 12)
 ```
 
 ---
 
-### Step 6: Generate Build Recommendations
+### Passo 6: Gerar Recomendações de Construção
 
-**Component Priority Matrix:**
+**Matriz de Prioridade de Componentes:**
 ```
-Priority: HIGH (Build First)
-- Button (47 instances - most used)
-- Input (23 instances - forms critical)
-- Card (24 instances - content display)
+Prioridade: HIGH (Construir Primeiro)
+- Button (47 instâncias - mais usado)
+- Input (23 instâncias - crítico para forms)
+- Card (24 instâncias - exibição de conteúdo)
 
-Priority: MEDIUM (Build Second)
-- FormField molecule (18 instances)
-- Badge (12 instances - status display)
-- Modal (3 instances but high complexity)
+Prioridade: MEDIUM (Construir em Segundo)
+- FormField molecule (18 instâncias)
+- Badge (12 instâncias - exibição de status)
+- Modal (3 instâncias mas alta complexidade)
 
-Priority: LOW (Build Last or Skip)
-- Custom widgets (1-2 instances)
-- Page-specific components
-- One-off patterns
+Prioridade: LOW (Construir por Último ou Pular)
+- Widgets customizados (1-2 instâncias)
+- Componentes específicos de página
+- Padrões avulsos (one-off)
 ```
 
-**Build Order Recommendation:**
+**Recomendação de Ordem de Construção:**
 ```
-Phase 1: Core Atoms (Week 1)
-1. Button (all 4 variants)
-2. Input (all 5 types)
+Fase 1: Core Atoms (Semana 1)
+1. Button (todas as 4 variants)
+2. Input (todos os 5 types)
 3. Label
 4. Icon set (12 icons)
 
-Phase 2: Common Molecules (Week 2)
+Fase 2: Common Molecules (Semana 2)
 5. FormField (Label + Input + Helper)
 6. Card
 7. Badge
 8. SearchBar
 
-Phase 3: Complex Organisms (Week 3)
+Fase 3: Complex Organisms (Semana 3)
 9. Header
-10. Form (with validation)
+10. Form (com validação)
 11. Modal
 12. DataTable
 
-Phase 4: Page Templates (Week 4)
-13. Dashboard template
-14. Form page template
-15. Detail page template
+Fase 4: Page Templates (Semana 4)
+13. Template de dashboard
+14. Template de página de form
+15. Template de página de detalhe
 ```
 
 ---
 
-## 📤 Outputs
+## 📤 Saídas
 
-All artifacts saved to: `outputs/design-system/{project}/scan/`
+Todos os artefatos salvos em: `outputs/design-system/{project}/scan/`
 
-### Required Files:
-1. **scan-summary.md** - High-level findings
-2. **design-tokens.yaml** - Extracted tokens (colors, typography, spacing)
-3. **component-inventory.md** - List of components (Atomic Design)
-4. **redundancy-analysis.md** - Pattern redundancy calculations
-5. **build-recommendations.md** - Priority matrix and build order
+### Arquivos Obrigatórios:
+1. **scan-summary.md** - Achados de alto nível
+2. **design-tokens.yaml** - Tokens extraídos (cores, tipografia, espaçamento)
+3. **component-inventory.md** - Lista de componentes (Atomic Design)
+4. **redundancy-analysis.md** - Cálculos de redundância de padrões
+5. **build-recommendations.md** - Matriz de prioridade e ordem de construção
 
-### Optional Files:
-6. **screenshots/** - Visual comparisons of patterns
-7. **extracted-styles.css** - All CSS extracted from artifact
-8. **comparison-matrix.xlsx** - Side-by-side pattern comparisons
-
----
-
-## ✅ Success Criteria
-
-- [ ] Artifact successfully scanned and parsed
-- [ ] Design tokens extracted (colors, typography, spacing, etc.)
-- [ ] Components identified at atomic, molecular, organism levels
-- [ ] Pattern redundancy calculated with reduction percentages
-- [ ] Build recommendations prioritized (HIGH/MEDIUM/LOW)
-- [ ] Build order phases defined (1-4 weeks)
-- [ ] All outputs saved to `outputs/design-system/{project}/scan/`
-- [ ] `.state.yaml` updated with scan results
+### Arquivos Opcionais:
+6. **screenshots/** - Comparações visuais de padrões
+7. **extracted-styles.css** - Todo o CSS extraído do artefato
+8. **comparison-matrix.xlsx** - Comparações de padrões lado a lado
 
 ---
 
-## 🔄 Integration with Other Tasks
+## ✅ Critérios de Sucesso
 
-**Works with any phase:**
-- `*research` - Scan competitor sites for UX patterns
-- `*wireframe` - Scan existing app to inventory current components
-- `*audit` - Complement full codebase audit with specific artifact focus
-- `*consolidate` - Use scan to inform consolidation decisions
-- `*build` - Use component inventory to guide what to build
+- [ ] Artefato escaneado e parseado com sucesso
+- [ ] Design tokens extraídos (cores, tipografia, espaçamento, etc.)
+- [ ] Componentes identificados nos níveis atomic, molecular, organism
+- [ ] Redundância de padrões calculada com percentuais de redução
+- [ ] Recomendações de construção priorizadas (HIGH/MEDIUM/LOW)
+- [ ] Fases de ordem de construção definidas (1-4 semanas)
+- [ ] Todas as saídas salvas em `outputs/design-system/{project}/scan/`
+- [ ] `.state.yaml` atualizado com os resultados do scan
 
-**State Management:**
-Updates `.state.yaml` with:
+---
+
+## 🔄 Integração com Outras Tasks
+
+**Funciona com qualquer fase:**
+- `*research` - Escanear sites de concorrentes em busca de padrões de UX
+- `*wireframe` - Escanear app existente para inventariar os componentes atuais
+- `*audit` - Complementar a auditoria completa do codebase com foco em artefato específico
+- `*consolidate` - Usar o scan para fundamentar decisões de consolidação
+- `*build` - Usar o inventário de componentes para guiar o que construir
+
+**Gerenciamento de Estado:**
+Atualiza `.state.yaml` com:
 - `artifact_scanned: {type, path}`
 - `tokens_extracted: {colors, typography, spacing}`
 - `components_found: [list of components]`
@@ -570,103 +570,103 @@ Updates `.state.yaml` with:
 
 ---
 
-## 📚 Token Extraction Algorithms
+## 📚 Algoritmos de Extração de Tokens
 
-### Color Clustering (HSL-based, 5% threshold)
+### Color Clustering (baseado em HSL, threshold de 5%)
 ```
-Algorithm:
-1. Extract all hex colors from artifact
-2. Convert to HSL (Hue, Saturation, Lightness)
-3. Cluster colors within 5% HSL distance
-4. Select most-used color from each cluster as token
-5. Name tokens by category (primary, secondary, neutral, accent)
+Algoritmo:
+1. Extrair todas as cores hex do artefato
+2. Converter para HSL (Hue, Saturation, Lightness)
+3. Agrupar (cluster) cores dentro de 5% de distância HSL
+4. Selecionar a cor mais usada de cada cluster como token
+5. Nomear os tokens por categoria (primary, secondary, neutral, accent)
 ```
 
-### Spacing Normalization (4px base)
+### Spacing Normalization (base de 4px)
 ```
-Algorithm:
-1. Extract all px values from padding, margin, gap
-2. Round to nearest 4px multiple
-3. Count frequency of each value
-4. Select top 8 most-used values as tokens
-5. Name tokens: xs, sm, md, lg, xl, 2xl, 3xl
+Algoritmo:
+1. Extrair todos os valores em px de padding, margin, gap
+2. Arredondar para o múltiplo de 4px mais próximo
+3. Contar a frequência de cada valor
+4. Selecionar os 8 valores mais usados como tokens
+5. Nomear os tokens: xs, sm, md, lg, xl, 2xl, 3xl
 ```
 
 ### Component Similarity Detection
 ```
-Algorithm:
-1. Extract element structure (tag + classes + children)
-2. Extract styles (computed CSS)
-3. Calculate similarity score (0-100%)
-4. Group components with >85% similarity
-5. Identify most common variant as base
+Algoritmo:
+1. Extrair a estrutura do elemento (tag + classes + children)
+2. Extrair os estilos (CSS computado)
+3. Calcular o score de similaridade (0-100%)
+4. Agrupar componentes com >85% de similaridade
+5. Identificar a variante mais comum como base
 ```
 
 ---
 
-## ⚠️ Limitations
+## ⚠️ Limitações
 
-### HTML/React Files:
-- ✅ Can parse structure and styles
-- ✅ Can extract inline and CSS classes
-- ❌ Cannot see rendered visual (no browser)
-- ❌ Cannot detect dynamic behavior
+### Arquivos HTML/React:
+- ✅ Pode parsear estrutura e estilos
+- ✅ Pode extrair classes inline e CSS
+- ❌ Não pode ver o visual renderizado (sem navegador)
+- ❌ Não pode detectar comportamento dinâmico
 
 ### Screenshots:
-- ✅ Can see visual appearance
-- ✅ Can detect colors and spacing
-- ❌ Cannot extract code structure
-- ❌ Cannot identify interactive states (hover, focus)
+- ✅ Pode ver a aparência visual
+- ✅ Pode detectar cores e espaçamento
+- ❌ Não pode extrair a estrutura do código
+- ❌ Não pode identificar estados interativos (hover, focus)
 
-### Live URLs:
-- ✅ Can fetch full page HTML
-- ✅ Can extract all styles
-- ❌ May be blocked by CORS/auth
-- ❌ Cannot access private pages without login
+### URLs ao Vivo:
+- ✅ Pode buscar o HTML completo da página
+- ✅ Pode extrair todos os estilos
+- ❌ Pode ser bloqueado por CORS/auth
+- ❌ Não pode acessar páginas privadas sem login
 
 ---
 
-## 🎯 Example Output
+## 🎯 Exemplo de Saída
 
-**Example: Scan Result for Dashboard**
+**Exemplo: Resultado de Scan para Dashboard**
 
 ```markdown
 # Scan Summary: Dashboard Page
 
-**Artifact:** https://example.com/dashboard
-**Scanned:** 2025-11-12 14:35
-**Page Complexity:** MEDIUM (47 components, 3 levels deep)
+**Artefato:** https://example.com/dashboard
+**Escaneado:** 2025-11-12 14:35
+**Complexidade da Página:** MEDIUM (47 componentes, 3 níveis de profundidade)
 
-## Design Tokens Extracted
-- **Colors:** 18 distinct colors → 12 tokens recommended
-- **Typography:** 6 font sizes, 4 weights → Well-structured
-- **Spacing:** 47 values → Normalize to 8 tokens
-- **Border Radius:** 3 values (0px, 4px, 8px) → Already optimal
+## Design Tokens Extraídos
+- **Cores:** 18 cores distintas → 12 tokens recomendados
+- **Tipografia:** 6 tamanhos de fonte, 4 pesos → Bem estruturado
+- **Espaçamento:** 47 valores → Normalizar para 8 tokens
+- **Border Radius:** 3 valores (0px, 4px, 8px) → Já otimizado
 
-## Components Found (Atomic Design)
-### Atoms (8 types, 147 instances)
+## Componentes Encontrados (Atomic Design)
+### Atoms (8 tipos, 147 instâncias)
 - Button (47), Input (23), Label (31), Icon (89), Badge (12), ...
 
-### Molecules (5 types, 42 instances)
+### Molecules (5 tipos, 42 instâncias)
 - FormField (18), Card (24), SearchBar (3), NavItem (8), ...
 
-### Organisms (4 types, 7 instances)
+### Organisms (4 tipos, 7 instâncias)
 - Header (1), Form (4), Modal (3), DataTable (2)
 
-## Redundancy Analysis
-- **Buttons:** 75% reduction possible (12 variants → 3)
-- **Colors:** 86.5% reduction possible (89 → 12)
-- **Spacing:** 74.5% reduction possible (47 → 12)
+## Análise de Redundância
+- **Buttons:** 75% de redução possível (12 variants → 3)
+- **Colors:** 86.5% de redução possível (89 → 12)
+- **Spacing:** 74.5% de redução possível (47 → 12)
 
-## Build Recommendations
-**Phase 1 (Week 1):** Button, Input, Label, Icon
-**Phase 2 (Week 2):** FormField, Card, Badge
-**Phase 3 (Week 3):** Header, Form, Modal
-**Phase 4 (Week 4):** DataTable, Templates
+## Recomendações de Construção
+**Fase 1 (Semana 1):** Button, Input, Label, Icon
+**Fase 2 (Semana 2):** FormField, Card, Badge
+**Fase 3 (Semana 3):** Header, Form, Modal
+**Fase 4 (Semana 4):** DataTable, Templates
 ```
 
 ---
 
-**Created:** 2025-11-12
+**Criado:** 2025-11-12
 **Story:** 4.3 - UX-Design-Expert Merge
 **Version:** 1.0.0

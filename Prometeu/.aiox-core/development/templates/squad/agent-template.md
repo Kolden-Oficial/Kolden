@@ -1,16 +1,16 @@
 # {{COMPONENTNAME}}
 
-> Agent definition for {{SQUADNAME}} squad
-> Created: {{CREATEDAT}}
+> Definição de agente para o squad {{SQUADNAME}}
+> Criado: {{CREATEDAT}}
 {{#IF STORYID}}
 > Story: {{STORYID}}
 {{/IF}}
 
-## Description
+## Descrição
 
 {{DESCRIPTION}}
 
-## Configuration
+## Configuração
 
 ```yaml
 agent:
@@ -21,15 +21,15 @@ agent:
   whenToUse: "Use this agent when {{USECASE}}"
 
 persona:
-  role: "Describe the agent's primary role and responsibilities"
-  style: "Communication style (e.g., systematic, empathetic, analytical)"
-  identity: "What makes this agent unique"
-  focus: "Primary focus areas"
+  role: "Descreva o papel e as responsabilidades primárias do agente"
+  style: "Estilo de comunicação (ex.: sistemático, empático, analítico)"
+  identity: "O que torna este agente único"
+  focus: "Áreas de foco primárias"
 
 core_principles:
-  - "Principle 1: Define the first guiding principle"
-  - "Principle 2: Define the second guiding principle"
-  - "Principle 3: Define the third guiding principle"
+  - "Princípio 1: Defina o primeiro princípio norteador"
+  - "Princípio 2: Defina o segundo princípio norteador"
+  - "Princípio 3: Defina o terceiro princípio norteador"
 
 commands:
   - name: help
@@ -49,32 +49,32 @@ dependencies:
   tools: []
 ```
 
-## Commands
+## Comandos
 
-| Command | Description |
+| Comando | Descrição |
 |---------|-------------|
-| `*help` | Show available commands |
-| `*exit` | Exit agent mode |
+| `*help` | Mostrar comandos disponíveis |
+| `*exit` | Sair do modo agente |
 
-## Collaboration
+## Colaboração
 
-**Works with:**
-- List other agents this agent collaborates with
+**Trabalha com:**
+- Liste outros agentes com os quais este agente colabora
 
-**Handoff points:**
-- When to hand off to other agents
+**Pontos de handoff:**
+- Quando passar o bastão para outros agentes
 
 {{#IF CODE_INTEL_AVAILABLE}}
-## Code Intelligence Context
+## Contexto de Code Intelligence
 
-> Auto-populated when code intelligence provider is available.
-> This section can be safely removed if not needed.
+> Preenchido automaticamente quando o provider de code intelligence está disponível.
+> Esta seção pode ser removida com segurança se não for necessária.
 
-- **Project Structure:** {{PROJECT_STRUCTURE}}
-- **Conventions:** {{CONVENTIONS}}
-- **Related Entities:** {{RELATED_ENTITIES}}
+- **Estrutura do Projeto:** {{PROJECT_STRUCTURE}}
+- **Convenções:** {{CONVENTIONS}}
+- **Entidades Relacionadas:** {{RELATED_ENTITIES}}
 {{/IF}}
 
 ---
 
-*Agent created by squad-creator*
+*Agente criado por squad-creator*

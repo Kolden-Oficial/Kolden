@@ -1,26 +1,26 @@
-# @aiox-master (Orion) - System Documentation
+# @aiox-master (Orion) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/aiox-master-system.md) | [ES](../../es/aiox-agent-flows/aiox-master-system.md)
 
 ---
 
-## Summary
+## Resumo
 
-**@aiox-master** (Orion) is the **Orchestrator** of the AIOX agent system. This agent is responsible for:
+O **@aiox-master** (Orion) é o **Orquestrador** do sistema de agentes AIOX. Este agente é responsável por:
 
-- Coordinating all other agents in the system
-- Managing the overall workflow and task delegation
-- Ensuring proper execution of complex multi-agent operations
-- Providing the main entry point for AIOX interactions
-
----
-
-## Full Documentation
-
-For complete documentation including flowcharts, command mappings, integrations, and troubleshooting, please refer to the Portuguese version:
-
-**[View Full Documentation (PT)](../../aiox-agent-flows/aiox-master-system.md)**
+- Coordenar todos os demais agentes do sistema
+- Gerenciar o workflow geral e a delegação de tasks
+- Garantir a execução correta de operações complexas multi-agente
+- Fornecer o ponto de entrada principal para as interações com o AIOX
 
 ---
 
-*AIOX Agent Flows - @aiox-master System v1.0*
+## Documentação Completa
+
+Para a documentação completa, incluindo fluxogramas, mapeamentos de comandos, integrações e troubleshooting, consulte a versão em português:
+
+**[Ver Documentação Completa (PT)](../../aiox-agent-flows/aiox-master-system.md)**
+
+---
+
+*AIOX Agent Flows - Sistema @aiox-master v1.0*

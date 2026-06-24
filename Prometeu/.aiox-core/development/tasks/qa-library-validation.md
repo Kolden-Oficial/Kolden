@@ -1,38 +1,38 @@
-# Library Validation Task
+# Task de Validação de Bibliotecas
 
-Validate third-party library usage against official documentation using Context7.
+Valida o uso de bibliotecas de terceiros contra a documentação oficial usando o Context7.
 
-**Absorbed from:** Auto-Claude PR Review Phase 6.0
-
----
-
-## Execution Modes
-
-**Choose your execution mode:**
-
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-
-- Autonomous validation with logging
-- Minimal user interaction
-- **Best for:** CI/CD integration, automated pipelines
-
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-
-- Explicit decision checkpoints
-- Educational explanations of findings
-- **Best for:** Learning, understanding library issues
-
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-
-- Full library inventory before validation
-- Zero ambiguity execution
-- **Best for:** Large PRs with many dependencies
-
-**Parameter:** `mode` (optional, default: `interactive`)
+**Absorvida de:** Auto-Claude PR Review Phase 6.0
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Modos de Execução
+
+**Escolha seu modo de execução:**
+
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+
+- Validação autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** integração de CI/CD, pipelines automatizados
+
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[DEFAULT]**
+
+- Checkpoints de decisão explícitos
+- Explicações educativas dos achados
+- **Melhor para:** aprendizado, entender problemas de bibliotecas
+
+### 3. Pre-Flight Planning - Planejamento Completo Antecipado
+
+- Inventário completo das bibliotecas antes da validação
+- Execução sem ambiguidade
+- **Melhor para:** PRs grandes com muitas dependências
+
+**Parâmetro:** `mode` (opcional, default: `interactive`)
+
+---
+
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: qaLibraryValidation()
@@ -43,31 +43,31 @@ atomic_layer: Molecule
 **Entrada:**
 - campo: story_id
   tipo: string
-  origem: User Input
+  origem: Input do Usuário
   obrigatorio: true
-  validacao: Must be valid story ID format (e.g., "6.3")
+  validacao: Deve estar em formato válido de story ID (ex.: "6.3")
 
 - campo: file_paths
   tipo: array
-  origem: git diff or explicit list
+  origem: git diff ou lista explícita
   obrigatorio: false
-  validacao: If empty, extracts from uncommitted changes
+  validacao: Se vazio, extrai das mudanças não commitadas
 
 - campo: skip_stdlib
   tipo: boolean
   origem: config
   obrigatorio: false
-  validacao: Default true (skip Node.js/Python stdlib)
+  validacao: Default true (pular stdlib de Node.js/Python)
 
 **Saida:**
 - campo: validation_report
   tipo: object
-  destino: Return value
+  destino: Valor de retorno
   persistido: false
 
 - campo: issues_found
   tipo: number
-  destino: Memory
+  destino: Memória
   persistido: false
 
 - campo: report_file
@@ -78,132 +78,132 @@ atomic_layer: Molecule
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Context7 MCP is available
+  - [ ] Context7 MCP está disponível
     tipo: pre-condition
     blocker: true
     validacao: |
-      Test: mcp__context7__resolve-library-id with test query
-    error_message: "Pre-condition failed: Context7 MCP not available."
+      Teste: mcp__context7__resolve-library-id com uma query de teste
+    error_message: "Pré-condição falhou: Context7 MCP indisponível."
 
-  - [ ] Modified files exist (git diff or explicit)
+  - [ ] Arquivos modificados existem (git diff ou explícito)
     tipo: pre-condition
     blocker: true
     validacao: |
-      At least one file to analyze
-    error_message: "Pre-condition failed: No files to validate."
+      Ao menos um arquivo para analisar
+    error_message: "Pré-condição falhou: Nenhum arquivo para validar."
 ```
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a task concluir
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Validation report generated
+  - [ ] Relatório de validação gerado
     tipo: post-condition
     blocker: true
     validacao: |
-      library_validation.json exists with results
-    error_message: "Post-condition failed: Validation report not generated."
+      library_validation.json existe com os resultados
+    error_message: "Pós-condição falhou: Relatório de validação não gerado."
 
-  - [ ] All imports processed
+  - [ ] Todos os imports processados
     tipo: post-condition
     blocker: false
     validacao: |
       processed_count >= imports_found
-    error_message: "Warning: Some imports were not processed."
+    error_message: "Aviso: Alguns imports não foram processados."
 ```
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Each library validated against Context7 docs
+  - [ ] Cada biblioteca validada contra a documentação do Context7
     tipo: acceptance-criterion
     blocker: true
     validacao: |
-      For each import: resolve-library-id + query-docs executed
-    error_message: "Acceptance criterion not met: Libraries not validated."
+      Para cada import: resolve-library-id + query-docs executados
+    error_message: "Critério de aceite não atendido: Bibliotecas não validadas."
 
-  - [ ] API usage verified for correctness
+  - [ ] Uso da API verificado quanto à correção
     tipo: acceptance-criterion
     blocker: true
     validacao: |
-      Function signatures, parameters, return types checked
-    error_message: "Acceptance criterion not met: API usage not verified."
+      Assinaturas de função, parâmetros e tipos de retorno verificados
+    error_message: "Critério de aceite não atendido: Uso da API não verificado."
 
-  - [ ] Deprecated methods flagged
+  - [ ] Métodos depreciados sinalizados
     tipo: acceptance-criterion
     blocker: true
     validacao: |
-      Deprecated APIs identified and reported
-    error_message: "Acceptance criterion not met: Deprecated methods not checked."
+      APIs depreciadas identificadas e reportadas
+    error_message: "Critério de aceite não atendido: Métodos depreciados não verificados."
 ```
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** Context7 MCP
-  - **Purpose:** Resolve library IDs and query documentation
-  - **Source:** mcp**context7**resolve-library-id, mcp**context7**query-docs
+- **Ferramenta:** Context7 MCP
+  - **Propósito:** Resolver IDs de bibliotecas e consultar a documentação
+  - **Origem:** mcp**context7**resolve-library-id, mcp**context7**query-docs
 
-- **Tool:** Grep
-  - **Purpose:** Extract imports from source files
-  - **Source:** Native Claude Code tool
+- **Ferramenta:** Grep
+  - **Propósito:** Extrair imports de arquivos-fonte
+  - **Origem:** Ferramenta nativa do Claude Code
 
-- **Tool:** Read
-  - **Purpose:** Read source files for analysis
-  - **Source:** Native Claude Code tool
+- **Ferramenta:** Read
+  - **Propósito:** Ler arquivos-fonte para análise
+  - **Origem:** Ferramenta nativa do Claude Code
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** continue-on-error (log and continue)
+**Estratégia:** continue-on-error (registrar e continuar)
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Library Not Found in Context7
-   - **Cause:** Uncommon or private library
-   - **Resolution:** Log as "unvalidated", continue
-   - **Recovery:** Manual review recommended
+1. **Erro:** Biblioteca Não Encontrada no Context7
+   - **Causa:** Biblioteca incomum ou privada
+   - **Resolução:** Registrar como "unvalidated", continuar
+   - **Recuperação:** Revisão manual recomendada
 
-2. **Error:** Context7 Rate Limit
-   - **Cause:** Too many requests
-   - **Resolution:** Batch requests, add delay
-   - **Recovery:** Retry with exponential backoff
+2. **Erro:** Rate Limit do Context7
+   - **Causa:** Requisições em excesso
+   - **Resolução:** Agrupar requisições, adicionar atraso
+   - **Recuperação:** Retentar com backoff exponencial
 
-3. **Error:** Import Parse Failure
-   - **Cause:** Complex import syntax
-   - **Resolution:** Log and skip
-   - **Recovery:** Manual inspection
+3. **Erro:** Falha no Parse de Import
+   - **Causa:** Sintaxe de import complexa
+   - **Resolução:** Registrar e pular
+   - **Recuperação:** Inspeção manual
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 2-5 min (depends on import count)
@@ -211,15 +211,15 @@ cost_estimated: $0.01-0.05 (Context7 queries)
 token_usage: ~2,000-5,000 tokens
 ```
 
-**Optimization Notes:**
+**Notas de Otimização:**
 
-- Batch similar libraries
-- Cache Context7 responses
-- Skip stdlib and internal imports
+- Agrupar bibliotecas similares
+- Cachear respostas do Context7
+- Pular stdlib e imports internos
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: AUTO-CLAUDE-ABSORPTION
@@ -237,19 +237,19 @@ updated_at: 2026-01-29
 
 ---
 
-## Command
+## Comando
 
 ```
 *validate-libraries {story-id} [--files file1,file2] [--include-stdlib]
 ```
 
-**Parameters:**
+**Parâmetros:**
 
-- `story-id` (required): Story identifier (e.g., "6.3")
-- `--files` (optional): Comma-separated file paths (default: git diff)
-- `--include-stdlib` (optional): Include standard library validation
+- `story-id` (obrigatório): Identificador da story (ex.: "6.3")
+- `--files` (opcional): Caminhos de arquivos separados por vírgula (default: git diff)
+- `--include-stdlib` (opcional): Incluir a validação da biblioteca padrão
 
-**Examples:**
+**Exemplos:**
 
 ```bash
 *validate-libraries 6.3
@@ -260,16 +260,16 @@ updated_at: 2026-01-29
 
 ## Workflow
 
-### Phase 1: Extract Imports
+### Fase 1: Extrair Imports
 
-1. Get list of modified files:
+1. Obter a lista de arquivos modificados:
 
    ```bash
    git diff --name-only HEAD~1
-   # Or use provided --files list
+   # Ou usar a lista --files fornecida
    ```
 
-2. For each file, extract imports using regex patterns:
+2. Para cada arquivo, extrair imports usando padrões regex:
 
    ```javascript
    // JavaScript/TypeScript
@@ -281,16 +281,16 @@ updated_at: 2026-01-29
    /^from\s+(\S+)\s+import/gm
    ```
 
-3. Filter out:
-   - Relative imports (`./`, `../`)
-   - Standard library (if `--include-stdlib` not set)
-   - Already validated in this session
+3. Filtrar:
+   - Imports relativos (`./`, `../`)
+   - Biblioteca padrão (se `--include-stdlib` não estiver setado)
+   - Já validados nesta sessão
 
-### Phase 2: Resolve Library IDs
+### Fase 2: Resolver IDs de Bibliotecas
 
-For each unique library:
+Para cada biblioteca única:
 
-1. Call Context7 to resolve library ID:
+1. Chamar o Context7 para resolver o ID da biblioteca:
 
    ```
    mcp__context7__resolve-library-id
@@ -298,7 +298,7 @@ For each unique library:
    - query: "How to use useQuery hook"
    ```
 
-2. Store mapping:
+2. Armazenar o mapeamento:
 
    ```json
    {
@@ -308,13 +308,13 @@ For each unique library:
    }
    ```
 
-3. Log unresolved libraries for manual review
+3. Registrar bibliotecas não resolvidas para revisão manual
 
-### Phase 3: Validate API Usage
+### Fase 3: Validar o Uso da API
 
-For each import usage in code:
+Para cada uso de import no código:
 
-1. Query Context7 for documentation:
+1. Consultar o Context7 pela documentação:
 
    ```
    mcp__context7__query-docs
@@ -322,13 +322,13 @@ For each import usage in code:
    - query: "useQuery function signature and parameters"
    ```
 
-2. Validate against actual usage:
-   - **Signatures:** Function parameters match docs
-   - **Types:** Return types handled correctly
-   - **Deprecated:** Check for deprecated API warnings
-   - **Breaking Changes:** Check version-specific changes
+2. Validar contra o uso real:
+   - **Assinaturas:** Os parâmetros da função batem com a documentação
+   - **Tipos:** Tipos de retorno tratados corretamente
+   - **Depreciados:** Verificar avisos de API depreciada
+   - **Breaking Changes:** Verificar mudanças específicas de versão
 
-3. Flag issues:
+3. Sinalizar problemas:
    ```json
    {
      "library": "react-query",
@@ -341,9 +341,9 @@ For each import usage in code:
    }
    ```
 
-### Phase 4: Generate Report
+### Fase 4: Gerar o Relatório
 
-1. Create validation report:
+1. Criar o relatório de validação:
 
    ```json
    {
@@ -361,77 +361,77 @@ For each import usage in code:
    }
    ```
 
-2. Save to `docs/stories/{story-id}/qa/library_validation.json`
+2. Salvar em `docs/stories/{story-id}/qa/library_validation.json`
 
-3. Return summary for integration with QA review
+3. Retornar o resumo para integração com a revisão de QA
 
 ---
 
-## Validation Checklist
+## Checklist de Validação
 
-For each library, validate:
+Para cada biblioteca, validar:
 
 ```yaml
 validation_checklist:
   signatures:
-    - [ ] Function parameters match documentation
-    - [ ] Optional vs required parameters correct
-    - [ ] Default values understood
+    - [ ] Parâmetros da função batem com a documentação
+    - [ ] Parâmetros opcionais vs obrigatórios corretos
+    - [ ] Valores default compreendidos
 
   types:
-    - [ ] Return types handled correctly
-    - [ ] Generic type parameters correct
-    - [ ] Null/undefined handling
+    - [ ] Tipos de retorno tratados corretamente
+    - [ ] Parâmetros de tipo genérico corretos
+    - [ ] Tratamento de null/undefined
 
   lifecycle:
-    - [ ] Initialization/setup correct
-    - [ ] Cleanup/disposal handled
-    - [ ] Async patterns correct
+    - [ ] Inicialização/setup corretos
+    - [ ] Cleanup/disposal tratados
+    - [ ] Padrões assíncronos corretos
 
   deprecation:
-    - [ ] No deprecated APIs used
-    - [ ] Migration path available if deprecated
+    - [ ] Nenhuma API depreciada usada
+    - [ ] Caminho de migração disponível se depreciada
 
   version:
-    - [ ] API matches installed version
-    - [ ] Breaking changes addressed
+    - [ ] API corresponde à versão instalada
+    - [ ] Breaking changes tratadas
 ```
 
 ---
 
-## Issue Severity Mapping
+## Mapeamento de Severidade de Problemas
 
-| Issue Type                             | Severity | Action     |
+| Tipo de Problema                       | Severidade | Ação       |
 | -------------------------------------- | -------- | ---------- |
-| Incorrect API signature                | CRITICAL | Must fix   |
-| Deprecated API (removed in next major) | CRITICAL | Must fix   |
-| Deprecated API (still works)           | MAJOR    | Should fix |
-| Suboptimal pattern                     | MINOR    | Optional   |
-| Missing error handling                 | MAJOR    | Should fix |
-| Type mismatch                          | CRITICAL | Must fix   |
-| Version incompatibility                | CRITICAL | Must fix   |
+| Assinatura de API incorreta            | CRITICAL | Deve corrigir |
+| API depreciada (removida no próximo major) | CRITICAL | Deve corrigir |
+| API depreciada (ainda funciona)        | MAJOR    | Deveria corrigir |
+| Padrão subótimo                        | MINOR    | Opcional   |
+| Tratamento de erro ausente             | MAJOR    | Deveria corrigir |
+| Incompatibilidade de tipo              | CRITICAL | Deve corrigir |
+| Incompatibilidade de versão            | CRITICAL | Deve corrigir |
 
 ---
 
-## Integration with QA Review
+## Integração com a Revisão de QA
 
-This task integrates into the QA review pipeline:
+Esta task se integra ao pipeline de revisão de QA:
 
 ```
 *review-build {story}
-├── Phase 1-5: Standard checks
-├── Phase 6.0: Library Validation ← THIS TASK
-├── Phase 6.1: Security Checklist
-├── Phase 6.2: Migration Validation
-└── Phase 7-10: Continue review
+├── Fase 1-5: Verificações padrão
+├── Fase 6.0: Validação de Bibliotecas ← ESTA TASK
+├── Fase 6.1: Checklist de Segurança
+├── Fase 6.2: Validação de Migrations
+└── Fase 7-10: Continuar a revisão
 ```
 
-**Trigger:** Automatically called during `*review-build`
-**Manual:** Can be run standalone via `*validate-libraries`
+**Gatilho:** Chamada automaticamente durante o `*review-build`
+**Manual:** Pode ser executada isoladamente via `*validate-libraries`
 
 ---
 
-## Example Output
+## Exemplo de Saída
 
 ```json
 {
@@ -479,18 +479,18 @@ This task integrates into the QA review pipeline:
 
 ---
 
-## Exit Criteria
+## Critérios de Saída
 
-This task is complete when:
+Esta task está completa quando:
 
-- All imports extracted from modified files
-- Each library resolved via Context7 (or marked unresolved)
-- API usage validated against documentation
-- Deprecated methods flagged
-- Report generated and saved
-- Issues integrated into QA review
+- Todos os imports foram extraídos dos arquivos modificados
+- Cada biblioteca foi resolvida via Context7 (ou marcada como não resolvida)
+- O uso da API foi validado contra a documentação
+- Métodos depreciados foram sinalizados
+- O relatório foi gerado e salvo
+- Os problemas foram integrados à revisão de QA
 
 ---
 
-_Absorbed from Auto-Claude PR Review System - Phase 6.0_
+_Absorvida do Auto-Claude PR Review System - Phase 6.0_
 _AIOX QA Enhancement v1.0_

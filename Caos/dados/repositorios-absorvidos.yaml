@@ -1,0 +1,64 @@
+# Histórico de Repositórios Absorvidos do Kolden
+#
+# Ledger de todo repositório de terceiro que já passou pelo pipeline de absorção (/absorver).
+# Consultado na FASE 0 (antes de tudo) para identificar IMEDIATAMENTE um repo repetido, e gravado
+# na FASE 8/F7 ao fim de cada absorção. Só o subagent `curador` escreve aqui.
+#
+# Chave de cada entrada = identidade normalizada do repo: "<host>/<owner>/<repo>" (minúsculas, sem
+# .git, sem barra final). Ex.: github.com/anthropics/anthropic-cookbook
+#
+# Esquema:
+#   <host/owner/repo>:
+#     url: URL canônica
+#     shas:                       # uma entrada por SHA já absorvido (mais recente por último)
+#       - sha: <commit completo>
+#         absorvidoEm: ISO-8601
+#         seguranca: SAFE | QUARENTENA | REJEITAR
+#         decisao: REUSE | ADAPT | CREATE
+#         squadAlvo: <id do squad que recebeu a absorção, ou "-" se rejeitado>
+#         capacidades: [lista das capacidades absorvidas/aprimoradas]
+#         entidades: [ids registrados em registro-de-entidades.yaml nesta absorção]
+#         notas: "uma linha"
+#     licenca: <SPDX, se conhecida>
+#     status: absorvido | rejeitado | parcial
+#
+# Veredito da Fase 0 (relevância imediata):
+#   repo ausente do ledger           -> NOVO (segue o pipeline)
+#   repo presente, SHA atual == último-> JÁ-ABSORVIDO (mesmo SHA): para, nada a fazer
+#   repo presente, SHA atual != último-> JÁ-ABSORVIDO (SHA mais novo): modo incremental (diff do delta)
+#   repo presente com status rejeitado-> RE-AVALIAR só se o Ronan insistir; senão manter bloqueio
+
+versao_do_ledger: "1.0.0"
+atualizado_em: "2026-06-22"
+
+repositorios:
+  github.com/coreyhaines31/marketingskills:
+    url: "https://github.com/coreyhaines31/marketingskills"
+    shas:
+      - sha: "8bfcdffb655f16e713940cd04fb08891899c47db"
+        absorvidoEm: "2026-06-22T00:00:00Z"
+        seguranca: QUARENTENA  # conteúdo markdown limpo; ressalva: validate-skills-official.sh faz git clone+pip sem pin (script opt-in, nunca executado/absorvido)
+        decisao: PARCIAL
+        squadAlvo: "caliope(REUSE), pluto/peitho/metis/pheme/aglaia(ADAPT pendente), seo(CREATE pendente)"
+        capacidades: ["45 skills de marketing (copy, ads, cro, analytics, social, offers, pricing, SEO)", "padrão evals/ por skill", "64 CLIs zero-dep"]
+        entidades: []  # preenchido conforme as absorções aprovadas forem aplicadas
+        notas: "Teste do pipeline /absorver. Copy já coberto pelo Caliope (REUSE). Lacuna real: SEO de execução (CREATE squad). Valor transversal: padrão evals/. Aprovado pelo Ronan: criar squad SEO + absorver evals + clusters."
+    licenca: "MIT"
+    status: parcial
+
+  # Cada nova absorção (/absorver) preenche este bloco via Fase 7.
+  # Exemplo (apague quando o primeiro repo real for absorvido):
+  #
+  # github.com/owner/exemplo-copy:
+  #   url: "https://github.com/owner/exemplo-copy"
+  #   shas:
+  #     - sha: "a1b2c3d4e5f6..."
+  #       absorvidoEm: "2026-06-22T00:00:00Z"
+  #       seguranca: SAFE
+  #       decisao: ADAPT
+  #       squadAlvo: caliope
+  #       capacidades: ["framework de VSL X", "técnica de headline Y"]
+  #       entidades: [caliope]
+  #       notas: "Absorveu 2 técnicas ausentes no Caliope; aprovado pelo Ronan."
+  #   licenca: "MIT"
+  #   status: absorvido

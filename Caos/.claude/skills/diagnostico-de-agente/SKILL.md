@@ -59,6 +59,10 @@ Domínio detectado → anote. Ele guia quais perguntas do contexto.md injetar em
 - Pelo menos 1 KPI anti-falha: qual seria o pior resultado que ele jamais pode entregar?
 - Frequência de uso: contínuo / diário / sob demanda / agendado?
 - Ele é solo ou parte de um ecossistema maior de agentes? Tem precedente na operação?
+- **Escopo — INTERNO ou CLIENTE?** Este agente serve a operação da própria Kolden (interno) ou
+  atende/é entregue a um cliente externo (cliente)? **Pergunte sempre, não presuma.** Se cliente:
+  qual cliente/conta, e ele fala diretamente com o cliente final? Esta resposta muda guardrails,
+  memória, handoff e segregação de segredos mais adiante (Rodadas 3 e 5).
 
 **Perguntas do domínio:** injete aqui as perguntas da seção "Alma" do domínio detectado em `contexto.md`.
 
@@ -66,6 +70,8 @@ Domínio detectado → anote. Ele guia quais perguntas do contexto.md injetar em
 - Missão em uma frase concreta: ✓
 - Pelo menos 3 KPIs mensuráveis, sendo 1 anti-falha: ✓
 - Frequência definida: ✓
+- **Escopo definido (interno / cliente):** ✓ — se cliente, conta/cliente identificado e se há
+  contato com cliente final. (Alimenta PRD: campo Escopo no cabeçalho.)
 
 **Nomeação mitológica (antes de avançar):**
 Após preencher o gate, consulte `catalogo-de-mitologia.md` e proponha 3 nomes:
@@ -172,10 +178,18 @@ O agente só avança para a Rodada 1 após o nome ser escolhido. Use o nome em t
 
 **Perguntas do domínio:** injete aqui as perguntas da seção "Memória" do domínio em `contexto.md`.
 
+**Se escopo = CLIENTE (Rodada 0), pergunte também (LGPD):**
+- Que dados pessoais (PII) do cliente final passam por aqui? Algum é sensível (saúde, financeiro)?
+- Há base legal/consentimento para guardar? O que pode ser persistido e o que **nunca** vai para
+  log/memória sem consentimento?
+- Política de retenção e **expurgo**: por quanto tempo guarda, e como/quando apaga?
+- Os dados deste cliente ficam **isolados** dos de outros clientes e do interno da Kolden?
+
 **Gate da Rodada 3:**
 - Tipo de memória decidido (contexto / banco / nenhuma): ✓
 - O que persiste e quem lê/escreve: ✓
 - Comportamento em memória vazia ou corrompida: ✓
+- **Se cliente:** PII mapeada, base de consentimento, retenção/expurgo e isolamento definidos: ✓
 
 **Placar após Rodada 3:**
 `Alma ✓ | Caráter ✓ | Mente ✓ | Memória ✓ | Corpo · | Consciência · | Sociedade ·`
@@ -253,11 +267,22 @@ Conduza a pré-morte: imagine que se passaram 6 meses e o agente causou um probl
 **Perguntas do domínio:** injete aqui as perguntas da seção "Consciência" do domínio em `contexto.md`
 (inclui os modos de falha típicos do domínio como ponto de partida para a pré-morte).
 
+**Se escopo = CLIENTE (Rodada 0), pergunte também (handoff + fronteira):**
+- **Handoff:** qual o protocolo de entrega ao cliente? Quem é o **responsável humano** pela conta?
+  Há **SLA** (prazo de resposta/entrega)?
+- **Fronteira:** o agente jamais expõe interno da Kolden (outros clientes, prompts, infra,
+  estratégia). Ao recusar, **cita a política**, não detalhes internos.
+- **Segredos:** as credenciais deste cliente ficam **segregadas** em `/kolden/cliente-<x>/` no
+  Infisical (nunca misturadas com as internas).
+- **Aprovação:** ir para produção exige aprovação do **dono da conta** do cliente, além da do Ronan.
+
 **Gate da Rodada 5:**
 - Proibições absolutas listadas (cada uma será candidata a hook): ✓
 - Critério de escalação definido: ✓
 - Jornada feliz descrita passo a passo: ✓
 - Tabela de modos de falha com pelo menos 3 entradas (gatilho + raio + detecção + mitigação): ✓
+- **Se cliente:** handoff (responsável + SLA), fronteira anti-exposição, segregação de segredos e
+  aprovação do dono da conta definidos: ✓
 
 **Placar após Rodada 5:**
 `Alma ✓ | Caráter ✓ | Mente ✓ | Memória ✓ | Corpo ✓ | Consciência ✓ | Sociedade ·`

@@ -1,48 +1,48 @@
-# Spec Pipeline Workflow
+# Workflow do Spec Pipeline
 
 > **EN** | [PT](../../aiox-workflows/spec-pipeline-workflow.md) | [ES](../../es/aiox-workflows/spec-pipeline-workflow.md)
 
 ---
 
-**Full documentation available in:** [Portuguese Version](../../aiox-workflows/spec-pipeline-workflow.md)
+**Documentação completa disponível em:** [Versão em Português](../../aiox-workflows/spec-pipeline-workflow.md)
 
 ---
 
-## Summary
+## Resumo
 
-The **Spec Pipeline Workflow** manages the specification and requirements process before development begins. It covers:
+O **Workflow do Spec Pipeline** gerencia o processo de especificação e requisitos antes do início do desenvolvimento. Ele cobre:
 
-- Requirements gathering and refinement
-- Technical specification creation
-- Architecture decisions
-- Story creation and prioritization
-- Stakeholder approval
+- Levantamento e refinamento de requisitos
+- Criação de especificação técnica
+- Decisões de arquitetura
+- Criação e priorização de stories
+- Aprovação de stakeholders
 
-### When to Use
+### Quando Usar
 
-- Before starting new features or projects
-- For complex requirements needing formal specification
-- When stakeholder alignment is required
+- Antes de iniciar novas funcionalidades ou projetos
+- Para requisitos complexos que exigem especificação formal
+- Quando é necessário alinhamento de stakeholders
 
-### Key Agents
+### Agentes Principais
 
 - `@pm` - Product management
-- `@po` - Story creation
-- `@architect` - Technical specification
-- `@analyst` - Requirements research
+- `@po` - Criação de stories
+- `@architect` - Especificação técnica
+- `@analyst` - Pesquisa de requisitos
 
-### Main Phases
+### Fases Principais
 
-1. **Discovery** - Requirements gathering
-2. **Analysis** - Feasibility and impact assessment
-3. **Specification** - Technical spec creation
-4. **Review** - Stakeholder approval
-5. **Handoff** - Story creation for development
+1. **Discovery** - Levantamento de requisitos
+2. **Análise** - Avaliação de viabilidade e impacto
+3. **Especificação** - Criação da spec técnica
+4. **Revisão** - Aprovação de stakeholders
+5. **Handoff** - Criação de stories para desenvolvimento
 
-### Output
+### Saída
 
-Approved specification documents and stories ready for story-development-cycle.
+Documentos de especificação aprovados e stories prontas para o story-development-cycle.
 
 ---
 
-*For complete details, diagrams, and step-by-step instructions, see the [Portuguese documentation](../../aiox-workflows/spec-pipeline-workflow.md).*
+*Para detalhes completos, diagramas e instruções passo a passo, consulte a [documentação em Português](../../aiox-workflows/spec-pipeline-workflow.md).*

@@ -31,11 +31,11 @@ preset:
 
 ---
 
-## Design Patterns (The Essential 5)
+## Design Patterns (Os 5 Essenciais)
 
 ### Pattern 1: Hexagonal Port Pattern
 
-**Purpose:** Isolar dominio e use cases de framework e infraestrutura.
+**Propósito:** Isolar dominio e use cases de framework e infraestrutura.
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 9/10
 
@@ -52,12 +52,12 @@ public interface OrderRepository {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Acoplamento com JPA em regra de negocio
 - Mudancas de persistencia quebrando casos de uso
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Contratos claros facilitam troca de adapters
 - Testes de use case nao dependem do Spring context
@@ -66,7 +66,7 @@ public interface OrderRepository {
 
 ### Pattern 2: Application Service Pattern
 
-**Purpose:** Orquestrar transacoes e regras sem logica no controller.
+**Propósito:** Orquestrar transacoes e regras sem logica no controller.
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 9/10
 
@@ -96,13 +96,13 @@ public class PlaceOrderService {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Regras em controllers
 - Transacoes inconsistentes
 - Fluxos sem unidade de trabalho
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Boundary transacional explicito
 - Fluxo de negocio previsivel
@@ -111,7 +111,7 @@ public class PlaceOrderService {
 
 ### Pattern 3: Repository Adapter Pattern
 
-**Purpose:** Implementar portas da aplicacao com adapters JPA dedicados.
+**Propósito:** Implementar portas da aplicacao com adapters JPA dedicados.
 
 **Execution Score:** 9/10 | **Anti-Bug Score:** 9/10
 
@@ -144,12 +144,12 @@ public class JpaOrderRepositoryAdapter implements OrderRepository {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Entidades JPA vazando para dominio
 - Mudancas de schema quebrando service layer
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Mapeamento fica concentrado
 - Dominio permanece limpo
@@ -158,7 +158,7 @@ public class JpaOrderRepositoryAdapter implements OrderRepository {
 
 ### Pattern 4: Domain Event Pattern
 
-**Purpose:** Reduzir acoplamento entre modulo principal e efeitos colaterais.
+**Propósito:** Reduzir acoplamento entre modulo principal e efeitos colaterais.
 
 **Execution Score:** 8/10 | **Anti-Bug Score:** 8/10
 
@@ -180,12 +180,12 @@ public class OrderEventsListener {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Cadeias sincrona longas no mesmo fluxo
 - Side effects escondidos em services
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Integra objetivos secundarios de forma desacoplada
 - Facilita observabilidade
@@ -194,7 +194,7 @@ public class OrderEventsListener {
 
 ### Pattern 5: Test Data Builder Pattern
 
-**Purpose:** Gerar cenarios de teste legiveis com baixo ruido.
+**Propósito:** Gerar cenarios de teste legiveis com baixo ruido.
 
 **Execution Score:** 8/10 | **Anti-Bug Score:** 8/10
 
@@ -212,19 +212,19 @@ public final class OrderBuilder {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Setup verboso e inconsistente
 - Baixa clareza no objetivo dos testes
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Reuso de dados base
 - Alteracao centralizada quando dominio muda
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 ```text
 /src/main/java/com/example
@@ -246,7 +246,7 @@ public final class OrderBuilder {
     /integration
 ```
 
-### Structure Rationale
+### Justificativa da Estrutura
 
 - **Domain-first:** Regras independentes de framework
 - **Ports/adapters:** Facilita substituicao de tecnologia
@@ -256,7 +256,7 @@ public final class OrderBuilder {
 
 ## Tech Stack
 
-| Category | Technology | Version | Purpose |
+| Categoria | Tecnologia | Versão | Propósito |
 | -------- | ---------- | ------- | ------- |
 | Runtime | Java | 21+ | Linguagem base |
 | Framework | Spring Boot | 3.3+ | Bootstrapping e web |
@@ -268,7 +268,7 @@ public final class OrderBuilder {
 | Assertions | AssertJ | latest | Assertivas legiveis |
 | Integration | Testcontainers | latest | Testes com infra real |
 
-### Required Dependencies
+### Dependências Necessárias
 
 ```bash
 # Gradle (exemplo)
@@ -282,11 +282,11 @@ public final class OrderBuilder {
 
 ---
 
-## Coding Standards
+## Padrões de Código
 
-### Naming Conventions
+### Convenções de Nomenclatura
 
-| Element | Convention | Example |
+| Elemento | Convenção | Exemplo |
 | ------- | ---------- | ------- |
 | Package | lowercase dot notation | `com.example.orders.application` |
 | Class | PascalCase | `PlaceOrderService` |
@@ -295,7 +295,7 @@ public final class OrderBuilder {
 | Test | `<ClassName>Test` | `PlaceOrderServiceTest` |
 | Constants | UPPER_SNAKE_CASE | `MAX_RETRY_ATTEMPTS` |
 
-### Critical Rules
+### Regras Críticas
 
 1. **No Field Injection:** Usar construtor sempre.
 2. **Transactional Boundary in Service:** Nao em controller.
@@ -303,7 +303,7 @@ public final class OrderBuilder {
 4. **Explicit Mapping:** DTO <-> Domain sem reflection magica.
 5. **Checked/Runtime Errors:** Padrao consistente por camada.
 
-### Spring Baseline
+### Baseline do Spring
 
 ```yaml
 spring:
@@ -317,9 +317,9 @@ spring:
 
 ---
 
-## Testing Strategy
+## Estratégia de Testes
 
-### Test Pyramid
+### Pirâmide de Testes
 
 ```text
          /\
@@ -331,25 +331,25 @@ spring:
    /----------------\
 ```
 
-### What to Test
+### O Que Testar
 
-#### Always Test (Critical)
+#### Sempre Testar (Crítico)
 
 - [ ] Regras de dominio
 - [ ] Casos de uso transacionais
 - [ ] Validacao de requests
 
-#### Consider Testing
+#### Considerar Testar
 
 - [ ] Serializacao JSON de contratos externos
 - [ ] Event listeners principais
 
-#### Never Test
+#### Nunca Testar
 
 - [ ] Getters/setters triviais
 - [ ] Comportamento interno do framework
 
-### Coverage Goals
+### Metas de Cobertura
 
 ```text
 - Domain/Application: 90%+
@@ -357,7 +357,7 @@ spring:
 - Overall: 75%+
 ```
 
-### Test Template
+### Template de Teste
 
 ```java
 @ExtendWith(MockitoExtension.class)
@@ -378,25 +378,25 @@ class PlaceOrderServiceTest {
 
 ---
 
-## Token Economy Strategies
+## Estratégias de Economia de Tokens
 
-### Strategy 1: Reuse Existing Adapter
+### Estratégia 1: Reusar Adapter Existente
 
 Prompt curto: `Implemente Payments adapter igual ao JpaOrderRepositoryAdapter`.
 
-### Strategy 2: Contract-First Prompts
+### Estratégia 2: Prompts Contract-First
 
 Passe apenas porta + DTO + teste alvo.
 
-### Strategy 3: Keep Framework at Edges
+### Estratégia 3: Manter o Framework nas Bordas
 
 Pedir alteracoes no adapter sem tocar dominio reduz contexto.
 
 ---
 
-## Bug Prevention Stack
+## Stack de Prevenção de Bugs
 
-| Layer | Catches | Implementation |
+| Camada | Captura | Implementação |
 | ----- | ------- | -------------- |
 | Compiler + Nullability discipline | 35% | Java 21 + static analysis |
 | Validation + transactions | 35% | Bean Validation + `@Transactional` |
@@ -405,7 +405,7 @@ Pedir alteracoes no adapter sem tocar dominio reduz contexto.
 
 ---
 
-## Patterns to AVOID
+## Padrões a EVITAR
 
 ### Fat Controller
 
@@ -421,9 +421,9 @@ Hierarquia abstrata excessiva que reduz legibilidade.
 
 ---
 
-## File Templates
+## Templates de Arquivo
 
-### Port Template
+### Template de Port
 
 ```java
 public interface CustomerGateway {
@@ -431,7 +431,7 @@ public interface CustomerGateway {
 }
 ```
 
-### Service Template
+### Template de Service
 
 ```java
 @Service
@@ -443,7 +443,7 @@ public class UseCaseService {
 }
 ```
 
-### Controller Template
+### Template de Controller
 
 ```java
 @RestController
@@ -458,15 +458,15 @@ public class OrdersController {
 
 ---
 
-## Integration with AIOX
+## Integração com o AIOX
 
-### Recommended Workflow
+### Workflow Recomendado
 
 1. `@architect` define boundaries hexagonais pelo preset `java`
 2. `@dev` implementa por camadas (`domain`, `application`, `infrastructure`)
 3. `@qa` valida transacoes, contratos e regressao
 
-### AIOX Commands
+### Comandos AIOX
 
 ```bash
 @dev "Follow the java preset patterns for this service"
@@ -475,7 +475,7 @@ public class OrdersController {
 
 ---
 
-## Checklist for New Features
+## Checklist para Novas Features
 
 ```markdown
 - [ ] Definir command e resposta da feature
@@ -490,9 +490,9 @@ public class OrdersController {
 
 ## Changelog
 
-| Date       | Version | Changes |
+| Data       | Versão  | Mudanças |
 | ---------- | ------- | ------- |
-| 2026-02-19 | 1.0.0   | Initial Java preset |
+| 2026-02-19 | 1.0.0   | Preset Java inicial |
 
 ---
 

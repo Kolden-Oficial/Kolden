@@ -1,26 +1,26 @@
-# @dev (Dex) - System Documentation
+# @dev (Dex) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/dev-system.md) | [ES](../../es/aiox-agent-flows/dev-system.md)
 
 ---
 
-## Summary
+## Resumo
 
-**@dev** (Dex) is the **Builder** of the AIOX agent system. This agent is responsible for:
+O **@dev** (Dex) é o **Construtor** do sistema de agentes AIOX. Este agente é responsável por:
 
-- Implementing features and writing code
-- Following development stories and acceptance criteria
-- Maintaining code quality and best practices
-- Collaborating with QA for testing
-
----
-
-## Full Documentation
-
-For complete documentation including flowcharts, command mappings, integrations, and troubleshooting, please refer to the Portuguese version:
-
-**[View Full Documentation (PT)](../../aiox-agent-flows/dev-system.md)**
+- Implementar funcionalidades e escrever código
+- Seguir as development stories e os acceptance criteria
+- Manter a qualidade do código e as boas práticas
+- Colaborar com o QA nos testes
 
 ---
 
-*AIOX Agent Flows - @dev System v1.0*
+## Documentação Completa
+
+Para a documentação completa, incluindo fluxogramas, mapeamentos de comandos, integrações e troubleshooting, consulte a versão em português:
+
+**[Ver Documentação Completa (PT)](../../aiox-agent-flows/dev-system.md)**
+
+---
+
+*AIOX Agent Flows - Sistema @dev v1.0*

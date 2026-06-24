@@ -1,4 +1,4 @@
-# Agent Quality Gate Checklist
+# Checklist de Quality Gate de Agente
 
 ```yaml
 checklist:
@@ -6,48 +6,48 @@ checklist:
   version: 4.0.0
   created: 2026-01-30
   updated: 2026-02-04
-  purpose: "Validate agent definitions meet Hybrid Loader quality standard + operational completeness"
-  mode: blocking  # Prevents publication if critical items fail
+  purpose: "Validar que as definições de agente atendem ao padrão de qualidade do Hybrid Loader + completude operacional"
+  mode: blocking  # Impede a publicação se itens críticos falharem
   architecture: "hybrid-loader"
-  new_in_v4: "SC_AGT_004 — Operational Completeness (task files, templates, checklists, maturity scoring)"
+  new_in_v4: "SC_AGT_004 — Completude Operacional (arquivos de task, templates, checklists, pontuação de maturidade)"
   reference: "aprendizado/32-ANATOMIA-AGENTE-100-PORCENTO-REPLICAVEL.md"
 ```
 
 ---
 
-## Pre-Validation: File Basics
+## Pré-Validação: Básico do Arquivo
 
 ```yaml
 file_basics:
   - id: min-lines
-    check: "Agent file has 800+ lines"
+    check: "O arquivo do agente tem 800+ linhas"
     type: blocking
     validation: "wc -l {file} >= 800"
 
   - id: yaml-valid
-    check: "YAML syntax is valid"
+    check: "A sintaxe YAML é válida"
     type: blocking
     validation: "yamllint passes"
 
   - id: no-placeholders
-    check: "No unfilled {{placeholders}} remain"
+    check: "Nenhum {{placeholder}} não preenchido restante"
     type: blocking
     validation: "grep '{{' returns empty"
 ```
 
 ---
 
-## Level 0: Loader Configuration (All Required - NEW)
+## Nível 0: Configuração do Loader (Todos Obrigatórios - NOVO)
 
 ```yaml
 loader_checks:
   - id: activation-notice
-    check: "ACTIVATION-NOTICE is present"
+    check: "ACTIVATION-NOTICE está presente"
     type: blocking
     section: "top of file"
 
   - id: ide-file-resolution
-    check: "IDE-FILE-RESOLUTION has valid base_path"
+    check: "IDE-FILE-RESOLUTION tem um base_path válido"
     type: blocking
     section: "Level 0"
     required_fields:
@@ -55,17 +55,17 @@ loader_checks:
       - resolution_pattern
 
   - id: request-resolution
-    check: "REQUEST-RESOLUTION has mapping examples"
+    check: "REQUEST-RESOLUTION tem exemplos de mapeamento"
     type: blocking
     section: "Level 0"
 
   - id: command-loader-exists
-    check: "command_loader section exists"
+    check: "A seção command_loader existe"
     type: blocking
     section: "Level 0"
 
   - id: command-loader-complete
-    check: "Every command with loader != null has entry in command_loader"
+    check: "Todo comando com loader != null tem entrada em command_loader"
     type: blocking
     validation: |
       For each command in commands:
@@ -73,12 +73,12 @@ loader_checks:
           assert command.name in command_loader
 
   - id: command-loader-requires
-    check: "Each command_loader entry has 'requires' array"
+    check: "Cada entrada de command_loader tem um array 'requires'"
     type: blocking
     validation: "command_loader[*].requires is array"
 
   - id: critical-loader-rule
-    check: "CRITICAL_LOADER_RULE is present"
+    check: "CRITICAL_LOADER_RULE está presente"
     type: blocking
     must_contain:
       - "LOOKUP"
@@ -89,7 +89,7 @@ loader_checks:
       - "FAILURE TO LOAD = FAILURE TO EXECUTE"
 
   - id: dependencies-complete
-    check: "dependencies lists all files in command_loader.requires"
+    check: "dependencies lista todos os arquivos em command_loader.requires"
     type: blocking
     validation: |
       all_required_files = flatten(command_loader[*].requires)
@@ -97,68 +97,68 @@ loader_checks:
       assert all_required_files is subset of all_dependency_files
 
   - id: files-exist
-    check: "All files in dependencies actually exist"
+    check: "Todos os arquivos em dependencies realmente existem"
     type: recommended
     validation: "ls {base_path}/{file} succeeds for each"
 ```
 
 ---
 
-## Level 1: Identity (All Required)
+## Nível 1: Identidade (Todos Obrigatórios)
 
 ```yaml
 identity_checks:
   - id: agent-name
-    check: "agent.name is defined"
+    check: "agent.name está definido"
     type: blocking
     section: "agent"
 
   - id: agent-id
-    check: "agent.id is kebab-case"
+    check: "agent.id está em kebab-case"
     type: blocking
     section: "agent"
     pattern: "^[a-z]+(-[a-z]+)*$"
 
   - id: agent-tier
-    check: "agent.tier is 1, 2, or 3"
+    check: "agent.tier é 1, 2 ou 3"
     type: blocking
     section: "agent"
 
   - id: when-to-use
-    check: "agent.whenToUse is descriptive (20+ chars)"
+    check: "agent.whenToUse é descritivo (20+ caracteres)"
     type: blocking
     section: "agent"
 
   - id: persona-complete
-    check: "persona has role, style, identity, focus"
+    check: "persona tem role, style, identity, focus"
     type: blocking
     section: "persona"
 
   - id: persona-background
-    check: "persona.background has 3+ paragraphs"
+    check: "persona.background tem 3+ parágrafos"
     type: recommended
     section: "persona"
 ```
 
 ---
 
-## Level 2: Operational (All Required)
+## Nível 2: Operacional (Todos Obrigatórios)
 
 ```yaml
 operational_checks:
   - id: core-principles
-    check: "core_principles has 5-9 items"
+    check: "core_principles tem de 5 a 9 itens"
     type: blocking
     min: 5
     max: 9
 
   - id: framework-exists
-    check: "operational_frameworks has at least 1 framework"
+    check: "operational_frameworks tem pelo menos 1 framework"
     type: blocking
     min: 1
 
   - id: framework-complete
-    check: "Each framework has: name, philosophy, steps, examples"
+    check: "Cada framework tem: name, philosophy, steps, examples"
     type: blocking
     required_fields:
       - name
@@ -167,12 +167,12 @@ operational_checks:
       - examples
 
   - id: framework-steps
-    check: "Each framework has 3+ steps with descriptions"
+    check: "Cada framework tem 3+ steps com descrições"
     type: blocking
     min_steps: 3
 
   - id: commands-defined
-    check: "commands has 5+ items including *help and *exit"
+    check: "commands tem 5+ itens incluindo *help e *exit"
     type: blocking
     min: 5
     required:
@@ -182,49 +182,49 @@ operational_checks:
 
 ---
 
-## Level 3: Voice DNA (All Required)
+## Nível 3: Voice DNA (Todos Obrigatórios)
 
 ```yaml
 voice_checks:
   - id: sentence-starters
-    check: "voice_dna.sentence_starters has 5+ patterns"
+    check: "voice_dna.sentence_starters tem 5+ padrões"
     type: recommended
     min: 5
 
   - id: metaphors
-    check: "voice_dna.metaphors has 3+ metaphors"
+    check: "voice_dna.metaphors tem 3+ metáforas"
     type: recommended
     min: 3
 
   - id: vocabulary-always
-    check: "voice_dna.vocabulary.always_use has 5+ terms"
+    check: "voice_dna.vocabulary.always_use tem 5+ termos"
     type: blocking
     min: 5
 
   - id: vocabulary-never
-    check: "voice_dna.vocabulary.never_use has 3+ terms"
+    check: "voice_dna.vocabulary.never_use tem 3+ termos"
     type: blocking
     min: 3
 
   - id: behavioral-states
-    check: "voice_dna.behavioral_states has 2+ states"
+    check: "voice_dna.behavioral_states tem 2+ estados"
     type: recommended
     min: 2
 
   - id: signature-phrases
-    check: "signature_phrases has 5+ phrases"
+    check: "signature_phrases tem 5+ frases"
     type: recommended
     min: 5
 ```
 
 ---
 
-## Level 4: Quality Assurance (All Required)
+## Nível 4: Garantia de Qualidade (Todos Obrigatórios)
 
 ```yaml
 quality_checks:
   - id: output-examples
-    check: "output_examples has 3+ complete examples"
+    check: "output_examples tem 3+ exemplos completos"
     type: blocking
     min: 3
     required_fields:
@@ -233,38 +233,38 @@ quality_checks:
       - output
 
   - id: anti-patterns-never
-    check: "anti_patterns.never_do has 5+ items"
+    check: "anti_patterns.never_do tem 5+ itens"
     type: blocking
     min: 5
 
   - id: anti-patterns-flags
-    check: "anti_patterns.red_flags_in_input has 2+ items"
+    check: "anti_patterns.red_flags_in_input tem 2+ itens"
     type: recommended
     min: 2
 
   - id: completion-criteria
-    check: "completion_criteria.task_done_when is defined"
+    check: "completion_criteria.task_done_when está definido"
     type: blocking
 
   - id: handoff-defined
-    check: "completion_criteria.handoff_to has 1+ handoffs"
+    check: "completion_criteria.handoff_to tem 1+ handoffs"
     type: blocking
     min: 1
 
   - id: validation-checklist
-    check: "completion_criteria.validation_checklist has 3+ items"
+    check: "completion_criteria.validation_checklist tem 3+ itens"
     type: recommended
     min: 3
 
   - id: objection-algorithms
-    check: "objection_algorithms has 3+ objections with responses"
+    check: "objection_algorithms tem 3+ objeções com respostas"
     type: recommended
     min: 3
 ```
 
 ---
 
-## Level 5: Credibility (Domain-Specific)
+## Nível 5: Credibilidade (Específico de Domínio)
 
 ```yaml
 credibility_checks:
@@ -276,98 +276,98 @@ credibility_checks:
 
   checks:
     - id: achievements
-      check: "authority_proof_arsenal.career_achievements has 3+ items"
+      check: "authority_proof_arsenal.career_achievements tem 3+ itens"
       type: recommended
       min: 3
 
     - id: publications
-      check: "authority_proof_arsenal.publications is defined"
+      check: "authority_proof_arsenal.publications está definido"
       type: recommended
 
     - id: testimonials
-      check: "authority_proof_arsenal.testimonials has 1+ items"
+      check: "authority_proof_arsenal.testimonials tem 1+ itens"
       type: recommended
       min: 1
 ```
 
 ---
 
-## Operational Completeness (SC_AGT_004 - NEW)
+## Completude Operacional (SC_AGT_004 - NOVO)
 
-> **Reference:** `aprendizado/32-ANATOMIA-AGENTE-100-PORCENTO-REPLICAVEL.md`
-> **Principle:** An agent without operational infrastructure is a persona without process.
+> **Referência:** `aprendizado/32-ANATOMIA-AGENTE-100-PORCENTO-REPLICAVEL.md`
+> **Princípio:** Um agente sem infraestrutura operacional é uma persona sem processo.
 
 ```yaml
 operational_completeness_checks:
   # ═══════════════════════════════════════════════════════════════
-  # TASK FILES — Every operational command must have a task file
+  # ARQUIVOS DE TASK — Todo comando operacional deve ter um arquivo de task
   # ═══════════════════════════════════════════════════════════════
 
   - id: task-files-exist
-    check: "Each operational command has a corresponding task file"
+    check: "Cada comando operacional tem um arquivo de task correspondente"
     type: blocking
     validation: |
       For each command in commands where loader != null:
         assert file_exists(command_loader[command].requires[0])
-    veto_if_fail: "Command without task file = LLM will improvise every execution"
+    veto_if_fail: "Comando sem arquivo de task = a LLM vai improvisar em cada execução"
 
   - id: task-files-have-steps
-    check: "Each task file has 3+ steps with actions"
+    check: "Cada arquivo de task tem 3+ steps com ações"
     type: blocking
     validation: "count(steps) >= 3 for each task file"
-    veto_if_fail: "Task without steps is decoration, not process"
+    veto_if_fail: "Task sem steps é decoração, não processo"
 
   - id: task-files-have-veto
-    check: "Each task file has at least 1 veto condition"
+    check: "Cada arquivo de task tem pelo menos 1 condição de veto"
     type: blocking
     validation: "count(veto_conditions) >= 1 for each task file"
-    veto_if_fail: "Task without veto allows incomplete work to pass (PV004)"
+    veto_if_fail: "Task sem veto permite que trabalho incompleto passe (PV004)"
 
   # ═══════════════════════════════════════════════════════════════
-  # TEMPLATES — Structured outputs need templates
+  # TEMPLATES — Saídas estruturadas precisam de templates
   # ═══════════════════════════════════════════════════════════════
 
   - id: templates-exist
-    check: "Commands that produce structured output have template"
+    check: "Comandos que produzem saída estruturada têm template"
     type: recommended
     validation: |
       For commands that generate reports/analysis/documents:
         assert template file exists or inline format defined
 
   - id: templates-have-sections
-    check: "Templates define required sections"
+    check: "Templates definem as seções obrigatórias"
     type: recommended
     validation: "Each template lists mandatory sections"
 
   # ═══════════════════════════════════════════════════════════════
-  # CHECKLISTS — At least 1 with veto conditions
+  # CHECKLISTS — Pelo menos 1 com condições de veto
   # ═══════════════════════════════════════════════════════════════
 
   - id: checklist-exists
-    check: "Agent has at least 1 operational checklist"
+    check: "O agente tem pelo menos 1 checklist operacional"
     type: blocking
     validation: "count(checklists in dependencies) >= 1"
-    veto_if_fail: "Without checklist, no systematic validation of outputs"
+    veto_if_fail: "Sem checklist, não há validação sistemática das saídas"
 
   - id: checklist-has-blocking
-    check: "Checklist has blocking items with veto conditions"
+    check: "O checklist tem itens bloqueantes com condições de veto"
     type: recommended
     validation: "Checklist has items with type: blocking"
 
   # ═══════════════════════════════════════════════════════════════
-  # DEPENDENCIES INTEGRITY — Everything referenced exists
+  # INTEGRIDADE DAS DEPENDÊNCIAS — Tudo que é referenciado existe
   # ═══════════════════════════════════════════════════════════════
 
   - id: dependencies-files-exist
-    check: "ALL files listed in dependencies actually exist on disk"
+    check: "TODOS os arquivos listados em dependencies realmente existem em disco"
     type: blocking
     validation: |
       For each file in dependencies.tasks + dependencies.templates + dependencies.checklists:
         assert file_exists("{base_path}/{file}")
-    veto_if_fail: "Referencing non-existent files = broken command execution"
+    veto_if_fail: "Referenciar arquivos inexistentes = execução de comando quebrada"
 
   - id: dependencies-match-loader
-    check: "All command_loader.requires files are in dependencies"
+    check: "Todos os arquivos de command_loader.requires estão em dependencies"
     type: blocking
     validation: |
       required_files = flatten(command_loader[*].requires)
@@ -375,11 +375,11 @@ operational_completeness_checks:
       assert required_files is subset of dependency_files
 
   # ═══════════════════════════════════════════════════════════════
-  # MATURITY SCORE
+  # PONTUAÇÃO DE MATURIDADE
   # ═══════════════════════════════════════════════════════════════
 
   - id: maturity-score
-    check: "Agent maturity score >= 7.0 (Nivel 3)"
+    check: "Pontuação de maturidade do agente >= 7.0 (Nivel 3)"
     type: blocking
     formula: |
       Score = (identity × 1.0) + (thinking_dna × 1.5) + (voice_dna × 1.5)
@@ -397,163 +397,163 @@ operational_completeness_checks:
 
 ---
 
-## Level 6: Integration (All Required)
+## Nível 6: Integração (Todos Obrigatórios)
 
 ```yaml
 integration_checks:
   - id: tier-position
-    check: "integration.tier_position is defined"
+    check: "integration.tier_position está definido"
     type: blocking
 
   - id: workflow-position
-    check: "integration.workflow_integration.position_in_flow is defined"
+    check: "integration.workflow_integration.position_in_flow está definido"
     type: blocking
 
   - id: handoff-from
-    check: "integration.workflow_integration.handoff_from has 1+ items"
+    check: "integration.workflow_integration.handoff_from tem 1+ itens"
     type: recommended
     min: 1
 
   - id: handoff-to
-    check: "integration.workflow_integration.handoff_to has 1+ items"
+    check: "integration.workflow_integration.handoff_to tem 1+ itens"
     type: blocking
     min: 1
 
   - id: activation-greeting
-    check: "activation.greeting is defined and 50+ chars"
+    check: "activation.greeting está definido e tem 50+ caracteres"
     type: blocking
     min_chars: 50
 ```
 
 ---
 
-## Validation Execution
+## Execução da Validação
 
-### Quick Validation (CLI)
+### Validação Rápida (CLI)
 
 ```bash
-# Run quality gate on agent file
+# Rodar o quality gate no arquivo do agente
 *validate-agent squads/{pack}/agents/{agent}.md
 ```
 
-### Manual Validation Checklist
+### Checklist de Validação Manual
 
-Copy this checklist and fill in:
+Copie este checklist e preencha:
 
 ```markdown
-## Agent Quality Gate: {agent_name}
+## Quality Gate de Agente: {agent_name}
 
-### Blocking Requirements (Must Pass)
+### Requisitos Bloqueantes (Devem Passar)
 
-**Level 1: Identity**
-- [ ] agent.name defined
-- [ ] agent.id is kebab-case
-- [ ] agent.tier is 1-3
-- [ ] agent.whenToUse is descriptive
-- [ ] persona complete (role, style, identity, focus)
+**Nível 1: Identidade**
+- [ ] agent.name definido
+- [ ] agent.id está em kebab-case
+- [ ] agent.tier é 1-3
+- [ ] agent.whenToUse é descritivo
+- [ ] persona completa (role, style, identity, focus)
 
-**Level 2: Operational**
-- [ ] core_principles has 5-9 items
-- [ ] operational_frameworks has 1+ framework
-- [ ] Each framework has name, philosophy, steps, examples
-- [ ] commands has 5+ items including *help, *exit
+**Nível 2: Operacional**
+- [ ] core_principles tem de 5 a 9 itens
+- [ ] operational_frameworks tem 1+ framework
+- [ ] Cada framework tem name, philosophy, steps, examples
+- [ ] commands tem 5+ itens incluindo *help, *exit
 
-**Level 3: Voice DNA**
-- [ ] vocabulary.always_use has 5+ terms
-- [ ] vocabulary.never_use has 3+ terms
+**Nível 3: Voice DNA**
+- [ ] vocabulary.always_use tem 5+ termos
+- [ ] vocabulary.never_use tem 3+ termos
 
-**Level 4: Quality**
-- [ ] output_examples has 3+ complete examples
-- [ ] anti_patterns.never_do has 5+ items
-- [ ] completion_criteria.task_done_when defined
-- [ ] completion_criteria.handoff_to has 1+ items
+**Nível 4: Qualidade**
+- [ ] output_examples tem 3+ exemplos completos
+- [ ] anti_patterns.never_do tem 5+ itens
+- [ ] completion_criteria.task_done_when definido
+- [ ] completion_criteria.handoff_to tem 1+ itens
 
-**Level 6: Integration**
-- [ ] integration.tier_position defined
-- [ ] workflow_integration.position_in_flow defined
-- [ ] handoff_to has 1+ items
-- [ ] activation.greeting defined (50+ chars)
+**Nível 6: Integração**
+- [ ] integration.tier_position definido
+- [ ] workflow_integration.position_in_flow definido
+- [ ] handoff_to tem 1+ itens
+- [ ] activation.greeting definido (50+ caracteres)
 
-**Operational Completeness (SC_AGT_004)**
-- [ ] Task file exists for each operational command
-- [ ] Each task file has 3+ steps
-- [ ] Each task file has 1+ veto conditions
-- [ ] At least 1 checklist with blocking items
-- [ ] ALL dependency files exist on disk
-- [ ] command_loader.requires matches dependencies
-- [ ] Maturity score >= 7.0
+**Completude Operacional (SC_AGT_004)**
+- [ ] Existe arquivo de task para cada comando operacional
+- [ ] Cada arquivo de task tem 3+ steps
+- [ ] Cada arquivo de task tem 1+ condições de veto
+- [ ] Pelo menos 1 checklist com itens bloqueantes
+- [ ] TODOS os arquivos de dependência existem em disco
+- [ ] command_loader.requires corresponde a dependencies
+- [ ] Pontuação de maturidade >= 7.0
 
-### Recommended Requirements (Should Pass)
+### Requisitos Recomendados (Deveriam Passar)
 
-- [ ] persona.background has 3+ paragraphs
-- [ ] sentence_starters has 5+ patterns
-- [ ] metaphors has 3+ metaphors
-- [ ] behavioral_states has 2+ states
-- [ ] signature_phrases has 5+ phrases
-- [ ] red_flags_in_input has 2+ items
-- [ ] validation_checklist has 3+ items
-- [ ] objection_algorithms has 3+ objections
-- [ ] Agent file has 800+ lines
-- [ ] Templates exist for structured output types
-- [ ] Checklists have blocking items with veto conditions
+- [ ] persona.background tem 3+ parágrafos
+- [ ] sentence_starters tem 5+ padrões
+- [ ] metaphors tem 3+ metáforas
+- [ ] behavioral_states tem 2+ estados
+- [ ] signature_phrases tem 5+ frases
+- [ ] red_flags_in_input tem 2+ itens
+- [ ] validation_checklist tem 3+ itens
+- [ ] objection_algorithms tem 3+ objeções
+- [ ] O arquivo do agente tem 800+ linhas
+- [ ] Existem templates para os tipos de saída estruturada
+- [ ] Checklists têm itens bloqueantes com condições de veto
 
-### Domain-Specific (If Applicable)
+### Específico de Domínio (Se Aplicável)
 
-For Copy/Legal/Storytelling/Data:
-- [ ] authority_proof_arsenal.achievements has 3+ items
-- [ ] publications defined
-- [ ] testimonials has 1+ items
+Para Copy/Legal/Storytelling/Data:
+- [ ] authority_proof_arsenal.achievements tem 3+ itens
+- [ ] publications definido
+- [ ] testimonials tem 1+ itens
 
-### Result
+### Resultado
 
-**Blocking:** ___/24 passed
-**Recommended:** ___/11 passed
-**Maturity Score:** ___/10
-**Maturity Level:** Nivel ___
-**Total Score:** ___%
+**Bloqueante:** ___/24 passaram
+**Recomendado:** ___/11 passaram
+**Pontuação de Maturidade:** ___/10
+**Nível de Maturidade:** Nivel ___
+**Pontuação Total:** ___%
 
-**Decision:** [ ] PASS - Ready for publication (Nivel 3+)
-              [ ] CONDITIONAL - Pass with documented gaps (Nivel 2)
-              [ ] FAIL - Must fix blocking items (Nivel 1)
+**Decisão:** [ ] PASS - Pronto para publicação (Nivel 3+)
+              [ ] CONDITIONAL - Passar com lacunas documentadas (Nivel 2)
+              [ ] FAIL - Deve corrigir itens bloqueantes (Nivel 1)
 ```
 
 ---
 
-## Scoring
+## Pontuação
 
-| Score | Result | Action |
+| Pontuação | Resultado | Ação |
 |-------|--------|--------|
-| 100% Blocking + 80%+ Recommended | EXCELLENT | Publish |
-| 100% Blocking + 50-79% Recommended | GOOD | Publish with note |
-| 100% Blocking + <50% Recommended | CONDITIONAL | Document gaps, publish |
-| <100% Blocking | FAIL | Fix before publish |
+| 100% Bloqueante + 80%+ Recomendado | EXCELLENT | Publicar |
+| 100% Bloqueante + 50-79% Recomendado | GOOD | Publicar com observação |
+| 100% Bloqueante + <50% Recomendado | CONDITIONAL | Documentar lacunas, publicar |
+| <100% Bloqueante | FAIL | Corrigir antes de publicar |
 
 ---
 
-## Integration with Workflow
+## Integração com o Workflow
 
-This checklist is automatically invoked at:
+Este checklist é invocado automaticamente em:
 
 ```
 research-then-create-agent workflow
     ↓
-[Phase 6: Framework Extraction]
+[Fase 6: Extração de Frameworks]
     ↓
-[Phase 7: Agent Definition]
+[Fase 7: Definição do Agente]
     ↓
-[Phase 8: QUALITY GATE] ← THIS CHECKLIST
+[Fase 8: QUALITY GATE] ← ESTE CHECKLIST
     ↓
-    ├── PASS → Continue to task creation
-    └── FAIL → Loop back to fix issues
+    ├── PASS → Continuar para a criação de tasks
+    └── FAIL → Voltar para corrigir os problemas
 ```
 
 ---
 
-**Version:** 4.0.0
-**Created:** 2026-01-30
-**Updated:** 2026-02-04
-**Standard:** AIOX Agent Quality Level + Operational Completeness
+**Versão:** 4.0.0
+**Criado:** 2026-01-30
+**Atualizado:** 2026-02-04
+**Padrão:** AIOX Agent Quality Level + Completude Operacional
 **Changelog:**
-- v4.0: Added SC_AGT_004 (Operational Completeness), maturity scoring, task/template/checklist validation
-- v3.0: Added Level 0 loader checks
-- v2.0: Initial hybrid loader architecture
+- v4.0: Adicionado SC_AGT_004 (Completude Operacional), pontuação de maturidade, validação de task/template/checklist
+- v3.0: Adicionadas as verificações de loader do Nível 0
+- v2.0: Arquitetura inicial do hybrid loader

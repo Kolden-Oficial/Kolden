@@ -1,20 +1,20 @@
-# Task: QA After Creation
+# Task: QA Após Criação
 
 **Task ID:** qa-after-creation
 **Version:** 2.0.0
-**Purpose:** Automatic quality assurance check after squad/component creation (includes operational completeness)
+**Propósito:** Verificação automática de garantia de qualidade após a criação de squad/componente (inclui completude operacional)
 **Orchestrator:** @squad-architect
-**Mode:** Automatic (triggered by creation tasks)
+**Modo:** Automático (disparado por tasks de criação)
 
-**Process Specialist:** @pedro-valerio
-**Specialist Guidance:**
+**Especialista de Processo:** @pedro-valerio
+**Orientação do Especialista:**
 
-- Use Process Absolutism principles for validation
-- Define VETO conditions that BLOCK, not just warn
-- For workflow/process validation, invoke: `@pedro-valerio *audit`
-- For designing quality gates, invoke: `@pedro-valerio *design-heuristic`
+- Use os princípios de Process Absolutism para validação
+- Defina condições de VETO que BLOQUEIAM, não apenas avisam
+- Para validação de workflow/processo, invoque: `@pedro-valerio *audit`
+- Para projetar quality gates, invoque: `@pedro-valerio *design-heuristic`
 
-**Core Philosophy:**
+**Filosofia Central:**
 
 ```text
 Every created component must pass QA before being considered complete.
@@ -24,21 +24,21 @@ Find problems NOW, not when the user tries to use it.
 
 ---
 
-## When This Task Runs
+## Quando Esta Task Roda
 
-This task is triggered automatically after:
+Esta task é disparada automaticamente após:
 
-| Trigger Task       | What Was Created | QA Scope                 |
+| Task Disparadora   | O Que Foi Criado | Escopo do QA             |
 | ------------------ | ---------------- | ------------------------ |
-| `*create-squad`    | New squad        | Full squad validation    |
-| `*create-agent`    | New agent        | Agent-only validation    |
-| `*create-task`     | New task         | Task-only validation     |
-| `*create-workflow` | New workflow     | Workflow-only validation |
-| `*create-template` | New template     | Template-only validation |
+| `*create-squad`    | Novo squad       | Validação completa do squad |
+| `*create-agent`    | Novo agente      | Validação apenas do agente |
+| `*create-task`     | Nova task        | Validação apenas da task |
+| `*create-workflow` | Novo workflow    | Validação apenas do workflow |
+| `*create-template` | Novo template    | Validação apenas do template |
 
 ---
 
-## Inputs
+## Entradas
 
 ```yaml
 inputs:
@@ -68,7 +68,7 @@ inputs:
 
 ---
 
-## QA Flow
+## Fluxo de QA
 
 ```text
 TRIGGER (component created)
@@ -107,10 +107,10 @@ OUTPUT: QA Report + Pass/Fail
 
 ---
 
-## PHASE 1: Quick Checks
+## FASE 1: Verificações Rápidas
 
-**Duration:** < 5 seconds
-**Blocking:** Yes
+**Duração:** < 5 segundos
+**Bloqueante:** Sim
 
 ```yaml
 quick_checks:
@@ -141,10 +141,10 @@ quick_checks:
 
 ---
 
-## PHASE 2: Security Scan
+## FASE 2: Varredura de Segurança
 
-**Duration:** < 10 seconds
-**Blocking:** Yes (for HIGH severity)
+**Duração:** < 10 segundos
+**Bloqueante:** Sim (para severidade HIGH)
 
 ```yaml
 security_scan:
@@ -179,10 +179,10 @@ security_scan:
 
 ---
 
-## PHASE 3: Structure Validation
+## FASE 3: Validação de Estrutura
 
-**Duration:** < 15 seconds
-**Blocking:** Yes (for missing dependencies)
+**Duração:** < 15 segundos
+**Bloqueante:** Sim (para dependências ausentes)
 
 ```yaml
 structure_validation:
@@ -217,10 +217,10 @@ structure_validation:
 
 ---
 
-## PHASE 4: Quality Scoring
+## FASE 4: Pontuação de Qualidade
 
-**Duration:** < 30 seconds
-**Blocking:** No (score reported)
+**Duração:** < 30 segundos
+**Bloqueante:** Não (pontuação reportada)
 
 ```yaml
 quality_scoring:
@@ -306,11 +306,11 @@ quality_scoring:
 
 ---
 
-## PHASE 5: Report & Action
+## FASE 5: Relatório e Ação
 
-**Duration:** < 5 seconds
+**Duração:** < 5 segundos
 
-### Report Format
+### Formato do Relatório
 
 ```yaml
 qa_report:
@@ -375,7 +375,7 @@ qa_report:
     message: "..."
 ```
 
-### Actions Based on Result
+### Ações Baseadas no Resultado
 
 ```yaml
 actions:
@@ -414,11 +414,11 @@ actions:
 
 ---
 
-## Integration with Creation Tasks
+## Integração com Tasks de Criação
 
-### How to Trigger QA
+### Como Disparar o QA
 
-Add to end of creation tasks:
+Adicione ao final das tasks de criação:
 
 ```yaml
 # In create-squad.md, create-agent.md, etc.
@@ -431,7 +431,7 @@ post_creation:
       creation_task: '{current_task}'
 ```
 
-### Example Flow
+### Exemplo de Fluxo
 
 ```text
 User: *create-squad my-new-squad
@@ -452,7 +452,7 @@ Output: "✅ Squad 'my-new-squad' created and validated (Score: 7.8/10)"
 
 ---
 
-## CLI Usage
+## Uso via CLI
 
 ```bash
 # Auto-triggered (normal flow)
@@ -471,24 +471,24 @@ Output: "✅ Squad 'my-new-squad' created and validated (Score: 7.8/10)"
 
 ---
 
-## Outputs
+## Saídas
 
-| Output           | Location                               | Description        |
+| Saída            | Localização                            | Descrição          |
 | ---------------- | -------------------------------------- | ------------------ |
-| QA Report        | Console                                | Immediate feedback |
-| Report File      | `{component}/docs/qa-report-{date}.md` | Detailed report    |
-| Validation Badge | `{component}/docs/VALIDATED.md`        | If passed          |
+| Relatório de QA  | Console                                | Feedback imediato  |
+| Arquivo de Relatório | `{component}/docs/qa-report-{date}.md` | Relatório detalhado |
+| Selo de Validação | `{component}/docs/VALIDATED.md`        | Se aprovado        |
 
 ---
 
-## Related Tasks
+## Tasks Relacionadas
 
-| Task             | Purpose                                     |
+| Task             | Propósito                                   |
 | ---------------- | ------------------------------------------- |
-| `validate-squad` | Full squad validation (called by this task) |
-| `create-squad`   | Triggers this task on completion            |
-| `create-agent`   | Triggers this task on completion            |
-| `fix-issues`     | Attempt to fix QA issues                    |
+| `validate-squad` | Validação completa do squad (chamada por esta task) |
+| `create-squad`   | Dispara esta task ao concluir               |
+| `create-agent`   | Dispara esta task ao concluir               |
+| `fix-issues`     | Tentar corrigir problemas de QA             |
 
 ---
 
@@ -514,6 +514,6 @@ v1.0.0 (2026-02-01):
 
 ---
 
-_Task Version: 2.0.0_
-_Philosophy: No component ships without QA. No agent ships without operational infrastructure._
-_Triggered by: create-squad, create-agent, create-task, create-workflow_
+_Versão da Task: 2.0.0_
+_Filosofia: Nenhum componente é entregue sem QA. Nenhum agente é entregue sem infraestrutura operacional._
+_Disparada por: create-squad, create-agent, create-task, create-workflow_

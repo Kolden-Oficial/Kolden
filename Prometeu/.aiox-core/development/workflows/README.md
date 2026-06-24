@@ -1,63 +1,63 @@
-# AIOX Workflows
+# Workflows do AIOX
 
-This directory contains workflow definitions for the Synkra AIOX framework. Workflows define multi-step processes that can be executed by AIOX agents.
+Este diretório contém as definições de workflow do framework Synkra AIOX. Workflows definem processos de múltiplos passos que podem ser executados pelos agentes do AIOX.
 
-## Available Workflows
+## Workflows Disponíveis
 
-### Development Workflows
-- **brownfield-discovery.yaml** - Comprehensive technical debt assessment for existing projects
-- **brownfield-fullstack.yaml** - Workflow for existing full-stack projects
-- **brownfield-service.yaml** - Workflow for existing service/backend projects
-- **brownfield-ui.yaml** - Workflow for existing UI/frontend projects
-- **greenfield-fullstack.yaml** - Workflow for new full-stack projects
-- **greenfield-service.yaml** - Workflow for new service/backend projects
-- **greenfield-ui.yaml** - Workflow for new UI/frontend projects
+### Workflows de Desenvolvimento
+- **brownfield-discovery.yaml** - Avaliação abrangente de dívida técnica para projetos existentes
+- **brownfield-fullstack.yaml** - Workflow para projetos full-stack existentes
+- **brownfield-service.yaml** - Workflow para projetos de serviço/backend existentes
+- **brownfield-ui.yaml** - Workflow para projetos de UI/frontend existentes
+- **greenfield-fullstack.yaml** - Workflow para novos projetos full-stack
+- **greenfield-service.yaml** - Workflow para novos projetos de serviço/backend
+- **greenfield-ui.yaml** - Workflow para novos projetos de UI/frontend
 
-### Configuration Workflows
+### Workflows de Configuração
 
-## Setup Environment Workflow
+## Workflow de Setup de Ambiente
 
-The `setup-environment` workflow helps developers configure their IDE for optimal AIOX development experience.
+O workflow `setup-environment` ajuda os desenvolvedores a configurar sua IDE para uma experiência ideal de desenvolvimento com o AIOX.
 
-### Features
-- Backs up existing IDE configurations
-- Applies AIOX-specific development rules
-- Verifies GitHub CLI installation and authentication
-- Provides clear feedback throughout the process
+### Funcionalidades
+- Faz backup das configurações de IDE existentes
+- Aplica regras de desenvolvimento específicas do AIOX
+- Verifica a instalação e autenticação do GitHub CLI
+- Fornece feedback claro ao longo de todo o processo
 
-### Usage
+### Uso
 
-From the aiox-master agent:
+A partir do agente aiox-master:
 ```
 @aiox-master
 *setup-environment
 ```
 
-Or directly via npm:
+Ou diretamente via npm:
 ```bash
 npm run setup:environment
 ```
 
-### What It Does
-2. **GitHub CLI Check** - Ensures GitHub CLI is installed and authenticated
-3. **Backup Creation** - Saves existing rules before making changes
-4. **Rule Application** - Copies AIOX-specific rules to appropriate locations
-5. **Verification** - Confirms successful setup
+### O Que Ele Faz
+2. **Verificação do GitHub CLI** - Garante que o GitHub CLI esteja instalado e autenticado
+3. **Criação de Backup** - Salva as regras existentes antes de fazer mudanças
+4. **Aplicação de Regras** - Copia as regras específicas do AIOX para os locais apropriados
+5. **Verificação** - Confirma o sucesso do setup
 
-### IDE Rule Locations
+### Locais das Regras de IDE
 - **Cursor**: `.cursorules`
 - **Claude Code**: `.claude/CLAUDE.md`
 
-### Requirements
+### Requisitos
 - Node.js 18+
-- One or more supported IDEs installed
-- GitHub CLI (recommended)
+- Uma ou mais IDEs suportadas instaladas
+- GitHub CLI (recomendado)
 
-## Creating New Workflows
+## Criando Novos Workflows
 
-Workflows are defined in YAML format. See existing workflows for examples.
+Workflows são definidos em formato YAML. Veja os workflows existentes para exemplos.
 
-### Workflow Structure
+### Estrutura do Workflow
 ```yaml
 workflow:
   id: unique-workflow-id
@@ -80,9 +80,9 @@ workflow:
     - phase_2: Execution
 ```
 
-## Best Practices
-1. Keep workflows focused on a single objective
-2. Include error handling for each step
-3. Provide clear user feedback
-4. Make workflows idempotent when possible
-5. Document prerequisites and outcomes
+## Boas Práticas
+1. Mantenha os workflows focados em um único objetivo
+2. Inclua tratamento de erros para cada passo
+3. Forneça feedback claro ao usuário
+4. Torne os workflows idempotentes quando possível
+5. Documente os pré-requisitos e resultados

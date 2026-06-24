@@ -1,197 +1,197 @@
-# Self-Critique Checklist
+# Checklist de Autocrítica
 
-## Purpose
+## Propósito
 
-This checklist enables the Developer Agent to perform mandatory self-critique at two critical points during subtask execution:
+Este checklist permite que o Developer Agent realize autocrítica obrigatória em dois pontos críticos durante a execução de subtasks:
 
-- **Step 5.5**: After writing code, before running tests
-- **Step 6.5**: After tests pass, before marking subtask complete
+- **Passo 5.5**: Após escrever código, antes de rodar testes
+- **Passo 6.5**: Após os testes passarem, antes de marcar a subtask como concluída
 
-All items must pass to continue. Results are saved to `plan/self-critique-{subtask-id}.json`.
+Todos os itens devem passar para continuar. Os resultados são salvos em `plan/self-critique-{subtask-id}.json`.
 
-[[LLM: INITIALIZATION INSTRUCTIONS - SELF-CRITIQUE VALIDATION
+[[LLM: INSTRUÇÕES DE INICIALIZAÇÃO - VALIDAÇÃO DE AUTOCRÍTICA
 
-This checklist is MANDATORY for the subtask executor. Self-critique is not optional.
+Este checklist é OBRIGATÓRIO para o executor de subtasks. A autocrítica não é opcional.
 
-EXECUTION APPROACH:
+ABORDAGEM DE EXECUÇÃO:
 
-1. At Step 5.5 (after writing code):
-   - STOP and complete the Step 5.5 checklist
-   - You MUST identify at least 3 potential bugs
-   - You MUST consider at least 3 edge cases
-   - All items must pass before proceeding to tests
+1. No Passo 5.5 (após escrever código):
+   - PARE e complete o checklist do Passo 5.5
+   - Você DEVE identificar pelo menos 3 bugs potenciais
+   - Você DEVE considerar pelo menos 3 casos extremos (edge cases)
+   - Todos os itens devem passar antes de prosseguir para os testes
 
-2. At Step 6.5 (after tests pass):
-   - STOP and complete the Step 6.5 checklist
-   - Verify code quality and project standards
-   - All items must pass before marking complete
+2. No Passo 6.5 (após os testes passarem):
+   - PARE e complete o checklist do Passo 6.5
+   - Verifique a qualidade do código e os padrões do projeto
+   - Todos os itens devem passar antes de marcar como concluída
 
-OUTPUT FORMAT:
-Generate a JSON report with the schema shown at the end of this checklist.
-Save to: plan/self-critique-{subtask-id}.json
+FORMATO DE SAÍDA:
+Gere um relatório JSON com o schema mostrado ao final deste checklist.
+Salve em: plan/self-critique-{subtask-id}.json
 
-SKIP FLAG:
-Can be bypassed with --skip-critique flag, but a WARNING must be logged:
+FLAG DE PULAR (SKIP):
+Pode ser ignorado com a flag --skip-critique, mas um AVISO deve ser registrado:
 "WARNING: Self-critique skipped via --skip-critique. Quality risks may exist."
 
-The goal is catching issues BEFORE they reach review, not checking boxes.]]
+O objetivo é capturar problemas ANTES que cheguem à revisão, não marcar caixinhas.]]
 
 ---
 
-## Step 5.5: Post-Code Self-Critique
+## Passo 5.5: Autocrítica Pós-Código
 
-Execute this checklist AFTER writing code, BEFORE running tests.
+Execute este checklist DEPOIS de escrever código, ANTES de rodar testes.
 
-[[LLM: STEP 5.5 INSTRUCTIONS
+[[LLM: INSTRUÇÕES DO PASSO 5.5
 
-For each item, you must provide SPECIFIC examples, not generic statements.
+Para cada item, você deve fornecer exemplos ESPECÍFICOS, não afirmações genéricas.
 
-PREDICTED BUGS:
+BUGS PREVISTOS:
 
-- Think like a hacker: "How could this break?"
-- Consider null/undefined, race conditions, off-by-one errors
-- What assumptions am I making that could be wrong?
+- Pense como um hacker: "Como isto poderia quebrar?"
+- Considere null/undefined, condições de corrida, erros de off-by-one
+- Quais suposições estou fazendo que poderiam estar erradas?
 
-EDGE CASES:
+CASOS EXTREMOS (EDGE CASES):
 
-- What happens at boundaries? (empty arrays, max values, special characters)
-- What inputs didn't I consider?
-- What happens if dependencies fail?
+- O que acontece nos limites? (arrays vazios, valores máximos, caracteres especiais)
+- Quais entradas eu não considerei?
+- O que acontece se as dependências falharem?
 
-Be honest. Finding bugs NOW saves debugging time LATER.]]
+Seja honesto. Encontrar bugs AGORA economiza tempo de depuração DEPOIS.]]
 
-### 5.5.1 Predicted Bugs (minimum 3)
+### 5.5.1 Bugs Previstos (mínimo 3)
 
-- [ ] Identified potential bug #1: ********\_\_\_\_********
-- [ ] Identified potential bug #2: ********\_\_\_\_********
-- [ ] Identified potential bug #3: ********\_\_\_\_********
-- [ ] (Optional) Additional bugs identified
+- [ ] Bug potencial #1 identificado: ********\_\_\_\_********
+- [ ] Bug potencial #2 identificado: ********\_\_\_\_********
+- [ ] Bug potencial #3 identificado: ********\_\_\_\_********
+- [ ] (Opcional) Bugs adicionais identificados
 
-[[LLM: List specific bugs, not vague concerns. Example:
+[[LLM: Liste bugs específicos, não preocupações vagas. Exemplo:
 
-- "Race condition if two users update the same record simultaneously"
-- "Null pointer if user.profile is undefined"
-- "Array index out of bounds when items is empty"]]
+- "Condição de corrida se dois usuários atualizarem o mesmo registro simultaneamente"
+- "Null pointer se user.profile for undefined"
+- "Índice de array fora dos limites quando items está vazio"]]
 
-### 5.5.2 Edge Cases (minimum 3)
+### 5.5.2 Casos Extremos (mínimo 3)
 
-- [ ] Considered edge case #1: ********\_\_\_\_********
-- [ ] Considered edge case #2: ********\_\_\_\_********
-- [ ] Considered edge case #3: ********\_\_\_\_********
-- [ ] (Optional) Additional edge cases considered
+- [ ] Caso extremo #1 considerado: ********\_\_\_\_********
+- [ ] Caso extremo #2 considerado: ********\_\_\_\_********
+- [ ] Caso extremo #3 considerado: ********\_\_\_\_********
+- [ ] (Opcional) Casos extremos adicionais considerados
 
-[[LLM: List specific edge cases with expected behavior. Example:
+[[LLM: Liste casos extremos específicos com o comportamento esperado. Exemplo:
 
-- "Empty input array should return empty result, not error"
-- "Unicode characters in username should be handled"
-- "Maximum file size (10MB) should show user-friendly error"]]
+- "Array de entrada vazio deve retornar resultado vazio, não erro"
+- "Caracteres Unicode no nome de usuário devem ser tratados"
+- "Tamanho máximo de arquivo (10MB) deve exibir erro amigável ao usuário"]]
 
-### 5.5.3 Error Handling
+### 5.5.3 Tratamento de Erros
 
-- [ ] All async operations have try/catch or error boundaries
-- [ ] Errors are logged with sufficient context for debugging
-- [ ] User-facing errors are friendly and actionable
-- [ ] Failed operations don't leave system in inconsistent state
-- [ ] Network/API failures are handled gracefully with retry or fallback
+- [ ] Todas as operações assíncronas têm try/catch ou error boundaries
+- [ ] Erros são registrados com contexto suficiente para depuração
+- [ ] Erros expostos ao usuário são amigáveis e acionáveis
+- [ ] Operações que falham não deixam o sistema em estado inconsistente
+- [ ] Falhas de rede/API são tratadas com elegância, com retry ou fallback
 
-### 5.5.4 Security Review
+### 5.5.4 Revisão de Segurança
 
-- [ ] No hardcoded secrets, API keys, or credentials
-- [ ] User input is validated and sanitized
-- [ ] No SQL injection or XSS vulnerabilities introduced
-- [ ] Sensitive data is not logged or exposed in errors
-- [ ] Authentication/authorization checks are in place where needed
-
----
-
-## Step 6.5: Post-Test Self-Critique
-
-Execute this checklist AFTER tests pass, BEFORE marking subtask complete.
-
-[[LLM: STEP 6.5 INSTRUCTIONS
-
-This is your final quality gate. Be thorough.
-
-PATTERN ADHERENCE:
-
-- Does the code look like it belongs in this codebase?
-- Would another developer understand it without asking questions?
-
-NO HARDCODED VALUES:
-
-- Search for magic numbers, hardcoded strings, inline URLs
-- Everything configurable should be in config
-
-TESTS:
-
-- Did you add tests for the new code?
-- Are edge cases from 5.5.2 covered by tests?
-
-DOCUMENTATION:
-
-- If the API changed, is it documented?
-- If behavior changed, is it noted somewhere?]]
-
-### 6.5.1 Pattern Adherence
-
-- [ ] Code follows existing project patterns and conventions
-- [ ] File structure matches project organization
-- [ ] Naming conventions are consistent with codebase
-- [ ] Import/export patterns match existing code
-- [ ] Error handling style matches project standards
-
-### 6.5.2 No Hardcoded Values
-
-- [ ] No magic numbers (use constants or config)
-- [ ] No hardcoded URLs or endpoints (use environment/config)
-- [ ] No hardcoded timeouts or limits (use config)
-- [ ] No inline feature flags (use proper feature flag system)
-- [ ] Configurable values are documented
-
-### 6.5.3 Tests Added
-
-- [ ] Unit tests added for new functions/methods
-- [ ] Edge cases from Step 5.5.2 are covered by tests
-- [ ] Error scenarios have test coverage
-- [ ] Tests are deterministic (no random failures)
-- [ ] Test names clearly describe what is being tested
-
-### 6.5.4 Documentation Updated
-
-- [ ] JSDoc/TSDoc added for public functions (if applicable)
-- [ ] README updated if setup/usage changed
-- [ ] API documentation updated if endpoints changed
-- [ ] Inline comments explain complex logic
-- [ ] CHANGELOG entry added if user-facing change
-
-### 6.5.5 Cleanup Verification
-
-- [ ] No console.log statements left in code
-- [ ] No commented-out code blocks
-- [ ] No TODO comments without tracking ticket
-- [ ] No debugging artifacts (debugger statements, test data)
-- [ ] No unused imports or variables
+- [ ] Nenhum segredo, chave de API ou credencial hardcoded
+- [ ] Entrada do usuário é validada e sanitizada
+- [ ] Nenhuma vulnerabilidade de SQL injection ou XSS introduzida
+- [ ] Dados sensíveis não são registrados nem expostos em erros
+- [ ] Verificações de autenticação/autorização estão presentes onde necessário
 
 ---
 
-## Verdict Determination
+## Passo 6.5: Autocrítica Pós-Teste
 
-[[LLM: VERDICT LOGIC
+Execute este checklist DEPOIS de os testes passarem, ANTES de marcar a subtask como concluída.
 
-PASSED: All checklist items are marked [x] or [N/A] with justification
-FAILED: Any required item is [ ] without valid justification
+[[LLM: INSTRUÇÕES DO PASSO 6.5
 
-If FAILED:
+Este é o seu gate de qualidade final. Seja minucioso.
 
-1. List all failing items
-2. Do NOT proceed to next step
-3. Fix issues and re-run self-critique
+ADERÊNCIA A PADRÕES:
 
-Only use [N/A] when genuinely not applicable (e.g., "API docs updated" when no API changes were made). Justify every [N/A].]]
+- O código parece pertencer a este codebase?
+- Outro desenvolvedor o entenderia sem fazer perguntas?
+
+SEM VALORES HARDCODED:
+
+- Procure por números mágicos, strings hardcoded, URLs inline
+- Tudo que é configurável deveria estar em config
+
+TESTES:
+
+- Você adicionou testes para o novo código?
+- Os casos extremos de 5.5.2 estão cobertos por testes?
+
+DOCUMENTAÇÃO:
+
+- Se a API mudou, está documentado?
+- Se o comportamento mudou, está anotado em algum lugar?]]
+
+### 6.5.1 Aderência a Padrões
+
+- [ ] Código segue os padrões e convenções existentes do projeto
+- [ ] Estrutura de arquivos corresponde à organização do projeto
+- [ ] Convenções de nomenclatura são consistentes com o codebase
+- [ ] Padrões de import/export correspondem ao código existente
+- [ ] Estilo de tratamento de erros corresponde aos padrões do projeto
+
+### 6.5.2 Sem Valores Hardcoded
+
+- [ ] Nenhum número mágico (use constantes ou config)
+- [ ] Nenhuma URL ou endpoint hardcoded (use environment/config)
+- [ ] Nenhum timeout ou limite hardcoded (use config)
+- [ ] Nenhuma feature flag inline (use um sistema apropriado de feature flags)
+- [ ] Valores configuráveis estão documentados
+
+### 6.5.3 Testes Adicionados
+
+- [ ] Testes unitários adicionados para novas funções/métodos
+- [ ] Casos extremos do Passo 5.5.2 estão cobertos por testes
+- [ ] Cenários de erro têm cobertura de testes
+- [ ] Testes são determinísticos (sem falhas aleatórias)
+- [ ] Nomes dos testes descrevem claramente o que está sendo testado
+
+### 6.5.4 Documentação Atualizada
+
+- [ ] JSDoc/TSDoc adicionado para funções públicas (se aplicável)
+- [ ] README atualizado se a configuração/uso mudou
+- [ ] Documentação da API atualizada se os endpoints mudaram
+- [ ] Comentários inline explicam lógica complexa
+- [ ] Entrada no CHANGELOG adicionada se for uma mudança visível ao usuário
+
+### 6.5.5 Verificação de Limpeza
+
+- [ ] Nenhuma instrução console.log deixada no código
+- [ ] Nenhum bloco de código comentado
+- [ ] Nenhum comentário TODO sem ticket de rastreamento
+- [ ] Nenhum artefato de depuração (instruções debugger, dados de teste)
+- [ ] Nenhum import ou variável não utilizado
 
 ---
 
-## JSON Output Schema
+## Determinação do Veredito
+
+[[LLM: LÓGICA DO VEREDITO
+
+PASSED: Todos os itens do checklist estão marcados como [x] ou [N/A] com justificativa
+FAILED: Qualquer item obrigatório está [ ] sem justificativa válida
+
+Se FAILED:
+
+1. Liste todos os itens que falharam
+2. NÃO prossiga para o próximo passo
+3. Corrija os problemas e rode a autocrítica novamente
+
+Use [N/A] apenas quando genuinamente não aplicável (ex.: "Documentação da API atualizada" quando nenhuma mudança na API foi feita). Justifique cada [N/A].]]
+
+---
+
+## Schema de Saída JSON
 
 ```json
 {
@@ -218,43 +218,43 @@ Only use [N/A] when genuinely not applicable (e.g., "API docs updated" when no A
 }
 ```
 
-### Field Descriptions
+### Descrições dos Campos
 
-| Field                     | Type                 | Description                           |
-| ------------------------- | -------------------- | ------------------------------------- |
-| `subtaskId`               | string               | The subtask ID (e.g., "1.1", "2.3")   |
-| `critiquedAt`             | ISO 8601             | Timestamp when critique was performed |
-| `step5_5.predictedBugs`   | string[]             | List of at least 3 predicted bugs     |
-| `step5_5.edgeCases`       | string[]             | List of at least 3 edge cases         |
-| `step5_5.errorHandling`   | boolean              | All error handling items passed       |
-| `step5_5.securityCheck`   | boolean              | All security items passed             |
-| `step5_5.passed`          | boolean              | Overall Step 5.5 passed               |
-| `step6_5.followsPatterns` | boolean              | Code follows project patterns         |
-| `step6_5.noHardcoded`     | boolean              | No hardcoded values found             |
-| `step6_5.testsAdded`      | boolean              | Tests added for new code              |
-| `step6_5.docsUpdated`     | boolean              | Documentation updated if needed       |
-| `step6_5.noConsoleLogs`   | boolean              | No console.logs or debug artifacts    |
-| `step6_5.passed`          | boolean              | Overall Step 6.5 passed               |
-| `overallVerdict`          | "PASSED" \| "FAILED" | Final verdict                         |
-| `skipped`                 | boolean              | Whether critique was skipped          |
-| `skipWarning`             | string \| null       | Warning message if skipped            |
+| Campo                     | Tipo                 | Descrição                                |
+| ------------------------- | -------------------- | ---------------------------------------- |
+| `subtaskId`               | string               | O ID da subtask (ex.: "1.1", "2.3")      |
+| `critiquedAt`             | ISO 8601             | Timestamp de quando a crítica foi feita  |
+| `step5_5.predictedBugs`   | string[]             | Lista de pelo menos 3 bugs previstos     |
+| `step5_5.edgeCases`       | string[]             | Lista de pelo menos 3 casos extremos     |
+| `step5_5.errorHandling`   | boolean              | Todos os itens de tratamento de erro passaram |
+| `step5_5.securityCheck`   | boolean              | Todos os itens de segurança passaram     |
+| `step5_5.passed`          | boolean              | Passo 5.5 passou no geral                |
+| `step6_5.followsPatterns` | boolean              | Código segue os padrões do projeto       |
+| `step6_5.noHardcoded`     | boolean              | Nenhum valor hardcoded encontrado        |
+| `step6_5.testsAdded`      | boolean              | Testes adicionados para o novo código    |
+| `step6_5.docsUpdated`     | boolean              | Documentação atualizada se necessário    |
+| `step6_5.noConsoleLogs`   | boolean              | Sem console.logs ou artefatos de depuração |
+| `step6_5.passed`          | boolean              | Passo 6.5 passou no geral                |
+| `overallVerdict`          | "PASSED" \| "FAILED" | Veredito final                           |
+| `skipped`                 | boolean              | Se a crítica foi pulada                  |
+| `skipWarning`             | string \| null       | Mensagem de aviso se pulada              |
 
 ---
 
-## Integration with Subtask Executor
+## Integração com o Executor de Subtasks
 
-The subtask executor MUST:
+O executor de subtasks DEVE:
 
-1. **Call Step 5.5** after code is written, before `npm test`
-2. **Block on failure** - do not proceed if Step 5.5 fails
-3. **Call Step 6.5** after tests pass, before marking complete
-4. **Block on failure** - do not mark complete if Step 6.5 fails
-5. **Save JSON output** to `plan/self-critique-{subtask-id}.json`
-6. **Respect --skip-critique flag** but log warning
+1. **Chamar o Passo 5.5** após o código ser escrito, antes do `npm test`
+2. **Bloquear em caso de falha** - não prossiga se o Passo 5.5 falhar
+3. **Chamar o Passo 6.5** após os testes passarem, antes de marcar como concluída
+4. **Bloquear em caso de falha** - não marque como concluída se o Passo 6.5 falhar
+5. **Salvar a saída JSON** em `plan/self-critique-{subtask-id}.json`
+6. **Respeitar a flag --skip-critique** mas registrar o aviso
 
-### Skip Flag Behavior
+### Comportamento da Flag de Pular
 
-When `--skip-critique` is passed:
+Quando `--skip-critique` é passado:
 
 ```json
 {
@@ -270,4 +270,4 @@ When `--skip-critique` is passed:
 
 ---
 
-_Self-Critique Checklist v1.0 - Synkra AIOX Development Framework_
+_Checklist de Autocrítica v1.0 - Synkra AIOX Development Framework_

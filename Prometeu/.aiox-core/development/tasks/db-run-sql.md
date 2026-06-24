@@ -75,15 +75,15 @@ atomic_layer: Config
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Database connection established; query syntax valid
+  - [ ] Conexão com o banco de dados estabelecida; sintaxe da query válida
     tipo: pre-condition
     blocker: true
     validação: |
@@ -93,15 +93,15 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Query executed; results returned; transaction committed
+  - [ ] Query executada; resultados retornados; transação commitada
     tipo: post-condition
     blocker: true
     validação: |
@@ -111,15 +111,15 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Data persisted correctly; constraints respected; no orphaned data
+  - [ ] Dados persistidos corretamente; constraints respeitadas; sem dados órfãos
     tipo: acceptance-criterion
     blocker: true
     validação: |
@@ -129,57 +129,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** neo4j-driver
-  - **Purpose:** Neo4j database connection and query execution
-  - **Source:** npm: neo4j-driver
+- **Ferramenta:** neo4j-driver
+  - **Propósito:** Conexão com o banco de dados Neo4j e execução de queries
+  - **Origem:** npm: neo4j-driver
 
-- **Tool:** query-validator
-  - **Purpose:** Cypher query syntax validation
-  - **Source:** .aiox-core/utils/db-query-validator.js
+- **Ferramenta:** query-validator
+  - **Propósito:** Validação de sintaxe de queries Cypher
+  - **Origem:** .aiox-core/utils/db-query-validator.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** db-query.js
-  - **Purpose:** Execute Neo4j queries with error handling
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/db-query.js
+  - **Propósito:** Executar queries Neo4j com tratamento de erros
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/db-query.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Connection Failed
-   - **Cause:** Unable to connect to Neo4j database
-   - **Resolution:** Check connection string, credentials, network
-   - **Recovery:** Retry with exponential backoff (max 3 attempts)
+1. **Erro:** Falha de Conexão
+   - **Causa:** Não foi possível conectar ao banco de dados Neo4j
+   - **Resolução:** Verifique a string de conexão, credenciais, rede
+   - **Recuperação:** Repetir com backoff exponencial (máximo de 3 tentativas)
 
-2. **Error:** Query Syntax Error
-   - **Cause:** Invalid Cypher query syntax
-   - **Resolution:** Validate query syntax before execution
-   - **Recovery:** Return detailed syntax error, suggest fix
+2. **Erro:** Erro de Sintaxe da Query
+   - **Causa:** Sintaxe de query Cypher inválida
+   - **Resolução:** Valide a sintaxe da query antes da execução
+   - **Recuperação:** Retornar erro de sintaxe detalhado, sugerir correção
 
-3. **Error:** Transaction Rollback
-   - **Cause:** Query violates constraints or timeout
-   - **Resolution:** Review query logic and constraints
-   - **Recovery:** Automatic rollback, preserve data integrity
+3. **Erro:** Rollback de Transação
+   - **Causa:** A query viola constraints ou timeout
+   - **Resolução:** Revise a lógica e as constraints da query
+   - **Recuperação:** Rollback automático, preservar a integridade dos dados
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 2-10 min (estimated)
@@ -187,12 +187,12 @@ cost_estimated: $0.001-0.008
 token_usage: ~800-2,500 tokens
 ```
 
-**Optimization Notes:**
-- Validate configuration early; use atomic writes; implement rollback checkpoints
+**Notas de Otimização:**
+- Validar a configuração cedo; usar escritas atômicas; implementar checkpoints de rollback
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -208,17 +208,17 @@ updated_at: 2025-11-17
 ---
 
 
-## Inputs
+## Entradas
 
-- `sql` (string): Either a file path or inline SQL statement
+- `sql` (string): Um caminho de arquivo ou uma instrução SQL inline
 
 ---
 
-## Process
+## Processo
 
-### 1. Determine Input Type
+### 1. Determinar o Tipo de Entrada
 
-Check if input is file or inline SQL:
+Verifique se a entrada é um arquivo ou SQL inline:
 
 ```bash
 if [ -f "{sql}" ]; then
@@ -232,9 +232,9 @@ else
 fi
 ```
 
-### 2. Preview SQL
+### 2. Pré-visualizar o SQL
 
-Show what will be executed:
+Mostre o que será executado:
 
 ```bash
 echo "=========================================="
@@ -251,9 +251,9 @@ echo ""
 echo "=========================================="
 ```
 
-### 3. Safety Checks
+### 3. Verificações de Segurança
 
-Warn about dangerous operations:
+Avise sobre operações perigosas:
 
 ```bash
 # Check for destructive operations
@@ -273,9 +273,9 @@ if echo "$SQL_CONTENT" | grep -Eiq "$DANGEROUS_PATTERNS"; then
 fi
 ```
 
-### 4. Transaction Mode Selection
+### 4. Seleção do Modo de Transação
 
-Ask user about transaction handling:
+Pergunte ao usuário sobre o tratamento da transação:
 
 ```
 Transaction mode:
@@ -286,9 +286,9 @@ Transaction mode:
 Select mode (1/2/3):
 ```
 
-### 5. Execute SQL
+### 5. Executar o SQL
 
-Run with selected transaction mode and timing:
+Execute com o modo de transação selecionado e medição de tempo:
 
 ```bash
 echo "Executing SQL..."
@@ -340,9 +340,9 @@ fi
 EXIT_CODE=$?
 ```
 
-### 6. Check Results
+### 6. Verificar Resultados
 
-Display execution summary:
+Exiba o resumo da execução:
 
 ```bash
 echo ""
@@ -374,9 +374,9 @@ fi
 
 ---
 
-## Output
+## Saída
 
-Display final summary:
+Exiba o resumo final:
 
 ```
 ✅ SQL EXECUTED SUCCESSFULLY
@@ -396,21 +396,21 @@ Next steps:
 
 ---
 
-## Usage Examples
+## Exemplos de Uso
 
-### Example 1: Run SQL File
+### Exemplo 1: Executar Arquivo SQL
 
 ```bash
 *run-sql supabase/migrations/20240101_add_users.sql
 ```
 
-### Example 2: Inline Query
+### Exemplo 2: Query Inline
 
 ```bash
 *run-sql "SELECT COUNT(*) FROM users WHERE created_at > NOW() - INTERVAL '7 days'"
 ```
 
-### Example 3: Multi-Line Inline
+### Exemplo 3: Inline Multilinha
 
 ```bash
 *run-sql "
@@ -421,7 +421,7 @@ Next steps:
 "
 ```
 
-### Example 4: Complex Script
+### Exemplo 4: Script Complexo
 
 ```bash
 *run-sql "
@@ -437,44 +437,44 @@ Next steps:
 
 ---
 
-## Safety Features
+## Recursos de Segurança
 
-### 1. Destructive Operation Detection
+### 1. Detecção de Operação Destrutiva
 
-Automatically warns for:
+Avisa automaticamente para:
 - `DROP TABLE`
 - `TRUNCATE`
 - `DELETE FROM ... WHERE 1=1`
 - `UPDATE ... WHERE 1=1`
 
-### 2. Transaction Modes
+### 2. Modos de Transação
 
-**Auto Mode (Recommended):**
-- Wraps SQL in BEGIN/COMMIT
-- Automatic rollback on error
-- Safe for modifications
+**Modo Auto (Recomendado):**
+- Envolve o SQL em BEGIN/COMMIT
+- Rollback automático em caso de erro
+- Seguro para modificações
 
-**Manual Mode:**
-- For files with own transaction control
-- Use when script has multiple transactions
-- More control, less safety
+**Modo Manual:**
+- Para arquivos com controle de transação próprio
+- Use quando o script tiver múltiplas transações
+- Mais controle, menos segurança
 
-**Read Mode:**
-- Read-only transaction
-- Cannot modify data
-- Safe for queries/exploration
+**Modo Read:**
+- Transação somente-leitura
+- Não pode modificar dados
+- Seguro para queries/exploração
 
-### 3. Error Handling
+### 3. Tratamento de Erros
 
-- `ON_ERROR_STOP=1` stops on first error
-- Transaction rolls back on error (auto mode)
-- Full error output preserved
+- `ON_ERROR_STOP=1` para no primeiro erro
+- A transação faz rollback em caso de erro (modo auto)
+- Saída de erro completa preservada
 
 ---
 
-## Advanced Options
+## Opções Avançadas
 
-### Enable Timing
+### Habilitar Medição de Tempo
 
 ```bash
 # Add timing to all queries
@@ -484,21 +484,21 @@ psql "$SUPABASE_DB_URL" << 'EOF'
 EOF
 ```
 
-### Verbose Output
+### Saída Verbosa
 
 ```bash
 # Show all SQL commands
 psql "$SUPABASE_DB_URL" --echo-all -f script.sql
 ```
 
-### Save Output to File
+### Salvar a Saída em Arquivo
 
 ```bash
 # Redirect output
 psql "$SUPABASE_DB_URL" -f script.sql > output.txt 2>&1
 ```
 
-### Interactive Mode
+### Modo Interativo
 
 ```bash
 # Drop into psql shell
@@ -507,9 +507,9 @@ psql "$SUPABASE_DB_URL"
 
 ---
 
-## Common SQL Operations
+## Operações SQL Comuns
 
-### 1. Query Data
+### 1. Consultar Dados
 
 ```sql
 SELECT
@@ -522,7 +522,7 @@ ORDER BY created_at DESC
 LIMIT 10;
 ```
 
-### 2. Update Records
+### 2. Atualizar Registros
 
 ```sql
 UPDATE users
@@ -533,7 +533,7 @@ WHERE id = 'user-123'
 RETURNING *;
 ```
 
-### 3. Bulk Operations
+### 3. Operações em Massa
 
 ```sql
 -- Update all inactive users
@@ -543,7 +543,7 @@ WHERE last_login < NOW() - INTERVAL '1 year'
   AND status = 'active';
 ```
 
-### 4. Data Analysis
+### 4. Análise de Dados
 
 ```sql
 -- Aggregation query
@@ -559,9 +559,9 @@ ORDER BY day DESC;
 
 ---
 
-## psql Meta-Commands
+## Meta-Comandos psql
 
-Useful commands when in psql interactive mode:
+Comandos úteis quando estiver no modo interativo do psql:
 
 ```
 \dt              -- List tables
@@ -578,36 +578,36 @@ Useful commands when in psql interactive mode:
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-If execution fails:
+Se a execução falhar:
 
-1. Check error message in output
-2. Review SQL syntax
-3. Verify table/column names exist
-4. Check permissions
-5. For transaction errors, check constraints
+1. Verifique a mensagem de erro na saída
+2. Revise a sintaxe SQL
+3. Verifique se os nomes de tabela/coluna existem
+4. Verifique as permissões
+5. Para erros de transação, verifique as constraints
 
-Common errors:
+Erros comuns:
 
-- **Syntax error:** Review SQL syntax
-- **Relation does not exist:** Table/view not found
-- **Column does not exist:** Typo in column name
-- **Permission denied:** Need appropriate role/permissions
-
----
-
-## Security Notes
-
-- **Never** run untrusted SQL
-- Always review SQL before executing
-- Use read-only mode for untrusted queries
-- Be careful with dynamic SQL
-- Consider using prepared statements for user input
+- **Erro de sintaxe:** Revise a sintaxe SQL
+- **Relation does not exist:** Tabela/view não encontrada
+- **Column does not exist:** Erro de digitação no nome da coluna
+- **Permission denied:** Necessita de role/permissões apropriadas
 
 ---
 
-## References
+## Notas de Segurança
+
+- **Nunca** execute SQL não confiável
+- Sempre revise o SQL antes de executar
+- Use o modo somente-leitura para queries não confiáveis
+- Tenha cuidado com SQL dinâmico
+- Considere usar prepared statements para entrada do usuário
+
+---
+
+## Referências
 
 - [PostgreSQL psql Documentation](https://www.postgresql.org/docs/current/app-psql.html)
 - [PostgreSQL SQL Commands](https://www.postgresql.org/docs/current/sql-commands.html)

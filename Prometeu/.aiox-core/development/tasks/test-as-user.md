@@ -1,38 +1,38 @@
 # Task: Test As User (RLS Testing)
 
-**Purpose**: Emulate authenticated user for RLS policy testing
+**Propósito**: Emular usuário autenticado para teste de políticas RLS
 
 **Elicit**: true
 
-**Renamed From (Story 6.1.2.3):**
-- `db-impersonate.md` - Clearer name for RLS testing purpose
+**Renomeado De (Story 6.1.2.3):**
+- `db-impersonate.md` - Nome mais claro para o propósito de teste de RLS
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints explícitos de decisão
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Antecipado Abrangente
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução sem ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: testAsUser()
@@ -78,9 +78,9 @@ atomic_layer: Config
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -96,9 +96,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
@@ -114,9 +114,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para a conclusão da task
 
 **Checklist:**
 
@@ -132,57 +132,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** task-runner
-  - **Purpose:** Task execution and orchestration
-  - **Source:** .aiox-core/core/task-runner.js
+- **Ferramenta:** task-runner
+  - **Propósito:** Execução e orquestração de tasks
+  - **Fonte:** .aiox-core/core/task-runner.js
 
-- **Tool:** logger
-  - **Purpose:** Execution logging and error tracking
-  - **Source:** .aiox-core/utils/logger.js
+- **Ferramenta:** logger
+  - **Propósito:** Logging de execução e rastreamento de erros
+  - **Fonte:** .aiox-core/utils/logger.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** execute-task.js
-  - **Purpose:** Generic task execution wrapper
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/execute-task.js
+  - **Propósito:** Wrapper genérico de execução de tasks
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/execute-task.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Task Not Found
-   - **Cause:** Specified task not registered in system
-   - **Resolution:** Verify task name and registration
-   - **Recovery:** List available tasks, suggest similar
+1. **Erro:** Task Not Found
+   - **Causa:** Task especificada não registrada no sistema
+   - **Resolução:** Verificar o nome e o registro da task
+   - **Recuperação:** Listar tasks disponíveis, sugerir semelhantes
 
-2. **Error:** Invalid Parameters
-   - **Cause:** Task parameters do not match expected schema
-   - **Resolution:** Validate parameters against task definition
-   - **Recovery:** Provide parameter template, reject execution
+2. **Erro:** Invalid Parameters
+   - **Causa:** Os parâmetros da task não correspondem ao schema esperado
+   - **Resolução:** Validar os parâmetros contra a definição da task
+   - **Recuperação:** Fornecer template de parâmetros, rejeitar a execução
 
-3. **Error:** Execution Timeout
-   - **Cause:** Task exceeds maximum execution time
-   - **Resolution:** Optimize task or increase timeout
-   - **Recovery:** Kill task, cleanup resources, log state
+3. **Erro:** Execution Timeout
+   - **Causa:** A task excede o tempo máximo de execução
+   - **Resolução:** Otimizar a task ou aumentar o timeout
+   - **Recuperação:** Encerrar a task, limpar recursos, registrar o estado
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 2-10 min (estimated)
@@ -190,12 +190,12 @@ cost_estimated: $0.001-0.008
 token_usage: ~800-2,500 tokens
 ```
 
-**Optimization Notes:**
-- Validate configuration early; use atomic writes; implement rollback checkpoints
+**Notas de Otimização:**
+- Validar a configuração cedo; usar escritas atômicas; implementar checkpoints de rollback
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -211,68 +211,68 @@ updated_at: 2025-11-17
 ---
 
 
-## Inputs
+## Entradas
 
-**Required:**
-- `user_id` (uuid): User ID to emulate
+**Obrigatório:**
+- `user_id` (uuid): ID do usuário a emular
 
-**Optional:**
-- `role` (text): Role to test (default: 'authenticated')
-
----
-
-## Elicitation
-
-**Prompt user:**
-
-```
-=== RLS Policy Testing ===
-
-Enter user ID to emulate:
-```
-
-**Capture:** `{user_id}`
-
-```
-Enter role (default: authenticated):
-Options: authenticated, anon, service_role
-```
-
-**Capture:** `{role}` (default: 'authenticated')
-
-```
-What are you testing?
-(e.g., "User can only read own posts", "Admin can see all data")
-```
-
-**Capture:** `{test_purpose}`
-
-**CRITICAL WARNING:** Display warning:
-```
-⚠️  WARNING: This is for RLS testing only!
-   - Never use in production application code
-   - Session claims are temporary (current session only)
-   - Use service_role key with extreme caution
-```
-
-**Confirm:** User acknowledges warning (y/n)
+**Opcional:**
+- `role` (text): Role a testar (padrão: 'authenticated')
 
 ---
 
-## Process
+## Elicitação
 
-### Step 1: Set Session Claims
+**Solicitar ao usuário:**
+
+```
+=== Teste de Políticas RLS ===
+
+Informe o ID do usuário a emular:
+```
+
+**Captura:** `{user_id}`
+
+```
+Informe o role (padrão: authenticated):
+Opções: authenticated, anon, service_role
+```
+
+**Captura:** `{role}` (padrão: 'authenticated')
+
+```
+O que você está testando?
+(ex.: "Usuário só pode ler os próprios posts", "Admin consegue ver todos os dados")
+```
+
+**Captura:** `{test_purpose}`
+
+**AVISO CRÍTICO:** Exibir aviso:
+```
+⚠️  ATENÇÃO: Isto é apenas para teste de RLS!
+   - Nunca use em código de aplicação em produção
+   - Os claims de sessão são temporários (apenas a sessão atual)
+   - Use a chave service_role com extrema cautela
+```
+
+**Confirmar:** O usuário reconhece o aviso (y/n)
+
+---
+
+## Processo
+
+### Passo 1: Definir os Claims de Sessão
 
 ```bash
 psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 <<SQL
-\echo '=== Setting Session Claims ==='
+\echo '=== Definindo os Claims de Sessão ==='
 \echo ''
 \echo 'User ID: {user_id}'
 \echo 'Role: {role}'
 \echo 'Purpose: {test_purpose}'
 \echo ''
 
--- Set JWT claims for current session
+-- Definir os claims JWT para a sessão atual
 SELECT
   set_config('request.jwt.claims',
     jsonb_build_object(
@@ -283,15 +283,15 @@ SELECT
     true
   ) AS jwt_claims_set;
 
--- Set individual claim for auth.uid() function
+-- Definir claim individual para a função auth.uid()
 SELECT
   set_config('request.jwt.claim.sub', '{user_id}', true) AS user_id_set,
   set_config('role', '{role}', true) AS role_set;
 
 \echo ''
-\echo '=== Verification ==='
+\echo '=== Verificação ==='
 
--- Verify settings
+-- Verificar as configurações
 SELECT
   current_setting('request.jwt.claims', true) AS jwt_claims,
   current_setting('request.jwt.claim.sub', true) AS user_id,
@@ -299,68 +299,68 @@ SELECT
   auth.uid() AS auth_uid_function;
 
 \echo ''
-\echo '✓ Session configured for user: {user_id}'
+\echo '✓ Sessão configurada para o usuário: {user_id}'
 \echo ''
 
 SQL
 ```
 
-### Step 2: Test Query Examples
+### Passo 2: Exemplos de Query de Teste
 
-**Provide user with test query templates:**
+**Forneça ao usuário templates de query de teste:**
 
 ```sql
--- Example 1: Test SELECT access (users table)
+-- Exemplo 1: Testar acesso SELECT (tabela users)
 SELECT id, email, created_at
 FROM users
 WHERE id = auth.uid();
--- Expected: Should return 1 row (current user only)
+-- Esperado: Deve retornar 1 linha (apenas o usuário atual)
 
--- Example 2: Test SELECT access (posts table)
+-- Exemplo 2: Testar acesso SELECT (tabela posts)
 SELECT id, title, user_id, created_at
 FROM posts
 WHERE user_id = auth.uid();
--- Expected: Should return only posts created by this user
+-- Esperado: Deve retornar apenas os posts criados por este usuário
 
--- Example 3: Test INSERT access
+-- Exemplo 3: Testar acesso INSERT
 INSERT INTO posts (title, content, user_id)
 VALUES ('Test Post', 'Test Content', auth.uid());
--- Expected: Should succeed if RLS allows INSERT
+-- Esperado: Deve ter sucesso se o RLS permitir INSERT
 
--- Example 4: Test UPDATE access (own data)
+-- Exemplo 4: Testar acesso UPDATE (dados próprios)
 UPDATE posts
 SET title = 'Updated Title'
 WHERE id = '...' AND user_id = auth.uid();
--- Expected: Should succeed only if post belongs to user
+-- Esperado: Deve ter sucesso apenas se o post pertencer ao usuário
 
--- Example 5: Test UPDATE access (other user's data)
+-- Exemplo 5: Testar acesso UPDATE (dados de outro usuário)
 UPDATE posts
 SET title = 'Hacked!'
 WHERE user_id != auth.uid();
--- Expected: Should fail or affect 0 rows (RLS blocks)
+-- Esperado: Deve falhar ou afetar 0 linhas (RLS bloqueia)
 
--- Example 6: Test DELETE access
+-- Exemplo 6: Testar acesso DELETE
 DELETE FROM posts
 WHERE id = '...' AND user_id = auth.uid();
--- Expected: Should succeed only if post belongs to user
+-- Esperado: Deve ter sucesso apenas se o post pertencer ao usuário
 ```
 
-### Step 3: Interactive Testing Session
+### Passo 3: Sessão Interativa de Teste
 
 ```bash
 \echo ''
-\echo '=== Interactive Testing ==='
+\echo '=== Teste Interativo ==='
 \echo ''
-\echo 'Entering interactive psql session...'
-\echo 'You are now emulating user: {user_id}'
+\echo 'Entrando na sessão interativa do psql...'
+\echo 'Você está agora emulando o usuário: {user_id}'
 \echo ''
-\echo 'Available commands:'
-\echo '  - Run any SQL query to test RLS'
-\echo '  - \d tablename - Show table structure'
-\echo '  - \dp tablename - Show RLS policies'
-\echo '  - SELECT auth.uid(); - Verify current user'
-\echo '  - RESET ALL; - Exit emulation'
-\echo '  - \q - Quit psql'
+\echo 'Comandos disponíveis:'
+\echo '  - Rode qualquer query SQL para testar RLS'
+\echo '  - \d tablename - Mostrar a estrutura da tabela'
+\echo '  - \dp tablename - Mostrar as políticas RLS'
+\echo '  - SELECT auth.uid(); - Verificar o usuário atual'
+\echo '  - RESET ALL; - Sair da emulação'
+\echo '  - \q - Sair do psql'
 \echo ''
 
 psql "$SUPABASE_DB_URL"
@@ -368,144 +368,144 @@ psql "$SUPABASE_DB_URL"
 
 ---
 
-## Common Testing Scenarios
+## Cenários de Teste Comuns
 
-### Scenario 1: User Can Read Own Data Only
+### Cenário 1: Usuário Só Pode Ler os Próprios Dados
 
-**Test:** Verify user can only SELECT their own rows
+**Teste:** Verificar que o usuário só consegue dar SELECT nas próprias linhas
 
 ```sql
--- Should return only rows where user_id = auth.uid()
+-- Deve retornar apenas as linhas onde user_id = auth.uid()
 SELECT * FROM posts;
 
--- Verify auth.uid() is set correctly
+-- Verificar que auth.uid() está definido corretamente
 SELECT auth.uid() AS current_user;
 
--- Check policy
+-- Conferir a política
 \dp posts
 ```
 
-**Expected Result:**
-- Only rows with `user_id = '{user_id}'` returned
-- Policy `users_read_own_posts` should be active
+**Resultado Esperado:**
+- Apenas as linhas com `user_id = '{user_id}'` retornadas
+- A política `users_read_own_posts` deve estar ativa
 
-### Scenario 2: User Cannot Read Other Users' Data
+### Cenário 2: Usuário Não Pode Ler Dados de Outros Usuários
 
-**Test:** Verify RLS blocks access to other users' data
+**Teste:** Verificar que o RLS bloqueia o acesso aos dados de outros usuários
 
 ```sql
--- Attempt to read specific post from another user
+-- Tentar ler um post específico de outro usuário
 SELECT * FROM posts WHERE user_id != auth.uid();
 ```
 
-**Expected Result:**
-- 0 rows returned (RLS blocks access)
-- No error (just filtered out by RLS)
+**Resultado Esperado:**
+- 0 linhas retornadas (RLS bloqueia o acesso)
+- Nenhum erro (apenas filtrado pelo RLS)
 
-### Scenario 3: User Can Insert Own Data
+### Cenário 3: Usuário Pode Inserir os Próprios Dados
 
-**Test:** Verify user can INSERT with correct user_id
+**Teste:** Verificar que o usuário consegue dar INSERT com o user_id correto
 
 ```sql
--- Should succeed (user_id matches auth.uid())
+-- Deve ter sucesso (user_id corresponde a auth.uid())
 INSERT INTO posts (title, content, user_id)
 VALUES ('My Post', 'Content', auth.uid());
 
--- Should fail (user_id does not match auth.uid())
+-- Deve falhar (user_id não corresponde a auth.uid())
 INSERT INTO posts (title, content, user_id)
 VALUES ('Hacked Post', 'Content', 'another-user-id');
 ```
 
-**Expected Result:**
-- First INSERT succeeds
-- Second INSERT fails or is blocked by RLS `WITH CHECK` policy
+**Resultado Esperado:**
+- O primeiro INSERT tem sucesso
+- O segundo INSERT falha ou é bloqueado pela política RLS `WITH CHECK`
 
-### Scenario 4: User Cannot Update Other Users' Data
+### Cenário 4: Usuário Não Pode Atualizar Dados de Outros Usuários
 
-**Test:** Verify user cannot UPDATE rows they don't own
+**Teste:** Verificar que o usuário não consegue dar UPDATE em linhas que não possui
 
 ```sql
--- Should succeed (own post)
+-- Deve ter sucesso (post próprio)
 UPDATE posts SET title = 'Updated' WHERE id = 'my-post-id';
 
--- Should affect 0 rows (RLS filters out)
+-- Deve afetar 0 linhas (RLS filtra)
 UPDATE posts SET title = 'Hacked' WHERE user_id != auth.uid();
 ```
 
-**Expected Result:**
-- First UPDATE succeeds
-- Second UPDATE returns `UPDATE 0` (no rows modified)
+**Resultado Esperado:**
+- O primeiro UPDATE tem sucesso
+- O segundo UPDATE retorna `UPDATE 0` (nenhuma linha modificada)
 
-### Scenario 5: Admin Can See All Data
+### Cenário 5: Admin Consegue Ver Todos os Dados
 
-**Test:** Verify admin/service role bypasses RLS
+**Teste:** Verificar que o role admin/service ignora o RLS
 
 ```sql
--- Re-run test with role = 'service_role'
--- (requires restarting test-as-user with different role)
+-- Rodar novamente o teste com role = 'service_role'
+-- (requer reiniciar o test-as-user com um role diferente)
 
-SELECT * FROM posts;  -- Should see ALL posts
+SELECT * FROM posts;  -- Deve ver TODOS os posts
 ```
 
-**Expected Result:**
-- All rows returned (service_role bypasses RLS)
-- **WARNING:** Never use service_role in client code!
+**Resultado Esperado:**
+- Todas as linhas retornadas (o service_role ignora o RLS)
+- **ATENÇÃO:** Nunca use o service_role em código de cliente!
 
 ---
 
-## Troubleshooting
+## Solução de Problemas
 
-### Issue: auth.uid() returns NULL
+### Problema: auth.uid() retorna NULL
 
-**Cause:** Session claims not set correctly
+**Causa:** Os claims de sessão não foram definidos corretamente
 
-**Fix:**
+**Correção:**
 ```sql
--- Check current settings
+-- Conferir as configurações atuais
 SELECT
   current_setting('request.jwt.claim.sub', true) AS sub,
   auth.uid() AS auth_uid;
 
--- If sub is set but auth_uid is NULL, restart session
+-- Se sub estiver definido mas auth_uid for NULL, reinicie a sessão
 RESET ALL;
--- Re-run test-as-user command
+-- Rode novamente o comando test-as-user
 ```
 
-### Issue: RLS policy not applying
+### Problema: política RLS não está sendo aplicada
 
-**Cause:** RLS not enabled on table
+**Causa:** RLS não habilitado na tabela
 
-**Fix:**
+**Correção:**
 ```sql
--- Check if RLS is enabled
+-- Conferir se o RLS está habilitado
 SELECT tablename, rowsecurity
 FROM pg_tables
 WHERE schemaname = 'public';
 
--- Enable RLS
+-- Habilitar RLS
 ALTER TABLE {tablename} ENABLE ROW LEVEL SECURITY;
 ```
 
-### Issue: "Permission denied" error
+### Problema: erro "Permission denied"
 
-**Cause:** Role doesn't have table permissions
+**Causa:** O role não tem permissões na tabela
 
-**Fix:**
+**Correção:**
 ```sql
--- Grant table permissions to role
+-- Conceder permissões de tabela ao role
 GRANT SELECT, INSERT, UPDATE, DELETE ON {tablename} TO authenticated;
 ```
 
-### Issue: Can see other users' data
+### Problema: Consegue ver dados de outros usuários
 
-**Cause:** Missing or incorrect RLS policy
+**Causa:** Política RLS ausente ou incorreta
 
-**Fix:**
+**Correção:**
 ```sql
--- Check existing policies
+-- Conferir as políticas existentes
 \dp {tablename}
 
--- Create missing policy (example)
+-- Criar a política ausente (exemplo)
 CREATE POLICY users_read_own_data ON {tablename}
   FOR SELECT
   USING (user_id = auth.uid());
@@ -513,77 +513,77 @@ CREATE POLICY users_read_own_data ON {tablename}
 
 ---
 
-## Best Practices
+## Boas Práticas
 
-### Before Testing
+### Antes de Testar
 
-1. **Know your policies:** Review RLS policies before testing
+1. **Conheça suas políticas:** Revise as políticas RLS antes de testar
    ```sql
    \dp tablename
    ```
 
-2. **Have test data:** Ensure test user has data to query
+2. **Tenha dados de teste:** Garanta que o usuário de teste tenha dados para consultar
    ```sql
    SELECT * FROM posts WHERE user_id = '{user_id}';
    ```
 
-3. **Document test cases:** Write down what you expect to happen
+3. **Documente os casos de teste:** Anote o que você espera que aconteça
 
-### During Testing
+### Durante o Teste
 
-1. **Test positive cases:** Verify user CAN access their own data
-2. **Test negative cases:** Verify user CANNOT access others' data
-3. **Test all operations:** SELECT, INSERT, UPDATE, DELETE
-4. **Test edge cases:** NULL values, empty results, concurrent access
+1. **Teste casos positivos:** Verifique que o usuário CONSEGUE acessar os próprios dados
+2. **Teste casos negativos:** Verifique que o usuário NÃO CONSEGUE acessar os dados de outros
+3. **Teste todas as operações:** SELECT, INSERT, UPDATE, DELETE
+4. **Teste casos extremos:** valores NULL, resultados vazios, acesso concorrente
 
-### After Testing
+### Após o Teste
 
-1. **Reset session:** Always run `RESET ALL;` or close session
-2. **Document results:** Note any policy gaps or issues
-3. **Fix policies:** Update RLS policies based on test results
-4. **Re-test:** Verify fixes with another test run
+1. **Reinicie a sessão:** Sempre rode `RESET ALL;` ou feche a sessão
+2. **Documente os resultados:** Anote quaisquer lacunas ou problemas nas políticas
+3. **Corrija as políticas:** Atualize as políticas RLS com base nos resultados do teste
+4. **Teste novamente:** Verifique as correções com outra execução de teste
 
 ---
 
-## Security Notes
+## Notas de Segurança
 
-**NEVER do this in production:**
+**NUNCA faça isto em produção:**
 
 ```javascript
-// ❌ BAD: Setting JWT claims in application code
+// ❌ RUIM: Definir claims JWT no código da aplicação
 supabase.rpc('set_claims', { user_id: userId })
 
-// ❌ BAD: Using service_role key in client
+// ❌ RUIM: Usar a chave service_role no cliente
 const supabase = createClient(url, SERVICE_ROLE_KEY)
 ```
 
-**Testing workflow:**
+**Workflow de teste:**
 
 ```
-Development DB → test-as-user command → Verify RLS
+DB de Desenvolvimento → comando test-as-user → Verificar RLS
                                       ↓
-                              Fix policies if needed
+                              Corrigir políticas se necessário
                                       ↓
-                         Deploy to staging → Test with real auth
+                         Deploy para staging → Testar com auth real
                                       ↓
-                              Production (real JWT tokens)
+                              Produção (tokens JWT reais)
 ```
 
 ---
 
-## Related Commands
+## Comandos Relacionados
 
-- `*security-audit rls` - Audit RLS coverage before testing
-- `*policy-apply {table}` - Install RLS policies
-- `*create-migration-plan` - Plan RLS policy migrations
-- `*impersonate` - Legacy command (deprecated, use `*test-as-user`)
+- `*security-audit rls` - Auditar a cobertura de RLS antes de testar
+- `*policy-apply {table}` - Instalar políticas RLS
+- `*create-migration-plan` - Planejar migrations de políticas RLS
+- `*impersonate` - Comando legado (deprecado, use `*test-as-user`)
 
 ---
 
-## Output Example
+## Exemplo de Saída
 
 ```
-=== Setting Session Claims ===
+=== Definindo os Claims de Sessão ===
 
 User ID: 123e4567-e89b-12d3-a456-426614174000
 Role: authenticated
@@ -597,18 +597,18 @@ Purpose: Test user can only read own posts
 -------------+----------
  t           | t
 
-=== Verification ===
+=== Verificação ===
 
  jwt_claims                                      | user_id                              | role          | auth_uid_function
 -------------------------------------------------+--------------------------------------+---------------+----------------------------------
  {"sub":"123e4567-e89b-12d3-a456-426614174000"...| 123e4567-e89b-12d3-a456-426614174000 | authenticated | 123e4567-e89b-12d3-a456-426614174000
 
-✓ Session configured for user: 123e4567-e89b-12d3-a456-426614174000
+✓ Sessão configurada para o usuário: 123e4567-e89b-12d3-a456-426614174000
 
-=== Interactive Testing ===
+=== Teste Interativo ===
 
-Entering interactive psql session...
-You are now emulating user: 123e4567-e89b-12d3-a456-426614174000
+Entrando na sessão interativa do psql...
+Você está agora emulando o usuário: 123e4567-e89b-12d3-a456-426614174000
 
 psql (14.5)
 Type "help" for help.
@@ -618,4 +618,4 @@ database=>
 
 ---
 
-**Note:** This task replaces `db-impersonate.md` with clearer naming (renamed in Story 6.1.2.3)
+**Nota:** Esta task substitui `db-impersonate.md` com uma nomenclatura mais clara (renomeada na Story 6.1.2.3)

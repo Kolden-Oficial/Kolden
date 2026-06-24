@@ -1,14 +1,14 @@
 # ============================================
-# Epic Orchestration Workflow Template
+# Template de Workflow de Orquestração de Epic
 #
-# Generic, reusable template for executing epics
-# with wave-based parallel execution and quality gates.
+# Template genérico e reutilizável para executar epics
+# com execução paralela baseada em waves e quality gates.
 #
-# Each story within a wave runs the full development-cycle
-# (PO validates → Executor develops → Self-healing → Quality Gate → DevOps push)
+# Cada story dentro de uma wave roda o development-cycle completo
+# (PO valida → Executor desenvolve → Self-healing → Quality Gate → push do DevOps)
 #
-# Project-specific execution plans reference this template
-# and live in docs/stories/epics/{epic-name}/
+# Planos de execução específicos do projeto referenciam este template
+# e vivem em docs/stories/epics/{epic-name}/
 #
 # @version 1.0.0
 # @author @pm (Bob) + @architect (Aria)
@@ -16,14 +16,14 @@
 
 workflow:
   id: epic-orchestration
-  name: "Epic Wave Orchestration"
+  name: "Orquestração de Epic por Waves"
   version: "1.0.0"
   description: >-
-    Reusable template for executing epics with wave-based parallel development.
-    Stories within each wave run the full development-cycle workflow
+    Template reutilizável para executar epics com desenvolvimento paralelo baseado em waves.
+    As stories dentro de cada wave rodam o workflow development-cycle completo
     (PO → Executor → Self-Healing → Quality Gate → DevOps → Checkpoint).
-    Wave gates validate integration before proceeding to next wave.
-    Supports worktree isolation for conflict-free parallel development.
+    Os gates de wave validam a integração antes de prosseguir para a próxima wave.
+    Suporta isolamento por worktree para desenvolvimento paralelo livre de conflitos.
 
   type: epic-orchestration
   project_types:
@@ -37,86 +37,86 @@ workflow:
     confirmation_required: true
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              EXECUTION MODES
+  #                              MODOS DE EXECUÇÃO
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   execution_modes:
     - mode: yolo
-      description: Autonomous - waves run with minimal interaction, checkpoints auto-GO
+      description: Autônomo - as waves rodam com interação mínima, checkpoints com auto-GO
       prompts: 0-2
     - mode: interactive
-      description: Human checkpoints between waves and at quality gates
+      description: Checkpoints humanos entre waves e nos quality gates
       prompts: 5-10
       default: true
     - mode: preflight
-      description: Full dependency analysis before execution begins
+      description: Análise completa de dependências antes do início da execução
       prompts: 10-15
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              CONFIGURATION (overridden by project execution plan)
+  #                              CONFIGURAÇÃO (sobrescrita pelo plano de execução do projeto)
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   config:
-    # These values are OVERRIDDEN by the project-specific execution plan
+    # Estes valores são SOBRESCRITOS pelo plano de execução específico do projeto
     epicId: "${epicId}"
     epicIndex: "${epicIndex}"
     storyBasePath: "${storyBasePath}"
 
-    # Parallel execution defaults
+    # Padrões de execução paralela
     maxConcurrency: 4
     worktreeIsolation: true
 
     # Timeouts
-    storyTimeout: 7200000       # 2 hours per story (development-cycle total)
-    gateTimeout: 1800000        # 30 min per wave gate
-    totalTimeout: 43200000      # 12 hours total
+    storyTimeout: 7200000       # 2 horas por story (total do development-cycle)
+    gateTimeout: 1800000        # 30 min por gate de wave
+    totalTimeout: 43200000      # 12 horas no total
 
     # Quality gates
     gatePolicy: strict          # strict | lenient | skip
     requireIntegrationReview: true
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              INNER WORKFLOW
+  #                              WORKFLOW INTERNO
   # ═══════════════════════════════════════════════════════════════════════════════════
   #
-  # Each story within a wave executes the full development-cycle:
+  # Cada story dentro de uma wave executa o development-cycle completo:
   #
-  #   Phase 1: @po validates story (validate-story-draft)
-  #   Phase 2: ${story.executor} develops (dynamic executor)
-  #   Phase 3: @dev self-healing (CodeRabbit, conditional)
-  #   Phase 4: ${story.quality_gate} reviews (agent != executor)
-  #   Phase 5: @devops push & PR
-  #   Phase 6: @po checkpoint (AUTO-GO in wave mode, human in interactive)
+  #   Fase 1: @po valida a story (validate-story-draft)
+  #   Fase 2: ${story.executor} desenvolve (executor dinâmico)
+  #   Fase 3: @dev self-healing (CodeRabbit, condicional)
+  #   Fase 4: ${story.quality_gate} revisa (agente != executor)
+  #   Fase 5: @devops push & PR
+  #   Fase 6: @po checkpoint (AUTO-GO no modo wave, humano no interativo)
   #
-  # Reference: .aiox-core/development/workflows/development-cycle.yaml
+  # Referência: .aiox-core/development/workflows/development-cycle.yaml
 
   inner_workflow:
     ref: development-cycle
     per_story: true
     checkpoint_mode:
-      in_wave: auto_go           # Don't pause between parallel stories
-      between_waves: interactive  # Pause for human decision between waves
+      in_wave: auto_go           # Não pausar entre stories paralelas
+      between_waves: interactive  # Pausar para decisão humana entre waves
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              WAVE EXECUTION PATTERN
+  #                              PADRÃO DE EXECUÇÃO DE WAVE
   # ═══════════════════════════════════════════════════════════════════════════════════
   #
-  # Waves are defined in the project-specific execution plan.
-  # This template defines the PATTERN each wave follows:
+  # As waves são definidas no plano de execução específico do projeto.
+  # Este template define o PADRÃO que cada wave segue:
   #
   #   ┌─────────────────────────────────────────────────────┐
   #   │  WAVE N                                              │
   #   │                                                      │
   #   │  Story A ──→ development-cycle ──→ branch pushed     │
-  #   │  Story B ──→ development-cycle ──→ branch pushed     │ PARALLEL
+  #   │  Story B ──→ development-cycle ──→ branch pushed     │ PARALELO
   #   │  Story C ──→ development-cycle ──→ branch pushed     │
   #   │                                                      │
-  #   │  ──→ WAVE GATE (integration review) ──→ merge        │
+  #   │  ──→ WAVE GATE (revisão de integração) ──→ merge     │
   #   └─────────────────────────────────────────────────────┘
 
   wave_pattern:
 
-    # Step 1: Per-story development (parallel within wave)
+    # Passo 1: Desenvolvimento por story (paralelo dentro da wave)
     story_execution:
       parallel: true
       max_concurrency: "${config.maxConcurrency}"
@@ -129,49 +129,49 @@ workflow:
           waveNumber: "${wave.number}"
           totalWaves: "${wave.total}"
 
-    # Step 2: Wave gate (sequential, after all stories in wave complete)
+    # Passo 2: Gate de wave (sequencial, após todas as stories da wave concluírem)
     wave_gate:
-      description: "Integration review after wave completes"
+      description: "Revisão de integração após a wave concluir"
       steps:
 
         - id: integration-review
           agent: "${wave.gate_agent}"
           action: review_wave_integration
           notes: |
-            Review focus (per-story QA already done in development-cycle):
-            - Cross-story integration compatibility
-            - Shared file conflict detection
-            - Combined test suite passes
-            - No regressions from parallel changes
-            - Architecture consistency across stories
+            Foco da revisão (o QA por story já foi feito no development-cycle):
+            - Compatibilidade de integração entre stories
+            - Detecção de conflitos em arquivos compartilhados
+            - A suíte de testes combinada passa
+            - Sem regressões das mudanças paralelas
+            - Consistência de arquitetura entre as stories
 
         - id: merge-wave
           agent: devops
           action: merge_wave_branches
           condition: gate_approved
           notes: |
-            Merge all wave branches to main:
-            - Follow merge order from execution plan
-            - Resolve conflicts if any
-            - Run full test suite on merged result
+            Faça o merge de todas as branches da wave para a main:
+            - Siga a ordem de merge do plano de execução
+            - Resolva os conflitos, se houver
+            - Rode a suíte de testes completa no resultado mesclado
             - Tag: wave-{N}-complete
-            - Clean up worktrees
+            - Limpe os worktrees
 
-    # Step 3: Human checkpoint (between waves)
+    # Passo 3: Checkpoint humano (entre waves)
     checkpoint:
       agent: po
       elicit: true
       options:
-        GO: "Continue to next wave"
-        PAUSE: "Save state, stop execution"
-        REVIEW: "Show wave summary before deciding"
-        ABORT: "Stop the epic"
+        GO: "Continuar para a próxima wave"
+        PAUSE: "Salvar o estado, parar a execução"
+        REVIEW: "Mostrar o resumo da wave antes de decidir"
+        ABORT: "Parar o epic"
       on_go: next_wave
       on_pause: save_state
       on_abort: abort_epic
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              STATE MANAGEMENT
+  #                              GERENCIAMENTO DE ESTADO
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   state:
@@ -195,122 +195,122 @@ workflow:
       resume_from: last_completed_wave
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              ERROR HANDLING
+  #                              TRATAMENTO DE ERROS
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   error_handling:
     story_failed:
-      description: "A story's development-cycle failed"
+      description: "O development-cycle de uma story falhou"
       action: |
-        - development-cycle handles retries internally (max 3 attempts)
-        - If still failing, mark story as blocked
-        - Continue other parallel stories in wave
-        - Report blocked story at wave gate
+        - O development-cycle lida com retentativas internamente (máx. 3 tentativas)
+        - Se ainda falhar, marque a story como bloqueada
+        - Continue as outras stories paralelas da wave
+        - Reporte a story bloqueada no gate de wave
       escalation: wave_gate
 
     gate_failed:
-      description: "Wave integration gate failed"
+      description: "O gate de integração da wave falhou"
       action: |
-        - Identify failing stories/integrations
-        - Create fix tasks for specific issues
-        - Re-run development-cycle for affected stories
-        - Re-submit for gate review
+        - Identifique as stories/integrações que falharam
+        - Crie tasks de correção para os problemas específicos
+        - Reexecute o development-cycle para as stories afetadas
+        - Reenvie para a revisão do gate
       max_retries: 2
       escalation: human
 
     merge_conflict:
-      description: "Conflict during wave branch merge"
+      description: "Conflito durante o merge das branches da wave"
       action: |
-        - Follow merge order from execution plan
-        - Resolve conflicts in recommended order
-        - Re-run tests after resolution
+        - Siga a ordem de merge do plano de execução
+        - Resolva os conflitos na ordem recomendada
+        - Reexecute os testes após a resolução
       escalation: human
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              FLOW DIAGRAM
+  #                              DIAGRAMA DE FLUXO
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   flow_diagram: |
     ```
     ┌─────────────────────────────────────────────────────────────┐
-    │                 EPIC WAVE ORCHESTRATION                      │
+    │              ORQUESTRAÇÃO DE EPIC POR WAVES                  │
     └─────────────────────────────────────────────────────────────┘
 
-    For each WAVE defined in project execution plan:
+    Para cada WAVE definida no plano de execução do projeto:
 
     ┌─────────────────────────────────────────────────────────────┐
-    │  WAVE N (stories run in PARALLEL)                           │
+    │  WAVE N (stories rodam em PARALELO)                        │
     │                                                             │
     │  Story A ──→ development-cycle ──→ branch pushed            │
-    │    (PO validate → Executor dev → Self-heal → QA → Push)    │
+    │    (PO valida → Executor dev → Self-heal → QA → Push)     │
     │                                                             │
     │  Story B ──→ development-cycle ──→ branch pushed            │
-    │    (PO validate → Executor dev → Self-heal → QA → Push)    │
+    │    (PO valida → Executor dev → Self-heal → QA → Push)     │
     │                                                             │
     │  Story C ──→ development-cycle ──→ branch pushed            │
-    │    (PO validate → Executor dev → Self-heal → QA → Push)    │
+    │    (PO valida → Executor dev → Self-heal → QA → Push)     │
     └───────────────────────┬─────────────────────────────────────┘
                             │
                             ▼
     ┌─────────────────────────────────────────────────────────────┐
-    │  WAVE GATE (integration review only - per-story QA done)    │
+    │  WAVE GATE (só revisão de integração - QA por story feito)  │
     │                                                             │
-    │  gate_agent: Review cross-story integration                 │
-    │  @devops:    Merge branches → main                          │
+    │  gate_agent: Revisar integração entre stories              │
+    │  @devops:    Merge das branches → main                      │
     └───────────────────────┬─────────────────────────────────────┘
                             │
                             ▼
     ┌─────────────────────────────────────────────────────────────┐
-    │  CHECKPOINT (between waves)                                  │
+    │  CHECKPOINT (entre waves)                                   │
     │                                                             │
-    │  @po asks: [ GO ] [ PAUSE ] [ REVIEW ] [ ABORT ]            │
+    │  @po pergunta: [ GO ] [ PAUSE ] [ REVIEW ] [ ABORT ]       │
     └───────────────────────┬─────────────────────────────────────┘
                             │
                             ▼
-                      Next Wave...
+                      Próxima Wave...
     ```
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              DECISION GUIDANCE
+  #                              ORIENTAÇÃO DE DECISÃO
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   decision_guidance:
     when_to_use:
-      - Epic with 4+ stories that can be grouped into parallel waves
-      - Stories have clear dependency graph (some parallel, some sequential)
-      - Need quality gates between groups of related stories
-      - Team has capacity for parallel development streams
+      - Epic com 4+ stories que podem ser agrupadas em waves paralelas
+      - Stories têm um grafo de dependências claro (algumas paralelas, algumas sequenciais)
+      - Necessidade de quality gates entre grupos de stories relacionadas
+      - A equipe tem capacidade para fluxos de desenvolvimento paralelos
 
     when_not_to_use:
-      - Epic with 1-3 stories (use story-development-cycle directly)
-      - All stories are strictly sequential (use story-development-cycle in loop)
-      - Simple bug fixes without integration concerns
+      - Epic com 1-3 stories (use story-development-cycle diretamente)
+      - Todas as stories são estritamente sequenciais (use story-development-cycle em loop)
+      - Correções simples de bug sem preocupações de integração
 
     how_to_use:
-      - Create project execution plan in docs/stories/epics/{epic}/
-      - Define waves, story assignments, branches, gates
-      - Reference this template as the orchestration pattern
-      - Execute via WorkflowOrchestrator with execution plan config
+      - Crie o plano de execução do projeto em docs/stories/epics/{epic}/
+      - Defina as waves, as atribuições de story, as branches, os gates
+      - Referencie este template como o padrão de orquestração
+      - Execute via WorkflowOrchestrator com a config do plano de execução
 
   # ═══════════════════════════════════════════════════════════════════════════════════
-  #                              RELATED WORKFLOWS
+  #                              WORKFLOWS RELACIONADOS
   # ═══════════════════════════════════════════════════════════════════════════════════
 
   related:
     - id: development-cycle
-      role: "Inner loop - runs per story within each wave"
+      role: "Loop interno - roda por story dentro de cada wave"
       file: development-cycle.yaml
 
     - id: qa-loop
-      role: "QA review cycle - used within development-cycle Phase 4"
+      role: "Ciclo de revisão de QA - usado dentro da Fase 4 do development-cycle"
       file: qa-loop.yaml
 
     - id: auto-worktree
-      role: "Worktree creation - used for parallel story isolation"
+      role: "Criação de worktree - usado para o isolamento de stories paralelas"
       file: auto-worktree.yaml
 
     - id: story-development-cycle
-      role: "Simplified story cycle (legacy) - use development-cycle instead"
+      role: "Ciclo de story simplificado (legado) - use development-cycle em vez disso"
       file: story-development-cycle.yaml
 
 metadata:

@@ -31,11 +31,11 @@ preset:
 
 ---
 
-## Design Patterns (The Essential 5)
+## Design Patterns (Os 5 Essenciais)
 
 ### Pattern 1: Port Interface Pattern
 
-**Purpose:** Definir contratos explicitos para integrar casos de uso com infraestrutura.
+**Propósito:** Definir contratos explicitos para integrar casos de uso com infraestrutura.
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 9/10
 
@@ -55,13 +55,13 @@ type PaymentGateway interface {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Acoplamento direto entre HTTP handler e banco
 - Mudanca de provider quebrando toda a feature
 - Contratos implicitos sem validacao
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Interfaces pequenas forcam fronteiras limpas
 - Mocks ficam triviais em testes
@@ -70,7 +70,7 @@ type PaymentGateway interface {
 
 ### Pattern 2: Application Service Pattern
 
-**Purpose:** Centralizar regras de negocio em use cases sem dependencia de transporte.
+**Propósito:** Centralizar regras de negocio em use cases sem dependencia de transporte.
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 9/10
 
@@ -107,13 +107,13 @@ func (s *Service) PlaceOrder(ctx context.Context, cmd PlaceOrderCommand) (Order,
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Regra duplicada em handlers
 - Side effects nao coordenados
 - Fluxos parcialmente persistidos
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Ordem de execucao fica explicita
 - Regras sao testaveis sem HTTP/DB
@@ -122,7 +122,7 @@ func (s *Service) PlaceOrder(ctx context.Context, cmd PlaceOrderCommand) (Order,
 
 ### Pattern 3: Repository Pattern
 
-**Purpose:** Isolar SQL e mapeamento de dados da regra de dominio.
+**Propósito:** Isolar SQL e mapeamento de dados da regra de dominio.
 
 **Execution Score:** 9/10 | **Anti-Bug Score:** 9/10
 
@@ -150,13 +150,13 @@ func (r *PostgresRepository) Save(ctx context.Context, order orders.Order) error
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - SQL espalhado em varios pontos
 - Inconsistencia de acesso a dados
 - Dificuldade para trocar driver/ORM
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Infra fica encapsulada
 - Padrao previsivel para testes de integracao
@@ -165,7 +165,7 @@ func (r *PostgresRepository) Save(ctx context.Context, order orders.Order) error
 
 ### Pattern 4: Worker + Channel Pattern
 
-**Purpose:** Coordenar concorrencia sem race conditions e sem goroutines vazando.
+**Propósito:** Coordenar concorrencia sem race conditions e sem goroutines vazando.
 
 **Execution Score:** 9/10 | **Anti-Bug Score:** 8/10
 
@@ -194,13 +194,13 @@ func Run(ctx context.Context, jobs <-chan Job, handler func(context.Context, Job
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Goroutine leak em shutdown
 - Deadlocks por canais sem fechamento
 - Travamento por falta de cancelamento
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - `context.Context` padroniza cancelamento
 - Fluxo concorrente fica deterministico
@@ -209,7 +209,7 @@ func Run(ctx context.Context, jobs <-chan Job, handler func(context.Context, Job
 
 ### Pattern 5: Builder Pattern (Tests Only)
 
-**Purpose:** Criar fixtures de teste legiveis para reduzir setup repetitivo.
+**Propósito:** Criar fixtures de teste legiveis para reduzir setup repetitivo.
 
 **Execution Score:** 8/10 | **Anti-Bug Score:** 8/10
 
@@ -233,19 +233,19 @@ func (b *OrderBuilder) Build() orders.PlaceOrderCommand {
 }
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
 - Fixtures inconsistentes entre testes
 - Testes fragilizados por setup manual
 
-**Why It Works:**
+**Por Que Funciona:**
 
 - Cenarios de teste ficam expressivos
 - Facilita evolucao de campos obrigatorios
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 ```text
 /cmd
@@ -265,7 +265,7 @@ func (b *OrderBuilder) Build() orders.PlaceOrderCommand {
   /e2e                    # Fluxos criticos
 ```
 
-### Structure Rationale
+### Justificativa da Estrutura
 
 - **/cmd:** Isola bootstrapping por processo
 - **/internal:** Evita import acidental externo
@@ -275,7 +275,7 @@ func (b *OrderBuilder) Build() orders.PlaceOrderCommand {
 
 ## Tech Stack
 
-| Category | Technology | Version | Purpose |
+| Categoria | Tecnologia | Versão | Propósito |
 | -------- | ---------- | ------- | ------- |
 | Language | Go | 1.24+ | Runtime principal |
 | HTTP | Chi | ^5 | Routing simples e rapido |
@@ -286,7 +286,7 @@ func (b *OrderBuilder) Build() orders.PlaceOrderCommand {
 | Unit Test | testify | ^1 | Assertions e mocks |
 | Integration Test | testcontainers-go | ^0.34 | Ambientes reais de teste |
 
-### Required Dependencies
+### Dependências Necessárias
 
 ```bash
 go get github.com/go-chi/chi/v5
@@ -301,11 +301,11 @@ go get -t github.com/testcontainers/testcontainers-go
 
 ---
 
-## Coding Standards
+## Padrões de Código
 
-### Naming Conventions
+### Convenções de Nomenclatura
 
-| Element | Convention | Example |
+| Elemento | Convenção | Exemplo |
 | ------- | ---------- | ------- |
 | Packages | lowercase | `orders` |
 | Files | snake_case.go | `place_order_service.go` |
@@ -314,7 +314,7 @@ go get -t github.com/testcontainers/testcontainers-go
 | Functions | PascalCase export, camelCase private | `NewService`, `parseInput` |
 | Errors | `ErrX` vars | `ErrOrderNotFound` |
 
-### Critical Rules
+### Regras Críticas
 
 1. **Context First:** Toda funcao IO-bound recebe `context.Context` como primeiro parametro.
 2. **Small Interfaces:** Interfaces com no maximo 3-5 metodos.
@@ -322,7 +322,7 @@ go get -t github.com/testcontainers/testcontainers-go
 4. **No Global Mutable State:** Dependencias injetadas por construtor.
 5. **Graceful Shutdown:** Servicos e workers devem respeitar cancelamento.
 
-### Go Toolchain Baseline
+### Baseline do Toolchain Go
 
 ```bash
 gofmt ./...
@@ -332,9 +332,9 @@ go test ./...
 
 ---
 
-## Testing Strategy
+## Estratégia de Testes
 
-### Test Pyramid
+### Pirâmide de Testes
 
 ```text
          /\
@@ -346,25 +346,25 @@ go test ./...
    /----------------\
 ```
 
-### What to Test
+### O Que Testar
 
-#### Always Test (Critical)
+#### Sempre Testar (Crítico)
 
 - [ ] Regras de dominio
 - [ ] Validacoes de entrada
 - [ ] Fluxos com erro de infraestrutura
 
-#### Consider Testing
+#### Considerar Testar
 
 - [ ] Handlers HTTP com httptest
 - [ ] Timeouts e cancelamento
 
-#### Never Test
+#### Nunca Testar
 
 - [ ] Biblioteca third-party interna
 - [ ] Código trivial de mapeamento sem regra
 
-### Coverage Goals
+### Metas de Cobertura
 
 ```text
 - Domain/use cases: 90%+
@@ -372,7 +372,7 @@ go test ./...
 - Overall: 75%+
 ```
 
-### Test Template
+### Template de Teste
 
 ```go
 func TestPlaceOrder_Success(t *testing.T) {
@@ -393,25 +393,25 @@ func TestPlaceOrder_Success(t *testing.T) {
 
 ---
 
-## Token Economy Strategies
+## Estratégias de Economia de Tokens
 
-### Strategy 1: Reference by Package
+### Estratégia 1: Referência por Pacote
 
 Use prompts como: `Siga o padrao de internal/orders/app/place_order.go`.
 
-### Strategy 2: Tests as Spec
+### Estratégia 2: Testes como Spec
 
 Defina primeiro os testes de use case e mande implementar ate passarem.
 
-### Strategy 3: Reuse DTO Contracts
+### Estratégia 3: Reusar Contratos de DTO
 
 Passe exemplos reais de request/response ao inves de prosa longa.
 
 ---
 
-## Bug Prevention Stack
+## Stack de Prevenção de Bugs
 
-| Layer | Catches | Implementation |
+| Camada | Captura | Implementação |
 | ----- | ------- | -------------- |
 | Compiler + Vet | 45% | `go build`, `go vet` |
 | Domain Validation | 30% | Construtores e invariantes |
@@ -420,7 +420,7 @@ Passe exemplos reais de request/response ao inves de prosa longa.
 
 ---
 
-## Patterns to AVOID
+## Padrões a EVITAR
 
 ### God Handler
 
@@ -436,9 +436,9 @@ Spawns sem controle de lifecycle ou cancelamento.
 
 ---
 
-## File Templates
+## Templates de Arquivo
 
-### Port Template
+### Template de Port
 
 ```go
 package payments
@@ -450,7 +450,7 @@ type Gateway interface {
 }
 ```
 
-### Service Template
+### Template de Service
 
 ```go
 package orders
@@ -462,7 +462,7 @@ type Service struct {
 func NewService(repo Repository) *Service { return &Service{repo: repo} }
 ```
 
-### Handler Template
+### Template de Handler
 
 ```go
 func (h *Handler) PlaceOrder(w http.ResponseWriter, r *http.Request) {
@@ -474,15 +474,15 @@ func (h *Handler) PlaceOrder(w http.ResponseWriter, r *http.Request) {
 
 ---
 
-## Integration with AIOX
+## Integração com o AIOX
 
-### Recommended Workflow
+### Workflow Recomendado
 
 1. `@architect *create-doc architecture` com referencia ao preset `go`
 2. `@dev` implementa features por pacote (`domain/app/infra/http`)
 3. `@qa` valida regras de dominio e testes de integracao
 
-### AIOX Commands
+### Comandos AIOX
 
 ```bash
 @dev "Follow the go preset patterns for this service"
@@ -491,7 +491,7 @@ func (h *Handler) PlaceOrder(w http.ResponseWriter, r *http.Request) {
 
 ---
 
-## Checklist for New Features
+## Checklist para Novas Features
 
 ```markdown
 - [ ] Definir portas (interfaces) antes de adapters
@@ -506,9 +506,9 @@ func (h *Handler) PlaceOrder(w http.ResponseWriter, r *http.Request) {
 
 ## Changelog
 
-| Date       | Version | Changes |
+| Data       | Versão  | Mudanças |
 | ---------- | ------- | ------- |
-| 2026-02-19 | 1.0.0   | Initial Go preset |
+| 2026-02-19 | 1.0.0   | Preset Go inicial |
 
 ---
 

@@ -10,7 +10,7 @@ Entrada:
     tipo: string
     origem: User Input
     obrigatorio: true
-    validacao: "Describe validation rules"
+    validacao: "Descreva as regras de validação"
 
 Saida:
   - campo: result
@@ -19,83 +19,83 @@ Saida:
     persistido: false
 
 Checklist:
-  - "[ ] Step 1: Describe first step"
-  - "[ ] Step 2: Describe second step"
-  - "[ ] Step 3: Describe third step"
+  - "[ ] Passo 1: Descreva o primeiro passo"
+  - "[ ] Passo 2: Descreva o segundo passo"
+  - "[ ] Passo 3: Descreva o terceiro passo"
 ---
 
 # {{COMPONENTNAME}}
 
-## Purpose
+## Propósito
 
 {{DESCRIPTION}}
 
 {{#IF STORYID}}
-## Story Reference
+## Referência da Story
 
 - **Story:** {{STORYID}}
 - **Squad:** {{SQUADNAME}}
 {{/IF}}
 
-## Pre-Conditions
+## Pré-Condições
 
 ```yaml
 pre-conditions:
-  - [ ] Pre-condition 1
+  - [ ] Pré-condição 1
     tipo: pre-condition
     blocker: true
     validacao: |
-      Describe what to validate
-    error_message: "Error message if pre-condition fails"
+      Descreva o que validar
+    error_message: "Mensagem de erro se a pré-condição falhar"
 ```
 
 {{#IF CODE_INTEL_AVAILABLE}}
-## Code Intelligence Duplicate Check
+## Verificação de Duplicata via Code Intelligence
 
-> Auto-check when code intelligence provider is available.
-> This step is advisory only — it never blocks task creation.
-> This section can be safely removed if not needed.
+> Verificação automática quando o provider de code intelligence está disponível.
+> Este passo é apenas consultivo — nunca bloqueia a criação da task.
+> Esta seção pode ser removida com segurança se não for necessária.
 
-Before proceeding, verify no similar task already exists:
+Antes de prosseguir, verifique se nenhuma task similar já existe:
 
 ```javascript
 const { checkDuplicateArtefact } = require('.aiox-core/core/code-intel/helpers/creation-helper');
 const result = await checkDuplicateArtefact('{{COMPONENTNAME}}', '{{DESCRIPTION}}');
 if (result) {
   console.warn(result.warning);
-  // Advisory: "Similar task exists: {task-name}. Consider extending instead of creating."
+  // Consultivo: "Similar task exists: {task-name}. Consider extending instead of creating."
 }
 ```
 
-- **Duplicates Found:** {{DUPLICATE_WARNING}}
+- **Duplicatas Encontradas:** {{DUPLICATE_WARNING}}
 {{/IF}}
 
-## Execution Steps
+## Passos de Execução
 
-### Step 1: Initialize
+### Passo 1: Inicializar
 
 ```javascript
-// Implementation here
+// Implementação aqui
 const { Dependency } = require('./path/to/dependency');
 
 async function step1() {
-  // Step 1 logic
+  // Lógica do passo 1
 }
 ```
 
-### Step 2: Process
+### Passo 2: Processar
 
 ```javascript
 async function step2() {
-  // Step 2 logic
+  // Lógica do passo 2
 }
 ```
 
-### Step 3: Complete
+### Passo 3: Concluir
 
 ```javascript
 async function step3() {
-  // Step 3 logic
+  // Lógica do passo 3
   return {
     success: true,
     data: {},
@@ -103,30 +103,30 @@ async function step3() {
 }
 ```
 
-## Error Handling
+## Tratamento de Erros
 
-### Error 1: Description
+### Erro 1: Descrição
 
 ```yaml
 error: ERROR_CODE
-cause: Description of cause
-resolution: How to resolve
-recovery: Suggested recovery action
+cause: Descrição da causa
+resolution: Como resolver
+recovery: Ação de recuperação sugerida
 ```
 
-## Post-Conditions
+## Pós-Condições
 
 ```yaml
 post-conditions:
-  - [ ] Result is valid
+  - [ ] Resultado é válido
     tipo: post-condition
     blocker: true
     validacao: |
-      Describe validation
-    error_message: "Error message if post-condition fails"
+      Descreva a validação
+    error_message: "Mensagem de erro se a pós-condição falhar"
 ```
 
-## Metadata
+## Metadados
 
 ```yaml
 {{#IF STORYID}}
@@ -143,4 +143,4 @@ tags:
 
 ---
 
-*Task definition created by squad-creator*
+*Definição de task criada por squad-creator*

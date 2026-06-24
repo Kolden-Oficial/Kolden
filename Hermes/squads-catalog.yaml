@@ -43,7 +43,7 @@ squads:
   - squad: argos
     nome: "Argos — Inteligência de Mercado & Scraping (o deus das pesquisas)"
     dir: C:/Kolden/Argos
-    tipo: claude-code
+    tipo: aios
     chief_file: "agents/argos-chief.md"
     keywords:
       - pesquisa de mercado
@@ -75,6 +75,33 @@ squads:
       - reddit
       - dossiê
     muda_algo: true   # zona cinza (scraping autenticado), conta/proxy descartável, cron de monitoramento → aprovação
+
+  - squad: liceu
+    nome: "Liceu — Biblioteca de Mentes (a escola de Aristóteles)"
+    dir: C:/Kolden/Liceu
+    tipo: aios
+    chief_file: "agents/liceu-chief.md"
+    keywords:
+      - mente
+      - dissecar
+      - dissecação
+      - especialista
+      - pensador
+      - gênio
+      - genio
+      - linhagem
+      - genealogia
+      - quem influenciou
+      - herdou de
+      - framework
+      - modelo mental
+      - mental model
+      - biblioteca de mentes
+      - fato vs folclore
+      - replicar cérebro
+      - dossiê de mente
+      - encarnar
+    muda_algo: false  # só estrutura conhecimento (dossiês/linhagens/frameworks); encarnar mente = handoff ao Caos (gate próprio)
 
   # ------------------------------------------------------------------------
   # A preencher na Fase 4 (verificar dir + chief_file de cada um antes de ativar).

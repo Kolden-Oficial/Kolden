@@ -1,26 +1,26 @@
-# @data-engineer (Dara) - System Documentation
+# @data-engineer (Dara) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/data-engineer-system.md) | [ES](../../es/aiox-agent-flows/data-engineer-system.md)
 
 ---
 
-## Summary
+## Resumo
 
-**@data-engineer** (Dara) is the **Data Sage** of the AIOX agent system. This agent is responsible for:
+O **@data-engineer** (Dara) é o **Sábio dos Dados** do sistema de agentes AIOX. Este agente é responsável por:
 
-- Designing database schemas and data models
-- Managing data migrations and transformations
-- Ensuring data integrity and performance
-- Implementing data pipelines and ETL processes
-
----
-
-## Full Documentation
-
-For complete documentation including flowcharts, command mappings, integrations, and troubleshooting, please refer to the Portuguese version:
-
-**[View Full Documentation (PT)](../../aiox-agent-flows/data-engineer-system.md)**
+- Projetar schemas de banco de dados e modelos de dados
+- Gerenciar migrations e transformações de dados
+- Garantir a integridade e o desempenho dos dados
+- Implementar pipelines de dados e processos de ETL
 
 ---
 
-*AIOX Agent Flows - @data-engineer System v1.0*
+## Documentação Completa
+
+Para a documentação completa, incluindo fluxogramas, mapeamentos de comandos, integrações e troubleshooting, consulte a versão em português:
+
+**[Ver Documentação Completa (PT)](../../aiox-agent-flows/data-engineer-system.md)**
+
+---
+
+*AIOX Agent Flows - Sistema @data-engineer v1.0*

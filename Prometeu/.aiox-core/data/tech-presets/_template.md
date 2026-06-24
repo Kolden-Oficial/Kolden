@@ -30,7 +30,7 @@ preset:
 
 ### Pattern 1: [Nome do Pattern]
 
-**Purpose:** [Descrição do propósito]
+**Propósito:** [Descrição do propósito]
 
 **Execution Score:** X/10 | **Anti-Bug Score:** X/10
 
@@ -38,19 +38,19 @@ preset:
 // Exemplo de código do pattern
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
-- [ ] Bug type 1
-- [ ] Bug type 2
+- [ ] Tipo de bug 1
+- [ ] Tipo de bug 2
 
-**Why It Works:**
+**Por Que Funciona:**
 
-- Reason 1
-- Reason 2
+- Razão 1
+- Razão 2
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 > Defina a estrutura de pastas recomendada para projetos usando esta tecnologia.
 
@@ -59,14 +59,14 @@ preset:
   /src
     /[folder1]        # Description
     /[folder2]        # Description
-  /tests              # Description
-  /config             # Description
+  /tests              # Descrição
+  /config             # Descrição
 ```
 
-### Structure Rationale
+### Justificativa da Estrutura
 
-- **[folder1]:** Explanation
-- **[folder2]:** Explanation
+- **[folder1]:** Explicação
+- **[folder2]:** Explicação
 
 ---
 
@@ -74,65 +74,65 @@ preset:
 
 > Liste as tecnologias e bibliotecas recomendadas.
 
-| Category         | Technology | Version | Purpose   |
+| Categoria        | Tecnologia | Versão  | Propósito |
 | ---------------- | ---------- | ------- | --------- |
 | Framework        | [name]     | ^X.X.X  | [purpose] |
 | State Management | [name]     | ^X.X.X  | [purpose] |
 | Testing          | [name]     | ^X.X.X  | [purpose] |
 | Styling          | [name]     | ^X.X.X  | [purpose] |
 
-### Required Dependencies
+### Dependências Necessárias
 
 ```bash
-# Core dependencies
+# Dependências principais
 npm install [packages]
 
-# Dev dependencies
+# Dependências de desenvolvimento
 npm install -D [packages]
 ```
 
 ---
 
-## Coding Standards
+## Padrões de Código
 
 > Defina os padrões de código específicos para esta tecnologia.
 
-### Naming Conventions
+### Convenções de Nomenclatura
 
-| Element    | Convention   | Example       |
+| Elemento   | Convenção    | Exemplo       |
 | ---------- | ------------ | ------------- |
 | Files      | [convention] | `example.ts`  |
 | Components | [convention] | `MyComponent` |
 | Functions  | [convention] | `myFunction`  |
 | Constants  | [convention] | `MY_CONSTANT` |
 
-### Critical Rules
+### Regras Críticas
 
-1. **Rule 1:** Description
-2. **Rule 2:** Description
-3. **Rule 3:** Description
+1. **Regra 1:** Descrição
+2. **Regra 2:** Descrição
+3. **Regra 3:** Descrição
 
-### Code Examples
+### Exemplos de Código
 
-#### Good Example
+#### Bom Exemplo
 
 ```[language]
-// Good code example
+// Exemplo de código bom
 ```
 
-#### Bad Example
+#### Mau Exemplo
 
 ```[language]
-// Bad code example - avoid this
+// Exemplo de código ruim - evite isto
 ```
 
 ---
 
-## Testing Strategy
+## Estratégia de Testes
 
 > Defina a estratégia de testes para esta tecnologia.
 
-### Test Pyramid
+### Pirâmide de Testes
 
 ```
          /\
@@ -144,27 +144,27 @@ npm install -D [packages]
    /----------------\
 ```
 
-### What to Test
+### O Que Testar
 
-#### Always Test (Critical)
-
-- [ ] Item 1
-- [ ] Item 2
-
-#### Consider Testing
+#### Sempre Testar (Crítico)
 
 - [ ] Item 1
 - [ ] Item 2
 
-#### Never Test
+#### Considerar Testar
 
 - [ ] Item 1
 - [ ] Item 2
 
-### Test File Template
+#### Nunca Testar
+
+- [ ] Item 1
+- [ ] Item 2
+
+### Template de Arquivo de Teste
 
 ```[language]
-// Test file template
+// Template de arquivo de teste
 describe('[Component/Service]', () => {
   it('should [expected behavior]', () => {
     // Arrange
@@ -176,81 +176,81 @@ describe('[Component/Service]', () => {
 
 ---
 
-## File Templates
+## Templates de Arquivo
 
 > Forneça templates de arquivos comuns para esta tecnologia.
 
-### Template 1: [Name]
+### Template 1: [Nome]
 
 ```[language]
-// Template content
+// Conteúdo do template
 ```
 
-### Template 2: [Name]
+### Template 2: [Nome]
 
 ```[language]
-// Template content
+// Conteúdo do template
 ```
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
 > Defina padrões de tratamento de erros.
 
-### Error Handling Pattern
+### Padrão de Tratamento de Erros
 
 ```[language]
-// Error handling example
+// Exemplo de tratamento de erros
 ```
 
-### Common Errors and Solutions
+### Erros Comuns e Soluções
 
-| Error     | Cause   | Solution   |
+| Erro      | Causa   | Solução    |
 | --------- | ------- | ---------- |
 | [Error 1] | [Cause] | [Solution] |
 | [Error 2] | [Cause] | [Solution] |
 
 ---
 
-## Performance Guidelines
+## Diretrizes de Performance
 
 > Diretrizes de performance específicas para esta tecnologia.
 
-### Do's
+### Recomendado (Do's)
 
-- [ ] Optimization 1
-- [ ] Optimization 2
+- [ ] Otimização 1
+- [ ] Otimização 2
 
-### Don'ts
+### Evitar (Don'ts)
 
-- [ ] Anti-pattern 1
-- [ ] Anti-pattern 2
+- [ ] Anti-padrão 1
+- [ ] Anti-padrão 2
 
 ---
 
-## Integration with AIOX
+## Integração com o AIOX
 
 > Como este preset se integra com o workflow AIOX.
 
-### Recommended Workflow
+### Workflow Recomendado
 
-1. **Planning Phase:** Use `@architect` with this preset
-2. **Development Phase:** Use `@dev` following these patterns
-3. **QA Phase:** Use `@qa` with the testing strategy defined
+1. **Fase de Planejamento:** Use `@architect` com este preset
+2. **Fase de Desenvolvimento:** Use `@dev` seguindo estes padrões
+3. **Fase de QA:** Use `@qa` com a estratégia de testes definida
 
-### Related AIOX Templates
+### Templates AIOX Relacionados
 
-- `architecture-tmpl.yaml` - Use for architecture docs
-- `front-end-architecture-tmpl.yaml` - Use for frontend specifics
+- `architecture-tmpl.yaml` - Use para docs de arquitetura
+- `front-end-architecture-tmpl.yaml` - Use para detalhes de frontend
 
 ---
 
 ## Changelog
 
-| Date       | Version | Changes         |
+| Data       | Versão  | Mudanças        |
 | ---------- | ------- | --------------- |
-| YYYY-MM-DD | 1.0.0   | Initial version |
+| YYYY-MM-DD | 1.0.0   | Versão inicial  |
 
 ---
 

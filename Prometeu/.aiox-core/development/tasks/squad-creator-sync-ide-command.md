@@ -52,7 +52,7 @@ Sincroniza agents, tasks, workflows ou squads inteiros para todas as configuraç
 *command squad legal --force
 ```
 
-## Output Exemplo
+## Exemplo de Output
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -269,9 +269,9 @@ Sincroniza TODOS os componentes de um squad:
 - Data (todos em `data/`)
 - Templates (todos em `templates/`)
 
-## Error Handling
+## Tratamento de Erros
 
-| Error                  | Causa                           | Solução                     |
+| Erro                   | Causa                           | Solução                     |
 | ---------------------- | ------------------------------- | --------------------------- |
 | `Source not found`     | Arquivo não existe em squads/   | Verifique o nome e tipo     |
 | `Squad alias not found` | Squad não está em squad_aliases | Adicione ao .aiox-sync.yaml |
@@ -279,7 +279,7 @@ Sincroniza TODOS os componentes de um squad:
 | `IDE not active`       | IDE não está em active_ides     | Ative no .aiox-sync.yaml    |
 | `Invalid YAML`         | Arquivo fonte com YAML inválido | Corrija o arquivo fonte     |
 
-## Implementation Guide
+## Guia de Implementação
 
 ### Para Execução pelo Agent
 
@@ -387,7 +387,7 @@ Summary:
 `);
 ```
 
-## Related Tasks
+## Tasks Relacionadas
 
 - `*create-squad` - Criar novo squad
 - `*validate-squad` - Validar estrutura do squad
@@ -396,7 +396,7 @@ Summary:
 
 ## Changelog
 
-| Version | Date       | Description                                |
+| Versão  | Data       | Descrição                                  |
 | ------- | ---------- | ------------------------------------------ |
-| 1.0.0   | 2026-01-27 | Full implementation with multi-IDE support |
-| 0.1.0   | 2026-01-27 | Initial spec                               |
+| 1.0.0   | 2026-01-27 | Implementação completa com suporte multi-IDE |
+| 0.1.0   | 2026-01-27 | Spec inicial                               |

@@ -4,26 +4,26 @@ responsável: @squad-creator
 responsável_type: agent
 atomic_layer: task
 Entrada: |
-  - squad_path: Path to the squad directory (default: ./squads/{name})
-  - name: Squad name (alternative to full path)
-  - strict: If true, warnings become errors (default: false)
-  - verbose: If true, show detailed output (default: false)
+  - squad_path: Caminho para o diretório do squad (padrão: ./squads/{name})
+  - name: Nome do squad (alternativa ao caminho completo)
+  - strict: Se true, warnings viram erros (padrão: false)
+  - verbose: Se true, exibe saída detalhada (padrão: false)
 Saída: |
-  - validation_result: Object with { valid, errors, warnings, suggestions }
-  - report: Formatted report for display
-  - exit_code: 0 if valid, 1 if invalid
+  - validation_result: Objeto com { valid, errors, warnings, suggestions }
+  - report: Relatório formatado para exibição
+  - exit_code: 0 se válido, 1 se inválido
 Checklist:
-  - [ ] Resolve squad path via squad-loader
-  - [ ] Execute squad-validator.validate()
-  - [ ] Format result for output
-  - [ ] Return appropriate exit code
+  - [ ] Resolver o caminho do squad via squad-loader
+  - [ ] Executar squad-validator.validate()
+  - [ ] Formatar o resultado para saída
+  - [ ] Retornar o exit code apropriado
 ---
 
 # *validate-squad
 
-Validates a squad against the JSON Schema and TASK-FORMAT-SPECIFICATION-V1.
+Valida um squad contra o JSON Schema e a TASK-FORMAT-SPECIFICATION-V1.
 
-## Usage
+## Uso
 
 ```
 @squad-creator
@@ -33,41 +33,41 @@ Validates a squad against the JSON Schema and TASK-FORMAT-SPECIFICATION-V1.
 *validate-squad my-squad --verbose
 ```
 
-## Parameters
+## Parâmetros
 
-| Parameter | Type | Default | Description |
+| Parâmetro | Tipo | Padrão | Descrição |
 |-----------|------|---------|-------------|
-| `squad_path` | string | - | Full path to squad directory |
-| `name` | string | - | Squad name (resolves to ./squads/{name}) |
-| `--strict` | flag | false | Treat warnings as errors |
-| `--verbose` | flag | false | Show detailed validation output |
+| `squad_path` | string | - | Caminho completo para o diretório do squad |
+| `name` | string | - | Nome do squad (resolve para ./squads/{name}) |
+| `--strict` | flag | false | Tratar warnings como erros |
+| `--verbose` | flag | false | Exibir saída detalhada da validação |
 
-## Validation Checks
+## Verificações de Validação
 
-### 1. Manifest Validation
-- Checks for `squad.yaml` or `config.yaml` (deprecated)
-- Validates against JSON Schema
-- Required fields: `name`, `version`
+### 1. Validação do Manifesto
+- Verifica `squad.yaml` ou `config.yaml` (depreciado)
+- Valida contra o JSON Schema
+- Campos obrigatórios: `name`, `version`
 
-### 2. Structure Validation
-- Checks for expected directories: `tasks/`, `agents/`
-- Verifies referenced files exist
+### 2. Validação de Estrutura
+- Verifica os diretórios esperados: `tasks/`, `agents/`
+- Confirma que os arquivos referenciados existem
 
-### 3. Task Validation (TASK-FORMAT-SPECIFICATION-V1)
-- Checks for required fields in task files
-- Validates naming conventions (kebab-case)
+### 3. Validação de Task (TASK-FORMAT-SPECIFICATION-V1)
+- Verifica os campos obrigatórios nos arquivos de task
+- Valida as convenções de nomenclatura (kebab-case)
 
-### 4. Agent Validation
-- Checks for valid agent definition format
-- Validates naming conventions
+### 4. Validação de Agente
+- Verifica o formato válido de definição de agente
+- Valida as convenções de nomenclatura
 
-### 5. Config Reference Validation (SQS-10)
-- Validates config paths in squad.yaml resolve correctly
-- Supports both local (`config/coding-standards.md`) and project-level (`../../docs/framework/CODING-STANDARDS.md`) paths
-- Warns if project-level reference doesn't exist
-- Errors if local reference doesn't exist
+### 5. Validação de Referência de Config (SQS-10)
+- Valida se os caminhos de config no squad.yaml resolvem corretamente
+- Suporta tanto caminhos locais (`config/coding-standards.md`) quanto de nível de projeto (`../../docs/framework/CODING-STANDARDS.md`)
+- Emite warning se a referência de nível de projeto não existir
+- Emite erro se a referência local não existir
 
-## Flow
+## Fluxo
 
 ```
 1. Resolve squad path
@@ -91,7 +91,7 @@ Validates a squad against the JSON Schema and TASK-FORMAT-SPECIFICATION-V1.
    └── 1 → Invalid (errors found)
 ```
 
-## Output Example
+## Exemplo de Saída
 
 ```
 Validating squad: ./squads/my-squad/
@@ -106,22 +106,22 @@ Warnings: 2
 Result: VALID (with warnings)
 ```
 
-## Error Codes
+## Códigos de Erro
 
-| Code | Severity | Description |
+| Código | Severidade | Descrição |
 |------|----------|-------------|
-| `MANIFEST_NOT_FOUND` | Error | No squad.yaml or config.yaml found |
-| `YAML_PARSE_ERROR` | Error | Invalid YAML syntax |
-| `SCHEMA_ERROR` | Error | Manifest doesn't match JSON Schema |
-| `FILE_NOT_FOUND` | Error | Referenced file doesn't exist |
-| `DEPRECATED_MANIFEST` | Warning | Using config.yaml instead of squad.yaml |
-| `MISSING_DIRECTORY` | Warning | Expected directory not found |
-| `NO_TASKS` | Warning | No task files in tasks/ |
-| `TASK_MISSING_FIELD` | Warning | Task missing recommended field |
-| `AGENT_INVALID_FORMAT` | Warning | Agent file may not follow format |
-| `INVALID_NAMING` | Warning | Filename not in kebab-case |
+| `MANIFEST_NOT_FOUND` | Error | Nenhum squad.yaml ou config.yaml encontrado |
+| `YAML_PARSE_ERROR` | Error | Sintaxe YAML inválida |
+| `SCHEMA_ERROR` | Error | O manifesto não corresponde ao JSON Schema |
+| `FILE_NOT_FOUND` | Error | O arquivo referenciado não existe |
+| `DEPRECATED_MANIFEST` | Warning | Usando config.yaml em vez de squad.yaml |
+| `MISSING_DIRECTORY` | Warning | Diretório esperado não encontrado |
+| `NO_TASKS` | Warning | Nenhum arquivo de task em tasks/ |
+| `TASK_MISSING_FIELD` | Warning | Task sem campo recomendado |
+| `AGENT_INVALID_FORMAT` | Warning | O arquivo de agente pode não seguir o formato |
+| `INVALID_NAMING` | Warning | Nome de arquivo fora do kebab-case |
 
-## Implementation
+## Implementação
 
 ```javascript
 const { SquadLoader } = require('./.aiox-core/development/scripts/squad');
@@ -150,10 +150,10 @@ async function validateSquad(options) {
 }
 ```
 
-## Related
+## Relacionados
 
 - **Story:** SQS-3 (Squad Validator + JSON Schema)
-- **Story:** SQS-10 (Project Config Reference) - Config path resolution
-- **Dependencies:** squad-loader.js, squad-validator.js
+- **Story:** SQS-10 (Project Config Reference) - Resolução de caminho de config
+- **Dependências:** squad-loader.js, squad-validator.js
 - **Schema:** .aiox-core/schemas/squad-schema.json
-- **Agent:** @squad-creator (Craft)
+- **Agente:** @squad-creator (Craft)

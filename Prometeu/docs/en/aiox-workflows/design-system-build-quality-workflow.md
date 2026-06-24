@@ -1,53 +1,53 @@
-# Design System Build Quality Workflow
+# Workflow de Qualidade na Construção de Design System
 
 > **EN** | [PT](../../aiox-workflows/design-system-build-quality-workflow.md) | [ES](../../es/aiox-workflows/design-system-build-quality-workflow.md)
 
 ---
 
-**Full documentation available in:** [Portuguese Version](../../aiox-workflows/design-system-build-quality-workflow.md)
+**Documentação completa disponível em:** [Versão em Português](../../aiox-workflows/design-system-build-quality-workflow.md)
 
 ---
 
-## Summary
+## Resumo
 
-The **Design System Build Quality Workflow** guides the creation and maintenance of design systems. It ensures:
+O **Workflow de Qualidade na Construção de Design System** orienta a criação e manutenção de design systems. Ele garante:
 
-- Consistent design tokens and variables
-- Reusable component library
-- Documentation and usage guidelines
-- Accessibility standards
-- Visual regression testing
+- Design tokens e variáveis consistentes
+- Biblioteca de componentes reutilizáveis
+- Documentação e diretrizes de uso
+- Padrões de acessibilidade
+- Testes de regressão visual
 
-### When to Use
+### Quando Usar
 
-- Creating a new design system
-- Evolving existing component libraries
-- Establishing UI consistency across projects
+- Criar um novo design system
+- Evoluir bibliotecas de componentes existentes
+- Estabelecer consistência de UI entre projetos
 
-### Key Agents
+### Agentes Principais
 
-- `@ux-design-expert` - Design leadership
-- `@architect` - Component architecture
-- `@dev` - Component implementation
-- `@qa` - Visual and accessibility testing
+- `@ux-design-expert` - Liderança de design
+- `@architect` - Arquitetura de componentes
+- `@dev` - Implementação de componentes
+- `@qa` - Testes visuais e de acessibilidade
 
-### Main Phases
+### Fases Principais
 
-1. **Foundation** - Design tokens and base styles
-2. **Primitives** - Basic UI elements
-3. **Components** - Complex component patterns
-4. **Documentation** - Usage guides and examples
-5. **Quality** - Testing and validation
+1. **Fundação** - Design tokens e estilos base
+2. **Primitivos** - Elementos básicos de UI
+3. **Componentes** - Padrões de componentes complexos
+4. **Documentação** - Guias de uso e exemplos
+5. **Qualidade** - Testes e validação
 
-### Key Components
+### Componentes Principais
 
-- Color system and typography
-- Spacing and layout tokens
-- Icon system
-- Form elements
-- Navigation patterns
-- Feedback components
+- Sistema de cores e tipografia
+- Tokens de espaçamento e layout
+- Sistema de ícones
+- Elementos de formulário
+- Padrões de navegação
+- Componentes de feedback
 
 ---
 
-*For complete details, diagrams, and step-by-step instructions, see the [Portuguese documentation](../../aiox-workflows/design-system-build-quality-workflow.md).*
+*Para detalhes completos, diagramas e instruções passo a passo, veja a [documentação em Português](../../aiox-workflows/design-system-build-quality-workflow.md).*

@@ -5,59 +5,59 @@ responsavel_type: agent
 atomic_layer: task
 elicit: true
 Entrada: |
-  - docs: Documentation sources (text, files, or verbal description)
-  - domain: Optional domain hint to guide analysis
-  - output_path: Where to save blueprint (default: ./squads/.designs/)
+  - docs: Fontes de documentação (texto, arquivos ou descrição verbal)
+  - domain: Dica opcional de domínio para guiar a análise
+  - output_path: Onde salvar o blueprint (default: ./squads/.designs/)
 Saida: |
-  - blueprint_path: Path to generated squad-design.yaml
-  - summary: Human-readable summary of recommendations
-  - confidence: Overall confidence score (0-1)
+  - blueprint_path: Caminho para o squad-design.yaml gerado
+  - summary: Resumo legível por humanos das recomendações
+  - confidence: Score de confiança geral (0-1)
 Checklist:
-  - "[ ] Collect documentation input"
-  - "[ ] Analyze domain and extract concepts"
-  - "[ ] Generate agent recommendations"
-  - "[ ] Generate task recommendations"
-  - "[ ] Present recommendations for refinement"
-  - "[ ] Apply user adjustments"
-  - "[ ] Generate blueprint file"
-  - "[ ] Display next steps"
+  - "[ ] Coletar a entrada de documentação"
+  - "[ ] Analisar o domínio e extrair conceitos"
+  - "[ ] Gerar recomendações de agents"
+  - "[ ] Gerar recomendações de tasks"
+  - "[ ] Apresentar recomendações para refinamento"
+  - "[ ] Aplicar ajustes do usuário"
+  - "[ ] Gerar o arquivo de blueprint"
+  - "[ ] Exibir os próximos passos"
 ---
 
 # *design-squad
 
-Analyzes documentation and guides the user through designing a squad structure with intelligent recommendations for agents and tasks.
+Analisa a documentação e guia o usuário pelo design de uma estrutura de squad com recomendações inteligentes de agents e tasks.
 
-## Usage
+## Uso
 
 ```bash
 @squad-creator
 
 *design-squad
-# → Interactive mode, prompts for documentation
+# → Modo interativo, solicita a documentação
 
 *design-squad --docs ./docs/prd/my-project.md
-# → Analyzes specific file
+# → Analisa um arquivo específico
 
 *design-squad --docs ./docs/prd/my-project.md,./docs/specs/api.yaml
-# → Analyzes multiple files
+# → Analisa múltiplos arquivos
 
 *design-squad --domain "e-commerce order management"
-# → Uses domain hint for guidance
+# → Usa a dica de domínio para orientação
 ```
 
-## Parameters
+## Parâmetros
 
-| Parameter | Type | Default | Description |
+| Parâmetro | Tipo | Default | Descrição |
 |-----------|------|---------|-------------|
-| `--docs` | string | - | Comma-separated paths to documentation files |
-| `--domain` | string | - | Domain hint to guide analysis |
-| `--output` | string | ./squads/.designs/ | Output directory for blueprint |
-| `--quick` | flag | false | Accept all recommendations without review |
-| `--verbose` | flag | false | Show detailed analysis output |
+| `--docs` | string | - | Caminhos separados por vírgula para arquivos de documentação |
+| `--domain` | string | - | Dica de domínio para guiar a análise |
+| `--output` | string | ./squads/.designs/ | Diretório de saída para o blueprint |
+| `--quick` | flag | false | Aceita todas as recomendações sem revisão |
+| `--verbose` | flag | false | Exibe a saída detalhada da análise |
 
-## Interactive Flow
+## Fluxo Interativo
 
-### Phase 1: Documentation Input
+### Fase 1: Entrada de Documentação
 
 ```
 ? How would you like to provide documentation?
@@ -72,7 +72,7 @@ Analyzes documentation and guides the user through designing a squad structure w
 Analyzing documentation...
 ```
 
-### Phase 2: Domain Confirmation
+### Fase 2: Confirmação do Domínio
 
 ```
 Based on your documentation, I identified:
@@ -89,7 +89,7 @@ Is this correct? [Y/n/Adjust]
 > Y
 ```
 
-### Phase 3: Agent Review
+### Fase 3: Revisão de Agents
 
 ```
 Recommended Agent 1 of 3:
@@ -106,7 +106,7 @@ Recommended Agent 2 of 3:
 ...
 ```
 
-### Phase 4: Task Review
+### Fase 4: Revisão de Tasks
 
 ```
 Tasks for order-manager:
@@ -123,7 +123,7 @@ Tasks for order-manager:
 > A
 ```
 
-### Phase 5: Custom Additions
+### Fase 5: Adições Customizadas
 
 ```
 Would you like to add any agents or tasks not recommended?
@@ -132,7 +132,7 @@ Would you like to add any agents or tasks not recommended?
 > C
 ```
 
-### Phase 6: Blueprint Generation
+### Fase 6: Geração do Blueprint
 
 ```
 Generating blueprint...
@@ -151,7 +151,7 @@ Next steps:
   3. Or edit blueprint manually before creation
 ```
 
-## Analysis Pipeline
+## Pipeline de Análise
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -188,7 +188,7 @@ Next steps:
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-## Recommendation Engine
+## Motor de Recomendação
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -219,7 +219,7 @@ Next steps:
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-## Output: Blueprint Schema
+## Saída: Schema do Blueprint
 
 ```yaml
 # squad-design.yaml
@@ -260,30 +260,30 @@ metadata:
   overall_confidence: 0.87
 ```
 
-## Integration with *create-squad
+## Integração com *create-squad
 
-After generating a blueprint, use it with *create-squad:
+Após gerar um blueprint, use-o com *create-squad:
 
 ```bash
 *create-squad my-domain-squad --from-design ./squads/.designs/my-domain-squad-design.yaml
 ```
 
-This will:
-1. Load the blueprint
-2. Validate against schema
-3. Generate squad structure with custom agents/tasks from blueprint
-4. Skip interactive elicitation (uses blueprint values)
+Isto irá:
+1. Carregar o blueprint
+2. Validar contra o schema
+3. Gerar a estrutura do squad com agents/tasks customizados do blueprint
+4. Pular a elicitação interativa (usa os valores do blueprint)
 
-## Error Handling
+## Tratamento de Erros
 
-| Error | Cause | Resolution |
+| Erro | Causa | Resolução |
 |-------|-------|------------|
-| `NO_DOCUMENTATION` | No input provided | Provide docs via --docs or interactively |
-| `PARSE_ERROR` | Cannot read/parse file | Check file format (md, yaml, json) |
-| `EMPTY_ANALYSIS` | No domain concepts extracted | Provide more detailed documentation |
-| `BLUEPRINT_EXISTS` | Blueprint already exists | Use --force to overwrite |
+| `NO_DOCUMENTATION` | Nenhuma entrada fornecida | Forneça docs via --docs ou interativamente |
+| `PARSE_ERROR` | Não é possível ler/parsear o arquivo | Verifique o formato do arquivo (md, yaml, json) |
+| `EMPTY_ANALYSIS` | Nenhum conceito de domínio extraído | Forneça documentação mais detalhada |
+| `BLUEPRINT_EXISTS` | O blueprint já existe | Use --force para sobrescrever |
 
-## Implementation
+## Implementação
 
 ```javascript
 const { SquadDesigner } = require('./.aiox-core/development/scripts/squad');
@@ -291,24 +291,24 @@ const { SquadDesigner } = require('./.aiox-core/development/scripts/squad');
 async function designSquad(options) {
   const designer = new SquadDesigner();
 
-  // 1. Collect documentation
+  // 1. Coletar a documentação
   const docs = await designer.collectDocumentation(options);
 
-  // 2. Analyze domain
+  // 2. Analisar o domínio
   const analysis = await designer.analyzeDomain(docs);
 
-  // 3. Generate recommendations
+  // 3. Gerar recomendações
   const recommendations = {
     agents: designer.generateAgentRecommendations(analysis),
     tasks: designer.generateTaskRecommendations(analysis)
   };
 
-  // 4. Interactive refinement (unless --quick)
+  // 4. Refinamento interativo (a menos que --quick)
   if (!options.quick) {
     await designer.interactiveRefinement(recommendations);
   }
 
-  // 5. Generate blueprint
+  // 5. Gerar o blueprint
   const blueprint = await designer.generateBlueprint({
     analysis,
     recommendations,
@@ -318,17 +318,17 @@ async function designSquad(options) {
     }
   });
 
-  // 6. Save blueprint
+  // 6. Salvar o blueprint
   const blueprintPath = await designer.saveBlueprint(blueprint, options.output);
 
   return { blueprintPath, blueprint };
 }
 ```
 
-## Related
+## Relacionados
 
 - **Agent:** @squad-creator (Craft)
 - **Script:** squad-designer.js
 - **Schema:** squad-design-schema.json
-- **Integration:** *create-squad --from-design
+- **Integração:** *create-squad --from-design
 - **Story:** SQS-9 (Squad Designer)

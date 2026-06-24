@@ -1,39 +1,39 @@
 ---
-# Template selection determined dynamically during task execution
-# User selects from available templates in .aiox-core/product/templates/
+# Seleção de template determinada dinamicamente durante a execução da task
+# O usuário seleciona entre os templates disponíveis em .aiox-core/product/templates/
 tools:
-  - github-cli        # For file operations
+  - github-cli        # Para operações de arquivo
 utils:
   - template-engine
   - template-validator
 ---
 
-# Create Document from Template (YAML Driven)
+# Criar Documento a partir de Template (Orientado por YAML)
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com registro em log
+- Interação mínima do usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Antecipado Abrangente
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com ambiguidade zero
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, padrão: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: createDoc()
@@ -46,19 +46,19 @@ atomic_layer: Template
   tipo: string
   origem: User Input
   obrigatório: true
-  validação: Must be non-empty, lowercase, kebab-case
+  validação: Deve ser não vazio, minúsculo, kebab-case
 
 - campo: options
   tipo: object
   origem: User Input
   obrigatório: false
-  validação: Valid JSON object with allowed keys
+  validação: Objeto JSON válido com chaves permitidas
 
 - campo: force
   tipo: boolean
   origem: User Input
   obrigatório: false
-  validação: Default: false
+  validação: Padrão: false
 
 **Saída:**
 - campo: created_file
@@ -79,15 +79,15 @@ atomic_layer: Template
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
 ```yaml
 pre-conditions:
-  - [ ] Target does not already exist; required inputs provided; permissions granted
+  - [ ] O alvo ainda não existe; entradas obrigatórias fornecidas; permissões concedidas
     tipo: pre-condition
     blocker: true
     validação: |
@@ -97,15 +97,15 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução APÓS a conclusão da task
 
 **Checklist:**
 
 ```yaml
 post-conditions:
-  - [ ] Resource created successfully; validation passed; no errors logged
+  - [ ] Recurso criado com sucesso; validação aprovada; nenhum erro registrado
     tipo: post-condition
     blocker: true
     validação: |
@@ -115,15 +115,15 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de pass/fail para conclusão da task
 
 **Checklist:**
 
 ```yaml
 acceptance-criteria:
-  - [ ] Resource exists and is valid; no duplicate resources created
+  - [ ] O recurso existe e é válido; nenhum recurso duplicado criado
     tipo: acceptance-criterion
     blocker: true
     validação: |
@@ -133,70 +133,70 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** component-generator
-  - **Purpose:** Generate new components from templates
-  - **Source:** .aiox-core/scripts/component-generator.js
+- **Ferramenta:** component-generator
+  - **Propósito:** Gerar novos componentes a partir de templates
+  - **Origem:** .aiox-core/scripts/component-generator.js
 
-- **Tool:** file-system
-  - **Purpose:** File creation and validation
-  - **Source:** Node.js fs module
+- **Ferramenta:** file-system
+  - **Propósito:** Criação e validação de arquivos
+  - **Origem:** Módulo fs do Node.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** create-component.js
-  - **Purpose:** Component creation workflow
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/create-component.js
+  - **Propósito:** Workflow de criação de componente
+  - **Linguagem:** JavaScript
+  - **Local:** .aiox-core/scripts/create-component.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** retry
+**Estratégia:** retry
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Resource Already Exists
-   - **Cause:** Target file/resource already exists in system
-   - **Resolution:** Use force flag or choose different name
-   - **Recovery:** Prompt user for alternative name or force overwrite
+1. **Erro:** Recurso Já Existe
+   - **Causa:** O arquivo/recurso alvo já existe no sistema
+   - **Resolução:** Usar a flag de force ou escolher um nome diferente
+   - **Recuperação:** Solicitar ao usuário um nome alternativo ou sobrescrever com force
 
-2. **Error:** Invalid Input
-   - **Cause:** Input name contains invalid characters or format
-   - **Resolution:** Validate input against naming rules (kebab-case, lowercase, no special chars)
-   - **Recovery:** Sanitize input or reject with clear error message
+2. **Erro:** Entrada Inválida
+   - **Causa:** O nome de entrada contém caracteres ou formato inválidos
+   - **Resolução:** Validar a entrada conforme as regras de nomenclatura (kebab-case, minúsculo, sem caracteres especiais)
+   - **Recuperação:** Sanitizar a entrada ou rejeitar com mensagem de erro clara
 
-3. **Error:** Permission Denied
-   - **Cause:** Insufficient permissions to create resource
-   - **Resolution:** Check file system permissions, run with elevated privileges if needed
-   - **Recovery:** Log error, notify user, suggest permission fix
+3. **Erro:** Permissão Negada
+   - **Causa:** Permissões insuficientes para criar o recurso
+   - **Resolução:** Verificar permissões do sistema de arquivos, rodar com privilégios elevados se necessário
+   - **Recuperação:** Registrar erro, notificar o usuário, sugerir correção de permissão
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
-duration_expected: 3-8 min (estimated)
+duration_expected: 3-8 min (estimado)
 cost_estimated: $0.002-0.005
 token_usage: ~1,500-5,000 tokens
 ```
 
-**Optimization Notes:**
-- Cache template compilation; minimize data transformations; lazy load resources
+**Notas de Otimização:**
+- Cachear a compilação de templates; minimizar transformações de dados; carregar recursos sob demanda
 
 ---
 
-## Metadata
+## Metadados
 
 ```yaml
 story: N/A
@@ -212,50 +212,50 @@ updated_at: 2025-11-17
 ---
 
 
-## Execution Dependencies
+## Dependências de Execução
 **Utils:** template-engine, template-validator
 
-## ⚠️ CRITICAL EXECUTION NOTICE ⚠️
+## ⚠️ AVISO CRÍTICO DE EXECUÇÃO ⚠️
 
-**THIS IS AN EXECUTABLE WORKFLOW - NOT REFERENCE MATERIAL**
+**ISTO É UM WORKFLOW EXECUTÁVEL - NÃO MATERIAL DE REFERÊNCIA**
 
-When this task is invoked:
+Quando esta task é invocada:
 
-1. **DISABLE ALL EFFICIENCY OPTIMIZATIONS** - This workflow requires full user interaction
-2. **MANDATORY STEP-BY-STEP EXECUTION** - Each section must be processed sequentially with user feedback
-3. **ELICITATION IS REQUIRED** - When `elicit: true`, you MUST use the 1-9 format and wait for user response
-4. **NO SHORTCUTS ALLOWED** - Complete documents cannot be created without following this workflow
+1. **DESABILITE TODAS AS OTIMIZAÇÕES DE EFICIÊNCIA** - Este workflow exige interação total do usuário
+2. **EXECUÇÃO PASSO A PASSO OBRIGATÓRIA** - Cada seção deve ser processada sequencialmente com feedback do usuário
+3. **A ELICITAÇÃO É OBRIGATÓRIA** - Quando `elicit: true`, você DEVE usar o formato 1-9 e aguardar a resposta do usuário
+4. **NENHUM ATALHO PERMITIDO** - Documentos completos não podem ser criados sem seguir este workflow
 
-**VIOLATION INDICATOR:** If you create a complete document without user interaction, you have violated this workflow.
+**INDICADOR DE VIOLAÇÃO:** Se você criar um documento completo sem interação do usuário, violou este workflow.
 
-## Critical: Template Discovery
+## Crítico: Descoberta de Template
 
-If a YAML Template has not been provided, list all templates from .aiox-core/product/templates or ask the user to provide another.
+Se um Template YAML não tiver sido fornecido, liste todos os templates de .aiox-core/product/templates ou peça ao usuário para fornecer outro.
 
-## CRITICAL: Mandatory Elicitation Format
+## CRÍTICO: Formato de Elicitação Obrigatório
 
-**When `elicit: true`, this is a HARD STOP requiring user interaction:**
+**Quando `elicit: true`, isto é uma PARADA OBRIGATÓRIA que exige interação do usuário:**
 
-**YOU MUST:**
+**VOCÊ DEVE:**
 
-1. Present section content
-2. Provide detailed rationale (explain trade-offs, assumptions, decisions made)
-3. **STOP and present numbered options 1-9:**
-   - **Option 1:** Always "Proceed to next section"
-   - **Options 2-9:** Select 8 methods from data/elicitation-methods
-   - End with: "Select 1-9 or just type your question/feedback:"
-4. **WAIT FOR USER RESPONSE** - Do not proceed until user selects option or provides feedback
+1. Apresentar o conteúdo da seção
+2. Fornecer justificativa detalhada (explicar trade-offs, premissas, decisões tomadas)
+3. **PARAR e apresentar as opções numeradas 1-9:**
+   - **Opção 1:** Sempre "Proceed to next section"
+   - **Opções 2-9:** Selecionar 8 métodos de data/elicitation-methods
+   - Terminar com: "Select 1-9 or just type your question/feedback:"
+4. **AGUARDAR A RESPOSTA DO USUÁRIO** - Não prossiga até que o usuário selecione uma opção ou forneça feedback
 
-**WORKFLOW VIOLATION:** Creating content for elicit=true sections without user interaction violates this task.
+**VIOLAÇÃO DE WORKFLOW:** Criar conteúdo para seções com elicit=true sem interação do usuário viola esta task.
 
-**NEVER ask yes/no questions or use any other format.**
+**NUNCA faça perguntas de sim/não nem use qualquer outro formato.**
 
-## Code Intelligence: Codebase Intelligence Section (Optional — Auto-skip if unavailable)
+## Code Intelligence: Seção de Inteligência do Codebase (Opcional — Auto-pulada se indisponível)
 
-> **Condition:** Only execute if `isCodeIntelAvailable()` returns true AND the document being created is a PRD or architecture document.
-> If no code intelligence provider is available, skip this enhancement silently.
+> **Condição:** Só executar se `isCodeIntelAvailable()` retornar true E o documento sendo criado for um PRD ou documento de arquitetura.
+> Se nenhum provedor de code intelligence estiver disponível, pule este aprimoramento silenciosamente.
 
-When creating PRDs or architecture documents with code intelligence available, add a "Codebase Intelligence" section:
+Ao criar PRDs ou documentos de arquitetura com code intelligence disponível, adicione uma seção "Codebase Intelligence":
 
 ```javascript
 const { isCodeIntelAvailable } = require('.aiox-core/core/code-intel');
@@ -272,7 +272,7 @@ if (isCodeIntelAvailable()) {
 }
 ```
 
-**If data is available, append this section to the generated document:**
+**Se houver dados disponíveis, anexe esta seção ao documento gerado:**
 
 ```markdown
 ## Codebase Intelligence
@@ -290,71 +290,71 @@ if (isCodeIntelAvailable()) {
 - **Dependency Depth:** {{depGraph.summary.depth}}
 ```
 
-> **Note:** This section is optional and only appears when a code intelligence provider is available. The document is fully functional without it.
+> **Nota:** Esta seção é opcional e só aparece quando um provedor de code intelligence está disponível. O documento é totalmente funcional sem ela.
 
 ---
 
-## Processing Flow
+## Fluxo de Processamento
 
-1. **Parse YAML template** - Load template metadata and sections
-2. **Set preferences** - Show current mode (Interactive), confirm output file
-3. **Process each section:**
-   - Skip if condition unmet
-   - Check agent permissions (owner/editors) - note if section is restricted to specific agents
-   - Draft content using section instruction
-   - Present content + detailed rationale
-   - **IF elicit: true** → MANDATORY 1-9 options format
-   - Save to file if possible
-4. **Continue until complete**
+1. **Analisar o template YAML** - Carregar os metadados e as seções do template
+2. **Definir preferências** - Mostrar o modo atual (Interativo), confirmar o arquivo de saída
+3. **Processar cada seção:**
+   - Pular se a condição não for atendida
+   - Verificar permissões do agente (owner/editors) - anotar se a seção é restrita a agentes específicos
+   - Redigir o conteúdo usando a instrução da seção
+   - Apresentar o conteúdo + justificativa detalhada
+   - **SE elicit: true** → formato OBRIGATÓRIO de opções 1-9
+   - Salvar no arquivo se possível
+4. **Continuar até concluir**
 
-## Detailed Rationale Requirements
+## Requisitos de Justificativa Detalhada
 
-When presenting section content, ALWAYS include rationale that explains:
+Ao apresentar o conteúdo da seção, SEMPRE inclua uma justificativa que explique:
 
-- Trade-offs and choices made (what was chosen over alternatives and why)
-- Key assumptions made during drafting
-- Interesting or questionable decisions that need user attention
-- Areas that might need validation
+- Trade-offs e escolhas feitas (o que foi escolhido em vez das alternativas e por quê)
+- Premissas-chave assumidas durante a redação
+- Decisões interessantes ou questionáveis que precisam da atenção do usuário
+- Áreas que possam precisar de validação
 
-## Elicitation Results Flow
+## Fluxo de Resultados da Elicitação
 
-After user selects elicitation method (2-9):
+Após o usuário selecionar o método de elicitação (2-9):
 
-1. Execute method from data/elicitation-methods
-2. Present results with insights
-3. Offer options:
-   - **1. Apply changes and update section**
-   - **2. Return to elicitation menu**
-   - **3. Ask any questions or engage further with this elicitation**
+1. Executar o método de data/elicitation-methods
+2. Apresentar os resultados com insights
+3. Oferecer opções:
+   - **1. Aplicar as mudanças e atualizar a seção**
+   - **2. Voltar ao menu de elicitação**
+   - **3. Fazer perguntas ou aprofundar esta elicitação**
 
-## Agent Permissions
+## Permissões de Agente
 
-When processing sections with agent permission fields:
+Ao processar seções com campos de permissão de agente:
 
-- **owner**: Note which agent role initially creates/populates the section
-- **editors**: List agent roles allowed to modify the section
-- **readonly**: Mark sections that cannot be modified after creation
+- **owner**: Anotar qual papel de agente inicialmente cria/preenche a seção
+- **editors**: Listar os papéis de agente autorizados a modificar a seção
+- **readonly**: Marcar as seções que não podem ser modificadas após a criação
 
-**For sections with restricted access:**
+**Para seções com acesso restrito:**
 
-- Include a note in the generated document indicating the responsible agent
-- Example: "_(This section is owned by dev-agent and can only be modified by dev-agent)_"
+- Incluir uma nota no documento gerado indicando o agente responsável
+- Exemplo: "_(This section is owned by dev-agent and can only be modified by dev-agent)_"
 
-## YOLO Mode
+## Modo YOLO
 
-User can type `#yolo` to toggle to YOLO mode (process all sections at once).
+O usuário pode digitar `#yolo` para alternar para o modo YOLO (processar todas as seções de uma vez).
 
-## CRITICAL REMINDERS
+## LEMBRETES CRÍTICOS
 
-**❌ NEVER:**
+**❌ NUNCA:**
 
-- Ask yes/no questions for elicitation
-- Use any format other than 1-9 numbered options
-- Create new elicitation methods
+- Fazer perguntas de sim/não para elicitação
+- Usar qualquer formato além das opções numeradas 1-9
+- Criar novos métodos de elicitação
 
-**✅ ALWAYS:**
+**✅ SEMPRE:**
 
-- Use exact 1-9 format when elicit: true
-- Select options 2-9 from data/elicitation-methods only
-- Provide detailed rationale explaining decisions
-- End with "Select 1-9 or just type your question/feedback:"
+- Usar o formato exato 1-9 quando elicit: true
+- Selecionar as opções 2-9 apenas de data/elicitation-methods
+- Fornecer justificativa detalhada explicando as decisões
+- Terminar com "Select 1-9 or just type your question/feedback:"

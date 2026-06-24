@@ -1,50 +1,50 @@
-# QA Loop Workflow
+# Workflow de QA Loop
 
 > **EN** | [PT](../../aiox-workflows/qa-loop-workflow.md) | [ES](../../es/aiox-workflows/qa-loop-workflow.md)
 
 ---
 
-**Full documentation available in:** [Portuguese Version](../../aiox-workflows/qa-loop-workflow.md)
+**Documentação completa disponível em:** [Versão em Português](../../aiox-workflows/qa-loop-workflow.md)
 
 ---
 
-## Summary
+## Resumo
 
-The **QA Loop Workflow** defines the quality assurance cycle within AIOX development. It ensures:
+O **Workflow de QA Loop** define o ciclo de garantia de qualidade dentro do desenvolvimento AIOX. Ele assegura:
 
-- Comprehensive test coverage
-- Code quality standards
-- Performance validation
-- Security checks
-- Accessibility compliance
+- Cobertura de testes abrangente
+- Padrões de qualidade de código
+- Validação de performance
+- Verificações de segurança
+- Conformidade de acessibilidade
 
-### When to Use
+### Quando Usar
 
-- During the QA phase of story-development-cycle
-- For dedicated quality review sessions
-- Before release preparation
+- Durante a fase de QA do story-development-cycle
+- Para sessões dedicadas de revisão de qualidade
+- Antes da preparação de release
 
-### Key Agents
+### Agentes Principais
 
-- `@qa` - Primary quality assurance
-- `@dev` - Bug fixes and improvements
-- `@architect` - Architecture review
+- `@qa` - Garantia de qualidade primária
+- `@dev` - Correções de bugs e melhorias
+- `@architect` - Revisão de arquitetura
 
-### Main Phases
+### Fases Principais
 
-1. **Test Planning** - Test strategy and coverage goals
-2. **Automated Testing** - Unit, integration, E2E tests
-3. **Manual Review** - Code review and exploratory testing
-4. **Issue Tracking** - Bug identification and prioritization
-5. **Resolution** - Fix implementation and verification
+1. **Planejamento de Testes** - Estratégia de testes e metas de cobertura
+2. **Testes Automatizados** - Testes unitários, de integração e E2E
+3. **Revisão Manual** - Revisão de código e testes exploratórios
+4. **Rastreamento de Problemas** - Identificação e priorização de bugs
+5. **Resolução** - Implementação de correções e verificação
 
 ### Quality Gates
 
-- All tests passing
-- Linting and type checking clean
-- Code coverage thresholds met
-- No critical security issues
+- Todos os testes passando
+- Linting e checagem de tipos sem erros
+- Limiares de cobertura de código atingidos
+- Nenhum problema crítico de segurança
 
 ---
 
-*For complete details, diagrams, and step-by-step instructions, see the [Portuguese documentation](../../aiox-workflows/qa-loop-workflow.md).*
+*Para detalhes completos, diagramas e instruções passo a passo, consulte a [documentação em Português](../../aiox-workflows/qa-loop-workflow.md).*

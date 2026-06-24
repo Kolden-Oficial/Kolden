@@ -15,6 +15,7 @@
 #     keywords: [lista de termos para o keyword-match da Fase 0]
 #     usadoPor: [ids de quem depende desta entidade]
 #     dependencias: [ids dos quais esta entidade depende]
+#     # tipo: agente | squad | skill | hook | subagent | mcp
 #     adaptabilidade:
 #       score: 0.0-1.0   # quão fácil é adaptar sem quebrar
 #       restricoes: [o que NÃO pode mudar]
@@ -27,14 +28,14 @@
 #   0.60 <= relevancia < 0.90 e adaptabilidade.score >= 0.6 -> ADAPT (mude <= 30%)
 #   sem correspondência  -> CREATE (registre na Fase 8 com justificativa)
 
-versao_do_registro: "1.3.0"
-atualizado_em: "2026-06-21"
+versao_do_registro: "1.5.0"
+atualizado_em: "2026-06-22"
 
 # NOTA: Os squads abaixo foram IMPORTADOS (modo importação, sancionado pelo Ronan) dos
 # arsenais validados xquads-squads e aiox-core, traduzidos para PT-BR e renomeados com a
 # mitologia grega. Status "importado-cru": ainda NÃO passaram pelo Ritual completo de 9 fases
 # (diagnóstico/PRD/maturity score). Refino por squad é dívida explícita da fase 2.
-# Procedência detalhada no _origem.md de cada pasta e em C:\Kolden\_staging\MANIFESTO-IMPORTACAO.md.
+# Procedência detalhada no _origem.md de cada pasta e em C:\Kolden\.claude\_staging\MANIFESTO-IMPORTACAO.md.
 
 entidades:
   peitho:
@@ -167,7 +168,7 @@ entidades:
     adaptabilidade:
       score: 0.7
       restricoes: ["personas reais preservadas"]
-      pontosDeExtensao: ["Ritual completo + PRD", "integrar com Catalogoos (tracking)"]
+      pontosDeExtensao: ["Ritual completo + PRD", "integrar com CataLogo (tracking)"]
     versao: "1.0.0"
     criadoEm: "2026-06-19T00:00:00Z"
     status: importado-cru
@@ -293,6 +294,23 @@ entidades:
     status: criado-pelo-ritual
     origem: "CREATE (Ritual de 9 fases do Caos). Motor de scraping vendorizado: Scrapling@c0f012d, Scrapy@c9f952c, gpt-researcher@b364917, Crawlee@15e77ef, Skyvern@9ba9f28 (ver Argos/_origem.md). Compliance híbrido: base verde + módulo cinza isolado opt-in."
 
+  liceu:
+    path: "Liceu/"
+    tipo: squad
+    dominio: outro
+    proposito: "Squad Biblioteca de Mentes (9 agentes: orquestrador + 4 dissecadores + 2 de estrutura + 2 de operacionalização). Disseca o cérebro de grandes especialistas mundiais separando engenharia documentada de mito/folclore, mapeia linhagens intelectuais (herdou_de/influenciou) e destila frameworks operacionais para os squads. Cataloga por referência as ~100 mentes já existentes nos squads (sem mover). Não executa nem instancia agentes — handoff aos squads de execução e ao Caos (encarnação)."
+    keywords: [mente, dissecar, dissecacao, especialista, pensador, genio, linhagem, genealogia, framework, modelo-mental, mental-model, biblioteca-de-mentes, fato-vs-folclore, quem-influenciou, herdou-de, replicar-cerebro, dossie, encarnar, conhecimento]
+    usadoPor: []
+    dependencias: []
+    adaptabilidade:
+      score: 0.8
+      restricoes: ["veto candura inviolável (nada vira fato sem fonte primária+ano; fato×folclore separados)", "veto nenhum-dossiê-sem-linhagem", "veto nenhum-framework-sem-procedência", "acervo existente indexado por referência (personas de squad nunca movidas/duplicadas)", "encarnação só via handoff ao Caos com aprovação humana", "sem motor próprio (REUSE do Argos)"]
+      pontosDeExtensao: ["enriquecer as ~100 personas existentes com seções novas (linhagem/fato×folclore)", "integrar com Hermes", "memória vetorial p/ dossiês (Supabase/Neon) se o volume justificar"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-22T00:00:00Z"
+    status: criado-pelo-ritual
+    origem: "CREATE (Ritual de 9 fases do Caos). Decisões do Ronan: squad completo, acervo indexado por referência, nome Liceu. Caso de prova na entrega: linhagem psicanalise-do-desejo + framework matriz-de-desejo-inconsciente. Sem motor próprio — REUSE de deep-research/tech-search e handoff ao motor do Argos."
+
   # ── Repositórios vendorizados pelo Argos (motor de scraping) ──
   vendor-scrapling:
     path: "Argos/motor/scrapling/"
@@ -378,6 +396,103 @@ entidades:
     criadoEm: "2026-06-21T00:00:00Z"
     status: importado-cru
     origem: "Skyvern-AI/skyvern@9ba9f28dd3176ec9bc0204c675184ea4a362a7f3 (AGPL-3.0)"
+
+  mcp-builder:
+    path: "Prometeu/.claude/skills/mcp-builder/"
+    tipo: skill
+    dominio: dados
+    proposito: "Guia de construção de servidores MCP de alta qualidade (FastMCP/Python + MCP SDK/Node-TS) com harness de avaliação. Reusado pela habilidade criacao-de-mcp do Caos como camada técnica."
+    keywords: [mcp, api, servidor, fastmcp, tool, integracao, construir-mcp, model-context-protocol]
+    usadoPor: [criacao-de-mcp]
+    dependencias: []
+    adaptabilidade:
+      score: 0.6
+      restricoes: ["vive em Prometeu/.claude/skills — não modificar (reuso por referência)", "termos em LICENSE.txt"]
+      pontosDeExtensao: ["envelope Kolden via criacao-de-mcp: Infisical, registro, pt-BR, checklist N4"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-22T00:00:00Z"
+    status: importado-cru
+    origem: "skill mcp-builder vendorizada no Prometeu"
+
+  criacao-de-mcp:
+    path: "Caos/.claude/skills/criacao-de-mcp/"
+    tipo: skill
+    dominio: dados
+    proposito: "Cria MCPs/APIs próprios na Fase 5.4 do Ritual: wrapper fino do mcp-builder + camada Kolden (Infisical, registro tipo: mcp, pt-BR, checklist de qualidade N4)."
+    keywords: [criar-mcp, mcp, api, integracao-propria, fase-5, infisical, registro]
+    usadoPor: []
+    dependencias: [mcp-builder, consulta-ao-registro, infisical-padrao, registro-de-entidade]
+    adaptabilidade:
+      score: 0.8
+      restricoes: ["não duplicar a lógica técnica do mcp-builder"]
+      pontosDeExtensao: ["templates de MCP por domínio Kolden"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-22T00:00:00Z"
+    status: criado-pelo-ritual
+
+  ingestao-de-repositorio:
+    path: "Caos/.claude/skills/ingestao-de-repositorio/"
+    tipo: skill
+    dominio: outro
+    proposito: "Maestro do pipeline de absorção de repositório do GitHub (8 fases F0–F7 com gates): histórico/dedup, quarentena, segurança, compreensão, mapeamento, aprimoramento, registro."
+    keywords: [absorver, ingestao, repositorio, github, repo, importar, pipeline, aprimorar-squad, quarentena]
+    usadoPor: []
+    dependencias: [verificacao-de-seguranca-de-repo, auditor-de-seguranca, consulta-ao-registro, auditoria-de-squad, registro-de-entidade, criacao-de-skill, criacao-de-subagent, heranca-de-especialista]
+    adaptabilidade:
+      score: 0.7
+      restricoes: ["nunca executar código de terceiro (Art. VIII)", "parada de aprovação antes de aplicar (Art. III)"]
+      pontosDeExtensao: ["fontes além do GitHub (GitLab/zip)", "modo incremental por SHA"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-22T00:00:00Z"
+    status: criado-pelo-ritual
+
+  verificacao-de-seguranca-de-repo:
+    path: "Caos/.claude/skills/verificacao-de-seguranca-de-repo/"
+    tipo: skill
+    dominio: outro
+    proposito: "Verificação de segurança ESTÁTICA de repo de terceiro em quarentena (segredos, CVE, padrões perigosos, supply-chain); reusa Egide + tasks SAST do Prometeu; veredito SAFE/QUARENTENA/REJEITAR."
+    keywords: [seguranca, sast, repo, quarentena, segredos, cve, supply-chain, owasp, egide, auditoria-seguranca]
+    usadoPor: [ingestao-de-repositorio]
+    dependencias: [auditor-de-seguranca]
+    adaptabilidade:
+      score: 0.7
+      restricoes: ["análise estática por padrão; nunca instalar/executar", "Egide e tasks Prometeu por referência (não modificar)"]
+      pontosDeExtensao: ["Docker isolado opt-in", "novas heurísticas de malware"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-22T00:00:00Z"
+    status: criado-pelo-ritual
+
+  auditor-de-seguranca:
+    path: "Caos/.claude/agents/auditor-de-seguranca.md"
+    tipo: subagent
+    dominio: outro
+    proposito: "Gatekeeper de segurança da absorção: contexto isolado, tools restritas (sem Write/Edit), orquestra a análise estática e delega o conhecimento ao Egide; emite o veredito de segurança."
+    keywords: [auditor, seguranca, gatekeeper, repo, estatico, egide, veredito]
+    usadoPor: [verificacao-de-seguranca-de-repo, ingestao-de-repositorio]
+    dependencias: []
+    adaptabilidade:
+      score: 0.6
+      restricoes: ["nunca executar o código analisado", "tools restritas a leitura/scan"]
+      pontosDeExtensao: ["integração com gitleaks/semgrep instalados"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-22T00:00:00Z"
+    status: criado-pelo-ritual
+
+  auditoria-de-squad:
+    path: "Caos/.claude/skills/auditoria-de-squad/"
+    tipo: skill
+    dominio: outro
+    proposito: "Máquina de diff: compara um squad-alvo arquivo-por-arquivo contra um benchmark (repo na absorção OU padrão-ouro Aletheia/Argos na conformação) e gera plano de aprimoramento; para para aprovação."
+    keywords: [auditoria, squad, diff, benchmark, conformacao, aprimoramento, padrao-ouro, gap]
+    usadoPor: [ingestao-de-repositorio]
+    dependencias: [heranca-de-especialista, criacao-de-skill, criacao-de-subagent]
+    adaptabilidade:
+      score: 0.8
+      restricoes: ["não reescrever conteúdo válido de especialistas; só conformar/absorver o que falta", "ADAPT ≤30% (Art. VI)"]
+      pontosDeExtensao: ["benchmark = zip local", "score automático de conformidade"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-22T00:00:00Z"
+    status: criado-pelo-ritual
 
 _exemplos_antigos:
   # Vazio na fundação. Cada criação preenche este bloco via Fase 8.

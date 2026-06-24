@@ -1,22 +1,22 @@
-# Code Intelligence Integration Pattern
+# Padrão de Integração de Code Intelligence
 
-> Standard pattern for integrating code intelligence into new tasks and helpers.
-> Follow this template to ensure consistent, provider-agnostic integration with graceful fallback.
+> Padrão padrão para integrar code intelligence em novas tasks e helpers.
+> Siga este template para garantir uma integração consistente, agnóstica de provider e com fallback gracioso.
 
-## Pattern Overview
+## Visão Geral do Padrão
 
 ```
-import → isCodeIntelAvailable guard → enrich → fallback (return null)
+import → guarda isCodeIntelAvailable → enrich → fallback (retorna null)
 ```
 
-All code intelligence integrations MUST follow this 4-step pattern:
+Todas as integrações de code intelligence DEVEM seguir este padrão de 4 passos:
 
-1. **Import** from the code-intel public API (`../index` or relative path)
-2. **Guard** with `isCodeIntelAvailable()` — return null if no provider
-3. **Enrich** by calling enricher/client capabilities inside try/catch
-4. **Fallback** — always return null on any error, never throw
+1. **Import** a partir da API pública de code-intel (`../index` ou caminho relativo)
+2. **Guard** com `isCodeIntelAvailable()` — retorne null se não houver provider
+3. **Enrich** chamando as capacidades do enricher/client dentro de try/catch
+4. **Fallback** — sempre retorne null em qualquer erro, nunca lance exceção (throw)
 
-## Complete Example
+## Exemplo Completo
 
 ```javascript
 'use strict';
@@ -24,33 +24,33 @@ All code intelligence integrations MUST follow this 4-step pattern:
 const { getEnricher, getClient, isCodeIntelAvailable } = require('../index');
 
 /**
- * ModuleDoc — describe the helper's purpose and target agent/task.
+ * ModuleDoc — descreva o propósito do helper e o agent/task alvo.
  *
- * All functions return null gracefully when no provider is available.
- * Never throws — safe to call unconditionally in task workflows.
+ * Todas as funções retornam null graciosamente quando nenhum provider está disponível.
+ * Nunca lança exceção — seguro para chamar incondicionalmente em workflows de task.
  */
 
 async function myFunction(param) {
-  // Step 1: Input validation
+  // Passo 1: Validação de entrada
   if (!param) return null;
 
-  // Step 2: Provider guard
+  // Passo 2: Guarda de provider
   if (!isCodeIntelAvailable()) return null;
 
   try {
-    // Step 3: Call enricher (composite) or client (primitive)
+    // Passo 3: Chame o enricher (composto) ou o client (primitivo)
     const enricher = getEnricher();
     const result = await enricher.someCapability(param);
 
-    // Validate result
+    // Valide o resultado
     if (!result) return null;
 
-    // Step 4: Format and return
+    // Passo 4: Formate e retorne
     return {
-      // ... formatted result
+      // ... resultado formatado
     };
   } catch {
-    // Never throw — return null on any error
+    // Nunca lance exceção — retorne null em qualquer erro
     return null;
   }
 }
@@ -58,9 +58,9 @@ async function myFunction(param) {
 module.exports = { myFunction };
 ```
 
-## Partial Results Pattern
+## Padrão de Resultados Parciais
 
-When calling multiple capabilities, use per-capability try/catch to accept partial results:
+Ao chamar múltiplas capacidades, use try/catch por capacidade para aceitar resultados parciais:
 
 ```javascript
 async function multiCapabilityFunction(param) {
@@ -76,13 +76,13 @@ async function multiCapabilityFunction(param) {
 
     try {
       dataA = await enricher.describeProject(param);
-    } catch { /* skip — partial result ok */ }
+    } catch { /* pular — resultado parcial ok */ }
 
     try {
       dataB = await client.findReferences(param);
-    } catch { /* skip — partial result ok */ }
+    } catch { /* pular — resultado parcial ok */ }
 
-    // Return null only if we got nothing at all
+    // Retorne null apenas se não obtivemos nada
     if (!dataA && !dataB) return null;
 
     return { dataA, dataB };
@@ -92,37 +92,37 @@ async function multiCapabilityFunction(param) {
 }
 ```
 
-## Available Capabilities
+## Capacidades Disponíveis
 
-### Enricher (composite — via `getEnricher()`)
+### Enricher (composto — via `getEnricher()`)
 
-| Capability | Input | Output | Use Case |
+| Capacidade | Entrada | Saída | Caso de Uso |
 |-----------|-------|--------|----------|
-| `describeProject(path)` | Path string | `{ codebase, stats }` | Project overview |
-| `getConventions(path)` | Path string | `{ patterns, stats }` | Naming/coding patterns |
-| `detectDuplicates(desc, opts)` | Description + options | `{ matches, codebaseOverview }` | Duplicate detection |
-| `assessImpact(files)` | File array | `{ blastRadius, references, complexity }` | Change impact |
-| `findTests(symbol)` | Symbol name | Test file references | Test discovery |
+| `describeProject(path)` | String de caminho | `{ codebase, stats }` | Visão geral do projeto |
+| `getConventions(path)` | String de caminho | `{ patterns, stats }` | Padrões de nomenclatura/código |
+| `detectDuplicates(desc, opts)` | Descrição + opções | `{ matches, codebaseOverview }` | Detecção de duplicatas |
+| `assessImpact(files)` | Array de arquivos | `{ blastRadius, references, complexity }` | Impacto de mudança |
+| `findTests(symbol)` | Nome do símbolo | Referências de arquivos de teste | Descoberta de testes |
 
-### Client (primitive — via `getClient()`)
+### Client (primitivo — via `getClient()`)
 
-| Capability | Input | Output | Use Case |
+| Capacidade | Entrada | Saída | Caso de Uso |
 |-----------|-------|--------|----------|
-| `findReferences(symbol)` | Symbol name | `[{ file, line, context }]` | Symbol usage |
-| `findDefinition(symbol)` | Symbol name | `{ file, line, column }` | Symbol definition |
-| `analyzeDependencies(path)` | Path string | `{ nodes, edges }` | Dependency graph |
-| `findCallers(symbol)` | Symbol name | Caller references | Call graph (inbound) |
-| `findCallees(symbol)` | Symbol name | Callee references | Call graph (outbound) |
-| `analyzeComplexity(path)` | Path string | Complexity metrics | Code complexity |
-| `analyzeCodebase(path)` | Path string | Codebase overview | Full analysis |
-| `getProjectStats(path)` | Path string | Project statistics | Stats only |
+| `findReferences(symbol)` | Nome do símbolo | `[{ file, line, context }]` | Uso do símbolo |
+| `findDefinition(symbol)` | Nome do símbolo | `{ file, line, column }` | Definição do símbolo |
+| `analyzeDependencies(path)` | String de caminho | `{ nodes, edges }` | Grafo de dependências |
+| `findCallers(symbol)` | Nome do símbolo | Referências de quem chama | Grafo de chamadas (entrada) |
+| `findCallees(symbol)` | Nome do símbolo | Referências de quem é chamado | Grafo de chamadas (saída) |
+| `analyzeComplexity(path)` | String de caminho | Métricas de complexidade | Complexidade de código |
+| `analyzeCodebase(path)` | String de caminho | Visão geral do codebase | Análise completa |
+| `getProjectStats(path)` | String de caminho | Estatísticas do projeto | Apenas estatísticas |
 
-## Testing Pattern
+## Padrão de Testes
 
-### Mock Strategy
+### Estratégia de Mock
 
 ```javascript
-// Mock the code-intel module at the top of your test file
+// Faça mock do módulo code-intel no topo do seu arquivo de teste
 jest.mock('../../.aiox-core/core/code-intel/index', () => ({
   isCodeIntelAvailable: jest.fn(),
   getEnricher: jest.fn(),
@@ -136,17 +136,17 @@ const {
 } = require('../../.aiox-core/core/code-intel/index');
 ```
 
-### Required Test Scenarios
+### Cenários de Teste Obrigatórios
 
-Every code intelligence integration MUST test:
+Toda integração de code intelligence DEVE testar:
 
-1. **Happy path** — provider available, data returned
-2. **Fallback** — provider unavailable (`isCodeIntelAvailable` returns false)
-3. **Error handling** — provider throws (enricher/client rejects)
-4. **Empty input** — null/empty parameters
-5. **Partial results** — one capability fails, other succeeds (if multi-capability)
+1. **Happy path** — provider disponível, dados retornados
+2. **Fallback** — provider indisponível (`isCodeIntelAvailable` retorna false)
+3. **Tratamento de erro** — provider lança exceção (enricher/client rejeita)
+4. **Entrada vazia** — parâmetros null/vazios
+5. **Resultados parciais** — uma capacidade falha, outra tem sucesso (se multi-capacidade)
 
-### Test Helper Setup
+### Configuração de Helper de Teste
 
 ```javascript
 function setupProviderAvailable() {
@@ -175,7 +175,7 @@ function createMockClient(overrides = {}) {
     findReferences: jest.fn().mockResolvedValue(null),
     findDefinition: jest.fn().mockResolvedValue(null),
     analyzeDependencies: jest.fn().mockResolvedValue(null),
-    // ... add other capabilities as needed
+    // ... adicione outras capacidades conforme necessário
     ...overrides,
   };
   getClient.mockReturnValue(client);
@@ -183,9 +183,9 @@ function createMockClient(overrides = {}) {
 }
 ```
 
-## Existing Helpers (Reference)
+## Helpers Existentes (Referência)
 
-| Helper | Agent | Functions | Story |
+| Helper | Agente | Funções | Story |
 |--------|-------|-----------|-------|
 | `dev-helper.js` | @dev | checkBeforeWriting, suggestReuse, getConventionsForPath, assessRefactoringImpact | NOG-3 |
 | `qa-helper.js` | @qa | validateTestCoverage, detectRegressionRisk | NOG-4 |
@@ -196,4 +196,4 @@ function createMockClient(overrides = {}) {
 
 ---
 
-*Template created for Story NOG-8 — Code Intelligence Integration Pattern*
+*Template criado para a Story NOG-8 — Code Intelligence Integration Pattern*

@@ -1,7 +1,7 @@
-# Subagent Step Prompt Template
+# Template de Prompt de Passo de Subagente
 
-> **Purpose:** Reusable template for constructing subagent prompts in the Workflow Runtime Engine.
-> Each variable is replaced at runtime by the orchestrator (aiox-master) before spawning the subagent via the Task tool.
+> **Propósito:** Template reutilizável para construir prompts de subagente no Workflow Runtime Engine.
+> Cada variável é substituída em tempo de execução pelo orquestrador (aiox-master) antes de spawnar o subagente via a ferramenta Task.
 
 ---
 
@@ -66,55 +66,55 @@ Execute the task now. Do NOT greet. Do NOT show commands. Do NOT ask questions (
 
 ---
 
-## Variable Reference
+## Referência de Variáveis
 
-| Variable | Source | Description |
+| Variável | Origem | Descrição |
 |----------|--------|-------------|
-| `{{AGENT_NAME}}` | Agent file → `agent.name` | Agent's display name (e.g., "Orion", "Pedro") |
-| `{{AGENT_TITLE}}` | Agent file → `agent.title` | Agent's role title |
-| `{{AGENT_YAML}}` | Agent file → full YAML block | Complete agent persona definition |
-| `{{TASK_CONTENT}}` | Task file via `uses` field | Complete task file content |
-| `{{WORKFLOW_NAME}}` | Workflow YAML → `workflow.name` | Name of the executing workflow |
-| `{{STEP_ID}}` | Sequence item → `id` | Unique step identifier |
-| `{{PHASE_NAME}}` | Current phase marker → `name` | Name of the current phase |
-| `{{ACTION}}` | Sequence item → `action` | Action description for this step |
-| `{{INPUT_DATA}}` | State → previous step outputs | YAML of outputs from steps listed in `requires` |
-| `{{REFERENCE_DATA}}` | Agent deps + workflow resources | Content of data files (e.g., mandamentos.yaml) |
-| `{{USER_INPUT}}` | Elicitation responses | YAML block of user answers (if `elicit: true`) |
-| `{{STEP_NOTES}}` | Sequence item → `notes` | Detailed instructions from the workflow step |
+| `{{AGENT_NAME}}` | Arquivo do agente → `agent.name` | Nome de exibição do agente (ex.: "Orion", "Pedro") |
+| `{{AGENT_TITLE}}` | Arquivo do agente → `agent.title` | Título do papel do agente |
+| `{{AGENT_YAML}}` | Arquivo do agente → bloco YAML completo | Definição completa da persona do agente |
+| `{{TASK_CONTENT}}` | Arquivo da task via campo `uses` | Conteúdo completo do arquivo da task |
+| `{{WORKFLOW_NAME}}` | Workflow YAML → `workflow.name` | Nome do workflow em execução |
+| `{{STEP_ID}}` | Item da sequência → `id` | Identificador único do passo |
+| `{{PHASE_NAME}}` | Marcador da fase atual → `name` | Nome da fase atual |
+| `{{ACTION}}` | Item da sequência → `action` | Descrição da ação para este passo |
+| `{{INPUT_DATA}}` | Estado → saídas do passo anterior | YAML das saídas dos passos listados em `requires` |
+| `{{REFERENCE_DATA}}` | Deps do agente + recursos do workflow | Conteúdo de arquivos de dados (ex.: mandamentos.yaml) |
+| `{{USER_INPUT}}` | Respostas da elicitação | Bloco YAML de respostas do usuário (se `elicit: true`) |
+| `{{STEP_NOTES}}` | Item da sequência → `notes` | Instruções detalhadas do passo do workflow |
 
 ---
 
-## Resolution Rules
+## Regras de Resolução
 
-### Path Resolution by Context
+### Resolução de Caminho por Contexto
 
-| Context | Agent Path | Task Path | Data Path |
+| Contexto | Caminho do Agente | Caminho da Task | Caminho dos Dados |
 |---------|-----------|-----------|-----------|
 | `core` | `.aiox-core/development/agents/{agent}.md` | `.aiox-core/development/tasks/{uses}.md` | `.aiox-core/data/{file}` |
 | `squad` | `squads/{squad}/agents/{agent}.md` | `squads/{squad}/tasks/{uses}.md` | `squads/{squad}/data/{file}` |
-| `hybrid` | squad-first, core-fallback | squad-first, core-fallback | squad-first, core-fallback |
+| `hybrid` | squad primeiro, core como fallback | squad primeiro, core como fallback | squad primeiro, core como fallback |
 
-### Hybrid Resolution Order
+### Ordem de Resolução Híbrida
 
-1. Check `squads/{squad}/agents/{agent}.md` first
-2. If not found, check `.aiox-core/development/agents/{agent}.md`
-3. If agent has explicit prefix (`core:architect` or `squad:validator`), use that directly
+1. Verifique `squads/{squad}/agents/{agent}.md` primeiro
+2. Se não encontrado, verifique `.aiox-core/development/agents/{agent}.md`
+3. Se o agente tiver prefixo explícito (`core:architect` ou `squad:validator`), use-o diretamente
 
-### Agent YAML Extraction
+### Extração do YAML do Agente
 
-The `{{AGENT_YAML}}` variable should contain the complete YAML block from the agent file, starting from the opening ` ```yaml ` marker and ending at the closing ` ``` ` marker. This includes all sections: agent identity, persona, commands, dependencies.
+A variável `{{AGENT_YAML}}` deve conter o bloco YAML completo do arquivo do agente, começando no marcador de abertura ` ```yaml ` e terminando no marcador de fechamento ` ``` `. Isso inclui todas as seções: identidade do agente, persona, comandos, dependências.
 
-### Task Content Extraction
+### Extração do Conteúdo da Task
 
-The `{{TASK_CONTENT}}` variable should contain the full task file content, from the Task Definition through Task Execution sections. Strip YAML frontmatter if present but keep all executable instructions.
+A variável `{{TASK_CONTENT}}` deve conter o conteúdo completo do arquivo da task, da Definição da Task até as seções de Execução da Task. Remova o frontmatter YAML se presente, mas mantenha todas as instruções executáveis.
 
 ---
 
-## Notes
+## Notas
 
-- This template is referenced by `run-workflow-engine.md` task
-- The orchestrator (aiox-master) builds the prompt by reading files and replacing variables
-- Subagents receive the complete prompt and execute autonomously
-- The orchestrator parses the `step_output` YAML block from the subagent's response
-- If the subagent fails to produce a valid YAML block, the orchestrator retries or requests manual intervention
+- Este template é referenciado pela task `run-workflow-engine.md`
+- O orquestrador (aiox-master) constrói o prompt lendo arquivos e substituindo variáveis
+- Os subagentes recebem o prompt completo e executam autonomamente
+- O orquestrador faz o parsing do bloco YAML `step_output` da resposta do subagente
+- Se o subagente falhar em produzir um bloco YAML válido, o orquestrador tenta novamente ou solicita intervenção manual

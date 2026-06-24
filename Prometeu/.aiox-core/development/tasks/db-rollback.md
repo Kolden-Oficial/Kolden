@@ -1,35 +1,35 @@
 # Task: Rollback Database
 
-**Purpose**: Restore database to previous snapshot or run rollback script
+**Propósito**: Restaurar o banco de dados para um snapshot anterior ou rodar um script de rollback
 
 **Elicit**: true
 
 ---
 
-## Execution Modes
+## Modos de Execução
 
-**Choose your execution mode:**
+**Escolha seu modo de execução:**
 
-### 1. YOLO Mode - Fast, Autonomous (0-1 prompts)
-- Autonomous decision making with logging
-- Minimal user interaction
-- **Best for:** Simple, deterministic tasks
+### 1. Modo YOLO - Rápido, Autônomo (0-1 prompts)
+- Tomada de decisão autônoma com logging
+- Interação mínima com o usuário
+- **Melhor para:** Tarefas simples e determinísticas
 
-### 2. Interactive Mode - Balanced, Educational (5-10 prompts) **[DEFAULT]**
-- Explicit decision checkpoints
-- Educational explanations
-- **Best for:** Learning, complex decisions
+### 2. Modo Interativo - Equilibrado, Educativo (5-10 prompts) **[PADRÃO]**
+- Checkpoints de decisão explícitos
+- Explicações educativas
+- **Melhor para:** Aprendizado, decisões complexas
 
-### 3. Pre-Flight Planning - Comprehensive Upfront Planning
-- Task analysis phase (identify all ambiguities)
-- Zero ambiguity execution
-- **Best for:** Ambiguous requirements, critical work
+### 3. Planejamento Pre-Flight - Planejamento Abrangente Antecipado
+- Fase de análise da task (identificar todas as ambiguidades)
+- Execução com zero ambiguidade
+- **Melhor para:** Requisitos ambíguos, trabalho crítico
 
-**Parameter:** `mode` (optional, default: `interactive`)
+**Parâmetro:** `mode` (opcional, default: `interactive`)
 
 ---
 
-## Task Definition (AIOX Task Format V1.0)
+## Definição da Task (AIOX Task Format V1.0)
 
 ```yaml
 task: dbRollback()
@@ -75,9 +75,9 @@ atomic_layer: Organism
 
 ---
 
-## Pre-Conditions
+## Pré-Condições
 
-**Purpose:** Validate prerequisites BEFORE task execution (blocking)
+**Propósito:** Validar pré-requisitos ANTES da execução da task (bloqueante)
 
 **Checklist:**
 
@@ -93,9 +93,9 @@ pre-conditions:
 
 ---
 
-## Post-Conditions
+## Pós-Condições
 
-**Purpose:** Validate execution success AFTER task completes
+**Propósito:** Validar o sucesso da execução DEPOIS que a task é concluída
 
 **Checklist:**
 
@@ -111,9 +111,9 @@ post-conditions:
 
 ---
 
-## Acceptance Criteria
+## Critérios de Aceite
 
-**Purpose:** Definitive pass/fail criteria for task completion
+**Propósito:** Critérios definitivos de aprovação/reprovação para a conclusão da task
 
 **Checklist:**
 
@@ -129,57 +129,57 @@ acceptance-criteria:
 
 ---
 
-## Tools
+## Ferramentas
 
-**External/shared resources used by this task:**
+**Recursos externos/compartilhados usados por esta task:**
 
-- **Tool:** supabase
-  - **Purpose:** PostgreSQL database connection via Supabase client
-  - **Source:** @supabase/supabase-js
+- **Ferramenta:** supabase
+  - **Propósito:** Conexão com banco de dados PostgreSQL via cliente Supabase
+  - **Origem:** @supabase/supabase-js
 
-- **Tool:** query-validator
-  - **Purpose:** SQL query syntax validation
-  - **Source:** .aiox-core/utils/db-query-validator.js
+- **Ferramenta:** query-validator
+  - **Propósito:** Validação de sintaxe de query SQL
+  - **Origem:** .aiox-core/utils/db-query-validator.js
 
 ---
 
 ## Scripts
 
-**Agent-specific code for this task:**
+**Código específico do agente para esta task:**
 
 - **Script:** db-query.js
-  - **Purpose:** Execute PostgreSQL queries with error handling via Supabase
-  - **Language:** JavaScript
-  - **Location:** .aiox-core/scripts/db-query.js
+  - **Propósito:** Executar queries PostgreSQL com tratamento de erros via Supabase
+  - **Linguagem:** JavaScript
+  - **Localização:** .aiox-core/scripts/db-query.js
 
 ---
 
-## Error Handling
+## Tratamento de Erros
 
-**Strategy:** abort
+**Estratégia:** abort
 
-**Common Errors:**
+**Erros Comuns:**
 
-1. **Error:** Connection Failed
-   - **Cause:** Unable to connect to Neo4j database
-   - **Resolution:** Check connection string, credentials, network
-   - **Recovery:** Retry with exponential backoff (max 3 attempts)
+1. **Erro:** Connection Failed
+   - **Causa:** Não foi possível conectar ao banco de dados Neo4j
+   - **Resolução:** Verifique a connection string, credenciais, rede
+   - **Recuperação:** Repetir com backoff exponencial (máx. 3 tentativas)
 
-2. **Error:** Query Syntax Error
-   - **Cause:** Invalid Cypher query syntax
-   - **Resolution:** Validate query syntax before execution
-   - **Recovery:** Return detailed syntax error, suggest fix
+2. **Erro:** Query Syntax Error
+   - **Causa:** Sintaxe de query Cypher inválida
+   - **Resolução:** Validar a sintaxe da query antes da execução
+   - **Recuperação:** Retornar erro de sintaxe detalhado, sugerir correção
 
-3. **Error:** Transaction Rollback
-   - **Cause:** Query violates constraints or timeout
-   - **Resolution:** Review query logic and constraints
-   - **Recovery:** Automatic rollback, preserve data integrity
+3. **Erro:** Transaction Rollback
+   - **Causa:** A query viola constraints ou atinge timeout
+   - **Resolução:** Revisar a lógica e as constraints da query
+   - **Recuperação:** Rollback automático, preservar a integridade dos dados
 
 ---
 
 ## Performance
 
-**Expected Metrics:**
+**Métricas Esperadas:**
 
 ```yaml
 duration_expected: 5-15 min (estimated)
@@ -187,8 +187,8 @@ cost_estimated: $0.003-0.010
 token_usage: ~3,000-10,000 tokens
 ```
 
-**Optimization Notes:**
-- Break into smaller workflows; implement checkpointing; use async processing where possible
+**Notas de Otimização:**
+- Quebrar em workflows menores; implementar checkpointing; usar processamento assíncrono quando possível
 
 ---
 
@@ -208,17 +208,17 @@ updated_at: 2025-11-17
 ---
 
 
-## Inputs
+## Entradas
 
-- `target` (string): Path to snapshot file or rollback script
+- `target` (string): Caminho para o arquivo de snapshot ou script de rollback
 
 ---
 
-## Process
+## Processo
 
-### 1. Confirm Rollback
+### 1. Confirmar o Rollback
 
-**CRITICAL WARNING**: Display to user before proceeding
+**AVISO CRÍTICO**: Exibir ao usuário antes de prosseguir
 
 ```
 ⚠️  DATABASE ROLLBACK WARNING ⚠️
@@ -236,9 +236,9 @@ This will:
 Are you ABSOLUTELY SURE you want to proceed?
 ```
 
-Ask user to type: `ROLLBACK` to confirm
+Peça ao usuário para digitar: `ROLLBACK` para confirmar
 
-### 2. Pre-Rollback Safety Checks
+### 2. Verificações de Segurança Pré-Rollback
 
 ```bash
 # Create emergency snapshot before rollback
@@ -260,7 +260,7 @@ else
 fi
 ```
 
-### 3. Validate Rollback Target
+### 3. Validar o Alvo do Rollback
 
 ```bash
 TARGET="{target}"
@@ -282,9 +282,9 @@ echo "  File size: $(ls -lh "$TARGET" | awk '{print $5}')"
 echo "  Modified: $(ls -lh "$TARGET" | awk '{print $6, $7, $8}')"
 ```
 
-### 4. Acquire Exclusive Lock
+### 4. Adquirir Lock Exclusivo
 
-Prevent concurrent operations:
+Previne operações concorrentes:
 
 ```bash
 echo "Acquiring exclusive lock..."
@@ -296,7 +296,7 @@ psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 -c \
 echo "✓ Lock acquired"
 ```
 
-### 5. Execute Rollback
+### 5. Executar o Rollback
 
 ```bash
 echo ""
@@ -334,7 +334,7 @@ else
 fi
 ```
 
-### 6. Post-Rollback Validation
+### 6. Validação Pós-Rollback
 
 ```bash
 echo ""
@@ -367,7 +367,7 @@ FROM pg_proc WHERE pronamespace='public'::regnamespace;
 SQL
 ```
 
-### 7. Release Lock & Create Post-Rollback Snapshot
+### 7. Liberar o Lock e Criar Snapshot Pós-Rollback
 
 ```bash
 # Release lock
@@ -383,7 +383,7 @@ pg_dump "$SUPABASE_DB_URL" --schema-only --clean --if-exists > "$POST_SNAPSHOT"
 echo "✓ Post-rollback snapshot: $POST_SNAPSHOT"
 ```
 
-### 8. Report Results
+### 8. Reportar os Resultados
 
 ```
 ✅ DATABASE ROLLBACK COMPLETED
@@ -407,28 +407,28 @@ If issues detected:
 
 ---
 
-## Rollback Strategies
+## Estratégias de Rollback
 
-### Strategy 1: Snapshot Restore (Recommended)
+### Estratégia 1: Restauração de Snapshot (Recomendada)
 
-**Use when**: Reverting schema changes
+**Use quando**: Revertendo mudanças de schema
 
 ```bash
 *rollback supabase/snapshots/20251026_pre_migration.sql
 ```
 
-**Pros**:
-- ✅ Fast
-- ✅ Complete schema state
-- ✅ Tested with pg_dump
+**Prós**:
+- ✅ Rápido
+- ✅ Estado completo do schema
+- ✅ Testado com pg_dump
 
-**Cons**:
-- ❌ Data preserved (may be incompatible)
-- ❌ Requires prior snapshot
+**Contras**:
+- ❌ Dados preservados (podem ser incompatíveis)
+- ❌ Requer um snapshot prévio
 
-### Strategy 2: Explicit Rollback Script
+### Estratégia 2: Script de Rollback Explícito
 
-**Use when**: Surgical changes to specific objects
+**Use quando**: Mudanças cirúrgicas em objetos específicos
 
 ```sql
 -- supabase/rollback/20251026_rollback_user_roles.sql
@@ -450,66 +450,66 @@ COMMIT;
 *rollback supabase/rollback/20251026_rollback_user_roles.sql
 ```
 
-**Pros**:
-- ✅ Precise control
-- ✅ Documented undo process
-- ✅ Can be tested
+**Prós**:
+- ✅ Controle preciso
+- ✅ Processo de desfazer documentado
+- ✅ Pode ser testado
 
-**Cons**:
-- ❌ Must write manually
-- ❌ Easy to forget steps
-- ❌ Must maintain with migration
+**Contras**:
+- ❌ Precisa ser escrito manualmente
+- ❌ Fácil esquecer passos
+- ❌ Precisa ser mantido junto com a migration
 
-### Strategy 3: Forward Fix
+### Estratégia 3: Forward Fix (Correção para Frente)
 
-**Use when**: Rollback is dangerous, fix forward instead
+**Use quando**: O rollback é perigoso; corrija para frente em vez disso
 
 ```sql
 -- Instead of rolling back, apply corrective migration
 -- migration: 20251026_fix_user_roles_bug.sql
 ```
 
-**Pros**:
-- ✅ No data loss risk
-- ✅ Maintains history
-- ✅ Safe in production
+**Prós**:
+- ✅ Sem risco de perda de dados
+- ✅ Mantém o histórico
+- ✅ Seguro em produção
 
-**Cons**:
-- ❌ More work
-- ❌ Leaves intermediate state in history
+**Contras**:
+- ❌ Mais trabalho
+- ❌ Deixa um estado intermediário no histórico
 
 ---
 
-## Rollback Decision Matrix
+## Matriz de Decisão de Rollback
 
-| Situation | Strategy | Command |
+| Situação | Estratégia | Comando |
 |-----------|----------|---------|
-| Migration failed mid-way | Restore snapshot | `*rollback snapshot_before.sql` |
-| Schema breaks app | Restore snapshot | `*rollback snapshot_before.sql` |
-| Wrong migration applied | Restore snapshot | `*rollback snapshot_before.sql` |
-| Minor bug in function | Forward fix | Create fix migration |
-| Data corruption risk | Forward fix | Don't rollback |
-| Production with users | Forward fix | Avoid schema rollback |
+| Migration falhou no meio | Restaurar snapshot | `*rollback snapshot_before.sql` |
+| Schema quebra o app | Restaurar snapshot | `*rollback snapshot_before.sql` |
+| Migration errada aplicada | Restaurar snapshot | `*rollback snapshot_before.sql` |
+| Bug menor em função | Forward fix | Criar migration de correção |
+| Risco de corrupção de dados | Forward fix | Não fazer rollback |
+| Produção com usuários | Forward fix | Evitar rollback de schema |
 
 ---
 
-## Safety Checklist
+## Checklist de Segurança
 
-Before executing rollback:
+Antes de executar o rollback:
 
-- [ ] Emergency snapshot created automatically ✓
-- [ ] Application stopped or in maintenance mode
-- [ ] Users notified of downtime
-- [ ] Team aware of rollback operation
-- [ ] Rollback target validated
-- [ ] Exclusive lock acquired
-- [ ] Post-rollback test plan ready
+- [ ] Snapshot de emergência criado automaticamente ✓
+- [ ] Aplicação parada ou em modo de manutenção
+- [ ] Usuários notificados sobre a indisponibilidade
+- [ ] Equipe ciente da operação de rollback
+- [ ] Alvo do rollback validado
+- [ ] Lock exclusivo adquirido
+- [ ] Plano de teste pós-rollback pronto
 
 ---
 
-## Rollback in Different Environments
+## Rollback em Diferentes Ambientes
 
-### Development
+### Desenvolvimento
 ```bash
 # Fast and loose - just do it
 *rollback snapshot.sql
@@ -523,7 +523,7 @@ Before executing rollback:
 # Test app functionality
 ```
 
-### Production
+### Produção
 ```bash
 # CAREFUL - follow full checklist
 # 1. Notify stakeholders
@@ -541,26 +541,26 @@ Before executing rollback:
 
 ---
 
-## Common Rollback Scenarios
+## Cenários Comuns de Rollback
 
-### Scenario 1: Migration Failed During Apply
+### Cenário 1: Migration Falhou Durante a Aplicação
 
-**Situation**: `*apply-migration` failed halfway
+**Situação**: `*apply-migration` falhou pela metade
 
-**Action**: PostgreSQL already rolled back transaction ✓
+**Ação**: O PostgreSQL já reverteu a transação ✓
 
-**No rollback needed**: Database unchanged
+**Nenhum rollback necessário**: Banco de dados inalterado
 
-**Next steps**:
-1. Fix migration file
-2. `*dry-run` to test
-3. `*apply-migration` again
+**Próximos passos**:
+1. Corrija o arquivo de migration
+2. `*dry-run` para testar
+3. `*apply-migration` novamente
 
-### Scenario 2: Migration Succeeded but Breaks App
+### Cenário 2: Migration Bem-Sucedida mas Quebra o App
 
-**Situation**: Schema change incompatible with application
+**Situação**: Mudança de schema incompatível com a aplicação
 
-**Action**: Rollback to pre-migration snapshot
+**Ação**: Rollback para o snapshot pré-migration
 
 ```bash
 *rollback supabase/snapshots/20251026_143022_pre_migration.sql
@@ -568,11 +568,11 @@ Before executing rollback:
 # Deploy previous app version or fix app
 ```
 
-### Scenario 3: Wrong Migration Applied
+### Cenário 3: Migration Errada Aplicada
 
-**Situation**: Applied v1.3.0 migration instead of v1.2.5
+**Situação**: Aplicou a migration v1.3.0 em vez da v1.2.5
 
-**Action**: Rollback to last known good state
+**Ação**: Rollback para o último estado bom conhecido
 
 ```bash
 *rollback supabase/snapshots/20251026_120000_v1_2_4.sql
@@ -581,11 +581,11 @@ Before executing rollback:
 *apply-migration v1_2_5.sql
 ```
 
-### Scenario 4: Data Corruption After Migration
+### Cenário 4: Corrupção de Dados Após a Migration
 
-**Situation**: Schema change caused data integrity issues
+**Situação**: A mudança de schema causou problemas de integridade de dados
 
-**Action**: DON'T rollback schema - fix data
+**Ação**: NÃO faça rollback do schema - corrija os dados
 
 ```sql
 -- Forward fix with data correction
@@ -602,32 +602,32 @@ COMMIT;
 
 ---
 
-## Troubleshooting
+## Solução de Problemas
 
 ### "Rollback failed: relation already exists"
 
-**Problem**: Objects from new schema still exist  
-**Fix**: Snapshot should have `DROP ... IF EXISTS` statements
+**Problema**: Objetos do novo schema ainda existem  
+**Correção**: O snapshot deve ter instruções `DROP ... IF EXISTS`
 
-Check snapshot file:
+Verifique o arquivo de snapshot:
 ```bash
 grep -c "DROP.*IF EXISTS" snapshot.sql
 ```
 
-If missing, regenerate snapshot with `--clean --if-exists` flags.
+Se estiver faltando, regenere o snapshot com as flags `--clean --if-exists`.
 
 ### "Rollback succeeded but app still broken"
 
-**Problem**: Application incompatible with rolled-back schema  
-**Solutions**:
-1. Deploy previous app version
-2. Fix app code to work with old schema
-3. Roll forward with new migration instead
+**Problema**: Aplicação incompatível com o schema revertido  
+**Soluções**:
+1. Faça deploy da versão anterior do app
+2. Corrija o código do app para funcionar com o schema antigo
+3. Avance com uma nova migration em vez disso
 
 ### "Emergency snapshot failed during rollback"
 
-**Problem**: Cannot create safety snapshot  
-**Action**: ABORT ROLLBACK
+**Problema**: Não é possível criar o snapshot de segurança  
+**Ação**: ABORTAR O ROLLBACK
 
 ```
 ❌ ROLLBACK ABORTED
@@ -637,8 +637,8 @@ Check database connectivity and disk space
 
 ### "Rollback created orphaned objects"
 
-**Problem**: Some objects not cleaned up  
-**Fix**: Manually identify and remove
+**Problema**: Alguns objetos não foram limpos  
+**Correção**: Identifique e remova manualmente
 
 ```sql
 -- Find orphaned triggers
@@ -652,62 +652,62 @@ WHERE tablename NOT IN (SELECT tablename FROM pg_tables);
 
 ---
 
-## Best Practices
+## Boas Práticas
 
-### DO
+### FAÇA
 
-- ✅ Always snapshot before rollback (automatic)
-- ✅ Test rollback in staging first
-- ✅ Coordinate with team
-- ✅ Have post-rollback test plan
-- ✅ Monitor application after rollback
-- ✅ Document why rollback was needed
+- ✅ Sempre tire um snapshot antes do rollback (automático)
+- ✅ Teste o rollback em staging primeiro
+- ✅ Coordene com a equipe
+- ✅ Tenha um plano de teste pós-rollback
+- ✅ Monitore a aplicação após o rollback
+- ✅ Documente por que o rollback foi necessário
 
-### DON'T
+### NÃO FAÇA
 
-- ❌ Rollback in production without coordination
-- ❌ Rollback without emergency snapshot
-- ❌ Rollback when forward fix is safer
-- ❌ Rollback if data corruption risk
-- ❌ Rollback during peak usage times
-- ❌ Rollback without understanding impact
+- ❌ Rollback em produção sem coordenação
+- ❌ Rollback sem snapshot de emergência
+- ❌ Rollback quando o forward fix é mais seguro
+- ❌ Rollback se houver risco de corrupção de dados
+- ❌ Rollback durante horários de pico de uso
+- ❌ Rollback sem entender o impacto
 
 ---
 
-## Zero-Downtime Alternatives
+## Alternativas Zero-Downtime
 
-Instead of rollback, consider:
+Em vez de rollback, considere:
 
 ### Blue-Green Deployment
-- Keep old schema running
-- Deploy new app + schema separately
-- Switch traffic when ready
-- Rollback = switch back
+- Mantenha o schema antigo rodando
+- Faça deploy do novo app + schema separadamente
+- Mude o tráfego quando estiver pronto
+- Rollback = mudar de volta
 
 ### Feature Flags
-- Deploy schema changes
-- Keep old code paths active
-- Toggle features via flags
-- Rollback = flip flag
+- Faça deploy das mudanças de schema
+- Mantenha os caminhos de código antigos ativos
+- Alterne funcionalidades via flags
+- Rollback = inverter a flag
 
-### Backward Compatible Migrations
-- Add new columns as nullable
-- Keep old columns temporarily
-- Remove old columns in later migration
-- Rollback = just remove new columns
+### Migrations Retrocompatíveis
+- Adicione novas colunas como nullable
+- Mantenha as colunas antigas temporariamente
+- Remova as colunas antigas em uma migration posterior
+- Rollback = apenas remover as colunas novas
 
 ---
 
-## Rollback Metrics
+## Métricas de Rollback
 
-Track these after rollback:
+Acompanhe estas após o rollback:
 
-- **Rollback duration**: How long did it take?
-- **Downtime**: How long was app unavailable?
-- **Data loss**: Any data lost? (should be none)
-- **Schema object count**: Before vs after
-- **Application errors**: Any post-rollback issues?
-- **Recovery time**: Time to full functionality
+- **Duração do rollback**: Quanto tempo levou?
+- **Downtime**: Por quanto tempo o app ficou indisponível?
+- **Perda de dados**: Algum dado perdido? (deve ser nenhum)
+- **Contagem de objetos de schema**: Antes vs depois
+- **Erros da aplicação**: Algum problema pós-rollback?
+- **Tempo de recuperação**: Tempo até a funcionalidade plena
 
 ```bash
 # Log rollback event
@@ -717,23 +717,23 @@ echo "$(date -Iseconds) | ROLLBACK | $TARGET | Duration: ${DURATION}s" \
 
 ---
 
-## Related Commands
+## Comandos Relacionados
 
-- `*snapshot {label}` - Create rollback point
-- `*apply-migration {path}` - Creates automatic snapshots
-- `*smoke-test` - Validate after rollback
-- `*rls-audit` - Check security after rollback
+- `*snapshot {label}` - Criar ponto de rollback
+- `*apply-migration {path}` - Cria snapshots automáticos
+- `*smoke-test` - Validar após o rollback
+- `*rls-audit` - Verificar a segurança após o rollback
 
 ---
 
-## Emergency Contacts
+## Contatos de Emergência
 
-If rollback fails critically:
+Se o rollback falhar criticamente:
 
-1. **Check emergency snapshot**: `$EMERGENCY`
-2. **Review Supabase dashboard**: Check for locks/issues
-3. **Contact team**: Get help immediately
-4. **Document state**: Save logs and error messages
-5. **Consider Supabase restore**: Point-in-time recovery
+1. **Verifique o snapshot de emergência**: `$EMERGENCY`
+2. **Revise o dashboard do Supabase**: Verifique locks/problemas
+3. **Contate a equipe**: Peça ajuda imediatamente
+4. **Documente o estado**: Salve logs e mensagens de erro
+5. **Considere o restore do Supabase**: Recuperação point-in-time
 
-**Never panic**: Emergency snapshot has your back.
+**Nunca entre em pânico**: O snapshot de emergência protege você.

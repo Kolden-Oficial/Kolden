@@ -36,13 +36,13 @@ preset:
 
 ---
 
-## Design Patterns (The Essential 5)
+## Design Patterns (Os 5 Essenciais)
 
-> **Critical:** Estes 5 patterns eliminam 95% dos bugs e permitem ao Claude Code trabalhar com máxima eficiência. São complementares e devem ser usados TODOS juntos.
+> **Crítico:** Estes 5 patterns eliminam 95% dos bugs e permitem ao Claude Code trabalhar com máxima eficiência. São complementares e devem ser usados TODOS juntos.
 
 ### Pattern 1: Contract Pattern
 
-**Purpose:** Definir APIs públicas entre features para prevenir bugs de integração
+**Propósito:** Definir APIs públicas entre features para prevenir bugs de integração
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 10/10
 
@@ -103,25 +103,25 @@ export type User = {
 };
 ````
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
-- Feature A expects string, Feature B returns number
-- Method renamed breaks all consumers
-- Parameters in wrong order
-- Unexpected return types
-- Circular dependencies between features
+- Feature A espera string, Feature B retorna number
+- Método renomeado quebra todos os consumidores
+- Parâmetros em ordem errada
+- Tipos de retorno inesperados
+- Dependências circulares entre features
 
-**Why Claude Code Excels:**
+**Por Que o Claude Code se Destaca:**
 
-- TypeScript enforces contracts at compile time
-- Claude reads contract (50 lines) instead of implementation (2000 lines)
-- Impossible to break contract without TypeScript errors
+- TypeScript impõe contratos em tempo de compilação
+- O Claude lê o contrato (50 linhas) em vez da implementação (2000 linhas)
+- Impossível quebrar o contrato sem erros de TypeScript
 
 ---
 
 ### Pattern 2: Service Pattern
 
-**Purpose:** Encapsular lógica de negócio em serviços testáveis e reutilizáveis
+**Propósito:** Encapsular lógica de negócio em serviços testáveis e reutilizáveis
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 9/10
 
@@ -182,19 +182,19 @@ export class AuthService implements AuthContract {
 export const authService = new AuthService(userRepository, eventBus);
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
-- Business logic scattered across components
-- Code duplication
-- Impossible to test without UI
-- Inconsistent error handling
-- Side effects in unexpected places
+- Lógica de negócio espalhada entre componentes
+- Duplicação de código
+- Impossível testar sem UI
+- Tratamento de erro inconsistente
+- Efeitos colaterais em lugares inesperados
 
 ---
 
 ### Pattern 3: Repository Pattern
 
-**Purpose:** Isolar lógica de acesso a dados da lógica de negócio
+**Propósito:** Isolar lógica de acesso a dados da lógica de negócio
 
 **Execution Score:** 9/10 | **Anti-Bug Score:** 9/10
 
@@ -246,18 +246,18 @@ export class UserRepository {
 export const userRepository = new UserRepository();
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
-- SQL/queries scattered throughout codebase
-- Impossible to test without real database
-- Changing ORM breaks entire application
-- Inconsistent data access patterns
+- SQL/queries espalhados por todo o codebase
+- Impossível testar sem banco de dados real
+- Trocar o ORM quebra a aplicação inteira
+- Padrões de acesso a dados inconsistentes
 
 ---
 
 ### Pattern 4: Event Bus Pattern (Observer)
 
-**Purpose:** Habilitar acoplamento solto entre features através de arquitetura event-driven
+**Propósito:** Habilitar acoplamento solto entre features através de arquitetura event-driven
 
 **Execution Score:** 8/10 | **Anti-Bug Score:** 10/10
 
@@ -311,7 +311,7 @@ export type AppEvents = {
 };
 ```
 
-**Usage:**
+**Uso:**
 
 ```typescript
 // Feature A emits
@@ -328,22 +328,22 @@ eventBus.on('order:created', async (order) => {
 });
 ```
 
-**Bugs Eliminated:**
+**Bugs Eliminados:**
 
-- Circular dependencies between features
-- Feature A change breaks Feature B
-- Tight coupling makes refactoring impossible
-- Adding new functionality requires modifying existing code
+- Dependências circulares entre features
+- Mudança na Feature A quebra a Feature B
+- Acoplamento forte torna a refatoração impossível
+- Adicionar nova funcionalidade exige modificar código existente
 
 ---
 
 ### Pattern 5: Builder Pattern (Tests Only)
 
-**Purpose:** Criar fixtures de teste facilmente e consistentemente
+**Propósito:** Criar fixtures de teste facilmente e consistentemente
 
 **Execution Score:** 10/10 | **Anti-Bug Score:** 8/10
 
-**IMPORTANT:** Use Builders APENAS para TESTES, não em código de produção
+**IMPORTANTE:** Use Builders APENAS para TESTES, não em código de produção
 
 ```typescript
 // test/builders/user.builder.ts
@@ -384,7 +384,7 @@ export class UserBuilder {
 }
 ```
 
-**Usage in Tests:**
+**Uso em Testes:**
 
 ```typescript
 describe('OrderService', () => {
@@ -401,25 +401,25 @@ describe('OrderService', () => {
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 ```
 /src
-  /features              # Feature-based organization (NOT type-based)
+  /features              # Organização baseada em features (NÃO baseada em tipo)
     /auth
-      /components       # UI components specific to auth
-      /hooks           # Custom hooks for auth
-      /services        # Business logic (pure functions)
-      /repositories    # Data access layer
-      /types           # TypeScript types/interfaces
-      /utils           # Helper functions
-      auth.contract.ts # PUBLIC API (integration point)
+      /components       # Componentes de UI específicos de auth
+      /hooks           # Hooks customizados para auth
+      /services        # Lógica de negócio (funções puras)
+      /repositories    # Camada de acesso a dados
+      /types           # Tipos/interfaces TypeScript
+      /utils           # Funções auxiliares
+      auth.contract.ts # API PÚBLICA (ponto de integração)
       index.ts         # Barrel export (facade)
     /products
-      [same structure]
+      [mesma estrutura]
     /checkout
-      [same structure]
-    /_reference        # Reference feature (copy good code)
+      [mesma estrutura]
+    /_reference        # Feature de referência (copie o bom código)
       /contracts
       /repositories
       /services
@@ -427,50 +427,50 @@ describe('OrderService', () => {
       /components
       index.ts
 
-  /shared               # ONLY truly shared code
-    /components         # Reusable UI components
-    /hooks             # Generic hooks
-    /utils             # Generic utilities
-    /types             # Shared types
+  /shared               # APENAS código realmente compartilhado
+    /components         # Componentes de UI reutilizáveis
+    /hooks             # Hooks genéricos
+    /utils             # Utilitários genéricos
+    /types             # Tipos compartilhados
     /events            # Event bus
 
-  /config              # Environment variables, constants
-  /lib                 # Third-party integrations
+  /config              # Variáveis de ambiente, constantes
+  /lib                 # Integrações de terceiros
 
 /test
-  /builders            # Test fixture builders
-  /mocks               # MSW handlers and mocks
-  /e2e                 # Playwright E2E tests
+  /builders            # Builders de fixtures de teste
+  /mocks               # Handlers e mocks do MSW
+  /e2e                 # Testes E2E do Playwright
 ```
 
-### Structure Rationale
+### Justificativa da Estrutura
 
-- **Features are self-contained:** Easier to understand context
-- **Contract-based integration:** Features communicate via contracts only
-- **Reference feature:** Template for new features (copy patterns)
-- **Shared is minimal:** Only truly reusable code
+- **Features são autocontidas:** Mais fácil de entender o contexto
+- **Integração baseada em contrato:** Features se comunicam apenas via contratos
+- **Feature de referência:** Template para novas features (copie os padrões)
+- **Shared é mínimo:** Apenas código realmente reutilizável
 
 ---
 
 ## Tech Stack
 
-| Category            | Technology      | Version | Purpose                                 |
+| Categoria           | Tecnologia      | Versão  | Propósito                               |
 | ------------------- | --------------- | ------- | --------------------------------------- |
-| Framework           | Next.js         | ^16.0.0 | Fullstack React framework (Proxy-based) |
+| Framework           | Next.js         | ^16.0.0 | Framework React fullstack (Proxy-based) |
 | Language            | TypeScript      | ^5.0.0  | Type safety                             |
-| Styling             | Tailwind CSS    | ^3.4.0  | Utility-first CSS                       |
-| UI Components       | shadcn/ui       | latest  | Accessible components                   |
-| State (Global)      | Zustand         | ^4.5.0  | Simple global state                     |
-| State (Server)      | React Query     | ^5.0.0  | Server state management                 |
-| Forms               | React Hook Form | ^7.50.0 | Form handling                           |
-| Validation          | Zod             | ^3.22.0 | Schema validation                       |
-| Testing (Unit)      | Vitest          | ^1.2.0  | Fast unit testing                       |
-| Testing (Component) | Testing Library | ^14.0.0 | Component testing                       |
-| Testing (E2E)       | Playwright      | ^1.41.0 | E2E testing                             |
+| Styling             | Tailwind CSS    | ^3.4.0  | CSS utility-first                       |
+| UI Components       | shadcn/ui       | latest  | Componentes acessíveis                  |
+| State (Global)      | Zustand         | ^4.5.0  | Estado global simples                   |
+| State (Server)      | React Query     | ^5.0.0  | Gestão de estado de servidor            |
+| Forms               | React Hook Form | ^7.50.0 | Tratamento de formulários               |
+| Validation          | Zod             | ^3.22.0 | Validação de schema                     |
+| Testing (Unit)      | Vitest          | ^1.2.0  | Testes unitários rápidos                |
+| Testing (Component) | Testing Library | ^14.0.0 | Testes de componentes                   |
+| Testing (E2E)       | Playwright      | ^1.41.0 | Testes E2E                              |
 | API Mocking         | MSW             | ^2.1.0  | Mock Service Worker                     |
-| Database            | Prisma          | ^5.9.0  | Type-safe ORM                           |
+| Database            | Prisma          | ^5.9.0  | ORM type-safe                           |
 
-### Required Dependencies
+### Dependências Necessárias
 
 ```bash
 # Core
@@ -487,11 +487,11 @@ npm install -D prisma @types/node @types/react
 
 ---
 
-## Coding Standards
+## Padrões de Código
 
-### Naming Conventions
+### Convenções de Nomenclatura
 
-| Element      | Convention             | Example                |
+| Elemento     | Convenção              | Exemplo                |
 | ------------ | ---------------------- | ---------------------- |
 | Components   | PascalCase             | `ProductCard.tsx`      |
 | Hooks        | useCamelCase           | `useProducts.ts`       |
@@ -500,15 +500,15 @@ npm install -D prisma @types/node @types/react
 | Contracts    | camelCase + .contract  | `auth.contract.ts`     |
 | Types        | PascalCase             | `User`, `AuthResult`   |
 | Constants    | SCREAMING_SNAKE        | `MAX_ITEMS_PER_PAGE`   |
-| Tests        | _.test.ts or _.spec.ts | `auth.service.test.ts` |
+| Tests        | _.test.ts ou _.spec.ts | `auth.service.test.ts` |
 
-### Critical Rules
+### Regras Críticas
 
-1. **Contract Pattern:** Features ONLY expose via `.contract.ts` files
-2. **No Cross-Feature Imports:** Import from `@/features/[name]` index only
-3. **Types First:** Always define schemas/types BEFORE implementation
-4. **Error Handling:** All async operations must have explicit error handling
-5. **No `any` Types:** Use `unknown` if type is truly unknown, then narrow
+1. **Contract Pattern:** Features SOMENTE expõem via arquivos `.contract.ts`
+2. **Sem Imports Cross-Feature:** Importe apenas do index `@/features/[name]`
+3. **Types First:** Sempre defina schemas/tipos ANTES da implementação
+4. **Error Handling:** Todas as operações async devem ter tratamento de erro explícito
+5. **Sem Tipos `any`:** Use `unknown` se o tipo for realmente desconhecido, depois faça o narrowing
 
 ### Next.js 16+ Proxy (substitui Middleware)
 
@@ -590,53 +590,53 @@ export default async function DashboardPage() {
 
 ---
 
-## Testing Strategy
+## Estratégia de Testes
 
-### Test Pyramid
+### Pirâmide de Testes
 
 ```
          /\
-        /E2E\           10% - Critical user flows only
+        /E2E\           10% - Apenas fluxos críticos do usuário
        /------\
-      /Integration\     20% - Features working together
+      /Integration\     20% - Features funcionando juntas
      /------------\
-    /  Unit Tests  \    70% - Business logic, components
+    /  Unit Tests  \    70% - Lógica de negócio, componentes
    /----------------\
 ```
 
-### What to Test
+### O Que Testar
 
-#### Always Test (Critical)
+#### Sempre Testar (Crítico)
 
-- [ ] Business Logic (Services/Utils) - 90%+ coverage
-- [ ] Validation & Business Rules
-- [ ] Edge Cases (null, empty, max values)
+- [ ] Lógica de Negócio (Services/Utils) - 90%+ de cobertura
+- [ ] Validação e Regras de Negócio
+- [ ] Casos de Borda (null, vazio, valores máximos)
 
-#### Consider Testing
+#### Considerar Testar
 
-- [ ] Custom Hooks
-- [ ] Component Integration
-- [ ] API Error Handling
+- [ ] Hooks Customizados
+- [ ] Integração de Componentes
+- [ ] Tratamento de Erro de API
 
-#### Never Test
+#### Nunca Testar
 
-- [ ] Framework internals (React, Next.js)
-- [ ] External libraries (Zod, React Query)
-- [ ] Trivial getters/setters
-- [ ] CSS/styling
+- [ ] Internals do framework (React, Next.js)
+- [ ] Bibliotecas externas (Zod, React Query)
+- [ ] Getters/setters triviais
+- [ ] CSS/estilização
 
-### Coverage Goals
+### Metas de Cobertura
 
 ```
-- Business logic (services/utils): 90%+
+- Lógica de negócio (services/utils): 90%+
 - Hooks: 80%+
 - Components: 60%+
-- Overall: 70%+
+- Geral: 70%+
 
-DO NOT pursue 100% - diminishing returns
+NÃO persiga 100% - retornos decrescentes
 ```
 
-### Test Template
+### Template de Teste
 
 ```typescript
 import { describe, it, expect, vi, beforeEach } from 'vitest';
@@ -678,11 +678,11 @@ describe('[Feature]Service', () => {
 
 ---
 
-## Token Economy Strategies
+## Estratégias de Economia de Tokens
 
 > Estratégias para minimizar consumo de tokens com Claude Code.
 
-### Strategy 1: Show, Don't Tell
+### Estratégia 1: Mostre, Não Conte (Show, Don't Tell)
 
 ```
 // BAD: ~1000 tokens explaining patterns
@@ -694,16 +694,16 @@ Dependency Injection following SOLID principles..."
 [paste AuthService.ts]"
 ```
 
-### Strategy 2: Reference Feature
+### Estratégia 2: Feature de Referência
 
-Create one perfect feature as template, then:
+Crie uma feature perfeita como template, depois:
 
 ```
 "Create ProductService identical to _reference/services/reference.service.ts
 Just change the entity name and business logic"
 ```
 
-### Strategy 3: Schemas as Documentation
+### Estratégia 3: Schemas como Documentação
 
 ```typescript
 // Schema replaces 50+ lines of explanation
@@ -717,7 +717,7 @@ export const registerSchema = z.object({
 });
 ```
 
-### Strategy 4: Tests as Specifications
+### Estratégia 4: Testes como Especificações
 
 ```typescript
 // Tests are more concise than prose
@@ -735,22 +735,22 @@ describe('calculateShipping', () => {
 
 ---
 
-## Bug Prevention Stack
+## Stack de Prevenção de Bugs
 
-| Layer              | Catches | Implementation             |
+| Camada             | Captura | Implementação              |
 | ------------------ | ------- | -------------------------- |
-| TypeScript Strict  | 60%     | `strict: true` in tsconfig |
-| Runtime Validation | 25%     | Zod schemas at boundaries  |
-| Contract Pattern   | 10%     | Interface enforcement      |
-| Tests              | 5%      | Edge cases and regressions |
+| TypeScript Strict  | 60%     | `strict: true` no tsconfig |
+| Runtime Validation | 25%     | Schemas Zod nas bordas     |
+| Contract Pattern   | 10%     | Imposição de interface     |
+| Tests              | 5%      | Casos de borda e regressões|
 
 ---
 
-## Patterns to AVOID
+## Padrões a EVITAR
 
 ### Singleton Pattern
 
-**Problem:** Hard to test, shared state between tests
+**Problema:** Difícil de testar, estado compartilhado entre testes
 
 ```typescript
 // BAD
@@ -765,7 +765,7 @@ export const db = new Database()
 
 ### TypeScript Decorators
 
-**Problem:** Experimental, confusing syntax, hard to debug
+**Problema:** Experimental, sintaxe confusa, difícil de debugar
 
 ```typescript
 // BAD
@@ -780,7 +780,7 @@ const userService = rateLimit(cache(validate(new UserService())));
 
 ### Abstract Factory
 
-**Problem:** Over-engineering for 99% of cases
+**Problema:** Over-engineering para 99% dos casos
 
 ```typescript
 // BAD
@@ -796,9 +796,9 @@ const vehicleFactory = {
 
 ---
 
-## File Templates
+## Templates de Arquivo
 
-### Contract Template
+### Template de Contract
 
 ```typescript
 // src/features/[feature]/[feature].contract.ts
@@ -823,7 +823,7 @@ export type [Feature]Events = {
 }
 ```
 
-### Service Template
+### Template de Service
 
 ```typescript
 // src/features/[feature]/services/[feature].service.ts
@@ -847,7 +847,7 @@ export class [Feature]Service implements [Feature]Contract {
 export const [feature]Service = new [Feature]Service(dep1, eventBus)
 ```
 
-### Index Template
+### Template de Index
 
 ```typescript
 // src/features/[feature]/index.ts
@@ -861,29 +861,29 @@ export { [feature]Service } from './services/[feature].service'
 
 ---
 
-## Integration with AIOX
+## Integração com o AIOX
 
-### Recommended Workflow
+### Workflow Recomendado
 
-1. **Planning Phase:**
-   - Use `@architect` with `*create-doc fullstack-architecture`
-   - Reference this preset for patterns and structure
+1. **Fase de Planejamento:**
+   - Use `@architect` com `*create-doc fullstack-architecture`
+   - Referencie este preset para padrões e estrutura
 
-2. **Development Phase:**
-   - Use `@dev` following the 5 Essential Patterns
-   - Create features using the Reference Feature strategy
+2. **Fase de Desenvolvimento:**
+   - Use `@dev` seguindo os 5 Patterns Essenciais
+   - Crie features usando a estratégia de Feature de Referência
 
-3. **QA Phase:**
-   - Use `@qa` with the testing strategy defined
-   - Ensure coverage goals are met
+3. **Fase de QA:**
+   - Use `@qa` com a estratégia de testes definida
+   - Garanta que as metas de cobertura sejam atingidas
 
-### Related AIOX Templates
+### Templates AIOX Relacionados
 
-- `fullstack-architecture-tmpl.yaml` - Main architecture document
-- `front-end-architecture-tmpl.yaml` - Frontend specifics
-- `story-tmpl.yaml` - User story format
+- `fullstack-architecture-tmpl.yaml` - Documento principal de arquitetura
+- `front-end-architecture-tmpl.yaml` - Detalhes de frontend
+- `story-tmpl.yaml` - Formato de user story
 
-### AIOX Commands
+### Comandos AIOX
 
 ```bash
 # Create architecture doc using this preset
@@ -895,36 +895,36 @@ export { [feature]Service } from './services/[feature].service'
 
 ---
 
-## Checklist for New Features
+## Checklist para Novas Features
 
 ```markdown
-When creating a new feature:
+Ao criar uma nova feature:
 
-- [ ] Define Contract if feature will be used by others
-- [ ] Create Repository for all data access
-- [ ] Implement Service for business logic
-- [ ] Use Event Bus for cross-feature communication
-- [ ] Create Builders for test fixtures
-- [ ] Export only public API through index.ts
-- [ ] Write tests using mocked contracts
-- [ ] Document integration points
+- [ ] Defina o Contract se a feature for usada por outras
+- [ ] Crie o Repository para todo acesso a dados
+- [ ] Implemente o Service para a lógica de negócio
+- [ ] Use o Event Bus para comunicação cross-feature
+- [ ] Crie Builders para fixtures de teste
+- [ ] Exporte apenas a API pública através de index.ts
+- [ ] Escreva testes usando contratos mockados
+- [ ] Documente os pontos de integração
 
-When integrating with existing feature:
+Ao integrar com uma feature existente:
 
-- [ ] Import ONLY the Contract, never implementation
-- [ ] Use Event Bus if don't need synchronous response
-- [ ] Mock contracts in tests
-- [ ] Don't create circular dependencies
+- [ ] Importe APENAS o Contract, nunca a implementação
+- [ ] Use o Event Bus se não precisar de resposta síncrona
+- [ ] Mocke os contratos nos testes
+- [ ] Não crie dependências circulares
 ```
 
 ---
 
 ## Changelog
 
-| Date       | Version | Changes                                              |
+| Data       | Versão  | Mudanças                                             |
 | ---------- | ------- | ---------------------------------------------------- |
-| 2026-01-28 | 1.1.0   | Update to Next.js 16+, replace Middleware with Proxy |
-| 2025-01-27 | 1.0.0   | Initial version based on DEVELOPMENT_GUIDE.md        |
+| 2026-01-28 | 1.1.0   | Atualização para Next.js 16+, substitui Middleware por Proxy |
+| 2025-01-27 | 1.0.0   | Versão inicial baseada em DEVELOPMENT_GUIDE.md       |
 
 ---
 

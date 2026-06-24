@@ -18,7 +18,22 @@ Antes de buscar, certifique-se de ter em mãos:
 
 Se qualquer item estiver ausente, solicite antes de prosseguir.
 
-## Passo 1 — Busca paralela
+## Passo 0b — Camada-alvo (obrigatório na Fase 5)
+Toda busca declara para QUAL camada referencia: `orquestrador | especialista | habilidade | mcp`.
+Na Fase 5 a referência é **obrigatória por camada** — rode uma vez por entidade construída:
+- **orquestrador** → escola/figura que define o julgamento do domínio (o que vem primeiro).
+- **especialista** → 1 figura humana histórica do sub-domínio (alimenta `heranca-de-especialista`).
+- **habilidade** → o método/framework que a habilidade operacionaliza.
+- **mcp** → referências de design de tools/integração (alimenta `criacao-de-mcp`).
+
+## Passo 0c — Fonte local primeiro (biblioteca)
+**Decisão híbrida do Kolden:** antes de qualquer busca na web, leia o material denso depositado em
+`referencias/biblioteca/<dominio>/` (PDFs de livros, planilhas, frameworks, transcrições). É a
+fonte **primária**. Se cobrir o necessário com qualidade, pare aqui — a web só **complementa**
+lacunas. Material local de figura histórica vai direto para extração (sem re-triagem de score),
+desde que a licença permita o uso interno.
+
+## Passo 1 — Busca paralela (complementar, quando o local não basta)
 
 Execute as três buscas em paralelo:
 
@@ -82,7 +97,9 @@ reescreva em português, original, adaptado à Constituição do Kolden.
 ## Passo 4 — Entrega
 
 ```
-RELATÓRIO DE REFERÊNCIAS — <nome do agente>
+RELATÓRIO DE REFERÊNCIAS — <nome do agente> | camada-alvo: <orquestrador|especialista|habilidade|mcp>
+
+Fonte local (biblioteca) consultada: <sim/não> — <o que cobriu>
 
 Referências aprovadas (score ≥ 7):
 | # | Fonte | Score | Domínio | Blocos extraídos |

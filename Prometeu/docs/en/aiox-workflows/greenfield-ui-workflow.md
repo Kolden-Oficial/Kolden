@@ -1,45 +1,45 @@
-# Greenfield UI Workflow
+# Workflow de Greenfield UI
 
 > **EN** | [PT](../../aiox-workflows/greenfield-ui-workflow.md) | [ES](../../es/aiox-workflows/greenfield-ui-workflow.md)
 
 ---
 
-**Full documentation available in:** [Portuguese Version](../../aiox-workflows/greenfield-ui-workflow.md)
+**Documentação completa disponível em:** [Versão em Português](../../aiox-workflows/greenfield-ui-workflow.md)
 
 ---
 
-## Summary
+## Resumo
 
-The **Greenfield UI Workflow** is designed for creating new frontend applications from scratch. It covers:
+O **Workflow de Greenfield UI** foi concebido para criar novas aplicações de frontend do zero. Ele cobre:
 
-- UI/UX design integration
-- Component architecture
-- Design system setup
-- State management patterns
-- Responsive and accessible design
-- Frontend testing strategies
+- Integração de design UI/UX
+- Arquitetura de componentes
+- Configuração de design system
+- Padrões de gerenciamento de estado
+- Design responsivo e acessível
+- Estratégias de testes de frontend
 
-### When to Use
+### Quando Usar
 
-- Building a new frontend application
-- Creating SPAs or static sites
-- Projects consuming existing APIs without backend development
+- Ao construir uma nova aplicação de frontend
+- Ao criar SPAs ou sites estáticos
+- Em projetos que consomem APIs existentes sem desenvolvimento de backend
 
-### Key Agents
+### Agentes Principais
 
-- `@ux-design-expert` - UX/UI design guidance
-- `@architect` - Frontend architecture
-- `@dev` - UI implementation
-- `@qa` - Visual and functional testing
+- `@ux-design-expert` - Orientação de design UX/UI
+- `@architect` - Arquitetura de frontend
+- `@dev` - Implementação de UI
+- `@qa` - Testes visuais e funcionais
 
-### Main Phases
+### Fases Principais
 
-1. **Design Review** - UX/UI requirements and design system
-2. **Architecture** - Component structure and state management
-3. **Component Development** - Building UI components
-4. **Integration** - API integration and data flow
-5. **Polish** - Accessibility, responsiveness, and performance
+1. **Revisão de Design** - Requisitos de UX/UI e design system
+2. **Arquitetura** - Estrutura de componentes e gerenciamento de estado
+3. **Desenvolvimento de Componentes** - Construção dos componentes de UI
+4. **Integração** - Integração de APIs e fluxo de dados
+5. **Polimento** - Acessibilidade, responsividade e performance
 
 ---
 
-*For complete details, diagrams, and step-by-step instructions, see the [Portuguese documentation](../../aiox-workflows/greenfield-ui-workflow.md).*
+*Para detalhes completos, diagramas e instruções passo a passo, consulte a [documentação em Português](../../aiox-workflows/greenfield-ui-workflow.md).*

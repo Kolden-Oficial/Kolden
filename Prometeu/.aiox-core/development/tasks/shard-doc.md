@@ -142,7 +142,7 @@ atomic_layer: Template
 
 ```yaml
 pre-conditions:
-  - [ ] Task is registered; required parameters provided; dependencies met
+  - [ ] A task está registrada; parâmetros obrigatórios fornecidos; dependências atendidas
     tipo: pre-condition
     blocker: true
     validação: |
@@ -160,7 +160,7 @@ pre-conditions:
 
 ```yaml
 post-conditions:
-  - [ ] Task completed; exit code 0; expected outputs created
+  - [ ] Task concluída; código de saída 0; saídas esperadas criadas
     tipo: post-condition
     blocker: true
     validação: |
@@ -178,7 +178,7 @@ post-conditions:
 
 ```yaml
 acceptance-criteria:
-  - [ ] Task completed as expected; side effects documented
+  - [ ] Task concluída conforme esperado; efeitos colaterais documentados
     tipo: acceptance-criterion
     blocker: true
     validação: |
