@@ -121,3 +121,5 @@ Enquanto não se decide, todos os comandos usam `--projectId`+`--env` (forma que
 - **CLIs:** ver `cli-status.md` (5 autenticados; railway/neonctl/dg pendentes).
 - **APIs:** ver `api-validation.md` (20 válidas de 24 testadas).
 - Nenhuma credencial em texto puro no config (Art. VII intacto).
+
+> **Nota — VSCode não entra nesta contagem.** O VSCode é **host/cliente** de servidores MCP (lado oposto: ele *consome* MCPs via `.vscode/mcp.json`, não é um servidor que adicionamos ao Claude Code). Documentado em [`VSCode/ferramentas.md`](VSCode/ferramentas.md); não soma aos "MCPs conectados" acima.
