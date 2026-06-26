@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriOS — Brandbook Oficial v1.0</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:   #2D7A6E;
+      --green-l: #3A9C8D;
+      --green-d: #1F5750;
+      --blue:    #0F4C7F;
+      --blue-l:  #1A6BAD;
+      --coral:   #F07167;
+      --amber:   #F4A259;
+      --water:   #76B9D6;
+      --success: #27AE60;
+      --error:   #E74C3C;
+      --n50:     #F5F5F5;
+      --n100:    #E8E8E8;
+      --n400:    #606B7A;
+      --n900:    #2B3E50;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: var(--n900);
+      line-height: 1.6;
+    }
+
+    /* ---- NAV ---- */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--n100);
+      z-index: 100;
+      padding: 0 2rem;
+      height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700; font-size: 1.125rem;
+      color: var(--green);
+    }
+    .nav-links { display: flex; gap: 1.5rem; }
+    .nav-links a {
+      font-size: 0.8125rem; color: var(--n400);
+      text-decoration: none; font-weight: 500;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--green); }
+
+    /* ---- LAYOUT ---- */
+    main { padding-top: 60px; }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.6875rem; font-weight: 600; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--green);
+      margin-bottom: .75rem;
+    }
+
+    h1 { font-family: 'Inter', sans-serif; font-weight: 800; }
+    h2 { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1.25rem; margin-bottom: .5rem; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--n100);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ---- HERO ---- */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--green) 0%, var(--blue) 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 2rem;
+      color: #fff;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-badge {
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 9999px;
+      padding: .3rem 1rem;
+      font-size: .75rem; font-weight: 500; letter-spacing: .05em;
+      margin-bottom: 2rem; position: relative;
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.1; margin-bottom: 1.25rem;
+      position: relative;
+    }
+    .hero p {
+      font-size: 1.125rem; opacity: .85;
+      max-width: 520px; margin: 0 auto 2.5rem;
+      position: relative;
+    }
+    .hero-meta {
+      display: flex; gap: 2rem; position: relative;
+      font-size: .8125rem; opacity: .7;
+    }
+    .hero-scroll {
+      position: absolute; bottom: 2rem;
+      animation: bounce 2s infinite;
+      opacity: .6; font-size: .75rem;
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(6px); }
+    }
+
+    /* ---- CARDS ---- */
+    .card-grid { display: grid; gap: 1.5rem; }
+    .card-grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .card-grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .card-grid-4 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--n100);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .card:hover {
+      box-shadow: 0 8px 32px rgba(15,76,127,.1);
+      transform: translateY(-2px);
+    }
+
+    /* ---- COLORS ---- */
+    .color-swatch {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--n100);
+    }
+    .swatch-block {
+      height: 120px;
+      display: flex; align-items: flex-end;
+      padding: .75rem;
+    }
+    .swatch-label {
+      background: rgba(0,0,0,.3);
+      color: #fff; font-size: .6875rem;
+      padding: .2rem .5rem; border-radius: 4px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .swatch-info {
+      padding: 1rem;
+    }
+    .swatch-info h4 { font-size: .875rem; font-weight: 600; margin-bottom: .25rem; }
+    .swatch-info p  { font-size: .75rem; color: var(--n400); }
+
+    .color-pair { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .color-dot {
+      width: 32px; height: 32px; border-radius: 9999px;
+      border: 2px solid var(--n100);
+      display: inline-block;
+    }
+
+    /* ---- TYPOGRAPHY ---- */
+    .type-sample {
+      padding: 1.5rem;
+      background: var(--n50);
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    .type-meta {
+      font-size: .6875rem; font-family: 'JetBrains Mono', monospace;
+      color: var(--n400); margin-bottom: .5rem;
+    }
+
+    /* ---- MANIFESTO ---- */
+    .manifesto-block {
+      background: linear-gradient(135deg, var(--green) 0%, var(--blue) 100%);
+      border-radius: 20px;
+      padding: 3.5rem;
+      color: #fff;
+    }
+    .manifesto-block p {
+      font-size: 1.125rem;
+      line-height: 1.8;
+      opacity: .9;
+      max-width: 680px;
+    }
+    .manifesto-block p + p { margin-top: 1rem; }
+    .manifesto-block strong { opacity: 1; font-weight: 600; }
+    .manifesto-sig {
+      margin-top: 2rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700; font-size: 1.25rem;
+      opacity: .6;
+    }
+
+    /* ---- VALUE PROP ---- */
+    .vp-headline {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .vp-sub {
+      color: var(--n400);
+      font-size: 1rem;
+      max-width: 620px;
+      margin-bottom: 3rem;
+    }
+    .pillar {
+      padding: 2rem;
+      background: var(--n50);
+      border-radius: 12px;
+      border-left: 4px solid var(--green);
+    }
+    .pillar-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .75rem; color: var(--green);
+      font-weight: 600; margin-bottom: .5rem;
+    }
+    .pillar h3 { font-size: 1rem; margin-bottom: .5rem; }
+    .pillar p  { font-size: .875rem; color: var(--n400); }
+
+    /* ---- VOICE ---- */
+    .tone-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--n100);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    .tone-cell {
+      background: #fff;
+      padding: 1.5rem;
+    }
+    .tone-cell.is { border-left: 3px solid var(--green); }
+    .tone-cell.not { border-left: 3px solid var(--n100); }
+    .tone-cell h4 { font-size: .6875rem; text-transform: uppercase; letter-spacing: .1em; color: var(--n400); margin-bottom: .75rem; }
+    .tone-cell p  { font-size: .9375rem; font-weight: 600; }
+    .tone-cell small { display: block; font-size: .8125rem; color: var(--n400); margin-top: .25rem; font-weight: 400; }
+
+    .copy-example {
+      background: var(--n50); border-radius: 10px;
+      padding: 1.25rem; margin-bottom: .75rem;
+    }
+    .copy-tag {
+      font-size: .6875rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: .08em; margin-bottom: .5rem;
+      display: inline-block; padding: .2rem .6rem; border-radius: 4px;
+    }
+    .copy-tag.wrong { background: #fef2f2; color: var(--error); }
+    .copy-tag.right { background: #f0fdf4; color: var(--success); }
+    .copy-example p { font-size: .875rem; color: var(--n400); font-style: italic; }
+    .copy-example p.correct { color: var(--n900); font-style: normal; }
+
+    /* ---- PERSONAS ---- */
+    .persona-card {
+      border: 1px solid var(--n100);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .persona-header {
+      padding: 1.5rem;
+      background: linear-gradient(135deg, var(--green) 0%, var(--green-d) 100%);
+      color: #fff;
+    }
+    .persona-avatar {
+      width: 48px; height: 48px;
+      background: rgba(255,255,255,.2);
+      border-radius: 9999px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem; margin-bottom: .75rem;
+    }
+    .persona-header h3 { font-size: 1rem; margin: 0; }
+    .persona-header p  { font-size: .8125rem; opacity: .8; margin: 0; }
+    .persona-body { padding: 1.5rem; }
+    .persona-body h4 { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--n400); margin-bottom: .5rem; margin-top: 1rem; }
+    .persona-body p  { font-size: .875rem; }
+    .persona-body ul { font-size: .875rem; padding-left: 1.25rem; color: var(--n400); }
+    .persona-quote {
+      background: var(--n50); border-radius: 8px;
+      padding: 1rem; margin-top: 1rem;
+      font-size: .875rem; font-style: italic; color: var(--green);
+      border-left: 3px solid var(--green);
+    }
+
+    /* ---- TOKENS TABLE ---- */
+    table { width: 100%; border-collapse: collapse; font-size: .875rem; }
+    th {
+      background: var(--n50); padding: .75rem 1rem;
+      text-align: left; font-size: .75rem;
+      font-weight: 600; color: var(--n400);
+      text-transform: uppercase; letter-spacing: .06em;
+      border-bottom: 1px solid var(--n100);
+    }
+    td {
+      padding: .875rem 1rem;
+      border-bottom: 1px solid var(--n50);
+      vertical-align: middle;
+    }
+    tr:last-child td { border-bottom: none; }
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .8125rem;
+      background: var(--n50); padding: .15rem .4rem;
+      border-radius: 4px; color: var(--green);
+    }
+
+    /* ---- LOGO BRIEF ---- */
+    .concept-box {
+      border: 2px dashed var(--n100);
+      border-radius: 16px;
+      padding: 3rem;
+      text-align: center;
+      position: relative;
+    }
+    .logo-concept {
+      width: 80px; height: 80px;
+      margin: 0 auto 1.5rem;
+      position: relative;
+    }
+    .logo-concept svg { width: 100%; height: 100%; }
+    .do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .do-list, .dont-list { border-radius: 12px; padding: 1.5rem; }
+    .do-list { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .dont-list { background: #fef2f2; border: 1px solid #fecaca; }
+    .do-list h4 { color: var(--success); }
+    .dont-list h4 { color: var(--error); }
+    .do-list li, .dont-list li { font-size: .875rem; margin-top: .5rem; padding-left: .5rem; }
+    ul { list-style: none; }
+    .do-list li::before { content: '✓ '; color: var(--success); font-weight: 600; }
+    .dont-list li::before { content: '✗ '; color: var(--error); font-weight: 600; }
+
+    /* ---- NAMING ---- */
+    .name-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .name-old { background: #fef2f2; border: 1px solid #fecaca; border-radius: 12px; padding: 1.5rem; }
+    .name-new { background: linear-gradient(135deg, var(--green) 0%, var(--blue) 100%); border-radius: 12px; padding: 1.5rem; color: #fff; }
+    .name-old h3 { color: var(--error); text-decoration: line-through; }
+    .name-new h3 { color: #fff; font-size: 2rem; }
+    .name-old p, .name-new p { font-size: .875rem; opacity: .8; margin-top: .5rem; }
+    .score-row { display: flex; align-items: center; gap: .75rem; margin-top: .75rem; font-size: .8125rem; }
+    .score-bar { flex: 1; height: 6px; background: rgba(255,255,255,.2); border-radius: 9999px; overflow: hidden; }
+    .score-fill { height: 100%; border-radius: 9999px; background: #fff; }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background: var(--n900);
+      color: rgba(255,255,255,.6);
+      text-align: center;
+      padding: 3rem 2rem;
+      font-size: .8125rem;
+    }
+    footer strong { color: #fff; }
+
+    /* ---- CHIPS ---- */
+    .chip {
+      display: inline-block;
+      padding: .25rem .75rem;
+      border-radius: 9999px;
+      font-size: .75rem; font-weight: 600;
+    }
+    .chip-green { background: rgba(45,122,110,.1); color: var(--green); }
+    .chip-blue  { background: rgba(15,76,127,.1);  color: var(--blue); }
+    .chip-gray  { background: var(--n50); color: var(--n400); }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hero h1 { font-size: 2.25rem; }
+      .manifesto-block { padding: 2rem; }
+      .tone-grid { grid-template-columns: 1fr; }
+      .name-comparison { grid-template-columns: 1fr; }
+      .do-dont { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">NutriOS</div>
+  <div class="nav-links">
+    <a href="#naming">Nome</a>
+    <a href="#manifesto">Manifesto</a>
+    <a href="#cores">Cores</a>
+    <a href="#tipografia">Tipografia</a>
+    <a href="#voz">Voz</a>
+    <a href="#personas">Personas</a>
+    <a href="#logo">Logo</a>
+    <a href="#tokens">Tokens</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">Brandbook Oficial v1.0 — Março 2026</div>
+  <h1>NutriOS</h1>
+  <p>Sistema Operacional da Nutrição Clínica</p>
+  <div class="hero-meta">
+    <span>Vinicius Abdon · Ronan Sersil</span>
+    <span>Confidencial</span>
+  </div>
+  <div class="hero-scroll">↓ role para explorar</div>
+</div>
+
+<!-- NAMING -->
+<section id="naming">
+  <div class="section-label">01 — Identidade</div>
+  <h2>A decisão de nome</h2>
+  <p style="color:var(--n400);max-width:580px;margin-bottom:2.5rem">
+    Após análise de mercado, o nome MyFit foi substituído por NutriOS.
+    A mudança reposiciona a categoria inteira.
+  </p>
+
+  <div class="name-comparison">
+    <div class="name-old">
+      <h3>MyFit</h3>
+      <p>Nome descontinuado</p>
+      <div class="score-row"><span style="min-width:100px">Diferenciação</span><div class="score-bar" style="background:var(--n100)"><div class="score-fill" style="width:30%;background:var(--error)"></div></div><span>3/10</span></div>
+      <div class="score-row"><span style="min-width:100px">Profissional</span><div class="score-bar" style="background:var(--n100)"><div class="score-fill" style="width:30%;background:var(--error)"></div></div><span>3/10</span></div>
+      <div class="score-row"><span style="min-width:100px">Memorável</span><div class="score-bar" style="background:var(--n100)"><div class="score-fill" style="width:70%;background:var(--amber)"></div></div><span>7/10</span></div>
+    </div>
+    <div class="name-new">
+      <h3>NutriOS</h3>
+      <p>Nome oficial — O sistema operacional da nutrição clínica</p>
+      <div class="score-row"><span style="min-width:100px">Diferenciação</span><div class="score-bar"><div class="score-fill" style="width:95%"></div></div><span>9/10</span></div>
+      <div class="score-row"><span style="min-width:100px">Profissional</span><div class="score-bar"><div class="score-fill" style="width:90%"></div></div><span>9/10</span></div>
+      <div class="score-row"><span style="min-width:100px">Memorável</span><div class="score-bar"><div class="score-fill" style="width:90%"></div></div><span>9/10</span></div>
+    </div>
+  </div>
+
+  <div style="margin-top:2rem;padding:1.5rem;background:var(--n50);border-radius:12px;border-left:4px solid var(--green)">
+    <h3 style="margin-bottom:.5rem">Tagline oficial</h3>
+    <p style="font-size:1.25rem;font-family:'Inter',sans-serif;font-weight:600;color:var(--green)">
+      "Sua prática clínica merece um sistema operacional."
+    </p>
+  </div>
+</section>
+<hr class="divider" />
+
+<!-- MANIFESTO -->
+<section id="manifesto">
+  <div class="section-label">02 — Manifesto</div>
+  <h2>O que acreditamos</h2>
+  <div class="manifesto-block">
+    <p><strong>Nutricionista não é influenciador. É profissional de saúde.</strong></p>
+    <p>Sua formação custou anos. Seus pacientes confiam decisões de vida a você. Suas condutas mudam composição corporal, regulam metabolismo, previnem doenças.</p>
+    <p>Então por que seu instrumento de trabalho ainda é uma planilha?</p>
+    <p>Nós nascemos dentro de uma planilha. Literalmente. Antes de sermos produto, éramos células do Excel amarradas com fórmulas, fazendo cálculo de dobras cutâneas e montando dietas na força bruta. Funcionava. Até que parou de dar conta.</p>
+    <p>O NutriOS existe porque acreditamos que a nutrição baseada em evidência merece tecnologia à altura. Não um app bonito que simplifica demais. Não um sistema hospitalar que complica demais. Um sistema operacional feito por quem entende a rotina real do nutricionista.</p>
+    <p><strong>Ciência rigorosa. Tecnologia que desaparece. Resultado que aparece.</strong></p>
+    <div class="manifesto-sig">— NutriOS</div>
+  </div>
+</section>
+<hr class="divider" />
+
+<!-- PROPOSTA DE VALOR -->
+<section id="vp">
+  <div class="section-label">03 — Proposta de Valor</div>
+  <h2 class="vp-headline">Toda a inteligência que sua prática nutricional precisa<br/>— em um único sistema.</h2>
+  <p class="vp-sub">Avaliações físicas completas, dietas dinâmicas com cálculo automático de macros e acompanhamento comportamental integrado.</p>
+
+  <div class="card-grid card-grid-3">
+    <div class="pillar">
+      <div class="pillar-num">PILAR 01</div>
+      <h3>Avaliação Científica</h3>
+      <p>Dobras cutâneas, bioimpedância e Body 3D em um único fluxo. Gráficos de evolução que provam o valor do seu trabalho.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">PILAR 02</div>
+      <h3>Dietas que Funcionam</h3>
+      <p>Templates inteligentes com cálculo automático de macros. Exportação em PDF profissional. Nada de tabela copiada e colada.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">PILAR 03</div>
+      <h3>Além da Comida</h3>
+      <p>Checklist comportamental, ciclo circadiano e gestão de dopamina. O nutricionista que acompanha comportamento tem retenção superior.</p>
+    </div>
+  </div>
+</section>
+<hr class="divider" />
+
+<!-- CORES -->
+<section id="cores">
+  <div class="section-label">04 — Identidade Visual</div>
+  <h2>Paleta de Cores</h2>
+  <p style="color:var(--n400);max-width:580px;margin-bottom:2.5rem">
+    Toda a UI do NutriOS é construída sobre estes tokens. Nenhuma cor hardcoded — tudo via variáveis CSS.
+  </p>
+
+  <h3 style="margin-bottom:1rem">Primárias</h3>
+  <div class="card-grid card-grid-2" style="margin-bottom:2.5rem">
+    <div class="color-swatch">
+      <div class="swatch-block" style="background:var(--green)">
+        <span class="swatch-label">#2D7A6E</span>
+      </div>
+      <div class="swatch-info">
+        <h4>Verde Clínico</h4>
+        <p>Cor primária — CTAs, headers, acento principal</p>
+        <p style="margin-top:.5rem;font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--n400)">HSL 172° 46% 33%</p>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="swatch-block" style="background:var(--blue)">
+        <span class="swatch-label">#0F4C7F</span>
+      </div>
+      <div class="swatch-info">
+        <h4>Azul Precisão</h4>
+        <p>Dashboards, dados clínicos, gráficos de avaliação</p>
+        <p style="margin-top:.5rem;font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--n400)">HSL 208° 79% 28%</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-bottom:1rem">Secundárias</h3>
+  <div class="card-grid card-grid-3" style="margin-bottom:2.5rem">
+    <div class="color-swatch">
+      <div class="swatch-block" style="background:var(--coral)"><span class="swatch-label">#F07167</span></div>
+      <div class="swatch-info"><h4>Coral Vitalidade</h4><p>Alertas positivos, metas atingidas</p></div>
+    </div>
+    <div class="color-swatch">
+      <div class="swatch-block" style="background:var(--amber)"><span class="swatch-label">#F4A259</span></div>
+      <div class="swatch-info"><h4>Âmbar Cautela</h4><p>Avisos, dados incompletos</p></div>
+    </div>
+    <div class="color-swatch">
+      <div class="swatch-block" style="background:var(--water)"><span class="swatch-label">#76B9D6</span></div>
+      <div class="swatch-info"><h4>Água Comunicação</h4><p>Informações, tooltips, dicas</p></div>
+    </div>
+  </div>
+
+  <h3 style="margin-bottom:1rem">Sistema de Feedback</h3>
+  <div class="card-grid card-grid-4">
+    <div class="card" style="text-align:center">
+      <div style="width:48px;height:48px;background:var(--success);border-radius:9999px;margin:0 auto .75rem"></div>
+      <h4 style="font-size:.875rem">Sucesso</h4>
+      <code>#27AE60</code>
+    </div>
+    <div class="card" style="text-align:center">
+      <div style="width:48px;height:48px;background:var(--amber);border-radius:9999px;margin:0 auto .75rem"></div>
+      <h4 style="font-size:.875rem">Aviso</h4>
+      <code>#F4A259</code>
+    </div>
+    <div class="card" style="text-align:center">
+      <div style="width:48px;height:48px;background:var(--error);border-radius:9999px;margin:0 auto .75rem"></div>
+      <h4 style="font-size:.875rem">Erro</h4>
+      <code>#E74C3C</code>
+    </div>
+    <div class="card" style="text-align:center">
+      <div style="width:48px;height:48px;background:var(--water);border-radius:9999px;margin:0 auto .75rem"></div>
+      <h4 style="font-size:.875rem">Informação</h4>
+      <code>#76B9D6</code>
+    </div>
+  </div>
+</section>
+<hr class="divider" />
+
+<!-- TIPOGRAFIA -->
+<section id="tipografia">
+  <div class="section-label">05 — Tipografia</div>
+  <h2>Sistema de Fontes</h2>
+
+  <div class="card-grid card-grid-3" style="margin-bottom:2.5rem">
+    <div class="card">
+      <div class="chip chip-green" style="margin-bottom:1rem">Headlines</div>
+      <p style="font-family:'Inter',sans-serif;font-size:2rem;font-weight:700;line-height:1.1">Inter Bold</p>
+      <p style="color:var(--n400);font-size:.8125rem;margin-top:.5rem">Títulos, CTAs, cabeçalhos</p>
+      <code style="margin-top:.75rem;display:block">font-headline</code>
+    </div>
+    <div class="card">
+      <div class="chip chip-blue" style="margin-bottom:1rem">Body Text</div>
+      <p style="font-family:'Poppins',sans-serif;font-size:1.125rem;line-height:1.6">Poppins Regular</p>
+      <p style="color:var(--n400);font-size:.8125rem;margin-top:.5rem">Descrições, labels, conteúdo</p>
+      <code style="margin-top:.75rem;display:block">font-sans</code>
+    </div>
+    <div class="card">
+      <div class="chip chip-gray" style="margin-bottom:1rem">Dados Clínicos</div>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:1.125rem">JetBrains Mono</p>
+      <p style="color:var(--n400);font-size:.8125rem;margin-top:.5rem">Valores numéricos, tabelas, macros</p>
+      <code style="margin-top:.75rem;display:block">font-mono</code>
+    </div>
+  </div>
+
+  <h3 style="margin-bottom:1rem">Escala Tipográfica</h3>
+  <div class="type-sample">
+    <div class="type-meta">H1 · Inter Bold · 48px / 56px</div>
+    <div style="font-family:'Inter',sans-serif;font-size:3rem;font-weight:700;line-height:1.17">Sistema Operacional</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-meta">H2 · Inter Bold · 36px / 44px</div>
+    <div style="font-family:'Inter',sans-serif;font-size:2.25rem;font-weight:700;line-height:1.22">Nutrição baseada em evidência</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-meta">H3 · Inter SemiBold · 28px / 36px</div>
+    <div style="font-family:'Inter',sans-serif;font-size:1.75rem;font-weight:600">Avaliação Física Completa</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-meta">Body L · Poppins Regular · 16px / 24px</div>
+    <div style="font-family:'Poppins',sans-serif;font-size:1rem">Avaliações físicas completas, dietas dinâmicas com cálculo automático de macros e acompanhamento comportamental integrado.</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-meta">Data / Mono · JetBrains Mono · 14px</div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:.875rem">IMC: 23.4 · Gordura: 18.2% · Massa Magra: 68.4kg · TMB: 1.847 kcal</div>
+  </div>
+</section>
+<hr class="divider" />
+
+<!-- VOZ DA MARCA -->
+<section id="voz">
+  <div class="section-label">06 — Voz da Marca</div>
+  <h2>Tom de Voz</h2>
+
+  <div class="tone-grid">
+    <div class="tone-cell is">
+      <h4>A marca É</h4>
+      <p>Científica</p>
+      <small>Fundamenta tudo em evidência, dados, fisiologia</small>
+    </div>
+    <div class="tone-cell not">
+      <h4>A marca NÃO É</h4>
+      <p>Cientificista</p>
+      <small>Não usa jargão para impressionar ou excluir</small>
+    </div>
+    <div class="tone-cell is">
+      <h4>A marca É</h4>
+      <p>Direta</p>
+      <small>Fala o que precisa ser dito, sem rodeios</small>
+    </div>
+    <div class="tone-cell not">
+      <h4>A marca NÃO É</h4>
+      <p>Agressiva</p>
+      <small>Não pressiona, não manipula, não grita</small>
+    </div>
+    <div class="tone-cell is">
+      <h4>A marca É</h4>
+      <p>Parceira</p>
+      <small>Está ao lado do nutricionista como ferramenta de trabalho</small>
+    </div>
+    <div class="tone-cell not">
+      <h4>A marca NÃO É</h4>
+      <p>Paternalista</p>
+      <small>Não ensina o nutricionista a ser nutricionista</small>
+    </div>
+  </div>
+
+  <h3 style="margin-bottom:1rem">Copy: Certo vs. Errado</h3>
+
+  <div style="margin-bottom:1.5rem">
+    <p style="font-size:.875rem;color:var(--n400);margin-bottom:.75rem;font-weight:600">Notificação de progresso do paciente</p>
+    <div class="copy-example">
+      <span class="copy-tag wrong">✗ Errado</span>
+      <p>"Seu paciente João perdeu 3kg! Arrasou! Manda um parabéns pra ele!"</p>
+    </div>
+    <div class="copy-example">
+      <span class="copy-tag right">✓ Certo</span>
+      <p class="correct">"João registrou mudança de composição corporal: -1,8kg de massa gorda, +0,4kg de massa magra nas últimas 4 semanas."</p>
+    </div>
+  </div>
+
+  <div style="margin-bottom:1.5rem">
+    <p style="font-size:.875rem;color:var(--n400);margin-bottom:.75rem;font-weight:600">Email de renovação</p>
+    <div class="copy-example">
+      <span class="copy-tag wrong">✗ Errado</span>
+      <p>"Sua assinatura está acabando! Renove agora! 20% OFF só hoje!"</p>
+    </div>
+    <div class="copy-example">
+      <span class="copy-tag right">✓ Certo</span>
+      <p class="correct">"Nos últimos 30 dias, você realizou 23 avaliações físicas e seus pacientes registraram média de 12% de melhora na composição corporal."</p>
+    </div>
+  </div>
+</section>
+<hr class="divider" />
+
+<!-- PERSONAS -->
+<section id="personas">
+  <div class="section-label">07 — Público-Alvo</div>
+  <h2>Personas</h2>
+
+  <div class="card-grid card-grid-3">
+    <div class="persona-card">
+      <div class="persona-header">
+        <div class="persona-avatar">👩‍⚕️</div>
+        <h3>Camila, 27</h3>
+        <p>Nutricionista em crescimento</p>
+      </div>
+      <div class="persona-body">
+        <h4>Contexto</h4>
+        <p>2 anos de prática. Consultório próprio + online. R$4-8k/mês em crescimento.</p>
+        <h4>Dores</h4>
+        <ul><li>Planilhas que quebram</li><li>Demora para montar dietas</li><li>Parece menos "moderna"</li></ul>
+        <div class="persona-quote">"Pare de perder tempo em planilhas. Comece a impressionar seus pacientes."</div>
+      </div>
+    </div>
+    <div class="persona-card">
+      <div class="persona-header" style="background:linear-gradient(135deg,var(--blue) 0%,var(--blue-l) 100%)">
+        <div class="persona-avatar">👨‍⚕️</div>
+        <h3>André, 40</h3>
+        <p>Especialista experiente</p>
+      </div>
+      <div class="persona-body">
+        <h4>Contexto</h4>
+        <p>15 anos, especialização em esporte. Porto Alegre. R$15-25k/mês.</p>
+        <h4>Dores</h4>
+        <ul><li>Sistemas sem profundidade clínica</li><li>Dependência de assistente</li><li>Migração de dados complexa</li></ul>
+        <div class="persona-quote" style="border-color:var(--blue);color:var(--blue)">"Um sistema à altura da sua complexidade clínica."</div>
+      </div>
+    </div>
+    <div class="persona-card">
+      <div class="persona-header" style="background:linear-gradient(135deg,var(--n900) 0%,#3d5166 100%)">
+        <div class="persona-avatar">🏋️</div>
+        <h3>Lucas, 32</h3>
+        <p>Paciente metódico</p>
+      </div>
+      <div class="persona-body">
+        <h4>Contexto</h4>
+        <p>Executivo. Academia 4x/semana. Quer hipertrofia com saúde. Acompanha tudo.</p>
+        <h4>O que valoriza</h4>
+        <ul><li>Ver dados evoluindo em gráficos</li><li>Dieta acessível no celular</li><li>Notificações de metas</li></ul>
+        <div class="persona-quote" style="border-color:var(--n400);color:var(--n400)">"Acompanhe cada detalhe da sua evolução."</div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="divider" />
+
+<!-- LOGO BRIEF -->
+<section id="logo">
+  <div class="section-label">08 — Identidade Visual</div>
+  <h2>Brief de Logo</h2>
+  <p style="color:var(--n400);max-width:580px;margin-bottom:2.5rem">
+    Para Guilherme Santos (UI/UX Designer). O logo está em fase de criação — este brief define todos os parâmetros.
+  </p>
+
+  <div class="concept-box" style="margin-bottom:2rem">
+    <div class="logo-concept">
+      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="40" cy="40" r="36" stroke="#2D7A6E" stroke-width="3" fill="none"/>
+        <path d="M40 4 A36 36 0 0 1 76 40" stroke="#2D7A6E" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <line x1="40" y1="4" x2="40" y2="76" stroke="#2D7A6E" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.3"/>
+        <line x1="4" y1="40" x2="76" y2="40" stroke="#2D7A6E" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.3"/>
+        <circle cx="40" cy="40" r="4" fill="#2D7A6E"/>
+      </svg>
+    </div>
+    <h3 style="margin-bottom:.5rem">Conceito: Círculo de Progresso</h3>
+    <p style="color:var(--n400);font-size:.875rem;max-width:420px;margin:0 auto">
+      4 segmentos representando os pilares da avaliação clínica: física, alimentar, comportamental, metabólica.
+      Um segmento preenchido = progresso em curso.
+    </p>
+    <p style="margin-top:1rem;font-size:.75rem;color:var(--n400);font-style:italic">Conceito referência — exploração final por Guilherme Santos</p>
+  </div>
+
+  <div class="do-dont">
+    <div class="do-list">
+      <h4 style="margin-bottom:.75rem">✓ Explorar</h4>
+      <ul>
+        <li>Círculos / anéis (ciclo de acompanhamento)</li>
+        <li>Linhas ascendentes (crescimento, dados)</li>
+        <li>Espaço negativo (modernidade)</li>
+        <li>Formas geométricas simples</li>
+        <li>Grid 64px derivável para 16px</li>
+      </ul>
+    </div>
+    <div class="dont-list">
+      <h4 style="margin-bottom:.75rem">✗ Evitar</h4>
+      <ul>
+        <li>Maçã ou fruta (confunde com Apple)</li>
+        <li>Cruz médica (saturada)</li>
+        <li>Músculos ou halteres</li>
+        <li>Gradientes complexos</li>
+        <li>Efeitos 3D ou sombras</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<hr class="divider" />
+
+<!-- TOKENS -->
+<section id="tokens">
+  <div class="section-label">09 — Tokens de Design</div>
+  <h2>Design Tokens Implementados</h2>
+  <p style="color:var(--n400);max-width:580px;margin-bottom:2.5rem">
+    Todos os tokens estão implementados no app via CSS custom properties e Tailwind config.
+    <strong>76 ocorrências de cores hardcoded</strong> foram substituídas por estes tokens semânticos.
+  </p>
+
+  <table>
+    <thead>
+      <tr><th>Token Tailwind</th><th>Valor</th><th>Cor</th><th>Uso</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>bg-primary</code> / <code>text-primary</code></td>
+        <td><code>HSL 172 46% 33%</code></td>
+        <td><span style="display:inline-block;width:20px;height:20px;border-radius:4px;background:#2D7A6E;vertical-align:middle"></span></td>
+        <td>CTAs, headers, acento principal</td>
+      </tr>
+      <tr>
+        <td><code>bg-accent</code> / <code>text-accent</code></td>
+        <td><code>HSL 208 79% 28%</code></td>
+        <td><span style="display:inline-block;width:20px;height:20px;border-radius:4px;background:#0F4C7F;vertical-align:middle"></span></td>
+        <td>Dashboards, dados clínicos</td>
+      </tr>
+      <tr>
+        <td><code>text-success</code></td>
+        <td><code>HSL 145 63% 42%</code></td>
+        <td><span style="display:inline-block;width:20px;height:20px;border-radius:4px;background:#27AE60;vertical-align:middle"></span></td>
+        <td>Metas atingidas, validações</td>
+      </tr>
+      <tr>
+        <td><code>text-warning</code></td>
+        <td><code>HSL 32 88% 65%</code></td>
+        <td><span style="display:inline-block;width:20px;height:20px;border-radius:4px;background:#F4A259;vertical-align:middle"></span></td>
+        <td>Avisos, atenção necessária</td>
+      </tr>
+      <tr>
+        <td><code>text-destructive</code></td>
+        <td><code>HSL 6 78% 57%</code></td>
+        <td><span style="display:inline-block;width:20px;height:20px;border-radius:4px;background:#E74C3C;vertical-align:middle"></span></td>
+        <td>Erros, dados inválidos</td>
+      </tr>
+      <tr>
+        <td><code>font-headline</code></td>
+        <td><code>Inter 700/600</code></td>
+        <td>—</td>
+        <td>Títulos, CTAs</td>
+      </tr>
+      <tr>
+        <td><code>font-sans</code></td>
+        <td><code>Poppins 400/500</code></td>
+        <td>—</td>
+        <td>Body text, labels</td>
+      </tr>
+      <tr>
+        <td><code>font-mono</code></td>
+        <td><code>JetBrains Mono 400</code></td>
+        <td>—</td>
+        <td>Dados clínicos, tabelas</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="margin-top:2rem;padding:1.5rem;background:var(--n50);border-radius:12px;display:flex;gap:1rem;flex-wrap:wrap;align-items:center">
+    <div>
+      <p style="font-size:.8125rem;font-weight:600">Arquivos disponíveis</p>
+      <p style="font-size:.75rem;color:var(--n400);margin-top:.25rem">Todos em docs/brand/ no repositório</p>
+    </div>
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+      <span class="chip chip-green">design-tokens.css</span>
+      <span class="chip chip-green">design-tokens.json (DTCG)</span>
+      <span class="chip chip-blue">tailwind.config.tokens.js</span>
+      <span class="chip chip-gray">guilherme-logo-brief.md</span>
+      <span class="chip chip-gray">landing-page.md</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>NutriOS — Brandbook Oficial v1.0</strong></p>
+  <p style="margin-top:.5rem">Março 2026 · Vinicius Abdon & Ronan Sersil · Confidencial</p>
+  <p style="margin-top:.5rem;opacity:.5;font-size:.75rem">
+    Produzido por Design Chief · Copy Chief · Nano Banana Generator
+  </p>
+</footer>
+
+</body>
+</html>

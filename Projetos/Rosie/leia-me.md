@@ -7,11 +7,16 @@ palavras-chave: [projeto, rosie, e-commerce, moda, branding, brandbook, manual-d
 status: oficial
 atualizado-em: 2026-06-23
 relacionados: [status, brandbook/00-indice, pesquisa/00-indice]
+dossie_cliente: "sobre-a-empresa/clientes/ativos/rosie.md"
 ---
 
 # Rosie — I Adore You
 
 > E-commerce de **moda feminina premium** (básicos premium / guarda-roupa cápsula). Razão social **ROSIE CONFECÇÃO E COMÉRCIO DE ROUPAS LTDA** (CNPJ 57.414.364/0001-35). Plataforma **Nuvemshop**. Site: https://rosieiadoreyou.com.br/
+
+## Cliente
+
+Dossiê (negócio, contrato, ICP, metas): [`clientes/ativos/rosie.md`](../../sobre-a-empresa/clientes/ativos/rosie.md). Este projeto é a **execução**; o dossiê é a **inteligência de negócio**.
 
 ## O que é
 

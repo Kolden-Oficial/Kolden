@@ -12,6 +12,8 @@ relacionados: [ofertas-e-produtos, processos]
 # Métricas e OKRs
 
 > Template — a ser definido pelo squad.
+>
+> **Material de referência (Drive, 2026-06-25):** o método de OKR está catalogado em `inteligencia-e-referencias.md` §2 — "Guia Definitivo OKR" (`1rPPil0E_qC73dXJwb1N3EIHDc3dWSknM`) e "RESUMO OKR" (`1eG9iaCIGY-T_xVJWH2k4yNP8ahelv_B1`). Destilar esses guias para preencher os OKRs abaixo.
 
 ## KPIs principais
 | Métrica | Definição | Meta | Frequência |

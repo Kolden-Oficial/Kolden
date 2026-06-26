@@ -125,6 +125,7 @@ Não são ferramentas externas — são variáveis de configuração da própria
 ## Relatórios de status
 
 - **[ferramentas-dos-squads.md](ferramentas-dos-squads.md)** — cross-check das ferramentas citadas pelos squads importados (Peitho, Metis, Harmonia, Prometeu, Egide...) vs catálogo: o que já temos e o que adicionar (TikTok/LinkedIn Ads, GA4, GTM, Mixpanel, Amplitude, Hotjar, Figma, CodeRabbit...).
+- **[matriz-de-marketing-absorvida.md](matriz-de-marketing-absorvida.md)** — matriz de ~90 ferramentas de marketing por categoria (API/MCP/CLI/SDK) + heurística de escolha + mapa MCP-enabled, absorvida de `coreyhaines31/marketingskills` (G6/G7/G17/G20). **Candidatas a provisionar** (ainda sem credencial Kolden); guias profundos dos 93 integrations preservados na quarentena.
 - **[teste-funcional.md](teste-funcional.md)** — teste real "está funcionando?" por camada (API/CLI/MCP): 26 ok, 4 pendências.
 - **[mcp-status.md](mcp-status.md)** — servidores MCP: 15 conectados (inclui google-drive), 8 aguardando OAuth, follow-ups.
 - **[cli-status.md](cli-status.md)** — CLIs de fornecedor instalados e autenticados (gh, vercel, wrangler, supabase, sentry-cli…).

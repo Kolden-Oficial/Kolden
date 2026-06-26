@@ -58,6 +58,7 @@ curl -X POST \
 
 ## Notas Kolden
 
+- **Referência ampla do ecossistema:** este manual cobre só a **Conversions API (CAPI)**. Para o **ecossistema inteiro** de APIs da Meta (Marketing API, Graph, Instagram, WhatsApp Business, Messenger, Webhooks, SDKs, tokens/escopos, App Review), ver o mapeamento sintetizado em `sobre-a-empresa/operacao/inteligencia-e-referencias.md` §1 (fonte: Doc `1nzYjxJF1whvt_SiP-8c8wXZai_cizLFkv-zx6OFsHZM`).
 - A Meta CAPI é usada no Kolden para **rastreamento server-side de conversões** dos funis de afiliados (Anúncio → LP → Telegram → Shopee), enviando eventos de servidor para complementar/substituir o Pixel do navegador e melhorar a atribuição da operação Telegram + Shopee.
 - Para automação de **campanhas/insights de Ads** (criar campanhas, ler métricas), considerar o MCP de comunidade `meta-ads-mcp`; para **envio de eventos de conversão**, usar o SDK `facebook-business` ou chamada direta ao endpoint `/events`.
 - Sempre resolver `META_CAPI_TOKEN` e `META_PIXEL_ID` via Infisical em runtime; nunca commitar valores.

@@ -78,7 +78,7 @@ Loop iterativo de escrever-criticar-revisar (máximo de 3 iterações).
 - **13 tarefas** — write-headline, write-sales-letter, write-vsl-script, write-email-sequence, write-ad-copy, write-landing-page, write-bullets, create-funnel-copy, create-offer, analyze-copy, critique-copy, diagnose, review
 - **2 workflows** — full-copy-project, copy-review-cycle
 - **1 checklist** — output-quality (controle de qualidade dos entregáveis)
-- **2 arquivos de dados** — routing-catalog, copy-frameworks
+- **5 arquivos de dados** — routing-catalog, copy-frameworks, formulas-de-headline, estrutura-de-landing-page, transicoes-naturais (os 3 últimos absorvidos de `coreyhaines31/marketingskills@8bfcdff`, G21)
 
 ## Módulo avançado
 

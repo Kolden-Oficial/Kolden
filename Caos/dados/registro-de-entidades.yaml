@@ -28,8 +28,8 @@
 #   0.60 <= relevancia < 0.90 e adaptabilidade.score >= 0.6 -> ADAPT (mude <= 30%)
 #   sem correspondência  -> CREATE (registre na Fase 8 com justificativa)
 
-versao_do_registro: "1.5.0"
-atualizado_em: "2026-06-22"
+versao_do_registro: "1.7.0"   # +ariadne (squad SEO+CRO, CREATE via Ritual a partir da absorção marketingskills)
+atualizado_em: "2026-06-26"
 
 # NOTA: Os squads abaixo foram IMPORTADOS (modo importação, sancionado pelo Ronan) dos
 # arsenais validados xquads-squads e aiox-core, traduzidos para PT-BR e renomeados com a
@@ -38,6 +38,23 @@ atualizado_em: "2026-06-22"
 # Procedência detalhada no _origem.md de cada pasta e em C:\Kolden\.claude\_staging\MANIFESTO-IMPORTACAO.md.
 
 entidades:
+  ariadne:
+    path: "Ariadne/"
+    tipo: squad
+    dominio: outro
+    proposito: "Squad de execução de SEO (técnico, on-page, programático, schema, arquitetura, AI-SEO) e CRO de página (framework de 8 dimensões, biblioteca de experimentos, formulário). Tier 0 + 7 especialistas."
+    keywords: [seo, seo-tecnico, auditoria-seo, on-page, core-web-vitals, indexacao, schema, json-ld, programmatic-seo, ai-seo, aeo, geo, arquitetura-de-site, siloing, cro, conversao, landing-page, formulario, experimento, ab-test, hipotese]
+    usadoPor: []
+    dependencias: [argos, caliope, metis, aglaia]
+    adaptabilidade:
+      score: 0.6
+      restricoes: ["vetos invioláveis: sem black-hat, recomendação sem dado, CRO sem hipótese, copy é handoff ao Caliope"]
+      pontosDeExtensao: ["provisionar tools de SEO (Semrush/Ahrefs/GSC avançado)", "evals por habilidade", "instalação em produção"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-25T00:00:00Z"
+    status: ativo
+    origem: "coreyhaines31/marketingskills@8bfcdff (absorção /absorver — domínio SEO decomposto do G1 + G22 CRO; Ritual completo, PRD aprovado)"
+
   peitho:
     path: "Peitho/"
     tipo: squad
@@ -493,6 +510,23 @@ entidades:
     versao: "1.0.0"
     criadoEm: "2026-06-22T00:00:00Z"
     status: criado-pelo-ritual
+
+  ariadne:
+    path: "Ariadne/"
+    tipo: squad
+    dominio: outro
+    proposito: "Squad de EXECUÇÃO de SEO (técnico, on-page, programático, schema, arquitetura, AI-SEO) e CRO de página (framework de 7 dimensões + experimentos + formulário). O fio que guia crawler e usuário do labirinto da página à conversão. 8 agentes: orquestradora + 5 SEO + 2 CRO."
+    keywords: [seo, seo-tecnico, auditoria-seo, core-web-vitals, indexacao, arquitetura-de-site, siloing, links-internos, schema, json-ld, dados-estruturados, programmatic-seo, conteudo-seo, on-page, ai-seo, aeo, geo, llmo, ai-overviews, cro, conversao, landing-page, formulario, experimento, hipotese, friccao]
+    usadoPor: []
+    dependencias: [argos, caliope, metis, aglaia]
+    adaptabilidade:
+      score: 0.75
+      restricoes: ["sem black-hat (inviolável)", "recomendação só com dado ou rotulada hipótese", "CRO só por hipótese testável", "copy final é handoff ao Caliope", "consome keywords/SERP do Argos (não coleta)"]
+      pontosDeExtensao: ["provisionar Semrush/Ahrefs/DataForSEO/RankParse/Hotjar/Optimizely no Infisical", "adicionar especialista de SEO local/internacional", "integrar com Metis para leitura de experimentos"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-25T00:00:00Z"
+    status: criado-pelo-ritual
+    origem: "CREATE (Ritual de 9 fases do Caos) a partir da absorção coreyhaines31/marketingskills@8bfcdff. Fecha a lacuna de SEO de execução + CRO de página. Padrões das skills ai-seo/seo-audit/programmatic-seo/schema/site-architecture/cro reescritos em pt-BR (sem cópia literal). Capacidades: domínio SEO (G1) + G22 (ver repositorios-absorvidos.yaml e relatorio-de-perda.md)."
 
 _exemplos_antigos:
   # Vazio na fundação. Cada criação preenche este bloco via Fase 8.

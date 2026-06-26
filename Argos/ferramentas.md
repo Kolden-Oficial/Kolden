@@ -45,6 +45,9 @@ credencial vive em texto puro em nenhum arquivo do squad; só a referência ao c
 | **yt-dlp** (download) | baixa o áudio/vídeo de TikTok/IG/YouTube antes da transcrição | camada `transcrever` do `motor/` (CLI, OSS Unlicense) | — |
 | **Windsor.ai** (conector de dados) | ETL de dados de marketing (Ads/GA4/CRM de 325+ fontes) — consolida métricas para sizing/concorrência. NÃO é descoberta de virais | API REST (`connectors.windsor.ai`, query `api_key`) **ou** MCP `mcp.windsor.ai` | `/kolden/dev/WINDSOR_API_KEY` (env **dev**) |
 | **twscrape / instaloader / TikTokApi / Douyin** | coleta social autenticada (ToS-risco) — só sob aprovação humana | **módulo cinza** — `modulo-cinza/` via `compliance-sentinela` | `/kolden/argos/cinza/*` (contas/proxies descartáveis) |
+| **GitHub API (pública)** | prospecção por stargazers/forks/watchers de repos âncora (`*prospeccao-por-stargazers`, G18) — zona verde | API pública (HTTP) via `web_extract`/`terminal` | `/kolden/argos` (token GitHub p/ rate limit) |
+| **Hunter** *(a provisionar)* | achar e-mail profissional por domínio/empresa (complementa Apollo na prospecção) | API (HTTP)/CLI | `/kolden/argos/HUNTER_API_KEY` *(a cadastrar)* |
+| **Truelist** *(a provisionar)* | validação de deliverability pré-outreach — `email_state`/`email_sub_state` (G19) | API (HTTP) / MCP | `/kolden/argos/TRUELIST_API_KEY` *(a cadastrar)* |
 
 *Sem invenção de capacidade (Art. IV): nada além desta tabela. Sem credencial em texto puro (Art. VII).*
 

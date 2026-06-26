@@ -2,15 +2,17 @@
 
 > **Você é um agente de IA operando dentro da Kolden.** Responda em **português (BR)**.
 > Este arquivo é o **índice/entrypoint** do workspace. Ele aponta os caminhos — **abra os arquivos citados** com suas ferramentas (`read_file`, `search_files`, `terminal`) **antes de responder**. Não invente; consulte a fonte. Carregue só o que precisar (progressive disclosure).
+>
+> **Política de busca (soberania de dados):** antes de qualquer pesquisa web — direta ou via subagente — declare a ferramenta e o nível (padrão = máximo) e aguarde confirmação. Firecrawl é a ferramenta padrão; nativa só como último recurso. Subagentes de pesquisa rodam no poder máximo. Regra e trava `gate-busca.cjs` em `~/.claude/CLAUDE.md`.
 
 ## O que é a Kolden
 Operação do **Ronan**. A descrição oficial (modelo de negócio, mercado, marca) está em construção em `sobre-a-empresa/` — **um squad de pesquisa vai definir e preencher**. Enquanto estiver `status: rascunho`, **não afirme** detalhes de negócio: diga que está em definição.
 
 ## Números do workspace (estado atual)
-- **17 squads** de agentes (nomes da mitologia grega) — **185 agentes** nas pastas `agents/`.
+- **19 squads** de agentes (nomes da mitologia grega) — **201 agentes** nas pastas `agents/`.
 - **Prometeu**: framework de engenharia AIOX com **12 agentes** em `Prometeu/.aiox-core/development/agents/`.
 - **Caos**: fábrica de agentes com **9 especialistas internos** + **13 skills**.
-- **Total**: **206 agentes** mapeados (185 squads + 12 Prometeu + 9 Caos).
+- **Total**: **222 agentes** mapeados (201 squads + 12 Prometeu + 9 Caos).
 - **Ferramentas**: ~30 tools/APIs catalogadas; **14 MCPs conectados**, 8 aguardando OAuth.
 - **Projetos** em desenvolvimento: `omiron`, `CataLogo` (Tracker Flow).
 - **Infra do Kolden OS** (stack LobeHub) roda no WSL2 — ver `CLAUDE.md` (não é parte deste workspace de agentes Windows).
@@ -30,6 +32,7 @@ Operação do **Ronan**. A descrição oficial (modelo de negócio, mercado, mar
 
 ### 📁 Projetos/ — produtos e iniciativas
 Novos projetos seguem o template `Projetos/_modelo-projeto/` (leia-me, prd, arquitetura, decisoes, status).
+**Cliente × projeto:** o dossiê do cliente (em `sobre-a-empresa/clientes/`) é a **inteligência de negócio** (contrato, ICP, metas); o projeto aqui é a **execução** (brandbook, pesquisa, código). Os dois se cruzam por frontmatter: `workspace_projeto` (no dossiê) ↔ `dossie_cliente` (no `leia-me.md` do projeto). Ao trabalhar num projeto de cliente, comece pelo dossiê para o contexto de negócio. Índice de quem tem projeto: `sobre-a-empresa/clientes/README.md`.
 - `Projetos/omiron/` — app de monitoramento terapêutico (Next.js 15, TypeScript, Prisma, Supabase). Tem `CLAUDE.md` e `AGENTS.md` próprios.
 - `Projetos/CataLogo/` — plataforma **Tracker Flow** de rastreamento de conversões e integrações S2S (Meta CAPI, TikTok, GHL, GA4) (React 18 + Vite, Supabase, shadcn/ui, Tailwind).
 - `Projetos/sprints/` — registro de sprints.
@@ -146,6 +149,16 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 - `oren-klaff` — Pitching de alto risco e controle de frame.
 - `marshall-ganz` — Narrativa pública para movimentos sociais.
 
+**Ariadne/** — Execução de SEO (técnico, on-page, programático, schema, arquitetura, AI-SEO) & CRO de página (8 agentes). **Nascido no Caos** (Ritual completo) a partir da absorção `coreyhaines31/marketingskills@8bfcdff`. Consome inteligência do Argos, faz handoff de copy ao Caliope, de medição ao Metis e de marca ao Aglaia. → `Ariadne/README.md`
+- `ariadne-chief` — Orquestra triagem SEO técnico/conteúdo/CRO, roteamento e gate de qualidade.
+- `auditor-tecnico-seo` — Crawlabilidade, indexação, Core Web Vitals, canonical/hreflang.
+- `arquiteto-de-site` — Arquitetura de informação: siloing, clusters tópicos, links internos.
+- `engenheiro-de-schema` — Dados estruturados JSON-LD, rich results, validação.
+- `estrategista-de-conteudo-seo` — On-page + programmatic-seo por intenção e template, E-E-A-T.
+- `otimizador-ai-seo` — AEO/GEO/LLMO: ser citado por LLMs e AI Overviews.
+- `analista-de-cro` — CRO de página (framework de 8 dimensões + biblioteca de experimentos) por hipótese.
+- `otimizador-de-formulario` — CRO de formulário: campos, multi-step, erro, abandono.
+
 ### 🧭 Estratégia & Negócios
 
 **Aletheia/** — Discovery & Lean Validation (8 agentes). **Entrada do funil de criação**: leva ideia crua → MVP validado e faz handoff aos squads de execução. Veto: nada de build sem dor validada. Nascido no Caos. → `Aletheia/README.md`
@@ -157,6 +170,11 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 - `david-bland` — Testing Business Ideas e assumptions mapping.
 - `ash-maurya` — Running Lean, Lean Canvas e iteração rápida.
 - `alberto-savoia` — Pretotyping, teste de demanda e sizing de mercado.
+
+**Ariadne/** — Execução de SEO & CRO de Página (8 agentes). **O fio do labirinto**: onde o Argos descobre e o Caliope escreve, a Ariadne estrutura, otimiza e converte — auditoria de SEO técnico (crawl/indexação/Core Web Vitals), arquitetura de informação (siloing/links internos), schema JSON-LD, conteúdo on-page/programático, AI-SEO (AEO/GEO/LLMO) e CRO de página/formulário por hipótese testável. Vetos: sem black-hat; recomendação com dado; CRO só por hipótese; copy é handoff ao Caliope. Nascida no Caos a partir da absorção `coreyhaines31/marketingskills`. → `Ariadne/README.md`
+- `ariadne-chief` — Orquestradora: triagem SEO técnico/conteúdo/CRO, roteamento e gate de qualidade.
+- `auditor-tecnico-seo` · `arquiteto-de-site` · `engenheiro-de-schema` · `estrategista-de-conteudo-seo` · `otimizador-ai-seo` — execução de SEO.
+- `analista-de-cro` · `otimizador-de-formulario` — CRO de página e de formulário.
 
 **Argos/** — Inteligência de Mercado & Scraping (15 agentes). **O deus das pesquisas**: pesquisa do macro ao micro (TAM/SAM/SOM, tendências), mapeia concorrentes orgânico+pago em todas as redes, extrai links/SEO, com dados ultra-confiáveis (fonte+timestamp+cross-check). Compliance híbrido: base verde + módulo cinza isolado opt-in via sentinela. Motor de scraping vendorizado (Scrapling/Scrapy/GPT-Researcher/Crawlee/Skyvern). Nascido no Caos. → `Argos/README.md`
 - `argos-chief` — Orquestrador: escopo macro→micro, roteamento e gate de confiabilidade.
