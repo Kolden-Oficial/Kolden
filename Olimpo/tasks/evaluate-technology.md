@@ -1,6 +1,6 @@
 ---
 task: evaluateTechnology()
-responsavel: "@cto-architect"
+responsavel: "@hefesto"
 responsavel_type: Agent
 atomic_layer: Task
 elicit: true
@@ -32,7 +32,7 @@ Checklist:
 **ID da Tarefa:** CLEVEL-004
 **Versão:** 1.0.0
 **Comando:** `*evaluate-technology`
-**Agente:** CTO Architect (cto-architect)
+**Agente:** Hefesto (hefesto)
 **Propósito:** Avaliar a estratégia de tecnologia, incluindo avaliação do stack atual, technology radar, registros de decisão arquitetural e análise de build vs buy
 
 ---
@@ -45,7 +45,7 @@ Checklist:
 | `current_stack` | Usuário | Sim | Stack de tecnologia e infraestrutura atuais |
 | `team` | Usuário | Sim | Tamanho, habilidades e estrutura do time de engenharia |
 | `challenges` | Usuário | Não | Desafios técnicos ou dívida conhecidos |
-| `strategic_pillars` | vision-chief | Não | Pilares estratégicos que a tecnologia deve sustentar |
+| `strategic_pillars` | zeus | Não | Pilares estratégicos que a tecnologia deve sustentar |
 
 ## Pré-condições
 

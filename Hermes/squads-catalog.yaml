@@ -204,7 +204,7 @@ squads:
     nome: "Olimpo — C-Suite Virtual (executivos C-level)"
     dir: C:/Kolden/Olimpo
     tipo: aios
-    chief_file: "agents/vision-chief.md"
+    chief_file: "agents/zeus.md"
     keywords:
       - estratégia
       - c-level

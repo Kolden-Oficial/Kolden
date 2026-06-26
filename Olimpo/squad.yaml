@@ -1,10 +1,10 @@
-name: c-level-squad
+name: olimpo
 version: "1.0.0"
 short-title: "Squad C-Level"
-description: "C-suite virtual de 6 executivos — CEO (Vision Chief), COO, CMO, CTO, CIO, CAIO. Estratégia, operações, marketing, tecnologia, IA."
+description: "C-suite virtual de 8 executivos — CEO (Zeus), COO, CMO, CTO, CIO, CAIO, CFO, CRO. Estratégia, operações, marketing, tecnologia, IA, finanças, receita."
 author: "Synkra AIOS"
 license: MIT
-slashPrefix: "c-level-squad"
+slashPrefix: "olimpo"
 
 aios:
   minVersion: "4.0.0"
@@ -21,12 +21,14 @@ tags:
 
 components:
   agents:
-    - vision-chief.md
-    - coo-orchestrator.md
-    - cmo-architect.md
-    - cto-architect.md
-    - cio-engineer.md
-    - caio-architect.md
+    - zeus.md
+    - poseidon.md
+    - apolo.md
+    - hefesto.md
+    - hades.md
+    - atena.md
+    - plutos.md
+    - afrodite.md
   tasks:
     - design-operations.md
     - diagnose.md

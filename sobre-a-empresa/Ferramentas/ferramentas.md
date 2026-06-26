@@ -4,6 +4,11 @@ Catálogo de todas as ferramentas externas usadas pelos agentes do Kolden. Cada 
 um manual próprio em `<Nome>/ferramentas.md` (dentro desta pasta) com fontes confiáveis (doc oficial,
 GitHub, fórum, API) e status de MCP.
 
+> **Fonte estruturada (machine-readable):** [`registro-de-ferramentas.yaml`](registro-de-ferramentas.yaml)
+> — uma entrada por ferramenta com `gatilhos` de quando usar, para o **agente proativo descobrir e ativar
+> a ferramenta sob demanda** (o "SEO de ferramentas"). Este `.md` é a vitrine humana; o `.yaml` é a fonte
+> consultável. Mantê-los cruzados.
+
 > **Art. VII (Constituição Kolden):** nenhuma credencial em texto puro — só o **caminho** no
 > Infisical. Resolver em runtime:
 > `infisical run --projectId=43d90b85-ca09-437c-b8f2-364b5cbe6093 --env=<prod|dev> -- <comando>`.

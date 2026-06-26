@@ -1,6 +1,6 @@
 ---
 task: planGoToMarket()
-responsavel: "@cmo-architect"
+responsavel: "@apolo"
 responsavel_type: Agent
 atomic_layer: Task
 elicit: true
@@ -32,7 +32,7 @@ Checklist:
 **ID da Tarefa:** CLEVEL-003
 **Versão:** 1.0.0
 **Comando:** `*plan-gtm`
-**Agente:** CMO Architect (cmo-architect)
+**Agente:** Apolo (apolo)
 **Propósito:** Desenhar uma estratégia abrangente de go-to-market cobrindo análise de mercado, posicionamento, estratégia de canais, plano de lançamento e métricas de sucesso
 
 ---

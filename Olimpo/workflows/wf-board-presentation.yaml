@@ -7,21 +7,21 @@ workflow:
   name: "Apresentação para o Conselho"
   version: "1.0.0"
   trigger: "*board-presentation"
-  entry_agent: vision-chief
+  entry_agent: zeus
   description: "Preparar uma apresentação para o conselho ou investidores reunindo dados de todos os domínios C-level, construindo uma narrativa coesa, montando o deck e ensaiando."
   estimated_duration: "2-4 horas"
   type: sequential
   sequence:
-    - agent: coo-orchestrator
+    - agent: poseidon
       action: gather-data
       creates: ops_data
-    - agent: vision-chief
+    - agent: zeus
       action: craft-narrative
       creates: narrative
-    - agent: cmo-architect
+    - agent: apolo
       action: market-context
       creates: market_data
-    - agent: vision-chief
+    - agent: zeus
       action: finalize
       creates: presentation
 
@@ -48,35 +48,35 @@ inputs:
 phases:
   - id: phase_1_data_gathering
     name: "Coleta de Dados"
-    agent: coo-orchestrator
+    agent: poseidon
     task: design-operations.md
     depends_on: []
     description: "Coletar dados operacionais, KPIs, progresso de OKR e métricas de time de todos os departamentos"
     checkpoint:
       gate: "Todas as métricas-chave coletadas com comparação período a período"
-      veto: "vision-chief rejeita se dados críticos estiverem ausentes ou não verificados"
+      veto: "zeus rejeita se dados críticos estiverem ausentes ou não verificados"
       required_output: "Pacote de dados consolidado com métricas financeiras, operacionais e de produto"
 
   - id: phase_2_narrative
     name: "Narrativa"
-    agent: vision-chief
+    agent: zeus
     task: set-vision.md
     depends_on: [phase_1_data_gathering]
     description: "Elaborar a narrativa estratégica que conecta os dados à visão e destaca as decisões-chave"
     checkpoint:
       gate: "A narrativa é honesta, voltada ao futuro e traz à tona os desafios reais"
-      veto: "Nenhum — o vision-chief é o dono da narrativa"
+      veto: "Nenhum — o zeus é o dono da narrativa"
       required_output: "Esboço da narrativa com mensagens-chave, vitórias, desafios e pedidos"
 
   - id: phase_3_deck_creation
     name: "Criação do Deck"
-    agent: cmo-architect
+    agent: apolo
     task: plan-go-to-market.md
     depends_on: [phase_2_narrative]
     description: "Construir o deck da apresentação com visuais claros, dados e fluxo narrativo"
     checkpoint:
       gate: "O deck segue a regra de uma mensagem por slide, dados visualizados e não em tabela"
-      veto: "vision-chief rejeita se o deck não corresponder à narrativa aprovada"
+      veto: "zeus rejeita se o deck não corresponder à narrativa aprovada"
       required_output: "Esboço do deck da apresentação (15-20 slides)"
     deck_structure:
       - "Abertura: Onde estamos e para onde vamos (1 slide)"
@@ -92,7 +92,7 @@ phases:
 
   - id: phase_4_rehearsal
     name: "Ensaio"
-    agent: vision-chief
+    agent: zeus
     task: null
     depends_on: [phase_3_deck_creation]
     description: "Ensaiar a apresentação, preparar-se para perguntas difíceis e finalizar"
