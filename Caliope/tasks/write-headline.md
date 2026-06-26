@@ -81,6 +81,8 @@ Checklist:
    - Títulos de notícia/anúncio
    - Títulos de lacuna de curiosidade (curiosity-gap)
    - Títulos de número específico
+   - **Templates granulares (preencher-as-lacunas):** ver o banco em `data/formulas-de-headline.md`
+     (foco em resultado / problema / público / diferenciação / prova) — cruze com a emoção dominante.
 3. Garanta que cada título passe no teste "eu pararia de rolar a tela?"
 4. Varie o comprimento: inclua curtos (menos de 8 palavras), médios (8-15) e longos (15+)
 

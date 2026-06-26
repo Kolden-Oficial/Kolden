@@ -7,11 +7,16 @@ palavras-chave: [projeto]
 status: rascunho
 atualizado-em: 2026-06-18
 relacionados: [prd, arquitetura, status]
+dossie_cliente: "<sobre-a-empresa/clientes/ativos/<slug>.md — ou vazio se for projeto interno, sem cliente>"
 ---
 
 # <Nome do Projeto>
 
 > Template de projeto. Copie a pasta `_modelo-projeto/` para `Projetos/<nome-do-projeto>/` e preencha.
+
+## Cliente
+
+Dossiê (negócio, contrato, ICP, metas): [`clientes/ativos/<slug>.md`](../../sobre-a-empresa/clientes/ativos/<slug>.md). Este projeto é a **execução**; o dossiê é a **inteligência de negócio**. _Omitir esta seção e o campo `dossie_cliente` se for projeto interno, sem cliente._
 
 ## O que é
 _1 parágrafo: objetivo do projeto e para quem._

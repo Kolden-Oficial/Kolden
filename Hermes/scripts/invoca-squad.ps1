@@ -21,11 +21,24 @@
 .PARAMETER Model
   Modelo opcional a passar para `claude` (--model).
 
+.PARAMETER Approved
+  Libera ações que mudam o mundo para squads com `muda_algo: true`. SEM esta flag,
+  o script força o chief a operar em MODO SOMENTE-DIAGNÓSTICO (lê/analisa/relata, mas
+  é proibido de executar ação externa). O Hermes só deve passar -Approved depois de
+  um "ok" explícito do Ronan. É a trava de segurança no nível do script — não depende
+  da "vontade" do modelo orquestrador.
+
 .PARAMETER DryRun
   Mostra o comando/prompt resolvido sem executar.
 
 .EXAMPLE
   powershell -File invoca-squad.ps1 -Squad peitho -Prompt "ROAS caindo no Google Ads, o que fazer?"
+
+.EXAMPLE
+  # Diagnóstico (sem aprovação) — seguro, não muda nada:
+  powershell -File invoca-squad.ps1 -Squad peitho -Prompt "ROAS caindo, analise"
+  # Após o "ok" do Ronan, libera ação:
+  powershell -File invoca-squad.ps1 -Squad peitho -Prompt "pause os ad groups com ROAS<1" -Approved
 #>
 [CmdletBinding()]
 param(
@@ -33,6 +46,7 @@ param(
     [Parameter(Mandatory = $true)] [string] $Prompt,
     [string] $Catalog,
     [string] $Model,
+    [switch] $Approved,
     [switch] $DryRun
 )
 
@@ -58,7 +72,7 @@ function Get-SquadEntry {
 
     $lines = Get-Content -LiteralPath $Path -Encoding UTF8
     $inBlock = $false
-    $entry = @{ squad = $null; dir = $null; tipo = $null; chief_file = $null }
+    $entry = @{ squad = $null; dir = $null; tipo = $null; chief_file = $null; muda_algo = $null }
 
     function Clean([string] $v) {
         # remove comentário inline, espaços e aspas
@@ -82,6 +96,7 @@ function Get-SquadEntry {
             if ($trim -match '^dir:\s*(.+)$')        { $entry.dir = Clean $Matches[1] }
             elseif ($trim -match '^tipo:\s*(.+)$')        { $entry.tipo = Clean $Matches[1] }
             elseif ($trim -match '^chief_file:\s*(.+)$')  { $entry.chief_file = Clean $Matches[1] }
+            elseif ($trim -match '^muda_algo:\s*(.+)$')   { $entry.muda_algo = Clean $Matches[1] }
         }
     }
     if (-not $entry.squad) { return $null }
@@ -115,13 +130,53 @@ $Prompt
 "@
     }
     'claude-code' {
+        # Só funciona se o squad registrar o chief como subagente nativo em
+        # .claude/agents/<chief>.md. Caso contrário (ex.: .claude/ só tem skills),
+        # cai no read-and-adopt do chief_file — o mesmo modo robusto do tipo aios.
         $chiefName = [System.IO.Path]::GetFileNameWithoutExtension($e.chief_file)
-        $activation = "Use o subagente @$chiefName para atender, em PT-BR: $Prompt"
+        $subagentPath = Join-Path $e.dir (Join-Path '.claude/agents' "$chiefName.md")
+        if (Test-Path $subagentPath) {
+            $activation = "Use o subagente @$chiefName para atender, em PT-BR: $Prompt"
+        }
+        else {
+            Write-Verbose "Sem subagente nativo em $subagentPath; usando read-and-adopt do chief_file."
+            $activation = @"
+Opere como o agente definido em "$($e.chief_file)": leia esse arquivo, adote integralmente a persona e siga as instruções de ativação (bloco AVISO-DE-ATIVAÇÃO). Depois, atenda ao pedido abaixo como esse agente. Responda em PT-BR.
+
+PEDIDO:
+$Prompt
+"@
+        }
     }
     default {
         Write-Error "tipo desconhecido para '$Squad': '$($e.tipo)'. Use aios ou claude-code."
         exit 6
     }
+}
+
+# --- Gate muda_algo: trava de segurança no nível do script ------------------
+# Para squads com muda_algo: true, SEM -Approved o chief é constrangido a um modo
+# somente-diagnóstico (defense-in-depth real, não depende do orquestrador lembrar
+# de pedir aprovação). COM -Approved (após "ok" do Ronan), a ação é liberada.
+$mudaAlgo = ($e.muda_algo -eq 'true')
+if ($mudaAlgo -and -not $Approved) {
+    $gate = @"
+MODO SOMENTE-DIAGNÓSTICO (aprovação do Ronan NÃO concedida).
+Você está PROIBIDO de executar qualquer ação que mude o mundo externo: subir/pausar/editar
+campanhas, alterar orçamento/lances, publicar, enviar mensagens, gastar verba, gravar em
+sistemas de terceiros ou mexer em dados externos. Apenas LEIA, ANALISE e RELATE.
+Se ação for necessária, LISTE exatamente o que faria (passos concretos) e PARE — não execute.
+
+"@
+    $activation = $gate + $activation
+}
+elseif ($mudaAlgo -and $Approved) {
+    $gate = @"
+AÇÃO AUTORIZADA pelo Ronan para este pedido. Você pode executar as ações que mudam o mundo
+descritas no pedido, com cuidado e reportando cada passo. Mantenha-se no escopo do pedido.
+
+"@
+    $activation = $gate + $activation
 }
 
 # --- Argumentos do claude headless -----------------------------------------
@@ -134,6 +189,8 @@ if ($DryRun) {
     Write-Host "dir (cwd)  : $($e.dir)"
     Write-Host "tipo       : $($e.tipo)"
     Write-Host "chief_file : $($e.chief_file)"
+    Write-Host "muda_algo  : $($e.muda_algo)"
+    Write-Host "modo       : $(if($mudaAlgo -and -not $Approved){'SOMENTE-DIAGNOSTICO (sem -Approved)'}elseif($mudaAlgo){'ACAO AUTORIZADA (-Approved)'}else{'normal (muda_algo:false)'})"
     Write-Host "comando    : claude -p <activation>$(if($Model){" --model $Model"})"
     Write-Host "─── activation ─────────────────────────────────────"
     Write-Host $activation
