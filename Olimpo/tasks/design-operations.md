@@ -1,6 +1,6 @@
 ---
 task: designOperations()
-responsavel: "@coo-orchestrator"
+responsavel: "@poseidon"
 responsavel_type: Agent
 atomic_layer: Task
 elicit: true
@@ -32,7 +32,7 @@ Checklist:
 **ID da Tarefa:** CLEVEL-002
 **Versão:** 1.0.0
 **Comando:** `*design-operations`
-**Agente:** COO Orchestrator (coo-orchestrator)
+**Agente:** Poseidon (poseidon)
 **Propósito:** Desenhar a excelência operacional por meio de mapeamento de processos, eliminação de gargalos, frameworks de OKR e cadência de execução
 
 ---
@@ -42,7 +42,7 @@ Checklist:
 | Entrada | Origem | Obrigatório | Descrição |
 |---------|--------|-------------|-----------|
 | `company` | Prompt do usuário | Sim | Nome da empresa e contexto operacional atual |
-| `strategic_pillars` | vision-chief | Não | Pilares estratégicos da tarefa set-vision |
+| `strategic_pillars` | zeus | Não | Pilares estratégicos da tarefa set-vision |
 | `team_structure` | Usuário | Sim | Tamanho atual do time, papéis, departamentos |
 | `pain_points` | Usuário | Não | Desafios operacionais e gargalos conhecidos |
 | `tools` | Usuário | Não | Ferramentas operacionais atuais (PM, CRM, comunicação, etc.) |

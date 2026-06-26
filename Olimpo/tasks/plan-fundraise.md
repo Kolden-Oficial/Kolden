@@ -1,6 +1,6 @@
 ---
 task: planFundraise()
-responsavel: "@vision-chief"
+responsavel: "@zeus"
 responsavel_type: Agent
 atomic_layer: Task
 elicit: true
@@ -32,7 +32,7 @@ Checklist:
 **ID da Tarefa:** CLEVEL-005
 **Versão:** 1.0.0
 **Comando:** `*plan-fundraise`
-**Agente:** Vision Chief (vision-chief) + CMO Architect (cmo-architect)
+**Agente:** Zeus (zeus) + Apolo (apolo)
 **Propósito:** Desenhar uma estratégia completa de captação, da avaliação de prontidão à preparação do pitch
 
 ---
@@ -56,7 +56,7 @@ Checklist:
 
 ## Fases de Execução
 
-### Fase 1: Avaliar Prontidão (vision-chief)
+### Fase 1: Avaliar Prontidão (zeus)
 
 1. Aplique a **Avaliação de Prontidão para Captação** (10 dimensões):
    - **Produto:** Existe um produto funcional? MVP? Receita?
@@ -78,7 +78,7 @@ Checklist:
 4. Crie um **plano de fechamento de lacunas** com cronograma
 5. Determine o **timing ótimo** para a captação
 
-### Fase 2: Definir Narrativa (vision-chief)
+### Fase 2: Definir Narrativa (zeus)
 
 1. Elabore a **Tese de Investimento** -- por que este é um ótimo investimento:
    - O problema (grande, crescente, doloroso)
@@ -104,7 +104,7 @@ Checklist:
 4. Prepare o **tratamento de objeções** para as 10 principais preocupações dos investidores
 5. Crie o **one-liner** que explica a empresa em 10 segundos
 
-### Fase 3: Construir o Deck (cmo-architect)
+### Fase 3: Construir o Deck (apolo)
 
 1. Desenhe o **pitch deck** (12-15 slides):
    - Slide 1: Título + one-liner
@@ -130,7 +130,7 @@ Checklist:
    - Linguagem visual consistente
    - Máximo de 20 palavras por slide (excluindo dados)
 
-### Fase 4: Mapear Investidores e Preparar o Pitch (vision-chief + cmo-architect)
+### Fase 4: Mapear Investidores e Preparar o Pitch (zeus + apolo)
 
 1. Construa a **lista de investidores-alvo** (30-50 investidores):
    - Tier 1 (sonho): 10 investidores (melhor fit, mais difíceis de conseguir)
