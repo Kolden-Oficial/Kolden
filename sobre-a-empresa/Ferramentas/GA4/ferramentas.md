@@ -12,10 +12,21 @@ Autenticação por **Application Default Credentials (ADC)** do gcloud, com a co
 |------|-------|
 | ADC file | `C:\Users\Ronan Silva\AppData\Roaming\gcloud\application_default_credentials.json` |
 | Projeto GCP | `gen-lang-client-0988823565` (nº `1098911614973`) |
-| Escopo | `https://www.googleapis.com/auth/analytics.readonly` |
-| Consent screen | **Internal** (org kolden.com.br) → tokens não expiram |
+| Escopo (atual, 2026-06-26) | `cloud-platform` · `analytics.readonly` · `webmasters` · `tagmanager.edit.containers` · `tagmanager.edit.containerversions` · `tagmanager.publish` |
+| Consent screen | **Internal** (org kolden.com.br) — porém o ADC **pode reexpirar** (ver abaixo) |
 
-> Reautenticar/renovar ADC: `gcloud auth application-default login --client-id-file="C:\Users\Ronan Silva\.config\google-drive-mcp\gcp-oauth.keys.json" --scopes="https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/analytics.readonly,https://www.googleapis.com/auth/webmasters.readonly,https://www.googleapis.com/auth/tagmanager.readonly"`
+> Reautenticar/renovar ADC (caminho normal): `gcloud auth application-default login --client-id-file="C:\Users\Ronan Silva\.config\google-drive-mcp\gcp-oauth.keys.json" --scopes="https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/analytics.readonly,https://www.googleapis.com/auth/webmasters,https://www.googleapis.com/auth/tagmanager.edit.containers,https://www.googleapis.com/auth/tagmanager.edit.containerversions,https://www.googleapis.com/auth/tagmanager.publish"`
+
+### Quando o reauth interativo falha (callback `localhost` recusado)
+
+Sintoma: `ERR_CONNECTION_REFUSED` no browser ao final do login (o servidor de callback do `gcloud` não persiste — acontece ao rodar via `!` não-interativo; o gcloud 574+ também removeu `--no-launch-browser` para `--client-id-file`, exigindo `--no-browser`). **Não é proxy** (verificado: WinHTTP direto, `ProxyEnable=0`).
+
+**Solução validada (2026-06-26): fluxo OAuth conduzido com loopback próprio.** O client é `installed`/desktop (redirect `http://localhost` em qualquer porta), então monta-se um servidor loopback local e captura-se o `code` direto:
+1. Subir um servidor HTTP local numa porta livre (ex. 8765) e gerar a URL de consent (`accounts.google.com/o/oauth2/v2/auth` com `client_id`, `redirect_uri=http://localhost:8765`, `response_type=code`, `access_type=offline`, `prompt=consent`, os scopes acima).
+2. O Ronan abre a URL, loga `adm@kolden.com.br`, aceita — o servidor captura o `code` (fallback: colar a URL de callback da barra do browser).
+3. Trocar o `code` por tokens (`POST oauth2.googleapis.com/token`) e escrever o ADC (`authorized_user`: `client_id`, `client_secret`, `refresh_token`, `type`, `quota_project_id`) em `...\gcloud\application_default_credentials.json`.
+
+> ⚠️ **Recorrência**: a org pode impor *session length*, fazendo o ADC voltar a pedir "Reauthentication needed" mesmo com consent Internal. É esperado — reaplicar o fluxo acima quando ocorrer.
 
 ---
 
@@ -70,6 +81,7 @@ Autenticação por **Application Default Credentials (ADC)** do gcloud, com a co
 ## Notas Kolden
 
 - **Quem usa:** squads **Metis** (analytics) e **Peitho** (tráfego pago).
-- Read-only por design — para mudar config de propriedade, usar o console GA4.
-- Para squads rodando server-side sem humano (automação 24/7), migrar de ADC (conta do Ronan) para **Service Account** com a SA adicionada como leitora em cada propriedade.
-- Contas de clientes (Danielle Benício, Vilela) aparecem porque a conta `adm@kolden.com.br` tem acesso — atenção ao escolher a propriedade certa nas queries.
+- O **MCP** `analytics-mcp` é read-only; **escrita** (config GA4 Admin, GTM) vai por **REST** com o access token do mesmo ADC (`gcloud auth application-default print-access-token`).
+- **GTM via REST (escrita)** — usado p/ publicar a tag GA4 do EntreSolos (2026-06-26). Gotcha: `POST .../containers/{c}/versions/{v}:publish` **exige header `Content-Length: 0`** (POST sem corpo → senão **HTTP 411 Length Required**). `create_version` e `publish` exigem o scope `tagmanager.edit.containerversions` (não basta `edit.containers`).
+- **Service Account não é o caminho rápido**: a API de IAM estava desabilitada no projeto `gen-lang-client-0988823565` e a org pode bloquear chave de SA. Para automação 24/7, reavaliar; por ora o ADC (reauth conduzido) atende.
+- Contas de clientes (Danielle Benício, Vilela, **EntreSolos**) aparecem porque `adm@kolden.com.br` tem acesso — atenção à propriedade certa nas queries.
