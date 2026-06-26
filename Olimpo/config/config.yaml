@@ -5,80 +5,99 @@
 # ═══════════════════════════════════════════════════════════════════
 
 squad:
-  name: c-level-squad
+  name: olimpo
   display_name: "Squad C-Level"
   version: "1.0.0"
   domain: "Liderança Executiva e Operações Estratégicas"
   description: |
     Uma C-suite virtual de agentes de liderança executiva. Cada agente encarna a perspectiva
     estratégica de um papel C-level específico — visão do CEO, operações do COO, marketing do CMO,
-    tecnologia do CTO, sistemas de informação do CIO e inteligência artificial do CAIO.
+    tecnologia do CTO, sistemas de informação do CIO, inteligência artificial do CAIO,
+    finanças do CFO e receita do CRO.
 
     Juntos, eles oferecem aconselhamento executivo holístico para estratégia de negócios, design
     organizacional e transformação digital.
   keywords: [c-suite, estratégia, operações, marketing, tecnologia, IA, liderança, transformação-digital, captação, go-to-market, escala]
-  entry_agent: vision-chief
+  entry_agent: zeus
   created_at: "2026-03-05"
 
 tiers:
   tier_0:
     name: "Orquestração"
-    agents: [vision-chief]
+    agents: [zeus]
     purpose: "Triagem, roteamento, qualidade — orquestração estratégica de nível CEO através de todas as funções da C-suite"
   tier_1:
     name: "Operações e Mercado"
-    agents: [coo-orchestrator, cmo-architect]
+    agents: [poseidon, apolo]
     purpose: "Excelência operacional, otimização de processos, estratégia de marca, geração de demanda, go-to-market"
   tier_2:
     name: "Tecnologia e Inovação"
-    agents: [cto-architect, cio-engineer, caio-architect]
+    agents: [hefesto, hades, atena]
     purpose: "Estratégia de tecnologia, infraestrutura, segurança, arquitetura de dados, estratégia de IA, transformação digital"
+  tier_3:
+    name: "Finanças e Receita"
+    agents: [plutos, afrodite]
+    purpose: "Disciplina de capital, budget de mídia, margem, precificação, unit economics; pipeline de vendas, qualificação, conversão e receita"
 
 agents:
-  vision-chief:
-    file: agents/vision-chief.md
+  zeus:
+    file: agents/zeus.md
     tier: 0
     icon: "👔"
     focus: "Visão da empresa, direção estratégica, relações com o conselho, captação, M&A, cultura"
-  coo-orchestrator:
-    file: agents/coo-orchestrator.md
+  poseidon:
+    file: agents/poseidon.md
     tier: 1
     icon: "⚙️"
     focus: "Excelência operacional, otimização de processos, escala, estrutura de equipe, KPIs, OKRs"
-  cmo-architect:
-    file: agents/cmo-architect.md
+  apolo:
+    file: agents/apolo.md
     tier: 1
     icon: "📣"
     focus: "Estratégia de marca, geração de demanda, posicionamento, go-to-market, aquisição de clientes"
-  cto-architect:
-    file: agents/cto-architect.md
+  hefesto:
+    file: agents/hefesto.md
     tier: 2
     icon: "💻"
     focus: "Estratégia de tecnologia, decisões de arquitetura, cultura de engenharia, build vs buy"
-  cio-engineer:
-    file: agents/cio-engineer.md
+  hades:
+    file: agents/hades.md
     tier: 2
     icon: "🏛️"
     focus: "Infraestrutura, segurança, arquitetura de dados, governança de TI, integração de sistemas"
-  caio-architect:
-    file: agents/caio-architect.md
+  atena:
+    file: agents/atena.md
     tier: 2
     icon: "🤖"
     focus: "Estratégia de IA, operações de ML, transformação digital, automação, ética em IA"
+  plutos:
+    file: agents/plutos.md
+    tier: 3
+    icon: "💰"
+    focus: "Unit economics, budget de mídia, margem, precificação, fluxo de caixa, ROI"
+  afrodite:
+    file: agents/afrodite.md
+    tier: 3
+    icon: "💎"
+    focus: "Pipeline de vendas, qualificação de leads, cadência, conversão, fechamento, CRM/GHL"
 
 handoffs:
-  vision-chief:
-    routes_to: [coo-orchestrator, cmo-architect, cto-architect, cio-engineer, caio-architect]
-  coo-orchestrator:
-    escalates_to: [vision-chief]
-  cmo-architect:
-    escalates_to: [vision-chief]
-  cto-architect:
-    escalates_to: [vision-chief]
-  cio-engineer:
-    escalates_to: [vision-chief]
-  caio-architect:
-    escalates_to: [vision-chief]
+  zeus:
+    routes_to: [poseidon, apolo, hefesto, hades, atena, plutos, afrodite]
+  poseidon:
+    escalates_to: [zeus]
+  apolo:
+    escalates_to: [zeus]
+  hefesto:
+    escalates_to: [zeus]
+  hades:
+    escalates_to: [zeus]
+  atena:
+    escalates_to: [zeus]
+  plutos:
+    escalates_to: [zeus]
+  afrodite:
+    escalates_to: [zeus]
 
 cross_cutting:
   quality_standards:
@@ -86,5 +105,5 @@ cross_cutting:
 
 settings:
   activation:
-    prefix: "c-level"
-    example: "@c-level:cto-architect"
+    prefix: "olimpo"
+    example: "@olimpo:hefesto"

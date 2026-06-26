@@ -9,13 +9,23 @@
 Operação do **Ronan**. A descrição oficial (modelo de negócio, mercado, marca) está em construção em `sobre-a-empresa/` — **um squad de pesquisa vai definir e preencher**. Enquanto estiver `status: rascunho`, **não afirme** detalhes de negócio: diga que está em definição.
 
 ## Números do workspace (estado atual)
-- **19 squads** de agentes (nomes da mitologia grega) — **201 agentes** nas pastas `agents/`.
+- **19 squads** de agentes (nomes da mitologia grega) — **203 agentes** nas pastas `agents/`.
 - **Prometeu**: framework de engenharia AIOX com **12 agentes** em `Prometeu/.aiox-core/development/agents/`.
 - **Caos**: fábrica de agentes com **9 especialistas internos** + **13 skills**.
-- **Total**: **222 agentes** mapeados (201 squads + 12 Prometeu + 9 Caos).
+- **Total**: **224 agentes** mapeados (203 squads + 12 Prometeu + 9 Caos) + **Dike** (verificador solo).
 - **Ferramentas**: ~30 tools/APIs catalogadas; **14 MCPs conectados**, 8 aguardando OAuth.
 - **Projetos** em desenvolvimento: `omiron`, `CataLogo` (Tracker Flow).
 - **Infra do Kolden OS** (stack LobeHub) roda no WSL2 — ver `CLAUDE.md` (não é parte deste workspace de agentes Windows).
+
+## Sistema hierárquico de agentes (5 camadas)
+Um input do Ronan atravessa 5 camadas, enriquecido e assinado a cada degrau num **Contrato de Missão** (o chassi, em `Olimpo/contratos/`):
+1. **Humano (Ronan)** — dá o input, aprova no portão.
+2. **Hermes** (camada 2) — traduz a intenção, aplica o **DoR** e a **matriz de risco** (verde/amarelo/vermelho → autonomia progressiva), **lacra a intenção** (sha256) e cria o Contrato. Dono do `USER.md`. Ver `Hermes/camada-2-contrato.md`.
+3. **Zeus** (Olimpo) — decompõe a missão e roteia ao(s) executivo(s) pelos `routing_triggers`.
+4. **Executivos do Olimpo** (8 deuses) — Zeus/CEO, Poseidon/COO, Apolo/CMO, Hefesto/CTO, Hades/CIO, Atena/CAIO, Plutos/CFO, Afrodite/CRO. Cada um especifica na língua técnica da sua disciplina e faz handoff ao operacional.
+5. **Operacional** — os squads de execução (Peitho, Caliope, Pheme, Ariadne, GHL…).
+
+Na **subida**, a **`Dike/`** (verificador) reconcilia a entrega contra o lacre e localiza o degrau de qualquer quebra (TPND=0) antes de o Hermes devolver ao Ronan. O **RH dos agentes** (cartão de identidade `Caos/modelos/cartao-de-identidade.md` + roster `Caos/dados/elenco-de-agentes.yaml`) e o **tool registry** consultável (`sobre-a-empresa/Ferramentas/registro-de-ferramentas.yaml`) são governados pelo Caos/curador.
 
 ---
 
@@ -198,13 +208,15 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 - `sintetizador` — Destila mente/linhagem em framework operacional + procedência.
 - `ponte-de-encarnacao` — Handoff ao Caos quando a mente deve virar agente conversável.
 
-**Olimpo/** — C-Level / Executivos (6 agentes). → `Olimpo/README.md`
-- `vision-chief` — CEO/Orquestrador: define a visão e roteia ao executivo certo.
-- `coo-orchestrator` — COO: excelência operacional, processos, escala, KPIs/OKRs.
-- `cmo-architect` — CMO: marca, posicionamento, demanda e go-to-market.
-- `cto-architect` — CTO: arquitetura de tecnologia, build vs buy e engenharia.
-- `cio-engineer` — CIO: sistemas de informação, infraestrutura e governança de TI.
-- `caio-architect` — CAIO: estratégia de IA, pipelines de ML e automação.
+**Olimpo/** — C-Level / Executivos (8 agentes). Cada deus carrega nome + cargo + `routing_triggers`; opera sobre o Contrato de Missão (`Olimpo/contratos/`). → `Olimpo/README.md`
+- `zeus` — CEO/Orquestrador: define a visão e roteia ao executivo certo.
+- `poseidon` — COO: excelência operacional, processos, escala, KPIs/OKRs.
+- `apolo` — CMO: marca, posicionamento, demanda e go-to-market.
+- `hefesto` — CTO: arquitetura de tecnologia, build vs buy e engenharia.
+- `hades` — CIO: sistemas de informação, infraestrutura e governança de TI.
+- `atena` — CAIO: estratégia de IA, pipelines de ML e automação.
+- `plutos` — CFO: finanças, budget de mídia, margem, precificação, unit economics e caixa.
+- `afrodite` — CRO: receita, pipeline de vendas, qualificação, conversão e CRM/GHL.
 
 **Themis/** — Conselho consultivo com 11 mentes estratégicas (11 agentes). → `Themis/README.md`
 - `board-chair` — Orquestrador: diagnostica, roteia e sintetiza recomendações.

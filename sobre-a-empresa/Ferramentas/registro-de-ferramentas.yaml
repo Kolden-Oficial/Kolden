@@ -1,0 +1,401 @@
+# Registro de Ferramentas do Kolden — fonte machine-readable consultável sob demanda
+#
+# Propósito duplo:
+#  (a) o agente PROATIVO descobre e ativa a ferramenta certa por GATILHO (casa uma necessidade
+#      à ferramenta — o "SEO de ferramentas"), sem o humano dizer qual usar;
+#  (b) o Ronan vê o arsenal completo num só lugar.
+#
+# A vitrine humana é `ferramentas.md` (índice mestre) + os manuais por ferramenta em `<Nome>/ferramentas.md`.
+# Este YAML é a fonte estruturada. Mantê-los cruzados.
+#
+# Art. VII (Constituição): nenhuma credencial em texto puro — só o CAMINHO no Infisical.
+#   Resolver em runtime: infisical run --projectId=43d90b85-ca09-437c-b8f2-364b5cbe6093 --env=<prod|dev> -- <cmd>
+#   (secrets no path raiz de cada env; usar --projectId+--env, não --path).
+#
+# Legenda `mcp`: oficial | comunidade | conector-claude-ai | host-cliente | nenhum
+# Legenda `status`: ativo | pendente (credencial/token a cadastrar) | sem-api
+# `gate_busca: true` => a ferramenta dispara a Política de Busca (declarar ferramenta+nível e
+#   aguardar confirmação do Ronan antes de usar; ver ~/.claude/CLAUDE.md e gate-busca.cjs).
+
+versao: "1.0.0"
+atualizado_em: "2026-06-26"
+fonte_humana: "sobre-a-empresa/Ferramentas/ferramentas.md"
+
+ferramentas:
+
+  # ── IA / LLMs ──────────────────────────────────────────────────────────────
+  anthropic:
+    categoria: ia-llm
+    proposito: "Modelos Claude (raciocínio, código, agentes) — LLM de ponta."
+    gatilhos: [llm, claude, raciocinio, agente, codigo, sintese, classificacao]
+    acesso: api
+    credencial: "/kolden/prod/ANTHROPIC_API_KEY"
+    mcp: nenhum
+    status: ativo
+  openrouter:
+    categoria: ia-llm
+    proposito: "Gateway multi-LLM (troca de provedor por chave única) — usado pelo Hermes."
+    gatilhos: [llm, multi-modelo, roteamento-de-modelo, openrouter, gemini, deepseek, fallback-de-modelo]
+    acesso: api
+    credencial: "/kolden/prod/OPENROUTER_API_KEY"
+    mcp: comunidade
+    status: ativo
+  google-ai-studio:
+    categoria: ia-llm
+    proposito: "Modelos Gemini do Google (texto, visão, contexto longo)."
+    gatilhos: [gemini, google, llm, visao, contexto-longo]
+    acesso: api
+    credencial: ["/kolden/prod/GOOGLESTUDIO_API_KEY", "/kolden/prod/GOOGLESTUDIO_PROJECT_ID"]
+    mcp: comunidade
+    status: ativo
+  eden-ai:
+    categoria: ia-llm
+    proposito: "Agregador multi-IA (NLP, OCR, visão, fala) por uma API."
+    gatilhos: [agregador-ia, ocr, nlp, multi-provedor]
+    acesso: api
+    credencial: "/kolden/prod/EDENAI_API_KEY"
+    mcp: comunidade
+    status: ativo
+  glama:
+    categoria: ia-llm
+    proposito: "Gateway de LLMs e diretório de MCP."
+    gatilhos: [llm, gateway, mcp-diretorio]
+    acesso: api
+    credencial: "/kolden/prod/GLAMA_API_KEY"
+    mcp: comunidade
+    status: ativo
+  lobechat:
+    categoria: ia-llm
+    proposito: "Interface de chat self-host com LLMs (stack interna LobeHub)."
+    gatilhos: [chat-ui, lobehub, interface-llm]
+    acesso: api
+    credencial: "/kolden/prod/LOBECHAT_API_KEY"
+    mcp: comunidade
+    status: ativo
+
+  # ── IA Generativa / Mídia ──────────────────────────────────────────────────
+  replicate:
+    categoria: midia-generativa
+    proposito: "Rodar modelos open-source (imagem, vídeo, áudio) sob demanda."
+    gatilhos: [gerar-imagem, gerar-video, modelo-open-source, inferencia, sdxl, flux]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/REPLICATE_API_TOKEN"
+    mcp: oficial
+    status: ativo
+  fal:
+    categoria: midia-generativa
+    proposito: "Geração de imagem/vídeo rápida (fal.ai), modelos hospedados."
+    gatilhos: [gerar-imagem, gerar-video, fast-inference, fal]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/FAL_API_KEY"
+    mcp: oficial
+    status: ativo
+  v0:
+    categoria: midia-generativa
+    proposito: "Geração de UI/frontend a partir de prompt (Vercel v0)."
+    gatilhos: [gerar-ui, frontend, componente, landing-rapida, v0]
+    acesso: [api, mcp]
+    credencial: "/kolden/dev/V0_API_TOKEN"
+    mcp: oficial
+    status: ativo
+
+  # ── Áudio / Vídeo ──────────────────────────────────────────────────────────
+  elevenlabs:
+    categoria: audio-video
+    proposito: "TTS/voz, clonagem, dublagem, efeitos sonoros, agentes de voz."
+    gatilhos: [tts, voz, narracao, dublagem, audio, agente-de-voz, ligacao]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/ELEVENLABS_API_KEY"
+    mcp: oficial
+    status: ativo
+  deepgram:
+    categoria: audio-video
+    proposito: "Speech-to-text (transcrição) — fallback de transcrição."
+    gatilhos: [transcricao, stt, legenda, audio-para-texto]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/DEEPGRAM_API_KEY"
+    mcp: oficial
+    status: ativo
+  speechmatics:
+    categoria: audio-video
+    proposito: "Transcrição de alta qualidade (melhor pt-BR) — preferida p/ conteúdo BR."
+    gatilhos: [transcricao, pt-br, stt, video-para-texto, copy-de-video]
+    acesso: api
+    credencial: "/kolden/dev/SPEECHMATICS_API_KEY"
+    mcp: nenhum
+    status: ativo
+  creatomate:
+    categoria: audio-video
+    proposito: "Render programático de vídeo/imagem por template (automação de criativos)."
+    gatilhos: [render-video, template-video, criativo-automatico, video-em-escala]
+    acesso: api
+    credencial: ["/kolden/prod/CREATOMATE_API_KEY", "/kolden/prod/CREATOMATE_PUBLIC_TOKEN"]
+    mcp: comunidade
+    status: ativo
+
+  # ── Busca / Scraping / Browser ─────────────────────────────────────────────
+  firecrawl:
+    categoria: busca-scraping
+    proposito: "Busca e scraping web com extração de conteúdo — FERRAMENTA PADRÃO de busca (soberania)."
+    gatilhos: [busca-web, scraping, crawl, extracao, pesquisa, deep-research]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/FIRECRAWL_API_KEY"
+    mcp: oficial
+    status: ativo
+    gate_busca: true
+  exa:
+    categoria: busca-scraping
+    proposito: "Busca neural/semântica — quando o tipo de resultado pede (papers, descoberta)."
+    gatilhos: [busca-semantica, descoberta, papers, neural-search]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/EXA_API_KEY"
+    mcp: oficial
+    status: ativo
+    gate_busca: true
+  tavily:
+    categoria: busca-scraping
+    proposito: "Busca/pesquisa para agentes (crawl, map, research)."
+    gatilhos: [busca-web, research, crawl, map]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/TAVILY_API_KEY"
+    mcp: oficial
+    status: ativo
+    gate_busca: true
+  browserbase:
+    categoria: busca-scraping
+    proposito: "Automação de navegador headless na nuvem (act/extract/observe)."
+    gatilhos: [navegador, automacao-web, login, fluxo-web, browser-headless]
+    acesso: [api, mcp]
+    credencial: ["/kolden/prod/BROWSERBASE_API_KEY", "/kolden/prod/BROWSERBASE_PROJECT_ID"]
+    mcp: oficial
+    status: ativo
+  apify:
+    categoria: busca-scraping
+    proposito: "Marketplace de Actors de scraping (redes sociais, e-commerce, maps)."
+    gatilhos: [scraping, actor, rede-social-scrape, e-commerce-scrape, apify, dados-estruturados]
+    acesso: [api, mcp]
+    credencial: ["/kolden/dev/APIFY_TOKEN", "/kolden/dev/APIFY_USER_ID"]
+    mcp: oficial
+    status: ativo
+    gate_busca: true
+  sociavault:
+    categoria: busca-scraping
+    proposito: "API multi-plataforma de dados sociais (virais, métricas)."
+    gatilhos: [virais, dados-sociais, tiktok, instagram, youtube-metrics]
+    acesso: api
+    credencial: "/kolden/dev/SOCIAVAULT_API_KEY"
+    mcp: nenhum
+    status: ativo
+  context7:
+    categoria: busca-scraping
+    proposito: "Documentação atual de libs/frameworks/APIs sob demanda."
+    gatilhos: [docs, biblioteca, framework, api-reference, migracao, context7]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/CONTEXT7_API_KEY"
+    mcp: oficial
+    status: ativo
+
+  # ── Infra / Deploy ─────────────────────────────────────────────────────────
+  cloudflare:
+    categoria: infra-deploy
+    proposito: "DNS, CDN, Workers, R2, redirects de domínio de cliente."
+    gatilhos: [dns, cdn, workers, dominio, redirect, r2, cloudflare]
+    acesso: [api, mcp]
+    credencial: ["/kolden/prod/CLOUDFLARE_ACCOUNT_ID", "/kolden/prod/CLOUDFLARE_API_TOKEN"]
+    mcp: oficial
+    status: ativo
+  vercel:
+    categoria: infra-deploy
+    proposito: "Deploy de frontend/projetos, domínios, logs de runtime."
+    gatilhos: [deploy, frontend, dominio, vercel, build, runtime-logs]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/VERCEL_API_TOKEN"
+    mcp: oficial
+    status: ativo
+  railway:
+    categoria: infra-deploy
+    proposito: "Deploy de serviços/containers e bancos (Hermes roda aqui)."
+    gatilhos: [deploy, container, servico, banco, railway, hermes-deploy]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/RAILWAY_API_TOKEN"
+    mcp: oficial
+    status: ativo
+  upstash:
+    categoria: infra-deploy
+    proposito: "Redis/QStash/Workflow serverless (cache, filas, agendamento)."
+    gatilhos: [redis, fila, cache, qstash, workflow, serverless]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/UPSTASH_API_KEY"
+    mcp: oficial
+    status: ativo
+  github:
+    categoria: infra-deploy
+    proposito: "Versionamento, PRs, issues, code search (monorepo Kolden)."
+    gatilhos: [git, pr, issue, repo, code-search, versionamento, github]
+    acesso: [api, cli, mcp]
+    credencial: "/kolden/prod/GITHUB_ACCESS_TOKEN"
+    mcp: oficial
+    status: ativo
+
+  # ── IDE / Ambiente de Dev ──────────────────────────────────────────────────
+  vscode:
+    categoria: ide
+    proposito: "Editor local; host/cliente de MCP servers."
+    gatilhos: [editor, ide, dev-local, vscode]
+    acesso: cli
+    credencial: "n/a (usa credenciais dos MCP que consome)"
+    mcp: host-cliente
+    status: ativo
+
+  # ── Banco de dados / Backend ───────────────────────────────────────────────
+  neon:
+    categoria: banco-backend
+    proposito: "Postgres serverless (branches, memória vetorial)."
+    gatilhos: [postgres, banco, sql, vetorial, neon, branch-db]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/DATABASE_URL"
+    mcp: oficial
+    status: ativo
+  supabase:
+    categoria: banco-backend
+    proposito: "Postgres + auth + storage + edge functions (backend de projetos)."
+    gatilhos: [supabase, backend, auth, storage, edge-function, postgres]
+    acesso: [api, mcp]
+    credencial: "/kolden/prod/SUPABASE_API_TOKEN"
+    mcp: oficial
+    status: ativo
+
+  # ── Observabilidade / Segredos ─────────────────────────────────────────────
+  sentry:
+    categoria: observabilidade
+    proposito: "Monitoramento de erros e performance de apps."
+    gatilhos: [erro, observabilidade, monitoramento, sentry, issue-de-runtime]
+    acesso: [api, cli, mcp]
+    credencial: ["/kolden/prod/SENTRY_AUTH_TOKEN", "/kolden/prod/SENTRY_ORG_AUTH_TOKEN"]
+    mcp: oficial
+    status: ativo
+  infisical:
+    categoria: segredos
+    proposito: "Cofre de segredos — fonte ÚNICA de credenciais (Art. VII)."
+    gatilhos: [segredo, credencial, api-key, token, infisical]
+    acesso: [cli, mcp]
+    credencial: "n/a (gerencia todas as demais)"
+    mcp: oficial
+    status: ativo
+
+  # ── Produtividade / Workspace ──────────────────────────────────────────────
+  google-workspace:
+    categoria: produtividade
+    proposito: "Drive/Docs/Sheets/Slides/Calendar — base de conhecimento de clientes."
+    gatilhos: [drive, docs, planilha, slides, calendario, google-workspace, dossie-cliente]
+    acesso: mcp
+    credencial: "OAuth desktop local — ~/.config/google-drive-mcp/ (não Infisical)"
+    mcp: comunidade
+    status: ativo
+
+  # ── Analytics / Web (Google) ───────────────────────────────────────────────
+  pagespeed:
+    categoria: analytics-web
+    proposito: "Core Web Vitals / performance de página."
+    gatilhos: [pagespeed, web-vitals, performance-pagina, lighthouse]
+    acesso: api
+    credencial: "/kolden/dev/GOOGLE_DRIVE_API_KEY"
+    mcp: nenhum
+    status: ativo
+  youtube-data:
+    categoria: analytics-web
+    proposito: "Dados públicos do YouTube (vídeos, canais, métricas)."
+    gatilhos: [youtube, video-metrics, canal, trending-youtube]
+    acesso: api
+    credencial: "/kolden/dev/GOOGLE_DRIVE_API_KEY"
+    mcp: nenhum
+    status: ativo
+  ga4:
+    categoria: analytics-web
+    proposito: "Google Analytics 4 — tráfego, conversões, funis (first-party)."
+    gatilhos: [analytics, ga4, conversao, funil, trafego, receita-por-fonte]
+    acesso: mcp
+    credencial: "ADC (gcloud) — conta adm@kolden.com.br"
+    mcp: oficial
+    status: ativo
+  google-tag-manager:
+    categoria: analytics-web
+    proposito: "GTM — tags, triggers, eventos de conversão."
+    gatilhos: [gtm, tag, evento, conversao-tag, pixel-via-gtm]
+    acesso: api
+    credencial: "ADC (gcloud, tagmanager.readonly)"
+    mcp: nenhum
+    status: ativo
+  search-console:
+    categoria: analytics-web
+    proposito: "Search Console — desempenho de SEO, indexação, sitemaps."
+    gatilhos: [search-console, seo, indexacao, sitemap, query-de-busca]
+    acesso: api
+    credencial: "ADC (gcloud, webmasters.readonly)"
+    mcp: nenhum
+    status: ativo
+
+  # ── Marketing / CRM ────────────────────────────────────────────────────────
+  gohighlevel:
+    categoria: marketing-crm
+    proposito: "CRM/pipeline, contatos, conversas, automações (execução do Afrodite/CRO)."
+    gatilhos: [crm, ghl, pipeline, lead, contato, automacao-crm, oportunidade, conversa]
+    acesso: mcp
+    credencial: ["/kolden/prod/GHL_PIT_KEY", "/kolden/prod/GHL_AGENCY_KEY", "/kolden/prod/GHL_LOCATION_ID"]
+    mcp: conector-claude-ai
+    status: ativo
+  postiz:
+    categoria: marketing-crm
+    proposito: "Publicação/agendamento social self-host (canal principal do Pheme)."
+    gatilhos: [publicar-social, agendar-post, instagram, tiktok, linkedin, postiz]
+    acesso: api
+    credencial: ["/kolden/prod/POSTIZ_API_KEY", "/kolden/prod/POSTIZ_API_URL", "/kolden/prod/POSTIZ_JWT_SECRET"]
+    mcp: comunidade
+    status: pendente
+  meta:
+    categoria: marketing-crm
+    proposito: "Meta Ads / Conversions API — campanhas e eventos de conversão."
+    gatilhos: [meta-ads, facebook, instagram-ads, capi, pixel, campanha-paga]
+    acesso: api
+    credencial: ["/kolden/dev/META_CAPI_TOKEN", "/kolden/dev/META_PIXEL_ID"]
+    mcp: comunidade
+    status: ativo
+  google-ads:
+    categoria: marketing-crm
+    proposito: "Google Ads — campanhas de busca/display/pmax."
+    gatilhos: [google-ads, sem, search-ads, pmax, campanha-google]
+    acesso: [api, mcp]
+    credencial: "ADC + GOOGLEADS_* (a cadastrar)"
+    mcp: oficial
+    status: pendente
+  synter:
+    categoria: marketing-crm
+    proposito: "Orquestração de mídia paga multi-plataforma (Meta/Google/LinkedIn/Reddit)."
+    gatilhos: [midia-paga, campanha, synter, multi-plataforma-ads, audiencia]
+    acesso: mcp
+    credencial: "/kolden/dev/SYNTER_API_KEY"
+    mcp: oficial
+    status: ativo
+  windsor:
+    categoria: marketing-crm
+    proposito: "ETL de dados de marketing (conectores → dashboards)."
+    gatilhos: [etl-marketing, dados-de-ads, dashboard, windsor]
+    acesso: api
+    credencial: "/kolden/dev/WINDSOR_API_KEY"
+    mcp: oficial
+    status: ativo
+  aigrow:
+    categoria: marketing-crm
+    proposito: "Growth de Instagram (sem API pública)."
+    gatilhos: [instagram-growth, seguidores, aigrow]
+    acesso: ui
+    credencial: "n/a (sem API)"
+    mcp: nenhum
+    status: sem-api
+
+# ── Notas ────────────────────────────────────────────────────────────────────
+# - Ferramentas com `gate_busca: true` exigem declarar ferramenta+nível e aguardar o Ronan
+#   ANTES de usar (direta ou via subagente). Leitura first-party (GA4/GSC/GTM/Ads, Drive) NÃO dispara.
+# - Candidatas a provisionar (ainda sem credencial Kolden): ver `matriz-de-marketing-absorvida.md`
+#   (~90 tools de marketing) e `ferramentas-dos-squads.md`.
+# - Status MCP detalhado e ambiente (prod/dev) em `mcp-status.md`.
