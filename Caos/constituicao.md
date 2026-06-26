@@ -1,6 +1,6 @@
 # Constituição do Kolden
 
-> **Versão:** 2.3.0 | **Ratificada:** 2026-06-11 | **Última emenda:** 2026-06-22
+> **Versão:** 2.4.0 | **Ratificada:** 2026-06-11 | **Última emenda:** 2026-06-24
 
 Este documento define os princípios fundamentais e inegociáveis da fábrica de agentes
 Kolden. **Todo agente, squad, habilidade, reflexo e especialista — criado pelo Caos ou o
@@ -130,9 +130,16 @@ Todo repositório/código de terceiro que entra no Kolden passa pelo pipeline de
   Ronan (remete ao Artigo III).
 - DEVE: extrair padrão/método, nunca copiar trecho literal de material proprietário (remete ao
   Artigo IV/V); registrar procedência (`origem: repo@SHA`) e o ledger de repositórios.
+- DEVE: nenhuma absorção é considerada completa sem `relatorio-de-perda.md` válido (toda capacidade
+  inventariada na F3 disposta — `ABSORVIDO`/`DESCARTADO`/`PERDIDO` — com `PERDIDO=0` e todo
+  `DESCARTADO` com motivo). A reconciliação (F6.5) é **condição de saída do pipeline**, verificada
+  por reflexo determinístico (`gate-reconciliacao`), não por instrução. O inventário da F3 é um gate
+  BLOCK (não WARN) e as capacidades vão ao ledger **por ID**, nunca em prosa (habilidade
+  `protocolo-de-absorcao-sem-perda`).
 
-**Gate:** Fase 1 da absorção — BLOCK se `.git` presente; Fase 2 — BLOCK sem SAFE; reforçado pelo
-reflexo `bloqueio-de-quarentena.sh` (PreToolUse) que impede execução sob a quarentena.
+**Gate:** Fase 1 da absorção — BLOCK se `.git` presente; Fase 2 — BLOCK sem SAFE; **Fase 3 — BLOCK
+sem inventário com schema válido; Fase 6.5 — BLOCK sem reconciliação 100% (`PERDIDO=0`)**; reforçado
+pelos reflexos `bloqueio-de-quarentena.sh` (PreToolUse) e `gate-reconciliacao.sh` (Stop).
 
 ---
 
@@ -168,9 +175,10 @@ reflexo `bloqueio-de-quarentena.sh` (PreToolUse) que impede execução sob a qua
 - **Fase 7 (Teste de Comportamento — especialista `testador`):** valida que os guardrails
   derivados destes artigos realmente bloqueiam em execução.
 - **Pipeline de absorção (`/absorver`):** Artigo VIII — Fase 1 BLOCK (`.git` removido), Fase 2
-  BLOCK (segurança SAFE antes de leitura profunda), Fase 5 BLOCK (aprovação antes de aplicar).
+  BLOCK (segurança SAFE antes de leitura profunda), Fase 3 BLOCK (inventário com schema válido),
+  Fase 5 BLOCK (aprovação antes de aplicar), Fase 6.5 BLOCK (reconciliação 100%, `PERDIDO=0`).
 - **Reflexos (`.claude/hooks/`):** reforço determinístico dos Artigos VII e VIII
-  (`pre-ferramenta.sh`, `bloqueio-de-quarentena.sh`).
+  (`pre-ferramenta.sh`, `bloqueio-de-quarentena.sh`, `gate-reconciliacao.sh`).
 
 ### Sequência da Fase 5 — A Construção em cascata (ordem canônica)
 
@@ -207,6 +215,7 @@ O `redator-de-prompts` escreve o `CLAUDE.md` do agente (Fase 5b) ancorado nesta 
 
 | Versão | Data | Mudança |
 |--------|------|---------|
+| 2.4.0 | 2026-06-24 | Artigo VIII — Absorção sem perda silenciosa: inciso de reconciliação (F6.5) como condição de saída do pipeline, verificada pelo reflexo determinístico `gate-reconciliacao` (`relatorio-de-perda.md`, invariante de contagem, `PERDIDO=0`); F3 vira gate BLOCK (inventário por ID); capacidades no ledger por ID, não prosa; REUSE de domínio só com diff técnica-a-técnica. Habilidade `protocolo-de-absorcao-sem-perda`. |
 | 2.3.0 | 2026-06-22 | Artigo VIII — Absorção segura de terceiros: quarentena read-only, análise estática por padrão (Docker isolado opt-in nominal), gate de segurança BLOCK antes de leitura profunda, aprovação antes de aplicar, procedência + ledger. Reforçado pelo reflexo `bloqueio-de-quarentena.sh`. |
 | 2.2.0 | 2026-06-22 | Fase 5 reestruturada como Construção em cascata (gates 5.0→5.6: orquestrador → especialistas → habilidades → MCPs → reflexos/memória → referências por camada); herança histórica obrigatória por camada; habilidade `criacao-de-mcp` na 5.4. |
 | 2.1.0 | 2026-06-12 | Terminologia PT (habilidades, especialistas, reflexos); Artigo VII expandido com Infisical como obrigatório + exceção INFISICAL_TOKEN; referências atualizadas para autoridade-de-especialistas.md; paths atualizados para C:\Kolden\<NomeMitológico>. |
@@ -214,4 +223,4 @@ O `redator-de-prompts` escreve o `CLAUDE.md` do agente (Fase 5b) ancorado nesta 
 
 ---
 
-*Constituição do Kolden v2.3.0 — No princípio era o Caos.*
+*Constituição do Kolden v2.4.0 — No princípio era o Caos.*

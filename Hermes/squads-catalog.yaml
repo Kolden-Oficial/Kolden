@@ -103,11 +103,244 @@ squads:
       - encarnar
     muda_algo: false  # só estrutura conhecimento (dossiês/linhagens/frameworks); encarnar mente = handoff ao Caos (gate próprio)
 
+  - squad: pheme
+    nome: "Pheme — Social Media & Conteúdo (a deusa da fama)"
+    dir: C:/Kolden/Pheme
+    tipo: aios
+    chief_file: "agents/social-chief.md"
+    keywords:
+      - social media
+      - redes sociais
+      - conteúdo
+      - postar
+      - publicar
+      - publicação
+      - calendário editorial
+      - reels
+      - carrossel
+      - shorts
+      - pinterest
+      - seguidores
+      - growth orgânico
+      - engajamento
+    muda_algo: true   # publicação real via Postiz/GHL → aprovação
+
+  - squad: caliope
+    nome: "Caliope — Copywriting de Elite (a musa da eloquência)"
+    dir: C:/Kolden/Caliope
+    tipo: aios
+    chief_file: "agents/copy-chief.md"
+    keywords:
+      - copy
+      - copywriting
+      - copywriter
+      - texto de venda
+      - headline
+      - vsl
+      - carta de vendas
+      - email marketing
+      - funil de email
+      - página de vendas
+      - persuasão
+      - oferta (texto)
+    muda_algo: false  # produz texto; não publica nem gasta verba
+
+  - squad: aglaia
+    nome: "Aglaia — Estratégia de Marca & Branding"
+    dir: C:/Kolden/Aglaia
+    tipo: aios
+    chief_file: "agents/brand-chief.md"
+    keywords:
+      - marca
+      - branding
+      - identidade visual
+      - identidade da marca
+      - posicionamento
+      - brand equity
+      - arquitetura de marca
+      - naming
+      - tom de voz
+      - rebranding
+    muda_algo: false
+
+  - squad: orfeu
+    nome: "Orfeu — Storytelling & Narrativa"
+    dir: C:/Kolden/Orfeu
+    tipo: aios
+    chief_file: "agents/story-chief.md"
+    keywords:
+      - storytelling
+      - narrativa
+      - história
+      - contar história
+      - roteiro
+      - screenwriting
+      - pitch
+      - manifesto narrativo
+      - arco narrativo
+    muda_algo: false
+
+  - squad: aletheia
+    nome: "Aletheia — Discovery & Validação (a deusa da verdade)"
+    dir: C:/Kolden/Aletheia
+    tipo: aios
+    chief_file: "agents/aletheia-chief.md"
+    keywords:
+      - validação
+      - validar ideia
+      - discovery
+      - descoberta
+      - hipótese
+      - teste de mercado
+      - mvp
+      - product-market fit
+      - entrevista de cliente
+      - jobs to be done
+      - evidência
+      - vale a pena construir
+    muda_algo: false
+
+  - squad: olimpo
+    nome: "Olimpo — C-Suite Virtual (executivos C-level)"
+    dir: C:/Kolden/Olimpo
+    tipo: aios
+    chief_file: "agents/vision-chief.md"
+    keywords:
+      - estratégia
+      - c-level
+      - ceo
+      - coo
+      - cmo
+      - cto
+      - caio
+      - executivo
+      - decisão estratégica
+      - visão
+      - plano estratégico
+      - diretoria
+    muda_algo: false
+
+  - squad: themis
+    nome: "Themis — Conselho Consultivo (advisory board)"
+    dir: C:/Kolden/Themis
+    tipo: aios
+    chief_file: "agents/board-chair.md"
+    keywords:
+      - conselho
+      - conselheiro
+      - advisory
+      - segunda opinião
+      - mentor
+      - dilema
+      - decisão difícil
+      - princípios
+      - ray dalio
+      - munger
+      - naval
+      - thiel
+    muda_algo: false
+
+  - squad: metis
+    nome: "Metis — Analytics & Growth (dados)"
+    dir: C:/Kolden/Metis
+    tipo: aios
+    chief_file: "agents/data-chief.md"
+    keywords:
+      - analytics
+      - dados
+      - métricas
+      - kpi
+      - clv
+      - ltv
+      - growth
+      - retenção
+      - análise de dados
+      - dashboard
+      - audiência
+      - customer success
+    muda_algo: false
+
+  - squad: pluto
+    nome: "Pluto — Ofertas & Escala (frameworks Alex Hormozi)"
+    dir: C:/Kolden/Pluto
+    tipo: aios
+    chief_file: "agents/hormozi-chief.md"
+    keywords:
+      - hormozi
+      - oferta
+      - grand slam offer
+      - lead magnet
+      - precificação
+      - pricing
+      - escala
+      - escalar
+      - monetização
+      - ltv/cac
+      - modelo de vendas
+    muda_algo: false
+
+  - squad: dionisio
+    nome: "Dionísio — Movimentos & Comunidade"
+    dir: C:/Kolden/Dionisio
+    tipo: aios
+    chief_file: "agents/movement-chief.md"
+    keywords:
+      - movimento
+      - comunidade
+      - manifesto
+      - tribo
+      - identidade coletiva
+      - causa
+      - engajamento de comunidade
+      - pertencimento
+    muda_algo: false
+
+  - squad: dedalo
+    nome: "Dédalo — Domínio do Claude Code (engenharia de agentes)"
+    dir: C:/Kolden/Dedalo
+    tipo: aios
+    chief_file: "agents/claude-mastery-chief.md"
+    keywords:
+      - claude code
+      - claude-code
+      - subagente
+      - skill
+      - hook
+      - mcp
+      - configuração de agente
+      - settings.json
+      - swarm
+      - orquestração técnica
+      - automação claude
+    muda_algo: false
+
+  - squad: egide
+    nome: "Égide — Cibersegurança (ofensiva & defensiva)"
+    dir: C:/Kolden/Egide
+    tipo: aios
+    chief_file: "agents/cyber-chief.md"
+    keywords:
+      - segurança
+      - cibersegurança
+      - cybersecurity
+      - pentest
+      - pentesting
+      - red team
+      - blue team
+      - appsec
+      - vulnerabilidade
+      - exploit
+      - reconhecimento
+      - resposta a incidente
+      - hardening
+      - owasp
+    muda_algo: true   # pentest/exploração afeta alvos/sistemas → aprovação
+
   # ------------------------------------------------------------------------
-  # A preencher na Fase 4 (verificar dir + chief_file de cada um antes de ativar).
-  # Squads candidatos conhecidos no workspace:
-  #   - pheme     (C:\Kolden\Pheme)    social media / publicação   muda_algo: true
-  #   - aletheia  (C:\Kolden\Aletheia) discovery & validação        muda_algo: false
-  #   - caos      (C:\Kolden\Caos)     criação de agentes (interativo — notify-only)
-  # Não adicionar aqui sem confirmar o caminho do arquivo do chief.
+  # Notas:
+  #   - caos (C:\Kolden\Caos): criação de agentes é INTERATIVA (ritual em rodadas).
+  #     Não roteável headless — apenas avise o Ronan para abrir o Caos manualmente.
+  #   - prometeu (C:\Kolden\Prometeu): estrutura .aiox-core/ (não agents/). Caso à parte.
+  #   - Squads com .claude/ (Pheme, Aletheia, Argos, Liceu) têm SÓ skills, não
+  #     .claude/agents/ — por isso o tipo é `aios` (read-and-adopt), não claude-code.
   # ------------------------------------------------------------------------

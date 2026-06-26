@@ -1,0 +1,75 @@
+# Workflow: Jornada Completa de SEO + CRO — Ariadne
+# Orquestrado pelo ariadne-chief (comando *journey). DAG com gates entre fases.
+# Não é linear obrigatório: o chief ativa só as fases que a demanda pede.
+
+workflow:
+  id: wf-seo-cro
+  name: "Jornada SEO + CRO (auditar → arquitetar → schema → conteúdo → AI-SEO → converter)"
+  owner: ariadne-chief
+  version: "1.0.0"
+  min_score: 7.0
+
+entrada:
+  requisitos:
+    - "URL/site alvo e objetivo (ranquear / converter / ambos)"
+    - "Dado disponível: Search Console, PageSpeed, analytics (se houver)"
+  handoff_de_entrada:
+    de: argos
+    quando: "Faltam keywords / SERP / keyword gap / footprint do concorrente"
+    artefato: "Lista de keywords + intenção + SERP + concorrentes (Ariadne consome, não coleta)"
+
+fases:
+  - id: f1_auditoria
+    agente: auditor-tecnico-seo
+    objetivo: "Diagnosticar bloqueadores de indexação/ranking (crawl, indexação, CWV, canonical/hreflang)"
+    gate: "Achados no formato Issue→Impacto→Evidência→Fix→Prioridade; bloqueadores no topo"
+
+  - id: f2_arquitetura
+    agente: arquiteto-de-site
+    depende_de: [f1_auditoria]
+    objetivo: "Siloing, clusters tópicos, links internos, estrutura de URL; resolver páginas órfãs"
+    gate: "Mapa de arquitetura baseado em crawl real; mudanças de URL com plano de 301"
+
+  - id: f3_schema
+    agente: engenheiro-de-schema
+    depende_de: [f2_arquitetura]
+    objetivo: "JSON-LD por tipo de página, validado por Rich Results"
+    gate: "Markup reflete conteúdo visível; validado por render (nunca 'sem schema' via web_fetch)"
+
+  - id: f4_conteudo
+    agente: estrategista-de-conteudo-seo
+    depende_de: [f1_auditoria]
+    objetivo: "On-page por intenção + (se pedido) SEO programático com guarda de qualidade"
+    gate: "Sem thin content; E-E-A-T; copy final é briefing → handoff Caliope"
+
+  - id: f5_ai_seo
+    agente: otimizador-ai-seo
+    depende_de: [f4_conteudo]
+    objetivo: "Estrutura citável, autoridade e presença para AI search (AEO/GEO/LLMO)"
+    gate: "Recomendações verificadas (busca real), conteúdo answer-first verdadeiro"
+
+  - id: f6_cro
+    agente: analista-de-cro
+    objetivo: "Análise nas 7 dimensões → hipóteses testáveis + experimentos"
+    gate: "Toda mudança de impacto é hipótese (o que/por quê/como medir); pediu dado comportamental"
+
+  - id: f6b_formulario
+    agente: otimizador-de-formulario
+    depende_de: [f6_cro]
+    condicional: "só se o gargalo for o formulário"
+    objetivo: "Reduzir abandono de formulário por hipótese"
+    gate: "Hipótese testável; sem dark pattern"
+
+  - id: f7_consolidacao
+    agente: ariadne-chief
+    depende_de: [f1_auditoria, f6_cro]
+    objetivo: "Consolidar sob o gate de qualidade e preparar handoffs"
+    gate: "checklists/output-quality.md (ARIADNE-CL-001) — HALT nos itens invioláveis"
+
+handoffs_de_saida:
+  caliope: "Briefing de página/conteúdo otimizado → copy persuasiva final"
+  metis: "Hipóteses de experimento + eventos a medir → instrumentação e leitura estatística"
+  aglaia: "Recomendações de página/conteúdo → checagem de consistência de marca"
+
+saida:
+  entregavel: "Plano priorizado de SEO técnico + arquitetura + schema + conteúdo + AI-SEO + CRO, separando fato medido de hipótese, com handoffs identificados"

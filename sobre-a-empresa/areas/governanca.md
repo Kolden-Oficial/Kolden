@@ -6,12 +6,13 @@ categoria: organizacao
 palavras-chave: [area, departamento, governanca]
 status: rascunho
 atualizado-em: 2026-06-19
-relacionados: [areas-leia-me, organograma]
+relacionados: [areas-leia-me, organograma, planejamento-estrategico]
+fontes: drive--00-gestao-empresarial
 ---
 
 # Área: Governança
 
-> Em branco — a ser preenchida (modelo em `_modelo-area.md`).
+> Carta da área ainda em rascunho. **A estrutura de governança real já está documentada** no Balizamento de Responsabilidades — três blocos (Gestão, Marketing, Vendas) com missões, entregáveis e fronteiras: ver `operacao/planejamento-estrategico.md` §2. A regra-mãe de governança da Kolden: "o que não está claramente alocado vira conflito, retrabalho ou decisão política".
 
 ## 1. Carta da área
 - **Missão da área:** _a definir._

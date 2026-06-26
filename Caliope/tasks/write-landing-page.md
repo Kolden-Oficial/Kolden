@@ -72,6 +72,9 @@ Checklist:
    - Opt-in: Título → Bullets de benefício → Formulário → CTA (curta)
    - Vendas: AIDA completo com seções de prova (longa)
    - Registro de webinar: Título → O que você vai aprender → Credibilidade do palestrante → Data/Hora → CTA (média)
+   - **Catálogo de seções (core + suporte), templates estruturais (fraco vs forte) e banco de CTA:**
+     ver `data/estrutura-de-landing-page.md`.
+   - **Transições naturais e tells de texto "cara de IA":** ver `data/transicoes-naturais.md` (aplicar na escrita do corpo).
 
 ### Fase 2: Escrita Seção por Seção
 1. **Seção Hero:** Título + subtítulo + CTA hero

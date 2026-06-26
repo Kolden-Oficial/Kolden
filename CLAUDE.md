@@ -86,6 +86,9 @@ Não adicionar features além do pedido. Não refatorar de carona. Não criar ab
 - **OK fazer direto**: leitura de arquivos, busca, edits em arquivos não-críticos versionados, builds e testes locais.
 - **Pedir confirmação**: qualquer coisa em §5, qualquer mudança em infra, qualquer ação que toque rede externa, qualquer git destrutivo.
 
+### Política de busca e pesquisa
+**Antes de qualquer pesquisa web — direta ou via agent/subagent — declarar ao Ronan a ferramenta E o nível de profundidade (padrão = máximo) e aguardar confirmação.** Ferramenta padrão = **Firecrawl** (soberania de dados); Exa/Tavily quando o resultado pedir; `WebSearch` nativa só como último recurso, declarado. Subagentes de pesquisa: confirmar o disparo antes e configurá-los no poder máximo. Ferramentas de busca conectadas no workspace: ver `sobre-a-empresa/Ferramentas/mcp-status.md`. **Fonte de verdade da regra (e da trava `gate-busca.cjs`): `~/.claude/CLAUDE.md` (global).**
+
 ## 7. Comandos críticos
 
 ```bash

@@ -3,6 +3,7 @@
 
 # ===== Clones de terceiros com git próprio (não versionar como submódulo) =====
 Pheme/deploy/postiz/
+Projetos/NutriOS Pro/app/
 
 # ===== Segredos / ambiente =====
 .env

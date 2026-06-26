@@ -25,6 +25,12 @@
 - Quer que o agente invocado realmente USE o método do squad citado (ex.: @pluto → frameworks Hormozi reais dos arquivos), não conselho genérico. | 2026-06-23
 - Não fazer de carona: não preencher outros docs (ofertas-e-produtos, icp) sem pedido; não commitar sem ordem explícita. | 2026-06-23
 
+### Dados de negócio reais — absorção do Drive (2026-06-25)
+- ATUALIZA a nota de 2026-06-23 ("Kolden não tem ICP/oferta/receita definidos"): a dissecação do Drive trouxe dados REAIS documentados (ainda a ratificar como oficiais), em `sobre-a-empresa/mercado-e-posicionamento/{ofertas-e-produtos,icp-e-personas}.md`, `areas/receita.md`, `operacao/processos.md §4`. | 2026-06-25
+- Modelo documentado: "Assessoria de Performance 360º" — 5 linhas (tráfego, social, gestão comercial, IA, dados) + lançamento/mentoria/infoproduto. Receita: fee ≈R$3k + contrato 6 meses + % sobre performance. | 2026-06-25
+- Processo comercial: prospecção (cold call/mail) → kick-off/QNP 360° (discovery 13 blocos) → proposta em 6 passos gerada por IA (Lovable) → debriefing → daily/sprint. Qualificação por 2 eixos (proximidade × faturamento). | 2026-06-25
+- Métricas-âncora (HISTÓRICO, não confirmado): ROAS-base ≈1.41, LTV ≈8.45, funil ≈207:10 (pesquisa→venda). Retrato, não meta. | 2026-06-25
+
 ## Candidatos a Promoção
 <!-- Padrões vistos em 3+ agentes — candidatos para CLAUDE.md ou regras centrais -->
 - **Travar premissas de negócio com o usuário antes de aplicar framework quando `sobre-a-empresa/` está rascunho** | Origem: hormozi-chief (Pluto); aplicável a Aletheia, Olimpo, Themis, Pheme | Detectado: 2026-06-23

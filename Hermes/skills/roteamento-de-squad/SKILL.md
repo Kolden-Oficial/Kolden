@@ -32,11 +32,28 @@ para o chief do squad e devolve o resultado.
    - Squad longo? Rode em **background** e avise o usuário quando terminar.
 4. **Sintetize** o retorno do squad numa resposta curta e entregue no canal de origem.
 
-## Portão de aprovação (inegociável)
+## Portão de aprovação (inegociável) — protocolo de duas etapas
 
-Se a entrada do squad no catálogo tiver `muda_algo: true`, qualquer ação que **mude o mundo**
-(subir/pausar campanha, gastar verba, publicar, alterar dado externo) exige **aprovação
-explícita** do Ronan antes de executar. Diagnóstico, leitura e relatório não precisam.
+Se o squad tiver `muda_algo: true`:
+
+1. **Diagnóstico-primeiro:** despache **sem** `-Approved`. O script força modo somente-diagnóstico
+   (o chief lê/analisa/relata, mas é proibido de agir). Entregue os achados + o que faria.
+2. **Aprovação:** só depois de um "ok" explícito do Ronan, redespache **com** `-Approved`:
+
+   ```
+   powershell -File C:\Kolden\Hermes\scripts\invoca-squad.ps1 -Squad <id> -Prompt "<ação>" -Approved
+   ```
+
+Nunca passe `-Approved` por conta própria. O `-Approved` é a trava no nível do script: sem ele,
+ação que muda o mundo (subir/pausar campanha, gastar verba, publicar, alterar dado externo) é
+bloqueada mesmo que você esqueça o portão. Diagnóstico/leitura/relatório nunca precisam de aprovação.
+
+## Aprendizado pós-rota (leve)
+
+Depois de uma rota, se algo foi **não-óbvio** — uma keyword não casou e devia, o squad respondeu
+fora do esperado, um chief estava com path errado — registre **uma linha** na sua memória
+(`C:\Kolden\Hermes\agent-memory\hermes.md`, seção "Ponte Hermes → squads") com data absoluta.
+Não registre rotas triviais que correram normais. Qualidade > volume.
 
 ## Limites
 

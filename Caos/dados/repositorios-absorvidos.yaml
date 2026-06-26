@@ -16,7 +16,8 @@
 #         seguranca: SAFE | QUARENTENA | REJEITAR
 #         decisao: REUSE | ADAPT | CREATE
 #         squadAlvo: <id do squad que recebeu a absorção, ou "-" se rejeitado>
-#         capacidades: [lista das capacidades absorvidas/aprimoradas]
+#         capacidades_absorvidas: [IDs do inventario-de-capacidades.md, ex.: G2, G21]   # NÃO prosa
+#         capacidades_descartadas: [IDs do inventário descartados, ex.: G13]            # cada um com motivo no relatorio-de-perda.md
 #         entidades: [ids registrados em registro-de-entidades.yaml nesta absorção]
 #         notas: "uma linha"
 #     licenca: <SPDX, se conhecida>
@@ -28,23 +29,24 @@
 #   repo presente, SHA atual != último-> JÁ-ABSORVIDO (SHA mais novo): modo incremental (diff do delta)
 #   repo presente com status rejeitado-> RE-AVALIAR só se o Ronan insistir; senão manter bloqueio
 
-versao_do_ledger: "1.0.0"
-atualizado_em: "2026-06-22"
+versao_do_ledger: "1.1.0"   # capacidades por ID (absorvidas/descartadas) — protocolo-de-absorcao-sem-perda
+atualizado_em: "2026-06-26"
 
 repositorios:
   github.com/coreyhaines31/marketingskills:
     url: "https://github.com/coreyhaines31/marketingskills"
     shas:
       - sha: "8bfcdffb655f16e713940cd04fb08891899c47db"
-        absorvidoEm: "2026-06-22T00:00:00Z"
-        seguranca: QUARENTENA  # conteúdo markdown limpo; ressalva: validate-skills-official.sh faz git clone+pip sem pin (script opt-in, nunca executado/absorvido)
-        decisao: PARCIAL
-        squadAlvo: "caliope(REUSE), pluto/peitho/metis/pheme/aglaia(ADAPT pendente), seo(CREATE pendente)"
-        capacidades: ["45 skills de marketing (copy, ads, cro, analytics, social, offers, pricing, SEO)", "padrão evals/ por skill", "64 CLIs zero-dep"]
-        entidades: []  # preenchido conforme as absorções aprovadas forem aplicadas
-        notas: "Teste do pipeline /absorver. Copy já coberto pelo Caliope (REUSE). Lacuna real: SEO de execução (CREATE squad). Valor transversal: padrão evals/. Aprovado pelo Ronan: criar squad SEO + absorver evals + clusters."
+        absorvidoEm: "2026-06-26T00:00:00Z"   # re-execução corretiva F0→F7 (1ª passagem 2026-06-22 parou parcial na F5)
+        seguranca: SAFE  # para absorção ESTÁTICA de padrões markdown; itens de risco isolados como NÃO-ABSORVÍVEIS (validate-skills-official.sh, injeção !`cmd`) — ver seguranca.md
+        decisao: "MISTA (CREATE+ADAPT+DESCARTADO)"
+        squadAlvo: "ariadne(CREATE — squad SEO+CRO), caliope(ADAPT G21), argos(ADAPT G18/G19), sobre-a-empresa/Ferramentas(ADAPT G6/G7/G8/G9/G17/G20), caos-fabrica(ADAPT G2/G3/G5/G11/G12/G14/G15/G16)"
+        capacidades_absorvidas: [G1, G2, G3, G5, G6, G7, G8, G9, G11, G12, G14, G15, G16, G17, G18, G19, G20, G21, G22]
+        capacidades_descartadas: [G4, G10, G13]   # cada um com motivo em registros/absorcao/<repo>/relatorio-de-perda.md
+        entidades: [ariadne]
+        notas: "Reabsorção reconciliada F0→F7 — fecha a dívida de TPND=1.0 de 2026-06-22. 19 ABSORVIDO + 3 DESCARTADO + 0 PERDIDO = 22; gate-reconciliacao.py OK (exit 0). Os 8 ADAPTs de fábrica (G2/G3/G5/G11/G12/G14/G15/G16) foram EXECUTADOS em 2026-06-26 (criacao-de-skill + modelos/convencao-de-cli-e-tooling.md + ingestao-de-repositorio), por decisão do Ronan — não deferidos. DESCARTADO só G4 (código literal), G10 (escopo), G13 (segurança). Quarentena preservada (há DESCARTADO)."
     licenca: "MIT"
-    status: parcial
+    status: absorvido
 
   # Cada nova absorção (/absorver) preenche este bloco via Fase 7.
   # Exemplo (apague quando o primeiro repo real for absorvido):
@@ -57,7 +59,8 @@ repositorios:
   #       seguranca: SAFE
   #       decisao: ADAPT
   #       squadAlvo: caliope
-  #       capacidades: ["framework de VSL X", "técnica de headline Y"]
+  #       capacidades_absorvidas: [G2, G21]   # IDs do inventario-de-capacidades.md (nunca prosa)
+  #       capacidades_descartadas: [G13]      # cada um com motivo no relatorio-de-perda.md
   #       entidades: [caliope]
   #       notas: "Absorveu 2 técnicas ausentes no Caliope; aprovado pelo Ronan."
   #   licenca: "MIT"

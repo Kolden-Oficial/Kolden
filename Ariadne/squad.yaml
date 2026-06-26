@@ -1,0 +1,132 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Ariadne
+# Domínio: Execução de SEO (técnico + conteúdo) e CRO de Página
+# Versão: 1.0.0
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: ariadne
+  display_name: "Ariadne — Execução de SEO & CRO de Página (o fio que guia do labirinto à conversão)"
+  version: "1.0.0"
+  domain: "SEO de execução (técnico, on-page, programático, schema, arquitetura, AI-SEO) + CRO de página (framework, experimentos, formulário)"
+  description: |
+    Squad de EXECUÇÃO de SEO e otimização de conversão de página. Onde o Argos descobre
+    (SERP, keywords, backlinks, concorrência) e o Caliope escreve a copy, a Ariadne ESTRUTURA,
+    OTIMIZA e CONVERTE: audita o SEO técnico (crawlabilidade, indexação, Core Web Vitals),
+    desenha a arquitetura de informação (siloing, clusters, links internos), implementa dados
+    estruturados (JSON-LD), produz conteúdo SEO em escala (programmatic), otimiza para AI search
+    (ser citado por LLMs) e roda CRO de página por hipótese testável (framework de 8 dimensões,
+    biblioteca de experimentos, otimização de formulário).
+
+    Ariadne é a princesa de Creta que deu a Teseu o fio para atravessar o labirinto do Minotauro
+    e voltar vivo: o squad é o fio que conduz tanto o crawler quanto o usuário pelo labirinto da
+    página — da descoberta na busca até a conversão no objetivo. É camada de EXECUÇÃO: recebe
+    inteligência do Argos, faz handoff de copy ao Caliope, de medição ao Metis e de marca ao Aglaia.
+  keywords: [seo, seo-tecnico, technical-seo, auditoria-seo, seo-audit, on-page, crawlabilidade, indexacao, core-web-vitals, page-speed, robots, sitemap, canonical, hreflang, arquitetura-de-site, site-architecture, siloing, topical-cluster, links-internos, internal-linking, schema, dados-estruturados, json-ld, rich-results, programmatic-seo, seo-em-escala, conteudo-seo, ai-seo, aeo, geo, llmo, ai-overviews, busca-generativa, cro, conversao, conversion-rate, otimizacao-de-conversao, landing-page, formulario, form-optimization, experimento, ab-test, hipotese, friccao, value-proposition]
+  entry_agent: ariadne-chief
+  created_at: "2026-06-25"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [ariadne-chief]
+    purpose: "Triagem (SEO técnico / conteúdo / CRO), roteamento, QA contra o gate de qualidade e handoffs. Não executa diretamente."
+  tier_1:
+    name: "Execução de SEO"
+    agents: [auditor-tecnico-seo, arquiteto-de-site, engenheiro-de-schema, estrategista-de-conteudo-seo, otimizador-ai-seo]
+    purpose: "Auditoria técnica, arquitetura de informação, dados estruturados, conteúdo on-page/programático, otimização para AI search."
+  tier_2:
+    name: "Otimização de Conversão (CRO)"
+    agents: [analista-de-cro, otimizador-de-formulario]
+    purpose: "CRO de página (framework de 8 dimensões + biblioteca de experimentos) e otimização de formulário, sempre por hipótese testável."
+
+agents:
+  ariadne-chief:
+    file: agents/ariadne-chief.md
+    tier: 0
+    icon: "🧵"
+    focus: "Orquestração, triagem SEO técnico/conteúdo/CRO, roteamento, gate de qualidade e handoffs (Argos/Caliope/Metis/Aglaia)"
+  auditor-tecnico-seo:
+    file: agents/auditor-tecnico-seo.md
+    tier: 1
+    icon: "🔧"
+    focus: "Auditoria de SEO técnico: crawlabilidade, indexação, Core Web Vitals, canonical/hreflang, robots/sitemap (PageSpeed/GSC)"
+  arquiteto-de-site:
+    file: agents/arquiteto-de-site.md
+    tier: 1
+    icon: "🗂️"
+    focus: "Arquitetura de informação: siloing, clusters tópicos, links internos, estrutura de URL, profundidade de clique"
+  engenheiro-de-schema:
+    file: agents/engenheiro-de-schema.md
+    tier: 1
+    icon: "🏷️"
+    focus: "Dados estruturados JSON-LD: tipos schema.org, rich results, validação, schema por tipo de página"
+  estrategista-de-conteudo-seo:
+    file: agents/estrategista-de-conteudo-seo.md
+    tier: 1
+    icon: "✍️"
+    focus: "On-page + programmatic-seo: intenção de busca, otimização on-page, conteúdo SEO em escala por template, E-E-A-T"
+  otimizador-ai-seo:
+    file: agents/otimizador-ai-seo.md
+    tier: 1
+    icon: "🤖"
+    focus: "AI-SEO (AEO/GEO/LLMO): ser citado por LLMs e AI Overviews — estrutura, autoridade, presença, llms.txt"
+  analista-de-cro:
+    file: agents/analista-de-cro.md
+    tier: 2
+    icon: "📈"
+    focus: "CRO de página: framework de 8 dimensões (value-prop→fricção), biblioteca de experimentos por tipo de página, por hipótese testável"
+  otimizador-de-formulario:
+    file: agents/otimizador-de-formulario.md
+    tier: 2
+    icon: "📝"
+    focus: "CRO de formulário: redução/ordem de campos, multi-step, tratamento de erro, redução de abandono"
+
+handoffs:
+  # Roteamento interno (orquestrador → especialistas)
+  ariadne-chief:
+    routes_to: [auditor-tecnico-seo, arquiteto-de-site, engenheiro-de-schema, estrategista-de-conteudo-seo, otimizador-ai-seo, analista-de-cro, otimizador-de-formulario]
+  auditor-tecnico-seo:
+    escalates_to: [ariadne-chief, arquiteto-de-site]
+  arquiteto-de-site:
+    escalates_to: [ariadne-chief, engenheiro-de-schema]
+  engenheiro-de-schema:
+    escalates_to: [ariadne-chief]
+  estrategista-de-conteudo-seo:
+    escalates_to: [ariadne-chief, otimizador-ai-seo]
+  otimizador-ai-seo:
+    escalates_to: [ariadne-chief, estrategista-de-conteudo-seo]
+  analista-de-cro:
+    escalates_to: [ariadne-chief, otimizador-de-formulario]
+  otimizador-de-formulario:
+    escalates_to: [ariadne-chief, analista-de-cro]
+
+# Handoffs externos: Ariadne executa SEO/CRO; consome inteligência e delega o que não é seu.
+external_handoffs:
+  inteligencia_de_busca:
+    from: argos
+    artifact: "Keywords, SERP, keyword gap, footprint do concorrente, backlinks → insumo de arquitetura, conteúdo e auditoria"
+  copy_de_pagina:
+    to: caliope
+    artifact: "Briefing de página otimizada (estrutura, seções, intenção, keyword-alvo) → copy persuasiva (Ariadne NÃO escreve copy)"
+  medicao_e_analytics:
+    to: metis
+    artifact: "Hipóteses de experimento + eventos a medir → instrumentação, leitura de resultado e North Star"
+  consistencia_de_marca:
+    to: aglaia
+    artifact: "Recomendações de página/conteúdo → checagem de consistência de marca (tom, identidade)"
+
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad — viram reflexo PreToolUse (mecânico) + checklist + checkpoint de workflow (semântico).
+  veto:
+    sem_black_hat: "HALT em qualquer recomendação de black-hat/cloaking/PBN/keyword-stuffing/conteúdo enganoso. SEO é sustentável ou não é."
+    recomendacao_sem_dado: "HALT em recomendação de SEO apresentada como fato sem fonte/dado (auditoria, GSC, PageSpeed, doc oficial). Sem dado, rotular como hipótese."
+    cro_sem_hipotese: "HALT em mudança de CRO vendida como verdade absoluta. Toda mudança de impacto vira HIPÓTESE testável (o que muda, por quê, como medir)."
+    copy_e_handoff: "HALT se a Ariadne for escrever a copy final da página — isso é do Caliope. A Ariadne entrega estrutura/intenção e faz handoff."
+
+settings:
+  activation:
+    prefix: "ariadne"
+    example: "@ariadne:auditor-tecnico-seo"

@@ -58,3 +58,24 @@ Espelho do material recebido do designer (guilherme asla, ago/2023). Não editar
 
 > Os arquivos `SIMBOLO 01–10` (em `COM FUNDO/`) são variações do símbolo do K com fundo;
 > para o símbolo isolado em vetor, recortar a partir do horizontal SVG correspondente.
+
+## Procedência (Google Drive — fonte canônica)
+
+Os arquivos em `originais/` são um espelho local da pasta **`05 | Fundação › 01 | Identidade Visual`**
+do Google Drive da Kolden. Caso precise da fonte canônica (versões mais recentes, novos formatos),
+estas são as pastas-mãe no Drive por `fileId`:
+
+| Pasta local (`originais/`) | Pasta no Drive | Drive fileId |
+|---|---|---|
+| `01-apresentacao/` | `01 \| Apresentação` | `1-NQivTCBNE2xnazy9E2W310VCeuGiq5K` |
+| `02-auxiliares/` | `02 \| Auxiliares` | `1-kz5-amlPGczWNwh5Gth3_KKSC_dwkep` |
+| `03-logo/COM FUNDO/` | `03 \| Logo › COM FUNDO` | `10WgU2XWCxDe87B9aBLBmWPRMN-kfkCs1` |
+| `03-logo/FUNDO CHAMADA/` | `03 \| Logo › FUNDO CHAMADA` | `13IjLVoV5hMIB21hmygu4cKwng1T4J4Rx` |
+| `03-logo/SEM FUNDO/` | `03 \| Logo › SEM FUNDO` | `10V8G61u_w3touyyQSmeMAvMZeMccHwN0` |
+| `04-logo-antiga/` | `04 \| Logo Antiga` | `12R8q_3cAxYBlDMqqYLO2rmpED6F4KCOY` |
+| `05-mockups/` | `05 \| Mockups` | `1qBeBWt50jwDmdriiSteKCA4HS3hKhLJg` |
+| `06-referencias/` | `06 \| Referências` | `1-nfr95h9TX5IaVE5EQ1qig8UDF5wSiaj` |
+
+Raiz: `01 | Identidade Visual` = `1-CS-Cv95WFNtWexBhkUMayN2EdAvTmQ9` (dentro de `05 | Fundação` =
+`1A9ZiUbkJ0bsgbseCzcagwWR3iBaOXcgL`). Inventário arquivo-a-arquivo com todos os 61 fileIds:
+`Caos/registros/absorcao/drive--05-fundacao/inventario.md`.

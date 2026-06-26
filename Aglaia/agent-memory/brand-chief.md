@@ -22,6 +22,10 @@
 - Rastreabilidade: cada item do roadmap aponta a ≥1 ID de achado; achados "preservar" (nota alta) corretamente NÃO geram item de roadmap. Verificar por GREP de IDs | 2026-06-23
 - Naming como ativo oculto: a Kolden já OPERA arquitetura de naming mitológico grego (15+ squads) mas não a documenta como convenção de marca → formalizar o existente (preservar), não renomear | 2026-06-23
 
+### Assets de marca no Drive — absorção 2026-06-25
+- A área "05 | Fundação" do Drive tem 61 assets de marca REAIS (brand book Doc+PDF, logos horizontal/símbolo com e sem fundo, grafismos, mockups, moodboard) — o mapa de alto nível dizia "vazia"; a varredura arquivo-por-arquivo provou o contrário. | 2026-06-25
+- Os 61 já estão espelhados em `marca/design-system/assets/originais/`; a absorção registrou a PROCEDÊNCIA (fileIds do Drive como fonte canônica) em `marca/design-system/assets/indice-assets.md`. Brand book (autor Guilherme Asla, ago/2023) = fonte primária de cores/tipografia. | 2026-06-25
+
 ## Candidatos a Promoção
 <!-- Padrões vistos em 3+ agentes — candidatos para CLAUDE.md ou regras centrais -->
 - **Guia compartilhado (rubrica+template) antes do fan-out + verificação por GREP sobre o resultado** | Origem: brand-chief, design-chief, (workspace) tradução-em-lote, construção-de-squad | Detectado: 2026-06-23
