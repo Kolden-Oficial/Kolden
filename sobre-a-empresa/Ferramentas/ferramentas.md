@@ -10,7 +10,7 @@ GitHub, fórum, API) e status de MCP.
 > ⚠️ Os secrets estão no **path raiz** de cada ambiente (não em `/kolden/<env>`); por isso usa-se
 > `--projectId`+`--env`, e não `--path`. Ver decisão pendente em `mcp-status.md`.
 
-**Legenda MCP:** ✅ oficial · 🟡 comunidade · 🔌 conector claude.ai (configurável na sessão) · ❌ nenhum
+**Legenda MCP:** ✅ oficial · 🟡 comunidade · 🔌 conector claude.ai (configurável na sessão) · 🧩 host/cliente MCP (consome servidores MCP — é o lado oposto, não um servidor que adicionamos) · ❌ nenhum
 
 ---
 
@@ -63,6 +63,12 @@ GitHub, fórum, API) e status de MCP.
 | Railway | `/kolden/prod/RAILWAY_API_TOKEN` | [Railway](Railway/ferramentas.md) | ✅ |
 | Upstash | `/kolden/prod/UPSTASH_API_KEY` | [Upstash](Upstash/ferramentas.md) | ✅ |
 | GitHub | `/kolden/prod/GITHUB_ACCESS_TOKEN` | [GitHub](GitHub/ferramentas.md) | ✅ |
+
+## 🧩 IDE / Ambiente de Dev
+
+| Ferramenta | Credenciais (Infisical) | Manual | MCP |
+|------------|-------------------------|--------|-----|
+| VSCode *(editor; host/cliente MCP)* | — (editor local; usa as credenciais dos MCP servers que consome, via `${env:...}`/Infisical) | [VSCode](VSCode/ferramentas.md) | 🧩 |
 
 ## 🗄️ Banco de dados / Backend
 

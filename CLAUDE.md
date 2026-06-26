@@ -14,7 +14,7 @@ Princípios:
 
 ## 2. Estado atual
 
-- **Repositório**: `Koldenoficial/Kolden` (https://github.com/Koldenoficial/Kolden.git)
+- **Repositório**: `Kolden-Oficial/Kolden` (https://github.com/Kolden-Oficial/Kolden.git)
 - **Branch principal**: `main`
 - **Ambiente**: WSL2 (Linux 6.6, Ubuntu) em `/home/kolden/kolden/`
 - **Exposição**: localhost-only. Não há reverse proxy, TLS ou tunnel configurado.
