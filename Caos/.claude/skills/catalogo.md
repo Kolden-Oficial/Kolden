@@ -9,6 +9,10 @@ nova habilidade for criada ou removida.
 | `busca-de-referencias` | Fase 2 (Pesquisa), ou pedido de benchmarking | Busca GitHub + Exa + Hugging Face com scorecard ≥7/10; adapta trechos para o Kolden |
 | `geracao-de-prd` | diagnóstico 7/7 completo | Gera o PRD formal para aprovação do usuário antes da construção |
 | `criacao-de-skill` | Fase 5 (Construção), para cada habilidade identificada no PRD | Cria habilidades modulares em `<agente>/.claude/skills/` |
+| `descoberta-de-skill` | ao escrever/revisar a `description` e frontmatter de uma habilidade, ou quando uma skill não é invocada na hora certa | SDO (description = SÓ quando usar) + gatilhos, preamble-tier (carga em camadas), context_queries; superfície de invocação |
+| `validacao-de-skill` | antes de entregar/registrar uma habilidade, ou se há dúvida se ela muda o comportamento | Teste A/B com-skill vs baseline + assertion/scoring + trigger eval (should/should-NOT) + teste de pressão por subagente (RED-GREEN-REFACTOR) |
+| `topologias-de-time` | Fase 3 (Arquitetura) e 5.1 — escolher o padrão de coordenação de um squad | Catálogo de 6 topologias (pipeline/fan-out/expert-pool/producer-reviewer/supervisor/hierárquica) + compostos + orquestradores team/sub/híbrido + dimensionamento |
+| `qa-de-integracao-de-time` | verificar um squad/time montado (ou software gerado por time) onde a junção entre componentes pode estar quebrada | Comparação cruzada de fronteira (boundary mismatch): roster↔agents, agente↔skill, routing↔description; "ler os dois lados"; QA incremental |
 | `criacao-de-subagent` | Fase 5 (Construção), para especialistas identificados no PRD | Cria especialistas em `<agente>/.claude/agents/` |
 | `criacao-de-hooks` | Fase 5 (Construção), para guardrails que precisam de determinismo | Cria reflexos em `<agente>/.claude/reflexos/` |
 | `criacao-de-mcp` | Fase 5.4, quando o PRD pede um MCP/API PRÓPRIO a construir | Wrapper do mcp-builder do Prometeu + camada Kolden (Infisical, registro `tipo: mcp`, pt-BR, checklist N4) |
