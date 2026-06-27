@@ -1,0 +1,105 @@
+# Contrato de Missão — gerado por Hermes/scripts/abre-missao.sh
+# intencao_original LACRADA (não editar). Demais seções preenchidas pelas camadas.
+missao:
+  id: m-20260626-204500-absorve-lote-repos-planilha
+  intencao_original:
+    input_cru: Junto com o @Caos\ quero que você /clone todos os repositório do github que está nessa planilha https://docs.google.com/spreadsheets/d/1OQAS3umei2xCL3aq0-voR-V9Vl-HIB07NFQQrPt363M/edit?usp=sharing é extenso eu sei, pode quebrar por várias etapas, eu ficarei off 24hrs porém gostaria que quando eu voltasse voce já tivesse replicado tudo por conta própria, o que eu preciso fazer ou permitir para que voce conduza 100% solo?
+    canal: cli
+    recebida_em: '2026-06-26T20:45:00-03:00'
+    hash: sha256:c3f767168045278eb87db16f0ed181b0c206d147d8147b3df984797237269337
+  hermes:
+    dor:
+      objetivo_real: Clonar e absorver no workspace Kolden todos os repositórios GitHub clonáveis
+        da planilha repos-claude-github (Google Sheet 1OQAS3...363M), de forma autônoma, enquanto
+        o Ronan está off por 24h, deixando tudo pronto para revisão na volta.
+      criterio_de_sucesso: 31 repos novos clonados em quarentena, auditados por segurança estática
+        (F2), inventariados por capacidade (F3) e absorvidos via ritual do Caos (squads aprimorados
+        / vendors vendorizados / referências arquivadas), tudo no working tree SEM commit, com um
+        relatório-mestre auditável e reversível. 3 não-clonáveis (conectores MCP) e 3 já-presentes
+        documentados como skip.
+      restricoes:
+        prazo: janela de ~24h (Ronan off); entrega assíncrona
+        orcamento: sem custo externo (repos públicos, clone anônimo)
+        proibicoes:
+          - sem git add/commit/push (tudo fica no working tree, reversível)
+          - nunca executar o código de terceiro (Art. VIII; análise 100% estática)
+          - não rebaixar o gate de segurança F2 (repo REJEITAR/QUARENTENA não é absorvido)
+          - sem rm/mv/destrutivo; sem auto-ampliação de permissões
+          - sem cópia literal de material proprietário (extrair padrão, reescrever em pt-BR)
+      contexto:
+        - 'Decisões do Ronan (2026-06-26): (1) absorção PLENA com Hermes decidindo a F5 no lugar
+          dele — delega o gate de aprovação humana (Caos Art. III) só para esta missão; (2) allowlist
+          cirúrgico no settings.local.json.'
+        - Ambiente em "auto mode" com classificador por ação; defaultMode acceptEdits foi negado
+          (guarda anti-auto-promoção), mas o classificador já permite clone/mkdir/escrita benigna.
+        - Mecanismo de absorção pré-existente — skill ingestao-de-repositorio do Caos (F0→F7).
+      nivel_de_risco: vermelho
+    dor_completo: true
+    perguntas_abertas: []
+    matriz_de_risco:
+      reversibilidade: reversivel
+      impacto: alto
+      faixa: vermelho
+      autonomia: executa-e-avisa
+    ordem_de_maquina: 'Para cada um dos 31 repos novos: F0 dedup+SHA, F1 clone --depth 1 em
+      Caos/_staging/quarentena, F2 segurança estática (BLOCK), F3 inventário G-IDs, F4 mapeamento
+      REUSE/ADAPT/CREATE, F5 (decido eu, carimbado), F6 aplicação serializada por bucket de squad-alvo,
+      F6.5 gate-reconciliacao.py por slug (PERDIDO=0), F7 ledger (escritor único). Entrega:
+      RELATORIO-DO-LOTE.md. Sem commit. Repo que travar vira PARCIAL e segue.'
+    assinatura:
+      por: hermes
+      em: '2026-06-26T20:45:00-03:00'
+  zeus:
+    diagnostico: ''
+    decomposicao:
+    - parte: ''
+      executivo_destino: ''
+      motivo: ''
+    paralelo: []
+    consolidacao: ''
+    arbitragem: null
+    assinatura:
+      por: zeus
+      em: ''
+  executivos:
+  - agente: ''
+    especificacao_tecnica: ''
+    handoff_operacional:
+      squad: ''
+      artefato: ''
+    devolucao_lateral: null
+    resultado: ''
+    assinatura:
+      por: ''
+      em: ''
+  operacional:
+  - agente: ''
+    squad: ''
+    resultado: ''
+    riscos_levantados: []
+    propostas: []
+    assinatura:
+      por: ''
+      em: ''
+  dike:
+    confere_hash: false
+    reconciliacao: ''
+    degrau_da_quebra: null
+    justificativa: ''
+    veredito: ''
+    assinatura:
+      por: dike
+      em: ''
+  orcamento:
+    teto_rodadas: 2
+    teto_tempo: ''
+    rodadas_gastas: 0
+  log_de_decisao:
+    - em: '2026-06-26T20:45:00-03:00'
+      por: hermes
+      decisao: 'Rebaixar autonomia de trava-e-pergunta (cor natural vermelha: cria/altera squads,
+        impacto alto) para executa-e-avisa, SÓ para esta missão.'
+      porque: 'Ronan delegou a F5 explicitamente (off 24h, quer entrega pronta na volta) E a
+        salvaguarda zero-commit torna tudo reversível por git checkout — a irreversibilidade
+        arquitetural fica neutralizada porque nada vira commit. Gate de segurança F2 e reconciliação
+        F6.5 permanecem intocados.'

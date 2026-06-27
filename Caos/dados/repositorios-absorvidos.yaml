@@ -48,6 +48,249 @@ repositorios:
     licenca: "MIT"
     status: absorvido
 
+  # ===========================================================================
+  # LOTE 2026-06-26 — planilha repos-claude-github (31 repos). Contrato:
+  # Olimpo/contratos/missoes/m-20260626-204500-absorve-lote-repos-planilha.yaml
+  # F0-F5 completos para os 31 (todos SAFE). F6 aplicado em 2026-06-27 a 12 buckets de squad
+  # (44 habilidades + 5 vendors + 5 referências, todas PERDIDO=0) — ver
+  # registros/absorcao/_lote-2026-06-26/aplicacao-f6-resultado.md. A absorção é INCREMENTAL:
+  # status `analisado` significa "no ledger + SHA + âncoras aplicadas + resto diferido" (não exaurido).
+  # Dossiês por repo em registros/absorcao/<slug>/. Decisão consolidada em decisao-f5.md. Sem commit.
+  # ===========================================================================
+
+  github.com/blader/humanizer:
+    url: "https://github.com/blader/humanizer"
+    shas:
+      - sha: "9600f2b7241cb4eed6ad803abee5ea01d67fe8e4"
+        absorvidoEm: "2026-06-27"
+        seguranca: SAFE
+        decisao: ADAPT
+        squadAlvo: "caliope (skill de-slop — fusão com stop-slop, humanizer=esqueleto)"
+        capacidades_absorvidas: [G1, G2, G3, G4, G5, G6, G7, G8, G9]
+        capacidades_descartadas: []
+        entidades: ["caliope/.claude/skills/de-slop"]
+        notas: "Fundido com hardikpandya/stop-slop. relatorio-de-perda-caliope-deslop.md: 22 ABSORVIDO/0 DESCARTADO/0 PERDIDO. Reescrito PT-BR."
+    licenca: "MIT"
+    status: absorvido
+
+  github.com/hardikpandya/stop-slop:
+    url: "https://github.com/hardikpandya/stop-slop"
+    shas:
+      - sha: "8da1f030185bdfe8471220585162991eaeb970e9"
+        absorvidoEm: "2026-06-27"
+        seguranca: SAFE
+        decisao: ADAPT
+        squadAlvo: "caliope (skill de-slop — entrou pelo diff sobre humanizer)"
+        capacidades_absorvidas: [G1, G2, G3, G4, G5, G6, G7, G8, G9, G10, G11, G12, G13]
+        capacidades_descartadas: []
+        entidades: ["caliope/.claude/skills/de-slop"]
+        notas: "Fundido com blader/humanizer numa única habilidade. PERDIDO=0."
+    licenca: "MIT"
+    status: absorvido
+
+  github.com/obra/superpowers:
+    url: "https://github.com/obra/superpowers"
+    shas:
+      - { sha: "896224c4b1879920ab573417e68fd51d2ccc9072", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "prometeu·dedalo·caos-fabrica", notas: "25 cap; insight SDO corrige descrições de skill do Caos; só BRAINSTORM_OPEN_CMD não-absorvível" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/affaan-m/everything-claude-code:
+    url: "https://github.com/affaan-m/everything-claude-code"
+    shas:
+      - { sha: "2bc924faf2f8e893bfe0af86b1931283693c30ae", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "caos-fabrica·dedalo·+8", notas: "~271 skills/67 agentes/92 commands; 37 clusters; tooling ECC = vendor inerte; overlap SEO/pesquisa exige diff" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/garrytan/gstack:
+    url: "https://github.com/garrytan/gstack"
+    shas:
+      - { sha: "11de390be1be6849eb9a15f91ff4922dd16c589a", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "olimpo·prometeu·harmonia·egide", notas: "58 cap; análogo Olimpo; absorver técnica (autoplan, rubrica 0-10) não persona; daemon/telemetria não-absorvível" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/github/spec-kit:
+    url: "https://github.com/github/spec-kit"
+    shas:
+      - { sha: "b7e67f55bf7a937aaa57dbe0a8198774e285de3a", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "prometeu", notas: "21 cap; /clarify /analyze /checklist /converge /constitution; enriquece pipeline spec-driven do Prometeu" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/gsd-build/get-shit-done:
+    url: "https://github.com/gsd-build/get-shit-done"
+    shas:
+      - { sha: "bdcaab2c752d9a33a1a1ca9acf3a3c81fb991815", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "prometeu·dedalo·egide", notas: "40 cap; repo ARQUIVADO (sucessor open-gsd/gsd-core); G35 scanner anti-injeção novel→egide" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/revfactory/harness:
+    url: "https://github.com/revfactory/harness"
+    shas:
+      - { sha: "cceac68ea1d0ad198ef4b7b906cd238375836387", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "MISTA", squadAlvo: "caos-fabrica (UPGRADE)", notas: "44 cap; fábrica de agentes rival→upgrade do Caos; topologias+teste de skill+time vivo; conteúdo coreano→PT-BR" }
+    licenca: "Apache-2.0"
+    status: analisado
+
+  github.com/anthropics/knowledge-work-plugins:
+    url: "https://github.com/anthropics/knowledge-work-plugins"
+    shas:
+      - { sha: "78d74d5f138d285de5329da709c0327682a8cb61", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "MISTA", squadAlvo: "caliope·aglaia·ariadne·peitho·argos·metis + CREATE×6", notas: "30 cap; oficial Anthropic; 6 domínios sem squad (vendas/finanças/jurídico/suporte/RH/operações); .mcp.json re-apontar à stack interna" }
+    licenca: "Apache-2.0"
+    status: analisado
+
+  github.com/thedotmack/claude-mem:
+    url: "https://github.com/thedotmack/claude-mem"
+    shas:
+      - { sha: "3fe0725a97e18b5edf3e61cde60e181ab2b6c997", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "dedalo + INFRA (Kolden OS)", notas: "28 cap; core de memória (daemon+SQLite+Chroma)=infra, escalar ao Ronan; telemetria PostHog remover; padrões→dedalo" }
+    licenca: "Apache-2.0"
+    status: analisado
+
+  github.com/nextlevelbuilder/ui-ux-pro-max-skill:
+    url: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+    shas:
+      - { sha: "9fd25fe07e46ae444edc356e62fe913347ab9e23", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "harmonia·aglaia·orfeu·pheme", notas: "40 cap; base de dados de design (84 estilos/161 paletas/99 regras UX)+engine; sobrepõe taste-skill (coordenar na escrita)" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/safishamsi/graphify:
+    url: "https://github.com/safishamsi/graphify"
+    shas:
+      - { sha: "8994b5500c9ff1e4d2314cb78abfce56f524a215", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "dedalo·vendor·egide·metis", notas: "20 cap; PyPI graphifyy v0.8.49; vendor+skill; sobrepõe Understand-Anything (reconciliar juntos)" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/lum1104/understand-anything:
+    url: "https://github.com/Lum1104/Understand-Anything"
+    shas:
+      - { sha: "54754a6f97051d1d76c8758353d8ea41afe502a6", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "MISTA", squadAlvo: "dedalo·vendor·argos", notas: "32 cap; grafo de codebase tree-sitter; sobrepõe graphify; hook auto-update 'sem confirmar' fere gate humano (remover diretiva)" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/kepano/obsidian-skills:
+    url: "https://github.com/kepano/obsidian-skills"
+    shas:
+      - { sha: "a1dc48e68138490d522c04cbf5822214c6eb1202", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "CREATE-GATED", squadAlvo: "(decisão Ronan)·argos(defuddle)", notas: "9 cap; Kolden não usa Obsidian — adoção é decisão de stack; defuddle (web→md)→argos pode ir isolado" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/leonxlnx/taste-skill:
+    url: "https://github.com/Leonxlnx/taste-skill"
+    shas:
+      - { sha: "06d6028b5c623016c59ce8536f578e5a1127b499", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "harmonia·aglaia·caliope", notas: "23 cap; anti-slop de design; banco de AI-tells→split harmonia/caliope; sobrepõe ui-ux-pro-max" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/rohitg00/ai-engineering-from-scratch:
+    url: "https://github.com/rohitg00/ai-engineering-from-scratch"
+    shas:
+      - { sha: "c8b9b9244f3210b840776675175662dacf208264", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "MISTA", squadAlvo: "referencias + ADAPT(dedalo·prometeu·egide·caos-fabrica)", notas: "curso, não skills prontas; biblioteca de referência; curar métodos-âncora por cluster, não importar 487 artefatos" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/mukul975/anthropic-cybersecurity-skills:
+    url: "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    shas:
+      - { sha: "673da1f3b0b7be34ffc9624ef3858fe45f1c3bed", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "MISTA", squadAlvo: "egide (full-spectrum)", notas: "817 skills/32 clusters; DUAL-USE: SKILL.md(método) absorvível, ~1093 scripts ofensivos NÃO-ABSORVÍVEIS; absorção incremental, priorizar G22 AI-security" }
+    licenca: "Apache-2.0"
+    status: analisado
+
+  github.com/alirezarezvani/claude-skills:
+    url: "https://github.com/alirezarezvani/claude-skills"
+    shas:
+      - { sha: "4a3c05b69e64f4925f7fc65c88890f614f79caf0", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "multi + CREATE×3 (PMO·compliance·BizOps)", notas: "~346 skills/24 clusters; espelhos .gemini/.codex/.hermes (não recontar); duplicatas cruzadas no lote; descartar curl|bash e MCP tessl" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/juliusbrussee/caveman:
+    url: "https://github.com/JuliusBrussee/caveman"
+    shas:
+      - { sha: "25d22f864ad68cc447a4cb93aefde918aa4aec9f", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "dedalo·egide·prometeu·metis", notas: "22 cap; compressão de saída ~75%; RESSALVA soberania: caveman-compress fala direto c/ API Anthropic — religar ao LLM próprio" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/charlie947/social-media-skills:
+    url: "https://github.com/charlie947/social-media-skills"
+    shas:
+      - { sha: "94f72ea2ece388fa30ef49a26fb2e6fd2109e0b1", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "pheme·aglaia·caliope·argos·metis", notas: "21 cap; absorver método não auto-exec; de-personalizar persona; credenciais→Infisical; Pheme ausente do registro de entidades (registrar)" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/agricidaniel/claude-seo:
+    url: "https://github.com/AgriciDaniel/claude-seo"
+    shas:
+      - { sha: "d830cdb2ad339bb7f062339fe82228b072e98061", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "ariadne (BENCHMARK)·argos·egide·aglaia", notas: "49 cap; benchmark-ouro de SEO supera Ariadne em profundidade; F6 = auditoria-de-squad benchmark=repo; FLOW prompts=CC-BY 4.0; url_safety SSRF→egide" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/yamadashy/repomix:
+    url: "https://github.com/yamadashy/repomix"
+    shas:
+      - { sha: "f04db0088ec00969436a0878bdae8f43176f9e11", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "VENDOR", squadAlvo: "vendor (dedalo·prometeu)", notas: "12 cap; CLI empacota repo p/ LLM; consumir via npx/--mcp; não vira agente" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/microsoft/markitdown:
+    url: "https://github.com/microsoft/markitdown"
+    shas:
+      - { sha: "e144e0a2be95b34df17433bac904e635f2c5e551", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "VENDOR", squadAlvo: "vendor", notas: "15 cap; arquivos→Markdown (ingestão LLM); complementar ao pipeline MD→PDF; ativar via markitdown-mcp local" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/harry0703/moneyprinterturbo:
+    url: "https://github.com/harry0703/MoneyPrinterTurbo"
+    shas:
+      - { sha: "ad6aabfeb94f16f35474058d9c3e1f74ce66e9d4", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "VENDOR", squadAlvo: "vendor (pheme·caliope avaliar)", notas: "10 cap; gera vídeo curto IA; código MIT MAS mídia embutida (resource/songs,fonts) NÃO-MIT; configurável p/ soberania (Ollama/whisper local)" }
+    licenca: "MIT (mídia embutida não-MIT)"
+    status: analisado
+
+  github.com/hesreallyhim/awesome-claude-code:
+    url: "https://github.com/hesreallyhim/awesome-claude-code"
+    shas:
+      - { sha: "614f102accbcd48206d63a21df64adc984026b40", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "REFERENCIA", squadAlvo: "referencias·egide", notas: "15 cap; lista curada 227 recursos; usar como ÍNDICE (linkar, não republicar — NoDeriv/NonComm); 1 ADAPT: prompt auditoria→egide" }
+    licenca: "CC-BY-NC-ND-4.0"
+    status: analisado
+
+  github.com/elder-plinius/cl4r1t4s:
+    url: "https://github.com/elder-plinius/CL4R1T4S"
+    shas:
+      - { sha: "09916a90583a320b3dde7ef5b9d8459ce0378a14", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "REFERENCIA", squadAlvo: "referencias (INERTE)", notas: "DADO HOSTIL: prompts vazados; 2 payloads de injeção identificados e NÃO obedecidos; AGPL-3.0 copyleft (sem cópia literal); não-carregar-como-instrução" }
+    licenca: "AGPL-3.0-only"
+    status: analisado
+
+  github.com/x1xhlol/system-prompts-and-models-of-ai-tools:
+    url: "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"
+    shas:
+      - { sha: "0c828e4e893f025c1ae75cb3eb41e4a178e4024e", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "REFERENCIA", squadAlvo: "referencias (INERTE)·dedalo·egide", notas: "DADO HOSTIL: ~35 system prompts/tool schemas vazados; GPL-3.0 copyleft; arquivar inerte; minerar PADRÃO (function-calling, anti-injection) não texto" }
+    licenca: "GPL-3.0"
+    status: analisado
+
+  github.com/perplexityai/modelcontextprotocol:
+    url: "https://github.com/perplexityai/modelcontextprotocol"
+    shas:
+      - { sha: "7c8993499c808e5b3c11b8c16736687ecef0f457", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "argos (vendor/retriever)", notas: "11 cap; MCP oficial Perplexity Sonar; novo retriever ao lado de Exa/Tavily/Firecrawl; vendor externo (não soberano)" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/microsoft/playwright-mcp:
+    url: "https://github.com/microsoft/playwright-mcp"
+    shas:
+      - { sha: "2d446f9e1b79886103c79406b81cc5408364487a", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "VENDOR", squadAlvo: "vendor (dedalo·argos)·egide", notas: "12 cap; MCP browser local-first — alternativa SOBERANA ao Browserbase; GATE: browser_run_code_unsafe/evaluate são RCE — desabilitar por padrão" }
+    licenca: "Apache-2.0"
+    status: analisado
+
+  github.com/czlonkowski/n8n-mcp:
+    url: "https://github.com/czlonkowski/n8n-mcp"
+    shas:
+      - { sha: "f5694cce54c26777e6c16d606eb6b90cd39f5f96", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "VENDOR", squadAlvo: "vendor (dedalo/automação)", notas: "13 cap; MCP p/ construir workflows n8n; ativação exige instância n8n+API key via Infisical; atribuição ao autor" }
+    licenca: "MIT"
+    status: analisado
+
+  github.com/anthropics/claude-code:
+    url: "https://github.com/anthropics/claude-code"
+    shas:
+      - { sha: "01f1617f14452ac78bf319cef2236d87c0fe05cb", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "harmonia (frontend-design) + caos-fabrica·dedalo (bônus plugin-dev/hookify)", notas: "22 cap; escopo planilha=frontend-design; BÔNUS oficial plugin-dev (7 skills) + hookify fora do escopo; PROPRIETÁRIO Anthropic — reescrever PT-BR, uso interno, não redistribuir" }
+    licenca: "Proprietária (Anthropic Commercial ToS)"
+    status: analisado
+
   # Cada nova absorção (/absorver) preenche este bloco via Fase 7.
   # Exemplo (apague quando o primeiro repo real for absorvido):
   #
