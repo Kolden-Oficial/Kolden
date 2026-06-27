@@ -393,6 +393,72 @@ ferramentas:
     mcp: nenhum
     status: sem-api
 
+  # ── Vendors inertes (registrados, não instalados — lote _lote-2026-06-26) ────
+  # status: vendor-registrado => código NÃO copiado; consumir sob demanda via npx/MCP/self-host.
+  repomix:
+    categoria: engenharia-contexto-llm
+    proposito: "CLI que empacota um repo inteiro em 1 arquivo AI-friendly p/ contexto de LLM (+modo MCP)."
+    gatilhos: [empacotar-repo, contexto-llm, codebase, pack, repomix, dump-de-codigo]
+    acesso: [cli, mcp]
+    credencial: "n/a (sem API key)"
+    mcp: comunidade
+    status: vendor-registrado
+    licenca: MIT
+    sha: f04db0088ec00969436a0878bdae8f43176f9e11
+    consumo: "npx repomix  |  npx repomix --mcp"
+    consumidores: [dedalo, prometeu]
+  markitdown:
+    categoria: conversao-documentos
+    proposito: "Converte arquivos diversos (Office/PDF/HTML/imagem/áudio/YouTube) p/ Markdown legível por LLM."
+    gatilhos: [arquivo-para-markdown, ingestao-llm, pdf-para-texto, docx, conversao-documento, ocr]
+    acesso: [cli, mcp, api]
+    credencial: "n/a (Azure/LLM Vision opcionais via Infisical, se ativados)"
+    mcp: comunidade
+    status: vendor-registrado
+    licenca: MIT
+    sha: e144e0a2be95b34df17433bac904e635f2c5e551
+    consumo: "uvx markitdown <arquivo>  |  uvx markitdown-mcp (local)"
+  moneyprinterturbo:
+    categoria: producao-video
+    proposito: "App self-host que gera vídeo curto HD (9:16/16:9) a partir de um tópico (roteiro→stock→TTS→legenda→render)."
+    gatilhos: [video-curto, shorts, reels, geracao-de-video, tts, render-video, b-roll]
+    acesso: [self-host, cli, api, ui]
+    credencial: "config.toml do operador (chaves via Infisical ao integrar)"
+    mcp: nenhum
+    status: vendor-registrado
+    licenca: "MIT (mídia embutida NÃO-MIT)"
+    sha: ad6aabfeb94f16f35474058d9c3e1f74ce66e9d4
+    consumo: "Docker self-host (bind 127.0.0.1); usar LLM/TTS locais p/ soberania; g4f desligado"
+    consumidores: [pheme, caliope]
+    ressalva: "soberania configurável; cross-post embutido sobrepõe Postiz/GHL — não adotar sem decisão"
+  playwright-mcp:
+    categoria: browser-automacao
+    proposito: "Servidor MCP de controle de navegador local-first (~68 tools, árvore de acessibilidade) — alternativa soberana ao Browserbase (cloud)."
+    gatilhos: [navegador, browser, automacao-web, playwright, snapshot, formulario, qa-ui, local-first]
+    acesso: mcp
+    credencial: "n/a (segredos de logins-alvo via Infisical)"
+    mcp: comunidade
+    status: vendor-registrado
+    licenca: Apache-2.0
+    sha: 2d446f9e1b79886103c79406b81cc5408364487a
+    consumo: "npx @playwright/mcp@latest (--headless --isolated)"
+    governanca: dedalo
+    consumidores: [argos]
+    ressalva: "GATE: browser_run_code_unsafe/browser_evaluate (RCE-equivalente) desabilitados por padrão; allowlist + navegador isolado (Égide)"
+  n8n-mcp:
+    categoria: automacao
+    proposito: "Servidor MCP p/ construir/validar/deployar workflows n8n (doc de ~2.063 nós + ~2.352 templates, ~24 tools)."
+    gatilhos: [n8n, workflow, automacao, integracao, no-code, deploy-workflow]
+    acesso: mcp
+    credencial: "N8N_API_URL + N8N_API_KEY via Infisical (só p/ tools de gestão)"
+    mcp: comunidade
+    status: vendor-registrado
+    licenca: MIT
+    sha: f5694cce54c26777e6c16d606eb6b90cd39f5f96
+    consumo: "npx n8n-mcp (doc/validação sem instância; gestão exige API n8n)"
+    governanca: dedalo
+    ressalva: "com API configurada cria/altera/exclui workflows na instância — apontar p/ instância controlada"
+
 # ── Notas ────────────────────────────────────────────────────────────────────
 # - Ferramentas com `gate_busca: true` exigem declarar ferramenta+nível e aguardar o Ronan
 #   ANTES de usar (direta ou via subagente). Leitura first-party (GA4/GSC/GTM/Ads, Drive) NÃO dispara.

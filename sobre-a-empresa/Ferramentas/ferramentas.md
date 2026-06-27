@@ -117,6 +117,25 @@ GitHub, fórum, API) e status de MCP.
 | Windsor.ai *(dados de marketing/ETL)* | `/kolden/dev/WINDSOR_API_KEY` | [Windsor](Windsor/ferramentas.md) | ✅ |
 | AiGrow *(growth Instagram — sem API pública)* | — | [AiGrow](AiGrow/ferramentas.md) | ❌ |
 
+## 📦 Vendors inertes (registrados, não instalados)
+
+Ferramentas de terceiro **registradas como vendor** (catalogadas para consumo sob demanda via
+npx/MCP/self-host) — **código NÃO copiado** para a Kolden; analisado em quarentena gitignored. Status =
+`vendor-registrado (não instalado)`. Absorvidas no lote `_lote-2026-06-26`.
+
+| Ferramenta | Consumo | Manual | Licença | MCP |
+|------------|---------|--------|---------|-----|
+| Repomix *(empacota repo p/ LLM)* | `npx repomix` / `--mcp` | [Repomix](Repomix/ferramentas.md) | MIT | 🟡 |
+| MarkItDown *(arquivos → Markdown)* | `uvx markitdown` / `markitdown-mcp` (local) | [MarkItDown](MarkItDown/ferramentas.md) | MIT | 🟡 |
+| MoneyPrinterTurbo *(vídeo curto por IA — self-host)* | Docker self-host (LLM/TTS local p/ soberania) | [MoneyPrinterTurbo](MoneyPrinterTurbo/ferramentas.md) | MIT (mídia embutida NÃO-MIT) | ❌ |
+| Playwright MCP *(browser local-first — alternativa soberana ao Browserbase)* | `npx @playwright/mcp` | [PlaywrightMCP](PlaywrightMCP/ferramentas.md) | Apache-2.0 | 🟡 |
+| n8n-MCP *(workflows n8n)* | `npx n8n-mcp` (+ API n8n via Infisical p/ gestão) | [n8n-MCP](n8n-MCP/ferramentas.md) | MIT | 🟡 |
+
+> ⚠️ **Gate Playwright MCP:** `browser_run_code_unsafe`/`browser_evaluate` (RCE-equivalente) **desabilitados
+> por padrão** — só com allowlist explícito e navegador isolado (gancho Égide).
+> ⚠️ **MoneyPrinterTurbo:** soberania configurável (usar LLM/TTS locais); manter `g4f` desligado; mídia
+> embutida (fontes/músicas) sob licenças próprias.
+
 ---
 
 ## Segredos internos de configuração (sem manual próprio)

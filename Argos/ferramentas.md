@@ -30,6 +30,8 @@ credencial vive em texto puro em nenhum arquivo do squad; só a referência ao c
 | **MCP Tavily** | busca / crawl / extract de fontes citáveis | MCP | `/kolden/argos` |
 | **MCP Exa** | busca / fetch semântico de fontes | MCP | `/kolden/argos` |
 | **MCP Apollo** | enriquecimento de empresa (bottom-up de sizing e mapa de concorrência) | MCP | `/kolden/argos` |
+| **Perplexity Sonar** *(retriever externo, opt-in)* | busca/pesquisa web com **citação nativa** (search/ask/research/reason) — retriever ADICIONAL ao lado de Exa/Tavily/Firecrawl, via skill `retriever-sonar`. **Vendor NÃO soberano** (`api.perplexity.ai`): a query trafega fora da Kolden; uso deliberado, default continua soberano; nunca enviar dados sensíveis | MCP `perplexity` (quando provisionado) **ou** camada `research --fontes ...,sonar` do `motor/argos-engine.py` | `/kolden/argos/PERPLEXITY_API_KEY` *(a cadastrar)* |
+| **Defuddle** *(extrator local)* | web→markdown limpo (readability) economizando tokens — alternativa LEVE/LOCAL ao Firecrawl para artigos/docs estáticos, via skill `extracao-defuddle` | CLI (`defuddle parse <url> --md`, OSS MIT) via `terminal` | — |
 | **YouTube Data API v3** | estatísticas públicas de canal/vídeo (channels/videos/search.list) — via legítima do `social-youtube` | API oficial (HTTP) via `web_extract`/`terminal` | `/kolden/argos` (chave Data API) |
 | **Reddit API (pública)** | subreddits/threads/sentimento via endpoints JSON públicos — via legítima do `social-reddit` | API pública (HTTP/JSON) via `web_extract` | `/kolden/argos` (quando exigir app token) |
 | **MCP Browserbase** | sessões de browser efêmeras/isoladas (zona cinza, sob sentinela) | MCP | `/kolden/argos` (e contas em `/kolden/argos/cinza/*`) |
@@ -76,6 +78,9 @@ Cada agente só usa o que está abaixo (subconjunto da tabela). Fiel ao `squad.y
 **Capacidades transversais (skills):**
 - **Descoberta de virais** (`descoberta-de-virais`): os `social-*` e o `competitor-mapper` acham vídeos/posts virais via **SociaVault** (`viral`) + Apify + TikTok Creative Center + YouTube Data API.
 - **Transcrição** (`transcricao-de-conteudo`): qualquer especialista pode pedir a camada `transcrever` (yt-dlp → **Speechmatics**/Deepgram) para virar um vídeo viral em texto e fazer **handoff ao Caliope** (copy).
+- **Retriever Sonar** (`retriever-sonar`): `serp-seo-cartografo`, `market-sizer` e `research-synthesizer` podem acionar o **Perplexity Sonar** como retriever opt-in (citação nativa) — vendor externo não soberano, uso deliberado.
+- **Extração local** (`extracao-defuddle`): `web-harvester`, `serp-seo-cartografo` e os `social-*` podem usar o **Defuddle** (local) para extrair markdown limpo de páginas estáticas economizando tokens.
+- **Busca no acervo** (`busca-semantica-no-acervo`): o `research-synthesizer` (e o `competitor-mapper`) deduplica/re-ranqueia o fan-out de retrievers e recupera inteligência já produzida (busca híbrida fuzzy + semântica).
 
 ## Infisical — paths
 
