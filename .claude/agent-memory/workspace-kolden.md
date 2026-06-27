@@ -161,8 +161,17 @@
 - Padrão de mockup que casa com a revisão de RMF: desenhar a UI espelhando VISUALMENTE cada declaração textual — cada serviço de API citado vira um elemento na tela (`AdGroupAdService`→painel de sync de inventário que pausa anúncio out-of-stock; `Customer` resource/account performance report→KPIs+tabela por campanha), + seletores de nível (Account/Campaign/Ad Group/Ad) e período (7D/30D/90D/Custom) e o botão "Generate PDF report". Dois entregáveis: dashboard + relatório PDF baixável. | 2026-06-26
 - Entregável montado em `C:\Kolden\entregaveis\google-ads-developer-token\` (`aplicacao-tool-design.md` + 2 PNGs + 2 HTML-fonte editáveis). Ao entregar caso-template, FECHAR oferecendo o re-skin para a ferramenta real antes de submeter. | 2026-06-26
 
+### Dissecação de codebase / absorção de runtime (caso Hermes/Nous)
+- Dissecar acervo grande = fan-out de 3 Explore agents por frentes distintas, depois VERIFICAR arquivo-a-arquivo (`sed -n`/grep `arquivo:linha`) antes de escrever — relatório de subagente é pista, não fonte. | 2026-06-27
+- GOTCHA `Glob` ignora `C:\Kolden\Hermes` (vendor no gitignore) — enumerar/ler com `Bash ls`/`Read` direto (mesmo padrão do `.aiox-core`). | 2026-06-27
+- Subagente pode situar o MESMO símbolo em 2 caminhos sem erro — é arquitetura em camadas (ex.: `AIAgent.run_conversation` em `run_agent.py:5227` é fachada que delega à impl real em `agent/conversation_loop.py:469`). Reconciliar por leitura, não descartar. | 2026-06-27
+- Análise robusta: alinhar objetivo/formato/profundidade com AskUserQuestion ANTES de produzir; salvar dossiês em `.claude/registros/analises/<tema>.md`. | 2026-06-27
+- Molde de agente production-grade (Hermes): (1) core "narrow waist", capacidade nas bordas (skill/plugin/MCP) — análogo do REUSE>ADAPT>CREATE do Caos; (2) prompt-cache sagrado (system prompt 1×/sessão byte-stable; contexto efêmero na msg de usuário, não no prompt); (3) closed learning loop em 3 camadas (nudge no turno → review forkado pós-turno → curator ocioso). O "Ritual de Encerramento" da Kolden é a camada 2 em versão manual; faltam camadas 1 e 3. | 2026-06-27
+- Regra de memória do Hermes = idêntica à da Kolden: fatos DECLARATIVOS, não imperativos; nada que expira em 7 dias (PRs/SHAs/"fase N done"). | 2026-06-27
+
 ## Candidatos a Promoção
 <!-- Padrões vistos em 3+ agentes — candidatos para CLAUDE.md ou regras centrais -->
+- **Contratos de comportamento > snapshots na verificação (Dike reconcilia contra o lacre do Contrato de Missão, não contra a saída)** | Origem: Hermes/AGENTS.md, Dike, feedback "verificar por GREP" | Detectado: 2026-06-27
 - **`Content-Length: 0` em POST/PUT sem corpo nas APIs Google REST (senão HTTP 411)** | Origem: workspace-kolden | Detectado: 2026-06-26
 - **Verificar estado ao vivo (API/disco) antes de executar pendência herdada de briefing/memória — docs ficam stale** | Origem: workspace-kolden | Detectado: 2026-06-26
 - **Fluxo OAuth conduzido (loopback próprio + health-check) quando o callback do gcloud falha** | Origem: workspace-kolden | Detectado: 2026-06-26
