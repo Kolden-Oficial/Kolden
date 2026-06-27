@@ -11,9 +11,9 @@ Operação do **Ronan**. A descrição oficial (modelo de negócio, mercado, mar
 ## Números do workspace (estado atual)
 - **19 squads** de agentes (nomes da mitologia grega) — **203 agentes** nas pastas `agents/`.
 - **Prometeu**: framework de engenharia AIOX com **12 agentes** em `Prometeu/.aiox-core/development/agents/`.
-- **Caos**: fábrica de agentes com **9 especialistas internos** + **23 skills** (13 originais + 10 do lote de absorção/criação).
+- **Caos**: fábrica de agentes com **9 especialistas internos** + **26 skills**.
 - **Total**: **224 agentes** mapeados (203 squads + 12 Prometeu + 9 Caos) + **Dike** (verificador solo).
-- **Skills (lote de absorção 2026-06-26/27)**: **44 habilidades novas** em 11 squads — Ariadne+7, Égide+5, Harmonia+4, Prometeu+5, Caos+4, Dédalo+5, Pheme+6, Argos+3, Olimpo+3, Metis+1, Caliope+1 — a partir de **31 repos GitHub** (todos auditados SAFE, reconciliação PERDIDO=0). Detalhe: `Caos/registros/absorcao/_lote-2026-06-26/RELATORIO-DO-LOTE.md`. Roadmap da exaustão restante: `_lote-2026-06-26/ROADMAP-ESTRUTURA-ROBUSTA.md`.
+- **Skills (lote de absorção 2026-06-26/27)**: **91 habilidades novas** em 11 squads — Égide+29, Ariadne+18, Dédalo+9, Prometeu+9, Caos+8, Pheme+6, Harmonia+4, Argos+3, Olimpo+3, Metis+1, Caliope+1 — a partir de **31 repos GitHub** (todos auditados SAFE, reconciliação PERDIDO=0). São **44 âncoras** + **47 da absorção exaustiva** (Égide cyber full-spectrum, Ariadne SEO profundo, ECC meta-fábrica). Todos os squads tocados têm `catalogo.md`. Detalhe: `Caos/registros/absorcao/_lote-2026-06-26/RELATORIO-DO-LOTE.md` + `aplicacao-f6-resultado.md`. Roadmap da exaustão restante: `_lote-2026-06-26/ROADMAP-ESTRUTURA-ROBUSTA.md`.
 - **Ferramentas**: ~35 tools/APIs catalogadas (inclui 5 vendors novos: Repomix, MarkItDown, MoneyPrinterTurbo, PlaywrightMCP, n8n-MCP); **14 MCPs conectados**, 8 aguardando OAuth.
 - **Projetos** em desenvolvimento: `omiron`, `CataLogo` (Tracker Flow).
 - **Infra do Kolden OS** (stack LobeHub) roda no WSL2 — ver `CLAUDE.md` (não é parte deste workspace de agentes Windows).
@@ -61,7 +61,7 @@ Novos projetos seguem o template `Projetos/_modelo-projeto/` (leia-me, prd, arqu
 ---
 
 ## 🧩 Skills absorvidas (lote 2026-06-26/27) — por squad
-44 habilidades nascidas da absorção de 31 repos GitHub (REUSE>ADAPT>CREATE, reconciliação PERDIDO=0, sem cópia literal — princípio reescrito em PT-BR + atribuição). Vivem em `<Squad>/.claude/skills/`. A exaustão das capacidades diferidas está em curso (ver `Caos/registros/absorcao/_lote-2026-06-26/ROADMAP-ESTRUTURA-ROBUSTA.md`).
+91 habilidades nascidas da absorção de 31 repos GitHub (REUSE>ADAPT>CREATE, reconciliação PERDIDO=0, sem cópia literal — princípio reescrito em PT-BR + atribuição). Vivem em `<Squad>/.claude/skills/`, indexadas no `catalogo.md` de cada squad. Abaixo as **44 âncoras** iniciais; a **absorção exaustiva (2026-06-27)** somou **+47**: **Égide +24** (cyber full-spectrum: cloud/k8s/IAM/ZTA, malware/detecção/SOC/endpoint/threat-hunting/rede, OWASP/API/vuln/PTES/DevSecOps/cripto, OT-ICS/mobile/firmware/blockchain/wireless/supply-chain/GRC/anti-ransomware — só método/dual-use), **Ariadne +11** (SEO técnico em escala + conteúdo E-E-A-T), **ECC +12** (Caos eval/governança/council, Dédalo code-review/TDD/grafo/sanitização, Prometeu eng/dados/DevOps/QA). Resto diferido no `ROADMAP-ESTRUTURA-ROBUSTA.md`.
 - **Ariadne** (+7): `seo-local-e-mapas`, `seo-internacional-hreflang`, `seo-ecommerce`, `monitoramento-de-drift-seo`, `sxo-search-experience`, `seo-de-imagens`, `framework-flow`.
 - **Égide** (+5): `auditoria-de-seguranca-de-ia-e-mcp` (flagship), `inteligencia-de-ameacas-cti`, `forense-digital-e-resposta-a-incidente`, `scanner-anti-injecao-resiliente`, `escrita-segura-e-dlp`.
 - **Harmonia** (+4): `sistema-de-design`, `tokens-de-design`, `implementacao-ui`, `julgamento-estetico-anti-slop`.
