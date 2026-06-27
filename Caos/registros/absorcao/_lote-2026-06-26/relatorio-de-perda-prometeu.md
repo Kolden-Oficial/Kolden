@@ -75,3 +75,61 @@ se o curador quiser um índice, criar `catalogo.md` listando as 14 habilidades (
 - DIFERIDO-INCREMENTAL: 27 IDs (alvo Prometeu, próxima leva).
 - ROTEADO-OUTRO-SQUAD: demais IDs dos 3 inventários (alvo ≠ Prometeu).
 - DESCARTADO: 0. · **PERDIDO: 0.** Nada saiu sem registro.
+
+---
+
+# Anexo F6 — fonte affaan-m/everything-claude-code (segunda aplicação ao Prometeu)
+
+> Aplicação independente da anterior (acima trata spec-kit/gsd/superpowers). Aqui o repo-fonte
+> é **affaan-m/everything-claude-code@2bc924faf2f8e893bfe0af86b1931283693c30ae** (MIT), rota A
+> (volumoso, 271 skills) → aplicação **seletiva por método-âncora** (anti-exaustão). Sem web,
+> sem execução, sem commit, sem cópia literal. Estrutura aiox preservada — só pastas novas em
+> `.claude/skills/`. **PERDIDO = 0.**
+
+## Habilidades criadas (4)
+| # | habilidade | destino |
+|---|---|---|
+| 1 | `padroes-de-engenharia-idiomatica` | `Prometeu/.claude/skills/padroes-de-engenharia-idiomatica/SKILL.md` |
+| 2 | `engenharia-de-dados` | `Prometeu/.claude/skills/engenharia-de-dados/SKILL.md` |
+| 3 | `devops-e-entrega-continua` | `Prometeu/.claude/skills/devops-e-entrega-continua/SKILL.md` |
+| 4 | `qa-e-quality-gates` | `Prometeu/.claude/skills/qa-e-quality-gates/SKILL.md` |
+
+## Mapa cluster do briefing → habilidade
+| Cluster do briefing | Habilidade |
+|---|---|
+| Padrões de engenharia (conventional commits, design patterns, refatoração) | `padroes-de-engenharia-idiomatica` |
+| Engenharia de dados (schema, pipelines, qualidade de dados) | `engenharia-de-dados` |
+| DevOps / CI-CD (pipelines, IaC, observabilidade) | `devops-e-entrega-continua` |
+| QA / quality gates avançados | `qa-e-quality-gates` |
+
+## Âncoras ABSORVIDAS (ECC)
+| repo | ID | disposicao | destino |
+|---|---|---|---|
+| ecc@2bc924f | G10 (padrões idiomáticos por linguagem) | ABSORVIDO | padroes-de-engenharia-idiomatica |
+| ecc@2bc924f | G15 (rules de convenção, 21 langs) | ABSORVIDO | padroes-de-engenharia-idiomatica |
+| ecc@2bc924f | G13 (refactor/simplify/silent-failure/type/comment) | ABSORVIDO | padroes-de-engenharia-idiomatica |
+| ecc@2bc924f | G11 (frameworks web/backend/mobile) | ABSORVIDO (parcial) | padroes-de-engenharia-idiomatica (subset `mcp-server-patterns` diferido) |
+| ecc@2bc924f | G16 (dados: postgres/mysql/redis/prisma/jpa/migrations/cache) | ABSORVIDO | engenharia-de-dados |
+| ecc@2bc924f | G16 (infra: docker/k8s/deployment) | ABSORVIDO | devops-e-entrega-continua (split do mesmo cluster) |
+| ecc@2bc924f | G29 (mle-workflow → data contracts) | ABSORVIDO (parcial) | engenharia-de-dados (núcleo ML diferido) |
+| ecc@2bc924f | G26 (data-scraper/recsys → pipelines de dados) | ABSORVIDO (parcial) | engenharia-de-dados (dashboards/benchmark → Metis) |
+| ecc@2bc924f | G14 (build-error-resolvers por stack) | ABSORVIDO | devops-e-entrega-continua |
+| ecc@2bc924f | G34 (github-ops/git-workflow) | ABSORVIDO (parcial) | devops-e-entrega-continua (jira/google-workspace → vendor) |
+| ecc@2bc924f | G12 (testing/TDD/verification loops) | ABSORVIDO | qa-e-quality-gates |
+| ecc@2bc924f | G6 (council/santa-method/verification-loop) | ABSORVIDO (técnica) | qa-e-quality-gates (alvo primário dike/caos permanece) |
+
+## DIFERIDO-INCREMENTAL (ECC, alvo Prometeu)
+- **G5** (orch-* + GAN harness) — já coberto por `spec-build-review`; revisitar como enriquecimento dele.
+- **G17** (architecture/ADR/spec-miner/onboarding) — `architect-first` já é a skill estrutural; só a contenção de design pattern foi referenciada. Revisitar via `auditoria-de-squad`.
+- **G11 subset `mcp-server-patterns`** — `mcp-builder` já existe; reforça aquela skill, não uma nova.
+- **G29 núcleo ML** (pytorch-patterns, foundation-models, mle-reviewer) — fora dos 4 clusters; leva de ML futura.
+
+## ROTEADO-OUTRO-SQUAD (ECC, fora desta aplicação)
+- Clusters do `mapa-de-decisao.md` da ECC roteados a outros squads (G1–G4, G7–G9 → caos/dike/olimpo/metis; G18–G28 → caliope/pheme/aglaia/argos/egide/ariadne; G24 CREATE → braço de mídia; G30–G37 → vendor/referência/dedalo) **não pertencem a este bucket** e seguem registrados no mapa para suas levas. Nenhum tocado aqui.
+
+## Conformidade do invariante (anexo ECC)
+- ABSORVIDO: 12 entradas-âncora (4 parciais) → 4 habilidades.
+- DIFERIDO-INCREMENTAL: 4 (alvo Prometeu, próxima leva).
+- ROTEADO-OUTRO-SQUAD / REFERÊNCIA: demais clusters G1–G37 da ECC (alvo ≠ Prometeu).
+- DESCARTADO: 0. · **PERDIDO: 0.**
+- **Catálogo:** AUSENTE (`Prometeu/.claude/skills/` não tem `catalogo.md`) — não inventado, só reportado (idem anexo anterior).
