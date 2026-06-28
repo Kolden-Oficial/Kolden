@@ -121,9 +121,10 @@ core_principles:
 
 routing_logic:
   operational_challenge:
-    signals: ["gargalo de escala", "quebra de processo", "estrutura de equipe", "KPIs não funcionam", "alocação de recursos", "alinhamento de OKR"]
+    signals: ["gargalo de escala", "quebra de processo", "estrutura de equipe", "KPIs não funcionam", "alocação de recursos", "alinhamento de OKR", "RH", "pessoas", "cultura", "recrutamento", "onboarding", "eNPS", "clima", "PMO", "gestão de projeto", "projeto de negócio", "cronograma", "BizOps", "SOP", "runbook", "automação de processo", "fornecedor"]
     route_to: poseidon
-    framework: "Excelência Operacional e Escala"
+    delegates_to_seed: [hestia, cairos, ananke]
+    framework: "Excelência Operacional e Escala (Poseidon decide a estratégia operacional; Héstia executa RH/pessoas, Cairós planeja projetos de negócio, Ananke operacionaliza BizOps)"
 
   marketing_challenge:
     signals: ["marca pouco clara", "posicionamento fraco", "go-to-market", "geração de demanda", "custo de aquisição de cliente", "ROI de marketing"]
@@ -136,9 +137,10 @@ routing_logic:
     framework: "Estratégia de Tecnologia e Liderança de Engenharia"
 
   information_systems_challenge:
-    signals: ["violação de segurança", "conformidade", "sistemas corporativos", "gestão de fornecedores", "governança de TI", "transformação digital"]
+    signals: ["violação de segurança", "conformidade", "sistemas corporativos", "gestão de fornecedores", "governança de TI", "transformação digital", "LGPD", "GDPR", "ISO 27001", "SOC 2", "ISO 42001", "EU AI Act", "DPIA", "RoPA", "contrato", "NDA", "privacidade de dados", "risco de conformidade", "política interna"]
     route_to: hades
-    framework: "Sistemas de Informação e Infraestrutura Digital"
+    delegates_to_seed: [nomos]
+    framework: "Sistemas de Informação e Infraestrutura Digital (Hades governa TI/segurança; Nomos prepara conformidade regulatória/contratos/DPIA, sempre informativo + revisão humana)"
 
   ai_strategy_challenge:
     signals: ["adoção de IA", "pipeline de ML", "IA responsável", "casos de uso de IA", "integração de LLM", "governança de IA", "automação"]
@@ -146,14 +148,16 @@ routing_logic:
     framework: "Estratégia de IA e Sistemas Inteligentes"
 
   financial_challenge:
-    signals: ["budget de mídia", "teto de gasto", "margem", "precificação", "unit economics", "CAC/LTV", "fluxo de caixa", "ROI de investimento"]
+    signals: ["budget de mídia", "teto de gasto", "margem", "precificação", "unit economics", "CAC/LTV", "fluxo de caixa", "ROI de investimento", "FP&A", "forecast", "budget vs actual", "variância", "modelagem financeira", "fechamento contábil", "DRE/balanço/DFC", "runway", "burn"]
     route_to: plutos
-    framework: "Finanças e Disciplina de Capital"
+    delegates_to_seed: [pactolo]
+    framework: "Finanças e Disciplina de Capital (Plutos decide a estratégia financeira; Pactolo executa FP&A, modelagem, fechamento e fluxo de caixa e entrega o pacote de decisão)"
 
   revenue_challenge:
-    signals: ["pipeline de vendas", "geração de leads", "qualificação", "conversão", "fechamento", "follow-up", "CRM/GHL", "forecast de receita"]
+    signals: ["pipeline de vendas", "geração de leads", "qualificação", "conversão", "fechamento", "follow-up", "CRM/GHL", "forecast de receita", "BANT", "MEDDIC", "lead scoring", "handoff marketing-vendas", "cadência outbound", "cold email", "RFP", "proposta comercial", "negociação", "higiene de pipeline"]
     route_to: afrodite
-    framework: "Receita, Vendas e Conversão"
+    delegates_to_seed: [emporos]
+    framework: "Receita, Vendas e Conversão (Afrodite define a estratégia de receita; Êmporos executa o ciclo comercial — qualificação, cadências, propostas, GHL — dentro da política do CRO)"
 
   vision_culture_fundraise:
     signals: ["direção da empresa", "captação", "relações com investidores", "M&A", "cultura", "conselho", "pivot", "existencial"]
