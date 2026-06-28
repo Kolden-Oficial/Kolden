@@ -1,6 +1,6 @@
 ---
 task: setVision()
-responsavel: "@vision-chief"
+responsavel: "@zeus"
 responsavel_type: Agent
 atomic_layer: Task
 elicit: true
@@ -32,7 +32,7 @@ Checklist:
 **ID da Tarefa:** CLEVEL-001
 **Versão:** 1.0.0
 **Comando:** `*set-vision`
-**Agente:** Vision Chief (vision-chief)
+**Agente:** Zeus (zeus)
 **Propósito:** Definir a visão, a missão e os pilares estratégicos da empresa e criar um roadmap plurianual
 
 ---

@@ -1,24 +1,33 @@
 # Olimpo — Squad C-Level (Executivos)
 
-O Olimpo é uma C-suite virtual: seis agentes que encarnam as perspectivas estratégicas dos principais papéis executivos de uma empresa. Ele resolve o problema de tomar decisões de alto nível — visão, operações, marketing, tecnologia, sistemas de informação e estratégia de IA — sem ter um time de executivos sênior à disposição. Você traz um desafio de negócio, e o squad diagnostica, roteia para o executivo certo, aplica frameworks reconhecidos (OKR, 5 Forças de Porter, Oceano Azul, Technology Radar, Matriz Construir-Comprar-Parceria, modelos de maturidade de IA) e sintetiza tudo em uma direção estratégica coerente.
+O Olimpo é uma C-suite virtual: oito agentes que encarnam as perspectivas estratégicas dos principais papéis executivos de uma empresa. Ele resolve o problema de tomar decisões de alto nível — visão, operações, marketing, tecnologia, sistemas de informação, estratégia de IA, finanças e receita — sem ter um time de executivos sênior à disposição. Você traz um desafio de negócio, e o squad diagnostica, roteia para o executivo certo, aplica frameworks reconhecidos (OKR, 5 Forças de Porter, Oceano Azul, Technology Radar, Matriz Construir-Comprar-Parceria, modelos de maturidade de IA) e sintetiza tudo em uma direção estratégica coerente.
 
 ## Agentes
 
-| Agente | O que faz |
-|--------|-----------|
-| **vision-chief** | CEO / Orquestrador — define a visão e a direção estratégica, diagnostica desafios e roteia para o especialista certo |
-| **coo-orchestrator** | COO — excelência operacional, processos, escala, estrutura de equipe, KPIs e OKRs |
-| **cmo-architect** | CMO — estratégia de marca, posicionamento, geração de demanda e go-to-market |
-| **cto-architect** | CTO — estratégia de tecnologia, decisões de arquitetura, build vs buy e cultura de engenharia |
-| **cio-engineer** | CIO — sistemas de informação, infraestrutura, segurança, conformidade e governança de TI |
-| **caio-architect** | CAIO — estratégia de IA, pipelines de ML, IA responsável e automação |
+Cada deus carrega **três identificadores**: o nome simbólico (a identidade), o **cargo técnico** de
+mercado (CEO/COO…) e os `routing_triggers` — os gatilhos que casam o pedido com o executivo certo (o
+"SEO de agents"). O roteamento do Zeus usa esses gatilhos.
+
+| Deus (`id`) | Cargo | Domínio e gatilhos de roteamento |
+|-------------|-------|----------------------------------|
+| **Zeus** (`zeus`) | CEO / Orquestrador | Visão, estratégia, prioridade, captação, cultura, conselho, pivot — diagnostica e roteia |
+| **Poseidon** (`poseidon`) | COO | Processo, operação, escala, KPI/OKR, SLA, onboarding de cliente, eficiência |
+| **Apolo** (`apolo`) | CMO | Copy, conteúdo, criativo, campanha, tráfego pago, marca, funil, SEO/CRO, go-to-market |
+| **Hefesto** (`hefesto`) | CTO | Site, landing page, web dev, API, arquitetura, build vs buy, deploy, dívida técnica |
+| **Hades** (`hades`) | CIO | Infra, servidor, segurança, backup, governança de TI, LGPD, rede, Infisical/MCP |
+| **Atena** (`atena`) | CAIO | IA, agente, prompt, automação, ML/RAG/LLM, orquestração, IA responsável |
+| **Plutos** (`plutos`) | CFO | Finanças, orçamento, budget de mídia, custo, margem, preço, unit economics, CAC/LTV, caixa, ROI |
+| **Afrodite** (`afrodite`) | CRO | Venda, lead, pipeline, proposta, fechamento, conversão, CRM/GHL, follow-up, MRR, churn |
+
+> O squad opera sobre o **Contrato de Missão** (`contratos/`) — cada deus assina sua seção `executivos[]`
+> na descida e na subida. Ver o arquivo do `zeus` para o fluxo completo.
 
 ## Como ativar
 
-O ponto de entrada é o orquestrador **coo-orchestrator** quando o foco for execução operacional, mas o cérebro estratégico do squad é o **vision-chief**, que recebe o desafio e roteia. Ative-o e use os comandos:
+O ponto de entrada é o orquestrador **poseidon** quando o foco for execução operacional, mas o cérebro estratégico do squad é o **zeus**, que recebe o desafio e roteia. Ative-o e use os comandos:
 
 ```
-@vision-chief        # Ativa o CEO (orquestrador estratégico)
+@zeus        # Ativa o CEO (orquestrador estratégico)
 *diagnose            # Faz a triagem do seu desafio executivo e roteia
 *strategic-planning  # Planejamento estratégico completo, ponta a ponta
 *board-presentation  # Prepara uma apresentação para o conselho
@@ -33,7 +42,7 @@ Cada especialista também tem seus próprios comandos (por exemplo, `*gtm`, `*ar
 
 ## Componentes
 
-- **6 agentes**, **7 tarefas**, **2 workflows**, **1 checklist** de qualidade
+- **8 agentes**, **7 tarefas**, **2 workflows**, **1 checklist** de qualidade
 - Frameworks de referência em `data/executive-frameworks.yaml`
 - Catálogo de roteamento em `data/routing-catalog.yaml`
 

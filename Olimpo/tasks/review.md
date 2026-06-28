@@ -1,6 +1,6 @@
 ---
 task: review()
-responsavel: "@vision-chief"
+responsavel: "@zeus"
 responsavel_type: Agent
 atomic_layer: Task
 elicit: true
@@ -32,7 +32,7 @@ Checklist:
 **ID da Tarefa:** CLEVEL-CHIEF-002
 **Versão:** 1.0.0
 **Comando:** `*review`
-**Orquestrador:** Vision Chief (vision-chief)
+**Orquestrador:** Zeus (zeus)
 **Propósito:** Revisar a saída do especialista em relação ao checklist de qualidade, pontuar e aprovar ou solicitar revisão.
 
 ---

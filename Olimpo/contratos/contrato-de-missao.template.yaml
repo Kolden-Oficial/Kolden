@@ -1,0 +1,82 @@
+# Contrato de Missão — TEMPLATE em branco
+# Copie este arquivo por missão. Cada camada preenche e ASSINA a sua seção; nenhuma camada
+# reescreve a de outra. A seção `intencao_original` é lacrada (hash) e nunca mais muda.
+# Schema completo: contrato-de-missao.schema.md
+---
+missao:
+  id: "m-<timestamp>-<slug>"
+
+  # ── CAMADA 1 — HUMANO (lacrada, imutável) ───────────────────────────────────
+  intencao_original:
+    input_cru: ""            # pedido do Ronan, VERBATIM
+    canal: ""               # whatsapp | telegram | cli | chat
+    recebida_em: ""         # ISO-8601
+    hash: ""                # selo do input_cru — imutável
+
+  # ── CAMADA 2 — HERMES (tradução de intenção) ────────────────────────────────
+  hermes:
+    dor:
+      objetivo_real: ""
+      criterio_de_sucesso: ""
+      restricoes:
+        prazo: ""
+        orcamento: ""
+        proibicoes: []
+      contexto: []
+      nivel_de_risco: ""    # verde | amarelo | vermelho
+    dor_completo: false     # só desce quando true
+    perguntas_abertas: []   # devolvidas ao Ronan se dor_completo=false
+    matriz_de_risco:
+      reversibilidade: ""    # reversivel | irreversivel
+      impacto: ""            # baixo | medio | alto
+      faixa: ""              # verde | amarelo | vermelho
+      autonomia: ""          # executa-e-avisa | mostra-antes | trava-e-pergunta
+    ordem_de_maquina: ""     # tradução do input cru em instrução acionável
+    assinatura: { por: "hermes", em: "" }
+
+  # ── CAMADA 3 — ZEUS (decomposição + roteamento) ─────────────────────────────
+  zeus:
+    diagnostico: ""
+    decomposicao:
+      - parte: ""
+        executivo_destino: ""   # poseidon | apolo | hefesto | hades | atena | plutos | afrodite
+        motivo: ""
+    paralelo: []                # executivos acionados simultaneamente
+    consolidacao: ""            # preenchida na SUBIDA
+    arbitragem: null            # {por, motivo} se houve divergência escalada ao humano
+    assinatura: { por: "zeus", em: "" }
+
+  # ── CAMADA 4 — EXECUTIVOS (especificação técnica) ───────────────────────────
+  executivos:
+    - agente: ""
+      especificacao_tecnica: ""
+      handoff_operacional: { squad: "", artefato: "" }
+      devolucao_lateral: null   # {para, motivo} se mal roteado
+      resultado: ""             # preenchido na SUBIDA
+      assinatura: { por: "", em: "" }
+
+  # ── CAMADA 5 — OPERACIONAL (execução + proatividade) ────────────────────────
+  operacional:
+    - agente: ""
+      squad: ""
+      resultado: ""
+      riscos_levantados: []     # a ponta enxerga o que as camadas de cima não veem
+      propostas: []             # melhorias de baixo para cima
+      assinatura: { por: "", em: "" }
+
+  # ── SUBIDA — DIKE (verificação) ─────────────────────────────────────────────
+  dike:
+    confere_hash: false
+    reconciliacao: ""           # bateu | nao-bateu
+    degrau_da_quebra: null      # hermes | zeus | executivos | operacional | null
+    justificativa: ""
+    veredito: ""                # sobe | volta-para-correcao
+    assinatura: { por: "dike", em: "" }
+
+  # ── TRANSVERSAL ─────────────────────────────────────────────────────────────
+  orcamento:
+    teto_rodadas: 2
+    teto_tempo: ""
+    rodadas_gastas: 0
+
+  log_de_decisao: []            # [{em, por, decisao, porque}] — só o que muda decisão futura
