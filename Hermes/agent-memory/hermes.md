@@ -79,6 +79,14 @@
 - **Merge + continuar:** `gh pr merge <n> --merge` → `git checkout main && git pull --ff-only` → nova branch para a próxima frente → novo PR. PR #1 e #2 deste trabalho. Repo sem proteção de branch (cuidado manual) | 2026-06-28
 - **Squad-semente (estrutura inicial, NÃO Ritual completo):** guia compartilhado `GUIA-SQUAD-SEMENTE.md` + 6 subagentes paralelos (dirs top-level distintos → sem conflito). Cada um: chief + 4 especialistas + 5 skills-âncora + squad.yaml + catálogo + MEMORY (14 arquivos). Marca `status: semente`; refino (PRD/diagnóstico 7 faculdades/herança) = Ritual do Caos. **Fronteira de camada obrigatória:** squad de negócio novo (Pactolo/Êmporos/Ananke) faz handoff ao executivo do Olimpo correspondente (Plutos/CFO, Afrodite/CRO, Poseidon/COO) — execução vs estratégia, nunca duplicar o cargo | 2026-06-28
 - **Caminho de pasta sem acento** para squads com nome acentuado (Êmporos→`Emporos/`, Héstia→`Hestia/`, Cairós→`Cairos/`) — evita problemas de path no Windows/git; o nome de exibição acentuado fica no README/squad.yaml | 2026-06-28
+- **Mapa de decisão do Caos é fonte canônica para destino de absorção.** Antes de propor "vira squad/skill/vendor/infra" para um repo já absorvido, ler `Caos/registros/absorcao/<slug>/mapa-de-decisao.md` — o Caos já fez o diagnóstico arquivo-por-arquivo. Verificado: mapas de claude-mem e MoneyPrinterTurbo economizaram horas de re-análise | 2026-06-28
+- **Destino de repo absorvido nem sempre é Caos.** Infra → stack docker-compose em `kolden/<servico>/` (Kolden OS). Vendor → manual em `sobre-a-empresa/Ferramentas/<Nome>/` + integração com squad existente. Caos só cria/refina **agentes**. Calibrar essa fronteira na 1ª recomendação evita backtrack — eu disse "Caos" para claude-mem (infra) e MPT (vendor-interno) e tive que recalibrar | 2026-06-28
+- **Decisão de absorção exige 3 lugares de registro:** (a) ledger `Caos/dados/repositorios-absorvidos.yaml` atualiza `decisao`/`status`/`notas`; (b) memória do projeto move o item de PENDENTE → DECIDIDO; (c) briefing de execução em `Caos/registros/absorcao/<slug>/briefing-de-execucao.md`. Sem os 3, a decisão morre no chat | 2026-06-28
+
+### Hermes-Chief encarnado (uso da skill /hermes-chief)
+- **"Qual foi a última pendência?" / "Onde paramos?" → trabalho do próprio Hermes-Chief, não de squad.** Cruzar branch atual + `git log` recentes + 3-5 memórias de tarefa-em-aberto (lidas em paralelo). Sozinha, memória é stale; sozinho, git é sem contexto. Não despachar Agent tool para diagnóstico de estado | 2026-06-28
+- **Commits temáticos ancorados em achados de auditoria > commit monolítico.** Working tree misturando descoberta (laudo) + correções (vetos, handoffs) + sync (catálogo/docs) → separar por tema com referência ao achado (K-008, K-H3, K-012) no título. Esta sessão: 4 commits limpos, cada um amarrado a um item da fila de remediação da vistoria v2 | 2026-06-28
+- **`git status` periódico quando há sinal de trabalho paralelo.** Esta sessão: Ronan moveu 10 agentes de `Caliope/copy-master/` para `Caliope/agents/` (remediação K-012) enquanto eu escrevia briefings; system-reminder sinalizou edição paralela de CLAUDE.md e MEMORY.md. Pattern: antes de propor commit final, sempre `git status` para detectar trabalho paralelo e separar escopos | 2026-06-28
 
 ## Candidatos a Promoção
 <!-- Padrões vistos em 3+ agentes — candidatos para CLAUDE.md ou regras -->
@@ -87,6 +95,8 @@
 - **PS 5.1 exige BOM UTF-8 em `.ps1` com caracteres não-ASCII (gerados pelo Write tool)** | Origem: Hermes | Detectado: 2026-06-20
 - **Google Docs API desabilitada no projeto GCP 1098911614973 → ler Docs via `downloadFile` export PDF, não `getGoogleDocContent`** | Origem: Hermes (e dossiê EntreSolos prévio) | Detectado: 2026-06-25
 - **Verificar números de relatório de subagente lendo a fonte direta antes de gravar** | Origem: Hermes, Caos (tradução em lote), feedback global | Detectado: 2026-06-25
+- **Decisão de absorção precisa de 3 lugares de registro (ledger + memória + briefing) — chat não basta** | Origem: Hermes (sessão 2026-06-28); aplicável também a Caos, Argos, Aletheia | Detectado: 2026-06-28
+- **Cruzar branch + git log + memórias-de-tarefa-em-aberto antes de responder "onde paramos"** | Origem: Hermes; aplicável a qualquer agente que retoma trabalho entre sessões | Detectado: 2026-06-28
 
 ## Arquivado
 <!-- Padrões não mais relevantes — mantidos para histórico -->
