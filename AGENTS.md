@@ -9,10 +9,10 @@
 Operação do **Ronan**. A descrição oficial (modelo de negócio, mercado, marca) está em construção em `sobre-a-empresa/` — **um squad de pesquisa vai definir e preencher**. Enquanto estiver `status: rascunho`, **não afirme** detalhes de negócio: diga que está em definição.
 
 ## Números do workspace (estado atual)
-- **19 squads** de agentes (nomes da mitologia grega) — **203 agentes** nas pastas `agents/`.
+- **23 squads** de agentes (nomes da mitologia grega) — **225 agentes** nas pastas `agents/` (inclui os 6 squads-semente novos: +30).
 - **Prometeu**: framework de engenharia AIOX com **12 agentes** em `Prometeu/.aiox-core/development/agents/`.
 - **Caos**: fábrica de agentes com **9 especialistas internos** + **26 skills**.
-- **Total**: **224 agentes** mapeados (203 squads + 12 Prometeu + 9 Caos) + **Dike** (verificador solo).
+- **Total**: **247 agentes** (225 em 23 squads + 12 Prometeu + 9 Caos + 1 Dike verificador solo) — contagem verificada arquivo-a-arquivo em 2026-06-28.
 - **Skills (lote de absorção 2026-06-26/27)**: **~129 habilidades novas** — 99 em 11 squads existentes (Égide+29, Ariadne+18, Caliope+5, Pheme+11, Dédalo+9, Prometeu+9, Caos+8, Harmonia+4, Argos+3, Olimpo+3, Metis+1) + 30 nos 6 squads novos — a partir de **31 repos GitHub** (todos SAFE, reconciliação PERDIDO=0). Composição: 44 âncoras + 47 exaustivo (cyber/SEO/ECC) + 8 aprofundamento (growth/copy) + 30 dos squads-semente. Todos os squads tocados têm `catalogo.md`. Detalhe: `Caos/registros/absorcao/_lote-2026-06-26/RELATORIO-DO-LOTE.md` + `aplicacao-f6-resultado.md`. Roadmap: `_lote-2026-06-26/ROADMAP-ESTRUTURA-ROBUSTA.md`.
 - **6 squads-semente novos (2026-06-28)**: **Nomos** (compliance/jurídico), **Pactolo** (finanças/FP&A), **Êmporos** (vendas/comercial), **Héstia** (RH/pessoas), **Ananke** (operações/BizOps), **Cairós** (PMO/projetos) — +30 agentes (chief + 4 especialistas cada). **Status `semente`**: estrutura inicial (README + squad.yaml + agentes + 5 skills + catálogo + MEMORY); refino completo (PRD, Ritual de 9 fases, herança histórica) pendente do Caos. Fronteiras de camada cravadas vs Olimpo (Plutos/Afrodite/Poseidon) e Prometeu/Caos.
 - **Ferramentas**: ~35 tools/APIs catalogadas (inclui 5 vendors novos: Repomix, MarkItDown, MoneyPrinterTurbo, PlaywrightMCP, n8n-MCP); **14 MCPs conectados**, 8 aguardando OAuth.
