@@ -1,0 +1,106 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Êmporos
+# Domínio: Execução Comercial (Vendas) — pipeline, qualificação, propostas, CRM, cadências, negociação
+# Versão: 0.1.0 (semente — refino pelo Ritual do Caos pendente)
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: emporos
+  display_name: "Êmporos — Execução Comercial (o comerciante que atravessa o mar para fechar a troca)"
+  version: "0.1.0"
+  status: "semente-do-lote-2026-06-26"
+  domain: "Execução comercial: pipeline de vendas, qualificação de leads (BANT/MEDDIC), cadências de outbound, propostas/RFP, gestão de CRM (GHL), negociação e fechamento, handoff marketing→vendas"
+  description: |
+    Squad de EXECUÇÃO COMERCIAL da Kolden. Onde o Afrodite (Olimpo/CRO) define a ESTRATÉGIA de receita
+    (modelo de monetização, metas, política de preço, RevOps macro), o Êmporos EXECUTA o ciclo de vendas
+    no chão: qualifica o lead que entra (BANT/MEDDIC, scoring, aceite do handoff marketing→vendas), dispara
+    cadências de outbound multi-toque, redige propostas/orçamentos e respostas a RFP, mantém a higiene do
+    pipeline no GHL (estágios, oportunidades, forecast operacional) e conduz a negociação até o fechamento.
+
+    Êmporos (ἔμπορος) é o comerciante itinerante grego que atravessava mares para fechar a troca — o squad
+    é a ponta que transforma interesse em receita registrada, sempre dentro da política do Afrodite e do CRM
+    GHL como sistema de registro. Consome leads do Pheme e da Ariadne; escala estratégia/desvio ao Afrodite.
+  keywords: [vendas, sales, comercial, pipeline, funil-de-vendas, lead, qualificacao, lead-scoring, bant, meddic, sql, mql, handoff-marketing-vendas, prospeccao, outbound, cadencia, cold-email, sequencia, outreach, proposta, orcamento, rfp, deal-desk, negociacao, objecao, fechamento, closing, crm, ghl, gohighlevel, oportunidade, opportunity, forecast, follow-up, conta, account-research]
+  entry_agent: emporos-chief
+  created_at: "2026-06-26"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [emporos-chief]
+    purpose: "Triagem da demanda comercial (qualificar / prospectar / propor / CRM / negociar), roteamento, gate de qualidade e handoffs (Pheme/Ariadne na entrada; Afrodite na estratégia; GHL como registro). Não executa diretamente."
+  tier_1:
+    name: "Execução de Vendas"
+    agents: [qualificador-de-leads, executivo-de-cadencia, redator-de-propostas, gestor-de-crm]
+    purpose: "Qualificação (BANT/MEDDIC), cadências de outbound, propostas/RFP/negociação, higiene de pipeline no GHL."
+
+agents:
+  emporos-chief:
+    file: agents/emporos-chief.md
+    tier: 0
+    icon: "⚖️"
+    focus: "Orquestração, triagem comercial, roteamento, gate de qualidade e handoffs (entrada Pheme/Ariadne; estratégia Afrodite; CRM GHL)"
+  qualificador-de-leads:
+    file: agents/qualificador-de-leads.md
+    tier: 1
+    icon: "🔍"
+    focus: "Qualificação BANT/MEDDIC, lead scoring, aceite/recusa do handoff marketing→vendas (SQL vs MQL)"
+  executivo-de-cadencia:
+    file: agents/executivo-de-cadencia.md
+    tier: 1
+    icon: "📨"
+    focus: "Cadências de outbound multi-toque (e-mail/telefone/social), cold email, prospecção (Apollo/Common Room)"
+  redator-de-propostas:
+    file: agents/redator-de-propostas.md
+    tier: 1
+    icon: "📄"
+    focus: "Propostas comerciais, orçamentos, resposta a RFP, negociação assistida (objeção, concessão dentro da política)"
+  gestor-de-crm:
+    file: agents/gestor-de-crm.md
+    tier: 1
+    icon: "🗃️"
+    focus: "Higiene de pipeline no GHL: estágios, oportunidades, próximo passo, forecast operacional, follow-up"
+
+handoffs:
+  # Roteamento interno (orquestrador → especialistas)
+  emporos-chief:
+    routes_to: [qualificador-de-leads, executivo-de-cadencia, redator-de-propostas, gestor-de-crm]
+  qualificador-de-leads:
+    escalates_to: [emporos-chief, gestor-de-crm]
+  executivo-de-cadencia:
+    escalates_to: [emporos-chief, qualificador-de-leads]
+  redator-de-propostas:
+    escalates_to: [emporos-chief, gestor-de-crm]
+  gestor-de-crm:
+    escalates_to: [emporos-chief]
+
+# Handoffs externos: Êmporos executa vendas; consome leads/estratégia e registra no GHL.
+external_handoffs:
+  leads_de_entrada:
+    from: [pheme, ariadne]
+    artifact: "Leads/contatos gerados (social Pheme; SEO/CRO de página Ariadne) → qualificador-de-leads aceita (SQL) ou recusa (volta a nutrir)"
+  estrategia_de_receita:
+    to: afrodite
+    artifact: "Política de preço, metas, RevOps e modelo de monetização vêm do Afrodite (Olimpo/CRO); Êmporos executa e escala desvios/exceções de preço de volta"
+  crm_sistema_de_registro:
+    via: ghl
+    artifact: "Todo o ciclo (contato, oportunidade, estágio, proposta, fechamento) vive no GoHighLevel; credenciais SEMPRE via Infisical"
+  pos_venda_expansao:
+    to: afrodite
+    artifact: "Conta fechada → sinaliza expansão/retenção ao Afrodite (squad de Customer Success a materializar no Ritual)"
+
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad — viram reflexo PreToolUse (mecânico) + checklist + checkpoint de workflow (semântico).
+  veto:
+    fora_da_politica: "HALT em qualquer promessa de preço/prazo/escopo fora da política do Afrodite. Exceção é ESCALONAMENTO, nunca decisão local."
+    sem_qualificacao: "HALT ao mover lead não-qualificado para oportunidade. Sem BANT/MEDDIC mínimo registrado, não avança no pipeline."
+    crm_inventado: "HALT em estágio/valor/próximo-passo que não reflete o fato. Pipeline é espelho da realidade, não vitrine inflada."
+    outbound_spam: "HALT em cadência que ignora opt-out, frequência ou personalização. Outbound respeita o destinatário ou não sai."
+    credencial_texto_puro: "HALT em qualquer credencial (GHL/Apollo/Common Room) fora do Infisical (Art. VII). Sem invenção de capacidade fora de ferramentas.md (Art. IV)."
+
+settings:
+  activation:
+    prefix: "emporos"
+    example: "@emporos:qualificador-de-leads"

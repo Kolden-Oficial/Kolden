@@ -1,0 +1,110 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Héstia
+# Domínio: RH, Pessoas & Cultura
+# Versão: 0.1.0 (semente)
+# Status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: hestia
+  display_name: "Héstia — RH, Pessoas & Cultura (o fogo do lar que mantém a casa viva)"
+  version: "0.1.0"
+  status: semente
+  domain: "RH e people-ops: recrutamento e seleção, onboarding, desenvolvimento e performance, cultura organizacional, descrições de cargo, políticas de pessoas, engajamento"
+  description: |
+    Squad de RH, Pessoas & Cultura da Kolden. Cuida do ciclo de vida do colaborador HUMANO:
+    atrai (recrutamento e seleção, descrição de cargo, entrevista estruturada, oferta), integra
+    (onboarding 30-60-90, ramp-up), desenvolve (ciclos de performance, feedback, PDI), mede e nutre
+    a cultura (clima, engajamento/eNPS, valores, saúde organizacional) e governa as políticas de
+    pessoas e faixas de remuneração.
+
+    Héstia é a deusa do lar e do fogo doméstico: o squad é quem mantém aceso o fogo da cultura e
+    acolhe quem chega. NOTA: num workspace de agentes de IA, "RH" também cobre o RH dos AGENTES
+    (cartão de identidade, roster) — mas isso é governado pelo Caos/curador. A Héstia foca em
+    pessoas/cultura HUMANA e faz handoff ao Caos para o quadro de agentes.
+  keywords: [rh, recursos-humanos, people-ops, pessoas, cultura, recrutamento, selecao, recruiting, vaga, job-description, descricao-de-cargo, sourcing, triagem, entrevista, interview, oferta, offer, onboarding, integracao, ramp-up, 30-60-90, performance, avaliacao-de-desempenho, feedback, calibracao, pdi, 9-box, 1-1, engajamento, enps, clima, valores, saude-organizacional, org-health, politica-de-pessoas, remuneracao, comp-analysis, faixa-salarial, banda, people-analytics, offboarding, retencao, desenvolvimento]
+  entry_agent: hestia-chief
+  created_at: "2026-06-26"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [hestia-chief]
+    purpose: "Triagem da demanda de pessoas (atrair / integrar / desenvolver / cultura / política), roteamento, gate de qualidade (justiça + LGPD + handoff). Não executa diretamente."
+  tier_1:
+    name: "Especialistas de Pessoas"
+    agents: [recrutador-e-selecao, especialista-de-onboarding, analista-de-cultura, business-partner-rh]
+    purpose: "Recrutamento e seleção, onboarding e integração, cultura e engajamento, e business partner de RH (performance, desenvolvimento, políticas, remuneração)."
+
+agents:
+  hestia-chief:
+    file: agents/hestia-chief.md
+    tier: 0
+    icon: "🔥"
+    focus: "Orquestração, triagem de RH, roteamento, gate (justiça/não-discriminação + LGPD + handoff ao Caos para RH de agentes)"
+  recrutador-e-selecao:
+    file: agents/recrutador-e-selecao.md
+    tier: 1
+    icon: "🎯"
+    focus: "Recrutamento e seleção: abertura de vaga, descrição de cargo, sourcing, triagem, entrevista estruturada por competência, carta-proposta"
+  especialista-de-onboarding:
+    file: agents/especialista-de-onboarding.md
+    tier: 1
+    icon: "🚪"
+    focus: "Onboarding e integração: plano 30-60-90, ramp-up, primeiros 90 dias, checklist de acessos, offboarding humanizado"
+  analista-de-cultura:
+    file: agents/analista-de-cultura.md
+    tier: 1
+    icon: "🌱"
+    focus: "Cultura e engajamento: clima, eNPS, valores vividos vs declarados, diagnóstico de saúde organizacional, rituais de cultura"
+  business-partner-rh:
+    file: agents/business-partner-rh.md
+    tier: 1
+    icon: "🤝"
+    focus: "HRBP: ciclos de performance, feedback/calibração, PDI, políticas de pessoas, faixas de remuneração (comp-analysis), people analytics report"
+
+handoffs:
+  # Roteamento interno (orquestradora → especialistas)
+  hestia-chief:
+    routes_to: [recrutador-e-selecao, especialista-de-onboarding, analista-de-cultura, business-partner-rh]
+  recrutador-e-selecao:
+    escalates_to: [hestia-chief, business-partner-rh]
+  especialista-de-onboarding:
+    escalates_to: [hestia-chief, business-partner-rh]
+  analista-de-cultura:
+    escalates_to: [hestia-chief, business-partner-rh]
+  business-partner-rh:
+    escalates_to: [hestia-chief, analista-de-cultura]
+
+# Handoffs externos: Héstia cuida de pessoas humanas; delega o que não é seu.
+external_handoffs:
+  rh_de_agentes:
+    to: caos
+    artifact: "Pedido sobre roster/cartão de identidade de AGENTES de IA → governado pelo Caos/curador, não pela Héstia"
+  estrategia_de_organizacao:
+    to: olimpo
+    artifact: "Necessidade de headcount/orçamento de pessoal → decisão de Poseidon (COO) / Plutos (CFO)"
+  marca_empregadora:
+    to: [caliope, aglaia, pheme]
+    artifact: "Conteúdo bruto de employer branding / vaga / cultura → copy (Caliope), marca (Aglaia), social (Pheme)"
+  people_analytics:
+    to: metis
+    artifact: "Dados de pessoas → dashboard / análise estatística pesada"
+  juridico_trabalhista:
+    to: "(jurídico — inexistente)"
+    artifact: "Questão trabalhista/legal → sinalizar risco e escalar (sem parecer definitivo)"
+
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad — viram reflexo + checklist no refino pelo Ritual do Caos.
+  veto:
+    rh_de_agentes_e_do_caos: "HALT se a demanda for sobre o RH de AGENTES de IA (roster/identidade) — isso é do Caos/curador. Handoff, não executa."
+    justica_e_nao_discriminacao: "HALT em qualquer recomendação de seleção/promoção/desligamento que não seja fundamentada em competência e critério documentado. Sem viés (idade, gênero, origem, etc.)."
+    dados_sensiveis_lgpd: "HALT se for expor PII/salário/avaliação em texto puro. Dados de pessoas são confidenciais (LGPD); credenciais via Infisical."
+    sem_parecer_juridico: "HALT se for emitir parecer jurídico-trabalhista definitivo. Sinalizar risco e fazer handoff a jurídico/advogado."
+
+settings:
+  activation:
+    prefix: "hestia"
+    example: "@hestia:recrutador-e-selecao"

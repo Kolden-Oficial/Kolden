@@ -1,0 +1,104 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Pactolo
+# Domínio: Finanças Operacionais (FP&A) — execução
+# Versão: 0.1.0 (semente-do-lote-2026-06-26)
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: pactolo
+  display_name: "Pactolo — Finanças Operacionais / FP&A (o rio dourado: número bruto vira ouro legível)"
+  version: "0.1.0"
+  status: "semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)"
+  domain: "Finanças operacionais: planejamento e análise (FP&A), modelagem financeira, orçamento e forecast, fechamento contábil, fluxo de caixa, unit economics operacional, relatórios financeiros"
+  description: |
+    Squad de EXECUÇÃO financeira da Kolden. Onde o Plutos (Olimpo/CFO) DECIDE a estratégia
+    (budget de mídia, precificação, margem-alvo, alocação de capital), o Pactolo EXECUTA o FP&A:
+    monta o orçamento e o forecast rolling, faz budget vs actual e análise de variância, constrói
+    o modelo de 3 demonstrações com cenários e sensibilidade, conduz o fechamento contábil
+    (lançamentos, reconciliação, DRE/BP/DFC), projeta o fluxo de caixa (runway, burn, capital de
+    giro) e mede o unit economics operacional (CAC, LTV, payback, margem de contribuição).
+
+    Pactolo é o rio da Lídia cujas areias Midas tornou douradas: o squad converte os números brutos
+    da operação em ouro legível e acionável. É camada OPERACIONAL — prepara o número, o cenário e a
+    variância, e faz handoff de SUBIDA da decisão estratégica ao Plutos (Olimpo/CFO).
+  keywords: [financas, finance, fpa, fp&a, planejamento-financeiro, analise-financeira, orcamento, budget, forecast, rolling-forecast, budget-vs-actual, variancia, variance-analysis, modelagem-financeira, financial-modeling, modelo-de-3-demonstracoes, three-statement, projecao, cenarios, sensibilidade, fechamento, close, fechamento-contabil, close-management, lancamento, journal-entry, reconciliacao, reconciliation, demonstracoes, financial-statements, dre, balanco, dfc, fluxo-de-caixa, cash-flow, capital-de-giro, working-capital, runway, burn-rate, ciclo-de-caixa, unit-economics, cac, ltv, payback, margem-de-contribuicao, saas-metrics, relatorio-financeiro]
+  entry_agent: pactolo-chief
+  created_at: "2026-06-26"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [pactolo-chief]
+    purpose: "Triagem (FP&A / modelagem / fechamento / caixa / unit economics), roteamento, QA contra o gate de qualidade e handoffs (Plutos/Metis/Argos). Não executa diretamente."
+  tier_1:
+    name: "Execução de Finanças Operacionais"
+    agents: [analista-fpa, modelador-financeiro, controller, analista-de-fluxo-de-caixa]
+    purpose: "Orçamento/forecast/variância e unit economics (analista-fpa); modelo de 3 demonstrações, cenários e sensibilidade (modelador-financeiro); fechamento contábil, lançamentos, reconciliação e demonstrações (controller); projeção de caixa, capital de giro, runway e burn (analista-de-fluxo-de-caixa)."
+
+agents:
+  pactolo-chief:
+    file: agents/pactolo-chief.md
+    tier: 0
+    icon: "🏞️"
+    focus: "Orquestração, triagem FP&A/modelagem/fechamento/caixa, roteamento, gate de qualidade e handoffs (Plutos/Metis/Argos)"
+  analista-fpa:
+    file: agents/analista-fpa.md
+    tier: 1
+    icon: "📊"
+    focus: "FP&A: orçamento, forecast rolling, budget vs actual, análise de variância, unit economics operacional (CAC/LTV/payback/margem)"
+  modelador-financeiro:
+    file: agents/modelador-financeiro.md
+    tier: 1
+    icon: "📐"
+    focus: "Modelagem financeira: modelo de 3 demonstrações, projeção orientada a driver, cenários, análise de sensibilidade, valuation operacional"
+  controller:
+    file: agents/controller.md
+    tier: 1
+    icon: "🧾"
+    focus: "Fechamento contábil: lançamentos, reconciliação, DRE/BP/DFC, checklist e controles do close, accruals/deferrals"
+  analista-de-fluxo-de-caixa:
+    file: agents/analista-de-fluxo-de-caixa.md
+    tier: 1
+    icon: "💧"
+    focus: "Fluxo de caixa: projeção direta/indireta, capital de giro, runway, burn rate, ciclo de conversão de caixa, posição de liquidez"
+
+handoffs:
+  # Roteamento interno (orquestrador → especialistas)
+  pactolo-chief:
+    routes_to: [analista-fpa, modelador-financeiro, controller, analista-de-fluxo-de-caixa]
+  analista-fpa:
+    escalates_to: [pactolo-chief, modelador-financeiro]
+  modelador-financeiro:
+    escalates_to: [pactolo-chief, analista-fpa]
+  controller:
+    escalates_to: [pactolo-chief, analista-fpa]
+  analista-de-fluxo-de-caixa:
+    escalates_to: [pactolo-chief, modelador-financeiro]
+
+# Handoffs externos: Pactolo executa FP&A; entrega a decisão ao CFO e consome o que não é seu.
+external_handoffs:
+  decisao_estrategica:
+    to: plutos  # Olimpo / CFO
+    artifact: "Pacote de decisão pronto (orçamento, cenários, variância, projeção de caixa, unit economics) → o Plutos DECIDE budget de mídia, precificação, margem-alvo, alocação de capital. Pactolo prepara; CFO decide."
+  analytics_e_atribuicao:
+    from: metis
+    artifact: "Métricas de produto, atribuição por canal e leitura estatística → insumo de receita/forecast e unit economics (Pactolo não instrumenta analytics)"
+  inteligencia_de_mercado:
+    from: argos
+    artifact: "Benchmark de mercado, dados de concorrência e custo de insumos → premissa externa de modelagem e forecast (Pactolo não coleta dado de mercado)"
+
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad — viram reflexo PreToolUse (mecânico) + checklist + checkpoint de workflow (semântico).
+  # NOTA (semente): reflexos e checklists serão materializados no refino pelo Ritual do Caos.
+  veto:
+    decisao_e_handoff: "HALT se o Pactolo for DECIDIR estratégia financeira (budget de mídia, precificação, margem-alvo, alocação de capital) — isso é do Plutos (Olimpo/CFO). O Pactolo prepara número+cenário e faz handoff de subida."
+    numero_sem_fonte: "HALT em número apresentado como fato sem fonte (razão contábil, extrato, sistema) ou premissa declarada. Sem fonte, rotular como estimativa."
+    projecao_sem_premissa: "HALT em projeção/cenário sem premissas explícitas (driver, taxa, período). Modelo é tão bom quanto suas premissas visíveis."
+    reporte_sem_conciliacao: "HALT em demonstração reportada sem reconciliação fechada (diferença = 0 ou explicada por item)."
+
+settings:
+  activation:
+    prefix: "pactolo"
+    example: "@pactolo:controller"

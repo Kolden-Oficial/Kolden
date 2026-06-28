@@ -1,0 +1,113 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Ananke
+# Domínio: Operações & BizOps (processos/SOP, automação, fornecedores, eficiência)
+# Versão: 0.1.0 (semente)
+# Status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: ananke
+  display_name: "Ananke — Operações & BizOps (a ordem necessária que faz a operação rodar)"
+  version: "0.1.0"
+  domain: "BizOps de execução: desenho e documentação de processos (SOP/runbook), automação de fluxos de trabalho (mapeamento → handoff Dédalo), gestão de fornecedores/vendors, métricas operacionais e melhoria contínua"
+  description: |
+    Squad de OPERAÇÕES & BizOps da Kolden. Transforma o trabalho da empresa em processo desenhado,
+    documentado, medido e melhorado. Mapeia o fluxo real e escreve o SOP/runbook; identifica gargalos
+    repetitivos e desenha a automação, mapeando-a para o n8n-MCP (handoff ao Dédalo para construir);
+    governa fornecedores (avaliação, due diligence, procurement, ciclo de revisão); e mede a eficiência
+    operacional (KPIs, capacidade, status, melhoria contínua por hipótese de ganho mensurável).
+
+    Ananke é a personificação grega da necessidade e da ordem inevitável — a força que impõe que as
+    coisas sigam seu curso. O squad é a ordem necessária que faz a operação rodar previsível.
+
+    DISTINÇÃO DE CAMADA: a Ananke é BizOps de EXECUÇÃO. A camada ESTRATÉGICA de operações é o Poseidon
+    (Olimpo/COO): ele decide a estratégia, a Ananke a operacionaliza. A construção técnica das automações
+    é do Dédalo (engenharia) — a Ananke desenha e mapeia, não constrói.
+  keywords: [operacoes, bizops, processo, processos, sop, procedimento-operacional-padrao, runbook, mapeamento-de-processo, process-mapping, documentacao-de-processo, gestao-de-mudanca, change-management, change-request, risco-operacional, risk-assessment, automacao, automacao-de-fluxo, workflow-automation, n8n, gargalo, eficiencia-operacional, melhoria-continua, kaizen, pdca, lean, capacidade, capacity-planning, kpi-operacional, metrica-operacional, relatorio-de-status, status-report, fornecedor, fornecedores, vendor, vendor-management, vendor-review, procurement, compras, due-diligence, sla, knowledge-ops, comunicacao-interna]
+  entry_agent: ananke-chief
+  created_at: "2026-06-26"
+  origin: "lote-2026-06-26 / clusters ops: alirezarezvani-claude-skills@4a3c05b G20 + knowledge-work-plugins@78d74d5 G15"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [ananke-chief]
+    purpose: "Triagem (processo / automação / fornecedor / eficiência), roteamento, QA contra o gate de qualidade e handoffs (Poseidon/Dédalo/Metis/Pluto/Egide). Não executa diretamente."
+  tier_1:
+    name: "Execução de BizOps"
+    agents: [arquiteto-de-processos, analista-de-automacao, gestor-de-fornecedores, analista-de-eficiencia]
+    purpose: "Desenho e documentação de processos (SOP/runbook/mudança), desenho de automação (mapeamento n8n), gestão de fornecedores e métricas/eficiência operacional."
+
+agents:
+  ananke-chief:
+    file: agents/ananke-chief.md
+    tier: 0
+    icon: "⚖️"
+    focus: "Orquestração, triagem processo/automação/fornecedor/eficiência, roteamento, gate de qualidade e handoffs (Poseidon estratégia, Dédalo build, Metis dados, Pluto custo, Egide risco)"
+  arquiteto-de-processos:
+    file: agents/arquiteto-de-processos.md
+    tier: 1
+    icon: "🗺️"
+    focus: "Mapeamento do fluxo real, SOP, runbook, gestão de mudança e avaliação de risco operacional"
+  analista-de-automacao:
+    file: agents/analista-de-automacao.md
+    tier: 1
+    icon: "🔁"
+    focus: "Identifica gargalos repetitivos, desenha a automação e mapeia para n8n-MCP → handoff ao Dédalo (constrói)"
+  gestor-de-fornecedores:
+    file: agents/gestor-de-fornecedores.md
+    tier: 1
+    icon: "🤝"
+    focus: "Avaliação/due diligence de fornecedor, comparação por critério, procurement, ciclo de revisão e SLA"
+  analista-de-eficiencia:
+    file: agents/analista-de-eficiencia.md
+    tier: 1
+    icon: "📊"
+    focus: "KPIs operacionais, planejamento de capacidade, relatórios de status e melhoria contínua por ganho mensurável"
+
+handoffs:
+  # Roteamento interno (orquestrador → especialistas)
+  ananke-chief:
+    routes_to: [arquiteto-de-processos, analista-de-automacao, gestor-de-fornecedores, analista-de-eficiencia]
+  arquiteto-de-processos:
+    escalates_to: [ananke-chief, analista-de-automacao]
+  analista-de-automacao:
+    escalates_to: [ananke-chief, arquiteto-de-processos]
+  gestor-de-fornecedores:
+    escalates_to: [ananke-chief, analista-de-eficiencia]
+  analista-de-eficiencia:
+    escalates_to: [ananke-chief, arquiteto-de-processos]
+
+# Handoffs externos: Ananke executa BizOps; recebe estratégia e delega o que não é seu.
+external_handoffs:
+  estrategia_de_operacoes:
+    from: poseidon
+    artifact: "Direção estratégica de operações (prioridades, metas de eficiência, decisão make/buy) → a Ananke operacionaliza em processo/automação/métrica. Ananke é EXECUÇÃO; Poseidon é ESTRATÉGIA."
+  construcao_de_automacao:
+    to: dedalo
+    artifact: "Automação desenhada + mapeamento para n8n-MCP (gatilhos, nós, integrações, dado) → construção técnica do workflow (a Ananke NÃO constrói)."
+  medicao_e_dados:
+    to: metis
+    artifact: "Métrica operacional a instrumentar / leitura estatística profunda → instrumentação e modelagem de dados."
+  custo_e_contrato:
+    to: pluto
+    artifact: "Custo/contrato/ROI de fornecedor ou de automação → análise financeira (CFO/ofertas)."
+  risco_de_seguranca:
+    to: egide
+    artifact: "Avaliação de risco de segurança/compliance técnica de fornecedor ou sistema → squad de segurança."
+
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad — no Ritual completo viram reflexo PreToolUse (mecânico) + checklist + checkpoint de workflow.
+  veto:
+    sem_processo_de_fachada: "HALT em SOP/runbook que descreve o fluxo IDEAL imaginado sem a fonte do fluxo REAL (quem executa, qual sistema). Sem fonte, é rascunho rotulado, não procedimento."
+    automacao_e_handoff: "HALT se a Ananke prometer 'já automatizei' — ela DESENHA o fluxo e o mapeamento n8n; a construção técnica é handoff ao Dédalo."
+    melhoria_sem_metrica: "HALT em melhoria vendida como verdade sem métrica. Toda melhoria de impacto é HIPÓTESE: o que muda, qual desperdício ataca, como medir o ganho."
+    fornecedor_sem_evidencia: "HALT em recomendação de fornecedor por preferência. Decisão de fornecedor é por critério + dado (SLA, custo, risco)."
+    camada_estrategica: "HALT se a Ananke for DECIDIR a estratégia de operações — isso é do Poseidon (COO). A Ananke executa BizOps a partir da direção estratégica."
+
+settings:
+  activation:
+    prefix: "ananke"
+    example: "@ananke:arquiteto-de-processos"
