@@ -140,9 +140,9 @@ repositorios:
   github.com/thedotmack/claude-mem:
     url: "https://github.com/thedotmack/claude-mem"
     shas:
-      - { sha: "3fe0725a97e18b5edf3e61cde60e181ab2b6c997", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "dedalo + INFRA (Kolden OS)", notas: "28 cap; core de memória (daemon+SQLite+Chroma)=infra, escalar ao Ronan; telemetria PostHog remover; padrões→dedalo" }
+      - { sha: "3fe0725a97e18b5edf3e61cde60e181ab2b6c997", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "ADAPT+INFRA", squadAlvo: "INFRA (Kolden OS) + dedalo + multi-squad", notas: "28 cap. DECIDIDO 2026-06-28 pelo Ronan: core de memória vira stack INFRA do Kolden OS (kolden/claude-mem/ ao lado do LobeHub, bind 127.0.0.1) — memória semântica para a frota inteira (246 ag.); telemetria PostHog REMOVER no fork; 22 ADAPT (padrões/skills) seguem para dedalo/prometeu/orfeu/liceu. Briefing: Caos/registros/absorcao/thedotmack--claude-mem/briefing-de-execucao.md" }
     licenca: "Apache-2.0"
-    status: analisado
+    status: decidido
 
   github.com/nextlevelbuilder/ui-ux-pro-max-skill:
     url: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
@@ -238,9 +238,9 @@ repositorios:
   github.com/harry0703/moneyprinterturbo:
     url: "https://github.com/harry0703/MoneyPrinterTurbo"
     shas:
-      - { sha: "ad6aabfeb94f16f35474058d9c3e1f74ce66e9d4", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "VENDOR", squadAlvo: "vendor (pheme·caliope avaliar)", notas: "10 cap; gera vídeo curto IA; código MIT MAS mídia embutida (resource/songs,fonts) NÃO-MIT; configurável p/ soberania (Ollama/whisper local)" }
+      - { sha: "ad6aabfeb94f16f35474058d9c3e1f74ce66e9d4", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "VENDOR-INTERNO", squadAlvo: "pheme + caliope (consumidores)", notas: "10 cap. DECIDIDO 2026-06-28 pelo Ronan: ferramenta INTERNA — hospedar self-hosted no Kolden OS (kolden/moneyprinter/, bind 127.0.0.1), configuração soberana (Ollama LLM local, faster-whisper local, material local); Pheme consome para Reels/Shorts da marca Kolden (+100k) e funil Telegram-Shopee; SANITIZAR mídia embutida não-MIT antes do build; g4f desligado; upload-post.com NÃO usar (publicação fica em Postiz/GHL). Briefing: Caos/registros/absorcao/harry0703--MoneyPrinterTurbo/briefing-de-execucao.md" }
     licenca: "MIT (mídia embutida não-MIT)"
-    status: analisado
+    status: decidido
 
   github.com/hesreallyhim/awesome-claude-code:
     url: "https://github.com/hesreallyhim/awesome-claude-code"
