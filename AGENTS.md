@@ -9,13 +9,24 @@
 Operação do **Ronan**. A descrição oficial (modelo de negócio, mercado, marca) está em construção em `sobre-a-empresa/` — **um squad de pesquisa vai definir e preencher**. Enquanto estiver `status: rascunho`, **não afirme** detalhes de negócio: diga que está em definição.
 
 ## Números do workspace (estado atual)
-- **19 squads** de agentes (nomes da mitologia grega) — **201 agentes** nas pastas `agents/`.
+- **19 squads** de agentes (nomes da mitologia grega) — **203 agentes** nas pastas `agents/`.
 - **Prometeu**: framework de engenharia AIOX com **12 agentes** em `Prometeu/.aiox-core/development/agents/`.
-- **Caos**: fábrica de agentes com **9 especialistas internos** + **13 skills**.
-- **Total**: **222 agentes** mapeados (201 squads + 12 Prometeu + 9 Caos).
-- **Ferramentas**: ~30 tools/APIs catalogadas; **14 MCPs conectados**, 8 aguardando OAuth.
+- **Caos**: fábrica de agentes com **9 especialistas internos** + **26 skills**.
+- **Total**: **224 agentes** mapeados (203 squads + 12 Prometeu + 9 Caos) + **Dike** (verificador solo).
+- **Skills (lote de absorção 2026-06-26/27)**: **91 habilidades novas** em 11 squads — Égide+29, Ariadne+18, Dédalo+9, Prometeu+9, Caos+8, Pheme+6, Harmonia+4, Argos+3, Olimpo+3, Metis+1, Caliope+1 — a partir de **31 repos GitHub** (todos auditados SAFE, reconciliação PERDIDO=0). São **44 âncoras** + **47 da absorção exaustiva** (Égide cyber full-spectrum, Ariadne SEO profundo, ECC meta-fábrica). Todos os squads tocados têm `catalogo.md`. Detalhe: `Caos/registros/absorcao/_lote-2026-06-26/RELATORIO-DO-LOTE.md` + `aplicacao-f6-resultado.md`. Roadmap da exaustão restante: `_lote-2026-06-26/ROADMAP-ESTRUTURA-ROBUSTA.md`.
+- **Ferramentas**: ~35 tools/APIs catalogadas (inclui 5 vendors novos: Repomix, MarkItDown, MoneyPrinterTurbo, PlaywrightMCP, n8n-MCP); **14 MCPs conectados**, 8 aguardando OAuth.
 - **Projetos** em desenvolvimento: `omiron`, `CataLogo` (Tracker Flow).
 - **Infra do Kolden OS** (stack LobeHub) roda no WSL2 — ver `CLAUDE.md` (não é parte deste workspace de agentes Windows).
+
+## Sistema hierárquico de agentes (5 camadas)
+Um input do Ronan atravessa 5 camadas, enriquecido e assinado a cada degrau num **Contrato de Missão** (o chassi, em `Olimpo/contratos/`):
+1. **Humano (Ronan)** — dá o input, aprova no portão.
+2. **Hermes** (camada 2) — traduz a intenção, aplica o **DoR** e a **matriz de risco** (verde/amarelo/vermelho → autonomia progressiva), **lacra a intenção** (sha256) e cria o Contrato. Dono do `USER.md`. Ver `Hermes/camada-2-contrato.md`.
+3. **Zeus** (Olimpo) — decompõe a missão e roteia ao(s) executivo(s) pelos `routing_triggers`.
+4. **Executivos do Olimpo** (8 deuses) — Zeus/CEO, Poseidon/COO, Apolo/CMO, Hefesto/CTO, Hades/CIO, Atena/CAIO, Plutos/CFO, Afrodite/CRO. Cada um especifica na língua técnica da sua disciplina e faz handoff ao operacional.
+5. **Operacional** — os squads de execução (Peitho, Caliope, Pheme, Ariadne, GHL…).
+
+Na **subida**, a **`Dike/`** (verificador) reconcilia a entrega contra o lacre e localiza o degrau de qualquer quebra (TPND=0) antes de o Hermes devolver ao Ronan. O **RH dos agentes** (cartão de identidade `Caos/modelos/cartao-de-identidade.md` + roster `Caos/dados/elenco-de-agentes.yaml`) e o **tool registry** consultável (`sobre-a-empresa/Ferramentas/registro-de-ferramentas.yaml`) são governados pelo Caos/curador.
 
 ---
 
@@ -48,6 +59,20 @@ Novos projetos seguem o template `Projetos/_modelo-projeto/` (leia-me, prd, arqu
 - `.claude/_staging/` — **temporário**: clones de import (`aiox/`, `xquads/`) + `MANIFESTO-IMPORTACAO.md`. Limpável após a dívida de Ritual/PRD por squad ser endereçada.
 
 ---
+
+## 🧩 Skills absorvidas (lote 2026-06-26/27) — por squad
+91 habilidades nascidas da absorção de 31 repos GitHub (REUSE>ADAPT>CREATE, reconciliação PERDIDO=0, sem cópia literal — princípio reescrito em PT-BR + atribuição). Vivem em `<Squad>/.claude/skills/`, indexadas no `catalogo.md` de cada squad. Abaixo as **44 âncoras** iniciais; a **absorção exaustiva (2026-06-27)** somou **+47**: **Égide +24** (cyber full-spectrum: cloud/k8s/IAM/ZTA, malware/detecção/SOC/endpoint/threat-hunting/rede, OWASP/API/vuln/PTES/DevSecOps/cripto, OT-ICS/mobile/firmware/blockchain/wireless/supply-chain/GRC/anti-ransomware — só método/dual-use), **Ariadne +11** (SEO técnico em escala + conteúdo E-E-A-T), **ECC +12** (Caos eval/governança/council, Dédalo code-review/TDD/grafo/sanitização, Prometeu eng/dados/DevOps/QA). Resto diferido no `ROADMAP-ESTRUTURA-ROBUSTA.md`.
+- **Ariadne** (+7): `seo-local-e-mapas`, `seo-internacional-hreflang`, `seo-ecommerce`, `monitoramento-de-drift-seo`, `sxo-search-experience`, `seo-de-imagens`, `framework-flow`.
+- **Égide** (+5): `auditoria-de-seguranca-de-ia-e-mcp` (flagship), `inteligencia-de-ameacas-cti`, `forense-digital-e-resposta-a-incidente`, `scanner-anti-injecao-resiliente`, `escrita-segura-e-dlp`.
+- **Harmonia** (+4): `sistema-de-design`, `tokens-de-design`, `implementacao-ui`, `julgamento-estetico-anti-slop`.
+- **Prometeu** (+5): `clarificacao-de-ambiguidade`, `fatiamento-mvp-por-historia`, `analise-cross-artefato`, `checklist-de-requisitos`, `ciclo-de-fase-goal-backward`.
+- **Caos** (+4): `descoberta-de-skill` (SDO), `validacao-de-skill`, `topologias-de-time`, `qa-de-integracao-de-time`.
+- **Dédalo** (+5): `brevidade-de-saida`, `compreensao-de-codebase`, `orquestracao-de-subagentes-paralelos`, `git-worktrees-e-finalizacao`, `reflexos-resilientes-e-bootstrap`.
+- **Pheme** (+6): `fundacao-de-voz`, `arquetipos-de-newsletter`, `matriz-de-conteudo`, `score-de-post`, `roteiro-de-reels`, `comentario-fixado`.
+- **Argos** (+3): `retriever-sonar`, `extracao-defuddle`, `busca-semantica-no-acervo`.
+- **Olimpo** (+3): `reframe-produto-10-estrelas`, `rubrica-dimensional-0-10`, `painel-executivo-autoplan`.
+- **Metis** (+1): `telemetria-de-tokens-e-custo`.
+- **Caliope** (+1): `de-slop` (fusão humanizer+stop-slop).
 
 ## 🏛️ Squads (equipes de agentes) — nomes da mitologia grega
 Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes), `agents/`, `tasks/`, `workflows/`, `checklists/` e `squad.yaml`. Importados e traduzidos (PT-BR) dos arsenais validados `xquads-squads` e `aiox-core`. Status: `importado-cru`/`nascido-no-caos` (refino pelo Ritual do Caos é dívida da fase 2). Padrão: **1 orquestrador (tier 0)** + especialistas (tier 1+). **Abra o `README.md` de cada squad para o detalhe completo.**
@@ -198,13 +223,15 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 - `sintetizador` — Destila mente/linhagem em framework operacional + procedência.
 - `ponte-de-encarnacao` — Handoff ao Caos quando a mente deve virar agente conversável.
 
-**Olimpo/** — C-Level / Executivos (6 agentes). → `Olimpo/README.md`
-- `vision-chief` — CEO/Orquestrador: define a visão e roteia ao executivo certo.
-- `coo-orchestrator` — COO: excelência operacional, processos, escala, KPIs/OKRs.
-- `cmo-architect` — CMO: marca, posicionamento, demanda e go-to-market.
-- `cto-architect` — CTO: arquitetura de tecnologia, build vs buy e engenharia.
-- `cio-engineer` — CIO: sistemas de informação, infraestrutura e governança de TI.
-- `caio-architect` — CAIO: estratégia de IA, pipelines de ML e automação.
+**Olimpo/** — C-Level / Executivos (8 agentes). Cada deus carrega nome + cargo + `routing_triggers`; opera sobre o Contrato de Missão (`Olimpo/contratos/`). → `Olimpo/README.md`
+- `zeus` — CEO/Orquestrador: define a visão e roteia ao executivo certo.
+- `poseidon` — COO: excelência operacional, processos, escala, KPIs/OKRs.
+- `apolo` — CMO: marca, posicionamento, demanda e go-to-market.
+- `hefesto` — CTO: arquitetura de tecnologia, build vs buy e engenharia.
+- `hades` — CIO: sistemas de informação, infraestrutura e governança de TI.
+- `atena` — CAIO: estratégia de IA, pipelines de ML e automação.
+- `plutos` — CFO: finanças, budget de mídia, margem, precificação, unit economics e caixa.
+- `afrodite` — CRO: receita, pipeline de vendas, qualificação, conversão e CRM/GHL.
 
 **Themis/** — Conselho consultivo com 11 mentes estratégicas (11 agentes). → `Themis/README.md`
 - `board-chair` — Orquestrador: diagnostica, roteia e sintetiza recomendações.

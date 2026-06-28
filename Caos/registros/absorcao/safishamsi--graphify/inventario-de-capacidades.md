@@ -1,0 +1,30 @@
+# Inventário de capacidades — safishamsi--graphify
+
+- **slug:** safishamsi--graphify · **sha:** 8994b550 · **rota:** A
+- **natureza:** ferramenta/framework Python (`graphifyy`) distribuída como **skill multi-host** de agente de IA. Capacidade-alvo: *transformar uma pasta de código/docs/papers/imagens/vídeos num grafo de conhecimento consultável, com trilha de auditoria honesta e redução de tokens por consulta de subgrafo.*
+- granularidade: técnica/método quando reaproveitável; módulo Python agrupado quando é maquinário interno.
+
+| ID | capacidade | tipo | keywords | dominio | fonte(arquivo:linha) |
+|---|---|---|---|---|---|
+| G1 | Skill `/graphify` — pipeline orquestrado detect→extract→build→cluster→analyze→report→export, com fast-path de consulta em grafo já construído | skill | knowledge-graph, codebase, pipeline, claude-code | automacao | graphify/skill.md:1-677 |
+| G2 | Extração estrutural (AST) multilíngua via tree-sitter — ~30 linguagens, call-graph 2ª passada gerando edges INFERRED | metodo-prompt | ast, tree-sitter, code-analysis, multilang | automacao | graphify/extract.py; ARCHITECTURE.md:58-64 |
+| G3 | Extração semântica de docs/papers/imagens via subagentes paralelos (chunks 20-25 arquivos) com schema JSON nodes/edges/hyperedges | metodo-prompt | semantic-extraction, fan-out, subagentes, chunking | automacao | graphify/skill.md:193-385; references/extraction-spec.md |
+| G4 | Trilha de auditoria de confiança EXTRACTED / INFERRED / AMBIGUOUS (Honesty Rules: nunca inventar edge) | metodo-prompt | confianca, auditoria, honestidade, grafo | automacao | ARCHITECTURE.md:50-56; graphify/skill.md:671-677 |
+| G5 | Detecção de comunidades (Leiden/Louvain) + cohesion score + "god nodes" + "surprising connections" + perguntas sugeridas | ferramenta | community-detection, leiden, centralidade, clustering | analytics | graphify/cluster.py; graphify/analyze.py |
+| G6 | Consulta ao grafo: `query` (BFS contexto amplo / DFS traçar caminho, `--budget` cap de tokens), `path` (caminho mínimo entre dois conceitos), `explain` (explicação de nó) com expansão de vocabulário | ferramenta | query, bfs, dfs, graphrag, traversal | automacao | graphify/skill.md:647-661; references/query.md |
+| G7 | Servidor MCP stdio expondo 10 tools de grafo (query_graph, get_node, get_neighbors, get_community, god_nodes, graph_stats, shortest_path, list_prs, get_pr_impact, triage_prs) + 6 resources | codigo-mcp | mcp, stdio, agent-access, tools | automacao | graphify/serve.py:713-1175 |
+| G8 | Exportadores múltiplos: graph.json (GraphRAG), HTML interativo (pyvis/Mermaid), Obsidian vault, SVG, GraphML, Neo4j/FalkorDB (gerar cypher ou push direto) | ferramenta | export, obsidian, neo4j, falkordb, graphml, html | automacao | graphify/export.py; graphify/callflow_html.py; references/exports.md |
+| G9 | Atualização incremental `--update` (re-extrai só arquivos novos/alterados via manifest) + dedup por MinHash | ferramenta | incremental, manifest, minhash, dedup | automacao | graphify/dedup.py; graphify/_minhash.py; graphify/manifest.py; docs/superpowers/specs/2026-05-04-incremental-updates-dedup-design.md |
+| G10 | Modo `--watch`: reconstrói grafo (AST-only, sem LLM) ao detectar mudança de arquivo | ferramenta | watch, auto-rebuild, filesystem | automacao | graphify/watch.py |
+| G11 | Benchmark de redução de tokens: corpus inteiro vs subgrafo da consulta (mede ganho de contexto) | ferramenta | benchmark, token-reduction, contexto | analytics | graphify/benchmark.py |
+| G12 | Defesa de prompt-injection em conteúdo de fonte: wrap `<untrusted_source sha256=...>`, system-prompt instruindo tratar como dado inerte, `_neutralise_injection_sentinels()` defang de `<|im_start|>`/`[INST]`/`<<SYS>>` | metodo-prompt | seguranca, prompt-injection, untrusted-input, defesa | seguranca | SECURITY.md:37; graphify/llm.py; graphify/security.py |
+| G13 | Camada de validação de segurança: `validate_url` (anti-SSRF, bloqueia loopback/metadata), `safe_fetch` (cap 50MB/timeout), `validate_graph_path` (anti-traversal), `sanitize_label` (anti-XSS) | codigo-mcp | seguranca, ssrf, traversal, xss, sanitize | seguranca | graphify/security.py; ARCHITECTURE.md:67-75 |
+| G14 | Backends LLM plugáveis para extração semântica: Gemini, OpenAI, Anthropic, Bedrock, Ollama, Kimi, claude-CLI (host-as-LLM, sem API key) | ferramenta | llm, multi-provider, vendor-agnostico, gemini, ollama | automacao | graphify/llm.py; pyproject.toml:64-71 |
+| G15 | `skillgen` — gerador que monta a SKILL.md para 15+ hosts (Claude, Codex, Copilot, Aider, Kilo, Kiro, Cursor, Gemini, Droid, OpenCode, Pi, Devin, Trae, VSCode, Antigravity) a partir de fragmentos componíveis | ferramenta | skill-generation, multi-host, fragments, portabilidade | automacao | tools/skillgen/gen.py; tools/skillgen/fragments/ |
+| G16 | Blocos de injeção "always-on" para CLAUDE.md/AGENTS.md/GEMINI.md etc. — instruem o host a preferir consulta ao grafo sobre grep bruto | metodo-prompt | always-on, claude-md, integracao-host, context-rules | automacao | graphify/always_on/*.md |
+| G17 | Hook git post-commit de auto-rebuild do grafo (launcher detached cross-platform POSIX/Windows) | reflexo | git-hook, post-commit, detached, auto-rebuild | automacao | graphify/hooks.py:180-218; references/hooks.md |
+| G18 | Ingestão de URL para o corpus (`add <url>`, tag autor/contribuidor) + transcrição de vídeo/áudio (Whisper) | ferramenta | ingest, url, whisper, transcribe, video | automacao | graphify/ingest.py; graphify/transcribe.py; references/transcribe.md |
+| G19 | Geração de wiki agente-navegável (index.md + 1 artigo por comunidade) | ferramenta | wiki, navegacao, documentacao, comunidades | automacao | graphify/wiki.py |
+| G20 | Triagem/impacto de PRs sobre o grafo (`list_prs`, `get_pr_impact`, `triage_prs` via `gh` CLI) | ferramenta | pr, triage, impacto, github, gh-cli | automacao | graphify/prs.py; references/github-and-merge.md |
+
+**20 capacidades.** Núcleo (G1–G8, G12–G16) é o que distingue o repo; G9–G11, G17–G20 são extensões de produtividade.

@@ -1,0 +1,103 @@
+# Contrato de Missão — EXEMPLO preenchido (ilustrativo)
+# Caso: pedido de campanha de tráfego pago para a operação de afiliados Shopee, via WhatsApp.
+# Mostra o ciclo completo: descida (Hermes→Zeus→Apolo+Plutos→Peitho) e subida (Dike→Hermes).
+# NOTA: Plutos (CFO) e Afrodite (CRO) ainda serão criados (Fatia 2) — aqui aparecem como destino.
+---
+missao:
+  id: "m-20260626-103200-trafego-shopee-meta"
+
+  # ── CAMADA 1 — HUMANO (lacrada) ─────────────────────────────────────────────
+  intencao_original:
+    input_cru: "Bora subir uma campanha de tráfego pra Shopee afiliados no Meta, tenho R$3 mil pra testar essa semana"
+    canal: "whatsapp"
+    recebida_em: "2026-06-26T10:32:00-03:00"
+    hash: "sha256:a1f4c0…intencao-selada"
+
+  # ── CAMADA 2 — HERMES ───────────────────────────────────────────────────────
+  hermes:
+    dor:
+      objetivo_real: "Validar quais ângulos de criativo geram lead barato no Telegram para a operação de afiliados Shopee, usando Meta Ads como teste pago controlado."
+      criterio_de_sucesso: "Pelo menos 100 leads no Telegram na semana com CPL ≤ R$3,00, e identificar o ângulo de melhor performance para escalar."
+      restricoes:
+        prazo: "esta semana (até 2026-07-03)"
+        orcamento: "R$3.000 (teto rígido de teste)"
+        proibicoes: ["não usar conta de anúncios pessoal", "não prometer ganho garantido (política Meta)"]
+      contexto:
+        - "Funil ativo: Anúncio → landing-page-telegram-shopee.html → Telegram → Shopee"
+        - "Público: Classes B/C, afiliados físicos"
+      nivel_de_risco: "amarelo"
+    dor_completo: true
+    perguntas_abertas: []
+    matriz_de_risco:
+      reversibilidade: "reversivel"   # pausar a campanha estanca o gasto
+      impacto: "medio"                # dinheiro de mídia, mas teto de teste baixo
+      faixa: "amarelo"
+      autonomia: "mostra-antes"       # monta a campanha e mostra antes de publicar
+    ordem_de_maquina: "Estruturar 1 campanha Meta Ads (objetivo: leads), budget R$3.000/semana, 3 conjuntos testando 3 ângulos de criativo distintos para o funil Shopee-Telegram; alocar e travar CPL máximo; entregar para revisão antes de publicar."
+    assinatura: { por: "hermes", em: "2026-06-26T10:33:10-03:00" }
+
+  # ── CAMADA 3 — ZEUS ─────────────────────────────────────────────────────────
+  zeus:
+    diagnostico: "Missão de marketing de performance com componente financeiro (alocação de budget e teto de CAC). Toca duas disciplinas em paralelo: estratégia de campanha (CMO) e disciplina de budget/retorno (CFO)."
+    decomposicao:
+      - parte: "Estrutura de campanha, ângulos de criativo, segmentação e plano de mensuração."
+        executivo_destino: "apolo"
+        motivo: "Marca/demanda/tráfego/funil — gatilhos do CMO."
+      - parte: "Alocação dos R$3.000, teto de CPL, regra de corte e leitura de retorno."
+        executivo_destino: "plutos"
+        motivo: "Budget de mídia, custo, margem — gatilhos do CFO."
+    paralelo: ["apolo", "plutos"]
+    consolidacao: "Campanha de 3 ângulos aprovada com budget escalonado e gatilho de corte por CPL — pronta para revisão do Ronan antes de publicar."
+    arbitragem: null
+    assinatura: { por: "zeus", em: "2026-06-26T10:34:05-03:00" }
+
+  # ── CAMADA 4 — EXECUTIVOS ───────────────────────────────────────────────────
+  executivos:
+    - agente: "apolo"
+      especificacao_tecnica: "1 campanha (objetivo Cadastros/Leads). 3 ad sets, mesmo público (BR, 25-45, interesses renda extra/Shopee), R$140/dia cada nos 2 primeiros dias. Ângulos: A) 'renda extra sem aparecer', B) 'produto que já vende sozinho', C) 'prova social de afiliado real'. Criativos em vídeo curto 9:16. UTM por ângulo. Métrica primária: CPL no Telegram."
+      handoff_operacional: { squad: "peitho", artefato: "Briefing de campanha Meta com 3 ângulos, segmentação, budget diário e plano de UTM/mensuração" }
+      devolucao_lateral: null
+      resultado: "Campanha montada em conta de anúncios da agência, 3 ad sets em rascunho, criativos anexados, pixel/CAPI conferidos."
+      assinatura: { por: "apolo", em: "2026-06-26T11:10:00-03:00" }
+    - agente: "plutos"
+      especificacao_tecnica: "Teto rígido R$3.000/semana. Dia 1-2: R$140/dia × 3 = R$840 (fase de leitura). Regra de corte: pausar ângulo com CPL > R$4,50 após 50 cliques. Reinvestir o saldo no ângulo com CPL ≤ R$3,00. Sem ultrapassar o teto sob nenhuma hipótese."
+      handoff_operacional: { squad: "peitho", artefato: "Regra de alocação e corte de budget + planilha de leitura de CPL por ângulo" }
+      devolucao_lateral: null
+      resultado: "Regras de budget e corte validadas; teto travado no gerenciador."
+      assinatura: { por: "plutos", em: "2026-06-26T11:12:00-03:00" }
+
+  # ── CAMADA 5 — OPERACIONAL ──────────────────────────────────────────────────
+  operacional:
+    - agente: "ads-meta-specialist"
+      squad: "peitho"
+      resultado: "3 ad sets configurados em rascunho com criativos, públicos, UTMs e teto de budget. Aguardando aprovação do Ronan para publicar (autonomia=mostra-antes)."
+      riscos_levantados:
+        - "Landing page demora ~4s para carregar no 4G — pode inflar o CPL; recomendado handoff ao Ariadne (CRO) antes de escalar."
+      propostas:
+        - "Adicionar um 4º ângulo de retargeting para quem clicou e não entrou no Telegram, na 2ª metade da semana, dentro do mesmo teto."
+      assinatura: { por: "ads-meta-specialist", em: "2026-06-26T11:40:00-03:00" }
+
+  # ── SUBIDA — DIKE ───────────────────────────────────────────────────────────
+  dike:
+    confere_hash: true
+    reconciliacao: "bateu"
+    degrau_da_quebra: null
+    justificativa: "A entrega corresponde à intenção lacrada: campanha de teste Meta, 3 ângulos, teto R$3.000, voltada a leads no Telegram para o funil Shopee, entregue para revisão antes de publicar (respeita autonomia=mostra-antes). Risco da LP foi levantado pela ponta e anexado, sem violar o escopo."
+    veredito: "sobe"
+    assinatura: { por: "dike", em: "2026-06-26T11:45:00-03:00" }
+
+  # ── TRANSVERSAL ─────────────────────────────────────────────────────────────
+  orcamento:
+    teto_rodadas: 2
+    teto_tempo: "4h para montar e devolver para revisão"
+    rodadas_gastas: 0
+
+  log_de_decisao:
+    - em: "2026-06-26T10:33:10-03:00"
+      por: "hermes"
+      decisao: "Classificada como AMARELO (mostra-antes)"
+      porque: "Gasto de mídia reversível com teto de teste baixo; primeira campanha deste tipo, ainda sem histórico de acerto para rebaixar para verde."
+    - em: "2026-06-26T11:40:00-03:00"
+      por: "peitho/ads-meta-specialist"
+      decisao: "Sinalizado gargalo de velocidade da landing page"
+      porque: "Afeta diretamente o CPL e muda a decisão de escalar — handoff ao Ariadne (CRO) antes de aumentar budget."

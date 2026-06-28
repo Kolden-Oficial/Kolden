@@ -16,8 +16,8 @@
 #     recomendacao: o que fazer da próxima vez
 #     registradoEm: ISO-8601
 
-versao: "1.1.0"
-atualizado_em: "2026-06-20"
+versao: "1.3.0"   # +rh-dos-agentes-e-adapt-do-curador (formalização do RH dos agentes via curador, não agente novo)
+atualizado_em: "2026-06-26"
 
 padroes:
   # Sementes iniciais derivadas das referências (aiox-core, xquads-squads).
@@ -76,3 +76,45 @@ padroes:
     evidencia: ["aletheia -> aglaia/pluto/harmonia/caliope/prometeu/metis"]
     recomendacao: "Para squads novos que tocam domínios já cobertos, defina handoffs nomeados no squad.yaml (external_handoffs) em vez de reimplementar."
     registradoEm: "2026-06-20T00:00:00Z"
+
+  rh-dos-agentes-e-adapt-do-curador:
+    dominio: geral
+    tipo: decisao_arquitetura
+    padrao: >
+      Uma função "meta" pedida como "um agente dono de X de todos os outros agentes" (ex.: "RH
+      dos agentes" — dono das identidades: hard/soft skills, mentalidade, ferramentas, gatilhos)
+      quase nunca é um AGENTE NOVO. Quando já existe um dono institucional do domínio-meta (aqui:
+      o Caos como fábrica + o subagente `curador` como memória institucional + os dados
+      `registro-de-entidades.yaml`/`padroes-aprendidos.yaml`), criar um agente separado DUPLICA a
+      posse e fragmenta a fonte de verdade (dois escritores do mesmo registro = conflito) — o
+      anti-padrão que o próprio curador existe para impedir (Art. VI). A resposta é ADAPT:
+      ESTENDER o dono existente. A lacuna real raramente é "falta um dono"; é "falta o ARTEFATO
+      normalizado" — um cartão de identidade ÚNICO por agente (5 eixos) e um roster agente-granular
+      consultável (o registro de entidades era squad-granular: ~17 entidades para ~194 agentes; e o
+      `perfil.md` previsto na spec nunca foi produzido em nenhum agente). Distinção que orienta o
+      diagnóstico: função meta sobre os PRÓPRIOS agentes pertence ao Caos, não a um squad de negócio
+      (corrigida a má-atribuição "RH dos agentes" em olimpo.pontosDeExtensao).
+    evidencia: ["curador", "modelos/cartao-de-identidade.md", "dados/elenco-de-agentes.yaml"]
+    recomendacao: >
+      Quando o pedido for "um agente que governa/centraliza algo de TODOS os agentes", primeiro
+      cheque se o Caos/curador já é o dono institucional desse meta-domínio. Se for, faça ADAPT
+      (estenda o mandato do curador + crie o artefato normalizado + ligue ao Ritual Fase 5/8), não
+      CREATE. Verifique também se a spec promete um artefato que não existe na prática (ex.: perfil.md)
+      e realize-o no ADAPT. Atribua função meta-sobre-agentes ao Caos, nunca a um squad de operação.
+    registradoEm: "2026-06-26T00:00:00Z"
+
+  verificador-de-runtime:
+    dominio: geral
+    tipo: decisao_arquitetura
+    padrao: >
+      Verificação não é tarefa única — há dois verificadores distintos que não devem ser
+      confundidos. O "verificador-de-fábrica" (revisor/testador do Caos) audita um ARTEFATO
+      de agente contra o PRD em tempo de BUILD, antes da entrega. O "verificador-de-runtime"
+      (ex.: Dike) reconcilia uma MISSÃO VIVA em execução contra a intenção LACRADA num
+      contrato, em tempo de OPERAÇÃO, e localiza o degrau exato onde a entrega divergiu da
+      promessa. Eixos diferentes (build×runtime, artefato×missão, PRD×lacre): exigem agentes
+      separados, não um genérico sobrecarregado. O verificador-de-runtime opera fail-closed
+      (TPND=0: toda promessa não-demonstrada conta como falha).
+    evidencia: ["dike", "referência: revisor/testador do Caos (Fases 6-7)"]
+    recomendacao: "Quando o pedido for 'verificar', distinga build vs runtime: se é missão viva contra intenção lacrada, crie/reuse um verificador-de-runtime fail-closed (degrau-da-quebra + TPND=0); não tente que o revisor/testador de fábrica cubra runtime, nem vice-versa."
+    registradoEm: "2026-06-26T00:00:00Z"

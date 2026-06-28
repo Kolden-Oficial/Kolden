@@ -1,6 +1,6 @@
 ---
 task: diagnose()
-responsavel: "@vision-chief"
+responsavel: "@zeus"
 responsavel_type: Agent
 atomic_layer: Task
 elicit: true
@@ -31,7 +31,7 @@ Checklist:
 |---------------|----------------------------------------------------|
 | ID da Tarefa  | `c-level:diagnose`                                 |
 | Comando       | `@c-level diagnose "{query}"`                      |
-| Orquestrador  | `vision-chief`                                     |
+| Orquestrador  | `zeus`                                     |
 | Propósito     | Interpretar a solicitação do usuário, fornecer uma resposta rápida e rotear para o melhor executivo da C-suite |
 
 ## Entradas
@@ -50,7 +50,7 @@ Checklist:
 
 ## Fases
 
-### Fase 1: Interpretar (vision-chief)
+### Fase 1: Interpretar (zeus)
 
 1. Leia a consulta do usuário e extraia:
    - **Intenção**: O que o usuário quer realizar
@@ -77,12 +77,12 @@ Checklist:
 4. Guia de roteamento executivo:
    | Área do Problema            | Agente Primário  | Agente Secundário |
    |-----------------------------|------------------|-------------------|
-   | Visão/estratégia/captação   | vision-chief     | coo-orchestrator  |
-   | Operações/escala/processo   | coo-orchestrator | vision-chief      |
-   | Marketing/marca/GTM         | cmo-architect    | vision-chief      |
-   | Tecnologia/arquitetura      | cto-architect    | cio-engineer      |
-   | Infraestrutura/segurança    | cio-engineer     | cto-architect     |
-   | IA/ML/transformação digital | caio-architect   | cto-architect     |
+   | Visão/estratégia/captação   | zeus     | poseidon  |
+   | Operações/escala/processo   | poseidon | zeus      |
+   | Marketing/marca/GTM         | apolo    | zeus      |
+   | Tecnologia/arquitetura      | hefesto    | hades      |
+   | Infraestrutura/segurança    | hades     | hefesto     |
+   | IA/ML/transformação digital | atena   | hefesto     |
 
 ### Fase 3: Responder
 
@@ -98,7 +98,7 @@ Checklist:
    - Anuncie o alvo do roteamento: "Roteando para @{agent} para aconselhamento executivo"
    - Passe o contexto: consulta original + intenção interpretada + função de negócio
 2. Se a confiança for BAIXA:
-   - NÃO roteie — responda diretamente como vision-chief
+   - NÃO roteie — responda diretamente como zeus
    - Ofereça ao usuário uma escolha de executivos se a consulta abranger múltiplos domínios
 
 ## Formato de Saída
