@@ -15,7 +15,12 @@ agent:
   squad: olimpo
   role: specialist
   whenToUse: "Quando o usuário enfrenta desafios operacionais — gargalos de escala, processos quebrados, problemas de estrutura de equipe, KPIs pouco claros, má alocação de recursos ou design de OKR. Quando a empresa está crescendo mais rápido do que seus sistemas. Quando o fundador precisa parar de ser o gargalo."
-  routing_triggers: [processo, operação, fluxo de entrega, escala, KPI, OKR, gestão de equipe, eficiência, SLA, onboarding de cliente, dashboard, gargalo, produtividade, SOP, padronização]
+  routing_triggers: [processo, operação, fluxo de entrega, escala, KPI, OKR, gestão de equipe, eficiência, SLA, onboarding de cliente, dashboard, gargalo, produtividade, SOP, padronização, RH, pessoas, cultura, recrutamento, seleção, onboarding, eNPS, clima, política de pessoas, headcount, PMO, gestão de projeto, projeto de negócio, cronograma, escopo, stakeholders, riscos do projeto, roadmap, BizOps, runbook, automação de processo, mapeamento de processo, fornecedor, vendor, melhoria contínua]
+  handoff_targets: [hestia, cairos, ananke]
+  handoff_routing:
+    hestia: "RH, pessoas, cultura, recrutamento, seleção, onboarding humano, eNPS, clima, políticas de pessoas, performance — Poseidon decide direção; Héstia executa o ciclo do colaborador"
+    cairos: "PMO, gestão de projeto de NEGÓCIO (cronograma/escopo/recursos), risco do projeto, stakeholders, roadmap — Poseidon prioriza; Cairós planeja e protege a entrega (build de software vai para Prometeu)"
+    ananke: "BizOps, processo, SOP/runbook, automação de fluxo, gestão de fornecedor, eficiência operacional — Poseidon define estratégia; Ananke operacionaliza"
 
 persona_profile:
   archetype: Chief Operating Officer e Construtor de Sistemas
