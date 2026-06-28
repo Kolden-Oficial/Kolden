@@ -336,6 +336,167 @@ squads:
       - owasp
     muda_algo: true   # pentest/exploração afeta alvos/sistemas → aprovação
 
+  - squad: ariadne
+    nome: "Ariadne — SEO técnico & CRO de página (o fio do labirinto)"
+    dir: C:/Kolden/Ariadne
+    tipo: aios
+    chief_file: "agents/ariadne-chief.md"
+    keywords:
+      - seo
+      - seo técnico
+      - seo-técnico
+      - auditoria seo
+      - on-page
+      - crawlabilidade
+      - indexação
+      - core web vitals
+      - schema
+      - dados estruturados
+      - json-ld
+      - cro
+      - conversão
+      - landing page
+      - otimização de formulário
+      - ai-seo
+      - aeo
+      - geo
+    muda_algo: true   # aplica schema/CRO no site de produção → aprovação (auditoria/recomendação roda direto)
+
+  - squad: nomos
+    nome: "Nomos — Compliance & Jurídico/Regulatório (a lei) [semente]"
+    dir: C:/Kolden/Nomos
+    tipo: aios
+    chief_file: "agents/nomos-chief.md"
+    keywords:
+      - compliance
+      - conformidade
+      - lgpd
+      - gdpr
+      - privacidade
+      - iso 27001
+      - soc 2
+      - iso 42001
+      - eu ai act
+      - auditoria de conformidade
+      - contrato
+      - nda
+      - dpia
+      - incidente de dados
+      - regulatório
+    muda_algo: false  # mapeia regra/conformidade; execução técnica (DLP) → handoff Égide
+
+  - squad: pactolo
+    nome: "Pactolo — Finanças Operacionais / FP&A (o rio dourado) [semente]"
+    dir: C:/Kolden/Pactolo
+    tipo: aios
+    chief_file: "agents/pactolo-chief.md"
+    keywords:
+      - finanças
+      - fpa
+      - fp&a
+      - planejamento financeiro
+      - orçamento
+      - forecast
+      - budget
+      - modelagem financeira
+      - fechamento contábil
+      - fluxo de caixa
+      - capital de giro
+      - unit economics
+      - cac
+      - ltv
+      - margem
+    muda_algo: false  # prepara número/cenário; decisão estratégica (budget/preço) → handoff Plutos
+
+  - squad: emporos
+    nome: "Êmporos — Vendas & Comercial (o comerciante) [semente]"
+    dir: C:/Kolden/Emporos
+    tipo: aios
+    chief_file: "agents/emporos-chief.md"
+    keywords:
+      - vendas
+      - comercial
+      - sales
+      - pipeline
+      - lead
+      - qualificação
+      - bant
+      - meddic
+      - outbound
+      - cadência
+      - proposta comercial
+      - crm
+      - ghl
+      - negociação
+      - fechamento
+    muda_algo: true   # move pipeline no GHL, dispara cadências, envia proposta, fecha contrato → aprovação
+
+  - squad: hestia
+    nome: "Héstia — RH, Pessoas & Cultura (o lar) [semente]"
+    dir: C:/Kolden/Hestia
+    tipo: aios
+    chief_file: "agents/hestia-chief.md"
+    keywords:
+      - rh
+      - recursos humanos
+      - people ops
+      - recrutamento
+      - seleção
+      - onboarding
+      - performance
+      - avaliação de desempenho
+      - pdi
+      - feedback
+      - engajamento
+      - enps
+      - cultura
+      - remuneração
+      - descrição de cargo
+    muda_algo: false  # produz políticas/documentos internos; RH dos agentes → handoff Caos
+
+  - squad: ananke
+    nome: "Ananke — Operações & BizOps (necessidade/ordem) [semente]"
+    dir: C:/Kolden/Ananke
+    tipo: aios
+    chief_file: "agents/ananke-chief.md"
+    keywords:
+      - operações
+      - bizops
+      - processo
+      - sop
+      - runbook
+      - mapeamento de processo
+      - automação
+      - eficiência operacional
+      - melhoria contínua
+      - kpi operacional
+      - fornecedor
+      - vendor
+      - procurement
+    muda_algo: false  # desenha SOP/mapeia automação; build técnico (n8n) → handoff Dédalo
+
+  - squad: cairos
+    nome: "Cairós — PMO & Gestão de Projetos de negócio (o momento certo) [semente]"
+    dir: C:/Kolden/Cairos
+    tipo: aios
+    chief_file: "agents/cairos-chief.md"
+    keywords:
+      - pmo
+      - gestão de projetos
+      - cronograma
+      - escopo
+      - wbs
+      - caminho crítico
+      - marcos
+      - gestão de riscos
+      - stakeholders
+      - status report
+      - roadmap
+      - gestão de produto
+      - sprint
+      - metodologia
+    muda_algo: false  # planeja/gere riscos; build de software → handoff Prometeu
+
   # ------------------------------------------------------------------------
   # Notas:
   #   - caos (C:\Kolden\Caos): criação de agentes é INTERATIVA (ritual em rodadas).

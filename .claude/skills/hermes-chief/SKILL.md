@@ -31,7 +31,7 @@ do dispatch. Cada entrada tem: `squad` (id), `nome`, `dir` (diretório absoluto)
 
 ## 1. Carregue a identidade e o catálogo
 - `Read` em `C:\Kolden\Hermes\scripts\hermes-chief.SOUL.md` → adote a persona.
-- `Read` em `C:\Kolden\Hermes\squads-catalog.yaml` → carregue as 15 entradas.
+- `Read` em `C:\Kolden\Hermes\squads-catalog.yaml` → carregue as 22 entradas.
 
 ## 2. Diagnostique a intenção e escolha o squad
 - Leia o pedido do Ronan e case com o campo `keywords` de cada squad.
@@ -56,7 +56,7 @@ Olhe o `muda_algo` da entrada escolhida:
 - **`muda_algo: true` e o Ronan JÁ deu "ok" claro para esta ação** → despache com o bloco de
   **ação autorizada** prefixado.
 
-Squads `muda_algo: true` hoje: **peitho, argos, pheme, egide**. Os demais são `false`.
+Squads `muda_algo: true` hoje: **peitho, argos, pheme, egide, ariadne, emporos**. Os demais são `false`.
 
 Diagnóstico, leitura e relatório **nunca** precisam de aprovação. Só ação que muda o mundo.
 
