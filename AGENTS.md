@@ -63,7 +63,7 @@ Novos projetos seguem o template `Projetos/_modelo-projeto/` (leia-me, prd, arqu
 
 ## 🧩 Skills absorvidas (lote 2026-06-26/27) — por squad
 91 habilidades nascidas da absorção de 31 repos GitHub (REUSE>ADAPT>CREATE, reconciliação PERDIDO=0, sem cópia literal — princípio reescrito em PT-BR + atribuição). Vivem em `<Squad>/.claude/skills/`, indexadas no `catalogo.md` de cada squad. Abaixo as **44 âncoras** iniciais; a **absorção exaustiva (2026-06-27)** somou **+47**: **Égide +24** (cyber full-spectrum: cloud/k8s/IAM/ZTA, malware/detecção/SOC/endpoint/threat-hunting/rede, OWASP/API/vuln/PTES/DevSecOps/cripto, OT-ICS/mobile/firmware/blockchain/wireless/supply-chain/GRC/anti-ransomware — só método/dual-use), **Ariadne +11** (SEO técnico em escala + conteúdo E-E-A-T), **ECC +12** (Caos eval/governança/council, Dédalo code-review/TDD/grafo/sanitização, Prometeu eng/dados/DevOps/QA). Resto diferido no `ROADMAP-ESTRUTURA-ROBUSTA.md`.
-- **Ariadne** (+7): `seo-local-e-mapas`, `seo-internacional-hreflang`, `seo-ecommerce`, `monitoramento-de-drift-seo`, `sxo-search-experience`, `seo-de-imagens`, `framework-flow`.
+- **Ariadne** (+18): `analise-de-gap-de-conteudo`, `apis-google-e-indexacao`, `auditoria-tecnica-em-escala`, `brief-de-conteudo-data-driven`, `core-web-vitals-e-performance`, `framework-flow`, `monitoramento-de-drift-seo`, `otimizacao-on-page-por-intencao`, `qualidade-de-conteudo-eeat`, `relatorios-de-seo`, `render-js-e-spa`, `seo-de-imagens`, `seo-ecommerce`, `seo-internacional-hreflang`, `seo-local-e-mapas`, `seo-programatico-profundo`, `seo-tecnico-profundo`, `sxo-search-experience`.
 - **Égide** (+5): `auditoria-de-seguranca-de-ia-e-mcp` (flagship), `inteligencia-de-ameacas-cti`, `forense-digital-e-resposta-a-incidente`, `scanner-anti-injecao-resiliente`, `escrita-segura-e-dlp`.
 - **Harmonia** (+4): `sistema-de-design`, `tokens-de-design`, `implementacao-ui`, `julgamento-estetico-anti-slop`.
 - **Prometeu** (+5): `clarificacao-de-ambiguidade`, `fatiamento-mvp-por-historia`, `analise-cross-artefato`, `checklist-de-requisitos`, `ciclo-de-fase-goal-backward`.
@@ -80,7 +80,7 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 
 ### 📣 Marketing & Criação
 
-**Pheme/** — Social Media & Conteúdo orgânico de alta performance (9 agentes). **Publica de verdade** via Postiz/GHL. Meta: marca Kolden a +100k seguidores. Nascido no Caos. → `Pheme/README.md`
+**Pheme/** — Social Media & Conteúdo orgânico de alta performance (9 agentes). **Publica de verdade** via Postiz/GHL. Meta: marca Kolden a +100k seguidores. **Status: nascido-no-caos em transição** — agentes e skills já no padrão Kolden-native, mas `squad.yaml` ainda em formato AIOX-legado (sem `cross_cutting.veto` / `external_handoffs` / `entry_agent`); migração canônica pendente do Caos (achado K-010 da vistoria v2). → `Pheme/README.md`
 - `social-chief` — Orquestra conteúdo por rede e formato, monta calendário e garante a marca.
 - `content-strategist` — Desenha pilares, big idea, ganchos e calendário editorial.
 - `growth-analyst` — Analisa métricas, testes A/B de gancho e roadmap de crescimento.
