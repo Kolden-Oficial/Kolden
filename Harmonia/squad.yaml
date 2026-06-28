@@ -44,5 +44,16 @@ components:
   checklists:
     - output-quality.md
 
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad de design (design systems, UX, UI, visual).
+  veto:
+    design_sem_acessibilidade: "HALT em UI/componente entregue sem checklist mínimo de acessibilidade (contraste WCAG AA, alvo de toque ≥44px, foco visível, hierarquia semântica)."
+    componente_sem_token: "HALT em criar componente com cor/spacing/raio hardcoded em vez de token semântico (camada token primitivo → semântico → componente). Hardcode quebra o design system."
+    slop_visual: "HALT em entrega que dispara AI-tells (gradiente default purple/blue, ícone genérico no centro, glass effect aleatório, hero estéril). Roda julgamento-estetico-anti-slop antes de entregar."
+    sem_responsivo: "HALT em layout proposto sem comportamento mobile declarado. Mobile-first ou no mínimo mobile-considerado."
+    credencial_texto_puro: "HALT em qualquer credencial fora do Infisical (Art. VII)."
+
 config:
   extends: extend

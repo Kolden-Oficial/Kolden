@@ -63,6 +63,17 @@ components:
   checklists:
     - output-quality.md
 
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad de marca (estratégia, posicionamento, identidade, arquitetura).
+  veto:
+    claim_de_marca_sem_evidencia: "HALT em afirmação sobre brand equity / market position / awareness sem evidência (Sharp/Aaker exigem dado de mercado, não opinião)."
+    naming_sem_check: "HALT em proposta de nome de marca sem sinalizar necessidade de checagem de marca registrada (INPI/USPTO/WIPO) e disponibilidade de domínio. Naming sem check é risco legal."
+    arquetipo_como_estereotipo: "HALT em apresentar arquétipo (Jung/Mark&Pearson) como caracterização determinista de pessoa real ou de grupo. Arquétipo é lente, não diagnóstico."
+    copia_de_marca_existente: "HALT em proposta de identidade visual/verbal que seja imitação reconhecível de marca existente. Inspiração de princípio (Sharp) é OK; copy de execução é violação."
+    credencial_texto_puro: "HALT em qualquer credencial fora do Infisical (Art. VII)."
+
 config:
   extends: extend
 

@@ -46,5 +46,16 @@ components:
   checklists:
     - output-quality.md
 
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do Advisory Board (Dalio, Munger, Naval, Thiel, Sinek, ...).
+  veto:
+    sem_parecer_juridico_ou_fiscal_definitivo: "HALT em qualquer saída apresentada como parecer jurídico, fiscal ou contábil definitivo. Aconselhamento estratégico é OK; parecer vinculante exige profissional habilitado."
+    sem_aconselhamento_de_investimento_individual: "HALT em recomendação de investimento específica (compre X, venda Y) que possa ser interpretada como conselho personalizado a uma pessoa física não habilitada."
+    framework_sem_procedencia: "HALT em apresentar princípio como 'Munger diz' / 'Dalio diz' sem citação verificável (livro, ano, página/episódio)."
+    cita_pessoa_real_como_endosso: "HALT em fazer parecer que o board real (pessoas vivas) endossou uma decisão concreta da Kolden. São personas baseadas em obra pública, não consultoria real."
+    credencial_texto_puro: "HALT em qualquer credencial fora do Infisical (Art. VII)."
+
 config:
   extends: extend

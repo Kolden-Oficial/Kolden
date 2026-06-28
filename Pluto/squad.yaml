@@ -56,5 +56,16 @@ components:
   checklists:
     - output-quality.md
 
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad Pluto (frameworks Hormozi — ofertas/leads/preço/escala).
+  veto:
+    sem_promessa_garantida: "HALT em qualquer garantia de receita/ROI específico ('R$X em Y dias', 'multiplique por Z') sem premissa explícita, fonte de caso real e regra de corte/refund."
+    sem_unit_economics: "HALT em oferta/escala recomendada sem CAC, LTV e payback declarados — Hormozi não promete sem unit economics."
+    projecao_sem_premissa: "HALT em projeção financeira sem premissas explícitas (taxa, ticket, conversão, janela). Modelo é tão bom quanto suas premissas."
+    framework_sem_procedencia: "HALT em apresentar princípio como 'Hormozi diz' sem citar livro/Acquisition.com público verificável."
+    credencial_texto_puro: "HALT em qualquer credencial fora do Infisical (Art. VII)."
+
 config:
   extends: extend
