@@ -52,5 +52,17 @@ components:
   checklists:
     - output-quality.md
 
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad de cibersegurança — fechados em squad.yaml, não só em skills/reflexos.
+  veto:
+    sem_alvo_fora_de_escopo: "HALT em qualquer ação ofensiva (pentest, recon ativo, exploração) que toque alvo SEM autorização escrita do dono (rules of engagement). Defesa sobre infra própria/autorizada é OK; alvo de terceiro sem RoE é HALT."
+    sem_produzir_malware_executavel: "HALT em produção/entrega de payload/malware/exploit executável fora de laboratório isolado e autorizado. Análise estática de amostra é OK; criar arma é HALT."
+    sem_detonar_amostra: "HALT em executar amostra suspeita fora de sandbox isolada com network egress controlado. Triagem estática (Ghidra/radare2/YARA) NÃO requer detonação."
+    sem_evasao_para_uso_malicioso: "HALT em qualquer recomendação de técnica de evasão (anti-EDR, anti-forense) para uso ofensivo não autorizado. Conhecimento defensivo é OK; receita de evasão para invadir terceiros é HALT."
+    sem_dado_pessoal_em_relatorio: "HALT em incluir PII/dado pessoal de terceiro em relatório/pentest report sem anonimização. LGPD/GDPR aderente."
+    credencial_texto_puro: "HALT em qualquer credencial fora do Infisical (Art. VII Constituição). Sem invenção de capacidade fora de ferramentas.md (Art. IV)."
+
 config:
   extends: extend

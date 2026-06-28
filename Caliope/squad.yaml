@@ -75,6 +75,18 @@ components:
   checklists:
     - output-quality.md
 
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad de copy (direct response + email + funis + brand copy).
+  veto:
+    claim_sem_fonte: "HALT em qualquer alegação numérica de eficácia ('converte X%', 'ganhe Y em Z dias', 'descubra o segredo de W') sem fonte/case verificável citado no rascunho."
+    copia_literal_de_mestre: "HALT em entregar copy que seja CÓPIA LITERAL de Halbert/Schwartz/Hopkins/Bencivenga/etc. Inspirar-se em estrutura/framework é OK; copiar parágrafo é plágio."
+    sem_disclaimer_em_oferta_forte: "HALT em oferta forte (garantia, milagre, transformação) sem disclaimer/regra de stop/política de devolução visível."
+    sem_aderencia_a_lei: "HALT em copy de mercado regulado (saúde, finanças, suplemento, advocacia) sem checagem de claims permitidos pelo regulador. Handoff Nomos quando há dúvida."
+    publico_sem_consentimento: "HALT em copy direcionado a público vulnerável (criança, idoso, doente) sem cuidado ético e disclaimer."
+    credencial_texto_puro: "HALT em qualquer credencial fora do Infisical (Art. VII)."
+
 config:
   extends: extend
 

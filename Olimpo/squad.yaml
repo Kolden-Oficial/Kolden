@@ -43,5 +43,17 @@ components:
   checklists:
     - output-quality.md
 
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do C-suite virtual (Zeus + 7 executivos).
+  veto:
+    decisao_sem_premissa: "HALT em recomendação estratégica/executiva sem premissas explícitas, dado/evidência e horizonte de revisão. Decisão sem premissa é palpite rotulado."
+    arbitragem_sem_escalada: "HALT se dois executivos divergem materialmente e a divergência não for escalada ao humano (Ronan) com a tabela de trade-off. Zeus não decide pelo humano em conflito de domínio."
+    framework_apresentado_como_lei: "HALT em apresentar framework (Vision-Mission-Strategy, 3-Horizon, OKR, etc.) como verdade absoluta — toda recomendação carrega 'usando o framework X de Y, para esta empresa, hoje, supondo Z'."
+    promessa_de_resultado: "HALT em prometer resultado de negócio específico (captação fechada, M&A bem-sucedida, pivot eficaz) — o board orienta, não garante."
+    bypass_de_contrato_de_missao: "HALT se a missão chegar ao executivo sem passar pelo Contrato de Missão (Hermes-DoR-Zeus). Sem `intencao_original` lacrada, não desce ao operacional."
+    credencial_texto_puro: "HALT em qualquer credencial fora do Infisical (Art. VII)."
+
 config:
   extends: extend
