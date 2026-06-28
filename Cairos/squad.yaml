@@ -1,0 +1,118 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Cairós
+# Domínio: PMO & Gestão de Projetos (de negócio)
+# Versão: 0.1.0 (semente — refino pelo Ritual do Caos pendente)
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: cairos
+  display_name: "Cairós — PMO & Gestão de Projetos (o momento certo: planejar, sequenciar e proteger a entrega)"
+  version: "0.1.0"
+  status: "semente-do-lote-2026-06-26"
+  domain: "Gestão de projetos de negócio: escopo/cronograma/recursos, riscos de projeto, comunicação com stakeholders, gestão de produto/roadmap, metodologias (ágil/waterfall/híbrido), status reporting"
+  description: |
+    Squad de PMO e gestão de projetos de NEGÓCIO da Kolden. Onde os squads de execução entregam
+    o trabalho, Cairós PLANEJA, SEQUENCIA, ACOMPANHA e PROTEGE a entrega: define escopo (WBS),
+    monta cronograma (caminho crítico, marcos, baseline), aloca recursos, mantém o registro de
+    riscos (probabilidade × impacto, mitigação/contingência), gere a comunicação com stakeholders
+    (matriz poder × interesse, plano de comunicação, status reporting) e conduz a gestão de
+    produto/roadmap (priorização, sprint planning, métricas). Escolhe e aplica a metodologia certa
+    — ágil, waterfall ou híbrido.
+
+    Cairós (καιρός) é o "momento certo" dos gregos: a oportunidade que se aproveita ou se perde.
+    Gestão de projeto é a arte de fazer a coisa certa no momento certo — sequenciar, antecipar
+    risco e alinhar pessoas para que a janela não passe.
+
+    FRONTEIRA-CHAVE: Cairós gere PROJETOS DE NEGÓCIO. Projeto cujo objeto é build de ENGENHARIA DE
+    SOFTWARE é do Prometeu (pm/po/sm do AIOX) — Cairós faz handoff ao detectar isso.
+  keywords: [pmo, gestao-de-projetos, project-management, cronograma, schedule, escopo, scope, wbs, caminho-critico, critical-path, marcos, milestones, baseline, recursos, alocacao, gestao-de-riscos, risk-management, registro-de-riscos, risk-register, probabilidade-impacto, mitigacao, contingencia, stakeholders, comunicacao, plano-de-comunicacao, poder-interesse, status-report, status-reporting, roadmap, gestao-de-produto, product-management, sprint, sprint-planning, priorizacao, backlog, metodologia, agil, agile, scrum, kanban, waterfall, hibrido, jira, confluence, solicitacao-de-mudanca, change-request, retrospectiva, gantt]
+  entry_agent: cairos-chief
+  created_at: "2026-06-26"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [cairos-chief]
+    purpose: "Triagem (cronograma/escopo/recursos · riscos · stakeholders · produto/roadmap · metodologia), roteamento, QA contra o gate de qualidade e handoffs (Prometeu/Olimpo/Aletheia/Metis). Não executa diretamente."
+  tier_1:
+    name: "Gestão de Projetos"
+    agents: [gerente-de-projeto, gestor-de-riscos, gestor-de-stakeholders, product-manager]
+    purpose: "Planejamento (escopo/cronograma/recursos/metodologia), gestão de riscos, comunicação com stakeholders e gestão de produto/roadmap."
+
+agents:
+  cairos-chief:
+    file: agents/cairos-chief.md
+    tier: 0
+    icon: "⏳"
+    focus: "Orquestração, triagem de PMO, roteamento, gate de qualidade e handoffs (build de software → Prometeu; portfólio → Olimpo; discovery → Aletheia; métricas → Metis)"
+  gerente-de-projeto:
+    file: agents/gerente-de-projeto.md
+    tier: 1
+    icon: "🗓️"
+    focus: "Escopo (WBS), cronograma (caminho crítico, marcos, baseline), recursos, status report, escolha e aplicação de metodologia (ágil/waterfall/híbrido)"
+  gestor-de-riscos:
+    file: agents/gestor-de-riscos.md
+    tier: 1
+    icon: "⚠️"
+    focus: "Registro de riscos, probabilidade × impacto, planos de mitigação/contingência, gatilhos, donos e respostas (mitigar/transferir/aceitar/evitar)"
+  gestor-de-stakeholders:
+    file: agents/gestor-de-stakeholders.md
+    tier: 1
+    icon: "🤝"
+    focus: "Matriz poder × interesse, plano de comunicação, status updates por audiência, gestão de expectativa e escalonamento"
+  product-manager:
+    file: agents/product-manager.md
+    tier: 1
+    icon: "🧭"
+    focus: "Roadmap priorizado, specs, sprint planning, métricas de produto, síntese de discovery/pesquisa em decisão"
+
+handoffs:
+  # Roteamento interno (orquestrador → especialistas)
+  cairos-chief:
+    routes_to: [gerente-de-projeto, gestor-de-riscos, gestor-de-stakeholders, product-manager]
+  gerente-de-projeto:
+    escalates_to: [cairos-chief, gestor-de-riscos]
+  gestor-de-riscos:
+    escalates_to: [cairos-chief, gerente-de-projeto]
+  gestor-de-stakeholders:
+    escalates_to: [cairos-chief, gerente-de-projeto]
+  product-manager:
+    escalates_to: [cairos-chief, gestor-de-stakeholders]
+
+# Handoffs externos: Cairós gere projetos de negócio; delega o que não é seu.
+external_handoffs:
+  build_de_software:
+    to: prometeu
+    artifact: "Escopo + cronograma + stakeholders + riscos de um projeto cujo OBJETO é desenvolvimento de software → o Prometeu assume o ciclo spec → build → review (pm/po/sm do AIOX). Cairós NÃO conduz o desenvolvimento."
+  decisao_de_portfolio:
+    to: olimpo
+    artifact: "Decisão de priorização de portfólio, alocação de recursos entre projetos, go/no-go executivo → escalonamento ao Zeus/CEO e aos 8 deuses do Olimpo."
+  discovery_e_validacao:
+    from: aletheia
+    artifact: "Oportunidade já validada (problema/solução com evidência) → Cairós converte em projeto planejado. Cairós NÃO faz discovery."
+  medicao_e_analytics:
+    to: metis
+    artifact: "Métricas de produto/projeto a instrumentar e ler → instrumentação, leitura estatística e North Star. Cairós define O QUE medir; o Metis mede."
+
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad — no refino pelo Caos viram reflexo PreToolUse (mecânico) + checklist + checkpoint de workflow.
+  veto:
+    plano_sem_premissa: "HALT em cronograma/estimativa sem premissas explícitas e nível de confiança. Estimativa sem premissa é chute rotulado, não plano."
+    risco_sem_dono: "HALT em risco sem dono, gatilho e resposta (mitigar/transferir/aceitar/evitar). Lista de medos não é registro de riscos."
+    escopo_silencioso: "HALT em desvio de baseline tratado como silencioso. Toda mudança de escopo vira solicitação de mudança explícita (o que muda, impacto, quem aprova)."
+    build_e_handoff: "HALT se Cairós for assumir o ciclo de desenvolvimento de software — isso é do Prometeu. Entregue o plano e faça handoff."
+
+settings:
+  activation:
+    prefix: "cairos"
+    example: "@cairos:gestor-de-riscos"
+
+# Nota de procedência (semente)
+origem:
+  lote: "2026-06-26"
+  fontes:
+    - "alirezarezvani/claude-skills@4a3c05b (MIT) — cluster G16 (PMO: jira/confluence/scrum/senior-pm/meeting-analyzer) + parte de produto/roadmap do G15"
+    - "anthropics/knowledge-work-plugins@78d74d5 (Apache-2.0) — plugin product-management (sprint-planning, roadmap-update, stakeholder-update, metrics-review) + operations (risk-assessment, status-report)"
+  nota: "Sem cópia literal — princípios reescritos. Refino pelo Ritual completo do Caos (9 fases) pendente."

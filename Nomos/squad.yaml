@@ -1,0 +1,106 @@
+# ═══════════════════════════════════════════════════════════════════
+# Squad: Nomos
+# Domínio: Compliance & Jurídico/Regulatório
+# Versão: 0.1.0 (semente)
+# Status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)
+# ═══════════════════════════════════════════════════════════════════
+
+squad:
+  name: nomos
+  display_name: "Nomos — Compliance & Jurídico/Regulatório (a lei que rege a pólis)"
+  version: "0.1.0"
+  status: "semente-do-lote-2026-06-26"
+  domain: "Conformidade regulatória (LGPD/GDPR, ISO 27001, SOC 2, ISO 42001, EU AI Act), gestão de contratos, avaliação de risco de conformidade, políticas internas e privacidade de dados"
+  description: |
+    Squad de CONFORMIDADE REGULATÓRIA e suporte JURÍDICO in-house da Kolden. Onde o Egide protege a
+    infraestrutura técnica e o Themis aconselha o risco estratégico, a Nomos MAPEIA a regra, MEDE a
+    distância até ela e PREPARA a conformidade: privacidade de dados (LGPD/GDPR, DPIA, RoPA, direitos
+    do titular), auditoria de normas (ISO 27001/ISMS, SOC 2, ISO 42001/AIMS — readiness, controles,
+    evidência), gestão de contratos (revisão, NDA, cláusulas, fornecedor, assinatura) e leitura do
+    horizonte regulatório (EU AI Act, novas leis, políticas internas, risco de conformidade).
+
+    Nomos (νόμος) é a lei — a ordem acordada que rege a pólis grega. O squad é a ordem normativa
+    interna da Kolden. É camada de INSTRUÇÃO e PREPARAÇÃO, nunca de parecer vinculante: toda saída de
+    efeito legal é rotulada como orientação informativa e EXIGE revisão humana / advogado. Consome
+    contexto de risco do Themis, faz handoff de execução técnica ao Egide e de finanças ao Pactolo.
+  keywords: [compliance, conformidade, juridico, regulatorio, lgpd, gdpr, privacidade, privacy, dpia, ripd, ropa, registro-de-tratamento, direitos-do-titular, base-legal, dpo, encarregado, transferencia-internacional, incidente-de-dados, iso-27001, isms, sgsi, soc2, soc-2, iso-42001, aims, auditoria, audit, readiness, controle, evidencia, gap-analysis, contrato, contract, nda, clausula, due-diligence, fornecedor, vendor, assinatura, eu-ai-act, ai-act, classificacao-de-risco, sistema-de-alto-risco, politica-interna, risco-de-conformidade, compliance-risk, fda, mdr, qms]
+  entry_agent: nomos-chief
+  created_at: "2026-06-26"
+
+tiers:
+  tier_0:
+    name: "Orquestração"
+    agents: [nomos-chief]
+    purpose: "Triagem (privacidade / auditoria de normas / contratos / regulatório), roteamento, QA contra os vetos e handoffs (Themis/Egide/Pactolo). Não executa diretamente nem dá parecer."
+  tier_1:
+    name: "Compliance & Jurídico"
+    agents: [privacidade-de-dados, auditor-de-conformidade, gestor-de-contratos, analista-regulatorio]
+    purpose: "Privacidade de dados, auditoria de normas (ISO/SOC2/AIMS), gestão de contratos e análise regulatória — sempre informativo, com fonte normativa e recomendação de revisão humana."
+
+agents:
+  nomos-chief:
+    file: agents/nomos-chief.md
+    tier: 0
+    icon: "⚖️"
+    focus: "Orquestração, triagem privacidade/auditoria/contratos/regulatório, roteamento, gate de vetos (sem parecer vinculante, sem conformidade sem evidência) e handoffs (Themis/Egide/Pactolo)"
+  privacidade-de-dados:
+    file: agents/privacidade-de-dados.md
+    tier: 1
+    icon: "🔐"
+    focus: "LGPD/GDPR: base legal, DPIA/RIPD, RoPA, direitos do titular, transferência internacional, resposta a incidente de dados"
+  auditor-de-conformidade:
+    file: agents/auditor-de-conformidade.md
+    tier: 1
+    icon: "📋"
+    focus: "ISO 27001 (ISMS), SOC 2, ISO 42001 (AIMS): readiness, mapa de controles, coleta de evidência, gap-analysis, preparação de auditoria"
+  gestor-de-contratos:
+    file: agents/gestor-de-contratos.md
+    tier: 1
+    icon: "📑"
+    focus: "Revisão de contrato, triagem de NDA, cláusulas-chave e de risco, due-diligence de fornecedor, fluxo de assinatura"
+  analista-regulatorio:
+    file: agents/analista-regulatorio.md
+    tier: 1
+    icon: "🏛️"
+    focus: "EU AI Act (classificação de risco), monitoramento do horizonte regulatório, redação de políticas internas, avaliação de risco de conformidade"
+
+handoffs:
+  # Roteamento interno (orquestrador → especialistas)
+  nomos-chief:
+    routes_to: [privacidade-de-dados, auditor-de-conformidade, gestor-de-contratos, analista-regulatorio]
+  privacidade-de-dados:
+    escalates_to: [nomos-chief, analista-regulatorio]
+  auditor-de-conformidade:
+    escalates_to: [nomos-chief, privacidade-de-dados]
+  gestor-de-contratos:
+    escalates_to: [nomos-chief, analista-regulatorio]
+  analista-regulatorio:
+    escalates_to: [nomos-chief, auditor-de-conformidade]
+
+# Handoffs externos: a Nomos instrui a regra; delega execução técnica, risco estratégico e finanças.
+external_handoffs:
+  risco_estrategico:
+    to: themis
+    artifact: "Risco de conformidade material (multa, embargo, reputação) → conselho/governança e decisão estratégica"
+  seguranca_tecnica_dlp:
+    to: egide
+    artifact: "Controle a implementar/testar (DLP, criptografia, hardening, pentest) → execução técnica (a Nomos pede a evidência; o Egide produz o controle)"
+  financas:
+    to: pactolo
+    artifact: "Provisão/custo de conformidade, exposição financeira de multa, modelagem de impacto → finanças operacionais"
+
+cross_cutting:
+  quality_standards:
+    min_score: 7.0
+  # Vetos invioláveis do squad — no refino do Ritual viram reflexo PreToolUse (mecânico) + checklist + checkpoint de workflow (semântico).
+  veto:
+    sem_parecer_vinculante: "HALT em qualquer saída apresentada como parecer jurídico definitivo. Toda saída de efeito legal é orientação informativa e EXIGE revisão humana / advogado."
+    sem_conformidade_sem_evidencia: "HALT em afirmação de 'conforme' sem o controle + a evidência que o sustenta. Sem evidência, é LACUNA (gap), não conformidade."
+    sem_inventar_a_regra: "HALT em exigência regulatória citada sem fonte normativa (artigo/cláusula/controle). Sem fonte rastreável, é hipótese a verificar, não 'a lei exige'."
+    dado_sensivel_protegido: "HALT em exposição desnecessária de PII ou texto contratual sigiloso; segredos sempre via Infisical, nunca em texto puro."
+
+settings:
+  activation:
+    prefix: "nomos"
+    example: "@nomos:privacidade-de-dados"
+</content>
