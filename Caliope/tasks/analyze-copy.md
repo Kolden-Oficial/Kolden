@@ -1,6 +1,6 @@
 ---
 task: analyzeCopy()
-responsavel: "@copy-chief"
+responsavel: "@copy-master-chief"
 responsavel_type: Agent
 atomic_layer: Task
 elicit: true
@@ -24,16 +24,17 @@ Saida:
 Checklist:
   - "[ ] Scorecard de 8 dimensões concluído com anotações"
   - "[ ] Correção prioritária nº 1 identificada com sugestões de reescrita"
-  - "[ ] Recomendações de roteamento para especialistas incluídas"
+  - "[ ] Recomendações de roteamento para especialista incluídas"
+  - "[ ] Auditoria de psicologia da persuasão concluída"
 ---
 
 # Tarefa: Analisar Copy
 
-**ID da Tarefa:** COPY-006
-**Versão:** 1.0.0
+**ID da Tarefa:** COPY-M-006
+**Versão:** 2.0.0
 **Comando:** `*analyze-copy`
-**Agente:** Copy Chief (copy-chief)
-**Objetivo:** Analisar uma copy existente para identificar fraquezas, oportunidades perdidas e prioridades de melhoria.
+**Agente:** Copy Master Chief (copy-master-chief)
+**Propósito:** Analisar um copy existente para identificar pontos fracos, oportunidades perdidas e prioridades de melhoria — incluindo lacunas de psicologia da persuasão.
 
 ---
 
@@ -41,53 +42,83 @@ Checklist:
 
 | Campo | Tipo | Origem | Obrigatório | Validação |
 |-------|------|--------|----------|------------|
-| copy_text | string | Prompt do usuário | Sim | A copy a ser analisada (colada ou referenciada) |
+| copy_text | string | Prompt do usuário | Sim | O copy a ser analisado (colado ou referenciado) |
 | copy_type | enum | Prompt do usuário | Sim | headline, sales-letter, email, vsl, ad, landing-page, funnel |
-| goal | string | Prompt do usuário | Sim | O que a copy está tentando alcançar |
+| goal | string | Prompt do usuário | Sim | O que o copy está tentando alcançar |
 | audience | string | Prompt do usuário | Não | Descrição do público-alvo |
 | metrics | object | Prompt do usuário | Não | Dados de desempenho atuais (CTR, taxa de conversão, etc.) |
-| context | string | Prompt do usuário | Não | Onde e como a copy é usada |
+| context | string | Prompt do usuário | Não | Onde e como o copy é usado |
 
 ---
 
 ## Pré-condições
 
-- Texto da copy fornecido na íntegra (uma copy parcial gera uma análise parcial)
-- Tipo da copy identificado para que os critérios corretos de avaliação sejam aplicados
+- Texto do copy fornecido por completo (copy parcial gera análise parcial)
+- Tipo de copy identificado para que os critérios de avaliação corretos sejam aplicados
+
+---
+
+## Referência de Campeões
+
+Estude estes frameworks analíticos antes de analisar:
+
+1. **Diagnóstico de Nível de Consciência de Eugene Schwartz** — O copy está calibrado para o nível de consciência correto do público?
+2. **Teste da "Big Idea" de David Ogilvy** — O copy tem uma big idea capaz de rodar por 20 anos?
+3. **Teste "Pilha-A vs Pilha-B" de Gary Halbert** — Esta peça iria para a pilha-A (correspondência pessoal que você abre) ou pilha-B (lixo)?
+4. **Framework de Auditoria de CRO de Joanna Wiebe** — Análise sistemática de otimização de conversão página a página
+5. **Métricas de "Publicidade Científica" de Claude Hopkins** — Cada elemento é mensurável e testável?
 
 ---
 
 ## Fases de Execução
 
 ### Fase 1: Leitura de Primeira Passagem
-1. Leia a copy como um prospecto faria — anote onde a atenção cai
-2. Identifique a grande promessa (existe alguma?)
-3. Identifique o CTA principal (está claro?)
+1. Leia o copy como um prospecto leria — anote onde a atenção cai
+2. Identifique a grande promessa (existe uma?)
+3. Identifique o CTA primário (está claro?)
 4. Anote a primeira reação emocional: entediado, confuso, intrigado, cético, convencido
-5. Cronometre por quanto tempo a copy mantém a atenção antes de a mente divagar
+5. Cronometre por quanto tempo o copy sustenta a atenção antes da mente divagar
 
 ### Fase 2: Análise Estrutural
-1. Avalie o título/gancho:
-   - Ele faz o leitor parar?
-   - Ele seleciona o público certo?
-   - Ele promete um benefício ou desperta curiosidade?
-2. Avalie a abertura (primeiras 100-300 palavras):
-   - Ela conquista o próximo parágrafo?
+1. Avalie a headline/hook:
+   - Ela faz o leitor parar?
+   - Ela seleciona o público certo?
+   - Ela promete um benefício ou desperta curiosidade?
+2. Avalie o lead (primeiras 100-300 palavras):
+   - Ele conquista o próximo parágrafo?
    - O nível de consciência está calibrado corretamente?
 3. Avalie o corpo:
-   - Existe um fluxo lógico e emocional claro?
+   - Há um fluxo lógico e emocional claro?
    - Os benefícios são concretos ou vagos?
-   - A prova está presente e posicionada estrategicamente?
+   - A prova está presente e estrategicamente posicionada?
 4. Avalie o fechamento:
    - A oferta está clara?
    - O CTA é específico e acionável?
-   - Existe urgência sem ser falsa?
-5. Avalie o "escorregador" geral — você consegue parar de ler em qualquer ponto?
+   - Há urgência sem ser falsa?
+5. Avalie o "tobogã escorregadio" geral — você consegue parar de ler em qualquer ponto?
 
-### Fase 3: Pontuação e Recomendações
+### Fase 3: Auditoria de Psicologia da Persuasão
+1. Identifique quais princípios de Cialdini estão presentes e quais estão ausentes:
+   - Reciprocidade: É dado valor gratuito antes do pedido?
+   - Compromisso/Consistência: Pequenos acordos são construídos antes do grande pedido?
+   - Prova Social: Há depoimentos, números, ou "outros já fizeram isso"?
+   - Autoridade: Credenciais, menções na mídia ou endossos de especialistas são usados?
+   - Afinidade: O copy é relacionável e pessoal?
+   - Escassez: Há urgência ou limitação legítima?
+   - Unidade: Há linguagem de identidade compartilhada?
+2. Audite as 5 alavancas de Blair Warren:
+   - Ele encoraja os sonhos deles?
+   - Ele justifica os fracassos deles?
+   - Ele alivia os medos deles?
+   - Ele confirma as suspeitas deles?
+   - Ele os ajuda a atirar pedras nos inimigos deles?
+3. Pontue a densidade de persuasão: quantos princípios estão ativos por seção?
+4. Identifique a lacuna de persuasão nº 1 — qual princípio ausente teria o maior impacto?
+
+### Fase 4: Pontuação e Recomendações
 1. Pontue em 8 dimensões (1-10 cada):
-   - Poder do Título
-   - Engajamento da Abertura
+   - Poder da Headline
+   - Engajamento do Lead
    - Conexão Emocional
    - Prova e Credibilidade
    - Clareza do Benefício
@@ -95,9 +126,9 @@ Checklist:
    - Eficácia do CTA
    - Fluxo e Legibilidade
 2. Calcule a pontuação geral (média)
-3. Identifique a fraqueza nº 1 que renderia a maior melhoria
+3. Identifique o ponto fraco nº 1 que geraria a maior melhoria
 4. Forneça 3 reescritas específicas e acionáveis para as seções mais fracas
-5. Recomende qual especialista do Copy Squad poderia aprimorar cada área fraca
+5. Recomende qual especialista do Copy Master poderia melhorar cada área fraca
 
 ---
 
@@ -109,7 +140,7 @@ Checklist:
 **Tipo:** {copy_type}
 **Objetivo:** {goal}
 **Pontuação Geral:** {X}/10
-**Veredito:** {Fraca / Precisa de Trabalho / Sólida / Forte / Elite}
+**Veredito:** {Fraco / Precisa de Trabalho / Sólido / Forte / Elite}
 
 ---
 
@@ -117,14 +148,36 @@ Checklist:
 
 | Dimensão | Pontuação | Anotações |
 |-----------|-------|-------|
-| Poder do Título | X/10 | {anotação breve} |
-| Engajamento da Abertura | X/10 | {anotação breve} |
-| Conexão Emocional | X/10 | {anotação breve} |
-| Prova e Credibilidade | X/10 | {anotação breve} |
-| Clareza do Benefício | X/10 | {anotação breve} |
-| Força da Oferta | X/10 | {anotação breve} |
-| Eficácia do CTA | X/10 | {anotação breve} |
-| Fluxo e Legibilidade | X/10 | {anotação breve} |
+| Poder da Headline | X/10 | {nota breve} |
+| Engajamento do Lead | X/10 | {nota breve} |
+| Conexão Emocional | X/10 | {nota breve} |
+| Prova e Credibilidade | X/10 | {nota breve} |
+| Clareza do Benefício | X/10 | {nota breve} |
+| Força da Oferta | X/10 | {nota breve} |
+| Eficácia do CTA | X/10 | {nota breve} |
+| Fluxo e Legibilidade | X/10 | {nota breve} |
+
+### Auditoria de Psicologia da Persuasão
+
+| Princípio de Cialdini | Presente? | Força (1-5) | Localização |
+|-------------------|----------|----------------|----------|
+| Reciprocidade | S/N | X | {onde} |
+| Compromisso | S/N | X | {onde} |
+| Prova Social | S/N | X | {onde} |
+| Autoridade | S/N | X | {onde} |
+| Afinidade | S/N | X | {onde} |
+| Escassez | S/N | X | {onde} |
+| Unidade | S/N | X | {onde} |
+
+| Alavanca de Warren | Presente? | Localização |
+|-------------|----------|----------|
+| Encorajar sonhos | S/N | {onde} |
+| Justificar fracassos | S/N | {onde} |
+| Aliviar medos | S/N | {onde} |
+| Confirmar suspeitas | S/N | {onde} |
+| Atirar pedras | S/N | {onde} |
+
+**Lacuna de Persuasão nº 1:** {o princípio ausente que teria o maior impacto}
 
 ---
 
@@ -132,12 +185,12 @@ Checklist:
 {A única mudança que teria o maior impacto}
 
 ### Top 3 Sugestões de Reescrita
-1. **{Seção}:** {Texto atual} → {Reescrita sugerida} — {Por que isto é melhor}
+1. **{Seção}:** {Texto atual} -> {Reescrita sugerida} — {Por que isso é melhor}
 2. ...
 3. ...
 
 ### Recomendações de Especialistas
-| Área Fraca | Agente Recomendado | Por Quê |
+| Área Fraca | Agente Recomendado | Por quê |
 |-----------|-------------------|-----|
 
 ### O Que Está Funcionando Bem
@@ -148,20 +201,22 @@ Checklist:
 
 ## Condições de Veto
 
-- NUNCA analise sem ler a copy completa
+- NUNCA analise sem ler o copy completo
 - NUNCA dê uma pontuação sem justificativa específica
-- NUNCA forneça apenas críticas — sempre reconheça o que funciona
-- NUNCA recomende reescritas que alterem a oferta ou promessa central sem sinalizar isso
-- NUNCA ignore as métricas de desempenho, se fornecidas — os dados se sobrepõem à opinião
+- NUNCA forneça apenas crítica — sempre reconheça o que funciona
+- NUNCA recomende reescritas que mudem a oferta ou promessa central sem sinalizar isso
+- NUNCA ignore métricas de desempenho se fornecidas — dados se sobrepõem à opinião
 
 ---
 
 ## Critérios de Conclusão
 
-- [ ] Copy completa lida e impressão de primeira passagem documentada
-- [ ] Análise estrutural concluída (título, abertura, corpo, fechamento)
+- [ ] Copy completo lido e impressão de primeira passagem documentada
+- [ ] Análise estrutural concluída (headline, lead, corpo, fechamento)
 - [ ] Scorecard de 8 dimensões concluído com anotações
+- [ ] Auditoria de Psicologia da Persuasão concluída (todos os 7 Cialdini + 5 Warren)
+- [ ] Lacuna de persuasão nº 1 identificada
 - [ ] Correção prioritária nº 1 identificada
 - [ ] 3 sugestões específicas de reescrita fornecidas
-- [ ] Recomendações de roteamento para especialistas incluídas
+- [ ] Recomendações de roteamento para especialista incluídas
 - [ ] Pontos fortes reconhecidos

@@ -1,10 +1,10 @@
-name: copy-squad
-version: "1.0.0"
-short-title: "Copy Squad"
-description: "Squad de elite com 23 agentes de copywriting — 22 copywriters lendários + 1 orquestrador. Cobre direct response, email, funis, VSLs, cartas de vendas, ofertas e copywriting de marca."
-author: "Synkra AIOS"
+name: caliope
+version: "2.0.0"
+short-title: "Caliope — Squad de Copywriting"
+description: "Squad de elite com 33 agentes de copywriting — 32 lendas atemporais (direct response, copy moderno & funis, e-mail/relacionamento, ofertas/conversão, persuasão & psicologia) + 1 orquestrador (Copy Chief). Consolida o antigo copy-master v2.0 dentro do squad principal (K-002/K-012 da vistoria v2)."
+author: "Kolden / Caos"
 license: MIT
-slashPrefix: "copy-squad"
+slashPrefix: "caliope"
 
 aios:
   minVersion: "4.0.0"
@@ -22,12 +22,18 @@ tags:
   - ad-copy
   - launch
   - brand-copy
+  - persuasion
+  - negotiation
+  - pitch
+  - saas
+  - conversion
+  - psychology
 
 components:
   agents:
     # Tier 0 — Orquestrador
     - copy-chief.md
-    # Tier 1A — Lendas da Resposta Direta
+    # Tier 1A — Lendas da Resposta Direta (9)
     - gary-halbert.md
     - eugene-schwartz.md
     - claude-hopkins.md
@@ -35,7 +41,9 @@ components:
     - robert-collier.md
     - john-carlton.md
     - jim-rutz.md
-    # Tier 1B — Copy Moderna & Funis
+    - john-caples.md
+    - rosser-reeves.md
+    # Tier 1B — Copy Moderno & Funis (9)
     - dan-kennedy.md
     - frank-kern.md
     - russell-brunson.md
@@ -43,16 +51,25 @@ components:
     - stefan-georgi.md
     - jon-benson.md
     - ry-schwartz.md
-    # Tier 1C — Copy de E-mail & Relacionamento
+    - sabri-suby.md
+    - evaldo-albuquerque.md
+    # Tier 1C — E-mail & Relacionamento (3)
     - ben-settle.md
     - andre-chaperon.md
     - dan-koe.md
-    # Tier 1D — Ofertas & Páginas de Vendas
+    # Tier 1D — Ofertas, Páginas de Vendas & Conversão (7)
     - joe-sugarman.md
     - david-ogilvy.md
     - clayton-makepeace.md
     - parris-lampropoulos.md
     - david-deutsch.md
+    - alex-hormozi.md
+    - joanna-wiebe.md
+    # Tier 1E — Persuasão & Psicologia (4)
+    - robert-cialdini.md
+    - blair-warren.md
+    - chris-voss.md
+    - oren-klaff.md
   tasks:
     # Tarefas de Escrita
     - write-headline.md
@@ -64,6 +81,8 @@ components:
     - write-bullets.md
     - create-funnel-copy.md
     - create-offer.md
+    - write-webinar-script.md
+    - write-pitch-deck.md
     # Tarefas de Análise & Revisão
     - analyze-copy.md
     - critique-copy.md
@@ -72,19 +91,36 @@ components:
   workflows:
     - wf-full-copy-project.yaml
     - wf-copy-review-cycle.yaml
+    - wf-vsl-production.yaml
+    - wf-launch-sequence.yaml
   checklists:
     - output-quality.md
+
+external_handoffs:
+  receives_from:
+    - olimpo/apolo      # CMO — estratégia de marketing decide quando ativar copy
+    - aletheia          # entrega briefing validado de problema/cliente/oferta
+    - pheme             # legenda longa e CTA de conteúdo orgânico
+    - peitho            # criativo de tráfego pago precisa de copy de ad
+    - emporos           # propostas comerciais e cadências de vendas
+  delivers_to:
+    - peitho            # copy de ad pronto para teste em tráfego pago
+    - pheme             # legendas e CTAs para feed/reels/email
+    - emporos           # carta de vendas / proposta / cadência pronta
+    - aglaia            # peça de copy para checagem de tom de marca antes da publicação
+    - nomos             # claim de mercado regulado para checagem jurídica
 
 cross_cutting:
   quality_standards:
     min_score: 7.0
-  # Vetos invioláveis do squad de copy (direct response + email + funis + brand copy).
+  # Vetos invioláveis do squad de copy (direct response + email + funis + brand copy + persuasão).
   veto:
     claim_sem_fonte: "HALT em qualquer alegação numérica de eficácia ('converte X%', 'ganhe Y em Z dias', 'descubra o segredo de W') sem fonte/case verificável citado no rascunho."
     copia_literal_de_mestre: "HALT em entregar copy que seja CÓPIA LITERAL de Halbert/Schwartz/Hopkins/Bencivenga/etc. Inspirar-se em estrutura/framework é OK; copiar parágrafo é plágio."
     sem_disclaimer_em_oferta_forte: "HALT em oferta forte (garantia, milagre, transformação) sem disclaimer/regra de stop/política de devolução visível."
     sem_aderencia_a_lei: "HALT em copy de mercado regulado (saúde, finanças, suplemento, advocacia) sem checagem de claims permitidos pelo regulador. Handoff Nomos quando há dúvida."
     publico_sem_consentimento: "HALT em copy direcionado a público vulnerável (criança, idoso, doente) sem cuidado ético e disclaimer."
+    persuasao_eticamente_questionavel: "HALT em técnicas do Tier 1E (Cialdini/Blair/Voss/Klaff) aplicadas a público vulnerável OU com manipulação de medo/identidade sem consentimento informado. Persuasão é poder; usar contra o leitor é violação."
     credencial_texto_puro: "HALT em qualquer credencial fora do Infisical (Art. VII)."
 
 config:
@@ -92,8 +128,9 @@ config:
 
 # Arquitetura de Tiers (metadados — não exigidos pelo schema, enriquecem o roteamento)
 # tier_architecture:
-#   tier_0: Orquestração — copy-chief
-#   tier_1a: Lendas da Resposta Direta — gary-halbert, eugene-schwartz, claude-hopkins, gary-bencivenga, robert-collier, john-carlton, jim-rutz
-#   tier_1b: Copy Moderna & Funis — dan-kennedy, frank-kern, russell-brunson, todd-brown, stefan-georgi, jon-benson, ry-schwartz
-#   tier_1c: E-mail & Relacionamento — ben-settle, andre-chaperon, dan-koe
-#   tier_1d: Ofertas & Páginas de Vendas — joe-sugarman, david-ogilvy, clayton-makepeace, parris-lampropoulos, david-deutsch
+#   tier_0:  Orquestração — copy-chief (Cyrus)
+#   tier_1a: Lendas do Direct Response (9) — halbert, schwartz, hopkins, bencivenga, collier, carlton, rutz, caples, reeves
+#   tier_1b: Copy Moderno & Funis (9) — kennedy, kern, brunson, brown, georgi, benson, ry-schwartz, suby, evaldo
+#   tier_1c: E-mail & Relacionamento (3) — settle, chaperon, koe
+#   tier_1d: Ofertas, Páginas & Conversão (7) — sugarman, ogilvy, makepeace, lampropoulos, deutsch, hormozi, wiebe
+#   tier_1e: Persuasão & Psicologia (4) — cialdini, blair-warren, chris-voss, klaff

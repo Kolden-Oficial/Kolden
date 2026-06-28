@@ -23,38 +23,51 @@ Saida:
 
 Checklist:
   - "[ ] Nível de consciência confirmado ou diagnosticado"
-  - "[ ] 10 variações de título geradas usando 3+ fórmulas"
-  - "[ ] Top 5 classificados com pontuação em 4 dimensões"
+  - "[ ] 10 variações de headline geradas usando 3+ fórmulas"
+  - "[ ] Top 5 ranqueadas com pontuação em 4 dimensões"
+  - "[ ] Camada Psicológica aplicada (princípios de Cialdini/Warren marcados)"
 ---
 
-# Tarefa: Escrever Título
+# Task: Escrever Headline
 
-**ID da Tarefa:** COPY-001
-**Versão:** 1.0.0
-**Comando:** `*write-headline`
-**Agente:** Eugene Schwartz (eugene-schwartz) ou Gary Bencivenga (gary-bencivenga)
-**Objetivo:** Criar títulos persuasivos calibrados para o nível de consciência do prospecto.
+**Task ID:** COPY-M-001
+**Version:** 2.0.0
+**Command:** `*write-headline`
+**Agent:** Eugene Schwartz (eugene-schwartz) ou Gary Bencivenga (gary-bencivenga)
+**Purpose:** Criar headlines persuasivas calibradas ao nível de consciência do prospecto com psicologia da persuasão profunda.
 
 ---
 
 ## Entradas
 
 | Campo | Tipo | Origem | Obrigatório | Validação |
-|-------|------|--------|----------|------------|
+|-------|------|--------|-------------|-----------|
 | product | string | Prompt do usuário | Sim | Nome do produto ou serviço com breve descrição |
-| audience | string | Prompt do usuário | Sim | Descrição do público-alvo |
+| audience | string | Prompt do usuário | Sim | Descrição da audiência-alvo |
 | awareness_level | enum | Prompt do usuário ou inferido | Sim | unaware, problem-aware, solution-aware, product-aware, most-aware |
-| medium | string | Prompt do usuário | Não | Onde o título aparece (anúncio, email, página de vendas, VSL) |
-| tone | string | Prompt do usuário | Não | Tom desejado (urgente, curioso, autoritativo, empático) |
-| swipe_reference | string | Prompt do usuário | Não | Título ou estilo de referência a ser emulado |
+| medium | string | Prompt do usuário | Não | Onde a headline aparece (anúncio, e-mail, página de vendas, VSL) |
+| tone | string | Prompt do usuário | Não | Tom desejado (urgente, curioso, autoritário, empático) |
+| swipe_reference | string | Prompt do usuário | Não | Headline ou estilo de referência a emular |
 
 ---
 
 ## Pré-condições
 
 - Produto ou serviço claramente definido
-- Público-alvo identificado com pelo menos dados demográficos ou psicográficos básicos
+- Audiência-alvo identificada com ao menos dados demográficos ou psicográficos básicos
 - Nível de consciência determinado (se não fornecido, o agente deve diagnosticar antes de escrever)
+
+---
+
+## Referência de Campeões
+
+Estude estas headlines campeãs do mundo real antes de escrever:
+
+1. **"They Laughed When I Sat Down at the Piano — But When I Started to Play!"** (John Caples, U.S. School of Music) — Curiosidade movida por história para audiências unaware
+2. **"Do You Make These Mistakes in English?"** (Sherwin Cody) — Pergunta + falha implícita para audiências problem-aware
+3. **"How to Win Friends and Influence People"** (Dale Carnegie) — How-to movido por benefício para audiências solution-aware
+4. **"The Lazy Man's Way to Riches"** (Joe Karbo) — Promessa contraintuitiva combinando facilidade + resultado
+5. **"Amazing Secret Discovered by 37-Year-Old Mom Exposed By Top Doctors"** (Agora Financial) — Empilhamento de especificidade + autoridade + curiosidade
 
 ---
 
@@ -63,68 +76,78 @@ Checklist:
 ### Fase 1: Diagnóstico de Consciência
 1. Confirme o nível de consciência do prospecto usando a escala de 5 níveis de Schwartz
 2. Identifique a emoção dominante que move o prospecto (medo, desejo, curiosidade, frustração)
-3. Mapeie o nível de consciência para a abordagem do título:
-   - Inconsciente (Unaware): Comece com emoção ou história, nunca mencione o produto
-   - Consciente do problema (Problem-aware): Agite o problema, sugira a solução
-   - Consciente da solução (Solution-aware): Diferencie o mecanismo ou a abordagem
-   - Consciente do produto (Product-aware): Empilhe provas, supere objeções
-   - Totalmente consciente (Most-aware): Comece com a oferta, urgência ou negócio
+3. Mapeie o nível de consciência para a abordagem da headline:
+   - Unaware: Lidere com emoção ou história, nunca mencione o produto
+   - Problem-aware: Agite o problema, insinue a solução
+   - Solution-aware: Diferencie o mecanismo ou a abordagem
+   - Product-aware: Empilhe prova, supere objeções
+   - Most-aware: Lidere com a oferta, urgência ou negócio
 
-### Fase 2: Geração de Títulos
-1. Gere 10 variações de título usando ângulos distintos
-2. Aplique pelo menos 3 fórmulas de título diferentes por lote:
-   - Títulos de como-fazer (how-to)
-   - Títulos em forma de pergunta
-   - Títulos em forma de comando
-   - Títulos de razão-do-porquê (reason-why)
-   - Títulos de depoimento
-   - Títulos de notícia/anúncio
-   - Títulos de lacuna de curiosidade (curiosity-gap)
-   - Títulos de número específico
-   - **Templates granulares (preencher-as-lacunas):** ver o banco em `data/formulas-de-headline.md`
-     (foco em resultado / problema / público / diferenciação / prova) — cruze com a emoção dominante.
-3. Garanta que cada título passe no teste "eu pararia de rolar a tela?"
-4. Varie o comprimento: inclua curtos (menos de 8 palavras), médios (8-15) e longos (15+)
+### Fase 2: Geração de Headlines
+1. Gere 10 variações de headline usando ângulos distintos
+2. Aplique pelo menos 3 fórmulas de headline diferentes por lote:
+   - Headlines de how-to
+   - Headlines de pergunta
+   - Headlines de comando
+   - Headlines de motivo (reason-why)
+   - Headlines de depoimento
+   - Headlines de notícia/anúncio
+   - Headlines de lacuna de curiosidade (curiosity-gap)
+   - Headlines de número específico
+3. Garanta que cada headline passe no teste "eu pararia de rolar?"
+4. Varie o comprimento: inclua curtas (menos de 8 palavras), médias (8-15) e longas (15+)
 
-### Fase 3: Refinamento e Classificação
-1. Pontue cada título em 4 dimensões (1-5 cada):
-   - Especificidade: Promete um resultado concreto?
-   - Curiosidade: Cria um loop aberto?
-   - Relevância: Corresponde ao nível de consciência?
+### Fase 3: Camada Psicológica
+1. Marque cada headline com o principal princípio de Cialdini que ela ativa:
+   - Reciprocidade, Compromisso/Coerência, Prova Social, Autoridade, Afinidade, Escassez, Unidade
+2. Confronte cada headline com a One Sentence Persuasion de Blair Warren:
+   - Ela encoraja os sonhos deles?
+   - Ela justifica os fracassos deles?
+   - Ela acalma os medos deles?
+   - Ela confirma as suspeitas deles?
+   - Ela os ajuda a jogar pedras nos seus inimigos?
+3. Garanta que pelo menos 3 princípios de Cialdini diferentes estejam representados ao longo das 10 headlines
+4. Marque qual alavanca de Warren cada headline aciona
+
+### Fase 4: Refinamento e Ranqueamento
+1. Pontue cada headline em 4 dimensões (1-5 cada):
+   - Especificidade: Ela promete um resultado concreto?
+   - Curiosidade: Ela cria um loop aberto?
+   - Relevância: Ela corresponde ao nível de consciência?
    - Credibilidade: A afirmação é crível?
-2. Classifique os 5 melhores pela pontuação total
-3. Forneça recomendações de teste A/B para os 2 melhores
-4. Sugira pares de subtítulo (sub-headline) para os 3 melhores
+2. Ranqueie o top 5 pela pontuação total
+3. Forneça recomendações de teste A/B para as 2 primeiras
+4. Sugira combinações de sub-headline para as 3 primeiras
 
 ---
 
 ## Formato de Saída
 
 ```markdown
-## Pacote de Títulos
+## Pacote de Headlines
 
 **Produto:** {product}
 **Audiência:** {audience}
 **Nível de Consciência:** {nível}
 
-### Top 5 Títulos (Classificados)
+### Top 5 Headlines (Ranqueadas)
 
-| Posição | Título | Fórmula | Especificidade | Curiosidade | Relevância | Credibilidade | Total |
-|------|----------|---------|-------------|-----------|-----------|---------------|-------|
-| 1 | {título} | {fórmula} | X | X | X | X | XX |
+| Rank | Headline | Fórmula | Especificidade | Curiosidade | Relevância | Credibilidade | Total | Princípio de Cialdini | Alavanca de Warren |
+|------|----------|---------|----------------|-------------|------------|---------------|-------|----------------------|--------------------|
+| 1 | {headline} | {fórmula} | X | X | X | X | XX | {princípio} | {alavanca} |
 
 ### Recomendação de Teste A/B
-**Controle:** {título 1}
-**Variante:** {título 2}
-**Justificativa:** {por que estes dois}
+**Controle:** {headline 1}
+**Variante:** {headline 2}
+**Justificativa:** {por que estas duas}
 
-### Pares de Subtítulo
-1. {título} + {subtítulo}
-2. {título} + {subtítulo}
-3. {título} + {subtítulo}
+### Combinações de Sub-headline
+1. {headline} + {sub-headline}
+2. {headline} + {sub-headline}
+3. {headline} + {sub-headline}
 
-### Banco Completo de 10 Títulos
-1. {título} — {fórmula usada}
+### Banco Completo de 10 Headlines
+1. {headline} — {fórmula usada} — {princípio de Cialdini}
 ...
 ```
 
@@ -132,20 +155,22 @@ Checklist:
 
 ## Condições de Veto
 
-- NUNCA escreva um título sem antes confirmar o nível de consciência
-- NUNCA use clickbait que o corpo da copy não consiga cumprir
-- NUNCA ignore o meio — o título de um anúncio do Facebook difere do título de uma página de vendas
+- NUNCA escreva uma headline sem antes confirmar o nível de consciência
+- NUNCA use clickbait que o corpo do texto não consiga cumprir
+- NUNCA ignore o meio — uma headline de anúncio no Facebook difere de uma headline de página de vendas
 - NUNCA entregue menos de 10 variações
-- NUNCA use o nome do produto nos títulos para audiências inconscientes
+- NUNCA use o nome do produto em headlines para audiências unaware
 
 ---
 
 ## Critérios de Conclusão
 
 - [ ] Nível de consciência confirmado ou diagnosticado
-- [ ] 10 variações de título geradas usando 3+ fórmulas
-- [ ] Cada título pontuado em 4 dimensões
-- [ ] Top 5 classificados com justificativa
+- [ ] 10 variações de headline geradas usando 3+ fórmulas
+- [ ] Cada headline pontuada em 4 dimensões
+- [ ] Top 5 ranqueadas com justificativa
 - [ ] Par de teste A/B recomendado
-- [ ] Pares de subtítulo fornecidos para os 3 melhores
+- [ ] Combinações de sub-headline fornecidas para as 3 primeiras
+- [ ] Camada Psicológica aplicada — princípios de Cialdini marcados por headline
+- [ ] Alavancas de Blair Warren identificadas por headline
 - [ ] Saída formatada conforme o template
