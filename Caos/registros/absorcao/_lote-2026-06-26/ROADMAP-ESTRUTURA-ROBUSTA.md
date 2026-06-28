@@ -31,7 +31,12 @@ atribuição). **Mecânica:** `GUIA-APLICACAO.md` + fan-out de subagentes por sq
 > **Parte do R1 é executada NESTA sessão** (Fase 3 do plano aprovado, "maximizar até o limite"). O que não
 > couber permanece aqui como fila priorizada para sessões dedicadas.
 
-## R2 — 6 squads novos (domínios sem dono) — **PENDE VALIDAÇÃO DO RONAN**
+## R2 — 6 squads novos (domínios sem dono) — ✅ SEMENTE CRIADA (2026-06-28)
+> **Status:** o Ronan aprovou; os 6 squads foram criados como **estrutura-semente** (chief + 4 especialistas +
+> 5 skills-âncora + squad.yaml + catálogo + MEMORY) — Nomos, Pactolo, Êmporos (`Emporos/`), Héstia (`Hestia/`),
+> Ananke, Cairós (`Cairos/`). **Pendente:** Ritual completo do Caos por squad (diagnóstico 7 faculdades → PRD →
+> herança histórica → maturity ≥7) + expansão das skills (cada domínio tem dezenas de capacidades no dossiê).
+
 A coletânea `alirezarezvani` + `knowledge-work-plugins` trazem 6 domínios sem squad. Criar squad é **Ritual
 do Caos** (interativo, decisão de arquitetura de negócio). Proposta de nomes mitológicos (a refinar no Ritual):
 

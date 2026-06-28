@@ -13,7 +13,8 @@ Operação do **Ronan**. A descrição oficial (modelo de negócio, mercado, mar
 - **Prometeu**: framework de engenharia AIOX com **12 agentes** em `Prometeu/.aiox-core/development/agents/`.
 - **Caos**: fábrica de agentes com **9 especialistas internos** + **26 skills**.
 - **Total**: **224 agentes** mapeados (203 squads + 12 Prometeu + 9 Caos) + **Dike** (verificador solo).
-- **Skills (lote de absorção 2026-06-26/27)**: **91 habilidades novas** em 11 squads — Égide+29, Ariadne+18, Dédalo+9, Prometeu+9, Caos+8, Pheme+6, Harmonia+4, Argos+3, Olimpo+3, Metis+1, Caliope+1 — a partir de **31 repos GitHub** (todos auditados SAFE, reconciliação PERDIDO=0). São **44 âncoras** + **47 da absorção exaustiva** (Égide cyber full-spectrum, Ariadne SEO profundo, ECC meta-fábrica). Todos os squads tocados têm `catalogo.md`. Detalhe: `Caos/registros/absorcao/_lote-2026-06-26/RELATORIO-DO-LOTE.md` + `aplicacao-f6-resultado.md`. Roadmap da exaustão restante: `_lote-2026-06-26/ROADMAP-ESTRUTURA-ROBUSTA.md`.
+- **Skills (lote de absorção 2026-06-26/27)**: **~129 habilidades novas** — 99 em 11 squads existentes (Égide+29, Ariadne+18, Caliope+5, Pheme+11, Dédalo+9, Prometeu+9, Caos+8, Harmonia+4, Argos+3, Olimpo+3, Metis+1) + 30 nos 6 squads novos — a partir de **31 repos GitHub** (todos SAFE, reconciliação PERDIDO=0). Composição: 44 âncoras + 47 exaustivo (cyber/SEO/ECC) + 8 aprofundamento (growth/copy) + 30 dos squads-semente. Todos os squads tocados têm `catalogo.md`. Detalhe: `Caos/registros/absorcao/_lote-2026-06-26/RELATORIO-DO-LOTE.md` + `aplicacao-f6-resultado.md`. Roadmap: `_lote-2026-06-26/ROADMAP-ESTRUTURA-ROBUSTA.md`.
+- **6 squads-semente novos (2026-06-28)**: **Nomos** (compliance/jurídico), **Pactolo** (finanças/FP&A), **Êmporos** (vendas/comercial), **Héstia** (RH/pessoas), **Ananke** (operações/BizOps), **Cairós** (PMO/projetos) — +30 agentes (chief + 4 especialistas cada). **Status `semente`**: estrutura inicial (README + squad.yaml + agentes + 5 skills + catálogo + MEMORY); refino completo (PRD, Ritual de 9 fases, herança histórica) pendente do Caos. Fronteiras de camada cravadas vs Olimpo (Plutos/Afrodite/Poseidon) e Prometeu/Caos.
 - **Ferramentas**: ~35 tools/APIs catalogadas (inclui 5 vendors novos: Repomix, MarkItDown, MoneyPrinterTurbo, PlaywrightMCP, n8n-MCP); **14 MCPs conectados**, 8 aguardando OAuth.
 - **Projetos** em desenvolvimento: `omiron`, `CataLogo` (Tracker Flow).
 - **Infra do Kolden OS** (stack LobeHub) roda no WSL2 — ver `CLAUDE.md` (não é parte deste workspace de agentes Windows).
@@ -324,6 +325,17 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 - `ripper` — Quebra de hashes e avaliação de políticas de senha.
 - `rogue` — Exploração, pós-exploração e movimento lateral.
 - `shannon-runner` — OSINT (inteligência de fontes abertas).
+
+---
+
+### 🌱 Negócios (squads-semente — novos em 2026-06-28, refino pelo Ritual pendente)
+Criados para os domínios sem dono (roadmap R2). Cada um: orquestrador + 4 especialistas + 5 skills-âncora + `squad.yaml` + `catalogo.md` + `MEMORY.md`. `status: semente` (estrutura inicial; PRD/Ritual de 9 fases/herança histórica pendentes). Fontes: `alirezarezvani/claude-skills` (MIT) + `knowledge-work-plugins` (Apache-2.0).
+- **Nomos/** — Compliance & Jurídico/Regulatório (LGPD/GDPR, ISO 27001, SOC 2, EU AI Act, contratos, risco). Veto: sem parecer vinculante (revisão humana). Handoffs: Themis (risco), Égide (DLP), Pactolo (finanças). → `Nomos/README.md`
+- **Pactolo/** — Finanças Operacionais / FP&A (modelagem, orçamento/forecast, fechamento, fluxo de caixa, unit economics). Decisão estratégica → handoff ao Plutos (Olimpo/CFO). → `Pactolo/README.md`
+- **Emporos/** — Vendas & Comercial (pipeline, qualificação BANT/MEDDIC, propostas, cadências, CRM/GHL). Execução sob a política do Afrodite (Olimpo/CRO); consome leads de Pheme/Ariadne. → `Emporos/README.md`
+- **Hestia/** — RH, Pessoas & Cultura (recrutamento, onboarding, performance, cultura, cargos). RH dos *agentes* de IA → handoff ao Caos/curador. → `Hestia/README.md`
+- **Ananke/** — Operações & BizOps (SOPs, eficiência, automação, fornecedores). Build técnico de automação (n8n) → handoff ao Dédalo; estratégia → Poseidon. → `Ananke/README.md`
+- **Cairos/** — PMO & Gestão de Projetos de negócio (cronograma, escopo, risco, stakeholders, roadmap de produto). Build de software → handoff ao Prometeu. → `Cairos/README.md`
 
 ---
 
