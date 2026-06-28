@@ -1,88 +1,105 @@
 # Caliope — Squad de Copywriting
 
-Caliope é um squad de elite com 23 agentes de copywriting — 22 clones de alta fidelidade de copywriters lendários + 1 orquestrador (o Copy Chief) — que cobre todo o espectro da resposta direta: títulos, cartas de vendas, VSLs, sequências de e-mail, funis, ofertas, anúncios pagos, copy de lançamento e copy de marca. O Copy Chief tria cada demanda, identifica o nível de consciência de mercado e roteia para o especialista (primário + secundário) mais adequado, garantindo controle de qualidade antes da entrega. Para edição avançada de copy linha a linha, frameworks profundos e recursos adicionais, consulte também o módulo `copy-master/` (submódulo dentro deste squad).
+Caliope é o squad de copywriting da Kolden — 33 agentes que cobrem todo o espectro: títulos, cartas de vendas, VSLs, sequências de e-mail, funis, ofertas, anúncios pagos, copy de lançamento, copy de marca e a nova **camada de persuasão & psicologia** (Tier 1E). O Copy Chief (Cyrus) tria cada demanda, identifica o nível de consciência de mercado, designa o(s) especialista(s) primário(s) e secundário(s), **atribui um revisor de psicologia** e aplica um **gate de qualidade ponderado de 8 pontos** antes da entrega.
 
-## Agentes
+> **Histórico:** o squad foi consolidado em 2026-06-28 a partir da fusão do antigo `copy-squad` (22 personas + chief simples) com o sub-squad `copy-master` (32 personas + chief 2.0). Fecha os achados K-002 e K-012 da vistoria estrutural v2.
 
-| Agente | Tier | Especialidade |
-|--------|------|---------------|
-| `copy-chief` | 0 | Orquestrador do squad — tria, roteia ao especialista certo e faz controle de qualidade |
-| `gary-halbert` | 1A | O Príncipe da Letra Impressa — narrativa emocional crua e marketing de rua |
-| `eugene-schwartz` | 1A | Mestre da consciência de mercado — 5 níveis de consciência e copy estratégica |
-| `claude-hopkins` | 1A | Pai da Publicidade Científica — copy orientada a dados, testes e reason-why |
-| `gary-bencivenga` | 1A | Mestre da prova — bullets, fascinações e a Equação da Persuasão |
-| `robert-collier` | 1A | Mestre da empatia e do filme mental — cartas clássicas e psicologia do leitor |
-| `john-carlton` | 1A | O Detetive de Vendas — formato longo informal e ângulo de venda escondido |
-| `jim-rutz` | 1A | Pioneiro do magalog — formatos inovadores, sagacidade e copy anti-tédio |
-| `dan-kennedy` | 1B | Direct response sem B.S. — estrutura de ofertas, precificação e info-marketing |
-| `frank-kern` | 1B | Pioneiro do intent-based branding — sequências comportamentais e Resultados Antecipados |
-| `russell-brunson` | 1B | O Arquiteto de Funis — Value Ladder, Hook-Story-Offer e Epiphany Bridge |
-| `todd-brown` | 1B | Grandes Ideias e mecanismos únicos — E5 Method para arquitetura de campanha |
-| `stefan-georgi` | 1B | O Arquiteto do RMBC — VSLs e copy sistemática de alto volume |
-| `jon-benson` | 1B | O Inventor da VSL — cartas de vendas em vídeo e copy com PNL |
-| `ry-schwartz` | 1B | O Coach da Conversão — transformação de crenças e e-mail de lançamento |
-| `ben-settle` | 1C | O Maverick Anti-Guru do E-mail — e-mails diários e copy com a personalidade em primeiro lugar |
-| `andre-chaperon` | 1C | O mestre silencioso da narrativa por e-mail e da Soap Opera Sequence |
-| `dan-koe` | 1C | O Filósofo do Negócio de Uma Pessoa Só — marca pessoal e economia dos criadores |
-| `joe-sugarman` | 1D | O Mestre do Escorregador — gatilhos psicológicos e publicidade impressa |
-| `david-ogilvy` | 1D | Pai da Publicidade Moderna — copy de marca, premium e a Big Idea |
-| `clayton-makepeace` | 1D | O copywriter mais bem pago — venda emocional e o Four-Legged Stool |
-| `parris-lampropoulos` | 1D | Mestre das fascinações e do formato — resposta direta financeira/de saúde |
-| `david-deutsch` | 1D | O Especialista em CopyTHINKING — Grandes Ideias e fascinações |
+## Agentes (33)
+
+| Agente | Nome | Tier | Especialidade |
+|--------|------|------|---------------|
+| `copy-chief` | Copy Chief (Cyrus) | 0 | Orquestrador — diagnostica, roteia para os 32 especialistas, atribui revisor de psicologia e aplica o gate de qualidade de 8 pontos |
+| `gary-halbert` | Gary Halbert | 1A | Cartas de venda long-form, mala direta, leads de storytelling emocional |
+| `eugene-schwartz` | Eugene Schwartz | 1A | Headlines, Breakthrough Advertising, 5 níveis de consciência, sofisticação de mercado |
+| `claude-hopkins` | Claude Hopkins | 1A | Publicidade científica, métodos testados, copy reason-why, claims preemptivos |
+| `gary-bencivenga` | Gary Bencivenga | 1A | Prova como arma, fascination bullets, Equação da Persuasão |
+| `robert-collier` | Robert Collier | 1A | Cartas empáticas, filmes mentais, conversa que já existe na mente do leitor |
+| `john-carlton` | John Carlton | 1A | Copy bruto de alta conversão, Simple Writing System (SWS), fechamento |
+| `jim-rutz` | Jim Rutz | 1A | Magalogs, mala direta multipágina, Greased Slide |
+| `john-caples` | John Caples | 1A | Teste de headlines, Tested Advertising Methods, split testing |
+| `rosser-reeves` | Rosser Reeves | 1A | USP (Unique Selling Proposition), Reality in Advertising, hard-sell |
+| `dan-kennedy` | Dan Kennedy | 1B | Direct response No B.S., Magnetic Marketing, ofertas |
+| `frank-kern` | Frank Kern | 1B | Mass Control, lançamentos, funis, Results In Advance |
+| `russell-brunson` | Russell Brunson | 1B | Perfect Webinar, funis, DotCom Secrets, Epiphany Bridge |
+| `todd-brown` | Todd Brown | 1B | Método E5, Big Ideas, mecanismos únicos |
+| `stefan-georgi` | Stefan Georgi | 1B | Método RMBC, VSLs long-form |
+| `jon-benson` | Jon Benson | 1B | Video sales letters, Sellerator, VSL conversacional |
+| `ry-schwartz` | Ry Schwartz | 1B | Copy baseado em consciência, sequências de email |
+| `sabri-suby` | Sabri Suby | 1B | Sell Like Crazy, Halo Strategy, geração de leads moderna |
+| `evaldo-albuquerque` | Evaldo Albuquerque | 1B | Mecanismo único, 16-Word Sales Letter, histórias de origem |
+| `ben-settle` | Ben Settle | 1C | E-mails diários, venda antifrágil, Email Players, infotainment |
+| `andre-chaperon` | Andre Chaperon | 1C | Soap Opera Sequence, AutoResponder Madness |
+| `dan-koe` | Dan Koe | 1C | Marca pessoal, negócio de uma pessoa só, construção de audiência |
+| `joe-sugarman` | Joe Sugarman | 1D | Triggers, Slippery Slide, anúncios impressos |
+| `david-ogilvy` | David Ogilvy | 1D | Publicidade de marca, long-form, copy baseado em pesquisa |
+| `clayton-makepeace` | Clayton Makepeace | 1D | Copy financeiro/de saúde, power words, agitação |
+| `parris-lampropoulos` | Parris Lampropoulos | 1D | Magalogs financeiros/de saúde, curiosity leads |
+| `david-deutsch` | David Deutsch | 1D | Anúncios impressos, copy de boardroom, info-marketing |
+| `alex-hormozi` | Alex Hormozi | 1D | Grand Slam Offers, equação de valor, metodologia $100M |
+| `joanna-wiebe` | Joanna Wiebe | 1D | Conversion copywriting, testes A/B, copy de SaaS, CTAs |
+| `robert-cialdini` | Robert Cialdini | 1E | 6 princípios da influência, Pré-Suasão, persuasão ética |
+| `blair-warren` | Blair Warren | 1E | One Sentence Persuasion, validação de identidade, ressonância emocional |
+| `chris-voss` | Chris Voss | 1E | Empatia tática, negociação, labeling, tratamento de objeções |
+| `oren-klaff` | Oren Klaff | 1E | Pitch Anything, controle de frame, alinhamento de status, STRONG |
+
+**Tiers:** 0 = Orquestração · 1A = Lendas do Direct Response · 1B = Copy Moderno & Funis · 1C = E-mail & Relacionamento · 1D = Ofertas, Páginas & Conversão · 1E = Persuasão & Psicologia.
 
 ## Como ativar
 
 ```
-@copy-chief          # Ativa o orquestrador
-*diagnose            # Tria sua demanda de copywriting e roteia ao especialista certo
+@copy-chief          # Ativa o orquestrador (Cyrus)
+*diagnose            # Tria sua demanda e roteia ao especialista + revisor de psicologia
 *full-copy-project   # Workflow de projeto de copy de ponta a ponta
+*psychology          # Auditoria de persuasão pelo Tier 1E
+*collab              # Configura colaboração entre especialistas
 ```
 
-Você também pode ativar um especialista diretamente, por exemplo `@copy-squad:gary-halbert`, quando já souber de quem precisa. O Copy Chief, porém, é o ponto de entrada recomendado — ele identifica o nível de consciência de mercado e designa o(s) agente(s) ideal(is).
+Você pode ativar um especialista diretamente (`@caliope:gary-halbert`) quando souber de quem precisa. O Copy Chief é o ponto de entrada recomendado — identifica nível de consciência, designa primário + secundário + revisor de psicologia e aplica o gate de qualidade final.
 
-## Matriz de Roteamento
+## Matriz de roteamento (resumida)
 
-O Copy Chief roteia automaticamente sua demanda ao melhor especialista:
+| Tipo de demanda | Primário | Secundário | Revisor de psicologia (Tier 1E) |
+|-----------------|----------|------------|---------------------------------|
+| Headline | eugene-schwartz | john-caples | cialdini |
+| Carta de vendas long-form | gary-halbert | john-carlton | blair-warren |
+| VSL | stefan-georgi | jon-benson | blair-warren |
+| Sequência de e-mail | andre-chaperon | ben-settle | cialdini |
+| Roteiro de webinar | russell-brunson | todd-brown | oren-klaff |
+| Pitch deck | oren-klaff | todd-brown | oren-klaff |
+| Criação de oferta | alex-hormozi | dan-kennedy | cialdini |
+| Funil completo | russell-brunson | frank-kern | blair-warren |
+| Big idea / mecanismo único | todd-brown | evaldo-albuquerque | klaff |
+| Bullets / fascinações | gary-bencivenga | clayton-makepeace | — |
+| E-mail diário / engajamento | ben-settle | dan-koe | — |
+| Copy financeira / de saúde | clayton-makepeace | parris-lampropoulos | — |
+| Copy de marca / premium | david-ogilvy | rosser-reeves | blair-warren |
+| Ad copy / tráfego pago | dan-kennedy | sabri-suby | cialdini |
+| Copy de lançamento | frank-kern | sabri-suby | cialdini |
+| Conversão de SaaS | joanna-wiebe | ry-schwartz | — |
+| High-ticket close | chris-voss | alex-hormozi | klaff |
+| Tratamento de objeções | chris-voss | blair-warren | — |
+| USP / posicionamento | rosser-reeves | david-ogilvy | — |
+| Mala direta / magalog | jim-rutz | parris-lampropoulos | cialdini |
 
-| Tipo de demanda | Primário | Secundário |
-|-----------------|----------|------------|
-| Título | eugene-schwartz | gary-halbert |
-| Carta de vendas / formato longo | gary-halbert | john-carlton |
-| Sequência de e-mail | andre-chaperon | ben-settle |
-| VSL / carta de vendas em vídeo | stefan-georgi | jon-benson |
-| Roteiro de webinar | russell-brunson | todd-brown |
-| Criação de oferta | dan-kennedy | joe-sugarman |
-| Copy de funil | russell-brunson | frank-kern |
-| Big idea / conceito de campanha | todd-brown | eugene-schwartz |
-| Bullet points / fascinações | gary-bencivenga | clayton-makepeace |
-| E-mails diários / engajamento | ben-settle | dan-koe |
-| Carta de vendas clássica / mala direta | robert-collier | jim-rutz |
-| Copy financeira / de saúde | clayton-makepeace | parris-lampropoulos |
-| Copy de marca / premium | david-ogilvy | david-deutsch |
-| Ad copy / anúncios pagos | dan-kennedy | frank-kern |
-| Copy de lançamento | frank-kern | russell-brunson |
-| Copy de marca pessoal | dan-koe | ry-schwartz |
-| Revisão / crítica de copy | copy-chief | eugene-schwartz |
+A matriz completa (com awareness levels e padrões de colaboração entre 6 perfis) está dentro de `agents/copy-chief.md`.
 
 ## Workflows
 
-### Projeto de Copy Completo (`*full-copy-project`)
-De ponta a ponta: briefing > diagnóstico > designação do especialista > escrita > revisão > entrega.
-
-### Ciclo de Revisão de Copy (`*copy-review-cycle`)
-Loop iterativo de escrever-criticar-revisar (máximo de 3 iterações).
+| Workflow | Para quê |
+|---|---|
+| `wf-full-copy-project` | Projeto de copy de ponta a ponta — briefing → diagnóstico → escrita → revisão de psicologia → gate de qualidade |
+| `wf-copy-review-cycle` | Loop iterativo de escrever-criticar-revisar (até 3 iterações) |
+| `wf-vsl-production` | Pipeline específico de produção de VSL (Georgi escreve + Hormozi estrutura oferta + Blair Warren revisa + Cyrus aplica gate) |
+| `wf-launch-sequence` | Sequência de lançamento (Big Idea → Webinar → Sales Page → E-mails → Anúncios → Psicologia → Gate) |
 
 ## Componentes
 
-- **23 agentes** — 1 orquestrador + 22 especialistas
-- **13 tarefas** — write-headline, write-sales-letter, write-vsl-script, write-email-sequence, write-ad-copy, write-landing-page, write-bullets, create-funnel-copy, create-offer, analyze-copy, critique-copy, diagnose, review
-- **2 workflows** — full-copy-project, copy-review-cycle
-- **1 checklist** — output-quality (controle de qualidade dos entregáveis)
-- **5 arquivos de dados** — routing-catalog, copy-frameworks, formulas-de-headline, estrutura-de-landing-page, transicoes-naturais (os 3 últimos absorvidos de `coreyhaines31/marketingskills@8bfcdff`, G21)
-
-## Módulo avançado
-
-O diretório `copy-master/` é um submódulo dentro de Caliope que oferece um conjunto mais profundo de capacidades de copywriting (edição linha a linha, frameworks estendidos e recursos adicionais). Use-o quando precisar ir além do roteamento e da escrita do squad principal.
+- **33 agentes** — 1 orquestrador + 32 especialistas em 5 tiers
+- **15 tarefas** — write-headline, write-sales-letter, write-vsl-script, write-email-sequence, write-ad-copy, write-landing-page, write-bullets, create-funnel-copy, create-offer, write-webinar-script, write-pitch-deck, analyze-copy, critique-copy, diagnose, review
+- **4 workflows** — full-copy-project, copy-review-cycle, vsl-production, launch-sequence
+- **1 checklist** — output-quality (gate de 8 pontos ponderados)
+- **5 arquivos de dados** — routing-catalog, copy-frameworks, formulas-de-headline, estrutura-de-landing-page, transicoes-naturais
+- **Vetos invioláveis** (`cross_cutting.veto` em `squad.yaml`) — claim sem fonte, cópia literal de mestre, oferta forte sem disclaimer, mercado regulado sem aderência à lei, público vulnerável, persuasão eticamente questionável, credencial fora do Infisical
 
 ## Requisitos
 

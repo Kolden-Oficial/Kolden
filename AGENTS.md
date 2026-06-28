@@ -9,10 +9,10 @@
 Operação do **Ronan**. A descrição oficial (modelo de negócio, mercado, marca) está em construção em `sobre-a-empresa/` — **um squad de pesquisa vai definir e preencher**. Enquanto estiver `status: rascunho`, **não afirme** detalhes de negócio: diga que está em definição.
 
 ## Números do workspace (estado atual)
-- **23 squads** de agentes (nomes da mitologia grega) — **225 agentes** nas pastas `agents/` (inclui os 6 squads-semente novos: +30).
+- **23 squads** de agentes (nomes da mitologia grega) — **235 agentes** nas pastas `agents/` (inclui os 6 squads-semente novos: +30; e a consolidação do Caliope com o antigo `copy-master/`: +10).
 - **Prometeu**: framework de engenharia AIOX com **12 agentes** em `Prometeu/.aiox-core/development/agents/`.
 - **Caos**: fábrica de agentes com **9 especialistas internos** + **26 skills**.
-- **Total**: **246 agentes** (225 em 23 squads + 12 Prometeu + 9 Caos) — contagem verificada arquivo-a-arquivo em 2026-06-28. A **Dike** (verificador da subida) é um papel **sem arquivo de agente próprio** (`Dike/` tem PRD/CLAUDE/memória, mas não `agents/*.md`), por isso **não entra na contagem**.
+- **Total**: **256 agentes** (235 em 23 squads + 12 Prometeu + 9 Caos) — contagem verificada arquivo-a-arquivo em 2026-06-28 (pós-consolidação Caliope×copy-master, K-002+K-012). A **Dike** (verificador da subida) é um papel **sem arquivo de agente próprio** (`Dike/` tem PRD/CLAUDE/memória, mas não `agents/*.md`), por isso **não entra na contagem**.
 - **Skills (lote de absorção 2026-06-26/27)**: **~129 habilidades novas** — 99 em 11 squads existentes (Égide+29, Ariadne+18, Caliope+5, Pheme+11, Dédalo+9, Prometeu+9, Caos+8, Harmonia+4, Argos+3, Olimpo+3, Metis+1) + 30 nos 6 squads novos — a partir de **31 repos GitHub** (todos SAFE, reconciliação PERDIDO=0). Composição: 44 âncoras + 47 exaustivo (cyber/SEO/ECC) + 8 aprofundamento (growth/copy) + 30 dos squads-semente. Todos os squads tocados têm `catalogo.md`. Detalhe: `Caos/registros/absorcao/_lote-2026-06-26/RELATORIO-DO-LOTE.md` + `aplicacao-f6-resultado.md`. Roadmap: `_lote-2026-06-26/ROADMAP-ESTRUTURA-ROBUSTA.md`.
 - **6 squads-semente novos (2026-06-28)**: **Nomos** (compliance/jurídico), **Pactolo** (finanças/FP&A), **Êmporos** (vendas/comercial), **Héstia** (RH/pessoas), **Ananke** (operações/BizOps), **Cairós** (PMO/projetos) — +30 agentes (chief + 4 especialistas cada). **Status `semente`**: estrutura inicial (README + squad.yaml + agentes + 5 skills + catálogo + MEMORY); refino completo (PRD, Ritual de 9 fases, herança histórica) pendente do Caos. Fronteiras de camada cravadas vs Olimpo (Plutos/Afrodite/Poseidon) e Prometeu/Caos.
 - **Ferramentas**: ~35 tools/APIs catalogadas (inclui 5 vendors novos: Repomix, MarkItDown, MoneyPrinterTurbo, PlaywrightMCP, n8n-MCP); **14 MCPs conectados**, 8 aguardando OAuth.
@@ -109,8 +109,8 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 - `ads-analyst` — Auditoria forense de contas: gasto desperdiçado e estrutura.
 - `fiscal` — CFO de tráfego: orçamento, fluxo de caixa, lucratividade e metas ROAS.
 
-**Caliope/** — Copywriting de elite: resposta direta, VSL, e-mail e marca (23 agentes). → `Caliope/README.md`
-- `copy-chief` — Orquestra demandas de copy e roteia aos 22 especialistas certos.
+**Caliope/** — Copywriting de elite: direct response, VSL, e-mail, ofertas, marca e a nova **camada de persuasão & psicologia** (33 agentes, 5 tiers). Consolidação do antigo `copy-master/` em 2026-06-28 (K-002+K-012). → `Caliope/README.md`
+- `copy-chief` (Cyrus) — Orquestra demandas, designa primário+secundário+revisor de psicologia e aplica gate de qualidade de 8 pontos sobre os 32 especialistas.
 - `gary-halbert` — Narrativa emocional crua e marketing de rua em resposta direta.
 - `eugene-schwartz` — Mestre dos 5 níveis de consciência de mercado.
 - `claude-hopkins` — Pai da publicidade científica: copy orientada a dados e reason-why.
