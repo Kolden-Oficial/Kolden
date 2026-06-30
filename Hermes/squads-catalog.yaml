@@ -498,10 +498,58 @@ squads:
     muda_algo: false  # planeja/gere riscos; build de software → handoff Prometeu
 
   # ------------------------------------------------------------------------
+  # Skills-notify (não-squads): entradas que o Hermes detecta por keyword e
+  # sinaliza ao Ronan, mas que vivem como skill custom, não como squad.
+  # ------------------------------------------------------------------------
+
+  - squad: tarefa
+    nome: "Central de Tarefas — /tarefa (skill, não-squad)"
+    dir: C:/Kolden/sobre-a-empresa/operacao/tarefas
+    tipo: skill-notify
+    chief_file: "README.md"
+    keywords:
+      - tarefa
+      - tarefas
+      - radar
+      - anota
+      - anotar
+      - lembra
+      - lembrar
+      - pendente
+      - tenho que
+      - preciso fazer
+      - registrar tarefa
+      - adicionar tarefa
+      - daily
+      - próxima ação
+      - to-do
+      - todo
+      - backlog operacional
+      - checklist
+      - gestão de tarefas
+    muda_algo: false   # /tarefa só grava no radar.yaml local (repo privado); não muda sistema externo
+    gate_de_intencao: |
+      Detecção por keyword é ambígua ("anotar pra mim", "ficou pendente", "tenho que" podem ser
+      execução AGORA ou registro PARA DEPOIS). Antes de invocar /tarefa, pergunte ao Ronan:
+      "Isso é uma tarefa para REGISTRAR no radar OU uma execução AGORA?"
+      Default: não registra silenciosamente. Mesma lógica do gate `muda_algo: true`.
+    notas: |
+      A skill /tarefa em si ainda não existe (F5 do plano de fundação, fica para sessão Caos
+      dedicada). Por ora, o Hermes pode listar/consultar o radar com Read direto em
+      C:/Kolden/sobre-a-empresa/operacao/tarefas/radar.yaml — escrita exige a skill.
+      Crossings:
+        - Tarefa virou projeto → handoff Cairos via /tarefa promote <id> projeto
+        - Padrão se repete em ≥3 clientes → handoff Ananke via /tarefa promote <id> sop
+        - Bloqueado por capacidade → /tarefa gaps vira input do Caos
+      Schema em: C:/Kolden/sobre-a-empresa/operacao/tarefas/schema.yaml
+
+  # ------------------------------------------------------------------------
   # Notas:
   #   - caos (C:\Kolden\Caos): criação de agentes é INTERATIVA (ritual em rodadas).
   #     Não roteável headless — apenas avise o Ronan para abrir o Caos manualmente.
   #   - prometeu (C:\Kolden\Prometeu): estrutura .aiox-core/ (não agents/). Caso à parte.
   #   - Squads com .claude/ (Pheme, Aletheia, Argos, Liceu) têm SÓ skills, não
   #     .claude/agents/ — por isso o tipo é `aios` (read-and-adopt), não claude-code.
+  #   - tarefa (skill-notify): não é squad — é gancho para o Hermes detectar intenção
+  #     de registro de tarefa e perguntar antes de invocar a skill /tarefa (F5).
   # ------------------------------------------------------------------------
