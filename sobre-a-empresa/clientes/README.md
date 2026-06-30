@@ -16,11 +16,12 @@ Campos marcados **"sem registro no Drive"** não têm fonte — não são lacuna
 ## Dossiê × Projeto (convenção de ligação)
 O **dossiê** (aqui, em `clientes/`) é a **inteligência de negócio** do cliente — leve, fonte de verdade. O **projeto** (em [`Projetos/`](../../Projetos/)) é a **execução** — brandbook, pesquisa, código. Os dois se cruzam por dois campos de frontmatter: `workspace_projeto` (no dossiê) ↔ `dossie_cliente` (no `leia-me.md` do projeto). Nem todo cliente tem projeto, e nem todo projeto é de cliente — os campos são opcionais. A coluna **Projeto** (🛠) abaixo aponta para quem já tem projeto vinculado.
 
-## Clientes Ativos (15)
+## Clientes Ativos (16)
 
 | Cliente | Modelo | Segmento | Riqueza | Dossiê | Projeto | Drive |
 |---|---|---|:--:|---|:--:|:--:|
 | Affordable Insulation | Assessoria | Isolamento térmico/acústico (EUA) | 🟢 | [↗](ativos/affordable-insulation.md) | — | [📁](https://drive.google.com/drive/folders/1mPp7nyLiMwvgRu9H6yIAcHuon6u2t1KU) |
+| Ariosto Ribeiro | Assessoria | *sem registro no Drive* (aplicativo + CRM em entrega) | ⚪ | [↗](ativos/ariosto-ribeiro.md) | — | — |
 | Vilela Construction | Assessoria | Construção/reformas residenciais (EUA) | 🟢 | [↗](ativos/vilela-construction.md) | — | [📁](https://drive.google.com/drive/folders/18lQpPlQcLyRPK2ttiCJTQPr3vuV3Xn-4) |
 | Rosie | Assessoria | E-commerce de moda / confecção | 🟢 | [↗](ativos/rosie.md) | [🛠](../../Projetos/Rosie/leia-me.md) | [📁](https://drive.google.com/drive/folders/1R1pM0_Ahp0phc_93ay6IHzotQ1ichzwB) |
 | Stass | Infoproduto | Educação financeira presencial — comunidade latina (Primerica, Canadá) | 🟢 | [↗](ativos/stass.md) | — | [📁](https://drive.google.com/drive/folders/1vec51h2bzGuUln_jEliZ6NMuicFT1l6b) |
@@ -29,12 +30,12 @@ O **dossiê** (aqui, em `clientes/`) é a **inteligência de negócio** do clien
 | Revolution Pro | Assessoria | Pintura residencial/comercial (EUA) | 🟡 | [↗](ativos/revolution-pro.md) | — | [📁](https://drive.google.com/drive/folders/1rokd-eDMlkixmkagOUgbDIUTqfLmVzwS) |
 | Mat3vic | Assessoria | Deck/Roofing/Siding (EUA) | 🟡 | [↗](ativos/mat3vic.md) | — | [📁](https://drive.google.com/drive/folders/14cQgGtYzdxMJWpUgyUQ6cRlFvHCCgTiy) |
 | EntreSolos | Assessoria | Geotecnia — sondagens de solo (MG) | 🟢 | [↗](ativos/entresolos.md) | — | [📁](https://drive.google.com/drive/folders/14uT8ZSoqHli-E5-aVX-9z3B5bpD0HUf5) |
-| NutriOS Pro | SaaS | *sem registro no Drive* | ⚪ | [↗](ativos/nutrios-pro.md) | [🛠](../../Projetos/NutriOS%20Pro/leia-me.md) | [📁](https://drive.google.com/drive/folders/1HDXtcjQnCFwUvDvmiNhiknmlatjUp3l-) |
+| NutriOS Pro | SaaS | *sem registro no Drive* | 🟢 | [↗](ativos/nutrios-pro.md) | [🛠](../../Projetos/NutriOS%20Pro/leia-me.md) | [📁](https://drive.google.com/drive/folders/1HDXtcjQnCFwUvDvmiNhiknmlatjUp3l-) |
 | Instituto Saulo Mendes | Assessoria | Hipnose e psicoterapia | ⚪ | [↗](ativos/instituto-saulo-mendes.md) | — | [📁](https://drive.google.com/drive/folders/17daZGvfYyX9qzUVYslknOn2fL0dSBCdq) |
-| Clínica Omiron | Assessoria | Saúde / clínica | ⚪ | [↗](ativos/clinica-omiron.md) | [🛠](../../Projetos/Omiron/leia-me.md) | [📁](https://drive.google.com/drive/folders/1ap5666RlBEenXUwGHl65dBZFFVL09TZx) |
+| Clínica Omiron | Assessoria | Saúde / clínica | 🟢 | [↗](ativos/clinica-omiron.md) | [🛠](../../Projetos/Omiron/leia-me.md) | [📁](https://drive.google.com/drive/folders/1ap5666RlBEenXUwGHl65dBZFFVL09TZx) |
 | Vibrações Celestiais | Assessoria | *sem registro no Drive* | ⚪ | [↗](ativos/vibracoes-celestiais.md) | — | [📁](https://drive.google.com/drive/folders/1LL5o7usu-rkuXFUosEdWvhTJbB-mMqjm) |
 | Freitas Serviços | Assessoria | *sem registro no Drive* | ⚪ | [↗](ativos/freitas-servicos.md) | — | [📁](https://drive.google.com/drive/folders/1qRQFM1bTK43As5UQ-ST4OrXk1RZ8Ggac) |
-| CataLogo | Assessoria | *sem registro no Drive* | ⚪ | [↗](ativos/catalogo.md) | [🛠](../../Projetos/CataLogo/leia-me.md) | [📁](https://drive.google.com/drive/folders/1gLjXxMYWPub-Vzemeb8F4N-t0oNaafyN) |
+| CataLogo | Assessoria | *sem registro no Drive* | 🟢 | [↗](ativos/catalogo.md) | [🛠](../../Projetos/CataLogo/leia-me.md) | [📁](https://drive.google.com/drive/folders/1gLjXxMYWPub-Vzemeb8F4N-t0oNaafyN) |
 
 > **Infoproduto:** dentro de `03 | Infoproduto` do Drive, **Perpétuo = Coflow** e **Lançamento = Stass**
 > (modelos de monetização, cada um com 1 cliente real). NutriOS Pro é o único cliente em `02 | SaaS`.
@@ -68,4 +69,38 @@ Triados como **aproveitáveis** para base de conhecimento. (Soul foi descartado 
 - **Arquivos cruzados de pasta**: check-in do Revolution Pro está na pasta do Brayan's; onboarding nomeado "Evolution Pro"; planilha de equipe do Affordable com dados fictícios brasileiros (placeholder).
 
 ---
-_29 dossiês (15 ativos + 14 inativos). Gerado por leitura do Drive via MCP do Google. Atualizar este índice ao adicionar/editar dossiês._
+_30 dossiês (16 ativos + 14 inativos). Gerado por leitura do Drive via MCP do Google (2026-06-25) + ariosto-ribeiro adicionado em 2026-06-30 via import da planilha "Tarefas Pessoais". Atualizar este índice ao adicionar/editar dossiês._
+
+## Conhecimento NotebookLM extraído (sessão 2026-06-30)
+
+Extração massiva via `notebooklm-py` SDK (ver `Ferramentas/NotebookLM/ferramentas.md`). Cada cliente listado abaixo tem **`_notebooklm/`** dentro da sua pasta com 1 arquivo `.md` por fonte (frontmatter rico: id_fonte, titulo, tipo, summary AI-gerado pelo NotebookLM, keywords) + `_indice.md` mapeando tudo.
+
+**Clientes ativos (9 com conteúdo):**
+
+| Cliente | Fontes | Índice |
+|---|---:|---|
+| Affordable Insulation | 30 | [↗](ativos/affordable-insulation/_notebooklm/_indice.md) |
+| NutriOS Pro | 24 | [↗](ativos/nutrios-pro/_notebooklm/_indice.md) |
+| Clínica Omiron (cliente + projeto fundidos) | 21 | [↗](ativos/clinica-omiron/_notebooklm/_indice.md) |
+| CataLogo | 20 | [↗](ativos/catalogo/_notebooklm/_indice.md) |
+| Brayan's Finish | 12 | [↗](ativos/brayans-finish/_notebooklm/_indice.md) |
+| Stass | 9 | [↗](ativos/stass/_notebooklm/_indice.md) |
+| Vilela Construction | 5 | [↗](ativos/vilela-construction/_notebooklm/_indice.md) |
+| Revolution Pro | 5 | [↗](ativos/revolution-pro/_notebooklm/_indice.md) |
+| Mat3vic | 5 | [↗](ativos/mat3vic/_notebooklm/_indice.md) |
+
+**Clientes inativos (3 com conteúdo):**
+
+| Cliente | Fontes | Índice |
+|---|---:|---|
+| P17 - Precision Engineering | 16 | [↗](inativos/p17-precision-engineering/_notebooklm/_indice.md) |
+| Pizzaria Margherita | 11 | [↗](inativos/pizzaria-margherita/_notebooklm/_indice.md) |
+| Clube Fit Academia | 4 | [↗](inativos/clube-fit/_notebooklm/_indice.md) |
+
+**Conhecimento institucional Kolden (13 notebooks, ~862 fontes):** ver `../sobre-a-empresa/_conhecimento-institucional/`.
+
+**Excluídos (PII bancário):** 2 notebooks Santander (21 fontes) — §5 do CLAUDE.md.
+
+**Notebooks vazios (skipped):** Rosie, Instituto Saulo Mendes, Vibrações Celestiais, EntreSolos, Freitas Serviços (no NotebookLM, mas sem fontes — popular depois se útil).
+
+**Falhas conhecidas (9 de 1.034 = 0.9%):** 7 sources que foram apagadas do notebook entre `list` e `get_fulltext`, 1 grande demais (>50MB, Omiron), 1 timeout (Análise Financeira). Log em `Ferramentas/NotebookLM/registros/2026-06-30-extracao.log`.
