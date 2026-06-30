@@ -23,6 +23,48 @@ faixa do Afrodite é **escalonamento**, não decisão do squad — é veto.
 | "Concorrente X é mais barato" | Comparação por preço, não por valor | Diferencie por critério de decisão, não por desconto |
 | "Agora não é a hora" | Timeline frouxa / sem evento gatilho | Crie urgência legítima (janela, capacidade, custo crescente) |
 
+## AECR — objection handling estruturado
+
+### AECR — Acknowledge → Empathize → Clarify → Reframe
+
+> _Seção absorvida de github.com/msitarzewski/agency-agents@a597cb6 (G17, MIT)._
+
+Toda objeção segue padrão emocional + racional. Tratar só o racional perde — tratar só o emocional não fecha. AECR cobre ambos.
+
+**Sequência:**
+
+1. **Acknowledge:** "Entendi, [resumo da objeção em 1 frase]"
+   - NUNCA: "Mas..." (invalida)
+   - Reconhece sem concordar
+
+2. **Empathize:** "Faz sentido você pensar assim porque [contexto]"
+   - Mostra que entende ANGÚSTIA (não só o argumento)
+   - Conecta com experiência similar
+
+3. **Clarify:** "Pode me dizer mais sobre [aspecto específico]?"
+   - Descobre objeção REAL (frequentemente diferente da objeção declarada)
+   - Pergunta socrática (não disfarçada de venda)
+
+4. **Reframe:** "[Nova perspectiva que mantém valor + resolve a preocupação]"
+   - NÃO é "mas pense assim" — é abertura de novo ângulo
+   - Baseado no que descobriu no Clarify
+
+**Distribuição típica de objeções (benchmark B2B SaaS):**
+- 48% budget ("muito caro" / "sem verba")
+- 32% timing ("não é o momento" / "Q4")
+- 20% competition (incluindo "fazer nada")
+
+**Mapeamento por categoria:**
+- Budget → Reframe ROI/payback/oportunidade
+- Timing → Reframe custo de espera + janela competitiva
+- Competition → Reframe diferenciação por outcome (não feature)
+
+**Anti-padrões:**
+- Pular Empathize (vira robô)
+- Saltar Clarify e ir direto a Reframe (assume objeção errada)
+- Reframe agressivo ("você não está vendo claramente")
+- Tratar objeção de budget com mais features (desencontro)
+
 ## 2. Faixa de concessão (dentro da política do Afrodite)
 - Conceda **com contrapartida** (prazo maior, volume, case, antecipação), nunca desconto gratuito.
 - Conheça a **faixa permitida** pela política; opere dentro dela.

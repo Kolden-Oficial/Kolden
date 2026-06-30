@@ -11,7 +11,10 @@ Lições já confirmadas, em uso. (Vazio na fundação — preenchido pelo uso r
 ## Candidatos a Promoção
 Hipóteses de padrão observadas 1x, aguardando confirmação antes de virar Padrão Ativo.
 
-- _(nenhum ainda)_
+- **NPS / CSAT / Churn prediction → Metis (não Aletheia)** | Origem: F5/B04 decisão Ronan 2026-06-29 | Detectado: 2026-06-29
+  - G7 do upstream `msitarzewski/agency-agents@a597cb6` (NPS modeling + churn prediction + satisfaction correlation) foi **DESCARTADO** desta absorção por escopo errado: Aletheia para no PMF; NPS/churn é pós-PMF.
+  - Quando Metis evoluir para instrumentação de North Star (squad de métricas/retenção), absorver a capacidade ali — não invadir o domínio antes.
+  - Trigger de promoção: Metis ganhar ≥3 skills de instrumentação contínua.
 
 ## Arquivado
 Padrões que se mostraram errados ou superados — mantidos para não repetir o erro.

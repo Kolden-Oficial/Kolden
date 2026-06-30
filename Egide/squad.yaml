@@ -6,6 +6,22 @@ author: "Synkra AIOS"
 license: MIT
 slashPrefix: "cybersecurity"
 
+# Kolden-native fields (K-007/K-009/K-011 — vistoria v2)
+entry_agent: cyber-chief
+tiers:
+  tier_0:
+    name: "Orquestração ética"
+    agents: [cyber-chief]
+    purpose: "Triagem de demanda, validação de RoE, roteamento entre red/blue/AppSec/forense; mantém os portões éticos (sem alvo sem autorização)."
+  tier_1:
+    name: "Especialistas humanos"
+    agents: [peter-kim, georgia-weidman, jim-manico, chris-sanders, omar-santos, marcus-carey]
+    purpose: "Pessoas reais — pentest/red team (Kim/Weidman), AppSec (Manico), blue team (Sanders), vulnmgmt+IR (Santos), CTI+liderança (Carey)."
+  tier_2:
+    name: "Ferramentas operacionais"
+    agents: [command-generator, cartographer, busterer, dirber, fuzzer, ripper, rogue, shannon-runner]
+    purpose: "Sintaxe de comandos, recon, enumeração web/serviços, fuzzing, quebra de credenciais, exploração, OSINT — só dentro de escopo autorizado."
+
 aios:
   minVersion: "4.0.0"
   type: squad

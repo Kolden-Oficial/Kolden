@@ -1,0 +1,29 @@
+{
+  "name": "vscode-coach-mcp",
+  "version": "0.1.0",
+  "description": "MCP server da Kolden para coach de produtividade do VS Code — auditoria, recomendações, diagnósticos e setup por stack.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "vscode-coach-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "eval": "node dist/eval/rodar-eval.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "js-yaml": "^4.1.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

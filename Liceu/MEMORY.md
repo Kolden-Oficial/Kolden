@@ -16,8 +16,15 @@
 ### Padrões de linhagem
 <!-- Ex.: "Psicanálise → consumo: Freud → Bernays (sobrinho, direta) → Dichter → Packard → Cheskin; Jung/Lacan entram por influência lateral | AAAA-MM-DD" -->
 
+- **Disciplina como tipo no acervo** — além de mentes individuais (Bernays/Dichter/Lacan), o Liceu agora cataloga **disciplinas inteiras** (antropologia cultural, geografia físico-humana, historiografia, narratologia, psicologia clínica) usando `mentes/_modelo-dossie-disciplina.md`. Schema-variante criado em B11 (msitarzewski/agency-agents@a597cb6, MIT, 2026-06-29). Bibliotecario reconhece pelo frontmatter `tipo: disciplina` × `tipo: mente-individual`. Disciplina lista sub-mentes-âncora `pendente-dissecacao` que viram dossiês individuais por demanda. | 2026-06-29
+- **Fronteira psicologia clínica × psicanálise-do-desejo** — coexistem; documentada explicitamente em `linhagens/indice-de-linhagens.yaml`. Psicanálise aplicada ao consumo (Bernays/Dichter/Lacan) é fronteira diferente da psicologia clínica empírica (Bowlby/Vaillant/Beck/Karpman/Erikson). Não fundir. | 2026-06-29
+- **Cross-link Orfeu para sub-mentes já encarnadas** — Campbell e Snyder são personas em Orfeu (`joseph-campbell.md`, `blake-snyder.md`). Liceu indexa por referência (`status: persona-canonica-em-squad` + `caminho-canonico`), nunca recria. Regra de não-duplicação (Veto 4 do CLAUDE.md) preservada. | 2026-06-29
+
 ### Gotchas de fato × folclore
 <!-- Ex.: "Dichter 'bolo + 1 ovo' é FOLCLORE (citado à exaustão, sem fonte primária); subliminar de Vicary é REFUTADO (o próprio Vicary admitiu a fraude) | AAAA-MM-DD" -->
+
+- **Rótulo 4-graus de candura para disciplinas** (G8 do upstream B11) — Bem-documentado / Consenso acadêmico / Em debate / Especulativo + tipo de fonte (primária > secundária > popular > Hollywood). Coexiste com rótulo 5-graus de mentes individuais (mentes podem ter `DISPUTADO` separado de `EM_DEBATE`). | 2026-06-29
+- **Anti-eurocentrismo como norma transversal** (G10 do upstream B11) — disciplinas formadas só com cânone ocidental falham o gate `output-quality`. Incluir Song, Mali, dinastias asiáticas, narrativas indígenas como referência **primária**, não apêndice/curiosidade. | 2026-06-29
 
 ## Candidatos a Promoção
 <!-- Padrões vistos em 3+ contextos — candidatos para CLAUDE.md ou regras -->

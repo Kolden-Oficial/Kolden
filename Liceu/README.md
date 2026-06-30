@@ -101,6 +101,15 @@ Nenhum entregável passa sem cumprir os vetos invioláveis (`checklists/output-q
 | Mente deve virar agente conversável | **Caos** | Brief de encarnação (o dossiê = ~80% do diagnóstico) → Ritual de 9 fases (exige aprovação humana) |
 | Fonte hostil/profunda (escalada de pesquisa) | **Argos** | Handoff ao motor do Argos (`research-synthesizer` / GPT-Researcher) — **sem motor próprio** |
 | Pedido de **mercado/concorrente** (fora de escopo) | **Argos** | Liceu disseca *pensadores*; mercado é o Argos. Fronteira explícita |
+| `funcao-antes-da-estetica` (B11) | **Aglaia**, **Caliope** | Toda prática cultural tem função social — analisar a função antes da estética; antídoto contra pastiche |
+| `rito-de-passagem-3-estagios` (B11) | **Caliope**, **Aglaia**, **Pluto** | Separação → liminaridade → incorporação como chassi de jornada de cliente, ritual de marca e funil de oferta |
+| `worldbuilding-fisico-bottom-up` (B11) | **Orfeu** | Mundo coerente bottom-up (tectônica → clima → hidrologia → biomas → assentamento), com regras invioláveis de hidrologia/clima |
+| `longue-duree-3-camadas` (B11) | **Argos**, **Themis**, **Metis** | Decompor mudança em estrutura/conjuntura/evento (Braudel/Annales) — calibrar horizonte de decisão à camada certa |
+| `diagnostico-narrativo-fabula-sjuzhet` (B11) | **Caliope**, **Orfeu** | Diagnosticar problema narrativo na camada certa (90% mora no sjuzhet) antes de reescrever |
+| `arco-personagem-5-pontos` (B11) | **Caliope**, **Orfeu**, **Aglaia** | Arco real com want/need/lie/ghost — para jornada de cliente, personagem narrativo e brand persona com profundidade |
+| `narratologia-comparada-3-tradicoes` (B11) | **Caliope**, **Orfeu** | Escolher consciente entre 3 atos / kishōtenketsu / rasa — fugir do default ocidental quando a mensagem pede |
+| `perfil-psicologico-multi-lente` (B11) | **Aletheia**, **Caliope**, **Aglaia**, **Pluto** | Persona/personagem multi-lente (Big Five + apego + defesa + cognitiva + Karpman + Erikson), com anexo de respostas a trauma |
+| `dinamica-relacional` (B11) | **Caliope**, **Pluto**, **Hestia** | Mapear relação em 6 dimensões — diálogo crível, oferta que honra o contrato não-dito, diagnóstico de dinâmica de time |
 
 ## Mapa do projeto
 

@@ -1,6 +1,6 @@
 # Catálogo de Habilidades — Égide
 
-Índice das 29 habilidades do squad Égide (cibersegurança). Todas **defensivas e
+Índice das 32 habilidades do squad Égide (cibersegurança). Todas **defensivas e
 metodológicas** — descrevem como testar e corrigir, nunca entregam ataque/payload pronto;
 operam só sobre o que se possui ou se tem autorização para avaliar.
 
@@ -13,15 +13,18 @@ operam só sobre o que se possui ou se tem autorização para avaliar.
 | `caca-a-ameacas-orientada-a-hipotese` | postura proativa: caçar comprometimento sem alerta | Threat hunting por hipótese (CTI/ATT&CK) → baseline + analítica comportamental; devolve detecção nova |
 | `criptografia-aplicada` | auditar/desenhar uso de cripto num sistema | Algoritmo/modo, senha/TLS/PKI, gestão de chaves; caça antipadrões (ECB, IV reusado, segredo hardcoded) |
 | `defesa-phishing-e-ransomware` | defender contra phishing/ransomware | SPF/DKIM/DMARC, análise de cabeçalho, precursores de ransomware, playbook CISA/NIST |
-| `devsecops-sast-dast-em-ci` | embutir segurança no CI/CD | Ordenar scanners (SAST/DAST/SCA/secret/IaC), gates por severidade, shift-left sem travar entrega |
+| `deteccao-de-pivot-e-tunneling` | detectar/bloquear pivoting e tunneling (SSH reverso, DNS/HTTP/ICMP tunneling, Ngrok abuso) | **Defensiva apenas** — IoCs por camada (rede/host/DNS) + Sigma/SPL/KQL + hardening egress (ZTNA, RPZ). Sem técnica ofensiva |
+| `devsecops-sast-dast-em-ci` | embutir segurança no CI/CD | Ordenar scanners (SAST/DAST/SCA/secret/IaC), gates por severidade, shift-left sem travar entrega; OIDC federation runner→cloud (sem access keys) |
 | `engenharia-de-deteccao-sigma-yara` | transformar ameaça em regra de detecção durável | Autoria de regra Sigma (multi-SIEM) + YARA; detection-as-code, ajuste de fidelidade/falso-positivo |
 | `escrita-segura-e-dlp` | escrever flag/segredo com segurança ou pré-enviar arquivo a LLM | Escrita symlink-safe (O_NOFOLLOW, temp+rename, 0600) + DLP de pré-envio (denylist + cap de tamanho) |
 | `forense-digital-e-resposta-a-incidente` | conduzir incidente ou forense digital | DFIR: dump de memória, disco/MFT, artefatos de execução, timeline (contenção→erradicação→recuperação) |
 | `gestao-de-identidade-e-acesso-iam` | endurecer/auditar identidade e acesso | IAM cloud, AD (Tier 0/1/2), federação SSO (SAML/OIDC/SCIM), PAM; detecta golden ticket/DCSync |
 | `gestao-de-vulnerabilidades-priorizacao` | transformar CVEs num plano de remediação ordenado | Prioriza por risco real (CVSS+EPSS+KEV+contexto), define SLA de correção, mede o fluxo |
-| `grc-e-conformidade-de-seguranca` | estruturar governança, risco e conformidade | ISO 27001, NIST CSF, 800-30, CMMC/800-171, LGPD/GDPR; distingue risco de maturidade |
+| `governanca-multi-conta-de-nuvem` | governar org-wide multi-cloud (AWS Organizations/Azure MG/GCP Org) | SCPs preventivas + Azure Policy + GCP Org Policy + policy-as-code (OPA/Sentinel/Cloud Custodian) + landing zones |
+| `grc-e-conformidade-de-seguranca` | estruturar governança, risco e conformidade | ISO 27001, NIST CSF, 800-30, CMMC/800-171, LGPD/GDPR, **SOC 2 + HIPAA + PCI-DSS** + control mapping + evidence collection (Drata) |
 | `inteligencia-de-ameacas-cti` | triar/enriquecer IOC, atribuir campanha a ator/APT | CTI contra MITRE ATT&CK/kill chain/modelo diamante; alimenta blue-team e DFIR |
 | `metodologia-de-pentest-ptes` | estruturar pentest autorizado (processo, não exploit) | Escopo+ROE, fases PTES, checklist por fase, relatório priorizado; SEM comandos de ataque |
+| `modelagem-de-ameacas-stride-pasta` | modelar ameaças em arquitetura antes do build (qualquer sistema, não só web) | STRIDE sistemático com DFDs + PASTA 7 estágios + critério de escolha + handoffs por skill irmã |
 | `operacoes-de-soc-blue-team` | operar o centro de defesa (não escrever regra/reversar) | Triagem de alerta SIEM, matriz de escalonamento, tiers T1/T2/T3, runbook, KPI (MTTD/MTTR) |
 | `scanner-anti-injecao-resiliente` | varrer conteúdo de terceiro por prompt-injection antes do contexto | Detecta instruções desenhadas p/ sobreviver à compactação; defende a pipeline de absorção do Caos |
 | `seguranca-de-api` | avaliar/endurecer API (REST/GraphQL/gateway) | OWASP API Top 10: BOLA/BFLA, authz de endpoint, rate-limit; método, sem payload |

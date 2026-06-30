@@ -1,0 +1,240 @@
+# Contrato de Missão — Ritual de Absorção `msitarzewski/agency-agents`
+# Lavrado por Hermes-Chief (camada 2) na sessão raiz, em plan-mode → pós-aprovação.
+# intencao_original LACRADA (hash SHA-256 do verbatim). Demais camadas preenchem na descida/subida.
+# Schema: ../contrato-de-missao.schema.md
+# Plano de execução: ~/.claude/plans/caos-caos-o-orquestrador-elegant-bumblebee.md
+---
+missao:
+  id: m-20260628-234143-absorve-agency-agents
+
+  # ── CAMADA 1 — HUMANO (lacrada, imutável) ───────────────────────────────────
+  intencao_original:
+    input_cru: |
+      @Caos\  Caos,
+
+      O orquestrador Hermes capturou e preparou o repositório msitarzewski/agency-agents, que se encontra agora em sua área de staging: C:\Kolden\Caos\_staging\agency-agents.
+
+      Este repositório contém um ecossistema de 232 agentes de IA, distribuídos em 16 divisões, com um conceito muito similar ao dos nossos squads.
+
+      Comando o início do seu Ritual de Absorção para este ativo.
+
+      O objetivo é que você avalie o conteúdo e apresente um plano de integração. Este plano deve propor como os agentes podem ser adaptados e incorporados ao ecossistema da Kolden, seja como:
+      1.  Novos squads para cobrir domínios que ainda não temos.
+      2.  Novos especialistas a serem adicionados a squads existentes.
+      3.  Um conjunto de 'skills' (habilidades) a serem extraídas e distribuídas entre os agentes relevantes.
+
+      Apresente seu diagnóstico inicial e o plano de integração para minha aprovação antes de executar qualquer modificação.c:\Kolden\KoldenCaos_stagingagency-agents
+    canal: cli
+    recebida_em: '2026-06-28T23:41:43-03:00'
+    hash: sha256:271c42cebacabc4c7dbb3e3bb60dffe62b583ae13dff404a45d18ebe15118a6d
+
+  # ── CAMADA 2 — HERMES (tradução de intenção) ────────────────────────────────
+  hermes:
+    dor:
+      objetivo_real: >-
+        Absorver os 232 agentes de msitarzewski/agency-agents (16 divisões, MIT, SAFE) em 15 buckets
+        (12 squads Kolden existentes + 3 squads-semente novos para os gaps GIS/spatial/game-dev +
+        1 catch-all `specialized` sub-roteado em F3), elevando benchmark de qualidade da frota
+        e fechando buracos de cobertura — sem perda silenciosa e com aprovação humana por bucket.
+      criterio_de_sucesso: |
+        - F1 canônica: reclone em quarentena com slug `msitarzewski--agency-agents@<sha>`, `.git`
+          removido, `$CAOS_REPO_SLUG` exportado, staging antigo e clone-fantasma higienizados.
+        - F2: veredito SAFE assinado por subagente `auditor-de-seguranca` + Égide; sem REJEITAR.
+        - F3: `inventario-de-capacidades.md` por bucket com IDs `G\d+` em schema máquina-validável;
+          soma dos IDs = 232; sub-buckets de `specialized` declarados antes de F4.
+        - F4: `mapa-de-decisao.md` por bucket; cada REUSE com ID-de-match no `registro-de-entidades`
+          (diff técnica-a-técnica, não carimbo de domínio).
+        - F5: `decisao-f5.md` por bucket; sessão PARA aguardando aprovação Ronan (Art. III).
+        - F6: cascata N0→N6 por squad-alvo; revisor + testador rodaram; `maturity ≥ 7.0` em cada
+          squad tocado e em cada squad-semente novo (B12/B13/B14).
+        - F6.5: `relatorio-de-perda-<bucket>.md` por bucket; `gate-reconciliacao.py` exit 0;
+          `ABSORVIDO + DESCARTADO + PERDIDO == inventário_bucket`; `PERDIDO = 0`; nenhum
+          DESCARTADO sem motivo.
+        - F7: 1 entrada consolidada em `Caos/dados/repositorios-absorvidos.yaml` com
+          `capacidades_absorvidas` e `capacidades_descartadas` por ID; `_origem.md` central por
+          squad-alvo (atribuição MIT); `registros/historico.md` append; `ritual-de-encerramento`
+          rodou por bucket; 3 squads-semente novos catalogados em `AGENTS.md`.
+      restricoes:
+        prazo: sem prazo rígido; serial por bucket; revisar tempo após S2 (calibração Égide).
+        orcamento: 9 sessões dedicadas (S1 global + S2-S6 absorção + S7-S9 squads-semente); zero custo externo.
+        proibicoes:
+          - sem `git add`/`commit`/`push` espontâneo — Ronan pede explicitamente para commitar.
+          - nunca executar código do repo externo (Art. VIII; análise 100% estática).
+          - sem cópia literal — extrair padrão e reescrever em PT-BR (Art. II).
+          - sem credencial em texto puro; toda chave via Infisical (Art. VII).
+          - sem REUSE por carimbo de domínio — só com diff técnica-a-técnica por ID no F4.
+          - sem escrita antes da aprovação humana em F5 (Art. III).
+          - sem F7 antes de F6.5 com `PERDIDO=0` (Art. VIII).
+          - sem busca web sem autorização explícita do Ronan na sessão (regra global).
+      contexto:
+        - 'F0 já feita por leitura nesta sessão: repo NOVO (ausente em `Caos/dados/repositorios-absorvidos.yaml`).'
+        - 'Staging atual `C:\Kolden\Caos\_staging\agency-agents\` veio do Hermes em 2026-06-28
+          com `_procedencia.md` sem SHA; F1 canônica exige reclone para fixar slug.'
+        - 'Clone-fantasma `C:\Kolden\KoldenCaos_stagingagency-agents\` (8.1M, typo de path antigo,
+          mesma estrutura, sem `_procedencia.md`): remover em S1.'
+        - 'Cobertura: 12/16 domínios externos têm squad Kolden natural; 3 gaps reais (GIS 13,
+          spatial 6, game-dev 20); `specialized` é catch-all de 53 agentes (sub-roteamento na F3).'
+        - 'Decisões fixadas pelo Ronan em 2026-06-28 (AskUserQuestion): molde = híbrido por squad;
+          gaps = squads-semente agora; specialized = sub-roteamento na F3; SHA = reclone canônico.'
+        - 'Defaults fixados sem pergunta: `tools.json` (14 formatos + plugin hermes) só anotar
+          em MEMORY do Caos+Dedalo; atribuição MIT central-only (`_origem.md` por squad + header
+          1-linha em skills derivadas).'
+        - 'License: MIT © 2025 AgentLand Contributors — exige atribuição owner/repo@sha.'
+        - 'Skill maestro: `Caos/.claude/skills/ingestao-de-repositorio` (8 fases F0→F7).'
+        - 'Lote anterior (2026-06-26): 31 repos, 91 habilidades novas, modelo de dossiê em
+          `Caos/registros/absorcao/_lote-2026-06-26/`.'
+      nivel_de_risco: amarelo
+    dor_completo: true
+    perguntas_abertas: []
+    matriz_de_risco:
+      reversibilidade: reversivel
+      impacto: alto
+      faixa: amarelo
+      autonomia: trava-e-pergunta
+    ordem_de_maquina: |
+      Executar o Ritual de Absorção do Caos em 9 sessões dedicadas, serialmente:
+
+      S1 (/absorver https://github.com/msitarzewski/agency-agents):
+        - F1: `git clone --depth 1` em `Caos/_staging/quarentena/msitarzewski--agency-agents@<sha-curto>/`;
+          captura SHA via `git rev-parse HEAD`; remove `.git`; grava `_procedencia.md` com SHA;
+          exporta `$CAOS_REPO_SLUG`; apaga `Caos/_staging/agency-agents/` antigo e o clone-fantasma
+          `C:\Kolden\KoldenCaos_stagingagency-agents\`.
+        - F2: delega ao subagente `auditor-de-seguranca` (skill `verificacao-de-seguranca-de-repo`)
+          + squad Égide. Grava `Caos/registros/absorcao/msitarzewski--agency-agents/seguranca.md`.
+          Esperado: SAFE.
+        - F3: inventário 100% com fan-out por bucket (15 subagentes, 1 por bucket). Cada subagente
+          produz `inventario-de-capacidades-<bucket>.md` com IDs `G\d+` em schema máquina-validável.
+          Sub-buckets de `specialized` declarados ao final. Soma = 232.
+        - PARA antes de F4 (decisão arquitetural sobre `specialized` sub-roteado precisa ler todos
+          os inventários).
+
+      S2 — P0 calibração: Égide (B01, 10 ag externos do `security`).
+        F4 → F5 (PARA Ronan) → F6 (cascata N0→N6, maturity ≥7) → F6.5 (gate-reconciliacao.py
+        bucket=egide; PERDIDO=0) → F7 (entrada parcial no ledger).
+
+      S3 — P0: Caliope + Pheme + Peitho (B02, 43 ag, marketing+paid-media). Mesmo ciclo.
+      S4 — P0: Prometeu + Dedalo (B03, 41 ag, engineering+testing). Mesmo ciclo.
+      S5 — P0: Specialized sub-roteado (B15, 53 ag). F4 cherry-pick por ID; cada sub-bucket
+        recebe `decisao-f5` própria; alguns IDs podem virar ROADMAP em vez de ABSORVIDO/DESCARTADO,
+        mas o ROADMAP entra como DESCARTADO com motivo "deferido R3" (não PERDIDO).
+
+      S6 — P1 conjunta: B04 (Aletheia+Prometeu, 5 ag, product), B05 (Harmonia+Aglaia, 9 ag, design),
+        B06 (Emporos+Pluto, 9 ag, sales), B08 (Pactolo, 5 ag, finance), B09 (Cairos, 7 ag, PM),
+        B10 (Hestia, 6 ag, support), B11 (Liceu, 5 ag, academic) = 46 ag total. Aprovação F5
+        pode ser conjunta se Ronan permitir; F6.5 individual por bucket.
+
+      S7 — P2: B12 (NOVO squad GIS, 13 ag). Combina ritual de absorção (F4→F6.5) com Ritual de
+        Criação do Caos (`/caos`, Rodada 0 propõe 3 nomes mitológicos). Estrutura-semente:
+        chief tier 0 + 4 especialistas tier 1 + skills âncora + squad.yaml + MEMORY.
+
+      S8 — P2: B13 (NOVO squad spatial-computing, 6 ag). Idem S7 com squad-semente compacto
+        (chief + 3 especialistas dado o tamanho).
+
+      S9 — P2: B14 (NOVO squad game-development, 20 ag). Idem S7; pode justificar squad maior
+        (chief + 5 especialistas: game-design, engine, network, monetização, telemetria).
+
+      Fechamento global: relatório consolidado em
+      `Caos/registros/absorcao/msitarzewski--agency-agents/RELATORIO-DA-ABSORCAO.md`;
+      ledger consolidado com IDs absorvidos/descartados; AGENTS.md atualizado com 3 squads novos.
+    assinatura:
+      por: hermes-chief
+      em: '2026-06-28T23:41:43-03:00'
+
+  # ── CAMADA 3 — ZEUS (decomposição + roteamento) ─────────────────────────────
+  zeus:
+    diagnostico: ''
+    decomposicao:
+      - parte: ''
+        executivo_destino: ''
+        motivo: ''
+    paralelo: []
+    consolidacao: ''
+    arbitragem: null
+    assinatura:
+      por: zeus
+      em: ''
+
+  # ── CAMADA 4 — EXECUTIVOS (especificação técnica) ───────────────────────────
+  executivos:
+    - agente: ''
+      especificacao_tecnica: ''
+      handoff_operacional:
+        squad: ''
+        artefato: ''
+      devolucao_lateral: null
+      resultado: ''
+      assinatura:
+        por: ''
+        em: ''
+
+  # ── CAMADA 5 — OPERACIONAL (execução + proatividade) ────────────────────────
+  operacional:
+    - agente: ''
+      squad: ''
+      resultado: ''
+      riscos_levantados: []
+      propostas: []
+      assinatura:
+        por: ''
+        em: ''
+
+  # ── SUBIDA — DIKE (verificação) ─────────────────────────────────────────────
+  dike:
+    confere_hash: false
+    reconciliacao: ''
+    degrau_da_quebra: null
+    justificativa: ''
+    veredito: ''
+    assinatura:
+      por: dike
+      em: ''
+
+  # ── TRANSVERSAL ─────────────────────────────────────────────────────────────
+  orcamento:
+    teto_rodadas: 9
+    teto_tempo: ''
+    rodadas_gastas: 0
+
+  log_de_decisao:
+    - em: '2026-06-28T23:41:43-03:00'
+      por: hermes-chief
+      decisao: 'Fan-out por bucket = squad-alvo Kolden, não por divisão upstream.'
+      porque: 'F5 (`auditoria-de-squad`) e aprovação Ronan acontecem por squad-alvo; benchmark
+        da máquina de diff é o sub-conjunto upstream recortado para cada squad-alvo. Bucket por
+        divisão externa quebraria a unidade de aprovação.'
+    - em: '2026-06-28T23:41:43-03:00'
+      por: hermes-chief
+      decisao: 'F1 retroativa via reclone canônico (não API web nem gh-repo-view).'
+      porque: 'Art. VIII exige `_procedencia.md` com SHA fixado em F1; o staging atual veio sem
+        SHA. Reclone alinha com `bloqueio-de-quarentena.sh` e elimina dependência de autorização
+        de busca web. Custo é trivial (8.1M).'
+    - em: '2026-06-28T23:41:43-03:00'
+      por: ronan
+      decisao: 'Molde = híbrido por squad (não benchmark fixo, não só capacidades).'
+      porque: 'Decisão Ronan via AskUserQuestion. Cada squad-alvo decide na F5 se replica o molde
+        denso upstream ou só extrai capacidades enxutas no padrão Kolden — preserva flexibilidade
+        sem comprometer Art. II (PT-BR estrito em tudo que vira skill).'
+    - em: '2026-06-28T23:41:43-03:00'
+      por: ronan
+      decisao: 'Gaps GIS/spatial/game-dev = squads-semente novos AGORA (não roadmap).'
+      porque: 'Decisão Ronan via AskUserQuestion. Lavrar 3 Rituais de Criação do Caos em S7-S9,
+        cada gap vira squad-semente compacto. Aceita estender escopo da absorção para fechar
+        cobertura nesta sessão de absorção.'
+    - em: '2026-06-28T23:41:43-03:00'
+      por: ronan
+      decisao: '`Specialized` (53 ag) = sub-roteamento na F3 (não bloco único, não cherry-pick).'
+      porque: 'Decisão Ronan via AskUserQuestion. F3 quebra o saco em sub-buckets temáticos
+        (jurídico, healthcare, HR, finanças bespoke, hospitality, real-estate, agentic-identity...),
+        cada um roteia para squad existente ou DESCARTADO com motivo. Anti-perda preservada.'
+    - em: '2026-06-28T23:41:43-03:00'
+      por: hermes-chief
+      decisao: 'Autonomia = trava-e-pergunta (faixa amarela, não vermelha do lote anterior).'
+      porque: 'Diferente do lote 2026-06-26 (Ronan off 24h, executa-e-avisa explicitamente
+        delegado), aqui Ronan está presente e pediu "aprovação antes de qualquer modificação"
+        no input cru. F5 BLOCK por bucket (Art. III) prevalece.'
+    - em: '2026-06-28T23:41:43-03:00'
+      por: hermes-chief
+      decisao: 'Defaults `tools.json` → MEMORY e atribuição MIT → central-only fixados sem
+        perguntar.'
+      porque: 'São decisões operacionais de baixo impacto (não mudam estrutura do plano nem
+        violam constituição); economizam ciclo de pergunta sem perda de qualidade.'

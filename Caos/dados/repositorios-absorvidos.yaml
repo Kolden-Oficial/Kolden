@@ -291,6 +291,98 @@ repositorios:
     licenca: "Proprietária (Anthropic Commercial ToS)"
     status: analisado
 
+  # ========================================================================
+  # github.com/msitarzewski/agency-agents (absorção em andamento — B01 aplicado)
+  # ========================================================================
+  # 232 agentes em 16 divisões, MIT, AgentLand Contributors © 2025.
+  # F5 aprovado pelo Ronan em 2026-06-29: 15 buckets, 623 IDs G\d+.
+  # Reconciliação F5: 66 REUSE + 174 ADAPT + 293 CREATE + 60 DESCARTADO + 30 ROADMAP = 623, PERDIDO=0.
+  # 3 squads novos planejados: Atlas (GIS), Hyperion (Spatial XR), Pã (Game-Dev).
+  # Dossiê completo: Caos/registros/absorcao/msitarzewski--agency-agents/.
+  # Contrato: Olimpo/contratos/missoes/m-20260628-234143-absorve-agency-agents.yaml.
+  github.com/msitarzewski/agency-agents:
+    url: "https://github.com/msitarzewski/agency-agents"
+    shas:
+      - sha: "a597cb6d9e41b3c117ca791538764c8ccbe52119"
+        absorvidoEm: "2026-06-29"
+        seguranca: SAFE
+        decisao: "MISTA (REUSE+ADAPT+CREATE+DESCARTADO+ROADMAP — em andamento por bucket)"
+        squadAlvo: "B01=egide (APLICADO); B02=caliope+pheme+peitho; B03=prometeu+dedalo (+dispersos); B04=aletheia+prometeu; B05=harmonia+aglaia; B06=emporos+pluto; B08=pactolo; B09=cairos; B10=DISPERSAR (metis+olimpo+pactolo+themis); B11=liceu; B12=NOVO atlas; B13=NOVO hyperion; B14=NOVO pã; B15=DISPERSAR specialized sub-roteado"
+        capacidades_absorvidas:
+          # B01 Égide (security/, 35 IDs G1-G35) — APLICADO 2026-06-29
+          # 24 REUSE: G2,G3,G4,G5,G6,G8,G9,G10,G12,G14,G19,G20,G21,G22,G23,G26,G27,G28,G29,G30,G31,G32,G33,G34
+          # 11 ADAPT: G1,G7 (modelagem-de-ameacas-stride-pasta NOVA), G13 (governanca-multi-conta-de-nuvem NOVA), G25 (deteccao-de-pivot-e-tunneling NOVA — defensiva), G11 (auditoria-de-smart-contracts +RBAC), G15 (devsecops-sast-dast-em-ci +OIDC), G16+G17+G18 (grc-e-conformidade +SOC2/HIPAA/PCI), G24 (gestao-de-identidade-e-acesso-iam +AD detection defensivo), G35 (inteligencia-de-ameacas-cti +STIX 2.1)
+          - "B01: [G1,G2,G3,G4,G5,G6,G7,G8,G9,G10,G11,G12,G13,G14,G15,G16,G17,G18,G19,G20,G21,G22,G23,G24,G25,G26,G27,G28,G29,G30,G31,G32,G33,G34,G35]"
+          # B04 Product (Aletheia+Prometeu, 23 IDs G1-G23) — APLICADO 2026-06-29
+          # Aletheia: G1+G2 (cadencias), G5+G6 (sintese-feedback), G8 (RICE), G9 (jornada), G19+G20+G21 (tendencia), G22 (sizing-com-ressalva), G23 (mapa-competitivo) = 7 skills novas
+          # Prometeu skills: G3 (micro-sprints), G11 (PRFAQ), G15 (MoSCoW+Kano+MCDA), G16 (matriz-valor-esforco), G18 (matriz-risco) = 5 skills novas
+          # Prometeu REUSE em MEMORY.md: G10+G13 (pm), G14 (po), G14+G17 (sm) = 3 anexos
+          # Pendência: G12 (cohort/A-B testing) → estrategias-de-deploy-zero-downtime quando criada em F6 do B03
+          - "B04: [G1,G2,G3,G5,G6,G8,G9,G10,G11,G12,G13,G14,G15,G16,G17,G18,G19,G20,G21,G22,G23]"
+          # B08 Finance (Pactolo+Plutos, 29 IDs G1-G29) — APLICADO 2026-06-29
+          # Pactolo: 5 REUSE (G6,G8,G12,G13,G15) + 4 ADAPT (G1,G2,G9,G14) + 4 CREATE (G3,G7,G16,G17) = 13 absorvidos
+          # Plutos ROADMAP: G11 (M&A) + G21 (DD) — anotados em Olimpo/MEMORY.md, gatilho = 1ª aquisição
+          - "B08: [G1,G2,G3,G6,G7,G8,G9,G11,G12,G13,G14,G15,G16,G17,G21]"
+          # B09 Project-Management (Cairos + dispersão Prometeu/Metis/Olimpo, 21 IDs G1-G21) — APLICADO 2026-06-29
+          # Cairos: G3,G4,G5,G12,G13,G14,G15,G18 (parcial) — 7 IDs (2 skills novas + 3 ADAPTs)
+          # Prometeu: G2,G7,G10,G11,G19,G20,G21 — 7 IDs (1 skill nova jira-git-traceability + 3 anexos MEMORY pm/po/sm)
+          # Metis: G1,G8,G9,G16 — 4 IDs (2 skills novas: desenho-de-experimento-estatistico + metricas-operacionais-continuas)
+          # Olimpo: G6,G17,G18 (board) — 3 IDs (2 skills novas: portfolio-estrategico + comunicacao-executiva)
+          - "B09: [G1,G2,G3,G4,G5,G6,G7,G8,G9,G10,G11,G12,G13,G14,G15,G16,G17,G18,G19,G20,G21]"
+          # B11 Academic (Liceu 100%, 18 IDs G1-G18) — APLICADO 2026-06-29
+          # 5 dossiês de disciplina + 9 frameworks + 2 ADAPTs (G8 4-graus + G10 anti-eurocentrismo no checklist) + 2 anexos embebidos (G6 no worldbuilding + G17 no perfil-multi-lente)
+          # Schema-variante NOVO `_modelo-dossie-disciplina.md` (campo `tipo: disciplina` distinto de `tipo: mente-individual`)
+          # Campbell+Snyder por referência ao Orfeu (não recriados — Veto 4 preservado)
+          - "B11: [G1,G2,G3,G4,G5,G6,G7,G8,G9,G10,G11,G12,G13,G14,G15,G16,G17,G18]"
+          # B05 Design (Harmonia + Aglaia, 27 IDs G1-G27) — APLICADO 2026-06-29
+          # Harmonia: G10-G12 (walkthrough-de-persona NOVA), G14+G17 (sistema-de-design ESTENDIDA), G19-G21 (pesquisa-qualitativa NOVA), G13/G15/G16/G18 REUSE puros
+          # Aglaia: 9 skills NOVAS (1ª camada .claude/skills/ criada do zero) — G1, G2, G3, G4+G5+G6, G7+G8+G9, G22+G23, G25, G26, G27
+          # G24 DESCARTADO (cross-platform content adaptation = jurisdição Pheme)
+          - "B05: [G1,G2,G3,G4,G5,G6,G7,G8,G9,G10,G11,G12,G13,G14,G15,G16,G17,G18,G19,G20,G21,G22,G23,G25,G26,G27]"
+          # B02-B15 (exceto B04, B05, B08, B09, B11) pendentes de F6+F6.5+F7
+        capacidades_descartadas:
+          # B04: G4 (gamification — capacidade de produto-cliente, fora de jurisdição); G7 (NPS/churn — Metis quando evoluir para instrumentação)
+          - "B04: [G4, G7]"
+          # B08: 14 IDs DESCARTADO por jurisdição/escopo: G4-G5 (US GAAP/SOX), G10 (LBO), G18-G20+G22-G23 (investment research/risk metrics), G24-G29 (tributário US e multi-jurisdição internacional). Justificativas em relatorio-de-perda-b08-finance.md.
+          - "B08: [G4, G5, G10, G18, G19, G20, G22, G23, G24, G25, G26, G27, G28, G29]"
+          # B05: G24 (cross-platform content adaptation = jurisdição Pheme — já coberto por matriz-de-conteudo + skills de plataforma)
+          - "B05: [G24]"
+        entidades: ["egide", "aletheia", "prometeu", "pactolo", "olimpo", "cairos", "metis", "liceu", "harmonia", "aglaia"]
+        notas: |
+          B01 (Égide) APLICADO em 2026-06-29: 3 skills NOVAS + 5 ESTENDIDAS. Veto ofensivo preservado em G24/G25. Catálogo 29→32 skills.
+          F6.5: 24 REUSE + 11 ADAPT + 0 DESCARTADO + 0 PERDIDO = 35 ✓. Relatório: relatorio-de-perda-egide.md.
+
+          B04 (Aletheia+Prometeu, product) APLICADO em 2026-06-29: 12 skills NOVAS (7 Aletheia + 5 Prometeu) + 3 anexos MEMORY (pm/po/sm).
+          Aletheia catálogo reorganizado em 4 estágios (Descoberta/Validação/Mercado-Demanda/Cross-cutting): 3→10 skills.
+          Prometeu catálogo: 17→22 skills. Veto Savoia preservado em sizing-tam-sam-som-com-ressalva (handoff-only).
+          NPS/churn (G7) deferido para roadmap Metis (anotado em Aletheia/MEMORY.md). Gamification (G4) descartado.
+          Pendência B03: G12 (cohort/A-B) anexa quando Prometeu/estrategias-de-deploy-zero-downtime for criada.
+          F6.5: 21 ABSORVIDO + 2 DESCARTADO + 0 PERDIDO = 23 ✓. Relatório: relatorio-de-perda-b04-product.md.
+          Anti-conflito L1-L4 AIOX respeitado: zero escrita em .aiox-core/core, .aiox-core/development/tasks, etc.
+
+          B08 (Pactolo, finance) APLICADO em 2026-06-29: 2 skills NOVAS (valuation-por-dcf, planejamento-de-headcount) + 3 ADAPTs (fechamento-contabil +Controllership+Reconciliação, analise-fpa-e-variancia +AOP, gestao-de-fluxo-de-caixa +CCC) + 3 artefatos (close-mensal.md, monthly-business-review.md, template-mbr.md). Catálogo Pactolo: 5→7 skills + 3 artefatos.
+          2 ROADMAP no Plutos: G11 M&A + G21 DD (anotados em Olimpo/MEMORY.md, gatilho=1ª aquisição). 14 DESCARTADO por jurisdição (US GAAP/SOX/LBO/investment research/tributário US).
+          F6.5: 13 ABSORVIDO + 2 ROADMAP + 14 DESCARTADO + 0 PERDIDO = 29 ✓. Relatório: relatorio-de-perda-b08-finance.md.
+
+          B09 (Cairos + dispersão Prometeu/Metis/Olimpo, project-management) APLICADO em 2026-06-29: 7 skills NOVAS distribuídas (2 Cairos + 1 Prometeu + 2 Metis + 2 Olimpo) + 3 ADAPTs em agentes Cairos (chief +Passo 0; gestor-stakeholders +escalação+templates; gerente-projeto +matriz mudança) + 3 anexos MEMORY AIOX (pm G7+G21, po G19, sm G20).
+          G18 absorvido dual (Cairos operacional + Olimpo board) sem duplicação semântica.
+          Catálogos: Cairos 5→7 skills; Metis 1→3 skills; Olimpo 3→5 skills.
+          L1-L4 AIOX preservado: apenas L3 tocado.
+          F6.5: 21 ABSORVIDO + 0 DESCARTADO + 0 PERDIDO = 21 ✓. Relatório: relatorio-de-perda-b09-pm.md.
+
+          B11 (Liceu, academic) APLICADO em 2026-06-29: 5 dossiês de disciplina NOVOS (schema-variante `_modelo-dossie-disciplina.md` criado) + 9 frameworks operacionais + 2 ADAPTs no checklist output-quality.md (G8 4-graus + G10 anti-eurocentrismo norma transversal) + 2 anexos embebidos (G6 + G17).
+          Liceu ganha TIPO NOVO "disciplina" no acervo (coexiste com mente-individual). Campbell+Snyder indexados por referência ao Orfeu (Veto 4 preservado). Fronteira psicologia clínica × psicanalise-do-desejo documentada (coexistem).
+          ~30 sub-mentes-âncora pendentes (`status: pendente-dissecacao` no índice) — roadmap explícito.
+          F6.5: 18 ABSORVIDO + 0 DESCARTADO + 0 PERDIDO = 18 ✓. Relatório: relatorio-de-perda-b11-academic.md.
+
+          B05 (Harmonia + Aglaia, design) APLICADO em 2026-06-29: Harmonia 2 skills NOVAS (walkthrough-de-persona, pesquisa-qualitativa-de-usuario) + 1 ESTENDIDA (sistema-de-design +responsividade canônica +hierarquia visual). Aglaia ganha 1ª camada `.claude/skills/` do zero com 9 skills NOVAS (pipeline-de-identidade-de-marca + protecao-de-marca + paineis-de-equidade + engenharia-de-prompt-de-imagem + visuais-inclusivos-anti-vies + narrativa-visual-de-marca + micro-interacoes-de-marca + microcopy-de-interface + gamificacao-como-sistema-de-marca). G24 DESCARTADO (cross-platform → Pheme jurisdição).
+          Fronteiras inter-squad declaradas explicitamente: walkthrough-de-persona vs Caliope/robert-cialdini (audita vs escreve), pesquisa-qualitativa vs Aletheia (UX em produto vs Mom Test pré-produto), micro-interacoes (decide) vs Harmonia/implementacao-ui (executa).
+          F6.5: 26 ABSORVIDO + 1 DESCARTADO + 0 PERDIDO = 27 ✓. Relatório: relatorio-de-perda-b05-design.md.
+
+          B02-B03, B06, B10, B12-B15 com decisão F5 aprovada (decisao-f5-CONSOLIDADO.md), pendente F6 em sessões dedicadas.
+    licenca: "MIT"
+    status: parcial
+
   # Cada nova absorção (/absorver) preenche este bloco via Fase 7.
   # Exemplo (apague quando o primeiro repo real for absorvido):
   #

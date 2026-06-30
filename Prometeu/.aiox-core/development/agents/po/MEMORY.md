@@ -28,6 +28,13 @@
 
 ### Delegação
 - Criação de story → @sm (`*draft`)
+
+### Princípios absorvidos do upstream (B04 — msitarzewski/agency-agents@a597cb6)
+
+**G14 — Data-driven prioritization at scale: usar histórico de velocity e capacity ao priorizar backlog** (REUSE puro, MIT). | 2026-06-29
+- Priorização sem histórico de velocity vira chute. Cada decisão de priorização consulta as últimas N sprints (rolling average) para ancorar capacidade real.
+- Ao escolher próxima story (`*validate-story-draft`), confronta o tamanho estimado com a velocity histórica do time — não promete o que historicamente não foi entregue.
+- Skill complementar: `Prometeu/.claude/skills/moscow-kano-mcda` (decisão F5/B04) — MoSCoW classifica + Kano refina + MCDA desempata.
 - Criação de epic → @pm (`*create-epic`)
 - Correção de curso → @aiox-master
 
@@ -35,6 +42,13 @@
 - Stories: `docs/stories/`
 - Backlog: `docs/stories/backlog/`
 - Templates: `.aiox-core/development/templates/story-tmpl.yaml`
+
+### Disciplina spec-to-tasks absorvida do upstream (B09 — msitarzewski/agency-agents@a597cb6)
+
+**G19 — Critério de aceitação testável por task** (REUSE puro, MIT). | 2026-06-29
+- Cada task tem "como verificar pronto" em termo binário (sim/não), não "ficou bom".
+- Se você não consegue escrever a verificação binária, a task está mal-decomposta.
+- Aplica no `*validate-story-draft` — critério 3 (AC testável Given/When/Then) e critério 9 (Critérios de Done).
 
 ## Candidatos a Promoção
 <!-- Padrões vistos em 3+ agentes — candidatos a CLAUDE.md ou .claude/rules/ -->
