@@ -39,7 +39,7 @@ Na **subida**, a **`Dike/`** (verificador) reconcilia a entrega contra o lacre e
 - `areas/` — organização por departamento (visão lógica): cada área tem carta, funções, **elenco** (agentes/pessoas) e KPIs. Agentes não são movidos — ver `areas/leia-me.md`.
 - `mercado-e-posicionamento/` — ICP e personas, ofertas, posicionamento, concorrência
 - `marca/` — voz e tom, mensagens-chave, identidade visual
-- `operacao/` — processos/SOPs, métricas e OKRs
+- `operacao/` — processos/SOPs, métricas e OKRs, e a **Central de Tarefas** (`operacao/tarefas/`): radar YAML único de tarefas multi-cliente com classificação por **5 buckets de capacidade Kolden** (`agente-faz-sozinho` / `agente-faz-com-input` / `agente-instrumenta-humano-decide` / `humano-puro` / `bloqueado-por-capacidade-faltante`). SSoT é `tarefas/radar.yaml`; arquivo append-only em `tarefas/arquivo.yaml`; playbooks em `tarefas/playbooks/`. Comando `/tarefa` (a criar via Caos) é o único writer. Detalhes: `operacao/tarefas/README.md`.
 - `glossario.md` · `faq.md`
 
 ### 📁 Projetos/ — produtos e iniciativas
