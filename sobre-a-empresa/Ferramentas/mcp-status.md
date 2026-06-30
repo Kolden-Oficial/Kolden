@@ -112,6 +112,16 @@ Descoberto na validação: os secrets vivem no **path raiz** de cada ambiente (`
 
 Enquanto não se decide, todos os comandos usam `--projectId`+`--env` (forma que funciona).
 
+## SDKs Python não-MCP (consumidos sob demanda via `uv tool`)
+
+Vendors registrados como **SDK Python**, não como servidor MCP. Não aparecem em `claude mcp list`. Chamados via script local quando necessário.
+
+| Vendor | Pacote | Auth | Status |
+|---|---|---|---|
+| **NotebookLM** (extração de conhecimento) | `notebooklm-py[cookies,browser]` (uv tool) | cookie de sessão em `/kolden/prod/NOTEBOOKLM_STORAGE_STATE` | ✔ instalado 2026-06-30; ~1.030 fontes extraídas dos 32 notebooks aproveitáveis. Manual: `NotebookLM/ferramentas.md` |
+
+Por que não MCP: extração é batch único de ~1h, não uso contínuo. Se o Hermes Chief precisar consultar NotebookLM dinamicamente um dia, avaliar `notebooklm-mcp-cli` (jacob-bd).
+
 ## Resumo
 
 - **16 MCPs conectados** sem login (12 via Infisical + Apollo + Canva + google-drive OAuth local + google-analytics ADC), em **user scope**.

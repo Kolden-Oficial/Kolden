@@ -1,0 +1,700 @@
+---
+id_fonte: "b0310d6e-784c-4d1b-b5a9-717b51cc0b43"
+notebook_id: "0188843a-41c6-4b0a-ba99-1ba5a01ee382"
+notebook_titulo: "Aiox-Kolden"
+titulo: "Create Chat Completion - DeepSeek API Docs"
+tipo: "unknown"
+url_original: "https://api-docs.deepseek.com/api/create-chat-completion"
+keywords: "('Chat Completion API', 'API Parameters', 'Model Reasoning', 'Tool Calls', 'Token Usage Statistics')"
+summary: "The provided documentation outlines the technical specifications for the **Create Chat Completion** endpoint within the DeepSeek API, which enables developers to generate AI responses from a provided conversation history. By sending a **request body** containing a list of messages and choosing between models like **deepseek-chat** or **deepseek-reasoner**, users can fine-tune outputs using parameters such as **temperature**, **max_tokens**, and **thinking mode**. The text detailly describes how the API returns structured data, including **usage statistics** for token consumption and **finish reasons** that explain why a generation concluded. Additionally, the guide highlights advanced capabilities such as **tool calls** for function execution, **JSON output** formatting, and **streaming** for real-time delivery of partial message deltas."
+extraido_em: "2026-06-30T16:19:18Z"
+extraido_por: "notebooklm-py-0.7.3"
+---
+
+# Create Chat Completion - DeepSeek API Docs
+
+Create Chat Completion | DeepSeek API Docs
+Skip to main content
+DeepSeek API Docs
+English
+\* English
+\* 中文（中国）
+DeepSeek Platform
+DeepSeek API Docs
+\* Languages
+\* DeepSeek Platform
+← Back to main menu
+\* Quick Start
+\* Your First API Call
+\* Models & Pricing
+\* The Temperature Parameter
+\* Token & Token Usage
+\* Rate Limit
+\* Error Codes
+\* News
+\* DeepSeek-V3.2 Release 2025/12/01
+\* DeepSeek-V3.2-Exp Release 2025/09/29
+\* DeepSeek V3.1 Update 2025/09/22
+\* DeepSeek V3.1 Release 2025/08/21
+\* DeepSeek-R1-0528 Release 2025/05/28
+\* DeepSeek-V3-0324 Release 2025/03/25
+\* DeepSeek-R1 Release 2025/01/20
+\* DeepSeek APP 2025/01/15
+\* Introducing DeepSeek-V3 2024/12/26
+\* DeepSeek-V2.5-1210 Release 2024/12/10
+\* DeepSeek-R1-Lite Release 2024/11/20
+\* DeepSeek-V2.5 Release 2024/09/05
+\* Context Caching is Available 2024/08/02
+\* New API Features 2024/07/25
+\* API Reference
+\* Introduction
+\* Chat
+\* Create Chat Completion
+\* Completions
+\* Models
+\* Others
+\* API Guides
+\* Thinking Mode
+\* Multi-round Conversation
+\* Chat Prefix Completion (Beta)
+\* FIM Completion (Beta)
+\* JSON Output
+\* Tool Calls
+\* Context Caching
+\* Anthropic API
+\* Other Resources
+\* Integrations
+\* API Status Page
+\* FAQ
+\* Change Log
+\* API Reference
+\* Chat
+\* Create Chat Completion
+
+### Create Chat Completion
+
+```
+POST 
+https://api.deepseek.com/chat/completions
+```
+
+Creates a model response for the given chat conversation.
+
+#### Request
+
+```
+*  application/json
+```
+
+##### Body
+
+**required**
+**messages**
+object[]
+required
+**Possible values:** >= 1
+A list of messages comprising the conversation so far.
+\* Array [
+oneOf
+\* System message
+\* User message
+\* Assistant message
+\* Tool message
+**content** string required
+The contents of the system message.
+**role** string required
+**Possible values:** [ system ]
+The role of the messages author, in this case system .
+**name** string
+An optional name for the participant. Provides the model information to differentiate between participants of the same role.
+**content** Text content (string) required
+The contents of the user message.
+**role** string required
+**Possible values:** [ user ]
+The role of the messages author, in this case user .
+**name** string
+An optional name for the participant. Provides the model information to differentiate between participants of the same role.
+**content** string nullable required
+The contents of the assistant message.
+**role** string required
+**Possible values:** [ assistant ]
+The role of the messages author, in this case assistant .
+**name** string
+An optional name for the participant. Provides the model information to differentiate between participants of the same role.
+**prefix** bool
+(Beta) Set this to true to force the model to start its answer by the content of the supplied prefix in this assistant message. You must set base\_url="https://api.deepseek.com/beta" to use this feature.
+**reasoning\_content** string nullable
+(Beta) Used for the deepseek-reasoner model in the Chat Prefix Completion feature as the input for the CoT in the last assistant message. When using this feature, the prefix parameter must be set to true .
+**role** string required
+**Possible values:** [ tool ]
+The role of the messages author, in this case tool .
+**content** Text content (string) required
+The contents of the tool message.
+**tool\_call\_id** string required
+Tool call that this message is responding to.
+\* ]
+**model** string required
+**Possible values:** [ deepseek-chat , deepseek-reasoner ]
+ID of the model to use. You can use deepseek-chat.
+**thinking**
+object
+nullable
+Controls the switch between thinking and non-thinking mode.
+**type** string
+**Possible values:** [ enabled , disabled ]
+If set to enabled , then use thinking mode. If set to disabled , then use non-thinking model.
+**frequency\_penalty** number nullable
+**Possible values:** >= -2 and <= 2
+**Default value:** 0
+Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim.
+**max\_tokens** integer nullable
+The maximum number of tokens that can be generated in the chat completion.
+The total length of input tokens and generated tokens is limited by the model's context length.
+For the value range and default value, please refer to the documentation.
+**presence\_penalty** number nullable
+**Possible values:** >= -2 and <= 2
+**Default value:** 0
+Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics.
+**response\_format**
+object
+nullable
+An object specifying the format that the model must output. Setting to { "type": "json\_object" } enables JSON Output, which guarantees the message the model generates is valid JSON.
+**Important:** When using JSON Output, you must also instruct the model to produce JSON yourself via a system or user message. Without this, the model may generate an unending stream of whitespace until the generation reaches the token limit, resulting in a long-running and seemingly "stuck" request. Also note that the message content may be partially cut off if finish\_reason="length", which indicates the generation exceeded max\_tokens or the conversation exceeded the max context length.
+**type** string
+**Possible values:** [ text , json\_object ]
+**Default value:** text
+Must be one of text or json\_object .
+**stop**
+object
+**nullable**
+Up to 16 sequences where the API will stop generating further tokens.
+oneOf
+\* MOD1
+\* MOD2
+string
+\* Array [
+string
+\* ]
+**stream** boolean nullable
+If set, partial message deltas will be sent. Tokens will be sent as data-only server-sent events (SSE) as they become available, with the stream terminated by a data: [DONE] message.
+**stream\_options**
+object
+nullable
+Options for streaming response. Only set this when you set stream: true .
+**include\_usage** boolean
+If set, an additional chunk will be streamed before the data: [DONE] message. The usage field on this chunk shows the token usage statistics for the entire request, and the choices field will always be an empty array. All other chunks will also include a usage field, but with a null value.
+**temperature** number nullable
+**Possible values:** <= 2
+**Default value:** 1
+What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.
+We generally recommend altering this or top\_p but not both.
+**top\_p** number nullable
+**Possible values:** <= 1
+**Default value:** 1
+An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top\_p probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered.
+We generally recommend altering this or temperature but not both.
+**tools**
+object[]
+nullable
+A list of tools the model may call. Currently, only functions are supported as a tool. Use this to provide a list of functions the model may generate JSON inputs for. A max of 128 functions are supported.
+\* Array [
+**type** string required
+**Possible values:** [ function ]
+The type of the tool. Currently, only function is supported.
+**function**
+object
+required
+**description** string
+A description of what the function does, used by the model to choose when and how to call the function.
+**name** string required
+The name of the function to be called. Must be a-z, A-Z, 0-9, or contain underscores and dashes, with a maximum length of 64.
+**parameters**
+object
+The parameters the functions accepts, described as a JSON Schema object. See the Tool Calls Guide for examples, and the JSON Schema reference for documentation about the format.
+Omitting parameters defines a function with an empty parameter list.
+**property name** \* any
+The parameters the functions accepts, described as a JSON Schema object. See the Tool Calls Guide for examples, and the JSON Schema reference for documentation about the format.
+Omitting parameters defines a function with an empty parameter list.
+**strict** boolean
+**Default value:** false
+If set to true, the API will use strict-mode for the tool calls to ensure the output always complies with the function's JSON schema. This is a Beta feature, for more details please refer to Tool Calls Guide
+\* ]
+**tool\_choice**
+object
+**nullable**
+Controls which (if any) tool is called by the model. none means the model will not call any tool and instead generates a message. auto means the model can pick between generating a message or calling one or more tools. required means the model must call one or more tools.
+Specifying a particular tool via {"type": "function", "function": {"name": "my\_function"}} forces the model to call that tool. none is the default when no tools are present. auto is the default if tools are present.
+oneOf
+\* ChatCompletionToolChoice
+\* ChatCompletionNamedToolChoice
+string
+**Possible values:** [ none , auto , required ]
+**type** string required
+**Possible values:** [ function ]
+The type of the tool. Currently, only function is supported.
+**function**
+object
+required
+**name** string required
+The name of the function to call.
+**logprobs** boolean nullable
+Whether to return log probabilities of the output tokens or not. If true, returns the log probabilities of each output token returned in the content of message .
+**top\_logprobs** integer nullable
+**Possible values:** <= 20
+An integer between 0 and 20 specifying the number of most likely tokens to return at each token position, each with an associated log probability. logprobs must be set to true if this parameter is used.
+
+#### Responses
+
+```
+*  200 (No streaming)
+*  200 (Streaming)
+```
+
+OK, returns a chat completion object
+\* application/json
+\* Schema
+\* Example (from schema)
+\* Example
+**Schema**
+**id** string required
+A unique identifier for the chat completion.
+**choices**
+object[]
+required
+A list of chat completion choices.
+\* Array [
+**finish\_reason** string required
+**Possible values:** [ stop , length , content\_filter , tool\_calls , insufficient\_system\_resource ]
+The reason the model stopped generating tokens. This will be stop if the model hit a natural stop point or a provided stop sequence, length if the maximum number of tokens specified in the request was reached, content\_filter if content was omitted due to a flag from our content filters, tool\_calls if the model called a tool, or insufficient\_system\_resource if the request is interrupted due to insufficient resource of the inference system.
+**index** integer required
+The index of the choice in the list of choices.
+**message**
+object
+required
+A chat completion message generated by the model.
+**content** string nullable required
+The contents of the message.
+**reasoning\_content** string nullable
+For deepseek-reasoner model only. The reasoning contents of the assistant message, before the final answer.
+**tool\_calls**
+object[]
+The tool calls generated by the model.
+\* Array [
+**id** string required
+The ID of the tool call.
+**type** string required
+**Possible values:** [ function ]
+The type of the tool. Currently, only function is supported.
+**function**
+object
+required
+The function that the model called.
+**name** string required
+The name of the function to call.
+**arguments** string required
+The arguments to call the function with, as generated by the model in JSON format. Note that the model does not always generate valid JSON, and may hallucinate parameters not defined by your function schema. Validate the arguments in your code before calling your function.
+\* ]
+**role** string required
+**Possible values:** [ assistant ]
+The role of the author of this message.
+**logprobs**
+object
+nullable
+required
+Log probability information for the choice.
+**content**
+object[]
+nullable
+required
+A list of message content tokens with log probability information.
+\* Array [
+**token** string required
+The token.
+**logprob** number required
+The log probability of this token, if it is within the top 20 most likely tokens. Otherwise, the value -9999.0 is used to signify that the token is very unlikely.
+**bytes** integer[] nullable required
+A list of integers representing the UTF-8 bytes representation of the token. Useful in instances where characters are represented by multiple tokens and their byte representations must be combined to generate the correct text representation. Can be null if there is no bytes representation for the token.
+**top\_logprobs**
+object[]
+required
+List of the most likely tokens and their log probability, at this token position. In rare cases, there may be fewer than the number of requested top\_logprobs returned.
+\* Array [
+**token** string required
+The token.
+**logprob** number required
+The log probability of this token, if it is within the top 20 most likely tokens. Otherwise, the value -9999.0 is used to signify that the token is very unlikely.
+**bytes** integer[] nullable required
+A list of integers representing the UTF-8 bytes representation of the token. Useful in instances where characters are represented by multiple tokens and their byte representations must be combined to generate the correct text representation. Can be null if there is no bytes representation for the token.
+\* ]
+\* ]
+**reasoning\_content**
+object[]
+nullable
+A list of message content tokens with log probability information.
+\* Array [
+**token** string required
+The token.
+**logprob** number required
+The log probability of this token, if it is within the top 20 most likely tokens. Otherwise, the value -9999.0 is used to signify that the token is very unlikely.
+**bytes** integer[] nullable required
+A list of integers representing the UTF-8 bytes representation of the token. Useful in instances where characters are represented by multiple tokens and their byte representations must be combined to generate the correct text representation. Can be null if there is no bytes representation for the token.
+**top\_logprobs**
+object[]
+required
+List of the most likely tokens and their log probability, at this token position. In rare cases, there may be fewer than the number of requested top\_logprobs returned.
+\* Array [
+**token** string required
+The token.
+**logprob** number required
+The log probability of this token, if it is within the top 20 most likely tokens. Otherwise, the value -9999.0 is used to signify that the token is very unlikely.
+**bytes** integer[] nullable required
+A list of integers representing the UTF-8 bytes representation of the token. Useful in instances where characters are represented by multiple tokens and their byte representations must be combined to generate the correct text representation. Can be null if there is no bytes representation for the token.
+\* ]
+\* ]
+\* ]
+**created** integer required
+The Unix timestamp (in seconds) of when the chat completion was created.
+**model** string required
+The model used for the chat completion.
+**system\_fingerprint** string required
+This fingerprint represents the backend configuration that the model runs with.
+**object** string required
+**Possible values:** [ chat.completion ]
+The object type, which is always chat.completion .
+**usage**
+object
+Usage statistics for the completion request.
+**completion\_tokens** integer required
+Number of tokens in the generated completion.
+**prompt\_tokens** integer required
+Number of tokens in the prompt. It equals prompt\_cache\_hit\_tokens + prompt\_cache\_miss\_tokens.
+**prompt\_cache\_hit\_tokens** integer required
+Number of tokens in the prompt that hits the context cache.
+**prompt\_cache\_miss\_tokens** integer required
+Number of tokens in the prompt that misses the context cache.
+**total\_tokens** integer required
+Total number of tokens used in the request (prompt + completion).
+**completion\_tokens\_details**
+object
+Breakdown of tokens used in a completion.
+**reasoning\_tokens** integer
+Tokens generated by the model for reasoning.
+
+```
+{
+  "id": "string",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "string",
+        "reasoning_content": "string",
+        "tool_calls": [
+          {
+            "id": "string",
+            "type": "function",
+            "function": {
+              "name": "string",
+              "arguments": "string"
+            }
+          }
+        ],
+        "role": "assistant"
+      },
+      "logprobs": {
+        "content": [
+          {
+            "token": "string",
+            "logprob": 0,
+            "bytes": [
+              0
+            ],
+            "top_logprobs": [
+              {
+                "token": "string",
+                "logprob": 0,
+                "bytes": [
+                  0
+                ]
+              }
+            ]
+          }
+        ],
+        "reasoning_content": [
+          {
+            "token": "string",
+            "logprob": 0,
+            "bytes": [
+              0
+            ],
+            "top_logprobs": [
+              {
+                "token": "string",
+                "logprob": 0,
+                "bytes": [
+                  0
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "created": 0,
+  "model": "string",
+  "system_fingerprint": "string",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 0,
+    "prompt_tokens": 0,
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 0,
+    "total_tokens": 0,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}
+```
+
+```
+{
+  "id": "930c60df-bf64-41c9-a88e-3ec75f81e00e",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Hello! How can I help you today?",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1705651092,
+  "model": "deepseek-chat",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 10,
+    "prompt_tokens": 16,
+    "total_tokens": 26
+  }
+}
+```
+
+OK, returns a streamed sequence of chat completion chunk objects
+\* text/event-stream
+\* Schema
+\* Example
+**Schema**
+\* Array [
+**id** string required
+A unique identifier for the chat completion. Each chunk has the same ID.
+**choices**
+object[]
+required
+A list of chat completion choices.
+\* Array [
+**delta**
+object
+required
+A chat completion delta generated by streamed model responses.
+**content** string nullable
+The contents of the chunk message.
+**reasoning\_content** string nullable
+For deepseek-reasoner model only. The reasoning contents of the assistant message, before the final answer.
+**role** string
+**Possible values:** [ assistant ]
+The role of the author of this message.
+**logprobs**
+object
+nullable
+Log probability information for the choice.
+**content**
+object[]
+nullable
+required
+A list of message content tokens with log probability information.
+\* Array [
+**token** string required
+The token.
+**logprob** number required
+The log probability of this token, if it is within the top 20 most likely tokens. Otherwise, the value -9999.0 is used to signify that the token is very unlikely.
+**bytes** integer[] nullable required
+A list of integers representing the UTF-8 bytes representation of the token. Useful in instances where characters are represented by multiple tokens and their byte representations must be combined to generate the correct text representation. Can be null if there is no bytes representation for the token.
+**top\_logprobs**
+object[]
+required
+List of the most likely tokens and their log probability, at this token position. In rare cases, there may be fewer than the number of requested top\_logprobs returned.
+\* Array [
+**token** string required
+The token.
+**logprob** number required
+The log probability of this token, if it is within the top 20 most likely tokens. Otherwise, the value -9999.0 is used to signify that the token is very unlikely.
+**bytes** integer[] nullable required
+A list of integers representing the UTF-8 bytes representation of the token. Useful in instances where characters are represented by multiple tokens and their byte representations must be combined to generate the correct text representation. Can be null if there is no bytes representation for the token.
+\* ]
+\* ]
+**reasoning\_content**
+object[]
+nullable
+A list of message content tokens with log probability information.
+\* Array [
+**token** string required
+The token.
+**logprob** number required
+The log probability of this token, if it is within the top 20 most likely tokens. Otherwise, the value -9999.0 is used to signify that the token is very unlikely.
+**bytes** integer[] nullable required
+A list of integers representing the UTF-8 bytes representation of the token. Useful in instances where characters are represented by multiple tokens and their byte representations must be combined to generate the correct text representation. Can be null if there is no bytes representation for the token.
+**top\_logprobs**
+object[]
+required
+List of the most likely tokens and their log probability, at this token position. In rare cases, there may be fewer than the number of requested top\_logprobs returned.
+\* Array [
+**token** string required
+The token.
+**logprob** number required
+The log probability of this token, if it is within the top 20 most likely tokens. Otherwise, the value -9999.0 is used to signify that the token is very unlikely.
+**bytes** integer[] nullable required
+A list of integers representing the UTF-8 bytes representation of the token. Useful in instances where characters are represented by multiple tokens and their byte representations must be combined to generate the correct text representation. Can be null if there is no bytes representation for the token.
+\* ]
+\* ]
+**finish\_reason** string nullable required
+**Possible values:** [ stop , length , content\_filter , tool\_calls , insufficient\_system\_resource ]
+The reason the model stopped generating tokens. This will be stop if the model hit a natural stop point or a provided stop sequence, length if the maximum number of tokens specified in the request was reached, content\_filter if content was omitted due to a flag from our content filters, tool\_calls if the model called a tool, or insufficient\_system\_resource if the request is interrupted due to insufficient resource of the inference system.
+**index** integer required
+The index of the choice in the list of choices.
+\* ]
+**created** integer required
+The Unix timestamp (in seconds) of when the chat completion was created. Each chunk has the same timestamp.
+**model** string required
+The model to generate the completion.
+**system\_fingerprint** string required
+This fingerprint represents the backend configuration that the model runs with.
+**object** string required
+**Possible values:** [ chat.completion.chunk ]
+The object type, which is always chat.completion.chunk .
+\* ]
+
+```
+data: {"id": "1f633d8bfc032625086f14113c411638", "choices": [{"index": 0, "delta": {"content": "", "role": "assistant"}, "finish_reason": null, "logprobs": null}], "created": 1718345013, "model": "deepseek-chat", "system_fingerprint": "fp_a49d71b8a1", "object": "chat.completion.chunk", "usage": null}
+data: {"choices": [{"delta": {"content": "Hello", "role": "assistant"}, "finish_reason": null, "index": 0, "logprobs": null}], "created": 1718345013, "id": "1f633d8bfc032625086f14113c411638", "model": "deepseek-chat", "object": "chat.completion.chunk", "system_fingerprint": "fp_a49d71b8a1"}
+data: {"choices": [{"delta": {"content": "!", "role": "assistant"}, "finish_reason": null, "index": 0, "logprobs": null}], "created": 1718345013, "id": "1f633d8bfc032625086f14113c411638", "model": "deepseek-chat", "object": "chat.completion.chunk", "system_fingerprint": "fp_a49d71b8a1"}
+data: {"choices": [{"delta": {"content": " How", "role": "assistant"}, "finish_reason": null, "index": 0, "logprobs": null}], "created": 1718345013, "id": "1f633d8bfc032625086f14113c411638", "model": "deepseek-chat", "object": "chat.completion.chunk", "system_fingerprint": "fp_a49d71b8a1"}
+data: {"choices": [{"delta": {"content": " can", "role": "assistant"}, "finish_reason": null, "index": 0, "logprobs": null}], "created": 1718345013, "id": "1f633d8bfc032625086f14113c411638", "model": "deepseek-chat", "object": "chat.completion.chunk", "system_fingerprint": "fp_a49d71b8a1"}
+data: {"choices": [{"delta": {"content": " I", "role": "assistant"}, "finish_reason": null, "index": 0, "logprobs": null}], "created": 1718345013, "id": "1f633d8bfc032625086f14113c411638", "model": "deepseek-chat", "object": "chat.completion.chunk", "system_fingerprint": "fp_a49d71b8a1"}
+data: {"choices": [{"delta": {"content": " assist", "role": "assistant"}, "finish_reason": null, "index": 0, "logprobs": null}], "created": 1718345013, "id": "1f633d8bfc032625086f14113c411638", "model": "deepseek-chat", "object": "chat.completion.chunk", "system_fingerprint": "fp_a49d71b8a1"}
+data: {"choices": [{"delta": {"content": " you", "role": "assistant"}, "finish_reason": null, "index": 0, "logprobs": null}], "created": 1718345013, "id": "1f633d8bfc032625086f14113c411638", "model": "deepseek-chat", "object": "chat.completion.chunk", "system_fingerprint": "fp_a49d71b8a1"}
+data: {"choices": [{"delta": {"content": " today", "role": "assistant"}, "finish_reason": null, "index": 0, "logprobs": null}], "created": 1718345013, "id": "1f633d8bfc032625086f14113c411638", "model": "deepseek-chat", "object": "chat.completion.chunk", "system_fingerprint": "fp_a49d71b8a1"}
+data: {"choices": [{"delta": {"content": "?", "role": "assistant"}, "finish_reason": null, "index": 0, "logprobs": null}], "created": 1718345013, "id": "1f633d8bfc032625086f14113c411638", "model": "deepseek-chat", "object": "chat.completion.chunk", "system_fingerprint": "fp_a49d71b8a1"}
+data: {"choices": [{"delta": {"content": "", "role": null}, "finish_reason": "stop", "index": 0, "logprobs": null}], "created": 1718345013, "id": "1f633d8bfc032625086f14113c411638", "model": "deepseek-chat", "object": "chat.completion.chunk", "system_fingerprint": "fp_a49d71b8a1", "usage": {"completion_tokens": 9, "prompt_tokens": 17, "total_tokens": 26}}
+data: [DONE]
+```
+
+```
+*  curl
+*  python
+*  go
+*  nodejs
+*  ruby
+*  csharp
+*  php
+*  java
+*  powershell
+*  CURL
+```
+
+```
+curl -L -X POST 'https://api.deepseek.com/chat/completions' \
+-H 'Content-Type: application/json' \
+-H 'Accept: application/json' \
+-H 'Authorization: Bearer <TOKEN>' \
+--data-raw '{
+  "messages": [
+    {
+      "content": "You are a helpful assistant",
+      "role": "system"
+    },
+    {
+      "content": "Hi",
+      "role": "user"
+    }
+  ],
+  "model": "deepseek-chat",
+  "thinking": {
+    "type": "disabled"
+  },
+  "frequency_penalty": 0,
+  "max_tokens": 4096,
+  "presence_penalty": 0,
+  "response_format": {
+    "type": "text"
+  },
+  "stop": null,
+  "stream": false,
+  "stream_options": null,
+  "temperature": 1,
+  "top_p": 1,
+  "tools": null,
+  "tool_choice": "none",
+  "logprobs": false,
+  "top_logprobs": null
+}'
+```
+
+Request Collapse all
+Base URL
+Edit
+<https://api.deepseek.com>
+Auth
+Bearer Token
+Body required
+
+```
+{
+  "messages": [
+    {
+      "content": "You are a helpful assistant",
+      "role": "system"
+    },
+    {
+      "content": "Hi",
+      "role": "user"
+    }
+  ],
+  "model": "deepseek-chat",
+  "thinking": {
+    "type": "disabled"
+  },
+  "frequency_penalty": 0,
+  "max_tokens": 4096,
+  "presence_penalty": 0,
+  "response_format": {
+    "type": "text"
+  },
+  "stop": null,
+  "stream": false,
+  "stream_options": null,
+  "temperature": 1,
+  "top_p": 1,
+  "tools": null,
+  "tool_choice": "none",
+  "logprobs": false,
+  "top_logprobs": null
+}
+```
+
+Send API Request
+Response Clear
+Click the Send API Request button above and see the response here!
+Previous Introduction
+Next Create FIM Completion (Beta)
+WeChat Official Account
+Community
+\* Email
+\* Discord
+\* Twitter
+More
+\* GitHub
+Copyright © 2026 DeepSeek, Inc.

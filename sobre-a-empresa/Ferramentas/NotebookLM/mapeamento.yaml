@@ -1,0 +1,173 @@
+# ═══════════════════════════════════════════════════════════════════
+# Mapeamento NotebookLM → Kolden
+# 32 notebooks aproveitáveis (34 total − 2 Santander excluídos)
+# Schema: dict de entrada com chave = título exato do notebook no NotebookLM
+# Usado por: extract_all.py
+# ═══════════════════════════════════════════════════════════════════
+
+versao: "1.0.0"
+gerado_em: "2026-06-30"
+total_notebooks: 32
+total_fontes_estimadas: 1030
+
+# Notebooks excluídos (PII / vazios) — não processar
+excluidos:
+  - titulo: "Santander Select Consolidated Monthly Statements for Ronan Sergio Silva 2026"
+    fontes: 9
+    motivo: "PII bancário pessoal (§5 CLAUDE.md)"
+  - titulo: "Santander Select Monthly Consolidated Statement May 2025"
+    fontes: 12
+    motivo: "PII bancário pessoal (§5 CLAUDE.md)"
+  - titulo: "06 | Rosie"
+    fontes: 0
+    motivo: "vazio"
+  - titulo: "07 | Instituto Saulo Mendes Hipnose & Psicoterapia"
+    fontes: 0
+    motivo: "vazio"
+  - titulo: "09 | Vibrações Celestiais"
+    fontes: 0
+    motivo: "vazio"
+  - titulo: "10 | EntreSolos"
+    fontes: 0
+    motivo: "vazio"
+  - titulo: "11 | Freitas Serviços"
+    fontes: 0
+    motivo: "vazio"
+  - titulo: "The AIOS Squad Framework: Future of Automated Business Workspaces"
+    fontes: 0
+    motivo: "vazio"
+
+# ─── CLIENTES ATIVOS ──────────────────────────────────────────────────────────
+notebooks:
+  - titulo: "01 | Affordable Insulation"
+    fontes: 31
+    destino: "sobre-a-empresa/clientes/ativos/affordable-insulation/_notebooklm"
+    categoria: cliente-ativo
+
+  - titulo: "02 | Brayan’s Finish"
+    fontes: 12
+    destino: "sobre-a-empresa/clientes/ativos/brayans-finish/_notebooklm"
+    categoria: cliente-ativo
+
+  - titulo: "03 | Revolution Pro"
+    fontes: 5
+    destino: "sobre-a-empresa/clientes/ativos/revolution-pro/_notebooklm"
+    categoria: cliente-ativo
+
+  - titulo: "04 | Mat3vic"
+    fontes: 5
+    destino: "sobre-a-empresa/clientes/ativos/mat3vic/_notebooklm"
+    categoria: cliente-ativo
+
+  - titulo: "05 | Vilela Construction"
+    fontes: 5
+    destino: "sobre-a-empresa/clientes/ativos/vilela-construction/_notebooklm"
+    categoria: cliente-ativo
+
+  - titulo: "08 | Clinica Omiron"
+    fontes: 17
+    destino: "sobre-a-empresa/clientes/ativos/clinica-omiron/_notebooklm"
+    categoria: cliente-ativo
+
+  - titulo: "08 | Clinica Omiron Projeto Omiron: Aplicativo de Monitoramento e Cuidado Psiquiátrico"
+    fontes: 5
+    destino: "sobre-a-empresa/clientes/ativos/clinica-omiron/_notebooklm"
+    categoria: cliente-ativo
+    # NOTA: mesmo destino do anterior — fundir. fonte_notebook no frontmatter distingue.
+
+  - titulo: "12 | CataLogo"
+    fontes: 25
+    destino: "sobre-a-empresa/clientes/ativos/catalogo/_notebooklm"
+    categoria: cliente-ativo
+
+  - titulo: "NutriOS Pro"
+    fontes: 24
+    destino: "sobre-a-empresa/clientes/ativos/nutrios-pro/_notebooklm"
+    categoria: cliente-ativo
+
+  - titulo: "Stass"
+    fontes: 9
+    destino: "sobre-a-empresa/clientes/ativos/stass/_notebooklm"
+    categoria: cliente-ativo
+
+  # ─── CLIENTES INATIVOS ──────────────────────────────────────────────────────
+  - titulo: "Pizzaria Margherita - Forno a Lenha"
+    fontes: 11
+    destino: "sobre-a-empresa/clientes/inativos/pizzaria-margherita/_notebooklm"
+    categoria: cliente-inativo
+
+  - titulo: "Clube Fit Academia"
+    fontes: 4
+    destino: "sobre-a-empresa/clientes/inativos/clube-fit/_notebooklm"
+    categoria: cliente-inativo
+
+  - titulo: "P17 - Precision Engineering"
+    fontes: 16
+    destino: "sobre-a-empresa/clientes/inativos/p17-precision-engineering/_notebooklm"
+    categoria: cliente-inativo
+
+  # ─── INSTITUCIONAL KOLDEN ───────────────────────────────────────────────────
+  - titulo: "Kolden"
+    fontes: 223
+    destino: "sobre-a-empresa/_conhecimento-institucional/kolden"
+    categoria: institucional
+
+  - titulo: "Aiox-Kolden"
+    fontes: 294
+    destino: "sobre-a-empresa/_conhecimento-institucional/aiox-kolden"
+    categoria: institucional
+
+  - titulo: "Meetings"
+    fontes: 113
+    destino: "sobre-a-empresa/_conhecimento-institucional/meetings"
+    categoria: institucional
+
+  - titulo: "Análise Financeira"
+    fontes: 103
+    destino: "sobre-a-empresa/_conhecimento-institucional/analise-financeira"
+    categoria: institucional
+
+  - titulo: "Prospecção na Gringa"
+    fontes: 89
+    destino: "sobre-a-empresa/_conhecimento-institucional/prospeccao-na-gringa"
+    categoria: institucional
+
+  - titulo: "Hispanic Financial Education Strategy: Hamilton Hyperlocal Intelligence Report"
+    fontes: 14
+    destino: "sobre-a-empresa/_conhecimento-institucional/hispanic-financial-education"
+    categoria: institucional
+
+  - titulo: "Treinamento de ClickUp"
+    fontes: 14
+    destino: "sobre-a-empresa/_conhecimento-institucional/treinamento-clickup"
+    categoria: institucional
+
+  - titulo: "Estratégias de Garimpo e Otimização de Ofertas"
+    fontes: 4
+    destino: "sobre-a-empresa/_conhecimento-institucional/estrategias-de-garimpo"
+    categoria: institucional
+
+  - titulo: "Acordo de Transição Profissional e Gestão Estratégica de Ativos Digitais"
+    fontes: 3
+    destino: "sobre-a-empresa/_conhecimento-institucional/acordo-transicao-profissional"
+    categoria: institucional
+
+  - titulo: "Plano de Guerra: Reestruturação Comercial Kolden e SuperBenefícios"
+    fontes: 1
+    destino: "sobre-a-empresa/_conhecimento-institucional/plano-de-guerra-superbeneficios"
+    categoria: institucional
+
+  - titulo: "Coda Strategy Meeting with Brayan’s Finish"
+    fontes: 1
+    destino: "sobre-a-empresa/_conhecimento-institucional/coda-strategy-brayans"
+    categoria: institucional
+
+  - titulo: "Oye"
+    fontes: 1
+    destino: "sobre-a-empresa/_conhecimento-institucional/oye"
+    categoria: institucional
+
+  - titulo: "Claude Code Agent Teams: Multiprocessing Workflows and Global Context Management"
+    fontes: 1
+    destino: "sobre-a-empresa/_conhecimento-institucional/claude-code-agent-teams"
+    categoria: institucional
