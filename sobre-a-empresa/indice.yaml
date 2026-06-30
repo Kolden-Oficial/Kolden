@@ -1,7 +1,7 @@
 # Índice machine-readable do cérebro da Kolden (sobre-a-empresa).
 # Convenção alinhada ao Caos. Atualize ao adicionar/alterar docs.
 versao: 1
-atualizado-em: 2026-06-22
+atualizado-em: 2026-06-30
 documentos:
   - id: sobre-a-empresa-leia-me
     caminho: leia-me.md
@@ -37,6 +37,10 @@ documentos:
     status: rascunho
   - id: concorrencia
     caminho: mercado-e-posicionamento/concorrencia.md
+    categoria: mercado
+    status: rascunho
+  - id: briefing-foda-geracao-demanda-brasileiros-eua
+    caminho: mercado-e-posicionamento/briefings/2026-06-30--brefing-foda-geracao-demanda-brasileiros-eua.md
     categoria: mercado
     status: rascunho
   - id: voz-e-tom
