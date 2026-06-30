@@ -10,6 +10,8 @@
 | `tokens-de-design` | estruturar tokens em 3 camadas (primitivo→semântico→componente), gerar CSS a partir de JSON, specs de componente, auditar hardcoded, codificar DESIGN.md | design-system-architect |
 | `implementacao-ui` | implementar UI acessível com shadcn/ui + Tailwind, config de tema, ícones, motion de produção (GSAP/Motion) com guardrails de performance/a11y | ui-engineer |
 | `julgamento-estetico-anti-slop` | ler o briefing e declarar direção (Design Read), calibrar 3 dials, fugir dos defaults de IA, escolher direção de arte, rodar pré-flight visual com banco de AI-tells | design-chief, visual-generator |
+| `walkthrough-de-persona` | auditar landing/produto simulando persona em 5-second test / scroll monologue / decision-point analysis; rubrica LIFT + Cialdini-presença DETECTADOS por fold (NÃO escreve copy — handoff Caliope/robert-cialdini) | harmonia-chief |
+| `pesquisa-qualitativa-de-usuario` | UX research em PRODUTO PRONTO: protocolo + sample diverse + usability test 60min think-aloud + persona empírica + triangulação. Fronteira: Aletheia roteiro-de-entrevista cobre pré-produto (Mom Test) | harmonia-chief |
 
 ## Fronteiras com outros squads
 
@@ -20,8 +22,16 @@
 
 ## Procedência
 
-As 4 habilidades nasceram da absorção (F6) de 3 repositórios de design:
+As 4 habilidades originais nasceram da absorção (F6) de 3 repositórios de design:
 `nextlevelbuilder/ui-ux-pro-max-skill` (MIT), `Leonxlnx/taste-skill` (MIT) e a
 skill `frontend-design` de `anthropics/claude-code` (proprietário Anthropic —
 princípio reescrito em PT-BR, uso interno, sem cópia literal). Detalhe de IDs e
 disposições no relatório de perda do lote.
+
+**Absorção B05 (2026-06-29, msitarzewski/agency-agents@a597cb6, MIT):**
+- `walkthrough-de-persona` (NOVA) — absorve G10+G11+G12 (mãe + LIFT framework + Cialdini-detecção)
+- `pesquisa-qualitativa-de-usuario` (NOVA) — absorve G19+G20+G21 (UX research + persona-build + usability test)
+- `sistema-de-design` (ESTENDIDA) — absorve G14 (responsividade canônica + 8-point grid + breakpoints) + G17 (hierarquia visual + padrões de scanning + cognitive load)
+- REUSE puros (sem ação F6): G13, G15, G16, G18 (cobertos por `tokens-de-design` + `implementacao-ui` + WCAG-AA já presente)
+
+Detalhe em `Caos/registros/absorcao/msitarzewski--agency-agents/decisao-f5-b05-design.md` e `relatorio-de-perda-b05-design.md`.

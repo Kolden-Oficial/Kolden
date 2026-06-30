@@ -40,6 +40,86 @@ por dados reais.
 Para leads parados (não recusados): sequência curta de 2-3 toques com novo ângulo (caso, novidade,
 pergunta diferente). Nunca reabrir lead já recusado pelo qualificador.
 
+### Signal-based selling (G26)
+
+> _Seção absorvida de github.com/msitarzewski/agency-agents@a597cb6 (G26, MIT)._
+
+Outbound moderno opera por SINAIS, não listas. Speed-to-signal < 30min separa winner de loser.
+
+**3 tiers de sinais:**
+
+**Tier 1 — Sinais ativos (alta intenção):**
+- Visita ao pricing page (G2/6sense/Demandbase)
+- Download de whitepaper sem cold email
+- Inscrição em webinar concorrente
+- Job posting com palavra-chave do produto
+- Funding round + uso de orçamento
+
+**Tier 2 — Sinais organizacionais:**
+- Hiring de role-chave (VP Sales contratado = 90d depois = compra ferramenta)
+- Mudança de C-level
+- Aquisição/fusão
+- Mudança de stack tecnológica
+
+**Tier 3 — Sinais technographic:**
+- Tecnologia A presente + tecnologia complementar B ausente = compra B em 6-12m
+- Stack outdated (sinal de upgrade pending)
+- Sites: BuiltWith, Wappalyzer, similar
+
+**Speed-to-signal:**
+- Tier 1: < 30min response
+- Tier 2: < 4h response
+- Tier 3: incluir em sequência semanal
+
+### Anatomia de cold email de alta conversão (G28)
+
+> _Seção absorvida de github.com/msitarzewski/agency-agents@a597cb6 (G28, MIT)._
+
+**Estrutura canônica:**
+- **Subject (3-5 palavras lowercase):** específico, sem CAPS, sem emoji
+  - Bom: "ideia rápida pro novo lançamento"
+  - Ruim: "OFERTA ESPECIAL HOJE!!!"
+- **Opening (1 frase baseada em sinal):** evidência que você fez homework
+  - "Vi que vocês contrataram VP Sales mês passado e..."
+- **Valor (2-3 frases):** problema → outcome → prova social
+- **CTA único de baixa fricção:** "Faz sentido 15min na terça às 14h?" (não "agendar reunião")
+
+**Benchmarks por personalização:**
+- Sem personalização: 1-3% reply rate
+- Personalização por sinal (Tier 2/3): 8-12%
+- Hiper-personalização (Tier 1 + research): 18-25%
+
+**Comprimento:** 75-125 palavras. > 150 = ignorada.
+
+### Sequência multi-canal 8-12 toques em 3-4 semanas (G29)
+
+> _Seção absorvida de github.com/msitarzewski/agency-agents@a597cb6 (G29, MIT)._
+
+**Cadência canônica:**
+
+| Toque | Canal | Conteúdo | Dia |
+|---|---|---|---|
+| 1 | Email | Initial outreach baseado em sinal | D0 |
+| 2 | LinkedIn | Connection request com nota | D2 |
+| 3 | Email | Valor + caso de uso similar | D5 |
+| 4 | Telefone | "Vi que vc abriu meu email semana passada..." | D7 |
+| 5 | LinkedIn | Voice message ou comment em post | D10 |
+| 6 | Email | Mudança de ângulo (outro outcome) | D14 |
+| 7 | Telefone | Tentativa em outro horário | D17 |
+| 8 | Email | Recurso útil sem pitch (give-give-ask) | D21 |
+| 9 | LinkedIn | InMail (se conexão recusada) | D24 |
+| 10 | Telefone | Última tentativa | D28 |
+| 11 | Email | Breakup email | D30 |
+| 12 | Reativação | 90d depois | D120 |
+
+**Regra "cada toque novo ângulo de valor":** sem repetir o mesmo pitch
+**Breakup email:** "vou pausar contato — me avise se algo mudar". Surpreendentemente: 12-15% replyam.
+
+**Anti-padrões:**
+- 12 toques com mesma mensagem (vira spam)
+- Só email (multi-canal é 3x melhor)
+- Cadência sem breakup (perde respond rate de "última chance")
+
 ## Saída
 Use o formato do agente `executivo-de-cadencia` (ALVO / OBJETIVO / SEQUÊNCIA por toque / PEÇA /
 PERSONALIZAÇÃO / PRÓXIMO PASSO + DONO + DATA). Toques registrados no GHL; credenciais via Infisical.

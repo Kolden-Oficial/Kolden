@@ -36,6 +36,53 @@ condições. Opções/tiers só se a política previr. Desconto fora da faixa �
 A peça é **comercial**, não jurídica. Cláusula, risco legal ou termo contratual que exija parecer escala
 a quem de direito — o redator não emite opinião legal.
 
+## Arquitetura vencedora — Win Themes + 3 Atos + Executive Summary
+
+### Arquitetura vencedora — Win Themes + 3 Atos + Executive Summary
+
+> _Seção absorvida de github.com/msitarzewski/agency-agents@a597cb6 (G33, MIT)._
+
+Proposta vencedora não é "lista de features". É **argumentação narrativa** apoiada em 3 elementos.
+
+**1. Win Themes (3-5):**
+- Temas que aparecem em TODA seção
+- Cada um responde "por que A em vez de B?"
+- Exemplo: "Time-to-value < 60 dias", "Pricing previsível", "Suporte BR fuso horário"
+- Identificados na discovery; testados na demo; reforçados na proposta
+
+**2. Estrutura em 3 Atos:**
+
+**Ato 1 — Contexto + Problema (validar entendimento):**
+- "Vocês me disseram que [problema específico]"
+- "O impacto disso é [quantificação]"
+- "Sem ação, em 12m: [projeção]"
+- (Se errar aqui, perde tudo — primeira coisa que cliente checa)
+
+**Ato 2 — Solução + Diferenciação (responder problema):**
+- Não é "nossa solução faz X" (vendor-centric)
+- É "para resolver [problema], aqui está [solução] que entrega [outcome]"
+- Cada win theme reforçado com evidência (caso de cliente similar)
+- Comparação com alternativas (incluindo "fazer nada")
+
+**Ato 3 — Próximos passos (caminho para fechamento):**
+- Timeline de implementação concreta
+- Quem faz o quê (você + nós)
+- Como medir sucesso (success criteria binários)
+- O que precisamos para assinar (cronograma de decisão)
+
+**3. Executive Summary (1 página, primeira página):**
+- TL;DR para CEO/CFO que NÃO vai ler 30 páginas
+- 3 bullets: problema + solução + ROI projetado
+- 1 frase: "Esperamos resposta até [data]"
+- Não é resumo — é closing argument
+
+**Anti-padrões:**
+- Proposta sem win themes (vira lista de features)
+- Ato 1 superficial (cliente sente "não entendeu")
+- Sem ROI quantificado (vira sentimento)
+- Exec summary opcional (CFO decide com isso)
+- Mais de 30 páginas (sinaliza inseguro)
+
 ## Saída
 Use o formato do agente `redator-de-propostas` (DEAL / TIPO / RESUMO DA OFERTA / ESCOPO / PREÇO [dentro
 da política?] / PROVA-ROI / NEGOCIAÇÃO / PRÓXIMO PASSO + DONO + DATA). Proposta anexada à oportunidade no

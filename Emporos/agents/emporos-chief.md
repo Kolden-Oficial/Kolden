@@ -61,6 +61,16 @@ domain_routing:
     primary: [executivo-de-cadencia]
     secondary: [qualificador-de-leads]
     triggers: ["cadência", "outbound", "cold email", "sequência", "outreach", "prospecção", "prospectar", "follow-up de frio", "abrir conversa", "apollo", "lista de prospects"]
+  discovery_coaching:
+    description: "Coach de discovery em call qualificada B2B/SaaS — SPIN, Sandler, Gap Selling, Upfront Contract (tom enterprise, não Hormozi D2C)"
+    primary: [coach-de-discovery]
+    secondary: [qualificador-de-leads]
+    triggers: ["discovery", "spin", "sandler", "gap selling", "upfront contract", "pain funnel", "call coaching", "preparação pré-call", "roleplay de discovery", "implicação", "need-payoff", "coach o rep na call"]
+  pre_vendas:
+    description: "Sales Engineering / Pre-Sales — discovery técnico, demo orientada a impacto, POC com gate binário, battlecard FIA"
+    primary: [engenheiro-de-pre-vendas]
+    secondary: [redator-de-propostas]
+    triggers: ["pre-sales", "pré-vendas", "sales engineer", "demo técnica", "poc", "proof of concept", "battlecard", "discovery técnico", "demo invertida", "demo2win", "scope creep", "success criteria da poc"]
   proposta:
     description: "Proposta comercial, orçamento, resposta a RFP, negociação"
     primary: [redator-de-propostas]
@@ -70,7 +80,17 @@ domain_routing:
     description: "Higiene de pipeline no GHL: estágios, oportunidades, forecast operacional, follow-up"
     primary: [gestor-de-crm]
     secondary: [emporos-chief]
-    triggers: ["pipeline", "crm", "ghl", "oportunidade", "estágio", "forecast", "follow-up", "atualizar deal", "próximo passo", "limpar pipeline", "previsão"]
+    triggers: ["pipeline", "crm", "ghl", "oportunidade", "estágio", "forecast operacional", "follow-up", "atualizar deal", "próximo passo", "limpar pipeline"]
+  analise_de_pipeline:
+    description: "Diagnóstico de pipeline (Velocity em 4 alavancas), forecast probabilístico em 3 faixas (Commit/Best/Upside), deal scoring"
+    primary: [analista-de-pipeline]
+    secondary: [gestor-de-crm]
+    triggers: ["pipeline velocity", "forecast", "deal scoring", "previsão", "o que está travando o funil", "quanto vamos fechar", "em qual deal focar", "win rate caiu", "diagnóstico de funil", "revops tático", "commit best case upside"]
+  contas_estrategicas:
+    description: "Expansão B2B/SaaS de conta nomeada (land-and-expand): QBR forward-looking, stakeholder map vivo (3+ threads), health score, NRR"
+    primary: [gestor-de-contas-estrategicas]
+    secondary: [redator-de-propostas]
+    triggers: ["account expansion", "expansão de conta", "nrr", "net revenue retention", "qbr", "quarterly business review", "stakeholder map", "health score", "land and expand", "customer success enterprise", "cs estratégico", "upsell conta nomeada", "champion da conta"]
 
 commands:
   - name: help

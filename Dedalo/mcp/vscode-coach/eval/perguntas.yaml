@@ -1,0 +1,147 @@
+# Eval harness das 10 tarefas do PRD §7.1.
+# Critério: tool correta + payload válido + sem exceção não tratada.
+# Os caminhos {{FIXTURE_REACT}} são substituídos em runtime pelo path absoluto da fixture.
+
+perguntas:
+  - id: 01-auditar-react-existente
+    descricao: "Audita workspace React existente — score, gaps, próximo passo"
+    tool: vscode_auditar_workspace
+    argumentos:
+      workspace_path: "{{FIXTURE_REACT}}"
+      verbosidade: concise
+      incluir_extensoes_globais: false
+    espera:
+      tipo: ok
+      payload_tem:
+        - score
+        - proximo_passo
+      payload_score_range: [0, 100]
+      payload_gaps_min: 1
+
+  - id: 02-setup-react-ts
+    descricao: "Setup VS Code para React+TS — extensions, settings, launch, tasks"
+    tool: vscode_recomendar_setup
+    argumentos:
+      stack: react-ts
+      verbosidade: detailed
+    espera:
+      tipo: ok
+      payload_tem:
+        - stack
+        - arquivos
+      payload_extensoes_inclui:
+        - dbaeumer.vscode-eslint
+        - esbenp.prettier-vscode
+
+  - id: 03-diag-breakpoint
+    descricao: "Diagnóstico: breakpoint não para no componente React"
+    tool: vscode_diagnosticar_problema
+    argumentos:
+      sintoma: "meu breakpoint não para no componente React"
+      verbosidade: detailed
+    espera:
+      tipo: ok
+      payload_tem:
+        - diagnosticos_ranqueados
+      payload_ids_inclui:
+        - breakpoint-nao-para
+
+  - id: 04-devcontainer-python
+    descricao: "Devcontainer para Python"
+    tool: vscode_setup_devcontainer
+    argumentos:
+      stack: python-fastapi
+      features_extras: []
+      incluir_extensoes: true
+    espera:
+      tipo: ok
+      payload_tem:
+        - stack
+        - arquivos
+      payload_extensoes_inclui:
+        - ms-python.python
+
+  - id: 05-snippets-frontend
+    descricao: "Snippets para dev frontend React"
+    tool: vscode_otimizar_produtividade
+    argumentos:
+      persona: frontend
+      stack: react-ts
+      foco: snippets
+    espera:
+      tipo: ok
+      payload_tem:
+        - snippets
+      payload_snippets_inclui:
+        - rfc
+        - useState
+        - useEffect
+
+  - id: 06-source-control-node-husky
+    descricao: "Source control Node com husky"
+    tool: vscode_setup_source_control
+    argumentos:
+      stack: react-ts
+      workspace_path: "{{FIXTURE_REACT}}"
+      incluir_hooks: true
+      ferramenta_hooks: husky
+    espera:
+      tipo: ok
+      payload_tem:
+        - arquivos
+        - hooks
+      payload_hook_ferramenta: husky
+
+  - id: 07-stack-desconhecida
+    descricao: "Stack desconhecida (Crystal lang) → STACK_DESCONHECIDA"
+    tool: vscode_recomendar_setup
+    argumentos:
+      stack: crystal-lang
+      verbosidade: concise
+    espera:
+      tipo: erro
+      codigo: STACK_DESCONHECIDA
+
+  - id: 08-sintoma-ambiguo
+    descricao: "Sintoma vago: 'tá lento' → SINTOMA_AMBIGUO ou hipóteses do vscode-lento"
+    tool: vscode_diagnosticar_problema
+    argumentos:
+      sintoma: "vscode tá lento"
+      verbosidade: concise
+    espera:
+      tipo: ok_ou_erro
+      codigos_erro_aceitos:
+        - SINTOMA_AMBIGUO
+      payload_ids_aceitos:
+        - vscode-lento
+
+  - id: 09-auditoria-detalhada
+    descricao: "Auditoria detalhada do mesmo workspace"
+    tool: vscode_auditar_workspace
+    argumentos:
+      workspace_path: "{{FIXTURE_REACT}}"
+      verbosidade: detailed
+      incluir_extensoes_globais: false
+    espera:
+      tipo: ok
+      payload_tem:
+        - score
+        - stack_detectada
+        - arquivos_vscode_presentes
+        - extensoes
+        - gaps_criticos
+
+  - id: 10-setup-testing-vitest
+    descricao: "Setup testing com Vitest no fixture React (deps já presentes)"
+    tool: vscode_setup_testing
+    argumentos:
+      framework: vitest
+      workspace_path: "{{FIXTURE_REACT}}"
+      incluir_coverage: true
+    espera:
+      tipo: ok
+      payload_tem:
+        - framework
+        - extensao_recomendada
+        - patches
+      payload_extensao: vitest.explorer

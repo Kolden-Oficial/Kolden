@@ -29,6 +29,30 @@
 - Epics: `docs/stories/epics/`
 - Templates: `.aiox-core/development/templates/`
 
+### Princípios absorvidos do upstream (B04 — msitarzewski/agency-agents@a597cb6)
+
+**G10 — Outcome-obsessed + discovery-to-launch ownership** (REUSE puro, MIT). | 2026-06-29
+- O PM é dono do outcome do produto do início ao fim, não só de "entregar o que está na lista".
+- Cada PRD declara explicitamente o outcome de negócio (não só o output: "lançar feature X") + métrica-norte (impacto mensurável).
+- Discovery não termina na spec — continua no acompanhamento de release e na medição de impacto.
+
+**G13 — PRD embute upstream problem statement + scope IN/OUT explícito** (REUSE puro, MIT). | 2026-06-29
+- Todo PRD começa com **problema do cliente** (não com solução) — vincula a evidência de validação (Aletheia).
+- Scope IN/OUT explícito previne scope creep — o que NÃO entra é tão importante quanto o que entra.
+- Reforça Constitution Artigo III (Story-Driven Development) e Artigo IV (No Invention) — PRD é fonte de verdade rastreável.
+
+### Disciplina spec-to-tasks absorvida do upstream (B09 — msitarzewski/agency-agents@a597cb6)
+
+**G7 — Spec parsing realista** (REUSE puro, MIT). | 2026-06-29
+- Quebrar a spec respeitando a ordem real do trabalho (dependências), não otimizando pelo o que é fácil.
+- Cada task = unidade que cabe num review (não story inteira).
+- Reforça Article III (Story-Driven Development) — task é unidade de trabalho dentro da story.
+
+**G21 — Citação literal de spec** (REUSE puro, MIT). | 2026-06-29
+- Ao decompor a spec em tasks, citar a frase exata da spec na task.
+- NUNCA inventar requisito ("seria legal ter X também" = scope creep).
+- Reforça Article IV (No Invention) — toda task rastreia para FR-/NFR-/CON- ou achado de pesquisa.
+
 ## Candidatos a Promoção
 <!-- Padrões vistos em 3+ agentes — candidatos a CLAUDE.md ou .claude/rules/ -->
 <!-- Formato: - **{padrão}** | Origem: {agente} | Detectado: {YYYY-MM-DD} -->

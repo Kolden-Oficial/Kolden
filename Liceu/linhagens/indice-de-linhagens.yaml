@@ -2,8 +2,8 @@
 # Mantido pelo `genealogista` (tier 2). Modela o grafo bidirecional de quem
 # herdou de quem e quem influenciou quem. Cada linhagem nomeada tem um .md em linhagens/.
 # Toda aresta carrega NATUREZA (direta | inferida | zeitgeist) e FONTE — sem fonte, fica "inferida".
-versao: 1
-atualizado-em: 2026-06-22
+versao: 2
+atualizado-em: 2026-06-29
 
 # NODES — uma entrada por mente que participa de alguma linhagem.
 #   id               — kebab-case (espelha o id em indice.yaml)
@@ -93,11 +93,95 @@ edges:
 # LINHAGENS — linhagens nomeadas (cada uma com um arquivo .md em linhagens/).
 #   slug      — kebab-case (= nome do arquivo, sem .md)
 #   titulo    — título legível
+#   tipo      — pensador  (linhagem mente-a-mente, eixo histórico de influência) |
+#               disciplina (linhagem de campo do saber: escolas, fronteiras, evolução)
 #   arquivo   — caminho do .md da linhagem
-#   mentes    — ids das mentes que compõem a linhagem (em ordem do grafo)
+#   mentes    — ids das mentes/sub-mentes-âncora que compõem a linhagem
+#   frameworks — frameworks Kolden que esta linhagem sustenta
 linhagens:
   - slug: psicanalise-do-desejo
     titulo: "A psicanálise do desejo aplicada ao consumo"
+    tipo: pensador
     arquivo: linhagens/psicanalise-do-desejo.md
     mentes: [sigmund-freud, edward-bernays, ernest-dichter, vance-packard, louis-cheskin,
              carl-jung, jacques-lacan, victor-gruen, philip-kotler, roland-barthes]
+    frameworks: [matriz-de-desejo-inconsciente]
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # B11 — Linhagens-disciplina (absorção 2026-06-29)
+  # Cada uma sustenta um ou mais frameworks-semente do bucket B11.
+  # Os .md de linhagem ainda serão escritos pelo genealogista; entradas aqui
+  # marcam as âncoras para a próxima rodada de dissecação.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: antropologia-funcional
+    titulo: "Antropologia funcional (Durkheim → Malinowski)"
+    tipo: disciplina
+    arquivo: linhagens/antropologia-funcional.md   # a escrever
+    mentes: [emile-durkheim, bronislaw-malinowski]
+    frameworks: [funcao-antes-da-estetica]
+
+  - slug: antropologia-ritual
+    titulo: "Antropologia ritual (van Gennep → Turner)"
+    tipo: disciplina
+    arquivo: linhagens/antropologia-ritual.md      # a escrever
+    mentes: [arnold-van-gennep, victor-turner]
+    frameworks: [rito-de-passagem-3-estagios]
+
+  - slug: geografia-fisico-humana
+    titulo: "Geografia físico-humana (Humboldt → Köppen → Christaller)"
+    tipo: disciplina
+    arquivo: linhagens/geografia-fisico-humana.md  # a escrever
+    mentes: [alexander-von-humboldt, vladimir-koppen, walter-christaller]
+    frameworks: [worldbuilding-fisico-bottom-up]
+
+  - slug: historiografia-annales
+    titulo: "Historiografia da Escola dos Annales (Bloch, Febvre, Braudel)"
+    tipo: disciplina
+    arquivo: linhagens/historiografia-annales.md   # a escrever
+    mentes: [marc-bloch, lucien-febvre, fernand-braudel]
+    frameworks: [longue-duree-3-camadas]
+
+  - slug: formalismo-narratologico
+    titulo: "Formalismo russo → narratologia estruturalista (Tomashevsky → Genette), com ramos comparativos (Aristóteles / kishōtenketsu / rasa)"
+    tipo: disciplina
+    arquivo: linhagens/formalismo-narratologico.md # a escrever
+    mentes: [boris-tomashevsky, gerard-genette, aristoteles, bharata-muni, abhinavagupta]
+    frameworks: [diagnostico-narrativo-fabula-sjuzhet, narratologia-comparada-3-tradicoes]
+
+  - slug: estrutura-narrativa-contemporanea
+    titulo: "Estrutura narrativa contemporânea (Campbell → Vogler → Truby)"
+    tipo: disciplina
+    arquivo: linhagens/estrutura-narrativa-contemporanea.md # a escrever
+    mentes: [joseph-campbell, christopher-vogler, john-truby]
+    frameworks: [arco-personagem-5-pontos]
+
+  - slug: psicologia-cientifica
+    titulo: "Psicologia científica (personalidade, apego, AT, cognitiva, comunicação patológica)"
+    tipo: disciplina
+    arquivo: linhagens/psicologia-cientifica.md    # a escrever
+    mentes: [paul-costa-jr, robert-mccrae, john-bowlby, mary-ainsworth, george-vaillant,
+             aaron-beck, stephen-karpman, eric-berne, erik-erikson, gregory-bateson, pete-walker]
+    frameworks: [perfil-psicologico-multi-lente, dinamica-relacional]
+
+# ─────────────────────────────────────────────────────────────────────────────
+# NOTAS DE FRONTEIRA (curadas pelo genealogista)
+# ─────────────────────────────────────────────────────────────────────────────
+# `psicologia-cientifica` × `psicanalise-do-desejo` — convivem sem sobreposição.
+#   - `psicanalise-do-desejo` é PSICANALÍTICA (Freud → Bernays → Dichter → Lacan,
+#     com Jung como ramo paralelo); aplica DESEJO INCONSCIENTE a marca/consumo.
+#     Frameworks: [matriz-de-desejo-inconsciente].
+#   - `psicologia-cientifica` é PSICOLOGIA CIENTÍFICA/CLÍNICA (Big Five, apego,
+#     AT, cognitiva, Bateson); aplica PERFILAMENTO MULTI-LENTE a persona, personagem,
+#     dinâmica de relação. Frameworks: [perfil-psicologico-multi-lente, dinamica-relacional].
+#   - As duas se complementam: uma escava o desejo, a outra perfila a pessoa.
+#     Nenhuma dissolve a outra; o framework escolhe a lente apropriada ao problema.
+#
+# `formalismo-narratologico` × `estrutura-narrativa-contemporanea` — adjacentes.
+#   - `formalismo-narratologico` é a tradição acadêmica (Tomashevsky, Genette) +
+#     comparados (Aristóteles, kishōtenketsu, rasa). Frameworks de DIAGNÓSTICO e
+#     ESCOLHA DE TRADIÇÃO.
+#   - `estrutura-narrativa-contemporanea` é a tradição prática de roteiro
+#     (Campbell → Vogler → Truby). Framework de CONSTRUÇÃO DE PERSONAGEM
+#     (want/need/lie/ghost).
+#   - Convivem porque endereçam problemas diferentes: diagnóstico/escolha vs.
+#     construção. Não fundir.

@@ -28,6 +28,32 @@ Itens CRÍTICOS são marcados com o sufixo (CRITICAL). Qualquer CRITICAL desmarc
 - [ ] Cada afirmação carrega rótulo de confiança (DOCUMENTADO / PLAUSÍVEL / DISPUTADO / FOLCLORE / REFUTADO)
 - [ ] Anedotas de marketing célebres foram explicitamente avaliadas, não copiadas como fato
 
+### Rótulo 4-graus de candura (G8, absorvido de msitarzewski/agency-agents@a597cb6, MIT)
+
+Toda afirmação histórica/disciplinar carrega rótulo explícito:
+- **Bem-documentado:** fonte primária + ano + ≥2 consensos secundários
+- **Consenso acadêmico:** majoritário entre fontes secundárias, mas debate periférico
+- **Em debate:** divergência ativa entre escolas/pesquisadores
+- **Especulativo:** sem suporte robusto; sinalizar como hipótese ou folclore
+
+Tipo de fonte (cite explicitamente quando aplicável): primária > secundária > popular > ficcional/Hollywood.
+
+Mapeamento entre o rótulo 4-graus (acima) e o rótulo 5-graus da §1 do checklist:
+- **Bem-documentado** ⇄ **DOCUMENTADO**
+- **Consenso acadêmico** ⇄ **CONSENSO_ACADEMICO** (rótulo novo para disciplinas, distinto de PLAUSÍVEL)
+- **Em debate** ⇄ **DISPUTADO** / **EM_DEBATE**
+- **Especulativo** ⇄ **FOLCLORE** (popular) ou **PLAUSÍVEL** (inferência sustentada mas não documentada)
+
+Disciplinas usam preferencialmente o 4-graus; mentes individuais mantêm o 5-graus existente. Ambos convivem.
+
+### Anti-eurocentrismo como norma transversal (G10, absorvida de msitarzewski/agency-agents@a597cb6, MIT)
+
+Em dossiês de disciplina (historiografia, antropologia, geografia, narratologia), incluir referências não-ocidentais (Song, Mali, dinastias asiáticas, narrativas indígenas, etc.) **como referência primária**, não apêndice/curiosidade. Disciplinas formadas só com cânone ocidental falham o gate.
+
+Critério operacional para o ceptico-verificador:
+- [ ] Dossiê de disciplina inclui ≥1 escola/obra/sub-mente fora do cânone ocidental — ou justifica explicitamente por que a disciplina é estritamente ocidental no recorte (raríssimo: ex.: estudos sobre literatura medieval francesa).
+- [ ] Caricaturas etnocêntricas ("antropólogo estuda tribo", "história universal = história europeia") foram explicitamente rebaixadas a §5/folclore.
+
 ## 2. Datação e atribuição
 
 - [ ] Toda obra-fonte está DATADA (ano) (CRITICAL)

@@ -102,6 +102,13 @@ veto_rules:
 
 ---
 
+### Tipos no acervo (atualizado B11 — 2026-06-29)
+
+- **`tipo: mente-individual`** (default histórico — schema em `mentes/_modelo-dossie.md`): biografia individual + mental models pessoais.
+- **`tipo: disciplina`** (NOVO em 2026-06-29 — schema em `mentes/_modelo-dossie-disciplina.md`): linhagem da disciplina + escolas + princípios disciplinares + sub-mentes-âncora pendentes. Absorvido do upstream `msitarzewski/agency-agents@a597cb6` (MIT).
+
+Ao receber pedido novo, identificar o tipo correto pelo frontmatter `tipo:` antes de aplicar o schema. Quando o pedido cita um campo do saber inteiro (antropologia, historiografia, narratologia, geografia, psicologia) e não uma pessoa, abrir `tipo: disciplina` em `mentes/disciplina-<slug>/dossie.md`. Quando cita uma pessoa nomeada (Bourdieu, Braudel, Bowlby), abrir `tipo: mente-individual` em `mentes/<id-pessoa>/dossie.md`. Disciplina e sub-mente coexistem — uma disciplina lista sub-mentes-âncora `pendente-dissecacao` que viram dossiês individuais depois, por demanda dos squads.
+
 ## Método de Catalogação por Referência
 
 A lei do bibliotecário é a **fonte única da verdade**: uma mente vive em UM arquivo canônico, e o índice apenas aponta para ele. Cada catalogação passa por este ciclo:

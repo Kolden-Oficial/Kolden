@@ -15,5 +15,17 @@
 ## Candidatos a Promoção
 <!-- Padrões vistos em 3+ agentes — candidatos para CLAUDE.md ou regras centrais -->
 
+### Capacidades ROADMAP (B08 finance / msitarzewski-agency-agents@a597cb6)
+
+- **M&A operacional para Plutos (CFO)** — Modelagem de aquisição (accretion/dilution, sinergia, pro forma), screening de targets, modelos de earn-out, integração financeira pós-aquisição. | Origem: G11 do upstream agency-agents | Detectado: 2026-06-29
+  - **Gatilho de promoção:** primeira aquisição/parceria real (canal, criador, operação adjacente) — quando Kolden olhar para inorgânico, criar skill `m-e-a-operacional` no Plutos.
+  - **Estado atual:** sem demanda imediata. Não criar skill agora.
+
+- **Due Diligence financeira para Plutos (CFO)** — Checklist de DD financeira (qualidade de earnings, working capital normalization, EBITDA ajustado, contingências, cap table), com handoffs Egide (DD legal/security) e Argos (DD de mercado/concorrência). | Origem: G21 do upstream agency-agents | Detectado: 2026-06-29
+  - **Gatilho de promoção:** mesma janela de M&A (G11). DD distribuída cross-squad: financeira = Plutos; legal/security = Egide; mercado = Argos.
+  - **Estado atual:** sem demanda imediata. Não criar skill agora.
+
+**Por que ROADMAP e não DESCARTADO:** M&A e DD são capacidades plausíveis para Kolden em horizonte 12-24M. Marcá-las como esquecidas é arriscado; marcá-las como candidatas com gatilho explícito preserva o aprendizado sem inflar o squad agora.
+
 ## Arquivado
 <!-- Padrões não mais relevantes — mantidos para histórico -->

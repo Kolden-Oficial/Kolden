@@ -70,6 +70,133 @@ e cofrar o acesso privilegiado — e detectar quando alguém abusa de uma identi
   principal** (Azure), roubo/uso de token OAuth, consentimento de app malicioso, device-code phishing.
 - Pontue confiança e correlacione no SIEM; handoff de IOC → `inteligencia-de-ameacas-cti`.
 
+### Detecção de ataques em Active Directory (defensivo)
+
+> _Seção absorvida de github.com/msitarzewski/agency-agents@a597cb6 (G24, MIT) — DEFENSIVA APENAS, veto ofensivo da Égide preservado._
+
+> **DEFENSIVA APENAS.** O veto ofensivo da Égide se aplica integralmente. Esta seção descreve **como detectar** e **como prevenir** ataques contra AD; nunca **como executar**.
+
+**Por que importa:** AD é alvo recorrente em ransomware — comprometer Domain Controller = comprometer toda a empresa. Detecção precoce em horas vs. dias muda o desfecho de um incidente.
+
+#### Kerberoasting (T1558.003)
+
+**O que é (descrição mínima do IoC):** atacante autenticado solicita TGS para Service Principal Name (SPN) de service account, recebe ticket criptografado com a senha hash do SA, e quebra offline.
+
+**Sinais de detecção:**
+- Event ID 4769 (TGS request) com `Ticket Encryption Type = 0x17` (RC4-HMAC) — RC4 é fraco e é o que o atacante força para acelerar quebra offline. Em ambientes modernos, AES (0x12) deve ser default.
+- Alto volume de 4769 de um único principal em curto intervalo (atacante quer enumerar)
+- 4769 para contas com `ServicePrincipalName` setado em contas privilegiadas (Domain Admin com SPN = alarme vermelho)
+
+**Sigma rule esqueleto:**
+```yaml
+detection:
+  selection:
+    EventID: 4769
+    TicketEncryptionType: '0x17'
+  condition: selection
+```
+
+**Mitigação:**
+- Service accounts → **gMSA (Group Managed Service Accounts)** — senha gerenciada pelo AD, rotação automática, 128 chars
+- Deny RC4 em política de domínio (force AES)
+- Auditar SPNs em contas privilegiadas (`Get-ADUser -Filter {ServicePrincipalName -ne $null}` defensivo)
+- Senhas de service account ≥ 25 chars (resistente a brute force offline)
+
+#### AS-REP Roasting (T1558.004)
+
+**O que é:** contas com `DONT_REQ_PREAUTH` flag (pre-autenticação Kerberos desabilitada) emitem ticket inicial sem proof-of-possession — atacante recebe ciphertext crackable.
+
+**Sinais de detecção:**
+- Event ID 4768 (TGT request) com `Pre-Authentication Type = 0` para contas que não deveriam ter
+- Account com `DONT_REQ_PREAUTH` em LDAP (auditoria preventiva)
+
+**Mitigação:**
+- Auditoria periódica: nenhuma conta deveria ter `DONT_REQ_PREAUTH` exceto casos legacy explicitamente justificados
+- Remover flag onde possível (script de remediação)
+
+#### DCSync (T1003.006)
+
+**O que é:** atacante com privilégio `Replicating Directory Changes` simula um Domain Controller e solicita replicação de senhas (`GetNCChanges` RPC) — recebe NTDS.dit hashes.
+
+**Sinais de detecção:**
+- Event ID 4662 com `Properties` contendo `1131f6aa-9c07-11d1-f79f-00c04fc2dcd2` (Replicating Directory Changes GUID)
+- Origem de IP que NÃO é um Domain Controller — alarme vermelho
+- Conta executando que NÃO está na lista esperada (apenas DC computer accounts + replicação accounts conhecidas)
+
+**Sigma rule esqueleto:**
+```yaml
+detection:
+  selection:
+    EventID: 4662
+    Properties|contains: '1131f6aa-9c07-11d1-f79f-00c04fc2dcd2'
+  filter_known_dc:
+    SubjectUserName|endswith: '$'  # DC computer accounts terminam em $
+  condition: selection and not filter_known_dc
+```
+
+**Mitigação:**
+- Princípio de menor privilégio: ninguém além de DCs deveria ter `Replicating Directory Changes`
+- Auditar mensalmente quem tem o privilégio
+- Tier model (Microsoft Enhanced Security Admin Environment, ESAE) — separar admin de domínio em forest dedicada
+
+#### Golden Ticket / Silver Ticket (T1558.001, T1558.002)
+
+**O que é:** atacante com hash do KRBTGT account forja TGT com privilégios arbitrários (Golden) ou TGS para serviço específico (Silver).
+
+**Sinais de detecção:**
+- TGT com `Lifetime` anormalmente longo (>10h padrão)
+- TGT request (4768) seguido por TGS request (4769) com Encryption mismatch
+- Activity logs em DC sem 4768 correspondente para usuário ativo (TGT "do nada")
+- Anomalia comportamental: usuário acessando recursos fora de padrão
+
+**Mitigação:**
+- Rotação periódica de KRBTGT password (2x consecutivas para invalidar tickets existentes)
+- Reduzir Maximum Kerberos Token Lifetime (default 10h → 4-8h)
+- Monitorar uso de KRBTGT account (deveria ser zero)
+- Honey tokens (contas isca com SPN — qualquer 4769 para essas = atacante)
+
+#### Pass-the-Hash / Over-Pass-the-Hash (T1550.002)
+
+**O que é:** atacante reusa hash NTLM ou usa hash para forjar TGT.
+
+**Sinais de detecção:**
+- Logon Type 9 (NewCredentials) — NTLM em ambiente que deveria ser Kerberos-only
+- Event ID 4624 com NTLM Authentication Package em DC ou server crítico
+- Comportamento anômalo: usuário logando de host que normalmente não acessa
+
+**Mitigação:**
+- Desativar NTLM onde possível (gradual: audit → restrict → deny)
+- Protected Users group + Authentication Policy Silos
+- Credential Guard (Windows 10/11) — isolamento de LSASS
+
+#### Ferramentas defensivas (foco em detecção, não em ataque)
+
+- **Microsoft Defender for Identity** (antigo Azure ATP) — detecção comportamental cross-AD
+- **Splunk Enterprise Security / Microsoft Sentinel** — Sigma + KQL rules
+- **BloodHound — modo defensivo** (auditoria de attack paths, não execução) — apenas para mapeamento defensivo de tier model
+- **PingCastle** — gratuita, gera relatório de maturidade AD com Score
+- **Purple Knight** (Semperis) — health check AD
+
+#### Hardening preventivo
+
+- **Tier model** (Microsoft ESAE):
+  - Tier 0 (DCs, ADFS, PKI) — máxima proteção
+  - Tier 1 (Servers business)
+  - Tier 2 (Workstations user)
+  - Sem credencial Tier 0 jamais usada em Tier 1/2
+- **Privileged Access Workstation (PAW)** — admin só de máquina dedicada limpa
+- **Just-In-Time / Just-Enough-Admin** (JIT/JEA)
+- **MFA em DC RDP** (Smart Card ou FIDO2)
+- **Backup offline de NTDS.dit** + DRP testado
+
+#### Anti-padrões defensivos
+
+- Acreditar que "MFA no usuário" basta (atacante após Kerberoast já tem hash, não precisa MFA)
+- Detecção por nome de ferramenta (assinatura) — atacante muda nome rápido; foco em comportamento/IoCs
+- Tier model "no papel" mas admin de domínio loga em qualquer máquina (anula)
+- KRBTGT nunca rotacionado (senha eterna)
+- Honeytoken sem alerta atado a SIEM
+
 ## Entrega
 Plano de identidade: matriz de menor privilégio (achados + remediação), desenho Tier 0/1/2 do AD,
 configuração de SSO/SCIM, processo de governança de lifecycle, política de PAM/cofre, e regras de

@@ -48,3 +48,46 @@ O `bibliotecario` cataloga, **por referência**, as personas destes squads (entr
 
 > A linha entre `<!-- ... -->` é **exemplo comentado** (não é mente real). A tabela é populada pelo
 > `bibliotecario` a cada dissecação ou indexação por referência. Mantém-se em paridade com `indice.yaml`.
+
+## Disciplinas (B11 — 2026-06-29)
+
+Bucket B11 do Ritual de Absorção do Caos: absorção do material `academic/` do upstream
+[`msitarzewski/agency-agents@a597cb6`](https://github.com/msitarzewski/agency-agents) (MIT). Este
+bucket trouxe **5 disciplinas-âncora** (a serem dissecadas em dossiês `tipo: disciplina` no modelo
+[`_modelo-dossie-disciplina.md`](mentes/_modelo-dossie-disciplina.md)) e **9 frameworks operacionais
+de status `semente`** prontos para consumo pelos squads. Os dossiês de disciplina vivem em
+`mentes/disciplina-<slug>/dossie.md`; os frameworks em `frameworks/<slug>/framework.md` com
+seção "Procedência" no fim do mesmo arquivo.
+
+### Dossiês de disciplina (a dissecar)
+
+| Disciplina | Sub-mentes-âncora | Linhagem Kolden | Dossiê (a escrever) |
+|---|---|---|---|
+| Antropologia funcional | Durkheim, Malinowski | `antropologia-funcional` | `mentes/disciplina-antropologia-funcional/dossie.md` |
+| Antropologia ritual | van Gennep, Turner | `antropologia-ritual` | `mentes/disciplina-antropologia-ritual/dossie.md` |
+| Geografia físico-humana | Humboldt, Köppen, Christaller | `geografia-fisico-humana` | `mentes/disciplina-geografia-fisico-humana/dossie.md` |
+| Historiografia da Escola dos Annales | Bloch, Febvre, Braudel | `historiografia-annales` | `mentes/disciplina-historiografia-annales/dossie.md` |
+| Estudos literários / narratologia | Tomashevsky, Genette, Aristóteles, Bharata Muni, Vogler, Truby | `formalismo-narratologico` + `estrutura-narrativa-contemporanea` | `mentes/disciplina-estudos-literarios-narratologia/dossie.md` |
+
+> Observação: psicologia científica também entra com 2 frameworks (perfil multi-lente + dinâmica
+> relacional) — a dissecação como disciplina sai num bucket dedicado, porque o escopo de
+> sub-mentes-âncora é maior (Costa Jr., McCrae, Bowlby, Ainsworth, Vaillant, Beck, Karpman, Berne,
+> Erikson, Bateson, Walker).
+
+### Frameworks operacionais (`status: semente`)
+
+| Slug | Título | Linhagem | Squads consumidores |
+|---|---|---|---|
+| `funcao-antes-da-estetica` | Função antes da estética | `antropologia-funcional` | Aglaia, Caliope |
+| `rito-de-passagem-3-estagios` | Rito de passagem em 3 estágios | `antropologia-ritual` | Caliope, Aglaia, Pluto |
+| `worldbuilding-fisico-bottom-up` | Worldbuilding físico bottom-up (com anexo de regras invioláveis) | `geografia-fisico-humana` | Orfeu |
+| `longue-duree-3-camadas` | Longue durée em 3 camadas | `historiografia-annales` | Argos, Themis, Metis |
+| `diagnostico-narrativo-fabula-sjuzhet` | Diagnóstico narrativo: fabula vs. sjuzhet | `formalismo-narratologico` | Caliope, Orfeu |
+| `arco-personagem-5-pontos` | Arco de personagem em 5 pontos (want / need / lie / ghost) | `estrutura-narrativa-contemporanea` | Caliope, Orfeu, Aglaia |
+| `narratologia-comparada-3-tradicoes` | Narratologia comparada em 3 tradições | `formalismo-narratologico` (ramos comparativos) | Caliope, Orfeu |
+| `perfil-psicologico-multi-lente` | Perfil psicológico multi-lente (com anexo de respostas a trauma) | `psicologia-cientifica` | Aletheia, Caliope, Aglaia, Pluto |
+| `dinamica-relacional` | Dinâmica relacional em 6 dimensões | `psicologia-cientifica` | Caliope, Pluto, Hestia |
+
+> Cada framework traz `procedência` rastreada à disciplina-mãe e atribuição MIT ao upstream no
+> próprio arquivo. Reescritos em PT-BR, sem cópia literal. Promoção `semente → vigente` ao concluir
+> o dossiê da disciplina-mãe.

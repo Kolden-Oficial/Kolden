@@ -2,8 +2,8 @@
 # Mantido pelo `sintetizador` (tier 3). Cada framework destila uma mente ou uma
 # linhagem inteira em N passos acionáveis, e TODO framework tem procedencia.md
 # citando de qual mente veio cada passo (veto nenhum_framework_sem_procedencia).
-versao: 1
-atualizado-em: 2026-06-22
+versao: 2
+atualizado-em: 2026-06-29
 
 # Estrutura em disco por framework:
 #   frameworks/<slug>/framework.md     — os N passos acionáveis
@@ -24,3 +24,72 @@ frameworks:
     linhagem: psicanalise-do-desejo
     squads-consumidores: [caliope, aglaia, peitho, pluto]
     status: vigente
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Bucket B11 — Frameworks acadêmicos (absorção 2026-06-29)
+  # Origem: msitarzewski/agency-agents@a597cb6 (academic/) — MIT.
+  # Status `semente`: estrutura completa, procedência rastreada; entra em
+  # `vigente` quando a disciplina-mãe for dissecada em dossiê próprio.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: funcao-antes-da-estetica
+    titulo: "Função antes da estética"
+    mentes-fonte: [emile-durkheim, bronislaw-malinowski]
+    linhagem: antropologia-funcional
+    squads-consumidores: [aglaia, caliope]
+    status: semente
+
+  - slug: rito-de-passagem-3-estagios
+    titulo: "Rito de passagem em 3 estágios"
+    mentes-fonte: [arnold-van-gennep, victor-turner]
+    linhagem: antropologia-ritual
+    squads-consumidores: [caliope, aglaia, pluto]
+    status: semente
+
+  - slug: worldbuilding-fisico-bottom-up
+    titulo: "Worldbuilding físico bottom-up"
+    mentes-fonte: [vladimir-koppen, alexander-von-humboldt, walter-christaller]
+    linhagem: geografia-fisico-humana
+    squads-consumidores: [orfeu]
+    status: semente
+
+  - slug: longue-duree-3-camadas
+    titulo: "Longue durée em 3 camadas"
+    mentes-fonte: [fernand-braudel, marc-bloch, lucien-febvre]
+    linhagem: historiografia-annales
+    squads-consumidores: [argos, themis, metis]
+    status: semente
+
+  - slug: diagnostico-narrativo-fabula-sjuzhet
+    titulo: "Diagnóstico narrativo: fabula vs. sjuzhet"
+    mentes-fonte: [boris-tomashevsky, gerard-genette]
+    linhagem: formalismo-narratologico
+    squads-consumidores: [caliope, orfeu]
+    status: semente
+
+  - slug: arco-personagem-5-pontos
+    titulo: "Arco de personagem em 5 pontos (want / need / lie / ghost)"
+    mentes-fonte: [john-truby, christopher-vogler, joseph-campbell]
+    linhagem: estrutura-narrativa-contemporanea
+    squads-consumidores: [caliope, orfeu, aglaia]
+    status: semente
+
+  - slug: narratologia-comparada-3-tradicoes
+    titulo: "Narratologia comparada em 3 tradições"
+    mentes-fonte: [aristoteles, bharata-muni, abhinavagupta]
+    linhagem: formalismo-narratologico
+    squads-consumidores: [caliope, orfeu]
+    status: semente
+
+  - slug: perfil-psicologico-multi-lente
+    titulo: "Perfil psicológico multi-lente"
+    mentes-fonte: [paul-costa-jr, robert-mccrae, john-bowlby, mary-ainsworth, george-vaillant, aaron-beck, stephen-karpman, erik-erikson, pete-walker]
+    linhagem: psicologia-cientifica
+    squads-consumidores: [aletheia, caliope, aglaia, pluto]
+    status: semente
+
+  - slug: dinamica-relacional
+    titulo: "Dinâmica relacional em 6 dimensões"
+    mentes-fonte: [stephen-karpman, eric-berne, john-bowlby, mary-ainsworth, gregory-bateson]
+    linhagem: psicologia-cientifica
+    squads-consumidores: [caliope, pluto, hestia]
+    status: semente
