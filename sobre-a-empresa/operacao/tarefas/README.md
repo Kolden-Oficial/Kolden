@@ -113,8 +113,6 @@ O 5º bucket é o que faz a Kolden crescer: cada item bloqueado é um pedido imp
 
 - Skill `/tarefa` ainda não existe — esta é a infra (radar + schema + playbooks); o comando
   vem em sessão Caos separada.
-- Doc Google `[R] Alinhamento` (Rosie) — bloqueado pela API Docs desabilitada no projeto GCP.
-  Ronan habilita, depois a gente reimporta.
 - As 5 abas operacionais da planilha (Affordable, Brayan's, Henrique, Mat3vic, Vilela) são
   checklists contratuais — NÃO foram importadas nesta passada para não inundar o radar.
   Cada uma vira playbook `contrato-<cliente>` numa segunda passada.

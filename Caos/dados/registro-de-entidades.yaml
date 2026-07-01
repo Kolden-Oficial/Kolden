@@ -546,6 +546,23 @@ entidades:
     status: ativo
     origem: "ritual completo do Caos 2026-06-26 (sistema hierárquico de 5 camadas)"
 
+  briefing-padrao:
+    path: ".claude/skills/briefing-padrao/"
+    tipo: skill
+    dominio: outro
+    proposito: "Gera o prompt-de-abertura padronizado para subagentes (Agent tool) a partir do Contrato de Missão YAML do Olimpo. Ramifica por tier (orquestrador Tier-0 vs especialista executor) e injeta apenas o contexto adjacente ao nó — evita subagente cego e duplicação de briefing em fan-out."
+    keywords: [briefing, subagente, agent-tool, prompt-de-abertura, contrato-de-missao, tier-0, especialista, fan-out, orquestrador, despacho, kolden]
+    usadoPor: [orquestracao-de-subagentes-paralelos, criacao-de-subagent, hermes-chief]
+    dependencias: []
+    adaptabilidade:
+      score: 0.85
+      restricoes: ["NÃO modifica o Contrato de Missão — apenas lê", "respeita o schema canônico em Olimpo/contratos/contrato-de-missao.schema.md", "PT-BR sempre", "moldes Tier-0 vs especialista não devem ser misturados"]
+      pontosDeExtensao: ["adicionar molde para verificador (Dike) quando rodar na subida", "cache de briefings já gerados por missao_id+agente"]
+    versao: "1.0.0"
+    criadoEm: "2026-06-30T00:00:00Z"
+    status: ativo
+    origem: "Plano de economia de tokens 2026-06-30 (apertar ecossistema Kolden, F4). Workspace-wide (.claude/skills/) — invocável por qualquer agente sem cruzar fronteira de squad. Complementa Contrato de Missão (Hermes camada-2) sem substituí-lo."
+
 _exemplos_antigos:
   # Vazio na fundação. Cada criação preenche este bloco via Fase 8.
   # Exemplo (apague quando o primeiro agente real for criado):

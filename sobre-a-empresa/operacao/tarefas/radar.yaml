@@ -8,8 +8,8 @@
 versao_schema: "0.1.0"
 gerado_em: "2026-06-30"
 fonte_inicial: "planilha-google:1TNtxopvAkj9JFWRQNVYsbHD_43CRBWc_JpRhh8sjypY (aba Visão Geral, linhas 5-138)"
-total_tarefas: 114
-proximo_id: "KLD-2026-137"
+total_tarefas: 118
+proximo_id: "KLD-2026-141"
 
 tarefas:
 
@@ -2576,3 +2576,130 @@ tarefas:
     Saída esperada: CSV de leads brutos → planilha qualificada (Aletheia) → copy de abordagem (Caliope) → decisão humana de quem abordar.
     Próximo passo concreto: Hermes Chief encaminha para Argos com o playbook como roteiro.
   playbook: prospeccao-grupo-facebook-publico
+
+# ─── KOLDEN OS — reorganização workspace (2026-06-30) ─────────────────────────
+- id: KLD-2026-137
+  titulo: "Criar playbook `organizacao-de-documentos` — SOP de onde guardar e como catalogar cada tipo de doc"
+  contexto:
+    tipo: cliente-interno
+    slug: kolden-os
+    dossie: null
+    projeto: null
+  estado: pendente
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden:
+    classificacao: agente-instrumenta-humano-decide
+    agentes_envolvidos: [ananke, argos]
+    bloqueio_capacidade: null
+  origem:
+    fonte: chat
+    fonte_id: "sessao-curious-ladybug-2026-06-30"
+    importado_em: 2026-06-30
+  observacao: |
+    Playbook novo em `sobre-a-empresa/operacao/tarefas/playbooks/organizacao-de-documentos.md`.
+    Cobre: (a) inventário de tipos de doc (SOP, dossiê, laudo, memória, playbook, contrato...);
+    (b) pasta canônica de cada tipo; (c) naming (kebab-case, prefixo por tipo); (d) frontmatter mínimo;
+    (e) regra de projeção (SSoT vs read-only).
+    Pré-requisito das tarefas 138 e 140. Candidato a virar SOP Ananke depois da primeira execução real.
+  playbook: null
+
+- id: KLD-2026-138
+  titulo: "Definir estrutura canônica das informações da Kolden — taxonomia, pastas e naming"
+  contexto:
+    tipo: cliente-interno
+    slug: kolden-os
+    dossie: null
+    projeto: null
+  estado: pendente
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden:
+    classificacao: agente-instrumenta-humano-decide
+    agentes_envolvidos: [argos, ananke]
+    bloqueio_capacidade: null
+  origem:
+    fonte: chat
+    fonte_id: "sessao-curious-ladybug-2026-06-30"
+    importado_em: 2026-06-30
+  observacao: |
+    Objetivo: acabar com a dispersão descrita no pedido do Ronan (2026-06-30) — "BASTANTE documentos
+    perdidos e muito separados". Trabalha em paralelo com 137: o playbook diz *como catalogar*, esta
+    tarefa diz *onde catalogar*.
+    Escopo de mapeamento: sobre-a-empresa/, Caos/, Hermes/, Pluto/, Aletheia/, Pheme/, Liceu/,
+    Prometeu/, .claude/registros/, <squad>/agent-memory/, ~/.claude/projects/<workspace>/memory/.
+    Produto: doc canônico "estrutura-de-informacoes-kolden.md" listando, para cada tipo de conteúdo,
+    a pasta oficial + as pastas legadas a esvaziar.
+  playbook: null
+
+- id: KLD-2026-139
+  titulo: "Vistoriar processo dos agents, pastas e estrutura do workspace de agentes"
+  contexto:
+    tipo: cliente-interno
+    slug: kolden-os
+    dossie: null
+    projeto: null
+  estado: pendente
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden:
+    classificacao: agente-faz-com-input
+    agentes_envolvidos: [caos, dike, argos]
+    bloqueio_capacidade: null
+  origem:
+    fonte: chat
+    fonte_id: "sessao-curious-ladybug-2026-06-30"
+    importado_em: 2026-06-30
+  observacao: |
+    Sucessora natural da vistoria estrutural v2 (2026-06-28, `.claude/registros/auditoria/2026-06-28-vistoria-v2/`).
+    Foco desta rodada: processo dos agents (moldes, hierarquia, ritual, hooks Stop), organização de
+    pastas (Caos/, Hermes/, squads/, sobre-a-empresa/) e coesão estrutural.
+    Método já validado (ver memória `feedback_auditoria_de_frota_metodo.md`): Glob recursivo
+    `**/agents/*.md`, exclusões `_staging` e `.venv`, contagem própria (subagentes erram aritmética),
+    paginação por bloco.
+    Saída: laudo em `.claude/registros/auditoria/<data>-vistoria-v3/` com achados JSONL append-only.
+  playbook: null
+
+- id: KLD-2026-140
+  titulo: "Consolidar documentos dispersos/perdidos pelo workspace da Kolden"
+  contexto:
+    tipo: cliente-interno
+    slug: kolden-os
+    dossie: null
+    projeto: null
+  estado: pendente
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden:
+    classificacao: agente-faz-com-input
+    agentes_envolvidos: [argos, ananke]
+    bloqueio_capacidade: null
+  origem:
+    fonte: chat
+    fonte_id: "sessao-curious-ladybug-2026-06-30"
+    importado_em: 2026-06-30
+  observacao: |
+    Depende de 137 (playbook precisa existir) e 138 (estrutura canônica precisa estar definida).
+    Executa o playbook `organizacao-de-documentos` sobre o repositório real.
+    Escopo da varredura: (a) docs órfãos sem pasta canônica, (b) duplicatas em lugares diferentes,
+    (c) docs em inglês que deveriam estar em PT-BR, (d) READMEs mortos ou desatualizados,
+    (e) memórias soltas fora de `MEMORY.md`.
+    Regra dura: NÃO deletar nada sem confirmação — mover/consolidar apenas com aprovação do Ronan
+    por lote (ver política em §5.6 do CLAUDE.md — operações destrutivas exigem confirmação humana).
+  playbook: organizacao-de-documentos

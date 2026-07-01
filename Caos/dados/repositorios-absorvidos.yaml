@@ -347,7 +347,7 @@ repositorios:
           - "B08: [G4, G5, G10, G18, G19, G20, G22, G23, G24, G25, G26, G27, G28, G29]"
           # B05: G24 (cross-platform content adaptation = jurisdição Pheme — já coberto por matriz-de-conteudo + skills de plataforma)
           - "B05: [G24]"
-        entidades: ["egide", "aletheia", "prometeu", "pactolo", "olimpo", "cairos", "metis", "liceu", "harmonia", "aglaia"]
+        entidades: ["egide", "aletheia", "prometeu", "pactolo", "olimpo", "cairos", "metis", "liceu", "harmonia", "aglaia", "emporos", "pluto"]
         notas: |
           B01 (Égide) APLICADO em 2026-06-29: 3 skills NOVAS + 5 ESTENDIDAS. Veto ofensivo preservado em G24/G25. Catálogo 29→32 skills.
           F6.5: 24 REUSE + 11 ADAPT + 0 DESCARTADO + 0 PERDIDO = 35 ✓. Relatório: relatorio-de-perda-egide.md.
@@ -379,7 +379,12 @@ repositorios:
           Fronteiras inter-squad declaradas explicitamente: walkthrough-de-persona vs Caliope/robert-cialdini (audita vs escreve), pesquisa-qualitativa vs Aletheia (UX em produto vs Mom Test pré-produto), micro-interacoes (decide) vs Harmonia/implementacao-ui (executa).
           F6.5: 26 ABSORVIDO + 1 DESCARTADO + 0 PERDIDO = 27 ✓. Relatório: relatorio-de-perda-b05-design.md.
 
-          B02-B03, B06, B10, B12-B15 com decisão F5 aprovada (decisao-f5-CONSOLIDADO.md), pendente F6 em sessões dedicadas.
+          B06 (Emporos + Pluto, sales) PARCIALMENTE APLICADO em 2026-06-30: Pluto 100% completo (1ª camada .claude/skills/ criada do zero + 1 agente novo hormozi-sales-coach + 3 skills CREATE coaching-oasp/call-coaching-temporal/ramp-30-60-90 + 4 REUSE confirmados G22-G25 DNA Hormozi). Emporos parcial: 4 agentes novos (gestor-de-contas-estrategicas/coach-de-discovery/engenheiro-de-pre-vendas/analista-de-pipeline) + 4 ADAPTs (qualificacao +MEDDPICC, negociacao +AECR, cadencia +signal/anatomia/sequencia, redacao +win-themes) aplicados. **PENDENTE: 13 skills CREATE Emporos** + catálogo + atualização chief/squad.yaml (sessão interrompida por reset de quota Anthropic).
+          PERDIDO=0 preservado porque os 13 pendentes têm decisão F5 aprovada + agente-dono criado + plano detalhado.
+          Status atual: 20 ABSORVIDO-CONFIRMADO + 13 ABSORVIDO-PENDENTE + 0 DESCARTADO + 0 PERDIDO = 33. Relatório: relatorio-de-perda-b06-sales.md (PARCIAL).
+          Ação requerida: sessão futura completa as 13 skills via subagentes (plano em decisao-f5-b06-sales.md Anexo A).
+
+          B02-B03, B10, B12-B15 com decisão F5 aprovada (decisao-f5-CONSOLIDADO.md), pendente F6 em sessões dedicadas.
     licenca: "MIT"
     status: parcial
 
