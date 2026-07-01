@@ -62,6 +62,35 @@ Regras de escrita:
 - Se um aprendizado já existe, **fortaleça/atualize** a entrada em vez de duplicar.
 - Itens curtos, em uma linha, no mesmo estilo telegráfico das memórias existentes.
 
+### Trim por gatilho (≥150 linhas) — disparado ANTES da gravação
+
+Antes de adicionar conteúdo novo ao `MEMORY.md`, **conte as linhas** do arquivo atual.
+Se for **≥ 150 linhas**, execute a consolidação preventiva (limite hard de 200 do índice global):
+
+1. **Backup primeiro (na primeira vez que esse MEMORY.md sofrer trim).** Copiar o arquivo
+   para `<raiz-do-agente>/agent-memory/backups/<agent-id>-<AAAA-MM-DD>.md`. Se a pasta
+   `backups/` não existir, criar. Se já existir backup do dia, **não sobrescrever** —
+   incrementar com sufixo `-Nº` (ex.: `-2`).
+
+2. **Mover o bloco mais antigo de `## Padrões Ativos` para `## Arquivado`.** Critério:
+   o conjunto de itens cuja data mais recente é a menor entre todos os blocos. Manter
+   intacta a `### Categoria` que continua relevante (≥1 item dos últimos 60 dias).
+   Itens movidos viram entradas no formato:
+   `- ~~{padrão}~~ | Arquivado: {AAAA-MM-DD} | Motivo: consolidação por trim (idade {N} dias)`
+
+3. **Comprimir `## Arquivado` em sumário de 1 linha por padrão.** Se há entradas longas
+   (>1 linha), reescrever cada uma como linha única preservando: nome do padrão, data
+   de arquivamento e motivo. Não inventar — só compactar.
+
+4. **NUNCA deletar.** Trim só move e compacta. Se em dúvida sobre arquivar um item,
+   mantenha em `## Padrões Ativos`.
+
+5. **Respeitar a regra de resolução de memória** (seção abaixo). MEMORY.md de agente
+   AIOX do Prometeu (`Prometeu/.aiox-core/development/agents/<id>/MEMORY.md`) é canônico
+   — trim aplica igual, com backup na pasta `agent-memory/backups/` da raiz do Prometeu.
+
+Após o trim, **prossiga com a gravação normal** dos novos aprendizados (volte ao §4).
+
 ## 5. Registrar
 Anexe uma linha ao log de aprendizado `registros/aprendizado.log` (criando se necessário):
 ```

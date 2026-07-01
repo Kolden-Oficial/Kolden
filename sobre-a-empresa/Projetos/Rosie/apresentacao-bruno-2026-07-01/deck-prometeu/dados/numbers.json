@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "atualizado_em": "2026-06-30",
+  "audiencia": "Bruno (sócio operacional Rosie)",
+  "disclaimer_global": "Premissas de descoberta — recalibrar após 30 dias de dados ao vivo (GA4 + CAPI Meta + RD Station + Solomon/Nuvemshop).",
+  "investimento_midia": {
+    "fase_1_descobrimento": {
+      "periodo": "M1-M2 (60 dias)",
+      "verba_mensal_total": 18000,
+      "meta_ads": 12000,
+      "google_ads": 6000,
+      "tiktok_ads": 0,
+      "objetivo": "Validar hipóteses de criativo, oferta e públicos. Volume mínimo viável para coletar sinal estatístico em 30d."
+    },
+    "fase_2_ativacao": {
+      "periodo": "M3-M4 (60 dias)",
+      "verba_mensal_total": 35000,
+      "meta_ads": 22000,
+      "google_ads": 10000,
+      "tiktok_ads": 3000,
+      "objetivo": "Escalar criativos vencedores, ativar TOFU agressivo, abrir TikTok orgânico→pago."
+    },
+    "fase_3_otimizacao": {
+      "periodo": "M5-M6 (60 dias)",
+      "verba_mensal_total": 60000,
+      "meta_ads": 36000,
+      "google_ads": 18000,
+      "tiktok_ads": 6000,
+      "objetivo": "Escala consistente com retorno medido. Otimização de funil + LTV via email/RD + recompra via Kommo."
+    }
+  },
+  "metricas_alvo": {
+    "ticket_medio_alvo": 380,
+    "ticket_medio_atual_inferido": 250,
+    "cac_alvo_blended": 95,
+    "cac_alvo_aquisicao_paga": 130,
+    "cac_alvo_recompra_email": 25,
+    "roas_minimo_blended": 4.0,
+    "roas_meta_paga": 3.0,
+    "roas_meta_recompra": 12.0,
+    "ltv_alvo_12m": 720,
+    "ltv_cac_alvo": 5.5,
+    "taxa_recompra_alvo_90d": 0.22,
+    "frete_gratis_threshold": 400,
+    "cvr_alvo_site": 0.018,
+    "cvr_alvo_email": 0.045
+  },
+  "meta_gmv": {
+    "m1_m2": 90000,
+    "m3_m4": 220000,
+    "m5_m6": 480000,
+    "soma_6m": 790000,
+    "pico_mensal_m6": 320000
+  },
+  "benchmark_externo": {
+    "insider_store_faturamento_2024": "R$ 400 mi",
+    "insider_store_projecao_2025": "R$ 600 mi",
+    "insider_store_seguidores_ig": "1,1-1,5 mi",
+    "basico_com_fundacao": 2012,
+    "basico_com_linkedin": 1621,
+    "moda_online_brasil_2025": "R$ 2,9 bi (+35% a/a, base Nuvemshop)",
+    "share_lojas_moda_lideradas_por_mulheres": 0.66,
+    "rosie_seguidores_ig_2026_06": 59200,
+    "catarina_tourinho_seguidores_tiktok": "a re-verificar (estimado 1 mi+)"
+  },
+  "premissas_e_disclaimers": [
+    "Verba estimada a partir de benchmarks de DNVB moda Brasil (Insider/Básico) — recalibrar com 30d de CPM/CPC real.",
+    "Ticket médio atual (R$250) inferido do mix de catálogo + meta frete grátis R$400. A verificar com analytics Solomon/Nuvemshop.",
+    "Meta de recompra 22% em 90d é benchmark de moda feminina DTC; depende de cadência email + Catarina mensal.",
+    "GMV M1-M6 totaliza R$790k — base para Bruno calcular ROI vs. contrato Kolden (R$4k fixo + 3% sobre tráfego pago e CRM).",
+    "Plano não inclui produção de criativo (verba de mídia ≠ verba de produção). Produção entra em playbook separado."
+  ]
+}

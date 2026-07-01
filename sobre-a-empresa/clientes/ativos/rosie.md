@@ -23,6 +23,7 @@ atualizado_em: "2026-06-25"
 - **Status:** ativo
 - **Pasta no Drive:** [abrir](https://drive.google.com/drive/folders/1R1pM0_Ahp0phc_93ay6IHzotQ1ichzwB)
 - **Projeto (workspace):** [`Projetos/Rosie`](../../../Projetos/Rosie/leia-me.md) — onde a execução acontece (brandbook, pesquisa, código).
+- **Alinhamento mais recente:** [`Projetos/Rosie/alinhamento.md`](../../../Projetos/Rosie/alinhamento.md) — compilado da reunião 26/05/2026 (meta R$ 200k/mês, cadência semanal sexta 10:15).
 
 ## 2. Contato & Stakeholders
 - **Decisor / ponto focal:** representada pelo sócio administrador (nome não detalhado no corpo do contrato — qualificação remetida ao contrato social, ANEXO I). **Sem registro nominal no Drive.**

@@ -1,0 +1,101 @@
+/* ═══════════════════════════════════════════════════════════════════ */
+/* TIER 1 — TOKENS PRIMITIVOS                                          */
+/* Cores brutas, escalas tipográficas, espaçamentos primitivos.         */
+/* NUNCA consumir diretamente em componente — sempre via semantic.      */
+/* Fonte canônica: docs/tokens.json                                     */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Color · Rose (Manual de Marca Rosie v.01.04.2024) */
+  --rose-50:  #FBF5F8;
+  --rose-100: #F8E3E8;
+  --rose-200: #F2E2E9;
+  --rose-300: #E6D2DC;   /* Pantone 503 C — protagonista */
+  --rose-400: #C9A8B7;
+  --rose-500: #A88496;
+  --rose-600: #7F6271;
+
+  /* Color · Ink (Manual oficial — preto quente Black 5 C) */
+  --ink-50:  #F4F2F0;
+  --ink-100: #E8E6E2;
+  --ink-200: #BDBAB5;
+  --ink-300: #807A6F;
+  --ink-400: #403B33;
+  --ink-500: #14100C;
+  --ink-600: #0A0805;
+
+  /* Color · Neutros */
+  --white:   #FFFFFF;
+  --grey-50: #FAFAFA;
+  --grey-100: #EBEBEB;   /* Cool Gray 1 C */
+  --grey-200: #D5D5D5;
+  --grey-300: #A0A0A0;
+  --offwhite: #E8E6F1;   /* Kolden — peças escuras */
+
+  /* Color · Kolden Scarlet (sinal) */
+  --scarlet-400: #FF6450;
+  --scarlet-500: #FF3D22;  /* identidade Kolden */
+  --scarlet-600: #D62F15;
+
+  /* Typography · Famílias */
+  --font-marcellus: 'Marcellus', Georgia, 'Times New Roman', serif;
+  --font-dm-sans:   'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-lato:      'Lato', system-ui, sans-serif;
+
+  /* Typography · Escala (modular) */
+  --scale-100:  0.62rem;
+  --scale-200:  0.75rem;
+  --scale-300:  0.85rem;
+  --scale-400:  0.95rem;
+  --scale-500:  1.00rem;
+  --scale-600:  1.25rem;
+  --scale-700:  1.70rem;
+  --scale-800:  2.50rem;
+  --scale-900:  4.00rem;
+  --scale-1000: 6.00rem;
+
+  /* Typography · Line-heights */
+  --lh-tight: 1.1;
+  --lh-snug: 1.2;
+  --lh-normal: 1.3;
+  --lh-relaxed: 1.4;
+  --lh-loose: 1.55;
+
+  /* Typography · Letter-spacing */
+  --ls-tight: -0.01em;
+  --ls-normal: 0;
+  --ls-wide: 0.08em;
+  --ls-wider: 0.12em;
+  --ls-widest: 0.18em;
+
+  /* Spacing · Escala base */
+  --space-50:  0.25rem;
+  --space-100: 0.50rem;
+  --space-200: 1.00rem;
+  --space-300: 1.75rem;
+  --space-400: 3.00rem;
+  --space-500: 5.00rem;
+
+  /* Radius */
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+
+  /* Shadow */
+  --shadow-none: none;
+  --shadow-sm: 0 1px 2px rgba(20,16,12,0.08);
+  --shadow-md: 0 4px 8px rgba(20,16,12,0.12);
+  --shadow-lg: 0 8px 24px rgba(20,16,12,0.16);
+  --shadow-elevated: 0 4px 16px rgba(20,16,12,0.2);
+
+  /* Z-index */
+  --z-base: 0;
+  --z-raised: 5;
+  --z-overlay: 10;
+  --z-modal: 100;
+
+  /* Breakpoints (uso em media queries — não consumível) */
+}

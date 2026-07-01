@@ -1,0 +1,163 @@
+/* ═══════════════════════════════════════════════════════════════════ */
+/* TIER 2 — TOKENS SEMÂNTICOS                                          */
+/* Mapeiam INTENÇÃO a primitivos. Componentes consomem SEMPRE estes.    */
+/* Trocar primitivo afeta tudo · trocar semantic afeta domínio.         */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Brand */
+  --color-brand-primary:        var(--rose-300);
+  --color-brand-primary-strong: var(--rose-400);
+  --color-brand-primary-subtle: var(--rose-200);
+  --color-brand-accent:         var(--scarlet-500);
+  --color-brand-accent-hover:   var(--scarlet-400);
+
+  /* Text */
+  --color-text-on-light:        var(--ink-500);
+  --color-text-on-light-muted:  var(--ink-300);
+  --color-text-on-dark:         var(--offwhite);
+  --color-text-on-dark-muted:   var(--rose-200);
+  --color-text-on-brand:        var(--ink-500);
+  --color-text-emphasis:        var(--scarlet-500);
+
+  /* Surface */
+  --color-surface-default:      var(--white);
+  --color-surface-elevated:     var(--rose-100);
+  --color-surface-emphasis:     var(--rose-300);
+  --color-surface-cover:        var(--ink-500);
+  --color-surface-section:      var(--ink-500);
+  --color-surface-grey:         var(--grey-100);
+
+  /* Border */
+  --color-border-default:       var(--ink-100);
+  --color-border-emphasis:      var(--scarlet-500);
+  --color-border-subtle:        var(--ink-100);
+  --color-border-strong:        var(--ink-500);
+
+  /* Focus & Interaction */
+  --color-focus-ring:           var(--scarlet-500);
+  --color-hover-overlay:        var(--rose-100);
+
+  /* Funnel · etapa */
+  --color-funnel-tofu:          var(--rose-200);
+  --color-funnel-mofu:          var(--rose-300);
+  --color-funnel-bofu:          var(--rose-400);
+  --color-funnel-cross:         var(--ink-500);
+
+  /* Channels (no mapa) */
+  --color-channel-paid:         var(--scarlet-500);
+  --color-channel-organic:      var(--ink-500);
+  --color-channel-email:        var(--rose-400);
+  --color-channel-direct:       #6b8e7f; /* primitivo dedicado · não no rose/ink */
+
+  /* Typography · usado em componente */
+  --type-display-family:        var(--font-marcellus);
+  --type-display-size:          var(--scale-1000);
+  --type-display-lh:            var(--lh-tight);
+  --type-display-ls:            var(--ls-tight);
+
+  --type-h1-family:             var(--font-marcellus);
+  --type-h1-size:               var(--scale-900);
+  --type-h1-lh:                 var(--lh-tight);
+  --type-h1-ls:                 var(--ls-tight);
+
+  --type-h2-family:             var(--font-marcellus);
+  --type-h2-size:               var(--scale-800);
+  --type-h2-lh:                 var(--lh-snug);
+
+  --type-h3-family:             var(--font-marcellus);
+  --type-h3-size:               var(--scale-700);
+  --type-h3-lh:                 var(--lh-snug);
+
+  --type-body-family:           var(--font-dm-sans);
+  --type-body-size:             var(--scale-600);
+  --type-body-lh:               var(--lh-loose);
+
+  --type-small-family:          var(--font-dm-sans);
+  --type-small-size:            var(--scale-400);
+  --type-small-lh:              var(--lh-relaxed);
+
+  --type-micro-family:          var(--font-dm-sans);
+  --type-micro-size:            var(--scale-200);
+  --type-micro-lh:              var(--lh-normal);
+
+  --type-eyebrow-family:        var(--font-lato);
+  --type-eyebrow-size:          var(--scale-300);
+  --type-eyebrow-ls:            var(--ls-widest);
+  --type-eyebrow-weight:        700;
+
+  --type-data-large-family:     var(--font-marcellus);
+  --type-data-large-size:       var(--scale-900);
+  --type-data-large-lh:         var(--lh-tight);
+
+  /* Spacing semântico */
+  --spacing-content-x:          var(--space-400);
+  --spacing-content-y:          var(--space-400);
+  --spacing-block:              var(--space-300);
+  --spacing-inline:             var(--space-200);
+  --spacing-tight:              var(--space-100);
+
+  /* Radius semântico */
+  --radius-card:                var(--radius-none);
+  --radius-tag:                 var(--radius-pill);
+  --radius-circle:              var(--radius-circle);
+
+  /* Shadow semântico */
+  --shadow-card:                var(--shadow-sm);
+  --shadow-elevated:            var(--shadow-elevated);
+
+  /* Acessibilidade */
+  --min-touch-target:           44px;
+  --focus-outline-width:        2px;
+  --focus-outline-offset:       2px;
+}
+
+/* Responsive — overrides em viewport reduzido */
+@media (max-width: 768px) {
+  :root {
+    --spacing-content-x: var(--space-300);
+    --spacing-content-y: var(--space-300);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* ALIASES retro-compatíveis (dívida técnica documentada em handoff.md) */
+/* Permite que styles inline do HTML continuem funcionando até a iter.2 */
+/* TODO iteração 2: remover styles inline e usar atoms/molecules direto.*/
+/* ═══════════════════════════════════════════════════════════════════ */
+:root {
+  --rose:                       var(--color-brand-primary);
+  --rose-soft:                  var(--rose-200);
+  --rose-deep:                  var(--rose-400);
+  --ink:                        var(--color-text-on-light);
+  --ink-alpha-90:               rgba(20, 16, 12, 0.90);
+  --ink-alpha-60:               rgba(20, 16, 12, 0.60);
+  --ink-alpha-20:               rgba(20, 16, 12, 0.20);
+  --rose-alpha-15:              rgba(230, 210, 220, 0.15);
+  --grey:                       var(--color-surface-grey);
+  --light-pink:                 var(--rose-100);
+  --dark-grey:                  var(--ink-200);
+  --scarlet:                    var(--color-brand-accent);
+  --kolden-ink:                 var(--ink-500);
+  --off-white:                  var(--offwhite);
+  --font-display:               var(--type-h2-family);
+  --font-body:                  var(--type-body-family);
+  --font-system:                Arial, sans-serif;
+  --font-kolden:                var(--font-lato);
+  --kolden-eyebrow-spacing:     var(--ls-widest);
+  --fs-hero:                    clamp(3.5rem, 7vw, 6rem);
+  --fs-h1:                      clamp(2.5rem, 4.5vw, 4rem);
+  --fs-h2:                      clamp(1.8rem, 3vw, 2.5rem);
+  --fs-h3:                      clamp(1.3rem, 2vw, 1.7rem);
+  --fs-body:                    clamp(1rem, 1.4vw, 1.25rem);
+  --fs-small:                   var(--scale-400);
+  --fs-micro:                   var(--scale-200);
+  --lh-display:                 var(--lh-tight);
+  --lh-h2:                      var(--lh-snug);
+  --lh-body:                    var(--lh-loose);
+  --space-xs:                   var(--space-100);
+  --space-sm:                   var(--space-200);
+  --space-md:                   var(--space-300);
+  --space-lg:                   var(--space-400);
+  --space-xl:                   var(--space-500);
+}
