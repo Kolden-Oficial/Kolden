@@ -67,3 +67,6 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
+
+# gerados por crawlee (arquivos grandes de typedoc)
+**/api-typedoc.json
