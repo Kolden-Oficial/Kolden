@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1500" font-family="Lato, system-ui, sans-serif">
+  <defs>
+    <style>
+      .eyebrow { font-family: 'Saira Semi Condensed', 'Rajdhani', sans-serif; font-weight: 600; letter-spacing: 0.08em; }
+      .h1 { font-family: Lato, sans-serif; font-weight: 800; }
+      .h2 { font-family: Lato, sans-serif; font-weight: 700; }
+      .body { font-family: Lato, sans-serif; font-weight: 400; }
+      .tag { font-family: 'Saira Semi Condensed', 'Rajdhani', sans-serif; font-weight: 500; }
+      .mono { font-family: 'Cascadia Mono', 'Consolas', monospace; }
+    </style>
+    <marker id="fa-sc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#FF3D22"/></marker>
+    <marker id="fa-off" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#E8E6F1"/></marker>
+  </defs>
+  <rect width="1400" height="1500" fill="#110E0F"/>
+
+  <text x="60" y="42" class="eyebrow" fill="#6E6668" font-size="14">FLUXO · CONTRATO DE MISSÃO</text>
+  <text x="60" y="82" class="h1" fill="#E8E6F1" font-size="26">Como o Contrato de Missão flui — descida, subida e verificação</text>
+  <text x="60" y="106" class="body" fill="#6E6668" font-size="12">BPMN simplificado · cada camada adiciona-e-assina sua seção · a intencao_original é lacrada uma vez e nunca muda</text>
+
+  <text x="170" y="156" text-anchor="middle" class="eyebrow" fill="#6E6668" font-size="11">CAMADA</text>
+  <text x="670" y="156" text-anchor="middle" class="eyebrow" fill="#6E6668" font-size="11">FLUXO PRINCIPAL</text>
+  <text x="1150" y="156" text-anchor="middle" class="eyebrow" fill="#6E6668" font-size="11">DESVIO / LOOP</text>
+
+  <g id="lane-1">
+    <rect x="80" y="180" width="180" height="40" rx="4" fill="#FF3D22" stroke="#FF3D22" stroke-width="2"/>
+    <text x="170" y="205" text-anchor="middle" class="tag" fill="#110E0F" font-size="13">1 · HUMANO</text>
+  </g>
+  <g id="start">
+    <rect x="540" y="170" width="260" height="60" rx="30" fill="#241F20" stroke="#FF3D22" stroke-width="3"/>
+    <text x="670" y="196" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="13">Input cru do Ronan</text>
+    <text x="670" y="216" text-anchor="middle" class="body" fill="#E8E6F1" font-size="11">(WhatsApp · CLI · chat)</text>
+  </g>
+
+  <g id="lane-2">
+    <rect x="80" y="260" width="180" height="200" rx="6" fill="none" stroke="#FF3D22" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="170" y="360" text-anchor="middle" class="tag" fill="#FF3D22" font-size="13">2 · HERMES</text>
+    <text x="170" y="378" text-anchor="middle" class="body" fill="#FF3D22" font-size="11">(tradução)</text>
+  </g>
+
+  <g id="p2a">
+    <rect x="480" y="270" width="380" height="70" rx="8" fill="#1A1617" stroke="#FF3D22" stroke-width="2"/>
+    <text x="670" y="295" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="14">abre-missao.sh</text>
+    <text x="670" y="315" text-anchor="middle" class="body" fill="#E8E6F1" font-size="11">lacra intencao_original (sha256)</text>
+    <text x="670" y="331" text-anchor="middle" class="body" fill="#E8E6F1" font-size="11">cria Contrato em Olimpo/contratos/</text>
+  </g>
+
+  <g id="p2b">
+    <polygon points="670,360 760,405 670,450 580,405" fill="#241F20" stroke="#E8E6F1" stroke-width="2"/>
+    <text x="670" y="400" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="12">DoR — Definition</text>
+    <text x="670" y="416" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="12">of Ready</text>
+    <text x="670" y="434" text-anchor="middle" class="body" fill="#6E6668" font-size="9">5 campos completos?</text>
+  </g>
+
+  <g id="p2b-side">
+    <rect x="960" y="365" width="380" height="80" rx="8" fill="#241F20" stroke="#FF3D22" stroke-width="2"/>
+    <text x="1150" y="390" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="13">devolve ao Ronan</text>
+    <text x="1150" y="410" text-anchor="middle" class="body" fill="#E8E6F1" font-size="10">perguntas_abertas · dor_completo:false</text>
+    <text x="1150" y="428" text-anchor="middle" class="tag" fill="#FF3D22" font-size="11">não desce sem DoR fechado</text>
+  </g>
+
+  <g id="p2c">
+    <rect x="480" y="480" width="380" height="80" rx="8" fill="#1A1617" stroke="#FF3D22" stroke-width="2"/>
+    <text x="670" y="504" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="13">Matriz de risco → autonomia</text>
+    <text x="500" y="528" class="body" fill="#4CAF50" font-size="11">VERDE: executa-e-avisa</text>
+    <text x="670" y="528" text-anchor="middle" class="body" fill="#FFC107" font-size="11">·  AMARELO: mostra-antes  ·</text>
+    <text x="840" y="528" text-anchor="end" class="body" fill="#FF3D22" font-size="11">VERMELHO: trava-e-pergunta</text>
+    <text x="670" y="548" text-anchor="middle" class="mono" fill="#6E6668" font-size="10">+ ordem_de_maquina + hermes.assinatura</text>
+  </g>
+
+  <g id="lane-3">
+    <rect x="80" y="580" width="180" height="80" rx="6" fill="none" stroke="#E8E6F1" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="170" y="618" text-anchor="middle" class="tag" fill="#E8E6F1" font-size="13">3 · ZEUS</text>
+    <text x="170" y="636" text-anchor="middle" class="body" fill="#E8E6F1" font-size="11">(Olimpo)</text>
+  </g>
+  <g id="p3">
+    <rect x="480" y="590" width="380" height="70" rx="8" fill="#1A1617" stroke="#E8E6F1" stroke-width="2"/>
+    <text x="670" y="614" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="13">Zeus decompõe + roteia</text>
+    <text x="670" y="632" text-anchor="middle" class="body" fill="#E8E6F1" font-size="11">preenche zeus (diagnóstico + decomposição + routing_triggers)</text>
+    <text x="670" y="650" text-anchor="middle" class="mono" fill="#6E6668" font-size="10">invoca-squad.ps1 -Squad olimpo</text>
+  </g>
+
+  <g id="lane-4">
+    <rect x="80" y="680" width="180" height="80" rx="6" fill="none" stroke="#E8E6F1" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="170" y="718" text-anchor="middle" class="tag" fill="#E8E6F1" font-size="13">4 · EXECUTIVOS</text>
+  </g>
+  <g id="p4">
+    <rect x="480" y="690" width="380" height="70" rx="8" fill="#1A1617" stroke="#E8E6F1" stroke-width="2"/>
+    <text x="670" y="716" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="12">Poseidon · Apolo · Hefesto · Hades · Atena · Plutos · Afrodite</text>
+    <text x="670" y="738" text-anchor="middle" class="body" fill="#E8E6F1" font-size="11">cada executivo especifica na sua disciplina + assina sua seção</text>
+  </g>
+
+  <g id="lane-5">
+    <rect x="80" y="780" width="180" height="80" rx="6" fill="none" stroke="#E8E6F1" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="170" y="818" text-anchor="middle" class="tag" fill="#E8E6F1" font-size="13">5 · OPERACIONAL</text>
+  </g>
+  <g id="p5">
+    <rect x="480" y="790" width="380" height="70" rx="8" fill="#1A1617" stroke="#E8E6F1" stroke-width="2"/>
+    <text x="670" y="814" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="13">Squads executam</text>
+    <text x="670" y="834" text-anchor="middle" class="body" fill="#E8E6F1" font-size="11">Pheme · Peitho · Caliope · Ariadne · Argos · Aletheia …</text>
+    <text x="670" y="852" text-anchor="middle" class="body" fill="#6E6668" font-size="10">+ handoffs entre squads conforme desenho</text>
+  </g>
+
+  <g id="p6">
+    <rect x="480" y="880" width="380" height="50" rx="8" fill="#1A1617" stroke="#E8E6F1" stroke-width="2"/>
+    <text x="670" y="912" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="13">Zeus consolida a subida (zeus.consolidacao)</text>
+  </g>
+
+  <g id="lane-dike">
+    <rect x="80" y="950" width="180" height="190" rx="6" fill="none" stroke="#E8E6F1" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="170" y="1030" text-anchor="middle" class="tag" fill="#E8E6F1" font-size="13">DIKE</text>
+    <text x="170" y="1050" text-anchor="middle" class="body" fill="#E8E6F1" font-size="11">(verifica subida)</text>
+  </g>
+  <g id="p7">
+    <rect x="480" y="950" width="380" height="70" rx="8" fill="#1A1617" stroke="#E8E6F1" stroke-width="2"/>
+    <text x="670" y="974" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="13">Dike reconcilia entrega vs lacre sha256</text>
+    <text x="670" y="994" text-anchor="middle" class="body" fill="#E8E6F1" font-size="11">localiza degrau_da_quebra quando não bate</text>
+    <text x="670" y="1012" text-anchor="middle" class="tag" fill="#FF3D22" font-size="11">TPND = 0 · não sobe sem assinatura</text>
+  </g>
+  <g id="p7b">
+    <polygon points="670,1050 760,1095 670,1140 580,1095" fill="#241F20" stroke="#E8E6F1" stroke-width="2"/>
+    <text x="670" y="1090" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="12">gate-de-subida.sh</text>
+    <text x="670" y="1108" text-anchor="middle" class="body" fill="#6E6668" font-size="9">dike.veredito == sobe?</text>
+  </g>
+  <g id="p7c-side">
+    <rect x="960" y="1055" width="380" height="80" rx="8" fill="#241F20" stroke="#FF3D22" stroke-width="2"/>
+    <text x="1150" y="1080" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="13">volta-para-correcao</text>
+    <text x="1150" y="1100" text-anchor="middle" class="body" fill="#E8E6F1" font-size="10">devolve ao degrau_da_quebra</text>
+    <text x="1150" y="1118" text-anchor="middle" class="tag" fill="#FF3D22" font-size="10">teto: 2 rodadas · estourou → escala ao Ronan</text>
+  </g>
+
+  <g id="p8">
+    <rect x="480" y="1160" width="380" height="60" rx="8" fill="#1A1617" stroke="#FF3D22" stroke-width="2"/>
+    <text x="670" y="1186" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="13">Hermes devolve ao Ronan</text>
+    <text x="670" y="1206" text-anchor="middle" class="body" fill="#E8E6F1" font-size="11">cru técnico + resumo em PT-BR (WhatsApp: curto)</text>
+  </g>
+
+  <g id="end">
+    <rect x="540" y="1250" width="260" height="50" rx="25" fill="#FF3D22" stroke="#FF3D22" stroke-width="3"/>
+    <text x="670" y="1281" text-anchor="middle" class="h1" fill="#110E0F" font-size="13">Entrega ao Ronan</text>
+  </g>
+
+  <line x1="670" y1="230" x2="670" y2="266" stroke="#FF3D22" stroke-width="3" marker-end="url(#fa-sc)"/>
+  <line x1="670" y1="340" x2="670" y2="356" stroke="#FF3D22" stroke-width="2" marker-end="url(#fa-sc)"/>
+  <line x1="670" y1="450" x2="670" y2="476" stroke="#FF3D22" stroke-width="2" marker-end="url(#fa-sc)"/>
+  <text x="686" y="470" class="tag" fill="#FF3D22" font-size="11">sim</text>
+  <line x1="760" y1="405" x2="956" y2="405" stroke="#FF3D22" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#fa-sc)"/>
+  <text x="820" y="398" class="tag" fill="#FF3D22" font-size="11">não</text>
+
+  <line x1="670" y1="560" x2="670" y2="586" stroke="#FF3D22" stroke-width="2" marker-end="url(#fa-sc)"/>
+  <line x1="670" y1="660" x2="670" y2="686" stroke="#E8E6F1" stroke-width="2" marker-end="url(#fa-off)"/>
+  <line x1="670" y1="760" x2="670" y2="786" stroke="#E8E6F1" stroke-width="2" marker-end="url(#fa-off)"/>
+  <line x1="670" y1="860" x2="670" y2="876" stroke="#E8E6F1" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#fa-off)"/>
+  <line x1="670" y1="930" x2="670" y2="946" stroke="#E8E6F1" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#fa-off)"/>
+  <line x1="670" y1="1020" x2="670" y2="1046" stroke="#E8E6F1" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#fa-off)"/>
+  <line x1="670" y1="1140" x2="670" y2="1156" stroke="#FF3D22" stroke-width="2" marker-end="url(#fa-sc)"/>
+  <text x="686" y="1156" class="tag" fill="#FF3D22" font-size="11">sobe</text>
+  <line x1="760" y1="1095" x2="956" y2="1095" stroke="#FF3D22" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#fa-sc)"/>
+  <text x="800" y="1088" class="tag" fill="#FF3D22" font-size="11">não bateu</text>
+  <line x1="670" y1="1220" x2="670" y2="1246" stroke="#FF3D22" stroke-width="3" marker-end="url(#fa-sc)"/>
+
+  <path d="M 960 1095 L 900 1095 L 900 825 L 860 825" fill="none" stroke="#FF3D22" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#fa-sc)"/>
+  <text x="905" y="960" class="tag" fill="#FF3D22" font-size="10" transform="rotate(-90 905 960)">loop de correção (≤2)</text>
+
+  <path d="M 960 405 L 900 405 L 900 200 L 800 200" fill="none" stroke="#FF3D22" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#fa-sc)"/>
+  <text x="905" y="300" class="tag" fill="#FF3D22" font-size="10" transform="rotate(-90 905 300)">pergunta ao Ronan</text>
+
+  <g id="invariantes">
+    <rect x="80" y="1320" width="1260" height="130" rx="8" fill="#1A1617" stroke="#332D2E" stroke-width="1"/>
+    <text x="96" y="1344" class="h2" fill="#E8E6F1" font-size="13">INVARIANTES</text>
+    <text x="96" y="1366" class="body" fill="#E8E6F1" font-size="11">•  A intencao_original é lacrada uma vez e nunca mais muda (a Dike depende disso).</text>
+    <text x="96" y="1386" class="body" fill="#E8E6F1" font-size="11">•  DoR fechado é pré-condição da descida — faltou campo, pergunta.</text>
+    <text x="96" y="1406" class="body" fill="#E8E6F1" font-size="11">•  Tudo começa vermelho; autonomia se conquista por acerto repetido (registrado no USER.md).</text>
+    <text x="96" y="1426" class="body" fill="#E8E6F1" font-size="11">•  Nada é commitado/pushado sem ordem explícita do Ronan.  ·  Segredos sempre via Infisical, nunca em texto puro.</text>
+  </g>
+
+  <text x="60" y="1480" class="tag" fill="#6E6668" font-size="11">Fonte: Hermes/camada-2-contrato.md + Dike/reflexos/gate-de-subida.sh · Diagrama 5/5 — Kolden Arquitetura Visual · 2026-06-30</text>
+</svg>

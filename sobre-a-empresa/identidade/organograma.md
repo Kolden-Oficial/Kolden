@@ -3,15 +3,15 @@ id: organograma
 titulo: "Organograma da Kolden"
 resumo: "Estrutura de áreas da Kolden (Cenário de Ápice) e onde ver o organograma visual."
 categoria: identidade
-palavras-chave: [organograma, areas, estrutura, organizacao]
+palavras-chave: [organograma, areas, estrutura, organizacao, arquitetura, diagrama]
 status: rascunho
-atualizado-em: 2026-06-18
-relacionados: [visao-geral]
+atualizado-em: 2026-06-30
+relacionados: [visao-geral, arquitetura-visual]
 ---
 
 # Organograma da Kolden
 
-Organograma visual (interativo): `C:\Kolden\Projetos\organograma-kolden.html` — título "Cenário de Ápice" (estrutura aspiracional).
+**Diagramas de arquitetura (editáveis + SVG)**: `sobre-a-empresa/identidade/arquitetura/` — conjunto de 5 diagramas (Excalidraw + Draw.io) cobrindo visão macro das 5 camadas, mapa dos 26 squads, infra do Kolden OS, runtime Hermes e fluxo do Contrato de Missão. Índice em `arquitetura/leia-me.md`.
 
 ## Áreas (Cenário de Ápice)
 - CEO / Topo

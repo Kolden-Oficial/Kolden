@@ -35,7 +35,7 @@ Na **subida**, a **`Dike/`** (verificador) reconcilia a entrega contra o lacre e
 
 ### 🧠 sobre-a-empresa/ — o "cérebro" da empresa (em construção)
 Índice da pasta: `sobre-a-empresa/leia-me.md` · registro: `sobre-a-empresa/indice.yaml`. **30 docs, ~28 em `status: rascunho`** — o squad de pesquisa vai preencher; não afirme detalhes de negócio.
-- `identidade/` — visão-geral, missão-visão-valores, história, organograma
+- `identidade/` — visão-geral, missão-visão-valores, história, organograma + **`arquitetura/`** (5 diagramas Excalidraw+Draw.io: visão macro das 5 camadas, mapa de 26 squads, infra Kolden OS, runtime Hermes, fluxo do Contrato de Missão)
 - `areas/` — organização por departamento (visão lógica): cada área tem carta, funções, **elenco** (agentes/pessoas) e KPIs. Agentes não são movidos — ver `areas/leia-me.md`.
 - `mercado-e-posicionamento/` — ICP e personas, ofertas, posicionamento, concorrência
 - `marca/` — voz e tom, mensagens-chave, identidade visual
