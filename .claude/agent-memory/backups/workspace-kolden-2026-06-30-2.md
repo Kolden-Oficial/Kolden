@@ -13,6 +13,21 @@
 - **GOTCHA `ls "C:\path\"` no Bash tool fecha quote mal:** trailing backslash antes do `"` vira escape e o Bash devolve `unexpected EOF while looking for matching` quote. Fix: usar path POSIX (`ls "/c/path/"`), Glob/Read direto, ou path sem barra final. Pequeno mas custou 1 turno antes de cair em Glob. | 2026-06-30
 - **GOTCHA `cmd /c "... | findstr ..."` engole stdout no shell do Claude Code:** invocação aninhada via `cmd /c` retorna só o header do Windows (`Microsoft Windows [versão...]`) e o prompt vazio — o pipe não chega ao stdout capturado pela tool. Fix: PowerShell direto (`Get-ChildItem -Recurse | Where-Object { $_.FullName -notmatch 'node_modules' } | Select-Object -ExpandProperty FullName`). | 2026-06-30
 
+### Estrutura dos agentes da Kolden
+- Arquivos de agente vivem em pastas cujo basename é `agents/` (e especialistas em `especialistas/`); frontmatter usa YAML aninhado `agent: { id: ... }`. Total ~560 personas. | 2026-06-20
+- Dois modelos: clássico (frontmatter YAML, sem MEMORY.md) e AIOX/Prometeu (MEMORY.md canônico em `.aiox-core/development/agents/<id>/MEMORY.md` + reflexos). | 2026-06-20
+- Convenções PT-BR do Caos: "habilidades"=skills, "especialistas"=subagents, "reflexos"=hooks (pastas técnicas mantêm nome em inglês). | 2026-06-20
+
+### Reflexos (hooks) do Claude Code
+- Padrão anti-loop de Stop hook: guarda `stop_hook_active=true` + marcador por sessão (`.claude/.estado/reflexao-<sessionId>`) garante disparo único sem loop. Verificado nos 4 cenários. | 2026-06-20
+- Um Stop hook recém-criado na raiz PODE disparar já na mesma sessão (aconteceu nesta) — em geral, porém, hooks só valem a partir da próxima sessão. | 2026-06-20
+- Para edições em massa idempotentes, usar marcador-comentário (`<!-- ritual-de-encerramento -->`) e modo dry-run antes de `--apply`. | 2026-06-20
+
+### Verificação de alinhamento doc↔disco ("sem falha de vírgula")
+- Método que funcionou: para cada `agents/*.md` real, `grep -qE "^- \`<nome>\` —"` no índice (cobertura 0-faltando); depois contar bullets, achar duplicatas (`sort|uniq -d`) e órfãos (bullet sem arquivo). | 2026-06-20
+- GOTCHA do regex de contagem: bullets de NÃO-agentes (ex.: a menção `- \`Bloco\` — ...`) também casam `^- \`nome\` —`. Logo total bruto de bullets (184) ≠ nº de agentes (183). Investigar o "extra" antes de declarar erro — pode ser legítimo. | 2026-06-20
+- Não "corrigir" classificação interna defensável quando o total bate (ex.: Aglaia "10 pensadores+4" vs "9+5" — ambos = 15, alinhado ao índice). Mexer seria refatorar de carona. | 2026-06-20
+
 ### Preferências do usuário (Ronan)
 - Em tarefas de documentação/índice, prefere exaustividade máxima ("1 linha por agente") e alinhamento cruzado entre os 3 níveis: AGENTS.md (índice) ↔ READMEs de squad ↔ CLAUDE.md (memória institucional). | 2026-06-20
 - Ao editar CLAUDE.md, preservar §5 (segurança) e §6 (commit policy) intactas; só adicionar/cruzar. Não commitar sem ordem explícita. | 2026-06-20
@@ -222,12 +237,6 @@
 - **Roteamento dual (workspace pessoal × empresarial)** quando usuário acumula vida pessoal no mesmo SaaS: criar destino paralelo (`sobre-o-ronan/` vs `sobre-a-empresa/`) na raiz do monorepo, com README explicando o propósito ("estudo sobre o Ronan" vs "compilado da Kolden"). Decisão tomada via AskUserQuestion na entrada do plan-mode; aceita 3 opções (só empresa / tudo / recortes). | 2026-06-30
 - **DMs ficam fora por padrão; canais públicos entram.** Privacidade > completude; perguntar explicitamente via AskUserQuestion (Recommended = "não entram"). Sanity check final: `grep` dos nomes de DMs no dump deve dar 0 hits. | 2026-06-30
 
-### Central de Tarefas — lavratura no radar
-- **Escrita manual no `radar.yaml` é a via legítima ATÉ a skill `/tarefa` nascer** — schema declara "writer único = /tarefa" mas o comando ainda não existe (F5 pendente via Caos). Append manual respeitando schema é a exceção explícita; documentar no plan para não parecer violação. | 2026-06-30
-- **Receita canônica p/ lavrar N tarefas novas no radar (2 Edits + verificação tripla):** (a) Edit no header (`total_tarefas: N → N+K`, `proximo_id: KLD-YYYY-M → KLD-YYYY-M+K`); (b) Edit no fim usando as 2-3 últimas linhas da última tarefa como âncora única + append de bloco `# ─── SEÇÃO ─────` + as K tarefas; (c) verificar em paralelo: `python -c "yaml.safe_load"` (parse íntegro), `grep "^- id: KLD-YYYY-<range>"` (IDs sequenciais sem gaps), `grep "^(total_tarefas|proximo_id):"` (header coerente). Reforça "verificar por parse/GREP, não por 'Edit deu sucesso'". | 2026-06-30
-- **Slug canônico p/ trabalho meta do workspace = `kolden-os`, NÃO `kolden`** — `kolden` é marca/prospecção externa; `kolden-os` é organização do próprio OS (workspace de agentes, docs internas, infra). Radar já usa a distinção (tarefas 134-135 NotebookLM = `kolden-os`; tarefa 136 prospecção FB = `kolden`). Default para tarefa interna de reorganização/infra = `kolden-os`. | 2026-06-30
-- **AskUserQuestion com Recommended resolve granularidade de tarefa múltipla-cabeça em 1 rodada:** 3 perguntas (granularidade guarda-chuva × N-separadas × mãe+filhas; prioridade+urgência combinadas; escolha de playbook), 3-4 opções cada, Recommended primeiro com descrição das implicações. Validado 2026-06-30 (Ronan optou por "4 tarefas separadas" contrariando Recommended "guarda-chuva" — sinal de que ele valoriza rastreabilidade individual MESMO pedindo "uma tarefa"; não assumir literal). | 2026-06-30
-
 ## Candidatos a Promoção
 <!-- Padrões vistos em 3+ agentes — candidatos para CLAUDE.md ou regras centrais -->
 - **Contratos de comportamento > snapshots na verificação (Dike reconcilia contra o lacre do Contrato de Missão, não contra a saída)** | Origem: Hermes/AGENTS.md, Dike, feedback "verificar por GREP" | Detectado: 2026-06-27
@@ -251,6 +260,3 @@
 - ~~Contagem OPERACIONAL 183 agentes (161 squads + 12 Prometeu + 10 Caos) vs ~560 do repo inteiro~~ | Arquivado: 2026-06-30 | Motivo: contagem obsoleta (real em 2026-06-30 = 261 agentes em 26 entidades — ver `project_arquitetura_visual` no auto-memory global; AGENTS.md hoje declara 256)
 - ~~GOTCHA Prometeu 12 agentes em `.aiox-core/development/agents/`, não em `agents/`~~ | Arquivado: 2026-06-30 | Motivo: consolidado no padrão Estrutura dos agentes (fato de disco estável, não precisa ficar em Ativos)
 - ~~Caos com 10 especialistas em `.claude/agents/` (não 12); Hermes/Prometeu vendorizados; Bloco órfão vazio~~ | Arquivado: 2026-06-30 | Motivo: Caos agora tem 9 (não 10) e Hermes/Prometeu como vendorizados já é padrão institucional no AGENTS.md — fato reciclado, não candidato a memória viva
-- ~~Estrutura dos agentes da Kolden (3 itens: pastas `agents/`+`especialistas/`, frontmatter YAML aninhado, dois modelos clássico×AIOX, convenções PT-BR habilidades/especialistas/reflexos)~~ | Arquivado: 2026-06-30 | Motivo: consolidação por trim (idade 10 dias); fatos estruturais estáveis reciclados sem ação nova
-- ~~Reflexos (hooks) do Claude Code (3 itens: padrão anti-loop Stop hook com `stop_hook_active`+marcador sessão, Stop hook recém-criado pode disparar na mesma sessão, marcador-comentário+dry-run p/ edição em massa)~~ | Arquivado: 2026-06-30 | Motivo: consolidação por trim (idade 10 dias)
-- ~~Verificação de alinhamento doc↔disco "sem falha de vírgula" (3 itens: método grep por agente real + índice, gotcha regex de contagem bullets NÃO-agentes, não "corrigir" classificação interna defensável)~~ | Arquivado: 2026-06-30 | Motivo: consolidação por trim (idade 10 dias); método reciclado e já promovido a candidato (verificação cruzada doc↔disco)

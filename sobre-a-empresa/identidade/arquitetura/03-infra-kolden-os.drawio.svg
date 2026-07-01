@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1050" font-family="Lato, system-ui, sans-serif">
+  <defs>
+    <style>
+      .eyebrow { font-family: 'Saira Semi Condensed', 'Rajdhani', sans-serif; font-weight: 600; letter-spacing: 0.08em; }
+      .h1 { font-family: Lato, sans-serif; font-weight: 800; }
+      .h2 { font-family: Lato, sans-serif; font-weight: 700; }
+      .body { font-family: Lato, sans-serif; font-weight: 400; }
+      .tag { font-family: 'Saira Semi Condensed', 'Rajdhani', sans-serif; font-weight: 500; }
+      .mono { font-family: 'Cascadia Mono', 'Consolas', monospace; }
+    </style>
+    <marker id="a-scarlet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#FF3D22"/></marker>
+    <marker id="a-off" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#E8E6F1"/></marker>
+    <marker id="a-mut" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6E6668"/></marker>
+  </defs>
+  <rect width="1400" height="1050" fill="#110E0F"/>
+
+  <text x="60" y="42" class="eyebrow" fill="#6E6668" font-size="14">INFRA · KOLDEN OS</text>
+  <text x="60" y="82" class="h1" fill="#E8E6F1" font-size="26">Stack LobeHub — self-hosted no WSL2</text>
+  <text x="60" y="106" class="body" fill="#6E6668" font-size="12">Localhost-only · sem TLS/reverse-proxy · docker compose · network bridge lobe-network</text>
+
+  <rect x="580" y="140" width="240" height="46" rx="6" fill="#FF3D22" stroke="#FF3D22" stroke-width="2"/>
+  <text x="700" y="167" text-anchor="middle" class="h2" fill="#110E0F" font-size="13">Ronan (browser · http://localhost:3210)</text>
+
+  <rect x="60" y="220" width="1280" height="620" rx="10" fill="none" stroke="#6E6668" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="80" y="248" class="eyebrow" fill="#6E6668" font-size="12">WSL2 · UBUNTU · /home/kolden/kolden/lobehub/</text>
+
+  <rect x="100" y="280" width="1200" height="530" rx="10" fill="#1A1617" stroke="#332D2E" stroke-width="2"/>
+  <text x="120" y="304" class="eyebrow" fill="#6E6668" font-size="11">DOCKER NETWORK BRIDGE — LOBE-NETWORK</text>
+
+  <g id="svc-lobe">
+    <rect x="580" y="330" width="240" height="120" rx="8" fill="#241F20" stroke="#FF3D22" stroke-width="3"/>
+    <text x="700" y="360" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="18">lobe</text>
+    <text x="700" y="384" text-anchor="middle" class="mono" fill="#6E6668" font-size="11">lobehub/lobehub</text>
+    <text x="700" y="410" text-anchor="middle" class="tag" fill="#FF3D22" font-size="13">host :3210</text>
+    <text x="700" y="432" text-anchor="middle" class="body" fill="#6E6668" font-size="11">UI + backend chat com LLMs</text>
+  </g>
+
+  <g id="svc-postgres">
+    <rect x="160" y="560" width="220" height="140" rx="4" fill="#1A1617" stroke="#332D2E" stroke-width="2"/>
+    <ellipse cx="270" cy="570" rx="110" ry="12" fill="#241F20" stroke="#332D2E" stroke-width="2"/>
+    <text x="270" y="600" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="17">postgresql</text>
+    <text x="270" y="622" text-anchor="middle" class="mono" fill="#6E6668" font-size="10">paradedb/paradedb:latest-pg17</text>
+    <text x="270" y="646" text-anchor="middle" class="tag" fill="#FF3D22" font-size="12">:5432</text>
+    <text x="270" y="668" text-anchor="middle" class="body" fill="#6E6668" font-size="10">bind ./lobehub/data</text>
+    <text x="270" y="686" text-anchor="middle" class="body" fill="#6E6668" font-size="10">histórico + busca BM25</text>
+  </g>
+
+  <g id="svc-redis">
+    <rect x="420" y="560" width="220" height="140" rx="4" fill="#1A1617" stroke="#332D2E" stroke-width="2"/>
+    <ellipse cx="530" cy="570" rx="110" ry="12" fill="#241F20" stroke="#332D2E" stroke-width="2"/>
+    <text x="530" y="600" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="17">redis</text>
+    <text x="530" y="622" text-anchor="middle" class="mono" fill="#6E6668" font-size="10">redis:7-alpine</text>
+    <text x="530" y="646" text-anchor="middle" class="tag" fill="#FF3D22" font-size="12">:6379</text>
+    <text x="530" y="668" text-anchor="middle" class="body" fill="#6E6668" font-size="10">volume redis_data</text>
+    <text x="530" y="686" text-anchor="middle" class="body" fill="#6E6668" font-size="10">cache · filas · sessão</text>
+  </g>
+
+  <g id="svc-rustfs">
+    <rect x="680" y="560" width="240" height="140" rx="4" fill="#1A1617" stroke="#332D2E" stroke-width="2"/>
+    <ellipse cx="800" cy="570" rx="120" ry="12" fill="#241F20" stroke="#332D2E" stroke-width="2"/>
+    <text x="800" y="600" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="17">rustfs</text>
+    <text x="800" y="622" text-anchor="middle" class="mono" fill="#6E6668" font-size="10">rustfs/rustfs:latest</text>
+    <text x="800" y="646" text-anchor="middle" class="tag" fill="#FF3D22" font-size="12">:9000 S3 · :9001 admin</text>
+    <text x="800" y="668" text-anchor="middle" class="body" fill="#6E6668" font-size="10">volume rustfs-data</text>
+    <text x="800" y="686" text-anchor="middle" class="body" fill="#6E6668" font-size="10">bucket público lobe (CDN mídia)</text>
+  </g>
+
+  <g id="svc-init">
+    <rect x="680" y="720" width="240" height="60" rx="4" fill="#241F20" stroke="#6E6668" stroke-width="1" stroke-dasharray="6 4"/>
+    <text x="800" y="746" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="13">rustfs-init · one-shot</text>
+    <text x="800" y="764" text-anchor="middle" class="body" fill="#6E6668" font-size="10">minio/mc:latest — cria bucket "lobe" + policy pública</text>
+  </g>
+
+  <g id="svc-searxng">
+    <rect x="960" y="560" width="220" height="140" rx="8" fill="#1A1617" stroke="#332D2E" stroke-width="2"/>
+    <text x="1070" y="600" text-anchor="middle" class="h2" fill="#E8E6F1" font-size="17">searxng</text>
+    <text x="1070" y="622" text-anchor="middle" class="mono" fill="#6E6668" font-size="10">searxng/searxng</text>
+    <text x="1070" y="646" text-anchor="middle" class="tag" fill="#6E6668" font-size="12">só rede interna</text>
+    <text x="1070" y="668" text-anchor="middle" class="body" fill="#6E6668" font-size="10">busca web privada</text>
+    <text x="1070" y="686" text-anchor="middle" class="body" fill="#6E6668" font-size="10">searxng-settings.yml (66 KB)</text>
+  </g>
+
+  <line x1="700" y1="186" x2="700" y2="326" stroke="#FF3D22" stroke-width="3" marker-end="url(#a-scarlet)"/>
+  <rect x="666" y="240" width="68" height="20" rx="4" fill="#110E0F" stroke="#FF3D22" stroke-width="1"/>
+  <text x="700" y="255" text-anchor="middle" class="tag" fill="#FF3D22" font-size="12">:3210</text>
+
+  <path d="M 620 450 Q 400 500 300 556" fill="none" stroke="#E8E6F1" stroke-width="2" marker-end="url(#a-off)"/>
+  <path d="M 680 450 Q 600 500 540 556" fill="none" stroke="#E8E6F1" stroke-width="2" marker-end="url(#a-off)"/>
+  <path d="M 760 450 Q 780 500 800 556" fill="none" stroke="#E8E6F1" stroke-width="2" marker-end="url(#a-off)"/>
+  <path d="M 820 450 Q 970 500 1030 556" fill="none" stroke="#E8E6F1" stroke-width="2" marker-end="url(#a-off)"/>
+
+  <line x1="800" y1="720" x2="800" y2="704" stroke="#6E6668" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#a-mut)"/>
+
+  <g id="legend">
+    <rect x="60" y="860" width="640" height="140" rx="8" fill="#1A1617" stroke="#332D2E" stroke-width="1"/>
+    <text x="76" y="884" class="h2" fill="#E8E6F1" font-size="13">LEGENDA</text>
+    <line x1="76" y1="900" x2="120" y2="900" stroke="#FF3D22" stroke-width="3"/>
+    <text x="130" y="904" class="body" fill="#E8E6F1" font-size="11">exposição a host (localhost)</text>
+    <line x1="76" y1="920" x2="120" y2="920" stroke="#E8E6F1" stroke-width="2"/>
+    <text x="130" y="924" class="body" fill="#E8E6F1" font-size="11">comunicação intra-network</text>
+    <line x1="76" y1="940" x2="120" y2="940" stroke="#6E6668" stroke-width="1" stroke-dasharray="4 3"/>
+    <text x="130" y="944" class="body" fill="#E8E6F1" font-size="11">job one-shot (rustfs-init)</text>
+    <text x="76" y="974" class="body" fill="#E8E6F1" font-size="11" font-weight="700">Regra §5:</text>
+    <text x="130" y="974" class="body" fill="#E8E6F1" font-size="11">portas 5432/6379/9000/9001 são localhost-only pelo isolamento do WSL2.</text>
+    <text x="76" y="991" class="body" fill="#E8E6F1" font-size="11">Antes de qualquer VPS, re-bindar 127.0.0.1 ou reverse-proxy.</text>
+  </g>
+
+  <g id="externals">
+    <rect x="720" y="860" width="620" height="140" rx="8" fill="#1A1617" stroke="#332D2E" stroke-width="1"/>
+    <text x="736" y="884" class="h2" fill="#E8E6F1" font-size="13">FORA DESTE DIAGRAMA</text>
+    <text x="736" y="908" class="body" fill="#E8E6F1" font-size="11">•  Hermes_Gateway (runtime dos agentes) — ver diagrama 04</text>
+    <text x="736" y="928" class="body" fill="#E8E6F1" font-size="11">•  Postiz (publicação social do Pheme) — stack própria, pendente deploy</text>
+    <text x="736" y="948" class="body" fill="#E8E6F1" font-size="11">•  Infisical (secrets) — via shim Node em ~/.claude/</text>
+    <text x="736" y="968" class="body" fill="#E8E6F1" font-size="11">•  Bucket público lobe: bucket.config.json torna leitura pública para servir</text>
+    <text x="736" y="985" class="body" fill="#E8E6F1" font-size="11">   mídia (não colocar nada sensível).</text>
+  </g>
+
+  <text x="60" y="1030" class="tag" fill="#6E6668" font-size="11">Fonte: CLAUDE.md §3 · lobehub/docker-compose.yml (no WSL, não versionado em Windows) · Diagrama 3/5 — Kolden Arquitetura Visual · 2026-06-30</text>
+</svg>
