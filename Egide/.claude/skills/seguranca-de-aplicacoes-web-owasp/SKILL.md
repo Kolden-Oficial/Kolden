@@ -97,6 +97,21 @@ trata-se da camada HTML/HTTP de navegador. A varredura automatizada (SAST/DAST)
 em pipeline fica em `devsecops-sast-dast-em-ci`; aqui está o método de revisão
 por classe.
 
+## Herança histórica
+
+**Jim Manico** — instrutor da OWASP desde 2008 e cofundador da Manicode Security; contribuidor primário do **OWASP Cheat Sheet Series** e do **OWASP ASVS**. Sua doutrina "codifique de saída por contexto" (HTML/atributo/JS/URL) é a base do controle de A03/A07 XSS desta skill.
+
+**Andrew van der Stock** — Executive Director da OWASP Foundation e líder do **OWASP Top 10** (edições 2017, 2021 — a próxima esperada em 2025); coautor do **OWASP ASVS (Application Security Verification Standard)** que define os níveis L1/L2/L3 usados na etapa 3 do fluxo.
+
+**Dafydd Stuttard e Marcus Pinto** — autores de *The Web Application Hacker's Handbook* (2ª ed., 2011, Wiley); Stuttard também é criador do Burp Suite (PortSwigger, 2003+). A obra formalizou a taxonomia de pontos de entrada de webapp que sustenta o "Mapa de classes".
+
+**Frameworks canônicos herdados**:
+- **OWASP Top 10 (2021)** — 10 categorias cobertas seção-a-seção; próxima edição prevista 2025.
+- **OWASP ASVS 4.0** — 3 níveis de rigor para dar profundidade contextual à revisão.
+- **OWASP Cheat Sheet Series** (~90 folhas) — controles corretivos por classe (parametrização, output encoding, headers, CSP, session).
+- **OWASP SAMM** (Software Assurance Maturity Model) — mede maturidade AppSec organizacional.
+- **CWE/SANS Top 25 Most Dangerous Software Weaknesses** — mapeamento cruzado ao vocabulário MITRE (CWE-79, CWE-89, CWE-352 etc.).
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster
 G5 (web application security / OWASP Top 10, ~42 skills) com aporte de G30

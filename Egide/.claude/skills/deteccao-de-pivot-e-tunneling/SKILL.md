@@ -231,6 +231,21 @@ A detecção que mais vale é a que não precisa disparar porque o canal não ex
 - **Egress allow-list "por IP"** — IPs de SaaS mudam. Faça por **domínio** num proxy que
   inspeciona SNI/Host header, não em firewall de camada 3 sozinho.
 
+## Herança histórica
+
+**MITRE ATT&CK team (Blake Strom e equipe)** — mantém desde 2013 a base pública onde as técnicas T1572 (Protocol Tunneling), T1071 (Application Layer Protocol) e T1090 (Proxy) vivem como vocabulário canônico. É o índice defensivo que a seção "Frameworks de referência" ancora.
+
+**Rob Joyce (NSA TAO, hoje NSA Cybersecurity Director)** — em sua palestra *Disrupting Nation State Hackers* (USENIX Enigma 2016), documentou publicamente a mecânica de pivoting/lateral movement e defendeu o modelo de egress allow-list + segmentação como controle primário — base doutrinal do bloco de hardening preventivo.
+
+**Chris Sanders** — autor de *Practical Packet Analysis* (3ª ed., 2017, No Starch) e de *Applied Network Security Monitoring* (2013, Syngress); codificou a análise por camada (NetFlow → PCAP → DNS) que sustenta a seção "Sinais de detecção".
+
+**Frameworks canônicos herdados**:
+- **MITRE ATT&CK — TA0008 (Lateral Movement)** e **TA0011 (Command and Control)** — táticas cobertas.
+- **NIST SP 800-53** — controles SC-7 (Boundary Protection), AC-4 (Information Flow Enforcement), SI-4 (System Monitoring).
+- **NIST SP 800-207 (Zero Trust Architecture, 2020)** — base do "ZTNA substituindo VPN aberta".
+- **Purdue Model / IEC 62443** — segmentação tier 0/1/2 (para OT/ICS; se aplica análogo em TI).
+- **CIS Controls v8** — Control 12 (Network Infrastructure Management) e Control 13 (Network Monitoring and Defense).
+
 ---
 
 *Fonte adaptada (princípio defensivo, sem cópia literal nem técnica ofensiva):

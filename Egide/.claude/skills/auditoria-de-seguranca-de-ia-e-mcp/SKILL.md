@@ -101,6 +101,17 @@ Implementações ofensivas de LLM red-team (garak/PyRIT/promptfoo como ataque), 
 OPA policy-as-code e correlação OSINT por IA ficam como **incremental** do cluster G22 — ver o
 relatório de perda. Aqui entra só o MÉTODO defensivo; nenhum script ofensivo foi importado.
 
+## Herança histórica
+
+**Simon Willison** — cocriador do Django (2005) e pesquisador que, em setembro de 2022, cunhou o termo **prompt injection** ao demonstrar como uma instrução embutida no dado pode sequestrar um LLM. Sua série contínua em `simonwillison.net/tags/prompt-injection/` é a bibliografia viva do campo, incluindo o conceito de **injeção indireta** (2023) — a base do eixo 3 desta skill.
+
+**Riley Goodside** — pesquisador de segurança de LLM que documentou publicamente, a partir de 2022, ataques de override, extração de system prompt e bypass de guardrail via few-shot; hoje na Scale AI. Contribuição primária: a demonstração de que o system prompt não é segredo nem controle de segurança (base do eixo 5).
+
+**Frameworks canônicos herdados**:
+- **MITRE ATLAS** (Adversarial Threat Landscape for AI Systems, 2021+) — taxonomia de táticas/técnicas contra sistemas de IA (AML.T0010, T0051.001, T0053, T0054, T0057) mapeada no corpo desta skill.
+- **OWASP Top 10 for LLM Applications** (v1 2023, v2025) — LLM01 (Prompt Injection), LLM07 (System Prompt Leakage) e o **MCP Top 10 (MCP03:2025 — Tool Poisoning)**.
+- Regra Willison: "trate toda entrada não confiável — inclusive descrição de tool — como código adversarial antes de o modelo ver".
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster G22 (skills
 `auditing-mcp-servers-for-tool-poisoning`, `securing-agentic-ai-tool-invocation`,

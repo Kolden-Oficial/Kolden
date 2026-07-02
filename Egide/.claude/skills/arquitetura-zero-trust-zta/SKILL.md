@@ -82,8 +82,40 @@ Alto Prisma, HashiCorp Boundary, Illumio/Guardicore/VMware NSX, Calico/Cilium, C
 Intune / Jamf (posture), Entra/Okta conditional access.
 
 ## Incremental (não nesta leva)
-Browser isolation, zero-trust DNS (NextDNS), Tailscale para VPN ZT, zero-trust para SaaS específico,
-e identity federation detalhada ficam adiados — ver relatório de perda.
+Zero-trust DNS (NextDNS), Tailscale para VPN ZT, zero-trust para SaaS específico e identity federation
+detalhada ficam adiados — ver relatório de perda.
+
+### Aprofundamento absorvido nesta consolidação: **browser isolation** (RBI/LBI)
+
+Browser isolation completa o eixo 2 (ZTNA) quando o app **é** a web pública/SaaS de risco,
+não uma app corporativa atrás de proxy.
+- **Remote Browser Isolation (RBI)**: sessão renderiza em container efêmero na nuvem
+  (Cloudflare Browser Isolation, Menlo, Zscaler); usuário vê pixels/stream. Vantagem:
+  malware nunca toca o endpoint; anexo/download é sanitizado antes de descer.
+- **Local Browser Isolation (LBI)**: browser dedicado hardened (Island Browser,
+  Talon-of-Google) no dispositivo, com controle de política corporativa (DLP,
+  copy/paste, screenshot).
+- Padrão ZTA: para acesso a app **corporativa privada** → ZTNA/IAP (identity-aware
+  proxy). Para acesso a **web pública de alto risco** (email, SaaS, pesquisa) →
+  browser isolation. As duas camadas se somam no mesmo perímetro-de-um.
+- Sinal para SIEM: cada sessão RBI emite decisão de política (bloqueio de download,
+  reescrita de link, print bloqueado) — trate como evento de conditional access.
+
+## Herança histórica
+
+**John Kindervag** — cunhou o termo **Zero Trust** em 2010 (Forrester Research) no paper *No More Chewy Centers*, refutando o modelo de "perímetro casca-e-recheio"; hoje na Illumio. Sua tese "never trust, always verify" é o axioma desta skill.
+
+**Google BeyondCorp team (Rory Ward, Betsy Beyer, Heather Adkins)** — publicaram entre 2014 e 2018 a série *BeyondCorp: A New Approach to Enterprise Security* (`research.google/pubs/`, IEEE Security & Privacy), a primeira implementação industrial em escala de ZTA que virou blueprint do mercado; origem do modelo de "acesso à app, não à rede" da seção 2.
+
+**Scott Rose et al. (NIST)** — autores de **NIST SP 800-207: Zero Trust Architecture** (agosto 2020), padrão federal americano; a fonte primária do vocabulário PDP/PEP (Policy Decision Point / Policy Enforcement Point) que a seção 6 aplica.
+
+**CISA (Cybersecurity and Infrastructure Security Agency)** — publicou o **Zero Trust Maturity Model v1** (2021) e **v2** (2023), com os 5 pilares (identidade, dispositivos, redes, aplicações, dados) e as 3 capacidades transversais que estruturam a seção 1.
+
+**Frameworks canônicos herdados**:
+- **NIST SP 800-207** — vocabulário PDP/PEP, 7 tenets ZTA.
+- **CISA Zero Trust Maturity Model v2** — 5 pilares × 4 estágios (Tradicional/Inicial/Avançado/Ótimo).
+- **BeyondCorp (Google, 2014+)** — implementação de referência de identity-aware proxy.
+- **DoD Zero Trust Reference Architecture** (v2.0, 2022) — 91 capabilities agrupadas em 7 pilares (variante militar do CISA ZTMM).
 
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f` (Apache-2.0), cluster G18 — zero-trust

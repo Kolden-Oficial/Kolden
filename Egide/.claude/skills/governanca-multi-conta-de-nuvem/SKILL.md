@@ -241,3 +241,26 @@ FinOps multi-conta (allocation por tag, budgets cross-account), Kubernetes admis
 control em cluster multi-tenant (vai para `seguranca-de-containers-e-kubernetes`),
 delegação fina via Service Control Policies condicionais por sessão, e modelo de
 governança para edge accounts (Outposts/Stack HCI/Anthos) ficam adiados.
+
+## Herança histórica
+
+**AWS Well-Architected + Control Tower team** (AWS, 2018+) — desenharam o modelo de landing zone opinionativa (Control Tower, 2019) e o blueprint de contas por OU; consolidaram a doutrina "conta nova nasce com guardrail, não com dívida". Referência: `docs.aws.amazon.com/controltower/`.
+
+**Microsoft Cloud Adoption Framework — Enterprise Scale team** (Microsoft, 2019+) — codificaram a arquitetura de referência **Azure Landing Zones** com hierarquia MG opinada (`Platform`, `Landing Zones`, `Sandbox`, `Decommissioned`) e integrou o Defender for Cloud como CSPM padrão.
+
+**Google Cloud Adoption Framework + Cloud Foundation Toolkit team** (Google, 2019+) — publicaram o CFT e a Terraform Example Foundation que formalizam Folder/Project + Organization Policy hierárquica como padrão GCP.
+
+**Torin Sandall e Tim Hinrichs (Styra)** — cocriadores do **Open Policy Agent (OPA, 2016)** e da linguagem **Rego**, adotados pela CNCF em 2018 (graduação 2021); base do padrão policy-as-code cross-cloud da seção 4.
+
+**Frameworks canônicos herdados**:
+- **AWS Well-Architected Framework — Security Pillar** (princípios de guardrail preventivo).
+- **Microsoft Cloud Adoption Framework (CAF) — Enterprise Scale** (hierarquia MG opinada).
+- **Google Cloud Adoption Framework** (Folder + Org Policy hierárquica).
+- **CIS Foundations Benchmark** (AWS v5, Azure v4, GCP v4) e **NIST SP 800-53** (control mapping) — as réguas que initiatives e SCPs implementam.
+- **OPA/Rego** (CNCF) — linguagem canônica de policy-as-code multi-cloud.
+
+---
+*Fonte: `msitarzewski/agency-agents@a597cb6` (MIT © 2025 AgentLand Contributors), cluster
+G21 — governança multi-conta (padrões AWS Organizations/SCPs, Azure MG/Policy, GCP
+Organization Policy, landing zones, policy-as-code). Método adaptado e reescrito em
+PT-BR; nenhum código importado.*

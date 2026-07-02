@@ -67,6 +67,23 @@ Handoff: o que exigir runtime (bypass de pinning, hook de método, storage em us
 Análise dinâmica (Frida/Objection, bypass de SSL pinning, extração de Keychain em runtime), pentest
 de API mobile e forense de dispositivo (Cellebrite) ficam adiados — ver relatório de perda.
 
+## Herança histórica
+
+**Adrian Ludwig** — Chief Security Officer do Android Security Team (Google, 2012-2018), hoje CISO da Atlassian; codificou a doutrina de "SafetyNet + Play Protect + hardening por padrão" que estrutura o modelo Android moderno.
+
+**Sven Schleier, Bernhard Mueller, Jeroen Willemsen e Carlos Holguera** — mantenedores primários do **OWASP MASVS (Mobile Application Security Verification Standard)** e do **MASTG (Mobile Application Security Testing Guide)**, ambos revisados em 2023 (MASVS v2.0.0); a régua canônica dos blocos 2 e 3.
+
+**Ajin Abraham** — criador do **Mobile Security Framework (MobSF)**, o motor de referência da seção 1; open-source desde 2015 (`github.com/MobSF/Mobile-Security-Framework-MobSF`).
+
+**Ryan Stortz e Trail of Bits (iVerify team)** — pesquisadores de referência em iOS security desde ~2015; documentam entitlements abusáveis e Info.plist perigoso.
+
+**Frameworks canônicos herdados**:
+- **OWASP MASVS v2.0.0 (2023)** — 8 categorias (MASVS-STORAGE, MASVS-CRYPTO, MASVS-AUTH, MASVS-NETWORK, MASVS-PLATFORM, MASVS-CODE, MASVS-RESILIENCE, MASVS-PRIVACY).
+- **OWASP MASTG** — receitas testáveis por categoria (sucessor do antigo MSTG).
+- **OWASP Mobile Top 10 (2024)** — M1-M10 usado como mapa de achado.
+- **Android CDD (Compatibility Definition Document)** + Play Console policy — baseline mínimo Google.
+- **iOS App Transport Security (ATS)** e o modelo de entitlements/Info.plist — baseline Apple.
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster G24 — mobile-security
 (`performing-android-app-static-analysis-with-mobsf`, `analyzing-android-malware-with-apktool`,

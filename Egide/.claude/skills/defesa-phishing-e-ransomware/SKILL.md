@@ -69,6 +69,25 @@ Simulação de phishing (GoPhish), treinamento anti-phishing, SOAR/automação d
 detalhada pós-criptografia e análise de wallet/leak-site de ransomware ficam adiados — ver relatório
 de perda.
 
+## Herança histórica
+
+**Kevin Mitnick** (1963-2023) — o hacker social por excelência; autor de *The Art of Deception* (2001, Wiley) e *The Art of Intrusion* (2005). Codificou a doutrina "a interface humana é o elo mais fraco" que fundamenta a defesa contra phishing.
+
+**Christopher Hadnagy** — fundador da Social-Engineer, LLC; autor de *Social Engineering: The Art of Human Hacking* (2010) e *Phishing Dark Waters* (2015, Wiley); mantém o **Social-Engineer Toolkit (SET)** e o framework de engenharia social usado como referência de defesa.
+
+**IETF DMARC WG (John Levine, Murray Kucherawy et al.)** — publicaram **RFC 7489 (DMARC)** em 2015, sobre **RFC 7208 (SPF, 2014)** e **RFC 6376 (DKIM, 2011)**. A tríade de autenticação de email da seção 1.
+
+**CISA #StopRansomware team (Jen Easterly e equipe)** — publicaram o *Ransomware Guide* (2020+) e mantêm `stopransomware.gov`, incluindo o **KEV Catalog** e o playbook nacional americano que estrutura a seção 4.
+
+**No More Ransom Project** (Europol EC3 + NHTCU + Kaspersky + McAfee, 2016+) — coalizão que mantém decryptors gratuitos e cataloga famílias; fonte defensiva para recuperação.
+
+**Frameworks canônicos herdados**:
+- **RFC 7489 (DMARC) + RFC 7208 (SPF) + RFC 6376 (DKIM)** — a tríade canônica.
+- **BIMI (Brand Indicators for Message Identification, 2020+)** — quarto pilar de autenticação para clientes que exibem logo.
+- **CISA #StopRansomware Guide** e **NIST SP 1800-25/26** — framework nacional americano de defesa/recuperação.
+- **Mandiant M-Trends (annual)** — telemetria pública de tempo médio deploy→criptografia (~17 min citado).
+- **MITRE ATT&CK — TA0001 Initial Access (T1566 Phishing) e T1486 Data Encrypted for Impact** — vocabulário da linha do tempo.
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), clusters G21 (phishing-defense)
 + G23 (ransomware-defense): `implementing-dmarc-dkim-spf-email-security`,

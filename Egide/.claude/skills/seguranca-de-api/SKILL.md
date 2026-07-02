@@ -89,6 +89,20 @@ A camada HTML/navegador (XSS, CSP) fica em `seguranca-de-aplicacoes-web-owasp`;
 SSRF e misconfig são tratados lá e referenciados aqui. Validação de JWT/cripto de
 token aprofunda em `criptografia-aplicada`.
 
+## Herança histórica
+
+**Philippe De Ryck** — fundador da Pragmatic Web Security; autoridade em segurança de OAuth2/OIDC/JWT desde ~2015 e autor de currículo formal em `pragmaticwebsecurity.com`. Base doutrinal da seção API2 (validação completa de token, rejeição de `alg:none`).
+
+**Isabelle Mauny e Erez Yalon** — cofundadores da 42Crunch; corresponsáveis pelo **OWASP API Security Top 10** (v1 2019, v2 2023) e evangelistas da distinção BOLA vs BFLA como categorias distintas — origem do mapeamento de classes desta skill.
+
+**OWASP API Security Project** — projeto comunitário que mantém a taxonomia canônica API1-API10; o Top 10 de 2023 foi a atualização que introduziu API3 (BOPLA — Object Property Level) e API6 (Business Flow).
+
+**Frameworks canônicos herdados**:
+- **OWASP API Security Top 10 (2023)** — 10 classes cobertas na seção "Mapa de classes".
+- **RFC 7519 (JWT)**, **RFC 6749 (OAuth 2.0)**, **RFC 8252 (OAuth para Native Apps)** e **OAuth 2.1 draft** — base regulatória do token e do fluxo.
+- **OWASP API Security Cheat Sheet** — checklists operacionais por API.
+- **OpenAPI Specification (OAS 3.1)** — o contrato que sustenta a matriz "papel × objeto × função" e o schema de entrada/saída (API3).
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster
 G13 (API security, ~28 skills) com aporte de G5 (api gateway access logs).

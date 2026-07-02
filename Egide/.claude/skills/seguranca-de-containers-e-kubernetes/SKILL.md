@@ -78,9 +78,35 @@ Hadolint, Dockle, docker-bench-security, Trivy, Grype, kubesec, kube-bench, rbac
 Kubeaudit, Falco, Calico/Cilium, Harbor, distroless.
 
 ## Incremental (não nesta leva)
-Aqua/Sysdig comerciais, securing Helm chart deployments, registry hardening avançado, e CIS de
+Aqua/Sysdig comerciais, securing Helm chart deployments, registry hardening avançado e CIS de
 cloud-managed K8s (EKS/GKE/AKS) específico ficam adiados — ver relatório de perda. Pentest de
 Kubernetes e container escape ofensivo são **barrados** (dual-use).
+
+### Aprofundamento absorvido nesta consolidação: **Falco + Tetragon (dupla eBPF de runtime)**
+
+Falco cobre a família *system-call-based* de detecção em runtime; **Tetragon (Isovalent/Cilium,
+2022+)** cobre a mesma família com **eBPF policy-as-code**, com vantagem de custo em cluster
+grande e enforce em kernel (kill do processo antes do syscall completar).
+- Rode Falco para a maior parte da frota (regras `k8s_audit`, `default_macros`, drift).
+- Rode Tetragon quando precisar de **enforce em kernel** (não só alerta) ou quando o
+  volume de syscalls do Falco custa caro; suas `TracingPolicy` são versionáveis por Git,
+  encaixam no gitops do cluster.
+- Correlacione ambos no mesmo SIEM; use o mesmo campo `container.image.repo_digest` como
+  chave para deduplicar alerta.
+
+## Herança histórica
+
+**Liz Rice** — Chief Open Source Officer da Isovalent; autora de *Container Security: Fundamental Technology Concepts that Protect Containerized Applications* (2020, O'Reilly) e do curso da CNCF sobre segurança de containers. Sua taxonomia namespaces × cgroups × capabilities é a base da seção 1.
+
+**Kelsey Hightower** — engenheiro na Google Cloud e autor de **Kubernetes The Hard Way** (repositório GitHub, 2016+), guia pedagógico que forma quase todos os operadores de K8s do mundo; codificou a doutrina de "entenda cada componente antes de confiar num operador gerenciado".
+
+**Sysdig / Falco team (Loris Degioanni)** — fundadores do projeto **Falco** (2016, doado à CNCF 2018), o detector de runtime baseado em regras que a seção 5 usa; também autores do CIS-benchmarks-focados `sysdig secure`.
+
+**Frameworks canônicos herdados**:
+- **CIS Docker Benchmark** e **CIS Kubernetes Benchmark** — baselines de conformidade das seções 1 e 4.
+- **Pod Security Standards (PSS)** — perfis `privileged/baseline/restricted` (K8s SIG-auth, 2021), sucessor do PodSecurityPolicy.
+- **NIST SP 800-190 (Application Container Security Guide)** — a referência oficial de risco em container adotada por reguladores federais.
+- Regra "imagem é imutável — binário novo dentro do container em runtime é comprometimento" (Falco/Rice) — base do sinal de **drift**.
 
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f` (Apache-2.0), cluster G11 — container &

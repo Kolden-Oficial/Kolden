@@ -79,9 +79,38 @@ Prowler, ScoutSuite, CloudFox (enumeração de postura), AWS CLI/Access Analyzer
 Azure Policy/Defender, GCP Security Command Center, boto3 para baselining de CloudTrail.
 
 ## Incremental (não nesta leva)
-SIEM de nuvem com Sentinel, AWS Config Rules detalhado, Macie/DLP de classificação de dados, Nitro
-Enclaves, e resposta a incidente específica de nuvem ficam adiados — ver relatório de perda. A
-exploração ofensiva de nuvem (Pacu, Stratus Red Team, CloudFox em modo ataque) é **barrada** (dual-use).
+SIEM de nuvem com Sentinel, AWS Config Rules detalhado, Nitro Enclaves e resposta a incidente
+específica de nuvem ficam adiados — ver relatório de perda. A exploração ofensiva de nuvem (Pacu,
+Stratus Red Team, CloudFox em modo ataque) é **barrada** (dual-use).
+
+### Aprofundamento absorvido nesta consolidação: **Macie / DLP em nuvem**
+
+DLP de nuvem detecta e classifica dado sensível em objeto de storage **antes** de virar
+exposição — camada anterior ao "está público?" (que a seção 2 cobre).
+- **AWS Macie**: classificação gerenciada de S3, detecta PII/PHI/credencial em objeto,
+  gera *sensitive data discovery job* recorrente; integra com Security Hub. Regra: rode
+  Macie em bucket com dado de negócio antes de habilitar `AllowedCredentials`.
+- **Azure Purview / Microsoft Defender for Storage — sensitive data discovery**:
+  equivalente para Blob Storage e Data Lake Gen2.
+- **GCP Sensitive Data Protection (ex-DLP)**: `InfoTypes` para PII/PHI/segredo em GCS
+  e BigQuery; `--info-types` com custom regex para dado da empresa.
+- Padrão: rode DLP **antes** da auditoria de exposição; se dado sensível existe, o
+  achado "público" sobe uma severidade. Alimenta o gate `escrita-segura-e-dlp` da Égide
+  (denylist local) com o inventário de nuvem.
+
+## Herança histórica
+
+**AWS Well-Architected Framework — Security Pillar** (AWS, 2015+; principal editorial: Ben Potter) — base do modelo de responsabilidade compartilhada e da doutrina "menos-privilégio + tudo-loga" que a seção 3 aplica. Referência: `aws.amazon.com/architecture/well-architected/`.
+
+**Rich Mogul** — cofundador da Cloud Security Alliance (CSA, 2009) e diretor de pesquisa em nuvem por mais de uma década; autor do *CSA Security Guidance v4* (2017), que consolidou o método de auditoria multi-provider por domínio (governança, arquitetura, dados, IAM, resposta).
+
+**CIS Benchmarks Community** — comitê voluntário que mantém os **CIS Foundations Benchmark** (AWS v5, Azure v4, GCP v4), o baseline consensual de configuração que Prowler/ScoutSuite implementam.
+
+**Frameworks canônicos herdados**:
+- **CIS Foundations Benchmark** por provedor — a régua de conformidade da seção 1.
+- **AWS Well-Architected Security Pillar** — os 8 princípios de projeto (identidade forte, tudo audita, defesa em camadas, dados criptografados, permissões mínimas, resposta rápida etc.).
+- **Cloud Controls Matrix (CCM) v4 da CSA** — mapeamento cross-framework (ISO 27001, NIST 800-53, PCI-DSS) usado quando o cliente é regulado.
+- **Model of Shared Responsibility** (AWS, 2011+) — cliente responde por "segurança **na** nuvem", provedor por "segurança **da** nuvem"; regra que define o escopo desta skill.
 
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f` (Apache-2.0), cluster G1 — cloud security

@@ -72,6 +72,24 @@ payload, sequência que não casa o protocolo declarado.
   qualquer bloqueio cego (handoff `inteligencia-de-ameacas-cti`).
 - PCAP carrega payload vivo: trate como amostra, não reexecute.
 
+## Herança histórica
+
+**Chris Sanders** — autor de *Practical Packet Analysis* (1ª ed. 2007, 3ª ed. 2017, No Starch), o livro que ensinou análise de Wireshark a duas gerações de defensores; também de *Applied Network Security Monitoring* (2013, Syngress, com Jason Smith). Base doutrinal das três lentes (pacote/fluxo/DNS).
+
+**Gerald Combs** — criador do **Wireshark** (1998, originalmente Ethereal); a plataforma que definiu o padrão de análise de pacote e o formato PCAP/PCAPng.
+
+**Cisco NetFlow team** — inventores do NetFlow v5 (Cisco, 1996+), evoluído para IPFIX (RFC 7011, 2013, padrão IETF); referência da lente de fluxo.
+
+**Paul Vixie** — autor original do BIND e das RFCs fundamentais de DNS; cocriador do **Response Policy Zone (RPZ)** (2010+), que operacionaliza o sinkhole de DNS mencionado como controle preventivo.
+
+**Frameworks canônicos herdados**:
+- **Wireshark + PCAP/PCAPng** — padrão de análise de pacote.
+- **NetFlow / IPFIX (RFC 7011)** — padrão de análise de fluxo.
+- **Passive DNS (Farsight, DomainTools)** — corpus histórico de resolução para investigação de DGA/typosquat.
+- **JA3/JA3S/JA4 (Salesforce, 2017 / FoxIO, 2023)** — fingerprint TLS que identifica cliente/servidor cripto-comportamentalmente.
+- **Zeek/Bro** (Vern Paxson, 1995+) — motor de detecção baseado em script; base histórica do IDS moderno.
+- **MITRE ATT&CK — TA0011 (Command and Control) e TA0010 (Exfiltration)** — vocabulário de mapeamento.
+
 ---
 *Fonte adaptada (princípio, sem cópia literal): `mukul975/Anthropic-Cybersecurity-Skills@673da1f`
 (skills `analyzing-network-traffic-with-wireshark`, `analyzing-network-flow-data-with-netflow`,

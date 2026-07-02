@@ -212,3 +212,24 @@ revisão. Handoffs: ameaças de aplicação web vão para `seguranca-de-aplicaco
 ameaças de identidade/autorização para `gestao-de-identidade-e-acesso-iam`;
 ameaças de container/K8s para `seguranca-de-containers-e-kubernetes`; controle de
 acesso por arquitetura para `arquitetura-zero-trust-zta`.
+
+## Herança histórica
+
+**Loren Kohnfelder e Praerit Garg** — engenheiros da Microsoft que, no memorando interno *The Threats to Our Products* (abril 1999), cunharam o acrônimo **STRIDE** (Spoofing/Tampering/Repudiation/Information disclosure/Denial of service/Elevation of privilege). Base histórica das 6 categorias da seção 3.
+
+**Adam Shostack** — engenheiro-chefe de threat modeling na Microsoft nos anos 2000, arquiteto do Microsoft SDL e da Threat Modeling Tool; autor de *Threat Modeling: Designing for Security* (2014, Wiley), obra canônica do campo. Refinou STRIDE-per-element/per-interaction, definiu o "nível 1/2 de DFD" (base da seção 2) e é cosignatário do **Threat Modeling Manifesto** (2020).
+
+**Tony UcedaVélez e Marco M. Morana** — autores de *Risk Centric Threat Modeling: Process for Attack Simulation and Threat Analysis* (2015, Wiley), a obra que formalizou os 7 estágios da PASTA. UcedaVélez cofundou a VerSprite.
+
+**Frameworks canônicos herdados**:
+- **STRIDE** (Kohnfelder & Garg, Microsoft, 1999) — 6 categorias por ameaça sobre DFD.
+- **PASTA** (UcedaVélez & Morana, 2015) — 7 estágios attack-centric.
+- **Microsoft SDL — Threat Modeling Tool** e a doutrina STRIDE-per-element/per-interaction (Shostack, 2014).
+- **Threat Modeling Manifesto** (2020) — valores e princípios cosignados por Shostack, Sheridan, Braiterman e outros.
+- **MITRE ATT&CK + CAPEC + CWE + CVE** — a cadeia canônica de vocabulário (tática → padrão → fraqueza → vulnerabilidade) usada nos estágios 4-5 da PASTA.
+- **NIST SP 800-154 (Guide to Data-Centric System Threat Modeling)** — variação data-centric complementar quando o ativo primário é dado.
+
+---
+*Fonte: `msitarzewski/agency-agents@a597cb6` (MIT © 2025 AgentLand Contributors), cluster
+G22 — threat modeling (STRIDE + PASTA + DFD + trust boundary). Método adaptado e
+reescrito em PT-BR; nenhum código importado.*

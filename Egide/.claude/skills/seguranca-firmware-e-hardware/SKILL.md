@@ -62,6 +62,26 @@ Handoff: indicadores → CTI (`inteligencia-de-ameacas-cti`); contenção → re
 Análise de firmware de CLP (`performing-plc-firmware-security-analysis`), integração com HSM e
 autenticação por chave de hardware ficam adiados — ver relatório de perda.
 
+## Herança histórica
+
+**Joe FitzPatrick** — instrutor e fundador do `SecuringHardware.com`; referência mundial em avaliação de hardware defensiva (Applied Physical Attacks, cursos desde 2013+). Codificou a doutrina "o firmware abaixo do SO é a superfície esquecida" que motiva esta skill.
+
+**Andrew "bunnie" Huang** — autor de *Hacking the Xbox* (2003, No Starch) e *The Hardware Hacker* (2017); referência em análise de hardware embarcado e engenharia reversa de dispositivos IoT que sustenta o bloco 1.
+
+**Craig Heffner** — criador do **binwalk** (2010+, hoje ReFirm Labs/Microsoft), a ferramenta padrão de extração de firmware embutido; a análise de entropia + carving de filesystem embutido são doutrinárias.
+
+**Alex Matrosov (Eclypsium/Binarly)** — coautor de *Rootkits and Bootkits: Reversing Modern Malware and Next Generation Threats* (2019, No Starch); autoridade em bootkit UEFI (LoJax, MoonBounce, BlackLotus) e forense de firmware de plataforma.
+
+**Intel + Microsoft (Task Force da TCG, 2003+)** — publicaram os padrões **TPM 1.2 (2003)** e **TPM 2.0 (2014)** e a arquitetura de **Measured Boot**; NIST SP 800-155 (2011) codificou BIOS Integrity Measurement.
+
+**Frameworks canônicos herdados**:
+- **UEFI Specification** (UEFI Forum, 2005+) — a especificação que define a superfície de auditoria.
+- **NIST SP 800-147 (BIOS Protection Guidelines)** e **SP 800-193 (Platform Firmware Resiliency)** — base regulatória.
+- **CHIPSEC** (Intel Security, 2014+) — framework aberto para auditar proteções de plataforma.
+- **TPM 2.0 + Measured Boot** — âncora de confiança independente do SO.
+- **UEFI Secure Boot + shim + MOK** — cadeia de confiança de boot em Linux/Windows.
+- **binwalk + FACT (Firmware Analysis and Comparison Tool, Fraunhofer FKIE)** — pipeline de extração e diff.
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster G29 — firmware/hardware
 (`performing-firmware-extraction-with-binwalk`, `auditing-uefi-firmware-with-chipsec`,

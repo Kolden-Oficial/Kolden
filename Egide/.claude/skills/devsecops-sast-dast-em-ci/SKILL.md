@@ -153,6 +153,21 @@ secret-scan resiliente a injeção em conteúdo de agente é de
 `scanner-anti-injecao-resiliente` (vetor diferente: prompt, não credencial). Cruza
 com o eixo de engenharia do Prometeu (que já opera coderabbit/SAST).
 
+## Herança histórica
+
+**Shannon Lietz** — fundadora do movimento **DevSecOps.org** e cocriadora do *DevSecOps Manifesto* (2015+); enquanto na Intuit (2013+) codificou "shift-left security" como termo operacional, base do desenho do pipeline desta skill.
+
+**Jez Humble e David Farley** — autores de *Continuous Delivery* (2010, Addison-Wesley); definiram o modelo de pipeline que esta skill aplica ao domínio de segurança (feedback rápido, gate por delta, ambientes efêmeros).
+
+**Gene Kim** — cocriador do modelo **DORA** (State of DevOps Report, 2014+) e autor de *The DevOps Handbook* (2016) e *Accelerate* (2018, com Nicole Forsgren e Humble); origem da regra "não meça só se roda — meça se o time confia".
+
+**Frameworks canônicos herdados**:
+- **Shift-Left Security** (Lietz, ~2013) — achar cedo, achar barato; gate por delta, não por baseline.
+- **DevSecOps Manifesto** (2015) — segurança como propriedade compartilhada, não gate terceirizado.
+- **OpenSSF Scorecard** (Linux Foundation, 2020) — 20 checks automáticos de higiene em pipeline; padrão de baseline moderno.
+- **SLSA (Supply-chain Levels for Software Artifacts)** — níveis 1-4 de garantia de proveniência que o SBOM+atestação desta skill implementa (v1.0 abril 2023).
+- **NIST SP 800-218 (SSDF — Secure Software Development Framework)** — base regulatória americana para DevSecOps (rev. 2022).
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster
 G17 (DevSecOps — CI/CD security, SAST/DAST, IaC scanning, pipeline hardening,

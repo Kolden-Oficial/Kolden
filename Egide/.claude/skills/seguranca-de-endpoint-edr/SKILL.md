@@ -69,6 +69,26 @@ Ataque que roda só em RAM, sem arquivo em disco — evade AV clássico. Sinais:
 - LOLBin é legítimo por padrão — detecte pelo **contexto** (pai, argumento, host), não pelo nome só.
 - Detecção sem baseline gera enxurrada de FP de administração legítima.
 
+## Herança histórica
+
+**Mark Russinovich** — cofundador da Sysinternals (adquirida pela Microsoft em 2006, hoje CTO do Azure); criador de **Sysmon** (2014+), **Autoruns**, **Process Explorer** e **PsTools**. A telemetria de host moderna é essencialmente o que Sysinternals codificou.
+
+**Alex Ionescu** — coautor de *Windows Internals* (7ª ed., 2017-2022, Microsoft Press, com Russinovich, David Solomon e Andrea Allievi); referência mundial em internals de kernel Windows, base doutrinal para caça a fileless/injeção reflexiva.
+
+**Halvar Flake (Thomas Dullien)** — pesquisador que codificou boa parte do vocabulário de análise binária moderna (BinNavi, BinDiff, hoje em `optimyze.dev`); ancestral doutrinal do reversing usado em análise de fileless.
+
+**Osquery team (Facebook Security, 2014)** — cocriaram o modelo "estado do host como tabela SQL"; hoje na Linux Foundation (osquery.io). Base do bloco osquery da matriz de telemetria.
+
+**MITRE ATT&CK team** — a taxonomia TA0002 (Execution), TA0003 (Persistence), TA0005 (Defense Evasion) e a subtécnica T1059.001 (PowerShell) estruturam o mapa de persistência e o catálogo de fileless.
+
+**Frameworks canônicos herdados**:
+- **Sysmon** (Russinovich, 2014+) — telemetria de host padrão.
+- **MITRE ATT&CK — TA0003 Persistence** — mecanismos catalogados por SO.
+- **LOLBAS Project** (Living Off The Land Binaries And Scripts, `lolbas-project.github.io`) — catálogo aberto de binários Windows abusáveis.
+- **GTFOBins** (`gtfobins.github.io`) — equivalente Unix/Linux para LOLBAS.
+- **Osquery + Fleet** — inventário e caça em frota.
+- **AMSI** (Antimalware Scan Interface, Microsoft, Windows 10+) — inspeção de conteúdo em runtime.
+
 ---
 *Fonte adaptada (princípio, sem cópia literal): `mukul975/Anthropic-Cybersecurity-Skills@673da1f`
 (skills `detecting-fileless-attacks-on-endpoints`, `analyzing-malware-persistence-with-autoruns`,

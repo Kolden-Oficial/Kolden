@@ -62,6 +62,17 @@ o que não deve.
 - Nenhum arquivo da denylist (`.env`, chaves, certs) é enviado a serviço externo.
 - Há cap de tamanho aplicado antes da chamada externa.
 
+## Herança histórica
+
+**Bruce Schneier** — a doutrina de "defesa em profundidade" e a insistência em tratar segurança como propriedade sistêmica (não fórmula matemática) fundamentam os dois padrões desta skill: `O_NOFOLLOW`+temp-rename+0600 é hardening sistêmico contra TOCTOU/symlink; DLP de pré-envio é aplicação prática da regra de menor exposição. Referência: *Secrets and Lies* (2000, Wiley) e o corpo de ensaios em `schneier.com/blog`.
+
+**Matt Bishop** — autor de *Computer Security: Art and Science* (2ª ed., 2018, Addison-Wesley), obra canônica sobre condições de corrida em filesystem, TOCTOU e escrita atômica; codificou a análise formal do símbolo de escrita segura que este padrão implementa.
+
+**Frameworks canônicos herdados**:
+- **TOCTOU (Time-Of-Check to Time-Of-Use)** — classe de vulnerabilidade que motiva a receita `O_NOFOLLOW`+temp+rename atômico.
+- **CWE-59 (Link Following)** e **CWE-732 (Incorrect Permission Assignment)** — mapeamento MITRE que ancora o padrão 1.
+- **NIST SP 800-53 — família AC (Access Control) e MP (Media Protection)** — origem da denylist por classe de dado (chave/cert/secret) e do cap de tamanho.
+
 ---
 *Fonte: `JuliusBrussee/caveman@25d22f86` (MIT), capacidades G19 (I/O symlink-safe:
 `tests/test_symlink_flag.js`, `tests/test_compress_safety.py`) e G8 (denylist de paths sensíveis +

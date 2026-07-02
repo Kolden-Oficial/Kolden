@@ -61,6 +61,23 @@ próxima fronteira). A meta de longo prazo: toda caça bem-sucedida se aposenta 
   raridade e contexto.
 - Caça que não vira detecção nova é trabalho perdido: sempre feche o loop.
 
+## Herança histórica
+
+**Sqrrl Data team (David J. Bianco, Ryan Nolette, Chris Sanders)** — cocriaram o **Threat Hunting Loop** e o *Hunting Maturity Model (HMM)* em 2015-2016 (`www.threathunting.net/files/hunt-evil-practical-guide-threat-hunting.pdf`); a Sqrrl foi adquirida pela AWS em 2018 e os frameworks viraram doutrina do campo. Base do Loop de 7 passos e da seção "Maturidade".
+
+**David J. Bianco** — cunhou também a **Pyramid of Pain** (2013), que estrutura por que caçar TTPs vale mais do que caçar hashes; hoje na Splunk. Referência: `detect-respond.blogspot.com`.
+
+**Chris Sanders** — autor de *Applied Network Security Monitoring* (2013, Syngress, com Jason Smith) e *Investigation Theory* (2018); formalizou a metodologia de investigação e o uso de baseline+desvio comportamental.
+
+**Roberto Rodriguez (Cyb3rWard0g)** — criador do **OSSEM (Open Source Security Events Metadata)**, do **HELK (Hunting ELK)** e do projeto **Threat Hunter Playbook** (`threathunterplaybook.com`, 2018+); operacionalizou "hipótese ↔ técnica ATT&CK ↔ dado" como padrão reprodutível.
+
+**Frameworks canônicos herdados**:
+- **Threat Hunting Loop** (Sqrrl, 2015) — Create Hypothesis → Investigate → Uncover Patterns → Inform & Enrich.
+- **Hunting Maturity Model (HMM 0-4)** — ad hoc → estruturada → automatizada.
+- **Pyramid of Pain** (Bianco, 2013) — ordem TTPs > Tools > Artifacts > Domain > IP > Hash.
+- **MITRE ATT&CK Navigator** — camada de cobertura + gap analysis por técnica.
+- **Diamond Model + Kill Chain** — modelos herdados do CTI para estruturar hipótese.
+
 ---
 *Fonte adaptada (princípio, sem cópia literal): `mukul975/Anthropic-Cybersecurity-Skills@673da1f`
 (skills `building-threat-hunt-hypothesis-framework`, `hunting-for-beaconing-with-frequency-analysis`,

@@ -60,6 +60,24 @@ remediação de CVE → gestão de vulnerabilidade; gate de CI/CD → DevSecOps/
 Análise de malware em artefato de dependência, simulação de ataque de cadeia e SCA específico de
 fornecedor (Snyk) ficam adiados — ver relatório de perda.
 
+## Herança histórica
+
+**Kim Lewandowski, Dan Lorenc e equipe Google Open Source Security** — cocriadores do **SLSA (Supply-chain Levels for Software Artifacts, v0.1 2021, v1.0 abril 2023)**, o framework de 4 níveis de garantia de proveniência que a seção 4 aplica; também da **Sigstore** (Cosign, Fulcio, Rekor, 2021) que operacionaliza assinatura sem chave de longa vida.
+
+**Justin Cappos et al. (NYU Secure Systems Lab)** — arquitetos do **in-toto (2018+)** e do **TUF (The Update Framework)**, base do modelo "layout + verificação de cadeia de passos" da seção 4.
+
+**Anchore team (Dan Nurmi, Alfredo Deza)** — mantenedores de **syft** (gerador de SBOM) e **grype** (scanner de CVE) desde 2020, as ferramentas de referência das seções 1 e 3.
+
+**Ken Thompson** — cunhou em *Reflections on Trusting Trust* (1984, Turing Award Lecture) a intuição fundadora do campo: "você não pode confiar em código que não escreveu inteiramente" — a doutrina raiz por trás da SBOM+atestação.
+
+**Frameworks canônicos herdados**:
+- **SLSA v1.0** — 4 níveis de proveniência (Source, Build, Provenance, Common).
+- **in-toto** — layout de cadeia de passos com assinatura por elo.
+- **CycloneDX (OWASP)** e **SPDX (Linux Foundation)** — os dois formatos canônicos de SBOM.
+- **Sigstore** — assinatura sem chave persistente (OIDC + transparency log Rekor).
+- **CISA Executive Order 14028 (2021)** — exigência regulatória americana de SBOM que fundamenta a seção 1.
+- **NIST SP 800-161 rev.1 (2022)** — *Cybersecurity Supply Chain Risk Management Practices*.
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster G26 — supply-chain-security
 (`generating-and-analyzing-sboms`, `detecting-dependency-confusion`, `scanning-container-images-with-grype`,

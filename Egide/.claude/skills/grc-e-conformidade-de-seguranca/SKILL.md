@@ -198,8 +198,27 @@ Pacote GRC conforme o pedido: SoA/ISMS, ou score de maturidade CSF com roadmap, 
 distinção risco vs. maturidade explícita.
 
 ## Incremental (não nesta leva)
-NIST RMF (ATO/800-37) completo, NERC CIP, PCI DSS e PIA detalhada por sistema, e automação de
-compliance em nuvem (AWS Config/Security Hub) ficam adiados — ver relatório de perda.
+NIST RMF (ATO/800-37) completo, NERC CIP e PIA detalhada por sistema ficam adiados — ver relatório
+de perda. Automação de compliance em nuvem (AWS Config/Security Hub) e SOC 2/HIPAA/PCI-DSS já
+absorvidos na seção 6.
+
+## Herança histórica
+
+**Douglas Landoll** — autor de *The Security Risk Assessment Handbook* (2ª ed. 2011, 3ª ed. 2021, CRC Press), a bíblia operacional de avaliação de risco em segurança da informação; referência primária para o método probabilidade × impacto da seção 3.
+
+**ISO/IEC JTC 1/SC 27 (Subcomitê de Técnicas de Segurança da ISO)** — mantém a família **ISO/IEC 27000**: ISO 27001 (2013, rev. 2022 com 93 controles no novo Anexo A), ISO 27005 (risk management), ISO 27017 (nuvem), ISO 27018 (PII em nuvem).
+
+**NIST — Ron Ross e Kelley Dempsey** — arquitetos do NIST **SP 800-53** (rev. 5, 2020), **SP 800-30** (rev. 1, 2012, guia de risk assessment), **SP 800-37** (RMF, rev. 2, 2018) e do **Cybersecurity Framework** (CSF v1.1 2018, **v2.0 fevereiro 2024** adicionando a função GV — Govern).
+
+**AICPA (American Institute of Certified Public Accountants)** — mantém os **Trust Services Criteria** que definem SOC 2; TSC atual publicado em 2017 com atualizações contínuas.
+
+**Frameworks canônicos herdados**:
+- **ISO 27001:2022** — ISMS + SoA + PDCA; 93 controles no Anexo A.
+- **NIST CSF 2.0** (2024) — 6 funções (GV + ID + PR + DE + RS + RC) com tier de maturidade.
+- **NIST SP 800-30 rev. 1** — método de risk assessment (ameaça × vulnerabilidade × probabilidade × impacto).
+- **AICPA SOC 2 TSC** — 5 categorias (CC obrigatória + A/C/PI/P opcionais), Tipo I vs Tipo II.
+- **PCI DSS v4.0** (março 2022, obrigatório abril 2024) — 12 requisitos com nova ênfase em customized approach.
+- **HIPAA Security Rule** (45 CFR §164.302-318) — controles administrativos/físicos/técnicos, Required vs Addressable.
 
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster G25 — compliance/governance

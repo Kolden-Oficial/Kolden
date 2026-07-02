@@ -213,6 +213,20 @@ monitoring avançado e honeytokens de AD ficam adiados — ver relatório de per
 ofensiva de AD (BloodHound-ataque, ESC1-8, Kerberoast, simulação de ataque ao diretório) é
 **barrada** (dual-use).
 
+## Herança histórica
+
+**John Kindervag** — analista da Forrester Research que, em 2010, publicou *No More Chewy Centers: Introducing The Zero Trust Model of Information Security*, tornando "identidade é o novo perímetro" doutrina consensual. Sua tese fundamenta o Tier 0/1/2 e o zero standing privilege desta skill.
+
+**Bruce Schneier** — em *Secrets and Lies* (2000) formulou a doutrina de que o elo mais fraco é sempre a interface humana com o segredo — origem do padrão "cofrar credencial, não distribuir senha ao operador" que orienta a seção 5.
+
+**Microsoft ESAE / Privileged Access team (Roger Grimes, Sean Metcalf)** — arquitetos do modelo Tier 0/1/2 (Enhanced Security Administrative Environment, 2016+) e da doutrina de PAW. `adsecurity.org` de Sean Metcalf é a referência viva de detecção de golden ticket, DCSync, Kerberoast.
+
+**Frameworks canônicos herdados**:
+- **Zero Trust** (Kindervag/Forrester, 2010) — decisão de acesso por identidade+posture, não por rede.
+- **ESAE / Tier Model** (Microsoft, 2016+) — segregação Tier 0/1/2; PAW; Protected Users.
+- **NIST SP 800-63 (Digital Identity Guidelines)** — IAL/AAL/FAL para força de MFA e federação.
+- **MITRE ATT&CK — Credential Access (TA0006) e Privilege Escalation (TA0004)** — mapeamento das técnicas da seção 6 (T1558 Kerberoast, T1003.006 DCSync, T1550 Pass-the-Hash, T1078 Valid Accounts).
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f` (Apache-2.0), cluster G8 — identity & access
 management (~43 skills; representativas: `securing-aws-iam-permissions`,

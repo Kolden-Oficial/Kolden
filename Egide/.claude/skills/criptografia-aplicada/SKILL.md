@@ -79,6 +79,18 @@ A classe **A02 Cryptographic Failures** do OWASP aponta para cá a partir de
 `seguranca-de-api` aprofunda no item de assinatura/HMAC aqui. A gestão de segredos
 no pipeline (secret-scan) é de `devsecops-sast-dast-em-ci`.
 
+## Herança histórica
+
+**Bruce Schneier** — criptógrafo e escritor de segurança desde os anos 1990; sua obra reformulou o campo ao mostrar que segurança é sistema, não fórmula, e que quase toda falha real é de implementação, não de matemática. Referências primárias: *Applied Cryptography* (2ª ed., 1996, Wiley) e *Secrets and Lies: Digital Security in a Networked World* (2000, Wiley); ensaios em `schneier.com/blog`.
+
+**Colin Percival** — autor do KDF **scrypt** (2009), padrão de derivação de chave resistente a hardware específico. **Daniel J. Bernstein (djb)** — desenhista de Curve25519 (2005), ChaCha20 (2008) e Poly1305 (2005), a família de primitivas modernas usada em TLS 1.3 e em quase todo AEAD sério.
+
+**Frameworks canônicos herdados**:
+- Regra "não role sua própria cripto" (Schneier) — use primitivas revisadas por pares; o trabalho é usá-las certo.
+- AEAD como padrão de cifragem (ChaCha20-Poly1305/AES-GCM) — cifra + autentica de uma vez, sem MAC-then-encrypt caseiro.
+- Argon2id / scrypt / bcrypt para senha — KDF com custo memória/CPU, nunca hash cru.
+- Hierarquia de chaves envelopadas (data key ⊂ master key ⊂ HSM) — origem dos padrões KMS modernos.
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster
 G20 (cryptography — análise criptográfica, gestão de chaves, auditoria de

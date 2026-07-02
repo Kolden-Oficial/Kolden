@@ -192,6 +192,20 @@ chris-sanders (blue-team), contenção → omar-santos (IR).
 Threat hunting orientado a hipótese com Sigma/baselining (cluster G2) e detection engineering /
 autoria de regras (G27) ficam adiados — ver relatório de perda.
 
+## Herança histórica
+
+**Sergio Caltagirone, Andrew Pendergast e Christopher Betz** — autores do **Diamond Model of Intrusion Analysis** (2013, Center for Cyber Intelligence Analysis and Threat Research), o modelo canônico de 4 vértices (adversário, capacidade, infraestrutura, vítima) que estrutura pivoting de CTI. Referência: paper `The Diamond Model of Intrusion Analysis` (CCIATR-2013).
+
+**Eric M. Hutchins, Michael J. Cloppert e Rohan M. Amin (Lockheed Martin)** — autores de *Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains* (2011), que formalizou a **Cyber Kill Chain** de 7 fases.
+
+**MITRE ATT&CK team** — a base de conhecimento de táticas, técnicas e procedimentos (TTP) publicada pela MITRE desde 2013; STIX/TAXII (OASIS) padronizados desde 2013+ (STIX 2.1 finalizado em 2021).
+
+**Frameworks canônicos herdados**:
+- **Diamond Model** (Caltagirone et al., 2013) — cada intrusão = 1 diamante; múltiplos diamantes com aresta comum = 1 campanha.
+- **Cyber Kill Chain** (Lockheed Martin, 2011) e **Unified Kill Chain** (Pols, 2017, 18 fases).
+- **STIX 2.1 + TAXII** (OASIS) — formato de troca; SDO/SRO como grafo compartilhável de inteligência.
+- **Modelo Admiralty** (NATO STANAG 2511) — pontuação de fonte e informação (A–F × 1–6), origem da regra "pontue confiança, não booleano".
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster G3
 (`analyzing-indicators-of-compromise` e correlatos: IOC, atribuição, Navigator, Malpedia, kill

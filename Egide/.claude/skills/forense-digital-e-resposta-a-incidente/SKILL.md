@@ -63,6 +63,19 @@ Playbook estruturado em fases — **contenção → erradicação → recuperaç
 Forense de container/K8s (G11), forense de nuvem (sub-skills de G1/G6) e dashboards de IR ficam
 adiados — ver relatório de perda.
 
+## Herança histórica
+
+**Sarah Edwards** — instrutora do SANS FOR518 e referência mundial em forense de macOS/iOS; autora do curso e do blog `mac4n6.com`. Sua metodologia de artefatos de execução (jumplists, LNK, unified logs) informa a seção de "Disco e artefatos".
+
+**Harlan Carvey** — pioneiro em forense de Windows Registry e timeline analysis. Referência primária: *Windows Registry Forensics* (2ª ed., 2016, Syngress) e *Windows Forensic Analysis Toolkit* (4ª ed., 2014). Introduziu o conceito de **super-timeline** que o plaso/Timesketch materializa.
+
+**Volatility Foundation (Michael Ligh, Andrew Case, Jamie Levy)** — autores de *The Art of Memory Forensics* (2014, Wiley); Volatility 3 é a implementação de referência do método de análise de RAM usado no bloco A.
+
+**Frameworks canônicos herdados**:
+- **NIST SP 800-61 rev. 2 (Computer Security Incident Handling Guide)** — 4 fases (Preparation → Detection & Analysis → Containment/Eradication/Recovery → Post-Incident); base da seção B.
+- **Ordem de volatilidade (RFC 3227, 2002)** — capture RAM antes do disco, disco antes de mídia removível; regra que sustenta "preserve a RAM antes de desligar".
+- **Cadeia de custódia forense** — hash de cada evidência, trabalho sobre cópia, registro contínuo de manipulação.
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), clusters G6 (DFIR:
 `analyzing-memory-dumps-with-volatility` e correlatos) + G14 (incident-response:

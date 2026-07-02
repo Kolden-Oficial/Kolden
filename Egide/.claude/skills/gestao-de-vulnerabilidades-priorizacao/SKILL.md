@@ -78,6 +78,23 @@ A descoberta automatizada (rodar scanner em CI) fica em
 scanner achou. A análise técnica de uma classe específica fica nas habilidades de
 domínio (web, API, cripto).
 
+## Herança histórica
+
+**FIRST.org (Forum of Incident Response and Security Teams)** — mantém o padrão **CVSS** (Common Vulnerability Scoring System) desde 2005 (v2.0 2007, v3.0 2015, v3.1 2019, **v4.0 novembro 2023**); Peter Mell (NIST) e Karen Scarfone foram autores fundamentais das primeiras versões.
+
+**Jay Jacobs e Sasha Romanosky** — cocriadores do **EPSS (Exploit Prediction Scoring System, 2019)** no FIRST.org SIG; publicaram em 2020-2021 os papers que consolidaram EPSS como o sinal probabilístico da priorização — a base da seção "Os três sinais".
+
+**CISA — Known Exploited Vulnerabilities (KEV) Catalog team** — publicou em novembro de 2021 (Binding Operational Directive 22-01) o **KEV Catalog**, listando CVEs com exploração confirmada; virou terceira perna canônica (CVSS + EPSS + KEV) da priorização moderna.
+
+**Kenna Security (agora Cisco Vulnerability Management)** — pioneiros na abordagem *risk-based vulnerability management* desde ~2014; o RSAC 2018 report *Prioritization to Prediction* (com Cyentia Institute) provou empiricamente que CVSS sozinho é ruim classificador de "o que vai ser explorado" — origem doutrinal desta skill.
+
+**Frameworks canônicos herdados**:
+- **CVSS v3.1 e v4.0** (FIRST.org) — severidade técnica (Base + Threat + Environmental + Supplemental na v4).
+- **EPSS** (FIRST.org SIG) — probabilidade 0-1 de exploração em 30 dias, atualizado diariamente.
+- **CISA KEV Catalog** — lista canônica de exploração ativa.
+- **SSVC (Stakeholder-Specific Vulnerability Categorization, CERT/CC, 2019)** — árvore de decisão alternativa ao score composto, adotada pela CISA.
+- **Prioritization to Prediction** (Kenna+Cyentia, 2018-2023) — corpo empírico que fundamenta a matriz probabilidade × impacto-contextual.
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster
 G15 (vulnerability management — scanning, triagem, priorização CVSS/EPSS,

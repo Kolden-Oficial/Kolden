@@ -148,6 +148,25 @@ valor alto, recomende auditoria externa adicional.
 Resposta a incidente on-chain (rastreio de wallet, análise de exploit pós-fato) e cadeias não-EVM
 ficam adiados — ver relatório de perda.
 
+## Herança histórica
+
+**Trail of Bits team (Dan Guido, JP Smith)** — pioneiros em auditoria de smart contract profissional desde 2018; mantém **Slither** (analisador estático de Solidity, 2018), **Echidna** (fuzzer) e **Manticore** (execução simbólica). Referência: `github.com/crytic/`.
+
+**ConsenSys Diligence** — braço de auditoria da ConsenSys; publicou o **Smart Contract Best Practices** (`consensys.github.io/smart-contract-best-practices/`), catálogo canônico de padrões seguros e antipadrões referenciado na seção 5.
+
+**OpenZeppelin (Manuel Araoz e equipe)** — mantenedores da biblioteca **OpenZeppelin Contracts** desde 2016 (o padrão de facto para `Ownable`, `AccessControl`, upgradeabilidade UUPS/Transparent Proxy) e do **Defender** para monitoração on-chain. A seção "Auditoria de controle de acesso" aplica os padrões formalizados aqui.
+
+**Bernhard Mueller** — autor original do **Mythril** (2017), motor de execução simbólica para EVM; contribuidor histórico ao SWC Registry.
+
+**SmartContract Security team** — mantenedores do **SWC Registry (Smart Contract Weakness Classification)**, análogo do CWE para EVM (SWC-100 a SWC-136+).
+
+**Frameworks canônicos herdados**:
+- **SWC Registry** — taxonomia de fraquezas de smart contract.
+- **ConsenSys Smart Contract Best Practices** — padrão CEI (Checks-Effects-Interactions), reentrância, oracle.
+- **OpenZeppelin Contracts** — implementação de referência para RBAC, ownership, upgradeabilidade (nunca reimplementar à mão).
+- **EIP-1967 (Storage Slots)** e **EIP-1822 (UUPS)** — padrões oficiais de proxy upgradeable.
+- **Foundry Book (Paradigm)** — invariantes fuzzáveis (`invariant_*`) e `vm.startPrank` para test-driven auditing.
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster G32 — blockchain-security
 (`auditing-foundry-smart-contract-security`, `analyzing-ethereum-smart-contract-vulnerabilities`).

@@ -59,6 +59,25 @@ detecção contínua → blue-team (WIDS/WIPS).
 Avaliação de BLE/Bluetooth aprofundada, security de IoT além do enlace sem fio e procedimentos de
 captura/cracking detalhados ficam adiados (e fora do escopo defensivo) — ver relatório de perda.
 
+## Herança histórica
+
+**Vivek Ramachandran** — fundador do **SecurityTube** (curso Wi-Fi Security Expert, SWSE) e da Pentester Academy; autor de *Backtrack 5 Wireless Penetration Testing* (2011, Packt) e do Caffè Latte Attack (2007). Codificou o método de assessment defensivo Wi-Fi em escala didática mundial.
+
+**Mike Kershaw (dragorn)** — criador do **Kismet** (2001+, `kismetwireless.net`); o motor de reconhecimento passivo usado na seção 1.
+
+**Mathy Vanhoef** — pesquisador (KU Leuven, hoje) que descobriu o **KRACK Attack (2017)**, contra WPA2 4-way handshake; e o **Dragonblood** (2019), contra WPA3-SAE. As descobertas dele definiram o mapa moderno de robustez de autenticação Wi-Fi (base do bloco 3).
+
+**IEEE 802.11 Working Group + Wi-Fi Alliance** — mantêm o padrão 802.11 (Wi-Fi 6/6E/7) e as certificações WPA2/WPA3 (WPA3 lançado em junho de 2018, com SAE + PMF obrigatório).
+
+**Bluetooth SIG** — mantém as especificações Bluetooth Classic e BLE (Bluetooth Core Spec 5.4, 2023); publicou defesas contra KNOB, BIAS, BLURtooth.
+
+**Frameworks canônicos herdados**:
+- **IEEE 802.11 (Wi-Fi)** e certificações **WPA2 / WPA3** (Wi-Fi Alliance).
+- **802.1X + EAP-TLS** — autenticação enterprise; validação de cert do RADIUS é doutrina.
+- **PMF (Protected Management Frames, 802.11w)** — obrigatório em WPA3.
+- **NIST SP 800-97 (Establishing Wireless Robust Security Networks)** e **SP 800-153 (Wi-Fi Guidelines)**.
+- **MITRE ATT&CK — T1200 (Hardware Additions)** e o eixo de rogue AP/evil-twin em `PRE-ATT&CK`.
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster G31 — wireless-security
 (`performing-wireless-security-assessment-with-kismet`, `conducting-wireless-network-penetration-test`).

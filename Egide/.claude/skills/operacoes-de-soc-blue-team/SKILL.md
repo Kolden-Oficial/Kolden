@@ -79,6 +79,23 @@ um evento isolado raramente decide.
 - Tratar FP recorrente como trabalho novo a cada vez, em vez de devolver para a regra.
 - Matriz sem caminho de notificação e SLA = teatro de processo.
 
+## Herança histórica
+
+**Eric M. Hutchins, Michael J. Cloppert e Rohan M. Amin** — autores de *Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains* (Lockheed Martin, 2011), o paper que formalizou a **Cyber Kill Chain** de 7 fases. Cloppert é referência viva em resposta a intrusão e blue-team maduro.
+
+**Chris Sanders** — autor de *Applied Network Security Monitoring* (2013, Syngress) e *Investigation Theory* (2018); estabeleceu a metodologia de investigação por analista de SOC (contextualizar → classificar → priorizar) que estrutura o workflow desta skill.
+
+**Rob Lee** — Fellow do SANS Institute, autor do currículo SANS FOR508 (*Advanced Incident Response, Threat Hunting, and Digital Forensics*); formalizou a estrutura T1/T2/T3 e a matriz de escalonamento por criticidade × kill chain adotadas por SOCs modernos.
+
+**Anton Chuvakin** — autor de *Logging and Log Management* (2013, com Kevin Schmidt) e ex-Gartner Research VP; codificou a doutrina "MTTD/MTTR são as métricas que importam, taxa de FP é o inimigo" que estrutura a seção "Métricas que importam".
+
+**Frameworks canônicos herdados**:
+- **Cyber Kill Chain** (Lockheed Martin, 2011) — base do "estágio da kill chain" na matriz de severidade.
+- **MITRE ATT&CK + D3FEND (2021)** — vocabulário de ataque/defesa; cobertura por técnica é métrica.
+- **NIST SP 800-61 rev.2 (Computer Security Incident Handling Guide)** — 4 fases (Prep → Detection & Analysis → Containment/Eradication/Recovery → Post-Incident) que estruturam o playbook.
+- **SANS SOC Survey (anual desde 2017)** — benchmark de métricas MTTD/MTTR/FP-rate por setor.
+- **NIST SP 800-92 (Guide to Computer Security Log Management)** — base de análise de log de auditoria (Linux auditd, O365, K8s).
+
 ---
 *Fonte adaptada (princípio, sem cópia literal): `mukul975/Anthropic-Cybersecurity-Skills@673da1f`
 (skills `building-soc-escalation-matrix`, `building-soc-metrics-and-kpi-tracking`,

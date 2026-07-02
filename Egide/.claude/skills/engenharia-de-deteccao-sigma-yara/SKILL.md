@@ -73,6 +73,23 @@ Ver `references/anatomia-de-regras.md` para esqueletos de regra Sigma e YARA e a
 Insumo vem da `analise-estatica-de-malware` (capabilities/IOCs) e da `inteligencia-de-ameacas-cti` (TTPs).
 A regra entregue alimenta `operacoes-de-soc-blue-team` (alerta) e `caca-a-ameacas-orientada-a-hipotese`.
 
+## Herança histórica
+
+**Florian Roth** — criador do **Sigma** (2016), o formato aberto de regra de detecção que virou padrão do mercado; hoje CTO da Nextron Systems. Publicou também YARA-forge e a filosofia de "detection engineering as code" que estrutura a seção 5. Repositório canônico: `github.com/SigmaHQ/sigma`.
+
+**Victor Manuel Alvarez** — autor original do **YARA** ("Yet Another Recursive Acronym"), publicado em 2007 na VirusTotal (adquirida pela Google/Chronicle). *YARA: The pattern matching swiss knife for malware researchers* é a documentação primária.
+
+**MITRE ATT&CK team (Blake Strom, Otis Alexander e equipe)** — a base de conhecimento pública desde 2013 é o "índice" que a seção "Princípios de fidelidade" usa como ancoragem obrigatória: mapear técnica antes de escrever a regra.
+
+**Julio Merino, Palantir team, David J. Bianco** — a **Pyramid of Pain** (Bianco, 2013) é o modelo mental por trás da regra "detectar a técnica > detectar o binário do dia"; regras acima da linha (TTP) sobrevivem à variação de amostra.
+
+**Frameworks canônicos herdados**:
+- **Sigma** (Roth, 2016) — schema YAML portável entre SIEMs via `pySigma`.
+- **YARA** (Alvarez, 2007) — motor de assinatura por strings+condição estrutural para arquivo/memória.
+- **MITRE ATT&CK Navigator** — camada de cobertura de detecção; base do detection-as-code moderno.
+- **Pyramid of Pain** (Bianco, 2013) — ordem crescente de custo para o atacante (hash → IP → domain → artifact → tool → TTP); regras sobem a pirâmide.
+- **Detection Engineering Maturity Matrix** (Palantir, 2021) — 5 níveis de maturidade que orientam o versionamento `experimental` → `test` → `stable`.
+
 ---
 *Fonte adaptada (princípio, sem cópia literal): `mukul975/Anthropic-Cybersecurity-Skills@673da1f`
 (skills `building-detection-rules-with-sigma`, `building-detection-rule-with-splunk-spl`,

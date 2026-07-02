@@ -71,6 +71,26 @@ Forense de firmware de CLP (`performing-plc-firmware-security-analysis`), implem
 de fornecedor (Dragos/Nozomi/Claroty/Tofino) e playbook de IR-OT completo ficam adiados — ver
 relatório de perda.
 
+## Herança histórica
+
+**Robert M. Lee** — cofundador da **Dragos** (2016); ex-analista de ICS/SCADA da USAF e NSA. Autor do curso SANS ICS515 (*ICS Active Defense and Incident Response*) e do *ICS Cyber Kill Chain* (SANS Whitepaper, 2015, com Michael Assante e Tim Conway). Referência viva em resposta a incidente OT.
+
+**Michael Assante** (1968-2021) — Chief Security Officer da NERC (2007-2010); cocriou a visão moderna de defesa de infraestrutura crítica; cofundador da SANS ICS academy. Sua doutrina "safety > availability > security > confidentiality" reordena as prioridades para OT.
+
+**Joe Weiss** — autor de *Protecting Industrial Control Systems from Electronic Threats* (2010, Momentum Press); consultor histórico e voz pública desde a Aurora Generator Test (2007); mantém o `controlglobal.com/unfettered/`.
+
+**Theodore J. Williams (1923-2013)** — arquiteto do **Purdue Enterprise Reference Architecture (Purdue Model, 1990)** na Purdue University; base histórica dos níveis 0-5 usados na seção 3.
+
+**ISA/IEC 62443 committee (ISA99)** — família de padrões internacionais para segurança de sistemas de automação industrial (partes 3-2, 3-3, 4-2 são as mais aplicadas); origem do vocabulário "zonas e condutos".
+
+**Frameworks canônicos herdados**:
+- **Modelo Purdue (Theodore Williams, 1990)** — níveis 0-5.
+- **ISA/IEC 62443** — segurança de IACS (Industrial Automation and Control Systems).
+- **ICS Cyber Kill Chain** (Lee/Assante/Conway, SANS 2015) — 2 estágios (Cyber Intrusion + ICS Attack).
+- **NIST SP 800-82 rev.3 (2023) — Guide to Operational Technology Security**.
+- **MITRE ATT&CK for ICS (2020+)** — tática/técnica específica para ambiente industrial.
+- **Regra de ouro Assante**: safety > availability > integrity > confidentiality (inverso da CIA de TI).
+
 ---
 *Fonte: `mukul975/Anthropic-Cybersecurity-Skills@673da1f3` (Apache-2.0), cluster G12 — ot-ics-security
 (`detecting-anomalies-in-industrial-control-systems`, `detecting-modbus-protocol-anomalies`,
