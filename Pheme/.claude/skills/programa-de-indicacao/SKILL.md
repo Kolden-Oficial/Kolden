@@ -78,3 +78,75 @@ Pedir indicação no cadastro (antes do valor — mate isso, mova para o pós-"a
 `alirezarezvani/claude-skills` (`SKILL.md` + `references/program-mechanics.md` +
 `references/measurement-framework.md`), @4a3c05b69e64f4925f7fc65c88890f614f79caf0,
 licença MIT. Des-personalizado, traduzido e reescrito em pt-BR; sem cópia literal.
+
+---
+
+## Absorção B02 (MKT-G39) — Quadro Growth (AARRR + LTV/CAC + North-star + Cadência)
+
+Programa de indicação é UMA alavanca dentro do sistema maior de growth. Antes
+de otimizar o programa isoladamente, verificar se ele está amarrado ao quadro
+maior — senão você otimiza um K coeficiente com CAC quebrado no funil upstream.
+
+### AARRR (funil pirata) — o mapa do growth
+
+- **A**cquisition — como as pessoas chegam à marca.
+- **A**ctivation — momento "aha" (primeiro valor entregue).
+- **R**etention — voltam depois do primeiro uso/compra.
+- **R**eferral — trazem outras pessoas.
+- **R**evenue — pagam / pagam mais.
+
+**Indicação vive em `Referral`**. Se a Retention é ruim, o Referral morre —
+ninguém indica produto que não usa. **Fluxo de auditoria**: antes de melhorar o
+Referral, checar se Retention está saudável (D30 ≥40% para SaaS SMB; recompra
+30d ≥25% para e-commerce).
+
+### LTV/CAC — o teto do incentivo
+
+- **LTV** (Lifetime Value) — receita esperada de um cliente ao longo do relacionamento.
+- **CAC** (Customer Acquisition Cost) — custo total para adquirir 1 cliente novo.
+- **Regra saudável**: LTV/CAC ≥3 (LTV vale pelo menos 3× o CAC).
+- **Payback**: idealmente <12 meses (SaaS SMB), <6 meses (e-commerce).
+
+**Aplicação em incentivo de indicação**: recompensa monetária ≤30% do LTV.
+Acima disso, você paga mais para adquirir via indicação do que vale o cliente.
+
+### North-star metric — a bússola
+
+Uma única métrica que a empresa toda persegue. Escolher com 3 critérios:
+- **Reflete valor entregue** ao cliente (não só receita).
+- **Preditiva** de crescimento sustentável (correlaciona com receita 6-12m adiante).
+- **Acionável** — o time consegue mover.
+
+Exemplos por vertical:
+- SaaS colaborativo: usuários ativos semanais que criaram conteúdo.
+- Marketplace: transações completadas com nota ≥4.
+- E-commerce assinatura: recompras no ciclo esperado.
+- Mídia/conteúdo: minutos de tempo assistido/lido por usuário/semana.
+
+### Experiment cadence — a máquina de aprender
+
+Growth escala com cadência de teste, não com "campanhas geniais":
+
+- **Semanal**: 1-2 experimentos rodando; parar quando alcançar significância ou 14d.
+- **Estrutura**: hipótese H1/H0 → métrica → tamanho de amostra → duração → resultado documentado.
+- **Nome do jogo**: aprender rápido; 1 vencedor a cada 3-5 experimentos é saudável.
+- **Registrar** em `experimentos.md` OU `experiments.airtable`: hipótese, resultado, decisão (keep/kill/iterate), aprendizado.
+
+### Priorização — matriz ICE ou RICE
+
+Para escolher qual experimento rodar primeiro:
+
+- **ICE** — Impact (1-10), Confidence (1-10), Ease (1-10). Score = média.
+- **RICE** — Reach × Impact × Confidence / Effort.
+
+Usar ICE em estágio inicial (baixa confiança generalizada), RICE quando volume de tráfego é conhecido.
+
+### Aplicação ao Programa de Indicação
+
+- Antes de lançar o programa, checar Retention e LTV/CAC.
+- Definir north-star do PROGRAMA (ex.: % de clientes com ≥1 indicação convertida/trimestre).
+- Rodar 1 experimento/mês só no programa (mudar incentivo, mudar timing, mudar mensagem).
+- Amarrar coeficiente K ao north-star geral — programa é meio, não fim.
+
+---
+**Procedência da absorção B02:** Adaptado de github.com/msitarzewski/agency-agents@a597cb6 (MIT), bucket B02/marketing (ID MKT-G39 — quadro growth AARRR + LTV/CAC + north-star + experiment cadence + ICE/RICE consolidados como camada de contexto ao programa de indicação).

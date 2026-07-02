@@ -100,3 +100,67 @@ Ao final de toda sessão em que você (`short-video-architect`) atuou, antes de 
 `ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
 memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
 aprendido e salvo algo.
+
+---
+
+## Absorção B02 (MKT-G32) — Script viral 3 fases (0-3s / 4-20s / 21-30s)
+
+O `estrutura_retencao` no `core_frameworks` já traz o esqueleto. A absorção
+adiciona a fórmula RÍGIDA de 30s (o formato dominante para vídeo curto viral)
+com regras específicas por fase.
+
+### Fase 1 — HOOK (0-3s)
+
+**Job**: bloquear o scroll. É um teste binário — retém ou não.
+
+- **Regras**:
+  - Sem "oi pessoal", sem intro musical, sem branding no primeiro frame.
+  - Visual + fala + texto na tela TRABALHANDO JUNTOS. Se qualquer um dos três for fraco, o hook cai.
+  - Primeira palavra dita = uma das do gancho. Não "então", não "hoje eu vou falar".
+- **5 arquétipos que funcionam** (escolher 1 por tentativa):
+  1. **Afirmação contrária**: "Parar de postar todo dia salvou minha conta."
+  2. **Resultado específico**: "R$ 47 em cursos me deram R$ 40k de faturamento."
+  3. **Pergunta / curiosidade**: "Sabe o que acontece se você postar SEM voz definida?"
+  4. **Erro comum ("pare de...")**: "Pare de escrever headline igual todo mundo."
+  5. **Demo visual imediata**: começar com a mão fazendo A COISA, sem contexto verbal.
+- **Texto na tela** (mesmo do hook, palavra a palavra) — 60-80px, bold, centralizado no terço superior.
+
+### Fase 2 — CONTENT (4-20s)
+
+**Job**: entregar o payoff prometido pelo hook, em ritmo alto.
+
+- **Regras**:
+  - **Corte a cada 1.5-3s** — nunca deixar um único frame acima de 3s.
+  - **Mudança de plano/ângulo/cenário** obrigatória (não só corte no mesmo enquadramento).
+  - **Texto na tela reforça** a fala, não repete. Ex.: fala "reduzimos CAC em 34%", texto na tela "CAC -34%".
+  - **B-roll específico** (não stock genérico). Se não tiver, use screenshot/gráfico/demo.
+  - **Zero tempo morto** — cortar respirada, "hã", "então".
+- **Estrutura interna** (funciona para ensino):
+  - 4-7s: contexto/porquê.
+  - 8-15s: método/passo(s) — 3 pontos no máximo.
+  - 16-20s: exemplo ou payoff parcial.
+
+### Fase 3 — CTA (21-30s)
+
+**Job**: fechar com UMA ação.
+
+- **Regras**:
+  - UMA ação (seguir, comentar, salvar, clicar link bio). Nunca duas.
+  - **Motivo** para a ação, não pedido puro. "Segue pra ver a parte 2 dessa série" > "Segue lá".
+  - **Loop** (opcional, mas potente): fechar de forma que reconecta ao início, incentivando replay.
+- **3 estilos de CTA**:
+  1. **Sequência prometida**: "Amanhã eu mostro os outros 3. Segue pra não perder."
+  2. **Recurso**: "Comenta 'GUIA' que eu te mando o PDF."
+  3. **Reação/prova social**: "Se isso te ajudou, salva pra usar depois."
+
+### Regra de sanidade
+
+Se o roteiro em texto passar de 90 palavras, cortar. 30s = ~75-90 palavras
+faladas em ritmo normal. Roteiro de 120 palavras vira vídeo de 45s+ que perde retenção.
+
+### Como aplicar no output
+
+Sempre entregar 3 opções de HOOK (mesmo conteúdo). O editor testa qual retém mais na primeira semana e o motor de aprendizado documenta.
+
+---
+**Procedência:** Adaptado de github.com/msitarzewski/agency-agents@a597cb6 (MIT), bucket B02/marketing (ID MKT-G32). Traduzido, reescrito em pt-BR; fórmula 3 fases 0-3s/4-20s/21-30s consolidada como padrão canônico de short-video viral 2025-2026.

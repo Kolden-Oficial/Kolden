@@ -96,3 +96,44 @@ Ao final de toda sessão em que você (`carousel-architect`) atuou, antes de enc
 `ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
 memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
 aprendido e salvo algo.
+
+---
+
+## Absorção B02 (MKT-G20) — Arco oficial de 6 slides
+
+O arco genérico "capa → contexto → passos → payoff → CTA" já está no `core_frameworks`.
+A absorção adiciona uma versão OFICIAL de 6 slides otimizada para SALVAMENTO e CONVERSÃO,
+testada como padrão de default para 80% dos carrosséis de conta B2B/creator.
+
+### Arco de 6 slides (padrão canônico)
+
+```
+Slide 1 — HOOK
+Slide 2 — PROBLEM
+Slide 3 — AGITATION
+Slide 4 — SOLUTION
+Slide 5 — FEATURE
+Slide 6 — CTA
+```
+
+| # | Slide | Job | Regra |
+|---|---|---|---|
+| 1 | **HOOK** | Parar o scroll com promessa específica ou contrário. | Headline < 12 palavras. Sub 0-1 linha. Se puder mostrar número ou negação forte, faça. Exemplos: "Você está postando errado no LinkedIn (7 sinais)". "3 hooks que a Kolden testou em 90 dias — 2 morreram, 1 explodiu." |
+| 2 | **PROBLEM** | Nomear o problema real (não a superfície). | 1 frase forte. "A maioria das marcas foca em quantidade e ignora o pilar de posicionamento." Sem jargão. |
+| 3 | **AGITATION** | Mostrar por que o problema DÓI agora (custo, comparação, futuro). | Ideal: dado real + comparação. "Enquanto você posta 5x/semana sem sistema, seu competidor sobe 30% de alcance." |
+| 4 | **SOLUTION** | Nomear a abordagem/framework/método (sem detalhar ainda). | 1-2 frases. "O sistema `Pheme` cobre 3 fases: fundação, ideação, medição." |
+| 5 | **FEATURE** | Um detalhe operacional da solução — o que a pessoa pode aplicar HOJE. | Passo prático, checklist, ou frame concreto. "Comece pelo `sobre-mim.md` — descreva quem você é em 2 parágrafos antes de ideiar qualquer post." |
+| 6 | **CTA** | UMA ação. Salvar, seguir, comentar, ou clicar. | Escolher UMA. "Salva pra usar quando for planejar o mês." OU "Comenta 'Pheme' que te mando o playbook." |
+
+### Quando NÃO usar este arco
+
+- Carrossel de **entretenimento puro** (meme, humor) — usar arco de setup + punchline.
+- Carrossel de **case study** — usar arco de contexto → desafio → método → resultado (5-8 slides).
+- Carrossel **educacional profundo** — usar 8-10 slides com "aprofundamento" em vez de forçar em 6.
+
+### Como aplicar no output
+
+Ao gerar o carrossel, marcar cada slide com sua label do arco (`HOOK`, `PROBLEM`, etc.) para que o designer visual saiba o peso hierárquico (HOOK e CTA têm hierarquia máxima; AGITATION e SOLUTION são densos, precisam de bem visual; FEATURE pode ser lista).
+
+---
+**Procedência:** Adaptado de github.com/msitarzewski/agency-agents@a597cb6 (MIT), bucket B02/marketing (ID MKT-G20). Traduzido, reescrito em pt-BR; arco de 6 slides consolidado do padrão dominante em contas B2B/creator LinkedIn+Instagram 2025-2026.

@@ -137,3 +137,77 @@ curl -X POST "https://services.leadconnectorhq.com/social-media-posting/$GHL_LOC
 - Postiz docs: https://docs.postiz.com
 - GoHighLevel: `sobre-a-empresa/Ferramentas/GoHighLevel/ferramentas.md`
 - Infisical: skill `infisical-padrao`
+
+---
+
+## Absorção B02 (MKT-G50, G51) — Canal China + Matriz de fit plataforma×conteúdo
+
+Postiz e GHL não cobrem redes chinesas. Para o eixo China (WeChat, Weibo,
+Xiaohongshu, Bilibili, Douyin, Kuaishou, Zhihu, Baidu Tieba, +11 outras) o padrão
+é **draft-first via ferramentas open-source** — o publisher gera o post local,
+uma ferramenta faz upload como rascunho, e um humano na China finaliza (dado
+que muitas plataformas não têm API pública ou exigem KYC local).
+
+### Caminho 3 — China draft-first (19+ plataformas)
+
+Três ferramentas cobrem quase tudo:
+
+- **Wechatsync** (`https://github.com/overtrue/wechat-sync` ou `wechatsync/article-syncjs`) —
+  sincroniza artigo Markdown para: WeChat Official Account, Zhihu Column, Toutiao,
+  Jianshu, CSDN, SegmentFault, OSChina, Bilibili (article), Weibo (long-post), +5 outras.
+- **xhs-mcp** — MCP server para Xiaohongshu (post + comentário + agendamento).
+- **biliup** (`biuliupload/biliup`) — CLI de upload para Bilibili (vídeo + capa + tags + partition).
+
+**Regra draft-first**: as ferramentas fazem UPLOAD como RASCUNHO. Um humano na
+China verifica compliance/censura + clica publicar. Isso protege contra ban da
+conta e respeita as regras dinâmicas de conteúdo.
+
+### Fluxo padrão China
+
+```
+1. Publisher chama a skill de plataforma (xiaohongshu-conteudo, weibo-conteudo, etc.)
+2. Skill gera post em Markdown + assets
+3. Ferramenta (Wechatsync/xhs-mcp/biliup) faz upload como rascunho
+4. Notificação para o operador local (WeCom/WeChat)
+5. Operador local revisa, ajusta, publica
+6. Publisher registra ID + link no growth-analyst
+```
+
+### Credenciais (Infisical)
+
+- `/kolden/prod/WECHAT_SYNC_TOKEN`, `/kolden/prod/XHS_MCP_TOKEN`, `/kolden/prod/BILIUP_COOKIE`.
+- Cookies de conta chinesa: **guardados encriptados + rotação por 60d**. Muitas
+  plataformas invalidam cookie ao detectar IP externo — usar proxy CN quando
+  possível.
+
+### Anexo — Matriz de fit plataforma × conteúdo
+
+| Conteúdo ↓ / Plataforma → | Postiz | GHL | Wechatsync | xhs-mcp | biliup |
+|---|---|---|---|---|---|
+| IG post/reel | ✅ | ⚠️ | ❌ | ❌ | ❌ |
+| TikTok | ✅ | ⚠️ | ❌ | ❌ | ❌ |
+| YouTube (video) | ✅ | ❌ | ❌ | ❌ | ❌ |
+| LinkedIn | ✅ | ✅ | ❌ | ❌ | ❌ |
+| X/Twitter | ✅ | ⚠️ | ❌ | ❌ | ❌ |
+| Pinterest | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Threads | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Bluesky/Mastodon | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Facebook | ✅ | ✅ | ❌ | ❌ | ❌ |
+| WeChat OA (article) | ❌ | ❌ | ✅ | ❌ | ❌ |
+| Weibo | ❌ | ❌ | ✅ | ❌ | ❌ |
+| Xiaohongshu | ❌ | ❌ | ⚠️ | ✅ | ❌ |
+| Zhihu | ❌ | ❌ | ✅ | ❌ | ❌ |
+| Bilibili (article) | ❌ | ❌ | ✅ | ❌ | ⚠️ |
+| Bilibili (video) | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Douyin/Kuaishou | ❌ | ❌ | ❌ | ❌ | ⚠️ (fluxo separado) |
+| Toutiao/Jianshu/CSDN | ❌ | ❌ | ✅ | ❌ | ❌ |
+
+**Legenda**: ✅ suporte pleno · ⚠️ suporte parcial ou depende de plano · ❌ sem suporte.
+
+### Fontes adicionais
+- Wechatsync: https://github.com/overtrue/wechat-sync
+- xhs-mcp: (buscar por xhs-mcp no GitHub, comunidade)
+- biliup: https://github.com/biuliupload/biliup
+
+---
+**Procedência da absorção B02:** Adaptado de github.com/msitarzewski/agency-agents@a597cb6 (MIT), bucket B02/marketing (IDs MKT-G50, G51 — canal China draft-first via Wechatsync/xhs-mcp/biliup + matriz de fit plataforma×conteúdo).

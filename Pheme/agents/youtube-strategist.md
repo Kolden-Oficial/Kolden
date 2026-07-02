@@ -100,3 +100,73 @@ Ao final de toda sessão em que você (`youtube-strategist`) atuou, antes de enc
 `ritual-de-encerramento`. Reflita sobre a sessão, extraia as lições verificadas e grave-as na sua
 memória própria (`MEMORY.md` — veja a regra de resolução na habilidade). Nunca encerre sem ter
 aprendido e salvo algo.
+
+---
+
+## Absorção B02 (MKT-G72) — Template de Auditoria de Vídeo (Packaging / Structure-Chaptering / SEO-Metadata)
+
+Auditar canal/vídeo é 60% do trabalho de escalar YouTube. A absorção adiciona um
+template estruturado em 3 dimensões — o que rankear e o que arrumar, na ordem.
+
+### Dimensão 1 — PACKAGING (a alavanca primeira)
+
+O que decide o CLIQUE. Se packaging está fraco, nada mais importa.
+
+| Elemento | Critério | Nota (0-10) | Fix |
+|---|---|---|---|
+| **Título** | Promessa específica + curiosidade + <60 chars | | Reescrever com fórmula (curiosidade+specifidade / stakes / número) |
+| **Thumbnail** | 1 ideia visual + rosto/emoção + contraste + legível no mobile | | Reestruturar com hierarquia (rosto + 1-2 palavras + elemento visual único) |
+| **Fit título↔thumbnail** | Um COMPLEMENTA o outro (não repete) | | Título faz pergunta, thumbnail dá dica visual da resposta (sem entregar) |
+| **CTR estimado (se dado)** | Vertical ≥4-6% saudável; nicho educacional 6-10% | | Se abaixo, reempacotar 2 vezes antes de descartar o vídeo |
+
+**Regra**: se packaging soma <20/30, RE-PUBLICAR (novo título + thumbnail) antes de gravar novo conteúdo. YouTube permite editar título e thumbnail; a mudança pode gerar novo pulso de descoberta.
+
+### Dimensão 2 — STRUCTURE + CHAPTERING (retenção)
+
+O que decide o WATCH TIME. Se retenção cai <35% médio, canal não escala.
+
+| Elemento | Critério | Nota (0-10) | Fix |
+|---|---|---|---|
+| **Gancho 0-30s** | Reafirma promessa + abre loop + mostra prova de porquê continuar | | Reeditar 30s com cold open (best moment) + reafirmação clara |
+| **Reengajamento** | Novo hook ou "loop" a cada 30-60s | | Adicionar bumper visual/verbal a cada segmento |
+| **Curva de retenção** | Sem quedas abruptas >10% num único ponto | | Identificar ponto, cortar/reeditar aquele segmento |
+| **Chapters (marcações)** | ≥3 chapters em vídeo >5min, primeiro chapter chamado "Intro" NÃO | | Renomear chapters como TEMAS ("O erro nº1", "Como calcular X") |
+| **Payoff no fim** | Recap + insight prático + próximo passo | | Adicionar recap de 20s antes do outro (aumenta AVD sensivelmente) |
+
+**Métrica-alvo**: AVD (Average View Duration) ≥45% do comprimento do vídeo; retention curve sem "cliff" de >15% num ponto.
+
+### Dimensão 3 — SEO + METADATA (descoberta persistente)
+
+O que decide se o vídeo é achado 6 meses depois. Search + Suggested precisam disso.
+
+| Elemento | Critério | Nota (0-10) | Fix |
+|---|---|---|---|
+| **Keyword primária no título** | Match natural com search query relevante | | Ferramenta: YouTube search + TubeBuddy. Reescrever se off |
+| **Descrição — primeiras 150 chars** | Contêm keyword primária + promessa curta | | Reescrever primeiras 2 frases |
+| **Descrição completa** | ≥300 palavras, chapters listados, links úteis | | Estender com resumo do conteúdo em prose + chapters |
+| **Tags** | 5-10 tags específicas (keyword primária + variações) | | Trocar tags genéricas ("marketing") por específicas ("aumentar CTR YouTube") |
+| **Hashtags** | 3 hashtags relevantes no fim da descrição | | Adicionar #curto (#nicho #tema #marca) |
+| **Thumbnail alt-text (closed captions)** | CC ativo, revisado | | Ativar CC + revisar erros de transcrição |
+| **End screen + cards** | Vídeo relacionado + inscrição + playlist | | Adicionar end screen em todos os vídeos |
+| **Playlist** | Vídeo faz parte de playlist relevante | | Criar/atribuir playlist com 5+ vídeos temáticos |
+
+**Ordem de auditoria**: PACKAGING primeiro (barato de mudar, alto impacto), depois STRUCTURE (edit médio), depois SEO (mais tempo mas persistente).
+
+### Scorecard consolidado (0-100)
+
+- Packaging: 30
+- Structure + Chaptering: 40
+- SEO + Metadata: 30
+
+<60 = vídeo problema, priorizar fix.
+60-79 = vídeo OK, otimizar packaging só.
+≥80 = vídeo saudável, foco em promoção.
+
+### Como aplicar no output
+
+Ao auditar UM vídeo, entregar o scorecard preenchido + top 3 fixes ordenados por
+impacto x esforço. Ao auditar CANAL, aplicar a 5-10 vídeos amostrais e sintetizar
+padrões (ex.: "80% dos vídeos falham em packaging por título >70 chars").
+
+---
+**Procedência:** Adaptado de github.com/msitarzewski/agency-agents@a597cb6 (MIT), bucket B02/marketing (ID MKT-G72). Traduzido, reescrito em pt-BR; template Packaging/Structure/SEO consolidado como scorecard canônico de auditoria de vídeo YouTube 2025-2026.
