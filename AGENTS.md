@@ -9,11 +9,11 @@
 Operação do **Ronan**. A descrição oficial (modelo de negócio, mercado, marca) está em construção em `sobre-a-empresa/` — **um squad de pesquisa vai definir e preencher**. Enquanto estiver `status: rascunho`, **não afirme** detalhes de negócio: diga que está em definição.
 
 ## Números do workspace (estado atual)
-- **23 squads** de agentes (nomes da mitologia grega) — **235 agentes** nas pastas `agents/` (inclui os 6 squads-semente novos: +30; e a consolidação do Caliope com o antigo `copy-master/`: +10).
+- **23 squads** de agentes (nomes da mitologia grega) — **240 agentes** nas pastas `agents/` (inclui os 6 squads-semente novos: +30; consolidação Caliope×copy-master: +10; **campanha 2026-07-02: Themis +1 (analista-de-compliance-regulatorio) + Emporos +4 (gestor-de-contas-estrategicas, coach-de-discovery, engenheiro-de-pre-vendas, analista-de-pipeline)**).
 - **Prometeu**: framework de engenharia AIOX com **12 agentes** em `Prometeu/.aiox-core/development/agents/`.
 - **Caos**: fábrica de agentes com **9 especialistas internos** + **26 skills**.
-- **Total**: **256 agentes** (235 em 23 squads + 12 Prometeu + 9 Caos) — contagem verificada arquivo-a-arquivo em 2026-06-28 (pós-consolidação Caliope×copy-master, K-002+K-012). A **Dike** (verificador da subida) é um papel **sem arquivo de agente próprio** (`Dike/` tem PRD/CLAUDE/memória, mas não `agents/*.md`), por isso **não entra na contagem**.
-- **Skills (estado vivo, 2026-06-29)**: **202 habilidades** em 20 squads + Prometeu — Égide 32, Caos 26, Prometeu 24, Ariadne 18, Pheme 11, Aletheia 10, Aglaia 9, Dédalo 9, Argos 7, Cairós 7, Pactolo 7, Harmonia 6, Ananke 5, Caliope 5, Êmporos 5, Héstia 5, Nomos 5, Olimpo 5, Liceu 3, Metis 3. Fontes: lote 2026-06-26/27 (~129 do batch de 31 repos `repos-claude-github`) + absorção `msitarzewski/agency-agents` (em andamento, B01 aplicado em 2026-06-28 — squads de domínio receberam +73 cross-domain, inclui Aletheia, Aglaia e Liceu que antes não tinham `.claude/skills/`). Todos os squads com skills têm `catalogo.md`. Detalhes: `Caos/registros/absorcao/_lote-2026-06-26/RELATORIO-DO-LOTE.md` + `Caos/registros/absorcao/msitarzewski--agency-agents/`. Roadmap: `_lote-2026-06-26/ROADMAP-ESTRUTURA-ROBUSTA.md`.
+- **Total**: **261 agentes** (240 em 23 squads + 12 Prometeu + 9 Caos) — contagem verificada arquivo-a-arquivo em 2026-07-02 (pós-campanha F6 exaustiva). A **Dike** (verificador da subida) é um papel **sem arquivo de agente próprio** (`Dike/` tem PRD/CLAUDE/memória, mas não `agents/*.md`), por isso **não entra na contagem**.
+- **Skills (contagem real por `ls`, 2026-07-02, working tree pré-commit)**: **314 habilidades** em 23 squads — **Prometeu 56**, **Pheme 33**, **Égide 33**, **Caos 26**, **Ariadne 22**, **Emporos 18**, **Olimpo 15**, **Dédalo 13**, **Aletheia 11**, **Aglaia 11**, **Caliope 10**, **Peitho 8**, **Pactolo 8**, **Cairós 7**, **Argos 7**, **Metis 6**, **Harmonia 6**, **Nomos 5**, **Héstia 5**, **Ananke 5**, **Themis 3**, **Pluto 3**, **Liceu 3**. Fontes: lote 2026-06-26/27 + absorção `msitarzewski/agency-agents` (B01/B02/B03/B04/B05/B06/B08/B09/B10/B11/B15 aplicados; B07/B12/B13/B14 pendentes). Todos os squads com skills têm `catalogo.md`. Detalhes: `Caos/registros/absorcao/_campanha-2026-07-02/RELATORIO-DA-CAMPANHA.md` + `_lote-2026-06-26/RELATORIO-DO-LOTE.md`.
 - **6 squads-semente novos (2026-06-28)**: **Nomos** (compliance/jurídico), **Pactolo** (finanças/FP&A), **Êmporos** (vendas/comercial), **Héstia** (RH/pessoas), **Ananke** (operações/BizOps), **Cairós** (PMO/projetos) — +30 agentes (chief + 4 especialistas cada). **Status `semente`**: estrutura inicial (README + squad.yaml + agentes + 5 skills + catálogo + MEMORY); refino completo (PRD, Ritual de 9 fases, herança histórica) pendente do Caos. Fronteiras de camada cravadas vs Olimpo (Plutos/Afrodite/Poseidon) e Prometeu/Caos.
 - **Ferramentas**: ~35 tools/APIs catalogadas (inclui 5 vendors novos: Repomix, MarkItDown, MoneyPrinterTurbo, PlaywrightMCP, n8n-MCP); **14 MCPs conectados**, 8 aguardando OAuth.
 - **Projetos** em desenvolvimento: `omiron`, `CataLogo` (Tracker Flow).
@@ -61,8 +61,30 @@ Novos projetos seguem o template `Projetos/_modelo-projeto/` (leia-me, prd, arqu
 
 ---
 
-## 🧩 Skills absorvidas (lote 2026-06-26/27) — por squad
-91 habilidades nascidas da absorção de 31 repos GitHub (REUSE>ADAPT>CREATE, reconciliação PERDIDO=0, sem cópia literal — princípio reescrito em PT-BR + atribuição). Vivem em `<Squad>/.claude/skills/`, indexadas no `catalogo.md` de cada squad. Abaixo as **44 âncoras** iniciais; a **absorção exaustiva (2026-06-27)** somou **+47**: **Égide +24** (cyber full-spectrum: cloud/k8s/IAM/ZTA, malware/detecção/SOC/endpoint/threat-hunting/rede, OWASP/API/vuln/PTES/DevSecOps/cripto, OT-ICS/mobile/firmware/blockchain/wireless/supply-chain/GRC/anti-ransomware — só método/dual-use), **Ariadne +11** (SEO técnico em escala + conteúdo E-E-A-T), **ECC +12** (Caos eval/governança/council, Dédalo code-review/TDD/grafo/sanitização, Prometeu eng/dados/DevOps/QA). Resto diferido no `ROADMAP-ESTRUTURA-ROBUSTA.md`.
+## 🧩 Skills absorvidas — histórico das campanhas
+
+### Campanha F6 EXAUSTIVA (2026-07-02) — quarentena fechada
+**98 skills novas + 45 SKILL.md estendidas + 10 catálogos + 1 agente novo (Themis) + 4 agent-extensions Pheme + Peitho esqueleto criado**. 7 ondas × 3 subagentes, PERDIDO=0. Working tree (pré-commit). Migração no ledger `Caos/dados/repositorios-absorvidos.yaml`: 13 buckets do lote 2026-06-26 passaram de `analisado` → `absorvido`; 4 buckets do agency-agents fechados: **B02 marketing** (107 IDs), **B03 engineering** (117 IDs), **B06 sales** (33 IDs), **B10 support** (15/23 IDs aplicados + 8 ROADMAP). Detalhes: `Caos/registros/absorcao/_campanha-2026-07-02/RELATORIO-DA-CAMPANHA.md`.
+
+Alterações por squad na campanha 2026-07-02:
+- **Prometeu (+32)**: B03-A (10 skills eng — MLOps, contratos-API, migrações zero-downtime, onboarding-de-codebase, pipeline-invariantes, Postgres-tuning), B03-B (10 skills — deploy strategies, MIME, virtualização, git-branching, SLO/error-budget, diff-mínimo, mobile cross-platform, offline-first, prompts-versionados, MVP 3-dias), B03-C (8 skills qa — threejs, seleção-padrão-arquitetural, WCAG 2.2 AA, API testing, qa-anti-fantasia, k6-benchmarking, cross-validation, spec-gap, ML-mutation), + 4 diferidos O3 (depuracao-sistematica, orquestracao-comandos-slash, debugging-por-council).
+- **Pheme (+22 + 5 ADAPT + 3 agent-ext)**: eixo China (12: baidu/bilibili/douyin/kuaishou/wechat/weibo/xiaohongshu/zhihu/wecom/podcast-china/china-ecommerce-ops/china-localizacao-gtm), eixo Global/AEO (10: aeo-foundations, agentic-search-webmcp, geo-citacoes-ia, motor-carrossel-autonomo, cross-border-ecommerce, podcast-global, linkedin-comment-to-pipeline, livestream-commerce, reddit-comunidade, edicao-shortvideo).
+- **Emporos (+13 CREATE + 4 ADAPT)**: B06 sales fechado — batch A (qbr-forward-looking, mapa-de-stakeholders, saude-de-conta, estrategia-deal-complexo), batch B (spin, sandler, upfront-contract, demo-invertida, poc-gate-binario), batch C (battlecard-fia, abm-tiering, pipeline-velocity, forecast-3-faixas). ADAPTs em BANT+MEDDPICC, negociacao+AECR, cadencia+signal-based, proposta+3-atos-win-themes.
+- **Olimpo (+10)**: B15 (Zeus: entrada-posicionamento, chief-of-staff, ESG, PMI; Plutos: alocacao-capital, investor-relations, pricing-wtp; Poseidon: lean-six-sigma, supply-chain) + skill compartilhada B10 `sumario-executivo-scqa`.
+- **Peitho (esqueleto + 8 + 3 ADAPT)**: `.claude/skills/` criado do zero — auditoria-forense-200-checkpoints, RSA/PMax criativo-como-hipótese, paid-social-cross-platform, incrementalidade-cross-channel, arquitetura-enterprise-PPC, programatica-e-display, search-query-analise, amazon-ppc. ADAPTs em ads-analyst, ad-midas e setup-tracking.
+- **Caliope (+5)**: aso-app-store, ghostwriting-de-livro, script-de-livestream, pr-comunicacoes-institucionais, escrita-tecnica-docs-as-code (B03 compartilhada).
+- **Ariadne (+4 + 1 ext)**: engenharia-de-schema-executavel, geo-ai-overviews-aprofundado, arquitetura-de-site-hub-spoke, planejamento-por-industria-seo + core-web-vitals-e-performance estendida com metas absolutas + capacity planning.
+- **Dédalo (+4)**: comandos-de-compreensao-contextual, gestao-de-memoria-cli-ergonomica, arquitetura-multi-agente-canonica (B03), avaliacao-de-ferramentas-mcda (B03).
+- **Metis (+3)**: rfm-e-segmentacao, atribuicao-multi-touch, clv-e-segmentacao (B10).
+- **Aglaia (+2)**: direcao-de-brand-kit-visual, direcao-visual-de-referencia.
+- **Themis (+1 agente + 3 skills)**: agente novo `analista-de-compliance-regulatorio` + framework-gdpr-lgpd + gerador-de-politica-de-privacidade + revisao-de-contratos-com-risco (B10).
+- **Pactolo (+1 + 3 ADAPT)**: npv-irr-e-analise-de-investimento + ADAPTs em unit-economics-operacional (+ROI/scenario/probabilística), gestao-de-fluxo-de-caixa (+STL/anomaly), analise-fpa-e-variancia (+waterfall/corretivas) (B10).
+- **Aletheia (+1)**: otimizacao-de-workflow-lean (B03 compartilhada).
+- **Égide (consolidação massiva — 32 SKILL.md enriquecidas + 5 incrementals + 1 nova)**: herança histórica em massa (Bruce Schneier, Sarah Edwards, John Kindervag, MITRE ATT&CK, Florian Roth, Chris Sanders, Kevin Mitnick, Trail of Bits, Jim Manico, Adam Shostack, etc.) + incrementais (Macie/DLP, Falco+Tetragon, browser isolation, SOC 2 mapping, OIDC federation) + skill nova `solidity-evm-foundry-seguro` (B03).
+
+### Campanha lote 2026-06-26/27 — 91 skills-âncora iniciais
+91 habilidades da absorção de 31 repos GitHub (REUSE>ADAPT>CREATE, PERDIDO=0, sem cópia literal). **44 âncoras iniciais** + **absorção exaustiva 2026-06-27** somou +47: **Égide +24** (cyber full-spectrum), **Ariadne +11** (SEO técnico), **ECC +12** (Caos/Dédalo/Prometeu). Diferido no `ROADMAP-ESTRUTURA-ROBUSTA.md`.
+Estado inicial por squad (pré-campanha 2026-07-02):
 - **Ariadne** (+18): `analise-de-gap-de-conteudo`, `apis-google-e-indexacao`, `auditoria-tecnica-em-escala`, `brief-de-conteudo-data-driven`, `core-web-vitals-e-performance`, `framework-flow`, `monitoramento-de-drift-seo`, `otimizacao-on-page-por-intencao`, `qualidade-de-conteudo-eeat`, `relatorios-de-seo`, `render-js-e-spa`, `seo-de-imagens`, `seo-ecommerce`, `seo-internacional-hreflang`, `seo-local-e-mapas`, `seo-programatico-profundo`, `seo-tecnico-profundo`, `sxo-search-experience`.
 - **Égide** (+5): `auditoria-de-seguranca-de-ia-e-mcp` (flagship), `inteligencia-de-ameacas-cti`, `forense-digital-e-resposta-a-incidente`, `scanner-anti-injecao-resiliente`, `escrita-segura-e-dlp`.
 - **Harmonia** (+4): `sistema-de-design`, `tokens-de-design`, `implementacao-ui`, `julgamento-estetico-anti-slop`.
@@ -234,7 +256,7 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 - `plutos` — CFO: finanças, budget de mídia, margem, precificação, unit economics e caixa.
 - `afrodite` — CRO: receita, pipeline de vendas, qualificação, conversão e CRM/GHL.
 
-**Themis/** — Conselho consultivo com 11 mentes estratégicas (11 agentes). → `Themis/README.md`
+**Themis/** — Conselho consultivo com 11 mentes estratégicas + 1 operacional transversal de compliance (12 agentes). → `Themis/README.md`
 - `board-chair` — Orquestrador: diagnostica, roteia e sintetiza recomendações.
 - `ray-dalio` — Princípios, ciclos econômicos e gestão de risco.
 - `charlie-munger` — Modelos mentais, vieses cognitivos e inversão.
@@ -246,6 +268,7 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 - `patrick-lencioni` — Saúde organizacional e as cinco disfunções de equipe.
 - `derek-sivers` — Minimalismo empreendedor e o filtro "Hell Yeah or No".
 - `yvon-chouinard` — Negócio orientado por missão e ativismo ambiental.
+- `analista-de-compliance-regulatorio` — **[novo 2026-07-02]** Operacional transversal sob a chancela do conselho: LGPD/GDPR/CCPA, DPO, revisão de contratos com risco, resposta a incidentes de privacidade. Não é conselheiro — é executor de governança/compliance.
 
 **Metis/** — Analytics & Growth orientado por dados (7 agentes). → `Metis/README.md`
 - `data-chief` — Orquestrador: triagem, roteamento e QA em analytics e growth.
@@ -332,7 +355,7 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 Criados para os domínios sem dono (roadmap R2). Cada um: orquestrador + 4 especialistas + 5 skills-âncora + `squad.yaml` + `catalogo.md` + `MEMORY.md`. `status: semente` (estrutura inicial; PRD/Ritual de 9 fases/herança histórica pendentes). Fontes: `alirezarezvani/claude-skills` (MIT) + `knowledge-work-plugins` (Apache-2.0).
 - **Nomos/** — Compliance & Jurídico/Regulatório (LGPD/GDPR, ISO 27001, SOC 2, EU AI Act, contratos, risco). Veto: sem parecer vinculante (revisão humana). Handoffs: Themis (risco), Égide (DLP), Pactolo (finanças). → `Nomos/README.md`
 - **Pactolo/** — Finanças Operacionais / FP&A (modelagem, orçamento/forecast, fechamento, fluxo de caixa, unit economics). Decisão estratégica → handoff ao Plutos (Olimpo/CFO). → `Pactolo/README.md`
-- **Emporos/** — Vendas & Comercial (pipeline, qualificação BANT/MEDDIC, propostas, cadências, CRM/GHL). Execução sob a política do Afrodite (Olimpo/CRO); consome leads de Pheme/Ariadne. → `Emporos/README.md`
+- **Emporos/** — Vendas & Comercial (pipeline, qualificação BANT/MEDDIC/MEDDPICC, propostas, cadências, CRM/GHL). **Semente → 9 agentes / 18 skills-âncora** (campanha 2026-07-02, B06 sales fechado). +4 especialistas: `gestor-de-contas-estrategicas` (account expansion + QBR + saúde-de-conta), `coach-de-discovery` (SPIN + Sandler + Upfront Contract), `engenheiro-de-pre-vendas` (demo-invertida + POC-gate-binário + battlecard-FIA), `analista-de-pipeline` (pipeline-velocity + forecast-probabilístico-3-faixas). Execução sob a política do Afrodite (Olimpo/CRO); consome leads de Pheme/Ariadne. → `Emporos/README.md`
 - **Hestia/** — RH, Pessoas & Cultura (recrutamento, onboarding, performance, cultura, cargos). RH dos *agentes* de IA → handoff ao Caos/curador. → `Hestia/README.md`
 - **Ananke/** — Operações & BizOps (SOPs, eficiência, automação, fornecedores). Build técnico de automação (n8n) → handoff ao Dédalo; estratégia → Poseidon. → `Ananke/README.md`
 - **Cairos/** — PMO & Gestão de Projetos de negócio (cronograma, escopo, risco, stakeholders, roadmap de produto). Build de software → handoff ao Prometeu. → `Cairos/README.md`
