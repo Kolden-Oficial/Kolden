@@ -92,36 +92,41 @@ repositorios:
     url: "https://github.com/obra/superpowers"
     shas:
       - { sha: "896224c4b1879920ab573417e68fd51d2ccc9072", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "prometeu·dedalo·caos-fabrica", notas: "25 cap; insight SDO corrige descrições de skill do Caos; só BRAINSTORM_OPEN_CMD não-absorvível" }
+      - { sha: "896224c4b1879920ab573417e68fd51d2ccc9072", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "prometeu (depuracao-sistematica G9-G13 + debugging-por-council-e-verification-loop) + dedalo (orquestracao-de-subagentes-paralelos G5-G7 + git-worktrees-e-finalizacao G17-G18 + reflexos-resilientes-e-bootstrap G23-G24)", notas: "F6 exaustivo — restam brainstorm/writing-skills como sugestão para caos-fabrica em leva futura" }
     licenca: "MIT"
-    status: analisado
+    status: absorvido
 
   github.com/affaan-m/everything-claude-code:
     url: "https://github.com/affaan-m/everything-claude-code"
     shas:
       - { sha: "2bc924faf2f8e893bfe0af86b1931283693c30ae", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "caos-fabrica·dedalo·+8", notas: "~271 skills/67 agentes/92 commands; 37 clusters; tooling ECC = vendor inerte; overlap SEO/pesquisa exige diff" }
+      - { sha: "2bc924faf2f8e893bfe0af86b1931283693c30ae", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "prometeu (padroes-de-engenharia-idiomatica G10/G13/G15 + engenharia-de-dados G16 + devops-e-entrega-continua G14/G16/G34 + qa-e-quality-gates G12) + prometeu (debugging-por-council-e-verification-loop G6)", notas: "F6 exaustivo — 4 skills clusters de âncora Prometeu (12 IDs); ML núcleo pytorch/foundation-models DIFERIDO para leva ML futura" }
     licenca: "MIT"
-    status: analisado
+    status: absorvido
 
   github.com/garrytan/gstack:
     url: "https://github.com/garrytan/gstack"
     shas:
       - { sha: "11de390be1be6849eb9a15f91ff4922dd16c589a", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "olimpo·prometeu·harmonia·egide", notas: "58 cap; análogo Olimpo; absorver técnica (autoplan, rubrica 0-10) não persona; daemon/telemetria não-absorvível" }
+      - { sha: "11de390be1be6849eb9a15f91ff4922dd16c589a", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "olimpo B15 (9 skills executivas: estrategia-de-entrada/chief-of-staff/programa-esg/pmi/alocacao-capital/investor-relations/pricing-wtp/lean-six-sigma/supply-chain + sumario-executivo-scqa B10 skill compartilhada)", notas: "F6 exaustivo — técnicas autoplan/rubrica-0-10 previamente incorporadas em skills Olimpo existentes; daemon/telemetria segue não-absorvível" }
     licenca: "MIT"
-    status: analisado
+    status: absorvido
 
   github.com/github/spec-kit:
     url: "https://github.com/github/spec-kit"
     shas:
       - { sha: "b7e67f55bf7a937aaa57dbe0a8198774e285de3a", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "prometeu", notas: "21 cap; /clarify /analyze /checklist /converge /constitution; enriquece pipeline spec-driven do Prometeu" }
+      - { sha: "b7e67f55bf7a937aaa57dbe0a8198774e285de3a", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "prometeu (orquestracao-de-comandos-slash G1/G3-G7/G9/G10/G12-G14/G16)", notas: "F6 exaustivo — templates/extension-hooks/append-only capturados" }
     licenca: "MIT"
-    status: analisado
+    status: absorvido
 
   github.com/gsd-build/get-shit-done:
     url: "https://github.com/gsd-build/get-shit-done"
     shas:
       - { sha: "bdcaab2c752d9a33a1a1ca9acf3a3c81fb991815", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "prometeu·dedalo·egide", notas: "40 cap; repo ARQUIVADO (sucessor open-gsd/gsd-core); G35 scanner anti-injeção novel→egide" }
+      - { sha: "bdcaab2c752d9a33a1a1ca9acf3a3c81fb991815", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "prometeu (ciclo-de-fase-goal-backward G17/G26/G32) + egide (scanner-anti-injecao-resiliente G34/G35/G40 fundido)", notas: "F6 exaustivo — âncoras aplicadas; roadmapper/framework-selector deferidos como próxima leva" }
     licenca: "MIT"
-    status: analisado
+    status: absorvido
 
   github.com/revfactory/harness:
     url: "https://github.com/revfactory/harness"
@@ -148,22 +153,25 @@ repositorios:
     url: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
     shas:
       - { sha: "9fd25fe07e46ae444edc356e62fe913347ab9e23", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "harmonia·aglaia·orfeu·pheme", notas: "40 cap; base de dados de design (84 estilos/161 paletas/99 regras UX)+engine; sobrepõe taste-skill (coordenar na escrita)" }
+      - { sha: "9fd25fe07e46ae444edc356e62fe913347ab9e23", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "harmonia (4 skills 1º passe) + aglaia (direcao-de-brand-kit-visual G4 + direcao-visual-de-referencia G11/G12/G15/G20-G24)", notas: "F6 exaustivo — CLI/build tools DESCARTADOS (fora escopo); Harmonia+Aglaia saturados" }
     licenca: "MIT"
-    status: analisado
+    status: absorvido
 
   github.com/safishamsi/graphify:
     url: "https://github.com/safishamsi/graphify"
     shas:
       - { sha: "8994b5500c9ff1e4d2314cb78abfce56f524a215", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "dedalo·vendor·egide·metis", notas: "20 cap; PyPI graphifyy v0.8.49; vendor+skill; sobrepõe Understand-Anything (reconciliar juntos)" }
+      - { sha: "8994b5500c9ff1e4d2314cb78abfce56f524a215", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "dedalo (compreensao-de-codebase — fundido com understand-anything)", notas: "F6 exaustivo — fusão graphify+understand-anything numa skill, motor vendor inerte" }
     licenca: "MIT"
-    status: analisado
+    status: absorvido
 
   github.com/lum1104/understand-anything:
     url: "https://github.com/Lum1104/Understand-Anything"
     shas:
       - { sha: "54754a6f97051d1d76c8758353d8ea41afe502a6", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "MISTA", squadAlvo: "dedalo·vendor·argos", notas: "32 cap; grafo de codebase tree-sitter; sobrepõe graphify; hook auto-update 'sem confirmar' fere gate humano (remover diretiva)" }
+      - { sha: "54754a6f97051d1d76c8758353d8ea41afe502a6", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "dedalo (comandos-de-compreensao-contextual G2/G5/G7/G13/G17 + compreensao-de-codebase fusão)", notas: "F6 exaustivo — comandos /understand-* + Karpathy wiki; hook auto-update SUBSTITUÍDO por gate humano" }
     licenca: "MIT"
-    status: analisado
+    status: absorvido
 
   github.com/kepano/obsidian-skills:
     url: "https://github.com/kepano/obsidian-skills"
@@ -176,8 +184,9 @@ repositorios:
     url: "https://github.com/Leonxlnx/taste-skill"
     shas:
       - { sha: "06d6028b5c623016c59ce8536f578e5a1127b499", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "harmonia·aglaia·caliope", notas: "23 cap; anti-slop de design; banco de AI-tells→split harmonia/caliope; sobrepõe ui-ux-pro-max" }
+      - { sha: "06d6028b5c623016c59ce8536f578e5a1127b499", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "harmonia (julgamento-estetico-anti-slop + baseline-legado-v1 references) + aglaia (direcao-de-brand-kit-visual G4)", notas: "F6 exaustivo — split harmonia/aglaia respeitado; caliope recebe fronteira handoff (tells de conteúdo)" }
     licenca: "MIT"
-    status: analisado
+    status: absorvido
 
   github.com/rohitg00/ai-engineering-from-scratch:
     url: "https://github.com/rohitg00/ai-engineering-from-scratch"
@@ -190,8 +199,9 @@ repositorios:
     url: "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
     shas:
       - { sha: "673da1f3b0b7be34ffc9624ef3858fe45f1c3bed", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: "MISTA", squadAlvo: "egide (full-spectrum)", notas: "817 skills/32 clusters; DUAL-USE: SKILL.md(método) absorvível, ~1093 scripts ofensivos NÃO-ABSORVÍVEIS; absorção incremental, priorizar G22 AI-security" }
+      - { sha: "673da1f3b0b7be34ffc9624ef3858fe45f1c3bed", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "egide full-spectrum (32 skills totais + herança histórica em MASSA em cada SKILL.md + 5 refinamentos incremental: Macie/DLP + Falco/Tetragon + browser isolation + SOC 2 mapping + OIDC federation)", notas: "F6 CONSOLIDAÇÃO — 32 SKILL.md enriquecidas com biografia+core_frameworks de Bruce Schneier/Sarah Edwards/Adam Shostack/John Kindervag/MITRE ATT&CK/Florian Roth/Chris Sanders/Kevin Mitnick/Trail of Bits/Jim Manico/etc.; ~1093 scripts ofensivos permanecem NÃO-ABSORVÍVEIS na quarentena" }
     licenca: "Apache-2.0"
-    status: analisado
+    status: absorvido
 
   github.com/alirezarezvani/claude-skills:
     url: "https://github.com/alirezarezvani/claude-skills"
@@ -204,22 +214,25 @@ repositorios:
     url: "https://github.com/JuliusBrussee/caveman"
     shas:
       - { sha: "25d22f864ad68cc447a4cb93aefde918aa4aec9f", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "dedalo·egide·prometeu·metis", notas: "22 cap; compressão de saída ~75%; RESSALVA soberania: caveman-compress fala direto c/ API Anthropic — religar ao LLM próprio" }
+      - { sha: "25d22f864ad68cc447a4cb93aefde918aa4aec9f", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "dedalo (brevidade-de-saida G1-G11/G13-G16/G18 — religado ao LLM próprio) + egide (escrita-segura-e-dlp G8/G19)", notas: "F6 exaustivo — chamada API Anthropic REMOVIDA e substituída por LLM próprio via OpenRouter/Infisical" }
     licenca: "MIT"
-    status: analisado
+    status: absorvido
 
   github.com/charlie947/social-media-skills:
     url: "https://github.com/charlie947/social-media-skills"
     shas:
       - { sha: "94f72ea2ece388fa30ef49a26fb2e6fd2109e0b1", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "pheme·aglaia·caliope·argos·metis", notas: "21 cap; absorver método não auto-exec; de-personalizar persona; credenciais→Infisical; Pheme ausente do registro de entidades (registrar)" }
+      - { sha: "94f72ea2ece388fa30ef49a26fb2e6fd2109e0b1", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "pheme (22 skills B02: 12 eixo China + 10 eixo Global/AEO + 5 skills estendidas + 3 agent-extensions)", notas: "F6 exaustivo — todas 21 cap MKT-Gxx cobertas + integração ao B02 agency-agents" }
     licenca: "MIT"
-    status: analisado
+    status: absorvido
 
   github.com/agricidaniel/claude-seo:
     url: "https://github.com/AgriciDaniel/claude-seo"
     shas:
       - { sha: "d830cdb2ad339bb7f062339fe82228b072e98061", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "ariadne (BENCHMARK)·argos·egide·aglaia", notas: "49 cap; benchmark-ouro de SEO supera Ariadne em profundidade; F6 = auditoria-de-squad benchmark=repo; FLOW prompts=CC-BY 4.0; url_safety SSRF→egide" }
+      - { sha: "d830cdb2ad339bb7f062339fe82228b072e98061", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "ariadne (4 skills novas: engenharia-de-schema-executavel + geo-ai-overviews-aprofundado + arquitetura-de-site-hub-spoke + planejamento-por-industria-seo + 5 bibliotecas data/refs)", notas: "F6 exaustivo — 26 IDs aprofundamento + 5 refs + 11 tooling DIFERIDO + 6 handoff cross-squad" }
     licenca: "MIT"
-    status: analisado
+    status: absorvido
 
   github.com/yamadashy/repomix:
     url: "https://github.com/yamadashy/repomix"
@@ -288,8 +301,9 @@ repositorios:
     url: "https://github.com/anthropics/claude-code"
     shas:
       - { sha: "01f1617f14452ac78bf319cef2236d87c0fe05cb", absorvidoEm: "2026-06-27", seguranca: SAFE, decisao: ADAPT, squadAlvo: "harmonia (frontend-design) + caos-fabrica·dedalo (bônus plugin-dev/hookify)", notas: "22 cap; escopo planilha=frontend-design; BÔNUS oficial plugin-dev (7 skills) + hookify fora do escopo; PROPRIETÁRIO Anthropic — reescrever PT-BR, uso interno, não redistribuir" }
+      - { sha: "01f1617f14452ac78bf319cef2236d87c0fe05cb", absorvidoEm: "2026-07-02", seguranca: SAFE, decisao: ADAPT, squadAlvo: "harmonia (julgamento-estetico-anti-slop G1/G2/G4/G6 — direção estética + 2-passes + calibração anti-default + a11y + tokens-de-design G3)", notas: "F6 exaustivo — frontend-design coberto; plugin-dev/hookify DIFERIDOS para caos-fabrica em leva Ritual dedicado; PROPRIETÁRIO respeitado — princípio reescrito PT-BR" }
     licenca: "Proprietária (Anthropic Commercial ToS)"
-    status: analisado
+    status: absorvido
 
   # ========================================================================
   # github.com/msitarzewski/agency-agents (absorção em andamento — B01 aplicado)
@@ -385,8 +399,15 @@ repositorios:
           Ação requerida: sessão futura completa as 13 skills via subagentes (plano em decisao-f5-b06-sales.md Anexo A).
 
           B02-B03, B10, B12-B15 com decisão F5 aprovada (decisao-f5-CONSOLIDADO.md), pendente F6 em sessões dedicadas.
+
+          --- CAMPANHA F6 EXAUSTIVA 2026-07-02 (7 ondas, 21 subagentes) ---
+          B02 marketing/growth (107 IDs) APLICADO: Pheme 22 skills (12 China + 10 Global/AEO) + 5 ADAPTs + 3 agent-extensions; Caliope 5 skills; Peitho esqueleto criado + 8 skills + 3 ADAPTs. PERDIDO=0.
+          B03 engineering (117 IDs) APLICADO: Prometeu 28 skills (B03-A 10 + B03-B 10 + B03-C 8); Dédalo 2 skills; Égide 1 (solidity-evm); Caliope 1 compartilhada (docs-as-code); Aletheia 1 compartilhada (workflow-lean); Ariadne 1 extensão (CWV metas absolutas). PERDIDO=0.
+          B06 sales (33 IDs) FINALIZADO: Emporos 13 CREATE (batches A/B/C) + 4 ADAPT (BANT+MEDDPICC, negociação+AECR, cadência+signal-based/anatomia/8-12, proposta+3-atos-win-themes) + 4 REUSE-Pluto (Hormozi DNA G22-G25). Total 33 IDs cobertos, PERDIDO=0.
+          B10 support (23 IDs): 15 aplicados (Metis 3+1 REUSE; Themis agente novo analista-de-compliance-regulatorio + 3 skills; Pactolo 1 nova + 3 ADAPTs + 1 REUSE-chief; Olimpo 1 skill compartilhada sumario-executivo-scqa). 8 ROADMAP (infra-kolden-os + squad-cs-novo) escalados. PERDIDO=0.
+          Pendências: B07 Paid Media (sem escopo definido); B12/B13/B14 CREATEs de squad novo (Atlas/Hyperion/Pã — Ritual dedicado); herança histórica via web deferida onde gate bloqueou (skills nasceram com conhecimento consolidado).
     licenca: "MIT"
-    status: parcial
+    status: parcial-avancado
 
   # Cada nova absorção (/absorver) preenche este bloco via Fase 7.
   # Exemplo (apague quando o primeiro repo real for absorvido):
