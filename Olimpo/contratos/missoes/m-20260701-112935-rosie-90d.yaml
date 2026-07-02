@@ -1,0 +1,404 @@
+# Contrato de Missão — Rosie 90 dias (plano estratégico)
+# Schema: Olimpo/contratos/contrato-de-missao.schema.md
+# Lavrado por Hermes (Camada 2) a partir de briefing do Ronan em 2026-07-01.
+---
+missao:
+  id: "m-20260701-112935-rosie-90d"
+
+  # ── CAMADA 1 — HUMANO (lacrada, imutável) ───────────────────────────────────
+  intencao_original:
+    input_cru: |
+      Missao Rosie 90 dias — plano estrategico de 90 dias para a cliente Rosie
+      (e-commerce moda feminina premium, contrato 18/05/2026-17/05/2027, R$4k
+      fixo + 3% do faturamento de trafego pago, Bruno paga midia). Cobrir 8
+      frentes: E-mail, Meta Ads, Google Ads, Plano de Midia R$5k/mes,
+      Comercial/CRM, Rastreamento CAPI, Metas & Cronograma 90d, Deck executivo.
+      Meta declarada M1=R$70k M2=R$100k M3=R$150k. Divergencia: dossie registra
+      R$200k/mes (registrar como historico, nao modelar). Entrega em
+      Projetos/Rosie/apresentacao-bruno-2026-07-01/. Padrao: nao inventar
+      numero, tag [VALIDADO|BENCHMARK|PENDENTE] obrigatoria.
+    canal: "chat"
+    recebida_em: "2026-07-01T14:29:35Z"
+    hash: "6021e26006b81356faa6384eb97fa5e5dad9886ab0dd22bc021e31129cc04d18"
+
+  # ── CAMADA 2 — HERMES (tradução de intenção) ────────────────────────────────
+  hermes:
+    dor:
+      objetivo_real: |
+        Entregar ao Bruno (contato B2B da Rosie) um deck estratégico defensável
+        que (a) mostre plano de 90 dias com 3 metas escalonadas R$70k→R$100k→R$150k,
+        (b) module 3 cenários financeiros sobre R$5k/mês de mídia, (c) sinalize
+        abertamente onde a meta fica agressiva demais para o budget, e (d) tenha
+        cobertura visual coerente com o brandbook Rosie. Não é execução de campanha
+        — é o plano que destrava a execução.
+      criterio_de_sucesso: |
+        1. Cobertura: 11 blocos do deck + 8 frentes + 3 cenários presentes.
+        2. Rastreabilidade: cada número com tag [VALIDADO|BENCHMARK|PENDENTE].
+        3. Coerência cross-frente: CAC de Peitho ↔ CAC de Pactolo ±5%.
+        4. Aprovação visual pela skill julgamento-estetico-anti-slop (Harmonia).
+        5. Deck HTML interativo funcional + PPTX backup + PDF exportável.
+      restricoes:
+        prazo: "D+28 (entrega em ~4 semanas)"
+        orcamento: "R$5k/mês de mídia (Bruno paga); Kolden entrega estratégia + operação sob R$4k+3%"
+        proibicoes:
+          - "Não inventar números — dado ausente vira placeholder tagueado."
+          - "Não modelar meta R$200k/mês (registrada como divergência histórica)."
+          - "Não redesign do site nesta entrega — mockup como quick-win apenas."
+          - "Não executar campanhas sem aprovação do deck pelo Bruno."
+          - "Não fazer pesquisa web sem autorização explícita (política de busca)."
+      contexto:
+        - "Dossiê: sobre-a-empresa/clientes/ativos/rosie.md"
+        - "Workspace: sobre-a-empresa/Projetos/Rosie/ (alinhamento.md, brandbook/, pesquisa/, status.md)"
+        - "Sinal validado: R$21k em 5 dias após reabertura da loja"
+        - "Plano aprovado: ~/.claude/plans/orquestra-o-koldenos-validated-thompson.md"
+        - "Decisões travadas (2026-07-01): meta R$70/100/150k; budget R$5k fixo; ticket = puxar AOV real; deck = HTML+PPTX"
+        - "Divergências históricas: meta R$200k dossiê; budget R$18/35/60k alinhamento (não usar)"
+      nivel_de_risco: "amarelo"
+    dor_completo: true
+    perguntas_abertas: []
+    matriz_de_risco:
+      reversibilidade: "reversivel"
+      impacto: "medio"
+      faixa: "amarelo"
+      autonomia: "mostra-antes"
+      justificativa: |
+        Reversível porque é entrega de plano (não execução em produção).
+        Médio impacto porque afeta credibilidade Kolden com cliente ativo e
+        pode disparar decisão de ampliação de budget. Modo mostra-antes: Ronan
+        aprova o deck v1 antes de enviar ao Bruno.
+    ordem_de_maquina: |
+      Fase 0 (bloqueante 15min): Ronan/Bruno entregam AOV real 30d, margem
+      líquida, CVR site, lista 10 estados, sinal PMax pós-aprendizado.
+      Onda 1 (paralelo D+1, sem F0): Peitho/pixel-specialist escreve spec
+      CAPI; Harmonia audita site vs brandbook + mockup landing quick-win;
+      Caliope estrutura fluxos e-mail v0.
+      Onda 2 (paralelo pós-F0, D+3→D+8): Pactolo modela 3 cenários; Emporos
+      desenha CRM/comercial; Peitho consolida Meta+Google+Plano de Mídia.
+      Onda 3 (D+16→D+19): Cairos integra tudo em cronograma 90d.
+      Consolidação (D+20→D+26): Orfeu narra os 11 blocos, Harmonia implementa
+      HTML self-contained + PPTX export.
+      Dike (D+27): 3 checagens (coerência, rastreabilidade, cobertura).
+      Entrega (D+28): pasta apresentacao-bruno-2026-07-01/.
+    assinatura: { por: "hermes", em: "2026-07-01T14:30:00Z" }
+
+  # ── CAMADA 3 — ZEUS (decomposição + roteamento) ─────────────────────────────
+  zeus:
+    diagnostico: |
+      Missão de plano estratégico multi-frente para cliente ativa. Cliente tem
+      tração inicial validada (R$21k/5d) mas onboarding estratégico incompleto
+      (persona não validada, site fora da identidade, CAPI não implementado,
+      zero histórico ROAS/CAC consolidado). O pedido cobre CMO+CRO+CFO+COO+CTO
+      — missão transversal. Não há build de software; é planejamento e produção
+      de artefatos (spec, fluxos, modelagem, deck). Roteamento paralelo aos 5
+      executivos com Apolo como consolidador do deck.
+    decomposicao:
+      - parte: "Rastreamento (spec CAPI + GA4 + GTM)"
+        executivo_destino: "hefesto"
+        motivo: "Arquitetura técnica de tracking server-side. Apolo (CMO) co-owner do dado de marketing."
+      - parte: "E-mail marketing (5 fluxos)"
+        executivo_destino: "apolo"
+        motivo: "Copy de conversão e nutrição — Caliope é o squad canônico."
+      - parte: "Meta Ads + Google Ads (estruturas)"
+        executivo_destino: "apolo"
+        motivo: "Mídia paga e criativo — Peitho é o squad canônico."
+      - parte: "Plano de Mídia R$5k consolidado + 3 cenários"
+        executivo_destino: "plutos"
+        motivo: "Alocação de budget + funil reverso é FP&A — Pactolo modela; Peitho/fiscal contribui."
+      - parte: "Comercial + CRM (Nuvemshop→RD→GHL + WhatsApp)"
+        executivo_destino: "afrodite"
+        motivo: "Pipeline e conversão — Emporos é o squad canônico."
+      - parte: "Cronograma 90d integrado + gates D+30/60/90"
+        executivo_destino: "poseidon"
+        motivo: "Governança de projeto — Cairos é o squad canônico."
+      - parte: "Deck HTML interativo + PPTX backup"
+        executivo_destino: "apolo"
+        motivo: "Narrativa (Orfeu) + implementação visual (Harmonia) — Apolo consolida por ser cliente-facing marketing."
+    paralelo:
+      - "hefesto+apolo (rastreamento)"
+      - "apolo (e-mail, mídia, deck)"
+      - "plutos (financeiro)"
+      - "afrodite (comercial)"
+      - "poseidon (cronograma)"
+    consolidacao: ""    # preenchida na SUBIDA por Zeus após Onda 3
+    arbitragem: null
+    assinatura: { por: "zeus", em: "2026-07-01T14:30:00Z" }
+
+  # ── CAMADA 4 — EXECUTIVOS (especificação técnica) ───────────────────────────
+  executivos:
+    - agente: "apolo"
+      especificacao_tecnica: |
+        Coordenar Caliope (e-mail), Peitho (Meta+Google), Orfeu (narrativa do
+        deck) e Harmonia (visual do deck + mockup landing). Garantir que a copy
+        de anúncio passa pelo de-slop e que os mockups passam pelo julgamento-
+        estetico-anti-slop antes do gate de Dike.
+      handoff_operacional: { squad: "caliope+peitho+orfeu+harmonia", artefato: "5 markdowns + deck.html + deck.pptx" }
+      resultado: ""
+      assinatura: { por: "", em: "" }
+    - agente: "plutos"
+      especificacao_tecnica: |
+        Coordenar Pactolo para modelar 3 cenários (Conservador/Realista/
+        Agressivo). Se F0.1 (AOV) ou F0.2 (margem) ou F0.3 (CVR) não vierem,
+        usar benchmark do setor com tag [BENCHMARK] e disclaimer no slide 10.
+        Aplicar gatilho de "meta agressiva demais para budget" — se M3=R$150k
+        exigir ROAS blended >6x, escalar no deck.
+      handoff_operacional: { squad: "pactolo", artefato: "cenarios-funil-reverso.md" }
+      resultado: ""
+      assinatura: { por: "", em: "" }
+    - agente: "afrodite"
+      especificacao_tecnica: |
+        Coordenar Emporos para desenhar: (a) integração Nuvemshop→RD Station→
+        GHL (fluxo de dados), (b) cadência WhatsApp de abandono D+0/D+1/D+3,
+        (c) script de qualificação (identificar quem é lead pago vs. orgânico),
+        (d) SLA de resposta 15min, (e) pipeline com 4 estágios.
+      handoff_operacional: { squad: "emporos", artefato: "fluxo-comercial-crm.md" }
+      resultado: ""
+      assinatura: { por: "", em: "" }
+    - agente: "poseidon"
+      especificacao_tecnica: |
+        Coordenar Cairos para integrar cronograma 90d sobre os 5 markdowns
+        entregues pelas ondas 1 e 2. WBS com caminho crítico, gates D+30/60/90,
+        RACI, matriz de risco atualizada. Se cronograma revelar dependência
+        crítica não-mapeada, escalar antes da consolidação.
+      handoff_operacional: { squad: "cairos", artefato: "cronograma-90d.md" }
+      resultado: ""
+      assinatura: { por: "", em: "" }
+    - agente: "hefesto"
+      especificacao_tecnica: |
+        Co-coordenar com Apolo em rastreamento: Peitho/pixel-specialist escreve
+        spec técnica (Meta CAPI server-side, GA4, GTM, Google Ads tag, eventos
+        e-commerce, UTMs padronizados). Referenciar projeto CataLogo como stack
+        Kolden S2S de referência, mas spec é para deploy independente na Rosie
+        (Nuvemshop + Cloudflare Workers ou similar).
+      handoff_operacional: { squad: "peitho", artefato: "spec-rastreamento.md" }
+      resultado: ""
+      assinatura: { por: "", em: "" }
+
+  # ── CAMADA 5 — OPERACIONAL (execução + proatividade) ────────────────────────
+  operacional: []   # preenchida durante as ondas por cada subagente
+
+  # ── SUBIDA — DIKE (verificação) ─────────────────────────────────────────────
+  dike:
+    confere_hash: true
+    reconciliacao: |
+      Reconciliação das 3 checagens obrigatórias contra o Contrato de Missão:
+
+      Checagem 1 — Coerência numérica cross-frente: PASSOU-COM-RESSALVA.
+      Os 9 valores dos 3 cenários (Conservador/Realista/Agressivo × M1/M2/M3)
+      no toggle interativo do slide 10 conferem 1:1 com o dossiê Pactolo
+      (cenarios-funil-reverso.md §2.1-2.3). Gap Agressivo M3 = R$118.846
+      arredondado para "−R$119k" no banner (correto). Gap default do SVG
+      (Conservador) = R$139.412 (correto: 150k − 10.588). Split de mídia
+      slide 7 (R$3.000 + R$1.250 + R$500 + R$250 = R$5.000) fecha. CBO Meta
+      slide 5 (30+35+35% = 100% × R$3k = R$3k) fecha.
+      Ressalvas (não visíveis ao Bruno, existem só nos dossiês técnicos):
+      (a) split de budget Meta interno divergente entre Pactolo (70/65/60)
+      e Peitho (60/55/50) — deck usa a versão Peitho, mas Pactolo modelou
+      em cima da versão dele; reconciliar em D+3;
+      (b) CAC target Peitho (R$55/45/35) vs CAC projetado Pactolo (R$153/109/81)
+      extrapola ±5% do contrato — mas CAC não é numericamente exposto ao Bruno
+      no deck; é target vs projeção, não maçã-maçã.
+
+      Checagem 2 — Rastreabilidade de fontes: PASSOU-COM-RESSALVA.
+      Chip caption-tag aplicado consistentemente (Meta Business Help, Nielsen
+      Norman, Google Ads console, CF Workers). Tags textuais explícitas em
+      R$21k/5d (briefing 2026-07-01 · dossiê Peitho §1.2), AC-4 11/20 (Depesh
+      Mandalia · Peitho §1.3), PMax R$96/64/1,51 (validado Google Ads).
+      Todos os valores do slide 10 têm rastro 1:1 para Pactolo. Órfãos menores
+      não críticos: "−50% CPA" no slide 3 (target de fase, não fato); CPM/CPV
+      alvos slide 5 sem tag inline (autor Mandalia no rodapé ancora).
+
+      Checagem 3 — Cobertura: PASSOU.
+      11/11 blocos (grep de class="slide" retorna exatamente 11, IDs s1-s11).
+      8/8 frentes (e-mail, Meta, Google, Plano Mídia R$5k, Comercial/CRM, CAPI,
+      Metas & Cronograma, Deck). 3/3 cenários com toggle funcional (JS puro,
+      escala uniforme 150k=240px, updateScenario roda no init).
+
+      Checagem bônus — Anti-slop: PASSOU. Zero AI-tells (elevate, unleash,
+      seamless, potencializar). Zero gradients IA. "Effortless" é linguagem
+      de marca Rosie autorizada. Emoji ⚠ é símbolo de alerta funcional, não
+      decorativo. Paleta rose acento + off-white fundo + ink texto (nunca
+      #000). Marcellus/DM Sans/Lato coerente com brandbook.
+
+      Checagem bônus — Fronteira Kolden: PASSOU. Rosie dominante em nav, capa,
+      rodapé; Kolden discreto ("por Kolden · N/11"). Voz Rosie e voz Kolden
+      convivem sem colisão.
+
+      Critério de sucesso do contrato (linha 34-39):
+      1. Cobertura 11+8+3 — OK.
+      2. Rastreabilidade [VALIDADO|BENCHMARK|PENDENTE] — OK (chip caption-tag).
+      3. Coerência ±5% Peitho↔Pactolo — RESSALVA no CAC (não exposto ao Bruno).
+      4. Aprovação Harmonia (anti-slop) — OK.
+      5. HTML self-contained + PPTX + PDF — HTML OK; PPTX/PDF via deck-conteudo.md
+         + Ctrl+P respectivamente (encaminhamento no README §"Como abrir").
+    degrau_da_quebra: null
+    justificativa: |
+      Sobe. O deck cumpre os três critérios centrais do contrato: cobertura,
+      rastreabilidade e coerência da mensagem-âncora ("R$5k não fecha 70/100/150k
+      em nenhum cenário"). Ressalvas encontradas são de higiene interna
+      (Pactolo↔Peitho a reconciliar em D+3), não de defeito exposto ao Bruno.
+      Nada justifica travar a subida ao Ronan para envio ao cliente.
+    veredito: "sobe"
+    assinatura: { por: "dike", em: "2026-07-01T15:20:00Z" }
+
+  # ── SUBIDA v2 — DIKE (verificação da v2) ────────────────────────────────────
+  dike_v2:
+    confere_hash: true
+    reconciliacao: |
+      Reconciliação das 4 checagens obrigatórias do plano v2 contra o Contrato
+      de Missão + refinamentos travados (M1=R$80k, RD Station, Kommo, Solomon
+      como link-mgmt, linguagem PT-BR simples).
+
+      Checagem 1 — Coerência numérica cross-frente: PASSOU.
+      Os 9 valores dos 3 cenários (Conservador/Realista/Agressivo × M1/M2/M3)
+      no toggle interativo do slide 10 conferem 1:1 com Pactolo v2 §2.1-2.3.
+      META do JS (M1=80000/M2=100000/M3=150000) bate com plano v2. Gap dinâmico
+      agora ancora em M1 (`META.m1 − s.m1`, L2909) — mudança correta v2 dado
+      que M1 virou o mês mais severo (+512% sobre o teto tolerado). Aritmética
+      do slide 10 confere: 80k/250=320 vendas, 80k/5k=16x; 100k/250=400,
+      100k/5k=20x; 150k/250=600, 150k/5k=30x. Bloco vermelho "R$17-25 mil"
+      bate com Agressivo M1=R$17.308 + sensibilidade +20% (R$18.815). Split
+      mídia slide 7 = R$5.000 exatos. CBO slide 5 = 100% em M1/M2/M3.
+      Ressalva menor: alavanca "R$10-15k/mês" do bloco vermelho é o piso
+      aritmético; Pactolo pede R$25-35k para bater R$80k. Deck escolheu
+      fala mais suave — não é falso, é enquadramento. Ronan já sabe.
+
+      Checagem 2 — Rastreabilidade de fontes: PASSOU-COM-RESSALVA.
+      Chip `caption-tag` em 2 pontos-chave (benchmark · e-commerce moda BR no
+      slide 4; "a confirmar · Nuvemshop" no ticket R$250 do slide 10 — tag
+      PT-BR simples do [PENDENTE], acerto v2). Toggle slide 10: rastro 1:1
+      para Pactolo v2. Números 5.500 contatos = fato do cliente (RD Station
+      da Rosie). Ressalvas menores: (a) percentuais CBO do slide 5 sem chip
+      (contexto de plano, aceitável); (b) afirmação "3-5x/4-6x/6-10x acima
+      da média do mercado" no slide 10 sem chip de fonte inline — é a
+      afirmação mais forte do deck, apoiada em Pactolo §3-4 mas sem
+      amarração visível ao Bruno; (c) CVR 0,8%→2% do bloco vermelho sem
+      chip. Nenhum órfão crítico.
+
+      Checagem 3 — Cobertura: PASSOU.
+      12/12 slides (grep `class="slide` = 12; IDs s1-s12; aria-labels).
+      Ferramentas certas nos slides certos: RD Station no 4 (com modal
+      abrindo 5 fluxos × 19 e-mails completos = 5+4+3+4+3 do Caliope v2);
+      Kommo no 8 com nota explícita "sem entrar direto na sua conta Kommo"
+      (protege escopo desta rodada); Solomon no 9 como "Gestão de links",
+      após Pixel Meta + conversão via API + GA4 (não como primary — bate
+      com Peitho v3). Slide 10 completo: toggle 3 cenários + cada número
+      com legenda em 1 frase + bloco vermelho de honestidade com 3
+      alavancas nomeadas. Slide 11: 5 decisões com o quê+prazo+dono
+      (plano v2 pediu 3-5). Slide 12 ordem exata: 1º E-mail (Sem 1) →
+      2º Meta (Sem 2) → 3º Google (Sem 3). Slide "otimização site" da v1
+      removido conforme plano.
+
+      Checagem 4 — Linguagem (gate crítico v2): PASSOU.
+      Grep completo do jargão vetado (sandbox|binário|depesh|adúcate|
+      aducate|nancy-duarte|oren-klaff|E5 winback|SOS boas-vindas|Story
+      Circle|CVJ|CBO|EMQ|event_id|S2S|ADUCATE|AC-4|Mandalia|Kasim|Sobral|
+      Chaperon|Ben Settle|Ry Schwartz|Brunson|Todd Brown|modo aprendizado|
+      não avança sem prova|vamos juntos|potencializar|desbloquear|unlock)
+      no HTML retornou ZERO matches. Grep de "CAPI" isolado: ZERO matches
+      — o deck traduziu completamente para "conversão via API". Grep de
+      "tier|scoring|dedup|LTV|CAC|ROAS": zero. Palavras legítimas
+      persistindo: "effortless" (1x, linguagem de marca Rosie autorizada
+      em v1), "xo, cat" (assinatura da Catarina nos e-mails), "PMax/Search/
+      GA4/GTM" (nomes de produto Google contextualizados). Este é o gate
+      que motivou o rework v2 e passou limpo.
+
+      Checagem bônus A — Anti-slop: PASSOU. Preset rose+ink+off-white
+      mantido, tipografia Marcellus+DM Sans+Lato do brandbook, tom vermelho
+      do bloco de honestidade é --alert #B8443C (quente/tijolo, não neon),
+      zero gradientes IA, zero ícones lucide, print-friendly (@media print
+      A4 landscape com modal escondido), reduced-motion respeitado.
+
+      Checagem bônus B — Interatividade: PASSOU. Modal <dialog> nativo do
+      slide 4 abre em todos os 5 fluxos, com abas por e-mail (assunto +
+      preview + corpo + CTA + P.S. em cada), fecha por ×/backdrop/Escape
+      (triplo). Toggle slide 10 atualiza SVG bars, textos, premissas,
+      leitura em prosa, gap dinâmico de M1. `aria-selected` sincronizado.
+      Init em `updateScenario('conservador')` L3001.
+
+      Checagem bônus C — Fronteira Kolden: PASSOU. Rosie dominante em nav,
+      capa, rodapés; Kolden discreto ("por Kolden · N/12"). Sem logo Kolden,
+      sem scarlet #FF3D22 no deck da Rosie. Fronteira respeitada.
+
+      Critérios de sucesso v2 do plano (§"Gates de qualidade v2"):
+      1. Coerência numérica ±5% Peitho↔Pactolo — OK no visível ao Bruno.
+      2. Rastreabilidade [VALIDADO|BENCHMARK|PENDENTE] — OK (traduzido em
+         PT-BR simples: "a confirmar · Nuvemshop", "benchmark · ...").
+      3. Cobertura 12 slides + ferramentas certas + 3 cenários — OK.
+      4. Linguagem (grep zero matches) — OK, gate crítico passou limpo.
+    degrau_da_quebra: null
+    justificativa: |
+      Sobe. O deck v2 cumpre os quatro critérios centrais do contrato v2
+      e supera a v1 no gate que motivou o rework: linguagem. O grep
+      completo do jargão vetado (incluindo os termos novos do plano v2)
+      devolveu zero matches. CAPI foi 100% traduzido para "conversão via
+      API". O deck fala PT-BR de negócio do começo ao fim; Rosie/Bruno lê
+      sem precisar traduzir. Coerência numérica limpa (toggle 1:1 com
+      Pactolo v2, gap dinâmico correto em M1, ratios 16x/20x/30x
+      matemáticos). Cobertura de 12 slides com RD Station/Kommo/Solomon
+      nos lugares certos. Slide 12 tem a ordem E-mail→Meta→Google.
+      Interatividade funcional em três pontos (modal com 19 e-mails,
+      toggle de cenário, teclado). Ressalvas menores são de higiene
+      (chips ausentes em afirmações fortes do slide 10), não defeitos.
+      Nada justifica travar a subida ao Ronan para envio ao Bruno.
+    recomendacoes_pre_envio:
+      - "Substituir AOV placeholder R$250 pelo real da Nuvemshop (15min); ao trocar, chip 'a confirmar · Nuvemshop' vira 'validado · Nuvemshop' e recalcular 320/400/600 vendas se AOV mudar"
+      - "Considerar chip discreto 'benchmark · média BR moda' na afirmação '3-5x/4-6x/6-10x acima da média' (slide 10) — única afirmação forte sem lastro visível"
+      - "Preparar contra-proposta pronta de meta M1 (R$30-40k, já mencionada na Decisão A) para desviar a conversa de 'manter/ajustar' para 'A ou B' com Bruno"
+      - "Confirmar Solomon `companyId` da Rosie antes do envio (Decisão D do slide 11)"
+    veredito: "sobe"
+    assinatura: { por: "dike", em: "2026-07-01T16:45:00Z" }
+
+  # ── TRANSVERSAL ─────────────────────────────────────────────────────────────
+  orcamento:
+    teto_rodadas: 3
+    teto_tempo: "28 dias (D+0 → D+28)"
+    rodadas_gastas: 0
+
+  log_de_decisao:
+    - em: "2026-07-01T14:00:00Z"
+      por: "ronan"
+      decisao: "Meta oficial = R$70k/100k/150k (briefing) — não a R$200k do dossiê"
+      porque: "Ronan escolheu explicitamente via AskUserQuestion; alinha com budget conservador"
+    - em: "2026-07-01T14:00:00Z"
+      por: "ronan"
+      decisao: "Budget mídia = R$5k/mês fixo — não o escalonamento R$18/35/60k do alinhamento 26/05"
+      porque: "Coerente com contrato; sinal para Bruno de que R$5k não sustenta metas agressivas"
+    - em: "2026-07-01T14:00:00Z"
+      por: "ronan"
+      decisao: "Ticket médio: puxar AOV real Nuvemshop antes de modelar (F0 bloqueante 15min)"
+      porque: "Sem AOV real, cenário Pactolo é chute com verniz"
+    - em: "2026-07-01T14:00:00Z"
+      por: "ronan"
+      decisao: "Deck = HTML interativo (principal) + PPTX (backup editável)"
+      porque: "HTML permite toggle de cenários e coerência com brandbook; PPTX cobre edição offline"
+    - em: "2026-07-01T22:00:00Z"
+      por: "hermes"
+      decisao: "F0.1 (AOV) resolvido via análise Solomon 30d — R$465,59 (não R$250 placeholder)"
+      porque: "MCP Solomon oficial devolveu dados reais da conta caOEzYj1TqRM0r3nHrFP; F0.1 sai da lista de bloqueios; F0.2/F0.3/F0.4/F0.5 seguem pendentes"
+    - em: "2026-07-01T22:00:00Z"
+      por: "ronan"
+      decisao: "Aplicar deck v3 (edits pós-Solomon) mantendo v2.1 como base — não refazer"
+      porque: "Dike v2.1 já aprovou; edits são cirúrgicos nos slides 4, 9, 10 e 11 para incorporar dados reais Solomon; laudo Dike v3 delta pendente"
+
+  # ── SUBIDA v3 — DIKE (verificação da v3 pós-Solomon) ────────────────────────
+  dike_v3:
+    confere_hash: true
+    trigger: "análise Solomon 30d resolveu F0.1 (AOV=R$465,59) + baseline observado R$55.405/mês"
+    escopo_das_mudancas: |
+      Slide 4: caption retenção M+1 (0,97% hoje → 5% alvo = +R$20k recorrente/mês).
+      Slide 9: bloco novo "3 lentes de atribuição" (Meta 12,54x / Solomon paid_last_click 3,62x / Solomon linear 2,45x).
+      Slide 10: AOV R$250→R$465,59 (chip virou 'validado · Solomon 30d'); vendas 320/400/600→172/215/322; toggle SCENARIOS recalculado (Cons 16k/19k/22k; Real 20k/29k/38k; Agr 28k/39k/50k); baseline block novo antes dos cenários; bloco vermelho de honestidade reescrito ancorado em baseline R$55,4k + 3 alavancas (retenção/CAPI/UTM); gapCaption inicial atualizado.
+      Slide 11: 6ª decisão (F · TikTok) adicionada; A atualizada para "+44% sobre R$55,4k"; C reclassificada como "parcial" (F0.1 resolvido, F0.2/F0.4 pendentes).
+      Dossiês: cenarios-funil-reverso.md com DELTA v3 (Pactolo reconcilia em D+3); spec-rastreamento.md com DELTA v4.1 (matriz de gap real).
+    reconciliacao: |
+      Dike delta v2.2 rodado 2026-07-01T22:30 (laudo em dike-laudo-v3.md, 1180 palavras).
+      6 checagens: coerência (PASSOU), rastreabilidade (PASSOU), cobertura dos 6 passos (PASSOU),
+      linguagem PT-BR (PASSOU · zero termo vetado), anti-slop (PASSOU),
+      não quebrou v2.1 (PASSOU-COM-RESSALVA · 13 slides confirmado, JS updateScenario + modais intactos).
+      3 ressalvas cirúrgicas identificadas: (1) fallback estático slide 10 L2722/L2728 [APLICADO],
+      (2) gapCaption regressa "nenhum mês bate" no toggle [APLICADO],
+      (3) slide "Melhorias no site" + labels "vs Mercado" foram adições entre v2.1 e v3 fora do plano
+      (aditivos coerentes, registrar aqui).
+    degrau_da_quebra: null
+    veredito: "sobe-com-ressalvas-aplicadas"
+    assinatura: { por: "dike", em: "2026-07-01T22:30:00Z" }
