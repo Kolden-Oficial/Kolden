@@ -120,7 +120,105 @@ histórico de 12 meses. Mudança brusca em qualquer das 4 dispara investigação
   modelo financeiro — é variável comercial. Renegociar precisa passar pelo dono da relação, não pelo
   controller sozinho.
 
+## Ajuste sazonal, detecção de anomalia e alertas de liquidez
+
+> _Seção absorvida de github.com/msitarzewski/agency-agents@a597cb6 (G10, MIT)._
+
+Projeção de caixa "achatada" (média histórica esticada para frente) esconde o problema real:
+**o mês em que o caixa quebra não é o mês médio — é o mês fraco de baixa temporada**. Três
+camadas endurecem a projeção.
+
+### Ajuste sazonal (STL — Seasonal-Trend decomposition using Loess)
+
+Toda série temporal de caixa se decompõe em três componentes:
+
+```
+Fluxo_observado_t = Tendência_t + Sazonalidade_t + Resíduo_t
+```
+
+- **Tendência (T):** direção de longo prazo (crescimento, retração). Alisada por LOESS.
+- **Sazonalidade (S):** padrão repetido por período do calendário (mês, semana). Ex.: **Black
+  Friday puxa receita de novembro** no varejo digital; **13º salário estoura despesa em
+  dezembro**; **férias comprimem caixa em janeiro**.
+- **Resíduo (R):** o que sobra — ruído + evento não-recorrente.
+
+**Como aplicar operacionalmente:**
+
+1. Mínimo **24 meses** de histórico conciliado por linha (receita, despesa, categoria).
+2. Calcule índice sazonal por mês: **S_mês = média(fluxo_mês / tendência_mês)** ao longo dos anos.
+3. Projeção do mês futuro = tendência_mês × S_mês. Nunca use média simples.
+
+**Regra dura:** projeção sem ajuste sazonal em negócio com sazonalidade material (e-commerce,
+turismo, agronegócio, educação) é **erro sistemático**, não descuido. Sinalize sempre a
+sazonalidade dominante no comentário da projeção.
+
+### Detecção de anomalia (z-score + isolation forest simplificado)
+
+Uma **entrada ou saída anômala** no realizado pode ser: (a) fraude/erro de lançamento;
+(b) evento não-recorrente legítimo (multa, ressarcimento, aporte). Nos dois casos, precisa
+ser **detectada e rotulada** — jamais silenciosamente incorporada à tendência.
+
+**Z-score (detecção univariada, primeira linha):**
+
+```
+z_t = (fluxo_t − média_janela) / desvio_padrão_janela
+|z_t| > 3   → OUTLIER (evento raro, investigar)
+|z_t| ∈ [2, 3] → SUSPEITA (revisar)
+|z_t| < 2     → NORMAL
+```
+
+Janela recomendada: 12 meses móveis para série mensal; 13 semanas para série semanal.
+
+**Isolation forest simplificado (detecção multivariada, quando há mais de um driver):**
+
+Quando o outlier depende de **combinação** de variáveis (ex.: recebimento normal em valor **mas
+antecipado em prazo**), z-score univariado não pega. Método simplificado (heurístico, não
+implementação ML de produção):
+
+1. Escolha 3-5 features do fluxo (valor, dia do mês, categoria, contraparte).
+2. Para cada ponto, conte quantas **regras simples de partição binária aleatória** são
+   necessárias para "isolá-lo" do resto.
+3. Ponto isolado em poucas partições (< 8 níveis médios) → anomalia candidata.
+
+Rótulo obrigatório: todo outlier detectado ganha **classificação** — `fraude/erro`,
+`não-recorrente-legítimo`, `padrão-novo-a-monitorar`. Sem rótulo, a série contamina projeção.
+
+### Alertas de liquidez (thresholds por conta)
+
+Um único gatilho de "caixa mínimo agregado" é grosseiro. Trabalhe com **thresholds por conta**
+(operacional, reserva estratégica, folha, impostos), porque cada uma tem um propósito e
+misturar mascara o problema.
+
+**Padrão de thresholds (ajuste ao contexto real):**
+
+| Conta | Threshold VERMELHO | Threshold AMARELO | Ação |
+|---|---|---|---|
+| Caixa operacional | < 1× despesa mensal | < 2× despesa mensal | Escalar hoje ao Plutos |
+| Reserva estratégica | < 3× despesa mensal | < 6× despesa mensal | Discutir captação/aportes |
+| Conta de folha | < próxima folha + 20% | < próxima folha + 50% | Antecipar recebíveis |
+| Conta de impostos | < próximo vencimento | < próximo vencimento + 1× | Rever calendário |
+| Covenants (se houver) | dentro de 15% do gatilho | dentro de 30% do gatilho | Alertar credor + Plutos |
+
+**Gatilhos derivados (não são só absolutos):**
+- **Runway < 6 meses** → alerta VERMELHO (Plutos + Zeus).
+- **Runway < 12 meses** → alerta AMARELO (planejar antes de precisar).
+- **Net burn > 1.5× média 6M** → investigar mudança estrutural (não é ruído).
+- **DSO > meta + 5 dias por 2 meses seguidos** → problema de cobrança, não flutuação.
+
+Alerta sem **ação nomeada** e **dono nomeado** vira só relatório — regra do Pactolo: todo
+alerta carrega o próximo passo e a pessoa/agente responsável.
+
+### Anti-padrões
+
+- **Projeção linear em negócio sazonal** ("cresceu X% ano passado, vai crescer X% de novo").
+  Ignora o mês do estouro.
+- **Alerta agregado sem thresholds por conta** — a média fica boa e a folha quebra.
+- **Outlier tratado como tendência** — um recebimento grande de janeiro vira "novo patamar" na
+  projeção; três meses depois, cai no chão.
+- **Ajuste sazonal com < 24 meses de histórico** — o índice sazonal fica ruidoso demais.
+
 ---
 *Semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente). Princípios reescritos das fontes
 `alirezarezvani/claude-skills@4a3c05b` (MIT) e `anthropics/knowledge-work-plugins@78d74d5` (Apache-2.0) —
-sem cópia literal.*
+sem cópia literal. Bloco de sazonalidade+anomalia+alertas adaptado de
+github.com/msitarzewski/agency-agents@a597cb6 (MIT), bucket B10/support — G10.*

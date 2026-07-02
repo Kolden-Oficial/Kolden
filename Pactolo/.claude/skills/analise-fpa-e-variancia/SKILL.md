@@ -99,11 +99,92 @@ decisão.
 - AOP sem premissas-mestre escritas (cada um lembra de uma coisa diferente quando o ano vira).
 - Bridge ausente entre AOP travado → reforecast: o número muda e ninguém sabe por quê.
 
+## Drill-down por centro de custo (waterfall) + ações corretivas automáticas
+
+> _Seção absorvida de github.com/msitarzewski/agency-agents@a597cb6 (G11, MIT)._
+
+Variância agregada ("gastamos R$ 200k a mais que o orçado") não é decisão — é notícia. A
+decisão nasce quando a variância se **decompõe** até o **centro de custo, categoria e driver**,
+e cada faixa material dispara **ação corretiva nomeada**.
+
+### Waterfall departamental (decomposição em cascata)
+
+A leitura vai do total para o granular em passos disciplinados:
+
+```
+Variância TOTAL (R$ / %)
+  │
+  ├── por SQUAD / CENTRO DE CUSTO (Pactolo, Metis, Ariadne, Caliope, …)
+  │     │
+  │     ├── por CATEGORIA DE CONTA (pessoal, mídia paga, ferramentas, serviços PJ, …)
+  │     │     │
+  │     │     ├── por DRIVER (volume, preço unitário, mix, eficiência, não-recorrente)
+  │     │     │
+  │     │     └── por PERÍODO (mês do estouro — pode ser um único evento)
+```
+
+**Regra dura:** parar de decompor quando a **variância residual do nó < 5%** do total agregado
+ou < R$ X materialidade absoluta (definida pelo controller). Ir além disso é ruído — a decisão
+está nos nós grandes, não na cauda.
+
+**Formato de saída (linha por nó material):**
+
+| Squad | Categoria | Driver | Orçado | Realizado | Δ R$ | Δ % | Fav/Desf | Materialidade | Ação sugerida |
+|---|---|---|---|---|---|---|---|---|---|
+| Metis | ferramentas SaaS | preço | 8k | 14k | +6k | +75% | Desf | ALTA | renegociar contrato anual |
+| Caliope | serviços PJ | volume | 40k | 32k | −8k | −20% | Fav | MÉDIA | manter, verificar backlog |
+
+### Regras de ação corretiva automática (por faixa de variância)
+
+Cada variância material recebe uma **ação nomeada + dono + prazo** — a skill entrega o rascunho,
+o especialista dono da linha refina. Regras de bolso (calibrar por Plutos):
+
+| Faixa de variância | Ação padrão | Dono do rascunho | Escalação |
+|---|---|---|---|
+| \|Δ%\| < ±5% | Monitorar (dentro da banda de ruído) | analista-fpa | — |
+| ±5% ≤ \|Δ%\| < ±10% | Rotular causa e reprojetar linha no próximo forecast | dono da linha | analista-fpa |
+| ±10% ≤ \|Δ%\| < ±25% | **Ação corretiva nomeada com prazo de 30 dias** | dono da linha + chefe do squad | analista-fpa → Pactolo-chief |
+| \|Δ%\| ≥ ±25% ou materialidade alta absoluta | **Reunião de exceção** + plano B em 15 dias + revisão do AOP | chefe do squad + Plutos | Plutos (decisão) |
+| Variância cruza covenant / runway | **Alerta VERMELHO imediato** | Plutos + Zeus | Board |
+
+**Catálogo de ações corretivas por tipo de variância (ponto de partida):**
+
+- **Estouro de pessoal (headcount realizado > orçado):** revisar ramp-up, congelar contratação
+  aberta, escalar a Hestia (handoff RH).
+- **Estouro de mídia paga (CAC subiu):** puxar `unit-economics-operacional`, avaliar CAC por
+  canal (via Metis), rever alocação; se persistir, escalar decisão de mix ao Plutos.
+- **Estouro de ferramentas/SaaS:** auditar assinaturas ociosas, renegociar contrato anual,
+  consolidar vendors.
+- **Estouro de serviços PJ:** revisar escopo do contrato, cap de faturamento mensal, avaliar
+  substituição por CLT (via `planejamento-de-headcount`) se recorrente.
+- **Queda de receita:** decompor por driver (volume/preço/mix) antes de agir; se preço,
+  handoff imediato ao Plutos; se volume, verificar funil e handoff Argos/Metis.
+- **Não-recorrente legítimo:** rotular como tal no bridge para não contaminar tendência do
+  reforecast.
+
+**Anti-padrões:**
+
+- **Ação corretiva "genérica"** ("cortar 10% da linha"). Corte sem driver reduz variância no
+  papel e piora a operação. A ação segue o driver.
+- **Variância sem dono nomeado:** vira relatório de museu. Toda linha material carrega dono.
+- **Reprojetar sem bridge:** o forecast novo aparece "melhor" e ninguém sabe o que mudou.
+- **Escalar tudo ao Plutos:** vira ruído executivo. A escalação segue a faixa de materialidade,
+  não a ansiedade.
+
+### Diferença para o pacote de operating review
+
+O **pacote de operating review** (§5) é a apresentação para o time. O **waterfall + ações
+corretivas** é a **camada de decisão** por baixo — o que o Pactolo-chief usa para orquestrar
+os handoffs e o que o Plutos consome para decidir corte/realocação/meta.
+
 ## Fronteira
 Decisão de corte/realocação/meta é do **Plutos (Olimpo/CFO)** — esta skill prepara o número e o porquê,
-não decide. Métrica de produto vem do **Metis**; benchmark de mercado, do **Argos**.
+não decide. Métrica de produto vem do **Metis**; benchmark de mercado, do **Argos**. Headcount
+operacional (recrutamento/cultura) é da **Hestia**; o planejamento financeiro do headcount é
+`planejamento-de-headcount` (skill-irmã).
 
 ---
 *Semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente). Princípios reescritos das fontes
 `alirezarezvani/claude-skills@4a3c05b` (MIT) e `anthropics/knowledge-work-plugins@78d74d5` (Apache-2.0) —
-sem cópia literal.*
+sem cópia literal. Bloco de drill-down + ações corretivas adaptado de
+github.com/msitarzewski/agency-agents@a597cb6 (MIT), bucket B10/support — G11.*
