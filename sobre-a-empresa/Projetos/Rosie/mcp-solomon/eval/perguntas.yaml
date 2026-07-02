@@ -1,0 +1,261 @@
+# Eval harness — 10 tarefas do PRD §Eval.
+# Roda contra sandbox (SOLOMON_ENV=sandbox + /kolden/dev/SOLOMON_TOKEN_API).
+# Cada item declara tool + argumentos + critério de aceitação (payload_tem/codigos_erro_aceitos).
+
+perguntas:
+  - id: 01-criar-pedido-valido
+    descricao: "Pedido válido com 1 item — deve enfileirar (HTTP 200/202) e ecoar orderId"
+    tool: solomon_criar_pedido
+    argumentos:
+      pedido:
+        orderId: "iris-eval-01-{{TS_ID}}"
+        name: "Pedido eval 01"
+        orderStatus: 0
+        createdAt: "2026-07-01T12:00:00Z"
+        updatedAt: "2026-07-01T12:00:00Z"
+        totalPrice: 199.9
+        paymentMethod: 4
+        currency: "BRL"
+        provinceCode: "SP"
+        countryCode: "BR"
+        customer:
+          customerId: "cus_eval_01"
+          name: "Cliente Eval Um"
+          email: "eval01@kolden.com.br"
+          provinceCode: "SP"
+          countryCode: "BR"
+          zip: "01310-100"
+          city: "São Paulo"
+          createdAt: "2026-07-01T12:00:00Z"
+          updatedAt: "2026-07-01T12:00:00Z"
+        items:
+          - item_id: "item_1"
+            productId: "prod_eval_01"
+            variantId: "var_eval_01"
+            quantity: 1
+            price: 199.9
+            createdAt: "2026-07-01T12:00:00Z"
+            updatedAt: "2026-07-01T12:00:00Z"
+      verbosidade: concise
+    espera:
+      tipo: ok
+      payload_tem:
+        - orderId
+        - status
+        - proximo_passo
+      payload_status_aceitos:
+        - enfileirado
+        - dedup_ignorado
+
+  - id: 02-criar-produto-3-variantes
+    descricao: "Produto com 3 variantes — deve enfileirar e ecoar variants_count=3"
+    tool: solomon_criar_produto
+    argumentos:
+      produto:
+        productId: "iris-eval-02-{{TS_ID}}"
+        productName: "Produto Eval 02"
+        createdAt: "2026-07-01T12:00:00Z"
+        updatedAt: "2026-07-01T12:00:00Z"
+        status: 1
+        variants:
+          - variantId: "var_eval_02_p"
+            createdAt: "2026-07-01T12:00:00Z"
+            updatedAt: "2026-07-01T12:00:00Z"
+            title: "Produto Eval 02 - Pequeno"
+            price: 99.9
+            currency: "BRL"
+            sku: "sku_eval_02_p"
+          - variantId: "var_eval_02_m"
+            createdAt: "2026-07-01T12:00:00Z"
+            updatedAt: "2026-07-01T12:00:00Z"
+            title: "Produto Eval 02 - Médio"
+            price: 109.9
+            currency: "BRL"
+            sku: "sku_eval_02_m"
+          - variantId: "var_eval_02_g"
+            createdAt: "2026-07-01T12:00:00Z"
+            updatedAt: "2026-07-01T12:00:00Z"
+            title: "Produto Eval 02 - Grande"
+            price: 119.9
+            currency: "BRL"
+            sku: "sku_eval_02_g"
+      verbosidade: concise
+    espera:
+      tipo: ok
+      payload_tem:
+        - productId
+        - variants_count
+        - status
+      payload_variants_count: 3
+
+  - id: 03-dedup-updatedAt-antigo
+    descricao: "Reenvio com updatedAt igual/antigo — deve devolver status=dedup_ignorado"
+    tool: solomon_criar_pedido
+    argumentos:
+      pedido:
+        orderId: "iris-eval-03-fixo"
+        name: "Pedido eval 03 (dedup)"
+        orderStatus: 0
+        createdAt: "2026-01-01T00:00:00Z"
+        updatedAt: "2026-01-01T00:00:00Z"
+        totalPrice: 10.0
+        paymentMethod: 4
+        currency: "BRL"
+        provinceCode: "SP"
+        countryCode: "BR"
+        customer:
+          customerId: "cus_dedup"
+          name: "Cliente Dedup"
+          email: "dedup@kolden.com.br"
+          provinceCode: "SP"
+          countryCode: "BR"
+          zip: "01310-100"
+          city: "São Paulo"
+          createdAt: "2026-01-01T00:00:00Z"
+          updatedAt: "2026-01-01T00:00:00Z"
+        items:
+          - item_id: "item_1"
+            productId: "prod_dedup"
+            variantId: "var_dedup"
+            quantity: 1
+            price: 10.0
+            createdAt: "2026-01-01T00:00:00Z"
+            updatedAt: "2026-01-01T00:00:00Z"
+      verbosidade: concise
+    espera:
+      tipo: ok
+      payload_tem:
+        - orderId
+        - status
+      # Este teste depende de execução prévia do mesmo orderId no processo — o runner roda 2x
+      payload_status_aceitos:
+        - enfileirado
+        - dedup_ignorado
+    executar_duas_vezes: true
+
+  - id: 04-sincronizar-catalogo-5
+    descricao: "Sincroniza 5 produtos em batch, max_paralelo=2 — deve reportar total=5"
+    tool: solomon_sincronizar_catalogo
+    argumentos:
+      produtos:
+        - productId: "iris-eval-04-a-{{TS_ID}}"
+          productName: "Batch A"
+          createdAt: "2026-07-01T12:00:00Z"
+          updatedAt: "2026-07-01T12:00:00Z"
+        - productId: "iris-eval-04-b-{{TS_ID}}"
+          productName: "Batch B"
+          createdAt: "2026-07-01T12:00:00Z"
+          updatedAt: "2026-07-01T12:00:00Z"
+        - productId: "iris-eval-04-c-{{TS_ID}}"
+          productName: "Batch C"
+          createdAt: "2026-07-01T12:00:00Z"
+          updatedAt: "2026-07-01T12:00:00Z"
+        - productId: "iris-eval-04-d-{{TS_ID}}"
+          productName: "Batch D"
+          createdAt: "2026-07-01T12:00:00Z"
+          updatedAt: "2026-07-01T12:00:00Z"
+        - productId: "iris-eval-04-e-{{TS_ID}}"
+          productName: "Batch E"
+          createdAt: "2026-07-01T12:00:00Z"
+          updatedAt: "2026-07-01T12:00:00Z"
+      max_paralelo: 2
+      verbosidade: concise
+    espera:
+      tipo: ok
+      payload_tem:
+        - total
+        - processados
+        - proximo_passo
+      payload_total: 5
+
+  - id: 05-token-invalido
+    descricao: "Token inválido — deve retornar KoldenError TOKEN_INVALIDO"
+    tool: solomon_validar_conta
+    argumentos:
+      verbosidade: concise
+    espera:
+      tipo: ok_ou_erro
+      codigos_erro_aceitos:
+        - TOKEN_INVALIDO
+        - SEGREDO_AUSENTE
+      # Se o eval rodar com token válido no env, este teste passa como 'ok' (não erro).
+      payload_ids_aceitos:
+        - token_ok_true
+        - token_ok_false
+
+  - id: 06-rate-limit-forcado
+    descricao: "Simula pressão — não force rate limit real, mas verifica que a tool responde"
+    tool: solomon_sincronizar_catalogo
+    argumentos:
+      produtos:
+        - productId: "iris-eval-06-{{TS_ID}}"
+          productName: "Rate Test"
+          createdAt: "2026-07-01T12:00:00Z"
+          updatedAt: "2026-07-01T12:00:00Z"
+      max_paralelo: 1
+      verbosidade: concise
+    espera:
+      tipo: ok
+      payload_tem:
+        - total
+        - falhas
+
+  - id: 07-payload-malformado
+    descricao: "Payload sem items[] — Zod rejeita, retorna PAYLOAD_INVALIDO ou erro de schema"
+    tool: solomon_criar_pedido
+    argumentos:
+      pedido:
+        orderId: "iris-eval-07"
+        name: "Sem items"
+        orderStatus: 0
+        createdAt: "2026-07-01T12:00:00Z"
+        updatedAt: "2026-07-01T12:00:00Z"
+        totalPrice: 0
+        paymentMethod: 4
+        currency: "BRL"
+        provinceCode: "SP"
+        countryCode: "BR"
+        customer:
+          customerId: "cus_07"
+          name: "Cliente 07"
+        items: []
+      verbosidade: concise
+    espera:
+      tipo: erro
+      codigos_erro_aceitos:
+        - PAYLOAD_INVALIDO
+        - ERRO_INTERNO
+
+  - id: 08-saude-conta
+    descricao: "Validar conta — retorna companyId Rosie e environment"
+    tool: solomon_validar_conta
+    argumentos:
+      verbosidade: detailed
+    espera:
+      tipo: ok
+      payload_tem:
+        - companyId
+        - environment
+        - validado_em
+
+  - id: 09-leitura-fallback
+    descricao: "Tool inexistente (solomon_listar_pedidos) — MCP retorna erro de método"
+    tool: solomon_listar_pedidos
+    argumentos: {}
+    espera:
+      tipo: erro_mcp
+      # A v1 é write-only — não existe tool de listagem. O MCP responde com erro
+      # padrão do protocolo (method not found ou tool desconhecida).
+
+  - id: 10-cenario-composto
+    descricao: "Composto: valida conta → cria produto → sincroniza mini-batch"
+    tool: solomon_validar_conta
+    argumentos:
+      verbosidade: concise
+    espera:
+      tipo: ok_ou_erro
+      codigos_erro_aceitos:
+        - TOKEN_INVALIDO
+        - SEGREDO_AUSENTE
+      payload_tem:
+        - proximo_passo

@@ -1,0 +1,23 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+
+# Segredos (nunca versionar)
+.env
+.env.local
+.env.*.local
+
+# Logs locais
+*.log
+logs/
+
+# Editor/OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# TypeScript incremental
+*.tsbuildinfo

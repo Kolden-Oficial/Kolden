@@ -19,9 +19,9 @@ Estado final dos servidores MCP (`claude mcp list`). Atualizado em 2026-06-24.
 
 ---
 
-## 1. Conectados ✔ (16) — sem nenhum login
+## 1. Conectados ✔ (18) — Íris via Infisical (headless); Solomon oficial via OAuth (interativo)
 
-**Via Infisical (token em runtime) — 12:**
+**Via Infisical (token em runtime) — 13:**
 
 | MCP | Env | Observação |
 |-----|-----|-----------|
@@ -37,6 +37,13 @@ Estado final dos servidores MCP (`claude mcp list`). Atualizado em 2026-06-24.
 | synter | dev | npx @synterai/mcp-server |
 | v0 | dev | mcp-remote + header `${V0_API_TOKEN}` — ✅ token reemitido e válido |
 | upstash | prod | npx @upstash/mcp-server `--email adm@kolden.com.br` (key via env, sem bash) |
+| **iris (mcp-iris)** | prod | **custom Kolden** (Ritual do Caos 2026-07-01, maturity 10.0/10). Server para API Solomon, cliente-scoped Rosie. Path: `sobre-a-empresa/Projetos/Rosie/mcp-solomon/dist/index.js`. Requer também `SOLOMON_COMPANY_ID_ROSIE` no env (público). v1 write-only (4 tools). |
+
+**Remoto HTTP + OAuth interativo — 1:**
+
+| MCP | Env | Observação |
+|-----|-----|-----------|
+| **solomon (oficial)** | prod | `claude mcp add solomon --scope user --transport http https://mcp-solomon-685646918301.us-east1.run.app/mcp` — MCP oficial da Solomon (Cloud Run us-east1, mantido pela Solomon). OAuth via login e-mail+senha; 1 sessão = 1 conta. Cobre LEITURA (faturamento, campanhas, funil, atribuição). Tutorial: https://intercom.help/solomon-d7e33f0728c8/pt-BR/articles/13860266. Complementa o MCP Íris (write). |
 
 **Conectores claude.ai — 2:** Apollo.io ✔, Canva ✔
 

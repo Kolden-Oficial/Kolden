@@ -116,6 +116,7 @@ GitHub, fórum, API) e status de MCP.
 | Synter *(dev)* | `/kolden/dev/SYNTER_API_KEY` | [Synter](Synter/ferramentas.md) | ✅ |
 | Windsor.ai *(dados de marketing/ETL)* | `/kolden/dev/WINDSOR_API_KEY` | [Windsor](Windsor/ferramentas.md) | ✅ |
 | AiGrow *(growth Instagram — sem API pública)* | — | [AiGrow](AiGrow/ferramentas.md) | ❌ |
+| **Solomon** *(analytics + atribuição BR e-commerce)* | `/kolden/prod/SOLOMON_TOKEN_API` + `/kolden/dev/SOLOMON_TOKEN_API` + `/kolden/prod/SOLOMON_COMPANY_ID_ROSIE` | [Solomon](Solomon/ferramentas.md) | 🟢 ativo — MCP **Íris** (custom Kolden, maturity 10.0/10, cliente-scoped Rosie) |
 
 ## 📦 Vendors inertes (registrados, não instalados)
 

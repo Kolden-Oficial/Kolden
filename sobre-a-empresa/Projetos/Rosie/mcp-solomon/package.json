@@ -1,0 +1,30 @@
+{
+  "name": "mcp-iris",
+  "version": "0.1.0",
+  "description": "MCP Íris — servidor MCP da Kolden para a API Solomon (admin-api.solomon.com.br). Exposto para agentes que atendem à cliente Rosie: criar pedidos, criar produtos, sincronizar catálogos em lote e validar conta.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "mcp-iris": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "smoke": "node eval/smoke-stdio.mjs",
+    "eval": "node eval/rodar-eval.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "js-yaml": "^4.1.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
