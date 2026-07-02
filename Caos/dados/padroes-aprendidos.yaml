@@ -16,8 +16,8 @@
 #     recomendacao: o que fazer da próxima vez
 #     registradoEm: ISO-8601
 
-versao: "1.3.0"   # +rh-dos-agentes-e-adapt-do-curador (formalização do RH dos agentes via curador, não agente novo)
-atualizado_em: "2026-06-26"
+versao: "1.5.0"   # +helpdesk-da-ferramenta-antes-de-decidir-reuse-vs-create (retificação da Fase 0 do Ritual Íris 2026-07-01 — MCP oficial da Solomon existia e não foi encontrado no crawl inicial)
+atualizado_em: "2026-07-01"
 
 padroes:
   # Sementes iniciais derivadas das referências (aiox-core, xquads-squads).
@@ -117,4 +117,59 @@ padroes:
       (TPND=0: toda promessa não-demonstrada conta como falha).
     evidencia: ["dike", "referência: revisor/testador do Caos (Fases 6-7)"]
     recomendacao: "Quando o pedido for 'verificar', distinga build vs runtime: se é missão viva contra intenção lacrada, crie/reuse um verificador-de-runtime fail-closed (degrau-da-quebra + TPND=0); não tente que o revisor/testador de fábrica cubra runtime, nem vice-versa."
+
+  openapi-filtra-escopo-antes-do-prd:
+    dominio: geral
+    tipo: aceleracao_diagnostico
+    padrao: >
+      Ao construir MCP para API externa, puxar o `openapi.json` VIA da doc oficial (ou o próprio
+      endpoint OpenAPI) na Fase 2 é o filtro que trava o escopo do PRD. Documentação em Markdown
+      da ferramenta pode omitir a granularidade real (endpoints públicos vs internos, campos
+      obrigatórios vs opcionais); a spec OpenAPI é a fonte de verdade contratual. Sem esse filtro
+      na Fase 2, o PRD lista tools que a API não sustenta e o eval descobre isso caro (na Fase 7).
+    evidencia: ["iris (MCP Solomon 2026-07-01) — pré-Ritual listou 6-12 tools; OpenAPI mostrou 2 endpoints (POST /order + POST /product); v1 cortado para 4 tools; leitura/atribuição/webhooks foram para v2 explícito com justificativa"]
+    recomendacao: "Na Fase 2 (pesquisa) de todo MCP, o PRIMEIRO passo é firecrawl_scrape do openapi.json (ou equivalente) e mapa de rotas por método + read/write. Sem OpenAPI, escopo do PRD é chute — abrir Gate humano ou escalar suporte antes de gerar PRD."
+    registradoEm: "2026-07-01T18:38:00Z"
+
+  mcp-cliente-scoped-com-promocao-condicional:
+    dominio: geral
+    tipo: decisao_arquitetura
+    padrao: >
+      Quando o primeiro cliente que precisa de um MCP é único e o path canônico Kolden é
+      `Dedalo/mcp/<nome>/` (código compartilhado, vendor comum), pode ser prematuro nascer lá.
+      Padrão viável: nascer isolado em `sobre-a-empresa/Projetos/<Cliente>/mcp-<x>/` (ownership
+      claro no dossiê do cliente, isolamento total, decisão reversível) + ADR obrigatório com
+      cláusula de promoção condicional (gatilho = 2º cliente adota → mover para Dedalo/mcp/<x>/
+      via ADR-N + atualização de `claude mcp add` + atualização de registro; passa por Caos +
+      aprovação Ronan). Evita generalização prematura enquanto preserva rota clara de canonização.
+    evidencia: ["iris (MCP Solomon 2026-07-01) — cliente Rosie como primeiro; path em sobre-a-empresa/Projetos/Rosie/mcp-solomon/ com ADR 0001 formalizando decisão + cláusula de promoção"]
+    recomendacao: "Ao criar MCP para 1 cliente único, considere path cliente-scoped + ADR de promoção condicional. Registrar em registro-de-entidades.yaml com `cliente_origem` + `promocao_para_dedalo` claros. Só canonize em Dedalo/mcp/ quando o 2º cliente concreto pedir."
+    registradoEm: "2026-07-01T18:38:00Z"
+
+  helpdesk-da-ferramenta-antes-de-decidir-reuse-vs-create:
+    dominio: geral
+    tipo: antipadrao
+    padrao: >
+      Na Fase 0 do Ritual (`consulta-ao-registro`) + Fase 2 (`busca-de-referencias`) para MCP de
+      ferramenta comercial, buscar SOMENTE no registro Kolden + `openapi.json` público + GitHub
+      é insuficiente. O MCP oficial de uma ferramenta pode ser servido por endpoint HTTP autenticado
+      por OAuth (Cloud Run, Fly, Vercel), com tutorial só no helpdesk/Intercom da própria empresa —
+      ficando fora do OpenAPI da API-cliente e fora do npm/pypi. Sem checar essas fontes, a Fase 0
+      pode dar CREATE quando o correto era REUSE, e a categórica "não existe MCP oficial nem de
+      comunidade" vira overreach.
+    evidencia: ["iris 2026-07-01 — Ritual entregou MCP custom após declarar 'sem MCP oficial nem de comunidade'; Ronan corrigiu apontando https://intercom.help/solomon-d7e33f0728c8/pt-BR/articles/13860266 (tutorial oficial, MCP em Cloud Run com OAuth). Íris reposicionado como complementar (write server-to-server); MCP oficial cobre leitura via OAuth"]
+    recomendacao: "Na Fase 2, adicionar ao radar de busca: (a) `firecrawl_search` por 'MCP <ferramenta>' e 'model context protocol <ferramenta>'; (b) `firecrawl_scrape` no helpdesk/Intercom/Notion da empresa; (c) grep no repositório GitHub oficial da ferramenta por 'mcp'; (d) checar npm registry por `mcp-<slug>` / `@<vendor>/mcp`. Reportar veredito como 'não encontrado em X, Y, Z fontes' — nunca 'não existe' categórico. Se dúvida, PARAR e perguntar ao Ronan antes de gerar PRD."
+    registradoEm: "2026-07-01T19:00:00Z"
+
+  colisao-de-nome-mitologico-e-real:
+    dominio: geral
+    tipo: antipadrao
+    padrao: >
+      Rodada 0 do diagnóstico (Alma + nomeação) deve verificar ATIVAMENTE se o nome mitológico
+      proposto já está em uso — grep no registro-de-entidades.yaml + ls no root Kolden. A memória
+      do Caos pode omitir squads recentes; o pré-Ritual pode propor um nome que colidiu no meio da
+      construção da frota. Sem check, colisão só aparece depois do PRD escrito (custo alto).
+    evidencia: ["iris 2026-07-01 — pré-Ritual propôs Argos; colisão pega no momento da nomeação (Argos = squad ativo de inteligência de mercado desde 2026-06-21); trocado por Íris após confirmar disponibilidade"]
+    recomendacao: "Na Rodada 0, faça grep + ls antes de propor 3 nomes. Se algum pré-selecionado bater, remova da lista antes de mostrar ao Ronan."
+    registradoEm: "2026-07-01T18:38:00Z"
     registradoEm: "2026-06-26T00:00:00Z"

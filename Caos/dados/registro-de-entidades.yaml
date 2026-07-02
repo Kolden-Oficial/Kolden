@@ -28,8 +28,8 @@
 #   0.60 <= relevancia < 0.90 e adaptabilidade.score >= 0.6 -> ADAPT (mude <= 30%)
 #   sem correspondência  -> CREATE (registre na Fase 8 com justificativa)
 
-versao_do_registro: "1.8.0"   # +dike (agente verificador de runtime, CREATE via Ritual — sistema hierárquico de 5 camadas, Fatia 4); olimpo.usadoPor += dike
-atualizado_em: "2026-06-26"
+versao_do_registro: "1.10.0"  # +solomon-oficial (MCP remoto oficial da Solomon via Cloud Run + OAuth — REUSE retificado 2026-07-01 após Ronan apontar tutorial no Intercom; iris reposicionado como COMPLEMENTAR para ingestion write-only)
+atualizado_em: "2026-07-01"
 
 # NOTA: Os squads abaixo foram IMPORTADOS (modo importação, sancionado pelo Ronan) dos
 # arsenais validados xquads-squads e aiox-core, traduzidos para PT-BR e renomeados com a
@@ -562,6 +562,44 @@ entidades:
     criadoEm: "2026-06-30T00:00:00Z"
     status: ativo
     origem: "Plano de economia de tokens 2026-06-30 (apertar ecossistema Kolden, F4). Workspace-wide (.claude/skills/) — invocável por qualquer agente sem cruzar fronteira de squad. Complementa Contrato de Missão (Hermes camada-2) sem substituí-lo."
+
+  solomon-oficial:
+    path: "sobre-a-empresa/Ferramentas/Solomon/"
+    tipo: mcp
+    dominio: dados
+    proposito: "MCP oficial da Solomon (mantido pela Solomon, remoto via Cloud Run) para consulta conversacional de dados de negócio: faturamento, campanhas por plataforma, funil de conversão, atribuição multi-canal. Cobre a leitura de dashboard via OAuth com login da conta Solomon. Documentação oficial em https://intercom.help/solomon-d7e33f0728c8/pt-BR/articles/13860266-como-integrar-com-o-mcp-da-solomon."
+    keywords: [solomon, analytics, atribuicao, attribution, tracking, e-commerce, ecommerce, faturamento, campanhas, funil, roas, mcp, oficial, oauth, remoto]
+    usadoPor: [peitho, metis]
+    dependencias: []
+    adaptabilidade:
+      score: 0.9
+      restricoes: ["autenticação exclusiva por OAuth interativo (login Solomon) — não roda em pipeline server-to-server headless", "escopo de dados = 1 conta Solomon por sessão OAuth (a conta em que o usuário logou)", "endpoints internos ao MCP, não documentados na openapi.json pública"]
+      pontosDeExtensao: ["múltiplas sessões OAuth para atender múltiplos clientes Kolden em paralelo (via user scope no Claude)", "combinar com MCP Íris (write) para ciclo completo leitura+ingestion"]
+    versao: "oficial (Nathan Lacerda, artigo publicado 2026-02-25)"
+    criadoEm: "2026-07-01T19:00:00Z"
+    status: ativo-aguardando-oauth
+    origem: "REUSE (retificação da Fase 0 do Ritual 2026-07-01). Descoberta após Ronan apontar tutorial oficial no Intercom da Solomon (https://intercom.help/solomon-d7e33f0728c8/pt-BR/articles/13860266). Endpoint: https://mcp-solomon-685646918301.us-east1.run.app/mcp. Ativação: claude mcp add solomon --scope user --transport http <url> + OAuth."
+    cliente_origem: "multi-cliente"
+    complemento: "MCP Íris (custom Kolden, tipo:mcp id:iris) para ingestion write-only via API pública (POST /order + POST /product). Os dois MCPs cobrem escopos distintos: oficial=leitura conversacional; Íris=ingestion programática server-to-server."
+
+  iris:
+    path: "sobre-a-empresa/Projetos/Rosie/mcp-solomon/"
+    tipo: mcp
+    dominio: dados
+    proposito: "Servidor MCP COMPLEMENTAR (write-only) em Node/TS que expõe a API pública Solomon (admin-api.solomon.com.br) para agentes Kolden — cria/atualiza pedidos e produtos, sincroniza catálogos em lote e valida conta. Cobre o que o MCP oficial da Solomon NÃO cobre: ingestion programática server-to-server via Bearer token (não OAuth interativo). Primeira instância cliente-scoped (Rosie); promoção condicional para Dedalo/mcp/solomon/ se 2º cliente adotar."
+    keywords: [solomon, analytics, atribuicao, attribution, tracking, rastreamento, e-commerce, ecommerce, nuvemshop, pixel, capi, ga4, ingestao, mcp, iris, mensageira, rosie, write, server-to-server]
+    usadoPor: [peitho]
+    dependencias: [mcp-builder, solomon-oficial]
+    adaptabilidade:
+      score: 0.75
+      restricoes: ["API Solomon rate limits (não declarados)", "chave por loja (companyId)", "v1 write-only — leitura NÃO é atribuição do Íris, mora no MCP oficial (solomon-oficial)", "path cliente-scoped em Projetos/Rosie/ (não canônico Dedalo/mcp/)"]
+      pontosDeExtensao: ["adicionar registrar_webhook quando Solomon emitir webhooks", "promover para Dedalo/mcp/solomon-ingestion/ se 2º cliente adotar (ADR 0003)"]
+    versao: "0.1.0"
+    criadoEm: "2026-07-01T18:38:00Z"
+    status: ativo-complementar
+    origem: "CREATE (Ritual de 9 fases do Caos 2026-07-01) — RETIFICADO 2026-07-01T19:00:00Z: descoberta posterior do MCP oficial (solomon-oficial) reposicionou Íris como COMPLEMENTAR write-only, não substituto. Fase 0 do Ritual deveria ter dado REUSE do oficial + CREATE de Íris para o gap de write; deu CREATE puro por não achar o oficial (busca não cobriu Intercom/helpdesk da ferramenta). Maturity 10.0/10 no eval mantida — código é válido para o escopo write. Motivador original: cliente Rosie — missão m-20260701-112935-rosie-90d."
+    cliente_origem: "rosie"
+    promocao_para_dedalo: "Se 2º cliente Kolden adotar ingestion Solomon → abrir ADR 0003 movendo para Dedalo/mcp/solomon-ingestion/ + atualizar claude mcp add + atualizar registro. Passa por Caos (Fase 8 revisão) + aprovação Ronan."
 
 _exemplos_antigos:
   # Vazio na fundação. Cada criação preenche este bloco via Fase 8.
