@@ -30,6 +30,11 @@
 - Dossiê de cliente em `sobre-a-empresa/clientes/ativos/<slug>.md` é a âncora: traz keywords reais (Keyword Planner), performance atual da conta, modelo de preço e URLs de silo — ler antes de planejar | 2026-06-25
 - Entregar Google Ads como **blueprint .md** ao lado do dossiê quando não há execução; modo escolhido pelo Ronan nesta sessão | 2026-06-25
 
+### Operação Kolden / Vilela Construction
+- Vilela = assessoria tráfego pago; contrato 6 meses (USD 800 honorários + USD 1000 mídia); CRM **rejeitado** na negociação (§3 dossiê), reavaliação mês 3 (out/2026) → não propor GHL como sistema de registro sem antecipar essa fronteira | 2026-07-01
+- Cliente Boston norte, público idoso, sazonalidade aguda (janela até nov, inverno migra p/ Flórida) → cada semana sem rastreamento instrumentado come budget cego em janela curta | 2026-07-01
+- Ativação de Google Ads em 12/06 sem tag `AW-` instalada = violação do veto `sem_pixel_e_rastreio` do squad. Kasim rima com Awesome, mas rima também com "não gaste $1 antes do rastreio" — HALT retroativo é a resposta correta | 2026-07-01
+
 ## Candidatos a Promoção
 - **Nomear trade-off de orçamento explicitamente em vez de prometer cobertura total** | Origem: kasim-aslam (Peitho) | Detectado: 2026-06-25
 - **Âncora no dossiê do cliente antes de planejar (dados reais > suposição)** | Origem: kasim-aslam (Peitho) | Detectado: 2026-06-25

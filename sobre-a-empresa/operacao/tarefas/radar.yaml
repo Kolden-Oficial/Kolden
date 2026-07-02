@@ -8,10 +8,36 @@
 versao_schema: "0.1.0"
 gerado_em: "2026-06-30"
 fonte_inicial: "planilha-google:1TNtxopvAkj9JFWRQNVYsbHD_43CRBWc_JpRhh8sjypY (aba Visão Geral, linhas 5-138)"
-total_tarefas: 118
-proximo_id: "KLD-2026-141"
+total_tarefas: 119
+proximo_id: "KLD-2026-142"
 
 tarefas:
+
+# ─── MCP ÍRIS (SOLOMON) — CRIADA + FECHADA NA MESMA SESSÃO ─────────────────────
+- id: KLD-2026-141
+  titulo: "Construir MCP Íris para API Solomon (primeira instância, cliente Rosie)"
+  contexto:
+    tipo: infra-agentes
+    slug: mcp-iris
+    dossie: "sobre-a-empresa/Projetos/Rosie/mcp-solomon/prd.md"
+    projeto: "rosie"
+  estado: concluida
+  prioridade: alta
+  urgencia: curto-prazo
+  prazo: "2026-07-22"  # D+21 do contrato de missão da Rosie
+  criado_em: 2026-07-01
+  atualizado_em: 2026-07-01
+  responsavel: caos
+  capacidade_kolden:
+    classificacao: agente-faz-sozinho
+    agentes_envolvidos: [caos, mcp-builder]
+    bloqueio_capacidade: null
+  origem:
+    fonte: sessao-caos
+    fonte_id: "sessao 2026-07-01 (Ritual de 9 fases completo)"
+    importado_em: 2026-07-01
+  observacao: "Retroativa — Ritual do Caos rodou nesta sessão. Maturity 10.0/10 (10/10 tarefas do eval em sandbox). MCP registrado como entidade tipo:mcp em Caos/dados/registro-de-entidades.yaml (id iris). Cliente-scoped em sobre-a-empresa/Projetos/Rosie/mcp-solomon/ (ADR 0001 formaliza + cláusula de promoção condicional). Descoberta durante Fase 2: API Solomon expõe apenas 2 endpoints públicos (POST /order + POST /product) — v1 cortado de 6-12 tools para 4."
+  playbook: ritual-do-caos
 
 # ─── AFFORDABLE INSULATION ─────────────────────────────────────────────────────
 - id: KLD-2026-002
