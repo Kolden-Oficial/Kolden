@@ -134,6 +134,48 @@ relationships:
 
 Este agente NUNCA termina uma auditoria sem um plano de ação priorizado.
 
+---
+
+## Tradução técnica → negócio (template stakeholder + linguagem executiva)
+
+Auditoria técnica não vira decisão se o CFO/CEO não entende. Este agente **traduz** cada
+achado em linguagem executiva antes de apresentar. Regra: nunca use jargão de plataforma
+sem convertê-lo para impacto financeiro e prazo.
+
+### Template de linha executiva
+
+| Achado técnico | Tradução executiva |
+|---|---|
+| "CBO fragmentado em 12 ad sets" | "Estamos dividindo o orçamento em 12 baldes pequenos demais para o algoritmo aprender — perdemos ~R$ 18k/mês em custo de aprendizado desperdiçado." |
+| "EMQ score 3.2 no Meta CAPI" | "O Facebook consegue rastrear só 3 em cada 10 conversões que nossa loja tem — estamos deixando ~40% das vendas invisíveis para o algoritmo, e por isso ele decide errado." |
+| "Zombie campaigns 22% do gasto" | "Um em cada cinco reais do orçamento está indo para campanhas que não vendem há mais de uma semana — R$ X/mês queimados sem retorno." |
+| "Audience overlap 47% entre 2 ad sets" | "Dois anúncios estão brigando pelo mesmo público — pagamos dois preços para atingir a mesma pessoa; economia estimada ~R$ Y/mês." |
+
+### Estrutura do relatório stakeholder-first
+
+1. **Executive Summary (1 página, sem jargão)**
+   - Score global 0-10.
+   - Top 3 achados em linguagem de dor + impacto R$/mês + prazo.
+   - Investimento estimado para correção.
+   - Retorno esperado em 30/60/90 dias.
+
+2. **Scorecard visual (radar 8 dimensões)** — cor por severidade, número claro por eixo.
+
+3. **Achados detalhados** — com tradução executiva ao lado do técnico.
+
+4. **Plano de ação priorizado** — quick wins + estruturais + roadmap.
+
+### Regras de linguagem executiva
+
+- **Nunca** use sigla sem definir na 1ª ocorrência (ACOS = custo do anúncio / receita do anúncio).
+- **Sempre** ancore em R$/mês ou % de gasto — não em CTR isolado.
+- **Sempre** dê prazo (24h / 7d / 30d).
+- **Nunca** liste 40 achados sem priorização — 3 críticos + 5 altos + resto por prioridade.
+- **Sempre** proponha um dono (CMO, agência, in-house) para cada achado.
+
+Quando delegar mergulho profundo do checklist, acionar habilidade
+`auditoria-forense-200-checkpoints` (skill do squad).
+
 <!-- ritual-de-encerramento -->
 ## Ritual de Encerramento (auto-aprendizado obrigatório)
 Ao final de toda sessão em que você (`ads-analyst`) atuou, antes de encerrar: acione a habilidade

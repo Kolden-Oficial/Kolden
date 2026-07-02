@@ -198,3 +198,144 @@ Checklist:
 - [ ] Modelo de atribuição selecionado e janelas definidas
 - [ ] Checklist de QA criado e testado
 - [ ] Alertas de monitoramento definidos
+- [ ] Hierarquia alimenta smart-bidding (sinais primário/secundário/micro) documentada
+- [ ] Consent Mode v2 implementado (mercados EU/BR/UK)
+- [ ] GDPR/LGPD compliance validada com Themis
+- [ ] Privacy Sandbox timeline mapeada
+
+---
+
+## Hierarquia alimenta smart-bidding (sinais primário / secundário / micro)
+
+Smart-bidding (tCPA, tROAS, Max Conv, Advantage+) precisa de **volume + qualidade + variedade
+de sinal** para funcionar. Enviar só o evento primário (compra) é o erro clássico — em contas
+sub-$50K/mês, o algoritmo raramente sai da learning phase.
+
+### As 3 camadas de sinal
+
+**Camada 1 — Sinal primário (o KPI de negócio)**
+- E-com: `purchase` com value + currency + content_ids.
+- Lead-gen: `qualified_lead` (não só `lead`; qualificar após scoring).
+- SaaS: `trial_started` OR `subscription_paid`.
+- App: `activation_event` (Day-1 core action, não só install).
+
+Regra: **1-2 eventos primários por conta**. Mais que isso confunde o algoritmo.
+
+**Camada 2 — Sinal secundário (mid-funnel)**
+- `add_to_cart`, `initiate_checkout`, `add_payment_info` (e-com).
+- `form_view`, `form_start`, `form_field_complete` (lead-gen).
+- `activation_step_2_5` (produto SaaS onboarding).
+- `content_view_key` (páginas de high-intent).
+
+Regra: **3-6 eventos secundários** enviados como custom events com nomes padronizados.
+Facebook AEM aceita até 8 priorizados por domínio; Google usa Enhanced Conversions com
+tag hierarchy.
+
+**Camada 3 — Micro-sinal (engagement)**
+- `scroll_75pct`, `time_on_page_45s`, `video_view_50pct`.
+- `share`, `save`, `outbound_click`.
+
+Regra: **enviar todos como sinais SECUNDÁRIOS**, não deixar como primário. Micro-sinais
+alimentam Advantage+ e Predictive Audiences sem confundir o algoritmo sobre o que é venda.
+
+### Como o smart-bidding lê a hierarquia
+
+- **tCPA / Max Conv**: puxa do evento primário. Se volume <50 conv/semana, algoritmo
+  não converge — precisa de secundário como *conversion action complementar*.
+- **tROAS**: exige value em purchase. Enviar `purchase` sem `value` desabilita tROAS na
+  prática.
+- **Advantage+ Shopping (Meta)**: usa TODAS as camadas — hierarquia rica multiplica
+  performance 20-40%.
+- **PMax (Google)**: aceita conversão importada (primária) + micro (secundária) via
+  Enhanced Conversions Data-Driven Model.
+
+### Configuração no dashboard
+
+```yaml
+Meta (Business Manager):
+  aggregated_event_measurement:
+    - purchase (prioridade 1) # primário
+    - initiate_checkout (prioridade 2) # secundário
+    - add_to_cart (prioridade 3) # secundário
+    - qualified_lead (prioridade 4) # primário lead-gen se aplicável
+    - form_start (prioridade 5) # secundário
+    - content_view_key (prioridade 6) # micro
+    - video_view_50pct (prioridade 7) # micro
+    - scroll_75pct (prioridade 8) # micro
+
+Google Ads / GA4:
+  conversion_actions:
+    - primary: purchase (Enhanced Conversions ON, value + currency)
+    - primary: qualified_lead (se lead-gen)
+    - secondary: add_to_cart (not counted, used for bidding)
+    - secondary: initiate_checkout
+    - secondary: form_start
+```
+
+---
+
+## Consent Mode v2 + GDPR/LGPD + Privacy Sandbox
+
+Rastreamento pós-2024 opera em mundo cookie-less parcial. Três frentes obrigatórias:
+
+### Consent Mode v2 (Google)
+
+Desde março 2024, Google exige Consent Mode v2 para ativar Enhanced Conversions + Audience
+Insights no EEE (Espaço Econômico Europeu) e UK. Parâmetros:
+
+- `ad_storage` (permissão para armazenar dados de ads)
+- `ad_user_data` (permissão para enviar dados a Google Ads)
+- `ad_personalization` (permissão para personalizar ads)
+- `analytics_storage` (permissão para storage de analytics)
+
+Implementação:
+1. Antes do usuário dar consent, Consent Mode envia "conversion ping" agregado (sem cookie).
+2. Após consent aceito, envia dado completo com cookies.
+3. Após consent negado, permanece em modo agregado — Google modela via Consent Mode
+   *conversion modeling*.
+
+Regra: implementação via CMP certificado pelo Google (Cookiebot, OneTrust, Usercentrics,
+Iubenda). Nunca hand-rolled.
+
+### GDPR (EU) + LGPD (Brasil) + CCPA (Califórnia)
+
+Framework operacional:
+
+| Regulação | Base legal para paid ads | Consent obrigatório? |
+|---|---|---|
+| GDPR (EU) | Consent explícito | Sim |
+| LGPD (BR) | Consent + legítimo interesse | Sim para audience data |
+| CCPA (CA) | Opt-out disponível | Não (opt-out sim) |
+| PIPEDA (CA) | Consent implícito ok em alguns casos | Depende |
+| PDPA (SG/TH/IN) | Consent explícito | Sim |
+
+Handoff obrigatório: qualquer questão jurídica específica de mercado passa a **Themis**.
+
+### Privacy Sandbox timeline (Google Chrome)
+
+Google adiou o kill do 3rd-party cookie múltiplas vezes. Timeline vigente:
+
+- **Q3 2024**: Chrome permite usuário optar por manter 3rd-party cookies. Escolha
+  distribuída.
+- **2025**: Adoção contínua do Topics API + Attribution Reporting API + Protected
+  Audience API (ex-FLEDGE).
+- **2026-2027**: Migração gradual continua; regime híbrido.
+
+Implicações práticas:
+- Não construir arquitetura dependente puramente de 3rd-party cookie.
+- Migrar audiences para 1st-party (CRM upload / Customer Match / CAPI).
+- Testar Topics API + Protected Audience como fallback.
+- Contextual targeting recupera peso — investir em Peer39 / IAS Context Control.
+
+### Checklist de conformidade
+
+- [ ] CMP certificada configurada e testada
+- [ ] Consent Mode v2 ativo em mercados EU/UK
+- [ ] LGPD banner ativo em mercado BR
+- [ ] Pixel/tags condicionadas a consent (não disparar antes)
+- [ ] Enhanced Conversions ligadas com Consent Mode
+- [ ] Server-side (CAPI + Enhanced Conversions server-side) reduz dependência de cookie
+- [ ] Advogado Themis validou base legal por mercado
+- [ ] Documentação de retention (quanto tempo dados armazenados) publicada
+- [ ] Usuário consegue exercer direito a exclusão (LGPD Art. 18) e portabilidade
+- [ ] Auditoria trimestral de trackers (via Cookiebot / OneTrust dashboard)
