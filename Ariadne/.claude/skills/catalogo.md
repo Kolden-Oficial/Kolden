@@ -50,6 +50,31 @@ de SEO técnico e de conteúdo. Copy final é sempre handoff ao **Caliope**; med
 | `seo-programatico-profundo` | "SEO programático", "páginas em escala", "páginas por template", "SEO orientado a dado" | Planeja/audita páginas em escala com quality gates (WARNING/HARD STOP) contra thin content e index bloat |
 | `relatorios-de-seo` | "gera um relatório", "PDF da auditoria", "dashboard", "plano de ação", "prioriza as issues", "roadmap de SEO" | Camada de SAÍDA: relatório SEO consolidado (PDF/HTML) + priorização de issues e roadmap |
 
+## Habilidades adicionadas no 2º passe de absorção (jul/2026)
+Aprofundamento cirúrgico das frentes onde a herança do `claude-seo` ainda não estava totalmente
+absorvida. Alimentam especialistas dedicados quando forem materializados (candidato de leva futura, ver
+`references/tooling-executavel-diferido.md` §1 G26).
+
+| Habilidade | Gatilho | Propósito | Adjacência |
+|---|---|---|---|
+| `engenharia-de-schema-executavel` | "gera o schema", "JSON-LD dessa página", "esse tipo ainda vale?", "HowTo/FAQPage/ClaimReview" | Geração + validação executável de JSON-LD com tabela canônica de tipos depreciados 2024-2026 e árvore "asked for X → recomendar Y" | engenheiro-de-schema |
+| `geo-ai-overviews-aprofundado` | "AI Overviews", "AI Mode", "ChatGPT search", "Perplexity", "SGE", "GEO/AEO/LLMO", "aparecer em IA", "llms.txt" | Scorecard GEO em 5 dimensões, divergência AI Mode × AI Overviews (13,7% overlap), quick wins + alta alavancagem, mitos rejeitados pelo Google | otimizador-ai-seo |
+| `arquitetura-de-site-hub-spoke` | "topic cluster", "content cluster", "pillar page", "hub and spoke", "canibalização de keyword" | Cluster por SERP-overlap (7-10 = merge / 4-6 = mesmo cluster / 2-3 = interlink / 0-1 = separar), matriz bidirecional de links internos, scorecard pós-execução | arquiteto-de-site |
+| `planejamento-por-industria-seo` | "plano de SEO", "SEO strategy", "roadmap SEO por indústria", "content calendar", "SaaS/local/e-commerce/publisher/agência" | Plano em 4 fases (Fundação → Expansão → Escala → Autoridade) calibrado por 6 perfis; tabela de roteamento enriquecida do chief; guard anti-thin para comparação em escala | ariadne-chief |
+
+## Bibliotecas de referência densa (em `data/` e `references/`)
+Fontes primárias + secundárias que as skills consultam para thresholds, endpoints, licenças e updates.
+Não são SKILL.md; são material de consulta. Colocadas em `data/` porque são estruturais.
+
+| Arquivo | Propósito |
+|---|---|
+| `data/refs-seo-core.md` | E-E-A-T + CWV + quality gates (thresholds consolidados) — G41 |
+| `data/refs-apis-google.md` | GSC / GA4 / PSI / CrUX / Indexing / NLP / YouTube / Ads (endpoints, quotas, gotchas) — G42 |
+| `data/refs-flow-prompts.md` | Framework FLOW + licença CC BY 4.0 do Daniel Agrici (meta-referência, sem cópia literal) — G43 |
+| `data/refs-geo-ecommerce-cluster.md` | `llms.txt` (por que não é lever) + Merchant Listings + SERP-overlap methodology — G47 |
+| `data/refs-updates-google.md` | Base curada de updates Google 2024-2026 (core/spam/policy/QRG/CWV/schema/produto) — G48 |
+| `references/tooling-executavel-diferido.md` | Nota de escopo — 11 IDs de tooling executável DIFERIDO para sessão Prometeu + Infisical (G17, G24, G28, G30, G31, G33, G34, G38, G39, G40, G26) |
+
 ## Habilidades compartilhadas (fonte única no workspace)
 | Habilidade | Gatilho | Propósito |
 |---|---|---|

@@ -68,6 +68,76 @@ LCP do herói.
 Medição de CWV em SPA é ponto cego (ver `render-js-e-spa`): a Soft Navigations API (Chrome 139+) ainda
 é experimental e sem peso de ranqueamento. Ao detectar React/Vue/Angular/Svelte, avise a limitação.
 
+## Metas absolutas de aceite (release gate)
+
+CWV não é métrica de "queremos melhorar" — é **gate binário de release** para páginas críticas
+(landing, checkout, PDP). O que passa E não passa:
+
+| Métrica | Meta de aceite | Como medir | Regra dura |
+|---|---|---|---|
+| **LCP** | **≤ 2,5s** | p75 CrUX (campo, 28 dias) — NUNCA só lab | Se p75 CrUX >2,5s → não sobe |
+| **INP** | **≤ 200ms** | p75 CrUX (campo) | Se p75 CrUX >200ms → não sobe |
+| **CLS** | **≤ 0,1** | p75 CrUX (campo) | Se p75 CrUX >0,1 → não sobe |
+| **TTFB** | ≤ 800ms | CrUX + lab | Sinal de backend, não bloqueia release sozinho |
+| **FCP** | ≤ 1,8s | CrUX + lab | Sinal auxiliar |
+
+Regras adicionais Kolden:
+- **p75 CrUX é a régua** — não média, não lab. Se média é ok mas p75 falha, o release falha.
+- **Sem dado de campo (CrUX 404)?** Cair para lab (Lighthouse mobile) com **budget 20% mais
+  apertado** — se lab passa por pouco, campo pode falhar. Regate: LCP lab ≤2,0s se sem CrUX.
+- **Regressão pós-deploy:** se p75 CrUX degrada >10% na janela seguinte, dispara alerta →
+  investigar com histórico de 25 semanas + LCP subparts + comparar com deploy anterior.
+- **Página crítica sem CrUX suficiente (tráfego <1000/sem):** rodar RUM próprio (web-vitals lib)
+  em produção para gerar p75 próprio; não confiar só em lab.
+- **Exceção para AAA:** produto em nicho saúde/gov pode exigir LCP ≤1,5s + INP ≤100ms — subir
+  o padrão, nunca baixá-lo por conveniência.
+
+Gate operacional: antes do deploy que muda página crítica, Ariadne emite parecer
+**PASS / CONCERNS / FAIL** com base nas metas acima + histórico CrUX de 25 semanas + lab do PR.
+
+## Capacity planning com auto-scaling (perf sob carga)
+
+Meta LCP <2,5s exige backend que aguenta pico. Kolden testa capacidade **antes** do deploy
+crítico, não depois do alerta:
+
+### Regra 10x — teste de degradação
+Rodar `k6` (cross-link `benchmarking-com-k6-multi-stage` do Prometeu) em **10x a carga esperada
+de pico** e medir:
+- **P95 de latência do endpoint que serve o LCP** (HTML + API do above-the-fold + imagem hero)
+- **TTFB do servidor** sob carga
+- **Error rate** (deve continuar <1%)
+- **Curva throughput × latência** — onde P95 sai de <500ms?
+
+Se em 10x a P95 do endpoint LCP-crítico passa de 1s, o **LCP campo vai degradar em pico real**
+mesmo com CDN. Isso é gate para deploy.
+
+### Gatilhos de scale-up ANTES de degradar CWV
+Configurar auto-scaling para acionar **antes** do LCP passar de 2s (não 2,5s — margem):
+- **CPU >70%** por 2min consecutivos → +1 instância
+- **P95 de endpoint LCP-crítico >600ms** por 1min → +1 instância
+- **Requests em fila >100** → +2 instâncias imediato
+- **TTFB p95 >500ms** → alerta + scale
+- **CDN cache hit ratio <90%** → investigar (pode ser revalidação em massa)
+
+Nunca esperar CPU 100%: quando chega lá, LCP já degradou 30s antes.
+
+### Baseline versionado
+Salvar em `docs/perf/capacity-<data>.md` para cada release crítico:
+- Carga base (RPS típico)
+- Carga pico observada (RPS peak)
+- Multiplier testado (10x default)
+- P95 sob 10x
+- Auto-scaling triggers vigentes
+- Custo mensal por instância (input do Plutos)
+
+Regressão vs baseline anterior >20% em P95 → warning; >50% → bloqueio de release.
+
+### Handoffs de capacity
+- **Sizing errado (custo estoura)** → Aria (@architect Prometeu) revisa; Plutos calcula OPEX.
+- **Auto-scaling lento demais** → @devops (Gage Prometeu) ajusta thresholds da plataforma.
+- **CDN cache invalidando demais** → revisar `Cache-Control` no Ariadne + `Vary` headers.
+- **DB é gargalo em pico** → Dara (@data-engineer Prometeu) revisa índice/pool/read replica.
+
 ## Saída
 Cada métrica com semáforo (Bom / A melhorar / Ruim), sempre com **nota de frescor do dado** e a fonte
 (campo vs lab). Otimizações entram como **hipótese mensurável** (o que muda, qual subparte ataca, como
@@ -85,3 +155,13 @@ Princípio extraído de `AgriciDaniel/claude-seo@d830cdb` (skill `seo-google`, r
 e scripts `pagespeed_check`/`crux_history`/`lcp_subparts`/`preload_check`; licença MIT). Reescrito em
 PT-BR para a Kolden, sem cópia literal. Os scripts executáveis de PSI/CrUX ficam como tooling a
 provisionar (chave via Infisical).
+
+**Extensão 2026-07-02** (bucket B03/engineering, IDs TEST G14 + TEST G16): adicionadas as seções
+"Metas absolutas de aceite" (gate de release binário P75 CrUX) e "Capacity planning com
+auto-scaling" (regra 10x, gatilhos de scale antes de degradar CWV, baseline versionado). Herança
+histórica adicional: **Steve Souders** — *High Performance Web Sites* (2007), padrões de LCP e
+render-blocking; **Ilya Grigorik** — *High Performance Browser Networking* (2013), TTFB e HTTP/2;
+**Neil Gunther** — *Guerrilla Capacity Planning* (2007), curva throughput × latência (regra 10x);
+**Nick Craver** (Stack Overflow) — capacity planning canonical case (2016). Cross-link
+`benchmarking-com-k6-multi-stage` (Prometeu). Adaptado de `github.com/msitarzewski/agency-agents@a597cb6`
+(MIT), bucket B03/engineering.
