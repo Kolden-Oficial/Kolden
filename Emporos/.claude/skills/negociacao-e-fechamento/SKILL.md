@@ -88,3 +88,9 @@ da faixa · exceção a escalar) + atualização de estágio pelo `gestor-de-crm
 *Princípios reescritos (sem cópia literal) a partir de: alirezarezvani/claude-skills@4a3c05b (MIT) —
 cluster comercial G19 (deal-desk, commercial-policy, channel-economics); anthropics/knowledge-work-plugins@78d74d5
 (Apache-2.0) — plugin `sales` (competitive-intelligence, call-prep).*
+
+*Bloco AECR (Acknowledge → Empathize → Clarify → Reframe) adaptado de
+github.com/msitarzewski/agency-agents@a597cb6 (MIT), bucket B06/sales, ID G17. Reescrito sem cópia
+literal. Herança histórica: Chris Voss ("Never Split the Difference", 2016 — lente FBI/tactical
+empathy), Anthony Iannarino ("The Lost Art of Closing"), princípios de negociação Harvard (Fisher &
+Ury) integrados ao ciclo Acknowledge→Empathize→Clarify→Reframe.*

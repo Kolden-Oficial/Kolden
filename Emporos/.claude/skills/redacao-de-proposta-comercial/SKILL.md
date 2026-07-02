@@ -92,3 +92,10 @@ GHL; credenciais via Infisical.
 *Princípios reescritos (sem cópia literal) a partir de: alirezarezvani/claude-skills@4a3c05b (MIT) —
 cluster comercial G19 (contract-and-proposal-writer, rfp-responder, deal-desk, commercial-policy);
 anthropics/knowledge-work-plugins@78d74d5 (Apache-2.0) — plugin `sales` (create-an-asset).*
+
+*Bloco Win Themes + 3 Atos + Executive Summary adaptado de
+github.com/msitarzewski/agency-agents@a597cb6 (MIT), bucket B06/sales, ID G33. Reescrito sem
+cópia literal. Herança histórica: Tom Sant ("Persuasive Business Proposals" — win themes e a
+regra de aparecer em toda seção); Shipley Associates (metodologia canônica de proposal
+management usada em contratos federais e enterprise); Blair Enns ("Pricing Creativity",
+"Win Without Pitching Manifesto" — a proposta como fechamento e não como pitch).*

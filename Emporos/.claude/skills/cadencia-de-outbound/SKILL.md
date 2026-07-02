@@ -128,3 +128,10 @@ PERSONALIZAÇÃO / PRÓXIMO PASSO + DONO + DATA). Toques registrados no GHL; cre
 *Princípios reescritos (sem cópia literal) a partir de: anthropics/knowledge-work-plugins@78d74d5
 (Apache-2.0) — plugin `sales` (draft-outreach, account-research) + conectores `apollo` e `common-room`;
 alirezarezvani/claude-skills@4a3c05b (MIT) — cluster comercial G19 + cold-email (G4).*
+
+*Blocos Signal-based (G26) + Anatomia de cold email (G28) + Sequência 8-12 toques em 3-4 semanas
+(G29) adaptados de github.com/msitarzewski/agency-agents@a597cb6 (MIT), bucket B06/sales.
+Reescrito sem cópia literal. Herança histórica: Kyle Coleman (Clari — signal-based selling
+moderno); time Common Room (community-led signal); Aaron Ross ("Predictable Revenue", 2011 —
+cadência multi-toque); Jason Bay (Blissful Prospecting — anatomia de cold email de alta
+conversão); Josh Braun (breakup email).*

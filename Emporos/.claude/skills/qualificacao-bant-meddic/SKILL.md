@@ -53,6 +53,24 @@ MEDDPICC adiciona 2 dimensões críticas a MEDDIC:
 **C** - Champion (interno, que defende você quando você não está na sala)
 **C** - Competition (outros vendors + status quo + "fazer nada" como concorrente)
 
+**PP — Paper Process (o subestimado):**
+- Não é "quem assina" — é o **processo real** entre "sim verbal" e assinatura efetiva.
+- Rota típica enterprise: Legal → Procurement → InfoSec → Finance → CEO/board approval.
+- Cada etapa tem SLA declarado e SLA real (frequentemente 2-3× o declarado).
+- Descobrir na semana do close = atrasa 30-60 dias.
+- Perguntar na Discovery: "quando vocês assinaram algo similar da última vez, qual foi a rota?
+  quem revisou? quanto tempo levou entre 'sim' e assinatura?"
+
+**IC — Identify Champion (distinguir Champion vs Coach):**
+- **Champion** = tem poder + quer o resultado + vai lutar por ele quando não estamos na sala.
+- **Coach** = compartilha informação amistosa, mas não arrisca capital político.
+- Coach ≠ Champion. Confundir os dois é a raiz da maioria dos deals que "parecem seguros" e caem.
+- Teste do Champion (Force Management / Command of the Message):
+  - Ele pediu introdução ao Economic Buyer? (se não, não é champion — é coach)
+  - Ele explicou o Paper Process real? (idem)
+  - Ele defendeu você em reunião interna que você não estava? (idem — fato observável)
+- Sem champion validado (não presumido), o deal não entra no Commit do forecast.
+
 **Quando usar MEDDPICC vs BANT vs MEDDIC:**
 - BANT: SMB transacional (ciclo curto, 1 decisor)
 - MEDDIC: B2B mid-market (ciclo 3-6 meses, comitê pequeno)
@@ -87,3 +105,8 @@ PRÓXIMO PASSO + DONO + DATA). CRM e enriquecimento sempre com credenciais via I
 *Princípios reescritos (sem cópia literal) a partir de: alirezarezvani/claude-skills@4a3c05b (MIT) —
 cluster comercial G19 (sales-engineer, commercial-policy); anthropics/knowledge-work-plugins@78d74d5
 (Apache-2.0) — plugin `sales` (account-research, daily-briefing).*
+
+*Bloco MEDDPICC (PP + IC) adaptado de github.com/msitarzewski/agency-agents@a597cb6 (MIT), bucket
+B06/sales, ID G9. Reescrito sem cópia literal. Herança histórica MEDDPICC: Dick Dunkel & Jack
+Napoli (PTC/MEDDIC original, 1996+); Andy Whyte ("MEDDICC" 2020, adição do PP e do segundo C);
+Force Management (Command of the Message, distinção Champion vs Coach).*
