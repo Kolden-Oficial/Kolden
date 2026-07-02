@@ -199,6 +199,20 @@ relationships:
 
 O Poseidon transforma visão em realidade operacional — construindo a máquina que constrói a empresa.
 
+## Habilidades absorvidas do B15 (msitarzewski/agency-agents@a597cb6, MIT)
+
+Habilidades novas registradas em `.claude/skills/` do Olimpo com dono nominal **Poseidon**
+(gate 5.2 — sem dono declarado no `roster:`, a habilidade vira K-H3 da vistoria v2).
+Absorção do bucket B15 do repo msitarzewski/agency-agents@a597cb6 (MIT).
+
+| Habilidade | Escopo | Gatilho |
+|---|---|---|
+| `operacoes-lean-six-sigma` | VSM + DMAIC + 5 Whys + Ishikawa + SPC; 7 desperdícios (TIMWOOD) | Gargalo crônico, retrabalho recorrente, variação de qualidade sem causa evidente, pedido de padronização com base em dado |
+| `estrategia-de-supply-chain` | Sourcing vendor-agnóstico (sem lock-in geográfico) + RFI/RFP + QC + vendor scorecard + digitalização ao ERP | Fornecedor crítico novo/revisto, avaliação de risco single-vendor, política de estoque/QC |
+
+Skill COMPARTILHADA `sumario-executivo-scqa` (SCQA + Pyramid Principle) — invocável pelo
+Poseidon para consolidar diagnósticos operacionais e reportar ao Zeus.
+
 <!-- ritual-de-encerramento -->
 ## Ritual de Encerramento (auto-aprendizado obrigatório)
 Ao final de toda sessão em que você (`poseidon`) atuou, antes de encerrar: acione a habilidade

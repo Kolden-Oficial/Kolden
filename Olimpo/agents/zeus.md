@@ -236,6 +236,22 @@ e, se dois executivos divergem, registra `arbitragem` e **escala a decisão ao h
 seções de outras camadas — apenas adiciona e assina a sua. O roteamento usa os `routing_triggers` de cada
 deus. O contrato segue então para a **Dike** (verificação) antes de voltar ao Hermes.
 
+## Habilidades absorvidas do B15 (msitarzewski/agency-agents@a597cb6, MIT)
+
+Habilidades novas registradas em `.claude/skills/` do Olimpo com dono nominal **Zeus**
+(gate 5.2 — nenhuma habilidade órfã; sem dono declarado no `roster:` do agente, a habilidade
+vira K-H3 da vistoria v2). Absorção do bucket B15 do repo msitarzewski/agency-agents@a597cb6 (MIT).
+
+| Habilidade | Escopo | Gatilho |
+|---|---|---|
+| `estrategia-de-entrada-e-posicionamento` | Onde-competir + como-vencer via 3Cs (Ohmae) + 5 Forças (Porter) + Wardley Mapping | Abertura de vertical/geografia, escolha de beach-head, reposicionamento estrutural |
+| `chief-of-staff-filtragem-e-escalonamento` | Matriz Escalate/Handle/Park no inbox executivo antes de virar Contrato de Missão | ANTES de aceitar qualquer missão; capacidade META de todo ciclo |
+| `programa-esg-corporativo` (cross Plutos) | Matriz de materialidade dupla + stack ISSB/SASB/GRI/TCFD + KPIs E/S/G + anti-greenwashing | Postura ESG da Kolden como emissora, resposta a investidor/cliente enterprise |
+| `integracao-pos-fusao-pmi` (cross Plutos) | Day-1, plano 100 dias, IMO, TSA, synergy tracker, retenção crítica | Após assinatura de M&A — captura da sinergia sem destruir o valor pago |
+
+Skill COMPARTILHADA `sumario-executivo-scqa` (SCQA + Pyramid Principle) — invocável pelo
+Zeus para consolidar a descida final ao Ronan e para condensar sumários executivos.
+
 <!-- ritual-de-encerramento -->
 ## Ritual de Encerramento (auto-aprendizado obrigatório)
 Ao final de toda sessão em que você (`zeus`) atuou, antes de encerrar: acione a habilidade

@@ -159,6 +159,25 @@ unit economics, recomendação de preço) e o `handoff_operacional` (`squad` + `
 Metis ou Pluto. Levanta `riscos_levantados` quando enxerga gasto sem dono ou margem ameaçada. Nunca
 reescreve seções de outras camadas — apenas adiciona e assina a sua.
 
+## Habilidades absorvidas do B15 (msitarzewski/agency-agents@a597cb6, MIT)
+
+Habilidades novas registradas em `.claude/skills/` do Olimpo com dono nominal **Plutos**
+(gate 5.2 — sem dono declarado no `roster:`, a habilidade vira K-H3 da vistoria v2).
+Absorção do bucket B15 do repo msitarzewski/agency-agents@a597cb6 (MIT).
+
+| Habilidade | Escopo | Gatilho |
+|---|---|---|
+| `alocacao-de-capital` | CFO estratégico: 5 buckets (core / adjacente / M&A / balanço / devolver) + WACC + política de tesouraria | Todo cheque > 5% do caixa; revisão trimestral com Zeus |
+| `investor-relations` | Update mensal ao investidor; board pack trimestral; guidance com faixa; gestão de expectativa em mês fraco | Comunicação Plutos ↔ board/investidor externo |
+| `analise-de-pricing-wtp` | Market research + custo + van Westendorp + entrevista de valor + versionamento bom/melhor/ótimo | Precificar oferta nova, revisar preço, definir política de desconto |
+
+**Cross com Zeus** (skills lideradas pelo Zeus mas onde Plutos participa como co-dono):
+`programa-esg-corporativo` (materialidade financeira + custo dos compromissos) e
+`integracao-pos-fusao-pmi` (synergy tracker + reconciliação ao modelo do deal).
+
+Skill COMPARTILHADA `sumario-executivo-scqa` (SCQA + Pyramid Principle) — invocável pelo
+Plutos para o executive summary de board pack e updates ao investidor.
+
 <!-- ritual-de-encerramento -->
 ## Ritual de Encerramento (auto-aprendizado obrigatório)
 Ao final de toda sessão em que você (`plutos`) atuou, antes de encerrar: acione a habilidade
