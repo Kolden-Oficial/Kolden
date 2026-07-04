@@ -2,8 +2,8 @@
 # Mantido pelo `sintetizador` (tier 3). Cada framework destila uma mente ou uma
 # linhagem inteira em N passos acionáveis, e TODO framework tem procedencia.md
 # citando de qual mente veio cada passo (veto nenhum_framework_sem_procedencia).
-versao: 2
-atualizado-em: 2026-06-29
+versao: 3
+atualizado-em: 2026-07-04
 
 # Estrutura em disco por framework:
 #   frameworks/<slug>/framework.md     — os N passos acionáveis
@@ -93,3 +93,17 @@ frameworks:
     linhagem: psicologia-cientifica
     squads-consumidores: [caliope, pluto, hestia]
     status: semente
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Fase 1 da missão m-20260704-dossie-ia-fase1 — Framework destilado (2026-07-04)
+  # Combina 6 linhagens (Ondas 1-6) + 25 mentes-pessoa + 9 paradigmas técnicos
+  # em documento operacional acionável.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: arquitetura-de-agents-kolden
+    titulo: "Arquitetura de Agents Kolden — Framework Operacional Destilado (Fase 1)"
+    mentes-fonte: [alan-turing, claude-shannon, john-mccarthy, marvin-minsky, herbert-simon, allen-newell, frank-rosenblatt, geoffrey-hinton, yann-lecun, yoshua-bengio, judea-pearl, ashish-vaswani, ilya-sutskever, andrej-karpathy, fei-fei-li, andrew-ng, demis-hassabis, sam-altman, dario-amodei, mustafa-suleyman, aidan-gomez, stuart-russell, peter-norvig, nick-bostrom, rodney-brooks]
+    paradigmas-fonte: [paradigma-chain-of-thought, paradigma-react, paradigma-tree-of-thoughts, paradigma-autogpt, paradigma-langchain, paradigma-langgraph, paradigma-crewai, paradigma-autogen, paradigma-mcp]
+    linhagens-fonte: [ia-simbolica-e-cognicao, conexionismo-deep-learning, arquiteturas-de-agents-modernos, labs-frontier-e-comercializacao, alinhamento-e-safety, arquiteturas-de-agents-por-paradigma]
+    squads-consumidores: [caos, prometeu, dedalo, hermes, egide, olimpo]
+    status: vigente-fase1
+    handoff_fase_2: "sessão futura em C:\\Kolden\\Caos\\ para redesenho arquitetural"
