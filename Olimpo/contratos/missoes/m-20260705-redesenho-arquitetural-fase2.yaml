@@ -1,0 +1,455 @@
+# Contrato de Missão — Redesenho da Arquitetura Oficial dos Agents da Kolden (Fase 2 de 2)
+# Schema: ../contrato-de-missao.schema.md
+# Insumo: Contrato m-20260704-dossie-ia-fase1 (Fase 1 concluída em 2026-07-04, em origin/main)
+# Plan-file: pendente (será gerado na abertura da Onda 1 em C:\Kolden\Caos\)
+---
+missao:
+  id: "m-20260705-redesenho-arquitetural-fase2"
+
+  # ── CAMADA 1 — HUMANO (lacrada, imutável) ───────────────────────────────────
+  intencao_original:
+    input_cru: |
+      @caos-chief lavrar Contrato de Missão m-20260705-redesenho-arquitetural-fase2 sobre
+      o insumo da Fase 1 (Contrato m-20260704 concluído em 2026-07-04, publicado em origin/main).
+
+      Leitura obrigatória antes de lavrar: (1) Liceu/frameworks/arquitetura-de-agents-kolden/
+      framework.md — 12 princípios canônicos + 5 camadas + 8 critérios safety+quality + 7
+      métricas + 12 anti-padrões + roteamento dinâmico + handoff Fase 2 em 8 passos; (2)
+      Liceu/frameworks/arquitetura-de-agents-kolden/procedencia.md — cada princípio rastreado
+      a linhagem+mente+obra+ano; (3) sobre-a-empresa/_conhecimento-institucional/aiox-kolden/
+      raciocínio-computacional-... — hub expandido com Seção 8 (implicações para Kolden —
+      ponte Fase 2).
+
+      Diretiva Fase 2: auditar Caos atual (CLAUDE.md + nucleo/ARQUITETURA.md + constituicao.md
+      + modelos/* + 5 camadas + Ritual de 9 fases) contra os 12 princípios + 8 critérios;
+      identificar divergências; redesenhar onde diverge com justificativa por linhagem;
+      implementar MCP como Camada 1 (migrar wrappers proprietários); ativar dashboard de
+      safety metrics (Amodei RSP-style); publicar Predictions Scorecard Kolden (Brooks-style).
+      Roteirizar em ondas sequenciais (não uma sessão). Começar por Onda 1 = DIAGNÓSTICO
+      (comparação matricial atual × framework, sem escrever nada) e parar em aprovação humana
+      antes de qualquer redesign.
+    canal: "chat"
+    recebida_em: "2026-07-05T00:00:00-03:00"
+    hash: "sha256:d38fce540988a6adb41f882ff74fab45e397335f12607a43252c03d39fba0998"
+
+  # ── CAMADA 2 — HERMES (tradução de intenção) ────────────────────────────────
+  hermes:
+    dor:
+      objetivo_real: |
+        REDESENHAR a arquitetura oficial dos agents da Kolden — encarnada hoje no squad Caos
+        (fábrica de agents) — para que ela deixe de ser um artefato empírico e passe a ser
+        derivada explicitamente do framework canônico produzido na Fase 1
+        (`Liceu/frameworks/arquitetura-de-agents-kolden/framework.md`, v1.0-fase1).
+
+        Concretamente, a Fase 2 entrega três resultados coordenados:
+
+        (A) DIAGNÓSTICO MATRICIAL do Caos atual — matriz [12 princípios + 8 critérios] ×
+            [CLAUDE.md do Caos + nucleo/ARQUITETURA.md + constituicao.md + modelos/* (12
+            arquivos) + as 5 camadas atuais + Ritual de 9 fases] com veredito por célula
+            (conforme / divergente / parcial / não-aplicável), evidência textual citada e
+            severidade (crítico / alto / médio / baixo). Zero edição nesta onda.
+
+        (B) REDESENHO ancorado por procedência — cada mudança em CLAUDE.md /
+            constituicao.md / nucleo/ARQUITETURA.md / modelos/* / Ritual de 9 fases é
+            justificada por linhagem + mente + obra do `procedencia.md` (ex.: "adicionar
+            `aspiration_criteria` obrigatório no modelo `perfil.md` — Princípio 3, Simon 1955
+            Models of Man; Russell 2019 Human Compatible").
+
+        (C) TRÊS ATIVAÇÕES DE INFRA que operacionalizam os princípios em runtime:
+            (C.1) MCP como Camada 1 Universal — mapear wrappers proprietários existentes no
+                  Caos (busca-de-referencias, consulta-ao-registro, vigia-de-ecossistema,
+                  outras skills-like-tools) e planejar migração para interface MCP conforme
+                  Princípio 12 (Onda 6 Fase 1 — MCP dossiê 25/nov/2024, adoção OpenAI+Google+
+                  Microsoft 2025).
+            (C.2) Dashboard de Safety Metrics estilo Amodei/RSP — ASL declarado por agent +
+                  interpretability score + red-team log + constitutional principles ativos.
+                  Fonte: Amodei "Machines of Loving Grace" out/2024 + Anthropic Responsible
+                  Scaling Policy 2023-2024 (Onda 4).
+            (C.3) Predictions Scorecard Kolden anual, estilo Brooks — predições datadas +
+                  falsificáveis + revisão pública anual sobre arquiteturas de agents,
+                  cadência de adoção, ganhos de safety. Fonte: Brooks rodneybrooks.com
+                  2018-2026 (Onda 5, categoria excepcional de curadoria factual).
+
+        Filosoficamente, a Fase 2 fecha o arco iniciado em m-20260704: dossiê teórico →
+        framework destilado → arquitetura Kolden reencarnada com procedência. Termina o
+        empirismo "arquitetura por hábito"; começa a arquitetura por linhagem.
+      criterio_de_sucesso: |
+        Ao final da Fase 2:
+        1. Onda 1 (DIAGNÓSTICO) entregue como matriz-de-conformidade.md + achados.jsonl +
+           sumario-executivo.md em `Caos/registros/redesenho-fase2/onda-1-diagnostico/`,
+           com working tree do Caos intacto (nenhum arquivo Caos editado).
+        2. Aprovação humana explícita do Ronan sobre a matriz de diagnóstico antes de
+           qualquer Onda de redesign disparar (GATE DURO — Ondas 2-6 marcadas
+           "aguardando-aprovacao-onda-anterior" até liberação).
+        3. Ondas 2-6 (redesign + infra) entregues em sub-sessões sequenciais, cada uma com:
+           (a) artefato-em-disco em Caos/registros/redesenho-fase2/onda-N-<escopo>/,
+           (b) diff proposto para os arquivos-alvo,
+           (c) procedência rastreável de cada mudança (linhagem + mente + obra + ano),
+           (d) verificação Dike delta com checklist derivado dos 12+8.
+        4. Ao fim da Onda 6: Caos operando sobre nova arquitetura, com MCP em Camada 1 (ou
+           roteiro cirúrgico de migração publicado se transição gradual), dashboard de safety
+           metrics acionável, e primeiro Predictions Scorecard Kolden publicado com data +
+           critério de falsificação.
+        5. Dike reconcilia TPND=0 (nenhum princípio ou critério do framework sem endereço no
+           redesenho — ou justificativa formal de por que não se aplica).
+        6. Smoke tests manuais passam (`@caos crie agent especialista em vendas de SaaS
+           enterprise` → agent gerado tem constitution.md declarada + aspiration_criteria +
+           ASL + MCP tools; NÃO tem system-prompt monolítico "faça tudo").
+      restricoes:
+        prazo: "múltiplas sessões — 6 ondas sequenciais; entre ondas, artefato-em-disco + gate humano"
+        orcamento: "sem teto de rodadas por onda; sem commit até ordem explícita"
+        proibicoes:
+          - "Não editar nenhum arquivo do Caos na Onda 1 (diagnóstico é RIGOROSAMENTE read-only)"
+          - "Não disparar Onda 2+ sem aprovação humana explícita da matriz de diagnóstico da Onda 1"
+          - "Não redesenhar sem procedência rastreável — toda mudança precisa citar linhagem + mente + obra + ano de procedencia.md (veto herdado do Liceu VETO_FRAMEWORK_SEM_PROCEDENCIA)"
+          - "Não migrar wrapper proprietário para MCP sem sinalizar impacto em skills-que-dependem (mapeamento reverso obrigatório antes de tocar)"
+          - "Não alterar o CLAUDE.md do projeto raiz (C:\\Kolden\\CLAUDE.md) — apenas o CLAUDE.md do Caos e artefatos internos ao squad"
+          - "Não tocar o Liceu, Hermes, Olimpo ou outros squads — o objeto do redesenho é EXCLUSIVAMENTE o Caos + os squads que herdam padrão do Caos por convenção (mudança nesses é sub-item explícito, não colateral)"
+          - "Não commitar; working tree fica limpo para Ronan pedir commit por onda"
+          - "Não abrir issue, PR ou push"
+          - "Não paralelizar ondas entre si (rate-limit; validado 2026-06-27); dentro da onda, fan-out interno OK (≤3 subagentes por vez)"
+          - "Não afirmar divergência sem citação textual exata do arquivo-alvo (linha ou parágrafo) — vedado 'me parece que'"
+          - "Não sintetizar critério novo além dos 12 princípios + 8 critérios do framework Fase 1 — se algo faltar, RETORNAR ao Liceu para complementar Fase 1, não improvisar aqui"
+          - "Não pesquisar na web sem autorização de sessão registrada via gate-busca.cjs"
+        gate_humano:
+          - "PÓS-ONDA 1: apresentar matriz de conformidade + sumário executivo ao Ronan; aguardar decisão sobre (a) autorizar Ondas 2-6 em sequência, (b) autorizar apenas próxima onda por vez, ou (c) revisar diagnóstico antes de prosseguir"
+          - "PÓS-ONDA 5 (MCP): antes de qualquer migração real de wrapper proprietário, apresentar mapa de impacto (skills que dependem, agents que consomem, estimativa de rework) e aguardar go/no-go"
+      contexto:
+        - "Fase 1 concluída em 2026-07-04, publicada em origin/main via commits d125d965/9791e79f/15156e07 e anteriores (Ondas 1-6 Liceu)"
+        - "Framework Fase 1 = `Liceu/frameworks/arquitetura-de-agents-kolden/framework.md` (12 princípios canônicos + 5 camadas + 8 critérios safety+quality + 7 métricas por agent + 3 por squad + 12 anti-padrões + roteamento dinâmico + handoff Fase 2 em 8 passos)"
+        - "Procedência rastreável em `Liceu/frameworks/arquitetura-de-agents-kolden/procedencia.md` (cada princípio → linhagem + mente + obra + ano + reafirmações cross-linhagem)"
+        - "8 critérios canônicos derivados dos ganchos §7 de 5 mentes: (1) constituição declarada [Amodei]; (2) ASL definido [Amodei]; (3) interpretabilidade viável [Amodei]; (4) incerteza declarada sobre objetivos [Russell]; (5) corrigibility como propriedade emergente [Russell]; (6) bounded rationality declarada [Russell]; (7) predictions scorecard datado + falsificável [Brooks]; (8) taxonomia x-risk aplicada [Bostrom]"
+        - "12 princípios canônicos derivados das 6 linhagens: (1) Universalidade Turingiana [Turing]; (2) Sociedade de Mentes [Minsky]; (3) Bounded Rationality [Simon]; (4) Software 2.0 [Karpathy]; (5) Assistance Games [Russell]; (6) Constitutional AI [Anthropic/Amodei]; (7) ASL escalonado [Amodei]; (8) Interpretabilidade obrigatória [Amodei]; (9) Embodied Grounding [Brooks]; (10) Orthogonality + safety design [Bostrom]; (11) Predictions Scorecard falsificável [Brooks]; (12) MCP como Camada Universal de Tools [Anthropic 2024]"
+        - "Objeto do redesenho: squad Caos em `C:\\Kolden\\Caos\\` — CLAUDE.md (identidade), nucleo/ARQUITETURA.md (arquitetura interna), constituicao.md (constituição do squad), modelos/*.md (12 modelos herdados por todos os agents Kolden: perfil, system-prompt-base, orquestrador-base, especialista-historico, cartao-de-identidade, ferramentas, checklist-de-qualidade, roteiro-de-teste, guia-infisical, instalacao, convencao-de-cli-e-tooling, prd-de-ia), 5 camadas hierárquicas atuais, Ritual de 9 fases (fábrica de agents)"
+        - "Auditoria da frota (2026-06-28, memoria project_auditoria_frota_agentes.md): 246 agentes, 5 falhas de molde sistêmicas, hierarquia não-cablada — laudo em `.claude/registros/auditoria/` é insumo suplementar para o diagnóstico"
+        - "Vistoria estrutural v2 (2026-06-28, memoria project_vistoria_v2): 14 achados, sub-squad oculto `Caliope/copy-master/` — laudo em `.claude/registros/auditoria/2026-06-28-vistoria-v2/` também é insumo"
+        - "Método de auditoria de frota validado (memoria feedback_auditoria_de_frota_metodo): custo O(squads); paginação por bloco; Glob recursivo `**/agents/*.md`; subagentes erram aritmética; exclusões obrigatórias `_staging` e `.venv`"
+        - "Ledger de absorção em `Caos/registros/absorcao/repositorios-absorvidos.yaml` — insumo para saber quais skills/vendors foram absorvidos e podem estar em desalinho com o novo framework"
+        - "Ferramentas autorizadas: Read/Grep/Glob (leitura Caos), Explore agent para fan-out; Firecrawl/Exa/Tavily SÓ para consultar docs primárias das linhagens (Anthropic MCP spec, RSP, Brooks Scorecard exemplos) — pesquisa web sempre com gate-busca autorizado"
+      nivel_de_risco: "amarelo"
+    dor_completo: true
+    perguntas_abertas: []
+    matriz_de_risco:
+      reversibilidade: "reversivel"
+      impacto: "medio"
+      faixa: "amarelo"
+      autonomia: "executa-e-para-em-gate"
+    ordem_de_maquina: |
+      Executar 6 ondas sequenciais em sub-sessões dedicadas em `C:\Kolden\Caos\`, com gate
+      humano obrigatório entre Onda 1 (diagnóstico read-only) e Onda 2 (primeiro redesign).
+
+      ORDEM ESTRITA:
+
+      Onda 1 — DIAGNÓSTICO (READ-ONLY, sem editar nada em Caos/):
+        * Ler framework.md + procedencia.md do Liceu (fonte de verdade dos 12 princípios + 8
+          critérios).
+        * Ler todos os 6 arquivos-alvo do Caos + os 12 modelos/*.md.
+        * Grep reverso: para cada princípio/critério, achar (a) onde o Caos já implementa,
+          (b) onde diverge, (c) onde é silencioso.
+        * Produzir matriz em `Caos/registros/redesenho-fase2/onda-1-diagnostico/matriz-de-conformidade.md`
+          + `achados.jsonl` (append-only, padrão ledger validado 2026-06-28) + `sumario-executivo.md`.
+        * Ritual de encerramento em `Caos/MEMORY.md`.
+        * PARAR. Aguardar aprovação humana.
+
+      Ondas 2-6 (SÓ APÓS APROVAÇÃO):
+
+      Onda 2 — REDESENHO IDENTIDADE + RITUAL:
+        * Reescrita cirúrgica de `Caos/CLAUDE.md` (ancoragem nos 12 princípios) e
+          `Caos/constituicao.md` (constituição declarada — Princípio 6).
+        * Revisão do Ritual de 9 fases para embutir 8 critérios como gates duros (constituição
+          declarada, ASL, interpretabilidade, incerteza, corrigibility, bounded rationality,
+          predictions scorecard aplicável, x-risk-relevante-para-domínio).
+        * Cada mudança acompanhada de "procedência: <linhagem>/<mente>/<obra>/<ano>".
+        * Diff proposto, NÃO aplicado. Aguarda aprovação por onda.
+
+      Onda 3 — REDESENHO NÚCLEO + MODELOS:
+        * Reescrita cirúrgica de `Caos/nucleo/ARQUITETURA.md` (5 camadas atuais → 5 camadas
+          canônicas do framework Parte II).
+        * Revisão dos 12 arquivos em `Caos/modelos/*.md` para embutir os campos requeridos por
+          princípio (aspiration_criteria no perfil.md; constitution embedding no system-prompt-base.md;
+          ASL declaration no cartao-de-identidade.md; interpretability_expectation no
+          prd-de-ia.md; predictions_scorecard reference no roteiro-de-teste.md; MCP tools
+          declaration no ferramentas.md).
+        * Diff proposto. Aguarda aprovação.
+
+      Onda 4 — MCP CAMADA 1 (mapeamento + planejamento):
+        * Inventário completo dos wrappers proprietários existentes (grep por skills-como-tools:
+          `busca-de-referencias`, `consulta-ao-registro`, `vigia-de-ecossistema`, outras que
+          o diagnóstico identificar).
+        * Mapa de dependências: quais skills/agents consomem cada wrapper.
+        * Plano de migração escalonada para MCP (gradual, com dupla-vida durante transição se
+          impacto for alto).
+        * Diff proposto no `ferramentas.md` do Caos. Aguarda aprovação.
+
+      Onda 5 — SAFETY DASHBOARD + PREDICTIONS SCORECARD:
+        * Especificar schema de dashboard de safety metrics estilo Amodei RSP: ASL por agent,
+          interpretability score (heurística inicial), red-team log, constitutional principles
+          ativos, dashboard localização (arquivo estático + potencial UI futura em Hermes).
+        * Estabelecer Predictions Scorecard Kolden: template `predicoes.yaml` +
+          `revisao-anual.md` + cadência (marco anual 2027-01-01 primeiro checkpoint), com
+          predições iniciais sobre adoção MCP, próxima geração de paradigmas, saturação de
+          LLM base, safety incidents esperados.
+        * Diffs propostos. Aguarda aprovação.
+
+      Onda 6 — COSTURA FINAL + SMOKE TESTS + HANDOFF:
+        * Aplicar diffs aprovados (sequencial, uma seção por vez).
+        * Smoke tests: (a) `@caos crie agent especialista em vendas de SaaS enterprise` →
+          agent gerado passa 8/8 critérios; (b) inspeção do agent gerado por Dike delta.
+        * Atualizar `Caos/MEMORY.md` com padrões aprendidos ao longo das 6 ondas.
+        * Se Ronan aprovar: fechamento Fase 2. Se surgir escopo residual, contrato Fase 3
+          (implementação real de MCP + dashboard interativo) fica lavrado como sugestão.
+
+      REGRA GERAL: entre ondas, working tree limpo, artefato-em-disco, ritual de encerramento
+      + gate humano. Nunca duas ondas na mesma sub-sessão. Fan-out interno ≤3 subagentes.
+    assinatura: { por: "hermes", em: "2026-07-05T00:00:00-03:00" }
+
+  # ── CAMADA 3 — ZEUS (decomposição + roteamento) ─────────────────────────────
+  zeus:
+    diagnostico: |
+      Missão de REDESENHO ARQUITETURAL, tier META (arquitetura oficial dos agents da Kolden é
+      infraestrutura de segunda ordem — muda tudo abaixo). Executivo natural é HEFESTO (CTO —
+      arquitetura de sistemas de agents + engenharia de tooling), não Atena (que assinou a
+      Fase 1 como CAIO de política de IA — a estratégia já foi ratificada; agora é engenharia).
+
+      Hefesto delega a execução operacional ao próprio CAOS (dogfooding — Caos redesenha
+      Caos) com verificação Dike INDEPENDENTE e obrigatória (checklist derivado dos 12
+      princípios + 8 critérios; padrão herdado da Fase 1 onde Dike verificou o Liceu por
+      LICEU-CL-001). Alternativas rejeitadas:
+        (a) Hefesto delegar a Dedalo/multi-agent-arch — inviável: Dedalo ainda é skill-centric,
+            não squad completo; e Caos é o objeto, ele mesmo executa é mais direto.
+        (b) Liceu executar redesign — não é o método do Liceu; Liceu produz conhecimento, não
+            reescreve constituição de squad-alvo. Liceu fica como CONSULTOR DE PROCEDÊNCIA
+            (validador de "essa mudança tem linhagem/mente/obra rastreável?").
+
+      Apoio operacional: Liceu (procedência rastreável de cada mudança); Argos (pesquisa em
+      docs Anthropic RSP/MCP spec se necessário); Dike (verificação independente + gate).
+
+      Nível de risco AMARELO: Onda 1 é verde (read-only); Ondas 2-6 tocam o núcleo de
+      identidade do Caos (CLAUDE.md, constituicao.md, modelos/*) — impacto alto se errado,
+      reversível via git. Autonomia = executa-e-para-em-gate (não é executa-e-relata).
+    decomposicao:
+      - parte: "Ratificação técnica: framework Fase 1 é norma canônica para Caos (12 princípios + 5 camadas + 8 critérios como gate duro)"
+        executivo_destino: "hefesto"
+        motivo: "CTO detém arquitetura de sistemas de agents; a norma vem do Liceu (Fase 1), Hefesto ratifica que ela vale como norma técnica interna"
+      - parte: "Execução das 6 ondas (diagnóstico + redesign de identidade+ritual + redesign núcleo+modelos + MCP Camada 1 + safety dashboard + predictions scorecard + costura final)"
+        executivo_destino: "hefesto"
+        motivo: "Hefesto delega diretamente ao caos:caos-chief como squad operacional (dogfooding); Liceu fica consultor de procedência; Dike verifica independente"
+    paralelo: []
+    consolidacao: |
+      Consolidação por onda:
+      - Cada onda encerra com artefato-em-disco em `Caos/registros/redesenho-fase2/onda-N-<escopo>/`,
+        diff proposto (Ondas 2-5) ou diff aplicado (Onda 6), verificação Dike delta, ritual de
+        encerramento em `Caos/MEMORY.md`, e GATE HUMANO explícito.
+
+      Consolidação final (pós-Onda 6):
+      - Caos operando sob 12 princípios canônicos + 5 camadas do framework + 8 critérios como
+        gate duro no Ritual.
+      - MCP em Camada 1 (aplicado ou com roteiro de migração publicado se transição gradual).
+      - Dashboard de safety metrics acionável (esquema + primeira população).
+      - Primeiro Predictions Scorecard Kolden publicado (jan/2027 como primeiro marco de
+        revisão anual).
+      - Handoff explícito ao Ronan para decidir sobre Fase 3 (implementação real de MCP nos
+        wrappers + dashboard interativo em Hermes, se necessário).
+    arbitragem: null
+    assinatura: { por: "zeus", em: "2026-07-05T00:00:00-03:00" }
+
+  # ── CAMADA 4 — EXECUTIVOS (especificação técnica) ───────────────────────────
+  executivos:
+    - agente: "hefesto"
+      especificacao_tecnica: |
+        POLÍTICA TÉCNICA DE ARQUITETURA DE AGENTS (ratificada nesta missão):
+          - O framework `Liceu/frameworks/arquitetura-de-agents-kolden/framework.md` (v1.0-fase1)
+            é NORMA CANÔNICA para todo squad Kolden que produza ou consuma agents. Caos, sendo a
+            fábrica, é o PRIMEIRO a ser realinhado; demais squads virão em contratos subsequentes
+            se necessário.
+          - Toda mudança arquitetural em Caos precisa ter PROCEDÊNCIA CITADA
+            (`linhagem/mente/obra/ano` de `procedencia.md`). Sem procedência, mudança é rejeitada
+            (VETO herdado do Liceu VETO_FRAMEWORK_SEM_PROCEDENCIA).
+          - MCP (Princípio 12) é DESTINO ARQUITETURAL para todos os wrappers de tool no Caos.
+            Migração pode ser gradual (dupla-vida durante transição) mas o alvo é claro.
+          - Safety como capability (Amodei — Onda 4 Fase 1): dashboard de métricas de safety
+            não é opcional; é infra de primeira classe do Caos.
+          - Predictions Scorecard (Brooks — Onda 5 Fase 1): a Kolden se compromete publicamente
+            com predições datadas + falsificáveis + revisão anual sobre arquiteturas de agents.
+            Método científico, não marketing.
+
+        HANDOFF AO CAOS:
+          - Contrato: aplicar Ritual adaptado de 6 ondas descrito em `hermes.ordem_de_maquina`.
+          - Ordem estrita: 1 → 2 → 3 → 4 → 5 → 6, sequencial (rate-limit; validado 2026-06-27).
+          - Gate humano OBRIGATÓRIO entre Onda 1 e Onda 2 (não negociável — é a principal
+            trava de segurança).
+          - Fan-out interno OK dentro de cada onda (≤3 subagentes por vez): na Onda 1,
+            paralelizar por tipo de arquivo-alvo (CLAUDE.md + constituicao.md em um sub,
+            nucleo/ARQUITETURA.md em outro, modelos/*.md em outro); nas Ondas 2-5, um sub por
+            arquivo-alvo mais afetado.
+          - Consultor de procedência = Liceu (bibliotecario ou sintetizador): quando o
+            caos-chief propuser mudança e a linhagem/mente/obra não estiver clara, ele CONSULTA
+            o Liceu antes de gravar diff. Liceu responde por referência ao dossiê existente.
+          - Verificação Dike = INDEPENDENTE, obrigatória por onda; checklist derivado dos 12+8
+            (a criar como CAOS-CL-002 na Onda 1 como sub-entregável).
+          - Consulta a docs externas: SÓ para especificação MCP (modelcontextprotocol.io),
+            Anthropic RSP e exemplos Brooks Scorecard. Cada consulta web autorizada via
+            gate-busca (Firecrawl padrão).
+
+        SUB-ENTREGÁVEIS OBRIGATÓRIOS:
+          - CAOS-CL-002: checklist derivado dos 12 princípios + 8 critérios, criado na Onda 1
+            como parte do diagnóstico, usado por Dike nas Ondas 2-6.
+          - `Caos/registros/redesenho-fase2/onda-N-<escopo>/matriz-*.md`, `achados.jsonl`
+            (append-only), `diff-proposto.md`, `verificacao-dike.md`.
+          - `Caos/MEMORY.md` atualizado por onda com padrões aprendidos.
+          - Ao fim: `Caos/registros/redesenho-fase2/RELATORIO-DA-FASE-2.md` com síntese
+            executiva de todos os deltas.
+      handoff_operacional:
+        squad: "caos"
+        artefato: |
+          Fase 2 completa:
+          - `Caos/registros/redesenho-fase2/` com 6 pastas onda-N-<escopo>/ + RELATORIO-DA-FASE-2.md
+          - CLAUDE.md do Caos ancorado nos 12 princípios (procedência citada por parágrafo)
+          - constituicao.md redesenhada como constituição declarada estilo Amodei
+          - nucleo/ARQUITETURA.md refletindo as 5 camadas canônicas do framework Parte II
+          - modelos/*.md com campos obrigatórios adicionados (aspiration_criteria, ASL,
+            interpretability_expectation, MCP tools declaration, predictions_scorecard ref)
+          - Ritual de 9 fases atualizado com 8 critérios como gates duros
+          - Roteiro/plano de migração MCP com mapa de dependências
+          - Schema + primeira população do dashboard de safety metrics
+          - Primeiro Predictions Scorecard Kolden publicado (arquivo `predicoes-2027.yaml` +
+            `revisao-anual.md`)
+          - CAOS-CL-002 (checklist Dike) publicado como artefato reutilizável
+          - `Caos/MEMORY.md` atualizado com padrões aprendidos
+      devolucao_lateral: null
+      resultado: "pendente — execução em sessões dedicadas em C:\\Kolden\\Caos\\"
+      assinatura: { por: "hefesto", em: "2026-07-05T00:00:00-03:00" }
+
+  # ── CAMADA 5 — OPERACIONAL (execução + proatividade) ────────────────────────
+  operacional:
+    - agente: "caos:caos-chief"
+      squad: "caos"
+      resultado_onda_1:
+        em: "PENDENTE"
+        status: "aguardando-disparo"
+        entregaveis_esperados:
+          - "Caos/registros/redesenho-fase2/onda-1-diagnostico/matriz-de-conformidade.md"
+          - "Caos/registros/redesenho-fase2/onda-1-diagnostico/achados.jsonl (append-only, padrão validado 2026-06-28)"
+          - "Caos/registros/redesenho-fase2/onda-1-diagnostico/sumario-executivo.md"
+          - "Caos/registros/redesenho-fase2/onda-1-diagnostico/CAOS-CL-002-draft.md (checklist Dike derivado 12+8)"
+          - "Caos/MEMORY.md com padrões da Onda 1"
+      resultado_onda_2:
+        em: "PENDENTE"
+        status: "aguardando-aprovacao-onda-anterior"
+      resultado_onda_3:
+        em: "PENDENTE"
+        status: "aguardando-aprovacao-onda-anterior"
+      resultado_onda_4:
+        em: "PENDENTE"
+        status: "aguardando-aprovacao-onda-anterior"
+      resultado_onda_5:
+        em: "PENDENTE"
+        status: "aguardando-aprovacao-onda-anterior"
+      resultado_onda_6:
+        em: "PENDENTE"
+        status: "aguardando-aprovacao-onda-anterior"
+      resultado: |
+        PENDENTE — Onda 1 aguarda disparo em sessão dedicada em C:\Kolden\Caos\.
+
+        Cada sessão de onda seguirá:
+        1. Ler este Contrato (m-20260705-redesenho-arquitetural-fase2.yaml) via `hermes-chief` no
+           entrypoint OU diretamente pelo caos-chief se sessão for aberta em C:\Kolden\Caos\.
+        2. Ler o CLAUDE.md do Caos + framework.md + procedencia.md do Liceu para carregar
+           norma canônica.
+        3. Aplicar `consulta-ao-registro` (Caos) para checar se alguma mudança impacta
+           registro de agentes ativos.
+        4. Fan-out interno ≤3 subagentes conforme escopo da onda.
+        5. Consultar Liceu (bibliotecario ou sintetizador) quando linhagem/mente/obra não
+           for óbvia — nunca inventar procedência.
+        6. Encerrar com artefato-em-disco + ritual de encerramento + gate humano.
+        7. NUNCA disparar próxima onda automaticamente — aguardar liberação explícita do
+           Ronan.
+      riscos_levantados:
+        - "Onda 1 pode revelar que muitos dos 12+8 já estão implementados de fato mesmo sem terminologia formal — nesse caso, redesign vira 'nomear o que já existe' + 'preencher gaps residuais', não overhaul. Preparar-se para reduzir escopo se o diagnóstico for positivo."
+        - "Migração MCP (Onda 4) pode ter impacto colateral em skills fora do Caos que consomem wrappers proprietários por convenção — mapa de dependências obrigatório antes de tocar; possivelmente Fase 3 real (implementação) precisa de contrato próprio"
+        - "Dashboard de safety metrics (Onda 5) exige população real de dados — na v0, é schema + heurística inicial; população automática exige integração com Hermes runtime, provavelmente Fase 3"
+        - "Predictions Scorecard (Onda 5) pode expor a Kolden publicamente a predições erradas — método científico exige isso, mas requer alinhamento executivo Ronan; primeiro Scorecard é interno (privado) até validação"
+        - "Fadiga entre ondas: 6 ondas sequenciais + gate humano por onda = pelo menos 6 sub-sessões separadas + revisões intermediárias; risco de perda de contexto entre ondas se plan-file da Fase 2 não for mantido atualizado"
+        - "Rate limit de fan-out (≤3 subagentes) pode alongar Onda 1 (arquivos-alvo são muitos: 3 core + 12 modelos + 5 camadas + Ritual + 3 arquivos Liceu = 24 leituras), mas é regra dura da memória (2026-06-27)"
+      propostas:
+        - "Ao fim da Onda 1, publicar sumário executivo em formato apresentável (não YAML) para o Ronan revisar em ≤10 minutos"
+        - "Considerar contrato Fase 3 (`m-2026MMDD-implementacao-mcp-e-dashboard`) para migração real de wrappers + dashboard interativo se Fase 2 concluir apenas o desenho"
+        - "Se diagnóstico da Onda 1 revelar que <30% dos 12+8 diverge, propor reduzir Fase 2 a Ondas 1+6 (diagnóstico + costura), pulando redesign profundo — evita over-engineering"
+        - "Atualizar `AGENTS.md` da raiz da Kolden com nota apontando para o framework como norma canônica ao fim da Fase 2"
+      assinatura: { por: "caos:caos-chief", em: "PENDENTE" }
+
+  # ── SUBIDA — DIKE (verificação) ─────────────────────────────────────────────
+  dike:
+    confere_hash: true
+    reconciliacao: "PENDENTE - preencher no fim da Fase 2"
+    degrau_da_quebra: null
+    justificativa: |
+      A ser preenchida ao fim da Fase 2 (após Onda 6 + costura final).
+
+      Critérios que Dike vai verificar (CAOS-CL-002 — será criado na Onda 1 como sub-entregável):
+      1. Diagnóstico da Onda 1: matriz cobre 20 células (12 princípios + 8 critérios) × N
+         arquivos-alvo com evidência textual citada por veredito.
+      2. Cada mudança nas Ondas 2-5: procedência rastreável (linhagem + mente + obra + ano)
+         batendo com `procedencia.md` do Liceu (grep reverso).
+      3. Nenhum arquivo tocado fora do escopo (Caos apenas; Liceu, Hermes, Olimpo,
+         projetos/, .aiox-core/ intactos).
+      4. MCP Onda 4: mapa de dependências completo; nenhum wrapper migrado sem plano de
+         dupla-vida se impacto era alto.
+      5. Safety dashboard Onda 5: schema conforme Amodei RSP-style (ASL + interpretability +
+         red-team log + constitutional principles) — não invenção Kolden divergente.
+      6. Predictions Scorecard Onda 5: predições com data + critério de falsificação + revisão
+         anual programada — não roadmap disfarçado.
+      7. Ritual de 9 fases pós-Onda 2: 8 critérios como gates duros ou justificativa formal
+         de não-aplicabilidade por critério.
+      8. Working tree do Caos apenas modificado pelos diffs aprovados por onda; nenhum commit
+         até ordem explícita.
+      9. Smoke tests Onda 6: agent gerado pelo Caos redesenhado passa 8/8 critérios; agent
+         antigo (baseline pré-Fase 2) usado para comparação.
+    veredito: "PENDENTE"
+    assinatura: { por: "dike", em: "PENDENTE" }
+
+  # ── TRANSVERSAL ─────────────────────────────────────────────────────────────
+  orcamento:
+    teto_rodadas: null  # sem teto; ondas sequenciais em sessões próprias
+    teto_tempo: "6 sessões dedicadas (uma por onda) + revisões intermediárias entre ondas"
+    rodadas_gastas: 0
+
+  status_final: "lavrado-aguardando-disparo-onda-1"
+
+  log_de_decisao:
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "hermes"
+      decisao: "Escopo Fase 2 = 6 ondas (diagnóstico + 4 redesign + costura), NÃO uma sessão"
+      porque: "Ronan explicitou 'roteirizar em ondas sequenciais (não uma sessão)'; também casa com Método de auditoria de frota validado 2026-06-28 (O(squads) com paginação); onda única quebraria rate-limit e perderia gate humano"
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "hermes"
+      decisao: "GATE HUMANO OBRIGATÓRIO entre Onda 1 e Onda 2 — não negociável"
+      porque: "Ronan explicitou 'começar por Onda 1 = DIAGNÓSTICO e parar em aprovação humana antes de qualquer redesign'; é a principal trava de segurança do arco; Ondas 2-6 marcadas 'aguardando-aprovacao-onda-anterior' até liberação"
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "hermes"
+      decisao: "Nível de risco = AMARELO (não verde como Fase 1)"
+      porque: "Onda 1 é read-only (verde), mas Ondas 2-6 tocam núcleo de identidade Caos (CLAUDE.md, constituicao.md, modelos/* = ancestral herdado por 246+ agents); impacto alto se errado, reversível via git; autonomia = executa-e-para-em-gate, não executa-e-relata"
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "zeus"
+      decisao: "Executivo destino = HEFESTO (CTO), não Atena (CAIO como Fase 1)"
+      porque: "Fase 1 foi política de IA (Atena/CAIO ratifica estratégia); Fase 2 é engenharia de arquitetura de sistemas (Hefesto/CTO). A norma canônica veio de Atena+Liceu; agora quem redesenha a fábrica é o CTO"
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "zeus"
+      decisao: "Squad operacional = CAOS (dogfooding), não Dedalo nem Liceu"
+      porque: "Caos é o próprio objeto do redesenho — Caos redesenha Caos é mais direto; Dedalo ainda é skill-centric, não squad completo; Liceu não reescreve constituição de squad-alvo (fica como consultor de procedência). Verificação Dike INDEPENDENTE mitiga risco de auto-avaliação enviesada"
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "hefesto"
+      decisao: "Criar CAOS-CL-002 como sub-entregável da Onda 1 (checklist derivado dos 12 princípios + 8 critérios)"
+      porque: "Fase 1 provou que checklists reutilizáveis (LICEU-CL-001) são o instrumento canônico de verificação Dike; Fase 2 precisa do seu próprio, calibrado para arquitetura de agents (não dossiê erudito). Ranha-se na Onda 1 e reutiliza-se nas Ondas 2-6"
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "hefesto"
+      decisao: "MCP como Camada 1 = ALVO ARQUITETURAL, migração pode ser GRADUAL (dupla-vida)"
+      porque: "Princípio 12 do framework é claro (MCP como interface universal), mas Kolden tem wrappers proprietários maduros (busca-de-referencias, consulta-ao-registro, vigia-de-ecossistema); migração forçada de uma vez quebra skills que dependem deles. Mapa de dependências na Onda 4 antes de tocar; plano de dupla-vida se impacto for alto"
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "hefesto"
+      decisao: "Predictions Scorecard PRIMEIRO INTERNO, público só após validação Ronan"
+      porque: "Brooks-style exige exposição pública para virar método científico legítimo (não marketing), mas a Kolden ainda não fez isso — primeiro Scorecard é interno (arquivo em `Caos/registros/predictions-scorecard/`); Ronan decide na Onda 6 se publica externamente ou mantém interno até maturidade"
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "hermes"
+      decisao: "Contrato lavrado com status_final = lavrado-aguardando-disparo-onda-1 (não em execução)"
+      porque: "Ronan pediu 'lavrar' explicitamente — este arquivo é o Contrato lavrado, não a execução. Execução começa quando Ronan disparar sessão dedicada em C:\\Kolden\\Caos\\ referenciando este Contrato"
