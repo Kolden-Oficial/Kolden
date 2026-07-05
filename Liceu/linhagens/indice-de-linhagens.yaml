@@ -2,8 +2,8 @@
 # Mantido pelo `genealogista` (tier 2). Modela o grafo bidirecional de quem
 # herdou de quem e quem influenciou quem. Cada linhagem nomeada tem um .md em linhagens/.
 # Toda aresta carrega NATUREZA (direta | inferida | zeitgeist) e FONTE — sem fonte, fica "inferida".
-versao: 2
-atualizado-em: 2026-06-29
+versao: 8
+atualizado-em: 2026-07-04
 
 # NODES — uma entrada por mente que participa de alguma linhagem.
 #   id               — kebab-case (espelha o id em indice.yaml)
@@ -44,6 +44,305 @@ nodes:
   - id: roland-barthes
     nome: "Roland Barthes"
     caminho-canonico: null
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Nodes da linhagem `ia-simbolica-e-cognicao` (Onda 1 — 2026-07-04)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - id: alan-turing
+    nome: "Alan Turing"
+    caminho-canonico: mentes/alan-turing/dossie.md
+  - id: claude-shannon
+    nome: "Claude Shannon"
+    caminho-canonico: mentes/claude-shannon/dossie.md
+  - id: john-mccarthy
+    nome: "John McCarthy"
+    caminho-canonico: mentes/john-mccarthy/dossie.md
+  - id: marvin-minsky
+    nome: "Marvin Minsky"
+    caminho-canonico: mentes/marvin-minsky/dossie.md
+  - id: herbert-simon
+    nome: "Herbert Simon"
+    caminho-canonico: mentes/herbert-simon/dossie.md
+  - id: allen-newell
+    nome: "Allen Newell"
+    caminho-canonico: mentes/allen-newell/dossie.md
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Nodes da linhagem `conexionismo-deep-learning` (Onda 2 — 2026-07-04)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - id: frank-rosenblatt
+    nome: "Frank Rosenblatt"
+    caminho-canonico: mentes/frank-rosenblatt/dossie.md
+  - id: geoffrey-hinton
+    nome: "Geoffrey Hinton"
+    caminho-canonico: mentes/geoffrey-hinton/dossie.md
+  - id: yann-lecun
+    nome: "Yann LeCun"
+    caminho-canonico: mentes/yann-lecun/dossie.md
+  - id: yoshua-bengio
+    nome: "Yoshua Bengio"
+    caminho-canonico: mentes/yoshua-bengio/dossie.md
+  - id: judea-pearl
+    nome: "Judea Pearl"
+    caminho-canonico: mentes/judea-pearl/dossie.md
+  # Precursores/descendentes fora da onda mas citados nas arestas:
+  - id: warren-mcculloch
+    nome: "Warren McCulloch"
+    caminho-canonico: null
+  - id: walter-pitts
+    nome: "Walter Pitts"
+    caminho-canonico: null
+  - id: donald-hebb
+    nome: "Donald Hebb"
+    caminho-canonico: null
+  - id: kunihiko-fukushima
+    nome: "Kunihiko Fukushima"
+    caminho-canonico: null
+  - id: paul-werbos
+    nome: "Paul Werbos"
+    caminho-canonico: null
+  - id: david-rumelhart
+    nome: "David Rumelhart"
+    caminho-canonico: null
+  - id: terrence-sejnowski
+    nome: "Terrence Sejnowski"
+    caminho-canonico: null
+  - id: ian-goodfellow
+    nome: "Ian Goodfellow"
+    caminho-canonico: null
+  - id: dzmitry-bahdanau
+    nome: "Dzmitry Bahdanau"
+    caminho-canonico: null
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Nodes da linhagem `arquiteturas-de-agents-modernos` (Onda 3 — 2026-07-04)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - id: ashish-vaswani
+    nome: "Ashish Vaswani"
+    caminho-canonico: mentes/ashish-vaswani/dossie.md
+  - id: ilya-sutskever
+    nome: "Ilya Sutskever"
+    caminho-canonico: mentes/ilya-sutskever/dossie.md
+  - id: andrej-karpathy
+    nome: "Andrej Karpathy"
+    caminho-canonico: mentes/andrej-karpathy/dossie.md
+  - id: fei-fei-li
+    nome: "Fei-Fei Li"
+    caminho-canonico: mentes/fei-fei-li/dossie.md
+  - id: andrew-ng
+    nome: "Andrew Ng"
+    caminho-canonico: mentes/andrew-ng/dossie.md
+  - id: demis-hassabis
+    nome: "Demis Hassabis"
+    caminho-canonico: mentes/demis-hassabis/dossie.md
+  # Precursores/descendentes fora da onda citados nas arestas:
+  - id: oriol-vinyals
+    nome: "Oriol Vinyals"
+    caminho-canonico: null
+  - id: quoc-le
+    nome: "Quoc V. Le"
+    caminho-canonico: null
+  - id: alec-radford
+    nome: "Alec Radford"
+    caminho-canonico: null
+  - id: jeff-dean
+    nome: "Jeff Dean"
+    caminho-canonico: null
+  - id: michael-jordan
+    nome: "Michael I. Jordan"
+    caminho-canonico: null
+  - id: daphne-koller
+    nome: "Daphne Koller"
+    caminho-canonico: null
+  - id: pietro-perona
+    nome: "Pietro Perona"
+    caminho-canonico: null
+  - id: eleanor-maguire
+    nome: "Eleanor Maguire"
+    caminho-canonico: null
+  - id: david-silver
+    nome: "David Silver"
+    caminho-canonico: null
+  - id: john-jumper
+    nome: "John Jumper"
+    caminho-canonico: null
+  - id: shane-legg
+    nome: "Shane Legg"
+    caminho-canonico: null
+  - id: richard-sutton
+    nome: "Richard Sutton"
+    caminho-canonico: null
+  - id: sam-altman
+    nome: "Sam Altman"
+    caminho-canonico: null
+  - id: mustafa-suleyman
+    nome: "Mustafa Suleyman"
+    caminho-canonico: null
+  - id: aidan-gomez
+    nome: "Aidan Gomez"
+    caminho-canonico: null
+  - id: jakob-uszkoreit
+    nome: "Jakob Uszkoreit"
+    caminho-canonico: null
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Nodes da linhagem `labs-frontier-e-comercializacao` (Onda 4 — 2026-07-04)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - id: sam-altman
+    nome: "Sam Altman"
+    caminho-canonico: mentes/sam-altman/dossie.md
+  - id: dario-amodei
+    nome: "Dario Amodei"
+    caminho-canonico: mentes/dario-amodei/dossie.md
+  - id: mustafa-suleyman
+    nome: "Mustafa Suleyman"
+    caminho-canonico: mentes/mustafa-suleyman/dossie.md
+  - id: aidan-gomez
+    nome: "Aidan Gomez"
+    caminho-canonico: mentes/aidan-gomez/dossie.md
+  # Precursores/descendentes fora da onda citados nas arestas:
+  - id: greg-brockman
+    nome: "Greg Brockman"
+    caminho-canonico: null
+  - id: elon-musk
+    nome: "Elon Musk"
+    caminho-canonico: null
+  - id: daniela-amodei
+    nome: "Daniela Amodei"
+    caminho-canonico: null
+  - id: chris-olah
+    nome: "Chris Olah"
+    caminho-canonico: null
+  - id: paul-christiano
+    nome: "Paul Christiano"
+    caminho-canonico: null
+  - id: tom-brown
+    nome: "Tom Brown"
+    caminho-canonico: null
+  - id: jared-kaplan
+    nome: "Jared Kaplan"
+    caminho-canonico: null
+  - id: jan-leike
+    nome: "Jan Leike"
+    caminho-canonico: null
+  - id: reid-hoffman
+    nome: "Reid Hoffman"
+    caminho-canonico: null
+  - id: karen-simonyan
+    nome: "Karén Simonyan"
+    caminho-canonico: null
+  - id: satya-nadella
+    nome: "Satya Nadella"
+    caminho-canonico: null
+  - id: paul-graham
+    nome: "Paul Graham"
+    caminho-canonico: null
+  - id: ivan-zhang
+    nome: "Ivan Zhang"
+    caminho-canonico: null
+  - id: nick-frosst
+    nome: "Nick Frosst"
+    caminho-canonico: null
+  - id: yarin-gal
+    nome: "Yarin Gal"
+    caminho-canonico: null
+  - id: william-bialek
+    nome: "William Bialek"
+    caminho-canonico: null
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Nodes da linhagem `alinhamento-e-safety` (Onda 5 — 2026-07-04)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - id: stuart-russell
+    nome: "Stuart Russell"
+    caminho-canonico: mentes/stuart-russell/dossie.md
+  - id: peter-norvig
+    nome: "Peter Norvig"
+    caminho-canonico: mentes/peter-norvig/dossie.md
+  - id: nick-bostrom
+    nome: "Nick Bostrom"
+    caminho-canonico: mentes/nick-bostrom/dossie.md
+  - id: rodney-brooks
+    nome: "Rodney Brooks"
+    caminho-canonico: mentes/rodney-brooks/dossie.md
+  # Precursores/descendentes fora da onda citados:
+  - id: norbert-wiener
+    nome: "Norbert Wiener"
+    caminho-canonico: null
+  - id: i-j-good
+    nome: "I. J. Good"
+    caminho-canonico: null
+  - id: michael-genesereth
+    nome: "Michael Genesereth"
+    caminho-canonico: null
+  - id: robert-wilensky
+    nome: "Robert Wilensky"
+    caminho-canonico: null
+  - id: tom-binford
+    nome: "Tom Binford"
+    caminho-canonico: null
+  - id: hans-moravec
+    nome: "Hans Moravec"
+    caminho-canonico: null
+  - id: derek-parfit
+    nome: "Derek Parfit"
+    caminho-canonico: null
+  - id: hubert-dreyfus
+    nome: "Hubert Dreyfus"
+    caminho-canonico: null
+  - id: eliezer-yudkowsky
+    nome: "Eliezer Yudkowsky"
+    caminho-canonico: null
+  - id: toby-ord
+    nome: "Toby Ord"
+    caminho-canonico: null
+  - id: william-macaskill
+    nome: "William MacAskill"
+    caminho-canonico: null
+  - id: anca-dragan
+    nome: "Anca Dragan"
+    caminho-canonico: null
+  - id: dylan-hadfield-menell
+    nome: "Dylan Hadfield-Menell"
+    caminho-canonico: null
+  - id: sebastian-thrun
+    nome: "Sebastian Thrun"
+    caminho-canonico: null
+  - id: gary-marcus
+    nome: "Gary Marcus"
+    caminho-canonico: null
+  - id: colin-angle
+    nome: "Colin Angle"
+    caminho-canonico: null
+  - id: helen-greiner
+    nome: "Helen Greiner"
+    caminho-canonico: null
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Nodes da linhagem `arquiteturas-de-agents-por-paradigma` (Onda 6 — 2026-07-04)
+  # Diferente das anteriores: nodes são PARADIGMAS (mentes coletivas).
+  # ─────────────────────────────────────────────────────────────────────────────
+  - id: paradigma-chain-of-thought
+    nome: "Chain-of-Thought Prompting"
+    caminho-canonico: mentes/paradigma-chain-of-thought/dossie.md
+  - id: paradigma-react
+    nome: "ReAct"
+    caminho-canonico: mentes/paradigma-react/dossie.md
+  - id: paradigma-tree-of-thoughts
+    nome: "Tree of Thoughts"
+    caminho-canonico: mentes/paradigma-tree-of-thoughts/dossie.md
+  - id: paradigma-autogpt
+    nome: "AutoGPT"
+    caminho-canonico: mentes/paradigma-autogpt/dossie.md
+  - id: paradigma-langchain
+    nome: "LangChain"
+    caminho-canonico: mentes/paradigma-langchain/dossie.md
+  - id: paradigma-langgraph
+    nome: "LangGraph"
+    caminho-canonico: mentes/paradigma-langgraph/dossie.md
+  - id: paradigma-crewai
+    nome: "CrewAI"
+    caminho-canonico: mentes/paradigma-crewai/dossie.md
+  - id: paradigma-autogen
+    nome: "AutoGen"
+    caminho-canonico: mentes/paradigma-autogen/dossie.md
+  - id: paradigma-mcp
+    nome: "Model Context Protocol (MCP)"
+    caminho-canonico: mentes/paradigma-mcp/dossie.md
 
 # EDGES — uma entrada por relação de influência (aresta dirigida de->para).
 #   de        — id da mente de origem
@@ -89,6 +388,777 @@ edges:
     tipo: influenciou
     natureza: direta
     fonte: "Jung foi discípulo de Freud antes da ruptura (inconsciente coletivo/arquétipos)"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Arestas da linhagem `ia-simbolica-e-cognicao` (Onda 1 — 2026-07-04)
+  # Todas as arestas têm prova de contato documentada.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - de: alan-turing
+    para: john-mccarthy
+    tipo: influenciou
+    natureza: direta
+    fonte: "McCarthy cita Turing (1950) como convocação do campo; proposta de Dartmouth (1955) trata máquina universal como pressuposto"
+  - de: alan-turing
+    para: marvin-minsky
+    tipo: influenciou
+    natureza: direta
+    fonte: "Minsky cita Turing (1950) explicitamente em 'Steps Toward Artificial Intelligence' (1961)"
+  - de: alan-turing
+    para: claude-shannon
+    tipo: influenciou
+    natureza: direta
+    fonte: "Turing e Shannon coincidiram em Bell Labs em 1943 (missão SIGSALY); Shannon relata em entrevista a Anthony Liversidge (Omni, 1987)"
+  - de: alan-turing
+    para: allen-newell
+    tipo: influenciou
+    natureza: direta
+    fonte: "Newell & Simon (1976) 'Computer Science as Empirical Inquiry' atribuem a Physical Symbol System Hypothesis a Turing como precursor"
+  - de: alan-turing
+    para: herbert-simon
+    tipo: influenciou
+    natureza: direta
+    fonte: "Newell & Simon (1976) — Turing Award Lecture — atribuem PSSH a Turing como precursor"
+  - de: claude-shannon
+    para: john-mccarthy
+    tipo: influenciou
+    natureza: direta
+    fonte: "McCarthy foi estagiário de Shannon em Bell Labs (1952); co-editaram *Automata Studies* (Princeton University Press, 1956); co-assinaram proposta de Dartmouth (1955)"
+  - de: claude-shannon
+    para: marvin-minsky
+    tipo: influenciou
+    natureza: direta
+    fonte: "Shannon foi orientador do PhD de Minsky em Princeton (defendido 1954); ambos co-autores da proposta de Dartmouth (1955)"
+  - de: claude-shannon
+    para: allen-newell
+    tipo: influenciou
+    natureza: direta
+    fonte: "Newell reconhece em 'The Chess Machine' (1955) que o paper de xadrez de Shannon (1950) definiu o problema"
+  - de: john-mccarthy
+    para: marvin-minsky
+    tipo: influenciou
+    natureza: direta
+    fonte: "Co-fundadores do MIT AI Lab em 1959; co-autores da proposta de Dartmouth (1955); intercâmbio contínuo até McCarthy ir para Stanford em 1962"
+  - de: marvin-minsky
+    para: john-mccarthy
+    tipo: influenciou
+    natureza: direta
+    fonte: "Simétrica à anterior — co-fundadores do MIT AI Lab (1959)"
+  - de: herbert-simon
+    para: allen-newell
+    tipo: influenciou
+    natureza: direta
+    fonte: "Simon foi orientador do PhD de Newell em Carnegie Tech (defendido 1957); parceria científica de 42 anos com ~30 coautorias principais (1954-1996)"
+  - de: allen-newell
+    para: herbert-simon
+    tipo: influenciou
+    natureza: direta
+    fonte: "Simétrica à anterior — parceria Newell-Simon"
+  - de: alan-turing
+    para: geoffrey-hinton
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — o paper de 1948 sobre 'unorganized machines' antecipa redes neurais; Hinton reconhece a linha em várias entrevistas mas não como fonte direta"
+  - de: marvin-minsky
+    para: geoffrey-hinton
+    tipo: influenciou
+    natureza: direta
+    fonte: "Hinton (Turing Award Lecture, 2018) reconhece publicamente que *Perceptrons* (Minsky & Papert, 1969) foi motivador de sua pesquisa em backpropagation e deep learning"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Arestas da linhagem `conexionismo-deep-learning` (Onda 2 — 2026-07-04)
+  # Todas com prova de contato documentada.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - de: warren-mcculloch
+    para: frank-rosenblatt
+    tipo: influenciou
+    natureza: direta
+    fonte: "McCulloch-Pitts 1943 é citado explicitamente por Rosenblatt no §1 de 'The Perceptron' (Psychological Review, 1958)"
+  - de: donald-hebb
+    para: frank-rosenblatt
+    tipo: influenciou
+    natureza: direta
+    fonte: "*The Organization of Behavior* (Hebb, 1949) — regra hebbiana como inspiração do mecanismo de reforço perceptrônico; Rosenblatt cita em Principles of Neurodynamics (1962)"
+  - de: frank-rosenblatt
+    para: geoffrey-hinton
+    tipo: influenciou
+    natureza: direta
+    fonte: "Hinton reconhece Rosenblatt como pai da tradição em Ford, 'Architects of Intelligence' (Packt, 2018) e Turing Lecture 2018; backprop de 1986 resolve a lacuna de Principles of Neurodynamics 1962"
+  - de: frank-rosenblatt
+    para: yann-lecun
+    tipo: influenciou
+    natureza: direta
+    fonte: "LeCun cita Rosenblatt repetidamente em palestras (Turing Lecture 2018; keynote NeurIPS 2016)"
+  - de: frank-rosenblatt
+    para: kunihiko-fukushima
+    tipo: influenciou
+    natureza: direta
+    fonte: "Neocognitron (Fukushima, Biological Cybernetics 36, 1980) cita Rosenblatt como antecessor do perceptron multicamada"
+  - de: kunihiko-fukushima
+    para: yann-lecun
+    tipo: influenciou
+    natureza: direta
+    fonte: "LeCun credita Neocognitron (Fukushima 1980) como antecessor arquitetural direto das CNNs em toda palestra sobre história de deep learning"
+  - de: marvin-minsky
+    para: frank-rosenblatt
+    tipo: influenciou
+    natureza: direta
+    fonte: "adversarial: colegas de classe no Bronx High School of Science (~1945); *Perceptrons* (Minsky & Papert 1969) é resposta técnica direta ao programa de Rosenblatt; Olazaran 1996 (Social Studies of Science 26)"
+  - de: geoffrey-hinton
+    para: yann-lecun
+    tipo: influenciou
+    natureza: direta
+    fonte: "LeCun fez pós-doutorado com Hinton em Toronto (1987-1988) antes de ir para Bell Labs"
+  - de: geoffrey-hinton
+    para: yoshua-bengio
+    tipo: influenciou
+    natureza: direta
+    fonte: "Bengio fez pós-doutorado com Hinton em Toronto (1991-1992)"
+  - de: yann-lecun
+    para: yoshua-bengio
+    tipo: influenciou
+    natureza: direta
+    fonte: "Bengio fez pós-doutorado no Bell Labs sob supervisão de LeCun (1992-1993); coautores de LeNet-5 (Proc. IEEE 1998)"
+  - de: geoffrey-hinton
+    para: yann-lecun
+    tipo: influenciou
+    natureza: direta
+    fonte: "coautores do artigo 'Deep learning' (Nature 521, 2015) com Bengio; parceria contínua desde os anos 80"
+  - de: paul-werbos
+    para: geoffrey-hinton
+    tipo: influenciou
+    natureza: direta
+    fonte: "Werbos (tese Harvard 1974) tem prioridade histórica sobre backprop; Hinton reconhece em Turing Award Lecture 2018 como precursor"
+  - de: david-rumelhart
+    para: geoffrey-hinton
+    tipo: influenciou
+    natureza: direta
+    fonte: "coautoria do paper de backprop em Nature 323 (1986); colaboração no PDP Research Group em San Diego (1982-1986)"
+  - de: terrence-sejnowski
+    para: geoffrey-hinton
+    tipo: influenciou
+    natureza: direta
+    fonte: "coautoria do paper de Boltzmann Machine em Cognitive Science 9 (Ackley-Hinton-Sejnowski, 1985); parceria em CMU"
+  - de: yoshua-bengio
+    para: ian-goodfellow
+    tipo: influenciou
+    natureza: direta
+    fonte: "Goodfellow foi aluno de PhD de Bengio em Montreal (2011-2014); coautor de GANs (NeurIPS 2014)"
+  - de: yoshua-bengio
+    para: dzmitry-bahdanau
+    tipo: influenciou
+    natureza: direta
+    fonte: "Bahdanau foi aluno de PhD de Bengio em Montreal; primeiro autor do paper de attention (ICLR 2015)"
+  - de: judea-pearl
+    para: yoshua-bengio
+    tipo: influenciou
+    natureza: direta
+    fonte: "Bengio (pós-2018) incorpora críticas causais de Pearl em system 2 deep learning; palestra NeurIPS 2019 e position papers 2020+ citam Pearl explicitamente"
+  - de: herbert-simon
+    para: judea-pearl
+    tipo: influenciou
+    natureza: direta
+    fonte: "Simon (1953, 'Causal Ordering and Identifiability') é reconhecido por Pearl em *Causality* (Cambridge, 2000) como precursor do uso de DAG para causalidade"
+  - de: judea-pearl
+    para: geoffrey-hinton
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — não há coautoria nem contato documentado sistemático; Hinton comenta ocasionalmente sobre limites causais mas sem citar Pearl explicitamente em papers; Pearl critica publicamente deep learning"
+  - de: judea-pearl
+    para: yann-lecun
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — LeCun comenta position papers de Pearl em X/Twitter mas sem coautoria; JEPA e world models de LeCun ecoam causalidade sem citação direta a Pearl"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Arestas da linhagem `arquiteturas-de-agents-modernos` (Onda 3 — 2026-07-04)
+  # Nexus multi-frente; documentar cada aresta com prova de contato.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - de: dzmitry-bahdanau
+    para: ashish-vaswani
+    tipo: influenciou
+    natureza: direta
+    fonte: "Attention Is All You Need (Vaswani et al., NeurIPS 2017) cita Bahdanau-Cho-Bengio (ICLR 2015) como fonte direta do mecanismo de atenção reformado"
+  - de: yoshua-bengio
+    para: ashish-vaswani
+    tipo: influenciou
+    natureza: direta
+    fonte: "via paper de attention (Bahdanau-Cho-Bengio 2015) que Transformer reformula"
+  - de: ilya-sutskever
+    para: ashish-vaswani
+    tipo: influenciou
+    natureza: direta
+    fonte: "Seq2Seq (Sutskever-Vinyals-Le, NeurIPS 2014) é antecessor arquitetural encoder-decoder que Transformer substitui; Vaswani et al. 2017 citam"
+  - de: jakob-uszkoreit
+    para: ashish-vaswani
+    tipo: influenciou
+    natureza: direta
+    fonte: "coautor do paper Transformer (NeurIPS 2017); reportagens (Steven Levy no Wired, 2024) atribuem a Uszkoreit a ideia inicial de 'só atenção' em conversas internas do Google Brain ~2016"
+  - de: geoffrey-hinton
+    para: ilya-sutskever
+    tipo: influenciou
+    natureza: direta
+    fonte: "Sutskever foi aluno de BSc, MSc e PhD de Hinton em University of Toronto (2005-2013); coautor AlexNet (NeurIPS 2012)"
+  - de: sam-altman
+    para: ilya-sutskever
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadores da OpenAI (11 de dezembro de 2015); parceria estratégica que definiu trajetória 2015-2024"
+  - de: fei-fei-li
+    para: andrej-karpathy
+    tipo: influenciou
+    natureza: direta
+    fonte: "Karpathy foi aluno de PhD de Fei-Fei Li em Stanford (2011-2016); coautoria em múltiplos papers (Deep Fragment Embeddings 2014, Deep Visual-Semantic Alignments 2015, Visualizing RNNs 2015)"
+  - de: geoffrey-hinton
+    para: andrej-karpathy
+    tipo: influenciou
+    natureza: indireta
+    fonte: "undergrad em University of Toronto 2005-2009 — exposição à tradição conexionista Toronto; sem orientação direta"
+  - de: pietro-perona
+    para: fei-fei-li
+    tipo: influenciou
+    natureza: direta
+    fonte: "orientador de PhD de Fei-Fei Li em Caltech (2000-2005)"
+  - de: michael-jordan
+    para: andrew-ng
+    tipo: influenciou
+    natureza: direta
+    fonte: "orientador de PhD de Andrew Ng em UC Berkeley (1998-2002); tese em reinforcement learning"
+  - de: daphne-koller
+    para: andrew-ng
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadora Coursera com Ng em janeiro de 2012; colaboração Stanford prévia"
+  - de: eleanor-maguire
+    para: demis-hassabis
+    tipo: influenciou
+    natureza: direta
+    fonte: "orientadora de PhD de Hassabis em UCL Institute of Cognitive Neuroscience (2005-2009); paper conjunto em PNAS 2007"
+  - de: richard-sutton
+    para: demis-hassabis
+    tipo: influenciou
+    natureza: direta
+    fonte: "leitura + contratação: Sutton-Barto (Reinforcement Learning: An Introduction, 1998; 2ª ed. 2018) é texto de fundação; DeepMind contratou Sutton em 2017 como Distinguished Research Scientist"
+  - de: shane-legg
+    para: demis-hassabis
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadores da DeepMind (setembro 2010) junto com Mustafa Suleyman"
+  - de: ilya-sutskever
+    para: andrej-karpathy
+    tipo: influenciou
+    natureza: direta
+    fonte: "colegas OpenAI 2015-2017 (Karpathy retorna 2023-2024); ambos co-fundadores originais da OpenAI"
+  - de: ashish-vaswani
+    para: andrej-karpathy
+    tipo: influenciou
+    natureza: direta
+    fonte: "Karpathy reimplementa Transformer em nanoGPT (2022) e llm.c (2024) — Vaswani et al. 2017 é referência canônica"
+  - de: ashish-vaswani
+    para: ilya-sutskever
+    tipo: influenciou
+    natureza: direta
+    fonte: "Transformer arquitetura é base de GPT-1 (Radford-Narasimhan-Salimans-Sutskever, 2018) e sucessores sob supervisão de Sutskever na OpenAI"
+  - de: andrew-ng
+    para: geracao-coursera-ml
+    tipo: influenciou
+    natureza: direta
+    fonte: "Coursera ML (2011+) e deeplearning.ai (2017+) formaram milhões de estudantes autodidatas na linhagem"
+  - de: fei-fei-li
+    para: geoffrey-hinton
+    tipo: influenciou
+    natureza: direta
+    fonte: "ImageNet (Deng et al., CVPR 2009, senior author Fei-Fei) forneceu benchmark que AlexNet (Krizhevsky-Sutskever-Hinton, NeurIPS 2012) usou; sem ImageNet não haveria AlexNet"
+  - de: jeff-dean
+    para: andrew-ng
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadores Google Brain em 2011 com Greg Corrado; parceria estratégica"
+  - de: demis-hassabis
+    para: david-silver
+    tipo: influenciou
+    natureza: direta
+    fonte: "Silver é colaborador principal DeepMind desde ~2010; primeiro autor de AlphaGo, AlphaGo Zero, AlphaZero, MuZero; discípulo canônico da era Hassabis"
+  - de: demis-hassabis
+    para: john-jumper
+    tipo: influenciou
+    natureza: direta
+    fonte: "Jumper contratado DeepMind ~2017; primeiro autor AlphaFold 2 (Nature 2021); dividiu Nobel Química 2024 com Hassabis"
+  - de: mustafa-suleyman
+    para: demis-hassabis
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadores DeepMind (setembro 2010) junto com Shane Legg"
+  - de: ilya-sutskever
+    para: alec-radford
+    tipo: influenciou
+    natureza: direta
+    fonte: "colega OpenAI 2016+; GPT-1/2/3/CLIP/DALL-E co-autoria sob supervisão Sutskever"
+  - de: judea-pearl
+    para: ashish-vaswani
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — nenhuma coautoria; Pearl critica publicamente arquitetura Transformer como fica no degrau 1 da ladder of causation; sem influência direta documentada"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Arestas da linhagem `labs-frontier-e-comercializacao` (Onda 4 — 2026-07-04)
+  # Nexus de 4 posições estratégicas sobrepondo Onda 3. Documentar co-fundação,
+  # VP-under, recruitamento, fricção adversarial.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - de: paul-graham
+    para: sam-altman
+    tipo: influenciou
+    natureza: direta
+    fonte: "Altman entrou na Y Combinator em 2005 como fundador do Loopt; nomeado presidente por Graham em fev/2014 (Y Combinator Blog 'Sam Altman for President')"
+  - de: ilya-sutskever
+    para: sam-altman
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadores OpenAI 11/dez/2015; parceria científico-executiva de 8 anos; ruptura em nov/2023 (board firing) revertida dias depois; Sutskever se retrata em 20/nov/2023"
+  - de: elon-musk
+    para: sam-altman
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundador inicial OpenAI 2015; sai do board fev/2018; processos judiciais fev/2024 e ago/2024 alegando quebra de contrato de fundação (Musk v. Altman/OpenAI)"
+  - de: greg-brockman
+    para: sam-altman
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadores e parceiros executivos OpenAI desde dez/2015; Brockman President e principal parceiro executivo"
+  - de: sam-altman
+    para: dario-amodei
+    tipo: influenciou
+    natureza: direta
+    fonte: "Amodei foi VP of Research OpenAI sob Altman ~2016-2020; saiu em dez/2020 após disputas sobre direção; fundou Anthropic mai/2021 (Ezra Klein Show interview mai 2024)"
+  - de: ilya-sutskever
+    para: dario-amodei
+    tipo: influenciou
+    natureza: direta
+    fonte: "colegas OpenAI 2016-2020; parceria em GPT-2 e GPT-3; ambos assinaram Center for AI Safety statement mai/2023"
+  - de: william-bialek
+    para: dario-amodei
+    tipo: influenciou
+    natureza: direta
+    fonte: "orientador de PhD em Princeton ~2011; formação em mecânica estatística de circuitos neurais (darioamodei.com bio; Hertz Foundation profile)"
+  - de: andrew-ng
+    para: dario-amodei
+    tipo: influenciou
+    natureza: direta
+    fonte: "Amodei passou pelo Baidu Silicon Valley AI Lab (~2014-2015) sob Andrew Ng antes de Google Brain (Kantrowitz Medium 2024)"
+  - de: paul-christiano
+    para: dario-amodei
+    tipo: influenciou
+    natureza: direta
+    fonte: "coautoria 'Deep RL from Human Preferences' (Christiano-Leike-Brown-Martic-Legg-Amodei, NeurIPS 2017) — trabalho fundacional de RLHF"
+  - de: chris-olah
+    para: dario-amodei
+    tipo: influenciou
+    natureza: direta
+    fonte: "colegas Google Brain / OpenAI / co-fundadores Anthropic; parceria em programa de interpretabilidade mecânica"
+  - de: daniela-amodei
+    para: dario-amodei
+    tipo: influenciou
+    natureza: direta
+    fonte: "irmã; co-fundadora e President da Anthropic desde 28/mai/2021 (Stanford GSB interview 'Curiosity is Underrated')"
+  - de: dario-amodei
+    para: tom-brown
+    tipo: influenciou
+    natureza: direta
+    fonte: "Brown foi primeiro autor GPT-3 (2020) sob supervisão Amodei; co-fundador Anthropic mai/2021"
+  - de: dario-amodei
+    para: jared-kaplan
+    tipo: influenciou
+    natureza: direta
+    fonte: "Kaplan primeiro autor Scaling Laws (2020, arXiv 2001.08361) sob afiliação OpenAI; co-fundador Anthropic mai/2021"
+  - de: dario-amodei
+    para: jan-leike
+    tipo: influenciou
+    natureza: direta
+    fonte: "Leike migrou de OpenAI Head of Alignment para Anthropic em mai/2024; ambos assinaram Center for AI Safety statement"
+  - de: demis-hassabis
+    para: mustafa-suleyman
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadores DeepMind set/2010 junto com Shane Legg em Londres (DeepMind founding history)"
+  - de: shane-legg
+    para: mustafa-suleyman
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundador DeepMind set/2010 junto com Hassabis"
+  - de: reid-hoffman
+    para: mustafa-suleyman
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundador Inflection AI mar/2022 (Palo Alto); relação Greylock prévia desde ~2015"
+  - de: satya-nadella
+    para: mustafa-suleyman
+    tipo: influenciou
+    natureza: direta
+    fonte: "contratou Suleyman como EVP e CEO of Microsoft AI em 19/mar/2024 (Microsoft press release; Fortune 'surprise deal')"
+  - de: mustafa-suleyman
+    para: karen-simonyan
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadores Inflection mar/2022; Simonyan migrou com Suleyman para Microsoft AI mar/2024 como Chief Scientist"
+  - de: ashish-vaswani
+    para: aidan-gomez
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-autores 'Attention Is All You Need' NeurIPS 2017 — Gomez como estagiário Google Brain aos ~20 anos; equal contribution, random order"
+  - de: yarin-gal
+    para: aidan-gomez
+    tipo: influenciou
+    natureza: direta
+    fonte: "supervisor de DPhil em Oxford OATML (oatml.cs.ox.ac.uk members list confirma Gomez como DPhil student sob Gal)"
+  - de: geoffrey-hinton
+    para: nick-frosst
+    tipo: influenciou
+    natureza: direta
+    fonte: "Frosst foi aluno de Hinton em Google Brain antes de co-fundar Cohere (Cohere corporate history)"
+  - de: nick-frosst
+    para: aidan-gomez
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadores Cohere 2019 em Toronto junto com Ivan Zhang"
+  - de: ivan-zhang
+    para: aidan-gomez
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundador Cohere 2019; colega de Gomez em U of Toronto"
+  # Arestas de fricção entre CEOs de labs frontier
+  - de: sam-altman
+    para: mustafa-suleyman
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — competidores diretos em produto (ChatGPT vs Pi vs Copilot); fricção regular por talento e regulação; nenhuma coautoria"
+  - de: dario-amodei
+    para: sam-altman
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — competidores diretos (Claude vs GPT); fricção pública sobre safety pace; Amodei critica implicitamente 'race-to-the-bottom' em ensaios"
+  - de: aidan-gomez
+    para: sam-altman
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — competidores em mercados diferentes (Cohere enterprise vs OpenAI consumer+enterprise); relação profissional respeitosa em entrevistas"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Arestas da linhagem `alinhamento-e-safety` (Onda 5 — 2026-07-04)
+  # Arena de debate entre 4 posições; cross-Ondas 2-3-4 obrigatório.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - de: norbert-wiener
+    para: stuart-russell
+    tipo: influenciou
+    natureza: direta
+    fonte: "Wiener 1964 'God and Golem, Inc.' é citado em Russell 'Human Compatible' (2019) como ponto de partida do programa de assistance games"
+  - de: i-j-good
+    para: nick-bostrom
+    tipo: influenciou
+    natureza: direta
+    fonte: "Good 1965 'Speculations Concerning the First Ultraintelligent Machine' é citado em Bostrom 'Superintelligence' (2014) como fonte de intelligence explosion"
+  - de: i-j-good
+    para: stuart-russell
+    tipo: influenciou
+    natureza: direta
+    fonte: "Good 1965 citado em 'Human Compatible' (2019) capítulo 4"
+  - de: michael-genesereth
+    para: stuart-russell
+    tipo: influenciou
+    natureza: direta
+    fonte: "orientador de PhD em Stanford 1982-1986; tese 'The Compleat Guide to MRS' sob Genesereth"
+  - de: robert-wilensky
+    para: peter-norvig
+    tipo: influenciou
+    natureza: direta
+    fonte: "orientador de PhD em Berkeley 1980-1986; tese 'A Unified Theory of Inference for Text Understanding'"
+  - de: stuart-russell
+    para: peter-norvig
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-autores de AIMA de 1995 (1ª ed) até 2020 (4ª ed) — parceria de coautoria mais longa e influente do campo de IA"
+  - de: peter-norvig
+    para: stuart-russell
+    tipo: influenciou
+    natureza: direta
+    fonte: "simétrica à anterior — coautoria AIMA"
+  - de: tom-binford
+    para: rodney-brooks
+    tipo: influenciou
+    natureza: direta
+    fonte: "orientador de PhD em Stanford 1977-1981; visão computacional (ACRONYM + generalized cylinders)"
+  - de: hans-moravec
+    para: rodney-brooks
+    tipo: influenciou
+    natureza: direta
+    fonte: "Moravec paradox é ponto de partida direto do programa embodied; Elephants Don't Play Chess (1990) cita Moravec explicitamente"
+  - de: marvin-minsky
+    para: rodney-brooks
+    tipo: influenciou
+    natureza: direta
+    fonte: "Minsky foi mentor no MIT AI Lab pós-1984; polemistas em pé de igualdade sobre paradigma; Brooks reconhece Society of Mind (1986) como overlap parcial com subsumption"
+  - de: hubert-dreyfus
+    para: rodney-brooks
+    tipo: influenciou
+    natureza: direta
+    fonte: "Dreyfus 1972 'What Computers Can't Do' fornece argumento filosófico contra IA simbólica; Brooks é aliado técnico"
+  - de: derek-parfit
+    para: nick-bostrom
+    tipo: influenciou
+    natureza: direta
+    fonte: "Parfit 1984 'Reasons and Persons' Part IV sobre futuras gerações é fundação filosófica do longtermism; citado em Bostrom 'Astronomical Waste' (2003)"
+  - de: eliezer-yudkowsky
+    para: nick-bostrom
+    tipo: influenciou
+    natureza: direta
+    fonte: "colaboração via Extropians listserv 1990s e SIAI/MIRI 2000s; parceria intelectual no vocabulário de AI safety pré-2010"
+  - de: nick-bostrom
+    para: toby-ord
+    tipo: influenciou
+    natureza: direta
+    fonte: "Ord foi colega FHI Oxford; 'The Precipice' (2020) estende programa Bostrom"
+  - de: nick-bostrom
+    para: william-macaskill
+    tipo: influenciou
+    natureza: direta
+    fonte: "MacAskill foi colega Oxford; 'What We Owe The Future' (2022) popularizou longtermism em quadro Bostrom"
+  - de: stuart-russell
+    para: dylan-hadfield-menell
+    tipo: influenciou
+    natureza: direta
+    fonte: "orientador de PhD em Berkeley; primeiro autor CIRL 2016 e Off-Switch Game 2017; hoje MIT"
+  - de: stuart-russell
+    para: anca-dragan
+    tipo: influenciou
+    natureza: direta
+    fonte: "colaboradora Berkeley + coautora CIRL 2016 + Off-Switch Game 2017; hoje Head of AI Safety Google DeepMind desde 2024"
+  - de: peter-norvig
+    para: sebastian-thrun
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-instrutores CS221 Stanford + Udacity outubro 2011 (~160.000 alunos MOOC)"
+  - de: colin-angle
+    para: rodney-brooks
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadores iRobot 1990 (spinoff MIT Mobile Robots Lab)"
+  - de: helen-greiner
+    para: rodney-brooks
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadora iRobot 1990"
+  - de: gary-marcus
+    para: rodney-brooks
+    tipo: influenciou
+    natureza: direta
+    fonte: "co-fundadores Robust.AI 2019 (Palo Alto)"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Cross-Ondas: arestas de debate ativo Russell↔Ondas 2-4; Bostrom→Onda 4;
+  # Brooks↔Ondas 3-4; Norvig↔Onda 3.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - de: stuart-russell
+    para: dario-amodei
+    tipo: influenciou
+    natureza: direta
+    fonte: "debate ativo CIRL/assistance games como crítica implícita a RLHF; Amodei responde com Constitutional AI + RSP; ambos assinaram Center for AI Safety statement mai/2023"
+  - de: stuart-russell
+    para: geoffrey-hinton
+    tipo: influenciou
+    natureza: direta
+    fonte: "ambos assinaram Center for AI Safety statement (30 mai 2023) + FLI Pause Letter (mar 2023); debate público sobre timeline e método"
+  - de: stuart-russell
+    para: yoshua-bengio
+    tipo: influenciou
+    natureza: direta
+    fonte: "ambos no International AI Safety Report (Bengio chair, Russell contributor); ambos assinaram FLI Pause Letter mar 2023"
+  - de: nick-bostrom
+    para: dario-amodei
+    tipo: influenciou
+    natureza: direta
+    fonte: "vocabulário Bostrom (superintelligence, alignment, instrumental convergence, orthogonality) atravessa Constitutional AI paper + Machines of Loving Grace essay 2024"
+  - de: nick-bostrom
+    para: ilya-sutskever
+    tipo: influenciou
+    natureza: direta
+    fonte: "SSI (Safe Superintelligence Inc., 19 jun 2024) usa 'superintelligence' termo Bostrom + missão single-focused em safety alinhado a programa FHI"
+  - de: nick-bostrom
+    para: elon-musk
+    tipo: influenciou
+    natureza: direta
+    fonte: "Musk endorsement público de Superintelligence (twitter mai 2014 'worth reading'); Musk cita Bostrom em várias entrevistas 2014-2020 sobre 'summoning the demon'"
+  - de: rodney-brooks
+    para: andrej-karpathy
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — debate público sobre timeline LLM-AGI via Predictions Scorecard (Brooks) vs Karpathy X posts otimistas; ambos citam Moravec paradox mas com conclusões distintas"
+  - de: rodney-brooks
+    para: sam-altman
+    tipo: influenciou
+    natureza: direta
+    fonte: "Predictions Scorecard 2024 explicitamente critica cronogramas AGI otimistas; The Gentle Singularity (Altman jun 2025) é alvo indireto do argumento cético Brooks"
+  - de: peter-norvig
+    para: jeff-dean
+    tipo: influenciou
+    natureza: direta
+    fonte: "colegas Google 2011+ durante formação Google Brain; Norvig como Director of Research supervisor institucional durante era Ng+Dean+Corrado"
+  - de: judea-pearl
+    para: stuart-russell
+    tipo: influenciou
+    natureza: direta
+    fonte: "colegas Berkeley (Pearl UCLA vizinho); convergência sobre estrutura causal em safety; ambos citam-se em obras"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Arestas da linhagem `arquiteturas-de-agents-por-paradigma` (Onda 6 — 2026-07-04)
+  # Cadeia cumulativa CoT → MCP + cross-Ondas 1-5 obrigatório.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - de: paradigma-chain-of-thought
+    para: paradigma-react
+    tipo: influenciou
+    natureza: direta
+    fonte: "Thought no loop ReAct é literalmente CoT; Yao et al. 2022 (arXiv 2210.03629) cita Wei et al. 2022 (arXiv 2201.11903) explicitamente §2"
+  - de: paradigma-react
+    para: paradigma-tree-of-thoughts
+    tipo: influenciou
+    natureza: direta
+    fonte: "Mesmo primeiro autor (Shunyu Yao); ToT estende ReAct de linha para árvore; arXiv 2305.10601 cita ReAct como precursor imediato §2"
+  - de: paradigma-chain-of-thought
+    para: paradigma-tree-of-thoughts
+    tipo: influenciou
+    natureza: direta
+    fonte: "ToT usa CoT em cada nó da árvore; documentado em Yao et al. 2023 §3.2"
+  - de: paradigma-react
+    para: paradigma-autogpt
+    tipo: influenciou
+    natureza: direta
+    fonte: "Loop autônomo Torantulino é ReAct escalado a horizonte indefinido; GitHub AutoGPT docs reconhecem inspiração ReAct pattern"
+  - de: paradigma-react
+    para: paradigma-langchain
+    tipo: influenciou
+    natureza: direta
+    fonte: "Primeira classe LangChain 'ReAct agent' (2022) é implementação canônica do paper Yao; docs LangChain § Agents"
+  - de: paradigma-autogpt
+    para: paradigma-langchain
+    tipo: influenciou
+    natureza: direta
+    fonte: "LangChain absorveu padrões AutoGPT (long-term memory, task planning) em suas classes de agent avançadas 2023"
+  - de: paradigma-langchain
+    para: paradigma-langgraph
+    tipo: influenciou
+    natureza: direta
+    fonte: "Mesmo autor (Harrison Chase) e empresa (LangChain Inc.); LangGraph é evolução arquitetural, não substituto; ainda usa LangChain wrappers"
+  - de: paradigma-autogpt
+    para: paradigma-crewai
+    tipo: influenciou
+    natureza: direta
+    fonte: "CrewAI é multi-agent role-based que herda padrão AutoGPT single-agent; João Moura entrevistas reconhecem inspiração"
+  - de: paradigma-langchain
+    para: paradigma-crewai
+    tipo: influenciou
+    natureza: direta
+    fonte: "CrewAI usa (opcionalmente) LangChain como backend de tools; muitos integração patterns compatíveis"
+  - de: paradigma-autogpt
+    para: paradigma-autogen
+    tipo: influenciou
+    natureza: direta
+    fonte: "AutoGen é evolução acadêmica Microsoft do padrão single-agent autonomia para multi-agent conversation; arXiv 2308.08155 §1"
+  - de: paradigma-langchain
+    para: paradigma-autogen
+    tipo: influenciou
+    natureza: direta
+    fonte: "Paralelismo competitivo — AutoGen surge ~10 meses depois com foco em conversation vs chains; docs AutoGen citam LangChain como framework anterior"
+  - de: paradigma-langchain
+    para: paradigma-mcp
+    tipo: influenciou
+    natureza: direta
+    fonte: "LangChain forneceu evidência empírica de que padronização era necessária (500+ integrações fragmentadas); Anthropic MCP é resposta"
+  - de: paradigma-react
+    para: paradigma-mcp
+    tipo: influenciou
+    natureza: direta
+    fonte: "MCP padroniza Action da ReAct em protocolo interoperável; specification cita ReAct/CoT como paradigmas subjacentes"
+  - de: paradigma-crewai
+    para: paradigma-langgraph
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — LangGraph multi-agent patterns (supervisor+swarm) 2024 têm inspiração em CrewAI Hierarchical Process 2023"
+  - de: paradigma-autogen
+    para: paradigma-langgraph
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — AutoGen conversation patterns anteriores; LangGraph absorve com abstração de grafo"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Cross-Ondas 1-5: paradigmas herdam de mentes-pessoa das ondas anteriores.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - de: allen-newell
+    para: paradigma-chain-of-thought
+    tipo: influenciou
+    natureza: direta
+    fonte: "Wei et al. 2022 herdam problem space + protocol analysis (Newell-Simon 1972 Human Problem Solving) como fundação conceitual do CoT"
+  - de: herbert-simon
+    para: paradigma-chain-of-thought
+    tipo: influenciou
+    natureza: direta
+    fonte: "Protocol analysis (Newell-Simon 1972) — pensar em voz alta como dado empírico — antecede CoT; verbalizar raciocínio como método"
+  - de: allen-newell
+    para: paradigma-react
+    tipo: influenciou
+    natureza: direta
+    fonte: "Newell-Simon GPS 1959 + means-ends analysis são raiz teórica; ReAct paper §2 cita como linhagem conceitual"
+  - de: allen-newell
+    para: paradigma-tree-of-thoughts
+    tipo: influenciou
+    natureza: direta
+    fonte: "ToT reenkarna problem space + search do GPS; Yao et al. 2023 §2 cita explicitamente Newell-Simon como precursor"
+  - de: marvin-minsky
+    para: paradigma-autogen
+    tipo: influenciou
+    natureza: direta
+    fonte: "Society of Mind (Minsky 1986) informa agents cognitivos que negociam; palestras autores AutoGen reconhecem"
+  - de: marvin-minsky
+    para: paradigma-crewai
+    tipo: influenciou
+    natureza: direta
+    fonte: "Society of Mind é raiz conceitual de multi-agent role-based; documentado em curso deeplearning.ai Moura+Ng 2024"
+  - de: john-mccarthy
+    para: paradigma-mcp
+    tipo: influenciou
+    natureza: direta
+    fonte: "Elephant 2000 (McCarthy 1998, Stanford CS memo) propôs protocolo declarativo de speech acts entre agents; MCP realiza parcialmente ~26 anos depois"
+  - de: ashish-vaswani
+    para: paradigma-chain-of-thought
+    tipo: influenciou
+    natureza: direta
+    fonte: "Transformer (Vaswani 2017) é substrato arquitetural sem o qual CoT emergente não existe; escala habilita a emergência"
+  - de: ilya-sutskever
+    para: paradigma-chain-of-thought
+    tipo: influenciou
+    natureza: direta
+    fonte: "GPT-3 (Brown et al. 2020, sob supervisão Sutskever) é o modelo em que CoT foi demonstrado; escala como direção habilita paradigma"
+  - de: dario-amodei
+    para: paradigma-mcp
+    tipo: influenciou
+    natureza: direta
+    fonte: "Amodei é CEO Anthropic; MCP foi anunciado 25/nov/2024 pela Anthropic sob sua liderança executiva"
+  - de: sam-altman
+    para: paradigma-autogpt
+    tipo: influenciou
+    natureza: direta
+    fonte: "AutoGPT depende de GPT-4 API (release março 2023); sem OpenAI Altman, o experimento não teria funcionado — modelos anteriores não sustentavam"
+  - de: stuart-russell
+    para: paradigma-langgraph
+    tipo: influenciou
+    natureza: direta
+    fonte: "Off-Switch Game (Hadfield-Menell-Russell 2017) é raiz conceitual do padrão interrupt_before de LangGraph; HITL como primitive é herança Russell"
+  - de: rodney-brooks
+    para: paradigma-react
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — Brooks 'the world is its own model' (1991) tem eco em grounding via tools do ReAct; sem citação direta"
+  - de: judea-pearl
+    para: paradigma-react
+    tipo: influenciou
+    natureza: inferida
+    fonte: "inferida — Pearl argumento causal em favor de grounding externo tem eco em ReAct tool-forced grounding; sem citação direta"
 
 # LINHAGENS — linhagens nomeadas (cada uma com um arquivo .md em linhagens/).
 #   slug      — kebab-case (= nome do arquivo, sem .md)
@@ -162,6 +1232,67 @@ linhagens:
     mentes: [paul-costa-jr, robert-mccrae, john-bowlby, mary-ainsworth, george-vaillant,
              aaron-beck, stephen-karpman, eric-berne, erik-erikson, gregory-bateson, pete-walker]
     frameworks: [perfil-psicologico-multi-lente, dinamica-relacional]
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Onda 1 — Fundadores clássicos da IA (missão m-20260704-dossie-ia-fase1, 2026-07-04)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: ia-simbolica-e-cognicao
+    titulo: "IA simbólica e cognição — de Turing à hipótese do sistema simbólico físico"
+    tipo: pensador
+    arquivo: linhagens/ia-simbolica-e-cognicao.md
+    mentes: [alan-turing, claude-shannon, john-mccarthy, marvin-minsky, herbert-simon, allen-newell]
+    frameworks: [arquitetura-de-agents-kolden]
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Onda 2 — Conexionismo e Deep Learning (missão m-20260704-dossie-ia-fase1, 2026-07-04)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: conexionismo-deep-learning
+    titulo: "Conexionismo e Deep Learning — do Perceptron à revolução causal"
+    tipo: pensador
+    arquivo: linhagens/conexionismo-deep-learning.md
+    mentes: [frank-rosenblatt, geoffrey-hinton, yann-lecun, yoshua-bengio, judea-pearl]
+    frameworks: [arquitetura-de-agents-kolden]
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Onda 3 — Arquiteturas de agents modernos (missão m-20260704-dossie-ia-fase1, 2026-07-04)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: arquiteturas-de-agents-modernos
+    titulo: "Arquiteturas de agents modernos — do Transformer ao Nobel"
+    tipo: pensador
+    arquivo: linhagens/arquiteturas-de-agents-modernos.md
+    mentes: [ashish-vaswani, ilya-sutskever, andrej-karpathy, fei-fei-li, andrew-ng, demis-hassabis]
+    frameworks: [arquitetura-de-agents-kolden]
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Onda 4 — Labs frontier e comercialização (missão m-20260704-dossie-ia-fase1, 2026-07-04)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: labs-frontier-e-comercializacao
+    titulo: "Labs frontier e comercialização — a diáspora institucional 2015-2024"
+    tipo: pensador
+    arquivo: linhagens/labs-frontier-e-comercializacao.md
+    mentes: [sam-altman, dario-amodei, mustafa-suleyman, aidan-gomez]
+    frameworks: [arquitetura-de-agents-kolden]
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Onda 5 — Alinhamento e safety (missão m-20260704-dossie-ia-fase1, 2026-07-04)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: alinhamento-e-safety
+    titulo: "Alinhamento e safety — de Wiener ao Precipício"
+    tipo: pensador
+    arquivo: linhagens/alinhamento-e-safety.md
+    mentes: [stuart-russell, peter-norvig, nick-bostrom, rodney-brooks]
+    frameworks: [arquitetura-de-agents-kolden]
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Onda 6 — Arquiteturas de agents por paradigma (missão m-20260704-dossie-ia-fase1)
+  # ÚLTIMA linhagem da Fase 1. Nodes são PARADIGMAS técnicos, não pessoas.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: arquiteturas-de-agents-por-paradigma
+    titulo: "Arquiteturas de agents por paradigma — de CoT (2022) a MCP (2024)"
+    tipo: paradigma
+    arquivo: linhagens/arquiteturas-de-agents-por-paradigma.md
+    paradigmas: [paradigma-chain-of-thought, paradigma-react, paradigma-tree-of-thoughts, paradigma-autogpt, paradigma-langchain, paradigma-langgraph, paradigma-crewai, paradigma-autogen, paradigma-mcp]
+    frameworks: [arquitetura-de-agents-kolden]
 
 # ─────────────────────────────────────────────────────────────────────────────
 # NOTAS DE FRONTEIRA (curadas pelo genealogista)

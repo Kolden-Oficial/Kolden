@@ -2,8 +2,8 @@
 # Curado pelo `bibliotecario` (tier 2). Federado: a mente vive no seu arquivo
 # canônico; este índice APONTA para ele — nunca duplica conteúdo nem move arquivos.
 # Convenção alinhada ao Caos e ao indice.yaml do sobre-a-empresa.
-versao: 1
-atualizado-em: 2026-06-22
+versao: 7
+atualizado-em: 2026-07-04
 principio: "índice federado — caminho-canonico aponta ao arquivo onde a mente vive; nunca duplicar"
 
 # Campos por mente (schema espelha o frontmatter de mentes/_modelo-dossie.md):
@@ -47,6 +47,343 @@ mentes:
     frameworks_kolden: [matriz-de-desejo-inconsciente]
     persona_canonica: null
     confianca_da_fonte: media
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Onda 1 do dossiê de IA (missão m-20260704-dossie-ia-fase1) — 2026-07-04
+  # Fundadores clássicos da IA simbólica e da cognição computacional.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - id: alan-turing
+    nome: "Alan Turing"
+    dominio: [ciencia-da-computacao, logica-matematica, inteligencia-artificial, criptografia, biologia-matematica]
+    status: vigente
+    caminho-canonico: mentes/alan-turing/dossie.md
+    linhagens: [ia-simbolica-e-cognicao]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: claude-shannon
+    nome: "Claude Shannon"
+    dominio: [teoria-da-informacao, engenharia-eletrica, criptografia, xadrez-computacional, ciencia-da-computacao]
+    status: vigente
+    caminho-canonico: mentes/claude-shannon/dossie.md
+    linhagens: [ia-simbolica-e-cognicao]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: john-mccarthy
+    nome: "John McCarthy"
+    dominio: [inteligencia-artificial, linguagens-de-programacao, logica-formal, ciencia-da-computacao]
+    status: vigente
+    caminho-canonico: mentes/john-mccarthy/dossie.md
+    linhagens: [ia-simbolica-e-cognicao]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: marvin-minsky
+    nome: "Marvin Minsky"
+    dominio: [inteligencia-artificial, ciencia-cognitiva, representacao-do-conhecimento, redes-neurais, robotica]
+    status: vigente
+    caminho-canonico: mentes/marvin-minsky/dossie.md
+    linhagens: [ia-simbolica-e-cognicao]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: herbert-simon
+    nome: "Herbert Simon"
+    dominio: [inteligencia-artificial, economia-comportamental, teoria-das-organizacoes, ciencia-cognitiva, ciencia-politica]
+    status: vigente
+    caminho-canonico: mentes/herbert-simon/dossie.md
+    linhagens: [ia-simbolica-e-cognicao]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: allen-newell
+    nome: "Allen Newell"
+    dominio: [inteligencia-artificial, ciencia-cognitiva, arquitetura-cognitiva, ciencia-da-computacao]
+    status: vigente
+    caminho-canonico: mentes/allen-newell/dossie.md
+    linhagens: [ia-simbolica-e-cognicao]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Onda 2 do dossiê de IA (missão m-20260704-dossie-ia-fase1) — 2026-07-04
+  # Conexionismo e Deep Learning — do Perceptron à revolução causal.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - id: frank-rosenblatt
+    nome: "Frank Rosenblatt"
+    dominio: [redes-neurais, inteligencia-artificial, psicologia-experimental, neurofisiologia-computacional]
+    status: vigente
+    caminho-canonico: mentes/frank-rosenblatt/dossie.md
+    linhagens: [conexionismo-deep-learning]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: geoffrey-hinton
+    nome: "Geoffrey Hinton"
+    dominio: [redes-neurais, deep-learning, psicologia-cognitiva, inteligencia-artificial, seguranca-de-ia]
+    status: vigente
+    caminho-canonico: mentes/geoffrey-hinton/dossie.md
+    linhagens: [conexionismo-deep-learning]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: yann-lecun
+    nome: "Yann LeCun"
+    dominio: [redes-neurais, deep-learning, visao-computacional, self-supervised-learning, robotica-aprendida]
+    status: vigente
+    caminho-canonico: mentes/yann-lecun/dossie.md
+    linhagens: [conexionismo-deep-learning]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: yoshua-bengio
+    nome: "Yoshua Bengio"
+    dominio: [deep-learning, redes-neurais, processamento-de-linguagem-natural, aprendizado-de-representacoes, seguranca-de-ia]
+    status: vigente
+    caminho-canonico: mentes/yoshua-bengio/dossie.md
+    linhagens: [conexionismo-deep-learning]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: judea-pearl
+    nome: "Judea Pearl"
+    dominio: [inteligencia-artificial, raciocinio-probabilistico, inferencia-causal, epistemologia, estatistica]
+    status: vigente
+    caminho-canonico: mentes/judea-pearl/dossie.md
+    linhagens: [conexionismo-deep-learning]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Onda 3 do dossiê de IA (missão m-20260704-dossie-ia-fase1) — 2026-07-04
+  # Arquiteturas de agents modernos — do Transformer ao Nobel.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - id: ashish-vaswani
+    nome: "Ashish Vaswani"
+    dominio: [deep-learning, processamento-de-linguagem-natural, atencao-neural, arquitetura-de-modelos, traducao-automatica]
+    status: vigente
+    caminho-canonico: mentes/ashish-vaswani/dossie.md
+    linhagens: [arquiteturas-de-agents-modernos, conexionismo-deep-learning]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: ilya-sutskever
+    nome: "Ilya Sutskever"
+    dominio: [deep-learning, redes-neurais, aprendizado-por-reforco, foundation-models, seguranca-de-ia]
+    status: vigente
+    caminho-canonico: mentes/ilya-sutskever/dossie.md
+    linhagens: [arquiteturas-de-agents-modernos, conexionismo-deep-learning]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: andrej-karpathy
+    nome: "Andrej Karpathy"
+    dominio: [deep-learning, visao-computacional, educacao-em-ia, autopilot-tesla, foundation-models]
+    status: vigente
+    caminho-canonico: mentes/andrej-karpathy/dossie.md
+    linhagens: [arquiteturas-de-agents-modernos, conexionismo-deep-learning]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: fei-fei-li
+    nome: "Fei-Fei Li"
+    dominio: [visao-computacional, deep-learning, dados-para-ia, etica-de-ia, ia-centrada-no-humano]
+    status: vigente
+    caminho-canonico: mentes/fei-fei-li/dossie.md
+    linhagens: [arquiteturas-de-agents-modernos, conexionismo-deep-learning]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: andrew-ng
+    nome: "Andrew Ng"
+    dominio: [machine-learning, deep-learning, aprendizado-por-reforco, educacao-em-ia, ia-industrial, robotica]
+    status: vigente
+    caminho-canonico: mentes/andrew-ng/dossie.md
+    linhagens: [arquiteturas-de-agents-modernos, conexionismo-deep-learning]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: demis-hassabis
+    nome: "Demis Hassabis"
+    dominio: [inteligencia-artificial, aprendizado-por-reforco, biologia-computacional, neurociencia, jogos-para-ia]
+    status: vigente
+    caminho-canonico: mentes/demis-hassabis/dossie.md
+    linhagens: [arquiteturas-de-agents-modernos, conexionismo-deep-learning]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Onda 4 do dossiê de IA (missão m-20260704-dossie-ia-fase1) — 2026-07-04
+  # Labs frontier e comercialização — a diáspora institucional 2015-2024.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - id: sam-altman
+    nome: "Sam Altman"
+    dominio: [inteligencia-artificial, empreendedorismo, venture-capital, foundation-models, politica-de-ia]
+    status: vigente
+    caminho-canonico: mentes/sam-altman/dossie.md
+    linhagens: [labs-frontier-e-comercializacao, arquiteturas-de-agents-modernos]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: dario-amodei
+    nome: "Dario Amodei"
+    dominio: [inteligencia-artificial, seguranca-de-ia, foundation-models, interpretabilidade-mecanica, politica-de-ia]
+    status: vigente
+    caminho-canonico: mentes/dario-amodei/dossie.md
+    linhagens: [labs-frontier-e-comercializacao, arquiteturas-de-agents-modernos]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: mustafa-suleyman
+    nome: "Mustafa Suleyman"
+    dominio: [inteligencia-artificial, produto-de-ia-conversacional, politica-de-tecnologia, seguranca-de-ia, empreendedorismo]
+    status: vigente
+    caminho-canonico: mentes/mustafa-suleyman/dossie.md
+    linhagens: [labs-frontier-e-comercializacao, arquiteturas-de-agents-modernos]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: aidan-gomez
+    nome: "Aidan Gomez"
+    dominio: [inteligencia-artificial, foundation-models, atencao-neural, ia-empresarial, retrieval-augmented-generation]
+    status: vigente
+    caminho-canonico: mentes/aidan-gomez/dossie.md
+    linhagens: [labs-frontier-e-comercializacao, arquiteturas-de-agents-modernos]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Onda 5 do dossiê de IA (missão m-20260704-dossie-ia-fase1) — 2026-07-04
+  # Alinhamento, safety, filosofia, embodied AI.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - id: stuart-russell
+    nome: "Stuart Russell"
+    dominio: [inteligencia-artificial, seguranca-de-ia, aprendizado-por-reforco, filosofia-de-agente, teoria-da-decisao]
+    status: vigente
+    caminho-canonico: mentes/stuart-russell/dossie.md
+    linhagens: [alinhamento-e-safety, ia-simbolica-e-cognicao]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: peter-norvig
+    nome: "Peter Norvig"
+    dominio: [inteligencia-artificial, machine-learning, programacao-em-lisp, educacao-em-ia, ciencia-de-dados]
+    status: vigente
+    caminho-canonico: mentes/peter-norvig/dossie.md
+    linhagens: [alinhamento-e-safety, ia-simbolica-e-cognicao]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: nick-bostrom
+    nome: "Nick Bostrom"
+    dominio: [filosofia-analitica, risco-existencial, transhumanismo, filosofia-de-ia, longtermism]
+    status: vigente
+    caminho-canonico: mentes/nick-bostrom/dossie.md
+    linhagens: [alinhamento-e-safety]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+  - id: rodney-brooks
+    nome: "Rodney Brooks"
+    dominio: [robotica, embodied-ia, ia-simbolica, engenharia-de-robos, historia-da-ia]
+    status: vigente
+    caminho-canonico: mentes/rodney-brooks/dossie.md
+    linhagens: [alinhamento-e-safety, ia-simbolica-e-cognicao]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    persona_canonica: null
+    confianca_da_fonte: alta
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Onda 6 do dossiê de IA (missão m-20260704-dossie-ia-fase1) — 2026-07-04
+  # PARADIGMAS técnicos (mentes coletivas), não pessoas.
+  # tipo: paradigma introduzido nesta onda; dirs em mentes/paradigma-<slug>/.
+  # ─────────────────────────────────────────────────────────────────────────────
+  - id: paradigma-chain-of-thought
+    nome: "Chain-of-Thought Prompting (CoT)"
+    tipo: paradigma
+    dominio: [foundation-models, prompting, raciocinio-em-llms, in-context-learning, habilidade-emergente]
+    status: vigente
+    caminho-canonico: mentes/paradigma-chain-of-thought/dossie.md
+    linhagens: [arquiteturas-de-agents-por-paradigma]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    confianca_da_fonte: alta
+  - id: paradigma-react
+    nome: "ReAct — Synergizing Reasoning and Acting"
+    tipo: paradigma
+    dominio: [foundation-models, agent-loop, tool-use, prompting, arquitetura-agentic]
+    status: vigente
+    caminho-canonico: mentes/paradigma-react/dossie.md
+    linhagens: [arquiteturas-de-agents-por-paradigma]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    confianca_da_fonte: alta
+  - id: paradigma-tree-of-thoughts
+    nome: "Tree of Thoughts (ToT)"
+    tipo: paradigma
+    dominio: [foundation-models, prompting, busca-em-arvore, planejamento-em-llms, raciocinio-deliberado]
+    status: vigente
+    caminho-canonico: mentes/paradigma-tree-of-thoughts/dossie.md
+    linhagens: [arquiteturas-de-agents-por-paradigma]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    confianca_da_fonte: alta
+  - id: paradigma-autogpt
+    nome: "AutoGPT — Autonomous GPT-4 Agent Loop"
+    tipo: paradigma
+    dominio: [foundation-models, agent-autonomo, agent-loop, memoria-persistente, cultural-viral]
+    status: vigente
+    caminho-canonico: mentes/paradigma-autogpt/dossie.md
+    linhagens: [arquiteturas-de-agents-por-paradigma]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    confianca_da_fonte: alta
+  - id: paradigma-langchain
+    nome: "LangChain — Framework de Chains e Agents"
+    tipo: paradigma
+    dominio: [foundation-models, framework-de-agents, chains, tools, memory, rag, vector-stores]
+    status: vigente
+    caminho-canonico: mentes/paradigma-langchain/dossie.md
+    linhagens: [arquiteturas-de-agents-por-paradigma]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    confianca_da_fonte: alta
+  - id: paradigma-langgraph
+    nome: "LangGraph — Stateful Graph-based Agent Orchestration"
+    tipo: paradigma
+    dominio: [foundation-models, agent-orchestration, state-machine, grafos-computacionais, multi-agent]
+    status: vigente
+    caminho-canonico: mentes/paradigma-langgraph/dossie.md
+    linhagens: [arquiteturas-de-agents-por-paradigma]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    confianca_da_fonte: alta
+  - id: paradigma-crewai
+    nome: "CrewAI — Role-Playing Multi-Agent Framework"
+    tipo: paradigma
+    dominio: [foundation-models, multi-agent, role-based-agents, framework-python, pedagogia-acessivel]
+    status: vigente
+    caminho-canonico: mentes/paradigma-crewai/dossie.md
+    linhagens: [arquiteturas-de-agents-por-paradigma]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    confianca_da_fonte: alta
+  - id: paradigma-autogen
+    nome: "AutoGen — Multi-Agent Conversation Framework"
+    tipo: paradigma
+    dominio: [foundation-models, multi-agent, conversation-based, microsoft-research, group-chat]
+    status: vigente
+    caminho-canonico: mentes/paradigma-autogen/dossie.md
+    linhagens: [arquiteturas-de-agents-por-paradigma]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    confianca_da_fonte: alta
+  - id: paradigma-mcp
+    nome: "Model Context Protocol (MCP)"
+    tipo: paradigma
+    dominio: [foundation-models, interoperability-standard, protocol, tools, anthropic-standards, industry-consensus]
+    status: vigente
+    caminho-canonico: mentes/paradigma-mcp/dossie.md
+    linhagens: [arquiteturas-de-agents-por-paradigma]
+    frameworks_kolden: [arquitetura-de-agents-kolden]
+    confianca_da_fonte: alta
   #
   # Exemplo de mente JÁ existente num squad (indexada por referência, não duplicada):
   # - id: eugene-schwartz
