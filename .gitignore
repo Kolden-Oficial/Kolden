@@ -3,7 +3,8 @@
 
 # ===== Clones de terceiros com git próprio (não versionar como submódulo) =====
 Pheme/deploy/postiz/
-Projetos/NutriOS Pro/app/
+sobre-a-empresa/Projetos/Ativos/nutrios-pro/app/
+sobre-a-empresa/Projetos/Ativos/entresolos/
 
 # ===== Segredos / ambiente =====
 .env
