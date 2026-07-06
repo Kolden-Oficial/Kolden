@@ -1,105 +1,17 @@
 # Índice machine-readable do cérebro da Kolden (sobre-a-empresa).
 # Convenção alinhada ao Caos. Atualize ao adicionar/alterar docs.
-versao: 1
-atualizado-em: 2026-06-30
+versao: 2
+atualizado-em: 2026-07-06
 documentos:
+  # ─── Raiz ─────────────────────────────────────────
   - id: sobre-a-empresa-leia-me
     caminho: leia-me.md
     categoria: identidade
     status: vigente
-  - id: visao-geral
-    caminho: identidade/visao-geral.md
-    categoria: identidade
-    status: rascunho
-  - id: missao-visao-valores
-    caminho: identidade/missao-visao-valores.md
-    categoria: identidade
-    status: rascunho
-  - id: historia
-    caminho: identidade/historia.md
-    categoria: identidade
-    status: rascunho
-  - id: organograma
-    caminho: identidade/organograma.md
-    categoria: identidade
-    status: rascunho
-  - id: icp-e-personas
-    caminho: mercado-e-posicionamento/icp-e-personas.md
-    categoria: mercado
-    status: rascunho
-  - id: ofertas-e-produtos
-    caminho: mercado-e-posicionamento/ofertas-e-produtos.md
-    categoria: mercado
-    status: rascunho
-  - id: posicionamento
-    caminho: mercado-e-posicionamento/posicionamento.md
-    categoria: mercado
-    status: rascunho
-  - id: concorrencia
-    caminho: mercado-e-posicionamento/concorrencia.md
-    categoria: mercado
-    status: rascunho
-  - id: briefing-foda-geracao-demanda-brasileiros-eua
-    caminho: mercado-e-posicionamento/briefings/2026-06-30--brefing-foda-geracao-demanda-brasileiros-eua.md
-    categoria: mercado
-    status: rascunho
-  - id: voz-e-tom
-    caminho: marca/voz-e-tom.md
-    categoria: marca
-    status: rascunho
-  - id: mensagens-chave
-    caminho: marca/mensagens-chave.md
-    categoria: marca
-    status: rascunho
-  - id: identidade-visual
-    caminho: marca/identidade-visual.md
-    categoria: marca
+  - id: dossie-mae
+    caminho: dossie-mae.md
+    categoria: indice
     status: vigente
-  # Design System (kit de identidade — marca/design-system/)
-  - id: ds-leia-me
-    caminho: marca/design-system/leia-me.md
-    categoria: marca
-    status: vigente
-  - id: ds-cores
-    caminho: marca/design-system/01-fundamentos/cores.md
-    categoria: marca
-    status: vigente
-  - id: ds-tipografia
-    caminho: marca/design-system/01-fundamentos/tipografia.md
-    categoria: marca
-    status: vigente
-  - id: ds-logo
-    caminho: marca/design-system/01-fundamentos/logo.md
-    categoria: marca
-    status: vigente
-  - id: ds-grafismos
-    caminho: marca/design-system/01-fundamentos/grafismos-e-auxiliares.md
-    categoria: marca
-    status: vigente
-  - id: ds-tom-visual
-    caminho: marca/design-system/01-fundamentos/tom-visual.md
-    categoria: marca
-    status: vigente
-  - id: ds-componentes
-    caminho: marca/design-system/03-componentes/leia-me.md
-    categoria: marca
-    status: vigente
-  - id: ds-aplicacoes
-    caminho: marca/design-system/04-aplicacoes/exemplos.md
-    categoria: marca
-    status: vigente
-  - id: ds-indice-assets
-    caminho: marca/design-system/assets/indice-assets.md
-    categoria: marca
-    status: vigente
-  - id: processos
-    caminho: operacao/processos.md
-    categoria: operacao
-    status: rascunho
-  - id: metricas-e-okrs
-    caminho: operacao/metricas-e-okrs.md
-    categoria: operacao
-    status: rascunho
   - id: glossario-empresa
     caminho: glossario.md
     categoria: identidade
@@ -108,44 +20,253 @@ documentos:
     caminho: faq.md
     categoria: identidade
     status: rascunho
-  # Áreas / organização (visão lógica; agentes não são movidos)
+
+  # ─── Kolden — bússola e identidade ────────────────
+  - id: kolden-leia-me
+    caminho: Kolden/leia-me.md
+    categoria: identidade
+    status: vigente
+  - id: visao-geral
+    caminho: Kolden/identidade/visao-geral.md
+    categoria: identidade
+    status: rascunho
+  - id: missao-visao-valores
+    caminho: Kolden/identidade/missao-visao-valores.md
+    categoria: identidade
+    status: rascunho
+  - id: historia
+    caminho: Kolden/identidade/historia.md
+    categoria: identidade
+    status: rascunho
+  - id: organograma
+    caminho: Kolden/identidade/organograma.md
+    categoria: identidade
+    status: rascunho
+  - id: organograma-visual
+    caminho: Kolden/identidade/organograma-kolden.html
+    categoria: identidade
+    status: vigente
+  - id: perfil-kolden-9-anos
+    caminho: Kolden/identidade/perfil-kolden-9-anos.md
+    categoria: identidade
+    status: arquivado
+
+  # ─── Kolden — mercado ─────────────────────────────
+  - id: icp-e-personas
+    caminho: Kolden/mercado/icp-e-personas.md
+    categoria: mercado
+    status: rascunho
+  - id: ofertas-e-produtos
+    caminho: Kolden/mercado/ofertas-e-produtos.md
+    categoria: mercado
+    status: rascunho
+  - id: posicionamento
+    caminho: Kolden/mercado/posicionamento.md
+    categoria: mercado
+    status: rascunho
+  - id: concorrencia
+    caminho: Kolden/mercado/concorrencia.md
+    categoria: mercado
+    status: rascunho
+  - id: briefing-foda-geracao-demanda-brasileiros-eua
+    caminho: Kolden/mercado/briefings/2026-06-30--brefing-foda-geracao-demanda-brasileiros-eua.md
+    categoria: mercado
+    status: rascunho
+  - id: referencias-black-book
+    caminho: Kolden/mercado/referencias/black-book/
+    categoria: mercado
+    status: vigente
+  - id: referencias-dam-e-conhecimento
+    caminho: Kolden/mercado/referencias/dam-e-conhecimento/
+    categoria: mercado
+    status: vigente
+  - id: referencias-geral
+    caminho: Kolden/mercado/referencias/geral/
+    categoria: mercado
+    status: vigente
+
+  # ─── Kolden — marca ───────────────────────────────
+  - id: voz-e-tom
+    caminho: Kolden/marca/voz-e-tom.md
+    categoria: marca
+    status: rascunho
+  - id: mensagens-chave
+    caminho: Kolden/marca/mensagens-chave.md
+    categoria: marca
+    status: rascunho
+  - id: identidade-visual
+    caminho: Kolden/marca/identidade-visual.md
+    categoria: marca
+    status: vigente
+  - id: marca-referencias-historicas
+    caminho: Kolden/marca/referencias-historicas/
+    categoria: marca
+    status: arquivado
+
+  # ─── Kolden — design-system (kit de identidade) ───
+  - id: ds-leia-me
+    caminho: Kolden/marca/design-system/leia-me.md
+    categoria: marca
+    status: vigente
+  - id: ds-cores
+    caminho: Kolden/marca/design-system/01-fundamentos/cores.md
+    categoria: marca
+    status: vigente
+  - id: ds-tipografia
+    caminho: Kolden/marca/design-system/01-fundamentos/tipografia.md
+    categoria: marca
+    status: vigente
+  - id: ds-logo
+    caminho: Kolden/marca/design-system/01-fundamentos/logo.md
+    categoria: marca
+    status: vigente
+  - id: ds-grafismos
+    caminho: Kolden/marca/design-system/01-fundamentos/grafismos-e-auxiliares.md
+    categoria: marca
+    status: vigente
+  - id: ds-tom-visual
+    caminho: Kolden/marca/design-system/01-fundamentos/tom-visual.md
+    categoria: marca
+    status: vigente
+  - id: ds-componentes
+    caminho: Kolden/marca/design-system/03-componentes/leia-me.md
+    categoria: marca
+    status: vigente
+  - id: ds-aplicacoes
+    caminho: Kolden/marca/design-system/04-aplicacoes/exemplos.md
+    categoria: marca
+    status: vigente
+  - id: ds-indice-assets
+    caminho: Kolden/marca/design-system/assets/indice-assets.md
+    categoria: marca
+    status: vigente
+
+  # ─── Kolden — operação ────────────────────────────
+  - id: processos
+    caminho: Kolden/operacao/processos.md
+    categoria: operacao
+    status: rascunho
+  - id: juridico-e-compliance
+    caminho: Kolden/operacao/juridico-e-compliance.md
+    categoria: operacao
+    status: vigente
+  - id: juridico-documentos-oficiais
+    caminho: Kolden/operacao/juridico-e-compliance/documentos-oficiais/
+    categoria: operacao
+    status: vigente
+  - id: metricas-e-okrs
+    caminho: Kolden/operacao/metricas-e-okrs.md
+    categoria: operacao
+    status: rascunho
+  - id: planejamento-estrategico
+    caminho: Kolden/operacao/planejamento-estrategico.md
+    categoria: operacao
+    status: rascunho
+  - id: inteligencia-e-referencias
+    caminho: Kolden/operacao/inteligencia-e-referencias.md
+    categoria: operacao
+    status: vigente
+  - id: proposta-reorganizacao-drive
+    caminho: Kolden/operacao/proposta-reorganizacao-drive.md
+    categoria: operacao
+    status: rascunho
+  - id: kolden-budget-dre-tracker
+    caminho: Kolden/operacao/kolden-budget-dre-tracker.md
+    categoria: operacao
+    status: vigente
+  - id: tarefas-radar
+    caminho: Kolden/operacao/tarefas/radar.yaml
+    categoria: operacao
+    status: vigente
+  - id: tarefas-arquivo
+    caminho: Kolden/operacao/tarefas/arquivo.yaml
+    categoria: operacao
+    status: vigente
+  - id: tarefas-schema
+    caminho: Kolden/operacao/tarefas/schema.yaml
+    categoria: operacao
+    status: vigente
+
+  # ─── Kolden — áreas (visão lógica) ────────────────
   - id: areas-leia-me
-    caminho: areas/leia-me.md
+    caminho: Kolden/areas/leia-me.md
     categoria: organizacao
     status: vigente
   - id: area-ceo-topo
-    caminho: areas/ceo-topo.md
+    caminho: Kolden/areas/ceo-topo.md
     categoria: organizacao
     status: rascunho
   - id: area-operacoes
-    caminho: areas/operacoes.md
+    caminho: Kolden/areas/operacoes.md
     categoria: organizacao
     status: rascunho
   - id: area-financas
-    caminho: areas/financas.md
+    caminho: Kolden/areas/financas.md
     categoria: organizacao
     status: rascunho
   - id: area-tecnologia
-    caminho: areas/tecnologia.md
+    caminho: Kolden/areas/tecnologia.md
     categoria: organizacao
     status: rascunho
   - id: area-receita
-    caminho: areas/receita.md
+    caminho: Kolden/areas/receita.md
     categoria: organizacao
     status: rascunho
   - id: area-pessoas-rh
-    caminho: areas/pessoas-rh.md
+    caminho: Kolden/areas/pessoas-rh.md
     categoria: organizacao
     status: rascunho
   - id: area-marketing
-    caminho: areas/marketing.md
+    caminho: Kolden/areas/marketing.md
     categoria: organizacao
     status: rascunho
   - id: area-governanca
-    caminho: areas/governanca.md
+    caminho: Kolden/areas/governanca.md
     categoria: organizacao
     status: rascunho
   - id: area-inovacao
-    caminho: areas/inovacao.md
+    caminho: Kolden/areas/inovacao.md
     categoria: organizacao
     status: rascunho
+
+  # ─── Kolden — iniciativas ─────────────────────────
+  - id: iniciativa-auditoria-marca-2026
+    caminho: Kolden/iniciativas/auditoria-marca-2026/
+    categoria: iniciativa
+    status: vigente
+  - id: iniciativa-roadmap-reconstrucao
+    caminho: Kolden/iniciativas/roadmap-reconstrucao/
+    categoria: iniciativa
+    status: vigente
+
+  # ─── Kolden — histórico ───────────────────────────
+  - id: historico-clickup
+    caminho: Kolden/_historico/clickup/
+    categoria: arquivo
+    status: vigente
+  - id: historico-notas
+    caminho: Kolden/_historico/notas/
+    categoria: arquivo
+    status: vigente
+
+  # ─── Projetos (clientes + iniciativas) ────────────
+  - id: projetos-leia-me
+    caminho: Projetos/leia-me.md
+    categoria: projetos
+    status: vigente
+  - id: projetos-index
+    caminho: Projetos/_index.md
+    categoria: projetos
+    status: vigente
+
+  # ─── Sócios ───────────────────────────────────────
+  - id: socios-ronan
+    caminho: Socios/sobre-o-ronan/README.md
+    categoria: socios
+    status: vigente
+
+  # ─── Ferramentas ──────────────────────────────────
+  - id: ferramentas
+    caminho: Ferramentas/
+    categoria: ferramentas
+    status: vigente
