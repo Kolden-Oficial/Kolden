@@ -1,0 +1,436 @@
+# ═══════════════════════════════════════════════════════════════════
+# Arquivo de Tarefas da Kolden — append-only (concluídas + canceladas)
+# Schema: schema.yaml (v0.1.0)
+# Writer: skill /tarefa via comandos `done` e `cancel`
+# Política: nunca remover entradas. Auditoria > paranoia.
+# ═══════════════════════════════════════════════════════════════════
+
+versao_schema: "0.1.0"
+gerado_em: "2026-06-30"
+fonte_inicial: "planilha-google:1TNtxopvAkj9JFWRQNVYsbHD_43CRBWc_JpRhh8sjypY (aba Visão Geral, status=Concluído)"
+total_tarefas: 24
+
+# Schema estendido para o arquivo:
+#   encerrado_em: ISO-8601                  # quando foi para o arquivo
+#   aprendizado: string | null              # 1-3 linhas (preencher manualmente via /tarefa annotate)
+
+tarefas:
+
+# Padrão recorrente: "Criar cérebro sobre os clientes dentro do NotebookLM" — repetiu em 13 clientes
+# e está consistentemente concluído. Conteúdo padrão da observação (4 inputs adicionados):
+#   1. Transcrição das Reuniões | 2. Briefing do Cliente | 3. Redes Sociais | 4. Pesquisa de Mercado
+# → Já virou playbook `cerebro-notebooklm.md`.
+
+- id: KLD-2026-001
+  titulo: "Criar cérebro sobre o cliente no NotebookLM (Affordable Insulation)"
+  contexto: { tipo: cliente-externo, slug: affordable-insulation, dossie: "sobre-a-empresa/projetos/affordable-insulation/dossie.md", projeto: null }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [argos], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B6", importado_em: 2026-06-30 }
+  observacao: "Adicionados: transcrição de reuniões, briefing, redes sociais, pesquisa de mercado."
+  playbook: cerebro-notebooklm
+  aprendizado: null
+
+- id: KLD-2026-003
+  titulo: "Criar cérebro sobre o cliente no NotebookLM (Ariosto Ribeiro)"
+  contexto: { tipo: cliente-externo, slug: ariosto-ribeiro, dossie: "sobre-a-empresa/projetos/ariosto-ribeiro/leia-me.md", projeto: null }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [argos], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B8", importado_em: 2026-06-30 }
+  observacao: "Padrão: 4 inputs (transcrições, briefing, redes, pesquisa)."
+  playbook: cerebro-notebooklm
+  aprendizado: null
+
+- id: KLD-2026-004
+  titulo: "Criar grupo do aplicativo do Ariosto para iniciar o projeto"
+  contexto: { tipo: cliente-externo, slug: ariosto-ribeiro, dossie: "sobre-a-empresa/projetos/ariosto-ribeiro/leia-me.md", projeto: null }
+  estado: concluida
+  prioridade: alta
+  urgencia: imediata
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: humano-puro, agentes_envolvidos: [], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B9", importado_em: 2026-06-30 }
+  observacao: null
+  playbook: null
+  aprendizado: null
+
+- id: KLD-2026-008
+  titulo: "Criar cérebro sobre o cliente no NotebookLM (Brayan's Finish)"
+  contexto: { tipo: cliente-externo, slug: brayans-finish, dossie: "sobre-a-empresa/projetos/brayans-finish/dossie.md", projeto: null }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [argos], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B13", importado_em: 2026-06-30 }
+  observacao: "Padrão: 4 inputs."
+  playbook: cerebro-notebooklm
+  aprendizado: null
+
+- id: KLD-2026-018
+  titulo: "Criar cérebro sobre o cliente no NotebookLM (Entre Solos)"
+  contexto: { tipo: cliente-externo, slug: entresolos, dossie: "sobre-a-empresa/projetos/entresolos/dossie.md", projeto: null }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [argos], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B23", importado_em: 2026-06-30 }
+  observacao: "Padrão: 4 inputs."
+  playbook: cerebro-notebooklm
+  aprendizado: null
+
+- id: KLD-2026-045
+  titulo: "Criar cérebro sobre o cliente no NotebookLM (Mat3vic)"
+  contexto: { tipo: cliente-externo, slug: mat3vic, dossie: "sobre-a-empresa/projetos/mat3vic/dossie.md", projeto: null }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [argos], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B50", importado_em: 2026-06-30 }
+  observacao: "Padrão: 4 inputs."
+  playbook: cerebro-notebooklm
+  aprendizado: null
+
+- id: KLD-2026-048
+  titulo: "Criar cérebro sobre o cliente no NotebookLM (NutriOS Pro)"
+  contexto: { tipo: cliente-externo, slug: nutrios-pro, dossie: "sobre-a-empresa/projetos/nutrios-pro/dossie.md", projeto: "sobre-a-empresa/projetos/nutrios-pro/" }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [argos], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B53", importado_em: 2026-06-30 }
+  observacao: "Padrão: 4 inputs."
+  playbook: cerebro-notebooklm
+  aprendizado: null
+
+- id: KLD-2026-077
+  titulo: "Criar cérebro sobre o cliente no NotebookLM (Revolution Pro)"
+  contexto: { tipo: cliente-externo, slug: revolution-pro, dossie: "sobre-a-empresa/projetos/revolution-pro/dossie.md", projeto: null }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [argos], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B82", importado_em: 2026-06-30 }
+  observacao: "Padrão: 4 inputs."
+  playbook: cerebro-notebooklm
+  aprendizado: null
+
+- id: KLD-2026-079
+  titulo: "Criar cérebro sobre o cliente no NotebookLM (Rosie)"
+  contexto: { tipo: cliente-externo, slug: rosie, dossie: "sobre-a-empresa/projetos/rosie/dossie.md", projeto: "sobre-a-empresa/projetos/rosie/" }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [argos], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B85", importado_em: 2026-06-30 }
+  observacao: "Padrão: 4 inputs."
+  playbook: cerebro-notebooklm
+  aprendizado: null
+
+- id: KLD-2026-120
+  titulo: "Criar cérebro sobre o cliente no NotebookLM (Saulo Mendes)"
+  contexto: { tipo: cliente-externo, slug: instituto-saulo-mendes, dossie: "sobre-a-empresa/projetos/instituto-saulo-mendes/leia-me.md", projeto: null }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [argos], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B134", importado_em: 2026-06-30 }
+  observacao: "Padrão: 4 inputs."
+  playbook: cerebro-notebooklm
+  aprendizado: null
+
+- id: KLD-2026-122
+  titulo: "Criar cérebro sobre o cliente no NotebookLM (Seminar Stass)"
+  contexto: { tipo: cliente-externo, slug: stass, dossie: "sobre-a-empresa/projetos/stass/dossie.md", projeto: null }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [argos], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B136", importado_em: 2026-06-30 }
+  observacao: "Padrão: 4 inputs."
+  playbook: cerebro-notebooklm
+  aprendizado: null
+
+- id: KLD-2026-125
+  titulo: "Criar cérebro sobre o cliente no NotebookLM (Vibrações Celestiais)"
+  contexto: { tipo: cliente-externo, slug: vibracoes-celestiais, dossie: "sobre-a-empresa/projetos/vibracoes-celestiais/leia-me.md", projeto: null }
+  estado: concluida
+  prioridade: baixa
+  urgencia: longo-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [argos], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B139", importado_em: 2026-06-30 }
+  observacao: "Padrão: 4 inputs."
+  playbook: cerebro-notebooklm
+  aprendizado: null
+
+- id: KLD-2026-128
+  titulo: "Criar cérebro sobre o cliente no NotebookLM (Vilela Construction)"
+  contexto: { tipo: cliente-externo, slug: vilela-construction, dossie: "sobre-a-empresa/projetos/vilela-construction/dossie.md", projeto: null }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [argos], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B142", importado_em: 2026-06-30 }
+  observacao: "Padrão: 4 inputs."
+  playbook: cerebro-notebooklm
+  aprendizado: null
+
+# Rosie — tarefas operacionais concluídas
+- id: KLD-2026-130
+  titulo: "Aceitar solicitação da Nuvemshop (Rosie)"
+  contexto: { tipo: cliente-externo, slug: rosie, dossie: "sobre-a-empresa/projetos/rosie/dossie.md", projeto: "sobre-a-empresa/projetos/rosie/" }
+  estado: concluida
+  prioridade: alta
+  urgencia: imediata
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: humano-puro, agentes_envolvidos: [], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B90", importado_em: 2026-06-30 }
+  observacao: null
+  playbook: null
+  aprendizado: null
+
+- id: KLD-2026-131
+  titulo: "Fazer aprovação e disparo do email marketing (Rosie)"
+  contexto: { tipo: cliente-externo, slug: rosie, dossie: "sobre-a-empresa/projetos/rosie/dossie.md", projeto: "sobre-a-empresa/projetos/rosie/" }
+  estado: concluida
+  prioridade: alta
+  urgencia: imediata
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [caliope], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B94", importado_em: 2026-06-30 }
+  observacao: null
+  playbook: null
+  aprendizado: null
+
+- id: KLD-2026-132
+  titulo: "Organizar planilha enviada pelo Bruno (Rosie)"
+  contexto: { tipo: cliente-externo, slug: rosie, dossie: "sobre-a-empresa/projetos/rosie/dossie.md", projeto: "sobre-a-empresa/projetos/rosie/" }
+  estado: concluida
+  prioridade: alta
+  urgencia: imediata
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: humano-puro, agentes_envolvidos: [], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B95", importado_em: 2026-06-30 }
+  observacao: null
+  playbook: null
+  aprendizado: null
+
+- id: KLD-2026-133
+  titulo: "Revisar forma de pagamento das contas de anúncio (Rosie)"
+  contexto: { tipo: cliente-externo, slug: rosie, dossie: "sobre-a-empresa/projetos/rosie/dossie.md", projeto: "sobre-a-empresa/projetos/rosie/" }
+  estado: concluida
+  prioridade: alta
+  urgencia: imediata
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: humano-puro, agentes_envolvidos: [], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B97", importado_em: 2026-06-30 }
+  observacao: null
+  playbook: null
+  aprendizado: null
+
+# ─── Migração radar→arquivo 2026-06-30 (sessão hermes-chief, sem skill /tarefa) ─
+# 7 tarefas Rosie marcadas como concluídas pelo Ronan; planilha sincronizada na mesma
+# sessão (G85, G86, G95, G100, G101, G103, G116 = "Concluído"). aprendizado: null —
+# preencher depois via skill /tarefa annotate quando ela existir.
+
+- id: KLD-2026-080
+  titulo: "Atualizar taxas de precificação da Solomon (Rosie)"
+  contexto: { tipo: cliente-externo, slug: rosie, dossie: "sobre-a-empresa/projetos/rosie/dossie.md", projeto: "sobre-a-empresa/projetos/rosie/" }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [pactolo], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B86", importado_em: 2026-06-30 }
+  observacao: "Solicitar ao Bruno (Nuvemshop): taxa fixa mensal R$ 0,00; taxa percentual % 0,00."
+  playbook: null
+  aprendizado: null
+
+- id: KLD-2026-081
+  titulo: "Revisar padrão de UTMs no Meta e no Google da Solomon (Rosie)"
+  contexto: { tipo: cliente-externo, slug: rosie, dossie: "sobre-a-empresa/projetos/rosie/dossie.md", projeto: "sobre-a-empresa/projetos/rosie/" }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-sozinho, agentes_envolvidos: [metis, peitho], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B87", importado_em: 2026-06-30 }
+  observacao: "Meta: utm_source={{site_source_name}}&utm_medium={{placement}}&utm_campaign={{campaign.id}}&utm_content={{ad.id}} | Google: {lpurl}?utm_source=google&utm_content={creative}&utm_campaign={campaignid}"
+  playbook: null
+  aprendizado: null
+
+- id: KLD-2026-087
+  titulo: "Ativar autenticação 2FA em todos os sistemas no marketing@rosie"
+  contexto: { tipo: cliente-externo, slug: rosie, dossie: "sobre-a-empresa/projetos/rosie/dossie.md", projeto: "sobre-a-empresa/projetos/rosie/" }
+  estado: concluida
+  prioridade: alta
+  urgencia: imediata
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: humano-puro, agentes_envolvidos: [], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B96", importado_em: 2026-06-30 }
+  observacao: null
+  playbook: null
+  aprendizado: null
+
+- id: KLD-2026-091
+  titulo: "Enviar documento de aprovação ao Meta com dados da esposa do Bruno (BM Rosie)"
+  contexto: { tipo: cliente-externo, slug: rosie, dossie: "sobre-a-empresa/projetos/rosie/dossie.md", projeto: "sobre-a-empresa/projetos/rosie/" }
+  estado: concluida
+  prioridade: alta
+  urgencia: imediata
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-instrumenta-humano-decide, agentes_envolvidos: [], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B101", importado_em: 2026-06-30 }
+  observacao: null
+  playbook: null
+  aprendizado: null
+
+- id: KLD-2026-092
+  titulo: "Criar página nova no Facebook da Rosie"
+  contexto: { tipo: cliente-externo, slug: rosie, dossie: "sobre-a-empresa/projetos/rosie/dossie.md", projeto: "sobre-a-empresa/projetos/rosie/" }
+  estado: concluida
+  prioridade: alta
+  urgencia: imediata
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-sozinho, agentes_envolvidos: [pheme], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B102", importado_em: 2026-06-30 }
+  observacao: null
+  playbook: null
+  aprendizado: null
+
+- id: KLD-2026-095
+  titulo: "Instalar Hotjar no site da Rosie"
+  contexto: { tipo: cliente-externo, slug: rosie, dossie: "sobre-a-empresa/projetos/rosie/dossie.md", projeto: "sobre-a-empresa/projetos/rosie/" }
+  estado: concluida
+  prioridade: alta
+  urgencia: imediata
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [dedalo, metis], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B104", importado_em: 2026-06-30 }
+  observacao: null
+  playbook: null
+  aprendizado: null
+
+- id: KLD-2026-108
+  titulo: "Infra e segurança da Rosie (downgrade Workspace, 2FA, taxa Nuvemshop)"
+  contexto: { tipo: cliente-externo, slug: rosie, dossie: "sobre-a-empresa/projetos/rosie/dossie.md", projeto: "sobre-a-empresa/projetos/rosie/" }
+  estado: concluida
+  prioridade: media
+  urgencia: curto-prazo
+  prazo: null
+  criado_em: 2026-06-30
+  atualizado_em: 2026-06-30
+  encerrado_em: 2026-06-30
+  responsavel: ronan
+  capacidade_kolden: { classificacao: agente-faz-com-input, agentes_envolvidos: [egide, dedalo], bloqueio_capacidade: null }
+  origem: { fonte: planilha-google, fonte_id: "Visão Geral!B117", importado_em: 2026-06-30 }
+  observacao: "Downgrade Workspace, atualizar WhatsApp Business número novo, taxa Nuvemshop, aceitar pendências da equipe, 2FA em todos sistemas, documentar lista, revisar pagamentos de anúncio, investigar bug pesquisa 'Rosie' (manutenção)."
+  playbook: null
+  aprendizado: null

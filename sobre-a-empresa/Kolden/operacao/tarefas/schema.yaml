@@ -1,0 +1,112 @@
+---
+id: schema-radar-de-tarefas
+titulo: "Schema do radar de tarefas da Kolden"
+resumo: "Contrato do radar.yaml e arquivo.yaml. Toda tarefa que entra no radar precisa casar este schema."
+categoria: operacao
+palavras-chave: [schema, contrato, radar, tarefa, validador]
+status: oficial
+versao: "0.1.0"
+atualizado-em: 2026-06-30
+relacionados: [README, ../processos]
+---
+
+# Schema — radar de tarefas
+
+> Contrato canônico de uma tarefa no `radar.yaml` (estado vivo) e no `arquivo.yaml`
+> (concluídas/canceladas, append-only). A skill `/tarefa` é o único writer destes dois
+> arquivos. Humano lê, agente escreve.
+
+## Princípios invioláveis
+
+1. **SSoT único** — `radar.yaml` é a única fonte mutável de estado. Qualquer `clientes/<slug>.md`,
+   `contextos-internos/*.md` ou `pessoal.md` é **projeção read-only** gerada por comando, com
+   header `<!-- gerado de radar.yaml — não editar -->`.
+2. **Writer único** — só a skill `/tarefa` escreve. Ronan nunca edita à mão (quebra schema).
+   Hermes Chief não escreve direto, invoca a skill.
+3. **Frontmatter unidirecional** — a tarefa aponta para o dossiê do cliente; o dossiê **não
+   muda**. Acoplamento baixo. Se o caminho do radar mudar, dossiês não quebram.
+4. **PT-BR estrito** — campos do schema em PT-BR. Valores enumerados (estado, prioridade,
+   urgência, classificação) em PT-BR kebab-case.
+5. **Idempotência por origem** — `origem.fonte_id` identifica de onde a tarefa veio. Re-import
+   da mesma fonte não duplica; atualiza.
+6. **Lock pragmático** — concorrência via `radar.yaml.lock` (PID + timestamp, TTL 5min). Plano
+   de evolução: migrar para JSONL append-only depois da primeira dor.
+
+## Campos da tarefa
+
+```yaml
+- id: string                          # KLD-{ano}-{contador:03d}; reset anual
+  titulo: string                      # PT-BR, imperativo, ≤120 chars
+  contexto:
+    tipo: enum                        # cliente-externo | cliente-interno | pessoal
+    slug: string                      # kebab-case do cliente/contexto
+    dossie: string | null             # path ao dossiê em sobre-a-empresa/projetos/
+    projeto: string | null            # path ao projeto se virou Cairos (sobre-a-empresa/Projetos/...)
+  estado: enum                        # backlog | pendente | em-andamento | aguardando-cliente | bloqueada | concluida | cancelada
+  prioridade: enum                    # alta | media | baixa
+  urgencia: enum                      # imediata | curto-prazo | longo-prazo
+  prazo: string | null                # ISO-8601 (AAAA-MM-DD); opcional
+  criado_em: string                   # ISO-8601
+  atualizado_em: string               # ISO-8601
+  responsavel: string                 # default: ronan
+  capacidade_kolden:
+    classificacao: enum               # ver "5 buckets" abaixo
+    agentes_envolvidos: [string]      # ids de squads/skills/MCPs (peitho, argos, caliope...)
+    bloqueio_capacidade: string|null  # descrever o que falta se "bloqueado-por-capacidade-faltante"
+  origem:
+    fonte: enum                       # planilha-google | chat | manual
+    fonte_id: string                  # identificador único na fonte (ex: "Visão Geral!A15")
+    importado_em: string              # ISO-8601
+  observacao: string | null           # texto livre multi-linha (descrição + contexto + notas)
+  playbook: string | null             # nome do playbook se instância de template
+```
+
+## Enumerações
+
+### `estado`
+- `backlog` — registrada mas ainda sem agendamento. Para "talvez um dia".
+- `pendente` — agendada para fazer, mas não começou.
+- `em-andamento` — alguém (humano ou agente) está executando.
+- `aguardando-cliente` — bloqueada por input/resposta de stakeholder externo.
+- `bloqueada` — bloqueada por capacidade técnica faltante. Detalhar em `capacidade_kolden.bloqueio_capacidade`.
+- `concluida` — terminada com sucesso. **Move para `arquivo.yaml`** + nota de aprendizado.
+- `cancelada` — abandonada. **Move para `arquivo.yaml`** + motivo no campo `observacao`.
+
+### `prioridade`
+- `alta` — não fazer agora compromete cliente, prazo ou receita.
+- `media` — fazer essa semana ou próxima.
+- `baixa` — backlog próximo (mês corrente).
+
+### `urgencia`
+- `imediata` — prazo em ≤7 dias ou bloqueia outra coisa quente.
+- `curto-prazo` — prazo em ≤30 dias.
+- `longo-prazo` — prazo em ≤90 dias ou sem prazo definido.
+
+### `capacidade_kolden.classificacao` (os 5 buckets)
+1. `agente-faz-sozinho` — squad existente resolve ponta a ponta (ex: transcrever vídeo → Argos; gerar copy → Caliope).
+2. `agente-faz-com-input` — squad resolve **com input do Ronan** (ex: publicar reel → Pheme + criativo).
+3. `agente-instrumenta-humano-decide` — agente prepara, humano decide/assina (ex: registro INPI → Nomos prepara, Ronan assina).
+4. `humano-puro` — agente não atua (ex: fazer exames, comprar domínio, viajar).
+5. `bloqueado-por-capacidade-faltante` — falta tool/MCP/credencial. **Vira input do Caos** para criar agente/MCP/skill (ex: Google Ads dev token pendente).
+
+## ID — esquema de geração
+
+`KLD-{ano}-{contador:03d}`
+
+- `ano` = ano corrente (4 dígitos).
+- `contador` = (max id do `ano` em `radar.yaml`+`arquivo.yaml`) + 1; reset anual.
+- Exemplos: `KLD-2026-001`, `KLD-2026-042`, `KLD-2027-001`.
+
+Risco: rollover de ano. Mitigação: contador é calculado por leitura, não por estado externo.
+
+## Validador
+
+A skill `/tarefa` valida toda escrita contra este schema antes de gravar. Em caso de violação:
+- Campo obrigatório ausente → ABORTAR + relatar.
+- Valor fora da enumeração → ABORTAR + sugerir valor mais próximo.
+- ID duplicado → ABORTAR + relatar conflito.
+
+## Versionamento
+
+`versao` neste arquivo é o número do schema. Toda mudança breaking incrementa minor (0.1 → 0.2)
+e exige migração de `radar.yaml` documentada em `importacoes/`.

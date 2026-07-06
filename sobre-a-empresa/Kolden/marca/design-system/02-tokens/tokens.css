@@ -1,0 +1,84 @@
+/*
+ * Kolden — Design Tokens (CSS custom properties)
+ * Fonte de verdade: tokens.json. Não edite valores aqui sem atualizar o JSON e o preset Tailwind.
+ * Uso: importe este arquivo e consuma var(--ds-*). Veja 03-componentes/starter/index.html.
+ */
+:root {
+  /* ---- Cores de marca ---- */
+  --ds-color-scarlet: #FF3D22;
+  --ds-color-ink: #110E0F;
+  --ds-color-off-white: #E8E6F1;
+  --ds-color-white: #FFFFFF;
+
+  /* ---- Neutros (rampa de UI sobre escuro) ---- */
+  --ds-color-ink-950: #110E0F;
+  --ds-color-ink-900: #1A1617;
+  --ds-color-ink-800: #241F20;
+  --ds-color-ink-700: #332D2E;
+  --ds-color-ink-500: #6E6668;
+
+  /* ---- Semânticos ---- */
+  --ds-bg-default: var(--ds-color-ink);
+  --ds-bg-surface: var(--ds-color-ink-900);
+  --ds-bg-surface-2: var(--ds-color-ink-800);
+  --ds-bg-inverse: var(--ds-color-off-white);
+
+  --ds-text-default: var(--ds-color-off-white);
+  --ds-text-strong: var(--ds-color-white);
+  --ds-text-muted: var(--ds-color-ink-500);
+  --ds-text-inverse: var(--ds-color-ink);
+  --ds-text-accent: var(--ds-color-scarlet);
+
+  --ds-accent: var(--ds-color-scarlet);
+  --ds-accent-contrast: var(--ds-color-ink); /* texto sobre scarlet (AA 5.43:1) */
+
+  --ds-border: var(--ds-color-ink-700);
+  --ds-border-focus: var(--ds-color-scarlet);
+
+  /* ---- Tipografia ---- */
+  --ds-font-base: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --ds-font-accent: "Eurostile", "Saira Semi Condensed", "Rajdhani", sans-serif;
+
+  --ds-weight-regular: 400;
+  --ds-weight-semibold: 600;
+  --ds-weight-bold: 700;
+  --ds-weight-extrabold: 800;
+  --ds-weight-black: 900;
+
+  --ds-font-size-display: 3.815rem;
+  --ds-font-size-h1: 3.052rem;
+  --ds-font-size-h2: 2.441rem;
+  --ds-font-size-h3: 1.953rem;
+  --ds-font-size-h4: 1.563rem;
+  --ds-font-size-body-lg: 1.25rem;
+  --ds-font-size-body: 1rem;
+  --ds-font-size-small: 0.8rem;
+  --ds-font-size-eyebrow: 0.75rem;
+
+  --ds-line-tight: 1.15;
+  --ds-line-snug: 1.3;
+  --ds-line-normal: 1.6;
+
+  /* ---- Espaçamento (base 4px) ---- */
+  --ds-space-0: 0rem;
+  --ds-space-1: 0.25rem;
+  --ds-space-2: 0.5rem;
+  --ds-space-3: 0.75rem;
+  --ds-space-4: 1rem;
+  --ds-space-6: 1.5rem;
+  --ds-space-8: 2rem;
+  --ds-space-12: 3rem;
+  --ds-space-16: 4rem;
+  --ds-space-24: 6rem;
+
+  /* ---- Raio ---- */
+  --ds-radius-sm: 0.25rem;
+  --ds-radius-md: 0.5rem;
+  --ds-radius-lg: 1rem;
+  --ds-radius-pill: 9999px;
+
+  /* ---- Sombra ---- */
+  --ds-shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.4);
+  --ds-shadow-md: 0 4px 12px 0 rgba(0,0,0,0.5);
+  --ds-shadow-glow: 0 0 24px 0 rgba(255,61,34,0.35);
+}
