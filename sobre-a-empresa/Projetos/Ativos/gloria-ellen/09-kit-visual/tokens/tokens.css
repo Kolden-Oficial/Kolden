@@ -1,0 +1,136 @@
+/* ============================================================
+   Glória Ellen — Design Tokens (CSS variables)
+   ------------------------------------------------------------
+   Traduz a camada SEMANTIC do tokens.json em CSS custom properties.
+   Consumir SEMPRE via var(--...) — nunca escrever hex direto na UI.
+   Fonte da verdade: ./tokens.json
+   ============================================================ */
+
+:root {
+  /* ------------------------------------------------------------
+     Cor — marca (âncora + secundária)
+     ------------------------------------------------------------ */
+  --color-brand-primary:        #3D5A6C;                    /* Azul-mar ao amanhecer */
+  --color-brand-primary-deep:   #2A4152;                    /* Hover/pressed da primária */
+  --color-brand-secondary:      #6B7F5C;                    /* Verde-árvores em silêncio */
+  --color-brand-secondary-deep: #4E6142;                    /* Hover/pressed da secundária */
+
+  /* ------------------------------------------------------------
+     Cor — fundos (backgrounds)
+     ------------------------------------------------------------ */
+  --color-background-default:   #FAF5EC;                    /* Creme — fundo principal (80% das peças) */
+  --color-background-subtle:    #F0E7D0;                    /* Creme quente — cartões de destaque calmo */
+  --color-background-warm:      #DDD0B5;                    /* Bege-areia — papel de cartão */
+  --color-background-sea:       #3D5A6C;                    /* Azul-mar — cartões invertidos */
+  --color-background-forest:    #6B7F5C;                    /* Verde-mata — cartões invertidos */
+
+  /* ------------------------------------------------------------
+     Cor — texto (hierarquia de leitura)
+     ------------------------------------------------------------ */
+  --color-text-default:         #2A2B27;                    /* Ink — títulos e corpo forte (não é preto puro) */
+  --color-text-soft:            #5C5A50;                    /* Ink soft — parágrafos e leitura longa */
+  --color-text-mute:            #8B8478;                    /* Ink mute — eyebrows, metadados, legendas */
+  --color-text-on-dark:         #FAF5EC;                    /* Texto sobre superfícies escuras */
+  --color-text-on-dark-soft:    rgba(250, 245, 236, 0.75);  /* Legenda sobre superfícies escuras */
+
+  /* ------------------------------------------------------------
+     Cor — accents (uso raro, calibrado)
+     ------------------------------------------------------------ */
+  --color-accent-dawn:          #C7A876;                    /* Dourado — selo, sol do amanhecer */
+  --color-accent-rose:          #E3B8A1;                    /* Rosa-alvorada — detalhe sutil */
+
+  /* ------------------------------------------------------------
+     Cor — bordas
+     ------------------------------------------------------------ */
+  --color-border-subtle:        rgba(42, 43, 39, 0.10);     /* Linha discreta — separadores, contornos */
+
+  /* ------------------------------------------------------------
+     Tipografia — famílias
+     v1.1 · logo migrado de Sacramento (Direção B, registro) para
+     Cormorant Italic Light (Direção A, oficial) — 2026-07-02.
+     --font-family-script continua declarada como alias apontando para
+     a família do logo (compatibilidade com consumidores antigos).
+     ------------------------------------------------------------ */
+  --font-family-serif:  'Cormorant Garamond', Georgia, serif;
+  --font-family-sans:   'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-family-logo:   'Cormorant Garamond', Georgia, serif;
+  --font-family-script: var(--font-family-logo);           /* alias v1.1 — mantido por compatibilidade */
+
+  /* Peso e estilo canônicos do logo — Cormorant Italic Light 300. */
+  --font-logo-weight:   300;
+  --font-logo-style:    italic;
+  --font-logo-tracking: -0.01em;
+
+  /* ------------------------------------------------------------
+     Tipografia — pesos
+     Marca "sussurra" — light domina. Regular para corpo. Medium para ênfase.
+     ------------------------------------------------------------ */
+  --font-weight-light:   300;
+  --font-weight-regular: 400;
+  --font-weight-medium:  500;
+
+  /* ------------------------------------------------------------
+     Tipografia — escala modular (1.333 · perfect fourth)
+     ------------------------------------------------------------ */
+  --font-size-xs:   0.75rem;    /* 12px  — micro (eyebrow) */
+  --font-size-sm:   0.875rem;   /* 14px  — pequeno */
+  --font-size-base: 1rem;       /* 16px  — base */
+  --font-size-md:   1.333rem;   /* ~21px — lead */
+  --font-size-lg:   1.777rem;   /* ~28px — h3 */
+  --font-size-xl:   2.369rem;   /* ~38px — h2 */
+  --font-size-2xl:  3.157rem;   /* ~51px — h1 padrão */
+  --font-size-3xl:  4.209rem;   /* ~67px — h1 hero */
+  --font-size-4xl:  5.61rem;    /* ~90px — assinatura big */
+
+  /* ------------------------------------------------------------
+     Tipografia — line-height + letter-spacing calibrados
+     ------------------------------------------------------------ */
+  --line-height-tight:   1.05;   /* h1 / assinatura */
+  --line-height-snug:    1.15;   /* h2 */
+  --line-height-normal:  1.4;    /* corpo padrão */
+  --line-height-relaxed: 1.55;   /* corpo longo (body) */
+
+  --letter-spacing-tight:   -0.02em;  /* h1 */
+  --letter-spacing-snug:    -0.01em;  /* h2 */
+  --letter-spacing-normal:  0;
+  --letter-spacing-wide:    0.15em;   /* código, uppercase leve */
+  --letter-spacing-widest:  0.35em;   /* eyebrow — assinatura editorial */
+
+  /* ------------------------------------------------------------
+     Espaçamento — base 4px
+     ------------------------------------------------------------ */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* ------------------------------------------------------------
+     Raio — geometria discreta, sem plástico
+     ------------------------------------------------------------ */
+  --radius-none: 0;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-pill: 9999px;
+
+  /* ------------------------------------------------------------
+     Sombra — a única sombra da marca
+     Não somar duas. Não trocar por drop-shadow forte.
+     ------------------------------------------------------------ */
+  --shadow-subtle: 0 4px 30px rgba(42, 43, 39, 0.06);
+
+  /* ------------------------------------------------------------
+     Textura — grão de filme (assinatura tátil)
+     Aplicar como pseudo-elemento fixed com mix-blend-mode: multiply.
+     ------------------------------------------------------------ */
+  --texture-filmgrain: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='2'/><feColorMatrix values='0 0 0 0 0.17  0 0 0 0 0.17  0 0 0 0 0.15  0 0 0 0.14 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  --texture-filmgrain-opacity: 0.35;
+  --texture-filmgrain-blend:   multiply;
+}

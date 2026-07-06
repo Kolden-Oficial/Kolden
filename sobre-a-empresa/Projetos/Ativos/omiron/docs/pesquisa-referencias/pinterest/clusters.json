@@ -1,0 +1,899 @@
+{
+  "counts": {
+    "Bibliotecas antigas": 13,
+    "Noite / escuro / lua": 26,
+    "Personagens / rosto": 50,
+    "Renascimento / pintura classica": 24,
+    "Wallpaper / aesthetic": 50,
+    "Onda / mar / agua": 10,
+    "Mitologia/anjos/Michelangelo": 20,
+    "Ceu / nuvem / celeste": 24,
+    "Estatuas / bustos": 10,
+    "Coruja / animais": 2,
+    "Montanha / paisagem": 28,
+    "Relogio / tempo": 3,
+    "Ouro / dourado / luz": 21,
+    "Yoga / medita / espiritual": 10,
+    "Templo grego / colunas": 13,
+    "Fogo / chama / vela": 3
+  },
+  "perPin": [
+    {
+      "pinId": "1069886455244627242",
+      "alt": "a painting of people in a library with bookshelves and paintings on the walls",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Noite / escuro / lua",
+        "Personagens / rosto",
+        "Renascimento / pintura classica",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627346",
+      "alt": "the great wave off kanjika island by horyu koshiwaki",
+      "clusters": [
+        "Onda / mar / agua",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627279",
+      "alt": "two hands reaching out to touch each other in front of a sky with white clouds",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Mitologia/anjos/Michelangelo",
+        "Ceu / nuvem / celeste",
+        "Renascimento / pintura classica",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627317",
+      "alt": "the creation of man being lifted by two men in front of a painting on a wall",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Personagens / rosto",
+        "Renascimento / pintura classica",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627241",
+      "alt": "two birds are flying in the sky above an ornate building",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Estatuas / bustos",
+        "Ceu / nuvem / celeste",
+        "Coruja / animais",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627282",
+      "alt": "an ornate painting on the ceiling of a building",
+      "clusters": [
+        "Renascimento / pintura classica"
+      ]
+    },
+    {
+      "pinId": "1069886455244627316",
+      "alt": "two hands reaching out towards each other in front of a cloudy sky with the words, best",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Ceu / nuvem / celeste",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627308",
+      "alt": "an image of a painting with people in it",
+      "clusters": [
+        "Personagens / rosto",
+        "Renascimento / pintura classica",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455246441930",
+      "alt": "an artistic painting of clouds surrounding a building on top of a mountain in the sky",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Ceu / nuvem / celeste",
+        "Montanha / paisagem",
+        "Renascimento / pintura classica",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627299",
+      "alt": "many books are stacked on the wall in front of each other",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Noite / escuro / lua",
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627367",
+      "alt": "a person sitting in the middle of a body of water with mountains in the background",
+      "clusters": [
+        "Onda / mar / agua",
+        "Montanha / paisagem",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "1069886455244627250",
+      "alt": "an old pocket watch hanging from a chain on some books",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Relogio / tempo"
+      ]
+    },
+    {
+      "pinId": "1069886455244627318",
+      "alt": "sunlight streaming through the stained glass windows in a church",
+      "clusters": [
+        "Ouro / dourado / luz",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627303",
+      "alt": "the starry night in new york city",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Noite / escuro / lua",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627253",
+      "alt": "an old book shelf filled with lots of books",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627244",
+      "alt": "an old book shelf filled with lots of books",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Noite / escuro / lua",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455246295733",
+      "alt": "a painting of a bridge over a river with people on it and mountains in the background",
+      "clusters": [
+        "Montanha / paisagem",
+        "Personagens / rosto",
+        "Renascimento / pintura classica"
+      ]
+    },
+    {
+      "pinId": "1069886455244627296",
+      "alt": "A stylishly arranged bookshelf filled with a variety of books and decorative elements, showcasing a blend of literature and artistic decor.",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Noite / escuro / lua",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627369",
+      "alt": "a man sitting in the middle of a forest with tall trees on either side of him",
+      "clusters": [
+        "Montanha / paisagem",
+        "Yoga / medita / espiritual",
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455246295572",
+      "alt": "the ceiling is decorated with gold and ornate designs on it's sides, along with two large columns",
+      "clusters": [
+        "Templo grego / colunas",
+        "Ouro / dourado / luz",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627258",
+      "alt": "an old world globe sitting on top of a desk",
+      "clusters": [
+        "Relogio / tempo",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627284",
+      "alt": "the creation of adam and eve painted on a wall",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Renascimento / pintura classica",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627325",
+      "alt": "an archway with stained glass windows and lit candles in the center, leading into a garden",
+      "clusters": [
+        "Fogo / chama / vela",
+        "Ouro / dourado / luz"
+      ]
+    },
+    {
+      "pinId": "1069886455244627516",
+      "alt": "an ornately decorated ceiling and pillars in a building",
+      "clusters": [
+        "Templo grego / colunas",
+        "Estatuas / bustos",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627255",
+      "alt": "the sun shines through a stained glass window",
+      "clusters": [
+        "Ouro / dourado / luz",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627333",
+      "alt": "a large room filled with lots of books",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Noite / escuro / lua",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455246295774",
+      "alt": "a painting of a bridge over a river with people on it and mountains in the background",
+      "clusters": [
+        "Montanha / paisagem",
+        "Personagens / rosto",
+        "Renascimento / pintura classica"
+      ]
+    },
+    {
+      "pinId": "1069886455244627345",
+      "alt": "an image of a mountain with trees in the foreground and water on the other side",
+      "clusters": [
+        "Onda / mar / agua",
+        "Montanha / paisagem",
+        "Renascimento / pintura classica"
+      ]
+    },
+    {
+      "pinId": "1069886455244627276",
+      "alt": "a painting of a man standing on top of a mountain looking out at the clouds",
+      "clusters": [
+        "Ceu / nuvem / celeste",
+        "Montanha / paisagem",
+        "Personagens / rosto",
+        "Renascimento / pintura classica",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455246295585",
+      "alt": "an ornately decorated hallway with gold and white marble work on the walls, along with large columns",
+      "clusters": [
+        "Templo grego / colunas",
+        "Estatuas / bustos",
+        "Ouro / dourado / luz",
+        "Renascimento / pintura classica",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455246441810",
+      "alt": "a person standing on top of a mountain with clouds in the sky and mountains behind them",
+      "clusters": [
+        "Ceu / nuvem / celeste",
+        "Montanha / paisagem",
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627373",
+      "alt": "Zen meditator cooling-house_COPY));",
+      "clusters": [
+        "Montanha / paisagem",
+        "Yoga / medita / espiritual"
+      ]
+    },
+    {
+      "pinId": "1069886455246295639",
+      "alt": "the painting is very large and has many people on it's sides, including angels",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Personagens / rosto",
+        "Renascimento / pintura classica",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627396",
+      "alt": "a book shelf filled with lots of books",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455246441272",
+      "alt": "an image of a large building with columns and statues",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Templo grego / colunas",
+        "Estatuas / bustos",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627322",
+      "alt": "an old library with lots of books on the shelves and lights hanging from the ceiling",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Ouro / dourado / luz",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627262",
+      "alt": "a room filled with lots of books and stacks of papers on the wall next to each other",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627261",
+      "alt": "the solar system with all its planets and their sundials in black, gold, and white",
+      "clusters": [
+        "Noite / escuro / lua",
+        "Ouro / dourado / luz",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627374",
+      "alt": "myself Nature-inspired Art For Meditation, Yoga Meditation Art, Tree Of Life Yoga Art, Nature-themed Spiritual Art, Spiritual Meditation Aesthetic Art, Tree Of Life Yoga, Tree Of Yoga, Yoga Tree Illustration, Yoga Wallpaper Art",
+      "clusters": [
+        "Montanha / paisagem",
+        "Yoga / medita / espiritual",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455246295637",
+      "alt": "an artistic painting of clouds surrounding a building on top of a mountain in the sky",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Ceu / nuvem / celeste",
+        "Montanha / paisagem",
+        "Renascimento / pintura classica",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455246441853",
+      "alt": "a man standing on top of a cliff near the ocean under a stormy sky with lightning",
+      "clusters": [
+        "Onda / mar / agua",
+        "Ceu / nuvem / celeste",
+        "Ouro / dourado / luz",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "1069886455246441944",
+      "alt": "a person standing in front of an arch with the moon above it and clouds behind them",
+      "clusters": [
+        "Templo grego / colunas",
+        "Ceu / nuvem / celeste",
+        "Noite / escuro / lua",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "1069886455246441818",
+      "alt": "a painting of a man kneeling in the grass under a cloudy sky with sunbeams",
+      "clusters": [
+        "Ceu / nuvem / celeste",
+        "Ouro / dourado / luz",
+        "Personagens / rosto",
+        "Renascimento / pintura classica"
+      ]
+    },
+    {
+      "pinId": "1069886455246441892",
+      "alt": "a woman sitting on a throne surrounded by candles",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Fogo / chama / vela",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "1069886455246441937",
+      "alt": "a man standing in the middle of a hallway with angel wings on his head and arms",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Estatuas / bustos",
+        "Ceu / nuvem / celeste",
+        "Noite / escuro / lua",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "1069886455246441924",
+      "alt": "a man sitting on top of a cliff looking out at the clouds in front of him",
+      "clusters": [
+        "Ceu / nuvem / celeste",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "1069886455244627301",
+      "alt": "Step into the genius of Leonardo da Vinci — artist, inventor, and Renaissance master. Explore his iconic paintings, brilliant sketches, and visionary ideas that shaped the world of art and science.",
+      "clusters": [
+        "Personagens / rosto",
+        "Renascimento / pintura classica"
+      ]
+    },
+    {
+      "pinId": "1069886455246441805",
+      "alt": "a man standing on top of a mountain with lightning in the sky behind him,",
+      "clusters": [
+        "Ceu / nuvem / celeste",
+        "Montanha / paisagem",
+        "Ouro / dourado / luz",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "1069886455244627386",
+      "alt": "Hindi Spiritual Art, Magnetic Field Aesthetic, Human Magnetic Field, Human Body Magnetic Field, Trippy Shiva Wallpapers, Shiva Trance Wallpaper, Body Electromagnetic Field, Body Energy Fields, Consciousness Energy Grid Illustration",
+      "clusters": [
+        "Montanha / paisagem",
+        "Yoga / medita / espiritual",
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1069886455244627300",
+      "alt": "Cute blue aesthetic starry night wallpaper inspired by Van Gogh night sky with swirling stars and deep blue tones.",
+      "clusters": [
+        "Ceu / nuvem / celeste",
+        "Montanha / paisagem",
+        "Noite / escuro / lua",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "461689399315308368",
+      "alt": "a black hole with the quote i had to make you uncomfortableable otherwise when you were bored",
+      "clusters": [
+        "Noite / escuro / lua",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "586664288991820084",
+      "alt": "a woman dressed in an ancient greek costume holding a spear and standing with her right leg up",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Personagens / rosto",
+        "Renascimento / pintura classica"
+      ]
+    },
+    {
+      "pinId": "745556913355183142",
+      "alt": "a painting of a man standing in the clouds with lightning behind him and an image of a god",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Ceu / nuvem / celeste",
+        "Ouro / dourado / luz",
+        "Personagens / rosto",
+        "Renascimento / pintura classica"
+      ]
+    },
+    {
+      "pinId": "407364728800858869",
+      "alt": "two people walking into the ocean at sunset",
+      "clusters": [
+        "Onda / mar / agua",
+        "Ouro / dourado / luz",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "774971048421294041",
+      "alt": "a man standing on top of a cliff in the middle of clouds with an open door",
+      "clusters": [
+        "Bibliotecas antigas",
+        "Ceu / nuvem / celeste",
+        "Montanha / paisagem",
+        "Personagens / rosto",
+        "Renascimento / pintura classica"
+      ]
+    },
+    {
+      "pinId": "1144406955328043969",
+      "alt": "Wounded Knight Art, Soldier Of God, Dark Fantasy Knight In Field, Crusades Wallpaper, Islamic Wallpaper Warrior, A Soldier, Knight In Battle, Dark Fantasy Knight Resting, One Man Army",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Montanha / paisagem",
+        "Noite / escuro / lua",
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "808607308132708917",
+      "alt": "a painting of jesus with the words sacred crazionii written on it's face",
+      "clusters": [
+        "Personagens / rosto",
+        "Renascimento / pintura classica"
+      ]
+    },
+    {
+      "pinId": "817755244857160176",
+      "alt": "an image of a painting with people in it",
+      "clusters": [
+        "Templo grego / colunas",
+        "Montanha / paisagem",
+        "Ouro / dourado / luz",
+        "Personagens / rosto",
+        "Renascimento / pintura classica"
+      ]
+    },
+    {
+      "pinId": "997406648728365289",
+      "alt": "an image of a statue on top of a mountain with water running down it's sides",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Templo grego / colunas",
+        "Estatuas / bustos",
+        "Onda / mar / agua",
+        "Montanha / paisagem"
+      ]
+    },
+    {
+      "pinId": "792844709425876564",
+      "alt": "an old man is working on some sort of project with wood and sand in his hands",
+      "clusters": [
+        "Relogio / tempo",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "896497869553566763",
+      "alt": "a black and white cat wearing a leather jacket with purple hair on it's head",
+      "clusters": [
+        "Noite / escuro / lua"
+      ]
+    },
+    {
+      "pinId": "944278247369085904",
+      "alt": "a man holding a cross standing in front of a fire filled sky with flames behind him",
+      "clusters": [
+        "Ceu / nuvem / celeste",
+        "Noite / escuro / lua",
+        "Fogo / chama / vela",
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "984740274785510918",
+      "alt": "Heaven And Hell, Fantasy Concept Art, 3d Wallpaper, Spiritual Art, Concept Art, Spirituality, Exterior",
+      "clusters": [
+        "Ceu / nuvem / celeste",
+        "Yoga / medita / espiritual",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "438397345001151918",
+      "alt": "a man with blue eyes stares at the camera and says, every person with blue eyes shares a single common ancestor who lived between 6, 000 and 10, 000 years ago",
+      "clusters": [
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "1130685050246545116",
+      "alt": "two people are walking in the middle of an area with columns and clouds surrounding them",
+      "clusters": [
+        "Templo grego / colunas",
+        "Ceu / nuvem / celeste",
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1023302346594667169",
+      "alt": "a man standing on top of a wooden raft in the middle of some ocean waves",
+      "clusters": [
+        "Onda / mar / agua",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "472737292157265612",
+      "alt": "a spiral staircase leading up to the sky",
+      "clusters": [
+        "Ceu / nuvem / celeste",
+        "Montanha / paisagem",
+        "Noite / escuro / lua",
+        "Ouro / dourado / luz"
+      ]
+    },
+    {
+      "pinId": "869476271822967990",
+      "alt": "an old man with white hair and beard in a yellow robe, leaning against a black background",
+      "clusters": [
+        "Noite / escuro / lua",
+        "Personagens / rosto",
+        "Renascimento / pintura classica"
+      ]
+    },
+    {
+      "pinId": "1092193347146290469",
+      "alt": "a black and white photo with an image of a person in the center",
+      "clusters": [
+        "Noite / escuro / lua",
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "51861833202327345",
+      "alt": "a woman standing on top of a stone wall next to a field of men in armor",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Montanha / paisagem",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "314829830224220944",
+      "alt": "an image of a beautiful garden scene with flowers and trees in the foreground, surrounded by columns",
+      "clusters": [
+        "Templo grego / colunas",
+        "Montanha / paisagem",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "948500371533544311",
+      "alt": "a man sitting on top of a boat in the middle of a body of water",
+      "clusters": [
+        "Onda / mar / agua",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "365495326028720402",
+      "alt": "the statue of jesus holding his hands up in front of a building with columns and pillars",
+      "clusters": [
+        "Templo grego / colunas",
+        "Estatuas / bustos",
+        "Yoga / medita / espiritual"
+      ]
+    },
+    {
+      "pinId": "790311434631989089",
+      "alt": "350 Troll Villain Concept _ VOL 1 _ Character Reference, on ArtStation at https://www.artstation.com/artwork/5v4Xog Orc Suit, Goliath Concept Art, Goliath Soldier, Half Goliath, Mech Monster, Goliath Warrior, Goliath Character, Muscular Alien, Dnd Troll Character",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "1050464681822725458",
+      "alt": "the ruins of an old building with columns and statues in front of them, surrounded by greenery",
+      "clusters": [
+        "Templo grego / colunas",
+        "Estatuas / bustos",
+        "Montanha / paisagem",
+        "Ouro / dourado / luz",
+        "Personagens / rosto",
+        "Renascimento / pintura classica",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "797629784027507552",
+      "alt": "a lake surrounded by snow covered mountains at night",
+      "clusters": [
+        "Montanha / paisagem",
+        "Noite / escuro / lua",
+        "Ouro / dourado / luz",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "87046205267386510",
+      "alt": "a dirt path in the middle of a forest",
+      "clusters": [
+        "Montanha / paisagem"
+      ]
+    },
+    {
+      "pinId": "634303928799335820",
+      "alt": "an eye is shown in the middle of a scene with many people and large animals",
+      "clusters": [
+        "Ceu / nuvem / celeste",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "1085789791426326297",
+      "alt": "a spider web with the words there are no accidents only divine order on it",
+      "clusters": [
+        "Yoga / medita / espiritual"
+      ]
+    },
+    {
+      "pinId": "627055948103523248",
+      "alt": "a drawing of a woman in a purple dress with her hands on her hips, surrounded by witches",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Noite / escuro / lua",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "562246334749055087",
+      "alt": "an ornate painting with angels and other figures on the ceiling",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Noite / escuro / lua",
+        "Ouro / dourado / luz",
+        "Renascimento / pintura classica",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "296111744221811046",
+      "alt": "a sheep standing on top of a large rock formation with water and mountains in the background",
+      "clusters": [
+        "Onda / mar / agua",
+        "Montanha / paisagem"
+      ]
+    },
+    {
+      "pinId": "869546640537784206",
+      "alt": "various facial expressions for rick and mort",
+      "clusters": [
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "733172014379268101",
+      "alt": "a man standing on top of a stairway in front of an arch with a golden coin above it",
+      "clusters": [
+        "Estatuas / bustos",
+        "Noite / escuro / lua",
+        "Ouro / dourado / luz",
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "599963981642897428",
+      "alt": "a man dressed in black and wearing a hooded cloak with glowing eyes, standing in front of an archway",
+      "clusters": [
+        "Noite / escuro / lua",
+        "Ouro / dourado / luz",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "1109363320788885296",
+      "alt": "an artistic scene with statues and a full moon in the sky above them, all surrounded by columns",
+      "clusters": [
+        "Templo grego / colunas",
+        "Estatuas / bustos",
+        "Ceu / nuvem / celeste",
+        "Noite / escuro / lua"
+      ]
+    },
+    {
+      "pinId": "621848661047185066",
+      "alt": "a cat that is standing on its hind legs wearing a colorful tutu and holding it up in the air",
+      "clusters": [
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "354447433169669978",
+      "alt": "an anime character with many different avatars",
+      "clusters": [
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1086282372623227856",
+      "alt": "a woman with her eyes closed holding a light above her head and the words, the hindu",
+      "clusters": [
+        "Mitologia/anjos/Michelangelo",
+        "Ouro / dourado / luz",
+        "Yoga / medita / espiritual",
+        "Personagens / rosto"
+      ]
+    },
+    {
+      "pinId": "970596157166654048",
+      "alt": "Photographie Portrait Inspiration, Human Poses, Aesthetic Hair, Girl Face, Girl Icons, Ulzzang Girl, Aesthetic Girl, Korean Girl, Hair Inspiration",
+      "clusters": [
+        "Yoga / medita / espiritual",
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "758645499758622644",
+      "alt": "an artistic scene with columns, clouds and birds flying in the sky over water below",
+      "clusters": [
+        "Templo grego / colunas",
+        "Onda / mar / agua",
+        "Ceu / nuvem / celeste",
+        "Montanha / paisagem",
+        "Coruja / animais"
+      ]
+    },
+    {
+      "pinId": "755127062564784921",
+      "alt": "a hand touching something with it's fingers on top of some stringy lights",
+      "clusters": [
+        "Montanha / paisagem",
+        "Noite / escuro / lua",
+        "Ouro / dourado / luz",
+        "Yoga / medita / espiritual",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "619667230023051271",
+      "alt": "a man standing in the middle of a large, spirally shaped cloud filled sky",
+      "clusters": [
+        "Ceu / nuvem / celeste",
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "1113233601646919277",
+      "alt": "a man standing in the middle of a field at night",
+      "clusters": [
+        "Montanha / paisagem",
+        "Noite / escuro / lua",
+        "Personagens / rosto",
+        "Wallpaper / aesthetic"
+      ]
+    },
+    {
+      "pinId": "966374032557476957",
+      "alt": "a person sitting in front of a black and white photo with text that reads i've lived a thousand lives in my mind, and now i'm",
+      "clusters": [
+        "Noite / escuro / lua",
+        "Personagens / rosto"
+      ]
+    }
+  ]
+}

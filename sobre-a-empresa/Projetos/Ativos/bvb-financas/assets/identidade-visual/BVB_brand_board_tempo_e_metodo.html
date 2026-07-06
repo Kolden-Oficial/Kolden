@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BVB Finanças — Brand Board · Direção "Tempo & Método"</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --verde:#1C3A30;
+    --cobre:#B5683C;
+    --salvia:#335848;
+    --areia:#F2EEE6;
+    --grafite:#44423D;
+    --branco:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:#E7E2D8;color:var(--grafite);font-family:'Inter',sans-serif;line-height:1.6;padding:48px 20px;}
+  .page{max-width:1040px;margin:0 auto;}
+  section{background:var(--branco);border-radius:14px;padding:56px 60px;margin-bottom:28px;box-shadow:0 1px 3px rgba(28,58,48,.08);}
+  .eyebrow{font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--cobre);margin-bottom:14px;}
+  h1{font-family:'Spectral',serif;font-weight:600;font-size:46px;line-height:1.1;color:var(--verde);letter-spacing:-.5px;}
+  h2{font-family:'Spectral',serif;font-weight:600;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--salvia);margin-bottom:28px;border-bottom:1px solid #E2E5DF;padding-bottom:14px;}
+  h2 .sans{font-family:'Inter',sans-serif;}
+  p{font-size:15px;margin-bottom:14px;max-width:70ch;}
+  .lead{font-family:'Spectral',serif;font-size:20px;line-height:1.5;color:var(--verde);font-weight:400;}
+  .muted{color:#8A857B;font-size:13px;}
+  .cover{background:var(--verde);color:var(--areia);text-align:center;padding:80px 60px;}
+  .cover h1{color:var(--areia);font-size:54px;}
+  .cover .eyebrow{color:var(--cobre);}
+  .cover p{margin:0 auto;color:#C8D2CB;}
+  .rings{display:block;}
+  .lockup{display:flex;align-items:center;gap:26px;}
+  .wordmark{display:flex;flex-direction:column;justify-content:center;}
+  .wordmark .bvb{font-family:'Spectral',serif;font-weight:600;font-size:52px;line-height:.9;color:var(--verde);letter-spacing:.5px;}
+  .wordmark .fin{font-family:'Inter',sans-serif;font-weight:500;font-size:15px;letter-spacing:8px;color:var(--salvia);margin-top:6px;padding-left:3px;}
+  .neg .bvb{color:var(--areia);}
+  .neg .fin{color:#A9B8AE;}
+  .logo-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+  .lcard{border:1px solid #E2E5DF;border-radius:10px;padding:42px;display:flex;align-items:center;justify-content:center;min-height:190px;}
+  .lcard.dark{background:var(--verde);border-color:var(--verde);}
+  .lcard.mono{background:var(--areia);border-color:var(--areia);}
+  .cap{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#9A958B;margin-top:14px;text-align:center;}
+  .palette{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
+  .swatch{border-radius:10px;overflow:hidden;border:1px solid #E2E5DF;}
+  .chip{height:110px;}
+  .swatch .info{padding:14px 14px 18px;}
+  .swatch .nm{font-weight:600;font-size:13px;color:var(--verde);}
+  .swatch .hx{font-size:12px;color:#8A857B;margin-top:3px;letter-spacing:.5px;}
+  .ratio{display:flex;height:30px;border-radius:7px;overflow:hidden;margin-top:26px;font-size:11px;font-weight:600;color:#fff;}
+  .ratio div{display:flex;align-items:center;justify-content:center;}
+  .type-row{display:grid;grid-template-columns:130px 1fr;gap:30px;align-items:start;padding:26px 0;border-bottom:1px solid #EEF0EC;}
+  .type-row:last-child{border-bottom:none;}
+  .type-label{font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--cobre);}
+  .type-label small{display:block;color:#9A958B;font-weight:400;letter-spacing:0;text-transform:none;margin-top:4px;font-size:12px;}
+  .spec-serif{font-family:'Spectral',serif;color:var(--verde);}
+  .spec-sans{font-family:'Inter',sans-serif;color:var(--verde);}
+  .s1{font-size:40px;font-weight:600;line-height:1.1;}
+  .s2{font-size:15px;line-height:1.6;color:var(--grafite);max-width:62ch;}
+  .glyphs{font-size:22px;letter-spacing:2px;color:var(--salvia);}
+  .why{background:var(--areia);border-left:3px solid var(--cobre);padding:20px 24px;border-radius:6px;margin-top:8px;}
+  .why p{margin:0;font-size:14px;}
+  .apps{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .app{border:1px solid #E2E5DF;border-radius:10px;overflow:hidden;}
+  .app .alabel{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#9A958B;padding:12px 16px;border-top:1px solid #EEF0EC;}
+  .card{aspect-ratio:1.75/1;background:var(--verde);color:var(--areia);padding:30px;display:flex;flex-direction:column;justify-content:space-between;}
+  .card .top{display:flex;align-items:center;gap:14px;}
+  .card .wb{font-family:'Spectral',serif;font-weight:600;font-size:26px;color:var(--areia);line-height:.9;}
+  .card .wf{font-family:'Inter';font-size:9px;letter-spacing:6px;color:#A9B8AE;margin-top:4px;}
+  .card .who{font-family:'Spectral';font-size:18px;color:#fff;}
+  .card .role{font-size:11px;letter-spacing:1px;color:var(--cobre);text-transform:uppercase;margin-top:2px;}
+  .card .contact{font-size:10px;color:#C8D2CB;line-height:1.7;margin-top:14px;}
+  .avatar-wrap{background:var(--areia);display:flex;align-items:center;justify-content:center;gap:34px;padding:40px;}
+  .avatar{width:120px;height:120px;border-radius:50%;background:var(--verde);display:flex;align-items:center;justify-content:center;}
+  .avatar.small{width:64px;height:64px;}
+  .igrow{display:flex;flex-direction:column;align-items:center;gap:10px;}
+  .ighandle{font-size:12px;color:var(--grafite);font-weight:600;}
+  .igpost{aspect-ratio:1/1;background:var(--areia);padding:38px;display:flex;flex-direction:column;justify-content:space-between;}
+  .igpost .tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--cobre);font-weight:600;}
+  .igpost .big{font-family:'Spectral';font-weight:600;font-size:30px;line-height:1.18;color:var(--verde);}
+  .igpost .big em{color:var(--cobre);font-style:italic;}
+  .igpost .foot{display:flex;align-items:center;justify-content:space-between;}
+  .igpost .h{font-size:11px;color:var(--salvia);font-weight:600;letter-spacing:.5px;}
+  .letter{background:#fff;padding:34px;min-height:300px;}
+  .letter .lh-top{display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--cobre);padding-bottom:16px;}
+  .letter .lh-sub{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#9A958B;text-align:right;}
+  .letter .body-lines div{height:7px;background:#EEF0EC;border-radius:4px;margin-top:13px;}
+  .letter .body-lines div:nth-child(1){width:55%;background:#E2E5DF;height:9px;}
+  .letter .body-lines div:nth-child(4){width:78%;}
+  .letter .body-lines div:nth-child(5){width:40%;}
+  .footer{text-align:center;color:#9A958B;font-size:12px;padding:10px 0 30px;}
+  @media(max-width:760px){
+    section{padding:34px 26px;}
+    .logo-grid,.apps{grid-template-columns:1fr;}
+    .palette{grid-template-columns:repeat(2,1fr);}
+    h1{font-size:34px;}.cover h1{font-size:38px;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <section class="cover">
+    <div class="eyebrow">Documento Estratégico 06 · Direção Alternativa</div>
+    <h1>BVB Finanças</h1>
+    <p class="lead" style="color:#E9E0CF;font-style:italic;margin-top:10px;">Identidade Visual — &ldquo;Tempo &amp; Método&rdquo;</p>
+    <p style="margin-top:18px;font-size:13px;">Brand board com logo, paleta, tipografia e aplicações · Junho de 2026</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">01 · O logo</div>
+    <h1>O patrimônio se constrói<br>em anéis, não em setas.</h1>
+    <p style="margin-top:18px;">O símbolo são <strong>anéis de crescimento</strong> — camada sobre camada, ano sobre ano. A <strong>semente em cobre</strong> no centro é o dono: a decisão de começar. Cada anel é um ciclo de disciplina que se soma ao anterior. É juros compostos virando imagem — um conceito que quem vende ganho rápido não consegue copiar, porque admite que riqueza de verdade leva tempo.</p>
+    <div style="display:flex;justify-content:center;margin:46px 0 10px;">
+      <div class="lockup">
+        <svg class="rings" width="120" height="120" viewBox="0 0 100 100">
+          <g transform="rotate(135 50 50)" fill="none" stroke="#1C3A30" stroke-width="2" stroke-linecap="round">
+            <circle cx="50" cy="50" r="34" pathLength="100" stroke-dasharray="72 28"/>
+            <circle cx="50" cy="50" r="26" pathLength="100" stroke-dasharray="72 28"/>
+            <circle cx="50" cy="50" r="18" pathLength="100" stroke-dasharray="72 28"/>
+            <circle cx="50" cy="50" r="10" pathLength="100" stroke-dasharray="72 28"/>
+          </g>
+          <circle cx="50" cy="50" r="5" fill="#B5683C"/>
+        </svg>
+        <div class="wordmark"><span class="bvb">BVB</span><span class="fin">FINANÇAS</span></div>
+      </div>
+    </div>
+    <p class="cap">Logo principal — símbolo + nome · uso preferencial em fundos claros</p>
+    <h2 style="margin-top:46px;">Versões <span class="sans">autorizadas</span></h2>
+    <div class="logo-grid">
+      <div class="lcard dark">
+        <div class="lockup neg">
+          <svg width="74" height="74" viewBox="0 0 100 100">
+            <g transform="rotate(135 50 50)" fill="none" stroke="#F2EEE6" stroke-width="2" stroke-linecap="round">
+              <circle cx="50" cy="50" r="34" pathLength="100" stroke-dasharray="72 28"/>
+              <circle cx="50" cy="50" r="26" pathLength="100" stroke-dasharray="72 28"/>
+              <circle cx="50" cy="50" r="18" pathLength="100" stroke-dasharray="72 28"/>
+              <circle cx="50" cy="50" r="10" pathLength="100" stroke-dasharray="72 28"/>
+            </g>
+            <circle cx="50" cy="50" r="5" fill="#B5683C"/>
+          </svg>
+          <div class="wordmark"><span class="bvb">BVB</span><span class="fin">FINANÇAS</span></div>
+        </div>
+      </div>
+      <div class="lcard mono">
+        <svg width="92" height="92" viewBox="0 0 100 100">
+          <g transform="rotate(135 50 50)" fill="none" stroke="#1C3A30" stroke-width="2" stroke-linecap="round">
+            <circle cx="50" cy="50" r="34" pathLength="100" stroke-dasharray="72 28"/>
+            <circle cx="50" cy="50" r="26" pathLength="100" stroke-dasharray="72 28"/>
+            <circle cx="50" cy="50" r="18" pathLength="100" stroke-dasharray="72 28"/>
+            <circle cx="50" cy="50" r="10" pathLength="100" stroke-dasharray="72 28"/>
+          </g>
+          <circle cx="50" cy="50" r="5" fill="#1C3A30"/>
+        </svg>
+      </div>
+    </div>
+    <div class="logo-grid" style="margin-top:14px;">
+      <p class="cap" style="margin:0;">Versão negativa — fundos verdes / escuros</p>
+      <p class="cap" style="margin:0;">Símbolo isolado / monocromático — avatar, favicon, carimbo</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">02 · Paleta de cores</div>
+    <h1>Disciplina cromática.</h1>
+    <p style="margin-top:14px;">Duas cores de marca, três de apoio. Verde no lugar do navy tira a BVB do mar de azul dos bancos; o cobre quente substitui o dourado clichê sem perder o &ldquo;valor sem ostentação&rdquo;.</p>
+    <div class="palette" style="margin-top:32px;">
+      <div class="swatch"><div class="chip" style="background:#1C3A30"></div><div class="info"><div class="nm">Verde Patrimônio</div><div class="hx">#1C3A30</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#B5683C"></div><div class="info"><div class="nm">Cobre Queimado</div><div class="hx">#B5683C</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#335848"></div><div class="info"><div class="nm">Verde Sálvia</div><div class="hx">#335848</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#F2EEE6;border-bottom:1px solid #E2E5DF"></div><div class="info"><div class="nm">Areia Quente</div><div class="hx">#F2EEE6</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#44423D"></div><div class="info"><div class="nm">Grafite Quente</div><div class="hx">#44423D</div></div></div>
+    </div>
+    <div class="ratio">
+      <div style="flex:60;background:#F2EEE6;color:#8A857B;">60% Areia / neutro</div>
+      <div style="flex:30;background:#1C3A30;">30% Verde</div>
+      <div style="flex:10;background:#B5683C;">10% Cobre</div>
+    </div>
+    <p class="muted" style="margin-top:12px;">Regra 60-30-10 — o cobre é tempero, não prato principal.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">03 · Tipografia <span style="color:#9A958B;font-weight:400;letter-spacing:0;text-transform:none;">(nova sugestão)</span></div>
+    <h1>Spectral + Inter.</h1>
+    <div class="why" style="margin-top:20px;">
+      <p><strong>Por que mudei a serifada.</strong> Fraunces tinha personalidade demais — detalhes &ldquo;tortos&rdquo; que brigam com um tom calmo e sério. <strong>Spectral</strong> é uma serifada premium, literária e sóbria: tem presença e classe sem ser caprichada nem &ldquo;default&rdquo; como a Georgia. Calma, confiante, analítica — a sua voz. Alternativas no mesmo espírito: <em>Lora</em> (mais quente) ou <em>Source Serif</em> (mais corporativa).</p>
+    </div>
+    <div class="type-row" style="margin-top:18px;">
+      <div class="type-label">Spectral<small>Serifada · títulos, logo, voz séria</small></div>
+      <div>
+        <div class="spec-serif s1">Riqueza de verdade<br>é lenta.</div>
+        <div class="spec-serif glyphs" style="margin-top:18px;">AaBbCcDd &nbsp; 1234567890 &nbsp; R$</div>
+        <p class="spec-serif s2" style="margin-top:16px;font-weight:400;">Patrimônio se constrói com método e tempo — não com promessa fácil. O contraste entre a serifa e a sem-serifa é a assinatura tipográfica da marca.</p>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-label">Inter<small>Sem-serifa · dados, rótulos, interface</small></div>
+      <div>
+        <div class="spec-sans s1" style="font-weight:600;">Clareza nos números.</div>
+        <div class="spec-sans glyphs" style="margin-top:18px;font-family:'Inter';">AaBbCcDd &nbsp; 1234567890 &nbsp; R$</div>
+        <p class="spec-sans s2" style="margin-top:16px;font-family:'Inter';">Usada em &ldquo;FINANÇAS&rdquo; no logo (espaçada), legendas, tabelas e qualquer dado. A voz clara que equilibra a serifa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">04 · Aplicação da marca</div>
+    <h1>A marca aplicada.</h1>
+    <p style="margin-top:14px;">A mesma identidade, coerente do avatar à fachada: respiro generoso, fios finos, calor humano.</p>
+    <div class="apps" style="margin-top:32px;">
+      <div class="app">
+        <div class="card">
+          <div class="top">
+            <svg width="46" height="46" viewBox="0 0 100 100">
+              <g transform="rotate(135 50 50)" fill="none" stroke="#F2EEE6" stroke-width="2.4" stroke-linecap="round">
+                <circle cx="50" cy="50" r="34" pathLength="100" stroke-dasharray="72 28"/>
+                <circle cx="50" cy="50" r="26" pathLength="100" stroke-dasharray="72 28"/>
+                <circle cx="50" cy="50" r="18" pathLength="100" stroke-dasharray="72 28"/>
+                <circle cx="50" cy="50" r="10" pathLength="100" stroke-dasharray="72 28"/>
+              </g>
+              <circle cx="50" cy="50" r="5" fill="#B5683C"/>
+            </svg>
+            <div><div class="wb">BVB</div><div class="wf">FINANÇAS</div></div>
+          </div>
+          <div>
+            <div class="who">Bruno Vilas Boas</div>
+            <div class="role">Sócio-fundador</div>
+            <div class="contact">brunovilasboas61@gmail.com · @brunofvilasboas<br>bvbfinancas.com.br</div>
+          </div>
+        </div>
+        <div class="alabel">Cartão de visita</div>
+      </div>
+      <div class="app">
+        <div class="avatar-wrap">
+          <div class="igrow">
+            <div class="avatar">
+              <svg width="74" height="74" viewBox="0 0 100 100">
+                <g transform="rotate(135 50 50)" fill="none" stroke="#F2EEE6" stroke-width="2.4" stroke-linecap="round">
+                  <circle cx="50" cy="50" r="34" pathLength="100" stroke-dasharray="72 28"/>
+                  <circle cx="50" cy="50" r="26" pathLength="100" stroke-dasharray="72 28"/>
+                  <circle cx="50" cy="50" r="18" pathLength="100" stroke-dasharray="72 28"/>
+                  <circle cx="50" cy="50" r="10" pathLength="100" stroke-dasharray="72 28"/>
+                </g>
+                <circle cx="50" cy="50" r="5" fill="#B5683C"/>
+              </svg>
+            </div>
+            <div class="ighandle">@brunofvilasboas</div>
+          </div>
+          <div class="igrow">
+            <div class="avatar small">
+              <svg width="40" height="40" viewBox="0 0 100 100">
+                <g transform="rotate(135 50 50)" fill="none" stroke="#F2EEE6" stroke-width="3" stroke-linecap="round">
+                  <circle cx="50" cy="50" r="34" pathLength="100" stroke-dasharray="72 28"/>
+                  <circle cx="50" cy="50" r="22" pathLength="100" stroke-dasharray="72 28"/>
+                  <circle cx="50" cy="50" r="10" pathLength="100" stroke-dasharray="72 28"/>
+                </g>
+                <circle cx="50" cy="50" r="6" fill="#B5683C"/>
+              </svg>
+            </div>
+            <div class="ighandle" style="color:#9A958B;">Favicon / selo</div>
+          </div>
+        </div>
+        <div class="alabel">Avatar de perfil · favicon</div>
+      </div>
+      <div class="app">
+        <div class="igpost">
+          <div class="tag">Educação financeira</div>
+          <div class="big">Quem tem pressa<br>de ficar rico<br>quase nunca <em>fica.</em></div>
+          <div class="foot">
+            <div class="h">@brunofvilasboas</div>
+            <svg width="34" height="34" viewBox="0 0 100 100">
+              <g transform="rotate(135 50 50)" fill="none" stroke="#1C3A30" stroke-width="3" stroke-linecap="round">
+                <circle cx="50" cy="50" r="34" pathLength="100" stroke-dasharray="72 28"/>
+                <circle cx="50" cy="50" r="22" pathLength="100" stroke-dasharray="72 28"/>
+                <circle cx="50" cy="50" r="10" pathLength="100" stroke-dasharray="72 28"/>
+              </g>
+              <circle cx="50" cy="50" r="6" fill="#B5683C"/>
+            </svg>
+          </div>
+        </div>
+        <div class="alabel">Post de Instagram</div>
+      </div>
+      <div class="app">
+        <div class="letter">
+          <div class="lh-top">
+            <div class="lockup" style="gap:14px;">
+              <svg width="40" height="40" viewBox="0 0 100 100">
+                <g transform="rotate(135 50 50)" fill="none" stroke="#1C3A30" stroke-width="2.4" stroke-linecap="round">
+                  <circle cx="50" cy="50" r="34" pathLength="100" stroke-dasharray="72 28"/>
+                  <circle cx="50" cy="50" r="26" pathLength="100" stroke-dasharray="72 28"/>
+                  <circle cx="50" cy="50" r="18" pathLength="100" stroke-dasharray="72 28"/>
+                  <circle cx="50" cy="50" r="10" pathLength="100" stroke-dasharray="72 28"/>
+                </g>
+                <circle cx="50" cy="50" r="5" fill="#B5683C"/>
+              </svg>
+              <div class="wordmark"><span class="bvb" style="font-size:26px;">BVB</span><span class="fin" style="font-size:8px;letter-spacing:5px;">FINANÇAS</span></div>
+            </div>
+            <div class="lh-sub">Documento estratégico<br>Junho de 2026</div>
+          </div>
+          <div class="body-lines"><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+        <div class="alabel">Papel timbrado · cabeçalho de documento</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">BVB Finanças · Direção visual &ldquo;Tempo &amp; Método&rdquo; · proposta para avaliação lado a lado com o manual original</div>
+</div>
+</body>
+</html>

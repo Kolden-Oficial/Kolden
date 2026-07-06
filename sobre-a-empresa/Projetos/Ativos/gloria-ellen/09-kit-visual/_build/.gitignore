@@ -1,0 +1,5 @@
+# Artefatos intermediários do gerador de logo/PNG — não versionar.
+# Regenere com: node generate-logo-svg.mjs && node generate-logo-png.mjs
+node_modules/
+package-lock.json
+Sacramento-Regular.ttf

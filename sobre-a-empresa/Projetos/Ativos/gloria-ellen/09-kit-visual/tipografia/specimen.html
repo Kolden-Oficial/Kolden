@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glória Ellen — Specimen tipográfico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream:      #FAF5EC;
+    --cream-warm: #F0E7D0;
+    --sand:       #DDD0B5;
+    --sand-deep:  #C7A876;
+    --ink:        #2A2B27;
+    --ink-soft:   #5C5A50;
+    --ink-mute:   #8B8478;
+    --sea:        #3D5A6C;
+    --sea-deep:   #2A4152;
+    --forest:     #6B7F5C;
+    --dawn:       #E3B8A1;
+    --line:       rgba(42, 43, 39, 0.10);
+    --font-serif:     'Cormorant Garamond', 'Georgia', serif;
+    --font-sans:      'Inter', system-ui, -apple-system, sans-serif;
+    /* v1.1 · logo em Cormorant Garamond Italic Light 300 (Direção A do brandbook). */
+    --font-logo:      'Cormorant Garamond', 'Georgia', serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { min-height: 100%; }
+  body {
+    font-family: var(--font-serif);
+    background: var(--cream);
+    color: var(--ink);
+    font-weight: 400;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    padding: 8vh 6vw;
+  }
+
+  /* Grão de filme — mesma turbulência SVG do brandbook */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 200;
+    opacity: 0.35;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='2'/><feColorMatrix values='0 0 0 0 0.17  0 0 0 0 0.17  0 0 0 0 0.15  0 0 0 0.14 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  .container { max-width: 1180px; margin: 0 auto; }
+
+  /* Cabeçalho */
+  header {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 4rem;
+  }
+  .eyebrow-mark {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 0.68rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 1rem;
+  }
+  .title-mark {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(2.6rem, 6vw, 5rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+  }
+  .subtitle-mark {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+    color: var(--sea);
+    max-width: 42rem;
+  }
+
+  /* Seções */
+  section {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  section:last-of-type { border-bottom: none; }
+
+  .section-label {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 0.68rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 2rem;
+  }
+
+  .spec-grid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 3rem;
+    align-items: baseline;
+  }
+  @media (max-width: 720px) {
+    .spec-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  .spec-meta {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--ink-mute);
+  }
+  .spec-meta strong {
+    display: block;
+    color: var(--ink-soft);
+    font-weight: 500;
+    margin-bottom: 0.35rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* Amostras — classes espelham as do type-system.css */
+  .sample-display {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(2.6rem, 6vw, 5.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .sample-heading {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(1.9rem, 4vw, 3.4rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .sample-lead {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+    line-height: 1.55;
+    color: var(--sea);
+    max-width: 42rem;
+  }
+  .sample-body {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: var(--ink);
+    max-width: 40rem;
+  }
+  .sample-info {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 32rem;
+  }
+  .sample-eyebrow {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 0.68rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .sample-signature {
+    font-family: var(--font-logo);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(2rem, 4.5vw, 5.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .sample-note {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 0.68rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-top: 0.5rem;
+  }
+
+  /* Painel de cores + amostras invertidas */
+  .swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+  .swatch {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    border-radius: 2px;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+  }
+  .swatch strong {
+    font-weight: 500;
+    display: block;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 0.15rem;
+  }
+
+  .inverted-panel {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 4rem 3rem;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+  }
+  .inverted-panel .sample-display,
+  .inverted-panel .sample-heading,
+  .inverted-panel .sample-body { color: var(--cream); }
+  .inverted-panel .sample-lead { color: var(--dawn); }
+  .inverted-panel .sample-info { color: var(--sand); }
+
+  /* Rodapé */
+  footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    color: var(--ink-mute);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="eyebrow-mark">Kit visual · Tipografia</div>
+    <h1 class="title-mark">Glória Ellen</h1>
+    <p class="subtitle-mark">Sistema tipográfico da marca — três famílias, uma voz que sussurra.</p>
+  </header>
+
+  <section>
+    <div class="section-label">01 · Display</div>
+    <div class="spec-grid">
+      <div class="spec-meta">
+        <strong>Cormorant Garamond</strong>
+        Peso 300 · Regular<br>
+        clamp(2.6rem, 6vw, 5.4rem)<br>
+        line-height 1.05<br>
+        tracking -0.02em<br>
+        cor: ink
+      </div>
+      <div class="sample-display">
+        A luz entra devagar<br>e o mar responde.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">02 · Heading</div>
+    <div class="spec-grid">
+      <div class="spec-meta">
+        <strong>Cormorant Garamond</strong>
+        Peso 400 · Itálico<br>
+        clamp(1.9rem, 4vw, 3.4rem)<br>
+        line-height 1.15<br>
+        cor: ink
+      </div>
+      <div class="sample-heading">
+        Fotografar é escutar o silêncio depois da onda.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">03 · Lead</div>
+    <div class="spec-grid">
+      <div class="spec-meta">
+        <strong>Cormorant Garamond</strong>
+        Peso 300 · Itálico<br>
+        clamp(1.2rem, 1.8vw, 1.5rem)<br>
+        line-height 1.55<br>
+        cor: sea (#3D5A6C)
+      </div>
+      <p class="sample-lead">
+        Toda foto nasce de um pedido que a pessoa nem sabe que fez — a de ser vista com paciência.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">04 · Body</div>
+    <div class="spec-grid">
+      <div class="spec-meta">
+        <strong>Cormorant Garamond</strong>
+        Peso 400 · Regular<br>
+        1.05–1.25rem fluido<br>
+        line-height 1.65<br>
+        cor: ink
+      </div>
+      <p class="sample-body">
+        O ensaio começa antes do primeiro clique. Começa quando a pessoa senta, respira, olha para a janela e percebe que ninguém está com pressa. Meu trabalho não é registrar aparência — é criar as condições para que uma verdade suave apareça no rosto de quem confia em mim por algumas horas. A luz do amanhecer ajuda. O grão do filme, também. Mas a diferença mesmo está no tempo que a gente escolhe não cortar.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">05 · Info</div>
+    <div class="spec-grid">
+      <div class="spec-meta">
+        <strong>Inter</strong>
+        Peso 400 · Regular<br>
+        0.95rem<br>
+        line-height 1.55<br>
+        cor: ink-soft (#5C5A50)
+      </div>
+      <p class="sample-info">
+        Ensaio individual · 90 minutos · locação a definir. Inclui 30 fotos tratadas e entrega em galeria online em até 14 dias. Pagamento em duas parcelas iguais — sinal na reserva, saldo até o dia do ensaio.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">06 · Eyebrow</div>
+    <div class="spec-grid">
+      <div class="spec-meta">
+        <strong>Inter</strong>
+        Peso 400 · Uppercase<br>
+        0.68rem<br>
+        letter-spacing 0.35em<br>
+        cor: ink-mute (#8B8478)
+      </div>
+      <p class="sample-eyebrow">
+        Capítulo temporal · Julho 2026 · Estreia no Vale
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">07 · Logo / Signature</div>
+    <div class="spec-grid">
+      <div class="spec-meta">
+        <strong>Cormorant Garamond</strong>
+        Peso 300 · Itálico Light<br>
+        clamp(2rem, 4.5vw, 5.4rem)<br>
+        line-height 1.05<br>
+        letter-spacing -0.01em<br>
+        cor: ink<br><br>
+        <em style="color:var(--ink-mute)">Uso restrito ao logo e a assinaturas pontuais. Direção A do brandbook (revisão 2026-07-02, 22:34). Nunca em corpo de texto ou botão.</em>
+      </div>
+      <div>
+        <div class="sample-signature">Glória Ellen</div>
+        <div class="sample-note">Logo oficial · Cormorant Garamond Italic Light 300</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">08 · Amostra em fundo escuro</div>
+    <div class="inverted-panel">
+      <p class="sample-eyebrow" style="color:var(--sand); margin-bottom:1rem;">Manifesto</p>
+      <h2 class="sample-heading" style="margin-bottom:1.5rem; max-width:40rem;">
+        A marca não vai morrer — vai amadurecer com quem construiu ela.
+      </h2>
+      <p class="sample-body">
+        Se dez anos passarem, a paleta permanece: creme do papel, ink da tinta, mar ao amanhecer. Se vinte passarem, o nome ainda é o mesmo, escrito da mesma mão. Persistência é a única forma honesta de estilo.
+      </p>
+      <p class="sample-info" style="margin-top:2rem;">
+        — Glória Ellen · Balneário Camboriú · julho de 2026
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">09 · Paleta em texto</div>
+    <div class="swatches">
+      <div class="swatch" style="background:#FAF5EC; color:#2A2B27; border:1px solid var(--line);"><span><strong>Cream</strong>#FAF5EC</span></div>
+      <div class="swatch" style="background:#DDD0B5; color:#2A2B27;"><span><strong>Sand</strong>#DDD0B5</span></div>
+      <div class="swatch" style="background:#C7A876; color:#2A2B27;"><span><strong>Sand deep</strong>#C7A876</span></div>
+      <div class="swatch" style="background:#3D5A6C; color:#FAF5EC;"><span><strong>Sea</strong>#3D5A6C</span></div>
+      <div class="swatch" style="background:#6B7F5C; color:#FAF5EC;"><span><strong>Forest</strong>#6B7F5C</span></div>
+      <div class="swatch" style="background:#E3B8A1; color:#2A2B27;"><span><strong>Dawn</strong>#E3B8A1</span></div>
+      <div class="swatch" style="background:#2A2B27; color:#FAF5EC;"><span><strong>Ink</strong>#2A2B27</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <div>Glória Ellen · Kit visual 2026</div>
+    <div>Cormorant Garamond · Inter — Google Fonts (OFL) · v1.1 · logo em Cormorant Italic Light 300</div>
+  </footer>
+
+</div>
+</body>
+</html>

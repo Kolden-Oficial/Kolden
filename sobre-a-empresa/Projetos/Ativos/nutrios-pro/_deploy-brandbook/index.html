@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandbook — NutriOS Pro v3</title>
+  <meta name="description" content="Brandbook oficial do NutriOS Pro — identidade v3 (2026-07-05): símbolo n + O + ponto, 6 variantes, paleta dual-mode 8 cores, 3 famílias tipográficas.">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <style>
+    /* ============================================================================
+       @font-face — Quip Regular (display/hero/subheads)
+       ============================================================================ */
+    @font-face {
+      font-family: "Quip Regular";
+      src: url("ativos/fontes/quip.otf") format("opentype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* ============================================================================
+       :root — Modo LIGHT canônico (linho quente)
+       ============================================================================ */
+    :root {
+      /* Paleta canônica v3 — 8 hex literais */
+      --hex-mint:         #00E87A;
+      --hex-aqua:         #2BBFA0;
+      --hex-dark-teal:    #0F3D35;
+      --hex-deep-forest:  #0D2320;
+      --hex-linen:        #F5F0E8;
+      --hex-warm-linen:   #E8DDD0;
+      --hex-terracotta:   #C4976A;
+      --hex-espresso:     #2C2416;
+
+      /* Papéis semânticos — light */
+      --bg:               var(--hex-linen);
+      --bg-elevated:      var(--hex-warm-linen);
+      --fg:               var(--hex-espresso);
+      --fg-muted:         rgba(44, 36, 22, 0.68);
+      --border:           rgba(44, 36, 22, 0.14);
+      --border-strong:    rgba(44, 36, 22, 0.28);
+      --primary:          var(--hex-mint);
+      --primary-fg:       var(--hex-espresso);
+      --accent:           var(--hex-aqua);
+      --accent-warm:      var(--hex-terracotta);
+      --sidebar-bg:       var(--hex-warm-linen);
+      --code-bg:          rgba(44, 36, 22, 0.06);
+      --swatch-shadow:    0 1px 3px rgba(44, 36, 22, 0.14);
+
+      /* Tipografia */
+      --font-display:     "Geometr415 Blk BT", system-ui, sans-serif;
+      --font-hero:        "Quip Regular", "Inter", system-ui, sans-serif;
+      --font-ui:          "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+      /* Motion */
+      --duration-fast:    150ms;
+      --duration-base:    250ms;
+      --ease-standard:    cubic-bezier(0.2, 0, 0, 1);
+
+      /* Layout */
+      --sidebar-width:    240px;
+      --content-max:      900px;
+      --radius-sm:        6px;
+      --radius-md:        10px;
+      --radius-lg:        16px;
+    }
+
+    /* ============================================================================
+       .dark — Modo DARK canônico (verde frio)
+       ============================================================================ */
+    html.dark {
+      --bg:               var(--hex-deep-forest);
+      --bg-elevated:      var(--hex-dark-teal);
+      --fg:               var(--hex-linen);
+      --fg-muted:         rgba(245, 240, 232, 0.68);
+      --border:           rgba(245, 240, 232, 0.14);
+      --border-strong:    rgba(245, 240, 232, 0.28);
+      --primary:          var(--hex-mint);
+      --primary-fg:       var(--hex-espresso);
+      --accent:           var(--hex-aqua);
+      --accent-warm:      var(--hex-terracotta);
+      --sidebar-bg:       var(--hex-dark-teal);
+      --code-bg:          rgba(245, 240, 232, 0.08);
+      --swatch-shadow:    0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    /* ============================================================================
+       Reset + base
+       ============================================================================ */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-ui);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--fg);
+      background: var(--bg);
+      transition: background var(--duration-base) var(--ease-standard),
+                  color var(--duration-base) var(--ease-standard);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    ::selection { background: var(--primary); color: var(--primary-fg); }
+
+    /* ============================================================================
+       Header topo
+       ============================================================================ */
+    header.topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 32px;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .wordmark {
+      font-size: 20px;
+      color: var(--fg);
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0;
+    }
+    .wordmark .nutri {
+      font-family: var(--font-hero);
+      font-weight: 400;
+      font-size: 24px;
+      letter-spacing: -0.005em;
+      text-transform: lowercase;
+    }
+    .wordmark .ospro {
+      font-family: var(--font-display);
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-left: 4px;
+    }
+    .wordmark .dot { color: var(--primary); font-family: var(--font-display); font-weight: 900; }
+    .topbar-meta {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .version-badge {
+      font-family: var(--font-ui);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--fg-muted);
+      padding: 6px 10px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+    }
+    button.toggle-theme {
+      font: inherit;
+      cursor: pointer;
+      background: transparent;
+      color: var(--fg);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      font-size: 14px;
+      transition: background var(--duration-fast) var(--ease-standard);
+    }
+    button.toggle-theme:hover { background: var(--bg-elevated); }
+    button.toggle-theme:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+
+    /* ============================================================================
+       Layout — sidebar + main
+       ============================================================================ */
+    .layout {
+      display: grid;
+      grid-template-columns: var(--sidebar-width) 1fr;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    nav.sidebar {
+      position: sticky;
+      top: 73px;
+      align-self: start;
+      height: calc(100vh - 73px);
+      overflow-y: auto;
+      padding: 32px 24px;
+      background: var(--sidebar-bg);
+      border-right: 1px solid var(--border);
+      font-size: 14px;
+    }
+    nav.sidebar a {
+      display: block;
+      padding: 10px 12px;
+      margin-bottom: 4px;
+      color: var(--fg-muted);
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      border-left: 3px solid transparent;
+      transition: all var(--duration-fast) var(--ease-standard);
+    }
+    nav.sidebar a:hover {
+      background: color-mix(in srgb, var(--fg) 6%, transparent);
+      color: var(--fg);
+    }
+    nav.sidebar a.active {
+      color: var(--fg);
+      border-left-color: var(--primary);
+      background: color-mix(in srgb, var(--primary) 10%, transparent);
+      font-weight: 500;
+    }
+
+    main {
+      padding: 48px 64px;
+      max-width: calc(var(--content-max) + 128px);
+    }
+
+    /* ============================================================================
+       Hero
+       ============================================================================ */
+    section.hero {
+      padding: 40px 0 80px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+    .hero-eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--fg-muted);
+      margin: 0 0 16px;
+    }
+    .hero-title {
+      font-family: var(--font-hero);
+      font-size: clamp(48px, 6vw, 72px);
+      line-height: 1.05;
+      margin: 0 0 24px;
+      color: var(--fg);
+      font-weight: 400;
+    }
+    .hero-lede {
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--fg-muted);
+      max-width: 680px;
+      margin: 0 0 32px;
+    }
+    .hero-palette {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 4px;
+      max-width: 640px;
+      height: 56px;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      box-shadow: var(--swatch-shadow);
+    }
+    .hero-palette > div { height: 100%; }
+
+    /* ============================================================================
+       Sections
+       ============================================================================ */
+    section {
+      padding: 48px 0;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 96px;
+    }
+    section:last-of-type { border-bottom: none; }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-hero);
+      font-weight: 400;
+      color: var(--fg);
+      line-height: 1.2;
+    }
+    h2 { font-size: 40px; margin: 0 0 12px; }
+    h3 { font-size: 28px; margin: 40px 0 12px; }
+    h4 { font-size: 20px; margin: 24px 0 8px; font-family: var(--font-ui); font-weight: 600; }
+    p { margin: 0 0 16px; max-width: 700px; }
+    p.section-lede {
+      font-size: 18px;
+      color: var(--fg-muted);
+      margin-bottom: 32px;
+    }
+
+    /* ============================================================================
+       Componentes
+       ============================================================================ */
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--primary) 20%, transparent);
+      color: var(--fg);
+      font-weight: 600;
+      margin-right: 8px;
+    }
+    .card {
+      padding: 24px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      margin-bottom: 16px;
+    }
+    .callout {
+      padding: 20px 24px;
+      background: color-mix(in srgb, var(--primary) 10%, transparent);
+      border-left: 3px solid var(--primary);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 24px 0;
+      font-size: 15px;
+    }
+    .callout strong { color: var(--fg); }
+    .callout-warn {
+      background: color-mix(in srgb, var(--accent-warm) 12%, transparent);
+      border-left-color: var(--accent-warm);
+    }
+    .callout-danger {
+      background: color-mix(in srgb, #B33A2A 8%, transparent);
+      border-left-color: #B33A2A;
+    }
+    code, .mono {
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.9em;
+      padding: 2px 6px;
+      background: var(--code-bg);
+      border-radius: 4px;
+      color: var(--fg);
+    }
+    blockquote {
+      margin: 24px 0;
+      padding: 16px 24px;
+      border-left: 3px solid var(--accent-warm);
+      color: var(--fg-muted);
+      font-style: italic;
+      background: color-mix(in srgb, var(--accent-warm) 6%, transparent);
+    }
+    ul, ol { padding-left: 24px; margin: 12px 0 24px; max-width: 700px; }
+    li { margin-bottom: 6px; }
+    table {
+      width: 100%;
+      max-width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      font-weight: 600;
+      color: var(--fg);
+      background: var(--bg-elevated);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    tr:hover td { background: color-mix(in srgb, var(--fg) 3%, transparent); }
+    td.tabular-nums {
+      font-variant-numeric: tabular-nums;
+      font-feature-settings: "tnum" 1;
+    }
+
+    /* ============================================================================
+       Chip HEX
+       ============================================================================ */
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .chip-hex {
+      display: block;
+      width: 100%;
+      padding: 0;
+      text-align: left;
+      font: inherit;
+      cursor: pointer;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: transform var(--duration-fast) var(--ease-standard),
+                  box-shadow var(--duration-fast) var(--ease-standard);
+      position: relative;
+    }
+    .chip-hex:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--swatch-shadow);
+    }
+    .chip-hex:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+    .chip-swatch { height: 96px; border-bottom: 1px solid var(--border); }
+    .chip-info { padding: 12px 14px; }
+    .chip-name {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--fg);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .chip-hex-code {
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 12px;
+      color: var(--fg-muted);
+      letter-spacing: 0.02em;
+    }
+    .chip-role {
+      display: block;
+      margin-top: 6px;
+      font-size: 11px;
+      color: var(--fg-muted);
+      line-height: 1.4;
+    }
+    .chip-copied {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: var(--primary);
+      color: var(--primary-fg);
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 11px;
+      font-weight: 600;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--duration-fast) var(--ease-standard);
+    }
+    .chip-hex.copied .chip-copied { opacity: 1; }
+
+    /* ============================================================================
+       Diagrama do símbolo
+       ============================================================================ */
+    .symbol-diagram {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 48px 24px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      margin: 24px 0;
+      flex-wrap: wrap;
+    }
+    .symbol-part { text-align: center; max-width: 200px; }
+    .symbol-glyph {
+      font-family: var(--font-display);
+      font-size: 96px;
+      line-height: 1;
+      color: var(--fg);
+      margin-bottom: 12px;
+      font-weight: 900;
+    }
+    .symbol-glyph.dot-glyph { color: var(--primary); }
+    .symbol-label { font-size: 13px; color: var(--fg); font-weight: 600; margin-bottom: 4px; }
+    .symbol-meaning { font-size: 12px; color: var(--fg-muted); line-height: 1.4; }
+
+    /* ============================================================================
+       Imagem 6 variantes
+       ============================================================================ */
+    .variants-hero {
+      margin: 24px 0;
+      padding: 24px;
+      background: var(--bg-elevated);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+    }
+    .variants-hero img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius-md);
+    }
+    .variants-hero figcaption {
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--fg-muted);
+      text-align: center;
+    }
+
+    /* ============================================================================
+       WCAG mini-matriz
+       ============================================================================ */
+    table.wcag-matrix { font-size: 12px; }
+    table.wcag-matrix th, table.wcag-matrix td {
+      text-align: center;
+      padding: 6px 8px;
+    }
+    table.wcag-matrix .cta-cell {
+      background: var(--primary);
+      color: var(--primary-fg);
+      font-weight: 700;
+    }
+    table.wcag-matrix .aaa { color: var(--primary); font-weight: 600; }
+    table.wcag-matrix .fail { color: var(--fg-muted); }
+
+    /* ============================================================================
+       Contra-exemplo "nö"
+       ============================================================================ */
+    .no-anti {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: 96px;
+      color: var(--fg-muted);
+      opacity: 0.5;
+      position: relative;
+      padding: 12px 24px;
+      text-decoration: line-through;
+      text-decoration-color: #B33A2A;
+      text-decoration-thickness: 4px;
+    }
+
+    /* ============================================================================
+       Do / don't grid
+       ============================================================================ */
+    .dodont-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .dodont-col {
+      padding: 20px 24px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+    }
+    .dodont-do {
+      background: color-mix(in srgb, var(--primary) 8%, transparent);
+      border-color: color-mix(in srgb, var(--primary) 30%, transparent);
+    }
+    .dodont-dont {
+      background: color-mix(in srgb, #B33A2A 6%, transparent);
+      border-color: color-mix(in srgb, #B33A2A 30%, transparent);
+    }
+    .dodont-title {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .dodont-do .dodont-title { color: var(--primary); }
+    .dodont-dont .dodont-title { color: #B33A2A; }
+    .dodont-grid ol { padding-left: 20px; font-size: 14px; margin: 0; }
+
+    /* ============================================================================
+       Rodapé
+       ============================================================================ */
+    footer.brandbook-footer {
+      padding: 48px 0;
+      margin-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--fg-muted);
+      font-size: 14px;
+    }
+    footer.brandbook-footer .version-line {
+      font-family: ui-monospace, Menlo, monospace;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    /* ============================================================================
+       Responsivo
+       ============================================================================ */
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      nav.sidebar {
+        position: static;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+      main { padding: 32px 24px; }
+      .dodont-grid { grid-template-columns: 1fr; }
+      .hero-title { font-size: 40px; }
+      h2 { font-size: 32px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wordmark"><span class="nutri">nutri</span><span class="ospro">OS PRO</span><span class="dot">.</span></div>
+  <div class="topbar-meta">
+    <span class="version-badge">Brandbook v3 · 2026-07-05</span>
+    <button class="toggle-theme" id="toggle-theme" aria-label="Alternar tema claro/escuro" title="Alternar tema">Modo claro</button>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Índice do brandbook">
+    <a href="#hero" data-nav>Capa</a>
+    <a href="#indice" data-nav>00 · Índice</a>
+    <a href="#posicionamento" data-nav>01 · Posicionamento</a>
+    <a href="#voz" data-nav>02 · Voz da marca</a>
+    <a href="#identidade" data-nav>03 · Identidade visual</a>
+    <a href="#aplicacoes" data-nav>04 · Aplicações</a>
+    <a href="#manual" data-nav>05 · Manual operacional</a>
+    <a href="#rodape" data-nav>Rodapé</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <p class="hero-eyebrow">Brandbook oficial · v3 · 2026-07-05</p>
+      <h1 class="hero-title">Sua prática clínica merece um sistema operacional.</h1>
+      <p class="hero-lede">
+        Identidade v3 do NutriOS Pro — símbolo canônico <strong>n + O + ponto</strong>,
+        6 variantes oficiais, paleta dual-mode de 8 cores warm-frio, três famílias tipográficas
+        com papéis travados. Ancorada 100% no dossiê V2 aprovado pelo sócio.
+      </p>
+      <div class="hero-palette" role="img" aria-label="Paleta canônica de 8 cores">
+        <div style="background:#00E87A" title="Neon Mint #00E87A"></div>
+        <div style="background:#2BBFA0" title="Aqua Green #2BBFA0"></div>
+        <div style="background:#0F3D35" title="Dark Teal #0F3D35"></div>
+        <div style="background:#0D2320" title="Deep Forest #0D2320"></div>
+        <div style="background:#F5F0E8" title="Linen Cream #F5F0E8"></div>
+        <div style="background:#E8DDD0" title="Warm Linen #E8DDD0"></div>
+        <div style="background:#C4976A" title="Terracotta #C4976A"></div>
+        <div style="background:#2C2416" title="Espresso #2C2416"></div>
+      </div>
+    </section>
+
+    <!-- 00 · ÍNDICE -->
+    <section id="indice">
+      <span class="badge">00</span><h2>Índice</h2>
+      <p class="section-lede">
+        NutriOS Pro é um produto SaaS de nutrição clínica com identidade própria — distinta
+        da marca-mãe Kolden. Este brandbook formaliza a v3 (2026-07-05), que <strong>revoga
+        a interpretação "nö"</strong> da v2 e restaura a leitura canônica do símbolo como
+        <strong>n + O + ponto</strong>, ancorada no dossiê V2 aprovado pelo sócio.
+      </p>
+
+      <div class="callout">
+        <strong>Fontes de verdade v3.</strong>
+        <code>ativos/manifesto/v2-definicoes-finais.pdf</code> — manifesto do símbolo e paleta.
+        <code>ativos/logo/nutrios-pro-6-variantes.png</code> — composição-mestra das 6 variantes.
+        <code>ativos/fontes/quip.otf</code> — fonte oficial de display.
+        <code>ativos/fontes/_nota-geometr415.docx</code> — nota sobre Geometr415 Blk BT.
+        Em divergência, os ativos prevalecem.
+      </div>
+
+      <h3>Estrutura em 5 capítulos</h3>
+      <table>
+        <thead><tr><th>#</th><th>Capítulo</th><th>Foco</th></tr></thead>
+        <tbody>
+          <tr><td>01</td><td>Posicionamento</td><td>Brand idea, propósito, arquétipo Cuidador + Mago, diferenciação, público</td></tr>
+          <tr><td>02</td><td>Voz da marca</td><td>4 dimensões de tom, faça / não faça, princípios de mensagem, lista de palavras</td></tr>
+          <tr><td>03</td><td>Identidade visual v3</td><td>Símbolo n + O + ponto, 6 variantes, paleta 8 cores, tipografia, WCAG, do/don't</td></tr>
+          <tr><td>04</td><td>Aplicações</td><td>Produto, apresentação, social, e-mail, impresso, merchandise</td></tr>
+          <tr><td>05</td><td>Manual operacional</td><td>Governança, checklist 12 itens, acessibilidade, uso indevido</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Resumo em uma tela</h3>
+      <ul>
+        <li><strong>Marca:</strong> símbolo canônico <strong>n + O + ponto</strong> + wordmark <code>NUTRIOS PRO</code> em Geometr415 Blk BT.</li>
+        <li><strong>Conceito-mãe:</strong> o sistema operacional da prática clínica — o "O" de "OS" está literalmente desenhado no símbolo.</li>
+        <li><strong>Arquétipo:</strong> Cuidador (primário) + Mago (secundário).</li>
+        <li><strong>Público:</strong> nutricionista clínico + estudante recém-formado + público metódico.</li>
+        <li><strong>6 variantes:</strong> mascote, símbolo preto, símbolo mint, wordmark preto, wordmark mint, selo circular (preto e mint).</li>
+        <li><strong>Paleta:</strong> 8 hex dual-mode. Preto puro <code>#000000</code> e branco puro <code>#FFFFFF</code> deprecados.</li>
+        <li><strong>Par CTA:</strong> Espresso <code>#2C2416</code> sobre Neon Mint <code>#00E87A</code> — 10.30:1 AAA.</li>
+        <li><strong>Tipografia:</strong> Geometr415 Blk BT (wordmark) + Quip Regular (display) + Inter (UI/body).</li>
+      </ul>
+    </section>
+
+    <!-- 01 · POSICIONAMENTO -->
+    <section id="posicionamento">
+      <span class="badge">01</span><h2>Posicionamento</h2>
+      <p class="section-lede">
+        Pilar 1 de 3. Define <strong>quem o NutriOS Pro é</strong> antes de qualquer decisão
+        de voz ou visual. Personalidade precede identidade.
+      </p>
+
+      <h3>Brand idea</h3>
+      <blockquote>"Sua prática clínica merece um sistema operacional."</blockquote>
+      <p>
+        O "OS" no nome não é estética — é a tese da marca. Assim como um sistema operacional
+        organiza, integra e dá poder a um computador, o NutriOS Pro é a camada que unifica
+        tudo o que um nutricionista faz: avaliação, cálculo, prescrição e acompanhamento.
+        Ele transforma planilhas dispersas em <strong>um único organismo vivo, contínuo e
+        inteligente</strong> — espelhando o próprio ciclo metabólico que o produto ajuda a gerir.
+      </p>
+
+      <h3>Propósito</h3>
+      <p>
+        <strong>Devolver ao nutricionista o controle e o tempo da sua prática — e ao paciente,
+        a permanência no processo.</strong> O produto resolve duas dores simultâneas:
+      </p>
+      <ol>
+        <li><strong>Fricção operacional do profissional</strong> — eliminar cálculos manuais e a colcha de retalhos de planilhas Excel, especialmente penosa para recém-formados.</li>
+        <li><strong>Abandono do paciente</strong> — atacar o maior gap do mercado (foco em calorias) com saúde integral, módulo comportamental e visualização de resultados.</li>
+      </ol>
+
+      <h3>Arquétipo — Cuidador + Mago</h3>
+      <h4>Primário — Cuidador</h4>
+      <p>
+        Deseja proteger e cuidar; voz <strong>acolhedora, compassiva, generosa</strong>. Cuida
+        do paciente (adesão via comportamental + visualização) e do profissional (tira a carga
+        operacional). A mascote — monograma sorridente abraçando um livro — encarna literalmente
+        o Cuidador. Verde é a cor de tendência do arquétipo.
+      </p>
+      <div class="callout callout-warn">
+        <strong>Sombra do Cuidador.</strong> Martírio, sufocamento, infantilização. Evitar tom
+        paternalista que tire autoridade do nutricionista, ou "fofura" que comprometa a
+        credibilidade clínica.
+      </div>
+
+      <h4>Secundário — Mago</h4>
+      <p>
+        Transforma a realidade e torna sonhos realidade; voz <strong>visionária, transformadora</strong>.
+        A IA (foto de prato, exames, Body 3D, rótulos) é "mágica" no sentido literal — torna
+        visível e mensurável o que exigia planilha e trabalho manual. A metáfora do "sistema
+        operacional" é, em si, transformadora.
+      </p>
+      <p><strong>Síntese:</strong> <em>o Cuidador que usa a magia da tecnologia para que ninguém fique para trás.</em></p>
+
+      <h3>Diferenciação</h3>
+      <table>
+        <thead><tr><th>Eixo</th><th>WebDiet / Dietbox</th><th>NutriOS Pro</th></tr></thead>
+        <tbody>
+          <tr><td>Foco</td><td>Cálculo e prescrição (caloria/macro)</td><td><strong>Saúde integral + comportamento + adesão</strong></td></tr>
+          <tr><td>Inteligência</td><td>Bases estáticas</td><td><strong>IA aplicada</strong> (foto, exames, Body 3D, rótulos)</td></tr>
+          <tr><td>Conceito</td><td>Software de nutrição</td><td><strong>Sistema operacional da prática clínica</strong></td></tr>
+        </tbody>
+      </table>
+
+      <h3>Público</h3>
+      <ul>
+        <li><strong>Primário:</strong> nutricionista clínico que atende individualmente. É quem assina.</li>
+        <li><strong>Secundário:</strong> estudante recém-formado / recém-CRN, inseguro com cálculos manuais.</li>
+        <li><strong>Terciário:</strong> "público metódico" — entusiastas que validam profundidade das ferramentas.</li>
+      </ul>
+      <p><em>Quem NÃO é público hoje:</em> o paciente final como usuário autônomo. Na versão atual ele recebe planos por PDF; a comunicação fala com o profissional que cuida dele.</p>
+    </section>
+
+    <!-- 02 · VOZ DA MARCA -->
+    <section id="voz">
+      <span class="badge">02</span><h2>Voz da marca</h2>
+      <p class="section-lede">
+        Pilar 2 de 3. Tom deriva do arquétipo Cuidador + Mago. Consistência entre pontos de
+        contato é o que constrói confiança.
+      </p>
+
+      <blockquote>"Sua prática clínica merece um sistema operacional." — âncora de toda comunicação.</blockquote>
+
+      <h3>Quatro dimensões calibradas</h3>
+      <table>
+        <thead><tr><th>Dimensão</th><th>Posição</th><th>Tradução</th></tr></thead>
+        <tbody>
+          <tr><td>Formal ↔ Casual</td><td class="tabular-nums">6</td><td>Próximo e humano, mas profissional. Trata o nutri de "você", como colega.</td></tr>
+          <tr><td>Sério ↔ Brincalhão</td><td class="tabular-nums">4</td><td>Leve quando acolhe, sério em dado clínico. Nunca piada com saúde.</td></tr>
+          <tr><td>Respeitoso ↔ Irreverente</td><td class="tabular-nums">3</td><td>Autoridade do nutricionista é sagrada.</td></tr>
+          <tr><td>Entusiasmado ↔ Factual</td><td class="tabular-nums">5</td><td>Entusiasmo genuíno, equilibrado por precisão em números e resultados.</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Resumo em uma linha:</strong> <em>fala como um colega experiente e caloroso que entende de tecnologia — confiante, claro, do seu lado, sem nunca ser frio nem infantil.</em></p>
+
+      <h3>Princípios de mensagem</h3>
+      <ol>
+        <li><strong>Um sistema, não planilhas.</strong> <em>(operacional / Mago)</em> — promessa de unificação.</li>
+        <li><strong>O paciente que permanece.</strong> <em>(adesão / Cuidador)</em> — comportamental e visualização.</li>
+        <li><strong>Mais valor para a sua prática.</strong> <em>(negócio / profissional como herói)</em> — benefício econômico.</li>
+      </ol>
+      <p><em>Uma peça: um eixo dominante + no máximo um de apoio. Os três ao mesmo tempo poluem.</em></p>
+
+      <div class="dodont-grid">
+        <div class="dodont-col dodont-do">
+          <div class="dodont-title">Como comunica</div>
+          <ol>
+            <li>Coloca o profissional no centro. Ele é o herói; o produto é o guia.</li>
+            <li>Claro antes de bonito. Frases curtas. Uma ideia por frase.</li>
+            <li>Mostra, não promete. Onde houver número, use-o.</li>
+            <li>Acolhe o esforço, reduz o medo do recém-formado.</li>
+            <li>Traduz tecnologia em benefício — não venda "IA", venda o que ela faz.</li>
+            <li>Usa a metáfora do OS com parcimônia — poderosa porque é rara.</li>
+            <li>Respeita o rigor científico.</li>
+          </ol>
+        </div>
+        <div class="dodont-col dodont-dont">
+          <div class="dodont-title">Como não comunica</div>
+          <ol>
+            <li>Não é clinicamente frio. Nada de jargão burocrático.</li>
+            <li>Não é "fofo" demais. Sem infantilização.</li>
+            <li>Não posiciona o produto como substituto do nutricionista.</li>
+            <li>Não promete milagre. Sem "revolucionário", "disruptivo".</li>
+            <li>Não fala com o paciente final.</li>
+            <li>Não soa corporativo-vazio ("soluções de gestão 360°").</li>
+          </ol>
+        </div>
+      </div>
+
+      <h3>Lista de palavras</h3>
+      <table>
+        <thead><tr><th>Sempre usar</th><th>Nunca usar</th></tr></thead>
+        <tbody>
+          <tr><td>sistema, fluxo, contínuo, acompanhar, evolução</td><td>revolucionário, disruptivo, game-changer</td></tr>
+          <tr><td>prática clínica, profissional, nutricionista</td><td>usuário / cliente (para o nutri)</td></tr>
+          <tr><td>comprovar, mostrar, visualizar, registrar</td><td>milagre, mágico (literal), instantâneo</td></tr>
+          <tr><td>cuidar, acolher, adesão, permanecer</td><td>gestão 360°, solução completa de mercado</td></tr>
+          <tr><td>simples, claro, sem planilhas</td><td>fácil-fácil, num clique, automático (sozinho)</td></tr>
+          <tr><td>inteligência, automatizado, por IA (como meio)</td><td>substituir o nutricionista</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 03 · IDENTIDADE VISUAL -->
+    <section id="identidade">
+      <span class="badge">03</span><h2>Identidade visual (v3)</h2>
+      <p class="section-lede">
+        Pilar 3 de 3. Este capítulo <strong>revoga a interpretação "nö"</strong> da v2
+        (2026-07-03) e retorna à leitura canônica lavrada pelo próprio sócio no dossiê V2 —
+        na qual "nö" é <strong>explicitamente nomeada como a nomenclatura rejeitada</strong>.
+      </p>
+
+      <h3>Símbolo — n + O + ponto</h3>
+      <p>
+        O símbolo é composto por <strong>três elementos linguísticos</strong>, cada um
+        significa uma letra da palavra <strong>NUTRIOS</strong>. Transcrição literal do
+        dossiê V2 aprovado (pg 2):
+      </p>
+      <blockquote>
+        "O PONTO É PARA ENFATIZAR O 'I' DO FINAL NUTRI. O «O» É PARA O SIGNIFICADO DO 'OS'
+        NA PALAVRA NUTRIOS. O 'N' É PARA SIGNIFICAR O INÍCIO DA PALAVRA NUTRI."
+      </blockquote>
+
+      <div class="symbol-diagram" role="img" aria-label="Diagrama linguístico do símbolo n + O + ponto">
+        <div class="symbol-part">
+          <div class="symbol-glyph">n</div>
+          <div class="symbol-label">"n" minúsculo</div>
+          <div class="symbol-meaning">Início da palavra NUTRI. Traço bold, curva descendente que carrega o peso visual.</div>
+        </div>
+        <div class="symbol-part">
+          <div class="symbol-glyph">O</div>
+          <div class="symbol-label">"O" maiúsculo</div>
+          <div class="symbol-meaning">O "OS" de NUTRIOS (Operating System). Círculo bold, encaixado no traço do "n".</div>
+        </div>
+        <div class="symbol-part">
+          <div class="symbol-glyph dot-glyph">·</div>
+          <div class="symbol-label">Ponto (orbe)</div>
+          <div class="symbol-meaning">Pingo do "I" final de NUTRI. Flutua acima e à direita do "O", geralmente em Neon Mint.</div>
+        </div>
+      </div>
+
+      <p><strong>Nomenclatura oficial:</strong> o símbolo se chama "símbolo n + O + ponto" (ou apenas "o símbolo" em conversa). É a marca-âncora — funciona isolado como favicon, ícone, avatar, watermark, selo circular.</p>
+
+      <h3>Contra-exemplo — o que "nö" NÃO é</h3>
+      <div class="callout callout-danger">
+        <strong>Termo rejeitado.</strong> No dossiê V2 (pg 2), a expressão "nö" aparece entre aspas
+        com a legenda literal: <em>"O SISTEMA PENSOU QUE O SIMBOLO FOSSE ESSA NOMENCLATURA, POREM
+        É A IDEIA ABAIXO A CORRETA."</em> Foi uma pareidolia tipográfica (n + trema/umlaut) que o
+        sistema (LLM da v2 anterior) enxergou. <strong>Nenhuma comunicação viva</strong> — site,
+        produto, deck, materiais — deve chamar o símbolo assim.
+      </div>
+      <div style="text-align:center; padding: 24px 0;">
+        <span class="no-anti" aria-label="Termo rejeitado tachado">nö</span>
+        <div style="font-size:12px; color: var(--fg-muted); margin-top: 8px;">↑ nomenclatura rejeitada pelo próprio dossiê V2 — não usar em comunicação viva</div>
+      </div>
+
+      <h3>6 variantes do sistema visual</h3>
+      <figure class="variants-hero">
+        <img src="ativos/logo/nutrios-pro-6-variantes.png" alt="Composição-mestra do NutriOS Pro com as seis variantes oficiais: mascote, símbolo preto, símbolo mint, wordmark preto, wordmark mint e selo circular (preto e mint).">
+        <figcaption>Composição-mestra — <code>ativos/logo/nutrios-pro-6-variantes.png</code></figcaption>
+      </figure>
+
+      <table>
+        <thead><tr><th>#</th><th>Variante</th><th>Uso indicado</th><th>Fundo recomendado</th></tr></thead>
+        <tbody>
+          <tr><td>2.1</td><td><strong>Mascote</strong></td><td>Onboarding, estados vazios, sucesso; social amigável; educativo para paciente.</td><td>Linen Cream, Warm Linen ou Deep Forest.</td></tr>
+          <tr><td>2.2</td><td><strong>Símbolo preto</strong></td><td>Papelaria, assinatura light, documentos B2B, reprodução monocromática.</td><td>Linen Cream <code>#F5F0E8</code>.</td></tr>
+          <tr><td>2.3</td><td><strong>Símbolo mint</strong></td><td>Modo dark do app, splash, overlays sobre escuro.</td><td>Deep Forest <code>#0D2320</code>.</td></tr>
+          <tr><td>2.4</td><td><strong>Wordmark preto</strong></td><td>Cabeçalho institucional light, cartão, site (light).</td><td>Linen Cream.</td></tr>
+          <tr><td>2.5</td><td><strong>Wordmark mint</strong></td><td>Cabeçalho dark, modo dark do produto, capa de vídeo escuro.</td><td>Deep Forest.</td></tr>
+          <tr><td>2.6</td><td><strong>Selo circular</strong> (preto e mint)</td><td>Badge, "made by", carimbo, marca d'água decorativa. Nunca assinatura principal.</td><td>Linen Cream (preto) ou Deep Forest (mint).</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Paleta cromática — 8 cores dual-mode</h3>
+      <p>Fonte: <code>ativos/manifesto/v2-definicoes-finais.pdf</code>, pg 3. Clique num chip para copiar o hex.</p>
+
+      <div class="palette-grid" id="palette-grid">
+        <button class="chip-hex" data-hex="#00E87A" type="button">
+          <div class="chip-swatch" style="background:#00E87A"></div>
+          <div class="chip-info">
+            <span class="chip-name">Neon Mint</span>
+            <span class="chip-hex-code">#00E87A</span>
+            <span class="chip-role">Primária vibrante. Fundo do CTA canônico. Símbolo/wordmark mint.</span>
+          </div>
+          <span class="chip-copied">copiado</span>
+        </button>
+        <button class="chip-hex" data-hex="#2BBFA0" type="button">
+          <div class="chip-swatch" style="background:#2BBFA0"></div>
+          <div class="chip-info">
+            <span class="chip-name">Aqua Green</span>
+            <span class="chip-hex-code">#2BBFA0</span>
+            <span class="chip-role">Primária calma. Botões secundários, gráficos, badges de sucesso.</span>
+          </div>
+          <span class="chip-copied">copiado</span>
+        </button>
+        <button class="chip-hex" data-hex="#0F3D35" type="button">
+          <div class="chip-swatch" style="background:#0F3D35"></div>
+          <div class="chip-info">
+            <span class="chip-name">Dark Teal</span>
+            <span class="chip-hex-code">#0F3D35</span>
+            <span class="chip-role">Superfície dark elevada — card, modal, hover.</span>
+          </div>
+          <span class="chip-copied">copiado</span>
+        </button>
+        <button class="chip-hex" data-hex="#0D2320" type="button">
+          <div class="chip-swatch" style="background:#0D2320"></div>
+          <div class="chip-info">
+            <span class="chip-name">Deep Forest</span>
+            <span class="chip-hex-code">#0D2320</span>
+            <span class="chip-role">Background dark canônico — produto e app em modo escuro.</span>
+          </div>
+          <span class="chip-copied">copiado</span>
+        </button>
+        <button class="chip-hex" data-hex="#F5F0E8" type="button">
+          <div class="chip-swatch" style="background:#F5F0E8"></div>
+          <div class="chip-info">
+            <span class="chip-name">Linen Cream</span>
+            <span class="chip-hex-code">#F5F0E8</span>
+            <span class="chip-role">Background light canônico — docs, apresentação, marketing.</span>
+          </div>
+          <span class="chip-copied">copiado</span>
+        </button>
+        <button class="chip-hex" data-hex="#E8DDD0" type="button">
+          <div class="chip-swatch" style="background:#E8DDD0"></div>
+          <div class="chip-info">
+            <span class="chip-name">Warm Linen</span>
+            <span class="chip-hex-code">#E8DDD0</span>
+            <span class="chip-role">Superfície light elevada — card, divisor, callout.</span>
+          </div>
+          <span class="chip-copied">copiado</span>
+        </button>
+        <button class="chip-hex" data-hex="#C4976A" type="button">
+          <div class="chip-swatch" style="background:#C4976A"></div>
+          <div class="chip-info">
+            <span class="chip-name">Terracotta</span>
+            <span class="chip-hex-code">#C4976A</span>
+            <span class="chip-role"><strong>Accent-warm apenas.</strong> Badge, categoria, hover. <strong>NUNCA CTA.</strong></span>
+          </div>
+          <span class="chip-copied">copiado</span>
+        </button>
+        <button class="chip-hex" data-hex="#2C2416" type="button">
+          <div class="chip-swatch" style="background:#2C2416"></div>
+          <div class="chip-info">
+            <span class="chip-name">Espresso</span>
+            <span class="chip-hex-code">#2C2416</span>
+            <span class="chip-role">Foreground escuro — texto sobre linho, símbolo preto, wordmark preto.</span>
+          </div>
+          <span class="chip-copied">copiado</span>
+        </button>
+      </div>
+
+      <div class="callout">
+        <strong>Par CTA canônico.</strong> Espresso <code>#2C2416</code> sobre Neon Mint
+        <code>#00E87A</code> — contraste ≈ <strong>10.30:1 AAA</strong>. Único par
+        intransigente de ação primária. Botão de "Salvar", "Calcular", "Continuar".
+      </div>
+
+      <div class="callout callout-warn">
+        <strong>Terracotta NUNCA é CTA.</strong> Contraste ~2.4:1 sobre Linen e ~3.1:1 sobre
+        Deep Forest — falha em AA para texto de botão. É accent-warm: badge de categoria, tag,
+        hover discreto, ilustração. Verde = ação; terracotta = enraizamento.
+      </div>
+
+      <h3>Deprecações — o que sai do sistema</h3>
+      <ul>
+        <li><strong>Preto puro <code>#000000</code></strong> → substituído por <strong>Espresso <code>#2C2416</code></strong>. Frio, contradiz o Cuidador.</li>
+        <li><strong>Branco puro <code>#FFFFFF</code></strong> → substituído por <strong>Linen Cream <code>#F5F0E8</code></strong>. Impessoal e cansa em modo light prolongado.</li>
+        <li><strong>Forest Green herdado v1</strong> → substituído pela dupla Neon Mint + Aqua Green.</li>
+      </ul>
+
+      <h3>Tipografia — 3 famílias, 3 papéis</h3>
+      <table>
+        <thead><tr><th>Família</th><th>Uso</th><th>Licença</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Geometr415 Blk BT</strong></td>
+            <td>Wordmark oficial + glyph "O" do símbolo</td>
+            <td>Bitstream comercial</td>
+            <td>Asset estático · nunca webfont</td>
+          </tr>
+          <tr>
+            <td><strong>Quip Regular</strong></td>
+            <td>Display, hero, subheads</td>
+            <td>Ahmad Suhadi ARR</td>
+            <td>Pendente — validar webfont público</td>
+          </tr>
+          <tr>
+            <td><strong>Inter</strong></td>
+            <td>UI, body, tabelas clínicas com <code>tabular-nums</code></td>
+            <td>SIL OFL</td>
+            <td>Livre para qualquer uso</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Escala tipográfica</h3>
+      <table>
+        <thead><tr><th>Token</th><th>Uso</th><th>Tamanho</th><th>Família</th></tr></thead>
+        <tbody>
+          <tr><td><code>display-hero</code></td><td>Hero de site, cover de deck</td><td class="tabular-nums">72 px</td><td>Quip Regular</td></tr>
+          <tr><td><code>display-lg</code></td><td>H1</td><td class="tabular-nums">56 px</td><td>Quip Regular</td></tr>
+          <tr><td><code>display-md</code></td><td>H2</td><td class="tabular-nums">40 px</td><td>Quip Regular</td></tr>
+          <tr><td><code>subhead</code></td><td>H3</td><td class="tabular-nums">28 px</td><td>Quip Regular</td></tr>
+          <tr><td><code>title</code></td><td>H4 / card title</td><td class="tabular-nums">20 px</td><td>Inter SemiBold</td></tr>
+          <tr><td><code>body</code></td><td>Corpo</td><td class="tabular-nums">16 px</td><td>Inter Regular</td></tr>
+          <tr><td><code>caption</code></td><td>Microcopy, footnote</td><td class="tabular-nums">12 px</td><td>Inter Medium</td></tr>
+          <tr><td><code>data</code></td><td>Número em tabela clínica</td><td class="tabular-nums">14–16 px</td><td>Inter + <code>tabular-nums</code></td></tr>
+        </tbody>
+      </table>
+
+      <h3>Matriz WCAG — pares principais</h3>
+      <p>Legenda: <strong>AAA</strong> ≥ 7:1 · <strong>AA</strong> ≥ 4.5:1 · <strong>AA-large</strong> ≥ 3:1 · <em>fail</em> &lt; 3:1.</p>
+      <table class="wcag-matrix">
+        <thead>
+          <tr>
+            <th>foreground ↓ / background →</th>
+            <th>Mint</th><th>Aqua</th><th>Dark Teal</th><th>Deep Forest</th><th>Linen</th><th>Warm Linen</th><th>Terracotta</th><th>Espresso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Mint</strong></td><td>·</td><td class="fail">1.7</td><td class="aaa">8.9</td><td class="aaa">11.4</td><td class="fail">1.3</td><td class="fail">1.5</td><td class="fail">2.4</td><td class="cta-cell">10.3</td></tr>
+          <tr><td><strong>Aqua</strong></td><td class="fail">1.7</td><td>·</td><td>5.2</td><td>6.7</td><td class="fail">2.2</td><td class="fail">2.6</td><td class="fail">1.4</td><td>6.0</td></tr>
+          <tr><td><strong>Dark Teal</strong></td><td class="aaa">8.9</td><td>5.2</td><td>·</td><td class="fail">1.3</td><td class="aaa">11.6</td><td class="aaa">10.4</td><td>4.4</td><td class="fail">1.5</td></tr>
+          <tr><td><strong>Deep Forest</strong></td><td class="aaa">11.4</td><td>6.7</td><td class="fail">1.3</td><td>·</td><td class="aaa">14.8</td><td class="aaa">13.3</td><td>5.6</td><td class="fail">1.2</td></tr>
+          <tr><td><strong>Linen</strong></td><td class="fail">1.3</td><td class="fail">2.2</td><td class="aaa">11.6</td><td class="aaa">14.8</td><td>·</td><td class="fail">1.1</td><td class="fail">2.1</td><td class="aaa">12.8</td></tr>
+          <tr><td><strong>Warm Linen</strong></td><td class="fail">1.5</td><td class="fail">2.6</td><td class="aaa">10.4</td><td class="aaa">13.3</td><td class="fail">1.1</td><td>·</td><td class="fail">1.9</td><td class="aaa">11.5</td></tr>
+          <tr><td><strong>Terracotta</strong></td><td class="fail">2.4</td><td class="fail">1.4</td><td>4.4</td><td>5.6</td><td class="fail">2.1</td><td class="fail">1.9</td><td>·</td><td>5.4</td></tr>
+          <tr><td><strong>Espresso</strong></td><td class="cta-cell">10.3</td><td>6.0</td><td class="fail">1.5</td><td class="fail">1.2</td><td class="aaa">12.8</td><td class="aaa">11.5</td><td>5.4</td><td>·</td></tr>
+        </tbody>
+      </table>
+      <p><em>Célula em Neon Mint sinaliza o par CTA canônico — única combinação intransigente do sistema.</em></p>
+
+      <h3>Do / don't operacionais</h3>
+      <div class="dodont-grid">
+        <div class="dodont-col dodont-do">
+          <div class="dodont-title">Do — 7 regras invioláveis</div>
+          <ol>
+            <li>Chamar o símbolo pelo nome correto — "símbolo" ou "n + O + ponto".</li>
+            <li>Usar a variante certa: mascote para acolhimento, wordmark para institucional, selo circular para decoração.</li>
+            <li>Preservar clearance (altura da x-height do "n").</li>
+            <li>Manter o par CTA canônico: Espresso sobre Neon Mint.</li>
+            <li>Trocar preto puro por Espresso e branco puro por Linen Cream.</li>
+            <li>Reproduzir o wordmark a partir do SVG/PNG oficial — nunca fonte viva.</li>
+            <li>Ativar <code>tabular-nums</code> em tabelas clínicas.</li>
+          </ol>
+        </div>
+        <div class="dodont-col dodont-dont">
+          <div class="dodont-title">Don't — 12 proibições</div>
+          <ol>
+            <li>Não chamar o símbolo pela nomenclatura rejeitada em comunicação viva.</li>
+            <li>Não usar Terracotta como CTA.</li>
+            <li>Não usar preto puro <code>#000000</code>.</li>
+            <li>Não usar branco puro <code>#FFFFFF</code>.</li>
+            <li>Não embutir Geometr415 Blk BT como webfont.</li>
+            <li>Não embutir Quip como webfont público sem licença específica.</li>
+            <li>Não usar o selo circular como assinatura principal.</li>
+            <li>Não usar mascote em contexto clínico sensível.</li>
+            <li>Não usar wordmark isolado sem o símbolo.</li>
+            <li>Não misturar variantes num mesmo lockup.</li>
+            <li>Não aplicar filtros (drop-shadow, glow, blur, gradient).</li>
+            <li>Não rotacionar, espelhar ou distorcer o símbolo.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · APLICAÇÕES -->
+    <section id="aplicacoes">
+      <span class="badge">04</span><h2>Aplicações da marca</h2>
+      <p class="section-lede">
+        Como o sistema visual v3 se aplica em cada suporte. Cada seção travada em: variante do
+        logo, paleta, tipografia, dimensão/grid.
+      </p>
+
+      <h3>1. Produto (app) — território dark canônico</h3>
+      <div class="card">
+        <p><strong>Variante:</strong> wordmark mint no top bar; símbolo mint em favicon/ícone; mascote em onboarding e sucesso.</p>
+        <p><strong>Paleta:</strong> fundo Deep Forest <code>#0D2320</code>. Superfície Dark Teal <code>#0F3D35</code>. Texto Linen Cream (14.8:1 AAA). CTA Espresso sobre Neon Mint (10.3:1 AAA). Terracotta apenas como badge de categoria.</p>
+        <p><strong>Tipografia:</strong> Inter SemiBold em labels, Inter Regular em body. Tabelas com <code>tabular-nums</code>. <em>Nunca Quip em UI densa.</em></p>
+        <p><strong>Grid:</strong> base 8 px. Touch target ≥ 44×44 px (mobile). Radius 8 px (card/botão), 4 px (badge).</p>
+      </div>
+
+      <h3>2. Apresentação institucional — território light warm</h3>
+      <div class="card">
+        <p><strong>Variante:</strong> cover slide com wordmark preto sobre Linen Cream; header de slide com símbolo preto; fechamento com selo circular preto.</p>
+        <p><strong>Paleta:</strong> fundo Linen Cream. Card Warm Linen. Texto Espresso (12.8:1 AAA). Destaque numérico em pill Neon Mint sobre Espresso.</p>
+        <p><strong>Tipografia:</strong> Quip Regular em H1 (56 px), H2 (40 px), H3 (28 px). Inter Regular no corpo (18–20 px). Dados com <code>tabular-nums</code>.</p>
+        <p><strong>Grid:</strong> slide 16:9 (1920×1080). Margem safe 80 px. Espaço título→corpo 48–64 px.</p>
+      </div>
+
+      <h3>3. Redes sociais — território dual</h3>
+      <div class="card">
+        <p><strong>Feed (1080×1080 ou 4:5):</strong> Linen Cream ou Warm Linen. Chamada em Quip 60–80 px. Selo circular preto decorativo.</p>
+        <p><strong>Story / Reels (1080×1920):</strong> Deep Forest para produto, Linen Cream para citação. Wordmark mint no topo. CTA Espresso sobre Neon Mint.</p>
+        <p><strong>Capa (LinkedIn, YouTube):</strong> um único fundo cheio + wordmark grande. Nunca mascote em capa institucional B2B.</p>
+      </div>
+
+      <h3>4. E-mail</h3>
+      <div class="card">
+        <p><strong>Assinatura:</strong> wordmark preto (altura 40 px) + nome/cargo/contato em Inter. Sem banner, sem citação — é institucional.</p>
+        <p><strong>Newsletter:</strong> 600 px de largura. Header wordmark preto. Card em Warm Linen. Link em Aqua Green ou Terracotta bold. CTA Espresso sobre Neon Mint (radius 8, padding 16×32).</p>
+        <p><strong>Transacional:</strong> minimalista. Wordmark preto pequeno + corpo Inter sobre Linen. Sem mascote. Legibilidade e credibilidade.</p>
+      </div>
+
+      <h3>5. Impresso</h3>
+      <div class="card">
+        <p><strong>Cartão de visita (90×50 mm):</strong> offset 300g fosco. Wordmark preto na frente. Símbolo ou selo circular no verso. CMYK: Espresso ≈ C60 M60 Y70 K70; Linen ≈ papel timbrado natural.</p>
+        <p><strong>Ficha de avaliação (A4):</strong> documento clínico — CMYK austero, sem mascote. Tabelas Inter <code>tabular-nums</code>. Divisor Terracotta 1px.</p>
+      </div>
+
+      <h3>6. Merchandise</h3>
+      <div class="card">
+        <p><strong>T-shirt:</strong> mascote grande no peito. Deep Forest, Linen ou Warm Linen — nunca preto puro. Silk-screen; testar mint amostra antes de lote.</p>
+        <p><strong>Adesivo:</strong> circular (⌀60 mm) com selo mint ou preto; die-cut com símbolo mint isolado.</p>
+        <p><strong>Brinde de evento:</strong> bloco de notas Linen + selo preto embossado; ecobag com wordmark preto grande + mascote pequena.</p>
+      </div>
+    </section>
+
+    <!-- 05 · MANUAL OPERACIONAL -->
+    <section id="manual">
+      <span class="badge">05</span><h2>Manual operacional</h2>
+      <p class="section-lede">
+        Como fazer a marca funcionar no dia a dia sem drift. Foca em <strong>aprovar, checar,
+        entregar e proteger</strong>.
+      </p>
+
+      <h3>Governança em 3 níveis</h3>
+      <table>
+        <thead><tr><th>Nível</th><th>Quem</th><th>Escopo</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>1</strong></td>
+            <td>Time interno / conteúdo / produto</td>
+            <td>Uso de ativos como foram entregues. Sem aprovação nova. Só respeitar as regras do capítulo 3.</td>
+          </tr>
+          <tr>
+            <td><strong>2</strong></td>
+            <td><strong>Aglaia</strong> (squad de branding)</td>
+            <td>Novo lockup, ilustração, peça institucional, adaptação de tom para novo idioma. SLA 48h.</td>
+          </tr>
+          <tr>
+            <td><strong>3</strong></td>
+            <td><strong>Ronan</strong> (sócio)</td>
+            <td>Extensão de paleta, extensão de tipografia, licença webfont Quip, recall público, rebrand (v4).</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Toda decisão de Nível 2 e 3 fica em <code>../decisoes.md</code> do projeto NutriOS Pro.</p>
+
+      <h3>Checklist antes de publicar — 12 itens</h3>
+      <ol>
+        <li>Símbolo correto (variante oficial + nomeado como "símbolo" ou "n + O + ponto").</li>
+        <li>Variante adequada ao contexto (mascote/wordmark/selo circular no lugar certo).</li>
+        <li>Clearance preservado (≥ x-height do "n").</li>
+        <li>Tamanho mínimo respeitado (favicon ≥ 16 px, lockup ≥ 24 px UI / 12 mm impresso).</li>
+        <li>Paleta canônica exclusiva — zero preto puro, zero branco puro em peça própria.</li>
+        <li>Terracotta não é CTA. Se estiver, corrigir para Espresso sobre Neon Mint.</li>
+        <li>Par CTA canônico presente (Espresso sobre Neon Mint na ação primária).</li>
+        <li>Tipografia respeita papel (Geometr415 só em wordmark estático; Quip em display; Inter em UI/body). Tabelas com <code>tabular-nums</code>.</li>
+        <li>Contraste WCAG (≥ 4.5:1 texto normal; par CTA em AAA 10.3:1).</li>
+        <li>Voz alinhada com Cuidador + Mago. Sem hype, sem infantilização, sem frieza.</li>
+        <li>Wordmark não reconstruído com fonte viva — SVG/PNG oficial.</li>
+        <li>Sem filtros / distorção (drop-shadow, glow, blur, rotação, espelhamento).</li>
+      </ol>
+
+      <h3>Acessibilidade obrigatória</h3>
+      <ul>
+        <li><strong>Contraste:</strong> texto normal ≥ 4.5:1 (AA); texto grande ≥ 3:1 (AA-large); CTA primário em AAA (7:1) — coberto pelo par canônico com folga (10.3:1).</li>
+        <li><strong>Alt text descritivo</strong> em toda imagem. Logo: <code>alt="NutriOS Pro"</code>. Mascote ilustrativa: descrever a ação. Foto decorativa: <code>alt=""</code>.</li>
+        <li><strong>Foco visível</strong> em todo elemento interativo. <strong>Touch target</strong> ≥ 44×44 px (mobile).</li>
+        <li><strong>Movimento:</strong> nada pisca &gt; 3 Hz. Respeitar <code>prefers-reduced-motion</code>.</li>
+      </ul>
+
+      <h3>Fluxo Aglaia → Ronan para novo asset</h3>
+      <ol>
+        <li><strong>Ticket</strong> em <code>sobre-a-empresa/operacao/tarefas/</code> como <code>KLD-{ano}-{contador}</code>. Campos: título, contexto, referência, suporte final, formato, urgência.</li>
+        <li><strong>Triagem Aglaia:</strong> reutiliza existente / ajuste Nível 2 (produz em 48h) / escalona Nível 3 / encaminha para squad correto.</li>
+        <li><strong>Produção e entrega:</strong> arquivo em kebab-case (<code>nutrios-pro-{variante}-{formato}-{contexto}.{ext}</code>) em <code>ativos/logo/</code>. Registro em <code>../decisoes.md</code>.</li>
+        <li><strong>Consumo:</strong> quem pediu usa respeitando o checklist. Problema em produção → reabre ticket com evidência.</li>
+      </ol>
+
+      <h3>Uso indevido — classificação e resposta</h3>
+      <table>
+        <thead><tr><th>Tipo</th><th>Exemplo</th><th>Ação</th></tr></thead>
+        <tbody>
+          <tr><td><strong>A — Erro honesto</strong></td><td>Blog cita com wordmark mal reproduzido</td><td>Cortês: link para brandbook público.</td></tr>
+          <tr><td><strong>B — Confusão de marca</strong></td><td>Concorrente usa "NutriOSPro" em produto próprio</td><td>Notificação legal via Ronan.</td></tr>
+          <tr><td><strong>C — Malicioso</strong></td><td>Fraude, phishing, produto falso</td><td>Escalar ≤24h: legal + Malwarebytes + plataforma.</td></tr>
+          <tr><td><strong>D — Erro interno</strong></td><td>Peça própria com problema publicada</td><td>Recall silencioso + registro em <code>../decisoes.md</code>.</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Crise pública:</strong> ≤30 min Ronan ciente + trava. ≤2h primeira resposta pública. ≤24h resolução formal.</p>
+    </section>
+
+    <!-- RODAPÉ -->
+    <section id="rodape">
+      <footer class="brandbook-footer">
+        <div class="version-line">Brandbook NutriOS Pro · v3 · 2026-07-05 · Fase C consolidação (Aglaia + Harmonia)</div>
+        <p>
+          <strong>Autoridade:</strong> este documento é a fonte de verdade da identidade
+          NutriOS Pro v3. Em divergência com peças produzidas, este brandbook prevalece.
+          Em divergência entre este brandbook e os ativos originais em
+          <code>ativos/manifesto/</code>, os ativos prevalecem.
+        </p>
+
+        <h4 style="color: var(--fg);">Pendências residuais</h4>
+        <ul>
+          <li><strong>SVGs vetoriais oficiais</strong> das 6 variantes — hoje só há o PNG composto. Bloqueia produção de favicon multi-tamanho. Escalado para Aglaia + designer externo.</li>
+          <li><strong>Licença webfont Quip Regular</strong> — validar com Ahmad Suhadi antes de <code>@font-face</code> público. Alternativas documentadas em §4.6 do capítulo 3.</li>
+          <li><strong>Fonte Geometr415 Blk BT</strong> — hoje aplicada apenas via fallback <code>system-ui</code> no wordmark ao vivo desta página. Arquivo <code>docx</code> existe mas não vira <code>@font-face</code> por licença Bitstream.</li>
+          <li><strong>Nota de exceção CMYK / Pantone</strong> para gráfica quando o suporte de impressão exigir preto ou branco puros.</li>
+          <li><strong>Auditoria de contraste com <code>contrast-ratio</code></strong> real no fechamento do design system (Harmonia) — valores atuais calculados por fórmula sRGB WCAG 2.1.</li>
+          <li><strong>Ficha PDF exportável do brandbook</strong> — versão paginada para envio a fornecedor gráfico.</li>
+        </ul>
+
+        <p style="margin-top: 24px; font-size: 12px;">
+          Consulte também: <a href="00-indice.md" style="color: var(--accent);">00-indice.md</a> ·
+          <a href="01-posicionamento.md" style="color: var(--accent);">01-posicionamento.md</a> ·
+          <a href="02-voz-da-marca.md" style="color: var(--accent);">02-voz-da-marca.md</a> ·
+          <a href="03-identidade-visual.md" style="color: var(--accent);">03-identidade-visual.md</a> ·
+          <a href="04-aplicacoes.md" style="color: var(--accent);">04-aplicacoes.md</a> ·
+          <a href="05-manual-operacional.md" style="color: var(--accent);">05-manual-operacional.md</a>.
+        </p>
+      </footer>
+    </section>
+
+  </main>
+</div>
+
+<script>
+  // Toggle dark/light
+  (function () {
+    var html = document.documentElement;
+    var btn = document.getElementById('toggle-theme');
+    function updateLabel() {
+      btn.textContent = html.classList.contains('dark') ? 'Modo claro' : 'Modo escuro';
+    }
+    updateLabel();
+    btn.addEventListener('click', function () {
+      html.classList.toggle('dark');
+      updateLabel();
+    });
+  })();
+
+  // Copy-to-clipboard nos chips de hex
+  (function () {
+    document.querySelectorAll('.chip-hex').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var hex = btn.getAttribute('data-hex');
+        if (!hex) return;
+        var done = function () {
+          btn.classList.add('copied');
+          setTimeout(function () { btn.classList.remove('copied'); }, 1400);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(hex).then(done, done);
+        } else {
+          var ta = document.createElement('textarea');
+          ta.value = hex;
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand('copy'); } catch (e) {}
+          document.body.removeChild(ta);
+          done();
+        }
+      });
+    });
+  })();
+
+  // Scrollspy
+  (function () {
+    var navLinks = document.querySelectorAll('nav.sidebar a[data-nav]');
+    var sections = Array.prototype.slice.call(navLinks)
+      .map(function (link) {
+        var id = link.getAttribute('href').replace('#', '');
+        return document.getElementById(id);
+      })
+      .filter(Boolean);
+
+    if (!('IntersectionObserver' in window) || sections.length === 0) return;
+
+    var map = {};
+    navLinks.forEach(function (link) {
+      map[link.getAttribute('href').replace('#', '')] = link;
+    });
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var link = map[entry.target.id];
+        if (!link) return;
+        if (entry.isIntersecting && entry.intersectionRatio > 0.15) {
+          navLinks.forEach(function (l) { l.classList.remove('active'); });
+          link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-96px 0px -60% 0px', threshold: [0, 0.15, 0.5] });
+
+    sections.forEach(function (s) { observer.observe(s); });
+  })();
+</script>
+
+</body>
+</html>

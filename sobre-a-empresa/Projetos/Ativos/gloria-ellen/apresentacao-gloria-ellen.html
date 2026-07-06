@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estreia no Vale — Plano de 12 dias | Glória Ellen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAF7F2;
+    --bg-alt: #F0EAE0;
+    --bg-dark: #2A2622;
+    --ink: #2A2622;
+    --ink-soft: #5E574E;
+    --ink-mute: #8B8378;
+    --accent: #8B6F47;
+    --accent-soft: #C7A876;
+    --green: #6B7F5C;
+    --coral: #C87561;
+    --line: rgba(42, 38, 34, 0.08);
+    --shadow: 0 4px 24px rgba(42, 38, 34, 0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; overflow: hidden; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+  .deck { position: relative; width: 100vw; height: 100vh; overflow: hidden; }
+  .slide {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    padding: 6vh 8vw;
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+    overflow-y: auto;
+  }
+  .slide.active { opacity: 1; transform: translateX(0); pointer-events: auto; }
+  .slide.prev { transform: translateX(-60px); }
+  .slide-inner { max-width: 1180px; width: 100%; }
+
+  h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2.5rem, 6vw, 5.2rem); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
+  h2 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(1.9rem, 4vw, 3.4rem); line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 1.2rem; color: var(--ink); }
+  h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(1.4rem, 2.4vw, 2.1rem); margin-bottom: 0.6rem; color: var(--accent); }
+  .eyebrow { font-family: 'Inter', sans-serif; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.28em; color: var(--ink-mute); margin-bottom: 1.4rem; font-weight: 500; }
+  p { font-size: clamp(1rem, 1.2vw, 1.15rem); color: var(--ink-soft); margin-bottom: 1rem; max-width: 780px; }
+  p.lead { font-size: clamp(1.15rem, 1.5vw, 1.4rem); color: var(--ink); font-weight: 400; }
+  p.italic { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(1.2rem, 1.8vw, 1.7rem); font-weight: 400; color: var(--ink); }
+  strong { color: var(--ink); font-weight: 600; }
+  em { font-style: italic; color: var(--accent); }
+  .accent-color { color: var(--accent); }
+  .green-color { color: var(--green); }
+  .coral-color { color: var(--coral); }
+
+  /* Grid systems */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  @media (max-width: 900px) {
+    .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; gap: 1.2rem; }
+  }
+
+  /* Cards */
+  .card { background: white; border: 1px solid var(--line); border-radius: 12px; padding: 1.8rem; box-shadow: var(--shadow); }
+  .card-warm { background: var(--bg-alt); border: none; padding: 1.8rem; border-radius: 12px; }
+  .card-dark { background: var(--bg-dark); color: var(--bg); padding: 1.8rem; border-radius: 12px; }
+  .card-dark h3 { color: var(--accent-soft); }
+  .card-dark p { color: rgba(250, 247, 242, 0.75); }
+  .card-outline { background: transparent; border: 1px solid var(--line); border-radius: 12px; padding: 1.8rem; }
+
+  /* Big numbers */
+  .big-num { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(3rem, 8vw, 6rem); line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
+  .big-num-dark { color: var(--ink); }
+  .big-num-sub { font-family: 'Inter', sans-serif; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-mute); margin-top: 0.6rem; font-weight: 500; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.98rem; }
+  th { text-align: left; padding: 0.9rem 0.6rem; border-bottom: 2px solid var(--ink); color: var(--ink); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; }
+  td { padding: 0.9rem 0.6rem; border-bottom: 1px solid var(--line); color: var(--ink-soft); }
+  td.strong { color: var(--ink); font-weight: 600; }
+  td.accent { color: var(--accent); font-weight: 600; }
+  tr.total td { border-top: 2px solid var(--ink); border-bottom: none; padding-top: 1.1rem; font-weight: 600; color: var(--ink); font-size: 1.05rem; }
+
+  /* Lists */
+  ul.clean { list-style: none; padding: 0; }
+  ul.clean li { padding: 0.6rem 0; border-bottom: 1px solid var(--line); color: var(--ink-soft); font-size: 1rem; display: flex; align-items: baseline; gap: 0.8rem; }
+  ul.clean li:last-child { border-bottom: none; }
+  ul.clean li::before { content: "—"; color: var(--accent); font-weight: 600; flex-shrink: 0; }
+  ul.check { list-style: none; padding: 0; }
+  ul.check li { padding: 0.5rem 0; color: var(--ink-soft); font-size: 1rem; display: flex; gap: 0.7rem; align-items: baseline; }
+  ul.check li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
+
+  /* Navigation */
+  .nav { position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 1.4rem; z-index: 100; background: rgba(250, 247, 242, 0.85); backdrop-filter: blur(12px); border: 1px solid var(--line); border-radius: 40px; padding: 0.5rem 1.2rem; box-shadow: var(--shadow); }
+  .nav button { background: none; border: none; cursor: pointer; color: var(--ink-mute); font-size: 1.3rem; padding: 0.3rem 0.6rem; transition: color 0.2s; font-family: inherit; }
+  .nav button:hover { color: var(--ink); }
+  .nav button:disabled { opacity: 0.3; cursor: not-allowed; }
+  .counter { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--ink); letter-spacing: 0.05em; min-width: 60px; text-align: center; }
+  .counter span { color: var(--ink-mute); font-size: 0.85rem; }
+
+  .progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: rgba(42, 38, 34, 0.05); z-index: 100; }
+  .progress-bar { height: 100%; background: var(--accent); transition: width 0.4s ease; }
+
+  .brand-mark { position: fixed; top: 28px; left: 40px; font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--ink-mute); font-size: 0.95rem; letter-spacing: 0.05em; z-index: 50; }
+  .brand-right { position: fixed; top: 28px; right: 40px; font-family: 'Inter', sans-serif; color: var(--ink-mute); font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase; z-index: 50; }
+
+  /* Cover slide */
+  .cover { text-align: center; }
+  .cover .eyebrow { justify-content: center; margin-bottom: 2.5rem; }
+  .cover h1 { font-size: clamp(3.5rem, 10vw, 8rem); margin-bottom: 0.5rem; }
+  .cover .subtitle { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(1.4rem, 2.4vw, 2rem); color: var(--ink-soft); font-weight: 300; margin-bottom: 4rem; }
+  .cover .meta-info { display: flex; justify-content: center; gap: 3rem; margin-top: 3rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-mute); }
+
+  /* Closing */
+  .closing h1 { font-size: clamp(3rem, 8vw, 6rem); }
+  .closing .italic { color: var(--accent); margin-top: 3rem; }
+
+  /* Quote block */
+  .quote { border-left: 3px solid var(--accent); padding: 0.4rem 0 0.4rem 2rem; margin: 1.5rem 0; }
+  .quote p.italic { font-size: clamp(1.4rem, 2.2vw, 1.9rem); color: var(--ink); margin: 0; }
+
+  /* Timeline */
+  .timeline { display: grid; grid-template-columns: repeat(12, 1fr); gap: 0.4rem; margin: 2rem 0; }
+  .timeline-day { background: var(--bg-alt); padding: 0.8rem 0.3rem; text-align: center; border-radius: 6px; font-size: 0.75rem; color: var(--ink-soft); position: relative; }
+  .timeline-day .day-num { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--ink); font-weight: 500; display: block; margin-bottom: 0.15rem; }
+  .timeline-day.gate { background: var(--accent-soft); color: var(--ink); }
+  .timeline-day.final { background: var(--green); color: white; }
+  .timeline-day.final .day-num { color: white; }
+  .timeline-value { font-size: 0.7rem; font-weight: 500; margin-top: 0.2rem; }
+  @media (max-width: 900px) { .timeline { grid-template-columns: repeat(4, 1fr); } }
+
+  /* Split hero */
+  .hero-split { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: center; }
+  @media (max-width: 900px) { .hero-split { grid-template-columns: 1fr; gap: 2rem; } }
+
+  /* Pill badge */
+  .pill { display: inline-block; padding: 0.35rem 0.9rem; background: var(--bg-alt); border-radius: 40px; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 0.8rem; }
+
+  /* Section number */
+  .section-num { font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 300; color: var(--accent-soft); line-height: 1; margin-bottom: -0.3rem; opacity: 0.6; }
+
+  /* Two-column split */
+  .split-lines { border-top: 1px solid var(--line); padding-top: 1.5rem; margin-top: 1.5rem; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.7rem 0; border-bottom: 1px solid var(--line); font-size: 1rem; }
+  .row:last-child { border-bottom: none; }
+  .row .label { color: var(--ink-soft); }
+  .row .value { color: var(--ink); font-weight: 600; }
+  .row .value.accent { color: var(--accent); font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 500; }
+
+  /* Print hint */
+  @media print {
+    .nav, .progress, .brand-mark, .brand-right { display: none; }
+    .slide { position: relative; opacity: 1; transform: none; height: 100vh; page-break-after: always; }
+  }
+
+  /* Keyboard hint */
+  .hint { position: fixed; bottom: 30px; right: 30px; font-size: 0.7rem; color: var(--ink-mute); letter-spacing: 0.15em; text-transform: uppercase; z-index: 50; }
+</style>
+</head>
+<body>
+
+<div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+<div class="brand-mark">Glória Ellen</div>
+<div class="brand-right">Plano de Estreia · 2026</div>
+
+<div class="deck" id="deck">
+
+  <!-- SLIDE 1 — CAPA -->
+  <section class="slide cover active">
+    <div class="slide-inner">
+      <div class="eyebrow">Litoral Catarinense · 12 dias · 12 histórias</div>
+      <h1>Estreia<br/>no Vale</h1>
+      <p class="subtitle">De Florianópolis a Barra Velha.<br/>A sua chegada, transformada em campanha.</p>
+      <div class="meta-info">
+        <span>Início: 03 · 07</span>
+        <span>Fim: 14 · 07</span>
+        <span>Meta: R$ 7.000</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 2 — A META -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">O que vamos entregar juntos</div>
+      <div class="hero-split">
+        <div>
+          <div class="big-num">R$ 7 mil</div>
+          <div class="big-num-sub">em 12 dias</div>
+          <p style="margin-top: 2rem;">Não é milagre. É <em>reorganização</em> do que você já tem — só que arquitetada.</p>
+        </div>
+        <div>
+          <h2>4× o seu ritmo atual.</h2>
+          <p class="lead">Seus últimos 60 dias fecharam R$ 10.500. Isso é R$ 5.250/mês.</p>
+          <p class="lead">A meta dos 12 dias equivale a <strong>4 vezes esse ritmo</strong> — só bate combinando reativação de base + captação nova + uma alavanca premium.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3 — ONDE VOCÊ ESTÁ HOJE -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Diagnóstico rápido</div>
+      <h2>O ponto de partida.</h2>
+      <div class="grid-3" style="margin-top: 2rem;">
+        <div class="card">
+          <div class="big-num">R$ 10,5k</div>
+          <div class="big-num-sub">últimos 60 dias</div>
+          <p style="margin-top: 1rem; font-size: 0.95rem;">Ensaio praia + booking + aniversário. Um só tipo de venda.</p>
+        </div>
+        <div class="card">
+          <div class="big-num">100%</div>
+          <div class="big-num-sub">vem de indicação</div>
+          <p style="margin-top: 1rem; font-size: 0.95rem;">Base pequena, mas <em>ouro</em>: 15 clientes fechados + 5 leads em conversa.</p>
+        </div>
+        <div class="card">
+          <div class="big-num">24</div>
+          <div class="big-num-sub">slots livres em 12 dias</div>
+          <p style="margin-top: 1rem; font-size: 0.95rem;">Sua agenda comporta. O gargalo <em>não é</em> produção — é venda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 4 — O PARADOXO -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">O padrão que ninguém tinha nomeado</div>
+      <h2>O paradoxo dos três eixos.</h2>
+      <p class="lead" style="margin-bottom: 2.5rem;">O que você <strong>ama</strong>, o que você <strong>vende</strong> e o que você <strong>mostra</strong> hoje não conversam.</p>
+      <div class="grid-3">
+        <div class="card-warm">
+          <div class="pill">O que você ama</div>
+          <h3>Casamento.</h3>
+          <p>Disparado o serviço favorito. E também a maior margem por hora. Mas em julho, sem casamento próximo no radar.</p>
+        </div>
+        <div class="card-warm">
+          <div class="pill">O que vende</div>
+          <h3>Ensaio praia.</h3>
+          <p>Tudo o que faturou nos últimos 60 dias. Ticket R$600-700. Via indicação, fora do site.</p>
+        </div>
+        <div class="card-warm">
+          <div class="pill">O que mostra</div>
+          <h3>Portfolio MT.</h3>
+          <p>Seu site mostra 100% Sinop, Sorriso, Matupá. Cliente do Vale não reconhece o cenário. Autoridade local: <em>zero</em>.</p>
+        </div>
+      </div>
+      <p style="margin-top: 2rem;">Nos 12 dias, a gente <strong>alinha os três</strong>.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 5 — O MERCADO DO LITORAL -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Onde você entra</div>
+      <h2>O corredor litorâneo catarinense.</h2>
+      <div class="grid-2" style="margin-top: 1.5rem;">
+        <div>
+          <h3>Suas 8 cidades pagantes</h3>
+          <ul class="clean">
+            <li>Itajaí — porto seco, empresas grandes</li>
+            <li>Balneário Camboriú — luxury, construção, hotéis</li>
+            <li>Balneário Piçarras — praia + turismo</li>
+            <li>Barra Velha — cliente local + turistas</li>
+            <li>Penha — resort Beto Carrero + hotelaria</li>
+            <li>Itapema — em crescimento, real estate</li>
+            <li>Florianópolis — tech + público premium</li>
+            <li>Navegantes — porto + hospitalidade</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Preço médio</h3>
+          <p><strong>R$ 627</strong> por ensaio na região (Cronoshare). Faixa: R$483 a R$815.</p>
+          <p>O seu <strong>R$700 tá na mediana</strong>. Preço certo pra oferta pontual.</p>
+          <h3 style="margin-top: 1.5rem;">Quem tá no jogo</h3>
+          <ul class="clean">
+            <li>Marina Veloso — ensaio família BC/Itajaí</li>
+            <li>Vero e Bruno — ensaio praia</li>
+            <li>Rox Studio — 1200+ casamentos, escala</li>
+          </ul>
+        </div>
+      </div>
+      <div class="quote" style="margin-top: 1.5rem;">
+        <p class="italic">Todos vendem espontaneidade. Você vende autoralidade — no litoral inteiro.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 6 — A IDEIA -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="section-num">01</div>
+      <h1>Estreia no Vale.</h1>
+      <p class="italic" style="margin-top: 1.5rem;">Fotógrafa autoral chegou. Doze vagas na agenda. Doze histórias em doze dias.</p>
+      <div class="grid-2" style="margin-top: 3rem;">
+        <div>
+          <h3>Por que "estreia"?</h3>
+          <p>Porque é verdade. Você chegou ao Vale. Em vez de esconder isso, transforma em narrativa. Estreia dá licença pra fazer condição especial <em>sem parecer liquidação</em>.</p>
+        </div>
+        <div>
+          <h3>Por que 12?</h3>
+          <p>2 sessões/dia × 6 dias úteis = 12 vagas. É a agenda real. Escassez que não é forjada — é matemática de produção.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 7 — A MATEMÁTICA -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Como os R$7 mil se distribuem</div>
+      <h2>Duas opções em paralelo.</h2>
+      <p class="lead" style="margin-bottom: 2rem;">Rodamos as duas ao mesmo tempo. Uma dá o piso, a outra dá a folga.</p>
+
+      <div class="grid-2">
+        <div class="card-outline">
+          <div class="pill">Opção A · Corporativo alavancador</div>
+          <table>
+            <tbody>
+              <tr><td>Corporativo Itajaí/Floripa (15p)</td><td class="accent">R$3.000</td></tr>
+              <tr><td>5× Ensaio praia (BC/Itajaí)</td><td class="accent">R$3.500</td></tr>
+              <tr><td>1× Aniversário/book</td><td class="accent">R$500</td></tr>
+              <tr class="total"><td>Total</td><td class="accent">R$7.000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-outline">
+          <div class="pill">Opção B · Ensaio-heavy</div>
+          <table>
+            <tbody>
+              <tr><td>6× Ensaio praia/feminino/casal</td><td class="accent">R$4.200</td></tr>
+              <tr><td>1× Pré-wedding</td><td class="accent">R$1.200</td></tr>
+              <tr><td>1× Book/aniversário</td><td class="accent">R$500</td></tr>
+              <tr><td>1× Sinal casamento 2026</td><td class="accent">R$1.100</td></tr>
+              <tr class="total"><td>Total</td><td class="accent">R$7.000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 8 — DE ONDE VEM A VENDA -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">As quatro frentes</div>
+      <h2>De onde vêm os 7-9 fechamentos.</h2>
+      <div class="grid-4" style="margin-top: 2rem;">
+        <div class="card">
+          <div class="big-num" style="font-size: 3rem;">1-2</div>
+          <div class="big-num-sub">Reativação</div>
+          <p style="font-size: 0.95rem; margin-top: 0.8rem;">15 clientes antigos. Custo zero. Alavanca #1.</p>
+        </div>
+        <div class="card">
+          <div class="big-num" style="font-size: 3rem;">1-2</div>
+          <div class="big-num-sub">Leads mornos</div>
+          <p style="font-size: 0.95rem; margin-top: 0.8rem;">5 pessoas que já tinham interesse. Copy sob medida.</p>
+        </div>
+        <div class="card">
+          <div class="big-num" style="font-size: 3rem;">1-3</div>
+          <div class="big-num-sub">Ad Meta</div>
+          <p style="font-size: 0.95rem; margin-top: 0.8rem;">R$2k em 12 dias. Público 30-45 no litoral catarinense.</p>
+        </div>
+        <div class="card">
+          <div class="big-num" style="font-size: 3rem;">1-2</div>
+          <div class="big-num-sub">Conteúdo diário</div>
+          <p style="font-size: 0.95rem; margin-top: 0.8rem;">1 Reel + 1 vídeo YT/semana. Voz autoral no palco.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 9 — PREÇOS DA ESTREIA -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">A tabela dos 12 dias</div>
+      <h2>Preços da Estreia.</h2>
+      <table>
+        <thead>
+          <tr><th>Serviço</th><th>Tabela</th><th>Estreia</th><th>Entrega</th><th>Bônus da estreia</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="strong">Ensaio autoral</td><td style="text-decoration: line-through;">R$700</td><td class="accent">R$550</td><td>30 fotos</td><td>+10 fotos (40 total)</td></tr>
+          <tr><td class="strong">Book/aniversário</td><td style="text-decoration: line-through;">R$500</td><td class="accent">R$400</td><td>30 fotos</td><td>+10 fotos (40 total)</td></tr>
+          <tr><td class="strong">Pré-wedding</td><td style="text-decoration: line-through;">R$1.200</td><td class="accent">R$990</td><td>50 fotos</td><td>+30 fotos (80 total)</td></tr>
+          <tr><td class="strong">Casamento civil</td><td style="text-decoration: line-through;">R$1.500</td><td class="accent">R$1.290</td><td>30 fotos</td><td>Super desconto na cerimônia</td></tr>
+          <tr><td class="strong">Retrato corporativo</td><td style="text-decoration: line-through;">R$3.000</td><td class="accent">R$2.700</td><td>10 fotos/pessoa + 1</td><td>+3 fotos LinkedIn por pessoa</td></tr>
+          <tr><td class="strong">Reserva casamento 2026</td><td>a partir R$3.000</td><td class="accent">−10%</td><td>Sem limite</td><td>Álbum físico personalizado</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--ink-mute);">Sinal 30% do valor da estreia bloqueia sua data. Depois dos 12 dias, tudo volta ao preço da tabela.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 10 — COMO PAGA -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Política de pagamento</div>
+      <h2>Reserva sem susto.</h2>
+      <div class="grid-2" style="margin-top: 2rem;">
+        <div>
+          <ul class="check">
+            <li><strong>Sinal de 30%</strong> bloqueia sua data (50% no corporativo)</li>
+            <li><strong>Saldo em até 6× no cartão</strong> sem juros</li>
+            <li><strong>PIX à vista tem 5% off extra</strong></li>
+            <li><strong>Reserva de data</strong> vale por até 90 dias sem multa</li>
+          </ul>
+        </div>
+        <div class="card-warm">
+          <h3>Exemplo prático</h3>
+          <p>Ensaio de <strong>R$550</strong>:</p>
+          <div class="row"><span class="label">Sinal PIX hoje</span><span class="value accent">R$ 165</span></div>
+          <div class="row"><span class="label">Saldo no dia da sessão</span><span class="value">R$ 385</span></div>
+          <div class="row"><span class="label">OU 6× cartão sem juros</span><span class="value">R$ 91,60/mês</span></div>
+          <div class="row"><span class="label">OU PIX à vista (5% off)</span><span class="value">R$ 522,50</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 11 — REATIVAÇÃO -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Frente 1 — reativação</div>
+      <h2>Sua base ativa: 20 pessoas.</h2>
+      <div class="grid-2">
+        <div>
+          <div class="card-dark">
+            <div class="big-num" style="color: var(--accent-soft);">15</div>
+            <div class="big-num-sub" style="color: rgba(250,247,242,0.6);">clientes fechados</div>
+            <p style="color: rgba(250,247,242,0.8); margin-top: 1rem;">Vieram por indicação. Fecharam com você. Confiam.</p>
+            <p style="color: rgba(250,247,242,0.8); font-size: 0.95rem; margin-top: 0.5rem;">Recebem mensagem personalizada + convite pra indicar.</p>
+          </div>
+        </div>
+        <div>
+          <div class="card-dark">
+            <div class="big-num" style="color: var(--accent-soft);">5</div>
+            <div class="big-num-sub" style="color: rgba(250,247,242,0.6);">leads em conversa</div>
+            <p style="color: rgba(250,247,242,0.8); margin-top: 1rem;">Já queriam. Travaram na escolha de pacote.</p>
+            <p style="color: rgba(250,247,242,0.8); font-size: 0.95rem; margin-top: 0.5rem;">Scripts <em>sob medida</em> pra cada perfil (book infantil, feminino, masculino, gestante).</p>
+          </div>
+        </div>
+      </div>
+      <p class="italic" style="margin-top: 2.5rem; text-align: center;">Prioridade máxima do dia 1: a gestante. Janela biológica curta.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 12 — AD META -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Frente 2 — captação nova</div>
+      <h2>Meta Ads · R$2.000 em 12 dias.</h2>
+      <div class="grid-2" style="margin-top: 1.5rem;">
+        <div>
+          <h3>Como distribuímos</h3>
+          <ul class="clean">
+            <li>Dias 1-3: R$400 total · teste de 3 criativos</li>
+            <li>Dia 4: identificamos o vencedor</li>
+            <li>Dias 4-12: R$180/dia no vencedor</li>
+            <li>Retargeting a partir do dia 5</li>
+          </ul>
+          <p style="margin-top: 1rem;">Custo alvo por conversa: <strong>R$10 a R$25</strong>. Se conseguir isso, chegam entre 80 e 200 conversas no total.</p>
+        </div>
+        <div>
+          <h3>Três criativos, três públicos</h3>
+          <div class="card-outline" style="margin-bottom: 0.8rem; padding: 1.2rem;">
+            <strong>#1 Emocional</strong> · voz autoral · mulher 28-45 · BC/Itajaí/Itapema
+          </div>
+          <div class="card-outline" style="margin-bottom: 0.8rem; padding: 1.2rem;">
+            <strong>#2 Oferta</strong> · preço-âncora · noivas 25-40 · Floripa/BC/Itajaí
+          </div>
+          <div class="card-outline" style="padding: 1.2rem;">
+            <strong>#3 Reels</strong> · 30s voz sua · público reflexivo 30-50 · litoral
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 13 — CORPORATIVO -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Frente 3 — a alavanca</div>
+      <h2>Corporativo no litoral.</h2>
+      <p class="lead">Uma empresa fechada = R$2.700. Isso é <strong>40% da meta</strong> em uma venda só.</p>
+      <div class="grid-3" style="margin-top: 2rem;">
+        <div class="card">
+          <h3>Itajaí · Porto</h3>
+          <ul class="clean">
+            <li>BRF sede</li>
+            <li>Portonave</li>
+            <li>MSC · Maersk</li>
+            <li>Cargill · Bunge</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Floripa · Tech</h3>
+          <ul class="clean">
+            <li>Softplan</li>
+            <li>Neoway</li>
+            <li>RD Station</li>
+            <li>Conta Azul · Involves</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>BC · Construção · Hotéis</h3>
+          <ul class="clean">
+            <li>FG · Embraed · Pasqualotto</li>
+            <li>Marimar · Faial · Impact</li>
+            <li>Sofitel Itapema</li>
+            <li>Beto Carrero Penha</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--ink-mute);">37 empresas mapeadas por setor (porto · tech · construção · hotelaria · advocacia) no material de apoio.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 14 — VÍDEO DIÁRIO -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Frente 4 — conteúdo diário</div>
+      <h2>Seu forte, no palco.</h2>
+      <div class="grid-2">
+        <div>
+          <p class="lead">Você tem uma coisa que 99% dos fotógrafos não tem:</p>
+          <p class="italic accent-color" style="margin-top: 0.5rem;">naturalidade em vídeo longo.</p>
+          <p style="margin-top: 1.5rem;">Seu YouTube prova isso — 100 views por vídeo com 23 inscritos. Reach de 435%. Gente entrando de fora.</p>
+          <p>A campanha usa isso <em>ostensivamente</em>.</p>
+        </div>
+        <div>
+          <h3>O que produzimos</h3>
+          <ul class="check">
+            <li>12 Reels/Shorts (1 por dia, 15-30s)</li>
+            <li>2 vídeos longos no YT (12-18min cada)</li>
+            <li>Stories diários com contagem regressiva</li>
+            <li>4 pautas de reserva pra imprevisto</li>
+          </ul>
+          <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--ink-mute);">Todas as pautas já escritas, prontas pra gravar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 14b — ROADSHOW DO LITORAL -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Nova jogada estratégica</div>
+      <h2>Roadshow do Litoral.</h2>
+      <p class="lead" style="margin-bottom: 2rem;">Concentra sessões por região. Cria urgência geográfica além da temporal.</p>
+      <div class="grid-3">
+        <div class="card-warm">
+          <div class="pill">Bloco Norte</div>
+          <h3>Dias 1 → 4</h3>
+          <p><strong>BC · Itajaí · Itapema · Navegantes</strong></p>
+          <p style="font-size: 0.95rem;">Público urbano-costeiro. Ensaio praia + book + prospecção corporativa Itajaí.</p>
+        </div>
+        <div class="card-warm">
+          <div class="pill">Bloco Meio</div>
+          <h3>Dias 5 → 8</h3>
+          <p><strong>Piçarras · Penha · Barra Velha</strong></p>
+          <p style="font-size: 0.95rem;">Praias mais tranquilas, cliente família. Beto Carrero na jogada corporativa.</p>
+        </div>
+        <div class="card-warm">
+          <div class="pill">Bloco Sul</div>
+          <h3>Dias 9 → 12</h3>
+          <p><strong>Florianópolis</strong></p>
+          <p style="font-size: 0.95rem;">3-4 sessões concentradas em 1 dia. Prospecção tech (Softplan, Neoway, RD).</p>
+        </div>
+      </div>
+      <p class="italic" style="margin-top: 2rem; text-align: center;">"Vou estar em [cidade] no dia X — reserve com preço da estreia."</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 15 — SITE -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">O que muda no seu site</div>
+      <h2>Reposicionamento em 72h.</h2>
+      <p class="lead">Seu site hoje é galeria bonita. A gente transforma em funil.</p>
+      <div class="grid-2" style="margin-top: 2rem;">
+        <div>
+          <h3>Ações imediatas</h3>
+          <ul class="check">
+            <li>Banner "Estreia no Vale" no topo</li>
+            <li>Botão CTA vira WhatsApp direto</li>
+            <li>Página nova <em>/estreia-no-vale</em></li>
+            <li>Página <em>/investimento</em> com preços</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Correções críticas</h3>
+          <ul class="check">
+            <li>Categoria "Ensaios de Praia" (mesmo com 1 case)</li>
+            <li>Categoria "Corporativo" (em breve)</li>
+            <li>Mapa do Google quebrado (aponta pra UK)</li>
+            <li>Bloco de depoimentos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 16 — CRONOGRAMA -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Como caminhamos até R$7k</div>
+      <h2>O ritmo diário.</h2>
+      <div class="timeline">
+        <div class="timeline-day"><span class="day-num">1</span>Reativação<div class="timeline-value">R$500</div></div>
+        <div class="timeline-day"><span class="day-num">2</span>Ad ao vivo<div class="timeline-value">R$1.000</div></div>
+        <div class="timeline-day"><span class="day-num">3</span>1º ensaio<div class="timeline-value">R$1.500</div></div>
+        <div class="timeline-day"><span class="day-num">4</span>Escala ad<div class="timeline-value">R$2.100</div></div>
+        <div class="timeline-day"><span class="day-num">5</span>Corp pitch<div class="timeline-value">R$2.800</div></div>
+        <div class="timeline-day gate"><span class="day-num">6</span>GATE<div class="timeline-value">R$3.500</div></div>
+        <div class="timeline-day"><span class="day-num">7</span>Reforço<div class="timeline-value">R$4.200</div></div>
+        <div class="timeline-day"><span class="day-num">8</span>Corp fecha<div class="timeline-value">R$4.900</div></div>
+        <div class="timeline-day"><span class="day-num">9</span>Pré-wedding<div class="timeline-value">R$5.600</div></div>
+        <div class="timeline-day"><span class="day-num">10</span>Book<div class="timeline-value">R$6.100</div></div>
+        <div class="timeline-day"><span class="day-num">11</span>Reserva 26<div class="timeline-value">R$6.600</div></div>
+        <div class="timeline-day final"><span class="day-num">12</span>Fim<div class="timeline-value">R$7.000+</div></div>
+      </div>
+      <p style="margin-top: 1.5rem; text-align: center; font-size: 0.95rem; color: var(--ink-mute);">Cada dia tem uma alavanca principal. Nenhum é "esperar acontecer".</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 17 — GATE DIA 6 -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Checkpoint · 08 de julho</div>
+      <h2>O momento de decisão.</h2>
+      <p class="lead">No meio da campanha, olhamos o placar. Três cenários, três respostas.</p>
+      <div class="grid-3" style="margin-top: 2rem;">
+        <div class="card" style="border-top: 3px solid var(--green);">
+          <h3 class="green-color">≥ R$3.500</h3>
+          <p><strong>No ritmo.</strong></p>
+          <p>Escalamos ad vencedor +20-30%. Segue plano.</p>
+        </div>
+        <div class="card" style="border-top: 3px solid var(--accent-soft);">
+          <h3 style="color: var(--accent);">R$2.500-3.500</h3>
+          <p><strong>Atraso leve.</strong></p>
+          <p>Nível 1: bônus extra + follow-up base + segundo disparo pra mornos.</p>
+        </div>
+        <div class="card" style="border-top: 3px solid var(--coral);">
+          <h3 class="coral-color">&lt; R$2.500</h3>
+          <p><strong>Emergencial.</strong></p>
+          <p>Nível 2: desconto 30% + LinkedIn agressivo + ligar leads mornos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 18 — PENDÊNCIAS -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">O que precisamos de você</div>
+      <h2>Cinco pequenas coisas.</h2>
+      <p class="lead">Nada trava sem elas — mas com elas, arrancamos amanhã.</p>
+      <ul class="clean" style="margin-top: 2rem; font-size: 1.1rem;">
+        <li><strong>Lista dos 15 clientes</strong> — nome, WhatsApp, serviço anterior</li>
+        <li><strong>Perfil do 5º lead morno</strong> — gênero, serviço, objeção</li>
+        <li><strong>Print da sua tabela de preços</strong> do Alboompro atual</li>
+        <li><strong>Definir quem opera o Meta Ads</strong> — você, Ronan ou terceiro</li>
+        <li><strong>Confirmar dia 1 = 03/07</strong> ou combinar outra data</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SLIDE 19 — AMANHÃ -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">O primeiro dia</div>
+      <h2>Como amanhã começa.</h2>
+      <div class="grid-2" style="margin-top: 2rem;">
+        <div>
+          <h3>Manhã</h3>
+          <ul class="clean">
+            <li>Enviar mensagem pra Lead 4 (gestante) — janela curta</li>
+            <li>Ajustar bio do Instagram + link único</li>
+            <li>Publicar Meta Ads (3 criativos ao vivo)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tarde</h3>
+          <ul class="clean">
+            <li>Disparar reativação nos 15 clientes (1 por hora)</li>
+            <li>Gravar Reel do Dia 1 — manifesto de abertura</li>
+            <li>Editar Alboompro: banner + CTA WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+      <p class="italic" style="margin-top: 2.5rem; color: var(--accent);">Todo material tá pronto. Scripts, criativos, roteiros, planilha, pautas.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 20 — FECHAMENTO -->
+  <section class="slide closing cover">
+    <div class="slide-inner">
+      <div class="eyebrow" style="justify-content: center;">Doze dias · Doze histórias</div>
+      <h1>Você chegou.</h1>
+      <p class="italic" style="font-size: clamp(1.6rem, 2.8vw, 2.2rem); color: var(--accent); margin-top: 1rem;">Agora a gente conta a história.</p>
+      <p style="max-width: 620px; margin: 3rem auto 0; text-align: center; font-size: 1.05rem;">O plano tá desenhado. Os textos escritos. A estratégia validada. Falta só a sua palavra.</p>
+      <div class="meta-info" style="margin-top: 3rem;">
+        <span>Estreia no Vale</span>
+        <span>03 → 14 · 07 · 2026</span>
+        <span>R$ 7.000</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<nav class="nav">
+  <button id="prev" aria-label="Anterior">←</button>
+  <div class="counter"><span id="current">01</span> <span>/</span> <span id="total">20</span></div>
+  <button id="next" aria-label="Próximo">→</button>
+</nav>
+
+<div class="hint">↔ Setas para navegar</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const total = slides.length;
+  let index = 0;
+  const currentEl = document.getElementById('current');
+  const totalEl = document.getElementById('total');
+  const progressBar = document.getElementById('progressBar');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  totalEl.textContent = String(total).padStart(2, '0');
+
+  function render() {
+    slides.forEach((s, i) => {
+      s.classList.remove('active', 'prev');
+      if (i === index) s.classList.add('active');
+      else if (i < index) s.classList.add('prev');
+    });
+    currentEl.textContent = String(index + 1).padStart(2, '0');
+    progressBar.style.width = ((index + 1) / total * 100) + '%';
+    prevBtn.disabled = index === 0;
+    nextBtn.disabled = index === total - 1;
+  }
+
+  function next() { if (index < total - 1) { index++; render(); } }
+  function prev() { if (index > 0) { index--; render(); } }
+
+  nextBtn.addEventListener('click', next);
+  prevBtn.addEventListener('click', prev);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); next(); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); prev(); }
+    if (e.key === 'Home') { index = 0; render(); }
+    if (e.key === 'End') { index = total - 1; render(); }
+    if (e.key === 'f' || e.key === 'F') {
+      if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+      else document.exitFullscreen();
+    }
+  });
+
+  // Touch swipe
+  let startX = 0;
+  document.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; });
+  document.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 50) { if (dx < 0) next(); else prev(); }
+  });
+
+  render();
+</script>
+
+</body>
+</html>

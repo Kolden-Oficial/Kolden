@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Glória Ellen — Sistema tipográfico
+   Baseado nas variáveis oficiais do brandbook (08-brandbook/brandbook.html).
+   Import de Google Fonts + classes utilitárias.
+   ========================================================================== */
+
+/* v1.1 · logo migrado de Sacramento (Direção B, registro de exploração)
+   para Cormorant Italic Light 300 (Direção A, oficial) — 2026-07-02.
+   A Cormorant Garamond passa a ter tripla função: logo/signature + display + body. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+
+:root {
+  /* Cores da marca — espelho das vars canônicas do brandbook */
+  --cream:      #FAF5EC;
+  --cream-warm: #F0E7D0;
+  --sand:       #DDD0B5;
+  --sand-deep:  #C7A876;
+  --ink:        #2A2B27;
+  --ink-soft:   #5C5A50;
+  --ink-mute:   #8B8478;
+  --sea:        #3D5A6C;
+  --sea-deep:   #2A4152;
+  --forest:     #6B7F5C;
+  --forest-deep:#4E6142;
+  --dawn:       #E3B8A1;
+
+  /* Famílias */
+  --font-serif:      'Cormorant Garamond', 'Georgia', serif;
+  --font-sans:       'Inter', system-ui, -apple-system, sans-serif;
+  --font-logo:       'Cormorant Garamond', 'Georgia', serif;
+  /* Alias mantido por compatibilidade — v1.1 · aponta para a mesma família do logo. */
+  --font-signature:  var(--font-logo);
+}
+
+/* --- classes utilitárias -------------------------------------------------- */
+
+/* Display — abertura de página, headline principal.
+   Cormorant Light, tamanho fluido, tracking negativo, line-height apertado. */
+.text-display {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-style: normal;
+  font-size: clamp(2.6rem, 6vw, 5.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+/* Heading — títulos internos, subheadlines.
+   Cormorant Italic Regular. Nunca bold. */
+.text-heading {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(1.9rem, 4vw, 3.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* Body — corpo de texto padrão, parágrafo, manifesto.
+   Cormorant Regular. Line-height generoso pra respiro editorial. */
+.text-body {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  line-height: 1.65;
+  letter-spacing: 0;
+  color: var(--ink);
+}
+
+/* Lead — parágrafo de abertura, citação em destaque, epígrafe.
+   Cormorant Light Italic. Cor sea (azul-mar) pra puxar o olhar sem gritar. */
+.text-lead {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+  line-height: 1.55;
+  letter-spacing: 0;
+  color: var(--sea);
+}
+
+/* Info — dados práticos, metadados, legenda de foto, footer.
+   Inter Regular. Compacto, funcional, silencioso. */
+.text-info {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  letter-spacing: 0;
+  color: var(--ink-soft);
+}
+
+/* Eyebrow — rótulo, categoria, seção antes do título.
+   Inter uppercase, muito pequena, letter-spacing largo. */
+.text-eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+/* Logo — nome da marca em Cormorant Garamond Italic Light 300.
+   Direção A do brandbook (assinatura de livro editorial).
+   Escala fluida 2rem → 5.4rem. */
+.text-logo {
+  font-family: var(--font-logo);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(2rem, 4.5vw, 5.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* Signature — alias mantido por compatibilidade — v1.1.
+   Mesma declaração de .text-logo. Migrado de Sacramento (registro B)
+   para Cormorant Italic Light 300 (Direção A oficial) em 2026-07-02. */
+.text-signature {
+  font-family: var(--font-logo);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(2rem, 4.5vw, 5.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* --- variações de cor por contexto --------------------------------------- */
+
+.on-cream  { color: var(--ink); }
+.on-ink    { color: var(--cream); }
+.on-sea    { color: var(--cream); }
+
+.text-muted { color: var(--ink-mute); }
+.text-soft  { color: var(--ink-soft); }
+.text-sea   { color: var(--sea); }
+.text-forest{ color: var(--forest); }
+.text-sand  { color: var(--sand-deep); }
+.text-dawn  { color: var(--dawn); }

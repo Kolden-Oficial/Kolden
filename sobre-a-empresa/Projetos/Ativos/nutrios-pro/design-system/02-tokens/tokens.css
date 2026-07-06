@@ -1,0 +1,268 @@
+/*
+ * NutriOS Pro — Design Tokens v3 (CSS custom properties)
+ * ----------------------------------------------------------------------------
+ * Identidade v2 do NutriOS Pro (paleta 8 cores dual-mode). Fonte de verdade
+ * dos valores: ./tokens.json. Este arquivo materializa os tokens em CSS
+ * custom properties HSL, prontas para :root (light linho-quente) e .dark
+ * (dark verde-frio).
+ *
+ * COMO USAR
+ *   Cole o bloco `:root` em `app/src/index.css`.
+ *   Cole o bloco `.dark` em `app/src/index.css`.
+ *   Os nomes das vars batem com o padrão shadcn/ui — nenhum componente
+ *   precisa ser renomeado.
+ *
+ * FONTES
+ *   Geometr415 Blk BT: USO RESTRITO como asset gráfico (wordmark + ativo 'O').
+ *                       NUNCA carregar como webfont — servir SVG/PNG.
+ *   Quip Regular:        @font-face local (docs internos e produção interna).
+ *                        Produção pública exige webfont license confirmada.
+ *   Inter:               Google Fonts (SIL OFL, uso comercial livre).
+ *
+ * PAR CTA CANÔNICO
+ *   Espresso (#2C2416) sobre Neon Mint (#00E87A) = 10.30:1 AAA.
+ *   NUNCA usar Linen Cream sobre Neon Mint (1.33:1 falha).
+ *
+ * TERRACOTTA — USO RESTRITO
+ *   Apenas accent-warm: badge de categoria, tag, hover decorativo.
+ *   NUNCA como fundo de CTA primário.
+ * ============================================================================
+ */
+
+/* ============================================================================
+   @font-face — Quip Regular (local, servido pelo app)
+   Também usável em documentos internos do repositório apontando para o
+   caminho relativo ao asset final em assets/2026-06-30-final/quip.otf.
+   ============================================================================ */
+@font-face {
+  font-family: "Quip Regular";
+  src: url("/fonts/quip.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================================================
+   Inter — Regular / Medium / SemiBold
+   Preferência: importar via Google Fonts no HTML (<link>) para caching.
+   Alternativa self-hosted (comentada) para produção sem CDN externo.
+   ============================================================================ */
+/*
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+*/
+
+/* Geometr415 Blk BT — NÃO declarado como @font-face por design.
+   É asset gráfico (SVG/PNG) do wordmark + do glyph 'O' do símbolo. */
+
+@layer base {
+  /* ========================================================================
+     LIGHT — CANÔNICO LINHO-QUENTE
+     Cole isto no `:root { ... }` de app/src/index.css.
+     Fundo Linen Cream, texto Espresso, primary Neon Mint (fill CTA),
+     accent Aqua Green, accent-warm Terracotta.
+     ======================================================================== */
+  :root {
+    /* --- Cores semânticas (HSL sem hsl(...) para uso com alpha via Tailwind) --- */
+
+    /* App / fundo — Linen Cream #F5F0E8 */
+    --background:               34 45% 93%;
+    --foreground:               33 33% 13%;   /* Espresso — 13.73:1 sobre linen (AAA) */
+
+    /* Superfícies — Warm Linen #E8DDD0 */
+    --card:                     30 41% 86%;
+    --card-foreground:          33 33% 13%;
+    --popover:                  30 41% 86%;
+    --popover-foreground:       33 33% 13%;
+
+    /* Primário / CTA — Neon Mint #00E87A com foreground ESPRESSO (10.30:1 AAA) */
+    --primary:                  152 100% 45%;
+    --primary-foreground:       33 33% 13%;
+
+    /* Secundário — Warm Linen +5% claridade (chips/toggles sóbrios) */
+    --secondary:                30 35% 90%;
+    --secondary-foreground:     33 33% 13%;
+
+    /* Muted — superfície neutra sutil */
+    --muted:                    30 30% 88%;
+    --muted-foreground:         33 20% 35%;   /* espresso dessaturado — ~6.5:1 sobre linen */
+
+    /* Accent verde — Aqua Green (hover, chip, ícone) */
+    --accent:                   167 63% 46%;
+    --accent-foreground:        33 33% 13%;   /* Espresso sobre aqua (6.71:1 AA) */
+
+    /* Accent-warm — Terracotta (badge de categoria, tag, hover decorativo)
+       USO RESTRITO: NUNCA fundo de CTA primário. */
+    --accent-warm:              28 43% 59%;
+    --accent-warm-foreground:   33 33% 13%;   /* Espresso — 3.71:1 (só texto grande) */
+
+    /* Destructive — vermelho de erro/exclusão
+       #B33A2A no light (5.9:1 sobre linen com texto linen-cream) */
+    --destructive:              8 62% 43%;
+    --destructive-foreground:   34 45% 93%;   /* Linen Cream */
+
+    /* Bordas / inputs — Espresso @ 12% alpha (aplicar com rgba() no CSS custom) */
+    --border:                   33 33% 13%;
+    --input:                    33 33% 13%;
+
+    /* Foco visível — Neon Mint em ambos os modos */
+    --ring:                     152 100% 45%;
+
+    /* Sidebar (compat shadcn) */
+    --sidebar-background:       34 45% 93%;
+    --sidebar-foreground:       33 33% 13%;
+    --sidebar-primary:          152 100% 45%;
+    --sidebar-primary-foreground: 33 33% 13%;
+    --sidebar-accent:           30 35% 90%;
+    --sidebar-accent-foreground: 33 33% 13%;
+    --sidebar-border:           33 33% 13%;
+    --sidebar-ring:             152 100% 45%;
+
+    /* --- Radius (soft) --- */
+    --radius-none: 0;
+    --radius-sm:   6px;
+    --radius-md:   10px;   /* DEFAULT input + botão */
+    --radius-lg:   16px;   /* DEFAULT card */
+    --radius-xl:   24px;   /* hero, feature card, modal grande */
+    --radius-pill: 999px;
+    --radius:      var(--radius-md); /* alias shadcn */
+
+    /* --- Shadow (light — base Espresso alpha) --- */
+    --shadow-xs: 0 1px 2px rgb(44 36 22 / 0.06);
+    --shadow-md: 0 4px 8px rgb(44 36 22 / 0.08),
+                 0 1px 2px rgb(44 36 22 / 0.06);
+    --shadow-lg: 0 12px 24px rgb(44 36 22 / 0.12),
+                 0 4px 8px rgb(44 36 22 / 0.08);
+
+    /* --- Motion --- */
+    --duration-fast: 150ms;
+    --duration-base: 250ms;
+    --duration-slow: 400ms;
+    --ease-standard:   cubic-bezier(0.2, 0, 0, 1);
+    --ease-emphasized: cubic-bezier(0.3, 0, 0, 1);
+
+    /* --- Typography --- */
+    --font-display: "Geometr415 Blk BT", system-ui, sans-serif; /* wordmark only */
+    --font-hero:    "Quip Regular", "Inter", system-ui, sans-serif;
+    --font-ui:      "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+
+  /* ========================================================================
+     DARK — CANÔNICO VERDE-FRIO
+     Cole isto no `.dark { ... }` de app/src/index.css.
+     Fundo Deep Forest, texto Linen Cream, primary Neon Mint (CTA fill),
+     accent Aqua Green, accent-warm Terracotta.
+     ======================================================================== */
+  .dark {
+    /* App / fundo — Deep Forest #0D2320 */
+    --background:               172 46% 9%;
+    --foreground:               34 45% 93%;   /* Linen Cream — 14.88:1 sobre deep-forest (AAA) */
+
+    /* Superfícies — Dark Teal #0F3D35 */
+    --card:                     170 61% 15%;
+    --card-foreground:          34 45% 93%;
+    --popover:                  170 61% 15%;
+    --popover-foreground:       34 45% 93%;
+
+    /* Primário / CTA — Neon Mint #00E87A com foreground ESPRESSO (10.30:1 AAA) */
+    --primary:                  152 100% 45%;
+    --primary-foreground:       33 33% 13%;
+
+    /* Secundário — Dark Teal +3% claridade */
+    --secondary:                170 43% 16%;
+    --secondary-foreground:     34 45% 93%;
+
+    /* Muted */
+    --muted:                    170 40% 14%;
+    --muted-foreground:         162 12% 61%;   /* ~#8FA8A0 — ~6.5:1 sobre deep-forest */
+
+    /* Accent verde — Aqua Green */
+    --accent:                   167 63% 46%;
+    --accent-foreground:        33 33% 13%;
+
+    /* Accent-warm — Terracotta (USO RESTRITO — badge/tag/hover, NUNCA CTA) */
+    --accent-warm:              28 43% 59%;
+    --accent-warm-foreground:   33 33% 13%;
+
+    /* Destructive — vermelho no dark (#E8513F, mais claro para contraste) */
+    --destructive:              6 79% 58%;
+    --destructive-foreground:   34 45% 93%;
+
+    /* Bordas / inputs — Dark Teal +8% lightness (substitui Forest Green removido) */
+    --border:                   170 53% 23%;
+    --input:                    170 53% 23%;
+
+    /* Foco visível — Neon Mint */
+    --ring:                     152 100% 45%;
+
+    /* Sidebar (compat shadcn) */
+    --sidebar-background:       172 46% 9%;
+    --sidebar-foreground:       34 45% 93%;
+    --sidebar-primary:          152 100% 45%;
+    --sidebar-primary-foreground: 33 33% 13%;
+    --sidebar-accent:           170 43% 16%;
+    --sidebar-accent-foreground: 34 45% 93%;
+    --sidebar-border:           170 53% 23%;
+    --sidebar-ring:             152 100% 45%;
+
+    /* --- Shadow (dark — base preto alpha maior para contraste) --- */
+    --shadow-xs: 0 1px 2px rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 8px rgb(0 0 0 / 0.4),
+                 0 1px 2px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 12px 24px rgb(0 0 0 / 0.5),
+                 0 4px 8px rgb(0 0 0 / 0.4);
+
+    /* Radius, motion e typography herdam de :root (não precisam redeclarar). */
+  }
+}
+
+/* ============================================================================
+   UTILITÁRIOS TRANSVERSAIS
+   ============================================================================ */
+
+/* Alinhamento de números clínicos — kcal, g, %, medidas. */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Reduced motion — respeitar preferência do usuário. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================================
+   NOTAS DE MIGRAÇÃO v1/v2 → v3
+   - Baloo 2 removido definitivamente. Wordmark agora usa Geometr415 Blk BT
+     como asset gráfico (não webfont); display/hero em Quip Regular.
+   - Forest Green #0A5C52 removido — --border dark deriva de Dark Teal +8%.
+   - Preto puro #000000 substituído por Espresso #2C2416.
+   - Branco puro #FFFFFF substituído por Linen Cream #F5F0E8.
+   - Terracotta #C4976A confirmado como --accent-warm (USO RESTRITO
+     badge/tag/hover — NUNCA CTA).
+   - Radius reorganizado: sm 6 / md 10 (default input+botão) /
+     lg 16 (default card) / xl 24 (hero) / pill 999.
+   - Shadow 3 níveis soft (xs focus / md card / lg modal).
+   - Motion: 3 durations (fast/base/slow) + 2 easings (standard/emphasized).
+   - Gradientes movidos para tokens.json (não obrigatórios em :root).
+   ============================================================================ */

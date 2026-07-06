@@ -1,0 +1,2076 @@
+{
+  "priceBook": [
+    {
+      "category": "Smart Home",
+      "service": "Motion Sensor Installation",
+      "description": "Install and test standard motion sensor switch",
+      "unit": "Each",
+      "economy": 150,
+      "standard": 175,
+      "premium": 250,
+      "material": "No",
+      "typicalMinimum": 150,
+      "notes": "Labor only; device supplied separately"
+    },
+    {
+      "category": "Smart Home",
+      "service": "Smart Switch Installation",
+      "description": "Install smart switch and basic setup",
+      "unit": "Each",
+      "economy": 150,
+      "standard": 185,
+      "premium": 250,
+      "material": "No",
+      "typicalMinimum": 150,
+      "notes": "Wi-Fi setup included; device supplied separately"
+    },
+    {
+      "category": "Flooring",
+      "service": "Hardwood Flooring Installation",
+      "description": "Install hardwood flooring over prepared subfloor",
+      "unit": "SF",
+      "economy": 10,
+      "standard": 12,
+      "premium": 15,
+      "material": "No",
+      "typicalMinimum": 1200,
+      "notes": "Material, demo, leveling extra"
+    },
+    {
+      "category": "Flooring",
+      "service": "Luxury Vinyl Plank Installation",
+      "description": "Install LVP flooring over prepared subfloor",
+      "unit": "SF",
+      "economy": 6,
+      "standard": 8,
+      "premium": 10,
+      "material": "No",
+      "typicalMinimum": 850,
+      "notes": "Transitions and prep extra"
+    },
+    {
+      "category": "Flooring",
+      "service": "Laminate Flooring Installation",
+      "description": "Install laminate floating floor",
+      "unit": "SF",
+      "economy": 6,
+      "standard": 7.5,
+      "premium": 9,
+      "material": "No",
+      "typicalMinimum": 850,
+      "notes": "Underlayment/material extra"
+    },
+    {
+      "category": "Flooring",
+      "service": "Tile Flooring Installation",
+      "description": "Install floor tile with thinset and grout",
+      "unit": "SF",
+      "economy": 15,
+      "standard": 18,
+      "premium": 25,
+      "material": "No",
+      "typicalMinimum": 1500,
+      "notes": "Waterproofing, demo, and substrate prep extra"
+    },
+    {
+      "category": "Flooring",
+      "service": "Carpet Installation",
+      "description": "Install carpet over prepared floor",
+      "unit": "SF",
+      "economy": 5,
+      "standard": 6.5,
+      "premium": 8,
+      "material": "No",
+      "typicalMinimum": 750,
+      "notes": "Carpet/pad extra"
+    },
+    {
+      "category": "Flooring",
+      "service": "Floor Leveling",
+      "description": "Self-leveling/patching preparation",
+      "unit": "SF",
+      "economy": 3,
+      "standard": 5,
+      "premium": 8,
+      "material": "No",
+      "typicalMinimum": 500,
+      "notes": "Depends on floor condition"
+    },
+    {
+      "category": "Flooring",
+      "service": "Baseboard Installation",
+      "description": "Install baseboard trim",
+      "unit": "LF",
+      "economy": 5,
+      "standard": 7,
+      "premium": 10,
+      "material": "No",
+      "typicalMinimum": 450,
+      "notes": "Paint/caulk extra unless specified"
+    },
+    {
+      "category": "Flooring",
+      "service": "Quarter Round Installation",
+      "description": "Install shoe molding / quarter round",
+      "unit": "LF",
+      "economy": 3,
+      "standard": 4,
+      "premium": 6,
+      "material": "No",
+      "typicalMinimum": 300,
+      "notes": "Paint/stain extra"
+    },
+    {
+      "category": "Flooring",
+      "service": "Floor Demolition",
+      "description": "Remove existing flooring and prep for new finish",
+      "unit": "SF",
+      "economy": 2,
+      "standard": 3.5,
+      "premium": 6,
+      "material": "No",
+      "typicalMinimum": 500,
+      "notes": "Disposal extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Pressure-Treated Deck Construction",
+      "description": "Build new PT deck structure and decking",
+      "unit": "SF",
+      "economy": 45,
+      "standard": 55,
+      "premium": 65,
+      "material": "Partial",
+      "typicalMinimum": 6500,
+      "notes": "Engineering/permit fees extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Trex Composite Deck Construction",
+      "description": "Build new composite deck with PT framing",
+      "unit": "SF",
+      "economy": 65,
+      "standard": 75,
+      "premium": 95,
+      "material": "Partial",
+      "typicalMinimum": 9500,
+      "notes": "Premium boards/railings extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Cedar Deck Construction",
+      "description": "Build new cedar deck",
+      "unit": "SF",
+      "economy": 70,
+      "standard": 85,
+      "premium": 110,
+      "material": "Partial",
+      "typicalMinimum": 10000,
+      "notes": "Seal/stain extra"
+    },
+    {
+      "category": "Decks",
+      "service": "PVC Deck Construction",
+      "description": "Build new PVC deck",
+      "unit": "SF",
+      "economy": 80,
+      "standard": 95,
+      "premium": 120,
+      "material": "Partial",
+      "typicalMinimum": 12000,
+      "notes": "High-end decking"
+    },
+    {
+      "category": "Decks",
+      "service": "Complete Deck Renovation",
+      "description": "Renovate deck surface/railings/repairs",
+      "unit": "SF",
+      "economy": 25,
+      "standard": 35,
+      "premium": 50,
+      "material": "Partial",
+      "typicalMinimum": 3500,
+      "notes": "Structural repairs may be extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Deck Demolition",
+      "description": "Remove existing deck",
+      "unit": "SF",
+      "economy": 8,
+      "standard": 10,
+      "premium": 15,
+      "material": "No",
+      "typicalMinimum": 1200,
+      "notes": "Dumpster/disposal may be extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Pressure-Treated Decking Replacement",
+      "description": "Replace deck boards with PT wood",
+      "unit": "SF",
+      "economy": 18,
+      "standard": 24,
+      "premium": 32,
+      "material": "No",
+      "typicalMinimum": 1800,
+      "notes": "Framing repairs extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Trex Decking Replacement",
+      "description": "Replace deck boards with Trex/composite",
+      "unit": "SF",
+      "economy": 32,
+      "standard": 42,
+      "premium": 58,
+      "material": "No",
+      "typicalMinimum": 3500,
+      "notes": "Material extra unless included"
+    },
+    {
+      "category": "Decks",
+      "service": "Deck Railing Installation",
+      "description": "Install railing system",
+      "unit": "LF",
+      "economy": 90,
+      "standard": 125,
+      "premium": 175,
+      "material": "No",
+      "typicalMinimum": 1200,
+      "notes": "Railing material extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Vinyl Railing Installation",
+      "description": "Install vinyl railing system",
+      "unit": "LF",
+      "economy": 110,
+      "standard": 140,
+      "premium": 190,
+      "material": "No",
+      "typicalMinimum": 1400,
+      "notes": "Material extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Aluminum Railing Installation",
+      "description": "Install aluminum railing system",
+      "unit": "LF",
+      "economy": 120,
+      "standard": 150,
+      "premium": 200,
+      "material": "No",
+      "typicalMinimum": 1600,
+      "notes": "Material extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Cable Railing Installation",
+      "description": "Install cable railing system",
+      "unit": "LF",
+      "economy": 180,
+      "standard": 225,
+      "premium": 300,
+      "material": "No",
+      "typicalMinimum": 2500,
+      "notes": "Premium labor"
+    },
+    {
+      "category": "Decks",
+      "service": "Pressure-Treated Deck Stairs",
+      "description": "Build PT deck stairs",
+      "unit": "Step",
+      "economy": 180,
+      "standard": 225,
+      "premium": 275,
+      "material": "Partial",
+      "typicalMinimum": 900,
+      "notes": "Priced per step/tread"
+    },
+    {
+      "category": "Decks",
+      "service": "Composite Deck Stairs",
+      "description": "Build composite deck stairs",
+      "unit": "Step",
+      "economy": 250,
+      "standard": 325,
+      "premium": 425,
+      "material": "Partial",
+      "typicalMinimum": 1250,
+      "notes": "Priced per step/tread"
+    },
+    {
+      "category": "Decks",
+      "service": "Stair Stringer Installation",
+      "description": "Install stair stringer",
+      "unit": "Each",
+      "economy": 125,
+      "standard": 175,
+      "premium": 250,
+      "material": "No",
+      "typicalMinimum": 375,
+      "notes": "Material extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Landing Construction",
+      "description": "Build stair landing/platform",
+      "unit": "SF",
+      "economy": 45,
+      "standard": 60,
+      "premium": 85,
+      "material": "Partial",
+      "typicalMinimum": 1200,
+      "notes": "Footings/railings extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Deck Gate Installation",
+      "description": "Install deck gate",
+      "unit": "Each",
+      "economy": 500,
+      "standard": 650,
+      "premium": 900,
+      "material": "No",
+      "typicalMinimum": 500,
+      "notes": "Gate material extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Standard Post Cap Installation",
+      "description": "Install standard post cap",
+      "unit": "Each",
+      "economy": 30,
+      "standard": 40,
+      "premium": 55,
+      "material": "No",
+      "typicalMinimum": 120,
+      "notes": "Cap material extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Premium Post Cap Installation",
+      "description": "Install premium/lighted cap",
+      "unit": "Each",
+      "economy": 55,
+      "standard": 75,
+      "premium": 120,
+      "material": "No",
+      "typicalMinimum": 220,
+      "notes": "Electrical/lighted caps extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Deck Sealing",
+      "description": "Apply clear deck sealer",
+      "unit": "SF",
+      "economy": 2.5,
+      "standard": 3.5,
+      "premium": 5,
+      "material": "Partial",
+      "typicalMinimum": 750,
+      "notes": "Includes standard prep"
+    },
+    {
+      "category": "Decks",
+      "service": "Deck Staining",
+      "description": "Apply deck stain",
+      "unit": "SF",
+      "economy": 3.5,
+      "standard": 4.5,
+      "premium": 6,
+      "material": "Partial",
+      "typicalMinimum": 850,
+      "notes": "Repairs/sanding extra"
+    },
+    {
+      "category": "Decks",
+      "service": "Deck Painting",
+      "description": "Paint deck surface/rails",
+      "unit": "SF",
+      "economy": 3,
+      "standard": 4,
+      "premium": 6,
+      "material": "Partial",
+      "typicalMinimum": 850,
+      "notes": "Prep level affects price"
+    },
+    {
+      "category": "Roofing",
+      "service": "Asphalt Shingle Roof Replacement",
+      "description": "Replace asphalt shingles",
+      "unit": "SF",
+      "economy": 8,
+      "standard": 9.5,
+      "premium": 12,
+      "material": "Yes",
+      "typicalMinimum": 7500,
+      "notes": "Use roof SF; complexity affects price"
+    },
+    {
+      "category": "Roofing",
+      "service": "Metal Roofing Installation",
+      "description": "Install metal roofing",
+      "unit": "SF",
+      "economy": 13,
+      "standard": 16,
+      "premium": 22,
+      "material": "Yes",
+      "typicalMinimum": 12000,
+      "notes": "Premium roof"
+    },
+    {
+      "category": "Roofing",
+      "service": "Rubber Roof Installation",
+      "description": "Install EPDM/rubber roof",
+      "unit": "SF",
+      "economy": 9,
+      "standard": 12,
+      "premium": 16,
+      "material": "Yes",
+      "typicalMinimum": 4500,
+      "notes": "Flat roof"
+    },
+    {
+      "category": "Roofing",
+      "service": "Roof Repair",
+      "description": "Small to medium roof repair",
+      "unit": "Job",
+      "economy": 500,
+      "standard": 750,
+      "premium": 2000,
+      "material": "Partial",
+      "typicalMinimum": 500,
+      "notes": "Final after inspection"
+    },
+    {
+      "category": "Roofing",
+      "service": "Skylight Installation",
+      "description": "Install skylight opening/flashing",
+      "unit": "Each",
+      "economy": 900,
+      "standard": 1200,
+      "premium": 1800,
+      "material": "No",
+      "typicalMinimum": 900,
+      "notes": "Skylight extra"
+    },
+    {
+      "category": "Roofing",
+      "service": "Roof Vent Installation",
+      "description": "Install roof vent",
+      "unit": "Each",
+      "economy": 250,
+      "standard": 350,
+      "premium": 500,
+      "material": "No",
+      "typicalMinimum": 250,
+      "notes": "Vent material extra"
+    },
+    {
+      "category": "Roofing",
+      "service": "Gutter Installation",
+      "description": "Install aluminum gutters",
+      "unit": "LF",
+      "economy": 10,
+      "standard": 14,
+      "premium": 20,
+      "material": "Yes",
+      "typicalMinimum": 600,
+      "notes": "Downspouts extra"
+    },
+    {
+      "category": "Roofing",
+      "service": "Gutter Cleaning",
+      "description": "Clean gutters and downspouts",
+      "unit": "Job",
+      "economy": 250,
+      "standard": 400,
+      "premium": 750,
+      "material": "No",
+      "typicalMinimum": 250,
+      "notes": "Height/condition affects price"
+    },
+    {
+      "category": "Siding & Exterior",
+      "service": "Vinyl Siding Installation",
+      "description": "Install vinyl siding",
+      "unit": "SF",
+      "economy": 9,
+      "standard": 11,
+      "premium": 14,
+      "material": "Yes",
+      "typicalMinimum": 7500,
+      "notes": "House wrap/trim details extra"
+    },
+    {
+      "category": "Siding & Exterior",
+      "service": "Wood Siding Installation",
+      "description": "Install wood siding",
+      "unit": "SF",
+      "economy": 13,
+      "standard": 16,
+      "premium": 22,
+      "material": "Yes",
+      "typicalMinimum": 9500,
+      "notes": "Paint/stain extra"
+    },
+    {
+      "category": "Siding & Exterior",
+      "service": "Fiber Cement Siding Installation",
+      "description": "Install fiber cement siding",
+      "unit": "SF",
+      "economy": 12,
+      "standard": 15,
+      "premium": 20,
+      "material": "Yes",
+      "typicalMinimum": 9500,
+      "notes": "Paint/trim details extra"
+    },
+    {
+      "category": "Siding & Exterior",
+      "service": "Exterior Trim Installation",
+      "description": "Install exterior PVC/wood trim",
+      "unit": "LF",
+      "economy": 8,
+      "standard": 12,
+      "premium": 18,
+      "material": "No",
+      "typicalMinimum": 700,
+      "notes": "Material extra"
+    },
+    {
+      "category": "Siding & Exterior",
+      "service": "Fascia Installation",
+      "description": "Install fascia board",
+      "unit": "LF",
+      "economy": 10,
+      "standard": 14,
+      "premium": 18,
+      "material": "No",
+      "typicalMinimum": 700,
+      "notes": "Material extra"
+    },
+    {
+      "category": "Siding & Exterior",
+      "service": "Soffit Installation",
+      "description": "Install soffit",
+      "unit": "LF",
+      "economy": 12,
+      "standard": 16,
+      "premium": 20,
+      "material": "No",
+      "typicalMinimum": 900,
+      "notes": "Material extra"
+    },
+    {
+      "category": "Siding & Exterior",
+      "service": "Exterior House Painting",
+      "description": "Paint exterior siding/trim",
+      "unit": "SF",
+      "economy": 3.5,
+      "standard": 4.5,
+      "premium": 6,
+      "material": "Partial",
+      "typicalMinimum": 5500,
+      "notes": "Prep repairs extra"
+    },
+    {
+      "category": "Siding & Exterior",
+      "service": "Power Washing",
+      "description": "Power wash exterior surfaces",
+      "unit": "Job",
+      "economy": 300,
+      "standard": 500,
+      "premium": 900,
+      "material": "No",
+      "typicalMinimum": 300,
+      "notes": "Price based on size"
+    },
+    {
+      "category": "Windows & Doors",
+      "service": "Window Installation",
+      "description": "Install replacement window",
+      "unit": "Each",
+      "economy": 700,
+      "standard": 950,
+      "premium": 1500,
+      "material": "No",
+      "typicalMinimum": 700,
+      "notes": "Window material extra"
+    },
+    {
+      "category": "Windows & Doors",
+      "service": "Exterior Door Installation",
+      "description": "Install exterior door",
+      "unit": "Each",
+      "economy": 650,
+      "standard": 850,
+      "premium": 1500,
+      "material": "No",
+      "typicalMinimum": 650,
+      "notes": "Door material extra"
+    },
+    {
+      "category": "Windows & Doors",
+      "service": "Interior Door Installation",
+      "description": "Install interior door/slab or prehung",
+      "unit": "Each",
+      "economy": 400,
+      "standard": 550,
+      "premium": 850,
+      "material": "No",
+      "typicalMinimum": 400,
+      "notes": "Door material extra"
+    },
+    {
+      "category": "Windows & Doors",
+      "service": "Sliding Patio Door Installation",
+      "description": "Install sliding patio door",
+      "unit": "Each",
+      "economy": 1200,
+      "standard": 1600,
+      "premium": 2500,
+      "material": "No",
+      "typicalMinimum": 1200,
+      "notes": "Door material extra"
+    },
+    {
+      "category": "Windows & Doors",
+      "service": "Storm Door Installation",
+      "description": "Install storm door",
+      "unit": "Each",
+      "economy": 350,
+      "standard": 500,
+      "premium": 750,
+      "material": "No",
+      "typicalMinimum": 350,
+      "notes": "Door material extra"
+    },
+    {
+      "category": "Windows & Doors",
+      "service": "Exterior Door Trim",
+      "description": "Install exterior door trim",
+      "unit": "LF",
+      "economy": 8,
+      "standard": 12,
+      "premium": 18,
+      "material": "No",
+      "typicalMinimum": 300,
+      "notes": "Material extra"
+    },
+    {
+      "category": "Windows & Doors",
+      "service": "Window Trim",
+      "description": "Install interior/exterior window trim",
+      "unit": "LF",
+      "economy": 7,
+      "standard": 10,
+      "premium": 16,
+      "material": "No",
+      "typicalMinimum": 300,
+      "notes": "Material extra"
+    },
+    {
+      "category": "Painting",
+      "service": "Interior Painting",
+      "description": "Paint walls in occupied/finished space",
+      "unit": "SF",
+      "economy": 2.75,
+      "standard": 3.5,
+      "premium": 5,
+      "material": "Partial",
+      "typicalMinimum": 800,
+      "notes": "Repairs and color changes extra"
+    },
+    {
+      "category": "Painting",
+      "service": "Ceiling Painting",
+      "description": "Paint ceiling",
+      "unit": "SF",
+      "economy": 2,
+      "standard": 3,
+      "premium": 4,
+      "material": "Partial",
+      "typicalMinimum": 600,
+      "notes": "Repairs extra"
+    },
+    {
+      "category": "Painting",
+      "service": "Trim Painting",
+      "description": "Paint baseboard/door/window trim",
+      "unit": "LF",
+      "economy": 2.5,
+      "standard": 3.5,
+      "premium": 6,
+      "material": "Partial",
+      "typicalMinimum": 500,
+      "notes": "Prep level affects price"
+    },
+    {
+      "category": "Painting",
+      "service": "Cabinet Painting",
+      "description": "Prep and paint cabinet doors/drawers",
+      "unit": "Door",
+      "economy": 90,
+      "standard": 120,
+      "premium": 180,
+      "material": "Partial",
+      "typicalMinimum": 1500,
+      "notes": "Spray finish/premium coatings extra"
+    },
+    {
+      "category": "Drywall & Plaster",
+      "service": "Hang Drywall",
+      "description": "Install drywall sheets",
+      "unit": "SF",
+      "economy": 2,
+      "standard": 2.5,
+      "premium": 3,
+      "material": "No",
+      "typicalMinimum": 750,
+      "notes": "Board material extra"
+    },
+    {
+      "category": "Drywall & Plaster",
+      "service": "Tape & Plaster Finish",
+      "description": "Tape, plaster, sand ready for paint",
+      "unit": "SF",
+      "economy": 1.5,
+      "standard": 2,
+      "premium": 3,
+      "material": "Partial",
+      "typicalMinimum": 750,
+      "notes": "Level of finish affects price"
+    },
+    {
+      "category": "Drywall & Plaster",
+      "service": "Complete Drywall Install & Finish",
+      "description": "Hang drywall, tape, plaster, sand",
+      "unit": "SF",
+      "economy": 3.5,
+      "standard": 4.5,
+      "premium": 6,
+      "material": "Partial",
+      "typicalMinimum": 1200,
+      "notes": "Material may vary"
+    },
+    {
+      "category": "Drywall & Plaster",
+      "service": "Drywall Patch Repair",
+      "description": "Patch small/medium drywall areas",
+      "unit": "Patch",
+      "economy": 200,
+      "standard": 350,
+      "premium": 600,
+      "material": "Partial",
+      "typicalMinimum": 200,
+      "notes": "Texture match extra"
+    },
+    {
+      "category": "Drywall & Plaster",
+      "service": "Plaster Repair",
+      "description": "Repair plaster surface",
+      "unit": "SF",
+      "economy": 3,
+      "standard": 4,
+      "premium": 6,
+      "material": "Partial",
+      "typicalMinimum": 450,
+      "notes": "Minimum applies"
+    },
+    {
+      "category": "Framing & Carpentry",
+      "service": "Interior Framing",
+      "description": "Frame interior walls/partitions",
+      "unit": "SF",
+      "economy": 10,
+      "standard": 14,
+      "premium": 18,
+      "material": "No",
+      "typicalMinimum": 1500,
+      "notes": "Lumber/material extra"
+    },
+    {
+      "category": "Framing & Carpentry",
+      "service": "Structural Header Installation",
+      "description": "Install beam/header opening",
+      "unit": "Job",
+      "economy": 2500,
+      "standard": 4500,
+      "premium": 8500,
+      "material": "No",
+      "typicalMinimum": 2500,
+      "notes": "Engineer/permit extra"
+    },
+    {
+      "category": "Framing & Carpentry",
+      "service": "Closet Framing",
+      "description": "Frame closet opening/walls",
+      "unit": "Job",
+      "economy": 800,
+      "standard": 1200,
+      "premium": 2200,
+      "material": "No",
+      "typicalMinimum": 800,
+      "notes": "Drywall/paint extra"
+    },
+    {
+      "category": "Framing & Carpentry",
+      "service": "Crown Molding Installation",
+      "description": "Install crown molding",
+      "unit": "LF",
+      "economy": 8,
+      "standard": 12,
+      "premium": 18,
+      "material": "No",
+      "typicalMinimum": 600,
+      "notes": "Paint extra"
+    },
+    {
+      "category": "Framing & Carpentry",
+      "service": "Interior Trim Installation",
+      "description": "Install interior trim/casing",
+      "unit": "LF",
+      "economy": 5,
+      "standard": 7,
+      "premium": 10,
+      "material": "No",
+      "typicalMinimum": 450,
+      "notes": "Paint extra"
+    },
+    {
+      "category": "Bathrooms",
+      "service": "Powder Room Remodel",
+      "description": "Remodel half bath",
+      "unit": "Job",
+      "economy": 8000,
+      "standard": 12000,
+      "premium": 18000,
+      "material": "Partial",
+      "typicalMinimum": 8000,
+      "notes": "Fixtures/allowances vary"
+    },
+    {
+      "category": "Bathrooms",
+      "service": "Full Bathroom Remodel",
+      "description": "Remodel standard full bathroom",
+      "unit": "Job",
+      "economy": 15000,
+      "standard": 22000,
+      "premium": 35000,
+      "material": "Partial",
+      "typicalMinimum": 15000,
+      "notes": "Tile/glass/plumbing affect price"
+    },
+    {
+      "category": "Bathrooms",
+      "service": "Master Bathroom Remodel",
+      "description": "Remodel master bathroom",
+      "unit": "Job",
+      "economy": 25000,
+      "standard": 40000,
+      "premium": 70000,
+      "material": "Partial",
+      "typicalMinimum": 25000,
+      "notes": "Premium finishes extra"
+    },
+    {
+      "category": "Bathrooms",
+      "service": "Tile Shower Installation",
+      "description": "Build tiled shower surround/base",
+      "unit": "Job",
+      "economy": 6500,
+      "standard": 9000,
+      "premium": 15000,
+      "material": "Partial",
+      "typicalMinimum": 6500,
+      "notes": "Glass door extra"
+    },
+    {
+      "category": "Bathrooms",
+      "service": "Shower Glass Door Installation",
+      "description": "Install shower glass door",
+      "unit": "Each",
+      "economy": 900,
+      "standard": 1400,
+      "premium": 2500,
+      "material": "No",
+      "typicalMinimum": 900,
+      "notes": "Glass material extra"
+    },
+    {
+      "category": "Bathrooms",
+      "service": "Bathroom Fan Installation",
+      "description": "Install bath fan/venting",
+      "unit": "Each",
+      "economy": 550,
+      "standard": 850,
+      "premium": 1300,
+      "material": "No",
+      "typicalMinimum": 550,
+      "notes": "Electrical/roof vent extra"
+    },
+    {
+      "category": "Bathrooms",
+      "service": "Vanity Installation",
+      "description": "Install vanity/counter/sink connection ready",
+      "unit": "Each",
+      "economy": 600,
+      "standard": 900,
+      "premium": 1500,
+      "material": "No",
+      "typicalMinimum": 600,
+      "notes": "Plumbing extra if needed"
+    },
+    {
+      "category": "Kitchens",
+      "service": "Small Kitchen Remodel",
+      "description": "Remodel small kitchen",
+      "unit": "Job",
+      "economy": 20000,
+      "standard": 30000,
+      "premium": 45000,
+      "material": "Partial",
+      "typicalMinimum": 20000,
+      "notes": "Cabinets/counters/appliances vary"
+    },
+    {
+      "category": "Kitchens",
+      "service": "Medium Kitchen Remodel",
+      "description": "Remodel medium kitchen",
+      "unit": "Job",
+      "economy": 30000,
+      "standard": 45000,
+      "premium": 65000,
+      "material": "Partial",
+      "typicalMinimum": 30000,
+      "notes": "Allowance-based"
+    },
+    {
+      "category": "Kitchens",
+      "service": "Luxury Kitchen Remodel",
+      "description": "High-end kitchen remodel",
+      "unit": "Job",
+      "economy": 45000,
+      "standard": 65000,
+      "premium": 100000,
+      "material": "Partial",
+      "typicalMinimum": 45000,
+      "notes": "Custom finishes"
+    },
+    {
+      "category": "Kitchens",
+      "service": "Kitchen Backsplash",
+      "description": "Install tile backsplash",
+      "unit": "SF",
+      "economy": 20,
+      "standard": 25,
+      "premium": 35,
+      "material": "No",
+      "typicalMinimum": 850,
+      "notes": "Tile material extra"
+    },
+    {
+      "category": "Kitchens",
+      "service": "Cabinet Installation",
+      "description": "Install kitchen cabinets",
+      "unit": "LF",
+      "economy": 250,
+      "standard": 350,
+      "premium": 500,
+      "material": "No",
+      "typicalMinimum": 2500,
+      "notes": "Cabinets/crown extra"
+    },
+    {
+      "category": "Kitchens",
+      "service": "Countertop Coordination",
+      "description": "Template/coordinate countertop install",
+      "unit": "Job",
+      "economy": 500,
+      "standard": 800,
+      "premium": 1500,
+      "material": "No",
+      "typicalMinimum": 500,
+      "notes": "Countertop supplier separate"
+    },
+    {
+      "category": "Basements",
+      "service": "Basement Finishing",
+      "description": "Finish basement living area",
+      "unit": "SF",
+      "economy": 65,
+      "standard": 95,
+      "premium": 125,
+      "material": "Partial",
+      "typicalMinimum": 15000,
+      "notes": "Bathrooms/egress extra"
+    },
+    {
+      "category": "Basements",
+      "service": "Basement Framing",
+      "description": "Frame basement walls/rooms",
+      "unit": "SF",
+      "economy": 10,
+      "standard": 14,
+      "premium": 18,
+      "material": "No",
+      "typicalMinimum": 1500,
+      "notes": "Lumber extra"
+    },
+    {
+      "category": "Basements",
+      "service": "Basement Insulation",
+      "description": "Install insulation",
+      "unit": "SF",
+      "economy": 2,
+      "standard": 3,
+      "premium": 5,
+      "material": "No",
+      "typicalMinimum": 750,
+      "notes": "Material extra"
+    },
+    {
+      "category": "Basements",
+      "service": "Drop Ceiling Installation",
+      "description": "Install suspended/drop ceiling",
+      "unit": "SF",
+      "economy": 8,
+      "standard": 10,
+      "premium": 14,
+      "material": "No",
+      "typicalMinimum": 1500,
+      "notes": "Tiles/grid extra"
+    },
+    {
+      "category": "Basements",
+      "service": "Egress Window Installation",
+      "description": "Cut/install egress window system",
+      "unit": "Each",
+      "economy": 5500,
+      "standard": 6500,
+      "premium": 8500,
+      "material": "Partial",
+      "typicalMinimum": 5500,
+      "notes": "Excavation/drainage/permit vary"
+    },
+    {
+      "category": "Concrete & Masonry",
+      "service": "Concrete Sidewalk",
+      "description": "Pour concrete sidewalk",
+      "unit": "SF",
+      "economy": 15,
+      "standard": 18,
+      "premium": 24,
+      "material": "Yes",
+      "typicalMinimum": 1500,
+      "notes": "Demo/excavation extra"
+    },
+    {
+      "category": "Concrete & Masonry",
+      "service": "Concrete Steps Repair",
+      "description": "Repair concrete steps",
+      "unit": "Job",
+      "economy": 1200,
+      "standard": 2000,
+      "premium": 3500,
+      "material": "Partial",
+      "typicalMinimum": 1200,
+      "notes": "Final after inspection"
+    },
+    {
+      "category": "Concrete & Masonry",
+      "service": "Masonry Repair",
+      "description": "Brick/block/mortar repair",
+      "unit": "Job",
+      "economy": 800,
+      "standard": 1500,
+      "premium": 3500,
+      "material": "Partial",
+      "typicalMinimum": 800,
+      "notes": "Based on condition"
+    },
+    {
+      "category": "Concrete & Masonry",
+      "service": "Retaining Wall",
+      "description": "Build retaining wall",
+      "unit": "SF",
+      "economy": 45,
+      "standard": 65,
+      "premium": 95,
+      "material": "Partial",
+      "typicalMinimum": 3500,
+      "notes": "Drainage/engineering extra"
+    },
+    {
+      "category": "Concrete & Masonry",
+      "service": "Paver Patio",
+      "description": "Install paver patio",
+      "unit": "SF",
+      "economy": 22,
+      "standard": 28,
+      "premium": 40,
+      "material": "Yes",
+      "typicalMinimum": 2500,
+      "notes": "Base prep included standard"
+    },
+    {
+      "category": "Concrete & Masonry",
+      "service": "Paver Walkway",
+      "description": "Install paver walkway",
+      "unit": "SF",
+      "economy": 20,
+      "standard": 26,
+      "premium": 38,
+      "material": "Yes",
+      "typicalMinimum": 1500,
+      "notes": "Complex patterns extra"
+    },
+    {
+      "category": "Fences",
+      "service": "Vinyl Fence Installation",
+      "description": "Install 6 ft vinyl privacy fence",
+      "unit": "LF",
+      "economy": 60,
+      "standard": 75,
+      "premium": 95,
+      "material": "Yes",
+      "typicalMinimum": 2500,
+      "notes": "Gates/permit extra"
+    },
+    {
+      "category": "Fences",
+      "service": "Wood Fence Installation",
+      "description": "Install wood fence",
+      "unit": "LF",
+      "economy": 45,
+      "standard": 60,
+      "premium": 85,
+      "material": "Yes",
+      "typicalMinimum": 2000,
+      "notes": "Gate/stain extra"
+    },
+    {
+      "category": "Fences",
+      "service": "Fence Gate Installation",
+      "description": "Install fence gate",
+      "unit": "Each",
+      "economy": 400,
+      "standard": 650,
+      "premium": 1000,
+      "material": "No",
+      "typicalMinimum": 400,
+      "notes": "Gate material extra"
+    },
+    {
+      "category": "Electrical",
+      "service": "Recessed Light Installation",
+      "description": "Install recessed LED light",
+      "unit": "Each",
+      "economy": 175,
+      "standard": 225,
+      "premium": 325,
+      "material": "No",
+      "typicalMinimum": 700,
+      "notes": "Fixture supplied separately"
+    },
+    {
+      "category": "Electrical",
+      "service": "Outlet/Switch Installation",
+      "description": "Install standard outlet/switch",
+      "unit": "Each",
+      "economy": 150,
+      "standard": 200,
+      "premium": 300,
+      "material": "No",
+      "typicalMinimum": 150,
+      "notes": "Circuit work extra"
+    },
+    {
+      "category": "Electrical",
+      "service": "Dedicated Circuit",
+      "description": "Run dedicated electrical circuit",
+      "unit": "Each",
+      "economy": 650,
+      "standard": 900,
+      "premium": 1500,
+      "material": "No",
+      "typicalMinimum": 650,
+      "notes": "Panel distance affects price"
+    },
+    {
+      "category": "Plumbing",
+      "service": "Toilet Installation",
+      "description": "Install toilet",
+      "unit": "Each",
+      "economy": 350,
+      "standard": 500,
+      "premium": 800,
+      "material": "No",
+      "typicalMinimum": 350,
+      "notes": "Toilet supplied separately"
+    },
+    {
+      "category": "Plumbing",
+      "service": "Sink/Faucet Installation",
+      "description": "Install sink/faucet",
+      "unit": "Each",
+      "economy": 450,
+      "standard": 650,
+      "premium": 1000,
+      "material": "No",
+      "typicalMinimum": 450,
+      "notes": "Fixture supplied separately"
+    },
+    {
+      "category": "Plumbing",
+      "service": "Shower Valve Replacement",
+      "description": "Replace shower valve",
+      "unit": "Each",
+      "economy": 900,
+      "standard": 1400,
+      "premium": 2200,
+      "material": "No",
+      "typicalMinimum": 900,
+      "notes": "Wall access/tile extra"
+    },
+    {
+      "category": "HVAC",
+      "service": "Bath/Kitchen Vent Ducting",
+      "description": "Install vent ducting to exterior",
+      "unit": "Each",
+      "economy": 650,
+      "standard": 950,
+      "premium": 1500,
+      "material": "No",
+      "typicalMinimum": 650,
+      "notes": "Roof/wall cap extra"
+    },
+    {
+      "category": "Miscellaneous",
+      "service": "Dumpster / Disposal",
+      "description": "Construction debris disposal allowance",
+      "unit": "Job",
+      "economy": 500,
+      "standard": 750,
+      "premium": 1500,
+      "material": "No",
+      "typicalMinimum": 500,
+      "notes": "Depends on load size"
+    },
+    {
+      "category": "Miscellaneous",
+      "service": "Final Cleaning",
+      "description": "Construction final cleaning",
+      "unit": "Job",
+      "economy": 300,
+      "standard": 600,
+      "premium": 1200,
+      "material": "No",
+      "typicalMinimum": 300,
+      "notes": "Deep cleaning extra"
+    },
+    {
+      "category": "Miscellaneous",
+      "service": "Permit Coordination",
+      "description": "Prepare/coordinate permit paperwork",
+      "unit": "Job",
+      "economy": 450,
+      "standard": 850,
+      "premium": 1500,
+      "material": "No",
+      "typicalMinimum": 450,
+      "notes": "City fees not included"
+    },
+    {
+      "category": "Miscellaneous",
+      "service": "Project Management",
+      "description": "PM/coordination fee",
+      "unit": "Percent",
+      "economy": "8%",
+      "standard": "12%",
+      "premium": "15%",
+      "material": "No",
+      "typicalMinimum": 0,
+      "notes": "Apply to project subtotal"
+    },
+    {
+      "category": "Miscellaneous",
+      "service": "Emergency / Rush Scheduling",
+      "description": "Rush scheduling premium",
+      "unit": "Percent",
+      "economy": "10%",
+      "standard": "15%",
+      "premium": "25%",
+      "material": "No",
+      "typicalMinimum": 0,
+      "notes": "Apply when fast-track requested"
+    },
+    {
+      "category": "Miscellaneous",
+      "service": "Minimum Service Call",
+      "description": "Minimum charge for small job visit",
+      "unit": "Job",
+      "economy": 250,
+      "standard": 350,
+      "premium": 500,
+      "material": "No",
+      "typicalMinimum": 250,
+      "notes": "Use for small repairs"
+    },
+    {
+      "category": "Epoxy & Specialty",
+      "service": "Garage Epoxy Floor",
+      "description": "Prep and install epoxy floor coating",
+      "unit": "SF",
+      "economy": 6,
+      "standard": 8,
+      "premium": 12,
+      "material": "Partial",
+      "typicalMinimum": 1200,
+      "notes": "Heavy grinding/repairs extra"
+    },
+    {
+      "category": "Epoxy & Specialty",
+      "service": "Basement Epoxy Floor",
+      "description": "Prep and install epoxy floor coating",
+      "unit": "SF",
+      "economy": 6,
+      "standard": 8,
+      "premium": 12,
+      "material": "Partial",
+      "typicalMinimum": 1200,
+      "notes": "Moisture issues extra"
+    },
+    {
+      "category": "New Construction",
+      "service": "New Home Construction",
+      "description": "Turnkey new single-family build: foundation, framing, systems, finishes",
+      "unit": "SF",
+      "economy": 225,
+      "standard": 300,
+      "premium": 425,
+      "material": "Yes",
+      "typicalMinimum": 300000,
+      "notes": "Per finished SF; land, site work & design/permits vary"
+    },
+    {
+      "category": "New Construction",
+      "service": "Detached ADU Construction",
+      "description": "Standalone accessory dwelling unit with own foundation & utilities",
+      "unit": "SF",
+      "economy": 250,
+      "standard": 325,
+      "premium": 425,
+      "material": "Yes",
+      "typicalMinimum": 180000,
+      "notes": "MA allows <=900 SF by-right in most single-family zones"
+    },
+    {
+      "category": "New Construction",
+      "service": "Attached ADU / In-Law Addition",
+      "description": "ADU attached to home, sharing a wall & some utilities",
+      "unit": "SF",
+      "economy": 300,
+      "standard": 400,
+      "premium": 525,
+      "material": "Yes",
+      "typicalMinimum": 150000,
+      "notes": "Cheaper utilities than detached; ties into structure"
+    },
+    {
+      "category": "New Construction",
+      "service": "Garage Construction",
+      "description": "Build new detached garage: slab and structure",
+      "unit": "SF",
+      "economy": 60,
+      "standard": 85,
+      "premium": 120,
+      "material": "Partial",
+      "typicalMinimum": 25000,
+      "notes": "Doors, electrical & finishes affect price"
+    },
+    {
+      "category": "New Construction",
+      "service": "Foundation - Poured Concrete",
+      "description": "Excavate and pour concrete foundation/slab",
+      "unit": "SF",
+      "economy": 28,
+      "standard": 40,
+      "premium": 60,
+      "material": "Yes",
+      "typicalMinimum": 15000,
+      "notes": "Footprint SF; ledge/water table extra"
+    },
+    {
+      "category": "Additions",
+      "service": "One-Story Addition",
+      "description": "Add finished one-story living space onto the home",
+      "unit": "SF",
+      "economy": 300,
+      "standard": 425,
+      "premium": 550,
+      "material": "Partial",
+      "typicalMinimum": 45000,
+      "notes": "Family room/bedroom/office; tie-ins & finishes vary"
+    },
+    {
+      "category": "Additions",
+      "service": "Second-Story Addition",
+      "description": "Add a full second story or build over a one-story area",
+      "unit": "SF",
+      "economy": 350,
+      "standard": 475,
+      "premium": 625,
+      "material": "Partial",
+      "typicalMinimum": 90000,
+      "notes": "Most complex; structural & systems tie-ins"
+    },
+    {
+      "category": "Additions",
+      "service": "Bump-Out Addition",
+      "description": "Small-footprint expansion (kitchen/bath/nook)",
+      "unit": "SF",
+      "economy": 400,
+      "standard": 525,
+      "premium": 700,
+      "material": "Partial",
+      "typicalMinimum": 25000,
+      "notes": "High fixed cost/SF; plumbing raises price"
+    },
+    {
+      "category": "Additions",
+      "service": "Sunroom Addition",
+      "description": "Build 3-season or 4-season sunroom",
+      "unit": "SF",
+      "economy": 350,
+      "standard": 475,
+      "premium": 650,
+      "material": "Partial",
+      "typicalMinimum": 30000,
+      "notes": "Glazing package & HVAC affect price"
+    },
+    {
+      "category": "Additions",
+      "service": "In-Law Suite Addition",
+      "description": "Addition with bedroom, bath, kitchenette & entry",
+      "unit": "SF",
+      "economy": 325,
+      "standard": 450,
+      "premium": 600,
+      "material": "Partial",
+      "typicalMinimum": 120000,
+      "notes": "May trigger ADU zoning/code review"
+    },
+    {
+      "category": "Whole-Home",
+      "service": "Whole-Home Remodel - Blended",
+      "description": "Full-home renovation; blended cosmetic-to-gut rate",
+      "unit": "SF",
+      "economy": 90,
+      "standard": 140,
+      "premium": 200,
+      "material": "Partial",
+      "typicalMinimum": 60000,
+      "notes": "Good=cosmetic refresh; Best=full gut"
+    },
+    {
+      "category": "Multifamily Conversion",
+      "service": "Single-to-Two-Family Conversion - Base",
+      "description": "Code, fire separation, egress & permitting to add a legal unit",
+      "unit": "Job",
+      "economy": 35000,
+      "standard": 55000,
+      "premium": 85000,
+      "material": "Partial",
+      "typicalMinimum": 35000,
+      "notes": "Excludes new kitchen/bath (add separately)"
+    },
+    {
+      "category": "Multifamily Conversion",
+      "service": "Basement Apartment Conversion",
+      "description": "Convert basement to legal dwelling unit (finish + egress)",
+      "unit": "SF",
+      "economy": 130,
+      "standard": 175,
+      "premium": 240,
+      "material": "Partial",
+      "typicalMinimum": 90000,
+      "notes": "Add kitchen/bath lines; ceiling height & egress critical"
+    },
+    {
+      "category": "Multifamily Conversion",
+      "service": "Attic Apartment Conversion",
+      "description": "Convert attic to a legal dwelling unit",
+      "unit": "SF",
+      "economy": 150,
+      "standard": 200,
+      "premium": 275,
+      "material": "Partial",
+      "typicalMinimum": 95000,
+      "notes": "Dormers/headroom/egress add cost"
+    },
+    {
+      "category": "Multifamily Conversion",
+      "service": "Fire-Rated Unit Separation",
+      "description": "Install code fire-rated floor/ceiling/wall assemblies",
+      "unit": "SF",
+      "economy": 12,
+      "standard": 16,
+      "premium": 22,
+      "material": "Partial",
+      "typicalMinimum": 3000,
+      "notes": "Between units; sound control extra"
+    },
+    {
+      "category": "Multifamily Conversion",
+      "service": "Separate Unit Sub-Panel & Metering",
+      "description": "Add electrical sub-panel & separate metering for new unit",
+      "unit": "Each",
+      "economy": 3500,
+      "standard": 5000,
+      "premium": 8000,
+      "material": "No",
+      "typicalMinimum": 3500,
+      "notes": "Utility coordination fees extra"
+    },
+    {
+      "category": "Multifamily Conversion",
+      "service": "Separate Unit Entrance & Landing",
+      "description": "New exterior entry door + landing/stairs for added unit",
+      "unit": "Each",
+      "economy": 3500,
+      "standard": 5000,
+      "premium": 8000,
+      "material": "Partial",
+      "typicalMinimum": 3500,
+      "notes": "Permit/egress compliant"
+    },
+    {
+      "category": "Multifamily Conversion",
+      "service": "New Kitchen for Added Unit",
+      "description": "Compact full kitchen for a new dwelling unit",
+      "unit": "Job",
+      "economy": 18000,
+      "standard": 28000,
+      "premium": 42000,
+      "material": "Partial",
+      "typicalMinimum": 18000,
+      "notes": "Cabinets/counters/appliances allowance"
+    }
+  ],
+  "projects": [
+    {
+      "type": "New Home Construction",
+      "bestFor": "Building from the ground up",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "Efficient layout, builder-grade finishes, standard fixtures",
+          "unit": "SF",
+          "unitPrice": 225,
+          "typicalSize": "2,000 SF",
+          "examplePrice": 450000
+        },
+        {
+          "tier": "Better",
+          "included": "Upgraded finishes, quartz, hardwood, better windows & systems",
+          "unit": "SF",
+          "unitPrice": 300,
+          "typicalSize": "2,000 SF",
+          "examplePrice": 600000
+        },
+        {
+          "tier": "Best",
+          "included": "Custom design, premium finishes, high-end systems throughout",
+          "unit": "SF",
+          "unitPrice": 425,
+          "typicalSize": "2,000 SF",
+          "examplePrice": 850000
+        }
+      ]
+    },
+    {
+      "type": "Detached ADU",
+      "bestFor": "Rental income / in-law suite",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "Compact 1-BR granny flat, value finishes",
+          "unit": "SF",
+          "unitPrice": 250,
+          "typicalSize": "800 SF",
+          "examplePrice": 200000
+        },
+        {
+          "tier": "Better",
+          "included": "Full 1–2 BR unit, quality finishes, own utilities",
+          "unit": "SF",
+          "unitPrice": 325,
+          "typicalSize": "800 SF",
+          "examplePrice": 260000
+        },
+        {
+          "tier": "Best",
+          "included": "Custom ADU, premium finishes, energy package",
+          "unit": "SF",
+          "unitPrice": 425,
+          "typicalSize": "800 SF",
+          "examplePrice": 340000
+        }
+      ]
+    },
+    {
+      "type": "Attached ADU / In-Law",
+      "bestFor": "Multigenerational living",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "Attached suite sharing utilities, value finishes",
+          "unit": "SF",
+          "unitPrice": 300,
+          "typicalSize": "600 SF",
+          "examplePrice": 180000
+        },
+        {
+          "tier": "Better",
+          "included": "Full attached unit, quality finishes",
+          "unit": "SF",
+          "unitPrice": 400,
+          "typicalSize": "600 SF",
+          "examplePrice": 240000
+        },
+        {
+          "tier": "Best",
+          "included": "Premium attached suite, custom finishes",
+          "unit": "SF",
+          "unitPrice": 525,
+          "typicalSize": "600 SF",
+          "examplePrice": 315000
+        }
+      ]
+    },
+    {
+      "type": "One-Story Addition",
+      "bestFor": "More living space, same floor",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "Family room/bedroom, standard finishes",
+          "unit": "SF",
+          "unitPrice": 300,
+          "typicalSize": "400 SF",
+          "examplePrice": 120000
+        },
+        {
+          "tier": "Better",
+          "included": "Upgraded finishes, better tie-ins & systems",
+          "unit": "SF",
+          "unitPrice": 425,
+          "typicalSize": "400 SF",
+          "examplePrice": 170000
+        },
+        {
+          "tier": "Best",
+          "included": "Premium finishes, complex tie-ins",
+          "unit": "SF",
+          "unitPrice": 550,
+          "typicalSize": "400 SF",
+          "examplePrice": 220000
+        }
+      ]
+    },
+    {
+      "type": "Second-Story Addition",
+      "bestFor": "Double your footprint",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "Add-a-level, standard finishes",
+          "unit": "SF",
+          "unitPrice": 350,
+          "typicalSize": "600 SF",
+          "examplePrice": 210000
+        },
+        {
+          "tier": "Better",
+          "included": "Full second story, quality finishes",
+          "unit": "SF",
+          "unitPrice": 475,
+          "typicalSize": "600 SF",
+          "examplePrice": 285000
+        },
+        {
+          "tier": "Best",
+          "included": "Premium second story, custom design",
+          "unit": "SF",
+          "unitPrice": 625,
+          "typicalSize": "600 SF",
+          "examplePrice": 375000
+        }
+      ]
+    },
+    {
+      "type": "Whole-Home Remodel",
+      "bestFor": "Transform the whole house",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "Cosmetic refresh: paint, flooring, fixtures",
+          "unit": "SF",
+          "unitPrice": 90,
+          "typicalSize": "1,500 SF",
+          "examplePrice": 135000
+        },
+        {
+          "tier": "Better",
+          "included": "Mid renovation: systems updated in place",
+          "unit": "SF",
+          "unitPrice": 140,
+          "typicalSize": "1,500 SF",
+          "examplePrice": 210000
+        },
+        {
+          "tier": "Best",
+          "included": "Full gut: reconfigure, premium throughout",
+          "unit": "SF",
+          "unitPrice": 200,
+          "typicalSize": "1,500 SF",
+          "examplePrice": 300000
+        }
+      ]
+    },
+    {
+      "type": "Single→Two-Family",
+      "bestFor": "Add a legal rental unit (+ kitchen/bath)",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "Code, fire separation, egress & permits (base)",
+          "unit": "Job",
+          "unitPrice": 35000,
+          "typicalSize": "—",
+          "examplePrice": 35000
+        },
+        {
+          "tier": "Better",
+          "included": "Standard separation + updated systems",
+          "unit": "Job",
+          "unitPrice": 55000,
+          "typicalSize": "—",
+          "examplePrice": 55000
+        },
+        {
+          "tier": "Best",
+          "included": "Premium build-out, full systems & finishes",
+          "unit": "Job",
+          "unitPrice": 85000,
+          "typicalSize": "—",
+          "examplePrice": 85000
+        }
+      ]
+    },
+    {
+      "type": "Basement Apartment",
+      "bestFor": "Interior ADU / rental income",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "Legal basement unit, value finishes + egress",
+          "unit": "SF",
+          "unitPrice": 130,
+          "typicalSize": "700 SF",
+          "examplePrice": 91000
+        },
+        {
+          "tier": "Better",
+          "included": "Quality finishes, better moisture/sound control",
+          "unit": "SF",
+          "unitPrice": 175,
+          "typicalSize": "700 SF",
+          "examplePrice": 122500
+        },
+        {
+          "tier": "Best",
+          "included": "Premium basement unit, high-end finishes",
+          "unit": "SF",
+          "unitPrice": 240,
+          "typicalSize": "700 SF",
+          "examplePrice": 168000
+        }
+      ]
+    },
+    {
+      "type": "Kitchen Remodel",
+      "bestFor": "Heart of the home",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "Refresh: cabinets, laminate counters, backsplash",
+          "unit": "Job",
+          "unitPrice": 30000,
+          "typicalSize": "—",
+          "examplePrice": 30000
+        },
+        {
+          "tier": "Better",
+          "included": "New semi-custom cabinets, quartz, appliances",
+          "unit": "Job",
+          "unitPrice": 45000,
+          "typicalSize": "—",
+          "examplePrice": 45000
+        },
+        {
+          "tier": "Best",
+          "included": "Custom cabinetry, stone, layout change",
+          "unit": "Job",
+          "unitPrice": 65000,
+          "typicalSize": "—",
+          "examplePrice": 65000
+        }
+      ]
+    },
+    {
+      "type": "Bathroom Remodel",
+      "bestFor": "Daily comfort & resale",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "Refresh: vanity, tub/shower, tile, fixtures",
+          "unit": "Job",
+          "unitPrice": 15000,
+          "typicalSize": "—",
+          "examplePrice": 15000
+        },
+        {
+          "tier": "Better",
+          "included": "Full gut in footprint, custom tile shower",
+          "unit": "Job",
+          "unitPrice": 22000,
+          "typicalSize": "—",
+          "examplePrice": 22000
+        },
+        {
+          "tier": "Best",
+          "included": "Reconfigure, walk-in shower, heated floors",
+          "unit": "Job",
+          "unitPrice": 35000,
+          "typicalSize": "—",
+          "examplePrice": 35000
+        }
+      ]
+    },
+    {
+      "type": "Basement Finishing",
+      "bestFor": "Bonus living space",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "Drywall, LVP, lighting, paint (egress-ready)",
+          "unit": "SF",
+          "unitPrice": 65,
+          "typicalSize": "800 SF",
+          "examplePrice": 52000
+        },
+        {
+          "tier": "Better",
+          "included": "Half bath, zoned HVAC, upgraded finishes",
+          "unit": "SF",
+          "unitPrice": 95,
+          "typicalSize": "800 SF",
+          "examplePrice": 76000
+        },
+        {
+          "tier": "Best",
+          "included": "Full bath, kitchenette, premium/smart",
+          "unit": "SF",
+          "unitPrice": 125,
+          "typicalSize": "800 SF",
+          "examplePrice": 100000
+        }
+      ]
+    },
+    {
+      "type": "Composite Deck",
+      "bestFor": "Outdoor living",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "PT framing + composite boards, standard rail",
+          "unit": "SF",
+          "unitPrice": 65,
+          "typicalSize": "350 SF",
+          "examplePrice": 22750
+        },
+        {
+          "tier": "Better",
+          "included": "Upgraded boards & railing, lighting-ready",
+          "unit": "SF",
+          "unitPrice": 75,
+          "typicalSize": "350 SF",
+          "examplePrice": 26250
+        },
+        {
+          "tier": "Best",
+          "included": "Premium boards, cable/lighted rail, built-ins",
+          "unit": "SF",
+          "unitPrice": 95,
+          "typicalSize": "350 SF",
+          "examplePrice": 33250
+        }
+      ]
+    },
+    {
+      "type": "Roof Replacement",
+      "bestFor": "Protect the home",
+      "tiers": [
+        {
+          "tier": "Good",
+          "included": "Architectural shingles, standard warranty",
+          "unit": "SF",
+          "unitPrice": 8,
+          "typicalSize": "1,800 SF",
+          "examplePrice": 14400
+        },
+        {
+          "tier": "Better",
+          "included": "Upgraded shingles, ice-and-water, ventilation",
+          "unit": "SF",
+          "unitPrice": 9.5,
+          "typicalSize": "1,800 SF",
+          "examplePrice": 17100
+        },
+        {
+          "tier": "Best",
+          "included": "Premium/designer shingles, full system",
+          "unit": "SF",
+          "unitPrice": 12,
+          "typicalSize": "1,800 SF",
+          "examplePrice": 21600
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "Company": {
+      "value": "Vilela Construction Inc.",
+      "notes": "Massachusetts residential construction"
+    },
+    "Market": {
+      "value": "Greater Boston / Eastern MA",
+      "notes": "Pricing reflects MA labor premium (~20–35% over US median)"
+    },
+    "Default Selling Tier": {
+      "value": "Standard",
+      "notes": "Use Standard for most estimates"
+    },
+    "O&P included in tier prices": {
+      "value": "25.0%",
+      "notes": "Tier prices already include labor & overhead/profit"
+    },
+    "Default Project Mgmt %": {
+      "value": "10.0%",
+      "notes": "Applied on subtotal in the Estimate Builder"
+    },
+    "Default Contingency %": {
+      "value": "10.0%",
+      "notes": "Buffer for site unknowns / older homes"
+    },
+    "Small Job Minimum": {
+      "value": "$350",
+      "notes": "Floor for small visits/repairs"
+    },
+    "Document Version": {
+      "value": "1.0",
+      "notes": "Last updated 2026-07-01"
+    }
+  },
+  "startingPrices": [
+    {
+      "projectType": "New Home Construction",
+      "from": 450000,
+      "typical": 600000,
+      "premium": 850000
+    },
+    {
+      "projectType": "Detached ADU",
+      "from": 200000,
+      "typical": 260000,
+      "premium": 340000
+    },
+    {
+      "projectType": "Attached ADU / In-Law",
+      "from": 180000,
+      "typical": 240000,
+      "premium": 315000
+    },
+    {
+      "projectType": "One-Story Addition",
+      "from": 120000,
+      "typical": 170000,
+      "premium": 220000
+    },
+    {
+      "projectType": "Second-Story Addition",
+      "from": 210000,
+      "typical": 285000,
+      "premium": 375000
+    },
+    {
+      "projectType": "Whole-Home Remodel",
+      "from": 135000,
+      "typical": 210000,
+      "premium": 300000
+    },
+    {
+      "projectType": "Single→Two-Family",
+      "from": 35000,
+      "typical": 55000,
+      "premium": 85000
+    },
+    {
+      "projectType": "Basement Apartment",
+      "from": 91000,
+      "typical": 122500,
+      "premium": 168000
+    },
+    {
+      "projectType": "Kitchen Remodel",
+      "from": 30000,
+      "typical": 45000,
+      "premium": 65000
+    },
+    {
+      "projectType": "Bathroom Remodel",
+      "from": 15000,
+      "typical": 22000,
+      "premium": 35000
+    },
+    {
+      "projectType": "Basement Finishing",
+      "from": 52000,
+      "typical": 76000,
+      "premium": 100000
+    },
+    {
+      "projectType": "Composite Deck",
+      "from": 22750,
+      "typical": 26250,
+      "premium": 33250
+    },
+    {
+      "projectType": "Roof Replacement",
+      "from": 14400,
+      "typical": 17100,
+      "premium": 21600
+    },
+    {
+      "projectType": "Example prices assume typical project sizes (editable on 'Choose Your Project'). Room remodels are per-job.",
+      "from": null,
+      "typical": null,
+      "premium": null
+    }
+  ]
+}

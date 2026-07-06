@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glória Ellen — Brandbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@1,400;1,500&family=Italiana&family=Pinyon+Script&family=Italianno&family=Reenie+Beanie&family=Kalam:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF5EC;
+    --cream-warm: #F0E7D0;
+    --sand: #DDD0B5;
+    --sand-deep: #C7A876;
+    --ink: #2A2B27;
+    --ink-soft: #5C5A50;
+    --ink-mute: #8B8478;
+    --sea: #3D5A6C;
+    --sea-deep: #2A4152;
+    --forest: #6B7F5C;
+    --forest-deep: #4E6142;
+    --dawn: #E3B8A1;
+    --line: rgba(42, 43, 39, 0.10);
+    --shadow: 0 4px 30px rgba(42, 43, 39, 0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; overflow: hidden; }
+  body {
+    font-family: 'Cormorant Garamond', 'Georgia', serif;
+    background: var(--cream);
+    color: var(--ink);
+    font-weight: 400;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+  }
+  /* Grão de filme */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 200;
+    opacity: 0.35;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='2'/><feColorMatrix values='0 0 0 0 0.17  0 0 0 0 0.17  0 0 0 0 0.15  0 0 0 0.14 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  .deck { position: relative; width: 100vw; height: 100vh; overflow: hidden; }
+  .slide {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    padding: 6vh 8vw;
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    pointer-events: none;
+    overflow-y: auto;
+  }
+  .slide.active { opacity: 1; transform: translateX(0); pointer-events: auto; }
+  .slide.prev { transform: translateX(-60px); }
+  .slide-inner { max-width: 1180px; width: 100%; }
+
+  /* Typographic system */
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(2.6rem, 6vw, 5.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    color: var(--ink);
+  }
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(1.9rem, 4vw, 3.4rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.2rem;
+    color: var(--ink);
+  }
+  h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: clamp(1.4rem, 2.4vw, 2rem);
+    margin-bottom: 0.6rem;
+    color: var(--sea-deep);
+  }
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    color: var(--ink-mute);
+    margin-bottom: 1.6rem;
+    font-weight: 400;
+  }
+  p {
+    font-size: clamp(1.05rem, 1.25vw, 1.25rem);
+    color: var(--ink-soft);
+    margin-bottom: 1rem;
+    max-width: 780px;
+  }
+  p.lead {
+    font-size: clamp(1.2rem, 1.6vw, 1.5rem);
+    color: var(--ink);
+    font-weight: 300;
+    font-style: italic;
+  }
+  strong { color: var(--ink); font-weight: 600; }
+  em { font-style: italic; color: var(--sea); }
+  .info-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  /* Signature (logo) — Cormorant Italic Light como principal (editorial) */
+  .signature {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--ink);
+    letter-spacing: 0.005em;
+  }
+  .signature-big {
+    font-size: clamp(4rem, 11vw, 8.5rem);
+    line-height: 1.05;
+  }
+  .signature-med {
+    font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+    line-height: 1.1;
+  }
+  .signature-small {
+    font-size: clamp(1.4rem, 2.4vw, 2rem);
+    line-height: 1.1;
+  }
+  /* Direções de escolha (3 famílias distintas) */
+  .sig-cormorant { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; }
+  .sig-playfair { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; }
+  .sig-italiana { font-family: 'Italiana', serif; font-weight: 400; letter-spacing: 0.03em; }
+  .sig-pinyon { font-family: 'Pinyon Script', cursive; }
+  .sig-italianno { font-family: 'Italianno', cursive; }
+  .sig-reenie { font-family: 'Reenie Beanie', cursive; }
+  .sig-kalam { font-family: 'Kalam', cursive; font-weight: 300; }
+
+  /* Grids */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.2rem; }
+  @media (max-width: 900px) {
+    .grid-2, .grid-3, .grid-4, .grid-5 { grid-template-columns: 1fr; gap: 1.4rem; }
+  }
+
+  /* Cards */
+  .card {
+    background: var(--cream-warm);
+    border-radius: 6px;
+    padding: 1.8rem;
+    border: 1px solid var(--line);
+  }
+  .card-outline {
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 1.8rem;
+  }
+  .card-sea {
+    background: var(--sea);
+    color: var(--cream);
+    padding: 1.8rem;
+    border-radius: 6px;
+  }
+  .card-sea h3, .card-sea p, .card-sea strong { color: var(--cream); }
+  .card-forest {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 1.8rem;
+    border-radius: 6px;
+  }
+  .card-forest h3, .card-forest p, .card-forest strong { color: var(--cream); }
+
+  /* Color swatches */
+  .swatch {
+    aspect-ratio: 1 / 1.25;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.2rem;
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+  .swatch.dark { color: var(--cream); }
+  .swatch.light { color: var(--ink); }
+  .swatch .name {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.2rem;
+  }
+  .swatch .hex {
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    opacity: 0.85;
+    text-transform: uppercase;
+  }
+  .swatch .desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+  }
+
+  /* Banned card */
+  .banned {
+    background: var(--cream-warm);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 3px solid #B94E4E;
+    position: relative;
+  }
+  .banned::before {
+    content: '✕';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #B94E4E;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+
+  /* Approved card */
+  .approved {
+    background: var(--cream-warm);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 3px solid var(--forest);
+    position: relative;
+  }
+  .approved::before {
+    content: '✓';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--forest);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  /* Lists */
+  ul.clean { list-style: none; padding: 0; }
+  ul.clean li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+  }
+  ul.clean li:last-child { border-bottom: none; }
+  ul.clean li::before {
+    content: "—";
+    color: var(--sand-deep);
+    flex-shrink: 0;
+  }
+
+  ul.tags { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+  ul.tags li {
+    background: var(--cream-warm);
+    padding: 0.4rem 1rem;
+    border-radius: 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+
+  /* Quotes */
+  .quote {
+    border-left: 2px solid var(--sand-deep);
+    padding: 0.4rem 0 0.4rem 2rem;
+    margin: 1.5rem 0;
+  }
+  .quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  /* Nav */
+  .nav {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    z-index: 100;
+    background: rgba(250, 245, 236, 0.9);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--line);
+    border-radius: 40px;
+    padding: 0.5rem 1.2rem;
+    box-shadow: var(--shadow);
+  }
+  .nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--ink-mute);
+    font-size: 1.3rem;
+    padding: 0.3rem 0.6rem;
+    transition: color 0.2s;
+    font-family: inherit;
+  }
+  .nav button:hover { color: var(--ink); }
+  .nav button:disabled { opacity: 0.3; cursor: not-allowed; }
+  .counter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: var(--ink);
+    letter-spacing: 0.05em;
+    min-width: 60px;
+    text-align: center;
+  }
+  .counter span { color: var(--ink-mute); font-size: 0.85rem; }
+
+  .progress {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: rgba(42, 43, 39, 0.06);
+    z-index: 100;
+  }
+  .progress-bar {
+    height: 100%;
+    background: var(--sand-deep);
+    transition: width 0.5s ease;
+  }
+
+  .brand-mark {
+    position: fixed;
+    top: 28px;
+    left: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ink-mute);
+    font-size: 1.15rem;
+    letter-spacing: 0.01em;
+    z-index: 50;
+  }
+  .brand-right {
+    position: fixed;
+    top: 28px;
+    right: 40px;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink-mute);
+    font-size: 0.65rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    z-index: 50;
+  }
+
+  /* Cover */
+  .cover { text-align: center; }
+  .cover .eyebrow { margin-bottom: 3rem; }
+  .cover .meta-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 4rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    color: var(--ink-mute);
+  }
+
+  /* Section number */
+  .section-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: var(--sand-deep);
+    line-height: 1;
+    margin-bottom: -0.3rem;
+    opacity: 0.6;
+  }
+
+  /* Dawn gradient bg */
+  .dawn-bg {
+    background: linear-gradient(180deg, #F0E7D0 0%, #E3B8A1 40%, #C7A876 65%, #6B7F5C 90%, #3D5A6C 100%);
+    color: var(--cream);
+    padding: 3rem;
+    border-radius: 8px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .dawn-bg h3, .dawn-bg p { color: var(--cream); }
+
+  /* Watermark demo */
+  .watermark-demo {
+    background: linear-gradient(135deg, #3D5A6C 0%, #6B7F5C 100%);
+    aspect-ratio: 3/2;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+  .watermark-demo::after {
+    content: "Glória Ellen";
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    color: rgba(250, 245, 236, 0.72);
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* Typography sample */
+  .type-sample {
+    padding: 2rem;
+    background: var(--cream-warm);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  .type-sample .label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--ink-mute);
+    margin-bottom: 0.6rem;
+  }
+
+  /* Emoji rows */
+  .emoji-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+    font-size: 1.8rem;
+  }
+  .emoji-row .em {
+    background: white;
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+  }
+
+  /* Closing */
+  .closing { text-align: center; }
+  .closing h1 { font-size: clamp(2.8rem, 7vw, 5.5rem); }
+
+  /* Hint */
+  .hint {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 0.65rem;
+    color: var(--ink-mute);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    z-index: 50;
+  }
+
+  @media (max-width: 900px) {
+    .brand-mark, .brand-right, .hint { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+<div class="brand-mark">gloriaellen</div>
+<div class="brand-right">Brandbook · 2026</div>
+
+<div class="deck" id="deck">
+
+  <!-- SLIDE 1 — CAPA -->
+  <section class="slide cover active">
+    <div class="slide-inner">
+      <div class="eyebrow">Brandbook · 2026</div>
+      <div class="signature signature-big">Glória Ellen</div>
+      <p class="lead" style="margin-top: 2rem;">Uma marca autoral em construção.<br/>Poesia como língua-mãe.</p>
+      <div class="meta-info">
+        <span>Fotografia · Palavra · Fé</span>
+        <span>Litoral Catarinense</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 2 — PALAVRA-ÂNCORA -->
+  <section class="slide cover">
+    <div class="slide-inner">
+      <div class="eyebrow">A palavra-âncora</div>
+      <h1 style="font-style: italic; font-size: clamp(5rem, 14vw, 10rem);">poesia.</h1>
+      <p class="lead" style="margin-top: 2rem;">Tudo o que essa marca faz — se não for poesia, não é ela.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 3 — MISSÃO -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Missão</div>
+      <h2 style="max-width: 900px;">"Humanizar o olhar através da fotografia, da palavra e da fé — criando um diário visual para quem ainda acredita na profundidade da vida."</h2>
+      <p style="margin-top: 2rem;"><em>— Glória Ellen</em></p>
+    </div>
+  </section>
+
+  <!-- SLIDE 4 — 5 PALAVRAS DE PERSONALIDADE -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Personalidade em 5 palavras</div>
+      <h2>Quem essa marca é.</h2>
+      <div class="grid-5" style="margin-top: 2.5rem;">
+        <div class="card">
+          <h3>Contemplativa</h3>
+          <p style="font-size: 0.95rem;">Observa antes de falar. Planos longos. Silêncios. Luz natural.</p>
+        </div>
+        <div class="card">
+          <h3>Espiritual</h3>
+          <p style="font-size: 0.95rem;">Presença sutil de Deus no cotidiano — sem discurso impositivo.</p>
+        </div>
+        <div class="card">
+          <h3>Intelectual sensível</h3>
+          <p style="font-size: 0.95rem;">Clarice, Dostoiévski, Nietzsche como companheiros. Não pedestal.</p>
+        </div>
+        <div class="card">
+          <h3>Melancólica luminosa</h3>
+          <p style="font-size: 0.95rem;">Reconhece a tristeza sem dramatizar. Convive com beleza e esperança.</p>
+        </div>
+        <div class="card">
+          <h3>Autoral</h3>
+          <p style="font-size: 0.95rem;">Nada genérico. Diário real. Estética própria. Vulnerabilidade consciente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 5 — MARCA COMO PESSOA -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Se a marca fosse uma pessoa</div>
+      <div class="grid-2">
+        <div>
+          <h2>Ela entra na sala.</h2>
+          <p class="lead" style="margin-top: 1.5rem;">Roupa clara. Andar equilibrado — nem lento, nem apressado. Ao sentar, fala muito. Não performa. Divide.</p>
+          <div class="quote" style="margin-top: 2rem;">
+            <p>Não grito. Compartilho.</p>
+          </div>
+        </div>
+        <div class="dawn-bg">
+          <h3>Amanhecer.</h3>
+          <p>É a hora do dia em que a marca vive. Luz dourada nascendo. Ar frio. Silêncio antes do movimento. A promessa de tudo o que ainda pode ser.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 6 — TEXTURA -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Textura visual</div>
+      <h2>Grão de filme.</h2>
+      <p class="lead" style="max-width: 780px;">Nem neblina, nem linha reta. A marca tem <em>peso</em>, mas com respiração — como uma foto analógica que não esconde sua matéria.</p>
+      <div class="grid-3" style="margin-top: 2.5rem;">
+        <div class="card">
+          <h3>O que sim</h3>
+          <ul class="clean">
+            <li>Ruído sutil em backgrounds</li>
+            <li>Fotos com granulação natural</li>
+            <li>Textura analógica em detalhes</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>O que não</h3>
+          <ul class="clean">
+            <li>Superfícies plásticas</li>
+            <li>Aerografia digital pura</li>
+            <li>Alto contraste vazio</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Referências</h3>
+          <ul class="clean">
+            <li>Kodak Portra 400</li>
+            <li>Cine 35mm</li>
+            <li>Tarkovsky, Bergman</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 7 — PÚBLICO -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Para quem essa marca fala</div>
+      <h2>O espectador sensível.</h2>
+      <div class="grid-2" style="margin-top: 2rem;">
+        <div>
+          <p class="lead">Alguém que pensa demais, sente fundo e anda deslocado no ritmo atual do mundo.</p>
+          <p style="margin-top: 1.5rem;"><strong>Ele deseja:</strong> silêncio interior · pertencimento · reconexão com si, com Deus, com a natureza e com a beleza simples do cotidiano.</p>
+        </div>
+        <div>
+          <h3>Ele tem medo de</h3>
+          <ul class="clean">
+            <li>perder a própria essência ao crescer</li>
+            <li>expor sentimento e ser julgado</li>
+            <li>misturar fé, arte e razão e não ser levado a sério</li>
+            <li>nunca conseguir viver da própria sensibilidade</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 8 — EMOÇÕES ALVO -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">As três emoções que a marca desperta</div>
+      <div class="grid-3">
+        <div class="card-sea">
+          <h3>Quietude</h3>
+          <p>O barulho baixa. O ombro relaxa. A pressa perde o discurso.</p>
+        </div>
+        <div class="card-forest">
+          <h3>Pertencimento</h3>
+          <p>"Ah — tem alguém que também sente assim." A solidão criativa afrouxa.</p>
+        </div>
+        <div class="card" style="background: var(--sand);">
+          <h3 style="color: var(--ink);">Despertar interior</h3>
+          <p style="color: var(--ink-soft);">A pessoa fecha o feed com vontade de olhar o céu, escrever, existir com mais atenção.</p>
+        </div>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--ink-mute);">Secundárias: melancolia serena · fé · contemplação · lucidez.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 9 — LÉXICO INTERNO -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">O léxico da tribo</div>
+      <h2>Palavras que só quem tá dentro entende.</h2>
+      <ul class="tags" style="margin-top: 2rem;">
+        <li>"habitar o silêncio"</li>
+        <li>"humanizar o olhar"</li>
+        <li>"existir sem performance"</li>
+        <li>"arquivo sensível"</li>
+        <li>"contemplar antes de reagir"</li>
+        <li>"o cotidiano é sagrado"</li>
+      </ul>
+      <div class="quote" style="margin-top: 2.5rem;">
+        <p>Para quem tá dentro, essas palavras não são frases — são prática.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 10 — LOGOTIPO -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">O logotipo</div>
+      <h2>Só o nome. Nada mais.</h2>
+      <p class="lead">Não há símbolo separado. Não há monograma. A marca <em>é</em> o nome — respirado como uma assinatura de livro.</p>
+      <div style="margin: 2rem 0; padding: 3.5rem 2rem; background: var(--cream-warm); border-radius: 6px; text-align: center; border: 1px solid var(--forest); position: relative;">
+        <div style="position: absolute; top: 14px; right: 18px; background: var(--forest); color: var(--cream); font-family: 'Inter', sans-serif; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.24em; padding: 0.35rem 0.9rem; border-radius: 30px;">✓ Aprovada</div>
+        <div class="signature signature-big">Glória Ellen</div>
+        <p style="font-family: 'Inter', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.28em; color: var(--ink-mute); margin-top: 1.5rem;">Fonte definitiva · Direção A · Cormorant Garamond Italic Light</p>
+      </div>
+      <div class="grid-3">
+        <div class="card-outline">
+          <h3>Estilo</h3>
+          <p style="font-size: 0.95rem;">Assinatura de livro editorial. Serifada italic light, respirada.</p>
+        </div>
+        <div class="card-outline">
+          <h3>Peso</h3>
+          <p style="font-size: 0.95rem;">Sussurra, não declara. Fina, respirada, com espaço entre letras.</p>
+        </div>
+        <div class="card-outline">
+          <h3>Aplicação</h3>
+          <p style="font-size: 0.95rem;">Vetorizado em SVG + PNG transparente + 3 tamanhos (grande, médio, micro).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 10b — DIREÇÃO A: EDITORIAL SERIFADA (ESCOLHIDA) -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Direção A · Editorial serifada — escolhida</div>
+      <h2>Assinatura de <em>livro</em>.</h2>
+      <p class="lead" style="margin-bottom: 2rem;">Tipografias italic finas usadas em capas de literatura séria. Clarice em capa de Cosac. Dostoiévski em capa de Editora 34.</p>
+      <div class="grid-2" style="gap: 1.5rem;">
+        <div class="card-outline" style="text-align: center; padding: 3rem 1.5rem; border: 2px solid var(--forest); background: var(--cream-warm); position: relative;">
+          <div style="position: absolute; top: 12px; right: 14px; background: var(--forest); color: var(--cream); font-family: 'Inter', sans-serif; font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.22em; padding: 0.3rem 0.8rem; border-radius: 30px;">✓ Escolhida</div>
+          <div class="sig-cormorant" style="font-size: clamp(3rem, 5.5vw, 4.5rem); color: var(--ink); line-height: 1.05;">Glória Ellen</div>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.24em; color: var(--forest); margin-top: 1.2rem; font-weight: 500;">A1 · Cormorant Garamond Italic Light</p>
+        </div>
+        <div class="card-outline" style="text-align: center; padding: 3rem 1.5rem;">
+          <div class="sig-playfair" style="font-size: clamp(2.6rem, 5vw, 4rem); color: var(--ink); line-height: 1.05;">Glória Ellen</div>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.24em; color: var(--ink-mute); margin-top: 1.2rem;">A2 · Playfair Display Italic</p>
+        </div>
+        <div class="card-outline" style="text-align: center; padding: 3rem 1.5rem; grid-column: 1 / -1;">
+          <div class="sig-italiana" style="font-size: clamp(3rem, 5vw, 4.2rem); color: var(--ink); line-height: 1.05;">GLÓRIA ELLEN</div>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.24em; color: var(--ink-mute); margin-top: 1.2rem;">A3 · Italiana Uppercase · como Vogue Portugal</p>
+        </div>
+      </div>
+      <p style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--ink-mute); margin-top: 1.5rem;"><em>Sensação:</em> autoridade silenciosa, editorial, tempo. Envelhece bem. Reproduz bem em pequeno.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 10c — DIREÇÃO B: CURSIVA ELEGANTE FINA (registro) -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div style="display: inline-block; background: var(--sand); color: var(--ink-soft); font-family: 'Inter', sans-serif; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.24em; padding: 0.35rem 0.9rem; border-radius: 30px; margin-bottom: 1.2rem;">Registro de exploração — não aprovada</div>
+      <div class="eyebrow">Direção B · Cursiva elegante fina</div>
+      <h2>Como uma <em>caneta</em> de nanquim.</h2>
+      <p class="lead" style="margin-bottom: 2rem;">Cursivas finíssimas — não cursivinha de convite. Mais próximo de uma assinatura de escritora do início do século.</p>
+      <div class="grid-2" style="gap: 1.5rem;">
+        <div class="card-outline" style="text-align: center; padding: 3rem 1.5rem;">
+          <div class="sig-pinyon" style="font-size: clamp(3.5rem, 6vw, 5rem); color: var(--ink); line-height: 1;">Glória Ellen</div>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.24em; color: var(--ink-mute); margin-top: 1.2rem;">B1 · Pinyon Script · nanquim finíssimo</p>
+        </div>
+        <div class="card-outline" style="text-align: center; padding: 3rem 1.5rem;">
+          <div class="sig-italianno" style="font-size: clamp(4rem, 7vw, 5.5rem); color: var(--ink); line-height: 1;">Glória Ellen</div>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.24em; color: var(--ink-mute); margin-top: 1.2rem;">B2 · Italianno · fluida clássica italiana</p>
+        </div>
+      </div>
+      <p style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--ink-mute); margin-top: 1.5rem;"><em>Sensação:</em> refinamento antigo, sem virar cliché. É a cursiva "possível" — não vira convite de casamento.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 10d — DIREÇÃO C: TRAÇO AUTÊNTICO (registro) -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div style="display: inline-block; background: var(--sand); color: var(--ink-soft); font-family: 'Inter', sans-serif; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.24em; padding: 0.35rem 0.9rem; border-radius: 30px; margin-bottom: 1.2rem;">Registro de exploração — não aprovada</div>
+      <div class="eyebrow">Direção C · Traço autêntico</div>
+      <h2>Como um <em>diário</em> aberto.</h2>
+      <p class="lead" style="margin-bottom: 2rem;">Manuscritas que parecem escritas AGORA, com pressa gentil. Não são "bonitinhas" — são reais.</p>
+      <div class="grid-2" style="gap: 1.5rem;">
+        <div class="card-outline" style="text-align: center; padding: 3rem 1.5rem;">
+          <div class="sig-reenie" style="font-size: clamp(3rem, 5.5vw, 4.5rem); color: var(--ink); line-height: 1.05;">Glória Ellen</div>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.24em; color: var(--ink-mute); margin-top: 1.2rem;">C1 · Reenie Beanie · rabiscada casual, honesta</p>
+        </div>
+        <div class="card-outline" style="text-align: center; padding: 3rem 1.5rem;">
+          <div class="sig-kalam" style="font-size: clamp(2.6rem, 5vw, 4rem); color: var(--ink); line-height: 1.05;">Glória Ellen</div>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.24em; color: var(--ink-mute); margin-top: 1.2rem;">C2 · Kalam Light · caligrafia moderna, orgânica</p>
+        </div>
+      </div>
+      <p style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--ink-mute); margin-top: 1.5rem;"><em>Sensação:</em> intimidade real, imperfeição cuidada. Cara de diário. Aquele "molho" que o polido não dá.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 10e — DIREÇÃO D: ASSINATURA VETORIZADA (registro / opcional futuro) -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div style="display: inline-block; background: var(--sand); color: var(--ink-soft); font-family: 'Inter', sans-serif; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.24em; padding: 0.35rem 0.9rem; border-radius: 30px; margin-bottom: 1.2rem;">Registro de exploração — pode virar upgrade futuro</div>
+      <div class="eyebrow">Direção D · A rota mais pessoal</div>
+      <h2>A <em>sua</em> assinatura, vetorizada.</h2>
+      <p class="lead" style="margin-bottom: 2rem;">Nenhuma fonte do Google Fonts vai ter a alma da sua própria mão. A rota mais autoral é essa — e leva 20 minutos:</p>
+      <div class="grid-3" style="margin-top: 2rem;">
+        <div class="card">
+          <h3>Passo 1</h3>
+          <p style="font-size: 0.95rem;">Você assina "Glória Ellen" em papel branco liso, com caneta preta média — 5 versões diferentes, sem pressa.</p>
+        </div>
+        <div class="card">
+          <h3>Passo 2</h3>
+          <p style="font-size: 0.95rem;">Foto ou scan das assinaturas em alta resolução. Manda pra gente pelo WhatsApp.</p>
+        </div>
+        <div class="card">
+          <h3>Passo 3</h3>
+          <p style="font-size: 0.95rem;">A gente escolhe a mais bonita, vetoriza em SVG, refina traços, entrega em 3 formatos (SVG, PNG transparente, PDF).</p>
+        </div>
+      </div>
+      <div class="quote" style="margin-top: 2rem;">
+        <p>Uma fonte pode ser bonita. Só a sua mão vai ser <em>única</em>.</p>
+      </div>
+      <p style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--ink-mute); margin-top: 1.5rem; text-align: center;">Recomendação: escolher uma das direções (A · B · C) como fallback digital + vetorizar sua assinatura como logotipo principal.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 11 — VARIAÇÕES DE APLICAÇÃO -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Variações de aplicação</div>
+      <h2>Como o nome respira em cada peça.</h2>
+      <div class="grid-4" style="margin-top: 2rem; gap: 1.2rem;">
+        <div class="card" style="text-align: center; padding: 2.2rem 1.2rem;">
+          <div class="signature signature-med" style="color: var(--ink);">Glória Ellen</div>
+          <p style="margin-top: 1rem; font-family: 'Inter', sans-serif; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-mute);">Principal · sobre creme</p>
+        </div>
+        <div class="card-sea" style="text-align: center; padding: 2.2rem 1.2rem;">
+          <div class="signature signature-med" style="color: var(--cream);">Glória Ellen</div>
+          <p style="margin-top: 1rem; font-family: 'Inter', sans-serif; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.2em; color: rgba(250, 245, 236, 0.75);">Invertida · sobre azul-mar</p>
+        </div>
+        <div class="card-forest" style="text-align: center; padding: 2.2rem 1.2rem;">
+          <div class="signature signature-med" style="color: var(--cream);">Glória Ellen</div>
+          <p style="margin-top: 1rem; font-family: 'Inter', sans-serif; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.2em; color: rgba(250, 245, 236, 0.75);">Invertida · sobre verde-árvores</p>
+        </div>
+        <div class="card" style="background: var(--sand); text-align: center; padding: 2.2rem 1.2rem;">
+          <div class="signature signature-med" style="color: var(--ink);">Glória Ellen</div>
+          <p style="margin-top: 1rem; font-family: 'Inter', sans-serif; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-mute);">Sobre bege · cartão</p>
+        </div>
+      </div>
+      <div style="margin-top: 1.5rem; padding: 1.5rem; background: var(--cream-warm); border-radius: 6px;">
+        <div style="display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;">
+          <div>
+            <div class="signature signature-small" style="color: var(--ink);">Glória Ellen</div>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-mute); margin-top: 0.5rem;">Reduzido · assinatura de rodapé</p>
+          </div>
+          <div style="opacity: 0.55;">
+            <div class="signature" style="color: var(--ink); font-size: 1rem; line-height: 1;">Glória Ellen</div>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink-mute); margin-top: 0.5rem;">Micro · marca d'água</p>
+          </div>
+          <div style="background: var(--sand-deep); padding: 0.6rem 1.2rem; border-radius: 4px;">
+            <div class="signature" style="color: var(--cream); font-size: 1.2rem; line-height: 1;">Glória Ellen</div>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.2em; color: rgba(250, 245, 236, 0.8); margin-top: 0.4rem;">Selo dourado</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 12 — TIPOGRAFIA -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">O sistema tipográfico</div>
+      <h2>Duas fontes. Uma alma.</h2>
+      <div class="type-sample">
+        <div class="label">Assinatura — Logo e marca d'água</div>
+        <div class="signature" style="font-size: 2.6rem; color: var(--ink);">Glória Ellen — assinatura de livro</div>
+        <p style="margin-top: 0.5rem; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--ink-mute);">Direção em aberto — 4 rotas apresentadas nos slides 10b, 10c, 10d, 10e. Escolha pendente da Glória.</p>
+      </div>
+      <div class="type-sample">
+        <div class="label">Serifada — Corpo, manifesto, poesia</div>
+        <h3 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; color: var(--ink); font-size: 2.6rem; margin: 0;">Cormorant Garamond Light</h3>
+        <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.15rem; margin-top: 0.6rem;">"Fotografar é escutar o silêncio das coisas."</p>
+      </div>
+      <div class="type-sample">
+        <div class="label">Sans-serif — Informação prática</div>
+        <div style="font-family: 'Inter', sans-serif; font-weight: 300; color: var(--ink); font-size: 1.8rem;">Inter Light</div>
+        <p style="font-family: 'Inter', sans-serif; font-size: 0.95rem; margin-top: 0.6rem; color: var(--ink-soft);">Preço · WhatsApp · Endereço · Datas · CTA · Formulário</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 13 — PALETA PRINCIPAL -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">A paleta</div>
+      <h2>Cores da praia ao amanhecer.</h2>
+      <p class="lead">Três cores que se levantam juntas em cada foto do litoral.</p>
+      <div class="grid-3" style="margin-top: 2rem;">
+        <div class="swatch dark" style="background: var(--sea);">
+          <div class="name">Azul-mar</div>
+          <div class="hex">#3D5A6C</div>
+          <div class="desc">O mar ao romper do dia.<br/>Contemplação. Profundidade.</div>
+        </div>
+        <div class="swatch dark" style="background: var(--forest);">
+          <div class="name">Verde-árvores</div>
+          <div class="hex">#6B7F5C</div>
+          <div class="desc">Mata em silêncio.<br/>Serenidade. Enraizamento.</div>
+        </div>
+        <div class="swatch light" style="background: var(--sand);">
+          <div class="name">Bege-areia</div>
+          <div class="hex">#DDD0B5</div>
+          <div class="desc">Areia seca ao sol da manhã.<br/>Calor. Aconchego.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 14 — NEUTROS E APOIO -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Neutros e cores de apoio</div>
+      <h2>Sustentação e detalhe.</h2>
+      <div class="grid-4" style="margin-top: 2rem;">
+        <div class="swatch light" style="background: var(--cream); border: 1px solid var(--line);">
+          <div class="name">Creme</div>
+          <div class="hex">#FAF5EC</div>
+          <div class="desc">Fundo principal. Papel do cartão.</div>
+        </div>
+        <div class="swatch dark" style="background: var(--ink);">
+          <div class="name">Ink</div>
+          <div class="hex">#2A2B27</div>
+          <div class="desc">Texto. Não é preto puro — tem terra.</div>
+        </div>
+        <div class="swatch light" style="background: var(--sand-deep);">
+          <div class="name">Dourado</div>
+          <div class="hex">#C7A876</div>
+          <div class="desc">Accent. Sol do amanhecer.</div>
+        </div>
+        <div class="swatch light" style="background: var(--dawn);">
+          <div class="name">Alvorada</div>
+          <div class="hex">#E3B8A1</div>
+          <div class="desc">Rosa sutil. Usar com parcimônia.</div>
+        </div>
+      </div>
+      <p style="margin-top: 1.5rem; font-family: 'Inter', sans-serif; font-size: 0.9rem; color: var(--ink-mute);">O par <strong>creme + ink</strong> sustenta 80% das peças. As demais entram como respiração.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 15 — CORES BANIDAS -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">O que essa marca NUNCA usa</div>
+      <h2>Cores que gritam.</h2>
+      <p class="lead">Se dói de ver, se vende demais, se performa — não é ela.</p>
+      <div class="grid-4" style="margin-top: 2rem;">
+        <div class="banned">
+          <div style="width: 100%; height: 60px; background: #8B3FBF; border-radius: 4px; margin-bottom: 0.8rem;"></div>
+          <strong>Roxo puro</strong>
+          <p style="font-size: 0.85rem; color: var(--ink-mute);">Grita, força espiritualidade estética.</p>
+        </div>
+        <div class="banned">
+          <div style="width: 100%; height: 60px; background: #FF6A1F; border-radius: 4px; margin-bottom: 0.8rem;"></div>
+          <strong>Laranja vibrante</strong>
+          <p style="font-size: 0.85rem; color: var(--ink-mute);">Energia comercial, urgência falsa.</p>
+        </div>
+        <div class="banned">
+          <div style="width: 100%; height: 60px; background: #FF2E4D; border-radius: 4px; margin-bottom: 0.8rem;"></div>
+          <strong>Vermelho puro</strong>
+          <p style="font-size: 0.85rem; color: var(--ink-mute);">Rompe a quietude. Nunca.</p>
+        </div>
+        <div class="banned">
+          <div style="width: 100%; height: 60px; background: #FF61C6; border-radius: 4px; margin-bottom: 0.8rem;"></div>
+          <strong>Rosa chiclete</strong>
+          <p style="font-size: 0.85rem; color: var(--ink-mute);">Vira caricatura, mata autoralidade.</p>
+        </div>
+        <div class="banned">
+          <div style="width: 100%; height: 60px; background: #F4E000; border-radius: 4px; margin-bottom: 0.8rem;"></div>
+          <strong>Amarelo neon</strong>
+          <p style="font-size: 0.85rem; color: var(--ink-mute);">Ostentação. Sem espaço aqui.</p>
+        </div>
+        <div class="banned">
+          <div style="width: 100%; height: 60px; background: #00E9C6; border-radius: 4px; margin-bottom: 0.8rem;"></div>
+          <strong>Ciano/neon</strong>
+          <p style="font-size: 0.85rem; color: var(--ink-mute);">Estética tech, oposta ao amanhecer.</p>
+        </div>
+        <div class="banned">
+          <div style="width: 100%; height: 60px; background: linear-gradient(45deg, #FF00FF, #00FFFF); border-radius: 4px; margin-bottom: 0.8rem;"></div>
+          <strong>Gradientes vibrantes</strong>
+          <p style="font-size: 0.85rem; color: var(--ink-mute);">Só gradientes de amanhecer (creme→dourado→rosa).</p>
+        </div>
+        <div class="banned">
+          <div style="width: 100%; height: 60px; background: #000; border-radius: 4px; margin-bottom: 0.8rem;"></div>
+          <strong>Preto puro</strong>
+          <p style="font-size: 0.85rem; color: var(--ink-mute);">Preferir sempre o ink (#2A2B27).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 16 — FOTOGRAFIA -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">A estética fotográfica da marca</div>
+      <h2>Amanhecer, litoral, grão.</h2>
+      <div class="grid-2" style="margin-top: 2rem;">
+        <div>
+          <h3>Direção</h3>
+          <ul class="clean">
+            <li>Luz de amanhecer sempre que possível (5h30 - 8h)</li>
+            <li>Tons dourados quentes + azul do céu que clareia</li>
+            <li>Cores da praia predominantes na paleta capturada</li>
+            <li>Grão de filme (Kodak Portra 400 ou preset equivalente)</li>
+            <li>Contemplação > pose. Pausa > gesto</li>
+            <li>O silêncio no enquadramento é parte da foto</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Nunca</h3>
+          <ul class="clean">
+            <li>Saturação artificial</li>
+            <li>Filtros "vintage" prontos</li>
+            <li>Vinheta pesada</li>
+            <li>Alto contraste vazio</li>
+            <li>Sorrisos performados</li>
+            <li>Cenários genéricos de estúdio</li>
+          </ul>
+        </div>
+      </div>
+      <div class="quote" style="margin-top: 2.5rem;">
+        <p>A entrega das fotos aos clientes segue o mesmo tom da marca. Sempre.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 17 — MARCA D'ÁGUA -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Marca d'água</div>
+      <h2>A assinatura no canto da foto.</h2>
+      <div class="grid-2" style="margin-top: 2rem;">
+        <div>
+          <h3>Regra de aplicação</h3>
+          <ul class="clean">
+            <li><strong>Canto inferior direito</strong>, sempre</li>
+            <li>Fonte: Petit Formal Script</li>
+            <li>Cor: bege-areia sobre foto escura · ink translúcido sobre foto clara</li>
+            <li>Opacidade: <strong>60–70%</strong></li>
+            <li>Tamanho: proporcional (~2% da largura)</li>
+            <li>Nunca sobre rosto, nunca no centro</li>
+          </ul>
+        </div>
+        <div class="watermark-demo"></div>
+      </div>
+      <p style="margin-top: 1.5rem; font-family: 'Inter', sans-serif; font-size: 0.9rem; color: var(--ink-mute);">A ideia: presença discreta que assina sem interromper. Assinatura, não carimbo.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 18 — TOM DE VOZ -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Como a marca fala</div>
+      <h2>Eu — formal-adaptativa, sem gritaria.</h2>
+      <div class="grid-2" style="margin-top: 2rem;">
+        <div>
+          <h3>Regras vivas</h3>
+          <ul class="clean">
+            <li>Falo em <strong>"eu"</strong>, nunca "a gente"</li>
+            <li>Base formal · adapto ao cliente ("sinto a febre")</li>
+            <li>O tom pode mudar ao vender · a essência não</li>
+            <li>Antes de responder preço, escuto</li>
+            <li>Poesia, quando cabe. Número, quando pedem</li>
+            <li><strong>Não xingo.</strong> Raiva é bufo, silêncio, revirar os olhos</li>
+          </ul>
+        </div>
+        <div>
+          <div class="approved">
+            <strong>Faz</strong>
+            <p style="margin-top: 0.5rem; font-family: 'Cormorant Garamond', serif; font-style: italic;">"O ensaio começa em R$550 até 14/07. Se quiser, te mando duas datas."</p>
+          </div>
+          <div class="banned" style="margin-top: 1rem;">
+            <strong>Não faz</strong>
+            <p style="margin-top: 0.5rem; font-family: 'Cormorant Garamond', serif; font-style: italic;">"OFERTAÇO INSANO só hoje!!! Corre pra fechar!!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 19 — EMOJIS -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Sistema de emojis</div>
+      <h2>Com moderação. Nunca com cara de IA.</h2>
+      <div class="grid-2" style="margin-top: 2rem;">
+        <div class="approved">
+          <strong>Cânone da marca</strong>
+          <div class="emoji-row" style="justify-content: center;">
+            <span class="em" style="font-size: 2.4rem;">🤍</span>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.9rem;">Coração branco é a assinatura emocional. Um por mensagem, no fim, como respiração.</p>
+        </div>
+        <div class="approved">
+          <strong>Permitidos com parcimônia</strong>
+          <div class="emoji-row">
+            <span class="em">✨</span>
+            <span class="em">🌊</span>
+            <span class="em">🌅</span>
+            <span class="em">📷</span>
+            <span class="em">🕊️</span>
+            <span class="em">📖</span>
+            <span class="em">🌿</span>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.9rem;">Sempre alinhados aos ícones da marca (mar, luz, câmera, livros, natureza, fé).</p>
+        </div>
+      </div>
+      <div class="banned" style="margin-top: 1.5rem;">
+        <strong>Banidos — soam artificiais/exagerados/IA</strong>
+        <div class="emoji-row">
+          <span class="em">🥹</span>
+          <span class="em">🤗</span>
+          <span class="em">😍</span>
+          <span class="em">🥰</span>
+          <span class="em">😚</span>
+          <span class="em">🫠</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 20 — RITUAIS E ÍCONES -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Rituais e ícones do universo</div>
+      <div class="grid-2">
+        <div>
+          <h3>Rituais</h3>
+          <ul class="clean">
+            <li>Fotografar sem postar imediatamente</li>
+            <li>Fazer pausas conscientes</li>
+            <li>Escrever pensamentos à mão</li>
+            <li>Olhar o mundo como se fosse a primeira vez</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ícones</h3>
+          <ul class="clean">
+            <li>Câmera como extensão do olhar</li>
+            <li>Mar · horizonte · céu nublado</li>
+            <li>Luz atravessando janelas</li>
+            <li>Gatos · livros marcados</li>
+            <li>Cruz · igrejas vazias</li>
+          </ul>
+        </div>
+      </div>
+      <h3 style="margin-top: 2.5rem;">Ídolos vivos e mortos</h3>
+      <ul class="tags">
+        <li>Tarkovsky</li>
+        <li>Bergman</li>
+        <li>Terrence Malick</li>
+        <li>Agnès Varda</li>
+        <li>Ansel Adams</li>
+        <li>Sebastião Salgado</li>
+        <li>Clarice Lispector</li>
+        <li>Fernando Pessoa</li>
+        <li>Dostoiévski</li>
+        <li>Nietzsche</li>
+        <li>Leica</li>
+        <li>Fujifilm</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SLIDE 21 — APLICAÇÕES -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Onde a marca vive</div>
+      <h2>Aplicações práticas.</h2>
+      <div class="grid-3" style="margin-top: 2rem;">
+        <div class="card">
+          <h3>Redes sociais</h3>
+          <ul class="clean">
+            <li>Feed do Instagram</li>
+            <li>Stories</li>
+            <li>Canal YouTube</li>
+            <li>Pinterest</li>
+            <li>Página Facebook</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Comercial</h3>
+          <ul class="clean">
+            <li>PDF de orçamento</li>
+            <li>Contrato de prestação</li>
+            <li>E-mail signature</li>
+            <li>Cartão de visita (papel bege)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Entrega</h3>
+          <ul class="clean">
+            <li>Marca d'água nas fotos</li>
+            <li>Galeria online (moldura creme)</li>
+            <li>Envelope de entrega</li>
+            <li>Pen drive personalizado</li>
+          </ul>
+        </div>
+      </div>
+      <div class="quote" style="margin-top: 2rem;">
+        <p>Em cada peça, a mesma alma. Se a peça não fala poesia, ela é editada — não postada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 22 — ESTREIA NO VALE -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Capítulo temporal · jul/2026</div>
+      <div class="section-num">/ 01</div>
+      <h1 style="font-style: italic;">Estreia no Vale.</h1>
+      <p class="lead" style="max-width: 800px;">Um capítulo dentro da marca-mãe. 12 dias, 12 histórias no litoral catarinense.<br/>Mesma paleta. Mesma tipografia. Mesma voz. Só o selo temporal muda.</p>
+      <div class="grid-3" style="margin-top: 2.5rem;">
+        <div class="card-outline">
+          <h3>Selo</h3>
+          <p style="font-size: 0.95rem;">"Estreia no Vale · 03–14/07/2026" em Cormorant Italic, sobre bege-areia.</p>
+        </div>
+        <div class="card-outline">
+          <h3>Preservação</h3>
+          <p style="font-size: 0.95rem;">Nenhuma cor nova. Nenhuma fonte nova. O capítulo respeita o brandbook.</p>
+        </div>
+        <div class="card-outline">
+          <h3>Vida útil</h3>
+          <p style="font-size: 0.95rem;">Do dia 03 ao 14 de julho. Depois vira arquivo da marca.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 23 — NÃO-NEGOCIÁVEIS -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">O que essa marca jamais será</div>
+      <h2>Não-negociáveis.</h2>
+      <div class="quote" style="margin-top: 2rem;">
+        <p>"Minha marca nunca vai <strong>morrer</strong>."<br/><span style="font-size: 0.95rem; color: var(--ink-mute); font-style: normal;">— Glória Ellen</span></p>
+      </div>
+      <div class="grid-2" style="margin-top: 2.5rem;">
+        <div class="banned">
+          <strong>Nunca</strong>
+          <ul class="clean" style="margin-top: 0.8rem;">
+            <li>Fazer algo que não é do lado da poesia</li>
+            <li>Vender com gritaria ou urgência falsa</li>
+            <li>Espiritualizar como estética vazia</li>
+            <li>Imitar tendência que não é minha</li>
+            <li>Prometer crescimento rápido</li>
+            <li>Reduzir arte a métrica</li>
+          </ul>
+        </div>
+        <div class="approved">
+          <strong>Sempre</strong>
+          <ul class="clean" style="margin-top: 0.8rem;">
+            <li>Escuta antes do clique</li>
+            <li>Voz autoral</li>
+            <li>Grão de filme</li>
+            <li>Amanhecer como luz-âncora</li>
+            <li>Fotos como oração visual</li>
+            <li>Presença, não performance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 24 — VISÃO DE 5 ANOS -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Onde essa marca chega em 5 anos</div>
+      <h2>O horizonte.</h2>
+      <p class="lead" style="max-width: 850px;">Bem posicionada. Com personalidade viva. Um trabalho autoral que virou <em>referência silenciosa</em> — daquelas que a gente recomenda em voz baixa, para quem realmente vai entender.</p>
+      <div class="quote" style="margin-top: 3rem;">
+        <p>Uma pessoa fecha o vídeo, sai para caminhar sem fones, observa o céu, a luz no asfalto, o rosto de um estranho, faz uma foto simples — e pensa: "A vida ainda é profunda."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 25 — FECHAMENTO -->
+  <section class="slide closing cover">
+    <div class="slide-inner">
+      <div class="eyebrow">Um brandbook vivo</div>
+      <div class="signature signature-big">Glória Ellen</div>
+      <p class="lead" style="margin-top: 2rem; max-width: 620px; margin-left: auto; margin-right: auto;">A marca é o eixo. A campanha é passagem. A vida é o material.</p>
+      <div class="meta-info" style="margin-top: 3rem;">
+        <span>Brandbook · v1.0</span>
+        <span>2026 · Litoral Catarinense</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<nav class="nav">
+  <button id="prev" aria-label="Anterior">←</button>
+  <div class="counter"><span id="current">01</span> <span>/</span> <span id="total">25</span></div>
+  <button id="next" aria-label="Próximo">→</button>
+</nav>
+
+<div class="hint">↔ Setas para navegar · F para fullscreen</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const total = slides.length;
+  let index = 0;
+  const currentEl = document.getElementById('current');
+  const totalEl = document.getElementById('total');
+  const progressBar = document.getElementById('progressBar');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  totalEl.textContent = String(total).padStart(2, '0');
+
+  function render() {
+    slides.forEach((s, i) => {
+      s.classList.remove('active', 'prev');
+      if (i === index) s.classList.add('active');
+      else if (i < index) s.classList.add('prev');
+    });
+    currentEl.textContent = String(index + 1).padStart(2, '0');
+    progressBar.style.width = ((index + 1) / total * 100) + '%';
+    prevBtn.disabled = index === 0;
+    nextBtn.disabled = index === total - 1;
+  }
+
+  function next() { if (index < total - 1) { index++; render(); } }
+  function prev() { if (index > 0) { index--; render(); } }
+
+  nextBtn.addEventListener('click', next);
+  prevBtn.addEventListener('click', prev);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); next(); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); prev(); }
+    if (e.key === 'Home') { index = 0; render(); }
+    if (e.key === 'End') { index = total - 1; render(); }
+    if (e.key === 'f' || e.key === 'F') {
+      if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+      else document.exitFullscreen();
+    }
+  });
+
+  let startX = 0;
+  document.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; });
+  document.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 50) { if (dx < 0) next(); else prev(); }
+  });
+
+  render();
+</script>
+
+</body>
+</html>

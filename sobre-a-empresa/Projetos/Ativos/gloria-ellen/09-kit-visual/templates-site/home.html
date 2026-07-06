@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glória Ellen — Fotografia autoral · Litoral Catarinense</title>
+
+  <meta name="description" content="Glória Ellen — fotógrafa autoral no litoral catarinense. Ensaios, contemplação, grão de filme. Estreia no Vale, 03–14 · 07 · 2026." />
+  <meta name="theme-color" content="#FAF5EC" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Estilos do template — importam tokens.css e type-system.css internamente -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =======================================================================
+       A · HERO — abertura em amanhecer
+       ---------------------------------------------------------------------
+       SUBSTITUIR ANTES DE PUBLICAR:
+       Trocar o <div class="hero__bg-placeholder"> por uma <img> real:
+       <img class="hero__bg" src="hero.jpg" alt="Amanhecer no litoral de
+       Balneário Camboriú, luz dourada sobre o mar" />
+       e ajustar em styles.css: .hero__bg { position:absolute; inset:0;
+       z-index:0; width:100%; height:100%; object-fit:cover; }
+       ======================================================================= -->
+  <header class="hero" id="topo">
+    <div class="hero__bg-placeholder" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <div class="container nav__inner">
+        <a href="#topo" class="nav__logo" aria-label="Glória Ellen · início">
+          <img src="../logo/logo-cream.svg" alt="Glória Ellen" />
+        </a>
+        <ul class="nav__menu" role="list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#estreia">Ensaios</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container hero__content">
+      <span class="eyebrow eyebrow--on-dark">Fotografia autoral · Litoral Catarinense</span>
+      <h1 class="hero__title">Glória Ellen</h1>
+      <p class="hero__lead">Fotografia autoral. Litoral catarinense. O que sussurra antes do clique.</p>
+      <div class="hero__cta">
+        <a href="#portfolio" class="convite convite--on-dark">Ver ensaios ↓</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- =======================================================================
+       B · SOBRE — manifesto
+       ---------------------------------------------------------------------
+       SUBSTITUIR: <div class="sobre__foto-placeholder"> por
+       <img class="sobre__foto" src="sobre.jpg" alt="Glória Ellen com câmera
+       ao amanhecer" /> (mesma proporção 4:5).
+       ======================================================================= -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre__grid">
+      <div class="sobre__texto">
+        <span class="eyebrow">Sobre</span>
+        <h2 class="sobre__titulo">Fotografo o que sussurra.</h2>
+        <p>Escuta antes do clique. A luz do amanhecer, o vento no cabelo, o silêncio antes do movimento.</p>
+        <p>Trabalho no litoral catarinense — mar, mata, casas simples, gente que respira devagar. Meu método é lento por escolha: contemplo antes de reagir, e traduzo em imagem o que a pressa não vê.</p>
+        <p>Cada ensaio é um capítulo de um diário visual. Grão de filme, luz natural, presença. Nada de performance. Nada de pose forçada. A câmera respira comigo — e com quem está do outro lado.</p>
+        <p>Se algo aqui te tocou, me chama. Escrevo de volta em até 24h.</p>
+        <span class="sobre__assinatura" aria-hidden="true">Glória</span>
+      </div>
+
+      <div class="sobre__foto-placeholder" role="img" aria-label="Retrato de Glória Ellen em luz natural (foto a inserir)"></div>
+    </div>
+  </section>
+
+
+  <!-- =======================================================================
+       C · PORTFÓLIO — grid 3x3
+       ---------------------------------------------------------------------
+       SUBSTITUIR: cada <div class="portfolio-item"> pode receber uma
+       <img class="portfolio-item__foto" src="ensaio-01.jpg" alt="..." />
+       antes do <span>. Ajustar em CSS: .portfolio-item__foto { position:
+       absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+       ======================================================================= -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <header class="portfolio__cabecalho">
+        <span class="eyebrow">Ensaios</span>
+        <h2 class="portfolio__titulo">Um recorte do trabalho</h2>
+      </header>
+
+      <div class="portfolio__grid">
+        <article class="portfolio-item portfolio-item--1" role="img" aria-label="Ensaio Praia Central (foto a inserir)">
+          <span class="portfolio-item__label">Ensaio · Praia Central</span>
+        </article>
+        <article class="portfolio-item portfolio-item--2" role="img" aria-label="Ensaio Manhã na mata (foto a inserir)">
+          <span class="portfolio-item__label">Ensaio · Manhã na mata</span>
+        </article>
+        <article class="portfolio-item portfolio-item--3" role="img" aria-label="Ensaio Balneário ao amanhecer (foto a inserir)">
+          <span class="portfolio-item__label">Ensaio · Balneário ao amanhecer</span>
+        </article>
+        <article class="portfolio-item portfolio-item--4" role="img" aria-label="Ensaio Casa de vidro (foto a inserir)">
+          <span class="portfolio-item__label">Ensaio · Casa de vidro</span>
+        </article>
+        <article class="portfolio-item portfolio-item--5" role="img" aria-label="Ensaio Ilha dos Ratones (foto a inserir)">
+          <span class="portfolio-item__label">Ensaio · Ilha dos Ratones</span>
+        </article>
+        <article class="portfolio-item portfolio-item--6" role="img" aria-label="Ensaio Família na areia (foto a inserir)">
+          <span class="portfolio-item__label">Ensaio · Família na areia</span>
+        </article>
+        <article class="portfolio-item portfolio-item--7" role="img" aria-label="Ensaio Bosque de eucaliptos (foto a inserir)">
+          <span class="portfolio-item__label">Ensaio · Bosque de eucaliptos</span>
+        </article>
+        <article class="portfolio-item portfolio-item--8" role="img" aria-label="Ensaio Cais de Itajaí (foto a inserir)">
+          <span class="portfolio-item__label">Ensaio · Cais de Itajaí</span>
+        </article>
+        <article class="portfolio-item portfolio-item--9" role="img" aria-label="Ensaio Retrato em janela (foto a inserir)">
+          <span class="portfolio-item__label">Ensaio · Retrato em janela</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =======================================================================
+       D · ESTREIA NO VALE — capítulo temporal da campanha
+       ---------------------------------------------------------------------
+       Bloco temporal. Após 14/07/2026 esta seção some ou vira arquivo,
+       conforme guia-de-estilo §16.
+       ======================================================================= -->
+  <section class="estreia" id="estreia">
+    <div class="container estreia__inner">
+      <span class="eyebrow eyebrow--on-dark">Estreia no Vale · 03–14 · 07 · 2026</span>
+      <h2 class="estreia__titulo">12 dias no vale.</h2>
+      <p class="estreia__texto">
+        Cheguei ao litoral. Nos próximos 12 dias, abro 12 vagas na agenda pra ensaios
+        autorais no vale e na praia. Preço de estreia até 14/07 — depois volta ao valor
+        da tabela. Se algo aqui te tocou, me chama.
+      </p>
+      <a href="#contato" class="convite convite--on-dark">Agendar sessão →</a>
+    </div>
+  </section>
+
+
+  <!-- =======================================================================
+       E · CONTATO
+       ---------------------------------------------------------------------
+       SUBSTITUIR: e-mail em action="mailto:...", perfil de Instagram no
+       rodapé, WhatsApp na coluna de dados.
+       ======================================================================= -->
+  <section class="contato" id="contato">
+    <div class="container contato__grid">
+      <div class="contato__texto-bloco">
+        <span class="eyebrow">Contato</span>
+        <h2 class="contato__titulo">Vamos conversar.</h2>
+        <p class="contato__texto">
+          Direct aberto. Escrevo de volta em até 24 horas — sempre pelo mesmo canal
+          em que você chegou.
+        </p>
+        <div class="contato__dados">
+          Litoral Catarinense · Brasil<br />
+          <a href="mailto:contato@gloriaellen.com">contato@gloriaellen.com</a><br />
+          <a href="https://instagram.com/gloriaellen" target="_blank" rel="noopener">@gloriaellen</a>
+        </div>
+      </div>
+
+      <form class="form" action="mailto:contato@gloriaellen.com" method="post" enctype="text/plain" novalidate>
+        <div class="form__campo">
+          <label class="form__label" for="campo-nome">Nome</label>
+          <input class="form__input" id="campo-nome" name="nome" type="text" required autocomplete="name" />
+        </div>
+        <div class="form__campo">
+          <label class="form__label" for="campo-email">E-mail</label>
+          <input class="form__input" id="campo-email" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="form__campo">
+          <label class="form__label" for="campo-mensagem">Mensagem</label>
+          <textarea class="form__textarea" id="campo-mensagem" name="mensagem" rows="5" placeholder="Me conta o que você tá imaginando — é ensaio, book, algo em família?" required></textarea>
+        </div>
+        <button class="form__botao" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- =======================================================================
+       RODAPÉ
+       ======================================================================= -->
+  <footer class="rodape">
+    <div class="container rodape__inner">
+      <a href="#topo" class="rodape__logo" aria-label="Glória Ellen · voltar ao início">
+        <img src="../logo/logo-ink.svg" alt="Glória Ellen" />
+      </a>
+      <span class="rodape__tagline">Fotógrafa autoral · Litoral Catarinense</span>
+      <ul class="rodape__links" role="list">
+        <li><a href="https://instagram.com/gloriaellen" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="rodape__copy">
+        © 2026 Glória Ellen · Todos os direitos reservados
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

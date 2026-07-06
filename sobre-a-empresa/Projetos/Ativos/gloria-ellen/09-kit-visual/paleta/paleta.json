@@ -1,0 +1,110 @@
+{
+  "$description": "Paleta de cores da marca Glória Ellen — sete cores principais + escala de neutros (ink e creme). Cada cor vem com hex, rgb, hsl, nome poético e uso recomendado. Fonte 1:1 do brandbook v1.0.",
+  "$version": "1.0",
+
+  "primarias": {
+    "mar": {
+      "hex": "#3D5A6C",
+      "rgb": [61, 90, 108],
+      "hsl": [204, 28, 33],
+      "nome": "Azul-mar ao amanhecer",
+      "uso": "Primária. Textos-chave, botões primários, cartões invertidos, elementos que carregam a identidade. É a cor-âncora."
+    },
+    "mar-profundo": {
+      "hex": "#2A4152",
+      "rgb": [42, 65, 82],
+      "hsl": [206, 32, 24],
+      "nome": "Azul-mar profundo",
+      "uso": "Escala escura da primária. Hovers, estados pressed, texto de destaque em cartões creme."
+    },
+    "verde-arvores": {
+      "hex": "#6B7F5C",
+      "rgb": [107, 127, 92],
+      "hsl": [90, 16, 43],
+      "nome": "Verde-árvores em silêncio",
+      "uso": "Secundária. Cartões de pertencimento, blocos de contemplação, alternativa temática ao mar."
+    },
+    "verde-arvores-profundo": {
+      "hex": "#4E6142",
+      "rgb": [78, 97, 66],
+      "hsl": [96, 19, 32],
+      "nome": "Verde-mata profundo",
+      "uso": "Escala escura da secundária. Hovers e pressed em botões verdes."
+    },
+    "bege-areia": {
+      "hex": "#DDD0B5",
+      "rgb": [221, 208, 181],
+      "hsl": [39, 35, 79],
+      "nome": "Bege-areia ao sol da manhã",
+      "uso": "Superfície de aconchego. Papel do cartão, cartões terrosos, moldura de galeria. Marca d'água sobre foto escura."
+    },
+    "dourado-amanhecer": {
+      "hex": "#C7A876",
+      "rgb": [199, 168, 118],
+      "hsl": [37, 42, 62],
+      "nome": "Dourado do amanhecer",
+      "uso": "Accent. Selos, molduras, bullet points, elementos de destaque quente. Sol nascendo."
+    },
+    "rosa-alvorada": {
+      "hex": "#E3B8A1",
+      "rgb": [227, 184, 161],
+      "hsl": [21, 55, 76],
+      "nome": "Rosa da alvorada",
+      "uso": "Accent raro. Céu que clareia. Usar com parcimônia — nunca dominante. Detalhes em gradientes de amanhecer."
+    }
+  },
+
+  "neutros": {
+    "creme": {
+      "hex": "#FAF5EC",
+      "rgb": [250, 245, 236],
+      "hsl": [39, 61, 95],
+      "nome": "Creme (papel de livro)",
+      "uso": "Fundo principal. Sustenta 80% das peças com o texto ink. Não é branco puro — tem calor."
+    },
+    "creme-quente": {
+      "hex": "#F0E7D0",
+      "rgb": [240, 231, 208],
+      "hsl": [43, 55, 88],
+      "nome": "Creme quente",
+      "uso": "Fundo de cartão sobre creme. Blocos de destaque calmo. Sub-superfície de leitura."
+    },
+    "ink": {
+      "hex": "#2A2B27",
+      "rgb": [42, 43, 39],
+      "hsl": [60, 5, 16],
+      "nome": "Ink (tinta com terra)",
+      "uso": "Texto principal. Títulos, corpo forte. Não é preto puro — tem terra. Preferir sempre ao #000."
+    },
+    "ink-soft": {
+      "hex": "#5C5A50",
+      "rgb": [92, 90, 80],
+      "hsl": [50, 7, 34],
+      "nome": "Ink soft",
+      "uso": "Texto de parágrafo. Leitura longa. Segundo nível de hierarquia."
+    },
+    "ink-mute": {
+      "hex": "#8B8478",
+      "rgb": [139, 132, 120],
+      "hsl": [38, 8, 51],
+      "nome": "Ink mute",
+      "uso": "Texto de apoio. Eyebrows, metadados, legendas, marcações discretas. Terceiro nível."
+    }
+  },
+
+  "regras": {
+    "par-canonico": "creme (#FAF5EC) + ink (#2A2B27) sustentam 80% das peças. As outras entram como respiração.",
+    "textura-obrigatoria": "Grão de filme sutil (opacity 0.35, mix-blend-mode multiply) por cima de qualquer fundo grande. Assinatura tátil da marca.",
+    "gradiente-permitido": "Apenas o gradiente-amanhecer: #F0E7D0 → #E3B8A1 → #C7A876 → #6B7F5C → #3D5A6C. Nenhum outro gradiente entra.",
+    "cores-banidas": [
+      "Roxo puro (ex.: #8B3FBF) — grita, força espiritualidade estética.",
+      "Laranja vibrante (ex.: #FF6A1F) — energia comercial, urgência falsa.",
+      "Vermelho puro (ex.: #FF2E4D) — rompe a quietude.",
+      "Rosa chiclete (ex.: #FF61C6) — vira caricatura.",
+      "Amarelo neon (ex.: #F4E000) — ostentação.",
+      "Ciano/neon (ex.: #00E9C6) — estética tech, oposta ao amanhecer.",
+      "Gradientes vibrantes multi-cor.",
+      "Preto puro (#000) — preferir sempre ink #2A2B27."
+    ]
+  }
+}

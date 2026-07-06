@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="titulo">
+  <title id="titulo">Paleta Glória Ellen</title>
+  <desc>Sete cores da paleta oficial da marca Glória Ellen dispostas em grid, sobre fundo creme.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&amp;family=Inter:wght@300;400&amp;display=swap');
+
+      .fundo-creme { fill: #FAF5EC; }
+
+      /* v1.1 · título "Glória Ellen" em Cormorant Garamond Italic Light 300 (Direção A). */
+      .titulo-marca {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 84px;
+        letter-spacing: -0.01em;
+        fill: #2A2B27;
+      }
+      .subtitulo {
+        font-family: 'Inter', Arial, sans-serif;
+        font-size: 11px;
+        font-weight: 300;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        fill: #8B8478;
+      }
+
+      .swatch-nome {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+      }
+      .swatch-hex {
+        font-family: 'Inter', Arial, sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        font-weight: 400;
+      }
+      .swatch-desc {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 13px;
+      }
+
+      .texto-claro { fill: #FAF5EC; }
+      .texto-claro-soft { fill: rgba(250,245,236,0.78); }
+      .texto-escuro { fill: #2A2B27; }
+      .texto-escuro-soft { fill: #5C5A50; }
+
+      .assinatura-rodape {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 12px;
+        fill: #8B8478;
+      }
+    ]]></style>
+
+    <!-- Grão de filme como assinatura tátil -->
+    <filter id="grao" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="2"/>
+      <feColorMatrix values="0 0 0 0 0.17  0 0 0 0 0.17  0 0 0 0 0.15  0 0 0 0.14 0"/>
+    </filter>
+  </defs>
+
+  <!-- Fundo creme -->
+  <rect class="fundo-creme" width="1200" height="800"/>
+
+  <!-- Cabeçalho -->
+  <text x="600" y="80" text-anchor="middle" class="subtitulo">Paleta oficial · v1.0</text>
+  <text x="600" y="150" text-anchor="middle" class="titulo-marca">Glória Ellen</text>
+
+  <!-- ============================================================
+       Grid 4x2 · 7 swatches + 1 slot para "regra do par canônico"
+       Cada swatch: 220 x 240
+       Margem lateral: 60px
+       Gap: (1200 - 120 - 4*220)/3 = 66.67 → arredondado 66/67
+       Y linha 1: 210
+       Y linha 2: 480
+       ============================================================ -->
+
+  <!-- LINHA 1 -->
+
+  <!-- 1. Azul-mar -->
+  <g transform="translate(60, 210)">
+    <rect width="220" height="240" rx="4" fill="#3D5A6C"/>
+    <text x="20" y="180" class="swatch-nome texto-claro">Azul-mar</text>
+    <text x="20" y="205" class="swatch-hex texto-claro-soft">#3D5A6C</text>
+    <text x="20" y="225" class="swatch-desc texto-claro-soft">O mar ao romper do dia</text>
+  </g>
+
+  <!-- 2. Verde-árvores -->
+  <g transform="translate(346, 210)">
+    <rect width="220" height="240" rx="4" fill="#6B7F5C"/>
+    <text x="20" y="180" class="swatch-nome texto-claro">Verde-árvores</text>
+    <text x="20" y="205" class="swatch-hex texto-claro-soft">#6B7F5C</text>
+    <text x="20" y="225" class="swatch-desc texto-claro-soft">Mata em silêncio</text>
+  </g>
+
+  <!-- 3. Bege-areia -->
+  <g transform="translate(633, 210)">
+    <rect width="220" height="240" rx="4" fill="#DDD0B5" stroke="rgba(42,43,39,0.10)" stroke-width="1"/>
+    <text x="20" y="180" class="swatch-nome texto-escuro">Bege-areia</text>
+    <text x="20" y="205" class="swatch-hex texto-escuro-soft">#DDD0B5</text>
+    <text x="20" y="225" class="swatch-desc texto-escuro-soft">Areia seca ao sol da manhã</text>
+  </g>
+
+  <!-- 4. Dourado-amanhecer -->
+  <g transform="translate(920, 210)">
+    <rect width="220" height="240" rx="4" fill="#C7A876"/>
+    <text x="20" y="180" class="swatch-nome texto-escuro">Dourado-amanhecer</text>
+    <text x="20" y="205" class="swatch-hex texto-escuro-soft">#C7A876</text>
+    <text x="20" y="225" class="swatch-desc texto-escuro-soft">Sol do amanhecer</text>
+  </g>
+
+  <!-- LINHA 2 -->
+
+  <!-- 5. Rosa-alvorada -->
+  <g transform="translate(60, 480)">
+    <rect width="220" height="240" rx="4" fill="#E3B8A1"/>
+    <text x="20" y="180" class="swatch-nome texto-escuro">Rosa-alvorada</text>
+    <text x="20" y="205" class="swatch-hex texto-escuro-soft">#E3B8A1</text>
+    <text x="20" y="225" class="swatch-desc texto-escuro-soft">Céu que clareia · uso raro</text>
+  </g>
+
+  <!-- 6. Creme -->
+  <g transform="translate(346, 480)">
+    <rect width="220" height="240" rx="4" fill="#FAF5EC" stroke="rgba(42,43,39,0.10)" stroke-width="1"/>
+    <text x="20" y="180" class="swatch-nome texto-escuro">Creme</text>
+    <text x="20" y="205" class="swatch-hex texto-escuro-soft">#FAF5EC</text>
+    <text x="20" y="225" class="swatch-desc texto-escuro-soft">Fundo principal · papel do cartão</text>
+  </g>
+
+  <!-- 7. Ink -->
+  <g transform="translate(633, 480)">
+    <rect width="220" height="240" rx="4" fill="#2A2B27"/>
+    <text x="20" y="180" class="swatch-nome texto-claro">Ink</text>
+    <text x="20" y="205" class="swatch-hex texto-claro-soft">#2A2B27</text>
+    <text x="20" y="225" class="swatch-desc texto-claro-soft">Tinta com terra · não é preto puro</text>
+  </g>
+
+  <!-- 8. Gradiente-amanhecer (única exceção de gradiente permitido) -->
+  <g transform="translate(920, 480)">
+    <defs>
+      <linearGradient id="gradAmanhecer" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%"   stop-color="#F0E7D0"/>
+        <stop offset="35%"  stop-color="#E3B8A1"/>
+        <stop offset="60%"  stop-color="#C7A876"/>
+        <stop offset="85%"  stop-color="#6B7F5C"/>
+        <stop offset="100%" stop-color="#3D5A6C"/>
+      </linearGradient>
+    </defs>
+    <rect width="220" height="240" rx="4" fill="url(#gradAmanhecer)"/>
+    <text x="20" y="180" class="swatch-nome texto-claro">Amanhecer</text>
+    <text x="20" y="205" class="swatch-hex texto-claro-soft">gradiente único</text>
+    <text x="20" y="225" class="swatch-desc texto-claro-soft">Do céu ao mar profundo</text>
+  </g>
+
+  <!-- Rodapé -->
+  <text x="600" y="770" text-anchor="middle" class="assinatura-rodape">creme + ink sustentam 80% das peças · as demais entram como respiração</text>
+
+  <!-- Grão de filme por cima de tudo -->
+  <rect width="1200" height="800" filter="url(#grao)" opacity="0.35" style="mix-blend-mode: multiply;"/>
+</svg>

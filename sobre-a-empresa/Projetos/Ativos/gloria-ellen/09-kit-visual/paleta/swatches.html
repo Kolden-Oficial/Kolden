@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glória Ellen — Paleta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --creme: #FAF5EC;
+    --creme-quente: #F0E7D0;
+    --bege-areia: #DDD0B5;
+    --dourado: #C7A876;
+    --rosa: #E3B8A1;
+    --mar: #3D5A6C;
+    --mar-profundo: #2A4152;
+    --verde: #6B7F5C;
+    --verde-profundo: #4E6142;
+    --ink: #2A2B27;
+    --ink-soft: #5C5A50;
+    --ink-mute: #8B8478;
+    --linha: rgba(42, 43, 39, 0.10);
+    --sombra: 0 4px 30px rgba(42, 43, 39, 0.06);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    background: var(--creme);
+    color: var(--ink);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    padding: 64px 32px;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  /* Grão de filme — assinatura tátil */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 200;
+    opacity: 0.35;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='2'/><feColorMatrix values='0 0 0 0 0.17  0 0 0 0 0.17  0 0 0 0 0.15  0 0 0 0.14 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  .wrapper { max-width: 1200px; margin: 0 auto; }
+
+  header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    color: var(--ink-mute);
+    margin-bottom: 24px;
+    font-weight: 300;
+  }
+  /* v1.1 · título em Cormorant Garamond Italic Light 300 (Direção A do brandbook). */
+  h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(3rem, 6vw, 5.4rem);
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+  header p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--ink-soft);
+    font-size: 1.2rem;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .grupo-titulo {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--mar-profundo);
+    margin: 48px 0 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--linha);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .grid { grid-template-columns: 1fr; } }
+
+  .swatch {
+    aspect-ratio: 1 / 1.25;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: var(--sombra);
+    position: relative;
+    font-family: 'Inter', sans-serif;
+  }
+  .swatch.borda { border: 1px solid var(--linha); }
+  .swatch.escuro { color: var(--creme); }
+  .swatch.claro { color: var(--ink); }
+
+  .swatch .nome {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+  .swatch .hex {
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    opacity: 0.85;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .swatch .desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    line-height: 1.35;
+  }
+  .swatch .uso {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-top: 8px;
+  }
+
+  /* Cor específica dos backgrounds */
+  .bg-mar { background: var(--mar); }
+  .bg-verde { background: var(--verde); }
+  .bg-bege { background: var(--bege-areia); }
+  .bg-dourado { background: var(--dourado); }
+  .bg-rosa { background: var(--rosa); }
+  .bg-creme { background: var(--creme); }
+  .bg-creme-quente { background: var(--creme-quente); }
+  .bg-ink { background: var(--ink); }
+  .bg-ink-soft { background: var(--ink-soft); }
+  .bg-ink-mute { background: var(--ink-mute); }
+
+  .gradiente-amanhecer {
+    aspect-ratio: 3/1;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #F0E7D0 0%, #E3B8A1 35%, #C7A876 60%, #6B7F5C 85%, #3D5A6C 100%);
+    box-shadow: var(--sombra);
+    display: flex;
+    align-items: flex-end;
+    padding: 24px;
+    color: var(--creme);
+    margin-top: 24px;
+  }
+  .gradiente-amanhecer .nome {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.6rem;
+  }
+  .gradiente-amanhecer .uso {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-top: 4px;
+  }
+
+  .regra {
+    margin-top: 64px;
+    padding: 32px;
+    background: var(--creme-quente);
+    border-radius: 8px;
+    border-left: 3px solid var(--dourado);
+  }
+  .regra strong {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    display: block;
+    margin-bottom: 12px;
+  }
+  .regra p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--ink);
+    line-height: 1.4;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid var(--linha);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <header>
+    <div class="eyebrow">Paleta oficial · v1.0</div>
+    <h1>Glória Ellen</h1>
+    <p>Cores da praia ao amanhecer. Três primárias que se levantam juntas em cada foto do litoral, mais os neutros que sustentam a leitura.</p>
+  </header>
+
+  <h2 class="grupo-titulo">Primárias</h2>
+  <div class="grid">
+    <div class="swatch escuro bg-mar">
+      <div class="nome">Azul-mar</div>
+      <div class="hex">#3D5A6C</div>
+      <div class="desc">O mar ao romper do dia. Contemplação, profundidade.</div>
+      <div class="uso">Cor-âncora</div>
+    </div>
+    <div class="swatch escuro bg-verde">
+      <div class="nome">Verde-árvores</div>
+      <div class="hex">#6B7F5C</div>
+      <div class="desc">Mata em silêncio. Serenidade, enraizamento.</div>
+      <div class="uso">Secundária</div>
+    </div>
+    <div class="swatch claro bg-bege">
+      <div class="nome">Bege-areia</div>
+      <div class="hex">#DDD0B5</div>
+      <div class="desc">Areia seca ao sol da manhã. Calor, aconchego.</div>
+      <div class="uso">Superfície quente</div>
+    </div>
+    <div class="swatch claro bg-dourado">
+      <div class="nome">Dourado-amanhecer</div>
+      <div class="hex">#C7A876</div>
+      <div class="desc">Sol nascendo. Accent quente para selos e molduras.</div>
+      <div class="uso">Accent</div>
+    </div>
+  </div>
+
+  <h2 class="grupo-titulo">Accent raro e neutros</h2>
+  <div class="grid">
+    <div class="swatch claro bg-rosa">
+      <div class="nome">Rosa-alvorada</div>
+      <div class="hex">#E3B8A1</div>
+      <div class="desc">Céu que clareia. Nunca dominante, sempre detalhe.</div>
+      <div class="uso">Uso raro</div>
+    </div>
+    <div class="swatch claro borda bg-creme">
+      <div class="nome">Creme</div>
+      <div class="hex">#FAF5EC</div>
+      <div class="desc">Papel do cartão. Fundo de 80% das peças.</div>
+      <div class="uso">Fundo principal</div>
+    </div>
+    <div class="swatch claro borda bg-creme-quente">
+      <div class="nome">Creme quente</div>
+      <div class="hex">#F0E7D0</div>
+      <div class="desc">Sub-superfície de leitura. Cartões sobre creme.</div>
+      <div class="uso">Fundo cartão</div>
+    </div>
+    <div class="swatch escuro bg-ink">
+      <div class="nome">Ink</div>
+      <div class="hex">#2A2B27</div>
+      <div class="desc">Tinta com terra. Não é preto puro.</div>
+      <div class="uso">Texto principal</div>
+    </div>
+  </div>
+
+  <h2 class="grupo-titulo">Escala de ink</h2>
+  <div class="grid">
+    <div class="swatch escuro bg-ink">
+      <div class="nome">Ink</div>
+      <div class="hex">#2A2B27</div>
+      <div class="desc">Títulos e corpo forte.</div>
+      <div class="uso">Nível 1</div>
+    </div>
+    <div class="swatch escuro bg-ink-soft">
+      <div class="nome">Ink soft</div>
+      <div class="hex">#5C5A50</div>
+      <div class="desc">Parágrafo, leitura longa.</div>
+      <div class="uso">Nível 2</div>
+    </div>
+    <div class="swatch escuro bg-ink-mute">
+      <div class="nome">Ink mute</div>
+      <div class="hex">#8B8478</div>
+      <div class="desc">Eyebrow, metadado, legenda.</div>
+      <div class="uso">Nível 3</div>
+    </div>
+    <div class="swatch escuro" style="background: linear-gradient(90deg, #2A2B27 0%, #2A2B27 33%, #5C5A50 33%, #5C5A50 66%, #8B8478 66%, #8B8478 100%);">
+      <div class="nome">Hierarquia</div>
+      <div class="hex" style="opacity:0.85;">Os três em conversa</div>
+      <div class="desc">Título → corpo → legenda. Ler é respirar.</div>
+      <div class="uso">Sistema</div>
+    </div>
+  </div>
+
+  <div class="gradiente-amanhecer">
+    <div>
+      <div class="nome">Gradiente-amanhecer</div>
+      <div class="uso">Único gradiente permitido · creme→rosa→dourado→verde→mar</div>
+    </div>
+  </div>
+
+  <div class="regra">
+    <strong>Regra do par canônico</strong>
+    <p>Creme (#FAF5EC) + Ink (#2A2B27) sustentam 80% das peças. As demais cores entram como respiração — nunca como grito.</p>
+  </div>
+
+  <footer>
+    Kit visual · v1.0 · 2026 · Litoral Catarinense
+  </footer>
+
+</div>
+
+</body>
+</html>
