@@ -142,7 +142,7 @@ padroes:
       cláusula de promoção condicional (gatilho = 2º cliente adota → mover para Dedalo/mcp/<x>/
       via ADR-N + atualização de `claude mcp add` + atualização de registro; passa por Caos +
       aprovação Ronan). Evita generalização prematura enquanto preserva rota clara de canonização.
-    evidencia: ["iris (MCP Solomon 2026-07-01) — cliente Rosie como primeiro; path em sobre-a-empresa/Projetos/Rosie/mcp-solomon/ com ADR 0001 formalizando decisão + cláusula de promoção"]
+    evidencia: ["iris (MCP Solomon 2026-07-01) — cliente Rosie como primeiro; path em sobre-a-empresa/projetos/rosie/mcp-solomon/ com ADR 0001 formalizando decisão + cláusula de promoção"]
     recomendacao: "Ao criar MCP para 1 cliente único, considere path cliente-scoped + ADR de promoção condicional. Registrar em registro-de-entidades.yaml com `cliente_origem` + `promocao_para_dedalo` claros. Só canonize em Dedalo/mcp/ quando o 2º cliente concreto pedir."
     registradoEm: "2026-07-01T18:38:00Z"
 

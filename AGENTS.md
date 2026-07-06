@@ -43,10 +43,10 @@ Na **subida**, a **`Dike/`** (verificador) reconcilia a entrega contra o lacre e
 - `glossario.md` · `faq.md`
 
 ### 📁 Projetos/ — produtos e iniciativas
-Novos projetos seguem o template `Projetos/_modelo-projeto/` (leia-me, prd, arquitetura, decisoes, status).
-**Cliente × projeto:** o dossiê do cliente (em `sobre-a-empresa/clientes/`) é a **inteligência de negócio** (contrato, ICP, metas); o projeto aqui é a **execução** (brandbook, pesquisa, código). Os dois se cruzam por frontmatter: `workspace_projeto` (no dossiê) ↔ `dossie_cliente` (no `leia-me.md` do projeto). Ao trabalhar num projeto de cliente, comece pelo dossiê para o contexto de negócio. Índice de quem tem projeto: `sobre-a-empresa/clientes/README.md`.
+Novos projetos seguem o template `projetos/_modelo/` (leia-me, prd, arquitetura, decisoes, status).
+**Cliente × projeto:** o dossiê do cliente (em `sobre-a-empresa/clientes/`) é a **inteligência de negócio** (contrato, ICP, metas); o projeto aqui é a **execução** (brandbook, pesquisa, código). Os dois se cruzam por frontmatter: `workspace_projeto` (no dossiê) ↔ `dossie_cliente` (no `leia-me.md` do projeto). Ao trabalhar num projeto de cliente, comece pelo dossiê para o contexto de negócio. Índice de quem tem projeto: `sobre-a-empresa/projetos/_indice-antigo-clientes.md`.
 - `Projetos/omiron/` — app de monitoramento terapêutico (Next.js 15, TypeScript, Prisma, Supabase). Tem `CLAUDE.md` e `AGENTS.md` próprios.
-- `Projetos/CataLogo/` — plataforma **Tracker Flow** de rastreamento de conversões e integrações S2S (Meta CAPI, TikTok, GHL, GA4) (React 18 + Vite, Supabase, shadcn/ui, Tailwind).
+- `projetos/catalogo/` — plataforma **Tracker Flow** de rastreamento de conversões e integrações S2S (Meta CAPI, TikTok, GHL, GA4) (React 18 + Vite, Supabase, shadcn/ui, Tailwind).
 - `Projetos/sprints/` — registro de sprints.
 
 ### 🤖 Agentes e infraestrutura (pastas que existem)

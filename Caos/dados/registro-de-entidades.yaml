@@ -583,7 +583,7 @@ entidades:
     complemento: "MCP Íris (custom Kolden, tipo:mcp id:iris) para ingestion write-only via API pública (POST /order + POST /product). Os dois MCPs cobrem escopos distintos: oficial=leitura conversacional; Íris=ingestion programática server-to-server."
 
   iris:
-    path: "sobre-a-empresa/Projetos/Rosie/mcp-solomon/"
+    path: "sobre-a-empresa/projetos/rosie/mcp-solomon/"
     tipo: mcp
     dominio: dados
     proposito: "Servidor MCP COMPLEMENTAR (write-only) em Node/TS que expõe a API pública Solomon (admin-api.solomon.com.br) para agentes Kolden — cria/atualiza pedidos e produtos, sincroniza catálogos em lote e valida conta. Cobre o que o MCP oficial da Solomon NÃO cobre: ingestion programática server-to-server via Bearer token (não OAuth interativo). Primeira instância cliente-scoped (Rosie); promoção condicional para Dedalo/mcp/solomon/ se 2º cliente adotar."
@@ -592,7 +592,7 @@ entidades:
     dependencias: [mcp-builder, solomon-oficial]
     adaptabilidade:
       score: 0.75
-      restricoes: ["API Solomon rate limits (não declarados)", "chave por loja (companyId)", "v1 write-only — leitura NÃO é atribuição do Íris, mora no MCP oficial (solomon-oficial)", "path cliente-scoped em Projetos/Rosie/ (não canônico Dedalo/mcp/)"]
+      restricoes: ["API Solomon rate limits (não declarados)", "chave por loja (companyId)", "v1 write-only — leitura NÃO é atribuição do Íris, mora no MCP oficial (solomon-oficial)", "path cliente-scoped em projetos/rosie/ (não canônico Dedalo/mcp/)"]
       pontosDeExtensao: ["adicionar registrar_webhook quando Solomon emitir webhooks", "promover para Dedalo/mcp/solomon-ingestion/ se 2º cliente adotar (ADR 0003)"]
     versao: "0.1.0"
     criadoEm: "2026-07-01T18:38:00Z"
