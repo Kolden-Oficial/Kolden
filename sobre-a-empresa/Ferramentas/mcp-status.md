@@ -37,7 +37,7 @@ Estado final dos servidores MCP (`claude mcp list`). Atualizado em 2026-06-24.
 | synter | dev | npx @synterai/mcp-server |
 | v0 | dev | mcp-remote + header `${V0_API_TOKEN}` — ✅ token reemitido e válido |
 | upstash | prod | npx @upstash/mcp-server `--email adm@kolden.com.br` (key via env, sem bash) |
-| **iris (mcp-iris)** | prod | **custom Kolden** (Ritual do Caos 2026-07-01, maturity 10.0/10). Server para API Solomon, cliente-scoped Rosie. Path: `sobre-a-empresa/Projetos/Rosie/mcp-solomon/dist/index.js`. Requer também `SOLOMON_COMPANY_ID_ROSIE` no env (público). v1 write-only (4 tools). |
+| **iris (mcp-iris)** | prod | **custom Kolden** (Ritual do Caos 2026-07-01, maturity 10.0/10). Server para API Solomon, cliente-scoped Rosie. Path: `sobre-a-empresa/projetos/rosie/mcp-solomon/dist/index.js`. Requer também `SOLOMON_COMPANY_ID_ROSIE` no env (público). v1 write-only (4 tools). |
 
 **Remoto HTTP + OAuth interativo — 1:**
 

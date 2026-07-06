@@ -41,7 +41,7 @@ Mapeamento de **todas as ferramentas/APIs/plataformas/MCPs citadas** pelos squad
 | **Amplitude** | ➕ Adicionar | `/kolden/prod/AMPLITUDE_API_KEY` | Metis |
 | **Hotjar** | ➕ Adicionar | `/kolden/prod/HOTJAR_*` | Metis, Harmonia |
 | **SEMrush / SimilarWeb** | ➕ Adicionar (SEO/concorrência) | `/kolden/prod/SEMRUSH_API_KEY` | Metis |
-| CataLogo (tracking interno) | ✅ (projeto interno em `Projetos/CataLogo`) | — | Metis, Peitho |
+| CataLogo (tracking interno) | ✅ (projeto interno em `projetos/catalogo`) | — | Metis, Peitho |
 
 ## 🎨 Design / Web (Harmonia)
 

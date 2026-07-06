@@ -41,69 +41,69 @@ excluidos:
 notebooks:
   - titulo: "01 | Affordable Insulation"
     fontes: 31
-    destino: "sobre-a-empresa/clientes/ativos/affordable-insulation/_notebooklm"
+    destino: "sobre-a-empresa/projetos/affordable-insulation/_notebooklm"
     categoria: cliente-ativo
 
   - titulo: "02 | Brayan’s Finish"
     fontes: 12
-    destino: "sobre-a-empresa/clientes/ativos/brayans-finish/_notebooklm"
+    destino: "sobre-a-empresa/projetos/brayans-finish/_notebooklm"
     categoria: cliente-ativo
 
   - titulo: "03 | Revolution Pro"
     fontes: 5
-    destino: "sobre-a-empresa/clientes/ativos/revolution-pro/_notebooklm"
+    destino: "sobre-a-empresa/projetos/revolution-pro/_notebooklm"
     categoria: cliente-ativo
 
   - titulo: "04 | Mat3vic"
     fontes: 5
-    destino: "sobre-a-empresa/clientes/ativos/mat3vic/_notebooklm"
+    destino: "sobre-a-empresa/projetos/mat3vic/_notebooklm"
     categoria: cliente-ativo
 
   - titulo: "05 | Vilela Construction"
     fontes: 5
-    destino: "sobre-a-empresa/clientes/ativos/vilela-construction/_notebooklm"
+    destino: "sobre-a-empresa/projetos/vilela-construction/_notebooklm"
     categoria: cliente-ativo
 
   - titulo: "08 | Clinica Omiron"
     fontes: 17
-    destino: "sobre-a-empresa/clientes/ativos/clinica-omiron/_notebooklm"
+    destino: "sobre-a-empresa/projetos/omiron/_notebooklm"
     categoria: cliente-ativo
 
   - titulo: "08 | Clinica Omiron Projeto Omiron: Aplicativo de Monitoramento e Cuidado Psiquiátrico"
     fontes: 5
-    destino: "sobre-a-empresa/clientes/ativos/clinica-omiron/_notebooklm"
+    destino: "sobre-a-empresa/projetos/omiron/_notebooklm"
     categoria: cliente-ativo
     # NOTA: mesmo destino do anterior — fundir. fonte_notebook no frontmatter distingue.
 
   - titulo: "12 | CataLogo"
     fontes: 25
-    destino: "sobre-a-empresa/clientes/ativos/catalogo/_notebooklm"
+    destino: "sobre-a-empresa/projetos/catalogo/_notebooklm"
     categoria: cliente-ativo
 
   - titulo: "NutriOS Pro"
     fontes: 24
-    destino: "sobre-a-empresa/clientes/ativos/nutrios-pro/_notebooklm"
+    destino: "sobre-a-empresa/projetos/nutrios-pro/_notebooklm"
     categoria: cliente-ativo
 
   - titulo: "Stass"
     fontes: 9
-    destino: "sobre-a-empresa/clientes/ativos/stass/_notebooklm"
+    destino: "sobre-a-empresa/projetos/stass/_notebooklm"
     categoria: cliente-ativo
 
   # ─── CLIENTES INATIVOS ──────────────────────────────────────────────────────
   - titulo: "Pizzaria Margherita - Forno a Lenha"
     fontes: 11
-    destino: "sobre-a-empresa/clientes/inativos/pizzaria-margherita/_notebooklm"
+    destino: "sobre-a-empresa/projetos/pizzaria-margherita/_notebooklm"
     categoria: cliente-inativo
 
   - titulo: "Clube Fit Academia"
     fontes: 4
-    destino: "sobre-a-empresa/clientes/inativos/clube-fit/_notebooklm"
+    destino: "sobre-a-empresa/projetos/clube-fit/_notebooklm"
     categoria: cliente-inativo
 
   - titulo: "P17 - Precision Engineering"
     fontes: 16
-    destino: "sobre-a-empresa/clientes/inativos/p17-precision-engineering/_notebooklm"
+    destino: "sobre-a-empresa/projetos/p17-precision-engineering/_notebooklm"
     categoria: cliente-inativo
 
   # ─── INSTITUCIONAL KOLDEN ───────────────────────────────────────────────────
