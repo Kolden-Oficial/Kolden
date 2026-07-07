@@ -1,0 +1,139 @@
+# squad.yaml canônico Kolden — Prometeu
+# Manifesto do squad de Engenharia (Camada 5 Operacional METODO §3)
+# Sub-onda 3.1 do Contrato-mãe m-20260706-metodo-kolden (2026-07-07)
+
+squad_id: prometeu
+nome_mitico: "Prometeu (Προμηθεύς)"
+significado: "O titã que trouxe a tecnologia (o fogo) à humanidade"
+camada: 5  # Operacional
+grupo: "Engenharia"  # Prometeu · Dedalo · Egide
+
+tier_0:
+  agent_chief: prometeu-chief
+  path: ".claude/agents/prometeu-chief.md"
+
+tier_1:
+  # 12 aiox-agents especializados AIOX vendor
+  # PATH CANÔNICO AIOX: .aiox-core/development/agents/<id>/
+  # Sub-onda 3.2 cuidará da conformidade Kolden interna (respeitando path AIOX)
+  agents:
+    - id: aiox-master
+      persona: Orion
+      path: ".aiox-core/development/agents/aiox-master.md"
+    - id: analyst
+      persona: Alex
+      path: ".aiox-core/development/agents/analyst.md"
+    - id: architect
+      persona: Aria
+      path: ".aiox-core/development/agents/architect.md"
+    - id: data-engineer
+      persona: Dara
+      path: ".aiox-core/development/agents/data-engineer.md"
+    - id: dev
+      persona: Dex
+      path: ".aiox-core/development/agents/dev.md"
+    - id: devops
+      persona: Gage
+      path: ".aiox-core/development/agents/devops.md"
+    - id: pm
+      persona: Morgan
+      path: ".aiox-core/development/agents/pm.md"
+    - id: po
+      persona: Pax
+      path: ".aiox-core/development/agents/po.md"
+    - id: qa
+      persona: Quinn
+      path: ".aiox-core/development/agents/qa.md"
+    - id: sm
+      persona: River
+      path: ".aiox-core/development/agents/sm.md"
+    - id: squad-creator
+      persona: Craft
+      path: ".aiox-core/development/agents/squad-creator.md"
+    - id: ux-design-expert
+      persona: Uma
+      path: ".aiox-core/development/agents/ux-design-expert.md"
+
+external_handoffs:
+  - de: hermes
+    tipo: dispatch
+    canal: "@Prometeu"
+  - de: zeus
+    tipo: contrato-de-missao
+    canal: "Olimpo/contratos/missoes/*.yaml"
+  - de: hefesto
+    tipo: especificacao-tecnica-cto
+    canal: "Contrato de Missão"
+  - para: qualquer_squad_kolden
+    tipo: consumo-de-skill-publica
+    canal: "/spec-build-review, /mcp-builder, /orquestracao-de-comandos-slash, /checklist-runner, /tech-search, /briefing-padrao"
+
+fronteira_vendor_synkraai:
+  origem: "SynkraAI/aiox-core (commit 77265d5)"
+  importado_em: "2026-06-19"
+  procedencia: "Prometeu/_origem.md"
+  regra_invariante: |
+    Vendor AIOX (.aiox-core/**, bin/aiox.js, bin/aiox-init.js, packages/, pro/,
+    docs/, README*.md, LICENSE, CHANGELOG.md) preservado intocado. Camada Kolden
+    externa (CLAUDE.md, prd-de-ia.md, squad.yaml, constitution.md, MEMORY.md,
+    ferramentas.md, roteiro-de-teste.md, .claude/agents/prometeu-chief.md,
+    .claude/reflexos/interrupt-before-mutation.sh, agent-memory/prometeu.md)
+    envelopa vendor.
+  aiox_boundary:
+    L1_never_modify:
+      - ".aiox-core/core/**"
+      - ".aiox-core/constitution.md"
+      - "bin/aiox.js"
+      - "bin/aiox-init.js"
+    L2_never_modify:
+      - ".aiox-core/development/tasks/**"
+      - ".aiox-core/development/templates/**"
+      - ".aiox-core/development/checklists/**"
+      - ".aiox-core/development/workflows/**"
+      - ".aiox-core/infrastructure/**"
+    L3_mutable_exception:
+      - ".aiox-core/data/**"
+      - ".aiox-core/development/agents/<id>/MEMORY.md"
+      - "core-config.yaml"
+    L4_always_modify:
+      - "docs/stories/"
+      - "packages/"
+      - "squads/"
+      - "tests/"
+
+cross_cutting:
+  # Skills públicas invocadas por outros squads Kolden como tools funcionais
+  # Categoria constitucional emergente "skills-como-tools cross-squad"
+  # Candidata emenda METODO v1.1 (§5 modelos ou §7 buckets)
+  skills_publicas:
+    - nome: spec-build-review
+      path: ".claude/skills/spec-build-review/"
+      consumida_por: "todos os 25 squads Kolden que precisem spec → build → review"
+      grounding_required: false
+    - nome: mcp-builder
+      path: ".claude/skills/mcp-builder/"
+      consumida_por: "@devops de qualquer squad + Caos ao criar MCP novo"
+      grounding_required: true
+    - nome: orquestracao-de-comandos-slash
+      path: ".claude/skills/orquestracao-de-comandos-slash/"
+      consumida_por: "Caos ao desenhar/rever comando slash"
+      grounding_required: false
+    - nome: checklist-runner
+      path: ".claude/skills/checklist-runner/"
+      consumida_por: "qualquer agente validando checklist"
+      grounding_required: false
+    - nome: tech-search
+      path: ".claude/skills/tech-search/"
+      consumida_por: "qualquer squad precisando pesquisa técnica autocontida"
+      grounding_required: true
+    - nome: briefing-padrao
+      path: ".claude/skills/briefing-padrao/"
+      consumida_por: "Hermes + Zeus + orquestradores ao despachar subagentes"
+      grounding_required: false
+
+constituition_kolden: "Prometeu/constitution.md"
+constituition_aiox: ".aiox-core/constitution.md"
+metodo_kolden_ref: "C:\\Kolden\\METODO-KOLDEN.md v1.0"
+data_ratificacao: "2026-07-07"
+sub_onda_ratificacao: "3.1"
+contrato_mae: "m-20260706-metodo-kolden"

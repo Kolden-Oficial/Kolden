@@ -375,3 +375,17 @@ build/
 .aiox-core/local/
 .claude/settings.local.json
 .aiox/install-log.txt
+
+# Kolden canonical layer — Sub-onda 3.1 do METODO Kolden (Contrato-mãe m-20260706, 2026-07-07)
+# Camada Kolden PT-BR externa ao vendor SynkraAI/aiox-core que precisa ser versionada.
+# Exceções ao padrão AIOX de ignorar CLAUDE.md e .claude/* (L85-92 + L354) para permitir
+# que a identidade Kolden canônica entre no git. Vendor AIOX (aiox-*.md + reflexos AIOX
+# encerramento-aprendizado.sh + marca-trabalho.sh) preservado intocado.
+!CLAUDE.md
+!.claude/agents/
+.claude/agents/aiox-*.md
+!.claude/agents/prometeu-chief.md
+!.claude/reflexos/
+.claude/reflexos/*
+!.claude/reflexos/interrupt-before-mutation.sh
+

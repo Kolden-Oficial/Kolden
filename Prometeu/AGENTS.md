@@ -1,3 +1,12 @@
+> **NOTA KOLDEN (2026-07-07 — Sub-onda 3.1 do METODO):** Este AGENTS.md é dev guide do
+> vendor **SynkraAI/aiox-core** (importado em 2026-06-19, commit `77265d5`, ver `_origem.md`).
+> **Identidade Kolden canônica** do squad Prometeu vive em `CLAUDE.md` raiz (nível-squad
+> Kolden). Para orientação canônica Kolden (Art. X, hierarquia 5 camadas do METODO §3,
+> convenção `@` vs `/` do METODO §6), leia `CLAUDE.md` primeiro. Este arquivo cobre
+> convenções AIOX internas do framework: atalhos `@dev`/`@qa`/`@architect`/etc. herdados
+> do vendor. Constitution AIOX (6 artigos) preservada intocada em `.aiox-core/constitution.md`;
+> Constitution Kolden agent-safety (15 veto-operacionais Art. X) em `constitution.md` raiz.
+
 # AGENTS.md - Synkra AIOX
 
 Este arquivo configura o comportamento esperado de agentes no Codex CLI neste repositorio.

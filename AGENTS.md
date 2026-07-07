@@ -8,11 +8,31 @@
 ## O que é a Kolden
 Operação do **Ronan**. A descrição oficial (modelo de negócio, mercado, marca) está em construção em `sobre-a-empresa/` — **um squad de pesquisa vai definir e preencher**. Enquanto estiver `status: rascunho`, **não afirme** detalhes de negócio: diga que está em definição.
 
+## O Método Kolden
+
+**Fonte-de-verdade:** `C:\Kolden\METODO-KOLDEN.md` (v1.0, ratificado 2026-07-06).
+
+Todo agente Kolden nasce, opera e é verificado sob a norma canônica do **Método Kolden v1.0** — a consolidação em documento único de (a) framework `arquitetura-de-agents-kolden` do Liceu (12 princípios + 5 camadas + 8 critérios canônicos — Fase 1 do Contrato `m-20260704`); (b) os 14 modelos do Caos; (c) esta hierarquia de 5 camadas; (d) as convenções PT-BR + kebab-case + mitologia grega + REUSE > ADAPT > CREATE; (e) a convenção `@` (dispatch cross-squad) vs `/` (skill invocation local); (f) os 5 buckets de capacidade Kolden.
+
+**Onde procurar antes de agir:**
+
+- Padronização de squad → `METODO-KOLDEN.md §8` (rito das 9 fases).
+- Convenção `@` vs `/` → `METODO-KOLDEN.md §6` (fonte-de-verdade centralizada — arquivos antigos apontam aqui).
+- 8 critérios canônicos por agent (constituição/ASL/uncertainty/off-switch/interpretabilidade/orthogonality/grounding/predictions) → `METODO-KOLDEN.md §4`.
+- 12 princípios canônicos + procedência (Turing/Simon/Minsky/Karpathy/Russell/Bostrom/Brooks/Bai-Amodei/Anthropic RSP/Yao ReAct/LangGraph/Anthropic MCP) → `METODO-KOLDEN.md §2` + `§11`.
+- Papel do Dike (verificação independente) → `METODO-KOLDEN.md §9`.
+
+**Skills globais para invocar:**
+- `/metodo` — para consultar o Método sem executá-lo.
+- `/padronizar <Squad>` — para rodar o rito de padronização (Ondas 2-26).
+
+**Constituição do Caos v2.5.0** é a materialização por-artigo do Método (Arts. I-X); em conflito, a Constituição vence dentro do Caos e o METODO é a fonte para o ecossistema todo.
+
 ## Números do workspace (estado atual)
-- **23 squads** de agentes (nomes da mitologia grega) — **240 agentes** nas pastas `agents/` (inclui os 6 squads-semente novos: +30; consolidação Caliope×copy-master: +10; **campanha 2026-07-02: Themis +1 (analista-de-compliance-regulatorio) + Emporos +4 (gestor-de-contas-estrategicas, coach-de-discovery, engenheiro-de-pre-vendas, analista-de-pipeline)**).
-- **Prometeu**: framework de engenharia AIOX com **12 agentes** em `Prometeu/.aiox-core/development/agents/`.
+- **24 squads** de agentes (nomes da mitologia grega) — **240 agentes** nas pastas `agents/` (inclui os 6 squads-semente novos: +30; consolidação Caliope×copy-master: +10; **campanha 2026-07-02: Themis +1 (analista-de-compliance-regulatorio) + Emporos +4 (gestor-de-contas-estrategicas, coach-de-discovery, engenheiro-de-pre-vendas, analista-de-pipeline)**; **Sub-onda 1.6 do Método Kolden 2026-07-06: Dike criada como squad-solo em `C:\Kolden\Dike\` — esqueleto com CLAUDE.md/PRD/MEMORY/reflexos/settings ativos; agente funcional em `Dike/agents/dike-chief.md` pendente via Contrato próprio no Ritual do Caos**).
+- **Prometeu**: framework de engenharia AIOX com **12 agentes** em `Prometeu/.aiox-core/development/agents/` (validado 2026-07-07 via Glob). **Sub-onda 3.1 do Método Kolden 2026-07-07**: identidade + fronteira vendor SynkraAI/aiox-core padronizadas — 10 CREATE + 3 UPDATE + 1 UPDATE cirúrgico em `.gitignore` (Kolden canonical layer). Camada Kolden externa criada (`CLAUDE.md`, `constitution.md` com 15 VO Art. X, `prd-de-ia.md`, `squad.yaml`, `MEMORY.md`, `ferramentas.md`, `roteiro-de-teste.md`, `.claude/agents/prometeu-chief.md`, `.claude/reflexos/interrupt-before-mutation.sh`, `agent-memory/prometeu.md`) sobre vendor SynkraAI (~450 arquivos) preservado intocado. Constituição AIOX (`.aiox-core/constitution.md` 6 artigos) coexiste com Constituição Kolden (15 VO agent-safety) — regra de precedência: Kolden Art. X prevalece em conflito. **Dike delta INDEPENDENTE 8/8 hard PASS na Seção C (Art. X) + 11/12 PASS na Seção B + 8/8 PASS na Seção G + vendor PRESERVADO + coexistência DECLARADA — SOBE com RESSALVAS** (G5 divergência METODO herdada + skills-como-tools cross-squad categoria emergente candidata emenda METODO v1.1). **Sub-ondas 3.2 (12 aiox-agents internos + MEMORY canônico AIOX) + 3.3 (57 skills + costura final) pendentes** em sessões dedicadas próprias (G7). Detalhes em `Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/`.
 - **Caos**: fábrica de agentes com **9 especialistas internos** + **26 skills**.
-- **Total**: **261 agentes** (240 em 23 squads + 12 Prometeu + 9 Caos) — contagem verificada arquivo-a-arquivo em 2026-07-02 (pós-campanha F6 exaustiva). A **Dike** (verificador da subida) é um papel **sem arquivo de agente próprio** (`Dike/` tem PRD/CLAUDE/memória, mas não `agents/*.md`), por isso **não entra na contagem**.
+- **Total**: **261 agentes** (240 em 24 squads + 12 Prometeu + 9 Caos) — contagem verificada arquivo-a-arquivo em 2026-07-02 (pós-campanha F6 exaustiva). A **Dike** (verificador da subida) agora existe como **squad-solo** em `C:\Kolden\Dike\` (esqueleto com PRD/CLAUDE/MEMORY/reflexos/settings.json criado na Sub-onda 1.6 do Método Kolden, 2026-07-06) — o agente funcional em `Dike/agents/dike-chief.md` está **pendente via Contrato próprio no Ritual do Caos**, e enquanto isso ainda **não entra na contagem** de agentes. Ao nascer, Dike vira o 262º agente e será padronizada na Onda 4 (Grupo B — Governance) das 26 Ondas do Método. Nas sub-ondas 1.1-1.5 o papel foi executado temporariamente pelo `caos-chief` com 3 salvaguardas declaradas (METODO-KOLDEN.md §9).
 - **Skills (contagem real por `ls`, 2026-07-02, working tree pré-commit)**: **314 habilidades** em 23 squads — **Prometeu 56**, **Pheme 33**, **Égide 33**, **Caos 26**, **Ariadne 22**, **Emporos 18**, **Olimpo 15**, **Dédalo 13**, **Aletheia 11**, **Aglaia 11**, **Caliope 10**, **Peitho 8**, **Pactolo 8**, **Cairós 7**, **Argos 7**, **Metis 6**, **Harmonia 6**, **Nomos 5**, **Héstia 5**, **Ananke 5**, **Themis 3**, **Pluto 3**, **Liceu 3**. Fontes: lote 2026-06-26/27 + absorção `msitarzewski/agency-agents` (B01/B02/B03/B04/B05/B06/B08/B09/B10/B11/B15 aplicados; B07/B12/B13/B14 pendentes). Todos os squads com skills têm `catalogo.md`. Detalhes: `Caos/registros/absorcao/_campanha-2026-07-02/RELATORIO-DA-CAMPANHA.md` + `_lote-2026-06-26/RELATORIO-DO-LOTE.md`.
 - **6 squads-semente novos (2026-06-28)**: **Nomos** (compliance/jurídico), **Pactolo** (finanças/FP&A), **Êmporos** (vendas/comercial), **Héstia** (RH/pessoas), **Ananke** (operações/BizOps), **Cairós** (PMO/projetos) — +30 agentes (chief + 4 especialistas cada). **Status `semente`**: estrutura inicial (README + squad.yaml + agentes + 5 skills + catálogo + MEMORY); refino completo (PRD, Ritual de 9 fases, herança histórica) pendente do Caos. Fronteiras de camada cravadas vs Olimpo (Plutos/Afrodite/Poseidon) e Prometeu/Caos.
 - **Ferramentas**: ~35 tools/APIs catalogadas (inclui 5 vendors novos: Repomix, MarkItDown, MoneyPrinterTurbo, PlaywrightMCP, n8n-MCP); **14 MCPs conectados**, 8 aguardando OAuth.
@@ -51,7 +71,7 @@ Novos projetos seguem o template `projetos/_modelo/` (leia-me, prd, arquitetura,
 
 ### 🤖 Agentes e infraestrutura (pastas que existem)
 - `Caos/` — fábrica de agentes de IA (ritual de criação). Leia `Caos/CLAUDE.md`, `Caos/constituicao.md`, `Caos/glossario.md`.
-- `Hermes/` — runtime que executa os assistentes (gateway WhatsApp, OpenRouter, Infisical). **Projeto vendorizado da Nous Research** (`hermes-agent`, docs em inglês) — **não é um squad nativo Kolden**.
+- `Hermes/` — runtime que executa os assistentes (gateway WhatsApp, OpenRouter, Infisical) + **Camada 2 do sistema (padronizado Onda 2 METODO em 2026-07-06)**. **Vendorizado do Nous Research** (`hermes-agent`) com camada Kolden PT-BR canônica por cima (`CLAUDE.md`, `PRD`, `squad.yaml`, `constitution`, `.claude/`). Score G1-G8: 8/8. Fronteira externa×Kolden declarada — ler `Hermes/CLAUDE.md` primeiro.
 - `sobre-a-empresa/Ferramentas/` — catálogo de tools/APIs/MCPs: `sobre-a-empresa/Ferramentas/ferramentas.md`, `sobre-a-empresa/Ferramentas/mcp-status.md`. Credenciais só no **Infisical**.
 
 ### ⚙️ Infraestrutura de sistema (em `.claude/`)
@@ -270,6 +290,11 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 - `yvon-chouinard` — Negócio orientado por missão e ativismo ambiental.
 - `analista-de-compliance-regulatorio` — **[novo 2026-07-02]** Operacional transversal sob a chancela do conselho: LGPD/GDPR/CCPA, DPO, revisão de contratos com risco, resposta a incidentes de privacidade. Não é conselheiro — é executor de governança/compliance.
 
+### ⚖️ Governança & Verificação
+
+**Dike/** — Verificação independente TPND=0 (squad-solo, 1 agente pendente). **A deusa da Justiça, filha de Thémis e Zeus, membro dos Horai**: reconcilia toda entrega contra o lacre sha256 da intenção original antes da subida ao Ronan. Executa `Caos/checklists/CAOS-CL-002.md` (checklist canônico dos 8 gates — G1 constituição · G2 ASL · G3 uncertainty · G4 off-switch · G5 interpretabilidade · G6 orthogonality+instrumental · G7 grounding · G8 predictions). Verificação por evidência textual verbatim; TPND=0 é gate hard; overrides do Ronan são sempre honrados. **Estado atual (2026-07-06):** esqueleto de squad-solo criado na Sub-onda 1.6 do Contrato-mãe `m-20260706-metodo-kolden` (`Dike/CLAUDE.md`, `Dike/prd-de-ia.md`, `Dike/MEMORY.md`, `Dike/ferramentas.md`, `Dike/roteiro-de-teste.md`, `Dike/.claude/settings.json` + 7 reflexos); agente funcional em `Dike/agents/dike-chief.md` pendente via Contrato próprio no Ritual do Caos. Nas Sub-ondas 1.1-1.5 o papel foi executado temporariamente pelo `caos-chief`. Invocação canônica: `@dike`. → `Dike/CLAUDE.md`
+- `dike-chief` — **[pendente]** Verificador independente das Ondas 2-26 do Método Kolden + reconciliação TPND=0 na subida do Contrato de Missão. Nascerá quando o Ritual do Caos rodar sobre o esqueleto atual.
+
 **Metis/** — Analytics & Growth orientado por dados (7 agentes). → `Metis/README.md`
 - `data-chief` — Orquestrador: triagem, roteamento e QA em analytics e growth.
 - `avinash-kaushik` — Web analytics; mata métricas de vaidade.
@@ -378,8 +403,8 @@ Ritual de criação em 9 fases, sob a `Caos/constituicao.md` (versionada). Aplic
 
 Skills do Caos (`Caos/.claude/skills/`): `busca-de-referencias`, `consulta-ao-registro`, `criacao-de-hooks`, `criacao-de-skill`, `criacao-de-squad`, `criacao-de-subagent`, `diagnostico-de-agente`, `geracao-de-prd`, `infisical-padrao`, `registro-de-entidade`, `verificacao-de-alinhamento`, `vigia-de-ecossistema` (+ catálogo).
 
-### Hermes/ — runtime de execução (vendorizado)
-Projeto **Nous Research** (`hermes-agent`) integrado ao workspace; docs em inglês. Executa os assistentes em CLI/TUI e gateways (WhatsApp, Telegram, Discord, Slack, Signal…), com OpenRouter como provider e segredos via Infisical. **Não é um squad nativo Kolden** e não tem agentes Kolden próprios — é a camada que *roda* assistentes. Ver `Hermes/README.md` e `Hermes/AGENTS.md` (guia de contribuição).
+### Hermes/ — Camada 2 do sistema (runtime + squad Kolden padronizado)
+Projeto **Nous Research** (`hermes-agent`) vendorizado no workspace com **camada Kolden PT-BR** por cima. Executa os assistentes em CLI/TUI e gateways (WhatsApp, Telegram, Discord, Slack, Signal…), com OpenRouter como provider e segredos via Infisical. **Padronizado na Onda 2 do METODO Kolden em 2026-07-06** (Contrato-mãe `m-20260706-metodo-kolden`) — hoje é o primeiro squad vendorizado com CLAUDE.md canônico Kolden + PRD + squad.yaml + constitution + MEMORY + `.claude/settings.json` + reflexo `interrupt-before-mutation.sh` (G4) + agent-def em `.claude/agents/hermes-chief.md` + skill Kolden em `.claude/skills/roteamento-de-squad/`. **Score G1-G8: 8/8 VERDE** (delta +7 vs baseline). Vendor Nous preservado intocado — `agent/*.py`, `hermes_cli/`, `providers/`, `plugins/`, 19 skills EN em `skills/`, `Dockerfile`, `pyproject.toml`, `flake.nix`, `README*.md`, `LICENSE`. Fronteira externa×Kolden declarada explicitamente em `Hermes/CLAUDE.md §Fronteira` e `Hermes/squad.yaml.fronteira_vendor_nous`. Ler **primeiro** `Hermes/CLAUDE.md` para orientação Kolden; `Hermes/AGENTS.md` é dev guide vendor. Registros da Onda 2: `Hermes/registros/metodo-onda-2/` (matriz-de-conformidade + achados.jsonl + diff-cirurgico + verificacao-dike + verificacao-dike-delta + sumario-executivo).
 
 ### sobre-a-empresa/Ferramentas/ — catálogo de tools, APIs e MCPs
 Índice mestre `sobre-a-empresa/Ferramentas/ferramentas.md`; estado dos MCPs em `sobre-a-empresa/Ferramentas/mcp-status.md`; validação de APIs em `sobre-a-empresa/Ferramentas/api-validation.md`. ~30 ferramentas catalogadas; **14 MCPs conectados**, 8 aguardando OAuth, 3 follow-ups de credencial. **Credenciais SEMPRE via Infisical — nunca em texto puro.**

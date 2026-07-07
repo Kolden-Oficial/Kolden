@@ -384,3 +384,27 @@ tail -f .aiox/logs/agent.log
 
 *Synkra AIOX Claude Code Configuration v4.0*
 *CLI First | Observability Second | UI Third*
+
+---
+
+<!-- PROJECT-CUSTOMIZED: Kolden convention layer added Sub-onda 3.1 (2026-07-07) -->
+## Convenção `@` vs `/` — segue METODO §6
+
+Este squad Prometeu opera sob **duas convenções `@` co-existentes** que atuam em camadas
+semanticamente distintas — **não conflitam**:
+
+### `@` externo Kolden (dispatch cross-squad — Camada 5 do METODO §3)
+- `@Prometeu` dispara o `prometeu-chief` (orquestrador tier-0 externo Kolden — ver `.claude/agents/prometeu-chief.md`).
+- Cross-sessão Claude Code, sessão nova em `C:\Kolden\Prometeu\`.
+
+### `@` interno AIOX (ativação de aiox-agent — dentro da sessão Prometeu)
+- `@dev`, `@qa`, `@architect`, `@pm`, `@po`, `@sm`, `@devops`, `@analyst`, `@data-engineer`,
+  `@ux-design-expert`, `@aiox-master` — herdado do vendor AIOX (Constitution AIOX Art. II).
+
+### `/` skill invocation local
+- `/<skill-name>` — 57 skills locais Kolden em `.claude/skills/`.
+- `/AIOX:agents:<id>` — skill de ativação AIOX vendor.
+
+**Fonte canônica:** `C:\Kolden\METODO-KOLDEN.md` §6 (centralização Kolden) + `.aiox-core/constitution.md` Art. II (co-existência AIOX vendor).
+**Identidade Kolden canônica do squad Prometeu:** `CLAUDE.md` raiz (nível-squad) + `constitution.md` raiz (15 veto-operacionais Art. X).
+**Deny rules L1+L2 vendor AIOX:** aplicadas em `.claude/settings.json` `permissions.deny` (aprendizado transferido Onda 2 Hermes).

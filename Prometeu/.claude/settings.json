@@ -56,5 +56,27 @@
       }
     ]
   },
+  "permissions": {
+    "deny": [
+      "Write(.aiox-core/core/**)",
+      "Edit(.aiox-core/core/**)",
+      "Write(.aiox-core/constitution.md)",
+      "Edit(.aiox-core/constitution.md)",
+      "Write(bin/aiox.js)",
+      "Edit(bin/aiox.js)",
+      "Write(bin/aiox-init.js)",
+      "Edit(bin/aiox-init.js)",
+      "Write(.aiox-core/development/tasks/**)",
+      "Edit(.aiox-core/development/tasks/**)",
+      "Write(.aiox-core/development/templates/**)",
+      "Edit(.aiox-core/development/templates/**)",
+      "Write(.aiox-core/development/checklists/**)",
+      "Edit(.aiox-core/development/checklists/**)",
+      "Write(.aiox-core/development/workflows/**)",
+      "Edit(.aiox-core/development/workflows/**)",
+      "Write(.aiox-core/infrastructure/**)",
+      "Edit(.aiox-core/infrastructure/**)"
+    ]
+  },
   "language": "portuguese"
 }
