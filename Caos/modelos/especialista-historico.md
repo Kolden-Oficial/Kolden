@@ -30,6 +30,10 @@ agent:
   squad: <squad>
   sub_group: "<grupo funcional dentro do squad>"
   whenToUse: "<quando acionar este especialista — gatilhos concretos em pt-BR>"
+  # ── Campos canônicos herdados do orquestrador (Art. X v2.5.0) ──
+  loop_pattern: ReAct                                    # P10 — Yao et al. 2022
+  ASL: <herdado do orquestrador; declarar aqui>          # G2 — Amodei RSP 2023
+  # (aspiration_criteria e uncertainty_statement vivem no PRD do agente; especialista herda por ref)
 
 persona_profile:
   archetype: "<arquétipo: O Cientista da Startup, Lenda da Resposta Direta...>"
@@ -71,6 +75,14 @@ core_frameworks:               # O CORAÇÃO — os métodos que o agente herda 
 
 core_principles:               # 8-15 máximas operacionais, na voz do especialista
   - "<princípio acionável>"
+
+constitution_herdada:            # G1 v2.5 — 5-15 máximas VETO-OPERACIONAIS derivadas dos core_principles do especialista real
+  # Regra: cada princípio abaixo é NEGATIVO/VETO (rejeita comportamento), não POSITIVO/META.
+  # Ex.: "nunca escreve copy sem prova social" (veto), não "sempre inclui prova social" (meta).
+  # O agente herda estes vetos como constitution.md efetiva (Art. X G1); ausência ou <5 = BLOCK.
+  - "NUNCA <ação/comportamento que o especialista real rejeitaria>"
+  - "NUNCA <ação/comportamento>"
+  # ...
 
 signature_vocabulary:          # termos-assinatura (com tradução) + padrões linguísticos
   - "<termo> (<tradução>)"

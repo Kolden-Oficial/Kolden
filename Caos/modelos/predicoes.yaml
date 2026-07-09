@@ -1,0 +1,116 @@
+# Predições — Template canônico Kolden
+#
+# Contrato de origem: m-20260706-metodo-kolden · Sub-onda 1.4
+# Referência constitucional: Art. X G8 (Predictions Scorecard condicional) — Constituição v2.5.0
+# Fonte metodológica: Brooks (2018-2026) rodneybrooks.com/blog Predictions Scorecard series (8 edições anuais)
+# Uso: preencher UM arquivo YAML por agente ou por escopo organizacional
+#      (ex.: predictions-scorecard-<agente>-<ano-inicial>.md OU predictions-scorecard-kolden-<ano-inicial>.md)
+#
+# ─────────────────────────────────────────────────────────────────────
+# REGRA
+# ─────────────────────────────────────────────────────────────────────
+# Uma predição pertence a este arquivo se, e somente se, ela cumpre os 5 campos obrigatórios:
+#   (1) data-limite ISO 8601 no futuro (relativa à data de emissão);
+#   (2) critério textual em uma sentença única, verificável por comando/consulta;
+#   (3) revisor nominal (agente Kolden OU humano — nunca "todos");
+#   (4) próxima_revisao com cadência ≥ anual (Brooks 2018-2026: revisão em 1º de janeiro);
+#   (5) procedência do achado que motivou a predição (contrato + sub-onda + link).
+#
+# Predição sem os 5 campos NÃO entra no scorecard — é hipótese solta.
+#
+# ─────────────────────────────────────────────────────────────────────
+# EXCEÇÕES NOMEADAS
+# ─────────────────────────────────────────────────────────────────────
+# (E1) Predição CONDICIONAL: se o critério depende de evento externo não-controlado (ex.: spec de terceiro),
+#      declarar `condicional: true` + `condicao` textual — não é escape do gate G8, é honestidade estrutural.
+# (E2) Predição REVOGADA antes da data-limite: manter no arquivo com `status: revogada` + `justificativa`;
+#      remoção silenciosa é vetada (rastreabilidade Brooks 2018-2026).
+# (E3) Predição QUE VIROU FATO antes da data-limite: fechar com `status: cumprida-antecipada` + data real;
+#      não usar como prova de habilidade preditiva se cumprida por acaso — declarar sorte se aplicável.
+#
+# =====================================================================
+
+schema_version: "1.0.0"
+emitido_em: "AAAA-MM-DD"                 # data em que este arquivo foi lavrado
+emitido_por: "<agente-ou-humano>"        # ex.: "caos-chief", "ronan", "prometeu-chief"
+escopo:
+  tipo: "<agente | organizacao | squad | contrato>"
+  identificador: "<ex.: kolden, aletheia-chief, m-20260706>"
+cadencia_revisao: "anual"                # mínimo Brooks 2018-2026; opções: "anual", "semestral", "trimestral"
+proxima_revisao_padrao: "AAAA-01-01"     # convenção: 1º de janeiro (Brooks)
+revisor_padrao: "<agente-ou-humano>"     # pode ser sobrescrito por predição individual
+
+# =====================================================================
+# EXEMPLO CANÔNICO (real — usado em predictions-scorecard-kolden-2026.md)
+# =====================================================================
+# Preserve este bloco no template; preenchimentos reais vão no bloco `predicoes` abaixo.
+
+exemplo_canonico:
+  id: "KLD-PRED-2026-EXEMPLO"
+  data_limite: "2026-10-01"
+  criterio: >
+    Até 2026-10-01, 100% dos 4 wrappers proprietários do Grupo A (ApifyClient em Argos;
+    GHL PIT Key em Pheme e Emporos; ElevenLabs SDK em Hermes) estão substituídos por MCPs
+    oficiais já cadastrados em `dados/registro-de-entidades.yaml`.
+  metodo_de_verificacao: >
+    Grep em `Argos/`, `Pheme/`, `Emporos/`, `Hermes/` por `ApifyClient`, `PIT Key`,
+    `elevenlabs.client` retorna 0 ocorrências fora de _staging/quarentena.
+  revisor: "curador"
+  cadencia_revisao: "trimestral"
+  proxima_revisao: "2026-10-01"
+  procedencia:
+    contrato: "m-20260706-metodo-kolden"
+    sub_onda: "1.3-mcp-camada-1"
+    documento: "Caos/registros/metodo-onda-1/1.3-mcp-camada-1/plano-migracao-escalonada.md"
+    achado_ancorado: "Grupo A — 4 substituições diretas MCP oficial já existe"
+  status: "aberta"                       # aberta | cumprida | cumprida-antecipada | falhou | revogada | condicional-pendente
+  condicional: false
+  condicao: null
+
+# =====================================================================
+# PREDIÇÕES ATIVAS
+# =====================================================================
+# Cada entrada é um bloco YAML com o mesmo schema do exemplo canônico.
+# Novas predições são ADICIONADAS (append-only ao ledger de predições).
+# Predições existentes SÓ mudam pelos campos `status` + `justificativa` + `data_de_fechamento`.
+
+predicoes:
+  # - id: "KLD-PRED-2026-001"
+  #   data_limite: "AAAA-MM-DD"
+  #   criterio: >
+  #     ...
+  #   metodo_de_verificacao: >
+  #     ...
+  #   revisor: "<agente-ou-humano>"
+  #   cadencia_revisao: "anual"
+  #   proxima_revisao: "AAAA-01-01"
+  #   procedencia:
+  #     contrato: "..."
+  #     sub_onda: "..."
+  #     documento: "..."
+  #     achado_ancorado: "..."
+  #   status: "aberta"
+  #   condicional: false
+  #   condicao: null
+
+# =====================================================================
+# HISTÓRICO DE REVISÕES
+# =====================================================================
+# Toda revisão anual gera UMA entrada nova aqui; não sobrescrever histórico anterior.
+# Referência ao documento estendido: `Caos/registros/revisao-anual-<escopo>-<ano>.md`.
+
+revisoes:
+  # - data: "AAAA-01-01"
+  #   revisor: "<agente-ou-humano>"
+  #   documento_estendido: "Caos/registros/revisao-anual-<escopo>-<ano>.md"
+  #   resumo: >
+  #     N predições avaliadas; X cumpridas; Y falhas; Z condicionais pendentes.
+  #   score_bruto: "X/N"
+  #   score_calibrado_por_dificuldade: "ver documento estendido"
+
+# =====================================================================
+# NOTA — ESTE ARQUIVO É PARTE DO GATE G8
+# =====================================================================
+# Se o PRD do agente marca `predictions_scorecard: true`, este arquivo é OBRIGATÓRIO
+# (BLOCK condicional em Fase 8 — Constituição v2.5.0 Art. X G8).
+# Se o PRD marca `predictions_scorecard: false` OU `null`, este arquivo NÃO se aplica.

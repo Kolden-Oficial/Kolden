@@ -30,6 +30,18 @@ tier: <0|1|1a|...>               # 0 = orquestrador; 1 = especialista
 proposito: >                     # uma frase: o que este agente resolve e para quem
   <missão em uma linha>
 
+# ── Campos canônicos do Art. X (Constituição v2.5.0) — obrigatórios ──
+constitution: "<path para <Agent>/constitution.md>"     # G1 — Bai et al. 2022
+ASL: <1|2|3|4+>                                          # G2 — Amodei RSP 2023
+aspiration_criteria:                                     # G3 — Simon 1955
+  - criterio: "<meta 1>"
+    limite: "<número + unidade>"
+    fonte_evidencia: "<KPI do PRD §2>"
+uncertainty_statement: |                                 # G3 — Russell 2019
+  <1-3 parágrafos>
+predictions_scorecard: <true|false|null>                 # G8 — Brooks 2018-2026
+loop_pattern: ReAct                                      # P10 — Yao et al. 2022 (override registrado)
+
 # ── Os 5 EIXOS da identidade ──
 hard_skills:                     # O QUE ele sabe fazer — competências + frameworks nomeados
   - <competência ou framework 1>
@@ -56,6 +68,11 @@ fonte: "<arquivo de origem dos dados do cartão>"
 
 | Eixo | Pergunta-guia | Fonte no arquivo do agente | Regra |
 |---|---|---|---|
+| **constitution** | Onde vivem os princípios veto-operacionais? | frontmatter do PRD + `<Agent>/constitution.md` | Ponteiro para arquivo com 5-15 princípios; ausência = BLOCK. |
+| **ASL** | Que impacto suas mutations têm? | frontmatter do PRD | 1 (leitura) / 2 (reversível) / 3 (side effect) / 4+ (irreversível); ASL-3+ ativa `interrupt-before-mutation.sh`. |
+| **aspiration_criteria** | Bom-o-bastante para quê? | frontmatter do PRD § KPIs (2) | 3-5 metas mensuráveis; cada uma bate com KPI do PRD §2. |
+| **uncertainty_statement** | Onde está o espaço latente de intenção? | frontmatter do PRD | 1-3 parágrafos — quais ambiguidades este agente encontrará em uso real e como se comporta diante delas. |
+| **predictions_scorecard** | Faz previsões datáveis? | frontmatter do PRD (decidido na Rodada Alma) | `true` publica scorecard em `Caos/registros/predictions-scorecard-<agente>.md`; `false` registra decisão. |
 | **hard_skills** | O que ele sabe FAZER? | `focus` + chaves de `core_frameworks` | Liste competências concretas e frameworks pelo nome; nada genérico. |
 | **soft_skills** | COMO ele se comporta? | `persona.style` + `communication.tone` | Descreva **comportamento observável** ("quando falta dado, pergunta antes de assumir"), nunca adjetivo solto. |
 | **mentalidade** | COMO ele pensa? | `core_principles` / `persona.identity` | Capte as crenças operantes que guiam decisões e trade-offs. |
@@ -71,6 +88,11 @@ fonte: "<arquivo de origem dos dados do cartão>"
    com as keywords da sua entrada em `dados/registro-de-entidades.yaml`.
 5. **`id`/`path` batem com o filesystem** — o cartão aponta para onde o agente vive; nunca move código.
 6. **Tudo em pt-BR e kebab-case** (Constituição Art. II).
+7. **Os 5 campos canônicos do Art. X sempre presentes** (`constitution`, `ASL`, `aspiration_criteria`, `uncertainty_statement`, `predictions_scorecard`). Ausência de qualquer um = BLOCK no roster. `revisor` verifica na Fase 6.
+8. **`constitution` aponta para arquivo existente** com 5-15 princípios veto-operacionais. Arquivo vazio ou <5 princípios = BLOCK.
+9. **`ASL` bate com ferramentas** — se lista alguma tool com `annotations.destructive: true`, ASL ≥ 3.
+10. **`aspiration_criteria` bate 1:1 com KPIs do PRD §2** — cada aspiration tem KPI correspondente e vice-versa.
+11. **Cartão é espelho** — quando PRD muda, o `curador` propaga na Fase 8. Divergência PRD × cartão = BLOCK.
 
 ## Relação com os outros artefatos do RH dos agentes
 

@@ -1,0 +1,173 @@
+# Predições Kolden — Safra 2026-2027 (primeira)
+#
+# Arquivo YAML puro no formato canônico do template Caos/modelos/predicoes.yaml (schema v1.0.0).
+# Fonte narrativa desta safra: Caos/registros/predictions-scorecard-kolden-2026.md (markdown com
+# justificativa por predição, meta-comentário e sumário estatístico).
+# Contrato de origem: m-20260706-metodo-kolden · Sub-onda 1.4
+# Referência constitucional: Art. X G8 (Predictions Scorecard condicional) — Constituição v2.5.0
+# Fonte metodológica: Brooks (2018-2026) rodneybrooks.com/blog Predictions Scorecard series
+#
+# ─────────────────────────────────────────────────────────────────────
+# CABEÇALHO
+# ─────────────────────────────────────────────────────────────────────
+
+schema_version: "1.0.0"
+emitido_em: "2026-07-06"
+emitido_por: "caos-chief"
+escopo:
+  tipo: "organizacao"
+  identificador: "kolden"
+cadencia_revisao: "anual"
+proxima_revisao_padrao: "2027-01-01"
+revisor_padrao: "curador"
+
+# ─────────────────────────────────────────────────────────────────────
+# PREDIÇÕES ATIVAS — 5 na safra 2026-2027
+# ─────────────────────────────────────────────────────────────────────
+
+predicoes:
+  - id: "KLD-PRED-2026-001"
+    data_limite: "2026-10-01"
+    criterio: >
+      Até 2026-10-01, 100% dos 4 wrappers proprietários do Grupo A identificados na Sub-onda 1.3
+      (ApifyClient em Argos; GHL PIT Key via curl em Pheme; GHL PIT Key via curl em Emporos;
+      ElevenLabs SDK direto em Hermes tools) estão substituídos por MCPs oficiais já cadastrados
+      em `dados/registro-de-entidades.yaml` (tipo: mcp).
+    metodo_de_verificacao: >
+      Grep exaustivo em `Argos/`, `Pheme/`, `Emporos/`, `Hermes/` (excluindo `_staging/quarentena/`)
+      pelos identificadores `ApifyClient`, `PIT Key`, `elevenlabs.client` retorna 0 ocorrências em
+      código de produção. Grep positivo em `mcp__apify__`, `mcp__gohighlevel__`, `mcp__elevenlabs__`
+      nos mesmos squads.
+    revisor: "curador"
+    cadencia_revisao: "trimestral"
+    proxima_revisao: "2026-10-01"
+    dificuldade_a_priori: 2
+    procedencia:
+      contrato: "m-20260706-metodo-kolden"
+      sub_onda: "1.3-mcp-camada-1"
+      documento: "Caos/registros/metodo-onda-1/1.3-mcp-camada-1/plano-migracao-escalonada.md"
+      achado_ancorado: "Grupo A — 4 substituições diretas (MCP oficial já existe)"
+    status: "aberta"
+    condicional: false
+    condicao: null
+
+  - id: "KLD-PRED-2026-002"
+    data_limite: "2026-12-31"
+    criterio: >
+      Até 2026-12-31, o dashboard-safety.md (populado por Fase 3) mostra 0 agentes com
+      ASL: 3 (ou superior) declarado que não tenham o reflexo `interrupt-before-mutation.sh`
+      ativo em `.claude/hooks/` + teste OS-1 passando no registro do último Fase 7.
+    metodo_de_verificacao: >
+      Intersecção da lista de agentes com ASL >= 3 no `dados/elenco-de-agentes.yaml` × grep
+      positivo por `interrupt-before-mutation.sh` no `.claude/hooks/` correspondente × registro
+      do último teste OS-1 no `roteiro-de-teste.md` do agente com resultado `PASS`.
+    revisor: "curador"
+    cadencia_revisao: "semestral"
+    proxima_revisao: "2026-12-31"
+    dificuldade_a_priori: 3
+    procedencia:
+      contrato: "m-20260706-metodo-kolden"
+      sub_onda: "1.1-identidade-ritual"
+      documento: "Caos/constituicao.md (Art. X G4 — v2.5.0)"
+      achado_ancorado: "Art. X G4 (BLOCK para ASL-3+) ratificado na Sub-onda 1.1"
+    status: "aberta"
+    condicional: false
+    condicao: null
+
+  - id: "KLD-PRED-2026-003"
+    data_limite: "2027-01-01"
+    criterio: >
+      Até 2027-01-01, uma das duas condições foi observada como fato datável:
+      (a) MCP spec 2025-2026 publica `streamable-http-transport` estável em modelcontextprotocol.io
+      (versão >= 2025-XX-XX) — forçando migração compulsória em 90d dos 5 wrappers de exceção
+      arquitetural (Discord, Slack, Telegram, WhatsApp Cloud, Google Chat);
+      OU
+      (b) Emenda formal ao Art. IV da Constituição Kolden ratificada via ida-e-volta Liceu-chief
+      (Onda 6 do Método), aceitando a categoria "adapter de runtime bidirecional em tempo real"
+      como exceção constitucional permanente.
+    metodo_de_verificacao: >
+      Leitura de modelcontextprotocol.io/specification/versions em 2027-01-01 (busca ao vivo
+      registrada com timestamp — Art. IX grounding) OU leitura de `Caos/constituicao.md`
+      Art. IV versão >= 2.6.0 com histórico de versões declarando a emenda.
+    revisor: "curador"
+    cadencia_revisao: "anual"
+    proxima_revisao: "2027-01-01"
+    dificuldade_a_priori: 4
+    procedencia:
+      contrato: "m-20260706-metodo-kolden"
+      sub_onda: "1.3-mcp-camada-1"
+      documento: "Caos/registros/metodo-onda-1/1.3-mcp-camada-1/sumario-executivo.md (§3)"
+      achado_ancorado: "Rota D-1 (emenda constitucional) OU Rota D-2 (aguardar spec)"
+    status: "condicional-pendente"
+    condicional: true
+    condicao: >
+      A predição depende de evento externo não-controlado pela Kolden (release da MCP spec
+      ou aprovação de emenda). Se nenhum dos dois eventos ocorrer, a predição falha e o
+      meta-comentário registra "aposta em cronograma externo não madurou" (Brooks 2018-2024
+      categoria "erro-por-hype").
+
+  - id: "KLD-PRED-2026-004"
+    data_limite: "2026-10-31"
+    criterio: >
+      Até 2026-10-31, pelo menos 5 dos 6 MCPs-próprios simples identificados na Sub-onda 1.3
+      (Speechmatics, Deepgram, SociaVault, Mistral-Voxtral, Groq-STT, MiniMax) estão registrados
+      em `dados/registro-de-entidades.yaml` com tipo: mcp e status: ligado-em-dupla-vida.
+    metodo_de_verificacao: >
+      Parser YAML do `dados/registro-de-entidades.yaml` retorna >= 5 entradas com tipo=mcp
+      e status=ligado-em-dupla-vida dos 6 identificadores nominais. Alternativamente, presença
+      de `Argos/mcp/speechmatics/`, `Argos/mcp/deepgram/`, `Argos/mcp/sociavault/`,
+      `Hermes/mcp/mistral-voxtral/`, `Hermes/mcp/groq-stt/`, `Hermes/mcp/minimax/` com
+      package.json ou pyproject.toml apontando servidor MCP.
+    revisor: "curador"
+    cadencia_revisao: "trimestral"
+    proxima_revisao: "2026-10-31"
+    dificuldade_a_priori: 3
+    procedencia:
+      contrato: "m-20260706-metodo-kolden"
+      sub_onda: "1.3-mcp-camada-1"
+      documento: "Caos/registros/metodo-onda-1/1.3-mcp-camada-1/plano-migracao-escalonada.md"
+      achado_ancorado: "Grupo B — 6 MCPs-próprios simples, janela 30d por MCP"
+    status: "aberta"
+    condicional: false
+    condicao: null
+
+  - id: "KLD-PRED-2026-005"
+    data_limite: "2027-01-01"
+    criterio: >
+      Até 2027-01-01, pelo menos 3 agentes/organizações Kolden com predictions_scorecard: true
+      no PRD publicaram sua primeira revisão anual em `Caos/registros/revisao-anual-<escopo>-2026.md`
+      (usando o template `Caos/modelos/revisao-anual.md`). Candidatos naturais: a própria organização
+      Kolden (esta safra), Aletheia (discovery — Predictions Scorecard é método fundacional dela),
+      Prometeu (arquitetura de inferência — previsões sobre benchmarks de modelo).
+    metodo_de_verificacao: >
+      Contagem de arquivos com pattern `Caos/registros/revisao-anual-*-2026.md` >= 3, ou —
+      alternativamente — em `<Agent>/registros/revisao-anual-2026.md` para agentes que
+      gerenciam scorecard próprio.
+    revisor: "curador"
+    cadencia_revisao: "anual"
+    proxima_revisao: "2027-01-01"
+    dificuldade_a_priori: 3
+    procedencia:
+      contrato: "m-20260706-metodo-kolden"
+      sub_onda: "1.4-safety"
+      documento: "Caos/modelos/predicoes.yaml + Caos/modelos/revisao-anual.md"
+      achado_ancorado: "Predictions Scorecard institucionalizado como método via Sub-onda 1.4"
+    status: "aberta"
+    condicional: false
+    condicao: null
+
+# ─────────────────────────────────────────────────────────────────────
+# HISTÓRICO DE REVISÕES — vazio na emissão; primeira revisão substantiva em 2027-01-01
+# ─────────────────────────────────────────────────────────────────────
+
+revisoes: []
+
+# ─────────────────────────────────────────────────────────────────────
+# ESTATÍSTICA DA SAFRA (informativo — não é campo do schema)
+# ─────────────────────────────────────────────────────────────────────
+# total: 5 predições
+# dificuldade média a priori: 3.0 (distribuição 2, 3, 4, 3, 3)
+# condicionais: 1 (KLD-PRED-2026-003)
+# janela mais próxima: 2026-10-01 (~12 semanas do emitido_em)
+# janela mais distante: 2027-01-01 (~26 semanas do emitido_em)
+# meta-fonte narrativa: Caos/registros/predictions-scorecard-kolden-2026.md

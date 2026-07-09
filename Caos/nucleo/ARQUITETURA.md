@@ -152,37 +152,65 @@ O *conteúdo* das skills (`SKILL.md`) é lido sem modificação.
   `rodar_agente()` com histórico limpo. Retorna só o resultado ao orquestrador
   pai — exatamente a semântica de subagent do Claude Code.
 
-### 5.5 `middleware.py` — hooks portados (1:1)
-Os 3 hooks atuais viram funções. Lógica idêntica à dos `.sh`:
+### 5.5 `middleware.py` — hooks portados (1:1 + novos Art. IX/X)
+Os 3 hooks originais + 2 hooks novos (Art. IX/X v2.5.0) viram funções. Lógica idêntica à dos `.sh`:
 
 | Hook hoje              | Vira | Guardrails portados |
 |------------------------|------|---------------------|
 | `pre-ferramenta.sh` (PreToolUse/Bash) | `antes(chamada)` | bloqueia `rm -rf /|~|$HOME`; `git push --force`; leitura direta de `.env` → exceção que veta a tool |
 | `pos-escrita.sh` (PostToolUse/Write\|Edit) | `depois(chamada, res)` | auditoria/registro do que foi escrito |
 | `inicio-sessao.sh` (SessionStart) | `inicio_sessao()` | banner "KOLDEN ATIVO — Caos pronto" + checagens |
+| **`interrupt-before-mutation.sh`** (PreToolUse) — NOVO v2.5 | **`antes_asl3(chamada)`** | **para agentes com `ASL >= 3` na config; pausa antes de qualquer mutation-with-side-effect até resposta humana explícita (linha lida do prompt do humano). Fonte: Hadfield-Menell-Dragan-Abbeel-Russell 2017 IJCAI "The Off-Switch Game" + LangGraph docs 2024 `interrupt_before`. Constituição Art. X G4 (BLOCK para ASL-3+).** |
+| **`verificacao-de-fato-datavel.sh`** (PostToolUse) — NOVO v2.5 | **`verificar_fato(chamada, res)`** | **quando skill/MCP com `grounding_required: true` no frontmatter retorna, marca o output como "não-groundeado sem tool corroborante" se a próxima chamada não invocar ferramenta de verificação. Fonte: Brooks 1991 "Intelligence Without Representation" (AI 47). Constituição Art. IX (WARN escalando para BLOCK).** |
 
-`antes()` levanta exceção para vetar (equivalente ao `exit 2`); retorno normal
-libera (equivalente ao `exit 0`).
+`antes()` levanta exceção para vetar (equivalente ao `exit 2`); retorno normal libera (equivalente ao `exit 0`).
 
-### 5.6 `ritual.py` — as 9 fases
-Orquestra o fluxo obrigatório do `CLAUDE.md`/`constituicao.md`, com os **gates**:
-0. Consulta ao registro (REUSE>ADAPT>CREATE) → subagent `curador`
-1. Diagnóstico (9 blocos, inclui pré-morte) → skill + `diagnosticador`
-2. Pesquisa (estado da arte ao vivo) → `pesquisador`
-3. Arquitetura (solo vs squad) → `arquiteto`
-4. PRD de IA → skill `geracao-de-prd` → **gate: aprovação humana explícita**
-5. Construção → skills de criação + `redator-de-prompts`
-6. Revisão → `revisor` (de propósito num modelo ≠ do autor)
-7. Teste de comportamento → `testador` → **gate: maturity score ≥ 7.0**
-8. Entrega + registro → `curador`
+**Novo comportamento v2.5 — cascata por ASL:**
+- ASL-1 (leitura pura): apenas `antes()` clássico + `depois()` de auditoria.
+- ASL-2 (mutations reversíveis): idem ASL-1; `interrupt_before` **opcional**.
+- ASL-3 (mutations com side effect): `antes_asl3()` **obrigatório** — pausa e aguarda linha do humano.
+- ASL-4+ (mutations irreversíveis ou alto impacto): idem ASL-3 + review humano de deploy (fora do runtime, via Ronan/Dike).
 
-Os gates 4 e 7 são pontos de parada obrigatórios (Constituição, Art. III).
+### 5.6 `ritual.py` — as 9 fases + Fase 5 cascata + 8 gates canônicos (Art. X v2.5.0)
+Orquestra o fluxo obrigatório do `CLAUDE.md`/`constituicao.md`. Cada fase tem gate herdado do CLAUDE.md v3.4.0:
+0. **Consulta ao registro** (REUSE>ADAPT>CREATE) → subagent `curador` — INFO.
+1. **Diagnóstico** (7 rodadas por faculdade, inclui pré-morte na Rodada 5) → skill + `diagnosticador`. **Gate canônico** G3 (Rodada Alma pergunta espaço latente de intenção) + G8 (pergunta "agente faz previsões datáveis?").
+2. **Pesquisa** (estado da arte ao vivo) → `pesquisador`. **Gate canônico** G7 (fato datável DEVE vir de tool; asserção não-groundeada é WARN).
+3. **Arquitetura** (solo vs squad + 5 camadas) → `arquiteto`. **Gate canônico** G5 (plano de introspecção obrigatório por camada) + G6 (tabela auditoria capacidades × risco).
+4. **PRD de IA** → skill `geracao-de-prd` → **BLOCK: aprovação humana + 5 campos frontmatter obrigatórios** (`constitution:`, `ASL:`, `aspiration_criteria:`, `uncertainty_statement:`, `predictions_scorecard:`). Ausência de qualquer campo = BLOCK (Art. III + Art. X G1/G2/G3/G8).
+5. **Construção em cascata 5.0→5.6** (ordem topológica canônica — Constituição v2.2.0):
+   - 5.0 plano do `arquiteto`;
+   - 5.1 orquestrador tier 0 (`roster:` declarado);
+   - 5.2 especialistas tier 1 (`tools:` restritas + formato de retorno);
+   - 5.3 habilidades por especialista (habilidades que produzem fato datável = `grounding_required: true` — G7);
+   - 5.4 MCPs/APIs próprios (só se PRD §5.3 pedir; MCP-nativo obrigatório — Art. IV v2.5.0);
+   - 5.5 reflexos + memória (para ASL-3+: reflexo `interrupt-before-mutation.sh` obrigatório — G4);
+   - 5.6 referências por camada (herança histórica via `heranca-de-especialista`; score ≥ 7);
+   - 5b `redator-de-prompts` escreve CLAUDE.md ancorado nesta cascata (bloco "Incerteza declarada" obrigatório — G3; `loop_pattern: ReAct` obrigatório — P10).
+6. **Revisão** → `revisor` (num modelo ≠ do autor) executando `CAOS-CL-002` por gate — **BLOCK** para G1-G4; **WARN** para G5/G7; **INFO condicional** para G6/G8.
+7. **Teste de comportamento** → `testador` → **BLOCK: maturity score ≥ 7.0**. Testes canônicos derivados dos 8 gates: OS-1 (G4, ASL-3+), AB-3 (G6), UN-2 (G3), GR-1 e GR-2 (G7), PR-1 (G8 condicional).
+8. **Entrega + registro** → `curador`. **Gate canônico** G8: se `predictions_scorecard: true`, publica em `Caos/registros/predictions-scorecard-<agente>.md`.
+
+Os gates 4 e 7 são pontos de parada obrigatórios (Constituição, Art. III + Art. X).
+
+**10 artigos constitucionais que este ritual materializa** (a partir de v2.5.0): I (PRD fonte da verdade), II (pt-BR), III (aprovação antes da construção), IV **refactored** (MCP mandatório), V (agnóstico de modelo), VI (REUSE>ADAPT>CREATE), VII (Infisical), VIII (absorção segura), IX **novo** (grounding compulsório), X **novo** (8 gates canônicos por agent).
 
 ### 5.7 `contexto.py`
 - Carrega `CLAUDE.md` + `constituicao.md` como system base.
 - Compactação: quando o histórico passa de N tokens, resume as fases já
   concluídas (substitui o `/compact`). O estado real vive nos arquivos, não na
   conversa — então resumir é seguro.
+
+### 5.8 `introspeccao.py` — plano de introspecção (v2.5 — Art. X G5, WARN)
+Módulo novo introduzido na v2.5. Emite os sinais mínimos que permitem ao Ronan entender **por que o agente fez X**. Padrão canônico Kolden:
+
+- **Trace ReAct completo** por invocação — Thought → Action → Observation, incluindo tool call args + result truncados a 500 caracteres. Persistido em `registros/traces/<data>/<agente>-<id>.jsonl`.
+- **Log de decisão de roteamento** — para orquestradores (tier 0): qual especialista foi acionado, qual keyword casou, quais foram rejeitados e por quê. Persistido em `registros/roteamentos/<data>/<squad>.jsonl`.
+- **Decomposição de tool call** — para skills/MCPs com `annotations.destructive: true`, gravar quais parâmetros foram derivados de qual campo do prompt/histórico. Persistido em `registros/decomposicoes/<data>/<agente>-<id>.jsonl`.
+
+**Severidade:** WARN se ausente (não bloqueia deploy), mas o `revisor` (Fase 6) marca o agente como "interpretabilidade parcial" no cartão-de-identidade. Escala para BLOCK apenas para agentes ASL-3+ ou que produzem output com efeito irreversível (decisão adiada para revisão v2.6.0 após Onda 6 do Método — smoke test em Aglaia).
+
+**Fonte:** Amodei-Olah-Steinhardt-Christiano-Schulman-Mané 2016 "Concrete Problems in AI Safety" (arXiv 1606.06565) § Interpretability + linhagem Anthropic Circuits (Olah 2020-).
 
 ---
 
@@ -209,6 +237,8 @@ Dois ganhos que o Claude Code não dá hoje:
 1. **Custo/qualidade por fase** — não paga modelo topo para gerar boilerplate.
 2. **Revisão com viés diferente** — Fase 6 audita num modelo distinto do que
    construiu (Fase 5), reduzindo ponto cego.
+
+**Roteamento por ASL (v2.5 — Art. X G2):** além do modelo por fase, cada tool call inclui o `ASL` do agente no header do middleware. Para ASL-3+, o cliente OpenRouter deve garantir que o modelo escolhido tenha capacidade robusta de function-calling e o reflexo `interrupt-before-mutation` esteja ativo (`middleware.antes_asl3()` — §5.5). Modelos que falham em manter `tools` confiável são rebaixados a leitura para ASL-3+ e escalam para o `fallback`. Fonte: Amodei/Anthropic 2023 RSP + LangGraph 2024 `interrupt_before`.
 
 ---
 
@@ -254,7 +284,7 @@ em paralelo no mesmo pedido e compara-se a saída até confiar na portável.
 - `constituicao.md`, `CLAUDE.md`, todo `modelos/`, todo `dados/`.
 - O *texto* de cada skill (`SKILL.md`) e de cada subagent (`.md`).
 - A anatomia de um agente/squad gerado.
-- O fluxo de 9 fases e seus gates.
+- O fluxo de 9 fases e seus gates (agora com Fase 5 em cascata 5.0→5.6 + 8 gates canônicos do Art. X materializados; ver §5.6).
 
 Só muda **quem lê e executa** esse conteúdo.
 ```

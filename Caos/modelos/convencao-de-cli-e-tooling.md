@@ -5,6 +5,10 @@
 > habilidade `criacao-de-mcp` (Fase 5.4) e por qualquer CLI/ferramenta própria de agente.
 > **Não** se absorveu o código literal dos 64 CLIs (G4 — análise estática, Art. VIII); absorveu-se o **contrato**.
 
+> **v2.5 — Art. IV refactored (Constituição):** este documento cobre o **contrato de CLI zero-dep** (padrão herdado de coreyhaines31/marketingskills). A partir de v2.5.0, toda tool consumida por agente Kolden é **MCP-nativa** por padrão; CLIs próprios criados por `criacao-de-mcp` são o **primeiro passo** antes da versão MCP-server, com plano de **dupla-vida de 90 dias** entre CLI e MCP (adapter mantém interface até MCP-nativo estar ligado). Após 90 dias, CLI que não virou MCP-nativo é BLOCK em Fase 6. Fonte: Anthropic 25/nov/2024 MCP spec.
+>
+> Este contrato de CLI **não é revogado** — permanece como o padrão para qualquer CLI/tool própria dentro da janela de dupla-vida.
+
 ## O contrato (toda CLI/ferramenta própria deve cumprir)
 
 1. **Zero-dependência quando possível.** Script Node 18+ usando `fetch` nativo — sem `node_modules`

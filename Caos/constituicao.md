@@ -1,6 +1,6 @@
 # Constituição do Kolden
 
-> **Versão:** 2.4.0 | **Ratificada:** 2026-06-11 | **Última emenda:** 2026-06-24
+> **Versão:** 2.5.0 | **Ratificada:** 2026-06-11 | **Última emenda:** 2026-07-05
 
 Este documento define os princípios fundamentais e inegociáveis da fábrica de agentes
 Kolden. **Todo agente, squad, habilidade, reflexo e especialista — criado pelo Caos ou o
@@ -56,17 +56,34 @@ Nenhum arquivo de agente é escrito antes do PRD ser aprovado pelo usuário.
 
 ---
 
-### IV. Sem invenção de capacidade (DEVE)
+### IV. Sem invenção de capacidade + MCP mandatório (DEVE, com escalada para NÃO-NEGOCIÁVEL em wrappers proprietários)
 
-Um agente só "sabe fazer" o que está documentado e acessível.
+Um agente só "sabe fazer" o que está documentado, acessível e passa por protocolo interoperável.
 
-**Regras:**
+**Regras herdadas (DEVE):**
 - DEVE: Toda ferramenta, API ou MCP citada no agente existe em `ferramentas.md` com
   função, forma de acesso e credencial (via Infisical).
 - NÃO DEVE: O CLAUDE.md do agente prometer integração que não está documentada.
 - NÃO DEVE: Assumir comportamento de ferramenta não verificado na pesquisa.
 
-**Gate:** Fase 6 (Revisão) — BLOCK se alguma ferramenta citada não tiver entrada em `ferramentas.md`.
+**Regras novas — MCP mandatório (NÃO-NEGOCIÁVEL a partir de v2.5.0):**
+- DEVE: Toda tool consumida por um agente Kolden é **MCP server** (nativo ou adapter fino
+  para API pré-existente). Fonte: Anthropic (25/nov/2024) "Introducing the Model Context
+  Protocol" (`anthropic.com/news/model-context-protocol`, modelcontextprotocol.io spec).
+- NÃO DEVE: Existir **wrapper proprietário** que reinvente o protocolo de tool call
+  (por exemplo, cliente HTTP customizado com formato de request/response não-MCP)
+  para tool que poderia ser MCP-nativa. Wrapper thin de CLI (chamada única a binário
+  existente) é aceitável e permanece regra herdada.
+- DEVE: A Fase 5.4 do Ritual (habilidade `criacao-de-mcp`) é o único caminho para
+  criar tool nova; consumo de tool existente passa pelo registry de MCPs em
+  `dados/registro-de-entidades.yaml` (tipo `mcp`).
+- DEVE: Migração de wrapper proprietário existente para MCP-nativo tem plano de
+  dupla-vida por até 90 dias (adapter mantém interface enquanto MCP é ligado); após
+  90 dias, wrapper antigo é BLOCK em Fase 6.
+
+**Gate:** Fase 6 (Revisão) — BLOCK se alguma ferramenta citada não tiver entrada em
+`ferramentas.md`; BLOCK adicional se identificado wrapper proprietário fora da janela
+de dupla-vida.
 
 ---
 
@@ -143,6 +160,89 @@ pelos reflexos `bloqueio-de-quarentena.sh` (PreToolUse) e `gate-reconciliacao.sh
 
 ---
 
+### IX. Grounding compulsório (DEVE)
+
+Fatos datáveis (datas, nomes, números, versões de tools, referências bibliográficas)
+NUNCA são afirmados por *recall* do LLM. Toda asserção factual passa por tool.
+
+**Regras:**
+- DEVE: Toda afirmação de fato datável dentro do trabalho de um agente Kolden — em
+  qualquer artefato gerado (CLAUDE.md do agente novo, PRD, relatório, memória) —
+  vem de tool corroborante (busca ao vivo, MCP resource, `dados/estado-da-arte.md`
+  atualizado ≤ 30 dias).
+- DEVE: Habilidades e MCPs que produzem fato datável como output declaram
+  `grounding_required: true` no frontmatter; consumidores tratam o output como
+  fonte primária.
+- NÃO DEVE: Um agente afirmar "no ano X, Y aconteceu" ou "a versão Z faz W" sem
+  citar tool + timestamp de consulta.
+- EXCEÇÃO: Fatos de conhecimento estável e não-datável (matemática, teoremas,
+  identidades históricas antes de ano-limite documentado no `contexto.md` do
+  domínio) dispensam tool — mas o agente deve reconhecer o limite.
+
+**Gate:** Fase 6 (Revisão) — WARN se agente afirmou fato datável sem tool; BLOCK
+se afirmação for materialmente errada por causa da ausência da tool. Reforçado
+por reflexo PostToolUse `verificacao-de-fato-datavel.sh` (implementação em
+Sub-onda 1.2).
+
+**Fonte:** Brooks (1991) "Intelligence Without Representation" (Artificial
+Intelligence 47) — princípio "use o mundo como seu próprio modelo"; reafirmado
+por Yao et al. (2022) ReAct (arXiv 2210.03629) — grounding via tools reduz
+hallucination; convergência com Pearl (2000) *Causality* — asserção causal
+exige mecanismo, não correlação de LLM.
+
+---
+
+### X. Oito gates canônicos por agent (severidade granular)
+
+Todo agente Kolden nasce, opera e é revisado sob **oito gates canônicos**
+herdados do framework `arquitetura-de-agents-kolden` (produzido pelo Liceu na
+Fase 1 do Contrato `m-20260704-dossie-ia-fase1`; norma canônica em
+`Liceu/frameworks/arquitetura-de-agents-kolden/framework.md` + `procedencia.md`).
+
+Cada gate tem severidade declarada (BLOCK/WARN/INFO) e fase do Ritual onde é
+ativado. O checklist Dike `CAOS-CL-002` (promovido de draft na Onda 1 do
+Contrato `m-20260705`, agora sub-contrato de Onda 1 do `m-20260706`) faz a
+verificação por gate.
+
+| Gate | Nome canônico | Severidade | Fase Ritual | Fonte primária |
+|---|---|---|---|---|
+| G1 | Constituição por-agent declarada (5-15 princípios veto-operacionais em `<Agent>/constitution.md`) | BLOCK | 4 + 6 | Bai-Kadavath-Kundu-Askell-Amodei et al. 2022 "Constitutional AI: Harmlessness from AI Feedback" (arXiv 2212.08073) |
+| G2 | ASL (1\|2\|3\|4+) declarado no PRD e cartão-de-identidade | BLOCK | 4 + 5.5 + 6 | Amodei/Anthropic 2023 "Responsible Scaling Policy" (anthropic.com/rsp) |
+| G3 | Uncertainty statement + Aspiration Criteria (3-5 metas mensuráveis) no PRD; bloco "Incerteza declarada" no CLAUDE.md do agente | BLOCK | 1 + 4 + 5b | Simon (1955) "A Behavioral Model of Rational Choice" (QJE 69) + Hadfield-Menell-Russell-Abbeel-Dragan (2016) CIRL (NeurIPS) + Russell (2019) *Human Compatible* (Viking) |
+| G4 | Off-switch / corrigibility: reflexo `interrupt_before` para ASL-3+ + teste OS-1 no roteiro | BLOCK para ASL-3+; WARN para ASL-2; INFO para ASL-1 | 5.5 + 7 | Hadfield-Menell-Dragan-Abbeel-Russell (2017) "The Off-Switch Game" (IJCAI 2017) |
+| G5 | Plano de introspecção (interpretabilidade): que sinal permite ao Ronan entender por que o agente fez X? | WARN | 3 + 6 | Amodei-Olah-Steinhardt-Christiano-Schulman-Mané (2016) "Concrete Problems in AI Safety" (arXiv 1606.06565) § Interpretability + linhagem Anthropic Circuits (Olah 2020-) |
+| G6 | Orthogonality + Instrumental Convergence (consolidados): tabela auditoria capacidades × risco no PRD + teste AB-3 no roteiro | WARN | 3 + 7 | Bostrom (2012) "The Superintelligent Will" (Minds and Machines 22) + Bostrom (2014) *Superintelligence* cap. 7 |
+| G7 | Grounding compulsório para fatos datáveis (herda Art. IX) | WARN em modelos; BLOCK em asserção materialmente errada | 2 + 5.3-5.4 + 6 | Brooks (1991) "Intelligence Without Representation" (AI 47) |
+| G8 | Predictions Scorecard condicional: obrigatório se agente faz previsões datáveis | BLOCK condicional (só se Fase 1 G8=SIM) | 1 + 4 + 8 | Brooks (2018-2026) rodneybrooks.com Predictions Scorecard (8 edições anuais) |
+
+**Regras:**
+- DEVE: A Fase 4 (PRD) inclui os 5 campos frontmatter enumerados em G1-G3 e G8 como
+  obrigatórios (`constitution:`, `ASL:`, `aspiration_criteria:`, `uncertainty_statement:`,
+  `predictions_scorecard:`). Templates redesenhados em Sub-onda 1.2.
+- DEVE: A Fase 6 (Revisão) executa `CAOS-CL-002` por gate; a verificação é
+  **independente** (executada pelo `revisor` do Caos ou, quando disponível, pelo
+  agente `Dike`).
+- DEVE: A Fase 7 (Teste) inclui os testes canônicos derivados (OS-1, AB-3, UN-2,
+  GR-1, PR-1 — ver §Ritual no CLAUDE.md).
+- NÃO DEVE: Existir agente em produção violando um gate BLOCK. Migração de agentes
+  legados sob v2.5.0 tem plano por squad (Ondas 2-26 do Contrato `m-20260706`).
+- EXCEÇÃO: Interpretabilidade (G5) começa como WARN e escala para BLOCK apenas
+  para agentes com ASL-3+ ou que produzem output com efeito irreversível — decisão
+  adiada para revisão v2.6.0 após Onda 6 do Método (smoke test em Aglaia — Grupo E).
+
+**Gate meta:** Fase 6 (Revisão) — BLOCK se qualquer gate G1-G4 falhar; WARN se
+G5-G7 falhar; INFO condicional para G8. Reforçado pelo checklist `CAOS-CL-002`.
+
+**Fonte agregada:** framework `arquitetura-de-agents-kolden` (Liceu, 2026-07-04) —
+consolidação de 25 mentes + 9 paradigmas em 12 princípios + 5 camadas + 8 critérios
+(o Artigo X é a projeção operacional dos 8 critérios da Parte III do framework na
+fábrica do Caos, com interpretabilidade acrescida como 5º gate por decisão do
+Contrato-mãe `m-20260706` — proposta de emenda ao framework do Liceu para incorporar
+interpretabilidade formalmente será feita via ida-e-volta com o Liceu-chief na
+Onda 6 do Método).
+
+---
+
 ## Governança
 
 ### Processo de emenda
@@ -169,16 +269,25 @@ pelos reflexos `bloqueio-de-quarentena.sh` (PreToolUse) e `gate-reconciliacao.sh
 ### Onde os gates são aplicados
 
 - **Fase 0 (Consulta ao Registro):** Artigo VI (INFO).
-- **Transição Fase 4 → 5:** Artigo III (BLOCK).
-- **Sequência interna da Fase 5 (Construção em cascata):** gates 5.1→5.6 (INFO/WARN entre etapas).
-- **Fase 6 (Revisão — especialista `revisor`):** Artigos I, II, IV, V, VII.
+- **Fase 1 (Diagnóstico — Rodada Alma):** Artigo X G3 e G8 (INFO — perguntas obrigatórias que alimentam Fase 4).
+- **Fase 2 (Pesquisa):** Artigo IX (WARN — fato datável sem tool alerta re-pesquisa) + Artigo X G7.
+- **Fase 3 (Arquitetura):** Artigo X G5 (WARN — plano de introspecção) + G6 (WARN — tabela auditoria capacidades × risco).
+- **Transição Fase 4 → 5:** Artigo III (BLOCK) + Artigo X G1/G2/G3/G8 (BLOCK para os 5 campos frontmatter obrigatórios).
+- **Sequência interna da Fase 5 (Construção em cascata):** gates 5.1→5.6 (INFO/WARN entre etapas) + Artigo X G4 na 5.5 (BLOCK para ASL-3+) + G7 na 5.3-5.4 (`grounding_required` por skill/MCP).
+- **Fase 6 (Revisão — especialista `revisor` executando `CAOS-CL-002`):** Artigos I, II, IV, V, VII + Artigo IX (WARN/BLOCK) + Artigo X (severidade granular por gate).
 - **Fase 7 (Teste de Comportamento — especialista `testador`):** valida que os guardrails
-  derivados destes artigos realmente bloqueiam em execução.
+  derivados destes artigos realmente bloqueiam em execução, incluindo testes canônicos
+  OS-1 (Art. X G4), AB-3 (Art. X G6), UN-2 (Art. X G3), GR-1 (Art. IX + Art. X G7),
+  PR-1 (Art. X G8, condicional).
+- **Fase 8 (Entrega + Registro):** Artigo X G8 — se `predictions_scorecard: true`,
+  publicar em `registros/predictions-scorecard-<agente>.md`.
 - **Pipeline de absorção (`/absorver`):** Artigo VIII — Fase 1 BLOCK (`.git` removido), Fase 2
   BLOCK (segurança SAFE antes de leitura profunda), Fase 3 BLOCK (inventário com schema válido),
   Fase 5 BLOCK (aprovação antes de aplicar), Fase 6.5 BLOCK (reconciliação 100%, `PERDIDO=0`).
-- **Reflexos (`.claude/hooks/`):** reforço determinístico dos Artigos VII e VIII
-  (`pre-ferramenta.sh`, `bloqueio-de-quarentena.sh`, `gate-reconciliacao.sh`).
+- **Reflexos (`.claude/hooks/`):** reforço determinístico dos Artigos VII, VIII e IX
+  (`pre-ferramenta.sh`, `bloqueio-de-quarentena.sh`, `gate-reconciliacao.sh`, novo
+  `verificacao-de-fato-datavel.sh` em Sub-onda 1.2) + reflexo novo
+  `interrupt-before-mutation.sh` para agentes ASL-3+ (Art. X G4).
 
 ### Sequência da Fase 5 — A Construção em cascata (ordem canônica)
 
@@ -215,6 +324,7 @@ O `redator-de-prompts` escreve o `CLAUDE.md` do agente (Fase 5b) ancorado nesta 
 
 | Versão | Data | Mudança |
 |--------|------|---------|
+| 2.5.0 | 2026-07-05 | Sub-onda 1.1 do Contrato `m-20260706-metodo-kolden`: Artigo IV **refactored** (MCP mandatório — Anthropic 2024, com plano de dupla-vida de 90 dias); Artigo IX **novo** (grounding compulsório para fatos datáveis — Brooks 1991); Artigo X **novo** (oito gates canônicos por agent: G1 constitution / G2 ASL / G3 aspiration+uncertainty / G4 off-switch / G5 interpretabilidade / G6 orthogonality+instrumental / G7 grounding / G8 predictions-scorecard-condicional — fonte agregada: framework `arquitetura-de-agents-kolden` do Liceu, Fase 1 do Contrato `m-20260704`; interpretabilidade acrescida como G5 por decisão do Contrato-mãe, proposta de emenda ao framework via ida-e-volta com Liceu-chief na Onda 6 do Método). Seção "Onde os gates são aplicados" expandida com Arts. IX e X. |
 | 2.4.0 | 2026-06-24 | Artigo VIII — Absorção sem perda silenciosa: inciso de reconciliação (F6.5) como condição de saída do pipeline, verificada pelo reflexo determinístico `gate-reconciliacao` (`relatorio-de-perda.md`, invariante de contagem, `PERDIDO=0`); F3 vira gate BLOCK (inventário por ID); capacidades no ledger por ID, não prosa; REUSE de domínio só com diff técnica-a-técnica. Habilidade `protocolo-de-absorcao-sem-perda`. |
 | 2.3.0 | 2026-06-22 | Artigo VIII — Absorção segura de terceiros: quarentena read-only, análise estática por padrão (Docker isolado opt-in nominal), gate de segurança BLOCK antes de leitura profunda, aprovação antes de aplicar, procedência + ledger. Reforçado pelo reflexo `bloqueio-de-quarentena.sh`. |
 | 2.2.0 | 2026-06-22 | Fase 5 reestruturada como Construção em cascata (gates 5.0→5.6: orquestrador → especialistas → habilidades → MCPs → reflexos/memória → referências por camada); herança histórica obrigatória por camada; habilidade `criacao-de-mcp` na 5.4. |
@@ -223,4 +333,4 @@ O `redator-de-prompts` escreve o `CLAUDE.md` do agente (Fase 5b) ancorado nesta 
 
 ---
 
-*Constituição do Kolden v2.4.0 — No princípio era o Caos.*
+*Constituição do Kolden v2.5.0 — No princípio era o Caos.*
