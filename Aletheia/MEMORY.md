@@ -16,6 +16,16 @@ Hipóteses de padrão observadas 1x, aguardando confirmação antes de virar Pad
   - Quando Metis evoluir para instrumentação de North Star (squad de métricas/retenção), absorver a capacidade ali — não invadir o domínio antes.
   - Trigger de promoção: Metis ganhar ≥3 skills de instrumentação contínua.
 
+- **Cliente já operante ≠ ideia crua — Aletheia entra pela caixa-preta operacional, não pelo greenfield** | Origem: BRW Movelaria dossiê Fase B | Detectado: 2026-07-06
+  - Quando o "cliente Kolden" é um negócio já operante (CNPJ, receita, canais), a assunção mais arriscada raramente é "há dor de mercado?" — geralmente é "qual segmento paga de fato?" e "onde vaza o funil já existente?"
+  - Discovery então prioriza: (a) auditar canais de conversão vivos (WhatsApp, CRM, telefone) como fonte primária de voz-do-cliente antes de entrevistar terceiros; (b) tratar URLs mortas / vazamentos operacionais como pré-requisito de qualquer teste de mercado (sem métrica, sem hipótese falsificável); (c) rodar 1 hipótese-tesoura de modelo (é X ou Y?) via entrevista com fundador ANTES do gate — evita testar em posicionamento que não corresponde à operação real.
+  - Trigger de promoção: aplicar padrão em ≥2 clientes operantes e ver se a sequência (H5-onboarding factual → H2-vazamento → H3-WhatsApp → H1-nicho → H4-canal) se repete.
+
+- **VETO parcial em cliente com posicionamento verbal em conflito com registro público** | Origem: BRW Movelaria dossiê Fase B | Detectado: 2026-07-06
+  - Quando 4+ fontes próprias do cliente se contradizem sobre um claim central ("30 anos" vs. FB "10 anos" vs. legenda "Desde 1998" vs. CNPJ 3 meses), a Aletheia deve emitir HALT para qualquer investimento em marca/mídia antes de resolver a incongruência com o fundador (entrevista de 90min tipo Mom Test estruturado).
+  - Regra derivada: nenhuma campanha, brandbook ou lançamento pode usar um claim que o cliente não consegue defender com documento verificável em 5 minutos — porque a concorrência desmonta em 5.
+  - Trigger de promoção: aplicar em ≥1 outro cliente com claim contestável e validar que o HALT preservou reputação.
+
 ## Arquivado
 Padrões que se mostraram errados ou superados — mantidos para não repetir o erro.
 
