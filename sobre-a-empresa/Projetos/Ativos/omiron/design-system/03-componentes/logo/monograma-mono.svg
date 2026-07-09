@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Omiron — Monograma Imperial · versão MONO (impressão B&W)
+  ==============================================================================
+  Otimizada para impressão de traço a partir de 15mm de altura em preto puro
+  sobre marfim/branco (papel timbrado B&W, marca d'água em documento oficial,
+  fax se ainda existisse). Também serve como versão sub-preto para gravação
+  em latão/couro (aplicações táteis).
+
+  DIFERENÇAS EM RELAÇÃO AO HERO
+
+  1. Modulação axial ATENUADA:
+     — o Didone alto contraste do hero (topo/base 13, laterais 15) se torna
+       (topo/base 15, laterais 17). Mantém a assinatura Didone, mas menos
+       agressiva — sobrevive à absorção de tinta no papel.
+
+  2. Serifa dupla PRESENTE mas mais robusta:
+     — hastes de 2.4 (não 1.6) e serifas bracket de 1.8 (não 1.2).
+     Impressão em 15mm ainda lê a assinatura autoral.
+
+  3. Sem cor via currentColor — FORÇA fill negro puro no path do path
+     principal. Uso destinado a impressão, onde currentColor é ambíguo.
+
+  4. Hairlines de segurança: nenhuma linha abaixo de 1.5 unidade na malha
+     do viewBox 200x200 (equivale a 0.5pt a 15mm de altura).
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 200"
+  role="img"
+  aria-labelledby="omiron-mono-title"
+  fill="#000000">
+  <title id="omiron-mono-title">Omiron — Monograma Imperial (mono print)</title>
+
+  <!--
+    O — modulação axial atenuada para impressão.
+    Externa: rx=75, ry=65 (idêntico ao hero).
+    Interna: rx=58, ry=50 (2 uni mais estreito em ambos eixos).
+    Espessura: laterais 17, topo/base 15.
+  -->
+  <path
+    fill-rule="evenodd"
+    d="
+      M 25 115
+      A 75 65 0 1 1 175 115
+      A 75 65 0 1 1 25 115
+      Z
+      M 42 115
+      A 58 50 0 1 0 158 115
+      A 58 50 0 1 0 42 115
+      Z
+    "/>
+
+  <!-- M — mesma geometria do hero, com hastes engrossadas em 1 uni cada -->
+  <path
+    d="
+      M 38 43
+      L 47 43
+      L 47 115
+      L 38 115
+      Z
+
+      M 153 43
+      L 162 43
+      L 162 115
+      L 153 115
+      Z
+
+      M 47 43
+      L 56 43
+      L 100 101.5
+      L 144 43
+      L 153 43
+      L 100 111
+      Z
+    "/>
+
+  <!--
+    Serifa dupla central — hastes 2.4 (não 1.6), brackets 1.8 (não 1.2).
+    Robustez de impressão a 15mm.
+  -->
+  <path
+    d="
+      M 96.4 100
+      L 98.8 100
+      L 98.8 118
+      L 96.4 118
+      Z
+
+      M 101.2 100
+      L 103.6 100
+      L 103.6 118
+      L 101.2 118
+      Z
+
+      M 94 118
+      L 101 118
+      L 101 119.8
+      L 94 119.8
+      Z
+
+      M 99 118
+      L 106 118
+      L 106 119.8
+      L 99 119.8
+      Z
+    "/>
+
+  <!-- Serifas base do M -->
+  <path
+    d="
+      M 29 112.2
+      L 51 112.2
+      L 51 115.8
+      L 29 115.8
+      Z
+
+      M 149 112.2
+      L 171 112.2
+      L 171 115.8
+      L 149 115.8
+      Z
+    "/>
+
+  <!-- Serifas superiores do M -->
+  <path
+    d="
+      M 27 40.2
+      L 53 40.2
+      L 53 43.8
+      L 27 43.8
+      Z
+
+      M 147 40.2
+      L 173 40.2
+      L 173 43.8
+      L 147 43.8
+      Z
+    "/>
+</svg>

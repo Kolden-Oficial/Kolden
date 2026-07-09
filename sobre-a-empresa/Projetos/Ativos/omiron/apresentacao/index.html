@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omiron · Brandbook para Dr. Ariosto · 08/07/2026</title>
+<meta name="description" content="Deck de apresentação do brandbook Omiron — sistema de monitoramento terapêutico psiquiátrico. Reunião com Dr. Ariosto Filho em 08/07/2026 (Clínica Omiron, Belo Horizonte). Padrão Rosie — nav lateral 220px, scroll-snap, 14 slides. Sob NDA.">
+
+<!-- Design tokens do Omiron -->
+<link rel="stylesheet" href="../design-system/02-tokens/tokens.css">
+
+<!-- Fontes Google (fallback declarado no CSS) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================================
+   Deck Omiron — padrão Rosie
+   ============================================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--omiron-background);
+  color: var(--omiron-foreground);
+  font-family: var(--omiron-fonte-corpo);
+  font-size: var(--omiron-fs-body);
+  line-height: var(--omiron-lh-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ------------------------------------------------------------------
+   NAV LATERAL (220px)
+   ------------------------------------------------------------------ */
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 220px;
+  padding: 2rem 1.25rem;
+  background: var(--omiron-fundo-elevado);
+  border-right: 1px solid var(--omiron-dourado-antigo);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  z-index: 50;
+  overflow-y: auto;
+}
+.nav__brand {
+  font-family: var(--omiron-fonte-titulo);
+  font-size: 2rem;
+  color: var(--omiron-dourado-alto);
+  line-height: 1;
+  margin-bottom: 0.15rem;
+}
+.nav__brand-caption {
+  font-family: var(--omiron-fonte-corpo);
+  font-style: italic;
+  font-size: var(--omiron-fs-caption);
+  color: var(--omiron-marfim-suave);
+  margin-bottom: 1.75rem;
+  letter-spacing: 0.02em;
+}
+.nav__item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  padding: 0.5rem 0.35rem;
+  text-decoration: none;
+  color: var(--omiron-marfim-suave);
+  font-family: var(--omiron-fonte-corpo);
+  font-size: var(--omiron-fs-body-sm);
+  border-left: 2px solid transparent;
+  transition: color var(--omiron-duracao-media) var(--omiron-easing-classica-suave),
+              border-color var(--omiron-duracao-media) var(--omiron-easing-classica-suave),
+              padding-left var(--omiron-duracao-media) var(--omiron-easing-classica-suave);
+  cursor: pointer;
+}
+.nav__item:hover, .nav__item:focus-visible {
+  color: var(--omiron-marfim);
+  border-left-color: var(--omiron-dourado-antigo);
+  padding-left: 0.55rem;
+  outline: none;
+}
+.nav__item.is-active {
+  color: var(--omiron-marfim);
+  border-left-color: var(--omiron-dourado-alto);
+  font-weight: var(--omiron-fw-medium);
+  padding-left: 0.55rem;
+}
+.nav__num {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  color: var(--omiron-marfim-suave);
+  min-width: 1.5rem;
+  opacity: 0.7;
+}
+.nav__item.is-active .nav__num { color: var(--omiron-dourado-alto); opacity: 1; }
+.nav__footer {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgb(168 129 72 / 0.2);
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.65rem;
+  color: var(--omiron-marfim-suave);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+/* ------------------------------------------------------------------
+   DECK — scroll-snap
+   ------------------------------------------------------------------ */
+.deck {
+  margin-left: 220px;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.slide {
+  min-height: 100vh;
+  padding: clamp(2rem, 5vh, 4.5rem) clamp(2rem, 5vw, 4.5rem) 5rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: var(--omiron-fundo-profundo);
+  border-bottom: 1px solid rgb(168 129 72 / 0.15);
+}
+
+/* Footer permanente por slide */
+.foot {
+  position: absolute;
+  bottom: 1.5rem;
+  left: clamp(2rem, 5vw, 4.5rem);
+  right: clamp(2rem, 5vw, 4.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.65rem;
+  color: var(--omiron-marfim-suave);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.foot__brand { font-weight: var(--omiron-fw-medium); color: var(--omiron-dourado-alto); }
+.foot__nda { font-style: italic; text-transform: none; letter-spacing: 0.02em; }
+
+/* ------------------------------------------------------------------
+   TIPOGRAFIA
+   ------------------------------------------------------------------ */
+.eyebrow {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.72rem;
+  font-weight: var(--omiron-fw-medium);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--omiron-dourado-alto);
+  margin-bottom: 1.25rem;
+}
+h1.display {
+  font-family: var(--omiron-fonte-titulo);
+  font-size: clamp(3.5rem, 10vw, 7rem);
+  font-weight: var(--omiron-fw-regular);
+  line-height: 1;
+  color: var(--omiron-marfim);
+}
+h2.title {
+  font-family: var(--omiron-fonte-titulo);
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  font-weight: var(--omiron-fw-regular);
+  line-height: var(--omiron-lh-h1);
+  color: var(--omiron-dourado-alto);
+  margin-bottom: 1rem;
+}
+h3.subtitle {
+  font-family: var(--omiron-fonte-corpo);
+  font-weight: var(--omiron-fw-medium);
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  color: var(--omiron-marfim);
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+p.lead {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  line-height: 1.6;
+  color: var(--omiron-marfim);
+  max-width: 62ch;
+  margin-bottom: 1.25rem;
+}
+p.body {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--omiron-marfim);
+  max-width: 62ch;
+  margin-bottom: 1rem;
+}
+p.body em { color: var(--omiron-marfim-suave); font-style: italic; }
+
+/* Fio-loop de destaque em palavras-chave */
+.highlight {
+  position: relative;
+  display: inline-block;
+  color: var(--omiron-marfim);
+}
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: -2%;
+  right: -2%;
+  bottom: -0.05em;
+  height: 0.5em;
+  border-bottom: 1.5px solid var(--omiron-dourado-antigo);
+  border-radius: 0 0 60% 40% / 0 0 80% 100%;
+  pointer-events: none;
+}
+
+/* ------------------------------------------------------------------
+   SLIDE 1 · CAPA
+   ------------------------------------------------------------------ */
+.cover {
+  background:
+    linear-gradient(180deg, rgb(20 16 16 / 0.55) 0%, rgb(20 16 16 / 0.75) 65%, rgb(20 16 16 / 0.9) 100%),
+    url('../docs/pesquisa-referencias/canva-thumbnails/slide-18-vencedor.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--omiron-marfim);
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: end;
+}
+.cover__inner {
+  padding: clamp(2rem, 6vh, 5rem) clamp(2rem, 5vw, 4.5rem) 6rem;
+}
+.cover__signature {
+  margin-top: 3rem;
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.9rem;
+  color: var(--omiron-marfim);
+  letter-spacing: 0.06em;
+  max-width: 60ch;
+}
+.cover__signature strong { color: var(--omiron-dourado-alto); font-weight: var(--omiron-fw-medium); }
+.cover__slogan {
+  font-family: var(--omiron-fonte-corpo);
+  font-style: italic;
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  color: var(--omiron-marfim);
+  margin-top: 1.5rem;
+  max-width: 46ch;
+}
+
+/* ------------------------------------------------------------------
+   CARDS & GRIDS
+   ------------------------------------------------------------------ */
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
+.grid-2-fixed { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem; }
+.grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+
+.card {
+  padding: 1.5rem 1.5rem;
+  background: var(--omiron-fundo-elevado);
+  border-radius: var(--omiron-radius-lg);
+  border: 1px solid rgb(168 129 72 / 0.2);
+  border-left: 3px solid var(--omiron-dourado-antigo);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.card__num {
+  font-family: var(--omiron-fonte-titulo);
+  font-size: 1.75rem;
+  color: var(--omiron-dourado-alto);
+  line-height: 1;
+}
+.card__title {
+  font-family: var(--omiron-fonte-corpo);
+  font-weight: var(--omiron-fw-semibold);
+  font-size: 1.1rem;
+  color: var(--omiron-marfim);
+  line-height: 1.3;
+}
+.card__body {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.9rem;
+  color: var(--omiron-marfim);
+  line-height: 1.55;
+}
+.card__body em { color: var(--omiron-marfim-suave); font-style: italic; }
+.card__anchor {
+  padding-top: 0.6rem;
+  margin-top: auto;
+  border-top: 1px solid rgb(168 129 72 / 0.2);
+  font-family: var(--omiron-fonte-corpo);
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--omiron-marfim-suave);
+  line-height: 1.5;
+}
+
+/* ------------------------------------------------------------------
+   PAPIRO — bloco (fundo marfim)
+   ------------------------------------------------------------------ */
+.papiro {
+  padding: 2rem 2.25rem;
+  background: var(--omiron-fundo-marfim);
+  color: var(--omiron-marrom-couro);
+  border-radius: var(--omiron-radius-md);
+  border: 1px solid var(--omiron-marrom-couro);
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 68ch;
+  margin-top: 1.5rem;
+}
+.papiro em { font-style: italic; }
+
+/* ------------------------------------------------------------------
+   BALANCE — barras horizontais para tom em 4 dimensões
+   ------------------------------------------------------------------ */
+.balance-list { display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem; max-width: 46rem; }
+.balance {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.35rem;
+  align-items: baseline;
+}
+.balance__label {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 1rem;
+  color: var(--omiron-marfim);
+}
+.balance__value {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.78rem;
+  color: var(--omiron-dourado-alto);
+  letter-spacing: 0.06em;
+}
+.balance__bar {
+  grid-column: 1 / -1;
+  height: 8px;
+  border-radius: 4px;
+  background: rgb(184 172 147 / 0.15);
+  overflow: hidden;
+}
+.balance__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--omiron-dourado-antigo) 0%, var(--omiron-dourado-alto) 100%);
+  border-radius: 4px;
+}
+
+/* ------------------------------------------------------------------
+   DO / DON'T
+   ------------------------------------------------------------------ */
+.dodont { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.dodont__col {
+  padding: 1.25rem 1.25rem;
+  background: var(--omiron-fundo-elevado);
+  border-radius: var(--omiron-radius-md);
+  border: 1px solid rgb(168 129 72 / 0.2);
+}
+.dodont__col--do { border-left: 3px solid var(--omiron-dourado-antigo); }
+.dodont__col--dont { border-left: 3px solid var(--omiron-ambar-terra); }
+.dodont__head {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 0.65rem;
+  font-weight: var(--omiron-fw-medium);
+  color: var(--omiron-dourado-alto);
+}
+.dodont__col--dont .dodont__head { color: var(--omiron-ambar-crepusculo); }
+.dodont__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--omiron-marfim);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.dodont__list li { padding-left: 1rem; position: relative; }
+.dodont__list li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: var(--omiron-dourado-antigo);
+  font-weight: bold;
+}
+.dodont__list li em { color: var(--omiron-marfim-suave); font-style: italic; }
+
+/* ------------------------------------------------------------------
+   SWATCH
+   ------------------------------------------------------------------ */
+.swatch-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; margin-top: 1rem; }
+.swatch {
+  border-radius: var(--omiron-radius-sm);
+  overflow: hidden;
+  border: 1px solid rgb(168 129 72 / 0.2);
+  background: var(--omiron-fundo-elevado);
+}
+.swatch__chip { height: 56px; }
+.swatch__info { padding: 0.5rem 0.65rem; }
+.swatch__token {
+  display: block;
+  font-family: 'EB Garamond', monospace;
+  font-size: 0.68rem;
+  color: var(--omiron-dourado-alto);
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+.swatch__role {
+  display: block;
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.72rem;
+  color: var(--omiron-marfim);
+  margin-top: 0.15rem;
+}
+
+/* ------------------------------------------------------------------
+   CANAIS (miniaturas conceituais)
+   ------------------------------------------------------------------ */
+.channel-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.channel {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--omiron-radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgb(168 129 72 / 0.25);
+  overflow: hidden;
+}
+.channel__label {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: var(--omiron-fw-medium);
+}
+.channel__title {
+  font-family: var(--omiron-fonte-titulo);
+  font-size: 1.6rem;
+  line-height: 1.05;
+}
+.channel__desc {
+  font-family: var(--omiron-fonte-corpo);
+  font-style: italic;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.channel--app {
+  background: linear-gradient(135deg, var(--omiron-fundo-profundo) 0%, var(--omiron-fundo-elevado) 100%);
+  color: var(--omiron-marfim);
+}
+.channel--app .channel__label { color: var(--omiron-dourado-alto); }
+.channel--receita { background: var(--omiron-fundo-marfim); color: var(--omiron-marrom-couro); border-color: var(--omiron-marrom-couro); }
+.channel--receita .channel__label { color: var(--omiron-marrom-couro); }
+.channel--insta { background: linear-gradient(160deg, var(--omiron-fundo-marfim) 0%, var(--omiron-marfim-suave) 100%); color: var(--omiron-marrom-couro); border-color: var(--omiron-dourado-antigo); }
+.channel--insta .channel__label { color: var(--omiron-dourado-antigo); }
+.channel--email {
+  background: linear-gradient(180deg,
+    var(--omiron-fundo-marfim) 0%, var(--omiron-fundo-marfim) 22%,
+    var(--omiron-fundo-profundo) 22%, var(--omiron-fundo-profundo) 78%,
+    var(--omiron-fundo-marfim) 78%, var(--omiron-fundo-marfim) 100%);
+  color: var(--omiron-marfim);
+}
+.channel--email .channel__label { color: var(--omiron-dourado-alto); }
+.channel--email .channel__title { color: var(--omiron-marfim); }
+.channel--email .channel__desc { color: var(--omiron-marfim); }
+
+/* ------------------------------------------------------------------
+   QUÍRON — bolha de chat de exemplo
+   ------------------------------------------------------------------ */
+.quiron-bubble {
+  background: var(--omiron-fundo-elevado);
+  border: 1px solid var(--omiron-dourado-antigo);
+  border-radius: var(--omiron-radius-lg);
+  padding: 1.25rem 1.5rem;
+  max-width: 62ch;
+  margin: 0.75rem 0;
+}
+.quiron-bubble__head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+.quiron-bubble__name {
+  font-family: var(--omiron-fonte-corpo);
+  font-weight: var(--omiron-fw-semibold);
+  color: var(--omiron-dourado-alto);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+.quiron-bubble__tag {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.65rem;
+  color: var(--omiron-marfim-suave);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.quiron-bubble__body {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.95rem;
+  color: var(--omiron-marfim);
+  line-height: 1.6;
+}
+.quiron-input {
+  font-family: var(--omiron-fonte-corpo);
+  font-style: italic;
+  color: var(--omiron-marfim-suave);
+  font-size: 0.9rem;
+  margin: 0.75rem 0 0.25rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid var(--omiron-marfim-suave);
+  max-width: 60ch;
+}
+.quiron-foot {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--omiron-fundo-marfim);
+  color: var(--omiron-marrom-couro);
+  border-radius: var(--omiron-radius-sm);
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.8rem;
+  font-style: italic;
+  max-width: 62ch;
+}
+
+/* ------------------------------------------------------------------
+   CANON blocks (compliance)
+   ------------------------------------------------------------------ */
+.canon {
+  padding: 1.25rem 1.5rem;
+  background: var(--omiron-fundo-elevado);
+  border-radius: var(--omiron-radius-md);
+  border-left: 3px solid var(--omiron-dourado-alto);
+  margin-top: 1rem;
+}
+.canon__label {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--omiron-dourado-alto);
+  margin-bottom: 0.5rem;
+  font-weight: var(--omiron-fw-medium);
+}
+.canon__text {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.92rem;
+  color: var(--omiron-marfim);
+  line-height: 1.55;
+  font-style: italic;
+}
+
+/* ------------------------------------------------------------------
+   TENSIONS
+   ------------------------------------------------------------------ */
+.tensions { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.tension {
+  padding: 1.25rem 1.25rem;
+  background: var(--omiron-fundo-elevado);
+  border-radius: var(--omiron-radius-md);
+  border-left: 3px solid var(--omiron-ambar-crepusculo);
+}
+.tension__num { font-family: var(--omiron-fonte-titulo); font-size: 1.8rem; color: var(--omiron-ambar-crepusculo); line-height: 1; }
+.tension__title { font-family: var(--omiron-fonte-corpo); font-weight: var(--omiron-fw-semibold); font-size: 1rem; color: var(--omiron-marfim); margin: 0.4rem 0 0.5rem; }
+.tension__body { font-family: var(--omiron-fonte-corpo); font-size: 0.85rem; color: var(--omiron-marfim); line-height: 1.5; }
+.tension__body em { color: var(--omiron-marfim-suave); font-style: italic; }
+
+/* ------------------------------------------------------------------
+   NEXT STEPS
+   ------------------------------------------------------------------ */
+.steps { list-style: none; padding: 0; margin: 1.5rem 0 0; display: flex; flex-direction: column; gap: 1rem; max-width: 78ch; }
+.step {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--omiron-fundo-elevado);
+  border-radius: var(--omiron-radius-md);
+  border-left: 3px solid var(--omiron-dourado-antigo);
+  align-items: baseline;
+}
+.step__num { font-family: var(--omiron-fonte-titulo); font-size: 2.2rem; color: var(--omiron-dourado-alto); line-height: 1; }
+.step__title { font-family: var(--omiron-fonte-corpo); font-weight: var(--omiron-fw-semibold); color: var(--omiron-marfim); margin-bottom: 0.35rem; }
+.step__body { font-family: var(--omiron-fonte-corpo); font-size: 0.9rem; color: var(--omiron-marfim); line-height: 1.55; }
+.step__body em { color: var(--omiron-marfim-suave); font-style: italic; }
+
+/* ------------------------------------------------------------------
+   FIM — hero final
+   ------------------------------------------------------------------ */
+.end {
+  background:
+    linear-gradient(180deg, rgb(20 16 16 / 0.65) 0%, rgb(20 16 16 / 0.88) 100%),
+    url('../docs/pesquisa-referencias/canva-thumbnails/slide-18-vencedor.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  align-items: center;
+}
+.end h1.display {
+  font-size: clamp(3rem, 8vw, 6rem);
+  color: var(--omiron-dourado-alto);
+  text-shadow: 0 4px 24px rgb(0 0 0 / 0.6);
+}
+.end .cover__slogan {
+  color: var(--omiron-marfim);
+  margin-top: 2rem;
+  text-align: center;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+/* ------------------------------------------------------------------
+   RESPONSIVE — colapsa nav no mobile (< 768px)
+   ------------------------------------------------------------------ */
+@media (max-width: 768px) {
+  .nav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--omiron-dourado-antigo);
+    padding: 1.25rem 1.25rem;
+    inset: auto;
+  }
+  .deck {
+    margin-left: 0;
+    height: auto;
+    overflow-y: visible;
+    scroll-snap-type: none;
+  }
+  .slide {
+    min-height: auto;
+    padding: 2rem 1.25rem 5rem;
+    scroll-snap-stop: normal;
+  }
+  .grid-2-fixed { grid-template-columns: 1fr; }
+  .cover, .end {
+    background-attachment: scroll;
+  }
+}
+
+/* ============================================================
+   INCREMENTO VISUAL — 2026-07-06 (Harmonia)
+   Símbolo autoral · ícones dos 4 pilares · papiro procedural ·
+   fade cinematográfico por slide · ornamento neoclássico.
+   ============================================================ */
+
+/* Símbolo Omiron — cor herdada de currentColor */
+.omiron-symbol {
+  display: inline-block;
+  color: var(--omiron-dourado-antigo);
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.omiron-symbol svg { display: block; width: 100%; height: 100%; }
+.nav__brand-mark {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.15rem;
+}
+.nav__brand-mark .omiron-symbol { width: 32px; height: 32px; }
+
+.cover__mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.cover__mark .omiron-symbol {
+  width: 48px;
+  height: 48px;
+  color: var(--omiron-dourado-alto);
+}
+.cover__mark .cover__mark-name {
+  font-family: var(--omiron-fonte-corpo);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--omiron-dourado-alto);
+}
+
+/* Slide 1 · lockup vertical como sigilo da capa (30% da altura útil) */
+.cover__lockup {
+  width: auto;
+  height: 30vh;
+  min-height: 200px;
+  max-height: 320px;
+  aspect-ratio: 240 / 320;
+  color: var(--omiron-dourado-alto);
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 4px 24px rgb(168 129 72 / 0.35));
+}
+.cover__lockup svg { width: 100%; height: 100%; display: block; }
+
+/* Utilitário — visualmente oculto, presente para leitor de tela */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Selo do monograma no canto inferior direito de cada slide.
+   ~4% da largura do slide (regra do briefing).
+   Aplicado a TODOS os slides via ::after do .slide (não invasivo). */
+.slide::after {
+  content: '';
+  position: absolute;
+  bottom: 1.3rem;
+  right: clamp(2rem, 5vw, 4.5rem);
+  width: clamp(28px, 4vw, 44px);
+  height: clamp(28px, 4vw, 44px);
+  color: var(--omiron-dourado-antigo);
+  background: currentColor;
+  -webkit-mask-image: url("../design-system/03-componentes/logo/monograma-40.svg");
+          mask-image: url("../design-system/03-componentes/logo/monograma-40.svg");
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  opacity: 0.75;
+  pointer-events: none;
+}
+/* Slide de capa NÃO recebe o selo (a capa já é toda o monograma). */
+.slide.cover::after,
+.slide.end::after { content: none; }
+
+.foot__mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.foot__mark .omiron-symbol { width: 16px; height: 16px; color: var(--omiron-dourado-antigo); }
+
+/* Ícones dos 4 pilares */
+.card__icon {
+  width: 36px;
+  height: 36px;
+  color: var(--omiron-dourado-antigo);
+  margin-bottom: 0.25rem;
+  transition: color var(--omiron-duracao-media) var(--omiron-easing-classica-suave);
+}
+.card__icon svg { display: block; width: 100%; height: 100%; }
+.card:hover .card__icon { color: var(--omiron-dourado-alto); }
+
+/* Ornamento neoclássico entre blocos */
+.ornamento-neoclassico {
+  border: none;
+  height: 24px;
+  margin: 1.75rem 0 0.5rem;
+  background:
+    linear-gradient(90deg,
+      transparent 0%,
+      transparent calc(50% - 32px),
+      var(--omiron-dourado-antigo) calc(50% - 32px),
+      var(--omiron-dourado-antigo) calc(50% - 8px),
+      transparent calc(50% - 8px),
+      transparent calc(50% + 8px),
+      var(--omiron-dourado-antigo) calc(50% + 8px),
+      var(--omiron-dourado-antigo) calc(50% + 32px),
+      transparent calc(50% + 32px)) center / 100% 1px no-repeat;
+  position: relative;
+  opacity: 0.5;
+}
+.ornamento-neoclassico::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border: 1px solid var(--omiron-dourado-antigo);
+  background: var(--omiron-fundo-profundo);
+}
+.ornamento-neoclassico::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3px;
+  height: 3px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: var(--omiron-dourado-alto);
+}
+
+/* Papiro procedural em .papiro e canais claros */
+.papiro { position: relative; isolation: isolate; }
+.papiro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  filter: url(#papiro-textura);
+  background: var(--omiron-fundo-marfim);
+  opacity: 0.45;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+}
+.papiro > * { position: relative; z-index: 1; }
+
+.channel--receita, .channel--insta { position: relative; isolation: isolate; }
+.channel--receita::before, .channel--insta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  filter: url(#papiro-textura);
+  background: var(--omiron-fundo-marfim);
+  opacity: 0.4;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+}
+.channel > * { position: relative; z-index: 1; }
+
+/* Bloco quiron-foot também é papiro cross-canal */
+.quiron-foot { position: relative; isolation: isolate; }
+.quiron-foot::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  filter: url(#papiro-textura);
+  background: var(--omiron-fundo-marfim);
+  opacity: 0.4;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+}
+.quiron-foot > * { position: relative; z-index: 1; }
+
+/* Fade cinematográfico do conteúdo do slide (complementa scroll-snap) */
+.slide > *:not(.foot):not(.cover__inner) {
+  opacity: 0;
+  transform: translate3d(0, 14px, 0);
+  transition: opacity var(--omiron-duracao-lenta) var(--omiron-easing-classica-solene),
+              transform var(--omiron-duracao-lenta) var(--omiron-easing-classica-solene);
+}
+.slide.is-visible > *:not(.foot):not(.cover__inner) {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+/* Stagger em cards internos */
+.slide.is-visible .grid-2 > *,
+.slide.is-visible .grid-3 > *,
+.slide.is-visible .grid-2-fixed > *,
+.slide.is-visible .grid-4 > *,
+.slide.is-visible .tensions > *,
+.slide.is-visible .dodont > *,
+.slide.is-visible .swatch-list > *,
+.slide.is-visible .channel-grid > *,
+.slide.is-visible .steps > *,
+.slide.is-visible .balance-list > * {
+  animation: omiron-slide-in var(--omiron-duracao-lenta) var(--omiron-easing-classica-suave) both;
+}
+.slide.is-visible .grid-2 > *:nth-child(1),
+.slide.is-visible .grid-3 > *:nth-child(1),
+.slide.is-visible .grid-2-fixed > *:nth-child(1),
+.slide.is-visible .grid-4 > *:nth-child(1),
+.slide.is-visible .tensions > *:nth-child(1),
+.slide.is-visible .dodont > *:nth-child(1),
+.slide.is-visible .channel-grid > *:nth-child(1),
+.slide.is-visible .steps > *:nth-child(1) { animation-delay: 100ms; }
+.slide.is-visible .grid-2 > *:nth-child(2),
+.slide.is-visible .grid-3 > *:nth-child(2),
+.slide.is-visible .grid-2-fixed > *:nth-child(2),
+.slide.is-visible .grid-4 > *:nth-child(2),
+.slide.is-visible .tensions > *:nth-child(2),
+.slide.is-visible .dodont > *:nth-child(2),
+.slide.is-visible .channel-grid > *:nth-child(2),
+.slide.is-visible .steps > *:nth-child(2) { animation-delay: 180ms; }
+.slide.is-visible .grid-3 > *:nth-child(3),
+.slide.is-visible .grid-2-fixed > *:nth-child(3),
+.slide.is-visible .grid-4 > *:nth-child(3),
+.slide.is-visible .tensions > *:nth-child(3),
+.slide.is-visible .channel-grid > *:nth-child(3),
+.slide.is-visible .steps > *:nth-child(3) { animation-delay: 260ms; }
+.slide.is-visible .grid-3 > *:nth-child(4),
+.slide.is-visible .grid-2-fixed > *:nth-child(4),
+.slide.is-visible .grid-4 > *:nth-child(4),
+.slide.is-visible .tensions > *:nth-child(4),
+.slide.is-visible .channel-grid > *:nth-child(4),
+.slide.is-visible .steps > *:nth-child(4) { animation-delay: 340ms; }
+.slide.is-visible .grid-3 > *:nth-child(5),
+.slide.is-visible .tensions > *:nth-child(5) { animation-delay: 420ms; }
+.slide.is-visible .grid-3 > *:nth-child(6),
+.slide.is-visible .tensions > *:nth-child(6) { animation-delay: 500ms; }
+
+@keyframes omiron-slide-in {
+  from { opacity: 0; transform: translate3d(0, 12px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+/* Cover — os elementos entram sempre (não dependem do observer) */
+.cover .cover__inner > * {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  animation: omiron-slide-in 640ms var(--omiron-easing-classica-solene) forwards;
+}
+.cover .cover__inner > *:nth-child(1) { animation-delay: 80ms; }
+.cover .cover__inner > *:nth-child(2) { animation-delay: 180ms; }
+.cover .cover__inner > *:nth-child(3) { animation-delay: 280ms; }
+.cover .cover__inner > *:nth-child(4) { animation-delay: 380ms; }
+.cover .cover__inner > *:nth-child(5) { animation-delay: 480ms; }
+
+/* Card hover cinematográfico */
+.card {
+  transition: transform var(--omiron-duracao-lenta) var(--omiron-easing-classica-suave),
+              box-shadow var(--omiron-duracao-lenta) var(--omiron-easing-classica-suave),
+              border-color var(--omiron-duracao-lenta) var(--omiron-easing-classica-suave);
+  will-change: transform;
+}
+.card:hover {
+  transform: translate3d(0, -2px, 0);
+  border-color: rgb(168 129 72 / 0.5);
+  box-shadow: 0 10px 28px rgb(0 0 0 / 0.35), 0 2px 6px rgb(168 129 72 / 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .deck { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  .slide > *:not(.foot):not(.cover__inner),
+  .slide.is-visible > *:not(.foot):not(.cover__inner),
+  .cover .cover__inner > * {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+  .card:hover { transform: none !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- ==========================================================
+     SVG SPRITE GLOBAL — símbolo Omiron, ícones dos 4 pilares,
+     filtro papiro procedural.
+     Consumidos via <svg><use href="#..."/></svg>.
+     ========================================================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="papiro-textura" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" seed="7" stitchTiles="stitch" result="ruido"/>
+      <feColorMatrix in="ruido" type="matrix" values="
+          0.5 0    0    0    0.55
+          0.4 0    0    0    0.45
+          0.3 0    0    0    0.28
+          0   0    0    0.6  0" result="sepia"/>
+      <feComposite in="sepia" in2="SourceGraphic" operator="in"/>
+    </filter>
+
+    <!-- ==============================================================
+         SÍMBOLO OMIRON — Monograma Imperial (Direção 1, Aglaia).
+         Substituído em 2026-07-07 (Harmonia) para reunião 08/07.
+         Detalhes técnicos em design-system/03-componentes/logo/leia-me.md.
+         ============================================================== -->
+    <symbol id="omiron-mark" viewBox="0 0 200 200">
+      <g fill="currentColor">
+        <path fill-rule="evenodd" d="M 24 115 A 76 66 0 1 1 176 115 A 76 66 0 1 1 24 115 Z M 40 115 A 60 48 0 1 0 160 115 A 60 48 0 1 0 40 115 Z"/>
+        <path d="M 38 46 L 48 46 L 48 115 L 38 115 Z M 152 46 L 162 46 L 162 115 L 152 115 Z M 48 46 L 58 46 L 100 100 L 142 46 L 152 46 L 100 109 Z"/>
+        <path d="M 32 112 L 54 112 L 54 116 L 32 116 Z M 146 112 L 168 112 L 168 116 L 146 116 Z"/>
+        <path d="M 32 44 L 54 44 L 54 48 L 32 48 Z M 146 44 L 168 44 L 168 48 L 146 48 Z"/>
+      </g>
+    </symbol>
+
+    <symbol id="omiron-mark-hero" viewBox="0 0 200 200">
+      <g fill="currentColor">
+        <path fill-rule="evenodd" d="M 25 115 A 75 65 0 1 1 175 115 A 75 65 0 1 1 25 115 Z M 40 115 A 60 52 0 1 0 160 115 A 60 52 0 1 0 40 115 Z"/>
+        <path d="M 39 43 L 47 43 L 47 115 L 39 115 Z M 153 43 L 161 43 L 161 115 L 153 115 Z M 47 43 L 55 43 L 100 101.5 L 145 43 L 153 43 L 100 111 Z"/>
+        <path d="M 96.8 100 L 98.4 100 L 98.4 118 L 96.8 118 Z M 101.6 100 L 103.2 100 L 103.2 118 L 101.6 118 Z M 94.6 118 L 100.6 118 L 100.6 119.4 L 94.6 119.4 Z M 99.4 118 L 105.4 118 L 105.4 119.4 L 99.4 119.4 Z"/>
+        <path d="M 30 112.5 L 50 112.5 L 50 115.5 L 30 115.5 Z M 150 112.5 L 170 112.5 L 170 115.5 L 150 115.5 Z"/>
+        <path d="M 28 40.5 L 52 40.5 L 52 43.5 L 28 43.5 Z M 148 40.5 L 172 40.5 L 172 43.5 L 148 43.5 Z"/>
+      </g>
+    </symbol>
+
+    <symbol id="omiron-lockup-vertical" viewBox="0 0 240 320">
+      <g fill="currentColor">
+        <g transform="translate(20, 0)">
+          <path fill-rule="evenodd" d="M 25 115 A 75 65 0 1 1 175 115 A 75 65 0 1 1 25 115 Z M 40 115 A 60 52 0 1 0 160 115 A 60 52 0 1 0 40 115 Z"/>
+          <path d="M 39 43 L 47 43 L 47 115 L 39 115 Z M 153 43 L 161 43 L 161 115 L 153 115 Z M 47 43 L 55 43 L 100 101.5 L 145 43 L 153 43 L 100 111 Z"/>
+          <path d="M 96.8 100 L 98.4 100 L 98.4 118 L 96.8 118 Z M 101.6 100 L 103.2 100 L 103.2 118 L 101.6 118 Z M 94.6 118 L 100.6 118 L 100.6 119.4 L 94.6 119.4 Z M 99.4 118 L 105.4 118 L 105.4 119.4 L 99.4 119.4 Z"/>
+          <path d="M 30 112.5 L 50 112.5 L 50 115.5 L 30 115.5 Z M 150 112.5 L 170 112.5 L 170 115.5 L 150 115.5 Z"/>
+          <path d="M 28 40.5 L 52 40.5 L 52 43.5 L 28 43.5 Z M 148 40.5 L 172 40.5 L 172 43.5 L 148 43.5 Z"/>
+        </g>
+      </g>
+      <text x="120" y="255" fill="currentColor" text-anchor="middle"
+        font-family="'EB Garamond', 'Cormorant Garamond', 'Georgia', serif"
+        font-size="32" font-weight="500" letter-spacing="4.2">OMIRON</text>
+    </symbol>
+
+    <symbol id="icone-pilar-corpo" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.5"
+         stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="16.5" r="1.2"/>
+        <path d="M12 17.7 L12 21.4"/>
+        <path d="M12 18.4 L10.4 20.6 M12 18.4 L13.6 20.6"/>
+        <path d="M10.6 19.2 L9.2 19.6 M13.4 19.2 L14.8 19.6" opacity="0.7"/>
+        <path d="M12 14.4 C10.6 12.6 9.8 11.2 10 9.4 C10.2 7.6 11.4 6.4 12 5"/>
+        <path d="M12 14.2 C13.2 12.4 14.2 11 14.2 9.6 C14.2 8.4 13.4 7.4 13 6.8" opacity="0.85"/>
+        <path d="M12 13.6 C11.6 12.6 11.2 11.8 11.4 10.6 C11.6 9.4 12.2 8.8 12 8" opacity="0.6"/>
+      </g>
+    </symbol>
+
+    <symbol id="icone-pilar-pensamento" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.5"
+         stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3.2" y="15.4" width="9.6" height="3.2" rx="0.4"/>
+        <path d="M5.4 17 L10.6 17" opacity="0.55"/>
+        <rect x="4" y="12.2" width="9.2" height="3.2" rx="0.4"/>
+        <path d="M6 13.8 L11.4 13.8" opacity="0.55"/>
+        <rect x="3.6" y="9" width="8.4" height="3.2" rx="0.4"/>
+        <path d="M5.4 10.6 L10 10.6" opacity="0.55"/>
+        <path d="M17.6 20 L20.4 20"/>
+        <path d="M17.6 20 L17.6 19.2 L20.4 19.2 L20.4 20"/>
+        <path d="M18.2 19.2 L18.2 7"/>
+        <path d="M19 19.2 L19 7" opacity="0.55"/>
+        <path d="M19.8 19.2 L19.8 7"/>
+        <path d="M17.4 7 L20.6 7 L20.6 5.8 L17.4 5.8 Z"/>
+        <path d="M17.6 5.8 C17.4 4.8 18.2 4.2 19 4.4 C19.8 4.2 20.6 4.8 20.4 5.8"/>
+        <path d="M18.4 5 C18.6 4.4 19 4 19 3.6 M19.6 5 C19.4 4.4 19 4 19 3.6" opacity="0.7"/>
+      </g>
+    </symbol>
+
+    <symbol id="icone-pilar-sentimento" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.5"
+         stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2.4 12 C4 8.4 7 6.4 10.4 6.4 C14.6 6.4 17.2 9.6 19.2 12.4 C20.4 14 21 15 21.6 15.6"/>
+        <path d="M19.2 12.4 C18.4 11 17.4 10 16.2 9.6 C14.4 9 12.6 10 11.8 11.4 C11.2 12.4 11.4 13.6 12.4 14" stroke-linecap="round"/>
+        <path d="M13.2 12.6 C12.8 12.2 12.8 11.6 13.2 11.4 C13.6 11.2 13.9 11.6 13.7 11.9" opacity="0.8"/>
+        <path d="M15.4 11.4 C15.2 11 15.4 10.6 15.8 10.6" opacity="0.65"/>
+        <path d="M2.4 16.2 L21.6 16.2" opacity="0.35"/>
+        <circle cx="6.6" cy="19.4" r="2.4"/>
+        <path d="M6.6 19.4 L6.6 18.2 M6.6 19.4 L7.6 20"/>
+        <path d="M6.6 17 L6.6 16.2 M5.8 16.4 L7.4 16.4" opacity="0.75"/>
+      </g>
+    </symbol>
+
+    <symbol id="icone-pilar-espirito" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.5"
+         stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 20 L4 12 C4 7.6 7.6 4 12 4 C16.4 4 20 7.6 20 12 L20 20" opacity="0.55"/>
+        <path d="M5.4 18.6 L11.4 8.2"/>
+        <path d="M11.4 8.2 C10.8 7.4 10.8 6.6 11.4 5.8 M11.4 8.2 C12 7.8 12.4 7.2 12.4 6.4" opacity="0.85"/>
+        <path d="M5.4 18.6 L4.8 19.6" opacity="0.7"/>
+        <path d="M18.6 18.6 L12.6 8.2"/>
+        <path d="M12.6 8.2 C13.2 7.4 13.2 6.6 12.6 5.8 M12.6 8.2 C12 7.8 11.6 7.2 11.6 6.4" opacity="0.85"/>
+        <path d="M18.6 18.6 L19.2 19.6" opacity="0.7"/>
+        <circle cx="12" cy="14.6" r="1.4"/>
+        <path d="M12 16 L12 20.4"/>
+        <path d="M12 18.6 L13.2 18.6 M12 19.6 L12.9 19.6"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============================== NAV ============================== -->
+<nav class="nav" aria-label="Sumário do deck">
+  <div class="nav__brand-mark">
+    <span class="omiron-symbol" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><use href="#omiron-mark"/></svg>
+    </span>
+    <span class="nav__brand">Omiron</span>
+  </div>
+  <div class="nav__brand-caption">deck · 08/07/2026</div>
+
+  <a class="nav__item" href="#slide-1"><span class="nav__num">01</span>Capa</a>
+  <a class="nav__item" href="#slide-2"><span class="nav__num">02</span>Onde chegamos</a>
+  <a class="nav__item" href="#slide-3"><span class="nav__num">03</span>Distância curta</a>
+  <a class="nav__item" href="#slide-4"><span class="nav__num">04</span>Manifesto</a>
+  <a class="nav__item" href="#slide-5"><span class="nav__num">05</span>4 pilares</a>
+  <a class="nav__item" href="#slide-6"><span class="nav__num">06</span>Marco Aurélio</a>
+  <a class="nav__item" href="#slide-7"><span class="nav__num">07</span>A voz</a>
+  <a class="nav__item" href="#slide-8"><span class="nav__num">08</span>Mundo visual</a>
+  <a class="nav__item" href="#slide-9"><span class="nav__num">09</span>Papiro</a>
+  <a class="nav__item" href="#slide-10"><span class="nav__num">10</span>Quíron</a>
+  <a class="nav__item" href="#slide-11"><span class="nav__num">11</span>Compliance</a>
+  <a class="nav__item" href="#slide-12"><span class="nav__num">12</span>Tensões</a>
+  <a class="nav__item" href="#slide-13"><span class="nav__num">13</span>Próximos passos</a>
+  <a class="nav__item" href="#slide-14"><span class="nav__num">14</span>Fim</a>
+
+  <div class="nav__footer">
+    Kolden · Aglaia + Harmonia + Orfeu + Nomos<br>
+    Missão m-20260706-193013
+  </div>
+</nav>
+
+<!-- ============================== DECK ============================== -->
+<main class="deck">
+
+  <!-- ================ SLIDE 1 · CAPA ================ -->
+  <section class="slide cover" id="slide-1" aria-labelledby="s1-title">
+    <div class="cover__inner">
+      <!-- Lockup vertical (monograma + wordmark) — sigilo da capa.
+           30% da altura útil do slide (regra do briefing). -->
+      <div class="cover__lockup" aria-hidden="true">
+        <svg viewBox="0 0 240 320"><use href="#omiron-lockup-vertical"/></svg>
+      </div>
+      <div class="eyebrow">Brandbook · Apresentação</div>
+      <!-- Título acessível para leitor de tela (visualmente substituído pelo lockup). -->
+      <h1 id="s1-title" class="display sr-only">Omiron</h1>
+      <p class="cover__slogan">Sistema de monitoramento terapêutico psiquiátrico</p>
+      <div class="cover__signature">
+        Apresentação para <strong>Dr. Ariosto Filho</strong> · <strong>08/07/2026</strong><br>
+        Clínica Omiron · Belo Horizonte
+      </div>
+    </div>
+    <div class="foot">
+      <span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span>
+      <span class="foot__nda">sob NDA</span>
+    </div>
+  </section>
+
+  <!-- ================ SLIDE 2 · ONDE CHEGAMOS ================ -->
+  <section class="slide" id="slide-2" aria-labelledby="s2-title">
+    <div class="eyebrow">Reunião 01/07 → Reunião 08/07</div>
+    <h2 id="s2-title" class="title">Onde chegamos.</h2>
+    <p class="lead">
+      Sete decisões saíram da reunião do dia 1º de julho e viraram lei da marca.
+      Este brandbook consolida cada uma em capítulos <span class="highlight">auditáveis</span>.
+      Antes da mesa de hoje, seis cartões resumem o mundo.
+    </p>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card__num">01</div>
+        <div class="card__title">Arquétipo — Sábio / Mestre</div>
+        <div class="card__body">O professor que faz perguntas curiosas. Confirmado pela sua voz, pelo seu board Pinterest e pela rejeição explícita ao <em>"app fofo"</em>.</div>
+      </div>
+      <div class="card">
+        <div class="card__num">02</div>
+        <div class="card__title">Tipografia — Great Vibes + EB Garamond</div>
+        <div class="card__body">A caneta-tinteiro que o senhor pediu. Great Vibes nos títulos, Garamond no corpo — dislexia respeitada por arquitetura.</div>
+      </div>
+      <div class="card">
+        <div class="card__num">03</div>
+        <div class="card__title">Paleta — dark canônico</div>
+        <div class="card__body">Dourado antigo + marfim + âmbar de crepúsculo. Preto puro e branco puro banidos por veto explícito seu.</div>
+      </div>
+      <div class="card">
+        <div class="card__num">04</div>
+        <div class="card__title">Papiro — assinatura cross-canal</div>
+        <div class="card__body">App, receita física, Instagram, deck. <em>Se não tem papiro em algum lugar, não é Omiron.</em></div>
+      </div>
+      <div class="card">
+        <div class="card__num">05</div>
+        <div class="card__title">4 pilares</div>
+        <div class="card__body">Corpo (Sansão) · Pensamento (<em>Marco Aurélio provisório — 3 alternativas hoje</em>) · Sentimento (Psiquê) · Espírito (Hécate).</div>
+      </div>
+      <div class="card">
+        <div class="card__num">06</div>
+        <div class="card__title">Slogan</div>
+        <div class="card__body"><em>Monitoramento próximo. Tratamento real.</em></div>
+      </div>
+    </div>
+
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+  <!-- ================ SLIDE 3 · DISTÂNCIA CURTA ================ -->
+  <section class="slide" id="slide-3" aria-labelledby="s3-title">
+    <div class="eyebrow">Posicionamento · Brand idea</div>
+    <h2 id="s3-title" class="title">A distância curta</h2>
+    <p class="lead" style="max-width:70ch; font-family: var(--omiron-fonte-titulo); font-size: clamp(1.6rem, 3.2vw, 2.6rem); color: var(--omiron-marfim); line-height: 1.2; font-style: normal;">
+      A distância curta entre o paciente e seu próprio percurso — e entre o médico e o que o paciente vive.
+    </p>
+    <hr class="ornamento-neoclassico" aria-hidden="true">
+
+    <div class="grid-3">
+      <div class="card">
+        <h3 class="subtitle" style="font-family:var(--omiron-fonte-titulo); color:var(--omiron-dourado-alto);">Proximidade,<br>não cura.</h3>
+        <div class="card__body">Tornar visível o intervalo entre consultas. É pouco, e é tudo.</div>
+      </div>
+      <div class="card">
+        <h3 class="subtitle" style="font-family:var(--omiron-fonte-titulo); color:var(--omiron-dourado-alto);">Caminho,<br>não milagre.</h3>
+        <div class="card__body">O tratamento acontece no intervalo. Registrar o intervalo é o trabalho.</div>
+      </div>
+      <div class="card">
+        <h3 class="subtitle" style="font-family:var(--omiron-fonte-titulo); color:var(--omiron-dourado-alto);">Excelência,<br>não rótulo.</h3>
+        <div class="card__body">O paciente é adulto lúcido que decidiu se conhecer. <em>Não porque adoeceu, mas porque decidiu se conhecer.</em></div>
+      </div>
+    </div>
+
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+  <!-- ================ SLIDE 4 · MANIFESTO ================ -->
+  <section class="slide" id="slide-4" aria-labelledby="s4-title">
+    <div class="eyebrow">Narrativa · Manifesto</div>
+    <h2 id="s4-title" class="title">O manifesto</h2>
+    <hr class="ornamento-neoclassico" aria-hidden="true">
+
+    <div class="papiro">
+      O tratamento psiquiátrico não acontece na consulta. A consulta é um encontro; o tratamento é o que vive entre um encontro e o outro. É a manhã em que a medicação é tomada, ou não. É a noite em que o sono vem, ou foge.
+      <br><br>
+      O Omiron nasce dessa lacuna. Não para substituir o médico, nem para transformar o paciente em seu próprio clínico. Nasce para ser o registro atento do que acontece entre uma sessão e a próxima — o companheiro discreto que o adulto lúcido convida para acompanhá-lo em sua jornada de excelência, <em>não porque adoeceu, mas porque decidiu se conhecer</em>.
+      <br><br>
+      Não prometemos cura. Prometemos proximidade — a distância curta entre o paciente e seu próprio percurso, entre o médico e o que o paciente vive. É pouco, e é tudo.
+      <br><br>
+      <em>Monitoramento próximo. Tratamento real.</em>
+    </div>
+
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+  <!-- ================ SLIDE 5 · 4 PILARES ================ -->
+  <section class="slide" id="slide-5" aria-labelledby="s5-title">
+    <div class="eyebrow">Cosmologia · Ordem funcional</div>
+    <h2 id="s5-title" class="title">Corpo · Pensamento · Sentimento · Espírito</h2>
+    <p class="lead"><em>Nenhum pilar é primeiro por importância — <span class="highlight">o corpo é primeiro por ordem</span>.</em></p>
+
+    <div class="grid-2-fixed">
+
+      <div class="card">
+        <span class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><use href="#icone-pilar-corpo"/></svg>
+        </span>
+        <div class="card__num">I</div>
+        <div class="card__title">Corpo — Sansão</div>
+        <div class="card__body">
+          <strong style="color:var(--omiron-dourado-alto)">Símbolo:</strong> chama olímpica + Rückenfigur em movimento.<br>
+          <strong style="color:var(--omiron-dourado-alto)">Método:</strong> cuidado dos vetores corporais — medicação, sono, alimentação, movimento, substâncias.
+        </div>
+        <div class="card__anchor">"O corpo é o primeiro território. Sem ele, não há caminho."</div>
+      </div>
+
+      <div class="card" style="border-left-color: var(--omiron-ambar-crepusculo);">
+        <span class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><use href="#icone-pilar-pensamento"/></svg>
+        </span>
+        <div class="card__num">II</div>
+        <div class="card__title">Pensamento — Marco Aurélio <em style="color:var(--omiron-ambar-crepusculo)">(provisório)</em></div>
+        <div class="card__body">
+          <strong style="color:var(--omiron-dourado-alto)">Símbolo:</strong> Biblioteca de Alexandria (Alternativa B — recomendada por Orfeu).<br>
+          <strong style="color:var(--omiron-dourado-alto)">Método:</strong> Estoicismo aplicado + TCC.
+        </div>
+        <div class="card__anchor">"Não somos governados pelo que acontece, e sim pelo que pensamos sobre o que acontece."</div>
+      </div>
+
+      <div class="card">
+        <span class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><use href="#icone-pilar-sentimento"/></svg>
+        </span>
+        <div class="card__num">III</div>
+        <div class="card__title">Sentimento — Psiquê</div>
+        <div class="card__body">
+          <strong style="color:var(--omiron-dourado-alto)">Símbolo:</strong> A Grande Onda de Kanagawa + relógio de bolso.<br>
+          <strong style="color:var(--omiron-dourado-alto)">Método:</strong> aceitação do afeto que passa. Nomear é o primeiro trabalho.
+        </div>
+        <div class="card__anchor">"A emoção é a onda. A razão é o dique. Nenhum dos dois vence sozinho."</div>
+      </div>
+
+      <div class="card">
+        <span class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><use href="#icone-pilar-espirito"/></svg>
+        </span>
+        <div class="card__num">IV</div>
+        <div class="card__title">Espírito — Hécate</div>
+        <div class="card__body">
+          <strong style="color:var(--omiron-dourado-alto)">Símbolo:</strong> Oráculo de Delfos + tochas + chaves.<br>
+          <strong style="color:var(--omiron-dourado-alto)">Método:</strong> senso de propósito e pertencimento — sem dogma religioso.
+        </div>
+        <div class="card__anchor">"Quando os três primeiros pilares se cuidam, o quarto se alinha por conta própria."</div>
+      </div>
+
+    </div>
+
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+  <!-- ================ SLIDE 6 · MARCO AURÉLIO ================ -->
+  <section class="slide" id="slide-6" aria-labelledby="s6-title">
+    <div class="eyebrow">Decisão pendente · Pilar Pensamento</div>
+    <h2 id="s6-title" class="title">Marco Aurélio — três caminhos, uma escolha</h2>
+    <p class="lead">
+      Seu board Pinterest tem <span class="highlight">34 tags "library"</span> e zero pins de Marco Aurélio.
+      A metodologia clínica está travada. O que precisa da sua palavra é qual figura visual e narrativa encarna o pilar.
+    </p>
+
+    <div class="grid-3">
+
+      <div class="card">
+        <div class="card__num">A</div>
+        <div class="card__title">Sêneca como voz principal</div>
+        <div class="card__body">
+          <em>Pinterest:</em> precisa de produção autoral (baixo lastro).<br>
+          <em>Narrativa:</em> mais conversável, casa com o humor sutil pedido.<br>
+          <em>Símbolo:</em> papiro escrito à mão com pluma.
+        </div>
+        <div class="card__anchor">"A vida boa não se pensa em silêncio absoluto. Pensa-se em conversa."</div>
+      </div>
+
+      <div class="card" style="border-left-color:var(--omiron-dourado-alto); border-left-width:4px;">
+        <div class="card__num" style="color:var(--omiron-dourado-alto);">B</div>
+        <div class="card__title">Biblioteca de Alexandria <em style="color:var(--omiron-dourado-alto)">(recomendada)</em></div>
+        <div class="card__body">
+          <em>Pinterest:</em> encaixe muito alto — 34 tags <em>library</em>, cena já verbalizada pelo senhor como favorita.<br>
+          <em>Narrativa:</em> Marco Aurélio vira citação dentro da biblioteca, junto com Sêneca, Epicteto, Cícero.<br>
+          <em>Símbolo:</em> escadaria, arcos, mesa central com papiro e pluma.
+        </div>
+        <div class="card__anchor">"O pensamento humano se organiza no papel. O que não se registra, se perde."</div>
+      </div>
+
+      <div class="card">
+        <div class="card__num">C</div>
+        <div class="card__title">Livro aberto sobre pergaminho</div>
+        <div class="card__body">
+          <em>Pinterest:</em> médio-alto (livros em 10+ pins).<br>
+          <em>Narrativa:</em> coerência máxima com o papiro cross-canal — o pilar Pensamento <em>vira</em> o papiro.<br>
+          <em>Símbolo:</em> livro aberto sobre papiro, com pluma pousada.
+        </div>
+        <div class="card__anchor">"O que passa pela mente e não se registra, o dia leva embora."</div>
+      </div>
+
+    </div>
+
+    <p class="body" style="margin-top:2rem;"><strong style="color:var(--omiron-dourado-alto);">Fallback recomendado por Orfeu</strong> se o senhor quiser manter figura humana forte no pilar: <span class="highlight">Alternativa A (Sêneca)</span> — pelo humor sutil que casa melhor com Sêneca do que com Marco Aurélio.</p>
+
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+  <!-- ================ SLIDE 7 · A VOZ ================ -->
+  <section class="slide" id="slide-7" aria-labelledby="s7-title">
+    <div class="eyebrow">Voz da marca</div>
+    <h2 id="s7-title" class="title">A elegância é ponte</h2>
+    <p class="lead"><em>Frase-âncora verbalizada pelo senhor na reunião 01/07.</em></p>
+
+    <div class="grid-2-fixed">
+
+      <div>
+        <h3 class="subtitle">Tom em 4 dimensões</h3>
+        <div class="balance-list">
+          <div class="balance">
+            <div class="balance__label">Reflexivo ↔ Direto</div>
+            <div class="balance__value">70 / 30</div>
+            <div class="balance__bar"><div class="balance__fill" style="width:70%"></div></div>
+          </div>
+          <div class="balance">
+            <div class="balance__label">Erudito ↔ Acessível</div>
+            <div class="balance__value">60 / 40</div>
+            <div class="balance__bar"><div class="balance__fill" style="width:60%"></div></div>
+          </div>
+          <div class="balance">
+            <div class="balance__label">Íntimo ↔ Respeitoso</div>
+            <div class="balance__value">50 / 50</div>
+            <div class="balance__bar"><div class="balance__fill" style="width:50%"></div></div>
+          </div>
+          <div class="balance">
+            <div class="balance__label">Calmo ↔ Firme</div>
+            <div class="balance__value">75 / 25</div>
+            <div class="balance__bar"><div class="balance__fill" style="width:75%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="subtitle">Exemplos</h3>
+        <div class="dodont">
+          <div class="dodont__col dodont__col--do">
+            <div class="dodont__head">Do</div>
+            <ul class="dodont__list">
+              <li>Ouvi. Essa frase pesa. <em>(íntimo mínimo, respeitoso ao não estender)</em></li>
+              <li>Amanhã, no mesmo horário, o caminho continua. <em>(calmo, verbo no presente)</em></li>
+            </ul>
+          </div>
+          <div class="dodont__col dodont__col--dont">
+            <div class="dodont__head">Don't</div>
+            <ul class="dodont__list">
+              <li>Nós estamos aqui por você! <em>(falsa entidade coletiva — patologiza)</em></li>
+              <li>URGENTE: preencha AGORA! <em>(quebra a calma noturna)</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+  <!-- ================ SLIDE 8 · MUNDO VISUAL ================ -->
+  <section class="slide" id="slide-8" aria-labelledby="s8-title">
+    <div class="eyebrow">Identidade visual</div>
+    <h2 id="s8-title" class="title">Um mundo, não uma UI</h2>
+
+    <div class="grid-2-fixed">
+      <div>
+        <h3 class="subtitle">Paleta — 10 papéis semânticos</h3>
+        <div class="swatch-list">
+          <div class="swatch"><div class="swatch__chip" style="background:var(--omiron-fundo-profundo)"></div><div class="swatch__info"><span class="swatch__token">--omiron-fundo-profundo</span><span class="swatch__role">O mundo</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--omiron-fundo-elevado)"></div><div class="swatch__info"><span class="swatch__token">--omiron-fundo-elevado</span><span class="swatch__role">Superfície</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--omiron-fundo-marfim)"></div><div class="swatch__info"><span class="swatch__token">--omiron-fundo-marfim</span><span class="swatch__role">Papiro</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--omiron-dourado-antigo)"></div><div class="swatch__info"><span class="swatch__token">--omiron-dourado-antigo</span><span class="swatch__role">Marca</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--omiron-dourado-alto)"></div><div class="swatch__info"><span class="swatch__token">--omiron-dourado-alto</span><span class="swatch__role">Marca c/ luz</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--omiron-marfim)"></div><div class="swatch__info"><span class="swatch__token">--omiron-marfim</span><span class="swatch__role">Texto</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--omiron-marfim-suave)"></div><div class="swatch__info"><span class="swatch__token">--omiron-marfim-suave</span><span class="swatch__role">Texto 2º</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--omiron-ambar-crepusculo)"></div><div class="swatch__info"><span class="swatch__token">--omiron-ambar-crepusculo</span><span class="swatch__role">CTA</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--omiron-ambar-terra)"></div><div class="swatch__info"><span class="swatch__token">--omiron-ambar-terra</span><span class="swatch__role">Alerta</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--omiron-marrom-couro)"></div><div class="swatch__info"><span class="swatch__token">--omiron-marrom-couro</span><span class="swatch__role">Táctil</span></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background:var(--omiron-verde-planta)"></div><div class="swatch__info"><span class="swatch__token">--omiron-verde-planta</span><span class="swatch__role" style="color:var(--omiron-ambar-crepusculo);">Restrito</span></div></div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="subtitle">Tipografia — amostra</h3>
+        <div style="font-family:var(--omiron-fonte-titulo); font-size:3rem; line-height:1.05; color:var(--omiron-marfim); margin-bottom:1rem;">
+          Bem-vindo ao caminho
+        </div>
+        <div style="font-family:var(--omiron-fonte-corpo); font-size:1.1rem; line-height:1.65; color:var(--omiron-marfim); max-width:36ch;">
+          O sentimento é a onda; a razão é o dique. Nenhum dos dois vence sozinho.<br>
+          <span style="font-weight:600; font-variant-numeric:tabular-nums;">sertralina 50mg — 1× ao dia</span>
+        </div>
+        <p class="body" style="margin-top:1.5rem; font-size:0.9rem;">
+          <em>Great Vibes</em> (títulos hero, 1–6 palavras) + <em>EB Garamond</em> (corpo em leitura, 12–25 palavras/frase). Dislexia respeitada por arquitetura.
+        </p>
+
+        <p class="body" style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgb(168 129 72 / 0.2);">
+          <strong style="color:var(--omiron-dourado-alto);">Regra Harmonia</strong> (com <em>decisão pendente do senhor</em>):
+          <span class="highlight">cada elemento é maximalista, o layout é minimalista</span>.
+        </p>
+      </div>
+    </div>
+
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+  <!-- ================ SLIDE 9 · PAPIRO ================ -->
+  <section class="slide" id="slide-9" aria-labelledby="s9-title">
+    <div class="eyebrow">Assinatura cross-canal</div>
+    <h2 id="s9-title" class="title">Papiro — a impressão digital visual</h2>
+    <p class="lead">
+      <em>Se não tem papiro em algum lugar, não é Omiron.</em>
+      Muda o material — mantém a assinatura.
+    </p>
+
+    <div class="channel-grid">
+      <div class="channel channel--app">
+        <div class="channel__label">01 · App (dark)</div>
+        <div class="channel__title">Moldura & bolha</div>
+        <div class="channel__desc">Card de recompensa em papiro; bolha do Quíron com borda dourada.</div>
+      </div>
+      <div class="channel channel--receita">
+        <div class="channel__label">02 · Receita física</div>
+        <div class="channel__title">Papiro tátil</div>
+        <div class="channel__desc">Papel timbrado integral. Assinatura em Great Vibes.</div>
+      </div>
+      <div class="channel channel--insta">
+        <div class="channel__label">03 · Instagram</div>
+        <div class="channel__title">Linha editorial</div>
+        <div class="channel__desc">Grid claro, citação clássica em Garamond, linha dourada fina.</div>
+      </div>
+      <div class="channel channel--email">
+        <div class="channel__label">04 · E-mail transacional</div>
+        <div class="channel__title">Papiro + dark + papiro</div>
+        <div class="channel__desc">Cabeçalho e rodapé em papiro; corpo em fundo profundo.</div>
+      </div>
+    </div>
+
+    <p class="body" style="margin-top:1.5rem;">
+      <em>Estado de produção: fallback <code style="font-family:'EB Garamond',monospace;">linear-gradient</code> ativo enquanto os arquivos WebP/PNG em 3 densidades não são produzidos. Próxima rodada Harmonia — não bloqueia o piloto.</em>
+    </p>
+
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+  <!-- ================ SLIDE 10 · QUÍRON ================ -->
+  <section class="slide" id="slide-10" aria-labelledby="s10-title">
+    <div class="eyebrow">Mentor de inteligência artificial</div>
+    <h2 id="s10-title" class="title">Um mentor discreto — assumido como IA</h2>
+    <p class="lead"><em>Reflete, provoca, guarda o caminho. Não diagnostica, não prescreve, não substitui consulta.</em></p>
+
+    <div class="grid-2-fixed">
+      <div class="dodont__col dodont__col--do">
+        <div class="dodont__head">Faz</div>
+        <ul class="dodont__list">
+          <li>Devolve a pergunta antes de opinar</li>
+          <li>Nomeia padrões observados — sem diagnosticar</li>
+          <li>Cita clássicos quando ilumina, não como enfeite</li>
+          <li>Encaminha para humano quando o caso passa do escopo</li>
+        </ul>
+      </div>
+      <div class="dodont__col dodont__col--dont">
+        <div class="dodont__head">Não faz</div>
+        <ul class="dodont__list">
+          <li>Não diagnostica, não sugere diagnóstico</li>
+          <li>Não prescreve, não altera dose</li>
+          <li>Não usa jargão da moda (<em>biohacking, unlock, guru, mindset, sua melhor versão</em>)</li>
+          <li>Não infantiliza (<em>carinha sorridente, bolinha, "que legal!"</em>)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="subtitle" style="margin-top:2rem;">Exemplo cotidiano</h3>
+    <div class="quiron-input">Paciente: <em>Esqueci de tomar o remédio hoje de manhã.</em></div>
+    <div class="quiron-bubble">
+      <div class="quiron-bubble__head">
+        <span class="quiron-bubble__name">Quíron</span>
+        <span class="quiron-bubble__tag">inteligência artificial</span>
+      </div>
+      <div class="quiron-bubble__body">
+        Aconteceu. Vale registrar como esquecimento no check-in de hoje — o Dr. Ariosto vê isso na próxima consulta e decide se muda algo. Se você quiser, uma pergunta antes de seguir: foi esquecimento comum, ou o dia começou fora do lugar de costume?
+      </div>
+    </div>
+
+    <h3 class="subtitle" style="margin-top:1.5rem;">Exemplo sensível — protocolo canonizado por Nomos</h3>
+    <div class="quiron-input">Paciente: <em>Não vejo mais sentido em nada.</em></div>
+    <div class="quiron-bubble">
+      <div class="quiron-bubble__head">
+        <span class="quiron-bubble__name">Quíron</span>
+        <span class="quiron-bubble__tag">inteligência artificial</span>
+      </div>
+      <div class="quiron-bubble__body">
+        Ouvi. Essa frase pesa. Quíron é uma inteligência artificial e não tem como avaliar o que você sente por dentro — mas essa é exatamente a frase que o Dr. Ariosto precisa saber que apareceu. Vou registrar isso no seu histórico agora. Agora: você está seguro no momento? Se houver qualquer pensamento de se machucar, o caminho é falar com um humano imediatamente — Dr. Ariosto, uma pessoa de confiança, ou o CVV (188). Estou aqui, mas humano é humano.
+      </div>
+    </div>
+    <div class="quiron-foot">
+      Quíron — assistente de inteligência artificial. Em urgências, procure atendimento humano imediato.
+    </div>
+
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+  <!-- ================ SLIDE 11 · COMPLIANCE ================ -->
+  <section class="slide" id="slide-11" aria-labelledby="s11-title">
+    <div class="eyebrow">Gate Nomos · CFM · LGPD · ANVISA</div>
+    <h2 id="s11-title" class="title">O que Nomos travou</h2>
+    <p class="lead">
+      Veredito da auditoria linha-a-linha de 11 arquivos: <span class="highlight">APROVADO COM EMENDAS</span>.
+      Emendas aplicadas nesta sessão. Revisão final por jurista humano é gate obrigatório antes do 1º paciente-piloto.
+    </p>
+
+    <div class="grid-2-fixed">
+
+      <div>
+        <h3 class="subtitle">5 textos canonizados</h3>
+
+        <div class="canon">
+          <div class="canon__label">01 · Aviso de IA (rodapé permanente)</div>
+          <div class="canon__text">Quíron — assistente de inteligência artificial. Em urgências, procure atendimento humano imediato.</div>
+        </div>
+
+        <div class="canon">
+          <div class="canon__label">02 · Termo LGPD Art. 11</div>
+          <div class="canon__text">6 blocos + declaração agregada: finalidade específica · base legal (consentimento + tutela da saúde) · rol do Art. 18 · prazo de retenção · DPO · escopo de acesso da equipe.</div>
+        </div>
+
+        <div class="canon">
+          <div class="canon__label">03 · Protocolo de risco suicida (3 níveis)</div>
+          <div class="canon__text">Ideação passiva · ativa · plano concreto. Cada nível dispara ação de backend: flag + notificação ao médico em &lt;15min + log imutável + follow-up em 24h.</div>
+        </div>
+
+        <div class="canon">
+          <div class="canon__label">04 · Rodapé Instagram (CFM 2.336)</div>
+          <div class="canon__text">Conteúdo institucional da Clínica Omiron — Dr. Ariosto Filho, CRM XX.XXX/MG. Este post não substitui consulta psiquiátrica.</div>
+        </div>
+
+        <div class="canon">
+          <div class="canon__label">05 · Frase de guarda do resumo mensal</div>
+          <div class="canon__text">Este resumo é uma visualização dos dados autoreportados pelo paciente. Não constitui interpretação clínica, laudo, sugestão diagnóstica ou orientação terapêutica.</div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="subtitle">Gap declarado</h3>
+        <div class="card" style="border-left-color:var(--omiron-ambar-crepusculo);">
+          <div class="card__title">ANVISA RDC 657/2022 — SaMD</div>
+          <div class="card__body">
+            <em>Não bloqueia a Fase 1</em> (piloto interno na clínica).
+            Precisa de jurista sanitário antes da Fase 2 (SaaS B2B, 2027).
+            O item <em>"sinais que merecem atenção clínica"</em> no resumo mensal foi reformulado para <em>"registros com desvio ≥ 1 σ da linha de base do próprio paciente"</em> — vocabulário de visualização, não de interpretação.
+          </div>
+        </div>
+
+        <h3 class="subtitle" style="margin-top:2rem;">Escopo regulatório coberto</h3>
+        <ul class="dodont__list" style="margin-top:0.75rem;">
+          <li>CFM Res 2.314/2022 — telemedicina</li>
+          <li>CFM Res 2.336/2023 — publicidade médica</li>
+          <li>LGPD Art. 11 — dado sensível de saúde</li>
+          <li>LGPD Art. 18 — direitos do titular</li>
+          <li>LGPD Art. 20 — revisão de decisão automatizada</li>
+          <li>ANVISA RDC 657/2022 — SaMD <em>(gap declarado)</em></li>
+          <li>CFP — <em>não aplicável (é psiquiatria)</em></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+  <!-- ================ SLIDE 12 · TENSÕES ABERTAS ================ -->
+  <section class="slide" id="slide-12" aria-labelledby="s12-title">
+    <div class="eyebrow">A mesa de hoje · Manual Operacional §5</div>
+    <h2 id="s12-title" class="title">Seis tensões abertas — nada escondido</h2>
+
+    <div class="tensions">
+
+      <div class="tension">
+        <div class="tension__num">01</div>
+        <div class="tension__title">Marco Aurélio</div>
+        <div class="tension__body">3 alternativas na mesa. <em>Decisão hoje.</em></div>
+      </div>
+
+      <div class="tension">
+        <div class="tension__num">02</div>
+        <div class="tension__title">Maximalismo × UX simples</div>
+        <div class="tension__body">Proposta Harmonia: cada elemento maximalista, layout minimalista. <em>Precisa da sua validação.</em></div>
+      </div>
+
+      <div class="tension">
+        <div class="tension__num">03</div>
+        <div class="tension__title">Textura papiro binária</div>
+        <div class="tension__body">Fallback linear-gradient ativo. WebP/PNG em 3 densidades — próxima rodada Harmonia.</div>
+      </div>
+
+      <div class="tension">
+        <div class="tension__num">04</div>
+        <div class="tension__title">Ícones dos 4 pilares</div>
+        <div class="tension__body">SVGs autorais pendentes. <em>Concept sketches</em> podem entrar em rodada de produção.</div>
+      </div>
+
+      <div class="tension">
+        <div class="tension__num">05</div>
+        <div class="tension__title">Ritual do Quíron no Caos</div>
+        <div class="tension__body">Persona travada, agente executável ainda não encarnado. Nasce com protocolo Nomos §6 no prompt de sistema.</div>
+      </div>
+
+      <div class="tension">
+        <div class="tension__num">06</div>
+        <div class="tension__title">NDA formal</div>
+        <div class="tension__body"><em>Prazo crítico antes desta reunião.</em> Ronan + Nomos + advogado externo.</div>
+      </div>
+
+    </div>
+
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+  <!-- ================ SLIDE 13 · PRÓXIMOS PASSOS ================ -->
+  <section class="slide" id="slide-13" aria-labelledby="s13-title">
+    <div class="eyebrow">O que sai desta mesa</div>
+    <h2 id="s13-title" class="title">Próximos passos</h2>
+
+    <ol class="steps">
+
+      <li class="step">
+        <div class="step__num">01</div>
+        <div>
+          <div class="step__title">Decisão sobre Marco Aurélio hoje.</div>
+          <div class="step__body">Alternativa A (Sêneca), <span class="highlight">B (Biblioteca — recomendada)</span> ou C (livro sobre pergaminho). Sua palavra fecha a tensão do pilar Pensamento.</div>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="step__num">02</div>
+        <div>
+          <div class="step__title">NDA formal — antes de qualquer publicação.</div>
+          <div class="step__body">Este brandbook, o design system, a persona do Quíron e a arquitetura de agentes da Kolden só saem em produção com NDA assinado.</div>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="step__num">03</div>
+        <div>
+          <div class="step__title">Revisão jurídica dos 5 textos canonizados pelo Nomos.</div>
+          <div class="step__body">Advogado externo especializado em Direito Digital + Direito Médico precisa validar aviso de IA, termo de consentimento LGPD Art. 11, protocolo de risco suicida, rodapé Instagram e frase de guarda do resumo mensal — <em>antes do 1º paciente-piloto (jul/2026)</em>.</div>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="step__num">04</div>
+        <div>
+          <div class="step__title">Rodada Kolden para as pendências técnicas.</div>
+          <div class="step__body">Textura papiro (3 densidades), ícones autorais dos 4 pilares, símbolo Omiron (SVG final), ritual do Quíron no Caos (encarnar o agente executável). <em>Vira contrato de missão separado após esta reunião.</em></div>
+        </div>
+      </li>
+
+    </ol>
+
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+  <!-- ================ SLIDE 14 · FIM ================ -->
+  <section class="slide end" id="slide-14" aria-labelledby="s14-title">
+    <h1 id="s14-title" class="display">Obrigado,<br>Dr. Ariosto</h1>
+    <p class="cover__slogan"><em>Monitoramento próximo. Tratamento real.</em></p>
+    <div class="foot"><span class="foot__brand">Omiron · 08/07/2026 · Clínica Dr. Ariosto Filho</span><span class="foot__nda">sob NDA</span></div>
+  </section>
+
+</main>
+
+<script>
+/* ============================================================================
+   Deck Omiron — motion e observador (sem CDN, sem dep externa).
+   Respeita prefers-reduced-motion.
+   ============================================================================ */
+(function () {
+  'use strict';
+
+  var reduced = window.matchMedia &&
+                window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var navItems = document.querySelectorAll('.nav__item[href^="#slide-"]');
+  var linkById = {};
+  navItems.forEach(function (a) {
+    var id = a.getAttribute('href').slice(1);
+    linkById[id] = a;
+  });
+
+  var deck = document.querySelector('.deck');
+  var slides = document.querySelectorAll('.slide[id]');
+  if (!('IntersectionObserver' in window) || slides.length === 0) {
+    // Fallback: revela tudo.
+    slides.forEach(function (s) { s.classList.add('is-visible'); });
+    return;
+  }
+
+  // Se reduced-motion, marca todos como visíveis desde já (motion instantâneo via CSS).
+  if (reduced) {
+    slides.forEach(function (s) { s.classList.add('is-visible'); });
+  }
+
+  // 1) Nav ativa — observer com threshold médio.
+  var navObserver = new IntersectionObserver(function (entries) {
+    var best = null;
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        if (!best || e.intersectionRatio > best.intersectionRatio) best = e;
+      }
+    });
+    if (!best) return;
+    var id = best.target.id;
+    Object.keys(linkById).forEach(function (k) {
+      linkById[k].classList.toggle('is-active', k === id);
+    });
+  }, {
+    root: deck && window.innerWidth > 768 ? deck : null,
+    threshold: [0.35, 0.5, 0.65]
+  });
+  slides.forEach(function (s) { navObserver.observe(s); });
+
+  // 2) Fade cinematográfico — adiciona is-visible quando o slide entra;
+  //    once=true para não flickar em segundos scrolls.
+  if (!reduced) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          revealObserver.unobserve(e.target);
+        }
+      });
+    }, {
+      root: deck && window.innerWidth > 768 ? deck : null,
+      threshold: 0.15
+    });
+    slides.forEach(function (s) { revealObserver.observe(s); });
+  }
+})();
+</script>
+
+</body>
+</html>

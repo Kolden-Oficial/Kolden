@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>NutriOS Pro — Sistema Operacional para o Nutricionista Clínico</title>
+  <meta name="description" content="Sistema operacional para nutricionista clínico. Avaliação, cálculo, dieta, comportamento e evolução do paciente — num fluxo só, com IA. Teste grátis." />
+  <meta name="theme-color" content="#F5F0E8" />
+  <meta name="color-scheme" content="light" />
+  <link rel="canonical" href="https://nutriospro-vendas.vercel.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NutriOS Pro — Sistema Operacional para o Nutricionista Clínico" />
+  <meta property="og:description" content="Avaliação, cálculo, dieta, comportamento e evolução do paciente num fluxo só, com IA. Sem planilha. Sem cálculo manual. Sem medo de errar a conta." />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="/assets/img/logo-nutrios-pro.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NutriOS Pro — Sistema Operacional para o Nutricionista Clínico" />
+  <meta name="twitter:description" content="Avaliação, cálculo, dieta, comportamento e evolução do paciente num fluxo só, com IA." />
+  <meta name="twitter:image" content="/assets/img/logo-nutrios-pro.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+  <link rel="apple-touch-icon" href="/assets/img/logo-nutrios-pro.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+  <link rel="stylesheet" href="/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "NutriOS Pro",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Web",
+    "description": "Sistema operacional para a prática clínica do nutricionista. Avaliação, cálculo, dieta, comportamento e evolução do paciente num fluxo só, com IA que fotografa o prato, lê o exame e desenha o Body 3D.",
+    "inLanguage": "pt-BR",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock",
+      "url": "https://nutriospro-vendas.vercel.app/#oferta"
+    },
+    "featureList": [
+      "Avaliação antropométrica com sete dobras cutâneas e bioimpedância",
+      "Body 3D por foto",
+      "Cálculo TMB/GET/VET com fórmula escolhida pelo perfil",
+      "Base de alimentos TACO/IBGE com 312 itens",
+      "Módulo comportamental (sono, estresse, ciclo)",
+      "Consumo por foto com IA",
+      "Leitura de exame laboratorial por IA",
+      "Gráficos de evolução para o paciente"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<a class="skip-link" href="#hero">Pular para o conteúdo</a>
+
+<header class="topbar" id="topbar" aria-label="Topo do site">
+  <div class="topbar__inner">
+    <a href="#hero" class="topbar__brand" aria-label="NutriOS Pro — início">
+      <img src="/assets/img/logo-nutrios-pro.png" alt="" class="topbar__logo" width="140" height="40" />
+      <span class="visually-hidden">NutriOS Pro</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Seções">
+      <a href="#problema">O problema</a>
+      <a href="#tese">A tese</a>
+      <a href="#entregas">O que entrega</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#faq">Perguntas</a>
+    </nav>
+    <a href="#cta-final" class="btn btn--primary btn--sm topbar__cta">Começar teste grátis</a>
+  </div>
+</header>
+
+<!-- ================== HERO ================== -->
+<main id="conteudo">
+
+<section class="hero" id="hero">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow">Para nutricionistas clínicos que já cansaram do Excel</p>
+    <h1 class="hero__headline">
+      A sua prática clínica merece <em>um sistema operacional</em> —<br />
+      não mais uma planilha.
+    </h1>
+    <p class="hero__sub">
+      Avaliação, cálculo, dieta, comportamento e evolução do paciente num só fluxo — com IA que fotografa o prato, lê o exame e desenha o Body 3D. O NutriOS Pro devolve o seu tempo e mostra, em gráfico, o que o paciente antes só sentia.
+    </p>
+
+    <div class="hero__cta">
+      <a href="#cta-final" class="btn btn--primary btn--lg">
+        Comece hoje — <span class="ph">[definir período de teste]</span> dias grátis
+      </a>
+      <p class="hero__reassurance">Sem cartão. Sem contrato. Cancele quando quiser.</p>
+    </div>
+
+    <ul class="hero__badges" aria-label="Confiança">
+      <li>Fórmulas validadas (Harris-Benedict, Mifflin, Tinsley)</li>
+      <li>312 alimentos TACO/IBGE</li>
+      <li>Padrão OWASP + audit log</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================== 2. PROBLEMA ================== -->
+<section class="section section--linen" id="problema">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow eyebrow--muted">2 · O problema</p>
+    <h2 class="section__title">O problema que você já vive — e finge que é normal</h2>
+
+    <div class="prose">
+      <p>Você abre o notebook antes da consulta.</p>
+      <p>
+        Excel de antropometria numa aba. Excel de cálculo energético em outra. Uma planilha de dieta que você adaptou de um amigo do quarto período. Um PDF em branco esperando para virar prescrição. E o WhatsApp piscando com o paciente que sumiu há três semanas — o mesmo que, na consulta passada, jurou que ia "seguir tudo direitinho".
+      </p>
+      <p>Você não está fazendo nutrição. Você está fazendo <strong>ginástica de arquivo</strong>.</p>
+      <p>
+        E cada minuto que vai para digitar duas vezes o mesmo dado é um minuto que sai do olho no paciente. Cada erro de fórmula é um segundo de dúvida que corrói a sua autoridade quando ele pergunta "por que esse número?". Cada plano que sai sem gráfico é um plano que o paciente esquece no fundo do e-mail.
+      </p>
+      <p class="prose__pull"><strong>Não é falta de competência. É falta de sistema.</strong></p>
+      <p>
+        O nutricionista clínico brasileiro trabalha com ferramentas que foram feitas para outra coisa. Excel foi feito para contador. Word foi feito para juiz. Você adaptou os dois para cuidar de gente — e ainda faz milagre. Mas a conta chega em três dores previsíveis:
+      </p>
+    </div>
+
+    <div class="cards cards--3">
+      <article class="card card--pain">
+        <h3>Fricção operacional</h3>
+        <p>Duas horas de cada consulta comidas em cálculo, digitação e formatação de PDF.</p>
+      </article>
+      <article class="card card--pain">
+        <h3>Insegurança silenciosa</h3>
+        <p>Especialmente se você acabou de sair da faculdade — a dúvida de "escolhi a fórmula certa de TMB para esse perfil?" nunca dorme.</p>
+      </article>
+      <article class="card card--pain">
+        <h3>Paciente que aprende e não volta</h3>
+        <p>Porque um número de caloria não vira comportamento, e comportamento é o que sustenta resultado.</p>
+      </article>
+    </div>
+
+    <div class="prose prose--after-cards">
+      <p>
+        O mercado te ofereceu duas saídas. <strong>WebDiet</strong> e <strong>Dietbox</strong> te dão a planilha organizada. Melhoram a fricção. Não tocam no comportamento. E continuam tratando o paciente como um alvo de macro.
+      </p>
+      <p>
+        O NutriOS Pro nasceu para atacar as três dores ao mesmo tempo. Não porque queríamos "mais uma ferramenta". Porque a sua profissão merece uma <strong>camada única</strong> que organize tudo, pense com você e comprove ao paciente que ele está evoluindo.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================== 3. TESE ================== -->
+<section class="section section--dark" id="tese">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow eyebrow--onDark">3 · A tese</p>
+    <h2 class="section__title section__title--onDark">Um sistema operacional. Não um caderno digital.</h2>
+
+    <div class="prose prose--onDark">
+      <p>O "OS" no nome não é decoração de marca. É a tese.</p>
+      <p>
+        Um sistema operacional é o que faz o computador funcionar como computador. Antes do OS, existia hardware solto: memória de um lado, processador do outro, tela sem saber para quem falar. O OS uniu tudo — e transformou peças em máquina.
+      </p>
+      <p>
+        Sua prática clínica hoje está no estágio pré-OS. Você tem as peças: antropometria, cálculo, dieta, exame, evolução, comportamento. Mas cada peça vive num arquivo diferente, num app diferente, num caderno diferente. Você é o processador humano que precisa lembrar de tudo, a toda hora.
+      </p>
+      <p class="prose__pull prose__pull--onDark"><strong>O NutriOS Pro é o sistema operacional que junta as peças.</strong></p>
+      <p>Um paciente. Um lugar. Um fluxo contínuo que começa na primeira avaliação e não para até você decidir arquivar.</p>
+      <p>Isso muda três coisas — e é por elas que você paga:</p>
+    </div>
+
+    <ol class="tese__list">
+      <li><strong>Você ganha tempo.</strong> O que era duas horas de planilha vira quinze minutos de conversa clínica.</li>
+      <li><strong>Você ganha certeza.</strong> A fórmula certa é escolhida sozinha pelo perfil do paciente. O erro de digitação não existe mais porque o dado não é digitado duas vezes.</li>
+      <li><strong>Você ganha o paciente.</strong> Ele vê o gráfico da própria evolução, entende o que está acontecendo com o próprio sono e estresse, e volta na semana seguinte porque <em>enxerga</em> que está mudando.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================== 4. ENTREGAS ================== -->
+<section class="section section--linen" id="entregas">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--muted">4 · O que você entrega ao paciente</p>
+    <h2 class="section__title">Cada linha aqui é uma dor sua que morre — e uma percepção de valor do paciente que nasce.</h2>
+
+    <div class="features">
+      <article class="feature">
+        <div class="feature__tag">Avaliação</div>
+        <h3>Avaliação que se monta sozinha</h3>
+        <p>
+          Antropometria tradicional. Sete dobras cutâneas. Quinze circunferências bilaterais. Bioimpedância (idade metabólica, água corporal, massa óssea). Foto corporal analisada por IA. E o novo módulo <strong>Body 3D</strong> — que transforma três fotos do paciente em uma leitura visual da composição corporal.
+        </p>
+        <p>Você escolhe o protocolo (Pollock 3, Pollock 7, Navy, Faulkner…). O sistema calcula, valida e joga tudo na ficha. Você lê o resultado com o paciente e explica — em vez de digitar enquanto ele te olha em silêncio.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature__tag">Cálculo energético</div>
+        <h3>Cálculos que respeitam o perfil</h3>
+        <p><strong>A equação certa de TMB é escolhida automaticamente pela classificação corporal:</strong></p>
+        <ul class="feature__ul">
+          <li><strong>Harris-Benedict</strong> para paciente eutrófico.</li>
+          <li><strong>Mifflin-St Jeor</strong> para paciente com sobrepeso.</li>
+          <li><strong>Tinsley</strong> para atleta e musculoso.</li>
+        </ul>
+        <p>Depois vira GET (com fator de atividade), depois VET (com ajuste do objetivo — normocalórica, superávit ou déficit). Macros calculados na hora: proteína e carboidrato a 4 kcal/g, gordura a 9 kcal/g. Hidratação e suplementação inclusas — creatina segura dentro da faixa 3–5 g/dia validada, com trava absoluta em 6 g.</p>
+        <p class="feature__punch">Você não escolhe fórmula errada. Nunca mais.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature__tag">Dieta</div>
+        <h3>Dieta em templates que você adapta em minutos</h3>
+        <p>
+          Refeições, macros, base de alimentos com <strong>312 itens pré-cadastrados</strong> entre TACO/IBGE — e a possibilidade de importar em massa a sua própria base via CSV. Templates prontos incluem "Desafio 30 dias de Hipertrofia", "Dieta Cariani" e outros que a comunidade tem pedido.
+        </p>
+        <p>Dieta que era planilha vira <strong>plano que sai em PDF marcado com o seu nome</strong> e cai direto no WhatsApp do paciente.</p>
+      </article>
+
+      <article class="feature feature--highlight">
+        <div class="feature__tag feature__tag--highlight">Diferencial de mercado</div>
+        <h3>O módulo que WebDiet e Dietbox não têm — comportamento</h3>
+        <p>Aqui está o que separa você da concorrência quando o paciente decidir se volta ou não.</p>
+        <p>Sono, estresse, cortisol, ciclo circadiano, técnicas de respiração e presença. O paciente registra numa escala validada (1 a 10) — e você vê, no gráfico, a semana em que o sono despencou antes do peso voltar a subir.</p>
+        <p class="feature__punch"><strong>Isso é o que fecha o gap do mercado.</strong> Nutricionista que só entrega macro entrega um número. Nutricionista que entrega comportamento entrega uma vida.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature__tag">Consumo por IA</div>
+        <h3>Consumo por foto — a mágica que economiza atrito</h3>
+        <p>O paciente tira uma foto do prato. A IA lê e registra o consumo estimado. Você audita e ajusta se precisar.</p>
+        <p>O paciente para de mentir por vergonha. Você para de perguntar "o que você comeu no domingo?" três vezes. O dado vira gráfico. O gráfico vira conversa.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature__tag">Exames</div>
+        <h3>Exames laboratoriais lidos por IA</h3>
+        <p>
+          Suba o PDF do exame. A IA extrai os marcadores relevantes e sinaliza os que estão fora da faixa. Você usa como base para prescrever suplementação e ajustar o plano — não como substituto do seu olhar, mas como um estagiário que já organizou a mesa antes de você chegar.
+        </p>
+      </article>
+
+      <article class="feature">
+        <div class="feature__tag">Evolução</div>
+        <h3>Evolução em gráficos que o paciente entende</h3>
+        <p>
+          Peso, dobras, circunferências, macros, comportamento — tudo em séries temporais que fazem sentido para uma pessoa não-técnica. Na retorno, você não precisa argumentar que o paciente evoluiu. Você <strong>mostra</strong>.
+        </p>
+      </article>
+
+      <article class="feature feature--muted">
+        <div class="feature__tag">Infraestrutura</div>
+        <h3>O resto que você deixa de perder tempo com</h3>
+        <p>
+          Autenticação forte, controle de acesso por papel (admin, moderador, usuário), audit logs de tudo que muda no cadastro, backup, exportação de PDF, filtros históricos, base de alimentos importada por CSV. É a infraestrutura que você nunca vai comemorar — e que faz o sistema não te decepcionar num terça-feira à noite.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================== 5. DIFERENCIAL ================== -->
+<section class="section section--warmLinen" id="diferencial">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow eyebrow--muted">5 · Por que agora — e por que o NutriOS Pro</p>
+    <h2 class="section__title">Três camadas que hoje vivem separadas — num fluxo só.</h2>
+
+    <div class="prose">
+      <p>Todo software de nutrição vende cálculo. É o mínimo.</p>
+      <p>O NutriOS Pro é o único que integra três camadas que hoje vivem separadas:</p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="table-diff">
+        <thead>
+          <tr>
+            <th>Camada</th>
+            <th>O que faz</th>
+            <th>Onde está no mercado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Cálculo</strong></td>
+            <td>Antropometria + TMB/GET/VET + macros + dieta</td>
+            <td>WebDiet, Dietbox, sua planilha</td>
+          </tr>
+          <tr>
+            <td><strong>Inteligência (IA)</strong></td>
+            <td>Foto do prato, exame, Body 3D, rótulo</td>
+            <td>Apps de fitness genéricos (sem contexto clínico)</td>
+          </tr>
+          <tr>
+            <td><strong>Comportamento</strong></td>
+            <td>Sono, estresse, ciclo, adesão</td>
+            <td>Apps de mindfulness (sem nutrição)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="prose">
+      <p>Todo mundo tem uma. Alguns têm duas. <strong>Ninguém, no Brasil, tem as três num único fluxo que fala com a rotina do nutricionista clínico.</strong></p>
+      <p>E é aqui que o valor econômico entra — sem prometer milagre.</p>
+      <p>
+        O que o NutriOS Pro te permite oferecer é um <strong>serviço mais completo</strong> ao paciente. Serviço mais completo abre a conversa sobre um <strong>ticket mais alto</strong>. Ticket mais alto com um paciente que <strong>permanece</strong> (porque enxerga a evolução no gráfico) é o que sustenta uma prática que cresce sem precisar de mais horas na agenda.
+      </p>
+      <p>
+        Não estamos te prometendo que você vai dobrar a receita. Estamos te dando o sistema que <strong>remove os motivos operacionais</strong> que hoje te impedem de cobrar o que a sua entrega vale.
+      </p>
+      <p class="prose__pull"><strong>O resto continua sendo você.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================== 6. OFERTA ================== -->
+<section class="section section--linen" id="oferta">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow eyebrow--muted">6 · O que você recebe quando entra hoje</p>
+    <h2 class="section__title">Acesso completo — mais bônus por tempo limitado.</h2>
+
+    <ul class="offer-list">
+      <li><strong>Acesso completo</strong> aos módulos entregues (Avaliação, Cálculo Energético, Dieta, Evolução, Consumo, Exames, Alimentos, Comportamental, Administração, Exportação de PDF).</li>
+      <li><strong>IA aplicada</strong> — análise de foto de prato, rótulos, exames laboratoriais, Body 3D e fotos de evolução.</li>
+      <li><strong>Base de alimentos</strong> com 312 itens (TACO/IBGE) + importação em massa da sua base própria.</li>
+      <li><strong>Templates</strong> prontos de dieta e desafios ("Hipertrofia 30 dias", "Cariani", entre outros).</li>
+      <li><strong>PDF de dieta</strong> com marca personalizável para entregar ao paciente.</li>
+      <li><strong>Segurança</strong> com senha OWASP, lockout anti-brute-force, audit logs e backup.</li>
+      <li><strong>Suporte</strong> direto com o time que constrói o produto (o founder responde).</li>
+      <li><strong>Roadmap 2026</strong> já em andamento — Sprint 5 trará portal do paciente com push notifications e integração com wearables por Bluetooth.</li>
+    </ul>
+
+    <h3 class="offer__bonus-title">Bônus (por tempo limitado nesta janela de lançamento)</h3>
+    <ol class="offer-bonus">
+      <li><strong>Onboarding guiado 1:1</strong> com um membro do time para migrar o seu primeiro paciente da planilha ao sistema.</li>
+      <li><strong>Biblioteca de templates de dieta</strong> por objetivo — pronta para você adaptar em vez de começar do zero.</li>
+      <li><strong>Acesso antecipado</strong> ao Sprint 5 (portal do paciente) sem custo adicional para quem assinar durante esta janela.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================== 7. INVESTIMENTO ================== -->
+<section class="section section--warmLinen" id="investimento">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow eyebrow--muted">7 · Investimento</p>
+    <h2 class="section__title">Não é sobre quanto custa o software. É sobre quanto você deixa de cobrar quando não tem um.</h2>
+
+    <div class="quote-block">
+      <p><strong>Sobre o preço:</strong> o modelo é assinatura mensal recorrente. O valor exato está em <span class="ph">[definir link de checkout]</span> e reflete o que o mercado paga por sistemas menos completos. O ponto: o NutriOS Pro se paga com <strong>um paciente a mais no mês</strong> ou <strong>um ticket ajustado em uma consulta</strong>.</p>
+    </div>
+
+    <div class="prose">
+      <p>
+        O cálculo honesto: se hoje você atende 30 pacientes por mês e a nova conversa de valor te permite ajustar o ticket em <strong>R$ 30 por consulta</strong> — porque agora você entrega gráfico, comportamento e IA junto —, você recupera o custo do sistema no primeiro dia útil. O resto do mês é margem que antes ficava em Excel.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================== 8. GARANTIA ================== -->
+<section class="section section--mint" id="garantia">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow eyebrow--onMint">8 · Garantia</p>
+    <h2 class="section__title section__title--onMint">
+      <span class="ph ph--onMint">[definir período de teste]</span> dias para testar com pacientes reais.<br />
+      Sem cartão. Sem contrato. Cancela num clique.
+    </h2>
+
+    <div class="prose prose--onMint">
+      <p>
+        Se em <span class="ph ph--onMint">[definir período de teste]</span> dias você não sentir que o NutriOS Pro te devolveu tempo, você não paga. Não vamos te prender em contrato de um ano. Não vamos te cobrar taxa de cancelamento. A gente confia no produto porque construiu o produto.
+      </p>
+      <p><em><span class="ph ph--onMint">[texto de garantia completa a ser definido pelo jurídico antes de publicar]</span></em></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================== 9. OBJEÇÕES / FAQ ================== -->
+<section class="section section--linen" id="faq">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow eyebrow--muted">9 · Objeções</p>
+    <h2 class="section__title">O que provavelmente está passando pela sua cabeça agora.</h2>
+
+    <div class="faq">
+      <details class="faq__item">
+        <summary>Já uso WebDiet ou Dietbox — vale a pena trocar?</summary>
+        <div class="faq__body">
+          <p>Você não precisa trocar para começar. Rode o NutriOS Pro em paralelo por um mês, com dois ou três pacientes novos. Se o módulo comportamental e a IA de foto de prato mudarem a conversa da consulta — você decide.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary>Sou recém-formado — o sistema é complicado demais?</summary>
+        <div class="faq__body">
+          <p>Foi construído pensando em você. As fórmulas certas são escolhidas pelo perfil do paciente automaticamente. A dúvida "escolhi certo?" desaparece no cálculo — sobra pra você a dúvida clínica, que é onde ela deve estar.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary>O paciente não vai substituir a consulta pelo app?</summary>
+        <div class="faq__body">
+          <p>Não. Na versão atual, <strong>o paciente não tem login</strong>. Ele recebe planos por PDF, e o registro de consumo por foto passa por você. A ferramenta é sua. O paciente é seu.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary>E os dados dos meus pacientes?</summary>
+        <div class="faq__body">
+          <p>Autenticação com senha validada (padrão OWASP), lockout progressivo, sessão persistente e audit log de tudo que muda em cadastro sensível. Bucket privado com URLs assinadas expiratórias para fotos e PDFs. Backup do sistema disponível.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary>E se eu quiser sair?</summary>
+        <div class="faq__body">
+          <p>Você exporta os dados de todos os pacientes em PDF (já hoje) e não fica preso a contrato longo. Cancela quando quiser.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary>O que vem depois?</summary>
+        <div class="faq__body">
+          <p>Sprint 5 já está no roteiro: portal do paciente mobile-first com push notifications e sync com wearables por Bluetooth. Assinantes desta janela entram sem custo extra.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================== 10. FECHAMENTO / CTA FINAL ================== -->
+<section class="section section--dark" id="cta-final">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow eyebrow--onDark">10 · Fechamento</p>
+    <h2 class="section__title section__title--onDark">
+      Um sistema. Um lugar. Um fluxo contínuo.<br />
+      Você cuida do paciente. A gente cuida do resto.
+    </h2>
+
+    <div class="prose prose--onDark">
+      <p>O paciente que hoje esqueceu o plano na caixa de e-mail está esperando algo que a planilha não pode entregar.</p>
+      <p>
+        O nutricionista dentro de você — o que escolheu essa profissão para cuidar de gente, não para operar Excel — está esperando o sistema que devolve o seu tempo de olhar no olho.
+      </p>
+      <p>O NutriOS Pro é os dois de uma vez.</p>
+    </div>
+
+    <div class="final-cta">
+      <a href="#" class="btn btn--primary btn--xl js-checkout-cta">
+        Comece hoje. <span class="ph">[definir período de teste]</span> dias grátis.
+      </a>
+      <p class="final-cta__reassurance">Sem cartão. Sem contrato.</p>
+      <p class="final-cta__link"><span class="ph">[definir link de checkout]</span></p>
+      <p class="final-cta__contact"><em>Ou fale com o time em <span class="ph">[definir contato oficial]</span> se quiser conhecer o produto antes.</em></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================== RODAPÉ / DISCLAIMERS ================== -->
+<footer class="footer" role="contentinfo">
+  <div class="wrap wrap--narrow">
+    <div class="footer__brand">
+      <img src="/assets/img/logo-nutrios-pro.png" alt="" class="footer__logo" width="120" height="34" />
+    </div>
+
+    <div class="footer__disclaimers">
+      <h2 class="footer__title">Rodapé e disclaimers</h2>
+      <ul>
+        <li>
+          O NutriOS Pro é uma ferramenta de apoio à prática clínica do nutricionista. <strong>Não substitui</strong> a avaliação profissional, o julgamento clínico nem a prescrição do nutricionista responsável. Todos os cálculos são baseados em fórmulas validadas na literatura (Harris-Benedict, Mifflin-St Jeor, Tinsley, Pollock 3/7, Navy) — mas o resultado final é sempre de responsabilidade do profissional que assina o plano.
+        </li>
+        <li>
+          Suplementação (incluindo creatina) segue faixas de segurança validadas na literatura (3–5 g/dia, limite absoluto de 6 g). A prescrição final é do nutricionista.
+        </li>
+        <li>
+          Sono, estresse e outros marcadores comportamentais são registrados pelo paciente em escala de 1 a 10 e servem como apoio à decisão clínica — não como diagnóstico.
+        </li>
+        <li>
+          Dados sensíveis dos pacientes são armazenados com Row Level Security (RLS), URLs assinadas expiratórias e audit log completo. NutriOS Pro é aderente às boas práticas de proteção de dados clínicos.
+        </li>
+      </ul>
+    </div>
+
+    <p class="footer__copy">© <span id="year">2026</span> NutriOS Pro. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  // Sticky topbar shadow após scroll
+  (function(){
+    var bar = document.getElementById('topbar');
+    if (!bar) return;
+    var scrolled = false;
+    window.addEventListener('scroll', function(){
+      var isScrolled = window.scrollY > 12;
+      if (isScrolled !== scrolled) {
+        scrolled = isScrolled;
+        bar.classList.toggle('topbar--scrolled', scrolled);
+      }
+    }, { passive: true });
+  })();
+
+  // Ano dinâmico
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

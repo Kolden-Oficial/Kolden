@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omiron — Monograma Imperial · Showcase de vetorização</title>
+<meta name="description" content="Preview técnico das 5 variantes do Monograma Imperial (Direção 1, Aglaia) em 4 escalas × 3 fundos, sob currentColor. Autoria Harmonia — Kolden.">
+
+<!-- Design tokens do Omiron -->
+<link rel="stylesheet" href="../../02-tokens/tokens.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================================
+   Showcase local — grid de variantes em escalas e fundos.
+   USA SVG SPRITE INLINE + <svg><use> para que currentColor funcione.
+   ============================================================================ */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 3rem clamp(1.5rem, 4vw, 4rem);
+  background: var(--omiron-fundo-profundo);
+  color: var(--omiron-marfim);
+  font-family: var(--omiron-fonte-corpo);
+  font-size: var(--omiron-fs-body);
+  line-height: var(--omiron-lh-body);
+}
+
+.hd { max-width: 72ch; margin-bottom: 3rem; }
+.hd__eyebrow {
+  font-size: 0.75rem; letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--omiron-dourado-alto); margin-bottom: 0.75rem;
+}
+.hd__title {
+  font-family: var(--omiron-fonte-titulo);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400; line-height: 1.05;
+  color: var(--omiron-marfim);
+  margin: 0 0 1rem;
+}
+.hd__lead {
+  font-style: italic; font-size: 1.125rem;
+  color: var(--omiron-marfim-suave); margin: 0;
+}
+hr.rule {
+  border: none; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--omiron-dourado-antigo), transparent);
+  margin: 2.5rem 0;
+}
+
+.chapter { margin: 4rem 0 2rem; }
+.chapter__eyebrow {
+  font-size: 0.7rem; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--omiron-dourado-antigo); margin-bottom: 0.5rem;
+}
+.chapter__title {
+  font-family: var(--omiron-fonte-corpo);
+  font-weight: 500; font-size: 1.953rem;
+  color: var(--omiron-dourado-alto); margin: 0 0 0.5rem;
+}
+.chapter__lead {
+  color: var(--omiron-marfim-suave);
+  max-width: 68ch; margin: 0 0 2rem;
+}
+
+.scales {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem; margin-bottom: 2rem;
+}
+@media (max-width: 900px) { .scales { grid-template-columns: repeat(2, 1fr); } }
+
+.scale {
+  border: 1px solid rgb(168 129 72 / 0.3);
+  border-radius: var(--omiron-radius-md);
+  padding: 1.25rem 1rem 0.9rem;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: space-between;
+  min-height: 260px;
+  background: var(--omiron-fundo-elevado);
+  color: var(--omiron-dourado-antigo);
+}
+.scale__viewport {
+  flex: 1; width: 100%;
+  display: flex; align-items: center; justify-content: center;
+  padding: 0.5rem 0;
+}
+.scale__viewport svg { display: block; color: inherit; }
+.scale__caption {
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--omiron-marfim-suave); margin-top: 0.75rem; text-align: center;
+}
+.scale__caption strong { color: var(--omiron-marfim); font-weight: 500; }
+
+.stages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem; margin-bottom: 2rem;
+}
+@media (max-width: 900px) { .stages { grid-template-columns: 1fr; } }
+.stage {
+  border-radius: var(--omiron-radius-md);
+  padding: 3rem 2rem;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 1rem;
+  min-height: 300px;
+  justify-content: center;
+  position: relative; overflow: hidden;
+}
+.stage__label {
+  position: absolute; top: 0.75rem; left: 0.75rem;
+  font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
+  opacity: 0.7;
+}
+.stage__viewport { width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; }
+.stage__viewport svg { display: block; width: 100%; height: 100%; color: inherit; }
+.stage__title { font-size: 0.85rem; letter-spacing: 0.06em; opacity: 0.9; }
+
+.stage--profundo {
+  background: var(--omiron-fundo-profundo);
+  color: var(--omiron-dourado-antigo);
+  border: 1px solid rgb(168 129 72 / 0.35);
+}
+.stage--profundo .stage__label { color: var(--omiron-marfim-suave); }
+.stage--profundo .stage__title { color: var(--omiron-marfim); }
+
+.stage--marfim {
+  background: var(--omiron-marfim);
+  color: var(--omiron-marrom-couro);
+  border: 1px solid rgb(74 46 26 / 0.3);
+}
+.stage--marfim .stage__label { color: var(--omiron-marrom-couro); }
+.stage--marfim .stage__title { color: var(--omiron-marrom-couro); }
+
+.stage--papiro {
+  background: linear-gradient(180deg, #EDE2CE 0%, #D4C4A0 100%);
+  color: var(--omiron-marrom-couro);
+  border: 1px solid rgb(74 46 26 / 0.35);
+  position: relative;
+}
+.stage--papiro::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' seed='7' stitchTiles='stitch'/><feColorMatrix values='0.5 0 0 0 0.55  0.4 0 0 0 0.45  0.3 0 0 0 0.28  0 0 0 0.55 0'/></filter><rect width='200' height='200' filter='url(%23n)'/></svg>");
+  opacity: 0.55; mix-blend-mode: multiply;
+  pointer-events: none; z-index: 0;
+}
+.stage--papiro > * { position: relative; z-index: 1; }
+.stage--papiro .stage__label { color: var(--omiron-marrom-couro); }
+.stage--papiro .stage__title { color: var(--omiron-marrom-couro); }
+
+.lockups {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.5rem; margin-bottom: 2rem;
+}
+@media (max-width: 900px) { .lockups { grid-template-columns: 1fr; } }
+.lockup {
+  border: 1px solid rgb(168 129 72 / 0.3);
+  border-radius: var(--omiron-radius-md);
+  padding: 2rem;
+  background: var(--omiron-fundo-elevado);
+  color: var(--omiron-dourado-antigo);
+  display: flex; flex-direction: column;
+  align-items: center; gap: 1rem;
+}
+.lockup__view {
+  width: 100%;
+  display: flex; align-items: center; justify-content: center;
+}
+.lockup__view svg { display: block; color: inherit; max-width: 100%; height: auto; }
+.lockup__caption {
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--omiron-marfim-suave); text-align: center;
+}
+
+.tokenpad {
+  border: 1px dashed var(--omiron-dourado-antigo);
+  border-radius: var(--omiron-radius-md);
+  padding: 1.5rem;
+  margin: 2rem 0 1rem;
+  background: rgb(30 23 18 / 0.7);
+}
+.tokenpad__title {
+  font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--omiron-dourado-alto); margin: 0 0 1rem;
+}
+.tokenpad__row {
+  display: flex; align-items: center; gap: 1rem;
+  flex-wrap: wrap; margin-bottom: 1rem;
+}
+.tokenpad__demo {
+  padding: 1rem 1.25rem;
+  border-radius: var(--omiron-radius-sm);
+  background: var(--omiron-fundo-profundo);
+  border: 1px solid rgb(168 129 72 / 0.3);
+  display: inline-flex; align-items: center; gap: 0.75rem;
+}
+.tokenpad__demo svg { display: block; width: 40px; height: 40px; color: inherit; }
+.tokenpad__demo span {
+  font-size: 0.85rem; letter-spacing: 0.06em;
+  color: var(--omiron-marfim-suave);
+}
+.tokenpad__demo--dourado { color: var(--omiron-dourado-antigo); }
+.tokenpad__demo--dourado-alto { color: var(--omiron-dourado-alto); }
+.tokenpad__demo--marfim-couro {
+  color: var(--omiron-marrom-couro);
+  background: var(--omiron-marfim);
+  border-color: rgb(74 46 26 / 0.3);
+}
+.tokenpad__demo--marfim-couro span { color: var(--omiron-marrom-couro); }
+.tokenpad__demo--marfim {
+  color: var(--omiron-marfim);
+  background: var(--omiron-fundo-elevado);
+}
+
+.diag {
+  margin-top: 3rem;
+  padding: 1.5rem 1.75rem;
+  border-left: 3px solid var(--omiron-dourado-antigo);
+  background: rgb(30 23 18 / 0.5);
+  border-radius: var(--omiron-radius-sm);
+}
+.diag h3 {
+  font-weight: 500; font-size: 1.25rem;
+  color: var(--omiron-dourado-alto);
+  margin: 0 0 0.75rem;
+}
+.diag ul { margin: 0; padding-left: 1.25rem; }
+.diag li { margin-bottom: 0.35rem; }
+.diag code {
+  font-family: 'Consolas', 'Monaco', monospace;
+  background: rgb(0 0 0 / 0.35);
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+  color: var(--omiron-dourado-alto);
+  font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+
+<!-- ==========================================================
+     SVG SPRITE — todos os monogramas como <symbol> para reuso via <use>.
+     currentColor herda do container. É a receita canônica do brandbook.
+     ========================================================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+  <!-- HERO — com serifa dupla + Didone alto contraste -->
+  <symbol id="omiron-monograma-hero" viewBox="0 0 200 200">
+    <g fill="currentColor">
+      <path fill-rule="evenodd" d="M 25 115 A 75 65 0 1 1 175 115 A 75 65 0 1 1 25 115 Z M 40 115 A 60 52 0 1 0 160 115 A 60 52 0 1 0 40 115 Z"/>
+      <path d="M 39 43 L 47 43 L 47 115 L 39 115 Z M 153 43 L 161 43 L 161 115 L 153 115 Z M 47 43 L 55 43 L 100 101.5 L 145 43 L 153 43 L 100 111 Z"/>
+      <path d="M 96.8 100 L 98.4 100 L 98.4 118 L 96.8 118 Z M 101.6 100 L 103.2 100 L 103.2 118 L 101.6 118 Z M 94.6 118 L 100.6 118 L 100.6 119.4 L 94.6 119.4 Z M 99.4 118 L 105.4 118 L 105.4 119.4 L 99.4 119.4 Z"/>
+      <path d="M 30 112.5 L 50 112.5 L 50 115.5 L 30 115.5 Z M 150 112.5 L 170 112.5 L 170 115.5 L 150 115.5 Z"/>
+      <path d="M 28 40.5 L 52 40.5 L 52 43.5 L 28 43.5 Z M 148 40.5 L 172 40.5 L 172 43.5 L 148 43.5 Z"/>
+    </g>
+  </symbol>
+
+  <!-- 40 — sem serifa dupla, hairlines engrossadas -->
+  <symbol id="omiron-monograma-40" viewBox="0 0 200 200">
+    <g fill="currentColor">
+      <path fill-rule="evenodd" d="M 24 115 A 76 66 0 1 1 176 115 A 76 66 0 1 1 24 115 Z M 40 115 A 60 48 0 1 0 160 115 A 60 48 0 1 0 40 115 Z"/>
+      <path d="M 38 46 L 48 46 L 48 115 L 38 115 Z M 152 46 L 162 46 L 162 115 L 152 115 Z M 48 46 L 58 46 L 100 100 L 142 46 L 152 46 L 100 109 Z"/>
+      <path d="M 32 112 L 54 112 L 54 116 L 32 116 Z M 146 112 L 168 112 L 168 116 L 146 116 Z"/>
+      <path d="M 32 44 L 54 44 L 54 48 L 32 48 Z M 146 44 L 168 44 L 168 48 L 146 48 Z"/>
+    </g>
+  </symbol>
+
+  <!-- MONO — Didone atenuada, serifa dupla robusta, fill fixo preto puro -->
+  <symbol id="omiron-monograma-mono" viewBox="0 0 200 200">
+    <g fill="currentColor">
+      <path fill-rule="evenodd" d="M 25 115 A 75 65 0 1 1 175 115 A 75 65 0 1 1 25 115 Z M 42 115 A 58 50 0 1 0 158 115 A 58 50 0 1 0 42 115 Z"/>
+      <path d="M 38 43 L 47 43 L 47 115 L 38 115 Z M 153 43 L 162 43 L 162 115 L 153 115 Z M 47 43 L 56 43 L 100 101.5 L 144 43 L 153 43 L 100 111 Z"/>
+      <path d="M 96.4 100 L 98.8 100 L 98.8 118 L 96.4 118 Z M 101.2 100 L 103.6 100 L 103.6 118 L 101.2 118 Z M 94 118 L 101 118 L 101 119.8 L 94 119.8 Z M 99 118 L 106 118 L 106 119.8 L 99 119.8 Z"/>
+      <path d="M 29 112.2 L 51 112.2 L 51 115.8 L 29 115.8 Z M 149 112.2 L 171 112.2 L 171 115.8 L 149 115.8 Z"/>
+      <path d="M 27 40.2 L 53 40.2 L 53 43.8 L 27 43.8 Z M 147 40.2 L 173 40.2 L 173 43.8 L 147 43.8 Z"/>
+    </g>
+  </symbol>
+
+  <!-- LOCKUP HORIZONTAL -->
+  <symbol id="omiron-lockup-horizontal" viewBox="0 0 320 140">
+    <g fill="currentColor">
+      <g transform="translate(0, 20) scale(0.55)">
+        <path fill-rule="evenodd" d="M 25 115 A 75 65 0 1 1 175 115 A 75 65 0 1 1 25 115 Z M 40 115 A 60 52 0 1 0 160 115 A 60 52 0 1 0 40 115 Z"/>
+        <path d="M 39 43 L 47 43 L 47 115 L 39 115 Z M 153 43 L 161 43 L 161 115 L 153 115 Z M 47 43 L 55 43 L 100 101.5 L 145 43 L 153 43 L 100 111 Z"/>
+        <path d="M 96.8 100 L 98.4 100 L 98.4 118 L 96.8 118 Z M 101.6 100 L 103.2 100 L 103.2 118 L 101.6 118 Z M 94.6 118 L 100.6 118 L 100.6 119.4 L 94.6 119.4 Z M 99.4 118 L 105.4 118 L 105.4 119.4 L 99.4 119.4 Z"/>
+        <path d="M 30 112.5 L 50 112.5 L 50 115.5 L 30 115.5 Z M 150 112.5 L 170 112.5 L 170 115.5 L 150 115.5 Z"/>
+        <path d="M 28 40.5 L 52 40.5 L 52 43.5 L 28 43.5 Z M 148 40.5 L 172 40.5 L 172 43.5 L 148 43.5 Z"/>
+      </g>
+    </g>
+    <text x="145" y="72" fill="currentColor"
+      font-family="'EB Garamond', 'Cormorant Garamond', 'Georgia', serif"
+      font-size="34" font-weight="500" letter-spacing="4.5"
+      dominant-baseline="central">OMIRON</text>
+  </symbol>
+
+  <!-- LOCKUP VERTICAL -->
+  <symbol id="omiron-lockup-vertical" viewBox="0 0 240 320">
+    <g fill="currentColor">
+      <g transform="translate(20, 0)">
+        <path fill-rule="evenodd" d="M 25 115 A 75 65 0 1 1 175 115 A 75 65 0 1 1 25 115 Z M 40 115 A 60 52 0 1 0 160 115 A 60 52 0 1 0 40 115 Z"/>
+        <path d="M 39 43 L 47 43 L 47 115 L 39 115 Z M 153 43 L 161 43 L 161 115 L 153 115 Z M 47 43 L 55 43 L 100 101.5 L 145 43 L 153 43 L 100 111 Z"/>
+        <path d="M 96.8 100 L 98.4 100 L 98.4 118 L 96.8 118 Z M 101.6 100 L 103.2 100 L 103.2 118 L 101.6 118 Z M 94.6 118 L 100.6 118 L 100.6 119.4 L 94.6 119.4 Z M 99.4 118 L 105.4 118 L 105.4 119.4 L 99.4 119.4 Z"/>
+        <path d="M 30 112.5 L 50 112.5 L 50 115.5 L 30 115.5 Z M 150 112.5 L 170 112.5 L 170 115.5 L 150 115.5 Z"/>
+        <path d="M 28 40.5 L 52 40.5 L 52 43.5 L 28 43.5 Z M 148 40.5 L 172 40.5 L 172 43.5 L 148 43.5 Z"/>
+      </g>
+    </g>
+    <text x="120" y="255" fill="currentColor" text-anchor="middle"
+      font-family="'EB Garamond', 'Cormorant Garamond', 'Georgia', serif"
+      font-size="32" font-weight="500" letter-spacing="4.2">OMIRON</text>
+  </symbol>
+</defs>
+</svg>
+
+<header class="hd">
+  <div class="hd__eyebrow">Omiron · Vetorização SVG · Direção 1</div>
+  <h1 class="hd__title">Monograma Imperial</h1>
+  <p class="hd__lead">
+    Cinco variantes, quatro escalas, três palcos. Este arquivo é preview
+    técnico — não substitui teste de impressão A4 físico. Cor herdada de
+    <code>currentColor</code>: troque o token do container e o traçado segue.
+  </p>
+</header>
+
+<hr class="rule">
+
+<!-- I · HERO em 4 escalas -->
+<section class="chapter">
+  <div class="chapter__eyebrow">Variante A</div>
+  <h2 class="chapter__title">monograma-hero.svg — canônica com serifa dupla</h2>
+  <p class="chapter__lead">
+    Contraste Didone completo. Serifa dupla no centro do M. Aplicação hero
+    (capa de deck, brandbook, receita física em ≥ 24mm, header do app em ≥ 80px).
+  </p>
+  <div class="scales">
+    <div class="scale">
+      <div class="scale__viewport"><svg width="40" height="40"><use href="#omiron-monograma-hero"/></svg></div>
+      <div class="scale__caption"><strong>40 px</strong><br>dourado antigo · fundo elevado</div>
+    </div>
+    <div class="scale">
+      <div class="scale__viewport"><svg width="80" height="80"><use href="#omiron-monograma-hero"/></svg></div>
+      <div class="scale__caption"><strong>80 px</strong><br>dourado antigo · fundo elevado</div>
+    </div>
+    <div class="scale">
+      <div class="scale__viewport"><svg width="200" height="200"><use href="#omiron-monograma-hero"/></svg></div>
+      <div class="scale__caption"><strong>200 px</strong><br>dourado antigo · fundo elevado</div>
+    </div>
+    <div class="scale">
+      <div class="scale__viewport"><svg width="360" height="360" style="max-width:100%; height:auto;"><use href="#omiron-monograma-hero"/></svg></div>
+      <div class="scale__caption"><strong>hero</strong><br>dourado antigo · fundo elevado</div>
+    </div>
+  </div>
+</section>
+
+<!-- II · 40 em 4 escalas -->
+<section class="chapter">
+  <div class="chapter__eyebrow">Variante B</div>
+  <h2 class="chapter__title">monograma-40.svg — reduzida para escalas pequenas</h2>
+  <p class="chapter__lead">
+    Sem serifa dupla, hairlines engrossadas 15%. Uso: nav lateral do app,
+    favicon, símbolo inline &lt; 60px, canto de slide, marca d'água no feed.
+  </p>
+  <div class="scales">
+    <div class="scale">
+      <div class="scale__viewport"><svg width="40" height="40"><use href="#omiron-monograma-40"/></svg></div>
+      <div class="scale__caption"><strong>40 px</strong> <em>(uso canônico)</em><br>dourado antigo</div>
+    </div>
+    <div class="scale">
+      <div class="scale__viewport"><svg width="80" height="80"><use href="#omiron-monograma-40"/></svg></div>
+      <div class="scale__caption"><strong>80 px</strong><br>dourado antigo</div>
+    </div>
+    <div class="scale">
+      <div class="scale__viewport"><svg width="200" height="200"><use href="#omiron-monograma-40"/></svg></div>
+      <div class="scale__caption"><strong>200 px</strong> (fora do canônico — para comparação)<br>dourado antigo</div>
+    </div>
+    <div class="scale">
+      <div class="scale__viewport"><svg width="360" height="360" style="max-width:100%; height:auto;"><use href="#omiron-monograma-40"/></svg></div>
+      <div class="scale__caption"><strong>hero</strong> (para comparação vs A)<br>dourado antigo</div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- III · 3 palcos com currentColor -->
+<section class="chapter">
+  <div class="chapter__eyebrow">Três palcos</div>
+  <h2 class="chapter__title">currentColor sobre três fundos canônicos</h2>
+  <p class="chapter__lead">
+    Mesmo asset SVG (variante hero). O que muda é a <code>color</code> do container.
+    O símbolo herda via <code>fill="currentColor"</code>.
+  </p>
+  <div class="stages">
+    <div class="stage stage--profundo">
+      <div class="stage__label">01 · Dark canônico</div>
+      <div class="stage__viewport"><svg viewBox="0 0 200 200"><use href="#omiron-monograma-hero"/></svg></div>
+      <div class="stage__title">Dourado antigo · fundo profundo</div>
+    </div>
+    <div class="stage stage--marfim">
+      <div class="stage__label">02 · Receita física</div>
+      <div class="stage__viewport"><svg viewBox="0 0 200 200"><use href="#omiron-monograma-hero"/></svg></div>
+      <div class="stage__title">Marrom couro · marfim</div>
+    </div>
+    <div class="stage stage--papiro">
+      <div class="stage__label">03 · Papiro</div>
+      <div class="stage__viewport"><svg viewBox="0 0 200 200"><use href="#omiron-monograma-hero"/></svg></div>
+      <div class="stage__title">Marrom couro · papiro procedural</div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- IV · Lockups -->
+<section class="chapter">
+  <div class="chapter__eyebrow">Sistema de assinatura</div>
+  <h2 class="chapter__title">Lockups — horizontal & vertical</h2>
+  <p class="chapter__lead">
+    Wordmark "OMIRON" em EB Garamond medium small-caps ao lado ou abaixo do
+    monograma. Nunca substitui o monograma — legenda a ele.
+  </p>
+  <div class="lockups">
+    <div class="lockup">
+      <div class="lockup__view">
+        <svg viewBox="0 0 320 140" style="width: 480px; max-width: 100%;"><use href="#omiron-lockup-horizontal"/></svg>
+      </div>
+      <div class="lockup__caption"><strong>lockup-horizontal.svg</strong> — header do app, papel timbrado, assinatura de e-mail</div>
+    </div>
+    <div class="lockup">
+      <div class="lockup__view">
+        <svg viewBox="0 0 240 320" style="width: 220px; max-width: 100%;"><use href="#omiron-lockup-vertical"/></svg>
+      </div>
+      <div class="lockup__caption"><strong>lockup-vertical.svg</strong> — capa de deck, marca centralizada</div>
+    </div>
+  </div>
+</section>
+
+<!-- V · Mono print -->
+<section class="chapter">
+  <div class="chapter__eyebrow">Impressão B&amp;W</div>
+  <h2 class="chapter__title">monograma-mono.svg — traço puro para papel</h2>
+  <p class="chapter__lead">
+    Modulação axial atenuada, serifa dupla mais robusta. Uso: papel timbrado
+    B&amp;W, marca d'água em documento oficial, gravação em latão/couro (aplicação
+    tátil). Otimizada para leitura a partir de ~15mm de altura.
+  </p>
+  <div class="stages">
+    <div class="stage stage--marfim">
+      <div class="stage__label">Impressão · ~15mm</div>
+      <div class="stage__viewport" style="width: 60px; height: 60px;"><svg viewBox="0 0 200 200"><use href="#omiron-monograma-mono"/></svg></div>
+      <div class="stage__title">Marca d'água discreta</div>
+    </div>
+    <div class="stage stage--marfim">
+      <div class="stage__label">Impressão · ~30mm</div>
+      <div class="stage__viewport" style="width: 120px; height: 120px;"><svg viewBox="0 0 200 200"><use href="#omiron-monograma-mono"/></svg></div>
+      <div class="stage__title">Papel timbrado receita</div>
+    </div>
+    <div class="stage stage--marfim">
+      <div class="stage__label">Referência · hero</div>
+      <div class="stage__viewport" style="width: 240px; height: 240px;"><svg viewBox="0 0 200 200"><use href="#omiron-monograma-mono"/></svg></div>
+      <div class="stage__title">Placa de porta / gravação em latão</div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- VI · Token switcher -->
+<section class="chapter">
+  <div class="chapter__eyebrow">Prova de currentColor</div>
+  <h2 class="chapter__title">Trocando o token do container</h2>
+  <p class="chapter__lead">
+    Cada célula abaixo tem <code>color: var(--omiron-*)</code> diferente. O mesmo
+    SVG (<code>#omiron-monograma-40</code>) segue a cor. Prova de que o traçado é
+    puro, sem cor hardcoded.
+  </p>
+  <div class="tokenpad">
+    <div class="tokenpad__row">
+      <div class="tokenpad__demo tokenpad__demo--dourado">
+        <svg viewBox="0 0 200 200"><use href="#omiron-monograma-40"/></svg>
+        <span>--omiron-dourado-antigo (padrão)</span>
+      </div>
+      <div class="tokenpad__demo tokenpad__demo--dourado-alto">
+        <svg viewBox="0 0 200 200"><use href="#omiron-monograma-40"/></svg>
+        <span>--omiron-dourado-alto (hover)</span>
+      </div>
+      <div class="tokenpad__demo tokenpad__demo--marfim-couro">
+        <svg viewBox="0 0 200 200"><use href="#omiron-monograma-40"/></svg>
+        <span>--omiron-marrom-couro (receita)</span>
+      </div>
+      <div class="tokenpad__demo tokenpad__demo--marfim">
+        <svg viewBox="0 0 200 200"><use href="#omiron-monograma-40"/></svg>
+        <span>--omiron-marfim (raro)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VII · Diagnóstico -->
+<section class="diag">
+  <h3>Ler antes de aprovar</h3>
+  <ul>
+    <li>Estes símbolos são consumidos via <code>&lt;svg&gt;&lt;use href="#..."/&gt;</code> — a
+      única maneira de garantir <code>currentColor</code> num sprite reutilizado.
+      Os arquivos <code>.svg</code> autônomos (fora do sprite) usam a MESMA geometria
+      e podem ser importados como <code>&lt;img src&gt;</code> quando cor fixa for OK
+      (favicon, marca d'água estática em documento).</li>
+    <li>Contraste WCAG (SC 1.4.11 non-text ≥ 3:1):
+      <ul>
+        <li><em>Dourado antigo</em> <code>#A88148</code> sobre <em>fundo profundo</em> <code>#141010</code> — 4.68:1 (AA texto, ≥3:1 elemento gráfico não-texto SC 1.4.11). Confere com <code>cores.md §5.2</code>.</li>
+        <li><em>Marrom couro</em> <code>#4A2E1A</code> sobre <em>marfim</em> <code>#EDE2CE</code> — 9.28:1 (AAA). Confere com <code>cores.md §5.2</code>.</li>
+      </ul>
+    </li>
+    <li>Hairline mínima: menor traço no viewBox 200×200 é a hairline base do O
+      (topo/base ≈ 13 uni no hero). A 40 px, isso vira ~0.65px físico com anti-alias.
+      Sobrevive à regra de 0.5pt em impressão a partir de 15mm com o mono (que engrossa hairlines).</li>
+    <li>Serifa dupla: presente hero + mono, ausente em 40. Rule aplicada por
+      arquivo, não por CSS conditional — o consumidor escolhe o asset por escala.</li>
+    <li>Filtro papiro procedural — aqui foi inlinado como data URI só para preview.
+      No brandbook, o filtro é o mesmo do <code>&lt;filter id="papiro-textura"&gt;</code>
+      do sprite global existente.</li>
+    <li>PENDENTE (fora desta rodada): teste de impressão A4 físico em impressora
+      real (mono e color) para calibrar hairline final. Rodada seguinte.</li>
+  </ul>
+</section>
+
+</body>
+</html>

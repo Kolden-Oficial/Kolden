@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Omiron — Monograma Imperial · versão 40 (small)
+  ==============================================================================
+  Reduzida para 40×40 (nav lateral, favicon, símbolo inline).
+
+  DIFERENÇAS EM RELAÇÃO AO HERO
+
+  1. SEM serifa dupla no centro do M — a essa escala empasta e vira mancha.
+     A serifa dupla é assinatura autoral APENAS na versão hero (regra do
+     briefing L88, L106).
+
+  2. Hairlines engrossadas 15% para sobreviver ao pixel-hint:
+     — modulação axial reduzida (rx interno 61→60.5; ry interno 52→49).
+     — topo/base do O engrossado de 13 para 16 unidades.
+     — hastes externas do M engrossadas de 8 para 10 unidades.
+     — serifas superiores mais compactas (largura reduzida) para não
+       criar mancha na crista quando renderizado abaixo de 24px.
+
+  3. Cristas do M subiram só 6 unidades acima do topo do O (não 10):
+     — em 40px cada unidade vale 0.2px; ganho de "coroação" é sacrificado
+       em favor da legibilidade dos pontos altos.
+
+  4. Traço mais decisivo — menos ornamento, mais silhueta.
+
+  MESMO VIEWBOX
+  Mantém viewBox 0 0 200 200 (não 40×40) para permitir troca direta com
+  a versão hero via CSS: basta swap do <use href> ou re-injeção do path.
+  Renderer escala pelo container.
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 200"
+  role="img"
+  aria-labelledby="omiron-40-title"
+  fill="currentColor">
+  <title id="omiron-40-title">Omiron — Monograma (40px)</title>
+
+  <!--
+    O — engrossado nas hairlines para sobreviver ao pixel-hint.
+    Externa: rx=76, ry=66
+    Interna: rx=60, ry=48
+    Espessura resultante: laterais 16, topo/base 18 (contraste reduzido,
+    intencional — Didone atenuada para pequenez).
+  -->
+  <path
+    fill-rule="evenodd"
+    d="
+      M 24 115
+      A 76 66 0 1 1 176 115
+      A 76 66 0 1 1 24 115
+      Z
+      M 40 115
+      A 60 48 0 1 0 160 115
+      A 60 48 0 1 0 40 115
+      Z
+    "/>
+
+  <!--
+    M — hastes externas engrossadas (10 uni). Cristas em y=46 (só 4 acima
+    do topo do O em y=50). V central com topo alargado.
+  -->
+  <path
+    d="
+      M 38 46
+      L 48 46
+      L 48 115
+      L 38 115
+      Z
+
+      M 152 46
+      L 162 46
+      L 162 115
+      L 152 115
+      Z
+
+      M 48 46
+      L 58 46
+      L 100 100
+      L 142 46
+      L 152 46
+      L 100 109
+      Z
+    "/>
+
+  <!--
+    Serifa base do M — brackets compactos.
+  -->
+  <path
+    d="
+      M 32 112
+      L 54 112
+      L 54 116
+      L 32 116
+      Z
+
+      M 146 112
+      L 168 112
+      L 168 116
+      L 146 116
+      Z
+    "/>
+
+  <!--
+    Serifa superior do M — reduzida em largura para não empastar em 40px.
+  -->
+  <path
+    d="
+      M 32 44
+      L 54 44
+      L 54 48
+      L 32 48
+      Z
+
+      M 146 44
+      L 168 44
+      L 168 48
+      L 146 48
+      Z
+    "/>
+</svg>

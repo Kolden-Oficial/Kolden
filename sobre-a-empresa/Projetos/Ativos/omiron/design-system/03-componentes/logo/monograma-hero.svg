@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Omiron — Monograma Imperial · versão HERO
+  ==============================================================================
+  Direção 1 do briefing (Aglaia, direcoes-logo.md L39-113).
+  Cifra imperial dos séculos XVIII-XIX, destilada em Didone estoica.
+
+  DECISÕES AUTORAIS
+
+  1. Modulação de espessura real (não stroke-width uniforme):
+     — o O é composto por DOIS ELIPSES concêntricos com fill="currentColor" e
+       fill-rule="evenodd", criando a contra-forma que é a assinatura da
+       Didone: hairlines finíssimas no topo/base, hastes grossas nas laterais.
+       Contraste axial O_ext(rx=75,ry=65) vs O_int(rx=60,ry=52) =
+         laterais 15 unidades de espessura (grosso)
+         topo/base 13 unidades (fino, mas legível — hairline segura a 40px).
+
+  2. Serifa dupla no centro do M — assinatura autoral:
+     — duas hastes finíssimas descem do vértice central do M (x=100, y=95)
+       até y=118 e terminam em serifa horizontal BRACKET (não voluta floreada
+       de casamento). É o traço da pena que sustenta o rigor.
+
+  3. Entrelaçamento OM:
+     — as duas hastes externas do M nascem exatamente sobre as bordas internas
+       verticais do O (x=40 e x=160, y=115). O V central do M desce até y=95
+       (não fecha na base — respiro imperial).
+     — as cristas serifadas do M sobem 10 unidades acima do topo do O
+       (y=42 vs y=50), criando a silhueta de "pequeno frontão neoclássico
+       coroando a letra circular" (Aglaia, L51).
+
+  4. Cor via currentColor: herda do container.
+     — no dark canônico (var(-‑omiron-dourado-antigo) = #A88148) sobre fundo profundo
+     — no light/receita: dourado antigo sobre marfim, ou marrom-couro puro em
+       impressão B&W (var(-‑omiron-marrom-couro) = #4A2E1A).
+
+  5. Referência de forma: EB Garamond, NÃO Playfair/Bodoni/Trajan.
+     — Garamond tem estrutura humanista (eixo diagonal, contraste médio-alto).
+     — Aqui pushei o contraste em direção a Didone TARDIA para acentuar o
+       ar imperial-estoico. Mas o desenho é do zero.
+
+  ESCALA
+  ViewBox 200×200. Área ativa ~100×140 centralizada. Reserva 30 unidades
+  de todos os lados como área de proteção mínima (equivale a 0.5x da altura
+  do O, regra clássica de safe area de monograma).
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 200"
+  role="img"
+  aria-labelledby="omiron-hero-title"
+  fill="currentColor">
+  <title id="omiron-hero-title">Omiron — Monograma Imperial</title>
+
+  <!--
+    O — dois elipses concêntricos com fill-rule evenodd.
+    Contra-forma modulada Didone: laterais grossas, topo/base fino.
+    Externa: rx=75, ry=65   (envelope do O)
+    Interna: rx=60, ry=52   (contra-forma)
+    Espessura resultante: laterais 15, topo/base 13.
+  -->
+  <path
+    fill-rule="evenodd"
+    d="
+      M 25 115
+      A 75 65 0 1 1 175 115
+      A 75 65 0 1 1 25 115
+      Z
+      M 40 115
+      A 60 52 0 1 0 160 115
+      A 60 52 0 1 0 40 115
+      Z
+    "/>
+
+  <!--
+    M — capitel imperial.
+    Hastes externas EM CIMA da borda interna do O (x=40 e x=160).
+    Cristas serifadas (bracket) em y=42, subindo 10 acima do topo do O.
+    V central desce a y=95 (metade da altura do fuste — respiro).
+    Modulação: hastes externas grossas (10 uni), hastes internas do V finas (6).
+  -->
+  <path
+    d="
+      M 39 43
+      L 47 43
+      L 47 115
+      L 39 115
+      Z
+
+      M 153 43
+      L 161 43
+      L 161 115
+      L 153 115
+      Z
+
+      M 47 43
+      L 55 43
+      L 100 101.5
+      L 145 43
+      L 153 43
+      L 100 111
+      Z
+    "/>
+
+  <!--
+    Serifa dupla no centro do M — ASSINATURA AUTORAL desta direção.
+    Duas hastes finíssimas (largura 1.6) descem do vértice central do V
+    (x=100, y=100 → y=118) e terminam em serifa horizontal BRACKET
+    (~6 unidades de largura, ~1.2 de altura), como a pena do calígrafo
+    que sustenta o traço. NÃO é voluta — é bracket estoico.
+  -->
+  <path
+    d="
+      M 96.8 100
+      L 98.4 100
+      L 98.4 118
+      L 96.8 118
+      Z
+
+      M 101.6 100
+      L 103.2 100
+      L 103.2 118
+      L 101.6 118
+      Z
+
+      M 94.6 118
+      L 100.6 118
+      L 100.6 119.4
+      L 94.6 119.4
+      Z
+
+      M 99.4 118
+      L 105.4 118
+      L 105.4 119.4
+      L 99.4 119.4
+      Z
+    "/>
+
+  <!--
+    Serifa base das hastes externas do M — dois brackets simétricos,
+    cadência tipográfica romana. Ancoram o monograma no baseline do O.
+  -->
+  <path
+    d="
+      M 30 112.5
+      L 50 112.5
+      L 50 115.5
+      L 30 115.5
+      Z
+
+      M 150 112.5
+      L 170 112.5
+      L 170 115.5
+      L 150 115.5
+      Z
+    "/>
+
+  <!--
+    Serifa superior externa das hastes do M — cristas em bracket,
+    coroando o "pequeno frontão" (Aglaia L51).
+  -->
+  <path
+    d="
+      M 28 40.5
+      L 52 40.5
+      L 52 43.5
+      L 28 43.5
+      Z
+
+      M 148 40.5
+      L 172 40.5
+      L 172 43.5
+      L 148 43.5
+      Z
+    "/>
+</svg>

@@ -1,0 +1,362 @@
+/*
+ * Omiron — Design Tokens v1 (CSS custom properties)
+ * ----------------------------------------------------------------------------
+ * App de monitoramento terapêutico psiquiátrico white-label — Clínica Dr.
+ * Ariosto Filho (BH). Identidade Omiron: dark-mode = identidade, não tema
+ * opcional. Preto puro #000000 e branco puro #FFFFFF BANIDOS por veto do
+ * cliente (rechaça clinical-cold).
+ *
+ * Fonte de verdade dos valores: ./tokens.json (DTCG).
+ * Este arquivo materializa os tokens em CSS custom properties prontas para :root.
+ *
+ * COMO USAR
+ *   Importar antes de qualquer outro CSS de aplicação:
+ *     @import "./design-system/02-tokens/tokens.css";
+ *   OU copiar o bloco :root para o CSS base do produto.
+ *   Todo componente consome tokens via var(--omiron-*) — NUNCA hex cru.
+ *
+ * FONTES
+ *   Great Vibes:  @font-face local (SIL OFL — uso comercial livre).
+ *   EB Garamond:  @font-face local (SIL OFL — uso comercial livre).
+ *   Georgia:      fallback de sistema (sem @font-face).
+ *
+ * PAR CTA CANÔNICO
+ *   Marfim (#EDE2CE) sobre Âmbar Crepúsculo (#C67A3E) = 3.18:1 AA/lg
+ *     (usar em botão com body-lg ≥ 18px OU h4/h5)
+ *   Fundo Profundo (#141010) sobre Âmbar Crepúsculo = 4.72:1 AA
+ *     (usar em botão com body ≥ 15.75px bold)
+ *
+ * PAR TEXTO CANÔNICO
+ *   Marfim (#EDE2CE) sobre Fundo Profundo (#141010) = 15.02:1 AAA
+ *     (leitura padrão dark, TODO corpo)
+ *
+ * VERDE PLANTA — USO RESTRITO
+ *   Apenas gamificação da planta virtual. NUNCA como sucesso genérico,
+ *   badge de status, nem qualquer outro contexto.
+ *
+ * PRETO E BRANCO PUROS — BANIDOS
+ *   Nunca usar #000000 nem #FFFFFF como cor de superfície ou texto.
+ *   Substitutos:
+ *     #000000 → --omiron-fundo-profundo (#141010)
+ *     #FFFFFF → --omiron-marfim (#EDE2CE)
+ *   Exceção única permitida: rgba(0, 0, 0, alpha) em declaração de sombra
+ *   (documentado em cada uso).
+ * ============================================================================
+ */
+
+/* ============================================================================
+   @font-face — Great Vibes (Google Fonts, SIL OFL)
+   ============================================================================ */
+@font-face {
+  font-family: "Great Vibes";
+  src: url("/fonts/great-vibes/GreatVibes-Regular.woff2") format("woff2"),
+       url("/fonts/great-vibes/GreatVibes-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================================================
+   @font-face — EB Garamond (Google Fonts, SIL OFL)
+   Revitalização digital de Claude Garamont (século XVI).
+   ============================================================================ */
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/fonts/eb-garamond/EBGaramond-Regular.woff2") format("woff2"),
+       url("/fonts/eb-garamond/EBGaramond-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/fonts/eb-garamond/EBGaramond-Medium.woff2") format("woff2"),
+       url("/fonts/eb-garamond/EBGaramond-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/fonts/eb-garamond/EBGaramond-SemiBold.woff2") format("woff2"),
+       url("/fonts/eb-garamond/EBGaramond-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/fonts/eb-garamond/EBGaramond-Italic.woff2") format("woff2"),
+       url("/fonts/eb-garamond/EBGaramond-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ============================================================================
+   :root — Tokens Omiron (dark-mode canônico é a identidade)
+   ============================================================================ */
+:root {
+  /* ------------------------------------------------------------------------
+     COR — Primitivas (10 cores + verde planta reservado)
+     ------------------------------------------------------------------------ */
+  --omiron-fundo-profundo:    #141010;
+  --omiron-fundo-elevado:     #1E1712;
+  --omiron-fundo-marfim:      #EDE2CE;
+  --omiron-dourado-antigo:    #A88148;
+  --omiron-dourado-alto:      #C8A46C;
+  --omiron-marfim:            #EDE2CE;
+  --omiron-marfim-suave:      #B8AC93;
+  --omiron-ambar-crepusculo:  #C67A3E;
+  --omiron-ambar-terra:       #9E5528;
+  --omiron-marrom-couro:      #4A2E1A;
+  --omiron-verde-planta:      #5C7A3E; /* USO RESTRITO — gamificação apenas */
+
+  /* ------------------------------------------------------------------------
+     COR — Semânticas (dark canônico)
+     Consuma estas em componentes; nunca as primitivas diretamente.
+     ------------------------------------------------------------------------ */
+  --omiron-background:            var(--omiron-fundo-profundo);
+  --omiron-foreground:            var(--omiron-marfim);
+  --omiron-card:                  var(--omiron-fundo-elevado);
+  --omiron-card-foreground:       var(--omiron-marfim);
+  --omiron-popover:               var(--omiron-fundo-elevado);
+  --omiron-popover-foreground:    var(--omiron-marfim);
+  --omiron-border:                rgb(168 129 72 / 0.3);   /* Dourado Antigo @ 30% */
+  --omiron-input:                 rgb(184 172 147 / 0.2);  /* Marfim Suave @ 20% */
+  --omiron-primary:               var(--omiron-ambar-crepusculo);
+  --omiron-primary-foreground:    var(--omiron-marfim);    /* body-lg ≥ 18px (3.18:1 AA/lg) */
+  --omiron-accent:                var(--omiron-dourado-antigo);
+  --omiron-accent-foreground:     var(--omiron-fundo-profundo);
+  --omiron-accent-alto:           var(--omiron-dourado-alto);
+  --omiron-muted:                 var(--omiron-fundo-elevado);
+  --omiron-muted-foreground:      var(--omiron-marfim-suave);
+  --omiron-destructive:           var(--omiron-ambar-terra);
+  --omiron-destructive-foreground: var(--omiron-marfim);
+  --omiron-ring:                  var(--omiron-dourado-antigo);
+  --omiron-tactil:                var(--omiron-marrom-couro);
+  --omiron-tactil-foreground:     var(--omiron-marfim);
+  --omiron-papiro:                var(--omiron-fundo-marfim);
+  --omiron-papiro-foreground:     var(--omiron-marrom-couro);
+  --omiron-gamificacao:           var(--omiron-verde-planta);
+
+  /* ------------------------------------------------------------------------
+     SUPERFÍCIE — Papiro (textura cross-canal)
+     Uso em cards de recompensa, moldura de mensagem Quíron, receita física.
+     Requer que os arquivos WebP/PNG existam em /assets/texturas/ (brief em
+     01-fundamentos/grafismos.md §2.2).
+     ------------------------------------------------------------------------ */
+  --omiron-superficie-papiro-liso:
+    url("/assets/texturas/papiro-liso.webp"),
+    linear-gradient(180deg, #EDE2CE 0%, #D4C4A0 100%);
+  --omiron-superficie-papiro-envelhecido:
+    url("/assets/texturas/papiro-envelhecido.webp"),
+    linear-gradient(180deg, #EDE2CE 0%, #C4B08C 100%);
+  --omiron-superficie-papiro-manchado:
+    url("/assets/texturas/papiro-manchado.webp"),
+    linear-gradient(180deg, #EDE2CE 0%, #D4C4A0 100%);
+
+  /* ------------------------------------------------------------------------
+     SPACING — base 4px (mais granular que base 8 do NutriOS;
+     maximalismo Omiron exige micro-ajustes de moldura)
+     ------------------------------------------------------------------------ */
+  --omiron-space-0:   0;
+  --omiron-space-1:   0.25rem;   /* 4px  — base */
+  --omiron-space-2:   0.5rem;    /* 8px  */
+  --omiron-space-3:   0.75rem;   /* 12px */
+  --omiron-space-4:   1rem;      /* 16px */
+  --omiron-space-6:   1.5rem;    /* 24px */
+  --omiron-space-8:   2rem;      /* 32px */
+  --omiron-space-12:  3rem;      /* 48px */
+  --omiron-space-16:  4rem;      /* 64px */
+
+  /* ------------------------------------------------------------------------
+     RADIUS — soft contido (mundo clássico rejeita cantos muito arredondados)
+     ------------------------------------------------------------------------ */
+  --omiron-radius-none: 0;
+  --omiron-radius-xs:   2px;
+  --omiron-radius-sm:   4px;
+  --omiron-radius-md:   8px;    /* DEFAULT input + botão */
+  --omiron-radius-lg:   12px;   /* DEFAULT card */
+  --omiron-radius-xl:   16px;   /* modal grande, hero card */
+  --omiron-radius-full: 9999px; /* pill, avatar, switch */
+  --omiron-radius:      var(--omiron-radius-md);
+
+  /* ------------------------------------------------------------------------
+     SHADOW — 2 níveis
+     Base preto puro (única exceção permitida ao ban do #000000 — sombra é
+     rgba com alpha, nunca cor de superfície).
+     ------------------------------------------------------------------------ */
+  --omiron-shadow-elevada-suave:
+    0 4px 12px rgb(0 0 0 / 0.4),
+    0 1px 3px rgb(0 0 0 / 0.3);
+  --omiron-shadow-imperial-dourada:
+    0 0 0 1px rgb(168 129 72 / 0.4),
+    0 8px 24px rgb(0 0 0 / 0.5),
+    0 2px 6px rgb(168 129 72 / 0.15);
+
+  /* ------------------------------------------------------------------------
+     Z-INDEX — camadas nomeadas
+     ------------------------------------------------------------------------ */
+  --omiron-z-base:       0;
+  --omiron-z-elevado:    10;
+  --omiron-z-dropdown:   20;
+  --omiron-z-sticky:     30;
+  --omiron-z-modal:      40;
+  --omiron-z-toast:      50;
+  --omiron-z-prioridade: 100;
+
+  /* ------------------------------------------------------------------------
+     MOTION — 3 durations + 2 easings (mais lento que apps modernos —
+     coerente com calma noturna)
+     ------------------------------------------------------------------------ */
+  --omiron-duracao-rapida: 120ms;
+  --omiron-duracao-media:  200ms;
+  --omiron-duracao-lenta:  320ms;
+
+  --omiron-easing-classica-suave:  cubic-bezier(0.4, 0.0, 0.2, 1.0);
+  --omiron-easing-classica-solene: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+
+  /* ------------------------------------------------------------------------
+     TYPOGRAPHY — 2 famílias canônicas + 1 fallback crítico
+     ------------------------------------------------------------------------ */
+  --omiron-fonte-titulo:
+    "Great Vibes", "Snell Roundhand", "Apple Chancery", "Zapfino", cursive;
+  --omiron-fonte-corpo:
+    "EB Garamond", "Garamond", "Cormorant Garamond", "Georgia",
+    "Palatino Linotype", serif;
+  --omiron-fonte-fallback-critico:
+    "EB Garamond", "Georgia", "Cambria", system-ui, sans-serif;
+
+  /* Escala tipográfica — terça maior (razão 1.250) */
+  --omiron-fs-caption:  0.75rem;   /* 12px */
+  --omiron-fs-body-sm:  0.875rem;  /* 14px */
+  --omiron-fs-body:     1rem;      /* 16px — mínimo absoluto (dislexia) */
+  --omiron-fs-body-lg:  1.125rem;  /* 18px */
+  --omiron-fs-h5:       1.25rem;   /* 20px */
+  --omiron-fs-h4:       1.563rem;  /* 25px */
+  --omiron-fs-h3:       1.953rem;  /* 31px */
+  --omiron-fs-h2:       2.441rem;  /* 39px */
+  --omiron-fs-h1:       3.052rem;  /* 49px */
+  --omiron-fs-display:  3.815rem;  /* 61px */
+
+  /* Line-height (mais generoso que sistemas modernos — serifa clássica exige) */
+  --omiron-lh-display:  1.05;
+  --omiron-lh-h1:       1.1;
+  --omiron-lh-h2:       1.15;
+  --omiron-lh-h3:       1.2;
+  --omiron-lh-h4:       1.25;
+  --omiron-lh-h5:       1.3;
+  --omiron-lh-body:     1.65;
+  --omiron-lh-body-sm:  1.55;
+  --omiron-lh-caption:  1.5;
+
+  /* Letter-spacing (contido — dislexia veta compressão de corpo) */
+  --omiron-ls-display:  -0.02em;
+  --omiron-ls-h1:       -0.02em;
+  --omiron-ls-h2:       -0.01em;
+  --omiron-ls-h3:       -0.005em;
+  --omiron-ls-h4:       0;
+  --omiron-ls-body:     0;
+  --omiron-ls-body-sm:  0.005em;
+  --omiron-ls-caption:  0.01em;
+
+  /* Pesos permitidos */
+  --omiron-fw-regular:  400;
+  --omiron-fw-medium:   500;
+  --omiron-fw-semibold: 600;
+}
+
+/* ============================================================================
+   BASE — Aplicação canônica ao <body>
+   ============================================================================ */
+html {
+  color-scheme: dark;
+  background-color: var(--omiron-background);
+}
+
+body {
+  background-color: var(--omiron-background);
+  color: var(--omiron-foreground);
+  font-family: var(--omiron-fonte-corpo);
+  font-size: var(--omiron-fs-body);
+  line-height: var(--omiron-lh-body);
+  letter-spacing: var(--omiron-ls-body);
+  font-weight: var(--omiron-fw-regular);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================================
+   UTILITÁRIOS TRANSVERSAIS
+   ============================================================================ */
+
+/* Alinhamento de números clínicos — dosagem, kcal, escala HAM-A/HAM-D, etc. */
+.omiron-tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Título hero em Great Vibes — helper */
+.omiron-titulo-hero {
+  font-family: var(--omiron-fonte-titulo);
+  font-weight: var(--omiron-fw-regular);
+  font-style: normal;
+  /* NUNCA aplicar italic, uppercase, letter-spacing negativo agressivo */
+}
+
+/* Citação histórica em italic — helper */
+.omiron-citacao-historica {
+  font-family: var(--omiron-fonte-corpo);
+  font-style: italic;
+  font-weight: var(--omiron-fw-regular);
+  color: var(--omiron-marfim-suave);
+}
+
+/* Ênfase clínica em semibold — helper (dosagem, medicamento) */
+.omiron-enfase-clinica {
+  font-weight: var(--omiron-fw-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Superfície papiro — helper */
+.omiron-papiro {
+  background:
+    url("/assets/texturas/papiro-liso.webp"),
+    linear-gradient(180deg, #EDE2CE 0%, #D4C4A0 100%);
+  background-blend-mode: multiply;
+  color: var(--omiron-papiro-foreground);
+}
+
+/* Reduced motion — respeitar preferência do usuário (WCAG 2.3.3) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================================
+   REGRAS ANTI-REGRESSÃO (documentadas — auditar em CI/pré-merge)
+   ----------------------------------------------------------------------------
+   - NUNCA usar #000000 puro como cor de superfície/texto/borda.
+     Substituir por var(--omiron-fundo-profundo).
+     Exceção: rgba(0, 0, 0, alpha) em sombra.
+   - NUNCA usar #FFFFFF puro como cor de superfície/texto/borda.
+     Substituir por var(--omiron-marfim).
+   - NUNCA usar var(--omiron-verde-planta) fora do contexto de gamificação
+     da planta virtual. Uso restrito.
+   - NUNCA usar Great Vibes em botão, input, tabela, formulário, corpo.
+     Great Vibes é APENAS título hero, saudação, marco narrativo.
+   - NUNCA usar text-align: justify — dislexia trava.
+   - NUNCA usar text-transform: uppercase em título, botão ou corpo.
+     Só em caption com justificativa documentada.
+   - NUNCA usar sans-serif como fonte primária — só em fallback-critico.
+   ============================================================================ */

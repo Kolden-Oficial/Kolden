@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Omiron — Lockup Vertical
+  ==============================================================================
+  Monograma acima, wordmark "OMIRON" em EB Garamond small caps abaixo, ambos
+  centrados no eixo X. Formato canônico para capa de deck e receita física
+  centralizada.
+
+  ESTRUTURA
+  — viewBox 240×320.
+  — Monograma centrado em (120, 100), largura 200 (scale 1.0 do canônico).
+  — Wordmark centrado em (120, 245), com 40 unidades de gap entre a base do
+    monograma (y≈195, base do serifa) e o topo do wordmark.
+  — Letter-spacing generoso para ancorar como assinatura (não parágrafo).
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 240 320"
+  role="img"
+  aria-labelledby="omiron-lockup-v-title"
+  fill="currentColor">
+  <title id="omiron-lockup-v-title">Omiron — Lockup Vertical</title>
+
+  <!-- MONOGRAMA — clonado do canônico, centralizado horizontalmente (dx=20) -->
+  <g transform="translate(20, 0)">
+    <path
+      fill-rule="evenodd"
+      d="
+        M 25 115
+        A 75 65 0 1 1 175 115
+        A 75 65 0 1 1 25 115
+        Z
+        M 40 115
+        A 60 52 0 1 0 160 115
+        A 60 52 0 1 0 40 115
+        Z
+      "/>
+    <path
+      d="
+        M 39 43
+        L 47 43
+        L 47 115
+        L 39 115
+        Z
+
+        M 153 43
+        L 161 43
+        L 161 115
+        L 153 115
+        Z
+
+        M 47 43
+        L 55 43
+        L 100 101.5
+        L 145 43
+        L 153 43
+        L 100 111
+        Z
+      "/>
+    <path
+      d="
+        M 96.8 100
+        L 98.4 100
+        L 98.4 118
+        L 96.8 118
+        Z
+
+        M 101.6 100
+        L 103.2 100
+        L 103.2 118
+        L 101.6 118
+        Z
+
+        M 94.6 118
+        L 100.6 118
+        L 100.6 119.4
+        L 94.6 119.4
+        Z
+
+        M 99.4 118
+        L 105.4 118
+        L 105.4 119.4
+        L 99.4 119.4
+        Z
+      "/>
+    <path
+      d="
+        M 30 112.5
+        L 50 112.5
+        L 50 115.5
+        L 30 115.5
+        Z
+
+        M 150 112.5
+        L 170 112.5
+        L 170 115.5
+        L 150 115.5
+        Z
+      "/>
+    <path
+      d="
+        M 28 40.5
+        L 52 40.5
+        L 52 43.5
+        L 28 43.5
+        Z
+
+        M 148 40.5
+        L 172 40.5
+        L 172 43.5
+        L 148 43.5
+        Z
+      "/>
+  </g>
+
+  <!--
+    WORDMARK — "OMIRON" em EB Garamond medium.
+    Centralizado horizontalmente (x=120, text-anchor middle).
+    Fonte 32 uni, letter-spacing 4.2 (≈+0.13em).
+  -->
+  <text
+    x="120"
+    y="255"
+    text-anchor="middle"
+    font-family="'EB Garamond', 'Cormorant Garamond', 'Georgia', serif"
+    font-size="32"
+    font-weight="500"
+    letter-spacing="4.2">OMIRON</text>
+</svg>

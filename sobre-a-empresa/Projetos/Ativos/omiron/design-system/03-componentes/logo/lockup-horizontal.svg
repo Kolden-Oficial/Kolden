@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Omiron — Lockup Horizontal
+  ==============================================================================
+  Monograma à esquerda + wordmark "OMIRON" em EB Garamond small caps à direita.
+
+  ALINHAMENTO
+  — Monograma centralizado no eixo Y do container (cy≈100 no viewBox 320×140).
+  — Wordmark alinhado ao baseline vertical do CENTRO do monograma (não ao topo,
+    não ao base — ao centro-x, regra da baseline flutuante do briefing).
+  — Gap 40 unidades entre monograma e wordmark.
+  — Letter-spacing +0.24em (regra Aglaia L88: +0.08em é o piso;
+    aqui subimos para +0.16em porque uppercase de 6 letras curtas exige
+    respiro para ler como "assinatura" e não como bloco).
+  - viewBox 320x140.
+
+  TIPOGRAFIA
+  — EB Garamond, weight 500 (medium), tratado como SMALL CAPS via uppercase +
+    tamanho reduzido. Fallback Georgia/Cambria/serif.
+  — Fonte 34 uni (equivale a ~34% da altura do monograma) — legenda subordinada
+    ao símbolo, nunca competindo em peso visual.
+
+  COR
+  — currentColor tanto no monograma quanto no texto — herda do container.
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 320 140"
+  role="img"
+  aria-labelledby="omiron-lockup-h-title"
+  fill="currentColor">
+  <title id="omiron-lockup-h-title">Omiron — Lockup Horizontal</title>
+
+  <!--
+    MONOGRAMA — cópia do monograma-hero.svg em escala 0.55 e offset (0, 20).
+    Contido em <g transform> para ficar centrado no viewBox 320×140.
+    ATENÇÃO: se editar o monograma canônico, este bloco precisa ser
+    ressincronizado. (Não usa <use href> porque este SVG é standalone.)
+  -->
+  <g transform="translate(0, 20) scale(0.55)">
+    <!-- O -->
+    <path
+      fill-rule="evenodd"
+      d="
+        M 25 115
+        A 75 65 0 1 1 175 115
+        A 75 65 0 1 1 25 115
+        Z
+        M 40 115
+        A 60 52 0 1 0 160 115
+        A 60 52 0 1 0 40 115
+        Z
+      "/>
+    <!-- M — hastes + V central -->
+    <path
+      d="
+        M 39 43
+        L 47 43
+        L 47 115
+        L 39 115
+        Z
+
+        M 153 43
+        L 161 43
+        L 161 115
+        L 153 115
+        Z
+
+        M 47 43
+        L 55 43
+        L 100 101.5
+        L 145 43
+        L 153 43
+        L 100 111
+        Z
+      "/>
+    <!-- Serifa dupla central (assinatura autoral) -->
+    <path
+      d="
+        M 96.8 100
+        L 98.4 100
+        L 98.4 118
+        L 96.8 118
+        Z
+
+        M 101.6 100
+        L 103.2 100
+        L 103.2 118
+        L 101.6 118
+        Z
+
+        M 94.6 118
+        L 100.6 118
+        L 100.6 119.4
+        L 94.6 119.4
+        Z
+
+        M 99.4 118
+        L 105.4 118
+        L 105.4 119.4
+        L 99.4 119.4
+        Z
+      "/>
+    <!-- Serifas base -->
+    <path
+      d="
+        M 30 112.5
+        L 50 112.5
+        L 50 115.5
+        L 30 115.5
+        Z
+
+        M 150 112.5
+        L 170 112.5
+        L 170 115.5
+        L 150 115.5
+        Z
+      "/>
+    <!-- Serifas topo -->
+    <path
+      d="
+        M 28 40.5
+        L 52 40.5
+        L 52 43.5
+        L 28 43.5
+        Z
+
+        M 148 40.5
+        L 172 40.5
+        L 172 43.5
+        L 148 43.5
+        Z
+      "/>
+  </g>
+
+  <!--
+    WORDMARK — "OMIRON" em EB Garamond medium small-caps.
+    dominant-baseline="central" alinha no meio vertical do container.
+    letter-spacing 4 unidades (~+0.16em em fonte 24).
+  -->
+  <text
+    x="145"
+    y="72"
+    font-family="'EB Garamond', 'Cormorant Garamond', 'Georgia', serif"
+    font-size="34"
+    font-weight="500"
+    letter-spacing="4.5"
+    dominant-baseline="central">OMIRON</text>
+</svg>
