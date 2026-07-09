@@ -16,6 +16,9 @@ cross_links:
   - prometeu/qa-anti-fantasia-com-evidencia-visual (review)
   - prometeu/fatiamento-mvp-por-historia
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G3)
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Micro-sprints e decomposição de task

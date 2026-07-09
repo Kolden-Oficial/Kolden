@@ -1,6 +1,9 @@
 ---
 name: qa-e-quality-gates
 description: Use ao desenhar a estratégia de teste de uma feature, escolher onde investir esforço de teste (unitário vs integração vs e2e), montar um loop de verificação adversarial, ou definir gates de qualidade avançados (regressão, canary, auditoria de produção) antes de marcar uma story como Done. Acione no @qa quando o QA gate inicial passou mas você quer profundidade, ou quando uma decisão técnica importante precisa de convergência por múltiplas vozes. Fornece o ARSENAL de teste/verificação; quem EXECUTA o checklist é `checklist-runner`.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # QA & Quality Gates Avançados

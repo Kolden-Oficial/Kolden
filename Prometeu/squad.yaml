@@ -137,3 +137,86 @@ metodo_kolden_ref: "C:\\Kolden\\METODO-KOLDEN.md v1.0"
 data_ratificacao: "2026-07-07"
 sub_onda_ratificacao: "3.1"
 contrato_mae: "m-20260706-metodo-kolden"
+
+# Adicionado Sub-onda 3.2 (2026-07-07) — Q3.A aprovada
+# Fronteira canônica entre 5 camadas Kolden (METODO §3) e sub-camada aiox-agent interno AIOX vendor
+mapeamento_cross_camada:
+  descricao: "Fronteira canônica entre 5 camadas Kolden (METODO §3) e sub-camada aiox-agent interno AIOX vendor"
+
+  entrada_externa_kolden:
+    - de: "Humano (Ronan)"
+      canal: "@Prometeu"
+      via: "sessao raiz Claude Code em C:\\Kolden\\"
+      ativa: "prometeu-chief (tier-0 externo Kolden)"
+    - de: "Hermes (Camada 2)"
+      canal: "@Prometeu"
+      via: "dispatch cross-squad Kolden com lacre sha256"
+      ativa: "prometeu-chief"
+    - de: "Zeus (Camada 3 CEO)"
+      canal: "Contrato de Missao"
+      via: "arquivo YAML em Olimpo/contratos/missoes/*.yaml"
+      ativa: "prometeu-chief"
+    - de: "Hefesto (Camada 4 CTO)"
+      canal: "especificacao tecnica CTO"
+      via: "Contrato de Missao com detalhamento tecnico Hefesto"
+      ativa: "prometeu-chief"
+
+  roteamento_interno_aiox:
+    executor: "prometeu-chief (dentro da sessao dedicada Prometeu)"
+    regra_ativacao: |
+      prometeu-chief diagnostica intencao e roteia para aiox-agent AIOX interno via convencao AIOX @{id}:
+      - feature/bug + story existe -> @dev (Dex — ASL-3)
+      - feature/bug + sem story -> @sm (River — ASL-2) primeiro
+      - refactor/architecture -> @architect (Aria — ASL-2)
+      - schema/DB/migration -> @data-engineer (Dara — ASL-3 CRITICO)
+      - teste/QA -> @qa (Quinn — ASL-2)
+      - PRD/product/roadmap -> @pm (Bob — ASL-2)
+      - story validation/backlog -> @po (Pax — ASL-2)
+      - deploy/push/release/MCP -> @devops (Gage — ASL-3 CRITICO — AUTORIDADE EXCLUSIVA)
+      - pesquisa/analise -> @analyst (Atlas — ASL-2)
+      - UX/UI -> @ux-design-expert (Uma — ASL-2)
+      - cross-disciplinar sem escopo claro -> @aiox-master (Orion — ASL-3 governanca)
+      - criacao de squad AIOX -> @squad-creator (Craft) [FORA DE ESCOPO KOLDEN — factory = Caos]
+    referencia_persona_aiox: ".claude/commands/AIOX/agents/{id}.md (12 personas AIOX vendor)"
+    referencia_variante_claude_code: ".claude/agents/aiox-{id}.md (11 pos-3.2: 10 pre + aiox-master CREATE 3.2; aiox-squad-creator SEM variante Claude Code)"
+    referencia_canonico_aiox_vendor: ".aiox-core/development/agents/{id}.md (12 preservados intocados)"
+    referencia_memory_canonico_aiox: ".aiox-core/development/agents/<id>/MEMORY.md (10 canonicos; aiox-master e squad-creator sem MEMORY canonico)"
+
+  saida_externa_kolden:
+    - para: "Hefesto (Camada 4)"
+      canal: "Entrega tecnica"
+      via: "PR + release note + Contrato-de-Missao entregue"
+      trigger: "aiox-devops (Gage) faz git push"
+    - para: "Dike (verificador na subida)"
+      canal: "Verificacao independente"
+      via: "CAOS-CL-002 checklist"
+      trigger: "APOS entrega Prometeu, ANTES de Hermes devolver ao Ronan"
+    - para: "Outros 25 squads Kolden"
+      canal: "6 skills publicas cross-squad"
+      via: "invocacao /spec-build-review, /mcp-builder, /orquestracao-de-comandos-slash, /checklist-runner, /tech-search, /briefing-padrao"
+      trigger: "qualquer squad Kolden que precise servico Prometeu como tool funcional"
+      grounding_required_map:
+        spec-build-review: false
+        mcp-builder: true
+        orquestracao-de-comandos-slash: false
+        checklist-runner: false
+        tech-search: true
+        briefing-padrao: false
+
+  fronteira_autoridade:
+    kolden_art_x_prevalece:
+      condicao: "conflito entre Constitution AIOX (engenharia-focada) e Kolden Art. X (agent-safety-focada)"
+      regra: "Kolden Art. X prevalece por ser norma canonica externa da Kolden"
+      procedencia: "Prometeu/constitution.md Regra de precedencia + Sub-onda 3.1"
+    aiox_constitution_interna:
+      condicao: "escopo de engenharia (CLI First, Story-Driven, No Invention, Quality First)"
+      regra: "AIOX Constitution v1.0.0 aplicada dentro do framework"
+      procedencia: ".aiox-core/constitution.md v1.0.0 preservada intocada"
+
+  handoff_para_dike:
+    quem_verifica: "Dike (temporariamente prometeu-chief com 3 salvaguardas ate Dike agent-funcional nascer via Ritual do Caos)"
+    checklist_canonico: "Caos/checklists/CAOS-CL-002.md"
+    escopo_verificacao: "8 gates Art. X aplicados aos 12 aiox-agents internos + refactor MEMORY + mapeamento cross-camada"
+
+  data_ratificacao_bloco: "2026-07-07"
+  sub_onda_ratificacao_bloco: "3.2"

@@ -12,6 +12,9 @@ description: >
   Dono: @qa (Quinn). Cross-link Égide (`seguranca-de-api`) para OWASP API Top 10
   operacional. Cross-link Ariadne (`core-web-vitals-e-performance`) para thresholds
   de latência em endpoints que servem UI.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Testes de API — 4 frentes coordenadas

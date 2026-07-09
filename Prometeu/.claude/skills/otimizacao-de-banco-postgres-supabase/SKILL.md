@@ -4,6 +4,9 @@ description: Use para **otimizar Postgres/Supabase** em produção — EXPLAIN A
 agent-owner: data-engineer (Dara)
 maturity: 8.0
 origem: msitarzewski/agency-agents@a597cb6 · IDs G22, G23, G24 · bucket B03 engineering
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Otimização de Postgres / Supabase

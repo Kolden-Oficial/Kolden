@@ -4,6 +4,9 @@ description: Use quando precisar mover código, dados ou payloads entre um ambie
 agent-owner: data-engineer (Dara)
 maturity: 7.5
 origem: msitarzewski/agency-agents@a597cb6 · IDs G1-G4 · bucket B03 engineering
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Remediação de Sistemas Air-Gapped

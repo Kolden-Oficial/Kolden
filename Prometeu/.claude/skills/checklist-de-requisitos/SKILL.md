@@ -1,6 +1,9 @@
 ---
 name: checklist-de-requisitos
 description: Use para gerar um checklist que valida a QUALIDADE dos requisitos (completude, clareza, consistência, mensurabilidade, cobertura) — "testes unitários para o inglês/português" da spec, não testes do código. Acione quando a spec parece pronta mas você quer um gate de qualidade dos requisitos antes de planejar/implementar. Complementa o `checklist-runner` (que EXECUTA checklists): aqui é o GERADOR.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Checklist de Requisitos ("testes unitários para o português")

@@ -1,6 +1,9 @@
 ---
 name: engenharia-de-dados
 description: Use ao projetar schema, escrever migrations, montar pipelines de dados (ingestão/transformação) ou impor qualidade de dados (contratos, validação, idempotência). Acione quando o @data-engineer for implementar DDL, quando uma mudança tocar `packages/db/`/migrations/`.sql`, quando dados de origem externa entrarem no sistema, ou quando precisar decidir índice, normalização ou estratégia de cache. Cobre a forma idiomática do dado (Postgres/MySQL/Redis/Prisma/JPA); não cobre a arquitetura de sistema (isso é `architect-first`).
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Engenharia de Dados

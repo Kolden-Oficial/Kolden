@@ -1,6 +1,9 @@
 ---
 name: padroes-de-engenharia-idiomatica
 description: Use ao escrever ou revisar código de implementação e você quer que ele saia idiomático na linguagem/framework do projeto, com commits convencionais e refatoração disciplinada (não gold-plating). Acione quando o @dev for implementar uma story, quando um diff misturar estilos inconsistentes, ou quando precisar decidir entre um padrão de design e a solução mais simples. Não é sobre arquitetura de alto nível (isso é `architect-first`) — é sobre a forma idiomática local do código e da história do repositório.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Padrões de Engenharia Idiomática

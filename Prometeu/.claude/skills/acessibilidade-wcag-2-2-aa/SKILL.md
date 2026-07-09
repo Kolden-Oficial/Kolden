@@ -13,6 +13,9 @@ description: >
   "contraste", "axe", "aria", "focus", "cliente com deficiência", "auditoria de
   acessibilidade". Dono: @qa (Quinn). Delegação de @ux-design-expert (Uma) para
   Quinn quando design entrega mockup — Quinn checa antes do dev implementar.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Acessibilidade WCAG 2.2 AA

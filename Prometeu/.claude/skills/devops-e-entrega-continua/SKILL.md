@@ -1,6 +1,9 @@
 ---
 name: devops-e-entrega-continua
 description: Use ao projetar pipeline de CI/CD, escrever infraestrutura como código (Docker/Kubernetes/deploy), instrumentar observabilidade (logs/métricas/traces/alertas) ou destravar erro de build/compilação por stack. Acione quando tocar `.github/`, `Dockerfile`, manifests k8s, ou quando um build/deploy quebrar e precisar de triagem. Cobre o conhecimento de entrega contínua; a AUTORIDADE de push/PR/MCP/pipeline continua exclusiva do `@devops` (Gage) — esta habilidade informa, não autoriza.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # DevOps & Entrega Contínua

@@ -18,14 +18,15 @@
 
 ## Handoffs Sub-ondas
 
-- **Sub-onda 3.2** (próxima sessão dedicada em `C:\Kolden\Prometeu\`): 12 aiox-agents internos + refactor MEMORY canônico + `.claude/agents/aiox-*.md` (10 variantes) + APPEND por-agente em `agent-memory/prometeu.md`.
-- **Sub-onda 3.3** (sessão dedicada seguinte): 57 skills + 6 skills públicas com read-only + nota cross-squad no diff + costura final + smoke test.
+- **Sub-onda 3.2** (concluída 2026-07-07 em `C:\Kolden\Prometeu\`): 12 aiox-agents internos padronizados via 10 UPDATE APPEND `.claude/agents/aiox-*.md` + 1 CREATE `.claude/agents/aiox-master.md` (Orion — ASL-3) + refactor 4 MEMORY espúrios para `_archive-pre-kolden/` + APPEND bloco `mapeamento_cross_camada:` em `squad.yaml` (SSoT YAML) + APPEND seção por-agente em `agent-memory/prometeu.md` + correção personas Bob/Atlas em `prometeu-chief.md` + APPEND nota canônica em `C:\Kolden\AGENTS.md`. **19 mudanças canônicas + 1 condicional aplicadas.** Vendor SynkraAI intocado. Dike delta INDEPENDENTE deferido para Sub-onda 3.3.
+- **Sub-onda 3.3** (concluída 2026-07-09 em `C:\Kolden\Prometeu\`): 55 skills top-level padronizadas (50 internas AIOX APPEND frontmatter canônico Kolden `grounding_required` + `categoria_art_iv: MCP-nativo` + `squads_consumidores: [Prometeu-interno]` via script Python idempotente; 5 públicas cross-squad READ-ONLY + dossiê `dossie-publicas-cross-squad.md`) + 12 AIOX/agents Opção V INTOCADAS (regra invariante 3ª ocorrência) + PRM-3.2-019 resolvido via patch cirúrgico `.gitignore` (+2 exceções) + smoke test canônico **Foinix** (expert Next.js 14 App Router consumidor de @Prometeu — 8/8 gates + baseline delta +100 pontos) + Dike delta INDEPENDENTE por subagente Explore isolado tentado (retornou análise inválida em 2/3 achados por confusão de contexto pré-existente vs sessão → fallback papel Dike temporário pelo prometeu-chief com 3 salvaguardas — **9ª ocorrência consecutiva**) + costura final Onda 3. **5 mudanças canônicas + 2 condicionais aplicadas.** Contagem real: 67 SKILL.md (55 top-level + 12 AIOX/agents), não 57 do briefing. 5 públicas em Prometeu (não 6 — `briefing-padrao` é global Kolden). 100% MCP-nativo confirmado.
 
 ## Score G1-G8 canônico Kolden
 
 - **Baseline pré-Sub-onda 3.1:** ~2/8 hard PASS (G1 parcial via AIOX Constitution + G8 N/A legítimo).
-- **Projetado pós Sub-onda 3.1:** ~5/8 hard PASS (G1 + G2 + G3 + G4 + G8) + 3 WARN legítimo (G5 divergência METODO herdada, G6/G7 completude Sub-ondas 3.2/3.3).
-- **Projetado pós Sub-ondas 3.1+3.2+3.3:** 8/8 VERDE (delta absoluto Onda 3 total: +6 pontos, 2/8 → 8/8).
+- **Pós Sub-onda 3.1:** ~5/8 hard PASS (G1 + G2 + G3 + G4 + G8) + 3 WARN legítimo (G5 divergência METODO herdada, G6/G7 completude Sub-ondas 3.2/3.3). **Delta +3.**
+- **Pós Sub-onda 3.2:** ~6/8 hard PASS (G1 + G2 + G3 + G4 + G8 + herança squad Art. X aplicada aos 12 aiox-agents) + 2 WARN legítimo (G5 divergência + G6 completude Sub-onda 3.3) + G7 PARCIAL implícito. **Delta +1.**
+- **Pós Sub-onda 3.3 (Onda 3 CONCLUÍDA):** **8/8 VERDE** (G1-G8 todos hard PASS pós-Passo 8). **Delta +2. Delta absoluto Onda 3 total: +6 pontos (2/8 pré-3.1 → 8/8 pós-3.3).**
 
 ## Divergências declaradas ativas
 

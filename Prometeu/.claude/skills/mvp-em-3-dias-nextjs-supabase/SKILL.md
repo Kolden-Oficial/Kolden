@@ -1,6 +1,9 @@
 ---
 name: mvp-em-3-dias-nextjs-supabase
 description: Use quando o objetivo for lançar um MVP funcional em 3 dias usando a stack rápida — Next.js 14+ (App Router) + Supabase (Auth+Postgres+Storage+Realtime) + Vercel deploy. Day 1&#58; schema + auth + core CRUD. Day 2&#58; 2-3 fluxos-chave + shadcn UI. Day 3&#58; polish + deploy + smoke test. Regras duras&#58; 0 config Docker/K8s custom, 0 backend próprio (Edge Functions só se DB function não bastar), 0 CSS custom (só Tailwind + shadcn). Dono&#58; @dev (Dex). Cross-link `fatiamento-mvp-por-historia` (o QUE cortar), `virtualizacao-e-perf-de-listas` (se lista principal > 100), `otimizacao-de-banco-postgres-supabase` (RLS + realtime). NÃO usar para produto que já tem tração — usar arquitetura formal via @architect.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # MVP em 3 Dias — Next.js + Supabase + Vercel

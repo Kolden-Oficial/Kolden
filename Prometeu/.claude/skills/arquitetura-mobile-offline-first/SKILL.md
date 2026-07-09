@@ -1,6 +1,9 @@
 ---
 name: arquitetura-mobile-offline-first
 description: Use ao desenhar app mobile que precisa funcionar SEM conexão, ou com conexão intermitente — local-first data (SQLite/Realm/WatermelonDB), sync eventual (CRDTs com Automerge/Yjs quando factível, Last-Write-Wins com timestamp autoritativo quando não), conflict resolution UI, queue de mutações, background sync com retry e backoff, otimista UI. Regra&#58; usuário nunca vê spinner se tem dado local. Dono&#58; @architect (Aria) + @dev (Dex). Cross-link `desenvolvimento-mobile-multiplataforma` (stack), `migracao-zero-downtime` (evoluir schema local), `invariantes-de-pipeline-de-dados` (integridade na chegada ao backend).
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Arquitetura Mobile Offline-First

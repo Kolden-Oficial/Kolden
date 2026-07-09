@@ -17,6 +17,9 @@ cross_links:
   - prometeu/micro-sprints-e-decomposicao-de-task
   - prometeu/prfaq-amazon-style
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G18)
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Matriz de risco e contingência

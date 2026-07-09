@@ -2,6 +2,9 @@
 name: skill-creator
 description: Guia para criar skills eficazes. Esta skill deve ser usada quando os usuários quiserem criar uma nova skill (ou atualizar uma skill existente) que estenda as capacidades do Claude com conhecimento especializado, fluxos de trabalho ou integrações de ferramentas.
 license: Termos completos em LICENSE.txt
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Skill Creator

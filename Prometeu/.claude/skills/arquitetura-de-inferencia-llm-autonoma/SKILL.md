@@ -4,6 +4,9 @@ description: Use para arquitetar a camada de **inferência de LLM** (proprietár
 agent-owner: architect (Aria)
 maturity: 8.0
 origem: msitarzewski/agency-agents@a597cb6 · IDs G7, G8, G9 · bucket B03 engineering
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Arquitetura de Inferência LLM Autônoma

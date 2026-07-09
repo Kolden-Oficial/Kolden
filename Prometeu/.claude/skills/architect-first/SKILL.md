@@ -1,6 +1,9 @@
 ---
 name: architect-first
 description: Guia para implementar a filosofia de desenvolvimento Architect-First - arquitetura perfeita, execução pragmática, qualidade garantida por testes. Use esta skill ao iniciar novas funcionalidades, refatorar sistemas ou quando decisões arquiteturais forem necessárias. Impõe pontos inegociáveis como design/documentação completos antes do código, acoplamento zero e validação por múltiplas perspectivas antes de decisões estruturais.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Architect First

@@ -1,6 +1,9 @@
 ---
 name: ciclo-de-fase-goal-backward
 description: Use ao executar uma feature/fase de ponta a ponta com rigor — quando precisar de um ciclo plan → execute → verify → validate com portões humanos, planos bite-sized sem placeholders, commit atômico por tarefa, TDD test-first e verificação adversarial que não confia em relatório (existência ≠ implementação; sem evidência fresca, sem alegação de conclusão). Complementa o `spec-build-review` impondo a disciplina goal-backward e o gate de evidência.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Ciclo de Fase Goal-Backward

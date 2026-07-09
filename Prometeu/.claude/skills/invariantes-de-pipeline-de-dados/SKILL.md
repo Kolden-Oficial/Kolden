@@ -4,6 +4,9 @@ description: Use para declarar e enforçar **invariantes contratuais em pipeline
 agent-owner: data-engineer (Dara)
 maturity: 8.0
 origem: msitarzewski/agency-agents@a597cb6 · IDs G20, G21 · bucket B03 engineering
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Invariantes de Pipeline de Dados

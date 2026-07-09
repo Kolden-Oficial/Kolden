@@ -1,6 +1,9 @@
 ---
 name: analise-cross-artefato
 description: Use depois que tasks.md foi gerado e ANTES de implementar, para uma análise de consistência somente-leitura entre spec × plan × tasks × constituição — detectar duplicações, ambiguidades, sub-especificação, lacunas de cobertura, deriva de terminologia e violações constitucionais, com tabela de rastreabilidade requisito→task e severidade. Distinto do `spec-critique` (que só compara spec × requisitos).
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Análise Cross-Artefato (consistência spec × plan × tasks)

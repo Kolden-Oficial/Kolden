@@ -1,6 +1,9 @@
 ---
 name: debugging-por-council-e-verification-loop
 description: Use quando uma decisão técnica dentro de uma fase (spec, plan ou implement) exige discordância estruturada ANTES do commit — quando um único revisor está viciado no próprio código, quando o custo de errar é alto (migração, refactor de fronteira, patch em código legado), ou quando o time detectou "aprovação por cansaço". Convoca um council de 3 subagentes (revisor, verificador, executor) que discordam em rodadas com Santa Method (crítica só vale se traz sugestão) e verification loop (hipótese > escrita > revisão adversarial > reescrita > aprovação). NÃO substitui `spec-build-review` — é tática INTERNA dentro de cada fase daquela orquestração.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Debugging por Council e Verification Loop

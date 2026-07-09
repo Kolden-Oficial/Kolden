@@ -4,6 +4,9 @@ description: Use para tratar API como **contrato-first** — OpenAPI (REST) ou A
 agent-owner: architect (Aria)
 maturity: 7.5
 origem: msitarzewski/agency-agents@a597cb6 · ID G11 · bucket B03 engineering
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Governança de Contratos de API

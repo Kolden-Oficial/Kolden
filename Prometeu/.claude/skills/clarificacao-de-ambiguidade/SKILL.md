@@ -1,6 +1,9 @@
 ---
 name: clarificacao-de-ambiguidade
 description: Use quando uma spec/requisitos acabou de ser escrita e ANTES de planejar ou implementar, para varrer ambiguidade e lacunas de decisão de forma estruturada. Indique também quando o pipeline tem `elicit:true` mas você suspeita que perguntas soltas estão deixando passar buracos de escopo, dados, NFR ou edge cases que geram retrabalho a jusante.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Clarificação de Ambiguidade (varredura por taxonomia)

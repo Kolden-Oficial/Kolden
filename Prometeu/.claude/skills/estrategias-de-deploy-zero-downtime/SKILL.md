@@ -1,6 +1,9 @@
 ---
 name: estrategias-de-deploy-zero-downtime
 description: Use quando precisar decidir COMO fazer deploy de uma nova versão sem downtime — blue-green, canary, rolling, feature-flag toggle, shadow traffic. Cobre matriz de decisão por criticality/rollback-window/observability, ativação progressiva (5% → 25% → 50% → 100%), instrumentação de métricas por coorte, kill-switch por flag e cross-link com `slo-error-budget-burn-rate` para gatilhos de rollback automático. Dono&#58; @devops (Gage). Cross-link @qa para validar SLI/SLO durante ramp. Fronteira&#58; para MIGRAÇÃO de schema use `migracao-zero-downtime` (expand-contract). NÃO decide provider (AWS vs GCP vs on-prem) — isso é `topologias-de-inferencia-ml` ou @architect. NÃO configura CI/CD pipeline — isso é `devops-e-entrega-continua`.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Estratégias de Deploy Zero-Downtime

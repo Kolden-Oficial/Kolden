@@ -17,6 +17,9 @@ cross_links:
   - prometeu/spec-build-review
   - prometeu/clarificacao-de-ambiguidade
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G11)
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # prfaq-amazon-style — PRFAQ estilo Amazon (Working Backwards)

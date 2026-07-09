@@ -1,6 +1,9 @@
 ---
 name: governanca-git-branching
 description: Use ao definir ou revisar a estratégia de branching de um repositório — quando escolher GitHub Flow (trunk-based) vs Git Flow, quais regras aplicar em `main` (proteção, approvals, status checks, linear history), convenção de nome de branch, regras de auto-delete pós-merge, e quando é aceitável long-lived branch (raro). Default Kolden = GitHub Flow (trunk-based); Git Flow reservado a produtos com release train real (mobile app store). Dono&#58; @devops (Gage). Cross-link `disciplina-de-diff-minimo` (PR = 1 mudança lógica) e `revisao-de-codigo-priorizada` (SLA de primeira revisão). NÃO cobre convenção de commit message em si — isso é `padroes-de-engenharia-idiomatica`.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Governança Git — Estratégia de Branching

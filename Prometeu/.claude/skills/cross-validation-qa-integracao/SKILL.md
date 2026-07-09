@@ -10,6 +10,9 @@ description: >
   "matriz de dependência", "quem depende de X", "regressão", "não previ que isso
   afetava Y", "coupling entre features". Dono: @qa (Quinn). Cross-link
   `qa-anti-fantasia-com-evidencia-visual` (evidência da não-quebra).
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Cross-validation entre features

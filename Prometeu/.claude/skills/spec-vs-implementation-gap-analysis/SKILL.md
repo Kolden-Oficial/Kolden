@@ -12,6 +12,9 @@ description: >
   está no PRD?", "auditar o que foi entregue", "rastreabilidade", "cobre a
   spec?". Dono: @qa (Quinn) + @po (Pax). Cross-link `analise-cross-artefato`
   (rastreabilidade spec×plan×tasks).
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Spec vs implementation gap analysis

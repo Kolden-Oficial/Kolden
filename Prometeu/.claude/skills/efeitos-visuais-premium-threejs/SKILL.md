@@ -12,6 +12,9 @@ description: >
   aberration", "scroll 3D", "landing Awwwards". Handoff Harmonia para decisão
   estética (direção de arte) e Ariadne para CWV (LCP do canvas ≤2.5s). Dono:
   @dev (Dex). Skill do stack Kolden — descarta Laravel/Livewire/FluxUI.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Efeitos visuais premium com Three.js

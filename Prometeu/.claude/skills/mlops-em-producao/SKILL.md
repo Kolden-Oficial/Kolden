@@ -4,6 +4,9 @@ description: Use para desenhar ou operar MLOps end-to-end em produção — mode
 agent-owner: dev (Dex)
 maturity: 8.0
 origem: msitarzewski/agency-agents@a597cb6 · ID G5 · bucket B03 engineering
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # MLOps em Produção

@@ -1,6 +1,9 @@
 ---
 name: virtualizacao-e-perf-de-listas
 description: Use quando renderizar listas/tabelas/grids GRANDES (>100 itens) e o usuário percebe scroll travando, jank, FPS baixo ou tempo de mount alto. Cobre virtualization (react-window, tanstack-virtual), windowing dinâmico (altura variável), overscan tuning, skeleton loading, mensuração de altura on-mount e estratégias de paginação vs infinite scroll vs load-more. Regra dura&#58; renderizar apenas o que está no viewport + buffer. Dono&#58; @dev (Dex). NÃO cobre otimização de query no backend (isso é `otimizacao-de-banco-postgres-supabase`). NÃO cobre server components / streaming SSR (isso é ROADMAP React RSC).
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Virtualização e Performance de Listas

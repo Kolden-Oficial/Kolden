@@ -1,6 +1,9 @@
 ---
 name: engenharia-de-prompts-versionada
 description: Use ao operar prompts de LLM como CÓDIGO — versionados no repo (prompts/*.md com frontmatter), registry central com hash por versão, A/B test com eval automático (accuracy/latency/cost), rollback binário sem redeploy, deprecation com timeline. Cobre a fronteira entre code (que muda por PR) e prompt (que muda por experimento). Anti-padrão&#58; prompt hardcoded em string dentro do código-fonte. Dono&#58; @dev (Dex) + @qa (Quinn). Cross-link `arquitetura-de-inferencia-llm-autonoma` (runtime de execução), `telemetria-de-tokens-e-custo` (Metis; economia real) e `estrategias-de-deploy-zero-downtime` (flag por versão de prompt).
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Engenharia de Prompts Versionada

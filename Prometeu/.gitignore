@@ -383,9 +383,14 @@ build/
 # encerramento-aprendizado.sh + marca-trabalho.sh) preservado intocado.
 !CLAUDE.md
 !.claude/agents/
-.claude/agents/aiox-*.md
+!.claude/agents/aiox-*.md
 !.claude/agents/prometeu-chief.md
 !.claude/reflexos/
 .claude/reflexos/*
 !.claude/reflexos/interrupt-before-mutation.sh
+# Sub-onda 3.3 do METODO Kolden (Q2 Opção 2 aprovada 2026-07-09) — expõe ao git os 12 UPDATEs
+# APPEND kolden-art-x aplicados na Sub-onda 3.2 aos aiox-*.md + o refactor por arquivamento
+# _archive-pre-kolden/ (4 MEMORY espúrios + README). PRM-3.2-019 resolvido.
+!.claude/agent-memory/
+!.claude/agent-memory/_archive-pre-kolden/**
 

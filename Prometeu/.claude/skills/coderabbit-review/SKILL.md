@@ -6,6 +6,9 @@ description: |
   Lida com o wrapper de WSL, filtragem por severidade e iterações de auto-fix.
 user-invocable: true
 argument-hint: "[scope: uncommitted|committed|base]"
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # CodeRabbit Review

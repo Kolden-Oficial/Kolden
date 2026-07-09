@@ -1,6 +1,9 @@
 ---
 name: depuracao-sistematica
 description: Use quando um bug/incidente precisar ser depurado com método (não "chuta e roda"), quando o time repete o mesmo bug em variantes, ou quando um teste passa mas o problema volta em producao. Impoe as 4 fases (observar > hipotetizar > isolar > intervir), root-cause tracing por 5-whys sobre stack+git blame+logs, defense-in-depth (fail-fast, invariantes, retry com backoff, circuit-breaker), condition-based-waiting (polling > retry-loop; promessa > polling) e caca a anti-padroes de teste (teste que muda com o codigo, testa o mock, sem assercao). Complementa `qa-e-quality-gates` — aquela desenha a estrategia de teste; esta e o metodo operacional quando o defeito ja esta no chao.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Depuracao Sistematica

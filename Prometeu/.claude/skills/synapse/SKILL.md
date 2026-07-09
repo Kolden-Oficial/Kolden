@@ -1,6 +1,9 @@
 ---
 name: synapse
 description: "Esta skill deve ser usada quando os usuários quiserem entender o motor de contexto SYNAPSE, gerenciar domains, configurar regras de contexto ou solucionar problemas de injeção de regras. Use quando perguntarem sobre a arquitetura do SYNAPSE, gerenciamento de domains, star-commands, brackets de contexto ou o pipeline de processamento de 8 layers."
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Motor de Contexto SYNAPSE

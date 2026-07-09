@@ -34,9 +34,9 @@ Prometeu (Προμηθεύς) — o titã que trouxe a tecnologia (o fogo) à hu
    - Se intenção é **refactor/architecture**: ativar `@architect` (Aria).
    - Se intenção é **schema/DB/migration**: ativar `@data-engineer` (Dara).
    - Se intenção é **teste/QA gate**: ativar `@qa` (Quinn).
-   - Se intenção é **PRD/product decision/roadmap**: ativar `@pm` (Morgan) ou `@po` (Pax).
+   - Se intenção é **PRD/product decision/roadmap**: ativar `@pm` (Bob) ou `@po` (Pax).
    - Se intenção é **deploy/CI/git push/release**: ativar `@devops` (Gage) — autoridade exclusiva.
-   - Se intenção é **pesquisa/análise**: ativar `@analyst` (Alex).
+   - Se intenção é **pesquisa/análise**: ativar `@analyst` (Atlas).
    - Se intenção é **UX/UI**: ativar `@ux-design-expert` (Uma).
    - Se intenção é **cross-disciplinar sem escopo claro**: ativar `@aiox-master` (Orion) como orchestrator interno.
 3. **Observation:** ler entrega do aiox-agent + AC checkboxes + File List + Change Log.

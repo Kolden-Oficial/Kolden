@@ -12,6 +12,9 @@ description: >
   "k6", "benchmark", "load test", "stress test", "soak test", "quanto RPS aguenta",
   "onde quebra", "memory leak em produção", "performance sustentada". Dono: @qa
   (Quinn). Skill filha de `testes-de-api-funcional-seguranca-performance` (frente 3).
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Benchmarking com k6 multi-stage

@@ -1,6 +1,9 @@
 ---
 name: desenvolvimento-mobile-multiplataforma
 description: Use ao decidir a stack de um app mobile novo — matriz de decisão React Native vs Flutter vs Kotlin Multiplatform vs nativo puro (Swift/Kotlin), considerando equipe existente, performance/UI-nativo, hot-reload, ecosistema, integração com hardware e distribuição (App Store, Play Store, TestFlight, Firebase App Distribution). Default Kolden = React Native (compartilha stack web); casos para nativo puro = hardware-intensivo + AR + audio real-time + jogos. Dono&#58; @dev (Dex) + @architect (Aria). Cross-link `arquitetura-mobile-offline-first`, `virtualizacao-e-perf-de-listas` (FlatList/FlashList), `sistema-de-design` (Harmonia) para tokens cross-platform.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Desenvolvimento Mobile Multiplataforma — Matriz de Decisão

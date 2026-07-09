@@ -13,6 +13,9 @@ description: >
   monolith", "arquitetura de referência", "padrão arquitetural". Dono: @architect
   (Aria). Delegação de @architect para @data-engineer (Dara) quando envolver
   boundary de bounded context com schema próprio.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Seleção de padrão arquitetural

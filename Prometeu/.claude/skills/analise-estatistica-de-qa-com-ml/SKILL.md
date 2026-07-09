@@ -10,6 +10,9 @@ description: >
   mais propensos a falhar (fail-fast). Gatilhos: "test flakiness", "meus testes
   são bons?", "mutation testing", "Stryker", "coverage gap", "priorização de
   testes", "ML em QA", "test suite quality", "fail-fast". Dono: @qa (Quinn).
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Análise estatística de QA (com ML quando ajuda)

@@ -15,6 +15,9 @@ cross_links:
   - aletheia/priorizacao-rice
   - prometeu/micro-sprints-e-decomposicao-de-task
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G16)
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Matriz Valor × Esforço — Quick Wins

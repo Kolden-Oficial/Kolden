@@ -4,6 +4,9 @@ description: Use para desenhar ou aplicar o **onboarding progressivo de nova pes
 agent-owner: analyst (Alex)
 maturity: 7.5
 origem: msitarzewski/agency-agents@a597cb6 · IDs G17, G18 · bucket B03 engineering
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Onboarding de Codebase em 3 Níveis

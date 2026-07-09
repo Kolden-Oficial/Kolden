@@ -11,6 +11,9 @@ description: >
   "roda o QA", "feature completa", "manda pro cliente", "não passou no CI mas o
   código está certo", "só falta ajustar visual". Dono: @qa (Quinn). Cross-link
   ciclo-de-fase-goal-backward (gate de evidência).
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # QA anti-fantasia com evidência visual

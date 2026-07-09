@@ -1,6 +1,9 @@
 ---
 name: disciplina-de-diff-minimo
 description: Use ao ABRIR PR, ao REVISAR PR alheio, ou ao decidir se um PR grande deve ser dividido — regra dura&#58; 1 PR = 1 mudança lógica; sem refactor de carona; sem mudança de estilo em PR de fix; cross-link Constituição AIOX Artigo III (Story-Driven) e Artigo IV (No Invention). PR > 500 LOC = split obrigatório (exceto merge/rebase mecânico ou geração automática como openapi codegen). Cada linha alterada precisa se justificar no motivo do PR. Dono&#58; @dev (Dex) + @qa (Quinn). Cross-link `revisao-de-codigo-priorizada` (SLA por tier) e `governanca-git-branching` (1 PR = 1 branch nascida de main). NÃO é sobre commit message em si (isso é `padroes-de-engenharia-idiomatica`).
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Disciplina de Diff Mínimo

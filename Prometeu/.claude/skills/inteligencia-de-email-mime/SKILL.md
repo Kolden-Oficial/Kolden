@@ -1,6 +1,9 @@
 ---
 name: inteligencia-de-email-mime
 description: Use quando precisar EXTRAIR informação estruturada de emails brutos (arquivos .eml, MIME multipart) — parse de headers (From/To/Subject/Date/Message-ID/References — reconstrução de thread), body (text/plain vs text/html — quando cada um), anexos (Content-Disposition, filename, MIME type validation, sanitização), inline images (Content-ID), e verificação DKIM/DMARC/SPF. Cobre também casos-limite (encoding quoted-printable/base64, charset misdeclared, headers RFC 2047 encoded-words, HTML "sujo" gerado por Outlook/Gmail). Dono&#58; @data-engineer (Dara). NÃO cria pipeline de ingestão de milhões de emails — isso é `invariantes-de-pipeline-de-dados` + Airflow/Prefect. NÃO envia email — isso é integração SMTP/SendGrid.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Inteligência de Email (MIME)

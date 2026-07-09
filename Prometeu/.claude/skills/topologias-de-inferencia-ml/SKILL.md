@@ -4,6 +4,9 @@ description: Use para decidir **como servir um modelo de ML/DL** em produção �
 agent-owner: architect (Aria)
 maturity: 7.5
 origem: msitarzewski/agency-agents@a597cb6 · ID G6 · bucket B03 engineering
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Topologias de Inferência ML

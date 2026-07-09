@@ -11,6 +11,9 @@ agente_dono: [dev-dex, sm-river]
 aiox_layer: L3 (.claude project config — mutable)
 tags: [jira, linear, git, gitmoji, atomicidade, rastreabilidade, branch-strategy]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G2, G10, G11)
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 > **Atribuição:** Esta skill absorve padrões originados em `msitarzewski/agency-agents` (commit `a597cb6`, licença MIT). Os padrões G2 (atomicidade), G10 (commit format gitmoji+ID) e G11 (gate de ticket-ID) foram adaptados ao contexto AIOX/Kolden, com cross-link aos artigos da Constitution e às demais skills do Prometeu. Crédito original ao autor upstream; manutenção e adaptação Kolden.

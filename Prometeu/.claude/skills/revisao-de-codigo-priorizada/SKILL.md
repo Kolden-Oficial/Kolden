@@ -4,6 +4,9 @@ description: Use para **triar PRs por priority-tier** — hot-path (payment/auth
 agent-owner: qa (Quinn) + dev (Dex)
 maturity: 7.5
 origem: msitarzewski/agency-agents@a597cb6 · IDs G15, G16 · bucket B03 engineering
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Revisão de Código Priorizada

@@ -1,6 +1,9 @@
 ---
 name: fatiamento-mvp-por-historia
 description: Use ao escrever a spec ou ao decompor uma feature grande, quando precisar transformar requisitos em user stories priorizadas (P1/P2/P3) que sejam fatias independentemente testáveis de MVP — cada uma desenvolvível, testável, deployável e demonstrável sozinha. Acione também quando uma única story está grande demais para uma fase e precisa ser quebrada por um eixo (SPIDR), não por camada técnica.
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # Fatiamento de MVP por História

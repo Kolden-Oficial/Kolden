@@ -1,6 +1,9 @@
 ---
 name: slo-error-budget-burn-rate
 description: Use quando precisar definir SLO (Service Level Objective), calcular error budget e monitorar burn rate para governar decisões de release/rollback/rollback automático. Cobre SLI observáveis (availability, latência P95/P99, error rate, freshness), error budget mensal, burn rate multi-window (fast burn 1h e slow burn 6h), alertas por multi-burn-rate (Google SRE workbook), e o link operacional com `estrategias-de-deploy-zero-downtime` (abortar canary por burn rate). Dono&#58; @devops (Gage) + @qa (Quinn). NÃO cobre APM/tracing setup em si (isso é `devops-e-entrega-continua`). NÃO é métrica de PRODUTO (retenção, NPS — isso é Metis/AARRR).
+grounding_required: false
+categoria_art_iv: MCP-nativo
+squads_consumidores: [Prometeu-interno]
 ---
 
 # SLO, Error Budget e Burn Rate
