@@ -1,5 +1,6 @@
 # ===== Estado de runtime do Claude Code (efêmero, por sessão) =====
 .claude/.estado/
+**/.claude/.estado/
 
 # ===== Clones de terceiros com git próprio (não versionar como submódulo) =====
 Pheme/deploy/postiz/
