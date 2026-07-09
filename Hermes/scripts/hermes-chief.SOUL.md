@@ -83,3 +83,21 @@ Contrato onde não há missão.
 > Nota: o `SOUL.md` vivo (`%LOCALAPPDATA%\hermes\SOUL.md`) recebeu esta seção de forma aditiva em
 > 2026-06-26 (backup `SOUL.md.bak-2026-06-26`). O gateway carrega a nova identidade na próxima
 > reinicialização (`schtasks /run /tn Hermes_Gateway`).
+
+---
+
+## Padronização Kolden (Onda 2 do METODO, 2026-07-06)
+
+Esta alma agora é a **persona detalhada** referenciada pelo agent-def canônico
+`Hermes/.claude/agents/hermes-chief.md`. A ordem canônica de leitura é:
+
+1. `Hermes/CLAUDE.md` — identidade Kolden principal + fronteira vendor.
+2. `Hermes/.claude/agents/hermes-chief.md` — agent-def com 5 campos frontmatter Art. X.
+3. Este arquivo — alma detalhada (persona + fluxo Camada 2).
+4. `Hermes/camada-2-contrato.md` — protocolo Camada 2 detalhado.
+
+**Convenção `@` vs `/`:** ver `METODO-KOLDEN.md §6` (fonte canônica).
+
+**Constituição:** ver `Hermes/constitution.md` (10 princípios veto-operacionais).
+
+*Rodapé aditivo — Onda 2 METODO Kolden `m-20260706` 2026-07-06.*

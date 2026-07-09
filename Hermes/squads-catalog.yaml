@@ -13,6 +13,7 @@
 #   muda_algo   true = ações que mudam o mundo exigem aprovação humana antes de executar
 #
 # Curadoria-mãe: C:\Kolden\Caos\dados\registro-de-entidades.yaml
+# Fonte canônica da convenção `@` vs `/`: C:\Kolden\METODO-KOLDEN.md §6
 
 squads:
   - squad: peitho

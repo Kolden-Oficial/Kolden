@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings",
+  "permissions": {
+    "allow": [
+      "Read(C:\\Kolden\\Hermes\\**)",
+      "Read(C:\\Kolden\\Olimpo\\contratos\\missoes\\**)",
+      "Read(C:\\Kolden\\Caos\\checklists\\CAOS-CL-002.md)",
+      "Read(C:\\Kolden\\METODO-KOLDEN.md)",
+      "Read(C:\\Kolden\\AGENTS.md)",
+      "Read(C:\\Kolden\\Liceu\\frameworks\\arquitetura-de-agents-kolden\\procedencia.md)",
+      "Read(C:\\Kolden\\**\\squads-catalog.yaml)",
+      "Write(C:\\Kolden\\Hermes\\**)",
+      "Edit(C:\\Kolden\\Hermes\\**)",
+      "Bash(node scripts/whatsapp-bridge/bridge.js *)",
+      "Bash(powershell -File C:\\Kolden\\Hermes\\scripts\\invoca-squad.ps1 * -DiagnosticoOnly)",
+      "Bash(bash C:\\Kolden\\Hermes\\scripts\\abre-missao.sh *)",
+      "Bash(bash C:\\Kolden\\Dike\\.claude\\reflexos\\gate-de-subida.sh *)",
+      "Glob(C:\\Kolden\\Hermes\\**)",
+      "Grep(C:\\Kolden\\Hermes\\**)"
+    ],
+    "deny": [
+      "Write(C:\\Kolden\\Hermes\\agent\\**)",
+      "Write(C:\\Kolden\\Hermes\\hermes_cli\\**)",
+      "Write(C:\\Kolden\\Hermes\\providers\\**)",
+      "Write(C:\\Kolden\\Hermes\\plugins\\**)",
+      "Write(C:\\Kolden\\Hermes\\acp_adapter\\**)",
+      "Write(C:\\Kolden\\Hermes\\codex_runtime\\**)",
+      "Edit(C:\\Kolden\\Hermes\\agent\\**)",
+      "Edit(C:\\Kolden\\Hermes\\hermes_cli\\**)",
+      "Edit(C:\\Kolden\\Hermes\\providers\\**)",
+      "Edit(C:\\Kolden\\Hermes\\plugins\\**)",
+      "Edit(C:\\Kolden\\Hermes\\Dockerfile)",
+      "Edit(C:\\Kolden\\Hermes\\pyproject.toml)",
+      "Edit(C:\\Kolden\\Hermes\\setup.py)",
+      "Edit(C:\\Kolden\\Hermes\\flake.nix)",
+      "Edit(C:\\Kolden\\Hermes\\LICENSE)",
+      "Edit(C:\\Kolden\\Hermes\\README.md)",
+      "Edit(C:\\Kolden\\Hermes\\README.zh-CN.md)",
+      "Edit(C:\\Kolden\\Hermes\\README.ur-pk.md)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(powershell -File C:\\Kolden\\Hermes\\scripts\\invoca-squad.ps1 * -Approved)"
+    ],
+    "ask": [
+      "Bash(powershell -File C:\\Kolden\\Hermes\\scripts\\invoca-squad.ps1 *)",
+      "Bash(node scripts/whatsapp-bridge/bridge.js send *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash C:\\Kolden\\Hermes\\.claude\\reflexos\\interrupt-before-mutation.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

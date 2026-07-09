@@ -1,3 +1,12 @@
+> **Nota canônica Kolden (Onda 2 do METODO em 2026-07-06):** Este `AGENTS.md` é o
+> **dev guide do vendor Nous Research** (projeto `hermes-agent`, MIT license). É EN,
+> escrito para desenvolvedores contribuindo com o codebase Python. **Ele NÃO é a
+> identidade Kolden do Hermes.** Para orientação Kolden PT-BR sobre este squad (persona,
+> constituição, PRD, protocolo Camada 2, dispatch para 23 squads, matriz de risco),
+> ler **primeiro** `Hermes/CLAUDE.md`. Este `AGENTS.md` fica como referência técnica
+> do runtime vendor. Fronteira externa×Kolden declarada em `Hermes/CLAUDE.md §Fronteira`
+> e `Hermes/squad.yaml.fronteira_vendor_nous`.
+
 # Hermes Agent - Development Guide
 
 Instructions for AI coding assistants and developers working on the hermes-agent codebase.

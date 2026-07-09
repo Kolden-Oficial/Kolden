@@ -1,0 +1,106 @@
+# Manifesto canônico do squad Hermes — Onda 2 METODO m-20260706
+# Fonte-da-verdade dos 5 campos: prd-de-ia.md
+# Constituição: constitution.md
+# Persona detalhada: CLAUDE.md + scripts/hermes-chief.SOUL.md
+---
+nome: Hermes
+grupo: A  # Meta-squads (Grupo A do METODO §8)
+tipo: squad-runtime-vendorizado
+camada_hierarquia: 2  # Camada 2 do sistema (METODO §3)
+tier_0:
+  chief: hermes-chief
+  path_canonico: .claude/agents/hermes-chief.md
+  soul_path: scripts/hermes-chief.SOUL.md
+  soul_vivo: '%LOCALAPPDATA%\hermes\SOUL.md'  # sincronizado por schtasks
+tier_1:
+  agents: []  # Hermes NÃO tem tier-1 no sentido canônico Kolden
+  nota: |
+    Os "especialistas" que o Hermes coordena são os 23 SQUADS catalogados em
+    squads-catalog.yaml — não agents tier-1 internos. Padrão exclusivo do Hermes
+    porque ele é Camada 2 (tradutor+roteador cross-squad), não Camada 3 (squad
+    especializado).
+entry_agent: hermes-chief
+constitution: constitution.md
+prd: prd-de-ia.md
+memoria_do_squad: MEMORY.md
+memoria_do_chief: agent-memory/hermes.md
+ferramentas: ferramentas.md
+roteiro_de_teste: roteiro-de-teste.md
+reflexos:
+  - .claude/reflexos/interrupt-before-mutation.sh
+skills_locais:
+  kolden:
+    - .claude/skills/roteamento-de-squad/  # após MOVE aprovado no gate Q2.A
+  vendor_nous_intocaveis:
+    - skills/apple/
+    - skills/autonomous-ai-agents/
+    - skills/creative/
+    - skills/data-science/
+    - skills/devops/
+    - skills/dogfood/
+    - skills/email/
+    - skills/github/
+    - skills/index-cache/
+    - skills/media/
+    - skills/mlops/
+    - skills/note-taking/
+    - skills/productivity/
+    - skills/research/
+    - skills/smart-home/
+    - skills/social-media/
+    - skills/software-development/
+    - skills/yuanbao/
+external_handoffs:
+  descida:
+    - squad: olimpo
+      handoff: 'invoca-squad.ps1 -Squad olimpo -Prompt "Missão no Contrato <caminho>"'
+      quando: 'Contrato lacrado, DoR completo'
+  subida:
+    - squad: dike
+      handoff: 'gate-de-subida.sh <contrato>'
+      quando: 'Zeus consolidou + Dike assinou; gate fail-closed'
+      nota: 'Dike agent-funcional pendente; papel temporário via caos-chief/hermes-chief'
+  dispatch_direto:
+    - todos_os_23_squads_em_squads_catalog_yaml
+    - quando: 'pergunta ou relatório sem missão (não força Contrato)'
+    - fonte: 'hermes-chief.SOUL.md L79-81'
+fronteira_vendor_nous:
+  runtime_python:
+    - agent/
+    - hermes_cli/
+    - providers/
+    - plugins/
+    - acp_adapter/
+    - codex_runtime/
+  docs_vendor:
+    - README.md
+    - README.zh-CN.md
+    - README.ur-pk.md
+    - AGENTS.md  # dev guide EN — camada Kolden aponta pra CLAUDE.md primeiro
+    - CONTRIBUTING.md
+    - SECURITY.md
+    - LICENSE
+  deploy_vendor:
+    - Dockerfile
+    - docker-compose.yml
+    - docker-compose.windows.yml
+    - flake.nix
+    - flake.lock
+    - pyproject.toml
+    - setup.py
+    - MANIFEST.in
+  status: 'INTOCADOS até Fase 3 residual (Contrato próprio após 26 Ondas)'
+autoridade_dispatch:
+  script: scripts/invoca-squad.ps1
+  sealer_contrato: scripts/abre-missao.sh
+  gateway_windows: scripts/hermes-gateway/
+  wrappers_runtime_bidirecional:
+    - scripts/whatsapp-bridge/bridge.js  # Baileys
+    - scripts/discord-voice-doctor.py
+    # emenda Art. IV pendente Onda 6 do METODO
+metodo_aplicado:
+  onda: 2
+  contrato_mae: m-20260706-metodo-kolden
+  data_padronizacao: '2026-07-06'
+  versao_metodo: 'v1.0'
+  registros_da_onda: registros/metodo-onda-2/
