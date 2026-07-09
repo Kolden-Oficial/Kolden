@@ -1,0 +1,1035 @@
+# Contrato de Missão-mãe — Método Kolden (metodologia unificada de padronização de agents)
+# Schema: ../contrato-de-missao.schema.md
+# Plan-file: C:\Users\Ronan Silva\.claude\plans\hermes-preciso-da-sua-crystalline-raven.md
+# Contratos irmãos: m-20260704 (Fase 1 — dossiê IA, concluída) + m-20260705 (Fase 2 — Caos, reenquadrado como sub-contrato da Onda 1 aqui)
+---
+missao:
+  id: "m-20260706-metodo-kolden"
+
+  # ── CAMADA 1 — HUMANO (lacrada, imutável) ───────────────────────────────────
+  intencao_original:
+    input_cru: |
+      @Hermes com base em tudo que sabemos agora sobre IA, os repositórios que clonamos,
+      os próprios agents da @C:\Kolden\ e até o segundo maior agent o @Caos , vamos agora
+      criar uma metodologia unificada, sei que o CAOS já tem, porém agora estou sentindo
+      falta de padronização nos agents, arquivos padronizados, documentos padronizados,
+      quero uma hierarquia completa que fique simples de entender, vamos nos basear em
+      todas as mentes pensante sobre IA para construirmos essa hierarquia de agents e no
+      fim quero ter um documento oficial dentro da pasta @C:\Kolden\ que relate o que vai
+      encontrar em cada pasta, em seguida quero também padronizar coisas como o system
+      prompt dos agents, dos subagents, o próprio comando, quero separar o uso do "@" e
+      "/" de maneira correta, quero conseguir ler de maneira clara e organizada cada
+      agent, sinto que hoje tem agent que tem muito arquivo e outros não, quero criar um
+      framework, ou melhor um método, esse será o método da Kolden para ter uma
+      infraestrutura robusta e completa de agents de ponta a ponta, podemos até
+      referenciar quem foi as nossas inspirações para cada momento do nosso método, vale
+      ressaltar que eu quero fazer por ondas/levas, quero ajustar agente por agent, em
+      sessões diferentes, mas preciso que seja pradonizado, me faça perguntas se não
+      ficou claro meu proposito de gestão/organização e hierarquia de ecossistema com IA.
+    canal: "chat"
+    recebida_em: "2026-07-05T22:50:00-03:00"
+    hash: "sha256:88e96649ea6ecce6fcaf24de3a68fc50365fdd631a877dbba83db84aea7e6f4d"
+
+  # ── CAMADA 2 — HERMES (tradução de intenção) ────────────────────────────────
+  hermes:
+    dor:
+      objetivo_real: |
+        Consolidar em documento único (`METODO-KOLDEN.md` na raiz) a metodologia
+        unificada de padronização de agents da Kolden, absorvendo (a) o framework
+        arquitetura-de-agents-kolden do Liceu (12 princípios + 5 camadas + 8 critérios
+        canônicos — produzido na Fase 1, `m-20260704`); (b) os 14 modelos canônicos do
+        Caos (norma imposta via Ritual 9 fases); (c) a hierarquia de 5 camadas
+        (Humano→Hermes→Zeus→Executivos→Operacional) do AGENTS.md; (d) as convenções
+        PT-BR+kebab-case+mitologia grega+REUSE>ADAPT>CREATE; (e) a convenção `@` vs `/`
+        (hoje descentralizada em 3 arquivos); (f) os 5 buckets de capacidade validados
+        em produção. Ao mesmo tempo, PADRONIZAR os 26 squads existentes (~261 agentes)
+        aplicando o Método um a um em 26 ondas sequenciais (1 onda = 1 squad).
+
+        Reenquadramento: Contrato `m-20260705` (redesenho do Caos, Onda 1 concluída
+        ontem, Ondas 2-6 pendentes) vira SUB-CONTRATO da Onda 1 deste Contrato-mãe.
+        Nada perdido; as 5 sub-ondas do Caos passam a ser Sub-ondas 1.1-1.5 aqui;
+        Sub-onda 1.6 (nova) escreve `METODO-KOLDEN.md` v1.0 consolidando aprendizados.
+
+        Objetivo estrutural: coeficiente de variação estrutural entre squads cai de
+        120% (medido pré-Método) para <20%; convenção `@` vs `/` centralizada em
+        METODO; anatomia canônica de SQUAD + AGENT declarada com procedência a
+        Turing/Simon/Minsky/Karpathy/Russell/Bostrom/Brooks/Amodei/Yao/Chase/Anthropic.
+      criterio_de_sucesso: |
+        Ao fim da Onda 1 (Caos):
+        1. `C:\Kolden\METODO-KOLDEN.md` v1.0 publicado com 12 seções mapeadas + rastro
+           de referências completo (grep reverso bate com `Liceu/frameworks/...
+           /procedencia.md`)
+        2. Caos passa 8/8 critérios canônicos — smoke test cria agent especialista
+           em vendas SaaS enterprise que passa
+        3. Variação estrutural do Caos cai para <10% desvio da anatomia canônica
+        4. CAOS-CL-002 vira checklist canônico (era draft na Onda 1 do `m-20260705`)
+        5. Skills `/metodo` e `/padronizar <squad>` criadas em `C:\Kolden\.claude\skills\`
+        6. Comando `@dike` definido (Dike nasce como agent funcional se decisão de
+           Onda 1 assim determinar)
+
+        Ao fim das 26 ondas totais:
+        1. Todos os 26 squads têm CLAUDE.md + squad.yaml + agents/*.md + MEMORY.md
+           conforme anatomia canônica do METODO
+        2. Coeficiente de variação estrutural cai de 120% para <20%
+        3. `AGENTS.md` atualizado apontando cada squad para conformidade com o Método
+        4. Convenção `@` vs `/` centralizada em METODO; arquivos antigos apontam para
+           METODO como fonte
+        5. Smoke tests independentes por Dike em amostra de 3 squads (Grupo B + E + F)
+           confirmam Método aplicável cross-domínio
+      restricoes:
+        prazo: "múltiplas sessões — 26 ondas + 1 costura final; provavelmente semanas em ritmo alto"
+        orcamento: "sem teto de rodadas por onda; sem commit até ordem explícita"
+        proibicoes:
+          - "NÃO é implementação real de MCP (population de MCP servers + integração runtime) — fica para Fase 3 residual (`m-2026MMDD-implementacao-mcp-e-dashboard`)"
+          - "NÃO renomear squads nem mover conteúdo entre pastas — só padronizar arquivos DENTRO de cada pasta"
+          - "NÃO substituir a hierarquia de 5 camadas existente — CONSOLIDAR em METODO com procedência"
+          - "NÃO criar squads novos (mais Dike se necessário) — só padronizar os 26 existentes"
+          - "NÃO alterar `sobre-a-empresa/` — só fazer nota em METODO apontando para a estrutura"
+          - "Ondas 2-26 aguardam Onda 1 completa — Método vive só depois de escrito e testado no Caos"
+          - "Não commitar nada sem ordem explícita do Ronan (política CLAUDE.md §6)"
+          - "Nenhum arquivo tocado fora do squad-alvo da onda em execução (exceto AGENTS.md e METODO na Onda 1 final e em Sub-onda 1.6)"
+          - "Fan-out ≤3 subagentes internos por onda (regra rate-limit validada 2026-06-27)"
+          - "Nenhuma mudança sem procedência rastreável a linhagem/mente/obra/ano do framework do Liceu"
+      contexto:
+        - "Fase 1 (Contrato m-20260704) concluída em 2026-07-04 com framework arquitetura-de-agents-kolden publicado em Liceu/frameworks/ e hub raciocínio-computacional-...md expandido; 10 commits em origin/main"
+        - "Fase 2 do Caos (Contrato m-20260705) tem Onda 1 diagnóstico concluída (matriz 60% Core / 11% Modelos / 62% Ritual / 70% Camadas; 12 achados priorizados; 5 gaps P0 identificados)"
+        - "Diagnóstico Onda 1 do Caos vira template canônico do Método: matriz-conformidade.md + achados.jsonl + sumario-executivo.md + CAOS-CL-002-draft.md são o padrão de 5 artefatos por onda"
+        - "Variação estrutural real medida (Explore A): 26 squads variam 0-56 skills, 0-33 agents; README.md universal (100%), squad.yaml 88%, constituicao.md só no Caos (1/26); Caos e Prometeu são outliers meta-squads"
+        - "Convenção `@` vs `/` documentada mas descentralizada em: Caos/CLAUDE.md, Hermes/squads-catalog.yaml, Caos/modelos/convencao-de-cli-e-tooling.md"
+        - "5 buckets de capacidade Kolden validados em produção (radar.yaml, 118 tarefas ativas)"
+        - "3 skills globais em C:\\Kolden\\.claude\\skills\\ hoje: briefing-padrao, hermes-chief, ritual-de-encerramento — Método vai adicionar /metodo e /padronizar"
+        - "Framework do Liceu foi produzido pelo próprio Ronan (via Liceu-chief) na Fase 1 — dogfooding: o Método usa o framework produzido pela Kolden como norma"
+      nivel_de_risco: "amarelo"
+    dor_completo: true
+    perguntas_abertas: []
+    matriz_de_risco:
+      reversibilidade: "reversivel"
+      impacto: "medio-alto"
+      faixa: "amarelo"
+      autonomia: "executa-e-para-em-gate"
+    ordem_de_maquina: |
+      Consolidar Método Kolden em documento único METODO-KOLDEN.md na raiz. Onda 1 =
+      Caos como piloto (dogfooding — a fábrica padroniza a si mesma antes de padronizar
+      as outras 25). Ondas 2-26 aplicam o Método aos demais 25 squads em ordem sugerida
+      (grupos A-G). Cada onda produz 5 artefatos padronizados + aplica diff cirúrgico +
+      Dike verifica independente. Gate humano OBRIGATÓRIO entre cada onda. Contrato
+      m-20260705 fica reenquadrado como sub-contrato da Onda 1 (nada perdido).
+    assinatura: { por: "hermes", em: "2026-07-05T22:50:00-03:00" }
+
+  # ── CAMADA 3 — ZEUS (decomposição + roteamento) ─────────────────────────────
+  zeus:
+    diagnostico: |
+      Missão de META-ARQUITETURA — nível mais alto que qualquer Contrato anterior. Toca
+      identidade estrutural dos 26 squads + o próprio documento oficial da Kolden.
+      Executivo natural é HEFESTO (CTO — arquitetura de sistemas de agents), sucedendo
+      Atena (CAIO, Fase 1) e reafirmando escolha de Hefesto em Fase 2 (m-20260705).
+
+      Hefesto delega a execução operacional em CASCATA:
+      - Onda 1: CAOS (dogfooding — a fábrica padroniza a si mesma) + LICEU (procedência
+        canônica) + DIKE (verificação independente)
+      - Ondas 2-26: cada squad-alvo se torna executor da própria onda, com Caos
+        fornecendo skills auxiliares (busca-de-referencias, vigia-de-ecossistema,
+        consulta-ao-registro) e Liceu fornecendo procedência quando linhagem/mente
+        não for óbvia; DIKE verifica INDEPENDENTE em toda onda
+
+      Alternativas rejeitadas:
+        (a) Fazer tudo Hermes centralizado — inviável: 26 squads têm expertise própria
+        (b) Delegar a Prometeu (framework de engenharia) — Prometeu é framework, não
+            executor; ele fornece skills mas não redesenha squads
+        (c) Delegar a Dedalo (skill-centric) — Dedalo é meta-agent de Claude Code, não
+            padronizador de squads
+    decomposicao:
+      - parte: "Ratificação técnica: framework do Liceu (Fase 1) + 14 modelos do Caos + hierarquia 5 camadas de AGENTS.md são a base canônica do Método; consolidados em METODO-KOLDEN.md"
+        executivo_destino: "hefesto"
+        motivo: "CTO ratifica que a arquitetura convergiu para o padrão canônico"
+      - parte: "Onda 1 = Caos piloto (dogfooding); 6 sub-ondas herdando m-20260705 + escrever METODO-KOLDEN.md v1.0"
+        executivo_destino: "hefesto"
+        motivo: "Caos redesenha Caos + Caos escreve o Método — meta-loop; Hefesto orquestra"
+      - parte: "Ondas 2-26 = aplicar Método aos 25 squads restantes em grupos A-G"
+        executivo_destino: "hefesto"
+        motivo: "Hefesto delega cada onda ao squad-alvo com Dike verificando"
+    paralelo: []
+    consolidacao: |
+      Ao fim da Onda 1: METODO-KOLDEN.md v1.0 canônico + Caos padronizado + CAOS-CL-002
+      canônico + skills /metodo e /padronizar. Handoff para Onda 2 (Hermes ou Prometeu).
+
+      Ao fim das 26 ondas: Kolden com padronização estrutural mensurável (coef. var
+      <20%); AGENTS.md atualizado; smoke tests em 3 squads amostrais.
+
+      Handoff para Fase 3 (contrato próprio a lavrar após 26 ondas): implementação
+      real de MCP + dashboard populado + integração Hermes runtime para safety metrics
+      em tempo real.
+    arbitragem: null
+    assinatura: { por: "zeus", em: "2026-07-05T22:50:00-03:00" }
+
+  # ── CAMADA 4 — EXECUTIVOS (especificação técnica) ───────────────────────────
+  executivos:
+    - agente: "hefesto"
+      especificacao_tecnica: |
+        POLÍTICA DE ARQUITETURA DE AGENTS KOLDEN (ratificada nesta missão):
+          - Framework do Liceu (12 princípios + 5 camadas + 8 critérios) é NORMA CANÔNICA
+          - 14 modelos do Caos são TEMPLATES OBRIGATÓRIOS para agents-Kolden-nativos
+            (agents importados/AIOS têm regra própria a definir na Sub-onda 1.6)
+          - Hierarquia de 5 camadas do AGENTS.md é HIERARQUIA CANÔNICA
+          - Convenção `@` vs `/` centralizada em METODO-KOLDEN.md § 6 (arquivos antigos
+            apontam para METODO como fonte)
+          - Cada agent Kolden declara: ASL + aspiration_criteria + uncertainty_statement
+            + constitution_ref + MCP_tools + procedencia — obrigatórios no frontmatter
+
+        HANDOFF À CASCATA DE OPERACIONAIS:
+          Onda 1 — CAOS piloto (dogfooding):
+            Sub-onda 1.1 (herança m-20260705 Onda 2): Redesenho identidade + Ritual
+              embutindo 8 critérios como gates duros
+            Sub-onda 1.2 (herança m-20260705 Onda 3): Redesenho núcleo + 12 modelos com
+              campos requeridos (aspiration + ASL + uncertainty + constitution + MCP +
+              predictions)
+            Sub-onda 1.3 (herança m-20260705 Onda 4): MCP Camada 1 — inventário + mapa
+              + plano dupla-vida
+            Sub-onda 1.4 (herança m-20260705 Onda 5): Safety dashboard schema +
+              Predictions Scorecard template + primeiras predições Kolden 2026-2027
+            Sub-onda 1.5 (herança m-20260705 Onda 6): Costura + smoke test (agent SaaS
+              enterprise passa 8/8)
+            Sub-onda 1.6 (nova): Escrever METODO-KOLDEN.md v1.0 + skills /metodo e
+              /padronizar + comando @dike (Dike como agent funcional se aprovado)
+
+          Ondas 2-26 — Aplicar Método aos 25 squads restantes em grupos A-G:
+            A (Ondas 2-3): Meta-squads — Hermes, Prometeu
+            B (Ondas 4-6): Governance — Olimpo, Dike, Themis
+            C (Ondas 7-9): Estratégia + Discovery — Aletheia, Argos, Liceu
+            D (Ondas 10-13): Ops + Finance — Ananke, Cairos, Hestia, Pactolo
+            E (Ondas 14-18): Criativos — Aglaia, Caliope, Harmonia, Orfeu, Pheme
+            F (Ondas 19-24): Execução — Ariadne, Dionisio, Emporos, Peitho, Pluto, Metis
+            G (Ondas 25-26): Cyber + auxiliares — Egide, Dedalo, Nomos
+
+          RECEITA POR ONDA (playbook de 9 passos):
+            1. Ler METODO-KOLDEN.md v1.0 como norma
+            2. Diagnóstico READ-ONLY (fan-out ≤3 Explores)
+            3. Escrever matriz + achados + diff
+            4. PARAR — Ronan aprova diff via AskUserQuestion + ExitPlanMode
+            5. Aplicar diff (reescrita cirúrgica com procedência)
+            6. Dike independente verifica
+            7. Ritual de encerramento em <Squad>/MEMORY.md
+            8. Atualizar AGENTS.md (índice)
+            9. Atualizar METODO-KOLDEN.md se aprendizado for canônico
+
+        REGRAS INVIOLÁVEIS (aplicáveis a TODAS as ondas):
+          - Nenhum arquivo tocado fora do squad-alvo (exceto AGENTS.md + METODO em
+            Onda 1 final e Sub-onda 1.6)
+          - Nenhum commit sem ordem explícita
+          - Fan-out ≤3 subagentes internos por onda
+          - Ritual de encerramento por onda
+          - Artefato-em-disco entre ondas
+          - Nunca duas ondas na mesma sub-sessão
+      handoff_operacional:
+        squad: "caos + liceu + dike (Onda 1); squad-alvo + caos-como-fornecedor-de-skills + liceu-como-procedência + dike (Ondas 2-26)"
+        artefato: |
+          Onda 1:
+          - METODO-KOLDEN.md v1.0 publicado em C:\Kolden\
+          - Caos padronizado (CLAUDE.md + constituicao.md + nucleo/ARQUITETURA.md +
+            12 modelos/*.md com campos canônicos)
+          - CAOS-CL-002 canônico em Caos/checklists/
+          - Skills /metodo e /padronizar em C:\Kolden\.claude\skills\
+          - Comando @dike definido; Dike/agents/dike-chief.md se aprovado
+
+          Ondas 2-26 (uma por squad):
+          - <Squad>/CLAUDE.md + squad.yaml + agents/*.md + MEMORY.md padronizados
+          - <Squad>/registros/metodo-onda-<N>/matriz + achados + diff + ritual
+          - AGENTS.md atualizado por onda
+      devolucao_lateral: null
+      resultado: "pendente — execução em sessões dedicadas em C:\\Kolden\\<Squad>\\"
+      assinatura: { por: "hefesto", em: "2026-07-05T22:50:00-03:00" }
+
+  # ── CAMADA 5 — OPERACIONAL (execução + proatividade) ────────────────────────
+  operacional:
+    - agente: "caos:caos-chief"
+      squad: "caos"
+      papel: "executor da Onda 1 (dogfooding — 6 sub-ondas) + fornecedor de skills auxiliares nas Ondas 2-26 (busca-de-referencias, vigia-de-ecossistema, consulta-ao-registro, sintese-de-framework)"
+      resultado_onda_1:
+        em: "EM ANDAMENTO"
+        status: "sub-onda-1.1-concluida-aguardando-sub-onda-1.2"
+        sub_ondas:
+          "1.1":
+            em: "2026-07-05T23:30:00-03:00"
+            status: "concluida"
+            executor: "caos-chief (raiz Kolden) — proposta de diff cirúrgico + hermes (raiz Kolden) — aplicação sob autorização humana + gates decididos via AskUserQuestion"
+            entregaveis_realizados:
+              - "Caos/registros/metodo-onda-1/1.1-identidade-ritual/diff-cirurgico.md (679 linhas — diff cirúrgico com procedência linha-a-linha, mapa achados→mudanças, tabela mestra 16 mudanças)"
+              - "Caos/constituicao.md bump v2.4.0 → v2.5.0 — Art. IV refactored (MCP mandatório com dupla-vida 90d), Art. IX novo (grounding compulsório), Art. X novo (8 gates canônicos por agent com severidade granular BLOCK/WARN/INFO)"
+              - "Caos/CLAUDE.md bump v3.3.0 → v3.4.0 — bloco 'Incerteza declarada' (Russell 2019), ReAct nomeado como loop-padrão (Yao et al. 2022), gates canônicos em cada fase relevante do Ritual (Fases 1, 2, 3, 4, 5.3, 5.4, 5.5, 5b, 6, 7, 8), seção 'Regras invioláveis' atualizada para 10 artigos"
+              - "Caos/MEMORY.md atualizado com 7 padrões novos da Sub-onda 1.1 + 3 candidatos a promoção"
+              - "Caos/agent-memory/caos.md atualizado com 7 padrões técnicos do executor caos-chief + 1 candidato a promoção"
+            decisoes_gate_humano:
+              - decisao: "Aprovar mudanças NÃO-NEGOCIÁVEIS + WARN da v2.5.0 (Arts. IV/IX/X) como o diff propõe"
+                por: "Ronan via AskUserQuestion 2026-07-05T23:00"
+              - decisao: "Interpretabilidade fica como G5 (Opção a — Fiel ao Contrato); Orthogonality+Instrumental consolidados em G6; proposta de emenda ao framework do Liceu via ida-e-volta com Liceu-chief na Onda 6 do Método"
+                por: "Ronan via AskUserQuestion 2026-07-05T23:00"
+              - decisao: "Aplicação por artefato (constituição v2.5.0 primeiro, depois CLAUDE.md v3.4.0)"
+                por: "Ronan via AskUserQuestion 2026-07-05T23:00"
+            divergencia_declarada:
+              - "Interpretabilidade como G5 é única mudança que NÃO bate 1:1 com framework do Liceu (framework tem 8 critérios sem interpretabilidade nomeada). Ronan aprovou manter no Contrato-mãe; emenda ao framework será proposta ao Liceu-chief na Onda 6 do Método"
+            verificacao_auto:
+              - "Constituição v2.5.0: 10 artigos declarados (7 originais + Art. VIII preservado + Arts. IX/X novos); histórico de versões atualizado; seção 'Onde os gates são aplicados' expandida"
+              - "CLAUDE.md v3.4.0: changelog 3.4.0 no topo; bloco Incerteza declarada após 'Quem é você'; ReAct nomeado como loop-padrão; 8 gates canônicos embutidos em Fases 1-8 do Ritual; seção 'Regras invioláveis' aponta para 10 artigos"
+              - "Working tree fora de Caos/ preservado (regra G1 do CAOS-CL-002 respeitada)"
+              - "Sem commit (regra G2)"
+              - "Ritual de encerramento em Caos/MEMORY.md executado"
+            handoff_para_sub_onda_1_2:
+              escopo: "Redesenho do núcleo (Caos/nucleo/ARQUITETURA.md) + reescrita cirúrgica dos 12 modelos/*.md do Caos com campos requeridos (aspiration_criteria + ASL + uncertainty + constitution + MCP + predictions_scorecard condicional)"
+              modelos_alvo: [cartao-de-identidade, checklist-de-qualidade, convencao-de-cli-e-tooling, especialista-historico, ferramentas, guia-infisical, instalacao, orquestrador-base, perfil, prd-de-ia, roteiro-de-teste, system-prompt-base]
+              gate_humano: "diff proposto → Ronan aprova → aplicação em Sub-onda 1.2"
+          "1.2":
+            em: "2026-07-06T00:30:00-03:00"
+            status: "concluida"
+            executor: "caos-chief (raiz Kolden) — proposta de diff cirúrgico 1446 linhas + hermes (raiz Kolden) — aplicação em 3 grupos hierárquicos sob autorização humana"
+            entregaveis_realizados:
+              - "Caos/registros/metodo-onda-1/1.2-nucleo-modelos/diff-cirurgico.md (1446 linhas — diff cirúrgico com §2 bloco canônico único dos 5 campos, §1 mapa achados→mudanças, §17 tabela mestra 37 mudanças com procedência, §16 12 itens preservados, §18 6 perguntas gate humano)"
+              - "Caos/modelos/prd-de-ia.md (G1 — fonte da verdade) — frontmatter YAML canônico dos 5 campos Art. X + tabela expandida com ASL/Constituição/Loop pattern + §2 KPIs cross-ref aspiration + §3 Persona com Loop pattern + Incerteza declarada + §5 Ferramentas com 2 colunas novas + §5.3 declaration MCP-nativo vs adapter vs wrapper + §11.5 plano de introspecção + §11.6 tabela auditoria capacidades × risco"
+              - "Caos/modelos/system-prompt-base.md (G2) — Persona com 3 linhas de metadados canônicos (loop_pattern + ASL + constitution) + bloco 'Incerteza declarada' (Russell 2019) obrigatório + Restrições ancoradas em constitution.md + linha ASL-3+ interrupt-before-mutation + Exemplos 3 (ambíguo) e 4 (off-switch) acrescentados"
+              - "Caos/modelos/checklist-de-qualidade.md (G2) — Constituição de 7→10 artigos + 3 novos itens B em §N0 + item R grounding_required em §N3 + 2 itens B MCP-mandatório em §N4 + item B 5 campos frontmatter em §Documentação + NOVA seção N7 com 8 subseções (N7-G1 a N7-G8) de gates canônicos Art. X materializados"
+              - "Caos/modelos/roteiro-de-teste.md (G2) — Cobertura N0→N6 expandida para N7 + 5 testes canônicos novos coexistindo com clássicos (OS-1 Off-Switch, AB-3 Instrumental red-team, UN-2 Uncertainty smoke, GR-2 Grounding [coexiste com GR-1 clássico], PR-1 Predictions)"
+              - "Caos/modelos/cartao-de-identidade.md (G3) — YAML canônico ganha bloco 'Campos canônicos do Art. X' entre Básicos e 5 Eixos + tabela 'Como preencher' ganha 5 linhas (uma por campo) + Invariantes 7-11 novos (constitution existente, ASL bate com tools, aspiration 1:1 com KPIs, cartão é espelho)"
+              - "Caos/modelos/orquestrador-base.md (G3) — Persona ganha loop_pattern + ASL agregado do squad + constitution do orquestrador + Incerteza declarada + NOVA seção 'Log de decisão de roteamento' (plano de introspecção mínimo Art. X G5)"
+              - "Caos/modelos/especialista-historico.md (G3) — bloco YAML agent ganha loop_pattern + ASL herdado + NOVA seção constitution_herdada (5-15 máximas VETO-OPERACIONAIS do especialista real)"
+              - "Caos/modelos/perfil.md (G3) — NOVA tabela 'Campos canônicos Art. X (v2.5)' com 6 campos + fontes primárias após tabela Identidade"
+              - "Caos/modelos/ferramentas.md (G3) — Tabela com 2 colunas novas (MCP-nativo? + grounding_required?) + NOVA seção 'Plano de dupla-vida (Art. IV v2.5.0)' com template"
+              - "Caos/modelos/instalacao.md (G3) — Passo 3.1 e 3.2 condicionais (ASL-3+ + grounding_required) + Passo 4 expandido com verificação MCP-nativo + Passo 5 com checklist Verificação canônica Art. X (8 checkboxes G1-G8)"
+              - "Caos/modelos/convencao-de-cli-e-tooling.md (G3) — nota v2.5 Art. IV refactored sobre CLI como primeiro passo antes de MCP-server com dupla-vida 90 dias"
+              - "Caos/nucleo/ARQUITETURA.md (G3) — Cabeçalho bump v2.5 + §5.5 middleware.py com 2 hooks novos (interrupt-before-mutation + verificacao-de-fato-datavel) + cascata por ASL + §5.6 ritual.py com Fase 5 cascata 5.0→5.6 + 8 gates canônicos + 10 artigos + NOVA §5.8 introspeccao.py + §6 Roteamento por ASL + §10 O que NÃO muda atualizado"
+              - "Caos/MEMORY.md atualizado com 7 padrões novos da Sub-onda 1.2 + 4 candidatos a promoção (autoridade escalonada, bloco canônico único, 3 grupos hierárquicos, fan-out=teto CONFIRMADO 2x)"
+              - "Caos/agent-memory/caos.md atualizado com padrões técnicos do executor caos-chief (registrado no ritual do próprio agente)"
+            decisoes_gate_humano:
+              - decisao: "Aprovar as 5 recomendações do diff em bloco (bloco canônico único + 5 testes canônicos + N7 seção nova + guia-infisical NÃO tocado + coluna nova em ferramentas.md)"
+                por: "Ronan via AskUserQuestion 2026-07-06T00:15"
+              - decisao: "Aplicação por artefato em 3 grupos hierárquicos (G1 autoridade → G2 primários → G3 secundários)"
+                por: "Ronan via AskUserQuestion 2026-07-06T00:15"
+            padrao_confirmado_2x:
+              - "Fan-out ≤N é TETO, não obrigação — CONFIRMADO 2x consecutivas (Sub-ondas 1.1 e 1.2 usaram 0/3 subagentes por coerência estilística cross-arquivo). Promovido a candidato global no MEMORY do Caos"
+            verificacao_auto:
+              - "13 arquivos aplicados sem erro (prd-de-ia + system-prompt-base + checklist + roteiro-de-teste + cartão + orquestrador + especialista-historico + perfil + ferramentas + instalação + CLI + ARQUITETURA)"
+              - "Guia-infisical.md NÃO tocado conforme decisão §16 do diff"
+              - "Working tree fora de Caos/ preservado (regra G1 do CAOS-CL-002 respeitada)"
+              - "Sem commit (regra G2)"
+              - "Ritual de encerramento em Caos/MEMORY.md executado (7 padrões + 4 candidatos a promoção)"
+            handoff_para_sub_onda_1_3:
+              escopo: "MCP Camada 1 — inventário completo de wrappers proprietários existentes (grep por skills-como-tools: busca-de-referencias, consulta-ao-registro, vigia-de-ecossistema, outras que o diagnóstico identificar) + mapa de dependências (quais skills/agents consomem cada wrapper) + plano de migração escalonada para MCP (gradual, com dupla-vida durante transição se impacto for alto) + diff proposto no ferramentas.md do Caos"
+              onde_registra: "Caos/registros/metodo-onda-1/1.3-mcp-camada-1/"
+              gate_humano: "diff proposto → Ronan aprova → aplicação em Sub-onda 1.3"
+          "1.3":
+            em: "2026-07-06T04:15:00-03:00"
+            status: "concluida"
+            executor: "caos-chief (raiz Kolden) — fan-out 3/3 Explores paralelos (alvos independentes) + hermes (raiz Kolden) — aplicação do diff sob autorização humana"
+            entregaveis_realizados:
+              - "Caos/registros/metodo-onda-1/1.3-mcp-camada-1/inventario.md (124 linhas — 22 wrappers em 4 squads, tabela por squad, achados prévios validados Iris+Solomon, constatação arquitetural)"
+              - "Caos/registros/metodo-onda-1/1.3-mcp-camada-1/mapa-de-dependencias.md (126 linhas — grep reverso por wrapper, quem consome, impacto de remoção, cadeias de handoff)"
+              - "Caos/registros/metodo-onda-1/1.3-mcp-camada-1/plano-migracao-escalonada.md (125 linhas — 6 grupos A-F, ordem topológica 14 semanas, métricas Dike, matriz riscos)"
+              - "Caos/registros/metodo-onda-1/1.3-mcp-camada-1/diff-cirurgico-ferramentas.md (122 linhas — 3 blocos de mudança em Caos/modelos/ferramentas.md, +42 linhas úteis, 0 remoções)"
+              - "Caos/registros/metodo-onda-1/1.3-mcp-camada-1/sumario-executivo.md (106 linhas — números-chave, achado arquitetural, 6 perguntas gate humano com recomendação técnica)"
+              - "Caos/modelos/ferramentas.md v2.5 → v2.5.1 aplicado: 2 linhas novas na tabela principal (Speechmatics + Discord); Plano de dupla-vida com regra + 8 casos canônicos reais + tabela 5 wrappers em exceção constitucional; procedência Sub-onda 1.3 no rodapé"
+              - "Caos/MEMORY.md atualizado com 7 padrões novos da Sub-onda 1.3 + 3 candidatos a promoção (decompor fan-out por interdependência; checar MCP oficial ANTES de propor próprio; categoria constitucional para runtime bidirecional)"
+              - "Caos/agent-memory/caos.md atualizado com padrões técnicos do executor caos-chief"
+            achados_criticos:
+              wrappers_totais: 22
+              squads_afetados: 4  # Argos, Hermes, Pheme, Emporos
+              squads_sem_wrapper: 22  # 85% dos squads Kolden já operam sem wrapper (padrão v2.5 respeitado)
+              concentracao_hermes: 15  # runtime multi-plataforma justifica
+              substituicoes_diretas_grupo_a: 4  # ApifyClient, GHL×2 (Pheme+Emporos), ElevenLabs — MCP oficial já cadastrado, 7d
+              mcps_proprios_simples_grupo_b: 6  # Speechmatics, Deepgram, SociaVault, Mistral, Groq, MiniMax — 30d
+              mcps_proprios_complexos_grupo_b: 2  # xAI consolidated, decisão OpenAI/Google TTS pendente — 90d
+              wrappers_em_excecao_grupo_c: 5  # Discord/Slack/Telegram/WhatsApp/Google Chat — event streams runtime bidirecional
+              deprecacoes: 2  # OpenAI fallback LLM (soberania), OpenAI trajectory compression
+              investigar_grupo_f: 2  # Apollo + Common Room em Emporos (menção sem código — dead-reference?)
+            decisoes_gate_humano:
+              - decisao: "Rota D-1 aprovada: categoria constitucional 'adapter de runtime bidirecional em tempo real' criada; emenda ao Art. IV proposta ao Liceu-chief na Onda 6 do Método; H1-H5 (Discord/Slack/Telegram/WhatsApp/Google Chat) SEM dupla-vida"
+                por: "Ronan via AskUserQuestion 2026-07-06T04:00"
+              - decisao: "5 recomendações operacionais aprovadas em bloco: (Q2) deprecar OpenAI fallback LLM (soberania-first; SLA via retry+circuit breaker+alerta), (Q3) manter ordem Emporos primeiro (funil comercial vivo), (Q4) autorizar sondagem Grupo F Apollo+Common Room, (Q5) aplicar diff em Caos/modelos/ferramentas.md, (Q6) fechar Sub-onda 1.3 sem construir MCP como prova (destravar Sub-ondas 1.4-1.6)"
+                por: "Ronan via AskUserQuestion 2026-07-06T04:00"
+            divergencia_declarada_do_contrato_mae:
+              - "Contrato-mãe § handoff_para_sub_onda_1_3 dizia 'grep por skills-como-tools: busca-de-referencias, consulta-ao-registro, vigia-de-ecossistema, outras que o diagnóstico identificar'. Investigação (calibração antes do fan-out) mostrou que as 3 skills-âncora mencionadas NÃO são wrappers — são skills de método puro/orquestração. Wrappers reais estão em outros pontos (Hermes runtime, Argos motor, Pheme/Emporos GHL). Documentado no inventario.md §5. Padrão a promover: 'calibração da premissa do Contrato ANTES do fan-out'"
+            padroes_confirmados:
+              - "Fan-out ≤N por INTERDEPENDÊNCIA dos alvos (não por escopo): Sub-ondas 1.1/1.2 = 0/3 (alvos interdependentes cross-arquivo); Sub-onda 1.3 = 3/3 (alvos independentes 3 squads). Regra confirmada pelo LADO OPOSTO"
+              - "Antes de propor MCP-próprio, checar se MCP oficial já cadastrado cobre (Grupo A > Grupo B) — evita construir 4+ MCPs desnecessários"
+              - "MCP spec 2024 não modela event streams bidirecionais — categoria constitucional nova precisa reconhecimento formal (emenda ao Art. IV pendente na Onda 6)"
+              - "Template canônico precisa 3 níveis: regra + exemplos-canônicos-reais + exceções-nomeadas (não só regra + placeholder)"
+            verificacao_auto:
+              - "5 artefatos padronizados produzidos (inventário + mapa + plano + diff + sumário)"
+              - "Diff cirúrgico aplicado em Caos/modelos/ferramentas.md (+42 linhas úteis, 0 remoções)"
+              - "Working tree fora de Caos/ preservado"
+              - "Sem commit"
+              - "Ritual de encerramento em Caos/MEMORY.md + Caos/agent-memory/caos.md executado"
+              - "Fan-out 3/3 utilizado por decomposição por-squad (independência estrutural)"
+            handoff_para_sub_onda_1_4:
+              escopo: "Safety dashboard schema + Predictions Scorecard template + primeiras predições Kolden 2026-2027. Dashboard populado com dados desta Sub-onda 1.3 (contagem wrappers, timeline migração, exceção Art. IV). Primeiras predições datáveis (Brooks 2018-2026 style) sobre Kolden 2026-2027 — ex: 'até 2026-10-01, 100% dos wrappers Grupo A migrados', 'até 2026-12-31, 0 agentes ASL-3+ em produção sem interrupt_before'"
+              onde_registra: "Caos/registros/metodo-onda-1/1.4-safety/"
+              gate_humano: "diff proposto → Ronan aprova → aplicação em Sub-onda 1.4"
+            escopo_futuro_declarado:
+              onda_6_do_metodo: "Ida-e-volta com Liceu-chief para propor emenda ao Art. IV reconhecendo 'adapter de runtime bidirecional em tempo real' como categoria constitucional legítima (H1-H5 do Hermes ficam legais permanentemente)"
+              fase_3_residual: "Implementação real dos 4 substituições diretas Grupo A (7 dias) + 6 MCPs-próprios simples Grupo B (30 dias) + 2 MCPs-próprios complexos Grupo B (90 dias) — Contrato próprio m-2026MMDD-implementacao-mcp-e-dashboard após as 26 Ondas do Método"
+          "1.4":
+            em: "2026-07-06T14:00:00-03:00"
+            status: "concluida-aguardando-ratificacao-tardia"
+            executor: "caos-chief (raiz Kolden) — 4 CREATEs aplicados na sessão de execução + 5 arquivos-índice de normalização de path na sessão atual; 0/3 fan-out (interdependência cross-arquivo confirmada 3x)"
+            entregaveis_realizados:
+              - "Caos/modelos/predicoes.yaml (template YAML schema v1.0.0 — 5 campos obrigatórios + 3 exceções nomeadas; procedência Brooks 2018-2026)"
+              - "Caos/modelos/revisao-anual.md (template markdown 10 seções — rubrica dificuldade 1-5 pré-declarada + score calibrado + meta-comentário; procedência Brooks 2019/2024)"
+              - "Caos/registros/dashboard-safety.md v0.1.0 (schema do dashboard — 5 blocos de colunas + 7 fontes + rubrica G5 heurística 0-5 + 5 exceções nomeadas; procedência Amodei/Anthropic RSP 2023 + Amodei-Olah 2016 + Bai et al. 2022 + Anthropic MCP 2024)"
+              - "Caos/registros/predictions-scorecard-kolden-2026.md (primeira safra Kolden 2026-2027 — 5 predições ancoradas na Sub-onda 1.3 + Constituição v2.5.0; dificuldade média 3.0; 1 condicional; categorias de erro Brooks 2024 pré-declaradas)"
+              - "Caos/registros/metodo-onda-1/1.4-safety/dashboard-schema.md (índice canônico do schema)"
+              - "Caos/registros/metodo-onda-1/1.4-safety/predictions-scorecard-template.md (índice canônico do mecanismo)"
+              - "Caos/registros/metodo-onda-1/1.4-safety/predicoes-2026-2027.yaml (extração YAML pura das 5 predições no formato canônico)"
+              - "Caos/registros/metodo-onda-1/1.4-safety/diff-cirurgico.md (documento de aplicação — 4 CREATEs + normalização + procedência linha-a-linha + verificação G1-G8)"
+              - "Caos/registros/metodo-onda-1/1.4-safety/sumario-executivo.md (gate humano tardio)"
+            decisoes_gate_humano:
+              - decisao: "RATIFICADA em bloco na Sub-onda 1.5 — Q1-Q5 aprovadas conforme recomendação técnica do caos-chief"
+                por: "Ronan (via ratificação em bloco proposta na Sub-onda 1.5)"
+            padrao_confirmado_3x:
+              - "Fan-out ≤N é TETO, não obrigação — CONFIRMADO 3x (1.1, 1.2, 1.4 = 0/3 por interdependência; 1.3 = 3/3 caso oposto)"
+            padroes_novos_a_registrar:
+              - "Preservar path canônico + criar índices em `<sub-onda>/` quando grep revela referências históricas cruzadas — não mover, indexar"
+              - "Extração YAML pura ao lado do MD populado quando o mesmo conteúdo precisa ser (a) narrativa humana + (b) fonte de máquina"
+              - "Sessão de normalização é sub-onda legítima quando execução prévia ficou incompleta (consolidação sem re-execução)"
+              - "Ratificação tardia de gate humano é aceitável quando 0 arquivos pré-existentes tocados + reversão trivial"
+            verificacao_auto:
+              - "5 artefatos padronizados em 1.4-safety/ + 4 CREATEs canônicos em Caos/modelos/ e Caos/registros/"
+              - "Working tree fora de Caos/ preservado (G1)"
+              - "Sem commit (G2)"
+              - "Procedência linha-a-linha em Liceu/frameworks/arquitetura-de-agents-kolden/procedencia.md (G3)"
+              - "0 consultas web necessárias (Liceu Fase 1 consolidou fontes)"
+            handoff_para_sub_onda_1_5:
+              escopo: "Costura + smoke test do Método — agente-piloto passa pelo Ritual Fase 1-7 com Constituição v2.5.0 aplicada; colhe onde os gates G1-G8 tropeçam na prática"
+              onde_registra: "Caos/registros/metodo-onda-1/1.5-costura-smoke/"
+              gate_humano: "resultado do smoke test → Ronan valida se o Método está pronto para escala nas Ondas 2-26"
+          "1.5":
+            em: "2026-07-06T18:00:00-03:00"
+            status: "concluida"
+            executor: "caos-chief (raiz Kolden) — 0/3 fan-out (interdependência cross-artefato confirmada 5x consecutivas: 1.1/1.2/1.4/1.5 = 0/3; 1.3 = 3/3 caso oposto)"
+            entregaveis_realizados:
+              - "Caos/registros/metodo-onda-1/1.5-costura-smoke/relatorio-costura.md (auditoria por artefato das Sub-ondas 1.1-1.4 + veredito global 4/4 APLICADAS + evidência textual + auditoria transversal G1-G8)"
+              - "Caos/registros/metodo-onda-1/1.5-costura-smoke/agent-gerado-smoke.md (simulação canônica do Ritual v3.4.0 produzindo o agent Salgueiro — SaaS enterprise SOLO ASL-3 — 9 fases + 8 gates canônicos + frontmatter + reflexos + testes; declarada como simulação por design G1)"
+              - "Caos/registros/metodo-onda-1/1.5-costura-smoke/verificacao-dike.md (8/8 checkboxes CAOS-CL-002 seções A-G com evidência textual verbatim por checkbox + bloco YAML canônico do veredito; papel de Dike executado temporariamente pelo caos-chief com declaração de independência)"
+              - "Caos/registros/metodo-onda-1/1.5-costura-smoke/diff-cirurgico.md (sem correções necessárias — Dike 8/8 — + tabela comparativa baseline arquiteto.md 0/8 vs Salgueiro 8/8 + interpretação do delta de 100 pontos)"
+              - "Caos/registros/metodo-onda-1/1.5-costura-smoke/sumario-executivo.md (5 artefatos + 14 padrões consolidados para o METODO-KOLDEN.md v1.0 + handoff para 1.6 + bloco YAML pronto)"
+            veredito_smoke:
+              agente_gerado: "Salgueiro (especialista SaaS enterprise, SOLO, ASL: 3)"
+              criterios_canonicos: "8/8 VERDE"
+              evidencia_por_criterio: "verbatim (linhas citadas em verificacao-dike.md seção C)"
+              divergencia_declarada:
+                - "C3 (G5 interpretabilidade) — framework do Liceu não nomeia; aprovado pelo Ronan em 2026-07-05T23:00; emenda pendente Onda 6 do Método"
+            veredito_costura: "4/4 sub-ondas APLICADAS, 0 pendentes, 0 parciais"
+            veredito_dike:
+              secao_A_procedencia: "PASS 3/3"
+              secao_B_principios: "12/12 VERDE"
+              secao_C_criterios_canonicos: "8/8 VERDE"
+              secao_D_mcp: "PASS 4/4"
+              secao_E_safety: "PASS 6/6"
+              secao_F_costura_smoke: "PASS 6/6"
+              secao_G_restricoes: "PASS 6/6"
+              veredito_global: "SOBE"
+              correcoes_ciruricas_propostas: 0
+            baseline_comparativo:
+              arquivo: "Caos/.claude/agents/arquiteto.md"
+              mtime_baseline: "2026-06-20"
+              baseline_conformidade: "0/8 gates canônicos"
+              novo_conformidade: "8/8 gates canônicos"
+              delta_absoluto: "+100 pontos de conformidade"
+              interpretacao: "delta justifica a escala das Ondas 2-26; se baseline interno do Caos tem 0/8 (não por bug — por design pré-v2.5.0), os ~261 agents pré-Fase 2 estão próximos de 0; Método migra cada squad para 8/8"
+            decisoes_gate_humano:
+              - decisao: "Ratificação em bloco Q1-Q5 da Sub-onda 1.4 aprovada"
+                por: "Ronan (via ratificação em bloco)"
+              - decisao: "Handoff para Sub-onda 1.6 autorizado"
+                por: "Ronan (via ratificação em bloco)"
+            padrao_confirmado_5x:
+              - "Fan-out ≤N é TETO, não obrigação — CONFIRMADO 5x consecutivas (1.1/1.2/1.4/1.5 = 0/3 por interdependência; 1.3 = 3/3 caso oposto). Promovido a padrão global do Método (METODO §8)"
+            padroes_novos_a_registrar:
+              - "Verificação de costura via head-de-arquivo + grep-de-marcador canônico é O(1) por arquivo (método escalável para 26 ondas)"
+              - "Papel Dike temporário pelo caos-chief é aceitável com 3 salvaguardas: (a) ordem serial smoke ANTES da verificação; (b) evidência textual verbatim por checkbox; (c) declaração explícita de divergência conhecida"
+              - "Comparação baseline × novo por critério canônico com linhas citadas é padrão de prova de método"
+              - "Simulação de Ritual manualmente (fora de sessão dedicada) é aceitável se declarada explicitamente e não instancia arquivos em disco no agent-alvo"
+              - "5 artefatos padronizados por sub-onda é a anatomia canônica confirmada 5x"
+            verificacao_auto:
+              - "5 artefatos padronizados produzidos em 1.5-costura-smoke/"
+              - "Nenhum arquivo fora de Caos/ tocado (G1 respeitado)"
+              - "Sem commit (G2)"
+              - "Procedência linha-a-linha ancorada em Liceu/frameworks/arquitetura-de-agents-kolden/procedencia.md"
+              - "0 consultas web"
+              - "Fan-out 0/3 confirmando regra 5x consecutivas"
+            handoff_para_sub_onda_1_6:
+              escopo: "Escrever C:\\Kolden\\METODO-KOLDEN.md v1.0 (12 seções com 14 padrões consolidados) + criar skills /metodo e /padronizar em C:\\Kolden\\.claude\\skills\\ + definir comando @dike + Dike/agents/dike-chief.md (se Ronan aprovar) + atualizar AGENTS.md raiz + propor 2 emendas ao framework do Liceu via ida-e-volta com Liceu-chief"
+              onde_registra: "Sub-onda 1.6 em Caos/registros/metodo-onda-1/1.6-metodo-kolden/ + arquivo raiz C:\\Kolden\\METODO-KOLDEN.md"
+              excecoes_G1_autorizadas: "C:\\Kolden\\METODO-KOLDEN.md (raiz) + C:\\Kolden\\.claude\\skills\\metodo\\ + C:\\Kolden\\.claude\\skills\\padronizar\\ + C:\\Kolden\\AGENTS.md — 4 pontos fora de Caos/ autorizados pelo Contrato-mãe Sub-onda 1.6"
+          "1.6":
+            em: "2026-07-06T20:00:00-03:00"
+            status: "concluida"
+            executor: "caos-chief (raiz Kolden) — 0/3 fan-out (interdependência cross-artefato confirmada 6x consecutivas: 1.1/1.2/1.4/1.5/1.6 = 0/3; 1.3 = 3/3 caso oposto)"
+            entregaveis_aplicados:
+              - "C:\\Kolden\\METODO-KOLDEN.md v1.0 (~500 linhas, 12 seções, procedência 100% ancorada com 8+ autores nomeados: Amodei, Russell, Simon, Brooks, Bostrom, Bai, Yao, Olah + Anthropic MCP + framework Liceu)"
+              - "C:\\Kolden\\.claude\\skills\\metodo\\SKILL.md (skill global — invocável para explicar/navegar o Método via auto-descoberta; aponta para METODO-KOLDEN.md como fonte única)"
+              - "C:\\Kolden\\.claude\\skills\\padronizar\\SKILL.md (skill global — invocável para executar rito canônico de 9 passos das Ondas 2-26; aponta para METODO §8 e CAOS-CL-002 canônico)"
+            entregaveis_propostos:
+              - "Caos/registros/metodo-onda-1/1.6-metodo-kolden/proposta-dike-instanciacao.md (3 opções A/B/C + recomendação Opção A + tabela trade-offs 7 dimensões)"
+              - "Caos/registros/metodo-onda-1/1.6-metodo-kolden/diff-agents-md.md (mudança #1 independente + #2 condicional a A/B/C)"
+              - "Caos/registros/metodo-onda-1/1.6-metodo-kolden/emendas-liceu.md (E1 interpretabilidade C5 + E2 categoria runtime bidirecional Art. IV)"
+              - "Caos/registros/metodo-onda-1/1.6-metodo-kolden/relatorio-de-consolidacao.md (14 padrões consolidados das Sub-ondas 1.1-1.5 + 5 padrões não consolidados por decisão + 5 padrões novos)"
+              - "Caos/registros/metodo-onda-1/1.6-metodo-kolden/sumario-executivo.md (3 gates humanos + bloco YAML pronto)"
+            decisoes_gate_humano:
+              - decisao: "Q1 aprovada — METODO-KOLDEN.md v1.0 publicado sem revisão"
+                por: "Ronan"
+              - decisao: "Q2 = Opção A — Dike aprovado como squad-solo em C:\\Kolden\\Dike\\ (esqueleto criado; nascimento como agent funcional pendente via Contrato próprio no Ritual do Caos)"
+                por: "Ronan"
+              - decisao: "Q3 = Opção B — 2 emendas ao framework do Liceu adiadas para ida-e-volta com Liceu-chief (Onda 6 do Método)"
+                por: "Ronan"
+              - decisao: "Onda 2 = Hermes (Grupo A) — conforme recomendação técnica do caos-chief"
+                por: "Ronan"
+            padrao_confirmado_6x:
+              - "Fan-out ≤N é TETO, não obrigação — CONFIRMADO 6x consecutivas. Promovido a padrão global do Método (METODO §8 subseção 'Regra do fan-out')"
+            padroes_novos_a_registrar:
+              - "Documento canônico raiz (METODO) em 12 seções + procedência §11 é anatomia escalável para próximos Métodos Kolden (Marca, Vendas, etc.)"
+              - "Skill que aponta para doc-canônico evita duplicação — /metodo não reproduz o METODO, aponta para ele"
+              - "Proposta com 3 opções + recomendação nomeada + tabela trade-offs é template para decisões de arquitetura alta reversibilidade"
+              - "Diff-de-AGENTS.md em 2 níveis (mudança #1 independente + #2 condicional à decisão do gate) permite aplicação parcial"
+              - "Emenda ao framework do Liceu = ida-e-volta com Liceu-chief em sessão dedicada — Sub-onda 1.6 propõe, não aplica; preserva soberania do produtor do framework"
+              - "Consolidação sem perda via tabela de rastreabilidade (relatorio-de-consolidacao.md) — cada padrão → sub-onda → seção do METODO → evidência textual"
+            verificacao_auto:
+              - "3 arquivos aplicados fora de Caos/ (METODO + 2 skills) — EXCEÇÃO AUTORIZADA G1"
+              - "5 propostas em Caos/registros/metodo-onda-1/1.6-metodo-kolden/"
+              - "Nenhum arquivo em Hermes/, Liceu/, Olimpo/, sobre-a-empresa/projetos/ tocado"
+              - "Sem commit (G2)"
+              - "Procedência linha-a-linha em METODO §11 ancorada em Liceu/frameworks/arquitetura-de-agents-kolden/procedencia.md"
+              - "0 consultas web"
+              - "Fan-out 0/3 confirmando regra 6x consecutivas"
+            criterio_sucesso_onda_1:
+              publicacao_metodo: "CONCLUIDO — arquivo criado com §1-§12 + procedência §11 100%"
+              caos_8_de_8_criterios: "CONCLUIDO na Sub-onda 1.5 — Salgueiro 8/8 (delta +100 vs arquiteto.md 0/8)"
+              variacao_estrutural_caos: "CONCLUIDO — Sub-ondas 1.1 + 1.2 padronizaram Caos"
+              caos_cl_002_canonico: "CONCLUIDO — METODO §4 e §9 referenciam como canônico; skill /padronizar aponta para Caos/checklists/CAOS-CL-002.md (rename físico pendente do passo 2 deste ciclo Hermes)"
+              skills_metodo_padronizar: "CONCLUIDO — SKILL.md em .claude/skills/metodo/ e /padronizar/"
+              comando_dike: "PARCIAL — Dike squad-solo esqueleto criado; nascimento como agent funcional via Contrato próprio pendente"
+            handoff_para_onda_2:
+              recomendacao: "Hermes (Grupo A) — Camada 2 do sistema, 15/22 wrappers da 1.3, tem AGENTS.md próprio (fronteira externa-Kolden), destrava KLD-PRED-2026-001"
+              alternativa: "Prometeu (Grupo A)"
+              onde_registra: "C:\\Kolden\\Hermes\\registros\\metodo-onda-2\\ (5 artefatos padronizados)"
+              sessao: "dedicada em C:\\Kolden\\Hermes\\ (G7 — nunca duas Ondas na mesma sub-sessão)"
+            escopo_futuro_declarado:
+              nascimento_dike: "Contrato próprio m-2026MMDD-nascimento-dike em sessão dedicada do Caos"
+              emendas_liceu: "ida-e-volta com Liceu-chief em sessão dedicada — Onda 6 do Método"
+              fase_3_residual: "implementação real de MCP + dashboard populado + integração Hermes runtime — Contrato próprio após 26 Ondas (m-2026MMDD-implementacao-mcp-e-dashboard)"
+        entregaveis_esperados:
+          - "Sub-onda 1.1: redesenho Caos/CLAUDE.md + constituicao.md + Ritual embutindo 8 critérios"
+          - "Sub-onda 1.2: redesenho Caos/nucleo/ARQUITETURA.md + 12 Caos/modelos/*.md com campos canônicos"
+          - "Sub-onda 1.3: MCP Camada 1 — inventário + mapa de dependências + plano dupla-vida em Caos/registros/metodo-onda-1/1.3-mcp/"
+          - "Sub-onda 1.4: dashboard schema + Predictions Scorecard template + primeiras predições Kolden 2026-2027 em Caos/registros/metodo-onda-1/1.4-safety/"
+          - "Sub-onda 1.5: costura + smoke test agent SaaS enterprise em Caos/registros/metodo-onda-1/1.5-smoke/"
+          - "Sub-onda 1.6: C:\\Kolden\\METODO-KOLDEN.md v1.0 + skills /metodo e /padronizar + comando @dike + Dike/agents/dike-chief.md (se aprovado)"
+      resultado_ondas_2_a_26:
+        em: "2026-07-09"
+        status: "onda-3-concluida-aguardando-onda-4-olimpo"
+        onda_2:
+          em: "2026-07-06"
+          concluida_em: "2026-07-07T00:00:00-03:00"
+          status: "concluida"
+          grupo: "A"
+          squad_alvo: "Hermes"
+          executor: "hermes-chief (sessão dedicada C:\\Kolden\\Hermes\\) — 0/3 fan-out por interdependência cross-artefato (regra 7x confirmada)"
+          artefatos_produzidos:
+            - "Hermes/registros/metodo-onda-2/matriz-de-conformidade.md (~285 linhas — matriz 12 princípios × 8 critérios × 14 modelos × 5 camadas × convenção @/, evidência textual verbatim por célula)"
+            - "Hermes/registros/metodo-onda-2/achados.jsonl (24 achados JSONL, severidade P0-P3+INFO, rastro-gates + procedência por achado)"
+            - "Hermes/registros/metodo-onda-2/diff-cirurgico.md (~1200 linhas — 15 mudanças: 10 CREATEs + 3 UPDATEs + 1 MOVE + 1 TRIM)"
+            - "Hermes/registros/metodo-onda-2/verificacao-dike.md (baseline pelo executor sob 3 salvaguardas)"
+            - "Hermes/registros/metodo-onda-2/verificacao-dike-delta.md (Dike delta INDEPENDENTE por subagente Explore isolado — 8/8 VERDE confirmado)"
+            - "Hermes/registros/metodo-onda-2/sumario-executivo.md (sumário ≤10min + gate humano + bloco YAML)"
+          entregaveis_aplicados:
+            - "Hermes/CLAUDE.md v1.0 (identidade canônica Kolden — Camada 2 + fronteira vendor Nous declarada)"
+            - "Hermes/prd-de-ia.md (5 campos canônicos Art. X: aspiration_criteria + ASL + uncertainty + constitution + MCP)"
+            - "Hermes/constitution.md (10 princípios veto-operacionais Camada 2)"
+            - "Hermes/squad.yaml (tier_1.agents: [] por design — Camada 2 coordena 23 squads, não especialistas)"
+            - "Hermes/MEMORY.md (squad-level — padrões estruturais desta Onda 2 + futuras; distinto de agent-memory/hermes.md)"
+            - "Hermes/ferramentas.md (categorização MCP-nativo × runtime bidirecional × adapter dupla-vida por wrapper)"
+            - "Hermes/roteiro-de-teste.md (OS-1, AB-3, UN-2, GR-1, PR-1 + smoke específicos Camada 2)"
+            - "Hermes/.claude/settings.json (deny cirúrgico vendor + ask -Approved dispatcher + reflexos)"
+            - "Hermes/.claude/reflexos/interrupt-before-mutation.sh (G4 ASL-3 obrigatório)"
+            - "Hermes/.claude/agents/hermes-chief.md (agent-def canônico)"
+          entregaveis_atualizados:
+            - "Hermes/AGENTS.md interno vendor Nous — APPEND cirúrgico de parágrafo no topo apontando para CLAUDE.md Kolden como identidade canônica (Q3.A)"
+            - "Hermes/scripts/hermes-chief.SOUL.md — atualização com procedência Onda 2"
+            - "Hermes/squads-catalog.yaml — nota de versão pós-padronização"
+            - "C:\\Kolden\\AGENTS.md (raiz) — nota canônica de Hermes padronizado + versão Método + data (linha 74 + seção 406)"
+          decisoes_gate_humano:
+            - decisao: "Q1 = Aprovar diff em bloco (recomendação técnica acatada)"
+              por: "Ronan"
+            - decisao: "Q2 = Mover skill roteamento-de-squad para .claude/skills/"
+              por: "Ronan"
+            - decisao: "Q3 = APPEND parágrafo no topo do AGENTS.md vendor + Passo 8 aplicar nota canônica em AGENTS.md raiz Kolden"
+              por: "Ronan"
+            - decisao: "Q4 = Schema resultado_ondas_2_a_26.onda_N como canônico para Ondas 2-26"
+              por: "Ronan"
+          score_canonico:
+            baseline_G1_G8: "1/8 hard PASS + 2 PARCIAL (G4, G7) + 1 N/A (G8)"
+            pos_diff: "8/8 VERDE"
+            delta_absoluto: "+7 pontos (2º maior delta do Método após Salgueiro +8)"
+          verificacao_dike_delta:
+            executor: "subagente Explore isolado (independência estrutural — Dike agent-funcional ainda não nasce)"
+            resultado: "8/8 gates VERDE"
+            salvaguardas_declaradas:
+              - "ordem serial pós-aplicação"
+              - "evidência textual verbatim por checkbox"
+              - "divergências declaradas honestamente"
+          divergencias_declaradas_confirmadas:
+            - "G5 interpretabilidade continua divergência herdada do framework Liceu (emenda pendente Onda 6 do METODO)"
+            - "Categoria runtime bidirecional (Art. IV) continua divergência pendente Onda 6 — 15 wrappers Hermes ficam legais até ratificação"
+            - "Fronteira vendor Nous é caso NOVO — candidato emenda METODO v1.1 §5 ou §8 na próxima revisão"
+          padroes_novos_a_registrar:
+            - "Squad vendorizado (fork de repositório externo) padroniza-se por INVÓLUCRO, não por MUTAÇÃO DE CÓDIGO — vendor preservado (~150 arquivos), camada Kolden envelopa"
+            - "Camada 2 do sistema tem tier_1.agents: [] por design — coordena 23 squads via squads-catalog.yaml, não especialistas internos. Distinção canônica de Camada 3"
+            - ".claude/settings.json com deny cirúrgico em vendor + ask em -Approved dispatcher cobre G4 (ASL-3) + Art. IX (fronteira vendor)"
+            - "AGENTS.md vendor + CLAUDE.md Kolden coexistem se fronteira for declarada por APPEND cirúrgico no topo do vendor apontando para CLAUDE.md como identidade canônica"
+            - "Dike delta INDEPENDENTE via subagente Explore isolado + 3 salvaguardas é padrão aceitável (não sustentável) enquanto Dike agent-funcional não nasce. Ondas 3-26 seguem esse arranjo"
+          fan_out_confirmado_7x:
+            - "Sub-ondas 1.1/1.2/1.4/1.5/1.6 + Contrato-mãe m-20260706 + Onda 2 Hermes = 7 aplicações com 0/3 por interdependência cross-artefato; Sub-onda 1.3 = 3/3 caso oposto (alvos independentes)"
+          verificacao_auto:
+            - "6 artefatos padronizados em Hermes/registros/metodo-onda-2/"
+            - "10 arquivos-âncora criados + 4 atualizações + 1 MOVE (skill roteamento-de-squad)"
+            - "Vendor Nous intocado (~150 arquivos preservados: agent/*.py, hermes_cli/, providers/, plugins/, Dockerfile, pyproject.toml, flake.nix, README*.md, LICENSE, 19 skills EN)"
+            - "Working tree fora de Hermes/ + AGENTS.md raiz preservado (regra G1 respeitada com exceção autorizada)"
+            - "Sem commit (G2)"
+            - "Procedência linha-a-linha ancorada em Liceu/frameworks/arquitetura-de-agents-kolden/procedencia.md"
+            - "0 consultas web (procedência consolidada Fase 1)"
+            - "Ritual de encerramento em Hermes/agent-memory/hermes.md executado (backup -9 + trim 150 linhas + APPEND bloco padrões Onda 2)"
+          handoff_para_onda_3:
+            recomendacao: "Prometeu (Grupo A) — outro meta-squad vendorizado; framework AIOX; complementa Grupo A. Reutiliza padrão 'squad vendorizado' calibrado nesta Onda 2"
+            alternativa: "Aletheia (Grupo C) se Prometeu tiver escopo residual grande — foi um dos squads mais bem estruturados na vistoria v2 de 2026-06-28"
+            onde_registra: "C:\\Kolden\\Prometeu\\registros\\metodo-onda-3\\"
+            sessao: "dedicada em C:\\Kolden\\Prometeu\\ (G7 — nunca duas Ondas na mesma sub-sessão)"
+        onda_3:
+          em: "2026-07-07"
+          status: "sub-onda-3.2-concluida-aguardando-sub-onda-3.3"
+          grupo: "A"
+          squad_alvo: "Prometeu"
+          arquitetura_de_execucao:
+            escolhida: "sub-ondas-3.1-3.2-3.3"
+            justificativa: "12 aiox-agents internos + 57 skills = escala 5x maior que Hermes; sub-ondas por domínio (identidade+fronteira / agents+memory / skills+costura); confirmado no gate humano Passo 2"
+          sub_ondas:
+            "3.1":
+              em: "2026-07-07"
+              concluida_em: "2026-07-07T12:00:00-03:00"
+              status: "concluida"
+              dominio: "identidade + fronteira vendor SynkraAI/aiox-core"
+              executor: "prometeu-chief (sessão dedicada C:\\Kolden\\Prometeu\\) — 0/3 fan-out por interdependência cross-artefato (regra 8x confirmada — Sub-onda 3.1 é 8ª aplicação)"
+              artefatos_produzidos:
+                - "Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/matriz-de-conformidade.md (~275 linhas — matriz 12 princípios × 8 critérios × 14 modelos × 5 camadas × convenção @/, evidência textual verbatim por célula + seção vendor SynkraAI × Kolden)"
+                - "Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/achados.jsonl (18 achados: 5 P0 + 6 P1 + 2 P2 + 5 INFO, rastro-gates + procedência por achado)"
+                - "Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/diff-cirurgico.md (~1000 linhas — 13 mudanças: 10 CREATEs + 3 UPDATEs em diff-format)"
+                - "Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/verificacao-dike.md (baseline pelo prometeu-chief sob 3 salvaguardas — delta INDEPENDENTE deferido para Sub-onda 3.3)"
+                - "Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/sumario-executivo.md (sumário ≤10min + 4 gates humanos + bloco YAML)"
+              entregaveis_aplicados:
+                - "Prometeu/CLAUDE.md v1.0 (identidade canônica Kolden — Camada 5 Engenharia + fronteira vendor SynkraAI declarada)"
+                - "Prometeu/prd-de-ia.md (5 campos canônicos Art. X: aspiration + ASL + uncertainty + constitution + MCP)"
+                - "Prometeu/squad.yaml (com fronteira_vendor_synkraai + external_handoffs Camada 5)"
+                - "Prometeu/constitution.md (15 veto-operacionais Kolden agent-safety — co-existência com AIOX Constitution v1.0.0 via regra de precedência Kolden Art. X prevalece)"
+                - "Prometeu/MEMORY.md (squad-level — padrões estruturais Sub-ondas 3.1-3.3)"
+                - "Prometeu/ferramentas.md (categorização MCP-nativo × adapter dupla-vida × 6 skills públicas cross-squad)"
+                - "Prometeu/roteiro-de-teste.md (OS-1, AB-3, UN-2, GR-1, PR-1 + smoke Camada 5 engenharia)"
+                - "Prometeu/.claude/agents/prometeu-chief.md (agent-def canônico Kolden externo)"
+                - "Prometeu/.claude/reflexos/interrupt-before-mutation.sh (G4 ASL-3 obrigatório)"
+                - "Prometeu/agent-memory/prometeu.md (agent-chief memory — padrões técnicos de execução)"
+              entregaveis_atualizados:
+                - "Prometeu/AGENTS.md vendor SynkraAI PT-BR — APPEND cirúrgico de parágrafo no topo apontando para CLAUDE.md Kolden como identidade canônica (Q3.A)"
+                - "Prometeu/.claude/CLAUDE.md vendor AIOX — APPEND seção final sobre convenção @ dupla + METODO §6 como fonte canônica"
+                - "Prometeu/.claude/settings.json vendor AIOX — APPEND deny cirúrgico L1+L2 vendor AIOX (Q2.A — aprendizado transferido da Onda 2 do Hermes)"
+                - "C:\\Kolden\\AGENTS.md (raiz) — nota canônica de Prometeu Sub-onda 3.1 padronizada (Q3.A)"
+              decisoes_gate_humano:
+                - decisao: "Q1 = Aplicar diff em bloco G1→G2→G3 (recomendação técnica acatada)"
+                  por: "Ronan"
+                - decisao: "Q2 = APPEND deny cirúrgico em `.claude/settings.json` para L1+L2 vendor AIOX (aprendizado transferido Onda 2 Hermes)"
+                  por: "Ronan"
+                - decisao: "Q3 = APPEND parágrafo no topo do AGENTS.md interno Prometeu + Passo 9 aplicar nota canônica em AGENTS.md raiz Kolden"
+                  por: "Ronan"
+                - decisao: "Q4 = Emenda METODO v1.0 → v1.1 diferida para conclusão da Onda 3 completa (após Sub-ondas 3.2 + 3.3 com Dike delta 8/8)"
+                  por: "Ronan"
+              score_canonico:
+                baseline_G1_G8: "2/8 hard PASS (G1 parcial via AIOX Constitution + G8 N/A legítimo)"
+                pos_diff_sub_onda_3_1: "5/8 hard PASS + 3 WARN legítimo (G5 divergência METODO herdada, G6/G7 completude Sub-ondas 3.2/3.3)"
+                delta_absoluto_sub_onda_3_1: "+3 pontos (2/8 → 5/8)"
+                projetado_pos_onda_3_total: "8/8 VERDE (delta total +6, 2/8 → 8/8 após 3.2 + 3.3)"
+              verificacao_dike:
+                executor_baseline: "prometeu-chief sob 3 salvaguardas (papel Dike temporário — Dike agent-funcional pendente)"
+                delta_INDEPENDENTE: "deferido para Sub-onda 3.3 (costura + smoke) — divergência declarada do padrão Onda 2 Hermes que fez delta por onda"
+                salvaguardas_declaradas:
+                  - "ordem serial pós-baseline"
+                  - "evidência textual verbatim por checkbox seção A-G"
+                  - "divergências declaradas honestamente"
+              divergencias_declaradas_confirmadas:
+                - "CAOS-CL-002 cabeçalho DRAFT vs METODO canônico (rename físico pendente — herdada da Hermes-raiz 2026-07-06)"
+                - "G5 interpretabilidade continua divergência herdada framework Liceu (emenda pendente Onda 6 do METODO)"
+                - "Fronteira vendor SynkraAI × Kolden — segunda ocorrência do padrão squad vendorizado após Hermes/Nous — candidato emenda METODO v1.1 (diferido para conclusão Onda 3)"
+                - "Constituição dupla (AIOX interna engenharia + Kolden externa agent-safety) — co-existência com regra de precedência Kolden Art. X prevalece em conflito"
+                - "Convenção @ dupla (@Prometeu externo Kolden + @dev/@qa/etc interno AIOX) — camadas semanticamente distintas não-conflitantes"
+                - "Skills-como-tools cross-squad — categoria constitucional emergente não modelada no METODO v1.0 nem no Art. IV (MCP) — candidata emenda METODO v1.1 §5 ou §7"
+              padroes_novos_a_registrar:
+                - "Segunda ocorrência do padrão squad vendorizado (Hermes/Nous + Prometeu/SynkraAI) — merece elevar a padrão canônico Kolden com cláusula própria em METODO §5 ou §8 v1.1"
+                - "Framework interno cross-squad como categoria constitucional própria — Prometeu consumido por outros 25 squads Kolden via 6 skills públicas"
+                - "Constituição dupla co-existente com regra de precedência (Kolden Art. X prevalece) — padrão replicável para todo squad vendorizado com constituição própria"
+                - "Deny cirúrgico em L1+L2 do vendor como padrão invariante — aprendizado transferido da Onda 2 Hermes aplicado sistematicamente"
+                - "Convenção @ dupla como padrão para squad-que-vive-em-runtime-vendor — declaração explícita em CLAUDE.md como camadas semanticamente distintas"
+                - "Papel Dike temporário pelo executor + 3 salvaguardas mantido como padrão de transição até Dike agent-funcional nascer"
+              fan_out_confirmado_8x:
+                - "Sub-ondas 1.1/1.2/1.4/1.5/1.6 + Contrato-mãe m-20260706 + Onda 2 Hermes + Sub-onda 3.1 Prometeu = 8 aplicações com 0/3 por interdependência cross-artefato; Sub-onda 1.3 = 3/3 caso oposto"
+              verificacao_auto:
+                - "5 artefatos padronizados em Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/"
+                - "10 arquivos-âncora criados + 4 atualizações cirúrgicas (Prometeu/AGENTS.md + .claude/CLAUDE.md + .claude/settings.json + Kolden AGENTS.md raiz)"
+                - "Vendor SynkraAI/aiox-core intocado (~450 arquivos preservados: .aiox-core/core/**, .aiox-core/constitution.md, .aiox-core/development/**, bin/aiox.js, packages/, pro/, docs/, README*.md, LICENSE, CHANGELOG.md, .claude/rules/**, .claude/hooks/**, .claude/commands/**, .claude/setup/**, .claude/templates/**, .claude/skills/**, .claude/agents/aiox-*.md, .aiox-core/development/agents/<id>/)"
+                - "Working tree fora de Prometeu/ + AGENTS.md raiz preservado (regra G1 respeitada com exceção autorizada)"
+                - "Sem commit (G2)"
+                - "Procedência linha-a-linha ancorada em Liceu/frameworks/arquitetura-de-agents-kolden/procedencia.md"
+                - "0 consultas web"
+                - "Ritual de encerramento em Prometeu/agent-memory/prometeu.md CREATE + Prometeu/MEMORY.md CREATE executados"
+              handoff_para_sub_onda_3_2:
+                escopo: "12 aiox-agents internos + refactor MEMORY canônico + `.claude/agents/aiox-*.md` (10 variantes) + APPEND por-agente em agent-memory/prometeu.md. Cuidado: MEMORY canônico dos 10 agentes AIOX vive em `.aiox-core/development/agents/<id>/MEMORY.md` (regra ritual-de-encerramento — NUNCA duplicar/mover)"
+                onde_registra: "C:\\Kolden\\Prometeu\\registros\\metodo-onda-3\\3.2-agents-internos\\"
+                sessao: "dedicada em C:\\Kolden\\Prometeu\\ (G7)"
+              handoff_para_sub_onda_3_3:
+                escopo: "57 skills + 6 skills públicas com read-only + nota cross-squad no diff + costura final + smoke test + Dike delta INDEPENDENTE (deferido da Sub-onda 3.1)"
+                onde_registra: "C:\\Kolden\\Prometeu\\registros\\metodo-onda-3\\3.3-skills-e-costura\\"
+                sessao: "dedicada em C:\\Kolden\\Prometeu\\ (G7)"
+              handoff_para_onda_4:
+                recomendacao: "Olimpo (Grupo B Governance) — abre grupo B a partir do dono do Contrato de Missão + orquestrador Zeus"
+                onde_registra: "C:\\Kolden\\Olimpo\\registros\\metodo-onda-4\\"
+                sessao: "dedicada em C:\\Kolden\\Olimpo\\ (G7)"
+            "3.2":
+              em: "2026-07-07"
+              concluida_em: "2026-07-07T18:00:00-03:00"
+              status: "concluida"
+              dominio: "12 aiox-agents internos + refactor MEMORY canônico + mapeamento cross-camada AIOX × Kolden"
+              executor: "prometeu-chief (sessão dedicada C:\\Kolden\\Prometeu\\) — 0/3 fan-out por interdependência cross-arquivo (regra 9x confirmada — Sub-onda 3.2 é 9ª aplicação)"
+              artefatos_produzidos:
+                - "Prometeu/registros/metodo-onda-3/3.2-agents-internos/matriz-de-conformidade.md (~500 linhas — matriz por-agente contra Art. X (8 gates canônicos) + investigação 4 MEMORY espúrios + mapeamento cross-camada AIOX × Kolden)"
+                - "Prometeu/registros/metodo-onda-3/3.2-agents-internos/achados.jsonl (18 achados P0-P2+INFO + 1 ACHADO-TARDIO PRM-3.2-019 gitignore vendor)"
+                - "Prometeu/registros/metodo-onda-3/3.2-agents-internos/diff-cirurgico.md (~800 linhas — 19 mudanças canônicas + 1 condicional com CONTEÚDO EXATO)"
+                - "Prometeu/registros/metodo-onda-3/3.2-agents-internos/verificacao-dike.md (~250 linhas — baseline pré-aplicação sob 3 salvaguardas — veredito SOBE com RESSALVAS)"
+                - "Prometeu/registros/metodo-onda-3/3.2-agents-internos/verificacao-dike-delta.md (nota de deferimento para Sub-onda 3.3 — Dike delta INDEPENDENTE cobrindo 3.1+3.2+3.3 em 1 sessão)"
+                - "Prometeu/registros/metodo-onda-3/3.2-agents-internos/sumario-executivo.md (sumário ≤10min + 4 gates humanos respondidos + bloco YAML)"
+              entregaveis_aplicados:
+                - "10 UPDATE cirúrgicos APPEND em `.claude/agents/aiox-{dev,qa,architect,pm,po,sm,devops,analyst,data-engineer,ux}.md` — bloco `<!-- kolden-art-x -->` inserido entre persona AIOX vendor e ritual-de-encerramento, sem tocar persona"
+                - "1 CREATE `.claude/agents/aiox-master.md` (Orion — orquestrador AIOX interno, ASL-3) — 11ª variante Claude Code"
+                - "4 MOVE dos `.claude/agent-memory/aiox-*/MEMORY.md` espúrios → `.claude/agent-memory/_archive-pre-kolden/` + CREATE README declarativo"
+                - "UPDATE `Prometeu/agent-memory/prometeu.md` — seções por-agente (padrões de execução como Camada 5 Kolden) + padrões novos Sub-onda 3.2"
+                - "UPDATE `Prometeu/MEMORY.md` (squad-level — APPEND bloco Sub-onda 3.2)"
+                - "UPDATE `Prometeu/squad.yaml` — bloco `mapeamento_cross_camada` (SSoT YAML da fronteira AIOX × Kolden — Q3.A)"
+                - "UPDATE `Prometeu/.claude/agents/prometeu-chief.md` — correção personas Bob/Atlas (fonte-de-verdade canônico AIOX)"
+                - "UPDATE `C:\\Kolden\\AGENTS.md` raiz — nota canônica de Prometeu Sub-onda 3.2 padronizada (Q3.A — contagem 12 aiox-agents confirmada via Glob)"
+              decisoes_gate_humano:
+                - decisao: "Q1 = A — Aplicar diff em bloco por domínio (aiox-*.md → aiox-master → MEMORY refactor → Kolden squad)"
+                  por: "Ronan"
+                - decisao: "Q2 = B — ARQUIVAR os 4 MEMORY espúrios em `_archive-pre-kolden/` (padrão herdado do Hermes/agent-memory/backups Onda 2), preservando canônico AIOX intocado"
+                  por: "Ronan"
+                - decisao: "Q3 = A — Bloco mapeamento_cross_camada em squad.yaml como SSoT YAML + Passo 8 AGENTS.md raiz nesta 3.2"
+                  por: "Ronan"
+                - decisao: "Q4 = A — Dike delta INDEPENDENTE deferido Sub-onda 3.3 (1 sessão subagente cobrindo 3.1+3.2+3.3)"
+                  por: "Ronan"
+              score_canonico:
+                baseline_G1_G8: "5/8 hard PASS pós-3.1 (herdado)"
+                pos_diff_sub_onda_3_2: "6/8 hard PASS + 2 WARN legítimo (G5 divergência framework Liceu + G6 completude Sub-onda 3.3)"
+                delta_absoluto_sub_onda_3_2: "+1 ponto (5/8 → 6/8)"
+                projetado_pos_onda_3_total: "8/8 VERDE (delta total +6, 2/8 → 8/8 após Sub-onda 3.3)"
+              verificacao_dike:
+                executor_baseline: "prometeu-chief sob 3 salvaguardas (ordem serial + evidência verbatim + divergências declaradas)"
+                delta_INDEPENDENTE: "deferido para Sub-onda 3.3 — 1 sessão subagente Explore isolado cobrindo 3.1+3.2+3.3 de uma vez (Q4.A)"
+                veredito_baseline: "SOBE COM RESSALVAS — divergências 3.1 herdadas + Dike delta cobre no consolidado 3.3"
+              divergencias_declaradas_confirmadas:
+                - "G5 interpretabilidade continua divergência herdada framework Liceu (emenda pendente Onda 6)"
+                - "G6 orthogonality WARN legítimo — teste AB-3 real na Sub-onda 3.3"
+                - "G7 grounding PARCIAL implícito — Sub-onda 3.3 elevará via 57 skills com grounding_required real"
+                - "ReAct implícito nos aiox-agents (declaração explícita loop_pattern: ReAct fora do escopo Kolden — Contrato próprio Fase 3 residual)"
+                - "squad-creator (Craft) fora de escopo direto Sub-onda 3.2 — Prometeu não cria squad; factory canônica = Caos"
+                - "aiox-master (Orion) SEM variante Claude Code originalmente — corrigido nesta 3.2 via CREATE .claude/agents/aiox-master.md"
+                - "4 MEMORY espúrios em path não-canônico — ARQUIVAR (Q2.B) — padrão herdado Hermes/agent-memory/backups"
+                - "Personas AIOX vendor canônico prevalece sobre CLAUDE.md AIOX desatualizado (Bob no pm, Atlas no analyst) — correção interna prometeu-chief.md"
+                - "Rule `.claude/rules/agent-memory-imports.md` só importa 6 MEMORY (dev/qa/architect/devops/pm/po) — 4 sub-inclusão (analyst/data-engineer/sm/ux). Registrado como INFO — fora do escopo Sub-onda 3.2 (vendor AIOX)"
+                - "ACHADO-TARDIO PRM-3.2-019: vendor SynkraAI .gitignore bloqueia visibilidade git das 12/19 intervenções cirúrgicas nesta 3.2 (10 aiox-*.md UPDATE + 1 aiox-master.md CREATE + 4 MOVE _archive). Aplicações em disco confirmadas via Read; invisíveis ao git status. Decisão arquitetural para Sub-onda 3.3: manter bloqueado OU patch cirúrgico ao .gitignore (risco: merge conflict com upstream SynkraAI)"
+              padroes_novos_a_registrar:
+                - "Distinção canônica 3-way MEMORY (padrão Kolden universal para squad vendorizado): squad-level `<Squad>/MEMORY.md` × agent-chief `<Squad>/agent-memory/<chief-id>.md` × MEMORY canônico AIOX `.aiox-core/development/agents/<id>/MEMORY.md`"
+                - "Refactor de MEMORY espúrio pelo ARQUIVAMENTO (2ª ocorrência após Hermes/agent-memory/backups Onda 2) — promove a padrão canônico Kolden para lidar com duplicações forenses"
+                - "Regra de precedência: canônico AIOX vendor > CLAUDE.md AIOX arqueológico — fonte-de-verdade em conflito interno vendor"
+                - "ASL-3 crítico em 4 agentes (dev + devops + data-engineer + aiox-master) — mapeamento explícito por-agente com reflexo interrupt-before-mutation.sh cobrindo cada caso"
+                - "Convenção @ dupla reforçada via bloco `mapeamento_cross_camada:` em squad.yaml (SSoT YAML como padrão Kolden)"
+                - "12 aiox-agents ≠ 12 variantes Claude Code — squad-creator FORA DE ESCOPO Kolden por decisão explícita (factory = Caos)"
+                - "APPEND cirúrgico entre persona AIOX e bloco ritual-de-encerramento — posição canônica para intervenção Kolden Art. X sem tocar vendor"
+                - "`git check-ignore -v` no Passo 2 do diagnóstico obrigatório para squad vendorizado — teria antecipado achado tardio PRM-3.2-019 como Q5 do gate humano"
+                - "Smoke test `git status` após aplicação do diff — captura bloqueio invisível em ≤1min (padrão de higiene canônico pós-Passo 5)"
+                - "Template canônico com placeholders → paralelização em lotes de 5 Edits — validado nos 10 aiox-*.md; escalável para futuros APPENDs por-agente"
+                - '"tipo":"ACHADO-TARDIO" como categoria válida em achados.jsonl — reconhece que descobertas pós-gate humano existem e precisam entrar no rastro forense'
+              fan_out_confirmado_9x:
+                - "Sub-ondas 1.1/1.2/1.4/1.5/1.6 + Contrato-mãe m-20260706 + Onda 2 Hermes + Sub-ondas 3.1/3.2 Prometeu = 9 aplicações com 0/3 por interdependência cross-artefato; Sub-onda 1.3 = 3/3 caso oposto"
+              verificacao_auto:
+                - "6 artefatos padronizados em Prometeu/registros/metodo-onda-3/3.2-agents-internos/"
+                - "19 mudanças canônicas + 1 condicional aplicadas (10 UPDATE aiox-*.md + 1 CREATE aiox-master.md + 4 MOVE MEMORY + 1 CREATE README + 3 UPDATEs Kolden squad + 1 UPDATE AGENTS.md raiz)"
+                - "Vendor SynkraAI PRESERVADO INTOCADO (~450 arquivos + 12 canônicos AIOX + 10 MEMORY canônicos AIOX + 12 personas AIOX + Constitution AIOX v1.0.0 verificado via git status — nenhum arquivo `.aiox-core/**` modificado)"
+                - "Working tree fora de Prometeu/ + AGENTS.md raiz preservado (regra G1 respeitada com exceção autorizada)"
+                - "Sem commit (G2)"
+                - "Procedência linha-a-linha ancorada em Liceu/frameworks/arquitetura-de-agents-kolden/procedencia.md"
+                - "0 consultas web"
+                - "Ritual de encerramento em Prometeu/agent-memory/prometeu.md APPEND (151 linhas — backup `-2.md` preventivo + `-pre-3.2-ritual.md`; trim §4.4 deferido honestamente porque todos os 8 blocos ativos são 2026-07-07 unânime)"
+                - "Log de aprendizado em Prometeu/registros/aprendizado.log (2ª entrada do dia — 6 lições)"
+              gitignore_vendor_bloqueia_visibilidade:
+                impacto: "12/19 arquivos aplicados invisíveis ao git status (10 aiox-*.md UPDATE + 1 aiox-master.md CREATE + 4 MOVE _archive-pre-kolden)"
+                confirmacao_disco: "aplicações em disco confirmadas via Read/Glob"
+                decisao_pendente: "Sub-onda 3.3 — manter bloqueado (padrão Sub-onda 3.1) OU patch cirúrgico ao vendor .gitignore com risco de merge conflict upstream"
+              handoff_para_sub_onda_3_3:
+                escopo: "57 skills padronizadas + 6 skills públicas com read-only + nota cross-squad no diff + costura final da Onda 3 + smoke test + Dike delta INDEPENDENTE por-subagente Explore isolado cobrindo 3.1+3.2+3.3 de uma vez + decisão sobre .gitignore vendor (PRM-3.2-019)"
+                onde_registra: "C:\\Kolden\\Prometeu\\registros\\metodo-onda-3\\3.3-skills-e-costura\\"
+                sessao: "dedicada em C:\\Kolden\\Prometeu\\ (G7)"
+              handoff_para_onda_4:
+                recomendacao: "Olimpo (Grupo B Governance) — abre grupo B a partir do dono do Contrato de Missão + orquestrador Zeus"
+                onde_registra: "C:\\Kolden\\Olimpo\\registros\\metodo-onda-4\\"
+                sessao: "dedicada em C:\\Kolden\\Olimpo\\ (G7)"
+        onda_4:
+          em: "2026-07-09"
+          status: "aberta-aguardando-disparo-sessao-dedicada"
+          grupo: "B"
+          squad_alvo: "Olimpo"
+          camada_metodo: "3-4 (Camada 3 = Zeus decompõe + roteia; Camada 4 = 7 executivos traduzem para linguagem técnica da disciplina)"
+          contexto_estrutural: |
+            Olimpo é o DONO do Contrato de Missão (todos os contratos vivem em Olimpo/contratos/missoes/,
+            inclusive este). Padronizá-lo é padronizar a espinha da Camada 3-4 do sistema. Toda missão
+            descendente passa por Zeus (decompõe → routing_triggers → 7 deuses); toda subida do
+            operacional volta pelos executivos até Zeus → Hermes → Ronan.
+          vendor_snapshot:
+            origem: "ohmyjahh/xquads-squads"
+            pasta_original: "c-level-squad"
+            commit: "dcb32f35fbeab23913233c8aafe5ee5e7fd2f149"
+            status_arquivo: "importado-cru (declarado em Olimpo/_origem.md)"
+            precedente_canonico: "3ª ocorrência do padrão squad vendorizado (Hermes/Nous Onda 2 + Prometeu/SynkraAI Onda 3 + Olimpo/xquads-squads Onda 4) — E1 do METODO v1.1 será reconfirmada empiricamente"
+          inventario_pre_onda:
+            agents_mitologicos_em_agents: 8
+            agents_mitologicos_lista: ["zeus.md", "poseidon.md", "apolo.md", "hefesto.md", "hades.md", "atena.md", "plutos.md", "afrodite.md"]
+            skills_publicas_em_dot_claude_skills: 14
+            skills_lista: ["alocacao-de-capital", "analise-de-pricing-wtp", "chief-of-staff-filtragem-e-escalonamento", "comunicacao-executiva", "estrategia-de-entrada-e-posicionamento", "estrategia-de-supply-chain", "integracao-pos-fusao-pmi", "investor-relations", "operacoes-lean-six-sigma", "painel-executivo-autoplan", "portfolio-estrategico", "programa-esg-corporativo", "reframe-produto-10-estrelas", "rubrica-dimensional-0-10", "sumario-executivo-scqa"]
+            existe: ["squad.yaml (59 linhas, MIT, aios type:squad, 6 vetos declarados)", "MEMORY.md (31 linhas — minimalista)", "README.md (59 linhas)", "_origem.md (vendor snapshot)", "agents/ (8 executivos)", ".claude/skills/ (14 públicas)", "contratos/ (dono do Contrato de Missão)", "agent-memory/", "checklists/", "config/", "data/", "prd/", "tasks/", "workflows/"]
+            ausencias_canonicas_kolden:
+              - "CLAUDE.md raiz (identidade canônica Kolden Camada 3-4)"
+              - "prd-de-ia.md (5 campos canônicos Art. X — aspiration + ASL + uncertainty + constitution + MCP)"
+              - "constitution.md (15 veto-operacionais Kolden agent-safety — co-existência com veto operacional já em squad.yaml)"
+              - "ferramentas.md (categorização MCP-nativo × adapter dupla-vida)"
+              - "roteiro-de-teste.md (OS-1, AB-3, UN-2, GR-1, PR-1 + smoke específicos Camada 3-4)"
+              - ".claude/agents/olimpo-chief.md (agent-def canônico Kolden externo)"
+              - ".claude/reflexos/interrupt-before-mutation.sh (G4 ASL-3+ — Olimpo escala board/investidor, ASL provável 3)"
+              - ".claude/settings.json (deny cirúrgico vendor xquads + reflexos)"
+              - "agent-memory/olimpo.md (agent-chief memory — padrões de execução)"
+          arquitetura_de_execucao_recomendada:
+            escolhida_preliminar: "1 onda direta (não sub-ondas)"
+            justificativa: |
+              Escopo comparável ao Hermes Onda 2 (que fez 1 onda direta com 8/8 VERDE, delta +7).
+              8 agents + 14 skills é ~1/4 do escopo Prometeu (12 aiox-agents + 57 skills que exigiu
+              3 sub-ondas). Vantagem adicional: 8 agents Olimpo são MITOLÓGICOS puros (nascidos com
+              nome grego), não vendor-genéricos como aiox-* — não há necessidade de refactor MEMORY
+              espúrio como na Sub-onda 3.2.
+            alternativa: "2 sub-ondas (4.1 identidade+fronteira / 4.2 agents+skills+costura) se o Ronan preferir por precaução ou se o diagnóstico Passo 2 revelar escopo maior que o inventário sugere"
+            confirmacao_no_gate_humano: "Passo 2 do rito (diagnóstico READ-ONLY) valida esta recomendação ou propõe sub-ondas"
+          escopo_declarado:
+            passo_1_norma: "Ler METODO-KOLDEN.md v1.1 (~500 linhas) como norma; ler CAOS-CL-002 canônico (v1.0 promovido 2026-07-09) como gate de verificação"
+            passo_2_diagnostico_read_only: |
+              Fan-out por interdependência (regra 9x confirmada, teto=3): se 8 agents + 14 skills
+              forem alvos independentes com foco distinto → 3/3 Explores (identidade+fronteira +
+              agents + skills). Se coerência estilística cross-artefato dominar → 0/3 (padrão
+              10x). Recomendação a priori: 0/3 (agents mitológicos + skills executivas C-level
+              compartilham vocabulário coeso — ver casos Hermes 0/3, Prometeu 3.1 0/3).
+            passo_3_5_artefatos: "matriz-de-conformidade + achados.jsonl + diff-cirurgico + verificacao-dike + sumario-executivo (padrão 6 artefatos herdado de Hermes/Prometeu — 7 se costura de sub-onda final)"
+            passo_4_gate_humano: "AskUserQuestion com 4-6 perguntas (Q1 diff em bloco vs por lote, Q2 vendor deny cirúrgico, Q3 append AGENTS.md vendor, Q4 handoff Onda 5)"
+            passo_5_aplicar_diff: "Ordem G1→G2→G3→G4; INVÓLUCRO sobre MUTAÇÃO DE CÓDIGO (4ª aplicação da regra invariante)"
+            passo_6_dike: "Dike delta INDEPENDENTE por subagente Explore isolado com incluir 'git log --oneline -5' no prompt (aprendizado Sub-onda 3.3); fallback papel Dike temporário pelo olimpo-chief sob 3 salvaguardas (10ª ocorrência do padrão transitório até Dike agent-funcional nascer Onda 5)"
+            passo_7_ritual: "Backup preventivo agent-memory/olimpo.md + APPEND MEMORY.md squad-level"
+            passo_8_agents_md_raiz: "UPDATE C:\\Kolden\\AGENTS.md raiz com nota canônica Onda 4 CONCLUÍDA"
+            passo_9_metodo_v1_2: "Se aprendizado for canônico (candidato: distinção 3-way MEMORY E4 aguarda 2ª confirmação Olimpo antes de canonizar em v1.2 §5)"
+          gates_esperados:
+            baseline_G1_G8_pre_onda: "Estimativa preliminar: 2/8 (G8 N/A legítimo por não ter predições Kolden 2027; G1 parcial via veto operacional em squad.yaml). Diagnóstico Passo 2 confirma."
+            projetado_pos_onda: "8/8 VERDE (delta absoluto +6, comparável a Prometeu; superior ao Hermes por partir de baseline menor)"
+          candidatos_emenda_metodo_v1_2:
+            - "E4 distinção 3-way MEMORY — 2ª confirmação empírica esperada nesta Onda (canoniza em v1.2 §5)"
+            - "Camada 3-4 como categoria constitucional própria (Zeus decompõe + 7 executivos traduzem) — potencial emenda §3"
+            - "Vetos operacionais em squad.yaml (Olimpo tem 6) × veto em constitution.md (Kolden Art. X) — regra de precedência"
+          divergencias_esperadas_a_declarar:
+            - "G5 interpretabilidade continua divergência METODO herdada framework Liceu (emenda pendente Onda 6)"
+            - "Categoria runtime bidirecional Art. IV continua divergência pendente Onda 6"
+            - "CAOS-CL-002 RESOLVIDO 2026-07-09 (rename físico canonizado) — divergência 3x herdada eliminada"
+            - "PRM-3.2-019 gitignore vendor SynkraAI RESOLVIDO Sub-onda 3.3 (Q2.2 aplicada 2026-07-09)"
+          handoff_para_sessao_dedicada:
+            comando_de_disparo: "Sessão Claude Code nova em C:\\Kolden\\Olimpo\\ (G7 do METODO §8)"
+            onde_registra: "C:\\Kolden\\Olimpo\\registros\\metodo-onda-4\\"
+            prompt_de_abertura: "Ver artefato-em-disco em Olimpo/registros/metodo-onda-4/PROMPT-DE-ABERTURA.md (produzido nesta sessão raiz pela skill briefing-padrao)"
+            executor_esperado: "olimpo-chief (a criar como .claude/agents/olimpo-chief.md no Passo 5)"
+            proxima_onda_apos: "Onda 5 = Dike (Grupo B) — nascimento como agent-funcional via Contrato próprio (m-2026MMDD-nascimento-dike) — fecha o padrão Dike temporário confirmado 9x"
+      resultado: |
+        Onda 1 CONCLUÍDA em 2026-07-06 (6 sub-ondas: 1.1-1.6).
+
+        Métricas:
+        - METODO-KOLDEN.md v1.0 publicado em C:\Kolden\METODO-KOLDEN.md (~500 linhas, 12 seções)
+        - Skills /metodo e /padronizar disponíveis em C:\Kolden\.claude\skills\
+        - Caos padronizado com constituicao.md v2.5.0 + CLAUDE.md v3.4.0 + 12 modelos com 5 campos canônicos
+        - Smoke test SaaS enterprise (Salgueiro): 8/8 gates canônicos VERDE
+        - Baseline arquiteto.md 0/8 vs Salgueiro 8/8 → delta +100 pontos justifica escala 2-26
+        - Dike aprovado como squad-solo em C:\Kolden\Dike\ (esqueleto criado; nascimento como agent
+          funcional pendente via Contrato próprio no Ritual do Caos)
+        - 2 emendas ao framework do Liceu (C5 interpretabilidade + Art. IV runtime bidirecional)
+          adiadas para Onda 6 do Método (ida-e-volta com Liceu-chief)
+
+        Onda 2 = Hermes (Grupo A) aguarda disparo em sessão dedicada em C:\Kolden\Hermes\.
+      riscos_levantados:
+        - "Escopo enorme (26 ondas) pode levar semanas — mitigação: gate humano por onda + possibilidade de paralelizar 2 squads em sessões distintas se dirs não colidem"
+        - "Método pode ficar rígido demais e não acomodar variação legítima (Prometeu 56 skills não é doente, é abundante) — mitigação: anatomia canônica define obrigatórios + opcionais + condicionais"
+        - "Dike ainda não existe como agent funcional (pasta minimalista) — mitigação: nasce durante Sub-onda 1.6 ou papel temporariamente atribuído ao Hermes"
+        - "Convenção `@` vs `/` centralizada pode conflitar com convenções vivas em 3 arquivos — mitigação: METODO cita os 3 como fontes históricas e declara-se successor; os 3 apontam para METODO em nota"
+        - "Onda 1 é gigante (6 sub-ondas) vs outras que são 1 onda direta — mitigação: Onda 1 escreve o Método; as outras 25 apenas aplicam. Assimetria justificada"
+      propostas:
+        - "Ao fim da Sub-onda 1.6, disparar smoke test independente por Dike em 1 squad amostral do Grupo E (Aglaia) para validar o Método antes de escalar"
+        - "Considerar Contrato Fase 3 (`m-2026MMDD-implementacao-mcp-e-dashboard`) para implementação REAL de MCP + dashboard populado após as 26 ondas"
+        - "Se Sub-onda 1.6 identificar padrão que não estava no framework do Liceu, propor atualização do framework via ida-e-volta com Liceu-chief (não modificar em silêncio)"
+      assinatura: { por: "caos:caos-chief", em: "PENDENTE" }
+
+  # ── SUBIDA — DIKE (verificação) ─────────────────────────────────────────────
+  dike:
+    confere_hash: true
+    reconciliacao: "PENDENTE - preencher no fim da missão (após Onda 26 + costura final)"
+    degrau_da_quebra: null
+    justificativa: |
+      A ser preenchida ao fim da missão.
+
+      Critérios que Dike vai verificar (por onda + globalmente):
+      1. Cada onda produziu 5 artefatos padrão + ritual em MEMORY.md
+      2. Cada diff aplicado tem procedência linhagem/mente/obra/ano batendo com
+         Liceu/frameworks/arquitetura-de-agents-kolden/procedencia.md
+      3. Cada mudança respeitou anatomia canônica do Método (obrigatórios cumpridos,
+         opcionais coerentes)
+      4. Nenhum arquivo tocado fora do squad-alvo (exceto AGENTS.md e METODO nos
+         momentos autorizados)
+      5. Coeficiente de variação estrutural cai de 120% para <20% ao fim das 26 ondas
+      6. Smoke tests em amostra de 3 squads (Grupo B + E + F) confirmam aplicabilidade
+         cross-domínio do Método
+      7. AGENTS.md atualizado por onda; METODO-KOLDEN.md v1.0 estável ao fim da
+         Onda 1, versionado se necessário nas Ondas 2-26
+      8. Sub-contrato m-20260705 fica marcado como "absorvido pela Onda 1 de m-20260706"
+         no seu próprio status_final
+    veredito: "PENDENTE"
+    assinatura: { por: "dike", em: "PENDENTE" }
+
+  # ── TRANSVERSAL ─────────────────────────────────────────────────────────────
+  orcamento:
+    teto_rodadas: null  # sem teto; 26 ondas + sub-ondas em sessões próprias
+    teto_tempo: "26+ sessões dedicadas (Onda 1 = 6 sub-sessões; Ondas 2-26 = 1 sessão cada)"
+    rodadas_gastas: 9  # Onda 1 (6 sub-ondas) + Onda 2 (Hermes) + Sub-ondas 3.1+3.2 (Prometeu identidade+aiox-agents) concluídas
+
+  status_final: "sub-onda-3.2-de-onda-3-concluida-aguardando-sub-onda-3.3"
+
+  contratos_relacionados:
+    - id: "m-20260704-dossie-ia-fase1"
+      relacao: "insumo teórico obrigatório (framework do Liceu foi produzido lá; procedência canônica)"
+      status: "concluido-fase1 (2026-07-04); 10 commits em origin/main"
+    - id: "m-20260705-redesenho-arquitetural-fase2"
+      relacao: "REENQUADRADO como sub-contrato da Onda 1 desta missão-mãe; suas 5 ondas restantes viraram Sub-ondas 1.1-1.5 aqui"
+      status: "ABSORVIDO — Onda 1 do m-20260706 concluída em 2026-07-06 (sub-ondas 1.1-1.6). Todas as 5 ondas restantes deste sub-contrato foram executadas como sub-ondas do Contrato-mãe. Sub-onda 1.6 adicional escreveu o METODO-KOLDEN.md v1.0"
+    - id: "m-2026MMDD-implementacao-mcp-e-dashboard"
+      relacao: "FASE 3 futura (após as 26 ondas) — implementação real de MCP + dashboard populado + integração Hermes runtime"
+      status: "a lavrar após conclusão de m-20260706"
+
+  log_de_decisao:
+    - em: "2026-07-05T22:50:00-03:00"
+      por: "hermes"
+      decisao: "Lavrar Contrato-mãe m-20260706 englobando as 26 ondas do Método Kolden + reenquadrar m-20260705 como sub-contrato da Onda 1"
+      porque: "Ronan explicitou (via AskUserQuestion Opção 3) que Fase 2 do Caos vira Onda 1 do Método. Isso preserva o diagnóstico já feito e as 5 ondas restantes do Caos passam a ser sub-ondas 1.1-1.5. Nada perdido; ganha-se um Método unificado aplicável aos 26 squads"
+    - em: "2026-07-05T22:50:00-03:00"
+      por: "hermes"
+      decisao: "Escopo por onda = 1 squad inteiro (26 ondas totais)"
+      porque: "Ronan escolheu Opção 1 via AskUserQuestion (26 ondas). Escala razoável; 1 agente por onda (261 ondas) seria semanas; 1 camada por onda misturaria escopos"
+    - em: "2026-07-05T22:50:00-03:00"
+      por: "hermes"
+      decisao: "Documento oficial = METODO-KOLDEN.md na raiz + AGENTS.md como índice"
+      porque: "Ronan escolheu Opção 1 via AskUserQuestion (3 docs raiz com papéis distintos). CLAUDE.md continua infra; AGENTS.md continua índice; METODO-KOLDEN.md é a norma"
+    - em: "2026-07-05T22:50:00-03:00"
+      por: "hermes"
+      decisao: "Piloto Onda 1 = Caos (dogfooding)"
+      porque: "Ronan escolheu Opção 1 via AskUserQuestion. Caos como fábrica DEVE estar padronizado antes de fabricar agents padronizados; reaproveita matriz-de-conformidade já produzida"
+    - em: "2026-07-05T22:50:00-03:00"
+      por: "zeus"
+      decisao: "Executivo destino = HEFESTO (CTO), reafirmando escolha da Fase 2"
+      porque: "Método Kolden é arquitetura de sistemas de agents = jurisdição CTO. Atena (CAIO) ratificou a estratégia de IA na Fase 1; agora Hefesto redesenha os sistemas conforme o framework ratificado"
+    - em: "2026-07-05T22:50:00-03:00"
+      por: "hefesto"
+      decisao: "Operacional em cascata: Caos executa Onda 1 (dogfooding) + demais squads executam suas próprias ondas com Caos como fornecedor de skills"
+      porque: "Cada squad tem expertise sobre si mesmo; Caos fornece skills auxiliares (busca-de-referencias, vigia-de-ecossistema, sintese-de-framework); Liceu fornece procedência; Dike verifica INDEPENDENTE. Auto-avaliação enviesada mitigada pela cascata"
+    - em: "2026-07-05T22:50:00-03:00"
+      por: "hefesto"
+      decisao: "Sub-onda 1.6 (nova) escreve METODO-KOLDEN.md v1.0 após as Sub-ondas 1.1-1.5"
+      porque: "As sub-ondas 1.1-1.5 herdadas do m-20260705 redesenham o Caos internamente; a Sub-onda 1.6 é o degrau adicional que consolida os aprendizados em documento raiz canônico. Sem 1.6, o Caos fica padronizado mas o Método não existe formalmente"
+    - em: "2026-07-05T22:50:00-03:00"
+      por: "hermes"
+      decisao: "Nível de risco = AMARELO (não verde como Fase 1 nem vermelho de produção)"
+      porque: "Não toca produção mas reescreve identidade estrutural dos 26 squads (ancestral herdado por 261+ agents). Impacto médio-alto; reversível via git; autonomia = executa-e-para-em-gate"
+    - em: "2026-07-06T20:00:00-03:00"
+      por: "ronan"
+      decisao: "Q1 aprovada — METODO-KOLDEN.md v1.0 publicado sem revisão"
+      porque: "Documento validado contra critério de sucesso item 1 do Contrato-mãe (~500 linhas, 12 seções, procedência 100% ancorada com 8+ autores citados nominalmente). Escopo cirúrgico preservado. Recomendação técnica do caos-chief acatada"
+    - em: "2026-07-06T20:00:00-03:00"
+      por: "ronan"
+      decisao: "Q2 = Opção A — Dike aprovado como squad-solo em C:\\Kolden\\Dike\\"
+      porque: "Função canônica de Dike (verificação independente contra CAOS-CL-002 + reconciliação TPND=0) exige independência estrutural máxima. Opção B/C teriam vinculação parcial. Coerência mitológica também favorece (Dike autônoma nos Horai). Esqueleto de squad-solo criado; nascimento como agent funcional pendente via Contrato próprio no Ritual do Caos"
+    - em: "2026-07-06T20:00:00-03:00"
+      por: "ronan"
+      decisao: "Q3 = Opção B — 2 emendas ao framework do Liceu adiadas para ida-e-volta com Liceu-chief (Onda 6 do Método)"
+      porque: "Padrão Kolden é preservar soberania do produtor (Liceu produziu o framework, Liceu decide sobre emendas). Restrição dura da Sub-onda 1.6 impedia caos-chief de tocar em Liceu/. E1 (interpretabilidade C5) e E2 (categoria runtime bidirecional Art. IV) ficam declaradas como TODO explícito"
+    - em: "2026-07-06T20:00:00-03:00"
+      por: "ronan"
+      decisao: "Onda 2 = Hermes (Grupo A)"
+      porque: "Recomendação técnica do caos-chief: (a) Hermes é Camada 2 do sistema (METODO §3); (b) 15/22 wrappers proprietários inventariados na Sub-onda 1.3 vivem em Hermes — padronização destrava KLD-PRED-2026-001; (c) Hermes tem AGENTS.md próprio (projeto vendorizado Nous Research) — onda rica em aprendizado canônico. Alternativa Prometeu descartada"
+    - em: "2026-07-06T20:00:00-03:00"
+      por: "hermes"
+      decisao: "Fan-out ≤N é TETO, não obrigação — regra CONFIRMADA 6x consecutivas na Onda 1"
+      porque: "Sub-ondas 1.1/1.2/1.4/1.5/1.6 usaram 0/3 subagentes por interdependência cross-arquivo. Sub-onda 1.3 usou 3/3 por independência estrutural por-squad (caso oposto). Regra promovida a padrão global do Método (METODO §8 subseção 'Regra do fan-out')"
+    - em: "2026-07-07T00:00:00-03:00"
+      por: "ronan"
+      decisao: "Onda 2 (Hermes) aprovada em bloco (Q1-Q4): diff cirúrgico aplicado, skill roteamento-de-squad movida, AGENTS.md vendor com APPEND cirúrgico + AGENTS.md raiz Kolden atualizado, schema resultado_ondas_2_a_26.onda_N canonizado"
+      porque: "Diff produziu 10 CREATEs + 3 UPDATEs + 1 MOVE + 1 TRIM com procedência 1:1; delta +7 pontos (2º maior do Método); vendor Nous preservado (~150 arquivos); Dike delta INDEPENDENTE por Explore confirmou 8/8 VERDE. Padrão de squad vendorizado calibrado como caso canônico"
+    - em: "2026-07-07T00:00:00-03:00"
+      por: "hefesto"
+      decisao: "Padronização de squad vendorizado é caso canônico do Método — candidato emenda METODO v1.1 §5 ou §8"
+      porque: "Onda 2 revelou que squad-fork (Hermes vendorizado de Nous Research MIT) exige regra invariante 'INVÓLUCRO sobre MUTAÇÃO': camada Kolden PT-BR envelopa vendor sem tocar código; AGENTS.md vendor + CLAUDE.md Kolden coexistem via APPEND cirúrgico declaratório; .claude/settings.json com deny sobre paths vendor. Regra vai reaparecer na Onda 3 (Prometeu — também vendorizado AIOX) — cristalizar aprendizado agora"
+    - em: "2026-07-07T00:00:00-03:00"
+      por: "hermes"
+      decisao: "Fan-out ≤N é TETO — regra CONFIRMADA 7x consecutivas (Onda 1 + Onda 2)"
+      porque: "Onda 2 do Hermes usou 0/3 fan-out por interdependência cross-artefato dos 10 CREATEs (constitution.md ancora CLAUDE.md que ancora PRD que ancora squad.yaml). Regra do fan-out do METODO §8 confirmada em 7 aplicações consecutivas + 1 caso oposto (Sub-onda 1.3 = 3/3 por independência estrutural)"
+    - em: "2026-07-07T00:00:00-03:00"
+      por: "ronan"
+      decisao: "Onda 3 = Prometeu (Grupo A) — sequência natural conforme recomendação técnica do hermes-chief"
+      porque: "Grupo A tem 2 meta-squads vendorizados (Hermes + Prometeu); padrão 'squad vendorizado' calibrado na Onda 2 aplica direto em Prometeu (framework AIOX); fecha Grupo A e libera Grupo B (Governance: Olimpo, Dike, Themis) na sequência natural"
+    - em: "2026-07-07T09:00:00-03:00"
+      por: "prometeu-chief"
+      decisao: "Onda 3 fatiada em Sub-ondas 3.1 (identidade+fronteira) + 3.2 (12 aiox-agents+MEMORY) + 3.3 (57 skills+costura+smoke+Dike delta)"
+      porque: "Escala 5x maior que Hermes (12 aiox-agents internos + 57 skills — o maior número da Kolden); sub-ondas por domínio evitam onda gigante e permitem gate humano entre etapas. Confirmado no gate humano Passo 2 da Sub-onda 3.1"
+    - em: "2026-07-07T12:00:00-03:00"
+      por: "ronan"
+      decisao: "Sub-onda 3.1 (Prometeu identidade + fronteira SynkraAI) aprovada em bloco (Q1-Q4): diff cirúrgico aplicado em ordem G1→G2→G3, deny cirúrgico em L1+L2 vendor AIOX, APPEND parágrafo topo AGENTS.md vendor + Kolden AGENTS.md raiz atualizado, emenda METODO v1.1 diferida para conclusão Onda 3 completa"
+      porque: "Diff produziu 10 CREATEs + 3 UPDATEs com procedência 1:1; delta +3 pontos (2/8 → 5/8; projetado 8/8 pós Sub-ondas 3.2+3.3); vendor SynkraAI/aiox-core preservado (~450 arquivos); 4 padrões novos registrados (co-existência constituição dupla + convenção @ dupla + skills-como-tools cross-squad + deny cirúrgico L1+L2 aprendido do Hermes)"
+    - em: "2026-07-07T12:00:00-03:00"
+      por: "hefesto"
+      decisao: "Padrão 'squad vendorizado' promovido a categoria canônica Kolden — segunda ocorrência empírica (Hermes/Nous + Prometeu/SynkraAI) valida a emenda METODO v1.1"
+      porque: "Duas aplicações independentes confirmam regra invariante 'INVÓLUCRO sobre MUTAÇÃO' + AGENTS.md vendor + CLAUDE.md Kolden coexistem + deny cirúrgico L1+L2 no settings.json. Elevar a §5 (modelos) ou §8 (rito) na revisão pós-Onda 3 completa"
+    - em: "2026-07-07T12:00:00-03:00"
+      por: "prometeu-chief"
+      decisao: "Categoria constitucional emergente identificada: skills-como-tools cross-squad (6 skills públicas Prometeu consumidas por outros 25 squads: spec-build-review, mcp-builder, orquestracao-de-comandos-slash, checklist-runner, tech-search, briefing-padrao)"
+      porque: "Categoria NÃO modelada no METODO v1.0 nem no Art. IV (MCP). Impacto cross-squad de qualquer diff em skill pública. Sub-onda 3.3 tratará com read-only + nota cross-squad no diff. Candidata emenda METODO v1.1 §5 (modelos) ou §7 (5 buckets)"
+    - em: "2026-07-07T12:00:00-03:00"
+      por: "hermes"
+      decisao: "Fan-out ≤N como TETO — regra CONFIRMADA 8x consecutivas"
+      porque: "Sub-onda 3.1 Prometeu usou 0/3 fan-out por interdependência cross-artefato (10 CREATEs ancorados uns nos outros: constitution → CLAUDE → PRD → squad.yaml). Regra do fan-out do METODO §8 confirmada em 8 aplicações consecutivas + 1 caso oposto (Sub-onda 1.3 = 3/3 por independência estrutural)"
+    - em: "2026-07-07T18:00:00-03:00"
+      por: "ronan"
+      decisao: "Sub-onda 3.2 (12 aiox-agents + refactor MEMORY + mapeamento cross-camada AIOX × Kolden) aprovada em bloco (Q1-Q4 recomendação técnica acatada): Q1.A diff em bloco por domínio, Q2.B arquivar 4 MEMORY espúrios, Q3.A mapeamento_cross_camada em squad.yaml SSoT + AGENTS.md raiz agora, Q4.A Dike delta INDEPENDENTE deferido Sub-onda 3.3 cobrindo 3.1+3.2+3.3 em 1 sessão"
+      porque: "Diff produziu 19 mudanças canônicas + 1 condicional com procedência 1:1; delta +1 pontos (5/8 → 6/8; projetado 8/8 pós Sub-onda 3.3); vendor SynkraAI/aiox-core preservado (~450 arquivos + 12 canônicos AIOX + 10 MEMORY canônicos AIOX + 12 personas AIOX + Constitution AIOX v1.0.0 intocados); 11 padrões novos registrados incluindo distinção 3-way MEMORY canonizada como padrão Kolden universal para squad vendorizado + refactor por arquivamento (2ª ocorrência)"
+    - em: "2026-07-07T18:00:00-03:00"
+      por: "hefesto"
+      decisao: "ACHADO-TARDIO PRM-3.2-019 registrado: vendor SynkraAI .gitignore bloqueia visibilidade git de 12/19 arquivos aplicados na Sub-onda 3.2 (10 aiox-*.md UPDATE + 1 aiox-master.md CREATE + 4 MOVE _archive)"
+      porque: "Aplicações em disco confirmadas via Read/Glob mas invisíveis ao git status. Decisão arquitetural sobre patch cirúrgico ao .gitignore vendor OU manter bloqueado deferida para Sub-onda 3.3 gate humano — risco: merge conflict com upstream SynkraAI se patch. Lição operacional: git check-ignore -v no Passo 2 do diagnóstico obrigatório para squad vendorizado (evita descoberta tardia)"
+    - em: "2026-07-07T18:00:00-03:00"
+      por: "prometeu-chief"
+      decisao: "Distinção canônica 3-way MEMORY promovida a padrão Kolden universal para squad vendorizado"
+      porque: "Squad-level `<Squad>/MEMORY.md` (padrões estruturais) × agent-chief `<Squad>/agent-memory/<chief-id>.md` (padrões técnicos de execução) × MEMORY canônico AIOX `.aiox-core/development/agents/<id>/MEMORY.md` (intocado por decisão vendor). Aplica-se a Prometeu + qualquer squad vendorizado futuro que tenha framework interno com agentes"
+    - em: "2026-07-07T18:00:00-03:00"
+      por: "hermes"
+      decisao: "Fan-out ≤N como TETO — regra CONFIRMADA 9x consecutivas"
+      porque: "Sub-onda 3.2 Prometeu usou 0/3 fan-out por interdependência cross-arquivo (19 mudanças ancoradas entre si: aiox-*.md APPEND compartilha template + aiox-master CREATE deriva dos 10 + MOVE MEMORY refactor unificado). 9ª confirmação consecutiva. Padrão global METODO §8 sólido"

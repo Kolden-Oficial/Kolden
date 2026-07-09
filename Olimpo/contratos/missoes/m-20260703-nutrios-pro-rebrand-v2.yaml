@@ -1,0 +1,232 @@
+# Contrato de Missão — Rebrand v2 NutriOS Pro (identidade final 2026-06-30)
+# Schema: ../contrato-de-missao.schema.md
+---
+missao:
+  id: "m-20260703-nutrios-pro-rebrand-v2"
+
+  # ── CAMADA 1 — HUMANO (lacrada, imutável) ───────────────────────────────────
+  intencao_original:
+    input_cru: "@Hermes @Olimpo, eu finalizei a versão final \"sobre-a-empresa/Projetos/NutriOS Pro/\" da logo/identidade visual https://drive.google.com/drive/folders/1TS2e34HQ6DOSw6cv9vnph8J46K0CG3Mv?usp=sharing reefaça a versão do branding que voce fez para essa versão."
+    canal: "chat"
+    recebida_em: "2026-07-03T00:00:00-03:00"
+    hash: "sha256:5a2eda3845cc71c356ce3192ad29654a573fbe1e9d8d6e9d931ceac082b8d9ea"
+
+  # ── CAMADA 2 — HERMES (tradução de intenção) ────────────────────────────────
+  hermes:
+    dor:
+      objetivo_real: |
+        Refazer o brandbook, o design-system e a apresentação do NutriOS Pro (v2 da identidade)
+        para refletir a versão FINAL entregue no Google Drive em 2026-06-30, substituindo a v1
+        oficializada em 2026-06-24 (Baloo 2 + paleta de 7). Preservar posicionamento (Cuidador +
+        Mago, "sistema operacional") e voz da marca — não são refresh de estratégia, é refresh
+        de sistema visual.
+      criterio_de_sucesso: |
+        Ao final: (1) brandbook 03-identidade-visual.md, 00-indice.md e brandbook.html refletem
+        a v2; (2) design-system tokens.json/css/tailwind + leia-me.md refletem a paleta 8 cores +
+        Quip; (3) apresentação HTML+PDF regerada; (4) decisoes.md tem 3 ADRs; (5) status.md +
+        memoria.md + leia-me.md atualizados; (6) Baloo 2 desaparece do texto ativo (só sobrevive
+        no ADR revogado); (7) Ronan valida visualmente o brandbook renderizado.
+      restricoes:
+        prazo: "sessão única — entrega hoje 2026-07-03"
+        orcamento: "1 sessão de trabalho; sem commit até ordem explícita"
+        proibicoes:
+          - "Não tocar 01-posicionamento.md nem 02-voz-da-marca.md (voz e arquétipo inalterados)"
+          - "Não tocar prd.md nem arquitetura.md (produto e stack técnica não mudaram)"
+          - "Não tocar código em app/ (repo próprio Koldenoficial/nutriospro; mudança visual é Fase 4 futura)"
+          - "Não commitar; working tree fica limpo para Ronan pedir commit"
+          - "Não abrir issue, PR ou push"
+          - "Não criar arquivos vetoriais SVG do zero (fora do escopo — pendência declarada)"
+      contexto:
+        - "v1 do brandbook foi oficializada 2026-06-24 com Baloo 2 + Deep Forest/Neon Mint (7 cores)"
+        - "Assets finais da v2 depositados no Drive folder 1TS2e34HQ6DOSw6cv9vnph8J46K0CG3Mv em 2026-06-30"
+        - "Fase 0 (descoberta) já concluída: 3 assets baixados + PDF/PNG lidos + metadata Quip extraída"
+        - "Notas de leitura em sobre-a-empresa/Projetos/NutriOS Pro/assets/2026-06-30-final/_notas-tipografia.md"
+        - "Mudanças-chave descobertas: (a) paleta expandida para 8 cores com dual-mode warm+cool, (b) Forest Green removido, (c) wordmark redesenhado NUTRIOS PRO caixa-alta bold, (d) fonte Quip Regular de Ahmad Suhadi, (e) O do símbolo baseado em Geometr415 Blk BT"
+      nivel_de_risco: "amarelo"
+    dor_completo: true
+    perguntas_abertas: []
+    matriz_de_risco:
+      reversibilidade: "reversivel"
+      impacto: "medio"
+      faixa: "amarelo"
+      autonomia: "mostra-antes"
+    ordem_de_maquina: |
+      Reescrever no lugar os 14 arquivos ativos do brandbook + design-system + apresentação do
+      NutriOS Pro para refletir a identidade v2 (assets finais 2026-06-30). Executar via 2
+      subagentes paralelos (Aglaia = brandbook, Harmonia = tokens). Consolidar em decisoes/
+      status/memoria/leia-me. Verificar com grep + inspeção visual. Não commitar.
+    assinatura: { por: "hermes", em: "2026-07-03T00:00:00-03:00" }
+
+  # ── CAMADA 3 — ZEUS (decomposição + roteamento) ─────────────────────────────
+  zeus:
+    diagnostico: |
+      Missão de EXECUÇÃO VISUAL, não de estratégia. Posicionamento e voz da marca (competências
+      Apolo/CMO) permanecem intactos — o que muda é a MATERIALIZAÇÃO visual do sistema já
+      posicionado. Roteamento vai direto ao squad operacional (não passa pelos executivos
+      chief-level para especificação — a "especificação" já está lavrada pelo Ronan nos assets
+      finais). Apolo/CMO fica como ratificador de escopo (o que preservar), Aglaia executa o
+      brandbook, Harmonia executa os tokens. Dike reconcilia.
+    decomposicao:
+      - parte: "Ratificação de escopo: confirmar que voz/arquétipo/posicionamento não mudam"
+        executivo_destino: "apolo"
+        motivo: "CMO tem trigger 'branding' e é o dono da estratégia de marca — assina que só o SISTEMA VISUAL muda"
+      - parte: "Reescrita do brandbook (identidade visual)"
+        executivo_destino: "apolo"
+        motivo: "Apolo faz handoff imediato a Aglaia — squad operacional de branding/brandbook"
+      - parte: "Refazer tokens do design-system (paleta 8 cores + fonte Quip)"
+        executivo_destino: "hefesto"
+        motivo: "CTO tem trigger 'design system' — faz handoff a Harmonia, squad operacional de tokens/design-system"
+    paralelo:
+      - "aglaia (brandbook)"
+      - "harmonia (tokens)"
+    consolidacao: ""
+    arbitragem: null
+    assinatura: { por: "zeus", em: "2026-07-03T00:00:00-03:00" }
+
+  # ── CAMADA 4 — EXECUTIVOS (especificação técnica) ───────────────────────────
+  executivos:
+    - agente: "apolo"
+      especificacao_tecnica: |
+        PRESERVAR (não tocar):
+          - Brand idea: "sistema operacional da prática clínica"
+          - Arquétipo: Cuidador (primário) + Mago (secundário)
+          - Público: nutricionistas clínicos + estudantes + público metódico
+          - Voz da marca: acolhedora, clara, confiável
+          - Tagline: "Sua prática clínica merece um sistema operacional."
+          - Diferenciação vs WebDiet/Dietbox (saúde integral + comportamento)
+        REFAZER (delegar a Aglaia + Harmonia):
+          - Logo: novo símbolo "nö" (traço bold, "O" derivado de Geometr415 Blk BT), mascote,
+            selo e lockups do PNG final; wordmark NUTRIOS PRO caixa-alta (não mais "nutriOS pro").
+          - Paleta: expandir de 7 para 8 cores; adicionar sistema warm (Linen Cream, Warm Linen,
+            Terracotta, Espresso); remover Forest Green como cor de marca; deprecar preto puro e
+            branco puro em favor de Espresso e Linen Cream.
+          - Tipografia: substituir Baloo 2 por Quip Regular no wordmark/display; Inter mantém
+            UI/dados; Geometr415 Blk BT documenta como ativo gráfico do símbolo, não webfont.
+          - Estratégia de cor: dual-mode (dark canônico + light warm), não mais dark-first
+            simples com light derivado.
+      handoff_operacional:
+        squad: "aglaia"
+        artefato: "brandbook v2 (03-identidade-visual.md reescrito, 00-indice.md, brandbook.html)"
+      devolucao_lateral: null
+      resultado: ""
+      assinatura: { por: "apolo", em: "2026-07-03T00:00:00-03:00" }
+
+    - agente: "hefesto"
+      especificacao_tecnica: |
+        Design system implementa a paleta v2 + Quip:
+          - tokens.json (DTCG): 8 cores nomeadas; font.display=Quip; font.body=Inter;
+            font.os-accent=Geometr415 Blk BT (uso restrito, comentário DTCG).
+          - tokens.css: novos custom properties HSL; blocos :root (light-first Linen Cream) e
+            .dark (dark canônico Deep Forest); recalcular contrastes.
+          - tailwind.tokens.js: preset com cores nomeadas (mint, aqua, teal, forest, linen,
+            terracotta, espresso, cream) + fontFamily.display="Quip".
+          - leia-me.md §4.2/§4.3: novo roteiro para Fase 4 do projeto (webfont local Quip em
+            app/public/fonts/, não Google Fonts); §5 pares de contraste recalculados.
+      handoff_operacional:
+        squad: "harmonia"
+        artefato: "design-system v2 (tokens.json/css/tailwind refeitos + leia-me.md atualizado)"
+      devolucao_lateral: null
+      resultado: ""
+      assinatura: { por: "hefesto", em: "2026-07-03T00:00:00-03:00" }
+
+  # ── CAMADA 5 — OPERACIONAL (execução + proatividade) ────────────────────────
+  operacional:
+    - agente: "aglaia:alina-wheeler"
+      squad: "aglaia"
+      resultado: |
+        3 arquivos entregues:
+          - brandbook/03-identidade-visual.md (reescrita completa §1+§2+§3+§4)
+          - brandbook/00-indice.md (resumo em uma tela atualizado)
+          - brandbook/brandbook.html (regerado do zero com paleta 8 cores, wordmark
+            NUTRIOS PRO caixa-alta, @font-face local Quip, contrastes calculados)
+        Grep interno confirmou: Baloo 2 só sobrevive em contexto histórico/ADR revogado/uso
+        incorreto; Quip (16), Geometr415 (17), 8 hexes v2 (72 total) presentes.
+        Contrastes calculados: Linen/Forest 15.9:1, Espresso/Mint 10.8:1 (novo par CTA AAA).
+      riscos_levantados:
+        - "Licença webfont Quip não confirmada — @font-face local só em docs internos até confirmar"
+        - "Arquivos vetoriais SVG oficiais do logo/mascote continuam pendentes (herdada da v1)"
+        - "Hex de border v2 documentado como derivação HSL, aguarda validação no primeiro protótipo Fase 4"
+      propostas:
+        - "Auditoria de contraste real das telas na Fase 4 contra §3.3 do brandbook"
+        - "Ronan negociar webfont license com suhadidesign ou vetorizar wordmark oficialmente"
+      assinatura: { por: "aglaia:alina-wheeler", em: "2026-07-03T00:00:00-03:00" }
+    - agente: "harmonia"
+      squad: "harmonia"
+      resultado: |
+        4 arquivos entregues:
+          - design-system/02-tokens/tokens.json (fonte DTCG — 8 cores brand+warm,
+            font.display=Quip, font.os-accent=Geometr415 com restrição documentada)
+          - design-system/02-tokens/tokens.css (blocos :root light + .dark, @font-face Quip,
+            4 gradients — hero/warm/cta/water)
+          - design-system/02-tokens/tailwind.tokens.js (preset com 8 cores nomeadas +
+            escala chart[1..5] repensada + display: ["Quip", ...])
+          - design-system/02-tokens/leia-me.md (§2 dual-mode canônico, §3 mapa v2,
+            §4 novo roteiro Fase 4 com webfont local, §5 contrastes recalculados)
+        Contrastes-âncora v2: Espresso/Mint 10.30:1 (novo CTA AAA); Linen/Forest 14.88:1;
+        Espresso/Linen 13.73:1. Falhas documentadas: Terra/Linen 2.52:1 (fill-only).
+      riscos_levantados:
+        - "Licença webfont Quip bloqueia embed em produção pública nutriospro.lovable.app"
+        - "Terracotta/Linen (2.52:1) e Aqua/Linen (2.05:1) falham como texto — regra em §5.3 do leia-me"
+      propostas:
+        - "Abrir ADR em decisoes.md sobre política de fonte proprietária (feito na Fase 3)"
+        - "Squad UI adota Terracotta incrementalmente na Fase 4 (mascote, seção comportamento, stats de acolhimento)"
+      assinatura: { por: "harmonia", em: "2026-07-03T00:00:00-03:00" }
+
+  # ── SUBIDA — DIKE (verificação) ─────────────────────────────────────────────
+  dike:
+    confere_hash: true
+    reconciliacao: "bateu"
+    degrau_da_quebra: null
+    justificativa: |
+      Verificação final concluída:
+      1. GREP: "Baloo 2" e "Poppins" só sobrevivem em contexto histórico (ADR revogado
+         em decisoes.md; deprecação em brandbook/design-system; código v1 em app/ que
+         não estava no escopo). ZERO como texto ativo prescritivo.
+      2. GREP: "Quip" (175 hits em 13 arquivos), "NUTRIOS PRO", paleta 8 cores v2
+         presentes onde deveriam. Forest Green só em nota de removido.
+      3. Contrastes WCAG 2.1 recalculados nos dois lados: par de CTA v2 Espresso/Mint
+         10.30:1 AAA (substitui Black/Mint da v1). Falhas conhecidas documentadas
+         (Terracotta como fill-only).
+      4. Arquivos: 14 modificados (todos esperados), 2 novos untracked (Contrato +
+         pasta assets/2026-06-30-final/). Zero contaminação em app/ ou em outros
+         projetos.
+      5. Contrato preservou intenção: voz, arquétipo, posicionamento e prd/arquitetura
+         permanecem intactos — só o SISTEMA VISUAL foi refeito, conforme especificado
+         em hermes.dor e apolo.especificacao_tecnica.
+      6. Consolidação da Fase 3 (apresentacao/index.html + PDF regerado + decisoes +
+         status + memoria + leia-me + 03-componentes atualizado) completa.
+      7. PDF da apresentação regerado (1.4 MB, 1365111 bytes escritos por Chrome
+         headless). Inspeção visual delegada ao Ronan.
+      Restrições respeitadas: sem commit, sem push, sem tocar app/, sem SVGs novos.
+    veredito: "sobe"
+    assinatura: { por: "dike", em: "2026-07-03T00:00:00-03:00" }
+
+  # ── TRANSVERSAL ─────────────────────────────────────────────────────────────
+  orcamento:
+    teto_rodadas: 2
+    teto_tempo: "1 sessão"
+    rodadas_gastas: 1
+
+  status_final: "concluido"
+
+  log_de_decisao:
+    - em: "2026-07-03T00:00:00-03:00"
+      por: "hermes"
+      decisao: "Rota de execução: pipeline completo Hermes→Zeus→Apolo+Hefesto→Aglaia+Harmonia"
+      porque: "Ronan escolheu explicitamente via AskUserQuestion no plan-mode (rota A)"
+    - em: "2026-07-03T00:00:00-03:00"
+      por: "hermes"
+      decisao: "Reescrever no lugar (não arquivar v1 em subpasta)"
+      porque: "Ronan escolheu explicitamente via AskUserQuestion; histórico só via git"
+    - em: "2026-07-03T00:00:00-03:00"
+      por: "hermes"
+      decisao: "Continuar sem parar para perguntas apesar da magnitude maior descoberta"
+      porque: "system-reminder de trabalho sem parada; mudanças de paleta e wordmark são consistentes com 'refaça a versão do branding'"
+    - em: "2026-07-03T00:00:00-03:00"
+      por: "sessao-raiz"
+      decisao: "Adicionar reescrita de design-system/03-componentes.md à Fase 3"
+      porque: "Grep da Dike revelou que 03-componentes.md tinha 12 hits ativos de Forest Green e 2 de Baloo 2 — ficou fora do escopo do subagente Harmonia (que só tocou 02-tokens/) e precisava consolidação da sessão-raiz"
+    - em: "2026-07-03T00:00:00-03:00"
+      por: "sessao-raiz"
+      decisao: "Wordmark do deck de apresentação renderizado via CSS+Quip @font-face local (não como imagem)"
+      porque: "PNG v1 (nutriOS pro lowercase) era dissonante com wordmark v2 (NUTRIOS PRO caixa-alta); ter Quip local via @font-face permite renderizar texto vetorial escalável e recolorizável"

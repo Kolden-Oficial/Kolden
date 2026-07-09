@@ -1,0 +1,243 @@
+# Contrato de Missão — gerado por Hermes/scripts/abre-missao.sh
+# intencao_original LACRADA (não editar). Demais seções preenchidas pelas camadas.
+missao:
+  id: m-20260706-193013-omiron-brandbook-completo
+  intencao_original:
+    input_cru: '@Hermes com base em tudo que você sabe sobre a c:\Kolden\sobre-a-empresa\Projetos\Ativos\omiron vamos criar o brandbook completo para a marca, use as referências, fontes, tudo que você sabe para criarmos o brandbook, seja cauteloso e acione os melhores squads possiveis para essa funcionalidade, precisamos ser o mais assertivo possivel, pois vamos apresentar para o Ariosto Ribeiro.'
+    canal: chat
+    recebida_em: '2026-07-06T19:30:13-03:00'
+    hash: sha256:64714c6394a4887649e5f34816283c2fad7fc9b28d604f5b837271d4b809ea03
+  hermes:
+    dor:
+      objetivo_real: |
+        Entregar brandbook COMPLETO da marca Omiron (app de monitoramento terapêutico
+        psiquiátrico white-label para a Clínica do Dr. Ariosto Filho / "Ariosto Ribeiro",
+        Belo Horizonte) num único empacotamento apresentável, aproveitando 60% de material
+        já travado nos dossiês internos (arquétipo, tipografia, paleta visual, metodologia
+        de 4 pilares, cenário-âncora slide 18) e fechando os gaps críticos (paleta em HEX
+        extraída dos thumbnails Canva, iconografia alternativa para Marco Aurélio que tem
+        zero pins reais no Pinterest do cliente, matriz de reconciliação de tensões abertas).
+        Formato de saída dual: (a) brandbook estrutural em Markdown + brandbook.html renderizado;
+        (b) deck de apresentação padrão Rosie para reunião presencial com Dr. Ariosto (próxima
+        janela conhecida: 08/07/2026).
+      criterio_de_sucesso: |
+        1. Brandbook em 5 capítulos MD seguindo o molde NutriOS Pro v3
+           (00-indice, 01-posicionamento, 02-voz-da-marca, 03-identidade-visual,
+           04-aplicacoes, 05-manual-operacional) em
+           sobre-a-empresa/Projetos/Ativos/omiron/brandbook/.
+        2. Design system paralelo em omiron/design-system/ com fundamentos
+           (cores, tipografia, grafismos, tom-visual), tokens DTCG (tokens.json + tokens.css
+           + tailwind.tokens.js), e componentes documentados (Button, Input, Badge, Card,
+           Table, Dialog, Toast).
+        3. brandbook.html renderizado com nav lateral sticky + 7 seções + matriz WCAG.
+        4. Deck de apresentação em omiron/apresentacao/ (index.html + deck-conteudo.md)
+           padrão Rosie: full-height, scroll-snap, nav 220px, tipografia Great Vibes + Garamond.
+        5. Paleta em HEX extraída e documentada (não mais em prosa).
+        6. Narrativa dos 4 pilares (Corpo/Pensamento/Sentimento/Espírito) com figuras míticas
+           costurada por Orfeu — manifesto, copy do mentor Quíron, alternativa iconográfica
+           para Marco Aurélio.
+        7. Checklist Nomos aprovado: zero claim médico proibido (CFM Res 2.314/2022),
+           zero promessa de privacidade sem lastro RLS (LGPD Art 11 — dado sensível saúde),
+           tom não-paternalista, sem infantilização.
+        8. Matriz de reconciliação de gaps abertos (16 imagens pendentes de envio,
+           ritual do Quíron não executado no Caos, NDA formal não assinado, tensão
+           maximalismo × UX simples ainda em aberto) — nomeada, não escondida.
+        9. Dike verifica completude, aponta degrau de quebra se houver.
+      restricoes:
+        prazo: |
+          Sessão de trabalho ÚNICA. Reunião 08/07/2026 com Ariosto é o horizonte de uso.
+          Sem commit até ordem explícita do Ronan (política estrita CLAUDE.md §6).
+        orcamento: |
+          2 rodadas (teto padrão Camada-2). Se estourar, escala ao Ronan e não fura.
+        proibicoes:
+          - Nada de commit/push até ordem explícita.
+          - Nada de alterar código do app Omiron (AGENTS.md do projeto avisa Next.js
+            com breaking changes — brandbook não toca src/).
+          - Nada de claim médico ("cura", "diagnóstico", "trate você mesmo"), nem promise
+            de eficácia clínica sem lastro em literatura + supervisão médica.
+          - Nada de "app de saúde mental fofo" — Ariosto rejeitou explicitamente na
+            reunião 01/07. Sem mascotes, avatares abstratos, bolinhas gradientes.
+          - Nada de tom paternalista/infantilizador — público é adulto de excelência,
+            não "doente psiquiátrico".
+          - Nada de exposição de PII em screenshots ou mockups do brandbook.
+          - Nada de pesquisa web sem confirmar ferramenta + nível no chat
+            (política global gate-busca.cjs).
+      contexto:
+        - "Cliente: Dr. Ariosto Filho (referido também como 'Ariosto Ribeiro'), psiquiatra, Clínica Omiron BH. Perfil erudito, maximalista, aspira caneta Montblanc, curador visual de 95 pins Pinterest (Alexandria, mitologia, arquitetura clássica, Van Gogh, Hokusai, Caspar David Friedrich)."
+        - "Produto: app white-label Next.js + Supabase para monitoramento terapêutico. 7 áreas de check-in (Medicação, Alimentação, Movimento, Conexões Sociais, Estresse, Produtividade, Tóxicos). Escalas HAM-A/HAM-D/YMRS/Madres/Cococolos. Chat realtime. Gamificação com planta virtual (4 estágios). Fase 1 = piloto 5-10 pacientes jul/2026. Fase 2 = SaaS B2B (R$299-599/clínica/mês) em 2027."
+        - "Decisões travadas (não reabrir): arquétipo Sábio/Mestre; tipografia Great Vibes (títulos) + Garamond (corpo); paleta preto/dourado/marfim/laranja-âmbar/marrom-couro; elemento unificador papiro; metodologia 4 pilares Corpo(Sansão)/Pensamento(Marco Aurélio)/Sentimento(Psiquê)/Espírito(Hécate); mentor IA Quíron; slogan 'Monitoramento próximo. Tratamento real.'"
+        - "Cenário-âncora visual: slide 18 Canva (escadaria monumental + estátuas em nichos + colunas neoclássicas + abóbada). Vencedor confirmado na reunião 01/07."
+        - "Molde de entrega: rebrand NutriOS Pro v3 (Contrato m-20260705). Aglaia+Harmonia paralelos, entregam MD + tokens DTCG + brandbook.html. Padrão validado."
+        - "Molde de deck: Rosie 2026-07-01 (deck.html full-height, nav lateral 220px, scroll-snap, fio-loop de cor primária em palavras-chave, footer timestamp + brand)."
+        - "Gaps abertos nomeados (não bloqueantes se documentados na matriz de reconciliação): 16 imagens dos pilares pendentes de envio pelo Ariosto, ritual do Quíron não executado no Caos, NDA formal não assinado, tensão maximalismo × UX simples viva, tipografia dos slides 1-17 do deck comercial ainda sans-serif (precisa ser rerenderizada)."
+        - "Compliance: CFM Res 2.314/2022 (telemedicina — app é engajamento terapêutico, NÃO teleconsulta nem prontuário), LGPD Art 11 (dado sensível saúde exige base legal + RLS já especificado NFR-1), ANVISA (ainda não mapeado), CFP (não aplicável, é psiquiatria)."
+        - "Referências internas úteis para os squads: PRD em omiron/docs/prd-omiron-app.md; decisões consolidadas em omiron/docs/pesquisa-referencias/decisoes-consolidadas-brand.md; mapa mental em mapa-mental-consolidado.md; ata reunião em reuniao-2026-07-01-transcricao-e-decisoes.md; análise Pinterest em pinterest/pinterest-ariosto-analise.md; deck Canva analisado em canva-deck-referencias-visuais.md; thumbnails em canva-thumbnails/slide-18-vencedor.png (e 19-22)."
+      nivel_de_risco: amarelo
+    dor_completo: true
+    perguntas_abertas: []
+    matriz_de_risco:
+      reversibilidade: reversivel
+      impacto: medio
+      faixa: amarelo
+      autonomia: mostra-antes
+    ordem_de_maquina: |
+      MISSÃO CAMADA-2 CONSOLIDADA. Descer ao Zeus com decomposição PRÉ-DESENHADA
+      (validada pelo Ronan via AskUserQuestion 2026-07-06):
+
+      ONDA 1 (paralela) — Aglaia + Harmonia
+        Aglaia (brand-chief): 5 markdowns em omiron/brandbook/
+          - 00-indice.md
+          - 01-posicionamento.md (arquétipo Sábio, público, diferenciação, brand idea)
+          - 02-voz-da-marca.md (tom 4 dimensões, do/don't, vocabulário, cadência)
+          - 03-identidade-visual.md (símbolo, paleta HEX, tipografia, WCAG 8x8)
+          - 04-aplicacoes.md (app, receita física papiro, Instagram, e-mail, deck)
+          - 05-manual-operacional.md (governança, checklist pré-publicação, acessibilidade)
+        Handoff Aglaia→Caliope obrigatório para o brand-voice.md.
+        Handoff Aglaia→Harmonia obrigatório na fronteira visual→tokens.
+        Harmonia (design-chief): design-system paralelo em omiron/design-system/
+          - 01-fundamentos/ (cores.md, tipografia.md, grafismos.md, tom-visual.md)
+          - 02-tokens/ (tokens.json DTCG + tokens.css + tailwind.tokens.js + leia-me.md)
+          - 03-componentes/ (leia-me.md com Button, Input, Badge, Card, Table, Dialog, Toast)
+        Insumo obrigatório: paleta-hex-extraida.md (extraída dos slides 18-22).
+
+      ONDA 2 — Orfeu (narrativa)
+        Redigir manifesto + narrativa dos 4 pilares + copy de onboarding + tom do
+        mentor Quíron + proposta de alternativa iconográfica para Marco Aurélio
+        (que tem 0 pins reais no Pinterest do cliente). Salvar em
+        omiron/brandbook/narrativa/ (manifesto.md, pilares.md, mentor-quiron.md,
+        onboarding-copy.md, alternativa-marco-aurelio.md).
+
+      ONDA 3 — Nomos (gate compliance)
+        Revisar TUDO da Onda 1+2. Devolver checklist em
+        omiron/brandbook/compliance-checklist.md com:
+          - Claim médico proibido/aprovado (CFM Res 2.314/2022, Res 2.336/2023)
+          - LGPD Art 11 (dado sensível saúde) — vocabulário permitido
+          - Tom não-paternalista (auditoria linha a linha)
+          - Consentimento informado — modelo para termo do app
+          - Gap ANVISA (nomear como pendência para próxima rodada, não bloquear)
+
+      ONDA 4 — Consolidação visual
+        Renderizar brandbook.html (nav lateral + 7 seções + matriz WCAG) em
+        omiron/brandbook.html. Renderizar deck padrão Rosie em
+        omiron/apresentacao/index.html (fonte omiron/apresentacao/deck-conteudo.md).
+
+      GATE FINAL — Dike
+        Executar gate-de-subida.sh, produzir matriz de reconciliação de gaps em
+        aberto (não escondê-los), veredito sobe/volta-para-correcao. Sem commit.
+    assinatura:
+      por: hermes
+      em: '2026-07-06T19:35:00-03:00'
+  zeus:
+    diagnostico: |
+      Missão de BRANDBOOK COMPLETO com estojo dual (brandbook + design-system + deck),
+      cliente-alvo Dr. Ariosto (perfil erudito, decisor único, aspira Montblanc), reunião de
+      apresentação em 08/07. 60% do material está travado nos dossiês internos; 40% precisa
+      ser fechado nesta sessão (paleta HEX validada por pipeta, alternativa iconográfica
+      para Marco Aurélio, matriz de reconciliação de 5 gaps abertos, compliance clínico).
+      A decomposição do Hermes é sólida — molde NutriOS v3 aplicável — mas requer 3 ajustes
+      cirúrgicos: (1) Orfeu passa a operar EM PARALELO na Onda 1 (não como Onda 2 sequencial)
+      porque a narrativa dos 4 pilares e a alternativa a Marco Aurélio ALIMENTAM o 01-posicionamento
+      e o 04-aplicacoes que a Aglaia escreve; deixar sequencial gera retrabalho no handoff.
+      (2) Fronteira visual→tokens exige micro-handoff síncrono no início da Onda 1: Harmonia
+      valida HEX por pipeta ANTES de escrever tokens.json, Aglaia consome HEX validado no
+      03-identidade-visual. (3) Caliope permanece como sub-agente dentro do escopo Aglaia
+      para 02-voz-da-marca (handoff intra-squad, não sobe como executivo). Nomos como gate
+      ANTES de Dike é correto (Nomos = compliance clínico; Dike = completude/hash; filtros
+      complementares, não redundantes). Consolidação visual em Onda 4 mantida. Risco vivo
+      declarado: tensão maximalismo × UX simples — decidir na reunião 08/07, não travar entrega.
+    decomposicao:
+    - parte: 'Identidade de marca (posicionamento, voz, identidade visual, aplicações, manual operacional)'
+      executivo_destino: 'apolo'
+      motivo: 'Aglaia (brand-chief) executa; molde NutriOS v3 valida; handoff intra-squad para Caliope no 02-voz-da-marca'
+    - parte: 'Design-system (fundamentos, tokens DTCG, componentes) + validação HEX por pipeta'
+      executivo_destino: 'hefesto'
+      motivo: 'Harmonia (design-chief) executa; consumir paleta-hex-extraida.md como insumo e validar por pipeta antes de fechar tokens.json'
+    - parte: 'Narrativa (manifesto, pilares, copy do mentor Quíron, onboarding, alternativa iconográfica Marco Aurélio)'
+      executivo_destino: 'apolo'
+      motivo: 'Orfeu executa em paralelo a Aglaia+Harmonia; entrega ANTES do fechamento dos capítulos 01 e 04 da Aglaia (handoff Orfeu→Aglaia obrigatório)'
+    - parte: 'Compliance clínico (CFM Res 2.314/2022 e 2.336/2023, LGPD Art 11, tom não-paternalista, gap ANVISA)'
+      executivo_destino: 'hades'
+      motivo: 'Nomos executa como gate ANTES do Dike; revisa Onda 1 completa (Aglaia+Harmonia+Orfeu); veto claim médico proibido'
+    - parte: 'Consolidação visual (brandbook.html + deck padrão Rosie)'
+      executivo_destino: 'self'
+      motivo: 'Sessão-raiz renderiza HTML consumindo MD já verificados; padrão validado no NutriOS v3'
+    paralelo:
+    - 'aglaia (brandbook)'
+    - 'harmonia (tokens + componentes + validação pipeta HEX)'
+    - 'orfeu (narrativa + alternativa Marco Aurélio + copy mentor Quíron)'
+    consolidacao: ''
+    arbitragem: null
+    assinatura:
+      por: zeus
+      em: '2026-07-06T19:45:00-03:00'
+  executivos:
+  - agente: ''
+    especificacao_tecnica: ''
+    handoff_operacional:
+      squad: ''
+      artefato: ''
+    devolucao_lateral: null
+    resultado: ''
+    assinatura:
+      por: ''
+      em: ''
+  operacional:
+  - agente: ''
+    squad: ''
+    resultado: ''
+    riscos_levantados: []
+    propostas: []
+    assinatura:
+      por: ''
+      em: ''
+  dike:
+    confere_hash: true
+    reconciliacao: bateu
+    degrau_da_quebra: null
+    justificativa: |
+      Hash INTEGRO sha256:64714c6394a4887649e5f34816283c2fad7fc9b28d604f5b837271d4b809ea03
+      confirmado por confere-hash.sh. Os 9 criterios do sucesso do Hermes foram
+      verificados um a um: 6 markdowns do brandbook + narrativa completa
+      (manifesto, pilares com Sansao/Marco Aurelio/Psique/Hecate, mentor
+      Quiron, alternativa Marco Aurelio, onboarding) + design system em 3
+      camadas (fundamentos + tokens DTCG + componentes) + brandbook.html
+      com nav sticky, 8 secoes e matriz WCAG 10x10 + apresentacao/
+      padrao Rosie (scroll-snap + nav 220px + Great Vibes + EB Garamond) +
+      compliance-checklist Nomos com veredito APROVADO COM EMENDAS
+      (C1-C9 rastreados e ja aplicados) + paleta em HEX (banidos #FFFFFF
+      e #000000 explicitos, cores validas em variaveis semanticas). Quatro
+      greps de auditoria passaram: (a) claim medico ("cura", "prescrevo",
+      "eu diagnostico", "garanto resultado") aparece SOMENTE em construcao
+      negativa legitima ou em blocos de veto documental; (b) jargao da
+      moda ("biohacking", "unlock", "guru", "mindset", "transformacao")
+      aparece somente em bloco §3.2 de voz-da-marca ou em mentor-quiron
+      com tarja ~~termo~~; (c) infantilizacao ("fofinho", "bolinha",
+      "mascote", "infantil") aparece somente em blocos de veto; (d) HEX
+      cru em MD do brandbook aparece somente no bloco de vetos de
+      03-identidade-visual (2 ocorrencias, ambas #FFFFFF/#000000 como
+      BANIDOS). Matriz de reconciliacao criada em
+      brandbook/gaps-reconciliacao.md com 15 gaps NOMEADOS (nao escondidos)
+      e apenas G07 (NDA) tem risco de bloqueio operacional para 08/07 —
+      tratavel em 24h. Nenhum degrau de quebra. A missao esta COMPLETA
+      pelo Contrato lavrado e pronta para reuniao 08/07/2026 com Dr. Ariosto.
+    veredito: sobe
+    assinatura:
+      por: dike
+      em: '2026-07-06T21:30:00-03:00'
+  orcamento:
+    teto_rodadas: 2
+    teto_tempo: '1 sessão'
+    rodadas_gastas: 1
+  log_de_decisao:
+    - em: '2026-07-06T19:30:13-03:00'
+      por: hermes
+      decisao: 'Escopo aprovado via AskUserQuestion: brandbook completo + deck de apresentação'
+      porque: 'Peça para Ariosto, molde NutriOS v3 valida entrega dual em uma sessão'
+    - em: '2026-07-06T19:31:00-03:00'
+      por: hermes
+      decisao: 'Gaps: extrair HEX agora + propor alternativa Marco Aurélio + matriz de reconciliação'
+      porque: 'Aguardar 16 imagens do Ariosto trava a reunião 08/07; extrair já é reversível'
+    - em: '2026-07-06T19:32:00-03:00'
+      por: hermes
+      decisao: 'Nomos entra paralelo como gate antes do Dike'
+      porque: 'Produto psiquiátrico — CFM/LGPD saúde não é opcional; retrabalho fica caro depois'

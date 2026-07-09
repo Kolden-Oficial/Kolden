@@ -1,0 +1,179 @@
+# Contrato de Missão — Refação v3 do Brandbook + Design System NutriOS Pro
+# Ancorada 100% na pasta V2 (dossiê aprovado pelo sócio em 2026-06-30)
+# Schema: ../contrato-de-missao.schema.md
+---
+missao:
+  id: "m-20260705-nutrios-pro-brandbook-v3-refacao"
+
+  # ── CAMADA 1 — HUMANO (lacrada, imutável) ───────────────────────────────────
+  intencao_original:
+    input_cru: |
+      @Harmonia @Aglaia eu preciso refazer por completo o Brandbook da
+      "sobre-a-empresa/Projetos/NutriOS Pro/" e o design-system porém nesse
+      primeiro momento, preciso que siga 100% os seguintes arquivos
+      "sobre-a-empresa/Projetos/NutriOS Pro/V2" lá está a versão que meu sócio
+      apaixonou, só preciso que voce crie uma estrutura padronizada de um
+      design system + brandbook + manual da marca completo
+    canal: "chat"
+    recebida_em: "2026-07-05T00:00:00-03:00"
+
+  # ── CAMADA 2 — HERMES (tradução de intenção) ────────────────────────────────
+  hermes:
+    dor:
+      objetivo_real: |
+        Refazer o brandbook e o design-system do NutriOS Pro (v3 da identidade) para
+        refletir 100% o dossiê da pasta V2 (definições finais aprovadas pelo sócio em
+        2026-06-30). A v2 lavrada em 2026-07-03 (contrato m-20260703) interpretou o
+        símbolo incorretamente como "nö" — que na verdade é a NOMENCLATURA REJEITADA
+        no PDF do V2. Preservar posicionamento, voz e arquétipo (Cuidador+Mago).
+      criterio_de_sucesso: |
+        Ao final: (1) brandbook/03-identidade-visual.md reescrito ao V2 (símbolo n+O+ponto,
+        6 variantes: mascote + símbolo preto/verde + wordmark preto/verde + selo
+        preto/verde, manifesto de construção transcrito literal); (2) tokens.json/css/
+        tailwind refletem as 8 cores literais do PDF + spacing 8px + radius soft +
+        shadow 3 níveis + Terracotta accent-warm + 3 famílias (Geometr415/Quip/Inter);
+        (3) 03-componentes.md reescrito; (4) 04-motion-e-icones.md criado; (5) brandbook/
+        04-aplicacoes.md e 05-manual-operacional.md criados; (6) brandbook.html regerado;
+        (7) apresentacao/index.html + PDF regenerados; (8) grep "nö" retorna 0 no texto
+        ativo do brandbook; (9) Ronan valida visualmente.
+      restricoes:
+        prazo: "sessão única"
+        orcamento: "1 sessão de trabalho; sem commit até ordem explícita"
+        proibicoes:
+          - "Não tocar 01-posicionamento.md nem 02-voz-da-marca.md (voz e arquétipo inalterados)"
+          - "Não tocar prd.md nem arquitetura.md"
+          - "Não tocar app/ (redesign visual do código é fase futura)"
+          - "Não commitar; working tree fica limpo para Ronan pedir commit"
+          - "Não abrir PR/push/issue"
+      contexto:
+        - "V2/ contém 4 arquivos aprovados pelo sócio: PDF de definições, DOCX confirmando fonte do 'O', PNG com 6 variantes do logotipo, quip.otf"
+        - "PDF página 2 explicita: 'nö' é a NOMENCLATURA REJEITADA pelo sistema; a construção correta é n (início de NUTRI) + O (OS de NUTRIOS) + ponto (I final de NUTRI)"
+        - "PDF página 3 lista 8 cores literais: #00E87A Neon Mint, #2BBFA0 Aqua Green, #0F3D35 Dark Teal, #0D2320 Deep Forest, #F5F0E8 Linen Cream, #E8DDD0 Warm Linen, #C4976A Terracotta, #2C2416 Espresso"
+        - "DOCX literal: 'O DO OS PRO é o Geometr415 Blk BT' — wordmark 'NUTRIOS PRO' caixa-alta bold é renderizado em Geometr415 Blk BT"
+        - "Quip.otf é fonte secundária (display/hero/subheads); Inter permanece para body/UI/tabelas"
+        - "Contrato âncora m-20260703 documentou símbolo 'nö' errado — este contrato o revoga"
+      nivel_de_risco: "amarelo"
+    dor_completo: true
+    perguntas_abertas: []
+    matriz_de_risco:
+      reversibilidade: "reversivel"
+      impacto: "medio"
+      faixa: "amarelo"
+      autonomia: "mostra-antes"
+    ordem_de_maquina: |
+      Reescrever no lugar 12 arquivos ativos do brandbook + design-system + apresentação.
+      Executar via 2 subagentes paralelos (Aglaia = brandbook, Harmonia = tokens/componentes).
+      Consolidar brandbook.html + apresentacao/index.html+pdf na sessão-raiz. Verificar
+      com grep + inspeção visual. Não commitar.
+    assinatura: { por: "hermes", em: "2026-07-05T00:00:00-03:00" }
+
+  # ── CAMADA 3 — ZEUS (decomposição + roteamento) ─────────────────────────────
+  zeus:
+    diagnostico: |
+      Missão de CORREÇÃO VISUAL. A v2 (2026-07-03) interpretou o dossiê V2 incorretamente
+      (símbolo "nö" em vez de n+O+ponto). Precisa reescrita fiel ao PDF do V2 (não ao
+      brandbook atual). Posicionamento, voz e arquétipo permanecem intactos. Roteamento
+      vai direto ao operacional — a especificação já está lavrada nos arquivos do V2.
+    decomposicao:
+      - parte: "Reescrita do brandbook (identidade visual + aplicações + manual)"
+        executivo_destino: "apolo"
+        motivo: "Handoff imediato a Aglaia (alina-wheeler)"
+      - parte: "Refazer tokens do design-system (paleta v2 + spacing/radius/shadow/motion + componentes)"
+        executivo_destino: "hefesto"
+        motivo: "Handoff imediato a Harmonia (design-system-architect + ui-engineer)"
+    paralelo:
+      - "aglaia (brandbook)"
+      - "harmonia (tokens + componentes)"
+    consolidacao: "sessao-raiz regenera brandbook.html + apresentacao/index.html + PDF via Chrome headless"
+    arbitragem: null
+    assinatura: { por: "zeus", em: "2026-07-05T00:00:00-03:00" }
+
+  # ── CAMADA 4 — EXECUTIVOS (especificação técnica) ───────────────────────────
+  executivos:
+    - agente: "apolo"
+      especificacao_tecnica: |
+        PRESERVAR (não tocar):
+          - Brand idea, arquétipo Cuidador+Mago, público, voz, tagline
+          - 01-posicionamento.md e 02-voz-da-marca.md
+        REESCREVER (via Aglaia):
+          - 03-identidade-visual.md: símbolo é n + O + ponto (3 elementos linguísticos),
+            NÃO "nö"; documentar as 6 variantes do PNG (mascote antropomórfico +
+            símbolo preto + símbolo mint + wordmark preto + wordmark mint + selo preto +
+            selo mint); manifesto transcrito LITERAL do PDF; wordmark NUTRIOS PRO
+            caixa-alta em Geometr415 Blk BT; Quip Regular para display/hero;
+            Inter Regular/Medium/SemiBold para body/UI/tabelas; paleta 8 cores dual-mode.
+          - 00-indice.md: refeito
+          - 04-aplicacoes.md: NOVO (uso em produto, apresentação, social, e-mail)
+          - 05-manual-operacional.md: NOVO (do/don't, checklist antes de publicar,
+            governança de aprovação)
+      handoff_operacional:
+        squad: "aglaia"
+        artefato: "brandbook v3 (03/00 reescritos, 04/05 novos)"
+      assinatura: { por: "apolo", em: "2026-07-05T00:00:00-03:00" }
+
+    - agente: "hefesto"
+      especificacao_tecnica: |
+        REESCREVER (via Harmonia):
+          - 02-tokens/tokens.json (DTCG):
+            • 8 cores primitivas literais do V2
+            • semânticas dual-mode (background/foreground/card/border/primary/accent/accent-warm/muted/destructive)
+            • spacing base 8px (0/4/8/12/16/24/32/48/64)
+            • radius soft (sm 6, md 10, lg 16, xl 24, pill 999)
+            • shadow 3 níveis soft (xs=focus, md=card, lg=modal)
+            • typography: Geometr415 Blk BT (wordmark), Quip Regular (display), Inter (UI)
+            • motion: fast 150ms, base 250ms, slow 400ms + easings
+          - 02-tokens/tokens.css: CSS vars HSL :root (light linen) + .dark (forest);
+            @font-face das 3 famílias
+          - 02-tokens/tailwind.tokens.js: preset consumindo tokens
+          - 02-tokens/leia-me.md: mapa marca→token atualizado
+          - 03-componentes.md: reescrito (Button, Input, Badge, Card, Table, Chart, Tabs,
+            Dialog, Toast); Terracotta apenas como accent-warm de categoria/badge (nunca CTA)
+          - 04-motion-e-icones.md: NOVO (motion tokens + biblioteca de ícones Lucide)
+          - Matriz WCAG 8×8 dos tokens novos
+      handoff_operacional:
+        squad: "harmonia"
+        artefato: "design-system v3 (tokens + componentes + motion/ícones)"
+      assinatura: { por: "hefesto", em: "2026-07-05T00:00:00-03:00" }
+
+  # ── CAMADA 5 — OPERACIONAL (execução) ───────────────────────────────────────
+  operacional:
+    - agente: "aglaia:alina-wheeler"
+      squad: "aglaia"
+      resultado: ""
+    - agente: "harmonia:design-system-architect"
+      squad: "harmonia"
+      resultado: ""
+
+  # ── SUBIDA — DIKE (verificação) ─────────────────────────────────────────────
+  dike:
+    confere_hash: true
+    reconciliacao: ""
+    degrau_da_quebra: null
+    justificativa: ""
+    veredito: ""
+
+  # ── TRANSVERSAL ─────────────────────────────────────────────────────────────
+  orcamento:
+    teto_rodadas: 2
+    teto_tempo: "1 sessão"
+    rodadas_gastas: 0
+
+  status_final: "em_execucao"
+
+  log_de_decisao:
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "sessao-raiz"
+      decisao: "Revogar interpretação 'nö' do contrato m-20260703"
+      porque: "PDF página 2 do V2 explicita: 'nö' é a nomenclatura REJEITADA pelo sistema; ideia correta é n+O+ponto com significado linguístico (N=início de NUTRI, O=OS de NUTRIOS, ponto=I final de NUTRI)"
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "sessao-raiz"
+      decisao: "Manter as 3 famílias tipográficas (Geometr415 Blk BT + Quip Regular + Inter)"
+      porque: "Ronan escolheu via AskUserQuestion: Geometr415 no wordmark + ativo 'O'; Quip em display/hero/subhead; Inter em UI/body/tabelas com tabular-nums"
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "sessao-raiz"
+      decisao: "Spacing 8px + radius soft + shadow 3 níveis + Terracotta accent-warm"
+      porque: "Ronan travou item-por-item as lacunas técnicas do V2 via AskUserQuestion"
+    - em: "2026-07-05T00:00:00-03:00"
+      por: "sessao-raiz"
+      decisao: "Sobrescrever in-place; dual-mode mantido"
+      porque: "Ronan escolheu via AskUserQuestion"
