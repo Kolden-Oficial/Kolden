@@ -1,0 +1,83 @@
+campaign,ad_group,keyword,match_type,initial_bid_usd,notes
+US_Brand_All_v1,AG_Brand_Vilela,vilela construction,exact,1.5,Marca principal
+US_Brand_All_v1,AG_Brand_Vilela,vilela construction inc,exact,1.5,Razao social oficial (planilha 09/07)
+US_Brand_All_v1,AG_Brand_Vilela,vilela construction ma,exact,1.5,Marca + geo curta
+US_Brand_All_v1,AG_Brand_Vilela,vilela construction massachusetts,exact,1.5,Marca + geo longa
+US_Brand_All_v1,AG_Brand_Vilela,vilela construction boston,exact,1.5,Marca + cidade core
+US_Brand_All_v1,AG_Brand_Vilela,vilela remodeling,exact,1.5,Variacao de servico
+US_Brand_All_v1,AG_Brand_Vilela,vilela contractor,exact,1.5,Variacao ocupacao
+US_Brand_All_v1,AG_Brand_Vilela,thiago araujo construction,exact,1.5,Nome do decisor
+US_Brand_All_v1,AG_Brand_Vilela,thiago vilela,phrase,1.2,Combinacao PF+PJ
+US_Brand_All_v1,AG_Brand_Vilela,vilela construction reviews,phrase,2.0,Alta intencao BOFU
+US_Brand_All_v1,AG_Brand_Vilela,vilela construction near me,phrase,2.0,Comercial local
+US_Brand_All_v1,AG_Brand_Vilela,vilela construction quote,phrase,2.5,Transacional puro
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,kitchen remodel,phrase,5.0,Cabeca-de-lista transacional
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,kitchen renovation,phrase,5.0,Sinonimo direto
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,kitchen remodeling,phrase,5.0,Gerundio (variacao alta busca)
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,kitchen remodel massachusetts,phrase,5.5,Geo estado
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,kitchen remodel boston,phrase,6.0,Geo cidade core
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,kitchen remodel newton ma,phrase,6.0,Geo cidade renda alta
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,kitchen renovation boston ma,phrase,6.0,Geo + sinonimo
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,kitchen remodel nh,phrase,4.5,Geo secundario NH
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,[kitchen remodel],exact,5.5,Exact match alto-intent
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,[kitchen renovation],exact,5.5,Exact match alto-intent
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,kitchen makeover,phrase,4.5,Variacao coloquial (mais TOFU)
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,custom kitchen design,phrase,5.5,Segmenta premium (Vilela Standard/Premium tiers)
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Remodel,luxury kitchen remodel,phrase,6.5,Segmenta ticket $65k (Luxury Kitchen Remodel)
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Contractor,kitchen contractor,phrase,5.5,Alta intencao contratacao
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Contractor,kitchen contractor near me,phrase,6.5,Local + BOFU
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Contractor,kitchen remodeler,phrase,5.5,Sinonimo profissao
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Contractor,kitchen remodeler near me,phrase,6.5,Local + BOFU
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Contractor,kitchen renovation contractor,phrase,5.5,Combinado
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Contractor,kitchen contractors massachusetts,phrase,5.5,Geo estado
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Contractor,kitchen contractors boston,phrase,6.0,Geo cidade
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Contractor,kitchen remodeling contractor ma,phrase,5.5,Geo + gerundio
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Contractor,[kitchen contractor near me],exact,6.0,Exact BOFU
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Contractor,[kitchen remodeler near me],exact,6.0,Exact BOFU
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Contractor,best kitchen contractor,phrase,4.5,Comercial (mais TOFU)
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Contractor,licensed kitchen contractor,phrase,5.0,Confianca (Vilela e Licensed)
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Cost,kitchen remodel cost,phrase,4.5,Pesquisa de preco (TOFU-MOFU)
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Cost,kitchen renovation cost,phrase,4.5,Sinonimo
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Cost,how much does a kitchen remodel cost,phrase,4.0,Pergunta direta
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Cost,kitchen remodel cost massachusetts,phrase,5.0,Geo estado
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Cost,kitchen remodel cost boston,phrase,5.0,Geo cidade
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Cost,average kitchen remodel cost,phrase,4.0,Pesquisa benchmark
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Cost,kitchen renovation estimate,phrase,5.0,Transacional (estimate = free CTA da Vilela)
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Cost,kitchen remodel quote,phrase,5.5,Transacional puro
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Cost,kitchen remodel price,phrase,4.5,Comercial
+US_Nonbrand_Kitchen_TOFU_v1,AG_Kitchen_Cost,kitchen remodel budget,phrase,4.0,Planejamento (TOFU)
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,bathroom remodel,phrase,4.5,Cabeca-de-lista transacional
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,bathroom renovation,phrase,4.5,Sinonimo direto
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,bathroom remodeling,phrase,4.5,Gerundio
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,bathroom remodel massachusetts,phrase,5.0,Geo estado
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,bathroom remodel boston,phrase,5.5,Geo cidade core
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,bathroom remodel newton ma,phrase,5.5,Geo renda alta
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,bathroom renovation boston,phrase,5.5,Geo + sinonimo
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,bathroom remodel nh,phrase,4.0,Geo NH
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,[bathroom remodel],exact,5.0,Exact match
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,[bathroom renovation],exact,5.0,Exact match
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,full bathroom remodel,phrase,5.0,Segmenta Full Bathroom Remodel $22k
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,small bathroom remodel,phrase,4.0,Segmenta Powder Room $12k
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Remodel,bathroom makeover,phrase,4.0,Variacao coloquial
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Master,master bathroom remodel,phrase,6.5,Ticket premium $40k
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Master,master bath remodel,phrase,6.5,Sinonimo curto
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Master,master bathroom renovation,phrase,6.5,Sinonimo direto
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Master,master bath renovation,phrase,6.5,Sinonimo curto
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Master,luxury bathroom remodel,phrase,7.0,Alto ticket
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Master,master bathroom remodel ma,phrase,7.0,Geo + premium
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Master,master bathroom remodel boston,phrase,7.0,Geo cidade + premium
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Master,[master bathroom remodel],exact,6.5,Exact premium
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Master,master suite bathroom,phrase,6.0,Variacao arquitetural
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Master,spa bathroom remodel,phrase,5.5,Angulo premium/wellness
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Master,high end bathroom remodel,phrase,6.0,Marcador de preco alto
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Custom_Shower,custom shower installation,phrase,5.5,Servico especifico (Tile Shower $9k)
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Custom_Shower,walk in shower installation,phrase,6.0,Alta busca em publico 55+
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Custom_Shower,walk in shower remodel,phrase,6.0,Variacao remodel
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Custom_Shower,custom tile shower,phrase,5.5,Especialidade Vilela (tile work)
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Custom_Shower,tile shower installation,phrase,5.5,Servico exato
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Custom_Shower,shower remodel,phrase,4.5,Cabeca-de-lista
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Custom_Shower,shower renovation,phrase,4.5,Sinonimo
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Custom_Shower,curbless shower installation,phrase,5.0,Angulo acessibilidade
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Custom_Shower,walk in shower massachusetts,phrase,5.5,Geo + intent
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Custom_Shower,[walk in shower installation],exact,6.0,Exact alto intent
+US_Nonbrand_Bathroom_TOFU_v1,AG_Bathroom_Custom_Shower,shower to tub conversion,phrase,5.0,Inverso (remove banheira p/ shower)

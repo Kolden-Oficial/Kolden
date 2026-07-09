@@ -1,0 +1,152 @@
+negative_keyword,match_type,applies_to,reason
+free,broad,all,ROADMAP §3.7 base — buscadores TOFU sem orcamento
+diy,broad,all,ROADMAP §3.7 base — DIY nao contrata contractor
+do it yourself,phrase,all,Variacao DIY em phrase
+jobs,broad,all,ROADMAP §3.7 base — busca de emprego
+job,broad,all,Variacao singular jobs
+hiring,broad,all,ROADMAP §3.7 base
+apprentice,broad,all,ROADMAP §3.7 base — busca por aprendizado
+salary,broad,all,ROADMAP §3.7 base — pesquisa de salario
+salaries,broad,all,Variacao plural salary
+wage,broad,all,Sinonimo salary
+wages,broad,all,Variacao plural wage
+school,broad,all,ROADMAP §3.7 base — cursos
+schools,broad,all,Variacao plural
+training,broad,all,Cursos de treinamento
+tutorial,broad,all,ROADMAP §3.7 base
+tutorials,broad,all,Variacao plural
+youtube,broad,all,ROADMAP §3.7 base — busca de video
+video,broad,all,Video tutorial (nao servico)
+complaint,broad,all,ROADMAP §3.7 base — reputacao negativa
+complaints,broad,all,Variacao plural
+lawsuit,broad,all,ROADMAP §3.7 base — juridico
+lawsuits,broad,all,Variacao plural
+sue,broad,all,Verbo lawsuit
+lawyer,broad,all,Contexto juridico
+attorney,broad,all,Contexto juridico
+reviews reddit,phrase,all,ROADMAP §3.7 base — reddit reviews (nao intent comercial)
+reddit,broad,all,Comunidade DIY/reviews (baixo intent)
+cheap,broad,all,ROADMAP §3.7 base — publico errado (Vilela e premium/std)
+cheapest,broad,all,Variacao superlativa
+low cost,phrase,all,Publico errado
+low income,phrase,all,Publico errado (fora do ICP)
+budget friendly,phrase,all,Publico errado
+craigslist,broad,all,Marketplace informal
+handyman,broad,all,Publico erra ocupacao (Vilela e licensed contractor)
+groupon,broad,all,Cupom/desconto (fora do modelo)
+coupon,broad,all,Cupom/desconto
+coupons,broad,all,Variacao plural
+discount,broad,all,Foco preco em vez de valor
+promo code,phrase,all,Codigo promocional
+rental,broad,all,ROADMAP §7 exclusao — locacao (nao renovar propriedade alugada)
+rentals,broad,all,Variacao plural
+tenant,broad,all,Contexto inquilino
+tenants,broad,all,Variacao plural
+landlord,broad,all,Contexto proprietario-locador (Vilela atende homeowners)
+insurance claim,phrase,all,Reforma pos-sinistro nao e servico da Vilela
+insurance claims,phrase,all,Variacao plural
+warranty,broad,all,Reclamacao de garantia (nao servico novo)
+warranties,broad,all,Variacao plural
+recall,broad,all,Reclamacao construtor anterior
+foreclosure,broad,all,Distressed property (fora do ICP)
+foreclosed,broad,all,Variacao
+short sale,phrase,all,Distressed property
+mold remediation,phrase,all,Servico especifico (Vilela nao lista)
+mold removal,phrase,all,Servico especifico
+asbestos,broad,all,Servico regulado especifico (Vilela nao faz)
+lead paint,phrase,all,Servico regulado especifico
+lead abatement,phrase,all,Servico regulado especifico
+fire damage,phrase,all,Restauracao pos-sinistro (fora)
+water damage,phrase,all,Restauracao pos-sinistro (fora)
+flood damage,phrase,all,Restauracao pos-sinistro (fora)
+disaster restoration,phrase,all,Restauracao pos-sinistro (fora)
+commercial,broad,all,B2B (Vilela e B2C residencial — dossie §A1)
+commercial contractor,phrase,all,B2B especifico
+industrial,broad,all,B2B
+office renovation,phrase,all,B2B espaco comercial
+restaurant remodel,phrase,all,B2B comercial
+retail buildout,phrase,all,B2B varejo
+tenant improvement,phrase,all,B2B fitout
+new construction,phrase,all,Vilela podou new construction do Price Book (dossie §C5)
+new home,phrase,all,New build (podado do escopo)
+new build,phrase,all,New build (podado do escopo)
+whole home build,phrase,all,New build (podado)
+whole house build,phrase,all,New build (podado)
+adu,broad,all,Accessory Dwelling Unit podado (dossie §C5)
+accessory dwelling unit,phrase,all,ADU podado
+addition,broad,all,Additions podado (dossie §C5 — sunroom/2nd story/bump-out)
+additions,broad,all,Variacao plural
+sunroom,broad,all,Addition podada
+bump out,phrase,all,Addition podada
+second story addition,phrase,all,Addition podada
+in law suite,phrase,all,Addition podada
+multifamily,broad,all,Multifamily conversion podado (dossie §C5)
+multi family,phrase,all,Variacao
+two family conversion,phrase,all,Multifamily podado
+duplex conversion,phrase,all,Multifamily podado
+condo conversion,phrase,all,Multifamily podado
+career,broad,all,Busca por emprego (variante hiring)
+careers,broad,all,Variacao plural
+resume,broad,all,Curriculo (busca de emprego)
+resumes,broad,all,Variacao plural
+craigslist jobs,phrase,all,Emprego
+indeed,broad,all,Job board
+ziprecruiter,broad,all,Job board
+license,broad,all,Consulta sobre licenca (nao contrata)
+licensing,broad,all,Consulta regulatoria
+license lookup,phrase,all,Verificar licenca de terceiros
+permit lookup,phrase,all,Consultar permit (nao contrata)
+building code,phrase,all,Consulta regulatoria
+image,broad,all,Busca visual (baixo intent)
+images,broad,all,Variacao plural
+photo,broad,all,Busca visual
+photos,broad,all,Variacao plural
+pinterest,broad,all,Inspiracao visual (baixo intent comercial)
+ideas,broad,all,Inspiracao (baixo intent transacional)
+inspiration,broad,all,Inspiracao (baixo intent)
+game,broad,all,Off-topic (mobile game placement)
+games,broad,all,Off-topic
+simulator,broad,all,Off-topic (design simulator, nao contratacao)
+minecraft,broad,all,Off-topic gaming
+roblox,broad,all,Off-topic gaming
+sims,broad,all,Off-topic gaming
+atlanta,broad,all,ROADMAP tinha GA por erro — geografia real e MA+NH (dossie §C1)
+georgia,broad,all,Estado errado
+ga,broad,all,Ambiguidade Georgia
+kennesaw,broad,all,Cidade errada (herdada do template)
+marietta,broad,all,Cidade GA
+alpharetta,broad,all,Cidade GA
+cobb county,phrase,all,County GA
+fulton county,phrase,all,County GA
+cherokee county,phrase,all,County GA (repetido em ROADMAP)
+new york,phrase,all,Estado fora (evita spillover metro NYC)
+nyc,broad,all,Cidade fora
+manhattan,broad,all,Cidade fora
+brooklyn,broad,all,Cidade fora
+connecticut,broad,all,Estado fora (spillover CT sul de MA)
+ct,broad,all,Ambiguidade CT
+rhode island,phrase,all,Estado fora
+ri,broad,all,Ambiguidade RI
+vermont,broad,all,Estado fora
+maine,broad,all,Estado fora
+providence,broad,all,Cidade RI
+hartford,broad,all,Cidade CT
+new haven,phrase,all,Cidade CT
+quincy,broad,all,ROADMAP §3.3 exclusao (mantida)
+brookline,broad,removed,Removido dos negativos — dossie §A1 core MA
+chelsea ma,phrase,all,Densidade renters (fora do ICP)
+dorchester,broad,all,Fora do target renda alta MA
+allston,broad,all,Populacao universitaria (renters)
+brighton ma,phrase,all,Populacao universitaria (renters)
+mission hill,phrase,all,Fora do ICP renda alta
+tenement,broad,all,Habitacao popular fora do ICP
+public housing,phrase,all,Habitacao publica fora do ICP
+section 8,phrase,all,Programa habitacional fora do ICP
+mobile home,phrase,all,Segmento habitacional fora do ICP
+manufactured home,phrase,all,Segmento fora do ICP
+trailer,broad,all,Habitacao fora do ICP
+rv,broad,all,Recreational vehicle fora do escopo
+tiny home,phrase,all,Fora do ICP (ticket muito baixo)
+container home,phrase,all,Fora do ICP
+prefab,broad,all,Prefabricado fora do escopo Vilela
+modular home,phrase,all,Prefabricado fora

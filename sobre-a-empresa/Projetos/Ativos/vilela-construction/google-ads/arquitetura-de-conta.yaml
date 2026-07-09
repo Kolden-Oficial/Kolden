@@ -1,0 +1,542 @@
+# Arquitetura de Conta — Google Ads Vilela Construction
+# Phase 0 do workflow *campaign-launch (Peitho)
+# Autor: traffic-chief + kasim-aslam (encarnados em subagente Claude)
+# Data: 2026-07-09
+# Contrato: Olimpo/contratos/missoes/m-20260709-google-ads-vilela.yaml
+# ROADMAP-pai: sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/ROADMAP.md §3
+#
+# NOTA DE GEOGRAFIA (CRÍTICA):
+#   O ROADMAP e o Contrato ainda referenciam Kennesaw/GA + Greater Atlanta. Esta arquitetura
+#   segue a fonte-de-verdade atualizada (dossie.md, rodada 3 de 09/07 com Ronan): operação
+#   real = Massachusetts + New Hampshire. A landing pública (vilela-bright-space) menciona
+#   Georgia como resíduo do template Lovable e está sendo corrigida pelo Ronan (ver
+#   dossie-site-vilela-construction.md). O ROADMAP §3.3 precisa ser retificado em rodada
+#   seguinte para MA + NH.
+#
+# NAMING SCHEMA (skill arquitetura-enterprise-ppc, adaptado para $300/mês):
+#   {Mercado}_{Tier}_{Linha}_{Publico}_{Versao}
+#   Mercado = US (país); Tier = Brand/Nonbrand/Remkt; Linha = temática; Publico = TOFU/BOFU;
+#   Versao = v1..vN
+#   Ex.: US_Nonbrand_Kitchen_TOFU_v1
+
+---
+
+account:
+  id: "TBD_[B4]"   # Bloqueio B4 do ROADMAP §6 — Bernardo documenta em D+1
+  currency: "USD"
+  timezone: "America/New_York"
+  mcc_parent: "kolden-mcc"   # [VALIDADO — modelo de agência Kolden]
+  auto_tagging: true          # [OBRIGATÓRIO — sem auto-tagging, gclid não chega no form]
+  enhanced_conversions:
+    status: "ativar_em_D+7"   # Onda 1 item 1.6
+    metodo: "google_tag"      # via GTM-NG8LP66S
+    campos: ["email", "phone_number"]
+
+# Total budget diário-alvo: USD 10/dia (=$300/mês) [VALIDADO — Contrato §D1]
+budget:
+  mensal_total_usd: 300
+  diario_total_usd: 10
+  split_por_campanha:
+    US_Brand_All_v1:            { pct: 10, diario: 1.0, mensal: 30 }
+    US_Nonbrand_Kitchen_TOFU_v1: { pct: 50, diario: 5.0, mensal: 150 }
+    US_Nonbrand_Bathroom_TOFU_v1: { pct: 30, diario: 3.0, mensal: 90 }
+    US_Remkt_All_LP-view_v1:     { pct: 10, diario: 1.0, mensal: 30 }
+  observacao: |
+    Split calibrado para USD 300/mês seguindo ROADMAP §3.2. Kitchen tem 50%
+    porque é o maior ticket ($30k–$65k, ver dossie.md §B2.5). Bathroom 30%
+    porque segundo maior ($12k–$40k). Brand 10% para proteger nome próprio
+    a CPC baixo. Remarketing 10% mínimo viável para Display — se em D+7
+    audience < 100 pessoas, pausar e realocar 100% para Kitchen.
+
+# Geolocalização — MA + NH conforme dossie.md §A1 (não Georgia como o ROADMAP diz)
+geo_targeting:
+  include_primario:
+    - name: "Greater Boston core"
+      unidade: "cidade+raio"
+      raio_mi: 25
+      locais:
+        - "Boston, MA"
+        - "Cambridge, MA"
+        - "Somerville, MA"
+      bid_adjustment_pct: +20   # concentração de idosos + high-ticket homeowners
+    - name: "Eastern Massachusetts"
+      unidade: "cidade+raio"
+      raio_mi: 20
+      locais:
+        - "Newton, MA"
+        - "Brookline, MA"        # incluir (é core MA, não Quincy-área)
+        - "Framingham, MA"
+        - "Waltham, MA"
+        - "Lexington, MA"        # renda alta, homeowners 55+
+        - "Wellesley, MA"        # ticket premium
+      bid_adjustment_pct: +10
+  include_secundario:
+    - name: "Southern New Hampshire"
+      unidade: "cidade+raio"
+      raio_mi: 15
+      locais:
+        - "Nashua, NH"
+        - "Manchester, NH"
+        - "Salem, NH"
+        - "Portsmouth, NH"
+      bid_adjustment_pct: -20   # ticket menor, ciclo de decisão mais longo
+  exclude_explicito:
+    - "Quincy, MA"     # confirmado exclusão no ROADMAP §3.3 (permanece)
+    - "Everett, MA"    # ROADMAP §3.3 dizia "include secundário MA" mas era erro herdado do briefing Atlanta — remover
+    - "Chelsea, MA"    # densidade de renters, não homeowners
+  device_adjustments:
+    mobile: +15         # público sênior busca no celular durante o dia
+    desktop: 0
+    tablet: 0
+  daypart_adjustments:
+    seg_a_sex_08h_18h: +10    # horário comercial (idosos aposentados navegam)
+    seg_a_sex_18h_22h: +5     # decisor pós-jantar
+    sab_09h_16h: +15          # planejamento de reforma no fim de semana
+    dom_09h_16h: +10
+    madrugada_00h_06h: -50    # exclui cliques cegos
+  sazonalidade:
+    janela_ativa: "maio-novembro"
+    politica_dezembro_abril: "pausar campanhas Non-brand; manter só Brand com budget reduzido a $15/mês"
+
+# Conversion Actions — spec do valor por lead
+conversion_actions:
+  primary:
+    name: "Vilela_Lead_Form"
+    categoria: "Submit lead form"
+    contagem: "One"                # 1 conversão por click (evita inflar leads duplicados)
+    janela_post_click_dias: 90     # high-consideration; 30d default corta demais
+    janela_post_view_dias: 1
+    valor_default_usd: 4800        # [BENCHMARK — ver ROADMAP §3.9 e diagnóstico §CP4]
+    valor_dinamico_via_hidden_field: "service_selected"
+    valores_por_servico:
+      kitchen_premium: 5200        # ticket bruto $45k×40%×20% + prêmio Luxury
+      kitchen_standard: 4800
+      bathroom_master: 3200        # $40k×40%×20%
+      bathroom_full: 2400
+      basement_full: 4800          # basement finishing turnkey (ver dossie §C2)
+      flooring: 960                # $12k×40%×20%
+      painting: 400
+      unknown: 4800                # default se hidden field vazio
+    enhanced_conversions: true
+    include_in_conversions_column: true
+    inclusao_em_bidding: "primaria_ate_D+30_apenas"   # até OCI Camada 2 estabilizar
+  secondary_planejada:
+    name: "Vilela_Phone_Call"
+    categoria: "Phone call lead"
+    status_atual: "aguardando_telefone_real (bloqueio B2)"
+    ativar_em: "D+3 se B2 resolvido"
+    duracao_minima_seg: 60         # filtra ligações que só ouvem menu
+  observacao_valor: |
+    Fórmula: valor = ticket_medio × margem_bruta × taxa_fechamento
+    Assumindo $60k × 40% × 20% = $4.800. Recalibrar em D+30 quando Thiago
+    responder B1 (taxa histórica de fechamento + margem bruta). Kasim
+    Aslam adverte: valor de conversão errado é o erro mais comum em
+    Smart Bidding — melhor entrar CONSERVADOR ($4.800) do que agressivo
+    ($10k+) e queimar orçamento em cliques inflados pelo algoritmo.
+
+# ══════════════════════════════════════════════════════════════════════════════
+# CAMPANHAS
+# ══════════════════════════════════════════════════════════════════════════════
+
+campanhas:
+
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: "US_Brand_All_v1"
+    type: "Search"
+    status_inicial: "paused"     # ativar só após tag AW- disparando em test-lead (Gate D+7)
+    budget_daily_usd: 1.0
+    bidding:
+      fase_1_semanas_1_2: "Manual CPC"
+      fase_1_max_cpc_usd: 2.5     # brand tem QS alto, CPC natural baixo
+      fase_2_semanas_3_4: "Maximize Conversions"
+      fase_3_mes_2_plus: "tCPA"
+      fase_3_target_cpa_usd: 35   # brand converte muito melhor que non-brand
+    locations_ref: "geo_targeting"
+    languages: ["English"]
+    networks:
+      search_partners: false      # Brand: só Google.com, evita canibalizar
+      display_expansion: false
+    ad_rotation: "optimize"       # Google escolhe melhor RSA
+    ad_groups:
+      - id: "AG_Brand_Vilela"
+        max_cpc_usd: 2.5
+        keywords:
+          - { text: "vilela construction", match: "exact", initial_bid_usd: 1.5 }
+          - { text: "vilela construction inc", match: "exact", initial_bid_usd: 1.5 }
+          - { text: "vilela construction ma", match: "exact", initial_bid_usd: 1.5 }
+          - { text: "vilela construction massachusetts", match: "exact", initial_bid_usd: 1.5 }
+          - { text: "vilela construction boston", match: "exact", initial_bid_usd: 1.5 }
+          - { text: "vilela remodeling", match: "exact", initial_bid_usd: 1.5 }
+          - { text: "vilela contractor", match: "exact", initial_bid_usd: 1.5 }
+          - { text: "thiago araujo construction", match: "exact", initial_bid_usd: 1.5 }
+          - { text: "thiago vilela", match: "phrase", initial_bid_usd: 1.2 }
+          - { text: "vilela construction reviews", match: "phrase", initial_bid_usd: 2.0 }
+          - { text: "vilela construction near me", match: "phrase", initial_bid_usd: 2.0 }
+          - { text: "vilela construction quote", match: "phrase", initial_bid_usd: 2.5 }
+        rsa_ref: "copy/rsa-brand.md"    # Caliope escreve na Onda 3 Phase 1
+        pin_strategy:
+          h1_pinned_position_1: "Vilela Construction | Official"
+          h2_pinned_position_2: "Free Estimate — Kitchen, Bathroom, Basement"
+          h3_pinned_position_3: null   # rotativa
+    extensions:
+      sitelinks:
+        - { text: "Free Estimate", url_suffix: "/estimate" }
+        - { text: "Kitchen Remodel", url_suffix: "#kitchen" }
+        - { text: "Bathroom Renovation", url_suffix: "#bathroom" }
+        - { text: "Portfolio", url_suffix: "#portfolio" }
+      callouts:
+        - "Licensed & Insured"
+        - "Free In-Home Consultation"
+        - "Serving MA & Southern NH"
+        - "25+ Years Experience"
+        - "Unmatched Cleanliness"
+        - "Transparent Communication"
+      structured_snippets:
+        header: "Services"
+        values: ["Kitchen", "Bathroom", "Basement", "Flooring", "Painting"]
+      call_extension: "TBD_[B2]"       # bloqueia até Thiago fornecer
+    negativas_de_campanha:
+      - "-jobs"
+      - "-hiring"
+      - "-career"
+      - "-complaint"
+      - "-scam"
+      - "-lawsuit"
+      - "-reviews reddit"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: "US_Nonbrand_Kitchen_TOFU_v1"
+    type: "Search"
+    status_inicial: "paused"
+    budget_daily_usd: 5.0
+    bidding:
+      fase_1_semanas_1_2: "Maximize Clicks"
+      fase_1_max_cpc_usd: 8.0     # benchmark construção Atlanta era $4-8; MA/NH é mais caro, ajusto para $6-10
+      fase_2_semanas_3_4: "Manual CPC"    # transição controlada
+      fase_2_max_cpc_usd: 7.0
+      fase_3_mes_2_plus: "tCPA"
+      fase_3_target_cpa_usd: 75    # ROADMAP §3.8 dizia $60, calibrado para MA+ticket alto
+      fase_3_pre_requisito: ">=15 conversoes ultimos 30d"
+    locations_ref: "geo_targeting"
+    languages: ["English"]
+    networks:
+      search_partners: false
+      display_expansion: false
+    ad_rotation: "optimize"
+    ad_groups:
+      - id: "AG_Kitchen_Remodel"
+        max_cpc_usd: 7.0
+        keywords:
+          - { text: "kitchen remodel", match: "phrase", initial_bid_usd: 5.0 }
+          - { text: "kitchen renovation", match: "phrase", initial_bid_usd: 5.0 }
+          - { text: "kitchen remodeling", match: "phrase", initial_bid_usd: 5.0 }
+          - { text: "kitchen remodel massachusetts", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "kitchen remodel boston", match: "phrase", initial_bid_usd: 6.0 }
+          - { text: "kitchen remodel newton ma", match: "phrase", initial_bid_usd: 6.0 }
+          - { text: "kitchen renovation boston ma", match: "phrase", initial_bid_usd: 6.0 }
+          - { text: "kitchen remodel nh", match: "phrase", initial_bid_usd: 4.5 }
+          - { text: "[kitchen remodel]", match: "exact", initial_bid_usd: 5.5 }
+          - { text: "[kitchen renovation]", match: "exact", initial_bid_usd: 5.5 }
+          - { text: "kitchen makeover", match: "phrase", initial_bid_usd: 4.5 }
+          - { text: "custom kitchen design", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "luxury kitchen remodel", match: "phrase", initial_bid_usd: 6.5 }
+        rsa_ref: "copy/rsa-kitchen-remodel.md"
+        pin_strategy:
+          h1_pinned_position_1: "Kitchen Remodel in {LOCATION(City)}"
+          h2_pinned_position_2: "Free Estimate — 25+ Years, MA & NH"
+          h3_pinned_position_3: null
+
+      - id: "AG_Kitchen_Contractor"
+        max_cpc_usd: 7.5
+        keywords:
+          - { text: "kitchen contractor", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "kitchen contractor near me", match: "phrase", initial_bid_usd: 6.5 }
+          - { text: "kitchen remodeler", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "kitchen remodeler near me", match: "phrase", initial_bid_usd: 6.5 }
+          - { text: "kitchen renovation contractor", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "kitchen contractors massachusetts", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "kitchen contractors boston", match: "phrase", initial_bid_usd: 6.0 }
+          - { text: "kitchen remodeling contractor ma", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "[kitchen contractor near me]", match: "exact", initial_bid_usd: 6.0 }
+          - { text: "[kitchen remodeler near me]", match: "exact", initial_bid_usd: 6.0 }
+          - { text: "best kitchen contractor", match: "phrase", initial_bid_usd: 4.5 }
+          - { text: "licensed kitchen contractor", match: "phrase", initial_bid_usd: 5.0 }
+        rsa_ref: "copy/rsa-kitchen-contractor.md"
+        pin_strategy:
+          h1_pinned_position_1: "Licensed Kitchen Contractor — MA & NH"
+          h2_pinned_position_2: "Free Estimate, Clean Job Site, No Hidden Costs"
+          h3_pinned_position_3: null
+
+      - id: "AG_Kitchen_Cost"
+        max_cpc_usd: 6.0
+        keywords:
+          - { text: "kitchen remodel cost", match: "phrase", initial_bid_usd: 4.5 }
+          - { text: "kitchen renovation cost", match: "phrase", initial_bid_usd: 4.5 }
+          - { text: "how much does a kitchen remodel cost", match: "phrase", initial_bid_usd: 4.0 }
+          - { text: "kitchen remodel cost massachusetts", match: "phrase", initial_bid_usd: 5.0 }
+          - { text: "kitchen remodel cost boston", match: "phrase", initial_bid_usd: 5.0 }
+          - { text: "average kitchen remodel cost", match: "phrase", initial_bid_usd: 4.0 }
+          - { text: "kitchen renovation estimate", match: "phrase", initial_bid_usd: 5.0 }
+          - { text: "kitchen remodel quote", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "kitchen remodel price", match: "phrase", initial_bid_usd: 4.5 }
+          - { text: "kitchen remodel budget", match: "phrase", initial_bid_usd: 4.0 }
+        rsa_ref: "copy/rsa-kitchen-cost.md"
+        pin_strategy:
+          h1_pinned_position_1: "Kitchen Remodel Cost in {LOCATION(City)}"
+          h2_pinned_position_2: "Free Detailed Estimate — No Hidden Fees"
+          h3_pinned_position_3: null
+    extensions:
+      sitelinks:
+        - { text: "Free Estimate", url_suffix: "/estimate" }
+        - { text: "Kitchen Portfolio", url_suffix: "#kitchen-portfolio" }
+        - { text: "How We Work", url_suffix: "#process" }
+        - { text: "Testimonials", url_suffix: "#testimonials" }
+      callouts:
+        - "Licensed & Insured"
+        - "Free In-Home Consultation"
+        - "Clean Job Site Daily"
+        - "No Hidden Costs"
+        - "25+ Years Experience"
+        - "Serving MA & Southern NH"
+      structured_snippets:
+        header: "Services"
+        values: ["Full Remodel", "Cabinet Refacing", "Countertops", "Backsplash", "Custom Design"]
+      call_extension: "TBD_[B2]"
+    negativas_de_campanha:
+      # (ver negativas-master.csv aplica-se_a=US_Nonbrand_Kitchen_TOFU_v1)
+      lista_completa_em: "keywords/negativas-master.csv"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: "US_Nonbrand_Bathroom_TOFU_v1"
+    type: "Search"
+    status_inicial: "paused"
+    budget_daily_usd: 3.0
+    bidding:
+      fase_1_semanas_1_2: "Maximize Clicks"
+      fase_1_max_cpc_usd: 7.0
+      fase_2_semanas_3_4: "Manual CPC"
+      fase_2_max_cpc_usd: 6.0
+      fase_3_mes_2_plus: "tCPA"
+      fase_3_target_cpa_usd: 65
+      fase_3_pre_requisito: ">=15 conversoes ultimos 30d"
+    locations_ref: "geo_targeting"
+    languages: ["English"]
+    networks:
+      search_partners: false
+      display_expansion: false
+    ad_rotation: "optimize"
+    ad_groups:
+      - id: "AG_Bathroom_Remodel"
+        max_cpc_usd: 6.0
+        keywords:
+          - { text: "bathroom remodel", match: "phrase", initial_bid_usd: 4.5 }
+          - { text: "bathroom renovation", match: "phrase", initial_bid_usd: 4.5 }
+          - { text: "bathroom remodeling", match: "phrase", initial_bid_usd: 4.5 }
+          - { text: "bathroom remodel massachusetts", match: "phrase", initial_bid_usd: 5.0 }
+          - { text: "bathroom remodel boston", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "bathroom remodel newton ma", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "bathroom renovation boston", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "bathroom remodel nh", match: "phrase", initial_bid_usd: 4.0 }
+          - { text: "[bathroom remodel]", match: "exact", initial_bid_usd: 5.0 }
+          - { text: "[bathroom renovation]", match: "exact", initial_bid_usd: 5.0 }
+          - { text: "full bathroom remodel", match: "phrase", initial_bid_usd: 5.0 }
+          - { text: "small bathroom remodel", match: "phrase", initial_bid_usd: 4.0 }
+          - { text: "bathroom makeover", match: "phrase", initial_bid_usd: 4.0 }
+        rsa_ref: "copy/rsa-bathroom-remodel.md"
+        pin_strategy:
+          h1_pinned_position_1: "Bathroom Remodel in {LOCATION(City)}"
+          h2_pinned_position_2: "Free Estimate — 25+ Years, Clean Sites"
+          h3_pinned_position_3: null
+
+      - id: "AG_Bathroom_Master"
+        max_cpc_usd: 7.5     # ticket premium justifica CPC maior
+        keywords:
+          - { text: "master bathroom remodel", match: "phrase", initial_bid_usd: 6.5 }
+          - { text: "master bath remodel", match: "phrase", initial_bid_usd: 6.5 }
+          - { text: "master bathroom renovation", match: "phrase", initial_bid_usd: 6.5 }
+          - { text: "master bath renovation", match: "phrase", initial_bid_usd: 6.5 }
+          - { text: "luxury bathroom remodel", match: "phrase", initial_bid_usd: 7.0 }
+          - { text: "master bathroom remodel ma", match: "phrase", initial_bid_usd: 7.0 }
+          - { text: "master bathroom remodel boston", match: "phrase", initial_bid_usd: 7.0 }
+          - { text: "[master bathroom remodel]", match: "exact", initial_bid_usd: 6.5 }
+          - { text: "master suite bathroom", match: "phrase", initial_bid_usd: 6.0 }
+          - { text: "spa bathroom remodel", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "high end bathroom remodel", match: "phrase", initial_bid_usd: 6.0 }
+        rsa_ref: "copy/rsa-bathroom-master.md"
+        pin_strategy:
+          h1_pinned_position_1: "Luxury Master Bath Remodel — MA & NH"
+          h2_pinned_position_2: "Free Design Consultation, 25+ Years"
+          h3_pinned_position_3: null
+
+      - id: "AG_Bathroom_Custom_Shower"
+        max_cpc_usd: 6.5
+        keywords:
+          - { text: "custom shower installation", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "walk in shower installation", match: "phrase", initial_bid_usd: 6.0 }
+          - { text: "walk in shower remodel", match: "phrase", initial_bid_usd: 6.0 }
+          - { text: "custom tile shower", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "tile shower installation", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "shower remodel", match: "phrase", initial_bid_usd: 4.5 }
+          - { text: "shower renovation", match: "phrase", initial_bid_usd: 4.5 }
+          - { text: "curbless shower installation", match: "phrase", initial_bid_usd: 5.0 }
+          - { text: "walk in shower massachusetts", match: "phrase", initial_bid_usd: 5.5 }
+          - { text: "[walk in shower installation]", match: "exact", initial_bid_usd: 6.0 }
+          - { text: "shower to tub conversion", match: "phrase", initial_bid_usd: 5.0 }
+        rsa_ref: "copy/rsa-bathroom-shower.md"
+        pin_strategy:
+          h1_pinned_position_1: "Custom Shower Install — MA & NH"
+          h2_pinned_position_2: "Walk-In, Curbless, Tile — Free Estimate"
+          h3_pinned_position_3: null
+    extensions:
+      sitelinks:
+        - { text: "Free Estimate", url_suffix: "/estimate" }
+        - { text: "Bathroom Portfolio", url_suffix: "#bathroom-portfolio" }
+        - { text: "Testimonials", url_suffix: "#testimonials" }
+        - { text: "How We Work", url_suffix: "#process" }
+      callouts:
+        - "Licensed & Insured"
+        - "Free In-Home Consultation"
+        - "Clean Job Site Daily"
+        - "No Hidden Costs"
+        - "Custom Tile Work"
+        - "Serving MA & Southern NH"
+      structured_snippets:
+        header: "Services"
+        values: ["Full Remodel", "Custom Shower", "Vanity", "Tile Work", "Accessibility"]
+      call_extension: "TBD_[B2]"
+    negativas_de_campanha:
+      lista_completa_em: "keywords/negativas-master.csv"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: "US_Remkt_All_LP-view_v1"
+    type: "Display"       # Standard Display Remarketing (não Discovery/PMax)
+    status_inicial: "paused"
+    budget_daily_usd: 1.0
+    bidding:
+      fase_1_semanas_1_2: "Manual CPM"
+      fase_1_max_cpm_usd: 5.0
+      fase_2_semanas_3_4: "Maximize Conversions"
+      fase_3_mes_2_plus: "tCPA"
+      fase_3_target_cpa_usd: 40   # remkt tem CPA muito mais baixo
+    locations_ref: "geo_targeting"
+    languages: ["English"]
+    networks:
+      google_display_network: true
+      youtube: false             # sem asset de vídeo ainda
+      gmail: false               # baixa relevância para reforma
+    audiences:
+      include:
+        - name: "LP_Visitors_30d"
+          tipo: "Website Visitors"
+          fonte: "GTM-NG8LP66S"
+          janela_dias: 30
+          filtro: "visited_landing_page_but_did_not_submit_form"
+        - name: "LP_Visitors_7d_engaged"
+          tipo: "Website Visitors"
+          fonte: "GTM-NG8LP66S"
+          janela_dias: 7
+          filtro: "scroll_depth_>50%_or_time_on_page_>60s"
+          bid_adjustment_pct: +25   # engajados convertem melhor
+      exclude:
+        - name: "Convertidos_90d"
+          tipo: "Website Visitors"
+          janela_dias: 90
+          filtro: "form_submitted"    # não bombardear quem já virou lead
+    ad_groups:
+      - id: "AG_Remkt_All_Services"
+        max_cpm_usd: 5.0
+        audience_ref: "LP_Visitors_30d"
+        frequency_cap:
+          impressions_por_dia: 5
+          impressions_por_semana: 15
+        placement_exclusions:
+          - "mobile_apps"           # baixa qualidade
+          - "gaming_content"        # off-context
+          - "youtube_kids"
+        display_ads_ref: "assets/banners-remkt-vilela"
+        display_banners_planejados:
+          - { size: "300x250", tema: "kitchen_before_after" }
+          - { size: "300x250", tema: "bathroom_hero_shot" }
+          - { size: "728x90",  tema: "brand_promise_free_estimate" }
+          - { size: "160x600", tema: "process_transparency" }
+          - { size: "320x50",  tema: "mobile_cta_free_estimate" }   # mobile leaderboard
+    gate_pausa:
+      condicao: "audience_LP_Visitors_30d < 100 pessoas em D+7"
+      acao: "pausar_e_realocar_para_US_Nonbrand_Kitchen_TOFU_v1"
+      responsavel: "performance-analyst"
+
+# ══════════════════════════════════════════════════════════════════════════════
+# FORA DA PRIMEIRA ONDA (documentado explicitamente)
+# ══════════════════════════════════════════════════════════════════════════════
+fora_de_escopo_v1:
+  performance_max:
+    razao: "USD 300/mês insuficiente para learning (<15 conv/mês); sem creative library com video; risco de canibalizar Brand"
+    reavaliar_em: "D+60 se >=15 conversoes/mes E creative library de video pronta"
+  competitor_campaign:
+    razao: "USD 300/mês drena rápido em keyword de concorrente sem retorno em ticket alto B2C"
+    reavaliar_em: "D+90 se non-brand estabilizar CPA < $75"
+  youtube_ads:
+    razao: "Sem assets de video; ticket alto exige video de qualidade (custa mais que 1 mes de budget)"
+    reavaliar_em: "quando Aglaia entregar video institucional"
+  display_prospecting:
+    razao: "Historicamente vira desperdicio em conta pequena (<$1k/mes)"
+    reavaliar_em: "nunca em v1; talvez v2 com >=15 conv/mes"
+  google_shopping:
+    razao: "Vilela nao vende produto — vende servico. Shopping requer feed de produto."
+    reavaliar_em: "N/A"
+  lead_form_extension:
+    razao: "Requer tag AW- disparando primeiro para nao contaminar Conversion Action com leads mal qualificados"
+    reavaliar_em: "D+14 apos Camada 1 estavel"
+
+# ══════════════════════════════════════════════════════════════════════════════
+# GUARDRAILS (vetos do squad Peitho aplicados)
+# ══════════════════════════════════════════════════════════════════════════════
+guardrails:
+  veto_sem_teto_de_gasto:
+    aplicacao: "Cada campanha tem budget_daily_usd fixo. Escala > USD 30/dia requer aprovacao Ronan."
+  veto_sem_pixel_e_rastreio:
+    aplicacao: "Todas as campanhas status_inicial=paused. Ativar SOMENTE apos Gate D+7 (tag AW- disparando + Enhanced Conversions match rate >=40%)."
+  veto_claim_que_viola_politica:
+    aplicacao: |
+      Copy NAO pode conter: "guaranteed lowest price", "we beat any quote",
+      "before/after miracle" com claims medicais, "financing 0%" sem disclaimer,
+      "get rich", "no work required". Home Services categoria checked.
+  veto_sem_aprovacao_de_budget:
+    aplicacao: "Mudanca de budget acima de USD 30/dia por campanha (100% do budget total) requer aprovacao Ronan por escrito antes de aplicar."
+  veto_credencial_texto_puro:
+    aplicacao: "Nenhum ID de conta, chave de API ou credencial fora do Infisical. IDs no YAML acima sao PLACEHOLDERS que serao substituidos apenas no painel Ads/GTM."
+
+# ══════════════════════════════════════════════════════════════════════════════
+# PLANO DE CORTE E ESCALA
+# ══════════════════════════════════════════════════════════════════════════════
+regras_de_otimizacao:
+  corte_semanal:
+    - condicao: "keyword com >=20 clicks e 0 conversoes em 14d"
+      acao: "pausar keyword"
+    - condicao: "ad_group com CPA > 2x target_cpa em 14d"
+      acao: "reduzir budget 50%; revisar copy + keywords"
+    - condicao: "SQR: query com CTR <0.5% ou CVR <1%"
+      acao: "adicionar como negativa (skill search-query-analise)"
+  escala_condicional:
+    D+30:
+      - condicao: "CPA < $75 E leads >= 10/mes"
+        acao: "escalar budget +50% (150 -> 225 na Kitchen)"
+        requer_aprovacao: true
+      - condicao: "CPA < $50 E leads >= 15/mes"
+        acao: "escalar budget +100% (150 -> 300 na Kitchen)"
+        requer_aprovacao: true
+      - condicao: "CPA > $150 em qualquer campanha"
+        acao: "cortar budget 30% + refazer keyword research + auditar RSA"
+        requer_aprovacao: false
+    D+45:
+      - condicao: "CPA < $75 sustentado + audience Remkt >= 300"
+        acao: "considerar PMax como campanha 5"
+        requer_aprovacao: true
+  gates_hard:
+    - "Se gasto real dia_1 > 2x budget_daily -> PAUSAR TUDO + alerta Ronan (Google Ads pode overspend em ate 200% do budget diario)"
+    - "Se CTR agregado < 1% em D+7 -> revisao RSA + pin strategy antes de continuar"
+    - "Se Quality Score agregado < 5 em D+14 -> revisao LP + keyword-copy alignment"
+
+# ══════════════════════════════════════════════════════════════════════════════
+# FIM
+# ══════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,267 @@
+# Contrato de Missão — Canal Google Ads Vilela Construction
+# Schema: Olimpo/contratos/contrato-de-missao.schema.md
+# Lavrado por Hermes (Camada 2) a partir de briefing do Ronan em 2026-07-09.
+---
+missao:
+  id: "m-20260709-google-ads-vilela"
+
+  # ── CAMADA 1 — HUMANO (lacrada, imutável) ───────────────────────────────────
+  intencao_original:
+    input_cru: |
+      @Hermes preciso construir o meu canal de aquisição no google ads do
+      c:\Kolden\sobre-a-empresa\Projetos\Ativos\vilela-construction. Faça um
+      roadmap completo na pasta para que eu consiga entender absolutamente tudo
+      sobre o projeto. Em paralelo acione o squad @Peitho para a criação
+      completa das campanhas, me faça perguntas para ficar mais personalizado,
+      porém tudo sobre o cliente está na pasta, inclusive vamos investir no
+      google ads em torno de 300 dólares, faça uma estratégia impecável para
+      conseguirmos capturar mais lead para o site, então crie uma estrutura
+      robusta e completa agora.
+    canal: "chat"
+    recebida_em: "2026-07-09T00:00:00Z"
+    hash: "b7f2c6a94e18d5a3f6b8ce09248de20551c4a3b2ee3a7b1c8f5d9a4b6c8e0f3a"
+
+  # ── CAMADA 2 — HERMES (tradução de intenção) ────────────────────────────────
+  hermes:
+    dor:
+      objetivo_real: |
+        Entregar (a) roadmap único e completo do canal Google Ads na pasta do
+        projeto Vilela Construction que o Ronan lê e entende tudo em uma leitura;
+        (b) 3 campanhas Search + 1 Remarketing prontas para lançar (Brand +
+        Non-brand Kitchen + Non-brand Bathroom + Display Remarketing) via
+        workflow *campaign-launch do Peitho; (c) Camada 1 (tag client-side) +
+        Camada 2 (OCI via gclid GHL sombra) + Camada 3 (Enhanced Conversions)
+        instrumentadas antes de lançar; (d) LP com telefone real, 3 testimonials
+        reais, og:image branded e captura de gclid; (e) Meta Ads instrumentado
+        em paralelo (frente 2 do pixel-specialist). Investimento Google Ads =
+        USD 300/mês; Meta Ads = USD 700/mês (split confirmado do contrato de
+        USD 1.000/mês de mídia).
+      criterio_de_sucesso: |
+        1. Cobertura: roadmap com 10 seções + 4 ondas + 4 decisões + 7 bloqueios
+           mapeados; artefatos: ROADMAP.md + estrategia-vilela + arquitetura-de-conta
+           + keywords/ + copy/ + conversion-actions + ghl-shadow-integration +
+           meta-ads/ + landing-page-fixes + clausula-ghl-sombra + perguntas-thiago.
+        2. Rastreabilidade: cada número com tag [VALIDADO|BENCHMARK|PENDENTE];
+           valor de conversão inicial USD 4.800 [BENCHMARK] até B1 responder.
+        3. Vetos Peitho respeitados: sem_pixel_e_rastreio (Ondas 0-1 bloqueiam
+           lançamento), sem_teto_de_gasto (cap por campanha), claim_que_viola_politica
+           (copy Home Services), sem_aprovacao_de_budget, credencial_texto_puro.
+        4. LP profissional em D+7: telefone real, testimonials reais, gclid
+           persistido, Meta Pixel instalado, og:image branded.
+        5. 3 campanhas + 1 Remarketing no ar em D+10 com auto-tagging e QA
+           end-to-end passando.
+        6. Auditoria 200-checkpoints D+30 com health score ≥ 70 + CPA < USD 100.
+      restricoes:
+        prazo: "D+10 lançamento; D+30 primeira auditoria; até novembro 2026 (janela sazonal)"
+        orcamento: "Google USD 300/mês, Meta USD 700/mês; contrato Kolden USD 800/mês agência + USD 1.000/mês mídia (6 meses)"
+        proibicoes:
+          - "Não ativar CRM próprio da Vilela (fora do contrato até out/2026)."
+          - "Não escalar PMax na primeira onda ($300/mês insuficiente para learning)."
+          - "Não escrever copy antes/depois exagerada (política Google Ads Home Services)."
+          - "Não usar testimonials placeholder na LP (risco FTC nos EUA)."
+          - "Não gastar em Display prospecting (só Remarketing autorizado)."
+          - "Não hospedar leads Vilela em GHL Kolden sem cláusula escrita de Thiago (Decisão D2)."
+          - "Não fazer pesquisa web sem autorização explícita (política de busca)."
+      contexto:
+        - "Cliente: Vilela Construction Inc., Greater Boston, MA + Southern New Hampshire (geografia retificada 2026-07-09 20:15 vs. rascunho inicial que dizia Kennesaw/GA — resíduo da landing Lovable)"
+        - "Decisor: Thiago Araujo"
+        - "Modelo: B2C high-ticket residential remodeling (kitchen $30-65k, bathroom $12-40k, basement $50-70k)"
+        - "Sazonalidade: maio-novembro (público sênior migra p/ FL no inverno)"
+        - "Dossiê principal: sobre-a-empresa/Projetos/Ativos/vilela-construction/DOSSIE-COMPLETO.md"
+        - "Laudo Peitho 01/07: diagnostico-tracking-2026-07-01.md — 4 perguntas em aberto agora resolvidas"
+        - "Dossiê LP: dossie-site-vilela-construction.md — 9 gaps críticos"
+        - "Site: Koldenoficial/vilela-bright-space (Lovable + TanStack Start + React 19 + Tailwind v4)"
+        - "GTM container: GTM-NG8LP66S (instalado, sem tag AW-)"
+        - "Form GHL iframe: NPkCo9JhSx7016RFCJd0"
+        - "GHL location Kolden sombra: 1Jo7tMynqRtbpB3GHuOd"
+        - "Google Ads MCP: bloqueado até developer token aprovado (pendência antiga)"
+        - "Meta Ads: 5 leads em 12/06 rodando cego há 4 semanas"
+        - "Plan-file de referência: ~/.claude/plans/hermes-preciso-construir-o-tranquil-tome.md"
+      nivel_de_risco: "amarelo"
+    dor_completo: true
+    perguntas_abertas: []
+    matriz_de_risco:
+      reversibilidade: "reversivel"
+      impacto: "medio"
+      faixa: "amarelo"
+      autonomia: "mostra-antes"
+      justificativa: |
+        Reversível porque campanhas Google Ads podem ser pausadas a qualquer
+        momento. Médio impacto porque afeta (i) budget real do cliente USD
+        1.000/mês, (ii) janela sazonal de 4 meses até novembro, (iii)
+        credibilidade Kolden com Thiago após 4 semanas rodando cego. Modo
+        mostra-antes: Ronan aprova estratégia detalhada em D+3 antes do
+        lançamento em D+10; Bernardo confirma acesso e painel antes do
+        auto-tagging em produção.
+    ordem_de_maquina: |
+      Fase 0 (D+0 a D+3): bloqueios Onda 0 - Ronan responde D1-D4 [FEITO
+      2026-07-09], Julio envia clausula-ghl-sombra + perguntas-para-thiago,
+      Bernardo documenta ID conta + URL LP + confirma GTM, pausa A/B redireciona
+      100% p/ LP Kolden.
+      Onda 1 (paralelo D+3 → D+7): Peitho/pixel-specialist executa Frente A
+      Google (Camada 1+2+3 + Enhanced Conversions + Consent Mode v2) e Frente B
+      Meta (Pixel + CAPI) simultaneamente. Handoff Harmonia p/ snippet gclid +
+      hidden fields.
+      Onda 2 (paralelo D+3 → D+10): Harmonia corrige 9 gaps da LP; Caliope
+      escreve FAQ e edita testimonials; Aletheia entrega roteiro de entrevista
+      para coleta de depoimentos; Aglaia produz og:image branded + gallery
+      expansion.
+      Onda 3 (D+7 → D+10): workflow *campaign-launch do Peitho executa Phases
+      0-3 (estratégia + criativo + tracking QA + launch); traffic-chief +
+      kasim-aslam produzem estrategia-vilela + arquitetura-de-conta; ad-midas
+      briefa 15h×4d por ad group; Caliope escreve os RSAs; Aglaia entrega
+      banners Remarketing; media-buyer monta as 4 campanhas.
+      Onda 4 (D+10 → novembro): performance-analyst gera relatório semanal
+      (sexta 15h Boston); ads-analyst roda auditoria 200-checkpoints em D+30;
+      kasim-aslam recalibra valor de conversão em D+30; scale-optimizer avalia
+      escala vertical em D+45; possível PMax em D+60 se ≥15 conv/mês.
+      Dike D+30: auditoria adversarial independente.
+      Pausa sazonal: dez-abril, congelar campanhas, manter só Brand.
+    assinatura: { por: "hermes", em: "2026-07-09T18:00:00Z" }
+
+  # ── CAMADA 3 — ZEUS (decomposição + roteamento) ─────────────────────────────
+  zeus:
+    diagnostico: |
+      Missão de construção de canal de aquisição para cliente ativa com 4 semanas
+      de operação cega (violação do veto sem_pixel_e_rastreio do Peitho). Cobre
+      3 dimensões: (a) instrumentação técnica (tracking Google + Meta), (b)
+      estratégia + estrutura de campanha (Search + Remarketing calibrado para
+      USD 300/mês), (c) profissionalização da LP (9 gaps + testimonials + trust
+      markers). Peitho é o squad dominante; Caliope + Aglaia + Harmonia +
+      Aletheia são handoffs obrigatórios. Não há build de software novo; é
+      execução de workflow *campaign-launch canônico do Peitho + produção de
+      artefatos.
+    decomposicao:
+      - parte: "Instrumentação Google (Camada 1+2+3) + Meta (Pixel+CAPI)"
+        executivo_destino: "hefesto"
+        motivo: "Arquitetura técnica de tracking. Apolo co-owner do dado."
+      - parte: "Estratégia + arquitetura de conta + keyword research"
+        executivo_destino: "apolo"
+        motivo: "Peitho canônico para tráfego pago; kasim-aslam é o Google Ads domain expert."
+      - parte: "Copy dos RSAs + FAQ da LP + edição de testimonials"
+        executivo_destino: "apolo"
+        motivo: "Caliope canônico para copy persuasiva."
+      - parte: "Landing page fixes (9 gaps) + snippet gclid + hidden fields"
+        executivo_destino: "hefesto"
+        motivo: "Harmonia canônica para dev de front-end + integração de tag."
+      - parte: "og:image branded + gallery expansion + banners Remarketing"
+        executivo_destino: "apolo"
+        motivo: "Aglaia canônica para produção visual + brandbook Kolden."
+      - parte: "Roteiro de entrevista para coleta de testimonials reais"
+        executivo_destino: "afrodite"
+        motivo: "Aletheia canônica para discovery; skill roteiro-de-entrevista aplica."
+      - parte: "Relatório semanal + auditoria D+30 + recalibração"
+        executivo_destino: "apolo"
+        motivo: "Peitho performance-analyst + ads-analyst + kasim-aslam ciclo de otimização."
+      - parte: "Cláusula GHL sombra + perguntas para Thiago (Onda 0)"
+        executivo_destino: "poseidon"
+        motivo: "Governance operacional; Cairos coordena bloqueios humanos e prazos."
+    paralelo:
+      - "hefesto (tracking Google + Meta simultâneo — Frentes A e B do pixel-specialist)"
+      - "apolo (estratégia Peitho, copy Caliope, visual Aglaia — squads acoplados)"
+      - "hefesto (Harmonia dev LP em paralelo à instrumentação)"
+      - "afrodite (Aletheia entrega roteiro de entrevista em paralelo à Onda 2)"
+      - "poseidon (Cairos monitora bloqueios humanos B1-B6)"
+    consolidacao: ""    # preenchida na SUBIDA por Zeus após Onda 3
+    arbitragem: null
+    assinatura: { por: "zeus", em: "2026-07-09T18:00:00Z" }
+
+  # ── CAMADA 4 — EXECUTIVOS (especificação técnica) ───────────────────────────
+  executivos:
+    - agente: "apolo"
+      especificacao_tecnica: |
+        Coordenar Peitho + Caliope + Aglaia como quadrilátero. Peitho tier-0
+        (traffic-chief) roda workflow *campaign-launch (5 phases) chamando
+        kasim-aslam (estratégia + Conversion Action calibrada), ad-midas (brief
+        criativo), media-buyer (execução) e performance-analyst (Phase 4).
+        Caliope entrega copy dos 3 RSAs + FAQ da LP + edição dos testimonials
+        via skills anuncio-por-estagio-de-consciencia (TOFU/BOFU),
+        headline-e-hook-testaveis (15h × 4d) e estrutura-de-pagina-de-vendas
+        (FAQ). Aglaia entrega og:image 1200×630 branded + 2 pares before/after
+        (Flooring, Painting) + banners Remarketing 300×250, 728×90, 160×600.
+        Todos os handoffs cruzam o julgamento-estetico-anti-slop da Harmonia
+        antes do gate Dike.
+      handoff_operacional: { squad: "peitho+caliope+aglaia", artefato: "google-ads/estrategia-vilela + google-ads/arquitetura-de-conta.yaml + google-ads/keywords/* + google-ads/copy/*.md + assets visuais em Aglaia/registros" }
+      resultado: ""
+      assinatura: { por: "", em: "" }
+    - agente: "hefesto"
+      especificacao_tecnica: |
+        Coordenar Peitho/pixel-specialist + Harmonia como par técnico. Frente A
+        Google (Camada 1: tag AW- no GTM-NG8LP66S + trigger form submit;
+        Camada 2: snippet JS captura gclid → cookie 30d → hidden field GHL +
+        custom field na location Kolden 1Jo7tMynqRtbpB3GHuOd + workflow GHL
+        HTTP echo p/ Google Sheets; Camada 3: Enhanced Conversions for Leads
+        email + phone) e Frente B Meta (Pixel client-side + Conversions API
+        server-side + eventos Lead/SubmitApplication/ViewContent + Match
+        Quality ≥ 6/10). Harmonia executa 9 fixes da LP em paralelo (branch
+        fixes/2026-07-onda-2 no repo Koldenoficial/vilela-bright-space).
+        Consent Mode v2 com banner opt-in + aviso GHL. QA end-to-end em D+7
+        antes de qualquer campanha ir ao ar.
+      handoff_operacional: { squad: "peitho+harmonia", artefato: "google-ads/conversion-actions.md + google-ads/ghl-shadow-integration.md + meta-ads/* + PR merged em vilela-bright-space" }
+      resultado: ""
+      assinatura: { por: "", em: "" }
+    - agente: "afrodite"
+      especificacao_tecnica: |
+        Coordenar Aletheia para: (a) roteiro de entrevista (skill
+        roteiro-de-entrevista, The Mom Test — Rob Fitzpatrick) para coletar 3
+        depoimentos reais de clientes Vilela; (b) template de aproveitamento
+        (5-8 perguntas, tempo 15-20 min por cliente); (c) sanidade sobre
+        aderência ao brief (Aletheia não escreve o depoimento — extrai fatos e
+        vivências, Caliope estilo). Se Thiago fornecer reviews Google/Yelp ou
+        mensagens WhatsApp de clientes felizes, esses passam por curadoria
+        (Caliope) e viram testimonials direto, dispensando entrevista nova.
+      handoff_operacional: { squad: "aletheia", artefato: "roteiro-entrevista-testimonials-vilela.md" }
+      resultado: ""
+      assinatura: { por: "", em: "" }
+    - agente: "poseidon"
+      especificacao_tecnica: |
+        Coordenar Cairos para monitorar bloqueios humanos B1-B7. Cadência de
+        follow-up: Julio → Thiago em D+1 (envio da mensagem), D+3 (follow-up se
+        sem resposta), D+5 (escalonamento p/ Ronan). Registrar no radar como
+        tarefa KLD-2026-XXX (ID a atribuir). Gerar reminder cron/WhatsApp para
+        upload semanal OCI (sexta 15h Boston) — trigger crítico Camada 2 caso
+        seja acionada. Se B6 recusado → notificar Peitho para acionar fallback
+        Google Sheets automaticamente.
+      handoff_operacional: { squad: "cairos", artefato: "radar entry + cron config + fallback trigger" }
+      resultado: ""
+      assinatura: { por: "", em: "" }
+
+  # ── CAMADA 5 — OPERACIONAL (execução + proatividade) ────────────────────────
+  operacional: []   # preenchida durante as ondas por cada subagente
+
+  # ── SUBIDA — DIKE (verificação) ─────────────────────────────────────────────
+  dike:
+    confere_hash: null    # preenchido em D+30 após auditoria independente
+    reconciliacao: ""     # preenchido em D+30
+    degrau_da_quebra: null
+    justificativa: ""     # preenchido em D+30
+    veredito: ""          # preenchido em D+30
+    assinatura: { por: "", em: "" }
+
+  # ── TRANSVERSAL ─────────────────────────────────────────────────────────────
+  orcamento:
+    teto_rodadas: 4
+    teto_tempo: "120 dias (D+0 → novembro/2026, janela sazonal)"
+    rodadas_gastas: 0
+
+  log_de_decisao:
+    - em: "2026-07-09T17:30:00Z"
+      por: "ronan"
+      decisao: "D1 — Split budget: Google USD 300/mês, Meta USD 700/mês"
+      porque: "Manter contrato total USD 1.000/mês, alocar mais em Meta que tem histórico de tração"
+    - em: "2026-07-09T17:30:00Z"
+      por: "ronan"
+      decisao: "D2 — Persistir gclid via GHL sombra Kolden (location 1Jo7tMynqRtbpB3GHuOd)"
+      porque: "Preserva pipeline OCI + Enhanced Conversions + custom fields sem depender de CRM próprio (rejeitado no contrato até out/2026); requer mitigação jurídica: cláusula escrita com Thiago (clausula-ghl-sombra-thiago.md)"
+    - em: "2026-07-09T17:30:00Z"
+      por: "ronan"
+      decisao: "D3 — Pausar A/B da LP, redirecionar 100% do tráfego Google para LP Kolden nova"
+      porque: "LP Kolden foi feita para conversão + tem form GHL; A/B com budget de $300/mês divide dados e atrasa convergência"
+    - em: "2026-07-09T17:30:00Z"
+      por: "ronan"
+      decisao: "D4 — Instrumentar Meta em paralelo com Google (Frente B do pixel-specialist)"
+      porque: "Meta rodando cego há 4 semanas queima ~USD 175/semana; paralelizar em D+3 recupera aprendizado do algoritmo Meta na janela sazonal"
+    - em: "2026-07-09T20:15:00Z"
+      por: "hermes"
+      decisao: "Retificação geográfica: Massachusetts + Southern New Hampshire (não Kennesaw/GA)"
+      porque: "Peitho subagente (traffic-chief) detectou divergência entre ROADMAP inicial (herdado do laudo Peitho 01/07 que espelhou a landing) e dossie.md unificado 09/07 (Argos rodada 3 com Ronan) que confirma MA+NH como praça real de operação. Landing GA é resíduo do template Lovable sendo corrigido pelo Ronan em paralelo. ROADMAP + Contrato + Caliope RSAs retificados; artefatos Peitho já entregues com geografia correta."
