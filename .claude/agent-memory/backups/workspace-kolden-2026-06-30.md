@@ -1,3 +1,8 @@
+---
+relacionado:
+  - "[[.claude/agent-memory/workspace-kolden|workspace-kolden (atual)]]"
+---
+
 # Memória do Agente workspace-kolden (operador-base da raiz C:\Kolden)
 
 > Memória persistente do operador do workspace raiz. Atualizada pelo Ritual de Encerramento.

@@ -1,3 +1,8 @@
+---
+relacionado:
+  - "[[Prometeu/agent-memory/prometeu|prometeu (atual)]]"
+---
+
 # Memória do Agente prometeu-chief
 
 > **Distinção canônica:** este arquivo guarda padrões técnicos de execução do agent-chief (prometeu-chief). Padrões estruturais do SQUAD ficam em `Prometeu/MEMORY.md`. MEMORY canônico AIOX interno fica em `.aiox-core/development/agents/<id>/MEMORY.md` (regra da skill `ritual-de-encerramento` § "Regra de resolução da memória" item 1 — NUNCA duplicar).
