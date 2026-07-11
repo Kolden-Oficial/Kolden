@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "_procedencia": "Publicado pela Onda 4 do METODO Kolden 2026-07-09. Contrato-mãe m-20260706-metodo-kolden.",
+  "_regra_e1": "Vendor xquads-squads INTOCÁVEL sem Contrato próprio (Fase 3 residual). Deny cirúrgico abaixo.",
+
+  "permissions": {
+    "deny": [
+      "Write(agents/**)",
+      "Edit(agents/**)",
+      "Write(tasks/**)",
+      "Edit(tasks/**)",
+      "Write(workflows/**)",
+      "Edit(workflows/**)",
+      "Write(data/**)",
+      "Edit(data/**)",
+      "Write(checklists/**)",
+      "Edit(checklists/**)",
+      "Write(config/**)",
+      "Edit(config/**)",
+      "Write(prd/**)",
+      "Edit(prd/**)",
+      "Write(_origem.md)",
+      "Edit(_origem.md)"
+    ]
+  },
+
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/reflexos/interrupt-before-mutation.sh",
+            "description": "Reflexo Olimpo ASL-3: intercepta mutation-with-side-effect (arbitragem cross-executivo / escalada board / mutação em Contrato lacrado / publicação M&A/pivot)"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Invoque skill ritual-de-encerramento antes de fechar a sessão (regra global Kolden)'",
+            "description": "Lembrete de ritual de encerramento — auto-aprendizado obrigatório em Olimpo/agent-memory/olimpo.md + Olimpo/MEMORY.md"
+          }
+        ]
+      }
+    ]
+  }
+}

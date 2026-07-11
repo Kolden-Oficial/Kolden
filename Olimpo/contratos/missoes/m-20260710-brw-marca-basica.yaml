@@ -1,0 +1,209 @@
+# Contrato de Missão — BRW Movelaria: marca básica (posicionamento + narrativa + comunicação + brandbook)
+# Cada camada preenche e ASSINA a sua seção; nenhuma reescreve a de outra.
+# intencao_original é lacrada (hash) e nunca mais muda. Schema: ../contrato-de-missao.schema.md
+---
+missao:
+  id: "m-20260710-brw-marca-basica"
+
+  # ── CAMADA 1 — HUMANO (lacrada, imutável) ───────────────────────────────────
+  intencao_original:
+    input_cru: "@Hermes/ preciso que voce acione todos os squads necessários para criarmos um posicionamento da marca, narrativa, comunicação, brandbook (basico + o que temos)."
+    canal: "cli"
+    recebida_em: "2026-07-10T08:30:16-03:00"
+    hash: "8234fd04e764ce0602560537e121ceda02690b86e0f7c9568eead77057f8a02a"
+
+  # ── CAMADA 2 — HERMES (tradução de intenção) ────────────────────────────────
+  hermes:
+    dor:
+      objetivo_real: >
+        Produzir a marca básica da BRW Movelaria — posicionamento, narrativa, comunicação
+        (mensagens-chave + voz e tom) e um brandbook enxuto — sistematizando o material já
+        existente (dossiê v2, coleta bruta, 129 assets, identidade visual atual) em vez de
+        criar do zero. Resolver as incoerências de marca (5+ taglines conflitantes; posicionamento
+        ambíguo movelaria×curadoria; selo "1998" sem lastro) sob um eixo único.
+      criterio_de_sucesso: >
+        Entregar em brw-movelaria/marca/ os 6 artefatos (premissas-e-premorte, posicionamento,
+        narrativa, mensagens-chave, voz-e-tom, brandbook md+html) com: (1) UMA tagline única
+        substituindo as 5 antigas; (2) cadeia coerente posicionamento→narrativa→mensagens→visual;
+        (3) narrativa que NÃO afirma "BRW desde 1998" — reancorada no ofício do Robson; (4) tudo
+        marcado v1/hipótese-de-trabalho com pré-morte explícita (H1/H5/WhatsApp/DRE/INPI). Brandbook
+        HTML abre com render limpo. Ratificável pelo Ronan.
+      restricoes:
+        prazo: "sessão única (padrão validado ~1h20, ref. Rosie)"
+        orcamento: "sem custo externo; execução offline sobre material local"
+        proibicoes:
+          - "não reprojetar logo nem gerar novos vetores (só há assets rasterizados)"
+          - "não montar design-system DTCG completo (isto é escopo 'completo', não 'básico')"
+          - "não fazer pesquisa web sem declarar ferramenta+nível e obter confirmação do Ronan (política global)"
+          - "não publicar/usar nada antes do gate humano de ratificação"
+          - "não cristalizar posicionamento como definitivo antes de H1+H5 (gate Aletheia do dossiê)"
+      contexto:
+        - "Material-base: sobre-a-empresa/Projetos/Ativos/brw-movelaria/{dossie.md, coleta-bruta/, anexos/drive-2026-07-06/}"
+        - "Identidade visual atual já existe: azul-marinho #1A3D7E + paleta 5 tons (#C1741D, #7B1B1A, #3E2917, #3D4E1E); logo colchete-em-L 'BRW.movelaria'; selo ★★★★★·1998; sans geométrica light; tom poético/minimalista pós-rebrand jan/2026"
+        - "DECISÃO DO RONAN (travada): eixo = curadoria/consultoria de mobiliário B2B para hotelaria e investidores Airbnb (nicho de maior margem)"
+        - "DECISÃO DO RONAN (travada): legado '1998/35 anos' = reancorar no Robson (pedigree pessoal do fundador), sem afirmar que a entidade BRW existe desde 1998"
+        - "Brandbooks-modelo de referência estrutural: Projetos/Ativos/omiron/brandbook/ e rosie/brandbook/"
+      nivel_de_risco: "verde"
+    dor_completo: true
+    perguntas_abertas: []
+    matriz_de_risco:
+      reversibilidade: "reversivel"
+      impacto: "baixo"
+      faixa: "verde"
+      autonomia: "executa-e-avisa"
+    ordem_de_maquina: >
+      Lavrar este Contrato; despachar via Zeus/Apolo três ondas de subagentes (Onda 0 Aletheia →
+      Onda 1 paralela Aglaia+Orfeu+Caliope → Onda 2 Harmonia), cada onda escrevendo artefato em
+      disco em brw-movelaria/marca/; reconciliar na subida (Hermes vs critério + delta Explore
+      independente); devolver ao Ronan para ratificação.
+    assinatura: { por: "hermes", em: "2026-07-10T08:30:16-03:00" }
+
+  # ── CAMADA 3 — ZEUS (decomposição + roteamento) ─────────────────────────────
+  zeus:
+    diagnostico: >
+      Missão de marca de escopo 'básico' sobre base madura. Dono executivo natural: Apolo (CMO) —
+      develop_brand_strategy. A missão toca 4 domínios operacionais em paralelo (discovery, branding
+      núcleo, narrativa, copy) + 1 de consolidação visual (design). Decompõe-se em 3 ondas com
+      dependência temporal: Aletheia fixa premissas → Aglaia/Orfeu/Caliope produzem em paralelo sobre
+      as mesmas premissas → Harmonia consolida o brandbook por último (depende das saídas verbais).
+    decomposicao:
+      - parte: "Premissas explícitas (validado×hipótese) + pré-morte + eixo curadoria-B2B fundamentado"
+        executivo_destino: "apolo"
+        motivo: "discovery/validação de marca é insumo de posicionamento — squad Aletheia"
+      - parte: "Posicionamento (STP, POP/POD, mantra), arquétipo, Identity Prism, arquitetura de marca, tagline única"
+        executivo_destino: "apolo"
+        motivo: "núcleo de estratégia de marca — squad Aglaia"
+      - parte: "Narrativa/manifesto/arco reancorado no Robson"
+        executivo_destino: "apolo"
+        motivo: "storytelling de marca — squad Orfeu"
+      - parte: "Mensagens-chave, one-liner, pilares, voz-e-tom formalizado"
+        executivo_destino: "apolo"
+        motivo: "comunicação/copy de marca — squad Caliope"
+      - parte: "Brandbook básico (md+html): visual existente sistematizado + verbal novo + correções sinalizadas"
+        executivo_destino: "hefesto"
+        motivo: "execução/sistematização de identidade visual — squad Harmonia"
+    paralelo: ["Aglaia", "Orfeu", "Caliope"]   # Onda 1 acionada simultaneamente sobre as premissas da Onda 0
+    consolidacao: >
+      6 artefatos entregues em brw-movelaria/marca/ (premissas-e-premorte, posicionamento, narrativa,
+      mensagens-chave, voz-e-tom, brandbook md+html). Cadeia coerente sob eixo único curadoria-B2B:
+      posicionamento→narrativa→mensagens→voz→visual falam a mesma tese ("móvel é ativo que rende").
+      Tagline única "Curadoria que rende." (Aglaia; Caliope convergiu de forma independente). "1998"
+      neutralizado nos 7 arquivos (reancorado no Robson; selo redesenhado sem a data). Tudo carimbado
+      v1/hipótese com pré-morte H1/H5/WhatsApp/DRE/INPI. Sem arbitragem (nenhuma divergência material
+      entre squads). Verificação independente (proxy-Dike) apontou 5 reparos (2 materiais: tags de
+      ferramenta vazadas no brandbook.md + cadeia mensagens/voz não-reconciliada com posicionamento);
+      todos corrigidos por Hermes na rodada 1 de correção.
+    arbitragem: null
+    assinatura: { por: "zeus", em: "2026-07-10T08:30:16-03:00" }
+
+  # ── CAMADA 4 — EXECUTIVOS (especificação técnica) ───────────────────────────
+  executivos:
+    - agente: "apolo"
+      especificacao_tecnica: >
+        Marca básica sob eixo curadoria-B2B-para-investidores. Onda 0 (Aletheia) entrega
+        premissas-e-premorte.md. Onda 1 (Aglaia/Orfeu/Caliope) entrega posicionamento.md, narrativa.md,
+        mensagens-chave.md, voz-e-tom.md sobre essas premissas. Coerência forçada: uma tagline única;
+        narrativa sem "desde 1998"; ICP prioritário hotelaria/corporativo > investidor Airbnb.
+      handoff_operacional: { squad: "Aletheia|Aglaia|Orfeu|Caliope", artefato: "brw-movelaria/marca/{premissas-e-premorte,posicionamento,narrativa,mensagens-chave,voz-e-tom}.md" }
+      devolucao_lateral: null
+      resultado: ""
+      assinatura: { por: "apolo", em: "2026-07-10T08:30:16-03:00" }
+    - agente: "hefesto"
+      especificacao_tecnica: >
+        Onda 2 (Harmonia): consolidar brandbook básico md+html documentando a identidade visual EXISTENTE
+        (paleta 5 tons, logo colchete-em-L, selo, tipografia inferida) + integrar a camada verbal da Onda 1.
+        Sinalizar correções (tagline única; ressalva do selo 1998). NÃO reprojetar logo. Referência de
+        estrutura: omiron/brandbook e rosie/brandbook.
+      handoff_operacional: { squad: "Harmonia", artefato: "brw-movelaria/marca/brandbook.{md,html}" }
+      devolucao_lateral: null
+      resultado: ""
+      assinatura: { por: "hefesto", em: "2026-07-10T08:30:16-03:00" }
+
+  # ── CAMADA 5 — OPERACIONAL (execução + proatividade) ────────────────────────
+  operacional:
+    - agente: "aletheia-chief"
+      squad: "Aletheia"
+      resultado: "premissas-e-premorte.md — matriz validado×hipótese×desconhecido; ICP por margem + 2 personas (JTBD); eixo curadoria-B2B como hipótese-fundamentada; pré-morte P1-P9."
+      riscos_levantados:
+        - "H5 (Robson fora do CNPJ + sem DRE) é o gate mais crítico — a marca reancora em pessoa juridicamente externa"
+        - "H1: nicho investidor-Airbnb pode ser rede pessoal do Robson, não canal replicável"
+        - "150 conversas de WhatsApp nunca lidas — todo tom/objeção é inferido"
+      propostas:
+        - "Marca básica v1 pode andar; cristalização definitiva só após H1+H5+DRE+INPI"
+      assinatura: { por: "aletheia-chief", em: "2026-07-10T08:30:16-03:00" }
+    - agente: "aglaia-chief"
+      squad: "Aglaia"
+      resultado: "posicionamento.md — STP, POP/POD (Keller), mantra 'Curadoria industrial que rende', arquétipo Sábio+Cuidador, Identity Prism, Onlyness, tagline única 'Curadoria que rende.', ativos distintivos a preservar (moldura-L, marinho #1A3D7E, nomes de peças, selo), ressalvas ligadas à pré-morte."
+      riscos_levantados:
+        - "PODs mais vendáveis (acesso Rimo, capacidade de volume) são os mais frágeis — tratar como reforço-a-verificar, não manchete"
+        - "Rótulo 'curadoria' depende do DRE (mix de receita não confirmado)"
+      propostas:
+        - "Preservar código de marca mas remover '1998' do selo e aposentar o teal"
+        - "'Mobiliário é estratégia, não custo' como linha de campanha do vertical investidor (não tagline-mãe)"
+      assinatura: { por: "aglaia-chief", em: "2026-07-10T08:30:16-03:00" }
+    - agente: "orfeu-chief"
+      squad: "Orfeu"
+      resultado: "narrativa.md — tensão fundadora (ofício×hábito de mercado), manifesto, arco ABT, origem canônica reancorada no Robson, 3 histórias de prova (Iberostar/Singulari/Alphaville), 'como NÃO contar', ressalvas R1-R6."
+      riscos_levantados:
+        - "Se a entrevista H5 não achar lastro do '1998', a instrução é remover o selo, não reinterpretá-lo"
+      propostas:
+        - "Nunca afirmar 'BRW desde 1998'; fórmula segura: 'Fundada sobre 35 anos de bagagem moveleira do Robson'"
+      assinatura: { por: "orfeu-chief", em: "2026-07-10T08:30:16-03:00" }
+    - agente: "caliope-chief"
+      squad: "Caliope"
+      resultado: "mensagens-chave.md + voz-e-tom.md — mensagem central, one-liner SB7, 4 pilares, mensagens por persona, matriz de 5 objeções (Voss/Cialdini), depreciação das 5 taglines antigas; 3 adjetivos de voz (Criteriosa·Serena·Pragmática), espectro de tom, do's&don'ts, léxico, antes/depois."
+      riscos_levantados:
+        - "Tom e objeções inferidos do material público — recalibrar após ler as 150 conversas de WhatsApp"
+      propostas:
+        - "Convergência independente na tagline 'Curadoria que rende.' — sinal forte de coerência"
+      assinatura: { por: "caliope-chief", em: "2026-07-10T08:30:16-03:00" }
+    - agente: "harmonia-chief"
+      squad: "Harmonia"
+      resultado: "brandbook.md + brandbook.html (8 seções, self-contained) — camada verbal da Onda 1 + identidade visual existente sistematizada (paleta 5 tons, logo colchete-em-L, selo sem '1998', tipografia inferida); §7 correções recomendadas; §8 pré-morte. Reconciliou os '[a confirmar]' do Caliope."
+      riscos_levantados:
+        - "Hex e família tipográfica inferidos por amostragem — marcados '[a confirmar com arquivo-fonte vetorial]'; buscar o vetor antes de imprimir"
+      propostas:
+        - "Marinho deve dominar como código primário; 5 cores co-iguais diluem a disponibilidade física (correção fina para onda de identidade visual futura)"
+      assinatura: { por: "harmonia-chief", em: "2026-07-10T08:30:16-03:00" }
+
+  # ── SUBIDA — DIKE (verificação) ─────────────────────────────────────────────
+  dike:
+    confere_hash: true
+    reconciliacao: "bateu (após rodada 1 de correção)"
+    degrau_da_quebra: null
+    justificativa: >
+      Verificação por proxy-Dike independente (Explore isolado que não participou da produção) +
+      checagens objetivas por grep do Hermes. Substância aprovada na 1ª passada: eixo curadoria-B2B
+      unificado nos 7 arquivos; nenhuma afirmação de "BRW desde 1998" (todas as ~40 ocorrências de
+      "1998" são diagnóstico de passivo, ressalva ou depreciação); tagline única consistente; header
+      v1/pré-morte em todos; brandbook.html com estrutura íntegra e swatches reais. Veredito inicial
+      foi volta-para-correcao por 2 defeitos materiais (tags </content></invoke> vazadas no fim do
+      brandbook.md; carimbos "[a confirmar]" + taglines alternativas em mensagens/voz operando como se
+      posicionamento.md não existisse) + 3 leves. Os 5 reparos foram aplicados e re-verificados por
+      grep (tags: 0 ocorrências; "a confirmar" remanescente só em hex/tipografia inferidos, legítimo).
+    veredito: "sobe"
+    assinatura: { por: "dike (proxy: hermes + explore independente)", em: "2026-07-10T09:05:00-03:00" }
+
+  # ── TRANSVERSAL ─────────────────────────────────────────────────────────────
+  orcamento:
+    teto_rodadas: 2
+    teto_tempo: "1 sessão"
+    rodadas_gastas: 1   # 1 rodada de correção pós-verificação (dentro do teto)
+
+  log_de_decisao:
+    - em: "2026-07-10T08:30:16-03:00"
+      por: "ronan"
+      decisao: "eixo de posicionamento = curadoria B2B para investidores"
+      porque: "nicho de maior margem e mais defensável; move o foco de 'móvel' para ROI/processo resolvido"
+    - em: "2026-07-10T08:30:16-03:00"
+      por: "ronan"
+      decisao: "legado '1998/35 anos' reancorado no Robson"
+      porque: "35 anos são pedigree pessoal do fundador; entidade BRW é de 03/2026 — evita passivo reputacional sem descartar o ativo"
+    - em: "2026-07-10T08:30:16-03:00"
+      por: "ronan"
+      decisao: "profundidade = básico primeiro"
+      porque: "entrega enxuta e ratificável; respeita o gate Aletheia (não cristalizar antes de H1+H5)"
+    - em: "2026-07-10T10:20:00-03:00"
+      por: "ronan"
+      decisao: "brandbook promovido a v1.1 — adicionada §7 Cenário competitivo & oportunidade de mercado"
+      porque: "costura da missão-irmã de pesquisa (m-20260710-brw-pesquisa-mercado) ao brandbook; Correções→§8, Pré-morte→§9. Inclui o ajuste honesto: a 3M já articula o pitch Airbnb/ROI, então o fosso passa a apoiar-se no case-book hoteleiro, não no acesso Rimo"

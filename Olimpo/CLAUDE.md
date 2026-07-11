@@ -128,7 +128,7 @@ Olimpo nasceu como fork do `c-level-squad` do repositório `ohmyjahh/xquads-squa
 Camada Kolden (esta) vive em:
 - `CLAUDE.md` (este arquivo — identidade canônica)
 - `prd-de-ia.md`, `constitution.md`, `ferramentas.md`, `roteiro-de-teste.md`
-- `.claude/agents/olimpo-chief.md`, `.claude/skills/*/SKILL.md` (14 skills executivas), `.claude/reflexos/interrupt-before-mutation.sh`, `.claude/settings.json`
+- `.claude/agents/olimpo-chief.md`, `.claude/skills/*/SKILL.md` (15 skills executivas), `.claude/reflexos/interrupt-before-mutation.sh`, `.claude/settings.json`
 - `MEMORY.md`, `agent-memory/{olimpo,afrodite,plutos,+6 outros}.md`
 - `squad.yaml` (UPDATE cirúrgico — vendor original + 6 blocos Kolden novos)
 - `README.md` (APPEND parágrafo topo apontando este CLAUDE.md como identidade canônica; corpo vendor preservado)
@@ -141,7 +141,7 @@ Camada Kolden (esta) vive em:
 - **Personas dos 8 executivos:** `Olimpo/agents/{zeus,poseidon,apolo,hefesto,hades,atena,plutos,afrodite}.md`.
 - **Catálogo de dispatch entre executivos:** `Olimpo/data/routing-catalog.yaml` (vendor).
 - **Frameworks executivos:** `Olimpo/data/executive-frameworks.yaml` (vendor).
-- **14 skills executivas cross-squad:** `Olimpo/.claude/skills/` (catálogo em `.claude/skills/catalogo.md`).
+- **15 skills executivas cross-squad:** `Olimpo/.claude/skills/` (catálogo em `.claude/skills/catalogo.md`).
 - **Contratos de Missão lavrados:** `Olimpo/contratos/missoes/*.yaml`.
 - **Memória do agent-chief:** `Olimpo/agent-memory/olimpo.md`.
 - **Memória do squad:** `Olimpo/MEMORY.md`.

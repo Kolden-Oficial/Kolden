@@ -782,7 +782,7 @@ missao:
                 sessao: "dedicada em C:\\Kolden\\Olimpo\\ (G7)"
         onda_4:
           em: "2026-07-09"
-          status: "aberta-aguardando-disparo-sessao-dedicada"
+          status: "concluida-2026-07-09"  # 9 passos executados; diff 13 mudanças aplicado; Dike delta sobe 8/8 VERDE; METODO v1.2; sem commit (G2). Ver resultado_final abaixo.
           grupo: "B"
           squad_alvo: "Olimpo"
           camada_metodo: "3-4 (Camada 3 = Zeus decompõe + roteia; Camada 4 = 7 executivos traduzem para linguagem técnica da disciplina)"
@@ -856,6 +856,21 @@ missao:
             prompt_de_abertura: "Ver artefato-em-disco em Olimpo/registros/metodo-onda-4/PROMPT-DE-ABERTURA.md (produzido nesta sessão raiz pela skill briefing-padrao)"
             executor_esperado: "olimpo-chief (a criar como .claude/agents/olimpo-chief.md no Passo 5)"
             proxima_onda_apos: "Onda 5 = Dike (Grupo B) — nascimento como agent-funcional via Contrato próprio (m-2026MMDD-nascimento-dike) — fecha o padrão Dike temporário confirmado 9x"
+          resultado_final:
+            concluida_em: "2026-07-09 (sessão dedicada olimpo-chief; aplicação retomada 2026-07-10 a partir do gate humano — Passos 1-3 já commitados em f7660232; Passos 4-9 nesta sessão)"
+            arquitetura_executada: "1 onda direta (0/3 fan-out por interdependência cross-artefato — 11ª ocorrência consecutiva da regra canônica); recomendação preliminar confirmada"
+            gate_humano_respostas: "Q1.A diff em bloco G1→G2→G3 · Q2.A deny cirúrgico vendor ATIVO · Q3.A README vendor + AGENTS.md raiz · Q4.A schema onda_4 confirmado · Q5.A bump METODO v1.2 (E4 + NOTA §3)"
+            diff_aplicado: "13 mudanças (9 CREATE + 4 UPDATE). 2 CREATE já commitados em f7660232 (CLAUDE.md + prd-de-ia.md); 7 CREATE + 4 UPDATE aplicados nesta sessão. Vendor xquads-squads INTOCADO (~40 arquivos)."
+            score_canonico: "8/8 VERDE (baseline 1/8 → 8/8; delta absoluto +7, empatado com Hermes Onda 2)"
+            verificacao_dike: "sobe — baseline por olimpo-chief (3 salvaguardas) + delta INDEPENDENTE por subagente Explore isolado (git log -5 no prompt). Registro: verificacao-dike-delta.md."
+            inconsistencia_resolvida: "DIKE-DELTA-OLI-4-001 off-by-one 14→15 skills (baixa, documental) — RESOLVIDA na sessão; 15 skills confirmado por find autoritativo; numeral corrigido em 8 pontos; grounding recontado 8 true + 7 false"
+            emenda_metodo: "v1.1 → v1.2 — E4 distinção 3-way MEMORY CANONIZADA em §5 (2ª confirmação: Prometeu 3.2 + Olimpo 4); NOTA §3 Camada 3-4 combinada como caso especial (Olimpo único ocorrente)"
+            padroes_canonicos: "E1 INVÓLUCRO sobre MUTAÇÃO 5ª aplicação; E6 co-existência de vetos 2ª aplicação; Dike temporário 10ª ocorrência (fecha na Onda 5)"
+            agents_md_raiz: "ATUALIZADO com nota canônica Onda 4 (exceção G1 autorizada Q3.A)"
+            artefatos_onda: ["matriz-de-conformidade.md", "achados.jsonl (26)", "diff-cirurgico.md (~1200 linhas)", "verificacao-dike.md (baseline)", "verificacao-dike-delta.md (delta independente)", "sumario-executivo.md", "PROMPT-DE-ABERTURA.md"]
+            ritual_encerramento: "MEMORY.md squad-level (Padrões Onda 4) + agent-memory/olimpo.md chief-level (padrões técnicos + 3 meta-lições novas) + registros/aprendizado.log"
+            sem_commit: "G2 respeitado — working tree preservado, aguardando ordem explícita do Ronan"
+            higiene_pre_commit_recomendada: "teste-cline.md (raiz) é arquivo de teste solto alheio à Onda 4 — limpar antes de qualquer commit"
       resultado: |
         Onda 1 CONCLUÍDA em 2026-07-06 (6 sub-ondas: 1.1-1.6).
 

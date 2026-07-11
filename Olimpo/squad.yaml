@@ -57,3 +57,77 @@ cross_cutting:
 
 config:
   extends: extend
+
+# ─────────────────────────────────────────────────────────────
+# CAMADA KOLDEN — APPENDado pela Onda 4 do METODO 2026-07-09
+# NÃO ALTERAR SEM CONTRATO DE MISSÃO PRÓPRIO
+# ─────────────────────────────────────────────────────────────
+
+# Hierarquia canônica Kolden (METODO §3)
+camada: "3-4"  # caso NOVO: Camada 3 (Zeus decompõe) + Camada 4 (7 executivos traduzem) combinadas
+tier_0: olimpo-chief  # ver .claude/agents/olimpo-chief.md
+tier_1:
+  - poseidon  # COO — operações, escala, KPI/OKR
+  - apolo     # CMO — marca, go-to-market, funil
+  - hefesto   # CTO — arquitetura, build vs buy, dívida técnica
+  - hades     # CIO — segurança, LGPD, governança de TI
+  - atena     # CAIO — IA, agents, prompt, automação
+  - plutos    # CFO — budget, margem, unit economics
+  - afrodite  # CRO — pipeline, conversão, MRR, churn
+
+# Fronteira vendor xquads-squads (INTOCÁVEL — E1 canonizada METODO v1.1)
+fronteira_vendor_xquads:
+  origem: "ohmyjahh/xquads-squads"
+  pasta_original: "c-level-squad"
+  commit: "dcb32f35bfeab23913233c8aafe5ee5e7fd2f149"
+  licenca: MIT
+  intocaveis:
+    - agents/*.md      # 8 personas mitológicas
+    - tasks/*.md       # 7 tasks
+    - workflows/*.yaml # 2 workflows
+    - data/*.yaml      # executive-frameworks + routing-catalog
+    - checklists/*.md  # output-quality
+    - config/*.yaml    # config
+    - prd/*.md         # 2 PRDs vendor por-agent (afrodite, plutos)
+    - _origem.md       # vendor snapshot
+  regra: "INVÓLUCRO sobre MUTAÇÃO — camada Kolden PT-BR envelopa via CLAUDE.md + prd-de-ia.md + constitution.md + ferramentas.md + roteiro-de-teste.md + .claude/agents/olimpo-chief.md; mudança em vendor exige Contrato de Missão próprio (Fase 3 residual)"
+
+# Handoffs externos (external_handoffs)
+external_handoffs:
+  descida:
+    de_hermes: "@Olimpo via Hermes/scripts/invoca-squad.ps1 -Squad olimpo"
+    para_operacional_camada_5:
+      poseidon: [hestia, cairos, ananke]
+      hades: [nomos]
+      plutos: [pactolo]
+      afrodite: [emporos]
+      apolo: [peitho, caliope, aglaia, orfeu, ariadne, pheme]  # via routing dentro do vendor
+      hefesto: [prometeu, dedalo]
+      hades_cyber: [egide]
+      atena: [prometeu, dedalo]
+  colaboracao:
+    zeus:
+      - squad: themis
+        contexto: "Decisões estratégicas nível conselho consultivo"
+      - squad: pluto
+        contexto: "Frameworks Hormozi para growth/monetização"
+  subida:
+    para_dike: "dike.assinatura no Contrato → gate-de-subida.sh"
+    para_hermes: "Hermes entrega ao Ronan pós-Dike"
+  todo:
+    - "Dispatcher hoje dispara chief (Zeus); expandir para @Olimpo:apolo (dispara Apolo direto) na Onda de Grupo E ou antes se demanda"
+
+# MCP categoria (METODO §5 modelo #7 ferramentas + E3 skills-como-tools cross-squad v1.1)
+mcp_categoria:
+  camada_1_direto: []  # Olimpo NÃO consome MCP direto (Camada 3-4 delega ao operacional)
+  skills_como_tools_cross_squad: 15  # ver ferramentas.md §2 + .claude/skills/catalogo.md
+  fronteira_ver: "fronteira_vendor_xquads acima"
+
+# Procedência de lavratura
+procedencia_lavratura:
+  onda: "Onda 4 do METODO Kolden"
+  contrato_mae: "m-20260706-metodo-kolden"
+  data: "2026-07-09"
+  executor: "olimpo-chief"
+  precedente_5x_E1: ["Hermes/Nous Onda 2", "Prometeu/AIOX Sub-ondas 3.1/3.2/3.3", "Olimpo/xquads-squads Onda 4"]
+  precedente_2x_E4: ["Prometeu Sub-onda 3.2", "Olimpo Onda 4 (esta)"]

@@ -266,7 +266,7 @@ Cada squad é uma pasta top-level com `README.md` (o que faz + tabela de agentes
 - `sintetizador` — Destila mente/linhagem em framework operacional + procedência.
 - `ponte-de-encarnacao` — Handoff ao Caos quando a mente deve virar agente conversável.
 
-**Olimpo/** — C-Level / Executivos (8 agentes). Cada deus carrega nome + cargo + `routing_triggers`; opera sobre o Contrato de Missão (`Olimpo/contratos/`). → `Olimpo/README.md`
+**Olimpo/** — C-Level / Executivos (8 agentes). Cada deus carrega nome + cargo + `routing_triggers`; opera sobre o Contrato de Missão (`Olimpo/contratos/`). **Camada 3-4 do sistema (padronizado Onda 4 METODO v1.1 em 2026-07-09).** **Vendorizado do `ohmyjahh/xquads-squads`** (`c-level-squad`, MIT) com camada Kolden PT-BR canônica por cima (`CLAUDE.md`, `prd-de-ia.md`, `constitution.md`, `ferramentas.md`, `roteiro-de-teste.md`, `.claude/`). Score G1-G8: 8/8 VERDE (delta +7). Camada 3-4 combinada é caso NOVO canônico (candidato emenda METODO §3 v1.2). Fronteira externa×Kolden declarada — ler `Olimpo/CLAUDE.md` primeiro. → `Olimpo/README.md`
 - `zeus` — CEO/Orquestrador: define a visão e roteia ao executivo certo.
 - `poseidon` — COO: excelência operacional, processos, escala, KPIs/OKRs.
 - `apolo` — CMO: marca, posicionamento, demanda e go-to-market.

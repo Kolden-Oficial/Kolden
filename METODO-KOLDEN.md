@@ -1,6 +1,6 @@
-# MÉTODO KOLDEN — v1.1
+# MÉTODO KOLDEN — v1.2
 
-> **Versão:** 1.1 · **Ratificado inicialmente:** 2026-07-06 (v1.0) · **Emenda v1.1:** 2026-07-09 (Sub-onda 3.3 da Onda 3) · **Sub-onda de origem:** 1.6 v1.0 → Onda 3 (v1.1) do Contrato-mãe `m-20260706-metodo-kolden`)
+> **Versão:** 1.2 · **Ratificado inicialmente:** 2026-07-06 (v1.0) · **Emenda v1.1:** 2026-07-09 (Sub-onda 3.3 da Onda 3) · **Emenda v1.2:** 2026-07-09 (Onda 4 Olimpo — E4 canonizada + NOTA §3 Camada 3-4 combinada) · **Sub-onda de origem:** 1.6 v1.0 → Onda 3 (v1.1) → Onda 4 (v1.2) do Contrato-mãe `m-20260706-metodo-kolden`)
 > **Escopo:** norma canônica para nascer, operar e verificar todo agente de IA da Kolden.
 > **Idioma:** PT-BR em tudo (identidade Kolden). Termos técnicos e nomes de tools ficam no original.
 > **Fonte-de-verdade da procedência:** `Liceu/frameworks/arquitetura-de-agents-kolden/procedencia.md` (Fase 1 do Contrato `m-20260704`).
@@ -106,6 +106,8 @@ Todo input humano atravessa 5 camadas, enriquecido e assinado a cada degrau num 
 
 **Padrão de agent monolítico rejeitado:** o Método proíbe agent-monólito genérico (Anti-padrão #1 do framework Liceu, herança Minsky + Newell-Simon). Agent Kolden é sempre membro de squad OU solo com escopo cirúrgico declarado.
 
+**NOTA (v1.2) — Camada 3-4 combinada dentro do mesmo squad (caso especial documentado):** um squad pode reunir Camada 3 (decompõe + roteia) e Camada 4 (traduz na disciplina) dentro do mesmo squad quando é uma C-suite virtual. **Ocorrente único até aqui: Olimpo** (Zeus/CEO na Camada 3 decompõe + roteia; os 7 executivos-deuses na Camada 4 traduzem + assinam). Hermes é Camada 2 pura; Prometeu e o Grupo C (Aletheia/Argos/Liceu) são Camada 5. A fronteira Camada 3 × Camada 4 dentro do squad é declarada no `CLAUDE.md` §Persona + `prd-de-ia.md` §6 do squad. Canonizado como caso especial pela Onda 4 (2026-07-09) — se uma 2ª ocorrência surgir, promover a categoria estrutural própria em revisão futura.
+
 ---
 
 ## §4 — Os 8 critérios canônicos por agent (Art. X)
@@ -165,6 +167,13 @@ Os 14 modelos vivem em `Caos/modelos/` e formam o **kit canônico** que o Ritual
 | 14 | `squad-base.yaml` (esperado, ver §12 roadmap) | Manifesto canônico de squad — tiers, agentes, handoffs, cross_cutting, entry_agent, veto | Fase 5.1 quando arquitetura = SQUAD |
 
 **Regra de invocação (padrão validado):** um agent só ganha um modelo se o PRD justificar. Agent solo SEM catálogo de MCPs pode dispensar `ferramentas.md` (o modelo continua canônico, mas o item específico é opcional). Modelo utilitário sem gap material fica intocado por decisão explícita — padrão da Sub-onda 1.2 (`guia-infisical.md` não tocado).
+
+**Regra E4 — distinção 3-way MEMORY (CANONIZADA v1.2, 2ª confirmação empírica):** a memória persistente de um squad Kolden vive em **três níveis distintos, não-fungíveis**:
+1. **squad-level** — `<Squad>/MEMORY.md`: padrões estruturais do squad (identidade, candidatos a promoção, aprendizados de onda).
+2. **agent-chief-level** — `<Squad>/agent-memory/<chief>.md`: padrões técnicos de execução do orquestrador tier-0.
+3. **agent-especialista-level** — `<Squad>/agent-memory/<especialista>.md`: padrões por-especialista tier-1.
+
+Se o squad é vendorizado e o vendor traz memória própria canônica (ex.: `.aiox-core/.../MEMORY.md` do Prometeu), ela é um 4º artefato **INTOCÁVEL** (fronteira E1). O Ritual de Encerramento (§8 Passo 7) grava nos níveis Kolden, nunca no vendor. Procedência: Prometeu Sub-onda 3.2 (1ª ocorrência) + Olimpo Onda 4 (2ª ocorrência — `Olimpo/MEMORY.md` squad-level × `Olimpo/agent-memory/olimpo.md` chief-level × `Olimpo/agent-memory/{afrodite,plutos,...}.md` especialista-level).
 
 ---
 
@@ -413,7 +422,18 @@ Tabela em `procedencia.md` §"Procedência dos 8 Critérios de Safety+Quality":
 
 ## §12 — Notas de versão + roadmap
 
-### v1.1 — 2026-07-09 (esta versão)
+### v1.2 — 2026-07-09 (esta versão)
+
+**Emenda ratificada pela Onda 4 do Método (Grupo B Governance — Olimpo padronizado).** Duas canonizações:
+
+- **E4 — distinção 3-way MEMORY canonizada em §5:** 2ª confirmação empírica satisfeita (Prometeu Sub-onda 3.2 + Olimpo Onda 4). Regra canônica: squad-level (`<Squad>/MEMORY.md`) × agent-chief-level (`<Squad>/agent-memory/<chief>.md`) × agent-especialista-level (`<Squad>/agent-memory/<especialista>.md`); memória vendor canônica é 4º artefato INTOCÁVEL (fronteira E1). Ver §5.
+- **NOTA §3 — Camada 3-4 combinada como caso especial documentado:** Olimpo é o único squad Kolden que reúne Camada 3 (decompõe + roteia) e Camada 4 (traduz na disciplina) dentro do mesmo squad. Registrado em §3 como caso especial; promoção a categoria estrutural própria condicionada a 2ª ocorrência futura.
+
+**Score Onda 4:** 8/8 VERDE, delta absoluto +7 pontos (1/8 baseline → 8/8), empatado com Hermes Onda 2 (2º maior delta após Salgueiro +8). Padrão E1 INVÓLUCRO sobre MUTAÇÃO na **5ª aplicação empírica** (Hermes + Prometeu 3× + Olimpo). Regra E6 co-existência de vetos na 2ª aplicação (Prometeu 3.1 + Olimpo). Grupo A meta-squads COMPLETO; Grupo B Governance INICIADO. Próxima Onda: Dike (nascimento como agent-funcional — fecha o padrão Dike temporário confirmado 10x). Sem commit até ordem explícita.
+
+<!-- ratificado pela Onda 4 do Método (m-20260706, 2026-07-09) -->
+
+### v1.1 — 2026-07-09
 
 **Emenda ratificada pela Onda 3 do Método** — 6 padrões canônicos promovidos das Sub-ondas 3.1+3.2+3.3 do Prometeu (Grupo A meta-squads completo: Hermes + Prometeu padronizados).
 
@@ -437,8 +457,8 @@ AIOX Constitution (engenharia — 6 artigos) + Kolden Art. X (agent-safety — 1
 **E7 — Refactor por arquivamento como categoria canônica §9 rito:**
 2ª ocorrência confirmada (Hermes/agent-memory/backups Onda 2 + Prometeu 3.2 `_archive-pre-kolden/`). Padrão para MEMORY espúrios / duplicados / snapshots: ARQUIVAR ≥ DELETE ≥ MERGE. Rastreabilidade + zero perda. Procedência: Sub-onda 3.2.
 
-**Emenda diferida (aguarda 2ª confirmação empírica):**
-- **E4 distinção 3-way MEMORY** — canonizada Sub-onda 3.2 (Prometeu/MEMORY.md squad-level × Prometeu/agent-memory/<chief>.md × `.aiox-core/development/agents/<id>/MEMORY.md` canônico AIOX INTOCADO). Só 1x confirmação empírica — aguardar 2ª ocorrência em Onda 4 Olimpo antes de canonizar em §5 do METODO. Registro em `Prometeu/registros/metodo-onda-3/3.3-skills-e-costura/`.
+**Emenda promovida (2ª confirmação empírica satisfeita — CANONIZADA em v1.2):**
+- **E4 distinção 3-way MEMORY** — canonizada em §5 pela Onda 4 do Método. 1ª ocorrência: Prometeu Sub-onda 3.2 (Prometeu/MEMORY.md squad-level × Prometeu/agent-memory/<chief>.md × `.aiox-core/development/agents/<id>/MEMORY.md` canônico AIOX INTOCADO). 2ª ocorrência: Olimpo Onda 4 (`Olimpo/MEMORY.md` squad-level × `Olimpo/agent-memory/olimpo.md` chief-level × `Olimpo/agent-memory/{afrodite,plutos,...}.md` especialista-level). Regra canônica em §5 "Regra E4 — distinção 3-way MEMORY". Registro: `Olimpo/registros/metodo-onda-4/`.
 
 ### v1.0 — 2026-07-06 (versão base)
 
@@ -476,3 +496,5 @@ O `caos-chief` recomenda **Hermes como Onda 2** com 3 razões: (a) Hermes é a C
 *Método Kolden v1.0 — norma canônica de arquitetura de agents. Publicado em 2026-07-06 pela Sub-onda 1.6 do Contrato-mãe `m-20260706-metodo-kolden`. Dogfooding validado: Caos passa 8/8 gates (baseline pré-Fase 2: 0/8 — delta +100 pontos). Divergências declaradas: G5 interpretabilidade + categoria runtime bidirecional (emendas propostas ao framework do Liceu). Próxima onda: Hermes (Grupo A). Sem commit até ordem explícita.*
 
 *Método Kolden v1.1 — norma canônica ampliada com 6 padrões da Onda 3 do Prometeu. Ratificado em 2026-07-09 pela Sub-onda 3.3. Emendas E1/E2/E3/E5/E6/E7 canonizadas (≥2x confirmação empírica). E4 diferida (aguarda 2ª ocorrência Onda 4 Olimpo). Grupo A meta-squads Hermes+Prometeu COMPLETO. Score Onda 3 total: 8/8 VERDE, delta absoluto +6 pontos (2/8 → 8/8). Padrão canônico "INVÓLUCRO sobre MUTAÇÃO DE CÓDIGO" 4x confirmado. Próxima Onda: Olimpo (Grupo B Governance). Sem commit até ordem explícita.*
+
+*Método Kolden v1.2 — norma canônica ampliada pela Onda 4 do Olimpo (Grupo B Governance iniciado). Ratificado em 2026-07-09 pela Onda 4. E4 distinção 3-way MEMORY CANONIZADA em §5 (2ª confirmação: Prometeu 3.2 + Olimpo 4). NOTA §3 sobre Camada 3-4 combinada como caso especial (Olimpo único ocorrente). Score Onda 4: 8/8 VERDE, delta +7 pontos. Padrão "INVÓLUCRO sobre MUTAÇÃO" na 5ª aplicação; E6 co-existência de vetos na 2ª. Próxima Onda: Dike (nascimento como agent-funcional). Sem commit até ordem explícita.*

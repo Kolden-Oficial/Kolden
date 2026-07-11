@@ -95,7 +95,7 @@ Persona canônica em `Olimpo/CLAUDE.md` + persona vendor por-executivo em `Olimp
 
 `Olimpo/ferramentas.md` — catálogo canônico. Destaques:
 - **Camada 1 direta:** vazio (Camada 3-4 delega ao operacional — mesmo racional Hermes Camada 2).
-- **Skills como tools cross-squad (E3 canonizada v1.1):** 14 skills executivas com dono nominal + invocáveis internamente pelos 8 executivos + externamente por outros squads que precisem de framework executivo (Zeus com skill `chief-of-staff-filtragem-e-escalonamento` filtra Escalate/Handle/Park antes de virar Contrato).
+- **Skills como tools cross-squad (E3 canonizada v1.1):** 15 skills executivas com dono nominal + invocáveis internamente pelos 8 executivos + externamente por outros squads que precisem de framework executivo (Zeus com skill `chief-of-staff-filtragem-e-escalonamento` filtra Escalate/Handle/Park antes de virar Contrato).
 - **Fronteira vendor xquads:** `agents/ tasks/ workflows/ data/ checklists/ config/ prd/` — INTOCÁVEIS.
 
 ## §6 — Camada da hierarquia

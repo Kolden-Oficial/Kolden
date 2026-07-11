@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRW Movelaria · Apresentação aos Sócios</title>
+<style>
+  :root{
+    --marinho:#1A3D7E;
+    --marinho-esc:#122C5C;
+    --marinho-prof:#0E1F42;
+    --ocre:#C1741D;
+    --ocre-claro:#E9A85A;
+    --borgonha:#7B1B1A;
+    --cafe:#3E2917;
+    --oliva:#3D4E1E;
+    --offwhite:#F5F3EC;
+    --papel:#FBFAF6;
+    --tinta:#17181C;
+    --chumbo:#5A5E63;
+    --sans:'Century Gothic','Futura','Trebuchet MS',system-ui,-apple-system,'Segoe UI',sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--tinta);background:var(--marinho-prof);line-height:1.5;-webkit-font-smoothing:antialiased}
+
+  .deck{height:100vh;overflow-y:scroll;scroll-snap-type:y mandatory;scroll-behavior:smooth}
+  .slide{
+    height:100vh;scroll-snap-align:start;scroll-snap-stop:always;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:clamp(30px,6.5vw,104px);position:relative;overflow:hidden;
+  }
+  .slide.light{background:var(--papel);color:var(--tinta)}
+  .slide.dark{background:linear-gradient(158deg,var(--marinho) 0%,var(--marinho-prof) 100%);color:var(--offwhite)}
+  .slide.ocre{background:linear-gradient(158deg,#8a4f10 0%,var(--cafe) 100%);color:var(--offwhite)}
+
+  .progress{position:fixed;top:0;left:0;height:4px;background:var(--ocre);z-index:100;transition:width .2s ease;width:0}
+
+  .dots{position:fixed;right:clamp(10px,2vw,22px);top:50%;transform:translateY(-50%);z-index:90;display:flex;flex-direction:column;gap:10px}
+  .dots button{width:9px;height:9px;border-radius:50%;border:1.5px solid rgba(140,140,150,.55);background:transparent;cursor:pointer;padding:0;transition:all .2s}
+  .dots button.on{background:var(--ocre);border-color:var(--ocre);transform:scale(1.25)}
+  @media (max-width:640px){.dots{display:none}}
+
+  .counter{position:fixed;left:clamp(14px,3vw,30px);bottom:clamp(14px,3vw,26px);z-index:90;font-size:.72rem;letter-spacing:.16em;color:var(--chumbo);text-transform:uppercase}
+  .counter.on-dark{color:rgba(245,243,236,.7)}
+
+  .kicker{font-size:clamp(.68rem,1.5vw,.8rem);letter-spacing:.28em;text-transform:uppercase;color:var(--ocre);font-weight:700;margin-bottom:16px}
+  .slide.dark .kicker,.slide.ocre .kicker{color:var(--ocre-claro)}
+  h1{font-size:clamp(2.1rem,6.5vw,4.6rem);line-height:1.02;letter-spacing:-.015em;font-weight:700;margin-bottom:.28em}
+  h2{font-size:clamp(1.6rem,4.6vw,3.2rem);line-height:1.07;letter-spacing:-.01em;font-weight:700;margin-bottom:.4em;max-width:22ch}
+  .lead{font-size:clamp(1.02rem,2.3vw,1.55rem);line-height:1.5;max-width:46ch;color:var(--chumbo)}
+  .slide.dark .lead,.slide.ocre .lead{color:rgba(245,243,236,.9)}
+  .big-quote{font-size:clamp(2.2rem,7.4vw,5.4rem);line-height:1.02;font-weight:700;letter-spacing:-.02em}
+  .big-quote em{color:var(--ocre-claro);font-style:normal}
+  .foot{position:absolute;left:clamp(30px,6.5vw,104px);bottom:clamp(22px,4vw,44px);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--chumbo)}
+  .slide.dark .foot,.slide.ocre .foot{color:rgba(245,243,236,.55)}
+
+  a.lnk{color:var(--ocre);text-decoration:none;border-bottom:1px solid rgba(193,116,29,.45);transition:border-color .15s}
+  a.lnk:hover{border-bottom-color:var(--ocre)}
+  .slide.dark a.lnk,.slide.ocre a.lnk{color:var(--ocre-claro);border-bottom-color:rgba(233,168,90,.45)}
+
+  .logo{display:inline-flex;align-items:stretch;margin-bottom:32px}
+  .logo .brk{
+    border:2.5px solid currentColor;border-right:none;padding:8px 12px 8px 14px;
+    font-weight:700;font-size:clamp(1.3rem,4vw,2.1rem);letter-spacing:.04em;line-height:1;
+    border-top-left-radius:3px;border-bottom-left-radius:3px;position:relative;
+  }
+  .logo .brk::after{content:"";position:absolute;right:0;bottom:0;width:13px;height:2.5px;background:currentColor}
+  .logo .brk::before{content:"";position:absolute;right:0;bottom:0;width:2.5px;height:15px;background:currentColor}
+  .logo .tag{display:flex;align-items:flex-end;padding:0 0 9px 9px;font-size:clamp(.75rem,2.4vw,1.05rem);letter-spacing:.4em;text-transform:lowercase;color:var(--ocre-claro);font-weight:400}
+
+  .seal{
+    position:absolute;right:clamp(28px,6vw,80px);top:clamp(28px,6vw,70px);
+    width:104px;height:104px;border-radius:50%;border:1.5px solid rgba(245,217,184,.5);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+    background:rgba(14,31,66,.25)
+  }
+  .seal .st{color:var(--ocre-claro);font-size:.6rem;letter-spacing:.14em}
+  .seal .sn{font-size:.52rem;letter-spacing:.22em;text-transform:uppercase;color:var(--offwhite);margin:4px 0 2px}
+  .seal .sb{font-weight:700;font-size:.82rem;letter-spacing:.12em;color:#fff}
+  @media (max-width:640px){.seal{display:none}}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,46px);max-width:1000px;margin-top:6px}
+  @media (max-width:720px){.two{grid-template-columns:1fr;gap:20px}}
+  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,38px);max-width:1040px;margin-top:8px}
+  @media (max-width:820px){.three{grid-template-columns:1fr;gap:20px}}
+  .blk h3{font-size:clamp(1.1rem,2.5vw,1.5rem);color:var(--marinho);margin-bottom:.35em;letter-spacing:.01em}
+  .slide.dark .blk h3{color:var(--ocre-claro)}
+  .blk p{font-size:clamp(.95rem,1.9vw,1.14rem);color:var(--chumbo);line-height:1.45}
+  .slide.dark .blk p{color:rgba(245,243,236,.85)}
+  .blk ul{list-style:none;margin-top:.5em}
+  .blk ul li{position:relative;padding:5px 0 5px 20px;font-size:clamp(.92rem,1.8vw,1.08rem);color:var(--chumbo)}
+  .slide.dark .blk ul li{color:rgba(245,243,236,.82)}
+  .blk ul li::before{content:"›";position:absolute;left:0;color:var(--ocre);font-weight:700}
+  .slide.dark .blk ul li::before{color:var(--ocre-claro)}
+
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,40px);margin-top:12px;max-width:1000px}
+  @media (max-width:720px){.stats{grid-template-columns:1fr;gap:20px}}
+  .stat .num{font-size:clamp(2.5rem,6.6vw,4.4rem);font-weight:700;line-height:1;color:var(--ocre-claro);letter-spacing:-.02em}
+  .slide.light .stat .num{color:var(--ocre)}
+  .stat .lbl{font-size:clamp(.88rem,1.7vw,1.02rem);color:var(--chumbo);margin-top:.5em;line-height:1.4;max-width:26ch}
+  .slide.dark .stat .lbl{color:rgba(245,243,236,.8)}
+
+  .targets{margin-top:8px;max-width:940px}
+  .tgt{display:flex;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid rgba(120,120,130,.18);flex-wrap:wrap}
+  .tgt:last-child{border-bottom:none}
+  .tgt .nm{font-size:clamp(1.02rem,2.3vw,1.42rem);font-weight:700;color:var(--marinho);min-width:clamp(150px,25vw,270px)}
+  .slide.dark .tgt .nm{color:#fff}
+  .tgt .ds{font-size:clamp(.9rem,1.8vw,1.08rem);color:var(--chumbo);flex:1;min-width:200px}
+  .slide.dark .tgt .ds{color:rgba(245,243,236,.82)}
+  .tgt .go{font-size:.82rem;letter-spacing:.02em;white-space:nowrap}
+
+  .palette{display:flex;gap:14px;margin-top:24px;flex-wrap:wrap}
+  .sw{width:clamp(58px,11vw,94px)}
+  .sw i{display:block;height:clamp(58px,11vw,94px);border-radius:10px;box-shadow:0 6px 20px rgba(14,31,66,.15)}
+  .sw span{display:block;font-size:.66rem;letter-spacing:.08em;color:var(--chumbo);margin-top:7px;text-transform:uppercase}
+
+  .steps{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,44px);max-width:1000px;margin-top:8px}
+  @media (max-width:720px){.steps{grid-template-columns:1fr}}
+  .step{border-left:4px solid var(--ocre);padding:6px 0 6px 22px}
+  .step .n{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ocre);font-weight:700}
+  .slide.dark .step .n{color:var(--ocre-claro)}
+  .step h3{font-size:clamp(1.12rem,2.5vw,1.65rem);color:var(--marinho);margin:.2em 0 .3em}
+  .slide.dark .step h3{color:#fff}
+  .step p{font-size:clamp(.93rem,1.8vw,1.12rem);color:var(--chumbo);line-height:1.45}
+  .slide.dark .step p{color:rgba(245,243,236,.82)}
+
+  ul.checks{list-style:none;margin-top:10px;max-width:54ch}
+  ul.checks li{position:relative;padding:11px 0 11px 32px;font-size:clamp(.98rem,2vw,1.26rem);border-bottom:1px solid rgba(120,120,130,.16);color:var(--tinta)}
+  .slide.dark ul.checks li{color:var(--offwhite)}
+  ul.checks li::before{content:"›";position:absolute;left:0;color:var(--ocre);font-weight:700}
+  .slide.dark ul.checks li::before{color:var(--ocre-claro)}
+
+  .sources{margin-top:10px;max-width:840px;font-size:clamp(.92rem,1.8vw,1.1rem);line-height:1.9;color:var(--chumbo)}
+  .sources a{color:var(--marinho);text-decoration:none;border-bottom:1px solid rgba(26,61,126,.3)}
+  .slide.dark .sources{color:rgba(245,243,236,.82)}
+
+  .hint{position:fixed;right:clamp(14px,3vw,30px);bottom:clamp(14px,3vw,26px);z-index:90;font-size:.68rem;letter-spacing:.1em;color:var(--chumbo);text-transform:uppercase;opacity:.7}
+  @media (max-width:640px){.hint{display:none}}
+
+  @media print{
+    body,.deck{height:auto;overflow:visible;background:#fff}
+    .deck{scroll-snap-type:none}
+    .slide{height:100vh;page-break-after:always;break-after:page}
+    .progress,.dots,.counter,.hint{display:none!important}
+    a.lnk,.sources a{color:#0E1F42!important}
+  }
+</style>
+</head>
+<body>
+
+<div class="progress" id="bar"></div>
+<div class="dots" id="dots"></div>
+<div class="counter" id="counter">01 / 15</div>
+<div class="hint">use ↑ ↓ ou role a tela</div>
+
+<div class="deck" id="deck">
+
+  <!-- 1 · Capa -->
+  <section class="slide dark">
+    <div class="seal"><span class="st">★★★★★</span><span class="sn">Movelaria</span><span class="sb">BR.W</span></div>
+    <div class="logo"><span class="brk">BRW</span><span class="tag">movelaria</span></div>
+    <div class="kicker">Proposta de marca &amp; oportunidades</div>
+    <h1>Curadoria<br>que <em style="color:var(--ocre-claro);font-style:normal">rende</em>.</h1>
+    <p class="lead">Posicionamento de marca e mapa de oportunidades de mercado na Bahia.</p>
+    <div class="foot">Kolden para BRW Movelaria · 2026</div>
+  </section>
+
+  <!-- 2 · O que a BRW é -->
+  <section class="slide light">
+    <div class="kicker">O que somos</div>
+    <h2>Não somos a loja. Não somos a fábrica.</h2>
+    <p class="lead">Somos a <strong style="color:var(--marinho)">curadoria entre as duas</strong>. Quem transforma metro quadrado em ativo que rende, do projeto à montagem, com preço de indústria e olho de quem entende de hospitalidade.</p>
+    <div class="foot">BRW Movelaria</div>
+  </section>
+
+  <!-- 3 · Para quem -->
+  <section class="slide light">
+    <div class="kicker">Para quem</div>
+    <h2>Para quem o móvel é investimento</h2>
+    <div class="two">
+      <div class="blk">
+        <h3>Hotelaria &amp; resorts</h3>
+        <p>Precisam de ambientes que operam, resistem à rotatividade e mantêm o padrão da rede, do primeiro ao último quarto.</p>
+      </div>
+      <div class="blk">
+        <h3>Investidores de studio e Airbnb</h3>
+        <p>Querem o imóvel pronto para render, sem virar especialistas em móvel, obra e fornecedor. Querem resultado, não trabalho.</p>
+      </div>
+    </div>
+    <div class="foot">BRW Movelaria</div>
+  </section>
+
+  <!-- 4 · A força / Robinsom Leite -->
+  <section class="slide dark">
+    <div class="kicker">A força por trás</div>
+    <h2>35 anos de ofício em cada escolha</h2>
+    <p class="lead">A BRW nasce da estrada do <strong style="color:#fff">Robinsom Leite</strong>. Décadas de chão de fábrica que hoje viram curadoria. Conhecemos as indústrias de grande porte que o mercado local não acessa, e é isso que separa <strong style="color:#fff">curadoria</strong> de catálogo.</p>
+    <div class="foot">BRW Movelaria</div>
+  </section>
+
+  <!-- 5 · A promessa -->
+  <section class="slide ocre">
+    <div class="kicker">A promessa</div>
+    <p class="big-quote">Mobília certa não é gasto.<br>É o ativo que faz o<br>metro quadrado <em>render</em>.</p>
+    <p class="lead" style="margin-top:26px">Entregamos o ambiente pronto para operar e valorizar, e ele se paga no aluguel que rende mais rápido.</p>
+    <div class="foot">BRW Movelaria</div>
+  </section>
+
+  <!-- 6 · A cara da marca -->
+  <section class="slide light">
+    <div class="kicker">A cara da marca</div>
+    <h2>Uma marca com critério</h2>
+    <p class="lead">Sóbria, premium, sem ruído. Fala de permanência, proporção e resultado, como as peças que entrega.</p>
+    <div class="palette">
+      <div class="sw"><i style="background:#1A3D7E"></i><span>Marinho</span></div>
+      <div class="sw"><i style="background:#C1741D"></i><span>Ocre</span></div>
+      <div class="sw"><i style="background:#7B1B1A"></i><span>Borgonha</span></div>
+      <div class="sw"><i style="background:#3E2917"></i><span>Café</span></div>
+      <div class="sw"><i style="background:#3D4E1E"></i><span>Oliva</span></div>
+    </div>
+    <div class="foot">BRW Movelaria · identidade</div>
+  </section>
+
+  <!-- 7 · O mercado a favor -->
+  <section class="slide dark">
+    <div class="kicker">O mercado</div>
+    <h2>A maré está a favor</h2>
+    <div class="stats">
+      <div class="stat"><div class="num">48%</div><div class="lbl">das vendas de imóveis em Salvador já são studios e compactos (2026)</div></div>
+      <div class="stat"><div class="num">R$ 13,6 bi</div><div class="lbl">de investimento hoteleiro no Brasil até 2030, a maioria no interior e litoral</div></div>
+      <div class="stat"><div class="num">1º</div><div class="lbl">a Bahia lidera a multipropriedade do Nordeste</div></div>
+    </div>
+    <p class="lead" style="margin-top:32px">O que falta ao mercado não é imóvel. É quem mobilie com <strong style="color:#fff">critério e escala</strong>.</p>
+    <div class="foot">Fontes na página 14</div>
+  </section>
+
+  <!-- 8 · Concorrentes diretos -->
+  <section class="slide light">
+    <div class="kicker">O campo</div>
+    <h2>Contra quem jogamos</h2>
+    <p class="lead" style="margin-bottom:6px">Poucos cruzam, ao mesmo tempo, hotelaria B2B, investidor de renda e acesso à indústria. Esse é o espaço da BRW. Os concorrentes diretos (acesse):</p>
+    <div class="targets">
+      <div class="tgt"><span class="nm">Básica Home</span><span class="ds">Premium residencial e corporativo, curadoria de marcas de design</span><span class="go"><a class="lnk" href="https://basicahome.com.br/" target="_blank" rel="noopener">basicahome.com.br ↗</a></span></div>
+      <div class="tgt"><span class="nm">Home Design</span><span class="ds">O mais forte no digital (27 mil seguidores, loja online ativa)</span><span class="go"><a class="lnk" href="https://www.homedesign.com.br/" target="_blank" rel="noopener">homedesign.com.br ↗</a></span></div>
+      <div class="tgt"><span class="nm">Efeito Home</span><span class="ds">Design autoral, foco residencial (site fora do ar, ativo no Instagram)</span><span class="go"><a class="lnk" href="https://www.instagram.com/efeitohome/" target="_blank" rel="noopener">@efeitohome ↗</a></span></div>
+      <div class="tgt"><span class="nm">3M Projetos e Reformas</span><span class="ds">Já testa o discurso do investidor Airbnb (imóvel pronto para render)</span><span class="go"><a class="lnk" href="https://www.industrianews.com.br/2026/05/do-imovel-vazio-ao-apartamento-pronto-3m-cresce-com-avanco-das-reformas-turnkey-em-salvador/" target="_blank" rel="noopener">ver matéria ↗</a></span></div>
+    </div>
+    <div class="foot">A janela está aberta, mas não por muito tempo</div>
+  </section>
+
+  <!-- 9 · Oportunidades hotelaria -->
+  <section class="slide light">
+    <div class="kicker">Onde bater · 1</div>
+    <h2>Oportunidades em hotelaria</h2>
+    <div class="targets">
+      <div class="tgt"><span class="nm">Village Itaparica</span><span class="ds">~400 unidades a mobiliar, entrega em 2026 e 2027</span><span class="go"><a class="lnk" href="https://brasilturis.com.br/2025/03/21/liva-assume-gestao-hoteleira-do-village-itaparica-em-parceria-com-eindom-empreendimentos/" target="_blank" rel="noopener">ver ↗</a></span></div>
+      <div class="tgt"><span class="nm">Aviva · Costa do Sauípe</span><span class="ds">Retrofit de 404 apartamentos (Terra Resort), a vizinhança do Iberostar</span><span class="go"><a class="lnk" href="https://www.aviva.com.br/costa-do-sauipe/terra-resort" target="_blank" rel="noopener">ver ↗</a></span></div>
+      <div class="tgt"><span class="nm">Marangatú · Serra Grande</span><span class="ds">Hotel de luxo novo, mobília completa do zero</span><span class="go"><a class="lnk" href="https://travel.com.br/novidades/marangatu-luxury-hotel/" target="_blank" rel="noopener">ver ↗</a></span></div>
+      <div class="tgt"><span class="nm">Nanö Beach · Linha Verde</span><span class="ds">Inauguração 2026, dono acessível, bom para começar</span><span class="go"><a class="lnk" href="https://nanobeachhotel.com.br/" target="_blank" rel="noopener">ver ↗</a></span></div>
+    </div>
+    <div class="foot">BRW Movelaria · prospecção</div>
+  </section>
+
+  <!-- 10 · Oportunidades studios -->
+  <section class="slide light">
+    <div class="kicker">Onde bater · 2</div>
+    <h2>Oportunidades em studios e investidores</h2>
+    <div class="targets">
+      <div class="tgt"><span class="nm">Moura Dubeux</span><span class="ds">Studios e retrofit de hotéis em Salvador, centenas de unidades</span></div>
+      <div class="tgt"><span class="nm">VCA · Kahakai</span><span class="ds">Mais de 550 unidades no litoral sul (Ilhéus e Porto Seguro)</span></div>
+      <div class="tgt"><span class="nm">ONE Rio Vermelho</span><span class="ds">126 studios idênticos, a vitrine perfeita de padronização</span></div>
+      <div class="tgt"><span class="nm">Gestoras de temporada</span><span class="ds">Seazone, BemVindo, 535, o caminho mais curto até o investidor</span></div>
+    </div>
+    <div class="foot">BRW Movelaria · prospecção</div>
+  </section>
+
+  <!-- 11 · Comunicação & canais -->
+  <section class="slide dark">
+    <div class="kicker">Como vamos aparecer e vender</div>
+    <h2>Comunicação e canais de aquisição</h2>
+    <div class="three">
+      <div class="blk">
+        <h3>Na internet</h3>
+        <p>Presença que mostra o resultado, não o catálogo: ambientes entregues operando, o antes e depois, o bastidor da curadoria. Voz com critério e serenidade.</p>
+      </div>
+      <div class="blk">
+        <h3>Para o investidor</h3>
+        <p>A conversa é sobre retorno. O studio pronto para render, ocupação e valorização, o imóvel operando rápido. Prova por caso real (Iberostar, Alphaville).</p>
+      </div>
+      <div class="blk">
+        <h3>Canais de aquisição</h3>
+        <ul>
+          <li>Instagram e conteúdo (reconstruir a presença digital)</li>
+          <li>Tráfego pago no Meta e Google, mirando investidor e hotelaria</li>
+          <li>Parcerias com gestoras de temporada e corretores</li>
+          <li>Abordagem direta a hotéis, resorts e incorporadoras</li>
+          <li>Indicação e relacionamento (a rede do Robinsom)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot">BRW Movelaria · comunicação</div>
+  </section>
+
+  <!-- 12 · Como abordar -->
+  <section class="slide light">
+    <div class="kicker">Como abordar</div>
+    <h2>Dois passos</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="n">Passo 1 · Provar rápido</div>
+        <h3>Contas menores e acessíveis</h3>
+        <p>Pousadas boutique e gestoras de temporada. Fechamos, entregamos e geramos casos reais, a prova que abre as portas grandes.</p>
+      </div>
+      <div class="step">
+        <div class="n">Passo 2 · Escalar</div>
+        <h3>As grandes contas</h3>
+        <p>Com os casos na mão, ir a Moura Dubeux, Aviva e Village Itaparica, onde está o volume.</p>
+      </div>
+    </div>
+    <div class="foot">BRW Movelaria · plano</div>
+  </section>
+
+  <!-- 13 · Próximos passos -->
+  <section class="slide light">
+    <div class="kicker">Para fechar a versão final</div>
+    <h2>O que falta, e vamos fazer juntos</h2>
+    <ul class="checks">
+      <li>Conversar com alguns investidores e hotéis-alvo para confirmar a demanda</li>
+      <li>Organizar os números da operação para dimensionar margem e capacidade</li>
+      <li>Fechar os arquivos definitivos da marca (logo e aplicações)</li>
+      <li>Ativar a abordagem comercial aos alvos priorizados</li>
+    </ul>
+    <p class="lead" style="margin-top:22px">Esta é a <strong style="color:var(--marinho)">direção que propomos</strong>. Com esses passos, fechamos a marca e o plano comercial com segurança.</p>
+    <div class="foot">BRW Movelaria · próximos passos</div>
+  </section>
+
+  <!-- 14 · Fontes -->
+  <section class="slide light">
+    <div class="kicker">De onde vêm os números</div>
+    <h2>Fontes da pesquisa</h2>
+    <div class="sources">
+      Mercado imobiliário de Salvador (studios, VGV, polos): <a href="https://www.ademi-ba.com.br/" target="_blank" rel="noopener">ADEMI-BA</a> e Brain Inteligência Estratégica.<br>
+      Reformas turnkey e o concorrente 3M: <a href="https://www.industrianews.com.br/2026/05/do-imovel-vazio-ao-apartamento-pronto-3m-cresce-com-avanco-das-reformas-turnkey-em-salvador/" target="_blank" rel="noopener">Indústria News</a>.<br>
+      Village Itaparica: <a href="https://brasilturis.com.br/2025/03/21/liva-assume-gestao-hoteleira-do-village-itaparica-em-parceria-com-eindom-empreendimentos/" target="_blank" rel="noopener">Brasilturis</a>.<br>
+      Marangatú Luxury Hotel: <a href="https://travel.com.br/novidades/marangatu-luxury-hotel/" target="_blank" rel="noopener">Travel</a> e <a href="https://exame.com/negocios/este-belga-esta-investindo-r-120-milhoes-em-uma-vila-de-pescadores-na-bahia/" target="_blank" rel="noopener">Exame</a> (Nanö Beach).<br>
+      Concorrentes diretos: sites oficiais linkados na página 8.<br>
+      Levantamento completo: dossiês de concorrentes e prospecção da Kolden (documentos internos).
+    </div>
+    <div class="foot">BRW Movelaria · fontes · pesquisa Kolden 2026</div>
+  </section>
+
+  <!-- 15 · Fecho -->
+  <section class="slide dark">
+    <div class="logo"><span class="brk">BRW</span><span class="tag">movelaria</span></div>
+    <p class="big-quote">Curadoria que <em>rende</em>.</p>
+    <p class="lead" style="margin-top:24px">Vamos transformar metro quadrado em ativo.</p>
+    <div class="foot">Kolden para BRW Movelaria · 2026</div>
+  </section>
+
+</div>
+
+<script>
+  const deck = document.getElementById('deck');
+  const slides = Array.from(deck.querySelectorAll('.slide'));
+  const bar = document.getElementById('bar');
+  const counter = document.getElementById('counter');
+  const dotsWrap = document.getElementById('dots');
+  const total = slides.length;
+
+  slides.forEach((_, i) => {
+    const b = document.createElement('button');
+    b.setAttribute('aria-label', 'Ir para slide ' + (i+1));
+    b.addEventListener('click', () => slides[i].scrollIntoView());
+    dotsWrap.appendChild(b);
+  });
+  const dots = Array.from(dotsWrap.children);
+
+  function current(){ return Math.round(deck.scrollTop / window.innerHeight); }
+  function update(){
+    const i = Math.min(current(), total-1);
+    const pct = total > 1 ? (i/(total-1))*100 : 100;
+    bar.style.width = pct + '%';
+    counter.textContent = String(i+1).padStart(2,'0') + ' / ' + String(total).padStart(2,'0');
+    counter.classList.toggle('on-dark', slides[i].classList.contains('dark') || slides[i].classList.contains('ocre'));
+    dots.forEach((d,k) => d.classList.toggle('on', k===i));
+  }
+  deck.addEventListener('scroll', () => window.requestAnimationFrame(update));
+
+  window.addEventListener('keydown', (e) => {
+    const i = current();
+    if(['ArrowDown','ArrowRight','PageDown',' '].includes(e.key)){ e.preventDefault(); if(i<total-1) slides[i+1].scrollIntoView(); }
+    if(['ArrowUp','ArrowLeft','PageUp'].includes(e.key)){ e.preventDefault(); if(i>0) slides[i-1].scrollIntoView(); }
+    if(e.key==='Home'){ e.preventDefault(); slides[0].scrollIntoView(); }
+    if(e.key==='End'){ e.preventDefault(); slides[total-1].scrollIntoView(); }
+  });
+  update();
+</script>
+</body>
+</html>

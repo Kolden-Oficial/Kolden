@@ -1,0 +1,165 @@
+# Contrato de Missão — BRW Movelaria: pesquisa de mercado (concorrentes + prospecção Bahia)
+# Camadas 1-4 lavradas na descida; Camada 5 + dike preenchidas na subida.
+# Missão-irmã de m-20260710-brw-marca-basica (ancora no brandbook v1). Schema: ../contrato-de-missao.schema.md
+---
+missao:
+  id: "m-20260710-brw-pesquisa-mercado"
+
+  # ── CAMADA 1 — HUMANO (lacrada, imutável) ───────────────────────────────────
+  intencao_original:
+    input_cru: "Ficou fantastico, agora @Hermes/ acione o squad de pesquisa e com base no brandbook, procure os principais concorrentes, e também quero que pesquisa lugares na Bahia que podemos prospectar como uma excelente oportunidade."
+    canal: "cli"
+    recebida_em: "2026-07-10T09:35:49-03:00"
+    hash: "fc18019e2d48ffcda94bdcb1fe717fb67504fd427f9a0c0d3858d20b9ec61266"
+
+  # ── CAMADA 2 — HERMES (tradução de intenção) ────────────────────────────────
+  hermes:
+    dor:
+      objetivo_real: >
+        Acionar o squad de pesquisa (Argos) para, ancorado no brandbook v1 da BRW (eixo curadoria
+        industrial B2B; ICP hotelaria + investidor Airbnb), produzir (1) um dossiê dos principais
+        concorrentes e (2) uma lista de prospecção de lugares/organizações na Bahia inteira (polos
+        turísticos) que representem excelente oportunidade — hotelaria E studios/short-stay.
+      criterio_de_sucesso: >
+        Dois artefatos em brw-movelaria/pesquisa/: (a) dossie-concorrentes.md — 8-12 concorrentes
+        (locais Salvador + nacionais que atuam na BA) com posicionamento, portfólio, canais, presença
+        paga (ad library), preço/nível e onde a BRW ganha/perde vs cada um; matriz comparativa + mapa
+        de posicionamento. (b) prospeccao-bahia.md — alvos priorizados por polo (Salvador/RMS, Praia
+        do Forte, Costa do Sauípe, Porto Seguro, Ilhéus, Morro de São Paulo, Chapada) em 2 trilhas
+        (hotelaria + incorporadoras/empreendimentos de studios), cada alvo com: quem é, por que é
+        oportunidade (sinal de compra), tamanho estimado, contato/porta-de-entrada e gancho de pitch
+        ancorado no brandbook. Fontes citadas (URL). Achados marcados por confiança (verificado ×
+        indício). Ratificável pelo Ronan.
+      restricoes:
+        prazo: "1 sessão"
+        orcamento: "pesquisa web autorizada — Firecrawl+Exa, nível máximo (gate de sessão registrado)"
+        proibicoes:
+          - "não inventar dados: todo número/afirmação com fonte (URL) ou marcado como estimativa/indício"
+          - "não fazer outreach/contato real — só mapear alvos e portas-de-entrada"
+          - "não usar WebSearch nativa da Anthropic (soberania) — só Firecrawl e Exa"
+          - "não cristalizar como verdade — pesquisa é insumo; validação de campo fica com o cliente"
+      contexto:
+        - "Ancora no brandbook v1: sobre-a-empresa/Projetos/Ativos/brw-movelaria/marca/ (posicionamento.md tem POP/POD e concorrentes; premissas-e-premorte.md tem ICP)"
+        - "Concorrentes já citados no dossiê: locais Salvador = Básica Home, Home Design, Efeito; nacionais hotelaria/corporativo = SYMM, Sular, Rudnick, Breton, ESSANTO, Venture, Sancapel; residencial (não-core) = Alfa Planejados, Bahia Closet"
+        - "Cases/prova social da BRW: Iberostar (8 anos), Accor, hotel do Flamengo, Singulari, Alphaville 24 casas"
+        - "DECISÕES DO RONAN (travadas): ferramentas Firecrawl+Exa nível máximo; geografia = Bahia inteira (polos turísticos); foco = hotelaria E studios/Airbnb (ambos)"
+      nivel_de_risco: "amarelo"
+    dor_completo: true
+    perguntas_abertas: []
+    matriz_de_risco:
+      reversibilidade: "reversivel"
+      impacto: "medio"
+      faixa: "amarelo"
+      autonomia: "mostra-antes"   # pesquisa web + lista de prospecção passam por gate humano antes de uso
+    ordem_de_maquina: >
+      Gate de busca autorizado (Firecrawl+Exa, máximo). Despachar Argos em 2 ondas: Onda 1 =
+      dossiê de concorrentes (também valida acesso às ferramentas de busca); Onda 2 = prospecção
+      Bahia (fan-out por trilha hotelaria/studios). Artefatos em disco em brw-movelaria/pesquisa/.
+      Verificação independente na subida; devolver ao Ronan.
+    assinatura: { por: "hermes", em: "2026-07-10T09:35:49-03:00" }
+
+  # ── CAMADA 3 — ZEUS (decomposição + roteamento) ─────────────────────────────
+  zeus:
+    diagnostico: >
+      Missão de inteligência de mercado ao vivo, dono executivo Atena (ou roteável direto ao squad
+      de pesquisa). Decompõe em 2 partes fracamente acopladas (concorrentes × prospecção) que podem
+      correr em ondas. Onda 1 (concorrentes) roda primeiro para de-riscar o acesso às ferramentas de
+      busca antes do fan-out da Onda 2.
+    decomposicao:
+      - parte: "Dossiê dos principais concorrentes (locais + nacionais que atuam na BA), matriz e mapa de posicionamento"
+        executivo_destino: "atena"
+        motivo: "inteligência competitiva ao vivo — squad Argos"
+      - parte: "Prospecção Bahia inteira: hotelaria + incorporadoras/studios, por polo turístico, priorizada por sinal de compra"
+        executivo_destino: "atena"
+        motivo: "sizing + descoberta de alvos — squad Argos"
+    paralelo: []   # Onda 1 antes da Onda 2 (de-risco de gate); Onda 2 pode fan-out interno por trilha
+    consolidacao: >
+      4 artefatos em brw-movelaria/pesquisa/ (dossie-concorrentes, prospeccao-hotelaria-bahia,
+      prospeccao-studios-bahia, prospeccao-bahia consolidado). Onda 1 validou a herança do gate de
+      busca por subagentes (Firecrawl+Exa correram sem bloqueio). Coleta 100% soberana (zero WebSearch
+      nativa). Achado adversarial que fortalece a marca: a 3M já disputa o pitch Airbnb/ROI — sinalizado
+      como ameaça nº 1 e contradição parcial da premissa de oceano-azul. Verificação independente
+      (proxy-Dike) apontou 5 reparos de rastreabilidade (número em blog lavado como verificado,
+      duplicata numérica, valores sem URL, alvo não-acionável em ranking, projetos não-confirmados no
+      top-15); todos corrigidos por Hermes na rodada 1. Ancoragem no brandbook (PODs) confirmada.
+    arbitragem: null
+    assinatura: { por: "zeus", em: "2026-07-10T09:35:49-03:00" }
+
+  # ── CAMADA 4 — EXECUTIVOS (especificação técnica) ───────────────────────────
+  executivos:
+    - agente: "atena"
+      especificacao_tecnica: >
+        Argos ancorado no brandbook v1. Onda 1: dossie-concorrentes.md (8-12 players, matriz, mapa).
+        Onda 2: prospeccao-bahia.md (2 trilhas × polos, alvos priorizados por sinal de compra, com
+        porta-de-entrada e gancho de pitch). Ferramentas: Firecrawl (base, soberania) + Exa
+        (descoberta de entidades). Toda afirmação com fonte ou marcada estimativa/indício.
+      handoff_operacional: { squad: "Argos", artefato: "brw-movelaria/pesquisa/{dossie-concorrentes,prospeccao-bahia}.md" }
+      devolucao_lateral: null
+      resultado: ""
+      assinatura: { por: "atena", em: "2026-07-10T09:35:49-03:00" }
+
+  # ── CAMADA 5 — OPERACIONAL ──────────────────────────────────────────────────
+  operacional:
+    - agente: "argos (onda 1)"
+      squad: "Argos"
+      resultado: "dossie-concorrentes.md — 17 players em 3 anéis (local Salvador / nacional / substitutos); ficha por player, matriz comparativa, mapa de posicionamento, espaço-em-branco da BRW. Firecrawl+Exa, zero WebSearch nativa."
+      riscos_levantados:
+        - "A 3M Projetos e Reformas (Salvador) JÁ articula pitch Airbnb/ROI chave-na-mão — contradiz a premissa de 'oceano azul por ausência' do posicionamento.md. Ameaça nº 1."
+        - "Anel nacional (ESSANTO/Artdville/Dellavita) tem custo de fábrica + público hoteleiro; pode crescer na BA"
+      propostas:
+        - "Espaço defensável = camada de curadoria premium que faz o ativo render, plugada como fornecedora dos turnkey/gestoras (parceria > rivalidade); fosso real = case-book hoteleiro (Iberostar 8 anos), não o acesso Rimo"
+      assinatura: { por: "argos", em: "2026-07-10T09:35:49-03:00" }
+    - agente: "argos (onda 2 — hotelaria)"
+      squad: "Argos"
+      resultado: "prospeccao-hotelaria-bahia.md — 15+ alvos por polo (Sauípe, Litoral Norte, Salvador/RMS, Baía de Todos os Santos, Porto Seguro/Trancoso, Ilhéus/Itacaré, Maraú, Chapada) com sinal de compra, porta-de-entrada e gancho; panorama de ondas de investimento."
+      riscos_levantados:
+        - "Decisor/arquiteto de especificação de FF&E por conta não é público — exige LinkedIn/contato (fora do escopo da coleta fria)"
+      propostas:
+        - "Retrofit hoteleiro (Aviva/Sauípe, ex-Pestana) é o vetor de maior aderência ao case-book da BRW"
+      assinatura: { por: "argos", em: "2026-07-10T09:35:49-03:00" }
+    - agente: "argos (onda 2 — studios)"
+      squad: "Argos"
+      resultado: "prospeccao-studios-bahia.md — 15 alvos + ~10 em vigília (incorporadoras, empreendimentos, gestoras). Contexto ADEMI-BA: compactos = 48% das vendas de Salvador jan/2026."
+      riscos_levantados:
+        - "Não valida H1 (demanda real replicável) — é mapa de prospecção fria; risco é de CANAL, não de mercado"
+        - "Contas grandes (Moura Dubeux, Aviva) podem ter fornecedor nacional cativo — verificar antes de investir esforço comercial"
+      propostas:
+        - "Gestoras de short-stay (Seazone/BemVindo/535/Beehost) = canal de maior alavancagem até o investidor real, sem depender da rede pessoal do Robson"
+      assinatura: { por: "argos", em: "2026-07-10T09:35:49-03:00" }
+    - agente: "hermes (consolidação)"
+      squad: "Hermes"
+      resultado: "prospeccao-bahia.md — sumário executivo cruzado: Top 10 oportunidades das 2 trilhas, priorização quick-wins × grandes-contas, alerta competitivo, próximos passos."
+      riscos_levantados: []
+      propostas:
+        - "Próximo passo natural: enriquecer top-10 com decisor/arquiteto (LinkedIn) + handoff a Caliope/Peitho para outreach"
+      assinatura: { por: "hermes", em: "2026-07-10T09:35:49-03:00" }
+
+  # ── SUBIDA — DIKE ───────────────────────────────────────────────────────────
+  dike:
+    confere_hash: true
+    reconciliacao: "bateu (após rodada 1 de correção)"
+    degrau_da_quebra: null
+    justificativa: >
+      Verificação por proxy-Dike independente (Explore isolado que não coletou) sobre os 3 arquivos
+      detalhados. Substância aprovada: disciplina de fonte/selo acima da média, 3 anéis de concorrentes,
+      2 trilhas × polos de prospecção, ancoragem forte nos PODs, e o achado adversarial da 3M
+      corretamente sinalizado. Veredito inicial volta-para-correcao por 5 defeitos de rastreabilidade
+      (Critério 1 = número solto é o mais grave): claim de ranking mundial via blog dentro de
+      [verificado]; duplicata 535 Homes = Vanessa VLV (R$57,3k); ABL R$5,5bi e Anantara R$77mi sem URL;
+      O Erê (alvo em embargo) ocupando slot acionável; #14/#15 do top-15 sem projeto definido. Os 5
+      reparos foram aplicados (rebaixados a [indício]/vigília/fora-do-ranking com nota). Entrega é mapa
+      de prospecção FRIA — não valida H1 (demanda real), que segue aberta na pré-morte da marca.
+    veredito: "sobe"
+    assinatura: { por: "dike (proxy: hermes + explore independente)", em: "2026-07-10T10:05:00-03:00" }
+
+  # ── TRANSVERSAL ─────────────────────────────────────────────────────────────
+  orcamento:
+    teto_rodadas: 2
+    teto_tempo: "1 sessão"
+    rodadas_gastas: 1   # 1 rodada de correção pós-verificação (dentro do teto)
+
+  log_de_decisao:
+    - em: "2026-07-10T09:35:49-03:00"
+      por: "ronan"
+      decisao: "pesquisa web autorizada: Firecrawl+Exa, nível máximo; geografia = Bahia inteira (polos turísticos); foco = hotelaria E studios/Airbnb"
+      porque: "confirmado via AskUserQuestion antes do disparo, conforme política de soberania de dados"

@@ -1,0 +1,144 @@
+# Contrato de Missão — Dossiê BRW Movelaria v2 (transcrição da reunião 07/07)
+# Schema: Olimpo/contratos/contrato-de-missao.schema.md
+# Lavrado por Hermes (Camada 2) a partir de briefing do Ronan em 2026-07-09.
+# Retomada de sessão anterior (1f0e0db6, 17:15-17:38) que falhou em 2 tentativas de Write.
+---
+missao:
+  id: "m-20260709-brw-dossie-v2"
+
+  # ── CAMADA 1 — HUMANO (lacrada, imutável) ───────────────────────────────────
+  intencao_original:
+    input_cru: |
+      @Hermes\ a @Aletheia\ estava fazendo uma task importantes para a
+      @sobre-a-empresa/Projetos/Ativos/brw-movelaria\ sobre a transcrição, porém
+      deu erro, revise onde parou.
+
+      [retificação factual após reporte de Hermes]
+      O sócio real é o Robson, o Bruno é o Gestor operacional, o Robson estava
+      usando o mesmo acesso que o Bruno na hora.
+
+      De resto podemos acionar a opção 1 e autorizar o write.
+    canal: "chat"
+    recebida_em: "2026-07-09T21:20:00Z"
+    hash: "brw-dossie-v2-2026-07-09-retomada-com-retificacao-robson"
+
+  # ── CAMADA 2 — HERMES (tradução de intenção) ────────────────────────────────
+  hermes:
+    dor:
+      objetivo_real: |
+        Retomar e concluir a tarefa iniciada pela Aletheia na sessão 1f0e0db6
+        (2026-07-09 17:15-17:38): consumir 100% da transcrição da reunião BRW de
+        2026-07-07 (Google Doc 1kdsuDtZ0uHzhVLCsTOt9rcueM4U4qlEhFoN7uw2V5O0,
+        preservada em cache local) e reescrever o dossie.md do cliente BRW
+        Movelaria em versão v2, integrando os achados novos ao Bloco 10
+        (hipóteses H1-H5) e reformulando os Blocos 1-9 onde a reunião contradiz
+        ou refina a v0.3. Persistir via Write no arquivo canônico. Prazo real
+        colado à apresentação de sexta-feira (10/07) com a Hanna cunha
+        valadares.
+      criterio_de_sucesso: |
+        1. dossie.md sobrescrito com v2 completa (compreende 100% da transcrição
+           de 621 linhas + preserva Blocos 1-9 v0.3 refatorando onde a reunião
+           mudou a leitura).
+        2. Retificação Robson↔Bruno aplicada em TODA menção do dossiê — cada
+           parágrafo que hoje atribui algo ao "Bruno Felice Vilas Boas" precisa
+           ser reavaliado à luz da correção: o arco Rudinique → SP → Salvador →
+           Robson Representações → BRW é biografia do Robson; o "cara de lata"
+           é o Robson; Bruno Jr. é gestor operacional (adm do CNPJ), e falou no
+           lugar do Robson em vários trechos usando o mesmo login.
+        3. H5 (CNAE ≠ operação) confirmada com evidência textual da reunião —
+           BRW se auto-declara "prestadora de soluções completa de curadoria
+           B2B" e "atacado entre fábrica e lojista", coerente com a categoria
+           FB "Consulting agency".
+        4. Nomes próprios da equipe registrados literalmente: Robson (sócio /
+           prospecção / "cara de lata"), Bruno Vilas Boas Jr. (gestão /
+           estratégia / adm CNPJ), Edmário (design de interiores, consultor
+           vendas), Amanda (arquiteta, consultora vendas), Joyce Vieira (pós-
+           venda / fornecedores / entrega), Hanna cunha valadares (prospecção,
+           em integração), Catarina Leite (marketing + coringa), Grupo ETT
+           (financeiro / backoffice / prospecção grupo hoteleiro).
+        5. Metas financeiras verbalizadas registradas com timestamp da fala:
+           12m = R$ 500k-1M/mês; 2027 = R$ 6M/mês; upside = R$ 10-15M/mês.
+        6. Cases-âncora novos incorporados: Fera Palace Hotel (ponto de virada
+           hotelaria); Iberostar (8 anos de retrofit, não pontual 2022);
+           Alphaville 24 casas padrão "Trancoso" (R$ 300k → R$ 176k com madeira
+           maciça no lugar de MDF); Rimo (fornecedor industrial robotizado);
+           retomada Accor via ETT.
+        7. Concorrentes-âncora nomeados: Básica Home + Home Design (corporativo
+           / hoteleiro). Casa Cor = vitrine com patrocínio de fábrica, não
+           competidor; Casa Conceito (Bahia) como alternativa.
+        8. Construtoras-alvo mapeadas para Bloco 10 H4 (parceria B2B):
+           Barraconcept, RV Conceito, Morro do Gavaza, Prima.
+        9. Bloco 11 (Fase C — Drive) preservado como está; adicionar Bloco 12
+           "Fase D — Discovery Aletheia via reunião 07/07" com timestamps
+           literais (00:MM:SS) para cada achado.
+       10. Assinatura final: "Aletheia Chief — orquestradora do squad de
+           Discovery & Lean Validation da Kolden. Fase D consolidada a partir
+           da transcrição Gemini 2026-07-07 12:59 GMT-3." (não "Hermes" — Fase
+           D é da Aletheia).
+      restricoes:
+        prazo: "Entregar antes da apresentação de sexta 10/07 com a Hanna cunha valadares."
+        orcamento: "0 (leitura + reescrita local; sem chamadas Apify/Firecrawl/Sonar; a transcrição já está em disco)."
+        proibicoes:
+          - "NUNCA reidentificar 'Robson' como 'Bruno Vilas Boas Sênior' — o Robson NÃO é da família Vilas Boas Sênior; falou usando o login do Bruno Jr. mas é sócio distinto."
+          - "NUNCA commitar — o Ronan aciona o git manualmente quando decidir."
+          - "NUNCA usar transcrição como 'fato validado' sem timestamp — cada afirmação nova carrega (00:MM:SS) da transcrição."
+          - "NUNCA remover as hipóteses H1-H5 pré-existentes — refinar/reforçar/confirmar in place; se alguma virar 'confirmada', marcar como tal preservando o histórico."
+          - "NUNCA escrever pesquisa nova (Firecrawl/Apify/Web) — esta missão é integração de fonte já em mãos."
+      contexto:
+        - "Cliente: BRW Movelaria LTDA (CNPJ 65.898.142/0001-63, Camaçari/Salvador BA)."
+        - "Cache da transcrição: C:\\Users\\Ronan Silva\\.claude\\projects\\C--Kolden\\1f0e0db6-caa8-40c2-bfc6-233dd635a909\\tool-results\\mcp-google-drive-readGoogleDoc-1783628012111.txt (621 linhas, ~71 KB, Gemini 2026-07-07 12:59 GMT-3)."
+        - "Dossiê atual: sobre-a-empresa/Projetos/Ativos/brw-movelaria/dossie.md (v0.3, 651 linhas, Fase A+B+C — Argos + Apify + Drive)."
+        - "Roteiro da reunião: sobre-a-empresa/Projetos/Ativos/brw-movelaria/roteiro-reuniao-socios-2026-07-XX.md (Q1-Q46 + Anexos, 445 linhas)."
+        - "Coleta bruta: coleta-bruta/*.md (Argos transcript, IG top 20, TikTok, FB, Drive)."
+        - "Sessão anterior: 1f0e0db6-caa8-40c2-bfc6-233dd635a909 — 2 subagentes Aletheia (a3725ad8 e a4b853dd) tentaram Write e falharam (harness deny + File-modified-since-read)."
+        - "Retificação factual crítica (Ronan 2026-07-09 21:20): sócio real = Robson; Bruno Jr. = gestor operacional; Robson usou o login do Bruno na reunião."
+      nivel_de_risco: "verde"
+      matriz:
+        muda_algo: true
+        canal_externo_irreversivel: false
+        toca_dados_do_cliente: true
+        gate_humano_declarado: "Ronan autorizou Write no dossiê nesta rodada."
+
+  # ── CAMADA 3 — DISPATCH (para Zeus / squad-solo) ────────────────────────────
+  dispatch:
+    modo: "sessao_dedicada_squad"
+    squad_alvo: "Aletheia"
+    porta_de_entrada: "aletheia-chief"
+    workdir: "C:\\Kolden\\Aletheia\\"
+    metodo_disparo: "Start-Process wt.exe -d C:\\Kolden\\Aletheia claude (Windows Terminal)"
+    briefing_path: "%TEMP%\\aletheia-brw-dossie-v2-briefing.txt"
+    razao_sessao_dedicada: |
+      Sessão anterior falhou na sessão raiz (C:\\Kolden) por 2 caminhos:
+      (1) Write negado pelo harness no path do dossiê;
+      (2) Colisão Read↔Write no retry.
+      Squad-dedicada Aletheia (Regra do fan-out, METODO §8) resolve ambos.
+
+  # ── CAMADA 4 — GATES (Dike, humano) ─────────────────────────────────────────
+  gates:
+    dor_completo: true
+    dike_na_subida: |
+      Aletheia entrega o v2 → Hermes reconcilia contra critério_de_sucesso →
+      Ronan aprova ou pede diff. Não há Dike agent-funcional (Ondas 2-26
+      seguem sem ele — memória hermes 2026-07-06).
+    aprovacoes_humanas:
+      write_dossie: "Ronan autorizado em 2026-07-09 21:20 (allow no path para esta rodada)"
+      commit_git: "NÃO autorizado — Ronan decide após revisar v2"
+
+  # ── LOG DE DECISÃO (mutável, append-only) ───────────────────────────────────
+  log_de_decisao:
+    - em: "2026-07-09T20:15:00Z"
+      por: "aletheia-a3725ad8"
+      decisao: "Compôs v2 (~1200 linhas) e pediu autorização Write ao Hermes"
+      porque: "Write negado pelo harness no path do dossiê"
+    - em: "2026-07-09T20:38:24Z"
+      por: "aletheia-a4b853dd"
+      decisao: "Retry — releu dossie.md, tentou Write, falhou"
+      porque: "Erro 'File has been modified since read' — colisão com processo paralelo"
+    - em: "2026-07-09T21:20:00Z"
+      por: "ronan"
+      decisao: "Retificação factual: Robson é o sócio real, Bruno Jr. é gestor operacional, Robson usou login do Bruno na reunião"
+      porque: "Hermes atribuiu a biografia Rudinique/Robson Representações ao 'Bruno Vilas Boas Sênior' — errado; é biografia do Robson"
+    - em: "2026-07-09T21:20:00Z"
+      por: "ronan"
+      decisao: "Acionar opção 1 (sessão dedicada Aletheia) + autorizar Write no dossiê"
+      porque: "Prazo colado à apresentação de sexta 10/07 com a Hanna; sessão dedicada mata a colisão de path que tombou 1f0e0db6"

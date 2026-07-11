@@ -1,5 +1,7 @@
 # Olimpo — Squad C-Level (Executivos)
 
+> **Este README é vendor xquads-squads (MIT).** Identidade canônica Kolden vive em `CLAUDE.md` + `prd-de-ia.md` + `constitution.md` desde a Onda 4 do METODO Kolden (2026-07-09). Ler CLAUDE.md antes deste README para contexto canônico.
+
 O Olimpo é uma C-suite virtual: oito agentes que encarnam as perspectivas estratégicas dos principais papéis executivos de uma empresa. Ele resolve o problema de tomar decisões de alto nível — visão, operações, marketing, tecnologia, sistemas de informação, estratégia de IA, finanças e receita — sem ter um time de executivos sênior à disposição. Você traz um desafio de negócio, e o squad diagnostica, roteia para o executivo certo, aplica frameworks reconhecidos (OKR, 5 Forças de Porter, Oceano Azul, Technology Radar, Matriz Construir-Comprar-Parceria, modelos de maturidade de IA) e sintetiza tudo em uma direção estratégica coerente.
 
 ## Agentes

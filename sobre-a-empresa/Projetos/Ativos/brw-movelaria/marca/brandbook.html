@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRW Movelaria — Brandbook v1.1 (hipótese-de-trabalho)</title>
+<style>
+  :root{
+    --marinho:#1A3D7E;
+    --marinho-esc:#122C5C;
+    --marinho-prof:#0E1F42;
+    --ocre:#C1741D;
+    --borgonha:#7B1B1A;
+    --cafe:#3E2917;
+    --oliva:#3D4E1E;
+    --offwhite:#F5F3EC;
+    --papel:#FBFAF6;
+    --chumbo:#4A4E52;
+    --tinta:#17181C;
+    --teal-dep:#3AB0B5;
+    --linha:rgba(26,61,126,.14);
+    --sombra:0 1px 3px rgba(14,31,66,.06),0 8px 30px rgba(14,31,66,.07);
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: 'Century Gothic', 'Futura', 'Trebuchet MS', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;font-family:var(--sans);color:var(--tinta);
+    background:var(--papel);line-height:1.62;-webkit-font-smoothing:antialiased;
+    font-size:16.5px;
+  }
+  /* ---------- header fixo ---------- */
+  .topbar{
+    position:sticky;top:0;z-index:50;
+    background:var(--marinho-prof);color:#fff;
+    border-bottom:2px solid var(--ocre);
+    padding:9px clamp(16px,4vw,40px);
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;
+  }
+  .topbar .mark{font-weight:700}
+  .topbar .stamp{color:#F5D9B8;letter-spacing:.08em;font-size:.68rem;white-space:nowrap}
+  @media (max-width:640px){.topbar .stamp{display:none}}
+
+  /* ---------- nav ---------- */
+  nav.toc{
+    position:sticky;top:37px;z-index:40;background:rgba(251,250,246,.94);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--linha);
+    padding:8px clamp(12px,4vw,40px);overflow-x:auto;white-space:nowrap;
+  }
+  nav.toc a{
+    color:var(--marinho);text-decoration:none;font-size:.76rem;
+    letter-spacing:.06em;text-transform:uppercase;padding:5px 11px;margin-right:2px;
+    border-radius:20px;display:inline-block;
+  }
+  nav.toc a:hover{background:var(--marinho);color:#fff}
+
+  main{max-width:940px;margin:0 auto;padding:0 clamp(16px,4vw,40px) 80px}
+
+  section{padding:56px 0 40px;border-bottom:1px solid var(--linha)}
+  section:last-child{border-bottom:none}
+  .kicker{
+    font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--ocre);font-weight:700;margin:0 0 6px;
+  }
+  h1{font-size:clamp(2rem,5vw,3rem);line-height:1.08;margin:.1em 0 .3em;letter-spacing:-.01em;font-weight:700}
+  h2{font-size:clamp(1.5rem,3.4vw,2.1rem);line-height:1.14;margin:.2em 0 .5em;color:var(--marinho-esc);letter-spacing:.01em}
+  h3{font-size:1.12rem;margin:1.6em 0 .5em;color:var(--marinho);letter-spacing:.04em;text-transform:uppercase;font-weight:700}
+  h4{font-size:.95rem;margin:1.2em 0 .3em;color:var(--chumbo);letter-spacing:.05em;text-transform:uppercase}
+  p{margin:.5em 0 .9em}
+  small{color:var(--chumbo)}
+  a{color:var(--marinho)}
+  code{font-family:var(--mono);font-size:.86em;background:var(--offwhite);padding:1px 6px;border-radius:4px;color:var(--marinho-esc)}
+  strong{color:var(--marinho-esc)}
+  ul,ol{margin:.4em 0 1em;padding-left:1.3em}
+  li{margin:.32em 0}
+
+  /* ---------- capa ---------- */
+  .cover{
+    background:linear-gradient(160deg,var(--marinho) 0%,var(--marinho-prof) 100%);
+    color:var(--offwhite);border-radius:14px;padding:clamp(30px,6vw,60px);
+    margin:36px 0 8px;box-shadow:var(--sombra);position:relative;overflow:hidden;
+  }
+  .cover::after{
+    content:"";position:absolute;right:-60px;top:-60px;width:280px;height:280px;
+    border:1.5px solid rgba(245,217,184,.28);border-radius:50%;
+  }
+  .cover::before{
+    content:"";position:absolute;right:-10px;bottom:-90px;width:220px;height:220px;
+    border:1.5px solid rgba(245,217,184,.16);border-radius:50%;
+  }
+  .logo-lockup{display:inline-flex;align-items:stretch;margin-bottom:26px}
+  .logo-bracket{
+    border:2.5px solid var(--offwhite);border-right:none;
+    padding:8px 12px 8px 14px;font-weight:700;font-size:clamp(1.5rem,5vw,2.4rem);
+    letter-spacing:.04em;line-height:1;
+    border-top-left-radius:3px;border-bottom-left-radius:3px;
+    /* moldura em L invertido: sem a borda superior à direita */
+    position:relative;
+  }
+  .logo-bracket::after{
+    content:"";position:absolute;right:0;bottom:0;width:14px;height:2.5px;background:var(--offwhite);
+  }
+  .logo-bracket::before{
+    content:"";position:absolute;right:0;bottom:0;width:2.5px;height:16px;background:var(--offwhite);
+  }
+  .logo-tag{
+    display:flex;align-items:flex-end;padding:0 0 10px 9px;
+    font-size:clamp(.85rem,2.6vw,1.15rem);letter-spacing:.42em;
+    text-transform:lowercase;color:#F5D9B8;font-weight:400;
+  }
+  .cover .tagline{
+    font-size:clamp(1.8rem,5vw,3.1rem);font-weight:700;letter-spacing:-.01em;
+    line-height:1.05;margin:.1em 0 .35em;color:#fff;
+  }
+  .cover .tagline em{color:#F5D9B8;font-style:normal}
+  .cover .sub{font-size:1rem;max-width:52ch;color:rgba(245,243,236,.9)}
+  .cover-meta{
+    display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;position:relative;z-index:2;
+  }
+  .pill{
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    border:1px solid rgba(245,217,184,.5);color:#F5D9B8;
+    padding:5px 13px;border-radius:20px;
+  }
+  /* selo circular */
+  .seal{
+    position:absolute;right:clamp(20px,5vw,48px);bottom:clamp(20px,5vw,44px);
+    width:118px;height:118px;border-radius:50%;
+    border:1.5px solid rgba(245,217,184,.55);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;z-index:3;background:rgba(14,31,66,.35);
+  }
+  .seal .stars{color:#F5D9B8;font-size:.62rem;letter-spacing:.14em}
+  .seal .sname{font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--offwhite);margin:5px 0 2px}
+  .seal .sbrw{font-weight:700;font-size:.86rem;letter-spacing:.14em;color:#fff}
+  .seal .snote{font-size:.5rem;letter-spacing:.05em;color:rgba(245,217,184,.75);margin-top:4px;max-width:80px;line-height:1.3}
+  @media (max-width:640px){.seal{position:static;margin:26px 0 0;width:110px;height:110px}}
+
+  /* ---------- blocos utilitários ---------- */
+  .quote{
+    border-left:3px solid var(--ocre);background:var(--offwhite);
+    padding:16px 22px;margin:1.2em 0;border-radius:0 8px 8px 0;
+  }
+  .quote.big{font-size:1.35rem;line-height:1.3;color:var(--marinho-esc);font-weight:700}
+  .quote.manifesto{font-size:1.05rem;line-height:1.5;white-space:pre-line;color:var(--tinta)}
+  .quote.manifesto b{color:var(--marinho)}
+  .callout{
+    border:1px solid var(--linha);border-left:4px solid var(--ocre);
+    background:#FFF9F1;border-radius:0 10px 10px 0;padding:16px 20px;margin:1.3em 0;
+    box-shadow:var(--sombra);
+  }
+  .callout .lbl{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ocre);font-weight:700;display:block;margin-bottom:5px}
+  .warn{border-left-color:var(--borgonha);background:#FCF3F2}
+  .warn .lbl{color:var(--borgonha)}
+  .gate{border-left-color:var(--marinho);background:#F2F5FB}
+  .gate .lbl{color:var(--marinho)}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media (max-width:720px){.grid2{grid-template-columns:1fr}}
+  .card{
+    border:1px solid var(--linha);border-radius:12px;padding:18px 20px;background:#fff;box-shadow:var(--sombra);
+  }
+  .card h4{margin-top:0}
+  .card.arch{border-top:4px solid var(--marinho)}
+  .card.arch.sec{border-top-color:var(--ocre)}
+  .card.arch.ter{border-top-color:var(--oliva)}
+
+  table{width:100%;border-collapse:collapse;margin:1.1em 0;font-size:.92rem}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--linha);vertical-align:top}
+  th{background:var(--marinho);color:#fff;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+  tr:nth-child(even) td{background:rgba(26,61,126,.03)}
+  .tbl-wrap{overflow-x:auto;border-radius:10px;box-shadow:var(--sombra);border:1px solid var(--linha)}
+  .tbl-wrap table{margin:0}
+
+  /* ---------- swatches ---------- */
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin:1.2em 0}
+  .sw{border-radius:11px;overflow:hidden;border:1px solid var(--linha);box-shadow:var(--sombra);background:#fff}
+  .sw .chip{height:92px;display:flex;align-items:flex-end;padding:8px 10px}
+  .sw .chip .role{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:20px;background:rgba(255,255,255,.85);color:#333;font-weight:700}
+  .sw .meta{padding:9px 11px}
+  .sw .nm{font-size:.82rem;font-weight:700;color:var(--tinta)}
+  .sw .hex{font-family:var(--mono);font-size:.76rem;color:var(--chumbo);letter-spacing:.02em}
+  .sw .conf{display:block;font-size:.6rem;color:var(--ocre);letter-spacing:.06em;margin-top:3px;text-transform:uppercase}
+  .sw.deprecated .chip{opacity:.55}
+  .sw{position:relative}
+  .sw.deprecated::after{content:"aposentar";position:absolute;top:4px;right:6px;font-size:9px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:rgba(0,0,0,.55);padding:2px 5px;border-radius:3px}
+
+  .type-demo{border:1px solid var(--linha);border-radius:12px;padding:22px;background:#fff;box-shadow:var(--sombra);margin:1.1em 0}
+  .type-display{font-size:clamp(1.6rem,5vw,2.4rem);letter-spacing:.06em;font-weight:300;color:var(--marinho-esc);text-transform:uppercase;line-height:1.1}
+  .type-caps{letter-spacing:.28em;text-transform:uppercase;font-weight:400;color:var(--chumbo);font-size:.95rem;margin-top:14px}
+  .type-body{margin-top:14px;color:var(--tinta)}
+  .type-body b{color:var(--marinho)}
+
+  .logo-variants{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:1.1em 0}
+  .lv{border-radius:11px;padding:26px 16px;display:flex;align-items:center;justify-content:center;min-height:96px;border:1px solid var(--linha);box-shadow:var(--sombra)}
+  .lv .mini{display:inline-flex;align-items:stretch;font-weight:700;font-size:1.15rem;letter-spacing:.03em}
+  .lv .mb{border:2px solid currentColor;border-right:none;padding:5px 8px 6px 9px;position:relative;line-height:1}
+  .lv .mb::after{content:"";position:absolute;right:0;bottom:0;width:9px;height:2px;background:currentColor}
+  .lv .mb::before{content:"";position:absolute;right:0;bottom:0;width:2px;height:10px;background:currentColor}
+  .lv .mt{padding:0 0 6px 6px;display:flex;align-items:flex-end;font-size:.64rem;letter-spacing:.3em;text-transform:lowercase;font-weight:400}
+  .lv.onnavy{background:var(--marinho);color:#fff}
+  .lv.onnavy .mt{color:#F5D9B8}
+  .lv.onlight{background:var(--offwhite);color:var(--marinho)}
+  .lv.onlight .mt{color:var(--chumbo)}
+  .lv.mono{background:#fff;color:var(--chumbo)}
+  .lv.mono .mt{color:var(--chumbo)}
+
+  .pillars{counter-reset:pil;display:grid;gap:14px;margin:1.2em 0}
+  .pillar{border:1px solid var(--linha);border-radius:12px;padding:16px 20px 16px 58px;position:relative;background:#fff;box-shadow:var(--sombra)}
+  .pillar::before{counter-increment:pil;content:counter(pil);position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;background:var(--marinho);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.95rem}
+  .pillar h4{margin:0 0 4px;color:var(--marinho-esc)}
+
+  .lexicon{display:flex;flex-wrap:wrap;gap:8px;margin:.8em 0}
+  .lex{font-size:.82rem;padding:5px 12px;border-radius:20px;letter-spacing:.02em}
+  .lex.yes{background:rgba(61,78,30,.1);color:var(--oliva);border:1px solid rgba(61,78,30,.25)}
+  .lex.no{background:rgba(123,27,26,.08);color:var(--borgonha);border:1px solid rgba(123,27,26,.22);text-decoration:line-through;text-decoration-thickness:1px}
+
+  .fixes{counter-reset:fix;display:grid;gap:14px;margin:1.2em 0}
+  .fix{border:1px solid var(--linha);border-left:4px solid var(--ocre);border-radius:0 12px 12px 0;padding:16px 20px 16px 56px;position:relative;background:#FFF9F1;box-shadow:var(--sombra)}
+  .fix::before{counter-increment:fix;content:counter(fix);position:absolute;left:14px;top:16px;width:28px;height:28px;border-radius:50%;background:var(--ocre);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem}
+  .fix h4{margin:0 0 4px;color:var(--cafe)}
+
+  footer{max-width:940px;margin:0 auto;padding:34px clamp(16px,4vw,40px) 60px;color:var(--chumbo);font-size:.85rem;border-top:1px solid var(--linha)}
+  footer .stamp2{display:inline-block;margin-top:10px;border:1px solid var(--borgonha);color:var(--borgonha);padding:5px 13px;border-radius:20px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="mark">BRW Movelaria — Brandbook v1.1 (hipótese-de-trabalho)</span>
+  <span class="stamp">2026-07-10 · não publicar antes do gate humano</span>
+</div>
+
+<nav class="toc" aria-label="Índice">
+  <a href="#capa">1 · Capa</a>
+  <a href="#essencia">2 · Essência</a>
+  <a href="#narrativa">3 · Narrativa</a>
+  <a href="#mensagem">4 · Mensagem</a>
+  <a href="#voz">5 · Voz e tom</a>
+  <a href="#visual">6 · Identidade visual</a>
+  <a href="#mercado">7 · Cenário competitivo</a>
+  <a href="#correcoes">8 · Correções</a>
+  <a href="#status">9 · Pré-morte e status</a>
+</nav>
+
+<main>
+
+  <!-- ============ 1. CAPA ============ -->
+  <section id="capa" style="border-bottom:none;padding-top:24px">
+    <div class="cover">
+      <div class="logo-lockup" aria-label="Logotipo BRW.movelaria">
+        <span class="logo-bracket">BRW</span>
+        <span class="logo-tag">movelaria</span>
+      </div>
+      <div class="tagline">Curadoria que <em>rende.</em></div>
+      <p class="sub">Curadoria de mobiliário B2B com acesso industrial — para hotéis e investidores que tratam mobília como retorno, não como custo.</p>
+      <div class="cover-meta">
+        <span class="pill">Tagline única oficial</span>
+        <span class="pill">v1.1 · hipótese-de-trabalho</span>
+        <span class="pill">2026-07-10</span>
+      </div>
+      <div class="seal" aria-label="Selo circular institucional">
+        <span class="stars">★★★★★</span>
+        <span class="sname">Movelaria</span>
+        <span class="sbrw">BR.W</span>
+        <span class="snote">sem "1998" — ver §8</span>
+      </div>
+    </div>
+    <p><small>Logotipo representado em CSS para referência de construção — o vetor oficial não é recriado neste brandbook (ver <a href="#correcoes">§8 — buscar arquivo-fonte</a>). A moldura em <strong>L invertido</strong> ao redor do bloco <code>BRW</code> e a tag <code>.movelaria</code> em letter-spacing amplo são os códigos de reconhecimento a preservar.</small></p>
+  </section>
+
+  <!-- ============ 2. ESSÊNCIA ============ -->
+  <section id="essencia">
+    <p class="kicker">Seção 2</p>
+    <h1>Essência</h1>
+
+    <h3>Mantra de marca <small>(DNA interno — não é tagline pública)</small></h3>
+    <div class="quote big">Curadoria industrial que rende.</div>
+    <div class="grid2">
+      <div class="card"><h4>Curadoria</h4><p>O que a marca faz: seleciona, projeta, coordena. <strong>Não fabrica.</strong></p></div>
+      <div class="card"><h4>Industrial</h4><p>A alavanca: acesso a fábrica de grande porte, atacado, chão de fábrica. Distingue da "decoração".</p></div>
+      <div class="card"><h4>Que rende</h4><p>A promessa: ROI, ativo, retorno previsível. O fio que une hotelaria e investidores.</p></div>
+      <div class="card" style="border-top:4px solid var(--ocre)"><h4>Bolso · 3 palavras</h4><p><strong>Curadoria · Escala · Retorno.</strong> Teste: <em>"isto é curadoria industrial que rende?"</em></p><p><small>"Escala" = acesso industrial no sourcing (DNA interno) — nunca promessa pública de volume de entrega, vetada até o gate (§9, P8).</small></p></div>
+    </div>
+
+    <h3>Positioning statement <small>(Ries/Trout)</small></h3>
+    <div class="quote"><strong>Para</strong> investidores de short-stay e operadores de hotelaria na Bahia <strong>que</strong> precisam mobiliar imóveis como ativo — com ROI previsível e sem gerir uma cadeia de fornecedores —, <strong>a BRW é a</strong> curadoria de mobiliário B2B com acesso industrial <strong>que</strong> entrega o ambiente completo, replicável e no prazo, do projeto à montagem, <strong>porque</strong> opera entre a fábrica e o cliente há 35 anos de estrada do fundador, com acesso a indústrias robotizadas de grande porte e um histórico de retrofit hoteleiro e multi-unidade que os concorrentes de "alta decoração" não têm.</div>
+
+    <h3>Arquétipo</h3>
+    <div class="grid2">
+      <div class="card arch"><h4>Primário — Sábio</h4><p>A autoridade nasce de conhecimento: 35 anos de chão de fábrica, curadoria "com critério", pitch de ROI que educa. Não grita — <strong>sabe e aconselha.</strong></p></div>
+      <div class="card arch sec"><h4>Secundário — Cuidador</h4><p>Tira o problema das costas do cliente: "resolvemos por você", end-to-end, pós-venda, previsibilidade.</p></div>
+      <div class="card arch ter"><h4>Matiz — Governante</h4><p>Para a Persona A (investidor sênior): controle, padrão, consistência multi-unidade. Inflexão de tom, não terceiro arquétipo.</p></div>
+    </div>
+
+    <h3>Onlyness / Zag <small>(Neumeier)</small></h3>
+    <div class="quote big">A única curadoria de mobiliário na Bahia que combina acesso direto à indústria robotizada de grande porte com execução end-to-end — do projeto à montagem — para hotéis e investidores que tratam mobília como retorno, não como custo.</div>
+    <div class="callout warn"><span class="lbl">Ressalva de honestidade</span>O "acesso à indústria robotizada" é o núcleo do Onlyness <strong>e</strong> é hipótese não verificada (C8). Se o gate mostrar que o acesso não é exclusivo, o Onlyness recua para "curadoria end-to-end com case-book B2B recorrente".</div>
+  </section>
+
+  <!-- ============ 3. NARRATIVA ============ -->
+  <section id="narrativa">
+    <p class="kicker">Seção 3</p>
+    <h1>Narrativa</h1>
+
+    <h3>A tensão fundadora</h3>
+    <p>O conflito da BRW não é contra um concorrente — é entre <strong>um ofício e um hábito de mercado</strong>. De um lado, o ofício: Robinsom passou 35 anos aprendendo o móvel de dentro para fora, do chão de fábrica ao projeto acabado. Do outro, o hábito: o mercado trata mobília como commodity de catálogo ou decoração de vitrine.</p>
+    <div class="quote">O mercado trata móvel como coisa que se compra; o ofício de 35 anos do Robinsom sabe que, para quem investe, móvel é coisa que se <strong>calcula</strong>.</div>
+
+    <h3>Manifesto</h3>
+    <div class="quote manifesto">MÓVEL NÃO É DETALHE.
+PARA QUEM INVESTE, MÓVEL É ESTRATÉGIA.
+
+Passamos trinta e cinco anos aprendendo o móvel por dentro.
+Do chão de fábrica ao projeto acabado.
+Da lâmina que ninguém vê ao prazo que decide um retorno.
+
+Aprendemos que o mercado vende peça. Nós entregamos <b>CRITÉRIO</b>.
+
+Ficamos entre a fábrica e você — não para revender, mas para <b>CURAR</b>.
+Para escolher o que permanece. Para dizer não ao que atrasa, ao que deprecia, ao que só parece.
+
+Um hotel em retrofit não precisa de móvel bonito. Precisa de móvel que <b>RESISTA A CINCO ANOS DE HÓSPEDE</b>.
+Um estúdio de investimento não precisa de decoração. Precisa de um ambiente que <b>REDUZA VACÂNCIA E AUMENTE VALOR</b>.
+
+Isso não se compra em catálogo. Se cura com quem conhece o ofício.
+
+Não somos a loja. Não somos a fábrica. Somos a <b>CURADORIA</b> entre as duas — o filtro que transforma metro quadrado em ativo.
+
+<b>BRW. PRESENÇA SILENCIOSA. RETORNO CALCULADO.</b></div>
+
+    <h3>Origem canônica <small>(resumo)</small></h3>
+    <p>A BRW começou como um homem e um ofício. Nos anos 1990, Robinsom entrou no setor pela porta mais dura — vendedor, depois gerente nacional no varejo popular de alto volume em São Paulo. Em 1994, formou-se em design de interiores e montou representação comercial em Salvador, construindo relação direta com donos de fábrica pelo Brasil. O ponto de virada veio de um hotel — o <strong>Fera Palace</strong>, prédio de 1930 em retrofit — onde resolveu com conhecimento de chão de fábrica o que parecia insolúvel, e descobriu sua vocação: não vender móvel, mas <strong>curar projetos</strong>. A BRW Movelaria é a forma madura desse ofício: fica entre a fábrica e o cliente para curar, projetar e coordenar — a preço de atacado, nunca de vitrine.</p>
+    <div class="callout warn"><span class="lbl">⚠ Ressalva "1998" — obrigatória</span>A BRW <strong>não afirma existir desde 1998</strong>. A entidade jurídica é de março de 2026; o nome BRW tem pouco mais de uma década. O que tem 35 anos é o <strong>ofício do Robinsom</strong>. Fórmula segura e repetível: <em>"Fundada sobre 35 anos de bagagem moveleira do Robinsom"</em> — <strong>nunca</strong> <em>"a BRW, desde 1998"</em>.</div>
+
+    <h3>Três histórias de prova <small>(Kindra Hall)</small></h3>
+    <div class="grid2">
+      <div class="card"><h4>Confiança no tempo</h4><p><strong>Iberostar Praia do Forte.</strong> Duas fases de retrofit, oito anos, e quem fornece é a BRW — e só a BRW. Curadoria se prova em ser chamado de volta, ciclo após ciclo, por quem não pode errar.</p></div>
+      <div class="card"><h4>Confiança no projeto</h4><p><strong>Singulari Alphaville Guarajuba.</strong> O incorporador entregou à BRW a planta arquitetônica original para desenhar a curadoria <em>sobre</em> o projeto, não depois dele. Co-desenvolvimento é confiar a planta, não mandar o pedido.</p></div>
+      <div class="card"><h4>Confiança no dinheiro</h4><p><strong>Alphaville, 24 casas (padrão Trancoso).</strong> Custo de mercado ~R$300k/unidade; a BRW entregou o padrão por ~R$176k, sem baixar o nível. Saber o que pagar — e o que não pagar — pelo mesmo resultado.</p></div>
+      <div class="card" style="border-top:4px solid var(--borgonha)"><h4>Nota de uso</h4><p>Os números dos cases são, no dossiê, relato do fundador (hipótese). Usar como prova de <strong>capacidade</strong> — nunca como garantia contratual.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 4. MENSAGEM ============ -->
+  <section id="mensagem">
+    <p class="kicker">Seção 4</p>
+    <h1>Mensagem</h1>
+
+    <h3>Mensagem central</h3>
+    <div class="quote big">Mobília de investimento não é gasto — é o ativo que faz o metro quadrado render. A BRW é a curadoria que entrega esse ambiente pronto para operar e valorizar, do projeto à montagem.</div>
+
+    <h3>One-liner <small>(StoryBrand SB7)</small></h3>
+    <div class="quote">Quem investe em imóvel de renda — ou opera hotelaria — precisa de ambientes que rendam, mas coordenar fornecedor, projeto, prazo e montagem consome tempo e coloca o retorno em risco. A BRW faz a curadoria completa do mobiliário, do projeto à montagem, para que cada ambiente esteja pronto para operar e valorizar — sem você virar especialista em móvel, obra e fornecedor.</div>
+    <p><small><strong>Versão curta (bio):</strong> A BRW cuida do mobiliário do seu imóvel de investimento de ponta a ponta — para você lucrar com o espaço, não se perder no processo.</small></p>
+
+    <h3>Os quatro pilares</h3>
+    <div class="pillars">
+      <div class="pillar"><h4>Acesso industrial com critério</h4><p>Compra na origem e traduz o acesso em custo — sem repassar ao cliente o risco de errar a compra. <br><small><strong>Como falar:</strong> "acesso de fábrica" / "compramos na origem", <strong>nunca "somos fábrica"</strong> (CNAE é comércio). Rimo é hipótese: ilustração, não claim central.</small></p></div>
+      <div class="pillar"><h4>Processo resolvido, ponta a ponta</h4><p>Não entrega só o móvel — entrega o ambiente pronto para operar, coordenando projeto, produção e montagem. <br><small><strong>Como falar:</strong> alívio de coordenação ("um interlocutor, não seis fornecedores"). <strong>Não prometer volume</strong> que a operação reconstrói.</small></p></div>
+      <div class="pillar"><h4>Mobília que rende (ROI)</h4><p>Para investidor e hoteleiro, mobília é ferramenta de retorno — reduz vacância, aumenta percepção de valor, mantém padrão replicável. <br><small><strong>Como falar:</strong> "ativo × gasto", "consistência multi-unidade", "pronto para operar". É o vocabulário que diferencia localmente.</small></p></div>
+      <div class="pillar"><h4>Critério estético atemporal</h4><p>Escolhe com critério — proporção, silêncio, permanência — em vez de empilhar catálogo. <br><small><strong>Como falar:</strong> pilar de <strong>sustentação</strong> (dá lastro de gosto), não o topo do argumento. O topo é o retorno (Pilar 3).</small></p></div>
+    </div>
+
+    <h3>Mensagem por persona <small>(mesmo resultado, motores opostos)</small></h3>
+    <div class="grid2">
+      <div class="card arch"><h4>Persona A — Investidor sênior</h4><p>Motor: <strong>controle + margem.</strong></p><p><em>"Studios bem mobiliados não são detalhe. São estratégia — e estratégia se mede em consistência e retorno, não em catálogo."</em></p><p><small>Evitar infantilizar — ele quer sentir que <strong>manda</strong>.</small></p></div>
+      <div class="card arch sec"><h4>Persona B — Investidor first-time</h4><p>Motor: <strong>vencer a inércia.</strong></p><p><em>"Você tem o capital. A gente resolve o resto — do projeto à chave na mão, seu imóvel pronto para render."</em></p><p><small>Evitar jargão e excesso de opções — ele quer <strong>menos decisão</strong>.</small></p></div>
+    </div>
+    <p><small><strong>Terceira porta — Incorporadora/construtora (canal B2B):</strong> JTBD "vender apartamento mais rápido, com valor agregado". Curadoria desde a planta (modelo Singulari).</small></p>
+  </section>
+
+  <!-- ============ 5. VOZ E TOM ============ -->
+  <section id="voz">
+    <p class="kicker">Seção 5</p>
+    <h1>Voz e tom</h1>
+
+    <h3>Três adjetivos de voz <small>(confirmados)</small></h3>
+    <div class="grid2">
+      <div class="card arch"><h4>Criteriosa</h4><p>Fala com discernimento, não com adjetivo. Toda afirmação carrega o "porquê". Nunca superlativo vazio; sempre o critério.</p></div>
+      <div class="card arch sec"><h4>Serena</h4><p>Confiança que não levanta a voz. Frases curtas, respiradas. Sem exclamação para fabricar entusiasmo. A autoridade vem da postura.</p></div>
+      <div class="card arch ter"><h4>Pragmática</h4><p>Aterrissa no resultado: menos vacância, mais valor de locação, prazo cumprido. Traduz estética em ativo.</p></div>
+    </div>
+    <div class="callout"><span class="lbl">Tensão produtiva</span><em>Serena</em> puxa para o poético; <em>Pragmática</em> puxa para o número. A voz BRW vive entre as duas — nunca poesia sem prova, nunca planilha sem gosto. <strong>Criteriosa</strong> é o fiel da balança.</div>
+
+    <h3>Do's &amp; Don'ts</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Faça</th><th>Em vez de</th><th>Por quê</th></tr></thead>
+      <tbody>
+        <tr><td>"Fundada sobre 35 anos de bagagem moveleira."</td><td>"Desde 1998." / "30 anos de mercado."</td><td>O número da marca é passivo; o legado é da pessoa (Robinsom).</td></tr>
+        <tr><td>"Acesso de fábrica: compramos na origem."</td><td>"Preço de fábrica." (como se fabricasse)</td><td>O CNAE é comércio. "Acesso" é honesto; "somos fábrica" é overreach.</td></tr>
+        <tr><td>"Reduz vacância e sustenta o valor de locação."</td><td>"Transformando espaços em experiências."</td><td>Concreto e mensurável × genérico e B2C.</td></tr>
+        <tr><td>"Um interlocutor, do projeto à montagem."</td><td>"Atendimento personalizado."</td><td>Nomeia o benefício real × chavão vazio.</td></tr>
+        <tr><td>"Acompanhamos a obra até a chave."</td><td>"Entregamos 100 apartamentos."</td><td>Honestidade operacional — a capacidade de volume falhou em 2025 e está em reconstrução.</td></tr>
+        <tr><td>Frase curta. Ponto final.</td><td>Frase longa com três "e" e exclamação!!!</td><td>Serenidade se constrói no ritmo.</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>Léxico</h3>
+    <h4>Palavras que usamos <small>(ativos a preservar)</small></h4>
+    <div class="lexicon">
+      <span class="lex yes">curadoria</span><span class="lex yes">com critério</span><span class="lex yes">proporção</span><span class="lex yes">silêncio / intenção</span><span class="lex yes">atemporal</span><span class="lex yes">presença silenciosa</span><span class="lex yes">permanece</span><span class="lex yes">ROI</span><span class="lex yes">ativo (vs. gasto)</span><span class="lex yes">retorno</span><span class="lex yes">rende</span><span class="lex yes">consistência / multi-unidade</span><span class="lex yes">ponta a ponta</span><span class="lex yes">pronto para operar</span><span class="lex yes">acesso de fábrica</span><span class="lex yes">projeto</span><span class="lex yes">execução</span><span class="lex yes">pós-venda</span><span class="lex yes">quem pensa grande</span>
+    </div>
+    <h4>Palavras que evitamos</h4>
+    <div class="lexicon">
+      <span class="lex no">desde 1998</span><span class="lex no">30 anos da BRW</span><span class="lex no">preço de fábrica</span><span class="lex no">transformando espaços em experiências</span><span class="lex no">sonho / realizar sonhos</span><span class="lex no">o melhor / incrível</span><span class="lex no">exclusivo (sem prova)</span><span class="lex no">exclamação para fabricar entusiasmo</span><span class="lex no">entregamos 100 apartamentos</span><span class="lex no">jargão de marceneiro (Persona B)</span>
+    </div>
+
+    <h3>Tom por canal</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Canal</th><th>Registro</th><th>Como soa</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Institucional</strong> (site, apresentação)</td><td>Sereno / curatorial</td><td>Pode se dar ao luxo do silêncio. Constrói autoridade.</td></tr>
+        <tr><td><strong>Comercial / WhatsApp</strong> (1:1)</td><td>Pragmático + humano</td><td>Direto, responde à dor, orientado ao próximo passo. Trabalha.</td></tr>
+        <tr><td><strong>Social</strong> (IG)</td><td>Equilíbrio</td><td>Poético na abertura (para o scroll parar), prova no meio, CTA simples.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- ============ 6. IDENTIDADE VISUAL ============ -->
+  <section id="visual">
+    <p class="kicker">Seção 6</p>
+    <h1>Identidade visual</h1>
+    <div class="callout"><span class="lbl">Natureza desta seção</span>Documenta e sistematiza a identidade que a BRW <strong>já possui</strong> (rebrand institucional Jan/2026). Não é redesenho. Os hex são <strong>inferidos por amostragem</strong> de criativos — marcados <em>"a confirmar com arquivo-fonte vetorial"</em> antes de qualquer impressão (ver §8).</div>
+
+    <h3>6.1 Paleta</h3>
+    <h4>Primária — o código dominante</h4>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#1A3D7E"><span class="role" style="color:#1A3D7E">Primária</span></div><div class="meta"><span class="nm">Azul-marinho profundo</span><span class="hex">#1A3D7E</span><span class="conf">a confirmar</span></div></div>
+    </div>
+    <p><small>Deve <strong>dominar</strong> — é o código de reconhecimento nº 1. Logotipo, CTA e fundos institucionais.</small></p>
+
+    <h4>Apoio <small>(sistema secundário — acento, nunca co-iguais à primária)</small></h4>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#C1741D"><span class="role" style="color:#C1741D">Acento</span></div><div class="meta"><span class="nm">Ocre / laranja-queimado</span><span class="hex">#C1741D</span><span class="conf">a confirmar</span></div></div>
+      <div class="sw"><div class="chip" style="background:#7B1B1A"><span class="role" style="color:#7B1B1A">Apoio</span></div><div class="meta"><span class="nm">Borgonha</span><span class="hex">#7B1B1A</span><span class="conf">a confirmar</span></div></div>
+      <div class="sw"><div class="chip" style="background:#3E2917"><span class="role" style="color:#3E2917">Apoio</span></div><div class="meta"><span class="nm">Marrom-café</span><span class="hex">#3E2917</span><span class="conf">a confirmar</span></div></div>
+      <div class="sw"><div class="chip" style="background:#3D4E1E"><span class="role" style="color:#3D4E1E">Apoio</span></div><div class="meta"><span class="nm">Verde-oliva militar</span><span class="hex">#3D4E1E</span><span class="conf">a confirmar</span></div></div>
+    </div>
+
+    <h4>Neutros</h4>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#F5F3EC;border-bottom:1px solid var(--linha)"><span class="role">Neutro claro</span></div><div class="meta"><span class="nm">Off-white</span><span class="hex">#F5F3EC</span><span class="conf">a confirmar</span></div></div>
+      <div class="sw"><div class="chip" style="background:#4A4E52"><span class="role" style="color:#4A4E52">Neutro escuro</span></div><div class="meta"><span class="nm">Cinza-chumbo</span><span class="hex">#4A4E52</span><span class="conf">a confirmar</span></div></div>
+      <div class="sw deprecated" style="position:relative"><div class="chip" style="background:#3AB0B5"><span class="role" style="color:#0a6f73">APOSENTAR</span></div><div class="meta"><span class="nm">Teal ciano <small>(fase B2C)</small></span><span class="hex">#3AB0B5</span><span class="conf" style="color:var(--borgonha)">deprecado — ver §8</span></div></div>
+    </div>
+    <div class="callout"><span class="lbl">Diretriz de sistema (Byron Sharp)</span>Cinco cores co-iguais <strong>diluem</strong> a disponibilidade física. O marinho é a primária; ocre é o acento; borgonha / café / oliva são a família de apoio para segmentação de conteúdo. O teal ciano (Dez/2025) está <strong>deprecado</strong>.</div>
+
+    <h3>6.2 Tipografia</h3>
+    <div class="type-demo">
+      <div class="type-display">Curadoria industrial que rende</div>
+      <div class="type-caps">D E S I G N &nbsp; Q U E &nbsp; P E R M A N E C E</div>
+      <p class="type-body">Corpo em regular, com <b>bold apenas para palavras-âncora</b> — a serenidade se constrói no espaçamento e no ritmo, não no peso.</p>
+    </div>
+    <p><small><strong>Display:</strong> sans-serif geométrica book/light — all-caps ou capitular, com letter-spacing amplo (perfil compatível com Poppins Light / Nunito Sans / Montserrat Light — <em>família exata a confirmar com arquivo-fonte</em>). <strong>Corpo:</strong> mesma família em regular.</small></p>
+
+    <h3>6.3 Logo — uso e proteção</h3>
+    <p>Bloco <code>BRW</code> dentro de moldura em <strong>L invertido</strong> (colchete) + tag <code>.movelaria</code> em letter-spacing. A moldura em L é o ativo de reconhecimento mais forte — abre também as 7 capas de highlights do IG.</p>
+    <div class="logo-variants">
+      <div class="lv onnavy"><span class="mini"><span class="mb">BRW</span><span class="mt">movelaria</span></span></div>
+      <div class="lv onlight"><span class="mini"><span class="mb">BRW</span><span class="mt">movelaria</span></span></div>
+      <div class="lv mono"><span class="mini"><span class="mb">BRW</span><span class="mt">movelaria</span></span></div>
+    </div>
+    <ul>
+      <li><strong>Geração única:</strong> consolidar a institucional pós-Jan/2026 (marinho / cinza-escuro / branco outlined). <strong>Não coexistir</strong> teal + marinho.</li>
+      <li><strong>Área de proteção:</strong> respiro ao redor equivalente à altura do bloco <code>BR</code>; não comprimir o letter-spacing da tag; não aplicar sobre fundo de baixo contraste.</li>
+    </ul>
+
+    <h3>6.4 Selo</h3>
+    <div class="grid2">
+      <div class="card">
+        <div class="seal" style="position:static;margin:0 auto 10px;background:var(--marinho);border-color:rgba(245,217,184,.55)">
+          <span class="stars">★★★★★</span><span class="sname">Movelaria</span><span class="sbrw">BR.W</span>
+        </div>
+        <p style="text-align:center"><small>Forma preservada · <strong>"1998" removido</strong></small></p>
+      </div>
+      <div class="card">
+        <h4>Diretriz</h4>
+        <p><strong>Preservar a forma</strong> circular como código de marca (marca d'água em ~100% dos criativos). <strong>Remover o "1998"</strong> — passivo reputacional (§8). As 5 estrelas e o texto circular permanecem.</p>
+        <p><small>Variantes documentadas: branco puro, cinza-chumbo, verde-oliva, marrom-cobre — sistematizar a partir dos 13 PNGs do Drive quando o arquivo-fonte for localizado.</small></p>
+      </div>
+    </div>
+
+    <h3>6.5 Nomenclatura de produto <small>(ativo raro a preservar)</small></h3>
+    <p>Peças com nome próprio — Megan, Flora, Aresta, TRAMA, Milano, Notte, Torres, Ecoterra, Essência Orgânica. Branding de produto acima da média do varejo baiano; sinaliza autoralidade. Transformar em <strong>sistema de nomenclatura</strong>, não nomes soltos.</p>
+  </section>
+
+  <!-- ============ 7. CENÁRIO COMPETITIVO ============ -->
+  <section id="mercado">
+    <p class="kicker">Seção 7</p>
+    <h1>Cenário competitivo &amp; oportunidade de mercado</h1>
+    <div class="callout"><span class="lbl">Natureza desta camada</span><strong>Inteligência de mercado v1 — coleta fria</strong> (Firecrawl + Exa). <strong>Não valida H1 (demanda real)</strong>: é fotografia do campo, não veredito estratégico — sinaliza <em>onde</em> e <em>contra quem</em>, não prova que o mercado compra. Detalhe completo (17 players, fichas, fontes com URL/selo) em <code>../pesquisa/</code> — <code>dossie-concorrentes.md</code> e <code>prospeccao-bahia.md</code>. Ancorada nos PODs do <code>posicionamento.md</code> §3.2.</div>
+
+    <h3>7.1 Mapa de posicionamento</h3>
+    <p>Dois eixos: <strong>commodity ↔ curadoria</strong> (só vende/entrega produto-obra vs. resolve gosto/decisão/ambiente inteiro) × <strong>B2C residencial ↔ B2B ativo-que-rende</strong> (casa para morar vs. imóvel tratado como retorno).</p>
+    <div style="overflow-x:auto">
+    <div style="min-width:520px;margin:1.2em 0">
+      <div style="text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--marinho);font-weight:700;margin-bottom:6px">▲ B2B / ativo-que-rende <small style="letter-spacing:.02em;text-transform:none;color:var(--chumbo);font-weight:400">(hotelaria · investidor · incorporadora)</small></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div class="card" style="border-top:4px solid var(--chumbo)"><h4 style="margin-top:0">Commodity · B2B</h4><p style="margin:0;font-size:.88rem">3M Reformas · Casa Pietra · Homee <small>(turnkey Airbnb: forte em ROI, mas é obra)</small> · Rudnick <small>(fábrica)</small> · 535/Beehost <small>(gestão)</small></p></div>
+        <div class="card" style="border-top:4px solid var(--ocre);background:#FFF9F1"><h4 style="margin-top:0;color:var(--cafe)">◇ Espaço BRW ◇ · Curadoria · B2B</h4><p style="margin:0;font-size:.88rem"><strong>Quadrante-alvo da BRW.</strong> Vizinhos que chegam perto: SYMM · Artdville · ESSANTO · Dellavita <small>(contract/fábrica: curadoria média, sem ROI-Airbnb)</small></p></div>
+        <div class="card"><h4 style="margin-top:0">Commodity · B2C</h4><p style="margin:0;font-size:.88rem">Móveis planejados · Salvador Móveis</p></div>
+        <div class="card" style="border-top:4px solid var(--oliva)"><h4 style="margin-top:0">Curadoria · B2C</h4><p style="margin:0;font-size:.88rem">Básica Home · Home Design · Efeito Home · Breton <small>(design premium, mas residencial)</small></p></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--chumbo);font-weight:700;margin-top:6px"><span>◀ Commodity / produto-obra</span><span>Curadoria / ambiente-decisão ▶</span></div>
+      <div style="text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--marinho);font-weight:700;margin-top:6px">▼ B2C / residencial <small style="letter-spacing:.02em;text-transform:none;color:var(--chumbo);font-weight:400">(casa para morar)</small></div>
+    </div>
+    </div>
+    <p><strong>Espaço em branco da BRW = quadrante superior-direito (alto B2B-ativo × alta curadoria).</strong> É genuinamente pouco povoado: <strong>ninguém cruza, ao mesmo tempo, hotelaria B2B + investidor-Airbnb + acesso industrial</strong>. Quem chega perto por cima (ESSANTO, Artdville) é fábrica/produto sem linguagem de investidor-Airbnb; quem chega perto pela esquerda (3M, Homee, Casa Pietra) tem o ROI-Airbnb, mas entrega obra/marcenaria/gestão, não curadoria de mobília premium multimarca. O risco: o quadrante está sendo <strong>estreitado por invasão lateral</strong> — os turnkey sobem em curadoria à medida que amadurecem.</p>
+
+    <h3>7.2 Concorrentes — 3 anéis</h3>
+    <p>O mercado não é um bloco; são três anéis com lógicas distintas.</p>
+    <div class="grid2">
+      <div class="card arch"><h4>Anel (a) — local Salvador</h4><p>Alta decoração / curadoria de móvel solto: <strong>Básica Home · Home Design · Efeito Home.</strong></p><p><small>Fortes em digital e prova social; <strong>zero</strong> em hotelaria/ROI.</small></p></div>
+      <div class="card arch sec"><h4>Anel (b) — nacional hotelaria</h4><p>Contract/fábrica: <strong>SYMM · ESSANTO · Artdville · Dellavita · Breton · Rudnick.</strong></p><p><small>Fortes em hotelaria/fábrica; sem relação local nem linguagem de investidor-Airbnb.</small></p></div>
+      <div class="card arch ter"><h4>Anel (c) — substitutos</h4><p>Resolvem o mesmo <em>job</em> por outro caminho: <strong>3M Reformas · marcenaria planejada · compra direta de fábrica · gestoras short-stay</strong> (535 Homes, Beehost).</p><p><small>Fortes em investidor-Airbnb, mas entregam obra/gestão, não curadoria de mobília premium.</small></p></div>
+    </div>
+
+    <h4>Os 3 mais perigosos</h4>
+    <div class="pillars">
+      <div class="pillar"><h4>3M Projetos e Reformas (Salvador)</h4><p>Turnkey Airbnb com pitch de ROI/redução de vacância/chave-na-mão e <strong>prazo médio ~45 dias</strong>; 40+ obras entregues. Entrega <strong>mais da cadeia</strong> (projeto + obra + marcenaria + limpeza) que a BRW. O mais perigoso para o eixo investidor-Airbnb. <br><small><strong>Fonte:</strong> industrianews.com.br, 2026-05.</small></p></div>
+      <div class="pillar"><h4>Home Design</h4><p>Anel (a) pela via digital: <strong>desde 1994</strong>, <strong>~27K seguidores no IG</strong>, <strong>e-commerce vivo</strong> (indoor/outdoor/corporativo/projetos/designers), duas praças (BA+SE). Não fala hotelaria, mas domina a busca "móveis design Salvador" — se abrir vertical hoteleira, larga na frente de audiência. <br><small><strong>Fonte:</strong> homedesign.com.br + IG verificado.</small></p></div>
+      <div class="pillar"><h4>Anel nacional — ESSANTO / Artdville / Dellavita</h4><p><strong>Custo de fábrica + hotelaria já conquistada.</strong> ESSANTO (fábrica NE, ~30 anos, incorporadora+hotel, Park Hotel Recife); Artdville (resort/hotel nacional, política de reposição, case Restaurante Lotti/Salvador); Dellavita (hotelaria alto-padrão baiana — Costa do Sauípe — com discurso de "consultoria + prazo"). Podem entrar/crescer na BA capturando o retrofit de médio porte. <br><small><strong>Fonte:</strong> essanto.com · artdville.com.br · JBN Bahia, 2026-05.</small></p></div>
+    </div>
+
+    <div class="callout warn"><span class="lbl">⚠ Ajuste honesto ao posicionamento</span>A <strong>3M já articula o pitch Airbnb/ROI</strong> que o <code>posicionamento.md</code> (§1, §3.2) supunha inédito localmente — "oceano azul por ausência de concorrência articulada". A coleta <strong>contesta parcialmente</strong> essa premissa: o oceano é <strong>azul-esverdeado, não azul</strong>. Implicação de marca: <strong>correr</strong>, e apoiar a diferenciação no <strong>fosso real = case-book hoteleiro</strong> (Iberostar, 8 anos; Singulari; Alphaville), <strong>não</strong> no "acesso Rimo" — que é hipótese (C8) <em>e</em> replicável. O case-book é prova que 3M/Casa Pietra/Homee não têm e demoram anos para construir; o acesso industrial, por mais vendável, não é fosso defensável enquanto for aposta não verificada.</div>
+
+    <h3>7.3 Oportunidade de mercado <small>(a maré a favor)</small></h3>
+    <p>O campo pressiona por concorrência, mas a <strong>demanda estrutural</strong> está a favor.</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Sinal de mercado</th><th>Número</th><th>Fonte</th></tr></thead>
+      <tbody>
+        <tr><td>Compactos/studios como fatia das vendas de Salvador (jan/2026)</td><td><strong>48%</strong> das vendas · VGV capital ~R$5,3 bi/12m</td><td>ADEMI-BA</td></tr>
+        <tr><td>Studios como fatia dos lançamentos</td><td>saltou de <strong>~18% (2024) → 34–50%</strong></td><td>ADEMI-BA</td></tr>
+        <tr><td>Boom hoteleiro no Brasil até 2030</td><td>~178 hotéis · <strong>~R$13,6 bi</strong> · <strong>66% interior/litoral</strong></td><td>dossiês de prospecção</td></tr>
+        <tr><td>Multipropriedade do Nordeste (Bahia lidera)</td><td>~20 empreendimentos · VGV ~R$30,3 bi</td><td>dossiês de prospecção</td></tr>
+        <tr><td>Retrofit hoteleiro (troca total de FF&amp;E)</td><td><strong>maior aderência ao case-book da BRW</strong> (Iberostar 8 anos, Accor, Fera)</td><td>prospeccao-bahia.md</td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout gate"><span class="lbl">Fecho</span>A tese-mãe — <em>"mobiliário é ativo que rende"</em> — tem <strong>lastro estrutural</strong>: o mercado de studios e o retrofit hoteleiro crescem justamente na direção do posicionamento. O risco restante é de <strong>canal</strong> (chegar ao decisor/arquiteto de FF&amp;E, a lacuna nº 1 da prospecção), <strong>não de mercado</strong>. Nada nesta camada altera o carimbo de gate: continua v1, não valida H1, não autoriza mídia em escala.</div>
+  </section>
+
+  <!-- ============ 8. CORREÇÕES ============ -->
+  <section id="correcoes">
+    <p class="kicker">Seção 8</p>
+    <h1>Correções recomendadas</h1>
+    <div class="callout warn"><span class="lbl">Bloco de sinalização — NÃO executado nesta onda</span>Harmonia <strong>aponta</strong>; a execução é jurisdição da onda de identidade visual, sob o gate humano.</div>
+    <div class="fixes">
+      <div class="fix"><h4>Remover "1998" do selo e de toda assinatura</h4><p>Passivo central: a entidade tem 3 meses de CNPJ; o claim "desde 1998" é desmontável por qualquer concorrente em disputa e contamina tudo o que é verdade. Reancorar o legado no Robinsom ("fundada sobre 35 anos de bagagem moveleira"). Custo: peças antigas circulando com o selo velho por um tempo — vale o custo. <em>(Decisão travada pelo Ronan.)</em></p></div>
+      <div class="fix"><h4>Aposentar o teal ciano <code>#3AB0B5</code></h4><p>Fase B2C de Dez/2025. Consolidar uma única geração de marca sob o azul-marinho. Coexistir teal + marinho fragmenta o reconhecimento.</p></div>
+      <div class="fix"><h4>Unificar sob a tagline única "Curadoria que rende."</h4><p>Aposentar as 5+ assinaturas conflitantes ("Transformando espaços em experiências", "Curadoria que permanece", "Design que permanece"). "Curadoria, projeto e execução para quem pensa grande" vira <strong>descritor de capabilidade</strong>, não assinatura.</p></div>
+      <div class="fix"><h4>Buscar o arquivo-fonte vetorial</h4><p>Localizar/gerar o vetor oficial do logo e do selo e confirmar os <strong>hex reais</strong> da paleta (os desta versão são inferidos por amostragem). Pré-requisito de qualquer impressão ou aplicação oficial.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 9. PRÉ-MORTE E STATUS ============ -->
+  <section id="status">
+    <p class="kicker">Seção 9</p>
+    <h1>Pré-morte e status</h1>
+    <div class="callout gate"><span class="lbl">Carimbo de gate</span>Este brandbook é <strong>v1 / hipótese-de-trabalho</strong>. NÃO publicar, NÃO imprimir peça oficial e NÃO escalar mídia paga antes do gate humano. Fonte completa: <code>marca/premissas-e-premorte.md</code> (Aletheia, Onda 0).</div>
+
+    <h3>Dependências que travam a cristalização</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Dependência</th><th>O que trava</th><th>Ref.</th></tr></thead>
+      <tbody>
+        <tr><td><strong>H5 — DRE + estrutura societária + vínculo Robinsom↔BRW</strong></td><td>Gate mais crítico. Define se "curadoria B2B" é rótulo honesto e se o pedigree âncora (Robinsom, hoje <strong>fora</strong> do CNPJ) é estável. Sem isso, não lavrar narrativa oficial nem brandbook definitivo.</td><td>P2 · P4</td></tr>
+        <tr><td><strong>H1 — demanda do nicho validada</strong></td><td>Confirma que "investidor Airbnb" é canal replicável via aquisição, não só rede pessoal do Robinsom. Mom Test + pretotype.</td><td>P1</td></tr>
+        <tr><td><strong>DRE — receita dominante</strong></td><td>Sem DRE não se sabe se a receita é majoritariamente curadoria/consultoria ou revenda B2C. Se ≥70% venda direta, o rótulo é aspiracional demais.</td><td>P4 · D1</td></tr>
+        <tr><td><strong>INPI — registrabilidade</strong></td><td>A marca pode já estar registrada por terceiro ou não ser registrável. Não finalizar identidade visual antes do parecer.</td><td>P5 · M7</td></tr>
+        <tr><td><strong>WhatsApp — voz do lead</strong></td><td>~150 conversas comerciais nunca lidas. O tom e as objeções aqui são inferidos do material público, não da voz real do comprador. Recalibrar após ler.</td><td>P3 · D2</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>Vetos herdados <small>(não violar)</small></h3>
+    <div class="callout warn">
+      <p style="margin:.2em 0">✗ Não lançar campanha "30 anos" / "preço de fábrica" / "desde 1998" sem H5 respondida.</p>
+      <p style="margin:.2em 0">✗ Não escalar mídia paga (&gt; R$5k/mês) sem H2 + H3 + H5.</p>
+      <p style="margin:.2em 0">✗ Não prometer, na narrativa, capacidade de volume que a operação ainda reconstrói (crise 2025).</p>
+    </div>
+
+    <h3>O que PODE andar agora <small>(v1, sem gate)</small></h3>
+    <p>Marca básica v1 — posicionamento, narrativa, mensagem, voz, este brandbook enxuto — como <strong>hipótese-fundamentada</strong>, com selo v1 em tudo, para as ondas seguintes não ficarem paradas. A <strong>LP/site</strong> pode subir já — é pré-requisito operacional e não depende do gate. <strong>Cristalização</strong> (brandbook definitivo, campanha, mídia em escala) só <strong>após</strong> o gate acima.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Consolidado por <strong>Harmonia</strong> — squad de Design Systems / UX-UI da Kolden. Onda 2, Contrato <code>m-20260710-brw-marca-basica</code>, 2026-07-10.<br>
+  Camada verbal: Aletheia (Onda 0) · Aglaia · Orfeu · Caliope (Onda 1). Identidade visual: documentação do existente (rebrand Jan/2026, via coleta Drive).<br>
+  <strong>v1.1</strong> incorpora a camada de inteligência de mercado (§7) do Contrato <code>m-20260710-brw-pesquisa-mercado</code> — coleta Argos (Firecrawl + Exa). Mesma data, 2026-07-10.<br>
+  <em>"A estética serve o valor; o sistema serve a marca."</em></p>
+  <span class="stamp2">v1.1 — não publicar antes do gate humano</span>
+</footer>
+
+</body>
+</html>
