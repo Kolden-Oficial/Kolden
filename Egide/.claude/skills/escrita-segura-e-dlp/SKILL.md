@@ -10,6 +10,9 @@ description: >-
 domain: ciberseguranca
 subdomain: hardening-dlp
 tags: [symlink-safe, o-nofollow, escrita-atomica, dlp, denylist, vazamento-de-dados, hardening]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Escrita Segura e DLP

@@ -3,6 +3,11 @@ sidebar_position: 11
 sidebar_label: "Plugins"
 title: "Plugins"
 description: "Extend Hermes with custom tools, hooks, and integrations via the plugin system"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Plugins

@@ -2,6 +2,11 @@
 sidebar_position: 11
 title: "Feishu / Lark"
 description: "Set up Hermes Agent as a Feishu or Lark bot"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Feishu / Lark Setup

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/research/research-paper-writing/references/_indice|_indice]]"
+---
+
 # Source Bibliography
 
 This document lists all authoritative sources used to build this skill, organized by topic.

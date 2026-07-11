@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/ascii-video/references/_indice|_indice]]"
+---
+
 # Scene System & Creative Composition
 
 > **See also:** architecture.md · composition.md · effects.md · shaders.md

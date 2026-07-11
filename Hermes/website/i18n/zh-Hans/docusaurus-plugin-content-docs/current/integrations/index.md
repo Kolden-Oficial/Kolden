@@ -2,6 +2,9 @@
 title: "集成"
 sidebar_label: "概览"
 sidebar_position: 0
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 集成

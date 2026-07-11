@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/docs/standards/_indice|_indice]]"
+---
+
 # Story Template v2.0 Specification
 
 **Version:** 2.0.0

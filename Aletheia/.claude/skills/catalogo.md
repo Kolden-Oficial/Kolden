@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+---
+
 # Catálogo de Habilidades — Aletheia
 
 Índice das **10 habilidades** do squad, organizadas por estágio do funil de validação.

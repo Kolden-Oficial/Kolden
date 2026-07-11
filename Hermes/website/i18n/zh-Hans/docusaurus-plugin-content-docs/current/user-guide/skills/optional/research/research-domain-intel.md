@@ -2,6 +2,9 @@
 title: "Domain Intel — 使用 Python 标准库进行被动域名侦察"
 sidebar_label: "Domain Intel"
 description: "使用 Python 标准库进行被动域名侦察"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/installation/README|README]]"
+---
+
 <!--
   Tradução: PT-BR
   Original: /docs/en/installation/faq.md

@@ -1,6 +1,11 @@
 ---
 title: Tool Search
 sidebar_position: 95
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Tool Search

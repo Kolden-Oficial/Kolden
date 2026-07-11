@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # CLI Graph Dashboard — Product Requirements Document (PRD)
 
 ## Goals and Background Context

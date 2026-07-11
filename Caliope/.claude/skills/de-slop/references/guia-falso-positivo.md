@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/.claude/skills/de-slop/references/calibracao-de-voz|calibracao-de-voz]]"
+  - "[[Caliope/.claude/skills/de-slop/references/checklist-e-scorecard|checklist-e-scorecard]]"
+  - "[[Caliope/.claude/skills/de-slop/references/padroes-anti-ia|padroes-anti-ia]]"
+---
+
 # Guia anti-falso-positivo: não destrua copy humano legítimo
 
 O maior risco desta habilidade não é deixar passar slop — é **estripar prosa humana boa**

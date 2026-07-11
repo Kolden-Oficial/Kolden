@@ -1,6 +1,9 @@
 ---
 name: criacao-de-skill
 description: Cria habilidades (SKILL.md) para os agentes nascidos no Kolden, seguindo o padrão de frontmatter, descrição que dispara invocação automática e corpo enxuto. Use durante a fase de construção de um agente, para cada conhecimento modular identificado no PRD. Habilidades ficam em .claude/skills/ do agente.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Criação de habilidade

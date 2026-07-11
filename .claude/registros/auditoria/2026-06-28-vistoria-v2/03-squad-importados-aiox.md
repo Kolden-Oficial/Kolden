@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 03 — Lotes 5-10: 10 squads AIOX-legado (excluindo Olimpo, que tem relatório próprio)
 
 > Cobertura consolidada de **10 squads no formato AIOX-legado** (status `importado-cru`): Peitho, Caliope, Aglaia, Harmonia, Orfeu, Pluto, Dionisio, Themis, Metis, Egide. **Total: 130 agentes** (mais 33 em `Caliope/copy-master/` = 163).

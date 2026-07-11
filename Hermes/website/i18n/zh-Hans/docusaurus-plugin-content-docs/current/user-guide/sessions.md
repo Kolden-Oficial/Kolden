@@ -2,6 +2,9 @@
 sidebar_position: 7
 title: "Sessions（会话）"
 description: "会话持久化、恢复、搜索、管理及各平台会话跟踪"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Sessions（会话）

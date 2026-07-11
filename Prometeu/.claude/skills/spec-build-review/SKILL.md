@@ -8,6 +8,9 @@ description: |
   após a especificação e após a implementação. Não faz git push (autoridade @devops).
 user-invocable: true
 argument-hint: "<storyId | descrição da feature> [--resume]"
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Spec → Build → Review

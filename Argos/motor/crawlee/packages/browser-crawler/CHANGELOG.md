@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/packages/browser-crawler/README|README]]"
+---
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

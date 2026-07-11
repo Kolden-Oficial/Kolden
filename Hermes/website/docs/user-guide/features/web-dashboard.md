@@ -2,6 +2,11 @@
 sidebar_position: 15
 title: "Web Dashboard"
 description: "Browser-based administration panel for managing configuration, API keys, MCP servers, messaging pairing, webhooks, the gateway, memory, credentials, sessions, logs, analytics, cron jobs, and skills"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Web Dashboard

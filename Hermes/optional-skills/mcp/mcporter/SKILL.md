@@ -11,6 +11,9 @@ metadata:
     homepage: https://mcporter.dev
 prerequisites:
   commands: [npx]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # mcporter

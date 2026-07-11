@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # SYNAPSE Assets
 
 Templates for creating custom SYNAPSE domains and manifest entries.

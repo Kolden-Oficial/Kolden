@@ -2,6 +2,9 @@
 sidebar_position: 16
 title: "持久目标"
 description: "设置一个持续目标，让 Hermes 跨轮次持续工作直到完成。我们对 Ralph loop 的实现。"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 持久目标（`/goal`）

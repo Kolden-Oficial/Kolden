@@ -2,6 +2,9 @@
 title: "Pinecone — 面向生产级 AI 应用的托管向量数据库"
 sidebar_label: "Pinecone"
 description: "面向生产级 AI 应用的托管向量数据库"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

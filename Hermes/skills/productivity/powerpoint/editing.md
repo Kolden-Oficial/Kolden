@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/productivity/powerpoint/pptxgenjs|pptxgenjs]]"
+  - "[[Hermes/skills/productivity/powerpoint/SKILL|SKILL]]"
+---
+
 # Editing Presentations
 
 ## Template-Based Workflow

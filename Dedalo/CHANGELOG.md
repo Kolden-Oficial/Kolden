@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/README|README]]"
+---
+
 # Changelog — claude-code-mastery
 
 Todas as mudanças notáveis no squad Claude Code Mastery.

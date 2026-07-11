@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Launch model selected with rationale"
   - "[ ] Timeline mapped with all phases"
   - "[ ] Revenue model calculated with scenarios"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/hormozi-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Plan Launch

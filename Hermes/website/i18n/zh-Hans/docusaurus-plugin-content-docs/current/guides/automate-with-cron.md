@@ -2,6 +2,9 @@
 sidebar_position: 11
 title: "用 Cron 自动化一切"
 description: "使用 Hermes cron 的真实自动化模式——监控、报告、数据管道与多技能工作流"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 用 Cron 自动化一切

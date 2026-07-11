@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/email/himalaya/references/configuration|configuration]]"
+---
+
 # Message Composition with MML (MIME Meta Language)
 
 Himalaya uses MML for composing emails. MML is a simple XML-based syntax that compiles to MIME messages.

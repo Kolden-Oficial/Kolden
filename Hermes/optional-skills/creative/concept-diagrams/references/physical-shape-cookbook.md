@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/concept-diagrams/references/dashboard-patterns|dashboard-patterns]]"
+  - "[[Hermes/optional-skills/creative/concept-diagrams/references/infrastructure-patterns|infrastructure-patterns]]"
+---
+
 # Physical Shape Cookbook
 
 Guidance for drawing physical objects (vehicles, buildings, hardware, mechanical systems, anatomy) — when rectangles aren't enough.

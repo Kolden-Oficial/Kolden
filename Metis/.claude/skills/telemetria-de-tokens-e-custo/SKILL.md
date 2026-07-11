@@ -7,6 +7,9 @@ description: >
   ROI de uma otimização de prompt, "quanto economizamos com X", ou comparar agentes/modos por
   eficiência. NÃO use para estimar tokens "de cabeça" — esta habilidade exige número lido de log
   real. É a régua anti-vaidade do Metis para qualquer métrica de eficiência de IA.
+tipo: skill
+area: Metis
+up: "[[Metis/_MOC-metis]]"
 ---
 
 # Telemetria de tokens e custo

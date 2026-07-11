@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/contribute|contribute]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/roadmap|roadmap]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/welcome|welcome]]"
+---
+
 # FAQ
 
 ### How do I get started?

@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/Lum1104--Understand-Anything/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/Lum1104--Understand-Anything/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades (F3) — Lum1104--Understand-Anything
 
 Rota A. Plugin Claude Code multiplataforma (claude/copilot/cursor/opencode/codex/gemini/…) que combina **análise estática (tree-sitter) + LLM** para produzir um **grafo de conhecimento interativo** de qualquer codebase, com dashboard, tours guiados, onboarding, diff e explain. Monorepo pnpm: `skills/` (definições) + `agents/` (subagentes) + `packages/core` (motor TS) + `packages/dashboard` (React/React Flow) + `src/` (builders de contexto).

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/.claude/skills/implementacao-ui/references/motion-e-performance|motion-e-performance]]"
+---
+
 # shadcn/ui + Tailwind — referência de implementação
 
 > Digerido de `ui-ux-pro-max/.claude/skills/ui-styling/references/*` (MIT):

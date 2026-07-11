@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 ## Detailed Reports
 
 Introducing long and detailed reports, with a completely new architecture inspired by the latest [STORM](https://arxiv.org/abs/2402.14207) paper.

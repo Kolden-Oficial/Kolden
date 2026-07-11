@@ -16,6 +16,9 @@ agente_dono: redator-de-propostas
 heranca_historica: [challenger-sale-dixon-adamson, ceb-corporate-executive-board]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G10+G11+G12)
 status: semente
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # Estratégia de Deal Complexo

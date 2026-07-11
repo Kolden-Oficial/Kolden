@@ -17,6 +17,9 @@ heranca_historica:
   - peter-cohan-great-demo
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G19)
 status: semente
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # Demo Invertida por Impacto

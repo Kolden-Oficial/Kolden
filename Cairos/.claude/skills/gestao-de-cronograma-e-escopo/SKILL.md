@@ -7,6 +7,9 @@ description: >
   mudança de escopo. Gatilhos: "montar cronograma", "definir escopo", "WBS", "caminho crítico",
   "marcos do projeto", "baseline", "vai atrasar?", "quanto tempo leva". Dono: gerente-de-projeto.
   Se o objeto do projeto for build de software, faça handoff ao Prometeu.
+tipo: skill
+area: Cairos
+up: "[[Cairos/_MOC-cairos]]"
 ---
 
 # Gestão de Cronograma & Escopo

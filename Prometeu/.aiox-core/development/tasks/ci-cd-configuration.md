@@ -9,6 +9,11 @@ tools:
   - coderabbit-free  # Revisão automatizada de código (tier GRATUITO)
 checklists:
   - github-devops-checklist.md
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Configurar Pipeline de CI/CD

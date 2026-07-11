@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/architecture/_indice|_indice]]"
+---
+
 # 多仓库策略
 
 > **ZH** | [EN](../architecture/multi-repo-strategy.md) | [PT](../pt/architecture/multi-repo-strategy.md)

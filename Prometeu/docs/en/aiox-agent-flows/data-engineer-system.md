@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-agent-flows/README|README]]"
+---
+
 # @data-engineer (Dara) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/data-engineer-system.md) | [ES](../../es/aiox-agent-flows/data-engineer-system.md)

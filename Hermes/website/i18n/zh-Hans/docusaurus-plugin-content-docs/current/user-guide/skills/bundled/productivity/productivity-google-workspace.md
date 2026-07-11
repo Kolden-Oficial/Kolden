@@ -2,6 +2,9 @@
 title: "Google Workspace — 通过 gws CLI 或 Python 使用 Gmail、Calendar、Drive、Docs、Sheets"
 sidebar_label: "Google Workspace"
 description: "通过 gws CLI 或 Python 使用 Gmail、Calendar、Drive、Docs、Sheets"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

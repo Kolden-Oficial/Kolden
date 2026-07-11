@@ -2,6 +2,9 @@
 sidebar_position: 17
 title: "SSH / 远程主机上的 OAuth"
 description: "当 Hermes 运行在远程机器、容器或跳板机后面时，如何完成基于浏览器的 OAuth（xAI、Spotify）"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # SSH / 远程主机上的 OAuth

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/nemo-curator/references/filtering|filtering]]"
+---
+
 # Deduplication Guide
 
 Complete guide to exact, fuzzy, and semantic deduplication.

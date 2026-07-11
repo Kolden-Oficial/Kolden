@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/vertical-trails/data-engineer-trail|data-engineer-trail]]"
+  - "[[Prometeu/docs/guides/vertical-trails/devops-trail|devops-trail]]"
+---
+
 # Trilha @squad-creator: Do Problema ao Output Validado
 
 > **Story:** AIOX-DIFF-4.3.1

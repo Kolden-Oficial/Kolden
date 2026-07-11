@@ -2,6 +2,9 @@
 title: "Simpo 训练 — 用于 LLM 对齐的简单偏好优化"
 sidebar_label: "Simpo 训练"
 description: "用于 LLM 对齐的简单偏好优化"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

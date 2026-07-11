@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/multi_agents/ag2|ag2]]"
+---
+
 # LangGraph
 
 [LangGraph](https://python.langchain.com/docs/langgraph) is a library for building stateful, multi-actor applications with LLMs. 

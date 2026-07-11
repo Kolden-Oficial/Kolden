@@ -2,6 +2,9 @@
 title: "Ascii Video — ASCII 视频：将视频/音频转换为彩色 ASCII MP4/GIF"
 sidebar_label: "Ascii Video"
 description: "ASCII 视频：将视频/音频转换为彩色 ASCII MP4/GIF"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

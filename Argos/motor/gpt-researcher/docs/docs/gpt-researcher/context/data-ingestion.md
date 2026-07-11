@@ -1,3 +1,15 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/azure-storage|azure-storage]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/filtering-by-domain|filtering-by-domain]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/local-docs|local-docs]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/tailored-research|tailored-research]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/vector-stores|vector-stores]]"
+---
+
 # Data Ingestion
 
 When you're dealing with a large amount of context data, you may want to start meditating upon a standalone process for data ingestion.

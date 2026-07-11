@@ -2,6 +2,9 @@
 sidebar_position: 8
 title: "Memory Provider 插件"
 description: "如何为 Hermes Agent 构建 memory provider 插件"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 构建 Memory Provider 插件

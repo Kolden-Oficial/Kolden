@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # AIOX Method Guiding Principles
 
 > 🌐 **EN** | [PT](./pt/GUIDING-PRINCIPLES.md) | [ES](./es/GUIDING-PRINCIPLES.md)

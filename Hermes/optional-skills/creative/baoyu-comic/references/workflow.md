@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/_indice|_indice]]"
+---
+
 # Complete Workflow
 
 Full workflow for generating knowledge comics.

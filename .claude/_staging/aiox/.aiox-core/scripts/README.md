@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/scripts/aiox-doc-template|aiox-doc-template]]"
+  - "[[.claude/_staging/aiox/.aiox-core/scripts/workflow-management|workflow-management]]"
+---
+
 # AIOX Scripts - Legacy Directory
 
 > **Note**: This directory now contains only legacy/migration scripts and a few active utilities.

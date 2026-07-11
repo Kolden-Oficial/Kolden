@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/README|README]]"
+---
+
 # AIOX Autonomous Development Engine (ADE) - Guia Completo
 
 > **Versão:** 1.0.0

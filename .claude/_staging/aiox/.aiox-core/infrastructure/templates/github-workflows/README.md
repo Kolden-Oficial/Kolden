@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # GitHub Workflows Templates
 
 Templates for GitHub Actions workflows, used by the `*setup-github` task to configure DevOps infrastructure for user projects.

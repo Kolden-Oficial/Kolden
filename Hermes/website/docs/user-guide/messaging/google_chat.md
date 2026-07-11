@@ -2,6 +2,11 @@
 sidebar_position: 12
 title: "Google Chat"
 description: "Set up Hermes Agent as a Google Chat bot using Cloud Pub/Sub"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Google Chat Setup

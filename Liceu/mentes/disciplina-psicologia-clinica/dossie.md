@@ -65,6 +65,8 @@ linhagens: []
 frameworks_kolden: []
 squads_que_usam: [aletheia, caliope, aglaia, pluto]
 confianca_da_fonte: alta
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Psicologia clínica/pesquisadora — Dossiê de Disciplina

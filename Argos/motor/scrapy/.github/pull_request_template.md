@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 <!--
 Follow our contributing guidelines (see docs/contributing.rst).
 

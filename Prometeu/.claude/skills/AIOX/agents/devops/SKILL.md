@@ -3,6 +3,9 @@ name: aiox-devops
 description: "Ativa Gage (devops) como Gerente de Repositório GitHub e Especialista DevOps. Use para operações de repositório, gestão de versões, CI/CD, quality gates e operações de push no GitHub. ÚNICO agente autorizado a fazer push para o repositório remoto."
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: gerado -->

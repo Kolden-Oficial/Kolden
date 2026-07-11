@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/mcp/vscode-coach/adr/0002-sem-segredos-v1|0002-sem-segredos-v1]]"
+---
+
 # ADR 0001 — Stack Node/TypeScript
 
 **Status:** Aceito | **Data:** 2026-06-28 | **Decisor:** Piper (Dédalo) + Caos | **Aprovação:** Ronan

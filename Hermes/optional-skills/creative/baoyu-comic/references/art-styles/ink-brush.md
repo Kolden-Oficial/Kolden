@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/chalk|chalk]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/ligne-claire|ligne-claire]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/manga|manga]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/minimalist|minimalist]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/realistic|realistic]]"
+---
+
 # ink-brush
 
 水墨画风 - Chinese ink brush aesthetics with dynamic strokes

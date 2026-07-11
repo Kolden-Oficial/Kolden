@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/microsoft--playwright-mcp/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/microsoft--playwright-mcp/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # F2 — Segurança estática — microsoft--playwright-mcp
 
 - **slug:** microsoft--playwright-mcp

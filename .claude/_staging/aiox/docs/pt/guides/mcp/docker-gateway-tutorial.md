@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/guides/mcp/desktop-commander|desktop-commander]]"
+---
+
 # Tutorial Docker Gateway MCP
 
 > **PT** | [EN](../../../guides/mcp/docker-gateway-tutorial.md)

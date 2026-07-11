@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/skyvern/skyvern/cli/skills/skyvern/references/_indice|_indice]]"
+---
+
 # Session Reuse
 
 This guidance is about **runtime session reuse** — passing a `pbs_*` ID as `browser_session_id`

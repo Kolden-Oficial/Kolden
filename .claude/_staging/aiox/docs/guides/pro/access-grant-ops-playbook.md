@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/pro/install-gate-setup|install-gate-setup]]"
+  - "[[.claude/_staging/aiox/docs/guides/pro/squad-creator-handoff-pro-access-ops|squad-creator-handoff-pro-access-ops]]"
+---
+
 # Playbook: AIOX Pro Access Grant Ops
 
 **Status:** Validated on 2026-04-20

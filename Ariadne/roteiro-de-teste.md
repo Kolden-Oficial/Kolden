@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/README|README]]"
+---
+
 # Roteiro de Teste — Squad Ariadne (maturity score)
 
 > Smoke tests derivados da jornada do PRD. Gate: **maturity ≥ 7.0**.

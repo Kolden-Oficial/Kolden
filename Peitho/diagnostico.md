@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/README|README]]"
+---
+
 # Diagnóstico — Peitho
 **Domínio:** Tráfego Pago | **Data:** 2026-06-12 | **Versão:** 1.0
 **Origem:** ADAPT — referência: traffic-masters (ohmyjahh/xquads-squads)

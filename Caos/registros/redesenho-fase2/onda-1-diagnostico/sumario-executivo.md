@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/redesenho-fase2/onda-1-diagnostico/matriz-de-conformidade|matriz-de-conformidade]]"
+---
+
 # Sumário Executivo — Onda 1 do Contrato m-20260705
 
 **Para:** Ronan

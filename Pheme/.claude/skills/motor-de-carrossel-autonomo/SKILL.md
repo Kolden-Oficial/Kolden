@@ -12,6 +12,9 @@ description: >
   em escala) nem `roteiro-de-reels` (essa faz UM Reel manual).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Motor de Carrossel Autônomo — pipeline que aprende com a performance

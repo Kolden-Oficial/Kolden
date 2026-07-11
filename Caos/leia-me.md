@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/CLAUDE|CLAUDE]]"
+  - "[[Caos/constituicao|constituicao]]"
+  - "[[Caos/glossario|glossario]]"
+---
+
 # KOLDEN — Guia de instalação e uso
 
 > "No princípio era o Caos." Tudo que existe neste repositório nasce dele.

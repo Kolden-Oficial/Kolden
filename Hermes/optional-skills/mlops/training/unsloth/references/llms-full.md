@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/training/unsloth/references/index|index]]"
+---
+
 # Unsloth Docs
 
 Train your own model with Unsloth, an open-source framework for LLM fine-tuning and reinforcement learning.

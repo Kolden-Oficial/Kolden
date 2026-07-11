@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/x1xhlol--system-prompts-and-models-of-ai-tools/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/x1xhlol--system-prompts-and-models-of-ai-tools/seguranca|seguranca]]"
+---
+
 # F3 — Inventário de capacidades (rota C — inventário LEVE)
 
 - **slug:** `x1xhlol--system-prompts-and-models-of-ai-tools`

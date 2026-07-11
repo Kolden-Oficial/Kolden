@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/.claude/skills/direcao-visual-de-referencia/references/direcao-mobile|direcao-mobile]]"
+  - "[[Aglaia/.claude/skills/direcao-visual-de-referencia/references/vocabulario-estetico|vocabulario-estetico]]"
+---
+
 # Motor combinatorio + anti-slop + disciplina
 
 > Detalhamento operacional do motor de variacao usado pelo SKILL.md.

@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 00 — Resumo Executivo do Laudo
 
 > Auditoria forense da frota KoldenOS, executada em 2026-06-28 conforme **Protocolo de Vistoria Estrutural v2 calibrado**.

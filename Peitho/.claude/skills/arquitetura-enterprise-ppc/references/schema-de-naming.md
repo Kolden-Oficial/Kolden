@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+---
+
 # Schema de naming — PPC enterprise
 
 ## Estrutura canônica

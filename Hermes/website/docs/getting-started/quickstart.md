@@ -2,6 +2,15 @@
 sidebar_position: 1
 title: "Quickstart"
 description: "Your first conversation with Hermes Agent — from install to chatting in under 5 minutes"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/getting-started/installation|installation]]"
+  - "[[Hermes/website/docs/getting-started/learning-path|learning-path]]"
+  - "[[Hermes/website/docs/getting-started/nix-setup|nix-setup]]"
+  - "[[Hermes/website/docs/getting-started/termux|termux]]"
+  - "[[Hermes/website/docs/getting-started/updating|updating]]"
 ---
 
 # Quickstart

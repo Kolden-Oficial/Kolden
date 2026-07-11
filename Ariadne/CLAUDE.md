@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/README|README]]"
+---
+
 # ARIADNE — Squad de Execução de SEO & CRO de Página
 
 > **Versão:** 1.0.0 | **Criado:** 2026-06-25 | **Tipo:** squad (tier 0 + 7 especialistas)

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task: Bootstrap Supabase Project
 
 **Propósito**: Criar a estrutura padrão de projeto Supabase

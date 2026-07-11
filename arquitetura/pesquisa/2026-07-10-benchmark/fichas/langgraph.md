@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: arquitetura
+up: "[[arquitetura/_MOC-arquitetura]]"
+relacionado:
+  - "[[arquitetura/pesquisa/2026-07-10-benchmark/fichas/_indice|_indice]]"
+---
+
 # Ficha — LangGraph
 
 > Coletada em 2026-07-10 · Versão/commit da fonte: langgraph==1.2.9 (release de 2026-07-10) · monorepo `langchain-ai/langgraph` @ commit `95af6a00` · templates: `new-langgraph-project` @ `921235cc`, `react-agent` @ `7d1f9832` · Status: ativo

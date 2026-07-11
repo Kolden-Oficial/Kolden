@@ -26,6 +26,11 @@ Checklist:
   - "[ ] 5 variações de anúncio escritas com ângulos distintos"
   - "[ ] Plano de testes com pares priorizados fornecido"
   - "[ ] Camada Psicológica aplicada (princípios de Cialdini/Warren marcados)"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Escrever Copy de Anúncio

@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/fetching/dynamic|dynamic]]"
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/fetching/static|static]]"
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/fetching/stealthy|stealthy]]"
+---
+
 # Fetchers basics
 
 ## Introduction

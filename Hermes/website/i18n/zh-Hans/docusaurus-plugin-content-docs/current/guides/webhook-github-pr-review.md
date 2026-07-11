@@ -3,6 +3,9 @@ sidebar_position: 11
 sidebar_label: "通过 Webhook 进行 GitHub PR 审查"
 title: "使用 Webhook 自动发布 GitHub PR 评论"
 description: "将 Hermes 连接到 GitHub，使其自动获取 PR diff、审查代码变更并发布评论——由 webhook 触发，无需手动提示"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 使用 Webhook 自动发布 GitHub PR 评论

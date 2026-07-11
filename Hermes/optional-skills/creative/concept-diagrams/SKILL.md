@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [diagrams, svg, visualization, education, physics, chemistry, engineering]
     related_skills: [architecture-diagram, excalidraw, generative-widgets]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Concept Diagrams

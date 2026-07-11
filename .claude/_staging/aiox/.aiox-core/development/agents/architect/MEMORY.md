@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # Architect Agent Memory (Aria)
 
 ## Active Patterns

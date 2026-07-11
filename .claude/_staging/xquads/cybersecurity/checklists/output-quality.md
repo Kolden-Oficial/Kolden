@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Security Output Quality Checklist
 
 **Checklist ID:** CYBER-CL-001

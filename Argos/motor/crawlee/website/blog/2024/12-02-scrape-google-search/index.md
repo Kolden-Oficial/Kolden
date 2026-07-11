@@ -5,6 +5,9 @@ tags: [community]
 description: 'Learn how to scrape google search results using Crawlee for Python'
 image: ./img/google-search.webp
 authors: [MaxB]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 Scraping `Google Search` delivers essential `SERP analysis`, SEO optimization, and data collection capabilities. Modern scraping tools make this process faster and more reliable.

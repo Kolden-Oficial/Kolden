@@ -2,6 +2,9 @@
 title: "Meme Generation — 使用 Pillow 选取模板并叠加文字，生成真实的表情包图片"
 sidebar_label: "Meme Generation"
 description: "使用 Pillow 选取模板并叠加文字，生成真实的表情包图片"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

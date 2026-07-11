@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Reinforcement Learning, Megatron-LM, SGLang, GRPO, Post-Training, GLM]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # slime: LLM Post-Training Framework for RL Scaling

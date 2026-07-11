@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Funnel architecture mapped with all pages and emails"
   - "[ ] All page and email copy written per format standards"
   - "[ ] Funnel math calculated with expected conversion rates"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Create Funnel Copy

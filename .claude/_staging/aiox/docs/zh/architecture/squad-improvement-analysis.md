@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/architecture/_indice|_indice]]"
+---
+
 <!-- 翻译: ZH-CN | 原文: /docs/en/architecture/squad-improvement-analysis.md | 同步: 2026-02-22 -->
 
 # 项目分析：Squad 改进系统

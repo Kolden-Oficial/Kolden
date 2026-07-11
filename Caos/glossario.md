@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/leia-me|leia-me]]"
+---
+
 # Glossário do Kolden
 
 Termos e conceitos usados no Caos e em todo agente criado pelo Kolden.

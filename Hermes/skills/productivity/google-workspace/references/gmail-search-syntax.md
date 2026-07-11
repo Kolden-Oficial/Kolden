@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Gmail Search Syntax
 
 Standard Gmail search operators work in the `query` argument.

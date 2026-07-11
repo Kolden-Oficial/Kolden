@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/README|README]]"
+---
+
 # Meta-Agent Commands Reference
 
 > 🌐 **EN** | [PT](./pt/meta-agent-commands.md) | [ES](./es/meta-agent-commands.md)

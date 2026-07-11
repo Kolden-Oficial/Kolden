@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/README|README]]"
+---
+
 # Project Status Feature - User Guide
 
 > **EN** | [PT](../pt/guides/project-status-feature.md) | [ES](../es/guides/project-status-feature.md)

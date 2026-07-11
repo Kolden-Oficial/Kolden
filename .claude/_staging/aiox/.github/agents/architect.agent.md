@@ -5,6 +5,11 @@ description: 'Use for system architecture (fullstack, backend, frontend, infrast
 NOT for: Market research or competitive analysis → Use @analyst. PRD creation or product strategy → Use @pm. Database schema design or query optimization → Use @data-engineer.
 '
 tools: ['read', 'edit', 'search', 'execute']
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.github/agents/_indice|_indice]]"
 ---
 
 # 🏛️ Aria Agent (@architect)

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # AIOX API Reference
 
 > **EN** | [PT](../pt/guides/api-reference.md) | [ES](../es/guides/api-reference.md)

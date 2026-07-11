@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/regras/autoridade-de-especialistas|autoridade-de-especialistas]]"
+---
+
 # Compactação de contexto — handoff entre fases
 
 Regra de apoio à operação do Ritual. O Ritual completo pode levar horas; em agentes/squads

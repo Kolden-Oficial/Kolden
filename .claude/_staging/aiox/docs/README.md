@@ -1,3 +1,33 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/00-shared-activation-pipeline|00-shared-activation-pipeline]]"
+  - "[[.claude/_staging/aiox/docs/CHANGELOG|CHANGELOG]]"
+  - "[[.claude/_staging/aiox/docs/codex-integration-process|codex-integration-process]]"
+  - "[[.claude/_staging/aiox/docs/community|community]]"
+  - "[[.claude/_staging/aiox/docs/core-architecture|core-architecture]]"
+  - "[[.claude/_staging/aiox/docs/docker-mcp-setup|docker-mcp-setup]]"
+  - "[[.claude/_staging/aiox/docs/FEATURE_PROCESS|FEATURE_PROCESS]]"
+  - "[[.claude/_staging/aiox/docs/getting-started|getting-started]]"
+  - "[[.claude/_staging/aiox/docs/git-workflow-guide|git-workflow-guide]]"
+  - "[[.claude/_staging/aiox/docs/glossary|glossary]]"
+  - "[[.claude/_staging/aiox/docs/GUIDING-PRINCIPLES|GUIDING-PRINCIPLES]]"
+  - "[[.claude/_staging/aiox/docs/how-to-contribute-with-pull-requests|how-to-contribute-with-pull-requests]]"
+  - "[[.claude/_staging/aiox/docs/ide-integration|ide-integration]]"
+  - "[[.claude/_staging/aiox/docs/meta-agent-commands|meta-agent-commands]]"
+  - "[[.claude/_staging/aiox/docs/npx-install|npx-install]]"
+  - "[[.claude/_staging/aiox/docs/prd-cli-graph-dashboard|prd-cli-graph-dashboard]]"
+  - "[[.claude/_staging/aiox/docs/PUBLISHING|PUBLISHING]]"
+  - "[[.claude/_staging/aiox/docs/roadmap|roadmap]]"
+  - "[[.claude/_staging/aiox/docs/security|security]]"
+  - "[[.claude/_staging/aiox/docs/security-best-practices|security-best-practices]]"
+  - "[[.claude/_staging/aiox/docs/troubleshooting|troubleshooting]]"
+  - "[[.claude/_staging/aiox/docs/uninstallation|uninstallation]]"
+  - "[[.claude/_staging/aiox/docs/versioning-and-releases|versioning-and-releases]]"
+---
+
 # Synkra AIOX Documentation
 
 > 🌐 **EN** | [PT](./pt/README.md) | [ES](./es/README.md) | [ZH](./zh/README.md)

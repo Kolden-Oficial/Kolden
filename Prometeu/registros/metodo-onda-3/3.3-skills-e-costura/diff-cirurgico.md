@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/registros/metodo-onda-3/3.3-skills-e-costura/_indice|_indice]]"
+---
+
 # Diff Cirúrgico — Sub-onda 3.3 (Prometeu · 55 skills + PRM-3.2-019 + costura Onda 3)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (Onda 3 · Sub-onda 3.3 · costura final).

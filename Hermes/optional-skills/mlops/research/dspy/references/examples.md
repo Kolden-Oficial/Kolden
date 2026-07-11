@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/research/dspy/references/modules|modules]]"
+  - "[[Hermes/optional-skills/mlops/research/dspy/references/optimizers|optimizers]]"
+---
+
 # DSPy Real-World Examples
 
 Practical examples of building production systems with DSPy.

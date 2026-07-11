@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/catalogo-de-estilos|catalogo-de-estilos]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/guia-por-stack|guia-por-stack]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/paletas-e-tipografia|paletas-e-tipografia]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/regras-ux|regras-ux]]"
+---
+
 # Tipos de produto (chave primária da decisão)
 
 O tipo de produto restringe estilo, paleta, densidade e tom antes de qualquer

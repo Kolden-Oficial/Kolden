@@ -14,6 +14,9 @@ description: >-
 domain: ciberseguranca
 subdomain: cloud-governance
 tags: [aws-organizations, scp, azure-management-groups, azure-policy, gcp-organization-policy, landing-zones, policy-as-code, opa, sentinel, cloud-custodian, checkov, control-tower, iam-hierarchico, vpc-service-controls, drift-detection]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Governança Multi-Conta de Nuvem

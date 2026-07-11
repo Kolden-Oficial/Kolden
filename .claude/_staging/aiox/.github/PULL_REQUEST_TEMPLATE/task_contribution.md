@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.github/PULL_REQUEST_TEMPLATE/agent_contribution|agent_contribution]]"
+  - "[[.claude/_staging/aiox/.github/PULL_REQUEST_TEMPLATE/squad|squad]]"
+---
+
 ## Task Contribution
 
 <!-- Thank you for contributing a task to AIOX! Please fill out this template. -->

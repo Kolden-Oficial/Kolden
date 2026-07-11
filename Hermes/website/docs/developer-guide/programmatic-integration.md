@@ -2,6 +2,11 @@
 sidebar_position: 8
 title: "Programmatic Integration"
 description: "Three protocols for driving hermes-agent from external programs: ACP, the TUI gateway JSON-RPC, and the OpenAI-compatible HTTP API"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Programmatic Integration

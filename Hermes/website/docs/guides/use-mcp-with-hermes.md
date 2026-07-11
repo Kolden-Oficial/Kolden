@@ -2,6 +2,11 @@
 sidebar_position: 6
 title: "Use MCP with Hermes"
 description: "A practical guide to connecting MCP servers to Hermes Agent, filtering their tools, and using them safely in real workflows"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Use MCP with Hermes

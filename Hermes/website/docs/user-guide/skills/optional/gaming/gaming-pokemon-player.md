@@ -2,6 +2,11 @@
 title: "Pokemon Player — Play Pokemon via headless emulator + RAM reads"
 sidebar_label: "Pokemon Player"
 description: "Play Pokemon via headless emulator + RAM reads"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/gaming/gaming-minecraft-modpack-server|gaming-minecraft-modpack-server]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

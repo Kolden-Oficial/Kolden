@@ -7,6 +7,9 @@ agente_primario: [aglaia-chief]
 tags: [brand-equity, CBBE, keller, tracking, instrumentacao]
 fonte_upstream: msitarzewski/agency-agents@a597cb6 (design/, MIT)
 status: semente
+tipo: skill
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
 ---
 
 > **Atribuição:** semente adaptada de `msitarzewski/agency-agents@a597cb6` (MIT, divisão `design/`). Reescrita em PT-BR, sem cópia literal. Modelo CBBE de Kevin Lane Keller.

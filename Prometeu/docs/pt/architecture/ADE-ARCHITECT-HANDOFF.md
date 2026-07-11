@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/architecture/_indice|_indice]]"
+---
+
 # ADE Architect Handoff
 
 > **De:** Quinn (@qa) - QA Agent

@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 03 — Auditoria do Lote 1: 6 Squads-Semente
 
 > Lote 1 cobre os 6 squads-semente criados em 2026-06-28 (commit `924c3a79`): Nomos, Pactolo, Êmporos, Héstia, Ananke, Cairós. Total: 30 agentes (5 cada).

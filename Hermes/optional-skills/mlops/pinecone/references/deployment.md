@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Pinecone Deployment Guide
 
 Production deployment patterns for Pinecone.

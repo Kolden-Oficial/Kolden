@@ -7,6 +7,9 @@ origem: msitarzewski/agency-agents@a597cb6 · IDs G22, G23, G24 · bucket B03 en
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Otimização de Postgres / Supabase

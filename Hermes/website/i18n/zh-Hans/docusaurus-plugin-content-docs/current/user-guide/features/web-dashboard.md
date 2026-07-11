@@ -2,6 +2,9 @@
 sidebar_position: 15
 title: "Web Dashboard"
 description: "基于浏览器的仪表板，用于管理配置、API 密钥、会话、日志、分析、定时任务和技能"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Web Dashboard

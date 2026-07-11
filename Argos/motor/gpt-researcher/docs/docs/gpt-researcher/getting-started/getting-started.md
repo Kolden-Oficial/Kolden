@@ -1,3 +1,15 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/getting-started/cli|cli]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/getting-started/getting-started-with-docker|getting-started-with-docker]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/getting-started/how-to-choose|how-to-choose]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/getting-started/introduction|introduction]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/getting-started/linux-deployment|linux-deployment]]"
+---
+
 # Getting Started
 
 > **Step 0** - Install Python 3.11 or later. [See here](https://www.tutorialsteacher.com/python/install-python) for a step-by-step guide.

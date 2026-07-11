@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/audits/README|README]]"
+---
+
 # Audit — `C:/dev` Workspace Organization
 
 **Date:** 2026-05-07

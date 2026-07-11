@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/baoyu-infographic/references/styles/_indice|_indice]]"
+---
+
 # morandi-journal
 
 Hand-drawn doodle illustration with warm Morandi color tones and cozy bullet journal aesthetic.

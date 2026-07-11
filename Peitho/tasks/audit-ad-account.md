@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Scorecard de saúde de 8 dimensões concluído"
   - "[ ] Todas as campanhas categorizadas por nível de performance"
   - "[ ] 5 recomendações priorizadas com impacto projetado"
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Auditar Conta de Anúncios

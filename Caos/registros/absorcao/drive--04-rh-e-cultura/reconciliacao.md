@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--04-rh-e-cultura/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--04-rh-e-cultura/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Reconciliação — Drive "04 | RH & Cultura"
 
 > Invariante: count(ABSORVIDO) + count(DESCARTADO) + count(PERDIDO) == count(inventário F3 de arquivos), com PERDIDO = 0.

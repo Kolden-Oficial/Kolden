@@ -11,6 +11,9 @@ metadata:
   hermes:
     tags: [Notion, Productivity, Notes, Database, API, CLI, Workers]
     homepage: https://developers.notion.com
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Notion

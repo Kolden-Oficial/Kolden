@@ -1,5 +1,10 @@
 ---
 sidebar_position: 2
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/_indice|_indice]]"
 ---
 
 # Profiles: Running Multiple Agents

@@ -6,6 +6,9 @@ description: >-
   legal da IA", "governança de IA" ou perguntar se um produto de IA está em conformidade na UE. Conduz
   classificação (risco inaceitável/alto/limitado/mínimo) → obrigações → prazos, com fonte normativa e
   rótulo informativo (requer revisão humana/advogado).
+tipo: skill
+area: Nomos
+up: "[[Nomos/_MOC-nomos]]"
 ---
 
 # Conformidade EU AI Act

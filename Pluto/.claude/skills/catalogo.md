@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+---
+
 # Catálogo de Habilidades — Pluto
 
 > **Primeira camada de skills formal do squad** — criada em 2026-06-29 no bucket B06 do Ritual de Absorção (`msitarzewski/agency-agents@a597cb6`, MIT). Hoje Pluto tem 16 agentes Hormozi com filosofia explícita; esta camada é a interface tática que os agentes invocam quando o trabalho é EXECUTAR (não DECIDIR).

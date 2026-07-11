@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Sparse Autoencoders, SAE, Mechanistic Interpretability, Feature Discovery, Superposition]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # SAELens: Sparse Autoencoders for Mechanistic Interpretability

@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Migration, OpenClaw, Hermes, Memory, Persona, Import]
     related_skills: [hermes-agent]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # OpenClaw -> Hermes Migration

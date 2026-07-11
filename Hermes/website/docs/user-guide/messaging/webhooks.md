@@ -2,6 +2,11 @@
 sidebar_position: 13
 title: "Webhooks"
 description: "Receive events from GitHub, GitLab, and other services to trigger Hermes agent runs"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Webhooks

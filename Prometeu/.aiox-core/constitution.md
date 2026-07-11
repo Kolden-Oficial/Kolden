@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/user-guide|user-guide]]"
+  - "[[Prometeu/.aiox-core/working-in-the-brownfield|working-in-the-brownfield]]"
+---
+
 # Synkra AIOX Constitution
 
 > **Version:** 1.0.0 | **Ratified:** 2025-01-30 | **Last Amended:** 2025-01-30

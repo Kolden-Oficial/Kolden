@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/workflows/_indice|_indice]]"
+---
+
 # Workflow Brownfield UI/Frontend Enhancement
 
 > **ID:** `brownfield-ui`

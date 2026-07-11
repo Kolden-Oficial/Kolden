@@ -1,6 +1,12 @@
 ---
 id: upgrading-to-v3
 title: Upgrading to v3
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.15/upgrading/upgrading_v1|upgrading_v1]]"
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.15/upgrading/upgrading_v2|upgrading_v2]]"
 ---
 
 import ApiLink from '@site/src/components/ApiLink';

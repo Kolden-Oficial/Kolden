@@ -10,6 +10,9 @@ description: >
   "TIR", "VPL", "payback", "vale a pena o investimento", "hurdle rate", "análise de investimento",
   "ROI de projeto", "risk assessment", "monte carlo", "árvore de decisão", "capital budgeting".
   Dono: modelador-financeiro. Decisão de aprovar/rejeitar → handoff ao Plutos (Olimpo/CFO).
+tipo: skill
+area: Pactolo
+up: "[[Pactolo/_MOC-pactolo]]"
 ---
 
 # NPV, IRR e Análise de Investimento

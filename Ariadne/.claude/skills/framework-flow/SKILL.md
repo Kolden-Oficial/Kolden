@@ -8,6 +8,9 @@ description: >
   "FLOW", "framework FLOW", "SEO guiado por evidência", "find leverage optimize
   win", "método de SEO por estágio", "do tráfego à conversão". É uma metodologia
   NOVA da Ariadne (camada de orquestração).
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Framework FLOW — Find · Leverage · Optimize · Win

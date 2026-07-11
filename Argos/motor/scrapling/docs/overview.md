@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/index|index]]"
+---
+
 ## Pick Your Path
 
 Not sure where to start? Pick the path that matches what you're trying to do:

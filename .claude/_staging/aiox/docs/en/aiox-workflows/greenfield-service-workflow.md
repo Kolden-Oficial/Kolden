@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/en/aiox-workflows/README|README]]"
+---
+
 # Greenfield Service Workflow
 
 > **EN** | [PT](../../aiox-workflows/greenfield-service-workflow.md) | [ES](../../es/aiox-workflows/greenfield-service-workflow.md)

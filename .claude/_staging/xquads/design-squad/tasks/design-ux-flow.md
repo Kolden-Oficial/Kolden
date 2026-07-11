@@ -25,6 +25,11 @@ Checklist:
   - "[ ] User research conducted with documented insights"
   - "[ ] 2-3 personas created with goals and pain points"
   - "[ ] Wireframes created for all key screens and flows"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/design-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: UX Research & Flow Design

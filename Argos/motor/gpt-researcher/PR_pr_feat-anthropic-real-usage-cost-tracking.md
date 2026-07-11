@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/README|README]]"
+---
+
 # One-line summary
 
 Track Anthropic costs from native usage metadata instead of relying on the fallback tiktoken estimator.

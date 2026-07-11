@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/software-development/code-wiki/templates/README|README]]"
+---
+
 # Architecture
 
 {{TWO_TO_THREE_PARAGRAPHS_SHAPE_OF_SYSTEM}}

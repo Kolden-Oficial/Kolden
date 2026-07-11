@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Spark analysis completed and validated"
   - "[ ] All 6 deliverable documents produced"
   - "[ ] End-to-end coherence validated"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/movement/tasks/_indice|_indice]]"
 ---
 
 # Task: Build Movement

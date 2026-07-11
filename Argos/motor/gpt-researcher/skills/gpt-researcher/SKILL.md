@@ -1,6 +1,9 @@
 ---
 name: gpt-researcher
 description: Autonomous deep research from Codex via MCP
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # GPT Researcher for Codex

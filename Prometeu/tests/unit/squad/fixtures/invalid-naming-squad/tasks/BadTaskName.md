@@ -9,6 +9,9 @@ Saida: |
   - output: string
 Checklist:
   - [ ] Do something
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Bad Task Name

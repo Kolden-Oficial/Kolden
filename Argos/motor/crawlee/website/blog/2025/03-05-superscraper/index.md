@@ -4,6 +4,9 @@ title: 'Inside implementing SuperScraper with Crawlee'
 description: 'This article explains how SuperScraper works, highlights its implementation details, and provides code snippets to demonstrate its core functionality.'
 image: './img/superscraper.webp'
 authors: [SauravJ, RadoC]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 [SuperScraper](https://github.com/apify/super-scraper) is an open-source [Actor](https://docs.apify.com/platform/actors) that combines features from various web scraping services, including [ScrapingBee](https://www.scrapingbee.com/), [ScrapingAnt](https://scrapingant.com/), and [ScraperAPI](https://www.scraperapi.com/).

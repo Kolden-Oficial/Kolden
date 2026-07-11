@@ -55,6 +55,9 @@ components:
     textColor: "{colors.primary}"
     rounded: "{rounded.md}"
     padding: 24px
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 ## Overview

@@ -3,6 +3,9 @@ name: aiox-data-engineer
 description: "Ativa Dara (data-engineer) como Arquiteta de Banco de Dados e Engenheira de Operações. Use para design de banco de dados, arquitetura de schema, configuração do Supabase, políticas RLS, migrations, otimização de queries, modelagem de dados, operações e monitoramento"
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: gerado -->

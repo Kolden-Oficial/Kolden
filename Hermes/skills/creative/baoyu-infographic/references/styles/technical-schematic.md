@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/baoyu-infographic/references/styles/_indice|_indice]]"
+---
+
 # technical-schematic
 
 Technical diagrams with engineering precision and clean geometry.

@@ -2,6 +2,9 @@
 title: "Pytorch Lightning"
 sidebar_label: "Pytorch Lightning"
 description: "基于 PyTorch 的高层框架，提供 Trainer 类、自动分布式训练（DDP/FSDP/DeepSpeed）、回调系统及极简样板代码"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

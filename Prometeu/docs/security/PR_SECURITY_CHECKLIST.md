@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/security/MANIFEST_SIGNING|MANIFEST_SIGNING]]"
+---
+
 # PR #56 - Security Hardening Checklist
 
 ## Summary of Changes

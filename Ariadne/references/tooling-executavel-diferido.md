@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+---
+
 # Tooling executável — DIFERIDO (F6-2ª rodada, 2026-07-01)
 
 > Nota de escopo do 2º passe de absorção da Ariadne sobre

@@ -8,6 +8,9 @@ description: >
   Gatilhos: "avaliação de desempenho", "performance", "ciclo de avaliação", "feedback", "calibração",
   "9-box", "pdi", "plano de desenvolvimento", "1:1", "promoção". Remuneração ligada à performance é
   com politicas-e-cargos.
+tipo: skill
+area: Hestia
+up: "[[Hestia/_MOC-hestia]]"
 ---
 
 # Avaliação de Desempenho e Desenvolvimento

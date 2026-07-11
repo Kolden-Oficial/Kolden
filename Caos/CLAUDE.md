@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/leia-me|leia-me]]"
+---
+
 # KOLDEN — Fábrica de Agentes
 
 > **Versão:** 3.4.0 | **Atualizado:** 2026-07-05 | **Sub-onda:** 1.1 (Método Kolden)

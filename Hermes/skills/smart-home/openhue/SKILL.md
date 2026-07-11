@@ -11,6 +11,9 @@ metadata:
     homepage: https://www.openhue.io/cli
 prerequisites:
   commands: [openhue]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # OpenHue CLI

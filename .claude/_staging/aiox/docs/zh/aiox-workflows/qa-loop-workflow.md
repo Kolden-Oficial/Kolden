@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/README|README]]"
+---
+
 # QA循环工作流 - 完整文档
 
 **版本:** 1.0

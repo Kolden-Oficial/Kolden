@@ -1,5 +1,10 @@
 ---
 # No checklists needed - rollback operation with built-in transaction validation
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Task: Undo Last Component Operation

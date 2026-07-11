@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/en/aiox-workflows/README|README]]"
+---
+
 # QA Loop Workflow
 
 > **EN** | [PT](../../aiox-workflows/qa-loop-workflow.md) | [ES](../../es/aiox-workflows/qa-loop-workflow.md)

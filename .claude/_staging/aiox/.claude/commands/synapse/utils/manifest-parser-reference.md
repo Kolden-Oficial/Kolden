@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # SYNAPSE Manifest & Domain File Format Reference
 
 Reference for the KEY=VALUE format used by the SYN-1 domain-loader parser.

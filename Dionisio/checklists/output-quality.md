@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Dionisio
+up: "[[Dionisio/_MOC-dionisio]]"
+---
+
 # Checklist de Qualidade de Saída da Construção de Movimentos
 
 **ID do Checklist:** MOVEMENT-CL-001

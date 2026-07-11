@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Passive and active reconnaissance completed"
   - "[ ] Directory and service enumeration completed"
   - "[ ] Attack surface mapped with high-value targets identified"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/cybersecurity/tasks/_indice|_indice]]"
 ---
 
 # Task: Reconnaissance & Enumeration

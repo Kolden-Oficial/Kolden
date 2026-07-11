@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/README|README]]"
+---
+
 # Changelog
 
 All notable changes to Synkra AIOX will be documented in this file.

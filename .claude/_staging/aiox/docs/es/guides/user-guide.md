@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/guides/README|README]]"
+---
+
 <!--
   Traduccion: ES
   Original: /docs/guides/user-guide.md

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/security/godmode/references/jailbreak-templates|jailbreak-templates]]"
+---
+
 # Refusal Detection & Response Scoring
 
 Ported from G0DM0D3's Tastemaker scoring system. Use these patterns to

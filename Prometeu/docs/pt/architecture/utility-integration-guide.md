@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/architecture/_indice|_indice]]"
+---
+
 <!-- Tradução: PT-BR | Original: /docs/en/architecture/utility-integration-guide.md | Sincronização: 2026-01-26 -->
 
 # Guia de Integração de Utilitários

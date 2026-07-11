@@ -7,6 +7,9 @@ origem: msitarzewski/agency-agents@a597cb6 · ID G11 · bucket B03 engineering
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Governança de Contratos de API

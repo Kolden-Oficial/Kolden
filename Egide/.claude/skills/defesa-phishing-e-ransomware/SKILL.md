@@ -9,6 +9,9 @@ description: >-
 domain: ciberseguranca
 subdomain: phishing-ransomware-defense
 tags: [phishing, ransomware, dmarc, dkim, spf, email-headers, cisa, playbook, deteccao, bec]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Defesa contra Phishing e Ransomware

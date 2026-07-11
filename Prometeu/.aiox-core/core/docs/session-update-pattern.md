@@ -1,3 +1,14 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/core/docs/component-creation-guide|component-creation-guide]]"
+  - "[[Prometeu/.aiox-core/core/docs/SHARD-TRANSLATION-GUIDE|SHARD-TRANSLATION-GUIDE]]"
+  - "[[Prometeu/.aiox-core/core/docs/template-syntax|template-syntax]]"
+  - "[[Prometeu/.aiox-core/core/docs/troubleshooting-guide|troubleshooting-guide]]"
+---
+
 # Session Update Pattern
 
 **Integration Guide for Story 6.1.4**

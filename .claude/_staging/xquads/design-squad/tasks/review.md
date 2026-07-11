@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All checklist items evaluated"
   - "[ ] Verdict rendered (APPROVE/REVISE/REJECT)"
   - "[ ] Accessibility, consistency, and responsiveness individually assessed"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/design-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Review Design Systems/UX Output

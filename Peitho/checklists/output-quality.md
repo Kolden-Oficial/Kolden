@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+---
+
 # Checklist de Qualidade de Saída de Tráfego Pago
 
 **Checklist ID:** TRAFFIC-CL-001

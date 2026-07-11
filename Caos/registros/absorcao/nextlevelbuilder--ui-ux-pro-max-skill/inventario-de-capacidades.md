@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/nextlevelbuilder--ui-ux-pro-max-skill/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/nextlevelbuilder--ui-ux-pro-max-skill/seguranca|seguranca]]"
+---
+
 # F3 — Inventário de capacidades
 
 - **slug:** nextlevelbuilder--ui-ux-pro-max-skill | **sha:** 9fd25fe… | **rota:** A

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # AIOX Autonomous Development Engine (ADE) - Guia Completo
 
 > **Versão:** 1.0.0

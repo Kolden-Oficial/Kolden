@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F5 — Plano de aplicação · `msitarzewski--agency-agents@a597cb6` — bucket B03 (engineering + testing)
 
 > **Bucket B03:** Prometeu (squad-alvo principal, 70 IDs) + Dedalo (8 IDs) + Égide cross-link (4 IDs) + Ariadne cross-link (2 IDs) + Caliope (3 IDs, skill nova) + Aletheia (4 IDs, skill nova) + DESCARTADO (18) + ROADMAP (8).

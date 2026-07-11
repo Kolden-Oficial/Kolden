@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Dionisio
+up: "[[Dionisio/_MOC-dionisio]]"
+relacionado:
+  - "[[Dionisio/README|README]]"
+---
+
 # Origem
 
 - **origem:** `ohmyjahh/xquads-squads`

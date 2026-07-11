@@ -10,6 +10,9 @@ description: >-
 domain: ciberseguranca
 subdomain: dfir
 tags: [dfir, forense, volatility, memoria, disco, mft, incident-response, playbook, timeline]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Forense Digital e Resposta a Incidente (DFIR)

@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 <!-- Traducao: PT-BR | Original: /docs/en/guides/squad-examples/README.md | Sincronizacao: 2026-01-26 -->
 
 # Exemplos de Squads

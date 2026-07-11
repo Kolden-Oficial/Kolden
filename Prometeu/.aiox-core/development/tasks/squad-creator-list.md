@@ -13,6 +13,11 @@ Checklist:
   - "[ ] Usar squad-generator.listLocal()"
   - "[ ] Formatar output conforme format"
   - "[ ] Exibir informacoes basicas de cada squad"
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # *list-squads

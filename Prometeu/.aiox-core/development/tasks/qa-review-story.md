@@ -6,6 +6,11 @@ tools:
   - supabase          # Testes de banco de dados e validação de dados
 checklists:
   - qa-master-checklist.md
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # review-story

@@ -60,6 +60,11 @@ Checklist:
   - "[ ] Update squad.yaml manifest"
   - "[ ] Run validation"
   - "[ ] Display result and next steps"
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Extend Squad Task

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All three lenses assessed with scores and specific findings"
   - "[ ] Top 3-5 highest-leverage improvements identified"
   - "[ ] Phased roadmap created with milestones"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/design-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Design Audit & Maturity Assessment

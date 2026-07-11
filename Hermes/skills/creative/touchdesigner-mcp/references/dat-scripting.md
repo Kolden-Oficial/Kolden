@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/touchdesigner-mcp/references/_indice|_indice]]"
+---
+
 # DAT-Based Scripting Reference
 
 TD's event/callback model — Python that runs in response to network events. The full set of "Execute DATs" plus their idiomatic patterns.

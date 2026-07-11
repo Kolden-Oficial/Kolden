@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/gsd-build--get-shit-done/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/gsd-build--get-shit-done/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática — gsd-build--get-shit-done
 
 - **slug:** gsd-build--get-shit-done

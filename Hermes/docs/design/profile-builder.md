@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Profile Builder — Dashboard-Native, Full-Featured Profile Creation
 
 Status: design proposal (not yet implemented)

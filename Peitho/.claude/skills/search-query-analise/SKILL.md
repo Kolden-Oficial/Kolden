@@ -16,6 +16,9 @@ allowed-tools:
   - Grep
   - Glob
   - AskUserQuestion
+tipo: skill
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
 ---
 
 # Análise de Search Query Report — n-gram + intent + SQOS (PT-BR)

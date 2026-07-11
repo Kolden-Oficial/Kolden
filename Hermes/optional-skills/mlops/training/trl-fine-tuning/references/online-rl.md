@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/dpo-variants|dpo-variants]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/grpo-training|grpo-training]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/reward-modeling|reward-modeling]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/sft-training|sft-training]]"
+---
+
 # Online RL Methods
 
 Guide to online reinforcement learning with PPO, GRPO, RLOO, and OnlineDPO.

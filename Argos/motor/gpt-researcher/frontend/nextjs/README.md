@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # GPT Researcher UI
 
 A React component library for integrating the GPT Researcher interface into your React applications. Take it for a test ride with the [GPTR React Starter Template](https://github.com/elishakay/gpt-researcher-react), or simply:

@@ -5,6 +5,9 @@ tags: [community]
 description: 'Create a Netflix show recommendation system using Crawlee to scrape the data, JavaScript to code, and React to build the front end.'
 image: ./img/create-netflix-show-recommender.webp
 authors: [AyushT]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Building a Netflix web show recommender with Crawlee and React

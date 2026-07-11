@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/tasks/_indice|_indice]]"
+---
+
 # Tarefa: Assistente de Setup
 
 **Task ID:** CCM-CHIEF-003

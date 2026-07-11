@@ -3,6 +3,11 @@ sidebar_position: 12
 sidebar_label: "Built-in Plugins"
 title: "Built-in Plugins"
 description: "Plugins shipped with Hermes Agent that run automatically via lifecycle hooks — disk-cleanup and friends"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Built-in Plugins

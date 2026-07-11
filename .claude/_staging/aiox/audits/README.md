@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/audits/c-dev-organization-2026-05-07|c-dev-organization-2026-05-07]]"
+---
+
 # aiox-core/audits/
 
 Cross-project audit reports and AuditFinding artifacts. Part of the AIOX Framework Evolution Pipeline.

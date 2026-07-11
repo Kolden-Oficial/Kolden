@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todas as variantes especificadas (tamanho, intenção, estado, layout, conteúdo)"
   - "[ ] Design tokens mapeados com cadeia de fallback"
   - "[ ] Requisitos de acessibilidade completos (ARIA, teclado, leitor de tela)"
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Especificação de Componente

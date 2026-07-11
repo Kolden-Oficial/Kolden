@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/diagnostico_caos/_indice|_indice]]"
+---
+
 # 03 — Matriz de capacidades (5 pilares da absorção sem perda)
 
 > Para cada pilar: veredito + evidência `arquivo:linha` + **Aplicado à força** (trava determinística/gate BLOCK) vs **apenas Possível** (depende do modelo seguir o prompt) + risco se PARCIAL/AUSENTE.

@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/metodo-onda-1/1.3-mcp-camada-1/diff-cirurgico-ferramentas|diff-cirurgico-ferramentas]]"
+  - "[[Caos/registros/metodo-onda-1/1.3-mcp-camada-1/mapa-de-dependencias|mapa-de-dependencias]]"
+  - "[[Caos/registros/metodo-onda-1/1.3-mcp-camada-1/plano-migracao-escalonada|plano-migracao-escalonada]]"
+  - "[[Caos/registros/metodo-onda-1/1.3-mcp-camada-1/sumario-executivo|sumario-executivo]]"
+---
+
 # Inventário de Wrappers Proprietários — Sub-onda 1.3 (MCP Camada 1)
 
 > **Contrato:** m-20260706-metodo-kolden · Sub-onda 1.3

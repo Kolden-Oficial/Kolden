@@ -2,6 +2,9 @@
 title: "Peft Fine Tuning — 使用 LoRA、QLoRA 及 25+ 种方法对 LLM 进行参数高效微调"
 sidebar_label: "Peft Fine Tuning"
 description: "使用 LoRA、QLoRA 及 25+ 种方法对 LLM 进行参数高效微调"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -2,6 +2,14 @@
 title: "Grok — Delegate coding to xAI Grok Build CLI (features, PRs)"
 sidebar_label: "Grok"
 description: "Delegate coding to xAI Grok Build CLI (features, PRs)"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-antigravity-cli|autonomous-ai-agents-antigravity-cli]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-blackbox|autonomous-ai-agents-blackbox]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-honcho|autonomous-ai-agents-honcho]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-openhands|autonomous-ai-agents-openhands]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

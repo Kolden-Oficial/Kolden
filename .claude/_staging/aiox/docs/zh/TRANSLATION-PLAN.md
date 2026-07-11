@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/README|README]]"
+---
+
 # Synkra AIOX 中文文档翻译计划
 
 > 🌐 [EN](../TRANSLATION-PLAN.md) | [PT](../pt/TRANSLATION-PLAN.md) | [ES](../es/TRANSLATION-PLAN.md) | **ZH**

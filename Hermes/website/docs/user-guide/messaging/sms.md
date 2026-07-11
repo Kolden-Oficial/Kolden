@@ -3,6 +3,11 @@ sidebar_position: 8
 sidebar_label: "SMS (Twilio)"
 title: "SMS (Twilio)"
 description: "Set up Hermes Agent as an SMS chatbot via Twilio"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # SMS Setup (Twilio)

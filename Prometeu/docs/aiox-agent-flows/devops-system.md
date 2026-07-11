@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/aiox-agent-flows/README|README]]"
+---
+
 # Sistema DevOps - Guia Completo do Agente @devops
 
 > **Agente:** Gage (Operator)

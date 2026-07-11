@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: "架构"
 description: "Hermes Agent 内部结构——主要子系统、执行路径、数据流及延伸阅读指引"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 架构

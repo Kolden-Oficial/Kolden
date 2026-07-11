@@ -7,6 +7,9 @@ description: >
   crescimento). Regra dura: cada métrica carrega a fonte do input e a janela — sem isso, é estimativa.
   Gatilhos: "unit economics", "CAC", "LTV", "payback", "margem de contribuição", "LTV/CAC", "cohort",
   "MRR/ARR", "churn", "NRR", "vale a pena adquirir esse cliente". Dono: analista-fpa.
+tipo: skill
+area: Pactolo
+up: "[[Pactolo/_MOC-pactolo]]"
 ---
 
 # Unit Economics Operacional

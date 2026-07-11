@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Coding-Agent, Grok, xAI, Code-Review, Refactoring, Automation]
     related_skills: [codex, claude-code, hermes-agent]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Grok Build CLI — Hermes Orchestration Guide

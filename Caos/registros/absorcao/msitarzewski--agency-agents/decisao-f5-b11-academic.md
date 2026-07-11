@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F5 — Decisão executável · bucket **B11 = `academic/`** → Liceu (com handoff Orfeu)
 
 > Baseada em `mapa-de-decisao-b11-academic.md` (F4). Esta F5 é o plano operacional do que **F6 vai escrever**, com gates, ordem de dependência e checklist por arquivo. **Não escreve agentes/dossiês/frameworks aqui** — F5 é o contrato; F6 aplica.

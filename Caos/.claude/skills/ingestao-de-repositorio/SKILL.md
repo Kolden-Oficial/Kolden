@@ -1,6 +1,9 @@
 ---
 name: ingestao-de-repositorio
 description: Orquestra a absorção de um repositório do GitHub para dentro do Kolden — da quarentena segura ao aprimoramento de um squad existente. Use quando o Ronan mandar uma URL de repo (comando /absorver) para visualizar tudo, verificar segurança (prioridade #1), entender 100%, checar se já temos squad/agente/skill equivalente, e então aprimorar o existente ou avisar e criar. Conduz 8 fases (F0–F7) com gates; nunca executa o código de terceiro; para para aprovação humana antes de aplicar.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Ingestão de repositório — pipeline de absorção (maestro)

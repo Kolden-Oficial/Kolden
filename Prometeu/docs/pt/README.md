@@ -1,3 +1,36 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/agent-reference-guide|agent-reference-guide]]"
+  - "[[Prometeu/docs/pt/aiox-nomenclature-specification|aiox-nomenclature-specification]]"
+  - "[[Prometeu/docs/pt/CHANGELOG|CHANGELOG]]"
+  - "[[Prometeu/docs/pt/code-of-conduct|code-of-conduct]]"
+  - "[[Prometeu/docs/pt/community|community]]"
+  - "[[Prometeu/docs/pt/contributing|contributing]]"
+  - "[[Prometeu/docs/pt/core-architecture|core-architecture]]"
+  - "[[Prometeu/docs/pt/docker-mcp-setup|docker-mcp-setup]]"
+  - "[[Prometeu/docs/pt/DOCUMENTATION-ROADMAP|DOCUMENTATION-ROADMAP]]"
+  - "[[Prometeu/docs/pt/ENVIRONMENT|ENVIRONMENT]]"
+  - "[[Prometeu/docs/pt/FEATURE_PROCESS|FEATURE_PROCESS]]"
+  - "[[Prometeu/docs/pt/getting-started|getting-started]]"
+  - "[[Prometeu/docs/pt/git-workflow-guide|git-workflow-guide]]"
+  - "[[Prometeu/docs/pt/GUIDING-PRINCIPLES|GUIDING-PRINCIPLES]]"
+  - "[[Prometeu/docs/pt/how-to-contribute-with-pull-requests|how-to-contribute-with-pull-requests]]"
+  - "[[Prometeu/docs/pt/ide-integration|ide-integration]]"
+  - "[[Prometeu/docs/pt/meta-agent-commands|meta-agent-commands]]"
+  - "[[Prometeu/docs/pt/migration-guide|migration-guide]]"
+  - "[[Prometeu/docs/pt/npx-install|npx-install]]"
+  - "[[Prometeu/docs/pt/performance-tuning-guide|performance-tuning-guide]]"
+  - "[[Prometeu/docs/pt/roadmap|roadmap]]"
+  - "[[Prometeu/docs/pt/security|security]]"
+  - "[[Prometeu/docs/pt/security-best-practices|security-best-practices]]"
+  - "[[Prometeu/docs/pt/troubleshooting|troubleshooting]]"
+  - "[[Prometeu/docs/pt/uninstallation|uninstallation]]"
+  - "[[Prometeu/docs/pt/versioning-and-releases|versioning-and-releases]]"
+---
+
 <!--
   Tradução: PT-BR
   Original: /docs/README.md

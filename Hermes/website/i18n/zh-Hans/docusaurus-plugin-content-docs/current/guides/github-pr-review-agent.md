@@ -2,6 +2,9 @@
 sidebar_position: 10
 title: "教程：GitHub PR 审查 Agent"
 description: "构建一个自动化 AI 代码审查器，监控你的仓库、审查 Pull Request 并自动发送反馈——全程无需人工干预"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 教程：构建 GitHub PR 审查 Agent

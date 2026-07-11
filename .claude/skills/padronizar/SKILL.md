@@ -1,6 +1,9 @@
 ---
 name: padronizar
 description: Use quando o Ronan (ou qualquer agente Kolden) pedir "padronize o squad X", "rode o rito de padronização em X", "aplique o Método em X", "faça a Onda de padronização de X", "diagnostique X pelo Método", ou variantes. Use para executar o rito canônico de 9 passos das Ondas 2-26 do Contrato-mãe `m-20260706-metodo-kolden` sobre um squad-alvo. Cada invocação = 1 Onda = 1 squad. Fonte-de-verdade do rito: `C:\Kolden\METODO-KOLDEN.md §8`. Checklist Dike: `Caos/checklists/CAOS-CL-002.md` (canônico após Sub-onda 1.6).
+tipo: skill
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
 ---
 
 # /padronizar `<Squad>` — Rito canônico de padronização

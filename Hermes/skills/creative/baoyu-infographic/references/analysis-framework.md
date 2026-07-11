@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/baoyu-infographic/references/base-prompt|base-prompt]]"
+  - "[[Hermes/skills/creative/baoyu-infographic/references/structured-content-template|structured-content-template]]"
+---
+
 # Infographic Content Analysis Framework
 
 Deep analysis framework applying instructional design principles to infographic creation.

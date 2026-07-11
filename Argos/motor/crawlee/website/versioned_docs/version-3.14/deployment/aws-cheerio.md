@@ -1,6 +1,13 @@
 ---
 id: aws-cheerio
 title: Cheerio on AWS Lambda
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.14/deployment/aws-browsers|aws-browsers]]"
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.14/deployment/gcp-browsers|gcp-browsers]]"
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.14/deployment/gcp-cheerio|gcp-cheerio]]"
 ---
 
 Locally, we can conveniently create a Crawlee project with `npx crawlee create`. In order to run this project on AWS Lambda, however, we need to do a few tweaks.

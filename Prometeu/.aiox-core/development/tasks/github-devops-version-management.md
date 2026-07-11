@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # version-management.md
 
 **Task**: Gestão de Versão Semântica (Agnóstica de Repositório)

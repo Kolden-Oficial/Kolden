@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+---
+
 # Catálogo de Habilidades — Ariadne
 
 Habilidades disponíveis ao squad Ariadne, seu gatilho de invocação e propósito.

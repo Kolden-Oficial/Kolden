@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Gênero identificado com valor central e cenas obrigatórias"
   - "[ ] Todas as cenas mapeadas com pontos de virada e mudanças de valor"
   - "[ ] Problemas diagnosticados e priorizados com prescrições"
+tipo: nota
+area: Orfeu
+up: "[[Orfeu/_MOC-orfeu]]"
+relacionado:
+  - "[[Orfeu/tasks/_indice|_indice]]"
 ---
 
 # Task: Análise de História (Story Grid)

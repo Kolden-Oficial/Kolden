@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/_lote-2026-06-26/_indice|_indice]]"
+---
+
 # Manifesto do Lote de Absorção — 2026-06-26
 
 **Origem:** planilha `repos-claude-github` (Google Sheet `1OQAS3umei2xCL3aq0-voR-V9Vl-HIB07NFQQrPt363M`, aba `Repositorios`, 37 linhas).

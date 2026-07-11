@@ -3,6 +3,9 @@ name: estrategia-de-supply-chain
 description: Use quando o Poseidon precisar desenhar ou revisar a cadeia de suprimentos da Kolden — sourcing de fornecedor crítico (cloud, software, terceirizado, insumo físico se aplicável), avaliação de risco de single-vendor, política de estoque quando aplicável, controle de qualidade de entrega recebida, e integração ao ERP/sistema interno. Estratégia genérica e vendor-agnóstica — SEM lock-in geográfico (China, EUA ou qualquer polo). Cobre sourcing, negociação, QC e digitalização. NÃO use para escolha de LLM/modelo de IA (isso é Atena) nem para stack de código (isso é Hefesto). Aqui é a cadeia física/serviços/fornecedor que alimenta a operação da Kolden.
 invocavel_por: poseidon
 tags: [supply-chain, sourcing, fornecedor, qc, erp, olimpo]
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Estratégia de Supply Chain

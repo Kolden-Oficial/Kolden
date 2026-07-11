@@ -6,6 +6,9 @@ description: |
   Handles WSL wrapper, severity filtering, and auto-fix iterations.
 user-invocable: true
 argument-hint: "[scope: uncommitted|committed|base]"
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # CodeRabbit Review

@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.github/PULL_REQUEST_TEMPLATE|PULL_REQUEST_TEMPLATE]]"
+  - "[[Prometeu/.github/RFC_TEMPLATE|RFC_TEMPLATE]]"
+---
+
 # [P0] Missing AIOX Core module: utils/repository-detector - Blocks Linux Installation
 
 ## 🔴 Priority: P0 (CRITICAL - Installation Blocked)

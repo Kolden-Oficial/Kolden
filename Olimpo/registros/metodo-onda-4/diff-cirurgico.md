@@ -1,3 +1,15 @@
+---
+tipo: registro
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/registros/metodo-onda-4/matriz-de-conformidade|matriz-de-conformidade]]"
+  - "[[Olimpo/registros/metodo-onda-4/PROMPT-DE-ABERTURA|PROMPT-DE-ABERTURA]]"
+  - "[[Olimpo/registros/metodo-onda-4/sumario-executivo|sumario-executivo]]"
+  - "[[Olimpo/registros/metodo-onda-4/verificacao-dike|verificacao-dike]]"
+  - "[[Olimpo/registros/metodo-onda-4/verificacao-dike-delta|verificacao-dike-delta]]"
+---
+
 # Diff Cirúrgico — Onda 4 do METODO Kolden (Olimpo)
 
 > **Escopo:** Olimpo padronizado pelo METODO Kolden v1.1 em INVÓLUCRO sobre MUTAÇÃO (regra E1 do METODO v1.1, 5ª aplicação empírica). Vendor xquads-squads preservado 1:1 intocado; camada Kolden PT-BR envelopa via 9 CREATE + 4 UPDATE.

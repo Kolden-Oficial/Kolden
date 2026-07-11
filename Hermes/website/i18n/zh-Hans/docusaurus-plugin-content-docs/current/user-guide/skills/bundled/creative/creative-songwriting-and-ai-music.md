@@ -2,6 +2,9 @@
 title: "Songwriting And Ai Music — 歌词创作与 Suno AI 音乐提示词"
 sidebar_label: "Songwriting And Ai Music"
 description: "歌词创作与 Suno AI 音乐提示词"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

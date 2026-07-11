@@ -2,6 +2,9 @@
 title: "Oss Forensics — GitHub 仓库的供应链调查、证据恢复与取证分析"
 sidebar_label: "Oss Forensics"
 description: "GitHub 仓库的供应链调查、证据恢复与取证分析"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

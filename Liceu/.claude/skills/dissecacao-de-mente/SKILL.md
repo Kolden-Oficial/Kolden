@@ -1,6 +1,9 @@
 ---
 name: dissecacao-de-mente
 description: Disseca o cérebro de um especialista/pensador (por NOME) ou de uma linhagem inteira (por TEMA/descoberta) e produz o dossiê estruturado do Liceu — separando engenharia documentada de mito/folclore, mapeando linhagens (herdou_de/influenciou) e expondo o gancho de operacionalização. Use quando o pedido for "disseca a mente de X", "estuda o cérebro de Y", "encontrei essa linhagem nos estudos: Z", "quem influenciou W". Aplica pesquisa citada (deep-research/tech-search; escala ao motor do Argos) e o veto de candura: nada vira fato sem fonte primária + ano.
+tipo: skill
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Dissecação de Mente

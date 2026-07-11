@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/antigravity-rules|antigravity-rules]]"
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/claude-rules|claude-rules]]"
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/codex-rules|codex-rules]]"
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/copilot-rules|copilot-rules]]"
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/cursor-rules|cursor-rules]]"
+---
+
 # Gemini Rules - Synkra AIOX
 
 Este arquivo define as instrucoes do projeto para Gemini CLI neste repositorio.

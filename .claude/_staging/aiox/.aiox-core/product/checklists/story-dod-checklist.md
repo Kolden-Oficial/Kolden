@@ -1,3 +1,11 @@
+---
+tipo: checklist
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/product/checklists/_indice|_indice]]"
+---
+
 # Story Definition of Done (DoD) Checklist
 
 ## Instructions for Developer Agent

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/docs/standards/_indice|_indice]]"
+---
+
 # AIOX Executor Decision Tree
 
 **Date:** 2025-11-13  

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/architecture/_indice|_indice]]"
+---
+
 # ADE 架构 - 自主开发引擎
 
 > **版本:** 1.0

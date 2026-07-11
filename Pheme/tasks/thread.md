@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Gancho de primeira linha (5+ opções)"
   - "[ ] Corpo escaneável (1 ideia por linha)"
   - "[ ] CTA de engajamento"
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+relacionado:
+  - "[[Pheme/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Post / Thread de Autoridade (LinkedIn / X)

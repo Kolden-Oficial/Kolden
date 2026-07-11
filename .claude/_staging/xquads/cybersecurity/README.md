@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Cybersecurity Squad
 
 15 agents for offensive and defensive security operations.

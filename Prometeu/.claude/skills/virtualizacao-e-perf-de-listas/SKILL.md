@@ -4,6 +4,9 @@ description: Use quando renderizar listas/tabelas/grids GRANDES (>100 itens) e o
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Virtualização e Performance de Listas

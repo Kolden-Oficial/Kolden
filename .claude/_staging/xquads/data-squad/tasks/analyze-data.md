@@ -25,6 +25,11 @@ Checklist:
   - "[ ] DMMM applied with objectives, goals, KPIs, targets"
   - "[ ] OMTM identified"
   - "[ ] Dashboard designed with Actions row"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/data-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Analyze Data

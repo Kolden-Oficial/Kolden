@@ -3,6 +3,9 @@ name: aiox-dev
 description: "Activate Dex (dev) for Full Stack Developer. Use for code implementation, debugging, refactoring, and development best practices"
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: generated -->

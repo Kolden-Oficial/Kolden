@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/templates/_indice|_indice]]"
+---
+
 # Padrão de Integração de Code Intelligence
 
 > Padrão padrão para integrar code intelligence em novas tasks e helpers.

@@ -21,6 +21,11 @@ Checklist:
   - "[ ] Query parsed with intent and business function"
   - "[ ] Quick answer provided"
   - "[ ] Route executed or direct answer given"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/c-level-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Diagnose — C-Level Squad

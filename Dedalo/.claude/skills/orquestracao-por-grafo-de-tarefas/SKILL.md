@@ -1,6 +1,9 @@
 ---
 name: orquestracao-por-grafo-de-tarefas
 description: Use quando vários agentes/worktrees/branches trabalham como um TIME e o problema deixou de ser "rodar em paralelo" e virou "integrar isso num produto mergeável" — fan-out já produz output mas não vira entrega. Traz o modelo de work item (dono/escopo/estado/evidência/portão de merge), o Kanban de agentes com critério de saída por coluna, a matriz de faixas (write surface que não pode colidir), o papel do integrador único e o painel de controle. NÃO use para um fan-out simples de leituras independentes (use orquestracao-de-subagentes-paralelos) nem para uma tarefa sequencial única.
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Orquestração por Grafo de Tarefas

@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 <!-- 翻译: zh-CN | 原文: /docs/api/squads-api.md | 同步: 2026-02-22 -->
 
 # Squads API 参考

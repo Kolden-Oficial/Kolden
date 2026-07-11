@@ -15,6 +15,9 @@ metadata:
       `--workspace dir:<path>` discipline are adapted from alt-glitch's
       original multi-agent video pipeline at
       https://github.com/NousResearch/kanban-video-pipeline.
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Kanban Video Orchestrator

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] CLV segmentation complete with 4 tiers"
   - "[ ] Customer Health Score defined with 6 dimensions"
   - "[ ] Intervention playbooks designed per risk level"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/data-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Optimize Retention

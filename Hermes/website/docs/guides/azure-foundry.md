@@ -2,6 +2,11 @@
 sidebar_position: 15
 title: "Microsoft Foundry"
 description: "Use Hermes Agent with Microsoft Foundry — OpenAI-style and Anthropic-style endpoints, auto-detection of transport and deployed models"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Microsoft Foundry

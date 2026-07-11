@@ -2,6 +2,9 @@
 sidebar_position: 8
 title: "Open WebUI"
 description: "通过 OpenAI 兼容 API 服务器将 Open WebUI 连接到 Hermes Agent"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Open WebUI 集成

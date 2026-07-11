@@ -2,6 +2,9 @@
 title: "Stocks — 通过 Yahoo 获取股票报价、历史、搜索、比较及加密货币数据"
 sidebar_label: "Stocks"
 description: "通过 Yahoo 获取股票报价、历史、搜索、比较及加密货币数据"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

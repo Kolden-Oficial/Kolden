@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/blader--humanizer/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/blader--humanizer/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades — blader--humanizer
 
 - **slug:** blader--humanizer · **sha:** 9600f2b7241cb4eed6ad803abee5ea01d67fe8e4 · **rota:** A

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/en/aiox-workflows/README|README]]"
+---
+
 # Design System Build Quality Workflow
 
 > **EN** | [PT](../../aiox-workflows/design-system-build-quality-workflow.md) | [ES](../../es/aiox-workflows/design-system-build-quality-workflow.md)

@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/hyperframes/references/composition|composition]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/features|features]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/gsap|gsap]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/troubleshooting|troubleshooting]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/website-to-video|website-to-video]]"
+---
+
 # HyperFrames CLI
 
 Everything runs through `npx hyperframes` (or the globally-installed `hyperframes` after `npm install -g hyperframes`). Requires Node.js >= 22 and FFmpeg.

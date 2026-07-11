@@ -1,6 +1,9 @@
 ---
 name: descoberta-de-skill
 description: Use ao escrever ou revisar a `description` e o frontmatter de qualquer habilidade do Kolden, ou quando uma habilidade existe mas não está sendo invocada na hora certa (dispara cedo demais, tarde demais ou nunca). Também ao montar o roteamento de uma suíte de habilidades por gatilho.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Descoberta de habilidade (SDO)

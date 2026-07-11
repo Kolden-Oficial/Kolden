@@ -14,6 +14,9 @@ cross_links:
   - aletheia/desenho-de-experimento
   - harmonia (handoff quando for produto, não validação)
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G1, G2)
+tipo: skill
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
 ---
 
 > _Adaptado de github.com/msitarzewski/agency-agents@a597cb6 (G1+G2, MIT © 2025 AgentLand Contributors)._

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/claude-code-mastery/tasks/_indice|_indice]]"
+---
+
 # Task: Claude Code CI/CD Pipeline Setup
 
 **Task ID:** ci-cd-setup

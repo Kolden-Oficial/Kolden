@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Referência — Perplexity Sonar (modelos, tools e parâmetros)
 
 Detalhamento das 4 tools do Sonar e seus parâmetros, para consulta do `retriever-sonar`.

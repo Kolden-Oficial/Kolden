@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/thedotmack--claude-mem/briefing-de-execucao|briefing-de-execucao]]"
+  - "[[Caos/registros/absorcao/thedotmack--claude-mem/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/thedotmack--claude-mem/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades — thedotmack--claude-mem
 
 - **slug:** thedotmack--claude-mem · **sha:** 3fe0725a · **rota:** A · **data:** 2026-06-26

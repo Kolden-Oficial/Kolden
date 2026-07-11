@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Abliteration, Uncensoring, Refusal-Removal, LLM, Weight-Projection, SVD, Mechanistic-Interpretability, HuggingFace, Model-Surgery]
     related_skills: [vllm, gguf, huggingface-tokenizers]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # OBLITERATUS Skill

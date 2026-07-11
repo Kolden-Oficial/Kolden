@@ -3,6 +3,9 @@ name: minecraft-modpack-server
 description: "Host modded Minecraft servers (CurseForge, Modrinth)."
 tags: [minecraft, gaming, server, neoforge, forge, modpack]
 platforms: [linux, macos]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Minecraft Modpack Server Setup

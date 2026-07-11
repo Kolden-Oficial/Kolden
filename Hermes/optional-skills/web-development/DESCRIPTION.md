@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Web Development
 
 Optional skills for client-side web development workflows — embedding agents, copilots, and AI-native UX patterns into user-facing web apps.

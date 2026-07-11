@@ -2,6 +2,9 @@
 title: "Hyperframes"
 sidebar_label: "Hyperframes"
 description: "使用 HyperFrames 创建基于 HTML 的视频合成、动画标题卡、社交叠加层、带字幕的对话视频、音频响应视觉效果和着色器转场..."
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

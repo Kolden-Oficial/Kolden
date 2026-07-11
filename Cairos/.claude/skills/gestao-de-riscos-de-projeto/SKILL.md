@@ -6,6 +6,9 @@ description: >
   dono, gatilho e plano de contingência. Gatilhos: "quais os riscos", "o que pode dar errado",
   "plano B", "contingência", "matriz de risco", "registro de riscos", "risk register". Dono:
   gestor-de-riscos. Veto: risco sem dono + gatilho + resposta não entra no registro.
+tipo: skill
+area: Cairos
+up: "[[Cairos/_MOC-cairos]]"
 ---
 
 # Gestão de Riscos de Projeto

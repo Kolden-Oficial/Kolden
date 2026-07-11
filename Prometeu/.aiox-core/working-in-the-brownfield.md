@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/constitution|constitution]]"
+  - "[[Prometeu/.aiox-core/user-guide|user-guide]]"
+---
+
 # Working in the Brownfield: A Complete Guide
 
 > **HIGHLY RECOMMENDED: Use Gemini Web or Gemini CLI for Brownfield Documentation Generation!**

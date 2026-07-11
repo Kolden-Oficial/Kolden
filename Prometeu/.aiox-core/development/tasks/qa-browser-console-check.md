@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task de Verificação do Console do Navegador
 
 Detecção automatizada de erros no console do navegador para mudanças de frontend.

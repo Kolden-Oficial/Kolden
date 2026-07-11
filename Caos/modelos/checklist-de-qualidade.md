@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
+---
+
 # Checklist de qualidade do Kolden — cascata macro → micro
 
 Todo agente precisa passar em 100% dos itens bloqueantes (B) antes da entrega. Itens recomendados

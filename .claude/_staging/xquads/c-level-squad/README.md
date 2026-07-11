@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # C-Level Squad
 
 Virtual C-suite of 6 executive leadership agents.

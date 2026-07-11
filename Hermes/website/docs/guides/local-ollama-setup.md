@@ -2,6 +2,11 @@
 sidebar_position: 9
 title: "Run Hermes Locally with Ollama — Zero API Cost"
 description: "Step-by-step guide to running Hermes Agent entirely on your own machine with Ollama and open-weight models like Gemma 4, no cloud API keys or paid subscriptions needed"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Run Hermes Locally with Ollama — Zero API Cost

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/migrating_from_beautifulsoup|migrating_from_beautifulsoup]]"
+---
+
 # Scrapling MCP Server
 
 The Scrapling MCP server exposes ten tools over the MCP protocol. It supports CSS-selector-based content narrowing (reducing tokens by extracting only relevant elements before returning results), three levels of scraping capability (plain HTTP, browser-rendered, and stealth/anti-bot bypass), persistent browser session management, and page screenshots returned as real image content blocks.

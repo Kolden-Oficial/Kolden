@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Design Systems/UX Output Quality Checklist
 
 **Checklist ID:** DESIGN-CL-001

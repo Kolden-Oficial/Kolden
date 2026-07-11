@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/finance/dcf-model/SKILL|SKILL]]"
+---
+
 # DCF Model Troubleshooting Guide
 
 **When to read this file:** If recalc.py shows errors OR valuation results seem unreasonable OR case selector not working properly.

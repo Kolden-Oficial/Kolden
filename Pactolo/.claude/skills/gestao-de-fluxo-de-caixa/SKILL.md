@@ -7,6 +7,9 @@ description: >
   alerta de liquidez. Regra dura: caixa é fato, não confundir com lucro; separar realizado de projetado.
   Gatilhos: "fluxo de caixa", "cash flow", "runway", "burn", "quando acaba o dinheiro", "capital de giro",
   "DSO/DPO", "liquidez", "ciclo de caixa". Dono: analista-de-fluxo-de-caixa.
+tipo: skill
+area: Pactolo
+up: "[[Pactolo/_MOC-pactolo]]"
 ---
 
 # Gestão de Fluxo de Caixa

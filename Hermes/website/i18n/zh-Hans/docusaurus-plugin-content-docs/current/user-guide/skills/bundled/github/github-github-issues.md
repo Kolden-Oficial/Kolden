@@ -2,6 +2,9 @@
 title: "Github Issues — 通过 gh 或 REST 创建、分类、标记、分配 GitHub Issues"
 sidebar_label: "Github Issues"
 description: "通过 gh 或 REST 创建、分类、标记、分配 GitHub Issues"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

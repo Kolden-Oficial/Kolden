@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/README|README]]"
+---
+
 # @devops (Gage) - Execution Trace
 
 > Traced from source code, not documentation.

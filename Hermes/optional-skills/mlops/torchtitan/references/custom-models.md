@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/torchtitan/references/checkpoint|checkpoint]]"
+  - "[[Hermes/optional-skills/mlops/torchtitan/references/float8|float8]]"
+  - "[[Hermes/optional-skills/mlops/torchtitan/references/fsdp|fsdp]]"
+---
+
 # Adding Custom Models to TorchTitan
 
 This guide explains how to add a new model to TorchTitan following the established patterns.

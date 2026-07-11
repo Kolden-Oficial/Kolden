@@ -1,6 +1,9 @@
 ---
 title: "注册 Microsoft Graph 应用程序"
 description: "Azure 门户操作指南：创建为 Teams 会议流水线提供支持的应用注册"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 注册 Microsoft Graph 应用程序

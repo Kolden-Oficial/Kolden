@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/_lote-2026-06-26/_indice|_indice]]"
+---
+
 # ROADMAP — Estrutura Robusta da Kolden (pós-lote de absorção)
 
 > **Origem:** lote de absorção 2026-06-26/27 (31 repos). **Estado:** 44 skills-âncora aplicadas; absorção

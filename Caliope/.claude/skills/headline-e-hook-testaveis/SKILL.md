@@ -16,6 +16,9 @@ allowed-tools:
   - Grep
   - Glob
   - AskUserQuestion
+tipo: skill
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
 ---
 
 # Headline e hook testáveis (PT-BR)

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # [System/Feature Name] Architecture
 
 **Version:** 1.0

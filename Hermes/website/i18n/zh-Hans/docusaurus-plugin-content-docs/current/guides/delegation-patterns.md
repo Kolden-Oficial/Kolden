@@ -2,6 +2,9 @@
 sidebar_position: 13
 title: "委托与并行工作"
 description: "何时以及如何使用子代理委托——并行研究、代码审查和多文件工作的模式"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 委托与并行工作

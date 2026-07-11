@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.

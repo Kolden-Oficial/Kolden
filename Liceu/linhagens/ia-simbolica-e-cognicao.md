@@ -7,6 +7,11 @@ status: vigente
 atualizado-em: 2026-07-04
 mentes: [alan-turing, claude-shannon, john-mccarthy, marvin-minsky, herbert-simon, allen-newell]
 frameworks_derivados: [arquitetura-de-agents-kolden]
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/linhagens/_indice|_indice]]"
 ---
 
 # Linhagem: IA simbólica e cognição

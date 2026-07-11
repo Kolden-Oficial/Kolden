@@ -13,6 +13,9 @@ description: >-
 domain: ciberseguranca
 subdomain: threat-modeling
 tags: [threat-modeling, stride, pasta, microsoft-sdl, dfd, data-flow-diagram, trust-boundary, kill-chain, cwe, attack-simulation, security-by-design]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 > Adaptado de github.com/msitarzewski/agency-agents@a597cb6 (MIT © 2025 AgentLand Contributors)

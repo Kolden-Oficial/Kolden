@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # SYNAPSE Manager
 
 CRUD command router for managing SYNAPSE domains, rules, and star-commands.

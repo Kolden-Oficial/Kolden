@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/skills/validacao-de-skill/references/principios-de-persuasao|principios-de-persuasao]]"
+---
+
 # Avaliação A/B, schema de scoring e trigger eval
 
 Detalhe operacional carregado sob demanda. Fonte: `revfactory--harness@cceac68e`

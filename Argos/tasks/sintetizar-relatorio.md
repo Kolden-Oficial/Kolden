@@ -39,6 +39,11 @@ Checklist:
   - "[ ] Rótulo de confiança atribuído a cada dado (VERIFICADO / FONTE ÚNICA / NÃO CONFIRMADO / OBSOLETO)"
   - "[ ] Checklist ARGOS-CL-001 rodado; nenhum CRÍTICO desmarcado (senão HALT)"
   - "[ ] Relatório montado macro→micro com citação inline em cada dado"
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Sintetizar Relatório — Argos

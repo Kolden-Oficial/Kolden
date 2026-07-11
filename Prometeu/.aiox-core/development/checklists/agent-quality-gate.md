@@ -1,3 +1,14 @@
+---
+tipo: checklist
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/checklists/brownfield-compatibility-checklist|brownfield-compatibility-checklist]]"
+  - "[[Prometeu/.aiox-core/development/checklists/issue-triage-checklist|issue-triage-checklist]]"
+  - "[[Prometeu/.aiox-core/development/checklists/memory-audit-checklist|memory-audit-checklist]]"
+  - "[[Prometeu/.aiox-core/development/checklists/self-critique-checklist|self-critique-checklist]]"
+---
+
 # Checklist de Quality Gate de Agente
 
 ```yaml

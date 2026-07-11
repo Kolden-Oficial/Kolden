@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/README|README]]"
+---
+
 # Origem — Dedalo
 
 - **Repositório de origem:** `ohmyjahh/xquads-squads`

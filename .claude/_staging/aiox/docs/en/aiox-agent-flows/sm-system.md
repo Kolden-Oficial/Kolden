@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/en/aiox-agent-flows/README|README]]"
+---
+
 # @sm (River) - System Documentation
 
 > **EN** | [PT](../../aiox-agent-flows/sm-system.md) | [ES](../../es/aiox-agent-flows/sm-system.md)

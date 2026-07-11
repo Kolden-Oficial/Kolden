@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/.claude/skills/search-query-analise/references/ngram-analysis-guide|ngram-analysis-guide]]"
+---
+
 # Taxonomia de negativas — biblioteca por vertical
 
 ## Negativas absolutas (aplicar a nível de conta)

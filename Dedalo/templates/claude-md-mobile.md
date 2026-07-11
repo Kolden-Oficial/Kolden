@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/templates/claude-md-fullstack|claude-md-fullstack]]"
+  - "[[Dedalo/templates/claude-md-library|claude-md-library]]"
+  - "[[Dedalo/templates/claude-md-microservices|claude-md-microservices]]"
+  - "[[Dedalo/templates/claude-md-monorepo|claude-md-monorepo]]"
+---
+
 # CLAUDE.md — Projeto Mobile (React Native)
 
 ## Visão Geral do Projeto

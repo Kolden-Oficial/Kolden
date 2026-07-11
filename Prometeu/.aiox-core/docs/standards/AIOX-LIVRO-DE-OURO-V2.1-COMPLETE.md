@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/docs/standards/_indice|_indice]]"
+---
+
 # AIOX Framework - Livro de Ouro v4.2 (Complete)
 
 ## O Sistema Operacional Definitivo para Orquestração de Agentes IA

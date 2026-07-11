@@ -9,6 +9,9 @@ description: >-
 domain: ciberseguranca
 subdomain: grc-compliance
 tags: [grc, iso27001, isms, nist-csf, nist-800-30, nist-800-171, cmmc, sprs, lgpd, gdpr, risco]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # GRC e Conformidade de Segurança

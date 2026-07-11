@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # Catálogo de Habilidades — Caos
 
 Índice de todas as habilidades disponíveis nesta sessão. Atualizar sempre que uma

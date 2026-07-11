@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/README|README]]"
+---
+
 # PRD de IA — Squad Ariadne (Execução de SEO & CRO de Página)
 
 > **Status:** criado-pelo-ritual · **Versão:** 1.0.0 · **Aprovado:** 2026-06-25

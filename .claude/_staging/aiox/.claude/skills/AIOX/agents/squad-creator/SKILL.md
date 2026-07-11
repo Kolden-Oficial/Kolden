@@ -3,6 +3,9 @@ name: aiox-squad-creator
 description: "Activate Craft (squad-creator) for Squad Creator. Use to create, validate, publish and manage squads"
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: generated -->

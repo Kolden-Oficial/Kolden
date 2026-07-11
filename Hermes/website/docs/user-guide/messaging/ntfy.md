@@ -1,3 +1,11 @@
+---
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
+---
+
 # ntfy
 
 [ntfy](https://ntfy.sh/) is a simple HTTP-based pub-sub notification service. It works with the free public server at `ntfy.sh` or any self-hosted instance, and supports any client that can make HTTP requests — phones, browsers, scripts, watches.

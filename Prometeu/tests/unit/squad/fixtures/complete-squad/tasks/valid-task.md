@@ -12,6 +12,9 @@ Checklist:
   - [ ] Validate input parameters
   - [ ] Execute main logic
   - [ ] Return result
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # *test-task

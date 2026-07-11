@@ -1,6 +1,9 @@
 ---
 name: consulta-ao-registro
 description: Consulta o registro de entidades antes de criar qualquer agente, squad, skill, hook ou subagent, aplicando REUSE > ADAPT > CREATE. Use na Fase 0 do Ritual, antes do diagnóstico, e sempre que for criar uma entidade nova para evitar duplicação.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Consulta ao Registro (Fase 0)

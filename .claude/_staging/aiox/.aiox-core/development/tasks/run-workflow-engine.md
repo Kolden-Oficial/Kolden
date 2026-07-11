@@ -6,6 +6,11 @@
 
 For guided automation (persona-switching), use `run-workflow.md` directly.
 
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 ## Task Definition (AIOX Task Format V1.0)

@@ -2,6 +2,9 @@
 sidebar_position: 7
 title: "电子邮件"
 description: "通过 IMAP/SMTP 将 Hermes Agent 设置为电子邮件助手"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 电子邮件设置

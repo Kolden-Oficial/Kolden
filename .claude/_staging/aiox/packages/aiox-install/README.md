@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/packages/aiox-install/CHANGELOG|CHANGELOG]]"
+---
+
 # @aiox-squads/aiox-install
 
 NPX installer for AIOX - AI-Orchestrated System for Full Stack Development.

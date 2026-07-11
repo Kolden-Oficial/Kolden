@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task: Aplicar Migration (com snapshot + advisory lock)
 
 **Propósito**: Aplicar uma migration com segurança, com snapshots pré/pós e lock exclusivo

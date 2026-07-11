@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # analyze-agent
 
 ACTIVATION-NOTICE: Text analysis agent with custom tool integration.

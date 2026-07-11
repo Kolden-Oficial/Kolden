@@ -1,5 +1,10 @@
 ---
 paths: **/*
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/rules/_indice|_indice]]"
 ---
 
 # Regras de Uso de Servidores MCP - Arquitetura AIOX

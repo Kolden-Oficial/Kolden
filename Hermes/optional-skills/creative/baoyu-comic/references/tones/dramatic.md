@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/tones/_indice|_indice]]"
+---
+
 # dramatic
 
 戏剧基调 - High contrast, intense, powerful moments

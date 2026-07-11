@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/tasks/_indice|_indice]]"
+---
+
 # Tarefa: Criar Definição de Subagente Personalizado
 
 **Task ID:** create-agent-definition

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # Integracao AIOX com Codex CLI (Estado Atual)
 
 Este documento descreve o estado operacional atual da integracao AIOX + Codex CLI no AIOX `4.2.11`.

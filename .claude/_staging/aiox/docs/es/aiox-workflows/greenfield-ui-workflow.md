@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/aiox-workflows/README|README]]"
+---
+
 # Greenfield UI Workflow
 
 > [PT](../../aiox-workflows/greenfield-ui-workflow.md) | [EN](../../en/aiox-workflows/greenfield-ui-workflow.md) | **ES**

@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: "Nous Portal"
 description: "一个订阅，300+ 前沿模型，Tool Gateway，以及 Nous Chat —— 运行 Hermes Agent 的推荐方式"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Nous Portal

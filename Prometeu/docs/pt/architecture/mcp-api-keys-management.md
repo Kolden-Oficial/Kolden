@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/architecture/_indice|_indice]]"
+---
+
 # Gerenciamento de Chaves de API MCP
 
 > 🌐 [EN](../../architecture/mcp-api-keys-management.md) | **PT** | [ES](../../es/architecture/mcp-api-keys-management.md)

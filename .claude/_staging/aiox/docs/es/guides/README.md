@@ -1,3 +1,34 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/guides/ade-guide|ade-guide]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/agent-selection-guide|agent-selection-guide]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/api-reference|api-reference]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/build-recovery-guide|build-recovery-guide]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/contextual-greeting-system-guide|contextual-greeting-system-guide]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/contributing-squads|contributing-squads]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/development-setup|development-setup]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/ide-sync-guide|ide-sync-guide]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/installation-troubleshooting|installation-troubleshooting]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/llm-routing|llm-routing]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/mcp-global-setup|mcp-global-setup]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/permission-modes|permission-modes]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/project-status-feature|project-status-feature]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/quality-dashboard|quality-dashboard]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/quality-gates|quality-gates]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/security-hardening|security-hardening]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/service-discovery|service-discovery]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/squad-migration|squad-migration]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/squads-guide|squads-guide]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/squads-overview|squads-overview]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/template-engine-v2|template-engine-v2]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/testing-guide|testing-guide]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/user-guide|user-guide]]"
+  - "[[.claude/_staging/aiox/docs/es/guides/workflows-guide|workflows-guide]]"
+---
+
 <!--
   Traducción: ES
   Original: /docs/en/guides/README.md

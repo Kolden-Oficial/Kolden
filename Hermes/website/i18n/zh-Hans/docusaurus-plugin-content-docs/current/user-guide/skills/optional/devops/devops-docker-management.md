@@ -2,6 +2,9 @@
 title: "Docker 管理"
 sidebar_label: "Docker 管理"
 description: "管理 Docker 容器、镜像、卷、网络和 Compose 栈——生命周期操作、调试、清理及 Dockerfile 优化"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

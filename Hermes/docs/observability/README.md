@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Hermes Observer Hooks
 
 Hermes observer hooks are the read-only telemetry contract for plugins that

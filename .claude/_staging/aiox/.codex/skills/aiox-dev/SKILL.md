@@ -1,6 +1,9 @@
 ---
 name: aiox-dev
 description: Full Stack Developer (Dex). Use for code implementation, debugging, refactoring, and development best practices
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # AIOX Full Stack Developer Activator

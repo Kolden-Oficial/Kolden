@@ -1,6 +1,9 @@
 ---
 name: "aiox-dev"
 description: "Activate the AIOX Full Stack Developer agent (Dex). Use for code implementation, debugging, refactoring, and development best practices Trigger when user asks to dev, or says 'activate dev', 'switch to dev', '@dev'."
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # 💻 @dev — Dex (Builder) | Full Stack Developer

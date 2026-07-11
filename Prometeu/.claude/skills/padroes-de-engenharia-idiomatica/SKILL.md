@@ -4,6 +4,9 @@ description: Use ao escrever ou revisar código de implementação e você quer 
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Padrões de Engenharia Idiomática

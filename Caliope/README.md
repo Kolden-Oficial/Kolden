@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/_origem|_origem]]"
+---
+
 # Caliope — Squad de Copywriting
 
 Caliope é o squad de copywriting da Kolden — 33 agentes que cobrem todo o espectro: títulos, cartas de vendas, VSLs, sequências de e-mail, funis, ofertas, anúncios pagos, copy de lançamento, copy de marca e a nova **camada de persuasão & psicologia** (Tier 1E). O Copy Chief (Cyrus) tria cada demanda, identifica o nível de consciência de mercado, designa o(s) especialista(s) primário(s) e secundário(s), **atribui um revisor de psicologia** e aplica um **gate de qualidade ponderado de 8 pontos** antes da entrega.

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # IDE Sync Guide
 
 Synchronize AIOX agents, tasks, workflows, and checklists across multiple IDE configurations.

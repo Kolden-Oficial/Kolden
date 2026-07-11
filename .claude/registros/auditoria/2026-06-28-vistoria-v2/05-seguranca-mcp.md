@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 05 — Segurança de MCPs (Égide)
 
 > Passo 5 do protocolo. Verificação dirigida a agentes/squads que declaram uso de MCPs ou são responsáveis pela auditoria de MCP.

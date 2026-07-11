@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+---
+
 # Checklist de Qualidade de Entregáveis de Branding
 
 **ID do Checklist:** BRAND-CL-001

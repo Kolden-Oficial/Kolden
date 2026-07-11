@@ -2,6 +2,9 @@
 title: "Humanizer — 人性化文本：去除 AI 腔调，注入真实声音"
 sidebar_label: "Humanizer"
 description: "人性化文本：去除 AI 腔调，注入真实声音"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -2,6 +2,9 @@
 title: "Openhue — Control Philips Hue lights, scenes, rooms via OpenHue CLI"
 sidebar_label: "Openhue"
 description: "Control Philips Hue lights, scenes, rooms via OpenHue CLI"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/fetching/choosing|choosing]]"
+  - "[[Argos/motor/scrapling/docs/fetching/static|static]]"
+  - "[[Argos/motor/scrapling/docs/fetching/stealthy|stealthy]]"
+---
+
 # Fetching dynamic websites
 
 Here, we will discuss the `DynamicFetcher` class (formerly `PlayWrightFetcher`). This class provides flexible browser automation with multiple configuration options and little under-the-hood stealth improvements.

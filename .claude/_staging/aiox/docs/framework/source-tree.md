@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/framework/README|README]]"
+---
+
 # AIOX Source Tree Structure
 
 > 🌐 **EN** | [PT](../pt/framework/source-tree.md) | [ES](../es/framework/source-tree.md)

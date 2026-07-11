@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

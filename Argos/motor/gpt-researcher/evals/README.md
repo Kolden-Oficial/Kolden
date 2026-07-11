@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # GPT-Researcher Evaluations
 
 This directory contains evaluation tools and frameworks for assessing the performance of GPT-Researcher across different research tasks.

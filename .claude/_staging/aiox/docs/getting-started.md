@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/README|README]]"
+---
+
 # Getting Started with Synkra AIOX
 
 > **EN** | [PT](./pt/getting-started.md) | [ES](./es/getting-started.md)

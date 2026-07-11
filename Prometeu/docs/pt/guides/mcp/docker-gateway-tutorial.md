@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/guides/mcp/desktop-commander|desktop-commander]]"
+---
+
 # Tutorial Docker Gateway MCP
 
 > **PT** | [EN](../../../guides/mcp/docker-gateway-tutorial.md)

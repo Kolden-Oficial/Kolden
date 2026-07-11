@@ -1,3 +1,15 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/data-ingestion|data-ingestion]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/filtering-by-domain|filtering-by-domain]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/local-docs|local-docs]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/tailored-research|tailored-research]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/vector-stores|vector-stores]]"
+---
+
 # Azure Storage
 
 If you want to use Azure Blob Storage as the source for your GPT Researcher report context, follow these steps:

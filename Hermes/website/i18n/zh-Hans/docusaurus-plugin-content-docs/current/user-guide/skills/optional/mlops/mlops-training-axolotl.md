@@ -2,6 +2,9 @@
 title: "Axolotl — Axolotl：基于 YAML 的 LLM 微调（LoRA、DPO、GRPO）"
 sidebar_label: "Axolotl"
 description: "Axolotl：基于 YAML 的 LLM 微调（LoRA、DPO、GRPO）"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

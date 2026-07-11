@@ -4,6 +4,9 @@ description: Use quando o objetivo for lançar um MVP funcional em 3 dias usando
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # MVP em 3 Dias — Next.js + Supabase + Vercel

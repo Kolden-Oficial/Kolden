@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
+---
+
 # Perfil — <Nome do Agente>
 
 Template do `perfil.md`. Resume, em formato escaneável, quem é o agente: persona,

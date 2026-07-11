@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/tasks/_indice|_indice]]"
+---
+
 # Tarefa: Integrar o Claude Code em um Projeto Existente
 
 **Task ID:** integrate-project

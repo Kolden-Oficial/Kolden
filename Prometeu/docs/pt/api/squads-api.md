@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 <!-- Tradução: PT-BR | Original: /docs/en/api/squads-api.md | Sincronização: 2026-01-26 -->
 
 # Referência da API de Squads

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+---
+
 # Desenho de lift test — template
 
 ## 1. Hipótese

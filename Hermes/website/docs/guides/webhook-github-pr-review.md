@@ -3,6 +3,11 @@ sidebar_position: 11
 sidebar_label: "GitHub PR Reviews via Webhook"
 title: "Automated GitHub PR Comments with Webhooks"
 description: "Connect Hermes to GitHub so it automatically fetches PR diffs, reviews code changes, and posts comments — triggered by webhooks with no manual prompting"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Automated GitHub PR Comments with Webhooks

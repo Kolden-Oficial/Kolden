@@ -2,6 +2,9 @@
 title: "Segment Anything Model — SAM：通过点、框、掩码实现零样本图像分割"
 sidebar_label: "Segment Anything Model"
 description: "SAM：通过点、框、掩码实现零样本图像分割"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

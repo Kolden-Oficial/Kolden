@@ -2,6 +2,11 @@
 sidebar_position: 1
 title: "Tools & Toolsets"
 description: "Overview of Hermes Agent's tools — what's available, how toolsets work, and terminal backends"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Tools & Toolsets

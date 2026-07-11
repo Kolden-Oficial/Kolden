@@ -1,3 +1,16 @@
+---
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/_origem|_origem]]"
+  - "[[Olimpo/CLAUDE|CLAUDE]]"
+  - "[[Olimpo/constitution|constitution]]"
+  - "[[Olimpo/ferramentas|ferramentas]]"
+  - "[[Olimpo/prd-de-ia|prd-de-ia]]"
+  - "[[Olimpo/roteiro-de-teste|roteiro-de-teste]]"
+---
+
 # Olimpo — Squad C-Level (Executivos)
 
 > **Este README é vendor xquads-squads (MIT).** Identidade canônica Kolden vive em `CLAUDE.md` + `prd-de-ia.md` + `constitution.md` desde a Onda 4 do METODO Kolden (2026-07-09). Ler CLAUDE.md antes deste README para contexto canônico.

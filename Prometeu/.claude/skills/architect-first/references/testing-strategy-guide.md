@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/skills/architect-first/references/architecture-checklist|architecture-checklist]]"
+  - "[[Prometeu/.claude/skills/architect-first/references/pre-implementation-checklist|pre-implementation-checklist]]"
+  - "[[Prometeu/.claude/skills/architect-first/references/stop-rules-guide|stop-rules-guide]]"
+---
+
 # Guia de Estratégia de Testes
 
 Guia para implementar a filosofia do "Escape Hatch de Qualidade": testes como rede de segurança para imperfeição temporária.

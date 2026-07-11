@@ -2,6 +2,11 @@
 sidebar_position: 4
 title: "Toolsets Reference"
 description: "Reference for Hermes core, composite, platform, and dynamic toolsets"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/reference/_indice|_indice]]"
 ---
 
 # Toolsets Reference

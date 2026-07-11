@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/tasks/_indice|_indice]]"
+---
+
 # Tarefa: Otimizar o Workflow do Claude Code
 
 **Task ID:** CCM-PI-003

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # FastMCP CLI Reference
 
 Use this file when the task needs exact FastMCP CLI workflows rather than the higher-level guidance in `SKILL.md`.

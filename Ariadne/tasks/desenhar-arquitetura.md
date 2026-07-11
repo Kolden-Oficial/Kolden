@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/tasks/_indice|_indice]]"
+---
+
 # Tarefa: Desenhar Arquitetura de Site
 
 **ID:** ARIADNE-003 · **Versão:** 1.0.0 · **Comando:** `*architecture` · **Agente:** arquiteto-de-site

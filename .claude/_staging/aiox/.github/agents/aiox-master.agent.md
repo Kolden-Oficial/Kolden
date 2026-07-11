@@ -2,6 +2,11 @@
 name: aiox-master
 description: 'Use when you need comprehensive expertise across all domains, framework component creation/modification, workflow orchestration, or running tasks that don''t require a specialized persona.'
 tools: ['read', 'edit', 'search', 'execute']
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.github/agents/_indice|_indice]]"
 ---
 
 # 👑 Orion Agent (@aiox-master)

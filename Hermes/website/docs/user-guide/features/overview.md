@@ -2,6 +2,11 @@
 title: "Features Overview"
 sidebar_label: "Overview"
 sidebar_position: 1
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Features Overview

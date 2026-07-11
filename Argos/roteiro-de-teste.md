@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/README|README]]"
+---
+
 # Roteiro de Teste — Argos (Fase 7: Teste de Comportamento)
 
 Smoke tests derivados da jornada do PRD (§9) e dos modos de falha (§10). Cada teste tem um cenário

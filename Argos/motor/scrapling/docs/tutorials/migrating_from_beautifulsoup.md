@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/tutorials/replacing_ai|replacing_ai]]"
+---
+
 # Migrating from BeautifulSoup to Scrapling
 
 If you're already familiar with BeautifulSoup, you're in for a treat. Scrapling is much faster, provides the same parsing capabilities as BS, adds additional parsing capabilities not found in BS, and introduces powerful new features for fetching and handling modern web pages. This guide will help you quickly adapt your existing BeautifulSoup code to leverage Scrapling's capabilities.

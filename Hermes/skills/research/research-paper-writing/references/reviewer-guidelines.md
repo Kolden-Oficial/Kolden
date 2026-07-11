@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/research/research-paper-writing/references/_indice|_indice]]"
+---
+
 # Reviewer Guidelines & Evaluation Criteria
 
 This reference documents how reviewers evaluate papers at major ML/AI conferences, helping authors anticipate and address reviewer concerns.

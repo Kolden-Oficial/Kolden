@@ -10,6 +10,9 @@ description: >-
 domain: ciberseguranca
 subdomain: appsec-deteccao
 tags: [prompt-injection, scanner, compactacao, unicode-invisivel, sast, ingestao]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Scanner Anti-Injeção Resiliente à Compactação

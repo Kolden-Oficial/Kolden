@@ -2,6 +2,9 @@
 title: "Obsidian — Read, search, create, and edit notes in the Obsidian vault"
 sidebar_label: "Obsidian"
 description: "Read, search, create, and edit notes in the Obsidian vault"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

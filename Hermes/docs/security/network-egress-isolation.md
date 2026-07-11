@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Network Egress Isolation for Docker Deployments
 
 When running Hermes inside Docker, the default `network_mode: host` gives the

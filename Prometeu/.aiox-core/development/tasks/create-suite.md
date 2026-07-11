@@ -4,6 +4,11 @@ tools:
 # TODO: Create test-suite-checklist.md for validation (follow-up story needed)
 # checklists:
 #   - test-suite-checklist.md
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Task: Criar SuÃ­te de Componentes

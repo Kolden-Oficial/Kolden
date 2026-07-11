@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
+---
+
 # Êmporos — Squad de Execução Comercial (Vendas)
 
 > `status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)`

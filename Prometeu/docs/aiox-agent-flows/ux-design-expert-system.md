@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/aiox-agent-flows/README|README]]"
+---
+
 # Sistema UX-Design-Expert AIOX
 
 > **Versão:** 1.0.0

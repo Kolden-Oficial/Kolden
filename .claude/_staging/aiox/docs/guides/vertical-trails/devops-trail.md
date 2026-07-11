@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/vertical-trails/data-engineer-trail|data-engineer-trail]]"
+  - "[[.claude/_staging/aiox/docs/guides/vertical-trails/squad-creator-trail|squad-creator-trail]]"
+---
+
 # Trilha @devops: Do Problema ao Output Validado
 
 > **Story:** AIOX-DIFF-4.3.1

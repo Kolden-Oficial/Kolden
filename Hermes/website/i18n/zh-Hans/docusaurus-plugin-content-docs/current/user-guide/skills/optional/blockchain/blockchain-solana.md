@@ -2,6 +2,9 @@
 title: "Solana"
 sidebar_label: "Solana"
 description: "使用 USD 定价查询 Solana 区块链数据——钱包余额、带价值的代币投资组合、交易详情、NFT、巨鲸检测及实时网络状态..."
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

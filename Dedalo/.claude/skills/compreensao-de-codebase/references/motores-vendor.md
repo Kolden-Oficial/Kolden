@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+---
+
 # Motores vendor inerte + empacotamento
 
 Os motores de grafo são **ferramentas instaláveis inertes** — não foram reescritos nem são

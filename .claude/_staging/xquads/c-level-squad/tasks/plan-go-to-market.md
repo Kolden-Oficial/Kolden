@@ -25,6 +25,11 @@ Checklist:
   - "[ ] TAM/SAM/SOM defined with market timing"
   - "[ ] Positioning statement crafted with messaging hierarchy"
   - "[ ] Top 3 channels selected with strategy and budget"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/c-level-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Plan Go-to-Market

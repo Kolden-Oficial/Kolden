@@ -2,6 +2,9 @@
 title: "Canvas — Canvas LMS 集成 — 使用 API token 认证获取已注册课程和作业"
 sidebar_label: "Canvas"
 description: "Canvas LMS 集成 — 使用 API token 认证获取已注册课程和作业"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

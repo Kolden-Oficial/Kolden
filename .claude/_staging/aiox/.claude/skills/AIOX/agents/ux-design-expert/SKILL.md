@@ -3,6 +3,9 @@ name: aiox-ux-design-expert
 description: "Activate Uma (ux-design-expert) for UX/UI Designer & Design System Architect. Complete design workflow - user research, wireframes, design systems, token extraction, component building, and quality assurance"
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: generated -->

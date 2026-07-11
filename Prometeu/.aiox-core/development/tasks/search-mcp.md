@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task Buscar Catálogo de MCP
 
 > Buscar e descobrir servidores MCP disponíveis no catálogo do Docker MCP Toolkit.

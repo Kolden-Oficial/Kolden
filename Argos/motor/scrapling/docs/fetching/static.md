@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/fetching/choosing|choosing]]"
+  - "[[Argos/motor/scrapling/docs/fetching/dynamic|dynamic]]"
+  - "[[Argos/motor/scrapling/docs/fetching/stealthy|stealthy]]"
+---
+
 # HTTP requests
 
 The `Fetcher` class provides rapid and lightweight HTTP requests using the high-performance `curl_cffi` library with a lot of stealth capabilities.

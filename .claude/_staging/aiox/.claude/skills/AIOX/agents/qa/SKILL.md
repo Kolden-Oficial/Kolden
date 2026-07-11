@@ -3,6 +3,9 @@ name: aiox-qa
 description: "Activate Quinn (qa) for Test Architect & Quality Advisor. Use for comprehensive test architecture review, quality gate decisions, and code improvement. Provides thorough analysis including requirements traceability, risk assessment, and..."
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: generated -->

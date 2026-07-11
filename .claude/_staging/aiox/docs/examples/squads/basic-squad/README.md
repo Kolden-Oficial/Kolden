@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # Basic Squad Example
 
 A minimal squad demonstrating the essential structure required for AIOX squads.

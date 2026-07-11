@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.codex/agents/_indice|_indice]]"
+---
+
 # aiox-master
 
 <!--

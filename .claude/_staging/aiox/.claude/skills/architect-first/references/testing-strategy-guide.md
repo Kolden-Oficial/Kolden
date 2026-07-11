@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/skills/architect-first/references/architecture-checklist|architecture-checklist]]"
+  - "[[.claude/_staging/aiox/.claude/skills/architect-first/references/pre-implementation-checklist|pre-implementation-checklist]]"
+  - "[[.claude/_staging/aiox/.claude/skills/architect-first/references/stop-rules-guide|stop-rules-guide]]"
+---
+
 # Testing Strategy Guide
 
 Guide for implementing the "Quality Escape Hatch" philosophy: tests as safety net for temporary imperfection.

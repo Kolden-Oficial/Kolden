@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
+---
+
 # Guia Infisical — gestão de segredos do Kolden
 
 Como estruturar e referenciar segredos no Infisical para qualquer agente nascido no Kolden.

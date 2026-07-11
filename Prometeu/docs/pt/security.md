@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/README|README]]"
+---
+
 # Política de Segurança
 
 > 🇺🇸 [English Version](SECURITY.md)

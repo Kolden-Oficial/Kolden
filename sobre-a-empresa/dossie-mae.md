@@ -7,6 +7,11 @@ status: vigente
 atualizado-em: 2026-07-06
 relacionados: [sobre-a-empresa-leia-me, kolden-leia-me, indice]
 fonte: "Drive compartilhado Kolden (0AFk2wbfbKBIMUk9PVA) — absorção sem perda 2026-06-25; reorganização estrutural 2026-07-06"
+tipo: nota
+area: sobre-a-empresa
+up: "[[sobre-a-empresa/_MOC-sobre-a-empresa]]"
+relacionado:
+  - "[[sobre-a-empresa/leia-me|leia-me]]"
 ---
 
 # Dossiê-Mãe — Cérebro da Kolden

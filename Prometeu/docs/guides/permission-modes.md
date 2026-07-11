@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # Permission Modes Guide
 
 > Control how much autonomy AIOX agents have over your system.

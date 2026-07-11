@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # AIOX Agent Execution Traces - Index
 
 > **Story:** AIOX-TRACE-001 | **Traced from source code, not documentation.**

@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/framework/coding-standards|coding-standards]]"
+  - "[[.claude/_staging/aiox/docs/zh/framework/source-tree|source-tree]]"
+  - "[[.claude/_staging/aiox/docs/zh/framework/tech-stack|tech-stack]]"
+---
+
 <!-- 翻译：zh-CN 原文：/docs/framework/README.md 最后同步：2026-02-22 -->
 
 # AIOX 框架文档

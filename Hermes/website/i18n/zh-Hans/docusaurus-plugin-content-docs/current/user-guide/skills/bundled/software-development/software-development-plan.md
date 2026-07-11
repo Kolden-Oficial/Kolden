@@ -2,6 +2,9 @@
 title: "Plan — Plan 模式：将 Markdown 计划写入"
 sidebar_label: "Plan"
 description: "Plan 模式：将 Markdown 计划写入"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

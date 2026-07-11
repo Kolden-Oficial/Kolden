@@ -2,6 +2,11 @@
 sidebar_position: 1
 title: "Run Hermes Agent with Nous Portal"
 description: "Start-to-finish walkthrough: subscribe, set up, switch models, enable gateway tools, and verify routing"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Run Hermes Agent with Nous Portal

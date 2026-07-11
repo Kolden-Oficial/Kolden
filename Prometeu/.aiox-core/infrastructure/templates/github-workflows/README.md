@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # GitHub Workflows Templates
 
 Templates for GitHub Actions workflows, used by the `*setup-github` task to configure DevOps infrastructure for user projects.

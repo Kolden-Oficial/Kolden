@@ -9,6 +9,9 @@ description: >
   dona: arquiteto-de-processos. Gatilhos: "documentar processo", "escreve o SOP", "monta o runbook",
   "padronizar", "como a gente faz isso", "mapear o fluxo". Sem a fonte do fluxo real, é rascunho
   rotulado — nunca SOP do ideal imaginado. Candidatos a automação → handoff ao analista-de-automacao.
+tipo: skill
+area: Ananke
+up: "[[Ananke/_MOC-ananke]]"
 ---
 
 # Desenho de Processos — SOP e Runbook

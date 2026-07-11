@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Issue Taxonomy
 
 Use this taxonomy to classify issues found during dogfood QA testing.

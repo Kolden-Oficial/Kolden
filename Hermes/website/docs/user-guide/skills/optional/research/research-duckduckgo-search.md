@@ -2,6 +2,11 @@
 title: "Duckduckgo Search — Free web search via DuckDuckGo — text, news, images, videos"
 sidebar_label: "Duckduckgo Search"
 description: "Free web search via DuckDuckGo — text, news, images, videos"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/research/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

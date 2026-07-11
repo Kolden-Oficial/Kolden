@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/README|README]]"
+---
+
 # How to release new versions of Apify SDK
 Release of new versions is managed by GitHub Actions. On pushes to the `master` branch, prerelease versions
 are automatically produced. Latest releases are triggered manually through the GitHub release tool.

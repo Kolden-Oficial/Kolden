@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/README|README]]"
+---
+
 <!-- 翻译：zh-CN 原文：/docs/agent-reference-guide.md 最后同步：2026-02-22 -->
 
 # HybridOps PV 代理参考指南

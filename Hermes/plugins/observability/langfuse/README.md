@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Langfuse Observability Plugin
 
 This plugin ships bundled with Hermes but is **opt-in** — it only loads when

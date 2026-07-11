@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/commands/synapse/tasks/_indice|_indice]]"
+---
+
 # Sugerir Domain
 
 Analisa uma rule e sugere o domain SYNAPSE ideal para ela.

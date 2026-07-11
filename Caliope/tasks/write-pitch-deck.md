@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Estratégia de controle de frame definida para cada seção"
   - "[ ] Arco de intriga + tensão mantido do início ao fim"
   - "[ ] Camada Psicológica aplicada (princípios de Cialdini/Warren marcados)"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Task: Escrever Copy de Pitch Deck

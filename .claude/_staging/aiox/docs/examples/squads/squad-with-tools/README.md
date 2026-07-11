@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # Squad with Custom Tools Example
 
 Demonstrates how to integrate custom JavaScript tools into a squad.

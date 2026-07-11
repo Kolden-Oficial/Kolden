@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Coding-Agent, OpenHands, Model-Agnostic, LiteLLM]
     related_skills: [claude-code, codex, opencode, hermes-agent]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # OpenHands CLI

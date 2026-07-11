@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # claude-code-mastery → movido para Dedalo
 
 Este squad é **idêntico** (v1.0.0) ao squad de Domínio do Claude Code que existe

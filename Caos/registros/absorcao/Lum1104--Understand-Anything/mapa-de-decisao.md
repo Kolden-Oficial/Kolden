@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/Lum1104--Understand-Anything/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/Lum1104--Understand-Anything/seguranca|seguranca]]"
+---
+
 # Mapa de decisão (F4) — Lum1104--Understand-Anything
 
 Comparado contra `Caos/dados/registro-de-entidades.yaml` e os squads existentes. **Dedalo** é o squad de domínio do Claude Code, mas seu propósito é *construir* artefatos (hooks, MCP, skills, subagents, config) — **não** *compreender/visualizar uma codebase arbitrária*. Logo, a capacidade central (entender qualquer codebase → grafo de conhecimento interativo) **não tem equivalente** na Kolden. O repo irmão `safishamsi--graphify` (grafo de conhecimento) **sobrepõe parcialmente** apenas o eixo wiki/knowledge (G7, G13, G24) — reconciliar lá.

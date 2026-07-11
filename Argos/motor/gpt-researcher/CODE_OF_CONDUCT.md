@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/README|README]]"
+---
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge

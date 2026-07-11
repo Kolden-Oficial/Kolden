@@ -10,6 +10,9 @@ prerequisites:
 metadata:
   hermes:
     tags: [Canvas, LMS, Education, Courses, Assignments]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Canvas LMS — Course & Assignment Access

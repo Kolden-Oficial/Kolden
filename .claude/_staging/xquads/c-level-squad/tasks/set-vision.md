@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Mission and vision statements crafted"
   - "[ ] 3-5 strategic pillars set with OKRs"
   - "[ ] 3-year roadmap created with annual themes"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/c-level-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Set Vision

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/plugins/google_meet/SKILL|SKILL]]"
+---
+
 # google_meet plugin
 
 Let the hermes agent join a Google Meet call, transcribe it, optionally speak

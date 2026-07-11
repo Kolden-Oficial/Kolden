@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/garrytan--gstack/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/garrytan--gstack/seguranca|seguranca]]"
+---
+
 # Mapa de decisão — garrytan--gstack
 
 - **slug:** garrytan--gstack · **sha:** 11de390… · **rota:** A

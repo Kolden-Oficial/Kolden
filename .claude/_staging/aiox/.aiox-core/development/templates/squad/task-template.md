@@ -22,6 +22,13 @@ Checklist:
   - "[ ] Step 1: Describe first step"
   - "[ ] Step 2: Describe second step"
   - "[ ] Step 3: Describe third step"
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/templates/squad/agent-template|agent-template]]"
+  - "[[.claude/_staging/aiox/.aiox-core/development/templates/squad/checklist-template|checklist-template]]"
+  - "[[.claude/_staging/aiox/.aiox-core/development/templates/squad/template-template|template-template]]"
 ---
 
 # {{COMPONENTNAME}}

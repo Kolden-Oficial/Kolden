@@ -2,6 +2,9 @@
 title: "Himalaya — Himalaya CLI: IMAP/SMTP email from terminal"
 sidebar_label: "Himalaya"
 description: "Himalaya CLI: IMAP/SMTP email from terminal"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

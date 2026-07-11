@@ -2,6 +2,9 @@
 title: "Excalidraw — 手绘风格 Excalidraw JSON 图表（架构图、流程图、时序图）"
 sidebar_label: "Excalidraw"
 description: "手绘风格 Excalidraw JSON 图表（架构图、流程图、时序图）"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # AIOX Service Discovery Guide
 
 > **EN** | [PT](../pt/guides/service-discovery.md) | [ES](../es/guides/service-discovery.md)

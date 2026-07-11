@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Named Palettes
 
 28 hardware-accurate and artistic palettes available to `pixel_art()`.

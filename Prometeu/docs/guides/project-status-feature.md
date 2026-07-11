@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # Project Status Feature - User Guide
 
 > **EN** | [PT](../pt/guides/project-status-feature.md) | [ES](../es/guides/project-status-feature.md)

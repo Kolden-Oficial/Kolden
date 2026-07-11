@@ -2,6 +2,9 @@
 title: "Hermes Agent Skill 编写——在仓库中编写 SKILL"
 sidebar_label: "Hermes Agent Skill 编写"
 description: "在仓库中编写 SKILL.md"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

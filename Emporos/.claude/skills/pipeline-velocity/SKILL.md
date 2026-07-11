@@ -8,6 +8,9 @@ description: >
   qual alavanca quebrou (não mudar todas ao mesmo tempo). Gatilhos: "pipeline velocity",
   "velocidade do pipeline", "quanto pipeline por dia", "ciclo de vendas caiu/subiu", "onde está o
   gargalo", "conversão por estágio", "funil de vendas". Dono: analista-de-pipeline.
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # Pipeline Velocity

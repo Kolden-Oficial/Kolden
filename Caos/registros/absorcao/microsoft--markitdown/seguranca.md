@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/microsoft--markitdown/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/microsoft--markitdown/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática (F2) — microsoft--markitdown
 
 - **slug:** microsoft--markitdown

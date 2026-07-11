@@ -5,6 +5,9 @@ tags: [community]
 description: 'Learn how to scrape google maps data using Crawlee for Python'
 image: ./img/google-maps.webp
 authors: [SatyamT]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 Millions of people use Google Maps daily, leaving behind a goldmine of data just waiting to be analyzed. In this guide, I'll show you how to build a reliable scraper using Crawlee and Python to extract locations, ratings, and reviews from Google Maps, all while handling its dynamic content challenges.

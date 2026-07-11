@@ -22,6 +22,11 @@ Checklist:
   - "[ ] Extrair para ./squads/{name}/"
   - "[ ] Validar squad baixado"
   - "[ ] Exibir próximos passos"
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # *download-squad

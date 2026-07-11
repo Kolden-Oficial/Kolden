@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os itens do checklist avaliados e pontuados"
   - "[ ] Veredito proferido (APROVAR/REVISAR/REJEITAR)"
   - "[ ] Autorização, escopo e vazamento de dados sensíveis verificados"
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+relacionado:
+  - "[[Egide/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Revisar Saída de Segurança

@@ -1,6 +1,9 @@
 ---
 name: gerador-de-politica-de-privacidade
 description: Use quando o pedido for gerar, revisar ou atualizar uma política de privacidade multi-jurisdicional (GDPR/LGPD/CCPA-CPRA) ou termos de uso relacionados. Cobre identificação do controlador, finalidades declaradas, bases legais das 10 do Art. 7 LGPD, compartilhamento, retenção, direitos do titular, canal do DPO e matriz de aplicação por jurisdição. Gatilhos "política de privacidade", "privacy policy", "termos de uso relativos a dado", "cookie policy", "revisar política existente", "adaptar política para CCPA", "matriz de jurisdições". NÃO substitui parecer de advogado — é gerador operacional. Dono operacional exclusivo desta habilidade — `analista-de-compliance-regulatorio` (Themis).
+tipo: skill
+area: Themis
+up: "[[Themis/_MOC-themis]]"
 ---
 
 # Gerador de Política de Privacidade Multi-Jurisdicional

@@ -2,6 +2,9 @@
 title: "Maps — 通过 OpenStreetMap/OSRM 进行地理编码、POI、路线、时区查询"
 sidebar_label: "Maps"
 description: "通过 OpenStreetMap/OSRM 进行地理编码、POI、路线、时区查询"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/grpo-training|grpo-training]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/online-rl|online-rl]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/reward-modeling|reward-modeling]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/sft-training|sft-training]]"
+---
+
 # DPO Variants
 
 Complete guide to Direct Preference Optimization loss variants in TRL.

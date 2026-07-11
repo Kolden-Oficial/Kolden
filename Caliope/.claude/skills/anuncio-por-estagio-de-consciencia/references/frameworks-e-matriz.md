@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+---
+
 # Frameworks de copy, matriz de funil e gatilhos
 
 Reescrito em PT-BR a partir de alirezarezvani/claude-skills (MIT, sem cópia literal).

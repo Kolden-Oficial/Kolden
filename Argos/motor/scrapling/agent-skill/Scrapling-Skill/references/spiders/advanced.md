@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/spiders/_indice|_indice]]"
+---
+
 # Advanced usages
 
 ## Concurrency Control

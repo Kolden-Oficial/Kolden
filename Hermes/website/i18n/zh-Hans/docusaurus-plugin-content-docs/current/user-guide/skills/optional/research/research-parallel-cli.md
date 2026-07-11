@@ -2,6 +2,9 @@
 title: "Parallel Cli"
 sidebar_label: "Parallel Cli"
 description: "可选的供应商技能，用于 Parallel CLI — 面向 agent 的网络搜索、提取、深度研究、数据丰富、FindAll 和监控"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

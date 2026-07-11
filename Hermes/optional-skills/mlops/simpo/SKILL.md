@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Post-Training, SimPO, Preference Optimization, Alignment, DPO Alternative, Reference-Free, LLM Alignment, Efficient Training]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # SimPO - Simple Preference Optimization

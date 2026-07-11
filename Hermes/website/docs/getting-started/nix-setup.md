@@ -2,6 +2,15 @@
 sidebar_position: 3
 title: "Nix & NixOS Setup"
 description: "Install and deploy Hermes Agent with Nix — from quick `nix run` to fully declarative NixOS module with container mode"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/getting-started/installation|installation]]"
+  - "[[Hermes/website/docs/getting-started/learning-path|learning-path]]"
+  - "[[Hermes/website/docs/getting-started/quickstart|quickstart]]"
+  - "[[Hermes/website/docs/getting-started/termux|termux]]"
+  - "[[Hermes/website/docs/getting-started/updating|updating]]"
 ---
 
 # Nix & NixOS Setup

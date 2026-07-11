@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/spiders/_indice|_indice]]"
+---
+
 # Requests & Responses
 
 This page covers the `Request` object in detail: how to construct requests, pass data between callbacks, control priority and deduplication, and use `response.follow()` for link-following.

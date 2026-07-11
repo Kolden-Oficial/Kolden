@@ -10,6 +10,9 @@ description: >
   "minha página não indexa", "GPTBot/ClaudeBot", "headers de segurança",
   "parasite SEO". Aprofunda o auditor-tecnico-seo. NÃO mede CWV de campo (isso é
   core-web-vitals-e-performance) nem renderiza SPA (isso é render-js-e-spa).
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # SEO técnico profundo (9 categorias + crawl budget + sitemap + riscos)

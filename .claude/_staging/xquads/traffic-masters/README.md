@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Traffic Masters
 
 16 agents mastering paid traffic across all major platforms.

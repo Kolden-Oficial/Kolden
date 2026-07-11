@@ -9,6 +9,9 @@ metadata:
     tags: [api, rest, graphql, http, debugging, testing, curl, integration]
     category: software-development
     related_skills: [systematic-debugging, test-driven-development]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # API Testing & Debugging

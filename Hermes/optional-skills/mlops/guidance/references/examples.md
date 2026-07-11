@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/guidance/references/backends|backends]]"
+  - "[[Hermes/optional-skills/mlops/guidance/references/constraints|constraints]]"
+---
+
 # Production-Ready Examples
 
 Real-world examples of using Guidance for structured generation, agents, and workflows.

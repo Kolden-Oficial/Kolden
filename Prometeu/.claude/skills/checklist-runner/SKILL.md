@@ -6,6 +6,9 @@ description: |
   Suporta os modos YOLO (autônomo) e interativo com veredictos de pass/fail/partial.
 user-invocable: true
 argument-hint: "[checklist-name] [--mode yolo|interactive]"
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Checklist Runner

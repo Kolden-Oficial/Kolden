@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-workflows/README|README]]"
+---
+
 # Workflow Brownfield de UI
 
 > **EN** | [PT](../../aiox-workflows/brownfield-ui-workflow.md) | [ES](../../es/aiox-workflows/brownfield-ui-workflow.md)

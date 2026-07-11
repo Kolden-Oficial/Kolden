@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task: Load CSV Data Safely
 
 **Propósito**: Importar dados CSV usando PostgreSQL COPY com tabela de staging e validação

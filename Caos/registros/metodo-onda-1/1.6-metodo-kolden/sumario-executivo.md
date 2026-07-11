@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/metodo-onda-1/1.6-metodo-kolden/diff-agents-md|diff-agents-md]]"
+  - "[[Caos/registros/metodo-onda-1/1.6-metodo-kolden/emendas-liceu|emendas-liceu]]"
+  - "[[Caos/registros/metodo-onda-1/1.6-metodo-kolden/proposta-dike-instanciacao|proposta-dike-instanciacao]]"
+  - "[[Caos/registros/metodo-onda-1/1.6-metodo-kolden/relatorio-de-consolidacao|relatorio-de-consolidacao]]"
+---
+
 # Sumário Executivo — Sub-onda 1.6 (METODO-KOLDEN.md v1.0 + skills + propostas Dike/AGENTS/emendas)
 
 > **Contrato:** `m-20260706-metodo-kolden` · Sub-onda 1.6 — **ÚLTIMA sub-onda da Onda 1**

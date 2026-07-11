@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/.claude/skills/de-slop/references/calibracao-de-voz|calibracao-de-voz]]"
+  - "[[Caliope/.claude/skills/de-slop/references/checklist-e-scorecard|checklist-e-scorecard]]"
+  - "[[Caliope/.claude/skills/de-slop/references/guia-falso-positivo|guia-falso-positivo]]"
+---
+
 # Padrões anti-IA (taxonomia adaptada ao PT-BR)
 
 Catálogo dos sinais que denunciam texto gerado por IA, recalibrado para o português do

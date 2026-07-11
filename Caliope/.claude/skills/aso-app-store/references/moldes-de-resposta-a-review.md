@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/.claude/skills/aso-app-store/references/scorecard-de-ficha|scorecard-de-ficha]]"
+---
+
 # Moldes de resposta a reviews — App Store / Play Store
 
 Regra: **cite o problema concreto do review na primeira linha**. Nunca cole a mesma resposta.

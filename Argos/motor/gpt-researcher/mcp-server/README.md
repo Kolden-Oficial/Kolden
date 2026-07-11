@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # 🔍 GPT Researcher MCP Server
 
 > **Note:** This content has been moved to a dedicated repository: [https://github.com/assafelovic/gptr-mcp](https://github.com/assafelovic/gptr-mcp)

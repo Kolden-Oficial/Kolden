@@ -2,6 +2,11 @@
 sidebar_position: 8
 title: "Security"
 description: "Security model, dangerous command approval, user authorization, container isolation, and production deployment best practices"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/_indice|_indice]]"
 ---
 
 # Security

@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.github/PULL_REQUEST_TEMPLATE/agent_contribution|agent_contribution]]"
+  - "[[Prometeu/.github/PULL_REQUEST_TEMPLATE/squad|squad]]"
+---
+
 ## Task Contribution
 
 <!-- Thank you for contributing a task to AIOX! Please fill out this template. -->

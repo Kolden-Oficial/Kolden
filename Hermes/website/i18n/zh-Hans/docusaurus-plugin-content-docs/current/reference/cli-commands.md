@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: "CLI 命令参考"
 description: "Hermes 终端命令及命令族的权威参考"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # CLI 命令参考

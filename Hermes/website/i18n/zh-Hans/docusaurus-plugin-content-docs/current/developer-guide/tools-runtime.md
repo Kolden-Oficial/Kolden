@@ -2,6 +2,9 @@
 sidebar_position: 9
 title: "工具运行时"
 description: "工具注册表、toolset、调度及终端环境的运行时行为"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 工具运行时

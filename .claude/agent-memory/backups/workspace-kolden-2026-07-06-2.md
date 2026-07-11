@@ -1,6 +1,9 @@
 ---
 relacionado:
   - "[[.claude/agent-memory/workspace-kolden|workspace-kolden (atual)]]"
+tipo: nota
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
 ---
 
 # Memória do Agente workspace-kolden (operador-base da raiz C:\Kolden)

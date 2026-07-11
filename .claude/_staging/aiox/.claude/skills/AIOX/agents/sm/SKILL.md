@@ -3,6 +3,9 @@ name: aiox-sm
 description: "Activate River (sm) for Scrum Master. Use for user story creation from PRD, story validation and completeness checking, acceptance criteria definition, story refinement, sprint planning, backlog grooming, retrospectives, daily standup fa..."
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: generated -->

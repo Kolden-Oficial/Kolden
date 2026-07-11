@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-agent-flows/README|README]]"
+---
+
 # @sm (River) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/sm-system.md) | [ES](../../es/aiox-agent-flows/sm-system.md)

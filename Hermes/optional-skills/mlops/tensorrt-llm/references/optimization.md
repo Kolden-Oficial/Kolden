@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/tensorrt-llm/references/multi-gpu|multi-gpu]]"
+  - "[[Hermes/optional-skills/mlops/tensorrt-llm/references/serving|serving]]"
+---
+
 # TensorRT-LLM Optimization Guide
 
 Comprehensive guide to optimizing LLM inference with TensorRT-LLM.

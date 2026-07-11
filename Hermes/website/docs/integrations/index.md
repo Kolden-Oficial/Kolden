@@ -2,6 +2,12 @@
 title: "Integrations"
 sidebar_label: "Overview"
 sidebar_position: 0
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/integrations/nous-portal|nous-portal]]"
+  - "[[Hermes/website/docs/integrations/providers|providers]]"
 ---
 
 # Integrations

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/getting-started/getting-started|getting-started]]"
+---
+
 # Running on Linux
 
 This guide will walk you through the process of deploying GPT Researcher on a Linux server.

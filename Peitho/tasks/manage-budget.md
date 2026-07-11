@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Alocação atual mapeada com ROAS marginal"
   - "[ ] 3 cenários de orçamento modelados com projeções"
   - "[ ] Plano de realocação faseado ao longo de 1-2 semanas"
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Gerenciar Orçamento

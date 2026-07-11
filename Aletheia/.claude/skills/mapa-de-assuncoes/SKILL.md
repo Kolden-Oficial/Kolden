@@ -1,6 +1,9 @@
 ---
 name: mapa-de-assuncoes
 description: Extrai as assunções escondidas em uma ideia de negócio e prioriza a mais arriscada (leap of faith) num 2x2 de importância × evidência, seguindo o Assumptions Mapping de David Bland / Strategyzer e o Lean Canvas de Ash Maurya. Use quando for decidir O QUE testar primeiro antes de construir qualquer coisa.
+tipo: skill
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
 ---
 
 # Mapa de Assunções

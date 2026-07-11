@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/obliteratus/references/methods-guide|methods-guide]]"
+---
+
 # OBLITERATUS Analysis Modules — Reference
 
 OBLITERATUS includes 28 analysis modules for mechanistic interpretability of refusal in LLMs.

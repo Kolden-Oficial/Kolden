@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/.claude/skills/search-query-analise/references/taxonomia-de-negativas|taxonomia-de-negativas]]"
+---
+
 # N-gram analysis — guia passo-a-passo
 
 ## Preparação do dataset

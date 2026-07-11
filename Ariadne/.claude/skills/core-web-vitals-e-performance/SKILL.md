@@ -8,6 +8,9 @@ description: >
   Vitals", "CWV", "LCP/INP/CLS", "PageSpeed", "site lento", "otimizar velocidade",
   "CrUX", "field data", "dados de campo", "minha nota do PageSpeed", "TTFB",
   "Lighthouse". Aprofunda o auditor-tecnico-seo na dimensão de performance.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Core Web Vitals & performance

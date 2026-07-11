@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/commands/AIOX/stories/story-6.1.4|story-6.1.4]]"
+---
+
 # Story 7.1.1: Bootstrap /dev Workspace — aiox-dashboard Clone
 
 **Story ID:** 7.1.1  

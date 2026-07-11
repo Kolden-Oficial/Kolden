@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Category ladder mapped with competitor positions"
   - "[ ] Formal positioning statement written with alternatives"
   - "[ ] Messaging guidelines and proof points provided"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/brand-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Create Positioning

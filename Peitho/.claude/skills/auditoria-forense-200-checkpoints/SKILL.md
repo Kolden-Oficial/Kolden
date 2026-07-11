@@ -17,6 +17,9 @@ allowed-tools:
   - Grep
   - Glob
   - AskUserQuestion
+tipo: skill
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
 ---
 
 # Auditoria forense de conta de ads — 200+ checkpoints (PT-BR)

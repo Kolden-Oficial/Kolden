@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Cairos
+up: "[[Cairos/_MOC-cairos]]"
+---
+
 # Catálogo de Habilidades — Cairós
 
 > `status: semente-do-lote-2026-06-26` — 5 skills-âncora. Refino e expansão pelo Ritual do Caos pendentes.

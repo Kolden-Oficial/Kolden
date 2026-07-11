@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/architecture/_indice|_indice]]"
+---
+
 # Gestión de Claves de API MCP
 
 > 🌐 [EN](../../architecture/mcp-api-keys-management.md) | [PT](../../pt/architecture/mcp-api-keys-management.md) | **ES**

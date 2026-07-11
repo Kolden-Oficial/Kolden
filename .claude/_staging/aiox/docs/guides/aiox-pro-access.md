@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/README|README]]"
+---
+
 # Como acessar o AIOX Pro
 
 O AIOX Pro e as squads Pro ficam disponíveis apenas para usuários com entitlement ativo. O acesso normal é feito por autenticação de email e senha; a chave `PRO-XXXX-XXXX-XXXX-XXXX` continua existindo como caminho legado.

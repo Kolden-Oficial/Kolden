@@ -1,6 +1,13 @@
 ---
 id: gcp-browsers
 title: Browsers in GCP Cloud Run
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/docs/deployment/aws-browsers|aws-browsers]]"
+  - "[[Argos/motor/crawlee/docs/deployment/aws-cheerio|aws-cheerio]]"
+  - "[[Argos/motor/crawlee/docs/deployment/gcp-cheerio|gcp-cheerio]]"
 ---
 
 Running full-size browsers on GCP Cloud Functions is actually a bit different from doing so on AWS Lambda - [apparently](https://pptr.dev/troubleshooting#running-puppeteer-on-google-cloud-functions), the latest runtime versions miss dependencies required to run Chromium.

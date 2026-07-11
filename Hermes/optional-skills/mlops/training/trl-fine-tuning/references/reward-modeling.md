@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/dpo-variants|dpo-variants]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/grpo-training|grpo-training]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/online-rl|online-rl]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/sft-training|sft-training]]"
+---
+
 # Reward Modeling
 
 Guide to training reward models with TRL for RLHF pipelines.

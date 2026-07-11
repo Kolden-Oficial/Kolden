@@ -1,6 +1,9 @@
 ---
 name: retriever-sonar
 description: Usar o Perplexity Sonar como retriever de busca/pesquisa web do Argos, ao lado dos backends já existentes (Exa, Tavily, Firecrawl, GPT-Researcher). Use quando precisar de busca web com citações nativas, Q&A web-grounded, pesquisa profunda multi-fonte (deep research) ou raciocínio web-grounded — e quando o ganho de qualidade de citação justificar usar um vendor EXTERNO não soberano. NÃO use como retriever padrão: o default continua sendo as fontes soberanas (Firecrawl self-host) e nativas do Hermes. Sempre tente REUSE delas primeiro.
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Habilidade: retriever-sonar (Perplexity Sonar como backend de busca)

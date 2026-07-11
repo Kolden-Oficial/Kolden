@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/architecture/_indice|_indice]]"
+---
+
 # AIOX Dashboard - 完整架构
 
 > **版本:** 2.0.0

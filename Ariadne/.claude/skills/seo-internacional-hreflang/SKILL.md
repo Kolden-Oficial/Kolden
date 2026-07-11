@@ -7,6 +7,9 @@ description: >
   adaptação cultural. Gatilhos: "hreflang", "SEO internacional", "i18n",
   "multi-idioma", "multi-região", "tags de idioma", "site em vários países",
   "tradução do site". É uma frente NOVA da Ariadne.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # SEO Internacional & Hreflang

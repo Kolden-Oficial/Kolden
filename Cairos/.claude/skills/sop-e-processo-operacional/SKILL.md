@@ -12,6 +12,9 @@ agente_primario: [gerente-de-projeto]
 tags: [sop, processo, padronizacao, raci, gate-de-qualidade, recorrente]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G5, G15)
 status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)
+tipo: skill
+area: Cairos
+up: "[[Cairos/_MOC-cairos]]"
 ---
 
 <!--

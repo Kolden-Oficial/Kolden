@@ -2,6 +2,11 @@
 sidebar_position: 7
 title: "Gateway Internals"
 description: "How the messaging gateway boots, authorizes users, routes sessions, and delivers messages"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Gateway Internals

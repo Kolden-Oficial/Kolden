@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # AIOX Resilience
 
 Core resilience modules that preserve agent execution continuity after fatal failures.

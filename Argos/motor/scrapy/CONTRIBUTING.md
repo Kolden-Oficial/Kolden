@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapy/CODE_OF_CONDUCT|CODE_OF_CONDUCT]]"
+  - "[[Argos/motor/scrapy/INSTALL|INSTALL]]"
+  - "[[Argos/motor/scrapy/SECURITY|SECURITY]]"
+---
+
 The guidelines for contributing are available here:
 https://docs.scrapy.org/en/master/contributing.html
 

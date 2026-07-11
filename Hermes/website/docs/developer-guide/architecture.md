@@ -2,6 +2,11 @@
 sidebar_position: 1
 title: "Architecture"
 description: "Hermes Agent internals — major subsystems, execution paths, data flow, and where to read next"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Architecture

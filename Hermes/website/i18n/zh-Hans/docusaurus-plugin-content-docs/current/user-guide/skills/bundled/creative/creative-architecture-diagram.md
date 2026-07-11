@@ -2,6 +2,9 @@
 title: "Architecture Diagram — 深色主题 SVG 架构/云/基础设施图表（HTML 格式）"
 sidebar_label: "Architecture Diagram"
 description: "深色主题 SVG 架构/云/基础设施图表（HTML 格式）"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

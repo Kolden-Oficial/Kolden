@@ -11,6 +11,9 @@ description: >
   complementa `aeo-foundations-architect` (leitura) e `geo-citacoes-ia` (citação).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Agentic Search & WebMCP — do site "lido" ao site "operado"

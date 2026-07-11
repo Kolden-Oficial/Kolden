@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/tutorials/migrating_from_beautifulsoup|migrating_from_beautifulsoup]]"
+---
+
 # Scrapling: A Free Alternative to AI for Robust Web Scraping
 
 Web scraping has long been a vital tool for data extraction, indexing, and preparing datasets, among other purposes. But experienced users often encounter persistent issues that can hinder effectiveness. Recently, there's been a noticeable shift toward AI-based web scraping, driven by its potential to address these challenges.

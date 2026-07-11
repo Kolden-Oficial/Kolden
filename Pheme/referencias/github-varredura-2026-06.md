@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+---
+
 # Varredura GitHub — Repositórios para Turbinar os Agentes da Kolden
 
 **Data:** 2026-06-20

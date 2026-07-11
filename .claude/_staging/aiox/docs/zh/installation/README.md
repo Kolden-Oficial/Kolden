@@ -1,3 +1,15 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/installation/faq|faq]]"
+  - "[[.claude/_staging/aiox/docs/zh/installation/linux|linux]]"
+  - "[[.claude/_staging/aiox/docs/zh/installation/macos|macos]]"
+  - "[[.claude/_staging/aiox/docs/zh/installation/troubleshooting|troubleshooting]]"
+  - "[[.claude/_staging/aiox/docs/zh/installation/windows|windows]]"
+---
+
 <!--
   翻译：zh-CN（简体中文）
   原文：/docs/installation/README.md

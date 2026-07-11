@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Payments, Stripe, Link, Checkout, MPP]
     related_skills: [mpp-agent, stripe-projects]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Stripe Link CLI Skill

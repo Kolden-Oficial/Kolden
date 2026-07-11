@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/.claude/skills/brief-de-conteudo-data-driven/references/densidade-de-keyword|densidade-de-keyword]]"
+  - "[[Ariadne/.claude/skills/brief-de-conteudo-data-driven/references/templates-por-tipo-de-pagina|templates-por-tipo-de-pagina]]"
+---
+
 # Domínios excluídos da análise de concorrentes
 
 Ao analisar a SERP para scoring de concorrente, filtre estes domínios. Não são concorrentes de

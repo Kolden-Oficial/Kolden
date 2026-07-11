@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/instructor/references/providers|providers]]"
+  - "[[Hermes/optional-skills/mlops/instructor/references/validation|validation]]"
+---
+
 # Real-World Examples
 
 Practical examples of using Instructor for structured data extraction.

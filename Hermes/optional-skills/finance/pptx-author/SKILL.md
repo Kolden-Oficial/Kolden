@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [powerpoint, pptx, python-pptx, presentation, finance]
     related_skills: [excel-author, powerpoint]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # pptx-author

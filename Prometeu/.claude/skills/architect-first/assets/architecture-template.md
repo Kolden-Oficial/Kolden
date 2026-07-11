@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Arquitetura de [Nome do Sistema/Funcionalidade]
 
 **Versão:** 1.0

@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/blader--humanizer/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/blader--humanizer/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática — blader--humanizer
 
 - **slug:** blader--humanizer

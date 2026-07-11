@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hestia
+up: "[[Hestia/_MOC-hestia]]"
+---
+
 # Héstia — Squad de RH, Pessoas & Cultura
 
 > `status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)`

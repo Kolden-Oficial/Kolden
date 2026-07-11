@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
+---
+
 # Instalação — <Nome do Agente>
 
 Template do `instalacao.md`. Passo a passo para colocar o agente em produção do zero.

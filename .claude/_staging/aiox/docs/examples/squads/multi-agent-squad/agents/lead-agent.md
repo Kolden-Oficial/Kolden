@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/examples/squads/multi-agent-squad/agents/researcher-agent|researcher-agent]]"
+  - "[[.claude/_staging/aiox/docs/examples/squads/multi-agent-squad/agents/writer-agent|writer-agent]]"
+---
+
 # team-lead
 
 ACTIVATION-NOTICE: Team coordinator agent.

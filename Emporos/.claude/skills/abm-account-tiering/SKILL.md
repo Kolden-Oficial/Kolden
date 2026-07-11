@@ -8,6 +8,9 @@ description: >
   handoffs para outbound signal-based. Gatilhos: "ABM", "account-based", "tier de conta",
   "target accounts", "1:1 vs 1:few vs 1:many", "priorização de contas", "conta-alvo". Dono:
   executivo-de-cadencia. Enriquecimento (Apollo/Common Room/6sense) via Infisical.
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # ABM — Account Tiering

@@ -2,6 +2,11 @@
 sidebar_position: 12
 title: "Video Generation Provider Plugins"
 description: "How to build a video-generation backend plugin for Hermes Agent"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Building a Video Generation Provider Plugin

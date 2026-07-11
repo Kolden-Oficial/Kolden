@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # CLIP Applications Guide
 
 Practical applications and use cases for CLIP.

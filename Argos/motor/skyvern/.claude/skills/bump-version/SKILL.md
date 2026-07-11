@@ -3,6 +3,9 @@ name: bump-version
 description: Bump Skyvern OSS version, build Python and TypeScript SDKs with Fern, and create release PR. Use when releasing a new version or when the user asks to bump version.
 argument-hint: [version]
 disable-model-invocation: true
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Bump Version Skill

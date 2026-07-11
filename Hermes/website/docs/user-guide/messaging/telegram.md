@@ -2,6 +2,11 @@
 sidebar_position: 1
 title: "Telegram"
 description: "Set up Hermes Agent as a Telegram bot"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Telegram Setup

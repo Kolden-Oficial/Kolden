@@ -2,6 +2,11 @@
 sidebar_position: 16
 title: "Persistent Goals"
 description: "Set a standing goal and let Hermes keep working across turns until it's done. Our take on the Ralph loop."
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Persistent Goals (`/goal`)

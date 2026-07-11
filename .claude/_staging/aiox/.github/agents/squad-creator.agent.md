@@ -2,6 +2,11 @@
 name: squad-creator
 description: 'Use to create, validate, publish and manage squads'
 tools: ['read', 'edit', 'search', 'execute']
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.github/agents/_indice|_indice]]"
 ---
 
 # 🏗️ Craft Agent (@squad-creator)

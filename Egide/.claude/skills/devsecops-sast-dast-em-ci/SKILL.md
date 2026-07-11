@@ -9,6 +9,9 @@ description: >-
 domain: ciberseguranca
 subdomain: devsecops
 tags: [devsecops, sast, dast, sca, secret-scan, iac, cicd, shift-left, gate]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # DevSecOps — SAST/DAST em CI

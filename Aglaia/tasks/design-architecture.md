@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Modelo de arquitetura selecionado com justificativa pontuada"
   - "[ ] Todos os produtos/serviços mapeados na arquitetura"
   - "[ ] Framework de governança estabelecido"
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/tasks/_indice|_indice]]"
 ---
 
 # Task: Desenhar Arquitetura de Marca

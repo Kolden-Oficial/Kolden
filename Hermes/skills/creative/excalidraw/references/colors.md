@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/excalidraw/references/dark-mode|dark-mode]]"
+  - "[[Hermes/skills/creative/excalidraw/references/examples|examples]]"
+---
+
 # Excalidraw Color Palette
 
 Use these colors consistently across diagrams.

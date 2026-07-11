@@ -7,6 +7,9 @@ description: >
   "Git para SEO". Gatilhos: "drift de SEO", "baseline", "rastrear mudanças",
   "quebrou alguma coisa", "regressão de SEO", "antes e depois", "checagem
   pós-deploy", "o tráfego caiu, o que mudou". É uma frente NOVA da Ariadne.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Monitoramento de Drift de SEO

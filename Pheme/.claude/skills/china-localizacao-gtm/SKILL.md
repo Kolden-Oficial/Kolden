@@ -10,6 +10,9 @@ description: >
   skills operacionais — orienta quando/como acioná-las e com que profundidade.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # China Localização + GTM — sinal, tracks e fases P0-P5

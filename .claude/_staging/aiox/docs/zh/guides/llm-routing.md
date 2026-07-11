@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/guides/README|README]]"
+---
+
 # LLM 路由指南
 
 > [EN](../../guides/llm-routing.md) | [PT](../../pt/guides/llm-routing.md) | [ES](../../es/guides/llm-routing.md) | **ZH**

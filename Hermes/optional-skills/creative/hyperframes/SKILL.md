@@ -13,6 +13,9 @@ metadata:
     related_skills: [manim-video, meme-generation]
     category: creative
     requires_toolsets: [terminal]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # HyperFrames

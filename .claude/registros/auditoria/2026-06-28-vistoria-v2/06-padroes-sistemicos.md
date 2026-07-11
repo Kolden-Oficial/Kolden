@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 06 — Padrões sistêmicos (defeitos de molde)
 
 > Passo 6 do protocolo. **Defeito que aparece em ≥3 squads → padrão sistêmico.** Promovido aqui e separado dos achados por-squad.

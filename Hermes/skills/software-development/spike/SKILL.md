@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [spike, prototype, experiment, feasibility, throwaway, exploration, research, planning, mvp, proof-of-concept]
     related_skills: [sketch, subagent-driven-development, plan]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Spike

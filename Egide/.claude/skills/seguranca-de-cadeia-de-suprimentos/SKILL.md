@@ -9,6 +9,9 @@ description: >-
 domain: ciberseguranca
 subdomain: supply-chain-security
 tags: [supply-chain, sbom, syft, grype, dependency-confusion, in-toto, slsa, container, cve, sca]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Segurança de Cadeia de Suprimentos de Software

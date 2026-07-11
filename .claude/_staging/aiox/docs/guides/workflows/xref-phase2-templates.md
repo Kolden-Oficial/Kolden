@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/workflows/_indice|_indice]]"
+---
+
 # Cross-Reference Phase 2: Templates, Checklists & Data Files
 
 **Generated:** 2026-02-05

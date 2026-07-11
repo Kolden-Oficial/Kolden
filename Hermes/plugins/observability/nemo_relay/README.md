@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # NeMo Relay Observability
 
 Optional Hermes observability plugin that maps Hermes observer hooks to

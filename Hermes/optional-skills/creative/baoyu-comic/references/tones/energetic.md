@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/tones/_indice|_indice]]"
+---
+
 # energetic
 
 活力基调 - Bright, dynamic, exciting

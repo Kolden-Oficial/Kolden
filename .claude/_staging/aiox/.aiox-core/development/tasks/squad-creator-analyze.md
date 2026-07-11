@@ -58,6 +58,11 @@ Checklist:
   - "[ ] Calculate coverage metrics"
   - "[ ] Generate improvement suggestions"
   - "[ ] Format and display report"
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Analyze Squad Task

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Block type diagnosed with emotional root identified"
   - "[ ] At least 3 exercises prescribed and explained"
   - "[ ] Micro-goal set for immediate action"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/storytelling/tasks/_indice|_indice]]"
 ---
 
 # Task: Creative Unblocking

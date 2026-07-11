@@ -2,6 +2,9 @@
 sidebar_position: 9
 title: "使用 Ollama 在本地运行 Hermes — 零 API 费用"
 description: "使用 Ollama 和 Gemma 4 等开放权重模型在本机完整运行 Hermes Agent 的分步指南，无需云端 API 密钥或付费订阅"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 使用 Ollama 在本地运行 Hermes — 零 API 费用

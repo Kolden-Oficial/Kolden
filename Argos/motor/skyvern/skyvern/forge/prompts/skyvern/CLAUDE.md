@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Prompt Templates
 
 Action extraction templates are split for caching optimization:

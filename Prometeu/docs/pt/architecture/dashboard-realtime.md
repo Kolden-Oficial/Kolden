@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/architecture/_indice|_indice]]"
+---
+
 # 🔴 AIOX Dashboard - Arquitetura de Observabilidade em Tempo Real
 
 > **PT** | [EN](../architecture/dashboard-realtime.md) | [ES](../es/architecture/dashboard-realtime.md)

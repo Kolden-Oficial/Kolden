@@ -58,6 +58,11 @@ Checklist:
   - "[ ] Calcular as métricas de cobertura"
   - "[ ] Gerar sugestões de melhoria"
   - "[ ] Formatar e exibir o relatório"
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Task Analisar Squad

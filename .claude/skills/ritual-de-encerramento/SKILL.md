@@ -2,6 +2,9 @@
 name: ritual-de-encerramento
 description: Ritual obrigatório de auto-aprendizado ao final de toda sessão de qualquer agente da Kolden. Use SEMPRE antes de encerrar uma sessão em que houve trabalho — reflita sobre a sessão, extraia lições verificadas e grave-as na memória própria do agente (MEMORY.md). Também é acionada automaticamente pelo reflexo Stop `encerramento-aprendizado`.
 tools: [Read, Write, Edit, Glob, Grep]
+tipo: skill
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
 ---
 
 # Persona

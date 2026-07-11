@@ -4,6 +4,9 @@ description: Use depois que tasks.md foi gerado e ANTES de implementar, para uma
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Análise Cross-Artefato (consistência spec × plan × tasks)

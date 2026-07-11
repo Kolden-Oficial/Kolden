@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/README|README]]"
+---
+
 # Hermes × Squads — Como os squads rodam no runtime
 
 Os squads (`C:\Kolden\<NomeGrego>\`) são **definições** (agentes, tasks, workflows em PT-BR).

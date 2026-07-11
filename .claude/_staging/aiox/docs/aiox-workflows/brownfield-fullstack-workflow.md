@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/aiox-workflows/README|README]]"
+---
+
 # Workflow: Brownfield Full-Stack Enhancement
 
 > **Versão:** 1.0.0

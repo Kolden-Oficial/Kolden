@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/framework/README|README]]"
+---
+
 # AIOX Coding Standards
 
 > 🌐 **EN** | [PT](../pt/framework/coding-standards.md) | [ES](../es/framework/coding-standards.md)

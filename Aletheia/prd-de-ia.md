@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/README|README]]"
+---
+
 # PRD de IA — Aletheia (Squad de Discovery + Lean Validation)
 
 | Campo | Valor |

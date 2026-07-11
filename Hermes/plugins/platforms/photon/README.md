@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Photon iMessage platform plugin
 
 This plugin connects Hermes Agent to iMessage (and other Spectrum

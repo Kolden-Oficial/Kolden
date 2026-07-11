@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/installation/README|README]]"
+---
+
 # Synkra AIOX Troubleshooting Guide
 
 > 🌐 **EN** | [PT](../pt/installation/troubleshooting.md) | [ES](../es/installation/troubleshooting.md)

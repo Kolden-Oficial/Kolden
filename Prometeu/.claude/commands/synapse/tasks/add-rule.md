@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/commands/synapse/tasks/_indice|_indice]]"
+---
+
 # Adicionar Rule
 
 Adiciona uma nova rule a um arquivo de domain SYNAPSE existente.

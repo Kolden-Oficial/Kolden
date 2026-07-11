@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Avaliação de prontidão concluída (10 dimensões)"
   - "[ ] Tese de investimento e arco narrativo elaborados"
   - "[ ] Lista de investidores-alvo construída e classificada por tiers"
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Planejar Captação

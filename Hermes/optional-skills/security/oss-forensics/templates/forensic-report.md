@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/security/oss-forensics/templates/malicious-package-report|malicious-package-report]]"
+---
+
 # Forensic Investigation Report
 
 > **Instructions**: Fill in all sections. Every factual claim must cite at least one `[EV-XXXX]` evidence ID.

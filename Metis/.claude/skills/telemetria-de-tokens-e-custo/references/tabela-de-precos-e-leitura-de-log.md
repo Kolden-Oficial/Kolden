@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Metis
+up: "[[Metis/_MOC-metis]]"
+---
+
 # Tabela de preços + leitura de log + harness de eval
 
 Dados densos da habilidade `telemetria-de-tokens-e-custo`. Tudo aqui é insumo de cálculo — nada

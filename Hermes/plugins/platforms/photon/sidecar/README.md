@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Photon sidecar
 
 Small Node helper that bridges Hermes Agent to Photon's Spectrum SDK

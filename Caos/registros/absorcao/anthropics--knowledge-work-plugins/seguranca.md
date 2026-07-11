@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/anthropics--knowledge-work-plugins/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/anthropics--knowledge-work-plugins/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática (F2) — anthropics--knowledge-work-plugins
 
 - **slug:** anthropics--knowledge-work-plugins

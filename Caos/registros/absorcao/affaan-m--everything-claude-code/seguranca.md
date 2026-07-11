@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/affaan-m--everything-claude-code/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/affaan-m--everything-claude-code/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática (F2) — affaan-m--everything-claude-code
 
 - **slug:** affaan-m--everything-claude-code

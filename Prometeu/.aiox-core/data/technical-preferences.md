@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/data/aiox-kb|aiox-kb]]"
+---
+
 # Padrões e Preferências Definidos pelo Usuário
 
 ## Tech Presets

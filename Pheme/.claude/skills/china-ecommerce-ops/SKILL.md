@@ -11,6 +11,9 @@ description: >
   plataforma (para isso use `xiaohongshu-conteudo`, `douyin-conteudo`, etc.).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # China E-Commerce Ops — 5 plataformas + battle plan 618/Double 11

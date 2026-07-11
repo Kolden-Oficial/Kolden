@@ -11,6 +11,9 @@ metadata:
     category: blockchain
     related_skills: [solana]
     requires_toolsets: [terminal]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # EVM Blockchain Skill

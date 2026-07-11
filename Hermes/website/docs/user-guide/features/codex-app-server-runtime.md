@@ -1,6 +1,11 @@
 ---
 title: Codex App-Server Runtime (optional)
 sidebar_label: Codex App-Server Runtime
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Codex App-Server Runtime

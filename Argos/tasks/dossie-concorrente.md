@@ -23,6 +23,11 @@ Checklist:
   - "[ ] Share of voice cross-canal calculado com base de cálculo declarada"
   - "[ ] Lacunas marcadas como 'não coletado' (sem estimativa)"
   - "[ ] Cada concorrente classificado (direto/indireto/substituto)"
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Dossiê de Concorrente — Argos

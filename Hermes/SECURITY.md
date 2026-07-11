@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/README|README]]"
+---
+
 # Hermes Agent Security Policy
 
 This document describes Hermes Agent's trust model, names the one

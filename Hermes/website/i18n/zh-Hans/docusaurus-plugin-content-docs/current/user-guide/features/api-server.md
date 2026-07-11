@@ -2,6 +2,9 @@
 sidebar_position: 14
 title: "API 服务器"
 description: "将 hermes-agent 作为 OpenAI 兼容的 API 暴露给任意前端"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # API 服务器

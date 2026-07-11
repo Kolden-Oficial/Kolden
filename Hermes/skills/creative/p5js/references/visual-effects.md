@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/p5js/references/_indice|_indice]]"
+---
+
 # Visual Effects
 
 ## Noise

@@ -1,5 +1,12 @@
 ---
 description: Absorve um repositório do GitHub para dentro do Kolden — quarentena segura, verificação de segurança (prioridade #1), compreensão 100%, e aprimoramento de um squad existente (ou aviso + criação). Passe a URL do repo. Nunca executa o código; para para aprovação antes de aplicar.
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/commands/caos|caos]]"
+  - "[[Caos/.claude/commands/squad|squad]]"
+  - "[[Caos/.claude/commands/vigia|vigia]]"
 ---
 
 Caos, inicie o **Pipeline de Absorção de Repositório** para o repo abaixo.

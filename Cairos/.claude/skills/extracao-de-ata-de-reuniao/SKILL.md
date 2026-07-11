@@ -13,6 +13,9 @@ agente_secundario: [gerente-de-projeto]
 tags: [ata, reuniao, transcricao, action-items, decisoes, governanca]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G3, G12)
 status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)
+tipo: skill
+area: Cairos
+up: "[[Cairos/_MOC-cairos]]"
 ---
 
 <!--

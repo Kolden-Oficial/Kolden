@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task: Setup Database
 
 **PropÃ³sito**: ConfiguraÃ§Ã£o interativa de projeto de banco de dados (Supabase, PostgreSQL, MongoDB, MySQL, SQLite)

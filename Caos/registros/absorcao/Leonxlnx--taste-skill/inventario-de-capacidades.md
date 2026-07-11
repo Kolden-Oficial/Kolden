@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/Leonxlnx--taste-skill/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/Leonxlnx--taste-skill/seguranca|seguranca]]"
+---
+
 # F3 — Inventário de capacidades
 
 - **slug:** Leonxlnx--taste-skill | **sha:** 06d6028b… | **rota:** A

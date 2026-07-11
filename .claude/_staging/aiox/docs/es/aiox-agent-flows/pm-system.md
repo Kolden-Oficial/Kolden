@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/README|README]]"
+---
+
 # @pm (Morgan) - Documentacion del Sistema
 
 > [PT](../../aiox-agent-flows/pm-system.md) | [EN](../../en/aiox-agent-flows/pm-system.md) | **ES**

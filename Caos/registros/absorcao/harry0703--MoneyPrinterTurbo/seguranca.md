@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/harry0703--MoneyPrinterTurbo/briefing-de-execucao|briefing-de-execucao]]"
+  - "[[Caos/registros/absorcao/harry0703--MoneyPrinterTurbo/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/harry0703--MoneyPrinterTurbo/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática — harry0703--MoneyPrinterTurbo
 
 - **slug:** harry0703--MoneyPrinterTurbo

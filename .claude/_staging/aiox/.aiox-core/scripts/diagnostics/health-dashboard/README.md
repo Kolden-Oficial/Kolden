@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # AIOX Health Dashboard
 
 Visual dashboard for the AIOX Health Check System. Displays real-time health status, domain scores, issues, and self-healing history.

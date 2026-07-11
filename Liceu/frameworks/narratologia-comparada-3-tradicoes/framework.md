@@ -10,6 +10,9 @@ status: semente
 atualizado-em: 2026-06-29
 fonte_upstream: "msitarzewski/agency-agents@a597cb6 — academic/literature (MIT)"
 tags: [narratologia, storytelling, copy, tradicoes-narrativas]
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Narratologia comparada em 3 tradições

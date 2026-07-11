@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/security/1password/references/get-started|get-started]]"
+---
+
 # op CLI examples
 
 ## Sign-in and identity

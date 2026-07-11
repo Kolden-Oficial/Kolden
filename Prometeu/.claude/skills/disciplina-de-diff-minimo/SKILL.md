@@ -4,6 +4,9 @@ description: Use ao ABRIR PR, ao REVISAR PR alheio, ou ao decidir se um PR grand
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Disciplina de Diff Mínimo

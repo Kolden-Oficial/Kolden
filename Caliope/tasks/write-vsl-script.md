@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Hook convincente nos primeiros 60 segundos"
   - "[ ] Marcações de direção visual e notas de produção incluídas"
   - "[ ] Camada Psicológica aplicada (princípios de Cialdini/Warren marcados)"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Task: Escrever Roteiro de VSL

@@ -3,6 +3,9 @@ name: aiox-qa
 description: "Ative Quinn (qa) como Test Architect & Consultor de Qualidade. Use para revisão abrangente de arquitetura de testes, decisões de quality gate e melhoria de código. Fornece análise completa incluindo rastreabilidade de requisitos, avaliação de risco e..."
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: gerado -->

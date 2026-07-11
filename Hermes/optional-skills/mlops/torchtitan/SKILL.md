@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Model Architecture, Distributed Training, TorchTitan, FSDP2, Tensor Parallel, Pipeline Parallel, Context Parallel, Float8, Llama, Pretraining]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # TorchTitan - PyTorch Native Distributed LLM Pretraining

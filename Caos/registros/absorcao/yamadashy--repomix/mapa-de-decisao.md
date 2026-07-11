@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/yamadashy--repomix/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/yamadashy--repomix/seguranca|seguranca]]"
+---
+
 # Mapa de decisão — yamadashy--repomix (F4)
 
 **Decisão global:** repomix é uma **ferramenta CLI de terceiro madura (MIT)**, não uma capacidade

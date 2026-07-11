@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # AIOX Workflows
 
 This directory contains workflow definitions for the Synkra AIOX framework. Workflows define multi-step processes that can be executed by AIOX agents.

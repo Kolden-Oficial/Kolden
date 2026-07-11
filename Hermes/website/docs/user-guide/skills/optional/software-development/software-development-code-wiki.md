@@ -2,6 +2,12 @@
 title: "Code Wiki — Generate wiki docs + Mermaid diagrams for any codebase"
 sidebar_label: "Code Wiki"
 description: "Generate wiki docs + Mermaid diagrams for any codebase"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/software-development/software-development-rest-graphql-debug|software-development-rest-graphql-debug]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/software-development/software-development-subagent-driven-development|software-development-subagent-driven-development]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -8,6 +8,11 @@ platforms:
 metadata:
   hermes:
     tags: [meetings, google-meet, transcription, realtime-voice]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/plugins/google_meet/README|README]]"
 ---
 
 # google_meet

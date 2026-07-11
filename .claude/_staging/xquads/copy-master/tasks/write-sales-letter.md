@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Letter follows AIDA structure with proof throughout"
   - "[ ] CTA appears minimum 3 times with P.S. sections"
   - "[ ] Psychological Layer applied (Cialdini/Warren principles tagged)"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-master/tasks/_indice|_indice]]"
 ---
 
 # Task: Write Sales Letter

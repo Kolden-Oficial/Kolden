@@ -13,6 +13,9 @@ description: >-
 domain: ciberseguranca
 subdomain: threat-detection
 tags: [defensive-only, threat-detection, pivoting, tunneling, lateral-movement, c2, dns-tunneling, egress, sigma, attack-t1572, attack-t1071, attack-t1090, zero-trust]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Detecção de Pivot e Tunneling

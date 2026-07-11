@@ -9,6 +9,9 @@ description: >
   "auditar E-E-A-T", "thin content", "conteúdo merece ranquear?", "isso parece IA?",
   "claim sem fonte", "citation gap", "content audit", "readability". NÃO escreve a
   copy (handoff Caliope); NÃO mede tráfego/posição pós-publicação (handoff Metis).
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Qualidade de Conteúdo & E-E-A-T (auditoria operacional)

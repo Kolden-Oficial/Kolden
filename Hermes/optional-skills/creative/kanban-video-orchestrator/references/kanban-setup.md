@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/examples|examples]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/intake|intake]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/monitoring|monitoring]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/role-archetypes|role-archetypes]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/tool-matrix|tool-matrix]]"
+---
+
 # Kanban Setup — Project Bootstrap & Profile Configuration
 
 Once the brief is locked and the team is designed, the next step is producing

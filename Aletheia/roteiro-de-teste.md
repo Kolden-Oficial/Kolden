@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/README|README]]"
+---
+
 # Roteiro de Teste — Aletheia (Fase 7: Teste de Comportamento)
 
 Smoke tests derivados da jornada do PRD. Cada teste tem um comportamento esperado e um critério

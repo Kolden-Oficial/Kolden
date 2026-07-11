@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/charlie947--social-media-skills/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/charlie947--social-media-skills/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática (F2) — charlie947--social-media-skills
 
 - **slug:** charlie947--social-media-skills

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Single conversion goal defined and maintained"
   - "[ ] All sections written per page type architecture"
   - "[ ] CTA appears at least 3 times with action-oriented text"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Write Landing Page Copy

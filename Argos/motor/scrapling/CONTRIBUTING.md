@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/README|README]]"
+---
+
 # Contributing to Scrapling
 
 Thank you for your interest in contributing to Scrapling! 

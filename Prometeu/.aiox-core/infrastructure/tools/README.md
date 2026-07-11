@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # AIOX Tools - Integrations Directory
 
 This directory contains tool integration definitions for Synkra AIOX agents. Tools are external capabilities that agents can discover and use to accomplish tasks.

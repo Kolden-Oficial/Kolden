@@ -1,3 +1,13 @@
+---
+tipo: projeto
+projeto: brw-movelaria
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/pesquisa/dossie-concorrentes|dossie-concorrentes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/pesquisa/prospeccao-hotelaria-bahia|prospeccao-hotelaria-bahia]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/pesquisa/prospeccao-studios-bahia|prospeccao-studios-bahia]]"
+---
+
 # BRW Movelaria — Prospecção Bahia: Sumário Executivo Cruzado
 
 > **Status:** v1 / hipótese-de-trabalho — mapa de prospecção FRIA (nenhum contato foi feito)

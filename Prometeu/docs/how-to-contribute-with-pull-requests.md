@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # Como Contribuir com Pull Requests
 
 > 🌐 **EN** | [PT](./pt/how-to-contribute-with-pull-requests.md) | [ES](./es/how-to-contribute-with-pull-requests.md)

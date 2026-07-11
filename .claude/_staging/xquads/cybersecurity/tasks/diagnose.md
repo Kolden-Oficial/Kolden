@@ -25,6 +25,11 @@ Checklist:
   - "[ ] User intent parsed and ethical gate evaluated"
   - "[ ] Cross-cutting answer delivered to user"
   - "[ ] Routing suggestion provided"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/cybersecurity/tasks/_indice|_indice]]"
 ---
 
 # Task: Diagnose & Route — Cybersecurity Squad

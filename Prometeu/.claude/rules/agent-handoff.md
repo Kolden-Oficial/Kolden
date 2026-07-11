@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/rules/_indice|_indice]]"
+---
+
 # Protocolo de Handoff de Agentes — Compactação de Contexto
 
 ## Propósito

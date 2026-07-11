@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/README|README]]"
+---
+
 # PRD de IA — Liceu (Biblioteca de Mentes da Kolden)
 
 | Campo | Valor |

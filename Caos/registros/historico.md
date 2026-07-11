@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/dashboard-safety|dashboard-safety]]"
+  - "[[Caos/registros/predictions-scorecard-kolden-2026|predictions-scorecard-kolden-2026]]"
+  - "[[Caos/registros/ultima-verificacao|ultima-verificacao]]"
+---
+
 # Histórico de criações do Kolden
 
 Cada agente ou squad criado pelo Caos é registrado aqui na Fase 8 (Entrega + Registro)

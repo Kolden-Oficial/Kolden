@@ -1,6 +1,9 @@
 ---
 title: Codex App-Server 运行时（可选）
 sidebar_label: Codex App-Server 运行时
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Codex App-Server 运行时

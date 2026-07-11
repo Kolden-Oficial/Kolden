@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/data/_indice|_indice]]"
+---
+
 # WCAG Compliance Guide
 
 **Standard:** WCAG 2.1 Level AA (minimum), AAA target

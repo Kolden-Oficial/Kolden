@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/product/templates/_indice|_indice]]"
+---
+
 # Agent Activation Instructions Template
 **Story**: 6.1.2.5 - Contextual Agent Load System Integration
 **Version**: 2.0 (GreetingBuilder Integration)

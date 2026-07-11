@@ -6,6 +6,11 @@ tools:
 utils:
   - template-engine
   - template-validator
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Criar Documento a partir de Template (Orientado por YAML)

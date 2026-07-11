@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 Create a cartoon-style infographic illustration following these guidelines:
 
 ## Image Specifications

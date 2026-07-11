@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/skyvern/skyvern-ts/client/reference|reference]]"
+---
+
 # Skyvern TypeScript Library
 
 [![npm shield](https://img.shields.io/npm/v/@skyvern/client)](https://www.npmjs.com/package/@skyvern/client)

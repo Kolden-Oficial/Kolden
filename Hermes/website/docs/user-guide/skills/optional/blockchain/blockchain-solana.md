@@ -2,6 +2,12 @@
 title: "Solana"
 sidebar_label: "Solana"
 description: "Query Solana blockchain data with USD pricing — wallet balances, token portfolios with values, transaction details, NFTs, whale detection, and live network s..."
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/blockchain/blockchain-evm|blockchain-evm]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/blockchain/blockchain-hyperliquid|blockchain-hyperliquid]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

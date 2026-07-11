@@ -1,6 +1,9 @@
 ---
 name: direcao-visual-de-referencia
 description: Use quando o pedido for gerar REFERENCIAS VISUAIS (imagens de comp) de landing page, site marketing, portfolio, product page ou app mobile ANTES de qualquer implementacao em codigo — art direction premium, conversion-aware, uma imagem por secao, com paleta unica no site inteiro. Gatilhos "gera uma referencia de landing page", "moodboard de landing", "comps de website", "referencias de section por section", "prints de referencia do app mobile", "imagem-referencia pra passar pro Harmonia", "Awwwards-level visual", "art direction do site", "moodboard antes de codar". NAO use para implementar UI em codigo (isso e Harmonia — sistema-de-design / implementacao-ui). NAO use para direcao de brand-kit (isso e direcao-de-brand-kit-visual). NAO use para geracao de imagem solta sem estrutura de pagina (isso e engenharia-de-prompt-de-imagem). Esta habilidade e a camada de ART DIRECTION que produz o pacote de imagens-referencia do site/app inteiro em uma consistencia de brand-world.
+tipo: skill
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
 ---
 
 # Direcao visual de referencia

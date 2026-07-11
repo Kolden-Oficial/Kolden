@@ -2,6 +2,11 @@
 title: "Pptx Author — Build PowerPoint decks headless with python-pptx"
 sidebar_label: "Pptx Author"
 description: "Build PowerPoint decks headless with python-pptx"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/finance/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

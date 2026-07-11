@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+---
+
 # Catálogo de Habilidades — Égide
 
 Índice das **32 habilidades** do squad Égide (cibersegurança). Todas **defensivas e

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # Template Engine v2.0
 
 > **EN** | [PT](../pt/guides/template-engine-v2.md) | [ES](../es/guides/template-engine-v2.md)

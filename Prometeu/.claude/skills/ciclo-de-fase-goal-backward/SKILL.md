@@ -4,6 +4,9 @@ description: Use ao executar uma feature/fase de ponta a ponta com rigor — qua
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Ciclo de Fase Goal-Backward

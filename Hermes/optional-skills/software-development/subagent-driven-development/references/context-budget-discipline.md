@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/software-development/subagent-driven-development/references/gates-taxonomy|gates-taxonomy]]"
+---
+
 # Context Budget Discipline
 
 Practical rules for keeping orchestrator context lean when spawning subagents or reading large artifacts. Use these whenever you're running a multi-step agent loop that will consume significant context — plan execution, subagent orchestration, review pipelines, multi-file refactors.

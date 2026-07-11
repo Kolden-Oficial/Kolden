@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/commands/synapse/tasks/_indice|_indice]]"
+---
+
 # Create Command
 
 Creates a new star-command block in the SYNAPSE commands domain file.

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/framework/README|README]]"
+---
+
 # Agent Memory Lifecycle & Config Ownership
 
 ## MEMORY.md Structured Format

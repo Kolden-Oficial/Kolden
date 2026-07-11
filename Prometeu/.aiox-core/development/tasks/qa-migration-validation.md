@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task de Validação de Migrations
 
 Valida se as migrations de banco de dados estão corretamente criadas e aplicadas para as mudanças de schema.

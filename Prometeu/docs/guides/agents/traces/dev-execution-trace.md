@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # @dev (Dex) - Execution Trace
 
 > Traced from source code, not documentation.

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/diagnostico_caos/_indice|_indice]]"
+---
+
 # 01 — Censo (inventário cru do ecossistema CAOS)
 
 > Apenas o que existe e onde. Sem interpretação de fluxo. Todos os caminhos relativos a `C:\Kolden\`.

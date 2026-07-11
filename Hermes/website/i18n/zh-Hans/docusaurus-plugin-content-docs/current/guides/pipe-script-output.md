@@ -2,6 +2,9 @@
 sidebar_position: 12
 title: "将脚本输出推送到消息平台"
 description: "使用 `hermes send` 将任意 shell 脚本、cron 任务、CI hook 或监控守护进程的文本发送到 Telegram、Discord、Slack、Signal 等平台。"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 将脚本输出推送到消息平台

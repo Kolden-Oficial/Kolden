@@ -3,6 +3,9 @@ name: aiox-architect
 description: "Ative a Aria (architect) para Architect. Use para arquitetura de sistemas (fullstack, backend, frontend, infraestrutura), seleção de stack de tecnologia (avaliação técnica), design de API (REST/GraphQL/tRPC/WebSocket), arquitetura de segurança, perf..."
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: generated -->

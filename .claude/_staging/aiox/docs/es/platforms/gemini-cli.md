@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/platforms/README|README]]"
+---
+
 <!-- Traducción: ES | Original: /docs/platforms/en/gemini-cli.md | Sincronización: 2026-01-26 -->
 
 # Guía de AIOX para Gemini CLI

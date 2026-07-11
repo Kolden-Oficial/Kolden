@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/skills/architect-first/references/architecture-checklist|architecture-checklist]]"
+  - "[[Prometeu/.claude/skills/architect-first/references/pre-implementation-checklist|pre-implementation-checklist]]"
+  - "[[Prometeu/.claude/skills/architect-first/references/testing-strategy-guide|testing-strategy-guide]]"
+---
+
 # Guia de Remediação das Stop Rules
 
 Quando uma stop rule for disparada, PARE imediatamente e siga os passos de remediação abaixo.

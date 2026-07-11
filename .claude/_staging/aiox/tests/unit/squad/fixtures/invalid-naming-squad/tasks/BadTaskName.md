@@ -9,6 +9,9 @@ Saida: |
   - output: string
 Checklist:
   - [ ] Do something
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # Bad Task Name

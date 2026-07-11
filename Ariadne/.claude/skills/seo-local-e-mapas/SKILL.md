@@ -9,6 +9,9 @@ description: >
   "citações", "reviews locais", "negócio com endereço", "múltiplas unidades",
   "geo-grid", "concorrentes por raio". É uma frente NOVA da Ariadne (sem
   especialista local dedicado até então).
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # SEO Local & Inteligência de Mapas

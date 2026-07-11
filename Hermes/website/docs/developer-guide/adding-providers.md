@@ -2,6 +2,11 @@
 sidebar_position: 5
 title: "Adding Providers"
 description: "How to add a new inference provider to Hermes Agent — auth, runtime resolution, CLI flows, adapters, tests, and docs"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Adding Providers

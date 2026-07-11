@@ -2,6 +2,9 @@
 sidebar_position: 3
 title: "更新与卸载"
 description: "如何将 Hermes Agent 更新至最新版本或将其卸载"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 更新与卸载

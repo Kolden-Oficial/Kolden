@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/README|README]]"
+---
+
 # Ferramentas — Argos (Inteligência de Mercado & Scraping)
 
 Catálogo único de toda ferramenta que o squad Argos pode usar. **Constituição, Artigo IV:**

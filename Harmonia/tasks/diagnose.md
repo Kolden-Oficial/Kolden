@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Intenção do usuário interpretada e categorizada"
   - "[ ] Resposta transversal entregue ao usuário"
   - "[ ] Nível de confiança avaliado"
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar & Rotear — Design Squad

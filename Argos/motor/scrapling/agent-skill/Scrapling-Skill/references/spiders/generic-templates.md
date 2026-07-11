@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/spiders/_indice|_indice]]"
+---
+
 # Generic Spider Templates
 
 Most crawls fall into one of two patterns: "follow links matching this regex" or "crawl every URL listed in the site's sitemap". Scrapling ships templates for both so you don't have to hand-write the same `parse()` boilerplate every time.

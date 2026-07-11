@@ -2,6 +2,11 @@
 sidebar_position: 5
 title: "Prompt Assembly"
 description: "How Hermes builds the system prompt, preserves cache stability, and injects ephemeral layers"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Prompt Assembly

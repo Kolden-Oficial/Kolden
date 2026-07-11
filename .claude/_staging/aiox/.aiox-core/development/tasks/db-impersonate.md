@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task: Impersonate User (RLS Testing)
 
 **Purpose**: Set session claims to emulate authenticated user for RLS testing

@@ -11,6 +11,9 @@ metadata:
     homepage: https://github.com/steipete/songsee
 prerequisites:
   commands: [songsee]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # songsee

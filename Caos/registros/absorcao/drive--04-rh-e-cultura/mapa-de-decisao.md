@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--04-rh-e-cultura/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--04-rh-e-cultura/reconciliacao|reconciliacao]]"
+---
+
 # Mapa de decisão — Drive "04 | RH & Cultura"
 
 > Protocolo de absorção sem perda. Regra: NENHUM item sem disposição.

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/audits/c-dev-organization-2026-05-07|c-dev-organization-2026-05-07]]"
+---
+
 # aiox-core/audits/
 
 Cross-project audit reports and AuditFinding artifacts. Part of the AIOX Framework Evolution Pipeline.

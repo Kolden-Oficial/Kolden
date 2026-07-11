@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/handling-logs/all-about-logs|all-about-logs]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/handling-logs/simple-logs-example|simple-logs-example]]"
+---
+
 # Langsmith Logs
 
 With the help of Langsmith, you can easily visualize logs on cost and errors within your Langsmith Dashboard (calculated per LLM call or grouped by project)

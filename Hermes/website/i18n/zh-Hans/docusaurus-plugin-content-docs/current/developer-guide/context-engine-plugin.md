@@ -2,6 +2,9 @@
 sidebar_position: 9
 title: "Context Engine 插件"
 description: "如何构建替换内置 ContextCompressor 的 context engine 插件"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 构建 Context Engine 插件

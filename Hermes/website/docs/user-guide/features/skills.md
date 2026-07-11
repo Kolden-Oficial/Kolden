@@ -2,6 +2,11 @@
 sidebar_position: 2
 title: "Skills System"
 description: "On-demand knowledge documents — progressive disclosure, agent-managed skills, and the Skills Hub"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Skills System

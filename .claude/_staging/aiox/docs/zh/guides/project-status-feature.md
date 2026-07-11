@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/guides/README|README]]"
+---
+
 # 项目状态功能 - 用户指南
 
 > **EN** | **ZH-CN** | [PT](../pt/guides/project-status-feature.md) | [ES](../es/guides/project-status-feature.md)

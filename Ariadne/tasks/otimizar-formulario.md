@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/tasks/_indice|_indice]]"
+---
+
 # Tarefa: Otimizar Formulário
 
 **ID:** ARIADNE-008 · **Versão:** 1.0.0 · **Comando:** `*form` · **Agente:** otimizador-de-formulario

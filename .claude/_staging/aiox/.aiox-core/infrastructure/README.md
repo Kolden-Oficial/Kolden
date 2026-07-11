@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # Infrastructure Module
 
 Base layer of the AIOX modular architecture. Contains tools, integrations, scripts, and PM adapters.

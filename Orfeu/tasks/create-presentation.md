@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Público perfilado com crenças atuais e resistência mapeadas"
   - "[ ] Estrutura Sparkline criada com contrastes alternados"
   - "[ ] Star moment projetado e call to action definido"
+tipo: nota
+area: Orfeu
+up: "[[Orfeu/_MOC-orfeu]]"
+relacionado:
+  - "[[Orfeu/tasks/_indice|_indice]]"
 ---
 
 # Task: Arco Narrativo de Apresentação

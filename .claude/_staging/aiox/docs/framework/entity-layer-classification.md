@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/framework/README|README]]"
+---
+
 # Entity Layer Classification (L1-L4)
 
 Classification rules for the AIOX entity registry boundary layers.

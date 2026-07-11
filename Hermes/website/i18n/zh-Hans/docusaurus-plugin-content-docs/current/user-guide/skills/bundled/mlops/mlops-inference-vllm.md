@@ -2,6 +2,9 @@
 title: "Serving Llms Vllm — vLLM：高吞吐量 LLM 服务、OpenAI API、量化"
 sidebar_label: "Serving Llms Vllm"
 description: "vLLM：高吞吐量 LLM 服务、OpenAI API、量化"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

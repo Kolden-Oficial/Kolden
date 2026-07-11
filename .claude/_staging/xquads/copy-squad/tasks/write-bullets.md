@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Source content mined for all bullet material"
   - "[ ] Requested number of bullets written using varied formulas"
   - "[ ] 3-5 killer bullets identified for multi-use"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Write Bullet Points

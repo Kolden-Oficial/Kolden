@@ -1,6 +1,9 @@
 ---
 name: criacao-de-subagent
 description: Cria especialistas (arquivos .md em .claude/agents/) para agentes do Kolden. Use quando o PRD identificar tarefas que merecem contexto isolado, ferramentas restritas ou execução paralela — como revisão, pesquisa pesada ou processamento de grandes volumes. Especialistas são as vozes internas especializadas do agente (faculdade Mente em O Ser).
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Criação de especialista

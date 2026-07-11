@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # AIOX Gemini CLI Extension
 
 Brings Synkra AIOX multi-agent orchestration to Gemini CLI.

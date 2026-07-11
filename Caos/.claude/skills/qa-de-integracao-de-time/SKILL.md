@@ -1,6 +1,9 @@
 ---
 name: qa-de-integracao-de-time
 description: Use ao verificar um squad/time recém-construído (ou um software gerado por um time de agentes) onde cada componente está "certo" sozinho mas a junção pode estar quebrada — agents que apontam para skills inexistentes, CLAUDE.md fora de sincronia com agents/, ou, em código, resposta de API que não casa com o tipo do hook. Foca em descasamento de contrato entre componentes, não na correção isolada de cada um.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # QA de coerência de integração

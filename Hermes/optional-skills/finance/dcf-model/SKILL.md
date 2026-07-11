@@ -9,6 +9,11 @@ metadata:
   hermes:
     tags: [finance, valuation, dcf, excel, openpyxl, modeling, investment-banking]
     related_skills: [excel-author, pptx-author, comps-analysis, lbo-model, 3-statement-model]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/finance/dcf-model/TROUBLESHOOTING|TROUBLESHOOTING]]"
 ---
 
 ## Environment

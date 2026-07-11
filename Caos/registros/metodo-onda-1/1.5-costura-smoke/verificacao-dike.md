@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/metodo-onda-1/1.5-costura-smoke/agent-gerado-smoke|agent-gerado-smoke]]"
+  - "[[Caos/registros/metodo-onda-1/1.5-costura-smoke/diff-cirurgico|diff-cirurgico]]"
+  - "[[Caos/registros/metodo-onda-1/1.5-costura-smoke/relatorio-costura|relatorio-costura]]"
+  - "[[Caos/registros/metodo-onda-1/1.5-costura-smoke/sumario-executivo|sumario-executivo]]"
+---
+
 # Verificação Dike — Sub-onda 1.5 (agent Salgueiro smoke)
 
 > **Contrato:** `m-20260706-metodo-kolden` · Sub-onda 1.5 — verificação delta INDEPENDENTE do agent gerado pelo smoke

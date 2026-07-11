@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F4 — Mapa de Decisão · Bucket B08 (finance → Pactolo)
 
 > **Origem:** `msitarzewski/agency-agents@a597cb6` · divisão `finance/`

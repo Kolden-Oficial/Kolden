@@ -4,6 +4,9 @@ about: Propose a new AIOX Squad for the framework
 title: '[SQUAD] '
 labels: ['squad', 'new-squad', 'needs-triage']
 assignees: ''
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 ## 📦 Squad Proposal

@@ -9,6 +9,11 @@ tools:
   - git
 checklists:
   - release-checklist.md
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # npm Publishing Pipeline

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/github/github-pr-workflow/templates/pr-body-bugfix|pr-body-bugfix]]"
+---
+
 ## Summary
 
 <!-- 1-3 bullet points describing what this PR does -->

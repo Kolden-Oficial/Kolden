@@ -3,6 +3,9 @@ name: aiox-squad-creator
 description: "Ativa Craft (squad-creator) para o Squad Creator. Use para criar, validar, publicar e gerenciar squads"
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: gerado -->

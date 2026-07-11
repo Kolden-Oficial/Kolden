@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/.claude/skills/ghostwriting-de-livro/references/lexico-do-autor|lexico-do-autor]]"
+---
+
 # Blueprint de capítulo — Promise + 5 batidas
 
 Contagem-alvo total por capítulo: **3.500-6.000 palavras**. Fora dessa faixa, o capítulo

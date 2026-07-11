@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/README|README]]"
+---
+
 # 贡献者契约行为准则
 
 > 🇧🇷 [葡萄牙語版本](../CODE_OF_CONDUCT-PT.md)

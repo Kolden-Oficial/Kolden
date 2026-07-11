@@ -2,6 +2,9 @@
 sidebar_position: 3
 title: "Android / Termux"
 description: "通过 Termux 在 Android 手机上直接运行 Hermes Agent"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 在 Android 上通过 Termux 运行 Hermes

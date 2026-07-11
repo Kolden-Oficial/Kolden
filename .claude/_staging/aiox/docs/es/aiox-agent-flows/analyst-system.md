@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/README|README]]"
+---
+
 # @analyst (Atlas) - Documentacion del Sistema
 
 > [PT](../../aiox-agent-flows/analyst-system.md) | [EN](../../en/aiox-agent-flows/analyst-system.md) | **ES**

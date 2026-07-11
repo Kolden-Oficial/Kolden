@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/constitution|constitution]]"
+  - "[[.claude/_staging/aiox/.aiox-core/working-in-the-brownfield|working-in-the-brownfield]]"
+---
+
 # Guia do Usuário Synkra AIOX
 
 ## Visão Geral

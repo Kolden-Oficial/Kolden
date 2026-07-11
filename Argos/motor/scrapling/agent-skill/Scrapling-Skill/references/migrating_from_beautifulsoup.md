@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/mcp-server|mcp-server]]"
+---
+
 # Migrating from BeautifulSoup to Scrapling
 
 API comparison between BeautifulSoup and Scrapling. Scrapling is faster, provides equivalent parsing capabilities, and adds features for fetching and handling modern web pages.

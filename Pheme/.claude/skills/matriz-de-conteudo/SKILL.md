@@ -9,6 +9,9 @@ description: >
   específica, não um tema genérico.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Matriz de Conteúdo — pilares × formatos

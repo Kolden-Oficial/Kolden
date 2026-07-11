@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Tracking architecture mapped with all platforms"
   - "[ ] Event hierarchy defined with parameters"
   - "[ ] QA checklist created and tested"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/traffic-masters/tasks/_indice|_indice]]"
 ---
 
 # Task: Setup Tracking

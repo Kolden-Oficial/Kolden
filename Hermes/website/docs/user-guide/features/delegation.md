@@ -2,6 +2,11 @@
 sidebar_position: 7
 title: "Subagent Delegation"
 description: "Spawn isolated child agents for parallel workstreams with delegate_task"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Subagent Delegation

@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/health/neuroskill-bci/references/metrics|metrics]]"
+  - "[[Hermes/optional-skills/health/neuroskill-bci/references/protocols|protocols]]"
+---
+
 # NeuroSkill WebSocket & HTTP API Reference
 
 NeuroSkill runs a local server (default port **8375**) discoverable via mDNS

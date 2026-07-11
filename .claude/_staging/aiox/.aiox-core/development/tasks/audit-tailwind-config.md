@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Audit Tailwind v4 Configuration & Utility Health
 
 > Task ID: brad-audit-tailwind-config  

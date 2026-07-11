@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Ananke
+up: "[[Ananke/_MOC-ananke]]"
+---
+
 # Catálogo de Habilidades — Ananke
 
 Habilidades disponíveis ao squad Ananke (Operações & BizOps), seu gatilho de invocação, propósito e dono.

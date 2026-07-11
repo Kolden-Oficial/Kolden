@@ -2,6 +2,11 @@
 title: "Minecraft Modpack Server — Host modded Minecraft servers (CurseForge, Modrinth)"
 sidebar_label: "Minecraft Modpack Server"
 description: "Host modded Minecraft servers (CurseForge, Modrinth)"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/gaming/gaming-pokemon-player|gaming-pokemon-player]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

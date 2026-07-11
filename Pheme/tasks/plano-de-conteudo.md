@@ -25,6 +25,11 @@ Checklist:
   - "[ ] 3-5 pilares definidos e alinhados à marca Kolden"
   - "[ ] Calendário com pilar por dia/rede"
   - "[ ] Cada slot tem gancho e CTA"
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+relacionado:
+  - "[[Pheme/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Plano de Conteúdo (Pilares + Calendário)

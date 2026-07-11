@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/governance/README|README]]"
+---
+
 # Squad Activation Strategy — Conditional Consult-First Routing
 
 **Status:** Draft v1.0

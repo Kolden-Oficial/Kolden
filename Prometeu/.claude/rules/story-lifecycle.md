@@ -2,6 +2,11 @@
 paths:
   - "docs/stories/**"
   - ".aiox-core/development/**"
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/rules/_indice|_indice]]"
 ---
 
 # Ciclo de Vida da Story — Regras Detalhadas

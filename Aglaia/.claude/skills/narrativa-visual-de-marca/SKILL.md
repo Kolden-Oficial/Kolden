@@ -1,3 +1,9 @@
+---
+tipo: skill
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+---
+
 <!--
 Atribuição: derivado de msitarzewski/agency-agents@a597cb6 (G22, G23) — licença MIT.
 Esta skill é uma reescritura PT-BR original, sem cópia literal do upstream.

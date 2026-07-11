@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # Veredito tipado e rubrica compartilhada — referência do conselho adversarial
 
 ## Arquitetura da dupla revisão cega (santa-method)

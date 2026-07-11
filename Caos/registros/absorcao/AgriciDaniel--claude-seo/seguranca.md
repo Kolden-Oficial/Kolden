@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/AgriciDaniel--claude-seo/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/AgriciDaniel--claude-seo/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # F2 — Segurança estática — AgriciDaniel--claude-seo
 
 - **slug:** AgriciDaniel--claude-seo

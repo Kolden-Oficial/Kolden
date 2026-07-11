@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/_lote-2026-06-26/_indice|_indice]]"
+---
+
 # Decisão F5 consolidada — Lote 2026-06-26 (carimbada)
 
 > **Carimbo de delegação:** `decisão F5 delegada — Ronan off 24h, autorizado 2026-06-26`. O gate de aprovação

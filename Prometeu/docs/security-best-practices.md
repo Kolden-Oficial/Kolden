@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # Synkra AIOX Security Best Practices
 
 > 🌐 **EN** | [PT](./pt/security-best-practices.md) | [ES](./es/security-best-practices.md)

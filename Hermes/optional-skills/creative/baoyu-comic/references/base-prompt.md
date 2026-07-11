@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/_indice|_indice]]"
+---
+
 Create a knowledge biography comic page following these guidelines:
 
 ## Image Specifications

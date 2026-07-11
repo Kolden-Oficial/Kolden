@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Hormozi Squad
 
 16 specialized agents implementing Alex Hormozi's business scaling frameworks.

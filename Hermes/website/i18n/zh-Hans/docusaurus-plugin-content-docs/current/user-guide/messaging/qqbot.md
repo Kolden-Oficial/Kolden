@@ -1,3 +1,9 @@
+---
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # QQ Bot
 
 通过**官方 QQ Bot API（v2）**将 Hermes 接入 QQ——支持私聊（C2C）、群组 @-提及、频道及直接消息，并具备语音转写功能。

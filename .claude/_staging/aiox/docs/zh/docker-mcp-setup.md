@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/README|README]]"
+---
+
 # Docker MCP 设置指南
 
 > 🌐 [EN](../docker-mcp-setup.md) | **ZH**

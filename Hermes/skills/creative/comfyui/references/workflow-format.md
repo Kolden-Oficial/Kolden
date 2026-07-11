@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/comfyui/references/official-cli|official-cli]]"
+  - "[[Hermes/skills/creative/comfyui/references/rest-api|rest-api]]"
+  - "[[Hermes/skills/creative/comfyui/references/template-integrity|template-integrity]]"
+---
+
 # ComfyUI Workflow JSON Format
 
 ## Two Formats — Only API Format Is Executable

@@ -23,6 +23,11 @@ Checklist:
   - "[ ] Insumos verificados (há dado? faltam keywords/SERP → handoff Argos?)"
   - "[ ] Resposta rápida fornecida antes de rotear"
   - "[ ] 1-3 especialistas roteados, ou resposta direta se confiança baixa"
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar — Ariadne

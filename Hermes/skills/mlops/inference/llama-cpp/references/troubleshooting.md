@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/mlops/inference/llama-cpp/references/advanced-usage|advanced-usage]]"
+  - "[[Hermes/skills/mlops/inference/llama-cpp/references/hub-discovery|hub-discovery]]"
+  - "[[Hermes/skills/mlops/inference/llama-cpp/references/optimization|optimization]]"
+  - "[[Hermes/skills/mlops/inference/llama-cpp/references/quantization|quantization]]"
+  - "[[Hermes/skills/mlops/inference/llama-cpp/references/server|server]]"
+---
+
 # GGUF Troubleshooting Guide
 
 ## Installation Issues

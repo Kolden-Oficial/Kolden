@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/pytorch-fsdp/references/index|index]]"
+---
+
 # Pytorch-Fsdp - Other
 
 **Pages:** 15

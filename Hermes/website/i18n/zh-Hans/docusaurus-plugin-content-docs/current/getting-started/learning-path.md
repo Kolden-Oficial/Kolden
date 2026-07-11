@@ -2,6 +2,9 @@
 sidebar_position: 3
 title: '学习路径'
 description: '根据您的经验水平和目标，选择适合您的 Hermes Agent 文档学习路径。'
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 学习路径

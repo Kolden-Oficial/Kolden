@@ -1,3 +1,22 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/benchmarks|benchmarks]]"
+  - "[[Argos/motor/scrapling/docs/donate|donate]]"
+  - "[[Argos/motor/scrapling/docs/overview|overview]]"
+  - "[[Argos/motor/scrapling/docs/README_AR|README_AR]]"
+  - "[[Argos/motor/scrapling/docs/README_CN|README_CN]]"
+  - "[[Argos/motor/scrapling/docs/README_DE|README_DE]]"
+  - "[[Argos/motor/scrapling/docs/README_ES|README_ES]]"
+  - "[[Argos/motor/scrapling/docs/README_FR|README_FR]]"
+  - "[[Argos/motor/scrapling/docs/README_JP|README_JP]]"
+  - "[[Argos/motor/scrapling/docs/README_KR|README_KR]]"
+  - "[[Argos/motor/scrapling/docs/README_PT_BR|README_PT_BR]]"
+  - "[[Argos/motor/scrapling/docs/README_RU|README_RU]]"
+---
+
 <style>
 .md-typeset h1 {
   display: none;

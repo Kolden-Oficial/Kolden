@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Database Layer
 
 ## `get_tasks_actions` — Sort Order is DESC (Intentional)

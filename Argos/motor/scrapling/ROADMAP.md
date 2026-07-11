@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/README|README]]"
+---
+
 ## TODOs
 - [x] Add more tests and increase the code coverage.
 - [x] Structure the tests folder in a better way.

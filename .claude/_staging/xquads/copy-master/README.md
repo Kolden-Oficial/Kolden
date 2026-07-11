@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Copy Master
 
 Elite squad of 33 copywriting agents — 32 legendary copywriters and persuasion experts + 1 orchestrator (Copy Master Chief). This is the enhanced v2.0 of the Copy Squad, featuring 10 new specialists, champion examples from real campaigns, a persuasion psychology layer on every project, and cross-specialist collaboration patterns.

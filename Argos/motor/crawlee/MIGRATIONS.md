@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/README|README]]"
+---
+
 # Migration from 2.x.x to 3.0.0
 Check the v3 [upgrading guide](https://crawlee.dev/js/docs/upgrading/upgrading-to-v3).
 

@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Multimodal, Image Segmentation, Computer Vision, SAM, Zero-Shot]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Segment Anything Model (SAM)

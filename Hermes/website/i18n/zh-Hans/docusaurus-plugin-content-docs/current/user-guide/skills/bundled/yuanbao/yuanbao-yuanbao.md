@@ -2,6 +2,9 @@
 title: "Yuanbao — Yuanbao（元宝）群组：@提及用户、查询信息/成员"
 sidebar_label: "Yuanbao"
 description: "Yuanbao（元宝）群组：@提及用户、查询信息/成员"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

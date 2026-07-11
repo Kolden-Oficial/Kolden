@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # AIOX-Core Installation & Troubleshooting Guide
 
 > **EN** | [PT](../pt/guides/installation-troubleshooting.md) | [ES](../es/guides/installation-troubleshooting.md)

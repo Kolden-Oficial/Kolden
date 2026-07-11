@@ -2,6 +2,9 @@
 sidebar_position: 10
 title: "皮肤与主题"
 description: "使用内置和用户自定义皮肤定制 Hermes CLI 的外观"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 皮肤与主题

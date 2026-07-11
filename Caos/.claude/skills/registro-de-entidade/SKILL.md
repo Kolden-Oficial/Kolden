@@ -1,6 +1,9 @@
 ---
 name: registro-de-entidade
 description: Registra uma entidade recém-criada (agente, squad, skill, hook, subagent) no registro de entidades e captura os padrões aprendidos. Use na Fase 8 do Ritual, na entrega, após o agente passar na revisão e no teste de comportamento.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Registro de Entidade (Fase 8)

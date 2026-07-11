@@ -2,6 +2,9 @@
 sidebar_position: 2
 title: "配置"
 description: "配置 Hermes Agent — config.yaml、providers、模型、API 密钥等"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 配置

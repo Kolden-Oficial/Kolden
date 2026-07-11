@@ -2,6 +2,9 @@
 title: "Kanban Orchestrator"
 sidebar_label: "Kanban Orchestrator"
 description: "用于通过 Kanban 路由工作的编排器 profile 的任务分解手册及反诱惑规则"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

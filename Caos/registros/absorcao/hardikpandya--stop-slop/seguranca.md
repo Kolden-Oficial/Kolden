@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/hardikpandya--stop-slop/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/hardikpandya--stop-slop/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # F2 — Segurança estática · hardikpandya--stop-slop
 
 - **slug:** hardikpandya--stop-slop

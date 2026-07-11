@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Todas as seções escritas conforme a arquitetura do tipo de página"
   - "[ ] CTA aparece pelo menos 3 vezes com texto orientado à ação"
   - "[ ] Camada Psicológica aplicada (princípios de Cialdini/Warren marcados)"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Task: Escrever Copy de Landing Page

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/stable-diffusion/references/advanced-usage|advanced-usage]]"
+---
+
 # Stable Diffusion Troubleshooting Guide
 
 ## Installation Issues

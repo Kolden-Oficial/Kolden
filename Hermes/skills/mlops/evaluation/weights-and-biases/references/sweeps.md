@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/mlops/evaluation/weights-and-biases/references/artifacts|artifacts]]"
+  - "[[Hermes/skills/mlops/evaluation/weights-and-biases/references/integrations|integrations]]"
+---
+
 # Comprehensive Hyperparameter Sweeps Guide
 
 Complete guide to hyperparameter optimization with W&B Sweeps.

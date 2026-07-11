@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
+---
+
 # Catálogo de Habilidades — Êmporos
 
 Habilidades disponíveis ao squad Êmporos (execução comercial), seu gatilho de invocação e propósito.

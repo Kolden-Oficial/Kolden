@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+relacionado:
+  - "[[Pluto/README|README]]"
+---
+
 # Origem
 
 - **Repositório de origem:** `ohmyjahh/xquads-squads`

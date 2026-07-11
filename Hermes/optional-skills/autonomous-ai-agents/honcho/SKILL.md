@@ -12,6 +12,9 @@ metadata:
     related_skills: [hermes-agent]
 prerequisites:
   pip: [honcho-ai]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Honcho Memory for Hermes

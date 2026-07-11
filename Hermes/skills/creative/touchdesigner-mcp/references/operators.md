@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/touchdesigner-mcp/references/_indice|_indice]]"
+---
+
 # TouchDesigner Operator Reference
 
 ## Operator Families Overview

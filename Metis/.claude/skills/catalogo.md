@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Metis
+up: "[[Metis/_MOC-metis]]"
+---
+
 # Catálogo de Habilidades — Métis
 
 Índice das **6 habilidades** do squad Métis (eficiência, telemetria, experimentação, analytics de cliente).

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/governance/README|README]]"
+---
+
 # AIOX Framework Evolution Pipeline
 
 **Status:** Draft v1.0

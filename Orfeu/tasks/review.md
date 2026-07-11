@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os itens do checklist avaliados e pontuados"
   - "[ ] Veredito emitido (APROVAR/REVISAR/REJEITAR)"
   - "[ ] Feedback específico fornecido para quaisquer falhas"
+tipo: nota
+area: Orfeu
+up: "[[Orfeu/_MOC-orfeu]]"
+relacionado:
+  - "[[Orfeu/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Revisar Saída Narrativa

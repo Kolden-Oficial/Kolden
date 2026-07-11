@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Prontidão avaliada pelos três conselheiros (Hoffman, Thiel, Naval)"
   - "[ ] Estratégia de escala identificada com justificativa clara"
   - "[ ] Veredito Go/No-Go com playbook e critérios de interrupção"
+tipo: nota
+area: Themis
+up: "[[Themis/_MOC-themis]]"
+relacionado:
+  - "[[Themis/tasks/_indice|_indice]]"
 ---
 
 # Task: Análise de Decisão de Escala

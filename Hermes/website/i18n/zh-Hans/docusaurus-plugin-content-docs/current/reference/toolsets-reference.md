@@ -2,6 +2,9 @@
 sidebar_position: 4
 title: "工具集参考"
 description: "Hermes 核心、复合、平台及动态工具集参考"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 工具集参考

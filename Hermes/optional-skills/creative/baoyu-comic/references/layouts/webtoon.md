@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/layouts/_indice|_indice]]"
+---
+
 # webtoon
 
 Vertical scrolling comic (竖版条漫)

@@ -2,6 +2,11 @@
 sidebar_position: 3
 title: "Discord"
 description: "Set up Hermes Agent as a Discord bot"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Discord Setup

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/guides/README|README]]"
+---
+
 # IDE同步指南
 
 > **[EN](../../guides/ide-sync-guide.md)** | [PT](../../pt/guides/ide-sync-guide.md) | [ES](../../es/guides/ide-sync-guide.md) | **中文 (ZH)**

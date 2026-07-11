@@ -2,6 +2,9 @@
 sidebar_position: 17
 title: "扩展 Dashboard"
 description: "为 Hermes Web Dashboard 构建主题和插件——调色板、字体排版、布局、自定义标签页、shell 插槽、页面级插槽以及后端 API 路由"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 扩展 Dashboard

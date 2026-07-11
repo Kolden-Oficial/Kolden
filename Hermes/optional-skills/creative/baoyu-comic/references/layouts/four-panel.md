@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/layouts/_indice|_indice]]"
+---
+
 # four-panel
 
 四格漫画 - Strict 2×2 grid, single-page story

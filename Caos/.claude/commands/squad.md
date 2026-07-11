@@ -1,5 +1,12 @@
 ---
 description: Invoca o Caos para criar um SQUAD multi-agente (orquestrador tier 0 + especialistas tier 1), seguindo o Ritual de Criação já na trilha de squad.
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/commands/absorver|absorver]]"
+  - "[[Caos/.claude/commands/caos|caos]]"
+  - "[[Caos/.claude/commands/vigia|vigia]]"
 ---
 
 Caos, inicie o Ritual de Criação de um novo **squad** multi-agente.

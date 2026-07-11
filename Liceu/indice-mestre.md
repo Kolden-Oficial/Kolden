@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/README|README]]"
+---
+
 # Índice Mestre — Biblioteca de Mentes do Liceu
 
 Tabela mestra, legível por humano, de **todas as mentes** catalogadas pelo Liceu. É a contraparte em

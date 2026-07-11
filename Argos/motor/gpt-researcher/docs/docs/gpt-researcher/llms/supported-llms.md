@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/llms/llms|llms]]"
+---
+
 # Supported LLMs
 
 The following LLMs are supported by GPTR (though you'll need to install the relevant langchain package separately if you're not using OpenAI).

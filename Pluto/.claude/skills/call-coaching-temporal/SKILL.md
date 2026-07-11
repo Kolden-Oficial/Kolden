@@ -13,6 +13,9 @@ agente_dono: [hormozi-sales-coach]
 tags: [call-coaching, talk-listen, behavioral-feedback, timestamp-feedback]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G7)
 status: semente
+tipo: skill
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
 ---
 
 # Call Coaching Temporal — feedback por timestamp + alternativa

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/data/tech-presets/_indice|_indice]]"
+---
+
 # Angular 21 + NestJS Tech Preset
 
 > Preset de arquitetura otimizado para desenvolvimento fullstack com Angular 21 no frontend e NestJS no backend, seguindo padrões que maximizam a eficiência com Claude Code.

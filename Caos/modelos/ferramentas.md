@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
+---
+
 # Ferramentas — <Nome do Agente>
 
 Template do `ferramentas.md`. Catálogo de toda API, MCP, CLI ou integração que o agente

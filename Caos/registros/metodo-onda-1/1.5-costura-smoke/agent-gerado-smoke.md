@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/metodo-onda-1/1.5-costura-smoke/diff-cirurgico|diff-cirurgico]]"
+  - "[[Caos/registros/metodo-onda-1/1.5-costura-smoke/relatorio-costura|relatorio-costura]]"
+  - "[[Caos/registros/metodo-onda-1/1.5-costura-smoke/sumario-executivo|sumario-executivo]]"
+  - "[[Caos/registros/metodo-onda-1/1.5-costura-smoke/verificacao-dike|verificacao-dike]]"
+---
+
 # Agent gerado (SMOKE — simulação do Ritual do Caos v3.4.0)
 
 > **Contrato:** `m-20260706-metodo-kolden` Sub-onda 1.5 — Smoke Test canônico

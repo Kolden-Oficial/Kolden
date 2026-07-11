@@ -2,6 +2,11 @@
 sidebar_position: 10
 title: "Tutorial: GitHub PR Review Agent"
 description: "Build an automated AI code reviewer that monitors your repos, reviews pull requests, and delivers feedback — hands-free"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Tutorial: Build a GitHub PR Review Agent

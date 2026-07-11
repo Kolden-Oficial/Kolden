@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/Leonxlnx--taste-skill/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/Leonxlnx--taste-skill/seguranca|seguranca]]"
+---
+
 # F4 — Mapa de decisão (registro de entidades + squads existentes)
 
 - **slug:** Leonxlnx--taste-skill | **sha:** 06d6028b…

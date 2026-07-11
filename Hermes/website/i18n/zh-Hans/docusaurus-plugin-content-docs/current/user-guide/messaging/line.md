@@ -2,6 +2,9 @@
 sidebar_position: 17
 title: "LINE"
 description: "将 Hermes Agent 设置为 LINE Messaging API 机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # LINE 配置

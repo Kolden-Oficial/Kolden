@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/framework/coding-standards|coding-standards]]"
+  - "[[Prometeu/docs/pt/framework/source-tree|source-tree]]"
+  - "[[Prometeu/docs/pt/framework/tech-stack|tech-stack]]"
+---
+
 <!--
   Tradução: PT-BR
   Original: /docs/en/framework/README.md

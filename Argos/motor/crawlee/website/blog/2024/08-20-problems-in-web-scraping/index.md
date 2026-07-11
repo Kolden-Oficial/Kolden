@@ -5,6 +5,9 @@ tags: [community]
 description: 'Current problems and mistakes that developers encounters while scraping and crawling the internet with the advises and solution from an web scraping expert.'
 image: ./img/problems-in-scraping.webp
 authors: [MaxB]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 ## Introduction

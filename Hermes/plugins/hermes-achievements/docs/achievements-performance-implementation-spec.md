@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/plugins/hermes-achievements/docs/achievements-performance-implementation-plan|achievements-performance-implementation-plan]]"
+  - "[[Hermes/plugins/hermes-achievements/docs/achievements-performance-spec|achievements-performance-spec]]"
+---
+
 # Hermes Achievements Implementation Spec (Detailed)
 
 This document is implementation-facing detail to execute the performance refactor later.

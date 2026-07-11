@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F4 — Mapa de decisão · B02 Caliope + Pheme + Peitho
 
 Inventários upstream: 107 IDs (marketing 83 + paid-media 24).

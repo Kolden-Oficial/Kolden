@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/rohitg00--ai-engineering-from-scratch/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/rohitg00--ai-engineering-from-scratch/seguranca|seguranca]]"
+---
+
 # Mapa de decisão (F4) — rohitg00--ai-engineering-from-scratch
 
 - **slug:** `rohitg00--ai-engineering-from-scratch` · **sha:** `c8b9b9244f...` · **rota:** A

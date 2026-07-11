@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/spiders/_indice|_indice]]"
+---
+
 # Spiders sessions
 
 A spider can use multiple fetcher sessions simultaneously. For example, a fast HTTP session for simple pages and a stealth browser session for protected pages.

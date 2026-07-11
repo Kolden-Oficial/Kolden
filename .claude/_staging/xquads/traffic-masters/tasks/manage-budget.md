@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Current allocation mapped with marginal ROAS"
   - "[ ] 3 budget scenarios modeled with projections"
   - "[ ] Reallocation plan phased over 1-2 weeks"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/traffic-masters/tasks/_indice|_indice]]"
 ---
 
 # Task: Manage Budget

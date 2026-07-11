@@ -2,6 +2,9 @@
 sidebar_position: 11
 title: 模型目录
 description: 远程托管的清单文件，驱动 OpenRouter 和 Nous Portal 的精选模型选择器列表。
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 模型目录

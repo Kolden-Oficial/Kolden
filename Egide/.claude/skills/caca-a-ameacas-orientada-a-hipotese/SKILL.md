@@ -12,6 +12,9 @@ description: >-
 domain: ciberseguranca
 subdomain: threat-hunting
 tags: [threat-hunting, hipotese, proativo, baseline, beaconing, frequencia, chainsaw, velociraptor, attack]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Caça a Ameaças Orientada a Hipótese

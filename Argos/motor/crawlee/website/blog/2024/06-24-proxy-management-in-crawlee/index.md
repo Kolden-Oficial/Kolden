@@ -5,6 +5,9 @@ tags: [proxy]
 description: 'Find out how Crawlee’s tiered proxy system rotates between different types of proxies to control web scraping costs and avoid getting blocked.'
 image: ./img/tiered-proxies.webp
 authors: [SauravJ]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 Hello Crawlee community,

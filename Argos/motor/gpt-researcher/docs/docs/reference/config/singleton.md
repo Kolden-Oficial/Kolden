@@ -1,6 +1,11 @@
 ---
 sidebar_label: singleton
 title: config.singleton
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/reference/config/config|config]]"
 ---
 
 The singleton metaclass for ensuring only one instance of a class.

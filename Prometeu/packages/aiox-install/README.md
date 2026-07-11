@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/packages/aiox-install/CHANGELOG|CHANGELOG]]"
+---
+
 # @aiox-squads/aiox-install
 
 NPX installer for AIOX - AI-Orchestrated System for Full Stack Development.

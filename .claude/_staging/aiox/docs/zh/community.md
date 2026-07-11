@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/README|README]]"
+---
+
 # Synkra AIOX 社区
 
 > 🇧🇷 [葡萄牙語版本](../COMMUNITY-PT.md)

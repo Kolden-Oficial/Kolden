@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/guides/README|README]]"
+---
+
 # AIOX-Core 安装和故障排除指南
 
 > [EN](../../guides/installation-troubleshooting.md) | [PT](../../pt/guides/installation-troubleshooting.md) | [ES](../../es/guides/installation-troubleshooting.md) | **ZH**

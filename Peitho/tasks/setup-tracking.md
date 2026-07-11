@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Arquitetura de rastreamento mapeada com todas as plataformas"
   - "[ ] Hierarquia de eventos definida com parâmetros"
   - "[ ] Checklist de QA criado e testado"
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Configurar Rastreamento

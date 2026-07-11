@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/presets/concept-story|concept-story]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/presets/ohmsha|ohmsha]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/presets/shoujo|shoujo]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/presets/wuxia|wuxia]]"
+---
+
 # four-panel
 
 四格漫画预设 - Minimalist four-panel business allegory comics

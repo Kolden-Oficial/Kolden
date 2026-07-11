@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 <!-- Traducción: ES | Original: /docs/en/guides/squad-examples/README.md | Sincronización: 2026-01-26 -->
 
 # Ejemplos de Squad

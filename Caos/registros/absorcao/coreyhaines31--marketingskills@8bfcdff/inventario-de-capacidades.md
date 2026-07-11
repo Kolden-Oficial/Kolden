@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/coreyhaines31--marketingskills@8bfcdff/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/coreyhaines31--marketingskills@8bfcdff/relatorio-de-perda|relatorio-de-perda]]"
+  - "[[Caos/registros/absorcao/coreyhaines31--marketingskills@8bfcdff/seguranca|seguranca]]"
+---
+
 # F3 — Inventário de capacidades — coreyhaines31/marketingskills@8bfcdff
 
 > Pipeline de absorção (`ingestao-de-repositorio`), Fase 3 (gate BLOCK). Schema máquina-validável

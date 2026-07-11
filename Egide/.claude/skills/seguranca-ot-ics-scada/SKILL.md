@@ -10,6 +10,9 @@ description: >-
 domain: ciberseguranca
 subdomain: ot-ics-security
 tags: [ot, ics, scada, modbus, dnp3, iec62443, purdue, anomalia, segmentacao]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Segurança de OT / ICS / SCADA

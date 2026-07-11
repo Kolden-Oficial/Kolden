@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Ferramenta apropriada selecionada com justificativa"
   - "[ ] Comando gerado com documentação inline"
   - "[ ] Avaliação de segurança concluída com avisos"
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+relacionado:
+  - "[[Egide/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Geração de Comandos de Ferramentas de Segurança

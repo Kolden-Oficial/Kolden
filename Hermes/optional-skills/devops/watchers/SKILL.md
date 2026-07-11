@@ -11,6 +11,9 @@ metadata:
     category: devops
     requires_toolsets: [terminal]
     related_skills: []
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Watchers

@@ -1,3 +1,15 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/platforms/antigravity|antigravity]]"
+  - "[[.claude/_staging/aiox/docs/es/platforms/claude-code|claude-code]]"
+  - "[[.claude/_staging/aiox/docs/es/platforms/cursor|cursor]]"
+  - "[[.claude/_staging/aiox/docs/es/platforms/gemini-cli|gemini-cli]]"
+  - "[[.claude/_staging/aiox/docs/es/platforms/github-copilot|github-copilot]]"
+---
+
 <!--
   Traducción: ES
   Original: /docs/platforms/README.md

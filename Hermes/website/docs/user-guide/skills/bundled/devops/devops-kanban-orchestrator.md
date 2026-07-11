@@ -2,6 +2,11 @@
 title: "Kanban Orchestrator"
 sidebar_label: "Kanban Orchestrator"
 description: "Decomposition playbook + anti-temptation rules for an orchestrator profile routing work through Kanban"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/devops/devops-kanban-worker|devops-kanban-worker]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

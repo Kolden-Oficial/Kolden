@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/README|README]]"
+---
+
 # Quality Gates Dashboard Guide
 
 > **EN** | [PT](../pt/guides/quality-dashboard.md) | [ES](../es/guides/quality-dashboard.md)

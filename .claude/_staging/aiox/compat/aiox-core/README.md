@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # aiox-core compatibility package
 
 `aiox-core` is the legacy npm package name for AIOX Core.

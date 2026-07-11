@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/LEIA-ME-drive|LEIA-ME-drive]]"
+---
+
 # Reorganização do Drive Compartilhado da Kolden — Log de Execução
 
 > Data: 2026-06-25 · Operador: agente (MCP Google Drive, OAuth) · Drive: KOLDEN (`0AFk2wbfbKBIMUk9PVA`)

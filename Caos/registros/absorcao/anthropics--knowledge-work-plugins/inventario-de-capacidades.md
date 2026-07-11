@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/anthropics--knowledge-work-plugins/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/anthropics--knowledge-work-plugins/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades (F3) — anthropics--knowledge-work-plugins
 
 Rota A. Granularidade: **1 ID por plugin** (cada plugin é um bundle de skills/commands/connectors de um domínio),

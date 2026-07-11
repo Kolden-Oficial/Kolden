@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/README|README]]"
+---
+
 # AIOX Squads Publishing Protocol
 
 This document is the operational protocol for Epic 124: migrating npm packages to the canonical `@aiox-squads/*` scope.

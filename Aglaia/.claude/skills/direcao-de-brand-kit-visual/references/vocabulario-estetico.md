@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+---
+
 # Vocabulario estetico (compartilhado)
 
 Este arquivo intencionalmente aponta para a fonte unica:

@@ -1,3 +1,9 @@
+---
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # BlueBubbles（iMessage）
 
 通过 [BlueBubbles](https://bluebubbles.app/) 将 Hermes 连接至 Apple iMessage——这是一款免费、开源的 macOS 服务端，可将 iMessage 桥接至任意设备。

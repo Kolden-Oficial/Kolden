@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/metodo-onda-1/1.5-costura-smoke/agent-gerado-smoke|agent-gerado-smoke]]"
+  - "[[Caos/registros/metodo-onda-1/1.5-costura-smoke/relatorio-costura|relatorio-costura]]"
+  - "[[Caos/registros/metodo-onda-1/1.5-costura-smoke/sumario-executivo|sumario-executivo]]"
+  - "[[Caos/registros/metodo-onda-1/1.5-costura-smoke/verificacao-dike|verificacao-dike]]"
+---
+
 # Diff cirúrgico — Sub-onda 1.5 (SEM CORREÇÕES NECESSÁRIAS + comparação baseline)
 
 > **Contrato:** `m-20260706-metodo-kolden` · Sub-onda 1.5 — costura + smoke + Dike + baseline

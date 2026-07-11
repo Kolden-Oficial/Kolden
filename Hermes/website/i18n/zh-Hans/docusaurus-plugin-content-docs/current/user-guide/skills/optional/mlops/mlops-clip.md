@@ -2,6 +2,9 @@
 title: "Clip — OpenAI 连接视觉与语言的模型"
 sidebar_label: "Clip"
 description: "OpenAI 连接视觉与语言的模型"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

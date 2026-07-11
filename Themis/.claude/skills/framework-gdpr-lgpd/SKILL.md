@@ -1,6 +1,9 @@
 ---
 name: framework-gdpr-lgpd
 description: Use quando o pedido envolver conformidade regulatória com GDPR (regulamento UE 2016/679) ou LGPD brasileira (lei 13.709/2018) — decisão de base legal, categoria de dado, direitos do titular, resposta a incidente de segurança, papel do DPO, contratos entre controlador e operador, ou transferência internacional de dados. Framework fundido que trata as duas leis lado a lado e sinaliza onde divergem. Gatilhos "LGPD", "GDPR", "proteção de dados", "base legal", "direito do titular", "vazamento de dado", "notificar ANPD", "DPO", "transferência internacional", "adequacy decision". NÃO substitui parecer de advogado — é ferramenta operacional. Dono operacional exclusivo desta habilidade — `analista-de-compliance-regulatorio` (Themis).
+tipo: skill
+area: Themis
+up: "[[Themis/_MOC-themis]]"
 ---
 
 # Framework GDPR + LGPD

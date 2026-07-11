@@ -17,6 +17,9 @@ allowed-tools:
   - Grep
   - Glob
   - AskUserQuestion
+tipo: skill
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
 ---
 
 # Arquitetura enterprise PPC — como estruturar contas $10K-$10M/mês (PT-BR)

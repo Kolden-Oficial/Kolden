@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
+---
+
 # Schema canônico — Especialista histórico
 
 Referência única para o **bloco de herança de inteligência** de um especialista baseado em pessoa

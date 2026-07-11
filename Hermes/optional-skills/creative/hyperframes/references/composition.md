@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/hyperframes/references/cli|cli]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/features|features]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/gsap|gsap]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/troubleshooting|troubleshooting]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/website-to-video|website-to-video]]"
+---
+
 # Composition Authoring
 
 HTML structure, data attributes, timeline contract, and non-negotiable rules.

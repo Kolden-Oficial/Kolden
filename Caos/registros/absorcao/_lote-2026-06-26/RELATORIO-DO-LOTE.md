@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/_lote-2026-06-26/_indice|_indice]]"
+---
+
 # RELATÓRIO DO LOTE — Absorção dos repositórios da planilha (2026-06-26/27)
 
 > **Para:** Ronan · **Por:** Hermes (orquestrador) · **Modo:** solo autônomo (você off 24h)

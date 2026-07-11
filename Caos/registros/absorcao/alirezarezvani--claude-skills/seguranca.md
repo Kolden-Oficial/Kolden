@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/alirezarezvani--claude-skills/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/alirezarezvani--claude-skills/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática (F2) — alirezarezvani--claude-skills
 
 - **slug:** alirezarezvani--claude-skills

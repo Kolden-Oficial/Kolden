@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/microsoft--markitdown/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/microsoft--markitdown/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades (F3) — microsoft--markitdown
 
 Rota B (vendor). Inventário enxuto: a capacidade-núcleo é converter arquivos diversos

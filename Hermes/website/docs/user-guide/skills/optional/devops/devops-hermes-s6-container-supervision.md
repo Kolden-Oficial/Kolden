@@ -2,6 +2,14 @@
 title: "Hermes S6 Container Supervision"
 sidebar_label: "Hermes S6 Container Supervision"
 description: "Modify, debug, or extend the s6-overlay supervision tree inside the Hermes Agent Docker image — adding new services, debugging profile gateways, understandin..."
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/devops/devops-cli|devops-cli]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/devops/devops-docker-management|devops-docker-management]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/devops/devops-pinggy-tunnel|devops-pinggy-tunnel]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/devops/devops-watchers|devops-watchers]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

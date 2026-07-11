@@ -3,6 +3,9 @@ name: aiox-sm
 description: "Ativa River (sm) para Scrum Master. Use para criação de user stories a partir do PRD, validação de stories e verificação de completude, definição de critérios de aceite, refinamento de stories, planejamento de sprint, refinamento de backlog, retrospectivas, facilitação do daily standup fa..."
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: generated -->

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/docs/standards/_indice|_indice]]"
+---
+
 # AIOX Framework - Livro de Ouro v4.2 (Complete)
 
 ## O Sistema Operacional Definitivo para Orquestração de Agentes IA

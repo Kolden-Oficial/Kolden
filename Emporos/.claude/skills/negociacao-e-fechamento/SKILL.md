@@ -7,6 +7,9 @@ description: >
   (preço/prazo/escopo fora da política vira exceção a escalar, nunca decisão local). Gatilhos: "negociar",
   "objeção", "desconto", "fechar", "closing", "o cliente travou", "está caro", "concessão". Donos:
   redator-de-propostas + emporos-chief.
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # Negociação e Fechamento

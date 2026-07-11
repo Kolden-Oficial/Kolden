@@ -8,6 +8,9 @@ description: >
   "contratar", "descrição de cargo", "job description", "recrutamento", "seleção", "sourcing",
   "triagem", "entrevista", "roteiro de entrevista", "carta-proposta", "oferta". Faixa salarial é com
   a habilidade politicas-e-cargos; integração do contratado é com onboarding-estruturado.
+tipo: skill
+area: Hestia
+up: "[[Hestia/_MOC-hestia]]"
 ---
 
 # Recrutamento e Seleção

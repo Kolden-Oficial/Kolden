@@ -3,6 +3,9 @@ sidebar_position: 11
 sidebar_label: "Plugins"
 title: "Plugins"
 description: "通过插件系统为 Hermes 添加自定义工具、hook 和集成"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Plugins

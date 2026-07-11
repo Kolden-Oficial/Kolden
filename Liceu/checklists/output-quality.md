@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+---
+
 # Checklist de Candura de Saída — Liceu (Biblioteca de Mentes)
 
 **ID do Checklist:** LICEU-CL-001

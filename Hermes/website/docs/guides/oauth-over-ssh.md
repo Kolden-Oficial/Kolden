@@ -2,6 +2,11 @@
 sidebar_position: 17
 title: "OAuth over SSH / Remote Hosts"
 description: "How to complete browser-based OAuth (xAI, Spotify, MCP servers) when Hermes runs on a remote machine, container, or behind a jump box"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # OAuth over SSH / Remote Hosts

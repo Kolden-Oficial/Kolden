@@ -2,6 +2,9 @@
 title: "电话功能 — 无需修改核心工具即可赋予 Hermes 电话能力"
 sidebar_label: "Telephony"
 description: "无需修改核心工具即可赋予 Hermes 电话能力"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

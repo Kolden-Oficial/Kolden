@@ -3,6 +3,9 @@ name: integracao-pos-fusao-pmi
 description: Use quando o Zeus (com Plutos) precisar planejar ou executar a integração pós-fusão/aquisição (PMI = Post-Merger Integration) — Day-1 checklist, plano dos 100 dias, synergy tracker, Transition Service Agreement (TSA), workstreams cross-funcionais e detecção precoce de erosão de valor. Cobre tanto compra pela Kolden (integrar alvo) quanto Kolden sendo integrada (a jornada inversa). NÃO use para AVALIAR o alvo pré-deal (isso é Zeus `ma_evaluation_criteria` + due diligence financeira do Plutos/Pactolo — ROADMAP). Aqui é o pós-assinatura: como capturar a sinergia sem destruir o valor pago.
 invocavel_por: [zeus, plutos]
 tags: [pmi, m-a, integracao, day-one, 100-day, sinergia, tsa, olimpo]
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Integração Pós-Fusão (PMI)

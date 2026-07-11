@@ -2,6 +2,9 @@
 sidebar_position: 5
 title: "定时任务（Cron）"
 description: "用自然语言调度自动化任务，通过单一 cron 工具管理，并附加一个或多个 skill"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 定时任务（Cron）

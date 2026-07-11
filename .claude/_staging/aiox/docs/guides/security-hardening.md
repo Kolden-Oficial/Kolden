@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/README|README]]"
+---
+
 # AIOX Security Hardening Guide
 
 > **EN** | [PT](../pt/guides/security-hardening.md) | [ES](../es/guides/security-hardening.md)

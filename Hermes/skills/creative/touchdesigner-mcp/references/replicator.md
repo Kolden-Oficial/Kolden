@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/touchdesigner-mcp/references/_indice|_indice]]"
+---
+
 # Replicator COMP Reference
 
 The `replicatorCOMP` clones a template operator N times, driven by a table of data. The fundamental TD pattern for data-driven networks: button grids, scene rosters, dynamic UI, parameter panels per-channel.

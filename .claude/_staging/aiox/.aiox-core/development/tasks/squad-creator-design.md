@@ -21,6 +21,11 @@ Checklist:
   - "[ ] Apply user adjustments"
   - "[ ] Generate blueprint file"
   - "[ ] Display next steps"
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # *design-squad

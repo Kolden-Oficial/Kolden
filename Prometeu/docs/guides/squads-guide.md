@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # Squad Development Guide
 
 > **EN** | [PT](../pt/guides/squads-guide.md) | [ES](../es/guides/squads-guide.md)

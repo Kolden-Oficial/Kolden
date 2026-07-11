@@ -19,6 +19,11 @@ Checklist:
   - [ ] Verificar a qualidade do conteúdo
   - [ ] Formatar o resultado para saída
   - [ ] Criar story de correção se solicitado
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # \*validate-tech-preset

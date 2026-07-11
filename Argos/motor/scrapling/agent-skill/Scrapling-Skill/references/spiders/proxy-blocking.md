@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/spiders/_indice|_indice]]"
+---
+
 # Proxy management and handling Blocks
 
 Scrapling's `ProxyRotator` manages proxy rotation across requests. It works with all session types and integrates with the spider's blocked request retry system.

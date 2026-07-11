@@ -2,6 +2,9 @@
 title: "Jupyter Live Kernel — Iterative Python via live Jupyter kernel (hamelnb)"
 sidebar_label: "Jupyter Live Kernel"
 description: "Iterative Python via live Jupyter kernel (hamelnb)"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

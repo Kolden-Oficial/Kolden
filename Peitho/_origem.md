@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/README|README]]"
+---
+
 # Origem
 
 - **Repositório de origem:** `ohmyjahh/xquads-squads`

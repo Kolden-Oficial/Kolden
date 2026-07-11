@@ -2,6 +2,11 @@
 sidebar_position: 3
 title: "Agent Loop Internals"
 description: "Detailed walkthrough of AIAgent execution, API modes, tools, callbacks, and fallback behavior"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Agent Loop Internals

@@ -12,6 +12,9 @@ description: >-
 domain: ciberseguranca
 subdomain: seguranca-de-endpoint
 tags: [endpoint, edr, sysmon, persistencia, fileless, autoruns, osquery, amsi, lolbin, telemetria]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Segurança de Endpoint e EDR

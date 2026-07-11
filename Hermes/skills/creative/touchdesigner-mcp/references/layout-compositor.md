@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/touchdesigner-mcp/references/_indice|_indice]]"
+---
+
 # Layout Compositor Reference
 
 Patterns for building modular multi-panel grids — useful for HUD interfaces, data dashboards, and multi-source visual composites.

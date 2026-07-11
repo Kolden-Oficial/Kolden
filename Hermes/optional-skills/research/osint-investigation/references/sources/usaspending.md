@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/research/osint-investigation/references/sources/_indice|_indice]]"
+---
+
 # USAspending — Federal Government Contracts and Grants
 
 ## 1. Summary

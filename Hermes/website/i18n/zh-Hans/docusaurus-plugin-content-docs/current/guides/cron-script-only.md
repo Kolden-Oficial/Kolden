@@ -2,6 +2,9 @@
 sidebar_position: 13
 title: "纯脚本 Cron 任务（无 LLM）"
 description: "完全跳过 LLM 的经典看门狗 cron 任务——脚本按计划运行，其 stdout 输出直接投递到你的消息平台。内存告警、磁盘告警、CI 通知、定期健康检查。"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 纯脚本 Cron 任务

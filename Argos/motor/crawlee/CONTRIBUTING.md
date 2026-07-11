@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/README|README]]"
+---
+
 # Contributing
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.

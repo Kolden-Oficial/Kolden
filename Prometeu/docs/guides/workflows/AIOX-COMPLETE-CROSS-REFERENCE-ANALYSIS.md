@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/workflows/_indice|_indice]]"
+---
+
 # AIOX Complete Cross-Reference Analysis
 
 **Story:** AIOX-XREF-001

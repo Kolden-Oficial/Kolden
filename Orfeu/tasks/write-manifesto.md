@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Story of Self elaborada com origem pessoal autêntica"
   - "[ ] Story of Us constrói identidade compartilhada e pertencimento"
   - "[ ] Texto do manifesto tecido com grito de guerra"
+tipo: nota
+area: Orfeu
+up: "[[Orfeu/_MOC-orfeu]]"
+relacionado:
+  - "[[Orfeu/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Manifesto de Movimento/Marca

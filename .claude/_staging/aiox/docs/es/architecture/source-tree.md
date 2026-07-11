@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/architecture/_indice|_indice]]"
+---
+
 <!-- Traduccion: ES | Original: /docs/en/architecture/source-tree.md | Sincronizacion: 2026-01-26 -->
 
 > ⚠️ **OBSOLETO**: Este archivo se mantiene solo por compatibilidad hacia atras.

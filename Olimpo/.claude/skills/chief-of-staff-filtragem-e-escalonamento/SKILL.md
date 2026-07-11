@@ -3,6 +3,9 @@ name: chief-of-staff-filtragem-e-escalonamento
 description: Use ANTES de aceitar qualquer missão descendente pelo Zeus — filtra o inbox executivo pela lente Escalate/Handle/Park (matriz Chief-of-Staff) para que só o que exige mesa-CEO chegue à mesa-CEO. Aplica critérios de impacto no principal, reversibilidade e custo de oportunidade para decidir: (E) escala ao Zeus para decisão, (H) trata no nível certo sem subir, (P) parqueia com data de reavaliação. Capacidade META usada em TODO ciclo do Olimpo. NÃO use para roteamento entre deuses (isso é `routing_logic` do Zeus). Aqui é a peneira que decide se o item MERECE virar Contrato de Missão.
 invocavel_por: zeus
 tags: [chief-of-staff, filtragem, escalonamento, priorizacao, olimpo]
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Chief-of-Staff — Filtragem e Escalonamento

@@ -1,6 +1,9 @@
 ---
 name: verificacao-de-seguranca-de-repo
 description: Faz a verificação de segurança ESTÁTICA de um repositório de terceiro em quarentena, antes de qualquer leitura profunda ou absorção (Fase 2 do pipeline de ingestão). Use quando um repo do GitHub foi clonado em _staging/quarentena e precisa de veredito SAFE/QUARENTENA/REJEITAR. Reusa as tasks de SAST do Prometeu e o squad Egide; nunca executa o código. Segurança é a prioridade #1.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Verificação de segurança de repositório (Fase 2 — gate BLOCK)

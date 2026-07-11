@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # IDE Sync
 
 **Story 6.19** - IDE Command Auto-Sync System

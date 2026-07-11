@@ -2,6 +2,11 @@
 sidebar_position: 2
 title: "Environment Variables"
 description: "Complete reference of all environment variables used by Hermes Agent"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/reference/_indice|_indice]]"
 ---
 
 # Environment Variables Reference

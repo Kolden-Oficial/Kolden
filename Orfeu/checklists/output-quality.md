@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Orfeu
+up: "[[Orfeu/_MOC-orfeu]]"
+---
+
 # Checklist de Qualidade da Saída Narrativa
 
 **Checklist ID:** STORY-CL-001

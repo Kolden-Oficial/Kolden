@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/skills/synapse/references/brackets|brackets]]"
+  - "[[.claude/_staging/aiox/.claude/skills/synapse/references/commands|commands]]"
+  - "[[.claude/_staging/aiox/.claude/skills/synapse/references/domains|domains]]"
+  - "[[.claude/_staging/aiox/.claude/skills/synapse/references/manifest|manifest]]"
+---
+
 # SYNAPSE 8-Layer Architecture Reference
 
 ## Overview

@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F5 — Plano de aplicação · `msitarzewski--agency-agents@a597cb6` — bucket B04 (product)
 
 > **Bucket B04:** Aletheia (squad-alvo de discovery & validation, 10 IDs) + Prometeu (squad AIOX de PM/PO/SM, 10 IDs) + DESCARTADO (2 IDs).

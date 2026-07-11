@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Appropriate tool selected with reasoning"
   - "[ ] Command generated with inline documentation"
   - "[ ] Safety assessment completed with warnings"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/cybersecurity/tasks/_indice|_indice]]"
 ---
 
 # Task: Security Tool Command Generation

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os itens do checklist avaliados e pontuados"
   - "[ ] Veredito proferido (APROVAR/REVISAR/REJEITAR)"
   - "[ ] Feedback específico fornecido para quaisquer reprovações"
+tipo: nota
+area: Dionisio
+up: "[[Dionisio/_MOC-dionisio]]"
+relacionado:
+  - "[[Dionisio/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Revisar a Saída da Construção de Movimentos

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # PM Adapters
 
 Project Management tool adapters for AIOX. Enables story synchronization with various PM tools.

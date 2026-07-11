@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/skyvern/AGENTS|AGENTS]]"
+  - "[[Argos/motor/skyvern/CLAUDE|CLAUDE]]"
+  - "[[Argos/motor/skyvern/CODE_OF_CONDUCT|CODE_OF_CONDUCT]]"
+  - "[[Argos/motor/skyvern/CONTRIBUTING|CONTRIBUTING]]"
+  - "[[Argos/motor/skyvern/SECURITY|SECURITY]]"
+---
+
 <!-- DOCTOC SKIP -->
 
 <h1 align="center">

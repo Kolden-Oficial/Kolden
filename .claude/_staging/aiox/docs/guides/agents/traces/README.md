@@ -1,3 +1,24 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/00-shared-activation-pipeline|00-shared-activation-pipeline]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/00-shared-activation-pipeline.v1-act8|00-shared-activation-pipeline.v1-act8]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/aiox-master-execution-trace|aiox-master-execution-trace]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/analyst-execution-trace|analyst-execution-trace]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/architect-execution-trace|architect-execution-trace]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/data-engineer-execution-trace|data-engineer-execution-trace]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/dev-execution-trace|dev-execution-trace]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/devops-execution-trace|devops-execution-trace]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/pm-execution-trace|pm-execution-trace]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/po-execution-trace|po-execution-trace]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/qa-execution-trace|qa-execution-trace]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/sm-execution-trace|sm-execution-trace]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/squad-creation-execution-trace|squad-creation-execution-trace]]"
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/ux-design-expert-execution-trace|ux-design-expert-execution-trace]]"
+---
+
 # AIOX Agent Execution Traces - Index
 
 > **Story:** AIOX-TRACE-001 | **Traced from source code, not documentation.**

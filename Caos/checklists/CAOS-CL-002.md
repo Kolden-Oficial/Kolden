@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # CAOS-CL-002 v1.0 — Checklist de Verificação Dike (CANÔNICO)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (absorveu `m-20260705-redesenho-arquitetural-fase2` como Onda 1)

@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--01-produtos/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--01-produtos/reconciliacao|reconciliacao]]"
+---
+
 # Mapa de Decisão — Drive "01 | Produtos"
 
 > Fase F4 do protocolo de absorção sem perda. Disposição de TODO item do inventário (F3).

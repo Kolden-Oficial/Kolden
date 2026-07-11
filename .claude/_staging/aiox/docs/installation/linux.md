@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/installation/README|README]]"
+---
+
 # Linux Installation Guide for Synkra AIOX
 
 > 🌐 [EN](linux.md) | [PT](../pt/installation/linux.md) | [ES](../es/installation/linux.md)

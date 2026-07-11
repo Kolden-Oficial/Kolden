@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Segmentação de CLV completa com 4 faixas"
   - "[ ] Customer Health Score definido com 6 dimensões"
   - "[ ] Playbooks de intervenção projetados por nível de risco"
+tipo: nota
+area: Metis
+up: "[[Metis/_MOC-metis]]"
+relacionado:
+  - "[[Metis/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Otimizar Retenção

@@ -12,6 +12,9 @@ description: >
   loja individual (isso é Ariadne / `seo-ecommerce`) nem Amazon PPC (isso é Peitho).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Cross-border E-commerce — vender para fora com margem e compliance

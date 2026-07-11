@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/inference/outlines/references/examples|examples]]"
+  - "[[Hermes/optional-skills/mlops/inference/outlines/references/json_generation|json_generation]]"
+---
+
 # Backend Configuration Guide
 
 Complete guide to configuring Outlines with different model backends.

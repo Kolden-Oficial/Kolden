@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Threat model created with STRIDE analysis"
   - "[ ] All OWASP Top 10 categories tested"
   - "[ ] Remediation plan with code-level fix examples"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/cybersecurity/tasks/_indice|_indice]]"
 ---
 
 # Task: OWASP Application Security Audit

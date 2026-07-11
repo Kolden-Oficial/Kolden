@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Olimpo
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Olimpo/.claude/agents/olimpo-chief|olimpo-chief]]"
+---
+
 # Memória do Squad Olimpo (C-Level / Executivos)
 
 > Memória persistente do squad. Atualizada pelo Ritual de Encerramento. Não reescrever do zero —

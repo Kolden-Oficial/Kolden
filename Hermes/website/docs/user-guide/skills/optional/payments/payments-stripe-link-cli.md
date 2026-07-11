@@ -2,6 +2,12 @@
 title: "Stripe Link Cli — Agent payments via Stripe Link — cards, SPT, approvals"
 sidebar_label: "Stripe Link Cli"
 description: "Agent payments via Stripe Link — cards, SPT, approvals"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/payments/payments-mpp-agent|payments-mpp-agent]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/payments/payments-stripe-projects|payments-stripe-projects]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

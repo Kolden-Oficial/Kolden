@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/guides/README|README]]"
+---
+
 # 构建恢复指南
 
 > [EN](../../guides/build-recovery-guide.md) | **ZH**

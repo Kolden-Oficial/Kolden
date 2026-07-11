@@ -1,6 +1,12 @@
 ---
 id: upgrading-to-v2
 title: Upgrading to v2
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/docs/upgrading/upgrading_v1|upgrading_v1]]"
+  - "[[Argos/motor/crawlee/docs/upgrading/upgrading_v3|upgrading_v3]]"
 ---
 
 - **BREAKING**: Require Node.js >=15.10.0 because HTTP2 support on lower Node.js versions is very buggy.

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/guides/README|README]]"
+---
+
 <!--
   Tradução: PT-BR
   Original: /docs/guides/agent-selection-guide.md

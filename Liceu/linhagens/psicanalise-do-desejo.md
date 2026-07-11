@@ -7,6 +7,11 @@ status: vigente
 atualizado-em: 2026-06-22
 mentes: [sigmund-freud, edward-bernays, ernest-dichter, vance-packard, louis-cheskin, carl-jung, jacques-lacan, victor-gruen, philip-kotler, roland-barthes]
 frameworks_derivados: [matriz-de-desejo-inconsciente]
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/linhagens/_indice|_indice]]"
 ---
 
 # Linhagem: A psicanálise do desejo aplicada ao consumo

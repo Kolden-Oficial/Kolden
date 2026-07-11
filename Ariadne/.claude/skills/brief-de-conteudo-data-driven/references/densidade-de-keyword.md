@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/.claude/skills/brief-de-conteudo-data-driven/references/dominios-excluidos|dominios-excluidos]]"
+  - "[[Ariadne/.claude/skills/brief-de-conteudo-data-driven/references/templates-por-tipo-de-pagina|templates-por-tipo-de-pagina]]"
+---
+
 # Densidade e colocação de keyword
 
 ## Densidade da primária

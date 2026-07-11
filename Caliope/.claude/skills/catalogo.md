@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+---
+
 # Catálogo de Habilidades — Calíope
 
 Índice da habilidade do squad Calíope (copywriting).

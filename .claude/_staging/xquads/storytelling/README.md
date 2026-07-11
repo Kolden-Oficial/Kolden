@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Storytelling Squad
 
 12 masters spanning mythology, screenwriting, personal narrative, pitching, and presentations.

@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--03-clientes/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/drive--03-clientes/reconciliacao|reconciliacao]]"
+---
+
 # Inventário — Área "03 | Clientes" do Drive da Kolden
 
 > Fase F3 do protocolo de absorção sem perda. Inventário **agregado por cliente/projeto**

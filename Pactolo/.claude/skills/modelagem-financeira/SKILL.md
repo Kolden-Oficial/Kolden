@@ -7,6 +7,9 @@ description: >
   (o BP fecha, o caixa do DFC bate o BP) e o ponto de equilíbrio. Todo modelo expõe suas premissas. Gatilhos:
   "modelo financeiro", "projeção", "três demonstrações", "cenário", "sensibilidade", "what-if", "break-even",
   "ponto de equilíbrio". Dono: modelador-financeiro. Decisão de capital/preço → handoff ao Plutos (Olimpo/CFO).
+tipo: skill
+area: Pactolo
+up: "[[Pactolo/_MOC-pactolo]]"
 ---
 
 # Modelagem Financeira

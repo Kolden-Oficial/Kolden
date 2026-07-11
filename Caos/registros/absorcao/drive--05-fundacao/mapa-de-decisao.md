@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--05-fundacao/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--05-fundacao/reconciliacao|reconciliacao]]"
+---
+
 # Mapa de decisão — Drive "05 | Fundação" (F4)
 
 > Para cada item do inventário (F3): ABSORVER / DESCARTAR / DEFER.

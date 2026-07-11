@@ -2,6 +2,11 @@
 sidebar_position: 1
 title: "Nous Portal"
 description: "One subscription, 300+ frontier models, the Tool Gateway, and Nous Chat — the recommended way to run Hermes Agent"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/integrations/index|index]]"
 ---
 
 # Nous Portal

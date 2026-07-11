@@ -2,6 +2,14 @@
 title: "Inference Sh Cli — Run 150+ AI apps via inference"
 sidebar_label: "Inference Sh Cli"
 description: "Run 150+ AI apps via inference"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/devops/devops-docker-management|devops-docker-management]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/devops/devops-hermes-s6-container-supervision|devops-hermes-s6-container-supervision]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/devops/devops-pinggy-tunnel|devops-pinggy-tunnel]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/devops/devops-watchers|devops-watchers]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

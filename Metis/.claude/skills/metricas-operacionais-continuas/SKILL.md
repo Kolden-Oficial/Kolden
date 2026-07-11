@@ -12,6 +12,9 @@ agente_dono: [metis-estatistico]
 tags: [metrica-operacional, baseline, controle-estatistico, six-sigma, kpi-de-processo]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G16)
 status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)
+tipo: skill
+area: Metis
+up: "[[Metis/_MOC-metis]]"
 ---
 
 <!--

@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 03 — Lote 9 (parcial) + Lotes intercalados: 5 squads nascido-no-caos (formato Kolden-native)
 
 > Cobertura: **Aletheia, Argos, Liceu, Pheme, Ariadne** — 5 squads criados pelo Ritual de 9 fases do Caos.

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/mlops/models/audiocraft/references/advanced-usage|advanced-usage]]"
+---
+
 # AudioCraft Troubleshooting Guide
 
 ## Installation Issues

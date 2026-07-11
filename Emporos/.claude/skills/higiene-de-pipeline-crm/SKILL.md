@@ -6,6 +6,9 @@ description: >
   ponderado por estágio. O GHL é o sistema de registro do ciclo comercial. Gatilhos: "pipeline", "CRM",
   "GHL", "oportunidade", "estágio", "forecast", "previsão de vendas", "limpar pipeline", "deal parado",
   "atualizar deal", "próximo passo". Dono: gestor-de-crm. Credenciais GHL SEMPRE via Infisical.
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # Higiene de Pipeline no CRM (GHL)

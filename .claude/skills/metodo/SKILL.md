@@ -1,6 +1,9 @@
 ---
 name: metodo
 description: Use SEMPRE quando o Ronan (ou qualquer agente Kolden) perguntar sobre o Método Kolden, sobre a padronização de agents, sobre a hierarquia de 5 camadas, sobre a convenção `@` vs `/`, sobre os 8 critérios canônicos, sobre os 12 princípios, sobre os 5 buckets de capacidade, sobre o rito de padronização das Ondas 2-26, ou sobre o papel do Dike. Use TAMBÉM quando alguém disser "aplique o Método", "está seguindo o Método?", "isso está no METODO-KOLDEN?", "o que diz o Método sobre X?", "por que temos essa convenção?", "de quem herdamos X?" (Amodei/Russell/Simon/Brooks/Bostrom/Bai/Yao/Olah/Anthropic MCP/framework do Liceu), ou "quais são os artigos da Constituição do Caos v2.5?". Fonte-de-verdade única: `C:\Kolden\METODO-KOLDEN.md v1.0`.
+tipo: skill
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
 ---
 
 # /metodo — Método Kolden v1.0

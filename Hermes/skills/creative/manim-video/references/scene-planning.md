@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/manim-video/references/_indice|_indice]]"
+---
+
 # Scene Planning Reference
 
 ## Narrative Arc Structures

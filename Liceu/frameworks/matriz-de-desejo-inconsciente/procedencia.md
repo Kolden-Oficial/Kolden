@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/frameworks/matriz-de-desejo-inconsciente/framework|framework]]"
+---
+
 # Procedência — Matriz de Desejo Inconsciente
 
 > O veto do `sintetizador`: **nenhum passo de framework sem procedência**. Cada alavarca abaixo é

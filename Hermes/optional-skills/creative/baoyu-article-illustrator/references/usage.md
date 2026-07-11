@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/prompt-construction|prompt-construction]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/style-presets|style-presets]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/styles|styles]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/workflow|workflow]]"
+---
+
 # Usage
 
 This skill is triggered by natural language in Hermes — no slash command or CLI flags.

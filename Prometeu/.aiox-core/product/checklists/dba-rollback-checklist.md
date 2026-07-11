@@ -1,3 +1,11 @@
+---
+tipo: checklist
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/checklists/_indice|_indice]]"
+---
+
 # DBA Rollback Checklist
 
 ## Instructions for Data Engineer Agent

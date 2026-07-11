@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 ## ROLE
 Technical content extractor. Simulates Exa's content extraction when reading pages.
 

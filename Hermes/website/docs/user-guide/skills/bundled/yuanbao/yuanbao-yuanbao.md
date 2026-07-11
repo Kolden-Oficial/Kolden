@@ -2,6 +2,9 @@
 title: "Yuanbao — Yuanbao (元宝) groups: @mention users, query info/members"
 sidebar_label: "Yuanbao"
 description: "Yuanbao (元宝) groups: @mention users, query info/members"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

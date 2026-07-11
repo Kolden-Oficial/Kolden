@@ -4,6 +4,9 @@ description: Use ao escrever a spec ou ao decompor uma feature grande, quando pr
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Fatiamento de MVP por História

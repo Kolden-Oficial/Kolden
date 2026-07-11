@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/torchtitan/references/custom-models|custom-models]]"
+  - "[[Hermes/optional-skills/mlops/torchtitan/references/float8|float8]]"
+  - "[[Hermes/optional-skills/mlops/torchtitan/references/fsdp|fsdp]]"
+---
+
 # Checkpointing in TorchTitan
 
 TorchTitan uses PyTorch Distributed Checkpoint (DCP) for fault-tolerant, interoperable checkpointing.

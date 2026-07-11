@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task: Analisar Performance
 
 **Propósito**: Análise e otimização de performance de queries (explain plans, detecção de hotpaths, otimização interativa)

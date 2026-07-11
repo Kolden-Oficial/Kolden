@@ -2,6 +2,12 @@
 title: "Mpp Agent — Pay HTTP 402 APIs via Machine Payments Protocol (MPP)"
 sidebar_label: "Mpp Agent"
 description: "Pay HTTP 402 APIs via Machine Payments Protocol (MPP)"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/payments/payments-stripe-link-cli|payments-stripe-link-cli]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/payments/payments-stripe-projects|payments-stripe-projects]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

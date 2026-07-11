@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/affaan-m--everything-claude-code/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/affaan-m--everything-claude-code/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades (F3) — affaan-m--everything-claude-code
 
 - **slug:** affaan-m--everything-claude-code · **sha:** 2bc924faf2f8e893bfe0af86b1931283693c30ae · **rota:** A

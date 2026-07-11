@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/external-executors/codex|codex]]"
+---
+
 # External Executors
 
 External executors let one AIOX runtime keep orchestration authority while another CLI runtime performs the implementation work in an isolated run directory.

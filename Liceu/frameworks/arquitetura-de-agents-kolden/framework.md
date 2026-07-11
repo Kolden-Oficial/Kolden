@@ -23,6 +23,11 @@ insumos:
 handoff_fase_2:
   destino: "Sessão futura em C:\\Kolden\\Caos\\"
   contrato_esperado: "m-20260705-redesenho-arquitetural-fase2.yaml (a lavrar)"
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/frameworks/arquitetura-de-agents-kolden/procedencia|procedencia]]"
 ---
 
 # Arquitetura de Agents Kolden — Framework Operacional Destilado

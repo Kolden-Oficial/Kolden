@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/architecture/_indice|_indice]]"
+---
+
 # 命令权限矩阵
 
 此矩阵定义了 AIOX 代理之间的主要命令所有权，以避免重叠和冲突执行。

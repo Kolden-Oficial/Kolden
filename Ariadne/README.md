@@ -1,3 +1,16 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/_origem|_origem]]"
+  - "[[Ariadne/CLAUDE|CLAUDE]]"
+  - "[[Ariadne/ferramentas|ferramentas]]"
+  - "[[Ariadne/instalacao|instalacao]]"
+  - "[[Ariadne/prd-de-ia|prd-de-ia]]"
+  - "[[Ariadne/roteiro-de-teste|roteiro-de-teste]]"
+---
+
 # Ariadne — Squad de Execução de SEO & CRO de Página
 
 Ariadne é o squad de **execução** de SEO e otimização de conversão da Kolden — 8 agentes (1 orquestradora

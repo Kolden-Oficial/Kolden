@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--03-clientes/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--03-clientes/reconciliacao|reconciliacao]]"
+---
+
 # Mapa de Decisão — Área "03 | Clientes"
 
 > Fase F4. Disposição por cliente/projeto. Os dossiês JÁ EXISTEM em

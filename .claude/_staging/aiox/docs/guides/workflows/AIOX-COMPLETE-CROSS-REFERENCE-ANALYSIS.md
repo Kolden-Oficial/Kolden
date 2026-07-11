@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/workflows/_indice|_indice]]"
+---
+
 # AIOX Complete Cross-Reference Analysis
 
 **Story:** AIOX-XREF-001

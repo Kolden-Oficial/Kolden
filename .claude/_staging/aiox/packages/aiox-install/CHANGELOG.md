@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/packages/aiox-install/README|README]]"
+---
+
 # Changelog - @aiox-squads/aiox-install
 
 All notable changes to this package will be documented in this file.

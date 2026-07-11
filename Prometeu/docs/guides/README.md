@@ -1,3 +1,43 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/ade-guide|ade-guide]]"
+  - "[[Prometeu/docs/guides/agent-selection-guide|agent-selection-guide]]"
+  - "[[Prometeu/docs/guides/aiox-pro-access|aiox-pro-access]]"
+  - "[[Prometeu/docs/guides/api-reference|api-reference]]"
+  - "[[Prometeu/docs/guides/build-recovery-guide|build-recovery-guide]]"
+  - "[[Prometeu/docs/guides/code-graph-mcp-setup|code-graph-mcp-setup]]"
+  - "[[Prometeu/docs/guides/config-migration-guide|config-migration-guide]]"
+  - "[[Prometeu/docs/guides/contextual-greeting-system-guide|contextual-greeting-system-guide]]"
+  - "[[Prometeu/docs/guides/contributing-squads|contributing-squads]]"
+  - "[[Prometeu/docs/guides/development-setup|development-setup]]"
+  - "[[Prometeu/docs/guides/ide-sync-guide|ide-sync-guide]]"
+  - "[[Prometeu/docs/guides/IDS-CONCEITOS-EXPLICADOS|IDS-CONCEITOS-EXPLICADOS]]"
+  - "[[Prometeu/docs/guides/installation-troubleshooting|installation-troubleshooting]]"
+  - "[[Prometeu/docs/guides/llm-routing|llm-routing]]"
+  - "[[Prometeu/docs/guides/mcp-global-setup|mcp-global-setup]]"
+  - "[[Prometeu/docs/guides/MEMORY-INTEGRATION|MEMORY-INTEGRATION]]"
+  - "[[Prometeu/docs/guides/MEMORY-INTELLIGENCE-SYSTEM|MEMORY-INTELLIGENCE-SYSTEM]]"
+  - "[[Prometeu/docs/guides/MEMORY-SYSTEM|MEMORY-SYSTEM]]"
+  - "[[Prometeu/docs/guides/permission-modes|permission-modes]]"
+  - "[[Prometeu/docs/guides/project-status-feature|project-status-feature]]"
+  - "[[Prometeu/docs/guides/quality-dashboard|quality-dashboard]]"
+  - "[[Prometeu/docs/guides/quality-gates|quality-gates]]"
+  - "[[Prometeu/docs/guides/release-procedure|release-procedure]]"
+  - "[[Prometeu/docs/guides/security-hardening|security-hardening]]"
+  - "[[Prometeu/docs/guides/service-discovery|service-discovery]]"
+  - "[[Prometeu/docs/guides/squad-migration|squad-migration]]"
+  - "[[Prometeu/docs/guides/squads-guide|squads-guide]]"
+  - "[[Prometeu/docs/guides/squads-overview|squads-overview]]"
+  - "[[Prometeu/docs/guides/supabase-ops-handoff|supabase-ops-handoff]]"
+  - "[[Prometeu/docs/guides/template-engine-v2|template-engine-v2]]"
+  - "[[Prometeu/docs/guides/testing-guide|testing-guide]]"
+  - "[[Prometeu/docs/guides/user-guide|user-guide]]"
+  - "[[Prometeu/docs/guides/workflows-guide|workflows-guide]]"
+---
+
 # AIOX Guides
 
 > **EN** | [PT](../pt/guides/README.md) | [ES](../es/guides/README.md)

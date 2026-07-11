@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/tones/_indice|_indice]]"
+---
+
 # warm
 
 温馨基调 - Nostalgic, personal, comforting

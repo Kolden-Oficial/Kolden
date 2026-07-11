@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # Gatilhos, camadas (preamble-tier) e context_queries
 
 Detalhamento dos mecanismos de descoberta avançada herdados do `garrytan--gstack`

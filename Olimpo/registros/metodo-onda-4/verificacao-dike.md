@@ -1,3 +1,15 @@
+---
+tipo: registro
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/registros/metodo-onda-4/diff-cirurgico|diff-cirurgico]]"
+  - "[[Olimpo/registros/metodo-onda-4/matriz-de-conformidade|matriz-de-conformidade]]"
+  - "[[Olimpo/registros/metodo-onda-4/PROMPT-DE-ABERTURA|PROMPT-DE-ABERTURA]]"
+  - "[[Olimpo/registros/metodo-onda-4/sumario-executivo|sumario-executivo]]"
+  - "[[Olimpo/registros/metodo-onda-4/verificacao-dike-delta|verificacao-dike-delta]]"
+---
+
 # Verificação Dike — Onda 4 do METODO Kolden (Olimpo)
 
 > **Checklist canônico:** `C:\Kolden\Caos\checklists\CAOS-CL-002.md` v1.0 CANÔNICO (ratificado 2026-07-09)

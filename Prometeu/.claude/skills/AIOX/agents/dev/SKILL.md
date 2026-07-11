@@ -3,6 +3,9 @@ name: aiox-dev
 description: "Ativa o Dex (dev) como Desenvolvedor Full Stack. Use para implementação de código, depuração, refatoração e boas práticas de desenvolvimento"
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: gerado -->

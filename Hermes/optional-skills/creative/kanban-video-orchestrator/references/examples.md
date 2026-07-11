@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/intake|intake]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/kanban-setup|kanban-setup]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/monitoring|monitoring]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/role-archetypes|role-archetypes]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/tool-matrix|tool-matrix]]"
+---
+
 # Worked Examples
 
 Six concrete pipelines covering different video styles. Each shows the team

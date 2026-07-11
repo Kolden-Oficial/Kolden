@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task: Aplicar Template de PolÃ­tica RLS
 
 **PropÃ³sito**: Instalar polÃ­ticas RLS KISS ou granulares em uma tabela

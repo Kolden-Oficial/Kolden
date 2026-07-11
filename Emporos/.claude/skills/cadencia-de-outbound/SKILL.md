@@ -7,6 +7,9 @@ description: >
   follow-up de retomada — sempre respeitando o destinatário (sem blast). Gatilhos: "cadência", "outbound",
   "cold email", "sequência de outreach", "prospecção", "prospectar", "follow-up", "abrir conversa",
   "lista de prospects", "Apollo". Dono: executivo-de-cadencia. Apollo/Common Room/GHL via Infisical.
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # Cadência de Outbound

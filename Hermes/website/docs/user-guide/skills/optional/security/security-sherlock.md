@@ -2,6 +2,14 @@
 title: "Sherlock — OSINT username search across 400+ social networks"
 sidebar_label: "Sherlock"
 description: "OSINT username search across 400+ social networks"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/security/security-1password|security-1password]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/security/security-godmode|security-godmode]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/security/security-oss-forensics|security-oss-forensics]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/security/security-web-pentest|security-web-pentest]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

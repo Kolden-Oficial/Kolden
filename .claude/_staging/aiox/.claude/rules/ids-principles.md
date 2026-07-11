@@ -3,6 +3,11 @@ paths:
   - ".aiox-core/**"
   - "packages/**"
   - "bin/**"
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/rules/_indice|_indice]]"
 ---
 
 # IDS Principles — Detailed Rules

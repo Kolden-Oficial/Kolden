@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/README|README]]"
+---
+
 # 棕地项目UI/前端增强工作流
 
 > **ID：** `brownfield-ui`

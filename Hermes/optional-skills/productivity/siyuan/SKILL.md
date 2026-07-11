@@ -20,6 +20,9 @@ required_environment_variables:
   - name: SIYUAN_URL
     prompt: SiYuan instance URL (default http://127.0.0.1:6806)
     required_for: remote instances
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # SiYuan Note API

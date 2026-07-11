@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/mcp/vscode-coach/README|README]]"
+---
+
 # PRD — MCP `vscode-coach`
 
 > **Tipo:** PRD de MCP (não de agente — agente operador já existe: Piper em Dédalo)

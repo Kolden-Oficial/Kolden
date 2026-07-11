@@ -1,6 +1,9 @@
 ---
 name: aiox-data-engineer
 description: Database Architect & Operations Engineer (Dara). Use for database design, schema architecture, Supabase configuration, RLS policies, migrations, query optimization, data modelin...
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # AIOX Database Architect & Operations Engineer Activator

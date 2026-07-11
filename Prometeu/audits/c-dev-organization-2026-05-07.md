@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/audits/README|README]]"
+---
+
 # Audit — `C:/dev` Workspace Organization
 
 **Date:** 2026-05-07

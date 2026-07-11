@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/README|README]]"
+---
+
 <!-- Traduccion: ES | Original: /docs/en/CHANGELOG.md | Sincronizacion: 2026-01-26 -->
 
 # Registro de Cambios

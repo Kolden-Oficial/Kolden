@@ -2,6 +2,11 @@
 sidebar_position: 8
 title: "Code Execution"
 description: "Programmatic Python execution with RPC tool access — collapse multi-step workflows into a single turn"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Code Execution (Programmatic Tool Calling)

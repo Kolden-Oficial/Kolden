@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/revfactory--harness/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/revfactory--harness/seguranca|seguranca]]"
+---
+
 # Mapa de decisão — revfactory--harness
 
 Comparação item-a-item contra o registro de entidades e as skills do Caos

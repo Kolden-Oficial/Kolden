@@ -4,6 +4,9 @@ description: Use quando precisar decidir COMO fazer deploy de uma nova versão s
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Estratégias de Deploy Zero-Downtime

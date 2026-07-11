@@ -2,6 +2,11 @@
 sidebar_position: 7
 title: "Sessions"
 description: "Session persistence, resume, search, management, and per-platform session tracking"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/_indice|_indice]]"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

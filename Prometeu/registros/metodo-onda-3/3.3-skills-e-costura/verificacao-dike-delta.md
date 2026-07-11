@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/registros/metodo-onda-3/3.3-skills-e-costura/_indice|_indice]]"
+---
+
 # Verificação Dike Delta INDEPENDENTE — Sub-onda 3.3 (cobre Sub-ondas 3.1+3.2+3.3 consolidadas)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (Onda 3 · Sub-onda 3.3).

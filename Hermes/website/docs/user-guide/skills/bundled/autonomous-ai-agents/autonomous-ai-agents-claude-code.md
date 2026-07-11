@@ -2,6 +2,14 @@
 title: "Claude Code — Delegate coding to Claude Code CLI (features, PRs)"
 sidebar_label: "Claude Code"
 description: "Delegate coding to Claude Code CLI (features, PRs)"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-codex|autonomous-ai-agents-codex]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-hermes-agent|autonomous-ai-agents-hermes-agent]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-kanban-codex-lane|autonomous-ai-agents-kanban-codex-lane]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-opencode|autonomous-ai-agents-opencode]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

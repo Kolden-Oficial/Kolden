@@ -6,6 +6,9 @@ description: >-
   "termo de uso", "due diligence de fornecedor", "rescisão", "indenização", "limitação de
   responsabilidade" ou "assinatura". Produz resumo executivo + tabela de risco por cláusula + lista de
   itens que exigem advogado. Não aprova nem assina — sinaliza risco.
+tipo: skill
+area: Nomos
+up: "[[Nomos/_MOC-nomos]]"
 ---
 
 # Revisão de Contratos

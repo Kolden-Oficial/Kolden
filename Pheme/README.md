@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+---
+
 # Pheme — Squad de Social Media & Conteúdo de Alta Performance
 
 > **Pheme** (Φήμη) é a deusa grega da fama, do renome e do boato que se espalha. Este squad existe para fazer a **marca Kolden** ser falada — e crescer organicamente até **+100k seguidores**.

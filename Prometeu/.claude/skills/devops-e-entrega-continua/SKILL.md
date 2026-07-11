@@ -4,6 +4,9 @@ description: Use ao projetar pipeline de CI/CD, escrever infraestrutura como có
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # DevOps & Entrega Contínua

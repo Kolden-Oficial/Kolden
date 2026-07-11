@@ -2,6 +2,11 @@
 title: "Darwinian Evolver — Evolve prompts/regex/SQL/code with Imbue's evolution loop"
 sidebar_label: "Darwinian Evolver"
 description: "Evolve prompts/regex/SQL/code with Imbue's evolution loop"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/research/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

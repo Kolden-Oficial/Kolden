@@ -7,6 +7,9 @@ description: >
   PERCEPÇÃO (clima qualitativo); pesquisa é anônima e confidencial. Gatilhos: "cultura", "clima",
   "pesquisa de clima", "engajamento", "eNPS", "valores", "saúde organizacional", "org health",
   "rituais", "retenção", "turnover". Dashboard pesado de people data é handoff ao Metis.
+tipo: skill
+area: Hestia
+up: "[[Hestia/_MOC-hestia]]"
 ---
 
 # Cultura e Engajamento

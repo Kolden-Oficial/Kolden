@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/governance/README|README]]"
+---
+
 # Squad Activation Strategy — Conditional Consult-First Routing
 
 **Status:** Draft v1.0

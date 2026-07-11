@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/README|README]]"
+---
+
 # Origem — Caliope
 
 - **Repositório de origem:** `ohmyjahh/xquads-squads`

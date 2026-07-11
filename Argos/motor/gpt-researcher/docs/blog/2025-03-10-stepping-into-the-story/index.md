@@ -4,6 +4,9 @@ title: Stepping Into the Story of GPT Researcher
 authors: [elishakay]
 tags: [ai, gpt-researcher, prompts, dreams, community]
 image: https://github.com/user-attachments/assets/f6e8a6b5-12f8-4faa-ae99-6a2fbaf23cc1
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 ![GPTR reflecting ourselves](https://github.com/user-attachments/assets/f6e8a6b5-12f8-4faa-ae99-6a2fbaf23cc1)
 

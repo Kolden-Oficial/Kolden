@@ -7,6 +7,13 @@ palavras-chave: [indice, navegacao, bussola, kolden, projetos, socios, ferrament
 status: vigente
 atualizado-em: 2026-07-06
 relacionados: [dossie-mae, indice]
+tipo: nota
+area: sobre-a-empresa
+up: "[[sobre-a-empresa/_MOC-sobre-a-empresa]]"
+relacionado:
+  - "[[sobre-a-empresa/dossie-mae|dossie-mae]]"
+  - "[[sobre-a-empresa/faq|faq]]"
+  - "[[sobre-a-empresa/glossario|glossario]]"
 ---
 
 # Sobre a Empresa — cérebro consolidado

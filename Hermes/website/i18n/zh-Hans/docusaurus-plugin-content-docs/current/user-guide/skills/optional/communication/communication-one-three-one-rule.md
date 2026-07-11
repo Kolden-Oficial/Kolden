@@ -2,6 +2,9 @@
 title: "One Three One Rule — 技术提案与权衡分析的结构化决策框架"
 sidebar_label: "One Three One Rule"
 description: "技术提案与权衡分析的结构化决策框架"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

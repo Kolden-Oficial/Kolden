@@ -9,6 +9,9 @@ description: >
   colarem uma URL de Reel/Short. Lê `voz-newsletter.md`/`voz.md`/`sobre-mim.md` se existirem.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Roteiro de Reels — engenharia reversa de outlier → roteiro na voz

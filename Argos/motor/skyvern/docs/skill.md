@@ -8,6 +8,9 @@ metadata:
   version: "1.0"
   docs: https://skyvern.com/docs
   github: https://github.com/Skyvern-AI/skyvern
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Skyvern: AI Browser Automation

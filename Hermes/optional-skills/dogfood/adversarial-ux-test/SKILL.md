@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [qa, ux, testing, adversarial, dogfood, personas, user-testing]
     related_skills: [dogfood]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Adversarial UX Test

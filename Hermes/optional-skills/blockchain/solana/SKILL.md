@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Solana, Blockchain, Crypto, Web3, RPC, DeFi, NFT]
     related_skills: []
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Solana Blockchain Skill

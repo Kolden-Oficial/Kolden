@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/agents/persona-definitions|persona-definitions]]"
+---
+
 <!-- Traduccion: ES | Original: /docs/en/agents/archetype-rationale.md | Sincronizacion: 2026-01-26 -->
 
 # Fundamentos de los Arquetipos de Agentes AIOX

@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--00-gestao-empresarial/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--00-gestao-empresarial/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Reconciliação F6.5 — Área "00 | Gestão Empresarial"
 
 > Fechamento aritmético da absorção. Reconstruído a partir de `mapa-de-decisao.md` (o agente de

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+relacionado:
+  - "[[Pheme/.claude/skills/ciclo-de-vida-e-retencao/references/guia-dunning|guia-dunning]]"
+---
+
 # Playbook de cancelamento — pesquisa de saída e ofertas de retenção
 
 Tabelas de decisão para as etapas 2 e 3 do fluxo de cancelamento. A pesquisa de

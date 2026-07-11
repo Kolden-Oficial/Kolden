@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/architecture/_indice|_indice]]"
+---
+
 # ADE Epic 2 Handoff - Migração V2→V3
 
 > **De:** Quinn (@qa) - QA Agent

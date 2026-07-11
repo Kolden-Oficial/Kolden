@@ -2,6 +2,9 @@
 title: "Llm Wiki — Karpathy 的 LLM Wiki：构建/查询互联 Markdown 知识库"
 sidebar_label: "Llm Wiki"
 description: "Karpathy 的 LLM Wiki：构建/查询互联 Markdown 知识库"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

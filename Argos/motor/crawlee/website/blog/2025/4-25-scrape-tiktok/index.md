@@ -5,6 +5,9 @@ tags: [community]
 description: 'Learn how to scrape TikTok using Crawlee for Python'
 image: "./img/main_image.webp"
 authors: [MaxB]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 [TikTok](https://www.tiktok.com/) users generate tons of data that are valuable for analysis.

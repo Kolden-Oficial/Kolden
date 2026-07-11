@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/baoyu-infographic/references/layouts/_indice|_indice]]"
+---
+
 # tree-branching
 
 Hierarchical structure branching from root to leaves, showing categories and subcategories.

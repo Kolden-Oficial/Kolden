@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/manim-video/references/_indice|_indice]]"
+---
+
 # Camera and 3D Reference
 
 ## MovingCameraScene (2D Camera Control)

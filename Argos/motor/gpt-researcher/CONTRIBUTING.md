@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/README|README]]"
+---
+
 # Contributing to GPT Researcher
 
 First off, we'd like to welcome you and thank you for your interest and effort in contributing to our open-source project ❤️. Contributions of all forms are welcome—from new features and bug fixes to documentation and more.

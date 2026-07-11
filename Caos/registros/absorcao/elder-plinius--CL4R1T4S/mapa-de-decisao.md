@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/elder-plinius--CL4R1T4S/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/elder-plinius--CL4R1T4S/seguranca|seguranca]]"
+---
+
 # F4 — Mapa de decisão
 
 - **slug:** elder-plinius--CL4R1T4S

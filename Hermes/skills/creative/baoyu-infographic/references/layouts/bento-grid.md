@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/baoyu-infographic/references/layouts/_indice|_indice]]"
+---
+
 # bento-grid
 
 Modular grid layout with varied cell sizes, like a bento box.

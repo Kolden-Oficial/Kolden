@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/mlops/evaluation/lm-evaluation-harness/references/benchmark-guide|benchmark-guide]]"
+  - "[[Hermes/skills/mlops/evaluation/lm-evaluation-harness/references/custom-tasks|custom-tasks]]"
+  - "[[Hermes/skills/mlops/evaluation/lm-evaluation-harness/references/distributed-eval|distributed-eval]]"
+---
+
 # API Evaluation
 
 Guide to evaluating OpenAI, Anthropic, and other API-based language models.

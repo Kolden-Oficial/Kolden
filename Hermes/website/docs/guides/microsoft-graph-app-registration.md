@@ -1,6 +1,11 @@
 ---
 title: "Register a Microsoft Graph Application"
 description: "Azure portal walkthrough for creating the app registration that powers the Teams meeting pipeline"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Register a Microsoft Graph Application

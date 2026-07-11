@@ -1,6 +1,9 @@
 ---
 name: smoke-test
 description: "Run smoke tests against a deployed or local app based on your git diff. Each test uses Skyvern browser tools (navigate, act, validate, screenshot) with Chrome DevTools MCP as fallback. Posts screenshot evidence as PR comments."
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Smoke Test — CI-Oriented Validation via Skyvern Browser Tools

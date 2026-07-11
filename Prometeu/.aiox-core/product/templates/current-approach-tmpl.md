@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/templates/_indice|_indice]]"
+---
+
 # Current Approach: Subtask {{subtaskId}}
 
 ## Summary

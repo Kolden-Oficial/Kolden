@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Infrastructure Module
 
 Base layer of the AIOX modular architecture. Contains tools, integrations, scripts, and PM adapters.

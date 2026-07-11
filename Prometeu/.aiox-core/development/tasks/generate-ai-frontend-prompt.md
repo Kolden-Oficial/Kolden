@@ -21,6 +21,11 @@
 
 **ParÃ¢metro:** `mode` (opcional, padrÃ£o: `interactive`)
 
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 ## Definição da Task (AIOX Task Format V1.0)

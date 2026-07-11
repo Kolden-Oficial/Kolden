@@ -1,6 +1,9 @@
 ---
 name: classificacao-tos
 description: Classifica uma operação de coleta como VERDE (legítima) ou CINZA (viola Termos de Serviço / exige login) antes de executá-la. Use sempre que for coletar dados de uma plataforma e houver dúvida sobre o que é permitido — especialmente em redes sociais. A operação CINZA exige autorização humana e é executada apenas pelo compliance-sentinela com conta/proxy descartável.
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Habilidade: classificacao-tos (árvore de decisão verde/cinza)

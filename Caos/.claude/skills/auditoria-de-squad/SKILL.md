@@ -1,6 +1,9 @@
 ---
 name: auditoria-de-squad
 description: Compara um squad-alvo, arquivo por arquivo, contra um benchmark e gera um plano de aprimoramento — o que falta e como absorver ao nível máximo. Use na Fase 5 da absorção de repositório (benchmark = o repo em quarentena) OU isoladamente para conformar um squad antigo ao padrão-ouro (benchmark = Aletheia/Argos). Máquina de diff única, dois benchmarks. Produz um relatório que PARA para aprovação humana antes de qualquer escrita.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Auditoria de squad — máquina de diff (do macro ao micro)

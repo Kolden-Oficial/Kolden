@@ -2,6 +2,9 @@
 title: "生物信息学 — 来自 bioSkills 和 ClawBio 的 400+ 生物信息学技能网关"
 sidebar_label: "生物信息学"
 description: "来自 bioSkills 和 ClawBio 的 400+ 生物信息学技能网关"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

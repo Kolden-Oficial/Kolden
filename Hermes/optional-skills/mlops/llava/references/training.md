@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # LLaVA Training Guide
 
 Guide to training and fine-tuning LLaVA models.

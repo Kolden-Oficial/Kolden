@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/docs/standards/_indice|_indice]]"
+---
+
 # AIOX Color Palette v4.2
 
 **Version:** 2.1.0  

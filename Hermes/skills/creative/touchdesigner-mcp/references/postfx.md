@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/touchdesigner-mcp/references/_indice|_indice]]"
+---
+
 # Post-FX Reference
 
 Bloom, CRT scanlines, chromatic aberration, and feedback glow patterns for live visual work.

@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/cli/extract-commands|extract-commands]]"
+  - "[[Argos/motor/scrapling/docs/cli/interactive-shell|interactive-shell]]"
+---
+
 # Command Line Interface
 
 Since v0.3, Scrapling includes a powerful command-line interface that provides three main capabilities:

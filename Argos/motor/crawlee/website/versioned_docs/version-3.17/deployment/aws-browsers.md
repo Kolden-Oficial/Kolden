@@ -1,6 +1,13 @@
 ---
 id: aws-browsers
 title: Browsers on AWS Lambda
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.17/deployment/aws-cheerio|aws-cheerio]]"
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.17/deployment/gcp-browsers|gcp-browsers]]"
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.17/deployment/gcp-cheerio|gcp-cheerio]]"
 ---
 
 Running browser-enabled Crawlee crawlers in AWS Lambda is a bit complicated - but not too much. The main problem is that we have to upload not only our code and the dependencies, but also the **browser binaries**.

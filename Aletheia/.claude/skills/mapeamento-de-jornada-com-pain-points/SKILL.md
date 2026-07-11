@@ -16,6 +16,9 @@ cross_links:
   - aletheia/priorizacao-rice
   - harmonia (UX flow handoff)
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G9)
+tipo: skill
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
 ---
 
 # Mapeamento de Jornada com Pain Points

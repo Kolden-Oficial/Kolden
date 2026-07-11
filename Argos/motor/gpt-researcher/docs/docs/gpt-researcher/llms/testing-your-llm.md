@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/llms/llms|llms]]"
+---
+
 # Testing your LLM
 
 Here is a snippet of code to help you verify that your LLM-related environment variables are set up correctly.

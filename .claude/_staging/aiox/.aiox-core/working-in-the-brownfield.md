@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/constitution|constitution]]"
+  - "[[.claude/_staging/aiox/.aiox-core/user-guide|user-guide]]"
+---
+
 # Working in the Brownfield: A Complete Guide
 
 > **HIGHLY RECOMMENDED: Use Gemini Web or Gemini CLI for Brownfield Documentation Generation!**

@@ -10,6 +10,9 @@ status: semente
 atualizado-em: 2026-06-29
 fonte_upstream: "msitarzewski/agency-agents@a597cb6 — academic/psychology (MIT)"
 tags: [psicologia, persona, personagem, multi-lente]
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Perfil psicológico multi-lente

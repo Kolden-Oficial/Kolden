@@ -2,6 +2,11 @@
 sidebar_position: 16
 title: "Google Gemini"
 description: "Use Hermes Agent with Google Gemini — native AI Studio API, API-key setup, OAuth option, tool calling, streaming, and quota guidance"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Google Gemini

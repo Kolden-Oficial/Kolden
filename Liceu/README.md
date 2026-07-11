@@ -1,3 +1,16 @@
+---
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/CLAUDE|CLAUDE]]"
+  - "[[Liceu/ferramentas|ferramentas]]"
+  - "[[Liceu/indice-mestre|indice-mestre]]"
+  - "[[Liceu/instalacao|instalacao]]"
+  - "[[Liceu/prd-de-ia|prd-de-ia]]"
+  - "[[Liceu/roteiro-de-teste|roteiro-de-teste]]"
+---
+
 # Liceu — Biblioteca de Mentes da Kolden
 
 > *Λύκειον / Lýkeion: a escola peripatética de Aristóteles — o maior sistematizador e enciclopedista*

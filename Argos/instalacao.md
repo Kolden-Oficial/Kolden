@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/README|README]]"
+---
+
 # Instalação — Argos
 
 Como colocar o squad de inteligência de mercado & scraping em produção.

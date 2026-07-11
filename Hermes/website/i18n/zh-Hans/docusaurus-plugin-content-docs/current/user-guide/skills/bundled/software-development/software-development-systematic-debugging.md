@@ -2,6 +2,9 @@
 title: "系统化调试 — 4阶段根因调试：先理解缺陷再修复"
 sidebar_label: "系统化调试"
 description: "4阶段根因调试：先理解缺陷再修复"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

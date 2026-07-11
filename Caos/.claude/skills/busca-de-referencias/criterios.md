@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/skills/busca-de-referencias/SKILL|SKILL]]"
+---
+
 # Critérios de validação de referências externas
 
 Este documento define o scorecard que toda referência externa deve passar antes de ser

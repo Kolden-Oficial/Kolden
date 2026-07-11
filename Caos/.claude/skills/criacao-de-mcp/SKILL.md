@@ -1,6 +1,9 @@
 ---
 name: criacao-de-mcp
 description: Cria servidores MCP / APIs PRÓPRIOS para os agentes do Kolden — quando o PRD pede uma integração que ainda não existe e precisa ser construída (não apenas consumir um MCP existente). Use na Fase 5.4 do Ritual, após orquestrador, especialistas e habilidades já criados. Delega a construção técnica à skill mcp-builder do Prometeu e aplica a camada Kolden obrigatória (Infisical, registro, pt-BR, checklist N4).
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Criação de MCP / API próprio

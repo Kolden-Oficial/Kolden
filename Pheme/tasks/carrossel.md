@@ -25,6 +25,11 @@ Checklist:
   - "[ ] 5 opções de capa (swipe-stopper)"
   - "[ ] Um conceito por slide"
   - "[ ] CTA final único"
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+relacionado:
+  - "[[Pheme/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Carrossel Salvável (IG / LinkedIn)

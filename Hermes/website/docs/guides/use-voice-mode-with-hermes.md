@@ -2,6 +2,11 @@
 sidebar_position: 8
 title: "Use Voice Mode with Hermes"
 description: "A practical guide to setting up and using Hermes voice mode across CLI, Telegram, Discord, and Discord voice channels"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Use Voice Mode with Hermes

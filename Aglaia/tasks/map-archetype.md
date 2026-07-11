@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os 12 arquétipos avaliados e top 3 pontuados"
   - "[ ] Arquétipos primário e secundário selecionados"
   - "[ ] Exemplos de aplicação fornecidos para 5+ pontos de contato"
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/tasks/_indice|_indice]]"
 ---
 
 # Task: Mapear Arquétipo de Marca

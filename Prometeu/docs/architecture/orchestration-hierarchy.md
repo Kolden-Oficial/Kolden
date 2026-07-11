@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Orchestration Hierarchy
 
 This document defines the current ownership boundaries for AIOX orchestration

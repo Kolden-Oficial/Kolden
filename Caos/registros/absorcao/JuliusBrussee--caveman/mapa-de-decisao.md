@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/JuliusBrussee--caveman/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/JuliusBrussee--caveman/seguranca|seguranca]]"
+---
+
 # Mapa de decisão (F4) — JuliusBrussee--caveman
 
 - **slug:** JuliusBrussee--caveman · **sha:** 25d22f864ad68cc447a4cb93aefde918aa4aec9f · **rota:** A

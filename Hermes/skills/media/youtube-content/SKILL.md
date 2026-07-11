@@ -2,6 +2,9 @@
 name: youtube-content
 description: "YouTube transcripts to summaries, threads, blogs."
 platforms: [linux, macos, windows]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # YouTube Content Tool

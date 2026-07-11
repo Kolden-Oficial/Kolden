@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/claude-code-mastery/agents/claude-mastery-chief|claude-mastery-chief]]"
+---
+
 # swarm-orchestrator
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.

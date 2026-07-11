@@ -3,6 +3,11 @@ title: Home Assistant
 description: Control your smart home with Hermes Agent via Home Assistant integration.
 sidebar_label: Home Assistant
 sidebar_position: 5
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Home Assistant Integration

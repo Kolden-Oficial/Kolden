@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Genre identified with core value and obligatory scenes"
   - "[ ] All scenes mapped with turning points and value shifts"
   - "[ ] Issues diagnosed and prioritized with prescriptions"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/storytelling/tasks/_indice|_indice]]"
 ---
 
 # Task: Story Analysis (Story Grid)

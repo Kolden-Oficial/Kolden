@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/meme-generation/SKILL|SKILL]]"
+---
+
 # Meme Generation Examples
 
 ## Example 1: Debugging at 2 AM

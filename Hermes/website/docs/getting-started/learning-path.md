@@ -2,6 +2,15 @@
 sidebar_position: 3
 title: 'Learning Path'
 description: 'Choose your learning path through the Hermes Agent documentation based on your experience level and goals.'
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/getting-started/installation|installation]]"
+  - "[[Hermes/website/docs/getting-started/nix-setup|nix-setup]]"
+  - "[[Hermes/website/docs/getting-started/quickstart|quickstart]]"
+  - "[[Hermes/website/docs/getting-started/termux|termux]]"
+  - "[[Hermes/website/docs/getting-started/updating|updating]]"
 ---
 
 # Learning Path

@@ -7,6 +7,11 @@ palavras-chave: [faq, duvidas, perguntas]
 status: rascunho
 atualizado-em: 2026-07-06
 relacionados: [visao-geral, dossie-mae]
+tipo: nota
+area: sobre-a-empresa
+up: "[[sobre-a-empresa/_MOC-sobre-a-empresa]]"
+relacionado:
+  - "[[sobre-a-empresa/leia-me|leia-me]]"
 ---
 
 # FAQ da Kolden

@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/registros/metodo-onda-2/diff-cirurgico|diff-cirurgico]]"
+  - "[[Hermes/registros/metodo-onda-2/sumario-executivo|sumario-executivo]]"
+  - "[[Hermes/registros/metodo-onda-2/verificacao-dike|verificacao-dike]]"
+  - "[[Hermes/registros/metodo-onda-2/verificacao-dike-delta|verificacao-dike-delta]]"
+---
+
 # Matriz de Conformidade — Hermes × METODO-KOLDEN.md v1.0
 
 > **Onda 2 do Contrato-mãe `m-20260706-metodo-kolden`.**

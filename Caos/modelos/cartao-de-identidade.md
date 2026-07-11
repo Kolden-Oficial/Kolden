@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
+---
+
 # Cartão de Identidade — modelo ÚNICO de identidade de agente
 
 > Template canônico do **RH dos agentes** da Kolden. Realiza, em formato padronizado e

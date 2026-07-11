@@ -14,6 +14,9 @@ metadata:
       anyBins:
         - pip
         - pip3
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Scrapling

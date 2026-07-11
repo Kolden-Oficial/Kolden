@@ -1,6 +1,9 @@
 ---
 name: aiox-master
 description: AIOX Master Orchestrator & Framework Developer (Orion). Use when you need comprehensive expertise across all domains, framework component creation/modification, workflow orchest...
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # AIOX AIOX Master Orchestrator & Framework Developer Activator

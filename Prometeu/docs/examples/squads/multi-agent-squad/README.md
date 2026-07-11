@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Multi-Agent Squad Example
 
 Demonstrates how to create a squad with multiple collaborating agents.

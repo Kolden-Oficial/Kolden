@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/architecture/_indice|_indice]]"
+---
+
 <!-- Tradução: PT-BR | Original: /docs/en/architecture/squad-improvement-recommended-approach.md | Sincronização: 2026-01-26 -->
 
 # Abordagem Recomendada: Sistema de Melhoria de Squads

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/.claude/skills/aso-app-store/references/moldes-de-resposta-a-review|moldes-de-resposta-a-review]]"
+---
+
 # Scorecard — ficha de app (App Store / Play Store)
 
 Rubrica 0-10 por componente. Total 0-50. Ficha nota <30 = intervenção urgente.

@@ -11,6 +11,9 @@ metadata:
     related_skills: [obsidian]
 prerequisites:
   commands: [memo]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Apple Notes

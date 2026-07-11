@@ -25,6 +25,11 @@ Checklist:
   - "[ ] DMMM aplicado com objetivos, metas, KPIs, alvos"
   - "[ ] OMTM identificado"
   - "[ ] Dashboard projetado com linha de Ações"
+tipo: nota
+area: Metis
+up: "[[Metis/_MOC-metis]]"
+relacionado:
+  - "[[Metis/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Analisar Dados

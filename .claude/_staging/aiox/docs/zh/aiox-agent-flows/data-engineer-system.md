@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/README|README]]"
+---
+
 # 数据工程师代理系统 (@data-engineer) - AIOX
 
 > **版本:** 1.0.0

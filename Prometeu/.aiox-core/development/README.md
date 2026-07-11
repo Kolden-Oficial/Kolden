@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Development Module
 
 The Development module contains all agent-related assets: agent definitions, team configurations, tasks, workflows, and supporting scripts.

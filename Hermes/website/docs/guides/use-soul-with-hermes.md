@@ -2,6 +2,11 @@
 sidebar_position: 7
 title: "Use SOUL.md with Hermes"
 description: "How to use SOUL.md to shape Hermes Agent's default voice, what belongs there, and how it differs from AGENTS.md and /personality"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Use SOUL.md with Hermes

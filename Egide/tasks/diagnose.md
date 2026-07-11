@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Intenção do usuário interpretada e portão ético avaliado"
   - "[ ] Resposta transversal entregue ao usuário"
   - "[ ] Sugestão de roteamento fornecida"
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+relacionado:
+  - "[[Egide/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar & Rotear — Squad de Cybersecurity

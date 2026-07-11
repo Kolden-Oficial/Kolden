@@ -3,6 +3,9 @@ name: aiox-po
 description: "Ativa Pax (po) para Product Owner. Use para gerenciamento de backlog, refinamento de stories, critérios de aceitação, planejamento de sprint e decisões de priorização"
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: gerado -->

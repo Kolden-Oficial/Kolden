@@ -4,6 +4,12 @@ about: Submit a new squad or update to existing squad
 title: '[SQUAD] '
 labels: 'squad', 'needs-po-review'
 assignees: ''
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.github/PULL_REQUEST_TEMPLATE/agent_contribution|agent_contribution]]"
+  - "[[.claude/_staging/aiox/.github/PULL_REQUEST_TEMPLATE/task_contribution|task_contribution]]"
 ---
 
 # Squad Pull Request

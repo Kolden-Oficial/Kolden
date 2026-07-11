@@ -2,6 +2,14 @@
 title: "Apple Notes — Manage Apple Notes via memo CLI: create, search, edit"
 sidebar_label: "Apple Notes"
 description: "Manage Apple Notes via memo CLI: create, search, edit"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/apple/apple-apple-reminders|apple-apple-reminders]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/apple/apple-findmy|apple-findmy]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/apple/apple-imessage|apple-imessage]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/apple/apple-macos-computer-use|apple-macos-computer-use]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

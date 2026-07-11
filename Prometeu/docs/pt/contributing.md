@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/README|README]]"
+---
+
 # Contribuindo para o Synkra AIOX
 
 > **[English Version](CONTRIBUTING.md)**

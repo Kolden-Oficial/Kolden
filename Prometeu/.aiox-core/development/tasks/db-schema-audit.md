@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task: Auditoria de Schema
 
 **Propósito**: Auditoria abrangente da qualidade do schema de banco de dados e das melhores práticas

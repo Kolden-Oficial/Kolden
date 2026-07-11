@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/packages/http-crawler/CHANGELOG|CHANGELOG]]"
+---
+
 # `@crawlee/http`
 
 Provides a framework for the parallel crawling of web pages using plain HTTP requests. The URLs to crawl are fed either from a static list of URLs or from a dynamic queue of URLs enabling recursive crawling of websites.

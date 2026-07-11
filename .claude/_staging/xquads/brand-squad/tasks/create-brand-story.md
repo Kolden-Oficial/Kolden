@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All 7 SB7 elements defined"
   - "[ ] One-liner and elevator pitch created"
   - "[ ] Website wireframe copy provided"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/brand-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Create Brand Story

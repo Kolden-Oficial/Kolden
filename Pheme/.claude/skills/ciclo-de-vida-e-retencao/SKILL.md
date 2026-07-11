@@ -12,6 +12,9 @@ description: >
   nem para health-score de cliente — aqui o foco é não deixar vazar quem já é da casa.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Ciclo de Vida e Retenção — tapar o vazamento, não só encher o balde

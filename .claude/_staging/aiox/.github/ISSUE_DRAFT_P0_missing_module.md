@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.github/PULL_REQUEST_TEMPLATE|PULL_REQUEST_TEMPLATE]]"
+  - "[[.claude/_staging/aiox/.github/RFC_TEMPLATE|RFC_TEMPLATE]]"
+---
+
 # [P0] Missing AIOX Core module: utils/repository-detector - Blocks Linux Installation
 
 ## 🔴 Priority: P0 (CRITICAL - Installation Blocked)

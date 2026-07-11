@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/software-development/code-wiki/templates/README|README]]"
+---
+
 # Getting Started
 
 ## Prerequisites

@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/AgriciDaniel--claude-seo/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/AgriciDaniel--claude-seo/seguranca|seguranca]]"
+---
+
 # F3 — Inventário de capacidades — AgriciDaniel--claude-seo
 
 - **slug:** AgriciDaniel--claude-seo · **sha:** d830cdb2ad339bb7f062339fe82228b072e98061 · **rota:** A

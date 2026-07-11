@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/baoyu-infographic/references/analysis-framework|analysis-framework]]"
+  - "[[Hermes/skills/creative/baoyu-infographic/references/base-prompt|base-prompt]]"
+---
+
 # Structured Content Template
 
 Template for generating structured infographic content that informs the visual designer.

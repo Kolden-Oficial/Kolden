@@ -2,6 +2,11 @@
 title: "Kanban Video Orchestrator — Plan, set up, and monitor a multi-agent video production pipeline backed by Hermes Kanban"
 sidebar_label: "Kanban Video Orchestrator"
 description: "Plan, set up, and monitor a multi-agent video production pipeline backed by Hermes Kanban"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/creative/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

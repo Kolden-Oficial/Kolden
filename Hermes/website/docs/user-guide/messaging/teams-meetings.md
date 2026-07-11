@@ -2,6 +2,11 @@
 sidebar_position: 6
 title: "Teams Meetings"
 description: "Set up the Microsoft Teams meeting summary pipeline with Microsoft Graph webhooks"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Microsoft Teams Meetings

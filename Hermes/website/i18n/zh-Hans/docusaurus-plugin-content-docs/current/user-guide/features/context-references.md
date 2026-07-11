@@ -3,6 +3,9 @@ sidebar_position: 9
 sidebar_label: "Context References"
 title: "Context References"
 description: "用于将文件、文件夹、git diff 及 URL 直接附加到消息中的内联 @-语法"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Context References

@@ -1,6 +1,9 @@
 ---
 title: 上下文压缩与缓存
 description: Hermes Agent 如何通过双重压缩系统和 Anthropic prompt 缓存高效管理上下文窗口。
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 上下文压缩与缓存

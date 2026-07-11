@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Multi-gateway deployment
 
 Hermes supports multiple gateway processes running concurrently — one per profile

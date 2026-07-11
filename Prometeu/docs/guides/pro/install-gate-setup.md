@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/pro/access-grant-ops-playbook|access-grant-ops-playbook]]"
+  - "[[Prometeu/docs/guides/pro/squad-creator-handoff-pro-access-ops|squad-creator-handoff-pro-access-ops]]"
+---
+
 # AIOX Pro — Guia de Instalacao e Licenciamento
 
 Guia completo para instalar, ativar e gerenciar o AIOX Pro.

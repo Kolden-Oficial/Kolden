@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/leia-me|leia-me]]"
+---
+
 # Constituição do Kolden
 
 > **Versão:** 2.5.0 | **Ratificada:** 2026-06-11 | **Última emenda:** 2026-07-05

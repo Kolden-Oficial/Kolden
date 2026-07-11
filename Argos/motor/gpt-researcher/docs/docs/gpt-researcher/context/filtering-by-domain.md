@@ -1,3 +1,15 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/azure-storage|azure-storage]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/data-ingestion|data-ingestion]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/local-docs|local-docs]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/tailored-research|tailored-research]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/vector-stores|vector-stores]]"
+---
+
 # Filtering by Domain
 
 You can filter web search results by specific domains when using either the Tavily or Google Search retrievers. This functionality is available across all interfaces - pip package, NextJS frontend, and vanilla JS frontend.

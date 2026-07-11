@@ -25,6 +25,11 @@ Checklist:
   - "[ ] 30-50 raw candidates generated across 4+ categories"
   - "[ ] All candidates scored on 7 criteria"
   - "[ ] Final 3-5 presented with full profiles"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/brand-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Generate Names

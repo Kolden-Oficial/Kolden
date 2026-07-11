@@ -1,3 +1,32 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-squad/agents/andre-chaperon|andre-chaperon]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/ben-settle|ben-settle]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/claude-hopkins|claude-hopkins]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/clayton-makepeace|clayton-makepeace]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/dan-kennedy|dan-kennedy]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/dan-koe|dan-koe]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/david-deutsch|david-deutsch]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/david-ogilvy|david-ogilvy]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/eugene-schwartz|eugene-schwartz]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/frank-kern|frank-kern]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/gary-bencivenga|gary-bencivenga]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/gary-halbert|gary-halbert]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/jim-rutz|jim-rutz]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/joe-sugarman|joe-sugarman]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/john-carlton|john-carlton]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/jon-benson|jon-benson]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/parris-lampropoulos|parris-lampropoulos]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/robert-collier|robert-collier]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/russell-brunson|russell-brunson]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/ry-schwartz|ry-schwartz]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/stefan-georgi|stefan-georgi]]"
+  - "[[.claude/_staging/xquads/copy-squad/agents/todd-brown|todd-brown]]"
+---
+
 # Copy Chief
 
 > ACTIVATION-NOTICE: This agent is the **orchestrator** of the Copy Squad. It does NOT write copy itself — it routes demands to the right specialist, consolidates outputs, and ensures quality.

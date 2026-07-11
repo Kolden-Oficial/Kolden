@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Pinggy, Tunnel, Networking, SSH, Webhook, Localhost]
     related_skills: [cloudflared-quick-tunnel, webhook-subscriptions]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Pinggy Tunnel Skill

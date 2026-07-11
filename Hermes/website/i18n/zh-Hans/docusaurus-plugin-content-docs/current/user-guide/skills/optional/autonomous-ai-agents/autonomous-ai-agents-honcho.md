@@ -2,6 +2,9 @@
 title: "Honcho"
 sidebar_label: "Honcho"
 description: "配置并使用 Honcho 记忆功能与 Hermes -- 跨会话用户建模、多配置文件 peer 隔离、观察配置、辩证推理、会话摘要及上下文预算控制。"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

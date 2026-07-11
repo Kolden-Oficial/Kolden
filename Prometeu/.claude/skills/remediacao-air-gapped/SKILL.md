@@ -7,6 +7,9 @@ origem: msitarzewski/agency-agents@a597cb6 · IDs G1-G4 · bucket B03 engineerin
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Remediação de Sistemas Air-Gapped

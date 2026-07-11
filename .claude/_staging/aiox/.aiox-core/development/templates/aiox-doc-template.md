@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/templates/_indice|_indice]]"
+---
+
 # AIOX Documentation Template
 
 **Version:** 1.0.0

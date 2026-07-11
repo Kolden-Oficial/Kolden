@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Tokenization, HuggingFace, BPE, WordPiece, Unigram, Fast Tokenization, Rust, Custom Tokenizer, Alignment Tracking, Production]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # HuggingFace Tokenizers - Fast Tokenization for NLP

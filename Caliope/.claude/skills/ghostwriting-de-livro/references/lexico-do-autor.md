@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/.claude/skills/ghostwriting-de-livro/references/blueprint-capitulo|blueprint-capitulo]]"
+---
+
 # Léxico do autor — planilha de voz
 
 Objetivo: garantir que o texto soa como o autor, não como o ghostwriter.

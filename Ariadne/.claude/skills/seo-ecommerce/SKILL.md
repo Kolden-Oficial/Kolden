@@ -8,6 +8,9 @@ description: >
   "SEO de produto", "página de produto", "Google Shopping", "marketplace",
   "product schema", "Merchant Center", "loja online", "ficha de produto". É uma
   frente NOVA da Ariadne.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # SEO de E-commerce

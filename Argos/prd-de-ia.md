@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/README|README]]"
+---
+
 # PRD de IA — Argos (Squad de Inteligência de Mercado por Scraping)
 
 | Campo | Valor |

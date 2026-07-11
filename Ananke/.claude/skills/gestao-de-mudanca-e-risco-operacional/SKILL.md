@@ -8,6 +8,9 @@ description: >
   Gatilhos: "vamos mudar esse fluxo", "change request", "qual o risco operacional", "plano de rollback",
   "como comunicar a mudança", "isso pode parar a operação?". Toda mudança de impacto vem com risco e
   rollback — nunca uma mudança "no susto".
+tipo: skill
+area: Ananke
+up: "[[Ananke/_MOC-ananke]]"
 ---
 
 # Gestão de Mudança e Risco Operacional

@@ -2,6 +2,13 @@
 title: "Heartmula — HeartMuLa: Suno-like song generation from lyrics + tags"
 sidebar_label: "Heartmula"
 description: "HeartMuLa: Suno-like song generation from lyrics + tags"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/media/media-gif-search|media-gif-search]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/media/media-songsee|media-songsee]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/media/media-youtube-content|media-youtube-content]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

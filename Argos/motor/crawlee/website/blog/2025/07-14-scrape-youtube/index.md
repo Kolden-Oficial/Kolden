@@ -5,6 +5,9 @@ tags: [community]
 description: 'Learn how to scrape YouTube using Crawlee for Python'
 image: "img/youtube_banner.webp"
 authors: [MaxB]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 In this guide, we'll explore how to efficiently collect data from YouTube using [Crawlee for Python](https://github.com/apify/crawlee-python). The scraper will extract video metadata, video statistics, and transcripts - giving you structured YouTube data perfect for content analysis, ML training, or trend monitoring.

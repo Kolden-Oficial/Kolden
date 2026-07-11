@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Pactolo
+up: "[[Pactolo/_MOC-pactolo]]"
+---
+
 # Catálogo de Habilidades — Pactolo
 
 Habilidades-âncora do squad Pactolo (Finanças Operacionais / FP&A), seu gatilho de invocação, propósito e

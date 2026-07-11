@@ -2,6 +2,11 @@
 sidebar_position: 5
 title: "Scheduled Tasks (Cron)"
 description: "Schedule automated tasks with natural language, manage them with one cron tool, and attach one or more skills"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Scheduled Tasks (Cron)

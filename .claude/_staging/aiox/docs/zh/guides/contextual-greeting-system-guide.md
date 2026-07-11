@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/guides/README|README]]"
+---
+
 # 上下文问候系统指南
 
 > [EN](../../guides/contextual-greeting-system-guide.md) | [PT](../../pt/guides/contextual-greeting-system-guide.md) | [ES](../../es/guides/contextual-greeting-system-guide.md) | **ZH**

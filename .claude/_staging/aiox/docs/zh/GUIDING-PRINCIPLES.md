@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/README|README]]"
+---
+
 <!-- 翻译：zh-CN 原文：/docs/GUIDING-PRINCIPLES.md 最后同步：2026-02-22 -->
 
 # AIOX 方法指导原则

@@ -6,6 +6,9 @@ description: >
   e caminho de escalonamento. Gatilhos: "quem precisa saber", "plano de comunicação", "matriz de
   stakeholders", "status report", "reunião de status", "gerir o patrocinador", "como comunico isso".
   Dono: gestor-de-stakeholders.
+tipo: skill
+area: Cairos
+up: "[[Cairos/_MOC-cairos]]"
 ---
 
 # Comunicação com Stakeholders

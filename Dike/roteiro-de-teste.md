@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Dike
+up: "[[Dike/_MOC-dike]]"
+relacionado:
+  - "[[Dike/CLAUDE|CLAUDE]]"
+  - "[[Dike/ferramentas|ferramentas]]"
+  - "[[Dike/prd-de-ia|prd-de-ia]]"
+---
+
 # Roteiro de Teste — Dike (Verificador da Subida)
 
 > **Fase 7 do Ritual do Caos** — Teste de Comportamento.

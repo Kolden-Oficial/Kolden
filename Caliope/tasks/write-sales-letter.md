@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Carta segue a estrutura AIDA com prova do início ao fim"
   - "[ ] CTA aparece no mínimo 3 vezes com seções de P.S."
   - "[ ] Camada Psicológica aplicada (princípios de Cialdini/Warren marcados)"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Task: Escrever Carta de Vendas

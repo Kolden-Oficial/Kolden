@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/framework/README|README]]"
+---
+
 # Configuration Override Guide
 
 Reference documentation for the AIOX layered config system (ADR-PRO-002).

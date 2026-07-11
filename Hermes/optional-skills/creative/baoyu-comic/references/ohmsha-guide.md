@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/_indice|_indice]]"
+---
+
 # Ohmsha Manga Guide Style
 
 Guidelines for educational manga comics using the `ohmsha` preset.

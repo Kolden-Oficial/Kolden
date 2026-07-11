@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/skills/vigia-de-ecossistema/SKILL|SKILL]]"
+---
+
 # Catálogo de fontes por frente
 
 Detalhamento das fontes e dos comandos de varredura usados pela skill `vigia-de-ecossistema`.

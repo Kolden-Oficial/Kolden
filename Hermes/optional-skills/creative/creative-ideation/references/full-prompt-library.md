@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Full Prompt Library
 
 Extended constraint library beyond the core set in SKILL.md. Load these when the user wants more variety or a specific category.

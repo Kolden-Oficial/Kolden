@@ -11,6 +11,9 @@ metadata:
     category: security
 prerequisites:
   commands: [sherlock]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Sherlock OSINT Username Search

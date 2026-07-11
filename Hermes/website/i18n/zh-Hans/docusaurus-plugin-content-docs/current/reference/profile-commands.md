@@ -1,5 +1,8 @@
 ---
 sidebar_position: 7
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Profile 命令参考

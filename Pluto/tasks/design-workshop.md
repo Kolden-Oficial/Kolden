@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Promessa de transformação única definida"
   - "[ ] 3-5 módulos de ensino projetados com frameworks e exercícios"
   - "[ ] Roteiro de execução (run of show) criado com cronometragem"
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+relacionado:
+  - "[[Pluto/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Projetar Workshop

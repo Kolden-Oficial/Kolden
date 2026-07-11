@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Peça aprovada no checklist qualidade-conteudo"
   - "[ ] Preview confirmado pelo usuário"
   - "[ ] Publicado/agendado e reportado (conta, horário, link/id)"
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+relacionado:
+  - "[[Pheme/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Publicar / Agendar (Postiz / GoHighLevel)

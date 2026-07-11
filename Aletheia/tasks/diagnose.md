@@ -21,6 +21,11 @@ Checklist:
   - "[ ] Query analisada com classificação de estágio e assunção mais arriscada"
   - "[ ] Resposta rápida fornecida"
   - "[ ] Rota executada ou resposta direta dada"
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar — Aletheia

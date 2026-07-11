@@ -10,6 +10,9 @@ metadata:
     tags: [wiki, knowledge-base, research, notes, markdown, rag-alternative]
     category: research
     related_skills: [obsidian, arxiv]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Karpathy's LLM Wiki

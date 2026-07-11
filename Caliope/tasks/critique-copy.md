@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Falha fatal identificada com exemplos de reescrita"
   - "[ ] Lista priorizada de correções com roteamento para especialista"
   - "[ ] Auditoria de psicologia da persuasão concluída"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Criticar Copy

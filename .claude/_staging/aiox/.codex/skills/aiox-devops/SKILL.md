@@ -1,6 +1,9 @@
 ---
 name: aiox-devops
 description: GitHub Repository Manager & DevOps Specialist (Gage). Use for repository operations, version management, CI/CD, quality gates, and GitHub push operations. ONLY agent authorized...
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # AIOX GitHub Repository Manager & DevOps Specialist Activator

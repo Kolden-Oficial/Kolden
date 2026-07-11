@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/community/README-community-snippet-core|README-community-snippet-core]]"
+  - "[[Prometeu/docs/community/README-community-snippet-squads|README-community-snippet-squads]]"
+---
+
 # README Community Section - mcp-ecosystem
 
 > 🌐 **EN** | [PT](../pt/community/README-community-snippet-mcp.md) | [ES](../es/community/README-community-snippet-mcp.md)

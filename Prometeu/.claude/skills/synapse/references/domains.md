@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/skills/synapse/references/brackets|brackets]]"
+  - "[[Prometeu/.claude/skills/synapse/references/commands|commands]]"
+  - "[[Prometeu/.claude/skills/synapse/references/layers|layers]]"
+  - "[[Prometeu/.claude/skills/synapse/references/manifest|manifest]]"
+---
+
 # Referência de Domains do SYNAPSE
 
 ## O que é um Domain?

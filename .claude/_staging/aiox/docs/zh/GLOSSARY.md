@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/README|README]]"
+---
+
 # Synkra AIOX 术语表
 
 > 本术语表定义了 Synkra AIOX 文档中使用的核心术语的标准中文翻译。

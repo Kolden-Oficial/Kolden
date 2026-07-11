@@ -1,6 +1,9 @@
 ---
 name: descoberta-de-virais
 description: Descobrir vídeos/posts virais de um nicho ou concorrente em TikTok/Instagram/YouTube (por engajamento, trending de hashtag/som/criador). Use quando o pedido for "achar o que está viralizando", "vídeos virais do concorrente", "tendências de conteúdo do nicho". Combina SociaVault (API multi-plataforma) + Apify + TikTok Creative Center + YouTube Data API. Saída com fonte + timestamp.
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Habilidade: descoberta-de-virais

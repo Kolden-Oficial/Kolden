@@ -29,6 +29,11 @@ cliente: "<conta/cliente — se escopo=cliente>"
 nome_mitologico: "<nome escolhido na Rodada 0>"
 pronuncia: "<pronúncia em pt-BR>"
 loop_pattern: ReAct                                      # P10 — Yao et al. 2022 arXiv 2210.03629 (override só com justificativa arquitetural documentada)
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
 ---
 
 # PRD de IA — <Nome do Agente>

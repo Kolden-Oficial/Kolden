@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/productivity/shop/references/catalog-mcp|catalog-mcp]]"
+  - "[[Hermes/optional-skills/productivity/shop/references/legal|legal]]"
+  - "[[Hermes/optional-skills/productivity/shop/references/safety|safety]]"
+---
+
 # Direct Auth, Checkout, And Orders API
 
 Use this reference when the CLI cannot be installed. Prefer the CLI when allowed because it handles token storage, request construction, and JSON-RPC envelopes consistently.

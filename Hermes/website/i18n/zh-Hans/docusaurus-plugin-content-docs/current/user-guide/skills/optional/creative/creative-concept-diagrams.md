@@ -2,6 +2,9 @@
 title: "概念图"
 sidebar_label: "概念图"
 description: "以统一的教育视觉语言生成扁平、简约、支持明暗模式的 SVG 图表，输出为独立 HTML 文件，包含 9 种语义色阶、句首大写排版及自动暗色模式。..."
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

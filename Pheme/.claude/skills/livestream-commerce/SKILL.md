@@ -13,6 +13,9 @@ description: >
   `china-ecommerce-ops` de Pheme (China específico).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Livestream Commerce — o formato que redefiniu o e-commerce

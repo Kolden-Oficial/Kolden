@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Data Squad
 
 7 data-driven strategists — analytics, CLV, growth, community, customer success, audience.

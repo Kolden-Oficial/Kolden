@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: arquitetura
+up: "[[arquitetura/_MOC-arquitetura]]"
+relacionado:
+  - "[[arquitetura/pesquisa/2026-07-10-benchmark/fichas/_indice|_indice]]"
+---
+
 # Ficha — CrewAI
 
 > Coletada em 2026-07-10 · Versão/commit da fonte: release **1.15.2** (2026-07-08) · commit `a8b3ecb723de24bc665b5391b756fb7cf0878763` (branch `main`) · Status: ativo
@@ -138,7 +146,7 @@ Ou seja, o projeto gerado é:
 
 Fonte: https://github.com/crewAIInc/crewAI/blob/a8b3ecb723de24bc665b5391b756fb7cf0878763/lib/cli/src/crewai_cli/create_crew.py
 
-Detalhe: crews aninhados dentro de um projeto maior (`parent_folder`, usado por flows) recebem só `crew.py` + `config/` + `tools/` — sem `main.py`/`pyproject.toml` próprios (mesmo arquivo, listas condicionais `if not parent_folder`).
+Detalhe (corrigido em verificação adversarial 2026-07-10): crews aninhados dentro de um projeto maior (`parent_folder`, usado por flows) recebem **apenas `crew.py`** (+ dirs vazios `tests/` e `knowledge/`) — em `create_crew.py`, `src_template_files = ["crew.py"]` quando há `parent_folder`, e a cópia de `config/` + `tools/` só roda `if not parent_folder`. Nos templates de flow, os crews aninhados já vêm prontos com `config/` — mas não é o `create_crew` que os gera assim.
 
 ## 2. Formato de definição de agent
 

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/packages/linkedom-crawler/CHANGELOG|CHANGELOG]]"
+---
+
 # `@crawlee/linkedom`
 
 <!-- Note for editors: This README should be kept consistent with JSDOMCrawler one -->

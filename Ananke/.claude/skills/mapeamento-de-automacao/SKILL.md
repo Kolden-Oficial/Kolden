@@ -9,6 +9,9 @@ description: >
   automático", "n8n", "integrar A com B", "tirar o trabalho manual". REGRA DURA: a Ananke DESENHA e
   MAPEIA; a CONSTRUÇÃO técnica é handoff ao Dédalo — nunca "já automatizei". Processo instável volta para
   padronização (arquiteto-de-processos) antes de automatizar.
+tipo: skill
+area: Ananke
+up: "[[Ananke/_MOC-ananke]]"
 ---
 
 # Mapeamento de Automação (desenho de fluxo → handoff Dédalo)

@@ -2,6 +2,9 @@
 title: "Apple Reminders — 通过 remindctl 管理 Apple Reminders：添加、列出、完成"
 sidebar_label: "Apple Reminders"
 description: "通过 remindctl 管理 Apple Reminders：添加、列出、完成"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

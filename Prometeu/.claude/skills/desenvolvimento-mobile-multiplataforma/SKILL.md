@@ -4,6 +4,9 @@ description: Use ao decidir a stack de um app mobile novo — matriz de decisão
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Desenvolvimento Mobile Multiplataforma — Matriz de Decisão

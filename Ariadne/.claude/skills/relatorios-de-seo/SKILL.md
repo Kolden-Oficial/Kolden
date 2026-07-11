@@ -7,6 +7,9 @@ description: >
   um relatório", "relatório de SEO", "PDF da auditoria", "dashboard", "apresentar
   pro cliente", "plano de ação", "prioriza as issues", "roadmap de SEO", "exportar
   resultado". É a camada de SAÍDA padrão da Ariadne — vem depois da análise.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Relatórios de SEO (entrega + priorização)

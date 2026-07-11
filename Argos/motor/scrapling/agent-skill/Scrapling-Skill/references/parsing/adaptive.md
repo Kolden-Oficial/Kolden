@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/parsing/main_classes|main_classes]]"
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/parsing/selection|selection]]"
+---
+
 # Adaptive scraping
 
 Adaptive scraping (previously known as automatch) is one of Scrapling's most powerful features. It allows your scraper to survive website changes by intelligently tracking and relocating elements.

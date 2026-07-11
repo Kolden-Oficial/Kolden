@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/commands/AIOX/stories/story-7.1.1|story-7.1.1]]"
+---
+
 # Story 6.1.4: Integração do Sistema Unificado de Saudação (v4 - Expandida)
 
 **Story ID:** 6.1.4  

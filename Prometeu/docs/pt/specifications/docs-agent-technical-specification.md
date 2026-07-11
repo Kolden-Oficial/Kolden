@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 <!-- Traducao: PT-BR | Original: /docs/en/specifications/docs-agent-technical-specification.md | Sincronizacao: 2026-01-26 -->
 
 # Agente @docs (Ajax) - Especificacao Tecnica

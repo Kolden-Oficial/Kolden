@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [RAG, Vector Search, Qdrant, Semantic Search, Embeddings, Similarity Search, HNSW, Production, Distributed]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Qdrant - Vector Similarity Search Engine

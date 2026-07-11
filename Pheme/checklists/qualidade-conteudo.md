@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+---
+
 # Checklist de Qualidade de Conteúdo Social
 
 **ID do Checklist:** PHEME-CL-001

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Current stack inventoried across all layers"
   - "[ ] Technology Radar built with 4 rings"
   - "[ ] 12-month technology roadmap created"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/c-level-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Evaluate Technology

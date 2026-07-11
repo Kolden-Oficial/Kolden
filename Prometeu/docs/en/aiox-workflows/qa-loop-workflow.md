@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-workflows/README|README]]"
+---
+
 # Workflow de QA Loop
 
 > **EN** | [PT](../../aiox-workflows/qa-loop-workflow.md) | [ES](../../es/aiox-workflows/qa-loop-workflow.md)

@@ -27,6 +27,11 @@ Checklist:
   - "[ ] Price anchoring strategy and offer stack copy ready"
   - "[ ] Hormozi Value Equation applied"
   - "[ ] Psychological Layer applied (Cialdini/Warren principles tagged)"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-master/tasks/_indice|_indice]]"
 ---
 
 # Task: Create Offer

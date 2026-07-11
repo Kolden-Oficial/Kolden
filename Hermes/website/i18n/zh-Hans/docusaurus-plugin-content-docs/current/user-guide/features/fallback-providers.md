@@ -3,6 +3,9 @@ title: 备用提供商
 description: 配置自动故障转移，在主模型不可用时切换到备用 LLM 提供商。
 sidebar_label: 备用提供商
 sidebar_position: 8
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 备用提供商

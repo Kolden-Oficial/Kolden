@@ -2,6 +2,11 @@
 sidebar_position: 6
 title: "Event Hooks"
 description: "Run custom code at key lifecycle points — log activity, send alerts, post to webhooks"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Event Hooks

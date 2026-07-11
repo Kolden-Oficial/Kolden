@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/tests/unit/squad/fixtures/analyze-test-squad/agents/lead-agent|lead-agent]]"
+---
+
 # helper-agent
 
 Helper agent for analysis.

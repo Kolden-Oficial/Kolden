@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # Meta-Agent Commands Reference
 
 > 🌐 **EN** | [PT](./pt/meta-agent-commands.md) | [ES](./es/meta-agent-commands.md)

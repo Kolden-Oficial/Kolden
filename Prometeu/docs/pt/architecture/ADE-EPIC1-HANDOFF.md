@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/architecture/_indice|_indice]]"
+---
+
 # ADE Epic 1 Handoff - Worktree Manager
 
 > **De:** Quinn (@qa) - QA Agent

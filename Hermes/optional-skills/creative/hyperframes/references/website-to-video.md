@@ -1,3 +1,15 @@
+---
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/hyperframes/references/cli|cli]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/composition|composition]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/features|features]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/gsap|gsap]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/troubleshooting|troubleshooting]]"
+---
+
 # Website to Video
 
 Capture a website, produce a professional video from it. Use when the user provides a URL and wants a video — social ad, product tour, 30-second promo, etc.

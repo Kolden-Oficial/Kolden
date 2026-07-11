@@ -2,6 +2,11 @@
 title: "Fitness Nutrition — Gym workout planner and nutrition tracker"
 sidebar_label: "Fitness Nutrition"
 description: "Gym workout planner and nutrition tracker"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/health/health-neuroskill-bci|health-neuroskill-bci]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/microsoft--playwright-mcp/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/microsoft--playwright-mcp/seguranca|seguranca]]"
+---
+
 # F3 — Inventário de capacidades — microsoft--playwright-mcp
 
 - **slug:** microsoft--playwright-mcp · **sha:** 2d446f9e1b79886103c79406b81cc5408364487a · **rota:** D

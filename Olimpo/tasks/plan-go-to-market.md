@@ -25,6 +25,11 @@ Checklist:
   - "[ ] TAM/SAM/SOM definidos com timing de mercado"
   - "[ ] Declaração de posicionamento elaborada com hierarquia de mensagens"
   - "[ ] Os 3 principais canais selecionados com estratégia e orçamento"
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Planejar Go-to-Market

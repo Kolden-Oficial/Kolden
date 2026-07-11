@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Ananke
+up: "[[Ananke/_MOC-ananke]]"
+---
+
 # Ananke — Squad de Operações & BizOps
 
 > **status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)**

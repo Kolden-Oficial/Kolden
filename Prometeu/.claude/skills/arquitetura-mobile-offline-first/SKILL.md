@@ -4,6 +4,9 @@ description: Use ao desenhar app mobile que precisa funcionar SEM conexão, ou c
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Arquitetura Mobile Offline-First

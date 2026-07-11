@@ -12,6 +12,9 @@ description: >
   "peer-to-peer agent", "como orquestrar N agentes", "mediator entre agentes".
   Dono: swarm-orchestrator (Nexus). Fronteira: define O QUE E COMO os agentes se
   falam; `topologias-de-time` decide POR QUE (papéis).
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Arquitetura multi-agente canônica

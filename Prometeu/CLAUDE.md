@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/README|README]]"
+---
+
 # CLAUDE.md — Prometeu (Squad de Engenharia · Kolden OS)
 
 > **Squad-alvo:** Prometeu — Camada 5 (Operacional) do METODO Kolden §3, grupo "Engenharia" (Prometeu · Dedalo · Egide).

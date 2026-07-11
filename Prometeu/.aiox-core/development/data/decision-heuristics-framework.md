@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/data/quality-dimensions-framework|quality-dimensions-framework]]"
+  - "[[Prometeu/.aiox-core/development/data/tier-system-framework|tier-system-framework]]"
+---
+
 # Decision Heuristics Framework
 
 > **Version:** 1.0.0

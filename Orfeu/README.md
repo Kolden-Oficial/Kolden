@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Orfeu
+up: "[[Orfeu/_MOC-orfeu]]"
+relacionado:
+  - "[[Orfeu/_origem|_origem]]"
+---
+
 # Orfeu — Squad de Storytelling (Narrativa)
 
 Orfeu é um squad de 12 mestres do storytelling que reúne, sob um só teto, todo framework narrativo já criado — da mitologia comparada e da estrutura de roteiro à narrativa pessoal, ao storytelling de negócios, à improvisação, ao pitching, às apresentações e aos movimentos sociais. Um orquestrador (story-chief) diagnostica o desafio narrativo, faz a triagem e roteia para o especialista certo (ou para uma combinação deles), sintetizando frameworks como a Hero's Journey, o Story Circle, o Beat Sheet, o Story Grid, o ABT e a Public Narrative em uma estratégia acionável.

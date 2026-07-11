@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/templates/_indice|_indice]]"
+---
+
 # Command Rationalization Matrix Template
 
 **Purpose:** Systematic framework for evaluating agent commands for rationalization

@@ -1,6 +1,9 @@
 ---
 name: topologias-de-time
 description: Use ao decidir a arquitetura de coordenação de um squad/time de agentes — quando o arquiteto precisa escolher entre pipeline, fan-out/fan-in, expert pool, producer-reviewer, supervisor ou delegação hierárquica, dimensionar o time e definir o protocolo de passagem de dados entre os membros. Vai além do "solo vs squad": define COMO os agentes se coordenam.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Topologias de time de agentes

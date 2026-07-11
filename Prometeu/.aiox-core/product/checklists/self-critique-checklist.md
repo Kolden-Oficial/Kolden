@@ -1,3 +1,11 @@
+---
+tipo: checklist
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/checklists/_indice|_indice]]"
+---
+
 # Self-Critique Checklist
 
 > **Used By:** `plan-execute-subtask.md` (Coder Agent Steps 5.5 & 6.5)

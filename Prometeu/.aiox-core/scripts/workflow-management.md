@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/scripts/README|README]]"
+---
+
 # Workflow Management
 
 Enables AIOX orchestrator to manage and execute team workflows.

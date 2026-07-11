@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Notion Block Types
 
 Reference for creating and reading all common Notion block types via the API.

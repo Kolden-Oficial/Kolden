@@ -13,6 +13,9 @@ agente_dono: [hormozi-sales-coach]
 tags: [oasp, coaching, behavioral-feedback, follow-up]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G6)
 status: semente
+tipo: skill
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
 ---
 
 # Coaching OASP — Observe / Ask / Suggest / Practice

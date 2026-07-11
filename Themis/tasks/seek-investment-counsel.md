@@ -25,6 +25,11 @@ Checklist:
   - "[ ] As três análises (Dalio, Munger, Thiel) concluídas"
   - "[ ] Recomendação clara com termos ou condições"
   - "[ ] Critérios de abandono (kill criteria) e framework de monitoramento definidos"
+tipo: nota
+area: Themis
+up: "[[Themis/_MOC-themis]]"
+relacionado:
+  - "[[Themis/tasks/_indice|_indice]]"
 ---
 
 # Task: Sessão do Comitê de Investimentos

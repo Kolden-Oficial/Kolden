@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/README|README]]"
+---
+
 # PRD de IA — Peitho
 
 | Campo | Valor |

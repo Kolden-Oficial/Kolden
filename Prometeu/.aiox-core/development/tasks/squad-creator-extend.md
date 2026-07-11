@@ -60,6 +60,11 @@ Checklist:
   - "[ ] Atualizar o manifesto squad.yaml"
   - "[ ] Rodar validação"
   - "[ ] Exibir resultado e próximos passos"
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Task Estender Squad

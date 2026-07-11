@@ -8,6 +8,9 @@ description: >
   "descrição de cargo", "nível/senioridade", "trilha de carreira", "política de pessoas", "política de
   RH", "férias", "home office", "código de conduta", "faixa salarial", "banda", "remuneração", "comp",
   "people analytics", "people report". Benchmark externo de mercado precisa de dado — sinalize a lacuna.
+tipo: skill
+area: Hestia
+up: "[[Hestia/_MOC-hestia]]"
 ---
 
 # Políticas e Cargos

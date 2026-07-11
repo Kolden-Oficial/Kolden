@@ -1,6 +1,9 @@
 ---
 name: criacao-de-squad
 description: Cria um squad multi-agente (orquestrador tier 0 + especialistas tier 1) na fase de construção, quando o arquiteto recomendou topologia SQUAD. Gera o manifesto squad.yaml, o orquestrador, os especialistas, o roteamento por keywords, os workflows como DAG e o checklist compartilhado. Segue a ordem canônica da Fase 5 (cascata 5.1→5.6).
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Criação de Squad

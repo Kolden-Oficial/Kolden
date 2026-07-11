@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/email/himalaya/references/message-composition|message-composition]]"
+---
+
 # Himalaya Configuration Reference
 
 Configuration file location: `~/.config/himalaya/config.toml`

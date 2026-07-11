@@ -1,6 +1,9 @@
 ---
 name: testing
 description: Verify a Skyvern deployment is working correctly by smoke-testing the backend API, frontend rendering, browser session provisioning, and workflow execution. Use when the user says 'is Skyvern working', 'test my deployment', 'verify the installation', 'smoke test', or needs to check that a self-hosted or local Skyvern instance is healthy.
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Testing

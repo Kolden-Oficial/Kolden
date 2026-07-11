@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/fetching/dynamic|dynamic]]"
+  - "[[Argos/motor/scrapling/docs/fetching/static|static]]"
+  - "[[Argos/motor/scrapling/docs/fetching/stealthy|stealthy]]"
+---
+
 # Fetchers basics
 
 ## Introduction

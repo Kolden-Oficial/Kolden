@@ -1,3 +1,11 @@
+---
+tipo: checklist
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/checklists/_indice|_indice]]"
+---
+
 # Checklist de Auditoria de Integração
 
 **Checklist ID:** CCM-CL-005

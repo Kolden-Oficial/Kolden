@@ -5,6 +5,9 @@ description: |
   Pipeline: Query > Decompose > Parallel Search (Haiku) > Evaluate > Synthesize > Document.
   Zero external dependencies. MCPs optional.
   Salva em docs/research/{YYYY-MM-DD}-{slug}/.
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # Tech Search

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/frontend/_indice|_indice]]"
+---
+
 # Vanilla JS Frontend
 
 The VanillaJS frontend is a lightweight solution leveraging FastAPI to serve static files.

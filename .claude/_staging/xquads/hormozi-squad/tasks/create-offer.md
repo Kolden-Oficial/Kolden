@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Value Equation scored across all 4 quadrants"
   - "[ ] Problems mapped to solution vehicles with proprietary names"
   - "[ ] Offer stack assembled with core + bonuses"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/hormozi-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Create Grand Slam Offer

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+---
+
 # Catálogo de Habilidades — Dédalo
 
 Índice das 11 habilidades do squad Dédalo (engenharia de software com agentes de código +

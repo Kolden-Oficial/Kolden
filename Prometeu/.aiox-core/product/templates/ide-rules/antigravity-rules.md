@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/claude-rules|claude-rules]]"
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/codex-rules|codex-rules]]"
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/copilot-rules|copilot-rules]]"
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/cursor-rules|cursor-rules]]"
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/gemini-rules|gemini-rules]]"
+---
+
 # Synkra AIOX Development Rules for AntiGravity
 
 You are working with Synkra AIOX, an AI-Orchestrated System for Full Stack Development.

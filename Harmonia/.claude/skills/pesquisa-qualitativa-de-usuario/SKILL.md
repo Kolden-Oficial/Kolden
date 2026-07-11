@@ -11,6 +11,9 @@ subdomain: ux-research
 agente_primario: [harmonia-chief]
 tags: [ux-research, usability-test, think-aloud, persona-empirica, triangulacao]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G19, G20, G21)
+tipo: skill
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
 ---
 
 <!--

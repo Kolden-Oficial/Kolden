@@ -25,6 +25,11 @@ Checklist:
   - "[ ] 3-5 relevant advisors consulted with their frameworks"
   - "[ ] Synthesis identifies agreement, disagreement, and tensions"
   - "[ ] Unified recommendation with dissenting views included"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/advisory-board/tasks/_indice|_indice]]"
 ---
 
 # Task: Full Board Meeting

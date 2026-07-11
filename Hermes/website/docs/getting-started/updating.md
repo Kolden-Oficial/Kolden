@@ -2,6 +2,15 @@
 sidebar_position: 3
 title: "Updating & Uninstalling"
 description: "How to update Hermes Agent to the latest version or uninstall it"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/getting-started/installation|installation]]"
+  - "[[Hermes/website/docs/getting-started/learning-path|learning-path]]"
+  - "[[Hermes/website/docs/getting-started/nix-setup|nix-setup]]"
+  - "[[Hermes/website/docs/getting-started/quickstart|quickstart]]"
+  - "[[Hermes/website/docs/getting-started/termux|termux]]"
 ---
 
 # Updating & Uninstalling

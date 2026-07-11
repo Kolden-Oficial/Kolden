@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # ADMET Reference Guide
 
 Comprehensive reference for Absorption, Distribution, Metabolism, Excretion, and Toxicity (ADMET) analysis in drug discovery.

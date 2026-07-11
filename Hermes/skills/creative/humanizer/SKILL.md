@@ -11,6 +11,9 @@ metadata:
     category: creative
     homepage: https://github.com/blader/humanizer
     related_skills: [songwriting-and-ai-music]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Humanizer: Remove AI Writing Patterns

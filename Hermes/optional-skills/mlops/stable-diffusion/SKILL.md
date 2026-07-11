@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Image Generation, Stable Diffusion, Diffusers, Text-to-Image, Multimodal, Computer Vision]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Stable Diffusion Image Generation

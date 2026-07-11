@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/palettes/macaron|macaron]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/palettes/mono-ink|mono-ink]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/palettes/neon|neon]]"
+---
+
 # warm
 
 Warm earth tones on soft peach, no cool colors

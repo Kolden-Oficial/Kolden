@@ -12,6 +12,9 @@ description: >
   Peitho) nem post autoral (isso é `linkedin-x-authority`).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # LinkedIn Comment-to-Pipeline — o outbound que ainda funciona

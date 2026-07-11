@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [PDF, Documents, Editing, NLP, Productivity]
     homepage: https://pypi.org/project/nano-pdf/
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # nano-pdf

@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F4 — Mapa de decisão · B15 Specialized sub-roteado
 
 Repo: `msitarzewski/agency-agents@a597cb6` — divisão `specialized/`.

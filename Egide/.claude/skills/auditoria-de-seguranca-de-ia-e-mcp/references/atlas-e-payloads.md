@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+---
+
 # Referência — MITRE ATLAS e payloads de teste (AI-security)
 
 Dados densos de apoio à habilidade `auditoria-de-seguranca-de-ia-e-mcp`. Carregue sob demanda.

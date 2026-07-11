@@ -12,6 +12,9 @@ description: >
   "otimizar workflow", "melhorar operação", "muda", "kaizen", "onde estamos
   perdendo tempo". Fronteira: aletheia decide QUE PROCESSO otimizar (via
   discovery); esta skill executa a otimização.
+tipo: skill
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
 ---
 
 # Otimização de workflow — Lean / Six Sigma

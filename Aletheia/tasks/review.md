@@ -16,6 +16,11 @@ Saida:
     tipo: object
     destino: Console
     persistido: false
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Revisar Qualidade da Saída — Aletheia

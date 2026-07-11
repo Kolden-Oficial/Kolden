@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Single transformation promise defined"
   - "[ ] 3-5 teaching modules designed with frameworks and exercises"
   - "[ ] Run of show created with timing"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/hormozi-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Design Workshop

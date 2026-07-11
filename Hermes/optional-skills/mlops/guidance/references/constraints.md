@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/guidance/references/backends|backends]]"
+  - "[[Hermes/optional-skills/mlops/guidance/references/examples|examples]]"
+---
+
 # Comprehensive Constraint Patterns
 
 Guide to regex constraints, grammar-based generation, and token healing in Guidance.

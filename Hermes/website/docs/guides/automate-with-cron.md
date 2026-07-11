@@ -2,6 +2,11 @@
 sidebar_position: 11
 title: "Automate Anything with Cron"
 description: "Real-world automation patterns using Hermes cron — monitoring, reports, pipelines, and multi-skill workflows"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Automate Anything with Cron

@@ -1,3 +1,14 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/core/docs/component-creation-guide|component-creation-guide]]"
+  - "[[Prometeu/.aiox-core/core/docs/session-update-pattern|session-update-pattern]]"
+  - "[[Prometeu/.aiox-core/core/docs/SHARD-TRANSLATION-GUIDE|SHARD-TRANSLATION-GUIDE]]"
+  - "[[Prometeu/.aiox-core/core/docs/template-syntax|template-syntax]]"
+---
+
 # Synkra AIOX Meta-Agent Troubleshooting Guide
 
 ## Overview

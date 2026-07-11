@@ -1,6 +1,9 @@
 ---
 name: infisical-padrao
 description: Ensina como buscar credenciais e segredos via Infisical (MCP ou API REST). Use sempre que um agente precisar acessar qualquer API key, token ou senha — nunca busque credenciais diretamente de variáveis de ambiente em texto puro. Infisical é a ferramenta padrão de segredos de todos os agentes do Kolden.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Infisical — Ferramenta Padrão de Segredos

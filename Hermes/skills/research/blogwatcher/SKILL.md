@@ -11,6 +11,9 @@ metadata:
     homepage: https://github.com/JulienTant/blogwatcher-cli
 prerequisites:
   commands: [blogwatcher-cli]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Blogwatcher

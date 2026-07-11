@@ -10,6 +10,9 @@ description: >-
 domain: ciberseguranca
 subdomain: mobile-security
 tags: [mobile, android, ios, apk, ipa, mobsf, owasp-masvs, estatica, appsec]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Segurança Mobile (análise estática)

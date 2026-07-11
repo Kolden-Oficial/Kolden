@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/baoyu-infographic/references/layouts/_indice|_indice]]"
+---
+
 # periodic-table
 
 Grid of categorized elements with consistent cell formatting.

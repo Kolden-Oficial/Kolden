@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/.claude/skills/tokens-de-design/references/estados-e-variantes|estados-e-variantes]]"
+---
+
 # Arquitetura de tokens em 3 camadas — detalhe
 
 > Digerido de `ui-ux-pro-max/.claude/skills/design-system/references/*` (MIT):

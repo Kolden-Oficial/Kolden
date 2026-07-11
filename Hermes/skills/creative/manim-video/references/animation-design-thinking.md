@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/manim-video/references/_indice|_indice]]"
+---
+
 # Animation Design Thinking
 
 How to decide WHAT to animate and HOW to structure it — before writing any code.

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Framework selecionado com justificativa"
   - "[ ] Todos os beats estruturais definidos e preenchidos"
   - "[ ] Arco emocional mapeado do início ao fim"
+tipo: nota
+area: Orfeu
+up: "[[Orfeu/_MOC-orfeu]]"
+relacionado:
+  - "[[Orfeu/tasks/_indice|_indice]]"
 ---
 
 # Task: Criação de Estrutura de História

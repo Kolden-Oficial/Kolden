@@ -1,6 +1,9 @@
 ---
 name: git-worktrees-e-finalizacao
 description: Use ao isolar trabalho em uma worktree/branch separada e ao FECHAR essa branch no fim — quando rodar agentes paralelos sem que pisem no mesmo working tree, criar um sandbox git para uma feature/experimento, ou decidir o destino de uma branch pronta (merge/PR/manter/descartar) com limpeza correta. Aciona em "isola num worktree", "sandbox dessa branch", "finaliza a branch", "o que faço com essa branch agora". NÃO use para commits triviais na branch atual.
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Git Worktrees e Finalização de Branch

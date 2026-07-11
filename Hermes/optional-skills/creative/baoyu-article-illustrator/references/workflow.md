@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/prompt-construction|prompt-construction]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/style-presets|style-presets]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/styles|styles]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/usage|usage]]"
+---
+
 # Detailed Workflow Procedures
 
 ## Step 1: Detect Reference Images

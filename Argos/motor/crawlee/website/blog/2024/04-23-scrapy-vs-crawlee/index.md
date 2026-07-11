@@ -4,6 +4,9 @@ title: 'Scrapy vs. Crawlee'
 description: 'Which web scraping library should you use in 2024? Learn how each handles headless mode, autoscaling, proxy rotation, errors, and anti-scraping techniques.'
 image: ./img/scrapy-vs-crawlee.webp
 authors: [SauravJ]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 import Tabs from '@theme/Tabs';

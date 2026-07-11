@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--00-gestao-empresarial/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--00-gestao-empresarial/reconciliacao|reconciliacao]]"
+---
+
 # Mapa de Decisão F4 — Área "00 | Gestão Empresarial"
 
 > Disposições por D-id. ABSORVER → cérebro; DESCARTAR (exige motivo); DEFER (esqueleto/estrutura a recriar, exige motivo). Data: 2026-06-25.

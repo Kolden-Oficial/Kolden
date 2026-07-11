@@ -2,6 +2,11 @@
 title: "Songwriting And Ai Music — Songwriting craft and Suno AI music prompts"
 sidebar_label: "Songwriting And Ai Music"
 description: "Songwriting craft and Suno AI music prompts"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/creative/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

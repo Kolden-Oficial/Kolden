@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/CODE_OF_CONDUCT|CODE_OF_CONDUCT]]"
+  - "[[Argos/motor/scrapling/CONTRIBUTING|CONTRIBUTING]]"
+  - "[[Argos/motor/scrapling/ROADMAP|ROADMAP]]"
+---
+
 <!-- mcp-name: io.github.D4Vinci/Scrapling -->
 
 <h1 align="center">

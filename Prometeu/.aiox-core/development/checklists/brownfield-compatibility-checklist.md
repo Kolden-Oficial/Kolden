@@ -1,3 +1,14 @@
+---
+tipo: checklist
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/checklists/agent-quality-gate|agent-quality-gate]]"
+  - "[[Prometeu/.aiox-core/development/checklists/issue-triage-checklist|issue-triage-checklist]]"
+  - "[[Prometeu/.aiox-core/development/checklists/memory-audit-checklist|memory-audit-checklist]]"
+  - "[[Prometeu/.aiox-core/development/checklists/self-critique-checklist|self-critique-checklist]]"
+---
+
 # Checklist de Compatibilidade Brownfield
 
 > Story AIOX-DIFF-4.3.2: Checklist formal de compatibilidade retroativa

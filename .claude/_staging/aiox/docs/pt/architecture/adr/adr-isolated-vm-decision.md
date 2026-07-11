@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/architecture/adr/ADR-COLLAB-1-current-state-audit|ADR-COLLAB-1-current-state-audit]]"
+  - "[[.claude/_staging/aiox/docs/pt/architecture/adr/ADR-COLLAB-2-proposed-configuration|ADR-COLLAB-2-proposed-configuration]]"
+  - "[[.claude/_staging/aiox/docs/pt/architecture/adr/adr-hcs-health-check-system|adr-hcs-health-check-system]]"
+---
+
 <!-- Tradução: PT-BR | Original: /docs/en/architecture/adr/adr-isolated-vm-decision.md | Sincronização: 2026-01-27 -->
 
 # ADR: Compatibilidade isolated-vm com macOS

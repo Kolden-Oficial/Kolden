@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/tests/macos/MANUAL-TESTING-GUIDE|MANUAL-TESTING-GUIDE]]"
+---
+
 # macOS Testing Suite for AIOX
 **Story 1.10b - macOS Testing & Validation**
 

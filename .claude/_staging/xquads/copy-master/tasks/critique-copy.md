@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Fatal flaw identified with rewrite examples"
   - "[ ] Prioritized fix list with specialist routing"
   - "[ ] Persuasion psychology audit completed"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-master/tasks/_indice|_indice]]"
 ---
 
 # Task: Critique Copy

@@ -3,6 +3,11 @@ title: X (Twitter) Search
 description: Search X (Twitter) posts and threads from within the agent using xAI's built-in x_search Responses tool — works with either a SuperGrok OAuth login or an XAI_API_KEY.
 sidebar_label: X (Twitter) Search
 sidebar_position: 7
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # X (Twitter) Search

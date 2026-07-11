@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+---
+
 # Checklist de Qualidade de Saída de Design Systems/UX
 
 **ID do Checklist:** DESIGN-CL-001

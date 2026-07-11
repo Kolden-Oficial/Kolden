@@ -1,6 +1,9 @@
 ---
 name: verificacao-de-alinhamento
 description: Verifica se todos os documentos do agente atual estão alinhados e sem pontas soltas — referências cruzadas, ferramentas documentadas, habilidades registradas, PRD atualizado. Use no hook SessionStart (quando passaram >24h desde a última verificação) ou manualmente via /verificar. Funciona tanto no Caos quanto em qualquer agente criado.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Verificação de Alinhamento

@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/productivity/shop/references/catalog-mcp|catalog-mcp]]"
+  - "[[Hermes/optional-skills/productivity/shop/references/direct-api|direct-api]]"
+  - "[[Hermes/optional-skills/productivity/shop/references/legal|legal]]"
+---
+
 # Safety, Security, And Legal
 
 ## Scope

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Skyvern Claude Desktop MCP Bundle
 
 Source files for the downloadable `.mcpb` bundle that installs Skyvern Cloud into Claude Desktop without requiring the user to install Node.js.

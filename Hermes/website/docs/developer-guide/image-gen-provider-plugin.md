@@ -2,6 +2,11 @@
 sidebar_position: 11
 title: "Image Generation Provider Plugins"
 description: "How to build an image-generation backend plugin for Hermes Agent"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Building an Image Generation Provider Plugin

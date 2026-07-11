@@ -2,6 +2,9 @@
 sidebar_position: 12
 title: "Kanban（多 Agent 看板）"
 description: "基于 SQLite 的持久化任务看板，用于协调多个 Hermes 配置文件"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Kanban — 多 Agent 配置文件协作

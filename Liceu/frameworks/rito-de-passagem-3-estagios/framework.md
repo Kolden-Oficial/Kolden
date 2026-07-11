@@ -10,6 +10,9 @@ status: semente
 atualizado-em: 2026-06-29
 fonte_upstream: "msitarzewski/agency-agents@a597cb6 — academic/anthropology (MIT)"
 tags: [antropologia, ritual, jornada, transformacao]
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Rito de passagem em 3 estágios

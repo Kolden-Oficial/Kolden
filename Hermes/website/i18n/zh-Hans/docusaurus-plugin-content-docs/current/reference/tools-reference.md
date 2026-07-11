@@ -2,6 +2,9 @@
 sidebar_position: 3
 title: "内置工具参考"
 description: "Hermes 内置工具权威参考，按工具集分组"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 内置工具参考

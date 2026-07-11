@@ -2,6 +2,39 @@
 sidebar_position: 1
 title: "Messaging Gateway"
 description: "Chat with Hermes from Telegram, Discord, Slack, WhatsApp, Signal, SMS, Email, Home Assistant, Mattermost, Matrix, DingTalk, Yuanbao, Microsoft Teams, LINE, Webhooks, or any OpenAI-compatible frontend via the API server — architecture and setup overview"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/bluebubbles|bluebubbles]]"
+  - "[[Hermes/website/docs/user-guide/messaging/dingtalk|dingtalk]]"
+  - "[[Hermes/website/docs/user-guide/messaging/discord|discord]]"
+  - "[[Hermes/website/docs/user-guide/messaging/email|email]]"
+  - "[[Hermes/website/docs/user-guide/messaging/feishu|feishu]]"
+  - "[[Hermes/website/docs/user-guide/messaging/google_chat|google_chat]]"
+  - "[[Hermes/website/docs/user-guide/messaging/homeassistant|homeassistant]]"
+  - "[[Hermes/website/docs/user-guide/messaging/line|line]]"
+  - "[[Hermes/website/docs/user-guide/messaging/matrix|matrix]]"
+  - "[[Hermes/website/docs/user-guide/messaging/mattermost|mattermost]]"
+  - "[[Hermes/website/docs/user-guide/messaging/msgraph-webhook|msgraph-webhook]]"
+  - "[[Hermes/website/docs/user-guide/messaging/ntfy|ntfy]]"
+  - "[[Hermes/website/docs/user-guide/messaging/open-webui|open-webui]]"
+  - "[[Hermes/website/docs/user-guide/messaging/photon|photon]]"
+  - "[[Hermes/website/docs/user-guide/messaging/qqbot|qqbot]]"
+  - "[[Hermes/website/docs/user-guide/messaging/signal|signal]]"
+  - "[[Hermes/website/docs/user-guide/messaging/simplex|simplex]]"
+  - "[[Hermes/website/docs/user-guide/messaging/slack|slack]]"
+  - "[[Hermes/website/docs/user-guide/messaging/sms|sms]]"
+  - "[[Hermes/website/docs/user-guide/messaging/teams|teams]]"
+  - "[[Hermes/website/docs/user-guide/messaging/teams-meetings|teams-meetings]]"
+  - "[[Hermes/website/docs/user-guide/messaging/telegram|telegram]]"
+  - "[[Hermes/website/docs/user-guide/messaging/webhooks|webhooks]]"
+  - "[[Hermes/website/docs/user-guide/messaging/wecom|wecom]]"
+  - "[[Hermes/website/docs/user-guide/messaging/wecom-callback|wecom-callback]]"
+  - "[[Hermes/website/docs/user-guide/messaging/weixin|weixin]]"
+  - "[[Hermes/website/docs/user-guide/messaging/whatsapp|whatsapp]]"
+  - "[[Hermes/website/docs/user-guide/messaging/whatsapp-cloud|whatsapp-cloud]]"
+  - "[[Hermes/website/docs/user-guide/messaging/yuanbao|yuanbao]]"
 ---
 
 # Messaging Gateway

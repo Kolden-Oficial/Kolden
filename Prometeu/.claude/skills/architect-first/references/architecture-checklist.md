@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/skills/architect-first/references/pre-implementation-checklist|pre-implementation-checklist]]"
+  - "[[Prometeu/.claude/skills/architect-first/references/stop-rules-guide|stop-rules-guide]]"
+  - "[[Prometeu/.claude/skills/architect-first/references/testing-strategy-guide|testing-strategy-guide]]"
+---
+
 # Checklist de Validação de Arquitetura
 
 Use este checklist ao validar decisões arquiteturais antes da implementação.

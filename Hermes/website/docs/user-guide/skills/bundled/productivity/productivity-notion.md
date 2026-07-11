@@ -2,6 +2,11 @@
 title: "Notion — Notion API + ntn CLI: pages, databases, markdown, Workers"
 sidebar_label: "Notion"
 description: "Notion API + ntn CLI: pages, databases, markdown, Workers"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/productivity/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

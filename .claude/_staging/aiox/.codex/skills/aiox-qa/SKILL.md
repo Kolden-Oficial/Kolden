@@ -1,6 +1,9 @@
 ---
 name: aiox-qa
 description: Test Architect & Quality Advisor (Quinn). Use for comprehensive test architecture review, quality gate decisions, and code improvement. Provides thorough analysis including requ...
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # AIOX Test Architect & Quality Advisor Activator

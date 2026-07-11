@@ -1,3 +1,15 @@
+---
+tipo: registro
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/registros/metodo-onda-4/diff-cirurgico|diff-cirurgico]]"
+  - "[[Olimpo/registros/metodo-onda-4/PROMPT-DE-ABERTURA|PROMPT-DE-ABERTURA]]"
+  - "[[Olimpo/registros/metodo-onda-4/sumario-executivo|sumario-executivo]]"
+  - "[[Olimpo/registros/metodo-onda-4/verificacao-dike|verificacao-dike]]"
+  - "[[Olimpo/registros/metodo-onda-4/verificacao-dike-delta|verificacao-dike-delta]]"
+---
+
 # Matriz de Conformidade — Onda 4 do METODO Kolden (Olimpo)
 
 > **Contrato-mãe:** `Olimpo/contratos/missoes/m-20260706-metodo-kolden.yaml` — bloco `resultado_ondas_2_a_26.onda_4`

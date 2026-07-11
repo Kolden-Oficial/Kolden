@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/tasks/_indice|_indice]]"
+---
+
 # Tarefa: Implementar Schema (JSON-LD)
 
 **ID:** ARIADNE-004 · **Versão:** 1.0.0 · **Comando:** `*schema` · **Agente:** engenheiro-de-schema

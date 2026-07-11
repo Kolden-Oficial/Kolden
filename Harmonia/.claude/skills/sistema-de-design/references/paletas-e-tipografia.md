@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/catalogo-de-estilos|catalogo-de-estilos]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/guia-por-stack|guia-por-stack]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/regras-ux|regras-ux]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/tipos-de-produto|tipos-de-produto]]"
+---
+
 # Paletas e pares tipográficos
 
 ## Paletas por tipo de produto

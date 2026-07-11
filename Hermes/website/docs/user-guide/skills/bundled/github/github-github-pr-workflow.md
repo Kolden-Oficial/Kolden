@@ -2,6 +2,15 @@
 title: "Github Pr Workflow — GitHub PR lifecycle: branch, commit, open, CI, merge"
 sidebar_label: "Github Pr Workflow"
 description: "GitHub PR lifecycle: branch, commit, open, CI, merge"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/github/github-codebase-inspection|github-codebase-inspection]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/github/github-github-auth|github-github-auth]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/github/github-github-code-review|github-github-code-review]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/github/github-github-issues|github-github-issues]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/github/github-github-repo-management|github-github-repo-management]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

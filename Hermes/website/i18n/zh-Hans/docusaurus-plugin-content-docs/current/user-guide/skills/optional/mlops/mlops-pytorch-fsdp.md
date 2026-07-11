@@ -2,6 +2,9 @@
 title: "Pytorch Fsdp"
 sidebar_label: "Pytorch Fsdp"
 description: "PyTorch FSDP 全分片数据并行训练专家指导 - 参数分片、混合精度、CPU 卸载、FSDP2"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

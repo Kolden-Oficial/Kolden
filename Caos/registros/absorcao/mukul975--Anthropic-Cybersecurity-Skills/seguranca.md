@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/mukul975--Anthropic-Cybersecurity-Skills/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/mukul975--Anthropic-Cybersecurity-Skills/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # F2 — Segurança estática
 
 - **slug:** `mukul975--Anthropic-Cybersecurity-Skills`

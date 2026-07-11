@@ -2,6 +2,9 @@
 title: "Node Inspect 调试器 — 调试 Node"
 sidebar_label: "Node Inspect 调试器"
 description: "调试 Node"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

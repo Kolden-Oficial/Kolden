@@ -2,6 +2,9 @@
 sidebar_position: 11
 title: "ACP 编辑器集成"
 description: "在 VS Code、Zed 和 JetBrains 等兼容 ACP 的编辑器中使用 Hermes Agent"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # ACP 编辑器集成

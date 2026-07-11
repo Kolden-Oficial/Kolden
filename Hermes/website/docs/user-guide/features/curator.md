@@ -2,6 +2,11 @@
 sidebar_position: 3
 title: "Curator"
 description: "Background maintenance for agent-created skills — usage tracking, staleness, archival, and LLM-driven review"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Curator

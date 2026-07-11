@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/styles/_indice|_indice]]"
+---
+
 # ink-notes
 
 Professional black-ink visual notes on pure white, in the tradition of Mike Rohde's sketchnoting

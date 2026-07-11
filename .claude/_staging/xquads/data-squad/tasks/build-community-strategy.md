@@ -25,6 +25,11 @@ Checklist:
   - "[ ] SPACES model assessed with primary dimension selected"
   - "[ ] Engagement ladder designed with 7 rungs"
   - "[ ] Community Health Score defined with 5 components"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/data-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Build Community Strategy

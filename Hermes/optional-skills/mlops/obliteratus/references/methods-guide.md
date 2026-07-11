@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/obliteratus/references/analysis-modules|analysis-modules]]"
+---
+
 # OBLITERATUS Methods — Detailed Guide
 
 > The CLI accepts 9 methods via `--method`: basic, advanced, aggressive, spectral_cascade,

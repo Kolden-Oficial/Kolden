@@ -2,6 +2,12 @@
 title: "Subagent Driven Development — Execute plans via delegate_task subagents (2-stage review)"
 sidebar_label: "Subagent Driven Development"
 description: "Execute plans via delegate_task subagents (2-stage review)"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/software-development/software-development-code-wiki|software-development-code-wiki]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/software-development/software-development-rest-graphql-debug|software-development-rest-graphql-debug]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

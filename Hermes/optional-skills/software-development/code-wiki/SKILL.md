@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Documentation, Mermaid, Architecture, Diagrams, Wiki, Code-Analysis]
     related_skills: [codebase-inspection, github-repo-management]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Code Wiki Skill

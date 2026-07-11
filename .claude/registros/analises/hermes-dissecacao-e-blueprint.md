@@ -1,3 +1,9 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+---
+
 # Hermes Agent — Dissecação técnica + Blueprint de replicação
 
 > **O que é este documento.** Uma dissecação arquivo-a-arquivo do **Hermes Agent** (Nous Research), o runtime de agente vendorizado em `C:\Kolden\Hermes`, e a destilação dos princípios que o tornam único num **padrão de replicação** aplicável aos agentes da Kolden (Caos, squads, Olimpo, Hermes-chief).

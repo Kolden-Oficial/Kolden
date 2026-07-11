@@ -13,6 +13,9 @@ description: >
   `ciclo-de-vida-e-retencao`).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Sequência de Nutrição — e-mail que move, não que enche caixa

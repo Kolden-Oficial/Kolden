@@ -2,6 +2,11 @@
 sidebar_position: 16
 title: "LSP — Semantic Diagnostics"
 description: "Real language servers (pyright, gopls, rust-analyzer, …) wired into the post-write lint check used by write_file and patch."
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Language Server Protocol (LSP)

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/research/research-paper-writing/references/_indice|_indice]]"
+---
+
 # Autoreason: Iterative Refinement Methodology
 
 Complete reference for the autoreason iterative refinement method, derived from experimental results across subjective writing tasks, competitive programming, and four model tiers. Use this when any output (paper draft, experiment script, analysis, task definition) needs iterative improvement.

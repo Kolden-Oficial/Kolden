@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # RCA: SSL CA cert bundle corruption after `hermes update`
 
 **Status:** resolved by `fix(ssl): surface broken CA bundles before provider calls`

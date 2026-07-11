@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/guides/README|README]]"
+---
+
 # Guia de Testes do Synkra AIOX
 
 > [EN](../../guides/testing-guide.md) | **PT** | [ES](../../es/guides/testing-guide.md)

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/diagnostico_caos/_indice|_indice]]"
+---
+
 # 05 — Red Team (ataque às próprias conclusões)
 
 ## Caso mais forte de que o CAOS é SEGURO

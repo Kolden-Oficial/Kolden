@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
+---
+
 # Orquestrador (tier 0) — <Nome do Squad>
 
 Template do orquestrador de um squad. Ele roteia e sintetiza; **nunca executa** o trabalho

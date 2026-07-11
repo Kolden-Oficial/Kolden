@@ -2,6 +2,11 @@
 sidebar_position: 12
 title: "Web Search Provider Plugins"
 description: "How to build a web-search/extract/crawl backend plugin for Hermes Agent"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Building a Web Search Provider Plugin

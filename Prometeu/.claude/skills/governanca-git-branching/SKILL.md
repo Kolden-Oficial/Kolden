@@ -4,6 +4,9 @@ description: Use ao definir ou revisar a estratégia de branching de um reposit�
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Governança Git — Estratégia de Branching

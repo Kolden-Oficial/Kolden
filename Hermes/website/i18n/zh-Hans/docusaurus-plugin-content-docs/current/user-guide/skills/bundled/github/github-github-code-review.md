@@ -2,6 +2,9 @@
 title: "Github Code Review — 通过 gh 或 REST 审查 PR：差异对比、行内评论"
 sidebar_label: "Github Code Review"
 description: "通过 gh 或 REST 审查 PR：差异对比、行内评论"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Data-Driven Growth Output Quality Checklist
 
 **Checklist ID:** DATA-CL-001

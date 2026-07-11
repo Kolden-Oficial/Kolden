@@ -10,6 +10,9 @@ status: semente
 atualizado-em: 2026-06-29
 fonte_upstream: "msitarzewski/agency-agents@a597cb6 — academic/anthropology (MIT)"
 tags: [antropologia, cultura, ritual, funcao-social]
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Função antes da estética

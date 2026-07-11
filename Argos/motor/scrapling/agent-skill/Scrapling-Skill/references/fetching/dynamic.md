@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/fetching/choosing|choosing]]"
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/fetching/static|static]]"
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/fetching/stealthy|stealthy]]"
+---
+
 # Fetching dynamic websites
 
 `DynamicFetcher` (formerly `PlayWrightFetcher`) provides flexible browser automation with multiple configuration options and built-in stealth improvements.

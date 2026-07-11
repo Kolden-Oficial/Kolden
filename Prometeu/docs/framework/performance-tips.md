@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/framework/README|README]]"
+---
+
 # AIOX Performance Tips
 
 **Version:** 1.0

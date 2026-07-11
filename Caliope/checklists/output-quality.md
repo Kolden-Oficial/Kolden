@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+---
+
 # Checklist de Qualidade de Saída de Copywriting — Copy Master
 
 **ID do Checklist:** COPY-M-CL-001

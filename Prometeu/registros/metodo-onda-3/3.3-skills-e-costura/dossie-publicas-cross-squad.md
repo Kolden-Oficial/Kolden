@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/registros/metodo-onda-3/3.3-skills-e-costura/_indice|_indice]]"
+---
+
 # Dossiê: 5 skills públicas cross-squad em Prometeu (READ-ONLY)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (Onda 3 · Sub-onda 3.3 · M1 CREATE).

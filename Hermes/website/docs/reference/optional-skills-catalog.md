@@ -2,6 +2,11 @@
 sidebar_position: 9
 title: "Optional Skills Catalog"
 description: "Official optional skills shipped with hermes-agent — install via hermes skills install official/<category>/<skill>"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/reference/_indice|_indice]]"
 ---
 
 # Optional Skills Catalog

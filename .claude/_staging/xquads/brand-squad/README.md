@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Brand Squad
 
 The definitive brand strategy squad — 10 legendary brand thinkers + 4 functional specialists + 1 orchestrator.

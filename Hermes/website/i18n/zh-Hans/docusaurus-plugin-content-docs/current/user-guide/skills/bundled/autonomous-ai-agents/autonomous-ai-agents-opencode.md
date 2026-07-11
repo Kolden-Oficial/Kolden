@@ -2,6 +2,9 @@
 title: "Opencode — 将编码任务委托给 OpenCode CLI（功能开发、PR 审查）"
 sidebar_label: "Opencode"
 description: "将编码任务委托给 OpenCode CLI（功能开发、PR 审查）"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

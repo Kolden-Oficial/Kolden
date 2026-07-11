@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/guia-por-stack|guia-por-stack]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/paletas-e-tipografia|paletas-e-tipografia]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/regras-ux|regras-ux]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/tipos-de-produto|tipos-de-produto]]"
+---
+
 # Catálogo de estilos visuais (84 categorias)
 
 Taxonomia de direções visuais para web e mobile. Para cada estilo, ao decidir,

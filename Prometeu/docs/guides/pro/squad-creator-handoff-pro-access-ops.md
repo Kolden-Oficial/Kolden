@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/pro/access-grant-ops-playbook|access-grant-ops-playbook]]"
+  - "[[Prometeu/docs/guides/pro/install-gate-setup|install-gate-setup]]"
+---
+
 # Handoff: Squad Creator -> DevOps Pro Access Ops
 
 **Status:** Ready to operationalize

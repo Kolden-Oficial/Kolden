@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # AIOX Method: Core Architecture
 
 > 🌐 **EN** | [PT](./pt/core-architecture.md) | [ES](./es/core-architecture.md)

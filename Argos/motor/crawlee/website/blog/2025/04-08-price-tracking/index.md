@@ -3,6 +3,9 @@ slug: crawlee-python-price-tracker
 title: How to build a price tracker with Crawlee and Apify
 description: Learn how to build and deploy a price tracker using Crawlee for Python and Apify.
 authors: [PercivalV]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 Build a price tracker with Crawlee for Python to scrape product details, export data in multiple formats, and send email alerts for price drops, then deploy and schedule it as an Apify Actor.

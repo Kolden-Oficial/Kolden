@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/workflows/_indice|_indice]]"
+---
+
 # AIOX Pro Developer Workflow
 
 This guide covers the two developer workflows for working with the AIOX Open Core architecture.

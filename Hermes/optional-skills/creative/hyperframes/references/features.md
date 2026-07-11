@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/hyperframes/references/cli|cli]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/composition|composition]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/gsap|gsap]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/troubleshooting|troubleshooting]]"
+  - "[[Hermes/optional-skills/creative/hyperframes/references/website-to-video|website-to-video]]"
+---
+
 # HyperFrames Feature Reference
 
 Load this file when a composition needs captions, TTS narration, audio-reactive visuals, marker-style text highlighting, or scene transitions. All patterns here are deterministic (no `Math.random()`, no `Date.now()`, no runtime audio analysis) and live on the same GSAP timeline as the rest of the composition.

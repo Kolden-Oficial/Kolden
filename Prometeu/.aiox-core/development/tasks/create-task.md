@@ -21,6 +21,11 @@
 
 **ParÃ¢metro:** `mode` (opcional, padrÃ£o: `interactive`)
 
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 ## Passo 0: VerificaÃ§Ã£o do Registry IDS (Consultivo)

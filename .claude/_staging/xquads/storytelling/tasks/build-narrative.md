@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Framework selected with reasoning"
   - "[ ] All structural beats defined and populated"
   - "[ ] Emotional arc mapped from beginning to end"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/storytelling/tasks/_indice|_indice]]"
 ---
 
 # Task: Story Structure Creation

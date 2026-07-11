@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Estado atual avaliado, com gargalos identificados"
   - "[ ] Fluxo de trabalho de design definido com estágios, atividades e gates"
   - "[ ] Métricas definidas para o acompanhamento contínuo da saúde"
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Configuração de uma Prática de DesignOps

@@ -2,6 +2,9 @@
 sidebar_position: 7
 title: "子智能体委派"
 description: "使用 delegate_task 为并行工作流生成隔离的子智能体"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 子智能体委派

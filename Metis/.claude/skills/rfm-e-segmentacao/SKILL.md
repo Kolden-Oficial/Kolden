@@ -9,6 +9,9 @@ description: >
   a dar churn", "quintis de cliente", "whale curve simples". NÃO use para modelo probabilístico
   de CLV futuro (isso é `clv-e-segmentacao` — RFM é o baseline descritivo, CLV é o preditivo).
   NÃO use para segmentação demográfica (isso não é comportamento).
+tipo: skill
+area: Metis
+up: "[[Metis/_MOC-metis]]"
 ---
 
 # RFM e segmentação de clientes

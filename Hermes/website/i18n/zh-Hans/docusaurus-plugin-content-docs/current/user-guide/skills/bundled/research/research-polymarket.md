@@ -2,6 +2,9 @@
 title: "Polymarket — 查询 Polymarket：市场、价格、订单簿、历史记录"
 sidebar_label: "Polymarket"
 description: "查询 Polymarket：市场、价格、订单簿、历史记录"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

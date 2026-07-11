@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/touchdesigner-mcp/references/_indice|_indice]]"
+---
+
 # Particles Reference
 
 Particle systems in TouchDesigner — modern POPs (Particle Operators) and the legacy particleSOP path.

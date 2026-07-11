@@ -9,6 +9,9 @@ description: >
   dona: gestor-de-fornecedores. Gatilhos: "qual fornecedor contratar", "avaliar este vendor", "comparar
   opções", "vale renovar?", "make or buy", "o fornecedor está cumprindo o SLA?". REGRA DURA: decisão por
   evidência, nunca por preferência. Custo financeiro → Pluto; risco de segurança → Egide.
+tipo: skill
+area: Ananke
+up: "[[Ananke/_MOC-ananke]]"
 ---
 
 # Gestão de Fornecedores e Procurement

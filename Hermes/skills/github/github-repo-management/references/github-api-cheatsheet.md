@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # GitHub REST API Cheatsheet
 
 Base URL: `https://api.github.com`

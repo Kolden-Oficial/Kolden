@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/matriz-de-conformidade|matriz-de-conformidade]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/sumario-executivo|sumario-executivo]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/verificacao-dike|verificacao-dike]]"
+---
+
 # Diff Cirúrgico — Prometeu × METODO-KOLDEN.md v1.0 (Sub-onda 3.1)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (Onda 3 · Grupo A · squad-alvo Prometeu · Sub-onda 3.1).

@@ -3,6 +3,9 @@ slug: crawlee-for-python-v06
 title: Crawlee for Python v0.6
 description: Announcing the Crawlee for Python v0.6 release.
 authors: [VladaD]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 Crawlee for Python v0.6 is here, and it's packed with new features and important bug fixes. If you're upgrading from a previous version, please take a moment to review the breaking changes detailed below to ensure a smooth transition.

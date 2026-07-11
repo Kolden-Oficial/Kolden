@@ -1,3 +1,11 @@
+---
+tipo: checklist
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/checklists/_indice|_indice]]"
+---
+
 # Accessibility WCAG AA Checklist
 
 **Purpose:** Ensure WCAG AA compliance for design system components

@@ -1,5 +1,8 @@
 ---
 sidebar_position: 2
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Profiles：运行多个 Agent

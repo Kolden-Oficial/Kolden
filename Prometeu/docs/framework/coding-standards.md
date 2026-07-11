@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/framework/README|README]]"
+---
+
 # AIOX Coding Standards
 
 > 🌐 **EN** | [PT](../pt/framework/coding-standards.md) | [ES](../es/framework/coding-standards.md)

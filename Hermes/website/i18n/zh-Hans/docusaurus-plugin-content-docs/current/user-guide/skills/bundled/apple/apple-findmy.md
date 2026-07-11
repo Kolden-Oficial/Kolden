@@ -2,6 +2,9 @@
 title: "Findmy — 通过 FindMy 追踪 Apple 设备/AirTag"
 sidebar_label: "Findmy"
 description: "通过 FindMy 追踪 Apple 设备/AirTag"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

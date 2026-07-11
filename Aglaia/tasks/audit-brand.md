@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Valor de marca pontuado nos 5 pilares de Aaker"
   - "[ ] Identidade avaliada nas 6 facetas de Kapferer"
   - "[ ] Recomendações priorizadas com roteamento para especialista"
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Auditar Marca

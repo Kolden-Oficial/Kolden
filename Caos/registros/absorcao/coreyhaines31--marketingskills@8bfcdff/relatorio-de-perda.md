@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/coreyhaines31--marketingskills@8bfcdff/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/coreyhaines31--marketingskills@8bfcdff/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/coreyhaines31--marketingskills@8bfcdff/seguranca|seguranca]]"
+---
+
 # F6.5 — Relatório de Perda (reconciliação) — coreyhaines31/marketingskills@8bfcdff
 
 > Pipeline de absorção, Fase 6.5 (BLOCK — `protocolo-de-absorcao-sem-perda`). Uma linha por ID do

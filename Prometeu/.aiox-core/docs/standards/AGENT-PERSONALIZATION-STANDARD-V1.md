@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/docs/standards/_indice|_indice]]"
+---
+
 # Agent Personalization Standard v1.0
 
 **Status:** Draft (Story 6.1.2 Implementation)

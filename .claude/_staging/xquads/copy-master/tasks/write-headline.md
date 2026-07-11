@@ -26,6 +26,11 @@ Checklist:
   - "[ ] 10 headline variations generated using 3+ formulas"
   - "[ ] Top 5 ranked with scoring on 4 dimensions"
   - "[ ] Psychological Layer applied (Cialdini/Warren principles tagged)"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-master/tasks/_indice|_indice]]"
 ---
 
 # Task: Write Headline

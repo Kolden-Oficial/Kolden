@@ -2,6 +2,11 @@
 name: ascii-video
 description: "ASCII video: convert video/audio to colored ASCII MP4/GIF."
 platforms: [linux, macos, windows]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/ascii-video/README|README]]"
 ---
 
 # ASCII Video Production Pipeline

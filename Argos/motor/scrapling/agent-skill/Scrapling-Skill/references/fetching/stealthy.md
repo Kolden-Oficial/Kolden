@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/fetching/choosing|choosing]]"
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/fetching/dynamic|dynamic]]"
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/fetching/static|static]]"
+---
+
 # StealthyFetcher
 
 `StealthyFetcher` is a stealthy browser-based fetcher similar to [DynamicFetcher](dynamic.md), using [Playwright's API](https://playwright.dev/python/docs/intro). It adds advanced anti-bot protection bypass capabilities, most handled automatically. It shares the same browser automation model as `DynamicFetcher`, using [Playwright's Page API](https://playwright.dev/python/docs/api/class-page) for page interaction.

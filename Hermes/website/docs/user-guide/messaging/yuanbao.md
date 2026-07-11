@@ -2,6 +2,11 @@
 sidebar_position: 16
 title: "Yuanbao"
 description: "Connect Hermes Agent to the Yuanbao enterprise messaging platform via WebSocket gateway"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Yuanbao

@@ -11,6 +11,9 @@ description: >
   (rode `fundacao-de-voz` antes).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Arquétipos de Newsletter — voz editorial sobre a fundação de voz

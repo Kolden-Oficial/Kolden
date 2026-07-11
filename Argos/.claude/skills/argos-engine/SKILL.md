@@ -1,6 +1,9 @@
 ---
 name: argos-engine
 description: Como usar o motor de scraping unificado do Argos (a fachada motor/argos-engine.py) que roteia entre as camadas vendorizadas — Scrapling (anti-bot/stealth), Scrapy (crawl em escala), Crawlee (Node, JS pesado), Skyvern (visão), GPT-Researcher (pesquisa LLM). Use quando uma coleta exigir mais do que as tools nativas do Hermes (web_extract/browser_*) — ou seja, anti-bot, crawl exaustivo, render pesado de JS ou DOM hostil. Sempre tente REUSE das tools nativas primeiro.
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Habilidade: argos-engine (motor de scraping unificado)

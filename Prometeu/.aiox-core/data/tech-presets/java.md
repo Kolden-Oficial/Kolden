@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/data/tech-presets/_indice|_indice]]"
+---
+
 # Java Tech Preset
 
 > Preset de arquitetura para servicos enterprise em Java com Spring Boot, foco em modularidade, seguranca e operacao em escala.

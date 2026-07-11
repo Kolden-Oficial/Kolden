@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-agent-flows/README|README]]"
+---
+
 # @dev (Dex) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/dev-system.md) | [ES](../../es/aiox-agent-flows/dev-system.md)

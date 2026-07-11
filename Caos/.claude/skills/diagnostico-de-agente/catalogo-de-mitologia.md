@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/skills/diagnostico-de-agente/contexto|contexto]]"
+  - "[[Caos/.claude/skills/diagnostico-de-agente/SKILL|SKILL]]"
+---
+
 # Catálogo de Mitologia Grega — Nomenclatura de Agentes
 
 Todo agente nascido no Kolden recebe um nome da mitologia grega. Este catálogo é a fonte

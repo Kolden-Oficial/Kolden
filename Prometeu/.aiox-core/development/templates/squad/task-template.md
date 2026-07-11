@@ -22,6 +22,13 @@ Checklist:
   - "[ ] Passo 1: Descreva o primeiro passo"
   - "[ ] Passo 2: Descreva o segundo passo"
   - "[ ] Passo 3: Descreva o terceiro passo"
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/templates/squad/agent-template|agent-template]]"
+  - "[[Prometeu/.aiox-core/development/templates/squad/checklist-template|checklist-template]]"
+  - "[[Prometeu/.aiox-core/development/templates/squad/template-template|template-template]]"
 ---
 
 # {{COMPONENTNAME}}

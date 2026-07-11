@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/huggingface-tokenizers/references/integration|integration]]"
+  - "[[Hermes/optional-skills/mlops/huggingface-tokenizers/references/pipeline|pipeline]]"
+  - "[[Hermes/optional-skills/mlops/huggingface-tokenizers/references/training|training]]"
+---
+
 # Tokenization Algorithms Deep Dive
 
 Comprehensive explanation of BPE, WordPiece, and Unigram algorithms.

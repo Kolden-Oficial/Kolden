@@ -11,6 +11,9 @@ description: >
   domain. NÃO substitui `wecom-private-domain` (essa é CRM operacional B2C).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # WeChat OA + Video Channels + Mini Program — o brand hub chinês

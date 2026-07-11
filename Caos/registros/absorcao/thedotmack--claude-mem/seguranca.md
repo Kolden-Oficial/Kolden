@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/thedotmack--claude-mem/briefing-de-execucao|briefing-de-execucao]]"
+  - "[[Caos/registros/absorcao/thedotmack--claude-mem/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/thedotmack--claude-mem/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática — thedotmack--claude-mem
 
 - **slug:** thedotmack--claude-mem

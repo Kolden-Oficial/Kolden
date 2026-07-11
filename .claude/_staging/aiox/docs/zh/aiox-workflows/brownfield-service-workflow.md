@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/README|README]]"
+---
+
 # 工作流：棕地项目服务/API增强
 
 **标识符：** `brownfield-service`

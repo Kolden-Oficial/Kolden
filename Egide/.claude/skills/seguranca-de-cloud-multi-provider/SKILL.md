@@ -10,6 +10,9 @@ description: >-
 domain: ciberseguranca
 subdomain: cloud-security
 tags: [cloud, aws, azure, gcp, o365, cspm, cis-benchmark, cloudtrail, iam, prowler, scoutsuite]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Segurança de Cloud Multi-Provider (AWS / Azure / GCP / O365)

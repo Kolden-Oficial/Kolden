@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/migration/PRO-14.5-legacy-slash-command-shim-retirement|PRO-14.5-legacy-slash-command-shim-retirement]]"
+---
+
 # ACORE Claude Skills Migration Preflight — 2026-05-01
 
 ## Resumo

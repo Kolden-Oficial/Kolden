@@ -5,6 +5,9 @@ tags: [community]
 description: 'Learn how to think and scrape like a web scraping expert.'
 image: ./img/scraping-tips.webp
 authors: [MaxB]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 Typically, tutorials focus on the technical aspects, on what you can replicate: "Start here, follow this path, and you'll end up here." This is great for learning a particular technology, but it's sometimes difficult to understand why the author decided to do things a certain way or what guides their development process.

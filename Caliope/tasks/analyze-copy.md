@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Correção prioritária nº 1 identificada com sugestões de reescrita"
   - "[ ] Recomendações de roteamento para especialista incluídas"
   - "[ ] Auditoria de psicologia da persuasão concluída"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Analisar Copy

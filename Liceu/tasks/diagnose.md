@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+---
+
 # Tarefa: Diagnose (triagem e roteamento do Liceu)
 
 **Dono:** `liceu-chief` (tier 0). **Saída:** escopo definido + rota de especialistas.

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Audience profiled with current beliefs and resistance mapped"
   - "[ ] Sparkline structure created with alternating contrasts"
   - "[ ] Star moment designed and call to action defined"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/storytelling/tasks/_indice|_indice]]"
 ---
 
 # Task: Presentation Narrative Arc

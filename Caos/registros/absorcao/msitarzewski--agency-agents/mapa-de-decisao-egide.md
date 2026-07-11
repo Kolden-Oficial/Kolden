@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F4 — Mapa de decisão · B01 Égide (vs `msitarzewski--agency-agents@a597cb6` divisão `security/`)
 
 Inventário upstream: 35 IDs (G1-G35) — `inventario-security.md`.

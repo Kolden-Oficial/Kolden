@@ -39,6 +39,11 @@ predictions_scorecard_reason: |
   faz previsões datáveis tipo "até 2026-Q4 X %". Todas as decisões são
   AIOX-story-driven (finitas, testáveis, com AC concreto).
 loop_pattern: ReAct
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/README|README]]"
 ---
 
 # PRD-de-IA — Prometeu

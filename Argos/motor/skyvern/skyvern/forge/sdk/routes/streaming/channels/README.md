@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Channels
 
 A "channel", as used within the streaming mechanism of our remote browsers,

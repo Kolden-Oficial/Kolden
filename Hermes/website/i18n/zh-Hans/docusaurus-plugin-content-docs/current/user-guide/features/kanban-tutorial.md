@@ -1,3 +1,9 @@
+---
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Kanban 教程
 
 Hermes Kanban 系统所设计的四个使用场景的完整演示，需在浏览器中打开 dashboard。如果你还没有阅读 [Kanban 概述](./kanban)，请先从那里开始——本文假设你已了解 task（任务）、run（运行）、assignee（负责人）和 dispatcher（调度器）的概念。

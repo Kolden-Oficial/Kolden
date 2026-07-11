@@ -4,6 +4,9 @@ description: Guia para implementar a filosofia de desenvolvimento Architect-Firs
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Architect First

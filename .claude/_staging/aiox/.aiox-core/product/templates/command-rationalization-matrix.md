@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/product/templates/_indice|_indice]]"
+---
+
 # Command Rationalization Matrix Template
 
 **Purpose:** Systematic framework for evaluating agent commands for rationalization

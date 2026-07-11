@@ -10,6 +10,9 @@ metadata:
     tags: [hermes, setup, configuration, multi-agent, spawning, cli, gateway, development]
     homepage: https://github.com/NousResearch/hermes-agent
     related_skills: [claude-code, codex, opencode]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Hermes Agent

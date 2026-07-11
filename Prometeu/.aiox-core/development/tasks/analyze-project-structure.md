@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Analisar Estrutura do Projeto
 
 **Propósito:** Analisar um projeto AIOX existente para entender sua estrutura, serviços, padrões e fornecer recomendações para implementar novas features. Esta é a Fase 1 do Incremental Feature Workflow.

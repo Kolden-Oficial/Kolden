@@ -2,6 +2,11 @@
 sidebar_position: 8
 title: "MCP Config Reference"
 description: "Reference for Hermes Agent MCP configuration keys, filtering semantics, and utility-tool policy"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/reference/_indice|_indice]]"
 ---
 
 # MCP Config Reference

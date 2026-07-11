@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/style-presets|style-presets]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/styles|styles]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/usage|usage]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/workflow|workflow]]"
+---
+
 # Prompt Construction
 
 ## Prompt File Format

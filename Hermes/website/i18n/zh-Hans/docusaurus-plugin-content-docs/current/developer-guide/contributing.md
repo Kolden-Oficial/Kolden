@@ -2,6 +2,9 @@
 sidebar_position: 4
 title: "贡献指南"
 description: "如何为 Hermes Agent 做贡献 — 开发环境配置、代码风格、PR 流程"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 贡献指南

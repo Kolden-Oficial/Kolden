@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/templates/claude-md-library|claude-md-library]]"
+  - "[[Dedalo/templates/claude-md-microservices|claude-md-microservices]]"
+  - "[[Dedalo/templates/claude-md-mobile|claude-md-mobile]]"
+  - "[[Dedalo/templates/claude-md-monorepo|claude-md-monorepo]]"
+---
+
 # CLAUDE.md — Projeto Fullstack (Next.js + React)
 
 ## Visão Geral do Projeto

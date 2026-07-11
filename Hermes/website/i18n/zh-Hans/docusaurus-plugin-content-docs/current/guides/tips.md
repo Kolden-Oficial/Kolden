@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: "技巧与最佳实践"
 description: "充分发挥 Hermes Agent 潜力的实用建议——prompt 技巧、CLI 快捷键、上下文文件、记忆、成本优化与安全"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 技巧与最佳实践

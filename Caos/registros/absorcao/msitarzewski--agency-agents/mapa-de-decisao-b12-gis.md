@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F4 — Mapa de decisão · B12 = GIS (squad NOVO)
 
 > **Bucket:** B12 (gap — domínio sem squad Kolden equivalente)

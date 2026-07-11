@@ -13,6 +13,9 @@ description: >
   links azuis.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # AEO Foundations Architect — infra para a IA achar, ler e citar

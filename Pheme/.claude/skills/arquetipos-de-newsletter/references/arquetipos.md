@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+---
+
 # Defaults dos 6 arquétipos de newsletter
 
 Carregado quando não há amostras de edições passadas. Cada arquétipo entrega uma

@@ -1,3 +1,22 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/auto-worktree-workflow|auto-worktree-workflow]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/brownfield-discovery-workflow|brownfield-discovery-workflow]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/brownfield-fullstack-workflow|brownfield-fullstack-workflow]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/brownfield-service-workflow|brownfield-service-workflow]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/brownfield-ui-workflow|brownfield-ui-workflow]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/design-system-build-quality-workflow|design-system-build-quality-workflow]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/greenfield-fullstack-workflow|greenfield-fullstack-workflow]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/greenfield-service-workflow|greenfield-service-workflow]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/greenfield-ui-workflow|greenfield-ui-workflow]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/qa-loop-workflow|qa-loop-workflow]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/spec-pipeline-workflow|spec-pipeline-workflow]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/story-development-cycle-workflow|story-development-cycle-workflow]]"
+---
+
 # AIOX 工作流 - 工作流详细文档
 
 > 🌐 **简体中文** | [PT](../../aiox-workflows/README.md) | [EN](../../en/aiox-workflows/README.md) | [ES](../../es/aiox-workflows/README.md)

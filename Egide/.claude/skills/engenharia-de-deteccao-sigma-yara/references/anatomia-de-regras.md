@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+---
+
 # Anatomia de regras + checklist de fidelidade
 
 Esqueletos didáticos (defensivos) para autoria. Conteúdo de detecção, não de ataque.

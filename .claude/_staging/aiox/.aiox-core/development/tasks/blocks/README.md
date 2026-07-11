@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/blocks/agent-prompt-template|agent-prompt-template]]"
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/blocks/context-loading|context-loading]]"
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/blocks/execution-pattern|execution-pattern]]"
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/blocks/finalization|finalization]]"
+---
+
 # AIOX Task Blocks System
 
 > **Version:** 1.0.0

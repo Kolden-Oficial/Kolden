@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/README|README]]"
+---
+
 # Ferramentas do Squad Hermes
 
 > **Escopo:** catálogo canônico de tools + wrappers proprietários + fronteira vendor.

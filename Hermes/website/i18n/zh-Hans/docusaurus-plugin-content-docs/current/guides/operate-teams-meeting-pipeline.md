@@ -1,6 +1,9 @@
 ---
 title: "操作 Teams 会议流水线"
 description: "Microsoft Teams 会议流水线的运行手册、上线检查清单及操作员工作表"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 操作 Teams 会议流水线

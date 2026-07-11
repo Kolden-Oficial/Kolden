@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/README|README]]"
+---
+
 # AIOX Squad: Artificial Intelligence Orchestration eXperience
 
 > 🌍 **[English](README.en.md)** | [Português](README.md)

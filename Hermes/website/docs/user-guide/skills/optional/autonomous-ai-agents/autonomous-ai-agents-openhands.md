@@ -2,6 +2,14 @@
 title: "Openhands — Delegate coding to OpenHands CLI (model-agnostic, LiteLLM)"
 sidebar_label: "Openhands"
 description: "Delegate coding to OpenHands CLI (model-agnostic, LiteLLM)"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-antigravity-cli|autonomous-ai-agents-antigravity-cli]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-blackbox|autonomous-ai-agents-blackbox]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-grok|autonomous-ai-agents-grok]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/autonomous-ai-agents/autonomous-ai-agents-honcho|autonomous-ai-agents-honcho]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

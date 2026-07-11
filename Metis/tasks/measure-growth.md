@@ -25,6 +25,11 @@ Checklist:
   - "[ ] North Star Metric (NSM) definida com métricas de entrada"
   - "[ ] Pelo menos 5 hipóteses geradas e pontuadas pelo ICE"
   - "[ ] Registro de experimentos criado com plano de rastreamento"
+tipo: nota
+area: Metis
+up: "[[Metis/_MOC-metis]]"
+relacionado:
+  - "[[Metis/tasks/_indice|_indice]]"
 ---
 
 # Task: Medir Crescimento

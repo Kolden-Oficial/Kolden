@@ -2,6 +2,9 @@
 sidebar_position: 15
 title: "Microsoft Foundry"
 description: "将 Hermes Agent 与 Microsoft Foundry 配合使用——OpenAI 风格与 Anthropic 风格端点、传输协议与已部署模型的自动检测"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Microsoft Foundry

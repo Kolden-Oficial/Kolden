@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Search, Knowledge-Base, RAG, Notes, MCP, Local-AI]
     related_skills: [obsidian, native-mcp, arxiv]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # QMD — Query Markup Documents

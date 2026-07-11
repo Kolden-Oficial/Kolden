@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/revfactory--harness/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/revfactory--harness/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática — revfactory--harness
 
 - **slug:** revfactory--harness

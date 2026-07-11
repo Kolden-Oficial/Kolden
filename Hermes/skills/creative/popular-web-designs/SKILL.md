@@ -16,6 +16,9 @@ triggers:
   - landing page
   - dashboard design
   - website styled like
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Popular Web Designs

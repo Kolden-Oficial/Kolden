@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Infrastructure, GPU Cloud, Training, Inference, Lambda Labs]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Lambda Labs GPU Cloud

@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [finance, m-and-a, merger, accretion-dilution, excel, openpyxl, modeling, investment-banking]
     related_skills: [excel-author, pptx-author, dcf-model, 3-statement-model]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 ## Environment

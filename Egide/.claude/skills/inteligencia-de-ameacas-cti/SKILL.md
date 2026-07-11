@@ -10,6 +10,9 @@ description: >-
 domain: ciberseguranca
 subdomain: cyber-threat-intelligence
 tags: [cti, threat-intel, ioc, atribuicao, mitre-attack, killchain, diamond-model, stix]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Inteligência de Ameaças (CTI)

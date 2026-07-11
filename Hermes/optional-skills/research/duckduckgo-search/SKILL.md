@@ -10,6 +10,9 @@ metadata:
     tags: [search, duckduckgo, web-search, free, fallback]
     related_skills: [arxiv]
     fallback_for_toolsets: [web]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # DuckDuckGo Search

@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Verdict rendered (APPROVE/REVISE/REJECT)"
   - "[ ] Specific feedback provided for any failures"
   - "[ ] Persuasion psychology checkpoint passed"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-master/tasks/_indice|_indice]]"
 ---
 
 # Task: Review Copywriting Output

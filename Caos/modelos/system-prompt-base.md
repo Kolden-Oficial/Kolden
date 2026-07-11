@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
+---
+
 # System prompt base do Kolden
 
 Todo system prompt gerado segue esta estrutura, nesta ordem.

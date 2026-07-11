@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/data/tech-presets/_indice|_indice]]"
+---
+
 # Next.js + React Tech Preset
 
 > Preset de arquitetura otimizado para desenvolvimento fullstack com Next.js e React, focado em máxima eficiência com Claude Code.

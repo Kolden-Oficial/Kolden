@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/parsing/adaptive|adaptive]]"
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/parsing/selection|selection]]"
+---
+
 # Parsing main classes
 
 The [Selector](#selector) class is the core parsing engine in Scrapling, providing HTML parsing and element selection capabilities. You can always import it with any of the following imports

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/templates/_indice|_indice]]"
+---
+
 # Template PTC: Lote de Validação de Entidades
 
 ---

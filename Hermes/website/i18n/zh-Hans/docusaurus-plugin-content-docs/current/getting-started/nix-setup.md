@@ -2,6 +2,9 @@
 sidebar_position: 3
 title: "Nix & NixOS 安装配置"
 description: "使用 Nix 安装和部署 Hermes Agent——从快速 `nix run` 到完全声明式的 NixOS 模块（含容器模式）"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Nix & NixOS 安装配置

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-agent-flows/README|README]]"
+---
+
 # @pm (Morgan) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/pm-system.md) | [ES](../../es/aiox-agent-flows/pm-system.md)

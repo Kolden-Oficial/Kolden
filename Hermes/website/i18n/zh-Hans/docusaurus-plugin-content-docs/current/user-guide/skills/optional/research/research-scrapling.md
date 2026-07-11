@@ -2,6 +2,9 @@
 title: "Scrapling"
 sidebar_label: "Scrapling"
 description: "使用 Scrapling 进行网页抓取——HTTP 获取、隐身浏览器自动化、Cloudflare 绕过及通过 CLI 和 Python 进行爬虫抓取"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

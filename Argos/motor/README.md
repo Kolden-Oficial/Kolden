@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Motor de Scraping do Argos
 
 O **motor unificado** do squad Argos — "o melhor de cada" repositório, fundido por trás de uma

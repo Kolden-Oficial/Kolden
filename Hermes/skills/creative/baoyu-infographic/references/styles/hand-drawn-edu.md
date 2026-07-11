@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/baoyu-infographic/references/styles/_indice|_indice]]"
+---
+
 # hand-drawn-edu
 
 Hand-drawn educational infographic with macaron pastel color blocks on warm cream paper texture.

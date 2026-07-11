@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/diff-cirurgico|diff-cirurgico]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/matriz-de-conformidade|matriz-de-conformidade]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/sumario-executivo|sumario-executivo]]"
+---
+
 # Verificação Dike — Sub-onda 3.1 (Prometeu × CAOS-CL-002)
 
 > **Escopo:** Sub-onda 3.1 do Contrato-mãe `m-20260706-metodo-kolden` (Onda 3, Grupo A, squad-alvo Prometeu, domínio A = identidade + fronteira).

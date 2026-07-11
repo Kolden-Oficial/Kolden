@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/regras/compactacao-de-contexto|compactacao-de-contexto]]"
+---
+
 # Autoridade de especialistas — matriz de delegação
 
 Regra de apoio à Constituição (Artigo I, III). Define **quem executa e quem tem autoridade

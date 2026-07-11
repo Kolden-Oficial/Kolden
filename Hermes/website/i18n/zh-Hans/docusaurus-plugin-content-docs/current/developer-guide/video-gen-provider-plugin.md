@@ -2,6 +2,9 @@
 sidebar_position: 12
 title: "视频生成 Provider 插件"
 description: "如何为 Hermes Agent 构建视频生成后端插件"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 构建视频生成 Provider 插件

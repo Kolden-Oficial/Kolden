@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/data/tech-presets/_indice|_indice]]"
+---
+
 # PHP Tech Preset
 
 > Preset de arquitetura para backend PHP moderno com Laravel, foco em clareza de dominio, produtividade e estabilidade em producao.

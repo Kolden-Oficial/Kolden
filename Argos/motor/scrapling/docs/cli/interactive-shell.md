@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/cli/extract-commands|extract-commands]]"
+  - "[[Argos/motor/scrapling/docs/cli/overview|overview]]"
+---
+
 # Scrapling Interactive Shell Guide
 
 <script src="https://asciinema.org/a/736339.js" id="asciicast-736339" async data-autoplay="1" data-loop="1" data-cols="225" data-rows="40" data-start-at="00:06" data-speed="1.5" data-theme="tango"></script>

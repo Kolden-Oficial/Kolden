@@ -20,6 +20,9 @@ fonte_upstream: msitarzewski--agency-agents@a597cb6 (G15)
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # moscow-kano-mcda — priorização de release (MoSCoW + Kano + MCDA)

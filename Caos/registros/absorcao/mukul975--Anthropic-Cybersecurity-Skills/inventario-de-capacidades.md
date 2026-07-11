@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/mukul975--Anthropic-Cybersecurity-Skills/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/mukul975--Anthropic-Cybersecurity-Skills/seguranca|seguranca]]"
+---
+
 # F3 — Inventário de capacidades
 
 - **slug:** `mukul975--Anthropic-Cybersecurity-Skills` · **sha:** `673da1f3b0b7be34ffc9624ef3858fe45f1c3bed` · **rota:** A

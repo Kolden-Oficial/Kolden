@@ -2,6 +2,9 @@
 title: "Unsloth — Unsloth：2-5倍更快的 LoRA/QLoRA 微调，更少显存"
 sidebar_label: "Unsloth"
 description: "Unsloth：2-5倍更快的 LoRA/QLoRA 微调，更少显存"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

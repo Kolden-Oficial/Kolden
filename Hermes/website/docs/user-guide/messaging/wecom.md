@@ -2,6 +2,11 @@
 sidebar_position: 14
 title: "WeCom (Enterprise WeChat)"
 description: "Connect Hermes Agent to WeCom via the AI Bot WebSocket gateway"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # WeCom (Enterprise WeChat)

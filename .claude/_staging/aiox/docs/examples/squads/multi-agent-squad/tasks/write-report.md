@@ -15,6 +15,11 @@ Checklist:
   - "[ ] Create outline"
   - "[ ] Write draft"
   - "[ ] Format output"
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/examples/squads/multi-agent-squad/tasks/research-topic|research-topic]]"
 ---
 
 # *report / *draft

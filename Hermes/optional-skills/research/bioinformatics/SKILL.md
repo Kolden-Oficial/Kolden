@@ -7,6 +7,9 @@ metadata:
   hermes:
     tags: [bioinformatics, genomics, sequencing, biology, research, science]
     category: research
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Bioinformatics Skills Gateway

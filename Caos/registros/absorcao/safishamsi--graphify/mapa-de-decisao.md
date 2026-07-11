@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/safishamsi--graphify/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/safishamsi--graphify/seguranca|seguranca]]"
+---
+
 # Mapa de decisão (F4) — safishamsi--graphify
 
 - **slug:** safishamsi--graphify · **sha:** 8994b550 · **rota:** A

@@ -2,6 +2,9 @@
 sidebar_position: 8
 title: "在 Hermes 中使用语音模式"
 description: "在 CLI、Telegram、Discord 及 Discord 语音频道中设置和使用 Hermes 语音模式的实用指南"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 在 Hermes 中使用语音模式

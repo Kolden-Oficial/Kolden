@@ -10,6 +10,9 @@ description: >-
   C-level", "autoplan", ou quando uma missão exigir várias perspectivas
   executivas sem 15-30 perguntas intermediárias. NÃO use para roteamento simples
   a um único deus — aí basta o `*diagnose` do Zeus.
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Painel executivo (autoplan)

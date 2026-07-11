@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/thedotmack--claude-mem/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/thedotmack--claude-mem/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/thedotmack--claude-mem/seguranca|seguranca]]"
+---
+
 # Briefing de execução — claude-mem como infra Kolden OS
 
 - **Slug:** thedotmack--claude-mem · **SHA:** 3fe0725a · **Decisão:** ADAPT + INFRA

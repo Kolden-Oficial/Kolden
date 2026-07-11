@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Catálogo de Habilidades — Argos
 
 Índice das habilidades do squad Argos. Habilidades próprias vivem em `.claude/skills/<nome>/SKILL.md`;

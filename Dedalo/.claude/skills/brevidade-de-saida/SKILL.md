@@ -1,6 +1,9 @@
 ---
 name: brevidade-de-saida
 description: Use quando uma sessão de agente de código gastar tokens de saída demais e você quiser cortar ~65-75% do verbo sem perder substância técnica — respostas, commits, comentários de PR e até a compressão de arquivos de memória/CLAUDE.md de entrada. Aciona quando o Ronan pedir "modo enxuto/caveman", quando o contexto estiver pesado, ou ao preparar memória/instruções longas para reinjeção econômica. NÃO comprima avisos de segurança, ações irreversíveis nem passos multi-etapa — isso volta a prosa normal.
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Brevidade de Saída (modo "caveman" soberano)

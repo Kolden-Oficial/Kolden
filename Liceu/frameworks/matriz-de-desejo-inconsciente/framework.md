@@ -7,6 +7,11 @@ mentes_fonte: [carl-jung, sigmund-freud, edward-bernays, ernest-dichter, jacques
 squads_consumidores: [caliope, aglaia, peitho, pluto]
 status: vigente
 atualizado-em: 2026-06-22
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/frameworks/matriz-de-desejo-inconsciente/procedencia|procedencia]]"
 ---
 
 # Matriz de Desejo Inconsciente

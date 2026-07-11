@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/commands/synapse/tasks/_indice|_indice]]"
+---
+
 # Alternar Domain
 
 Alterna um domain SYNAPSE entre ativo e inativo no manifest.

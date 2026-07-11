@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Scrapling Examples
 
 These examples scrape [quotes.toscrape.com](https://quotes.toscrape.com) - a safe, purpose-built scraping sandbox - and demonstrate every tool available in Scrapling, from plain HTTP to full browser automation and spiders.

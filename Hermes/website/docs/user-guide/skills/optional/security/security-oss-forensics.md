@@ -2,6 +2,14 @@
 title: "Oss Forensics — Supply chain investigation, evidence recovery, and forensic analysis for GitHub repositories"
 sidebar_label: "Oss Forensics"
 description: "Supply chain investigation, evidence recovery, and forensic analysis for GitHub repositories"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/security/security-1password|security-1password]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/security/security-godmode|security-godmode]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/security/security-sherlock|security-sherlock]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/security/security-web-pentest|security-web-pentest]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

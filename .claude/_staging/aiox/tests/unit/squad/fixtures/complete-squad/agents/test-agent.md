@@ -3,6 +3,9 @@ agent: test-agent
 name: Test Agent
 role: Testing
 layer: craft
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # Test Agent

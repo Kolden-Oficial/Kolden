@@ -2,6 +2,11 @@
 sidebar_position: 11
 title: Model Catalog
 description: Remotely-hosted manifest driving curated model picker lists for OpenRouter and Nous Portal.
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/reference/_indice|_indice]]"
 ---
 
 # Model Catalog

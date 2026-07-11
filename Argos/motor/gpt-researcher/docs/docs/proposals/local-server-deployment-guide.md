@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/proposals/adaptive-deep-research|adaptive-deep-research]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/proposals/high-quality-content-scraping-architecture|high-quality-content-scraping-architecture]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/proposals/social-media-data-acquisition|social-media-data-acquisition]]"
+---
+
 # GPT-Researcher 本地服务器部署规划指南
 
 ## 目录

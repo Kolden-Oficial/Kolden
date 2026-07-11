@@ -1,6 +1,11 @@
 ---
 name: vigia-de-ecossistema
 description: Engine de varredura do estado da arte de IA — novos MCPs, ferramentas, modelos dos principais labs, comunidade (HN/Reddit/X), GitHub e newsletters. Use no comando /vigia (digest agendado) e no pesquisador (Fase 2) para construir sobre dados ao vivo. Produz um digest datado e atualiza o retrato vivo dados/estado-da-arte.md. Achados com score ≥8 são salvos em referencias/.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/skills/vigia-de-ecossistema/contexto|contexto]]"
 ---
 
 # Vigia de Ecossistema

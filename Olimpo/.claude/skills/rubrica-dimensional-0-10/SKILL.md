@@ -9,6 +9,9 @@ description: >-
   ficar excelente", "dá uma nota", quando um executivo for revisar a própria
   entrega antes da subida, ou quando a consolidação do Zeus precisar de um filtro
   de qualidade antes da Dike. Reutilizável por qualquer um dos 8 deuses.
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Rubrica dimensional 0-10

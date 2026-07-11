@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Os três frameworks de diagnóstico aplicados"
   - "[ ] Causa-raiz identificada com a cadeia causal mapeada"
   - "[ ] Plano de implementação com vitórias rápidas e critérios de medição"
+tipo: nota
+area: Themis
+up: "[[Themis/_MOC-themis]]"
+relacionado:
+  - "[[Themis/tasks/_indice|_indice]]"
 ---
 
 # Task: Resolução de Crise de Cultura e Disfunção de Equipe

@@ -11,6 +11,9 @@ description: >-
 domain: ciberseguranca
 subdomain: seguranca-de-ia
 tags: [ai-security, mcp, tool-poisoning, prompt-injection, llm-guardrails, atlas, agentes]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Auditoria de Segurança de IA e MCP

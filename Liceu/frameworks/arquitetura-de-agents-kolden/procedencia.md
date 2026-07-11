@@ -5,6 +5,11 @@ resumo: "Rastreamento de cada passo do framework a linhagens + mentes + obras + 
 framework_ref: arquitetura-de-agents-kolden
 status: vigente-fase1
 atualizado-em: 2026-07-04
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/frameworks/arquitetura-de-agents-kolden/framework|framework]]"
 ---
 
 # Procedência — Arquitetura de Agents Kolden (Fase 1)

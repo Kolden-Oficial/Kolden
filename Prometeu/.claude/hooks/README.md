@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Claude Code Hooks
 
 Sistema de governança automática para regras do CLAUDE.md.

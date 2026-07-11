@@ -12,6 +12,9 @@ Checklist:
   - "[ ] Receive name"
   - "[ ] Apply style"
   - "[ ] Generate greeting"
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # *greet / *hello

@@ -2,6 +2,9 @@
 title: "Hyperliquid — Hyperliquid 市场数据、账户历史、交易复盘"
 sidebar_label: "Hyperliquid"
 description: "Hyperliquid 市场数据、账户历史、交易复盘"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

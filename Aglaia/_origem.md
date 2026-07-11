@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/README|README]]"
+---
+
 # Origem
 
 - **Origem:** `ohmyjahh/xquads-squads`

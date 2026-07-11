@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/gsd-build--get-shit-done/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/gsd-build--get-shit-done/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades — gsd-build--get-shit-done (rota A)
 
 GSD ("Get Shit Done") por TÂCHES / Lex Christopherson — sistema de **meta-prompting + context engineering + spec-driven development** para Claude Code (e OpenCode, Gemini, Codex). Pipeline central: **roadmap → milestone → spec/plan-phase → execute-phase → verify-phase → validate → ship**, com agentes especializados, gates humanos, hooks de segurança e um SDK TypeScript que gera o estado/ferramentas. Repo arquivado (sucessor: open-gsd/gsd-core). Volume real: 33 agentes, ~67 comandos slash, ~80 workflows, ~60 referências de metodologia, ~15 hooks, SDK.

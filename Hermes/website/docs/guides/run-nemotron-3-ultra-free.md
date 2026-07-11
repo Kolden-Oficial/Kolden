@@ -2,6 +2,11 @@
 sidebar_position: 0
 title: "Run Nemotron 3 Ultra free in Hermes Agent"
 description: "Try NVIDIA Nemotron 3 Ultra on Nous Portal — free June 4–18 — with day 0 support in Hermes Agent"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Run Nemotron 3 Ultra free in Hermes Agent

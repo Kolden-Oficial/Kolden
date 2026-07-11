@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/examples/squads/multi-agent-squad/agents/lead-agent|lead-agent]]"
+  - "[[.claude/_staging/aiox/docs/examples/squads/multi-agent-squad/agents/writer-agent|writer-agent]]"
+---
+
 # team-researcher
 
 ACTIVATION-NOTICE: Research specialist agent.

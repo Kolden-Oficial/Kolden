@@ -4,6 +4,11 @@ responsavel: "@rob-fitzpatrick"
 responsavel_type: Agent
 atomic_layer: Task
 elicit: true
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Descoberta da Dor (Entrevistas) — Aletheia

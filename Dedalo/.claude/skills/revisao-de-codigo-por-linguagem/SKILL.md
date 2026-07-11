@@ -1,6 +1,9 @@
 ---
 name: revisao-de-codigo-por-linguagem
 description: Use ao revisar um diff de código — quando o pedido é "revisa esse PR", "olha esse código", "tem bug aqui?", ou após escrever/alterar código que vai virar entrega. Traz o PROTOCOLO de revisão sistemática (coleta de contexto → checklist por severidade → relatório com veredito), o portão de confiança que mata o ruído de revisor-LLM (a falha nº1), a lista de falsos-positivos a NÃO sinalizar, a caça a falhas silenciosas, e o roteamento para o revisor especializado da linguagem. NÃO use para escrever testes (use estrategia-de-testes-e-tdd) nem para refatorar de carona.
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Revisão de Código por Linguagem

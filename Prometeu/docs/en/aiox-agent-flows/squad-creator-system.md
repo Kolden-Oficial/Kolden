@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-agent-flows/README|README]]"
+---
+
 # @squad-creator (Nova) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/squad-creator-system.md) | [ES](../../es/aiox-agent-flows/squad-creator-system.md)

@@ -11,6 +11,9 @@ metadata:
     related_skills: [github-repo-management]
 prerequisites:
   commands: [pygount]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Codebase Inspection with pygount

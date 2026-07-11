@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/README|README]]"
+---
+
 # Hermes — Camada 2 do Sistema (Runtime Kolden)
 
 > **Squad Kolden vendorizado** — fork do projeto `hermes-agent` do Nous Research (MIT license) com camada Kolden PT-BR por cima. Runtime multi-plataforma que sustenta o dispatch entre 23 squads da Kolden.

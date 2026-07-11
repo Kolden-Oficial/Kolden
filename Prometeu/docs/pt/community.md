@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/README|README]]"
+---
+
 # Comunidade Synkra AIOX
 
 > 🇺🇸 [English Version](COMMUNITY.md)

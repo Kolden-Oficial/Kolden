@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # ComfyUI Skill Tests
 
 Pytest suite covering the skill's scripts. Pure-stdlib unit tests run

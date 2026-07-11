@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/architecture/_indice|_indice]]"
+---
+
 # ADE Architect Handoff
 
 > **De:** Quinn (@qa) - QA Agent

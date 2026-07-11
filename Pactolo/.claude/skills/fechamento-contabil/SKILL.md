@@ -7,6 +7,9 @@ description: >
   controles do close. Regra dura: nada se reporta sem reconciliação fechada (diferença = 0 ou explicada).
   Gatilhos: "fechar o mês", "fechamento", "close", "lançamento", "journal entry", "reconciliação",
   "conciliar banco", "accrual", "provisão", "DRE/balanço/DFC". Dono: controller.
+tipo: skill
+area: Pactolo
+up: "[[Pactolo/_MOC-pactolo]]"
 ---
 
 # Fechamento Contábil (close)

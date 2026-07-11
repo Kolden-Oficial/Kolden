@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/guidance/references/constraints|constraints]]"
+  - "[[Hermes/optional-skills/mlops/guidance/references/examples|examples]]"
+---
+
 # Backend Configuration Guide
 
 Complete guide to configuring Guidance with different LLM backends.

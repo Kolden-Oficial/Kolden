@@ -2,6 +2,11 @@
 title: "Kanban Worker — Pitfalls, examples, and edge cases for Hermes Kanban workers"
 sidebar_label: "Kanban Worker"
 description: "Pitfalls, examples, and edge cases for Hermes Kanban workers"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/devops/devops-kanban-orchestrator|devops-kanban-orchestrator]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

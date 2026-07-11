@@ -4,6 +4,9 @@ description: Use quando uma decisão técnica dentro de uma fase (spec, plan ou 
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Debugging por Council e Verification Loop

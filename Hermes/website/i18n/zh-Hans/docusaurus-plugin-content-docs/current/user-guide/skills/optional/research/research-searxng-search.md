@@ -2,6 +2,9 @@
 title: "Searxng Search — 通过 SearXNG 免费元搜索 — 聚合 70+ 搜索引擎的结果"
 sidebar_label: "Searxng Search"
 description: "通过 SearXNG 免费元搜索 — 聚合 70+ 搜索引擎的结果"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

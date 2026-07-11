@@ -1,3 +1,11 @@
+---
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
+---
+
 # Session Storage
 
 Hermes Agent uses a SQLite database (`~/.hermes/state.db`) to persist session

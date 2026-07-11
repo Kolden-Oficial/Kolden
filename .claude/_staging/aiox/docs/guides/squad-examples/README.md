@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # Squad Examples
 
 > **EN** | [PT](../../pt/guides/squad-examples/README.md) | [ES](../../es/guides/squad-examples/README.md)

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] As três perspectivas dos conselheiros entregues (Sivers, Chouinard, Naval)"
   - "[ ] Verificação contrária concluída com minimização de arrependimento"
   - "[ ] Framework de decisão oferecido com prompt de diário"
+tipo: nota
+area: Themis
+up: "[[Themis/_MOC-themis]]"
+relacionado:
+  - "[[Themis/tasks/_indice|_indice]]"
 ---
 
 # Task: Aconselhamento de Encruzilhada do Fundador

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/research/research-paper-writing/references/_indice|_indice]]"
+---
+
 # Human Evaluation Guide for ML/AI Research
 
 Comprehensive guide for designing, running, and reporting human evaluations in ML/AI papers. Human evaluation is the primary evidence for many NLP, HCI, and alignment papers, and is increasingly expected as complementary evidence at all ML venues.

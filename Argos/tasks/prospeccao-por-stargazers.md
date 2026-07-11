@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/tasks/_indice|_indice]]"
+---
+
 # Tarefa: Prospecção por Stargazers (GitHub → enriquecer → validar)
 
 **ID:** ARGOS-008

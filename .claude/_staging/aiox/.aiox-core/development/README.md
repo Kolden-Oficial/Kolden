@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # Development Module
 
 The Development module contains all agent-related assets: agent definitions, team configurations, tasks, workflows, and supporting scripts.

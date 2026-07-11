@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/product/templates/ide-rules/claude-rules|claude-rules]]"
+  - "[[.claude/_staging/aiox/.aiox-core/product/templates/ide-rules/codex-rules|codex-rules]]"
+  - "[[.claude/_staging/aiox/.aiox-core/product/templates/ide-rules/copilot-rules|copilot-rules]]"
+  - "[[.claude/_staging/aiox/.aiox-core/product/templates/ide-rules/cursor-rules|cursor-rules]]"
+  - "[[.claude/_staging/aiox/.aiox-core/product/templates/ide-rules/gemini-rules|gemini-rules]]"
+---
+
 # Synkra AIOX Development Rules for AntiGravity
 
 You are working with Synkra AIOX, an AI-Orchestrated System for Full Stack Development.

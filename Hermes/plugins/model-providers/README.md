@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Model Provider Plugins
 
 Each subdirectory is a self-contained provider profile plugin. The

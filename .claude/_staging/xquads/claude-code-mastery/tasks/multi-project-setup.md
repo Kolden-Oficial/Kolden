@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/claude-code-mastery/tasks/_indice|_indice]]"
+---
+
 # Task: Multi-Project Claude Code Setup
 
 **Task ID:** CCM-PI-004

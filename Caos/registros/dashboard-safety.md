@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/historico|historico]]"
+  - "[[Caos/registros/predictions-scorecard-kolden-2026|predictions-scorecard-kolden-2026]]"
+  - "[[Caos/registros/ultima-verificacao|ultima-verificacao]]"
+---
+
 # Dashboard Safety Kolden — Schema
 
 > **Versão:** 0.1.0 (schema) | **Ratificada:** 2026-07-06 | **Escopo:** especificação de colunas + regras de agregação

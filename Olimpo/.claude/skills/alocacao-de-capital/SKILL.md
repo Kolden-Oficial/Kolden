@@ -3,6 +3,9 @@ name: alocacao-de-capital
 description: Use quando o Plutos precisar decidir COMO distribuir o capital da Kolden entre buckets estratégicos — reinvestir no core, expandir (M&A, geo, produto), devolver ao dono, sanear dívida, construir reserva. Cobre a lógica CFO estratégico: hurdle rate por bucket, hierarquia de retorno esperado, gestão de tesouraria, disciplina de recompra/dividendo (quando aplicável), e comunicação da política ao board. NÃO use para orçamento operacional de mídia (isso é `alocacao_de_budget` já no Plutos) nem para análise de investimento pontual (isso é ROADMAP `npv-irr-e-analise-de-investimento`). Aqui é a política mestre do capital da empresa.
 invocavel_por: plutos
 tags: [alocacao-de-capital, cfo-estrategico, tesouraria, hurdle-rate, olimpo]
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Alocação de Capital

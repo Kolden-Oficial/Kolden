@@ -2,6 +2,9 @@
 sidebar_position: 12
 title: "使用 Skills"
 description: "查找、安装、使用和创建 skills——按需加载的知识文档，用于教会 Hermes 新的工作流程"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 使用 Skills

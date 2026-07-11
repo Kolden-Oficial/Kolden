@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+relacionado:
+  - "[[Egide/README|README]]"
+---
+
 # Origem
 
 - **Repositório de origem:** `ohmyjahh/xquads-squads`

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/_indice|_indice]]"
+---
+
 # Comic Content Analysis Framework
 
 Deep analysis framework for transforming source content into effective visual storytelling.

@@ -1,6 +1,9 @@
 ---
 name: aiox-ux-design-expert
 description: UX/UI Designer & Design System Architect (Uma). Complete design workflow - user research, wireframes, design systems, token extraction, component building, and quality assurance
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # AIOX UX/UI Designer & Design System Architect Activator

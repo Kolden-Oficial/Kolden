@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Codex Skills Sync
 
 Tools for generating local Codex skills (`.codex/skills/aiox-*`) from AIOX agent and squad definitions.

@@ -19,6 +19,9 @@ squads_que_usam: [caos, prometeu, dedalo, hermes, themis]
 # --- federação (preenchido pelo bibliotecario) ---
 persona_canonica: null
 confianca_da_fonte: alta
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Herbert Alexander Simon — Dossiê de Mente

@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Coding-Agent, Antigravity, CLI, Auth, Plugins, Sandbox]
     related_skills: [grok, codex, claude-code, hermes-agent]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Antigravity CLI (`agy`)

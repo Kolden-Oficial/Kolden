@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/security/1password/references/cli-examples|cli-examples]]"
+---
+
 # 1Password CLI get-started (summary)
 
 Official docs: https://developer.1password.com/docs/cli/get-started/

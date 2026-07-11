@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task: Analisar Caminhos Quentes de Query
 
 **PropÃ³sito**: Rodar EXPLAIN ANALYZE em queries comuns/crÃ­ticas para identificar problemas de performance

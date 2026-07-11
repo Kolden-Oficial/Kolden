@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/yamadashy--repomix/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/yamadashy--repomix/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática — yamadashy--repomix
 
 - **slug:** yamadashy--repomix

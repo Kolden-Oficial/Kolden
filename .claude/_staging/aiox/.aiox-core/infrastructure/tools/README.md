@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # AIOX Tools - Integrations Directory
 
 This directory contains tool integration definitions for Synkra AIOX agents. Tools are external capabilities that agents can discover and use to accomplish tasks.

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] RMBC framework fully executed (all 4 sections)"
   - "[ ] Hook compelling in first 60 seconds"
   - "[ ] Visual direction cues and production notes included"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Write VSL Script

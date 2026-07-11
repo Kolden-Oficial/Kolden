@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Stack atual inventariado em todas as camadas"
   - "[ ] Technology Radar construído com 4 anéis"
   - "[ ] Roadmap de tecnologia de 12 meses criado"
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Avaliar Tecnologia

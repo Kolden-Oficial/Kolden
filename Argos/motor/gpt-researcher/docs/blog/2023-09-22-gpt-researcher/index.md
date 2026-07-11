@@ -3,6 +3,9 @@ slug: building-gpt-researcher
 title: How we built GPT Researcher
 authors: [assafe]
 tags: [gpt-researcher, autonomous-agent, opensource, github]
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 After [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) was published, we immediately took it for a spin. The first use case that came to mind was autonomous online research. Forming objective conclusions for manual research tasks can take time, sometimes weeks, to find the right resources and information. Seeing how well AutoGPT created tasks and executed them got me thinking about the great potential of using AI to conduct comprehensive research and what it meant for the future of online research.

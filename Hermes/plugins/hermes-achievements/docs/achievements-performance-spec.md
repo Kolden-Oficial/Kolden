@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/plugins/hermes-achievements/docs/achievements-performance-implementation-plan|achievements-performance-implementation-plan]]"
+  - "[[Hermes/plugins/hermes-achievements/docs/achievements-performance-implementation-spec|achievements-performance-implementation-spec]]"
+---
+
 # Hermes Achievements Performance Spec (Post-Hackathon)
 
 Status: Draft (no code changes yet)

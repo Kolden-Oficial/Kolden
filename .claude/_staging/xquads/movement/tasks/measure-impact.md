@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Impact Pyramid defined with 5 levels"
   - "[ ] Vitality Index formula defined with weights"
   - "[ ] Reporting cadence established"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/movement/tasks/_indice|_indice]]"
 ---
 
 # Task: Measure Impact

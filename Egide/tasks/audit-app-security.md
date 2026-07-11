@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Modelo de ameaças criado com análise STRIDE"
   - "[ ] Todas as categorias do OWASP Top 10 testadas"
   - "[ ] Plano de remediação com exemplos de correção em nível de código"
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+relacionado:
+  - "[[Egide/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Auditoria de Segurança de Aplicação OWASP

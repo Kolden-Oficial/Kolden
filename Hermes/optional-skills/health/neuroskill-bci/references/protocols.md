@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/health/neuroskill-bci/references/api|api]]"
+  - "[[Hermes/optional-skills/health/neuroskill-bci/references/metrics|metrics]]"
+---
+
 # NeuroSkill Guided Protocols
 
 Over 70 mind-body practices triggered by specific biometric (EXG) signals. These

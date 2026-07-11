@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Pesquisa de usuário conduzida com insights documentados"
   - "[ ] 2-3 personas criadas com objetivos e dores"
   - "[ ] Wireframes criados para todas as telas e fluxos principais"
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Pesquisa de UX & Design de Fluxo

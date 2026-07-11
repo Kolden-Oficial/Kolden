@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/README|README]]"
+---
+
 # Code Graph MCP — Setup Guide
 
 Setup guide para instalacao, configuracao e validacao do Code Graph MCP como provider de code intelligence no AIOX.

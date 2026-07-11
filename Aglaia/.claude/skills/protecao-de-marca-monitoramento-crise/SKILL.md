@@ -7,6 +7,9 @@ agente_primario: [aglaia-chief]
 tags: [brand-protection, trademark, crisis-management, monitoramento]
 fonte_upstream: msitarzewski/agency-agents@a597cb6 (design/, MIT)
 status: semente
+tipo: skill
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
 ---
 
 > **Atribuição:** semente adaptada de `msitarzewski/agency-agents@a597cb6` (MIT, divisão `design/`). Reescrita em PT-BR, sem cópia literal.

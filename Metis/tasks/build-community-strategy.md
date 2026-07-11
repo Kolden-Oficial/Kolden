@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Modelo SPACES avaliado com dimensão primária selecionada"
   - "[ ] Escada de engajamento projetada com 7 degraus"
   - "[ ] Community Health Score definido com 5 componentes"
+tipo: nota
+area: Metis
+up: "[[Metis/_MOC-metis]]"
+relacionado:
+  - "[[Metis/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Construir Estratégia de Comunidade

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/architecture/_indice|_indice]]"
+---
+
 # Cambios en los Agentes ADE - Alteraciones en los Agentes AIOX
 
 > **Documento:** Registro de las alteraciones realizadas en los agentes para soportar ADE

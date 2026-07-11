@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--06-templates-e-ferramentas/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/drive--06-templates-e-ferramentas/reconciliacao|reconciliacao]]"
+---
+
 # Inventário — Área "06 | Templates & Ferramentas" (Drive)
 
 > Absorção F3→F6.5, 2026-06-25. Read-only no Drive. Pasta raiz: `17mx1cClEmWQd_K5yqwy0HmqiPyepwhX4`.

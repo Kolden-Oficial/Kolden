@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/diagnostico_caos/_indice|_indice]]"
+---
+
 # 06 — Veredito e Prescrição
 
 ## Veredito (uma frase + número)

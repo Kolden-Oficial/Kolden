@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/.claude/skills/pr-comunicacoes-institucionais/references/crisis-por-janela|crisis-por-janela]]"
+---
+
 # Press release — molde completo com contagens
 
 ## Cabeçalho (nunca omitir)

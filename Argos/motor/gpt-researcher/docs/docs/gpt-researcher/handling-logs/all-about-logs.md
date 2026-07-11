@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/handling-logs/langsmith-logs|langsmith-logs]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/handling-logs/simple-logs-example|simple-logs-example]]"
+---
+
 # All About Logs
 
 This document explains how to interpret the log files generated for each report. These logs provide a detailed record of the research process, from initial task planning to the gathering of information, and finally, the report writing process. Reports may change over time as new features are developed. 

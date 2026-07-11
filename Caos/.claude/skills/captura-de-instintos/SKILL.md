@@ -1,6 +1,9 @@
 ---
 name: captura-de-instintos
 description: Use quando quiser que o aprendizado entre sessões deixe de ser anotação solta e vire conhecimento reusável e versionado — capturar padrões observados como "instintos" atômicos com confiança, evoluí-los para habilidade/reflexo/especialista quando maduros, e evitar contaminação entre projetos. Complementa o `ritual-de-encerramento` (reflexão manual de fim de sessão) com o modelo sistemático de captura e promoção. NÃO use para a reflexão pontual de uma sessão (essa é o ritual-de-encerramento).
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Captura de instintos (aprendizado contínuo)

@@ -14,6 +14,9 @@ metadata:
     related_skills: [arxiv, ml-paper-writing, subagent-driven-development, plan]
     requires_toolsets: [terminal, files]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Research Paper Writing Pipeline

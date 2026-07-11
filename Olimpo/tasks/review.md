@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os itens do checklist avaliados e pontuados"
   - "[ ] Veredito emitido (APROVAR/REVISAR/REJEITAR)"
   - "[ ] Alinhamento estratégico e rigor financeiro avaliados"
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Revisar Saída de Estratégia Executiva

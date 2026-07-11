@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Spiky POV identified and validated"
   - "[ ] Platform selected with format fit analysis"
   - "[ ] 30-day content starter pack outlined"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/data-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Build Audience

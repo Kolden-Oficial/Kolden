@@ -2,6 +2,11 @@
 sidebar_position: 5
 title: "WhatsApp"
 description: "Set up Hermes Agent as a WhatsApp bot via the built-in Baileys bridge"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # WhatsApp Setup

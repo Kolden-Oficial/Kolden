@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Incidente classificado com severidade e linha do tempo estabelecida"
   - "[ ] Ações de contenção executadas e verificadas"
   - "[ ] Lições aprendidas documentadas com melhorias acionáveis"
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+relacionado:
+  - "[[Egide/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Playbook de Resposta a Incidentes

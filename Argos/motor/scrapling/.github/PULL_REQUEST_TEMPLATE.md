@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 <!--
   You are amazing! Thanks for contributing to Scrapling!
   Please, DO NOT DELETE ANY TEXT from this template! (unless instructed).

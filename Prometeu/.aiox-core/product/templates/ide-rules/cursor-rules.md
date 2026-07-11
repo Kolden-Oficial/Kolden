@@ -1,6 +1,15 @@
 ---
 description: Synkra AIOX global rules loaded on every Cursor conversation
 alwaysApply: true
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/antigravity-rules|antigravity-rules]]"
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/claude-rules|claude-rules]]"
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/codex-rules|codex-rules]]"
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/copilot-rules|copilot-rules]]"
+  - "[[Prometeu/.aiox-core/product/templates/ide-rules/gemini-rules|gemini-rules]]"
 ---
 
 # Synkra AIOX Development Rules for Cursor

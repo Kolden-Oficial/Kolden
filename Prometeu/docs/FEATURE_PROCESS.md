@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # Feature Request Process
 
 > 🌐 **EN** | [PT](./pt/FEATURE_PROCESS.md) | [ES](./es/FEATURE_PROCESS.md)

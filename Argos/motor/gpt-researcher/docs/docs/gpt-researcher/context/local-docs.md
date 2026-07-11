@@ -1,3 +1,15 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/azure-storage|azure-storage]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/data-ingestion|data-ingestion]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/filtering-by-domain|filtering-by-domain]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/tailored-research|tailored-research]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/context/vector-stores|vector-stores]]"
+---
+
 # Local Documents
 
 ## Just Local Docs

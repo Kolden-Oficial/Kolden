@@ -9,6 +9,9 @@ description: >-
   ~99 regras de UX com anti-padrões e diretrizes por stack. NÃO é para gerar
   imagem/logo (isso é a Aglaia) nem para julgar "bom gosto"/anti-slop (use a
   habilidade julgamento-estetico-anti-slop).
+tipo: skill
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
 ---
 
 # Sistema de Design — inteligência de UI/UX

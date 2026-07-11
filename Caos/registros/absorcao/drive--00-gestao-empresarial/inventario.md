@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--00-gestao-empresarial/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/drive--00-gestao-empresarial/reconciliacao|reconciliacao]]"
+---
+
 # Inventário F3 — Área "00 | Gestão Empresarial" (Drive)
 
 > folderId raiz: `1oi_IKPspLIQhpfkFYDJf4GjML17gCNax`. Inventário recursivo, arquivo por arquivo. Numeração D-id local à área (reconciliação global posterior). Data: 2026-06-25.

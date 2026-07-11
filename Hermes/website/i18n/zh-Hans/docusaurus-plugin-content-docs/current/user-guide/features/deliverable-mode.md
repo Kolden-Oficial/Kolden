@@ -2,6 +2,9 @@
 title: 可交付成果模式（聊天中的 Artifacts）
 sidebar_label: 可交付成果模式
 description: Agent 如何将生成的图表、PDF、电子表格及其他文件作为原生附件发送到消息平台。
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 可交付成果模式

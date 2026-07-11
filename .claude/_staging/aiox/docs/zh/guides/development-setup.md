@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/guides/README|README]]"
+---
+
 # 开发设置指南
 
 > **[EN](../../guides/development-setup.md)** | **[PT](../../pt/guides/development-setup.md)** | **[ES](../../es/guides/development-setup.md)** | **ZH**

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/aiox-agent-flows/README|README]]"
+---
+
 # Sistema do Agente @dev
 
 > **Versão:** 1.0.0

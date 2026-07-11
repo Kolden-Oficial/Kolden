@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Core metrics calculated and presented"
   - "[ ] 80/20 analysis performed"
   - "[ ] 7-day action plan created"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/traffic-masters/tasks/_indice|_indice]]"
 ---
 
 # Task: Analyze Performance

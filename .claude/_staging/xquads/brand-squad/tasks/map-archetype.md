@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All 12 archetypes evaluated and top 3 scored"
   - "[ ] Primary and secondary archetypes selected"
   - "[ ] Application examples provided for 5+ touchpoints"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/brand-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Map Brand Archetype

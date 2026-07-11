@@ -2,6 +2,9 @@
 sidebar_position: 8
 title: "安全"
 description: "安全模型、危险命令审批、用户授权、容器隔离及生产部署最佳实践"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 安全

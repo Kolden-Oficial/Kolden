@@ -2,6 +2,9 @@
 title: "Kanban Video Orchestrator — 规划、搭建并监控由 Hermes Kanban 支撑的多智能体视频制作流水线"
 sidebar_label: "Kanban Video Orchestrator"
 description: "规划、搭建并监控由 Hermes Kanban 支撑的多智能体视频制作流水线"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

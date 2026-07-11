@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/_lote-2026-06-26/_indice|_indice]]"
+---
+
 # F6.5 — Relatório de reconciliação (sem perda) — squad Ariadne
 
 - **squad-alvo:** Ariadne (SEO+CRO) · `C:/Kolden/Ariadne/`

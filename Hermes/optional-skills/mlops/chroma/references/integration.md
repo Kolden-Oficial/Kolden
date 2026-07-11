@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Chroma Integration Guide
 
 Integration with LangChain, LlamaIndex, and frameworks.

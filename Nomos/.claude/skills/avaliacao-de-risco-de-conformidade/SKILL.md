@@ -6,6 +6,9 @@ description: >-
   "avaliação de risco", "matriz de risco", "política interna", "código de conduta", "risco regulatório"
   ou "estamos expostos a quê?". Produz mapa de exposição (probabilidade × severidade) por obrigação, com
   ação, dono e priorização — sempre informativo.
+tipo: skill
+area: Nomos
+up: "[[Nomos/_MOC-nomos]]"
 ---
 
 # Avaliação de Risco de Conformidade

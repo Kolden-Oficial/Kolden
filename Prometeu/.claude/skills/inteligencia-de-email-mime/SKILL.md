@@ -4,6 +4,9 @@ description: Use quando precisar EXTRAIR informação estruturada de emails brut
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Inteligência de Email (MIME)

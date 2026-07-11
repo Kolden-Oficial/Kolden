@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+---
+
 # Mecânicas de programa — padrões de desenho de indicação e afiliados
 
 As mecânicas que separam programas com 10% de taxa de indicação dos com 0,5%.

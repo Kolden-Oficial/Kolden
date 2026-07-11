@@ -7,6 +7,11 @@ status: vigente
 atualizado-em: 2026-07-04
 mentes: [stuart-russell, peter-norvig, nick-bostrom, rodney-brooks]
 frameworks_derivados: [arquitetura-de-agents-kolden]
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/linhagens/_indice|_indice]]"
 ---
 
 # Linhagem: Alinhamento e safety — de Wiener ao Precipício

@@ -14,6 +14,11 @@ Checklist:
   - "[ ] Gather information"
   - "[ ] Compile findings"
   - "[ ] List sources"
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/examples/squads/multi-agent-squad/tasks/write-report|write-report]]"
 ---
 
 # *research / *find

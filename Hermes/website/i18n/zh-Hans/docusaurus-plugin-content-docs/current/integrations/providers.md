@@ -2,6 +2,9 @@
 title: "AI 提供商"
 sidebar_label: "AI 提供商"
 sidebar_position: 1
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # AI 提供商

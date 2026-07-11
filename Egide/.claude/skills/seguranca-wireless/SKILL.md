@@ -9,6 +9,9 @@ description: >-
 domain: ciberseguranca
 subdomain: wireless-security
 tags: [wireless, wifi, wpa2, wpa3, rogue-ap, evil-twin, bluetooth, ble, kismet, wids]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Segurança Wireless

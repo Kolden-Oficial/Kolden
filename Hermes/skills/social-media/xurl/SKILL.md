@@ -12,6 +12,9 @@ metadata:
     tags: [twitter, x, social-media, xurl, official-api]
     homepage: https://github.com/xdevplatform/xurl
     upstream_skill: https://github.com/openclaw/openclaw/blob/main/skills/xurl/SKILL.md
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # xurl — X (Twitter) API via the Official CLI

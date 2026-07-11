@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/architecture/_indice|_indice]]"
+---
+
 <!-- 翻译: ZH-CN | 原始: /docs/en/architecture/hcs-check-specifications.md | 同步: 2026-02-22 -->
 
 # HCS 检查规范

@@ -17,6 +17,9 @@ cross_links:
   - argos (intel como fonte)
   - metis (NPS quantitativo handoff)
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G5, G6)
+tipo: skill
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
 ---
 
 # Síntese de Feedback Multi-Canal

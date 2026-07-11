@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/gptr/_indice|_indice]]"
+---
+
 # npm package
 
 The [gpt-researcher npm package](https://www.npmjs.com/package/gpt-researcher) is a WebSocket client for interacting with GPT Researcher.

@@ -10,6 +10,9 @@ description: >
   Charging + Live). NÃO é short-video puro (para Douyin/TikTok use `douyin-conteudo`).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Bilibili — vídeo de nicho vertical + comunidade Gen-Z

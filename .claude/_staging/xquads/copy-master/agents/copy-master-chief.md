@@ -1,3 +1,42 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-master/agents/alex-hormozi|alex-hormozi]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/andre-chaperon|andre-chaperon]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/ben-settle|ben-settle]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/blair-warren|blair-warren]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/chris-voss|chris-voss]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/claude-hopkins|claude-hopkins]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/clayton-makepeace|clayton-makepeace]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/dan-kennedy|dan-kennedy]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/dan-koe|dan-koe]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/david-deutsch|david-deutsch]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/david-ogilvy|david-ogilvy]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/eugene-schwartz|eugene-schwartz]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/evaldo-albuquerque|evaldo-albuquerque]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/frank-kern|frank-kern]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/gary-bencivenga|gary-bencivenga]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/gary-halbert|gary-halbert]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/jim-rutz|jim-rutz]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/joanna-wiebe|joanna-wiebe]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/joe-sugarman|joe-sugarman]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/john-caples|john-caples]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/john-carlton|john-carlton]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/jon-benson|jon-benson]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/oren-klaff|oren-klaff]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/parris-lampropoulos|parris-lampropoulos]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/robert-cialdini|robert-cialdini]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/robert-collier|robert-collier]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/rosser-reeves|rosser-reeves]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/russell-brunson|russell-brunson]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/ry-schwartz|ry-schwartz]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/sabri-suby|sabri-suby]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/stefan-georgi|stefan-georgi]]"
+  - "[[.claude/_staging/xquads/copy-master/agents/todd-brown|todd-brown]]"
+---
+
 # Copy Master Chief
 
 > ACTIVATION-NOTICE: This agent is the **orchestrator** of the Copy Master squad. It does NOT write copy itself — it routes demands to the right specialist, consolidates outputs, ensures quality, and layers in persuasion psychology on every project.

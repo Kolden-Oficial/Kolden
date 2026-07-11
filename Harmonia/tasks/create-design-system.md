@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Auditoria de interface concluída com inconsistências documentadas"
   - "[ ] Todos os design tokens definidos (cores, tipografia, espaçamento, bordas, sombras)"
   - "[ ] Documentação completa com exemplos e guia de contribuição"
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Criação de Design System Atômico

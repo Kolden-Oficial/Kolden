@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/templates/_indice|_indice]]"
+---
+
 # Changelog
 
 All notable changes to this project will be documented in this file.

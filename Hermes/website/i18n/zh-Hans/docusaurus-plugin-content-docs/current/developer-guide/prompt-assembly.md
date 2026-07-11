@@ -2,6 +2,9 @@
 sidebar_position: 5
 title: "Prompt 组装"
 description: "Hermes 如何构建系统 prompt、保持缓存稳定性并注入临时层"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Prompt 组装

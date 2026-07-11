@@ -2,6 +2,9 @@
 sidebar_position: 15
 title: "订阅代理"
 description: "将你的 Nous Portal 订阅（或其他 OAuth 提供商）用作外部应用的 OpenAI 兼容端点"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 订阅代理

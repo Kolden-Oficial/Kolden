@@ -2,6 +2,9 @@
 title: "代码库检查 — 使用 pygount 检查代码库：代码行数、语言、占比"
 sidebar_label: "代码库检查"
 description: "使用 pygount 检查代码库：代码行数、语言、占比"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

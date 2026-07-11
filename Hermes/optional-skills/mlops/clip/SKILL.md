@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Multimodal, CLIP, Vision-Language, Zero-Shot, Image Classification, OpenAI, Image Search, Cross-Modal Retrieval, Content Moderation]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # CLIP - Contrastive Language-Image Pre-Training

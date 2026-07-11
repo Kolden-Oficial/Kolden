@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # AIOX V3 Schemas
 
 > Schema definitions for AIOX agents and tasks with Auto-Claude capabilities.

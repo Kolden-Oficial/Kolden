@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/cli/interactive-shell|interactive-shell]]"
+  - "[[Argos/motor/scrapling/docs/cli/overview|overview]]"
+---
+
 # Scrapling Extract Command Guide
 
 **Web Scraping through the terminal without requiring any programming!**

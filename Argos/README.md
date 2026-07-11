@@ -1,3 +1,16 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/_origem|_origem]]"
+  - "[[Argos/CLAUDE|CLAUDE]]"
+  - "[[Argos/ferramentas|ferramentas]]"
+  - "[[Argos/instalacao|instalacao]]"
+  - "[[Argos/prd-de-ia|prd-de-ia]]"
+  - "[[Argos/roteiro-de-teste|roteiro-de-teste]]"
+---
+
 # Argos — Inteligência de Mercado & Scraping
 
 > *Argos Panoptes (Ἄργος Πανόπτης): o gigante de cem olhos que tudo vê e nunca dorme por inteiro.*

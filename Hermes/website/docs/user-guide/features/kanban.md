@@ -2,6 +2,11 @@
 sidebar_position: 12
 title: "Kanban (Multi-Agent Board)"
 description: "Durable SQLite-backed task board for coordinating multiple Hermes profiles"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Kanban — Multi-Agent Profile Collaboration

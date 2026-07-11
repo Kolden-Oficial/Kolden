@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/presets/concept-story|concept-story]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/presets/four-panel|four-panel]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/presets/ohmsha|ohmsha]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/presets/shoujo|shoujo]]"
+---
+
 # wuxia
 
 武侠预设 - Hong Kong martial arts comic style

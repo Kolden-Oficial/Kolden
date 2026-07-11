@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/research/research-paper-writing/references/_indice|_indice]]"
+---
+
 # Experiment Design Patterns
 
 Patterns and best practices distilled from running research experiments at scale with the Hermes agent. These cover experiment infrastructure, evaluation protocols, monitoring, and failure recovery.

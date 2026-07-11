@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/manim-video/references/_indice|_indice]]"
+---
+
 # Paper Explainer Workflow
 
 How to turn a research paper into an animated explainer video.

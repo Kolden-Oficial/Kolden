@@ -17,6 +17,11 @@ Checklist:
   - [ ] Executar squad-validator.validate()
   - [ ] Formatar o resultado para saída
   - [ ] Retornar o exit code apropriado
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # *validate-squad

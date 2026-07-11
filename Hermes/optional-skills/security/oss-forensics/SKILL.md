@@ -23,6 +23,9 @@ toolsets:
   - web
   - file
   - delegation
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # OSS Security Forensics Skill

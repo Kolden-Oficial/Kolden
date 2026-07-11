@@ -1,3 +1,17 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/agents/config-engineer|config-engineer]]"
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/agents/hooks-architect|hooks-architect]]"
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/agents/mcp-integrator|mcp-integrator]]"
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/agents/project-integrator|project-integrator]]"
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/agents/roadmap-sentinel|roadmap-sentinel]]"
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/agents/skill-craftsman|skill-craftsman]]"
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/agents/swarm-orchestrator|swarm-orchestrator]]"
+---
+
 # claude-mastery-chief
 
 ACTIVATION-NOTICE: This file contains your full agent operating guidelines. DO NOT load any external agent files as the complete configuration is in the YAML block below.

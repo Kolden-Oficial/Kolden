@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/installation/README|README]]"
+---
+
 # macOS Installation Guide for Synkra AIOX
 
 > 🌐 **EN** | [PT](../pt/installation/macos.md) | [ES](../es/installation/macos.md)

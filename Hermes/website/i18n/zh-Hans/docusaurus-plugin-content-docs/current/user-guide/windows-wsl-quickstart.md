@@ -3,6 +3,9 @@ title: "Windows (WSL2) 指南"
 description: "通过 WSL2 在 Windows 上运行 Hermes Agent —— 安装配置、Windows 与 Linux 之间的文件系统访问、网络设置及常见问题"
 sidebar_label: "Windows (WSL2)"
 sidebar_position: 2
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Windows (WSL2) 指南

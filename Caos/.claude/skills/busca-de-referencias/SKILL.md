@@ -1,6 +1,11 @@
 ---
 name: busca-de-referencias
 description: Busca, valida e extrai referências externas (GitHub, Exa, Hugging Face) para fundamentar a criação de um agente. Use na Fase 2 do Ritual (chamada pelo pesquisador antes da síntese) ou isoladamente quando o usuário quiser benchmarking de mercado. Aplica scorecard rigoroso (≥7/10) antes de extrair qualquer padrão. Retorna trechos adaptados prontos para o redator-de-prompts, nunca cópia literal.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/skills/busca-de-referencias/criterios|criterios]]"
 ---
 
 # Busca de referências

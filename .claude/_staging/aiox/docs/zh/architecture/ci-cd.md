@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/architecture/_indice|_indice]]"
+---
+
 <!-- 翻译: ZH-CN | 原文: /docs/en/architecture/ci-cd.md | 同步: 2026-02-22 -->
 
 # CI/CD 架构

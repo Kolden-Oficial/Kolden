@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/reorg-drive-2026-06-25|reorg-drive-2026-06-25]]"
+---
+
 # Ramo-Drive da absorção — registros
 
 Este diretório guarda os artefatos da absorção do **Drive compartilhado da Kolden** para o cérebro

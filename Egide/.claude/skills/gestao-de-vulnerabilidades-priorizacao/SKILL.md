@@ -10,6 +10,9 @@ description: >-
 domain: ciberseguranca
 subdomain: gestao-de-vulnerabilidades
 tags: [vuln-management, cvss, epss, kev, priorizacao, sla, remediacao, risco]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Gestão de Vulnerabilidades (Priorização)

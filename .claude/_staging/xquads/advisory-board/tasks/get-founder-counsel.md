@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All three advisor perspectives delivered (Sivers, Chouinard, Naval)"
   - "[ ] Contrarian check completed with regret minimization"
   - "[ ] Decision framework offered with journaling prompt"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/advisory-board/tasks/_indice|_indice]]"
 ---
 
 # Task: Founder Crossroads Counsel

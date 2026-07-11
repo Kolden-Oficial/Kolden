@@ -11,6 +11,9 @@ agente_dono: [metis-estatistico]
 tags: [ab-test, hipotese, poder-estatistico, tamanho-de-amostra, alpha-spending, bayesian]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G1, G8, G9)
 status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)
+tipo: skill
+area: Metis
+up: "[[Metis/_MOC-metis]]"
 ---
 
 <!--

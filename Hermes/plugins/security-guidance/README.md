@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # security-guidance
 
 Pattern-matched security warnings for code the agent writes. When the agent

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/.claude/skills/criativo-como-hipotese-rsa-pmax/references/pmax-asset-group-template|pmax-asset-group-template]]"
+---
+
 # RSA Blueprint — 15 heads + 4 descriptions
 
 ## Matriz de headlines por bloco/ângulo

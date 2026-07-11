@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/chalk|chalk]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/ink-brush|ink-brush]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/ligne-claire|ligne-claire]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/manga|manga]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/minimalist|minimalist]]"
+---
+
 # realistic
 
 写实画风 - Digital painting with realistic proportions and lighting

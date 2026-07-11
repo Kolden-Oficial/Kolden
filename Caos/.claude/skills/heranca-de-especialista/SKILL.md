@@ -1,6 +1,9 @@
 ---
 name: heranca-de-especialista
 description: Mapeia os especialistas humanos históricos (e suas metodologias densas — livros, frameworks, planilhas) de um domínio e gera o bloco de herança de inteligência (biography + core_frameworks + signature_vocabulary) para que o agente herde aquela inteligência suprema já consolidada. Use na Fase 5.6 do Ritual, por camada (orquestrador, cada especialista e cada habilidade de domínio), e na conformação de squads antigos. Fonte híbrida: biblioteca local primeiro, web complementa. Nunca cópia literal.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Herança de especialista histórico

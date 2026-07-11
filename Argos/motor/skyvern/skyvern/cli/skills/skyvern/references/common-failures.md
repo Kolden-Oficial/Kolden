@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/skyvern/skyvern/cli/skills/skyvern/references/_indice|_indice]]"
+---
+
 # Common Failure Patterns
 
 ## Symptom: action clicked wrong element

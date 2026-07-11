@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/architecture/_indice|_indice]]"
+---
+
 # 代理配置使用审计
 
 > [EN](../../architecture/agent-config-audit.md) | [PT](../../pt/architecture/agent-config-audit.md) | [ES](../../es/architecture/agent-config-audit.md) | **ZH**

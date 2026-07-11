@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Hermes Middleware
 
 Hermes middleware is the behavior-changing companion to observer hooks.

@@ -10,6 +10,11 @@ metadata:
     tags: [creative, memes, humor, images]
     related_skills: [ascii-art, generative-widgets]
     category: creative
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/meme-generation/EXAMPLES|EXAMPLES]]"
 ---
 
 # Meme Generation

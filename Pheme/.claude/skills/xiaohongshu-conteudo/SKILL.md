@@ -11,6 +11,9 @@ description: >
   com vídeo curto secundário.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Xiaohongshu (小红书 / RED) — lifestyle + shopping discovery

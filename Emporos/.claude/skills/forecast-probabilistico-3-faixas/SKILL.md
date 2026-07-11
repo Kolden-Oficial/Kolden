@@ -8,6 +8,9 @@ description: >
   fronteira com o plano estratégico (Afrodite/CRO decide política, este skill projeta execução).
   Gatilhos: "forecast", "projeção", "commit", "best case", "stretch", "quanto vou fechar",
   "vou bater a meta", "forecast do mês/trimestre". Dono: analista-de-pipeline.
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # Forecast Probabilístico — 3 faixas

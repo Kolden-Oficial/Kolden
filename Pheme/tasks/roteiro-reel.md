@@ -25,6 +25,11 @@ Checklist:
   - "[ ] 3 opções de gancho de 3s"
   - "[ ] Roteiro cena a cena sem tempo morto"
   - "[ ] Texto na tela e CTA definidos"
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+relacionado:
+  - "[[Pheme/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Roteiro de Vídeo Curto (Reel / TikTok / Short)

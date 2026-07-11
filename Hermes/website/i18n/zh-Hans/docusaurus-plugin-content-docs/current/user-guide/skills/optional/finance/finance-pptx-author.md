@@ -2,6 +2,9 @@
 title: "Pptx Author — 使用 python-pptx 无头构建 PowerPoint 演示文稿"
 sidebar_label: "Pptx Author"
 description: "使用 python-pptx 无头构建 PowerPoint 演示文稿"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

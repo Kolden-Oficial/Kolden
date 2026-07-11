@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/_origem|_origem]]"
+  - "[[Peitho/diagnostico|diagnostico]]"
+  - "[[Peitho/prd-de-ia|prd-de-ia]]"
+---
+
 # Peitho — Squad de Tráfego Pago
 
 Peitho é o squad de tráfego pago do Kolden: 16 agentes que dominam a aquisição paga em todas as grandes plataformas (Facebook/Meta, Google Ads, YouTube, TikTok, LinkedIn), unindo clones de especialistas reais de classe mundial (media buyers e estrategistas de anúncios) a especialistas funcionais de criativo, análise de performance, escala, rastreamento e gestão fiscal. O squad unifica o arsenal importado do **traffic-masters** (xquads-squads) com o PRD preexistente do Peitho (`prd-de-ia.md`) e o `diagnostico.md` já redigidos em português.

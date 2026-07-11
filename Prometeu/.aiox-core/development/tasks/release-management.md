@@ -9,6 +9,11 @@ tools:
   - semantic-release # Automate versioning and changelog
 checklists:
   - github-devops-checklist.md
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Gerenciar Releases de Software

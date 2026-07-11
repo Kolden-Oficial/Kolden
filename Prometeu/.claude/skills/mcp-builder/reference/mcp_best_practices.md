@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/skills/mcp-builder/reference/evaluation|evaluation]]"
+  - "[[Prometeu/.claude/skills/mcp-builder/reference/node_mcp_server|node_mcp_server]]"
+  - "[[Prometeu/.claude/skills/mcp-builder/reference/python_mcp_server|python_mcp_server]]"
+---
+
 # Boas Práticas e Diretrizes de Desenvolvimento de Servidores MCP
 
 ## Visão Geral

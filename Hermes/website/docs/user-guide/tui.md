@@ -2,6 +2,11 @@
 sidebar_position: 2
 title: "TUI"
 description: "Launch the modern terminal UI for Hermes — mouse-friendly, rich overlays, and non-blocking input."
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/_indice|_indice]]"
 ---
 
 # TUI

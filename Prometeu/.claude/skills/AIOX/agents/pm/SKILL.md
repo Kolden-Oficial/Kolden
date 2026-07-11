@@ -3,6 +3,9 @@ name: aiox-pm
 description: "Ativa Morgan (pm) para Product Manager. Use para criação de PRD (greenfield e brownfield), criação e gestão de epics, estratégia e visão de produto, priorização de funcionalidades (MoSCoW, RICE), planejamento de roadmap, desenvolvimento de business case, go..."
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: generated -->

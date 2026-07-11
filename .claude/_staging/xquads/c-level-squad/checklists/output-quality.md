@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Executive Strategy Output Quality Checklist
 
 **Checklist ID:** CLEVEL-CL-001

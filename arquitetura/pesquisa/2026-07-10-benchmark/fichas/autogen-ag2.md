@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: arquitetura
+up: "[[arquitetura/_MOC-arquitetura]]"
+relacionado:
+  - "[[arquitetura/pesquisa/2026-07-10-benchmark/fichas/_indice|_indice]]"
+---
+
 # Ficha — AutoGen (Microsoft) + AG2 (fork)
 
 > Coletada em 2026-07-10 · Versão/commit da fonte: `microsoft/autogen@main` (commit `027ecf0a`, último release `python-v0.7.5`, 2025-09-30) e `ag2ai/ag2@main` (commit `450f4944`, release `v1.0.0b0`, 2026-07-03) + tag `v0.14.0` (commit `aa11de3c`, 2026-06-26) · Status: **microsoft/autogen = MODO MANUTENÇÃO (sucedido pelo Microsoft Agent Framework)**; **ag2ai/ag2 = ativo, em transição 0.x → 1.0 com reescrita de pacote**.
@@ -24,7 +32,7 @@
 >
 > "**AG2 is on the path to v1.0.** The protocol-driven framework is now the top-level package, imported as `ag2`. The classic framework (`ConversableAgent`, `GroupChat`, …) has been removed, and the import name `autogen` is no longer available — use `import ag2`."
 
-⚠️ Consequência prática: o "AG2 clássico" (ConversableAgent/GroupChat, herdeiro do AutoGen 0.2) vive na **linha 0.x** (última: v0.14.0, 2026-06-26). A `main` já é outra arquitetura ("protocol-driven"). Esta ficha documenta **as duas** árvores do AG2.
+⚠️ Consequência prática (corrigida em verificação adversarial 2026-07-10): o "AG2 clássico" (ConversableAgent/GroupChat, herdeiro do AutoGen 0.2) **migrou para o repositório próprio `ag2ai/ag2-classic`**, mantido em maintenance mode — segundo as release notes de v1.0.0b0: "The AG2 Classic framework… now lives at its own repository: ag2ai/ag2-classic. It continues to be maintained in maintenance mode"; `pip install autogen` / `import autogen` continuam funcionando a partir desse repo. A tag `v0.14.0` (2026-06-26) neste repo é o último snapshot pré-separação, usado nesta ficha para documentar a árvore clássica. A `main` do `ag2ai/ag2` já é outra arquitetura ("protocol-driven"). Esta ficha documenta **as duas** árvores.
 
 ## 1. Estrutura de pastas real
 
@@ -372,7 +380,7 @@ Ou seja: no AG2 a delegação é um atributo do agent (`agent.handoffs`) com con
 ## 6. Observações datadas
 
 - **2025-09-30** — último release do `microsoft/autogen` (`python-v0.7.5`; https://github.com/microsoft/autogen/releases/tag/python-v0.7.5). Nenhum release desde então; README com badge "Maintenance Mode" apontando para `microsoft/agent-framework` (trecho literal em §0). Contribuições restritas: "contributions are limited to bug fixes, security patches, and documentation improvements" (README).
-- **2026-06-26** — AG2 `v0.14.0`: último minor da linha clássica com `autogen/agentchat/` (https://github.com/ag2ai/ag2/releases/tag/v0.14.0).
+- **2026-06-26** — AG2 `v0.14.0`: último minor da linha clássica com `autogen/agentchat/` DENTRO deste repo (https://github.com/ag2ai/ag2/releases/tag/v0.14.0). A partir de v1.0.0b0, o clássico continua vivo em maintenance mode no repo próprio `ag2ai/ag2-classic` (`pip install autogen` segue funcionando de lá — release notes v1.0.0b0).
 - **2026-07-03** — AG2 `v1.0.0b0`: pacote `ag2/` "protocol-driven" vira o topo; framework clássico removido da main; `import autogen` deixa de existir (https://github.com/ag2ai/ag2/releases/tag/v1.0.0b0 + README §0). Cadência 2026 do AG2: v0.12.x (abr) → v0.13.x (mai/jun) → v0.14.0 (jun) → v1.0.0b0 (jul) — projeto muito ativo.
 - **Risco para benchmark**: qualquer convenção copiada do AG2 clássico (ConversableAgent/GroupChat/OAI_CONFIG_LIST) já está em rota de descontinuação dentro do próprio AG2; e tudo do microsoft/autogen 0.4 está congelado — a linha viva da Microsoft é o Agent Framework (repo `microsoft/agent-framework`).
 - **Lição de arquitetura para o KoldenOS**: o desenho em 3 camadas por pacote (`core` = runtime/mensageria → `agentchat` = API de agents/teams → `ext` = integrações), com módulos privados `_*.py` reexportados e 1 padrão de orquestração por módulo, é o artefato de organização mais transferível dos dois repos; o AG2 demonstra o custo do monolito (arquivos de 97–219 KB).

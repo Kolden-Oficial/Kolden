@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/scripts/README|README]]"
+---
+
 # AIOX Document Template Specification
 
 ## Overview

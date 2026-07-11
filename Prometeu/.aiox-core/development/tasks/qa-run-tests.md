@@ -4,6 +4,11 @@ agent: qa
 requires:
   - jest
   - coderabbit
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Run Tests (com Gate de Qualidade de Código)

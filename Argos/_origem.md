@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/README|README]]"
+---
+
 # Origem do Squad Argos
 
 **Tipo:** squad criado pelo Ritual do Caos (não importado de um repositório de squad).

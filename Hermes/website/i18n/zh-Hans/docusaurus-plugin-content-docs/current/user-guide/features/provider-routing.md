@@ -3,6 +3,9 @@ title: Provider Routing
 description: 配置 OpenRouter provider 偏好，以优化成本、速度或质量。
 sidebar_label: Provider Routing
 sidebar_position: 7
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Provider Routing

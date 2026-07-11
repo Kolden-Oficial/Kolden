@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/README|README]]"
+---
+
 # AIOX API Reference
 
 > **EN** | [PT](../pt/guides/api-reference.md) | [ES](../es/guides/api-reference.md)

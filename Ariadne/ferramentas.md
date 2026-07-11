@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/README|README]]"
+---
+
 # Ferramentas — Ariadne (Execução de SEO & CRO de Página)
 
 Catálogo único de toda ferramenta que o squad Ariadne pode usar. **Constituição, Artigo IV:** nenhum

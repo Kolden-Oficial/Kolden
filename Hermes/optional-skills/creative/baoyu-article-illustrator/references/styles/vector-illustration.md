@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/styles/_indice|_indice]]"
+---
+
 # vector-illustration
 
 Flat vector illustration style with clear black outlines and retro soft colors

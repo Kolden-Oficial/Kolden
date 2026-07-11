@@ -1,3 +1,22 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-workflows/auto-worktree-workflow|auto-worktree-workflow]]"
+  - "[[Prometeu/docs/en/aiox-workflows/brownfield-discovery-workflow|brownfield-discovery-workflow]]"
+  - "[[Prometeu/docs/en/aiox-workflows/brownfield-fullstack-workflow|brownfield-fullstack-workflow]]"
+  - "[[Prometeu/docs/en/aiox-workflows/brownfield-service-workflow|brownfield-service-workflow]]"
+  - "[[Prometeu/docs/en/aiox-workflows/brownfield-ui-workflow|brownfield-ui-workflow]]"
+  - "[[Prometeu/docs/en/aiox-workflows/design-system-build-quality-workflow|design-system-build-quality-workflow]]"
+  - "[[Prometeu/docs/en/aiox-workflows/greenfield-fullstack-workflow|greenfield-fullstack-workflow]]"
+  - "[[Prometeu/docs/en/aiox-workflows/greenfield-service-workflow|greenfield-service-workflow]]"
+  - "[[Prometeu/docs/en/aiox-workflows/greenfield-ui-workflow|greenfield-ui-workflow]]"
+  - "[[Prometeu/docs/en/aiox-workflows/qa-loop-workflow|qa-loop-workflow]]"
+  - "[[Prometeu/docs/en/aiox-workflows/spec-pipeline-workflow|spec-pipeline-workflow]]"
+  - "[[Prometeu/docs/en/aiox-workflows/story-development-cycle-workflow|story-development-cycle-workflow]]"
+---
+
 # AIOX Workflows - Documentação Detalhada de Workflows
 
 > **EN** | [PT](../../aiox-workflows/README.md) | [ES](../../es/aiox-workflows/README.md) | [ZH](../../zh/aiox-workflows/README.md)

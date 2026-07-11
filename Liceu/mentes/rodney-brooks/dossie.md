@@ -19,6 +19,9 @@ squads_que_usam: [caos, prometeu, dedalo, aletheia]
 # --- federação (preenchido pelo bibliotecario) ---
 persona_canonica: null
 confianca_da_fonte: alta
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Rodney Allen Brooks — Dossiê de Mente

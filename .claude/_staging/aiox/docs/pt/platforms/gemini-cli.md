@@ -1,3 +1,14 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/platforms/antigravity|antigravity]]"
+  - "[[.claude/_staging/aiox/docs/pt/platforms/claude-code|claude-code]]"
+  - "[[.claude/_staging/aiox/docs/pt/platforms/cursor|cursor]]"
+  - "[[.claude/_staging/aiox/docs/pt/platforms/github-copilot|github-copilot]]"
+---
+
 # Guia AIOX para Gemini CLI
 
 > 🌐 [EN](../../platforms/gemini-cli.md) | **PT** | [ES](../../es/platforms/gemini-cli.md)

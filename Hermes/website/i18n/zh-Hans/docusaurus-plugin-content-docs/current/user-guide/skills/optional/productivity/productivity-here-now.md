@@ -2,6 +2,9 @@
 title: "Here.Now — 将静态站点发布到 {slug}"
 sidebar_label: "Here.Now"
 description: "将静态站点发布到 {slug}"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

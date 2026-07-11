@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/touchdesigner-mcp/references/_indice|_indice]]"
+---
+
 # Panel & UI Reference
 
 Interactive control surfaces inside TouchDesigner — buttons, sliders, fields, custom parameter pages, panel callbacks. For HUD overlays (rendered text on visuals) see `layout-compositor.md`.

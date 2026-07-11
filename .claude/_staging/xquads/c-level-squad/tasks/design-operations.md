@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Core processes identified and mapped"
   - "[ ] Top 3 bottlenecks identified with quantified impact"
   - "[ ] OKR framework drafted for current quarter"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/c-level-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Design Operations

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/external-executors/codex|codex]]"
+---
+
 # External Executors
 
 External executors let one AIOX runtime keep orchestration authority while another CLI runtime performs the implementation work in an isolated run directory.

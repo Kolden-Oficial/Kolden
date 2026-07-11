@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/huggingface-tokenizers/references/algorithms|algorithms]]"
+  - "[[Hermes/optional-skills/mlops/huggingface-tokenizers/references/integration|integration]]"
+  - "[[Hermes/optional-skills/mlops/huggingface-tokenizers/references/pipeline|pipeline]]"
+---
+
 # Training Custom Tokenizers
 
 Complete guide to training tokenizers from scratch.

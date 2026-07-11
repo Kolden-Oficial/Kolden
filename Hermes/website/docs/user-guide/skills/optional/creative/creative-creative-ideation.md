@@ -2,6 +2,11 @@
 title: "Ideation — Generate project ideas via creative constraints"
 sidebar_label: "Ideation"
 description: "Generate project ideas via creative constraints"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/creative/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

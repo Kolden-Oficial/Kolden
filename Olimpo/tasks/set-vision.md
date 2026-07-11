@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Declarações de missão e visão elaboradas"
   - "[ ] 3-5 pilares estratégicos definidos com OKRs"
   - "[ ] Roadmap de 3 anos criado com temas anuais"
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Definir Visão

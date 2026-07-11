@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Catálogo de Habilidades — Prometeu
 
 Índice das habilidades próprias em `.claude/skills/` (framework de engenharia AIOX).

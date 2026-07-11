@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task: Verificar Ordenação de DDL
 
 **Propósito**: Fazer lint do DDL para uma ordem de execução segura, evitando erros de dependência

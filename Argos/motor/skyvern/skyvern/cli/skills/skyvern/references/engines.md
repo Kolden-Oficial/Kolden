@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/skyvern/skyvern/cli/skills/skyvern/references/_indice|_indice]]"
+---
+
 # Choosing Between `run_task` and Workflows
 
 Default to workflows for real automation work. Reach for `skyvern_run_task` only when you are

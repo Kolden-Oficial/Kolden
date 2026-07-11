@@ -9,6 +9,11 @@ metadata:
   hermes:
     tags: [comic, knowledge-comic, creative, image-generation]
     homepage: https://github.com/JimLiu/baoyu-skills#baoyu-comic
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/PORT_NOTES|PORT_NOTES]]"
 ---
 
 # Knowledge Comic Creator

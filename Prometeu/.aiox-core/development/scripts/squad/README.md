@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Squad Scripts Module
 
 Utilities for the squad-creator agent to manage squads in AIOX projects.

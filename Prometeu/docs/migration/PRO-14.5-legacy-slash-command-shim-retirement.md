@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/migration/ACORE-CLAUDE-SKILLS-PREFLIGHT-2026-05-01|ACORE-CLAUDE-SKILLS-PREFLIGHT-2026-05-01]]"
+---
+
 # PRO-14.5 Legacy Slash-Command Shim Retirement Gate
 
 Story: `STORY-PRO-14.5`

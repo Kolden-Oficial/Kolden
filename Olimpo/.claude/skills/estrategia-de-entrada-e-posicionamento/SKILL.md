@@ -3,6 +3,9 @@ name: estrategia-de-entrada-e-posicionamento
 description: Use quando o Zeus precisar decidir ONDE competir e COMO vencer — abertura de vertical/geografia nova, escolha de nicho inicial ("beach-head"), reposicionamento contra concorrente entrincheirado, ou avaliação de janela de mercado. Combina 3Cs (Customer/Company/Competitor de Ohmae) para diagnosticar o campo, Cinco Forças (Porter) para medir atratividade estrutural e Wardley Mapping para expor a evolução de cada componente (genesis→custom→product→commodity) e escolher a jogada. NÃO use para posicionamento de MENSAGEM (isso é Apolo/marca) nem para prioritização de features (Prometeu/moscow-kano). Aqui é onde-competir + como-vencer no nível de EMPRESA.
 invocavel_por: zeus
 tags: [estrategia, posicionamento, entrada, 3cs, porter, wardley, olimpo]
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Estratégia de Entrada e Posicionamento

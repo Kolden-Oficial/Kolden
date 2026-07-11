@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/skyvern/skills/skyvern/references/_indice|_indice]]"
+---
+
 # CLI and MCP Parity Summary
 
 Common mappings:

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/README|README]]"
+---
+
 # 如何通过拉取请求做出贡献
 
 > 🌐 [EN](../how-to-contribute-with-pull-requests.md) | [PT](../pt/how-to-contribute-with-pull-requests.md) | [ES](../es/how-to-contribute-with-pull-requests.md) | **ZH**

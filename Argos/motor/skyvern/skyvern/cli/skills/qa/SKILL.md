@@ -1,6 +1,9 @@
 ---
 name: qa
 description: "QA test your code changes by reading your git diff, choosing the right validation path for frontend/browser and backend changes, and reporting pass/fail with evidence."
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # QA — Validate Frontend and Backend Changes

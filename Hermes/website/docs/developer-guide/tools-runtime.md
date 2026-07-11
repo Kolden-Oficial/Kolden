@@ -2,6 +2,11 @@
 sidebar_position: 9
 title: "Tools Runtime"
 description: "Runtime behavior of the tool registry, toolsets, dispatch, and terminal environments"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Tools Runtime

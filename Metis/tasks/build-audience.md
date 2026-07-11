@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Spiky POV identificado e validado"
   - "[ ] Plataforma selecionada com análise de aderência de formato"
   - "[ ] Pacote inicial de conteúdo de 30 dias esboçado"
+tipo: nota
+area: Metis
+up: "[[Metis/_MOC-metis]]"
+relacionado:
+  - "[[Metis/tasks/_indice|_indice]]"
 ---
 
 # Task: Construir Audiência

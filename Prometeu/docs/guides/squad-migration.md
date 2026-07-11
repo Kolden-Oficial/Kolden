@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # Squad Migration Guide
 
 > **EN** | [PT](../pt/guides/squad-migration.md) | [ES](../es/guides/squad-migration.md)

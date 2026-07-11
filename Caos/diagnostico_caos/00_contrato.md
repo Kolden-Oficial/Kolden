@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/diagnostico_caos/_indice|_indice]]"
+---
+
 # 00 — Contrato de Honestidade (aceite)
 
 **Auditor:** agente adversarial (Claude Opus 4.8) operando sob diretiva de ceticismo hostil.

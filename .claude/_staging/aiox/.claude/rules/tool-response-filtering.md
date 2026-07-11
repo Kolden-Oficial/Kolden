@@ -2,6 +2,11 @@
 paths:
   - .aiox-core/data/tool-registry.yaml
   - .mcp.json
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/rules/_indice|_indice]]"
 ---
 # Tool Response Filtering — Dynamic Token Reduction
 

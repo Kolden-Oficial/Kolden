@@ -2,6 +2,11 @@
 title: "Ocr And Documents — Extract text from PDFs/scans (pymupdf, marker-pdf)"
 sidebar_label: "Ocr And Documents"
 description: "Extract text from PDFs/scans (pymupdf, marker-pdf)"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/productivity/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

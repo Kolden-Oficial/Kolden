@@ -1,3 +1,21 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-agent-flows/aiox-master-system|aiox-master-system]]"
+  - "[[Prometeu/docs/en/aiox-agent-flows/analyst-system|analyst-system]]"
+  - "[[Prometeu/docs/en/aiox-agent-flows/architect-system|architect-system]]"
+  - "[[Prometeu/docs/en/aiox-agent-flows/data-engineer-system|data-engineer-system]]"
+  - "[[Prometeu/docs/en/aiox-agent-flows/dev-system|dev-system]]"
+  - "[[Prometeu/docs/en/aiox-agent-flows/devops-system|devops-system]]"
+  - "[[Prometeu/docs/en/aiox-agent-flows/pm-system|pm-system]]"
+  - "[[Prometeu/docs/en/aiox-agent-flows/qa-system|qa-system]]"
+  - "[[Prometeu/docs/en/aiox-agent-flows/sm-system|sm-system]]"
+  - "[[Prometeu/docs/en/aiox-agent-flows/squad-creator-system|squad-creator-system]]"
+  - "[[Prometeu/docs/en/aiox-agent-flows/ux-design-expert-system|ux-design-expert-system]]"
+---
+
 # AIOX Agent Flows - Documentação Detalhada dos Agentes
 
 > **EN** | [PT](../../aiox-agent-flows/README.md) | [ES](../../es/aiox-agent-flows/README.md) | [ZH](../../zh/aiox-agent-flows/README.md)

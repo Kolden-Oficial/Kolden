@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/blocks/agent-prompt-template|agent-prompt-template]]"
+  - "[[Prometeu/.aiox-core/development/tasks/blocks/context-loading|context-loading]]"
+  - "[[Prometeu/.aiox-core/development/tasks/blocks/execution-pattern|execution-pattern]]"
+  - "[[Prometeu/.aiox-core/development/tasks/blocks/finalization|finalization]]"
+---
+
 # Sistema de Blocos de Task do AIOX
 
 > **Versão:** 1.0.0

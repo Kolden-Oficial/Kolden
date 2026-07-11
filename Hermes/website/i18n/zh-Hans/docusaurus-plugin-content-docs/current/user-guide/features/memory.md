@@ -2,6 +2,9 @@
 sidebar_position: 3
 title: "持久化记忆"
 description: "Hermes Agent 如何跨会话记忆——MEMORY.md、USER.md 与会话搜索"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 持久化记忆

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Módulo Cinza — Scrapers de Zona ToS-Cinza (ISOLADO)
 
 > ⚠️ **ZONA ToS-CINZA.** Tudo aqui viola Termos de Serviço de plataforma (scraping autenticado /

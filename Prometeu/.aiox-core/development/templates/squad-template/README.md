@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # {{Squad Name}}
 
 {{Breve descrição do que este Squad faz}}

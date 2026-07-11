@@ -10,6 +10,11 @@ tools:
 checklists:
   - github-devops-checklist.md
   - pr-quality-checklist.md
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Automatizar a Criação de Pull Request para Contribuições Open-Source

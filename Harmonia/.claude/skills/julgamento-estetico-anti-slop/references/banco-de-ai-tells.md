@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/.claude/skills/julgamento-estetico-anti-slop/references/baseline-legado-v1|baseline-legado-v1]]"
+  - "[[Harmonia/.claude/skills/julgamento-estetico-anti-slop/references/pre-flight-visual|pre-flight-visual]]"
+  - "[[Harmonia/.claude/skills/julgamento-estetico-anti-slop/references/presets-de-direcao|presets-de-direcao]]"
+---
+
 # Banco de AI-tells (visuais/estruturais)
 
 > Digerido de `Leonxlnx/taste-skill` seção 9 "AI Tells" (MIT). Reescrito em PT-BR.

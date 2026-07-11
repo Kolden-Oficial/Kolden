@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--01-produtos/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--01-produtos/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Reconciliação — Drive "01 | Produtos"
 
 > Invariante do protocolo de absorção sem perda:

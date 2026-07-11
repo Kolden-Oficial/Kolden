@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/obra--superpowers/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/obra--superpowers/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades — obra--superpowers
 
 - **slug:** obra--superpowers | **sha:** 896224c4 | **rota:** A

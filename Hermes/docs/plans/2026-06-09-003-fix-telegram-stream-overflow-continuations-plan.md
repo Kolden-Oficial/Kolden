@@ -5,6 +5,9 @@ date: 2026-06-09
 type: fix
 target_repo: hermes-agent
 origin: user-reported Telegram topic screenshot
+tipo: doc
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # fix: Prevent Telegram streamed replies from ending after first overflow chunk

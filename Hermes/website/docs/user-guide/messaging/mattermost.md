@@ -2,6 +2,11 @@
 sidebar_position: 8
 title: "Mattermost"
 description: "Set up Hermes Agent as a Mattermost bot"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Mattermost Setup

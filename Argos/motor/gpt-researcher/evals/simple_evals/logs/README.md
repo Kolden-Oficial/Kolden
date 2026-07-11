@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Evaluation Results
 
 This directory contains historical evaluation results for GPT-Researcher using the SimpleQA methodology.

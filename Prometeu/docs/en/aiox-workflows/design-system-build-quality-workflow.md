@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-workflows/README|README]]"
+---
+
 # Workflow de Qualidade na Construção de Design System
 
 > **EN** | [PT](../../aiox-workflows/design-system-build-quality-workflow.md) | [ES](../../es/aiox-workflows/design-system-build-quality-workflow.md)

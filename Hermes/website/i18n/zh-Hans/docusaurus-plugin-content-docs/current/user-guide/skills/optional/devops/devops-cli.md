@@ -2,6 +2,9 @@
 title: "Inference Sh Cli — 通过 inference 运行 150+ AI 应用"
 sidebar_label: "Inference Sh Cli"
 description: "通过 inference 运行 150+ AI 应用"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

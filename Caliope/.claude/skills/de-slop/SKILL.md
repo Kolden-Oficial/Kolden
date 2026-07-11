@@ -14,6 +14,9 @@ allowed-tools:
   - Grep
   - Glob
   - AskUserQuestion
+tipo: skill
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
 ---
 
 # De-slop: tirar a cara de IA de um texto (PT-BR)

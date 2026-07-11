@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Themis
+up: "[[Themis/_MOC-themis]]"
+relacionado:
+  - "[[Themis/_origem|_origem]]"
+---
+
 # Themis — Squad de Conselho Estratégico (Advisory Board)
 
 Themis é um conselho consultivo virtual composto por 11 mentes estratégicas de classe mundial — investidores, filósofos-empreendedores e pensadores de liderança — reunidos em torno da mesma mesa. Um orquestrador (Presidente do Conselho) diagnostica a sua questão, roteia para os conselheiros mais relevantes, gere a tensão produtiva entre visões divergentes e sintetiza tudo numa recomendação acionável, sempre preservando as vozes dissidentes. O squad cobre quatro domínios de aconselhamento — financeiro, empreendedor, organizacional e filosófico — para investimento, modelos mentais, escalonamento, propósito, cultura de equipe, empreendedorismo minimalista e negócio orientado por missão.

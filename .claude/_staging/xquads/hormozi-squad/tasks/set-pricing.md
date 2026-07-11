@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Value delivered calculated with financial and emotional dimensions"
   - "[ ] Pricing model selected with rationale"
   - "[ ] Testing plan defined"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/hormozi-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Set Pricing Strategy

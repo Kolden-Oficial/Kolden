@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/pro/access-grant-ops-playbook|access-grant-ops-playbook]]"
+  - "[[.claude/_staging/aiox/docs/guides/pro/install-gate-setup|install-gate-setup]]"
+---
+
 # Handoff: Squad Creator -> DevOps Pro Access Ops
 
 **Status:** Ready to operationalize

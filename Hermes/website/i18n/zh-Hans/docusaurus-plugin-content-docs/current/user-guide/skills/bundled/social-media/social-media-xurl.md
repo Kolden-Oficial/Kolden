@@ -2,6 +2,9 @@
 title: "Xurl — 通过 xurl CLI 使用 X/Twitter：发帖、搜索、私信、媒体、v2 API"
 sidebar_label: "Xurl"
 description: "通过 xurl CLI 使用 X/Twitter：发帖、搜索、私信、媒体、v2 API"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

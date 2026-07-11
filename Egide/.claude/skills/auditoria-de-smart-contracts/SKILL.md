@@ -9,6 +9,9 @@ description: >-
 domain: ciberseguranca
 subdomain: blockchain-security
 tags: [blockchain, smart-contract, solidity, evm, foundry, slither, mythril, fuzzing, defi]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Auditoria de Smart Contracts

@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Dike
+up: "[[Dike/_MOC-dike]]"
+relacionado:
+  - "[[Dike/CLAUDE|CLAUDE]]"
+  - "[[Dike/prd-de-ia|prd-de-ia]]"
+  - "[[Dike/roteiro-de-teste|roteiro-de-teste]]"
+---
+
 # Ferramentas — Dike
 
 Toda ferramenta usada pela Dike está documentada aqui (Constituição, Art. IV — sem invenção de

@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/templates/claude-md-fullstack|claude-md-fullstack]]"
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/templates/claude-md-library|claude-md-library]]"
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/templates/claude-md-mobile|claude-md-mobile]]"
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/templates/claude-md-monorepo|claude-md-monorepo]]"
+---
+
 # CLAUDE.md — Microservices Project
 
 ## Project Overview

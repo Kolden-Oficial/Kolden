@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [docker, s6, supervision, gateway, profiles]
     related_skills: [hermes-agent, hermes-agent-dev]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Hermes s6-overlay Container Supervision

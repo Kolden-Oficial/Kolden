@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # @devops (Gage) - Execution Trace
 
 > Traced from source code, not documentation.

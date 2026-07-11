@@ -18,6 +18,9 @@ cross_links:
   - pluto (oferta para gap)
   - aglaia (posicionamento de marca)
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G23)
+tipo: skill
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
 ---
 
 # Mapa Competitivo, SWOT e Gap Analysis

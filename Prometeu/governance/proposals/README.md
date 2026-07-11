@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # aiox-core/governance/proposals/
 
 FrameworkProposals — formal change requests to evolve the AIOX framework based on AuditFindings.

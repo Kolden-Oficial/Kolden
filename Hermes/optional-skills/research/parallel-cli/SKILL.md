@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Research, Web, Search, Deep-Research, Enrichment, CLI]
     related_skills: [duckduckgo-search, mcporter]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Parallel CLI

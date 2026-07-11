@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+---
+
 # Fórmulas de headline e hook
 
 Catálogo de fórmulas por família, com exemplos. Reescrito em PT-BR a partir de

@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Metis
+up: "[[Metis/_MOC-metis]]"
+---
+
 # Checklist de Qualidade de Saída de Crescimento Orientado por Dados
 
 **ID do Checklist:** DATA-CL-001

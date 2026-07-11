@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Checklist de qualidade aplicado à saída do especialista"
   - "[ ] Veredito emitido (APROVAR/REVISAR/REJEITAR)"
   - "[ ] Feedback específico fornecido para quaisquer falhas"
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Revisar Saída de Branding

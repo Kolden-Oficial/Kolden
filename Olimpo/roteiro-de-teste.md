@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/README|README]]"
+---
+
 # Roteiro de Teste — Squad Olimpo
 
 > **Modelo:** METODO §5 #12 (`Caos/modelos/roteiro-de-teste.md`).

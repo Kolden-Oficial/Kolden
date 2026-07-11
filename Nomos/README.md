@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Nomos
+up: "[[Nomos/_MOC-nomos]]"
+---
+
 # Nomos — Squad de Compliance & Jurídico/Regulatório
 
 > **status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)**

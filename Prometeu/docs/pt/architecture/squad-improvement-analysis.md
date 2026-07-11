@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/architecture/_indice|_indice]]"
+---
+
 <!-- Tradução: PT-BR | Original: /docs/en/architecture/squad-improvement-analysis.md | Sincronização: 2026-01-26 -->
 
 # Análise do Projeto: Sistema de Melhoria de Squads

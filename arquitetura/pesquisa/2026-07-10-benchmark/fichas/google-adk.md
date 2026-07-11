@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: arquitetura
+up: "[[arquitetura/_MOC-arquitetura]]"
+relacionado:
+  - "[[arquitetura/pesquisa/2026-07-10-benchmark/fichas/_indice|_indice]]"
+---
+
 # Ficha — Google ADK (Agent Development Kit)
 
 > Coletada em 2026-07-10 · Versão/commit da fonte: adk-python v2.4.0 (main @ `da50578b`, `__version__ = "2.4.0"`); adk-samples main @ `3fb70da9`; adk-docs main @ `944dd43b` · Status: ativo

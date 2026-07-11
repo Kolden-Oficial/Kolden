@@ -2,6 +2,9 @@
 title: "Nemo Curator — 用于 LLM 训练的 GPU 加速数据整理工具"
 sidebar_label: "Nemo Curator"
 description: "用于 LLM 训练的 GPU 加速数据整理工具"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,6 +1,9 @@
 ---
 name: governanca-de-habilidades
 description: Use para governar o PORTFÓLIO de habilidades/reflexos/config (não uma habilidade isolada) — auditar a biblioteca inteira em busca de qualidade/sobreposição/órfãos, medir se as regras são de fato seguidas, destilar princípios repetidos em regras, transformar regra recorrente em reflexo, e fazer faxina (GC) com humano no loop. Acione em "audita minhas skills", "minhas skills estão um caos", ".claude inchado", "essa regra está sendo seguida?", manutenção periódica. NÃO use para validar UMA skill nova (use `validacao-de-skill`) nem para escrever a description de UMA skill (use `descoberta-de-skill`).
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Governança de habilidades (nível portfólio)

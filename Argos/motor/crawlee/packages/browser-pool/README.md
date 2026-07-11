@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/packages/browser-pool/CHANGELOG|CHANGELOG]]"
+---
+
 # Browser Pool—the headless browser manager
 
 Browser Pool is a small, but powerful and extensible library, that allows you to seamlessly control multiple headless browsers at the same time with only a little configuration, and a single function call. Currently, it supports [Puppeteer](https://github.com/puppeteer/puppeteer), [Playwright](https://github.com/microsoft/playwright), and it can be easily extended with plugins.

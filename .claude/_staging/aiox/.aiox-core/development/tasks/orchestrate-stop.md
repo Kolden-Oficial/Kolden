@@ -5,6 +5,11 @@ agent: aiox-master
 version: 1.0.0
 story: '0.9'
 epic: '0'
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # \*orchestrate-stop Command

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Polymarket API Endpoints Reference
 
 All endpoints are public REST (GET), return JSON, and need no authentication.

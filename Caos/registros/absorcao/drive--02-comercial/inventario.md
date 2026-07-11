@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--02-comercial/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/drive--02-comercial/reconciliacao|reconciliacao]]"
+---
+
 # Inventário — Área "02 | Comercial" (Drive)
 
 > Absorção F3→F6.5, 2026-06-25. Read-only no Drive.

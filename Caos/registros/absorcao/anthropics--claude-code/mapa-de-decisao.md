@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/anthropics--claude-code/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/anthropics--claude-code/seguranca|seguranca]]"
+---
+
 # Mapa de decisão (F4) — anthropics--claude-code
 
 Comparado ao registro `dados/registro-de-entidades.yaml` e aos squads existentes. Viés autônomo: na ausência de match limpo item-a-item, prefere-se **ADAPT/CREATE** a REUSE (REUSE sem prova = perda silenciosa). Nenhum match foi limpo o bastante para REUSE — os equivalentes da Kolden cobrem o domínio, mas não a técnica específica deste material oficial da Anthropic.

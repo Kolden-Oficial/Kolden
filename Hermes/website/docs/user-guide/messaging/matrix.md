@@ -2,6 +2,11 @@
 sidebar_position: 9
 title: "Matrix"
 description: "Set up Hermes Agent as a Matrix bot"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Matrix Setup

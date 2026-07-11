@@ -2,6 +2,9 @@
 title: "对抗性 UX 测试 — 扮演产品最难搞的技术抵触用户"
 sidebar_label: "对抗性 UX 测试"
 description: "扮演产品最难搞的技术抵触用户"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

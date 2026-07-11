@@ -2,6 +2,9 @@
 title: "Chroma — 面向 AI 应用的开源 embedding 数据库"
 sidebar_label: "Chroma"
 description: "面向 AI 应用的开源 embedding 数据库"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

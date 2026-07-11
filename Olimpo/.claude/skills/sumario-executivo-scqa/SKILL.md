@@ -3,6 +3,9 @@ name: sumario-executivo-scqa
 description: Use quando QUALQUER chief que reporte ao Olimpo (Poseidon, Apolo, Hefesto, Hades, Atena, Plutos, Afrodite) precisar entregar um sumário executivo para o Zeus, para o board ou para um investidor — condensando situação, complicação, pergunta e resposta (SCQA) em uma pirâmide de conclusão-primeiro (Pyramid Principle). Skill COMPARTILHADA sem dono fixo — invocável por qualquer chief que reporte a C-level. Estrutura: 1 pergunta, 1 resposta, 3 pilares, evidência. NÃO use para copy de marketing (isso é Caliope) nem para relatório operacional detalhado (isso é dashboard, não sumário). Aqui é o filtro executivo: máximo de sinal, mínimo de tinta.
 invocavel_por: qualquer chief que reporte ao Olimpo
 tags: [scqa, pyramid-principle, sumario-executivo, comunicacao, olimpo, compartilhada]
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Sumário Executivo — SCQA + Pyramid Principle

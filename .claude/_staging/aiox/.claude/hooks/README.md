@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # Claude Code Hooks
 
 Sistema de governança automática para regras do CLAUDE.md.

@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/architecture/adr/ADR-COLLAB-1-current-state-audit|ADR-COLLAB-1-current-state-audit]]"
+  - "[[.claude/_staging/aiox/docs/zh/architecture/adr/ADR-COLLAB-2-proposed-configuration|ADR-COLLAB-2-proposed-configuration]]"
+  - "[[.claude/_staging/aiox/docs/zh/architecture/adr/adr-isolated-vm-decision|adr-isolated-vm-decision]]"
+---
+
 <!-- 翻译: zh-CN | 原文: /docs/architecture/adr/adr-hcs-health-check-system.md | 同步日期: 2026-02-22 -->
 
 # ADR: 健康检查系统架构

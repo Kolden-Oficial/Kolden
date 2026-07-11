@@ -4,6 +4,9 @@ description: Use quando precisar definir SLO (Service Level Objective), calcular
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # SLO, Error Budget e Burn Rate

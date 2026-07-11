@@ -11,6 +11,9 @@ description: >
   handoff a `short-video-architect`); NÃO é livestream commerce (essa é `livestream-commerce`).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Douyin — short-video viral + matriz de tráfego + Qianchuan

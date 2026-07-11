@@ -2,6 +2,9 @@
 sidebar_position: 3
 title: "创建 Skill"
 description: "如何为 Hermes Agent 创建 skill——SKILL.md 格式、规范与发布"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 创建 Skill

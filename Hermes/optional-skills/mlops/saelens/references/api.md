@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/saelens/references/README|README]]"
+---
+
 # SAELens API Reference
 
 ## SAE Class

@@ -1,3 +1,9 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+---
+
 # Vistoria Estrutural v3 — Laudo (2026-07-10)
 
 > Revisão completa da estrutura de agentes da Kolden: falhas, hierarquia, índices e travas operacionais.

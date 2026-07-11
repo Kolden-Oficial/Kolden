@@ -25,6 +25,11 @@ Checklist:
   - "[ ] 3-5 segmentos de público definidos com detalhes de segmentação"
   - "[ ] Estrutura de campanha mapeada por etapa do funil"
   - "[ ] Orçamento alocado com detalhamentos diário e mensal"
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Criar Estratégia de Anúncios

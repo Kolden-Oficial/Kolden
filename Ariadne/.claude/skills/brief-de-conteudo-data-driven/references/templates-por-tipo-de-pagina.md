@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/.claude/skills/brief-de-conteudo-data-driven/references/densidade-de-keyword|densidade-de-keyword]]"
+  - "[[Ariadne/.claude/skills/brief-de-conteudo-data-driven/references/dominios-excluidos|dominios-excluidos]]"
+---
+
 # Templates de brief por tipo de página
 
 Escolha o template que casa com o tipo de página. Adapte as seções ao negócio e ao cenário

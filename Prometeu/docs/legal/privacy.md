@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/legal/license-clarification|license-clarification]]"
+  - "[[Prometeu/docs/legal/terms|terms]]"
+---
+
 # Privacy Policy
 
 **Last updated:** 2025-12-08

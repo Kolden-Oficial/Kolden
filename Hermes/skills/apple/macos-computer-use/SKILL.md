@@ -12,6 +12,9 @@ metadata:
     tags: [computer-use, macos, desktop, automation, gui]
     category: desktop
     related_skills: [browser]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # macOS Computer Use (universal, any-model)

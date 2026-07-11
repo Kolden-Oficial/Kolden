@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Nomos
+up: "[[Nomos/_MOC-nomos]]"
+---
+
 # Catálogo de Habilidades — Nomos
 
 > **status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)**

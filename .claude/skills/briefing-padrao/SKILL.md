@@ -2,6 +2,9 @@
 name: briefing-padrao
 description: Use ao despachar QUALQUER subagente (via Agent tool ou skill `orquestracao-de-subagentes-paralelos`) a partir de um Contrato de Missão. Gera o prompt-de-abertura padronizado lendo o contrato YAML, ramifica por tier (orquestrador Tier-0 vs especialista) e injeta apenas o contexto adjacente ao nó. Evita que subagentes comecem cegos e que o orquestrador cole histórico repetido em cada briefing. Não substitui o Contrato de Missão — é seu derivado de uso.
 tools: [Read, Write, Edit, Glob, Grep]
+tipo: skill
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
 ---
 
 # Persona

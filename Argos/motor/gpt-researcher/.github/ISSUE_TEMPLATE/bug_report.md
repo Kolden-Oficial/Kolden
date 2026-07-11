@@ -5,6 +5,11 @@ title: ''
 labels: ''
 assignees: ''
 
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/.github/ISSUE_TEMPLATE/feature_request|feature_request]]"
 ---
 
 **Describe the bug**

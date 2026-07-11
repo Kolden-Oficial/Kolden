@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/mlops/models/segment-anything/references/advanced-usage|advanced-usage]]"
+---
+
 # Segment Anything Troubleshooting Guide
 
 ## Installation Issues

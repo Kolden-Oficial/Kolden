@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/architecture/_indice|_indice]]"
+---
+
 <!-- Traducción: ES | Original: /docs/en/architecture/contribution-workflow-research.md | Sincronización: 2026-01-26 -->
 
 # Investigación de Flujo de Trabajo de Contribución Externa

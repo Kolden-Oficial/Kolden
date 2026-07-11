@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/productivity/shop/references/direct-api|direct-api]]"
+  - "[[Hermes/optional-skills/productivity/shop/references/legal|legal]]"
+  - "[[Hermes/optional-skills/productivity/shop/references/safety|safety]]"
+---
+
 # Direct Global Catalog MCP
 
 Use this reference when the CLI cannot be installed or when you need to inspect the raw request shape. Product search must use Shopify Global Catalog MCP.

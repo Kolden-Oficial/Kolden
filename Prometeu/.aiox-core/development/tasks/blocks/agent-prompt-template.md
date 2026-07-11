@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/blocks/README|README]]"
+---
+
 # Bloco: Template de Prompt de Agente
 
 > **Block ID:** `agent-prompt-template`

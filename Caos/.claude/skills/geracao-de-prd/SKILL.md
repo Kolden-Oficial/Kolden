@@ -1,6 +1,9 @@
 ---
 name: geracao-de-prd
 description: Transforma um diagnóstico completo (7 faculdades preenchidas) em um PRD de IA formal usando o template modelos/prd-de-ia.md. Use após o diagnóstico de agente estar 100% preenchido e antes de construir qualquer arquivo do agente. O PRD precisa ser aprovado pelo usuário antes da construção.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Geração do PRD de IA

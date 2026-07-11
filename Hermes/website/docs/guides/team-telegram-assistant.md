@@ -2,6 +2,11 @@
 sidebar_position: 4
 title: "Tutorial: Team Telegram Assistant"
 description: "Step-by-step guide to setting up a Telegram bot that your whole team can use for code help, research, system admin, and more"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Set Up a Team Telegram Assistant

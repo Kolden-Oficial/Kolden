@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/gptr/_indice|_indice]]"
+---
+
 # Claude Skill
 
 GPT Researcher is available as a [Claude Skill](https://skills.sh/assafelovic/gpt-researcher/gpt-researcher), allowing you to extend Claude's research capabilities directly within Claude Code and other Claude-powered applications.

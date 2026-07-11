@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/parsing/adaptive|adaptive]]"
+  - "[[Argos/motor/scrapling/docs/parsing/selection|selection]]"
+---
+
 # Parsing main classes
 
 !!! success "Prerequisites"

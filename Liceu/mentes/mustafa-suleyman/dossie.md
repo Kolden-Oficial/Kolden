@@ -19,6 +19,9 @@ squads_que_usam: [caos, prometeu, dedalo, hermes, egide, aglaia]
 # --- federação (preenchido pelo bibliotecario) ---
 persona_canonica: null
 confianca_da_fonte: alta
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Mustafa Suleyman — Dossiê de Mente

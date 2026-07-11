@@ -18,6 +18,9 @@ uncertainty_statement_ref: ../../prd-de-ia.md#frontmatter
 predictions_scorecard: false
 loop_pattern: ReAct
 procedencia_lavratura: "Onda 4 METODO m-20260706 2026-07-09"
+tipo: agente
+squad: Olimpo
+up: "[[_MOC-frota]]"
 ---
 
 # olimpo-chief — agent-def canônico Kolden

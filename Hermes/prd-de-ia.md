@@ -39,6 +39,10 @@ mcp_tools_categoria:
   wrappers_vendor_nous_intocaveis: providers/, plugins/, agent/*.py
 grounding_required_por_tool: ver ferramentas.md
 procedencia_lavratura: "Onda 2 METODO m-20260706 2026-07-06"
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/README|README]]"
 ---
 
 # PRD — Hermes (Camada 2 do sistema Kolden)

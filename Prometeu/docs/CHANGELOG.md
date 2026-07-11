@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # Changelog
 
 > 🌐 **EN** | [PT](./pt/CHANGELOG.md) | [ES](./es/CHANGELOG.md)

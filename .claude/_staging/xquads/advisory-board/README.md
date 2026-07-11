@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Advisory Board
 
 Virtual board of 11 world-class strategic thinkers and leaders.

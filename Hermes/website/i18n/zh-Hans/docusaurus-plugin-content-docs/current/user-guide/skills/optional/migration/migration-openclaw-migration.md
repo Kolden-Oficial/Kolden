@@ -2,6 +2,9 @@
 title: "Openclaw Migration — 将用户的 OpenClaw 自定义配置迁移到 Hermes Agent"
 sidebar_label: "Openclaw Migration"
 description: "将用户的 OpenClaw 自定义配置迁移到 Hermes Agent"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

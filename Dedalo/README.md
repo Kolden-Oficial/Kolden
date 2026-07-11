@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/_origem|_origem]]"
+  - "[[Dedalo/CHANGELOG|CHANGELOG]]"
+---
+
 # Dedalo — Squad de Domínio do Claude Code
 
 O Dedalo é um squad multi-agente especializado em maestria total do Claude Code: hooks, skills, subagents, MCP, plugins, agent teams, customização de settings.json, integração de projetos e consciência de roadmap. Orquestrado por Orion (Tier 0), reúne 7 especialistas que cobrem cada faceta da ferramenta — do design de reflexos via hooks PreToolUse à composição de servidores MCP, passando por orquestração de swarms e engenharia de configuração. O squad também entende a ponte entre as capacidades nativas do Claude Code e a arquitetura do AIOS-core.

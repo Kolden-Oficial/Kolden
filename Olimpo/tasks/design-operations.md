@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Processos centrais identificados e mapeados"
   - "[ ] Os 3 principais gargalos identificados com impacto quantificado"
   - "[ ] Framework de OKR esboçado para o trimestre atual"
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Desenhar Operações

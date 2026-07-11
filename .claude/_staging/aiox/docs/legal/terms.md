@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/legal/license-clarification|license-clarification]]"
+  - "[[.claude/_staging/aiox/docs/legal/privacy|privacy]]"
+---
+
 # Terms of Use
 
 **Last updated:** 2025-12-08

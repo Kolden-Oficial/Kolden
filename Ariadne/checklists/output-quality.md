@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+---
+
 # Checklist de Qualidade — Ariadne (ARIADNE-CL-001)
 
 > Gate de saída de todo entregável do squad. O `ariadne-chief` roda antes de entregar. Maturity ≥ 7.0.

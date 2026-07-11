@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/hardikpandya--stop-slop/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/hardikpandya--stop-slop/seguranca|seguranca]]"
+---
+
 # F3 — Inventário de capacidades · hardikpandya--stop-slop
 
 Rota A — granularidade por técnica. Repo = 1 skill ("stop-slop") decomposta em métodos de edição + 3 referências de dados.

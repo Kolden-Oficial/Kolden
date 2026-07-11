@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Metis
+up: "[[Metis/_MOC-metis]]"
+relacionado:
+  - "[[Metis/README|README]]"
+---
+
 # Origem
 
 Este squad foi importado de um repositório externo e traduzido para PT-BR.

@@ -2,6 +2,9 @@
 title: "Blogwatcher — 通过 blogwatcher-cli 工具监控博客和 RSS/Atom 订阅源"
 sidebar_label: "Blogwatcher"
 description: "通过 blogwatcher-cli 工具监控博客和 RSS/Atom 订阅源"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/README|README]]"
+---
+
 # AIOX Git 工作流指南
 
 > 🌐 [EN](../git-workflow-guide.md) | [PT](../pt/git-workflow-guide.md) | [ES](../es/git-workflow-guide.md)

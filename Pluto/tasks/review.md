@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os itens do checklist avaliados"
   - "[ ] Veredito emitido (APROVAR/REVISAR/REJEITAR)"
   - "[ ] Value equation e matemática de receita avaliadas individualmente"
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+relacionado:
+  - "[[Pluto/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Revisar Saída de Escala de Negócio

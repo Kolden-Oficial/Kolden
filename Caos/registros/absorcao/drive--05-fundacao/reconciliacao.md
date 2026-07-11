@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--05-fundacao/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--05-fundacao/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Reconciliação — Drive "05 | Fundação" (F6.5)
 
 > Protocolo de absorção sem perda. Invariante de fechamento:

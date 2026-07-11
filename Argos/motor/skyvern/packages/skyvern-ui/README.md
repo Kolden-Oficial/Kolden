@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # skyvern-ui
 
 Prebuilt Skyvern frontend assets for `pip install "skyvern[ui]"`.

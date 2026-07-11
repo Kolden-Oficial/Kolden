@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # Checklist de coerência de integração — dois alvos
 
 Fonte: `revfactory--harness@cceac68e` — `skills/harness/references/qa-agent-guide.md` (coreano).

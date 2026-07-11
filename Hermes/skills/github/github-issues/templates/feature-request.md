@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/github/github-issues/templates/bug-report|bug-report]]"
+---
+
 ## Feature Description
 
 <!-- What do you want? -->

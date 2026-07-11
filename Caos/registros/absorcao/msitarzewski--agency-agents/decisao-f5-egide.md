@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F5 — Decisão de aplicação · B01 Égide
 
 > **PARA AQUI.** Aguardando aprovação explícita do Ronan (Caos Art. III, F5 BLOCK). Nenhuma escrita em `C:\Kolden\Egide\` antes do OK.

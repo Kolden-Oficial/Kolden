@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Crawlee + PuppeteerCrawler + JavaScript project
 
 This template is a production ready boilerplate for developing with `PuppeteerCrawler`. Use this to bootstrap your projects using the most up-to-date code.

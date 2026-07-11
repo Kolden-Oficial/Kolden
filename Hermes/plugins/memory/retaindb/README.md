@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # RetainDB Memory Provider
 
 Cloud memory API with hybrid search (Vector + BM25 + Reranking) and 7 memory types.

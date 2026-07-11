@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Skyvern Kubernetes Deployment
 
 ## REMINDER: It is not recommended to deploy Skyvern on the Internet without using some form of authentication! It is recommended to use this deployment for network without exposure to the Internet. 

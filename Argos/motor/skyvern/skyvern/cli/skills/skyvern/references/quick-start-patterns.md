@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/skyvern/skyvern/cli/skills/skyvern/references/_indice|_indice]]"
+---
+
 # Quick Start Patterns
 
 Examples for each tool classification. See the MCP server instructions for the classification table.

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/tests/macos/README|README]]"
+---
+
 # Manual Testing Guide for macOS
 
 **Story 1.10b - macOS Testing & Validation**

@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/fetching/choosing|choosing]]"
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/fetching/dynamic|dynamic]]"
+  - "[[Argos/motor/scrapling/agent-skill/Scrapling-Skill/references/fetching/stealthy|stealthy]]"
+---
+
 # HTTP requests
 
 The `Fetcher` class provides rapid and lightweight HTTP requests using the high-performance `curl_cffi` library with a lot of stealth capabilities.

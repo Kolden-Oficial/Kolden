@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: "CLI 界面"
 description: "掌握 Hermes Agent 终端界面——命令、快捷键、人格设定等"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # CLI 界面

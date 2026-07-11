@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/CHANGELOG|CHANGELOG]]"
+---
+
 # Claude Code Mastery Squad
 
 > Full-spectrum expertise in Claude Code: hooks, skills, subagents, MCP, plugins, agent teams, customization, integration, and roadmap awareness.

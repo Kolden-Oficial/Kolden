@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/tasks/_indice|_indice]]"
+---
+
 # Task: Parallel Task Decomposition for Agent Execution
 
 **Task ID:** parallel-decomposition

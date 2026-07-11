@@ -1,5 +1,8 @@
 ---
 sidebar_position: 15
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # WeCom 回调（自建应用）

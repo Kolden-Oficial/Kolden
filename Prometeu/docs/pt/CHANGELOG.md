@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/README|README]]"
+---
+
 <!-- Traducao: PT-BR | Original: /docs/en/CHANGELOG.md | Sincronizacao: 2026-01-26 -->
 
 # Registro de Alteracoes

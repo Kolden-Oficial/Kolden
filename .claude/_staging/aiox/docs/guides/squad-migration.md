@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/README|README]]"
+---
+
 # Squad Migration Guide
 
 > **EN** | [PT](../pt/guides/squad-migration.md) | [ES](../es/guides/squad-migration.md)

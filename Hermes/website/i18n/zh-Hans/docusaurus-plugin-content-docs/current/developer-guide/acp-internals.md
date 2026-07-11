@@ -2,6 +2,9 @@
 sidebar_position: 2
 title: "ACP 内部机制"
 description: "ACP 适配器的工作原理：生命周期、会话、事件桥接、审批流程与工具渲染"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # ACP 内部机制

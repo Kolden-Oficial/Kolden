@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # aiox-core compatibility package
 
 `aiox-core` is the legacy npm package name for AIOX Core.

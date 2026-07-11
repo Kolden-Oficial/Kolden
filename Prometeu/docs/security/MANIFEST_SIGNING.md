@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/security/PR_SECURITY_CHECKLIST|PR_SECURITY_CHECKLIST]]"
+---
+
 # Manifest Signing Guide
 
 This document explains how to set up and use the cryptographic signing system for AIOX-Core install manifests.

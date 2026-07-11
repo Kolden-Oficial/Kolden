@@ -2,6 +2,9 @@
 title: "Weights And Biases — W&B：记录 ML 实验、sweeps、模型注册表、仪表盘"
 sidebar_label: "Weights And Biases"
 description: "W&B：记录 ML 实验、sweeps、模型注册表、仪表盘"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

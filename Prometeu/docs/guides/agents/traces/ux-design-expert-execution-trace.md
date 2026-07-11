@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # @ux-design-expert (Uma) - Execution Trace
 
 > Traced from source code, not documentation.

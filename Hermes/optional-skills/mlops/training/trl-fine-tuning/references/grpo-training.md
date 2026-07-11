@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/dpo-variants|dpo-variants]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/online-rl|online-rl]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/reward-modeling|reward-modeling]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/sft-training|sft-training]]"
+---
+
 # GRPO (Group Relative Policy Optimization) — Deep Guide
 
 Expert-level patterns, critical insights, and production-ready workflows for fine-tuning language models with custom reward functions using TRL's `GRPOTrainer`. This is the deep reference for the GRPO workflow summarized in the main skill.

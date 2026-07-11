@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/skills/ciclo-de-fase-goal-backward/references/leis-de-ferro|leis-de-ferro]]"
+---
+
 # Padrões de Verificação — existência ≠ implementação
 
 Material de apoio da etapa VERIFY. Princípio central: **um arquivo existir não significa que

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/data/_indice|_indice]]"
+---
+
 # ROI Calculation Guide
 
 **Purpose:** How to calculate real cost savings from design system

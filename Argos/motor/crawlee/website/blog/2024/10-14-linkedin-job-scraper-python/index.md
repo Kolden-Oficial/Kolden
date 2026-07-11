@@ -4,6 +4,9 @@ title: 'How to create a LinkedIn job scraper in Python with Crawlee'
 description: 'Learn how to scrape LinkedIn jobs and save it into a CSV file using Python.'
 image: ./img/linkedin-job-scraper.webp
 authors: [ArindamM]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # How to create a LinkedIn job scraper in Python with Crawlee

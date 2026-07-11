@@ -3,6 +3,11 @@ tools:
   - clickup  # Required for ClickUp synchronization
 checklists:
   - po-master-checklist.md
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # sync-story-to-clickup

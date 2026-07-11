@@ -2,6 +2,11 @@
 sidebar_position: 8
 title: "Memory Provider Plugins"
 description: "How to build a memory provider plugin for Hermes Agent"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Building a Memory Provider Plugin

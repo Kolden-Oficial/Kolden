@@ -9,6 +9,9 @@ description: >
   analista-de-eficiencia. Gatilhos: "qual KPI acompanhar", "esse processo está eficiente?", "temos
   capacidade para X?", "relatório de status", "onde está o desperdício", "como melhorar isso". REGRA DURA:
   melhoria sem métrica de ganho é opinião. Instrumentação/estatística profunda → handoff ao Metis.
+tipo: skill
+area: Ananke
+up: "[[Ananke/_MOC-ananke]]"
 ---
 
 # Métricas e Eficiência Operacional

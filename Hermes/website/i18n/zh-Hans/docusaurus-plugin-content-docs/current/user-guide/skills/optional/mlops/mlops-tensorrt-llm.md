@@ -2,6 +2,9 @@
 title: "Tensorrt Llm — 使用 NVIDIA TensorRT 优化 LLM 推理以实现最大吞吐量和最低延迟"
 sidebar_label: "Tensorrt Llm"
 description: "使用 NVIDIA TensorRT 优化 LLM 推理以实现最大吞吐量和最低延迟"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

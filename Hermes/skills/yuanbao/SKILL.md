@@ -7,6 +7,9 @@ metadata:
   hermes:
     tags: [yuanbao, mention, at, group, members, 元宝, 派, 艾特]
     related_skills: []
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Yuanbao Group Interaction

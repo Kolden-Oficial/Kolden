@@ -25,6 +25,11 @@ Checklist:
   - "[ ] 8-dimension health scorecard completed"
   - "[ ] All campaigns categorized by performance tier"
   - "[ ] 5 prioritized recommendations with projected impact"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/traffic-masters/tasks/_indice|_indice]]"
 ---
 
 # Task: Audit Ad Account

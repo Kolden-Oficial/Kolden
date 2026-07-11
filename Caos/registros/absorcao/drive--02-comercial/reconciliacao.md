@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--02-comercial/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--02-comercial/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Reconciliação — Área "02 | Comercial" (Drive)
 
 > F6.5. Fecha a aritmética da absorção. 2026-06-25. Read-only no Drive (nada movido/alterado).

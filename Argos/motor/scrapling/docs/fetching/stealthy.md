@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/fetching/choosing|choosing]]"
+  - "[[Argos/motor/scrapling/docs/fetching/dynamic|dynamic]]"
+  - "[[Argos/motor/scrapling/docs/fetching/static|static]]"
+---
+
 # Fetching dynamic websites with hard protections
 
 Here, we will discuss the `StealthyFetcher` class. This class is very similar to the [DynamicFetcher](dynamic.md#introduction) class, including the browsers, the automation, and the use of [Playwright's API](https://playwright.dev/python/docs/intro). The main difference is that this class provides advanced anti-bot protection bypass capabilities; most of them are handled automatically under the hood, and the rest is up to you to enable.

@@ -22,6 +22,11 @@ Checklist:
   - "[ ] Necessidade de zona cinza decidida (e autorização pedida se aplicável)"
   - "[ ] Resposta rápida fornecida"
   - "[ ] Rota executada ou resposta direta dada"
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar — Argos

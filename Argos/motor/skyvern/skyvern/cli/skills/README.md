@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Skyvern Skills Package
 
 AI-powered browser automation skills for coding agents. Bundled with `pip install skyvern`.

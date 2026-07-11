@@ -1,6 +1,9 @@
 ---
 name: orquestracao-de-subagentes-paralelos
 description: Use ao decompor um trabalho grande em subagentes — quando despachar vários agentes em paralelo (um por domínio independente), rodar um implementador fresco por tarefa com revisão, ou poupar o contexto do orquestrador passando artefatos como arquivos. Aciona em "roda isso em paralelo", "fan-out de agentes", "um agente por área", "divide entre subagentes". Traz os CONTRATOS de saída estritos (locator/builder/revisor) e o critério de QUANDO (não) paralelizar. NÃO use para uma tarefa única e sequencial que cabe num só contexto.
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Orquestração de Subagentes Paralelos

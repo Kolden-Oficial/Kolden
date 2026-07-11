@@ -16,6 +16,9 @@ description: >
   "schema depreciado", "rich results", "structured data check". NÃO substitui
   o `otimizacao-on-page-por-intencao` (auditoria on-page) — aqui o foco é o
   markup por si só.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Engenharia de Schema Executável (geração + validação + tipos depreciados)

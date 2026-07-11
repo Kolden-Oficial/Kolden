@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Gerenciador SYNAPSE
 
 Roteador de comandos CRUD para gerenciar domains, rules e star-commands do SYNAPSE.

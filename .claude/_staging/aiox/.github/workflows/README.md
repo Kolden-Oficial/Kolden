@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # GitHub Actions Workflows
 
 This directory contains automated workflows for the AIOX project.

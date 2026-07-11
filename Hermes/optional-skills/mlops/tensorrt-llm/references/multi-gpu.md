@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/tensorrt-llm/references/optimization|optimization]]"
+  - "[[Hermes/optional-skills/mlops/tensorrt-llm/references/serving|serving]]"
+---
+
 # Multi-GPU Deployment Guide
 
 Comprehensive guide to scaling TensorRT-LLM across multiple GPUs and nodes.

@@ -13,6 +13,9 @@ heranca_historica: [aswath-damodaran-nyu, michael-mauboussin]
 tags: [dcf, valuation, fcff, wacc, terminal-value, npv, sensibilidade]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G7)
 status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)
+tipo: skill
+area: Pactolo
+up: "[[Pactolo/_MOC-pactolo]]"
 ---
 
 > _Adaptado de github.com/msitarzewski/agency-agents@a597cb6 (G7, MIT)._

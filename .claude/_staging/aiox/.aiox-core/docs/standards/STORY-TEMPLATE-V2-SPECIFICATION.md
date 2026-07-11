@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/docs/standards/_indice|_indice]]"
+---
+
 # Story Template v2.0 Specification
 
 **Version:** 2.0.0

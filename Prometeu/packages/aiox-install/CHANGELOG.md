@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/packages/aiox-install/README|README]]"
+---
+
 # Changelog - @aiox-squads/aiox-install
 
 All notable changes to this package will be documented in this file.

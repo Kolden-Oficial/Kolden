@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/architecture/_indice|_indice]]"
+---
+
 # AIOX Architecture Documentation Index
 
 > 🌐 [EN](../../architecture/ARCHITECTURE-INDEX.md) | **PT** | [ES](../../es/architecture/ARCHITECTURE-INDEX.md)

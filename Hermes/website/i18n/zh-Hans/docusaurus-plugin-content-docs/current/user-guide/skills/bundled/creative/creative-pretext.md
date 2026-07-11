@@ -2,6 +2,9 @@
 title: "Pretext"
 sidebar_label: "Pretext"
 description: "适用于使用 @chenglou/pretext 构建创意浏览器演示 —— 无 DOM 文本布局，用于 ASCII 艺术、排版绕障流动、文字即几何游戏、动态排版及文字驱动的生成艺术。"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

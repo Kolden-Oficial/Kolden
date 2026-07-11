@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All variants specified (size, intent, state, layout, content)"
   - "[ ] Design tokens mapped with fallback chain"
   - "[ ] Accessibility requirements complete (ARIA, keyboard, screen reader)"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/design-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Component Specification

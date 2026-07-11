@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/examples|examples]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/kanban-setup|kanban-setup]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/monitoring|monitoring]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/role-archetypes|role-archetypes]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/tool-matrix|tool-matrix]]"
+---
+
 # Intake — Discovery Question Banks
 
 The discovery process is **adaptive**. Always start with three baseline

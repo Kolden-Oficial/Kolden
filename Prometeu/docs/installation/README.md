@@ -1,3 +1,16 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/installation/faq|faq]]"
+  - "[[Prometeu/docs/installation/linux|linux]]"
+  - "[[Prometeu/docs/installation/macos|macos]]"
+  - "[[Prometeu/docs/installation/troubleshooting|troubleshooting]]"
+  - "[[Prometeu/docs/installation/v4-quick-start|v4-quick-start]]"
+  - "[[Prometeu/docs/installation/windows|windows]]"
+---
+
 # Synkra AIOX Installation Documentation
 
 > 🌐 **EN** | [PT](../pt/installation/README.md) | [ES](../es/installation/README.md)

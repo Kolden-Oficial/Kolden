@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Auditoria de Configuração do Tailwind v4 e Saúde dos Utilitários
 
 > Task ID: brad-audit-tailwind-config  

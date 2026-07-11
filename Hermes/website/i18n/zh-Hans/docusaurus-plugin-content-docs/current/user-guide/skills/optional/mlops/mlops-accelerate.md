@@ -2,6 +2,9 @@
 title: "Huggingface Accelerate — 最简分布式训练 API"
 sidebar_label: "Huggingface Accelerate"
 description: "最简分布式训练 API"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

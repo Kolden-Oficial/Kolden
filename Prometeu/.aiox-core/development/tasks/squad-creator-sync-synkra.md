@@ -23,6 +23,11 @@ Checklist:
   - "[x] Calcular checksum"
   - "[x] Enviar para Synkra API"
   - "[x] Exibir URL do marketplace"
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # *sync-squad-synkra

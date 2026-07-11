@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/README|README]]"
+---
+
 # Origem
 
 | Campo | Valor |

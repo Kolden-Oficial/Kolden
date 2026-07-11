@@ -2,6 +2,9 @@
 title: "Huggingface Hub — HuggingFace hf CLI：搜索/下载/上传模型、数据集"
 sidebar_label: "Huggingface Hub"
 description: "HuggingFace hf CLI：搜索/下载/上传模型、数据集"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

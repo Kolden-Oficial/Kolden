@@ -10,6 +10,11 @@ metadata:
     tags: [article-illustration, creative, image-generation]
     category: creative
     homepage: https://github.com/JimLiu/baoyu-skills#baoyu-article-illustrator
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/PORT_NOTES|PORT_NOTES]]"
 ---
 
 # Article Illustrator

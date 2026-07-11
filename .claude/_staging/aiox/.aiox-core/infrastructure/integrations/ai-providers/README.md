@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # AI Providers
 
 Multi-provider AI integration for AIOX. Supports Claude Code, Gemini CLI and OpenAI-compatible HTTP APIs with automatic fallback and task-based routing.

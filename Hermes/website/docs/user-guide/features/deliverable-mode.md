@@ -2,6 +2,11 @@
 title: Deliverable Mode (Artifacts in Chat)
 sidebar_label: Deliverable Mode
 description: How the agent ships generated charts, PDFs, spreadsheets, and other files as native attachments in messaging platforms.
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Deliverable Mode

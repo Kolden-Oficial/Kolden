@@ -2,6 +2,11 @@
 # Nenhum checklist necessário - task de processamento de documento com validação embutida via ferramenta md-tree
 tools:
   - github-cli
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Task de Sharding de Documento

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/.plans/openai-api-server|openai-api-server]]"
+---
+
 # Streaming LLM Response Support for Hermes Agent
 
 ## Overview

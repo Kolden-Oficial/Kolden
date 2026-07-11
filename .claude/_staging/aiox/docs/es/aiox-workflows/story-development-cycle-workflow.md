@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/aiox-workflows/README|README]]"
+---
+
 # Story Development Cycle Workflow
 
 > [PT](../../aiox-workflows/story-development-cycle-workflow.md) | [EN](../../en/aiox-workflows/story-development-cycle-workflow.md) | **ES**

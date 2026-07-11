@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/touchdesigner-mcp/references/_indice|_indice]]"
+---
+
 # TouchDesigner Network Patterns
 
 Complete network recipes for common creative coding tasks. Each pattern shows the operator chain, MCP tool calls to build it, and key parameter settings.

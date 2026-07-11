@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/.claude/skills/de-slop/references/calibracao-de-voz|calibracao-de-voz]]"
+  - "[[Caliope/.claude/skills/de-slop/references/guia-falso-positivo|guia-falso-positivo]]"
+  - "[[Caliope/.claude/skills/de-slop/references/padroes-anti-ia|padroes-anti-ia]]"
+---
+
 # Checklist e scorecard de pré-entrega
 
 Dois instrumentos de controle de qualidade antes de devolver a reescrita: os **Quick

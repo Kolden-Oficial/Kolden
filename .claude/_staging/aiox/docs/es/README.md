@@ -1,3 +1,34 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/agent-reference-guide|agent-reference-guide]]"
+  - "[[.claude/_staging/aiox/docs/es/aiox-nomenclature-specification|aiox-nomenclature-specification]]"
+  - "[[.claude/_staging/aiox/docs/es/CHANGELOG|CHANGELOG]]"
+  - "[[.claude/_staging/aiox/docs/es/community|community]]"
+  - "[[.claude/_staging/aiox/docs/es/core-architecture|core-architecture]]"
+  - "[[.claude/_staging/aiox/docs/es/docker-mcp-setup|docker-mcp-setup]]"
+  - "[[.claude/_staging/aiox/docs/es/DOCUMENTATION-ROADMAP|DOCUMENTATION-ROADMAP]]"
+  - "[[.claude/_staging/aiox/docs/es/ENVIRONMENT|ENVIRONMENT]]"
+  - "[[.claude/_staging/aiox/docs/es/FEATURE_PROCESS|FEATURE_PROCESS]]"
+  - "[[.claude/_staging/aiox/docs/es/getting-started|getting-started]]"
+  - "[[.claude/_staging/aiox/docs/es/git-workflow-guide|git-workflow-guide]]"
+  - "[[.claude/_staging/aiox/docs/es/GUIDING-PRINCIPLES|GUIDING-PRINCIPLES]]"
+  - "[[.claude/_staging/aiox/docs/es/how-to-contribute-with-pull-requests|how-to-contribute-with-pull-requests]]"
+  - "[[.claude/_staging/aiox/docs/es/ide-integration|ide-integration]]"
+  - "[[.claude/_staging/aiox/docs/es/meta-agent-commands|meta-agent-commands]]"
+  - "[[.claude/_staging/aiox/docs/es/migration-guide|migration-guide]]"
+  - "[[.claude/_staging/aiox/docs/es/npx-install|npx-install]]"
+  - "[[.claude/_staging/aiox/docs/es/performance-tuning-guide|performance-tuning-guide]]"
+  - "[[.claude/_staging/aiox/docs/es/roadmap|roadmap]]"
+  - "[[.claude/_staging/aiox/docs/es/security|security]]"
+  - "[[.claude/_staging/aiox/docs/es/security-best-practices|security-best-practices]]"
+  - "[[.claude/_staging/aiox/docs/es/troubleshooting|troubleshooting]]"
+  - "[[.claude/_staging/aiox/docs/es/uninstallation|uninstallation]]"
+  - "[[.claude/_staging/aiox/docs/es/versioning-and-releases|versioning-and-releases]]"
+---
+
 <!--
   Traducción: ES
   Original: /docs/README.md

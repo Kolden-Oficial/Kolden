@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/prd/afrodite|afrodite]]"
+---
+
 # PRD de IA — Plutos (CFO)
 
 | Campo | Valor |

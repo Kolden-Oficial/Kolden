@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All 8 criteria scored with justification"
   - "[ ] Fatal flaw identified with rewrite examples"
   - "[ ] Prioritized fix list with specialist routing"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Critique Copy

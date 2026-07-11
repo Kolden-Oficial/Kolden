@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # Configuration Migration Guide
 
 Migrate from monolithic `core-config.yaml` to the layered configuration hierarchy.

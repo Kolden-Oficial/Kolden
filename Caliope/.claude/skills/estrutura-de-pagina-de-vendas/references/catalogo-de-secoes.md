@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+---
+
 # Catálogo de seções e modelos de página
 
 Tipos de seção, dicas de escrita por bloco e modelos de página prontos.

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/agents/_indice|_indice]]"
+---
+
 # Sistema de Criacao e Gerenciamento de Squads AIOX
 
 > **Versao:** 1.0.0

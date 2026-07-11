@@ -2,6 +2,13 @@
 title: "Songsee — Audio spectrograms/features (mel, chroma, MFCC) via CLI"
 sidebar_label: "Songsee"
 description: "Audio spectrograms/features (mel, chroma, MFCC) via CLI"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/media/media-gif-search|media-gif-search]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/media/media-heartmula|media-heartmula]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/media/media-youtube-content|media-youtube-content]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/aiox-workflows/README|README]]"
+---
+
 # Brownfield Discovery Workflow
 
 > [PT](../../aiox-workflows/brownfield-discovery-workflow.md) | [EN](../../en/aiox-workflows/brownfield-discovery-workflow.md) | **ES**

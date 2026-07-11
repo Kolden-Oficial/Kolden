@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+---
+
 # Catálogo de Habilidades — Liceu
 
 Índice das habilidades do squad Liceu (Biblioteca de Mentes). Habilidades próprias vivem em

@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/registros/metodo-onda-3/3.2-agents-internos/diff-cirurgico|diff-cirurgico]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.2-agents-internos/sumario-executivo|sumario-executivo]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.2-agents-internos/verificacao-dike|verificacao-dike]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.2-agents-internos/verificacao-dike-delta|verificacao-dike-delta]]"
+---
+
 # Matriz de Conformidade — 12 aiox-agents internos × METODO Kolden v1.0 (Sub-onda 3.2)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (Onda 3 · Grupo A · squad-alvo Prometeu · Sub-onda 3.2 = 12 aiox-agents internos + refactor MEMORY canônico + mapeamento cross-camada).

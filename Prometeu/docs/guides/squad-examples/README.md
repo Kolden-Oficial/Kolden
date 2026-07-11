@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Squad Examples
 
 > **EN** | [PT](../../pt/guides/squad-examples/README.md) | [ES](../../es/guides/squad-examples/README.md)

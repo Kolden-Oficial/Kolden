@@ -10,6 +10,9 @@ description: >-
 domain: ciberseguranca
 subdomain: container-security
 tags: [container, docker, kubernetes, k8s, rbac, pod-security, falco, trivy, calico, cis-benchmark, runtime]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Segurança de Containers e Kubernetes

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/commands/synapse/tasks/_indice|_indice]]"
+---
+
 # Criar Comando
 
 Cria um novo bloco de star-command no arquivo de domain de comandos do SYNAPSE.

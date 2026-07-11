@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # KOLDEN — Runtime model-agnostic (via OpenRouter)
 
 > **Status:** esboço de arquitetura (sem código ainda)

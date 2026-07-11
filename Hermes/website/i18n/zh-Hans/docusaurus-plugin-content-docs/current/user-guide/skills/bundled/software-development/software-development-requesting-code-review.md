@@ -2,6 +2,9 @@
 title: "请求代码审查 — 提交前审查：安全扫描、质量门控、自动修复"
 sidebar_label: "请求代码审查"
 description: "提交前审查：安全扫描、质量门控、自动修复"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

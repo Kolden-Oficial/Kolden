@@ -3,6 +3,9 @@ slug: crawlee-v3-16
 title: "Crawlee v3.16: AI-Powered Crawling with StagehandCrawler"
 description: "Crawlee v3.16 introduces StagehandCrawler for AI-powered browser automation, async iterators for Dataset and KeyValueStore, sitemap discovery, and improved Cloudflare handling."
 authors: [B4nan]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 Crawlee v3.16 is here, and the headline feature is the new `StagehandCrawler` — an AI-powered crawler that lets you interact with web pages using natural language instead of CSS selectors. On top of that, we've added async iterators for `Dataset` and `KeyValueStore`, a new `discoverValidSitemaps` utility, and made `handleCloudflareChallenge` more configurable.

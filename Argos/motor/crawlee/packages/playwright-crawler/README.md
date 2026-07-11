@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/packages/playwright-crawler/CHANGELOG|CHANGELOG]]"
+---
+
 # `@crawlee/playwright`
 
 Provides a simple framework for parallel crawling of web pages using headless Chromium, Firefox and Webkit browsers with [Playwright](https://github.com/microsoft/playwright). The URLs to crawl are fed either from a static list of URLs or from a dynamic queue of URLs enabling recursive crawling of websites.

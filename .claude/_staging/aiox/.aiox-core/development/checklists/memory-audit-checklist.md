@@ -1,3 +1,14 @@
+---
+tipo: checklist
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/checklists/agent-quality-gate|agent-quality-gate]]"
+  - "[[.claude/_staging/aiox/.aiox-core/development/checklists/brownfield-compatibility-checklist|brownfield-compatibility-checklist]]"
+  - "[[.claude/_staging/aiox/.aiox-core/development/checklists/issue-triage-checklist|issue-triage-checklist]]"
+  - "[[.claude/_staging/aiox/.aiox-core/development/checklists/self-critique-checklist|self-critique-checklist]]"
+---
+
 # Memory Audit Checklist
 
 Periodic checklist for maintaining agent MEMORY.md hygiene across all 10 agents.

@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/hesreallyhim--awesome-claude-code/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/hesreallyhim--awesome-claude-code/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades — hesreallyhim--awesome-claude-code
 
 - **slug:** hesreallyhim--awesome-claude-code

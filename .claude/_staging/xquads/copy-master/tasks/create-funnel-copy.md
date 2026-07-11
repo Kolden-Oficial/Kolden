@@ -26,6 +26,11 @@ Checklist:
   - "[ ] All page and email copy written per format standards"
   - "[ ] Funnel math calculated with expected conversion rates"
   - "[ ] Psychological Layer applied (Cialdini/Warren principles tagged)"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-master/tasks/_indice|_indice]]"
 ---
 
 # Task: Create Funnel Copy

@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 <!-- Traduccion: ES | Original: /docs/en/specifications/docs-agent-technical-specification.md | Sincronizacion: 2026-01-26 -->
 
 # Agente @docs (Ajax) - Especificacion Tecnica

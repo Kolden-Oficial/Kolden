@@ -2,6 +2,11 @@
 sidebar_position: 6
 title: "Signal"
 description: "Set up Hermes Agent as a Signal messenger bot via signal-cli daemon"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Signal Setup

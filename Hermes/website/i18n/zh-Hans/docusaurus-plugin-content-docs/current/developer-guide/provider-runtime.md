@@ -2,6 +2,9 @@
 sidebar_position: 4
 title: "Provider 运行时解析"
 description: "Hermes 如何在运行时解析 provider、凭据、API 模式及辅助模型"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Provider 运行时解析

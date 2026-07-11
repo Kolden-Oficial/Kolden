@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/tones/_indice|_indice]]"
+---
+
 # romantic
 
 浪漫基调 - Soft, beautiful, emotionally delicate

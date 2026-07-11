@@ -2,6 +2,9 @@
 title: "Heartmula — HeartMuLa：基于歌词与标签的类 Suno 歌曲生成"
 sidebar_label: "Heartmula"
 description: "HeartMuLa：基于歌词与标签的类 Suno 歌曲生成"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

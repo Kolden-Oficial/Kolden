@@ -1,6 +1,9 @@
 ---
 title: 电脑操控
 sidebar_position: 16
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 电脑操控（macOS）

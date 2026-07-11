@@ -2,6 +2,9 @@
 sidebar_position: 3
 title: "Agent Loop 内部机制"
 description: "AIAgent 执行流程、API 模式、工具、回调及回退行为的详细说明"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Agent Loop 内部机制

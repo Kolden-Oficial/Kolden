@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All checklist items evaluated and scored"
   - "[ ] Verdict rendered (APPROVE/REVISE/REJECT)"
   - "[ ] Authorization, scope, and sensitive data leakage verified"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/cybersecurity/tasks/_indice|_indice]]"
 ---
 
 # Task: Review Security Output

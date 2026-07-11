@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Veredito emitido (APROVAR/REVISAR/REJEITAR)"
   - "[ ] Feedback específico fornecido para qualquer falha"
   - "[ ] Checkpoint de psicologia da persuasão aprovado"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Revisar Saída de Copywriting

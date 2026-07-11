@@ -1,3 +1,23 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/AGENTS|AGENTS]]"
+  - "[[Hermes/camada-2-contrato|camada-2-contrato]]"
+  - "[[Hermes/CLAUDE|CLAUDE]]"
+  - "[[Hermes/constitution|constitution]]"
+  - "[[Hermes/CONTRIBUTING|CONTRIBUTING]]"
+  - "[[Hermes/ferramentas|ferramentas]]"
+  - "[[Hermes/hermes-already-has-routines|hermes-already-has-routines]]"
+  - "[[Hermes/integracao-squads|integracao-squads]]"
+  - "[[Hermes/prd-de-ia|prd-de-ia]]"
+  - "[[Hermes/README.ur-pk|README.ur-pk]]"
+  - "[[Hermes/README.zh-CN|README.zh-CN]]"
+  - "[[Hermes/roteiro-de-teste|roteiro-de-teste]]"
+  - "[[Hermes/SECURITY|SECURITY]]"
+---
+
 <p align="center">
   <img src="assets/banner.png" alt="Hermes Agent" width="100%">
 </p>

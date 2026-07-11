@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F5 — Decisão · B12 = squad NOVO GIS
 
 > **Status:** plano F5 — aguarda aprovação para Ritual do Caos completo

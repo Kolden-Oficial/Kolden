@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/skills/topologias-de-time/references/catalogo-de-topologias|catalogo-de-topologias]]"
+---
+
 # Orquestradores: team / sub-agent / híbrido + protocolo de passagem
 
 Fonte: `revfactory--harness@cceac68e` — `skills/harness/references/orchestrator-template.md` e

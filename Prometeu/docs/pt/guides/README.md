@@ -1,3 +1,34 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/guides/ade-guide|ade-guide]]"
+  - "[[Prometeu/docs/pt/guides/agent-selection-guide|agent-selection-guide]]"
+  - "[[Prometeu/docs/pt/guides/api-reference|api-reference]]"
+  - "[[Prometeu/docs/pt/guides/build-recovery-guide|build-recovery-guide]]"
+  - "[[Prometeu/docs/pt/guides/contextual-greeting-system-guide|contextual-greeting-system-guide]]"
+  - "[[Prometeu/docs/pt/guides/contributing-squads|contributing-squads]]"
+  - "[[Prometeu/docs/pt/guides/development-setup|development-setup]]"
+  - "[[Prometeu/docs/pt/guides/ide-sync-guide|ide-sync-guide]]"
+  - "[[Prometeu/docs/pt/guides/installation-troubleshooting|installation-troubleshooting]]"
+  - "[[Prometeu/docs/pt/guides/llm-routing|llm-routing]]"
+  - "[[Prometeu/docs/pt/guides/mcp-global-setup|mcp-global-setup]]"
+  - "[[Prometeu/docs/pt/guides/permission-modes|permission-modes]]"
+  - "[[Prometeu/docs/pt/guides/project-status-feature|project-status-feature]]"
+  - "[[Prometeu/docs/pt/guides/quality-dashboard|quality-dashboard]]"
+  - "[[Prometeu/docs/pt/guides/quality-gates|quality-gates]]"
+  - "[[Prometeu/docs/pt/guides/security-hardening|security-hardening]]"
+  - "[[Prometeu/docs/pt/guides/service-discovery|service-discovery]]"
+  - "[[Prometeu/docs/pt/guides/squad-migration|squad-migration]]"
+  - "[[Prometeu/docs/pt/guides/squads-guide|squads-guide]]"
+  - "[[Prometeu/docs/pt/guides/squads-overview|squads-overview]]"
+  - "[[Prometeu/docs/pt/guides/template-engine-v2|template-engine-v2]]"
+  - "[[Prometeu/docs/pt/guides/testing-guide|testing-guide]]"
+  - "[[Prometeu/docs/pt/guides/user-guide|user-guide]]"
+  - "[[Prometeu/docs/pt/guides/workflows-guide|workflows-guide]]"
+---
+
 <!--
   Tradução: PT-BR
   Original: /docs/en/guides/README.md

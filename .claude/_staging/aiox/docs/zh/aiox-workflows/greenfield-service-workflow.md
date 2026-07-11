@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/aiox-workflows/README|README]]"
+---
+
 # 工作流: 绿地服务/API 开发
 
 **文档:** GREENFIELD-SERVICE-WORKFLOW.md

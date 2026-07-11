@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Hyperliquid, Blockchain, Crypto, Trading, Perpetuals, Spot, DeFi]
     related_skills: []
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Hyperliquid Skill

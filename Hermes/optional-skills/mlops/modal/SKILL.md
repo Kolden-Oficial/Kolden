@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Infrastructure, Serverless, GPU, Cloud, Deployment, Modal]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Modal Serverless GPU

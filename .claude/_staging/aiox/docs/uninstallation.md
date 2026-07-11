@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/README|README]]"
+---
+
 # Uninstallation Guide
 
 > 🌐 **EN** | [PT](./pt/uninstallation.md) | [ES](./es/uninstallation.md)

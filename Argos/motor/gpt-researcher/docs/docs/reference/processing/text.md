@@ -1,6 +1,11 @@
 ---
 sidebar_label: text
 title: processing.text
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/reference/processing/html|html]]"
 ---
 
 Text processing functions

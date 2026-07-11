@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # Synkra AIOX Troubleshooting Guide
 
 > 🌐 **EN** | [PT](./pt/troubleshooting.md) | [ES](./es/troubleshooting.md)

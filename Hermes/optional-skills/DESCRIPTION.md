@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Optional Skills
 
 Official skills maintained by Nous Research that are **not activated by default**.

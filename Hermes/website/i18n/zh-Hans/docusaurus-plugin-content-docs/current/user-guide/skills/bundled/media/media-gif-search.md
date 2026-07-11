@@ -2,6 +2,9 @@
 title: "Gif Search — 通过 curl + jq 搜索/下载 Tenor GIF"
 sidebar_label: "Gif Search"
 description: "通过 curl + jq 搜索/下载 Tenor GIF"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

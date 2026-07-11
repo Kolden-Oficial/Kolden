@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/research/research-paper-writing/templates/acl/formatting|formatting]]"
+---
+
 # *ACL Paper Styles
 
 This directory contains the latest LaTeX templates for *ACL conferences.

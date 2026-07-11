@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All checklist items evaluated"
   - "[ ] Verdict rendered (APPROVE/REVISE/REJECT)"
   - "[ ] Budget allocation and targeting individually assessed"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/traffic-masters/tasks/_indice|_indice]]"
 ---
 
 # Task: Review Paid Traffic Output

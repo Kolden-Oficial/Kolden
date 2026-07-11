@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/tasks/_indice|_indice]]"
+---
+
 # Tarefa: Análise de CRO de Página
 
 **ID:** ARIADNE-007 · **Versão:** 1.0.0 · **Comando:** `*cro` · **Agente:** analista-de-cro

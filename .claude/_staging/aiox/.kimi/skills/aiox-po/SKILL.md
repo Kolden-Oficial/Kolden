@@ -1,6 +1,9 @@
 ---
 name: "aiox-po"
 description: "Activate the AIOX Product Owner agent (Pax). Use for backlog management, story refinement, acceptance criteria, sprint planning, and prioritization decisions Trigger when user asks to po, or says 'activate po', 'switch to po', '@po'."
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # 🎯 @po — Pax (Balancer) | Product Owner

@@ -17,6 +17,9 @@ cross_links:
   - pluto (modelo de negócio)
   - aglaia (cultura/marca)
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G19, G20, G21)
+tipo: skill
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
 ---
 
 # Pesquisa de Tendência e Sinais Fracos

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Bootstrap da Biblioteca de Componentes Shadcn/Radix
 
 > Task ID: atlas-bootstrap-shadcn  

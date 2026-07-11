@@ -2,6 +2,11 @@
 sidebar_position: 1
 title: "CLI Commands Reference"
 description: "Authoritative reference for Hermes terminal commands and command families"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/reference/_indice|_indice]]"
 ---
 
 # CLI Commands Reference

@@ -11,6 +11,9 @@ metadata:
     tags: [ASCII, Art, Banners, Creative, Unicode, Text-Art, pyfiglet, figlet, cowsay, boxes]
     related_skills: [excalidraw]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # ASCII Art Skill

@@ -1,6 +1,12 @@
 ---
 name: Feature request
 about: Suggest an idea for an enhancement or new feature
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapy/.github/ISSUE_TEMPLATE/bug_report|bug_report]]"
+  - "[[Argos/motor/scrapy/.github/ISSUE_TEMPLATE/question|question]]"
 ---
 
 <!--

@@ -1,5 +1,8 @@
 ---
 sidebar_position: 3
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Profile 分发：共享完整 Agent

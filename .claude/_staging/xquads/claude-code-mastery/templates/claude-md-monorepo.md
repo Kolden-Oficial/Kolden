@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/claude-code-mastery/templates/claude-md-fullstack|claude-md-fullstack]]"
+  - "[[.claude/_staging/xquads/claude-code-mastery/templates/claude-md-library|claude-md-library]]"
+  - "[[.claude/_staging/xquads/claude-code-mastery/templates/claude-md-microservices|claude-md-microservices]]"
+  - "[[.claude/_staging/xquads/claude-code-mastery/templates/claude-md-mobile|claude-md-mobile]]"
+---
+
 # CLAUDE.md — Monorepo Project
 
 ## Project Overview

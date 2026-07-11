@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/registros/metodo-onda-3/3.3-skills-e-costura/_indice|_indice]]"
+---
+
 # Sumário Executivo — Sub-onda 3.3 do METODO Kolden (Prometeu · costura final)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (Onda 3, Grupo A, squad-alvo Prometeu, Sub-onda 3.3 = 55 skills + PRM-3.2-019 + smoke + costura + Dike delta + emenda METODO opcional).

@@ -1,6 +1,9 @@
 ---
 name: direcao-de-brand-kit-visual
 description: Use quando o pedido for gerar um DECK/BOARD/GUIDELINES visual de identidade de marca — brand-kit overview, board 3x3 de sistema, deck de apresentação de identidade, moodboard estruturado com nivel de estúdio de identidade, canvas "museum-quality" para juntar logo + tipografia + paleta + aplicações num único artefato imagético. Gatilhos "brand kit", "brand board", "brand guidelines em imagem", "deck de identidade", "canvas de marca", "grid de identidade", "moodboard premium", "board 3x3 de marca", "identidade visual pra apresentar". NÃO use para engenharia de prompt de imagem solta (isso é engenharia-de-prompt-de-imagem — camada mais baixa, uma imagem por vez). NÃO use para narrativa multimídia com arco temporal (isso é narrativa-visual-de-marca). Esta habilidade opera na camada de COMPOSIÇÃO DE BOARD — o artefato é um deck ou uma imagem-canvas que apresenta a marca INTEIRA de uma vez.
+tipo: skill
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
 ---
 
 # Direção de brand-kit visual

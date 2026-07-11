@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # pre-push-quality-gate.md
 
 **Task**: Validação do Quality Gate de Pré-Push (Agnóstica de Repositório)

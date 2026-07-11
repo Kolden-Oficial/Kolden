@@ -7,6 +7,9 @@ metadata:
   hermes:
     tags: [orquestracao, roteamento, squads, kolden, peitho]
     related_skills: []
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Roteamento de Squad (Hermes como orquestrador máximo)

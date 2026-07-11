@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/alirezarezvani--claude-skills/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/alirezarezvani--claude-skills/seguranca|seguranca]]"
+---
+
 # Mapa de decisão (F4) — alirezarezvani--claude-skills
 
 - **slug:** alirezarezvani--claude-skills · **sha:** 4a3c05b69e64f4925f7fc65c88890f614f79caf0 · **rota:** A

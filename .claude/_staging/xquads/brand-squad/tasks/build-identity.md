@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Visual identity system defined (colors, typography, logo)"
   - "[ ] Verbal identity system defined (voice, messaging, story)"
   - "[ ] Brand guidelines summary compiled with application examples"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/brand-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Build Brand Identity

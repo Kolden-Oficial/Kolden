@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/perplexityai--modelcontextprotocol/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/perplexityai--modelcontextprotocol/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática (F2) — perplexityai--modelcontextprotocol
 
 - **slug:** perplexityai--modelcontextprotocol

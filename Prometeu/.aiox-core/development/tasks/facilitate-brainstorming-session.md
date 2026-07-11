@@ -9,6 +9,11 @@ tools:
   - mcp            # Chamar agentes especializados para expertise de domÃ­nio
 checklists:
   - aiox-master-checklist.md
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Facilitar SessÃ£o de Brainstorming

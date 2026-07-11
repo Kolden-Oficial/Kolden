@@ -1,3 +1,21 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/aiox-master-system|aiox-master-system]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/analyst-system|analyst-system]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/architect-system|architect-system]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/data-engineer-system|data-engineer-system]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/dev-system|dev-system]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/devops-system|devops-system]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/pm-system|pm-system]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/qa-system|qa-system]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/sm-system|sm-system]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/squad-creator-system|squad-creator-system]]"
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/ux-design-expert-system|ux-design-expert-system]]"
+---
+
 <!--
   翻译：zh-CN（简体中文）
   原文：/docs/aiox-agent-flows/README.md

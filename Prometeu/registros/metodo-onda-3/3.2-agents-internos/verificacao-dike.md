@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/registros/metodo-onda-3/3.2-agents-internos/diff-cirurgico|diff-cirurgico]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.2-agents-internos/matriz-de-conformidade|matriz-de-conformidade]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.2-agents-internos/sumario-executivo|sumario-executivo]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.2-agents-internos/verificacao-dike-delta|verificacao-dike-delta]]"
+---
+
 # Verificação Dike — Sub-onda 3.2 (baseline pré-aplicação)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (Onda 3 · Sub-onda 3.2).

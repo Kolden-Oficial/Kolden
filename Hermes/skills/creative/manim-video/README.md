@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/manim-video/SKILL|SKILL]]"
+---
+
 # Manim Video Skill
 
 Production pipeline for mathematical and technical animations using [Manim Community Edition](https://www.manim.community/).

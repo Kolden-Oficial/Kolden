@@ -4,6 +4,11 @@ responsavel: "@alberto-savoia"
 responsavel_type: Agent
 atomic_layer: Task
 elicit: false
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Testar a Demanda (Pretotyping) — Aletheia

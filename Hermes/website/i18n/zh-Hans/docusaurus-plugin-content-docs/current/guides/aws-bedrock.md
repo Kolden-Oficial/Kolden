@@ -2,6 +2,9 @@
 sidebar_position: 14
 title: "AWS Bedrock"
 description: "将 Hermes Agent 与 Amazon Bedrock 配合使用——原生 Converse API、IAM 身份验证、Guardrails 及跨区域推理"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # AWS Bedrock

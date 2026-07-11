@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 03 — Varredura G (segurança) global
 
 > Passo 2 do protocolo. Greps de segredos em toda a árvore `C:\Kolden\`, com exclusões obrigatórias da carta de exceções.

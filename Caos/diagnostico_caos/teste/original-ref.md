@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/diagnostico_caos/teste/gabarito|gabarito]]"
+---
+
 # Original (read-only) — fonte do teste
 
 NÃO re-clonei: uso o artefato REAL da corrida de /absorver do CAOS, intacto em quarentena.

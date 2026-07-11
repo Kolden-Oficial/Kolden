@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+---
+
 # Matriz de plataforma — benchmarks e características
 
 ## CPMs comparativos (benchmark 2025)

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/architecture/_indice|_indice]]"
+---
+
 # Estratégia Multi-Repositório
 
 > **PT** | [EN](../architecture/multi-repo-strategy.md) | [ES](../es/architecture/multi-repo-strategy.md)

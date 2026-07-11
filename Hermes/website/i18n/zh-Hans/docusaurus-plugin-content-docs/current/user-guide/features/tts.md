@@ -2,6 +2,9 @@
 sidebar_position: 9
 title: "语音与 TTS"
 description: "跨所有平台的文字转语音与语音消息转录"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 语音与 TTS

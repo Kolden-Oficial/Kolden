@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Quality checklist applied to specialist output"
   - "[ ] Verdict rendered (APPROVE/REVISE/REJECT)"
   - "[ ] Specific feedback provided for any failures"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/brand-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Review Branding Output

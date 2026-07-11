@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Mem0 Memory Provider
 
 Server-side LLM fact extraction with semantic search, reranking, and automatic deduplication.

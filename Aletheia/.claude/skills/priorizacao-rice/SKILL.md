@@ -15,6 +15,9 @@ cross_links:
   - aletheia/desenho-de-experimento
   - prometeu/moscow-kano-mcda (cross-link bidirecional)
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G8)
+tipo: skill
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
 ---
 
 # Priorização RICE (Reach × Impact × Confidence / Effort)

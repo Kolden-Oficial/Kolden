@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/tensorrt-llm/references/multi-gpu|multi-gpu]]"
+  - "[[Hermes/optional-skills/mlops/tensorrt-llm/references/optimization|optimization]]"
+---
+
 # Production Serving Guide
 
 Comprehensive guide to deploying TensorRT-LLM in production environments.

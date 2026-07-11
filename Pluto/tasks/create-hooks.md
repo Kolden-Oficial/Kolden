@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Hooks escritos em pelo menos 4 categorias"
   - "[ ] Restrições da plataforma respeitadas"
   - "[ ] Todos os hooks pontuados em 3 dimensões"
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+relacionado:
+  - "[[Pluto/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Criar Hooks

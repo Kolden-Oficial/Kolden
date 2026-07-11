@@ -2,6 +2,11 @@
 sidebar_position: 6
 title: "WhatsApp Business (Cloud API)"
 description: "Set up Hermes Agent as a WhatsApp bot via Meta's official Business Cloud API"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # WhatsApp Business Cloud API Setup

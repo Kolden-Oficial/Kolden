@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/README|README]]"
+---
+
 # @ux-design-expert (Uma) - Documentacion del Sistema
 
 > [PT](../../aiox-agent-flows/ux-design-expert-system.md) | [EN](../../en/aiox-agent-flows/ux-design-expert-system.md) | **ES**

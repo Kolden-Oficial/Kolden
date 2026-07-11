@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/README|README]]"
+---
+
 # 功能请求流程
 
 > 🌐 [EN](../FEATURE_PROCESS.md) | [PT](../pt/FEATURE_PROCESS.md) | [ES](../es/FEATURE_PROCESS.md) | **ZH**

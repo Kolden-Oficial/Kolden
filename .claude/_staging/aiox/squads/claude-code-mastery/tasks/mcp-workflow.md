@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/squads/claude-code-mastery/tasks/_indice|_indice]]"
+---
+
 # Task: MCP Server Management Workflow
 
 **Task ID:** mcp-workflow

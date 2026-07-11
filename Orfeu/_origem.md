@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Orfeu
+up: "[[Orfeu/_MOC-orfeu]]"
+relacionado:
+  - "[[Orfeu/README|README]]"
+---
+
 # Origem
 
 - **Repositório de origem:** `ohmyjahh/xquads-squads`

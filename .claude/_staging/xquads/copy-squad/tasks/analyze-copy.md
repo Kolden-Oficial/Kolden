@@ -25,6 +25,11 @@ Checklist:
   - "[ ] 8-dimension scorecard completed with notes"
   - "[ ] #1 priority fix identified with rewrite suggestions"
   - "[ ] Specialist routing recommendations included"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Analyze Copy

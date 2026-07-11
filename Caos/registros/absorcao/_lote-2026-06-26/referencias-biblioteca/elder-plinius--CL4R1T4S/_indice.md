@@ -6,6 +6,8 @@ licenca: AGPL-3.0-only
 classe: DADO HOSTIL (prompts vazados + payloads de injeção ativos)
 disposicao: REFERENCIA-ARQUIVADA
 data: 2026-06-27
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 > ############################################################

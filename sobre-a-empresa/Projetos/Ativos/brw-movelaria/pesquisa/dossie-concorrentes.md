@@ -1,3 +1,13 @@
+---
+tipo: projeto
+projeto: brw-movelaria
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/pesquisa/prospeccao-bahia|prospeccao-bahia]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/pesquisa/prospeccao-hotelaria-bahia|prospeccao-hotelaria-bahia]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/pesquisa/prospeccao-studios-bahia|prospeccao-studios-bahia]]"
+---
+
 # BRW Movelaria — Dossiê de Concorrentes
 
 > **Status:** v1 / inteligência-de-mercado — **fotografia de mercado, não veredito estratégico**

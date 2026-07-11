@@ -71,6 +71,8 @@ linhagens: []
 frameworks_kolden: []
 squads_que_usam: [aletheia, caliope, aglaia]
 confianca_da_fonte: alta
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Antropologia Cultural — Dossiê de Disciplina

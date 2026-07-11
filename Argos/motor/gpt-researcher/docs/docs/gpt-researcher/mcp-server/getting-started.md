@@ -1,5 +1,11 @@
 ---
 sidebar_position: 1
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/mcp-server/advanced-usage|advanced-usage]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/mcp-server/claude-integration|claude-integration]]"
 ---
 
 # Getting Started

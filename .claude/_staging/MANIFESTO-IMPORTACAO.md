@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging
+up: "[[.claude/_staging/_MOC-staging]]"
+---
+
 # Manifesto de Importação — xquads-squads + aiox-core
 
 Rastreia o progresso da importação/tradução. Sobrevive entre sessões.

@@ -4,6 +4,9 @@ title: 'Reverse engineering GraphQL persistedQuery extension'
 description: 'Learn how to do reverse engineering on persistedQuery extension by GraphQL and reveal the query hash needed for scraping.'
 image: ./img/graphql.webp
 authors: [SauravJ, MatejV]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 GraphQL is a query language for getting deeply nested structured data from a website's backend, similar to MongoDB queries.

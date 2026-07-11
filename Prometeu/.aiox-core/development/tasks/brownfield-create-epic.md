@@ -4,6 +4,11 @@ tools:
 checklists:
   - po-master-checklist.md
   - change-checklist.md
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Create Brownfield Epic Task

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os componentes inventariados e mapeados ao design system"
   - "[ ] Todo valor visual mapeado a um design token"
   - "[ ] Revisão com o dev concluída, com tradeoffs documentados"
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Documentação de Handoff para o Desenvolvedor

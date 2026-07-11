@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F4 — Mapa de decisão · bucket **B11 = `academic/`** → **Liceu** (com handoff narratológico ao Orfeu)
 
 > Inventário-fonte: `inventario-academic.md` (18 IDs, G1–G18).

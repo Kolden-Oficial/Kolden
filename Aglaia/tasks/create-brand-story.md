@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os 7 elementos do SB7 definidos"
   - "[ ] One-liner e elevator pitch criados"
   - "[ ] Copy do wireframe do site fornecida"
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/tasks/_indice|_indice]]"
 ---
 
 # Task: Criar História da Marca

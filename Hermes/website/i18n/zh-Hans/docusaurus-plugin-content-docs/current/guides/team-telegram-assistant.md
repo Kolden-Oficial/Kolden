@@ -2,6 +2,9 @@
 sidebar_position: 4
 title: "教程：团队 Telegram 助手"
 description: "逐步指南：为整个团队搭建一个 Telegram 机器人，用于代码帮助、研究、系统管理等"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 搭建团队 Telegram 助手

@@ -7,6 +7,11 @@ metadata:
   hermes:
     tags: [creative-coding, generative-art, p5js, canvas, interactive, visualization, webgl, shaders, animation]
     related_skills: [ascii-video, manim-video, excalidraw]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/p5js/README|README]]"
 ---
 
 # p5.js Production Pipeline

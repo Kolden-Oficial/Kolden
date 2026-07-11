@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Manifesto inclui todos os 7 componentes"
   - "[ ] Inimigo nomeado como força sistêmica, não pessoa"
   - "[ ] Chamado à ação inclui primeiro passo concreto"
+tipo: nota
+area: Dionisio
+up: "[[Dionisio/_MOC-dionisio]]"
+relacionado:
+  - "[[Dionisio/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Escrever Manifesto

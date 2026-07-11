@@ -2,6 +2,11 @@
 sidebar_position: 10
 title: "DingTalk"
 description: "Set up Hermes Agent as a DingTalk chatbot"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # DingTalk Setup

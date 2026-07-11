@@ -17,6 +17,9 @@ allowed-tools:
   - Grep
   - Glob
   - AskUserQuestion
+tipo: skill
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
 ---
 
 # PR e comunicações institucionais (PT-BR)

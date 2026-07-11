@@ -2,6 +2,9 @@
 title: "Osint Investigation"
 sidebar_label: "Osint Investigation"
 description: "公开记录 OSINT 调查框架 — SEC EDGAR 文件、USAspending 合同、参议院游说、OFAC 制裁、ICIJ 离岸泄露、纽约市房产记录（ACRIS）、OpenCorporates 注册信息、CourtListener 法院记录、Wayback Machine 存档、Wikipedia + Wikidata、GDELT 新闻监控。跨来源实体解析、交叉链接分析、时序关联、证据链。仅使用 Python 标准库。"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

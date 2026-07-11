@@ -2,6 +2,11 @@
 sidebar_position: 17
 title: "LINE"
 description: "Set up Hermes Agent as a LINE Messaging API bot"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # LINE Setup

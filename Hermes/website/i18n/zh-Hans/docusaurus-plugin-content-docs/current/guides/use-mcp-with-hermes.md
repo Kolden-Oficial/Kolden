@@ -2,6 +2,9 @@
 sidebar_position: 6
 title: "在 Hermes 中使用 MCP"
 description: "将 MCP 服务器连接到 Hermes Agent、过滤其工具并在实际工作流中安全使用的实践指南"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 在 Hermes 中使用 MCP

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/README|README]]"
+---
+
 # Synkra AIOX 安全最佳实践
 
 > 🌐 [EN](../security-best-practices.md) | [PT](../pt/security-best-practices.md) | [ES](../es/security-best-practices.md)

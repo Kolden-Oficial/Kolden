@@ -2,6 +2,11 @@
 sidebar_position: 2
 title: "Slash Commands Reference"
 description: "Complete reference for interactive CLI and messaging slash commands"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/reference/_indice|_indice]]"
 ---
 
 # Slash Commands Reference

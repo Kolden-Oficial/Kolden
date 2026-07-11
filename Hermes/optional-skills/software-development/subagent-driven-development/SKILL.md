@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [delegation, subagent, implementation, workflow, parallel]
     related_skills: [plan, requesting-code-review, test-driven-development]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Subagent-Driven Development

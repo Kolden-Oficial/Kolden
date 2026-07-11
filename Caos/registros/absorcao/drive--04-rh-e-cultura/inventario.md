@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--04-rh-e-cultura/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/drive--04-rh-e-cultura/reconciliacao|reconciliacao]]"
+---
+
 # Inventário — Drive "04 | RH & Cultura"
 
 > Absorção read-only. Raiz da área: `1LBPF3J62nzavQXqlwjANfxUq43sGUD1e`.

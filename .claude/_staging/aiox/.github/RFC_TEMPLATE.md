@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.github/ISSUE_DRAFT_P0_missing_module|ISSUE_DRAFT_P0_missing_module]]"
+  - "[[.claude/_staging/aiox/.github/PULL_REQUEST_TEMPLATE|PULL_REQUEST_TEMPLATE]]"
+---
+
 # RFC: [Title]
 
 **RFC ID:** RFC-XXXX

@@ -23,6 +23,11 @@ Checklist:
   - "[ ] Atualizar registry.json"
   - "[ ] Criar Pull Request"
   - "[ ] Exibir URL do PR"
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # *publish-squad

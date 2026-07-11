@@ -1,6 +1,9 @@
 ---
 name: orquestracao-de-comandos-slash
 description: Use ao desenhar, escrever ou revisar um comando slash (/nome) — o mecanismo pelo qual o Claude Code executa pipelines determinísticos disparados por prefixo. Cobre anatomia canônica (markdown + frontmatter + template + prompt), o pipeline spec-driven (/specify > /clarify > /plan > /tasks > /implement > /analyze > /checklist), a semântica append-only de /converge, a ponte /taskstoissues via GitHub MCP, o marcador [P] de paralelismo em tarefas, e os extension-hooks before/after. Complementa `spec-build-review` (que ORQUESTRA a jornada) — esta define A LINGUAGEM dos comandos individuais que compõem qualquer jornada.
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Orquestracao de Comandos Slash

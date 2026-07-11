@@ -2,6 +2,9 @@
 sidebar_position: 5
 title: "Microsoft Teams"
 description: "将 Hermes Agent 设置为 Microsoft Teams 机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Microsoft Teams 设置

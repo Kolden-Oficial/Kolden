@@ -1,6 +1,9 @@
 ---
 name: compreensao-de-codebase
 description: Use quando precisar ENTENDER uma codebase inteira (própria ou de terceiro) em vez de só editá-la — mapear arquitetura, responder "onde fica X / como Y se conecta a Z", medir impacto de um PR/diff, onboarding de um repo grande, ou cortar tokens de contexto consultando um subgrafo em vez de despejar a pasta toda. Aciona em "explica essa codebase", "monta o mapa do projeto", "o que esse PR afeta", "como isso funciona por dentro". NÃO use para edição cirúrgica de 1-2 arquivos (isso é trabalho direto) nem para construir hooks/MCP (outras habilidades).
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Compreensão de Codebase (grafo de conhecimento)

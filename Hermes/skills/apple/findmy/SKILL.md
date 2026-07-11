@@ -8,6 +8,9 @@ platforms: [macos]
 metadata:
   hermes:
     tags: [FindMy, AirTag, location, tracking, macOS, Apple]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Find My (Apple)

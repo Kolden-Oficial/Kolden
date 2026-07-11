@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/scripts/hermes-chief.SOUL|hermes-chief.SOUL]]"
+---
+
 # Tool Search live test harness
 
 Runs five scenarios against a real model (Claude Haiku 4.5 via OpenRouter) to

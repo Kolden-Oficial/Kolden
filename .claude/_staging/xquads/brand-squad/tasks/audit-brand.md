@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Brand equity scored across 5 Aaker pillars"
   - "[ ] Identity assessed across 6 Kapferer facets"
   - "[ ] Prioritized recommendations with specialist routing"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/brand-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Audit Brand

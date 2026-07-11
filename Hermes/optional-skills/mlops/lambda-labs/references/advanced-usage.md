@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/lambda-labs/references/troubleshooting|troubleshooting]]"
+---
+
 # Lambda Labs Advanced Usage Guide
 
 ## Multi-Node Distributed Training

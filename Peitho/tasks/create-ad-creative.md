@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Conceitos desenvolvidos com ângulos distintos"
   - "[ ] Cada conceito inclui hook, copy, direção visual e CTA"
   - "[ ] Framework de teste definido com pares e métricas"
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Criar Criativo de Anúncio

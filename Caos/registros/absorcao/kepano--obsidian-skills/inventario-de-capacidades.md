@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/kepano--obsidian-skills/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/kepano--obsidian-skills/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades — kepano--obsidian-skills
 
 - **slug:** kepano--obsidian-skills | **sha:** a1dc48e68138490d522c04cbf5822214c6eb1202 | **rota:** A

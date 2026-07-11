@@ -1,6 +1,9 @@
 ---
 name: sanitizacao-de-saida-de-agente
 description: Use antes de qualquer saída de agente sair do perímetro — publicar repo, abrir PR, colar log/relatório, anexar screenshot, mandar mensagem por gateway (WhatsApp/Telegram), ou empacotar projeto para release. Traz a varredura de segredos/PII/referências internas em 6 categorias com 20+ padrões, as regras de redação (truncar segredo, nunca exibir valor cheio), a checagem de arquivos perigosos e a auditoria de histórico git, com veredito PASS/FAIL/PASS-COM-AVISOS. Verificação independente — não confia em quem gerou. NÃO use para buscar segredos para consumo (isso é Infisical).
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Sanitização de Saída de Agente

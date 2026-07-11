@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/parsing/adaptive|adaptive]]"
+  - "[[Argos/motor/scrapling/docs/parsing/main_classes|main_classes]]"
+---
+
 # Querying elements
 Scrapling currently supports parsing HTML pages exclusively, so it doesn't support XML feeds. This decision was made because the adaptive feature won't work with XML, but that might change soon, so stay tuned :)
 

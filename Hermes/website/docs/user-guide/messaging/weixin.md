@@ -2,6 +2,11 @@
 sidebar_position: 15
 title: "Weixin (WeChat)"
 description: "Connect Hermes Agent to personal WeChat accounts via the iLink Bot API"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Weixin (WeChat)

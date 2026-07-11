@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/github/github-pr-workflow/references/ci-troubleshooting|ci-troubleshooting]]"
+---
+
 # Conventional Commits Quick Reference
 
 Format: `type(scope): description`

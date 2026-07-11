@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: brw-movelaria
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/roteiro-reuniao-socios-2026-07-XX|roteiro-reuniao-socios-2026-07-XX]]"
+---
+
 # DOSSIÊ BRW MOVELARIA
 
 > **Versão:** 2.0 (Fase A + Fase B + Fase C + **Fase D — Discovery Aletheia via reunião 07/07**)

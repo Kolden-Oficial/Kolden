@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/mlops/models/segment-anything/references/troubleshooting|troubleshooting]]"
+---
+
 # Segment Anything Advanced Usage Guide
 
 ## SAM 2 (Video Segmentation)

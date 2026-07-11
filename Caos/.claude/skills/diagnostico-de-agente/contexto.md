@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/skills/diagnostico-de-agente/catalogo-de-mitologia|catalogo-de-mitologia]]"
+  - "[[Caos/.claude/skills/diagnostico-de-agente/SKILL|SKILL]]"
+---
+
 # Trilhas de diagnóstico por domínio
 
 Perguntas extras e pontos de atenção por categoria de agente. Carregadas no Passo 0 da

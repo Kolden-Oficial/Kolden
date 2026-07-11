@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Themis
+up: "[[Themis/_MOC-themis]]"
+relacionado:
+  - "[[Themis/README|README]]"
+---
+
 # Origem
 
 - **Repositório de origem:** `ohmyjahh/xquads-squads`

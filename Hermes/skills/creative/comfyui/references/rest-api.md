@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/comfyui/references/official-cli|official-cli]]"
+  - "[[Hermes/skills/creative/comfyui/references/template-integrity|template-integrity]]"
+  - "[[Hermes/skills/creative/comfyui/references/workflow-format|workflow-format]]"
+---
+
 # ComfyUI REST + WebSocket API Reference
 
 ComfyUI exposes a REST + WebSocket interface for workflow execution and

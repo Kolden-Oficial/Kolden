@@ -1,6 +1,9 @@
 ---
 name: comandos-de-compreensao-contextual
 description: Use quando precisar ENTENDER documentação, artigo, base de conhecimento ou domínio de negócio — não código-fonte. Aciona em "explica esse domínio", "extrai o vocabulário", "mapa dessa doc", "monta o wiki disso", "monta o glossário", "quero conversar com essa documentação", "grafo de conhecimento do que está escrito", "por que esse artigo diz X". Traz os cinco comandos `/compreender-*` (chat, dominio, conhecimento, artigo, grafo), o pipeline de extração implícita SNL (sujeito/informação-nova/link) e o método Karpathy-style de wiki raw→wiki→schema. NÃO use para entender CODEBASE (isso é `compreensao-de-codebase`) — esta habilidade opera em CONTEÚDO/documentação. NÃO substitui `busca-de-referencias` do Caos (essa curá referências externas).
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Comandos de Compreensão Contextual

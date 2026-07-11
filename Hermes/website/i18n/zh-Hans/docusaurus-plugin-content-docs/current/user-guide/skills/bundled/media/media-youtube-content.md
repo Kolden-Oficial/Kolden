@@ -2,6 +2,9 @@
 title: "Youtube Content — YouTube 视频转文字摘要、推文、博客"
 sidebar_label: "Youtube Content"
 description: "YouTube 视频转文字摘要、推文、博客"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

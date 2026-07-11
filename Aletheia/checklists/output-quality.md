@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+---
+
 # Checklist de Qualidade de Saída — Aletheia (Discovery & Lean Validation)
 
 **ID do Checklist:** ALETHEIA-CL-001

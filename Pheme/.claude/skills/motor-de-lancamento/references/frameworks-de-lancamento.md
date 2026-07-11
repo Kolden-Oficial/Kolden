@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+---
+
 # Frameworks de lançamento — ORB detalhado e as 5 fases
 
 ## O framework ORB (detalhado)

@@ -9,6 +9,9 @@ description: >-
   performance e acessibilidade. É a ponte design→código do ui-engineer. NÃO
   define a arquitetura de tokens (isso é tokens-de-design) nem julga direção de
   arte/anti-slop (isso é julgamento-estetico-anti-slop).
+tipo: skill
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
 ---
 
 # Implementação de UI — shadcn + Tailwind + motion

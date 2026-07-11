@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/README|README]]"
+---
+
 # Instalação — Liceu
 
 Como colocar o squad de Biblioteca de Mentes em produção.

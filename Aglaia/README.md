@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/_origem|_origem]]"
+---
+
 # Aglaia — Squad de Branding (Brandbook)
 
 Aglaia é o squad definitivo de estratégia de marca: 10 pensadores lendários de branding clonados como agentes de IA (de Aaker a Sharp, de Kapferer a Miller), mais 4 especialistas funcionais e 1 orquestrador. Cobre todas as dimensões da construção de marca — brand equity, posicionamento, identidade, arquitetura, naming, arquétipos e crescimento — entregando desde diagnósticos de marca até pacotes completos de identidade e brandbooks.

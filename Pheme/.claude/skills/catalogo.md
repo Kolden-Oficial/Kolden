@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+---
+
 # Catálogo de Habilidades — Pheme
 
 Índice das habilidades do squad Pheme. Reorganizado em blocos após absorção B02

@@ -3,6 +3,9 @@ name: aiox-analyst
 description: "Ative Atlas (analyst) para Business Analyst. Use para pesquisa de mercado, análise competitiva, pesquisa de usuários, facilitação de sessões de brainstorming, workshops de ideação estruturada, estudos de viabilidade, análise de tendências do setor, descob..."
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: generated -->

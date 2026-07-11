@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/installation/README|README]]"
+---
+
 # Windows Installation Guide for Synkra AIOX
 
 > 🌐 [EN](windows.md) | [PT](../pt/installation/windows.md) | [ES](../es/installation/windows.md)

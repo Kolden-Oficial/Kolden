@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/dashboard-safety|dashboard-safety]]"
+  - "[[Caos/registros/historico|historico]]"
+  - "[[Caos/registros/ultima-verificacao|ultima-verificacao]]"
+---
+
 # Predictions Scorecard — Kolden — 2026-2027 (primeira safra)
 
 > **Escopo:** organização Kolden (todas as squads sob a fábrica Caos + runtime Hermes + verificador Dike)

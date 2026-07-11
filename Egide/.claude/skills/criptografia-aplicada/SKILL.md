@@ -10,6 +10,9 @@ description: >-
 domain: ciberseguranca
 subdomain: criptografia
 tags: [cripto, tls, pki, hashing, chaves, kms, aead, antipadroes]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Criptografia Aplicada

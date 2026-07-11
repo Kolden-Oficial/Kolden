@@ -1,3 +1,21 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/aiox-master-system|aiox-master-system]]"
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/analyst-system|analyst-system]]"
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/architect-system|architect-system]]"
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/data-engineer-system|data-engineer-system]]"
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/dev-system|dev-system]]"
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/devops-system|devops-system]]"
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/pm-system|pm-system]]"
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/qa-system|qa-system]]"
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/sm-system|sm-system]]"
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/squad-creator-system|squad-creator-system]]"
+  - "[[.claude/_staging/aiox/docs/es/aiox-agent-flows/ux-design-expert-system|ux-design-expert-system]]"
+---
+
 # AIOX Agent Flows - Documentacion Detallada de los Agentes
 
 > [PT](../../aiox-agent-flows/README.md) | [EN](../../en/aiox-agent-flows/README.md) | **ES** | [ZH](../../zh/aiox-agent-flows/README.md)

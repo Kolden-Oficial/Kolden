@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/research/dspy/references/examples|examples]]"
+  - "[[Hermes/optional-skills/mlops/research/dspy/references/modules|modules]]"
+---
+
 # DSPy Optimizers (Teleprompters)
 
 Complete guide to DSPy's optimization algorithms for improving prompts and model weights.

@@ -12,6 +12,9 @@ metadata:
     homepage: https://github.com/D4Vinci/Scrapling
 prerequisites:
   commands: [scrapling, python]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Scrapling

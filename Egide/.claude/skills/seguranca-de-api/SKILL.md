@@ -10,6 +10,9 @@ description: >-
 domain: ciberseguranca
 subdomain: appsec-api
 tags: [api, owasp-api, bola, bfla, oauth, jwt, rate-limit, graphql, gateway]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Segurança de API

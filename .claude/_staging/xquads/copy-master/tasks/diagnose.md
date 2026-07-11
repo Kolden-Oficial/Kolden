@@ -21,6 +21,11 @@ Checklist:
   - "[ ] Request parsed and keywords extracted"
   - "[ ] Routing catalog consulted with scored results (27 domains, 32 agents)"
   - "[ ] Quick answer provided with specialist routing"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-master/tasks/_indice|_indice]]"
 ---
 
 # Task: Diagnose Copywriting Request

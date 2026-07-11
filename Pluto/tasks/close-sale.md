@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os 6 passos do CLOSER roteirizados para o produto específico"
   - "[ ] Top 10 objeções tratadas com respostas de Isolar e Superar"
   - "[ ] Metas de KPI definidas"
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+relacionado:
+  - "[[Pluto/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Fechar Venda

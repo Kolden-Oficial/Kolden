@@ -1,3 +1,23 @@
+---
+tipo: memoria
+squad: Hermes
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-02|hermes-2026-07-02]]"
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-04|hermes-2026-07-04]]"
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-05|hermes-2026-07-05]]"
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-06-2|hermes-2026-07-06-2]]"
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-06-3|hermes-2026-07-06-3]]"
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-06-4|hermes-2026-07-06-4]]"
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-06-5|hermes-2026-07-06-5]]"
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-06-6|hermes-2026-07-06-6]]"
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-06-7|hermes-2026-07-06-7]]"
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-06-8|hermes-2026-07-06-8]]"
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-06-9|hermes-2026-07-06-9]]"
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-06|hermes-2026-07-06]]"
+  - "[[Hermes/agent-memory/backups/hermes-2026-07-10|hermes-2026-07-10]]"
+---
+
 # Memória do Agente Hermes
 
 > **Escopo:** padrões técnicos de execução do agent-chief Hermes. Distinto de `MEMORY.md` (padrões estruturais do SQUAD Hermes — publicado na Onda 2 do METODO em 2026-07-06).

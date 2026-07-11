@@ -2,6 +2,9 @@
 title: "Powerpoint — 创建、读取、编辑"
 sidebar_label: "Powerpoint"
 description: "创建、读取、编辑"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

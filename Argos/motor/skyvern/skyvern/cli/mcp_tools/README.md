@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Skyvern MCP Server
 
 The Skyvern MCP server gives AI assistants (Claude, Cursor, Windsurf, Codex) full browser control -- clicking, filling forms, extracting data, navigating pages, uploading files, managing workflows, and more. 75+ tools, one server.

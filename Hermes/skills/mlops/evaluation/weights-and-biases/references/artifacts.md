@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/mlops/evaluation/weights-and-biases/references/integrations|integrations]]"
+  - "[[Hermes/skills/mlops/evaluation/weights-and-biases/references/sweeps|sweeps]]"
+---
+
 # Artifacts & Model Registry Guide
 
 Complete guide to data versioning and model management with W&B Artifacts.

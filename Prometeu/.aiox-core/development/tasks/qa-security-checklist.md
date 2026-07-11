@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task de Checklist de Segurança
 
 Varredura automatizada de vulnerabilidades de segurança para anti-padrões comuns de segurança.

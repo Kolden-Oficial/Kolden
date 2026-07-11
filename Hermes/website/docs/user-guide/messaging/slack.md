@@ -2,6 +2,11 @@
 sidebar_position: 4
 title: "Slack"
 description: "Set up Hermes Agent as a Slack bot using Socket Mode"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Slack Setup

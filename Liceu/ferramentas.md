@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/README|README]]"
+---
+
 # Ferramentas — Liceu (Biblioteca de Mentes)
 
 Catálogo único de toda ferramenta que o squad Liceu pode usar. **Constituição, Artigo IV:** nenhum

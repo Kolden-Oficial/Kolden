@@ -2,6 +2,9 @@
 sidebar_position: 2
 title: "Skills 系统"
 description: "按需加载的知识文档——渐进式披露、agent 管理的 skills 以及 Skills Hub"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Skills 系统

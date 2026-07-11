@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 04 — Hierarquia, roteamento e contratos (cross-squad)
 
 > Passo 4 do protocolo. Consolida as classes **C (hierarquia)**, **D (roteamento)** e **E (contrato I/O)** atravessando squads.

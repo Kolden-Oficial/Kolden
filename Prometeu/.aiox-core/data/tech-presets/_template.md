@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/data/tech-presets/_indice|_indice]]"
+---
+
 # Tech Preset Template
 
 > Use este template para criar novos presets de arquitetura por tecnologia.

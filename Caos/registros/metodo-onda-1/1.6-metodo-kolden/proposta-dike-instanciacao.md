@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/metodo-onda-1/1.6-metodo-kolden/diff-agents-md|diff-agents-md]]"
+  - "[[Caos/registros/metodo-onda-1/1.6-metodo-kolden/emendas-liceu|emendas-liceu]]"
+  - "[[Caos/registros/metodo-onda-1/1.6-metodo-kolden/relatorio-de-consolidacao|relatorio-de-consolidacao]]"
+  - "[[Caos/registros/metodo-onda-1/1.6-metodo-kolden/sumario-executivo|sumario-executivo]]"
+---
+
 # Proposta — Instanciação do Dike como agent funcional
 
 > **Contrato:** `m-20260706-metodo-kolden` · Sub-onda 1.6 — proposta com 3 opções + recomendação nomeada

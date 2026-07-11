@@ -2,6 +2,9 @@
 sidebar_position: 4
 title: "Slack"
 description: "使用 Socket Mode 将 Hermes Agent 设置为 Slack 机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Slack 设置

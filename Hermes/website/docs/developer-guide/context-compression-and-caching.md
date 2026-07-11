@@ -1,3 +1,11 @@
+---
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
+---
+
 # Context Compression and Caching
 
 Hermes Agent uses a dual compression system and Anthropic prompt caching to

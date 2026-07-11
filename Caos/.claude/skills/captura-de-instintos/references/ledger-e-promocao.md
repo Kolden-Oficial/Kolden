@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # Ledger append-only e seções do MEMORY.md — referência da captura de instintos
 
 ## Seções do MEMORY.md (esquema do Kolden)

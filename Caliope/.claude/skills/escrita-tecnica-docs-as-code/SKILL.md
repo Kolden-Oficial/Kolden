@@ -15,6 +15,9 @@ description: >
   "changelog", "guia de uso". Skill compartilhada Caliope — qualquer copywriter que
   receba demanda de doc técnica ativa. Fronteira: technical writing operacional,
   NÃO copy persuasiva.
+tipo: skill
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
 ---
 
 # Escrita técnica docs-as-code

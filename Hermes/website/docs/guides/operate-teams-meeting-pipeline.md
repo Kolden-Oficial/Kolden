@@ -1,6 +1,11 @@
 ---
 title: "Operate the Teams Meeting Pipeline"
 description: "Runbook, go-live checklist, and operator worksheet for the Microsoft Teams meeting pipeline"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Operate the Teams Meeting Pipeline

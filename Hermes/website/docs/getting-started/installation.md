@@ -2,6 +2,15 @@
 sidebar_position: 2
 title: "Installation"
 description: "Install Hermes Agent on Linux, macOS, WSL2, native Windows, or Android via Termux"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/getting-started/learning-path|learning-path]]"
+  - "[[Hermes/website/docs/getting-started/nix-setup|nix-setup]]"
+  - "[[Hermes/website/docs/getting-started/quickstart|quickstart]]"
+  - "[[Hermes/website/docs/getting-started/termux|termux]]"
+  - "[[Hermes/website/docs/getting-started/updating|updating]]"
 ---
 
 # Installation

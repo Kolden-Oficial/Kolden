@@ -13,6 +13,9 @@ description: >
   chama `sequencia-de-nutricao`; para indicação como alavanca, `programa-de-indicacao`.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Motor de Lançamento — momentum que compõe, não um dia só

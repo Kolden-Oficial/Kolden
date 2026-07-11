@@ -11,6 +11,9 @@ description: >
   "whale curve preditiva", "quais clientes vão voltar". NÃO use para RFM descritivo (isso
   é `rfm-e-segmentacao` — o baseline; CLV é o nível preditivo). NÃO use para CAC/payback
   (isso é `unit-economics-operacional` do Pactolo).
+tipo: skill
+area: Metis
+up: "[[Metis/_MOC-metis]]"
 ---
 
 # CLV e segmentação preditiva

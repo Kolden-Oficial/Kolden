@@ -2,6 +2,9 @@
 sidebar_position: 6
 title: "Teams 会议"
 description: "使用 Microsoft Graph webhook 配置 Microsoft Teams 会议摘要流水线"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Microsoft Teams 会议

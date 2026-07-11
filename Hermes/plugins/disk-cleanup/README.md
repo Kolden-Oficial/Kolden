@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # disk-cleanup
 
 Auto-tracks and cleans up ephemeral files created during Hermes Agent

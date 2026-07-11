@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+---
+
 # Playbook de sequências — esqueletos e-mail-a-e-mail
 
 Os esqueletos de cada tipo de sequência. Adapte número de e-mails e timing ao

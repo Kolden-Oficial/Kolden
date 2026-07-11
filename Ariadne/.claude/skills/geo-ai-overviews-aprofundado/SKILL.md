@@ -14,6 +14,9 @@ description: >
   "AI Mode", "ChatGPT search", "Perplexity", "SGE", "GEO", "AEO", "LLMO",
   "aparecer em IA", "ser citado por IA", "llms.txt", "AI crawlers", "brand mention
   correlation", "passage citability". Copy final → Caliope.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # GEO / AI Overviews em profundidade (jul/2026)

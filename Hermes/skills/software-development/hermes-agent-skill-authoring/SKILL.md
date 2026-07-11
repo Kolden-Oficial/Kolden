@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [skills, authoring, hermes-agent, conventions, skill-md]
     related_skills: [plan, requesting-code-review]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Authoring Hermes-Agent Skills (in-repo)

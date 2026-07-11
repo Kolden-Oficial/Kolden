@@ -11,6 +11,9 @@ subdomain: ux-auditoria
 agente_primario: [harmonia-chief]
 tags: [walkthrough, persona, lift, cialdini, auditoria-de-pagina, 5-second-test, scroll-monologue]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G10, G11, G12)
+tipo: skill
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
 ---
 
 <!--

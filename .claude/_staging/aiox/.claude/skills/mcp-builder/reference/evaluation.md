@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/skills/mcp-builder/reference/mcp_best_practices|mcp_best_practices]]"
+  - "[[.claude/_staging/aiox/.claude/skills/mcp-builder/reference/node_mcp_server|node_mcp_server]]"
+  - "[[.claude/_staging/aiox/.claude/skills/mcp-builder/reference/python_mcp_server|python_mcp_server]]"
+---
+
 # MCP Server Evaluation Guide
 
 ## Overview

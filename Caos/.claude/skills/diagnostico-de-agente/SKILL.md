@@ -1,6 +1,12 @@
 ---
 name: diagnostico-de-agente
 description: Conduz o diagnóstico de um novo agente em 7 rodadas por faculdade ("O Ser") — Alma, Caráter, Mente, Memória, Corpo, Consciência e Sociedade. Use sempre que o usuário pedir para criar um agente, antes de qualquer geração de arquivo. Cada rodada cobre uma faculdade exclusiva com perguntas densas; só avança quando a faculdade está 100% preenchida sem resposta vaga. A Rodada 0 inclui a nomeação mitológica.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/skills/diagnostico-de-agente/catalogo-de-mitologia|catalogo-de-mitologia]]"
+  - "[[Caos/.claude/skills/diagnostico-de-agente/contexto|contexto]]"
 ---
 
 # Diagnóstico de agente — O Ser

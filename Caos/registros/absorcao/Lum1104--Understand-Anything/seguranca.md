@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/Lum1104--Understand-Anything/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/Lum1104--Understand-Anything/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática (F2) — Lum1104--Understand-Anything
 
 - **slug:** Lum1104--Understand-Anything

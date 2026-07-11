@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # CLAUDE.md - Synkra AIOX
 
 Este arquivo configura o comportamento do Claude Code ao trabalhar neste repositório.

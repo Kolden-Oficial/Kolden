@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/packages/core/CHANGELOG|CHANGELOG]]"
+---
+
 # `@crawlee/core`
 
 Core set of classes required for Crawlee.

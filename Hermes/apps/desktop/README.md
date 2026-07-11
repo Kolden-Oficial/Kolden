@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/apps/desktop/DESIGN|DESIGN]]"
+---
+
 # Hermes Desktop ☤
 
 <p align="center">

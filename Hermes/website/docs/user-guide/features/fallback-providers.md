@@ -3,6 +3,11 @@ title: Fallback Providers
 description: Configure automatic failover to backup LLM providers when your primary model is unavailable.
 sidebar_label: Fallback Providers
 sidebar_position: 8
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Fallback Providers

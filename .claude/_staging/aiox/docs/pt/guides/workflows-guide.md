@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/guides/README|README]]"
+---
+
 # Guia de Workflows do AIOX
 
 **Versao:** 1.0.0

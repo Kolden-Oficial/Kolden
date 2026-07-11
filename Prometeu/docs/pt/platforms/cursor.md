@@ -1,3 +1,14 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/platforms/antigravity|antigravity]]"
+  - "[[Prometeu/docs/pt/platforms/claude-code|claude-code]]"
+  - "[[Prometeu/docs/pt/platforms/gemini-cli|gemini-cli]]"
+  - "[[Prometeu/docs/pt/platforms/github-copilot|github-copilot]]"
+---
+
 # Guia AIOX para Cursor
 
 > 🌐 [EN](../../platforms/cursor.md) | **PT** | [ES](../../es/platforms/cursor.md)

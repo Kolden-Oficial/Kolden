@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/skyvern/skills/skyvern/references/_indice|_indice]]"
+---
+
 # Block Types: Practical Use
 
 ## `navigation`

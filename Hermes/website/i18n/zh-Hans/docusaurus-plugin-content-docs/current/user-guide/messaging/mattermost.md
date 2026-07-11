@@ -2,6 +2,9 @@
 sidebar_position: 8
 title: "Mattermost"
 description: "将 Hermes Agent 配置为 Mattermost 机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Mattermost 配置

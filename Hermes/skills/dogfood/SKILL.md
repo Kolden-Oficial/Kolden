@@ -7,6 +7,9 @@ metadata:
   hermes:
     tags: [qa, testing, browser, web, dogfood]
     related_skills: []
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Dogfood: Systematic Web Application QA Testing

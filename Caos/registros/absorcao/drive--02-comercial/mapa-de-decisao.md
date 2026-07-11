@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--02-comercial/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--02-comercial/reconciliacao|reconciliacao]]"
+---
+
 # Mapa de Decisão — Área "02 | Comercial" (Drive)
 
 > F4. Cada arquivo do inventário recebe disposição: ABSORVER / DESCARTAR / DEFER. 2026-06-25.

@@ -2,6 +2,9 @@
 title: "Lambda Labs Gpu Cloud — 用于 ML 训练和推理的预留及按需 GPU 云实例"
 sidebar_label: "Lambda Labs Gpu Cloud"
 description: "用于 ML 训练和推理的预留及按需 GPU 云实例"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

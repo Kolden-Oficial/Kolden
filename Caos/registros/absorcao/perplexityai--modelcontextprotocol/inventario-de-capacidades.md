@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/perplexityai--modelcontextprotocol/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/perplexityai--modelcontextprotocol/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades (F3) — perplexityai--modelcontextprotocol
 
 Rota **D** (Framework/MCP grande). Capacidade-alvo principal: o **servidor MCP da Perplexity** e suas **4 tools**,

@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/simpo/references/datasets|datasets]]"
+  - "[[Hermes/optional-skills/mlops/simpo/references/loss-functions|loss-functions]]"
+---
+
 # Hyperparameters
 
 Complete guide to SimPO hyperparameter selection and tuning.

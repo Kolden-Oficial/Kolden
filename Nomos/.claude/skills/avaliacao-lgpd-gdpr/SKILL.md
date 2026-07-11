@@ -6,6 +6,9 @@ description: >-
   "registro de tratamento", "direitos do titular", "consentimento", "transferência internacional" ou
   "incidente/vazamento de dados". Conduz base legal → DPIA → RoPA → direitos → incidente, sempre com a
   fonte normativa e rótulo de orientação informativa (requer revisão humana/advogado).
+tipo: skill
+area: Nomos
+up: "[[Nomos/_MOC-nomos]]"
 ---
 
 # Avaliação LGPD / GDPR

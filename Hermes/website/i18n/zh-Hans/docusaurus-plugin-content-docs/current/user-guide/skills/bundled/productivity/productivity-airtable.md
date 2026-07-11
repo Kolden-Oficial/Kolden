@@ -2,6 +2,9 @@
 title: "Airtable — 通过 curl 调用 Airtable REST API"
 sidebar_label: "Airtable"
 description: "通过 curl 调用 Airtable REST API"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

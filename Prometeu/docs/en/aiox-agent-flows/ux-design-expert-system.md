@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-agent-flows/README|README]]"
+---
+
 # @ux-design-expert (Uma) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/ux-design-expert-system.md) | [ES](../../es/aiox-agent-flows/ux-design-expert-system.md)

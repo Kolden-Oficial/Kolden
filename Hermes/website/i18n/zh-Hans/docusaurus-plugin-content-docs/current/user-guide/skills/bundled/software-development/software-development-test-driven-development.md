@@ -2,6 +2,9 @@
 title: "测试驱动开发 — TDD：强制执行 RED-GREEN-REFACTOR，测试先于代码"
 sidebar_label: "测试驱动开发"
 description: "TDD：强制执行 RED-GREEN-REFACTOR，测试先于代码"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/installation/README|README]]"
+---
+
 <!-- 翻译：zh-CN 原文：/docs/installation/troubleshooting.md 最后同步：2026-02-22 -->
 
 # Synkra AIOX 故障排除指南

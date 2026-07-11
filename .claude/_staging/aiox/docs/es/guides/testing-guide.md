@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/guides/README|README]]"
+---
+
 # Guia de Testing de Synkra AIOX
 
 > [EN](../../guides/testing-guide.md) | [PT](../../pt/guides/testing-guide.md) | **ES**

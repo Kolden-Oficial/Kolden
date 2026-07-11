@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # basic-greeter
 
 ACTIVATION-NOTICE: Friendly greeter agent for demonstrations.

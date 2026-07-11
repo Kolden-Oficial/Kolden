@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/baoyu-infographic/references/analysis-framework|analysis-framework]]"
+  - "[[Hermes/skills/creative/baoyu-infographic/references/structured-content-template|structured-content-template]]"
+---
+
 Create a professional infographic following these specifications:
 
 ## Image Specifications

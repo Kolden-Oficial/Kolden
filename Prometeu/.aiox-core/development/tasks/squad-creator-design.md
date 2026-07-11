@@ -21,6 +21,11 @@ Checklist:
   - "[ ] Aplicar ajustes do usuário"
   - "[ ] Gerar o arquivo de blueprint"
   - "[ ] Exibir os próximos passos"
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # *design-squad

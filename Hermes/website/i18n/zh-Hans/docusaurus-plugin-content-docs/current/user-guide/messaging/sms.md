@@ -3,6 +3,9 @@ sidebar_position: 8
 sidebar_label: "SMS (Twilio)"
 title: "SMS (Twilio)"
 description: "通过 Twilio 将 Hermes Agent 设置为 SMS 聊天机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # SMS 设置（Twilio）

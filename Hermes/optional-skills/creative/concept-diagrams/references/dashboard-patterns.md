@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/concept-diagrams/references/infrastructure-patterns|infrastructure-patterns]]"
+  - "[[Hermes/optional-skills/creative/concept-diagrams/references/physical-shape-cookbook|physical-shape-cookbook]]"
+---
+
 # Dashboard Patterns
 
 Building blocks for UI/dashboard mockups inside a concept diagram — admin panels, monitoring dashboards, control interfaces, status displays.

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/README|README]]"
+---
+
 # Roteiro de Teste — Squad Hermes
 
 > **Modelo:** METODO §5 #12 (`Caos/modelos/roteiro-de-teste.md`).

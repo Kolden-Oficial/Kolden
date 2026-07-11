@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/README|README]]"
+---
+
 # Constituição Prometeu (Kolden Art. X) — v1.0
 
 > **Escopo:** norma canônica agent-safety Kolden aplicada ao squad Prometeu.

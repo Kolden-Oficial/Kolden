@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Architecture model selected with scored rationale"
   - "[ ] All products/services mapped into the architecture"
   - "[ ] Governance framework established"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/brand-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Design Brand Architecture

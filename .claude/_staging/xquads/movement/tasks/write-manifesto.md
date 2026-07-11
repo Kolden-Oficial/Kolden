@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Manifesto includes all 7 components"
   - "[ ] Enemy named as systemic force, not person"
   - "[ ] Call to action includes concrete first step"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/movement/tasks/_indice|_indice]]"
 ---
 
 # Task: Write Manifesto

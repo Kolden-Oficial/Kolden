@@ -23,6 +23,11 @@ Checklist:
   - "[ ] Atualizar registry.json"
   - "[ ] Criar Pull Request"
   - "[ ] Exibir URL do PR"
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # *publish-squad

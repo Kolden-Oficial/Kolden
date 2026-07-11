@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/software-development/code-wiki/templates/architecture|architecture]]"
+  - "[[Hermes/optional-skills/software-development/code-wiki/templates/getting-started|getting-started]]"
+  - "[[Hermes/optional-skills/software-development/code-wiki/templates/module|module]]"
+---
+
 # {{PROJECT_NAME}}
 
 {{ONE_PARAGRAPH_DESCRIPTION}}

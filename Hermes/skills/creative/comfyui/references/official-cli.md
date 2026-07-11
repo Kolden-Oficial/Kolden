@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/comfyui/references/rest-api|rest-api]]"
+  - "[[Hermes/skills/creative/comfyui/references/template-integrity|template-integrity]]"
+  - "[[Hermes/skills/creative/comfyui/references/workflow-format|workflow-format]]"
+---
+
 # comfy-cli Command Reference
 
 Official CLI from [Comfy-Org/comfy-cli](https://github.com/Comfy-Org/comfy-cli).

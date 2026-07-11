@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/diagnostico_caos/_indice|_indice]]"
+---
+
 # 02 — Reconstrução do workflow real de `/absorver`
 
 > Reconstruído a partir dos arquivos, não do que "se espera". Cada passo cita `arquivo:linha` e é marcado `[EXPLÍCITO]` (codificado/instruído, com reforço determinístico) ou `[IMPLÍCITO]` (depende do modelo "fazer a coisa certa" sem trava). **Todo passo `[IMPLÍCITO]` é ponto de falha em potencial.**

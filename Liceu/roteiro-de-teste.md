@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/README|README]]"
+---
+
 # Roteiro de Teste — Liceu (Fase 7: Teste de Comportamento)
 
 Smoke tests derivados da jornada do PRD (§9) e dos modos de falha (§10). Cada teste tem um cenário

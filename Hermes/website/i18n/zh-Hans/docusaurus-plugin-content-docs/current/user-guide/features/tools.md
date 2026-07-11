@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: "工具与工具集"
 description: "Hermes Agent 工具概览——可用工具、工具集工作方式及终端后端"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 工具与工具集

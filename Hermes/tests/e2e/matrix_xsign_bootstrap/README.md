@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Matrix cross-signing bootstrap — E2E test
 
 Self-contained end-to-end test for the auto-bootstrap behavior added in

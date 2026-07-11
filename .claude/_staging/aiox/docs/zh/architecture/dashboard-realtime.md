@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/architecture/_indice|_indice]]"
+---
+
 # AIOX Dashboard - 实时可观测性架构
 
 > [EN](../../architecture/dashboard-realtime.md) | [PT](../../pt/architecture/dashboard-realtime.md) | [ES](../../es/architecture/dashboard-realtime.md) | **ZH**

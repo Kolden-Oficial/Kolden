@@ -16,6 +16,11 @@ Saida:
     tipo: object
     destino: Console / Handoff
     persistido: true
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Gate de Evidência + Decisão — Aletheia

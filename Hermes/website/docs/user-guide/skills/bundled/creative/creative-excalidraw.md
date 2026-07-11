@@ -2,6 +2,11 @@
 title: "Excalidraw — Hand-drawn Excalidraw JSON diagrams (arch, flow, seq)"
 sidebar_label: "Excalidraw"
 description: "Hand-drawn Excalidraw JSON diagrams (arch, flow, seq)"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/creative/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

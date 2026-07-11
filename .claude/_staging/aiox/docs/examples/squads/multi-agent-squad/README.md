@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # Multi-Agent Squad Example
 
 Demonstrates how to create a squad with multiple collaborating agents.

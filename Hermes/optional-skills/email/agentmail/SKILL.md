@@ -7,6 +7,9 @@ metadata:
   hermes:
     tags: [email, communication, agentmail, mcp]
     category: email
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # AgentMail — Agent-Owned Email Inboxes

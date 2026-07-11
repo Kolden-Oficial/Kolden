@@ -2,6 +2,9 @@
 title: "Agentmail — 通过 AgentMail 为 Agent 提供专属电子邮件收件箱"
 sidebar_label: "Agentmail"
 description: "通过 AgentMail 为 Agent 提供专属电子邮件收件箱"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Scalability assessment completed with risk ratings"
   - "[ ] Scaling method selected with rationale"
   - "[ ] Monitoring guardrails defined with thresholds"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/traffic-masters/tasks/_indice|_indice]]"
 ---
 
 # Task: Scale Campaign

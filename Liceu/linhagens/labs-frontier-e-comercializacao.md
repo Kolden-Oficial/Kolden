@@ -7,6 +7,11 @@ status: vigente
 atualizado-em: 2026-07-04
 mentes: [sam-altman, dario-amodei, mustafa-suleyman, aidan-gomez]
 frameworks_derivados: [arquitetura-de-agents-kolden]
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/linhagens/_indice|_indice]]"
 ---
 
 # Linhagem: Labs frontier e comercialização — a diáspora institucional 2015-2024

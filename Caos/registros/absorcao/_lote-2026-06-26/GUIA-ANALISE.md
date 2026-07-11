@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/_lote-2026-06-26/_indice|_indice]]"
+---
+
 # GUIA DE ANÁLISE — subagente de absorção (F2 + F3 + F4)
 
 Você analisa **UM** repositório de terceiro já clonado em quarentena. Saída = 4 arquivos gravados +

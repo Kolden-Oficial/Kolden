@@ -2,6 +2,9 @@
 sidebar_position: 16
 title: "Google Gemini"
 description: "将 Hermes Agent 与 Google Gemini 配合使用——原生 AI Studio API、API 密钥配置、OAuth 选项、工具调用、流式传输及配额说明"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Google Gemini

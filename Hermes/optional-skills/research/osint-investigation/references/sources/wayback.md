@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/research/osint-investigation/references/sources/_indice|_indice]]"
+---
+
 # Wayback Machine — Internet Archive CDX
 
 ## 1. Summary

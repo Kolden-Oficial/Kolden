@@ -17,6 +17,9 @@ allowed-tools:
   - Grep
   - Glob
   - AskUserQuestion
+tipo: skill
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
 ---
 
 # Amazon PPC — fásico Launch / Growth / Mature (PT-BR)

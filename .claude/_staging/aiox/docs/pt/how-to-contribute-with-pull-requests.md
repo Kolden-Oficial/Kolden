@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/README|README]]"
+---
+
 <!-- Tradução: PT-BR | Original: /docs/en/how-to-contribute-with-pull-requests.md | Sincronização: 2026-01-26 -->
 
 # Como Contribuir com Pull Requests

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/slime/references/api-reference|api-reference]]"
+---
+
 # slime Troubleshooting Guide
 
 ## Common Issues and Solutions

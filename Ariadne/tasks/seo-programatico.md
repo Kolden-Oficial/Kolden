@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/tasks/_indice|_indice]]"
+---
+
 # Tarefa: SEO Programático (em escala, com guarda de qualidade)
 
 **ID:** ARIADNE-005 · **Versão:** 1.0.0 · **Comando:** `*content` (modo escala) · **Agente:** estrategista-de-conteudo-seo

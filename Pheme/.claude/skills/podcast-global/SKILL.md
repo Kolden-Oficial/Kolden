@@ -13,6 +13,9 @@ description: >
   material com voz da marca (isso é `fundacao-de-voz`).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Podcast Global — hook, crescimento e trilha de 3 plataformas

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All components inventoried and mapped to design system"
   - "[ ] Every visual value mapped to a design token"
   - "[ ] Dev review completed with tradeoffs documented"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/design-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Developer Handoff Documentation

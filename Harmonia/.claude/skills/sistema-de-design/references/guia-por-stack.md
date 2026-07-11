@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/catalogo-de-estilos|catalogo-de-estilos]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/paletas-e-tipografia|paletas-e-tipografia]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/regras-ux|regras-ux]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/tipos-de-produto|tipos-de-produto]]"
+---
+
 # Diretrizes por stack (17 frameworks)
 
 A base traz CSVs de boas práticas por stack

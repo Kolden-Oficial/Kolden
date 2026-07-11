@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/framework/README|README]]"
+---
+
 # Agent Memory Lifecycle & Config Ownership
 
 ## MEMORY.md Structured Format

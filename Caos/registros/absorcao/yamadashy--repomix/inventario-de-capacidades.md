@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/yamadashy--repomix/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/yamadashy--repomix/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades — yamadashy--repomix (rota B, enxuto)
 
 - **slug:** yamadashy--repomix · **sha:** f04db0088ec00969436a0878bdae8f43176f9e11

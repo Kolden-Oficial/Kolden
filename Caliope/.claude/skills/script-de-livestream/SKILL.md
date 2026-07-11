@@ -15,6 +15,9 @@ allowed-tools:
   - Grep
   - Glob
   - AskUserQuestion
+tipo: skill
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
 ---
 
 # Script de livestream — o bloco de 5 minutos que se repete (PT-BR)

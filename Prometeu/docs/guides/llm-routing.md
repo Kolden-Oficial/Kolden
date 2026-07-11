@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # LLM Routing Guide
 
 > **EN** | [PT](../pt/guides/llm-routing.md) | [ES](../es/guides/llm-routing.md)

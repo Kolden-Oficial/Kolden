@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Experiência vivida identificada com estruturas essenciais"
   - "[ ] Tensão coletiva mapeada com classificação de intensidade"
   - "[ ] Potencial de movimento avaliado com justificativa"
+tipo: nota
+area: Dionisio
+up: "[[Dionisio/_MOC-dionisio]]"
+relacionado:
+  - "[[Dionisio/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Analisar Fenômeno

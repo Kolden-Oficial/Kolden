@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/research/osint-investigation/references/sources/_indice|_indice]]"
+---
+
 # NYC ACRIS — NYC Real Property Records
 
 ## 1. Summary

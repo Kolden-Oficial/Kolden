@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Introducing Deep Research: The Open Source Alternative
 
 ## The Dawn of Deep Research in AI

@@ -11,6 +11,9 @@ triggers:
   - parody song
   - adapting a song
   - AI music generation
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Songwriting & AI Music Generation

@@ -1,5 +1,8 @@
 ---
 sidebar_position: 9
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 添加平台适配器

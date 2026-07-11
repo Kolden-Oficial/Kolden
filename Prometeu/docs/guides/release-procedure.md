@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # Release Procedure SOP — @aiox-squads/core
 
 Authoritative procedure for publishing a new version of `@aiox-squads/core` (and

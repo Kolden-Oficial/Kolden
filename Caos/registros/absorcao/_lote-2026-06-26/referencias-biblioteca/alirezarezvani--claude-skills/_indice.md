@@ -6,6 +6,8 @@ licenca: MIT
 classe: coletânea guarda-chuva (346 skills; forte duplicata cruzada no lote)
 disposicao: REFERENCIA-ARQUIVADA
 data: 2026-06-27
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 > ############################################################

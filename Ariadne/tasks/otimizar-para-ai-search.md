@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/tasks/_indice|_indice]]"
+---
+
 # Tarefa: Otimizar para AI Search (AEO/GEO/LLMO)
 
 **ID:** ARIADNE-006 · **Versão:** 1.0.0 · **Comando:** `*ai-seo` · **Agente:** otimizador-ai-seo

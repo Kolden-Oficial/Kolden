@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Estrutura dos 3 Segredos com pontes de epifania que quebram crenças"
   - "[ ] Sequência de stack e fechamento completa com ancoragem de preço"
   - "[ ] Camada Psicológica aplicada (princípios de Cialdini/Warren marcados)"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Task: Escrever Roteiro de Webinar

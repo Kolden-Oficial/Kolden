@@ -25,6 +25,11 @@ Checklist:
   - "[ ] 3-5 audience segments defined with targeting details"
   - "[ ] Campaign structure mapped by funnel stage"
   - "[ ] Budget allocated with daily and monthly breakdowns"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/traffic-masters/tasks/_indice|_indice]]"
 ---
 
 # Task: Create Ad Strategy

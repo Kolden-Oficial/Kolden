@@ -2,6 +2,11 @@
 sidebar_position: 1
 title: "CLI Interface"
 description: "Master the Hermes Agent terminal interface — commands, keybindings, personalities, and more"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/_indice|_indice]]"
 ---
 
 # CLI Interface

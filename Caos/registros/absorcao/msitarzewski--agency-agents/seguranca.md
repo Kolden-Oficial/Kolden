@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 ﻿# F2 — Segurança estática · msitarzewski/agency-agents@a597cb6
 
 | Campo | Valor |

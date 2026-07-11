@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # FAISS Index Types Guide
 
 Complete guide to choosing and using FAISS index types.

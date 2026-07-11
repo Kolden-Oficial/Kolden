@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # AIOX Squads Publishing Protocol
 
 This document is the operational protocol for Epic 124: migrating npm packages to the canonical `@aiox-squads/*` scope.

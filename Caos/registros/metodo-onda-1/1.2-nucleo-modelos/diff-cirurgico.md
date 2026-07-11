@@ -1,3 +1,9 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # Diff cirúrgico — Sub-onda 1.2 (núcleo + 12 modelos)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (Sub-onda 1.2 — herança da Onda 3 original do `m-20260705`)

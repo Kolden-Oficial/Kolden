@@ -7,6 +7,9 @@ description: >
   complexos, mais lead scoring e o aceite/recusa do handoff marketing→vendas (MQL→SQL ou volta a nutrir).
   Gatilhos: "qualificar lead", "esse lead presta", "BANT", "MEDDIC", "lead scoring", "MQL", "SQL", "fit
   com ICP", "vale a pena perseguir". Dono: qualificador-de-leads. CRM e enriquecimento via Infisical.
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # Qualificação BANT / MEDDIC

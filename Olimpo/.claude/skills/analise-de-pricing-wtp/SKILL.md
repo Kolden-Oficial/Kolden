@@ -3,6 +3,9 @@ name: analise-de-pricing-wtp
 description: Use quando o Plutos precisar recomendar o PREÇO de uma oferta nova, revisar preço de oferta existente, definir política de desconto/versionamento (bom/melhor/ótimo), ou responder a questionamento comercial ("por que R$X e não R$Y?"). Método em três camadas — market research (o que a concorrência cobra e como estrutura), custo (piso de margem defensável) e willingness-to-pay (van Westendorp + entrevista qualitativa) — para ancorar o preço no valor capturado pelo cliente, não no custo. Handoff obrigatório a Argos para market-data quando o dado externo pesa. NÃO use para preço de mídia paga (isso é `alocacao_de_budget`) nem para negociação de venda pontual (isso é Afrodite/Emporos).
 invocavel_por: plutos
 tags: [pricing, wtp, van-westendorp, versionamento, olimpo]
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Análise de Pricing e Willingness-to-Pay (WTP)

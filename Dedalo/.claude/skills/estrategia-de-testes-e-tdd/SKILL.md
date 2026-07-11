@@ -1,6 +1,9 @@
 ---
 name: estrategia-de-testes-e-tdd
 description: Use ao escrever testes, decidir estratégia de teste, ou implementar feature/fix com qualidade — "escreve os testes", "como testo isso?", "qual cobertura?", "faz TDD". Traz o ciclo RED→GREEN→REFACTOR, a pirâmide de testes (unidade/integração/E2E) e onde cada um pertence, alvos de cobertura por criticidade, a disciplina de mocks/fixtures (mock na fronteira, não no detalhe), e o ponto-cego nº1 de código gerado por IA (inconsistência sandbox×produção que só o teste pega). NÃO use para revisar diff alheio (use revisao-de-codigo-por-linguagem).
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Estratégia de Testes e TDD

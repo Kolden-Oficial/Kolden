@@ -2,6 +2,9 @@
 sidebar_position: 8
 title: "扩展 CLI"
 description: "构建包装 CLI，通过自定义 widget、快捷键和布局变更来扩展 Hermes TUI"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 扩展 CLI

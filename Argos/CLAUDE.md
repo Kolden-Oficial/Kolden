@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/README|README]]"
+---
+
 # ARGOS — Squad de Inteligência de Mercado & Scraping
 
 > **Versão:** 1.0.0 | **Criado:** 2026-06-20 | **Tipo:** squad (tier 0 + 13 especialistas + 1 sentinela)

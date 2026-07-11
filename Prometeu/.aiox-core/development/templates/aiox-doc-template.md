@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/templates/_indice|_indice]]"
+---
+
 # Template de Documentação AIOX
 
 **Versão:** 1.0.0

@@ -2,6 +2,9 @@
 sidebar_position: 8
 title: "MCP 配置参考"
 description: "Hermes Agent MCP 配置键、过滤语义及工具策略参考"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # MCP 配置参考

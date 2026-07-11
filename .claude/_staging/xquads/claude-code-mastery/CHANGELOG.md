@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/claude-code-mastery/README|README]]"
+---
+
 # Changelog — claude-code-mastery
 
 All notable changes to the Claude Code Mastery squad.

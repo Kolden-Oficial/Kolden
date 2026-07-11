@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/skills/ciclo-de-fase-goal-backward/references/padroes-de-verificacao|padroes-de-verificacao]]"
+---
+
 # Leis de Ferro — racionalizações a derrubar
 
 Material de apoio da etapa EXECUTE (TDD) e VERIFY (evidência). Estas tabelas existem porque

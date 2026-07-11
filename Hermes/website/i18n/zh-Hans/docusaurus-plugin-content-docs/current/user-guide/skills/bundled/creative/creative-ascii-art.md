@@ -2,6 +2,9 @@
 title: "Ascii Art — ASCII art: pyfiglet, cowsay, boxes, image-to-ascii"
 sidebar_label: "Ascii Art"
 description: "ASCII art：pyfiglet、cowsay、boxes、image-to-ascii"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

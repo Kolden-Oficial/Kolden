@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/README|README]]"
+---
+
 # Instalação — Aletheia
 
 Como colocar o squad em produção.

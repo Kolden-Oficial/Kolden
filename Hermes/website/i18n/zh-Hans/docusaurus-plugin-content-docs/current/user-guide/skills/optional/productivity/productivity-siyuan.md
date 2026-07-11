@@ -2,6 +2,9 @@
 title: "Siyuan"
 sidebar_label: "Siyuan"
 description: "通过 curl 调用 SiYuan Note API，在自托管知识库中搜索、读取、创建和管理块与文档"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

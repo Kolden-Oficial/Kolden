@@ -9,6 +9,9 @@ description: >-
   o pedido parecer um remendo de algo maior, ou no início da descida do Zeus
   sobre o Contrato de Missão. NÃO use para execução já decidida nem quando a
   missão é explicitamente um hotfix/correção pontual (aí o modo é MANTER ESCOPO).
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Reframe "produto 10 estrelas"

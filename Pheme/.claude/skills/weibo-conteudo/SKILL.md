@@ -11,6 +11,9 @@ description: >
   escopo desta skill).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Weibo — trending + Super Topics + crisis playbook

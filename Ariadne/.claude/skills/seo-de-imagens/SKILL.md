@@ -8,6 +8,9 @@ description: >
   imagem", "alt text", "otimizar imagens", "tamanho de imagem", "converter para
   webp", "metadados de imagem", "image SERP", "imagem não aparece no Google".
   É uma frente NOVA da Ariadne (sem especialista de imagem até então).
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # SEO de Imagens

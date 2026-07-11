@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/anthropics--knowledge-work-plugins/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/anthropics--knowledge-work-plugins/seguranca|seguranca]]"
+---
+
 # Mapa de decisão (F4) — anthropics--knowledge-work-plugins
 
 Viés autônomo: sem match item-a-item provado, prefere-se ADAPT/CREATE a REUSE.

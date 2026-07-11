@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/data/tech-presets/_indice|_indice]]"
+---
+
 # Rust Tech Preset
 
 > Preset de arquitetura para servicos Rust com foco em seguranca de memoria, previsibilidade de concorrencia e latencia baixa.

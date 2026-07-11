@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/README|README]]"
+---
+
 # Instalação — Squad Ariadne
 
 ## Pré-requisitos

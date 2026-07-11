@@ -21,6 +21,11 @@ Checklist:
   - "[ ] Requisição interpretada e domínio de marca identificado"
   - "[ ] Catálogo de roteamento consultado com resultados pontuados"
   - "[ ] Resposta rápida fornecida com roteamento para especialista"
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar Desafio de Marca

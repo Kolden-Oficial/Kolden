@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+---
+
 # Memória do Agente {NOME_DO_AGENTE}
 
 > Memória persistente deste agente. Atualizada pelo Ritual de Encerramento

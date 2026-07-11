@@ -11,6 +11,9 @@ description: >
   FUNDAÇÃO que as demais habilidades do squad leem antes de escrever.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Fundação de Voz — perfil + arquitetura de contexto compartilhado

@@ -1,6 +1,11 @@
 ---
 tools:
   - pm-tool  # Usa a ferramenta de PM configurada (ClickUp, GitHub, Jira, ou somente-local)
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # pull-story

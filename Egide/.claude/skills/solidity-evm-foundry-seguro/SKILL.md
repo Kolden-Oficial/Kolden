@@ -13,6 +13,9 @@ description: >
   "oracle manipulation", "flash loan attack", "invariant testing", "proxy
   upgradeable", "OpenZeppelin". Dono: jim-manico (AppSec) — cross-link Trail of
   Bits + OpenZeppelin.
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Solidity + EVM + Foundry seguro

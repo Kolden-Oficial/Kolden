@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 01 — Reconciliação de contagem da frota
 
 > Passo 0 do protocolo. Bloqueante. Tudo abaixo verificado **arquivo-a-arquivo** via Glob, com paths absolutos.

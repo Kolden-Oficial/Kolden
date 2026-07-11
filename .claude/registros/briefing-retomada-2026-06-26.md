@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/mcp-desligamento-2026-06-30|mcp-desligamento-2026-06-30]]"
+---
+
 # Briefing de Retomada — Kolden (2026-06-26)
 
 > Gerado após o Ronan relatar "perda" das sessões. **Nada foi perdido em disco** — sumiu o acesso pela UI (lista de `--resume`), provavelmente por troca de conta de login no Claude Code. Este doc é o ponto de retomada consolidado.

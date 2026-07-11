@@ -7,6 +7,9 @@ description: >
   dentro da política do Afrodite (CRO); fora dela é exceção a escalar, não decisão local. Não emite parecer
   jurídico. Gatilhos: "proposta", "orçamento", "RFP", "responder licitação", "contrato comercial",
   "termos", "fechar com proposta". Dono: redator-de-propostas. GHL via Infisical.
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # Redação de Proposta Comercial

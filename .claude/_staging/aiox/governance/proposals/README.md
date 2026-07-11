@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # aiox-core/governance/proposals/
 
 FrameworkProposals — formal change requests to evolve the AIOX framework based on AuditFindings.

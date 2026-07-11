@@ -9,6 +9,9 @@ description: >-
   AI-tells antes de entregar. É a postura de "design lead de estúdio" que o
   design-chief e o visual-generator aplicam. Tells de CONTEÚDO/copy (em-dash,
   nomes fake, verbos clichê) NÃO são tratados aqui — vão para o squad Caliope.
+tipo: skill
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
 ---
 
 # Julgamento estético — anti-slop

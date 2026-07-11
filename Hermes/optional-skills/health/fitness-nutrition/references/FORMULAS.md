@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Formulas Reference
 
 Scientific references for all calculators used in the fitness-nutrition skill.

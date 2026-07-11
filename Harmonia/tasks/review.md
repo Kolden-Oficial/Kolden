@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os itens do checklist avaliados"
   - "[ ] Veredito proferido (APROVAR/REVISAR/REJEITAR)"
   - "[ ] Acessibilidade, consistência e responsividade avaliadas individualmente"
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Revisar Saída de Design Systems/UX

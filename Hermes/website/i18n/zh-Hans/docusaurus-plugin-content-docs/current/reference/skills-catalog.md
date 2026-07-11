@@ -2,6 +2,9 @@
 sidebar_position: 5
 title: "内置技能目录"
 description: "随 Hermes Agent 附带的内置技能目录"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 内置技能目录

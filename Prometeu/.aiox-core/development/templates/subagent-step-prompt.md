@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/templates/_indice|_indice]]"
+---
+
 # Template de Prompt de Passo de Subagente
 
 > **Propósito:** Template reutilizável para construir prompts de subagente no Workflow Runtime Engine.

@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/perplexityai--modelcontextprotocol/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/perplexityai--modelcontextprotocol/seguranca|seguranca]]"
+---
+
 # Mapa de decisão (F4) — perplexityai--modelcontextprotocol
 
 Comparação de cada ID do inventário contra `dados/registro-de-entidades.yaml` e os squads existentes.

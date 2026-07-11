@@ -1,3 +1,33 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/00-shared-activation-pipeline|00-shared-activation-pipeline]]"
+  - "[[Prometeu/docs/CHANGELOG|CHANGELOG]]"
+  - "[[Prometeu/docs/codex-integration-process|codex-integration-process]]"
+  - "[[Prometeu/docs/community|community]]"
+  - "[[Prometeu/docs/core-architecture|core-architecture]]"
+  - "[[Prometeu/docs/docker-mcp-setup|docker-mcp-setup]]"
+  - "[[Prometeu/docs/FEATURE_PROCESS|FEATURE_PROCESS]]"
+  - "[[Prometeu/docs/getting-started|getting-started]]"
+  - "[[Prometeu/docs/git-workflow-guide|git-workflow-guide]]"
+  - "[[Prometeu/docs/glossary|glossary]]"
+  - "[[Prometeu/docs/GUIDING-PRINCIPLES|GUIDING-PRINCIPLES]]"
+  - "[[Prometeu/docs/how-to-contribute-with-pull-requests|how-to-contribute-with-pull-requests]]"
+  - "[[Prometeu/docs/ide-integration|ide-integration]]"
+  - "[[Prometeu/docs/meta-agent-commands|meta-agent-commands]]"
+  - "[[Prometeu/docs/npx-install|npx-install]]"
+  - "[[Prometeu/docs/prd-cli-graph-dashboard|prd-cli-graph-dashboard]]"
+  - "[[Prometeu/docs/PUBLISHING|PUBLISHING]]"
+  - "[[Prometeu/docs/roadmap|roadmap]]"
+  - "[[Prometeu/docs/security|security]]"
+  - "[[Prometeu/docs/security-best-practices|security-best-practices]]"
+  - "[[Prometeu/docs/troubleshooting|troubleshooting]]"
+  - "[[Prometeu/docs/uninstallation|uninstallation]]"
+  - "[[Prometeu/docs/versioning-and-releases|versioning-and-releases]]"
+---
+
 # Synkra AIOX Documentation
 
 > 🌐 **EN** | [PT](./pt/README.md) | [ES](./es/README.md) | [ZH](./zh/README.md)

@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/faq|faq]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/roadmap|roadmap]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/welcome|welcome]]"
+---
+
 # Contribute
 
 We highly welcome contributions! Please check out [contributing](https://github.com/assafelovic/gpt-researcher/blob/master/CONTRIBUTING.md) if you're interested.

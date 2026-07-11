@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/huggingface-tokenizers/references/algorithms|algorithms]]"
+  - "[[Hermes/optional-skills/mlops/huggingface-tokenizers/references/pipeline|pipeline]]"
+  - "[[Hermes/optional-skills/mlops/huggingface-tokenizers/references/training|training]]"
+---
+
 # Transformers Integration
 
 Complete guide to using HuggingFace Tokenizers with the Transformers library.

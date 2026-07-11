@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Design Squad
 
 Design operations squad — 3 experts + 4 specialists + 1 orchestrator.

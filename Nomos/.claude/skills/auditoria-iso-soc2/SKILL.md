@@ -6,6 +6,9 @@ description: >-
   "SOC 2", "ISO 42001", "AIMS", "auditoria", "readiness", "controle", "evidência", "gap analysis",
   "Statement of Applicability/SoA" ou "certificação". Produz matriz de controles, readiness score e plano
   de remediação — preparação interna, não certificação externa.
+tipo: skill
+area: Nomos
+up: "[[Nomos/_MOC-nomos]]"
 ---
 
 # Auditoria ISO / SOC 2 / ISO 42001

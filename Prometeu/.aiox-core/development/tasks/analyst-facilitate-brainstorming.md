@@ -4,6 +4,11 @@ docOutputLocation: docs/brainstorming-session-results.md
 template: ".aiox-core/product/templates/brainstorming-output-tmpl.yaml"
 tools:
   - github-cli
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Task: Facilitar Sessão de Brainstorming

@@ -2,6 +2,11 @@
 sidebar_position: 11
 title: "ACP Editor Integration"
 description: "Use Hermes Agent inside ACP-compatible editors such as VS Code, Zed, and JetBrains"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # ACP Editor Integration

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/README|README]]"
+---
+
 <!--
   Traducción: ES
   Original: /docs/en/versioning-and-releases.md

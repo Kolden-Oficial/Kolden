@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/harry0703--MoneyPrinterTurbo/briefing-de-execucao|briefing-de-execucao]]"
+  - "[[Caos/registros/absorcao/harry0703--MoneyPrinterTurbo/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/harry0703--MoneyPrinterTurbo/seguranca|seguranca]]"
+---
+
 # Mapa de decisão — harry0703--MoneyPrinterTurbo (rota B)
 
 - **slug:** harry0703--MoneyPrinterTurbo · **sha:** ad6aabfeb94f16f35474058d9c3e1f74ce66e9d4

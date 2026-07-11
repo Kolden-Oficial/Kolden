@@ -2,6 +2,9 @@
 title: "研究论文写作 — 为 NeurIPS/ICML/ICLR 撰写 ML 论文：设计→投稿"
 sidebar_label: "研究论文写作"
 description: "为 NeurIPS/ICML/ICLR 撰写 ML 论文：设计→投稿"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

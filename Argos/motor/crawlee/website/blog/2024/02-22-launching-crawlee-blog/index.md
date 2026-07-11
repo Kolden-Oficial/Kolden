@@ -4,6 +4,9 @@ title: 'Launching Crawlee Blog'
 description: 'Your Node.js resource hub for web scraping and automation.'
 image: https://raw.githubusercontent.com/souravjain540/crawlee-first-blog/main/og-image.webp
 authors: [SauravJ]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 Hey, crawling masters!

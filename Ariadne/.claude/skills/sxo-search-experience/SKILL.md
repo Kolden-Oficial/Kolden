@@ -9,6 +9,9 @@ description: >
   "search experience", "tipo de página errado", "análise de SERP", "user story",
   "score por persona", "por que minha página não ranqueia", "intent mismatch",
   "wireframe". É uma frente NOVA da Ariadne, que conecta SEO e CRO.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # SXO — Search Experience Optimization

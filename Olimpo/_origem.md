@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/README|README]]"
+---
+
 # Origem
 
 - **Origem:** `ohmyjahh/xquads-squads`

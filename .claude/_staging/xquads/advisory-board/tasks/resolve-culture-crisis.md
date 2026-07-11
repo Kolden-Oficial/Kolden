@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All three diagnostic frameworks applied"
   - "[ ] Root cause identified with causal chain mapped"
   - "[ ] Implementation plan with quick wins and measurement criteria"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/advisory-board/tasks/_indice|_indice]]"
 ---
 
 # Task: Culture & Team Dysfunction Resolution

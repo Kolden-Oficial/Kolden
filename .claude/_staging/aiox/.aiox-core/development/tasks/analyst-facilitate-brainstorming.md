@@ -4,6 +4,11 @@ docOutputLocation: docs/brainstorming-session-results.md
 template: ".aiox-core/product/templates/brainstorming-output-tmpl.yaml"
 tools:
   - github-cli
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Facilitate Brainstorming Session Task

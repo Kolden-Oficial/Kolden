@@ -3,6 +3,11 @@ sidebar_position: 3
 sidebar_label: "Git Worktrees"
 title: "Git Worktrees"
 description: "Run multiple Hermes agents safely on the same repository using git worktrees and isolated checkouts"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/_indice|_indice]]"
 ---
 
 # Git Worktrees

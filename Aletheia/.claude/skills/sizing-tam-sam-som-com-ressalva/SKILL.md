@@ -19,6 +19,9 @@ veto:
   - "NÃO substitui XYZ Hypothesis em validação primária"
   - "NÃO usar para decidir validar ideia"
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G22)
+tipo: skill
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
 ---
 
 # Sizing TAM/SAM/SOM (com ressalva Savoia)

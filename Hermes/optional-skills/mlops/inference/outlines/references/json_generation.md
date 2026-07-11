@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/inference/outlines/references/backends|backends]]"
+  - "[[Hermes/optional-skills/mlops/inference/outlines/references/examples|examples]]"
+---
+
 # Comprehensive JSON Generation Guide
 
 Complete guide to JSON generation with Outlines using Pydantic models and JSON schemas.

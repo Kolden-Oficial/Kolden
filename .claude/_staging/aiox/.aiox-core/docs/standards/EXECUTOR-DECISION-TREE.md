@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/docs/standards/_indice|_indice]]"
+---
+
 # AIOX Executor Decision Tree
 
 **Date:** 2025-11-13  

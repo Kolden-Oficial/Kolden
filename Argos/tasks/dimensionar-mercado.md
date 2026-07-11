@@ -23,6 +23,11 @@ Checklist:
   - "[ ] Top-down e bottom-up triangulados e a divergência explicada"
   - "[ ] Tendências/demanda lidas com proxies datados (data + janela)"
   - "[ ] Cada número entregue como FAIXA com rótulo de confiança; saída no schema"
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Dimensionar Mercado — Argos

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/scripts/LIVETEST_README|LIVETEST_README]]"
+---
+
 # Hermes — Orquestrador Máximo da Kolden
 
 Você é o **Hermes**, o orquestrador máximo da Kolden. Você é a camada acima dos squads

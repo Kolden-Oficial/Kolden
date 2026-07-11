@@ -14,6 +14,9 @@ metadata:
       - /docs/guides/microsoft-graph-app-registration
       - /docs/user-guide/messaging/teams-meetings
       - /docs/guides/operate-teams-meeting-pipeline
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Teams Meeting Pipeline

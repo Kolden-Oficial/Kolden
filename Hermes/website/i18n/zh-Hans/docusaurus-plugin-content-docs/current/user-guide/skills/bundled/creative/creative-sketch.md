@@ -2,6 +2,9 @@
 title: "Sketch — 一次性 HTML 原型：2-3 个设计方案对比"
 sidebar_label: "Sketch"
 description: "一次性 HTML 原型：2-3 个设计方案对比"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

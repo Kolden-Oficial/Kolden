@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/accelerate/references/megatron-integration|megatron-integration]]"
+  - "[[Hermes/optional-skills/mlops/accelerate/references/performance|performance]]"
+---
+
 # Custom Plugins for Accelerate
 
 ## Overview

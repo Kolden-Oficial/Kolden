@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/tests/macos/MANUAL-TESTING-GUIDE|MANUAL-TESTING-GUIDE]]"
+---
+
 # macOS Testing Suite for AIOX
 **Story 1.10b - macOS Testing & Validation**
 

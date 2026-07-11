@@ -3,6 +3,11 @@ title: Web Search & Extract
 description: Search the web and extract page content with multiple backend providers — including free self-hosted SearXNG.
 sidebar_label: Web Search
 sidebar_position: 6
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Web Search & Extract

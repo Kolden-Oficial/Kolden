@@ -1,3 +1,9 @@
+---
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Kanban worker lanes（工作者通道）
 
 **worker lane**（工作者通道）是 kanban 调度器可以将任务路由到的一类进程。每个通道都有一个标识（assignee 字符串）、一个生成机制，以及一份关于生成后必须如何处理任务的契约。

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/.claude/skills/criativo-como-hipotese-rsa-pmax/references/rsa-blueprint|rsa-blueprint]]"
+---
+
 # PMax Asset Group Template
 
 Um asset group = um tema. Cada tema carrega hipótese própria.

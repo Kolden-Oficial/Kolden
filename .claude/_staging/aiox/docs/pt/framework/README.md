@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/framework/coding-standards|coding-standards]]"
+  - "[[.claude/_staging/aiox/docs/pt/framework/source-tree|source-tree]]"
+  - "[[.claude/_staging/aiox/docs/pt/framework/tech-stack|tech-stack]]"
+---
+
 <!--
   Tradução: PT-BR
   Original: /docs/en/framework/README.md

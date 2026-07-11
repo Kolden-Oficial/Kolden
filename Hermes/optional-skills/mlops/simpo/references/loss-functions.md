@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/simpo/references/datasets|datasets]]"
+  - "[[Hermes/optional-skills/mlops/simpo/references/hyperparameters|hyperparameters]]"
+---
+
 # Loss Functions
 
 Complete guide to SimPO loss functions and mathematical formulations.

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/aiox-workflows/README|README]]"
+---
+
 # Auto-Worktree Workflow
 
 **Versão:** 1.0

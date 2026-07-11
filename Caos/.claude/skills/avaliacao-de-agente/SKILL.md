@@ -1,6 +1,9 @@
 ---
 name: avaliacao-de-agente
 description: Use para avaliar um AGENTE inteiro (não uma habilidade isolada) — na Fase 7 do Ritual pelo especialista testador, ou quando alguém pergunta "esse agente está bom?", "qual agente/modelo escolher?", "por que o agente piorou depois que adicionei camada X?". Cobre eval-first (rubrica multi-eixo, pass@k), comparação head-to-head, auto-avaliação por 5 eixos, auditoria das 12 camadas do stack e introspecção de falhas. NÃO use para testar uma habilidade isolada (use `validacao-de-skill`).
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Avaliação de agente (eval-first)

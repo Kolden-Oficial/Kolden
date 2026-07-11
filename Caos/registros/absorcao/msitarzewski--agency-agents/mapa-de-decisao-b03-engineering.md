@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F4 — Mapa de decisão · `msitarzewski--agency-agents@a597cb6` — bucket B03 (engineering + testing)
 
 > **Bucket B03:** engineering (33 agentes upstream, 85 IDs G1–G85) + testing (8 agentes upstream, 32 IDs G1–G32).

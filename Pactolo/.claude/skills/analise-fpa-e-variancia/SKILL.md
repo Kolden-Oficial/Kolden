@@ -8,6 +8,9 @@ description: >
   fonte do realizado e a premissa da projeção. Gatilhos: "montar orçamento", "forecast", "budget vs
   actual", "realizado vs orçado", "por que estouramos o orçamento", "análise de variância",
   "reforecast". Dono: analista-fpa. Decisão (corte/realocação) → handoff ao Plutos (Olimpo/CFO).
+tipo: skill
+area: Pactolo
+up: "[[Pactolo/_MOC-pactolo]]"
 ---
 
 # Análise FP&A e Variância

@@ -1,3 +1,33 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/guides/ade-guide|ade-guide]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/agent-selection-guide|agent-selection-guide]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/api-reference|api-reference]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/build-recovery-guide|build-recovery-guide]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/contextual-greeting-system-guide|contextual-greeting-system-guide]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/contributing-squads|contributing-squads]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/development-setup|development-setup]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/ide-sync-guide|ide-sync-guide]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/installation-troubleshooting|installation-troubleshooting]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/llm-routing|llm-routing]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/mcp-global-setup|mcp-global-setup]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/MEMORY-INTEGRATION|MEMORY-INTEGRATION]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/MEMORY-INTELLIGENCE-SYSTEM|MEMORY-INTELLIGENCE-SYSTEM]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/MEMORY-SYSTEM|MEMORY-SYSTEM]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/permission-modes|permission-modes]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/project-status-feature|project-status-feature]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/quality-dashboard|quality-dashboard]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/quality-gates|quality-gates]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/security-hardening|security-hardening]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/service-discovery|service-discovery]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/squad-migration|squad-migration]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/template-engine-v2|template-engine-v2]]"
+  - "[[.claude/_staging/aiox/docs/zh/guides/workflows-guide|workflows-guide]]"
+---
+
 # AIOX 指南
 
 > **[EN](../../guides/README.md)** | **[PT](../../pt/guides/README.md)** | **[ES](../../es/guides/README.md)** | **ZH**

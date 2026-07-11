@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/development/scrapling_custom_types|scrapling_custom_types]]"
+---
+
 # Writing your retrieval system
 
 Scrapling uses SQLite by default, but this tutorial shows how to write your own storage system to store element properties for the `adaptive` feature.

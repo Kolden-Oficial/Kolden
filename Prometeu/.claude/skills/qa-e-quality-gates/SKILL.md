@@ -4,6 +4,9 @@ description: Use ao desenhar a estratégia de teste de uma feature, escolher ond
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # QA & Quality Gates Avançados

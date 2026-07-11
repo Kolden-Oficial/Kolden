@@ -11,6 +11,9 @@ metadata:
     homepage: https://github.com/pimalaya/himalaya
 prerequisites:
   commands: [himalaya]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Himalaya Email CLI

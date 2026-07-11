@@ -2,6 +2,9 @@
 title: "三表模型"
 sidebar_label: "三表模型"
 description: "在 Excel 中构建完整集成的三表模型（利润表、资产负债表、现金流量表），包含营运资本明细表、折旧摊销滚动表、债务计划表，以及使现金和留存收益勾稽的插销项。与 excel-author 配合使用。"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

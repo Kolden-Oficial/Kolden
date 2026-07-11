@@ -2,6 +2,9 @@
 sidebar_position: 9
 title: "可选技能目录"
 description: "hermes-agent 附带的官方可选技能 — 通过 hermes skills install official/<category>/<skill> 安装"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 可选技能目录

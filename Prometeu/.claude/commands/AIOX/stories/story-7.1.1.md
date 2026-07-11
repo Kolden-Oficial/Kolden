@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/commands/AIOX/stories/story-6.1.4|story-6.1.4]]"
+---
+
 # Story 7.1.1: Bootstrap do Workspace /dev — Clone do aiox-dashboard
 
 **Story ID:** 7.1.1  

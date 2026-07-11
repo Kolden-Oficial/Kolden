@@ -2,6 +2,11 @@
 paths:
   - "docs/stories/**"
   - ".aiox-core/development/**"
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/rules/_indice|_indice]]"
 ---
 
 # Story Lifecycle — Detailed Rules

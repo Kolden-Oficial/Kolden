@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hestia
+up: "[[Hestia/_MOC-hestia]]"
+---
+
 # Catálogo de Habilidades — Héstia
 
 Habilidades disponíveis ao squad Héstia (RH, Pessoas & Cultura), seu gatilho de invocação e propósito.

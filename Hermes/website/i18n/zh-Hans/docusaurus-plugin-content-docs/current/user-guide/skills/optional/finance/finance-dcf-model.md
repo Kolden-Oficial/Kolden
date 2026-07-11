@@ -2,6 +2,9 @@
 title: "DCF 模型"
 sidebar_label: "Dcf Model"
 description: "在 Excel 中构建机构级 DCF 估值模型——收入预测、FCF 构建、WACC、终值、熊/基/牛情景、5x5 敏感性表格。与 excel-author 配合使用。适用于内在价值股权分析。"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

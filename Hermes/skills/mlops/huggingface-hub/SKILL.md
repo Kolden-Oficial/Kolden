@@ -6,6 +6,9 @@ author: Hugging Face
 license: MIT
 tags: [huggingface, hf, models, datasets, hub, mlops]
 platforms: [linux, macos, windows]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Hugging Face CLI (`hf`) Reference Guide

@@ -2,6 +2,9 @@
 sidebar_position: 9
 title: "Matrix"
 description: "将 Hermes Agent 设置为 Matrix 机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Matrix 设置

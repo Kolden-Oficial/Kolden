@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/productivity/powerpoint/editing|editing]]"
+  - "[[Hermes/skills/productivity/powerpoint/SKILL|SKILL]]"
+---
+
 # PptxGenJS Tutorial
 
 ## Setup & Basic Structure

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Dionisio
+up: "[[Dionisio/_MOC-dionisio]]"
+relacionado:
+  - "[[Dionisio/_origem|_origem]]"
+---
+
 # Dionisio — Squad de Movimentos e Comunidade
 
 O Dionisio é um squad de 7 agentes para construir movimentos que transcendem marcas e produtos — da faísca (a tensão coletiva sentida) ao impacto (a mudança mensurável no mundo real). Ele percorre as 5 fases canônicas da construção de movimentos (Faísca → Identidade → Ignição → Crescimento → Impacto), orquestrando análise fenomenológica, arquitetura de identidade tribal, escrita de manifestos, estratégia de ciclos de crescimento e medição de impacto, com gates de checkpoint entre cada fase para garantir coerência ponta a ponta.

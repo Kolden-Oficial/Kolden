@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/_lote-2026-06-26/_indice|_indice]]"
+---
+
 # Relatório de reconciliação (F6.5) — bucket Caos-fábrica
 
 - **squad-alvo:** Caos-fábrica · destino `C:/Kolden/Caos/.claude/skills/`

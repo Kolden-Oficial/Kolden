@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Equação de receita pontuada com todos os 4 componentes"
   - "[ ] Restrição nº 1 claramente identificada"
   - "[ ] 3 recomendações priorizadas com impacto na receita"
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+relacionado:
+  - "[[Pluto/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Auditar Negócio

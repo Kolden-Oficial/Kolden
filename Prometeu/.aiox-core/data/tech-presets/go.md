@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/data/tech-presets/_indice|_indice]]"
+---
+
 # Go Tech Preset
 
 > Preset de arquitetura para servicos backend em Go com foco em simplicidade, observabilidade e seguranca operacional.

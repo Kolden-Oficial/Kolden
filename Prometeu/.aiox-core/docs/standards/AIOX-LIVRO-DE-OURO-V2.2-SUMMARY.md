@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/docs/standards/_indice|_indice]]"
+---
+
 # 📘 AIOX v2.2 - Livro de Ouro (Future Vision)
 
 **Version:** 2.2.0-with-memory-layer  

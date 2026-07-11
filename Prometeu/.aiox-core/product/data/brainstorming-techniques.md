@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/data/_indice|_indice]]"
+---
+
 # Brainstorming Techniques Data
 
 ## Creative Expansion

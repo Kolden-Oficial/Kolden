@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/apps/desktop/README|README]]"
+---
+
 # Desktop Design System
 
 Conventions for the Electron desktop app (`apps/desktop`). Read this before

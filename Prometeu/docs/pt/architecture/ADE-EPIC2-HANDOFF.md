@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/architecture/_indice|_indice]]"
+---
+
 # ADE Epic 2 Handoff - Migração V2→V3
 
 > **De:** Quinn (@qa) - QA Agent

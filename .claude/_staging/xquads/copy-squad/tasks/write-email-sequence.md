@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Sequence type framework correctly applied"
   - "[ ] All emails written with dual subject lines"
   - "[ ] Open loops planted and resolved across sequence"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Write Email Sequence

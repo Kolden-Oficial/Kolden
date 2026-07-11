@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--06-templates-e-ferramentas/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--06-templates-e-ferramentas/reconciliacao|reconciliacao]]"
+---
+
 # Mapa de Decisão — Área "06 | Templates & Ferramentas" (Drive)
 
 > F4. 2026-06-25. Invariante: ABSORVIDO + DESCARTADO + DEFER == total do inventário (142). PERDIDO = 0.

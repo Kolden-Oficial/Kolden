@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/agents/persona-definitions|persona-definitions]]"
+---
+
 <!-- 翻译: zh-CN | 原文: /docs/agents/archetype-rationale.md | 同步: 2026-02-22 -->
 
 # AIOX 代理原型原理

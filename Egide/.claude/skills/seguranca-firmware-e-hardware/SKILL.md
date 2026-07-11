@@ -9,6 +9,9 @@ description: >-
 domain: ciberseguranca
 subdomain: firmware-hardware-security
 tags: [firmware, uefi, bios, bootkit, secure-boot, binwalk, chipsec, iot, spi-flash]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Segurança de Firmware e Hardware

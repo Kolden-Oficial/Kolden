@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-agent-flows/README|README]]"
+---
+
 # @qa (Quinn) - Documentação do Sistema
 
 > **EN** | [PT](../../aiox-agent-flows/qa-system.md) | [ES](../../es/aiox-agent-flows/qa-system.md)

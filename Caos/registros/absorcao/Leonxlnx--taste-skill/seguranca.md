@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/Leonxlnx--taste-skill/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/Leonxlnx--taste-skill/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # F2 — Segurança estática
 
 - **slug:** Leonxlnx--taste-skill

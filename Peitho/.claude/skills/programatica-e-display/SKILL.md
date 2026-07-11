@@ -17,6 +17,9 @@ allowed-tools:
   - Grep
   - Glob
   - AskUserQuestion
+tipo: skill
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
 ---
 
 # Programática e display (PT-BR)

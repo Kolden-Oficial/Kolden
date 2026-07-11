@@ -3,6 +3,11 @@ title: "Nous Tool Gateway"
 description: "One subscription, every tool. Web search, image generation, TTS, and cloud browsers — all routed through Nous Portal with no extra API keys."
 sidebar_label: "Tool Gateway"
 sidebar_position: 2
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Nous Tool Gateway

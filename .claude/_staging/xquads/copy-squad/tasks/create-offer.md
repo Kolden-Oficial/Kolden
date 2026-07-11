@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Core transformation and value stack defined"
   - "[ ] 3-5 relevant bonuses designed with guarantee"
   - "[ ] Price anchoring strategy and offer stack copy ready"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Create Offer

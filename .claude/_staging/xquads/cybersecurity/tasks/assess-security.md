@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Authorization confirmed and scope defined"
   - "[ ] All findings classified with CVSS scores"
   - "[ ] Remediation roadmap generated with priorities"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/cybersecurity/tasks/_indice|_indice]]"
 ---
 
 # Task: Security Posture Assessment

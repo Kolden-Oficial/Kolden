@@ -1,6 +1,12 @@
 ---
 name: Question / Help
 about: Ask a question about Scrapy or ask for help with your Scrapy code.
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapy/.github/ISSUE_TEMPLATE/bug_report|bug_report]]"
+  - "[[Argos/motor/scrapy/.github/ISSUE_TEMPLATE/feature_request|feature_request]]"
 ---
 
 Thanks for taking an interest in Scrapy!

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+---
+
 # Fases do lançamento, modelos de sequência e checklist
 
 Reescrito em PT-BR a partir de alirezarezvani/claude-skills (MIT, sem cópia literal).

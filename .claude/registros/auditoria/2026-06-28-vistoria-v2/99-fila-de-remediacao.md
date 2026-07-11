@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 99 — Fila de remediação priorizada
 
 > Passo 7 do protocolo. Ordenação por **severidade × raio de explosão**. Executável: cada item tem ação concreta, dono sugerido e referência ao achado.

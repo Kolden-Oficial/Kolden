@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/security/oss-forensics/references/github-archive-guide|github-archive-guide]]"
+  - "[[Hermes/optional-skills/security/oss-forensics/references/investigation-templates|investigation-templates]]"
+  - "[[Hermes/optional-skills/security/oss-forensics/references/recovery-techniques|recovery-techniques]]"
+---
+
 # Evidence Types Reference
 
 Taxonomy of all evidence types, IOC types, GitHub event types, and observation types

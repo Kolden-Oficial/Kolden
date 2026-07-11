@@ -9,6 +9,9 @@ description: >
   `intencao-de-busca` e `otimizacao-on-page` do estrategista-de-conteudo-seo. Gatilhos:
   "analisar esta página", "checar SEO da página", "auditoria on-page", "page analysis",
   "essa URL está otimizada?", "por que esta página não ranqueia?". Copy → Caliope.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Otimização On-Page por Intenção (auditoria de página única)

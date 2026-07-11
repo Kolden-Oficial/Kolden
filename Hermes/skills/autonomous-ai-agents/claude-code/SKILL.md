@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Coding-Agent, Claude, Anthropic, Code-Review, Refactoring, PTY, Automation]
     related_skills: [codex, hermes-agent, opencode]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Claude Code — Hermes Orchestration Guide

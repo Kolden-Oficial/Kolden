@@ -9,6 +9,11 @@ metadata:
   hermes:
     tags: [PDF, Documents, Research, Arxiv, Text-Extraction, OCR]
     related_skills: [powerpoint]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/productivity/ocr-and-documents/DESCRIPTION|DESCRIPTION]]"
 ---
 
 # PDF & Document Extraction

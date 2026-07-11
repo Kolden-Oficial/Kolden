@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/frontend/_indice|_indice]]"
+---
+
 # Intro to the Frontends
 
 The frontends enhance GPT-Researcher by providing:

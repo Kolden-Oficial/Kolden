@@ -2,6 +2,11 @@
 sidebar_position: 2
 title: "Adding Tools"
 description: "How to add a new tool to Hermes Agent — schemas, handlers, registration, and toolsets"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Adding Tools

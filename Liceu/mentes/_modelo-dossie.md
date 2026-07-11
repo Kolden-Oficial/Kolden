@@ -26,6 +26,11 @@ squads_que_usam: [<squad>, ...]        # ex.: [caliope, aglaia, peitho]
 # --- federação (preenchido pelo bibliotecario) ---
 persona_canonica: <../Squad/agents/<id>.md | null>  # se a mente JÁ é agente num squad, aponte aqui (não duplicar)
 confianca_da_fonte: <alta | media | baixa>          # média ponderada das afirmações do corpo
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/mentes/_modelo-dossie-disciplina|_modelo-dossie-disciplina]]"
 ---
 
 # <Nome Completo> — Dossiê de Mente

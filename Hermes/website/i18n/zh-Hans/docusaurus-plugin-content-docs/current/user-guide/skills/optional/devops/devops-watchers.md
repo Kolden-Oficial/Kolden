@@ -2,6 +2,9 @@
 title: "Watchers — 使用水印去重轮询 RSS、JSON API 和 GitHub"
 sidebar_label: "Watchers"
 description: "使用水印去重轮询 RSS、JSON API 和 GitHub"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/architecture/adr/ADR-COLLAB-1-current-state-audit|ADR-COLLAB-1-current-state-audit]]"
+  - "[[.claude/_staging/aiox/docs/es/architecture/adr/ADR-COLLAB-2-proposed-configuration|ADR-COLLAB-2-proposed-configuration]]"
+  - "[[.claude/_staging/aiox/docs/es/architecture/adr/adr-isolated-vm-decision|adr-isolated-vm-decision]]"
+---
+
 <!-- Traduccion: ES | Original: /docs/en/architecture/adr/adr-hcs-health-check-system.md | Sincronizacion: 2026-01-26 -->
 
 # ADR: Arquitectura del Sistema de Health Check

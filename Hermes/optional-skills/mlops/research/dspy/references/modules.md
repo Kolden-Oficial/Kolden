@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/research/dspy/references/examples|examples]]"
+  - "[[Hermes/optional-skills/mlops/research/dspy/references/optimizers|optimizers]]"
+---
+
 # DSPy Modules
 
 Complete guide to DSPy's built-in modules for language model programming.

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: arquitetura
+up: "[[arquitetura/_MOC-arquitetura]]"
+relacionado:
+  - "[[arquitetura/pesquisa/2026-07-10-benchmark/fichas/_indice|_indice]]"
+---
+
 # Ficha — OpenAI Agents SDK (+ Swarm, legado)
 > Coletada em 2026-07-10 · Versão/commit da fonte: `openai/openai-agents-python` @ commit `e354126180ec6a1653c8e6f16194f3bcb743a6ce` (release mais recente: **v0.18.1**, publicada em 2026-07-09) · Status: ativo (Swarm: **deprecated**)
 

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Metis
+up: "[[Metis/_MOC-metis]]"
+relacionado:
+  - "[[Metis/_origem|_origem]]"
+---
+
 # Metis — Squad de Analytics e Growth
 
 O Metis é um squad de 7 estrategistas orientados por dados que reúne mentes de classe mundial em analytics, customer lifetime value, growth hacking, construção de audiência, customer success e community-led growth. O orquestrador (Data Chief) recebe sua pergunta, faz a triagem por domínio, estágio de crescimento e objetivo, e a roteia para o especialista certo — de web analytics a modelagem de CLV, de experimentação de growth a estratégia de comunidade — garantindo sempre recomendações acionáveis em vez de métricas de vaidade.

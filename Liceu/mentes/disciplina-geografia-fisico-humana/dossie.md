@@ -49,6 +49,8 @@ linhagens: []
 frameworks_kolden: []
 squads_que_usam: [orfeu, argos]
 confianca_da_fonte: alta
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Geografia físico-humana — Dossiê de Disciplina

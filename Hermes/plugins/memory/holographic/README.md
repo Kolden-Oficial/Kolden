@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Holographic Memory Provider
 
 Local SQLite fact store with FTS5 search, trust scoring, entity resolution, and HRR-based compositional retrieval.

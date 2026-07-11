@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 03 — Lotes 3: Caos + Prometeu + Dedalo + Dike (papel)
 
 > Fábrica + Framework + Engenharia + Verificador. **29 agentes** (9 + 12 + 8) + Dike sem agentes.

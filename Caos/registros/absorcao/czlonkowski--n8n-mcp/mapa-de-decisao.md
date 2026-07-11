@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/czlonkowski--n8n-mcp/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/czlonkowski--n8n-mcp/seguranca|seguranca]]"
+---
+
 # Mapa de decisão — czlonkowski--n8n-mcp (F4)
 
 - **slug:** czlonkowski--n8n-mcp · **sha:** f5694cce54c26777e6c16d606eb6b90cd39f5f96 · **rota:** D

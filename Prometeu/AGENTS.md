@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/README|README]]"
+---
+
 > **NOTA KOLDEN (2026-07-07 — Sub-onda 3.1 do METODO):** Este AGENTS.md é dev guide do
 > vendor **SynkraAI/aiox-core** (importado em 2026-06-19, commit `77265d5`, ver `_origem.md`).
 > **Identidade Kolden canônica** do squad Prometeu vive em `CLAUDE.md` raiz (nível-squad

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/README|README]]"
+---
+
 # Ferramentas do Squad Olimpo
 
 > **Escopo:** catálogo canônico de tools + skills-como-tools cross-squad + fronteira vendor xquads.

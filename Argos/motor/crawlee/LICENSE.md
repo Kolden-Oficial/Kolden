@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/README|README]]"
+---
+
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/

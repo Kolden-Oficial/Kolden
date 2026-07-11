@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/multi_agents/langgraph|langgraph]]"
+---
+
 # AG2
 
 [AG2](https://github.com/ag2ai/ag2) is a framework for building multi-agent applications with LLMs.

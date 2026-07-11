@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Requisição interpretada e palavras-chave extraídas"
   - "[ ] Catálogo de roteamento consultado com resultados pontuados"
   - "[ ] Resposta rápida fornecida com referência de métrica"
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar Desafio de Tráfego

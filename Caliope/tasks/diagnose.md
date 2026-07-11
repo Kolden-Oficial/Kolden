@@ -21,6 +21,11 @@ Checklist:
   - "[ ] Requisição interpretada e palavras-chave extraídas"
   - "[ ] Catálogo de roteamento consultado com resultados pontuados (27 domínios, 32 agentes)"
   - "[ ] Resposta rápida fornecida com roteamento para especialista"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar Requisição de Copywriting

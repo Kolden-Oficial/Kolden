@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+relacionado:
+  - "[[Egide/_origem|_origem]]"
+---
+
 # Egide — Squad de Cybersecurity (Segurança)
 
 Egide é um squad de 15 agentes para operações de segurança ofensivas e defensivas, orquestrado pelo Cyber Chief sob um framework ético rígido (autorização sempre primeiro). Reúne especialistas baseados em pessoas reais (Chris Sanders, Marcus Carey, Omar Santos, Jim Manico, Georgia Weidman, Peter Kim) e ferramentas operacionais (reconhecimento, enumeração, fuzzing, quebra de credenciais, exploração, OSINT e geração de comandos), cobrindo pentest, red team, blue team, AppSec, gestão de vulnerabilidades e resposta a incidentes.

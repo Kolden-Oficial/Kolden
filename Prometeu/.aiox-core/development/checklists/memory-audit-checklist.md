@@ -1,3 +1,14 @@
+---
+tipo: checklist
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/checklists/agent-quality-gate|agent-quality-gate]]"
+  - "[[Prometeu/.aiox-core/development/checklists/brownfield-compatibility-checklist|brownfield-compatibility-checklist]]"
+  - "[[Prometeu/.aiox-core/development/checklists/issue-triage-checklist|issue-triage-checklist]]"
+  - "[[Prometeu/.aiox-core/development/checklists/self-critique-checklist|self-critique-checklist]]"
+---
+
 # Checklist de Auditoria de Memória
 
 Checklist periódico para manter a higiene do MEMORY.md dos agentes em todos os 10 agentes.

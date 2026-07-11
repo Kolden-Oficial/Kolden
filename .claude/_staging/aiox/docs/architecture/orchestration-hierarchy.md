@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # Orchestration Hierarchy
 
 This document defines the current ownership boundaries for AIOX orchestration

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All checklist items evaluated"
   - "[ ] Verdict rendered (APPROVE/REVISE/REJECT)"
   - "[ ] Value equation and revenue math individually assessed"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/hormozi-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Review Business Scaling Output

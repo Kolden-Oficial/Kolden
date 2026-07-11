@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # CLAUDE.md - Synkra AIOX
 
 Este arquivo configura o comportamento do Claude Code ao trabalhar neste repositório.

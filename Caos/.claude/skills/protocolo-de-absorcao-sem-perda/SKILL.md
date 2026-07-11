@@ -7,6 +7,9 @@ description: >
   em qualquer ingestão de fonte externa. Invariante:
   count(ABSORVIDO)+count(DESCARTADO)+count(PERDIDO) == count(inventário F3), com PERDIDO=0.
 enforce: true   # esta habilidade é pré-requisito de saída do pipeline, não sugestão
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Protocolo de absorção sem perda

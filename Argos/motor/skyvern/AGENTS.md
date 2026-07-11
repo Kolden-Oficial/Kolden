@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/skyvern/README|README]]"
+---
+
 # Skyvern Agent Guide
 This AGENTS.md file provides comprehensive guidance for AI agents working with the Skyvern codebase. Follow these guidelines to ensure consistency and quality in all contributions.
 

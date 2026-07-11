@@ -64,6 +64,10 @@ mcp_tools_categoria:
     - prd/{afrodite,plutos}.md
 grounding_required_por_skill: ver ferramentas.md §4
 procedencia_lavratura: "Onda 4 METODO m-20260706 2026-07-09"
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/README|README]]"
 ---
 
 # PRD — Olimpo (Camada 3-4 do sistema Kolden — Governança Executiva)

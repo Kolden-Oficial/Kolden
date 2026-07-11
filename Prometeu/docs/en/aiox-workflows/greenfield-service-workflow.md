@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-workflows/README|README]]"
+---
+
 # Workflow Greenfield de Serviço
 
 > **EN** | [PT](../../aiox-workflows/greenfield-service-workflow.md) | [ES](../../es/aiox-workflows/greenfield-service-workflow.md)

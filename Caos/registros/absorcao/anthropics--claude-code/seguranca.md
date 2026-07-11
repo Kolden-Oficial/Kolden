@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/anthropics--claude-code/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/anthropics--claude-code/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática (F2) — anthropics--claude-code
 
 - **slug:** anthropics--claude-code

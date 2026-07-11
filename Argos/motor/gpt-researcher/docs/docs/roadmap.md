@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/contribute|contribute]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/faq|faq]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/welcome|welcome]]"
+---
+
 # Roadmap
 
 We're constantly working on additional features and improvements to our products and services. We're also working on new products and services to help you build better AI applications using [GPT Researcher](https://gptr.dev).

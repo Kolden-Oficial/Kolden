@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F6.5 — Relatório de Reconciliação · B06 Sales (PARCIAL)
 
 **Repo upstream:** `msitarzewski/agency-agents@a597cb6`

@@ -1,3 +1,16 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/installation/faq|faq]]"
+  - "[[Prometeu/docs/pt/installation/linux|linux]]"
+  - "[[Prometeu/docs/pt/installation/macos|macos]]"
+  - "[[Prometeu/docs/pt/installation/troubleshooting|troubleshooting]]"
+  - "[[Prometeu/docs/pt/installation/v4-quick-start|v4-quick-start]]"
+  - "[[Prometeu/docs/pt/installation/windows|windows]]"
+---
+
 <!--
   Tradução: PT-BR
   Original: /docs/installation/README.md

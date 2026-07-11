@@ -3,6 +3,11 @@ sidebar_position: 8
 sidebar_label: "Checkpoints & Rollback"
 title: "Checkpoints and /rollback"
 description: "Filesystem safety nets for destructive operations using shadow git repos and automatic snapshots"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/_indice|_indice]]"
 ---
 
 # Checkpoints and `/rollback`

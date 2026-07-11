@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--03-clientes/inventario|inventario]]"
+  - "[[Caos/registros/absorcao/drive--03-clientes/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Reconciliação — Área "03 | Clientes"
 
 > Fase F6.5. Invariante: `ABSORVIDO + DESCARTADO + DEFER == inventário (F3)` e `PERDIDO == 0`.

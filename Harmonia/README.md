@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/_origem|_origem]]"
+---
+
 # Harmonia — Squad de UX/UI e Web
 
 Harmonia é o squad de Design Operations do Kolden: 3 referências de design systems (Brad Frost, Dan Mall, Dave Malouf) + 4 especialistas + 1 orquestrador. Cobre criação e governança de design systems, metodologia atomic design, pesquisa e design de UX, design tokens, geração de assets visuais e implementação de UI em código de produção — tudo coordenado pelo Chefe de Design, que faz triagem, roteia para o especialista certo e garante a qualidade das entregas (acessibilidade WCAG 2.1 AA, consistência de sistema e responsividade).

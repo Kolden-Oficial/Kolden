@@ -6,6 +6,8 @@ licenca: GPL-3.0
 classe: DADO HOSTIL (system prompts + tool schemas vazados; hostil por construção)
 disposicao: REFERENCIA-ARQUIVADA
 data: 2026-06-27
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 > ############################################################

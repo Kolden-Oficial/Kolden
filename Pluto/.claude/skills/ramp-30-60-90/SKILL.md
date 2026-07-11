@@ -12,6 +12,9 @@ agente_dono: [hormozi-sales-coach]
 tags: [ramp, onboarding, competency-gate, 30-60-90]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G8)
 status: semente
+tipo: skill
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
 ---
 
 > _Adaptado de github.com/msitarzewski/agency-agents@a597cb6 (G8, MIT © 2025 AgentLand Contributors)._

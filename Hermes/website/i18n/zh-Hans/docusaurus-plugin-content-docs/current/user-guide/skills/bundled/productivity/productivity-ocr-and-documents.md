@@ -2,6 +2,9 @@
 title: "Ocr And Documents — 从 PDF/扫描件中提取文本（pymupdf、marker-pdf）"
 sidebar_label: "Ocr And Documents"
 description: "从 PDF/扫描件中提取文本（pymupdf、marker-pdf）"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

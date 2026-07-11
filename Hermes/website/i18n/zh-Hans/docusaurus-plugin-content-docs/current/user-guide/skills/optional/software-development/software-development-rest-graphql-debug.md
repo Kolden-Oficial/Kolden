@@ -2,6 +2,9 @@
 title: "Rest Graphql Debug — 调试 REST/GraphQL API：状态码、认证、Schema、复现"
 sidebar_label: "Rest Graphql Debug"
 description: "调试 REST/GraphQL API：状态码、认证、Schema、复现"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

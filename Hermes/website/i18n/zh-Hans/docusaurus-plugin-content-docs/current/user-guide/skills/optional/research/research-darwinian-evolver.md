@@ -2,6 +2,9 @@
 title: "Darwinian Evolver — 使用 Imbue 的进化循环来优化 prompt/正则/SQL/代码"
 sidebar_label: "Darwinian Evolver"
 description: "使用 Imbue 的进化循环来优化 prompt/正则/SQL/代码"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

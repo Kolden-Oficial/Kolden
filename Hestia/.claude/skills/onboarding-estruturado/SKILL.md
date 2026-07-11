@@ -7,6 +7,9 @@ description: >
   rápido, com marcos mensuráveis. Gatilhos: "onboarding", "integração", "quem entrou", "primeiros 90
   dias", "30-60-90", "ramp-up", "novo colaborador", "buddy/padrinho", "offboarding", "desligamento
   humanizado". Provisão técnica de acessos é handoff ao dono do sistema (segredos via Infisical).
+tipo: skill
+area: Hestia
+up: "[[Hestia/_MOC-hestia]]"
 ---
 
 # Onboarding Estruturado

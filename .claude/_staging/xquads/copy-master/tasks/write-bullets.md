@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Requested number of bullets written using varied formulas"
   - "[ ] 3-5 killer bullets identified for multi-use"
   - "[ ] Psychological Layer applied (Cialdini/Warren principles tagged)"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-master/tasks/_indice|_indice]]"
 ---
 
 # Task: Write Bullet Points

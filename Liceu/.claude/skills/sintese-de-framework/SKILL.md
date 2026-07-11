@@ -1,6 +1,9 @@
 ---
 name: sintese-de-framework
 description: Destila uma mente OU uma linhagem inteira (já dissecada e verificada) num framework operacional Kolden — um método de N passos acionáveis que um squad de execução usa amanhã, com a procedência de CADA passo registrada. Use quando o pedido for "transforma essa linhagem num framework", "destila isso num método", "matriz de X", "checklist de Y", "torna acionável para a Kolden", "como a Kolden usa isso na prática". Só consome dossiês verificados (nunca folclore) e exige procedencia.md em todo passo. Especialista responsável: sintetizador.
+tipo: skill
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Síntese de Framework

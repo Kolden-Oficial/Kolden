@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/packages/jsdom-crawler/CHANGELOG|CHANGELOG]]"
+---
+
 # `@crawlee/jsdom`
 
 Provides a framework for the parallel crawling of web pages using plain HTTP requests and [jsdom](https://www.npmjs.com/package/jsdom) DOM implementation. The URLs to crawl are fed either from a static list of URLs or from a dynamic queue of URLs enabling recursive crawling of websites.

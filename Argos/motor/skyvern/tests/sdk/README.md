@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Skyvern SDK Tests
 
 Test suite for Skyvern Python and TypeScript SDKs with shared HTML fixtures in `web/`.

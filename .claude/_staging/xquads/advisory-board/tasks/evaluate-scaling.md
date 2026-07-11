@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Readiness assessed by all three advisors (Hoffman, Thiel, Naval)"
   - "[ ] Scaling strategy identified with clear rationale"
   - "[ ] Go/No-Go verdict with playbook and kill criteria"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/advisory-board/tasks/_indice|_indice]]"
 ---
 
 # Task: Scaling Decision Analysis

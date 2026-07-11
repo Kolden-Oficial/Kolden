@@ -25,6 +25,11 @@ Checklist:
   - "[ ] 3-5 conselheiros relevantes consultados com seus frameworks"
   - "[ ] Síntese identifica concordância, discordância e tensões"
   - "[ ] Recomendação unificada com visões dissidentes incluídas"
+tipo: nota
+area: Themis
+up: "[[Themis/_MOC-themis]]"
+relacionado:
+  - "[[Themis/tasks/_indice|_indice]]"
 ---
 
 # Task: Reunião Completa do Conselho

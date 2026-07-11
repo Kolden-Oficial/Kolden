@@ -32,6 +32,11 @@ Checklist:
   - "[ ] Decisão de zona cinza tomada (escalado ao compliance-sentinela se aplicável)"
   - "[ ] Parte paga marcada para o ads-intel (não coletada aqui)"
   - "[ ] Cada dado-fato com FONTE + TIMESTAMP"
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Escanear Rede — Argos

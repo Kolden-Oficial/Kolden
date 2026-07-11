@@ -2,6 +2,9 @@
 title: "Sherlock — 跨 400+ 社交网络的 OSINT 用户名搜索"
 sidebar_label: "Sherlock"
 description: "跨 400+ 社交网络的 OSINT 用户名搜索"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

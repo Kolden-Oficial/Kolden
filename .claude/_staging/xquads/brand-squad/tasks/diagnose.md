@@ -21,6 +21,11 @@ Checklist:
   - "[ ] Request parsed and brand domain identified"
   - "[ ] Routing catalog consulted with scored results"
   - "[ ] Quick answer provided with specialist routing"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/brand-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Diagnose Brand Challenge

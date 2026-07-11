@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # GitHub Actions Workflows
 
 This directory contains automated workflows for the AIOX project.

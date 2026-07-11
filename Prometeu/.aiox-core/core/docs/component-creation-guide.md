@@ -1,3 +1,14 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/core/docs/session-update-pattern|session-update-pattern]]"
+  - "[[Prometeu/.aiox-core/core/docs/SHARD-TRANSLATION-GUIDE|SHARD-TRANSLATION-GUIDE]]"
+  - "[[Prometeu/.aiox-core/core/docs/template-syntax|template-syntax]]"
+  - "[[Prometeu/.aiox-core/core/docs/troubleshooting-guide|troubleshooting-guide]]"
+---
+
 # Component Creation Guide
 
 ## Overview

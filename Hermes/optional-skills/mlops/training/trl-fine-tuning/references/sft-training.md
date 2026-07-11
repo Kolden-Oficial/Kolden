@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/dpo-variants|dpo-variants]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/grpo-training|grpo-training]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/online-rl|online-rl]]"
+  - "[[Hermes/optional-skills/mlops/training/trl-fine-tuning/references/reward-modeling|reward-modeling]]"
+---
+
 # SFT Training Guide
 
 Complete guide to Supervised Fine-Tuning (SFT) with TRL for instruction tuning and task-specific fine-tuning.

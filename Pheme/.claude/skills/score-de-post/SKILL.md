@@ -9,6 +9,9 @@ description: >
   crítica. Lê `voz.md`/`sobre-mim.md` se existirem. Pensado para revisão rápida e ao vivo.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Score de Post — pontuação contra dados reais

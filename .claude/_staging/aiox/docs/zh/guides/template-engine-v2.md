@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/guides/README|README]]"
+---
+
 # 模板引擎 v2.0
 
 > **[EN](../../guides/template-engine-v2.md)** | [PT](../../pt/guides/template-engine-v2.md) | [ES](../../es/guides/template-engine-v2.md) | **中文 (ZH)**

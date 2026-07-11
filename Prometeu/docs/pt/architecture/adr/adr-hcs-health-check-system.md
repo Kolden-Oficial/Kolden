@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/architecture/adr/ADR-COLLAB-1-current-state-audit|ADR-COLLAB-1-current-state-audit]]"
+  - "[[Prometeu/docs/pt/architecture/adr/ADR-COLLAB-2-proposed-configuration|ADR-COLLAB-2-proposed-configuration]]"
+  - "[[Prometeu/docs/pt/architecture/adr/adr-isolated-vm-decision|adr-isolated-vm-decision]]"
+---
+
 <!-- Tradução: PT-BR | Original: /docs/en/architecture/adr/adr-hcs-health-check-system.md | Sincronização: 2026-01-26 -->
 
 # ADR: Arquitetura do Sistema de Health Check

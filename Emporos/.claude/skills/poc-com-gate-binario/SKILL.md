@@ -18,6 +18,9 @@ heranca_historica:
   - saas-pre-sales-patterns
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G20)
 status: semente
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # POC com Gate Binário

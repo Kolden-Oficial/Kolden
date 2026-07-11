@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/.claude/skills/direcao-visual-de-referencia/references/motor-combinatorio|motor-combinatorio]]"
+  - "[[Aglaia/.claude/skills/direcao-visual-de-referencia/references/vocabulario-estetico|vocabulario-estetico]]"
+---
+
 # Direção mobile — adaptação para app screens
 
 > Extensão de `direcao-visual-de-referencia/SKILL.md` para pedidos de app

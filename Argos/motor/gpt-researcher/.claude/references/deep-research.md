@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/.claude/references/_indice|_indice]]"
+---
+
 # Deep Research Mode Reference
 
 ## Table of Contents

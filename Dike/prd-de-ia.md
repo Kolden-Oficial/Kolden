@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Dike
+up: "[[Dike/_MOC-dike]]"
+relacionado:
+  - "[[Dike/CLAUDE|CLAUDE]]"
+  - "[[Dike/ferramentas|ferramentas]]"
+  - "[[Dike/roteiro-de-teste|roteiro-de-teste]]"
+---
+
 # PRD de IA — Dike (Verificador)
 
 | Campo | Valor |

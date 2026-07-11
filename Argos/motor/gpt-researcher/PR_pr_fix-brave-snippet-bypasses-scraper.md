@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/README|README]]"
+---
+
 # One-line summary
 
 Fix Brave search result classification so snippet-only results are sent to the scraper instead of being treated as already-fetched full content.

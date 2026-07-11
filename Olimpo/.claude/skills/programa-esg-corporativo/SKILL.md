@@ -3,6 +3,9 @@ name: programa-esg-corporativo
 description: Use quando o Zeus (com Plutos) precisar desenhar, revisar ou reportar o programa ESG (Environmental/Social/Governance) da Kolden — política corporativa, matriz de materialidade, escolha do stack de frameworks (GRI/SASB/TCFD/ISSB), estruturação de KPIs por pilar, resposta a questionário de investidor/cliente enterprise, ou defesa contra acusação de greenwashing. Cobre tanto materialidade financeira (impacto no negócio — cross com Plutos) quanto materialidade de impacto (efeito da Kolden no mundo). NÃO use para relatório de sustentabilidade DE PRODUTO específico (isso é Poseidon+Prometeu) nem para due-diligence ESG DE ALVO M&A (isso é `integracao-pos-fusao-pmi`). Aqui é o programa corporativo da Kolden como emissora.
 invocavel_por: [zeus, plutos]
 tags: [esg, sustentabilidade, gri, sasb, tcfd, issb, governance, olimpo]
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Programa ESG Corporativo

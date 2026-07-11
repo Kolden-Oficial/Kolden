@@ -2,6 +2,9 @@
 name: mcp-builder
 description: Guia para criar servidores MCP (Model Context Protocol) de alta qualidade que permitem que LLMs interajam com serviços externos por meio de tools bem projetadas. Use ao construir servidores MCP para integrar APIs ou serviços externos, seja em Python (FastMCP) ou Node/TypeScript (MCP SDK).
 license: Termos completos em LICENSE.txt
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Guia de Desenvolvimento de Servidores MCP

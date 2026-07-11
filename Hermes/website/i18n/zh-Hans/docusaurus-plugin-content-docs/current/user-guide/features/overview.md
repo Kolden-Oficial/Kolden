@@ -2,6 +2,9 @@
 title: "功能概览"
 sidebar_label: "概览"
 sidebar_position: 1
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 功能概览

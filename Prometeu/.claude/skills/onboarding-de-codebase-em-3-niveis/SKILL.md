@@ -7,6 +7,9 @@ origem: msitarzewski/agency-agents@a597cb6 · IDs G17, G18 · bucket B03 enginee
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Onboarding de Codebase em 3 Níveis

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todas as 4 fontes de leads auditadas e pontuadas"
   - "[ ] Isca de leads desenhada com ponte clara para a oferta central"
   - "[ ] Plano de lançamento de 30 dias criado"
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+relacionado:
+  - "[[Pluto/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Gerar Leads

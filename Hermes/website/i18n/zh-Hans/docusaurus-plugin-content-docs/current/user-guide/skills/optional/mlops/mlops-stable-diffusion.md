@@ -2,6 +2,9 @@
 title: "Stable Diffusion 图像生成"
 sidebar_label: "Stable Diffusion 图像生成"
 description: "通过 HuggingFace Diffusers 使用 Stable Diffusion 模型实现最先进的文本到图像生成"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -10,6 +10,9 @@ description: >-
   design-system-architect (Brad Frost / Dan Mall) opera. NÃO escolhe paleta/estilo
   (isso é sistema-de-design) nem implementa componentes shadcn (isso é
   implementacao-ui).
+tipo: skill
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
 ---
 
 # Tokens de Design — fundação do design-system

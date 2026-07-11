@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
+---
+
 # Convenção de CLI e tooling da Kolden
 
 > Padrão absorvido de `coreyhaines31/marketingskills@8bfcdff` (G5 — convenção dos 64 CLIs zero-dep),

@@ -15,6 +15,11 @@ Checklist:
   - "[ ] Create outline"
   - "[ ] Write draft"
   - "[ ] Format output"
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/examples/squads/multi-agent-squad/tasks/research-topic|research-topic]]"
 ---
 
 # *report / *draft

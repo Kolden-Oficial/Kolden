@@ -8,6 +8,9 @@ description: >
   X ou Pinterest. Tokens SEMPRE via Infisical, nunca em texto puro.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Publicação Social — Postiz (principal) + GoHighLevel (alternativo)

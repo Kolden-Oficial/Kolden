@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Dike
+up: "[[Dike/_MOC-dike]]"
+relacionado:
+  - "[[Dike/ferramentas|ferramentas]]"
+  - "[[Dike/prd-de-ia|prd-de-ia]]"
+  - "[[Dike/roteiro-de-teste|roteiro-de-teste]]"
+---
+
 # DIKE — Verificador da Subida
 
 > **Versão:** 1.0.0 | **Criado:** 2026-06-26 | **Tipo:** agente SOLO (verificador de runtime)

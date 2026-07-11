@@ -1,3 +1,9 @@
+---
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+---
+
 <!--
 Atribuição: adaptado de msitarzewski/agency-agents@a597cb6
 (project-management/, gaps G6 e G17 do diagnóstico de absorção).

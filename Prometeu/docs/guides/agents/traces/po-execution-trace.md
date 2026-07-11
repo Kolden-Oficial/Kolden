@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # @po (Pax) - Execution Trace
 
 > Traced from source code, not documentation.

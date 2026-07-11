@@ -17,6 +17,9 @@ heranca_historica:
   - sandler-selling-system
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G15)
 status: semente
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # Sandler Pain Funnel

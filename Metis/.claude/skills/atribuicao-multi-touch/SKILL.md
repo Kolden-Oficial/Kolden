@@ -10,6 +10,9 @@ description: >
   crédito?", "mix de canais". NÃO use para media mix modeling agregado top-down (MMM — para
   isso, escalar). NÃO use para tracking técnico de eventos (isso é `apis-google-e-indexacao`
   para GSC/GA4 ou pixel/CAPI para Meta).
+tipo: skill
+area: Metis
+up: "[[Metis/_MOC-metis]]"
 ---
 
 # Atribuição multi-touch (MTA)

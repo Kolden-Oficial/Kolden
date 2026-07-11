@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/README|README]]"
+---
+
 # Ferramentas — Aletheia
 
 Toda ferramenta usada pelo squad está documentada aqui (Constituição, Art. IV — sem invenção de

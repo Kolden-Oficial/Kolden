@@ -3,6 +3,9 @@ name: aiox-ux-design-expert
 description: "Ative Uma (ux-design-expert) para UX/UI Designer e Arquiteta de Design System. Workflow completo de design - pesquisa de usuário, wireframes, design systems, extração de tokens, construção de componentes e garantia de qualidade"
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: gerado -->

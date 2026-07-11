@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: "消息网关"
 description: "通过 Telegram、Discord、Slack、WhatsApp、Signal、SMS、Email、Home Assistant、Mattermost、Matrix、DingTalk、Yuanbao、Microsoft Teams、LINE、Webhooks 或任何兼容 OpenAI 的前端与 Hermes 对话 — 架构与配置概览"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 消息网关

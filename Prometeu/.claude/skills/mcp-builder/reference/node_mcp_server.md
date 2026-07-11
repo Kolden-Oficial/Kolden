@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/skills/mcp-builder/reference/evaluation|evaluation]]"
+  - "[[Prometeu/.claude/skills/mcp-builder/reference/mcp_best_practices|mcp_best_practices]]"
+  - "[[Prometeu/.claude/skills/mcp-builder/reference/python_mcp_server|python_mcp_server]]"
+---
+
 # Guia de Implementação de Servidores MCP em Node/TypeScript
 
 ## Visão Geral

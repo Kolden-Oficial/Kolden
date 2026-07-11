@@ -26,6 +26,8 @@ frameworks_kolden: [arquitetura-de-agents-kolden]
 squads_que_usam: [caos, prometeu, dedalo, hermes, egide, olimpo]
 # --- federação (preenchido pelo bibliotecario) ---
 confianca_da_fonte: alta
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Model Context Protocol (MCP) — Paradigma "Open Standard for AI Interop" — Dossiê

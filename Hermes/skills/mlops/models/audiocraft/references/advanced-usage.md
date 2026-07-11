@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/mlops/models/audiocraft/references/troubleshooting|troubleshooting]]"
+---
+
 # AudioCraft Advanced Usage Guide
 
 ## Fine-tuning MusicGen

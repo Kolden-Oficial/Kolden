@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # Getting Started with Synkra AIOX
 
 > **EN** | [PT](./pt/getting-started.md) | [ES](./es/getting-started.md)

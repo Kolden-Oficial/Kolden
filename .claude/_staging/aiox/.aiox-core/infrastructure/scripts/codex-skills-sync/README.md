@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # Codex Skills Sync
 
 Tools for generating local Codex skills (`.codex/skills/aiox-*`) from AIOX agent and squad definitions.

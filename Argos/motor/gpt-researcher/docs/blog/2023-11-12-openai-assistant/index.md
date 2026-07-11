@@ -3,6 +3,9 @@ slug: building-openai-assistant
 title: How to build an OpenAI Assistant with Internet access
 authors: [assafe]
 tags: [tavily, search-api, openai, assistant-api]
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 OpenAI has done it again with a [groundbreaking DevDay](https://openai.com/blog/new-models-and-developer-products-announced-at-devday) showcasing some of the latest improvements to the OpenAI suite of tools, products and services. One major release was the new [Assistants API](https://platform.openai.com/docs/assistants/overview) that makes it easier for developers to build their own assistive AI apps that have goals and can call models and tools.

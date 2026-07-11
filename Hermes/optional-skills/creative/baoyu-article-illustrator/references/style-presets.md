@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/prompt-construction|prompt-construction]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/styles|styles]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/usage|usage]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/workflow|workflow]]"
+---
+
 # Style Presets
 
 A preset expands to a type + style + optional palette combination. Users can override any dimension in their request.

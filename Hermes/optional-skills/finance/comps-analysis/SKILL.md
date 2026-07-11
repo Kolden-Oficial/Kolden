@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [finance, valuation, comps, excel, openpyxl, modeling, investment-banking]
     related_skills: [excel-author, pptx-author, dcf-model, lbo-model]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 ## Environment

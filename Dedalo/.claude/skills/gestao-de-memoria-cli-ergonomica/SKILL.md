@@ -1,6 +1,9 @@
 ---
 name: gestao-de-memoria-cli-ergonomica
 description: Use quando o pedido for INTERAGIR com a memória persistente do Kolden pelo CLI de um agente — buscar sessões passadas ("já resolvemos isso?", "como fizemos X semana passada?"), navegar código por AST com atalhos, "babás" um PR até o merge, alternar modos de prompt configuráveis, ou recuperar de falha com loop de restart+backoff. Esta habilidade é a INTERFACE ERGONÔMICA sobre a infra de memória — a infra em si (daemon, SQLite-FTS5, Chroma, worker) é do Kolden OS, NÃO desta skill. Fronteira dura com `reflexos-resilientes-e-bootstrap`: aquela ensina a CAPTURAR memória por hook; esta ensina a CONSUMIR e OPERAR memória pelo CLI. NÃO use para gravar/comprimir observações (isso é da infra + reflexos). NÃO use para busca de referências externas (isso é `busca-de-referencias` do Caos).
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Gestão de Memória e Ergonomia de CLI

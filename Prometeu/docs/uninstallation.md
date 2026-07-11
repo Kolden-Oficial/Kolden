@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # Uninstallation Guide
 
 > 🌐 **EN** | [PT](./pt/uninstallation.md) | [ES](./es/uninstallation.md)

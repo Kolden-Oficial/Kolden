@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/architecture/_indice|_indice]]"
+---
+
 # Guia de Integração de Ferramentas de Agentes
 
 > **PT** | [EN](../architecture/agent-tool-integration-guide.md) | [ES](../es/architecture/agent-tool-integration-guide.md)

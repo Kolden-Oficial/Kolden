@@ -5,6 +5,9 @@ description: |
   Pipeline: Query > Decompose > Parallel Search (Haiku) > Evaluate > Synthesize > Document.
   Zero dependências externas. MCPs opcionais.
   Salva em docs/research/{YYYY-MM-DD}-{slug}/.
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Tech Search

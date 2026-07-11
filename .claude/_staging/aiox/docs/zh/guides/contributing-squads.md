@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/guides/README|README]]"
+---
+
 # Squad贡献指南
 
 > **EN** | **ZH-CN** | [PT](../pt/guides/contributing-squads.md) | [ES](../es/guides/contributing-squads.md)

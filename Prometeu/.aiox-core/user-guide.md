@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/constitution|constitution]]"
+  - "[[Prometeu/.aiox-core/working-in-the-brownfield|working-in-the-brownfield]]"
+---
+
 # Guia do Usuário Synkra AIOX
 
 ## Visão Geral

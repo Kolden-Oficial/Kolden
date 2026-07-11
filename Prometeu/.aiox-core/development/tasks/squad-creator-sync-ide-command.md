@@ -24,6 +24,11 @@ Checklist:
   - '[x] Verificar arquivos existentes nos destinos'
   - '[x] Sincronizar para cada IDE ativa'
   - '[x] Validar arquivos criados'
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # \*command

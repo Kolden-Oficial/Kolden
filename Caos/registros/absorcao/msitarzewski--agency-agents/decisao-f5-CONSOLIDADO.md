@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F5 CONSOLIDADO — Ritual de Absorção `msitarzewski/agency-agents@a597cb6`
 
 > **PARA AQUI.** Aguardando aprovação executiva do Ronan (Caos Art. III, F5 BLOCK).

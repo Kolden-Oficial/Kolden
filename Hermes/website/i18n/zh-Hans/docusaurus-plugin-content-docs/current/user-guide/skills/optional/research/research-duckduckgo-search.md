@@ -2,6 +2,9 @@
 title: "Duckduckgo Search — 通过 DuckDuckGo 免费搜索网络 — 文本、新闻、图片、视频"
 sidebar_label: "Duckduckgo Search"
 description: "通过 DuckDuckGo 免费搜索网络 — 文本、新闻、图片、视频"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

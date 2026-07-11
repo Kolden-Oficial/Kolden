@@ -2,6 +2,14 @@
 title: "Research Paper Writing — Write ML papers for NeurIPS/ICML/ICLR: design→submit"
 sidebar_label: "Research Paper Writing"
 description: "Write ML papers for NeurIPS/ICML/ICLR: design→submit"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/research/research-arxiv|research-arxiv]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/research/research-blogwatcher|research-blogwatcher]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/research/research-llm-wiki|research-llm-wiki]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/research/research-polymarket|research-polymarket]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

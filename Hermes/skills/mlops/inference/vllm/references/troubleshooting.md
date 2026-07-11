@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/mlops/inference/vllm/references/optimization|optimization]]"
+  - "[[Hermes/skills/mlops/inference/vllm/references/quantization|quantization]]"
+  - "[[Hermes/skills/mlops/inference/vllm/references/server-deployment|server-deployment]]"
+---
+
 # Troubleshooting Guide
 
 ## Contents

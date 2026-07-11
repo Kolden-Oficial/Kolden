@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/README|README]]"
+---
+
 # Origem
 
 Este squad **não foi importado** — nasceu no Kolden pelo **Ritual de Criação do Caos** (9 fases).

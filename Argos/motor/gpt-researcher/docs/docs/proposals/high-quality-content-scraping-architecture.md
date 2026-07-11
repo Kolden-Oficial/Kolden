@@ -1,3 +1,13 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/proposals/adaptive-deep-research|adaptive-deep-research]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/proposals/local-server-deployment-guide|local-server-deployment-guide]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/proposals/social-media-data-acquisition|social-media-data-acquisition]]"
+---
+
 # RFC: 高质量内容与图片抓取架构
 
 > **状态**: 提案

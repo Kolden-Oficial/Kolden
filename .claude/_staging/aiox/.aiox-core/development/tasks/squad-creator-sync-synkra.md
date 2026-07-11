@@ -23,6 +23,11 @@ Checklist:
   - "[x] Calcular checksum"
   - "[x] Enviar para Synkra API"
   - "[x] Exibir URL do marketplace"
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # *sync-squad-synkra

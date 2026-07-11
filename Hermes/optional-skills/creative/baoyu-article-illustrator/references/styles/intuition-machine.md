@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/styles/_indice|_indice]]"
+---
+
 # intuition-machine
 
 Technical briefing infographic style with aged paper and bilingual labels

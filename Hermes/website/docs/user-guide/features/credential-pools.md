@@ -3,6 +3,11 @@ title: Credential Pools
 description: Pool multiple API keys or OAuth tokens per provider for automatic rotation and rate limit recovery.
 sidebar_label: Credential Pools
 sidebar_position: 9
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Credential Pools

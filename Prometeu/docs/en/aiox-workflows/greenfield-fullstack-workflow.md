@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-workflows/README|README]]"
+---
+
 # Workflow Greenfield Fullstack
 
 > **EN** | [PT](../../aiox-workflows/greenfield-fullstack-workflow.md) | [ES](../../es/aiox-workflows/greenfield-fullstack-workflow.md)

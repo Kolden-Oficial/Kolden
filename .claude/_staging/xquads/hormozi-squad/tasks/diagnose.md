@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Request parsed and keywords extracted"
   - "[ ] Routing catalog consulted with scored results"
   - "[ ] Quick answer provided with Hormozi framework reference"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/hormozi-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Diagnose Business Challenge

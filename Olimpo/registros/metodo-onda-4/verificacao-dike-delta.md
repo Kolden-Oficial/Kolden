@@ -1,3 +1,15 @@
+---
+tipo: registro
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/registros/metodo-onda-4/diff-cirurgico|diff-cirurgico]]"
+  - "[[Olimpo/registros/metodo-onda-4/matriz-de-conformidade|matriz-de-conformidade]]"
+  - "[[Olimpo/registros/metodo-onda-4/PROMPT-DE-ABERTURA|PROMPT-DE-ABERTURA]]"
+  - "[[Olimpo/registros/metodo-onda-4/sumario-executivo|sumario-executivo]]"
+  - "[[Olimpo/registros/metodo-onda-4/verificacao-dike|verificacao-dike]]"
+---
+
 # Verificação Dike DELTA (INDEPENDENTE) — Onda 4 do METODO Kolden (Olimpo)
 
 > **Executor:** subagente Explore isolado (papel Dike temporário — 10ª ocorrência consecutiva; METODO §9). Independência do produtor (olimpo-chief).

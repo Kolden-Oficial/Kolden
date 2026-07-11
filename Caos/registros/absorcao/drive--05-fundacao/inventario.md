@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--05-fundacao/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/drive--05-fundacao/reconciliacao|reconciliacao]]"
+---
+
 # Inventário — Drive "05 | Fundação" (F3)
 
 > Absorção read-only. Data: 2026-06-25. Fonte: Google Drive (OAuth, conta Workspace).

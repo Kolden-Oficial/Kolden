@@ -4,6 +4,9 @@ description: "Esta skill deve ser usada quando os usuários quiserem entender o 
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Motor de Contexto SYNAPSE

@@ -1,6 +1,9 @@
 ---
 name: reflexos-resilientes-e-bootstrap
 description: Use ao escrever ou revisar reflexos (hooks) do Claude Code — SessionStart, PostToolUse, UserPromptSubmit, Stop — e ao desenhar como o agente descobre/injeta suas próprias skills e memória no contexto. Aciona em "cria um hook", "reflexo que dispara quando", "persistir modo entre turnos", "bootstrap de skills na sessão", "memória automática por hook", "por que o hook travou o Claude". Traz as leis de resiliência (fail-open, dedup por hash, divulgação progressiva) que impedem um reflexo de quebrar o host. NÃO use para a lógica de negócio do que o hook chama (isso é da skill-dona).
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Reflexos Resilientes e Bootstrap de Skills

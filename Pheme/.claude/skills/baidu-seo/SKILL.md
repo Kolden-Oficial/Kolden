@@ -11,6 +11,9 @@ description: >
   esta habilidade cobre o mercado China, que tem regras próprias.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Baidu SEO — descoberta orgânica no maior buscador em Mandarim

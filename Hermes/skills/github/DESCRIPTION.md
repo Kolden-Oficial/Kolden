@@ -1,3 +1,6 @@
 ---
 description: GitHub workflow skills for managing repositories, pull requests, code reviews, issues, and CI/CD pipelines using the gh CLI and git via terminal.
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---

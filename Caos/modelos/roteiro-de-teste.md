@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
+---
+
 # Roteiro de Teste — <Nome do Agente>
 
 Template do roteiro de smoke tests usado pelo `testador` na Fase 7 e por quem instala o

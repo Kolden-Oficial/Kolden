@@ -2,6 +2,9 @@
 sidebar_position: 12
 title: "批量处理"
 description: "大规模生成 agent 轨迹——并行处理、断点续跑与工具集分布"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 批量处理

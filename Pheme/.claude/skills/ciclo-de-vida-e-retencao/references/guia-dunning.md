@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+relacionado:
+  - "[[Pheme/.claude/skills/ciclo-de-vida-e-retencao/references/playbook-cancelamento|playbook-cancelamento]]"
+---
+
 # Guia de dunning — recuperação de pagamento falho (churn involuntário)
 
 Falhas de pagamento causam 20-40% do churn total na maioria dos SaaS. A maior

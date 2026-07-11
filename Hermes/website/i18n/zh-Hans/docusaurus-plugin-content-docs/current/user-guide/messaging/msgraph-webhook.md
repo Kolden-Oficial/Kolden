@@ -2,6 +2,9 @@
 sidebar_position: 23
 title: "Microsoft Graph Webhook 监听器"
 description: "在 Hermes 中接收 Microsoft Graph 变更通知（会议、日历、聊天等）"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Microsoft Graph Webhook 监听器

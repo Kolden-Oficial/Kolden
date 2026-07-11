@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/microsoft--playwright-mcp/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/microsoft--playwright-mcp/seguranca|seguranca]]"
+---
+
 # F4 — Mapa de decisão — microsoft--playwright-mcp
 
 Comparação contra `dados/registro-de-entidades.yaml` e squads existentes. Viés autônomo: preferir ADAPT/CREATE

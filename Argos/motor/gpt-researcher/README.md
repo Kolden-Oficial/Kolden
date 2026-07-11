@@ -1,3 +1,17 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/CODE_OF_CONDUCT|CODE_OF_CONDUCT]]"
+  - "[[Argos/motor/gpt-researcher/CONTRIBUTING|CONTRIBUTING]]"
+  - "[[Argos/motor/gpt-researcher/PR_pr_feat-anthropic-real-usage-cost-tracking|PR_pr_feat-anthropic-real-usage-cost-tracking]]"
+  - "[[Argos/motor/gpt-researcher/PR_pr_fix-brave-snippet-bypasses-scraper|PR_pr_fix-brave-snippet-bypasses-scraper]]"
+  - "[[Argos/motor/gpt-researcher/README-ja_JP|README-ja_JP]]"
+  - "[[Argos/motor/gpt-researcher/README-ko_KR|README-ko_KR]]"
+  - "[[Argos/motor/gpt-researcher/README-zh_CN|README-zh_CN]]"
+---
+
 <div align="center" id="top">
 
 <img src="https://github.com/assafelovic/gpt-researcher/assets/13554167/20af8286-b386-44a5-9a83-3be1365139c3" alt="Logo" width="80">

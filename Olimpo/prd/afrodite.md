@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/prd/plutos|plutos]]"
+---
+
 # PRD de IA — Afrodite (CRO)
 
 | Campo | Valor |

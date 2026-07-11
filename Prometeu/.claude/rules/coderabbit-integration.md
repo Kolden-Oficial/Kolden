@@ -4,6 +4,11 @@ paths:
   - "tests/**"
   - "packages/**"
   - "bin/**"
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/rules/_indice|_indice]]"
 ---
 
 # Integração com CodeRabbit — Regras Detalhadas

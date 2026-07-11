@@ -3,6 +3,11 @@ sidebar_position: 9
 sidebar_label: "Context References"
 title: "Context References"
 description: "Inline @-syntax for attaching files, folders, git diffs, and URLs directly into your messages"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Context References

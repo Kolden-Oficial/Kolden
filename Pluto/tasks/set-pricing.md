@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Valor entregue calculado com dimensões financeiras e emocionais"
   - "[ ] Modelo de precificação selecionado com justificativa"
   - "[ ] Plano de teste definido"
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+relacionado:
+  - "[[Pluto/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Definir Estratégia de Precificação

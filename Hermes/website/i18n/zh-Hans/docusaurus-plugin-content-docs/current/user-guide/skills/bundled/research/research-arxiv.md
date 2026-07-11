@@ -2,6 +2,9 @@
 title: "Arxiv — 通过关键词、作者、分类或 ID 搜索 arXiv 论文"
 sidebar_label: "Arxiv"
 description: "通过关键词、作者、分类或 ID 搜索 arXiv 论文"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

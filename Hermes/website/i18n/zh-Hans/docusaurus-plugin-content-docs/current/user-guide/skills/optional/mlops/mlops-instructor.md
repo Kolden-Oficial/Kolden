@@ -2,6 +2,9 @@
 title: "Instructor"
 sidebar_label: "Instructor"
 description: "使用 Pydantic 验证从 LLM 响应中提取结构化数据，自动重试失败的提取，以类型安全方式解析复杂 JSON，并使用 Instructor 流式传输部分结果——经过实战检验的结构化输出库"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

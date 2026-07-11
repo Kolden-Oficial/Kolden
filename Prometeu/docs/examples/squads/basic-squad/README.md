@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Basic Squad Example
 
 A minimal squad demonstrating the essential structure required for AIOX squads.

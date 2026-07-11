@@ -2,6 +2,9 @@
 title: "Drug Discovery — 药物发现工作流的制药研究助手"
 sidebar_label: "Drug Discovery"
 description: "药物发现工作流的制药研究助手"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

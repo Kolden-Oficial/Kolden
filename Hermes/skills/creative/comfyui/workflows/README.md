@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Example Workflows
 
 These are starter API-format workflows for the most common tasks. They're

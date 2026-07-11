@@ -13,6 +13,9 @@ metadata:
     related_skills: [shopify, maps]
     homepage: https://shop.app
     upstream: https://shop.app/SKILL.md
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Shop CLI Skill

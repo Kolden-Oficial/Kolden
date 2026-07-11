@@ -1,3 +1,9 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # Diff cirúrgico — Sub-onda 1.1 (identidade + Ritual do Caos)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (Sub-onda 1.1 — herança da Onda 2 original do `m-20260705`)

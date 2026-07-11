@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapy/CONTRIBUTING|CONTRIBUTING]]"
+  - "[[Argos/motor/scrapy/INSTALL|INSTALL]]"
+  - "[[Argos/motor/scrapy/SECURITY|SECURITY]]"
+---
+
 
 # Contributor Covenant Code of Conduct
 

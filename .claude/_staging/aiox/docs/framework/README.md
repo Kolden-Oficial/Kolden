@@ -1,3 +1,17 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/framework/coding-standards|coding-standards]]"
+  - "[[.claude/_staging/aiox/docs/framework/config-override-guide|config-override-guide]]"
+  - "[[.claude/_staging/aiox/docs/framework/entity-layer-classification|entity-layer-classification]]"
+  - "[[.claude/_staging/aiox/docs/framework/memory-lifecycle|memory-lifecycle]]"
+  - "[[.claude/_staging/aiox/docs/framework/performance-tips|performance-tips]]"
+  - "[[.claude/_staging/aiox/docs/framework/source-tree|source-tree]]"
+  - "[[.claude/_staging/aiox/docs/framework/tech-stack|tech-stack]]"
+---
+
 # AIOX Framework Documentation
 
 > 🌐 **EN** | [PT](../pt/framework/README.md) | [ES](../es/framework/README.md)

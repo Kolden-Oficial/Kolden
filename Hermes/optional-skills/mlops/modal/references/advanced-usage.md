@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/modal/references/troubleshooting|troubleshooting]]"
+---
+
 # Modal Advanced Usage Guide
 
 ## Multi-GPU Training

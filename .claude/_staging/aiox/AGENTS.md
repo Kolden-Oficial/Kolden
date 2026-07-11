@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/README|README]]"
+---
+
 # AGENTS.md - Synkra AIOX
 
 Este arquivo configura o comportamento esperado de agentes no Codex CLI neste repositorio.

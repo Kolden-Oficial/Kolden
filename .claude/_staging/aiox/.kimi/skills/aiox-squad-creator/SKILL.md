@@ -1,6 +1,9 @@
 ---
 name: "aiox-squad-creator"
 description: "Activate the AIOX Squad Creator agent (Craft). Use to create, validate, publish and manage squads Trigger when user asks to squad-creator, or says 'activate squad-creator', 'switch to squad-creator', '@squad-creator'."
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # 🏗️ @squad-creator — Craft (Builder) | Squad Creator

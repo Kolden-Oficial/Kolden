@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Business Scaling Output Quality Checklist
 
 **Checklist ID:** HORMOZI-CL-001

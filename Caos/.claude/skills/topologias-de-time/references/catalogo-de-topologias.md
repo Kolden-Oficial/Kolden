@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/skills/topologias-de-time/references/orquestradores|orquestradores]]"
+---
+
 # Catálogo de topologias de time (detalhe)
 
 Fonte: `revfactory--harness@cceac68e` — `skills/harness/references/agent-design-patterns.md`

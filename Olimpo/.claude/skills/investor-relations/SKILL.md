@@ -3,6 +3,9 @@ name: investor-relations
 description: Use quando o Plutos precisar estruturar ou executar a comunicação financeira com o board, investidores atuais ou potenciais — atualização mensal, deck de rodada, resposta a due-diligence, guidance trimestral, gestão de expectativa em mês fraco, ou apresentação em reunião de conselho. Define ritmo, formato, métricas obrigatórias e o tom "sem surpresa" que sustenta credibilidade financeira. NÃO use para pitch de vendas a cliente (isso é Afrodite/Emporos) nem para comunicação executiva geral (isso é Zeus `comunicacao-executiva`). Aqui é a interface Plutos ↔ capital externo/board.
 invocavel_por: plutos
 tags: [ir, investor-relations, board, captacao, guidance, olimpo]
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Investor Relations (IR)

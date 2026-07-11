@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [code-review, security, verification, quality, pre-commit, auto-fix]
     related_skills: [subagent-driven-development, plan, test-driven-development, github-code-review]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Pre-Commit Code Verification

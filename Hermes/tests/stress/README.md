@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Stress / battle-test suite
 
 Long-running tests that exercise the Kanban kernel under adversarial

@@ -2,6 +2,11 @@
 sidebar_position: 8
 title: "Open WebUI"
 description: "Connect Open WebUI to Hermes Agent via the OpenAI-compatible API server"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Open WebUI Integration

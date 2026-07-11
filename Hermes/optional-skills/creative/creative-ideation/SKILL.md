@@ -11,6 +11,9 @@ metadata:
     tags: [Creative, Ideation, Projects, Brainstorming, Inspiration]
     category: creative
     requires_toolsets: []
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Creative Ideation

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task: Auditoria de Segurança
 
 **Propósito**: Auditoria abrangente de segurança e qualidade de banco de dados (cobertura de RLS, design de schema, sistema completo)

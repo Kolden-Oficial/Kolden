@@ -21,6 +21,11 @@ Checklist:
   - "[ ] Peças classificadas em dobrar / iterar / matar"
   - "[ ] Próximo teste (1 variável) definido"
   - "[ ] Roadmap até 100k atualizado"
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+relacionado:
+  - "[[Pheme/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Análise de Métricas + Próximo Teste

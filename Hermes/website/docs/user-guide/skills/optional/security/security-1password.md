@@ -2,6 +2,14 @@
 title: "1Password — Set up and use 1Password CLI (op)"
 sidebar_label: "1Password"
 description: "Set up and use 1Password CLI (op)"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/security/security-godmode|security-godmode]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/security/security-oss-forensics|security-oss-forensics]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/security/security-sherlock|security-sherlock]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/security/security-web-pentest|security-web-pentest]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

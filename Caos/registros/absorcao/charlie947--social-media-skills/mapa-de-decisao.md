@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/charlie947--social-media-skills/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/charlie947--social-media-skills/seguranca|seguranca]]"
+---
+
 # Mapa de decisão (F4) — charlie947--social-media-skills
 
 Comparação de cada ID do inventário contra o registro de entidades (`Caos/dados/registro-de-entidades.yaml`) e os squads existentes.

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: arquitetura
+up: "[[arquitetura/_MOC-arquitetura]]"
+relacionado:
+  - "[[arquitetura/pesquisa/2026-07-10-benchmark/fichas/_indice|_indice]]"
+---
+
 # Ficha — Spec aberta AGENTS.md
 
 > Coletada em 2026-07-10 · Versão/commit da fonte: site https://agents.md (live) + repo `agentsmd/agents.md` @ commit `d1ac7f0` (2026-03-12, branch `main`) · Status: ativo

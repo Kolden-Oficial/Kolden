@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/README|README]]"
+---
+
 # NPX Installation Guide
 
 > 🌐 **EN** | [PT](./pt/npx-install.md) | [ES](./es/npx-install.md)

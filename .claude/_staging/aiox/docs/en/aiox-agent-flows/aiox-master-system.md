@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/en/aiox-agent-flows/README|README]]"
+---
+
 # @aiox-master (Orion) - System Documentation
 
 > **EN** | [PT](../../aiox-agent-flows/aiox-master-system.md) | [ES](../../es/aiox-agent-flows/aiox-master-system.md)

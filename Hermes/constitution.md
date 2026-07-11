@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/README|README]]"
+---
+
 # Constituição do Agent Hermes (10 princípios veto-operacionais)
 
 > **Camada:** 2 (sistema — tradutor de intenção)

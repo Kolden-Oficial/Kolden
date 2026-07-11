@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/spiders/_indice|_indice]]"
+---
+
 # Advanced usages
 
 ## Introduction

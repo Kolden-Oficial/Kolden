@@ -2,6 +2,9 @@
 sidebar_position: 10
 title: "语音模式"
 description: "与 Hermes Agent 进行实时语音对话 — CLI、Telegram、Discord（私信、文字频道和语音频道）"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 语音模式

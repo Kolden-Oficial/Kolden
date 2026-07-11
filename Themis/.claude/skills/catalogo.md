@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Themis
+up: "[[Themis/_MOC-themis]]"
+---
+
 # Catálogo de Habilidades — Themis (Advisory Board)
 
 > Índice das habilidades registradas no squad Themis. Fonte única de verdade para roteamento por gatilho.

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/workflows/_indice|_indice]]"
+---
+
 # AIOX Cross-Reference Phase 6: Supporting Systems Analysis
 
 > **Generated:** 2026-02-05

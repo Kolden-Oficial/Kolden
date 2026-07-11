@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/README|README]]"
+---
+
 # ALETHEIA — Squad de Discovery & Lean Validation
 
 > **Versão:** 1.0.0 | **Criado:** 2026-06-20 | **Tipo:** squad (tier 0 + 7 especialistas)

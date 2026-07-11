@@ -4,6 +4,9 @@ title: 'Building a Gradcracker scraper with Crawlee: anti-bot failures and redir
 description: 'A real-world breakdown of building a Gradcracker scraper with Crawlee, handling bot detection, unstable redirects, and production trade-offs.'
 image: ./img/gradcracker-scraper.webp
 authors: [ShaheerS]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 > 👉 This article was written by [Shaheer Sarfaraz](https://www.linkedin.com/in/ssarfaraz30/) as part of [Write for Apify](https://apify.com/resources/write-for-apify) - a program for developers sharing original articles about what they've built with Crawlee.

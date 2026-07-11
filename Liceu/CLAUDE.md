@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/README|README]]"
+---
+
 # LICEU — Biblioteca de Mentes da Kolden
 
 > **Versão:** 1.0.0 | **Criado:** 2026-06-22 | **Tipo:** squad (tier 0 + 8 especialistas)

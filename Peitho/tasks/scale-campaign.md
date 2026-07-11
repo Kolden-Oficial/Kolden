@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Avaliação de escalabilidade concluída com classificações de risco"
   - "[ ] Método de escala selecionado com justificativa"
   - "[ ] Guardrails de monitoramento definidos com limites"
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Escalar Campanha

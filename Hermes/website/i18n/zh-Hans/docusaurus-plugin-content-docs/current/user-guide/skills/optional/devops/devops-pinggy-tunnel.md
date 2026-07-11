@@ -2,6 +2,9 @@
 title: "Pinggy Tunnel — 通过 Pinggy 实现零安装 SSH localhost 隧道"
 sidebar_label: "Pinggy Tunnel"
 description: "通过 Pinggy 实现零安装 SSH localhost 隧道"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

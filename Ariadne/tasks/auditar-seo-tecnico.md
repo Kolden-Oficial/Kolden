@@ -23,6 +23,11 @@ Checklist:
   - "[ ] Core Web Vitals com limiar oficial e fonte (PageSpeed campo vs lab) + timestamp"
   - "[ ] Schema checado por browser/Rich Results, nunca 'sem schema' por web_fetch"
   - "[ ] Plano priorizado por impacto × esforço (bloqueadores → alto → quick wins → longo prazo)"
+tipo: nota
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
+relacionado:
+  - "[[Ariadne/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Auditar SEO Técnico — Ariadne

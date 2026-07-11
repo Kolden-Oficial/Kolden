@@ -24,6 +24,11 @@ Checklist:
   - "[ ] Longevidade calculada e rotulada como inferência"
   - "[ ] Ângulos/ganchos mapeados por criativo"
   - "[ ] Cada anúncio com plataforma + fonte (URL) + timestamp"
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Varrer Ad Libraries — Argos

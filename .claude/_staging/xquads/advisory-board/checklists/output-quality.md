@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Strategic Counsel Output Quality Checklist
 
 **Checklist ID:** ADVISORY-CL-001

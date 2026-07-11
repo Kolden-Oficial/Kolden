@@ -2,6 +2,11 @@
 title: "Spike — Throwaway experiments to validate an idea before build"
 sidebar_label: "Spike"
 description: "Throwaway experiments to validate an idea before build"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/software-development/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/torchtitan/references/checkpoint|checkpoint]]"
+  - "[[Hermes/optional-skills/mlops/torchtitan/references/custom-models|custom-models]]"
+  - "[[Hermes/optional-skills/mlops/torchtitan/references/fsdp|fsdp]]"
+---
+
 # Float8 Training in TorchTitan
 
 Float8 training provides substantial speedups for models where GEMMs are large enough that the FP8 tensorcore speedup outweighs dynamic quantization overhead.

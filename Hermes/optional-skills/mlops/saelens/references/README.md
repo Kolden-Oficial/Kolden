@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/saelens/references/api|api]]"
+  - "[[Hermes/optional-skills/mlops/saelens/references/tutorials|tutorials]]"
+---
+
 # SAELens Reference Documentation
 
 This directory contains comprehensive reference materials for SAELens.

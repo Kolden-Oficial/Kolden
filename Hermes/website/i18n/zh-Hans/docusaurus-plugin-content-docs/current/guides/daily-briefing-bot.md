@@ -2,6 +2,9 @@
 sidebar_position: 3
 title: "教程：每日简报机器人"
 description: "构建一个自动化每日简报机器人，研究主题、汇总发现，并每天早晨推送至 Telegram 或 Discord"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 教程：构建每日简报机器人

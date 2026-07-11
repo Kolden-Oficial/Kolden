@@ -2,6 +2,9 @@
 title: "Github Auth — GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login"
 sidebar_label: "Github Auth"
 description: "GitHub auth 设置：HTTPS 令牌、SSH 密钥、gh CLI 登录"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

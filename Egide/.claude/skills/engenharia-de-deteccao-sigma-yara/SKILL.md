@@ -12,6 +12,9 @@ description: >-
 domain: ciberseguranca
 subdomain: engenharia-de-deteccao
 tags: [deteccao, sigma, yara, regras, fidelidade, falso-positivo, detection-as-code, attack, siem]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Engenharia de Detecção (Sigma + YARA)

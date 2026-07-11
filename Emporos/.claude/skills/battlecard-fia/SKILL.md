@@ -9,6 +9,9 @@ description: >
   regras de sanitização (nada de fake claim, nada de bash gratuito). Gatilhos: "battlecard",
   "concorrente X tem", "diferencial vs", "como responder objeção de concorrência", "matriz
   competitiva", "vs CompanyA", "comparativo de features". Dono: engenheiro-de-pre-vendas.
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # Battlecard FIA (Feature / Impact / Answer)

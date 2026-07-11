@@ -2,6 +2,11 @@
 sidebar_position: 2
 title: "Configuration"
 description: "Configure Hermes Agent — config.yaml, providers, models, API keys, and more"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/_indice|_indice]]"
 ---
 
 # Configuration

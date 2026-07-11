@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/.claude/skills/implementacao-ui/references/shadcn-tailwind|shadcn-tailwind]]"
+---
+
 # Motion de produção — esqueletos e guardrails
 
 > Digerido de `Leonxlnx/taste-skill` skill principal, seção de motion (MIT).

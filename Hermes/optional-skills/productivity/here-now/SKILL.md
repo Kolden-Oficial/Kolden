@@ -12,6 +12,9 @@ metadata:
     tags: [here.now, herenow, publish, deploy, hosting, static-site, web, share, URL, drive, storage]
     homepage: https://here.now
     requires_toolsets: [terminal]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # here.now

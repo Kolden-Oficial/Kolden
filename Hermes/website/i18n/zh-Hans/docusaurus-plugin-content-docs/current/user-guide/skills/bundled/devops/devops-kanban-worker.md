@@ -2,6 +2,9 @@
 title: "Kanban Worker — Hermes Kanban worker 的陷阱、示例与边界情况"
 sidebar_label: "Kanban Worker"
 description: "Hermes Kanban worker 的陷阱、示例与边界情况"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

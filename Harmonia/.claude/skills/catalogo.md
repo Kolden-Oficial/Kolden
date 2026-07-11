@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+---
+
 # Catálogo de habilidades — Harmonia (UX/UI)
 
 > Índice das habilidades em `.claude/skills/`. Criado na absorção F6 do lote

@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/skills/architect-first/references/architecture-checklist|architecture-checklist]]"
+  - "[[.claude/_staging/aiox/.claude/skills/architect-first/references/pre-implementation-checklist|pre-implementation-checklist]]"
+  - "[[.claude/_staging/aiox/.claude/skills/architect-first/references/testing-strategy-guide|testing-strategy-guide]]"
+---
+
 # Stop Rules Remediation Guide
 
 When a stop rule is triggered, HALT immediately and follow the remediation steps below.

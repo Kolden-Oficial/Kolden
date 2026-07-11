@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/installation/README|README]]"
+---
+
 # Windows Installation Guide for Synkra AIOX
 
 > 🌐 [EN](windows.md) | [PT](../pt/installation/windows.md) | [ES](../es/installation/windows.md)

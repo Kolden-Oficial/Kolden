@@ -1,3 +1,9 @@
+---
+tipo: registro
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Relatório de Inteligência de Mercado — Agências/empresas de marketing no Brasil
 
 > **Squad:** Argos · **Tipo:** snapshot de pesquisa (teste ponta-a-ponta) · **Coleta:** 2026-06-21 a 2026-06-22

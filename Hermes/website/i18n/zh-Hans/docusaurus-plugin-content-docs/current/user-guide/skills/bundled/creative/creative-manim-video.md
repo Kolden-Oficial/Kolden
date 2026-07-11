@@ -2,6 +2,9 @@
 title: "Manim Video — Manim CE 动画：3Blue1Brown 数学/算法视频"
 sidebar_label: "Manim Video"
 description: "Manim CE 动画：3Blue1Brown 数学/算法视频"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

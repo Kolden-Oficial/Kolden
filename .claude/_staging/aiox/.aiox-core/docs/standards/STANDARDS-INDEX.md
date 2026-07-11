@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/docs/standards/_indice|_indice]]"
+---
+
 # AIOX Standards Documentation Index
 
 **Version:** 2.1.0

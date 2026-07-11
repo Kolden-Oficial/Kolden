@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/.claude/skills/direcao-visual-de-referencia/references/direcao-mobile|direcao-mobile]]"
+  - "[[Aglaia/.claude/skills/direcao-visual-de-referencia/references/motor-combinatorio|motor-combinatorio]]"
+---
+
 # Vocabulario estetico — 67 estilos + 24 patterns + canvas museum-quality
 
 > Referencia consolidada de estilos visuais, patterns de landing e paletas

@@ -2,6 +2,9 @@
 sidebar_position: 15
 title: "自动化蓝图"
 description: "开箱即用的自动化蓝图——定时任务、GitHub 事件触发、API webhook 及多技能工作流"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 自动化蓝图

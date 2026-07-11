@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Interface audit completed with inconsistencies documented"
   - "[ ] All design tokens defined (colors, typography, spacing, borders, shadows)"
   - "[ ] Documentation complete with examples and contribution guide"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/design-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Atomic Design System Creation

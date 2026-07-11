@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/.claude/skills/de-slop/references/checklist-e-scorecard|checklist-e-scorecard]]"
+  - "[[Caliope/.claude/skills/de-slop/references/guia-falso-positivo|guia-falso-positivo]]"
+  - "[[Caliope/.claude/skills/de-slop/references/padroes-anti-ia|padroes-anti-ia]]"
+---
+
 # Calibração de voz
 
 Tirar os padrões de IA é metade do trabalho. Texto estéril, sem voz, denuncia tanto quanto

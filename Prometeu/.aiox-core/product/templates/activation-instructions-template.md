@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/templates/_indice|_indice]]"
+---
+
 # Agent Activation Instructions Template
 **Story**: 6.1.2.5 - Contextual Agent Load System Integration
 **Version**: 2.0 (GreetingBuilder Integration)

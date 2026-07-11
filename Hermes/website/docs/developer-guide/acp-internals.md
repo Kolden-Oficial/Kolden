@@ -2,6 +2,11 @@
 sidebar_position: 2
 title: "ACP Internals"
 description: "How the ACP adapter works: lifecycle, sessions, event bridge, approvals, and tool rendering"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # ACP Internals

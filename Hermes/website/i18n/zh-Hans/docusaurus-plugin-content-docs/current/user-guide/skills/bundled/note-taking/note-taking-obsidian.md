@@ -2,6 +2,9 @@
 title: "Obsidian — 在 Obsidian 知识库中读取、搜索、创建和编辑笔记"
 sidebar_label: "Obsidian"
 description: "在 Obsidian 知识库中读取、搜索、创建和编辑笔记"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

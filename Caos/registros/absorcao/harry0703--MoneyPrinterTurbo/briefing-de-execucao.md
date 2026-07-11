@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/harry0703--MoneyPrinterTurbo/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/harry0703--MoneyPrinterTurbo/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/harry0703--MoneyPrinterTurbo/seguranca|seguranca]]"
+---
+
 # Briefing de execução — MoneyPrinterTurbo como ferramenta interna (Pheme/Caliope)
 
 - **Slug:** harry0703--MoneyPrinterTurbo · **SHA:** ad6aabfeb94f16f35474058d9c3e1f74ce66e9d4

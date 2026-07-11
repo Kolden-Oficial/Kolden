@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Unified Hooks System
 
 **Module:** `.aiox-core/hooks/unified`

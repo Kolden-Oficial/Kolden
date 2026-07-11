@@ -4,6 +4,9 @@ title: 'Optimizing web scraping: Scraping auth data using JSDOM'
 description: 'Learn how to scrape using JSDOM, alternative to Cheerio and browser based scraping.'
 image: ./img/jsdom.webp
 authors: [SauravJ]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Optimizing web scraping: Transitioning from browser-based to JSDOM

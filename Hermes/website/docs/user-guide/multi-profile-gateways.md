@@ -1,5 +1,10 @@
 ---
 sidebar_position: 4
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/_indice|_indice]]"
 ---
 
 # Running Many Gateways at Once

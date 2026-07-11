@@ -2,6 +2,11 @@
 sidebar_position: 3
 title: "Creating Skills"
 description: "How to create skills for Hermes Agent — SKILL.md format, guidelines, and publishing"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Creating Skills

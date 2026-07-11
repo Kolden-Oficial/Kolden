@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [evolution, optimization, prompt-engineering, research]
     related_skills: [arxiv, jupyter-live-kernel]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Darwinian Evolver

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/skills/validacao-de-skill/references/avaliacao-ab|avaliacao-ab]]"
+---
+
 # Princípios de persuasão para desenhar habilidades de disciplina
 
 LLMs respondem aos mesmos princípios de persuasão que humanos. Entender essa psicologia ajuda a

@@ -2,6 +2,9 @@
 sidebar_position: 9
 title: "个性与 SOUL.md"
 description: "通过全局 SOUL.md、内置个性预设和自定义角色定义来自定义 Hermes Agent 的个性"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 个性与 SOUL.md

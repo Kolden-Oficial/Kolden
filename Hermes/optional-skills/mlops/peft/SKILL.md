@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Fine-Tuning, PEFT, LoRA, QLoRA, Parameter-Efficient, Adapters, Low-Rank, Memory Optimization, Multi-Adapter]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # PEFT (Parameter-Efficient Fine-Tuning)

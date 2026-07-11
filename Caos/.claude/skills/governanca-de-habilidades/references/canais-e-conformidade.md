@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # Canais de GC e níveis de conformidade — referência da governança de habilidades
 
 ## Canais do config GC (faxina com humano no loop)

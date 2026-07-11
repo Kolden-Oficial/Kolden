@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Incident classified with severity and timeline established"
   - "[ ] Containment actions executed and verified"
   - "[ ] Lessons learned documented with actionable improvements"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/cybersecurity/tasks/_indice|_indice]]"
 ---
 
 # Task: Incident Response Playbook

@@ -7,6 +7,9 @@ agente_primario: [aglaia-chief]
 tags: [branding, identidade, purpose-values, visual-system, brand-voice]
 fonte_upstream: msitarzewski/agency-agents@a597cb6 (design/, MIT)
 status: semente
+tipo: skill
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
 ---
 
 > **Atribuição:** semente adaptada de `msitarzewski/agency-agents@a597cb6` (MIT, divisão `design/`). Reescrita em PT-BR, sem cópia literal. Aaker e Wheeler são os pensadores históricos de referência dentro do squad Aglaia.

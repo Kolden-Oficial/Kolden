@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Métricas principais calculadas e apresentadas"
   - "[ ] Análise 80/20 realizada"
   - "[ ] Plano de ação de 7 dias criado"
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Analisar Performance

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Reconhecimento passivo e ativo concluído"
   - "[ ] Enumeração de diretórios e serviços concluída"
   - "[ ] Superfície de ataque mapeada com alvos de alto valor identificados"
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+relacionado:
+  - "[[Egide/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Reconhecimento & Enumeração

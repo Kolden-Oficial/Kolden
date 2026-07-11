@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/guides/README|README]]"
+---
+
 # AIOX 质量门控系统指南
 
 > **[EN](../../guides/quality-gates.md)** | **[PT](../../pt/guides/quality-gates.md)** | **[ES](../../es/guides/quality-gates.md)** | **ZH**

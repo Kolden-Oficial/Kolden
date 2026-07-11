@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+---
+
 # Biblioteca de linhas do host — por fase e energy tag
 
 ## R — Retention/Pain

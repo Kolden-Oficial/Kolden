@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/blocks/README|README]]"
+---
+
 # Bloco: Carregamento de Contexto
 
 > **Block ID:** `context-loading`

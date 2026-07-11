@@ -1,6 +1,9 @@
 ---
 name: aiox-squad-creator
 description: Squad Creator (Craft). Use to create, validate, publish and manage squads
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # AIOX Squad Creator Activator

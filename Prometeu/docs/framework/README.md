@@ -1,3 +1,17 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/framework/coding-standards|coding-standards]]"
+  - "[[Prometeu/docs/framework/config-override-guide|config-override-guide]]"
+  - "[[Prometeu/docs/framework/entity-layer-classification|entity-layer-classification]]"
+  - "[[Prometeu/docs/framework/memory-lifecycle|memory-lifecycle]]"
+  - "[[Prometeu/docs/framework/performance-tips|performance-tips]]"
+  - "[[Prometeu/docs/framework/source-tree|source-tree]]"
+  - "[[Prometeu/docs/framework/tech-stack|tech-stack]]"
+---
+
 # AIOX Framework Documentation
 
 > 🌐 **EN** | [PT](../pt/framework/README.md) | [ES](../es/framework/README.md)

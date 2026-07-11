@@ -12,6 +12,9 @@ Checklist:
   - "[ ] Receive name"
   - "[ ] Apply style"
   - "[ ] Generate greeting"
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # *greet / *hello

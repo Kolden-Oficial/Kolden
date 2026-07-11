@@ -2,6 +2,9 @@
 sidebar_position: 7
 title: "Docker"
 description: "在 Docker 中运行 Hermes Agent 以及将 Docker 用作终端后端"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Hermes Agent — Docker

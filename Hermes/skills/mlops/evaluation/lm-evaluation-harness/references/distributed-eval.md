@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/mlops/evaluation/lm-evaluation-harness/references/api-evaluation|api-evaluation]]"
+  - "[[Hermes/skills/mlops/evaluation/lm-evaluation-harness/references/benchmark-guide|benchmark-guide]]"
+  - "[[Hermes/skills/mlops/evaluation/lm-evaluation-harness/references/custom-tasks|custom-tasks]]"
+---
+
 # Distributed Evaluation
 
 Guide to running evaluation across multiple GPUs using data parallelism and tensor/pipeline parallelism.

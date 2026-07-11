@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Belief system defined with central conviction"
   - "[ ] Tribal markers designed across all categories"
   - "[ ] Belonging gradient defined with 5 levels"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/movement/tasks/_indice|_indice]]"
 ---
 
 # Task: Create Identity

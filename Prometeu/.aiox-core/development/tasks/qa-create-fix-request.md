@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Tarefa Criar Pedido de Correção
 
 Gera um documento estruturado de pedido de correção (`QA_FIX_REQUEST.md`) para o @dev com base nos achados da revisão de QA.

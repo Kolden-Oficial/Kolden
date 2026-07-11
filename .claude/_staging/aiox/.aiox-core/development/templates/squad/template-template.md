@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/templates/squad/agent-template|agent-template]]"
+  - "[[.claude/_staging/aiox/.aiox-core/development/templates/squad/checklist-template|checklist-template]]"
+  - "[[.claude/_staging/aiox/.aiox-core/development/templates/squad/task-template|task-template]]"
+---
+
 # {{COMPONENTNAME}} Template
 
 > {{DESCRIPTION}}

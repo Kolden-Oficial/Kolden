@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/templates/claude-md-fullstack|claude-md-fullstack]]"
+  - "[[Dedalo/templates/claude-md-microservices|claude-md-microservices]]"
+  - "[[Dedalo/templates/claude-md-mobile|claude-md-mobile]]"
+  - "[[Dedalo/templates/claude-md-monorepo|claude-md-monorepo]]"
+---
+
 # CLAUDE.md — Projeto de Biblioteca / Pacote
 
 ## Visão Geral do Projeto

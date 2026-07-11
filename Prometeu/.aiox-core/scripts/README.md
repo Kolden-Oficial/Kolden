@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/scripts/aiox-doc-template|aiox-doc-template]]"
+  - "[[Prometeu/.aiox-core/scripts/workflow-management|workflow-management]]"
+---
+
 # AIOX Scripts - Legacy Directory
 
 > **Note**: This directory now contains only legacy/migration scripts and a few active utilities.

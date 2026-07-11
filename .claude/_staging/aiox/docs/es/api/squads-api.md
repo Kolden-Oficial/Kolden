@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 <!-- Traduccion: ES | Original: /docs/en/api/squads-api.md | Sincronizacion: 2026-01-26 -->
 
 # Referencia de la API de Squads

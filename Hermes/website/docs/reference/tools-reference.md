@@ -2,6 +2,11 @@
 sidebar_position: 3
 title: "Built-in Tools Reference"
 description: "Authoritative reference for Hermes built-in tools, grouped by toolset"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/reference/_indice|_indice]]"
 ---
 
 # Built-in Tools Reference

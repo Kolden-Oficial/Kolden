@@ -21,6 +21,11 @@ Checklist:
   - "[ ] Consulta interpretada com classificação de intenção e fase"
   - "[ ] Resposta rápida fornecida"
   - "[ ] Rota executada ou resposta direta dada"
+tipo: nota
+area: Dionisio
+up: "[[Dionisio/_MOC-dionisio]]"
+relacionado:
+  - "[[Dionisio/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar — Squad de Movimentos

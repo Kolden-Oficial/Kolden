@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/commands/synapse/tasks/_indice|_indice]]"
+---
+
 # Criar Domain
 
 Cria um novo arquivo de domain SYNAPSE e o registra no manifest.

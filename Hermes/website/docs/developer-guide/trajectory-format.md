@@ -1,3 +1,11 @@
+---
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
+---
+
 # Trajectory Format
 
 Hermes Agent saves conversation trajectories in ShareGPT-compatible JSONL format

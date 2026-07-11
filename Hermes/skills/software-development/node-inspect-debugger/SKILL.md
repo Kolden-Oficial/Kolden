@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [debugging, nodejs, node-inspect, cdp, breakpoints, ui-tui]
     related_skills: [systematic-debugging, python-debugpy, debugging-hermes-tui-commands]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Node.js Inspect Debugger

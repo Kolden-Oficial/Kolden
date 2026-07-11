@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/agents/traces/README|README]]"
+---
+
 # Shared Activation Pipeline - Common Agent Activation Chain
 
 > Traced from source code, not documentation.

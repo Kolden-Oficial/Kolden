@@ -16,6 +16,9 @@ description: >
   ecommerce/publisher/agência", "site novo — por onde começar", "content
   strategy". Produção material vai para `brief-de-conteudo-data-driven`;
   cluster desenhado com `arquitetura-de-site-hub-spoke`.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Planejamento por Indústria (SaaS / E-commerce / Local / Publisher / Agência)

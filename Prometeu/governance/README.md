@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/governance/evolution-pipeline|evolution-pipeline]]"
+  - "[[Prometeu/governance/squad-activation-strategy|squad-activation-strategy]]"
+---
+
 # aiox-core/governance/
 
 Governance documents for the AIOX framework. This is where the framework's **own evolution rules** live.

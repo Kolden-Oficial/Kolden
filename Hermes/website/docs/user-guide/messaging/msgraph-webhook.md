@@ -2,6 +2,11 @@
 sidebar_position: 23
 title: "Microsoft Graph Webhook Listener"
 description: "Receive Microsoft Graph change notifications (meetings, calendar, chat, etc.) in Hermes"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Microsoft Graph Webhook Listener

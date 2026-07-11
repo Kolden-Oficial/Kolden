@@ -25,6 +25,8 @@ frameworks_kolden: [arquitetura-de-agents-kolden]
 squads_que_usam: [caos, prometeu, dedalo, hermes, olimpo]
 # --- federação (preenchido pelo bibliotecario) ---
 confianca_da_fonte: alta
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # LangGraph — Paradigma "Stateful Graph-based Orchestration" — Dossiê

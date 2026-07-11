@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/anthropics--claude-code/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/anthropics--claude-code/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades (F3) — anthropics--claude-code
 
 Rota A. Granular (cada skill/técnica = 1 ID). Escopo: `frontend-design` (alvo), `plugin-dev` + `hookify` (bônus oficial Anthropic, fora do escopo da planilha — alto valor para caos-fabrica/dedalo).

@@ -1,3 +1,11 @@
+---
+tipo: checklist
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/checklists/_indice|_indice]]"
+---
+
 # Database Design Checklist
 
 ## Instructions for Data Engineer Agent

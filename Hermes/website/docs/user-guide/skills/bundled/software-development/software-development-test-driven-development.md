@@ -2,6 +2,11 @@
 title: "Test Driven Development — TDD: enforce RED-GREEN-REFACTOR, tests before code"
 sidebar_label: "Test Driven Development"
 description: "TDD: enforce RED-GREEN-REFACTOR, tests before code"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/software-development/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

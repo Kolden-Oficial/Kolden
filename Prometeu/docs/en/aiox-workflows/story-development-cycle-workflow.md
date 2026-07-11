@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/en/aiox-workflows/README|README]]"
+---
+
 # Workflow do Story Development Cycle
 
 > **EN** | [PT](../../aiox-workflows/story-development-cycle-workflow.md) | [ES](../../es/aiox-workflows/story-development-cycle-workflow.md)

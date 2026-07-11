@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/_lote-2026-06-26/_indice|_indice]]"
+---
+
 # Relatório de Perda (F6.5) — squad Prometeu
 
 - **Squad-alvo:** Prometeu (`C:/Kolden/Prometeu/`) — engenharia spec-driven / framework AIOX.

@@ -2,6 +2,9 @@
 title: "Baoyu Infographic — 信息图：21种布局 × 21种风格（信息图, 可视化）"
 sidebar_label: "Baoyu Infographic"
 description: "信息图：21种布局 × 21种风格（信息图, 可视化）"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -3,6 +3,9 @@ sidebar_position: 8
 sidebar_label: "Checkpoints & Rollback"
 title: "检查点与 /rollback"
 description: "使用影子 git 仓库和自动快照为破坏性操作提供文件系统安全保障"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 检查点与 `/rollback`

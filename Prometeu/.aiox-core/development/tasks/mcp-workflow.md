@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Task de Criação de Workflow MCP
 
 > Crie workflows em Code Mode que executam no sandbox Docker MCP para ~98,7% de economia de tokens.

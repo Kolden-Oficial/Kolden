@@ -1,3 +1,16 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/installation/faq|faq]]"
+  - "[[.claude/_staging/aiox/docs/installation/linux|linux]]"
+  - "[[.claude/_staging/aiox/docs/installation/macos|macos]]"
+  - "[[.claude/_staging/aiox/docs/installation/troubleshooting|troubleshooting]]"
+  - "[[.claude/_staging/aiox/docs/installation/v4-quick-start|v4-quick-start]]"
+  - "[[.claude/_staging/aiox/docs/installation/windows|windows]]"
+---
+
 # Synkra AIOX Installation Documentation
 
 > 🌐 **EN** | [PT](../pt/installation/README.md) | [ES](../es/installation/README.md)

@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/obra--superpowers/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/obra--superpowers/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática — obra--superpowers
 
 - **slug:** obra--superpowers

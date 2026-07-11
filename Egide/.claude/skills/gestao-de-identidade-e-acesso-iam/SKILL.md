@@ -11,6 +11,9 @@ description: >-
 domain: ciberseguranca
 subdomain: identity-access-management
 tags: [iam, identidade, active-directory, kerberos, rbac, pam, sso, saml, oauth, scim, least-privilege, governanca]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Gestão de Identidade e Acesso (IAM)

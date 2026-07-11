@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 02 — Hipóteses (H1–H3) com evidência
 
 > Passo 1 do protocolo. Cada hipótese é resolvida com `arquivo:linha`.

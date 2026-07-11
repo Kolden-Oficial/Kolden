@@ -2,6 +2,9 @@
 title: "Evm — 只读 EVM 客户端：跨 8 条链的钱包、代币、Gas"
 sidebar_label: "Evm"
 description: "只读 EVM 客户端：跨 8 条链的钱包、代币、Gas"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

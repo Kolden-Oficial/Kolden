@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F5 — Decisão de aplicação · B02 Caliope + Pheme + Peitho
 
 > PARA AQUI. Aguardando aprovação Ronan (Art. III da Constituição do Caos).

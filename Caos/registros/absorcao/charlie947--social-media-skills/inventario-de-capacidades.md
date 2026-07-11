@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/charlie947--social-media-skills/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/charlie947--social-media-skills/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades (F3) — charlie947--social-media-skills
 
 - **slug:** charlie947--social-media-skills | **sha:** 94f72ea2ece388fa | **rota:** A

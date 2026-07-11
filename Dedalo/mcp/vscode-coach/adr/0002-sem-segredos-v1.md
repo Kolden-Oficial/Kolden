@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/mcp/vscode-coach/adr/0001-stack-node-typescript|0001-stack-node-typescript]]"
+---
+
 # ADR 0002 — Sem segredos na v1
 
 **Status:** Aceito | **Data:** 2026-06-28 | **Decisor:** Piper (Dédalo) + Caos | **Aprovação:** Ronan

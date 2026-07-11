@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Hooks written across at least 4 categories"
   - "[ ] Platform constraints respected"
   - "[ ] All hooks scored on 3 dimensions"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/hormozi-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Create Hooks

@@ -5,6 +5,9 @@ tags: [community]
 description: 'Learn how to scrape dynamic websites using Crawlee for Python with HTTP client.'
 image: ./img/dynamic-websites.webp
 authors: [MaxB]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Web scraping of a dynamic website using Crawlee for Python with HTTP client

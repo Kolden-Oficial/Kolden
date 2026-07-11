@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os itens do checklist avaliados e pontuados"
   - "[ ] Veredito emitido (APPROVE/REVISE/REJECT)"
   - "[ ] Integridade dos dados e rigor estatístico avaliados"
+tipo: nota
+area: Metis
+up: "[[Metis/_MOC-metis]]"
+relacionado:
+  - "[[Metis/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Revisar Saída de Crescimento Orientado por Dados

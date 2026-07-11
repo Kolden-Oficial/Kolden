@@ -5,6 +5,9 @@ tags: [community]
 description: 'Learn how to scrape Crunchbase using Crawlee for Python'
 image: "./img/scrape_crunchbase.webp"
 authors: [MaxB]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 Python developers know the drill: you need reliable company data, and Crunchbase has it. This guide shows you how to build an effective [Crunchbase](https://www.crunchbase.com/) scraper in Python that gets you the data you need.

@@ -2,6 +2,9 @@
 title: "Distributed Llm Pretraining Torchtitan"
 sidebar_label: "Distributed Llm Pretraining Torchtitan"
 description: "使用 torchtitan 提供 PyTorch 原生分布式 LLM 预训练，支持 4D 并行（FSDP2、TP、PP、CP）"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

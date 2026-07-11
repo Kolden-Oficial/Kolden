@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Public Claude Desktop Bundle
 
 This directory holds the committed `skyvern-claude-desktop.mcpb` artifact that

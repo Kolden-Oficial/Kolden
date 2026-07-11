@@ -2,6 +2,11 @@
 sidebar_position: 11
 title: "Cron Internals"
 description: "How Hermes stores, schedules, edits, pauses, skill-loads, and delivers cron jobs"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Cron Internals

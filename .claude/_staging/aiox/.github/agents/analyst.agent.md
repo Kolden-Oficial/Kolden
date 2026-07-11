@@ -5,6 +5,11 @@ description: 'Use for market research, competitive analysis, user research, brai
 NOT for: PRD creation or product strategy → Use @pm. Technical architecture decisions or technology selection → Use @architect. Story creation or sprint planning → Use @sm.
 '
 tools: ['read', 'edit', 'search', 'execute']
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.github/agents/_indice|_indice]]"
 ---
 
 # 🔍 Atlas Agent (@analyst)

@@ -16,6 +16,9 @@ setup:
       prompt: "1Password Service Account Token"
       provider_url: "https://developer.1password.com/docs/service-accounts/"
       secret: true
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 1Password CLI

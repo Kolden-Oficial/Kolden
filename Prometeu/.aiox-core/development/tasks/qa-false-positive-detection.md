@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
+---
+
 # Tarefa de Detecção de Falso Positivo
 
 Checklist de pensamento crítico para prevenir viés de confirmação e aprovações de falso positivo.

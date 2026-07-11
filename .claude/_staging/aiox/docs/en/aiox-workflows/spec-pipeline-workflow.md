@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/en/aiox-workflows/README|README]]"
+---
+
 # Spec Pipeline Workflow
 
 > **EN** | [PT](../../aiox-workflows/spec-pipeline-workflow.md) | [ES](../../es/aiox-workflows/spec-pipeline-workflow.md)

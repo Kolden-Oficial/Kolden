@@ -1,3 +1,43 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/ade-guide|ade-guide]]"
+  - "[[.claude/_staging/aiox/docs/guides/agent-selection-guide|agent-selection-guide]]"
+  - "[[.claude/_staging/aiox/docs/guides/aiox-pro-access|aiox-pro-access]]"
+  - "[[.claude/_staging/aiox/docs/guides/api-reference|api-reference]]"
+  - "[[.claude/_staging/aiox/docs/guides/build-recovery-guide|build-recovery-guide]]"
+  - "[[.claude/_staging/aiox/docs/guides/code-graph-mcp-setup|code-graph-mcp-setup]]"
+  - "[[.claude/_staging/aiox/docs/guides/config-migration-guide|config-migration-guide]]"
+  - "[[.claude/_staging/aiox/docs/guides/contextual-greeting-system-guide|contextual-greeting-system-guide]]"
+  - "[[.claude/_staging/aiox/docs/guides/contributing-squads|contributing-squads]]"
+  - "[[.claude/_staging/aiox/docs/guides/development-setup|development-setup]]"
+  - "[[.claude/_staging/aiox/docs/guides/ide-sync-guide|ide-sync-guide]]"
+  - "[[.claude/_staging/aiox/docs/guides/IDS-CONCEITOS-EXPLICADOS|IDS-CONCEITOS-EXPLICADOS]]"
+  - "[[.claude/_staging/aiox/docs/guides/installation-troubleshooting|installation-troubleshooting]]"
+  - "[[.claude/_staging/aiox/docs/guides/llm-routing|llm-routing]]"
+  - "[[.claude/_staging/aiox/docs/guides/mcp-global-setup|mcp-global-setup]]"
+  - "[[.claude/_staging/aiox/docs/guides/MEMORY-INTEGRATION|MEMORY-INTEGRATION]]"
+  - "[[.claude/_staging/aiox/docs/guides/MEMORY-INTELLIGENCE-SYSTEM|MEMORY-INTELLIGENCE-SYSTEM]]"
+  - "[[.claude/_staging/aiox/docs/guides/MEMORY-SYSTEM|MEMORY-SYSTEM]]"
+  - "[[.claude/_staging/aiox/docs/guides/permission-modes|permission-modes]]"
+  - "[[.claude/_staging/aiox/docs/guides/project-status-feature|project-status-feature]]"
+  - "[[.claude/_staging/aiox/docs/guides/quality-dashboard|quality-dashboard]]"
+  - "[[.claude/_staging/aiox/docs/guides/quality-gates|quality-gates]]"
+  - "[[.claude/_staging/aiox/docs/guides/release-procedure|release-procedure]]"
+  - "[[.claude/_staging/aiox/docs/guides/security-hardening|security-hardening]]"
+  - "[[.claude/_staging/aiox/docs/guides/service-discovery|service-discovery]]"
+  - "[[.claude/_staging/aiox/docs/guides/squad-migration|squad-migration]]"
+  - "[[.claude/_staging/aiox/docs/guides/squads-guide|squads-guide]]"
+  - "[[.claude/_staging/aiox/docs/guides/squads-overview|squads-overview]]"
+  - "[[.claude/_staging/aiox/docs/guides/supabase-ops-handoff|supabase-ops-handoff]]"
+  - "[[.claude/_staging/aiox/docs/guides/template-engine-v2|template-engine-v2]]"
+  - "[[.claude/_staging/aiox/docs/guides/testing-guide|testing-guide]]"
+  - "[[.claude/_staging/aiox/docs/guides/user-guide|user-guide]]"
+  - "[[.claude/_staging/aiox/docs/guides/workflows-guide|workflows-guide]]"
+---
+
 # AIOX Guides
 
 > **EN** | [PT](../pt/guides/README.md) | [ES](../es/guides/README.md)

@@ -2,6 +2,9 @@
 title: "Blender Mcp — 通过 socket 连接 blender-mcp 插件，直接从 Hermes 控制 Blender"
 sidebar_label: "Blender Mcp"
 description: "通过 socket 连接 blender-mcp 插件，直接从 Hermes 控制 Blender"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

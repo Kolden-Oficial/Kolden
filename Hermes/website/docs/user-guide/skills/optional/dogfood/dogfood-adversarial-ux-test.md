@@ -2,6 +2,9 @@
 title: "Adversarial Ux Test — Roleplay the most difficult, tech-resistant user for your product"
 sidebar_label: "Adversarial Ux Test"
 description: "Roleplay the most difficult, tech-resistant user for your product"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

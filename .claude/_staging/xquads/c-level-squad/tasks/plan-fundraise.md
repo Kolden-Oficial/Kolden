@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Readiness assessment completed (10 dimensions)"
   - "[ ] Investment thesis and narrative arc crafted"
   - "[ ] Investor target list built and tiered"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/c-level-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Plan Fundraise

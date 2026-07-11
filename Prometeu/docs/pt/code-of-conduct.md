@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/README|README]]"
+---
+
 # Código de Conduta do Contributor Covenant
 
 > 🇺🇸 [English Version](CODE_OF_CONDUCT.md)

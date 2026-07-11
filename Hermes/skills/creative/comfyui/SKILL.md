@@ -25,6 +25,9 @@ metadata:
       - video-generation
     related_skills: [stable-diffusion-image-generation, image_gen]
     category: creative
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # ComfyUI

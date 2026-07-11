@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/pytorch-lightning/references/callbacks|callbacks]]"
+  - "[[Hermes/optional-skills/mlops/pytorch-lightning/references/hyperparameter-tuning|hyperparameter-tuning]]"
+---
+
 # PyTorch Lightning Distributed Training
 
 ## Distributed Strategies

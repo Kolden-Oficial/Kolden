@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [web, javascript, agent, browser, gui, alibaba, embed, copilot, saas]
     category: web-development
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # page-agent

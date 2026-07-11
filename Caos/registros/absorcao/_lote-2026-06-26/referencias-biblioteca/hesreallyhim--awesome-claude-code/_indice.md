@@ -6,6 +6,8 @@ licenca: CC-BY-NC-ND-4.0
 classe: lista curada (índice de descoberta)
 disposicao: REFERENCIA-ARQUIVADA
 data: 2026-06-27
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 > ############################################################

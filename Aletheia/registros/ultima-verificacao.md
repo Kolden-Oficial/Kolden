@@ -1,3 +1,9 @@
+---
+tipo: registro
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+---
+
 # Última Verificação de Alinhamento — Aletheia
 
 | Campo | Valor |

@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Checklist de Confiabilidade de Saída — Argos (Inteligência de Mercado & Scraping)
 
 **ID do Checklist:** ARGOS-CL-001

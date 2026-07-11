@@ -4,6 +4,9 @@ description: Use quando um bug/incidente precisar ser depurado com método (não
 grounding_required: false
 categoria_art_iv: MCP-nativo
 squads_consumidores: [Prometeu-interno]
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Depuracao Sistematica

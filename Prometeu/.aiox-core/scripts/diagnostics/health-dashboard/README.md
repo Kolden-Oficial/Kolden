@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # AIOX Health Dashboard
 
 Visual dashboard for the AIOX Health Check System. Displays real-time health status, domain scores, issues, and self-healing history.

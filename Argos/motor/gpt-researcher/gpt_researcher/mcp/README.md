@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # GPT Researcher MCP Integration
 
 This directory contains the comprehensive Model Context Protocol (MCP) integration for GPT Researcher. MCP enables GPT Researcher to seamlessly connect with and utilize external tools and data sources through a standardized protocol.

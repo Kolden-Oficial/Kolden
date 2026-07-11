@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+---
+
 # Checklist de Qualidade de Saída de Estratégia Executiva
 
 **ID do Checklist:** CLEVEL-CL-001

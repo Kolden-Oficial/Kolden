@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Palavra-chave principal definida"
   - "[ ] Pin vertical 2:3 com texto legível"
   - "[ ] Título + descrição com keywords + destino"
+tipo: nota
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
+relacionado:
+  - "[[Pheme/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Pin de Pinterest (SEO Visual)

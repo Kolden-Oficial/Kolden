@@ -12,6 +12,9 @@ description: >
   "decision matrix", "shortlist de tools". Dono: project-integrator (Conduit).
   Cross-link Olimpo (`comunicacao-executiva`) quando resultado precisa subir para
   aprovação C-level.
+tipo: skill
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
 ---
 
 # Avaliação de ferramentas com MCDA

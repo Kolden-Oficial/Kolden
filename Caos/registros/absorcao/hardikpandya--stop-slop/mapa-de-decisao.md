@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/hardikpandya--stop-slop/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/hardikpandya--stop-slop/seguranca|seguranca]]"
+---
+
 # F4 — Mapa de decisão REUSE/ADAPT/CREATE · hardikpandya--stop-slop
 
 Comparação contra `dados/registro-de-entidades.yaml` e os squads existentes. Verificação direta: grep por `slop`/`humaniz`/`ai tells`/`adverb`/`passive voice` em `Caliope/` retornou **zero** — não há capacidade equivalente registrada. Squad-alvo natural: **Caliope** (copy/escrita), domínio `copy`. Sem match limpo de REUSE em lugar nenhum → viés autônomo aplicado: ADAPT.

@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F4 — Mapa de decisão · bucket B13 (NOVO squad Spatial Computing / XR/AR/VR)
 
 **Fonte:** `inventario-spatial-computing.md` (19 IDs, G1-G19).

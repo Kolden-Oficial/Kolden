@@ -12,6 +12,9 @@ Checklist:
   - [ ] Validate input parameters
   - [ ] Execute main logic
   - [ ] Return result
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # *test-task

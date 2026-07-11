@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Assets do SYNAPSE
 
 Templates para criar domains personalizados e entradas no manifest do SYNAPSE.

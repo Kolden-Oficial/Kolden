@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # LaTeX Templates for ML/AI Conferences
 
 This directory contains official LaTeX templates for major machine learning and AI conferences.

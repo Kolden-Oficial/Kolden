@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # How to Release a New Version
 
 > 🌐 **EN** | [PT](./pt/versioning-and-releases.md) | [ES](./es/versioning-and-releases.md)

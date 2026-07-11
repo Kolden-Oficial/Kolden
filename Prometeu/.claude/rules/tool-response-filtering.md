@@ -2,6 +2,11 @@
 paths:
   - .aiox-core/data/tool-registry.yaml
   - .mcp.json
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/rules/_indice|_indice]]"
 ---
 # Filtragem de Respostas de Ferramentas — Redução Dinâmica de Tokens
 

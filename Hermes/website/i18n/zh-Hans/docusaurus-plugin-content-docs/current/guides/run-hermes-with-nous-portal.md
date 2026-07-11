@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: "通过 Nous Portal 运行 Hermes Agent"
 description: "完整操作指南：订阅、配置、切换模型、启用 gateway 工具并验证路由"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 通过 Nous Portal 运行 Hermes Agent

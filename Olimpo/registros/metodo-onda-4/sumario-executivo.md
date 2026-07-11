@@ -1,3 +1,15 @@
+---
+tipo: registro
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/registros/metodo-onda-4/diff-cirurgico|diff-cirurgico]]"
+  - "[[Olimpo/registros/metodo-onda-4/matriz-de-conformidade|matriz-de-conformidade]]"
+  - "[[Olimpo/registros/metodo-onda-4/PROMPT-DE-ABERTURA|PROMPT-DE-ABERTURA]]"
+  - "[[Olimpo/registros/metodo-onda-4/verificacao-dike|verificacao-dike]]"
+  - "[[Olimpo/registros/metodo-onda-4/verificacao-dike-delta|verificacao-dike-delta]]"
+---
+
 # Sumário Executivo — Onda 4 do METODO Kolden (Olimpo)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (Onda 4, Grupo B, squad-alvo Olimpo).

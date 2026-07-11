@@ -25,6 +25,11 @@ Checklist:
   - "[ ] 30-50 candidatos brutos gerados em 4+ categorias"
   - "[ ] Todos os candidatos pontuados em 7 critérios"
   - "[ ] 3-5 finais apresentados com perfis completos"
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Gerar Nomes

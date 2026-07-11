@@ -2,6 +2,14 @@
 title: "Llm Wiki — Karpathy's LLM Wiki: build/query interlinked markdown KB"
 sidebar_label: "Llm Wiki"
 description: "Karpathy's LLM Wiki: build/query interlinked markdown KB"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/research/research-arxiv|research-arxiv]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/research/research-blogwatcher|research-blogwatcher]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/research/research-polymarket|research-polymarket]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/research/research-research-paper-writing|research-research-paper-writing]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

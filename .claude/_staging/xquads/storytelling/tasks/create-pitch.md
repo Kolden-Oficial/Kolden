@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Audience profiled with decision criteria mapped"
   - "[ ] Narrative approach selected and all beats structured"
   - "[ ] Clear ask with objection handling prepared"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/storytelling/tasks/_indice|_indice]]"
 ---
 
 # Task: Pitch Deck Narrative

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: arquitetura
+up: "[[arquitetura/_MOC-arquitetura]]"
+relacionado:
+  - "[[arquitetura/pesquisa/2026-07-10-benchmark/fichas/_indice|_indice]]"
+---
+
 # Ficha — smolagents (Hugging Face)
 
 > Coletada em 2026-07-10 · Versão/commit da fonte: `main` @ commit `6cfdf12ee5e77443049177b274b13cf935b0367e` (posterior à release v1.26.0, de 2026-05-29) · Status: ativo

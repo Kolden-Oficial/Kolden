@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F5 — Decisão de Absorção · B06 = Emporos + Pluto · divisão `sales/`
 
 > Bucket: **B06 sales** · upstream `msitarzewski--agency-agents@a597cb6` · 33 IDs (G1–G33).

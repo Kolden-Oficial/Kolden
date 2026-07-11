@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Value Equation pontuada em todos os 4 quadrantes"
   - "[ ] Problemas mapeados para veículos de solução com nomes proprietários"
   - "[ ] Stack da oferta montado com núcleo + bônus"
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+relacionado:
+  - "[[Pluto/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Criar Grand Slam Offer

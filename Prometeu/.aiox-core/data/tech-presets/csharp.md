@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/data/tech-presets/_indice|_indice]]"
+---
+
 # C# Tech Preset
 
 > Preset de arquitetura para backend em C#/.NET com foco em clean architecture, confiabilidade e produtividade enterprise.

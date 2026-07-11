@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/peft/references/troubleshooting|troubleshooting]]"
+---
+
 # PEFT Advanced Usage Guide
 
 ## Advanced LoRA Variants

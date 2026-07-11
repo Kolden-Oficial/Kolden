@@ -2,6 +2,9 @@
 title: "Xurl — X/Twitter via xurl CLI: post, search, DM, media, v2 API"
 sidebar_label: "Xurl"
 description: "X/Twitter via xurl CLI: post, search, DM, media, v2 API"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

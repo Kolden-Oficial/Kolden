@@ -1,5 +1,10 @@
 ---
 paths: .aiox-core/development/agents/**
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/rules/_indice|_indice]]"
 ---
 
 # Imports de Memória dos Agentes

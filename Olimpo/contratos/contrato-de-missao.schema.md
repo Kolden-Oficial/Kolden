@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+---
+
 # Contrato de Missão — Schema
 
 > O **chassi** por onde toda missão trafega no sistema hierárquico de 5 camadas do KoldenOS.

@@ -1,3 +1,11 @@
+---
+tipo: checklist
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/claude-code-mastery/checklists/_indice|_indice]]"
+---
+
 # Pre-Push Quality Gate Checklist
 
 **Checklist ID:** CCM-CL-001

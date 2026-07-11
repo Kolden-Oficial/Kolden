@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # Development Setup Guide
 
 > **EN** | [PT](../pt/guides/development-setup.md) | [ES](../es/guides/development-setup.md)

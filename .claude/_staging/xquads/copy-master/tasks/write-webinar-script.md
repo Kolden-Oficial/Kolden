@@ -26,6 +26,11 @@ Checklist:
   - "[ ] 3 Secrets structure with belief-breaking epiphany bridges"
   - "[ ] Stack and close sequence complete with price anchoring"
   - "[ ] Psychological Layer applied (Cialdini/Warren principles tagged)"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-master/tasks/_indice|_indice]]"
 ---
 
 # Task: Write Webinar Script

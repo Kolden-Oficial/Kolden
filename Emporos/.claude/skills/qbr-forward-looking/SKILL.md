@@ -16,6 +16,9 @@ agente_dono: gestor-de-contas-estrategicas
 heranca_historica: [gainsight-nick-mehta, successhackeresses]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G2)
 status: semente
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # QBR Forward-Looking

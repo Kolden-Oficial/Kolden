@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/modelos/_indice|_indice]]"
+---
+
 # Revisão Anual — Template canônico Kolden
 
 > **Contrato de origem:** m-20260706-metodo-kolden · Sub-onda 1.4

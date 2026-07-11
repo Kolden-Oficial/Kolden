@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/skills/synapse/references/brackets|brackets]]"
+  - "[[Prometeu/.claude/skills/synapse/references/commands|commands]]"
+  - "[[Prometeu/.claude/skills/synapse/references/domains|domains]]"
+  - "[[Prometeu/.claude/skills/synapse/references/layers|layers]]"
+---
+
 # Referência do Manifest do SYNAPSE
 
 ## Visão Geral

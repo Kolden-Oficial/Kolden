@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/aiox-agent-flows/README|README]]"
+---
+
 # Sistema DevOps - Guia Completo do Agente @devops
 
 > **Agente:** Gage (Operator)

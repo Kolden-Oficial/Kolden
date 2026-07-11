@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Análise da faísca concluída e validada"
   - "[ ] Todos os 6 documentos entregáveis produzidos"
   - "[ ] Coerência ponta a ponta validada"
+tipo: nota
+area: Dionisio
+up: "[[Dionisio/_MOC-dionisio]]"
+relacionado:
+  - "[[Dionisio/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Construir Movimento

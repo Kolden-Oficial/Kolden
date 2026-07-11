@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/.plans/streaming-support|streaming-support]]"
+---
+
 # OpenAI-Compatible API Server for Hermes Agent
 
 ## Motivation

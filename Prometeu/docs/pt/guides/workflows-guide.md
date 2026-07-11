@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/guides/README|README]]"
+---
+
 # Guia de Workflows do AIOX
 
 **Versao:** 1.0.0

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/installation/README|README]]"
+---
+
 # Linux Installation Guide for Synkra AIOX
 
 > 🌐 [EN](linux.md) | [PT](../pt/installation/linux.md) | [ES](../es/installation/linux.md)

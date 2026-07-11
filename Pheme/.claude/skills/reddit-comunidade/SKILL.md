@@ -12,6 +12,9 @@ description: >
   é anúncio pago (Reddit Ads é Peitho) nem posting via bot (banido, ilegal, veto).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Reddit — comunidade como canal (o SEO/GEO invisível)

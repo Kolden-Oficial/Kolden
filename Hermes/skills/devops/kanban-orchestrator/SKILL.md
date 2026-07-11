@@ -8,6 +8,9 @@ metadata:
   hermes:
     tags: [kanban, multi-agent, orchestration, routing]
     related_skills: [kanban-worker]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Kanban Orchestrator — Decomposition Playbook

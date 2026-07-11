@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/templates/_indice|_indice]]"
+---
+
 # Task Execution Report Template
 
 **Version:** 1.0  

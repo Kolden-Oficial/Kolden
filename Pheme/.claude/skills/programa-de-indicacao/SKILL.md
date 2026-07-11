@@ -13,6 +13,9 @@ description: >
   sistema, não só a ideia de "pedir indicações".
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Programa de Indicação — fazer o cliente crescer por você

@@ -1,3 +1,16 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/data-squad/agents/avinash-kaushik|avinash-kaushik]]"
+  - "[[.claude/_staging/xquads/data-squad/agents/david-spinks|david-spinks]]"
+  - "[[.claude/_staging/xquads/data-squad/agents/nick-mehta|nick-mehta]]"
+  - "[[.claude/_staging/xquads/data-squad/agents/peter-fader|peter-fader]]"
+  - "[[.claude/_staging/xquads/data-squad/agents/sean-ellis|sean-ellis]]"
+  - "[[.claude/_staging/xquads/data-squad/agents/wes-kao|wes-kao]]"
+---
+
 # Data Chief
 
 > ACTIVATION-NOTICE: This agent is the **orchestrator** of the Data Squad. It does NOT perform analysis itself — it routes data questions to the right specialist, consolidates insights, and ensures actionable outcomes.

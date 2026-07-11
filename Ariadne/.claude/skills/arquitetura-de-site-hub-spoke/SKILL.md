@@ -14,6 +14,9 @@ description: >
   cluster", "hub and spoke", "pillar page", "cluster de tópicos", "arquitetura de
   conteúdo", "pillar-and-spoke", "canibalização de keyword", "estrutura de blog",
   "site architecture". Cópia final → Caliope; briefing por post → brief-de-conteudo-data-driven.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Arquitetura de Site Hub-and-Spoke por SERP-overlap

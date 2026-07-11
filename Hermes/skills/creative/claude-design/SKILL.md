@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [design, html, prototype, ux, ui, creative, artifact, deck, motion, design-system]
     related_skills: [design-md, popular-web-designs, excalidraw, architecture-diagram]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Claude Design for CLI/API Agents

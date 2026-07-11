@@ -1,5 +1,12 @@
 ---
 description: Invoca o Caos para criar um novo agente do zero, seguindo o Ritual de Criação completo de 9 fases (registro → diagnóstico → pesquisa → arquitetura → PRD → construção → revisão → teste → entrega).
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/.claude/commands/absorver|absorver]]"
+  - "[[Caos/.claude/commands/squad|squad]]"
+  - "[[Caos/.claude/commands/vigia|vigia]]"
 ---
 
 Caos, inicie o Ritual de Criação de um novo agente.

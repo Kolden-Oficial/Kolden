@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/registros/metodo-onda-3/3.2-agents-internos/diff-cirurgico|diff-cirurgico]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.2-agents-internos/matriz-de-conformidade|matriz-de-conformidade]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.2-agents-internos/sumario-executivo|sumario-executivo]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.2-agents-internos/verificacao-dike|verificacao-dike]]"
+---
+
 # Verificação Dike Delta INDEPENDENTE — Sub-onda 3.2
 
 > **Status:** **DEFERIDO para Sub-onda 3.3** conforme Q4 do gate humano (recomendação técnica).

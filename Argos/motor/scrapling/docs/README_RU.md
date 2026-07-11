@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/index|index]]"
+---
+
 <!-- mcp-name: io.github.D4Vinci/Scrapling -->
 
 <h1 align="center">

@@ -2,6 +2,11 @@
 name: data-engineer
 description: 'Use for database design, schema architecture, Supabase configuration, RLS policies, migrations, query optimization, data modeling, operations, and monitoring'
 tools: ['read', 'edit', 'search', 'execute']
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.github/agents/_indice|_indice]]"
 ---
 
 # 📊 Dara Agent (@data-engineer)

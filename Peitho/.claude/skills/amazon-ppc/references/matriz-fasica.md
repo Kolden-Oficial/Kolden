@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+---
+
 # Matriz fásica — Amazon PPC
 
 ## Fase Launch (0-90 dias)

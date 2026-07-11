@@ -27,6 +27,11 @@ Checklist:
   - "[ ] Estratégia de ancoragem de preço e copy do offer stack prontos"
   - "[ ] Value Equation de Hormozi aplicada"
   - "[ ] Camada Psicológica aplicada (princípios de Cialdini/Warren marcados)"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Criar Oferta

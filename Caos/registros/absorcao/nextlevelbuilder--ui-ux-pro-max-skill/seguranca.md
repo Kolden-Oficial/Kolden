@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/nextlevelbuilder--ui-ux-pro-max-skill/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/nextlevelbuilder--ui-ux-pro-max-skill/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # F2 — Segurança estática
 
 - **slug:** nextlevelbuilder--ui-ux-pro-max-skill

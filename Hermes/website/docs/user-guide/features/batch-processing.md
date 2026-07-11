@@ -2,6 +2,11 @@
 sidebar_position: 12
 title: "Batch Processing"
 description: "Generate agent trajectories at scale — parallel processing, checkpointing, and toolset distributions"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Batch Processing

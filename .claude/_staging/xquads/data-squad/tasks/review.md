@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All checklist items evaluated and scored"
   - "[ ] Verdict rendered (APPROVE/REVISE/REJECT)"
   - "[ ] Data integrity and statistical rigor assessed"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/data-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Review Data-Driven Growth Output

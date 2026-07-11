@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os itens do checklist avaliados e pontuados"
   - "[ ] Veredito proferido (APPROVE/REVISE/REJECT)"
   - "[ ] Amplitude de perspectivas e cobertura de risco avaliadas"
+tipo: nota
+area: Themis
+up: "[[Themis/_MOC-themis]]"
+relacionado:
+  - "[[Themis/tasks/_indice|_indice]]"
 ---
 
 # Task: Revisar a Saída de Aconselhamento Estratégico

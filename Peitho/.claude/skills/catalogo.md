@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+---
+
 # Catálogo de Habilidades — Peitho
 
 Índice das habilidades do squad Peitho (paid media / tráfego pago).

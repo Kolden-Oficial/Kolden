@@ -2,6 +2,9 @@
 sidebar_position: 11
 title: "飞书 / Lark"
 description: "将 Hermes Agent 配置为飞书或 Lark 机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 飞书 / Lark 配置

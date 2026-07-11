@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 <!-- DOCTOC SKIP -->
 
 <h1 align="center">

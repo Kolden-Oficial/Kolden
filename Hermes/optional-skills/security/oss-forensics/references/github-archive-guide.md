@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/security/oss-forensics/references/evidence-types|evidence-types]]"
+  - "[[Hermes/optional-skills/security/oss-forensics/references/investigation-templates|investigation-templates]]"
+  - "[[Hermes/optional-skills/security/oss-forensics/references/recovery-techniques|recovery-techniques]]"
+---
+
 # GitHub Archive Query Guide (BigQuery)
 
 GitHub Archive records every public event on GitHub as immutable JSON records. This data is accessible via Google BigQuery and is the most reliable source for forensic investigation — events cannot be deleted or modified after recording.

@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/.claude/skills/julgamento-estetico-anti-slop/references/banco-de-ai-tells|banco-de-ai-tells]]"
+  - "[[Harmonia/.claude/skills/julgamento-estetico-anti-slop/references/baseline-legado-v1|baseline-legado-v1]]"
+  - "[[Harmonia/.claude/skills/julgamento-estetico-anti-slop/references/pre-flight-visual|pre-flight-visual]]"
+---
+
 # Dials por sinal, presets de uso e direções de arte
 
 > Digerido de `Leonxlnx/taste-skill` (MIT): seções de dials, presets, e as skills

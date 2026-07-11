@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/mlops/evaluation/lm-evaluation-harness/references/api-evaluation|api-evaluation]]"
+  - "[[Hermes/skills/mlops/evaluation/lm-evaluation-harness/references/custom-tasks|custom-tasks]]"
+  - "[[Hermes/skills/mlops/evaluation/lm-evaluation-harness/references/distributed-eval|distributed-eval]]"
+---
+
 # Benchmark Guide
 
 Complete guide to all 60+ evaluation tasks in lm-evaluation-harness, what they measure, and how to interpret results.

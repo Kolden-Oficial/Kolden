@@ -2,6 +2,9 @@
 title: "Slime Rl Training — 使用 slime（Megatron+SGLang 框架）进行 LLM RL 后训练的指导"
 sidebar_label: "Slime Rl Training"
 description: "使用 slime（Megatron+SGLang 框架）进行 LLM RL 后训练的指导"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

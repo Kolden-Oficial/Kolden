@@ -1,3 +1,11 @@
+---
+tipo: checklist
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/product/checklists/_indice|_indice]]"
+---
+
 # Story Definition of Done (DoD) Checklist
 
 ## Instructions for Developer Agent

@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Paid Traffic Output Quality Checklist
 
 **Checklist ID:** TRAFFIC-CL-001

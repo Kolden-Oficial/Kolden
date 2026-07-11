@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/README|README]]"
+---
+
 > **Nota canônica Kolden (Onda 2 do METODO em 2026-07-06):** Este `AGENTS.md` é o
 > **dev guide do vendor Nous Research** (projeto `hermes-agent`, MIT license). É EN,
 > escrito para desenvolvedores contribuindo com o codebase Python. **Ele NÃO é a

@@ -1,3 +1,11 @@
+---
+tipo: checklist
+area: Pactolo
+up: "[[Pactolo/_MOC-pactolo]]"
+relacionado:
+  - "[[Pactolo/checklists/close-mensal|close-mensal]]"
+---
+
 # Template MBR — Deck Mensal
 
 > _Adaptado de github.com/msitarzewski/agency-agents@a597cb6 (G17, MIT)._

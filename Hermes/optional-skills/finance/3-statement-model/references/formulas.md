@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/finance/3-statement-model/references/formatting|formatting]]"
+  - "[[Hermes/optional-skills/finance/3-statement-model/references/sec-filings|sec-filings]]"
+---
+
 # Formula Reference
 
 **IMPORTANT:** Use the formulas outlined in this reference document unless otherwise specified by the user.

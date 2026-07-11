@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/drive--01-produtos/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/drive--01-produtos/reconciliacao|reconciliacao]]"
+---
+
 # Inventário — Drive "01 | Produtos"
 
 > Fase F3 do protocolo de absorção sem perda. Varredura recursiva read-only via MCP google-drive (listFolder).

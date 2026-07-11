@@ -2,6 +2,9 @@
 title: "Github 仓库管理 — 克隆/创建/fork 仓库；管理远程、发布"
 sidebar_label: "Github 仓库管理"
 description: "克隆/创建/fork 仓库；管理远程、发布"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

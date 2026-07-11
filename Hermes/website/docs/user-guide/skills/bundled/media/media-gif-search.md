@@ -2,6 +2,13 @@
 title: "Gif Search — Search/download GIFs from Tenor via curl + jq"
 sidebar_label: "Gif Search"
 description: "Search/download GIFs from Tenor via curl + jq"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/media/media-heartmula|media-heartmula]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/media/media-songsee|media-songsee]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/media/media-youtube-content|media-youtube-content]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

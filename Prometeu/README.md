@@ -1,3 +1,21 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/_origem|_origem]]"
+  - "[[Prometeu/AGENTS|AGENTS]]"
+  - "[[Prometeu/CHANGELOG|CHANGELOG]]"
+  - "[[Prometeu/CLAUDE|CLAUDE]]"
+  - "[[Prometeu/CODE_OF_CONDUCT|CODE_OF_CONDUCT]]"
+  - "[[Prometeu/constitution|constitution]]"
+  - "[[Prometeu/CONTRIBUTING|CONTRIBUTING]]"
+  - "[[Prometeu/ferramentas|ferramentas]]"
+  - "[[Prometeu/prd-de-ia|prd-de-ia]]"
+  - "[[Prometeu/README.en|README.en]]"
+  - "[[Prometeu/roteiro-de-teste|roteiro-de-teste]]"
+---
+
 # AIOX Squad: Artificial Intelligence Orchestration eXperience
 
 > 🌍 [English](README.en.md) | **[Português](README.md)**

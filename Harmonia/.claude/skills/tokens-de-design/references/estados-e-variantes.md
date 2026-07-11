@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/.claude/skills/tokens-de-design/references/arquitetura-de-tokens|arquitetura-de-tokens]]"
+---
+
 # Specs de componente — estados e variantes
 
 > Digerido de `ui-ux-pro-max/.claude/skills/design-system/references/component-specs.md`

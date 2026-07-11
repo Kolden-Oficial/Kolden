@@ -2,6 +2,9 @@
 sidebar_position: 8
 title: "上下文文件"
 description: "项目上下文文件 — .hermes.md、AGENTS.md、CLAUDE.md、全局 SOUL.md 以及 .cursorrules — 自动注入每次对话"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 上下文文件

@@ -16,6 +16,9 @@ heranca_historica:
   - huthwaite-research
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G14)
 status: semente
+tipo: skill
+area: Emporos
+up: "[[Emporos/_MOC-emporos]]"
 ---
 
 # SPIN Selling

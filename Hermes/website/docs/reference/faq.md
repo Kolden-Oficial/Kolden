@@ -2,6 +2,11 @@
 sidebar_position: 3
 title: "FAQ & Troubleshooting"
 description: "Frequently asked questions and solutions to common issues with Hermes Agent"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/reference/_indice|_indice]]"
 ---
 
 # FAQ & Troubleshooting

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Modelo de lançamento selecionado com justificativa"
   - "[ ] Cronograma mapeado com todas as fases"
   - "[ ] Modelo de receita calculado com cenários"
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+relacionado:
+  - "[[Pluto/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Planejar Lançamento

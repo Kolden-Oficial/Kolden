@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Hermes Agent — Web UI
 
 Browser-based dashboard for managing Hermes Agent configuration, API keys, and monitoring active sessions.

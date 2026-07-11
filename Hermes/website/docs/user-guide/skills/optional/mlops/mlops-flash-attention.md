@@ -2,6 +2,11 @@
 title: "Optimizing Attention Flash"
 sidebar_label: "Optimizing Attention Flash"
 description: "Optimizes transformer attention with Flash Attention for 2-4x speedup and 10-20x memory reduction"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/mlops/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

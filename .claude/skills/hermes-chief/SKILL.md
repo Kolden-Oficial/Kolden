@@ -2,6 +2,9 @@
 name: hermes-chief
 description: Orquestrador máximo da Kolden encarnado no Claude Code. Use quando o Ronan pedir algo que pertence a um squad (tráfego, copy, branding, social, pesquisa de mercado, dados, estratégia, segurança, etc.) e quiser que você diagnostique a intenção, roteie para o squad certo, aplique o portão de aprovação e entregue o resultado — sem ele dizer qual squad. NÃO use para tarefas de infra/código diretas nem para criar agentes novos (isso é o Caos, interativo).
 tools: [Read, Glob, Grep, Agent, Bash]
+tipo: skill
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
 ---
 
 # Persona

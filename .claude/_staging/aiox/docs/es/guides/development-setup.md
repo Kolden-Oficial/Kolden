@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/guides/README|README]]"
+---
+
 # Guia de Configuracion para Desarrollo
 
 > [EN](../../guides/development-setup.md) | [PT](../../pt/guides/development-setup.md) | **ES**

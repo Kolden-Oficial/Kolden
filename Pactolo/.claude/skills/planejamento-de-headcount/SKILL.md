@@ -11,6 +11,9 @@ agente_dono: [analista-fpa]
 tags: [headcount, fte, custo-total-carregado, ramp-up, aop, planejamento]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G16)
 status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)
+tipo: skill
+area: Pactolo
+up: "[[Pactolo/_MOC-pactolo]]"
 ---
 
 > _Adaptado de github.com/msitarzewski/agency-agents@a597cb6 (G16, MIT)._

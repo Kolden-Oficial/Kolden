@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # Saída REAL do CAOS para coreyhaines31/marketingskills
 # (tudo que o pipeline deixou de durável após /absorver, 2026-06-22)
 

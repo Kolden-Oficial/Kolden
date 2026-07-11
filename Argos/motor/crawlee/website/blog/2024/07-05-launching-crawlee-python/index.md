@@ -4,6 +4,9 @@ title: 'Announcing Crawlee for Python: Now you can use Python to build reliable 
 description: 'Launching Crawlee for Python, a web scraping and automation library to build reliable scrapers in Python fastly.'
 image: ./img/crawlee-python.webp
 authors: [SauravJ]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 > Testimonial from early adopters

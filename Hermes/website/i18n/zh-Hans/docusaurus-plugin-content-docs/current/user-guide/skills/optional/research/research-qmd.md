@@ -2,6 +2,9 @@
 title: "Qmd"
 sidebar_label: "Qmd"
 description: "使用 qmd 在本地搜索个人知识库、笔记、文档和会议记录 — 一个集成 BM25、向量搜索和 LLM 重排序的混合检索引擎"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

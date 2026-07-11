@@ -1,6 +1,9 @@
 ---
 name: revisao-de-contratos-com-risco
 description: Use quando o pedido for revisar um contrato (com cliente, fornecedor, parceiro, operador de dado, NDA) buscando risco jurídico/financeiro/regulatório antes de assinar. Cobre liability analysis, risk-keyword-scoring por cláusula-alvo (limitação de responsabilidade, indenização, foro, força maior, dado pessoal, propriedade intelectual, rescisão), approval routing (Themis → board-chair → Ronan em casos acima de gatilho financeiro) e sub-bloco de comparação versão a versão com risk-flag. Gatilhos "revisar contrato", "risk analysis", "contract review", "SLA", "MSA", "NDA", "DPA", "limitação de responsabilidade", "foro", "cláusula abusiva", "comparar versões do contrato". NÃO substitui parecer de advogado — é ferramenta de triagem. Dono operacional exclusivo desta habilidade — `analista-de-compliance-regulatorio` (Themis).
+tipo: skill
+area: Themis
+up: "[[Themis/_MOC-themis]]"
 ---
 
 # Revisão de Contratos com Risco

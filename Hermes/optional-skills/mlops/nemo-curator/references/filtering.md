@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/nemo-curator/references/deduplication|deduplication]]"
+---
+
 # Quality Filtering Guide
 
 Complete guide to NeMo Curator's 30+ quality filters.

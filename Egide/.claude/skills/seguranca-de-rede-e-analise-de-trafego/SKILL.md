@@ -11,6 +11,9 @@ description: >-
 domain: ciberseguranca
 subdomain: seguranca-de-rede
 tags: [rede, pcap, wireshark, netflow, dns, exfiltracao, tunneling, c2, dga, covert-channel, beaconing]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Segurança de Rede e Análise de Tráfego

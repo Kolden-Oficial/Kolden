@@ -1,5 +1,10 @@
 ---
 sidebar_position: 9
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Adding a Platform Adapter

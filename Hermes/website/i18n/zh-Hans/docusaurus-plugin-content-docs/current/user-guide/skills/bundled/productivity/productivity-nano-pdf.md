@@ -2,6 +2,9 @@
 title: "Nano Pdf — 通过 nano-pdf CLI 编辑 PDF 文本/错别字/标题（自然语言 prompt）"
 sidebar_label: "Nano Pdf"
 description: "通过 nano-pdf CLI 编辑 PDF 文本/错别字/标题（自然语言 prompt）"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

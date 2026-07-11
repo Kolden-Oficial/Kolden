@@ -9,6 +9,9 @@ description: >
   re-leitura — é onde a marca fala como gente de verdade.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Comentário Fixado — meme repetível + brief de imagem

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Profiling renderer typing lag
 
 Workflow for empirically measuring (and fixing) typing/submit lag in the

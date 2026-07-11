@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/user-guide|user-guide]]"
+  - "[[.claude/_staging/aiox/.aiox-core/working-in-the-brownfield|working-in-the-brownfield]]"
+---
+
 # Synkra AIOX Constitution
 
 > **Version:** 1.0.0 | **Ratified:** 2025-01-30 | **Last Amended:** 2025-01-30

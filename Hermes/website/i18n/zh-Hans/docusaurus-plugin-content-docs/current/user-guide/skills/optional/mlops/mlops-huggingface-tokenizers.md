@@ -2,6 +2,9 @@
 title: "Huggingface Tokenizers — 为研究和生产优化的快速 tokenizer"
 sidebar_label: "Huggingface Tokenizers"
 description: "为研究和生产优化的快速 tokenizer"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

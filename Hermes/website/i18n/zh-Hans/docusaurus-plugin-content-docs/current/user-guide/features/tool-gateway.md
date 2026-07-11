@@ -3,6 +3,9 @@ title: "Nous Tool Gateway（工具网关）"
 description: "通过 Nous 订阅统一使用网页搜索、文生图、语音合成与浏览器自动化，无需单独申请 Firecrawl、FAL、OpenAI、Browser Use 等 API Key"
 sidebar_label: "Tool Gateway"
 sidebar_position: 2
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Nous Tool Gateway（工具网关）

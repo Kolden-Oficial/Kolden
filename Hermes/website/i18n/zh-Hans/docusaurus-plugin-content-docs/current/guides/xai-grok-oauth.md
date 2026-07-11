@@ -2,6 +2,9 @@
 sidebar_position: 16
 title: "xAI Grok OAuth（SuperGrok / X Premium+）"
 description: "使用 SuperGrok 或 X Premium+ 订阅登录，在 Hermes Agent 中使用 Grok 模型——无需 API 密钥"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # xAI Grok OAuth（SuperGrok / X Premium+）

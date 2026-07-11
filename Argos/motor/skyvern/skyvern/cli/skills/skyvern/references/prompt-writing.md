@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/skyvern/skyvern/cli/skills/skyvern/references/_indice|_indice]]"
+---
+
 # Prompt Writing for Running Tasks
 
 ## Outcome-first template

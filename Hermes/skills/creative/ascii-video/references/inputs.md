@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/ascii-video/references/_indice|_indice]]"
+---
+
 # Input Sources
 
 > **See also:** architecture.md · effects.md · scenes.md · shaders.md · optimization.md · troubleshooting.md

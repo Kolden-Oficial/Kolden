@@ -11,6 +11,9 @@ description: >-
 domain: ciberseguranca
 subdomain: zero-trust-architecture
 tags: [zero-trust, ztna, zta, microsegmentacao, beyondcorp, device-posture, mtls, cisa-ztmm, nist-800-207, conditional-access]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Arquitetura Zero-Trust (ZTA)

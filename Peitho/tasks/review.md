@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todos os itens do checklist avaliados"
   - "[ ] Veredito proferido (APPROVE/REVISE/REJECT)"
   - "[ ] Alocação de orçamento e segmentação avaliadas individualmente"
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+relacionado:
+  - "[[Peitho/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Revisar Saída de Tráfego Pago

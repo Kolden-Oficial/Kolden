@@ -3,6 +3,10 @@ data: 2026-06-30
 tipo: relatorio-de-desligamento-de-mcp
 autor: hermes-chief + 3 Explores + 1 Plan agent
 status: aprovado-pelo-Ronan-aguardando-execucao-no-painel
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/briefing-retomada-2026-06-26|briefing-retomada-2026-06-26]]"
 ---
 
 # Desligamento de MCPs zero-uso — 2026-06-30

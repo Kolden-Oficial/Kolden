@@ -2,6 +2,14 @@
 title: "Watchers — Poll RSS, JSON APIs, and GitHub with watermark dedup"
 sidebar_label: "Watchers"
 description: "Poll RSS, JSON APIs, and GitHub with watermark dedup"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/devops/devops-cli|devops-cli]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/devops/devops-docker-management|devops-docker-management]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/devops/devops-hermes-s6-container-supervision|devops-hermes-s6-container-supervision]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/devops/devops-pinggy-tunnel|devops-pinggy-tunnel]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

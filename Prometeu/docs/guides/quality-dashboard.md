@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # Quality Gates Dashboard Guide
 
 > **EN** | [PT](../pt/guides/quality-dashboard.md) | [ES](../es/guides/quality-dashboard.md)

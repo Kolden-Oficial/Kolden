@@ -4,6 +4,9 @@ title: 'How to scrape infinite scrolling webpages with Python'
 description: 'Learn how to scrape infinite scrolling pages with Python and scrape Nike shoes using Crawlee for Python.'
 image: ./img/infinite-scroll.webp
 authors: [SauravJ]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # How to scrape infinite scrolling webpages with Python

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Copy Squad
 
 Elite squad of 23 copywriting agents — 22 legendary copywriters + 1 orchestrator (Copy Chief).

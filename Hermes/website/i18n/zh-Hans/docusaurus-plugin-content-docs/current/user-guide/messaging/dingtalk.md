@@ -2,6 +2,9 @@
 sidebar_position: 10
 title: "DingTalk"
 description: "将 Hermes Agent 设置为钉钉聊天机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 钉钉设置

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/README|README]]"
+---
+
 # AIOX Roadmap
 
 > 🇧🇷 [Versão em Português](ROADMAP-PT.md)

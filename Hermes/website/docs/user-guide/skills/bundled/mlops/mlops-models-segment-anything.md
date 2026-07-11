@@ -2,6 +2,11 @@
 title: "Segment Anything Model — SAM: zero-shot image segmentation via points, boxes, masks"
 sidebar_label: "Segment Anything Model"
 description: "SAM: zero-shot image segmentation via points, boxes, masks"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/mlops/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

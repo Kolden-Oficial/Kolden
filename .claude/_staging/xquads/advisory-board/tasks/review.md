@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All checklist items evaluated and scored"
   - "[ ] Verdict rendered (APPROVE/REVISE/REJECT)"
   - "[ ] Perspective breadth and risk coverage assessed"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/advisory-board/tasks/_indice|_indice]]"
 ---
 
 # Task: Review Strategic Counsel Output

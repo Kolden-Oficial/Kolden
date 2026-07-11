@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Themis
+up: "[[Themis/_MOC-themis]]"
+---
+
 # Checklist de Qualidade de Saída do Aconselhamento Estratégico
 
 **Checklist ID:** ADVISORY-CL-001

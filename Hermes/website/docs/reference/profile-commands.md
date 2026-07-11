@@ -1,5 +1,10 @@
 ---
 sidebar_position: 7
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/reference/_indice|_indice]]"
 ---
 
 # Profile Commands Reference

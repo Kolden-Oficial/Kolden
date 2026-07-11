@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/skills/architect-first/references/pre-implementation-checklist|pre-implementation-checklist]]"
+  - "[[.claude/_staging/aiox/.claude/skills/architect-first/references/stop-rules-guide|stop-rules-guide]]"
+  - "[[.claude/_staging/aiox/.claude/skills/architect-first/references/testing-strategy-guide|testing-strategy-guide]]"
+---
+
 # Architecture Validation Checklist
 
 Use this checklist when validating architectural decisions before implementation.

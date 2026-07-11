@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Intenção do usuário interpretada e categorizada"
   - "[ ] Resposta transversal entregue ao usuário"
   - "[ ] Sugestão de roteamento fornecida"
+tipo: nota
+area: Themis
+up: "[[Themis/_MOC-themis]]"
+relacionado:
+  - "[[Themis/tasks/_indice|_indice]]"
 ---
 
 # Task: Diagnosticar e Rotear — Squad do Conselho Consultivo

@@ -2,6 +2,9 @@
 sidebar_position: 5
 title: "WhatsApp"
 description: "通过内置 Baileys 桥接将 Hermes Agent 设置为 WhatsApp 机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # WhatsApp 配置

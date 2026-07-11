@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Todos os e-mails escritos com linhas de assunto duplas"
   - "[ ] Loops abertos plantados e resolvidos ao longo da sequência"
   - "[ ] Camada Psicológica aplicada (princípios de Cialdini/Warren marcados)"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Task: Escrever Sequência de E-mails

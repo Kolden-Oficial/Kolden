@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/security/oss-forensics/templates/forensic-report|forensic-report]]"
+---
+
 # Malicious Package Investigation Report
 
 ---

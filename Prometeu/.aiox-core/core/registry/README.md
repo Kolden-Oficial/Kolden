@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # AIOX Service Registry
 
 The Service Registry is the central catalog of all workers, tasks, templates, scripts, and workflows in the AIOX framework. It enables service discovery, search, and reuse across the system.

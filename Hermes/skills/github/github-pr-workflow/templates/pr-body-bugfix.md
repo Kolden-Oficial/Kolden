@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/github/github-pr-workflow/templates/pr-body-feature|pr-body-feature]]"
+---
+
 ## Bug Description
 
 <!-- What was happening? -->

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # Rubricas, graders e as 12 camadas — referência da avaliação de agente
 
 Dados densos extraídos do bucket; o corpo da `SKILL.md` aponta para cá.

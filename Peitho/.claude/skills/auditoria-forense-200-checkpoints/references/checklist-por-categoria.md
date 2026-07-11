@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Peitho
+up: "[[Peitho/_MOC-peitho]]"
+---
+
 # Checklist forense — 200+ pontos por categoria
 
 Cada linha é um checkpoint. Marcar `PASS / FAIL / N/A` + severidade + impacto $/mês.

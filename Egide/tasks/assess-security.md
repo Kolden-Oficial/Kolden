@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Autorização confirmada e escopo definido"
   - "[ ] Todos os achados classificados com pontuações CVSS"
   - "[ ] Roadmap de remediação gerado com prioridades"
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+relacionado:
+  - "[[Egide/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Avaliação de Postura de Segurança

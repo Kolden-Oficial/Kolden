@@ -8,6 +8,9 @@ metadata:
   hermes:
     tags: [kanban, multi-agent, collaboration, workflow, pitfalls]
     related_skills: [kanban-orchestrator]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Kanban Worker — Pitfalls and Examples

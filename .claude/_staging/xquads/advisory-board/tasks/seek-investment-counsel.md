@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All three analyses (Dalio, Munger, Thiel) completed"
   - "[ ] Clear recommendation with terms or conditions"
   - "[ ] Kill criteria and monitoring framework defined"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/advisory-board/tasks/_indice|_indice]]"
 ---
 
 # Task: Investment Committee Session

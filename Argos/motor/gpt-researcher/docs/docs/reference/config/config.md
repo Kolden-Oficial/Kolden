@@ -1,6 +1,11 @@
 ---
 sidebar_label: config
 title: config.config
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/reference/config/singleton|singleton]]"
 ---
 
 Configuration class to store the state of bools for different scripts access.

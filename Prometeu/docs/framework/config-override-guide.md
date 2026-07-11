@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/framework/README|README]]"
+---
+
 # Configuration Override Guide
 
 Reference documentation for the AIOX layered config system (ADR-PRO-002).

@@ -2,6 +2,11 @@
 title: "Lambda Labs Gpu Cloud — Reserved and on-demand GPU cloud instances for ML training and inference"
 sidebar_label: "Lambda Labs Gpu Cloud"
 description: "Reserved and on-demand GPU cloud instances for ML training and inference"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/mlops/_indice|_indice]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

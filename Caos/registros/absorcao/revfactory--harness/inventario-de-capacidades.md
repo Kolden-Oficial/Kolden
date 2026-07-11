@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/revfactory--harness/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/revfactory--harness/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades — revfactory--harness
 
 - **slug:** revfactory--harness · **sha:** cceac68ea1d0ad198ef4b7b906cd238375836387 · **rota:** A

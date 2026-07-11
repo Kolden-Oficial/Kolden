@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Scrapling Agent Skill
 
 The skill aligns with the [AgentSkill](https://agentskills.io/specification) specification, so it will be readable by [OpenClaw](https://github.com/openclaw/openclaw), [Claude Code](https://claude.com/product/claude-code), and other agentic tools. It encapsulates almost all of the documentation website's content in Markdown, so the agent doesn't have to guess anything.

@@ -1,3 +1,16 @@
+---
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/_origem|_origem]]"
+  - "[[Aletheia/CLAUDE|CLAUDE]]"
+  - "[[Aletheia/ferramentas|ferramentas]]"
+  - "[[Aletheia/instalacao|instalacao]]"
+  - "[[Aletheia/prd-de-ia|prd-de-ia]]"
+  - "[[Aletheia/roteiro-de-teste|roteiro-de-teste]]"
+---
+
 # Aletheia — Discovery & Lean Validation Squad
 
 > *Aletheia (Ἀλήθεια): a verdade que se desvela.*

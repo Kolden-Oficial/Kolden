@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+relacionado:
+  - "[[Dedalo/mcp/vscode-coach/prd|prd]]"
+---
+
 # vscode-coach (MCP)
 
 > MCP server da Kolden — coach de produtividade do VS Code.

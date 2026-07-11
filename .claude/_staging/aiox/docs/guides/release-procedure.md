@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/README|README]]"
+---
+
 # Release Procedure SOP — @aiox-squads/core
 
 Authoritative procedure for publishing a new version of `@aiox-squads/core` (and

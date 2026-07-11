@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/commands/AIOX/stories/story-7.1.1|story-7.1.1]]"
+---
+
 # Story 6.1.4: Unified Greeting System Integration (v4 - Expanded)
 
 **Story ID:** 6.1.4  

@@ -1,3 +1,12 @@
+---
+tipo: memoria
+squad: Olimpo
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Olimpo/agent-memory/afrodite|afrodite]]"
+  - "[[Olimpo/agent-memory/plutos|plutos]]"
+---
+
 # Memória do olimpo-chief (agent-chief Zeus como orquestrador)
 
 > Memória persistente do agent-chief. Padrões técnicos de execução — decompor + rotear + arbitrar + consolidar.

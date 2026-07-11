@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/p5js/SKILL|SKILL]]"
+---
+
 # p5.js Skill
 
 Production pipeline for interactive and generative visual art using [p5.js](https://p5js.org/).

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Público perfilado com critérios de decisão mapeados"
   - "[ ] Abordagem narrativa selecionada e todos os beats estruturados"
   - "[ ] Pedido claro com tratamento de objeções preparado"
+tipo: nota
+area: Orfeu
+up: "[[Orfeu/_MOC-orfeu]]"
+relacionado:
+  - "[[Orfeu/tasks/_indice|_indice]]"
 ---
 
 # Task: Narrativa de Pitch Deck

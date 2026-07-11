@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/metodo-onda-1/1.4-safety/dashboard-schema|dashboard-schema]]"
+  - "[[Caos/registros/metodo-onda-1/1.4-safety/diff-cirurgico|diff-cirurgico]]"
+  - "[[Caos/registros/metodo-onda-1/1.4-safety/predictions-scorecard-template|predictions-scorecard-template]]"
+---
+
 # Sumário Executivo — Sub-onda 1.4 (Safety Dashboard + Predictions Scorecard)
 
 > **Contrato:** m-20260706-metodo-kolden · Sub-onda 1.4

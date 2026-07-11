@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/handling-logs/all-about-logs|all-about-logs]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/handling-logs/langsmith-logs|langsmith-logs]]"
+---
+
 # Simple Logs Example
 
 Here is a snippet of code to help you handle the streaming logs of your Research tasks.

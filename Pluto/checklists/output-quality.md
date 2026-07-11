@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+---
+
 # Checklist de Qualidade de Saída para Escala de Negócios
 
 **Checklist ID:** HORMOZI-CL-001

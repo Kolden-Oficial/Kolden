@@ -5,6 +5,11 @@ agent: aiox-master
 version: 1.0.0
 story: '0.9'
 epic: '0'
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Comando \*orchestrate-status

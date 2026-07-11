@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/community/README-community-snippet-mcp|README-community-snippet-mcp]]"
+  - "[[.claude/_staging/aiox/docs/zh/community/README-community-snippet-squads|README-community-snippet-squads]]"
+---
+
 # README 社区部分 - aiox-core
 
 > 🌐 [EN](../../en/community/README-community-snippet-core.md) | [PT](../../pt/community/README-community-snippet-core.md) | [ES](../../es/community/README-community-snippet-core.md) | **ZH**

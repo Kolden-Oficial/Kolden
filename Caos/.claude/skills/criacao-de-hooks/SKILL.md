@@ -1,6 +1,9 @@
 ---
 name: criacao-de-hooks
 description: Cria reflexos determinísticos (scripts shell + configuração em settings.json) para agentes do Kolden. Use quando o PRD do agente exigir guardrails rígidos como bloquear ações perigosas, registrar logs de auditoria, validar saídas ou notificar eventos. Reflexos são regras absolutas — não dependem do julgamento do modelo.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Criação de reflexo

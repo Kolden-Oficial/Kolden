@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/instructor/references/examples|examples]]"
+  - "[[Hermes/optional-skills/mlops/instructor/references/providers|providers]]"
+---
+
 # Advanced Validation Patterns
 
 Complete guide to validation in Instructor using Pydantic.

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Intenção do usuário interpretada e categorizada"
   - "[ ] Resposta transversal entregue ao usuário"
   - "[ ] Sugestão de roteamento fornecida"
+tipo: nota
+area: Orfeu
+up: "[[Orfeu/_MOC-orfeu]]"
+relacionado:
+  - "[[Orfeu/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar e Rotear — Squad de Storytelling

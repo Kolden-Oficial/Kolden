@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/security/MANIFEST_SIGNING|MANIFEST_SIGNING]]"
+---
+
 # PR #56 - Security Hardening Checklist
 
 ## Summary of Changes

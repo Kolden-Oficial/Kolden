@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/training/axolotl/references/index|index]]"
+---
+
 # Axolotl - Dataset-Formats
 
 **Pages:** 9

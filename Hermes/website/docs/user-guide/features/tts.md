@@ -2,6 +2,11 @@
 sidebar_position: 9
 title: "Voice & TTS"
 description: "Text-to-speech and voice message transcription across all platforms"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Voice & TTS

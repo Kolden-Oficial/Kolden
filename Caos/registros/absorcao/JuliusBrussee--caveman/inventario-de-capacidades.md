@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/JuliusBrussee--caveman/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/JuliusBrussee--caveman/seguranca|seguranca]]"
+---
+
 # Inventário de capacidades — JuliusBrussee--caveman
 
 - **slug:** JuliusBrussee--caveman · **sha:** 25d22f864ad68cc447a4cb93aefde918aa4aec9f · **rota:** A

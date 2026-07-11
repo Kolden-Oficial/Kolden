@@ -1,6 +1,9 @@
 ---
 name: "aiox-architect"
 description: "Activate the AIOX Architect agent (Aria). Use for system architecture (fullstack, backend, frontend, infrastructure), technology stack selection (technical evaluation), API design (REST/GraphQL/tRPC/WebSocket), security architecture, performance optimization, deployment strategy, and cross-cutting concerns (logging, monitoring, error han... Trigger when user asks to architect, or says 'activate architect', 'switch to architect', '@architect'."
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # 🏛️ @architect — Aria (Visionary) | Architect

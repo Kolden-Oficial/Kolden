@@ -1,3 +1,14 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/core/docs/component-creation-guide|component-creation-guide]]"
+  - "[[.claude/_staging/aiox/.aiox-core/core/docs/session-update-pattern|session-update-pattern]]"
+  - "[[.claude/_staging/aiox/.aiox-core/core/docs/SHARD-TRANSLATION-GUIDE|SHARD-TRANSLATION-GUIDE]]"
+  - "[[.claude/_staging/aiox/.aiox-core/core/docs/troubleshooting-guide|troubleshooting-guide]]"
+---
+
 # Template Variable Syntax Guide
 
 ## Overview

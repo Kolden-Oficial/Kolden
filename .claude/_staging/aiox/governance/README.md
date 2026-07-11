@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/governance/evolution-pipeline|evolution-pipeline]]"
+  - "[[.claude/_staging/aiox/governance/squad-activation-strategy|squad-activation-strategy]]"
+---
+
 # aiox-core/governance/
 
 Governance documents for the AIOX framework. This is where the framework's **own evolution rules** live.

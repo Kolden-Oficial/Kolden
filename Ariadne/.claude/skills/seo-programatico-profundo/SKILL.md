@@ -10,6 +10,9 @@ description: >
   `seo-programatico-com-guarda-de-qualidade` do estrategista-de-conteudo-seo. Gatilhos:
   "SEO programático", "páginas em escala", "páginas por template", "páginas dinâmicas",
   "SEO orientado a dado", "auditar programmatic". Copy final → Caliope; medição → Metis.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # SEO Programático Profundo

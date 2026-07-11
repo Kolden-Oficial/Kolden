@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/commands/synapse/tasks/_indice|_indice]]"
+---
+
 # Suggest Domain
 
 Analyzes a rule and suggests the ideal SYNAPSE domain for it.

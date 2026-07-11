@@ -2,6 +2,9 @@
 sidebar_position: 15
 title: "微信（Weixin）"
 description: "通过 iLink Bot API 将 Hermes Agent 连接到个人微信账号"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 微信（Weixin / WeChat）

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] All 4 lead sources audited and scored"
   - "[ ] Lead magnet designed with clear bridge to core offer"
   - "[ ] 30-Day launch plan created"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/hormozi-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Generate Leads

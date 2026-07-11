@@ -1,3 +1,15 @@
+---
+tipo: projeto
+projeto: brw-movelaria
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/marca/brandbook|brandbook]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/marca/mensagens-chave|mensagens-chave]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/marca/narrativa|narrativa]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/marca/posicionamento|posicionamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/marca/voz-e-tom|voz-e-tom]]"
+---
+
 # BRW Movelaria — Premissas & Pré-morte da Marca
 
 > **Status:** v1 / hipótese-de-trabalho — **NÃO é posicionamento definitivo**

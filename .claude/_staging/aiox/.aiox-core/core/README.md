@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+---
+
 # AIOX Core Module
 
 > Central runtime module providing essential framework functionality for Synkra AIOX.

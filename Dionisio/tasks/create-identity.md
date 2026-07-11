@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Sistema de crenças definido com convicção central"
   - "[ ] Marcadores tribais projetados em todas as categorias"
   - "[ ] Gradiente de pertencimento definido com 5 níveis"
+tipo: nota
+area: Dionisio
+up: "[[Dionisio/_MOC-dionisio]]"
+relacionado:
+  - "[[Dionisio/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Criar Identidade

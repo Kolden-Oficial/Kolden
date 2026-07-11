@@ -10,6 +10,9 @@ metadata:
     tags: [search, searxng, meta-search, self-hosted, free, fallback]
     related_skills: [duckduckgo-search, domain-intel]
     fallback_for_toolsets: [web]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # SearXNG Search

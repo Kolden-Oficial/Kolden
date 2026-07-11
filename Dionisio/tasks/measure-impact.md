@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Pirâmide de Impacto definida com 5 níveis"
   - "[ ] Fórmula do Índice de Vitalidade definida com pesos"
   - "[ ] Cadência de relatórios estabelecida"
+tipo: nota
+area: Dionisio
+up: "[[Dionisio/_MOC-dionisio]]"
+relacionado:
+  - "[[Dionisio/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Medir Impacto

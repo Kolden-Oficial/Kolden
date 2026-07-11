@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Pactolo
+up: "[[Pactolo/_MOC-pactolo]]"
+---
+
 # Pactolo — Squad de Finanças Operacionais (FP&A)
 
 > **status:** semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)

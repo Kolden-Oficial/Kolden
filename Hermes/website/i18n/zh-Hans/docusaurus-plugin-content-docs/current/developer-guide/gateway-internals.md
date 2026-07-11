@@ -2,6 +2,9 @@
 sidebar_position: 7
 title: "Gateway 内部机制"
 description: "消息 gateway 如何启动、授权用户、路由会话以及投递消息"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Gateway 内部机制

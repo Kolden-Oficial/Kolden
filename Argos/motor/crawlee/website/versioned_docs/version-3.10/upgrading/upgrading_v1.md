@@ -1,6 +1,12 @@
 ---
 id: upgrading-to-v1
 title: Upgrading to v1
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.10/upgrading/upgrading_v2|upgrading_v2]]"
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.10/upgrading/upgrading_v3|upgrading_v3]]"
 ---
 
 ## Summary

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Escada da categoria mapeada com posições dos concorrentes"
   - "[ ] Declaração formal de posicionamento escrita com alternativas"
   - "[ ] Diretrizes de mensagens e pontos de prova fornecidos"
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Criar Posicionamento

@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Copywriting Output Quality Checklist — Copy Master
 
 **Checklist ID:** COPY-M-CL-001

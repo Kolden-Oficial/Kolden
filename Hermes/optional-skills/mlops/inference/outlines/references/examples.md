@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/inference/outlines/references/backends|backends]]"
+  - "[[Hermes/optional-skills/mlops/inference/outlines/references/json_generation|json_generation]]"
+---
+
 # Production-Ready Examples
 
 Real-world examples of using Outlines for structured generation in production systems.

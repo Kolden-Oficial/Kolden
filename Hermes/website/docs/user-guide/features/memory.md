@@ -2,6 +2,11 @@
 sidebar_position: 3
 title: "Persistent Memory"
 description: "How Hermes Agent remembers across sessions — MEMORY.md, USER.md, and session search"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Persistent Memory

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/diagnostico_caos/teste/original-ref|original-ref]]"
+---
+
 # Gabarito de capacidades — coreyhaines31/marketingskills@8bfcdff
 
 > Inventário-verdade montado **manualmente** pelo auditor, ANTES de qualquer comparação com a saída do CAOS.

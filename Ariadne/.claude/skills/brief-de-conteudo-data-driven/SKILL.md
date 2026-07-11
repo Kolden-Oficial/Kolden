@@ -9,6 +9,9 @@ description: >
   conteúdo", "content brief", "outline de conteúdo", "brief de blog/serviço", "plano de
   conteúdo", "outline para", "melhorar página existente". É o gerador de briefing que o
   estrategista-de-conteudo-seo entrega — a copy final é handoff ao Caliope.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Brief de Conteúdo Data-Driven

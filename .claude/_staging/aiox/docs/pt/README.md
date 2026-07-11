@@ -1,3 +1,36 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/agent-reference-guide|agent-reference-guide]]"
+  - "[[.claude/_staging/aiox/docs/pt/aiox-nomenclature-specification|aiox-nomenclature-specification]]"
+  - "[[.claude/_staging/aiox/docs/pt/CHANGELOG|CHANGELOG]]"
+  - "[[.claude/_staging/aiox/docs/pt/code-of-conduct|code-of-conduct]]"
+  - "[[.claude/_staging/aiox/docs/pt/community|community]]"
+  - "[[.claude/_staging/aiox/docs/pt/contributing|contributing]]"
+  - "[[.claude/_staging/aiox/docs/pt/core-architecture|core-architecture]]"
+  - "[[.claude/_staging/aiox/docs/pt/docker-mcp-setup|docker-mcp-setup]]"
+  - "[[.claude/_staging/aiox/docs/pt/DOCUMENTATION-ROADMAP|DOCUMENTATION-ROADMAP]]"
+  - "[[.claude/_staging/aiox/docs/pt/ENVIRONMENT|ENVIRONMENT]]"
+  - "[[.claude/_staging/aiox/docs/pt/FEATURE_PROCESS|FEATURE_PROCESS]]"
+  - "[[.claude/_staging/aiox/docs/pt/getting-started|getting-started]]"
+  - "[[.claude/_staging/aiox/docs/pt/git-workflow-guide|git-workflow-guide]]"
+  - "[[.claude/_staging/aiox/docs/pt/GUIDING-PRINCIPLES|GUIDING-PRINCIPLES]]"
+  - "[[.claude/_staging/aiox/docs/pt/how-to-contribute-with-pull-requests|how-to-contribute-with-pull-requests]]"
+  - "[[.claude/_staging/aiox/docs/pt/ide-integration|ide-integration]]"
+  - "[[.claude/_staging/aiox/docs/pt/meta-agent-commands|meta-agent-commands]]"
+  - "[[.claude/_staging/aiox/docs/pt/migration-guide|migration-guide]]"
+  - "[[.claude/_staging/aiox/docs/pt/npx-install|npx-install]]"
+  - "[[.claude/_staging/aiox/docs/pt/performance-tuning-guide|performance-tuning-guide]]"
+  - "[[.claude/_staging/aiox/docs/pt/roadmap|roadmap]]"
+  - "[[.claude/_staging/aiox/docs/pt/security|security]]"
+  - "[[.claude/_staging/aiox/docs/pt/security-best-practices|security-best-practices]]"
+  - "[[.claude/_staging/aiox/docs/pt/troubleshooting|troubleshooting]]"
+  - "[[.claude/_staging/aiox/docs/pt/uninstallation|uninstallation]]"
+  - "[[.claude/_staging/aiox/docs/pt/versioning-and-releases|versioning-and-releases]]"
+---
+
 <!--
   Tradução: PT-BR
   Original: /docs/README.md

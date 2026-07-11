@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/excalidraw/references/colors|colors]]"
+  - "[[Hermes/skills/creative/excalidraw/references/dark-mode|dark-mode]]"
+---
+
 # Excalidraw Diagram Examples
 
 Complete, copy-pasteable examples. Wrap each in the `.excalidraw` envelope before saving:

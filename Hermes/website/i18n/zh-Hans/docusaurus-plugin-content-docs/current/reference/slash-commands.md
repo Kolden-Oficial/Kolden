@@ -2,6 +2,9 @@
 sidebar_position: 2
 title: "斜杠命令参考"
 description: "交互式 CLI 和消息平台斜杠命令完整参考"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 斜杠命令参考

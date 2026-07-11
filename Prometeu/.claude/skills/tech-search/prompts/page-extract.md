@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 ## PAPEL
 Extrator de conteúdo técnico. Simula a extração de conteúdo do Exa ao ler páginas.
 

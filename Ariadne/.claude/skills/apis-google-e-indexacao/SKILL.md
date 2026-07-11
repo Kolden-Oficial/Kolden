@@ -9,6 +9,9 @@ description: >
   posição", "quick wins de busca", "tráfego orgânico GA4", "status do sitemap no
   Google". Só roda com credenciais Google presentes. NÃO é keyword research de
   volume (Keyword Planner → handoff Argos) nem GA4 de produto (→ Metis).
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # APIs Google & indexação avançada

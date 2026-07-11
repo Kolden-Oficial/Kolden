@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/mlops/inference/llama-cpp/references/advanced-usage|advanced-usage]]"
+  - "[[Hermes/skills/mlops/inference/llama-cpp/references/optimization|optimization]]"
+  - "[[Hermes/skills/mlops/inference/llama-cpp/references/quantization|quantization]]"
+  - "[[Hermes/skills/mlops/inference/llama-cpp/references/server|server]]"
+  - "[[Hermes/skills/mlops/inference/llama-cpp/references/troubleshooting|troubleshooting]]"
+---
+
 # Hugging Face URL Workflows for llama.cpp
 
 Use URL-only workflows first. Do not require `hf` or API clients just to find GGUF files, choose a quant, or build a `llama-server` command.

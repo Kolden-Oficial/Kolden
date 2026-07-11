@@ -21,6 +21,11 @@ Checklist:
   - "[ ] Consulta interpretada com intenção e função de negócio"
   - "[ ] Resposta rápida fornecida"
   - "[ ] Roteamento executado ou resposta direta dada"
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar — Squad C-Level

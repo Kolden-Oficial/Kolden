@@ -1,6 +1,9 @@
 ---
 name: busca-semantica-no-acervo
 description: Buscar, deduplicar e re-ranquear itens do acervo do Argos (resultados crus de múltiplos retrievers, fontes coletadas, relatórios e padrões passados no MEMORY.md/registros) combinando busca léxica fuzzy + similaridade semântica. Use quando o fan-out de retrievers (Exa/Tavily/Firecrawl/Sonar) devolver MUITAS fontes sobrepostas e você precisar consolidar as N mais relevantes sem duplicatas, ou quando quiser recuperar inteligência já produzida ("já pesquisamos isso?") antes de coletar de novo.
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Habilidade: busca-semantica-no-acervo (fusão léxica + semântica)

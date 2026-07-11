@@ -6,6 +6,8 @@ licenca: MIT
 classe: curso/biblioteca de referência (não skills operacionais)
 disposicao: REFERENCIA-ARQUIVADA
 data: 2026-06-27
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 > ############################################################

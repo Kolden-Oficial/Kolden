@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # Code Graph MCP — Setup Guide
 
 Setup guide para instalacao, configuracao e validacao do Code Graph MCP como provider de code intelligence no AIOX.

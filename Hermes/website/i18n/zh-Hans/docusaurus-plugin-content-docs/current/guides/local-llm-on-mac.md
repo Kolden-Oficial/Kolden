@@ -2,6 +2,9 @@
 sidebar_position: 2
 title: "在 Mac 上运行本地 LLM"
 description: "使用 llama.cpp 或 MLX 在 macOS 上搭建兼容 OpenAI 的本地 LLM 服务器，涵盖模型选择、内存优化以及 Apple Silicon 上的实测基准数据"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 在 Mac 上运行本地 LLM

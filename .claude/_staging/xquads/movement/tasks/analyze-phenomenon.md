@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Lived experience identified with essential structures"
   - "[ ] Collective tension mapped with intensity rating"
   - "[ ] Movement potential rated with justification"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/movement/tasks/_indice|_indice]]"
 ---
 
 # Task: Analyze Phenomenon

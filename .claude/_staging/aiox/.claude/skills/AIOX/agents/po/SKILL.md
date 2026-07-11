@@ -3,6 +3,9 @@ name: aiox-po
 description: "Activate Pax (po) for Product Owner. Use for backlog management, story refinement, acceptance criteria, sprint planning, and prioritization decisions"
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: generated -->

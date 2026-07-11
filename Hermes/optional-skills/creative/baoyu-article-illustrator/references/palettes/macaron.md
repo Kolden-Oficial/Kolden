@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/palettes/mono-ink|mono-ink]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/palettes/neon|neon]]"
+  - "[[Hermes/optional-skills/creative/baoyu-article-illustrator/references/palettes/warm|warm]]"
+---
+
 # macaron
 
 Soft macaron pastel color blocks on warm cream

@@ -1,6 +1,9 @@
 ---
 name: desenho-de-experimento
 description: Desenha o menor experimento/MVP que testa a assunção mais arriscada e escreve o test card (hipótese / teste / métrica / critério de sucesso / critério de kill), combinando os tipos de MVP de Eric Ries com o Test Card de David Bland e o teste de demanda de Alberto Savoia. Use quando já existe uma assunção priorizada e é preciso prová-la barato.
+tipo: skill
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
 ---
 
 # Desenho de Experimento

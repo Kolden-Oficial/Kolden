@@ -3,6 +3,9 @@ name: operacoes-lean-six-sigma
 description: Use quando o Poseidon precisar diagnosticar ou resolver um problema operacional pela lente Lean (eliminar desperdício) + Six Sigma (reduzir variação) — gargalos crônicos, retrabalho repetido, defeito recorrente em entrega, tempo de ciclo inflado, ou pedido de padronização de processo que ninguém sabe descrever. Cobre process-mapping (VSM), 5 whys, diagrama de Ishikawa, ciclo DMAIC e o vocabulário de sete desperdícios (TIMWOOD/muda). NÃO use para redesenho de organização (isso é `organizational_design` já no Poseidon) nem para automação de tarefa individual (isso é Dedalo). Aqui é o método sistemático de melhoria contínua do processo de negócio.
 invocavel_por: poseidon
 tags: [lean, six-sigma, dmaic, vsm, process-mapping, olimpo]
+tipo: skill
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
 ---
 
 # Operações Lean + Six Sigma

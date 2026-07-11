@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/framework/README|README]]"
+---
+
 # AIOX Technology Stack
 
 > 🌐 **EN** | [PT](../pt/framework/tech-stack.md) | [ES](../es/framework/tech-stack.md)

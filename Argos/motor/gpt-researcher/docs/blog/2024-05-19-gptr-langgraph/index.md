@@ -3,6 +3,9 @@ slug: gptr-langgraph
 title: How to Build the Ultimate Research Multi-Agent Assistant
 authors: [assafe]
 tags: [multi-skills, gpt-researcher, langchain, langgraph]
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 ![Header](./blog-langgraph.jpeg)
 # Introducing the GPT Researcher Multi-Agent Assistant

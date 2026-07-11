@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/czlonkowski--n8n-mcp/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/czlonkowski--n8n-mcp/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática — czlonkowski--n8n-mcp
 
 - **slug:** czlonkowski--n8n-mcp

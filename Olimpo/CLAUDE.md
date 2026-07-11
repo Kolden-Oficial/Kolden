@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/README|README]]"
+---
+
 # Olimpo — Camada 3-4 do Sistema (Governança Executiva Kolden)
 
 > **Squad Kolden vendorizado** — fork de `ohmyjahh/xquads-squads` `c-level-squad` (MIT license, commit `dcb32f35...`) com camada Kolden PT-BR por cima. C-suite virtual de 8 executivos que decompõe cada missão vinda do Hermes e roteia para os 26 squads operacionais Kolden.

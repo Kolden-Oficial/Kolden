@@ -2,6 +2,11 @@
 # No templates needed - this task executes existing checklists, doesn't create document outputs
 tools:
   - github-cli  # For document gathering
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # Checklist Validation Task

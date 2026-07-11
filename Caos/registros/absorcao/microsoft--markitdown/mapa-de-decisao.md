@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/microsoft--markitdown/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/microsoft--markitdown/seguranca|seguranca]]"
+---
+
 # Mapa de decisão (F4) — microsoft--markitdown
 
 Contexto: ferramenta da Microsoft (vendor), não vira agente. Decisão global = **registrar como

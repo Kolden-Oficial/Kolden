@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+relacionado:
+  - "[[.claude/registros/auditoria/2026-06-28-vistoria-v2/_indice|_indice]]"
+---
+
 # 00 — Carta de exceções estruturais (anti-falso-positivo)
 
 > Lista canônica do que **NÃO** é defeito nesta auditoria, com evidência de cada exceção.

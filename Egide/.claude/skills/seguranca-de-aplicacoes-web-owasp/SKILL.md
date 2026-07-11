@@ -10,6 +10,9 @@ description: >-
 domain: ciberseguranca
 subdomain: appsec-web
 tags: [owasp, appsec, xss, sqli, ssrf, idor, threat-modeling, web]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Segurança de Aplicações Web (OWASP)

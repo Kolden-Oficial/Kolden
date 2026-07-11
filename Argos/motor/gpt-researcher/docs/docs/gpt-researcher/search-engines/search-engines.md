@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/search-engines/test-your-retriever|test-your-retriever]]"
+---
+
 # Search Engines
 
 Search Engines are used to find the most relevant web sources and content for a given research task.

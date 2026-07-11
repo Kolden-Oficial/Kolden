@@ -11,6 +11,9 @@ description: >
   (Spotify/Apple/YouTube) — esta é o eixo China.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Podcast na China — Xiaoyuzhou + Ximalaya + Lizhi FM

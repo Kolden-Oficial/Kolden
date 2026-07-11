@@ -1,6 +1,11 @@
 ---
 sidebar_label: AI-Assisted Development
 sidebar_position: 6
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/gptr/_indice|_indice]]"
 ---
 
 # 🤖 AI-Assisted Development with Claude

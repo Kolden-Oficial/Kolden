@@ -2,6 +2,13 @@
 title: "Youtube Content — YouTube transcripts to summaries, threads, blogs"
 sidebar_label: "Youtube Content"
 description: "YouTube transcripts to summaries, threads, blogs"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/media/media-gif-search|media-gif-search]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/media/media-heartmula|media-heartmula]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/media/media-songsee|media-songsee]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

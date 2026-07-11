@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Shared Activation Pipeline - Common Agent Activation Chain
 
 > Traced from source code, not documentation.

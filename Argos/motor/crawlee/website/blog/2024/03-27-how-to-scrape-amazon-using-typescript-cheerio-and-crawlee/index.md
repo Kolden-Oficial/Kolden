@@ -4,6 +4,9 @@ title: 'How to scrape Amazon products'
 description: 'A detailed step-by-step guide to scraping products on Amazon using TypeScript, Cheerio, and Crawlee.'
 image: ./img/how-to-scrape-amazon.webp
 authors: [LukasP]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 ## Introduction

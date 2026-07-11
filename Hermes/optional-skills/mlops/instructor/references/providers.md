@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/instructor/references/examples|examples]]"
+  - "[[Hermes/optional-skills/mlops/instructor/references/validation|validation]]"
+---
+
 # Provider Configuration
 
 Guide to using Instructor with different LLM providers.

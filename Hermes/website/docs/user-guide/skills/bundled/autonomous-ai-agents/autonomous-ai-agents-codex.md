@@ -2,6 +2,14 @@
 title: "Codex — Delegate coding to OpenAI Codex CLI (features, PRs)"
 sidebar_label: "Codex"
 description: "Delegate coding to OpenAI Codex CLI (features, PRs)"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-claude-code|autonomous-ai-agents-claude-code]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-hermes-agent|autonomous-ai-agents-hermes-agent]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-kanban-codex-lane|autonomous-ai-agents-kanban-codex-lane]]"
+  - "[[Hermes/website/docs/user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-opencode|autonomous-ai-agents-opencode]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

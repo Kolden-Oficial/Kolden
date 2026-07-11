@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/comfyui/references/official-cli|official-cli]]"
+  - "[[Hermes/skills/creative/comfyui/references/rest-api|rest-api]]"
+  - "[[Hermes/skills/creative/comfyui/references/workflow-format|workflow-format]]"
+---
+
 # ComfyUI Workflow-Template Integrity
 
 > **Authored by [@purzbeats](https://github.com/purzbeats)** — adapted from

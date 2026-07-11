@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/README|README]]"
+---
+
 # Memory Intelligence System - Architecture Vision
 
 **Versao:** 2.1 (Target State — Core/Pro Split)

@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/torchtitan/references/checkpoint|checkpoint]]"
+  - "[[Hermes/optional-skills/mlops/torchtitan/references/custom-models|custom-models]]"
+  - "[[Hermes/optional-skills/mlops/torchtitan/references/float8|float8]]"
+---
+
 # FSDP2 in TorchTitan
 
 ## Why FSDP2?

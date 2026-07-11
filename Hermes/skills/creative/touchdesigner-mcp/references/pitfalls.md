@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/touchdesigner-mcp/references/_indice|_indice]]"
+---
+
 # TouchDesigner MCP — Pitfalls & Lessons Learned
 
 Hard-won knowledge from real TD sessions. Read this before building anything.

@@ -26,6 +26,11 @@ Checklist:
   - "[ ] 10 variações de headline geradas usando 3+ fórmulas"
   - "[ ] Top 5 ranqueadas com pontuação em 4 dimensões"
   - "[ ] Camada Psicológica aplicada (princípios de Cialdini/Warren marcados)"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Task: Escrever Headline

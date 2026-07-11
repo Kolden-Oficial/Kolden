@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/github--spec-kit/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/github--spec-kit/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # F2 — Segurança estática — github--spec-kit
 
 - **slug:** github--spec-kit

@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Sistema de identidade visual definido (cores, tipografia, logotipo)"
   - "[ ] Sistema de identidade verbal definido (voz, mensagens, história)"
   - "[ ] Resumo das diretrizes de marca compilado com exemplos de aplicação"
+tipo: nota
+area: Aglaia
+up: "[[Aglaia/_MOC-aglaia]]"
+relacionado:
+  - "[[Aglaia/tasks/_indice|_indice]]"
 ---
 
 # Task: Construir Identidade de Marca

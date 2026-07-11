@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/.claude/references/_indice|_indice]]"
+---
+
 # Multi-Agent System Reference
 
 ## Table of Contents

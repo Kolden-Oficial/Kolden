@@ -3,6 +3,9 @@ name: aiox-aiox-master
 description: "Ativa Orion (aiox-master) como AIOX Master Orchestrator & Framework Developer. Use quando precisar de expertise abrangente em todos os domínios, criação/modificação de componentes do framework, orquestração de workflows ou execução de tasks que não..."
 user-invocable: true
 activation_type: pipeline
+tipo: skill
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 <!-- ACORE-CLAUDE-AGENT-SKILL: gerado -->

@@ -1,3 +1,14 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/llms/running-with-azure|running-with-azure]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/llms/running-with-ollama|running-with-ollama]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/llms/supported-llms|supported-llms]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/llms/testing-your-llm|testing-your-llm]]"
+---
+
 # Configure LLM
 
 As described in the [introduction](/docs/gpt-researcher/gptr/config), the default LLM and embedding is OpenAI due to its superior performance and speed. 

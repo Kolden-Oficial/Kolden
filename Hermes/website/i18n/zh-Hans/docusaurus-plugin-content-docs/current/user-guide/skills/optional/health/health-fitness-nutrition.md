@@ -2,6 +2,9 @@
 title: "健身营养 — 健身房训练计划与营养追踪"
 sidebar_label: "健身营养"
 description: "健身房训练计划与营养追踪"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

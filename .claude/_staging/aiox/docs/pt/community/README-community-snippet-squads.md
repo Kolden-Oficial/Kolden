@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/community/README-community-snippet-core|README-community-snippet-core]]"
+  - "[[.claude/_staging/aiox/docs/pt/community/README-community-snippet-mcp|README-community-snippet-mcp]]"
+---
+
 <!-- Tradução: PT-BR | Original: /docs/en/community/README-community-snippet-squads.md | Sincronização: 2026-01-26 -->
 
 # Seção de Comunidade do README - aiox-squads

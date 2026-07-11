@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/flash-attention/references/benchmarks|benchmarks]]"
+---
+
 # HuggingFace Transformers Integration
 
 ## Contents

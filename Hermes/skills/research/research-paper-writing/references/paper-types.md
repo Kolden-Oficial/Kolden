@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/research/research-paper-writing/references/_indice|_indice]]"
+---
+
 # Paper Types Beyond Empirical ML
 
 Guide for writing non-standard paper types: theory papers, survey/tutorial papers, benchmark/dataset papers, and position papers. Each type has distinct structure, evidence standards, and venue expectations.

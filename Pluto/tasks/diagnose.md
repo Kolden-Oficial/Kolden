@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Requisição interpretada e palavras-chave extraídas"
   - "[ ] Catálogo de roteamento consultado com resultados pontuados"
   - "[ ] Resposta rápida fornecida com referência a um framework do Hormozi"
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+relacionado:
+  - "[[Pluto/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar Desafio de Negócio

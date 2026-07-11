@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/gsd-build--get-shit-done/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/gsd-build--get-shit-done/seguranca|seguranca]]"
+---
+
 # Mapa de decisão — gsd-build--get-shit-done (F4)
 
 Comparação de cada capacidade contra o registro de entidades e os squads existentes. Viés da missão autônoma: na ausência de match limpo item-a-item, preferir **ADAPT/CREATE** a REUSE. Squads de engenharia/spec já existentes: **prometeu** (eng/spec-driven, depende de dedalo), **dedalo** (claude code/eng de agentes), **egide** (segurança), **argos** (pesquisa), **harmonia** (ux/ui), **metis** (analytics), **aletheia** (discovery), **liceu** (mentes). Atenção: **Dike** (verificador solo) e o Olimpo/Hermes já cobrem parte da camada de verificação/contrato.

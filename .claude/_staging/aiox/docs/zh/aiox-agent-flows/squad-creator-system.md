@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/aiox-agent-flows/README|README]]"
+---
+
 <!--
   翻译：zh-CN（简体中文）
   原文：/docs/aiox-agent-flows/squad-creator-system.md

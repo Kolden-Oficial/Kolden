@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/framework/README|README]]"
+---
+
 <!--
   Tradução: PT-BR
   Original: /docs/en/framework/source-tree.md

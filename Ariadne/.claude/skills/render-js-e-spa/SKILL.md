@@ -9,6 +9,9 @@ description: >
   "site em React/Vue/Angular", "SPA", "client-side rendering", "renderiza a
   página", "screenshot mobile", "above the fold", "página em branco no fetch",
   "schema injetado por JS". É o pipeline de captura por trás das auditorias.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Renderização JS-aware e SPA

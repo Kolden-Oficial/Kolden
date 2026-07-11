@@ -2,6 +2,11 @@
 sidebar_position: 13
 title: "Delegation & Parallel Work"
 description: "When and how to use subagent delegation — patterns for parallel research, code review, and multi-file work"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Delegation & Parallel Work

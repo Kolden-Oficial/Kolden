@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/architecture/_indice|_indice]]"
+---
+
 <!-- 翻译: ZH-CN | 原始: /docs/pt/architecture/agent-responsibility-matrix.md | 同步: 2026-02-22 -->
 
 # 代理责任矩阵 - Epic 3 战略改进

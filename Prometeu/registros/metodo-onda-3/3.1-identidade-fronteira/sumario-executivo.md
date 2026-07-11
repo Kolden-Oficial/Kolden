@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/diff-cirurgico|diff-cirurgico]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/matriz-de-conformidade|matriz-de-conformidade]]"
+  - "[[Prometeu/registros/metodo-onda-3/3.1-identidade-fronteira/verificacao-dike|verificacao-dike]]"
+---
+
 # Sumário Executivo — Sub-onda 3.1 do METODO Kolden (Prometeu · identidade + fronteira)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (Onda 3, Grupo A, squad-alvo Prometeu, Sub-onda 3.1 = domínio A identidade + fronteira vendor SynkraAI).

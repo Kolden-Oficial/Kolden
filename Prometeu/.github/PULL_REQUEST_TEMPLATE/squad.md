@@ -4,6 +4,12 @@ about: Submit a new squad or update to existing squad
 title: '[SQUAD] '
 labels: 'squad', 'needs-po-review'
 assignees: ''
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.github/PULL_REQUEST_TEMPLATE/agent_contribution|agent_contribution]]"
+  - "[[Prometeu/.github/PULL_REQUEST_TEMPLATE/task_contribution|task_contribution]]"
 ---
 
 # Squad Pull Request

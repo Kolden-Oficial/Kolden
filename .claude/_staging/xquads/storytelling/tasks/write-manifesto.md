@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Story of Self crafted with authentic personal origin"
   - "[ ] Story of Us builds shared identity and belonging"
   - "[ ] Manifesto text woven with rallying cry"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/storytelling/tasks/_indice|_indice]]"
 ---
 
 # Task: Movement/Brand Manifesto

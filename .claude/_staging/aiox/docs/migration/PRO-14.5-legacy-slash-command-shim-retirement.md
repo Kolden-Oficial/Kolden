@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/migration/ACORE-CLAUDE-SKILLS-PREFLIGHT-2026-05-01|ACORE-CLAUDE-SKILLS-PREFLIGHT-2026-05-01]]"
+---
+
 # PRO-14.5 Legacy Slash-Command Shim Retirement Gate
 
 Story: `STORY-PRO-14.5`

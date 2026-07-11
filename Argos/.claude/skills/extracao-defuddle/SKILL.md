@@ -1,6 +1,9 @@
 ---
 name: extracao-defuddle
 description: Extrair markdown limpo de uma página web com o Defuddle CLI — remove navegação, anúncios e ruído, economizando tokens. Use como alternativa LEVE e LOCAL ao Firecrawl/`web_extract` quando a página for um artigo, post de blog, documentação ou notícia padrão (HTML estático legível) e você só quer o texto + metadados, sem render de JS nem anti-bot. NÃO use para alvos com JS pesado, anti-bot ou login (esses são do motor/`compliance-sentinela`), nem para URLs que já terminam em .md.
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Habilidade: extracao-defuddle (web → markdown limpo, local)

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Pactolo
+up: "[[Pactolo/_MOC-pactolo]]"
+---
+
 # Workflow — Monthly Business Review (MBR)
 
 > _Adaptado de github.com/msitarzewski/agency-agents@a597cb6 (G17, MIT)._

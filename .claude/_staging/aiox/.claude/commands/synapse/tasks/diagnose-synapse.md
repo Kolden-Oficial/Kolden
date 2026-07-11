@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.claude/commands/synapse/tasks/_indice|_indice]]"
+---
+
 # SYNAPSE Diagnostics Task
 
 Run a comprehensive diagnostic of the SYNAPSE context engine, comparing expected vs. actual pipeline state, including **session performance analysis** with exact timing data.

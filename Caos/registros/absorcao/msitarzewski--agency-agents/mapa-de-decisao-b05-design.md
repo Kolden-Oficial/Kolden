@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F4 — Mapa de decisão · `msitarzewski--agency-agents@a597cb6` — bucket B05 (design)
 
 > **Bucket B05:** Harmonia (squad-alvo de UX/UI/Design Systems, 8 agentes) + Aglaia (squad-alvo de branding/estética, 15 agentes).

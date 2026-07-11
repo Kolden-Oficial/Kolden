@@ -10,6 +10,9 @@ description: >
   "por que meu site não ranqueia" (quando for diagnóstico amplo).
   É o motor de orquestração do auditor-tecnico-seo. NÃO é coleta de SERP/keyword
   (isso é handoff Argos).
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Auditoria técnica em escala (crawl + fan-out paralelo)

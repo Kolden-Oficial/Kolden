@@ -11,6 +11,11 @@ metadata:
     category: creative
     credits:
       - "Hardware palettes and animation loops ported from Synero/pixel-art-studio (MIT) — https://github.com/Synero/pixel-art-studio"
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/pixel-art/ATTRIBUTION|ATTRIBUTION]]"
 ---
 
 # Pixel Art

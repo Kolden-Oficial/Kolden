@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Pluto
+up: "[[Pluto/_MOC-pluto]]"
+relacionado:
+  - "[[Pluto/_origem|_origem]]"
+---
+
 # Pluto — Squad de Negócios e Escala
 
 O Pluto é um squad de 16 agentes especializados que implementa, de ponta a ponta, os frameworks de negócios e escala de Alex Hormozi — desde a construção da oferta (Grand Slam Offer e Value Equation) e a geração de leads (Core 4 e $100M Leads), passando por precificação baseada em valor, fechamento de vendas (CLOSER framework), anúncios, conteúdo, hooks e lançamentos, até retenção, escala de $1M a $100M+, design de modelo de negócio, auditoria, copywriting e aconselhamento estratégico. O orquestrador Hormozi Chief diagnostica o problema central de qualquer negócio, roteia para o especialista certo e revisa a entrega em busca de alinhamento com a metodologia. O material-fonte inclui $100M Offers, $100M Leads, Gym Launch Secrets e a metodologia da Acquisition.com.

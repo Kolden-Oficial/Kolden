@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [excel, openpyxl, finance, spreadsheet, modeling]
     related_skills: [pptx-author, dcf-model, comps-analysis, lbo-model, 3-statement-model]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # excel-author

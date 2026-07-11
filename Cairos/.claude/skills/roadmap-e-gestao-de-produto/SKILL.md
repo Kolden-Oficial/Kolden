@@ -6,6 +6,9 @@ description: >
   em decisão. Gatilhos: "roadmap", "o que entra no próximo release", "priorização", "backlog",
   "sprint planning", "spec de feature", "métrica de produto". Dono: product-manager. Métrica → handoff
   ao Metis; build de software → handoff ao Prometeu; discovery → entrada da Aletheia.
+tipo: skill
+area: Cairos
+up: "[[Cairos/_MOC-cairos]]"
 ---
 
 # Roadmap & Gestão de Produto

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+---
+
 # Referência — catálogo de padrões de injeção
 
 Padrões de apoio ao `scanner-anti-injecao-resiliente`. São **regex de detecção** (case-insensitive);

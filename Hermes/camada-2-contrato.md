@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/README|README]]"
+---
+
 # Hermes — Camada 2: Tradução de Intenção + Contrato de Missão
 
 > Protocolo da **camada 2** do sistema hierárquico de 5 camadas do KoldenOS. O Hermes (runtime)

@@ -13,6 +13,9 @@ description: >
   é `publicacao-social`).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Edição de Short-Video — o software certo, o mix certo, o export certo

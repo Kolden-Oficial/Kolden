@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/tones/_indice|_indice]]"
+---
+
 # neutral
 
 中性基调 - Balanced, rational, educational

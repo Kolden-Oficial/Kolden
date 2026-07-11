@@ -12,6 +12,9 @@ metadata:
   hermes:
     tags: [Airtable, Productivity, Database, API]
     homepage: https://airtable.com/developers/web/api/introduction
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Airtable — Bases, Tables & Records

@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: Egide
+up: "[[Egide/_MOC-egide]]"
+---
+
 # Checklist de Qualidade de Saída de Segurança
 
 **ID do Checklist:** CYBER-CL-001

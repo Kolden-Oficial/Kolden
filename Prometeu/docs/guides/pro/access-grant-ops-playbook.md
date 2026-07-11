@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/pro/install-gate-setup|install-gate-setup]]"
+  - "[[Prometeu/docs/guides/pro/squad-creator-handoff-pro-access-ops|squad-creator-handoff-pro-access-ops]]"
+---
+
 # Playbook: AIOX Pro Access Grant Ops
 
 **Status:** Validated on 2026-04-20

@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/registros/metodo-onda-2/diff-cirurgico|diff-cirurgico]]"
+  - "[[Hermes/registros/metodo-onda-2/matriz-de-conformidade|matriz-de-conformidade]]"
+  - "[[Hermes/registros/metodo-onda-2/sumario-executivo|sumario-executivo]]"
+  - "[[Hermes/registros/metodo-onda-2/verificacao-dike-delta|verificacao-dike-delta]]"
+---
+
 # Verificação Dike — Onda 2 (Hermes) contra CAOS-CL-002
 
 > **Papel Dike:** executado temporariamente pelo `hermes-chief` (baseline diagnóstico). Papel INDEPENDENTE (Passo 6 do rito) será executado por subagente Explore isolado após aplicação do diff.

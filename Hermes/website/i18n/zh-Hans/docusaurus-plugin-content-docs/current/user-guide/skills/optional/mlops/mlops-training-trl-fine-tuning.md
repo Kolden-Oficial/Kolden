@@ -2,6 +2,9 @@
 title: "使用 TRL 进行微调 — TRL：面向 LLM RLHF 的 SFT、DPO、PPO、GRPO 及奖励建模"
 sidebar_label: "使用 TRL 进行微调"
 description: "TRL：面向 LLM RLHF 的 SFT、DPO、PPO、GRPO 及奖励建模"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

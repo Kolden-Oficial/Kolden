@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/devops/cli/references/authentication|authentication]]"
+  - "[[Hermes/optional-skills/devops/cli/references/cli-reference|cli-reference]]"
+  - "[[Hermes/optional-skills/devops/cli/references/running-apps|running-apps]]"
+---
+
 # Discovering Apps
 
 ## List All Apps

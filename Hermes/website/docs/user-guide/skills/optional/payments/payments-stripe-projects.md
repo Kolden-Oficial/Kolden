@@ -2,6 +2,12 @@
 title: "Stripe Projects — Provision SaaS services + sync creds via Stripe Projects"
 sidebar_label: "Stripe Projects"
 description: "Provision SaaS services + sync creds via Stripe Projects"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/skills/optional/payments/payments-mpp-agent|payments-mpp-agent]]"
+  - "[[Hermes/website/docs/user-guide/skills/optional/payments/payments-stripe-link-cli|payments-stripe-link-cli]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

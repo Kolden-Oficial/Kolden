@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/guides/workflows/_indice|_indice]]"
+---
+
 # Workflow: Greenfield Service/API Development
 
 **Documento:** GREENFIELD-SERVICE-WORKFLOW.md

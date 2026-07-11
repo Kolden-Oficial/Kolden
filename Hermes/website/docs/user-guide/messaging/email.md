@@ -2,6 +2,11 @@
 sidebar_position: 7
 title: "Email"
 description: "Set up Hermes Agent as an email assistant via IMAP/SMTP"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/messaging/index|index]]"
 ---
 
 # Email Setup

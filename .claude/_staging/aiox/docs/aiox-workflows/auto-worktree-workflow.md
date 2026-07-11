@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/aiox-workflows/README|README]]"
+---
+
 # Auto-Worktree Workflow
 
 **Versão:** 1.0

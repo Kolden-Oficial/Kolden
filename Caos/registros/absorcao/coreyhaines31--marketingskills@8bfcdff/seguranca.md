@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/coreyhaines31--marketingskills@8bfcdff/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/coreyhaines31--marketingskills@8bfcdff/mapa-de-decisao|mapa-de-decisao]]"
+  - "[[Caos/registros/absorcao/coreyhaines31--marketingskills@8bfcdff/relatorio-de-perda|relatorio-de-perda]]"
+---
+
 # F2 — Verificação de segurança estática — coreyhaines31/marketingskills@8bfcdff
 
 > Pipeline de absorção (`ingestao-de-repositorio`), Fase 2 (gate BLOCK, prioridade #1).

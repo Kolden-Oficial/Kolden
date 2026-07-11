@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.claude/commands/synapse/tasks/_indice|_indice]]"
+---
+
 # Task de Diagnóstico do SYNAPSE
 
 Execute um diagnóstico abrangente da engine de contexto do SYNAPSE, comparando o estado esperado do pipeline com o estado real, incluindo **análise de desempenho da sessão** com dados de tempo exatos.

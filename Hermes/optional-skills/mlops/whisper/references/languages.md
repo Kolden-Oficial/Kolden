@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Whisper Language Support Guide
 
 Complete guide to Whisper's multilingual capabilities.

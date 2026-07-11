@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/claude-code-mastery/tasks/_indice|_indice]]"
+---
+
 # Task: Optimize Claude Code Workflow
 
 **Task ID:** CCM-PI-003

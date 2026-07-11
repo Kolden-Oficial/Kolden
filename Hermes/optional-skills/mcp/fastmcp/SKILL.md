@@ -12,6 +12,9 @@ metadata:
     related_skills: [native-mcp, mcporter]
 prerequisites:
   commands: [python3]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # FastMCP

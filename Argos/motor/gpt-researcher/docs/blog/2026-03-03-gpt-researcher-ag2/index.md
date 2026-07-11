@@ -4,6 +4,9 @@ title: Deep Web Research with AG2 and GPT Researcher
 authors: [marksze]
 tags: [research, multi-agent, ag2, tools, ag-ui]
 image: ./img/gpt-researcher-ag2.webp
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 ![GPT Researcher x AG2](./img/gpt-researcher-ag2.webp)

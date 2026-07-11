@@ -1,3 +1,14 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/catalogo-de-estilos|catalogo-de-estilos]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/guia-por-stack|guia-por-stack]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/paletas-e-tipografia|paletas-e-tipografia]]"
+  - "[[Harmonia/.claude/skills/sistema-de-design/references/tipos-de-produto|tipos-de-produto]]"
+---
+
 # Regras de UX (~99 diretrizes, 18 categorias)
 
 Corpo de regras com `Faça / Não faça / exemplo bom / exemplo ruim / severidade`,

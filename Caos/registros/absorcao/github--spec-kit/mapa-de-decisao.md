@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/github--spec-kit/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/github--spec-kit/seguranca|seguranca]]"
+---
+
 # F4 — Mapa de decisão — github--spec-kit
 
 - **slug:** github--spec-kit · **sha:** b7e67f55 · **rota:** A

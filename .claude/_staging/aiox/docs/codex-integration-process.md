@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/README|README]]"
+---
+
 # Integracao AIOX com Codex CLI (Estado Atual)
 
 Este documento descreve o estado operacional atual da integracao AIOX + Codex CLI no AIOX `4.2.11`.

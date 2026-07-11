@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Tipo de bloqueio diagnosticado com a raiz emocional identificada"
   - "[ ] Pelo menos 3 exercícios prescritos e explicados"
   - "[ ] Micro-meta definida para ação imediata"
+tipo: nota
+area: Orfeu
+up: "[[Orfeu/_MOC-orfeu]]"
+relacionado:
+  - "[[Orfeu/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Desbloqueio Criativo

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+relacionado:
+  - "[[Olimpo/README|README]]"
+---
+
 # Constituição do Agent Olimpo (15 princípios veto-operacionais)
 
 > **Camada:** 3-4 combinada (Zeus decompõe + 7 executivos traduzem)

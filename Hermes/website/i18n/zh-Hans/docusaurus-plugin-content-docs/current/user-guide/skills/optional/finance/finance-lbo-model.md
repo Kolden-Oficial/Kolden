@@ -2,6 +2,9 @@
 title: "Lbo Model"
 sidebar_label: "Lbo Model"
 description: "在 Excel 中构建杠杆收购模型——资金来源与用途、债务计划、现金清扫、退出倍数、IRR/MOIC 敏感性分析"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

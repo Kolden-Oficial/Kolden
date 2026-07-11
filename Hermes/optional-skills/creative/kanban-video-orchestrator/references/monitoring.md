@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/examples|examples]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/intake|intake]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/kanban-setup|kanban-setup]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/role-archetypes|role-archetypes]]"
+  - "[[Hermes/optional-skills/creative/kanban-video-orchestrator/references/tool-matrix|tool-matrix]]"
+---
+
 # Monitoring — Watch the Pipeline + Intervene
 
 After `setup.sh` fires the kanban, the work runs autonomously. The role of

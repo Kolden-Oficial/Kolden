@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+---
+
 # Adding a New Messaging Platform
 
 There are two ways to add a platform to the Hermes gateway:

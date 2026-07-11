@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/redesenho-fase2/onda-1-diagnostico/sumario-executivo|sumario-executivo]]"
+---
+
 # Matriz de Conformidade — Caos × Framework arquitetura-de-agents-kolden
 
 > **Missão:** m-20260705-redesenho-arquitetural-fase2

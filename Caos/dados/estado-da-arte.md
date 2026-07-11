@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # Estado da Arte de IA — retrato vivo do Kolden
 
 Snapshot curto e consultável do ecossistema de IA, **sobrescrito a cada varredura** pelo

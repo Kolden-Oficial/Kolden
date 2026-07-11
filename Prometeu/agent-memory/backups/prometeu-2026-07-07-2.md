@@ -1,6 +1,9 @@
 ---
 relacionado:
   - "[[Prometeu/agent-memory/prometeu|prometeu (atual)]]"
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
 ---
 
 # Memória do Agente prometeu-chief

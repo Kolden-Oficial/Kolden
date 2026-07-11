@@ -47,6 +47,8 @@ linhagens: []
 frameworks_kolden: []
 squads_que_usam: [argos, themis, metis]
 confianca_da_fonte: alta
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Historiografia — Dossiê de Disciplina

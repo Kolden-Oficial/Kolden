@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # Bitwarden CLI Server for Skyvern
 
 This Docker setup provides a Bitwarden CLI server with `bw serve` functionality that enables Skyvern to work with vaultwarden (or official Bitwarden) instances.

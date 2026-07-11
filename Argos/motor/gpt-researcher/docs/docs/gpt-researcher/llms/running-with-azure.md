@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/llms/llms|llms]]"
+---
+
 # Running with Azure
 
 ## Example: Azure OpenAI Configuration

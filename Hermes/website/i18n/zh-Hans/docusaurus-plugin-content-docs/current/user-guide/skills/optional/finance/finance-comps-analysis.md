@@ -2,6 +2,9 @@
 title: "可比公司分析"
 sidebar_label: "可比公司分析"
 description: "在 Excel 中构建可比公司分析——运营指标、估值倍数、与同行集合的统计基准对比"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

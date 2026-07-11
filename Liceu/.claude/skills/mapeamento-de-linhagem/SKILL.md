@@ -1,6 +1,9 @@
 ---
 name: mapeamento-de-linhagem
 description: Monta o grafo de influência de uma mente ou de uma escola de pensamento — de quem ela herdou e a quem influenciou — com prova de contato em cada aresta. Use quando o pedido for "mapeia a linhagem de X", "quem influenciou Y", "de quem Z herdou", "X é discípulo de quem", "monta a genealogia dessa linhagem", "de onde veio essa ideia". Distingue influência direta de zeitgeist, rotula toda aresta sem prova como "inferida" e nunca inventa discipulado. Especialista responsável: genealogista.
+tipo: skill
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Mapeamento de Linhagem

@@ -1,3 +1,13 @@
+---
+tipo: projeto
+projeto: brw-movelaria
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/pesquisa/dossie-concorrentes|dossie-concorrentes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/pesquisa/prospeccao-bahia|prospeccao-bahia]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/pesquisa/prospeccao-hotelaria-bahia|prospeccao-hotelaria-bahia]]"
+---
+
 # BRW Movelaria — Prospecção de Incorporadoras & Empreendimentos de Studios / Short-Stay na Bahia
 
 > **Status:** v1 / inteligência-de-mercado — lista de prospecção, **não** validação de demanda nem contrato

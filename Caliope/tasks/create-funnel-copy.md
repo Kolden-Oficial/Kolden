@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Todo o copy de páginas e e-mails escrito conforme os padrões de formato"
   - "[ ] Matemática do funil calculada com as taxas de conversão esperadas"
   - "[ ] Camada Psicológica aplicada (princípios de Cialdini/Warren marcados)"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Criar Copy de Funil

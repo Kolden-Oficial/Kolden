@@ -2,6 +2,9 @@
 title: "Openhue — 通过 OpenHue CLI 控制 Philips Hue 灯光、场景和房间"
 sidebar_label: "Openhue"
 description: "通过 OpenHue CLI 控制 Philips Hue 灯光、场景和房间"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

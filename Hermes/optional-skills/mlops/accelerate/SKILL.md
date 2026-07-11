@@ -10,6 +10,9 @@ metadata:
   hermes:
     tags: [Distributed Training, HuggingFace, Accelerate, DeepSpeed, FSDP, Mixed Precision, PyTorch, DDP, Unified API, Simple]
 
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # HuggingFace Accelerate - Unified Distributed Training

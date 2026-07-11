@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/data/technical-preferences|technical-preferences]]"
+---
+
 # Base de Conhecimento AIOX
 
 ## Visão Geral

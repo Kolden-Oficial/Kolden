@@ -13,6 +13,9 @@ description: >-
 domain: ciberseguranca
 subdomain: operacoes-de-soc
 tags: [soc, blue-team, siem, triagem, escalonamento, sla, runbook, kpi, mttr, audit-log]
+tipo: skill
+area: Egide
+up: "[[Egide/_MOC-egide]]"
 ---
 
 # Operações de SOC / Blue-Team

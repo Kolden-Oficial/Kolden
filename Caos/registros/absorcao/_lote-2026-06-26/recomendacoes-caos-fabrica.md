@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/_lote-2026-06-26/_indice|_indice]]"
+---
+
 # Recomendações de melhoria pontual — skills de criação do Caos
 
 > Saída da aplicação F6 (bucket **Caos-fábrica**). Estas são **anotações cirúrgicas**, não

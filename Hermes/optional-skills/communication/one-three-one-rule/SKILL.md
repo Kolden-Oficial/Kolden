@@ -16,6 +16,9 @@ category: communication
 metadata:
   hermes:
     tags: [communication, decision-making, proposals, trade-offs]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 1-3-1 Communication Rule

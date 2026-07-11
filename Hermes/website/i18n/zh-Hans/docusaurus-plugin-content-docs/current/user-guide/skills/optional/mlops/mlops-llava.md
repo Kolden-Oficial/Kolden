@@ -2,6 +2,9 @@
 title: "Llava — 大型语言与视觉助手"
 sidebar_label: "Llava"
 description: "大型语言与视觉助手"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

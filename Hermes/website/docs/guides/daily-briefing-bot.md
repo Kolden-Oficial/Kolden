@@ -2,6 +2,11 @@
 sidebar_position: 3
 title: "Tutorial: Daily Briefing Bot"
 description: "Build an automated daily briefing bot that researches topics, summarizes findings, and delivers them to Telegram or Discord every morning"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Tutorial: Build a Daily Briefing Bot

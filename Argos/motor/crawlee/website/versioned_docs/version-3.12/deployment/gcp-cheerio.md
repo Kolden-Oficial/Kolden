@@ -1,6 +1,13 @@
 ---
 id: gcp-cheerio
 title: Cheerio on GCP Cloud Functions
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.12/deployment/aws-browsers|aws-browsers]]"
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.12/deployment/aws-cheerio|aws-cheerio]]"
+  - "[[Argos/motor/crawlee/website/versioned_docs/version-3.12/deployment/gcp-browsers|gcp-browsers]]"
 ---
 
 Running CheerioCrawler-based project in GCP functions is actually quite easy - you just have to make a few changes to the project code.

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # SYNAPSE Context Runtime
 
 This directory contains bounded-context helpers for the SYNAPSE runtime.

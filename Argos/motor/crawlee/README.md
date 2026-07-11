@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/CHANGELOG|CHANGELOG]]"
+  - "[[Argos/motor/crawlee/CONTRIBUTING|CONTRIBUTING]]"
+  - "[[Argos/motor/crawlee/LICENSE|LICENSE]]"
+  - "[[Argos/motor/crawlee/MIGRATIONS|MIGRATIONS]]"
+  - "[[Argos/motor/crawlee/RELEASE|RELEASE]]"
+---
+
 <h1 align="center">
     <a href="https://crawlee.dev">
         <picture>

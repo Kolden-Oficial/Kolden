@@ -2,6 +2,9 @@
 title: "Hermes Agent — 配置、扩展或贡献 Hermes Agent"
 sidebar_label: "Hermes Agent"
 description: "配置、扩展或贡献 Hermes Agent"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/README|README]]"
+---
+
 # Contributor Covenant Code of Conduct
 
 > 🇧🇷 [Versão em Português](CODE_OF_CONDUCT-PT.md)

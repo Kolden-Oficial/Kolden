@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.github/ISSUE_DRAFT_P0_missing_module|ISSUE_DRAFT_P0_missing_module]]"
+  - "[[Prometeu/.github/PULL_REQUEST_TEMPLATE|PULL_REQUEST_TEMPLATE]]"
+---
+
 # RFC: [Title]
 
 **RFC ID:** RFC-XXXX

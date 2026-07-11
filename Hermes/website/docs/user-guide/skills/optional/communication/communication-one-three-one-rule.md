@@ -2,6 +2,9 @@
 title: "One Three One Rule — Structured decision-making framework for technical proposals and trade-off analysis"
 sidebar_label: "One Three One Rule"
 description: "Structured decision-making framework for technical proposals and trade-off analysis"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

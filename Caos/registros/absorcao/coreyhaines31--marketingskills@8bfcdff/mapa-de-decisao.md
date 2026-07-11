@@ -1,3 +1,13 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/coreyhaines31--marketingskills@8bfcdff/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/coreyhaines31--marketingskills@8bfcdff/relatorio-de-perda|relatorio-de-perda]]"
+  - "[[Caos/registros/absorcao/coreyhaines31--marketingskills@8bfcdff/seguranca|seguranca]]"
+---
+
 # F4 — Mapa de decisão (REUSE / ADAPT / CREATE) — coreyhaines31/marketingskills@8bfcdff
 
 > Pipeline de absorção, Fase 4 (INFO). Para cada ID do `inventario-de-capacidades.md`, uma decisão

@@ -36,6 +36,11 @@ Checklist:
   - "[ ] Sinais de SEO técnico observável lidos sem login (sitemap/robots/URL/meta)"
   - "[ ] Keyword gap e share of search calculados e rotulados como proxy/estimativa quando aplicável"
   - "[ ] Cada dado com FONTE + TIMESTAMP; dado direto separado de dedução"
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Mapear SERP e Links — Argos

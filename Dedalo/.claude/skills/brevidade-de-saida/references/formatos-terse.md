@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Dedalo
+up: "[[Dedalo/_MOC-dedalo]]"
+---
+
 # Formatos terse prontos
 
 Formatos de saída comprimida reutilizáveis. Todos respeitam o guardrail Auto-Clarity (nunca

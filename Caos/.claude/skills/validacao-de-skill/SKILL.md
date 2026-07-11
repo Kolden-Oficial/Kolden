@@ -1,6 +1,9 @@
 ---
 name: validacao-de-skill
 description: Use antes de entregar/registrar uma habilidade nova ou alterada, ou quando houver dúvida se uma habilidade realmente muda o comportamento do agente (e não só "parece boa"). Cobre teste A/B com-skill vs baseline, validação de gatilho (trigger eval) e teste de pressão por subagente.
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Validação de habilidade

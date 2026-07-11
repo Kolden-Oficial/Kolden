@@ -25,6 +25,11 @@ Checklist:
   - "[ ] North Star Metric defined with input metrics"
   - "[ ] At least 5 hypotheses generated and ICE-scored"
   - "[ ] Experiment log created with tracking plan"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/data-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Measure Growth

@@ -1,6 +1,9 @@
 ---
 name: roteiro-de-entrevista
 description: Gera e audita roteiros de entrevista de descoberta seguindo The Mom Test (Rob Fitzpatrick) — perguntas sobre a vida e o passado do cliente, nunca sobre a ideia ou o futuro hipotético. Use quando o usuário precisar conversar com clientes para validar uma dor, ou quando quiser auditar um roteiro existente contra perguntas enviesadas.
+tipo: skill
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
 ---
 
 # Roteiro de Entrevista (The Mom Test)

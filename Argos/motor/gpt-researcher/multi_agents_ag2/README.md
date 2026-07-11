@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+---
+
 # AG2 x GPT Researcher
 [AG2](https://github.com/ag2ai/ag2) is a framework for building multi-agent applications with LLMs.
 This example uses AG2 to orchestrate the GPT Researcher multi-agent workflow.

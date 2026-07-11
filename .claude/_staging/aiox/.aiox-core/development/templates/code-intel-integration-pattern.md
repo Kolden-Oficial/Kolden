@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/templates/_indice|_indice]]"
+---
+
 # Code Intelligence Integration Pattern
 
 > Standard pattern for integrating code intelligence into new tasks and helpers.

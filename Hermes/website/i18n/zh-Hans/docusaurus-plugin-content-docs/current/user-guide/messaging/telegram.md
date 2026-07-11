@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: "Telegram"
 description: "将 Hermes Agent 设置为 Telegram 机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Telegram 设置

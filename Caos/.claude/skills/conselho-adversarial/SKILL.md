@@ -1,6 +1,9 @@
 ---
 name: conselho-adversarial
 description: Use quando uma decisão ambígua precisa de discordância estruturada antes de escolher (monorepo vs polirepo, lançar agora vs segurar, escopo enxuto vs amplo), OU quando um output vai para produção/cliente e precisa passar por verificação adversarial que quebre o viés do autor. Convoca vozes independentes (conselho de 4 para decisão; dupla revisão cega com loop de convergência para correção). Reforça a Dike e os especialistas revisor/testador. NÃO use para tarefa óbvia, pergunta factual direta, ou quebra de feature em passos (use `planner`).
+tipo: skill
+area: Caos
+up: "[[Caos/_MOC-caos]]"
 ---
 
 # Conselho adversarial e verificação por convergência

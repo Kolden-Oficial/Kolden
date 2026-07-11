@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [gitnexus, code-intelligence, knowledge-graph, visualization]
     related_skills: [native-mcp, codebase-inspection]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # GitNexus Explorer

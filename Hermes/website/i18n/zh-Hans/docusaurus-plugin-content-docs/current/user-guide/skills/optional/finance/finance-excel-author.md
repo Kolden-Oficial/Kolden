@@ -2,6 +2,9 @@
 title: "Excel Author"
 sidebar_label: "Excel Author"
 description: "使用 openpyxl 无头构建可审计的 Excel 工作簿——蓝/黑/绿单元格约定、公式优先于硬编码、命名范围、余额检查、敏感性表格。"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

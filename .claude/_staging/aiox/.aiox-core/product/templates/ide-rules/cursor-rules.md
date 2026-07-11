@@ -1,6 +1,15 @@
 ---
 description: Synkra AIOX global rules loaded on every Cursor conversation
 alwaysApply: true
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/product/templates/ide-rules/antigravity-rules|antigravity-rules]]"
+  - "[[.claude/_staging/aiox/.aiox-core/product/templates/ide-rules/claude-rules|claude-rules]]"
+  - "[[.claude/_staging/aiox/.aiox-core/product/templates/ide-rules/codex-rules|codex-rules]]"
+  - "[[.claude/_staging/aiox/.aiox-core/product/templates/ide-rules/copilot-rules|copilot-rules]]"
+  - "[[.claude/_staging/aiox/.aiox-core/product/templates/ide-rules/gemini-rules|gemini-rules]]"
 ---
 
 # Synkra AIOX Development Rules for Cursor

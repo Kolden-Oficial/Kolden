@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/pytorch-lightning/references/callbacks|callbacks]]"
+  - "[[Hermes/optional-skills/mlops/pytorch-lightning/references/distributed|distributed]]"
+---
+
 # Hyperparameter Tuning with PyTorch Lightning
 
 ## Integration with Tuning Frameworks

@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Número solicitado de bullets escrito usando fórmulas variadas"
   - "[ ] 3-5 bullets matadores identificados para uso múltiplo"
   - "[ ] Camada Psicológica aplicada (princípios de Cialdini/Warren marcados)"
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Escrever Bullet Points

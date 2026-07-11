@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F4 — Mapa de Decisão · B14 = NOVO squad **Pã** (Game Development)
 
 > **Bucket:** B14 (GAP — squad NOVO, tamanho maior)

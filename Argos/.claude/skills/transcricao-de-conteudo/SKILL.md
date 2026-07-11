@@ -1,6 +1,9 @@
 ---
 name: transcricao-de-conteudo
 description: Transcrever vídeos/áudios (TikTok/IG/YouTube/podcasts) em texto para o time de copy — extrair ganchos, estrutura, CTA e a linguagem do cliente. Use quando o pedido for "transcreve esse vídeo", "o que o concorrente fala nesse Reels", "pega a copy desse vídeo viral". Baixa o áudio com yt-dlp e transcreve com Speechmatics (melhor pt-BR) ou Deepgram (fallback). Handoff ao Caliope (copy).
+tipo: skill
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 # Habilidade: transcricao-de-conteudo

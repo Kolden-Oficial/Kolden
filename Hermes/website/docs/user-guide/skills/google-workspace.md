@@ -3,6 +3,9 @@ sidebar_position: 2
 sidebar_label: "Google Workspace"
 title: "Google Workspace — Gmail, Calendar, Drive, Sheets & Docs"
 description: "Send email, manage calendar events, search Drive, read/write Sheets, and access Docs — all through OAuth2-authenticated Google APIs"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Google Workspace Skill

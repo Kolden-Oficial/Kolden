@@ -2,6 +2,11 @@
 sidebar_position: 4
 title: "MCP (Model Context Protocol)"
 description: "Connect Hermes Agent to external tool servers via MCP — and control exactly which MCP tools Hermes loads"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # MCP (Model Context Protocol)

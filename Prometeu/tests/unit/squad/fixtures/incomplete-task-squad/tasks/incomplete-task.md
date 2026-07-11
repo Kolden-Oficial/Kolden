@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Incomplete Task
 
 This task is missing the required TASK-FORMAT-SPECIFICATION-V1 fields.

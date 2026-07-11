@@ -2,6 +2,9 @@
 sidebar_position: 6
 title: "Signal"
 description: "通过 signal-cli 守护进程将 Hermes Agent 设置为 Signal 机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Signal 配置

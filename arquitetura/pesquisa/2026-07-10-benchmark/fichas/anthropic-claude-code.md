@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: arquitetura
+up: "[[arquitetura/_MOC-arquitetura]]"
+relacionado:
+  - "[[arquitetura/pesquisa/2026-07-10-benchmark/fichas/_indice|_indice]]"
+---
+
 # Ficha — Anthropic: Claude Code (subagents, Skills, commands, plugins, MCP) + engenharia
 > Coletada em 2026-07-10 · Versão/commit da fonte: docs `code.claude.com` (features referenciadas até Claude Code v2.1.205) · repo `anthropics/skills` @ commit `9d2f1ae187231d8199c64b5b762e1bdf2244733d` · Status: ativo
 

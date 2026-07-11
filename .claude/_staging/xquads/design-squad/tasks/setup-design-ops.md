@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Current state assessed with bottlenecks identified"
   - "[ ] Design workflow defined with stages, activities, and gates"
   - "[ ] Metrics defined for ongoing health tracking"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/design-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: DesignOps Practice Setup

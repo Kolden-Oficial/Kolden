@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/README|README]]"
+---
+
 # How to Release a New Version
 
 > 🌐 **EN** | [PT](./pt/versioning-and-releases.md) | [ES](./es/versioning-and-releases.md)

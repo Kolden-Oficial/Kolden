@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # PM Adapters
 
 Project Management tool adapters for AIOX. Enables story synchronization with various PM tools.

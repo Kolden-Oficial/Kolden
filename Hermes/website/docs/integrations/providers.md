@@ -2,6 +2,11 @@
 title: "AI Providers"
 sidebar_label: "AI Providers"
 sidebar_position: 1
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/integrations/index|index]]"
 ---
 
 # AI Providers

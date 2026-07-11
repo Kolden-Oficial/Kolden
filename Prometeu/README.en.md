@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/README|README]]"
+---
+
 # AIOX Squad: Artificial Intelligence Orchestration eXperience
 
 > 🌍 **[English](README.en.md)** | [Português](README.md)

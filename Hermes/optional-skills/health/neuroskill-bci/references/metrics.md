@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/health/neuroskill-bci/references/api|api]]"
+  - "[[Hermes/optional-skills/health/neuroskill-bci/references/protocols|protocols]]"
+---
+
 # NeuroSkill Metric Definitions & Interpretation Guide
 
 > **⚠️ Research Use Only:** All metrics are experimental and derived from

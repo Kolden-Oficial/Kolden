@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/security/oss-forensics/references/evidence-types|evidence-types]]"
+  - "[[Hermes/optional-skills/security/oss-forensics/references/github-archive-guide|github-archive-guide]]"
+  - "[[Hermes/optional-skills/security/oss-forensics/references/recovery-techniques|recovery-techniques]]"
+---
+
 # Investigation Templates
 
 Pre-built hypothesis and investigation templates for common supply chain attack scenarios.

@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/architecture/_indice|_indice]]"
+---
+
 <!-- Traducción: ES | Original: /docs/en/architecture/mcp-system-diagrams.md | Sincronización: 2026-01-26 -->
 
 # MCP System Global - Diagramas de Arquitectura

@@ -2,6 +2,9 @@
 title: "流行网页设计 — 54 个真实设计系统（Stripe、Linear、Vercel）的 HTML/CSS"
 sidebar_label: "流行网页设计"
 description: "54 个真实设计系统（Stripe、Linear、Vercel）的 HTML/CSS"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

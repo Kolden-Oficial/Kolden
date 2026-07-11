@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/x1xhlol--system-prompts-and-models-of-ai-tools/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/x1xhlol--system-prompts-and-models-of-ai-tools/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # F2 — Segurança estática
 
 - **slug:** `x1xhlol--system-prompts-and-models-of-ai-tools`

@@ -1,3 +1,31 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/zh/agent-reference-guide|agent-reference-guide]]"
+  - "[[.claude/_staging/aiox/docs/zh/CHANGELOG|CHANGELOG]]"
+  - "[[.claude/_staging/aiox/docs/zh/code-of-conduct|code-of-conduct]]"
+  - "[[.claude/_staging/aiox/docs/zh/community|community]]"
+  - "[[.claude/_staging/aiox/docs/zh/contributing|contributing]]"
+  - "[[.claude/_staging/aiox/docs/zh/core-architecture|core-architecture]]"
+  - "[[.claude/_staging/aiox/docs/zh/docker-mcp-setup|docker-mcp-setup]]"
+  - "[[.claude/_staging/aiox/docs/zh/ENVIRONMENT|ENVIRONMENT]]"
+  - "[[.claude/_staging/aiox/docs/zh/FEATURE_PROCESS|FEATURE_PROCESS]]"
+  - "[[.claude/_staging/aiox/docs/zh/getting-started|getting-started]]"
+  - "[[.claude/_staging/aiox/docs/zh/git-workflow-guide|git-workflow-guide]]"
+  - "[[.claude/_staging/aiox/docs/zh/GLOSSARY|GLOSSARY]]"
+  - "[[.claude/_staging/aiox/docs/zh/GUIDING-PRINCIPLES|GUIDING-PRINCIPLES]]"
+  - "[[.claude/_staging/aiox/docs/zh/how-to-contribute-with-pull-requests|how-to-contribute-with-pull-requests]]"
+  - "[[.claude/_staging/aiox/docs/zh/meta-agent-commands|meta-agent-commands]]"
+  - "[[.claude/_staging/aiox/docs/zh/security|security]]"
+  - "[[.claude/_staging/aiox/docs/zh/security-best-practices|security-best-practices]]"
+  - "[[.claude/_staging/aiox/docs/zh/TRANSLATION-PLAN|TRANSLATION-PLAN]]"
+  - "[[.claude/_staging/aiox/docs/zh/troubleshooting|troubleshooting]]"
+  - "[[.claude/_staging/aiox/docs/zh/uninstallation|uninstallation]]"
+  - "[[.claude/_staging/aiox/docs/zh/versioning-and-releases|versioning-and-releases]]"
+---
+
 <!--
   翻译：zh-CN（简体中文）
   原文：/docs/README.md

@@ -1,6 +1,12 @@
 ---
 name: Bug report
 about: Report a problem to help us improve
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapy/.github/ISSUE_TEMPLATE/feature_request|feature_request]]"
+  - "[[Argos/motor/scrapy/.github/ISSUE_TEMPLATE/question|question]]"
 ---
 
 <!--

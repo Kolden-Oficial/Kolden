@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # greet
 
 Gera a saudação contextual do agente usando a infraestrutura do GreetingBuilder.

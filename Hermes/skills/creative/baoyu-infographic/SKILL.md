@@ -9,6 +9,11 @@ metadata:
   hermes:
     tags: [infographic, visual-summary, creative, image-generation]
     homepage: https://github.com/JimLiu/baoyu-skills#baoyu-infographic
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/baoyu-infographic/PORT_NOTES|PORT_NOTES]]"
 ---
 
 # Infographic Generator

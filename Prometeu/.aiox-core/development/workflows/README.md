@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Workflows do AIOX
 
 Este diretório contém as definições de workflow do framework Synkra AIOX. Workflows definem processos de múltiplos passos que podem ser executados pelos agentes do AIOX.

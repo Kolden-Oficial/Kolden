@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Olimpo
+up: "[[Olimpo/_MOC-olimpo]]"
+---
+
 # Catálogo de Habilidades — Olimpo
 
 Índice das **15 habilidades** do Olimpo (camada executiva — Zeus + os 8 deuses sobre o Contrato de Missão). Categoria E3 canonizada METODO v1.1: skills-como-tools cross-squad. Invocáveis internamente pelos 8 executivos + externamente por outros squads que precisem de framework executivo.

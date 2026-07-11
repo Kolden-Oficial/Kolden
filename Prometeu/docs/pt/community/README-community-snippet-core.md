@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/pt/community/README-community-snippet-mcp|README-community-snippet-mcp]]"
+  - "[[Prometeu/docs/pt/community/README-community-snippet-squads|README-community-snippet-squads]]"
+---
+
 <!-- Tradução: PT-BR | Original: /docs/en/community/README-community-snippet-core.md | Sincronização: 2026-01-26 -->
 
 # Seção de Comunidade do README - aiox-core

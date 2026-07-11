@@ -2,6 +2,11 @@
 sidebar_position: 10
 title: "Skins & Themes"
 description: "Customize the Hermes CLI with built-in and user-defined skins"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # Skins & Themes

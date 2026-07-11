@@ -2,6 +2,9 @@
 title: "Agentmail — Give the agent its own dedicated email inbox via AgentMail"
 sidebar_label: "Agentmail"
 description: "Give the agent its own dedicated email inbox via AgentMail"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Arquivo pré-absorção Kolden — Snapshots MEMORY AIOX
 
 > **Origem:** vendor SynkraAI/aiox-core commit `77265d5` importado 2026-06-19 (`Prometeu/_origem.md`).

@@ -7,6 +7,11 @@ status: vigente
 atualizado-em: 2026-07-04
 paradigmas: [paradigma-chain-of-thought, paradigma-react, paradigma-tree-of-thoughts, paradigma-autogpt, paradigma-langchain, paradigma-langgraph, paradigma-crewai, paradigma-autogen, paradigma-mcp]
 frameworks_derivados: [arquitetura-de-agents-kolden]
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/linhagens/_indice|_indice]]"
 ---
 
 # Linhagem: Arquiteturas de agents por paradigma — de CoT (2022) a MCP (2024)

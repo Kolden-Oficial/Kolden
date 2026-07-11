@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F3 — Inventário de capacidades · `msitarzewski--agency-agents@a597cb6` — divisão `specialized/` (catch-all)
 
 Sub-roteamento na F3 (decisão Q3 do Ronan): cada agente recebe um `sub_dominio` para ser roteado a squad existente ou ROADMAP na F4.

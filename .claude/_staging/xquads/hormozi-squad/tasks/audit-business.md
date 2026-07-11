@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Revenue equation scored with all 4 components"
   - "[ ] #1 constraint clearly identified"
   - "[ ] 3 prioritized recommendations with revenue impact"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/hormozi-squad/tasks/_indice|_indice]]"
 ---
 
 # Task: Audit Business

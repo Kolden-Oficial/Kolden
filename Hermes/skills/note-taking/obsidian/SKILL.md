@@ -2,6 +2,9 @@
 name: obsidian
 description: Read, search, create, and edit notes in the Obsidian vault.
 platforms: [linux, macos, windows]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Obsidian Vault

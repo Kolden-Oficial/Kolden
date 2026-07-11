@@ -6,6 +6,9 @@ description: >
   cadência de entrega, dependências). Gatilhos: "qual metodologia usar", "ágil ou waterfall",
   "scrum ou kanban", "como organizar o projeto", "rito de gestão". Dono: gerente-de-projeto
   (com product-manager quando é produto).
+tipo: skill
+area: Cairos
+up: "[[Cairos/_MOC-cairos]]"
 ---
 
 # Seleção de Metodologia

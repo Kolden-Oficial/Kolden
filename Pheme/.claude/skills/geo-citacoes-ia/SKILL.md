@@ -12,6 +12,9 @@ description: >
   (infra) — aqui foca em MEDIÇÃO e conteúdo.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # GEO / Citações de IA — do "otimizado" ao "citado"

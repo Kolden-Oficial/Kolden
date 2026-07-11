@@ -2,6 +2,11 @@
 sidebar_position: 8
 title: "Extending the CLI"
 description: "Build wrapper CLIs that extend the Hermes TUI with custom widgets, keybindings, and layout changes"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/developer-guide/_indice|_indice]]"
 ---
 
 # Extending the CLI

@@ -2,6 +2,9 @@
 title: "Qdrant Vector Search — 用于 RAG 和语义搜索的高性能向量相似度搜索引擎"
 sidebar_label: "Qdrant Vector Search"
 description: "用于 RAG 和语义搜索的高性能向量相似度搜索引擎"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

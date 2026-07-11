@@ -3,6 +3,9 @@ title: 视觉与图像粘贴
 description: 将剪贴板中的图像粘贴到 Hermes CLI，进行多模态视觉分析。
 sidebar_label: 视觉与图像粘贴
 sidebar_position: 7
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 视觉与图像粘贴

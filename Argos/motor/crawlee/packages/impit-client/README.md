@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/crawlee/packages/impit-client/CHANGELOG|CHANGELOG]]"
+---
+
 # @crawlee/impit-client
 
 This package provides a Crawlee-compliant `HttpClient` interface for the [`impit`](https://www.npmjs.com/package/impit) package.

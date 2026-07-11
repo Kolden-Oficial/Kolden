@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/development/adaptive_storage_system|adaptive_storage_system]]"
+---
+
 # Using Scrapling's custom types
 
 > You can take advantage of the custom-made types for Scrapling and use them outside the library if you want. It's better than copying their code, after all :)

@@ -26,6 +26,11 @@ Checklist:
   - "[ ] Frame control strategy defined for each section"
   - "[ ] Intrigue + tension arc maintained throughout"
   - "[ ] Psychological Layer applied (Cialdini/Warren principles tagged)"
+tipo: nota
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+relacionado:
+  - "[[.claude/_staging/xquads/copy-master/tasks/_indice|_indice]]"
 ---
 
 # Task: Write Pitch Deck Copy

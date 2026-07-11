@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Referência de Formato do Manifest e do Arquivo de Domain do SYNAPSE
 
 Referência para o formato KEY=VALUE usado pelo parser domain-loader do SYN-1.

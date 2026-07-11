@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # AIOX Core Module
 
 > Central runtime module providing essential framework functionality for Synkra AIOX.

@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/metodo-onda-1/1.6-metodo-kolden/diff-agents-md|diff-agents-md]]"
+  - "[[Caos/registros/metodo-onda-1/1.6-metodo-kolden/emendas-liceu|emendas-liceu]]"
+  - "[[Caos/registros/metodo-onda-1/1.6-metodo-kolden/proposta-dike-instanciacao|proposta-dike-instanciacao]]"
+  - "[[Caos/registros/metodo-onda-1/1.6-metodo-kolden/sumario-executivo|sumario-executivo]]"
+---
+
 # Relatório de Consolidação — Como os padrões das Sub-ondas 1.1-1.5 entraram no METODO-KOLDEN.md v1.0
 
 > **Contrato:** `m-20260706-metodo-kolden` · Sub-onda 1.6

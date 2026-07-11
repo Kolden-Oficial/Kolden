@@ -19,6 +19,9 @@ squads_que_usam: [pluto, aglaia, caliope]
 # --- federação (preenchido pelo bibliotecario) ---
 persona_canonica: null
 confianca_da_fonte: media
+tipo: nota
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
 ---
 
 # Jacques Lacan — Dossiê de Mente

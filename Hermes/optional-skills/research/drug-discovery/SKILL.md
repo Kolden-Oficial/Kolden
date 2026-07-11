@@ -16,6 +16,9 @@ metadata:
     tags: [science, chemistry, pharmacology, research, health]
 prerequisites:
   commands: [curl, python3]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Drug Discovery & Pharmaceutical Research

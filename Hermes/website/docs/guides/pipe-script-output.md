@@ -2,6 +2,11 @@
 sidebar_position: 12
 title: "Pipe Script Output to Messaging Platforms"
 description: "Send text from any shell script, cron job, CI hook, or monitoring daemon to Telegram, Discord, Slack, Signal, and other platforms using `hermes send`."
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # Pipe Script Output to Messaging Platforms

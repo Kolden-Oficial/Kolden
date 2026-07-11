@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/guides/README|README]]"
+---
+
 # AIOX Service Discovery Guide
 
 > **EN** | [PT](../pt/guides/service-discovery.md) | [ES](../es/guides/service-discovery.md)

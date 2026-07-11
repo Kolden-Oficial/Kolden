@@ -2,6 +2,9 @@
 title: "Blackbox — 将编码任务委托给 Blackbox AI CLI 代理"
 sidebar_label: "Blackbox"
 description: "将编码任务委托给 Blackbox AI CLI 代理"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

@@ -2,6 +2,11 @@
 sidebar_position: 14
 title: "API Server"
 description: "Expose hermes-agent as an OpenAI-compatible API for any frontend"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/user-guide/features/_indice|_indice]]"
 ---
 
 # API Server

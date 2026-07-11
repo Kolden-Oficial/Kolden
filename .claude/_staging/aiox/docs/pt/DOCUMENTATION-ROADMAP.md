@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/pt/README|README]]"
+---
+
 <!--
   Tradução: PT-BR
   Original: /docs/DOCUMENTATION-ROADMAP.md

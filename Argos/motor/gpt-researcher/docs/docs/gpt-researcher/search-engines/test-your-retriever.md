@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/gpt-researcher/search-engines/search-engines|search-engines]]"
+---
+
 # Testing your Retriever
 
 To test your retriever, you can use the following code snippet. The script will search for a sub-query and display the search results.

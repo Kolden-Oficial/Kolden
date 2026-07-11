@@ -1,3 +1,9 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+---
+
 # RELATÓRIO DA CAMPANHA — F6 EXAUSTIVO da quarentena (2026-07-02)
 
 > **Sessão:** raiz `C:\Kolden` · **Modo:** plan-mode → exec autônoma

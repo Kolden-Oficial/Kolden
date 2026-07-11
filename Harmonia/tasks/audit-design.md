@@ -25,6 +25,11 @@ Checklist:
   - "[ ] Todas as três lentes avaliadas com notas e achados específicos"
   - "[ ] Top 3-5 melhorias de maior alavancagem identificadas"
   - "[ ] Roadmap em fases criado com marcos"
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Auditoria de Design & Avaliação de Maturidade

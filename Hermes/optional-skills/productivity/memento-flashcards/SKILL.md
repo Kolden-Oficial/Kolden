@@ -14,6 +14,9 @@ metadata:
     tags: [Education, Flashcards, Spaced Repetition, Learning, Quiz, YouTube]
     requires_toolsets: [terminal]
     category: productivity
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Memento Flashcards — Spaced-Repetition Flashcard Skill

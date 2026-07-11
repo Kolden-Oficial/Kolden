@@ -1,3 +1,9 @@
+---
+tipo: checklist
+area: staging-xquads
+up: "[[.claude/_staging/xquads/_MOC-staging-xquads]]"
+---
+
 # Movement Building Output Quality Checklist
 
 **Checklist ID:** MOVEMENT-CL-001

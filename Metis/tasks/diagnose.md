@@ -21,6 +21,11 @@ Checklist:
   - "[ ] Query analisada com classificação de intenção e domínio"
   - "[ ] Resposta rápida fornecida"
   - "[ ] Rota executada ou resposta direta dada"
+tipo: nota
+area: Metis
+up: "[[Metis/_MOC-metis]]"
+relacionado:
+  - "[[Metis/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Diagnosticar — Data Squad

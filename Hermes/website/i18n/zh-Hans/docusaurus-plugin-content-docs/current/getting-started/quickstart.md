@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: "快速入门"
 description: "与 Hermes Agent 的第一次对话——从安装到开始聊天，5 分钟内完成"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 快速入门

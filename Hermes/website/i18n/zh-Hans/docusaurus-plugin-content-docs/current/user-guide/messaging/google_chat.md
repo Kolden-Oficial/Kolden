@@ -2,6 +2,9 @@
 sidebar_position: 12
 title: "Google Chat"
 description: "使用 Cloud Pub/Sub 将 Hermes Agent 设置为 Google Chat 机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Google Chat 设置

@@ -1,3 +1,12 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/kepano--obsidian-skills/inventario-de-capacidades|inventario-de-capacidades]]"
+  - "[[Caos/registros/absorcao/kepano--obsidian-skills/mapa-de-decisao|mapa-de-decisao]]"
+---
+
 # Segurança estática — kepano--obsidian-skills
 
 - **slug:** kepano--obsidian-skills

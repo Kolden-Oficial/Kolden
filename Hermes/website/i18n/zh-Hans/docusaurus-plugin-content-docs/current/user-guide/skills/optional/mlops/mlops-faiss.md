@@ -2,6 +2,9 @@
 title: "Faiss — Facebook 用于高效相似性搜索和密集向量聚类的库"
 sidebar_label: "Faiss"
 description: "Facebook 用于高效相似性搜索和密集向量聚类的库"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

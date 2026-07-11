@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/legal/privacy|privacy]]"
+  - "[[.claude/_staging/aiox/docs/legal/terms|terms]]"
+---
+
 # License Clarification (Core vs Pro)
 
 **Last updated:** 2026-02-15

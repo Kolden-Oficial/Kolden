@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/mlops/peft/references/advanced-usage|advanced-usage]]"
+---
+
 # PEFT Troubleshooting Guide
 
 ## Installation Issues

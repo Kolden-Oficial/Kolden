@@ -2,6 +2,9 @@
 title: "Imessage — 通过 macOS 上的 imsg CLI 发送和接收 iMessages/SMS"
 sidebar_label: "Imessage"
 description: "通过 macOS 上的 imsg CLI 发送和接收 iMessages/SMS"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

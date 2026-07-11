@@ -2,6 +2,9 @@
 sidebar_position: 12
 title: "Cron 故障排查"
 description: "诊断并修复常见的 Hermes cron 问题——任务未触发、投递失败、skill 加载错误及性能问题"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Cron 故障排查

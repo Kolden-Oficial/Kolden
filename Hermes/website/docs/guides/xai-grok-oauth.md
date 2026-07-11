@@ -2,6 +2,11 @@
 sidebar_position: 16
 title: "xAI Grok OAuth (SuperGrok / X Premium+)"
 description: "Sign in with your SuperGrok or X Premium+ subscription to use Grok models in Hermes Agent — no API key required"
+tipo: doc-site
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/website/docs/guides/_indice|_indice]]"
 ---
 
 # xAI Grok OAuth (SuperGrok / X Premium+)

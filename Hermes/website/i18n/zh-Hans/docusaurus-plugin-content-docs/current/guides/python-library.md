@@ -2,6 +2,9 @@
 sidebar_position: 5
 title: "将 Hermes 作为 Python 库使用"
 description: "将 AIAgent 嵌入你自己的 Python 脚本、Web 应用或自动化流水线——无需 CLI"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 将 Hermes 作为 Python 库使用

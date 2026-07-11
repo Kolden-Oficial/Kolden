@@ -2,6 +2,9 @@
 title: "Fastmcp — 使用 FastMCP 在 Python 中构建、测试、检查、安装和部署 MCP 服务器"
 sidebar_label: "Fastmcp"
 description: "使用 FastMCP 在 Python 中构建、测试、检查、安装和部署 MCP 服务器"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

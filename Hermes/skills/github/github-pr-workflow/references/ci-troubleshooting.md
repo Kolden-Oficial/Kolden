@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/github/github-pr-workflow/references/conventional-commits|conventional-commits]]"
+---
+
 # CI Troubleshooting Quick Reference
 
 Common CI failure patterns and how to diagnose them from the logs.

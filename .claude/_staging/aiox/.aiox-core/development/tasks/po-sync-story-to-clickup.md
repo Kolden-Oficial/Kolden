@@ -3,6 +3,11 @@ tools:
   - clickup  # Required for ClickUp synchronization
 checklists:
   - po-master-checklist.md
+tipo: nota
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/.aiox-core/development/tasks/_indice|_indice]]"
 ---
 
 # sync-story-to-clickup

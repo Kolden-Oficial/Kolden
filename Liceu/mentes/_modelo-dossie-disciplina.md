@@ -36,6 +36,10 @@ frameworks_kolden: [<slug-framework>]      # FK para frameworks/<slug>/
 squads_que_usam: [<squad>, ...]            # ex.: [aletheia, caliope, aglaia]
 # --- federação (preenchido pelo bibliotecario) ---
 confianca_da_fonte: <alta | media | baixa>
+area: Liceu
+up: "[[Liceu/_MOC-liceu]]"
+relacionado:
+  - "[[Liceu/mentes/_modelo-dossie|_modelo-dossie]]"
 ---
 
 # <Nome da Disciplina> — Dossiê de Disciplina

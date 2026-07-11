@@ -1,3 +1,14 @@
+---
+tipo: registro
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/registros/metodo-onda-2/diff-cirurgico|diff-cirurgico]]"
+  - "[[Hermes/registros/metodo-onda-2/matriz-de-conformidade|matriz-de-conformidade]]"
+  - "[[Hermes/registros/metodo-onda-2/verificacao-dike|verificacao-dike]]"
+  - "[[Hermes/registros/metodo-onda-2/verificacao-dike-delta|verificacao-dike-delta]]"
+---
+
 # Sumário Executivo — Onda 2 do METODO Kolden (Hermes)
 
 > **Contrato-mãe:** `m-20260706-metodo-kolden` (Onda 2, Grupo A, squad-alvo Hermes).

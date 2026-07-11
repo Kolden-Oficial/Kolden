@@ -4,6 +4,11 @@ responsavel: "@david-bland"
 responsavel_type: Agent
 atomic_layer: Task
 elicit: false
+tipo: nota
+area: Aletheia
+up: "[[Aletheia/_MOC-aletheia]]"
+relacionado:
+  - "[[Aletheia/tasks/_indice|_indice]]"
 ---
 
 # Tarefa: Mapear Assunções + Lean Canvas — Aletheia

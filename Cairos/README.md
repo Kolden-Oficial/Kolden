@@ -1,3 +1,9 @@
+---
+tipo: nota
+area: Cairos
+up: "[[Cairos/_MOC-cairos]]"
+---
+
 # Cairós — Squad de PMO & Gestão de Projetos
 
 > `status: semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)`

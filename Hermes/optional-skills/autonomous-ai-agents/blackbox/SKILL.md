@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [Coding-Agent, Blackbox, Multi-Agent, Judge, Multi-Model]
     related_skills: [claude-code, codex, hermes-agent]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Blackbox CLI

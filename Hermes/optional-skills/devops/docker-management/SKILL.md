@@ -10,6 +10,9 @@ metadata:
     tags: [docker, containers, devops, infrastructure, compose, images, volumes, networks, debugging]
     category: devops
     requires_toolsets: [terminal]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Docker Management

@@ -2,6 +2,9 @@
 title: "Macos Computer Use"
 sidebar_label: "Macos Computer Use"
 description: "在后台驱动 macOS 桌面——截图、鼠标、键盘、滚动、拖拽——不抢占用户的光标、键盘焦点或 Space"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

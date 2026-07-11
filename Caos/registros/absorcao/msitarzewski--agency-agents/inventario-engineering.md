@@ -1,3 +1,11 @@
+---
+tipo: registro
+area: Caos
+up: "[[Caos/_MOC-caos]]"
+relacionado:
+  - "[[Caos/registros/absorcao/msitarzewski--agency-agents/_indice|_indice]]"
+---
+
 # F3 — Inventário de capacidades · `msitarzewski--agency-agents@a597cb6` — divisão `engineering/`
 
 Granularidade: 1 base por agente + técnicas transferíveis salientes (1-2 por agente em média). Total esperado: 33 (bases) + ~30-65 (técnicas) = 65-100 IDs.

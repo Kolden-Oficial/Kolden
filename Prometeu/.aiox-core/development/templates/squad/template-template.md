@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/templates/squad/agent-template|agent-template]]"
+  - "[[Prometeu/.aiox-core/development/templates/squad/checklist-template|checklist-template]]"
+  - "[[Prometeu/.aiox-core/development/templates/squad/task-template|task-template]]"
+---
+
 # Template {{COMPONENTNAME}}
 
 > {{DESCRIPTION}}

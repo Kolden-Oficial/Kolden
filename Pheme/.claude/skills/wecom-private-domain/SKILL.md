@@ -11,6 +11,9 @@ description: >
   cobre publishing OA); private domain é CRM operacional.
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # WeCom Private Domain — SCRM chinês em YAML

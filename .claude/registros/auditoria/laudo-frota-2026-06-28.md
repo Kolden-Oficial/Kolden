@@ -1,3 +1,9 @@
+---
+tipo: registro
+area: kolden-os
+up: "[[.claude/_MOC-kolden-os]]"
+---
+
 # LAUDO DE VISTORIA — Chassi da Frota de Agentes da Kolden
 
 > **Auditor-Chefe** · vistoria de obra, viga por viga · **2026-06-28**

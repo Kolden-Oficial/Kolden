@@ -1,3 +1,13 @@
+---
+tipo: projeto
+projeto: brw-movelaria
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/pesquisa/dossie-concorrentes|dossie-concorrentes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/pesquisa/prospeccao-bahia|prospeccao-bahia]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/pesquisa/prospeccao-studios-bahia|prospeccao-studios-bahia]]"
+---
+
 # BRW Movelaria — Prospecção de Hotelaria na Bahia (alvos mobiliáveis)
 
 > **Status:** v1 / inteligência-de-mercado — **NÃO é lista de contatos qualificados; é mapa de oportunidade**

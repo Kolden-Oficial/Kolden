@@ -11,6 +11,9 @@ description: >
   (WeChat OA).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Zhihu — Q&A authority + Columns + thought leadership

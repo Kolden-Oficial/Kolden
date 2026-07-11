@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/skills/creative/touchdesigner-mcp/references/_indice|_indice]]"
+---
+
 # External Data Reference
 
 Network and device I/O — HTTP requests, WebSockets, MQTT, Serial, TCP, UDP. For MIDI/OSC specifically see `midi-osc.md`.

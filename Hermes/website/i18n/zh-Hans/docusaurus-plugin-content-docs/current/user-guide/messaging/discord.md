@@ -2,6 +2,9 @@
 sidebar_position: 3
 title: "Discord"
 description: "将 Hermes Agent 设置为 Discord 机器人"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Discord 设置

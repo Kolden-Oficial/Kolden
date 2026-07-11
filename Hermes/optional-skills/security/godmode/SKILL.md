@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [jailbreak, red-teaming, G0DM0D3, Parseltongue, GODMODE, uncensoring, safety-bypass, prompt-engineering, L1B3RT4S]
     related_skills: [obliteratus]
+tipo: skill
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # G0DM0D3 Jailbreaking Skill

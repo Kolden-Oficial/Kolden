@@ -1,6 +1,11 @@
 ---
 search:
   exclude: true
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/scrapling/docs/api-reference/_indice|_indice]]"
 ---
 
 # Selector Class

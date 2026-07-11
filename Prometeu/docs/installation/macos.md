@@ -1,3 +1,11 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/installation/README|README]]"
+---
+
 # macOS Installation Guide for Synkra AIOX
 
 > 🌐 **EN** | [PT](../pt/installation/macos.md) | [ES](../es/installation/macos.md)

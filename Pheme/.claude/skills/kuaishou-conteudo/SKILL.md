@@ -11,6 +11,9 @@ description: >
   `douyin-conteudo`).
 metadata:
   type: reference
+tipo: skill
+area: Pheme
+up: "[[Pheme/_MOC-pheme]]"
 ---
 
 # Kuaishou — 老铁 grassroots + 下沉 lower-tier + community-first

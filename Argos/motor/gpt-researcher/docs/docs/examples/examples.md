@@ -1,3 +1,12 @@
+---
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
+relacionado:
+  - "[[Argos/motor/gpt-researcher/docs/docs/examples/detailed_report|detailed_report]]"
+  - "[[Argos/motor/gpt-researcher/docs/docs/examples/hybrid_research|hybrid_research]]"
+---
+
 # Simple Run
 
 ### Run PIP Package

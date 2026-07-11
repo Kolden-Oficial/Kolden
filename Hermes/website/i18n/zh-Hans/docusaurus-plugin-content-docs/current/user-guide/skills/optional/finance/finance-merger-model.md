@@ -2,6 +2,9 @@
 title: "并购模型 — 在 Excel 中构建增厚/摊薄（并购）模型 — 备考损益表、协同效应、融资结构、每股收益影响"
 sidebar_label: "Merger Model"
 description: "在 Excel 中构建增厚/摊薄（并购）模型 — 备考损益表、协同效应、融资结构、每股收益影响"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}

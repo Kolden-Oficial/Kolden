@@ -4,6 +4,9 @@ title: The Future of Research is Hybrid
 authors: [assafe]
 tags: [hybrid-research, gpt-researcher, langchain, langgraph, tavily]
 image: https://miro.medium.com/v2/resize:fit:1400/1*NgVIlZVSePqrK5EkB1wu4Q.png
+tipo: doc
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 ![Hyrbrid Research with GPT Researcher](https://miro.medium.com/v2/resize:fit:1400/1*MaauY1ecsD05nL8JqW0Zdg.jpeg)
 

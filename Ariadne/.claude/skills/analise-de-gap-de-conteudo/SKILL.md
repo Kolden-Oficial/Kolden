@@ -9,6 +9,9 @@ description: >
   É uma FRENTE NOVA da Ariadne (não estava no esqueleto). Gatilhos: "gap de conteúdo",
   "content gap", "página de comparação", "X vs Y", "versus", "alternativas a", "página de
   alternativas", "melhores ferramentas de", "comparar concorrentes". Copy → Caliope.
+tipo: skill
+area: Ariadne
+up: "[[Ariadne/_MOC-ariadne]]"
 ---
 
 # Análise de Gap de Conteúdo & Páginas de Comparação

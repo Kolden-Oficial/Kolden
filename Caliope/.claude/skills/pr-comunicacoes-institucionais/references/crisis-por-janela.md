@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: Caliope
+up: "[[Caliope/_MOC-caliope]]"
+relacionado:
+  - "[[Caliope/.claude/skills/pr-comunicacoes-institucionais/references/release-molde|release-molde]]"
+---
+
 # Crisis playbook — statements por janela
 
 ## Janela 1 — 0 a 30 minutos

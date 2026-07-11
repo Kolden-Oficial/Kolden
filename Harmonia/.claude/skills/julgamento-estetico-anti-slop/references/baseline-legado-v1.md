@@ -1,3 +1,13 @@
+---
+tipo: nota
+area: Harmonia
+up: "[[Harmonia/_MOC-harmonia]]"
+relacionado:
+  - "[[Harmonia/.claude/skills/julgamento-estetico-anti-slop/references/banco-de-ai-tells|banco-de-ai-tells]]"
+  - "[[Harmonia/.claude/skills/julgamento-estetico-anti-slop/references/pre-flight-visual|pre-flight-visual]]"
+  - "[[Harmonia/.claude/skills/julgamento-estetico-anti-slop/references/presets-de-direcao|presets-de-direcao]]"
+---
+
 # Baseline Legado v1 — Diff Histórico
 
 > Referência histórica. O conteúdo canônico vive no `SKILL.md` (que corresponde

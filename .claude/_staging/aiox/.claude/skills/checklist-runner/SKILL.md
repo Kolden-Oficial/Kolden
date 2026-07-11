@@ -6,6 +6,9 @@ description: |
   Supports YOLO (autonomous) and interactive modes with pass/fail/partial verdicts.
 user-invocable: true
 argument-hint: "[checklist-name] [--mode yolo|interactive]"
+tipo: skill
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
 ---
 
 # Checklist Runner

@@ -14,6 +14,11 @@ Checklist:
   - "[ ] Gather information"
   - "[ ] Compile findings"
   - "[ ] List sources"
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+relacionado:
+  - "[[Prometeu/docs/examples/squads/multi-agent-squad/tasks/write-report|write-report]]"
 ---
 
 # *research / *find

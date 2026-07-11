@@ -2,6 +2,9 @@
 sidebar_position: 13
 title: "Webhooks"
 description: "接收来自 GitHub、GitLab 等服务的事件以触发 Hermes agent 运行"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # Webhooks

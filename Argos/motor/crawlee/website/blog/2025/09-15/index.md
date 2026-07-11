@@ -3,6 +3,9 @@ slug: crawlee-for-python-v1
 title: Crawlee for Python v1
 description: Announcing the Crawlee for Python v1.0 release.
 authors: [VladaD]
+tipo: doc-site
+area: Argos
+up: "[[Argos/_MOC-argos]]"
 ---
 
 We launched Crawlee for Python in beta mode in [July 2024](https://www.crawlee.dev/blog/launching-crawlee-python). Over the past year, we received many early adopters, tremendous interest in the library from the Python community, more than 6000 stars on GitHub, a dozen contributors, and many feature requests.

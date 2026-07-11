@@ -1,3 +1,9 @@
+---
+tipo: doc
+area: Prometeu
+up: "[[Prometeu/_MOC-prometeu]]"
+---
+
 # Squad with Custom Tools Example
 
 Demonstrates how to integrate custom JavaScript tools into a squad.

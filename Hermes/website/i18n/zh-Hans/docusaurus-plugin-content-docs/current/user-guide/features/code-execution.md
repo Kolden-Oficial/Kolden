@@ -2,6 +2,9 @@
 sidebar_position: 8
 title: "代码执行"
 description: "通过 RPC 工具访问实现程序化 Python 执行——将多步骤工作流压缩至单次对话轮次"
+tipo: traducao
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
 ---
 
 # 代码执行（程序化工具调用）

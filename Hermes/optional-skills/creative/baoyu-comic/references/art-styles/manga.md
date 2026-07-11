@@ -1,3 +1,15 @@
+---
+tipo: nota
+area: Hermes
+up: "[[Hermes/_MOC-hermes]]"
+relacionado:
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/chalk|chalk]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/ink-brush|ink-brush]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/ligne-claire|ligne-claire]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/minimalist|minimalist]]"
+  - "[[Hermes/optional-skills/creative/baoyu-comic/references/art-styles/realistic|realistic]]"
+---
+
 # manga
 
 日漫画风 - Anime/manga aesthetics with expressive characters

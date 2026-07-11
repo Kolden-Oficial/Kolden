@@ -1,3 +1,16 @@
+---
+tipo: doc
+area: staging-aiox
+up: "[[.claude/_staging/aiox/_MOC-staging-aiox]]"
+relacionado:
+  - "[[.claude/_staging/aiox/docs/es/installation/faq|faq]]"
+  - "[[.claude/_staging/aiox/docs/es/installation/linux|linux]]"
+  - "[[.claude/_staging/aiox/docs/es/installation/macos|macos]]"
+  - "[[.claude/_staging/aiox/docs/es/installation/troubleshooting|troubleshooting]]"
+  - "[[.claude/_staging/aiox/docs/es/installation/v4-quick-start|v4-quick-start]]"
+  - "[[.claude/_staging/aiox/docs/es/installation/windows|windows]]"
+---
+
 <!--
   Traducción: ES
   Original: /docs/installation/README.md
