@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/precisso-do-passo-a-passo-desde-o-inicio-tanto-p|precisso-do-passo-a-passo-desde-o-inicio-tanto-p]]"
+---
+
 # Setup Meta Ads — passo a passo (litoral catarinense)
 
 Guia prático pra colocar o ad no ar em 60-90 min. Assume conhecimento zero.

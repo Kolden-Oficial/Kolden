@@ -8,6 +8,12 @@ status: rascunho
 atualizado-em: 2026-06-25
 relacionados: [metricas-e-okrs, juridico-e-compliance, planejamento-estrategico, area-receita, ofertas-e-produtos]
 fontes: [drive--00-gestao-empresarial, drive--02-comercial]
+tipo: nota
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Kolden/operacao/planejamento-estrategico|planejamento estratégico]]"
 ---
 
 # Processos e SOPs

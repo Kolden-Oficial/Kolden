@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/08-brandbook/dossie-verbal|dossie-verbal]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/08-brandbook/guia-de-estilo-master|guia-de-estilo-master]]"
+---
+
 # Perguntas para a call — respostas + decisões visuais derivadas
 
 **Status:** ✅ Respondido em 2026-07-02.

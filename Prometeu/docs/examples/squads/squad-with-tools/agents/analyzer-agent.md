@@ -1,3 +1,9 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+---
+
 # analyze-agent
 
 ACTIVATION-NOTICE: Text analysis agent with custom tool integration.

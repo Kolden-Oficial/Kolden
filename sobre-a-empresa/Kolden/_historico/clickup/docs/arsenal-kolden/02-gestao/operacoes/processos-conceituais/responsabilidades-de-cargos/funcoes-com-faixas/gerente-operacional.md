@@ -10,6 +10,13 @@ edited_by: 42917002
 archived: true
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-683
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/funcoes-com-faixas/analista-de-marketing|analista-de-marketing]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/funcoes-com-faixas/atendimento|atendimento]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/funcoes-com-faixas/copywriter-social-media-web-designer|copywriter-social-media-web-designer]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/funcoes-com-faixas/gestor-de-trafego|gestor-de-trafego]]"
 ---
 
 # Gerente Operacional — responsabilidades e remuneração

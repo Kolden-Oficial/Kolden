@@ -9,6 +9,9 @@ keywords: "('Serverless Postgres', 'Lakebase architecture', 'Compute autoscaling
 summary: "Neon provides a modern, **serverless Postgres platform** that reimagines database management by using a **lakebase architecture** to split storage from compute. This technical separation allows the system to offer **instant provisioning** and **autoscaling**, where resources automatically expand during high traffic and shrink to zero when not in use. The documentation emphasizes a **usage-based billing model** and the removal of infrastructure maintenance, allowing developers to focus entirely on their application logic. Furthermore, the text clarifies that while the platform is \"serverless,\" it remains **fully compatible** with the traditional PostgreSQL ecosystem and provides predictable cost controls through user-defined scaling limits."
 extraido_em: "2026-06-30T16:21:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Serverless - Neon Docs

@@ -1,3 +1,13 @@
+---
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/mcp-solomon/registros/retificacao-mcp-oficial-2026-07-01|retificacao-mcp-oficial-2026-07-01]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/mcp-solomon/registros/ritual-fases-0-2|ritual-fases-0-2]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/mcp-solomon/registros/ritual-fases-8-encerramento|ritual-fases-8-encerramento]]"
+---
+
 # Ritual do Caos — MCP Íris (log das Fases 3-7)
 
 ## Fase 3 — Arquitetura (SOLO)

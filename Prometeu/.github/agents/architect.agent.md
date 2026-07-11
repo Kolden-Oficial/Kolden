@@ -5,6 +5,11 @@ description: 'Use for system architecture (fullstack, backend, frontend, infrast
 NOT for: Market research or competitive analysis → Use @analyst. PRD creation or product strategy → Use @pm. Database schema design or query optimization → Use @data-engineer.
 '
 tools: ['read', 'edit', 'search', 'execute']
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.github/agents/_indice|_indice]]"
 ---
 
 # 🏛️ Aria Agent (@architect)

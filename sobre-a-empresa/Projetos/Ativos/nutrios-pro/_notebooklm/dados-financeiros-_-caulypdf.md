@@ -9,6 +9,10 @@ keywords: "('Financial data', 'Cash flow control', 'Transaction management', 'Ba
 summary: "This document serves as a digital **financial management interface** designed to help business owners oversee their **monetary cash flow**. By providing specific fields for **tracking income and expenses**, the layout allows users to maintain a clear picture of their **current net balance**. The system emphasizes organization through **searchable categories and date filters**, which simplify the process of auditing past transactions. Ultimately, the tool functions as a **centralized ledger** intended to transform raw fiscal data into an orderly record of a company's **economic health**."
 extraido_em: "2026-06-30T16:08:46Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # Dados financeiros _ Cauly.pdf

@@ -12,6 +12,12 @@ depende_de:
   - "conversion-actions.md §2 (Camada 2 OCI via gclid)"
   - "clausula-ghl-sombra-thiago.md (bloqueio jurídico)"
   - "ROADMAP.md §0 Decisão D2"
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/conversion-actions|conversion-actions]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/estrategia-vilela-2026-07|estrategia-vilela-2026-07]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/ROADMAP|ROADMAP]]"
 ---
 
 # Integração operacional — GHL sombra Kolden para Vilela Construction

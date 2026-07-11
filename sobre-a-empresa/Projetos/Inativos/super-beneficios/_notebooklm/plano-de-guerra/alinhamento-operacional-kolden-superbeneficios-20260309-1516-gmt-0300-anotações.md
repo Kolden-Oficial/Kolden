@@ -9,6 +9,10 @@ keywords: "('Operational restructuring strategy', 'CRM implementation needs', 'S
 summary: "In this operational alignment meeting, Leandro Palmeira outlines a radical **\"War Plan\"** to stabilize the company after dismissing his entire underperforming sales staff due to a lack of **routine and structured management**. To ensure immediate business survival, the strategy pivots to a **temporary task force** composed of four high-performing employees from non-sales departments who will maintain operations while new teams are recruited. A primary focus of the transition is the **professionalization of sales tools**, specifically replacing basic automated bots with a robust **CRM (Kommo)** to gain total control over communication and data. This shift is designed to provide clear visibility into **ROI and CAC** while the company navigates a high churn rate and a tightening **regulatory environment** in the vehicle protection sector. Ultimately, the leadership team aims to use this transitional period to build a **scalable, process-driven culture** that can withstand future market shifts."
 extraido_em: "2026-06-30T16:28:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: super-beneficios
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/super-beneficios/_notebooklm/plano-de-guerra/_indice|_indice]]"
 ---
 
 # Alinhamento Operacional | Kolden & SuperBeneficios - 2026/03/09 15:16 GMT-03:00 - Anotações do Gemini

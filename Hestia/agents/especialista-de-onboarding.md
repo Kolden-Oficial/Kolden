@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Hestia
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Hestia/agents/hestia-chief|hestia-chief]]"
+---
+
 # Especialista de Onboarding
 
 > Especialista tier 1 do squad Héstia. Dono da frente **integrar**: dos primeiros 90 dias ao

@@ -9,6 +9,9 @@ keywords: "('Tree of Thoughts', 'Prompt Engineering', 'Large Language Models', '
 summary: "The provided guide introduces **Tree of Thoughts (ToT)**, a sophisticated prompting framework designed to overcome the linear limitations of standard AI reasoning by mimicking **human problem-solving**. Rather than producing a single immediate response, ToT creates a **tree-like structure** that allows a model to **generate, evaluate, and prune** multiple potential ideas simultaneously. This systematic approach excels at **complex challenges**—such as the \"Game of 24\"—by utilizing search algorithms to navigate through various reasoning branches and discard unproductive paths. Users can implement this methodology through **custom code**, manual **prompt chaining**, or **zero-shot templates** that simulate a collaborative expert panel. Ultimately, the text serves as an educational resource to help users transition from basic interactions to **structured decision-making** that maximizes the strategic potential of large language models."
 extraido_em: "2026-06-30T16:18:31Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Beginner's Guide To Tree Of Thoughts Prompting (With Examples) | Zero To Mastery

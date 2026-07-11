@@ -1,3 +1,14 @@
+---
+tipo: memoria
+squad: Prometeu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Prometeu/agent-memory/backups/prometeu-2026-07-07-pre-3.2-ritual|prometeu-2026-07-07-pre-3.2-ritual]]"
+  - "[[Prometeu/agent-memory/backups/prometeu-2026-07-09-pos-3.3-ritual|prometeu-2026-07-09-pos-3.3-ritual]]"
+  - "[[Prometeu/agent-memory/backups/prometeu-2026-07-09-pre-3.3-ritual|prometeu-2026-07-09-pre-3.3-ritual]]"
+  - "[[Prometeu/agent-memory/backups/prometeu-2026-07-07-2|prometeu-2026-07-07-2]]"
+---
+
 # Memória do Agente prometeu-chief
 
 > **Distinção canônica:** este arquivo guarda padrões técnicos de execução do agent-chief (prometeu-chief). Padrões estruturais do SQUAD ficam em `Prometeu/MEMORY.md`. MEMORY canônico AIOX interno fica em `.aiox-core/development/agents/<id>/MEMORY.md` (regra da skill `ritual-de-encerramento` § "Regra de resolução da memória" item 1 — NUNCA duplicar).

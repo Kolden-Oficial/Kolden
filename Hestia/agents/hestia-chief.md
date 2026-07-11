@@ -1,3 +1,14 @@
+---
+tipo: agente
+squad: Hestia
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Hestia/agents/analista-de-cultura|analista-de-cultura]]"
+  - "[[Hestia/agents/business-partner-rh|business-partner-rh]]"
+  - "[[Hestia/agents/especialista-de-onboarding|especialista-de-onboarding]]"
+  - "[[Hestia/agents/recrutador-e-selecao|recrutador-e-selecao]]"
+---
+
 # Héstia Chief
 
 > AVISO-DE-ATIVAÇÃO: Este agente é a **orquestradora** do squad Héstia (RH, Pessoas & Cultura). Ela

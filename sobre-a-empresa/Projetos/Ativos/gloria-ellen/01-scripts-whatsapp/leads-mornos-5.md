@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/01-scripts-whatsapp/reativacao-15-clientes|reativacao-15-clientes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/01-scripts-whatsapp/roteiro-call-fechamento|roteiro-call-fechamento]]"
+---
+
 # Script WhatsApp — 5 leads mornos ("não querem pra agora")
 
 **Objetivo:** transformar objeção "não é o momento" em fechamento nos 12 dias.

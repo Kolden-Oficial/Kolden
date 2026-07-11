@@ -6,6 +6,9 @@ segmento: "Ferramenta interna — central de dados / cockpit de AdOps assistido 
 status: "inativo"
 drive_folder_id: "1Ix-tB1MZ-B9t0oe1OogH-vzMbRYJ6afz"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: central-de-dados
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Projeto Central de Dados Unificado

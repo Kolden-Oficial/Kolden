@@ -9,6 +9,9 @@ keywords: "('Vercel Toolbar', 'Chrome Extension', 'Production Environments', 'Co
 summary: "Vercel has introduced a streamlined way to access its **development and collaboration utilities** directly within live environments via a specialized browser extension or an integrated menu. This update allows teams to perform **real-time audits** for accessibility and performance, manage feature flags, and leave feedback on **production-level domains** without complex setups. By bridging the gap between local staging and the final user experience, the platform ensures that **quality control and communication** remain fluid throughout the entire deployment lifecycle. This expansion of the **Vercel Toolbar** highlights the company's broader mission to provide a comprehensive suite of AI, security, and performance tools for modern web creators."
 extraido_em: "2026-06-30T16:22:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Use the Vercel Toolbar in Production with the Chrome Extension or the toolbar menu

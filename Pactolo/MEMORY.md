@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Pactolo
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Pactolo/agents/pactolo-chief|pactolo-chief]]"
+---
+
 # Memória do Squad Pactolo
 
 > **status:** semente-do-lote-2026-06-26 (refino pelo Ritual do Caos pendente)

@@ -7,6 +7,18 @@ palavras-chave: [posicionamento, diferencial, proposta-de-valor, angulo]
 status: rascunho
 atualizado-em: 2026-06-18
 relacionados: [icp-e-personas, concorrencia, mensagens-chave]
+tipo: nota
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/identidade-visual|identidade visual]]"
+  - "[[sobre-a-empresa/Kolden/areas/marketing|marketing]]"
+  - "[[sobre-a-empresa/Kolden/marca/mensagens-chave|mensagens-chave]]"
+  - "[[sobre-a-empresa/Kolden/operacao/planejamento-estrategico|planejamento estratégico]]"
+  - "[[sobre-a-empresa/Kolden/identidade/visao-geral|visão geral]]"
+  - "[[sobre-a-empresa/Kolden/mercado/concorrencia|concorrencia]]"
+  - "[[sobre-a-empresa/Kolden/mercado/icp-e-personas|icp-e-personas]]"
+  - "[[sobre-a-empresa/Kolden/mercado/ofertas-e-produtos|ofertas-e-produtos]]"
 ---
 
 # Posicionamento

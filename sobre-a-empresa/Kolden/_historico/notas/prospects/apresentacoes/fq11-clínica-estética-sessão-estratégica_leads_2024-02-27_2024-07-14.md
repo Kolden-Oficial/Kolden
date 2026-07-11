@@ -9,6 +9,9 @@ keywords: "('Lead generation data', 'Aesthetic clinic marketing', 'Business stra
 summary: "This document consists of a **lead generation dataset** captured through Instagram advertising campaigns targeting the **beauty and aesthetics industry** in Brazil. The data structure organizes prospective clients by their **business maturity and financial health**, detailing specific metrics such as monthly revenue, team size, and professional specialties ranging from micropigmentation to physiotherapy. A primary theme of the source is the assessment of **client readiness and investment intent**, as respondents disclose their motivations for seeking a **strategic consultancy** and their willingness to pay for professional solutions. Ultimately, the text serves as a **qualification tool** designed to filter entrepreneurs who are looking to scale their revenue or optimize internal processes through expert guidance."
 extraido_em: "2026-06-30T16:17:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/_indice|_indice]]"
 ---
 
 # [FQ1.1] [CLÍNICA ESTÉTICA] [SESSÃO ESTRATÉGICA]_Leads_2024-02-27_2024-07-14

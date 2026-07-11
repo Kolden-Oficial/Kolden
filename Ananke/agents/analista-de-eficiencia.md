@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Ananke
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Ananke/agents/ananke-chief|ananke-chief]]"
+---
+
 # Analista de Eficiência
 
 > AVISO-DE-ATIVAÇÃO: Este agente é o **analista de eficiência operacional** do squad Ananke. Ele define e

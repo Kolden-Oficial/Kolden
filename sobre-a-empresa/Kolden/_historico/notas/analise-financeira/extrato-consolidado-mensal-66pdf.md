@@ -9,6 +9,9 @@ keywords: "('Fraud prevention tips', 'Bank contact channels', 'Monthly service p
 summary: "This document is a **consolidated monthly bank statement** from Santander Brazil for June 2023, providing a comprehensive overview of a specific **university checking account** and broader **financial market indicators**. The text serves a dual purpose: it details the user’s **service package usage** and monthly fees while simultaneously acting as a critical **security guide** against common fraud. Throughout the statement, the bank emphasizes **anti-phishing protocols**, warning customers that they will never request passwords, tokens, or physical credit cards via third parties like couriers. By combining **account transparency** with official **contact channels** and economic data such as inflation and currency rates, the document aims to keep the client both financially informed and **protected from scams**."
 extraido_em: "2026-06-30T16:26:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (66).pdf

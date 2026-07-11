@@ -9,6 +9,9 @@ keywords: "('Google Ads Scaling', 'Campaign Management', 'Audience Targeting', '
 summary: "This presentation serves as a comprehensive strategic guide for **scaling results through Google Ads**, led by Jonathan Macedo, a high-level traffic manager at Empiricus. The material outlines a sophisticated **hierarchy of audience segmentation**, moving from high-intent \"hot\" audiences like customer lists and remarketing to broader \"cold\" prospects identified through custom affinity and market trends. To achieve maximum efficiency, the author advocates for a **70/20/10 optimization approach**, which prioritizes the quality of the creative advertisement as the most significant driver of success, followed by audience targeting and landing page performance. Practical advice is provided on **ad creative best practices**, such as maintaining rapid visual pacing and clear calls to action, while emphasizing a **rigorous culture of A/B testing** to refine conversion rates. Ultimately, the source functions as a tactical roadmap for managing high-volume campaigns by balancing **budget scaling with meticulous metric monitoring** to ensure a sustainable return on investment."
 extraido_em: "2026-06-30T16:10:27Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/_indice|_indice]]"
 ---
 
 # APRESENTACAO_GOOGLE.pdf

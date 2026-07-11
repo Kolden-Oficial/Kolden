@@ -6,6 +6,9 @@ segmento: "Espiritualidade / prosperidade financeira (resposta direta)"
 status: "inativo"
 drive_folder_id: "1dDmjDHnWc1DXvfAP_CKERLgZ2z4jpyES"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: prosperidade
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — 00 | Prosperidade (Jornada com o Anjo)

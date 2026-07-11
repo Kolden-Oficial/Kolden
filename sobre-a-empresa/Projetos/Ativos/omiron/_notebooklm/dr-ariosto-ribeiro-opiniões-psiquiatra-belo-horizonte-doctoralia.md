@@ -9,6 +9,10 @@ keywords: "('Dr. Ariosto Ribeiro', 'Psychiatric medical services', 'Patient revi
 summary: "This source is a professional profile for **Dr. Ariosto Ribeiro**, a **psychiatrist located in Belo Horizonte**, hosted on the medical booking platform **Doctoralia**. The text details his clinical approach, which focuses on **integrative psychiatry and evidence-based medicine** for treating conditions like depression, anxiety, and ADHD in adults and adolescents. Beyond his medical credentials and **private-pay fee structure**, the page serves as a comprehensive resource featuring **verified patient reviews** that highlight his empathetic and attentive care. Ultimately, the document functions as a **digital business card and scheduling tool**, providing essential logistics such as office addresses, payment methods, and teleconsultation options."
 extraido_em: "2026-06-30T16:07:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Dr. Ariosto Ribeiro opiniões - Psiquiatra Belo Horizonte - Doctoralia

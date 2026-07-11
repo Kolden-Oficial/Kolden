@@ -9,6 +9,9 @@ keywords: "('Claude XML tags', 'Prompt engineering', 'Structured instructions', 
 summary: "This comprehensive guide serves as a technical manual for mastering **Claude’s native XML tag architecture** to achieve superior prompt engineering results. By organizing instructions into **distinct, machine-readable blocks** such as context, task, and thinking, users can eliminate ambiguity and significantly boost the model's **reasoning accuracy and structural consistency**. The text provides a systematic framework for **advanced prompt construction**, offering specific templates and best practices to ensure clear boundaries between background information and core directives. Ultimately, the resource aims to transition users from writing vague requests to creating **reproducible, high-quality workflows** tailored specifically to Claude’s unique design."
 extraido_em: "2026-06-30T16:18:56Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Claude XML Tags Guide — Copy-Paste Examples for Better Prompts (2026)

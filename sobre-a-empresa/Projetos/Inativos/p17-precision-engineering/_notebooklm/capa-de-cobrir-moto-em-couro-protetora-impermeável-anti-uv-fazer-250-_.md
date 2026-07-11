@@ -9,6 +9,10 @@ keywords: "('Motorcycle cover', 'Waterproof protection', 'UV protection', 'Shop-
 summary: "This document is a digital product page from the Amazon Brazil marketplace featuring a **heavy-duty motorcycle cover** designed for the Yamaha Fazer 250 and similar models. The listing highlights the item's **protective capabilities**, specifically its waterproof leather construction, thermal resistance, and **shielding against UV rays** and debris. Beyond the primary product, the page functions as a consumer hub, displaying **frequently purchased accessories** such as gloves and security locks while showcasing a high **customer satisfaction rating** based on over a thousand reviews. Ultimately, the text serves as a **comprehensive retail interface** intended to provide technical specifications, pricing details, and social proof to potential buyers in the automotive segment."
 extraido_em: "2026-06-30T16:09:39Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa de Cobrir Moto em Couro Protetora Impermeável Anti-uv (FAZER 250) _ Amazon.com.br.pdf

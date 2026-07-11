@@ -9,6 +9,9 @@ keywords: "('CRM System Implementation', 'Sales Funnel Management', 'Lead Commun
 summary: "In this meeting transcript, Ronan Sersil onboarded Helen Palmeira to the **Como CRM system**, a platform designed to **centralize patient communications** across WhatsApp, Instagram, Facebook, and TikTok. The primary objective is to transition from a scattered messaging approach to a structured **Sales Funnel**, where Helen will manually update lead statuses—such as \"New Consultation\" or \"Completed\"—to maintain a professional and organized workflow. To support this transition, Ronan emphasized the importance of **manual data entry and lead management** in the early stages, requesting Helen’s existing WhatsApp tags and message templates to eventually implement **system automation**. Throughout the dialogue, Ronan provided technical guidance on creating new leads and handling legacy patient data, while offering **educational resources** and continuous support to ensure Helen becomes proficient in using the tool to enhance the clinic's operational efficiency."
 extraido_em: "2026-06-30T16:24:38Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/03 10:39 GMT-03:00 - Anotações do Gemini

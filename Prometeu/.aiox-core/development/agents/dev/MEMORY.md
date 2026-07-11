@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Prometeu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/agents/dev|dev]]"
+---
+
 # Memória do Agente Dev (Dex)
 
 ## Padrões Ativos

@@ -9,6 +9,9 @@ keywords: "('Bank account statement', 'Financial transaction history', 'Credit c
 summary: "This document is a formal **checking account statement** from Santander bank belonging to Ronan Sergio Silva, covering financial activity from **December 2024 through February 2026**. The records detail a high volume of **Pix transfers and debit card purchases**, highlighting frequent spending on fuel, dining, and supermarkets alongside recurring credit card bill settlements. Significant **monthly credits** of R$ 4.500,00 suggest a steady income stream, which helps maintain a **final available balance** of R$ 3.038,22. Ultimately, the text serves as a comprehensive **ledger of personal cash flow**, tracking every deposit, expenditure, and automated investment return to provide a clear picture of the user's fiscal health."
 extraido_em: "2026-06-30T16:27:07Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # extrato_conta.pdf

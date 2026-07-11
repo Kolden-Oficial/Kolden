@@ -9,6 +9,10 @@ keywords: "('Market Strategic Planning', 'B2B Sales Transition', 'Energy Code Co
 summary: "This technical report serves as a **strategic roadmap** designed to transition Affordable Insulation from a manual, homeowner-dependent business into a **data-driven B2B powerhouse**. The document identifies a critical inflection point for the company, outlining a plan to stabilize and **double monthly revenue** by shifting focus toward professional builders and large-scale construction projects. To navigate a shifting regulatory landscape, the text emphasizes the importance of mastering the **Stretch Energy Code 2025**, positioning the firm as a specialized authority in **building science** and compliance. By addressing operational bottlenecks through **automated CRM systems** and professionalized digital marketing, the report aims to transform the business into a scalable \"sales machine\" capable of dominating the New England market."
 extraido_em: "2026-06-30T16:07:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Pesquisa de Mercado: Affordable Insulation

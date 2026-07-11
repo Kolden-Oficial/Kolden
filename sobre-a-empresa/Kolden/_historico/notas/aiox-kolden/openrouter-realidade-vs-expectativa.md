@@ -9,6 +9,9 @@ keywords: "('OpenRouter platform', 'Language models (LLMs)', 'API orchestration'
 summary: "The provided text serves as a clarifying guide to **OpenRouter**, establishing a clear boundary between the platform's actual capabilities and common user misconceptions. It defines the service as a **centralized gateway for text-based Large Language Models**, offering a unified \"universal passport\" to elite systems like Claude and GPT while explicitly noting its **limitations regarding high-end multimedia generation** such as video and music. Furthermore, the source emphasizes that while OpenRouter acts as the essential **infrastructure or power source**, the task of **orchestrating complex interactions** between different models falls to the user's specific software or automation tools. Ultimately, this explanation prepares the reader to use the platform effectively by framing it as the **foundational logic engine** required to power advanced digital agents."
 extraido_em: "2026-06-30T16:21:27Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # OpenRouter: Realidade vs. Expectativa

@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/brief-visual/_INDEX|_INDEX]]"
+---
+
 # Briefing — og:image branded Vilela Construction
 
 > **Origem:** F6 do `landing-page-fixes-2026-07.md` (severidade 🟠 Alta) + Onda 2.3 do `google-ads/ROADMAP.md`.

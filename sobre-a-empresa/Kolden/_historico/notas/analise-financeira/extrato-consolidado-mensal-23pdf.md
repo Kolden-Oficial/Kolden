@@ -9,6 +9,9 @@ keywords: "('Monthly bank statement', 'Financial credit limits', 'Account transa
 summary: "This document is a **consolidated monthly bank statement** from December 2019 for a **Santander Universidades** account holder, detailing financial activities, credit limits, and available balances. Beyond recording standard **transaction histories** such as deposits, transfers, and service fees, the text serves as a marketing vehicle for various **promotional opportunities**, including soccer-themed sweepstakes, academic scholarships in Spain, and capital prize bonds. It also provides essential **institutional information**, outlining customer support channels, credit interest policies, and current **economic indices** like inflation and exchange rates. Ultimately, the source functions as both a **financial record** and a comprehensive **client communication tool** designed to manage the user's banking relationship while encouraging further engagement with the bank’s ecosystem."
 extraido_em: "2026-06-30T16:25:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (23).pdf

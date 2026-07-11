@@ -9,6 +9,9 @@ keywords: "('OpenClaw terminal configuration', 'Telegram bot pairing', 'Free AI 
 summary: "This guide provides a technical walkthrough for developers to bridge a **Telegram messaging bot** with a local server using a **cost-free artificial intelligence model**. By executing specific terminal commands, the user grants communication permissions to their mobile device and manually switches the system's \"brain\" to the **Meta Llama 3 model** via the OpenRouter platform. The primary objective is to **validate the bot's functionality** without incurring expenses, ensuring the backend service processes requests invisibly before delivering a live response to the user's smartphone. Through this setup, the text empowers users to transition from a configuration error to a **fully operational, free-to-use AI assistant**."
 extraido_em: "2026-06-30T16:19:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Configurando Cérebro Gratuito no Terminal

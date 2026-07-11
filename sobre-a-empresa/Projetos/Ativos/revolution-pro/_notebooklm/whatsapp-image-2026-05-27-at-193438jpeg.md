@@ -9,6 +9,10 @@ keywords: "('Revolution Pro Boston', 'Construction company', 'Stoneham Massachus
 summary: "This image displays the administrative profile for a **construction company** named Revolution Pro Boston, though the notice indicates the listing is currently **hidden from the public**. The text outlines essential logistical details, including its **physical headquarters** in Stoneham, Massachusetts, and its designated **operating hours**. Furthermore, it provides direct contact methods through a **local telephone number** and a specific web address. Collectively, these data points serve as a **digital business card** intended to help clients identify and reach the firm for building services."
 extraido_em: "2026-06-30T16:07:32Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: revolution-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/revolution-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # WhatsApp Image 2026-05-27 at 19.34.38.jpeg

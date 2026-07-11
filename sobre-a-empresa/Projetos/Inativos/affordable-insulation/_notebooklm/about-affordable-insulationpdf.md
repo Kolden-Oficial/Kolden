@@ -9,6 +9,10 @@ keywords: "('Spray foam insulation', 'Energy efficiency', 'Professional installa
 summary: "This document introduces **Affordable Insulation**, a professional service provider based in Lowell that specializes in enhancing building performance for residential and commercial clients. The text outlines a diverse range of **energy-efficient solutions**, including various spray foams, fiberglass, eco-friendly cellulose, and fire-resistant mineral wool to improve **thermal control and soundproofing**. By highlighting their commitment to **sustainable materials and fire safety**, the company positions itself as a reliable partner for those looking to lower utility costs and increase property value. Ultimately, the source serves as a comprehensive promotional guide designed to showcase the team's technical expertise and invite potential customers to request a **personalized consultation** for year-round comfort."
 extraido_em: "2026-06-30T16:06:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # About – Affordable Insulation.pdf

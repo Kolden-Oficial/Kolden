@@ -9,6 +9,9 @@ keywords: "('Med Spa Marketing', 'Digital Marketing Budgets', 'Revenue-Based All
 summary: "This comprehensive guide outlines how medical spas should structure their marketing investments based on their **business lifecycle and annual revenue**. It establishes a clear framework where newer practices are encouraged to spend up to **20% of revenue** for aggressive growth, while established businesses can maintain dominance with a more modest **8% to 12% allocation**. The text emphasizes that **digital marketing** is the most critical pillar, suggesting that the vast majority of funds be directed toward high-impact channels like **Google Ads, SEO, and paid social media**. Ultimately, the guide serves as a strategic roadmap to help owners avoid underinvestment and achieve a **strong return on investment** through data-driven budget distribution."
 extraido_em: "2026-06-30T16:27:41Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # How Much Should A Med Spa Spend On Marketing?

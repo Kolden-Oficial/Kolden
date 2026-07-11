@@ -9,6 +9,9 @@ keywords: "('Fraud Prevention Tips', 'Bank Contact Channels', 'Esfera Rewards Pr
 summary: "This consolidated bank statement from August 2022 provides a comprehensive overview of **customer account activities** and essential financial updates for a client named Ronan. Beyond summarizing specific monthly balances and the **university service package** fees, the document serves as a vital **educational resource for fraud prevention**, specifically warning against suspicious SMS scams and unauthorized Pix transfers. It further details the benefits of the **Esfera loyalty program**, which incentivizes spending through points, cash back, and retail discounts. Finally, the source functions as a broader economic report by listing **key financial indices** like inflation and currency rates while providing essential **contact channels** for customer support and security."
 extraido_em: "2026-06-30T16:26:27Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (56).pdf

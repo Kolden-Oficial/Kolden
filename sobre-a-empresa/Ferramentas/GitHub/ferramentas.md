@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # GitHub — Referência de Uso
 
 GitHub é a plataforma de hospedagem de código baseada em Git para versionamento, colaboração (issues, pull requests), CI/CD (Actions) e automação via API REST/GraphQL. Categoria: Infra/Dev.

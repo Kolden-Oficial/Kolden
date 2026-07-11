@@ -7,6 +7,11 @@ palavras-chave: [area, departamento, inovacao]
 status: rascunho
 atualizado-em: 2026-06-19
 relacionados: [areas-leia-me, organograma]
+tipo: nota
+area: areas
+up: "[[sobre-a-empresa/Kolden/areas/_MOC-areas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/areas/leia-me|leia-me]]"
 ---
 
 # Área: Inovação

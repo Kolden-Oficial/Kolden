@@ -9,6 +9,9 @@ keywords: "('Career Transition Strategy', 'AI Process Efficiency', '21-Day Sprin
 summary: "This source consists of detailed meeting notes and a transcript documenting a strategic partnership between **Danielle R.**, an expert in **operational efficiency and AI**, and the marketing firm **Coden**. The text outlines Danielle's career shift from traditional engineering to becoming an **Execution Partner**, where she utilizes **Artificial Intelligence** to resolve \"operational chaos\" for scaling businesses. A primary focus of the discussion is the development of a **\"21-day Sprint\" product**, a high-ticket consultancy designed to implement rapid efficiency frameworks and **automated workflows** using tools like **Lark and Zapier**. The meeting concludes with a mutual agreement where Coden will handle **product structuring and marketing**, allowing Danielle to focus on technical execution and her goal of expanding into the **international B2B industrial market**."
 extraido_em: "2026-06-30T16:29:07Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/oye/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/26 20:27 GMT-03:00 - Anotações do Gemini

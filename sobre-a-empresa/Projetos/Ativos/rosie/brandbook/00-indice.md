@@ -7,6 +7,24 @@ palavras-chave: [brandbook, rosie, identidade, manual-de-marca, indice]
 status: oficial
 atualizado-em: 2026-06-23
 relacionados: [01-posicionamento/00-posicionamento, 02-voz-da-marca/00-tom-de-voz, 03-identidade-visual/00-marca-logotipo]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/03-identidade-visual/00-marca-logotipo|00-marca-logotipo]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/01-posicionamento/00-posicionamento|00-posicionamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/01-posicionamento/01-brand-idea|01-brand-idea]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/03-identidade-visual/01-cores|01-cores]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/01-posicionamento/02-marca-conceito|02-marca-conceito]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/03-identidade-visual/02-tipografia|02-tipografia]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/03-identidade-visual/03-composicao|03-composicao]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/01-posicionamento/03-microambiente-macroambiente|03-microambiente-macroambiente]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/03-identidade-visual/04-estilo-fotografico|04-estilo-fotografico]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/01-posicionamento/04-proposito|04-proposito]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/03-identidade-visual/05-tangibilizacoes|05-tangibilizacoes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/01-posicionamento/05-valores|05-valores]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/03-identidade-visual/06-gap-site-vs-manual|06-gap-site-vs-manual]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/01-posicionamento/06-personalidade-da-marca|06-personalidade-da-marca]]"
 ---
 
 # Brandbook Rosie

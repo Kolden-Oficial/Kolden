@@ -9,6 +9,9 @@ keywords: "('Project Management Planning', 'Marketing Campaign Strategy', 'Digit
 summary: "This document outlines a structured **project management timeline** for a digital product launch, meticulously detailing the **strategic planning** and **operational production** required across multiple departments. The workflow is organized into distinct phases—from initial **concept definition and goal setting** to the creation of complex marketing assets like capture pages, ad copies, and technical automations. By assigning specific responsibilities to teams such as **Strategy, Design, and Copywriting**, the table ensures that every element of the **pre-launch and lead generation** process is synchronized for maximum impact. Ultimately, the source serves as a **comprehensive roadmap** to coordinate a high-stakes campaign, tracking every technical and creative task from inception to execution."
 extraido_em: "2026-06-30T16:16:36Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Tarefas para ClickUp v2 - Página1

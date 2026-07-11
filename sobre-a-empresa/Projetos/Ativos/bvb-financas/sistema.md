@@ -7,6 +7,11 @@ palavras-chave: [sistema, saas, produto, gestao-financeira]
 status: rascunho-parcial
 atualizado-em: 2026-07-06
 relacionados: [dossie, infoprodutos, status]
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/dossie|dossie]]"
 ---
 
 # Sistema BVB — Proposta

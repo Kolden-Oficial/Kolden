@@ -9,6 +9,9 @@ keywords: "('Conscious communication techniques', 'Application technical support
 summary: "This document serves as a comprehensive record of a **weekly corporate meeting** held by members of the Kolden team, specifically focusing on a blend of **operational alignment** and technical troubleshooting. The primary objectives detailed in the summary include refining **sales strategies** through the lens of \"conscious communication,\" addressing budget consumption issues within **Meta advertising campaigns**, and resolving application bugs via software reinstallation. Beyond the professional agenda, the text captures a significant amount of **interpersonal team bonding**, ranging from lighthearted discussions about mythological anime lore to personal plans for Valentine's Day. Ultimately, the source functions as both a **formal project log** of pending tasks and a cultural artifact reflecting the informal, collaborative environment of the modern digital workplace."
 extraido_em: "2026-06-30T16:25:27Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Weekly - 2026/06/12 11:01 GMT-03:00 - Anotações do Gemini

@@ -9,6 +9,10 @@ keywords: "('Affiliate Funnel Implementation', 'Advanced Tracking Configuration'
 summary: "This document outlines a structured **strategic roadmap** designed to launch an affiliate marketing business from scratch, specifically focusing on promoting Shopee products through **automated sales funnels**. The plan is divided into a **twelve-phase execution cycle** that transitions from foundational goal-setting and deep **competitor benchmarking** to technical infrastructure and creative development. Key operational priorities include the implementation of **advanced tracking systems** like Server-Side API and Google Tag Manager to ensure data precision from the first click to the final conversion. By assigning specific roles to the founding partners, the guide aims to validate a **Telegram-based funnel** using paid Meta traffic to achieve rapid, measurable profitability within a ninety-day window."
 extraido_em: "2026-06-30T16:08:37Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # Plano de ação

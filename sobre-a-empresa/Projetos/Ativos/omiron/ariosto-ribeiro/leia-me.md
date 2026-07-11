@@ -7,6 +7,9 @@ status: "ativo"
 drive_folder_id: "sem registro no Drive"
 workspace_projeto: ""
 atualizado_em: "2026-06-30"
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Ariosto Ribeiro

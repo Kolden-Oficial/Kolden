@@ -9,6 +9,10 @@ keywords: "('Commercial Proposal Strategy', 'Business Ecosystem Centralization',
 summary: "The provided text outlines a strategic vision for a **consolidated marketing partnership** between a service provider, Kolden, and the diverse ETT Group ecosystem. The author proposes a **performance-based financial model** by reducing fixed monthly fees in exchange for a percentage of digital sales, aiming to align their long-term growth with the client’s success. The plan emphasizes **operational centralization**, promising to standardize visual identities and digital assets across all subsidiaries while implementing advanced systems for **data tracking and automated sales funnels**. Ultimately, the document serves as a blueprint for a comprehensive commercial proposal designed to transform Kolden into the **primary growth engine** for the entire corporate group."
 extraido_em: "2026-06-30T16:28:48Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: socios
+up: "[[sobre-a-empresa/Socios/_MOC-socios]]"
+relacionado:
+  - "[[sobre-a-empresa/Socios/sobre-o-ronan/acordo-transicao-profissional/_indice|_indice]]"
 ---
 
 # Texto colado

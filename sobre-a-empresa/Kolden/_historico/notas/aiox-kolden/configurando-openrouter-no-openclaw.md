@@ -9,6 +9,9 @@ keywords: "('OpenRouter API Key', 'OpenClaw Configuration', 'Terminal Setup', 'A
 summary: "This guide provides a streamlined walkthrough for integrating the **OpenRouter platform** into the **OpenClaw terminal interface**, allowing users to access a vast array of artificial intelligence models through a single account. The process begins by obtaining a **unique API Key** from the provider's website, which serves as a secure digital pass for both paid and free language models. Once this sensitive credential is created and copied, the user must transition to their **Ubuntu terminal environment** to input the code and finalize the connection. By successfully linking these two tools, the user effectively provides a **functional \"brain\"** for their automated system, enabling immediate interaction with advanced AI technology."
 extraido_em: "2026-06-30T16:19:11Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Configurando OpenRouter no OpenClaw

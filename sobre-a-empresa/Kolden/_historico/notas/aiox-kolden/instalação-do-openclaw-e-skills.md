@@ -9,6 +9,9 @@ keywords: "('OpenClaw installation', 'Assistant configuration', 'Skill selection
 summary: "This technical guide serves as a practical walkthrough for finalizing the installation of **OpenClaw**, an AI-driven assistant, by focusing on the activation of its core capabilities. Having established a stable infrastructure, the user is directed to execute a specific setup command to configure **essential \"skills\"**—such as PDF reading and link processing—which act as the robot's functional senses. The text emphasizes a **meticulous configuration sequence**, instructing the user to bypass unnecessary API providers while selecting specific tools through a command-line interface. Ultimately, the purpose of this manual is to ensure a **seamless integration of tools** without errors, marking the transition from basic server setup to a fully operational and intelligent digital agent."
 extraido_em: "2026-06-30T16:20:19Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Instalação do OpenClaw e Skills

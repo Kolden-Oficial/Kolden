@@ -5,6 +5,10 @@ clickup_space_nome: "Marketing"
 total_tasks: 21
 extracted_at: 2026-06-30
 nota: "Maior parte das tasks gira em torno da Bravy School — provavelmente cliente-âncora de testes em 2025-03."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/INDEX|INDEX]]"
 ---
 
 # Tasks — Space Marketing

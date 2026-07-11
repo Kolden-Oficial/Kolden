@@ -9,6 +9,9 @@ keywords: "('LobeChat deployment', 'Vercel hosting', 'Environment variables', 'O
 summary: "This tutorial provides a streamlined roadmap for launching **LobeChat**, a sophisticated open-source interface designed for AI agencies, using the **Vercel hosting platform**. The author guides the reader through a multi-step deployment process that involves linking a GitHub repository and configuring the software’s core functionality. Central to this setup is the integration of **Environment Variables**, specifically the **OpenRouter API key** to provide the system's intelligence and a **custom access code** to ensure robust security. By following these instructions, users can transform raw code into a functional, private web application capable of advanced tasks like image recognition and audio generation."
 extraido_em: "2026-06-30T16:19:30Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Deploy LobeChat na Vercel

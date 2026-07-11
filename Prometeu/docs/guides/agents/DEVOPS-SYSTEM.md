@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/docs/guides/agents/_indice|_indice]]"
+---
+
 # Sistema DevOps - Guia Completo do Agente @devops
 
 > **Agente:** Gage (Operator)

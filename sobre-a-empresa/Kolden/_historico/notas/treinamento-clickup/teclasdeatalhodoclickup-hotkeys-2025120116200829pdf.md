@@ -9,6 +9,9 @@ keywords: "('ClickUp keyboard shortcuts', 'Activating hotkeys', 'Task management
 summary: "This document serves as a comprehensive guide for **optimizing workflow efficiency** within the ClickUp project management platform through the use of **keyboard shortcuts**. It begins by outlining the necessary steps to **enable hotkeys** within the user's account settings, ensuring that these time-saving tools are active. The core of the text provides an organized list of commands that allow users to **rapidly create tasks**, navigate the interface, and manage project details like deadlines or assignees without using a mouse. Ultimately, the resource aims to **increase productivity** by teaching users how to execute complex administrative actions with simple, standardized keystrokes."
 extraido_em: "2026-06-30T16:28:32Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/_indice|_indice]]"
 ---
 
 # TeclasdeAtalhodoClickUp-Hotkeys-2025120116200829.pdf

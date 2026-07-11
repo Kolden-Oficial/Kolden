@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Prometeu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/aiox-po|aiox-po]]"
+---
+
 # Pax (PO) Agent Memory
 
 ## IDS Epic Backlog Analysis (2026-02-09)

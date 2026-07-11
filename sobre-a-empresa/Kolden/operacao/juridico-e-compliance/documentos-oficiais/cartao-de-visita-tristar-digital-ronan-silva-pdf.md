@@ -9,6 +9,10 @@ keywords: "('Tristar Digital', 'Ronan Silva', 'CEO Contact Information', 'Digita
 summary: "This document serves as a **professional digital business card** for Ronan Silva, the Chief Executive Officer of a company called **Tristar Digital**. The layout is designed to facilitate **seamless networking and communication** by consolidating essential contact details, such as a telephone number, professional email, and the firm’s official website. By including social media handles and a **QR code for instant connectivity**, the source highlights a modern, tech-oriented approach to building business relationships. Ultimately, its primary purpose is to provide a **concise corporate identity** that allows potential clients or partners to engage with the brand's leadership effortlessly."
 extraido_em: "2026-06-30T16:11:13Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # CARTÃO DE VISITA TRISTAR DIGITAL RONAN SILVA .pdf

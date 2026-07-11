@@ -9,6 +9,9 @@ keywords: "('Fraud Prevention Tips', 'Bank Account Summary', 'Service Package De
 summary: "This document is a **consolidated monthly bank statement** from **Santander Universities** for October 2021, addressed to a client named Ronan Sergio Silva. The primary purpose of the communication is to balance **account financial data**—such as credit limits, service package fees, and economic indices—with urgent **fraud prevention education**. Significant emphasis is placed on **security protocols**, specifically warning the user against **digital scams via WhatsApp** and physical deception involving **fake couriers**. By providing specific **verification codes** and official **customer service contact information**, the bank aims to equip the client with the necessary tools to distinguish legitimate financial transactions from criminal interference."
 extraido_em: "2026-06-30T16:26:16Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (45).pdf

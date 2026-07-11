@@ -9,6 +9,9 @@ keywords: "('Google AI Studio', 'Gemini Chat', 'Vertex AI', 'Gemini Developer AP
 summary: "This guide clarifies the often-confusing ecosystem of Google’s artificial intelligence offerings by categorizing them into three distinct tiers based on user needs. At the entry level, **Gemini Chat** serves as a **consumer-facing assistant** for everyday productivity and creative tasks within the Google Workspace environment. For technical creators, **Google AI Studio** acts as a **developer sandbox** designed for rapid prototyping and free experimentation with API keys. Finally, **Vertex AI** is presented as the **enterprise-grade platform** essential for companies requiring professional scalability, **stringent security compliance**, and guaranteed service stability. By providing a clear **migration path and pricing framework**, the text helps users choose the right tool to avoid overpaying for unnecessary features or hitting technical limitations."
 extraido_em: "2026-06-30T16:20:02Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Google AI Studio vs Gemini vs Vertex AI: Which Platform Do You Need? - Hoerr Solutions

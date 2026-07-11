@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/tests/unit/squad/fixtures/complete-squad/agents/test-agent|test-agent]]"
+---
+
 # test-agent
 
 Test agent for extension tests.

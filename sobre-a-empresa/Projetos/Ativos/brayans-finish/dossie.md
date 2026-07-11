@@ -6,6 +6,9 @@ segmento: "Construção civil / Carpintaria de acabamento e remodelação (EUA)"
 status: "ativo"
 drive_folder_id: "15JhAa95dN_MdP5EOXBcX65SEQTVa0Xjd"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Brayan's Finish

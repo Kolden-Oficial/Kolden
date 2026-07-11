@@ -1,3 +1,13 @@
+---
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/mcp-solomon/registros/ritual-fases-0-2|ritual-fases-0-2]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/mcp-solomon/registros/ritual-fases-3-7|ritual-fases-3-7]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/mcp-solomon/registros/ritual-fases-8-encerramento|ritual-fases-8-encerramento]]"
+---
+
 # Retificação — Descoberta do MCP oficial da Solomon (pós-entrega)
 
 **Data:** 2026-07-01T19:05:00Z (mesma sessão da entrega do Íris)

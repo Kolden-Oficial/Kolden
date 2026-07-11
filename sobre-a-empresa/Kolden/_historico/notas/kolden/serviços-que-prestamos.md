@@ -9,6 +9,9 @@ keywords: "('Business growth services', 'Automated service pricing', 'Sales pres
 summary: "This text outlines a comprehensive framework for a modern **growth consultancy**, detailing a diverse service menu that spans **paid traffic, social media management, commercial training, and AI implementation**. To streamline the transition from initial consultation to a closed deal, the author provides a **structured workflow** that uses transcriptions and artificial intelligence to diagnose specific client \"bottlenecks.\" Central to this process is a sophisticated **interactive presentation prompt** designed to generate a high-end web interface, which translates raw business data into a visually compelling narrative of **personalized solutions and tiered investment**. Ultimately, the source serves as a blueprint for **automating the sales and pricing cycle** while maintaining a premium, data-driven experience for potential clients."
 extraido_em: "2026-06-30T16:16:28Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Serviços que prestamos 

@@ -9,6 +9,10 @@ keywords: "('Lead management', 'CRM implementation', 'Sales process optimization
 summary: "This text serves as a **strategic operational blueprint** designed to transition a business from manual processes to a **digitized, professional workflow**. The document outlines a comprehensive **sales and project lifecycle**, beginning with aggressive **outbound prospecting** and concluding with meticulous post-sale **financial management and performance analysis**. Central to this plan is the implementation of a **unified CRM system** and a custom application to streamline site measurements, communication, and client feedback. Ultimately, the source functions as a roadmap for **business scaling**, emphasizing the need for rigorous **cost optimization** and automated customer relationship management."
 extraido_em: "2026-06-30T16:07:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

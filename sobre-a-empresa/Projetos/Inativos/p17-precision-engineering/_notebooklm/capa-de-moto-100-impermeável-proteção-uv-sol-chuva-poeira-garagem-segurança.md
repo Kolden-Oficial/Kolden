@@ -9,6 +9,10 @@ keywords: "('Waterproof motorcycle cover', 'Weather protection', 'Universal vehi
 summary: "This source is a digital retail listing for a **universal motorcycle cover** designed to provide **comprehensive environmental protection** against water, sun exposure, and debris. The text outlines the product's functional benefits, emphasizing its **weatherproof construction** and specific features like UV resistance and an adjustable fit intended to prolong the vehicle's lifespan. Beyond the technical specifications, the page includes **consumer feedback and market context**, showcasing a mix of user ratings and related automotive accessories. Ultimately, the document serves as a **commercial overview**, balancing promotional claims of durability with diverse customer reviews regarding the material's actual quality and thickness."
 extraido_em: "2026-06-30T16:09:39Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa de Moto 100% Impermeável Proteção UV Sol Chuva Poeira Garagem Segurança Resistente Ajuste Universal _ Amazon.com.br.pdf

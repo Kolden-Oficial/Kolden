@@ -9,6 +9,9 @@ keywords: "('Distributed Architecture', 'Deployment Modes', 'Chroma Data Model',
 summary: "Chroma is a specialized database system designed to handle high-performance information retrieval through a **modular architecture** that scales from simple local prototyping to massive, distributed production environments. By relying on established subsystems for storage, the platform remains focused on a **multi-tiered data model** consisting of isolated tenants, logical databases, and individual collections. Within this framework, a **collection** serves as the primary storage unit, housing unique IDs, vector embeddings, and descriptive metadata to facilitate efficient searching. This structural design ensures that developers can maintain a **consistent API** while transitioning between small-scale experiments and large-scale deployments that require robust data management."
 extraido_em: "2026-06-30T16:18:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Architecture Overview - Chroma Docs

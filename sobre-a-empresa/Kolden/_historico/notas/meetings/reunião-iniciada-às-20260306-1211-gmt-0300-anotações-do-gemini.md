@@ -9,6 +9,9 @@ keywords: "('Talent retention strategies', 'Commercial team structure', 'Perform
 summary: "In this meeting transcript, Ronan Sersil and his associates outline a strategic vision for building a high-performance sales structure and a **talent-retention ecosystem**. The primary objective is to achieve **predictable recurring revenue** through a specialized commercial team consisting of BDRs, SDRs, and closers who leverage organic social selling, paid traffic, and aggressive networking. A core pillar of their philosophy is a **performance-based compensation model** where team members are incentivized with \"first fees\" for client referrals, fostering a culture of \"opportunity hunters\" across all roles. Beyond sales mechanics, the discussion emphasizes a unique human resources approach that targets **\"frustrated\" professionals**—individuals eager for financial growth but currently dissatisfied—by offering them clear KPIs and a pathway to success in exchange for high accountability. Ultimately, the strategy aims for long-term sustainability by prioritizing **customer lifetime value (LTV)**, a transparent corporate culture free of victimhood, and a deep commitment to the mental and professional development of every collaborator."
 extraido_em: "2026-06-30T16:24:41Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/06 12:11 GMT-03:00 - Anotações do Gemini

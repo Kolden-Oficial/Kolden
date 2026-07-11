@@ -9,6 +9,10 @@ keywords: "('Paid traffic management', 'Digital marketing strategy', 'Ad platfor
 summary: "This legal document establishes a **formal partnership for digital marketing management**, specifically outlining how a service provider will handle paid advertising on platforms like Facebook and Google. The agreement defines a clear division of labor, where the contractor is responsible for **campaign strategy and performance reporting**, while the client retains full control over **brand content, product quality, and the direct funding of ad spends**. Beyond operational duties, the text incorporates essential legal protections such as **confidentiality clauses, non-compete restrictions, and the explicit denial of any employment relationship**. Ultimately, the contract serves to professionalize the commercial exchange by setting specific **remuneration terms, performance expectations, and termination protocols** to ensure mutual accountability in the virtual sales funnel."
 extraido_em: "2026-06-30T16:11:32Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Contrato Gestão de Tráfego (PDF).pdf

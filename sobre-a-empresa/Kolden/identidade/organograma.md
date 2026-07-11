@@ -7,6 +7,17 @@ palavras-chave: [organograma, areas, estrutura, organizacao, arquitetura, diagra
 status: rascunho
 atualizado-em: 2026-06-30
 relacionados: [visao-geral, arquitetura-visual]
+tipo: nota
+area: identidade
+up: "[[sobre-a-empresa/Kolden/identidade/_MOC-identidade]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/areas/ceo-topo|CEO / topo]]"
+  - "[[sobre-a-empresa/Kolden/areas/leia-me|áreas (modelo)]]"
+  - "[[sobre-a-empresa/Kolden/identidade/historia|historia]]"
+  - "[[sobre-a-empresa/Kolden/identidade/perfil-kolden-9-anos|perfil-kolden-9-anos]]"
+  - "[[sobre-a-empresa/Kolden/identidade/arquitetura/leia-me|arquitetura visual]]"
+  - "[[sobre-a-empresa/Kolden/identidade/missao-visao-valores|missão-visão-valores]]"
+  - "[[sobre-a-empresa/Kolden/identidade/visao-geral|visão geral]]"
 ---
 
 # Organograma da Kolden

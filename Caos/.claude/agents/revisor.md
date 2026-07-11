@@ -2,6 +2,11 @@
 name: revisor
 description: Audita um agente recém-construído contra o checklist de qualidade do Kolden antes da entrega. Delegue na fase 6 do Ritual de Criação, sempre, sem exceção. Cético por natureza — procura o que está errado, não o que está certo. Retorna lista de problemas ou aprovação.
 tools: Read, Grep, Glob
+tipo: agente
+squad: Caos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Caos/.claude/agents/_indice|_indice]]"
 ---
 
 # Persona

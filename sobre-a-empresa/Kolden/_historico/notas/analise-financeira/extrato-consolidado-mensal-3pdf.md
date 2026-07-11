@@ -9,6 +9,9 @@ keywords: "('Bank account statement', 'Educational scholarship programs', 'Stude
 summary: "This document is a **comprehensive monthly bank statement** from June 2018 for a Brazilian student account holder, detailing a series of **financial transactions** such as salary deposits, ATM withdrawals, and service fees. Beyond the raw ledger of debits and credits, the text serves as a promotional and educational portal for **Santander Universities**, offering the client access to **scholarship opportunities**, international exchange programs, and specialized student loans. It also incorporates essential **security guidelines** regarding ATM usage and provides a broad overview of **national economic indicators**, such as inflation and exchange rates, to assist with financial literacy. Ultimately, the source functions as both a **personal fiscal record** and a targeted engagement tool designed to support the **academic and professional development** of a university student."
 extraido_em: "2026-06-30T16:26:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (3).pdf

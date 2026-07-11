@@ -1,6 +1,11 @@
 ---
 tipo: pasta-mestre
 atualizado: 2026-07-06
+projeto: leia-me.md
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/_index|_index]]"
+  - "[[sobre-a-empresa/Projetos/_indice-antigo-clientes|_indice-antigo-clientes]]"
 ---
 
 # Projetos/

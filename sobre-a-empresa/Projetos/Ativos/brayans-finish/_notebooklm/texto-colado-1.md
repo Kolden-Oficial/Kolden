@@ -9,6 +9,10 @@ keywords: "('Strategic Growth Roadmap', 'Operational Bottleneck Resolution', 'On
 summary: "This strategic briefing outlines a comprehensive **reorganization and expansion plan** for Brayan’s Finish, a Massachusetts carpentry firm aiming to more than triple its monthly revenue. The document identifies **critical operational bottlenecks**, such as inaccurate project quoting, a lack of professional digital visibility, and the owner’s excessive involvement in daily labor. To address these issues, the company has entered a four-month partnership focused on **three pillars of optimization**: establishing a professional online presence through SEO, automating lead management via CRM, and standardizing pricing models to protect profit margins. Ultimately, the text serves as a **roadmap for professionalization**, shifting the business from a limited, social-media-dependent model to a scalable enterprise capable of securing high-value contracts with major builders."
 extraido_em: "2026-06-30T16:07:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

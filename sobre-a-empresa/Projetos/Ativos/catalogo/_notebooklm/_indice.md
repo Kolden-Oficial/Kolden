@@ -3,6 +3,30 @@ notebook_id: "6048dcbe-be11-4ae1-bf33-487b8f58946f"
 notebook_titulo: "12 | CataLogo"
 total_fontes: 25
 extraido_em: "2026-06-30T16:05:56Z"
+tipo: projeto
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/00-controle|00-controle]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/analise-de-comentáriospdf|analise-de-comentáriospdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/análise-mercado-creator-led-produto-físico|análise-mercado-creator-led-produto-físico]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/análise-mercado-creator-led-produto-físico-1|análise-mercado-creator-led-produto-físico-1]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/análise-mercado-creator-led-produto-físico-2|análise-mercado-creator-led-produto-físico-2]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/análise-mercado-creator-led-produto-físico-3|análise-mercado-creator-led-produto-físico-3]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/criadores-e-afiliados-shopee-shopee-2026|criadores-e-afiliados-shopee-shopee-2026]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/criadores-e-afiliados-shopee-shopee-2026-1|criadores-e-afiliados-shopee-shopee-2026-1]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/definição-de-público-perfeito|definição-de-público-perfeito]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/descrição-de-canal-dos-concorrentes-no-telegram|descrição-de-canal-dos-concorrentes-no-telegram]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/linha-editorial-oqcompreipdf|linha-editorial-oqcompreipdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/open-api-explorer-v2|open-api-explorer-v2]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/oq-planejamento-esteira-de-testes-de-produtospdf|oq-planejamento-esteira-de-testes-de-produtospdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/pdf-id-visualpdf|pdf-id-visualpdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/pdf-id-visualpdf-1|pdf-id-visualpdf-1]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/plano-de-ação|plano-de-ação]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/plano-de-ação-1|plano-de-ação-1]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/plano-de-ação-2|plano-de-ação-2]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/plano-de-ação-3|plano-de-ação-3]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/radar_telegram|radar_telegram]]"
 ---
 
 # Índice — 12 | CataLogo

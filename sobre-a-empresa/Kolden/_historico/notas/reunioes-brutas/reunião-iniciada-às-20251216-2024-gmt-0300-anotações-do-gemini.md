@@ -9,6 +9,9 @@ keywords: "('Funnel Conversion Optimization', 'Creative Testing Methodology', 'L
 summary: "This meeting transcript documents a **collaborative brainstorming session** between Ronan Sersil, Mateus Felipe, and Bernardo Pereira as they analyze the performance and **conversion bottlenecks** of a digital sales funnel. The primary purpose of the discussion is to move away from repetitive, \"automatic\" execution and toward a **documented, hypothesis-driven strategy** that addresses low conversion rates through rigorous data analysis and creative testing. To achieve this, the team outlines plans to centralize their operations by creating a **\"copy central\" and a \"hypothesis center,\"** which will use the **ABO methodology** to track the efficacy of different creative angles and hooks. Strategic improvements are proposed throughout the funnel, including **optimizing the initial quiz** for advanced lead data, implementing **reverse onboarding** to capture exiting traffic, and refining the **Video Sales Letter (VSL)** with sensory marketing and psychological triggers. Ultimately, the text serves as a roadmap for **validating the front-end offer** while establishing a scalable ecosystem for lead recovery and long-term business growth."
 extraido_em: "2026-06-30T16:15:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2025/12/16 20:24 GMT-03:00 - Anotações do Gemini

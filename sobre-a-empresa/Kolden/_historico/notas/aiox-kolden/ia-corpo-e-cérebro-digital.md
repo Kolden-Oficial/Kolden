@@ -9,6 +9,9 @@ keywords: "('Artificial Intelligence Anatomy', 'Multimodal Aggregators', 'Server
 summary: "This text conceptualizes modern artificial intelligence through the metaphor of a **digital humanoid**, distinguishing between the cognitive logic of the \"brain\" and the sensory capabilities of the \"body.\" While platforms like OpenRouter handle reasoning and text, the author introduces **multimodal aggregators** such as Eden AI, Replicate, and Fal.ai to serve as the robot's eyes, ears, and voice. These services simplify development by providing a **unified access point** to various specialized engines for image generation, lightning-fast audio transcription, and video creation. Ultimately, the source serves as a technical guide for **assembling a complete AI architecture**, explaining how to integrate disparate \"organs\" into a functional, interactive system."
 extraido_em: "2026-06-30T16:20:13Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # IA: Corpo e Cérebro Digital

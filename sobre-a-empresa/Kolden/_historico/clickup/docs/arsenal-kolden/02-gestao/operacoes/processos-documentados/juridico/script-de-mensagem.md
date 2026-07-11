@@ -9,6 +9,11 @@ author_ids: [60963240]
 edited_by: 60963240
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-3923
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-documentados/juridico/checklist-de-contrato|checklist-de-contrato]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-documentados/juridico/processo-juridico|processo-juridico]]"
 ---
 
 # Script de Mensagem — Jurídico (5 mensagens WhatsApp)

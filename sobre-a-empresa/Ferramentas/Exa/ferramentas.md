@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Exa — Referência de Uso
 
 Exa é um motor de busca web projetado para IAs/LLMs: faz busca semântica (neural e por palavra-chave), retorna o conteúdo limpo das páginas e crawl/scraping de URLs, além de agentes de pesquisa. Categoria: Busca/Scraping.

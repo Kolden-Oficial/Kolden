@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # MarkItDown — Referência de Uso (vendor inerte)
 
 **MarkItDown** (Microsoft) é um utilitário Python que converte arquivos diversos para **Markdown

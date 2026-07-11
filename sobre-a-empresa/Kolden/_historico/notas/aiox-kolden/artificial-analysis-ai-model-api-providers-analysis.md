@@ -9,6 +9,9 @@ keywords: "('AI Model Benchmarking', 'Intelligence Evaluations', 'API Provider P
 summary: "Artificial Analysis serves as an independent benchmarking platform that evaluates the complex ecosystem of **artificial intelligence models and API providers**. By utilizing a proprietary **Intelligence Index**, the site offers a comparative look at industry leaders like OpenAI, Google, and Anthropic across critical metrics such as **reasoning capabilities, output speed, and cost-efficiency**. Beyond simple rankings, the resource provides specialized leaderboards for **image and video generation**, as well as granular data on hardware performance and hallucination rates. Ultimately, this comprehensive data suite acts as a decision-making tool for users to navigate the trade-offs between **frontier model performance and operational pricing**."
 extraido_em: "2026-06-30T16:18:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Artificial Analysis: AI Model & API Providers Analysis

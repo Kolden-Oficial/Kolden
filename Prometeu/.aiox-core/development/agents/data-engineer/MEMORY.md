@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Prometeu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/agents/data-engineer|data-engineer]]"
+---
+
 # Memória do Agente Data Engineer (Dara)
 
 ## Padrões Ativos

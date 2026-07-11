@@ -9,6 +9,9 @@ keywords: "('Fraud prevention tips', 'Banking security measures', 'Monthly accou
 summary: "This document serves as a **monthly consolidated bank statement** for a customer of Santander Brazil, outlining specific financial activity and account details for February 2023. Beyond reporting on a **university service package** and various **economic indices** like inflation and currency rates, the text functions primarily as a critical **security guide to prevent fraud**. It provides explicit instructions on **safe card usage** and warns against common scams, such as deceptive phone calls or \"false couriers\" attempting to collect physical credit cards. Ultimately, the source combines **account transparency** with **proactive consumer protection** by detailing available insurance options and providing comprehensive contact information for customer support and dispute resolution."
 extraido_em: "2026-06-30T16:26:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (62).pdf

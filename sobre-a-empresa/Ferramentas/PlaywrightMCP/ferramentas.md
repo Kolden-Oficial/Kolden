@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Playwright MCP — Referência de Uso (vendor inerte)
 
 **Playwright MCP** (`@playwright/mcp`, Microsoft) é um **servidor MCP (stdio) de controle de navegador**

@@ -3,6 +3,15 @@ titulo: Avaliação de maturidade de design — Kolden (3 lentes de DesignOps)
 status: rascunho-proposta
 data: 2026-06-23
 autor: Harmonia/dave-malouf
+tipo: nota
+area: iniciativas
+up: "[[sobre-a-empresa/Kolden/iniciativas/_MOC-iniciativas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/arquetipo|arquetipo]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/identity-prism|identity-prism]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/posicionamento|posicionamento]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/proposta-mensagens-chave|proposta-mensagens-chave]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/proposta-voz-e-tom|proposta-voz-e-tom]]"
 ---
 
 # Avaliação de maturidade de design — Kolden

@@ -9,6 +9,9 @@ keywords: "('Telegram integration approval', 'Configuration error fix', 'Dashboa
 summary: "This guide serves as a practical walkthrough for finalizing the setup of **OpenClaw**, focusing on the successful **authentication of a Telegram account** as the primary controller. The text clarifies that initial errors were merely signs of completed pairing or minor **syntax mistakes in the command line**, which are easily bypassed by transitioning to a more user-friendly environment. By accessing a **web-based dashboard** via a unique local link, the user can bypass complex coding to manually select a **free AI model** through a visual interface. Ultimately, the text empowers the user to transition from technical troubleshooting to a functional **\"NASA-level\" control room** where they can manage their bot’s \"brain\" with ease."
 extraido_em: "2026-06-30T16:21:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # OpenClaw: Configuração e Integração Telegram

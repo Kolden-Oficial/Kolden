@@ -3,6 +3,10 @@ notebook_id: "ba162270-feda-499a-b4db-a06031fea39f"
 notebook_titulo: "Oye"
 total_fontes: 1
 extraido_em: "2026-06-30T16:07:14Z"
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/oye/reunião-iniciada-às-20260326-2027-gmt-0300-anotações-do-gemini|reunião-iniciada-às-20260326-2027-gmt-0300-anotações-do-gemini]]"
 ---
 
 # Índice — Oye

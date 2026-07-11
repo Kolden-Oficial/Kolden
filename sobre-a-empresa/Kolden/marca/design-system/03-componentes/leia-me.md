@@ -7,6 +7,14 @@ palavras-chave: [design-system, componentes, ui, starter, acessibilidade, tokens
 status: vigente
 atualizado-em: 2026-06-22
 relacionados: [ds-leia-me, ds-tokens, ds-cores, ds-tipografia]
+tipo: nota
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/design-system/04-aplicacoes/exemplos|aplicações]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/cores|cores]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/leia-me|design system]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tipografia|tipografia]]"
 ---
 
 # Componentes (starter)

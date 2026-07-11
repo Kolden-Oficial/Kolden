@@ -12,6 +12,11 @@ autores_agentes:
 contrato: m-20260701-112935-rosie-90d
 data: 2026-07-01
 status: v0 — para apresentação Bruno
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/README|README]]"
 ---
 
 # Estrutura de mídia paga — Rosie 90d

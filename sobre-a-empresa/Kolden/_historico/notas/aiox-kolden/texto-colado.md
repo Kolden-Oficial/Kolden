@@ -9,6 +9,9 @@ keywords: "('Project source code', 'GitHub repository', 'Information documentati
 summary: "The provided text serves as a direct invitation to explore a comprehensive **digital repository** located on GitHub. It highlights that the entirety of the project’s **source code and data** are housed within this specific online space for public access. By urging the reader to **examine the documentation thoroughly**, the author emphasizes the importance of transparency and deep investigation. Ultimately, the message acts as a foundational guide for anyone seeking to understand the **technical structure and core logic** of the Kolden project."
 extraido_em: "2026-06-30T16:22:07Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Texto colado

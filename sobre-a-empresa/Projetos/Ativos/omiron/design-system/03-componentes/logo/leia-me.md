@@ -22,6 +22,12 @@ relacionados:
   - ./showcase.html
   - ../../../brandbook.html
   - ../../../apresentacao/index.html
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/design-system/02-tokens/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/design-system/03-componentes/leia-me|leia-me]]"
 ---
 
 # Monograma Imperial — leia-me

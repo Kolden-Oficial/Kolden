@@ -9,6 +9,9 @@ keywords: "('Fraud prevention', 'Home insurance', 'Banking services', 'Customer 
 summary: "This document is a **consolidated monthly statement** from November 2020 addressed to a client named Ronan regarding his **university-tier bank account** at Santander. Beyond summarizing account services and a pending monthly fee, the text serves as a **safety and promotional guide** that advises the user on how to **detect fraudulent payment slips** and avoid scams. It also encourages the adoption of convenience features like **automatic bill payments** for utilities and the purchase of **residential insurance policies** to protect against theft and damage. Finally, the source provides an extensive directory of **customer support channels** alongside a detailed table of **economic indicators**, such as inflation rates and currency valuations, to keep the client informed of the broader financial climate."
 extraido_em: "2026-06-30T16:26:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (34).pdf

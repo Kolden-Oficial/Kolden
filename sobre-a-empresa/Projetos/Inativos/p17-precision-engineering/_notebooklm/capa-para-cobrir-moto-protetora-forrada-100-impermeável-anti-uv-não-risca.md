@@ -9,6 +9,10 @@ keywords: "('Motorcycle protective covers', 'Waterproofing and durability', 'UV 
 summary: "This source consists of an Amazon Brazil product page for a **protective motorcycle cover** manufactured by the brand Shop-Vision. The text highlights the product's primary utility as a **100% waterproof and UV-resistant shield** designed to safeguard vehicles from environmental hazards like solar damage, rain, and debris. Through a layout of technical specifications and customer reviews, the document emphasizes the use of **textured polyethylene** and a universal fit tailored for specific models such as the Honda FAN 160. Ultimately, the page serves as a commercial interface, balancing **marketing claims of durability** against varied consumer feedback regarding the material's actual thickness and quality."
 extraido_em: "2026-06-30T16:09:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa Para Cobrir Moto Protetora Forrada 100% Impermeável Anti-uv Não Risca Texturizada (FAN 160) _ Amazon.com.br.pdf

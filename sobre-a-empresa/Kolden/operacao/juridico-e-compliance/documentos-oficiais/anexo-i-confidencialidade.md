@@ -9,6 +9,10 @@ keywords: "('Confidentiality obligations', 'Data protection measures', 'Informat
 summary: "This document functions as a formal **non-disclosure agreement** integrated into a digital marketing contract to ensure that sensitive business, technical, and strategic data remain private. It establishes a broad definition of **proprietary information**, including third-party secrets and internal marketing strategies, while mandating strict **security measures** like encryption and restricted access to prevent leaks. The agreement remains enforceable for **five years following the contract's end**, imposing a significant **financial penalty** for any unauthorized disclosures. Ultimately, its purpose is to create a legally binding framework of **mutual trust** by outlining clear exceptions, safety protocols, and the legal jurisdiction governing the partnership."
 extraido_em: "2026-06-30T16:10:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Anexo I - Confidencialidade

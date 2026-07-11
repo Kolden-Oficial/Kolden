@@ -9,6 +9,10 @@ keywords: "('Data Strategy', 'Digital Activities', 'Systems Integration', 'Consu
 summary: "This presentation from WPP outlines a strategic roadmap for transitioning from a fragmented data landscape to a unified, **real-time insight ecosystem**. The authors highlight a common industry struggle where valuable information is often **trapped in static files** or disconnected departments, proposing instead a \"desired state\" defined by **integrated data streams** and a comprehensive view of the customer. By showcasing case studies that link digital activity to physical sales, WPP demonstrates its **leading position in media technology** and its ability to leverage proprietary platforms for audience buying. Ultimately, the text serves to prove how the organization achieves **strong growth** by consolidating diverse data tributaries into a single, functional **data commons** for its global clients."
 extraido_em: "2026-06-30T16:12:02Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # Data: Our Approach & Case Studies - WPP

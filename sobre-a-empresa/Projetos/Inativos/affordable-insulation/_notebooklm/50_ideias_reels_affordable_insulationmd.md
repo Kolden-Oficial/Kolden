@@ -9,6 +9,10 @@ keywords: "('Spray Foam Insulation', 'Energy Efficiency', 'Construction Partners
 summary: "This comprehensive guide outlines fifty strategic video concepts designed to boost the digital presence of an insulation company through high-engagement short-form content. The strategy is meticulously structured into five categories that target different stages of the customer journey, ranging from **visually satisfying demonstrations** of spray foam to **educational deep dives** on energy efficiency and technical codes. By specifically addressing the needs of both **homeowners and professional contractors**, the plan aims to build trust through professional transparency and proof of reliability. Ultimately, the document serves as a marketing blueprint to establish **brand authority and operational excellence** within the competitive New England construction market."
 extraido_em: "2026-06-30T16:06:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # 50_Ideias_Reels_Affordable_Insulation.md

@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Nomos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Nomos/agents/nomos-chief|nomos-chief]]"
+---
+
 # Gestor de Contratos
 
 > Especialista (tier 1) do squad **Nomos**. Cuida de **gestão e revisão de contratos** — leitura de

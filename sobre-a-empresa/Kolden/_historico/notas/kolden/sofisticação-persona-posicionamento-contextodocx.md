@@ -9,6 +9,9 @@ keywords: "('Ad hook strategies', 'Visual pattern breaking', 'Call to action', '
 summary: "This document serves as a comprehensive framework for crafting high-performance advertisements by focusing on **immediate audience engagement** and structural clarity. It emphasizes that a successful creative must instantly **disrupt the viewer's patterns** within three seconds while offering a solution that triggers a visceral desire for the product. To ensure conversion, the text advocates for a **radically simple call to action** that even a novice could navigate, paired with proven copywriting formulas like **AIDA**. Ultimately, the guide functions as a strategic checklist to guarantee that every marketing piece moves logically from **capturing attention to driving decisive action**."
 extraido_em: "2026-06-30T16:17:27Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # [SOFISTICAÇÃO] [PERSONA] [POSICIONAMENTO] - Contexto.docx

@@ -9,6 +9,9 @@ keywords: "('Vector Search Engine', 'AI Retrieval', 'Hybrid Cloud Deployment', '
 summary: "Qdrant is presented as a **high-performance vector search engine** designed to overcome the limitations of traditional search frameworks through its **Rust-based architecture**. The text details a comprehensive ecosystem that includes **hybrid cloud deployment**, advanced **metadata filtering**, and native support for both **dense and sparse vectors**. By focusing on **production-grade AI applications**, the platform serves diverse use cases such as **retrieval-augmented generation (RAG)**, recommendation systems, and autonomous **AI agents**. Ultimately, the source serves as a technical overview and product catalog intended to show developers and enterprises how to achieve **scalable, real-time data retrieval** with high precision."
 extraido_em: "2026-06-30T16:21:51Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Qdrant - Vector Search Engine

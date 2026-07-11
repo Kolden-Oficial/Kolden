@@ -3,6 +3,15 @@ notebook_id: "b3b79974-a32b-4cdf-b409-d78c539cd9d3"
 notebook_titulo: "04 | Mat3vic"
 total_fontes: 5
 extraido_em: "2026-06-30T16:05:48Z"
+tipo: projeto
+projeto: mat3vic
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/mat3vic/_notebooklm/9png|9png]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/mat3vic/_notebooklm/contrato_mat3vic_koldenpdf|contrato_mat3vic_koldenpdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/mat3vic/_notebooklm/icp-posicionamento|icp-posicionamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/mat3vic/_notebooklm/reunião-iniciada-às-2026_05_12-20_32-gmt-03_00-anotações-do-gemini-2docx|reunião-iniciada-às-2026_05_12-20_32-gmt-03_00-anotações-do-gemini-2docx]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/mat3vic/_notebooklm/reunião-iniciada-às-2026_05_14-20_51-gmt-03_00-anotações-do-geminidocx|reunião-iniciada-às-2026_05_14-20_51-gmt-03_00-anotações-do-geminidocx]]"
 ---
 
 # Índice — 04 | Mat3vic

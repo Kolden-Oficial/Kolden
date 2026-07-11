@@ -8,6 +8,14 @@ status: rascunho
 atualizado-em: 2026-06-25
 relacionados: [icp-e-personas, posicionamento, metricas-e-okrs, area-receita, processos]
 fontes: drive--02-comercial
+tipo: nota
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/areas/receita|receita]]"
+  - "[[sobre-a-empresa/Kolden/mercado/concorrencia|concorrencia]]"
+  - "[[sobre-a-empresa/Kolden/mercado/icp-e-personas|icp-e-personas]]"
+  - "[[sobre-a-empresa/Kolden/mercado/posicionamento|posicionamento]]"
 ---
 
 # Ofertas e Produtos

@@ -9,6 +9,10 @@ keywords: "('Doctor Search Portal', 'Medical Ethics Codes', 'Physician Professio
 summary: "The provided source is the official digital portal of the **Federal Council of Medicine (CFM)** in Brazil, serving as a comprehensive **regulatory and informational hub** for healthcare professionals and the public. Its primary function is to offer a **searchable database of physicians**, allowing users to verify a doctor's credentials, **specialization**, and registration status across different states. Beyond its search utility, the platform organizes essential resources regarding **medical ethics**, legal compliance with data protection laws, and professional services such as **electronic prescriptions** and digital certification. Ultimately, the site functions as a vital instrument for **transparency and professional oversight**, ensuring that medical practice in the country adheres to established codes and official standards."
 extraido_em: "2026-06-30T16:07:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Busca por médicos | Portal Médico - CFM

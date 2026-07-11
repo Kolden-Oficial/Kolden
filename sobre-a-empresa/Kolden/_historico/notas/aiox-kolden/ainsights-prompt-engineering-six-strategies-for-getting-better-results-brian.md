@@ -9,6 +9,9 @@ keywords: "('Prompt Engineering', 'Generative AI', 'Disruptive Technology', 'Ins
 summary: "In this article, digital futurist Brian Solis presents a structured framework for **optimizing interactions with generative AI**, based on foundational strategies released by OpenAI. The text serves as a practical guide for users to transition from basic queries to **expert-level prompt engineering** by emphasizing clarity, modularity, and logical rigor. Solis distills these advanced techniques into six core pillars, including **splitting complex tasks into simpler subtasks** and providing the model with **reference text** to reduce factual errors. By encouraging users to **test changes systematically** and leverage external tools for specialized data, the author advocates for a more scientific and experimental approach to technology. Ultimately, the work aims to help professionals **reinvent business processes** by moving past legacy thinking and mastering the nuanced art of directing artificial intelligence."
 extraido_em: "2026-06-30T16:17:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # AInsights: Prompt Engineering: Six Strategies for Getting Better Results - Brian Solis

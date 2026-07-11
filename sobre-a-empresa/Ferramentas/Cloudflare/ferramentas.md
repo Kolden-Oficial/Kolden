@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Cloudflare — Referência de Uso
 
 Cloudflare é uma plataforma global de infraestrutura e segurança (CDN, DNS, WAF, Workers/serverless, Pages, R2, túneis, Zero Trust). Categoria: Infra/Deploy. Toda a infraestrutura é controlável via API REST programática.

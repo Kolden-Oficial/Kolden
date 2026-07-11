@@ -9,6 +9,9 @@ keywords: "('LLM Performance Rankings', 'Model Parameter Count', 'Local Model De
 summary: "This Reddit thread serves as a community discussion regarding a **2026 leaderboard for open-source large language models**, primarily hosted on the Onyx platform. Users analyze the **efficacy of various AI models**, such as Qwen 3.5 and GLM-5, while debating whether performance is simply a result of **high parameter counts** or more complex factors. The conversation highlights a tension between **synthetic benchmark rankings** and the practical, nuanced needs of users, including **cost-effectiveness, creative writing quality, and hardware accessibility**. Ultimately, the text functions as a collaborative evaluation of the **rapidly evolving landscape of local AI**, seeking to identify which tools truly offer the best utility for self-hosted environments."
 extraido_em: "2026-06-30T16:21:15Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Open sourced LLM ranking 2026 : r/LocalLLaMA - Reddit

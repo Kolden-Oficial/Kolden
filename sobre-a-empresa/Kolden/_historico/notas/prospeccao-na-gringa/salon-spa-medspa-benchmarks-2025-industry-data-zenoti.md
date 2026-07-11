@@ -9,6 +9,9 @@ keywords: "('Industry revenue benchmarks', 'Membership growth models', 'Customer
 summary: "The 2025 Beauty and Wellness Benchmark Report by Zenoti offers a data-driven analysis of the industry's health, drawing on performance metrics from over **30,000 global businesses**. The document identifies **membership revenue models** and **strategic physical expansion** as the primary engines of growth, noting that these approaches helped many brands outpace a modest 2% industry-wide revenue increase. A central theme of the report is the **critical importance of customer retention**, revealing that a small group of loyal, repeat guests generates the vast majority of total sales. By providing specific KPIs such as **staff utilization, online booking rates, and average ticket sizes**, the text serves as a strategic roadmap for owners to modernize their operations through **digital transformation and automated client engagement**."
 extraido_em: "2026-06-30T16:27:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # Salon, Spa & Medspa Benchmarks 2025: Industry Data | Zenoti

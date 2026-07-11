@@ -9,6 +9,9 @@ keywords: "('Sales funnel projection', 'Conversion rate analysis', 'Sales goal s
 summary: "This document provides a strategic **sales funnel projection tool** designed to help agencies reverse-engineer their commercial targets. By inputting a specific **final sales goal**, the framework calculates the necessary volume of leads required at every preceding stage, from initial research to the closing deal. The model relies on specific **conversion rates** between phases—such as prospecting, meetings, and negotiations—to reveal the **mathematical path to success**. Ultimately, it serves as a roadmap that transforms abstract revenue objectives into **actionable metrics** for each level of the sales cycle."
 extraido_em: "2026-06-30T16:14:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Projeção Funil de Vendas  - Bench Funil de Vendas

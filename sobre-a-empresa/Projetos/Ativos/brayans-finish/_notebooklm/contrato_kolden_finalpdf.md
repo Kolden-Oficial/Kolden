@@ -9,6 +9,10 @@ keywords: "('Digital marketing services', 'Contractual payment terms', 'Paid tra
 summary: "This document outlines a **digital marketing services agreement** between a client and a specialized agency, detailing a four-month collaboration focused on **online visibility and operational infrastructure**. The provider commits to a multi-faceted strategy involving **web development, CRM implementation, and paid advertising management**, while the client remains responsible for direct media costs and lead conversion. Financially, the contract establishes a **fixed fee structure** totaling 1,800 USD, supplemented by a **performance-based bonus** to incentivize high-quality results. Ultimately, the text functions as a legal framework that defines **mutual obligations and risk management**, explicitly stating that while strategic support is guaranteed, specific commercial outcomes cannot be promised due to external market variables."
 extraido_em: "2026-06-30T16:07:25Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/_indice|_indice]]"
 ---
 
 # contrato_kolden_final.pdf

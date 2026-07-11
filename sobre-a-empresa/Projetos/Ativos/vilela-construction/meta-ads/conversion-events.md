@@ -13,6 +13,11 @@ depende_de:
   - "diagnostico-meta-pixel-2026-07.md"
   - "../google-ads/conversion-actions.md §5 (valor de conversão dinâmico — reuso obrigatório)"
   - "../ghl-shadow-integration.md §3 (workflow GHL — extensão CAPI)"
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/meta-ads/diagnostico-meta-pixel-2026-07|diagnostico-meta-pixel-2026-07]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/meta-ads/qa-checklist|qa-checklist]]"
 ---
 
 # Spec técnica — Eventos Meta Pixel + Conversions API Vilela Construction

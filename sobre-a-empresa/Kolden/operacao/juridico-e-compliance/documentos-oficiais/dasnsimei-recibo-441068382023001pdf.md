@@ -9,6 +9,10 @@ keywords: "('Declaração Anual SIMEI', 'Taxpayer Information', 'Annual Gross Re
 summary: "This document serves as an **official tax receipt** confirming the submission of the **annual declaration** for an individual micro-entrepreneur (MEI) in Brazil for the 2023 fiscal year. It provides a comprehensive **summary of monthly tax contributions**, specifically highlighting payments made toward social security and service taxes. Furthermore, the report details the business's **socioeconomic performance**, declaring a total gross revenue of 4,500.00 BRL and confirming that the entity operated without employees. Ultimately, this filing acts as a **compliance record** to ensure the taxpayer remains in good standing with the national simplified tax regime."
 extraido_em: "2026-06-30T16:12:01Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # DASNSIMEI-Recibo-441068382023001.pdf

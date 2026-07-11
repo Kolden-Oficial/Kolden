@@ -9,6 +9,9 @@ keywords: "('Customer Support Channels', 'Service Package Details', 'Economic Pe
 summary: "This document is a **consolidated monthly statement** from Santander Brazil for December 2023, providing a comprehensive overview of a specific **university checking account**. The text outlines essential **customer service contact information**, including specialized support for those with disabilities and international callers, alongside a breakdown of **monthly service quotas** and pending fees. Furthermore, it serves as an educational resource by listing various **economic indices and currency exchange rates**, while emphasizing critical **security protocols** to help the user identify and prevent fraudulent activity."
 extraido_em: "2026-06-30T16:26:39Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (72).pdf

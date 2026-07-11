@@ -9,6 +9,9 @@ keywords: "('CLI reference', 'CLI commands', 'CLI flags', 'System prompt flags',
 summary: "This documentation serves as a comprehensive **technical reference for the Claude Code command-line interface**, detailing the specific syntax required to interact with the AI assistant through a terminal. It outlines a structured ecosystem of **CLI commands and flags** that allow developers to initiate sessions, manage authentication, and resume previous conversations using unique session IDs. Beyond basic interaction, the guide explains advanced features for **environment customization**, such as modifying system prompts, integrating Model Context Protocol (MCP) servers, and controlling **permission levels** for automated tool execution. Ultimately, the text functions as a functional blueprint for users to **programmatically or interactively integrate Claude** into their local development workflows and file systems."
 extraido_em: "2026-06-30T16:18:37Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # CLI reference - Claude Code Docs

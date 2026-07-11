@@ -9,6 +9,9 @@ keywords: "('Digital Marketing Proposal', 'Website Development', 'Social Media M
 summary: "This document serves as a **comprehensive commercial proposal** authored by Nikole Figueiredo, outlining a multi-faceted digital marketing strategy designed to bolster a brand's online presence. The author details a suite of specialized services including **web development, social media management, and paid traffic orchestration**, each accompanied by specific pricing and structured execution phases. Beyond technical implementation, the proposal emphasizes a **data-driven methodology** through the use of monthly performance reports, CRM integration, and customer success protocols to ensure long-term growth. Ultimately, the text functions as a **strategic roadmap** that aligns creative content production with rigorous market analysis to convert target audiences into loyal clients."
 extraido_em: "2026-06-30T16:14:47Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Proprosta - MARKETING GERAL.pdf

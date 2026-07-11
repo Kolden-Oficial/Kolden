@@ -6,6 +6,11 @@ segmento: "Educação financeira presencial para a comunidade latina (seminário
 status: "ativo"
 drive_folder_id: "1vec51h2bzGuUln_jEliZ6NMuicFT1l6b"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/site-copy|site-copy]]"
 ---
 
 # Dossiê — Stass

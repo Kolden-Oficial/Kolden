@@ -7,6 +7,11 @@ palavras-chave: [copy, vendas, landing-page, caliope, joanna-wiebe, hormozi]
 status: rascunho
 atualizado-em: 2026-07-06
 relacionados: [leia-me, prd, brandbook/01-posicionamento, brandbook/02-voz-da-marca]
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/dossie|dossie]]"
 ---
 
 # Copy de Venda Direta — NutriOS Pro

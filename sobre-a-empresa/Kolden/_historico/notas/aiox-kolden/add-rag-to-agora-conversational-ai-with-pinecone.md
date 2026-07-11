@@ -9,6 +9,9 @@ keywords: "('Conversational AI', 'RAG Integration', 'Pinecone Vector Database', 
 summary: "This technical guide details how to enhance **real-time voice applications** by integrating **Retrieval-Augmented Generation (RAG)** using the **Agora** platform and **Pinecone** vector database. The primary objective is to eliminate **AI hallucinations** and provide agents with access to **domain-specific knowledge** by retrieving relevant data during live conversations. By utilizing a **Node.js proxy server**, developers can intercept user queries, perform **semantic searches** for context, and inject that information into the large language model’s prompt. While the author acknowledges challenges like **network latency** and **multi-turn context retention**, the text serves as a comprehensive roadmap for building **grounded, production-ready AI agents** capable of maintaining fluid and accurate human-like interactions."
 extraido_em: "2026-06-30T16:18:07Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Add RAG to Agora Conversational AI with Pinecone

@@ -6,6 +6,9 @@ segmento: "sem registro no Drive"
 status: "ativo"
 drive_folder_id: "1LL5o7usu-rkuXFUosEdWvhTJbB-mMqjm"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: vibracoes-celestiais
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Vibrações Celestiais

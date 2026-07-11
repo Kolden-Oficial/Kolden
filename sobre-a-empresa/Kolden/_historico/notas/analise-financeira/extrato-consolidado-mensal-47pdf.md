@@ -9,6 +9,9 @@ keywords: "('Fraud prevention tips', 'Bank account services', 'Personal credit l
 summary: "This document serves as a **consolidated monthly statement** from December 2021 for a Santander client named Ronan Sergio Silva, detailing his **account summary, credit limits, and service fees**. Beyond personal financial data, the text functions as a critical **security guide**, warning users about common digital threats like **malicious links** and the \"false courier\" scam while offering **transaction insurance** for digital transfers. Finally, the report provides a comprehensive overview of **economic indices** and institutional **contact channels**, establishing a formal record that balances individual banking activity with broad **fraud prevention education**."
 extraido_em: "2026-06-30T16:26:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (47).pdf

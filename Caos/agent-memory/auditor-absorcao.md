@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Caos
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Caos/agent-memory/caos|caos]]"
+---
+
 # Memória do Agente auditor-absorcao
 
 > Memória de um auditor adversarial EXTERNO (não-Caos) que diagnostica o pipeline de absorção.

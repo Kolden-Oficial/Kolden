@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/mcp-solomon/adr/0001-path-isolado-por-cliente|0001-path-isolado-por-cliente]]"
+---
+
 # ADR 0002 — Stack Node/TypeScript
 
 **Status:** Aceito | **Data:** 2026-07-01 | **Decisor:** Ronan Silva + Caos | **Aprovação:** Ronan

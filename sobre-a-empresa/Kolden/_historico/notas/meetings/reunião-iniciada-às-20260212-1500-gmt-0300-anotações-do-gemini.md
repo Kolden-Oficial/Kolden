@@ -9,6 +9,9 @@ keywords: "('Personal Brand Strategy', 'Visual Identity Symbolism', 'Content Pro
 summary: "This meeting transcript documents a strategic collaboration between **Ronan Sersil** and **Julia Tiote** regarding personal branding and digital growth. Sersil outlines his vision for a high-level personal profile built on the **TPC framework (Talent, Personality, Creativity, and Consistency)**, utilizing a \"wisdom\" archetype and sophisticated visual symbolism—such as a custom gemstone necklace—to attract a premium audience to his **\"Coder\" ecosystem**. The partnership is structured as a **value exchange**: Tiote will provide creative direction for Sersil’s lifestyle content, while Sersil offers his expertise in **paid traffic strategies** and sales funnels to improve Tiote's online presence. Central to their workflow is the use of **AI optimization**, specifically leveraging **Google Gemini and NotebookLM** to synthesize client data into high-conversion content ideas and streamlined production schedules."
 extraido_em: "2026-06-30T16:24:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/12 15:00 GMT-03:00 - Anotações do Gemini

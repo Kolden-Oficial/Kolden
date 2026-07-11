@@ -3,6 +3,11 @@ notebook_id: "df618209-61ff-4439-b3ae-8bce571cde8f"
 notebook_titulo: "Plano de Guerra: Reestruturação Comercial Kolden e SuperBenefícios"
 total_fontes: 1
 extraido_em: "2026-06-30T16:07:13Z"
+tipo: projeto
+projeto: super-beneficios
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/super-beneficios/_notebooklm/plano-de-guerra/alinhamento-operacional-kolden-superbeneficios-20260309-1516-gmt-0300-anotações|alinhamento-operacional-kolden-superbeneficios-20260309-1516-gmt-0300-anotações]]"
 ---
 
 # Índice — Plano de Guerra: Reestruturação Comercial Kolden e SuperBenefícios

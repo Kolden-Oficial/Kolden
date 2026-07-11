@@ -7,6 +7,11 @@ palavras-chave: [decisoes, adr, log]
 status: rascunho
 atualizado-em: 2026-06-18
 relacionados: [arquitetura]
+tipo: projeto
+projeto: decisoes.md
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/_modelo/dossie|dossie]]"
 ---
 
 # Log de Decisões — <Nome do Projeto>

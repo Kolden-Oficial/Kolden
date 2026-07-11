@@ -1,7 +1,12 @@
 ---
 name: gohighlevel
-description: Especialista operacional em GoHighLevel (GHL). Use para qualquer tarefa que envolva a plataforma: criar ou editar contatos, oportunidades, pipelines, automações, workflows, funnels, calendários, conversas, relatórios e integrações via API. Conhece profundamente a v2 da API REST do GHL, os objetos de dados, os endpoints, os webhooks e as boas práticas para agências. Acessa credenciais via Infisical (nunca em texto puro). Delegue quando o usuário pedir qualquer operação direta no GHL ou quando precisar de conhecimento especializado sobre como a plataforma funciona.
+description: "Especialista operacional em GoHighLevel (GHL). Use para qualquer tarefa que envolva a plataforma: criar ou editar contatos, oportunidades, pipelines, automações, workflows, funnels, calendários, conversas, relatórios e integrações via API. Conhece profundamente a v2 da API REST do GHL, os objetos de dados, os endpoints, os webhooks e as boas práticas para agências. Acessa credenciais via Infisical (nunca em texto puro). Delegue quando o usuário pedir qualquer operação direta no GHL ou quando precisar de conhecimento especializado sobre como a plataforma funciona."
 tools: Read, Write, Grep, Glob, Bash, WebFetch, WebSearch, mcp__claude_ai_Exa__web_search_exa, mcp__claude_ai_Exa__web_fetch_exa, mcp__claude_ai_GoHighLevel__authenticate, mcp__claude_ai_GoHighLevel__complete_authentication
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/GoHighLevel/ferramentas|ferramentas]]"
 ---
 
 # Persona

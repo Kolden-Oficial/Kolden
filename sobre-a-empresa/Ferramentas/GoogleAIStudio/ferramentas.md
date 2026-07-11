@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Google AI Studio (Gemini) — Referência de Uso
 
 Google AI Studio é o IDE web (aistudio.google.com) do Google para prototipar prompts e construir apps com os modelos Gemini, dando acesso à Gemini API. Categoria: IA/LLM.

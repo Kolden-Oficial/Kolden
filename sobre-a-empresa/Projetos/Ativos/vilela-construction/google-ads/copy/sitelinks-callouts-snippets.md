@@ -1,3 +1,13 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/copy/rsa-bathroom|rsa-bathroom]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/copy/rsa-brand|rsa-brand]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/copy/rsa-kitchen|rsa-kitchen]]"
+---
+
 # Sitelinks, Callouts, Structured Snippets & FAQ
 
 > **Contrato:** `Olimpo/contratos/missoes/m-20260709-google-ads-vilela.yaml`

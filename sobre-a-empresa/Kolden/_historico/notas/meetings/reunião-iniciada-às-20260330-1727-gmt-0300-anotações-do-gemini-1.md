@@ -9,6 +9,9 @@ keywords: "('Spreadsheet Column Optimization', 'Material Consumption Tracking', 
 summary: "This meeting transcript documents the collaborative refinement of a construction material and pricing spreadsheet between Kaylon Teixeira and Ronan Sersil. The primary purpose of the session was to **standardize data organization and automate workflow calculations**, specifically by adding fields for tracking actual material consumption, labor crew details, and job durations. A significant technical discussion focuses on implementing a **seven-day service estimate** derived by dividing total material units by a specific efficiency factor. The duo also establishes a secure data management process by **duplicating master templates into client-specific Google Drive folders** to prevent data loss and ensure pricing consistency. Finally, the records detail a shift toward a more strategic financial model, where **profit margins are applied to the total project price** rather than individual items to maintain better control over final commissions."
 extraido_em: "2026-06-30T16:25:04Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/30 17:27 GMT-03:00 - Anotações do Gemini

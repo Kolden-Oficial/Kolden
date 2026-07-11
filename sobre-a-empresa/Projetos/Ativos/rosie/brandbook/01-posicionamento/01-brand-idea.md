@@ -7,6 +7,11 @@ palavras-chave: [brandbook, rosie, brand-idea, posicionamento]
 status: oficial
 atualizado-em: 2026-06-23
 relacionados: [00-posicionamento, 02-marca-conceito]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/00-indice|00-indice]]"
 ---
 
 # Brand Idea

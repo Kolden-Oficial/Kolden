@@ -6,6 +6,12 @@ categoria: projeto
 status: oficial
 atualizado-em: 2026-07-03
 relacionados: [../../brandbook/03-identidade-visual, ../../design-system/02-tokens/tokens.json, ../../decisoes]
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/kolden-nutrios-alinhamento-do-projeto-20260331-1659-gmt-0300-anotações-do-gemini|kolden-nutrios-alinhamento-do-projeto-20260331-1659-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/logo-e-paletas-de-corespdf|logo-e-paletas-de-corespdf]]"
 ---
 
 # Notas dos assets finais — 2026-06-30

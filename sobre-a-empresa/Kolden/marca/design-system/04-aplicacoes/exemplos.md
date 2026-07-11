@@ -7,6 +7,12 @@ palavras-chave: [design-system, aplicacoes, exemplos, mockups, dos-and-donts]
 status: vigente
 atualizado-em: 2026-06-22
 relacionados: [ds-leia-me, ds-cores, ds-logo, ds-tom-visual]
+tipo: nota
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/design-system/03-componentes/leia-me|componentes]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/leia-me|design system]]"
 ---
 
 # Aplicações e exemplos

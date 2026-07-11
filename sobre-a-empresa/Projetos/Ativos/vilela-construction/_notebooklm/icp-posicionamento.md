@@ -9,6 +9,10 @@ keywords: "('Residential construction services', 'Paid media management', 'Lead 
 summary: "This document outlines a strategic **onboarding and positioning framework** for Vilela Construction as they partner with Kolden agency to modernize their business operations. The text details a shift from organic referrals to a **structured digital marketing strategy**, specifically focusing on high-ticket residential projects like basements to capitalize on a narrow seasonal sales window. Beyond immediate lead generation, the plan emphasizes **professionalizing the corporate identity** by decoupling the brand from the owner’s personal image and establishing a physical office presence. Ultimately, these tactical improvements in **paid media and client management** serve the long-term objective of optimizing business processes to facilitate a profitable sale of the company within three years."
 extraido_em: "2026-06-30T16:07:47Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/_notebooklm/_indice|_indice]]"
 ---
 
 # ICP & Posicionamento

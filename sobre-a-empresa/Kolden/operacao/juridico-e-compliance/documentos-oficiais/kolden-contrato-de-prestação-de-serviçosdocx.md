@@ -9,6 +9,10 @@ keywords: "('Digital marketing services', 'Contractual obligations', 'Service du
 summary: "This document functions as a formal **service agreement** between the agency Kolden and their client, Marco Aurélio Limeres, outlining a partnership for **digital marketing strategies** such as data intelligence and paid traffic management. Established in February 2024, the contract mandates a **six-month commitment** and specifies that payments are to be settled monthly via PIX. Beyond defining operational duties, the text serves as a legal safeguard by establishing **intellectual property rights** for the client and strict **confidentiality obligations** for both parties. Ultimately, the agreement provides a structured framework for professional collaboration, including clear protocols for **scope adjustments** and contract termination."
 extraido_em: "2026-06-30T16:17:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # [KOLDEN] Contrato de Prestação de Serviços.docx

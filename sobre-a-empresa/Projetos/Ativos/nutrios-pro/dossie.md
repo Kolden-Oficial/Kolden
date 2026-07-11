@@ -7,6 +7,17 @@ status: "ativo"
 drive_folder_id: "1HDXtcjQnCFwUvDvmiNhiknmlatjUp3l-"
 workspace_projeto: "Projetos/NutriOS Pro"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/arquitetura|arquitetura]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/copy-venda-direta|copy-venda-direta]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/decisoes|decisoes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/memoria|memoria]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/prd|prd]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/status|status]]"
 ---
 
 # Dossiê — NutriOS Pro

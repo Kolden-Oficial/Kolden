@@ -15,6 +15,13 @@ relacionados:
   - 01-fundamentos/cores.md
   - 01-fundamentos/tipografia.md
   - 01-fundamentos/grafismos.md
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/design-system/01-fundamentos/cores|cores]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/design-system/01-fundamentos/grafismos|grafismos]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/design-system/01-fundamentos/tipografia|tipografia]]"
 ---
 
 # Tom Visual — Omiron

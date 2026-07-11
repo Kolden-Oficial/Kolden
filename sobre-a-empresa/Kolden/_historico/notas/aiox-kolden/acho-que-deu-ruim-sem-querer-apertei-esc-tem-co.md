@@ -9,6 +9,9 @@ keywords: "('Linux system troubleshooting', 'Homebrew installation', 'Command li
 summary: "This text serves as a reassuring technical guide designed to help a user navigate a failed software installation on a Linux system. The author clarifies that the error occurred because the environment lacked **essential foundational tools**, specifically Homebrew and uv, which are necessary to manage and install further packages. By framing the computer as a construction site, the explanation outlines a clear **recovery strategy** that begins with installing the \"master builder\" (Homebrew) via a specific terminal command. Crucially, the guide provides **practical troubleshooting advice** regarding Linux security features, explaining that passwords remain invisible during entry to prevent user confusion."
 extraido_em: "2026-06-30T16:18:06Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Acho que deu ruim, sem querer apertei esc, tem co...

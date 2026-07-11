@@ -8,6 +8,13 @@ drive_folder_id: "1R1pM0_Ahp0phc_93ay6IHzotQ1ichzwB"
 workspace_projeto: "Projetos/Rosie"
 atualizado_em: "2026-07-01"
 fonte_metricas: "Solomon MCP oficial · conta caOEzYj1TqRM0r3nHrFP"
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/alinhamento|alinhamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/status|status]]"
 ---
 
 # Dossiê — Rosie

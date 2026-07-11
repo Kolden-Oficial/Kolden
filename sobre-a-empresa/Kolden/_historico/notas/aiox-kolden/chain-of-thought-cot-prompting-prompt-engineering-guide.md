@@ -9,6 +9,9 @@ keywords: "('Prompt Engineering', 'Chain-of-Thought Prompting', 'Zero-shot CoT',
 summary: "This comprehensive technical guide explores **Chain-of-Thought (CoT) prompting**, a strategy designed to improve the **complex reasoning capabilities** of large language models by articulating intermediate logical steps. The text details three primary variations: standard CoT, which uses **few-shot demonstrations** to model thinking; Zero-shot CoT, which triggers logic using the simple phrase **\"Let's think step by step\"**; and Auto-CoT, which automates the creation of diverse examples through **question clustering** and heuristic sampling. Beyond these specific techniques, the source serves as a broader **educational framework**, situating reasoning methods within a vast ecosystem of prompt engineering, AI agent development, and research-backed applications. Ultimately, the guide aims to provide practitioners with the tools to reduce errors in machine intelligence by fostering **structured, transparent thought processes** during problem-solving."
 extraido_em: "2026-06-30T16:18:41Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Chain-of-Thought (CoT) Prompting - Prompt Engineering Guide

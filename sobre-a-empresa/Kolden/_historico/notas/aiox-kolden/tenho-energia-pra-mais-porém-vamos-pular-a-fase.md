@@ -9,6 +9,9 @@ keywords: "('Artificial Intelligence Agency', 'Digital Infrastructure Strategy',
 summary: "The provided text outlines a sophisticated strategic roadmap for transitioning a digital workspace into a fully **autonomous artificial intelligence agency** known as the Kolden Ecosystem. By leveraging a \"Triple Threat\" of tools—**Gemini for strategy, Claude Code for heavy programming, and OpenRouter for centralized intelligence**—the plan establishes a structured, multi-layered approach to building an AI-driven business. Key technical objectives include deploying a **professional frontend via Vercel**, integrating advanced APIs for multimedia generation, and implementing a **vector database (RAG)** to handle large-scale organizational memory. The ultimate purpose of this blueprint is to migrate legacy files into a clean, isolated Linux environment where **automated agents** can execute high-level market research and branding tasks independently."
 extraido_em: "2026-06-30T16:22:06Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Tenho energia pra mais, porém vamos pular a FASE...

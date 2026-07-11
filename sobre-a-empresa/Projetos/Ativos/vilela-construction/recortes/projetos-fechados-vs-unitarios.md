@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/recortes/precos-por-categoria|precos-por-categoria]]"
+---
+
 # Recorte — Projetos fechados (Job) vs. Unitários (SF/LF/Each)
 
 > **Fonte:** `dados/planilha-vilela.json`.

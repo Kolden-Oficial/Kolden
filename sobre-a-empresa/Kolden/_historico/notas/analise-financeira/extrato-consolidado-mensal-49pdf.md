@@ -9,6 +9,9 @@ keywords: "('Banking insurance products', 'Customer support contacts', 'Personal
 summary: "This document is a **consolidated monthly bank statement** from Santander Brazil for February 2022, providing a comprehensive overview of a client's financial status and available services. It highlights **insurance offerings for digital transactions** and details the **Esfera rewards program**, which allows users to earn points, cashback, and discounts through various retail partners. The text further outlines specific **account management details**, including personal credit limits, a summary of a university service package with its associated fees, and several customer support channels. Finally, it serves as a financial reference by listing **key economic indicators** such as inflation rates, currency values, and market indices to help the account holder track the broader economic climate."
 extraido_em: "2026-06-30T16:26:20Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (49).pdf

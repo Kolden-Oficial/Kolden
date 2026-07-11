@@ -9,6 +9,9 @@ keywords: "('Omnichannel Software Architecture', 'Backend Brain Concept', 'Multi
 summary: "This text introduces the **Omnichannel** architectural philosophy, which allows a single artificial intelligence to communicate through multiple interfaces simultaneously. By separating the **centralized intelligence** (the brain) from various communication channels like Telegram or WhatsApp (the mouths), the system ensures consistent performance across different platforms. The guide emphasizes that while users select a single platform during the initial **QuickStart setup**, the underlying software is designed for **universal expansion** through configuration files. Ultimately, the purpose of this instruction is to simplify the technical deployment process by helping users establish a **functional baseline** before scaling their agent's reach."
 extraido_em: "2026-06-30T16:18:10Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Agente Omnichannel: Telegram e WhatsApp

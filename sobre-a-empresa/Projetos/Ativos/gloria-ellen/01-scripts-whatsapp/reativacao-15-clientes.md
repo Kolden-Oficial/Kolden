@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/01-scripts-whatsapp/leads-mornos-5|leads-mornos-5]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/01-scripts-whatsapp/roteiro-call-fechamento|roteiro-call-fechamento]]"
+---
+
 # Script WhatsApp — Reativação dos 15 clientes fechados
 
 **Objetivo:** despertar demanda dormente na base indicada. Meta = 1-2 fechamentos diretos + 3-5 indicações novas.

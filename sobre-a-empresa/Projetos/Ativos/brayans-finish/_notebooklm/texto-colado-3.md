@@ -9,6 +9,10 @@ keywords: "('Strategic business reorganization', 'Online presence optimization',
 summary: "This strategic document outlines a comprehensive **business transformation plan** for Brayan’s Finish, a Massachusetts-based carpentry firm looking to triple its monthly revenue through a partnership with Kolden. The text identifies **critical operational bottlenecks**, such as inaccurate pricing models and an over-reliance on the owner’s manual labor, which currently hinder the company's ability to scale. To resolve these issues, the strategy implements **three core pillars**: establishing a professional digital presence via SEO, automating lead management through a CRM, and deploying a standardized pricing tool to protect profit margins. By transitioning from a technician-centric model to a **scalable corporate structure**, the company aims to move beyond social media referrals and capture high-value contracts with major builders. Ultimately, the roadmap serves as a blueprint for **maturing business operations** before launching aggressive multi-channel marketing campaigns to reach a $100,000 monthly target."
 extraido_em: "2026-06-30T16:07:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

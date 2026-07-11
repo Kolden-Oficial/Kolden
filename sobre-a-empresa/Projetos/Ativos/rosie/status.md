@@ -7,6 +7,11 @@ palavras-chave: [status, progresso, roadmap, rosie, solomon, deck-v3.1]
 status: oficial
 atualizado-em: 2026-07-01
 relacionados: [leia-me, apresentacao-bruno-2026-07-01/README]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/dossie|dossie]]"
 ---
 
 # Status — Rosie

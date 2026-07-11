@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/04-videos/12-pautas-diarias|12-pautas-diarias]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/04-videos/estrategia-youtube|estrategia-youtube]]"
+---
+
 # Bio-link unificado (IG + YT)
 
 Objetivo: um único link agrega WhatsApp, portfolio, YT, PDF. Colar na bio do IG.

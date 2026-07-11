@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Cairos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Cairos/agents/cairos-chief|cairos-chief]]"
+---
+
 # Product Manager
 
 > Especialista tier 1 do squad Cairós. Dono do **roadmap, da priorização e da gestão de produto** no

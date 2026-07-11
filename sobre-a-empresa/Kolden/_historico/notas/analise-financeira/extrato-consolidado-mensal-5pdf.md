@@ -9,6 +9,9 @@ keywords: "('Monthly bank statement', 'University student opportunities', 'Credi
 summary: "This document is a **consolidated monthly bank statement** from August 2018 for a **Santander Universities** account holder, detailing both financial transactions and specialized student benefits. The report outlines a **negative account balance** and the use of a **Master 10-day interest-free overdraft** limit, alongside specific records of salary credits, insurance fees, and ATM withdrawals. Beyond financial data, the text serves as a promotional and educational guide, offering **career opportunities** through the Universia network, postgraduate financing options, and **global student discounts** via the ISIC identity card. Finally, the statement provides essential **security protocols** for using ATMs and lists various customer service channels to ensure the user manages their **university banking relationship** safely and effectively."
 extraido_em: "2026-06-30T16:26:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (5).pdf

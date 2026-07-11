@@ -9,6 +9,9 @@ keywords: "('Visual AI tools', 'Workflow automation comparison', 'LLM pipeline b
 summary: "This comprehensive guide provides a comparative analysis of **n8n** and **Langflow**, two prominent visual platforms used to develop **AI-powered workflows**. The text distinguishes between n8n as a versatile **general automation tool** designed to integrate AI into existing business processes and Langflow as a specialized **LLM pipeline builder** focused on technical AI development. By evaluating factors such as **SaaS integrations**, technical complexity, and target audiences, the source aims to help users determine which platform better aligns with their specific goals, whether they are building **broad business automations** or **dedicated AI applications**. Ultimately, the article suggests that while the tools can be used together, most organizations will favor n8n for its **expansive connectivity** and ease of use in daily operations."
 extraido_em: "2026-06-30T16:22:44Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # n8n vs Langflow: Which Visual AI Tool Wins? - LowCode Agency

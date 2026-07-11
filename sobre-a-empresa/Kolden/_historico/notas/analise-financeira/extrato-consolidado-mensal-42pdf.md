@@ -9,6 +9,9 @@ keywords: "('Fraud prevention', 'Digital bank statements', 'Home insurance', 'Pe
 summary: "This document serves as a **consolidated monthly bank statement** for a Santander client, providing a comprehensive overview of their financial status and account activity as of July 2021. It opens with an important notice regarding a transition to **digital-only statements** to promote sustainability, while also offering critical **security advice** to help users identify and avoid fraudulent phishing links. Beyond the summary of **personal credit limits** and account balances, the text details a specific **university service package** and introduces customizable **home insurance options** provided by the bank. Finally, the source acts as a reference guide by listing essential **customer support contacts** alongside a table of **national economic indices**, such as inflation rates and currency valuations."
 extraido_em: "2026-06-30T16:26:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (42).pdf

@@ -9,6 +9,12 @@ keywords: "('Metric visualization issues', 'Diet software bugs', 'Competitor mar
 summary: "This meeting transcript documents a technical and strategic alignment between Vinicius Abdon and Ronan Sersil regarding the development of **NutriCalc**, a specialized software for nutritionists. The conversation focuses on refining the user experience by addressing **software bugs** related to food searches and PDF exports, while also identifying essential features like **biopedance metrics**, diet templates for specific restrictions, and improved **visual tracking of patient evolution**. Beyond technical fixes, the partners discuss **market expansion strategies**, including analyzing competitors like Dietbox, exploring potential partnerships with **gym networks**, and integrating AI-driven hardware like totems and smart scales. Ultimately, the text captures a transition from a simple spreadsheet-based tool to a **scalable commercial product**, driven by high entrepreneurial optimism and a clear roadmap for **marketing and legal formalization**."
 extraido_em: "2026-06-30T16:10:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/01-kolden-nutricalc-alinhamento-do-projeto|01-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/02-kolden-nutricalc-alinhamento-do-projeto|02-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/04-kolden-nutricalc-alinhamento-do-projeto|04-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/kolden-nutricalc-alinhamento-do-projeto-20260318-1601-gmt-0300-anotações-do|kolden-nutricalc-alinhamento-do-projeto-20260318-1601-gmt-0300-anotações-do]]"
 ---
 
 # 03 | Kolden & NutriCalc | Alinhamento do Projeto

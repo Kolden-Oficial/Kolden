@@ -9,6 +9,10 @@ keywords: "('Color history study', 'Contemporary art paradigms', 'Color pedagogy
 summary: "The provided document is an academic dissertation titled **\"Color Laboratory: Paradigms of the Study of Color in Contemporaneity,\"** written by Marcelo Albuquerque for the Federal University of Minas Gerais. Through a series of historical and aesthetic analyses, the author argues that the **scientific and technical focus** in modern art education has created a void in the **philosophical and cultural understanding** of color. By tracing the evolution of color usage from the **symbolic palettes of Antiquity and the Middle Ages** to the **industrial and spatial innovations** of the present day, Albuquerque demonstrates that color is not a universal constant but a **complex social phenomenon** shaped by language and history. The text serves both as a critical survey of major artistic movements—including the **Bauhaus and Modernism**—and as a theoretical foundation for the author’s own pedagogical method, which seeks to reintegrate **classical aesthetic traditions** into contemporary painting practice."
 extraido_em: "2026-06-30T16:13:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/geral/_indice|_indice]]"
 ---
 
 # LABORATÓRIO DE COR: - repositorio ufmg

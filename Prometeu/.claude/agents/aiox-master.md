@@ -25,6 +25,11 @@ skills:
   - synapse:manager
   - checklist-runner
 color: gold
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/prometeu-chief|prometeu-chief]]"
 ---
 
 # AIOX Master - Agente Autônomo (Orion — Orchestrator)

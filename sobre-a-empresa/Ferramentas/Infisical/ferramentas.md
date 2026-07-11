@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/Infisical/instalacao|instalacao]]"
+---
+
 # Infisical — Gestão de Segredos do Kolden
 
 Ferramenta obrigatória para todos os agentes e ferramentas do Kolden.

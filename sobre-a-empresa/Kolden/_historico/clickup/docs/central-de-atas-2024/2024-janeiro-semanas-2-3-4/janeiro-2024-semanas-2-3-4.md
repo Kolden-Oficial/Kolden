@@ -4,7 +4,11 @@ doc_id: 8cdvxek-60673
 bloco_origem: "Ata - Daily Meeting > 2024 > Janeiro > Semanas 2, 3 e 4"
 extraido_em: 2026-06-30
 extraido_por: claude-code (Onda B do plano _arquivo-clickup)
-paginas: 14 dailies (S2: 5, S3: 3, S4: 6)
+paginas: "14 dailies (S2: 5, S3: 3, S4: 6)"
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/central-de-atas-2024/2023-dezembro-2024-janeiro/dezembro-2023-janeiro-2024|dezembro-2023-janeiro-2024]]"
 ---
 
 # Atas Daily — Janeiro 2024 (Semanas 2, 3 e 4)

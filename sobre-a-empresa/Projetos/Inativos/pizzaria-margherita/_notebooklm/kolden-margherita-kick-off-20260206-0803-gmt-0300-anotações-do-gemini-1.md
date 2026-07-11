@@ -9,6 +9,10 @@ keywords: "('Revenue Growth Goals', 'Delivery Strategy Optimization', 'Supply Co
 summary: "This document serves as a comprehensive **strategic roadmap** and meeting summary for Kolden & Margherita, a pizzeria aiming to scale its monthly revenue to **R$ 100,000**. The primary focus is transitioning the business from a \"survival model\" to a **premium culinary reference** by leveraging its core strengths: wood-fired ovens and natural fermentation. To achieve this, the leadership outlines a rigorous **\"management shock\"** involving the optimization of supplier negotiations to reduce raw material costs and a shift away from manual, passive WhatsApp sales toward a more **automated and aggressive delivery** system.  The marketing strategy is redefined through the lens of **\"food porn\"** content, utilizing high-quality visuals to trigger immediate consumer desire across two distinct demographics. For high-end residents in gated communities like **Grand Park**, the team plans to introduce **gourmet pizza offerings** featuring luxury ingredients, supported by geo-targeted digital ads. Simultaneously, the operational plan emphasizes **maintaining superior quality** over competing on price, ensuring that the brand’s artisanal identity remains the foundation for long-term customer loyalty and sustainable profit margins."
 extraido_em: "2026-06-30T16:09:19Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/_indice|_indice]]"
 ---
 
 # Kolden & Margherita | Kick-Off - 2026/02/06 08:03 GMT-03:00 - Anotações do Gemini

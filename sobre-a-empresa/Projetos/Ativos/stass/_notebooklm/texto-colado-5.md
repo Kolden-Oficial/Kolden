@@ -9,6 +9,10 @@ keywords: "('Hamilton local areas', 'Nearby communities', 'Regional targeting', 
 summary: "The provided text serves as a **geographical classification system** designed to organize various settlements based on their **proximity to the city of Hamilton**. By categorizing locations into immediate suburban zones and more distant regional towns, the list establishes a clear **hierarchy for localized targeting**. Ultimately, this directory functions as a strategic tool for identifying **concentric circles of community connection** throughout the Ontario landscape."
 extraido_em: "2026-06-30T16:09:11Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

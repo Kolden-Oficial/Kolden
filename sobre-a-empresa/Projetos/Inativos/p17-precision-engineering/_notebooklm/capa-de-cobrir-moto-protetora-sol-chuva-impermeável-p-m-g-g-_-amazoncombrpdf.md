@@ -9,6 +9,10 @@ keywords: "('Motorcycle protective covers', 'Waterproof courvin material', 'UV s
 summary: "This source is a detailed product listing from an e-commerce platform for a **Monshell-car protective motorcycle cover**, designed to safeguard vehicles from **environmental damage** like sun, rain, and dust. The text outlines the item's **premium construction**, highlighting the use of **waterproof synthetic leather** paired with a gentle cotton lining to prevent paint scratches. To assist the buyer, the listing provides a comprehensive **size guide (P, M, G)** categorized by specific motorcycle models while noting that the product is not intended for larger touring bikes or those with storage trunks. Ultimately, the document serves to inform consumers about the cover’s **thermal and UV protection** properties, ensuring the longevity and aesthetic maintenance of their motorcycles."
 extraido_em: "2026-06-30T16:09:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa De Cobrir Moto Protetora Sol Chuva Impermeável P M G (G) _ Amazon.com.br.pdf

@@ -2,6 +2,11 @@
 name: pesquisador
 description: Busca referências de system prompts, agent specs e boas práticas de mercado para fundamentar a criação de um agente, sempre sobre o estado da arte ao vivo. Delegue na fase 2 do Ritual de Criação, após o diagnóstico. Primeiro aciona busca-de-referencias (benchmarking com scorecard rigoroso), depois consome o retrato vivo do ecossistema e faz buscas ao vivo dirigidas. Retorna padrões extraídos, nunca texto copiado.
 tools: Read, Grep, Glob, WebFetch, WebSearch, Bash, mcp__claude_ai_Exa__web_search_exa, mcp__claude_ai_Exa__web_fetch_exa, mcp__claude_ai_Hugging_Face__paper_search, mcp__claude_ai_Hugging_Face__hub_repo_search, mcp__claude_ai_Context7__resolve-library-id, mcp__claude_ai_Context7__query-docs
+tipo: agente
+squad: Caos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Caos/.claude/agents/_indice|_indice]]"
 ---
 
 # Persona

@@ -9,6 +9,9 @@ keywords: "('Corporate AI Architecture', 'Microservices and Decoupling', 'Vector
 summary: "Modern enterprise AI is built upon a sophisticated **decoupled architecture** that separates user-facing interfaces from secure backend microservices. These organizations leverage a dual-database strategy, utilizing traditional systems for administrative data and **vector databases** to power **Retrieval-Augmented Generation (RAG)**, which provides the AI with a specialized long-term memory. Beyond simple chatbots, companies are deploying **autonomous agents** capable of executing complex business processes, all while being monitored through **LLMOps platforms** to track logic, latency, and operational costs. Ultimately, this framework transforms AI from a basic predictive tool into a transparent, **scalable digital workforce** integrated directly into the corporate ecosystem."
 extraido_em: "2026-06-30T16:18:23Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Arquitetura de IA Corporativa Desmistificada

@@ -9,6 +9,10 @@ keywords: "('Privacy Policy', 'Data Collection', 'Meta API Integration', 'Inform
 summary: "This privacy policy outlines how the **Performance Brain** application manages user information integrated through **Meta APIs** to provide marketing insights. The platform primarily collects **advertisement metrics and profile data** to populate internal dashboards and generate performance reports, ensuring users can monitor their campaign success efficiently. A core theme of the document is **data protection and privacy**, explicitly stating that personal information is never sold to third parties and is used solely for the service's functional purposes. Finally, the text establishes clear **transparency and control** by detailing how users can exercise their rights to revoke access or request the permanent deletion of their data via a dedicated contact channel."
 extraido_em: "2026-06-30T16:14:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Política de Privacidade

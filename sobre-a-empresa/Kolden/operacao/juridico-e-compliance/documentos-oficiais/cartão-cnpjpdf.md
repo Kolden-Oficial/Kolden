@@ -9,6 +9,10 @@ keywords: "('CNPJ registration', 'Business legal nature', 'Economic activities',
 summary: "This document serves as an official **registration certificate** for a Brazilian business entity, verifying its **active legal status** within the national registry of corporate taxpayers. Established in November 2021 as an **individual enterprise**, the company is headquartered in Vespasiano and operates under the primary classification of **graphic and list publishing**. Beyond its core function, the business is authorized to conduct a diverse array of secondary services ranging from **audiovisual production** to **professional training and IT instruction**. Ultimately, this record acts as a comprehensive **identity profile**, detailing the firm's tax identification number, contact information, and specific legal framework."
 extraido_em: "2026-06-30T16:11:25Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Cartão CNPJ.pdf

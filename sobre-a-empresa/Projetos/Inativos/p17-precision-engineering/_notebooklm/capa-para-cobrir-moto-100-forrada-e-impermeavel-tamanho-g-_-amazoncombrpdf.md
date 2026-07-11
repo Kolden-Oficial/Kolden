@@ -9,6 +9,10 @@ keywords: "('Motorcycle protective cover', 'Waterproof material', 'Product speci
 summary: "This document is a commercial listing from Amazon Brazil for a **size large motorcycle cover** manufactured by the brand Camhel. The text outlines essential product features, highlighting that the item is **completely waterproof and fully lined** with a combination of polyethylene and polypropylene to protect vehicles from environmental damage. Beyond the technical specifications and pricing, the source provides **critical maintenance guidelines**, warning users not to apply the cover to hot engines or damaged paintwork to ensure longevity. Additionally, the inclusion of **customer ratings and related accessories** situates the product within a broader marketplace, helping potential buyers evaluate its utility and value."
 extraido_em: "2026-06-30T16:09:41Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa para cobrir Moto 100% Forrada e impermeavel - Tamanho G _ Amazon.com.br.pdf

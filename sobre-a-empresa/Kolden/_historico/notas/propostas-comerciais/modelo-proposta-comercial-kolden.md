@@ -9,6 +9,9 @@ keywords: "('Performance marketing', 'Business diagnosis', 'Strategic growth', '
 summary: "This commercial proposal outlines the professional framework of Kolden, a **performance-based consultancy** dedicated to fostering **sustainable and predictable business growth**. The document transitions from a diagnostic phase that identifies operational bottlenecks and financial gaps into a structured **four-phase execution plan** focused on lead acquisition, management reorganization, and fiscal clarity. Central to their methodology is the rejection of traditional linear funnels in favor of a **non-linear marketing cycle** that emphasizes continuous engagement and retention. By showcasing a diverse portfolio of major clients and detailed **SWOT analyses**, the text serves as a strategic roadmap designed to transform marketing efforts into **tangible sales results** through data-driven partnerships."
 extraido_em: "2026-06-30T16:13:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # Modelo Proposta Comercial - Kolden

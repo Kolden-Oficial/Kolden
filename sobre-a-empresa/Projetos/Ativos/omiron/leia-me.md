@@ -8,6 +8,12 @@ status: em-desenvolvimento
 atualizado-em: 2026-06-25
 relacionados: [docs/prd-omiron-app]
 dossie_cliente: "sobre-a-empresa/clientes/ativos/clinica-omiron.md"
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/dossie|dossie]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/README|README]]"
 ---
 
 # Omiron

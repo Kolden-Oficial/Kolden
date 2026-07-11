@@ -9,6 +9,10 @@ keywords: "('Database Schema Design', 'Security and Permissions', 'AI Edge Funct
 summary: "The provided technical dossier outlines the **architectural framework and current state of NutriOS Pro**, a sophisticated digital platform designed for comprehensive nutritional management. The document details an intricate **relational database schema** consisting of sixteen tables that track everything from patient biometrics and clinical assessments to complex dietary plans and behavioral logs. A central pillar of the system is its **integration of artificial intelligence**, utilizing specialized Edge Functions to automate the analysis of food photography, lab results, and three-dimensional body proportions. While the project features **robust security protocols** such as Row Level Security and role-based access control, the dossier also identifies **technical debt and optimization opportunities**, specifically regarding component modularity and consistent database policies. Ultimately, this report serves as an exhaustive **technical blueprint** intended to synchronize advanced AI models with the project’s full developmental status."
 extraido_em: "2026-06-30T16:08:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # NutriOS_Pro_Dossie_Tecnico.md

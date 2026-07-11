@@ -7,6 +7,15 @@ status: "<ativo | inativo>"
 drive_folder_id: "<ID da pasta do cliente no Drive>"
 workspace_projeto: "<Projetos/Nome — ou vazio se o cliente não tem projeto no workspace>"
 atualizado_em: "<AAAA-MM-DD>"
+tipo: projeto
+projeto: dossie.md
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/_modelo/arquitetura|arquitetura]]"
+  - "[[sobre-a-empresa/Projetos/_modelo/decisoes|decisoes]]"
+  - "[[sobre-a-empresa/Projetos/_modelo/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Projetos/_modelo/prd|prd]]"
+  - "[[sobre-a-empresa/Projetos/_modelo/status|status]]"
 ---
 
 # Dossiê — <Nome do cliente>

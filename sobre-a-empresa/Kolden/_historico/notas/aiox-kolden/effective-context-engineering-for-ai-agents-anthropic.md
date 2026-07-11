@@ -9,6 +9,9 @@ keywords: "('Context engineering', 'AI agents', 'Finite attention budget', 'Cont
 summary: "This article explores the transition from prompt engineering to **context engineering**, a sophisticated approach to managing the limited **attention budget** of AI agents. The authors argue that because LLMs face **context rot** as information increases, developers must focus on **curating the most high-signal tokens** rather than simply writing better instructions. Key strategies for maintaining agent performance include **dynamic context retrieval**, where models pull in data \"just in time,\" and **compaction techniques** that summarize history to prevent system overload. Ultimately, the text provides a mental model for building autonomous agents that can handle **long-horizon tasks** by treating context as a finite, precious resource that requires precise organization and **structured memory**."
 extraido_em: "2026-06-30T16:19:47Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Effective context engineering for AI agents - Anthropic

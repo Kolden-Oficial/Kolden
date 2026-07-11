@@ -9,6 +9,9 @@ keywords: "('Suzana hiring proposal', 'Operational support integration', 'Recrui
 summary: "This meeting transcript documents a strategic discussion regarding the **potential hiring of Suzana**, a candidate with a diverse background in social media, e-commerce, and operational management. The primary theme centers on **balancing operational expansion with financial timing**, as the team concludes that her integration should be postponed until the **start of the third period in July** to align with a projected increase in client demand. Amidst this professional planning, the participants engage in an informal dialogue about **talent versus effort**, using pop culture metaphors to define their individual roles and work ethics within the company. The session concludes with a focused shift toward **immediate technical tasks**, specifically addressing a necessary administrative transfer of social media access for a client known as Global."
 extraido_em: "2026-06-30T16:23:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Alinhamento Proposta Suzana - 2026/06/02 13:00 GMT-03:00 - Anotações do Gemini

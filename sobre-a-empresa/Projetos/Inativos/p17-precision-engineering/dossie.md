@@ -6,6 +6,9 @@ segmento: "E-commerce / Acessórios automotivos (capa de proteção para moto)"
 status: "inativo"
 drive_folder_id: "1rfHSVOuFLhX-Th02tjhOSo5gkRaMdSBh"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — P17 - Precision Engineering

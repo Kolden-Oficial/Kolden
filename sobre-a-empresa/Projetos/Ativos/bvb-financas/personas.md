@@ -8,6 +8,11 @@ status: rascunho
 atualizado-em: 2026-07-06
 relacionados: [posicionamento, tom-de-voz, concorrencia, dossie]
 versao_original: "Doc Estratégico 02 (junho/2026) — Bruno Vilas Boas"
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/dossie|dossie]]"
 ---
 
 # Personas — BVB Finanças

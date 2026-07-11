@@ -23,6 +23,11 @@ skills:
   - synapse:tasks:diagnose-synapse
   - checklist-runner
 color: blue
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/prometeu-chief|prometeu-chief]]"
 ---
 
 # AIOX Data Engineer - Agente Autônomo

@@ -9,6 +9,10 @@ keywords: "('Digital marketing strategies', 'Business organization issues', 'Lea
 summary: "In this transcript, a business advisory team conducts a **discovery meeting** with Brayan, a Brazilian entrepreneur running a **home renovation business** in the United States. The conversation identifies critical **operational bottlenecks**, specifically Brayan’s struggle with **administrative organization**, a lack of a professional **Google presence**, and a reliance on manual **social media advertising** that lacks a cohesive strategy. To solve these issues, the consultants propose implementing a **structured sales funnel**, a dedicated **CRM system** for lead follow-up, and an **automated pricing spreadsheet** to prevent the financial losses caused by inaccurate estimates. Ultimately, the dialogue serves to transition Brayan from an **overburdened operator** to a strategic owner by **delegating technical tasks** to the advisory firm, concluding with an agreement to review a tailored **strategic growth plan**."
 extraido_em: "2026-06-30T16:29:00Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/coda-strategy/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026_04_02 20_51 GMT-03_00 - Anotações do Gemini (1).docx

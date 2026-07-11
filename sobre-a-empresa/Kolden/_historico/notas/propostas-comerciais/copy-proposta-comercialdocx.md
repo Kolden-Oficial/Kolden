@@ -9,6 +9,9 @@ keywords: "('Digital Marketing Services', 'Paid Traffic Management', 'Sales Funn
 summary: "The provided text serves as a professional **commercial proposal** for TriStar Digital, a specialized agency focused on **accelerating growth for local businesses** through advanced digital marketing and paid traffic strategies. Led by a diverse team of experts, the agency leverages a **four-stage methodology**—encompassing positioning, attraction, conversion, and scaling—to transform online investments into concrete revenue. The document outlines a comprehensive service suite that includes **meticulous funnel optimization**, sales training for staff, and constant performance monitoring, all backed by a proven track record of managing millions in ad spend. Ultimately, the proposal establishes a **structured roadmap for client success**, offering tiered pricing models and a clear implementation timeline designed to foster **long-term business development**."
 extraido_em: "2026-06-30T16:11:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # Copy Proposta Comercial.docx

@@ -8,6 +8,8 @@ author_ids: [42917002]
 archived: true
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-13273/
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
 ---
 
 # Prospecção — Manual completo (5 documentos consolidados)

@@ -9,6 +9,10 @@ keywords: "('Visual Identity Design', 'Brand Positioning', 'Symbolism and Concep
 summary: "This professional design deck outlines the **strategic visual identity** for Kolden, a business accelerator dedicated to maximizing **client lifetime value** through bold and systemic growth. Created by designer Guilherme Asla, the project establishes a **modern and electrifying brand** built on core attributes of confidence, elegance, and authenticity. The visual system centers on a **unique, modular \"K\" symbol** representing a symmetrical ecosystem, supported by a high-contrast palette of **vibrant scarlet and bluish-white**. By detailing specific typography choices and real-world mockups, the presentation provides a **comprehensive framework** for how the brand will consistently engage its audience across digital platforms."
 extraido_em: "2026-06-30T16:13:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/referencias-historicas/kolden-apresentacao-de-identidade-visualpdf|kolden-apresentacao-de-identidade-visualpdf]]"
 ---
 
 # KOLDEN - APRESENTAÇÃO DE IDENTIDADE VISUAL.pdf

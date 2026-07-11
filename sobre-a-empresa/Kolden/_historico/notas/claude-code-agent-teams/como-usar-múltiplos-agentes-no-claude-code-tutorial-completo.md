@@ -9,6 +9,9 @@ keywords: "('Agent Teams introduction', 'Claude Code experimental', 'Parallel co
 summary: "In this tutorial, Rafael Quintanilha explains **Agent Teams**, a new collaborative feature in Claude Code that allows **multiple AI instances** to solve complex problems simultaneously. Unlike standard sub-agents that work in isolation, these teams utilize a **team lead** to coordinate independent \"teammates\" who communicate, share tasks, and maintain their own **separate context windows** to prevent information clutter. This parallel approach is particularly effective for **reducing result variance** and enhancing robustness in tasks like multi-layered debugging or porting features between platforms. While the video demonstrates how this method streamlines **sophisticated planning and implementation**, the author notes it significantly increases **token consumption** and requires a higher-tier subscription for optimal performance."
 extraido_em: "2026-06-30T16:29:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/claude-code-agent-teams/_indice|_indice]]"
 ---
 
 # Como usar múltiplos agentes no Claude Code (Tutorial Completo)

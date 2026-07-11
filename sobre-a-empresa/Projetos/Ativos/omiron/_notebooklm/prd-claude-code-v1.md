@@ -9,6 +9,10 @@ keywords: "('Patient monitoring system', 'Seven health pillars', 'Clinical data 
 summary: "The Omiron project outlines a specialized **holistic patient management system** designed to foster closer clinical monitoring and improve treatment adherence through a personalized digital interface. The platform tracks **seven core pillars of wellness**, including physical health, mental stress management, and social habits, while providing a **direct communication link** for medical oversight and reporting. Technically, the application is built using **Claude Code** and features a distinctive aesthetic inspired by **classical art and Aristotelian philosophy**. Ultimately, the system serves as a **comprehensive diagnostic hub** where individual patient goals, medications, and progress reports are integrated into a single, high-touch healthcare experience."
 extraido_em: "2026-06-30T16:08:19Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # PRD - Claude Code | V1

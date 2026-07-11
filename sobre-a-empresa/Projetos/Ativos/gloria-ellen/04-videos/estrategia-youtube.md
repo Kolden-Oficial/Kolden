@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/04-videos/12-pautas-diarias|12-pautas-diarias]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/04-videos/bio-link-unificado|bio-link-unificado]]"
+---
+
 # Estratégia YouTube — aproveitar o forte dela
 
 ## Diagnóstico do canal atual

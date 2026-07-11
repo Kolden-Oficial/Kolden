@@ -9,6 +9,13 @@ keywords: "('Financial Performance Tracking', 'Service Catalog Specifications', 
 summary: "The provided documents function as a comprehensive **financial management and sales tracking system** for Kolden, detailing everything from service catalog requirements to complex fiscal projections. The data outlines **operational workflows** for digital services, including technical specifications for Facebook advertising and a breakdown of **monthly cash flow** involving partner withdrawals and software expenses. Key performance indicators such as **Monthly Recurring Revenue (MRR)** and average ticket prices are meticulously monitored alongside a **Demonstrative of Results (DRE)** to forecast profitability through the upcoming year. Furthermore, the source includes sophisticated **sales funnel simulations**, evaluating lead conversion rates and **Return on Ad Spend (ROAS)** across different acquisition channels like active prospecting and organic referrals. Ultimately, this tracker serves as a **strategic blueprint** to scale the business by balancing current expenditures with aggressive quarterly growth targets."
 extraido_em: "2026-06-30T16:13:20Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Kolden/areas/financas|finanças]]"
+  - "[[sobre-a-empresa/Kolden/operacao/metricas-e-okrs|métricas e OKRs]]"
+  - "[[sobre-a-empresa/Kolden/operacao/planejamento-estrategico|planejamento estratégico]]"
 ---
 
 # Kolden | Budget & DRE Tracker

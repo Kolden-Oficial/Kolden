@@ -7,6 +7,14 @@ palavras-chave: [brandbook, rosie, voz, como-falamos, do]
 status: oficial
 atualizado-em: 2026-06-23
 relacionados: [00-tom-de-voz, 04-como-nao-falamos]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/02-voz-da-marca/00-tom-de-voz|00-tom-de-voz]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/02-voz-da-marca/01-como-a-marca-se-comunica|01-como-a-marca-se-comunica]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/02-voz-da-marca/02-pilares-da-comunicacao|02-pilares-da-comunicacao]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/02-voz-da-marca/04-como-nao-falamos|04-como-nao-falamos]]"
 ---
 
 # Como falamos

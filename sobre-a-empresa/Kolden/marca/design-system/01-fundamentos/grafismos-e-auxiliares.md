@@ -7,6 +7,16 @@ palavras-chave: [design-system, grafismos, auxiliares, texturas, simbolo, k]
 status: vigente
 atualizado-em: 2026-06-22
 relacionados: [ds-leia-me, ds-logo, ds-tom-visual, ds-indice-assets]
+tipo: nota
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/cores|cores]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tipografia|tipografia]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/leia-me|design system]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/logo|logo]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tom-visual|tom visual]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/assets/indice-assets|índice de assets]]"
 ---
 
 # Grafismos e auxiliares

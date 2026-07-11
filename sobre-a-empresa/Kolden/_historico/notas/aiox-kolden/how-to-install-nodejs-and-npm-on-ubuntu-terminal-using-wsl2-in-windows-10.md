@@ -9,6 +9,9 @@ keywords: "('Node.js installation', 'Ubuntu on WSL2', 'NVM configuration', 'Term
 summary: "This Stack Overflow forum thread addresses a common technical hurdle where developers encounter errors when trying to set up **Node.js and npm** within the **Windows Subsystem for Linux (WSL2)** environment. The discussion centers on the use of **nvm (Node Version Manager)** as the preferred installation method to prevent conflicts between the Linux terminal and the host Windows system. Expert contributors suggest that the most vital step after running installation scripts is to **restart the terminal** or refresh the configuration file to ensure the new commands are recognized. Ultimately, the source serves as a **troubleshooting guide** for programmers seeking to create a stable, isolated JavaScript development workspace on a Windows machine."
 extraido_em: "2026-06-30T16:20:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # How to install node.js and npm on Ubuntu terminal using WSL2 in windows 10

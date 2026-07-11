@@ -9,6 +9,9 @@ keywords: "('Provider Routing', 'Load Balancing Strategies', 'Performance Thresh
 summary: "OpenRouter provides a sophisticated system for **provider routing**, allowing users to direct AI requests toward the most suitable backends based on custom priorities. By default, the platform utilizes **price-based load balancing** and automatic fallbacks to ensure both cost-efficiency and high availability. Developers can further refine this process through a detailed **provider object**, which supports filtering by **performance thresholds** like latency and throughput, as well as strict compliance with **security and data policies** such as Zero Data Retention. This flexibility is extended by **advanced sorting and quantization filters**, enabling a precise balance between model intelligence, speed, and budget. Additionally, the system supports **provider-specific beta features**, ensuring that advanced capabilities like Anthropic’s interleaved thinking can be accessed through a unified interface."
 extraido_em: "2026-06-30T16:21:49Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Provider Routing | Intelligent Multi-Provider Request Routing ...

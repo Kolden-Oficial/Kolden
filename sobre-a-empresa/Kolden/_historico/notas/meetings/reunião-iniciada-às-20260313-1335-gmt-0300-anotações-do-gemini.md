@@ -9,6 +9,9 @@ keywords: "('Customer Acquisition Challenges', 'Digital Marketing Strategy', 'Re
 summary: "This document records a consultative meeting between **Coden**, a business growth advisory firm, and Valquiria Teixeira, the owner of a **domestic cleaning service** in the United States. The conversation identifies several critical barriers to expansion, specifically a **lack of digital presence**, a recent **decline in revenue** due to client turnover, and the absence of **financial organization** or clear pricing strategies. To address these hurdles, Coden proposes a strategic shift away from a total reliance on word-of-mouth referrals toward a targeted **positioning strategy** using social media to attract high-value residential and commercial clients. The dialogue concludes with an agreement to develop a **customized solution plan** and a simplified financial tracking system, aiming to provide the entrepreneur with the structural clarity needed for sustainable growth."
 extraido_em: "2026-06-30T16:24:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/13 13:35 GMT-03:00 - Anotações do Gemini

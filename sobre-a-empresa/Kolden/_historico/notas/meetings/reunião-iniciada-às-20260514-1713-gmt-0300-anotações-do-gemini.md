@@ -9,6 +9,9 @@ keywords: "('GoHighLevel platform adoption', 'Operational standardization', 'CRM
 summary: "This document provides a comprehensive summary and transcript of a strategic meeting for the agency **Coden**, focused on the large-scale adoption of **GoHighLevel** as their central operational platform. The meeting outlines a shift toward **technological consolidation**, where the team intends to replace multiple disparate tools with an all-in-one CRM and automation suite to facilitate **international expansion**. Key objectives include **standardizing sales funnels**, formalizing financial workflows via Stripe, and utilizing **artificial intelligence** for commercial automation and lead management. Beyond technical settings, the text lists a series of **actionable next steps** involving brand protection, team role definitions, and the establishment of specific **three- and six-month growth targets**. Overall, the source serves as a roadmap for transitioning the business into a more scalable, professionalized entity with a unified **White Label identity**."
 extraido_em: "2026-06-30T16:25:20Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/05/14 17:13 GMT-03:00 - Anotações do Gemini

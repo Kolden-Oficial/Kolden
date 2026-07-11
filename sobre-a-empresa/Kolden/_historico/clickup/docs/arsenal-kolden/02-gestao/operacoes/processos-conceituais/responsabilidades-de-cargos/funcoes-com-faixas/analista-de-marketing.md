@@ -10,6 +10,13 @@ edited_by: 42950139
 archived: true
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-903
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/funcoes-com-faixas/atendimento|atendimento]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/funcoes-com-faixas/copywriter-social-media-web-designer|copywriter-social-media-web-designer]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/funcoes-com-faixas/gerente-operacional|gerente-operacional]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/funcoes-com-faixas/gestor-de-trafego|gestor-de-trafego]]"
 ---
 
 # Analista de Marketing — Júnior, Pleno e Sênior

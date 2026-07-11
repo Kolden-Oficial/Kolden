@@ -8,6 +8,12 @@ status: em-desenvolvimento
 atualizado-em: 2026-06-25
 relacionados: []
 dossie_cliente: "sobre-a-empresa/clientes/ativos/catalogo.md"
+tipo: projeto
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/dossie|dossie]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/README|README]]"
 ---
 
 # CataLogo — Tracker Flow

@@ -5,6 +5,10 @@ clickup_space_nome: "Projetos"
 total_tasks: 11
 extracted_at: 2026-06-30
 nota: "Carteira ativa de clientes (8 externos) + 1 projeto interno + 3 reuniões externas."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/INDEX|INDEX]]"
 ---
 
 # Tasks — Space Projetos

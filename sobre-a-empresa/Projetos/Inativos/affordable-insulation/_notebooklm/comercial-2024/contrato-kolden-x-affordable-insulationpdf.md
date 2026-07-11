@@ -9,6 +9,13 @@ keywords: "('Strategic marketing consultancy', 'Paid traffic management', 'Lead 
 summary: "This document serves as a formal **service agreement** between Kolden and Affordable Insulation, establishing a framework for **strategic marketing and business growth consultancy**. The contract outlines a comprehensive scope of work that includes **digital advertising management**, lead generation funnels, and creative content production, while clarifying that Kolden provides **strategic guidance** rather than direct sales or operational management. Financially, the partnership requires a **monthly investment** totaling $1,875, which covers both professional fees and a dedicated budget for paid media. Ultimately, the agreement defines a **six-month commitment** based on an obligation of means, emphasizing that while Kolden applies its expertise to optimize conversion, specific **financial returns are not guaranteed**."
 extraido_em: "2026-06-30T16:11:49Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/comercial-2024/proposta-comercial-e-precificação-insulation|proposta-comercial-e-precificação-insulation]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/comercial-2024/proposta-comercial-e-precificação-insulation-1|proposta-comercial-e-precificação-insulation-1]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/comercial-2024/proposta-comercial-insulation-co|proposta-comercial-insulation-co]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/comercial-2024/proposta-comercial-insulation-co-1|proposta-comercial-insulation-co-1]]"
 ---
 
 # Contrato – Kolden X Affordable Insulation.pdf

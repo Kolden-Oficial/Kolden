@@ -9,6 +9,9 @@ keywords: "('Cloudflare AI Gateway', 'Log storage management', 'Per-request logg
 summary: "This documentation outlines the **logging capabilities of Cloudflare AI Gateway**, a tool designed to provide visibility into application interactions with various AI providers. The platform captures **comprehensive request metadata** such as token usage, costs, and timestamps, while also offering **granular control over data retention** through customizable storage limits and automated deletion settings. Users can manage privacy and performance by **overriding default logging behaviors** on a per-request basis, specifically choosing whether to record full payloads or just essential metrics. Furthermore, the service integrates **security and observability features** like Data Loss Prevention tracking and manual log filtering to help developers monitor, troubleshoot, and protect their AI-driven workflows."
 extraido_em: "2026-06-30T16:20:48Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Logging - AI Gateway - Cloudflare Docs

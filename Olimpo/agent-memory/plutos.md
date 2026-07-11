@@ -1,3 +1,12 @@
+---
+tipo: memoria
+squad: Olimpo
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Olimpo/agent-memory/afrodite|afrodite]]"
+  - "[[Olimpo/agent-memory/olimpo|olimpo]]"
+---
+
 # Memória do Agente Plutos
 
 > Memória persistente deste agente. Atualizada pelo Ritual de Encerramento

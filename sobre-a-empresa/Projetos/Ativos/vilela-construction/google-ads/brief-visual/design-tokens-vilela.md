@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/brief-visual/_INDEX|_INDEX]]"
+---
+
 # Design Tokens — Vilela Construction
 
 > **Autoria:** Aglaia (squad Design & Visual da Kolden), a partir do handoff Peitho + Harmonia.

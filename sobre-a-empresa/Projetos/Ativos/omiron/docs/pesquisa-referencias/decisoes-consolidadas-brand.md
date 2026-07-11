@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/docs/pesquisa-referencias/leia-me|leia-me]]"
+---
+
 # Decisões Consolidadas de Marca — Omiron
 
 > Compilação executiva das decisões de identidade travadas até 06/07/2026.

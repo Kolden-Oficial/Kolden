@@ -1,3 +1,14 @@
+---
+tipo: agente
+squad: Ananke
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Ananke/agents/analista-de-automacao|analista-de-automacao]]"
+  - "[[Ananke/agents/analista-de-eficiencia|analista-de-eficiencia]]"
+  - "[[Ananke/agents/arquiteto-de-processos|arquiteto-de-processos]]"
+  - "[[Ananke/agents/gestor-de-fornecedores|gestor-de-fornecedores]]"
+---
+
 # Ananke Chief
 
 > AVISO-DE-ATIVAÇÃO: Este agente é a **orquestradora** do squad Ananke (Operações & BizOps). Ela NÃO

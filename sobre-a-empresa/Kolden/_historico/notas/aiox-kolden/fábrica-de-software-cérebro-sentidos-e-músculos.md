@@ -9,6 +9,9 @@ keywords: "('Software Factory Architecture', 'AI Programming Models', 'Sandbox E
 summary: "The text outlines a strategic blueprint for transforming a marketing agency into a **software factory** by utilizing the same technological foundations as industry leaders like Vercel and Lovable. It demystifies the industry by explaining that high-level coding intelligence is not a secret commodity but is accessible via **shared language models** like Claude 3.7 Sonnet through platforms like OpenRouter. The core argument is that the missing link for creating instant, visual applications is not a smarter brain, but an **execution sandbox**—a virtual workbench where code is automatically deployed and run. To achieve this, the author proposes integrating **infrastructure APIs** like E2B to automate the transition from raw code to a functioning interface, effectively building a seamless assembly line for software production."
 extraido_em: "2026-06-30T16:19:54Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Fábrica de Software: Cérebro, Sentidos e Músculos

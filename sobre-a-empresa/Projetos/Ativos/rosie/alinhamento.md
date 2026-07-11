@@ -8,6 +8,11 @@ data_extracao: 2026-06-30
 extraido_por: claude-code
 cliente: rosie
 dossie: ../../clientes/ativos/rosie.md
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/dossie|dossie]]"
 ---
 
 # [R] Alinhamento — Operação Rosie

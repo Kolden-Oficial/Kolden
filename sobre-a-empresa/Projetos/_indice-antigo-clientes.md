@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: _indice-antigo-clientes.md
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/_index|_index]]"
+  - "[[sobre-a-empresa/Projetos/leia-me|leia-me]]"
+---
+
 # Clientes da Kolden — Índice Mestre de Dossiês
 
 > Base de conhecimento consolidada a partir do **Drive compartilhado da Kolden**

@@ -9,6 +9,10 @@ keywords: "('Strategic Marketing Pillars', 'Digital Performance Results', 'SMART
 summary: "This document serves as a **strategic progress report** for Kaylon, outlining the inaugural business check-in led by the Kolden team to synchronize marketing and operational efforts. The presentation structures its growth plan around four essential pillars—**acquisition, engagement, conversion, and retention**—while detailing specific performance metrics such as lead costs and message volume. By utilizing the **SMART framework**, the team establishes a clear three-month objective to develop a **scalable sales process** through targeted media investment and rigorous campaign optimization. Ultimately, the source acts as a **collaborative roadmap**, identifying internal bottlenecks and defining upcoming tasks to ensure the partnership achieves a sustainable return on investment."
 extraido_em: "2026-06-30T16:07:02Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # 1° CHECK-IN - Kaylon - 12_06_2026.pptx

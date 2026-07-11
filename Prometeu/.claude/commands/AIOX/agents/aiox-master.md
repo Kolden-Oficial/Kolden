@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.claude/commands/AIOX/agents/_indice|_indice]]"
+---
+
 # aiox-master
 
 <!-- ACORE-CLAUDE-AGENT-COMMAND: legacy-shim -->

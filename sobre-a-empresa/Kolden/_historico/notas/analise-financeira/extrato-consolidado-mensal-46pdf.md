@@ -9,6 +9,9 @@ keywords: "('Fraud prevention tips', 'Banking service packages', 'Personal credi
 summary: "This document is a **consolidated monthly bank statement** from November 2021 for a **Santander Universities** account holder, providing a comprehensive overview of their financial status and available services. The text is structured to balance administrative data, such as **credit limits** and **university service package** details, with promotional offers for **transaction insurance** and specialized **investment platforms**. A significant portion of the communication is dedicated to **security awareness**, specifically educating the client on how to recognize and **prevent fraudulent schemes** like phishing links and \"courier scams.\" Ultimately, the source serves as both a functional record of **account activity** and a proactive tool for **financial management and protection**."
 extraido_em: "2026-06-30T16:26:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (46).pdf

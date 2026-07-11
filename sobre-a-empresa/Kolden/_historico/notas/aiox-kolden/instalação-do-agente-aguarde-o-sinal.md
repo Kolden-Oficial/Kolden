@@ -9,6 +9,9 @@ keywords: "('Agent installation', 'Linux terminal process', 'Tool configuration'
 summary: "This guide serves as a user manual for the final stages of **configuring a digital agent** within a Linux environment. It describes a highly automated process where the system **downloads and integrates specialized tools**, such as PDF readers and web extractors, to build the agent's functional capabilities. Users are encouraged to remain patient and **avoid interfering with the terminal**, even if the visual output appears to freeze during data-heavy tasks. The document clarifies that the installation is complete only when the **command prompt reappears**, signaling that the bot is ready for **real-world performance testing** via Telegram."
 extraido_em: "2026-06-30T16:20:16Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Instalação do Agente: Aguarde o Sinal

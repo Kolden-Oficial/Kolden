@@ -9,6 +9,9 @@ keywords: "('XML Prompting Strategy', 'Claude AI Performance', 'Structured Promp
 summary: "This Reddit discussion explores the community's reaction to **structured prompting**, particularly the use of **XML tags**, as a core strategy for improving interactions with the Claude AI model. While users debate whether the technique’s effectiveness stems from **Anthropic’s official training** or simply from forcing humans to **organize their thoughts better**, the consensus highlights that clear formatting prevents confusion and reduces the need for back-and-forth clarification. Skeptics argue that such rigid structures may be becoming **obsolete or a waste of tokens** as models improve, yet proponents maintain that \"speaking the AI's language\" remains a **game-changer for complex tasks**. Ultimately, the text serves as a guide for users to transition from conversational prose to **consistent, parseable frameworks** like XML or Markdown to achieve higher-quality, reliable outputs."
 extraido_em: "2026-06-30T16:18:19Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Anthropic's Official Take on XML-Structured Prompting as the Core Strategy - Reddit

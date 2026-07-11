@@ -9,6 +9,9 @@ keywords: "('Bank account statement', 'Financial transactions', 'Promotional off
 summary: "This document is a **consolidated monthly bank statement** from January 2019 issued by **Santander Universidades** to a client named Ronan Sergio Silva. The report is structured to provide a comprehensive **financial overview**, detailing specific account movements such as salary deposits and ATM withdrawals alongside a **summary of credit limits** and service fees. Beyond transactional data, the text serves a promotional purpose by outlining **incentive programs** like the \"Ping Pong\" and \"Bateu Ganhou\" rewards, while also offering **career development opportunities** through a university internship initiative. Finally, it includes essential **regulatory disclosures** and economic indices to ensure the user is informed about current interest rates and broader market trends."
 extraido_em: "2026-06-30T16:25:51Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (10).pdf

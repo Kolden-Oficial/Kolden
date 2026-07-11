@@ -9,6 +9,9 @@ keywords: "('AI Tech Stack', 'Production AI Architecture', 'Foundation Models', 
 summary: "The provided text outlines a sophisticated, **layered architecture** required to transition artificial intelligence from simple experimental prototypes to **robust production systems**. Moving beyond a model-centric view, the guide defines a **six-layer stack** that integrates specialized compute hardware, foundation models, **Retrieval-Augmented Generation (RAG)** for proprietary data access, and orchestration frameworks for managing complex workflows. A significant portion of the source emphasizes the necessity of **safety guardrails and MLOps** to ensure these applications remain reliable, secure, and observable in real-world environments. Ultimately, the document serves as a **strategic roadmap for engineering teams**, advocating for an intentional design approach that balances speed with long-term **scalability and operational control**."
 extraido_em: "2026-06-30T16:18:00Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # AI Tech Stack 2026: Architecture & Production Guide - Lampros Tech

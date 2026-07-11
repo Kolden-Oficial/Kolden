@@ -9,6 +9,9 @@ keywords: "('Consortium membership proposal', 'Yamaha motorcycle financing', 'Pe
 summary: "This document serves as a **membership proposal** for an individual named Ronan Sergio Silva to join a **Yamaha motorcycle consortium**, specifically for the acquisition of a Factor 150 UBS model through a 48-month payment plan. The primary purpose of the text is to formalize the applicant's **personal and financial data**, while outlining the **contractual obligations** regarding monthly installments, credit limits, and the administrative rules set by the Banco Central do Brasil. A significant portion of the source is dedicated to a **credit life insurance agreement**, which offers a safety net to liquidate or amortize the debt in the event of the policyholder's **death or permanent disability**. By signing, the participant acknowledges the **eligibility criteria**, such as health status and age limits, ensuring that the group remains financially stable and that all parties are protected against **insolvency risks** throughout the duration of the plan."
 extraido_em: "2026-06-30T16:13:44Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # PROPOSTA RONAN SERGIO SILVA-1.pdf

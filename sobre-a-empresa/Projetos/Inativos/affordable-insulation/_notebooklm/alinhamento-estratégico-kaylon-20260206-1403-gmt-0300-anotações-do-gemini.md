@@ -9,6 +9,10 @@ keywords: "('Strategic Marketing Pillars', 'Lead Qualification Process', 'Target
 summary: "This document summarizes a strategic alignment meeting between **Kaylon Teixeira** and the **Coden agency** to optimize the marketing and operations of a specialized insulation business in the United States. The discussion outlines a multi-pronged growth plan centered on **predictable lead acquisition** and establishing **local authority**, specifically targeting homeowners and large-scale construction firms through localized paid traffic and organic social media content. Key technical details are addressed, including the implementation of **sales funnels** via Facebook Messenger and the development of a **customized pricing spreadsheet** to improve profit margins and operational efficiency. Ultimately, the collaboration aims to transform a successful but busy local operation into a scalable enterprise by integrating professional digital marketing with streamlined administrative processes."
 extraido_em: "2026-06-30T16:06:56Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Alinhamento Estratégico Kaylon - 2026/02/06 14:03 GMT-03:00 - Anotações do Gemini

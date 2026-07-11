@@ -7,6 +7,17 @@ palavras-chave: [missao, visao, valores, cultura, identidade]
 status: rascunho
 atualizado-em: 2026-06-18
 relacionados: [visao-geral]
+tipo: nota
+area: identidade
+up: "[[sobre-a-empresa/Kolden/identidade/_MOC-identidade]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/identidade/historia|história]]"
+  - "[[sobre-a-empresa/Kolden/marca/identidade-visual|identidade visual]]"
+  - "[[sobre-a-empresa/Kolden/marca/mensagens-chave|mensagens-chave]]"
+  - "[[sobre-a-empresa/Kolden/identidade/organograma|organograma]]"
+  - "[[sobre-a-empresa/Kolden/identidade/perfil-kolden-9-anos|perfil 9 anos]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tom-visual|tom visual]]"
+  - "[[sobre-a-empresa/Kolden/identidade/visao-geral|visão geral]]"
 ---
 
 # Missão, Visão e Valores

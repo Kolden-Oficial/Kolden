@@ -9,6 +9,10 @@ keywords: "('Consumer behavior patterns', 'Low-cost impulse buying', 'Social cla
 summary: "This internal strategy guide serves as a **master intelligence document** designed to align a sales team on the psychological profile and behavioral triggers of Brazil’s **middle and lower-middle class consumers**. It describes a demographic characterized by **cognitive exhaustion** and financial limitations, where shopping functions as a **dopamine-driven escape** and a way to experience **micro-luxury** through affordable, status-oriented goods. The text establishes a critical **R$ 100 impulse threshold**, asserting that purchases below this price point are governed by emotion and a sense of **merit-based reward**, while also warning that **social validation** and the fear of being deceived are the ultimate gatekeepers of conversion. By defining the brand's role as a **trusted filter** that helps clients \"hack the system,\" the document provides a blueprint for communication that prioritizes **visual appeal and immediate gratification** over technical complexity or rational analysis."
 extraido_em: "2026-06-30T16:08:32Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # Definição de Público Perfeito

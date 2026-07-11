@@ -6,6 +6,9 @@ segmento: "Construção civil / isolamento térmico e acústico (EUA)"
 status: "ativo"
 drive_folder_id: "1mPp7nyLiMwvgRu9H6yIAcHuon6u2t1KU"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Affordable Insulation

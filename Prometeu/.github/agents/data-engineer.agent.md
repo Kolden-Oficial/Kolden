@@ -2,6 +2,11 @@
 name: data-engineer
 description: 'Use for database design, schema architecture, Supabase configuration, RLS policies, migrations, query optimization, data modeling, operations, and monitoring'
 tools: ['read', 'edit', 'search', 'execute']
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.github/agents/_indice|_indice]]"
 ---
 
 # 📊 Dara Agent (@data-engineer)

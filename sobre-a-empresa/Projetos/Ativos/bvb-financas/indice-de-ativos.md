@@ -7,6 +7,12 @@ palavras-chave: [inventario, ativos, drive, indice, referencia]
 status: rascunho
 atualizado-em: 2026-07-06
 relacionados: [leia-me, dossie]
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/dossie|dossie]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/leia-me|leia-me]]"
 ---
 
 # Inventário de Ativos — Drive BVB Finanças

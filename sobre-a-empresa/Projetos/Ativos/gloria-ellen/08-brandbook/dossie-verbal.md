@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/08-brandbook/guia-de-estilo-master|guia-de-estilo-master]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/08-brandbook/perguntas-para-call|perguntas-para-call]]"
+---
+
 # Dossiê Verbal — Glória Ellen (extraído do Drive dela)
 
 Compilação dos 5 documentos de branding já produzidos pela Glória. Ponto de partida do brandbook — não reescrever, PRESERVAR.

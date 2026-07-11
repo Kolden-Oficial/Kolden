@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Upstash — Referência de Uso
 
 Plataforma de dados serverless (Redis, Vector, QStash/mensageria e Workflow) com cobrança por uso e API REST. Categoria: Infra/Dados.

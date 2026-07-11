@@ -9,6 +9,9 @@ keywords: "('LlamaIndex', 'LangChain', 'RAG framework differences', 'Retrieval-a
 summary: "This technical comparison explores the functional differences between LlamaIndex and LangChain, two leading frameworks used to build **retrieval-augmented generation (RAG)** systems that ground AI models in specific domain data. The text frames **LlamaIndex as a retrieval-first tool** optimized for efficient document indexing and precise querying, whereas **LangChain is an orchestration-first framework** designed for complex agentic workflows, memory, and tool integration. Beyond architectural theory, the guide provides a **practical roadmap for building production-ready pipelines**, emphasizing that developers should prioritize high-quality data retrieval over prompt engineering to reduce model hallucinations. Ultimately, the source advises a **scenario-based selection process**, suggesting that teams choose the simpler efficiency of LlamaIndex for search tasks or the modular flexibility of LangChain for multi-step autonomous assistants."
 extraido_em: "2026-06-30T16:20:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # LlamaIndex vs LangChain: RAG framework differences - Statsig

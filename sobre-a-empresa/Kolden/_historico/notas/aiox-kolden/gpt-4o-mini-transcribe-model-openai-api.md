@@ -9,6 +9,9 @@ keywords: "('OpenAI API', 'GPT-4o mini Transcribe', 'Speech to text', 'Model opt
 summary: "The provided source is a technical documentation page for the **GPT-4o mini Transcribe model**, a high-performance **speech-to-text** tool designed to outperform legacy Whisper models in **language recognition and accuracy**. The text outlines a comprehensive **developer ecosystem**, ranging from core concepts like **audio and vision** to advanced **agent building** and **real-time API** integrations. In addition to technical specifications like **context windows** and **knowledge cutoffs**, the documentation details a **tiered pricing structure** and **rate limits** based on token usage. Ultimately, the source serves as a structural roadmap for creators to **run, scale, and optimize** AI-driven transcription services within the OpenAI platform."
 extraido_em: "2026-06-30T16:19:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # GPT-4o mini Transcribe Model | OpenAI API

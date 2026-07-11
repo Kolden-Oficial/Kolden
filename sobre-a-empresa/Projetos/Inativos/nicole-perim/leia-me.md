@@ -6,6 +6,9 @@ segmento: "Marketing político-eleitoral (candidata a vereadora — Vespasiano/M
 status: "inativo"
 drive_folder_id: "1J1zWvc0qIqzqZBy_LzdYelt4ahQxP5lG"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: nicole-perim
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Nicole Perim

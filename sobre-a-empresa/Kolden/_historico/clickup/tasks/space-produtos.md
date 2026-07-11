@@ -5,6 +5,10 @@ clickup_space_nome: "Produtos"
 total_tasks: 8
 extracted_at: 2026-06-30
 nota: "8 produtos modulares em desenvolvimento — provavelmente o catálogo de entregáveis da nova Kolden (pós-pivot 2025)."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/INDEX|INDEX]]"
 ---
 
 # Tasks — Space Produtos

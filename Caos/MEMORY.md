@@ -1,3 +1,9 @@
+---
+tipo: memoria
+squad: Caos
+up: "[[_MOC-memorias]]"
+---
+
 # Memória do Squad Caos
 
 > Auto-aprendizado do Caos (fábrica de agents da Kolden). Atualizado pelo `ritual-de-encerramento`

@@ -7,6 +7,11 @@ palavras-chave: [decisoes, adr, log]
 status: em-producao
 atualizado-em: 2026-07-03
 relacionados: [arquitetura]
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/dossie|dossie]]"
 ---
 
 # Log de Decisões — NutriOS Pro

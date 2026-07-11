@@ -9,6 +9,10 @@ keywords: "('Marketing Consulting', 'CRM Management', 'Strategic Copywriting', '
 summary: "This document outlines a comprehensive **digital marketing service scope** provided by Kolden, a consultancy dedicated to accelerating growth and sales for local businesses. The service framework is built upon eight core pillars, ranging from **strategic sales consulting** and **CRM management** to advanced **paid traffic strategies** and **copywriting**. By integrating **intelligent automation** via chatbots and **data intelligence** through customized reporting, the agency ensures that every marketing action is measurable and optimized for conversion. Ultimately, the text defines a **collaborative partnership model** that combines technical execution with ongoing **expert support and training** to foster long-term commercial success."
 extraido_em: "2026-06-30T16:10:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Anexo I - Escopo de Serviços Detalhado

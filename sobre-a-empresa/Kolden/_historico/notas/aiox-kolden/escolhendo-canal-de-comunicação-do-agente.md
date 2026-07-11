@@ -9,6 +9,9 @@ keywords: "('Communication channel selection', 'Telegram bot configuration', 'Wh
 summary: "This guide assists users in selecting a **front-end messaging platform** to serve as the primary interface for their artificial intelligence agent. While the text acknowledges several corporate options, it focuses on the choice between **Telegram**, praised for its **official bot support** and ease of setup, and **WhatsApp**, which offers high accessibility but presents **privacy risks** and technical hurdles. The author ultimately advises beginners to prioritize **Telegram for a seamless launch**, as it utilizes a dedicated token system that keeps personal data separate and secure. Overall, the source serves as a practical roadmap for **bridging the gap** between complex server code and a user-friendly chat experience."
 extraido_em: "2026-06-30T16:19:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Escolhendo Canal de Comunicação do Agente

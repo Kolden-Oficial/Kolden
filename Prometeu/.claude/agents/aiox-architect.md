@@ -25,6 +25,11 @@ skills:
   - synapse:tasks:diagnose-synapse
   - architect-first
 color: purple
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/prometeu-chief|prometeu-chief]]"
 ---
 
 # AIOX Architect - Agente Autônomo

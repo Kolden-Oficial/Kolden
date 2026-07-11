@@ -9,6 +9,10 @@ keywords: "('Marketing digital services', 'Contract duration', 'Payment terms', 
 summary: "This formal document establishes a **binding agreement** for the provision of **digital marketing services** between the agency Kolden and their client, Marco Aurélio Limeres. The contract outlines a comprehensive range of activities, including **strategic copywriting and data intelligence**, which are to be executed over a standard **six-month duration**. To ensure a professional partnership, the text clearly defines **mutual responsibilities** regarding communication and payment, while specifically assigning all **intellectual property rights** to the hiring party. Ultimately, this legal framework serves to protect both entities by detailing **confidentiality protocols** and providing a structured method for **contract termination** or legal resolution."
 extraido_em: "2026-06-30T16:17:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # [KOLDEN] Contrato de Prestação de Serviços

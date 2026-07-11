@@ -2,6 +2,11 @@
 name: aiox-master
 description: 'Use when you need comprehensive expertise across all domains, framework component creation/modification, workflow orchestration, or running tasks that don''t require a specialized persona.'
 tools: ['read', 'edit', 'search', 'execute']
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.github/agents/_indice|_indice]]"
 ---
 
 # 👑 Orion Agent (@aiox-master)

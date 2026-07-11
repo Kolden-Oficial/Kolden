@@ -9,6 +9,9 @@ keywords: "('Customer service channels', 'Banking service packages', 'Economic f
 summary: "This document serves as a **monthly consolidated bank statement** for a customer's **university account** at Santander Brazil, dated August 2023. It outlines specific **transaction limits and service fees**, such as monthly maintenance costs and allowances for withdrawals, transfers, and SMS notifications. Beyond personal financial data, the source provides a broader **economic overview** by listing various market indices and currency exchange rates for the Dollar and Euro. Finally, it emphasizes **digital security and fraud prevention**, advising clients to remain vigilant against phishing attempts and to only use official communication channels."
 extraido_em: "2026-06-30T16:26:37Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (68).pdf

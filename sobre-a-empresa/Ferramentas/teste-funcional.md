@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/ferramentas|ferramentas]]"
+---
+
 # Teste Funcional — "Está funcionando?" de todas as ferramentas
 
 Teste mínimo, real e **sem custo** (endpoints de auth/list; nenhuma completion/scrape/modelo pago).

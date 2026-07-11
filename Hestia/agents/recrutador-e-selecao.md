@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Hestia
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Hestia/agents/hestia-chief|hestia-chief]]"
+---
+
 # Recrutador & Seleção
 
 > Especialista tier 1 do squad Héstia. Dono da frente **atrair**: do desenho da vaga à carta-proposta.

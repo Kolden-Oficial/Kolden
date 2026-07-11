@@ -7,6 +7,11 @@ palavras-chave: [persona, icp, jobs-to-be-done, jtbd, ocasioes, rosie, discovery
 status: rascunho
 atualizado-em: 2026-06-23
 relacionados: [00-indice, ../brandbook/01-posicionamento/03-microambiente-macroambiente]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/pesquisa/00-indice|00-indice]]"
 ---
 
 # Persona & ICP — Rosie

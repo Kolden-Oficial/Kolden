@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Emporos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Emporos/agents/emporos-chief|emporos-chief]]"
+---
+
 # Qualificador de Leads
 
 > Especialista tier 1 do Êmporos. Decide se um lead **presta** antes de o squad investir esforço:

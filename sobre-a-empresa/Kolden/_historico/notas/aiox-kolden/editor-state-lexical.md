@@ -9,6 +9,9 @@ keywords: "('Lexical Editor State', 'State Update Process', 'Immutable Snapshots
 summary: "The Lexical framework treats the **Editor State** as the absolute **source of truth**, prioritizing an underlying data model over the unpredictable nature of the DOM. This architectural choice **decouples content structure from formatting**, ensuring a consistent and canonical document representation regardless of how styles are applied. Within this system, states transition from a **mutable \"pending\" phase** during updates to a **locked, immutable snapshot** once changes are committed. By utilizing a **double-buffering technique**, Lexical efficiently batches updates and reconciles them with the DOM, allowing developers to manage the **node tree and selection** with high performance and precision."
 extraido_em: "2026-06-30T16:19:46Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Editor State - Lexical

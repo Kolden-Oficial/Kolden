@@ -10,6 +10,11 @@ autor: "Squad Caliope — orquestrado por copy-chief (Cyrus)"
 especialistas: [andre-chaperon, ben-settle, ry-schwartz, russell-brunson, todd-brown]
 relacionados: [../../alinhamento.md, ../../pesquisa/03-persona-icp.md, ../../pesquisa/04-tom-de-voz.md]
 contrato: "Olimpo/contratos/missoes/m-20260701-112935-rosie-90d.yaml"
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/README|README]]"
 ---
 
 # 5 Fluxos de E-mail — Operação Rosie

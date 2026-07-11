@@ -9,6 +9,9 @@ keywords: "('Gemini Enterprise', 'Vertex AI', 'Google Workspace', 'Autonomous AI
 summary: "This guide explores the diverse ecosystem of Google's artificial intelligence by distinguishing between three primary platforms: **Google Workspace with Gemini**, **Vertex AI**, and **Gemini Enterprise**. While Workspace functions as an **everyday productivity assistant** for drafting and organization, Vertex AI serves as a **developer-centric playground** for building bespoke machine learning models, and Gemini Enterprise acts as an **orchestrator for autonomous agents** capable of executing complex workflows. By categorizing these tools by their technical depth and business utility, the text illustrates how they can be integrated into a **unified AI stack** that enhances human efficiency while maintaining **enterprise-grade security and data privacy**. Ultimately, the source provides a roadmap for organizations to transition from manual operations to an **automated, agentic future** using Google’s evolving large language models."
 extraido_em: "2026-06-30T16:19:59Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Google AI Guide: Gemini Enterprise vs. Vertex vs. Workspace - ByteeIT

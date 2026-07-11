@@ -9,6 +9,12 @@ keywords: "('Nutrition Spreadsheet Software', 'SAAS Business Model', 'Nutritiona
 summary: "This document summarizes a strategic meeting between Vinicius Abdon and Ronan Sersil regarding the evolution of a **nutritional calculation tool** from a basic Excel spreadsheet into a professional digital business. Vinicius has developed a **scientifically grounded database** that automates complex dietary plans and body composition metrics, a product that notably achieved organic sales success without any formal marketing. Recognizing the high demand among **newly graduated nutritionists** and meticulous fitness enthusiasts, Ronan proposes transitioning the product into a **Software as a Service (SaaS)** model to generate recurring monthly revenue. The partnership is formalized with a **60/40 profit split**, where Vinicius provides the intellectual property and advertising investment while Ronan manages the **software development and market research**. Ultimately, the project aims to **sell an experience** of professional empowerment and health autonomy through a scalable, branded platform."
 extraido_em: "2026-06-30T16:10:10Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/02-kolden-nutricalc-alinhamento-do-projeto|02-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/03-kolden-nutricalc-alinhamento-do-projeto|03-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/04-kolden-nutricalc-alinhamento-do-projeto|04-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/kolden-nutricalc-alinhamento-do-projeto-20260318-1601-gmt-0300-anotações-do|kolden-nutricalc-alinhamento-do-projeto-20260318-1601-gmt-0300-anotações-do]]"
 ---
 
 # 01 | Kolden & NutriCalc | Alinhamento do Projeto

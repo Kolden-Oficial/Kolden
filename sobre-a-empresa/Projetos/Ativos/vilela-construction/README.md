@@ -1,3 +1,18 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/clausula-ghl-sombra-thiago|clausula-ghl-sombra-thiago]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/diagnostico-tracking-2026-07-01|diagnostico-tracking-2026-07-01]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/dossie|dossie]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/dossie-site-vilela-construction|dossie-site-vilela-construction]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/faq-para-lp|faq-para-lp]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/landing-page-fixes-2026-07|landing-page-fixes-2026-07]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/perguntas-para-thiago|perguntas-para-thiago]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/roteiro-entrevista-testimonials|roteiro-entrevista-testimonials]]"
+---
+
 # Vilela Construction — Workspace
 
 > Cliente: **Vilela Construction Inc.** (Massachusetts, USA — residential construction / remodeling)

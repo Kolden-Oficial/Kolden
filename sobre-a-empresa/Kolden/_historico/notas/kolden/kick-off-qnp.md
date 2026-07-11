@@ -9,6 +9,9 @@ keywords: "('Sales process construction', 'Business diagnosis', 'Strategic objec
 summary: "This document serves as an initial **onboarding questionnaire** designed to establish a strategic foundation for a company’s **digital sales transformation**. It functions as a diagnostic tool that captures **essential business intelligence**, ranging from internal organizational structures and financial objectives to external market positioning and competitive analysis. By identifying a **unique value proposition** centered on artisanal quality and identifying specific growth targets, the text aims to align the client and consultant toward a unified **marketing and delivery expansion**. Ultimately, the source acts as a **collaborative roadmap** to transition a traditional business into a data-driven, internet-based revenue engine."
 extraido_em: "2026-06-30T16:13:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Kick-Off - QNP

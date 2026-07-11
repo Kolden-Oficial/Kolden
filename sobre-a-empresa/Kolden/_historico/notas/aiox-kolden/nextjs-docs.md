@@ -9,6 +9,9 @@ keywords: "('Next.js Documentation', 'App Router', 'Pages Router', 'React Framew
 summary: "The provided documentation serves as a comprehensive manual for **Next.js**, a powerful React-based framework designed for constructing **full-stack web applications** with optimized performance and streamlined tooling. It categorizes its vast library of information into three distinct sections: **Getting Started** for fundamental setup, **Guides** for specialized use cases, and an extensive **API Reference** for technical specifics. A central theme of the text is the distinction between the modern **App Router**, which leverages cutting-edge React features like Server Components, and the legacy **Pages Router** maintained for backward compatibility. Ultimately, this resource acts as a structural roadmap for developers to master **interactive web development**, offering everything from basic installation steps to advanced configuration for deploying fast, production-ready software."
 extraido_em: "2026-06-30T16:21:06Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Next.js Docs

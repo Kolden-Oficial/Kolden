@@ -1,3 +1,9 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+---
+
 # Template — Relatório Semanal Google Ads Vilela Construction
 
 > **Autor:** Peitho / `performance-analyst`

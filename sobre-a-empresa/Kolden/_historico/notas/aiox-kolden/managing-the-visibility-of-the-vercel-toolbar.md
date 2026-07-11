@@ -9,6 +9,9 @@ keywords: "('Vercel Toolbar Visibility', 'Dashboard Project Settings', 'Environm
 summary: "The provided documentation serves as a comprehensive technical guide for **managing the visibility and functionality** of the Vercel Toolbar across different development environments. It outlines a hierarchical control system, allowing administrators to toggle the tool at the **team-wide, project-specific, or individual branch level** through the Vercel dashboard or environment variables. The text further details practical ways to **interact with or hide the interface**, including session-specific disabling, keyboard shortcuts, and a specialized header for **bypassing the toolbar during automated testing**. Finally, the guide addresses advanced integration requirements, such as configuring **Content Security Policies** and enabling support for custom alias domains to ensure the toolbar operates correctly within secure or specialized network architectures."
 extraido_em: "2026-06-30T16:20:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Managing the visibility of the Vercel Toolbar

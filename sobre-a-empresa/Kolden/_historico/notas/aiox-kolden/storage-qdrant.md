@@ -9,6 +9,9 @@ keywords: "('Vector storage', 'Payload storage', 'Memmap configuration', 'Data v
 summary: "This documentation provides a comprehensive technical guide to the **storage architecture of Qdrant**, a specialized database designed for high-performance vector search. The text explains that data is organized into **independent segments**, each containing unique storage and indexing structures that allow for flexible memory management. Users can optimize performance by choosing between **in-memory storage** for maximum speed or **memmap and on-disk options** to handle massive datasets with limited hardware resources. Furthermore, the source outlines critical reliability features such as **write-ahead logging** and versioning, which ensure **data integrity** and consistent recovery during system operations."
 extraido_em: "2026-06-30T16:22:05Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Storage - Qdrant

@@ -9,6 +9,10 @@ keywords: "('Open API Explorer', 'GraphQL API testing', 'API Query Mutations', '
 summary: "The Open API Explorer V2 is a **specialized interactive environment** designed for developers to experiment with and implement GraphQL-based data requests. By providing a **comprehensive sidebar of queries and mutations**, the platform allows users to browse available functions and configure specific calls for tasks like generating short links or pulling product reports. The interface functions as a **technical sandbox** where one can execute live requests, view immediate responses, and extract ready-to-use code snippets such as cURL commands. Ultimately, this tool serves as a **bridge between documentation and deployment**, offering a guided, hands-on approach to mastering the system's integration capabilities."
 extraido_em: "2026-06-30T16:08:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # Open API Explorer V2

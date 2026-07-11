@@ -9,6 +9,9 @@ keywords: "('Digital security tips', 'Financial services shopping', 'Rewards poi
 summary: "This document is a **consolidated monthly bank statement** from Santander Brazil for July 2022, detailing the account activity and service package of a **university student account**. Beyond financial summaries and **economic indices**, the text serves as a comprehensive **security guide** that warns the client about digital scams and provides specific instructions on **securing WhatsApp accounts**. Additionally, it functions as a promotional tool, highlighting the **Esfera rewards program** and the bank's investment brokerage services. Ultimately, the source aims to balance **administrative transparency** with proactive **customer education** regarding fraud prevention and financial growth."
 extraido_em: "2026-06-30T16:26:25Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (54).pdf

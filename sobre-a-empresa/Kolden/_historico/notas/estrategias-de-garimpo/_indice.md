@@ -3,6 +3,12 @@ notebook_id: "27fbd148-0c2e-47ff-99fd-4137c1d5135f"
 notebook_titulo: "Estratégias de Garimpo e Otimização de Ofertas"
 total_fontes: 4
 extraido_em: "2026-06-30T16:07:08Z"
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/estrategias-de-garimpo/ebook_ba4b2062-dc13-4724-8b82-c1fda47fd39f1pdf|ebook_ba4b2062-dc13-4724-8b82-c1fda47fd39f1pdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/estrategias-de-garimpo/k-central-de-pesquisas|k-central-de-pesquisas]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/estrategias-de-garimpo/k-central-de-pesquisas-1|k-central-de-pesquisas-1]]"
 ---
 
 # Índice — Estratégias de Garimpo e Otimização de Ofertas

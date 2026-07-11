@@ -1,3 +1,9 @@
+---
+tipo: memoria
+squad: Themis
+up: "[[_MOC-memorias]]"
+---
+
 # Memória do Squad Themis (Conselho Estratégico / Advisory)
 
 > Memória persistente do squad. Atualizada pelo Ritual de Encerramento. Não reescrever do zero —

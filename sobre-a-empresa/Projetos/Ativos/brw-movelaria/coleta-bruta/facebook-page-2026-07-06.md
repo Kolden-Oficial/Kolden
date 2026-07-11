@@ -1,3 +1,14 @@
+---
+tipo: projeto
+projeto: brw-movelaria
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/coleta-bruta/argos-transcript-2026-07-06|argos-transcript-2026-07-06]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/coleta-bruta/drive-2026-07-06|drive-2026-07-06]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/coleta-bruta/instagram-top-20-posts-2026-07-06|instagram-top-20-posts-2026-07-06]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/coleta-bruta/tiktok-perfil-2026-07-06|tiktok-perfil-2026-07-06]]"
+---
+
 # Facebook Page @BRWmovelaria — snapshot
 
 **Coleta:** 2026-07-06 via Apify (`apify/facebook-pages-scraper`)

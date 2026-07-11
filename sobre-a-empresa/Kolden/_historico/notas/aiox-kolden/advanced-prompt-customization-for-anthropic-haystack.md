@@ -9,6 +9,9 @@ keywords: "('Advanced Prompt Customization', 'RAG Pipeline Development', 'Anthro
 summary: "This technical guide serves as a comprehensive resource for building sophisticated AI applications using the **Haystack framework** in coordination with **Anthropic’s Claude models**. The documentation specifically details how to implement **Retrieval-Augmented Generation (RAG)** by utilizing **XML-tagged prompting techniques** to improve context processing and accuracy. Beyond this specific tutorial, the text outlines a vast ecosystem of **advanced retrieval strategies**, **agentic workflows**, and **integrations** designed to help developers create production-ready AI agents. Ultimately, the source functions as both a **step-by-step instructional manual** for prompt engineering and a **broad directory of tools** for modern LLM orchestration."
 extraido_em: "2026-06-30T16:18:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Advanced Prompt Customization for Anthropic - Haystack

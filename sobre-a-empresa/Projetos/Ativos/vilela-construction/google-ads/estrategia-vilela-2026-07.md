@@ -11,6 +11,12 @@ contrato: "Olimpo/contratos/missoes/m-20260709-google-ads-vilela.yaml"
 roadmap_pai: "sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/ROADMAP.md"
 phase: "Phase 0 do workflow *campaign-launch (Peitho)"
 status: "para aprovacao Ronan em D+3 antes de lancar em D+10"
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/conversion-actions|conversion-actions]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/ghl-shadow-integration|ghl-shadow-integration]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/ROADMAP|ROADMAP]]"
 ---
 
 # Estratégia — Google Ads Vilela Construction (2026-07)

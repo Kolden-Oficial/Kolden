@@ -9,6 +9,10 @@ keywords: "('File naming conventions', 'Folder structure', 'Version control', 'R
 summary: "This guide from Imperial College London provides a framework for effective **research data management** by focusing on the systematic organization of digital files. It advocates for a **hierarchical folder structure** that balances depth and breadth, ensuring that documents are grouped by logical categories such as project phase or data type. The text highlights the importance of **standardized naming conventions**, recommending the use of descriptive elements like dates in YYYY-MM-DD format and version numbers while avoiding spaces or special characters. Furthermore, it outlines various **version control methods**, ranging from manual decimal numbering to the use of professional software like Git, to maintain a clear history of edits. Ultimately, these practices serve to enhance **collaboration and data retrieval**, preventing the accidental loss of information and ensuring research remains transparent and reproducible."
 extraido_em: "2026-06-30T16:13:44Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # Naming files and folders | Research | Imperial College London

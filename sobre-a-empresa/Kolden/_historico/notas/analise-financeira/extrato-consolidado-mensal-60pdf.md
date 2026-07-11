@@ -9,6 +9,9 @@ keywords: "('Fraud Prevention', 'Banking Services', 'Rewards Program', 'Security
 summary: "This monthly financial statement serves as a dual-purpose communication, functioning both as a **consolidated account summary** for December 2022 and an urgent **security advisory guide**. The document details specific bank services for a \"University Account,\" including transaction limits and a **loyalty rewards program** known as Esfera that offers points and cashback. Beyond these administrative details, the primary focus is a series of **fraud prevention warnings** designed to protect the user from common seasonal scams, such as the \"gift delivery\" ruse and digital payment vulnerabilities. By providing direct contact information for customer support alongside these alerts, the bank aims to reinforce **consumer safety and financial literacy** in an era of increasing technological exploitation."
 extraido_em: "2026-06-30T16:26:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (60).pdf

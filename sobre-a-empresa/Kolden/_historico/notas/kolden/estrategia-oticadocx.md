@@ -9,6 +9,9 @@ keywords: "('Social media structure', 'Website development', 'Content creation',
 summary: "This strategic document outlines a **phased roadmap for modernizing an optical business’s digital presence**, beginning with a comprehensive overhaul of its social media identity. The plan prioritizes **visual professionalism and brand storytelling**, urging the shop to utilize high-quality photography and transparent pricing to build consumer trust. By integrating physical marketing tools like **QR codes with e-commerce platforms**, the strategy aims to funnel traffic into a cohesive sales ecosystem. Ultimately, the framework distinguishes between consumer behaviors, targeting **lifestyle-driven sunglass sales** on Instagram while capturing **intent-based prescription eyewear searches** through a structured Google strategy."
 extraido_em: "2026-06-30T16:12:19Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Estrategia Otica.docx

@@ -9,6 +9,10 @@ keywords: "('Spray foam insulation', 'Energy efficiency', 'Fiberglass and Rockwo
 summary: "Affordable Insulation is a specialized service provider based in Lowell, Massachusetts, that offers a comprehensive suite of **thermal and acoustic solutions** for residential and commercial properties. The company focuses on enhancing **energy efficiency and year-round comfort** through diverse materials, including fiberglass, rockwool, blow-in cellulose, and both open and closed-cell spray foam. Their service range also emphasizes **safety and compliance** by providing fire-blocking thermal barriers to protect building structures. By combining **professional installation with sustainable products**, the firm aims to deliver long-term utility savings and improved property value for their clients. The source functions as a professional guide and promotional overview, inviting potential customers to request **expert consultations and free quotes** for their insulation needs."
 extraido_em: "2026-06-30T16:06:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Affordable Insulation – Specialists in the application of insulation.pdf

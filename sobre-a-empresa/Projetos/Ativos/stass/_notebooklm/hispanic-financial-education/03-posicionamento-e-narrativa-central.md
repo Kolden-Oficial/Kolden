@@ -9,6 +9,10 @@ keywords: "('Latino financial education', 'Canadian financial system', 'Strategi
 summary: "This document serves as a strategic blueprint for a marketing campaign centered on **Amparo Camacho**, a financial educator dedicated to empowering the **Spanish-speaking immigrant community** in Ontario, Canada. The narrative positions her as a vital **cultural and linguistic translator** who demystifies the complex Canadian financial system, offering a \"no-pressure\" educational alternative to traditional banks and aggressive sales agents. By utilizing the **\"3 Golden Rules\" mechanism**—organizing, growing, and protecting wealth—the campaign aims to move hard-working Latinos from a state of financial fog toward tangible goals like **home ownership and family protection**. Ultimately, the text outlines a structured **eight-act storytelling framework** and specific \"Big Ideas\" designed to build trust and urgency for a series of in-person educational seminars."
 extraido_em: "2026-06-30T16:28:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/_indice|_indice]]"
 ---
 
 # 03 — Posicionamento e Narrativa Central

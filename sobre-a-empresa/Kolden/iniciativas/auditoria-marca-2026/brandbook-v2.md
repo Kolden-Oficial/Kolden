@@ -5,6 +5,14 @@ data: 2026-06-23
 squads: [Aglaia, Harmonia]
 espelho-de: brandbook-v2.html
 fontes: [artefatos/posicionamento.md, artefatos/arquetipo.md, artefatos/identity-prism.md, artefatos/proposta-voz-e-tom.md, artefatos/proposta-mensagens-chave.md, ../design-system/01-fundamentos/]
+tipo: nota
+area: iniciativas
+up: "[[sobre-a-empresa/Kolden/iniciativas/_MOC-iniciativas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/00-sumario-executivo|00-sumario-executivo]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/01-auditoria-integrada|01-auditoria-integrada]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/02-roadmap-de-marca|02-roadmap-de-marca]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/_guia-auditoria|_guia-auditoria]]"
 ---
 
 # Kolden · Brandbook v2 (proposta)

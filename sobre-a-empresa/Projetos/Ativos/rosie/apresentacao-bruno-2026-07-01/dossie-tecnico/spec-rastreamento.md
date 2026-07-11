@@ -12,6 +12,11 @@ depende_de: [F0 do contrato de missão — CVR/AOV real]
 stack_primaria_tracking: Solomon (SDK web + API de pedidos) como fonte de verdade da jornada
 destinos_server_side: Meta Conversions API, GA4 Measurement Protocol, Google Ads Enhanced Conversions, RD Station API — orquestrados por GTM server-side consumindo eventos Solomon
 mcp_status: em construção (pré-Ritual do Caos aberto, Ronan escolheu prioridade ALTA 2026-07-01)
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/README|README]]"
 ---
 
 # Spec de Rastreamento — Rosie (Solomon como fonte primária + destinos server-side)

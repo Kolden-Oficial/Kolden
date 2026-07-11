@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Prometeu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/aiox-qa|aiox-qa]]"
+---
+
 # Quinn (QA) Agent Memory
 
 ## IDS Module Patterns

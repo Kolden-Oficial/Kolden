@@ -9,6 +9,9 @@ keywords: "('Digital presence audit', 'Copywriting strategy models', 'Sales funn
 summary: "This document details a strategic meeting between Mateus Felipe, Bernardo Pereira, Ronan Sersil, and Bernardo Vicenzo Pereira regarding the digital revitalization of a multi-unit optical business. The team identifies critical infrastructure failures, such as a **missing website domain** and **outdated social media profiles**, and proposes a transition from a standard marketing agency model to a **sophisticated \"executive business management\" approach**. A primary focus is placed on **advanced copywriting techniques** that leverage the **emotional state of the target audience** and the implementation of high-volume ad testing to ensure profitability. To optimize lead conversion, the partners plan to replace fragmented link tools with a **centralized landing page** that uses regional segmentation and automated funnels to drive qualified customers directly to scheduling. Finally, the group outlines a high-value proposal involving **growth-based remuneration** and strategic business assessments to demonstrate the potential for a significant increase in revenue."
 extraido_em: "2026-06-30T16:24:14Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/10 13:14 GMT-03:00 - Anotações do Gemini

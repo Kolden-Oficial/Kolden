@@ -8,6 +8,11 @@ status: rascunho
 atualizado-em: 2026-07-06
 relacionados: [posicionamento, personas, marca]
 versao_original: "Guia de Marca — Tom de Voz (junho/2026) — Bruno Vilas Boas"
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/dossie|dossie]]"
 ---
 
 # Tom de Voz — BVB Finanças

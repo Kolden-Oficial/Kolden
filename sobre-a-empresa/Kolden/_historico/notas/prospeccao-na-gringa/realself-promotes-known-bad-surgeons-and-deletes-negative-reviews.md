@@ -9,6 +9,9 @@ keywords: "('RealSelf review manipulation', 'Negative review suppression', 'Fake
 summary: "This Reddit discussion examines allegations that the medical review platform RealSelf is an **untrustworthy resource** because it reportedly **suppresses negative feedback** to protect the reputations of subpar surgeons. Users point to specific cases where doctors with **notorious track records** and active \"botched\" communities maintain suspiciously high ratings, suggesting that the site's **financial ties to practitioners** create a significant conflict of interest. The conversation warns prospective patients that these **inflated ratings** are often a form of **manipulated advertising** rather than an unbiased reflection of surgical outcomes. Ultimately, the community advises seeking **professional word-of-mouth referrals** and cross-referencing multiple platforms to ensure safety and transparency before undergoing permanent procedures."
 extraido_em: "2026-06-30T16:27:54Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # RealSelf promotes KNOWN bad surgeons and deletes negative reviews : r/PlasticSurgery - Reddit

@@ -1,3 +1,9 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+---
+
 This is just plain text without any structure.
 
 No YAML frontmatter with the special field.

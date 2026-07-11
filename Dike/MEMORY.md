@@ -1,3 +1,9 @@
+---
+tipo: memoria
+squad: Dike
+up: "[[_MOC-memorias]]"
+---
+
 # Memória do Agente Dike
 
 > Memória persistente deste agente. Atualizada pelo Ritual de Encerramento

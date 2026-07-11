@@ -9,6 +9,9 @@ keywords: "('Lead optimization strategy', 'Ad campaign segmentation', 'Google Wo
 summary: "This meeting transcript details a strategic alignment between Kaylon Teixeira and his marketing team to **optimize lead generation** and structure his construction business for **long-term expansion**. The discussion highlights a successful shift toward **segmenting advertisements by specific regions** and services, such as high-value metal garages and warehouses, which has already resulted in higher-quality inquiries. Beyond tactical marketing, the participants address operational needs like **Google Workspace management**, CRM implementation to track results, and the training of a new salesperson to handle increasing demand. Kaylon also shares a sophisticated vision for **vertical integration**, planning to expand from insulation into drywall and painting to provide a complete ecosystem for clients, ultimately aiming to leverage business profits for **real estate investment and equity-based growth**."
 extraido_em: "2026-06-30T16:25:16Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/04/18 15:56 GMT-03:00 - Anotações do Gemini

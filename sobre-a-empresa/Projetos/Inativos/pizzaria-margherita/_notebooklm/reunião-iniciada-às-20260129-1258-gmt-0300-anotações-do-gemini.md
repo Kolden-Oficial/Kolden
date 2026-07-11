@@ -9,6 +9,10 @@ keywords: "('Access Management Challenges', 'Initial Action Plan', 'Strategic Ma
 summary: "This document summarizes a strategic meeting led by Ronan Sersil to establish a marketing partnership with a pizzeria owned by Marcia Lima and Leidiane Gonçalves. The primary focus is on the **initial action plan**, which requires centralizing digital access to Facebook, Instagram, and Google to perform a thorough **performance diagnosis**. Key themes include overcoming technical hurdles regarding account ownership and implementing **multi-channel growth strategies** such as local influencer partnerships, loyalty programs, and targeted ads for anniversaries. Ultimately, the collaboration aims to **refine the target audience** and increase regional brand awareness while filtering out problematic patrons to maintain a premium atmosphere."
 extraido_em: "2026-06-30T16:09:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/29 12:58 GMT-03:00 - Anotações do Gemini

@@ -1,3 +1,14 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/AGENTS|AGENTS]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/CLAUDE|CLAUDE]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/dossie|dossie]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/leia-me|leia-me]]"
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

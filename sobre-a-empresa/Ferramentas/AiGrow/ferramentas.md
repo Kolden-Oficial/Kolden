@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # AiGrow — Referência de Uso
 
 AiGrow (aigrow.me) é um serviço de **gestão e crescimento de Instagram** que combina software + serviço gerenciado: ganho de seguidores, engajamento, agendamento de posts, gerenciador de DMs, link na bio e um gestor humano dedicado por conta. Categoria: Growth/Gestão de redes sociais (Instagram, orgânico).

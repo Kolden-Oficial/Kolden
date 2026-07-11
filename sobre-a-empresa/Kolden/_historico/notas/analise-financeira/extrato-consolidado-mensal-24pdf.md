@@ -9,6 +9,9 @@ keywords: "('Income Tax Report', 'Banking Account Summary', 'Credit Line Options
 summary: "This document serves as a **consolidated monthly bank statement** for January 2020, issued by Santander Brazil to a client named Ronan Sergio Silva. It functions primarily as a **financial summary**, detailing account balances, transaction histories, and available **credit limits** for personal or real estate loans. Beyond simple record-keeping, the text acts as a **tax preparation notice**, reminding the user to access their formal income report for the upcoming **annual tax filing deadline**. The statement concludes with promotional material regarding **savings incentives** and various **credit solutions** designed to help the client manage debts or invest in new projects at the start of the year."
 extraido_em: "2026-06-30T16:26:00Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (24).pdf

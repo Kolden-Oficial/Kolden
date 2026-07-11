@@ -9,6 +9,10 @@ keywords: "('Clube Fit Academia', 'Fitness Modalities', 'Business Operating Hour
 summary: "Clube Fit is a **comprehensive regional fitness center** in Santa Luzia, Minas Gerais, that prides itself on fostering a community atmosphere through a diverse range of **physical activities and professional amenities**. The text functions as a detailed information sheet, outlining the facility's **wide operational hours** and extensive list of classes, which include everything from martial arts and indoor cycling to functional training and dance. Beyond basic exercise, the center emphasizes **member well-being** by offering specialized infrastructure such as physiotherapy, parking, and climate-controlled spaces. High user satisfaction across **social media and digital platforms** further establishes its reputation as a premier destination for local health and wellness."
 extraido_em: "2026-06-30T16:09:28Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: clube-fit
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/clube-fit/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

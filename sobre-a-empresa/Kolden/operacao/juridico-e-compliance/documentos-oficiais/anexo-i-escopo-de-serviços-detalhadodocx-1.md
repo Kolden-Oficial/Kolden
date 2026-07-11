@@ -9,6 +9,10 @@ keywords: "('Digital Marketing Strategy', 'CRM Management', 'Paid Traffic Ads', 
 summary: "The provided document outlines a comprehensive **digital marketing service scope** offered by Kolden, an agency dedicated to scaling local businesses through a multi-faceted strategic approach. The core framework integrates high-level **marketing and sales consultancy** with technical execution, covering essential pillars such as **paid traffic management**, **CRM implementation**, and **persuasive copywriting**. Beyond content and advertising, the service emphasizes local visibility through **Google Business Profile optimization** and operational efficiency via **intelligent chat automation**. The partnership is anchored by a robust **data intelligence** system and a structured **support model**, ensuring clients receive bi-weekly strategic meetings and daily communication to drive continuous growth."
 extraido_em: "2026-06-30T16:10:59Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Anexo I - Escopo de Serviços Detalhado.docx

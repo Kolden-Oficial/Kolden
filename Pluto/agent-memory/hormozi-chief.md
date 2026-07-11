@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Pluto
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Pluto/agents/hormozi-chief|hormozi-chief]]"
+---
+
 # Memória do Agente hormozi-chief (Pluto)
 
 > Memória persistente deste agente. Atualizada pelo Ritual de Encerramento

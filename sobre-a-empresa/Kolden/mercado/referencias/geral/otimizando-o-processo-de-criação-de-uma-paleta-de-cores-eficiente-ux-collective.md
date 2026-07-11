@@ -9,6 +9,10 @@ keywords: "('Design System creation', 'Color psychology', 'Accessibility guideli
 summary: "This article provides a comprehensive guide for designers on developing a **scalable and inclusive color palette** for a design system. The author transitions from the **psychological impact of color** to the technical necessity of **accessibility and system status**, arguing that color choices must serve a functional purpose rather than a purely aesthetic one. By following a structured **five-step process**—which includes researching references, categorizing hues into primary, system, and neutral tones, and validating contrast via **WCAG standards**—designers can ensure their interfaces are usable for everyone. The text culminates in a practical \"formula\" using the **HSL (Hue, Saturation, Lightness) model** to systematically generate color variants that maintain visual harmony and professional rigor."
 extraido_em: "2026-06-30T16:13:46Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/geral/_indice|_indice]]"
 ---
 
 # Otimizando o processo de criação de uma paleta de cores eficiente - UX Collective

@@ -9,6 +9,12 @@ keywords: "('MVP Software Development', 'Nutritional Assessment Tools', 'Strateg
 summary: "This document details a collaborative meeting between developer Ronan Sersil and nutritionist Susan Carolina regarding the development of a **Minimum Viable Product (MVP)** designed to centralize and optimize clinical management for nutrition professionals. The project aims to increase a practitioner's **average ticket value** by providing a comprehensive, data-driven service that includes **AI-powered food logging**, patient progress tracking, and professionalized reporting. Throughout the dialogue, the professional provides critical industry insights, leading to planned upgrades such as **bioimpedance integration**, expanded physical measurements, and specialized diet templates for varied health conditions. Ultimately, the collaboration serves to validate the system's **usability and data security** while fostering a partnership where real-world clinical needs dictate the evolution of the software’s features."
 extraido_em: "2026-06-30T16:10:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/01-kolden-nutricalc-alinhamento-do-projeto|01-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/03-kolden-nutricalc-alinhamento-do-projeto|03-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/04-kolden-nutricalc-alinhamento-do-projeto|04-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/kolden-nutricalc-alinhamento-do-projeto-20260318-1601-gmt-0300-anotações-do|kolden-nutricalc-alinhamento-do-projeto-20260318-1601-gmt-0300-anotações-do]]"
 ---
 
 # 02 | Kolden & NutriCalc | Alinhamento do Projeto

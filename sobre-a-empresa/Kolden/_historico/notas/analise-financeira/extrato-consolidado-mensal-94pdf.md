@@ -9,6 +9,9 @@ keywords: "('Bank account statement', 'Fraud prevention tips', 'Financial transa
 summary: "This document serves as a **comprehensive monthly consolidated statement** for a Santander Select client, providing a detailed overview of their financial activity throughout September 2025. It meticulously tracks **transactional history**, specifically focusing on numerous **PIX transfers** and automatic investments, while reporting a final account balance of R$ 4,238.43. Beyond simple bookkeeping, the text functions as a **security manual**, offering vital warnings against common \"gift scams\" and listing best practices for **safeguarding digital banking data**. Finally, it outlines the user's **investment profile** and service package details, framed by a summary of broader **economic indices** like inflation and currency rates to provide context for the customer's financial landscape."
 extraido_em: "2026-06-30T16:27:00Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (94).pdf

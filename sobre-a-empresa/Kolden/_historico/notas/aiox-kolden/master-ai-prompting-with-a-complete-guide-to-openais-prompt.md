@@ -9,6 +9,9 @@ keywords: "('Prompt engineering', 'OpenAI strategies', 'Message roles', 'Task de
 summary: "This comprehensive guide outlines the foundational principles and technical frameworks necessary for **mastering prompt engineering** within the OpenAI ecosystem. The text identifies six core strategies for improving AI accuracy, such as **providing reference text** to prevent hallucinations and **splitting complex tasks** into manageable subtasks. It further details specific structural techniques like using **message roles** to prioritize instructions and **XML tags** to clarify logical boundaries. Ultimately, the source serves as a practical roadmap for users to transition from basic queries to **rigorous, systematic interactions** that unlock the full potential of advanced language models."
 extraido_em: "2026-06-30T16:20:54Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Master AI Prompting with a Complete Guide to OpenAI's Prompt ...

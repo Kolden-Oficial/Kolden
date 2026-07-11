@@ -9,6 +9,9 @@ keywords: "('Tree of Thoughts', 'Prompt Engineering', 'Large Language Models', '
 summary: "The provided text functions as a comprehensive technical guide to the **Tree of Thoughts (ToT) framework**, an advanced prompting architecture designed to enhance the **strategic reasoning capabilities** of large language models. Rather than following a simple linear path, this method organizes cognitive steps into a **hierarchical tree structure**, allowing the AI to generate, self-evaluate, and refine various \"thoughts\" through systematic **search algorithms** like breadth-first or depth-first search. The material details how this approach enables **lookahead and backtracking** to solve multi-stage problems that baffle traditional techniques, using mathematical challenges like the \"Game of 24\" to demonstrate its superior accuracy. Furthermore, the guide distinguishes between **search-based strategies** and reinforcement-learning controllers while situating ToT within a broader ecosystem of **prompt engineering techniques**, educational resources, and emerging AI agent research."
 extraido_em: "2026-06-30T16:22:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Tree of Thoughts (ToT) - Prompt Engineering Guide

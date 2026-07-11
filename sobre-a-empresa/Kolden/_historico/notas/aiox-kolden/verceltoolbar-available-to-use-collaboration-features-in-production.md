@@ -9,6 +9,9 @@ keywords: "('Vercel toolbar', 'Collaboration features', 'Production deployments'
 summary: "Vercel has introduced a new **npm package** that allows developers to integrate **collaboration features** directly into their live production sites and local environments. This tool bridges the gap between development and deployment by enabling teams to use **interactive comments**, **visual editing**, and **draft mode** on any platform. By making these features accessible to **all users across every plan**, the company aims to streamline the feedback loop between engineers and stakeholders. This update represents a significant expansion of the **Vercel Toolbar**, transforming it from a preview-only utility into a robust **production-ready resource** for modern web development."
 extraido_em: "2026-06-30T16:22:52Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # vercel/toolbar available to use collaboration features in production

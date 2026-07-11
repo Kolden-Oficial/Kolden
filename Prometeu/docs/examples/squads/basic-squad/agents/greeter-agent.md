@@ -1,3 +1,9 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+---
+
 # basic-greeter
 
 ACTIVATION-NOTICE: Friendly greeter agent for demonstrations.

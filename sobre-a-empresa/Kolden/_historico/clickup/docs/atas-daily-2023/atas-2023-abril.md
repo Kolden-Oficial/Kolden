@@ -8,6 +8,14 @@ author_ids: [60963240, 42950139]
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-3183/
 extracted_at: 2026-06-30
 nota: "Consolidação das 4 dailies de Abril 2023 (Semana 4) — início operacional da Kolden. Time inicial: Ronan + Jonathan (Magalhães/JP)."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-julho-novembro|atas-2023-julho-novembro]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-junho|atas-2023-junho]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-maio|atas-2023-maio]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-maio-completo|atas-2023-maio-completo]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-novembro-semana-2|atas-2023-novembro-semana-2]]"
 ---
 
 # Atas Daily — Abril 2023 (Semana 4)

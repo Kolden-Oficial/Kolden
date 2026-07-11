@@ -9,6 +9,9 @@ keywords: "('Personal Branding Strategy', 'Archetype and Symbolism', 'Content Pr
 summary: "This meeting transcript details a strategic collaboration between Ronan Sersil and Julia Tiote, focused on **personal branding and digital growth** through a methodology Ronan calls **TPC (Talent, Personality, Creativity, and Consistency)**. Ronan outlines his ambitious plan to pivot away from operational tasks to become a **high-frequency content creator**, utilizing a sophisticated \"wisdom\" archetype and **symbolic visual cues**, such as a custom gemstone necklace, to build his \"Coder\" ecosystem. In exchange for Julia's creative input, Ronan provides her with technical mentorship on **automating content workflows** using AI tools like Google Gemini and NotebookLM, while proposing a **paid traffic and funnel strategy** to solve her consistency issues. Ultimately, the dialogue serves as a blueprint for an **entrepreneurial partnership** rooted in the \"law of attraction,\" aiming to transform their individual social media presence into **scalable business assets**."
 extraido_em: "2026-06-30T16:15:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/12 15:00 GMT-03:00 - Anotações do Gemini

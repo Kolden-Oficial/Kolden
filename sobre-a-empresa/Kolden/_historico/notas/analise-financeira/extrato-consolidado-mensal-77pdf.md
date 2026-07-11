@@ -9,6 +9,9 @@ keywords: "('Fraud prevention', 'Banking service fees', 'Economic indices', 'Cus
 summary: "This document serves as a **consolidated monthly bank statement** for a Santander client, combining functional account data with critical **fraud prevention guidance**. The text primarily warns against the **\"gift scam,\"** urging customers to verify delivery fees and examine payment terminals to avoid being overcharged by deceptive couriers. Beyond these security alerts, the statement details the user’s **banking activity and service fees**, while providing a comprehensive list of **official contact channels** for support and conflict resolution. Finally, it includes a technical summary of **economic indicators**, such as inflation rates and currency fluctuations, to help the account holder track the broader financial landscape for May 2024."
 extraido_em: "2026-06-30T16:26:44Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (77).pdf

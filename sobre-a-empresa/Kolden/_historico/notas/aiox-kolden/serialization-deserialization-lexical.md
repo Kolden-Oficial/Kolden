@@ -9,6 +9,9 @@ keywords: "('Serialization and Deserialization', 'HTML Conversion', 'JSON Repres
 summary: "Lexical utilizes **serialization and deserialization** to translate the live, in-memory state of an editor into portable formats like **HTML and JSON**. This process is essential for **storing data** for future use or sharing content between different types of editors via the clipboard. Developers can customize this behavior by implementing specific methods on **LexicalNodes**, such as `exportDOM` or `exportJSON`, which define how each individual element should be represented externally. While **HTML conversion** is often used for interoperability and copy-paste functionality, the **JSON format** provides a precise snapshot of the editor's state that is ideal for data persistence. Ultimately, the system is designed to be **extensible and backward-compatible**, encouraging a flat data structure with optional properties to ensure that saved content remains readable even as the application evolves."
 extraido_em: "2026-06-30T16:22:00Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Serialization & Deserialization - Lexical

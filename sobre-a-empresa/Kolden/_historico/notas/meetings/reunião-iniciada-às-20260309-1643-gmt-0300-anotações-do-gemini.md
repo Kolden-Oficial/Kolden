@@ -9,6 +9,9 @@ keywords: "('Marketing Results Analysis', 'CRM Tools Implementation', 'Lead Qual
 summary: "This meeting transcript details a strategic review between Ronan Sersil and Kaylon Teixeira regarding a **marketing campaign evaluation** and future expansion plans. The team analyzed recent data showing a **significant reduction in cost per lead**, yet they identified a critical need for **better lead qualification** to distinguish between minor repairs and high-value new construction projects. To resolve this, Ronan proposed implementing the **Como CRM tool** to centralize lead management and **automate follow-up processes** via email and SMS. The primary objective moving forward is a **new content strategy** involving specialized video scripts designed to **target construction companies** and filter out unqualified inquiries. Finally, the discussion touched on **business development** through referral networking, as Kaylon offered to connect the team with a potential new client from his professional circle."
 extraido_em: "2026-06-30T16:24:40Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/09 16:43 GMT-03:00 - Anotações do Gemini

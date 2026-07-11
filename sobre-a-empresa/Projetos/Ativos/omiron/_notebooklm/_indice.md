@@ -3,6 +3,31 @@ notebook_id: "94993d1f-13c0-40a9-8430-6e5af21899f9"
 notebook_titulo: "08 | Clinica Omiron"
 total_fontes: 17
 extraido_em: "2026-06-30T16:05:50Z"
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/análise-estratégica-de-mercado-clínica-omiron-e-o-ecossistema-de-saúde-mental|análise-estratégica-de-mercado-clínica-omiron-e-o-ecossistema-de-saúde-mental]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/análise-estratégica-de-mercado-e-inteligência-institucional-clínica-omiron-e-o|análise-estratégica-de-mercado-e-inteligência-institucional-clínica-omiron-e-o]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/apps-referências|apps-referências]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/brainstorming-of-app-20260507-1141-gmt-0300-anotações-do-gemini|brainstorming-of-app-20260507-1141-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/busca-por-médicos-portal-médico-cfm|busca-por-médicos-portal-médico-cfm]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/cnesweb-cadastro-nacional-de-estabelecimentos-de-saúde|cnesweb-cadastro-nacional-de-estabelecimentos-de-saúde]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/consulta-de-seguimento-em-belo-horizonte-clínicas-e-especialistas-doctoralia|consulta-de-seguimento-em-belo-horizonte-clínicas-e-especialistas-doctoralia]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/dr-ariosto-institucionalpdf|dr-ariosto-institucionalpdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/dr-ariosto-ribeiro-opiniões-psiquiatra-belo-horizonte-doctoralia|dr-ariosto-ribeiro-opiniões-psiquiatra-belo-horizonte-doctoralia]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/dr-ariosto-ribeiro-psiquiatra-em-belo-horizonte-dr-ariosto|dr-ariosto-ribeiro-psiquiatra-em-belo-horizonte-dr-ariosto]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/indicadores-cnes|indicadores-cnes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/insights-do-app|insights-do-app]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/prd-claude-code-v1|prd-claude-code-v1]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/profissionais-com-experiência-em-transtorno-bipolar-em-belo-horizonte-marque|profissionais-com-experiência-em-transtorno-bipolar-em-belo-horizonte-marque]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/profissionais-com-experiência-em-transtorno-de-déficit-de-atenção-com|profissionais-com-experiência-em-transtorno-de-déficit-de-atenção-com]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/reunião-iniciada-às-20260220-1035-gmt-0300-anotações-do-gemini|reunião-iniciada-às-20260220-1035-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/texto-colado|texto-colado]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/texto-colado-1|texto-colado-1]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/texto-colado-2|texto-colado-2]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/texto-colado-3|texto-colado-3]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/texto-colado-4|texto-colado-4]]"
 ---
 
 # Índice — 08 | Clinica Omiron

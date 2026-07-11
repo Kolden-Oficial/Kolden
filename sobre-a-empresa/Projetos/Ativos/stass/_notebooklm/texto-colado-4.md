@@ -9,6 +9,10 @@ keywords: "('Financial education', 'Real estate investment', 'Personal wealth gr
 summary: "This text serves as an invitation to a **free educational seminar** specifically tailored for the **Latino community** residing in Hamilton. The primary objective of the event is to provide **financial literacy** and strategic guidance to working professionals who wish to achieve milestones such as **homeownership and long-term stability**. By focusing on **investment growth** and family protection, the message encourages participants to move toward a more **secure financial future** through knowledge rather than high-pressure sales. The announcement concludes with a call to action, urging interested individuals to **register for a seat** at this localized, in-person workshop."
 extraido_em: "2026-06-30T16:09:06Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

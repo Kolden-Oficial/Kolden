@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Nomos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Nomos/agents/nomos-chief|nomos-chief]]"
+---
+
 # Privacidade de Dados
 
 > Especialista (tier 1) do squad **Nomos**. Cuida de **privacidade e proteção de dados pessoais** —

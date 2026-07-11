@@ -9,6 +9,10 @@ keywords: "('Brand Identity Manual', 'Social Media Marketing', 'Product Promotio
 summary: "This document serves as a **comprehensive brand manual and visual identity guide** for \"CataLogo,\" a digital platform dedicated to scouting and sharing **curated retail deals**. The source outlines a strategic marketing presence across social media and e-commerce affiliate networks, highlighting a **value proposition** centered on saving consumers money through expert product discovery. By detailing specific **color palettes, typography, and performance metrics**, the guide illustrates how the brand maintains a consistent aesthetic while driving traffic to major marketplaces like Shopee and Amazon. Ultimately, the text defines the brand's role as a **high-traffic \"finder\" service** that bridges the gap between budget-conscious shoppers and high-quality online promotions."
 extraido_em: "2026-06-30T16:08:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # PDF ID Visual.pdf

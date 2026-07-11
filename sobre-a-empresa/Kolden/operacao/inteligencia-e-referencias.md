@@ -8,6 +8,12 @@ status: rascunho
 atualizado-em: 2026-06-25
 relacionados: [processos, metricas-e-okrs, planejamento-estrategico, ofertas-e-produtos]
 fontes: [drive--06-templates-e-ferramentas]
+tipo: nota
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Kolden/operacao/planejamento-estrategico|planejamento estratégico]]"
 ---
 
 # Inteligência e Referências Internas

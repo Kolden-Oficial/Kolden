@@ -9,6 +9,9 @@ keywords: "('Vercel Toolbar', 'Open Graph Data', 'Social Media Previews', 'Metad
 summary: "The provided text introduces an updated **Vercel Toolbar** feature designed to help developers visualize how their web pages appear when shared across **social media platforms**. By selecting the **Open Graph** option, users can instantly **preview metadata and images** as they would look on sites like X, Facebook, and LinkedIn. This tool serves a vital diagnostic purpose by **identifying missing information** that might prevent social cards from displaying correctly. Beyond this specific update, the document outlines Vercel's expansive **ecosystem of cloud services**, including specialized tools for **AI integration, security, and frontend frameworks**."
 extraido_em: "2026-06-30T16:20:14Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Inspect Open Graph data with the Vercel Toolbar

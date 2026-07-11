@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/dados-nuvemshop/analise-pactolo|analise-pactolo]]"
+---
+
 # Laudo Peitho — Análise de Atribuição Rosie
 
 **Fonte:** `vendas.csv` (196 pedidos únicos, 410 linhas de item, período 07/05 a 01/07/2026) + `clientes.csv` (199 clientes).

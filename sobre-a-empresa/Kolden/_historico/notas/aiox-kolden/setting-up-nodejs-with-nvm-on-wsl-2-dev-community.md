@@ -9,6 +9,9 @@ keywords: "('Nodejs installation', 'WSL 2', 'nvm version manager', 'Linux enviro
 summary: "This technical guide provides a streamlined walkthrough for configuring a development environment by **integrating Node.js into the Windows Subsystem for Linux (WSL 2)**. The author advocates for the use of the **Node Version Manager (nvm)**, a versatile utility that simplifies the process of **installing and toggling between multiple software versions** through simple terminal commands. By outlining steps for fetching the latest stable and long-term support releases, the text highlights the **flexibility and efficiency** gained when developers can rapidly adapt their environment to different project requirements. Ultimately, the resource serves as a practical roadmap for programmers seeking to bridge the gap between **Windows-based hardware and Linux-based development workflows**."
 extraido_em: "2026-06-30T16:22:02Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Setting up Nodejs with nvm on WSL 2 - DEV Community

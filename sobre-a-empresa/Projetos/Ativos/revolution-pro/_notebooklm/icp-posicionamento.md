@@ -9,6 +9,10 @@ keywords: "('Painting services niche', 'Lead generation strategy', 'Business exp
 summary: "This strategic document outlines a professional roadmap for **Revolution Pro**, a Massachusetts-based painting and carpentry business seeking to transition from a reliance on word-of-mouth referrals to a model of **predictable revenue**. By partnering with an external performance consultancy, the company aims to overcome **seasonal demand fluctuations** and intense local competition through targeted geographic expansion and a robust **digital sales funnel**. The initiative prioritizes immediate lead generation via **Google Ads and SEO** over social media growth, backed by a performance guarantee to ensure a high return on investment. Ultimately, the project establishes specific **financial milestones and operational phases** designed to scale the business into a self-sufficient, high-revenue enterprise."
 extraido_em: "2026-06-30T16:07:31Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: revolution-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/revolution-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # ICP & Posicionamento

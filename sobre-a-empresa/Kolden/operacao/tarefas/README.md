@@ -7,6 +7,12 @@ palavras-chave: [tarefa, radar, central, gestão, kanban, operacao, /tarefa]
 status: oficial
 atualizado-em: 2026-06-30
 relacionados: [schema, ../processos, ../metricas-e-okrs]
+tipo: nota
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/tarefas/importacoes/2026-06-30_planilha-tarefas-pessoais|2026-06-30_planilha-tarefas-pessoais]]"
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/contrato-gestão-de-tráfego-pdfpdf-1|contrato-gestão-de-tráfego-pdfpdf-1]]"
 ---
 
 # Central de Tarefas da Kolden

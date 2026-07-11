@@ -9,6 +9,10 @@ keywords: "('Follow-up strategies', 'Kommo CRM automation', 'Weekly reflections'
 summary: "This text outlines a strategic framework for using **CRM automation** to enhance patient engagement and conversion within a professional practice. The author proposes a tiered communication system that includes **automated follow-ups** for potential leads, **weekly reflections** to establish intellectual authority, and **personalized touchpoints** to foster a high-end, \"VIP\" experience. By leveraging the Kommo platform, the goal is to maintain a **constant brand presence** while ensuring that even automated messages retain a **humanized, empathetic tone**. Ultimately, these efforts aim to streamline administrative tasks for staff while building the **long-term trust** necessary for both clinical retention and the future sale of digital products."
 extraido_em: "2026-06-30T16:08:00Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

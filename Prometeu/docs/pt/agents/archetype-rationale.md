@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/docs/pt/agents/persona-definitions|persona-definitions]]"
+---
+
 <!-- Tradução: PT-BR | Original: /docs/en/agents/archetype-rationale.md | Sincronização: 2026-01-26 -->
 
 # Justificativa dos Arquétipos dos Agentes AIOX

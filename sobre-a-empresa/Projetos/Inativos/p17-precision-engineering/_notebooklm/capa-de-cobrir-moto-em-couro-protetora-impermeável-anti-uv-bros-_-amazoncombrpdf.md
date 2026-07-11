@@ -9,6 +9,10 @@ keywords: "('Motorcycle covers', 'Protective gear', 'Waterproof materials', 'UV 
 summary: "This document is a digital product listing from the Amazon Brazil marketplace featuring a **heavy-duty motorcycle cover** designed for comprehensive outdoor protection. The text highlights the item’s **synthetic leather construction** and its multi-functional capabilities, specifically its **waterproof surface** and **anti-UV additives** that shield vehicles from sun damage, rain, and corrosive environmental debris. Beyond technical specifications, the page serves as a consumer guide, categorizing **compatibility by bike size**—ranging from small scooters to large touring models—while detailing commercial terms like **flexible payment options** and shipping estimates. Ultimately, the source functions as a **commercial interface** intended to inform potential buyers of the product's durability, including its unique ability to be used even while the **exhaust pipe remains hot**."
 extraido_em: "2026-06-30T16:09:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa de Cobrir Moto em Couro Protetora Impermeável Anti-uv (BROS) _ Amazon.com.br.pdf

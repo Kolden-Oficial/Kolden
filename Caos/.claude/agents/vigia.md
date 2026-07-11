@@ -2,6 +2,11 @@
 name: vigia
 description: Varre o estado da arte de IA (MCPs, ferramentas, modelos dos principais labs, comunidade, GitHub, newsletters) e produz um digest datado, atualizando o retrato vivo do ecossistema. Delegue no comando /vigia, manual ou agendado. Trabalha só com fontes públicas (OSINT), citando origem e data.
 tools: Read, Write, Bash, WebSearch, WebFetch, mcp__claude_ai_Exa__web_search_exa, mcp__claude_ai_Exa__web_fetch_exa, mcp__claude_ai_Hugging_Face__paper_search, mcp__claude_ai_Hugging_Face__hub_repo_search, mcp__claude_ai_Context7__resolve-library-id, mcp__claude_ai_Context7__query-docs
+tipo: agente
+squad: Caos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Caos/.claude/agents/_indice|_indice]]"
 ---
 
 # Persona

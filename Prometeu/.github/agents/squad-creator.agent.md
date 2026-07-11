@@ -2,6 +2,11 @@
 name: squad-creator
 description: 'Use to create, validate, publish and manage squads'
 tools: ['read', 'edit', 'search', 'execute']
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.github/agents/_indice|_indice]]"
 ---
 
 # 🏗️ Craft Agent (@squad-creator)

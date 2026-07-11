@@ -9,6 +9,10 @@ keywords: "('Strategic Business Growth', 'Operational Process Optimization', 'Di
 summary: "This strategic briefing details a comprehensive plan to transition **Brayan’s Finish**, a Massachusetts carpentry firm, from a phase of operational struggle toward a **tripled monthly revenue target**. The document identifies critical \"bottlenecks\" such as **manual labor overload**, **inaccurate project pricing**, and a lack of professional digital visibility that currently hinder the owner’s growth. To resolve these issues, the company is partnering with Kolden to implement a three-pillared solution focusing on **automated CRM systems**, **standardized pricing tools**, and **search engine optimization**. By \"straightening up the house\" through professionalized administrative structures and a shift toward **high-volume general contractors**, the firm aims to establish a scalable foundation for long-term expansion."
 extraido_em: "2026-06-30T16:07:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/_indice|_indice]]"
 ---
 
 # ICP & Posicionamento

@@ -9,6 +9,9 @@ keywords: "('Agentic workflow predictability', 'Coding performance optimization'
 summary: "This official technical manual serves as a comprehensive roadmap for developers looking to master **GPT-5**, OpenAI's most advanced model designed for high-level **agentic task performance** and sophisticated coding. The guide details how to calibrate the model’s **reasoning effort** and **verbosity** parameters to balance autonomous decision-making with efficiency, while advocating for the new **Responses API** to maintain logical continuity across complex workflows. It further highlights the model's specialized proficiency in **frontend app development** and provides real-world **prompt tuning** insights from industry partners like Cursor to optimize instruction adherence. Ultimately, the text functions as an instructional framework to help engineers refine their **metaprompting** strategies and leverage the model's leap in **steerability** for production-ready AI applications."
 extraido_em: "2026-06-30T16:19:56Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # GPT-5 prompting guide - OpenAI Developers

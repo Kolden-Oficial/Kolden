@@ -9,6 +9,10 @@ keywords: "('Google Ads Performance', 'Meta Ads Metrics', 'Media Planning Budget
 summary: "This document serves as a **weekly performance report** that evaluates the efficiency of digital marketing efforts across **Google and Meta advertising platforms**. By analyzing specific metrics like click-through rates and acquisition costs, the presentation highlights a successful **return on investment** and identifies the most effective keywords and campaign structures. Beyond just reflecting on past data, it outlines a **strategic roadmap** for future growth, including website optimizations and a refreshed content calendar. Ultimately, the purpose of this analysis is to provide a **comprehensive view of results** and clear action items to ensure continued commercial success."
 extraido_em: "2026-06-30T16:09:20Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/_indice|_indice]]"
 ---
 
 # 1° R.O.P.R.E - MARGHERITA

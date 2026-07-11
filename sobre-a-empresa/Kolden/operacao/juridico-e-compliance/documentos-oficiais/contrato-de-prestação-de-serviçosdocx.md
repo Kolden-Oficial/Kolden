@@ -9,6 +9,10 @@ keywords: "('Marketing digital services', 'Contractual obligations', 'Payment te
 summary: "This document serves as a **formal service agreement** established on April 25, 2024, between the agency Kolden and the client Elaine Aparecida Custódio. The core purpose of the contract is to outline a **six-month digital marketing partnership** involving specialized tasks such as paid traffic management, copywriting, and data intelligence. Key provisions specify that payments are to be made monthly via PIX, while ensuring that all **intellectual property** created during the term belongs to the client. Ultimately, the text functions as a **legal framework** that defines professional responsibilities, maintains strict confidentiality, and sets the terms for potential termination or renewal."
 extraido_em: "2026-06-30T16:11:47Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Contrato de Prestação de Serviços.docx

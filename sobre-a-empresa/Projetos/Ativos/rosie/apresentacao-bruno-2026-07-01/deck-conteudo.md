@@ -16,6 +16,11 @@ fontes:
   - dossie-tecnico/estrutura-midia-paga.md
   - dossie-tecnico/cronograma-90d.md
   - "~/.claude/plans/retomar-an-lise-da-nifty-ritchie.md (análise Solomon 30d · F0.1 resolvido)"
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/README|README]]"
 ---
 
 > **Nota v3 (2026-07-01):** este markdown está em versionamento pendente v1→v3. A **fonte autoritativa** do que o Bruno vê é o `deck.html`. Cada slide abaixo mantém a redação v1 (histórica) + um bloco `### DELTA v3 · pós-Solomon` no fim, listando o que mudou no HTML após a análise Solomon 30d. Slides 4, 9, 10 e 11 foram tocados; 5-8, 12-13 seguem estáveis do v2.1. Não usar este markdown para gerar PPTX sem revisar os DELTAs.

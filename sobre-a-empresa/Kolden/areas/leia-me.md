@@ -7,6 +7,22 @@ palavras-chave: [areas, departamentos, organograma, agentes, funcionarios, regis
 status: vigente
 atualizado-em: 2026-06-19
 relacionados: [organograma, sobre-a-empresa-leia-me]
+tipo: nota
+area: areas
+up: "[[sobre-a-empresa/Kolden/areas/_MOC-areas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/identidade/organograma|organograma]]"
+  - "[[sobre-a-empresa/Kolden/identidade/visao-geral|visão geral]]"
+  - "[[sobre-a-empresa/Kolden/areas/_modelo-area|_modelo-area]]"
+  - "[[sobre-a-empresa/Kolden/areas/ceo-topo|ceo-topo]]"
+  - "[[sobre-a-empresa/Kolden/areas/financas|financas]]"
+  - "[[sobre-a-empresa/Kolden/areas/governanca|governanca]]"
+  - "[[sobre-a-empresa/Kolden/areas/inovacao|inovacao]]"
+  - "[[sobre-a-empresa/Kolden/areas/marketing|marketing]]"
+  - "[[sobre-a-empresa/Kolden/areas/operacoes|operacoes]]"
+  - "[[sobre-a-empresa/Kolden/areas/pessoas-rh|pessoas-rh]]"
+  - "[[sobre-a-empresa/Kolden/areas/receita|receita]]"
+  - "[[sobre-a-empresa/Kolden/areas/tecnologia|tecnologia]]"
 ---
 
 # Áreas / Departamentos da Kolden

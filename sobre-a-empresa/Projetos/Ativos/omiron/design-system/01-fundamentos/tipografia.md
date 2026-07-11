@@ -17,6 +17,13 @@ relacionados:
   - 02-tokens/tokens.json
   - 02-tokens/tokens.css
   - 03-componentes/leia-me.md
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/design-system/01-fundamentos/cores|cores]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/design-system/01-fundamentos/grafismos|grafismos]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/design-system/01-fundamentos/tom-visual|tom-visual]]"
 ---
 
 # Fundamentos de Tipografia — Omiron

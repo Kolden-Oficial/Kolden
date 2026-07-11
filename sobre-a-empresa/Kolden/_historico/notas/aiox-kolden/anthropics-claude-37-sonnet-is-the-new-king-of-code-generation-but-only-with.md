@@ -9,6 +9,9 @@ keywords: "('Code generation benchmark', 'LLM performance comparison', 'DevQuali
 summary: "This report presents a comprehensive analysis from the **DevQualityEval v1.0 benchmark**, which rigorously tests the **code generation capabilities** of over 100 large language models across languages like Java, Go, and Ruby. The findings crown **Anthropic’s Claude 3.7 Sonnet** as the top performer when provided with high-quality context, while highlighting that popular models like **DeepSeek R1 and Llama** often fail to meet performance expectations in functional coding tasks. Beyond mere accuracy, the text evaluates **cost-effectiveness and efficiency**, identifying **Google’s Gemini 2.0 Flash Lite** as a premier choice for balancing budget and quality. By examining specialized tasks such as **JUnit migration and code repair**, the source serves as a strategic guide for developers and researchers to select the most reliable and concise tools for **automated software engineering**."
 extraido_em: "2026-06-30T16:18:16Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Anthropic's Claude 3.7 Sonnet is the new king of code generation (but only with help), and DeepSeek R1 disappoints (Deep dives from the DevQualityEval v1.0) - Symflower

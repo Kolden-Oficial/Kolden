@@ -1,3 +1,9 @@
+---
+tipo: memoria
+squad: Metis
+up: "[[_MOC-memorias]]"
+---
+
 # Memória do Squad Metis (Analytics e Growth)
 
 > Memória persistente do squad. Atualizada pelo Ritual de Encerramento. Não reescrever do zero —

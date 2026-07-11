@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Solomon — Referência de Uso
 
 A **Solomon** é uma plataforma brasileira de analytics e atribuição para e-commerce que rastreia a jornada completa do cliente (do primeiro toque ao pagamento) via SDK web/mobile + API REST de ingestão de pedidos e produtos, e atribui cada venda ao canal de marketing que realmente a gerou. Categoria: Analytics de atribuição para e-commerce (fonte de verdade de tracking, complemento server-side ao Pixel/CAPI).

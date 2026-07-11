@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Pactolo
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Pactolo/agents/pactolo-chief|pactolo-chief]]"
+---
+
 # Modelador Financeiro
 
 > Especialista tier 1 do squad Pactolo. Dono da **modelagem financeira**: modelo de 3 demonstrações,

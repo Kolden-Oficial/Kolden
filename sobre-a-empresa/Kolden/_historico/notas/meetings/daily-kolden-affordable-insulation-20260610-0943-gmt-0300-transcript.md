@@ -9,6 +9,9 @@ keywords: "('Daily Kolden', 'Affordable Insulation', 'Meeting Transcript', 'Bern
 summary: "This document serves as a brief **digital record of a professional meeting** involving a participant from a company called Kolden. The text specifically outlines a **short transcript summary** focused on the topic of cost-effective insulation, though the actual discussion was exceptionally brief. Its primary purpose is to provide a **structured metadata overview**, documenting the date, time, and automated nature of the transcription for future reference."
 extraido_em: "2026-06-30T16:23:30Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Daily Kolden: Affordable Insulation - 2026/06/10 09:43 GMT-03:00 - Transcript

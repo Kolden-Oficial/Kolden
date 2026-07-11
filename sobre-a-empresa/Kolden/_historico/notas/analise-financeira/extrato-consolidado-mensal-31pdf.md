@@ -9,6 +9,9 @@ keywords: "('Fraud prevention', 'Money transfers', 'Account statements', 'Capita
 summary: "This monthly consolidated bank statement for August 2020 provides a comprehensive overview of a **Santander University account** belonging to Ronan Sergio Silva. Beyond showing a zero balance and summarizing a specific **student service package**, the document functions as a multi-purpose communication tool that introduces new features like **credit-based money transfers** via the Way app. It also serves an educational and promotional role by detailing **security protocols against digital fraud**, offering lottery-style savings opportunities through **capitalization bonds**, and providing a detailed table of **macroeconomic indicators** such as inflation and exchange rates. Ultimately, the text balances personal financial reporting with **consumer protection advice** and marketing for additional banking products."
 extraido_em: "2026-06-30T16:26:06Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (31).pdf

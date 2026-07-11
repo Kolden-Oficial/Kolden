@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Harmonia
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Harmonia/agents/design-chief|design-chief]]"
+---
+
 # Memória do Agente design-chief (Harmonia)
 
 > Memória persistente deste agente. Atualizada pelo Ritual de Encerramento

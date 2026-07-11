@@ -1,3 +1,14 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/manifesto|manifesto]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/mentor-quiron|mentor-quiron]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/onboarding-copy|onboarding-copy]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/pilares|pilares]]"
+---
+
 # Alternativa para o Pilar Pensamento — Marco Aurélio
 
 > **Contexto do problema:** o repertório visual do Dr. Ariosto no Pinterest tem *zero pins* de Marco Aurélio ou de imperadores romanos identificáveis, e nenhuma tag "estoicismo", "Marco Aurélio", "meditações". Ao mesmo tempo, o pilar Pensamento está *locked* na metodologia — não muda. O que precisa ser decidido é apenas **como representá-lo visualmente e narrativamente** de um jeito que o Dr. Ariosto reconheça como seu.

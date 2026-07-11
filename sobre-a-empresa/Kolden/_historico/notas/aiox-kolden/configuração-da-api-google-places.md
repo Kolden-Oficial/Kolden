@@ -9,6 +9,9 @@ keywords: "('Google Places API', 'Google Maps integration', 'API configuration',
 summary: "This guide serves as a practical instruction for users setting up an automated bot, specifically addressing whether to integrate the **Google Places API**. While this tool allows a robot to function like a **real-time GPS** by pulling data from Google Maps, the text advises skipping this step due to the **financial and technical complexities** of configuring Google Cloud credentials. Instead, the author encourages focusing on the bot's core strengths, such as **document analysis and web processing**, by simply selecting \"No\" during the installation. By bypassing this optional feature, the user ensures a smoother setup process for their **AI's primary functions** without unnecessary delays or costs."
 extraido_em: "2026-06-30T16:19:11Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Configuração da API Google Places

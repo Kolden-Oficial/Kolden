@@ -6,6 +6,12 @@ categoria: projeto
 status: oficial
 atualizado-em: 2026-07-05
 relacionados: [02-tokens, 03-componentes, ../brandbook/03-identidade-visual]
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/design-system/01-auditoria-ui-atual|01-auditoria-ui-atual]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/design-system/03-componentes|03-componentes]]"
 ---
 
 # 04 — Motion & Ícones

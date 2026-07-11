@@ -9,6 +9,9 @@ keywords: "('Santander Customer Support', 'Bank Account Summary', 'Service Packa
 summary: "This document serves as a **consolidated monthly bank statement** for a Santander client named Ronan Sergio Silva, specifically detailing account activity for **July 2023**. It outlines the features of a **student service package**, listing specific allowances for withdrawals, transfers, and statements alongside a **monthly fee** that remains outstanding. Beyond personal finances, the text provides a broad **economic overview** by charting various financial indices, currency exchange rates, and the current minimum wage. Finally, the bank includes a **security guide** to educate the user on identifying fraudulent communications and protecting their sensitive **banking credentials**."
 extraido_em: "2026-06-30T16:26:34Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (67).pdf

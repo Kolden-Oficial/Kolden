@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Windsor.ai — Referência de Uso
 
 Windsor.ai é uma plataforma no-code de integração de dados de marketing (ETL) com 325+ conectores (Google Ads, Meta/Facebook Ads, TikTok Ads, LinkedIn Ads, GA4, HubSpot, Shopify, Stripe, BigQuery, Snowflake etc.). Extrai, unifica e entrega dados de várias fontes para BI, dashboards e data warehouses. Categoria: Integração de dados de marketing / ETL.

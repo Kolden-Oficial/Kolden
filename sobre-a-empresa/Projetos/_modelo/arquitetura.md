@@ -7,6 +7,11 @@ palavras-chave: [arquitetura, stack, design]
 status: rascunho
 atualizado-em: 2026-06-18
 relacionados: [prd, decisoes]
+tipo: projeto
+projeto: arquitetura.md
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/_modelo/dossie|dossie]]"
 ---
 
 # Arquitetura — <Nome do Projeto>

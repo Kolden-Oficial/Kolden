@@ -16,6 +16,10 @@ regra_de_uso: |
     - design-system/02-tokens/tokens.css
     - design-system/02-tokens/tailwind.tokens.js
   Se houver divergência entre este MD e tokens.json, tokens.json ganha.
+tipo: projeto
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/docs/pesquisa-referencias/leia-me|leia-me]]"
 ---
 
 # Paleta HEX validada — Omiron

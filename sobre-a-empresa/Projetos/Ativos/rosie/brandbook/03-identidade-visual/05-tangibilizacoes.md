@@ -7,6 +7,11 @@ palavras-chave: [brandbook, rosie, tangibilizacoes, aplicacoes, mockups]
 status: oficial
 atualizado-em: 2026-06-23
 relacionados: [04-estilo-fotografico, 00-marca-logotipo]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/00-indice|00-indice]]"
 ---
 
 # Tangibilizações

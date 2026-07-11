@@ -9,6 +9,9 @@ keywords: "('Gemini Chat', 'Google AI Studio', 'Vertex AI', 'Gemini Developer AP
 summary: "This comprehensive guide clarifies the distinctions between Google's three primary AI gateways to help users select the appropriate tool for their specific needs. The author categorizes **Gemini Chat** as a consumer-focused assistant for daily tasks, **Google AI Studio** as a free developer \"sandbox\" ideal for rapid prototyping, and **Vertex AI** as the robust enterprise solution designed for security and massive scale. By outlining a **migration path**, the text explains how a project can evolve from an experimental concept into a professionally managed application with strict **compliance and reliability**. Ultimately, the source serves as a strategic decision-making framework to prevent users from **overpaying for unnecessary features** or hitting technical limits that could stall their development."
 extraido_em: "2026-06-30T16:20:00Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Google AI Studio vs Gemini vs Vertex AI | Which One To Choose

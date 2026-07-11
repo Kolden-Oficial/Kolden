@@ -1,3 +1,9 @@
+---
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+---
+
 Aqui está o relatório técnico e arquitetural exaustivo extraído das fontes fornecidas, de acordo com as seções e diretrizes estabelecidas.
 
 ### VISÃO GERAL

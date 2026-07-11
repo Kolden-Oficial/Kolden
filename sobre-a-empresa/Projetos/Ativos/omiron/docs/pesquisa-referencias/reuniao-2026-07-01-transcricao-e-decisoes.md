@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/docs/pesquisa-referencias/leia-me|leia-me]]"
+---
+
 # Reunião "Alinhamento Kolden: Omiron" — 01/07/2026
 
 > Origem: transcrição automática do Google Meet (Gemini) — Google Doc `1CNfUUP2GHjbgacEd_mYVn8mDDLt8RtP9AHE3qQJ8kVE`.

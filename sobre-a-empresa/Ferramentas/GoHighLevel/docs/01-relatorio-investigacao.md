@@ -1,3 +1,13 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/GoHighLevel/docs/00-investigacao-prompt|00-investigacao-prompt]]"
+  - "[[sobre-a-empresa/Ferramentas/GoHighLevel/docs/02-endpoints-mapeados|02-endpoints-mapeados]]"
+  - "[[sobre-a-empresa/Ferramentas/GoHighLevel/docs/03-rate-limits-e-limitacoes|03-rate-limits-e-limitacoes]]"
+---
+
 # Relatório de Investigação — GHL API REST v2
 
 **Data:** 2026-05-25  

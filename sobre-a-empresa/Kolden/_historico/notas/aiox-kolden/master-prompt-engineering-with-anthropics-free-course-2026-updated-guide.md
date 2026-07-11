@@ -9,6 +9,9 @@ keywords: "('Prompt Engineering', 'Anthropic Free Course', 'Claude 4.5 Update', 
 summary: "This resource outlines a comprehensive, **free interactive course by Anthropic** designed to elevate users from basic interactions to advanced **context engineering** with the Claude 4.5 model. The text is structured as a strategic guide, breaking down a **nine-chapter curriculum** that covers essential building blocks like role assignment and sophisticated methods such as **XML tagging and chain-of-thought reasoning**. By emphasizing practical techniques over \"magic phrases,\" the guide aims to help professionals move beyond mediocre AI responses to achieve **exceptional, structured output** through clear communication and evidence-based analysis. Ultimately, the source serves as a roadmap for mastering the **evolution of prompt engineering**, providing both technical GitHub notebooks and business-friendly Google Sheets formats to ensure immediate real-world application."
 extraido_em: "2026-06-30T16:20:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Master Prompt Engineering with Anthropic's Free Course (2026 Updated Guide) / Artificial Intelligence - Caner Aras

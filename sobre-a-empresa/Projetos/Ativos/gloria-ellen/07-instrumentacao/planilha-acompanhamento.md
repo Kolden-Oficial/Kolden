@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/07-instrumentacao/gate-dia-6|gate-dia-6]]"
+---
+
 # Planilha de acompanhamento diário — Estreia no Vale
 
 **Objetivo:** instrumentação simples pra rodar a campanha sem perder controle. Meta = R$7.000 em 12 dias.

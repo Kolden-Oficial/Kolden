@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/agents/_indice|_indice]]"
+---
+
 # aiox-master
 
 <!--

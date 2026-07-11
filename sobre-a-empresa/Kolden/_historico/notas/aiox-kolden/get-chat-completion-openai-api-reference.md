@@ -9,6 +9,9 @@ keywords: "('Chat Completion API', 'Model Optimization', 'Agent Development', 'A
 summary: "This documentation serves as a technical manual for developers using the OpenAI API to retrieve **stored chat completions** via specific identification codes. It outlines a sophisticated ecosystem of **artificial intelligence capabilities**, including text generation, specialized audio and video modalities, and **advanced reasoning models** like the latest GPT-5.4. By detailing **structured data objects**, the guide explains how to interpret machine responses, including token usage statistics, tool-calling mechanisms, and **probability information** for generated content. Ultimately, the text provides a comprehensive framework for **building and scaling AI agents** while ensuring precision through fine-tuning, safety protocols, and systematic evaluation tools."
 extraido_em: "2026-06-30T16:19:56Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Get chat completion | OpenAI API Reference

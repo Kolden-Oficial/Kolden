@@ -9,6 +9,9 @@ keywords: "('Software development lifecycle', 'Multi-agent coordination', 'Human
 summary: "This report outlines how software engineering is transitioning from manual programming to a model of **human-led orchestration**, where developers manage **coordinated teams of autonomous agents** to handle implementation. By 2026, the traditional software development lifecycle will likely collapse from weeks to hours as AI agents evolve to perform **long-running, complex system builds** with minimal intervention. Beyond mere efficiency, the text highlights the **democratization of coding**, enabling non-technical staff to automate workflows while shifting the engineer's primary value toward **architectural strategy and quality oversight**. Ultimately, the document serves as a strategic roadmap for organizations to navigate the **economic shifts and security risks** of an AI-driven landscape where human judgment remains the essential anchor for innovation."
 extraido_em: "2026-06-30T16:17:51Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # 2026 Agentic Coding Trends Report - Anthropic

@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Prometeu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/aiox-architect|aiox-architect]]"
+---
+
 # Architect Agent Memory
 
 ## EPIC-ACT Wave 2 Quality Gate Review (2026-02-06)

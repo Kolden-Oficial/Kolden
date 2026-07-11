@@ -6,6 +6,9 @@ segmento: "Games / MMORPG — lançamento de servidor privado (GTM + gamificaç�
 status: "inativo"
 drive_folder_id: "1eoN3F3ko2ywGzqw5TONzJiGhEU0WMsdQ"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: genesis
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Gênesis (servidor Grand Fantasia)

@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # SociaVault — Referência de Uso
 
 SociaVault é uma API REST de dados sociais multi-plataforma (TikTok, Instagram, YouTube, X/Twitter, LinkedIn, Reddit, Pinterest — 25+). Usada para descoberta de vídeos/posts virais por engajamento (likes/views/shares), trending por hashtag/som/criador e scraping de perfis. Filtros por país/nicho/período. Categoria: Dados sociais/Descoberta de virais.

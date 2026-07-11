@@ -9,6 +9,9 @@ keywords: "('Agentic coding system', 'Software development automation', 'Codebas
 summary: "Claude Code is presented as a transformative **agentic coding system** that moves beyond simple text suggestions to independently manage complex software tasks across an entire codebase. By translating **plain-language descriptions** into functional code, the tool allows users to automate multi-file refactors, execute terminal commands, and resolve bugs through an **autonomous execution loop**. This shift empowers engineers to focus on high-level architecture while **democratizing software development** for non-technical individuals who can now build tools without deep programming knowledge. The text highlights significant productivity gains, such as **massive reductions in project timelines**, while emphasizing a commitment to **agent safety** through human oversight and controlled permissions."
 extraido_em: "2026-06-30T16:18:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Claude Code | Anthropic's agentic coding system

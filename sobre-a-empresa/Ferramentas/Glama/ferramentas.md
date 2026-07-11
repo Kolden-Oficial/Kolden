@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Glama — Referência de Uso
 
 Glama é uma plataforma para IA/LLM que oferece um Gateway compatível com a API da OpenAI para acessar 100+ modelos de múltiplos provedores (OpenAI, Anthropic, Google, DeepSeek, Mistral, xAI etc.) com load balancing, fallbacks, cache, logging e billing consolidado. Também opera um registro/inspetor/gateway de servidores MCP (Model Context Protocol). Categoria: IA/LLM.

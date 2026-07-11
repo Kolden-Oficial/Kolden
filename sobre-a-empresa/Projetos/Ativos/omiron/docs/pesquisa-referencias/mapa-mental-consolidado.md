@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/docs/pesquisa-referencias/leia-me|leia-me]]"
+---
+
 # Mapa Mental Consolidado — Identidade Omiron
 
 > Fonte primária: mapa mental compartilhado pelo Ronan em conversa com o Hermes (06/07/2026), preservado no anexo A na íntegra.

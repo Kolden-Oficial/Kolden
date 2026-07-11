@@ -9,6 +9,10 @@ keywords: "('Strategic marketing plan', 'Google local SEO', 'Paid traffic ads', 
 summary: "This document records a high-level strategic meeting where a specialized consultancy presents a **comprehensive digital growth plan** to a home services company specializing in siding, decking, and roofing. The discussion moves from a **situational diagnostic** that identifies a critical reliance on word-of-mouth and a lack of financial clarity to a structured three-phase solution involving **local SEO, targeted paid traffic, and financial tracking**. To resolve an urgent need for new leads, the parties formalize a **strategic partnership** involving a monthly service fee and a dedicated advertising budget. The meeting concludes with the **digital signing of a three-month contract** and the assignment of immediate tasks, such as sharing project portfolios and regional data, to ensure the marketing campaigns launch by the following Monday."
 extraido_em: "2026-06-30T16:07:42Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: mat3vic
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/mat3vic/_notebooklm/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026_05_14 20_51 GMT-03_00 - Anotações do Gemini.docx

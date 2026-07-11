@@ -8,6 +8,11 @@ contrato: Olimpo/contratos/missoes/m-20260701-112935-rosie-90d.yaml
 relacionados:
   - ../../brandbook/03-identidade-visual/06-gap-site-vs-manual.md
   - ../../alinhamento.md
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/README|README]]"
 ---
 
 # Auditoria: site atual × brandbook Rosie + mockup landing quick-win

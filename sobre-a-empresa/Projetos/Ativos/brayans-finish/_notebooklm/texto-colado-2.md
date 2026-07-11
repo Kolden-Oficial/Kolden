@@ -9,6 +9,10 @@ keywords: "(\"Brayan's address\", 'United States', 'Brockton, Massachusetts', 'S
 summary: "This text serves as a concise **locational profile** specifically identifying the residence of an individual named Brayan. It organizes essential **geographic data** into a structured list, moving from the broad scope of a country down to a specific street number and **postal code**. By detailing these specific **administrative regions** in Massachusetts, the source provides a functional **navigational reference** for mail delivery or physical location."
 extraido_em: "2026-06-30T16:07:24Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

@@ -9,6 +9,9 @@ keywords: "('Pix payment system', 'Fraud prevention tips', 'Bank account stateme
 summary: "This document is a **consolidated monthly bank statement** from March 2021 for a Santander Universities customer named Ronan Sergio Silva. The report serves a dual purpose, blending **account transaction summaries** and service package details with critical **security advisories** regarding common financial scams. Specifically, it educates the user on how to **verify authentic payment slips** and avoid \"fake courier\" fraud, emphasizing that the institution never requests personal passwords or physical card collection. Beyond these protections, the statement highlights the **SX Pix platform** for instant transfers and concludes with a comprehensive table of **national economic indicators**, such as inflation rates and currency valuations, to provide broader financial context."
 extraido_em: "2026-06-30T16:26:10Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (38).pdf

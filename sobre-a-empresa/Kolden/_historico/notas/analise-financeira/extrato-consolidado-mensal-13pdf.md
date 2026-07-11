@@ -9,6 +9,9 @@ keywords: "('Bank monthly statement', 'University scholarship programs', 'Entrep
 summary: "This document is a **consolidated monthly bank statement** from February 2019, issued by **Santander** for a student account holder named Ronan Sergio Silva. The record outlines specific **financial activities**, including salary deposits, ATM withdrawals, and the use of a **pre-approved overdraft limit** known as Santander Master. Beyond transaction history, the text promotes **educational opportunities** for university students, such as entrepreneurship grants and international language scholarships in Spain. Additionally, the statement provides a comprehensive **economic overview**, listing national inflation indices and currency exchange rates to help the client track the broader **Brazilian financial market**."
 extraido_em: "2026-06-30T16:25:51Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (13).pdf

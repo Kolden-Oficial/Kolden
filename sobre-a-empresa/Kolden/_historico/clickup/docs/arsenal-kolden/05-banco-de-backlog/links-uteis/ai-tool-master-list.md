@@ -10,6 +10,8 @@ edited_by: 60963240
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-8243
 extracted_at: 2026-06-30
 nota_extracao: "51 KB de conteúdo — extração via Node a partir do dump JSON salvo por overflow MCP."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
 ---
 
 # AI Tool Master List

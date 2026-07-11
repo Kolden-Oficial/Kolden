@@ -9,6 +9,9 @@ keywords: "('Search provider selection', 'DuckDuckGo search engine', 'Configurat
 summary: "This instructional guide serves as a **troubleshooting or confirmation step** within a technical installation process, specifically ensuring the user has selected **DuckDuckGo** as their search provider. The text emphasizes **maintaining existing settings** by simply pressing \"Enter\" to proceed through the configuration menu without making unnecessary changes. Ultimately, the goal is to navigate the user toward a **final confirmation screen** where they can authorize the **download of various software tools**."
 extraido_em: "2026-06-30T16:22:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # ◆  Search provider

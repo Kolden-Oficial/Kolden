@@ -9,6 +9,9 @@ keywords: "('Financial services', 'Insurance protection', 'Rewards program', 'Ac
 summary: "This document serves as a **monthly consolidated statement** from Santander Brazil for November 2022, primarily detailing the account activity and **university service package** for a client named Ronan Sergio Silva. Beyond financial reporting, the text functions as a comprehensive guide to the **Esfera rewards program**, highlighting opportunities for customers to earn points, secure cashback, and access retail discounts. A significant portion of the communication is dedicated to **transactional security**, providing essential guidelines to prevent fraud during Pix transfers and emphasizing that the bank never requests sensitive data through unofficial channels. Finally, the statement includes a broad **economic summary** of national financial indices, such as inflation rates and currency valuations, to help the user contextualize their personal finances within the larger market."
 extraido_em: "2026-06-30T16:26:28Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (59).pdf

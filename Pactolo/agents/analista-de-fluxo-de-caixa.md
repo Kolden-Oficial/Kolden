@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Pactolo
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Pactolo/agents/pactolo-chief|pactolo-chief]]"
+---
+
 # Analista de Fluxo de Caixa
 
 > Especialista tier 1 do squad Pactolo. Dono do **fluxo de caixa**: projeção de caixa, capital de giro,

@@ -9,6 +9,9 @@ keywords: "('Spreadsheet layout optimization', 'Workflow data organization', 'Co
 summary: "This document summarizes a technical meeting between Kaylon Teixeira and Ronan Sersil focused on refining a **material and pricing spreadsheet** for a construction business. The primary goal was to **standardize data organization** and implement **automated workflow features**, such as calculating service days by dividing total units by a specific performance constant. Key structural changes included the addition of a **Portuguese copy for field crews**, a manual **\"material used\" column** to track real consumption against estimates, and a dedicated **verification checklist** for on-site inventory management. Finally, the team established a **standardized saving process** using Google Drive to maintain a \"master\" template for each new client, ensuring that **profit margins** are calculated based on final project totals rather than individual material costs."
 extraido_em: "2026-06-30T16:25:02Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/30 17:27 GMT-03:00 - Anotações do Gemini

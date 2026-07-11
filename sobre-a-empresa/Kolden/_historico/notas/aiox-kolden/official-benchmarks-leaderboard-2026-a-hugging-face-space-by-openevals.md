@@ -9,6 +9,9 @@ keywords: "('Official Benchmarks Leaderboard', 'AI Model Evaluation', 'Open Sour
 summary: "The **Official Benchmarks Leaderboard 2026** serves as a comprehensive, **unified platform** designed to rank artificial intelligence models across a diverse spectrum of specialized capabilities. By aggregating data from **eleven distinct evaluation categories**, including coding, mathematical reasoning, and vision, the space allows users to compare the efficacy of **open-source models** of varying scales. The interface emphasizes **transparency and accessibility**, providing sophisticated filtering tools and an API to help researchers navigate the rapidly evolving landscape of machine intelligence. Ultimately, this tool functions as a **centralized performance index**, offering a clear window into how modern AI agents handle complex, real-world tasks."
 extraido_em: "2026-06-30T16:21:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Official Benchmarks Leaderboard 2026 - a Hugging Face Space by OpenEvals

@@ -9,6 +9,9 @@ keywords: "('Lakebase architecture', 'Serverless Postgres', 'Decoupled compute s
 summary: "Neon’s **lakebase architecture** redefines the traditional database by implementing a **separation of compute and storage**, allowing each layer to scale and function independently. The system utilizes an **ephemeral compute layer** for executing queries while delegating data integrity and long-term history to a **durable storage layer** composed of safekeepers, pageservers, and cloud object storage. By treating the **write-ahead log (WAL)** as the primary source of truth, Neon enables advanced features like **instant branching**, seamless autoscaling, and rapid data recovery without the need for physical data duplication. Ultimately, this structural design provides a **serverless Postgres experience** that combines the performance of local processing with the infinite scalability and resilience of a modern data lake."
 extraido_em: "2026-06-30T16:21:01Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Neon's lakebase architecture - Neon Docs

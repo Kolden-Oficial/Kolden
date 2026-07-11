@@ -9,6 +9,9 @@ keywords: "('Professional career transition', 'Operational marketing structure',
 summary: "This document provides a comprehensive record of a business meeting held on April 16, 2026, primarily detailing the **career transition** of Ronan Sersil as he moves from the agency V4 to a specialized role within Bruno Vilas Boas’s business group. The text outlines a **strategic operational plan** where Sersil will centralize the management of digital assets, paid traffic, and CRM systems across four distinct companies, with the fashion brand **Rose** identified as the highest priority. Key objectives include resolving **administrative access issues** on platforms like Meta Ads and establishing a structured sales funnel to move the enterprises beyond their current reliance on informal, word-of-mouth growth. Ultimately, the source serves as both a **summary of professional negotiations** and a roadmap for a **marketing and technology overhaul** designed to scale the group’s digital presence and revenue."
 extraido_em: "2026-06-30T16:25:15Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/04/16 16:02 GMT-03:00 - Anotações do Gemini

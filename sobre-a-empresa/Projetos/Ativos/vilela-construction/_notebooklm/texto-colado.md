@@ -9,6 +9,10 @@ keywords: "('Vilela Construction', 'EIN number', 'Thiago Araujo', 'CPF identific
 summary: "The provided text serves as a concise **identification record** that links a specific business entity to its individual representative. It establishes a formal connection between **Vilela Construction** and an individual named **Thiago Araujo** by listing their respective administrative credentials. By pairing a corporate **Employer Identification Number** with a personal **Brazilian tax ID**, the source functions as a foundational reference for **legal and fiscal documentation**. This structured data ensures clarity regarding the **ownership or accountability** of the firm within a professional context."
 extraido_em: "2026-06-30T16:07:47Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

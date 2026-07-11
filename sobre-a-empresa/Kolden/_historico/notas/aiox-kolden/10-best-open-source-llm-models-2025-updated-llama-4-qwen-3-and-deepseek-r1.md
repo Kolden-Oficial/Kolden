@@ -9,6 +9,9 @@ keywords: "('Open-source LLM models', 'Model licensing compliance', 'Local deplo
 summary: "This comprehensive guide provides an updated 2025 overview of the **top ten open-source large language models**, highlighting industry leaders such as **Llama 4, Qwen 3, and DeepSeek R1**. The article serves a dual purpose by clarifying the nuances between **truly open-source, open-weight, and source-available licenses** while offering practical advice on selecting models based on **hardware constraints and specific task requirements**. Through detailed comparisons of parameter counts, context windows, and **real-world benchmarks**, the text helps developers navigate a rapidly evolving ecosystem of high-performance AI. Ultimately, it acts as a **deployment roadmap**, providing technical quick-starts for local or server-based integration and a **compliance matrix** to ensure legal suitability for commercial or research projects."
 extraido_em: "2026-06-30T16:17:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # 10 Best Open-Source LLM Models (2025 Updated): Llama 4, Qwen 3 and DeepSeek R1

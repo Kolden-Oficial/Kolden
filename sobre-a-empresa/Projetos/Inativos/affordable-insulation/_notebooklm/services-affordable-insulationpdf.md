@@ -9,6 +9,10 @@ keywords: "('Fiberglass Insulation', 'Rockwool Mineral Wool', 'Blow-in Cellulose
 summary: "This document serves as a comprehensive service guide for **Affordable Insulation**, a professional company dedicated to enhancing **building efficiency and year-round comfort**. The text outlines a diverse portfolio of material options, ranging from traditional **fiberglass batts and eco-friendly blow-in cellulose** to high-performance **open and closed cell spray foams**. Beyond thermal regulation, the source highlights critical secondary benefits such as **fire safety compliance** through fire blocking and significant **noise reduction** for quieter indoor environments. Ultimately, the guide functions as an educational resource to help clients choose **sustainable, high-quality materials** that reduce energy costs and improve structural durability."
 extraido_em: "2026-06-30T16:07:15Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Services – Affordable Insulation.pdf

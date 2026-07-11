@@ -7,6 +7,17 @@ palavras-chave: [kolden, indice, bussola, empresa]
 status: vigente
 atualizado-em: 2026-07-06
 relacionados: [sobre-a-empresa-leia-me, dossie-mae]
+tipo: nota
+area: cerebro
+up: "[[sobre-a-empresa/_MOC-cerebro]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/inteligencia-e-referencias|inteligencia-e-referencias]]"
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance|juridico-e-compliance]]"
+  - "[[sobre-a-empresa/Kolden/operacao/kolden-budget-dre-tracker|kolden-budget-dre-tracker]]"
+  - "[[sobre-a-empresa/Kolden/operacao/metricas-e-okrs|metricas-e-okrs]]"
+  - "[[sobre-a-empresa/Kolden/operacao/planejamento-estrategico|planejamento-estrategico]]"
+  - "[[sobre-a-empresa/Kolden/operacao/processos|processos]]"
+  - "[[sobre-a-empresa/Kolden/operacao/proposta-reorganizacao-drive|proposta-reorganizacao-drive]]"
 ---
 
 # Kolden — bússola

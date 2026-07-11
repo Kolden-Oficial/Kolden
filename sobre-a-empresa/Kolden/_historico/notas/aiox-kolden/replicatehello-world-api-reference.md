@@ -9,6 +9,9 @@ keywords: "('API Reference', 'Create Predictions', 'Webhook Configuration', 'Mod
 summary: "This technical guide details the **API framework** for interacting with a basic demonstration model designed to produce simple greetings. Developers can initiate tasks by providing **structured JSON inputs**, with the flexibility to manage long-running processes through **synchronous waiting** or **automated cancellation** timers. The documentation emphasizes efficient integration by allowing users to monitor progress via **webhooks** or by manually polling the **prediction status**. Ultimately, these instructions provide a blueprint for **programmatic control**, enabling creators to start, list, and terminate model activities within their own software environments."
 extraido_em: "2026-06-30T16:22:47Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # replicate/hello-world | API reference

@@ -9,6 +9,10 @@ keywords: "('CRM Software Implementation', 'First Purchase Customers', 'Product 
 summary: "This chapter from \"The Black Book\" outlines a strategic framework for managing the **first-time buyer**, emphasizing that the initial sale is merely a gateway to long-term **profitability through recurrence**. To navigate this process, the text mandates the installation of a **CRM (Customer Relationship Management)** system to organize leads and prevent \"money from being left on the table\" due to human disorganization. The author details a structured **sales pipeline**—from the first contact to negotiation and closing—while introducing the **product ladder** concept, which uses low-friction \"front-end\" offers to transition customers toward high-ticket \"back-end\" services. Beyond software, the methodology prioritizes a high-impact **customer experience**, utilizing **overdelivery** to generate \"Instagrammable\" moments and **social proof** that fuels organic growth. Ultimately, the text teaches business owners to maximize a client's **Lifetime Value (LTV)** by using structured **onboarding** and targeted research to identify the next challenge the customer needs to solve."
 extraido_em: "2026-06-30T16:10:06Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/black-book/_indice|_indice]]"
 ---
 
 # 3 The Black Book. Capitulo 3 - Cliente de 1a compra.pdf

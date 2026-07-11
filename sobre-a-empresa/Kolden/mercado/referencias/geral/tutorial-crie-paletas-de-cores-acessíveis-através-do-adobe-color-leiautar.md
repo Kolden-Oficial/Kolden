@@ -9,6 +9,10 @@ keywords: "('Accessible color palettes', 'Adobe Color tools', 'WCAG guidelines',
 summary: "This guide details how to use **Adobe Color** to implement **accessible design** by following international standards known as the **WCAG**. The author emphasizes that visual contrast can be deceptive, requiring designers to validate their work to ensure it is **perceptible, operable, understandable, and robust** for all users. The process involves two primary stages: ensuring a palette is **safe for colorblind individuals** so that information remains distinct, and using a **contrast checker** to verify that text is legible against its background. Ultimately, the text advocates for **inclusive design** as a fundamental professional practice that guarantees digital content remains usable regardless of a person's physical abilities."
 extraido_em: "2026-06-30T16:16:52Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/geral/_indice|_indice]]"
 ---
 
 # Tutorial: Crie paletas de cores acessíveis através do Adobe Color - Leiautar

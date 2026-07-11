@@ -9,6 +9,9 @@ keywords: "('Market Strategy Unification', 'Direct Response Performance', 'Digit
 summary: "In this strategic meeting, the **Coden team** outlines a sophisticated proposal to establish a **self-sustaining digital ecosystem** by merging structured \"white\" marketing with aggressive \"black\" performance strategies. The group, composed of specialists in **data science, AI, and persuasive copy**, aims to identify high-traction market opportunities through technical \"garimpo\" (mining) techniques using **Meta APIs and competitor analysis**. They seek a **R$ 100,000 investment** to fund a 100-day validation phase, offering a 20% equity stake in a venture designed to achieve **seven-figure monthly revenues** through scalable digital products and automated sales funnels. While Andre MP presents a functional **AI-driven expense management tool** as a potential launch asset, the discussion concludes with a commitment to review the financial commitment and technical synergy with a silent partner before proceeding."
 extraido_em: "2026-06-30T16:15:14Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2025/11/19 20:02 GMT-03:00 - Anotações do Gemini

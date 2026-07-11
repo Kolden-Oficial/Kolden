@@ -9,6 +9,9 @@ keywords: "('Aesthetics sector growth', 'Brazil market trends', 'Cosmetic proced
 summary: "The provided text outlines the robust expansion of Brazil's beauty and wellness market, which is projected to reach a **faturamento of US$ 41.6 billion by 2028**. Currently ranked as the **third largest global market** behind the United States and China, the sector is being propelled by a cultural emphasis on self-image and the widespread influence of social media. The report highlights a significant shift toward **non-invasive procedures** such as facial harmonization and botulinum toxin injections, which offer rapid results with minimal recovery time. Ultimately, the article situates Brazil's domestic boom within a broader **global trend of technological advancement** and increasing consumer demand that is expected to drive the worldwide cosmetic services industry to over US$ 127 billion by 2030."
 extraido_em: "2026-06-30T16:27:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # Setor de estética projeta faturamento de US$ 41,6 bi até 2028 - Poder360

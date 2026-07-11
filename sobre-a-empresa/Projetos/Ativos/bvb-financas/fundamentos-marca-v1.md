@@ -8,6 +8,11 @@ status: deprecated
 atualizado-em: 2026-07-06
 relacionados: [decisoes, posicionamento, personas, marca]
 versao_original: "Fundamentos da Marca — Fase 1 (abril/2026) — Bruno Vilas Boas + Manual de Marca MVP + Briefing Visual para Designer"
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/dossie|dossie]]"
 ---
 
 # Fundamentos da Marca — v1 (abril/2026) — **DEPRECATED**

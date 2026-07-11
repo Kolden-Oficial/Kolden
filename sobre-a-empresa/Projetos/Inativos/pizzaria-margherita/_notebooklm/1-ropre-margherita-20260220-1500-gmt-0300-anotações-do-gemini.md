@@ -9,6 +9,10 @@ keywords: "('Campaign performance analysis', 'WhatsApp conversion tracking', 'Ad
 summary: "This meeting transcript documents an analytical review of **initial marketing performance** for Margherita Pizzeria, covering data from early to mid-February 2026. The discussion reveals a successful **audience growth strategy**, noting that follower acquisition costs remained below the target of R$ 1.00, yet the team identifies a significant **technical bottleneck in sales tracking** via the \"Anota Aí\" platform and WhatsApp. To address these gaps, the participants outline a rigorous **optimization plan** that includes refining automated messaging to avoid spam, pausing ads on days the restaurant is closed, and launching targeted campaigns for specific neighborhoods and events. Ultimately, the dialogue emphasizes a commitment to **data transparency and customer experience**, aiming to harmonize digital advertising efforts with the practical realities of daily restaurant operations."
 extraido_em: "2026-06-30T16:09:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/_indice|_indice]]"
 ---
 
 # 1° R.O.P.R.E - MARGHERITA - 2026/02/20 15:00 GMT-03:00 - Anotações do Gemini

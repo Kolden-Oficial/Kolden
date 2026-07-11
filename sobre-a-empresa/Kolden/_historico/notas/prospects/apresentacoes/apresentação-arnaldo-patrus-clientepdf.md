@@ -9,6 +9,9 @@ keywords: "('Residential real estate', 'Building amenities', 'Apartment floor pl
 summary: "The Residencial Arnaldo Patrus is a **modern housing development** by Construtora Renault Diniz located in a strategic urban area near major transit hubs and the **Administrative City**. This residential project offers two-bedroom apartments characterized by an **expansive kitchen layout** and the option for private balconies. Beyond the individual units, the complex provides a **comprehensive lifestyle experience** through amenities such as a coworking hub, a gourmet area with pizza and barbecue facilities, and various **dedicated fitness and recreation zones**. Ultimately, this document serves as a promotional guide detailing the **blend of functional design and convenient location** intended for prospective homeowners."
 extraido_em: "2026-06-30T16:11:04Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/_indice|_indice]]"
 ---
 
 # Apresentação Arnaldo Patrus - Cliente.pdf

@@ -9,6 +9,9 @@ keywords: "('Cloud market share', 'Artificial intelligence models', 'Infrastruct
 summary: "While there is no single live dashboard for corporate revenue, this guide identifies specific **industry thermometers** used to track the giants of artificial intelligence and cloud computing. It distinguishes between the **financial monopoly** of physical infrastructure, monitored through quarterly reports from firms like Synergy Research, and the **technological performance** of AI models. To evaluate raw intelligence and efficiency, the text recommends platforms like **Artificial Analysis and LMSYS Chatbot Arena**, which offer real-time data on speed, cost, and user preference. Ultimately, this resource provides a **strategic roadmap** for navigating market hype by focusing on verified business data and developer-driven benchmarks."
 extraido_em: "2026-06-30T16:20:59Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Monitorando Dominantes em IA e Nuvem

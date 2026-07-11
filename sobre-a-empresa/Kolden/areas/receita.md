@@ -8,6 +8,12 @@ status: rascunho
 atualizado-em: 2026-06-25
 relacionados: [areas-leia-me, organograma, ofertas-e-produtos, processos, metricas-e-okrs]
 fontes: drive--02-comercial
+tipo: nota
+area: areas
+up: "[[sobre-a-empresa/Kolden/areas/_MOC-areas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/ofertas-e-produtos|ofertas e produtos]]"
+  - "[[sobre-a-empresa/Kolden/areas/leia-me|leia-me]]"
 ---
 
 # Área: Receita

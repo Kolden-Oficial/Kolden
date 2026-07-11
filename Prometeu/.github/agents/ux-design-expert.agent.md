@@ -2,6 +2,11 @@
 name: ux-design-expert
 description: 'Complete design workflow - user research, wireframes, design systems, token extraction, component building, and quality assurance'
 tools: ['read', 'edit', 'search', 'execute']
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.github/agents/_indice|_indice]]"
 ---
 
 # 🎨 Uma Agent (@ux-design-expert)

@@ -9,6 +9,9 @@ keywords: "('Professional career transition', 'AI process efficiency', '21-day p
 summary: "This meeting transcript documents a strategic partnership discussion between **Danielle R.**, an operations expert, and the **Coden** marketing agency led by **Ronan Sersil**. The dialogue details Danielle’s transition from traditional engineering into an **Execution Partner** role, where she utilizes **Artificial Intelligence** to resolve operational chaos for scaling businesses. Central to the discussion is the development of a **high-ticket product** known as the **\"Sprint IA,\"** a 21-day intervention designed to implement efficient, automated processes within a three-week framework. The participants establish a **collaboration model** where Coden will manage the **marketing and product structuring**, allowing Danielle to focus on technical execution and her eventual goal of reaching the **international B2B market**. Throughout the text, the speakers emphasize the critical importance of **AI-driven efficiency**, the transition from selling time to **productizing knowledge**, and the necessity of **systematic metrification** for business success."
 extraido_em: "2026-06-30T16:25:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/26 20:27 GMT-03:00 - Anotações do Gemini

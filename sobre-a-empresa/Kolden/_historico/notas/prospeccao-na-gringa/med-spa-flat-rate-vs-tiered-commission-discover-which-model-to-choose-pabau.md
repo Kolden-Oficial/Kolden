@@ -9,6 +9,9 @@ keywords: "('Med spa commissions', 'Legal compliance', 'Commission structures', 
 summary: "This guide explores the complex landscape of **medical spa compensation**, detailing how owners can balance staff motivation with **legal compliance and profitability**. The text outlines various incentive models, such as **flat-rate, percentage-based, and tiered commissions**, while cautioning that medical regulations like **fee-splitting and anti-kickback laws** often restrict standard payout practices. Beyond legalities, the author emphasizes the importance of maintaining **clear profit margins** and using **automated practice management software** to ensure transparency and accuracy in performance tracking. Ultimately, the resource serves as a strategic roadmap for business owners to design **fair reward systems** that drive growth without compromising the clinic's financial or ethical standing."
 extraido_em: "2026-06-30T16:27:46Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # Med spa flat rate vs tiered commission: Discover which model to choose - Pabau

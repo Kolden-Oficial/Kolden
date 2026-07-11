@@ -9,6 +9,9 @@ keywords: "('Agency process migration', 'Influencer marketing services', 'Projec
 summary: "Bazze is a multifaceted **creative agency** specializing in influencer management and audiovisual production that is currently transitioning its operational framework from Trello to **ClickUp**. The provided briefing outlines a move toward a more **scalable business model**, seeking to refine existing processes in content production and human resources while establishing a centralized hub for **project management**. By documenting their specialized workflows for client onboarding and strategic rituals, the agency aims to **minimize operational errors** and improve the quality of client deliverables. Ultimately, the implementation focuses on **empowering a self-sufficient team** through clear delegation and standardized templates that can be easily replicated as the firm grows."
 extraido_em: "2026-06-30T16:16:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # [Bazze] Briefing Clickup

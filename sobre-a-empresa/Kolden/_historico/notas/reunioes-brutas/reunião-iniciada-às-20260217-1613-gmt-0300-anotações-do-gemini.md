@@ -9,6 +9,9 @@ keywords: "('IAGAM project unification', 'Lead acquisition funnel', 'Traffic inv
 summary: "This meeting record details a strategic shift as Ronan Sersil and Alexander Max pivot their resources toward **IAGAM**, a high-stakes gambling project centered on **slots and live casino games**. The transition involves merging the operations of their existing firms to focus 80% of their efforts on a **standardized acquisition funnel** utilizing Instagram and Telegram to capture and retain leads. While the team manages an initial **budget of R$ 200,000 for infrastructure** and a dynamic media spend, the ultimate goal is to transition from fixed salaries to a **long-term revenue share model** based on traffic investment. Beyond the technical implementation and aggressive February launch schedule, the dialogue highlights a **commitment to rapid growth** and the ambition to build a sustainable business ecosystem that eventually moves beyond gray-market ventures."
 extraido_em: "2026-06-30T16:15:39Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/17 16:13 GMT-03:00 - Anotações do Gemini

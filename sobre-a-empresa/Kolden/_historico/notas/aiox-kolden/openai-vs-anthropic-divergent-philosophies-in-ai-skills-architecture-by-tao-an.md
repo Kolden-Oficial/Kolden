@@ -9,6 +9,9 @@ keywords: "('AI Skills architecture', 'Developer design philosophies', 'Agentic 
 summary: "This technical analysis explores how OpenAI and Anthropic utilize nearly identical file structures for their AI **Skills systems** while maintaining vastly different operational philosophies. While both companies have converged on a standardized **SKILL.md format** to define agent capabilities, OpenAI prioritizes **\"programmable substrate\"** and visual verification loops to maximize developer speed and task completion. Conversely, Anthropic champions **\"human-in-the-loop\" design** and deterministic code execution, emphasizing safety, explicit permissions, and architectural reliability. Ultimately, the text illustrates an industry moving toward **agentic standardization** through collaborative foundations, even as individual providers diverge between productivity-first and safety-first governance models."
 extraido_em: "2026-06-30T16:21:16Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # OpenAI vs Anthropic: divergent philosophies in AI Skills architecture | by Tao An | Medium

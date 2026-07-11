@@ -1,3 +1,13 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/GoHighLevel/docs/01-relatorio-investigacao|01-relatorio-investigacao]]"
+  - "[[sobre-a-empresa/Ferramentas/GoHighLevel/docs/02-endpoints-mapeados|02-endpoints-mapeados]]"
+  - "[[sobre-a-empresa/Ferramentas/GoHighLevel/docs/03-rate-limits-e-limitacoes|03-rate-limits-e-limitacoes]]"
+---
+
 # Investigação Técnica: GoHighLevel via API REST + MCP
 
 ## 🎯 Contexto e Objetivo

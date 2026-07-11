@@ -9,6 +9,9 @@ keywords: "('Bank account statement', 'Digital banking apps', 'Fraud prevention 
 summary: "This document is a **comprehensive monthly bank statement** from June 2020, issued by **Santander Universities** to a client named Ronan Sergio Silva. The report serves a dual purpose, combining a detailed **financial summary** of account activities—including interest charges for overdue balances and a \"ContaMax\" transaction history—with essential **cybersecurity guidance** regarding phishing and ID protection. Beyond personal accounting, the text provides a broader **economic context** by listing various national indices and currency exchange rates, while also promoting the use of **digital banking platforms** as a safe alternative to physical branches during the pandemic. Ultimately, the source functions as a **structured communication tool** designed to manage a customer's banking relationship, service fees, and security awareness."
 extraido_em: "2026-06-30T16:26:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (29).pdf

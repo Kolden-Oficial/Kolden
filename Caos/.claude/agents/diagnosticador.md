@@ -2,6 +2,11 @@
 name: diagnosticador
 description: Conduz o diagnóstico completo de um novo agente quando o escopo é grande ou o usuário tem muitas ideias soltas. Delegue quando o pedido de criação for vago ou abranger múltiplas áreas. Faz rodadas densas, conduz uma pré-morte e retorna o diagnóstico estruturado em 9 blocos.
 tools: Read, Write, Glob
+tipo: agente
+squad: Caos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Caos/.claude/agents/_indice|_indice]]"
 ---
 
 # Persona

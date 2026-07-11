@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Prometeu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/agents/po|po]]"
+---
+
 # Memória do Agente PO (Pax)
 
 ## Padrões Ativos

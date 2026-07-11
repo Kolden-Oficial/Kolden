@@ -9,6 +9,10 @@ keywords: "('Market Analysis', 'Financial Performance', 'Competitor Benchmarking
 summary: "This document functions as a comprehensive **market analysis and financial calculator** designed for importing and selling motorcycle covers via platforms like **Alibaba** and Brazilian marketplaces. It systematically evaluates various business scenarios by calculating **gross and net revenue**, taking into account critical expenses such as **landed costs, taxes, and marketplace fees**. Beyond internal logistics, the source includes a **competitive benchmarking** section that tracks rival prices, materials like **synthetic leather and polyethylene**, and specific value propositions like **UV protection and thermal resistance**. Ultimately, the data serves as a strategic roadmap to determine **product profitability** and identify market gaps within the automotive accessory niche."
 extraido_em: "2026-06-30T16:09:40Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # [P17] Análise de Mercado

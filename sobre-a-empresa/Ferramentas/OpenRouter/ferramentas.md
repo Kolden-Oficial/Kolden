@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # OpenRouter — Referência de Uso
 
 OpenRouter é um gateway/agregador unificado de LLMs: uma única API (compatível com OpenAI) que dá acesso a 500+ modelos de OpenAI, Anthropic, Google, Meta, Mistral e outros, com fallback automático e roteamento por custo. Categoria: IA/LLM.

@@ -1,3 +1,9 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+---
+
 # Board Pinterest do Dr. Ariosto — Análise para Omiron
 
 Fonte: scrape Firecrawl de `https://pin.it/7tpPWAghm` (redireciona para `https://br.pinterest.com/filhoariosto/omiron-pictures/`).

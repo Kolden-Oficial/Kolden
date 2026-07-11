@@ -9,6 +9,9 @@ keywords: "('WhatsApp security tips', 'Financial services shopping', 'Customer s
 summary: "This document is a **consolidated monthly statement** from July 2022 for a Santander banking client, serving as both a financial summary and a **comprehensive security guide**. The text outlines specific account details, such as a **university student service package** and a rewards program, while providing a detailed table of **economic indices** including inflation and currency rates. A primary theme throughout the material is **fraud prevention**, offering technical advice on securing messaging apps and protecting digital credentials like the **ID Santander**. Ultimately, the document functions as a multi-purpose communication designed to facilitate **account management**, promote investment services, and reinforce **customer safety** against evolving financial scams."
 extraido_em: "2026-06-30T16:26:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (55).pdf

@@ -9,6 +9,9 @@ keywords: "('Patient Conversion Rates', 'Medical Practice Marketing', 'Organic S
 summary: "This 2025 report by First Page Sage analyzes **patient conversion metrics** across various medical specialties and marketing channels using data collected over a seven-year period. The study distinguishes between two critical stages of the growth funnel: the initial **visitor-to-prospect transition** and the final **prospect-to-patient enrollment**. By organizing these findings into comparative tables, the text highlights that while certain fields like **psychiatry and podiatry** enjoy high closing rates, **organic search** remains the most effective digital avenue for turning interested leads into actual patients. Ultimately, the document serves as a **strategic benchmarking tool** designed to help healthcare practices evaluate their marketing efficiency and optimize their customer acquisition strategies."
 extraido_em: "2026-06-30T16:27:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # Patient Conversion Rate by Practice Type: 2025 Report – First Page ...

@@ -6,6 +6,12 @@ categoria: projeto
 status: oficial
 atualizado-em: 2026-06-24
 relacionados: [02-tokens, 03-componentes]
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/design-system/03-componentes|03-componentes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/design-system/04-motion-e-icones|04-motion-e-icones]]"
 ---
 
 # NutriOS Pro — Auditoria do Estado Visual Atual

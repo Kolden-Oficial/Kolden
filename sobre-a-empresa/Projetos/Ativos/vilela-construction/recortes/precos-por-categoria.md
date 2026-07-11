@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/recortes/projetos-fechados-vs-unitarios|projetos-fechados-vs-unitarios]]"
+---
+
 # Recorte — Preços por categoria (Vilela Price Book 2026)
 
 > **Fonte:** `dados/planilha-vilela.json` (parseado 2026-07-09).

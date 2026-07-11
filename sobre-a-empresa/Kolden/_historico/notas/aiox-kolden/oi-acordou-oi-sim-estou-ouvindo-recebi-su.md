@@ -9,6 +9,9 @@ keywords: "('AI Agent Setup', 'Local Server Connectivity', 'Token Context Usage'
 summary: "This text celebrates the successful deployment of a custom **artificial intelligence architecture**, framing the achievement as the birth of a sophisticated \"digital employee.\" By bridging a **Linux-based backend** with a user-friendly **Telegram interface**, the system demonstrates its ability to process complex web searches and data summaries in real time. The guide highlights technical milestones, such as the **integration of high-level language models** and the transition from raw code to a seamless **mobile automation experience**. Ultimately, the source serves as both a validation of the user's technical setup and an invitation to explore a more advanced **centralized control dashboard**."
 extraido_em: "2026-06-30T16:21:10Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Oi, acordou?

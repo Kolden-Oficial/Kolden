@@ -7,6 +7,11 @@ palavras-chave: [prd, requisitos, nutricao, saas]
 status: em-producao
 atualizado-em: 2026-06-24
 relacionados: [leia-me, arquitetura]
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/dossie|dossie]]"
 ---
 
 # PRD — NutriOS Pro

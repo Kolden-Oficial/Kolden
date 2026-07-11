@@ -9,6 +9,10 @@ keywords: "('Digital Marketing Services', 'Paid Traffic Strategies', 'CRM Intera
 summary: "This document is a formal **service agreement** established on February 27, 2024, between the agency **Kolden** and the client **Marco Aurélio Limeres**, outlining a six-month commitment to digital marketing services. The contract establishes a comprehensive **operational framework** that covers legal obligations, payment terms via PIX, and the transfer of **intellectual property** rights to the client. Central to the agreement is an extensive **service scope** that integrates advanced strategies such as paid traffic management, automated chatbots, and data intelligence to enhance the client's online visibility and sales. Beyond mere technical execution, the source emphasizes a **collaborative partnership** characterized by bi-weekly strategic consulting, performance reporting, and dedicated support to ensure long-term business growth."
 extraido_em: "2026-06-30T16:17:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # [KOLDEN]_Contrato_de_Prestação_de_Serviçosdo.pdf

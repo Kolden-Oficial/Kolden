@@ -9,6 +9,9 @@ keywords: "('Money as energy', 'Respecting money', 'Financial mindset pillars', 
 summary: "This source outlines a philosophy for wealth creation centered on the idea that **money is a form of energy** that should act as a seamless intermediary rather than a source of anxiety. The author identifies three financial mindsets, arguing that one must avoid the \"extreme left\" of fearful hoarding and the \"extreme right\" of reckless spending to reach a **balanced middle ground** where capital flows freely but is still respected. Central to this approach is the **law of attraction**, which suggests that maintaining a high internal frequency and visualizing success allows a person to treat transactions as effortlessly as flipping a light switch. Ultimately, the text posits that by **investing in transformative experiences** and refusing to let cost dictate one's emotional state, an individual can normalize abundance while maintaining a strict **discipline against waste** to ensure long-term prosperity."
 extraido_em: "2026-06-30T16:28:07Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # fiz R$ 1.000.000 aos 18 anos e aprendi isso aqui:

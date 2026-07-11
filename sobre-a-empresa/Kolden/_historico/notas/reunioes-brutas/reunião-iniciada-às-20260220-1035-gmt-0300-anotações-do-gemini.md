@@ -9,6 +9,9 @@ keywords: "('Mental health app', 'Bipolar disorder tracking', 'Personalized pati
 summary: "This transcript details a strategic planning session between Ronan Sersil and Dr. Ariosto Filho regarding the creation of a **specialized mental health application** tailored for the Omiron clinic. The project’s primary objective is to enhance **patient adherence and clinical monitoring** through features like medication reminders, daily mood and sleep tracking, and the integration of **validated diagnostic scales**. Beyond basic management, the collaborators envision a sophisticated platform that incorporates **lifestyle medicine pillars**, personalized \"impact phrases\" for motivation, and specific modules for **bipolar disorder and substance use recovery**. Initially conceived as a **white-label digital resource** to validate the business model with current patients, the initiative seeks to merge **aesthetic elegance with clinical utility** to modernize the post-consultation experience."
 extraido_em: "2026-06-30T16:15:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/20 10:35 GMT-03:00 - Anotações do Gemini

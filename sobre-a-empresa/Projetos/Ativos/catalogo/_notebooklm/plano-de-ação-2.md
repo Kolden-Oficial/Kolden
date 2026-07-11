@@ -9,6 +9,10 @@ keywords: "('Affiliate Funnel Implementation', 'Advanced Conversion Tracking', '
 summary: "This comprehensive **strategic roadmap** details the step-by-step evolution of a digital business from its initial conception to the launch of its first **automated sales funnel**. The project focuses on the **affiliate marketing** niche, specifically targeting Shopee products through a \"finds\" and \"deals\" model optimized for platforms like Telegram and WhatsApp. By organizing the workflow into twelve distinct phases, the plan emphasizes the necessity of **rigorous market benchmarking**, precise **technical tracking configuration**, and high-quality landing page design. Ultimately, the document serves as an operational blueprint to help a two-person team achieve **validated data-driven results** and a professional online presence within a ninety-day window."
 extraido_em: "2026-06-30T16:08:38Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # Plano de ação

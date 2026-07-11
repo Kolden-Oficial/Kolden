@@ -8,6 +8,12 @@ status: rascunho
 atualizado-em: 2026-06-19
 relacionados: [areas-leia-me, organograma, planejamento-estrategico]
 fontes: drive--00-gestao-empresarial
+tipo: nota
+area: areas
+up: "[[sobre-a-empresa/Kolden/areas/_MOC-areas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance|jurídico e compliance]]"
+  - "[[sobre-a-empresa/Kolden/areas/leia-me|leia-me]]"
 ---
 
 # Área: Governança

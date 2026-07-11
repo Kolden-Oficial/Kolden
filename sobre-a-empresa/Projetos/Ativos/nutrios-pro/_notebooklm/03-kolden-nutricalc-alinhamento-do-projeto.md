@@ -9,6 +9,10 @@ keywords: "('Software bug fixes', 'Patient evaluation metrics', 'Diet planning f
 summary: "The source document records a detailed **project alignment meeting** between Vinicius Abdon and Ronan Sersil regarding the development and refinement of the **NutriCalc nutrition system**. The discussion focuses on **identifying technical bugs**, such as system crashes during diet assembly and PDF export errors, while proposing **user interface enhancements** for patient metrics and photo evaluations. Beyond troubleshooting, the partners explore **strategic growth opportunities**, including the addition of specialized diet models, integration with **bioimpedance hardware**, and potential partnerships with gym networks. Ultimately, the text outlines a **roadmap for testing and marketing**, emphasizing the creators' shared ambition to transition the software from a simple spreadsheet into a **market-competitive health platform**."
 extraido_em: "2026-06-30T16:08:47Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # 03 | Kolden & NutriCalc | Alinhamento do Projeto

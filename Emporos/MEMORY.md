@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Emporos
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Emporos/agents/emporos-chief|emporos-chief]]"
+---
+
 # MEMORY — Êmporos (Execução Comercial)
 
 > Memória do squad. Atualizada pelo `ritual-de-encerramento` ao fim de cada sessão com trabalho.

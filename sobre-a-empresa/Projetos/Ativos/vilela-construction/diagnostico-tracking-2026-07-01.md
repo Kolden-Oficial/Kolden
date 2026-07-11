@@ -10,6 +10,10 @@ data: "2026-07-01"
 status: "laudo-diagnostico v2 (revisado pós-Dike)"
 revisao: "2026-07-01 — 6 gaps corrigidos após análise adversarial: valor de conversão recalculado, custo do gap quantificado, risco jurídico CP1-b sinalizado, gap Meta adicionado, reflexo OCI sugerido, 6 perguntas consolidadas em 4"
 proxima_acao: "aprovação Ronan → execução em rodada seguinte"
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/README|README]]"
 ---
 
 # Laudo Peitho — Rastreamento Google Ads no formulário da Vilela Construction

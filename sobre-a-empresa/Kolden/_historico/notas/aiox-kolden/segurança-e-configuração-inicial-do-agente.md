@@ -9,6 +9,9 @@ keywords: "('Security configuration', 'Agent initial setup', 'System access perm
 summary: "This guide provides a step-by-step walkthrough for navigating the **initial security prompt** and configuration phase of the OpenClaw agent. The author explains that because the robot currently functions as a **personal assistant with broad system access**, users must manually authorize the setup to proceed into the \"laboratory\" environment. By following a specific sequence of keyboard commands, the user moves through existing settings to reach the **critical \"skills\" installation**, which equips the software with its primary capabilities. Ultimately, the text serves as a **practical roadmap** for granting necessary permissions and initiating the download of the agent's core functional tools."
 extraido_em: "2026-06-30T16:21:56Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Segurança e Configuração Inicial do Agente

@@ -9,6 +9,9 @@ keywords: "('Strategic Sales Funnels', 'Digital Marketing Pillars', 'Lead Manage
 summary: "The provided source is a comprehensive sales script designed for a **Strategic Session**, a high-conversion meeting aimed at transforming business owners from passive observers into proactive architects of their own success. The narrative structure begins by challenging the entrepreneur to choose between **depending on luck or creating it**, subsequently identifying four modern market hurdles: fierce competition, generalist positioning, savvy consumers, and rising digital costs. To overcome these, the text proposes a holistic alignment of **marketing, positioning, and sales**, moving beyond simple advertising toward a **validated strategic funnel** that utilizes segmented campaigns and automated lead qualification. Ultimately, the document serves as a pitch for the **KOLDEN agency’s services**, offering two tiered investment plans—Light and Pro—that implement **Growth Hacking methodologies** and CRM systems to ensure a predictable flow of new clients."
 extraido_em: "2026-06-30T16:16:16Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Script Sessão Estratégica.pdf

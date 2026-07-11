@@ -9,6 +9,10 @@ keywords: "('Service Provision Contract', 'Digital Marketing Services', 'Social 
 summary: "This legal document serves as a **service provision agreement** between a company named Camino and a specialist, Carlos Vinícius de Leon de Souza, for the delivery of **digital marketing and social media services**. The contract outlines a professional relationship lasting up to **ninety days**, specifically establishing that the collaborator functions as an independent contractor rather than a formal employee. Key financial terms dictate a **fixed payment of R$410 per process**, supported by strict clauses regarding **confidentiality, strategic planning, and operational support**. Ultimately, the text defines the **scope of work**—ranging from content strategy to keyword analysis—while ensuring both parties are protected through clear protocols for **termination and legal liability**."
 extraido_em: "2026-06-30T16:11:23Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Carlos - INSTRUMENTO PARTICULAR DE PRESTAÇÃO DE SERVIÇOS E DEMAIS AVENÇAS.docx

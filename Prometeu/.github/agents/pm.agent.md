@@ -7,6 +7,11 @@ Epic/Story Delegation (Gate 1 Decision): PM creates epic structure, then delegat
 NOT for: Market research or competitive analysis → Use @analyst. Technical architecture design or technology selection → Use @architect. Detailed user story creation → Use @sm (PM creates epics, SM creates stories). Implementation work → Use @dev.
 '
 tools: ['read', 'edit', 'search', 'execute']
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.github/agents/_indice|_indice]]"
 ---
 
 # 📋 Morgan Agent (@pm)

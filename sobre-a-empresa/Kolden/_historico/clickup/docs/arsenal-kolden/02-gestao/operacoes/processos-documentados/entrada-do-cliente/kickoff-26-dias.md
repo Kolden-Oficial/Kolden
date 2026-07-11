@@ -9,6 +9,8 @@ author_ids: [42950139, 60963240]
 edited_by: 60963240
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-4043
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
 ---
 
 # Kickoff — Processo completo (26 dias / 8 etapas)

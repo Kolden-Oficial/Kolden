@@ -9,6 +9,9 @@ keywords: "('Customize Ops', 'Weave Trace Triggers', 'Logged Data Modification',
 summary: "The Weights & Biases documentation defines a **Weave Op** as a versioned function designed to automatically track and log inputs and outputs during software execution. Users can utilize a specialized **decorator** to modify how these operations appear in the interface, including the ability to assign unique **display names, functional categories, and colors** for better visual organization. The text further explains how to manage data privacy and resource efficiency by **postprocessing logged information** or implementing a **sampling rate** to limit the frequency of traced calls. Ultimately, these customization tools allow developers to maintain **comprehensive observability** over their applications while tailoring the granularity and appearance of the recorded data."
 extraido_em: "2026-06-30T16:19:28Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Customize Ops - Weights & Biases Documentation

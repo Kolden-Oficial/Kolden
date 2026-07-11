@@ -1,3 +1,14 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/alternativa-marco-aurelio|alternativa-marco-aurelio]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/manifesto|manifesto]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/onboarding-copy|onboarding-copy]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/pilares|pilares]]"
+---
+
 # Quíron — o Mentor Interno do Omiron
 
 > Persona e copy do mentor de inteligência artificial embutido no aplicativo.

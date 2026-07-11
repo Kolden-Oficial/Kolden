@@ -15,6 +15,11 @@ depende_de:
   - cenarios-funil-reverso.md (Pactolo)
   - fluxo-comercial-crm.md (Emporos)
   - estrutura-midia-paga.md (Peitho)
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/README|README]]"
 ---
 
 # Cronograma integrado — Rosie 90 dias de execução

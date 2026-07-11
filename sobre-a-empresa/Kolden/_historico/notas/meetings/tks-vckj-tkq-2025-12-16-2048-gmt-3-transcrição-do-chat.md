@@ -9,6 +9,9 @@ keywords: "('YouTube video link', 'Bernardo Pereira', 'Chat transcription', 'Dig
 summary: "This document is a **digital record of a chat transcript** captured during a specific online session on December 16, 2025. It serves as a **functional log of communication**, documenting the exact moment a participant named Bernardo Pereira contributed to the conversation. The primary purpose of this particular entry is the **sharing of external multimedia content** via a direct web link. By preserving the **metadata and timestamp**, the source ensures a precise chronological history of how information was exchanged within that virtual environment."
 extraido_em: "2026-06-30T16:25:41Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # tks-vckj-tkq (2025-12-16 20:48 GMT-3) - Transcrição do chat

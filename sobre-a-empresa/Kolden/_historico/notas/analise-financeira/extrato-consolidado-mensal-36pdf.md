@@ -9,6 +9,9 @@ keywords: "('Santander bank statement', 'Pix payment system', 'Fraud prevention 
 summary: "This document serves as a **monthly consolidated statement** from January 2021 for a Santander Universities account holder, combining **account management details** with vital **security communications**. The text outlines a specific **service package for students**, detailing monthly fees, transaction limits, and broader **economic indices** such as inflation and currency rates. Crucially, the bank uses this report to educate the client on **fraud prevention**, specifically warning against **forged payment slips** and \"courier scams\" where criminals pose as bank employees to steal physical cards. Ultimately, the source functions as both a **financial summary** and a protective guide, providing the customer with **official support channels** and actionable advice to maintain **banking security**."
 extraido_em: "2026-06-30T16:26:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (36).pdf

@@ -9,6 +9,9 @@ keywords: "('AI Gateway setup', 'Unified API endpoint', 'Provider authentication
 summary: "Cloudflare’s AI Gateway acts as a powerful intermediary designed to help developers manage, scale, and monitor their interactions with various large language models. To begin, users must obtain their **account credentials and API tokens** to facilitate secure communication through either a **unified OpenAI-compatible endpoint** or provider-specific interfaces. The platform offers sophisticated management tools such as **caching, rate limiting, and dynamic routing**, which allow for cost reduction and increased architectural resilience. By supporting a vast array of **upstream AI providers**, the gateway simplifies complex workflows like **unified billing and secure key management**, ultimately providing a centralized hub for modern AI application development."
 extraido_em: "2026-06-30T16:19:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Getting started · Cloudflare AI Gateway docs

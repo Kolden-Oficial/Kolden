@@ -9,6 +9,9 @@ keywords: "('Bank account statement', 'Financial credit offers', 'Monthly servic
 summary: "This monthly bank statement for September 2019 details the financial activity of a **student checking account** at Santander Brazil. Beyond recording standard transactions like **salary deposits, ATM withdrawals, and debit purchases**, the document serves as a marketing tool by promoting **specialized credit lines** tailored for university students and medical undergraduates. It provides a transparent breakdown of **service fees and interest charges**, specifically highlighting the \"Santander Master\" overdraft feature and the associated costs of maintaining a **negative balance**. Ultimately, the text functions as both a **regulatory financial disclosure** and a strategic communication to encourage responsible use of the bank's **lending products**."
 extraido_em: "2026-06-30T16:25:56Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (20).pdf

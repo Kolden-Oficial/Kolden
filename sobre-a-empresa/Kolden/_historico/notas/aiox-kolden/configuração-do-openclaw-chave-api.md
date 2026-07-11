@@ -9,6 +9,9 @@ keywords: "('OpenClaw Configuration', 'API Key Security', 'Terminal Commands', '
 summary: "This guide instructs users on how to navigate the configuration stage of the OpenClaw system without accidentally deleting their previously saved credentials. The core message is that the software has already **secured the API key** within its internal files, meaning the user should simply **press Enter** to bypass redundant prompts for AI providers or bot settings. By avoiding new manual inputs, the user ensures their **existing credits and configurations** remain intact while moving toward the primary goal of the setup. The ultimate purpose of this streamlined process is to reach the final prompt and select \"Yes\" to begin **downloading the necessary skills** and tools for the system."
 extraido_em: "2026-06-30T16:19:19Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Configuração do OpenClaw: Chave API

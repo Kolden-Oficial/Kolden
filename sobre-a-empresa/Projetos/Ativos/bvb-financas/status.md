@@ -7,6 +7,11 @@ palavras-chave: [status, progresso, roadmap, bloqueios, proximos-passos]
 status: rascunho
 atualizado-em: 2026-07-06
 relacionados: [leia-me, decisoes, dossie]
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/dossie|dossie]]"
 ---
 
 # Status — BVB Finanças

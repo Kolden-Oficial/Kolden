@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Sentry — Referência de Uso
 
 Sentry é uma plataforma de observabilidade para monitoramento de erros, performance e rastreamento de exceções em aplicações, ajudando equipes a detectar, diagnosticar e corrigir problemas em produção. Categoria: Observabilidade.

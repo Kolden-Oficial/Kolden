@@ -9,6 +9,9 @@ keywords: "('Google Verification Process', 'Website Structural Adjustments', 'Le
 summary: "This source documents a **strategic alignment meeting** between the KT agency and their client, Henrique Ferraz, regarding the digital launch of his painting business in the United States. The text outlines critical **infrastructure adjustments**, such as optimizing the company website, reorganizing service galleries to show \"before and after\" results, and pivoting the **lead generation strategy** to favor email and Messenger for the American market. A significant portion of the discussion focuses on **operational logistics**, including a mandatory Google verification video and the setup of a $300 monthly **ad spend budget** configured for local Brazilian billing. Ultimately, the record serves as a **project roadmap**, assigning specific tasks for logo updates, professional email integration, and the production of scripted video advertisements at active jobsites."
 extraido_em: "2026-06-30T16:23:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Kolden & Henrique - 2026/05/11 20:42 GMT-03:00 - Anotações do Gemini

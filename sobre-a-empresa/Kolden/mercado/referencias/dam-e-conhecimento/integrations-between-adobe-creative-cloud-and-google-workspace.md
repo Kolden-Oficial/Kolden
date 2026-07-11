@@ -9,6 +9,10 @@ keywords: "('Adobe Creative Cloud', 'Google Workspace', 'Software Integrations',
 summary: "This article details a strategic partnership designed to bridge the gap between creative design and business productivity by **syncing Adobe Creative Cloud with Google Workspace**. Through deep integrations with tools like **Gmail, Docs, and Slides**, teams can now access shared libraries and brand assets directly within their documents, creating a **single source of truth** for collaborative projects. Furthermore, a new **Chrome extension** allows designers to instantly extract artistic elements like colors and patterns from the web to use in their own work. By removing the friction between these platforms, the update aims to provide a **tenfold increase in productivity** for users who need to ideate and share assets across different professional environments."
 extraido_em: "2026-06-30T16:13:02Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # Integrations between Adobe Creative Cloud and Google Workspace

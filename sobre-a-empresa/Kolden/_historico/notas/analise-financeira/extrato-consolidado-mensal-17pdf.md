@@ -9,6 +9,9 @@ keywords: "('Bank account statement', 'Scholarship programs', 'Credit and loans'
 summary: "This document is a **consolidated monthly bank statement** from June 2019 issued by Santander for a client named Ronan, detailing his **account transactions, credit limits, and service fees**. Beyond personal financial records, the text serves as a promotional bulletin that highlights **educational scholarship opportunities** and various **credit products**, such as personal loans and bicycle financing. It organizes critical data through a **summary of debits and credits**, daily balance tables, and a breakdown of the specific **university service package** benefits. Ultimately, the source functions as both a **transparent fiscal report** and a marketing tool designed to encourage **financial planning and academic advancement** through the bank's specialized programs."
 extraido_em: "2026-06-30T16:25:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (17).pdf

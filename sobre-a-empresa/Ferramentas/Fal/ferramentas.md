@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Fal (fal.ai) — Referência de Uso
 
 Plataforma de inferência serverless que dá acesso por API a 1.000+ modelos generativos de imagem, vídeo, áudio e 3D (ex.: FLUX, Kling, Seedance), com GPUs sob demanda. Categoria: IA/Mídia.

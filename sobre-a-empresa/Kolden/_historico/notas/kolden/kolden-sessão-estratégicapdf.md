@@ -9,6 +9,9 @@ keywords: "('Marketing Strategic Pillars', 'Digital Sales Funnel', 'Lead Managem
 summary: "This document serves as a comprehensive **strategic sales presentation** designed to convert potential business owners into clients by highlighting the dangers of **relying on luck** for growth. The narrative structure moves from diagnosing the modern challenges of **high competition and rising advertising costs** to offering a solution based on the **alignment of marketing, positioning, and sales**. By utilizing a **validated strategic funnel** and automated lead management tools, the agency promises to transform raw internet traffic into a predictable stream of **five to ten daily leads**. The source culminates in a pitch for two distinct service tiers—**Tristar Light and Tristar Pro**—which offer varying levels of implementation, from basic traffic management to full-scale **Growth Hacking methodology**."
 extraido_em: "2026-06-30T16:17:10Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # [KOLDEN] Sessão Estratégica.pdf

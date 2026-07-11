@@ -9,6 +9,8 @@ archived: true
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-13273/
 extracted_at: 2026-06-30
 nota: "8 etapas conceituais de criação de estratégia de vendas — consolidadas em 1 arquivo. Cada etapa preserva tempo estimado, como fazer, orientações e sugestões."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
 ---
 
 # Estratégia de Vendas — 8 etapas

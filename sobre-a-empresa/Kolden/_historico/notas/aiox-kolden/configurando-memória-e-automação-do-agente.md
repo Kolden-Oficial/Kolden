@@ -9,6 +9,9 @@ keywords: "('Agent memory infrastructure', 'Session logs installation', 'Hook au
 summary: "This technical guide outlines the final steps for **establishing long-term memory and automation** within an agent's infrastructure. By installing specific session logs and web-reading capabilities, the user builds a foundation that allows the software to **retain an executive summary of interactions** even after a session is reset. The text prioritizes the **activation of \"hooks\" and the \"session-memory\" module**, ensuring the digital assistant evolves from a simple chatbot into a persistent entity that saves data to a hard drive for future use. Ultimately, the instructions serve to **transition the agent into a state of continuous learning**, providing the user with a sophisticated tool that remembers context across multiple weeks of operation."
 extraido_em: "2026-06-30T16:19:11Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Configurando Memória e Automação do Agente

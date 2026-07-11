@@ -6,6 +6,12 @@ categoria: projeto
 status: oficial
 atualizado-em: 2026-07-05
 relacionados: [01-auditoria-ui-atual, 03-componentes, 04-motion-e-icones, tokens.css, tailwind.tokens.js, tokens.json, ../../brandbook/03-identidade-visual, ../../assets/2026-06-30-final/_notas-tipografia]
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/design-system/02-tokens/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/leia-me|leia-me]]"
 ---
 
 # Tokens — v3 (2026-07-05)

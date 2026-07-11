@@ -9,6 +9,9 @@ keywords: "('Gateway Configuration', 'Provider Selection', 'OpenRouter Integrati
 summary: "This instructional guide provides critical directions for navigating a software installation menu without overwriting existing **API configurations**. The primary objective is to protect the **OpenRouter gateway** established in previous steps by directing the user to bypass standard provider selections. By choosing the **\"Skip for now\"** option, the user ensures the system maintains its current internal settings rather than resetting them with new keys. Ultimately, this sequence serves as a bridge to reach the **skills configuration phase**, where the tool’s advanced capabilities are finally unlocked."
 extraido_em: "2026-06-30T16:19:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Configuração do Gateway e Pular Provedores

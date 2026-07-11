@@ -9,6 +9,9 @@ keywords: "('Professional career transition', 'Operational marketing plan', 'Dig
 summary: "The provided source is a detailed meeting record documenting a **professional transition** and the formation of a **strategic partnership** between Ronan Sersil and Bruno Vilas Boas. The dialogue outlines Ronan’s departure from his current role at V4 to assume a **centralized management position** overseeing the digital marketing, CRM, and technological automation for Bruno’s diverse business portfolio. Key priorities identified include the **revitalization of the \"Rose\" brand** and the systematic organization of **administrative digital assets** across four distinct companies. Ultimately, the text serves as a formal roadmap for integrating Sersil as a **vested partner** who will implement a unified sales funnel and operational structure to drive corporate growth."
 extraido_em: "2026-06-30T16:25:16Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/04/16 16:02 GMT-03:00 - Anotações do Gemini

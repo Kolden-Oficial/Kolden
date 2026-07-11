@@ -9,6 +9,9 @@ keywords: "('OpenClaw system update', 'Terminal command usage', 'Model selection
 summary: "This technical guide provides a playful yet precise solution for a user struggling to launch an AI interface called **OpenClaw** through a Linux terminal. The text explains that simply entering the base command only triggers a help menu, requiring the specific **tui command** to actually initiate the terminal user interface. Once the interface is active, the author outlines how to manually **switch the underlying AI model** to a free version of Llama 3 before verifying the connection with a simple test message. By blending casual encouragement with clear instructions, the source aims to help the user navigate a **system update** and successfully engage with the gateway’s chat functionality."
 extraido_em: "2026-06-30T16:22:52Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # ronan@RonanSersil:~$ openclaw

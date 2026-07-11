@@ -9,6 +9,9 @@ keywords: "('Lexical editor bug', 'Version mismatch issues', 'Webpack configurat
 summary: "This GitHub issue discussion addresses a recurring bug in the Lexical text editor framework where users encounter an error regarding an **inactive editor state**. The root cause is primarily attributed to **version mismatches** or **bundler misconfigurations** that cause multiple instances of Lexical to load simultaneously, particularly when using older tools like Webpack 4. To resolve this, developers must ensure that all **lexical dependencies** share the exact same version and that they are not mixing different module formats like CommonJS and ESM. Additionally, the text highlights a technical requirement for **synchronous execution**, noting that state helpers must be wrapped within specific callback functions like **editor.update()** or **editorState.read()** to function correctly."
 extraido_em: "2026-06-30T16:18:38Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Bug: Unable to find an active editor state. State helpers or node methods can only be used synchronously during the callback of editor.update() or editorState.read(). · Issue #5934 · facebook/lexical - GitHub

@@ -9,6 +9,9 @@ keywords: "('System Architecture', 'Strategic Shortcuts', 'API Integration', 'Se
 summary: "This text outlines a **strategic deployment roadmap** for a complex AI system, distinguishing between a temporary shortcut and the final, sophisticated architecture. While the ultimate goal is to route all traffic through a **centralized Linux-based \"nervous system\"** to ensure access to local files and agents, a direct connection is currently used to bypass **connectivity barriers** between the cloud and local servers. This \"guerrilla strategy\" allows for an immediate visual launch while the developer prepares to **establish a secure tunnel** to bridge the infrastructure. Once this link is active, the interface will shift from a standalone tool to a **unified command center** that leverages the full processing power of the private backend."
 extraido_em: "2026-06-30T16:18:25Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Arquitetura de Sistema: Atalho Estratégico

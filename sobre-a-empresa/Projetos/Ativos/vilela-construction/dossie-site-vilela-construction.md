@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/README|README]]"
+---
+
 # Dossiê — Site Vilela Construction
 
 **Repositório:** [`Koldenoficial/vilela-bright-space`](https://github.com/Koldenoficial/vilela-bright-space)

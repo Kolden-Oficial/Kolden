@@ -9,6 +9,9 @@ keywords: "('OpenRouter API setup', 'Linux server configuration', 'Model integra
 summary: "This guide outlines the final steps for **activating an advanced AI agent** by transitioning from restricted free versions to a professional, paid infrastructure. By adding credits to an OpenRouter account, the user effectively **unlocks the full potential** of their Linux-based server, allowing the system to operate without the friction of technical limitations. The process involves a **simple terminal command** to switch the model to \"auto\" mode, followed by a verification message to ensure the \"digital child\" is responsive. Ultimately, the text celebrates the **successful deployment of a functional bot** that can now interact seamlessly across platforms like Telegram."
 extraido_em: "2026-06-30T16:19:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Fui pelo caminho 1

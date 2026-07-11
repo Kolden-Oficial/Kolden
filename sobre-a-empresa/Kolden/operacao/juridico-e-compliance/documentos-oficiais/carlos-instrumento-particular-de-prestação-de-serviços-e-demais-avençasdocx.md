@@ -9,6 +9,10 @@ keywords: "('Service Agreement', 'Digital Marketing', 'Social Media Management',
 summary: "This formal agreement outlines a **service provider relationship** between Camino and Carlos Vinícius de Leon de Souza for the delivery of **social media marketing and digital strategy**. The document establishes a **freelance partnership** specifically designed to avoid an employment bond, setting a fixed fee of **R$410 per process** for tasks such as content planning, persona creation, and performance analysis. Key provisions include a **strict confidentiality clause** regarding strategic data, a ninety-day operational window, and clear mandates for the client to provide necessary training and materials. Ultimately, the contract serves to define the **scope of professional responsibilities** and financial penalties, ensuring both parties adhere to a structured workflow for digital growth."
 extraido_em: "2026-06-30T16:11:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Carlos - INSTRUMENTO PARTICULAR DE PRESTAÇÃO DE SERVIÇOS E DEMAIS AVENÇAS.docx

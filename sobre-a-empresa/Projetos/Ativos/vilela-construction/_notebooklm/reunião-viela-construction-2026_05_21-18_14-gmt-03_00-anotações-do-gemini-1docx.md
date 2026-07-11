@@ -9,6 +9,10 @@ keywords: "('Lead generation urgency', 'CRM implementation', 'Operational restru
 summary: "The provided document outlines a strategic consultation between **VF Construction** and a marketing team aimed at transitioning the business from a **referral-based model** to a professionalized, scalable enterprise. The discussion centers on an **operational restructuring** that includes separating personal and professional identities, implementing a **CRM system** to centralize lead management, and launching **targeted paid traffic** campaigns to ensure consistent growth. A critical theme is the **market's seasonality**, which creates a high-stakes urgency to secure qualified leads between May and November before the winter downturn. Ultimately, the dialogue serves to establish a roadmap for **increasing company valuation** and profitability, with the long-term strategic goal of preparing the business for a **successful sale** within the next three years."
 extraido_em: "2026-06-30T16:07:48Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/_notebooklm/_indice|_indice]]"
 ---
 
 # Reunião Viela Construction  - 2026_05_21 18_14 GMT-03_00 - Anotações do Gemini (1).docx

@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/analise/observacoes|observacoes]]"
+---
+
 # DIFF — Vilela Price Book: nova versão (2026-07-09) vs. baseline (2026-07-03)
 
 > Coleta: Argos, orquestrado a partir de `mcp__google-drive__downloadFile` (fileId `1COD0FEHHXjDoaUGYt630Y61rl-VUgOZG`).

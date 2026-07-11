@@ -9,6 +9,9 @@ keywords: "('Healthcare app development', 'Bipolar disorder tracking', 'Patient 
 summary: "This text outlines a collaborative meeting between Ronan Sersil and Dr. Ariosto Filho regarding the creation of a **bespoke medical application** designed to enhance the clinical practice of the **Omiron Clinic**. The project aims to improve patient adherence and outcomes for **bipolar disorder, substance use, and lifestyle management** by integrating daily mood tracking, medication reminders, and standardized **diagnostic scales** into a centralized digital platform. Beyond clinical utility, the developers emphasize a **sophisticated aesthetic** that incorporates art and personalized motivational content to increase the perceived value of the doctor-patient relationship. The initiative will launch as a **white-label validation phase** for existing patients before potentially expanding into a broader commercial business model."
 extraido_em: "2026-06-30T16:24:28Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/20 10:35 GMT-03:00 - Anotações do Gemini

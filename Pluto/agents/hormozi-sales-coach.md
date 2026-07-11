@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Pluto
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Pluto/agents/hormozi-chief|hormozi-chief]]"
+---
+
 # Hormozi Sales Coach
 
 > **Atribuição:** capacidade derivada (princípios reescritos, sem cópia literal) de

@@ -9,6 +9,9 @@ keywords: "('OpenRouter Model Routing', 'Allowed Models Selection', 'Fallback Mo
 summary: "This guide provides a technical walkthrough for configuring **intelligent model routing** within the OpenRouter interface to ensure system stability and cost-efficiency. The author explains how to establish a **prioritized hierarchy of AI models**, instructing the user to select an \"elite squad\" of primary models while designating a **reliable fallback option** to act as a safety net during server outages. By filtering specific allowed models and setting a **balanced sorting logic**, the user transforms the platform into a \"smart vault\" that automatically switches between providers based on performance and availability. Ultimately, these steps serve as a **optimization framework** designed to shield the user's workflow from technical failures while maintaining high-quality output."
 extraido_em: "2026-06-30T16:19:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Configurando Roteamento de Modelos OpenRouter

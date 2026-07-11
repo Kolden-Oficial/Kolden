@@ -9,6 +9,10 @@ keywords: "('Acceptance of Terms', 'Data Consolidation Service', 'Meta Platform 
 summary: "The Performance Brain Terms of Service serve as a **legal framework** governing the relationship between the analytical tool and its users, establishing that continued use constitutes **full acceptance** of its rules. The document outlines the platform's primary function as a **data consolidator** that integrates with Meta APIs to transform advertising metrics into visual performance dashboards. Crucially, the text defines a **limitation of liability**, shifting the responsibility for financial decisions and data accuracy from the service provider to the individual user. By emphasizing **compliance with third-party policies** and detailing the conditions for service termination, the source ensures that users understand their **obligations regarding account security** and authorized data access."
 extraido_em: "2026-06-30T16:16:46Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Termos de Serviço (Termos de Uso)

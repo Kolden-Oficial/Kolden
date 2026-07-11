@@ -1,3 +1,9 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+---
+
 # Plano de edição do site — gloriaellen.alboompro.com
 
 **Objetivo:** transformar o site de "galeria bonita sem conversão" em "funil operacional dos 12 dias".

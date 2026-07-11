@@ -9,6 +9,9 @@ keywords: "('OpenRouter API connection', 'Billing error status', 'System credit 
 summary: "This text serves as a troubleshooting guide for users who encounter a **persistent error message** on the OpenClaw platform even after successfully adding credits. The author explains that the red notification is merely a **residual status** from a failed past attempt, as the system requires a **fresh interaction** to recognize a newly funded account. By sending a simple manual command, the user triggers a **new server request** that forces the interface to update and clear the \"billing\" alert. Ultimately, the guide provides reassurance that the glitch is a minor **synchronization delay** rather than a functional failure, ensuring the user can restore the system to its **automatic operational mode**."
 extraido_em: "2026-06-30T16:22:42Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # model set to openrouter/auto

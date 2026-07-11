@@ -9,6 +9,10 @@ keywords: "('Spanish Financial Education', 'Canadian Real Estate', 'Lead Funnel 
 summary: "This strategic document outlines a comprehensive **marketing and communication funnel** designed by Amparo Camacho to provide **financial education to the Latino immigrant community** in Ontario. The plan transitions potential participants through a structured journey, moving from **initial awareness via targeted social media ads** to physical attendance at a seminar, and finally toward private consultations. By prioritizing **Spanish-language communication** and a \"no-pressure\" educational environment, the strategy seeks to **dismantle common cultural barriers and mistrust** regarding the Canadian banking system. Key tactical elements include a **ten-part automated email sequence**, personalized WhatsApp audio outreach, and a diverse array of digital content focused on **building authority and human connection**. Ultimately, the framework aims to empower families by translating complex financial concepts into **accessible, actionable plans** for long-term stability and homeownership."
 extraido_em: "2026-06-30T16:28:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/_indice|_indice]]"
 ---
 
 # 05 — Comunicação do Funil

@@ -9,6 +9,9 @@ keywords: "('Oracle AI Database', 'LlamaIndex Integration', 'Vector Search', 'Em
 summary: "This documentation explains how **Oracle AI Vector Search** connects with **LlamaIndex** to bridge the gap between large language models and proprietary data. By serving as a **vector store**, Oracle allows users to house complex mathematical embeddings alongside traditional business records, enabling **unified queries** that combine structured and unstructured information. The text outlines a comprehensive **RAG pipeline** that handles everything from sophisticated document chunking and embedding generation to high-speed similarity searches using native SQL. Ultimately, this integration empowers developers to build **enterprise-grade AI applications** that benefit from Oracle’s robust security and scalability while utilizing LlamaIndex to facilitate intelligent data retrieval."
 extraido_em: "2026-06-30T16:21:30Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Oracle AI Vector Search Integration with LlamaIndex

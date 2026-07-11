@@ -7,6 +7,17 @@ palavras-chave: [design-system, logo, logotipo, simbolo, k, area-de-protecao, as
 status: vigente
 atualizado-em: 2026-06-22
 relacionados: [ds-leia-me, ds-cores, ds-indice-assets, identidade-visual]
+tipo: nota
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/cores|cores]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/leia-me|design system]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/grafismos-e-auxiliares|grafismos]]"
+  - "[[sobre-a-empresa/Kolden/marca/identidade-visual|identidade visual]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tipografia|tipografia]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tom-visual|tom visual]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/assets/indice-assets|índice de assets]]"
 ---
 
 # Logo

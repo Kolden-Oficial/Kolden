@@ -9,6 +9,9 @@ keywords: "('Kolden pricing', 'Affordable Insulation', 'Meeting records', 'Data 
 summary: "This document serves as a **technical log** for a brief digital meeting between Ronan from Kolden and Kaylon from Affordable Insulation regarding pricing strategies. The content reveals a **functional failure in automated documentation**, as the Gemini AI was unable to generate a summary or detailed notes due to insufficient dialogue and an extremely short recording duration. Despite the lack of substance, the file outlines **procedural next steps** focused on validating information and verifying pending details with the participants. Ultimately, the text illustrates a **standardized administrative template** that records the metadata and transcription status of a professional interaction, even when the data captured is minimal."
 extraido_em: "2026-06-30T16:24:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Precificação Kolden: Affordable Insulation - 2026/06/15 09:11 GMT-03:00 - Anotações do Gemini

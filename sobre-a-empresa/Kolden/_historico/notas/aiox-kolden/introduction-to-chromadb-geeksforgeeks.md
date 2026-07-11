@@ -9,6 +9,9 @@ keywords: "('Vector database', 'ChromaDB architecture', 'Vector embeddings', 'Si
 summary: "This article provides a comprehensive overview of **ChromaDB**, an open-source **vector database** specifically designed to manage and search the numerical representations used in artificial intelligence. The text outlines a logical **architectural hierarchy** that moves from high-level organizational tenants down to individual documents, emphasizing the platform's **ease of use** and its ability to perform high-speed **similarity searches** via advanced indexing. By detailing the **practical workflow** of converting raw data into embeddings, the guide illustrates how developers can implement features like **semantic search** and **Retrieval-Augmented Generation (RAG)**. Ultimately, the source serves as a technical primer that balances the **functional advantages** of flexible machine learning integration against practical **limitations** such as high memory consumption."
 extraido_em: "2026-06-30T16:20:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Introduction to ChromaDB - GeeksforGeeks

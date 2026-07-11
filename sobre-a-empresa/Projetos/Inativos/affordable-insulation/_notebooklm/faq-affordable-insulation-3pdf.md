@@ -9,6 +9,10 @@ keywords: "('Spray foam insulation', 'Energy efficiency', 'Professional installa
 summary: "This document serves as a comprehensive **informational guide and service overview** for Affordable Insulation, a professional contractor based in **Lowell, Massachusetts**. The text outlines a clear **five-step consultation process** that moves from an initial request to site assessment and final project scheduling, emphasizing a seamless customer experience. Key themes highlighted include **enhanced energy efficiency**, the use of **sustainable materials**, and the importance of **fire safety and soundproofing** for residential and commercial structures. Ultimately, the source functions as a **promotional FAQ** designed to build consumer trust while providing essential contact details for those seeking a **free estimate** on specialized spray foam or traditional insulation installations."
 extraido_em: "2026-06-30T16:07:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # FAQ – Affordable Insulation (3).pdf

@@ -9,6 +9,10 @@ keywords: "('File Naming Conventions', 'Research Data Management', 'Metadata Doc
 summary: "This source outlines the importance of establishing a systematic **file naming convention** to ensure that research data remains **discoverable and organized** throughout its lifecycle. By creating a standardized framework for labels, researchers can **maximize access** to their records, prevent data loss, and facilitate smoother collaboration within professional environments. The guide details practical strategies for structuring names, such as using **descriptive metadata**, implementing **ISO-formatted dates** for chronological sorting, and avoiding spaces or special characters that can cause technical errors. Ultimately, the text emphasizes that documenting these rules in a **top-level README file** is essential for maintaining consistency and long-term clarity for all users of the data."
 extraido_em: "2026-06-30T16:12:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # File Naming Conventions - Harvard Biomedical Data Management

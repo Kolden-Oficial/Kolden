@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/docs/guides/agents/_indice|_indice]]"
+---
+
 # Sistema do Agente @qa
 
 > **Versao:** 1.0.0

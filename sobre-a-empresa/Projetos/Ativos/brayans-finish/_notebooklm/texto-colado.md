@@ -9,6 +9,10 @@ keywords: "('Finish Carpentry', 'Custom Woodworking', 'Home Renovation Services'
 summary: "This source provides a comprehensive digital directory for **Brayan’s Finish**, a specialized professional service dedicated to **high-end finish carpentry** and home renovations. By consolidating contact information across platforms like Instagram, TikTok, and WhatsApp, the text outlines a diverse portfolio that includes everything from **custom cabinetry and staircases** to exterior deck construction. Serving clients across **Massachusetts, Rhode Island, and New Hampshire**, the business positions itself as a reliable, fully insured operation focused on **crafting aesthetic masterpieces** out of ordinary living spaces. The collection of links and descriptions serves as a **modern business card**, emphasizing quality craftsmanship and easy accessibility for potential customers seeking architectural improvements."
 extraido_em: "2026-06-30T16:07:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

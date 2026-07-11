@@ -9,6 +9,9 @@ keywords: "('NPM package metadata', 'Security verification', 'Bot protection', '
 summary: "The provided text serves as a **digital gatekeeper** designed to distinguish between authentic human users and automated malicious software. This specific page functions as a **temporary security layer** managed by Cloudflare to ensure the integrity of the npm registry. By requiring the activation of **JavaScript and cookies**, the system confirms the visitor’s legitimacy before allowing access to the requested package information. Ultimately, the passage outlines a **verification protocol** that prioritizes the safety and stability of the web environment over immediate page delivery."
 extraido_em: "2026-06-30T16:17:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # @vercel/toolbar - npm

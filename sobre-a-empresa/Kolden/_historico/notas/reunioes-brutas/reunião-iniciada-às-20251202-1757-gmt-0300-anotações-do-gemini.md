@@ -9,6 +9,9 @@ keywords: "('Market Research Strategy', 'Black vs White', 'Business Scalability'
 summary: "This meeting transcript documents the initial pitch and strategic critique of **Coden**, a digital marketing startup aiming to build a business \"empire\" by blending **aggressive research techniques** with professional management processes. The founders, Ronan Sersil and Bernardo Pereira, describe a \"**third way**\" strategy that identifies successful but low-quality products in international markets—specifically through **competitive benchmarking** and \"cracking\" hidden advertisements—to recreate them with higher production value. However, advisor Gilvan Coelho Jr. provides a blunt **critique of their technical presentation**, urging the team to stop focusing on their complex methods and instead prioritize **delivering value** and defining clear business metrics. He redefines their value proposition as expertise in **identifying validated market opportunities** and suggests a more scalable model focused on \"**low-hanging fruit**,\" such as low-cost infoproducts triggered by trending news. Ultimately, the source highlights a pivot from a technical, process-heavy approach toward a **lean, metric-driven business logic** designed to minimize the risks of product launches while maximizing profitability."
 extraido_em: "2026-06-30T16:15:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2025/12/02 17:57 GMT-03:00 - Anotações do Gemini

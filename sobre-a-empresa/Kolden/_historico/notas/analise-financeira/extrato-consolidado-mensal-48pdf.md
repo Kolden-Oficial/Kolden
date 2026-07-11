@@ -9,6 +9,9 @@ keywords: "('Transaction Insurance', 'Customer Service Channels', 'Personal Cred
 summary: "This document serves as a consolidated **monthly bank statement** from January 2022, providing a comprehensive overview of financial services and security guidelines for a Santander customer. Beyond detailing specific **account summaries and credit limits**, the text introduces a specialized **insurance product** designed to protect digital transactions and physical goods against theft. A significant portion of the report is dedicated to **fraud prevention**, specifically educating the user on how to identify and avoid common scams like the \"fake courier\" ruse. Finally, the statement includes a breakdown of **monthly service fees** alongside a global view of relevant **economic indices and currency exchange rates** for the period."
 extraido_em: "2026-06-30T16:26:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (48).pdf

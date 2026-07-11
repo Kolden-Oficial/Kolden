@@ -9,6 +9,9 @@ keywords: "('Chat completion API', 'Model parameters', 'Tool calling', 'Token us
 summary: "This technical documentation outlines the **Chat Completions API**, a primary interface used to generate responses from OpenAI’s various language models through structured data exchanges. Developers provide a **list of messages** featuring specific roles—such as developer, system, user, or assistant—to simulate a conversation and receive a generated response. Beyond simple text, the source details advanced capabilities like **multimodal inputs** for images and audio, as well as **tool calling** and web search integrations that extend the model’s utility. Additionally, the text serves as a comprehensive reference for **fine-tuning parameters**, including constraints for reasoning effort, output formatting via JSON schemas, and token usage management to control costs and performance."
 extraido_em: "2026-06-30T16:19:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Create chat completion | OpenAI API Reference

@@ -5,6 +5,15 @@ data: 2026-06-23
 autor: Aglaia/donald-miller
 destino: "marca/mensagens-chave.md (após ratificação)"
 premissa: "Kolden = plataforma de IA soberana (self-hosted, vendor-agnóstica). PROVISÓRIA — pende ratificação do foco (F1) pelo Ronan."
+tipo: nota
+area: iniciativas
+up: "[[sobre-a-empresa/Kolden/iniciativas/_MOC-iniciativas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/arquetipo|arquetipo]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/identity-prism|identity-prism]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/maturidade-design|maturidade-design]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/posicionamento|posicionamento]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/proposta-voz-e-tom|proposta-voz-e-tom]]"
 ---
 
 # Proposta de mensagens-chave (rascunho de partida)

@@ -9,6 +9,10 @@ keywords: "('Modular landing page', 'Financial education seminar', 'Conversion r
 summary: "This guide outlines a **modular, fifteen-step framework** designed to build a high-converting landing page for a financial seminar using the **Lovable development platform**. The process begins by establishing a **semantic HTML structure** and a unified **design system**, gradually layering in persuasive Spanish-language copy, authority-building sections, and a **mobile-optimized RSVP form**. Key technical priorities include **accessibility compliance**, seamless **third-party integrations** for lead tracking, and rigorous quality assurance to ensure the site is **ready for live traffic**. Ultimately, the document serves as a comprehensive blueprint for transforming a marketing concept into a **functional, professional web presence** through iterative, logical prompting."
 extraido_em: "2026-06-30T16:28:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/_indice|_indice]]"
 ---
 
 # 09 — Prompts Step-by-Step para Lovable

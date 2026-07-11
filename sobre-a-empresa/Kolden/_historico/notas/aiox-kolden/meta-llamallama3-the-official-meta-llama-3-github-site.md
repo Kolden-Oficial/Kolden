@@ -9,6 +9,9 @@ keywords: "('Meta Llama 3', 'Model Download Instructions', 'Repository Deprecati
 summary: "The provided text details the **official Meta Llama 3 GitHub repository**, which serves as a foundational resource for accessing and implementing Meta’s third-generation large language models. Although the repository is now **archived and deprecated** in favor of a more comprehensive **Llama Stack**, it remains a technical guide for running **inference** on both pre-trained and instruction-tuned models ranging from 8B to 70B parameters. The documentation emphasizes **responsible innovation**, requiring users to accept a license and use a specific **download script** to retrieve model weights and tokenizers. Furthermore, it outlines necessary **hardware configurations** and formatting protocols to ensure the models function correctly for diverse research and commercial applications."
 extraido_em: "2026-06-30T16:22:42Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # meta-llama/llama3: The official Meta Llama 3 GitHub site

@@ -9,6 +9,9 @@ keywords: "('Delivery sales performance', 'Paid traffic strategies', 'Strategic 
 summary: "This document summarizes a diagnostic meeting between **Coden**, a business management consultancy, and the owners of a local **pizza and burger establishment** struggling with stagnant growth. The conversation centers on identifying **operational bottlenecks**, specifically a weak delivery service and the failure of previous unguided social media ads to generate actual sales. To address these issues, the consultant emphasizes the necessity of a **strategic marketing plan**, the adoption of a **CRM system** for lead management, and the implementation of **data-driven dashboards** to replace random decision-making. The ultimate purpose of the text is to outline the transition from informal business management to a **professionalized framework** aimed at nearly doubling the company's monthly revenue through expert guidance and clear performance metrics."
 extraido_em: "2026-06-30T16:24:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/19 13:51 GMT-03:00 - Anotações do Gemini

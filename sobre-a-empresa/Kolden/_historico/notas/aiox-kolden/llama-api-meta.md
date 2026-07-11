@@ -9,6 +9,9 @@ keywords: "('Llama API features', 'Data privacy commitments', 'Model inference s
 summary: "The Llama API serves as a **Meta-hosted interface** that allows developers to integrate advanced language models into their applications without the burden of managing private hardware. This platform offers a versatile suite of tools, including **multi-modal image understanding**, specialized tool calling, and **JSON structured outputs** for consistent data formatting. Beyond its technical flexibility, the service emphasizes **enterprise-grade privacy**, ensuring that user prompts and model responses are never utilized to train future iterations of the software. By providing **OpenAI-compatible endpoints** and official software development kits, the API streamlines the process of building secure, high-performance AI solutions in a **standardized developer environment**."
 extraido_em: "2026-06-30T16:20:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Llama API - Meta

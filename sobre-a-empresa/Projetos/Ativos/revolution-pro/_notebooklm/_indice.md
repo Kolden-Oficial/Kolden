@@ -3,6 +3,15 @@ notebook_id: "3f0c9eeb-384b-4654-91c3-9708f225a2e6"
 notebook_titulo: "03 | Revolution Pro"
 total_fontes: 5
 extraido_em: "2026-06-30T16:05:46Z"
+tipo: projeto
+projeto: revolution-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/revolution-pro/_notebooklm/icp-posicionamento|icp-posicionamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/revolution-pro/_notebooklm/reunião-iniciada-às-2026_04_23-12_51-gmt-03_00-anotações-do-gemini-1docx|reunião-iniciada-às-2026_04_23-12_51-gmt-03_00-anotações-do-gemini-1docx]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/revolution-pro/_notebooklm/reunião-iniciada-às-2026_04_27-20_55-gmt-03_00-anotações-do-geminidocx|reunião-iniciada-às-2026_04_27-20_55-gmt-03_00-anotações-do-geminidocx]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/revolution-pro/_notebooklm/whatsapp-image-2026-05-13-at-082530jpeg|whatsapp-image-2026-05-13-at-082530jpeg]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/revolution-pro/_notebooklm/whatsapp-image-2026-05-27-at-193438jpeg|whatsapp-image-2026-05-27-at-193438jpeg]]"
 ---
 
 # Índice — 03 | Revolution Pro

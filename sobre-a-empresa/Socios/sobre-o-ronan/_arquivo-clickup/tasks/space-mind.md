@@ -6,6 +6,9 @@ total_tasks_visiveis: ~200 (2 páginas extraídas)
 status_extracao: "amostra das 2 primeiras páginas (paginar para mais)"
 extracted_at: 2026-06-30
 nota: "Tarefas operacionais do Ronan no período jan-fev 2024 — fase intensa de construção HISET + manejo de múltiplos clientes (TriStar, Nikson, Saulo, Priscila Benício, Gustavo Coelho)."
+tipo: nota
+area: socios
+up: "[[sobre-a-empresa/Socios/_MOC-socios]]"
 ---
 
 # Tasks — Space Mind (Ronan)

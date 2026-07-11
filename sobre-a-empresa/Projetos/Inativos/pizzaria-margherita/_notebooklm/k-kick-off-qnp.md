@@ -9,6 +9,10 @@ keywords: "('Sales process construction', 'Business goals alignment', 'SWOT anal
 summary: "This document serves as an introductory **onboarding questionnaire** designed to align a business with its digital marketing partners by capturing essential **strategic insights**. It guides the client through a comprehensive **situational analysis**, covering internal factors like team structure and profit margins alongside external variables like **SWOT assessments** and competitive benchmarking. By defining clear **growth objectives** and identifying unique value propositions, the form establishes a roadmap for transitioning the company’s traditional presence into a robust **online sales engine**. Ultimately, these details provide the foundational knowledge necessary to craft tailored advertisements and optimize the **customer acquisition process** for diverse target audiences."
 extraido_em: "2026-06-30T16:09:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/_indice|_indice]]"
 ---
 
 # [K] KICK-OFF - QNP

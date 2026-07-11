@@ -9,6 +9,10 @@ keywords: "('Agency operations', 'Notion operating system', 'Centralized documen
 summary: "This text explores a transition from fragmented digital clutter to a **centralized operating system** designed for agency efficiency. The author describes moving away from the \"chaos\" of nested folders in Google Drive and toward a **\"single source of truth\"** in Notion that integrates all facets of the business. By organizing operations through a **hub-and-spoke model**, the system connects high-level executive visions with practical **SOPs and automated role databases**, ensuring that every team member understands their responsibilities. Ultimately, this structured environment allows **AI to function with full business context**, transforming it from a simple chatbot into a powerful tool that significantly reduces employee onboarding time and scales the company."
 extraido_em: "2026-06-30T16:12:46Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # How I structure my agency's operations (I was drowning in Google Drive) - Reddit

@@ -9,6 +9,9 @@ keywords: "('Service revenue model', 'Commission and bonuses', 'Financial perfor
 summary: "The Kolden Earnings Calculator serves as a comprehensive **financial framework and incentive model** designed to align agency profitability with individual talent performance. By categorizing offerings into **low-ticket diagnostics, implementation maps, and recurring advisory services**, the document establishes a clear ladder for client acquisition and revenue generation. The structure prioritizes an **aggressive commission-based culture**, rewarding employees with substantial bonuses for direct referrals, successful upselling, and hitting collective team milestones. Beyond simple sales, the model integrates **operational costs and cultural rewards**, such as health-related incentives and innovation bonuses, to ensure a sustainable and motivated workforce. Ultimately, this system functions as a **strategic simulation tool** that projects how diverse revenue streams and high-performance behaviors translate into scalable earnings for both the business and its staff."
 extraido_em: "2026-06-30T16:11:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Calculadora de Ganhos - Kolden

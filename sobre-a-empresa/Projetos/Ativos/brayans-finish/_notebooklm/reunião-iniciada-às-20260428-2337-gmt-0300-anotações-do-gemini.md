@@ -9,6 +9,10 @@ keywords: "('Account access attempts', 'Security notification failures', 'Techni
 summary: "This transcript records a virtual meeting between Bernardo Pereira and a client named Brayan’s Finish, focusing on a **failed attempt to bypass security protocols** during a routine account login. The primary objective was for Bernardo to access specific accounts by having the client approve **real-time mobile push notifications** on an iPhone 15 Plus. Despite multiple attempts and troubleshooting steps—such as manually refreshing the Gmail application—the necessary **security codes and confirmation prompts** failed to appear on the device. Consequently, the session concluded with the participants seeking an **alternative communication channel**, specifically WhatsApp, to resolve the technical \"bug\" hindering their progress."
 extraido_em: "2026-06-30T16:07:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/04/28 23:37 GMT-03:00 - Anotações do Gemini

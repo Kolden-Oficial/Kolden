@@ -1,3 +1,13 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/copy/rsa-bathroom|rsa-bathroom]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/copy/rsa-brand|rsa-brand]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/copy/sitelinks-callouts-snippets|sitelinks-callouts-snippets]]"
+---
+
 # RSA — Kitchen (US_Nonbrand_Kitchen_TOFU_v1)
 
 > **Contrato:** `Olimpo/contratos/missoes/m-20260709-google-ads-vilela.yaml`

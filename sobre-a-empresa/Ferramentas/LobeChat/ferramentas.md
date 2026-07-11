@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/LobeChat/LobeHub|LobeHub]]"
+---
+
 # LobeChat — Referência de Uso
 
 LobeChat (LobeHub) é um framework de chat de IA open-source, self-hosted, com UI moderna, que agrega múltiplos provedores de LLM (OpenAI, Claude, Gemini, Ollama, DeepSeek, etc.), base de conhecimento (RAG), plugins e marketplace de servidores MCP. Categoria: IA/UI.

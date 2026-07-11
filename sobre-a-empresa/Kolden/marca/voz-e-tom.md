@@ -7,6 +7,12 @@ palavras-chave: [voz, tom, comunicacao, estilo]
 status: rascunho
 atualizado-em: 2026-06-18
 relacionados: [mensagens-chave, posicionamento]
+tipo: nota
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/identidade-visual|identidade-visual]]"
+  - "[[sobre-a-empresa/Kolden/marca/mensagens-chave|mensagens-chave]]"
 ---
 
 # Voz e Tom

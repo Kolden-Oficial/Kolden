@@ -10,6 +10,8 @@ edited_by: 60963240
 archived: true
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-5483
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
 ---
 
 # Padrão de organização de colunas — Gerenciador do Facebook Ads

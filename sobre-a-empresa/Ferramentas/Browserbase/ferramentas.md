@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Browserbase — Referência de Uso
 
 Plataforma de navegadores headless na nuvem (Puppeteer, Playwright, Selenium e o SDK Stagehand com IA) para automação web e agentes que navegam e interagem com sites como humanos. Categoria: Browser.

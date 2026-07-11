@@ -1,3 +1,13 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/GoHighLevel/docs/00-investigacao-prompt|00-investigacao-prompt]]"
+  - "[[sobre-a-empresa/Ferramentas/GoHighLevel/docs/01-relatorio-investigacao|01-relatorio-investigacao]]"
+  - "[[sobre-a-empresa/Ferramentas/GoHighLevel/docs/03-rate-limits-e-limitacoes|03-rate-limits-e-limitacoes]]"
+---
+
 # Endpoints Mapeados — GHL API REST v2
 
 **Base URL:** `https://services.leadconnectorhq.com`  

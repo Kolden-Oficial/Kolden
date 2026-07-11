@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/09-kit-visual/README|README]]"
+---
+
 # Glória Ellen — Guidelines de Uso do Kit Visual
 
 **Marca:** Glória Ellen

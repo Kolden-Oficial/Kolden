@@ -9,8 +9,11 @@ duracao-alvo-minutos: 60
 participantes-esperados:
   - bruno-felice-vilas-boas (sócio-administrador, 21-30, adm UFBA em curso)
   - catarina-quireza-leite-agareno (sócia, 21-30, PJ próprio desde 2022)
-  - socio-historico (hipótese primária: Joyce de Brito Vieira, 51-60; alternativos: Janinne Maltez, 41-50 ou David Nascimento, 21-30)
+  - "socio-historico (hipótese primária: Joyce de Brito Vieira, 51-60; alternativos: Janinne Maltez, 41-50 ou David Nascimento, 21-30)"
   - ronan-silva (kolden)
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/dossie|dossie]]"
 ---
 
 # ROTEIRO — Reunião de descoberta com sócios da BRW Movelaria

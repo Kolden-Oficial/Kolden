@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/ferramentas|ferramentas]]"
+---
+
 # CLI Status — Ferramentas do Kolden
 
 CLIs de fornecedor instalados na máquina e validados com os tokens do Infisical (auth

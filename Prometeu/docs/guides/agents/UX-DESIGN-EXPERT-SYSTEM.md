@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/docs/guides/agents/_indice|_indice]]"
+---
+
 # Sistema UX-Design-Expert AIOX
 
 > **Versao:** 1.0.0

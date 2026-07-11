@@ -9,6 +9,11 @@ keywords: "('Campaign Performance Review', 'WhatsApp Tracking Issues', 'Ad Sched
 summary: "This meeting transcript details a **performance review for Margherita Pizzeria**, where the marketing team and owners evaluate digital advertising results from early February. The discussion focuses on the **success of customer acquisition**, noting that while follower growth costs remained below target, there is a significant **tracking gap between WhatsApp inquiries and actual sales**. To address these technical hurdles, the team plans to **optimize the \"Anota Aí\" ordering system**, refine ad schedules to avoid closed business hours, and launch **new targeted campaigns for Alphaville**. Ultimately, the meeting serves to align the partners on a strategy to **improve the customer journey** and lower the cost per conversion through better data integration and creative testing."
 extraido_em: "2026-06-30T16:10:04Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/reunioes/alinhamento-estratégico-margherita-kolden-20260311-1301-gmt-0300-anotações-do|alinhamento-estratégico-margherita-kolden-20260311-1301-gmt-0300-anotações-do]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/reunioes/kolden-margherita-kick-off-20260206-0803-gmt-0300-anotações-do-gemini|kolden-margherita-kick-off-20260206-0803-gmt-0300-anotações-do-gemini]]"
 ---
 
 # 1° R.O.P.R.E - MARGHERITA - 2026/02/20 15:00 GMT-03:00 - Anotações do Gemini

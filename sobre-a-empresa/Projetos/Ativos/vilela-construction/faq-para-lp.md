@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/README|README]]"
+---
+
 # FAQ para LP — Vilela Construction
 
 > **Contrato:** `Olimpo/contratos/missoes/m-20260709-google-ads-vilela.yaml`

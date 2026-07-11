@@ -9,6 +9,10 @@ keywords: "('AFF Insulation', 'Business Location', 'Navigation Maps', 'Social Me
 summary: "This collection of links serves as a **comprehensive digital directory** for a commercial enterprise known as AFF Insulation, located in Lowell, Massachusetts. By providing access to **geospatial mapping services** alongside a professional website and various social media profiles, the source establishes the business's **physical presence and online identity**. Its primary purpose is to facilitate **customer engagement and accessibility** by centralizing the firm's contact details, visual portfolio, and precise geographic coordinates. Together, these resources form a **cohesive architectural footprint** for the brand across the most prominent platforms on the modern web."
 extraido_em: "2026-06-30T16:07:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

@@ -9,6 +9,9 @@ keywords: "('Pricing Plans', 'Token Billing', 'Model Providers', 'Rate Limits', 
 summary: "OpenRouter provides a tiered service model designed to give developers unified access to a vast catalog of artificial intelligence models without any **price markups** over the original providers. Users can choose between a basic free tier, a flexible **pay-as-you-go** system, or a customized enterprise plan, all of which benefit from an **OpenAI-compatible API** that simplifies integration. The platform emphasizes reliability through features like **automatic routing and fallback**, ensuring that customers are only charged for successful requests while maintaining strict data privacy standards. Ultimately, this documentation serves as a comprehensive guide to the platform's **transparent billing**, various usage limits, and robust technical support options for scaling AI applications."
 extraido_em: "2026-06-30T16:21:40Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Pricing - OpenRouter

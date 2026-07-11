@@ -9,6 +9,8 @@ archived: true
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-13273/
 extracted_at: 2026-06-30
 nota: "3 cargos comerciais embrionários (sem indicadores nem remuneração definidos)."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
 ---
 
 # Cargos Comerciais — Closer, Social Seller, Setter (consolidado)

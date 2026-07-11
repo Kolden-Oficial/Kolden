@@ -9,6 +9,9 @@ keywords: "('Chatbot Arena', 'Hugging Face Space', 'Model benchmarking', 'Large 
 summary: "This source identifies a digital environment hosted on the Hugging Face platform designed to evaluate and compare various large language models. Known as the **Chatbot Arena**, this interactive application serves as a **benchmarking hub** where users can test and monitor the performance of different artificial intelligence systems. The interface provides real-time access to **community discussions and live data**, ensuring that the rankings reflect the most current advancements in the field. Ultimately, the page acts as a **dynamic dashboard** for developers and enthusiasts to track the competitive evolution of conversational AI."
 extraido_em: "2026-06-30T16:18:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Chatbot Arena - a Hugging Face Space by lmarena-ai

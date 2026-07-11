@@ -9,6 +9,9 @@ keywords: "('WhatsApp fraud prevention', 'Banking service summary', 'Customer lo
 summary: "This document serves as a consolidated monthly statement for a **Santander university account**, combining personal financial data with essential **security protocols and banking rewards**. The primary focus is on **fraud prevention**, offering detailed guidance on securing WhatsApp accounts and protecting digital credentials like the **ID Santander** from phishing attempts. Beyond safety, the text outlines the benefits of the **Esfera loyalty program**, highlighting opportunities for earning points, cashback, and shopping discounts. Finally, it provides a comprehensive overview of the client's **service package usage** and current **economic indicators**, while encouraging investment diversification through the bank's brokerage platform."
 extraido_em: "2026-06-30T16:26:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (53).pdf

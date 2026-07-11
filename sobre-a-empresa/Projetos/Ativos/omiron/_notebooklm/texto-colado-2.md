@@ -9,6 +9,10 @@ keywords: "('Medical services', 'Psychiatry', 'Professional credentials', 'Healt
 summary: "This source presents the **professional profile of Dr. Ariosto Ribeiro**, a Brazilian psychiatrist established on the Instagram social media platform. Through a collection of account statistics and professional credentials, the text outlines his clinical authority by highlighting his **official medical registrations** and specific area of expertise. Beyond mere data, the biography reveals a core philosophy that rejects passive sedation in favor of **awakening the mind through a synthesis of science and humanism**. Ultimately, the profile serves as a digital calling card designed to connect with followers by bridging the gap between **technical psychiatric care and artistic inspiration**."
 extraido_em: "2026-06-30T16:07:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

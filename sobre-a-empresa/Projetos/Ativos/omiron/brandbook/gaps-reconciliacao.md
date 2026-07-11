@@ -13,6 +13,11 @@ principio: >
   proposta viva a discutir na mesa — não como omissão a esconder. A coluna
   "Bloqueio para 08/07" separa o que precisa aparecer no deck de decisão do
   que fica para próxima rodada operacional.
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/00-indice|00-indice]]"
 ---
 
 # Matriz de reconciliação de gaps abertos

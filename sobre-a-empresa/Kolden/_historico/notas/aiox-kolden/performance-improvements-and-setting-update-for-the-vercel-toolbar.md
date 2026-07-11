@@ -9,6 +9,9 @@ keywords: "('Vercel Toolbar', 'Performance Improvements', 'Hardware Acceleration
 summary: "This update highlights significant **technical optimizations** to the Vercel Toolbar, which now boasts a **tenfold increase in loading speed** and enhanced smoothness through hardware acceleration. Beyond performance, the text outlines **new administrative controls** that allow teams to manage the tool's visibility across different deployment environments via a central dashboard. To balance these global settings with personal preference, developers can still use **keyboard shortcuts or menu options** to toggle the interface on an individual basis. Ultimately, these changes aim to streamline the **collaborative development process** by making essential feedback and debugging tools more responsive and easier to manage."
 extraido_em: "2026-06-30T16:21:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Performance improvements and setting update for the Vercel Toolbar

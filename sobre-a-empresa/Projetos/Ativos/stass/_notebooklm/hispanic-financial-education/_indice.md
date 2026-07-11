@@ -3,6 +3,24 @@ notebook_id: "d9d11805-6a94-429a-82c1-595af9cb830c"
 notebook_titulo: "Hispanic Financial Education Strategy: Hamilton Hyperlocal Intelligence Report"
 total_fontes: 14
 extraido_em: "2026-06-30T16:07:05Z"
+tipo: projeto
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/01-mapa-das-fontes-inventário|01-mapa-das-fontes-inventário]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/01b-mapa-de-conhecimento-do-lançamento|01b-mapa-de-conhecimento-do-lançamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/02-público-alvo|02-público-alvo]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/03-posicionamento-e-narrativa-central|03-posicionamento-e-narrativa-central]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/04-arquitetura-do-funil-de-lançamento|04-arquitetura-do-funil-de-lançamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/05-comunicação-do-funil|05-comunicação-do-funil]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/06-copy-da-página-lovable-landing-page|06-copy-da-página-lovable-landing-page]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/07-system-design-da-página|07-system-design-da-página]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/08-identidade-visual-logo|08-identidade-visual-logo]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/09-prompts-step-by-step-para-lovable|09-prompts-step-by-step-para-lovable]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/10-lacunas-críticas-e-plano-de-execução-das-próximas-fases|10-lacunas-críticas-e-plano-de-execução-das-próximas-fases]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/hyperlocal-strategy-briefing-financial-education-seminars-for-the-hispanic|hyperlocal-strategy-briefing-financial-education-seminars-for-the-hispanic]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/pesquisa-hiperlocal-seminário-english|pesquisa-hiperlocal-seminário-english]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/pesquisa-hiperlocal-seminário-financeiro-latino-brasil|pesquisa-hiperlocal-seminário-financeiro-latino-brasil]]"
 ---
 
 # Índice — Hispanic Financial Education Strategy: Hamilton Hyperlocal Intelligence Report

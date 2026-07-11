@@ -8,6 +8,13 @@ status: rascunho
 atualizado-em: 2026-06-25
 relacionados: [areas-leia-me, organograma, governanca, juridico-e-compliance]
 fontes: drive--00-gestao-empresarial
+tipo: nota
+area: areas
+up: "[[sobre-a-empresa/Kolden/areas/_MOC-areas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/kolden-budget-dre-tracker|budget & DRE]]"
+  - "[[sobre-a-empresa/Kolden/operacao/metricas-e-okrs|métricas e OKRs]]"
+  - "[[sobre-a-empresa/Kolden/areas/leia-me|leia-me]]"
 ---
 
 # Área: Finanças

@@ -9,6 +9,10 @@ keywords: "('Transtorno bipolar', 'Belo Horizonte', 'Health specialists', 'Medic
 summary: "This source is a digital directory from the **Doctoralia** platform, specifically curated to help residents of **Belo Horizonte** find medical professionals with expertise in treating **bipolar disorder**. The text functions as a structured search results page, highlighting a diverse range of practitioners including **psychiatrists and psychologists** while providing essential details such as professional credentials, patient reviews, and **consultation fees**. Beyond individual profiles, the page outlines various therapeutic options like **telemedicine and specialized clinics**, catering to a broad spectrum of mental health needs. Ultimately, the document serves as a comprehensive **healthcare accessibility tool**, connecting patients with local experts while offering links to related conditions and neighboring geographic regions for an expanded search."
 extraido_em: "2026-06-30T16:07:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Profissionais com experiência em Transtorno bipolar em Belo Horizonte - Marque uma consulta - Doctoralia

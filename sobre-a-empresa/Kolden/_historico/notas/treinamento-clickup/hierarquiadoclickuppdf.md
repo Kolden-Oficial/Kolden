@@ -9,6 +9,9 @@ keywords: "('ClickUp Hierarchy', 'Workspace Management', 'Organizational Structu
 summary: "This document outlines a structured framework for project management by detailing the **descending layers of organization** within the ClickUp platform. It begins with the **Workspace as the overarching corporate entity**, which is then divided into Spaces, Folders, and Lists to categorize departmental workflows and specific processes. At the granular level, the system focuses on **individual action items** known as Tasks, which can be further refined into Subtasks and Checklists for precise tracking. Ultimately, this hierarchy serves as a **logical roadmap** to help users transition from broad organizational oversight to the execution of minute, daily details."
 extraido_em: "2026-06-30T16:28:27Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/_indice|_indice]]"
 ---
 
 # HierarquiadoClickUp.pdf

@@ -9,6 +9,9 @@ keywords: "('Fraud Prevention Tips', 'Bank Security Advice', 'Monthly Account Su
 summary: "This document is a consolidated monthly bank statement from **Santander Universities** for April 2021, primarily serving as a detailed summary of account activity and a **security advisory** for the client. The text outlines specific **fraud prevention tactics**, instructing the user on how to verify authentic payment slips and warning against \"courier scams\" where criminals pose as bank staff to steal physical cards or personal data. Beyond security education, it provides a transparent breakdown of the user's **university service package**, including transaction limits and monthly fees, alongside a comprehensive table of **economic indicators** like inflation rates and currency values. Ultimately, the source functions as both a financial record and a protective guide, emphasizing that **informed consumers** are the best defense against evolving digital and physical banking threats."
 extraido_em: "2026-06-30T16:26:11Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (39).pdf

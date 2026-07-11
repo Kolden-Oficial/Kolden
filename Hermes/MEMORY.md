@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Hermes
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Hermes/.claude/agents/hermes-chief|hermes-chief]]"
+---
+
 # Memória do Squad Hermes
 
 > **Escopo:** padrões estruturais do SQUAD Hermes (rito das Ondas 2-26).

@@ -9,6 +9,9 @@ keywords: "('Ad account security', 'API data integration', 'Operational risk mit
 summary: "This meeting transcript serves as a formal record of a **transitional strategy** designed to ensure **operational security** and transparency during a personnel handover. The documentation outlines a technical shift toward **isolated ad account structures**, utilizing personal profiles and dedicated APIs to prevent systemic failures or security lockouts. By decoupling core business assets from testing environments, the team established a **redundant backup system** that protects client data from potential service interruptions. Ultimately, the text functions as a professional roadmap for a **seamless exit**, prioritizing meticulous documentation and the removal of third-party access to maintain the firm's long-term **digital integrity**."
 extraido_em: "2026-06-30T16:25:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/05/05 09:23 GMT-03:00 - Anotações do Gemini

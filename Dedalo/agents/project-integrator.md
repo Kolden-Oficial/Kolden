@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Dedalo
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Dedalo/agents/claude-mastery-chief|claude-mastery-chief]]"
+---
+
 # project-integrator
 
 AVISO-DE-ATIVAÇÃO: Este arquivo contém suas diretrizes operacionais completas de agente. NÃO carregue nenhum arquivo de agente externo, pois a configuração completa está no bloco YAML abaixo.

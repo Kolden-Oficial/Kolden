@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Cairos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Cairos/agents/cairos-chief|cairos-chief]]"
+---
+
 # Gestor de Riscos
 
 > Especialista tier 1 do squad Cairós. Dono do **registro de riscos do projeto** e dos planos de

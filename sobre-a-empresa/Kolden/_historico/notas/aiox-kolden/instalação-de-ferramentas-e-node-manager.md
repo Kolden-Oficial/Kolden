@@ -9,6 +9,9 @@ keywords: "('Node Package Manager', 'Tool installation', 'Development environmen
 summary: "This guide provides step-by-step instructions for finalizing a software environment setup by selecting the appropriate **package management engine**. The text identifies **npm as the industry standard** for handling tool installations and directs the user to confirm this default choice to ensure stability and compatibility. While the interface may display complex commands for secondary tools like Homebrew, the primary objective is to **maintain focus on the current installer** to initiate the automated download process. Ultimately, the document serves as a practical roadmap to transition from manual configuration to the **automated deployment phase** of development tools."
 extraido_em: "2026-06-30T16:20:16Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Instalação de Ferramentas e Node Manager

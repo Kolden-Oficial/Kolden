@@ -9,6 +9,9 @@ keywords: "('Sales team structure', 'Talent retention strategy', 'Performance-ba
 summary: "This document outlines an ambitious organizational blueprint for a marketing agency, focusing on a **performance-driven sales structure** and a unique **talent retention strategy**. Led by Ronan Sersil, the meeting emphasizes creating a specialized commercial team—consisting of a BDR, SDR, and Closer—to ensure **predictable recurring revenue** through diversified acquisition channels like paid traffic and social selling. Central to their philosophy is an **aggressive commission model** that incentivizes the entire staff to act as \"opportunity hunters\" by rewarding successful client referrals with the total value of the first monthly fee. Beyond financial mechanics, the text details a rigorous **corporate culture** centered on transparency, mental development, and the recruitment of \"frustrated\" professionals who are motivated to exceed baseline performance metrics. Ultimately, the strategy aims for long-term sustainability by prioritizing **high-ticket contracts** and fostering a deep sense of loyalty through the personal and professional growth of every collaborator."
 extraido_em: "2026-06-30T16:16:01Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/06 12:11 GMT-03:00 - Anotações do Gemini

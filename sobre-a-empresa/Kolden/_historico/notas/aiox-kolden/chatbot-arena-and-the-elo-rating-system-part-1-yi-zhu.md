@@ -9,6 +9,9 @@ keywords: "('Chatbot Arena', 'Elo rating system', 'LLM benchmarking', 'Pairwise 
 summary: "The provided text explores how **Chatbot Arena** utilizes the **Elo rating system** to provide a credible, human-centered leaderboard for ranking large language models. Because traditional automated metrics struggle with the open-ended nature of AI responses, this platform relies on **crowdsourced pairwise comparisons** where anonymous models battle head-to-head. The author details the mathematical mechanics of the Elo system—traditionally used in chess—explaining how it converts these wins and losses into a **scalable and incremental ranking** based on expected outcomes. By comparing the system's update logic to **Stochastic Gradient Descent**, the article illustrates how the leaderboard \"learns\" a model's true skill level over time. Ultimately, the source serves as a technical primer on why this competitive framework is essential for maintaining an **impartial and dynamic evaluation** of rapidly evolving AI technologies."
 extraido_em: "2026-06-30T16:18:44Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Chatbot Arena and the Elo rating system - Part 1 - Yi Zhu

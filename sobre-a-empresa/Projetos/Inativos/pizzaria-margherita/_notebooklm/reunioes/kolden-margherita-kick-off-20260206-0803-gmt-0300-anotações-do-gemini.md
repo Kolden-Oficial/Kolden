@@ -9,6 +9,11 @@ keywords: "('Strategic Revenue Goals', 'Delivery Optimization', 'Profit Margin M
 summary: "This document outlines a strategic kick-off meeting for the **Kolden & Margherita** pizzeria, where business consultant Ronan Sersil collaborates with owners Wallace Barbosa and Leidiane Alves to scale their monthly revenue to **R$ 100,000**. The conversation focuses on transitioning the business from a \"survival mode\" to a high-performance operation by addressing critical bottlenecks such as **passive WhatsApp delivery** and a high dependency on the founders for daily tasks. To achieve these goals, the team plans to implement a **purchase management overhaul** to reduce food costs while launching a sophisticated marketing offensive centered on \"**food porn**\" aesthetics and high-end ingredients like parma ham and brie. A central theme of the strategy is **geographic market segmentation**, specifically targeting affluent residents in the Grand Park area with premium offerings and efficient logistics to bypass entry barriers. Ultimately, the purpose of this roadmap is to protect the brand’s **artisanal quality**—defined by wood-fired ovens and natural fermentation—while professionalizing management to ensure sustainable, long-term profitability."
 extraido_em: "2026-06-30T16:13:13Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/reunioes/1-ropre-margherita-20260220-1500-gmt-0300-anotações-do-gemini|1-ropre-margherita-20260220-1500-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/reunioes/alinhamento-estratégico-margherita-kolden-20260311-1301-gmt-0300-anotações-do|alinhamento-estratégico-margherita-kolden-20260311-1301-gmt-0300-anotações-do]]"
 ---
 
 # Kolden & Margherita | Kick-Off - 2026/02/06 08:03 GMT-03:00 - Anotações do Gemini

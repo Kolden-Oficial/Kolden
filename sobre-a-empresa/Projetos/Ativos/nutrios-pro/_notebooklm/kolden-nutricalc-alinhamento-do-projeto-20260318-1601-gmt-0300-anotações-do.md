@@ -9,6 +9,10 @@ keywords: "('Professional career transition', 'Platform software updates', 'Infl
 summary: "The provided source is a detailed meeting summary and transcript regarding the **project alignment** for a nutrition-focused software platform involving collaborators Ronan Sersil and Vinicius Abdon. The discussion highlights Ronan’s **career transition** away from his current role to focus entirely on this personal venture, which he anticipates will significantly accelerate the project’s growth and **marketing potential**. Technically, the partners review a platform that is nearly complete, focusing on **feature updates** such as AI-driven body composition analysis, dietary restriction tags, and enhanced evolution tracking for patients. A major strategic theme involves leveraging **influencer marketing**, specifically by creating diet templates based on famous athletes to engage users. Moving forward, the team aims to professionalize the brand through **dedicated design services** and established weekly sprints to refine the user experience and finalize the product's identity."
 extraido_em: "2026-06-30T16:08:52Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # Kolden & NutriCalc | Alinhamento do Projeto - 2026/03/18 16:01 GMT-03:00 - Anotações do Gemini

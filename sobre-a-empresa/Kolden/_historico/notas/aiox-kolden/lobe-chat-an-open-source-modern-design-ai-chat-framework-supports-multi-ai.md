@@ -9,6 +9,9 @@ keywords: "('AI chat framework', 'Multi-model provider support', 'Knowledge base
 summary: "Lobe Chat is a versatile **open-source AI framework** designed to provide users with a sophisticated, customizable interface for interacting with a wide array of **large language models**. By supporting over thirty service providers, including OpenAI, Claude, and Gemini, the platform serves as a universal hub for both cloud-based and **local LLM deployment**. The system is highly extensible, featuring **multimodal capabilities** such as visual recognition, text-to-speech, and image generation, alongside a robust plugin ecosystem and a managed **knowledge base for RAG** (Retrieval-Augmented Generation). Its primary purpose is to empower individuals and developers to host their own private AI agents with **one-click deployment**, ensuring data privacy and a high-performance user experience across all devices."
 extraido_em: "2026-06-30T16:20:48Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Qwen / DeepSeek), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS/Plugins/Artifacts). One-click FREE deployment of your private ChatGPT - GitHub

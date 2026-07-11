@@ -9,6 +9,9 @@ keywords: "('Lexical HTML serialization', 'Reactjs development', 'Stack Overflow
 summary: "This technical forum thread explores a specific challenge in **React development** where a programmer is attempting to **serialize Lexical editor content into HTML** for use in email templates. The discussion highlights a common stumbling block regarding the **$generateHtmlFromNodes** function, which frequently triggers errors when executed outside the library's expected lifecycle. The resolution emphasizes that all **Lexical functions prefixed with a dollar sign** must be nested within an **editor update callback** to function correctly. Ultimately, this source serves as a **practical troubleshooting guide** for engineers navigating the internal state requirements of the Lexical framework."
 extraido_em: "2026-06-30T16:22:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Unable to parse Lexical to HTML - Stack Overflow

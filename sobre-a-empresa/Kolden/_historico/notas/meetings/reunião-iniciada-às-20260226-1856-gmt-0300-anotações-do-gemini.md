@@ -9,6 +9,9 @@ keywords: "('System bug fixes', 'Patient metrics visualization', 'Competitor mar
 summary: "The provided transcript and notes document a 2026 meeting between **Vinicius Abdon and Ronan Sersil** regarding the technical refinement and commercial strategy of a **nutritional assessment and diet planning software**. The discussion focuses on resolving **critical system bugs**, such as display errors in BMI metrics, reference filter malfunctions, and data lag during diet construction. Beyond troubleshooting, the partners explore **expansion opportunities**, including the integration of **bioimpedance data** and specialized dietary models for vegan and lactose-free patients. The text concludes with a focus on **business growth**, outlining plans for **competitor analysis** of platforms like Dietbox and potential partnerships with gym chains to scale the product into a comprehensive market leader."
 extraido_em: "2026-06-30T16:24:32Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/26 18:56 GMT-03:00 - Anotações do Gemini

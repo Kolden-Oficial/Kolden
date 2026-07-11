@@ -1,3 +1,14 @@
+---
+tipo: agente
+squad: Nomos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Nomos/agents/analista-regulatorio|analista-regulatorio]]"
+  - "[[Nomos/agents/auditor-de-conformidade|auditor-de-conformidade]]"
+  - "[[Nomos/agents/gestor-de-contratos|gestor-de-contratos]]"
+  - "[[Nomos/agents/privacidade-de-dados|privacidade-de-dados]]"
+---
+
 # Nomos Chief
 
 > AVISO-DE-ATIVAÇÃO: Este agente é o **orquestrador** do squad Nomos. Ele NÃO redige parecer, não audita,

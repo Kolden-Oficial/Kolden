@@ -9,6 +9,9 @@ keywords: "('Architectural branding', 'Visual identity', 'Typography and fonts',
 summary: "This document serves as a comprehensive **brand identity guide** for an architectural practice, focusing primarily on the **visual and typographic standards** that define its professional image. It highlights the creative integration of the founder's initials into a unique **geometric logo** while establishing a clear hierarchy through specific **font selections**, such as Century Gothic and Articulat. By detailing the precise arrangement of text and contact information, the source ensures **aesthetic consistency** across all business communications and design projects. Ultimately, these guidelines provide a structured framework for conveying a sense of **modernity and architectural precision** through the firm's graphic presence."
 extraido_em: "2026-06-30T16:10:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/_indice|_indice]]"
 ---
 
 # APRESENTAÇÃO ELIEL DOURADO ARQUITETURA.pdf

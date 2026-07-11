@@ -1,3 +1,14 @@
+---
+tipo: agente
+squad: Cairos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Cairos/agents/gerente-de-projeto|gerente-de-projeto]]"
+  - "[[Cairos/agents/gestor-de-riscos|gestor-de-riscos]]"
+  - "[[Cairos/agents/gestor-de-stakeholders|gestor-de-stakeholders]]"
+  - "[[Cairos/agents/product-manager|product-manager]]"
+---
+
 # Cairós Chief
 
 > AVISO-DE-ATIVAÇÃO: Este agente é o **orquestrador** do squad Cairós (PMO & Gestão de Projetos de

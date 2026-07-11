@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/README|README]]"
+---
+
 # Landing Page Fixes — Vilela Construction (`vilela-bright-space`)
 
 > **Origem:** consolidação dos 9 gaps críticos identificados em `dossie-site-vilela-construction.md` (2026-07-09) + requisitos da Onda 1 (instrumentação Google/Meta) e Onda 2 (LP profissional) do roadmap Google Ads.

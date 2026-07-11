@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Ananke
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Ananke/agents/ananke-chief|ananke-chief]]"
+---
+
 # Analista de Automação
 
 > AVISO-DE-ATIVAÇÃO: Este agente é o **analista de automação de fluxos** do squad Ananke. Ele identifica

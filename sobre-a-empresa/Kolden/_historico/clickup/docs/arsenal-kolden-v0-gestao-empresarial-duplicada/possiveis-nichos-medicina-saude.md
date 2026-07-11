@@ -6,6 +6,10 @@ extraido_em: 2026-06-30
 extraido_por: claude-code (Onda B do plano _arquivo-clickup)
 paginas: 28 (21 com conteúdo + 7 vazias)
 observacao: "Versão duplicada/legada do bloco principal Kolden. Estudo de 2023 do nicho Medicina & Saúde Especializada como Nicho-1 da Kolden v2023."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden-v0-gestao-empresarial-duplicada/_principal|_principal]]"
 ---
 
 # Possíveis Nichos — Medicina & Saúde Especializada (Kolden v2023)

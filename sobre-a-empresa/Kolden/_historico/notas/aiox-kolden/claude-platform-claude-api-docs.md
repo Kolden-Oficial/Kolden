@@ -9,6 +9,9 @@ keywords: "('Claude Platform Updates', 'Model Release Notes', 'API Tooling Capab
 summary: "The provided documentation serves as a comprehensive **chronological changelog** for the Claude Platform, detailing the rapid evolution of its **API, model family, and developer tools** from 2024 through early 2026. The text emphasizes critical technical milestones such as the transition to the **Claude 4 model series**, the expansion of **context windows to one million tokens**, and the introduction of sophisticated features like **automated prompt caching** and **extended thinking**. Beyond specific product updates, the logs highlight a strategic focus on **infrastructure efficiency**, including improved rate limits, structured output capabilities, and integrated tools for **web search and code execution**. Ultimately, this record functions as a central roadmap for developers to track **model deprecations**, pricing shifts, and the brand's consolidation into a unified **developer ecosystem**."
 extraido_em: "2026-06-30T16:18:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Claude Platform - Claude API Docs

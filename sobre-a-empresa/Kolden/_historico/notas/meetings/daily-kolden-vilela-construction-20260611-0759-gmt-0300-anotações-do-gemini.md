@@ -9,6 +9,9 @@ keywords: "('Strategic Team Alignment', 'AI Avatar Content', 'Lead Qualification
 summary: "This transcript documents a daily meeting of **Kolden**, a specialized agency focused on **operational alignment, strategic growth, and digital content** for its clients. The team, led by Mateus, Ronan, and Julio, discusses the necessity of maintaining a **high-vibration mindset** focused on commercial discipline and the importance of strictly qualifying leads to ensure they fit the **Ideal Customer Profile (ICP)**. A significant portion of the session centers on leveraging **artificial intelligence** to create professional video avatars for **social proof**, aiming for an organic and authentic aesthetic while bypassing technical hurdles. The group also outlines a specific **pricing strategy** for a new contract, opting for a promotional entry rate with clear plans for a future **upsell**. Ultimately, the document serves as a roadmap for the team’s immediate **technical tasks and client presentations**, emphasizing the balance between relational warmth and **professional authority** during business closings."
 extraido_em: "2026-06-30T16:23:34Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Daily Kolden: Vilela Construction - 2026/06/11 07:59 GMT-03:00 - Anotações do Gemini

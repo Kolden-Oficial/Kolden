@@ -8,6 +8,10 @@ author_ids: [60963240]
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-60673/
 extracted_at: 2026-06-30
 nota: "Marcos: HISET CNPJ + Advogada, palestra evento (dez 19), proposta Gustavo + reunião Samuel (jan 02). Cronograma oficial Danielle 2024 anexado."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/central-de-atas-2024/2024-janeiro-semanas-2-3-4/janeiro-2024-semanas-2-3-4|janeiro-2024-semanas-2-3-4]]"
 ---
 
 # Atas Daily — Dez 2023 / Jan 2024 (CENTRAL DE ATAS)

@@ -4,6 +4,11 @@ missao: m-20260701-112935-rosie-90d
 verificador: Dike (camada de subida, independente)
 data: 2026-07-01
 status: laudo v1 — para leitura do Ronan antes do envio ao Bruno
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/README|README]]"
 ---
 
 # LAUDO DIKE — m-20260701-112935-rosie-90d

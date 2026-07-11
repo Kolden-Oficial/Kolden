@@ -9,6 +9,9 @@ keywords: "('Chat Completion API', 'API Parameters', 'Model Reasoning', 'Tool Ca
 summary: "The provided documentation outlines the technical specifications for the **Create Chat Completion** endpoint within the DeepSeek API, which enables developers to generate AI responses from a provided conversation history. By sending a **request body** containing a list of messages and choosing between models like **deepseek-chat** or **deepseek-reasoner**, users can fine-tune outputs using parameters such as **temperature**, **max_tokens**, and **thinking mode**. The text detailly describes how the API returns structured data, including **usage statistics** for token consumption and **finish reasons** that explain why a generation concluded. Additionally, the guide highlights advanced capabilities such as **tool calls** for function execution, **JSON output** formatting, and **streaming** for real-time delivery of partial message deltas."
 extraido_em: "2026-06-30T16:19:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Create Chat Completion - DeepSeek API Docs

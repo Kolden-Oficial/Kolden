@@ -9,6 +9,9 @@ keywords: "('Prompt engineering', 'OpenAI API', 'Model selection', 'Message role
 summary: "This comprehensive technical guide details how to master **prompt engineering** within the OpenAI API to generate high-quality text, code, and structured data. It outlines a strategic framework for developers, emphasizing the use of **message roles**—such as developer, user, and assistant—to establish clear authority and logic within a conversation. The documentation distinguishes between **GPT models**, which require explicit instructions, and **reasoning models**, which excel at complex planning through an internal chain of thought. Key optimization techniques highlighted include **few-shot learning** for pattern recognition, **retrieval-augmented generation (RAG)** for integrating external context, and the use of **structured outputs** to ensure data reliability. Ultimately, the text serves as a roadmap for transitioning from basic prompts to sophisticated, **agentic workflows** by leveraging precise formatting, version pinning, and rigorous evaluation."
 extraido_em: "2026-06-30T16:21:44Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Prompt engineering | OpenAI API - OpenAI Developers

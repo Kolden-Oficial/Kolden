@@ -9,6 +9,10 @@ keywords: "('Digital Marketing Services', 'Service Agreement Terms', 'Payment an
 summary: "This legal document is a **service agreement** established between TriStar Digital and Power Pilates e Fisioterapia for the provision of **digital marketing consultancy**. The contract outlines a comprehensive operational scope, ranging from **strategic sales funnels** and traffic management to specialized training for WhatsApp and Instagram. Financial terms specify a **six-month commitment** featuring a fixed monthly fee and an initial implementation charge, while strictly prohibiting unilateral termination during the primary term. Beyond the technical deliverables, the agreement emphasizes **data protection and confidentiality** in alignment with Brazilian law, ensuring that both intellectual property and personal information remain secure throughout and after the professional partnership."
 extraido_em: "2026-06-30T16:11:42Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Contrato Tristar - Modelo Rev 00.docx

@@ -9,6 +9,9 @@ keywords: "('HTTP API Reference', 'Model Predictions', 'Deployment Management', 
 summary: "This documentation serves as a comprehensive technical guide for the **Replicate HTTP API**, a service that enables developers to run, manage, and deploy **machine learning models** in the cloud. It outlines essential procedures for **authentication** using bearer tokens and provides detailed instructions for core operations such as **creating predictions**, fine-tuning models through **trainings**, and managing specialized **deployments** for production scale. The text organizes these features into logical categories—ranging from searching public model collections to configuring **webhooks** for real-time status updates—ensuring that users can efficiently integrate AI capabilities into their own applications. Ultimately, the source acts as a functional manual for interacting with Replicate's infrastructure, defining the specific **endpoints, request parameters, and hardware options** required to execute complex AI workloads."
 extraido_em: "2026-06-30T16:20:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # HTTP API - Replicate

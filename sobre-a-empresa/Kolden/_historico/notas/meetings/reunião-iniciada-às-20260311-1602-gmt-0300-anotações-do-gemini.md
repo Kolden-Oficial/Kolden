@@ -9,6 +9,9 @@ keywords: "('CRM platform presentation', 'Lead management automation', 'Sales fu
 summary: "This source contains a meeting summary and transcript detailing the introduction of the **Como CRM platform** to the Super Benefícios team by consultant Ronan Sersil. The session focuses on the system’s ability to centralize **lead management** by integrating communication channels like WhatsApp and Instagram into organized **sales pipelines** that track the customer journey. Key themes include the use of **automated follow-ups**, performance analytics to monitor salesperson efficiency, and the implementation of **AI agents** for lead qualification. Ultimately, the text serves as a **procedural guide** for the initial implementation phase, emphasizing that a structured CRM approach will optimize conversion rates and provide **strategic data** for future marketing decisions."
 extraido_em: "2026-06-30T16:24:44Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/11 16:02 GMT-03:00 - Anotações do Gemini

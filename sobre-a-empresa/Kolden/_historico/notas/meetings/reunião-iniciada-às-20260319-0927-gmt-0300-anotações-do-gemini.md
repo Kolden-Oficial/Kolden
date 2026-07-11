@@ -9,6 +9,9 @@ keywords: "('Business closure decision', 'Low delivery performance', 'High labor
 summary: "This document records a formal meeting held on March 19, 2026, to finalize the **termination of a business partnership** between a service provider, Coden, and the owners of a local pizza and burger establishment. The owners explain that despite effective marketing efforts, the business has become **economically unsustainable** due to excessive labor costs, low profit margins, and a delivery service that failed to gain sufficient traction. Throughout the discussion, both parties emphasize that the decision to **close the physical location** and \"pass the point\" is based on personal and financial viability rather than the quality of the services provided. The text outlines the **offboarding process**, which includes the disconnection of digital accounts and the settlement of remaining contractual obligations, while maintaining a tone of **mutual respect and professional excellence**. Ultimately, the source serves as a summary of a graceful business exit, highlighting the logistical challenges of the food industry and the importance of **clear communication during a transition**."
 extraido_em: "2026-06-30T16:24:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/19 09:27 GMT-03:00 - Anotações do Gemini

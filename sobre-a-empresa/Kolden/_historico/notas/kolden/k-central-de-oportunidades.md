@@ -9,6 +9,9 @@ keywords: "('Sales opportunity pipeline', 'Marketing service types', 'Revenue co
 summary: "This document functions as a **strategic sales pipeline and financial forecasting tool** designed to track lead acquisition and revenue potential for a marketing agency. The first section categorizes various **prospective clients and service models**, ranging from performance assessments to product launches, while qualifying leads based on their **relationship status and revenue potential**. Following this list, the text provides a **multi-year commission projection** that illustrates how incremental growth in average billings can scale monthly earnings. Ultimately, the data serves as a **business development roadmap**, quantifying the transition from initial outreach to long-term **financial sustainability through diverse revenue streams**."
 extraido_em: "2026-06-30T16:17:23Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # [K] Central de Oportunidades

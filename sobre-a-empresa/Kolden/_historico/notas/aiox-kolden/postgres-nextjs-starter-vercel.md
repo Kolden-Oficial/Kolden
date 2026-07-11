@@ -9,6 +9,9 @@ keywords: "('Next.js Starter', 'Postgres Database', 'Vercel Deployment', 'Applic
 summary: "This documentation provides a comprehensive overview of a **Postgres Next.js Starter**, a streamlined template designed to help developers quickly launch web applications using a **relational database**. The source outlines two primary paths for implementation: an immediate **one-click deployment** via Vercel or a manual setup involving **local environment configuration** and command-line tools. Beyond the specific technical instructions, the text highlights a vast ecosystem of **cloud infrastructure services**, including AI integration, security protocols, and specialized developer tools. Ultimately, this resource serves as a practical bridge between **front-end frameworks** and scalable backend storage, aimed at those who want to focus on shipping features rather than managing complex infrastructure."
 extraido_em: "2026-06-30T16:21:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Postgres Next.js Starter - Vercel

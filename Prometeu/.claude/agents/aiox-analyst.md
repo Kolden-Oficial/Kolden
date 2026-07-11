@@ -25,6 +25,11 @@ skills:
   - synapse:tasks:diagnose-synapse
   - tech-search
 color: cyan
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/prometeu-chief|prometeu-chief]]"
 ---
 
 # AIOX Analyst - Agente Autônomo

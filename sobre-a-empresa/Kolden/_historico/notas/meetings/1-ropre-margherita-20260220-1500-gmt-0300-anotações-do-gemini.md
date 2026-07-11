@@ -9,6 +9,9 @@ keywords: "('Ad Performance Analysis', 'WhatsApp Tracking Issues', 'Campaign Str
 summary: "This meeting summary documents a performance review of **digital marketing campaigns** conducted for Margherita Pizzeria between February 7th and 19th. The team analyzed successful outcomes, such as achieving a **follower acquisition cost below the R$ 1.00 goal**, while identifying a critical \"bottleneck\" in **tracking sales conversions** through the \"Anota Aí\" system and WhatsApp. To improve results, the participants agreed to **deactivate underperforming catalog ads**, refine automated messaging to avoid spamming customers, and **adjust ad scheduling** to account for Monday closures. Looking forward, the strategy shifts toward **geo-targeted campaigns for Alphaville** and implementing customer loyalty tools like Google review QR codes and **segmented promotions for birthdays and anniversaries**."
 extraido_em: "2026-06-30T16:23:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # 1° R.O.P.R.E - MARGHERITA - 2026/02/20 15:00 GMT-03:00 - Anotações do Gemini

@@ -9,6 +9,9 @@ keywords: "('Prompt Engineering', 'Clear Instructions', 'Complex Task Splitting'
 summary: "This comprehensive guide outlines the **six fundamental pillars** for optimizing interactions with large language models to ensure high-quality, reliable outputs. The text advocates for **precision in communication** by using specific instructions, role-playing, and delimiters to remove ambiguity, while also recommending the use of **reference materials** to ground the AI's responses in factual data. To manage sophisticated requests, the framework suggests **deconstructing complex tasks** into smaller steps and allowing the model sufficient **computational \"time\" to reason** through problems before finalizing an answer. Finally, the guide highlights the necessity of **integrating external tools** for technical accuracy and maintaining a **systematic evaluation process** to objectively measure the success of different prompting strategies."
 extraido_em: "2026-06-30T16:21:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # OpenAI Official Prompt Engineering Guide | Learn Prompt: Your CookBook to Communicating with AI

@@ -1,3 +1,9 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+---
+
 # Lista de prospecção corporativa — litoral catarinense
 
 **Regiões pagantes confirmadas pela Glória (2026-07-02):** Itajaí · Balneário Camboriú · Balneário Piçarras · Barra Velha · Penha · Itapema · Florianópolis · Navegantes.

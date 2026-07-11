@@ -24,6 +24,11 @@ skills:
   - coderabbit-review
   - checklist-runner
 color: red
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/prometeu-chief|prometeu-chief]]"
 ---
 
 # AIOX QA - Agente Autônomo

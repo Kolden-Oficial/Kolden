@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/docs/prd-omiron-app|prd-omiron-app]]"
+---
+
 # Proposta de Parceria Estratégica — Omiron
 **Kolden × Clínica Dr. Ariosto Filho**
 Data: 03/06/2026

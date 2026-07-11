@@ -9,6 +9,9 @@ keywords: "('Strategic Business Growth', 'Multi-channel Digital Marketing', 'Ope
 summary: "This meeting transcript details a consultation between the strategic consultancy **Coda** and a home renovation business owner looking to scale his company, **Brayan's Finish**, from a $30,000 to a **$100,000 monthly revenue**. The conversation identifies critical operational bottlenecks, specifically a **lack of administrative organization**, an over-reliance on Facebook ads, and significant financial losses stemming from **inaccurate pricing estimations**. To resolve these issues, the consultants propose a transition to a **multichannel marketing strategy** including Google SEO, the implementation of a **CRM for lead management**, and a customized spreadsheet to automate job costing. The meeting concludes with a commitment to develop a **staged, affordable strategic plan** that allows the owner to delegate operational tasks and focus on high-level growth."
 extraido_em: "2026-06-30T16:25:14Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/04/02 20:51 GMT-03:00 - Anotações do Gemini

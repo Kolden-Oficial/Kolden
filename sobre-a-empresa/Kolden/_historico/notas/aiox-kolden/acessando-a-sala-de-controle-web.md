@@ -9,6 +9,9 @@ keywords: "('Web Control Room', 'Dashboard Overview', 'Agent Management', 'Syste
 summary: "This tutorial serves as a bridge between the technical backend of a server and its **user-friendly visual interface**, guiding the user through the transition from terminal commands to a browser-based dashboard. By utilizing a **unique security token** generated during installation, the operator can unlock a \"control room\" that offers a comprehensive **overview of their AI agent's internal logic**. The interface provides transparency by allowing users to **monitor conversation histories, manage functional tools, and track operational costs** in real time. Ultimately, this text empowers the user to shift roles from a back-end engineer to a **strategic manager** who can oversee their automated operations with ease and precision."
 extraido_em: "2026-06-30T16:18:01Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Acessando a Sala de Controle Web

@@ -9,6 +9,9 @@ keywords: "('Lead quality optimization', 'Targeted marketing regions', 'Google W
 summary: "This meeting transcript outlines a strategic planning session between **Kaylon Teixeira**, a business owner in the construction sector, and his marketing and operations consultants, **Bernardo Pereira and Ronan Sersil**. The primary purpose of the discussion is to **optimize lead generation** by refining digital advertising campaigns to target high-income regions and specific high-value services like **metal garages and warehouse construction**. Beyond immediate marketing tactics, the conversation reveals a broader vision for **commercial restructuring**, including the transition of lead management into a centralized **CRM system**, the hiring and training of a new salesperson, and the automation of customer follow-ups via **Google Workspace**. The dialogue concludes with a long-term roadmap for **operational expansion**, detailing plans to integrate drywall and painting services into their current insulation business to create a **comprehensive construction ecosystem** and eventually pivot into real estate investment and property equity."
 extraido_em: "2026-06-30T16:25:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/04/18 15:56 GMT-03:00 - Anotações do Gemini

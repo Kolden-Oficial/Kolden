@@ -9,6 +9,10 @@ keywords: "('Visual Identity Design', 'Brand Positioning', 'Logo Symbolism', 'Ty
 summary: "This document presents a comprehensive **visual identity project** for Kolden, a business accelerator designed to drive growth through **customer lifetime value**. Created by designer Guilherme Asla, the presentation outlines a **strategic diagnosis** that defines the brand as bold, systemic, and authentic. The visual execution centers on a **symmetrical, modular logo** that represents an ecosystem, utilizing a high-contrast **palette of scarlet and bluish-white** to evoke a modern, \"electrifying\" energy. By detailing specific **typography choices and real-world mockups**, the source establishes a professional framework intended to position the client effectively across both digital and physical touchpoints."
 extraido_em: "2026-06-30T16:13:06Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/referencias-historicas/kolden-apresentacao-de-identidade-visualpdf-1|kolden-apresentacao-de-identidade-visualpdf-1]]"
 ---
 
 # KOLDEN - APRESENTAÇÃO DE IDENTIDADE VISUAL.pdf

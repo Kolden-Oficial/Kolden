@@ -9,6 +9,10 @@ keywords: "('Digital marketing services', 'Paid traffic management', 'Google sea
 summary: "This legal document serves as a **service agreement** between MAT3VIC Construction and a digital agency named Kolden to enhance the former's online visibility and lead generation. The partnership focuses on a comprehensive **digital marketing strategy**, encompassing paid traffic management, Google optimization, and the creation of specialized pricing tools. Under the terms, the client commits to an initial **three-month mandatory period** with a payment structure that increases from an introductory rate to a standard monthly fee. To ensure project success, the contract outlines **mutual obligations** regarding communication, confidentiality, and technical access, establishing a formal framework for professional accountability and performance reporting."
 extraido_em: "2026-06-30T16:07:42Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: mat3vic
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/mat3vic/_notebooklm/_indice|_indice]]"
 ---
 
 # Contrato_MAT3VIC_Kolden.pdf

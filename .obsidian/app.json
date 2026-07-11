@@ -1,0 +1,28 @@
+{
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": false,
+  "showUnsupportedFiles": true,
+  "showFrontmatter": true,
+  "attachmentFolderPath": "sobre-a-empresa/_anexos",
+  "userIgnoreFilters": [
+    ".git/",
+    ".claude/.estado/",
+    "node_modules/",
+    ".venv/",
+    "venv/",
+    "__pycache__/",
+    "dist/",
+    "build/",
+    ".next/",
+    "data/",
+    "s3_data/",
+    "redis_data/",
+    "lobehub/data/",
+    "Pheme/deploy/postiz/",
+    "sobre-a-empresa/Projetos/Ativos/nutrios-pro/app/",
+    "sobre-a-empresa/Projetos/Ativos/entresolos/",
+    "sobre-a-empresa/Projetos/Ativos/stass/oro-reglas-amparo/",
+    "sobre-a-empresa/Projetos/Ativos/vilela-construction/vilela-bright-space/"
+  ]
+}

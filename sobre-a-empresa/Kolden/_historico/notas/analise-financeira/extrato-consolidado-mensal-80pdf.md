@@ -9,6 +9,9 @@ keywords: "('Fraud prevention tips', 'Bank account summary', 'Monthly service pa
 summary: "This consolidated monthly bank statement from **Santander** provides a customer with a comprehensive overview of their financial status for **August 2024**, including account balances, service package usage, and broader **economic indices** like inflation and exchange rates. Beyond financial reporting, a major theme of the document is **fraud prevention**, offering detailed warnings against \"gift scams\" and emphasizing that the bank will never request sensitive data or app updates via unofficial links. By combining **transactional summaries** with critical **security protocols** and official contact channels, the source serves as both a fiscal record and a defensive guide to help the user maintain **account integrity**."
 extraido_em: "2026-06-30T16:26:46Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (80).pdf

@@ -9,6 +9,9 @@ keywords: "('Node.js installation', 'WSL 2 setup', 'Node Version Manager', 'Visu
 summary: "This technical guide provides a comprehensive framework for configuring a **Node.js development environment** specifically within the **Windows Subsystem for Linux (WSL 2)**. The text serves as a roadmap for developers, emphasizing the use of **version managers like nvm** to maintain flexibility across different project requirements and ensuring a consistent workflow between local coding and **Linux-based production servers**. Beyond core installation, the documentation highlights essential tools for an optimized experience, such as the **Windows Terminal** for interface management and **Visual Studio Code** paired with the **Remote-WSL extension**. By following these steps, users can bridge the gap between Windows hardware and Linux software, creating a high-performance workspace that leverages the strengths of both operating systems."
 extraido_em: "2026-06-30T16:20:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Install Node.js on Windows Subsystem for Linux (WSL2) - Microsoft Learn

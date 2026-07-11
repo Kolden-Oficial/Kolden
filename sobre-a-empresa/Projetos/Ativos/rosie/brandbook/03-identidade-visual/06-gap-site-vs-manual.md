@@ -7,6 +7,11 @@ palavras-chave: [brandbook, rosie, gap, auditoria, e-commerce, divergencia]
 status: rascunho
 atualizado-em: 2026-06-23
 relacionados: [01-cores, 02-tipografia, 00-marca-logotipo]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/00-indice|00-indice]]"
 ---
 
 # Gap: e-commerce atual × Manual de Marca

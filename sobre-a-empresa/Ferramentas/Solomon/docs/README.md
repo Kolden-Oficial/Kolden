@@ -1,3 +1,21 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/00-introducao|00-introducao]]"
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/01-quickstart|01-quickstart]]"
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/02-autenticacao|02-autenticacao]]"
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/03-eventos-conceitos|03-eventos-conceitos]]"
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/04-eventos-web|04-eventos-web]]"
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/05-eventos-mobile|05-eventos-mobile]]"
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/06-api-introducao|06-api-introducao]]"
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/07-api-ingestion-orders|07-api-ingestion-orders]]"
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/08-api-ingestion-products|08-api-ingestion-products]]"
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/09-store-orders|09-store-orders]]"
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/10-store-products|10-store-products]]"
+---
+
 # Documentação Solomon (docs oficial, PT-BR)
 
 Índice PT-BR da documentação oficial em https://docs.solomon.com.br, capturada e adaptada em 2026-07-01. O manual Kolden dessa ferramenta está em [`../ferramentas.md`](../ferramentas.md).

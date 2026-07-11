@@ -9,6 +9,10 @@ keywords: "('Paid traffic management', 'Digital marketing services', 'Financial 
 summary: "This document serves as a **formal service agreement** between a client and the agency Kolden for the specialized **management of paid digital advertisements**. The contract outlines a dual-payment structure where monthly management fees are kept distinct from the actual **capital investment allocated to advertising platforms**. With a total duration of six months, the agreement enforces a **ninety-day minimum commitment**, requiring full payment of that initial term even in the event of early cancellation. Furthermore, it explicitly excludes CRM integration from the current scope, though it mandates a **performance review after three months** to determine if additional technological tools are necessary to meet growth objectives."
 extraido_em: "2026-06-30T16:07:48Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/_notebooklm/_indice|_indice]]"
 ---
 
 # Contrato Kether.pdf

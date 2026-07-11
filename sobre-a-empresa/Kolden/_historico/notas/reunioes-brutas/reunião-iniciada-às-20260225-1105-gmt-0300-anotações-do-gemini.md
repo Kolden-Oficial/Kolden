@@ -9,6 +9,9 @@ keywords: "('Spreadsheet prototype development', 'Material pricing formulas', 'A
 summary: "During a collaborative meeting, Ronan Sersil and Kaylon Teixeira work to develop a **digital pricing prototype** specifically designed for a material installation business. The discussion revolves around the construction of a **multi-tabbed spreadsheet** that automates financial estimates by integrating variables such as **material types**, surface area, and thickness. A significant portion of the dialogue focuses on establishing precise **mathematical formulas** for insulation products like open and close-cell spray foam, while also accounting for **tax rates** and labor requirements. Ultimately, the project aims to transition from a manual calculation method to a **sophisticated application** that streamlines logistics by generating comprehensive project summaries and work orders."
 extraido_em: "2026-06-30T16:15:45Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/25 11:05 GMT-03:00 - Anotações do Gemini

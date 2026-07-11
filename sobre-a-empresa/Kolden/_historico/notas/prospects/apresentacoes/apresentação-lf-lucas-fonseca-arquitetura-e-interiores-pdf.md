@@ -9,6 +9,9 @@ keywords: "('Architectural design', 'Interior design', 'Brand identity', 'Visual
 summary: "This document serves as a formal **visual identity manual** for a professional design practice specializing in **architecture and interior spaces**. It outlines the structural elements of the brand, specifically focusing on the **geometric interplay** of the founder’s initials, \"L\" and \"F,\" to create a cohesive logo. By specifying **precise color codes** and typography from the **Ethos font family**, the guide ensures that the studio's aesthetic remains consistent across various media. Ultimately, the source provides a **foundational design framework** intended to communicate a sense of modern professionalism and **stylistic clarity** to the firm's clientele."
 extraido_em: "2026-06-30T16:10:37Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/_indice|_indice]]"
 ---
 
 # APRESENTAÇÃO LF LUCAS FONSECA  ARQUITETURA E INTERIORES .pdf

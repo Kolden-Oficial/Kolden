@@ -9,6 +9,9 @@ keywords: "('Strategic Marketing Multi-channel', 'Sales Funnel Optimization', 'B
 summary: "This meeting transcript documents an initial consultation between the consultancy firm **Coda** and **Brayan’s Finish**, a home renovation business seeking to scale its operations in the United States. The conversation centers on transitioning the client from a disorganized, **Meta-focused marketing** approach to a sophisticated **multichannel strategy** that includes Google SEO and automated sales funnels. A significant portion of the dialogue addresses critical operational bottlenecks, specifically the need for a **standardized pricing spreadsheet** to prevent financial losses and a **CRM system** to manage lead follow-ups. Ultimately, the text serves as a diagnostic roadmap intended to move the business toward a **$100,000 monthly revenue goal** by delegating administrative tasks and professionalizing its digital presence."
 extraido_em: "2026-06-30T16:25:10Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/04/02 20:51 GMT-03:00 - Anotações do Gemini

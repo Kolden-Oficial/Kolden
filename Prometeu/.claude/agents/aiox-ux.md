@@ -23,6 +23,11 @@ skills:
   - synapse:tasks:diagnose-synapse
   - checklist-runner
 color: purple
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/prometeu-chief|prometeu-chief]]"
 ---
 
 # AIOX UX Design Expert - Agente Autônomo

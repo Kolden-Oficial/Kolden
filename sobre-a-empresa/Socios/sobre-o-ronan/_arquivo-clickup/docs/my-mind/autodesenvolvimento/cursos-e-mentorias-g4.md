@@ -8,6 +8,9 @@ author_ids: [60963240]
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-42933/
 extracted_at: 2026-06-30
 nota: "Conteúdo do programa 'A MENTE EMPREENDEDORA' (curso G4 Educação cursado pelo Ronan em fev/2024). Estrutura: Podcasts + Documentários + Livros + Filmes."
+tipo: nota
+area: socios
+up: "[[sobre-a-empresa/Socios/_MOC-socios]]"
 ---
 
 # Cursos & Mentorias — G4 Formação em Novos Negócios

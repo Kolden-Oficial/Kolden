@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Pactolo
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Pactolo/agents/pactolo-chief|pactolo-chief]]"
+---
+
 # Controller
 
 > Especialista tier 1 do squad Pactolo. Dono do **fechamento contábil**: lançamentos, reconciliação,

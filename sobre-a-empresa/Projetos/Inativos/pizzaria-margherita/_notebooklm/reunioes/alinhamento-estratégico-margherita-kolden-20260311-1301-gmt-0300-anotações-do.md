@@ -9,6 +9,11 @@ keywords: "('Midweek delivery strategy', 'Product profit margins', 'Traditional 
 summary: "The meeting notes detail a **strategic alignment** between the Margherita & Kolden team to boost revenue during the slower **mid-week period** of Tuesday through Thursday. To avoid the operational overhead and staffing costs of a crowded physical storefront, the team decided to shift their focus toward a **delivery-centric promotion** rather than attracting in-person diners. The primary tactic involves offering **discounts on high-margin items**, specifically traditional \"podrão\" burgers and select pizzas, potentially utilizing **trackable coupons** to monitor campaign effectiveness. Ultimately, the stakeholders aim to **optimize sales volume** without increasing labor expenses, leaving the final selection of specific promotional items for immediate internal review."
 extraido_em: "2026-06-30T16:10:45Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/reunioes/1-ropre-margherita-20260220-1500-gmt-0300-anotações-do-gemini|1-ropre-margherita-20260220-1500-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/reunioes/kolden-margherita-kick-off-20260206-0803-gmt-0300-anotações-do-gemini|kolden-margherita-kick-off-20260206-0803-gmt-0300-anotações-do-gemini]]"
 ---
 
 # Alinhamento Estratégico | Margherita & Kolden - 2026/03/11 13:01 GMT-03:00 - Anotações do Gemini

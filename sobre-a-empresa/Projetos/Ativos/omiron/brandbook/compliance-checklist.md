@@ -9,6 +9,11 @@ autor: Nomos (compliance) — Kolden
 missao: m-20260706-193013-omiron-brandbook-completo
 onda: 3
 relacionados: [00-indice, 01-posicionamento, 02-voz-da-marca, 03-identidade-visual, 04-aplicacoes, 05-manual-operacional, narrativa/manifesto, narrativa/pilares, narrativa/mentor-quiron, narrativa/onboarding-copy, narrativa/alternativa-marco-aurelio]
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/00-indice|00-indice]]"
 ---
 
 # Compliance Checklist — Brandbook Omiron

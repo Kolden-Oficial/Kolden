@@ -9,6 +9,13 @@ keywords: "('Facebook Account Credentials', 'Email Recovery Data', 'Browser Cook
 summary: "This document serves as a comprehensive **digital identity package** containing the necessary credentials to seize or restore control of a nine-year-old Brazilian social media profile. It begins with clear-text **authentication data**, including specific usernames, passwords, and recovery emails for Facebook and Outlook, alongside a **2FA secret key** for generating time-based security codes. The remainder of the file consists of an extensive collection of **browser cookies** formatted as JSON, which store active session states and tracking identifiers for platforms like Microsoft, Instagram, and Shopee. By providing both static login details and dynamic **session tokens**, the source allows for an immediate bypass of standard security protocols to access a pre-existing **online presence**."
 extraido_em: "2026-06-30T16:14:02Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: identidade
+up: "[[sobre-a-empresa/Kolden/identidade/_MOC-identidade]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/identidade/organograma|organograma]]"
+  - "[[sobre-a-empresa/Kolden/identidade/historia|história]]"
+  - "[[sobre-a-empresa/Kolden/identidade/missao-visao-valores|missão-visão-valores]]"
+  - "[[sobre-a-empresa/Kolden/identidade/visao-geral|visão geral]]"
 ---
 
 # Perfil Kolden - 9 Anos

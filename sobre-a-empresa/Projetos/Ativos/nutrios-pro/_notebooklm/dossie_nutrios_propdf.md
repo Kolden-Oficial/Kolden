@@ -9,6 +9,10 @@ keywords: "('Nutritional clinical management', 'Anthropometric assessment protoc
 summary: "The NutriOS Pro technical dossier describes a **comprehensive SaaS platform** designed to modernize clinical nutrition management by centralizing patient data, physical assessments, and dietary planning into a single web application. This \"operating system\" for nutritionists utilizes **integrated artificial intelligence** for advanced tasks such as scanning food labels, analyzing lab exams, and estimating body composition from photos. Structurally, the system is built on a **robust technical architecture** involving React, Supabase, and strict security protocols like Role-Based Access Control and Row-Level Security to ensure data privacy. By automating complex caloric calculations and offering professional PDF exports, the software serves the primary purpose of **replacing manual spreadsheets** with a professional, end-to-end digital workflow for individual patient care."
 extraido_em: "2026-06-30T16:08:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # dossie_nutrios_pro.pdf

@@ -9,6 +9,10 @@ keywords: "('MVP software development', 'Nutritional assessment features', 'User
 summary: "The source documents a strategic meeting between developer Ronan Sersil and nutritionist Susan Carolina regarding the development of an **all-in-one software ecosystem** designed to streamline clinical nutrition practices. Currently in its **Minimum Viable Product (MVP)** stage, the platform aims to centralize patient data, meal planning, and anthropometric assessments while utilizing **artificial intelligence** to enhance body composition analysis and nutritional tracking. During the session, the nutritionist provides essential technical feedback, emphasizing the integration of **bioimpedance data**, expanded body circumference measurements, and specialized diet templates for clinical populations. Ultimately, the project is framed as a **value-driven business tool** intended to help professionals increase their revenue by offering a more personalized, visually sophisticated service to their clients."
 extraido_em: "2026-06-30T16:08:47Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # 02 | Kolden & NutriCalc | Alinhamento do Projeto

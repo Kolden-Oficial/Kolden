@@ -6,6 +6,9 @@ segmento: "Saúde / hipnose e psicoterapia"
 status: "ativo"
 drive_folder_id: "17daZGvfYyX9qzUVYslknOn2fL0dSBCdq"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: instituto-saulo-mendes
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Instituto Saulo Mendes Hipnose & Psicoterapia

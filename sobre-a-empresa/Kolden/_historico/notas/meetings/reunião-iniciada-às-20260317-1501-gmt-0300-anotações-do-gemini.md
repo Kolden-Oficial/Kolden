@@ -9,6 +9,9 @@ keywords: "('Lead management alignment', 'Data privacy concerns', 'Pipeline poll
 summary: "This meeting record outlines a strategic alignment focused on **optimizing lead management** and resolving significant **data privacy concerns** within a digital sales platform. The team addressed the \"pollution\" of their pipeline caused by the initial synchronization of WhatsApp, which mixed **sensitive non-commercial conversations** with active marketing leads. To remedy this, the platform will implement **individual sales funnels** for each employee to ensure they only view their specific interactions, while establishing a **clear distinction between organic messages and paid traffic campaigns**. Moving forward, the technical lead and management plan to develop a **standardized pipeline structure** and enforce rigorous visibility restrictions to maintain departmental segregation and data integrity."
 extraido_em: "2026-06-30T16:24:54Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/17 15:01 GMT-03:00 - Anotações do Gemini

@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/mcp-solomon/README|README]]"
+---
+
 # PRD — MCP Íris *(a confirmar)* · servidor Solomon para agentes Kolden
 
 | Campo | Valor |

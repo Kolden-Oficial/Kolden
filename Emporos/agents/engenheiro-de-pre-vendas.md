@@ -12,6 +12,11 @@ agente_dono: emporos-chief
 heranca_historica: [demo2win, mastering-technical-sales]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G18)
 status: semente
+tipo: agente
+squad: Emporos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Emporos/agents/emporos-chief|emporos-chief]]"
 ---
 
 # Engenheiro de Pré-Vendas

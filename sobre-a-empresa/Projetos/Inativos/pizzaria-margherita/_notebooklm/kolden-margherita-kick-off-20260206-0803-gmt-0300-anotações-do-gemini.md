@@ -9,6 +9,10 @@ keywords: "('Monthly revenue goals', 'Delivery process optimization', 'Profit ma
 summary: "This meeting transcript outlines a strategic **kick-off session** for a pizzeria aiming to scale its monthly revenue to **R$ 100,000** through a rigorous \"management shock.\" Led by consultant Ronan Sersil, the discussion focuses on transitioning the business from a \"survival model\" to a high-performance operation by addressing **operational bottlenecks** such as passive delivery methods and high ingredient costs. The plan prioritizes **profit margin over volume**, leveraging the brand's unique **wood-fired oven and natural fermentation** to differentiate it from industrial competitors. Key future actions include a **digital marketing offensive** using high-quality \"food porn\" visuals and a targeted expansion into the **premium market** of luxury condominiums. Ultimately, the partnership seeks to professionalize the management of the restaurant by **reducing procurement costs** and removing owners from daily tactical tasks so they can focus on long-term growth."
 extraido_em: "2026-06-30T16:09:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/_indice|_indice]]"
 ---
 
 # Kolden & Margherita | Kick-Off - 2026/02/06 08:03 GMT-03:00 - Anotações do Gemini

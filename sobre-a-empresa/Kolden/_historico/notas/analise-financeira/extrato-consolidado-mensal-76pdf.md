@@ -9,6 +9,9 @@ keywords: "('Fraud prevention', 'Bank services summary', 'Customer support chann
 summary: "This monthly bank statement for April 2024 serves as both a financial summary and a critical safety guide for a specific account holder. The document opens and closes with urgent **security warnings against social engineering**, specifically highlighting the \"gift scam\" where fraudsters use damaged card readers to overcharge unsuspecting victims. Between these alerts, the text outlines the user's **account activity and service fees**, while providing a comprehensive table of **national economic indicators** like inflation rates and currency valuations. Ultimately, the source functions as a multi-purpose communication designed to help the client **manage their personal finances** while remaining vigilant against evolving digital and physical threats."
 extraido_em: "2026-06-30T16:26:44Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (76).pdf

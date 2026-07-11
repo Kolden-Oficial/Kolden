@@ -7,6 +7,16 @@ palavras-chave: [design-system, tom-visual, principios, moodboard, atributos, es
 status: vigente
 atualizado-em: 2026-06-22
 relacionados: [ds-leia-me, ds-cores, ds-tipografia, voz-e-tom, identidade-visual]
+tipo: nota
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tipografia|tipografia]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/cores|cores]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/leia-me|design system]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/grafismos-e-auxiliares|grafismos]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/logo|logo]]"
+  - "[[sobre-a-empresa/Kolden/identidade/missao-visao-valores|missão-visão-valores]]"
 ---
 
 # Tom visual

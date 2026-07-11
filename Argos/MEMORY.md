@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Argos
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Argos/agents/argos-chief|argos-chief]]"
+---
+
 # Memória do Squad Argos
 
 > Auto-aprendizado do squad de Inteligência de Mercado & Scraping. Atualizado pelo

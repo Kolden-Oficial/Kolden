@@ -9,6 +9,10 @@ keywords: "('Visual Hierarchy', 'Design System', 'Component Inventory', 'Interfa
 summary: "This technical document serves as a comprehensive **system design blueprint** for constructing a financial education landing page focused on a Canadian seminar series. It outlines a detailed **visual and strategic hierarchy** that prioritizes immediate conversion through a \"hero\" section followed by stages of emotional validation, method previews, and logistical details. The design utilizes a **warm yet authoritative color palette**—combining deep midnight blue with earthy gold and terracotta—to foster a sense of communal trust and financial reliability. Technical specifications ensure **responsiveness and accessibility**, employing specific typography and grid layouts to maintain a professional user experience across all devices. Ultimately, the guide functions as a **complete implementation roadmap**, integrating performance metrics and tracking events to optimize the visitor's journey from initial identification to final registration."
 extraido_em: "2026-06-30T16:28:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/_indice|_indice]]"
 ---
 
 # 07 — System Design da Página

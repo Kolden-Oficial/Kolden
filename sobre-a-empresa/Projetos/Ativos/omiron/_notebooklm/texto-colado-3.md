@@ -9,6 +9,10 @@ keywords: "('Dr. Ariosto Ribeiro', 'Psychiatric Medical Services', 'Specialized 
 summary: "This source presents a comprehensive professional profile and **public reputation** of Dr. Ariosto Ribeiro, a psychiatrist based in Belo Horizonte. It balances **clinical credentials**, such as his specialization in mood disorders and chemical dependency, with a vast collection of **glowing patient testimonials** that highlight his expertise in treating conditions like depression and ADHD. The central theme of the text is the **humanized approach** to mental health, with recurring praise for his \"active listening,\" thorough diagnostic process, and ability to provide a safe, non-judgmental environment. Ultimately, the document serves as a powerful **testament to medical excellence**, illustrating a practice where technical precision and deep empathy intersect to foster patient recovery."
 extraido_em: "2026-06-30T16:07:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

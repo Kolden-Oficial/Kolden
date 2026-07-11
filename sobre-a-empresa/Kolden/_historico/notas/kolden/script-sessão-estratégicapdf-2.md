@@ -9,6 +9,9 @@ keywords: "('Legal marketing strategy', 'Lead generation funnel', 'Digital posit
 summary: "This presentation script serves as a persuasive sales framework designed to transition legal professionals from a passive reliance on referrals to a proactive, **strategic growth mindset**. The core methodology revolves around aligning three critical pillars—**marketing, positioning, and sales**—to overcome modern challenges such as market saturation and rising advertising costs. By utilizing a **validated digital funnel** that includes segmented Google or Meta ads, specialized landing pages, and **automated lead management** through CRM tools, the system aims to provide law firms with a predictable stream of new clients. Ultimately, the text functions as a high-conversion pitch for the **Octus Growth services**, offering tiered implementation plans that automate the client acquisition process and professionalize the firm’s commercial department."
 extraido_em: "2026-06-30T16:16:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Script Sessão Estratégica.pdf

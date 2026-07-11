@@ -9,6 +9,12 @@ status: oficial
 versao: "0.1.0"
 atualizado-em: 2026-06-30
 ocorrencias: 1   # 1ª instância: brasileirosemwoburnma
+tipo: nota
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/tarefas/playbooks/cerebro-notebooklm|cerebro-notebooklm]]"
+  - "[[sobre-a-empresa/Kolden/operacao/tarefas/playbooks/checklist-de-contrato|checklist-de-contrato]]"
 ---
 
 # Playbook — Prospecção em grupo Facebook (público)

@@ -9,6 +9,9 @@ keywords: "('Bank Statement Summary', 'Automatic Debit Authorization', 'Personal
 summary: "This document is a **consolidated monthly bank statement** from November 2018 for a **Santander Universidades** account holder named Ronan Sergio Silva. The report begins with an important notice regarding **security and control**, informing the client that new **automatic debit authorizations** now require explicit user approval via digital channels. The core of the text provides a detailed **financial overview**, including a summary of credits, withdrawals, and the **ending balance**, alongside a ledger of specific transactions and an analysis of **overdraft credit limits**. Furthermore, the statement serves as an informational guide, outlining the features of the user's **university service package**, promoting digital banking tools, and advertising **capitalization bonds** as a savings and sweepstakes opportunity."
 extraido_em: "2026-06-30T16:26:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (8).pdf

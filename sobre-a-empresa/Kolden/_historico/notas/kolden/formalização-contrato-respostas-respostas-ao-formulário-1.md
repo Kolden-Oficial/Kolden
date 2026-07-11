@@ -9,6 +9,9 @@ keywords: "('Contract Formalization', 'Client Personal Data', 'Business Informat
 summary: "This document functions as a structured **digital ledger** designed to organize and store **client intake information** for the purpose of formalizing service agreements. It captures a comprehensive range of **identifying data**, including personal tax IDs, legal business titles, and precise geographical locations for each participant. By consolidating **contact channels** for financial and marketing departments alongside preferred **billing cycles**, the record streamlines the administrative transition from a lead to a contracted partner. Ultimately, the table serves as a **centralized database** that ensures all necessary professional details are synchronized for efficient account management and legal compliance."
 extraido_em: "2026-06-30T16:12:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Formalização Contrato (respostas) - Respostas ao formulário 1

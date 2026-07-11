@@ -9,6 +9,9 @@ keywords: "('LLM Observability Tools', 'Performance Monitoring Metrics', 'Agenti
 summary: "This text serves as a comprehensive guide to **LLM observability**, a technical practice essential for monitoring and refining the behavior of complex artificial intelligence applications. It begins by defining the field as a necessary means of gaining **continuous visibility** into the probabilistic reasoning and multi-step workflows of language models, which are otherwise difficult to inspect. The source highlights a diverse **landscape of specialized tools**—such as Weights & Biases, LangSmith, and Langfuse—each offering unique features for **tracking latency, cost, and response quality**. By analyzing core metrics and adopting **autonomous monitoring systems**, developers can effectively troubleshoot errors, optimize performance, and ensure **safety and compliance** across large-scale deployments. Ultimately, the article positions these observability frameworks as the backbone of **reliable AI operations**, particularly as the industry shifts toward more intricate, autonomous agentic workflows."
 extraido_em: "2026-06-30T16:20:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # LLM Observability Tools: Weights & Biases, Langsmith - AIMultiple

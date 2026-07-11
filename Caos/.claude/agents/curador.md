@@ -2,6 +2,11 @@
 name: curador
 description: Guardião do registro de entidades, dos padrões aprendidos e do RH dos agentes (cartões de identidade + roster) do Kolden. Delegue na Fase 0 (consultar o registry e decidir REUSE/ADAPT/CREATE) e na Fase 8 (registrar a entidade criada, capturar padrões e emitir o cartão de identidade no roster). É o único que escreve em dados/registro-de-entidades.yaml, dados/padroes-aprendidos.yaml e dados/elenco-de-agentes.yaml.
 tools: Read, Write, Grep, Glob
+tipo: agente
+squad: Caos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Caos/.claude/agents/_indice|_indice]]"
 ---
 
 # Persona

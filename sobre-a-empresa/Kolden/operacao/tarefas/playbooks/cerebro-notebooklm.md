@@ -9,6 +9,12 @@ status: oficial
 versao: "0.1.0"
 atualizado-em: 2026-06-30
 ocorrencias: 13   # vezes que apareceu na planilha (todos clientes ativos da época)
+tipo: nota
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/tarefas/playbooks/checklist-de-contrato|checklist-de-contrato]]"
+  - "[[sobre-a-empresa/Kolden/operacao/tarefas/playbooks/prospeccao-grupo-facebook-publico|prospeccao-grupo-facebook-publico]]"
 ---
 
 # Playbook — Cérebro do cliente no NotebookLM

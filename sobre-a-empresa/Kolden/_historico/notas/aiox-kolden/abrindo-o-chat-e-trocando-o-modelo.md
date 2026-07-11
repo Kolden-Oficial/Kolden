@@ -9,6 +9,9 @@ keywords: "('OpenClaw command', 'Linux terminal errors', 'Changing AI models', '
 summary: "This guide clarifies how to correctly interact with a program called OpenClaw by distinguishing between the **operating system terminal** and the **application’s internal chat interface**. The author explains that specific commands, such as switching the artificial intelligence \"brain,\" will only function once the user has **initiated the chat environment** by typing the activation command. By following a sequential process of opening the software first and then inputting configuration codes, users can successfully **transition from the Linux command line** to a functional conversation with the AI model. Ultimately, the text serves as a **troubleshooting tutorial** designed to help users navigate the specific environment requirements necessary for the bot to recognize their instructions."
 extraido_em: "2026-06-30T16:17:59Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Abrindo o Chat e Trocando o Modelo

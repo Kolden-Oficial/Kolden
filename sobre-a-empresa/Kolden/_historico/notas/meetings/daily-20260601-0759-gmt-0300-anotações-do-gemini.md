@@ -9,6 +9,9 @@ keywords: "('Strategic talent hiring', 'Operational process alignment', 'Active 
 summary: "The provided source consists of a meeting transcript and summary documenting a **strategic daily sync** for a digital services team focused on **scaling business operations** and improving lead acquisition. The primary structural aim of the meeting is the **delegation of operational tasks**, including the potential hiring of a versatile professional named Susana to manage administrative burdens like social media, customer success, and automation. Key themes center on a **volume-based sales strategy**, where the team prioritizes high-frequency active prospecting and **Google Ads auditing** over immediate procedural perfection to ensure consistent growth. Ultimately, the text serves as a roadmap for **individual accountability**, assigning specific technical, commercial, and creative deadlines to ensure the group hits its aggressive client acquisition targets."
 extraido_em: "2026-06-30T16:23:28Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Daily - 2026/06/01 07:59 GMT-03:00 - Anotações do Gemini

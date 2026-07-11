@@ -9,6 +9,10 @@ keywords: "('Digital Asset Management', 'Creative Cloud Integration', 'Adobe Ass
 summary: "This documentation serves as a comprehensive guide for **integrating Adobe Experience Manager (AEM) Assets with Creative Cloud** to optimize the workflow between designers and marketing teams. The text prioritizes two primary tools: **Adobe Asset Link**, which allows creatives to manage DAM assets directly within Photoshop or InDesign, and the **Experience Manager desktop app**, which provides a local network share for various file types. By defining specific **asset lifecycles**, the source advises users to only store **creative-ready or final assets** in the DAM to maintain system performance and a clean version history. Ultimately, these **best practices** aim to streamline collaboration by reducing manual uploads and ensuring that **work-in-progress tasks** are handled efficiently before being shared with the broader organization."
 extraido_em: "2026-06-30T16:10:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # Adobe Experience Manager and Creative Cloud integration best practices

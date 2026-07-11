@@ -9,6 +9,9 @@ keywords: "('Social media communication', 'Personal branding goals', 'Target aud
 summary: "This document functions as a **strategic branding questionnaire** designed to define a professional’s unique voice and presence on social media. By collecting detailed responses on personality traits, preferred linguistic styles, and core values, the data seeks to establish a **cohesive communication framework** that balances personal authenticity with audience expectations. The survey identifies specific **target demographics and emotional objectives**, such as fostering female empowerment or providing holistic mental clarity, to ensure content remains purposeful. Ultimately, these records serve as a roadmap for **intentional community building**, transforming individual identity into a recognizable and authoritative digital brand."
 extraido_em: "2026-06-30T16:12:05Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Direcionamento de Comunicação para Redes Sociais (respostas) - Respostas ao formulário 1

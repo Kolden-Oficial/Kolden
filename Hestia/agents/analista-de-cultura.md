@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Hestia
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Hestia/agents/hestia-chief|hestia-chief]]"
+---
+
 # Analista de Cultura
 
 > Especialista tier 1 do squad Héstia. Dono da frente **cultura**: clima, engajamento e a saúde da

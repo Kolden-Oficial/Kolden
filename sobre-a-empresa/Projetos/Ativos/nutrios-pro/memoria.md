@@ -6,6 +6,11 @@ categoria: projeto
 status: oficial
 atualizado-em: 2026-07-03
 relacionados: [leia-me, status, decisoes]
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/dossie|dossie]]"
 ---
 
 # Memória do Agente — NutriOS Pro

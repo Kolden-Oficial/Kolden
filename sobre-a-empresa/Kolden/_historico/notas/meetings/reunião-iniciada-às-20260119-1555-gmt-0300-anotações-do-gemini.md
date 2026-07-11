@@ -9,6 +9,9 @@ keywords: "('Marketing Strategy Optimization', 'Lead Management CRM', 'Business 
 summary: "The provided text summarizes a strategic consultation between **Ronan Sersil** of the growth management firm **Coden** and **Kaylon Teixeira**, the owner of a specialized **spray foam insulation business** in the United States. The conversation identifies critical **operational bottlenecks**, such as inefficient digital marketing on Google and Facebook, a lack of **lead management automation**, and the owner’s struggle to balance administrative tasks with field work. To address these challenges, the advisors propose implementing a **CRM system**, optimizing ad performance through **data tracking**, and streamlining the **pricing and scheduling processes** to ensure sustainable growth. The document concludes with a commitment to present a **formal business proposal** designed to stabilize the company's revenue and scale its operations through **strategic process implementation**."
 extraido_em: "2026-06-30T16:24:20Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/19 15:55 GMT-03:00 - Anotações do Gemini

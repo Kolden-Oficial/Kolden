@@ -6,6 +6,10 @@ total_tasks_visiveis: 145
 status_extracao: "amostra das 2 primeiras páginas (paginar para mais)"
 extracted_at: 2026-06-30
 nota: "Two maior valor: (1) framework de 7 fases de criação de funil (Mar→Scale) com tasks granulares; (2) taxonomia 'Departamentos Global' de operações de marketing."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/INDEX|INDEX]]"
 ---
 
 # Tasks — Space Kolden

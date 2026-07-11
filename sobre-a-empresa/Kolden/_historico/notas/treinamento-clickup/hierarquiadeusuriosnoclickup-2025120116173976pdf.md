@@ -9,6 +9,9 @@ keywords: "('ClickUp User Hierarchy', 'Workspace Access Levels', 'Roles and Perm
 summary: "The document outlines the **five-tier user hierarchy** within ClickUp, detailing the specific **permissions and access levels** granted to different types of collaborators. At the top, the **Owner and Admins** hold supreme authority over billing, security, and workspace settings, ensuring overall platform governance. Standard **Members and Limited Members** handle the core day-to-day work, with the latter being restricted to specific shared areas for focused internal collaboration. Finally, the system distinguishes **external Guests**, such as clients or freelancers, by strictly limiting their visibility to individual tasks or docs without granting them access to broader company spaces."
 extraido_em: "2026-06-30T16:28:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/_indice|_indice]]"
 ---
 
 # HierarquiadeUsuriosnoClickUp-2025120116173976.pdf

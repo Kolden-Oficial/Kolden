@@ -9,6 +9,9 @@ keywords: "('Monthly bank statement', 'Financial management tools', 'Personal cr
 summary: "This document is a **consolidated monthly bank statement** from Santander Universities, detailing the financial activity of a client named Ronan for October 2019. It begins by introducing digital tools designed to enhance **financial management and budgeting**, specifically highlighting the \"Meu Bolso\" feature within the bank's mobile application. The core of the text provides a comprehensive breakdown of **account balances, transactions, and credit limits**, alongside descriptions of specialized banking products such as the \"Santander Master\" overdraft facility and various loan options. Furthermore, the source includes **supplementary economic data**, information on university-specific service packages, and promotional offers aimed at encouraging **consistent savings habits** and the adoption of contactless payment technologies."
 extraido_em: "2026-06-30T16:25:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (21).pdf

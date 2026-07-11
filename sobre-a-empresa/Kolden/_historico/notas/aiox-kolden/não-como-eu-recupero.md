@@ -9,6 +9,9 @@ keywords: "('ERR_CONNECTION_REFUSED error', 'OpenClaw Gateway recovery', 'Linux 
 summary: "This guide provides a technical walkthrough for troubleshooting a **connectivity error** in the OpenClaw software, specifically addressing the failure of a local server to respond to a browser request. The text frames the issue as a **manual restart process**, explaining that the \"Gateway\" or visual interface likely shut down when the user previously closed terminal processes. To restore the system, the author outlines a two-step recovery method: using a **force command to reboot the server** and generating a **fresh access token** if the session has expired. Ultimately, the purpose of the text is to demystify a common software crash by using **relatable analogies**, such as turning a circuit breaker back on, to help the user regain access to their control dashboard."
 extraido_em: "2026-06-30T16:21:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Não, como eu recupero?

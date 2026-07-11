@@ -9,6 +9,9 @@ keywords: "('Action plan development', 'Platform access collection', 'Target aud
 summary: "This document contains the detailed minutes and transcript of a strategic kickoff meeting led by **Ronan Sersil**, who is coordinating a marketing project for a **pizzeria** managed by Marcia Lima and Leidiane Alves Gonçalves. The primary focus of the discussion is the **collection of digital access credentials** for platforms like Facebook, Instagram, and iFood to create a centralized database and conduct a **comprehensive performance diagnostic**. Key operational challenges are identified, specifically the need to **recover old social media accounts** to avoid the advertising restrictions associated with creating new profiles. Beyond logistics, the conversation explores growth initiatives such as **multichannel advertising**, customer loyalty programs linked to **anniversary rewards**, and strategies to attract a **higher-income target audience** while filtering out problematic patrons. Ultimately, the text serves as a roadmap for a **90-day action plan** aimed at increasing the establishment's local visibility and professionalizing its digital presence through a **collaborative partnership**."
 extraido_em: "2026-06-30T16:24:24Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/29 12:58 GMT-03:00 - Anotações do Gemini

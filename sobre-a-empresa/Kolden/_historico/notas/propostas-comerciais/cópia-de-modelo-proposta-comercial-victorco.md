@@ -9,6 +9,9 @@ keywords: "('Performance Marketing', 'Growth Assessment', 'SWOT Analysis', 'Paid
 summary: "This commercial proposal from **Victor&Co** outlines a comprehensive **performance marketing** strategy designed to boost business growth through a systematic, **cyclical methodology**. The document transitions from establishing the firm's credibility—highlighting past success with major brands like Spotify and iFood—to detailing a structured **four-step roadmap** involving technical implementation, metric stabilization, and eventual scaling. Rather than using a traditional sales funnel, the agency utilizes a **non-linear approach** focused on continuous engagement, acquisition, and retention. Ultimately, the text serves as a **technical blueprint** for potential partners, offering tiered service packages that range from **paid media management** and creative production to specialized **growth consultancy**."
 extraido_em: "2026-06-30T16:12:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # Cópia de Modelo Proposta Comercial - Victor&Co

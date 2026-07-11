@@ -9,6 +9,9 @@ keywords: "('Claude Sonnet 3.7', 'Anthropic API Key', 'TypingMind Configuration'
 summary: "This guide serves as a technical walkthrough for integrating **Claude Sonnet 3.7** into the **TypingMind** interface by utilizing a personal **Anthropic API key**. It outlines a **pay-as-you-go** model that bypasses traditional subscriptions, allowing users to maintain **data privacy** through local storage while accessing advanced features like **complex reasoning and tool use**. The text is structured to lead the reader through the **setup process**, from generating secure credentials to configuring custom model settings, ultimately highlighting the flexibility of switching between various high-performance AI models. Underpinning these instructions is the broader purpose of creating a **customized AI workspace** that offers more control and lower costs than standard chat platforms."
 extraido_em: "2026-06-30T16:19:20Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Connect and use Claude Sonnet 3.7 from Anthropic with API Key | TypingMind

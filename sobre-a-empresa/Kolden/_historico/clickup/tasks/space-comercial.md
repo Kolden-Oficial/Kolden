@@ -5,6 +5,10 @@ clickup_space_nome: "Comercial"
 total_tasks: 1
 extracted_at: 2026-06-30
 nota: "Space praticamente vazio — apenas 1 task de teste."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/INDEX|INDEX]]"
 ---
 
 # Tasks — Space Comercial

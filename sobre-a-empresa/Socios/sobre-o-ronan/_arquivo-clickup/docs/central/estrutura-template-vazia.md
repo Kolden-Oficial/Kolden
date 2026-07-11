@@ -4,6 +4,11 @@ clickup_doc_nome: "Central"
 path_clickup: "Central/(estrutura completa)"
 extracted_at: 2026-06-30
 nota: "Mapa das 13 páginas vazias do doc Central (rotina pessoal do Ronan). Conteúdo real só na semana 04/12/2023 (quadros Kolden + HISET) — extraído em arquivo separado."
+tipo: nota
+area: socios
+up: "[[sobre-a-empresa/Socios/_MOC-socios]]"
+relacionado:
+  - "[[sobre-a-empresa/Socios/sobre-o-ronan/_arquivo-clickup/docs/central/2023-12-04-segunda-prioridades|2023-12-04-segunda-prioridades]]"
 ---
 
 # Central — Estrutura template vazia

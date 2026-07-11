@@ -6,6 +6,15 @@ autor: Aglaia/archetype-consultant
 destino: marca/voz-e-tom.md (após ratificação)
 arquetipo-base: Mago × Fora-da-lei (provisório, ver F3-01)
 relacionados: [01-auditoria-integrada.md, design-system/01-fundamentos/tom-visual.md, voz-e-tom.md]
+tipo: nota
+area: iniciativas
+up: "[[sobre-a-empresa/Kolden/iniciativas/_MOC-iniciativas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/arquetipo|arquetipo]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/identity-prism|identity-prism]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/maturidade-design|maturidade-design]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/posicionamento|posicionamento]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/proposta-mensagens-chave|proposta-mensagens-chave]]"
 ---
 
 # Proposta de Voz e Tom — Kolden

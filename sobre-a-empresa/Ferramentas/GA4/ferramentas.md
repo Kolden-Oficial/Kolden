@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Google Analytics 4 (GA4) — Referência de Uso
 
 Acesso aos dados do Google Analytics 4 (relatórios, métricas, dimensões, propriedades) via o **MCP oficial do Google** (`analytics-mcp`, read-only). Categoria: Analytics / Dados.

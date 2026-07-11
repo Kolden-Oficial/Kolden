@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # YouTube Data API v3 — Referência de Uso
 
 API do Google para ler dados públicos do YouTube — canais, vídeos, estatísticas, busca, playlists. Categoria: Inteligência Social / Dados. **Uso direto via API** (dados públicos via API key; não exige OAuth para leitura pública).

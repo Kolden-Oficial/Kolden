@@ -9,6 +9,9 @@ keywords: "('OpenAI Prompt Guide', 'Delimiter usage', 'Chain of thought', 'Posit
 summary: "This Reddit post distills the official OpenAI Prompt Guide into a simplified strategy centered on **reducing the model’s decision surface** to improve accuracy. The author highlights three pivotal adjustments: using **delimiters** like triple quotes to clarify context boundaries, requiring the AI to **think step-by-step internally** to minimize hallucinations, and employing **positive instructions** rather than negative constraints. Commentary within the thread further suggests a transition from \"theatrical prompt magic\" toward a **modular architecture**, arguing that modern reasoning models perform better with tightly scoped, structured tasks than with outdated, lengthy \"mega prompts.\" Ultimately, the text serves as a practical guide for shifting from trial-and-error messaging to a more **deterministic system design** that emphasizes signal clarity over instruction volume."
 extraido_em: "2026-06-30T16:20:11Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # I finally read through the entire OpenAI Prompt Guide. Here are the top 3 Rules I was missing - Reddit

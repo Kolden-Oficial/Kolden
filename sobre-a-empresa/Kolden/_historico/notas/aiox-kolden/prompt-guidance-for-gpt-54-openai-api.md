@@ -9,6 +9,9 @@ keywords: "('GPT-5.4 Prompt Guidance', 'Agentic Workflow Robustness', 'Tool Use 
 summary: "This technical documentation provides a comprehensive framework for mastering **GPT-5.4**, a model optimized for **production-grade agents** and complex, long-horizon workflows. The guide emphasizes that achieving reliable execution requires **explicit output contracts**, disciplined tool-use patterns, and a strategic selection of **reasoning effort** tailored to the specific task. Key themes include the introduction of the **phase parameter** for tracking intermediate updates, the use of **Compaction** for managing long-context sessions, and specialized prompting strategies for coding, research, and vision. Ultimately, the text serves as a roadmap for developers to transition from older models by implementing **verification loops** and structured scaffolds that ensure **instruction adherence** and token efficiency."
 extraido_em: "2026-06-30T16:21:48Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Prompt guidance for GPT-5.4 | OpenAI API

@@ -9,6 +9,9 @@ keywords: "('US Immigration Policy', 'Highly Skilled Talents', 'Legal Compliance
 summary: "This article examines the shifting landscape of United States immigration in 2026, highlighting a dual strategy of **increased enforcement against irregular entry** alongside a refined focus on **attracting global talent**. While the government has implemented a \"zero tolerance\" approach for undocumented individuals through stricter surveillance and legal mandates, it simultaneously courts highly skilled professionals in sectors like **technological sovereignty and healthcare**. Navigating this new era requires a move away from improvisation toward **rigorous legal planning and merit-based petitions**, such as the EB-2 NIW and O-1 visas. Ultimately, the text illustrates that while financial and bureaucratic hurdles have intensified, the American system remains eager to reward **compliance and specialized expertise** that serves national interests."
 extraido_em: "2026-06-30T16:27:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # O novo rosto da imigração americana: Menos brechas, mais oportunidades para quem tem talento - Migalhas

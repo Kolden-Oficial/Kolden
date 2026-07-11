@@ -6,6 +6,11 @@ categoria: operacao
 palavras-chave: [import, radar, planilha-google, tarefas]
 status: oficial
 atualizado-em: 2026-06-30
+tipo: nota
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/tarefas/README|README]]"
 ---
 
 # Import — Planilha "Tarefas Pessoais" → radar.yaml + arquivo.yaml

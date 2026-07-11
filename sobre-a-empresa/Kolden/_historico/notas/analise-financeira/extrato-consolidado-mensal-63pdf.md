@@ -9,6 +9,9 @@ keywords: "('Fraud prevention', 'WhatsApp security', 'Monthly bank statement', '
 summary: "This document is a **consolidated monthly bank statement** from March 2023 for a Santander customer, combining financial summaries with extensive **security advisories**. While it outlines account details such as **service package fees** and national **economic indices**, the primary focus is a robust **anti-fraud campaign** designed to protect the user from common digital crimes. The text provides specific instructions on avoiding **WhatsApp account cloning**, identifying **courier scams**, and securing **personal identification data** like the ID Santander. By blending administrative account data with **preventative safety tips**, the bank aims to educate the client on maintaining **digital privacy** and verifying suspicious financial requests."
 extraido_em: "2026-06-30T16:26:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (63).pdf

@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Cairos
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Cairos/agents/cairos-chief|cairos-chief]]"
+---
+
 # MEMORY — Cairós (PMO & Gestão de Projetos)
 
 > Memória persistente do squad. Atualizada pela habilidade `ritual-de-encerramento` ao fim de cada

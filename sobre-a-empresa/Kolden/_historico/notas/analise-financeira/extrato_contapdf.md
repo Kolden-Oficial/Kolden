@@ -9,6 +9,9 @@ keywords: "('Bank account statement', 'Financial transactions', 'PIX transfers',
 summary: "This document is a formal **bank statement** for a Santander checking account belonging to Ronan Sergio Silva, covering a seven-week **financial period** in early 2026. The record details a diverse history of **electronic transactions**, including frequent PIX transfers, debit card purchases for daily expenses, and automated payments for insurance and credit card bills. By tracking the flow of funds from an initial starting point to a final **available balance**, the statement serves as a transparent **financial summary** of the user's income and expenditures. Structurally, the text organizes these activities chronologically to provide the account holder with a clear overview of their **liquidity and spending habits**."
 extraido_em: "2026-06-30T16:27:05Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # extrato_conta.pdf

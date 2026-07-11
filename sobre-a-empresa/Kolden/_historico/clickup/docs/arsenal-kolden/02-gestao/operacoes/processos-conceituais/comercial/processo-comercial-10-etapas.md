@@ -9,6 +9,8 @@ archived: true
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-13273/
 extracted_at: 2026-06-30
 nota: "Framework conceitual para reformulação de processo comercial em 10 etapas. Page 8cdvxek-7203 foi criada como 'copy' da 7183 — na verdade descreve 'Identificação de lacunas e oportunidades'."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
 ---
 
 # Comercial — Processo de Reformulação em 10 etapas

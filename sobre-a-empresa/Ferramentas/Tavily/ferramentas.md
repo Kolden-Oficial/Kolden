@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Tavily — Referência de Uso
 
 Tavily é uma API de busca, extração, crawling e research na web projetada para agentes de IA (LLMs), fornecendo acesso à web em tempo real e extração de conteúdo. Categoria: Busca/Scraping.

@@ -9,6 +9,9 @@ keywords: "('Marketing ROI benchmarks', 'Medical Spa marketing', 'Patient acquis
 summary: "Evaluating the financial success of a medical spa requires a deep understanding of **Marketing ROI**, which measures how much revenue is generated for every dollar spent on advertising. To achieve **sustainable growth**, practitioners must track essential metrics such as **Cost Per Lead (CPL)** and **Customer Lifetime Value (CLV)**, aiming for a healthy return typically between 400% and 600%. The text outlines a systematic approach to **data-driven decision-making**, providing specific formulas and examples to help businesses justify their spending and improve **operational efficiency**. Ultimately, by analyzing the entire **patient acquisition funnel**, a medical spa can refine its strategies to ensure long-term profitability and high-value client retention."
 extraido_em: "2026-06-30T16:28:05Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # What is Med Spa Marketing ROI (Return On Investment) - PatientGain

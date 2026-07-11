@@ -9,6 +9,9 @@ keywords: "('Tree of Thoughts', 'Prompt Engineering', 'Problem-Solving Framework
 summary: "The provided text serves as a comprehensive educational guide to **Tree of Thoughts (ToT) prompting**, a sophisticated framework designed to improve the **problem-solving capabilities** of large language models. By organizing reasoning into a **tree-like structure**, this method allows AI to generate various potential solutions, evaluate their viability, and **backtrack** when a particular path fails to yield results. The source details specific implementation strategies, such as **propose and value prompts**, while showcasing how ToT significantly **outperforms traditional methods** like Chain-of-Thought in complex mathematical and creative tasks. Ultimately, the author balances these benefits against **resource limitations**, suggesting that this intensive approach is best reserved for intellectually demanding challenges that require **deliberate planning and search**."
 extraido_em: "2026-06-30T16:22:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Tree of Thoughts (ToT): Enhancing Problem-Solving in LLMs

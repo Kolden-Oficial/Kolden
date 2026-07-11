@@ -9,6 +9,9 @@ keywords: "()"
 summary: ""
 extraido_em: "2026-06-30T16:28:06Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # https://youtu.be/-uRh61U_4f4

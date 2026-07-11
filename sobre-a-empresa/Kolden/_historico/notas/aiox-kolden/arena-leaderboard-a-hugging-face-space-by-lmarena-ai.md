@@ -9,6 +9,9 @@ keywords: "('Arena Leaderboard', 'Hugging Face', 'LLM Benchmarking', 'AI Communi
 summary: "This source highlights an interactive platform hosted on Hugging Face that serves as a **competitive ranking system** for large language models. By organizing data into specific categories like applications and community discussions, the interface allows users to track the **real-time performance** and standing of various AI systems. Ultimately, the site functions as a **dynamic evaluation hub** where the capabilities of different models are measured and displayed for the global developer community."
 extraido_em: "2026-06-30T16:18:23Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Arena Leaderboard - a Hugging Face Space by lmarena-ai

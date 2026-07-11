@@ -9,6 +9,10 @@ keywords: "('Strategic advisory services', 'Marketing and growth', 'Business man
 summary: "This legal document establishes a formal partnership where the firm Kolden provides **strategic advisory services** to help Leidiane Alves Gonçalves and Pizzaria Margherita improve their business growth, marketing, and management. Rather than performing technical or operational tasks, the consultant focuses on **high-level guidance** and decision support, such as planning digital presence and optimizing internal processes. The financial terms include a **monthly service fee** plus a separate allocation for paid advertising, set within a commitment period of at least six months. Importantly, the agreement functions as an **obligation of means**, meaning success depends on the client’s internal execution and market variables rather than a guarantee of specific financial returns."
 extraido_em: "2026-06-30T16:09:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/_indice|_indice]]"
 ---
 
 # Contrato Atualizado – Prestação De Serviços (1).pdf

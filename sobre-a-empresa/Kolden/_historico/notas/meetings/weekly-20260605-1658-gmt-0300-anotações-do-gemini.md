@@ -9,6 +9,9 @@ keywords: "('Acquisition Strategy Definition', 'Lead Qualification Process', 'Fi
 summary: "This meeting transcript documents a strategic **weekly planning session** for Kolden, focusing on launching a digital marketing funnel to capture leads among **Brazilian entrepreneurs living in the United States**. The team outlines a technical \"ad-to-WhatsApp\" journey, prioritizing **Meta Ads** while specifically **excluding high-cost or seasonal regions** like Miami and Massachusetts in winter to protect their limited budget. A central theme of the discussion is the **refinement of financial projections**, where the group debates how to achieve a **$3,000 revenue goal** by balancing a realistic 10% conversion rate against a high cost-per-lead. Beyond technical logistics, the team plans to **validate creative formats** using simple, colloquial videos and even \"simulated\" social proof to filter for high-quality business owners. Ultimately, the document serves as an **operational roadmap**, assigning specific tasks for scriptwriting, spreadsheet automation, and campaign deployment to ensure all acquisition channels are functional by the following week."
 extraido_em: "2026-06-30T16:25:31Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Weekly - 2026/06/05 16:58 GMT-03:00 - Anotações do Gemini

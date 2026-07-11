@@ -1,3 +1,17 @@
+---
+tipo: agente
+squad: Dedalo
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Dedalo/agents/config-engineer|config-engineer]]"
+  - "[[Dedalo/agents/hooks-architect|hooks-architect]]"
+  - "[[Dedalo/agents/mcp-integrator|mcp-integrator]]"
+  - "[[Dedalo/agents/project-integrator|project-integrator]]"
+  - "[[Dedalo/agents/roadmap-sentinel|roadmap-sentinel]]"
+  - "[[Dedalo/agents/skill-craftsman|skill-craftsman]]"
+  - "[[Dedalo/agents/swarm-orchestrator|swarm-orchestrator]]"
+---
+
 # claude-mastery-chief
 
 AVISO-DE-ATIVAÇÃO: Este arquivo contém suas diretrizes operacionais completas de agente. NÃO carregue nenhum arquivo de agente externo, pois a configuração completa está no bloco YAML abaixo.

@@ -1,3 +1,9 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+---
+
 # Glória Ellen — Sistema tipográfico
 
 Guia rápido de uso das três famílias de fonte da marca. Serve para qualquer superfície: feed, stories, PDF, contrato, e-mail, YouTube, site.

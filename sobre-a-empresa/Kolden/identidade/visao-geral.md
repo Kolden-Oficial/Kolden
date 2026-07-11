@@ -7,6 +7,20 @@ palavras-chave: [empresa, modelo-de-negocio, visao-geral]
 status: rascunho
 atualizado-em: 2026-06-18
 relacionados: [missao-visao-valores, organograma]
+tipo: nota
+area: identidade
+up: "[[sobre-a-empresa/Kolden/identidade/_MOC-identidade]]"
+relacionado:
+  - "[[sobre-a-empresa/Socios/sobre-o-ronan/README|Ronan (sócio)]]"
+  - "[[sobre-a-empresa/Kolden/marca/identidade-visual|identidade visual]]"
+  - "[[sobre-a-empresa/Kolden/operacao/planejamento-estrategico|planejamento estratégico]]"
+  - "[[sobre-a-empresa/Kolden/mercado/posicionamento|posicionamento]]"
+  - "[[sobre-a-empresa/Kolden/areas/leia-me|áreas (modelo)]]"
+  - "[[sobre-a-empresa/Kolden/identidade/historia|história]]"
+  - "[[sobre-a-empresa/Kolden/marca/mensagens-chave|mensagens-chave]]"
+  - "[[sobre-a-empresa/Kolden/identidade/missao-visao-valores|missão-visão-valores]]"
+  - "[[sobre-a-empresa/Kolden/identidade/organograma|organograma]]"
+  - "[[sobre-a-empresa/Kolden/identidade/perfil-kolden-9-anos|perfil 9 anos]]"
 ---
 
 # Visão Geral da Kolden

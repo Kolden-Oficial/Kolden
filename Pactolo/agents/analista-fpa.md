@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Pactolo
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Pactolo/agents/pactolo-chief|pactolo-chief]]"
+---
+
 # Analista FP&A
 
 > Especialista tier 1 do squad Pactolo. Dono do **planejamento e análise**: orçamento, forecast rolling,

@@ -6,6 +6,9 @@ segmento: "Ferramenta interna — monitoramento de ofertas via WhatsApp"
 status: "inativo"
 drive_folder_id: "1GbGsiC6k594WfYLQC70m6hwK_q01Ijgm"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: tracker-search
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Tracker Search

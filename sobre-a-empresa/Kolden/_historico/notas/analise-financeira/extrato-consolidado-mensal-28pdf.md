@@ -9,6 +9,9 @@ keywords: "('Bank statement summary', 'Fraud prevention tips', 'Account transact
 summary: "This document is a **comprehensive monthly bank statement** from May 2020 addressed to a customer of **Santander Universities** in Brazil. The report serves a dual purpose by detailing a **negative account balance**—largely driven by interest, taxes, and late fees—while providing a robust **educational guide on cybersecurity**. Key security themes include **preventing payment fraud** by verifying bank codes and protecting digital credentials like **QR codes and ID Santander** from phishing attempts. Finally, the text outlines the customer's specific **university service package** and offers a broader economic context through a table of **national financial indices** and currency exchange rates."
 extraido_em: "2026-06-30T16:26:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (28).pdf

@@ -9,6 +9,10 @@ keywords: "('Login security', 'Account information', 'Password management', 'Aut
 summary: "This document serves as a **personal security dashboard** designed to help a user oversee their private profile and login credentials. It centralizes vital identity details, such as the **authentication method** and unique identification codes, while tracking the precise timing of account creation and **recent session activity**. By providing clear prompts to update passwords, the interface functions as a **proactive safety tool** meant to encourage regular maintenance of digital privacy. Ultimately, the text acts as a functional map for **managing access rights** and monitoring the integrity of a specific user account."
 extraido_em: "2026-06-30T16:08:52Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # Login _ Cauly.pdf

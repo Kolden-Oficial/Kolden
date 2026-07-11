@@ -2,6 +2,9 @@
 agent: bad-agent
 name: Bad Agent
 role: Testing
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
 ---
 
 # Bad Agent

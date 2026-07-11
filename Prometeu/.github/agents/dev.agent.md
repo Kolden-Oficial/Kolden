@@ -2,6 +2,11 @@
 name: dev
 description: 'Use for code implementation, debugging, refactoring, and development best practices'
 tools: ['read', 'edit', 'search', 'execute']
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.github/agents/_indice|_indice]]"
 ---
 
 # 💻 Dex Agent (@dev)

@@ -17,6 +17,12 @@ relacionados:
   - 02-tokens/tailwind.tokens.js
   - 03-componentes/leia-me.md
   - 03-componentes/superficies.md
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/design-system/02-tokens/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/03-componentes/leia-me|leia-me]]"
 ---
 
 # Tokens Omiron — v1 (leia-me)

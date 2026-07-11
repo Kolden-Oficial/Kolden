@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Caos
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Caos/agent-memory/auditor-absorcao|auditor-absorcao]]"
+---
+
 # Memória do Agente Caos
 
 ## Padrões Ativos

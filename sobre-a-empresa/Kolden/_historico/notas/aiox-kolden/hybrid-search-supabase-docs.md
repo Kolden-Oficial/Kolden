@@ -9,6 +9,9 @@ keywords: "('Hybrid search', 'Semantic search', 'Keyword search', 'Reciprocal Ra
 summary: "This documentation explores the utility of **hybrid search**, a sophisticated retrieval method that merges the precision of **keyword search** with the contextual depth of **semantic search**. By leveraging **Reciprocal Ranked Fusion (RRF)**, the system integrates results from both strategies into a single list, ensuring that users find matches based on both specific terminology and underlying intent. The guide provides a practical technical roadmap for implementing this in **Postgres**, detailing the necessary table structures, **indexing strategies**, and specialized functions required to balance these two search modes. Ultimately, the text serves as a comprehensive manual for developers looking to build **AI-enhanced applications** that offer more accurate and nuanced information retrieval."
 extraido_em: "2026-06-30T16:20:11Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Hybrid search | Supabase Docs

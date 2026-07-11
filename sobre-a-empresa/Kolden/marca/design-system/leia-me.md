@@ -7,6 +7,19 @@ palavras-chave: [design-system, kit, marca, identidade-visual, tokens, component
 status: vigente
 atualizado-em: 2026-06-22
 relacionados: [identidade-visual, ds-cores, ds-tipografia, ds-logo, ds-tokens, ds-componentes]
+tipo: nota
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/design-system/04-aplicacoes/exemplos|aplicações]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/03-componentes/leia-me|componentes]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/cores|cores]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/grafismos-e-auxiliares|grafismos]]"
+  - "[[sobre-a-empresa/Kolden/marca/identidade-visual|identidade visual]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/logo|logo]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tipografia|tipografia]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tom-visual|tom visual]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/assets/indice-assets|índice de assets]]"
 ---
 
 # Design System da Kolden

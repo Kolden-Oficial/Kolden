@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/dossie|dossie]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/leia-me|leia-me]]"
+---
+
 # Tracker Flow — Plataforma de Atribuição e Rastreamento de Conversões
 
 Sistema fullstack de tracking de cliques, leads e conversões, com sincronização S2S (server-to-server) para Meta CAPI, TikTok Events API, GoHighLevel e GA4.

@@ -9,6 +9,9 @@ keywords: "('LLM Leaderboard', 'Model Performance Benchmarks', 'Reasoning and Co
 summary: "This interactive **LLM Leaderboard** provides a comprehensive evaluation of state-of-the-art artificial intelligence models, focusing on those released after April 2024. The data categorizes performance across **high-level cognitive tasks** such as expert reasoning, advanced mathematics, and agentic coding, while utilizing modern benchmarks like \"Humanity's Last Exam\" to prevent result saturation. Beyond raw intelligence, the resource tracks essential **operational metrics** including processing speed, input/output costs, and context window sizes to help users balance power with efficiency. Ultimately, the text serves as a **technical comparison tool** that allows developers and researchers to identify the most effective and affordable models for specific multilingual or visual reasoning applications."
 extraido_em: "2026-06-30T16:20:34Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # LLM Leaderboard - Vellum AI

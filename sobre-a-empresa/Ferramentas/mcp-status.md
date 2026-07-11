@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/ferramentas|ferramentas]]"
+---
+
 # MCP Status — Ferramentas do Kolden
 
 Estado final dos servidores MCP (`claude mcp list`). Atualizado em 2026-06-24.

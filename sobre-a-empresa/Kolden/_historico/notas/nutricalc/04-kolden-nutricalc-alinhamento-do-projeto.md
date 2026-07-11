@@ -9,6 +9,12 @@ keywords: "('Shamanic Medicine Experiences', 'Nutrition System Development', 'Be
 summary: "This transcript documents a collaborative meeting between Ronan Sersil and Mayan Leao focused on the development of a **system for nutritionists** that prioritizes patient monitoring and long-term health. The dialogue emphasizes a shift from traditional calorie counting toward an **integral nutritional approach** that incorporates behavioral techniques, circadian rhythm regulation, and lifestyle mentoring. Beyond technical software features like food databases and clinical exams, the participants explore the **intersection of physical health and spiritual self-knowledge**, discussing how practices such as xamanic medicine and yoga assist in overcoming industrial food addiction. Ultimately, the source outlines a partnership where Leao provides **expert mentorship and feedback** to help Sersil refine his platform into a tool that bridges the gap between physiological data and deep psychological transformation."
 extraido_em: "2026-06-30T16:10:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/01-kolden-nutricalc-alinhamento-do-projeto|01-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/02-kolden-nutricalc-alinhamento-do-projeto|02-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/03-kolden-nutricalc-alinhamento-do-projeto|03-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/kolden-nutricalc-alinhamento-do-projeto-20260318-1601-gmt-0300-anotações-do|kolden-nutricalc-alinhamento-do-projeto-20260318-1601-gmt-0300-anotações-do]]"
 ---
 
 # 04 | Kolden & NutriCalc | Alinhamento do Projeto

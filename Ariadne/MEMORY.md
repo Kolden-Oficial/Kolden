@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Ariadne
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Ariadne/agents/ariadne-chief|ariadne-chief]]"
+---
+
 # Memória do Squad Ariadne
 
 ## Padrões Ativos

@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/ferramentas|ferramentas]]"
+---
+
 # Matriz de Ferramentas de Marketing (absorvida de marketingskills)
 
 > Matriz de referência de ~90 ferramentas de marketing por categoria, com método de integração

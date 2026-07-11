@@ -9,6 +9,9 @@ keywords: "('Lexical node registration', 'JSON serialization', 'Handling unknown
 summary: "This GitHub issue centers on a technical discussion regarding how the **Lexical text editor framework** should manage **unregistered node types** during data import. The author proposes implementing **graceful degradation strategies**, such as skipping unknown content or rendering placeholder nodes, to prevent the application from crashing when it encounters unfamiliar JSON or Markdown data. While the user argues that **deserialization hooks** would improve portability and backward compatibility, maintainers point out that **serialized nodes lack self-description**, making it difficult for the system to guess their intended behavior or structure. Ultimately, the conversation highlights a tension between **flexible data recovery** and the strict requirements of a **schema-driven editor**, suggesting that developers currently handle these scenarios by creating custom node classes to map and translate legacy data."
 extraido_em: "2026-06-30T16:20:04Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Handling unknown / unregistered node types · Issue #7212 · facebook/lexical - GitHub

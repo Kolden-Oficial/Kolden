@@ -9,6 +9,9 @@ keywords: "('Unified Business Model', 'Strategic Marketing Framework', 'Organiza
 summary: "This strategic alignment meeting documents the merger of two agencies, Coden and Vetory, into a **unified business operation** designed to scale high-ticket marketing services. The partners plan to separate from the V4 Network to focus on a **specialized organizational structure** inspired by the G4 model, where Coden manages **management and strategic marketing** while Vetory spearheads the **commercial sales engine**. Central to this transition is a **unified financial model** that establishes a fixed monthly stipend for partners while pooling all high-value revenue into a shared company fund. By integrating **\"Black\" and \"White\" market strategies**, the team aims to achieve rapid growth with a target of **30,000 in monthly recurring revenue** within thirty days."
 extraido_em: "2026-06-30T16:13:19Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Kolden & Vettory | Alinhamento Estratégico - 2026/02/09 15:58 GMT-03:00 - Anotações do Gemini

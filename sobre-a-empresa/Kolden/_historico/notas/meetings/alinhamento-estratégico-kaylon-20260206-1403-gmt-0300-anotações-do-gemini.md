@@ -9,6 +9,9 @@ keywords: "('Strategic Marketing Plan', 'Lead Acquisition Strategy', 'Insulation
 summary: "This strategic alignment meeting between Kaylon Teixeira and the marketing agency Coden outlines a comprehensive plan to scale a **specialized insulation business** in the United States. The document highlights a shift toward **predictability in client acquisition**, moving away from unmanaged growth toward a structured system that integrates local paid traffic, organic content, and direct outreach. A major theme is the transition from targeting individual homeowners to securing **high-value partnerships with construction companies**, emphasizing the business's reputation for cleanliness, organization, and adherence to building codes. To achieve this, the team plans to implement **specialized sales funnels** and test Facebook Messenger as a primary communication channel, supported by a $1,000 monthly advertising budget. Ultimately, the purpose of this record is to establish a **collaborative roadmap** that leverages professional marketing expertise to capitalize on the mandatory nature of insulation services in new construction."
 extraido_em: "2026-06-30T16:23:20Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Alinhamento Estratégico Kaylon - 2026/02/06 14:03 GMT-03:00 - Anotações do Gemini

@@ -9,6 +9,9 @@ keywords: "('Business Internationalization', 'Networking Moment', 'Brazilian-Ame
 summary: "The provided images outline a multi-city professional tour known as **ECON**, a business summit designed to facilitate **international expansion** for Brazilian entrepreneurs looking to enter the United States market. Scheduled throughout late 2024 and 2025 across various Brazilian regions, the event features a structured program of **sector-specific panels**, legal and financial guidance, and dedicated **networking sessions** to bridge the gap between South American and North American commerce. The documentation serves as both a logistical guide and a marketing tool, offering various **sponsorship and speaker packages** that allow companies to gain visibility through presentations and brand placement. Ultimately, the initiative seeks to foster **bilateral economic growth** and provide families and business owners with the resources necessary for a successful transition to a global stage."
 extraido_em: "2026-06-30T16:28:10Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # encontro de negócios das américas - ECON

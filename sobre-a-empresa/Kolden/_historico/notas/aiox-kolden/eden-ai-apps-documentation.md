@@ -9,6 +9,9 @@ keywords: "('Unified API Integration', 'Make.com Automation', 'Text Analysis Too
 summary: "This documentation serves as a comprehensive technical guide for integrating **Eden AI** with the **Make.com** automation platform. It begins by outlining the **connectivity requirements**, specifically the use of an **API key** to link both services, and then details a vast catalog of **specialized AI modules** ranging from text and image analysis to data extraction and translation. By acting as a **unified gateway** for multiple AI providers, the resource explains how users can streamline complex tasks like **content moderation, document parsing, and generative AI** within automated workflows. Ultimately, the text functions as a roadmap for developers to enhance their digital scenarios with **versatile machine learning capabilities** without needing to manage individual vendor interfaces."
 extraido_em: "2026-06-30T16:19:44Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Eden AI - Apps Documentation

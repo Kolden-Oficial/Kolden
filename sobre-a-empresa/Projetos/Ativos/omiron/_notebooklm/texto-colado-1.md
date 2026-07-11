@@ -9,6 +9,10 @@ keywords: "('Psychiatric care', 'Evidence-based medicine', 'Integrative approach
 summary: "This professional profile introduces Clínica OMIRON as a specialized mental health facility located in the Savassi district of **Belo Horizonte**. The center emphasizes a modern, **evidence-based psychiatric approach** that integrates various therapeutic methods to help patients reach their personal wellness milestones. By providing specific **contact details and physical location**, the text serves as an informative directory for those seeking **personalized clinical care**. Overall, the document aims to establish a bridge between the healthcare provider and the public through a clear statement of its **integrative medical philosophy**."
 extraido_em: "2026-06-30T16:07:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

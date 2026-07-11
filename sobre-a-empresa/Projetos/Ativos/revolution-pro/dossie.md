@@ -6,6 +6,9 @@ segmento: "Construção e reformas / Pintura residencial e comercial (EUA)"
 status: "ativo"
 drive_folder_id: "1rokd-eDMlkixmkagOUgbDIUTqfLmVzwS"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: revolution-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Revolution Pro

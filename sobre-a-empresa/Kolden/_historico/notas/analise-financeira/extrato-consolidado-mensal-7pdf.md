@@ -9,6 +9,9 @@ keywords: "('Bank Account Statement', 'Real Estate Financing', 'Customer Support
 summary: "This document is a **consolidated monthly bank statement** from Santander Brazil for October 2018, detailing the financial activity of a client named Ronan Sergio Silva. The report is structured to provide a **comprehensive financial overview**, beginning with promotional offers for real estate financing and international transfers before transitioning into a **granular summary of account balances**, credits, and debits. Key themes include the management of **overdraft facilities** like the \"Santander Master\" and the breakdown of a **university service package**, which outlines specific transaction limits and monthly fees. Ultimately, the text serves as both a **regulatory disclosure of account movements** and a marketing tool, encouraging the user to engage with investment profiles, security features, and capital bond products."
 extraido_em: "2026-06-30T16:26:37Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (7).pdf

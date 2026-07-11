@@ -6,6 +6,12 @@ missao: m-20260701-112935-rosie-90d
 origem: sessão contínua Hermes (orquestração) sobre Contrato de Missão
 status: registro de sessão · fonte de verdade dos números Solomon 30d
 proxima_leitura: sessão de envio ao Bruno / reconciliação Pactolo v3 completa (D+3)
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/dossie-tecnico/spec-rastreamento|spec-rastreamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/status|status]]"
 ---
 
 # Rosie · Sessão 2026-07-01 · F0 Solomon + Deck v3.1

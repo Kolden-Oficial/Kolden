@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/README|README]]"
+---
+
 # Perguntas para Thiago Araujo — pré-lançamento Google Ads (D+3)
 
 > **Objetivo:** consolidar as 3 perguntas críticas que travam a Onda 1 e Onda 2 do roadmap Google Ads em um único ponto de contato com Thiago, evitando 3 idas e voltas separadas.

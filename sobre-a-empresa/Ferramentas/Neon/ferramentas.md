@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Neon — Referência de Uso
 
 Neon é uma plataforma de Postgres serverless que separa armazenamento e computação para oferecer autoscaling, branching de banco (como código), instant restore e scale-to-zero. Totalmente compatível com Postgres. Categoria: Banco de dados.

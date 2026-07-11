@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/design-system/assets/indice-assets|índice de assets]]"
+---
+
 # Onde soltar os arquivos do Drive
 
 Baixe a pasta **`01 | Identidade Visual`** do Drive e coloque o conteúdo aqui dentro,

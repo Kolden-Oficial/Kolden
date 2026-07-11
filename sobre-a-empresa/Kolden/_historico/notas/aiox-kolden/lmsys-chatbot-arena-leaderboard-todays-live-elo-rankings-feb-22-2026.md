@@ -9,6 +9,9 @@ keywords: "('Chatbot Arena Leaderboard', 'Elo Rankings', 'Claude Opus 4.6', 'Gem
 summary: "This report details a significant milestone in artificial intelligence as of February 2026, marking the transition from simple assistants to sophisticated **reasoning agents** that have surpassed the **1500 Elo threshold**. The current competitive landscape is dominated by **Claude Opus 4.6**, which holds the premier ranking due to its mastery of **agentic planning** and record-breaking performance in technical coding tasks. While Anthropic leads in logic and programming, the data highlights a **functional divergence** in the industry, with Google’s Gemini 3.1 Pro maintaining a specialized advantage in **PhD-level science** and complex visual puzzles. Ultimately, these rankings serve as a strategic guide for users to select models based on **specific primary strengths** rather than brand loyalty alone to maximize productivity in a high-performance AI era."
 extraido_em: "2026-06-30T16:20:31Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # LMSYS Chatbot Arena Leaderboard: Today's Live Elo Rankings (Feb 22, 2026)

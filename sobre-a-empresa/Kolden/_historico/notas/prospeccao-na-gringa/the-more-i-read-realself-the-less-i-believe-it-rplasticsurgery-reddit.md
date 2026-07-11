@@ -9,6 +9,9 @@ keywords: "('RealSelf review credibility', 'Plastic surgery marketing', 'Review 
 summary: "This Reddit discussion highlights a growing **distrust toward RealSelf**, a specialized review platform for aesthetic procedures. Users argue that the site acts primarily as a **marketing tool for surgeons**, leading to an overwhelming presence of five-star ratings that often conflict with the more critical feedback found on **independent sites like Google or Yelp**. The conversation suggests that the platform’s **financial dependence on doctors** may incentivize the removal of negative testimonials or the promotion of early, premature success stories. Ultimately, the text serves as a cautionary guide, advising prospective patients to **verify results through multiple sources** and remain skeptical of polished, industry-sponsored content."
 extraido_em: "2026-06-30T16:28:02Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # The more I read RealSelf the less I believe it : r/PlasticSurgery - Reddit

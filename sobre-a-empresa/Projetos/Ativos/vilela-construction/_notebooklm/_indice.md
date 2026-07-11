@@ -3,6 +3,15 @@ notebook_id: "884fdf39-eb5e-450d-add3-19ef9f16cd33"
 notebook_titulo: "05 | Vilela Construction"
 total_fontes: 5
 extraido_em: "2026-06-30T16:05:49Z"
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/_notebooklm/contrato-ketherpdf|contrato-ketherpdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/_notebooklm/icp-posicionamento|icp-posicionamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/_notebooklm/reunião-de-alinhamento-com-vilela-construction-2026_05_29-10_56-gmt-03_00|reunião-de-alinhamento-com-vilela-construction-2026_05_29-10_56-gmt-03_00]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/_notebooklm/reunião-viela-construction-2026_05_21-18_14-gmt-03_00-anotações-do-gemini-1docx|reunião-viela-construction-2026_05_21-18_14-gmt-03_00-anotações-do-gemini-1docx]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/_notebooklm/texto-colado|texto-colado]]"
 ---
 
 # Índice — 05 | Vilela Construction

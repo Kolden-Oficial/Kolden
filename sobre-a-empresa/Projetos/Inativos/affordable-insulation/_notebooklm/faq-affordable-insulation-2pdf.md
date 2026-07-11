@@ -9,6 +9,10 @@ keywords: "('Spray foam insulation', 'Energy efficiency', 'Service areas', 'Quot
 summary: "Affordable Insulation provides professional weatherization services throughout **Massachusetts, Rhode Island, and New Hampshire**, specializing in high-quality materials that improve **energy efficiency and soundproofing**. This document serves as a comprehensive resource for potential clients, outlining a range of benefits including **fire safety** and year-round indoor comfort. By addressing **frequently asked questions**, the text establishes the company’s reliability and explains how to navigate the **free quote process**. Ultimately, the material highlights the brand's commitment to **sustainable building solutions** for homeowners and businesses alike, featuring a team of local experts ready to tackle both new construction and retrofitting projects."
 extraido_em: "2026-06-30T16:07:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # FAQ – Affordable Insulation (2).pdf

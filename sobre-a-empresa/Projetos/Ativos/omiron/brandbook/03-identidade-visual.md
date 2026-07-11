@@ -8,6 +8,11 @@ atualizado-em: 2026-07-06
 autor: Aglaia (brand-chief) — Kolden
 missao: m-20260706-193013-omiron-brandbook-completo
 relacionados: [00-indice, 01-posicionamento, 02-voz-da-marca, 04-aplicacoes, ../design-system/01-fundamentos/cores, ../design-system/01-fundamentos/tipografia, ../design-system/01-fundamentos/tom-visual]
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/00-indice|00-indice]]"
 ---
 
 # Identidade Visual

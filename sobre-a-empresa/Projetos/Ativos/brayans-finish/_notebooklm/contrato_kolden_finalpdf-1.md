@@ -9,6 +9,10 @@ keywords: "('Digital marketing services', 'Contractual financial terms', 'Paid t
 summary: "This legal document outlines a **digital marketing service agreement** between a client named Brayan and a provider known as Kolden Marketing. Over a **four-month duration**, the provider commits to a multi-faceted strategy involving **website development, CRM implementation, and paid advertising management** to enhance the client’s online presence. The financial structure consists of an initial deposit followed by monthly installments, totaling a **contract value of $1,800** with additional performance-based incentives. Notably, the agreement establishes an **independent contractor relationship** where the client retains responsibility for ad spend and lead conversion while acknowledging that specific results cannot be guaranteed."
 extraido_em: "2026-06-30T16:07:25Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/_indice|_indice]]"
 ---
 
 # contrato_kolden_final.pdf

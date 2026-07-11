@@ -9,6 +9,9 @@ keywords: "('Monthly bank statement', 'Santander University Program', 'Student f
 summary: "This document serves as a **consolidated monthly bank statement** for a student account holder named Ronan, detailing his financial activity for March 2019 alongside targeted promotional offers. The primary purpose of the text is to provide a **comprehensive financial summary**, including credit and debit logs, salary deposits, and a breakdown of the **Santander Master** overdraft limit and associated interest rates. Beyond standard accounting, the text acts as a **marketing tool for university students**, highlighting professional development opportunities such as the **Santander University Companies Program** and specialized hardware like the **Santander Pass** for contactless payments. Finally, the source includes essential **institutional information**, covering customer service contacts, banking security protocols, and current **economic indices** to help the user navigate their broader fiscal environment."
 extraido_em: "2026-06-30T16:25:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (12).pdf

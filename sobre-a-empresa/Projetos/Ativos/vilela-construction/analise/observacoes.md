@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/analise/diff-vs-03-07|diff-vs-03-07]]"
+---
+
 > **Nota (2026-07-09):** Dossiê institucional + catálogo estão sendo unificados em `dossie.md`. Este arquivo continua sendo o registro dos achados analíticos do Argos sobre o Price Book — não foi absorvido pela fusão.
 
 # Observações — Vilela Price Book 2026 (rodada 09/07)

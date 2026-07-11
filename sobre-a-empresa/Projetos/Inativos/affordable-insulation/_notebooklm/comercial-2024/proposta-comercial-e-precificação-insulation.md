@@ -9,6 +9,13 @@ keywords: "('Business growth strategy', 'Sales process automation', 'Strategic p
 summary: "This document outlines a comprehensive **strategic commercial proposal** designed to transition an insulation business from manual, unpredictable operations to a **scalable, data-driven growth system**. The strategy focuses on professionalizing the client’s workflow through **automated lead response**, precise pricing tools, and a shift toward high-value **B2B recurring contracts** with builders. To achieve this, the proposal suggests a **dual pricing model** consisting of an initial implementation fee to build the technical infrastructure and a monthly retainer for ongoing growth management. Ultimately, the plan aims to more than double the client's revenue by positioning the service not as a mere marketing expense, but as a high-return **integrated growth partnership**."
 extraido_em: "2026-06-30T16:14:23Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/comercial-2024/contrato-kolden-x-affordable-insulationpdf|contrato-kolden-x-affordable-insulationpdf]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/comercial-2024/proposta-comercial-e-precificação-insulation-1|proposta-comercial-e-precificação-insulation-1]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/comercial-2024/proposta-comercial-insulation-co|proposta-comercial-insulation-co]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/comercial-2024/proposta-comercial-insulation-co-1|proposta-comercial-insulation-co-1]]"
 ---
 
 # Proposta Comercial e Precificação - Insulation

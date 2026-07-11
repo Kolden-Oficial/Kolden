@@ -9,6 +9,9 @@ keywords: "('Terminal interface usage', 'Model switching commands', 'Linux TUI e
 summary: "Instead of hunting for hidden buttons in a complex web interface, this guide advocates for a **command-line approach** to configuring an AI assistant on Linux. By accessing the **Terminal User Interface (TUI)**, users can bypass graphical menus and exert direct control over the system using simple keyboard inputs. The core instruction involves utilizing the **\"/model\" command** to manually switch the agent's processing engine to a **free alternative**, effectively resolving billing errors and connection issues. Ultimately, this \"ninja\" method ensures that the AI is **successfully linked** and responsive across all connected platforms, including mobile devices."
 extraido_em: "2026-06-30T16:22:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Trocar Modelo Pelo Terminal Rápido

@@ -1,3 +1,9 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+---
+
 # Tokens — Glória Ellen
 
 Arquitetura de design tokens da marca, no formato **DTCG (Design Tokens Community Group)**.

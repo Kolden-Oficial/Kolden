@@ -9,6 +9,10 @@ keywords: "('Strategic marketing advisory', 'Lead generation', 'Paid traffic man
 summary: "This document serves as a formal service agreement between Kolden and Affordable Insulation, establishing a framework for **strategic marketing, business growth, and management consulting**. The contract outlines a comprehensive scope of work that includes **paid traffic optimization, lead qualification funnels, and digital asset creation**, while explicitly clarifying that the provider is responsible for strategic guidance rather than final sales results. Financially, the partnership requires a **total monthly investment of $1,875**, which covers both professional labor fees and a dedicated budget for advertising platforms. Spanning an **initial six-month term**, the agreement also defines essential legal protections regarding **intellectual property, confidentiality, and termination protocols** to ensure a transparent professional relationship."
 extraido_em: "2026-06-30T16:07:01Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Contrato – Kolden X Affordable Insulation.pdf

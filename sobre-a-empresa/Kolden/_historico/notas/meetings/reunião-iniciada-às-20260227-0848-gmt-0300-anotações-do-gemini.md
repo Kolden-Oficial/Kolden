@@ -9,6 +9,9 @@ keywords: "('Shamanic medicine experiences', 'Nutritional software development',
 summary: "This document summarizes a collaborative meeting between Ronan Sersil and Mayan Leao, where they integrate **shamanic wisdom** and **holistic nutrition** into a new digital health platform. Sersil introduces a **system for nutritionists** designed for patient monitoring, while Leao suggests enhancing it through a **behavioral checklist** that tracks lifestyle factors like **circadian rhythms**, mindful breathing, and neurotransmitter regulation. Their dialogue transitions from personal updates on **ritual plant medicines** to a shared mission of using nutrition as a tool for **self-knowledge and ego mastery**. Ultimately, the text outlines a **mentorship agreement** where Leao will provide clinical and scientific insights to help Sersil evolve the software into a comprehensive guide for **extreme health and performance**."
 extraido_em: "2026-06-30T16:24:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/27 08:48 GMT-03:00 - Anotações do Gemini

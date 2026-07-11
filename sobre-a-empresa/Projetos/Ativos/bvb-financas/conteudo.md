@@ -7,6 +7,11 @@ palavras-chave: [conteudo, roteiros, youtube, estrategia-editorial, calendario]
 status: rascunho
 atualizado-em: 2026-07-06
 relacionados: [posicionamento, tom-de-voz, personas, infoprodutos]
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/dossie|dossie]]"
 ---
 
 # Conteúdo — BVB Finanças

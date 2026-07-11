@@ -1,3 +1,13 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/09-kit-visual/brand-guidelines-de-uso|brand-guidelines-de-uso]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/09-kit-visual/laudo-dike|laudo-dike]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/09-kit-visual/relatorio-anti-slop|relatorio-anti-slop]]"
+---
+
 # Kit visual — Glória Ellen v1.1
 
 **Marca:** Glória Ellen — fotografia autoral, litoral catarinense.

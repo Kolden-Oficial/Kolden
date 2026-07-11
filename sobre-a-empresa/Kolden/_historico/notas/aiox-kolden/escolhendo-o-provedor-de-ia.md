@@ -9,6 +9,9 @@ keywords: "('AI provider selection', 'API Key requirements', 'Model intelligence
 summary: "Selecting an AI provider involves choosing the **computational brain** that will drive your automated operations. This guide categorizes the available options into high-performance **industry giants** requiring developer keys, **unified aggregators** like OpenRouter for diverse testing, and **local hosting** solutions for those with powerful hardware. The primary goal is to help users navigate the technical requirements of **API keys** and service costs while offering a simplified **pathway for beginners** to postpone the configuration until they are ready. Ultimately, the text serves as a strategic roadmap for integrating intelligence into the OpenClaw platform based on a user's specific **technical resources and budget**."
 extraido_em: "2026-06-30T16:19:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Escolhendo o provedor de IA

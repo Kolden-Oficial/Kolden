@@ -8,6 +8,19 @@ status: vigente
 atualizado-em: 2026-06-25
 relacionados: [governanca, financas, juridico-e-compliance]
 fontes: drive--00-gestao-empresarial
+tipo: nota
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Kolden/operacao/kolden-budget-dre-tracker|budget & DRE]]"
+  - "[[sobre-a-empresa/Kolden/mercado/concorrencia|concorrência]]"
+  - "[[sobre-a-empresa/Kolden/operacao/inteligencia-e-referencias|inteligência e referências]]"
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance|jurídico e compliance]]"
+  - "[[sobre-a-empresa/Kolden/operacao/metricas-e-okrs|métricas e OKRs]]"
+  - "[[sobre-a-empresa/Kolden/mercado/posicionamento|posicionamento]]"
+  - "[[sobre-a-empresa/Kolden/operacao/processos|processos]]"
+  - "[[sobre-a-empresa/Kolden/identidade/visao-geral|visão geral]]"
 ---
 
 # Planejamento Estratégico

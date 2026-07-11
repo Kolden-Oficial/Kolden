@@ -9,6 +9,9 @@ keywords: "('Lexical state updates', 'Lexical scope', 'EditorState immutability'
 summary: "This article provides a technical exploration of how the **Lexical text editor framework** manages its internal data through a unique **state update lifecycle**. The author explains that Lexical treats the state as an **immutable source of truth**, using a \"reconciliation\" process to efficiently sync changes to the DOM only after a temporary, **mutable pending state** is finalized. Central to this architecture is the clever use of **JavaScript lexical scope**, which allows specialized **\"$\" functions** to access and modify the active editor instance synchronously without the need for global variables. Ultimately, the text serves to demystify Lexical’s API conventions and **performance optimizations**, such as update batching, to help developers build more robust and predictable web editors."
 extraido_em: "2026-06-30T16:20:40Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Lexical state updates | dio.la - Dani Guardiola's blog

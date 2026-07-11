@@ -9,6 +9,9 @@ keywords: "('Media planning stages', 'Performance data analysis', 'Paid advertis
 summary: "This document outlines a comprehensive **strategic media and growth plan** for 2023, designed to scale e-commerce performance through a structured six-step methodology. It begins with a rigorous **data analysis** of historical metrics—such as ROAS, conversion rates, and average ticket prices—to establish a baseline for reaching ambitious **revenue targets**. The strategy integrates targeted **advertising tactics** across social and search channels with technical optimizations in **Conversion Rate Optimization (CRO)** and **User Experience (UX)** to refine the customer journey. Furthermore, the plan incorporates a **market competitiveness** assessment and a specialized **growth roadmap**, utilizing the **ICE score** to prioritize experiments like influencer partnerships and personalized site experiences. Ultimately, the source serves as a professional guide for transitioning a business from its current state to an **ideal performance scenario** by aligning marketing spend with data-driven behavioral insights."
 extraido_em: "2026-06-30T16:12:04Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/_indice|_indice]]"
 ---
 
 # Dih Santana - Planejamento de Mídia 2023.pdf

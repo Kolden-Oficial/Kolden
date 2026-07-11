@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Anthropic — Referência de Uso
 
 Plataforma de IA/LLM da Anthropic: API RESTful (Claude API) que dá acesso programático aos modelos Claude (Opus, Sonnet, Haiku, Fable) para geração de texto, raciocínio, código, visão, tool use, agentes e MCP. Categoria: IA/LLM.

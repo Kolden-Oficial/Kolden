@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Repomix — Referência de Uso (vendor inerte)
 
 **Repomix** é uma CLI (Node/TypeScript) que empacota um repositório inteiro em **um único arquivo

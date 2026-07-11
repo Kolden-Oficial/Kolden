@@ -9,6 +9,10 @@ keywords: "('Food library management', 'Personalized recipes', 'Nutritional data
 summary: "This platform serves as a comprehensive **digital management system** designed to track an extensive library of nutritional data and individualized recipes. Users can navigate through a vast collection of over seven thousand entries, which are organized into **authoritative nutritional databases** such as the TACO table and USP’s TBCA. Beyond simple reference, the interface provides tools for **data integration and customization**, allowing for the import of external files or the creation of original entries. Ultimately, the resource functions as a **structured inventory** meant to help users categorize and expand their culinary knowledge with scientific precision."
 extraido_em: "2026-06-30T16:08:52Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # Modelos _ Cauly.pdf

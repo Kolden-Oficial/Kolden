@@ -9,6 +9,10 @@ keywords: "('Marketing Campaign Performance', 'Geographic Lead Segmentation', 'L
 summary: "This meeting transcript documents a **strategic marketing check-in** between Kaylon Teixeira and his consulting team to refine advertising efforts and business growth. The group evaluates the **performance of recent lead generation**, noting that while over 50 leads were captured, improved **geographic segmentation** in Massachusetts and New Hampshire is necessary to attract high-value contracts. Key priorities established for the coming weeks include implementing **automated email marketing**, managing social media presence, and exploring **specialized government programs** like Mass Save to secure large-scale commercial projects. The discussion also emphasizes the importance of **tracking return on investment (ROAS)** and streamlining the transition of digital inquiries into finalized sales."
 extraido_em: "2026-06-30T16:06:56Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Check-in Kaylon - 2026/05/09 16:28 GMT-03:00 - Anotações do Gemini

@@ -2,6 +2,11 @@
 name: testador
 description: Valida o COMPORTAMENTO de um agente recém-construído, não só seus arquivos. Delegue na Fase 7 do Ritual, após a revisão (Fase 6) aprovar. Deriva smoke tests da jornada do PRD, instancia o agente mentalmente e verifica se o prompt causa o comportamento prometido. Atribui um maturity score (0-10); gate de entrega é ≥ 7.0.
 tools: Read, Grep, Glob
+tipo: agente
+squad: Caos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Caos/.claude/agents/_indice|_indice]]"
 ---
 
 # Persona

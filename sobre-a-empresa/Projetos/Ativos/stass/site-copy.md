@@ -6,6 +6,11 @@ stack: "TanStack Start + Vite + Cloudflare Workers + Supabase (Lovable.dev)"
 dominio_declarado: "https://amparocamacho.com.br"  # nota: TLD .com.br em SEO parece equivocado (público canadense) — validar
 idioma: "es (100%)"
 extraido_em: "2026-07-06"
+tipo: projeto
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/dossie|dossie]]"
 ---
 
 # Copy completa do site — Las 3 Reglas de Oro

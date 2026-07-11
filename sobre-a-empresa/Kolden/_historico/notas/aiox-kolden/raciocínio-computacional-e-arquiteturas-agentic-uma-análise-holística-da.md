@@ -24,6 +24,9 @@ handoff_fase_2:
     - "este arquivo (hub expandido)"
     - "Liceu/frameworks/arquitetura-de-agents-kolden/framework.md"
     - "Liceu/frameworks/arquitetura-de-agents-kolden/procedencia.md"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Raciocínio Computacional e Arquiteturas Agentic — HUB EXPANDIDO Fase 1

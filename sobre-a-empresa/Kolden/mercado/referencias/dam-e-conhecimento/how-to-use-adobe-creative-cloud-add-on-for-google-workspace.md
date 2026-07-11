@@ -9,6 +9,10 @@ keywords: "('Creative Cloud Add-on', 'Google Workspace Integration', 'Installati
 summary: "This document serves as a comprehensive guide for integrating **Adobe Creative Cloud** with **Google Workspace**, detailing how users can bridge the gap between creative assets and productivity tools. It outlines specific workflows for **Gmail and Google Docs**, such as attaching creative files to emails, saving incoming attachments directly to the cloud, and applying **brand elements like colors and graphics** to documents. Beyond technical instructions for installation and account management, the text highlights the broader **Adobe ecosystem**, showcasing a suite of AI-powered design tools and professional services tailored for individuals and large enterprises. Ultimately, the resource functions as a **functional roadmap** for streamlining creative collaboration and enhancing efficiency across different software platforms."
 extraido_em: "2026-06-30T16:12:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # How to use Adobe Creative Cloud add-on for Google Workspace

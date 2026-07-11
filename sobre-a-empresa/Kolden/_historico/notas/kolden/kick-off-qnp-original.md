@@ -9,6 +9,9 @@ keywords: "('Sales process construction', 'Business information gathering', 'SWO
 summary: "This document serves as an initial **onboarding questionnaire** designed to align a business with a specialized team to build an effective **digital sales framework**. The structure guides the client through a comprehensive **situational analysis**, requesting critical data on financial margins, specific growth objectives, and internal **SWOT evaluations** to identify competitive advantages. By auditing **historical marketing performance** and defining granular **target audience profiles**, the form ensures that the resulting strategy is rooted in the company's unique **value proposition** and seasonal market realities. Ultimately, the text functions as a foundational **knowledge transfer** tool, transforming raw organizational data into a roadmap for online commercial success."
 extraido_em: "2026-06-30T16:13:11Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Kick-Off - QNP (Original)

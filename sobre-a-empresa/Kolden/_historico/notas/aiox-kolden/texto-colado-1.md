@@ -9,6 +9,9 @@ keywords: "('Cloud Infrastructure Architecture', 'Neon PostgreSQL Database', 'Cl
 summary: "This text clarifies the distinct roles of **Neon and Cloudflare** in a cloud infrastructure, correcting the misconception that their services overlap or function as a single database. The author uses architectural metaphors to define **Neon as the primary storage** for persistent application data, specifically providing the robust PostgreSQL environment required by complex software like LobeChat. In contrast, **Cloudflare acts as an intelligent gateway**, serving as a protective shield that optimizes traffic and reduces costs through smart caching rather than long-term data retention. Ultimately, the source emphasizes that these two platforms are **complementary components** that work together to ensure a system is both scalable and economically efficient."
 extraido_em: "2026-06-30T16:22:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Texto colado

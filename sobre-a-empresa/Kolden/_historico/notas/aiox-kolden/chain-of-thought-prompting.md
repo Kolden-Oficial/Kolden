@@ -9,6 +9,9 @@ keywords: "('Prompt Engineering', 'Chain-of-Thought Prompting', 'Large Language 
 summary: "This educational guide introduces **Chain-of-Thought (CoT) Prompting**, a strategic method used to enhance the logical reasoning of large language models by requiring them to produce **intermediate reasoning steps**. By structuring the text around clear definitions, **comparative examples**, and empirical data, the source demonstrates how this technique transforms complex problem-solving in areas like mathematics and symbolic logic. The author emphasizes that while CoT significantly boosts performance in **large-scale models**, it can paradoxically hinder smaller models that lack the capacity for coherent self-explanation. Ultimately, the resource serves as both a **technical primer and a practical tutorial**, offering readers a roadmap to navigate the diverse landscape of modern prompt engineering."
 extraido_em: "2026-06-30T16:18:42Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Chain-of-Thought Prompting

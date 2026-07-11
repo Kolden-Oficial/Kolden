@@ -9,6 +9,9 @@ keywords: "('Gemini meeting notes', 'Missing meeting summary', 'Transcription te
 summary: "This document serves as an **automated record of a digital meeting** facilitated by the AI tool Gemini, specifically logging a session from February 2026. While the system attempted to capture the event, it ultimately failed to produce a summary or action items because there was **insufficient dialogue in a supported language**. Consequently, the source functions primarily as a **placeholder report** that notes the meeting's duration and technical metadata while highlighting the **limitations of the transcription software**. It provides a structured framework for post-meeting documentation that remains largely empty due to these **analytical constraints**."
 extraido_em: "2026-06-30T16:24:24Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/18 13:25 GMT-03:00 - Anotações do Gemini

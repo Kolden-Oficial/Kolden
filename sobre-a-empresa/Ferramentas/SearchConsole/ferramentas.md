@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Google Search Console — Referência de Uso
 
 Acesso aos dados de SEO/busca orgânica do Google Search Console — performance de busca (clicks, impressões, CTR, posição), sitemaps, inspeção de URL. Categoria: Analytics / SEO. **Uso direto via API com ADC** (escopo `webmasters.readonly`).

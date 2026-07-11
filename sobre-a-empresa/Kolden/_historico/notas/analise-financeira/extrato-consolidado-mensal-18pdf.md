@@ -9,6 +9,9 @@ keywords: "('Bank account statement', 'Financial services', 'Investment and cred
 summary: "This document is a **consolidated monthly bank statement** for a Santander account holder, detailing financial activities and service offerings for **July 2019**. The text is structured into functional sections, beginning with an **account summary and transaction history** that tracks credits, debits, and a final negative balance. It highlights essential banking features such as the **DDA digital payment system**, overdraft protection through **Santander Master**, and private pension options. Additionally, the statement provides context for the user’s financial environment by listing **national economic indices** and promoting specialized **career development programs** for university students."
 extraido_em: "2026-06-30T16:25:56Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (18).pdf

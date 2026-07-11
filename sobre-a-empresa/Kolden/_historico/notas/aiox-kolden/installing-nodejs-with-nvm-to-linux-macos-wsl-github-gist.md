@@ -9,6 +9,9 @@ keywords: "('Node.js installation', 'nvm version management', 'WSL environment s
 summary: "This guide provides a comprehensive walkthrough for setting up a flexible Node.js development environment on **Linux, macOS, and the Windows Subsystem for Linux (WSL)**. By utilizing the **Node Version Manager (nvm)**, developers can seamlessly install and **toggle between multiple versions** of Node.js, ensuring compatibility across various software projects. The text covers essential operations, including executing installation scripts via command-line tools, **managing Long Term Support (LTS) releases**, and migrating global packages between versions. Beyond the technical steps, the source includes a collaborative troubleshooting section where community members discuss **resolving environment-specific errors** and maintaining shell configuration files. Overall, the resource serves as both a practical tutorial and a **collaborative troubleshooting forum** for maintaining a modern JavaScript runtime environment."
 extraido_em: "2026-06-30T16:20:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Installing Node.js with nvm to Linux & macOS & WSL - GitHub Gist

@@ -9,6 +9,10 @@ keywords: "('Financial acquisition funnel', 'Hispanic community seminar', 'Lead 
 summary: "This document outlines a comprehensive **marketing and sales funnel** designed to recruit financial investors from the **Hispanic community** in Hamilton, Ontario, through a series of in-person seminars hosted by Amparo Camacho. Rather than acting as a purely educational endeavor, the project functions as a **strategic acquisition engine** that utilizes paid advertisements and automated CRM systems to drive attendance to high-frequency, small-capacity sessions. The plan meticulously details a **hybrid fee structure** and various performance scenarios, balancing the potential for high returns against risks like short timelines and the high no-show rates typical of free events. Ultimately, the initiative seeks to establish a **scalable business model** that can transform local financial networking into a repeatable, high-conversion international case study."
 extraido_em: "2026-06-30T16:09:04Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

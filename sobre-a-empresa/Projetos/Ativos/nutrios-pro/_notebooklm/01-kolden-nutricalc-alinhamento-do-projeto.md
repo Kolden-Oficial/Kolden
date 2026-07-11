@@ -9,6 +9,10 @@ keywords: "('Software as a Service', 'Nutritional calculation spreadsheets', 'Nu
 summary: "The provided text documents a strategic meeting between Vinicius Abdon and Ronan Sersil regarding the evolution of **nutritional calculation spreadsheets** into a scalable digital business. Vinicius has successfully validated the market by selling these tools, which automate complex **dietary formulations and physical assessments**, without any formal marketing efforts. To capitalize on this organic demand, the duo plans to transition the product into a **Software as a Service (SaaS)** model, introducing a recurring subscription to increase long-term value. Their partnership establishes a **60/40 profit split**, combining Vinicius’s technical nutritional data with Ronan’s expertise in **software development and market scaling**. Moving forward, they aim to prioritize **user experience and scientific accuracy** while exploring untapped opportunities for integration within gym networks."
 extraido_em: "2026-06-30T16:08:47Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # 01 | Kolden & NutriCalc | Alinhamento do Projeto

@@ -7,6 +7,17 @@ palavras-chave: [design-system, tipografia, fontes, lato, eurostile, escala, hie
 status: vigente
 atualizado-em: 2026-06-22
 relacionados: [ds-leia-me, ds-cores, ds-tokens, identidade-visual]
+tipo: nota
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/grafismos-e-auxiliares|grafismos-e-auxiliares]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tom-visual|tom-visual]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/03-componentes/leia-me|componentes]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/cores|cores]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/leia-me|design system]]"
+  - "[[sobre-a-empresa/Kolden/marca/identidade-visual|identidade visual]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/logo|logo]]"
 ---
 
 # Tipografia

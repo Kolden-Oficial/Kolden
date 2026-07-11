@@ -9,6 +9,9 @@ keywords: "('Self-hostable E2B alternatives', 'AI agent infrastructure', 'MicroV
 summary: "This guide explores a variety of **self-hostable infrastructure options** designed for executing AI agent code, serving as a roadmap for teams that need more control than the managed E2B service provides. By comparing platforms like Daytona, Microsandbox, and DifySandbox, the text categorizes solutions based on their **isolation technology**, such as microVMs or containers, and their **deployment complexity**. The overarching purpose is to help developers balance **data sovereignty and compliance** with operational overhead, highlighting the **Bring Your Own Cloud (BYOC)** model as a middle ground that keeps data in a private VPC while automating orchestration. Ultimately, the source functions as a strategic framework for selecting an environment that ensures **security, cost predictability, and low latency** for production-grade AI applications."
 extraido_em: "2026-06-30T16:22:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Top self-hostable alternatives to E2B for AI agents in 2026 | Blog - Northflank

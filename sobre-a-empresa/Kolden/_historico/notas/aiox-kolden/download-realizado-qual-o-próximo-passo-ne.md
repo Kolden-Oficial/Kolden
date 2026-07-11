@@ -9,6 +9,9 @@ keywords: "('Homebrew installation steps', 'Linux PATH configuration', 'Software
 summary: "This guide serves as a practical blueprint for **configuring a development environment** on Linux after the initial installation of Homebrew. The author focuses on the essential task of **updating the system's PATH**, which ensures the operating system can locate and execute new commands without confusion. Beyond simple path configuration, the text outlines the necessity of **installing foundational build tools** and compilers like GCC to transform a basic setup into a functional workstation. Ultimately, the purpose of these steps is to create a **stable software infrastructure** that allows specialized tools, such as the \"uv\" package manager, to be deployed and operated seamlessly."
 extraido_em: "2026-06-30T16:19:38Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Download realizado, qual o próximo passo?

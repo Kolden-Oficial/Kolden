@@ -9,6 +9,9 @@ keywords: "('Strategic Partnership Model', 'Operational Squad Structure', 'Busin
 summary: "This strategic document serves as an invitation for high-performance professionals to join Kolden, a rising **360-degree business management and marketing ecosystem** looking to scale its operations. Moving beyond the traditional agency model, the partnership offers a \"squad\" of specialists **autonomy and aggressive performance-based incentives** in exchange for operational excellence and a \"skin in the game\" mentality. The text outlines a clear transition from a founder-led startup to a **professionalized, high-growth machine** with ambitious goals to reach a multi-million dollar monthly revenue. By defining specific roles for project managers, media buyers, copywriters, and designers, Kolden aims to build a **robust operational backbone** capable of sustaining a massive expansion into the corporate and digital infoproduct markets."
 extraido_em: "2026-06-30T16:14:49Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # Proposta de Parceria Kolden: O Squad

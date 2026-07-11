@@ -9,6 +9,9 @@ keywords: "('Funnel lead acquisition', 'Medical spa marketing', 'Sales qualifica
 summary: "This guide outlines a strategic blueprint for running a **specialized marketing agency** that targets high-end medical spas and aesthetic clinics owned by Brazilians in the United States. The text details a **streamlined sales funnel** designed for speed and precision, utilizing Meta Ads to drive prospects directly to WhatsApp for immediate **pre-qualification via the BANT-A method**. By focusing on the **Ideal Customer Profile (ICP)** of high-revenue clinics, the strategy emphasizes solving the industry's \"conversion crisis\" through **Google Maps optimization** and automated lead response systems. Ultimately, the source serves as a masterclass in positioning an agency as a high-value consultant that replaces inefficient traditional advertising with **ROI-focused systems and advanced technology** to maximize the lifetime value of every patient."
 extraido_em: "2026-06-30T16:28:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # Todas as notas 01/04/2026

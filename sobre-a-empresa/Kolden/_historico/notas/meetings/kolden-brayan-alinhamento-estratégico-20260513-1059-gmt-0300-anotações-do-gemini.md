@@ -9,6 +9,9 @@ keywords: "('Business verification process', 'Technical troubleshooting', 'Video
 summary: "This document summarizes a technical meeting between Bernardo Pereira and Lucas Felipe focused on a **business verification process** conducted via mobile devices. The primary objective was to complete security requirements by troubleshooting **browser permissions and camera settings** to successfully upload a sixty-second documentary video of a job site. Beyond the technical coordination, the dialogue touches on **professional language skills** and operational logistics, including the confirmation of business addresses and pending financial transactions. Ultimately, the session concludes with the submission of the verification materials, setting a **two-day expectation for system approval** and final project alignment."
 extraido_em: "2026-06-30T16:23:40Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Kolden & Brayan | Alinhamento Estratégico - 2026/05/13 10:59 GMT-03:00 - Anotações do Gemini

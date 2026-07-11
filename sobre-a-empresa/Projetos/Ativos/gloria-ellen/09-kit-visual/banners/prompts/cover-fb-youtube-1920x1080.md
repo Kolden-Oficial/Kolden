@@ -1,3 +1,13 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/09-kit-visual/banners/prompts/hero-landing-2400x1200|hero-landing-2400x1200]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/09-kit-visual/banners/prompts/ig-feed-1080x1350|ig-feed-1080x1350]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/09-kit-visual/banners/prompts/ig-stories-1080x1920|ig-stories-1080x1920]]"
+---
+
 # Banner — Cover Facebook / YouTube — 1920x1080 (16:9)
 
 ## Uso

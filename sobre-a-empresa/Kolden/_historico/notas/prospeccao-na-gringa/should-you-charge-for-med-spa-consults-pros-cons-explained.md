@@ -9,6 +9,9 @@ keywords: "('Med spa consultations', 'Patient acquisition costs', 'Consultation 
 summary: "This comprehensive marketing guide explores the strategic debate over whether medical spas should offer **complimentary or paid consultations** to prospective clients. The author argues that for the vast majority of practices, **free consultations act as a vital low-friction entry point** that significantly increases the volume of \"at-bats\" and lowers the overall cost of patient acquisition. While charging for time is a viable filter for **supply-constrained businesses** nearing full capacity, the text suggests that allowing patients to experience professional value firsthand is the most effective way to **build trust and long-term loyalty**. Ultimately, the source provides a data-driven framework to help owners balance **provider compensation and no-show risks** while prioritizing aggressive growth and brand expansion."
 extraido_em: "2026-06-30T16:27:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # Should You Charge for Med Spa Consults? Pros & Cons Explained

@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Context7 — Referência de Uso
 
 Context7 é um serviço (e servidor MCP) da Upstash que fornece documentação de código atualizada e versionada de bibliotecas/frameworks diretamente para LLMs e editores de IA, reduzindo alucinações. Categoria: Busca / Docs.

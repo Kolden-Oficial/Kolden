@@ -9,6 +9,9 @@ keywords: "('Client Lead Qualification', 'Strategic Business Restructuring', 'Me
 summary: "The provided notes and transcript document a strategic business meeting between the **Vetor/Code consulting team** and representatives from a **logistics and transport company** to address declining marketing performance. The primary objective is a **comprehensive restructuring of digital strategies**, specifically targeting the **low quality of leads** coming from Meta, which currently result in irrelevant inquiries rather than commercial freight opportunities. To optimize conversion, the team decided to **restrict campaign hours** to 8:00 AM – 6:00 PM and refine audience segmentation to target specific industries like cosmetics and auto parts. Ultimately, the partnership aims to **leverage business intelligence and traffic management** to convert a higher volume of qualified leads into sales, with a follow-up planning session scheduled to solidify the new operational roadmap."
 extraido_em: "2026-06-30T16:24:54Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/17 13:00 GMT-03:00 - Anotações do Gemini

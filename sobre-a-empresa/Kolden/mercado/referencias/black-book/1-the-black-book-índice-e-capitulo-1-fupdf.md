@@ -9,6 +9,10 @@ keywords: "('Sales System', 'Customer Acquisition Cost', 'Sales Funnel Stages', 
 summary: "This technical guidebook by Conrado Adolpho outlines a structured **Sistema de Vendas** designed to help business owners achieve **predictable, scalable, and autonomous growth**. The core philosophy emphasizes shifting from one-stage selling to a **two-stage sales process**, which focuses on capturing lead contacts to build a powerful **customer list** for repeated engagement. By dividing operations into **Marketing, Comercial 1, and Comercial 2**, the author provides a roadmap to optimize the **Customer Acquisition Cost (CAC)** and maximize the **Lifetime Value (LTV)** of every buyer. Ultimately, the text serves as a strategic manual for transitioning from attracting anonymous consumers to cultivating **recurrent clients**, ensuring that business owners prioritize high-margin **profitability** over mere revenue volume."
 extraido_em: "2026-06-30T16:10:07Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/black-book/_indice|_indice]]"
 ---
 
 # 1 The Black Book. índice e Capitulo 1 - Fu.pdf

@@ -9,6 +9,9 @@ keywords: "('Sandbox runners', 'AI agent infrastructure', 'Secure code execution
 summary: "This comprehensive guide evaluates the top **sandbox runners** available in 2026, which are specialized tools designed to execute untrusted code in **secure, isolated environments**. The text establishes a framework for selection based on critical criteria such as **security isolation methods**, startup latency, and scalability, particularly for modern **AI agent development** and cloud-based workflows. By comparing industry leaders like E2B and Fly.io, the article provides a detailed breakdown of pricing models, language support, and unique features like **microVM technology** and persistent storage. Ultimately, the source serves as a strategic roadmap for developers to safely run user-generated scripts and machine learning tasks without compromising their **primary production systems**."
 extraido_em: "2026-06-30T16:17:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # 11 Best Sandbox Runners in 2026 | Better Stack Community

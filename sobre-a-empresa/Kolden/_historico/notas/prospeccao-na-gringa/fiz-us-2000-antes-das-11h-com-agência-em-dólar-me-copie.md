@@ -9,6 +9,9 @@ keywords: "('Global Marketing Agency', 'Brazilian Expatriates Market', 'Construc
 summary: "In this instructional guide, Enrico Delafiori outlines a strategic framework for launching a **global marketing agency** that specifically targets Brazilian expatriates working in the **U.S. construction industry**. The author advocates for a high-ticket service model centered on **Google My Business optimization**, providing clients with organic search visibility and professional branding without the recurring costs of paid traffic. By utilizing specialized tools for local SEO and outsourcing technical tasks like web design via freelance platforms, entrepreneurs can maintain high profit margins while delivering essential results. The text emphasizes a rigorous sales process involving **targeted social media advertisements**, structured qualification calls, and a tiered pricing strategy designed to secure immediate commitment and **upfront payments in dollars**. Ultimately, the guide serves as a blueprint for scaling a lean digital operation into a lucrative business by exploiting an underserved \"blue ocean\" market."
 extraido_em: "2026-06-30T16:28:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # fiz US$ 2.000 antes das 11h com Agência em Dólar 🇺🇸 - me copie

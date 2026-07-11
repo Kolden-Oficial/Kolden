@@ -9,6 +9,10 @@ keywords: "('Data deletion instructions', 'Performance Brain app', 'Facebook acc
 summary: "This document outlines the formal procedure for users to disconnect the **Performance Brain** application from their Meta accounts and ensure their personal information is purged. The process is divided into two essential stages: manually **revoking platform access** through Facebook’s security settings and submitting a **formal deletion request** via email to the developer. By following these steps, individuals can trigger a **permanent removal of data** from the company's private servers within a specified timeframe. Ultimately, the text serves as a **privacy guide** designed to give users full autonomy over their digital footprint and historical records."
 extraido_em: "2026-06-30T16:12:56Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Instruções de Exclusão de Dados do Usuário

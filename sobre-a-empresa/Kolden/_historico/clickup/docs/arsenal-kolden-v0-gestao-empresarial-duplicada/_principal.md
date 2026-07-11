@@ -5,11 +5,14 @@ bloco_origem: "Gestão Empresarial (8cdvxek-10643) — duplicado/legado"
 extraido_em: 2026-06-30
 extraido_por: claude-code (Onda B do plano _arquivo-clickup)
 relacionado: possiveis-nichos-medicina-saude.md
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden-v0-gestao-empresarial-duplicada/possiveis-nichos-medicina-saude|possiveis-nichos-medicina-saude]]"
 observacao: |
   Versão DUPLICADA/LEGADA do bloco principal "Kolden" (8cdvxek-13373).
   Estrutura paralela criada em jun/2023 com a v0 da identidade Kolden.
   A maior parte é placeholder vazio; o ouro narrativo está nos blocos
   Fundamentos/Missão/Visão/Valores/Cultura/Promessa (v2023).
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
 ---
 
 # Gestão Empresarial (Kolden v2023 — bloco duplicado)

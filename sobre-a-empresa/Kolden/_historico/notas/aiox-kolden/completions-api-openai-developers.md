@@ -9,6 +9,9 @@ keywords: "('Completions API', 'Chat Completions', 'Legacy Models', 'Text Genera
 summary: "This documentation outlines the comprehensive ecosystem of OpenAI’s developer tools, specifically contrasting the **legacy Completions API** with the modern **Chat Completions** interface. While the newer chat format uses structured message lists for its most advanced models, the completions endpoint utilizes a **freeform text prompt** and offers specialized features like **text insertion** via suffixes. Beyond these technical specifications, the text serves as a robust guide for **model optimization** and **agent construction**, providing resources for fine-tuning, safety protocols, and real-time integration. Ultimately, this source functions as a **technical roadmap** designed to help builders navigate the transition from older processing methods to the latest high-performance capabilities of **GPT-5.4**."
 extraido_em: "2026-06-30T16:19:04Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Completions API - OpenAI Developers

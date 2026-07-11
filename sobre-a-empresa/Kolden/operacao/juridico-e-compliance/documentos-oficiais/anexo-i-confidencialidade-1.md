@@ -9,6 +9,10 @@ keywords: "('Confidentiality obligations', 'Data protection measures', 'Non-disc
 summary: "This formal agreement serves as a **legal safeguard for sensitive data** exchanged between a marketing agency and its client, ensuring that proprietary business details remain private. It defines a broad scope of **protected information**, ranging from internal financial strategies to third-party secrets, while establishing strict rules against unauthorized disclosure. To ensure compliance, the document outlines specific **security measures and financial penalties** for breaches, including a significant fine that applies regardless of actual proven damages. These privacy obligations remain in effect for a **five-year duration** following the end of their professional partnership, providing a long-term framework for mutual trust and intellectual property protection."
 extraido_em: "2026-06-30T16:10:56Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Anexo I - Confidencialidade

@@ -3,6 +3,11 @@ agent: test-agent
 name: Test Agent
 role: Testing
 layer: craft
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/tests/unit/squad/fixtures/extend-test-squad/agents/test-agent|test-agent]]"
 ---
 
 # Test Agent

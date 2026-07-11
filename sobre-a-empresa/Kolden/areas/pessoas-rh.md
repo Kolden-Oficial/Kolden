@@ -11,6 +11,12 @@ fontes-drive:
   - fileId: 195BkQgFgATq9NuIS7NFKiqV-XU1usgx6iiBeFE4PPQM
     nome: "Alinhamento Kolden:"
     caminho: "04 | RH & Cultura / 05 Performance & Desenvolvimento / Feedbacks"
+tipo: nota
+area: areas
+up: "[[sobre-a-empresa/Kolden/areas/_MOC-areas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/areas/ceo-topo|CEO / topo]]"
+  - "[[sobre-a-empresa/Kolden/areas/leia-me|leia-me]]"
 ---
 
 # Área: Pessoas / RH

@@ -9,6 +9,9 @@ keywords: "('Bank account statement', 'Financial promotion campaign', 'Customer 
 summary: "This document is a **consolidated monthly bank statement** from December 2018 for a Santander client named Ronan Sergio Silva. It serves as a comprehensive financial summary, detailing **account balances, salary deposits, and various debits** such as ATM withdrawals and insurance fees. Beyond transactional data, the text functions as a marketing and information portal, promoting **credit card rewards programs**, residential insurance, and investment profile assessments. Additionally, the statement provides a broader economic context by listing **financial indices and currency exchange rates** alongside specific terms regarding overdraft limits and service packages."
 extraido_em: "2026-06-30T16:26:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (9).pdf

@@ -9,6 +9,10 @@ keywords: "('Hybrid launch architecture', 'Lead generation strategy', 'In-person
 summary: "This document outlines a strategic **hybrid launch architecture** designed to fill a series of in-person financial seminars for the Hispanic community in Ontario. Instead of using complex digital sales cycles, the plan employs a **direct seven-stage funnel** that moves leads from localized social media ads to a physical event, ultimately converting them through private financial consultations. Central to the strategy is a **personalized \"Audio Concierge\" system** via WhatsApp, which fosters human trust and minimizes no-show rates by transforming digital registrations into relational commitments. By focusing on **educational value and zero-pressure engagement**, the framework aims to bypass community skepticism while ensuring strict compliance with professional standards."
 extraido_em: "2026-06-30T16:28:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/_indice|_indice]]"
 ---
 
 # 04 — Arquitetura do Funil de Lançamento

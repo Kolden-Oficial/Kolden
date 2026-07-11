@@ -9,6 +9,9 @@ keywords: "('Speech to text', 'Audio API endpoints', 'Speaker diarization', 'Str
 summary: "The provided documentation outlines the functionality of OpenAI's **Audio API**, a comprehensive system designed for converting spoken language into text through **transcriptions and translations**. Developers can utilize various models, including **Whisper** for multilingual tasks and specialized **GPT-4o** snapshots for high-quality results and **speaker diarization**, which identifies distinct voices in a recording. The guide offers technical instructions for managing **file size limitations**, enhancing output accuracy via **prompting**, and implementing **real-time streaming** for live audio sessions. Furthermore, it suggests advanced **reliability techniques**, such as using GPT-4 for post-processing corrections, to ensure precise handling of complex vocabulary and industry-specific terminology."
 extraido_em: "2026-06-30T16:22:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Speech to text | OpenAI API

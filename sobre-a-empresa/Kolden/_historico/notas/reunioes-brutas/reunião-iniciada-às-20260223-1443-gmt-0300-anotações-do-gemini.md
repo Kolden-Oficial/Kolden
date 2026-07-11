@@ -9,6 +9,9 @@ keywords: "('Business model negotiation', 'Seminar marketing costs', 'Service fe
 summary: "This meeting transcript documents a **strategic business negotiation** between Stass Panagakos, a Canadian mortgage broker, and Ronan Sersil, a Brazilian digital marketer, regarding a promotional campaign for an upcoming Hispanic seminar. The primary tension involves a significant **discrepancy in budget and value perception**, as Panagakos labels Sersil’s initial $6,500 USD proposal as \"astronômico\" due to the high risk and low conversion predictability of the short-term event. Key themes include the challenges of **cross-border professional relationships**, such as currency exchange barriers, language hurdles, and differing cultural expectations surrounding \"product launch\" models versus simple service fees. Ultimately, the text illustrates a shift toward **relationship-building**, with Sersil offering a scaled-back $2,500 USD contraproposta and a goodwill gesture of free technical support to foster **long-term trust** despite the immediate financial impasse."
 extraido_em: "2026-06-30T16:15:41Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/23 14:43 GMT-03:00 - Anotações do Gemini

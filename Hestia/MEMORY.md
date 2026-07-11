@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Hestia
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Hestia/agents/hestia-chief|hestia-chief]]"
+---
+
 # MEMORY — Héstia (RH, Pessoas & Cultura)
 
 > Memória do squad. Esquema: **Padrões Ativos** (lições verificadas e em uso) /

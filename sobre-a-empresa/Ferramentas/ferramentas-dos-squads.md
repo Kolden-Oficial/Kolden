@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/ferramentas|ferramentas]]"
+---
+
 # Ferramentas dos Squads — Cross-check com o catálogo
 
 Mapeamento de **todas as ferramentas/APIs/plataformas/MCPs citadas** pelos squads importados

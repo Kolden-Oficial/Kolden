@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # PageSpeed Insights API — Referência de Uso
 
 API do Google que mede performance de páginas web (Core Web Vitals, Lighthouse: performance, acessibilidade, SEO, best-practices) — lab data + field data (CrUX). Categoria: Analytics / Web. **Uso direto via API** (não há MCP necessário; é uma chamada REST simples).

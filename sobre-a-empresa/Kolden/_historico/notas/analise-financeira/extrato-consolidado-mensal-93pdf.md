@@ -9,6 +9,9 @@ keywords: "('Banking transactions', 'Fraud prevention', 'Financial security tips
 summary: "This document is a **consolidated monthly bank statement** for August 2025, detailing the financial activity of a client named Ronan Sergio Silva. The report transitions from a **comprehensive summary of account balances** and credit limits to an itemized list of daily transactions, which are dominated by numerous **digital payments and Pix transfers** to various food and service providers. Beyond simple bookkeeping, the text serves a protective purpose by featuring prominent **security warnings against scams**, such as the \"gift fraud,\" alongside practical tips for maintaining digital safety. Additionally, the source outlines the user's **investment profile and service package details**, while providing a broader economic context through a table of **national financial indices** like inflation and currency exchange rates."
 extraido_em: "2026-06-30T16:26:59Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (93).pdf

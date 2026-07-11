@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Replicate — Referência de Uso
 
 Plataforma de nuvem para executar modelos de IA (imagem, vídeo, áudio, texto, LLMs) via API, sem precisar gerenciar infraestrutura de machine learning. Permite rodar modelos públicos, fazer fine-tuning e fazer deploy de modelos customizados. Categoria: IA/Mídia.

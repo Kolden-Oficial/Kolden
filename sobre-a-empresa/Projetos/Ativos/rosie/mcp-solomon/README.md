@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/mcp-solomon/prd|prd]]"
+---
+
 # MCP Íris — Solomon para agentes Kolden
 
 Servidor **Model Context Protocol** (MCP) que expõe a API Solomon (`admin-api.solomon.com.br`) como tools para agentes Kolden que atendem à cliente **Rosie**. Cliente-scoped na v1 (ver `adr/0001-path-isolado-por-cliente.md`); promoção condicional para `Dedalo/mcp/solomon/` quando um 2º cliente Kolden adotar Solomon.

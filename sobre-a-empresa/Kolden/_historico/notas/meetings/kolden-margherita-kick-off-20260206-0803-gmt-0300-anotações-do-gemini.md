@@ -9,6 +9,9 @@ keywords: "('Revenue Growth Goals', 'Delivery Strategy Optimization', 'Profit Ma
 summary: "This meeting transcript details a **strategic kick-off** led by Ronan Sersil to transform the Kolden & Margherita pizzeria into a **high-revenue culinary landmark** with a monthly faturamento goal of R$ 100,000. To achieve this, the team plans to address operational bottlenecks like **manual WhatsApp delivery** and high product costs by shifting the owners' focus from daily tasks to **strategic supplier negotiations** and \"food porn\" style marketing. A major component of their growth involves **market segmentation**, specifically targeting affluent neighborhoods with **premium gourmet pizzas** while maintaining a competitive edge over industrial chains through their authentic **wood-fired, natural fermentation process**. The roadmap emphasizes a **90-day transformation plan** that prioritizes increasing profit margins through rigorous cost engineering and professional digital advertising."
 extraido_em: "2026-06-30T16:23:49Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Kolden & Margherita | Kick-Off - 2026/02/06 08:03 GMT-03:00 - Anotações do Gemini

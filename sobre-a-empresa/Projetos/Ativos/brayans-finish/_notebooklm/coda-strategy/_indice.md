@@ -3,6 +3,11 @@ notebook_id: "592bcf35-c865-4a50-9cd2-44b9f83ac11b"
 notebook_titulo: "Coda Strategy Meeting with Brayan’s Finish"
 total_fontes: 1
 extraido_em: "2026-06-30T16:07:13Z"
+tipo: projeto
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/coda-strategy/reunião-iniciada-às-2026_04_02-20_51-gmt-03_00-anotações-do-gemini-1docx|reunião-iniciada-às-2026_04_02-20_51-gmt-03_00-anotações-do-gemini-1docx]]"
 ---
 
 # Índice — Coda Strategy Meeting with Brayan’s Finish

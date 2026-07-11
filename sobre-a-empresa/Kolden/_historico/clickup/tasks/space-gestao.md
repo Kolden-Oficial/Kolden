@@ -5,6 +5,10 @@ clickup_space_nome: "Gestão"
 total_tasks: 62
 extracted_at: 2026-06-30
 nota: "Quase tudo é a Central de Ferramentas e Acessos (60 ferramentas) + 1 task em Contas a Pagar."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/INDEX|INDEX]]"
 ---
 
 # Tasks — Space Gestão

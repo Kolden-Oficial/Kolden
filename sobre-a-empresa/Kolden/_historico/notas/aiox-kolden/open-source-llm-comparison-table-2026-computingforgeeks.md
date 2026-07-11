@@ -9,6 +9,9 @@ keywords: "('Open Source LLMs', 'Model Performance Benchmarks', 'Software Licens
 summary: "This technical guide provides a comprehensive overview of the **open-source large language model landscape in early 2026**, highlighting how these accessible versions now rival private AI in performance. The author meticulously categorizes the market into distinct families such as **Alibaba’s Qwen, Meta’s Llama 4, and DeepSeek**, evaluating them based on their **architectural efficiency, benchmark reasoning scores, and specific licensing terms**. Beyond raw data, the text offers practical **self-hosting hardware requirements** and performance metrics for running these systems locally using tools like **Ollama**. Ultimately, the document serves as a strategic roadmap for developers and researchers to select the **optimal model for specialized tasks** like coding, long-context analysis, or mobile deployment."
 extraido_em: "2026-06-30T16:21:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Open Source LLM Comparison Table (2026) - ComputingForGeeks

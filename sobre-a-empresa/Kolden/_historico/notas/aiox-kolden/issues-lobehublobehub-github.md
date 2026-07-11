@@ -9,6 +9,9 @@ keywords: "('Bug Reports', 'Feature Requests', 'MCP Integration', 'Self-hosting 
 summary: "This text displays the **active issue tracker** for LobeHub, an open-source project hosted on GitHub that focuses on **AI-driven application development**. The page serves as a transparent **project management hub** where developers and users collaborate to identify **software bugs**, propose **new feature requests**, and improve existing documentation. Each entry is meticulously organized by **priority levels** and descriptive labels, such as **self-hosting configurations**, **Model Context Protocol (MCP)** integrations, and platform-specific performance on **web and desktop clients**. Ultimately, the source illustrates a vibrant **community-driven workflow** dedicated to refining an intelligent platform through constant feedback and technical troubleshooting."
 extraido_em: "2026-06-30T16:20:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Issues · lobehub/lobehub - GitHub

@@ -8,6 +8,11 @@ author_ids: [60963240]
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-13273/
 extracted_at: 2026-06-30
 nota: "Consolidação dos 5 cargos Pleno em 1 arquivo — mesmo path, mesma estrutura. Mantido na íntegra para auditoria."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/descritivo-de-cargos/junior/cargos-junior-consolidado|cargos-junior-consolidado]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/descritivo-de-cargos/senior/cargos-senior-consolidado|cargos-senior-consolidado]]"
 ---
 
 # Descritivo de Cargos — PLENO (consolidado)

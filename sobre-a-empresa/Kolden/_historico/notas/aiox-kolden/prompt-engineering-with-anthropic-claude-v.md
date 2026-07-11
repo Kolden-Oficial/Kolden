@@ -9,6 +9,9 @@ keywords: "('Complex prompt engineering', 'Anthropic Claude 3', 'Prompt structur
 summary: "This instructional material serves as a final capstone on building **complex prompts from scratch** using Anthropic's Claude 3 model. It outlines a **guided structure** for crafting sophisticated instructions, recommending that users initially include multiple prompt elements and then **refine and slim down** the text once desired results are achieved. Through practical applications in **legal services, financial analysis, and coding**, the text emphasizes that **prompt engineering is scientific trial and error** where the specific ordering of information can significantly impact performance. Ultimately, the resource aims to transform students into **expert LLM whisperers** by teaching them how to **merge, remix, and adapt** advanced techniques for specialized professional tasks."
 extraido_em: "2026-06-30T16:22:45Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # prompt-engineering-with-anthropic-claude-v-3/09_Complex_Prompts_from_Scratch.ipynb at main - GitHub

@@ -9,6 +9,9 @@ keywords: "('Agentic software stack', 'AI-native code editors', 'Secure executio
 summary: "The **Silicon Valley Blueprint** outlines a monumental transition in software engineering from human-led coding to **agent-centric orchestration** within a sophisticated, multi-layered technical stack. The report details how **AI-native development environments** and command-line interfaces have replaced traditional tools, allowing autonomous agents to manage entire codebases with deep **semantic understanding**. This modern ecosystem is supported by **secure execution sandboxes** that isolate untrusted code and specialized **orchestration frameworks** that manage the flow of data between models and tools. Ultimately, the text serves as a technical guide for building reliable, **context-aware software** in an era where developers focus on high-level architecture while AI agents handle the speed and scalability of production."
 extraido_em: "2026-06-30T16:22:13Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # The Silicon Valley Blueprint: A Technical Compendium of the 2026 Agentic Software Stack

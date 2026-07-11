@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/docs/pesquisa-referencias/leia-me|leia-me]]"
+---
+
 # Deck Canva — "Apresentação: Monitoramento Terapêutico Contínuo"
 
 > Fonte: `https://canva.link/9dik2ezuah3wbjy` → `https://www.canva.com/design/DAHLeSsolNw/`

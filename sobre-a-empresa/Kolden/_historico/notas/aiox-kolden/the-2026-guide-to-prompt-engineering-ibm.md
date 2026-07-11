@@ -9,6 +9,9 @@ keywords: "('Prompt engineering techniques', 'Agentic prompting', 'Example-based
 summary: "IBM’s 2026 guide presents **prompt engineering as the new coding**, serving as a comprehensive roadmap for effectively communicating with generative AI through natural language. The text is structured as a technical curriculum, moving from foundational **example-based techniques** to sophisticated **agentic prompting** and high-level **prompt optimization** strategies. A central theme of the resource is the shift toward **context engineering**, which emphasizes that mastering AI requires a deep understanding of user intent, structured data, and model-specific behaviors. Ultimately, the guide aims to provide developers and enthusiasts with the **security insights and practical tutorials** necessary to build reliable, high-performance applications in an evolving machine-learning landscape."
 extraido_em: "2026-06-30T16:22:10Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # The 2026 Guide to Prompt Engineering - IBM

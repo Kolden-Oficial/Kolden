@@ -9,6 +9,9 @@ keywords: "('Linux Operating System', 'Ubuntu Distribution', 'WSL2 Functionality
 summary: "The provided text serves as a beginner-friendly guide to bridging the gap between different operating systems for software development. It defines **Ubuntu** as a popular, user-friendly distribution of **Linux**, which is the preferred environment for running advanced programming tools and artificial intelligence. To make these tools work on a PC, the author introduces **WSL2** as a seamless **integration layer** that allows Linux to operate inside Windows without technical friction. Ultimately, the source functions as a **practical onboarding resource** designed to demystify technical jargon and help users prepare their computers for specialized software installations."
 extraido_em: "2026-06-30T16:22:31Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # WSL2 e Ubuntu para Leigos

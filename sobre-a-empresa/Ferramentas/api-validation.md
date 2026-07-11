@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/ferramentas|ferramentas]]"
+---
+
 # Validação de API Keys — Ferramentas do Kolden
 
 Cada chave do Infisical foi testada com **uma chamada autenticada real** (endpoint read-only,

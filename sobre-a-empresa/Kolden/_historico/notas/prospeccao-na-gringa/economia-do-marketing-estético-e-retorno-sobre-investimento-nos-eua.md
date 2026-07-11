@@ -9,6 +9,9 @@ keywords: "('Aesthetic Marketing Budgets', 'Clinical Revenue Models', 'Return on
 summary: "The provided text outlines a strategic framework for digital marketing agencies to successfully sell their services to medical spas in the United States by highlighting a massive **discrepancy between service costs and potential profits**. It demonstrates that while elite aesthetic clinics maintain **robust marketing budgets** ranging from thousands to tens of thousands of dollars monthly, the proposed agency fee is positioned as a highly **affordable, low-risk investment**. The source further justifies this value proposition by detailing the **high-ticket nature of aesthetic treatments**, noting that a single patient acquisition can generate enough revenue to instantly cover the agency's entire contract. Ultimately, the text serves as a guide for constructing an **irrefutable sales pitch** centered on the high **lifetime value of patients** and the ease of achieving a positive return on investment."
 extraido_em: "2026-06-30T16:27:34Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # Economia do Marketing Estético e Retorno sobre Investimento nos EUA

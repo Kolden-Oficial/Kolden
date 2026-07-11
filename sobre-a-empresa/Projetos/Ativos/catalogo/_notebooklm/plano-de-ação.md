@@ -9,6 +9,10 @@ keywords: "('Strategic Marketing Planning', 'Affiliate Business Models', 'Compet
 summary: "This comprehensive business framework outlines a twelve-phase **strategic roadmap** designed to guide a two-person team from the initial concept to the launch of their first **digital marketing funnel**. The text prioritizes a data-driven approach by mandating an intensive **competitive benchmark** phase, where thirty global and local rivals are analyzed to uncover winning patterns in creative narratives, traffic sources, and conversion paths. A significant portion of the plan is dedicated to establishing a robust **technical infrastructure**, ensuring that tracking tools, server-side configurations, and brand assets are professionalized before any capital is deployed. By dividing specific operational duties between partners and focusing on a **minimalist execution strategy**, the document serves as a practical blueprint for building a scalable affiliate marketing or social commerce operation."
 extraido_em: "2026-06-30T16:08:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # Plano de Ação

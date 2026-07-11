@@ -1,3 +1,17 @@
+---
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/tasks/_overview|_overview]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/tasks/space-comercial|space-comercial]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/tasks/space-gestao|space-gestao]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/tasks/space-kolden|space-kolden]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/tasks/space-marketing|space-marketing]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/tasks/space-pessoas-e-cultura|space-pessoas-e-cultura]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/tasks/space-produtos|space-produtos]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/tasks/space-projetos|space-projetos]]"
+---
+
 # Arquivo ClickUp — Kolden (espelho local)
 
 > Extração iniciada em **2026-06-30** via MCP oficial do ClickUp (workspace `9007134163`).

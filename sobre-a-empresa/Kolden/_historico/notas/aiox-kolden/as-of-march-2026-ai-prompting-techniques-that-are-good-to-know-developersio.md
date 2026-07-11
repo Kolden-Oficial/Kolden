@@ -9,6 +9,9 @@ keywords: "('Prompt Engineering Evolution', 'Adaptive Reasoning Structures', 'Co
 summary: "This article serves as a modern guide to the evolving landscape of **AI prompt engineering** as of early 2026, highlighting how rapid model advancements have rendered many traditional strategies obsolete. The text contrasts emerging, high-performance methods like **Adaptive Graph of Thoughts** and **weighted self-consistency** against \"deprecated\" habits, such as emotional manipulation, persona-based roleplay, or redundant step-by-step instructions for native reasoning models. By synthesizing recent research, the author argues for a transition toward **Context Engineering**, where the focus shifts from finding \"magic words\" to designing sophisticated **structural frameworks and dynamic reasoning paths**. Ultimately, the source functions as a strategic update for professionals, emphasizing that as models become more autonomous, effective interaction requires **simpler instructions for high-tier models** and more rigorous data management rather than complex prompt scaffolding."
 extraido_em: "2026-06-30T16:18:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # As of March 2026, AI prompting techniques that are good to know | DevelopersIO

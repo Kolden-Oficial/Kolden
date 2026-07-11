@@ -9,6 +9,10 @@ keywords: "('Weekly schedule', 'Appointment booking', 'Time management', 'Google
 summary: "This document functions as a **digital scheduling interface** designed to organize appointments over a specific **seven-day period** in March 2026. The layout utilizes a **chronological grid** that maps out hourly time slots across the week, beginning on a Sunday and concluding on a Saturday. By providing an option to **sync with Google Calendar**, the tool emphasizes its primary purpose of **efficient time management** and external integration for the user."
 extraido_em: "2026-06-30T16:08:46Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # Agendamentos _ Cauly.pdf

@@ -9,6 +9,11 @@ author_ids: [60963240]
 edited_by: 60963240
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-3903
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-documentados/juridico/checklist-de-contrato|checklist-de-contrato]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-documentados/juridico/script-de-mensagem|script-de-mensagem]]"
 ---
 
 # Processo Jurídico v1.0 → 29/11/2023

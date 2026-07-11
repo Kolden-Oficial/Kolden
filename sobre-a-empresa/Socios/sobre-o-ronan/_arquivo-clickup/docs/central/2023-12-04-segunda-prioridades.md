@@ -9,6 +9,11 @@ author_ids: [60963240]
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-43233/
 extracted_at: 2026-06-30
 nota: "Sub-página Central da rotina do Ronan da semana 04/12/2023. 4 quadros paralelos (Kolden, Hiset, Gaya, Pessoal) - mas apenas Kolden e Hiset com conteúdo. Hiset é o mais detalhado: mostra que em dez/2023 toda a F5 estava em construção."
+tipo: nota
+area: socios
+up: "[[sobre-a-empresa/Socios/_MOC-socios]]"
+relacionado:
+  - "[[sobre-a-empresa/Socios/sobre-o-ronan/_arquivo-clickup/docs/central/estrutura-template-vazia|estrutura-template-vazia]]"
 ---
 
 # Central — Rotina 04/12/2023 (Segunda)

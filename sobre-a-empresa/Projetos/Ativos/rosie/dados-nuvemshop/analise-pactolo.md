@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/dados-nuvemshop/analise-peitho|analise-peitho]]"
+---
+
 # Análise Pactolo — Rosie (Nuvemshop)
 
 **Analista:** Squad Pactolo (FP&A) — Kolden

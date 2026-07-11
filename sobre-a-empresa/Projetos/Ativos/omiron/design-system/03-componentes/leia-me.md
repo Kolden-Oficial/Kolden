@@ -16,6 +16,11 @@ relacionados:
   - 02-tokens/tokens.css
   - 02-tokens/tailwind.tokens.js
   - 03-componentes/superficies.md
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/design-system/03-componentes/superficies|superficies]]"
 ---
 
 # Componentes — Omiron (v1)

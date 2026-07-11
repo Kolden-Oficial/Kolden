@@ -9,6 +9,10 @@ keywords: "('Motorcycle protective cover', 'Waterproof leather material', 'UV ra
 summary: "This document is a digital product listing from the Amazon Brazil marketplace featuring a **heavy-duty motorcycle cover** manufactured by Star-Loren, specifically designed for the BIZ 125 CC model. The text highlights the item's technical superiority, emphasizing its **waterproof leather construction** and specialized **anti-UV and anti-oxidant layers** that defend against harsh environmental elements like rain, sun, and industrial pollutants. Beyond the primary product specifications, the page serves as a commercial hub, displaying **customer ratings, pricing incentives**, and a curated selection of **complementary vehicle accessories**. Ultimately, the source functions as a comprehensive sales interface intended to validate the product’s quality through **verified user testimonials** while streamlining the consumer’s purchasing journey."
 extraido_em: "2026-06-30T16:09:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa de Cobrir Moto em Couro Impermeável Proteção Sol Chuva UV Com Forro Anti Riscos (BIZ 125 CC) _ Amazon.com.br.pdf

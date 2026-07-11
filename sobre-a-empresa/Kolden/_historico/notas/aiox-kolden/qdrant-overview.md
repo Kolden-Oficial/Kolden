@@ -9,6 +9,9 @@ keywords: "('Vector Search Engine', 'Data Management', 'Deployment Models', 'Sca
 summary: "This comprehensive documentation provides a structural and functional roadmap for **Qdrant**, a high-performance **vector database** designed for advanced information retrieval. The text explains how **embedding models** transform unstructured data into **dense vectors** to enable **semantic search**, while also utilizing **sparse vectors** for precise **lexical matching**. To ensure production readiness, the guide outlines essential **scaling considerations**, such as optimizing memory through disk storage, implementing **payload indexes** for efficient filtering, and maintaining high availability via **sharding and replication**. Ultimately, the source serves as a technical manual to help developers navigate various **deployment models**—from open-source to managed cloud—while leveraging **hybrid retrieval** to achieve a balance between conceptual depth and keyword accuracy."
 extraido_em: "2026-06-30T16:21:51Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Qdrant Overview

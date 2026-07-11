@@ -9,6 +9,10 @@ keywords: "('Healthcare Facilities Registry', 'Medical Clinics', 'Dental Establi
 summary: "This document serves as an official directory for the **Cadastro Nacional de Estabelecimentos de Saúde (CNES)**, specifically listing various medical centers and specialty clinics located in Brazil. The text is structured as a comprehensive **administrative database**, organizing healthcare entities by their unique **CNES identification numbers**, business names, and corporate tax identifiers (**CNPJ**). The diverse range of facilities included—spanning from **dentistry and psychology** to **specialized surgery and physical therapy**—reflects the broad spectrum of outpatient services registered within the national healthcare system. Ultimately, the source functions as a **regulatory inventory** designed to provide transparency and formal oversight for health service providers in the region."
 extraido_em: "2026-06-30T16:07:54Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # CnesWeb - Cadastro Nacional de Estabelecimentos de Saúde

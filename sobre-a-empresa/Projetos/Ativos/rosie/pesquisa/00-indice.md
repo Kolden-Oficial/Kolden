@@ -7,6 +7,15 @@ palavras-chave: [pesquisa, rosie, mercado, posicionamento, persona, tom-de-voz, 
 status: rascunho
 atualizado-em: 2026-06-23
 relacionados: [01-mercado-e-concorrentes, 02-posicionamento, 03-persona-icp, 04-tom-de-voz, ../brandbook/00-indice]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/pesquisa/01-mercado-e-concorrentes|01-mercado-e-concorrentes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/pesquisa/02-posicionamento|02-posicionamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/pesquisa/03-persona-icp|03-persona-icp]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/pesquisa/04-tom-de-voz|04-tom-de-voz]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/pesquisa/05-benchmark-ao-vivo-2026-07-01|05-benchmark-ao-vivo-2026-07-01]]"
 ---
 
 # Pesquisa de marca — Rosie

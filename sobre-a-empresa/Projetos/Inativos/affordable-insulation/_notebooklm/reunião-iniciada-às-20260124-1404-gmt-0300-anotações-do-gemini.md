@@ -9,6 +9,10 @@ keywords: "('Strategic Marketing Restructuring', 'Lead Qualification Strategies'
 summary: "This transcript documents a strategic business meeting where **Ronan Sersil and Bernardo Vicenzo Pereira** of Coden present a comprehensive **four-phase marketing and operational proposal** to Kaylon Teixeira. The primary objective is to revitalize Teixeira’s business growth by addressing **inefficient digital advertising spend** on Google and Meta, while simultaneously streamlining his workflow through the implementation of a **CRM and customized management spreadsheets**. Despite the client's initial hesitation regarding costs and past frustrations with other agencies, the parties successfully negotiate a **monthly investment of $1,875**, which covers both active media traffic and specialized labor for **copywriting and video editing**. Ultimately, the text serves as a roadmap for a partnership focused on **lead qualification and data-driven management**, concluding with a tentative agreement pending final approval from Teixeira’s business partner."
 extraido_em: "2026-06-30T16:07:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/24 14:04 GMT-03:00 - Anotações do Gemini

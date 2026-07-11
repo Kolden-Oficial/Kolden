@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/07-instrumentacao/planilha-acompanhamento|planilha-acompanhamento]]"
+---
+
 # GATE dia 6 — Plano de correção
 
 **Data:** 2026-07-08.

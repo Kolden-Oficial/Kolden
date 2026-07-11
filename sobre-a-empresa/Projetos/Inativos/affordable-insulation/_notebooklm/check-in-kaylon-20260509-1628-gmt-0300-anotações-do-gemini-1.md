@@ -9,6 +9,10 @@ keywords: "('Marketing Campaign Performance', 'Geographical Lead Targeting', 'St
 summary: "The source document provides a detailed log of a strategic **business check-in meeting** held in May 2026 between Kaylon Teixeira and his marketing team. The discussion centers on the **optimization of digital campaigns** and geographic expansion into areas like New Hampshire and Massachusetts to capture higher-quality **B2B and B2C leads**. Key tactical priorities include implementing **automated email follow-ups**, managing social media presence, and leveraging the **Mass Save government program** for high-value commercial projects. Beyond technical metrics, the notes highlight a collaborative culture where the team balances aggressive **growth strategies** with personal rapport and professional accountability. Overall, the text serves as a roadmap for scaling a specialized service business through **targeted advertising** and improved lead management systems."
 extraido_em: "2026-06-30T16:07:01Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Check-in Kaylon - 2026/05/09 16:28 GMT-03:00 - Anotações do Gemini

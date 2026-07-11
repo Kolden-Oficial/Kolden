@@ -9,6 +9,9 @@ keywords: "('Prevention of fraud', 'Bank account services', 'Financial security 
 summary: "This document is a **consolidated monthly statement** from Santander Brazil for March 2024, providing a comprehensive overview of a client's **financial activity and account status**. The primary focus is on **security awareness**, featuring extensive warnings about the \"gift scam\" and specific protocols to help customers avoid **fraudulent payment requests** or phishing attempts. Beyond these safety measures, the text details a **university service package** with specific transaction limits and tracks **global economic indices** such as inflation rates and currency exchange values. Ultimately, the source serves as both a **functional banking record** and an educational tool designed to foster **financial vigilance** and digital safety."
 extraido_em: "2026-06-30T16:26:45Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (75).pdf

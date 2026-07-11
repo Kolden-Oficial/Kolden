@@ -1,3 +1,9 @@
+---
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+---
+
 # NutriOS Pro — landing de venda direta
 
 Landing page single-page para venda direta do SaaS a nutricionistas clínicos.

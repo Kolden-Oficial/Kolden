@@ -6,6 +6,8 @@ extraido_por: claude-code (Onda D do plano _arquivo-clickup)
 canais_total: 8
 canais_extraidos: 5 (4 públicos + 1 privado Mind)
 canais_excluidos: 3 (DMs privadas — regra de privacidade)
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
 ---
 
 # Chats ClickUp — Inventário Onda D

@@ -74,3 +74,14 @@ desktop.ini
 
 # gerados por crawlee (arquivos grandes de typedoc)
 **/api-typedoc.json
+
+# ===== Obsidian (vault na raiz) =====
+# Versiona a config compartilhada (.obsidian/app.json, appearance, plugins);
+# ignora só o que é volátil/por-máquina.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/snippets/.DS_Store
+# file-recovery guarda snapshots grandes das notas — não versionar
+.obsidian/backup/
+**/.trash/

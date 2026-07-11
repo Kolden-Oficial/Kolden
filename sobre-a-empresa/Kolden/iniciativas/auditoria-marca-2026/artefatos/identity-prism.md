@@ -3,6 +3,15 @@ titulo: "Brand Identity Prism — Kolden (proposta de identidade de marca)"
 status: rascunho-proposta
 data: 2026-06-23
 autor: Aglaia/kapferer
+tipo: nota
+area: iniciativas
+up: "[[sobre-a-empresa/Kolden/iniciativas/_MOC-iniciativas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/arquetipo|arquetipo]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/maturidade-design|maturidade-design]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/posicionamento|posicionamento]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/proposta-mensagens-chave|proposta-mensagens-chave]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/proposta-voz-e-tom|proposta-voz-e-tom]]"
 ---
 
 # Brand Identity Prism da Kolden

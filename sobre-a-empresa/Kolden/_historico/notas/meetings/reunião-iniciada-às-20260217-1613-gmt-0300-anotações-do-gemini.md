@@ -9,6 +9,9 @@ keywords: "('IAGAM Project Unification', 'Traffic Investment Strategy', 'Lead Ac
 summary: "This document summarizes a strategic meeting between Ronan Sersil and Alexander Max regarding the **unification of their business ventures**—Code and Vetory—under a primary new project called **IAGAM**. The leaders outline a transition where **80% of their operational focus** shifts to this new gambling-oriented platform, utilizing an aggressive **acquisition funnel** involving Instagram and Telegram to convert a massive database of one million leads. Beyond the technical implementation and **detailed budget allocations** for traffic and infrastructure, the conversation explores a **long-term growth mindset**, including the possibility of a dedicated physical office and team expansion. Interspersed with these professional plans are informal discussions regarding a colleague’s health and the **perceived risks of the Nipah virus**, reflecting a high level of personal trust and a commitment to building a **self-sustaining business ecosystem**."
 extraido_em: "2026-06-30T16:24:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/17 16:13 GMT-03:00 - Anotações do Gemini

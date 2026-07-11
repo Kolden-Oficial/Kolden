@@ -9,6 +9,9 @@ keywords: "('System configuration hooks', 'Session memory automation', 'Command 
 summary: "This guide provides technical instructions for configuring advanced system triggers known as **hooks**, which automate background tasks like recording chat history or saving session summaries. Despite the availability of these features, the author advocates for a **minimalist setup approach** to ensure the robot becomes operational as quickly as possible. By prioritizing a **Minimum Viable Product (MVP)** mindset, the text instructs the user to bypass complex automation settings in favor of reaching the core functionality. The tutorial concludes with specific navigational steps, explaining how to use the **spacebar to select options** within a terminal interface to successfully skip this stage."
 extraido_em: "2026-06-30T16:22:51Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # ◇  Configure skills now? (recommended)

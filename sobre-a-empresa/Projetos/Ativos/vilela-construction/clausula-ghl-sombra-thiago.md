@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/README|README]]"
+---
+
 # Cláusula GHL sombra — texto pronto para check-in escrito com Thiago Araujo
 
 > **Contexto:** decisão D2 do roadmap Google Ads (2026-07-09) definiu que os leads da Vilela Construction serão persistidos temporariamente na location Kolden `1Jo7tMynqRtbpB3GHuOd` do GHL até o mês 3 do contrato, quando o CRM próprio da Vilela pode ser ativado via aditivo.

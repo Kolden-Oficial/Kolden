@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/README|README]]"
+---
+
 # 04 — Eventos web (SDK JavaScript)
 
 Fonte: https://docs.solomon.com.br/events/web e https://docs.solomon.com.br/events/events

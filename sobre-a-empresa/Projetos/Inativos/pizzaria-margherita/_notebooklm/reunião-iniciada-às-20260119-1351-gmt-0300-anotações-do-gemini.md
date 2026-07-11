@@ -9,6 +9,10 @@ keywords: "('Delivery Sales Decline', 'Strategic Content Creation', 'Revenue Gro
 summary: "This source document contains the summary and transcript of a strategic meeting between the owners of a **pizza and burger delivery business** and Coden, a **business management consultancy**. The primary objective of the session is to diagnose **operational bottlenecks**, such as stagnant delivery sales and ineffective paid advertising, while addressing the absence of a **data-driven marketing strategy**. Throughout the discussion, the consultant emphasizes the necessity of implementing a **CRM system** and a structured **content plan** to transform random promotions into a predictable growth model. Ultimately, the text serves as a foundational discovery call intended to align the owners' goal of reaching **80,000 in monthly revenue** with a formal, forthcoming **strategic partnership proposal**."
 extraido_em: "2026-06-30T16:09:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/19 13:51 GMT-03:00 - Anotações do Gemini

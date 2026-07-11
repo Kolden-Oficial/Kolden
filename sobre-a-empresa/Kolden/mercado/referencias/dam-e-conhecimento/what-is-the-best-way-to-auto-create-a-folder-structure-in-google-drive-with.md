@@ -9,6 +9,10 @@ keywords: "('Automated folder creation', 'Google Drive templates', 'Google Apps 
 summary: "This Reddit discussion explores efficient methods for **automating complex folder hierarchies** and document creation within Google Drive using tools like **n8n, Airtable, and Google Apps Script**. The original poster outlines a need for a system that can generate specific subfolders and **templated files** tailored to different project types, such as copywriting or creative direction, across both professional and personal accounts. Community members suggest several technical solutions, ranging from a \"quick hack\" involving **unzipping pre-structured archives** to more robust, code-based approaches using **domain-wide delegation** or form submissions. Ultimately, the text serves as a collaborative troubleshooting guide for users looking to replace manual file organization with **programmatic workflows** that maintain consistency and save time."
 extraido_em: "2026-06-30T16:16:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # What is the best way to auto create a folder structure in google drive with docs generated from templates inside of them? Airtable +n8n? : r/gsuite - Reddit

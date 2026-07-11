@@ -7,6 +7,24 @@ status: "ativo"
 drive_folder_id: "1nKzB1JP1h3zn2ahBGoxQloVIc2ElC8px"
 workspace_projeto: "Projetos/bvb-financas"
 atualizado_em: "2026-07-06"
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/concorrencia|concorrencia]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/conteudo|conteudo]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/decisoes|decisoes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/fundamentos-marca-v1|fundamentos-marca-v1]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/indice-de-ativos|indice-de-ativos]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/infoprodutos|infoprodutos]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/marca|marca]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/operacoes|operacoes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/personas|personas]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/posicionamento|posicionamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/sistema|sistema]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/status|status]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/tom-de-voz|tom-de-voz]]"
 ---
 
 # Dossiê — BVB Finanças

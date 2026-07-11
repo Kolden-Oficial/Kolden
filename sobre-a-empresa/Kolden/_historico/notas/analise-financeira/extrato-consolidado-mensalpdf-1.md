@@ -9,6 +9,9 @@ keywords: "('Fraud prevention tips', 'Bank statement summary', 'Transaction hist
 summary: "This document is a comprehensive **monthly consolidated bank statement** for a Santander Select client, detailing financial activity and account status for January 2026. The text begins with critical **security warnings and fraud prevention tips**, specifically educating the user on how to avoid the \"gift scam\" and protect their digital credentials. Structurally, it provides a transparent overview of the account's **transactional history**, including categorized debits, credit card payments, and PIX transfers, alongside a summary of **investment holdings** and the client's risk profile. Finally, the report outlines the user's **service package benefits** and provides a broader economic context through updated financial indices and currency exchange rates."
 extraido_em: "2026-06-30T16:27:04Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal.pdf

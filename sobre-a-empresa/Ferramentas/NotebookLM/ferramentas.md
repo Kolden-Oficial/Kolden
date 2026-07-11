@@ -6,6 +6,11 @@ categoria: ferramenta
 palavras-chave: [notebooklm, extracao, conhecimento, google, sdk, python, cookie]
 status: oficial
 atualizado-em: 2026-06-30
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/claude-code-notebooklm-superclaude|claude-code-notebooklm-superclaude]]"
 ---
 
 # NotebookLM — vendor de extração de conhecimento

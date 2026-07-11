@@ -9,6 +9,10 @@ keywords: "('Affiliate Marketing', 'E-commerce Social', 'Competitor Analysis', '
 summary: "This document serves as a comprehensive **centralized control hub** for an affiliate marketing business, specifically designed to manage a portfolio of product recommendations across various social channels. It meticulously tracks a **broad inventory of consumer goods**, ranging from home accessories to pet supplies, while documenting the **marketing funnels and competitive landscape** within the Brazilian digital economy. The source details a sophisticated **operational strategy** that utilizes automated Telegram groups and social media tracking to convert traffic into sales commissions. Furthermore, it functions as a **technical repository**, housing essential metadata such as tracking links, competitor benchmarks, and administrative access credentials for various advertising and automation platforms."
 extraido_em: "2026-06-30T16:08:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # 00 | Controle

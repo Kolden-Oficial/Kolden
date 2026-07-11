@@ -9,6 +9,9 @@ keywords: "('Ad account structure', 'Operational security measures', 'API data i
 summary: "This document provides a detailed summary of a meeting focused on **securing and organizing advertising account structures** during a professional transition. The strategy emphasizes **mitigating operational risks** by isolating client accounts from central failures and utilizing personal profiles to streamline authentication and API integrations. To ensure a **transparent and stable handover**, the text outlines the removal of third-party access and the creation of backup systems for real-time data dashboards. Ultimately, the source serves as a roadmap for **maintaining technical integrity** and clear documentation as responsibilities shift within the team."
 extraido_em: "2026-06-30T16:25:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/05/05 09:23 GMT-03:00 - Anotações do Gemini

@@ -6,6 +6,9 @@ segmento: "Estúdio de validação e escala de ofertas digitais (operação inte
 status: "inativo"
 drive_folder_id: "1ajz4jRxaZZowiRIw1UqlIntn3nJAwj1L"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: the-hybrid-growth-factory
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — The Hybrid Growth Factory

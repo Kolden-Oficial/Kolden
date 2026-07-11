@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Liceu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Liceu/agents/liceu-chief|liceu-chief]]"
+---
+
 # Memória do Squad Liceu
 
 > Auto-aprendizado do squad de Biblioteca de Mentes. Atualizado pelo `ritual-de-encerramento` ao fim de

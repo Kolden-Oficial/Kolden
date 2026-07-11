@@ -9,6 +9,9 @@ keywords: "('Business Identity Standardization', 'Strategic Financial Planning',
 summary: "This strategic alignment document summarizes a meeting focused on consolidating the business model and establishing clear financial growth targets through **2026**. The company will adopt a **centralized umbrella brand** structure, allowing diverse projects to operate as independent business units while maintaining a professionalized, standardized identity. Financial goals are prioritized through a **tiered recurring revenue model**, specifically targeting monthly milestones that scale from 30,000 to 100,000 BRL by acquiring new international contracts with **increasing ticket averages**. To ensure long-term stability, the partners established a **progressive pro-labore system** and standardized all financial reporting in **US dollars** to mitigate exchange rate volatility. The operational roadmap includes immediate next steps for refining the **Profit and Loss (DRE) statement** and implementing an active sales strategy to hit specific quarterly targets."
 extraido_em: "2026-06-30T16:23:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Alinhamento Estratégico - 2026/05/25 18:46 GMT-03:00 - Anotações do Gemini

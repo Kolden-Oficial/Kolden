@@ -1,3 +1,13 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/copy/rsa-bathroom|rsa-bathroom]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/copy/rsa-kitchen|rsa-kitchen]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/copy/sitelinks-callouts-snippets|sitelinks-callouts-snippets]]"
+---
+
 # RSA — Brand (US_Brand_All_All_v1 / AG_Brand_Vilela)
 
 > **Contrato:** `Olimpo/contratos/missoes/m-20260709-google-ads-vilela.yaml`

@@ -10,6 +10,10 @@ edited_by: 60963240
 archived: true
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-783
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/rh/ambientacao-novo-colaborador|ambientacao-novo-colaborador]]"
 ---
 
 # Ata de Entrevista — Template de perguntas

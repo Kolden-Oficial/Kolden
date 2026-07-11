@@ -9,6 +9,12 @@ status: oficial
 versao: "0.1.0"
 atualizado-em: 2026-06-30
 ocorrencias: 5   # vezes que apareceu na planilha
+tipo: nota
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/tarefas/playbooks/cerebro-notebooklm|cerebro-notebooklm]]"
+  - "[[sobre-a-empresa/Kolden/operacao/tarefas/playbooks/prospeccao-grupo-facebook-publico|prospeccao-grupo-facebook-publico]]"
 ---
 
 # Playbook — Checklist do contrato

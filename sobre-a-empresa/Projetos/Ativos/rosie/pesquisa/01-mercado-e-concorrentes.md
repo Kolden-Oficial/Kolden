@@ -7,6 +7,11 @@ palavras-chave: [mercado, concorrentes, rosie, basicos-premium, dtc, ecommerce-m
 status: rascunho
 atualizado-em: 2026-06-23
 relacionados: [00-indice]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/pesquisa/00-indice|00-indice]]"
 ---
 
 # Mercado e Concorrentes — Rosie

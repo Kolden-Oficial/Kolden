@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/02-copy-oferta/criativos-meta-ads|criativos-meta-ads]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/02-copy-oferta/oferta-ancora-12-dias|oferta-ancora-12-dias]]"
+---
+
 # PDF de apresentação — roteiro para diagramação
 
 Formato final: PDF 8–10 páginas, A4 vertical.

@@ -9,6 +9,9 @@ keywords: "('Astro web framework', 'Neon Postgres integration', 'Database branch
 summary: "This documentation serves as a technical manual for integrating **Neon**, a serverless Postgres database, into applications built with the **Astro web framework**. It provides a step-by-step workflow for developers, covering essential setup tasks such as **environment configuration**, installing the serverless driver, and initializing a database client. Beyond basic connectivity, the guide highlights advanced features like **database branching** for separate development environments and demonstrates how to perform **on-demand data fetching** within components. Ultimately, the text functions as a specific roadmap within the broader Astro ecosystem, helping users build **dynamic, data-driven websites** by leveraging managed cloud infrastructure."
 extraido_em: "2026-06-30T16:21:01Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Neon Postgres & Astro | Docs

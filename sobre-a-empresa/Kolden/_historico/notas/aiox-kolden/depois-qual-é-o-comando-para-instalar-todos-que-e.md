@@ -9,6 +9,9 @@ keywords: "('Linux installation wizard', 'Tool selection process', 'Automated pa
 summary: "This guide explains how to navigate a simplified **graphical installation wizard** within a Linux terminal, removing the need for complex manual commands. The user is instructed to manage their software selections using the **space bar** to toggle choices and the **Enter key** to initiate the background installation process. Once started, the system automatically handles the **download and configuration of packages**, requiring the user to only intervene if prompted for administrative credentials. The primary goal is to reassure the user as they watch the automated **scrolling code**, waiting for the terminal to return to an idle state."
 extraido_em: "2026-06-30T16:19:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Depois qual é o comando para instalar todos que e...

@@ -1,7 +1,15 @@
 ---
 name: Architecture Overview
-description: Projeto SPA fullstack (React + Supabase BaaS + 4 Edge Functions Deno). Duas zonas: pública (landing pages A/B + redirect tracking) e protegida por auth (dashboard de KPIs, settings, logs, link builder).
+description: "Projeto SPA fullstack (React + Supabase BaaS + 4 Edge Functions Deno). Duas zonas: pública (landing pages A/B + redirect tracking) e protegida por auth (dashboard de KPIs, settings, logs, link builder)."
 type: feature
+tipo: projeto
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/database-schema|database-schema]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/external-integrations|external-integrations]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/security-constraints|security-constraints]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/technical-debt|technical-debt]]"
 ---
 
 ## Tipo de projeto

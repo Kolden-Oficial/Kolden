@@ -9,6 +9,9 @@ keywords: "('Vector databases', 'Chroma DB', 'Vector embeddings', 'Similarity se
 summary: "This comprehensive guide introduces **Chroma DB**, an **open-source vector database** engineered specifically for the efficient storage and retrieval of **vector embeddings**. The text navigates the technical landscape of modern AI, explaining how these databases function as a critical foundation for **Large Language Models** and **Retrieval-Augmented Generation (RAG)** systems. Through a practical walkthrough, it covers essential operations such as **collection management**, semantic similarity searching, and the integration of diverse **embedding models** from providers like OpenAI and HuggingFace. Ultimately, the tutorial serves as a roadmap for developers to transition from basic text processing to building advanced, context-aware AI applications that leverage **unstructured data**."
 extraido_em: "2026-06-30T16:20:40Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Learn How to Use Chroma DB: A Step-by-Step Guide | DataCamp

@@ -4,6 +4,14 @@ status: rascunho
 data: 2026-06-23
 squads: [Aglaia, Harmonia]
 relacionados: [01-auditoria-integrada.md, 02-roadmap-de-marca.md]
+tipo: nota
+area: iniciativas
+up: "[[sobre-a-empresa/Kolden/iniciativas/_MOC-iniciativas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/01-auditoria-integrada|01-auditoria-integrada]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/02-roadmap-de-marca|02-roadmap-de-marca]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/_guia-auditoria|_guia-auditoria]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/brandbook-v2|brandbook-v2]]"
 ---
 
 # Sumário executivo — Auditoria de marca Kolden (2026)

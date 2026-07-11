@@ -9,6 +9,9 @@ keywords: "('LLM Application Observability', 'Trace Tracking', 'Systematic Evalu
 summary: "The documentation introduces W&B Weave as a comprehensive **observability and evaluation platform** designed specifically to handle the unpredictable nature of **LLM application development**. It outlines a framework for achieving **visibility into AI workflows** by tracing every interaction, versioning prompts and models, and systematically benchmarking performance through **rigorous evaluation pipelines**. By integrating human feedback and **production monitoring guardrails**, the tool enables developers to move beyond traditional software testing and refine their models with high confidence. Ultimately, Weave serves as a central hub for **improving application reliability** through detailed data logging and collaborative experimentation across the entire lifecycle of an AI project."
 extraido_em: "2026-06-30T16:22:36Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # What is Weave? - Weights & Biases Documentation - Wandb

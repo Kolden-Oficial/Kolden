@@ -9,6 +9,9 @@ keywords: "('Monthly bank statement', 'Santander Universities program', 'Student
 summary: "This document is a **consolidated monthly bank statement** from March 2019, specifically tailored for a student client named Ronan Sergio Silva under the **Santander Universidades** banner. The text is structured into two main parts: a **detailed financial ledger** showing account balances, salary deposits, and service fees, and a **promotional section** highlighting career and lifestyle benefits. Key themes include the bank's role in **professional development** through its corporate internship program and the provision of **educational financial support**. Ultimately, the document serves as both a **transactional record** and a marketing tool designed to foster a long-term relationship with **university students** by offering specialized banking packages and career opportunities."
 extraido_em: "2026-06-30T16:25:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (14).pdf

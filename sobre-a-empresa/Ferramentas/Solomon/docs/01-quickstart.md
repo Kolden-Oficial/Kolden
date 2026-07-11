@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/README|README]]"
+---
+
 # 01 — Início rápido
 
 Fonte: https://docs.solomon.com.br/quickstart

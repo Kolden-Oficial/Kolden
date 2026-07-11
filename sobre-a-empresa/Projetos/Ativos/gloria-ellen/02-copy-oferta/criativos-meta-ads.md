@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/02-copy-oferta/oferta-ancora-12-dias|oferta-ancora-12-dias]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/02-copy-oferta/pdf-apresentacao|pdf-apresentacao]]"
+---
+
 # 3 criativos Meta Ads — teste dias 1-3
 
 Rodar 3 criativos em paralelo. Orçamento R$135/dia distribuído em 3 conjuntos (R$45/dia cada). No dia 4, identificar vencedor (menor CPL ou melhor engajamento) e escalar.

@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Prometeu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/prometeu-chief|prometeu-chief]]"
+---
+
 # MEMORY.md — Prometeu (Squad-level Kolden)
 
 > **Analógico ao criado na Onda 2 do Hermes** — memória do SQUAD (padrões estruturais), não do agent-chief. Padrões técnicos de execução ficam em `agent-memory/prometeu.md`.

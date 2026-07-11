@@ -9,6 +9,9 @@ keywords: "('CRM Kommo Consulting', 'Technical Adjustments', 'Team Training', 'P
 summary: "This consulting proposal outlines a **three-month strategic roadmap** designed to integrate and master the **Kommo CRM platform** for Humanizer Terapias. The project begins with a technical overhaul to **automate workflows**, link social media channels, and implement AI chatbots, ensuring the software is perfectly tailored to the company's operational needs. Following this setup, the focus shifts to **hands-on team training** and personalized mentorship to transition staff away from manual processes. Ultimately, the program aims to establish **operational autonomy**, empowering the workforce to manage client relationships and data analytics with total efficiency and independence."
 extraido_em: "2026-06-30T16:14:37Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # Proposta de Consultoria CRM - Kommo

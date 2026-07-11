@@ -9,6 +9,10 @@ keywords: "('Mental health market', 'Boutique healthcare model', 'Specialized ps
 summary: "This strategic market analysis examines the **Clínica Omiron** and its high-end positioning within the mental health ecosystem of Belo Horizonte’s Savassi district. Under the leadership of **Dr. Ariosto Ribeiro**, the clinic adopts a **\"boutique healthcare\" model** that distinguishes itself from high-volume facilities by offering **extended consultations** and a personalized, evidence-based approach to complex conditions like **bipolar disorder, ADHD in adults, and medicinal cannabis** treatments. The text highlights a business strategy rooted in **technical authority and humanized care**, justifying a premium \"private pay\" structure through exceptional patient feedback and a strong academic foundation. Ultimately, the report positions the clinic as a benchmark for the future of private psychiatry, where **innovation and deep clinical bonding** fill a critical gap in the regional medical market."
 extraido_em: "2026-06-30T16:07:54Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Análise Estratégica de Mercado: Clínica Omiron e o Ecossistema de Saúde Mental em Belo Horizonte

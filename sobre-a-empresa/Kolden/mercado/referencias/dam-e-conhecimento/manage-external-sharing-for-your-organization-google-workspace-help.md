@@ -9,6 +9,10 @@ keywords: "('External sharing management', 'Google Drive settings', 'Administrat
 summary: "This administrative guide details how to **govern the distribution of digital assets** to individuals outside of a professional network within the Google Workspace environment. The documentation provides a framework for **regulating file permissions** across various applications like Drive, Docs, and Sheets, allowing leaders to establish **organizational unit-specific rules** or permit collaboration only with **trusted domains**. By utilizing features such as **visitor sharing** for non-Google users and **visual external indicators**, administrators can balance seamless cooperation with the necessity of **preventing data leaks**. Ultimately, the text serves as a technical manual for **safeguarding sensitive information** while maintaining the flexibility required for modern, inter-organizational teamwork."
 extraido_em: "2026-06-30T16:13:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # Manage external sharing for your organization - Google Workspace Help

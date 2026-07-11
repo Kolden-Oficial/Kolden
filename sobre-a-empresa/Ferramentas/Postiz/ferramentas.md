@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Postiz — Publicação & Agendamento Social (self-host)
 
 **Categoria:** Marketing / Publicação social

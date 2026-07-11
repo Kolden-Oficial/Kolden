@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Pheme
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Pheme/agents/social-chief|social-chief]]"
+---
+
 # Memória do Agente social-chief (Pheme)
 
 > Memória persistente deste agente. Atualizada pelo Ritual de Encerramento

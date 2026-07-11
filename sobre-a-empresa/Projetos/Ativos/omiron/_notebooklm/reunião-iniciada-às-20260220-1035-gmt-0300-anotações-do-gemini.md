@@ -9,6 +9,10 @@ keywords: "('Mental health application', 'Bipolar disorder monitoring', 'Diagnos
 summary: "This transcript documents a strategic meeting between Ronan Sersil and Dr. Ariosto Filho regarding the creation of a **bespoke mental health application** for the Omiron clinic. The project aims to enhance patient care by digitizing **diagnostic scales**, tracking daily mood and sleep patterns, and monitoring substance use recovery through a **contingency management system**. Designed initially as a **white-label tool** to validate engagement among current patients, the software will eventually incorporate specialized modules for **lifestyle medicine**, ADHD, and procrastination. The collaboration emphasizes a **sophisticated aesthetic** that blends clinical utility with artistic elements, aiming to centralize the patient’s therapeutic journey into a single, interactive digital ecosystem. Dr. Filho is tasked with providing **foundational clinical content**, such as impact phrases and specific medical protocols, while Sersil manages the **technical development and deployment** strategy."
 extraido_em: "2026-06-30T16:08:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/20 10:35 GMT-03:00 - Anotações do Gemini

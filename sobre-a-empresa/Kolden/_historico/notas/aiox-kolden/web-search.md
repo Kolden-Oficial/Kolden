@@ -9,6 +9,9 @@ keywords: "('Autonomous Agent Skills', 'Software Configuration Strategy', 'Depen
 summary: "This text serves as a strategic technical guide for a user currently configuring an **autonomous AI agent** within a Linux environment. The author breaks down a complex terminal diagnostic report, explaining that while the system offers numerous **advanced skills**, many require cumbersome installations or are incompatible with the current operating system. To maintain momentum, the guide advises prioritizing **functional simplicity** by bypassing optional dependencies in favor of reaching the final setup stages. By selecting the \"No\" option, the user follows a **lean development philosophy** that ensures the agent’s core capabilities—such as web searching and chatting—are active and ready for immediate integration with **Telegram**."
 extraido_em: "2026-06-30T16:22:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # ◇  Web search ───────────────────────────────────...

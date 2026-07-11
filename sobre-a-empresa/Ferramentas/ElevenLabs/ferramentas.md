@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # ElevenLabs — Referência de Uso
 
 ElevenLabs é uma plataforma de IA de áudio (Áudio/Vídeo) com infraestrutura de voz para Text-to-Speech, Speech-to-Text, clonagem de voz, agentes conversacionais e geração de efeitos sonoros, tudo acessível via REST API com SDKs oficiais em Python e Node.js.

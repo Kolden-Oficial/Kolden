@@ -7,6 +7,15 @@ reforco: Aglaia/marty-neumeier (Onlyness/Zag)
 workflow: rebrand
 fonte-auditoria: auditoria-2026/01-auditoria-integrada.md (F1, Achado transversal nº 1)
 decisao-pendente: foco de posicionamento (Ronan)
+tipo: nota
+area: iniciativas
+up: "[[sobre-a-empresa/Kolden/iniciativas/_MOC-iniciativas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/arquetipo|arquetipo]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/identity-prism|identity-prism]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/maturidade-design|maturidade-design]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/proposta-mensagens-chave|proposta-mensagens-chave]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/proposta-voz-e-tom|proposta-voz-e-tom]]"
 ---
 
 # Posicionamento da Kolden — proposta canônica

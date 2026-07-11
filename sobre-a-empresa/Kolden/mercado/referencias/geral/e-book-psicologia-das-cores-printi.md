@@ -9,6 +9,10 @@ keywords: "('Psychology of Colors', 'Marketing Influence', 'Consumer Behavior', 
 summary: "This educational guide explores the **psychological impact of colors**, illustrating how visual stimuli are converted by the brain into specific **emotional and physiological sensations**. The text systematically details the symbolic meanings and common applications of various hues, such as the energy of red and the tranquility of blue, while highlighting their critical role in **marketing and brand identity**. By emphasizing that visual choices can drive **consumer behavior** and influence up to 90% of snap purchasing decisions, the source serves as a strategic manual for using color to communicate values and foster **customer trust**. Ultimately, it provides a comprehensive overview of how color functions as a powerful tool in design, culture, and professional communication to shape human **perception and action**."
 extraido_em: "2026-06-30T16:12:23Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/geral/_indice|_indice]]"
 ---
 
 # E-book Psicologia das Cores - Printi

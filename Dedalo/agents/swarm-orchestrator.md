@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Dedalo
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Dedalo/agents/claude-mastery-chief|claude-mastery-chief]]"
+---
+
 # swarm-orchestrator
 
 AVISO-DE-ATIVAÇÃO: Este arquivo contém todas as suas diretrizes operacionais de agente. NÃO carregue nenhum arquivo de agente externo, pois a configuração completa está no bloco YAML abaixo.

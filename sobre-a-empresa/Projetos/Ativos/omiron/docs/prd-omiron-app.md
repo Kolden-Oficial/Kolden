@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/docs/proposta-comercial|proposta-comercial]]"
+---
+
 # PRD — Omiron App
 
 **Produto:** Omiron — Sistema de Monitoramento Terapêutico

@@ -10,6 +10,12 @@ edited_by: 60963240
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-8843
 extracted_at: 2026-06-30
 nota_extracao: "Documento histórico crítico — contém o gérmen do KoldenOS atual: 'agência 100% automatizada por IA, utilizando a Make para conectar TUDO'. Escrito em 2023-06-03."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/05-banco-de-backlog/investimentos-futuros|investimentos-futuros]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/05-banco-de-backlog/para-depois|para-depois]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/05-banco-de-backlog/upgrades-empresa|upgrades-empresa]]"
 ---
 
 # Big Idea — gérmen do KoldenOS

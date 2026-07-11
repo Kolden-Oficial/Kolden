@@ -9,6 +9,9 @@ keywords: "('Agent Tool Categories', 'Productivity Software Integration', 'Syste
 summary: "This text serves as a strategic guide for a system architect setting up a digital assistant by categorizing **thirty-six available tools** into logical functional groups. The author emphasizes a **security-conscious approach to engineering**, advising users to understand each package's utility—ranging from **administrative office tasks** and **web connectivity** to **advanced coding integrations** and **multimedia processing**—before installation. By highlighting essential features like **contextual memory and document reading**, the source helps the user filter out recreational options in favor of a **high-productivity core setup**. Ultimately, the guide functions as a practical roadmap for building an **intelligent, automated workstation** through a selective and deliberate installation process."
 extraido_em: "2026-06-30T16:21:32Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Passe um resumo das 36 ferramentas para que fique...

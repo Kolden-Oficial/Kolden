@@ -18,6 +18,11 @@ relacionados:
   - ../design-system/01-fundamentos/tipografia
   - ../docs/pesquisa-referencias/decisoes-consolidadas-brand
   - ../docs/pesquisa-referencias/pinterest/pinterest-ariosto-analise
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/00-indice|00-indice]]"
 ---
 
 # Cinco direções conceituais de logo — Omiron

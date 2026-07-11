@@ -9,6 +9,9 @@ keywords: "('Visual identity', 'Branding elements', 'Color palette', 'Logo desig
 summary: "This document serves as a preliminary guide for the **visual identity and branding** of a company called Tristar Digital. It outlines the **aesthetic foundation** of the brand by detailing specific color palettes, including a **golden gradient**, alongside various iterations of the corporate logo. By breaking the name into its linguistic components—connecting the prefix for three with the **symbolism of a star**—the source establishes a clear **conceptual framework** for the business's professional image. The layout ultimately functions as a blueprint to ensure **visual consistency** across the brand's future digital and physical presence."
 extraido_em: "2026-06-30T16:13:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # PRÉVIA IDENTIDADE VISUAL TRISTAR DIGITAL.pdf

@@ -3,6 +3,23 @@ notebook_id: "d3acdcb2-c026-41b7-99a1-ab85221bfdde"
 notebook_titulo: "Treinamento de ClickUp"
 total_fontes: 14
 extraido_em: "2026-06-30T16:07:06Z"
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/configuraesiniciaisdoclickup-2025120116195753pdf|configuraesiniciaisdoclickup-2025120116195753pdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/documentosdoclickuptiposdecompartilhamento-2025120315521828pdf|documentosdoclickuptiposdecompartilhamento-2025120315521828pdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/hierarquiadeusuriosnoclickup-2025120116173976pdf|hierarquiadeusuriosnoclickup-2025120116173976pdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/hierarquiadoclickuppdf|hierarquiadoclickuppdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/mbsoqueumalistpdf|mbsoqueumalistpdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/mbsoqueumfolderpdf|mbsoqueumfolderpdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/mbsoqueumspacepdf|mbsoqueumspacepdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/mbstasksesubtaskspdf|mbstasksesubtaskspdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/oclickupserveparaminhaempresa-2025120116192179pdf|oclickupserveparaminhaempresa-2025120116192179pdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/onboardingampintroduohierarquiadoclickup-2025120116200230pdf|onboardingampintroduohierarquiadoclickup-2025120116200230pdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/oqueoclickupequalasuaproposta-2025120116190218pdf|oqueoclickupequalasuaproposta-2025120116190218pdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/porqueoclickupmelhorquenotionmondaytrelloasanapipefyecompanhia|porqueoclickupmelhorquenotionmondaytrelloasanapipefyecompanhia]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/qualoplanoidealparaomomentoatualdaminhaempresa-2025120116194331pdf|qualoplanoidealparaomomentoatualdaminhaempresa-2025120116194331pdf]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/teclasdeatalhodoclickup-hotkeys-2025120116200829pdf|teclasdeatalhodoclickup-hotkeys-2025120116200829pdf]]"
 ---
 
 # Índice — Treinamento de ClickUp

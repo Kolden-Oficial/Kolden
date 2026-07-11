@@ -9,6 +9,9 @@ keywords: "('Patient no-show rate', 'Practice revenue loss', 'Patient experience
 summary: "This article serves as a comprehensive guide for medical professionals to understand and mitigate the financial and clinical impacts of **missed patient appointments**. The text outlines a simple **mathematical formula** for calculating no-show rates by dividing skipped visits by total scheduled sessions, noting that healthy benchmarks typically fall between **5% and 8%**. By identifying common barriers to attendance such as **communication gaps and scheduling conflicts**, the author argues that practices can significantly **boost annual revenue** and improve the quality of patient care. Ultimately, the resource advocates for **automated reminders** and streamlined workflows as essential strategies to minimize lost time and ensure patients receive timely medical interventions."
 extraido_em: "2026-06-30T16:27:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # How to calculate patient no-show rate - Tebra

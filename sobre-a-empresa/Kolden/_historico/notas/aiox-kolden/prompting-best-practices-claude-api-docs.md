@@ -9,6 +9,9 @@ keywords: "('Prompt engineering techniques', 'Adaptive thinking capabilities', '
 summary: "This developer guide outlines **prompting best practices** for Anthropic's latest Claude models, offering a comprehensive framework for achieving high-quality AI outputs. The documentation is structured around **foundational principles**, such as maintaining extreme clarity, utilizing **XML tags for organization**, and providing diverse examples to guide the model's behavior. Advanced sections detail how to leverage **adaptive thinking** and **agentic systems**, which allow the AI to handle complex, multi-step tasks like coding and research with autonomous reasoning. Ultimately, the text serves as a strategic manual for **optimizing model performance**, emphasizing that precise instructions and structured context are the primary keys to unlocking Claude's full potential."
 extraido_em: "2026-06-30T16:21:47Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Prompting best practices - Claude API Docs

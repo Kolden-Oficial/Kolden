@@ -9,6 +9,9 @@ keywords: "('Departmental organization', 'Process grouping', 'Task management', 
 summary: "This document serves as a strategic guide for organizing a digital workspace by defining **folders as departmental zones** that consolidate various business processes. It outlines the **functional logic of grouping tasks** within the ClickUp platform, specifically advising against improper structures while promoting efficiency. By categorizing work according to **clients, team members, or specific projects**, the text helps users establish a clear hierarchy for their operations. Ultimately, the source clarifies the **purpose and structural utility** of folders to ensure a streamlined workflow."
 extraido_em: "2026-06-30T16:28:27Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/_indice|_indice]]"
 ---
 
 # MBSOqueumfolder.pdf

@@ -9,6 +9,10 @@ keywords: "('Gestão de cobranças', 'Reducing delinquency', 'Régua de cobranç
 summary: "This guide from **Cora** provides a strategic roadmap for business owners to master **billing management** and effectively **reduce delinquency** without damaging customer relationships. The text outlines a comprehensive workflow that transitions from **preventive measures**, such as automated reminders, to structured **recovery stages** for overdue accounts. Central to this approach is the **billing rule (régua de cobrança)**, a tool that standardizes communication across various channels like email, SMS, and WhatsApp to protect **cash flow** and financial health. Ultimately, the material advocates for the **automation of financial processes** to eliminate manual errors and ensure the long-term **sustainability and credit profile** of a growing enterprise."
 extraido_em: "2026-06-30T16:12:19Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/geral/_indice|_indice]]"
 ---
 
 # Ebook - Cora Conta Digital PJ - Gestão de Cobranças.pdf

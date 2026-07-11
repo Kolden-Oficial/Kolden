@@ -9,6 +9,9 @@ keywords: "('Financial security tips', 'Santander bank services', 'Esfera reward
 summary: "This document serves as a **monthly consolidated bank statement** for a customer named Ronan Sergio Silva, providing a comprehensive overview of his **financial status and account activity** for September 2022. It outlines specific details regarding his **University Account services**, including a breakdown of monthly fees, transaction limits, and a pending payment status for his service package. Beyond pure data, the text functions as a **security and marketing guide**, emphasizing fraud prevention tips for digital payments and promoting the **Esfera rewards program** for cashback and discounts. Finally, the source includes a reference section detailing **economic indices** like inflation and exchange rates, alongside essential contact information for various **customer support channels**."
 extraido_em: "2026-06-30T16:26:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (57).pdf

@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Speechmatics — Referência de Uso
 
 Speechmatics é uma API de transcrição de fala (speech-to-text / STT) de alta qualidade, com destaque para português do Brasil (pt-BR), diarização (identificação de quem fala) e timestamps por palavra. Oferece modos batch (assíncrono) e realtime (tempo real). Categoria: Áudio/Vídeo (transcrição).

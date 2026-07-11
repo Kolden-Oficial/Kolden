@@ -9,6 +9,9 @@ keywords: "('AI Agent Limitations', 'Local Code Execution', 'Security and Isolat
 summary: "This article explores the transition of AI agents from simple chatbots to autonomous tools capable of **executing generated code**, while highlighting the significant dangers of running these processes on a user's local machine. The author identifies **security and isolation** as primary concerns, noting that local environments like Docker often fail to fully protect a system from untrusted code. Furthermore, the text argues that local execution hinders **scalability and user experience**, as non-technical users may struggle with complex installations and the inability to maintain persistent, shareable sessions. Ultimately, the source advocates for a shift toward **cloud-based sandboxing**, positioning remote runtimes as the necessary evolution for building secure, collaborative, and professional AI applications."
 extraido_em: "2026-06-30T16:20:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Limitations of Running AI Agents Locally — E2B Blog

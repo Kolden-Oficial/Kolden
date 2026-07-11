@@ -9,6 +9,8 @@ archived: true
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-13273/
 extracted_at: 2026-06-30
 nota: "Página 5283 sob /Educacional é DUPLICATA exata deste conteúdo — mesmo texto, IDs diferentes. Registrada como duplicata no manifesto."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
 ---
 
 # Criação Gráfica — Processo + Documento de Briefing

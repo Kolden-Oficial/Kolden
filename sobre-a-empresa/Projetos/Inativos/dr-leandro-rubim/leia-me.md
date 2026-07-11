@@ -6,6 +6,9 @@ segmento: "Saúde / Estética / Psiquiatria (médico pessoa física)"
 status: "inativo"
 drive_folder_id: "1bY8UVEO77SKG1JEaLWCXZ-7wqEuYLf3d"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: dr-leandro-rubim
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Dr. Leandro Rubim

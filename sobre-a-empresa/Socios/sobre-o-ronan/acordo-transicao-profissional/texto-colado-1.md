@@ -9,6 +9,10 @@ keywords: "('Sales Funnel Structure', 'Paid Traffic Management', 'Logistics Oper
 summary: "This document outlines a **strategic operational roadmap** for a multi-company portfolio, detailing the integration of logistics, furniture manufacturing, and digital services. The plan prioritizes a **holistic digital transformation**, focusing on building robust sales funnels, professionalizing social media presence, and implementing high-level **CRM and traffic management** across four distinct brands. By allocating specific **capital investments for advertising** and defining the high-ticket nature of each business, the text establishes a structured path for **organizational scaling and sales optimization**. Ultimately, this framework serves as a blueprint to synchronize **commercial leadership and technological infrastructure** to drive measurable growth."
 extraido_em: "2026-06-30T16:28:48Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: socios
+up: "[[sobre-a-empresa/Socios/_MOC-socios]]"
+relacionado:
+  - "[[sobre-a-empresa/Socios/sobre-o-ronan/acordo-transicao-profissional/_indice|_indice]]"
 ---
 
 # Texto colado

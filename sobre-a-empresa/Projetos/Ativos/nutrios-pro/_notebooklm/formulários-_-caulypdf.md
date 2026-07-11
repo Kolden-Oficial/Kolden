@@ -9,6 +9,10 @@ keywords: "('Patient Care Forms', 'Nutritional Anamnesis', 'Anthropometric Asses
 summary: "This document outlines a versatile system for health professionals to generate **customized clinical documentation** tailored to individual patient needs. By offering a variety of templates ranging from **fundamental nutritional assessments** to specialized metabolic tracking, the platform ensures that practitioners can systematically capture a patient’s **dietary history and physical measurements**. The primary objective is to streamline the **pre-consultation and diagnostic process** through structured questionnaires that evaluate everything from basic lifestyle habits to complex symptomatic data. Ultimately, these tools function as a comprehensive framework for building a **detailed biological profile** of a client before and during their nutritional treatment."
 extraido_em: "2026-06-30T16:08:47Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # Formulários _ Cauly.pdf

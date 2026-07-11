@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/tests/unit/squad/fixtures/analyze-test-squad/agents/helper-agent|helper-agent]]"
+---
+
 # lead-agent
 
 Test agent for analysis.

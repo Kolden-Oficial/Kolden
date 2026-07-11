@@ -9,6 +9,9 @@ keywords: "('Chain-of-thought prompting', 'Multi-step reasoning', 'Agentic AI sy
 summary: "This guide explores **Chain-of-Thought (CoT) prompting**, a transformative technique that significantly boosts the accuracy of large language models by requiring them to generate **intermediate reasoning steps** before reaching a final answer. The author details various strategies—ranging from simple **zero-shot instructions** to complex **branching logic and self-consistency** checks—to show how forcing a model to \"show its work\" bridges the gap between simple pattern matching and true **sequential computation**. Beyond theoretical benefits, the text emphasizes the practical necessity of CoT for **agentic AI systems** that must plan and execute multi-step tasks with transparency and reliability. Ultimately, the source serves as both a technical primer and a strategic roadmap, advising developers on how to **evaluate and optimize** these reasoning chains using specialized observability tools while balancing the trade-offs of cost and latency."
 extraido_em: "2026-06-30T16:18:44Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Chain-of-Thought Prompting: A Guide for LLM Applications and Agents - Comet

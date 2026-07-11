@@ -8,6 +8,11 @@ status: rascunho
 atualizado-em: 2026-06-18
 relacionados: [prd, arquitetura, status]
 dossie_cliente: "<sobre-a-empresa/clientes/ativos/<slug>.md — ou vazio se for projeto interno, sem cliente>"
+tipo: projeto
+projeto: leia-me.md
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/_modelo/dossie|dossie]]"
 ---
 
 # <Nome do Projeto>

@@ -9,6 +9,9 @@ keywords: "('NVIDIA RAG blueprint', 'Pinecone vector database', 'Retrieval Augme
 summary: "The **Pinecone Enterprise RAG Blueprint** serves as a comprehensive **reference architecture** designed for developers to build and deploy advanced **Retrieval Augmented Generation** pipelines. By integrating **NVIDIA NIM microservices** with the **Pinecone vector database**, the project offers a high-performance framework for querying large enterprise datasets with **GPU-accelerated** efficiency. The system supports sophisticated features such as **multimodal data extraction** from PDFs and audio, **hybrid search** capabilities, and automated **reranking** to ensure response precision. Ultimately, this modular blueprint provides a **path-to-production** for organizations seeking to implement secure, scalable, and customizable **generative AI** solutions."
 extraido_em: "2026-06-30T16:22:44Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # pinecone-io/nvidia-rag: This NVIDIA RAG blueprint serves as a reference solution for a foundational Retrieval Augmented Generation (RAG) pipeline. - GitHub

@@ -7,6 +7,14 @@ palavras-chave: [concorrencia, competidores, referencias, benchmark]
 status: rascunho
 atualizado-em: 2026-06-18
 relacionados: [posicionamento]
+tipo: nota
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/planejamento-estrategico|planejamento estratégico]]"
+  - "[[sobre-a-empresa/Kolden/mercado/icp-e-personas|icp-e-personas]]"
+  - "[[sobre-a-empresa/Kolden/mercado/ofertas-e-produtos|ofertas-e-produtos]]"
+  - "[[sobre-a-empresa/Kolden/mercado/posicionamento|posicionamento]]"
 ---
 
 # Concorrência

@@ -9,6 +9,9 @@ keywords: "('Vector database', 'Semantic search', 'Data ingestion', 'Index manag
 summary: "Pinecone serves as a specialized **vector database** designed to facilitate the creation of high-performance **AI applications** through efficient data retrieval. The documentation outlines a comprehensive framework for managing information, offering users the choice between **integrated embedding** workflows, where the platform handles vector generation, or manual ingestion of pre-calculated data. By supporting both **semantic and lexical search**, the system enables developers to achieve high precision through advanced techniques like **metadata filtering and result reranking**. Ultimately, the guide provides a structured roadmap for transitioning from initial **data modeling** to full-scale production, ensuring that large-scale AI models remain both accurate and cost-effective."
 extraido_em: "2026-06-30T16:21:34Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Pinecone documentation - Pinecone Docs

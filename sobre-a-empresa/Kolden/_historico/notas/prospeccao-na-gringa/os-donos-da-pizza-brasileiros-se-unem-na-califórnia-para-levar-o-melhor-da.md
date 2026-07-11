@@ -9,6 +9,9 @@ keywords: "('Brazilian pizza business', 'California restaurant partnership', 'Pi
 summary: "Two entrepreneurs, Jonata Cantarin and Renato Gouvêa, have formed a strategic partnership to introduce authentic **Brazilian-style pizza** to the American market. By merging Gouvêa’s established North Beach pizza location in California with Cantarin’s specialized menu from Duupz Pizza, the duo intends to offer a traditional **all-you-can-eat pizza rodízio** featuring unique toppings like Catupiry cheese and dessert pizzas. This business venture serves the dual purpose of catering to the **nostalgia of the Brazilian diaspora** in San Mateo while testing a **franchise model** designed to expand this culturally distinct dining experience across the United States."
 extraido_em: "2026-06-30T16:27:49Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # Os donos da pizza: brasileiros se unem na Califórnia para levar o melhor da pizza brasileira aos americanos - AcheiUSA

@@ -9,6 +9,9 @@ keywords: "('Digital Marketing Advisory', 'Sales Funnel Strategy', 'Paid Traffic
 summary: "The Riseup Proposal outlines an integrated **digital marketing and sales consultancy** specifically designed to increase procedure bookings for medical clinics. The service operates through a **holistic sales funnel** that combines paid traffic management on platforms like Google and Facebook with professional copywriting, web design, and high-conversion landing pages. Beyond mere advertising, the agency provides **data intelligence and CRM implementation** to ensure that every generated lead is tracked and managed efficiently by the clinic’s staff. The partnership is structured around **continuous expert support**, featuring a rigorous routine of daily communication, weekly check-ins, and bi-weekly strategic training sessions to align marketing efforts with business growth."
 extraido_em: "2026-06-30T16:17:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # proposta_riseup_Cvw67gLe.pdf

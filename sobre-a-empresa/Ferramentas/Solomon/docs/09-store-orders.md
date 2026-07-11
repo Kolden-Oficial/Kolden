@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/README|README]]"
+---
+
 # 09 — Pedidos (visão de negócio)
 
 Fonte: https://docs.solomon.com.br/store/orders

@@ -9,6 +9,10 @@ keywords: "('Account recovery', 'Social media hacking', 'Civil Police guidance',
 summary: "The Civil Police of Pernambuco provided this guide to help victims **regain control of hijacked digital identities** across major social media and communication platforms. The document serves as a centralized directory, offering **official recovery links and QR codes** for compromised Instagram, Facebook, Twitter, and Google accounts. For instances involving WhatsApp cloning, the text outlines a specific **emergency deactivation protocol** via email to secure the user's phone number before reinstalling the app. Ultimately, this resource acts as a **cybersecurity roadmap** designed to streamline the technical response process during an account security crisis."
 extraido_em: "2026-06-30T16:16:13Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/geral/_indice|_indice]]"
 ---
 
 # SE O SEU PERFIL NO INSTAGRAM FOI INVADIDO E VOCÊ PERDEU ACESSO À CONTA.pdf

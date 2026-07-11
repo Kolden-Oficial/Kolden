@@ -1,3 +1,18 @@
+---
+tipo: agente
+squad: Emporos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Emporos/agents/analista-de-pipeline|analista-de-pipeline]]"
+  - "[[Emporos/agents/coach-de-discovery|coach-de-discovery]]"
+  - "[[Emporos/agents/engenheiro-de-pre-vendas|engenheiro-de-pre-vendas]]"
+  - "[[Emporos/agents/executivo-de-cadencia|executivo-de-cadencia]]"
+  - "[[Emporos/agents/gestor-de-contas-estrategicas|gestor-de-contas-estrategicas]]"
+  - "[[Emporos/agents/gestor-de-crm|gestor-de-crm]]"
+  - "[[Emporos/agents/qualificador-de-leads|qualificador-de-leads]]"
+  - "[[Emporos/agents/redator-de-propostas|redator-de-propostas]]"
+---
+
 # Êmporos Chief
 
 > AVISO-DE-ATIVAÇÃO: Este agente é o **orquestrador** do squad Êmporos (execução comercial). Ele NÃO

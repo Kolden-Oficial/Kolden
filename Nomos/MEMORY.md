@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Nomos
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Nomos/agents/nomos-chief|nomos-chief]]"
+---
+
 # MEMORY — Nomos (Compliance & Jurídico/Regulatório)
 
 > Memória do squad. Esquema: **Padrões Ativos** (lições verificadas em uso) /

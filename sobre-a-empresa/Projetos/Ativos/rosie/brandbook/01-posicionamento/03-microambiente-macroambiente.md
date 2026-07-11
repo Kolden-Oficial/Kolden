@@ -7,6 +7,11 @@ palavras-chave: [brandbook, rosie, microambiente, macroambiente, rosie-girls, pu
 status: oficial
 atualizado-em: 2026-06-23
 relacionados: [00-posicionamento, 04-proposito]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/00-indice|00-indice]]"
 ---
 
 # Microambiente & Macroambiente

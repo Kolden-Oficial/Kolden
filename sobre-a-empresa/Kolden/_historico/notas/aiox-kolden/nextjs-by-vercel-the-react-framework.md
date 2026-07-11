@@ -9,6 +9,9 @@ keywords: "('Built-in Optimizations', 'React Server Components', 'Data Fetching'
 summary: "Next.js is a comprehensive **full-stack web framework** designed to enhance the capabilities of React by providing tools for high-performance application development. The text outlines a robust suite of technical features, such as **automated asset optimization**, flexible **server and client-side rendering**, and a file-based routing system that simplifies complex layouts. Beyond its technical specifications, the document highlights a **production-ready ecosystem** powered by fast compilers and seamless cloud deployment options. Ultimately, the source serves as a professional overview intended to demonstrate how the framework bridges the gap between **developer experience** and elite **user interface performance** for major global enterprises."
 extraido_em: "2026-06-30T16:21:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Next.js by Vercel - The React Framework

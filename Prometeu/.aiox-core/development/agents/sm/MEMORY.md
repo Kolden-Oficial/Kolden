@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Prometeu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/agents/sm|sm]]"
+---
+
 # Memória do Agente Scrum Master (River)
 
 ## Padrões Ativos

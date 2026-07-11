@@ -9,6 +9,9 @@ keywords: "('Strategic Marketing Management', 'Lead Conversion Optimization', 'B
 summary: "This transcript documents a strategic consultation between **Ronan Sersil (representing Coden)** and **Kaylon Teixeira**, the owner of an American-based **spray foam insulation company** struggling to scale despite high revenue. The discussion highlights critical operational bottlenecks, including **inefficient digital marketing** on Google and Facebook, a complete **lack of lead management systems (CRM)**, and the owner’s unsustainable workload in handling sales and pricing manually. Ronan proposes a transition from basic advertising to a **comprehensive growth management strategy** focused on automation, pixel optimization, and **data-driven decision-making** to stabilize monthly earnings between $120,000 and $150,000. Ultimately, the meeting serves as a **diagnostic discovery call** intended to pave the way for a formal service proposal that promises to decouple the company’s growth from the owner’s limited personal time."
 extraido_em: "2026-06-30T16:15:31Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/19 15:55 GMT-03:00 - Anotações do Gemini

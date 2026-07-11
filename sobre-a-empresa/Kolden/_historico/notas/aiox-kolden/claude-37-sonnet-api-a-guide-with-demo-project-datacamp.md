@@ -9,6 +9,9 @@ keywords: "('Claude 3.7 Sonnet', 'Thinking Mode', 'Anthropic API', 'Research Pap
 summary: "This technical guide demonstrates how to leverage **Claude 3.7 Sonnet** to build a sophisticated **Research Paper Analyzer** using Python and the Gradio framework. The tutorial highlights the model's innovative **Thinking Mode**, which enables the AI to perform visible, step-by-step reasoning to improve accuracy and handle complex scientific synthesis. By following a structured workflow—ranging from **API configuration** and text extraction to **streaming response** implementation—developers learn to create a tool that identifies research gaps and generates novel academic ideas. Ultimately, the text serves as both a practical manual for **multimodal AI development** and a strategic overview of optimizing performance and **cost management** within the Anthropic ecosystem."
 extraido_em: "2026-06-30T16:18:49Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Claude 3.7 Sonnet API: A Guide With Demo Project - DataCamp

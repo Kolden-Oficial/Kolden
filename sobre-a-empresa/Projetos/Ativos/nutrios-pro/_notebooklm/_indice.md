@@ -3,6 +3,34 @@ notebook_id: "d66452a9-53ce-4213-a916-75314c60f002"
 notebook_titulo: "NutriOS Pro"
 total_fontes: 24
 extraido_em: "2026-06-30T16:05:59Z"
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/01-kolden-nutricalc-alinhamento-do-projeto|01-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/02-kolden-nutricalc-alinhamento-do-projeto|02-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/03-kolden-nutricalc-alinhamento-do-projeto|03-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/04-kolden-nutricalc-alinhamento-do-projeto|04-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/agendamentos-_-caulypdf|agendamentos-_-caulypdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/cadastro-de-pacientes-_-caulypdf|cadastro-de-pacientes-_-caulypdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/dados-financeiros-_-caulypdf|dados-financeiros-_-caulypdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/dossie_nutrios_propdf|dossie_nutrios_propdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/formulários-_-caulypdf|formulários-_-caulypdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/kolden-nutricalc-alinhamento-do-projeto-20260318-1601-gmt-0300-anotações-do|kolden-nutricalc-alinhamento-do-projeto-20260318-1601-gmt-0300-anotações-do]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/kolden-nutrios-alinhamento-do-projeto-20260331-1659-gmt-0300-anotações-do-gemini|kolden-nutrios-alinhamento-do-projeto-20260331-1659-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/locais-de-atendimento-_-caulypdf|locais-de-atendimento-_-caulypdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/login-_-caulypdf|login-_-caulypdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/logo-e-paletas-de-corespdf|logo-e-paletas-de-corespdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/marca-_-caulypdf|marca-_-caulypdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/membros-_-caulypdf|membros-_-caulypdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/modelos-_-caulypdf|modelos-_-caulypdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/nutrios-pro-central-de-ferramentas-e-acessos-ferramentas|nutrios-pro-central-de-ferramentas-e-acessos-ferramentas]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/nutrios_pro_dossie_tecnicomd|nutrios_pro_dossie_tecnicomd]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/otimizações-do-aplicativo|otimizações-do-aplicativo]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/reunião-iniciada-às-20260226-1459-gmt-0300-anotações-do-gemini|reunião-iniciada-às-20260226-1459-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/suplementos-e-fórmulas-_-caulypdf|suplementos-e-fórmulas-_-caulypdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/texto-colado|texto-colado]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/texto-colado-1|texto-colado-1]]"
 ---
 
 # Índice — NutriOS Pro

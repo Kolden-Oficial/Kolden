@@ -9,6 +9,11 @@ author_ids: [42950139]
 edited_by: 42950139
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-4343
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-documentados/atendimento/acessos/acessos-processo|acessos-processo]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-documentados/atendimento/acessos/checklists-completos|checklists-completos]]"
 ---
 
 # Acessos — Script de Mensagem (2 mensagens WhatsApp)

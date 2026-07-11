@@ -9,6 +9,9 @@ keywords: "('React Foundations', 'Next.js Introduction', 'Web Development Concep
 summary: "The **React Foundations** course serves as a strategic bridge for developers aiming to master **Next.js** by reinforcing the essential building blocks of modern web development. By guiding students through a **step-by-step migration** from basic JavaScript to advanced frameworks, the curriculum ensures a solid conceptual transition through practical application. The text outlines a **flexible learning path** that accommodates different skill levels, provided learners possess a baseline understanding of HTML and CSS. Ultimately, the primary goal is to provide a **structured prerequisite roadmap** and the necessary technical environment for creating sophisticated web applications."
 extraido_em: "2026-06-30T16:21:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # React Foundations | Next.js

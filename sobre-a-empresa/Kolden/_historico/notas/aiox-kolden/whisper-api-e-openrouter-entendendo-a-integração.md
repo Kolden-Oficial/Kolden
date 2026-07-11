@@ -9,6 +9,9 @@ keywords: "('Whisper API', 'OpenRouter Integration', 'Audio Transcription', 'Spe
 summary: "This text serves as a technical guide explaining why a specific automation tool requires separate credentials for audio processing and linguistic reasoning. The author uses a biological metaphor to distinguish between **OpenRouter as the \"brain\"** that handles text-based logic and **OpenAI’s Whisper as the \"ears\"** responsible for transcribing speech. Because OpenRouter lacks native audio capabilities, the system must first convert voice files into text using a direct OpenAI key before generating a response. Ultimately, the guide provides a **practical workaround** for users without an OpenAI account, allowing them to bypass the audio setup to focus on the assistant's document-reading features."
 extraido_em: "2026-06-30T16:22:36Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Whisper API e OpenRouter: Entendendo a Integração

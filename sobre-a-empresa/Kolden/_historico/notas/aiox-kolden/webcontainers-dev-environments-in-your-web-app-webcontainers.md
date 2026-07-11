@@ -9,6 +9,9 @@ keywords: "('WebContainer API', 'Browser-based runtime', 'Node.js in browser', '
 summary: "StackBlitz has developed WebContainers, a **browser-based runtime** that allows users to run full-stack Node.js environments directly within a web application. By executing code on the user's **local CPU** instead of a remote server, this technology enables the creation of **instant, interactive coding experiences** such as tutorials, IDEs, and AI-native development tools. The platform emphasizes a **fundamental shift in web capabilities**, supporting major frameworks and package managers with high speed and enhanced security. Ultimately, this tool aims to **eliminate server overhead** and simplify the deployment of complex, disposable dev environments for engineers and educators alike."
 extraido_em: "2026-06-30T16:22:38Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # WebContainers - Dev environments. In your web app. | WebContainers

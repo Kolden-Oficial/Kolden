@@ -6,6 +6,12 @@ categoria: projeto
 status: oficial
 atualizado-em: 2026-07-05
 relacionados: [01-auditoria-ui-atual, 02-tokens, 04-motion-e-icones, ../brandbook/03-identidade-visual]
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/design-system/01-auditoria-ui-atual|01-auditoria-ui-atual]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/design-system/04-motion-e-icones|04-motion-e-icones]]"
 ---
 
 # Especificação de Componentes — NutriOS Pro (v3)

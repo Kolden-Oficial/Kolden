@@ -9,6 +9,9 @@ keywords: "('Skill installation', 'Enterprise tool package', 'Agent memory', 'PD
 summary: "This guide outlines how to equip a digital agent with an **Elite Arsenal of skills** specifically tailored for professional corporate operations. Rather than installing unnecessary features, the \"Architect\" is instructed to select four **vital tools**—PDF reading, session memory, text summarization, and web access—to ensure the agent functions effectively in a business environment. By using the spacebar to mark these essential dependencies and hitting enter, the user initiates a **terminal installation process** on a Linux server. The primary objective is to move past basic setup phases and establish a **functional foundation** that allows the agent to handle complex data and maintain long-term context."
 extraido_em: "2026-06-30T16:20:20Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Install missing skill dependencies

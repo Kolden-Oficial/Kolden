@@ -9,6 +9,9 @@ keywords: "('AI workflow platforms', 'Feature comparison', 'Integration capabili
 summary: "This technical blog post evaluates the distinct strengths of **Langflow** and **n8n**, serving as a strategic guide for developers building **agentic AI workflows**. While Langflow is characterized as a **Python-based visual playground** specifically tailored for complex **LLM application prototyping**, n8n is described as a **mature low-code automation platform** with extensive business tool integrations. The text examines their differences across **RAG construction, human-in-the-loop capabilities, and pricing models**, ultimately positioning **ZenML** as a complementary **MLOps framework** that provides the necessary **orchestration and observability** for production-grade deployments. Through this comparison, the author helps users choose between a **flexible, AI-native toolkit** and a **robust, process-oriented automation engine**."
 extraido_em: "2026-06-30T16:20:39Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Langflow vs n8n: Features, Pricing, and Integrations Compared - ZenML Blog

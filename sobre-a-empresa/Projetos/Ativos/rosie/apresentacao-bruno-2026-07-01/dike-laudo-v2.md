@@ -6,6 +6,11 @@ data: 2026-07-01
 versao: v2
 substitui: dike-laudo.md (v1)
 status: laudo v2 — para leitura do Ronan antes do envio ao Bruno
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/README|README]]"
 ---
 
 # LAUDO DIKE v2 — m-20260701-112935-rosie-90d

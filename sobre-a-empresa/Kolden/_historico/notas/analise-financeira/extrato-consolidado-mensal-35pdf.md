@@ -9,6 +9,9 @@ keywords: "('Pix banking services', 'Capitalization bonds', 'Private pension pla
 summary: "This document is a **consolidated monthly statement** from December 2020 addressed to a client of **Santander Universities** in Brazil. It functions as both a financial report and a marketing tool, detailing specific **account service limits** and monthly fees alongside promotional offers for **capitalization bonds** and **private pension plans** like PGBL and VGBL. The text emphasizes modern banking features such as the **Pix instant payment system** and provides a comprehensive list of **economic indices**, including inflation and currency exchange rates, to help the user track market trends. Ultimately, the source serves to maintain **regulatory transparency** while encouraging the customer to invest in long-term financial security and prize-based savings products."
 extraido_em: "2026-06-30T16:26:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (35).pdf

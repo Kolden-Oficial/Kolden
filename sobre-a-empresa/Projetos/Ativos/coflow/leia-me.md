@@ -6,6 +6,9 @@ segmento: "Infraestrutura de IA / agentes inteligentes para empresas"
 status: "ativo"
 drive_folder_id: "14d9BdjLN-_4759GJ9LkAGDnkYO1q8rq3"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: coflow
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Coflow

@@ -9,6 +9,9 @@ keywords: "('Client Management Strategies', 'Media Hub Development', 'GoHighLeve
 summary: "This internal meeting record details a strategic session where a business team aligns on **client management**, **product development**, and **operational logistics**. The group prioritizes a **90-day structural approach** to stabilize client results, emphasizing that realistic expectations and professional materials like **custom landing pages** are essential for long-term retention. Central to their growth is the development of the **Media Hub (Brass Hub)**, a proprietary tool built on the **GoHighLevel platform** that aims to streamline communication and CRM functions for their customers. Additionally, the team navigates complex **socio-administrative decisions**, concluding that members should maintain their current **MEI status** to avoid regulatory interruptions while they focus on scaling their presence in the **US service market**."
 extraido_em: "2026-06-30T16:23:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Daily - 2026/06/02 11:01 GMT-03:00 - Anotações do Gemini

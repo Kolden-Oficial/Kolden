@@ -9,6 +9,10 @@ archived: true
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-13273/
 extracted_at: 2026-06-30
 nota: "Consolidação dos 5 cargos Sr em 1 arquivo. Atendimento Sr está em arquivo separado."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/descritivo-de-cargos/senior/atendimento-senior|atendimento-senior]]"
 ---
 
 # Descritivo de Cargos — SÊNIOR (consolidado)

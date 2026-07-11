@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Aletheia
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Aletheia/agents/aletheia-chief|aletheia-chief]]"
+---
+
 # Memória do Squad — Aletheia
 
 Memória de longo prazo do squad, alimentada pelo **Ritual de Encerramento** ao fim de cada

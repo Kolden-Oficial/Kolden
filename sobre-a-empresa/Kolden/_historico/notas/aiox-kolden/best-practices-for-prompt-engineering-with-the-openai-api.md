@@ -9,6 +9,9 @@ keywords: "('Prompt engineering', 'Clear instructions', 'Output formats', 'Model
 summary: "To achieve the best results with OpenAI models, users should follow a structured approach that prioritizes **clarity and specific formatting**. The guide suggests starting with the most **advanced model** available and providing **explicit, detailed instructions** placed at the beginning of the prompt. Effective strategies include using **delimiters to separate context**, providing **concrete examples** of the desired output, and opting for **affirmative commands** rather than telling the model what to avoid. Beyond text composition, developers can refine the model's behavior by adjusting **technical parameters** like temperature and stop sequences to balance **creativity and factual accuracy**."
 extraido_em: "2026-06-30T16:18:37Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Best practices for prompt engineering with the OpenAI API

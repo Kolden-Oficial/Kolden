@@ -9,6 +9,9 @@ keywords: "('Claude Code integration', 'NotebookLM features', 'YouTube search sk
 summary: "The provided video transcript details a powerful technical integration that combines **Claude Code** with **NotebookLM** to grant users \"superpowers\" in AI-driven content creation. By utilizing a **command-line interface (CLI)** and Python, users can bridge these tools to automate the process of researching YouTube data and transforming it into **structured assets like presentations, infographics, and reports**. The workflow emphasizes a **RAG-style methodology** where Claude Code searches for video metadata and سپس offloads the heavy lifting to NotebookLM to synthesize the information. Ultimately, the tutorial illustrates how to **outsource complex intelligence tasks** from a terminal environment to Google’s specialized research tool, streamlining the path from raw digital information to professional-grade documentation."
 extraido_em: "2026-06-30T16:18:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Claude Code + NotebookLM = SUPERCLAUDE

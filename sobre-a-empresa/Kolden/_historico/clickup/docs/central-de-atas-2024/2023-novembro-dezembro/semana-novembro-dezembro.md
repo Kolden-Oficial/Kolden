@@ -8,6 +8,10 @@ author_ids: [60963240]
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-60673/
 extracted_at: 2026-06-30
 nota: "10 dailies da virada Nov→Dez 2023. Marco: HISET F5 produtizada + primeiro cliente Nikson + Sprint do Google (Jake Knapp) como referência. Apesar do doc se chamar 'CENTRAL DE ATAS 2024' o conteúdo cobre fim de 2023."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-novembro-semana-2|atas-2023-novembro-semana-2]]"
 ---
 
 # Atas Daily — Nov/Dez 2023 (CENTRAL DE ATAS)

@@ -9,6 +9,9 @@ keywords: "('Claude 3.7 Sonnet', 'Hybrid reasoning model', 'Claude Code', 'Agent
 summary: "Anthropic has introduced **Claude 3.7 Sonnet**, a pioneering **hybrid reasoning model** that allows users to toggle between rapid responses and **extended, step-by-step thinking**. This release is centered on **practical intelligence**, specifically optimizing the model for **complex, real-world coding** and software engineering tasks rather than just academic benchmarks. Accompanying the model is **Claude Code**, a new **command line tool** that enables developers to delegate high-level engineering work directly within their terminal. By integrating deep reflection directly into a single, unified model, the company aims to provide a more **flexible and seamless experience** for high-stakes professional workflows."
 extraido_em: "2026-06-30T16:18:52Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Claude 3.7 Sonnet and Claude Code - Anthropic

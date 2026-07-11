@@ -9,6 +9,9 @@ keywords: "('Llama-3.1 8B deployment', 'vLLM inference library', 'AMD ROCm softw
 summary: "This technical documentation serves as a comprehensive guide for **deploying the Llama-3.1 8B model** specifically optimized for **AMD Instinct™ GPUs**. It introduces **vLLM** as a high-performance open-source library that enables **high throughput and low latency** for large language model inference through efficient request batching. The tutorial outlines a structured workflow that includes configuring a **ROCm software stack**, setting up a **Dockerized environment**, and utilizing **Hugging Face API tokens** for secure model access. Ultimately, the text provides developers with the necessary steps to launch an **inference server and client**, facilitating the practical application of AI in tasks like code generation and conversational systems."
 extraido_em: "2026-06-30T16:19:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Deploying Llama-3.1 8B using vLLM - ROCm Documentation - AMD

@@ -9,6 +9,9 @@ keywords: "('Strategic Clarity', 'Operational Transparency', 'Opportunity Qualif
 summary: "This transcript and summary document a strategic meeting between **Bernardo Pereira and Ronan Sersil**, who are evaluating internal organizational failures and the future direction of their agency. The primary conflict centers on a **lack of operational clareza (clarity) and transparency**, which the speakers believe has fostered an amateur environment and led to wasted energy on unproductive partnerships like the \"Tuca\" project. To resolve these issues, they emphasize the need for **rigorous opportunity filtering** and the establishment of an **Ideal Customer Profile (ICP)**, specifically questioning the viability of low-revenue clients who demand high output for minimal returns. Ultimately, the discussion serves as a pivot toward **professionalism and predictability**, as the leaders aim to stop chasing every \"silver bullet\" opportunity in favor of a focused, high-ticket execution strategy."
 extraido_em: "2026-06-30T16:15:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/04 11:04 GMT-03:00 - Anotações do Gemini

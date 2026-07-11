@@ -9,6 +9,10 @@ keywords: "('File Naming Conventions', 'Web Standards', 'Folder Organization', '
 summary: "The provided source outlines official **digital organizational standards** for the County of Sonoma, specifically focusing on the **consistent and descriptive naming** of files and folders. To ensure compatibility and ease of access, the guidelines prohibit the use of spaces and special characters, recommending instead the use of **dashes, underscores, or camel case**. The text establishes a logical structure for **chronological sorting** by mandating an eight-digit numeric date format and the use of **leading zeros** for sequential lists. Ultimately, these protocols serve to improve **user accessibility and system efficiency**, helping both staff and the public identify and retrieve electronic documents without technical errors."
 extraido_em: "2026-06-30T16:12:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # File & Folder Naming Conventions - Sonoma County

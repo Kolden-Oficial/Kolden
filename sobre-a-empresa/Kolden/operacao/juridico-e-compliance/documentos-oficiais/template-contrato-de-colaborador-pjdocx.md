@@ -9,6 +9,10 @@ keywords: "('Service Provider Agreement', 'SDR Role Qualifications', 'Compensati
 summary: "This document outlines a **service agreement** between Tristar Digital and Carla da Silva Rosa, who will operate as an independent **Sales Development Representative (SDR)**. The contract establishes a professional framework where the provider is responsible for **qualifying business leads** and scheduling strategic meetings in exchange for a monthly fee and performance-based commissions. Key legal provisions emphasize **exclusivity within the industry**, strict **data confidentiality** under Brazilian protection laws, and the total **absence of an employment bond**, ensuring the provider maintains operational autonomy. Ultimately, the text serves to protect the company's **intellectual property** and formalize the transition of potential clients through the sales funnel while defining the financial and ethical obligations of both parties."
 extraido_em: "2026-06-30T16:16:40Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Template | Contrato de colaborador PJ.docx

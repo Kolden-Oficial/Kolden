@@ -9,6 +9,10 @@ keywords: "('Health Indicators', 'Medical Establishments', 'Belo Horizonte', 'CN
 summary: "This document serves as an official directory of **healthcare establishments** located in **Belo Horizonte, MG**, registered under the National Registry of Health Establishments (**CNES**). It organizes a vast array of providers, ranging from **specialized medical and dental clinics** and individual professional practices to public initiatives like the **Academia da Cidade** and emergency services like **SAMU**. The structure of the text follows a categorical layout that pairs unique **identification codes** with the specific name and municipality of each facility to track the **flow of clients** and service demand. Ultimately, the registry functions as a comprehensive database to manage and monitor both **spontaneous and referred healthcare access** within the regional medical infrastructure."
 extraido_em: "2026-06-30T16:07:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Indicadores - Cnes

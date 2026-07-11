@@ -9,6 +9,9 @@ keywords: "('Email marketing metrics', 'Strategic automation workflows', 'Ad cam
 summary: "This meeting transcript documents a strategic **check-in between Ronan Sersil and Bruno Vilas Boas** regarding digital marketing operations for the brand Kolden & Rosie. The discussion focuses on **optimizing the sales funnel** by transitioning automated abandoned cart emails to the RD Station platform and implementing a **cleaner lead database** to improve email deliverability. Key technical challenges are addressed, including resolving **administrative access issues on Meta** and investigating why high email engagement has not yet resulted in direct conversions. To improve performance, the team plans to integrate **WhatsApp automation**, utilize heat maps to analyze website user behavior, and scale **Google Ads campaigns** once the initial learning phase concludes. Ultimately, the text outlines a transition toward a more **data-driven management approach** aimed at increasing productivity and tracking net profitability."
 extraido_em: "2026-06-30T16:23:56Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Kolden & Rosie | Check-in - 2026/05/29 10:21 GMT-03:00 - Anotações do Gemini

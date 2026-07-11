@@ -9,6 +9,10 @@ keywords: "('OKR Methodology', 'Strategic Communication Tool', 'Key Results Type
 summary: "The OKR framework serves as a strategic communication tool designed to **align individuals with a common purpose** by fostering collaboration and clarity within an organization. This system pairs a **qualitative, inspirational Objective**—which defines a desired destination—with a set of two to five **Key Results** that transform subjective goals into **measurable, time-bound outcomes**. To bridge the gap between high-level strategy and daily operations, the text introduces **Milestones** as binary tactical markers and **Iniciativas** as the specific tasks required to drive progress. Ultimately, this structured hierarchy ensures that every **operational action is directly connected** to the company's broader mission, ensuring focus and accountability at every level."
 extraido_em: "2026-06-30T16:14:59Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/geral/_indice|_indice]]"
 ---
 
 # RESUMO OKR.pdf

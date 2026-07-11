@@ -9,6 +9,9 @@ keywords: "('E-mail marketing strategy', 'Paid traffic management', 'Operational
 summary: "This document provides a comprehensive summary and transcript of a strategic business meeting focused on scaling a retail brand's **digital marketing and operational efficiency**. The participants, Bruno Vilas Boas and Ronan Sersil, establish a roadmap for aggressive growth, targeting a **revenue goal of 200,000** through optimized **email marketing automation** and sophisticated **paid traffic strategies** on Meta and Google. Key tactical decisions include prioritizing **abandoned cart recovery**, centralizing company files into a **unified Google Drive**, and implementing real-time data integrations to refine audience targeting. Ultimately, the text serves as a formal record of delegated tasks and long-term planning, instituting **weekly alignment meetings** to monitor performance metrics and ensure the stabilization of new advertising campaigns."
 extraido_em: "2026-06-30T16:25:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/05/26 13:37 GMT-03:00 - Anotações do Gemini

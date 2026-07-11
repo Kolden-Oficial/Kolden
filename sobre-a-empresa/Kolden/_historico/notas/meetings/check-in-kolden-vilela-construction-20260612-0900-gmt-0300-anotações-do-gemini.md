@@ -9,6 +9,9 @@ keywords: "('Digital Ad Campaigns', 'Lead Qualification Metrics', 'Landing Page 
 summary: "This document outlines a strategic meeting between **Kolden** and **Vilela Construction** to refine their digital marketing and **lead generation strategies** for June 2026. The discussion focuses on transitioning from an initial **algorithm education phase** on Meta platforms to more aggressive conversion tactics using **Google Ads** and specialized landing pages. To improve sales efficiency, the team plans to implement **A/B testing**, centralize lead tracking via Google Sheets, and develop **interactive PDF catalogs** featuring \"before and after\" project photos. Furthermore, the participants emphasize a localized \"family business\" approach by targeting **specific community groups** on Facebook with personalized content to build local authority and trust."
 extraido_em: "2026-06-30T16:23:27Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Check-in Kolden: Vilela Construction - 2026/06/12 09:00 GMT-03:00 - Anotações do Gemini

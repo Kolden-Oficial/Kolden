@@ -9,6 +9,10 @@ keywords: "('Brand Positioning', 'Infrastructure and Facilities', 'Fitness Modal
 summary: "This document serves as a comprehensive **strategic alignment dossier** for Clube Fit, a premier fitness facility located in Santa Luzia, Brazil. It meticulously outlines the brand’s **market positioning and operational structure**, highlighting its extensive hours, diverse workout modalities ranging from Muay Thai to Cross Training, and premium amenities like on-site physical therapy and private parking. Beyond physical logistics, the text emphasizes the brand's **dominant digital reputation**, evidenced by high engagement on social media and exceptional ratings across major review platforms. Ultimately, the report functions as a **foundational roadmap for management** to ensure consistency in service delivery, corporate partnerships, and regional authority."
 extraido_em: "2026-06-30T16:09:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: clube-fit
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/clube-fit/_notebooklm/_indice|_indice]]"
 ---
 
 # Dossiê de Alinhamento - Clube Fit

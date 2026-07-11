@@ -9,6 +9,9 @@ keywords: "('Low conversion rates', 'Post-visit follow-up documentation', 'Campa
 summary: "This internal meeting transcript details a strategic intervention to address a **stagnant sales funnel** for a client named Kyan, despite successful lead generation and appointment setting. The team identifies a critical **disconnect in the post-visit process**, noting that while potential customers are engaging in site visits, the lack of **documented follow-up** and high price perceptions are preventing final conversions. To resolve these inefficiencies, the participants commit to a rigorous **metrification of lead quality** using specific tags and suggest **centralizing ad budgets** into high-performing sets to stabilize a fluctuating cost-per-click. Ultimately, the discussion underscores the necessity of **aligning marketing efforts with commercial execution** to ensure that front-end traffic translates into long-term customer value."
 extraido_em: "2026-06-30T16:24:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/17 12:35 GMT-03:00 - Anotações do Gemini

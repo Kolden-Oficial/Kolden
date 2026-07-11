@@ -9,6 +9,9 @@ keywords: "('CRM Kommo implementation', 'Technical workflow adjustments', 'Team 
 summary: "This document outlines a **three-month strategic roadmap** designed to modernize the digital operations of Humanizer Terapias through the **Kommo CRM platform**. The initiative begins with a comprehensive **technical infrastructure overhaul**, focusing on automating patient communications, integrating social media channels, and developing data-driven dashboards. Following the setup phase, the program shifts toward **intensive staff mentorship** and practical training to ensure the team can manage workflows without external help. Ultimately, the proposal aims to replace manual labor with **automated efficiency and team autonomy**, providing a structured timeline for full operational transformation."
 extraido_em: "2026-06-30T16:14:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # Proposta de Consultoria CRM - Kommo (Backup)

@@ -9,6 +9,10 @@ keywords: "('Marketing Content Organization', 'Google Drive Folders', 'Blog Temp
 summary: "This instructional guide establishes a **standardized workflow** for organizing marketing content to ensure digital assets remain accessible and consistently formatted. The primary objective is to create a **unified folder structure** that spans both Google Drive and HubSpot, utilizing specific naming conventions based on dates and blog titles. By following a **step-by-step duplication process** for pillar and supporting blog templates, team members can accurately track metadata such as keywords and authors. Ultimately, the protocol mandates the separation of **raw and edited media** into dedicated subfolders to maintain a high level of operational efficiency and clarity."
 extraido_em: "2026-06-30T16:11:45Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # Creating Google Drive Folders for Marketing Content

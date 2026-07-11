@@ -9,6 +9,9 @@ keywords: "('Performance marketing', 'Business diagnosis', 'Sustainable growth',
 summary: "Kolden presents a comprehensive **performance marketing and strategic management** proposal designed to transition businesses from disorganized operations to a state of **sustainable, predictable growth**. The document begins by establishing the agency's credibility through successful case studies and then transitions into a rigorous **four-phase restructuring plan** that addresses digital marketing inefficiency, operational bottlenecks, and financial transparency. By utilizing a **non-linear marketing cycle** rather than a traditional funnel, the proposal emphasizes a continuous journey of acquisition and retention supported by daily communication and **data-driven diagnostics**. Ultimately, the source serves as a roadmap to professionalize a brand’s **digital presence** while ensuring every marketing effort is strictly aligned with the goal of increasing sales."
 extraido_em: "2026-06-30T16:14:19Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # Proposta Comercial Flaviana - Kolden

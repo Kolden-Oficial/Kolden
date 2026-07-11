@@ -9,6 +9,9 @@ keywords: "('Business Management Assessment', 'Delivery Growth Strategy', 'Paid 
 summary: "This document outlines a **strategic consultation meeting** between the business management firm Coden and the owners of a local food establishment focused on pizza and burgers. The primary objective is to address a **significant decline in delivery sales** and the overall failure of previous marketing efforts to generate high-quality leads. Central to the discussion is the need for a **structured data-driven approach**, including the implementation of a **CRM system** and a transition from random social media posting to **strategic content creation**. Ultimately, the text serves as a roadmap for a formal partnership aimed at providing the owners with **financial predictability** and a clear path toward reaching a **target monthly revenue** of 80,000 to 100,000."
 extraido_em: "2026-06-30T16:15:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/19 13:51 GMT-03:00 - Anotações do Gemini

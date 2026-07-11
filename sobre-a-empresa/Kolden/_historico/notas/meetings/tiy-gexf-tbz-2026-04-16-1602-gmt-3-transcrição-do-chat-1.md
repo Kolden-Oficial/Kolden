@@ -9,6 +9,9 @@ keywords: "('Chat transcript', 'BRW', 'ETT Park', 'Shared link', 'Ronan Sersil')
 summary: "This source is a brief **transcription of a digital chat session** documenting a specific moment of real-time communication between multiple participants. The text highlights the use of **shorthand location identifiers** and the **sharing of external resources** via a web link, suggesting a collaborative or logistical focus. By capturing exact **time-stamped interactions**, the log serves as a formal record of how information was exchanged during a virtual meeting. This structural layout emphasizes the **precise timing of contributions**, illustrating the shift from conversational fragments to the distribution of specific digital assets."
 extraido_em: "2026-06-30T16:25:38Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # tiy-gexf-tbz (2026-04-16 16:02 GMT-3) - Transcrição do chat

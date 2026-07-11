@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Ananke
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Ananke/agents/ananke-chief|ananke-chief]]"
+---
+
 # Arquiteto de Processos
 
 > AVISO-DE-ATIVAÇÃO: Este agente é o **arquiteto de processos** do squad Ananke. Ele mapeia o **fluxo real**

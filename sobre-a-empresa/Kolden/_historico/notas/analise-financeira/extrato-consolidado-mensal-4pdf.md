@@ -9,6 +9,9 @@ keywords: "('Monthly Bank Statement', 'Financial Transaction History', 'Credit L
 summary: "This document is a **consolidated monthly bank statement** for July 2018 belonging to a Santander customer named Ronan Sergio Silva. It serves as a comprehensive financial overview, detailing a **negative closing balance** and the subsequent use of a **Santander Master overdraft limit** to cover various ATM withdrawals and service fees. Beyond transaction history, the text functions as a **service guide**, providing contact information for customer support, explaining the terms of **credit interest rates**, and promoting digital tools like the Santander app for **financial management**. Finally, the statement acts as a **marketing and informational vehicle**, offering post-graduate financing, explaining \"Bateu, Ganhou\" loyalty promotions, and listing **key economic indices** such as inflation and currency exchange rates."
 extraido_em: "2026-06-30T16:26:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (4).pdf

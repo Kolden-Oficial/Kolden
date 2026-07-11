@@ -2,6 +2,14 @@
 name: Technical Debt
 description: Problemas técnicos conhecidos, padrões incorretos ativos e limitações de performance identificados na análise arquitetural. Consultar antes de modificar qualquer um dos componentes listados.
 type: feature
+tipo: projeto
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/architecture-overview|architecture-overview]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/database-schema|database-schema]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/external-integrations|external-integrations]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/security-constraints|security-constraints]]"
 ---
 
 ## Sistemas duplicados (não adicionar um terceiro)

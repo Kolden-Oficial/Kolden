@@ -9,6 +9,9 @@ keywords: "('Facial plastic surgery', 'Weight-loss medications', 'Regenerative t
 summary: "The 2024 AAFPRS Annual Trends Report provides a comprehensive overview of the shifting landscape in **facial plastic surgery**, highlighting how modern lifestyle factors and medical advancements are reshaping patient needs. The text identifies **GLP-1 weight-loss medications** as a major catalyst for corrective procedures, while also noting a significant increase in **younger patients** seeking early, preventative interventions and a rising interest among **male consumers**. Beyond traditional surgery, the industry is seeing a surge in **regenerative treatments** and solutions tailored to **hormonal changes** such as menopause. Ultimately, the report serves as a professional barometer, illustrating how **social media influence** and evolving demographics are driving a more personalized approach to aesthetic medicine."
 extraido_em: "2026-06-30T16:27:42Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # Just in: 2024 AAFPRS annual trends report - Aesthetic Medical Practitioner

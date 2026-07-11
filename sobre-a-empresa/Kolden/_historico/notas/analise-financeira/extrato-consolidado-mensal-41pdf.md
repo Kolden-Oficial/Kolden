@@ -9,6 +9,9 @@ keywords: "('Fraud prevention', 'Bank statement summary', 'Customer service cont
 summary: "This document is a **consolidated monthly bank statement** from Santander Universities issued in June 2021 for a client named Ronan Sergio Silva. The text functions primarily as a **security guide**, providing detailed warnings and instructions on how to recognize and avoid **fraudulent schemes** such as fake payment slips, phishing links, and \"false courier\" scams. Beyond these safety protocols, the statement outlines the customer's **financial profile**, including pre-approved personal credit limits, a summary of the \"University Account\" service package, and its associated monthly fees. Finally, the source serves as a **reference for economic data**, listing various Brazilian financial indices and currency exchange rates to help the user track market performance alongside their personal banking activity."
 extraido_em: "2026-06-30T16:26:14Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (41).pdf

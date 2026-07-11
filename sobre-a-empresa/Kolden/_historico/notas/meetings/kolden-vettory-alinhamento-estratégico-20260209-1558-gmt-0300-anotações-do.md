@@ -9,6 +9,9 @@ keywords: "('Strategic Business Merger', 'Organizational Management Models', 'Un
 summary: "This document details a strategic meeting where entrepreneurs Ronan Sersil, Bernardo Vicenzo, and Alexander Max outline a plan to **unify their business operations** by forming a specialized partnership. The participants intend to exit the V4 Network to establish a **structured organizational model** that separates responsibilities into three core pillars: **Management, Marketing, and Sales**. Under this new hierarchy, the **Coden** team will spearhead strategic implementation and performance, while the **Vetory** team focuses on high-level commercial execution and opportunity generation. A primary goal is to target **high-ticket clients** with a monthly recurring revenue objective of 25K to 30K, supported by a **standardized monthly salary** for partners to ensure financial sustainability. Ultimately, the text serves as a roadmap for **scaling a high-performance agency** by blending \"White\" and \"Black\" market strategies into a professionalized, cohesive corporate entity."
 extraido_em: "2026-06-30T16:24:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Kolden & Vettory | Alinhamento Estratégico - 2026/02/09 15:58 GMT-03:00 - Anotações do Gemini

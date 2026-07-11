@@ -17,6 +17,12 @@ consome:
   - "form GHL iframe NPkCo9JhSx7016RFCJd0"
   - "GHL location Kolden 1Jo7tMynqRtbpB3GHuOd"
   - "repo Koldenoficial/vilela-bright-space (TanStack Start + React 19)"
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/estrategia-vilela-2026-07|estrategia-vilela-2026-07]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/ghl-shadow-integration|ghl-shadow-integration]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/ROADMAP|ROADMAP]]"
 ---
 
 # Spec técnica — Conversion Actions Google Ads Vilela Construction

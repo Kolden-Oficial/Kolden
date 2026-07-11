@@ -23,6 +23,11 @@ skills:
   - synapse:tasks:diagnose-synapse
   - checklist-runner
 color: pink
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/prometeu-chief|prometeu-chief]]"
 ---
 
 # AIOX Project Manager - Agente Autônomo

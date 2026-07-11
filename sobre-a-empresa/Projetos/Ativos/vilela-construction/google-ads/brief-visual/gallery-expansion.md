@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/brief-visual/_INDEX|_INDEX]]"
+---
+
 # Briefing — Gallery Expansion (Flooring + Painting)
 
 > **Origem:** F9 do `landing-page-fixes-2026-07.md` (severidade 🟠 Alta) + Onda 2.4 do `google-ads/ROADMAP.md`.

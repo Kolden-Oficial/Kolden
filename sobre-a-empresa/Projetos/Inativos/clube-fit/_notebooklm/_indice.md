@@ -3,6 +3,14 @@ notebook_id: "e389655d-e54b-4a5e-a213-03972db13cd5"
 notebook_titulo: "Clube Fit Academia"
 total_fontes: 4
 extraido_em: "2026-06-30T16:06:14Z"
+tipo: projeto
+projeto: clube-fit
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/clube-fit/_notebooklm/dossiê-de-alinhamento-clube-fit|dossiê-de-alinhamento-clube-fit]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/clube-fit/_notebooklm/mapeamento-das-oportunidades-clube-fit|mapeamento-das-oportunidades-clube-fit]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/clube-fit/_notebooklm/texto-colado|texto-colado]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/clube-fit/_notebooklm/texto-colado-1|texto-colado-1]]"
 ---
 
 # Índice — Clube Fit Academia

@@ -8,6 +8,14 @@ status: rascunho
 atualizado-em: 2026-06-25
 relacionados: [ofertas-e-produtos, posicionamento, area-receita]
 fontes: drive--02-comercial
+tipo: nota
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/mensagens-chave|mensagens-chave]]"
+  - "[[sobre-a-empresa/Kolden/mercado/concorrencia|concorrencia]]"
+  - "[[sobre-a-empresa/Kolden/mercado/ofertas-e-produtos|ofertas-e-produtos]]"
+  - "[[sobre-a-empresa/Kolden/mercado/posicionamento|posicionamento]]"
 ---
 
 # ICP e Personas

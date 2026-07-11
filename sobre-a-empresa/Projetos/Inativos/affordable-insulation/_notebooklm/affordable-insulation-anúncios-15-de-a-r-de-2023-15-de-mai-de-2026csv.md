@@ -9,6 +9,10 @@ keywords: "('Ad performance metrics', 'Audience demographics', 'Marketing campai
 summary: "This dataset provides a detailed **performance breakdown of digital advertisements** for an insulation business, categorized primarily by **demographic age groups** and specific marketing campaigns. The record tracks essential engagement metrics such as **impressions, unique link clicks, and message-based conversions** to evaluate how effectively different ad versions resonate with various audiences. By monitoring financial indicators like **cost per click and total spend**, the spreadsheet serves as a strategic tool for **optimizing marketing budgets** and identifying which \"winner\" ad variants yield the highest return on investment. Ultimately, the data highlights a clear focus on **audience segmentation**, showing that older demographics often generate the highest volume of interactions and inquiries for home efficiency services."
 extraido_em: "2026-06-30T16:06:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # AFFORDABLE-INSULATION-Anúncios-15-de-a-r-de-2023-15-de-mai-de-2026.csv

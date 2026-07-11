@@ -9,6 +9,9 @@ keywords: "('Vertex AI', 'RAG Engine', 'Pinecone Integration', 'Vector Search', 
 summary: "This documentation serves as a technical guide for integrating **Pinecone** with the **Vertex AI RAG Engine**, a system designed to improve large language model accuracy through **grounding**. The text details the essential infrastructure requirements, such as establishing a **vector database** to perform **similarity searches** and using an **embedding model** to process semantic data. A significant portion of the guide is dedicated to security and configuration, specifically the mandatory use of **Secret Manager** to protect **API keys** and the provisioning of dedicated **service accounts**. By outlining the lifecycle of a **RAG corpus**, from initial creation to updating index metadata, the source provides developers with a clear roadmap for building robust, retrieval-augmented generation applications on **Google Cloud**."
 extraido_em: "2026-06-30T16:22:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Use Pinecone with Vertex AI RAG Engine - Google Cloud Documentation

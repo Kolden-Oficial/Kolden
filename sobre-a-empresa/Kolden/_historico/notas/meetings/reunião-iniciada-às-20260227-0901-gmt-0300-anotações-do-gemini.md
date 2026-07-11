@@ -9,6 +9,9 @@ keywords: "('Car dealership marketing', 'Vehicle stock acquisition', 'Brand auth
 summary: "In this initial consultation, the performance consultancy **Codessoria** meets with Antonio Avila of **Dávila Motors** to diagnose the specific growth obstacles facing his nascent automotive business. The discussion reveals that the primary bottleneck for the dealership is **inventory acquisition** rather than sales, as the owner struggles to consistently source high-quality used vehicles to maintain stock levels. To address this, the proposed strategy shifts away from traditional sales advertisements toward a **\"violent\" marketing approach** focused on paid traffic for vehicle buy-backs and building **brand authority** through Google reviews and owner-led video content. By professionalizing their digital presence and automating lead management, the team aims to transform the current lean operation into a high-volume dealership capable of competing with established local players."
 extraido_em: "2026-06-30T16:24:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/27 09:01 GMT-03:00 - Anotações do Gemini

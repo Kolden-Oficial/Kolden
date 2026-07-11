@@ -9,6 +9,9 @@ keywords: "('AI Gateway', 'LLM Models', 'Expert Models', 'Data Governance', 'Thi
 summary: "This documentation outline describes a **comprehensive AI gateway** designed to streamline the integration of various machine learning technologies into a single interface. By categorizing tools into **Large Language Models and Expert Models**, the platform provides developers with a structured framework for tasks ranging from generative chat to specialized functions like **optical character recognition and audio processing**. The resource emphasizes **operational efficiency** through features such as smart routing, data governance, and compatibility with popular software development kits. Ultimately, the text serves as a **functional roadmap** for users looking to manage multiple AI providers and complex workflows from a centralized hub."
 extraido_em: "2026-06-30T16:20:23Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Introduction - Eden AI Documentation

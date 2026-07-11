@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/README|README]]"
+---
+
 # Fluxo Comercial + CRM — Rosie
 
 > **v2 — 2026-07-01 — reescrito para Kommo (não GHL). Kommo já está no ar sem credencial Kolden.**

@@ -9,6 +9,10 @@ keywords: "('Visual Identity', 'PDF Customization', 'Logo Upload', 'Color Settin
 summary: "This interface serves as a comprehensive **branding customization tool** designed to define the visual identity of exported professional documents, such as meal plans. Users can establish a unique **aesthetic presence** by uploading a logo and selecting a specific color palette that dictates the appearance of headers, text, and structural dividers. Additionally, the system provides a specialized section to manage **professional signatures**, allowing for the integration of names, registration numbers, and official imagery. All changes are reflected through a **real-time preview**, ensuring that the final PDF maintains a polished and cohesive design before it is saved."
 extraido_em: "2026-06-30T16:08:54Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # Marca _ Cauly.pdf

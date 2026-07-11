@@ -9,6 +9,9 @@ keywords: "('Banking statement summary', 'Fraud prevention tips', 'Account trans
 summary: "This document serves as a **comprehensive monthly bank statement** for a Santander Select client named Ronan Sergio Silva, detailing financial activity throughout December 2025. The report provides a structured overview of **account balances and transaction history**, including specific lists of debit card purchases, PIX transfers, and automatic investments. Beyond simple accounting, the text acts as a **safety and advisory guide**, dedicating significant space to warning the user about \"gift scams\" and offering **best practices for digital security**. Finally, the statement outlines the customer's **investment profile** and service package benefits, effectively blending personal fiscal data with educational resources to help the user manage and **protect their financial health**."
 extraido_em: "2026-06-30T16:27:02Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (97).pdf

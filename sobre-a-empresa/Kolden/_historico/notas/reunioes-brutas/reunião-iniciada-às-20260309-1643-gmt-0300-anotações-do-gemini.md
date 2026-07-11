@@ -9,6 +9,9 @@ keywords: "('Marketing Campaign Results', 'Como CRM Implementation', 'Lead Quali
 summary: "This meeting transcript details a strategic review between Ronan Sersil and Kaylon Teixeira regarding a **marketing campaign** that successfully lowered lead costs but lacked sufficient **data clarity and lead quality**. To resolve these issues, the team plans to implement **Como CRM**, a tool designed to centralize communication channels and use **automation for lead qualification** and follow-up. Furthermore, they are pivoting their creative strategy to focus exclusively on **targeting construction companies** through new video scripts and on-site recordings intended to filter out low-value inquiries. The discussion concludes with a focus on **improving conversion rates** for ideal clients and leveraging personal referrals to expand their service reach."
 extraido_em: "2026-06-30T16:15:56Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/09 16:43 GMT-03:00 - Anotações do Gemini

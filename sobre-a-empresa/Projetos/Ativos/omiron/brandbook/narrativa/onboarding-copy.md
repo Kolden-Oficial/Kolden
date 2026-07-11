@@ -1,3 +1,14 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/alternativa-marco-aurelio|alternativa-marco-aurelio]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/manifesto|manifesto]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/mentor-quiron|mentor-quiron]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/pilares|pilares]]"
+---
+
 # Copy do Onboarding — Aplicativo Omiron
 
 > Percurso do paciente entre o primeiro toque no app e o primeiro check-in.

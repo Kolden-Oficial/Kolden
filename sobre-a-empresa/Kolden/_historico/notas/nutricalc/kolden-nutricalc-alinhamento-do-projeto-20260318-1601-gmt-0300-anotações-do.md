@@ -9,6 +9,12 @@ keywords: "('Career transition', 'Platform feature updates', 'Influencer marketi
 summary: "This source details a project alignment meeting between Ronan Sersil and Vinicius Abdon regarding the development and launch of a specialized **nutrition and physical assessment platform**. The discussion centers on Ronan’s **career transition** to focus fully on personal ventures, the simultaneous growth of a **parallel marketing operation**, and the technical status of their software, which is currently **85% complete**. Key updates to the platform include enhanced **AI-driven photo assessments**, nutritional tracking features, and professional reporting tools designed to replace manual processes used by health professionals. Beyond technical fixes, the partners strategize on **influence marketing**—such as using celebrity diet templates—and prioritize the upcoming stages of **branding, logo design, and naming** to finalize the product for market entry."
 extraido_em: "2026-06-30T16:13:19Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/01-kolden-nutricalc-alinhamento-do-projeto|01-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/02-kolden-nutricalc-alinhamento-do-projeto|02-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/03-kolden-nutricalc-alinhamento-do-projeto|03-kolden-nutricalc-alinhamento-do-projeto]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/nutricalc/04-kolden-nutricalc-alinhamento-do-projeto|04-kolden-nutricalc-alinhamento-do-projeto]]"
 ---
 
 # Kolden & NutriCalc | Alinhamento do Projeto - 2026/03/18 16:01 GMT-03:00 - Anotações do Gemini

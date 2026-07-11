@@ -9,6 +9,9 @@ keywords: "('Meta Ad Library', 'Digital Marketing Metrics', 'Advertising Campaig
 summary: "The provided text details a comprehensive **market intelligence framework** designed to track, analyze, and replicate successful digital advertising campaigns. It functions as a **structured database** that catalogs critical advertisement components—such as target demographics, creative assets, and delivery status—while specifically focusing on **scaled offers** in niches like weight loss and health. By employing a rigorous **validation workflow**, the system moves potential leads through a pipeline that evaluates everything from **creative hooks** to the underlying **sales funnel architecture**. Ultimately, this tool serves as a strategic roadmap for marketers to monitor global competition and identify high-performing **conversion elements** across multiple social media platforms."
 extraido_em: "2026-06-30T16:28:42Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/estrategias-de-garimpo/_indice|_indice]]"
 ---
 
 # [K] Central de Pesquisas

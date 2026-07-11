@@ -7,6 +7,11 @@ palavras-chave: [posicionamento, rosie, kapferer, identity-prism, arquetipo, neu
 status: rascunho
 atualizado-em: 2026-06-23
 relacionados: [00-indice, ../brandbook/01-posicionamento/02-marca-conceito, ../brandbook/01-posicionamento/06-personalidade-da-marca]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/pesquisa/00-indice|00-indice]]"
 ---
 
 # Posicionamento Estratégico — Rosie

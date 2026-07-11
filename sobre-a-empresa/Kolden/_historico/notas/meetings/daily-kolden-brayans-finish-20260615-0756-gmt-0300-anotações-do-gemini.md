@@ -9,6 +9,9 @@ keywords: "('Campaign Performance Review', 'Financial Process Standardization', 
 summary: "This internal meeting transcript details a **strategic status update** for Kolden, focusing on the performance of digital marketing campaigns and the **standardization of financial processes**. The team evaluates lead generation for various clients, specifically debating whether to adjust **creative assets or targeting parameters** for the United States market while managing limited budgets. Key operational goals include implementing **automated CRM systems** and ensuring that all future service agreements mandate **contractual payments within ten days** of signing. Throughout the discussion, the group assigns specific responsibilities for client management and technical tasks, such as **landing page validation** and domain configurations, to ensure consistent project momentum. Ultimately, the meeting serves to align the team on **upselling automation services** and refining their internal workflow to improve client retention and fiscal stability."
 extraido_em: "2026-06-30T16:23:32Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Daily Kolden: Brayan's Finish - 2026/06/15 07:56 GMT-03:00 - Anotações do Gemini

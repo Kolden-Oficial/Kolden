@@ -9,6 +9,9 @@ keywords: "('LLM Leaderboard', 'AI Model Benchmarks', 'Model Performance Ranking
 summary: "This comprehensive **LLM Leaderboard for 2026** provides a detailed technical comparison of the world's most advanced **open and closed-source artificial intelligence models**. The source categorizes these technologies based on their proficiency in specialized domains such as **reasoning, coding, mathematics, and agentic tasks**, ranking industry leaders like Anthropic’s Claude, OpenAI’s GPT, and Google’s Gemini. Beyond simple performance scores, the document acts as a **strategic purchasing guide** by cataloging critical data on model parameters, context window sizes, and **token-based pricing structures**. Ultimately, this resource serves to assist developers and enterprises in navigating a complex AI landscape, helping them select the **most cost-effective and capable models** for integration into their professional workflows."
 extraido_em: "2026-06-30T16:18:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing - Onyx AI

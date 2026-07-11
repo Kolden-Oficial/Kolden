@@ -7,6 +7,11 @@ palavras-chave: [arquitetura, stack, supabase, react, edge-functions]
 status: em-producao
 atualizado-em: 2026-06-24
 relacionados: [prd, decisoes]
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/dossie|dossie]]"
 ---
 
 # Arquitetura — NutriOS Pro

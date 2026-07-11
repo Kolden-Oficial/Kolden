@@ -9,6 +9,9 @@ keywords: "('WebContainers', 'Node.js runtime', 'Browser-based development', 'Se
 summary: "StackBlitz introduces **WebContainers**, a groundbreaking technology that allows **Node.js environments to run natively inside a web browser** rather than on remote servers. By leveraging **WebAssembly and browser security sandboxes**, this platform creates a development experience that is **faster, more secure, and accessible offline** compared to traditional local setups. The text details how this innovation enables **instant booting of fullstack projects**, seamless debugging via Chrome DevTools, and direct local filesystem access, effectively **eliminating the need for local installations** of dev tools. Ultimately, the source positions WebContainers as a transformative shift toward a **browser-based future for software engineering** that simplifies collaboration and protects against supply chain vulnerabilities."
 extraido_em: "2026-06-30T16:20:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Introducing WebContainers: Run Node.js natively in your browser - StackBlitz Blog

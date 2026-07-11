@@ -9,6 +9,9 @@ keywords: "('Bank statement summary', 'Fraud prevention tips', 'Student credit o
 summary: "This document serves as a **consolidated monthly bank statement** from March 2020 for a **Santander Universities** customer, detailing financial transactions, account balances, and available credit limits. Beyond personal banking data, the text functions as a comprehensive guide for students by highlighting **security protocols to prevent fraud**, specific **service packages for undergraduates**, and financing options for electronic devices. It further enriches the user experience by outlining **educational scholarship opportunities**, such as grants for tuition and international exchange programs, while providing a snapshot of **national economic indicators** like inflation and currency rates. Ultimately, the source acts as both a **financial record and a resource hub** designed to support the academic and fiscal needs of a university student."
 extraido_em: "2026-06-30T16:26:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (26).pdf

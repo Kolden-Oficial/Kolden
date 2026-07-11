@@ -12,6 +12,11 @@ agente_dono: emporos-chief
 heranca_historica: [neil-rackham-spin, david-sandler, keenan-gap-selling]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G13)
 status: semente
+tipo: agente
+squad: Emporos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Emporos/agents/emporos-chief|emporos-chief]]"
 ---
 
 # Coach de Discovery

@@ -1,3 +1,14 @@
+---
+tipo: projeto
+projeto: brw-movelaria
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/coleta-bruta/argos-transcript-2026-07-06|argos-transcript-2026-07-06]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/coleta-bruta/drive-2026-07-06|drive-2026-07-06]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/coleta-bruta/facebook-page-2026-07-06|facebook-page-2026-07-06]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brw-movelaria/coleta-bruta/tiktok-perfil-2026-07-06|tiktok-perfil-2026-07-06]]"
+---
+
 # Instagram @brwmovelaria — top 20 posts recentes
 
 **Coleta:** 2026-07-06 via Apify (`krazee_kaushik/instagram-profile-posts-and-comments-scraper`)

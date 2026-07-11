@@ -9,6 +9,10 @@ keywords: "('Consumer emotional patterns', 'Direct response advertising', 'Price
 summary: "This document outlines a strategic marketing framework designed to convert consumer frustration over high grocery prices into a high-performance **direct response advertising campaign**. By analyzing common emotional triggers such as **skepticism, indignation, and the desire for exclusivity**, the source establishes a value proposition centered on a private community that discovers hidden discounts before they vanish. The text organizes these insights into actionable templates, including **psychologically-driven headlines** and structured sales scripts that utilize the **PASOP (Problem, Agitation, Solution, Offer, Proof)** method to build trust. Ultimately, the material serves as a blueprint for positioning a deal-hunting group as an **essential tool for financial advantage**, leveraging real-world social proof to dismantle user doubt and drive immediate engagement."
 extraido_em: "2026-06-30T16:08:34Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # Analise de Comentários.pdf

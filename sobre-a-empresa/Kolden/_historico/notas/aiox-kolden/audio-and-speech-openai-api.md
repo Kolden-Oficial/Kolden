@@ -9,6 +9,9 @@ keywords: "('Audio and speech', 'Realtime API', 'Voice agents', 'Speech to text'
 summary: "This documentation provides a comprehensive roadmap for integrating **audio and speech capabilities** into applications using OpenAI’s suite of models. It distinguishes between **general-purpose APIs** like the Realtime and Chat Completions interfaces, which offer native multimodal understanding, and **specialized endpoints** dedicated solely to transcription or speech generation. Developers can choose between **speech-to-speech models** for natural, low-latency interactions and a **chained approach** that combines separate tools for maximum control over the final script. Ultimately, the text serves as a technical guide to help builders select the right tools for creating **voice agents**, processing **streaming audio**, or converting between text and spoken word."
 extraido_em: "2026-06-30T16:18:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Audio and speech | OpenAI API

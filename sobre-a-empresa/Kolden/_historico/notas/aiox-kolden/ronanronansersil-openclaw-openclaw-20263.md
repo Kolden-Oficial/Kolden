@@ -9,6 +9,9 @@ keywords: "('OpenRouter credit requirements', 'API error troubleshooting', 'Paid
 summary: "This technical guide addresses a common roadblock encountered by users of the OpenClaw platform when attempting to access AI models through OpenRouter. To combat automated abuse, OpenRouter now requires a **minimum financial commitment** to verify human identity, effectively blocking access to even free models for accounts with zero credit history. To resolve this, the text offers a strategic choice between **funding the existing account** with a small deposit or **migrating to a different provider** like Groq that still offers purely free access. Ultimately, the source serves as a practical roadmap for developers to bypass API limitations and successfully **re-establish the connection** to their digital agents."
 extraido_em: "2026-06-30T16:22:49Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # ronan@RonanSersil:~$ openclaw

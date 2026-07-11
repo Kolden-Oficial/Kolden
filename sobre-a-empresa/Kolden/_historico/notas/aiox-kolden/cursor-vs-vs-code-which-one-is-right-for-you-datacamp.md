@@ -9,6 +9,9 @@ keywords: "('AI integration', 'Code editor comparison', 'Autonomous agents', 'So
 summary: "This article evaluates the modern development landscape by comparing **Visual Studio Code**, the industry-standard editor, with **Cursor**, a specialized fork engineered for deep **artificial intelligence integration**. The text examines how VS Code remains a reliable, **open-source ecosystem** with a massive extension marketplace, while Cursor differentiates itself through **agent-driven workflows** and superior codebase context awareness. By analyzing **pricing tiers, performance metrics, and privacy considerations**, the author provides a framework for developers to choose a tool based on their need for either **mature stability** or cutting-edge **autonomous coding capabilities**. Ultimately, the guide serves as a strategic roadmap for navigating the shift from traditional text editing to **AI-native software development**."
 extraido_em: "2026-06-30T16:19:27Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Cursor vs. VS Code: Which One Is Right for You? | DataCamp

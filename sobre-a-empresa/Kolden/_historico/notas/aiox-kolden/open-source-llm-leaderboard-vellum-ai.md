@@ -9,6 +9,9 @@ keywords: "('Open Source LLMs', 'Model Performance Benchmarks', 'LLM Leaderboard
 summary: "The **Vellum AI leaderboard** serves as a comprehensive ranking system for **open-source large language models** released after April 2024, utilizing modern, high-difficulty benchmarks to prevent data saturation. The data organizes top performers into specialized categories such as **reasoning, mathematics, and agentic coding**, while also providing critical technical metrics like **latency, token speed, and operational costs**. By comparing elite models like the Kimi and Llama series across rigorous exams, the resource aims to provide a transparent, **independent evaluation** of how these public systems handle complex, real-world tasks. Ultimately, the text functions as a strategic guide for developers seeking the most **efficient and capable models** currently available in the evolving AI ecosystem."
 extraido_em: "2026-06-30T16:21:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Open Source LLM Leaderboard - Vellum AI

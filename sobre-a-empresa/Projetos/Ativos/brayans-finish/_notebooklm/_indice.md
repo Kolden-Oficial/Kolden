@@ -3,6 +3,22 @@ notebook_id: "80973e29-9eb5-448f-8234-82cda279633f"
 notebook_titulo: "02 | Brayan’s Finish"
 total_fontes: 12
 extraido_em: "2026-06-30T16:05:44Z"
+tipo: projeto
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/contrato_kolden_finalpdf|contrato_kolden_finalpdf]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/contrato_kolden_finalpdf-1|contrato_kolden_finalpdf-1]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/icp-posicionamento|icp-posicionamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/reunião-iniciada-às-20260402-2051-gmt-0300-anotações-do-gemini|reunião-iniciada-às-20260402-2051-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/reunião-iniciada-às-20260407-2241-gmt-0300-anotações-do-gemini|reunião-iniciada-às-20260407-2241-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/reunião-iniciada-às-20260422-2334-gmt-0300-anotações-do-gemini|reunião-iniciada-às-20260422-2334-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/reunião-iniciada-às-20260428-2337-gmt-0300-anotações-do-gemini|reunião-iniciada-às-20260428-2337-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/reunião-iniciada-às-20260504-2156-gmt-0300-anotações-do-gemini|reunião-iniciada-às-20260504-2156-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/texto-colado|texto-colado]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/texto-colado-1|texto-colado-1]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/texto-colado-2|texto-colado-2]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/texto-colado-3|texto-colado-3]]"
 ---
 
 # Índice — 02 | Brayan’s Finish

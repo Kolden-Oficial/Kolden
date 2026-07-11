@@ -12,6 +12,11 @@ fontes:
   - "Price Book 2026 MA (09/07/2026) — planilha profissional de precificação (fileId 1COD0FEHHXjDoaUGYt630Y61rl-VUgOZG); NOTA: título do arquivo diz apenas MA, mas praça real de operação é MA+NH (confirmado por Ronan 09/07 rodada 3)"
   - "vilela-bright-space (09/07/2026) — landing page pública (Koldenoficial); geografia GA na landing é ERRO herdado do template Lovable, sendo corrigida pelo Ronan"
   - "Alinhamento Ronan × Argos (09/07/2026, rodada 3) — resolução dos [?verificar] da Parte C: geografia MA+NH; planilha é o documento comercial completo; landing lista só top-sellers; Property Management existe mas fica fora do escopo de mídia paga"
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/README|README]]"
 ---
 
 # Dossiê — Vilela Construction

@@ -9,6 +9,9 @@ keywords: "('Med Spa Marketing', 'Sales Funnel Metrics', 'Patient Acquisition', 
 summary: "This guide serves as a strategic roadmap for medical spa owners to optimize their sales pipelines by monitoring **five essential performance indicators**. It emphasizes that high-growth practices must look beyond simple lead generation to track the **conversion rates of consultations** and the efficiency of digital landing pages. Central to this philosophy is the shift from viewing single transactions to calculating the **long-term lifetime value** of a patient, which allows for more informed marketing investments. By utilizing **automated follow-ups and retention strategies**, the text argues that a business can transform a leaky sales funnel into a predictable system for **sustainable revenue growth**."
 extraido_em: "2026-06-30T16:27:25Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # 5 Must-Track Metrics in Your Med Spa's Sales Funnel | Dean Garland Insights

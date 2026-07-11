@@ -9,6 +9,9 @@ keywords: "('OpenClaw Skill Registry', 'AI Agent Automation', 'GitHub Repository
 summary: "The **awesome-openclaw-skills** repository is a comprehensive, human-curated directory designed to expand the utility of **OpenClaw**, a locally-hosted AI assistant. By filtering through over 13,000 entries from the official registry, the project provides a refined collection of over **5,200 categorized skills** that allow the AI to perform specialized tasks such as **browser automation, coding, and smart home control**. The source emphasizes **security and quality**, explicitly detailing a rigorous vetting process that excludes spam, low-quality descriptions, and malicious software. Structured for easy navigation, the text serves as a **functional roadmap** for developers and users to discover, install, and contribute to a vast ecosystem of **community-built integrations**."
 extraido_em: "2026-06-30T16:22:31Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # VoltAgent/awesome-openclaw-skills - GitHub

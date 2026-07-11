@@ -9,6 +9,9 @@ keywords: "('Strategic Partnership', 'Artificial Intelligence Agents', 'Sales Fu
 summary: "This meeting transcript documents the formation of a **strategic partnership** between Diego Fornalha of Coflow and strategist Ronan Sersil to scale an **artificial intelligence ecosystem**. The primary objective is to integrate Sersil’s marketing expertise with Fornalha’s technical \"business units\" to replace traditional software subscriptions with **proprietary AI infrastructures** and agents like \"Hermes.\" Central to their growth plan is the implementation of a **diagnostic funnel**, which qualifies high-ticket leads by auditing their current tech spending and demonstrating the efficiency of **automated workflows**. By focusing on **role mastery**—splitting responsibilities between technical development, commercial management, and traffic strategy—the group aims to deliver rapid, customized AI implementations that offer significant **operational scalability** for clients."
 extraido_em: "2026-06-30T16:23:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # 00 | Kolden & Coflow - Mapeamento - 2026/05/22 13:28 GMT-03:00 - Anotações do Gemini

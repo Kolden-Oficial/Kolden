@@ -7,6 +7,12 @@ palavras-chave: [arquitetura, organograma, diagrama, drawio, excalidraw, infra, 
 status: vigente
 atualizado-em: 2026-06-30
 relacionados: [organograma, visao-geral, ds-cores, ds-tipografia]
+tipo: nota
+area: identidade
+up: "[[sobre-a-empresa/Kolden/identidade/_MOC-identidade]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/areas/tecnologia|tecnologia]]"
+  - "[[sobre-a-empresa/Kolden/identidade/organograma|organograma]]"
 ---
 
 # Arquitetura visual da Kolden

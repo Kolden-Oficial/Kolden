@@ -9,6 +9,10 @@ keywords: "('Business diagnostic meeting', 'Lead acquisition professionalization
 summary: "This document outlines a **diagnostic business meeting** between Ketter, a consultancy, and Mat3vic Construction, a family-run company specialized in **exterior home services** like decking and roofing. The primary objective was to address the contractor's **reliance on word-of-mouth referrals**, which has hindered their ability to scale and maintain consistent revenue outside of the busy summer season. To professionalize their operations, the consultants proposed several strategic interventions, including the **implementation of a CRM system** to track financial metrics and the creation of a **targeted digital presence** through Google and social media. The discussion emphasizes the transition from informal management to a **data-driven commercial strategy**, using tools like an ROI calculator to define growth targets. Ultimately, the session concludes with a plan to present a **formal partnership proposal** aimed at stabilizing lead acquisition and expanding the construction firm's geographic reach."
 extraido_em: "2026-06-30T16:07:42Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: mat3vic
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/mat3vic/_notebooklm/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026_05_12 20_32 GMT-03_00 - Anotações do Gemini (2).docx

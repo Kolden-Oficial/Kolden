@@ -9,6 +9,9 @@ keywords: "('Hard and Soft Skills', 'Marketing Automation Tools', 'Sales Funnel 
 summary: "In this professional dialogue, Rayff Silva and Ronan Sersil explore the vital **interplay between technical expertise and interpersonal proficiency** within the digital advertising sector. Sersil advocates for a strategic framework where **automation of repetitive tasks**, such as reporting and bid adjustments, is used to buy back time for high-level innovation and data analysis. He emphasizes that while **analytical skills** are necessary to diagnose funnel bottlenecks and sales friction, **soft skills like empathy and logical storytelling** are what ultimately bridge the gap when communicating these data-driven solutions to clients and teams. The conversation concludes with the philosophy of **systemic thinking**, suggesting that long-term business growth depends on an operator's ability to remain **adaptable and emotionally detached from ideas** to favor rigorous testing and holistic problem-solving."
 extraido_em: "2026-06-30T16:15:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2025/12/11 14:29 GMT-03:00 - Anotações do Gemini

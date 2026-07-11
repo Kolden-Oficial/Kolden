@@ -9,6 +9,10 @@ keywords: "('Chromatic harmonies', 'Color wheel', 'Color properties', 'Color cla
 summary: "This educational presentation by Professor Lórien Crishna Zacarias serves as a foundational guide to **color theory**, utilizing a twelve-step chromatic wheel to categorize relationships between primary, secondary, and tertiary hues. The text defines the essential **physical properties of color**, specifically distinguishing between **hue** (the wavelength position), **saturation** (purity and intensity), and **brightness** (the relative value of light and dark). By exploring these dimensions, the source introduces the concept of **chromatic harmony**, demonstrating how visually appealing environments can be created through specific arrangements, such as the **monochromatic scheme**. The material concludes with a practical application of these principles, tasking students with a **geometric composition** inspired by Johannes Itten that requires the strategic manipulation of color classification and intensity."
 extraido_em: "2026-06-30T16:12:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/geral/_indice|_indice]]"
 ---
 
 # HARMONIAS CROMÁTICAS

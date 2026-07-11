@@ -9,6 +9,10 @@ keywords: "('Motorcycle protection covers', 'Waterproof leather material', 'Vehi
 summary: "This document is a product listing from the Amazon Brazil marketplace for a **durable motorcycle cover** crafted from leather-like material. The item is marketed as a **comprehensive protective solution** designed to shield vehicles from environmental damage, including intense sunlight, rain, and hail. The page details the product's **technical specifications and sizing options**, ranging from small to large, to ensure compatibility with various motorcycle models. In addition to the primary listing, the text provides **consumer social proof** through user ratings and reviews, while highlighting related accessories and Amazon Prime purchasing benefits."
 extraido_em: "2026-06-30T16:09:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa Para Cobrir Moto em Couro Protetora Sol Chuva Granizo Não Risca P M G (G) _ Amazon.com.br.pdf

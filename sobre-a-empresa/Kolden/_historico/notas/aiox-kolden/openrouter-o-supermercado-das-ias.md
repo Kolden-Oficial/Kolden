@@ -9,6 +9,9 @@ keywords: "('OpenRouter business model', 'API access resale', 'AI model marketpl
 summary: "This text describes OpenRouter as a **unified marketplace** that simplifies access to various artificial intelligence models by acting as a digital intermediary. Rather than a formal alliance between tech giants, the platform functions like a **supermarket** that purchases bulk access to proprietary systems and hosts open-source alternatives to resell to users \"by the weight.\" This business model capitalizes on the **API economy**, where AI developers profit from high-volume usage regardless of whether the customer uses their specific interface. Ultimately, the source clarifies that OpenRouter’s value lies in its **convenience**, providing a single \"extension cord\" that connects diverse, powerful brains to the end user for a small fee."
 extraido_em: "2026-06-30T16:21:24Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # OpenRouter: O Supermercado das IAs

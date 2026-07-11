@@ -9,6 +9,9 @@ keywords: "('Aligned Chain-of-Thought', 'Prompt Engineering', 'Native Reasoning 
 summary: "This educational guide introduces **Aligned Chain-of-Thought (AlignedCoT)**, a prompting strategy designed to improve the reasoning capabilities of large language models by leveraging their **native style of thought**. Rather than forcing models to follow human-written examples, the text outlines a **three-step process**—probing, refining, and formatting—that allows AI to generate and correct its own logical steps. By using these **native-speaking demonstrations**, the source explains that users can achieve higher accuracy in complex tasks like mathematics and commonsense reasoning. Ultimately, the documentation serves as both a **technical overview and a practical tutorial**, providing benchmark results and ready-made templates to help users optimize model performance through more **natural alignment** with the AI's learned behaviors."
 extraido_em: "2026-06-30T16:18:19Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Aligned Chain-of-Thought (AlignedCoT) - Learn Prompting

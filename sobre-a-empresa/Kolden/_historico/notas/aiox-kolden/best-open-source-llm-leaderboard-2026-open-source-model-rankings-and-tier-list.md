@@ -9,6 +9,9 @@ keywords: "('Open Source LLMs', 'Model Performance Benchmarks', 'LLM Rankings 20
 summary: "The Onyx AI leaderboard provides a **comprehensive ranking of open-source large language models** as of early 2026, categorizing them by their performance in specialized domains like **coding, mathematics, and logical reasoning**. By utilizing a tiered grading system from S to D, the guide evaluates prominent releases from developers such as DeepSeek, Zhipu AI, and Meta across a variety of **standardized technical benchmarks**. The data serves to help users identify the **best-performing models for specific tasks**, offering deep dives into metrics like parameter count and context window size. Ultimately, this resource positions Onyx as a central hub for navigating the **open-source AI ecosystem**, facilitating the integration of these high-tier models into professional workflows."
 extraido_em: "2026-06-30T16:18:37Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Best Open Source LLM Leaderboard 2026 | Open Source Model Rankings and Tier List | Onyx AI

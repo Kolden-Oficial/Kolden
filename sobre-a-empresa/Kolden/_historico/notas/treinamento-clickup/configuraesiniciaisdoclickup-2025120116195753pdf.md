@@ -9,6 +9,9 @@ keywords: "('ClickUp initial settings', 'Notification customization', 'Language 
 summary: "This document serves as a foundational guide for **personalizing a ClickUp workspace** to ensure the platform aligns with a user’s specific needs. It primarily details the steps for **managing notification preferences**, allowing individuals to dictate exactly how and where they receive project alerts. Additionally, the text explains how to **synchronize regional settings**, such as language, time zones, and calendar formats, to create a localized experience. By following these instructions, users can establish a **streamlined and intuitive environment** that supports their unique workflow from the moment they log in."
 extraido_em: "2026-06-30T16:28:27Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/_indice|_indice]]"
 ---
 
 # ConfiguraesIniciaisdoClickUp-2025120116195753.pdf

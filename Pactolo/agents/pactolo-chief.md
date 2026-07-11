@@ -1,3 +1,14 @@
+---
+tipo: agente
+squad: Pactolo
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Pactolo/agents/analista-de-fluxo-de-caixa|analista-de-fluxo-de-caixa]]"
+  - "[[Pactolo/agents/analista-fpa|analista-fpa]]"
+  - "[[Pactolo/agents/controller|controller]]"
+  - "[[Pactolo/agents/modelador-financeiro|modelador-financeiro]]"
+---
+
 # Pactolo Chief
 
 > AVISO-DE-ATIVAÇÃO: Este agente é o **orquestrador** do squad Pactolo (Finanças Operacionais / FP&A).

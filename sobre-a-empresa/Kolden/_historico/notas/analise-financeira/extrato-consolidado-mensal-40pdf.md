@@ -9,6 +9,9 @@ keywords: "('Fraud prevention', 'Bank statement summary', 'Service package fees'
 summary: "This document serves as a **monthly consolidated statement** from May 2021 for a Santander student account, combining personal financial data with essential **fraud prevention guidance**. The first half focuses on protecting the client from common scams, specifically warning against **fake payment slips**, suspicious web links, and the \"false courier\" trick used to steal physical credit cards. Transitioning to the account details, the text lists the specific **monthly service package fees** and limits for a user named Ronan, while also providing a comprehensive directory of **customer support channels**. Finally, the document concludes with a technical summary of **economic indicators and currency rates**, contextualizing the account holder's finances within the broader Brazilian market."
 extraido_em: "2026-06-30T16:26:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (40).pdf

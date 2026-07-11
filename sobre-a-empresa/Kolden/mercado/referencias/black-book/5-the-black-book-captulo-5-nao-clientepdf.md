@@ -9,6 +9,10 @@ keywords: "('Overcoming Sales Objections', 'The Non-Customer Profile', 'Sales Pl
 summary: "This text outlines a strategic framework for capitalizing on **non-customers**, defined specifically as individuals who engaged with a sales pitch but ultimately declined the offer. The author views this group as a **hidden gold mine** because their higher level of awareness makes them more valuable than cold leads, provided the company can **identify and eliminate the specific objections** that prevented the initial sale. By systematically recording these hurdles in a CRM, businesses can create a **Persuasion Playbook** to arm sales teams with scripts and \"repertoires\" that dismantle resistance before it arises.  To reclaim these lost opportunities, the source suggests a structured **28-day recovery cycle** using targeted remarketing ads that build **authority, social proof, and urgency** to bring the consumer back to the negotiating table. Furthermore, analyzing the profiles of non-buyers allows a company to identify **\"bad-fit\" leads**, enabling the marketing department to exclude unqualified audiences and lower the **Customer Acquisition Cost (CAC)**. Ultimately, the text argues that a \"no\" is merely the beginning of a relationship where continuous content and **tailored new offers** can eventually convert a hesitant prospect into a first-time buyer."
 extraido_em: "2026-06-30T16:10:24Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/black-book/_indice|_indice]]"
 ---
 
 # 5 The Black Book. cap°tulo 5- nao cliente.pdf

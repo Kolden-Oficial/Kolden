@@ -9,6 +9,9 @@ keywords: "('University scholarships', 'Bank account summary', 'Student exchange
 summary: "This document serves as a **monthly consolidated bank statement** for a student client of Santander Universities in Brazil, summarizing financial activity for March 2018. The report opens with a series of **educational and career incentives**, such as international exchange scholarships, financial aid for tuition, and internship opportunities tailored for university students. Structurally, the text transitions into **specific account details**, displaying a zero balance while highlighting available credit lines, overdraft terms, and a specialized **service package for students**. Additionally, the source provides broader **economic context and security advice**, offering a table of national financial indices and critical warnings regarding digital safety and identity protection. Ultimately, the purpose of the document is to provide a **comprehensive financial overview** that balances personal accounting with promotional benefits designed to support a student's academic journey."
 extraido_em: "2026-06-30T16:27:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal.pdf

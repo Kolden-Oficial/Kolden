@@ -1,3 +1,9 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+---
+
 # Template de site — Glória Ellen
 
 > Template de referência da marca Glória Ellen. Página única (`home.html`) que serve tanto de **prova visual do kit** quanto de **ponto de partida** para o site definitivo. Consome os tokens oficiais do kit visual — todo o restante do site herda a paleta, tipografia e textura da marca.

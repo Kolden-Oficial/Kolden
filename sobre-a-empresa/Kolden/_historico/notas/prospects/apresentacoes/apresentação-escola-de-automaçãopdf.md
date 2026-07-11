@@ -9,6 +9,9 @@ keywords: "('Automação de Clínicas', 'Fluxo de Agendamento', 'Disparos em Mas
 summary: "This presentation serves as a strategic roadmap for the **Escola de Automação**, detailing how digital systems can solve common operational failures within **dental clinics**. Based on extensive experience with over 100 clinics, the author argues that the primary value of technology is to address **inefficient communication**, such as high no-show rates and delayed lead responses. The methodology emphasizes a **\"less is more\" approach**, prioritizing simple scheduling flows and **humanized video connections** over complex, fully automated \"Ferrari\" systems that staff may struggle to use. Ultimately, the text defines success through **integrated automation**—using tools like mass messaging and appointment reminders to support human attendants rather than replace them, ensuring the focus remains on **maximizing patient bookings**."
 extraido_em: "2026-06-30T16:11:02Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/_indice|_indice]]"
 ---
 
 # Apresentação - Escola de Automação.pdf

@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Prometeu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/agents/pm|pm]]"
+---
+
 # Memória do Agente PM (Morgan)
 
 ## Padrões Ativos

@@ -9,6 +9,12 @@ author_ids: [42917002]
 edited_by: 60963240
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-6843
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/05-banco-de-backlog/big-idea|big-idea]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/05-banco-de-backlog/para-depois|para-depois]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/05-banco-de-backlog/upgrades-empresa|upgrades-empresa]]"
 ---
 
 # Investimentos Futuros — Ferramentas e Cursos

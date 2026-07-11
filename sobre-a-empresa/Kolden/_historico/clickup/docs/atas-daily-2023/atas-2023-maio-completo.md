@@ -8,6 +8,14 @@ author_ids: [60963240, 42950139, 42917002]
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-3183/
 extracted_at: 2026-06-30
 nota: "Consolidação completa de Maio 2023 (todas dailies extraídas). Time: Ronan + Jonathan. Substitui atas-2023-maio.md (parcial)."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-abril|atas-2023-abril]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-julho-novembro|atas-2023-julho-novembro]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-junho|atas-2023-junho]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-maio|atas-2023-maio]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-novembro-semana-2|atas-2023-novembro-semana-2]]"
 ---
 
 # Atas Daily — Maio 2023 (completo, 10 dailies)

@@ -6,6 +6,9 @@ segmento: "Benefícios / seguros (geração e disparo de leads frios via WhatsAp
 status: "inativo"
 drive_folder_id: "161F1D4dyTbqccLC5vhvjvHl86xQJYTiV"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: super-beneficios
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Super Benefícios

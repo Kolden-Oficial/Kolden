@@ -6,6 +6,9 @@ segmento: "sem registro no Drive"
 status: "ativo"
 drive_folder_id: "1qRQFM1bTK43As5UQ-ST4OrXk1RZ8Ggac"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: freitas-servicos
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Freitas Serviços

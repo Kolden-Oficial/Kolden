@@ -5,6 +5,10 @@ extraido_em: 2026-06-30
 extraido_por: claude-code (Onda C do plano _arquivo-clickup)
 spaces_total: 8
 escopo: "Inventário de tasks por space — names, status e listas. Custom fields, descrições e comments NÃO foram extraídos (próxima rodada se justificar)."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/INDEX|INDEX]]"
 ---
 
 # Tasks por Space — Inventário Onda C

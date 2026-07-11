@@ -7,6 +7,12 @@ palavras-chave: [projeto, bvb, financas, educacao-financeira, mei, empresario]
 status: rascunho
 atualizado-em: 2026-07-06
 relacionados: [dossie, posicionamento, personas, concorrencia, tom-de-voz, marca, conteudo, infoprodutos, sistema, operacoes, decisoes, status]
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/dossie|dossie]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/indice-de-ativos|indice-de-ativos]]"
 ---
 
 # BVB Finanças

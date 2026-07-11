@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Cairos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Cairos/agents/cairos-chief|cairos-chief]]"
+---
+
 # Gerente de Projeto
 
 > Especialista tier 1 do squad Cairós. Dono do **escopo, do cronograma, dos recursos e da metodologia**.

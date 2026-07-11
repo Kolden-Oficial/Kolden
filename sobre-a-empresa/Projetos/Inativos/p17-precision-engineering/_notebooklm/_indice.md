@@ -3,6 +3,26 @@ notebook_id: "1920b82a-48ff-4a08-8bf7-d53bd42e2f5c"
 notebook_titulo: "P17 - Precision Engineering"
 total_fontes: 16
 extraido_em: "2026-06-30T16:06:16Z"
+tipo: projeto
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-de-cobrir-moto-em-couro-100-forrada-anti-risco-impermeável-térmica-biz-125|capa-de-cobrir-moto-em-couro-100-forrada-anti-risco-impermeável-térmica-biz-125]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-de-cobrir-moto-em-couro-impermeável-proteção-sol-chuva-uv-com-forro-anti|capa-de-cobrir-moto-em-couro-impermeável-proteção-sol-chuva-uv-com-forro-anti]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-de-cobrir-moto-em-couro-protetora-impermeável-anti-uv-bros-_-amazoncombrpdf|capa-de-cobrir-moto-em-couro-protetora-impermeável-anti-uv-bros-_-amazoncombrpdf]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-de-cobrir-moto-em-couro-protetora-impermeável-anti-uv-fazer-250-_|capa-de-cobrir-moto-em-couro-protetora-impermeável-anti-uv-fazer-250-_]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-de-cobrir-moto-ideal-para-motos-big-trail-com-baú-impermeável-térmica|capa-de-cobrir-moto-ideal-para-motos-big-trail-com-baú-impermeável-térmica]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-de-cobrir-moto-impermeável-protetora-universal-para-motocicleta-preta-pvc|capa-de-cobrir-moto-impermeável-protetora-universal-para-motocicleta-preta-pvc]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-de-cobrir-moto-protetora-sol-chuva-impermeável-p-m-g-g-_-amazoncombrpdf|capa-de-cobrir-moto-protetora-sol-chuva-impermeável-p-m-g-g-_-amazoncombrpdf]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-de-moto-100-impermeável-proteção-uv-sol-chuva-poeira-garagem-segurança|capa-de-moto-100-impermeável-proteção-uv-sol-chuva-poeira-garagem-segurança]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-de-moto-cobrir-protetora-em-couro-impermeável-100-forrada-anti-uv-g-bros|capa-de-moto-cobrir-protetora-em-couro-impermeável-100-forrada-anti-uv-g-bros]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-de-moto-cobrir-protetora-em-couro-impermeável-100-forrada-anti-uv-p-fan|capa-de-moto-cobrir-protetora-em-couro-impermeável-100-forrada-anti-uv-p-fan]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-de-moto-impermeável-100-polietileno-tamanho-grande-230m-x-120m-_-proteção|capa-de-moto-impermeável-100-polietileno-tamanho-grande-230m-x-120m-_-proteção]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-para-cobrir-moto-100-forrada-e-impermeavel-tamanho-g-_-amazoncombrpdf|capa-para-cobrir-moto-100-forrada-e-impermeavel-tamanho-g-_-amazoncombrpdf]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-para-cobrir-moto-em-couro-protetora-sol-chuva-granizo-não-risca-p-m-g-g-_|capa-para-cobrir-moto-em-couro-protetora-sol-chuva-granizo-não-risca-p-m-g-g-_]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/capa-para-cobrir-moto-protetora-forrada-100-impermeável-anti-uv-não-risca|capa-para-cobrir-moto-protetora-forrada-100-impermeável-anti-uv-não-risca]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/p17-análise-de-mercado|p17-análise-de-mercado]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/p17-análise-de-mercado-1|p17-análise-de-mercado-1]]"
 ---
 
 # Índice — P17 - Precision Engineering

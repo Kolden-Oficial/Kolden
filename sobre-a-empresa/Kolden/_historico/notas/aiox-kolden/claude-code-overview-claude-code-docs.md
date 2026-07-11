@@ -9,6 +9,9 @@ keywords: "('Agentic coding tool', 'Multi-platform integration', 'Workflow autom
 summary: "This documentation provides a comprehensive overview of **Claude Code**, an **agentic AI coding tool** designed to function as an autonomous partner within a developer's workflow. The text details how the software integrates across various environments—including the **terminal, IDEs, and web browsers**—to perform complex tasks like **writing features, fixing bugs, and managing git operations**. Key themes include the tool's ability to **understand entire codebases**, its support for the **Model Context Protocol (MCP)** to connect with external data, and its capacity for **automation through scheduled tasks** and custom instructions. Ultimately, the source serves as a technical manual and feature guide to help users **automate tedious development cycles** and build software more efficiently through **AI-driven orchestration**."
 extraido_em: "2026-06-30T16:18:54Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Claude Code overview - Claude Code Docs

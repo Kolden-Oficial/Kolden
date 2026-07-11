@@ -9,6 +9,9 @@ keywords: "('API Reference', 'DeepSeek Model Overview', 'OpenAI Compatibility', 
 summary: "This documentation serves as a comprehensive roadmap for developers looking to incorporate **DeepSeek’s artificial intelligence** into their own software projects. The guide emphasizes **seamless integration** by highlighting an API that is **fully compatible with OpenAI’s existing libraries**, allowing users to migrate their systems simply by updating a base URL. Within the text, technical resources are organized into **tutorials, model comparisons, and research papers** to support both practical coding and theoretical understanding. Ultimately, the source functions as a **centralized hub** that provides the essential keys, code samples, and model specifications needed to build advanced chatbots and reasoning applications."
 extraido_em: "2026-06-30T16:19:30Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # DeepSeek Documentation - API Reference & Integration Guides

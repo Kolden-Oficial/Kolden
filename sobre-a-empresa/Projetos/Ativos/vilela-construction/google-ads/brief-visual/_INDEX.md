@@ -1,3 +1,14 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/brief-visual/banners-remarketing|banners-remarketing]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/brief-visual/design-tokens-vilela|design-tokens-vilela]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/brief-visual/gallery-expansion|gallery-expansion]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/brief-visual/og-image-briefing|og-image-briefing]]"
+---
+
 # Brief Visual — Vilela Construction · Google Ads
 
 > **Origem:** handoff Peitho + Harmonia → Aglaia (2026-07-09).

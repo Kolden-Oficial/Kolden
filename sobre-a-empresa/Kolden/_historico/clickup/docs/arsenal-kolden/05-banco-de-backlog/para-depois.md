@@ -9,6 +9,12 @@ author_ids: [60963240]
 edited_by: 60963240
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-12273
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/05-banco-de-backlog/big-idea|big-idea]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/05-banco-de-backlog/investimentos-futuros|investimentos-futuros]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/05-banco-de-backlog/upgrades-empresa|upgrades-empresa]]"
 ---
 
 # Para Depois — tasks órfãs

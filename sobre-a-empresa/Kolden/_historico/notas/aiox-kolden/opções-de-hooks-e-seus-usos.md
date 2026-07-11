@@ -9,6 +9,9 @@ keywords: "('AI Agent Hooks', 'Command Logger', 'Boot Integration Manual', 'Sess
 summary: "This guide serves as a technical walkthrough for configuring **automated triggers known as hooks** within an AI agent infrastructure. The text categorizes various functional modules—such as **auditing command history**, implementing **pre-defined behavioral rules** upon reboot, and **auto-loading reference documents**—to help the user distinguish between essential and advanced features. By prioritizing the **session-memory tool**, the author ensures the AI maintains long-term context while advising against more complex integrations until the necessary background files are prepared. Ultimately, the source functions as a **strategic roadmap for system setup**, balancing immediate operational stability with the potential for future corporate customization."
 extraido_em: "2026-06-30T16:21:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Opções de Hooks e Seus Usos

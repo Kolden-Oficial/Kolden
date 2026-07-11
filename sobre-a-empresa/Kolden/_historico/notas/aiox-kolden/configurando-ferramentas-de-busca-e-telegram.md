@@ -9,6 +9,9 @@ keywords: "('Search tool configuration', 'Autonomous agents', 'DuckDuckGo search
 summary: "This instructional guide assists users in **equipping an autonomous AI agent** with the ability to browse the internet for real-time information. The text outlines a strategic choice between **immediate functionality** via the free DuckDuckGo integration and the **specialized data extraction** offered by advanced engines like Tavily or Firecrawl. By emphasizing a **low-friction setup**, the author encourages beginners to prioritize speed so they can quickly transition to the final stage of **Telegram bot configuration**. Ultimately, the source serves as a practical roadmap for transforming a static script into a **modular, connected intelligence** capable of generating automated reports."
 extraido_em: "2026-06-30T16:19:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Configurando Ferramentas de Busca e Telegram

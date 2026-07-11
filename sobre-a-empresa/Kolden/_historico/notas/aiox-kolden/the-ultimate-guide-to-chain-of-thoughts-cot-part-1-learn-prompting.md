@@ -9,6 +9,9 @@ keywords: "('Chain-of-Thought prompting', 'Large Language Models', 'Logical reas
 summary: "This article serves as an introductory guide to **Chain-of-Thought (CoT) prompting**, a transformative technique that enables large language models to solve complex problems by **generating intermediate reasoning steps**. The text systematically explores various **methodological iterations**, ranging from basic zero-shot instructions to advanced frameworks like Tree-of-Thoughts and Program of Thoughts, which delegate computations to external code interpreters. By detailing how these strategies mimic human cognition, the source highlights how CoT enhances the **accuracy, transparency, and interpretability** of AI-driven decisions. Ultimately, the guide positions these reasoning workflows as essential tools for AI engineers who aim to move beyond \"black-box\" models toward more **explainable and reliable autonomous systems**."
 extraido_em: "2026-06-30T16:22:16Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # The Ultimate Guide to Chain of Thoughts (CoT): Part 1 - Learn Prompting

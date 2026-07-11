@@ -9,6 +9,9 @@ keywords: "('Bank statement summary', 'University account benefits', 'Customer s
 summary: "This document is a **consolidated monthly bank statement** from April 2018 for a **Santander Universities** account holder, detailing financial activities such as deposits, withdrawals, and interest charges. Beyond the numerical transaction history, the text functions as a **comprehensive customer guide** by outlining specific perks for students, including free **international student ID cards** and access to educational scholarships through a dedicated mobile app. It also emphasizes **financial security and literacy**, providing official contact channels, safety tips for using ATMs, and warnings regarding unauthorized assistance. Ultimately, the source serves both a functional purpose by tracking **personal cash flow** and a promotional role by marketing bank-affiliated lifestyle benefits and credit products."
 extraido_em: "2026-06-30T16:25:52Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (1).pdf

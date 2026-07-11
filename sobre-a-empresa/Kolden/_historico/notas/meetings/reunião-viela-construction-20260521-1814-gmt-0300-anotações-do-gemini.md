@@ -9,6 +9,9 @@ keywords: "('Operational restructuring', 'CRM implementation', 'Lead generation'
 summary: "This meeting transcript outlines the **strategic operational restructuring** of VF Construction, a company currently generating revenue primarily through word-of-mouth recommendations. The business owner, Thiago, seeks to transition toward a **professionalized lead generation model** by implementing a **CRM system** to organize client interactions and deploying expert **paid traffic strategies** on Google and social media. Key objectives discussed include the formalization of cash flow, the physical separation of personal and business identities, and the eventual goal of **structuring the company for a future sale**. Ultimately, the dialogue serves as a diagnostic session to address **market seasonality** and the urgent need for a consistent digital marketing funnel before the winter slowdown."
 extraido_em: "2026-06-30T16:24:05Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião Viela Construction  - 2026/05/21 18:14 GMT-03:00 - Anotações do Gemini

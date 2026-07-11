@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Creatomate — Referência de Uso
 
 Creatomate é uma API de geração de mídia (Áudio/Vídeo) para criar e renderizar vídeos e imagens via código a partir de templates e JSON, produzindo arquivos MP4, GIF, MP3, JPEG ou PNG com processamento na nuvem. Categoria: Áudio/Vídeo.

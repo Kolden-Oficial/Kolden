@@ -9,6 +9,9 @@ keywords: "('Tree of Thoughts', 'Prompt Engineering', 'Large Language Models', '
 summary: "The provided IBM article serves as a comprehensive primer on the **Tree of Thoughts (ToT) framework**, a sophisticated prompting strategy designed to improve the **strategic reasoning** and problem-solving skills of large language models. The text outlines a structural shift from linear text generation to a **hierarchical branching method**, allowing AI to decompose complex challenges into manageable \"thoughts,\" explore multiple potential solutions simultaneously, and **backtrack** when encountering logical dead ends. Through technical breakdowns and specific case studies like Sudoku and creative writing, the source highlights how ToT mimics **human-like cognitive flexibility** by integrating search algorithms and self-evaluation. Ultimately, the piece functions as an educational guide that weighs the **enhanced analytical performance** of this method against its significant **computational demands** and implementation hurdles."
 extraido_em: "2026-06-30T16:22:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # What is Tree Of Thoughts Prompting? - IBM

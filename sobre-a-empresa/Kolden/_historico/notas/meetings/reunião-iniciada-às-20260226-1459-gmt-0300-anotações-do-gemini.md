@@ -9,6 +9,9 @@ keywords: "('MVP software testing', 'Nutritionist feedback integration', 'Patien
 summary: "This document details a meeting between developer Ronan Sersil and nutritionist Susan Carolina regarding the **Minimum Viable Product (MVP)** of a new digital management system designed for nutrition professionals. The conversation highlights a collaborative effort to **centralize professional tasks**, such as food database management, patient charting, and automated nutritional calculations, while emphasizing **data security and visual evolution tracking**. Susan provides critical expert feedback, suggesting the integration of **bioimpedance metrics**, expanded body circumference measurements, and specialized diet templates for diverse health needs. Ultimately, the project aims to help practitioners **increase their service value** and revenue through AI-driven personalization and a future dedicated patient application."
 extraido_em: "2026-06-30T16:24:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/02/26 14:59 GMT-03:00 - Anotações do Gemini

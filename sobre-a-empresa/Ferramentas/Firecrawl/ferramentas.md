@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Firecrawl — Referência de Uso
 
 Firecrawl é a API de contexto web para agentes de IA: faz busca (search), scraping, parse, crawl, map e interação com páginas, devolvendo conteúdo limpo em markdown ou dados estruturados prontos para LLM. Categoria: Busca/Scraping.

@@ -9,6 +9,11 @@ author_ids: [60963240]
 edited_by: 60963240
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-32633
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-documentados/financeiro/checklist-asaas|checklist-asaas]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-documentados/financeiro/script-de-mensagem|script-de-mensagem]]"
 ---
 
 # Processo Financeiro v1.0 → 29/11/2023

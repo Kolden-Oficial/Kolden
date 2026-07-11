@@ -3,6 +3,15 @@ titulo: "Arquétipo de marca da Kolden — Mago × Fora-da-lei"
 status: rascunho-proposta
 data: 2026-06-23
 autor: Aglaia/archetype-consultant
+tipo: nota
+area: iniciativas
+up: "[[sobre-a-empresa/Kolden/iniciativas/_MOC-iniciativas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/identity-prism|identity-prism]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/maturidade-design|maturidade-design]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/posicionamento|posicionamento]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/proposta-mensagens-chave|proposta-mensagens-chave]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/artefatos/proposta-voz-e-tom|proposta-voz-e-tom]]"
 ---
 
 # Arquétipo de marca da Kolden

@@ -9,6 +9,9 @@ keywords: "('LobeChat AI Framework', 'Coolify Cloud Platform', 'Application Depl
 summary: "This documentation serves as a comprehensive guide for **Coolify**, a powerful self-hosting platform designed to manage and automate the deployment of applications, databases, and services. The text outlines an expansive **infrastructure ecosystem**, highlighting features like **CI/CD integration**, automated backups, and a robust **API reference** for programmatic server management. Within this technical framework, the guide specifically introduces **LobeChat**, a versatile, **open-source AI chat framework** that allows users to integrate multiple AI models and manage knowledge bases on their own hardware. Ultimately, the source functions as both a **technical manual** for system administrators and a specialized directory for deploying **modern, privacy-focused AI applications** through a centralized dashboard."
 extraido_em: "2026-06-30T16:20:48Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # LobeChat | Coolify Docs

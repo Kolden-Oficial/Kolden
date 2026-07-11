@@ -9,6 +9,9 @@ keywords: "('Context Engineering', 'Agentic AI', 'Prompting Frameworks', 'Model 
 summary: "This source serves as a comprehensive guide from Coditude regarding the evolution of **Prompt Engineering** as it transitions into 2026, shifting its primary focus from crafting isolated commands to the broader discipline of **Context Engineering**. The text outlines a sophisticated technological landscape where **Agentic AI** and the **Model Context Protocol (MCP)** allow artificial intelligence to move beyond simple conversation toward autonomous action and seamless integration with external databases and tools. By highlighting advanced methodologies such as **Tree of Thoughts** and **Self-Refinement**, the guide provides a strategic framework for developers to move away from \"prompt and pray\" iterations and toward **spec-driven development** using executable contracts. Ultimately, the resource positions these advancements within a real-world business context, offering practical workflows and **standardized frameworks like CO-STAR** to help industries build reliable, production-ready AI systems that deliver tangible value."
 extraido_em: "2026-06-30T16:21:00Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Mastering Prompt Engineering in 2026 - Coditude

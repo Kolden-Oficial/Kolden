@@ -9,6 +9,9 @@ keywords: "('Lack of transparency', 'Strategic project clarity', 'Quality over q
 summary: "This transcript documents a strategic meeting between **Bernardo Pereira** and **Ronan Sersil** focused on rectifying a perceived **lack of professional clarity** and transparency within their project management. The partners critique their recent tendency to treat every new opportunity as a \"silver bullet,\" arguing instead for a rigorous **filter for quality over quantity** to avoid amateurish, reactionary behavior. Central to their discussion is the refinement of their **Ideal Customer Profile (ICP)**, as they propose cutting low-revenue clients to ensure the team’s energy is preserved for high-margin, **predictable growth**. Ultimately, the text serves as a roadmap for transitioning from an emotional, opportunistic workflow to a structured operation defined by **clear targets and transparent communication**."
 extraido_em: "2026-06-30T16:24:39Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/04 11:04 GMT-03:00 - Anotações do Gemini

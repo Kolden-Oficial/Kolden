@@ -9,6 +9,9 @@ keywords: "('Vercel Toolbar', 'Production Environments', 'Local Development', 'T
 summary: "The provided documentation serves as a guide for implementing the **Vercel Toolbar** across both **local development and production environments**. By expanding the tool's reach beyond its default preview setting, teams can access a unified suite of **collaboration features** such as live comments, feature flags, and draft modes at every stage of the software lifecycle. Integrating this utility into a workflow allows developers to **streamline project iteration** by addressing feedback and auditing performance directly within their live application. Ultimately, the resource outlines how this persistent interface bridges the gap between **team communication and technical deployment** to ensure a higher standard of web quality."
 extraido_em: "2026-06-30T16:18:06Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Add the Vercel Toolbar to local and production environments

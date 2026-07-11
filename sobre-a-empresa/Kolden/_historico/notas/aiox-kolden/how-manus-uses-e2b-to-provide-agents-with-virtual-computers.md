@@ -9,6 +9,9 @@ keywords: "('AI agent orchestration', 'E2B cloud sandboxes', 'Virtual computer e
 summary: "This case study examines how the AI platform Manus utilizes E2B’s **secure cloud sandboxes** to empower its multi-agent system with the capabilities of a **full virtual computer**. Rather than simply executing isolated snippets of code, Manus relies on these **ephemeral microVMs** to allow its agents to perform complex, long-running tasks like web browsing and file management just as a human researcher would. The text highlights that E2B was chosen over traditional containers due to its **rapid startup speeds** and the ability to provide a complete operating system environment, which is essential for installing software and maintaining context across sessions. Ultimately, by outsourcing this **infrastructure complexity**, the Manus team was able to focus on their core AI orchestration while ensuring their agents can scale securely to meet high user demand."
 extraido_em: "2026-06-30T16:20:02Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # How Manus Uses E2B to Provide Agents With Virtual Computers

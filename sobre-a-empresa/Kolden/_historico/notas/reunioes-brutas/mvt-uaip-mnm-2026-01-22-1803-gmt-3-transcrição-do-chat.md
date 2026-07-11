@@ -9,6 +9,9 @@ keywords: "('Chat transcript', 'Ronan Sersil', 'Timestamped messages', 'Communic
 summary: "This source represents a **digital record** extracted from a conversation log, specifically identified by a unique filename and a precise **coordinated universal timestamp**. Within this brief fragment, a user named Ronan Sersil contributes a singular, informal **textual greeting** or expression during a live session. The documentation serves to capture the **exact moment of interaction** within a broader virtual dialogue, illustrating how modern communication is archived for future reference."
 extraido_em: "2026-06-30T16:17:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # mvt-uaip-mnm (2026-01-22 18:03 GMT-3) - Transcrição do chat

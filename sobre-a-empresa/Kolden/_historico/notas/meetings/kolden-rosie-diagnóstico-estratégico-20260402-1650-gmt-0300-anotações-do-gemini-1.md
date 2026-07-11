@@ -9,6 +9,9 @@ keywords: "('Strategic Brand Diagnosis', 'Integrated Marketing Proposal', 'Brand
 summary: "This transcript documents a strategic marketing meeting where two agencies, **Borogodó and Colden**, present a unified \"comeback\" proposal for the **Rose project**. The collaboration offers an **integrated marketing system** that blends Borogodó’s focus on **strategic branding and 90s-inspired visual identity** with Colden’s expertise in **data-driven performance and AI-powered lead generation**. The agencies detail a comprehensive roadmap for 2026, featuring **automated editorial calendars**, influencer strategies, and advanced tracking to transform creative effort into **predictable market growth**. While the Rose team expresses strong **alignment with the proposal’s value**, the meeting concludes with a pending decision as the client evaluates the **R$ 9,850 investment** against their current internal infrastructure costs."
 extraido_em: "2026-06-30T16:24:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Kolden & Rosie | Diagnóstico Estratégico - 2026/04/02 16:50 GMT-03:00 - Anotações do Gemini

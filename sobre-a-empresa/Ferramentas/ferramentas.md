@@ -1,3 +1,16 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/api-validation|api-validation]]"
+  - "[[sobre-a-empresa/Ferramentas/cli-status|cli-status]]"
+  - "[[sobre-a-empresa/Ferramentas/ferramentas-dos-squads|ferramentas-dos-squads]]"
+  - "[[sobre-a-empresa/Ferramentas/matriz-de-marketing-absorvida|matriz-de-marketing-absorvida]]"
+  - "[[sobre-a-empresa/Ferramentas/mcp-status|mcp-status]]"
+  - "[[sobre-a-empresa/Ferramentas/teste-funcional|teste-funcional]]"
+---
+
 # Ferramentas do Kolden — Índice Mestre
 
 Catálogo de todas as ferramentas externas usadas pelos agentes do Kolden. Cada ferramenta tem

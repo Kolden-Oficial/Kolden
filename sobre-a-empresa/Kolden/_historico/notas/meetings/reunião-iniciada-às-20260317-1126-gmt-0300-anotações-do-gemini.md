@@ -9,6 +9,9 @@ keywords: "('Business Process Automation', 'Lead Qualification Strategies', 'Rea
 summary: "This document records a **discovery call** between Colden, a business performance consultancy, and Caio Eduardo, a real estate broker facing the typical **growing pains of a new business**. The primary objective of the meeting was to conduct an **operational audit** to identify \"bottlenecks,\" such as manual CRM management, unrefined lead qualification, and the difficulty of sourcing high-quality property listings. Key themes emerge around the **transition from solo entrepreneurship to scalable management**, specifically through the implementation of **automated workflows and humanized AI** to free the owner from repetitive tasks. The text concludes with a focus on **strategic planning**, as the consultants offer a tailored roadmap to provide Caio with the **financial predictability and time freedom** necessary to focus on long-term growth."
 extraido_em: "2026-06-30T16:24:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/17 11:26 GMT-03:00 - Anotações do Gemini

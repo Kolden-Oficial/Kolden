@@ -9,6 +9,10 @@ keywords: "('Prospecting Protocol', 'Lead Management', 'Tristar PRO', 'Sales Scr
 summary: "This document outlines a **structured sales outreach strategy** managed by a specialized team between mid-March and mid-April 2024. It establishes a **clear conversion funnel**, tracking metrics from the initial acquisition of leads through the final hand-off to sales closers. To achieve these targets, the protocol mandates the development of **multichannel communication scripts** and a rigorous **cadence of touchpoints** across platforms like LinkedIn, WhatsApp, and email. Ultimately, the text serves as a **comprehensive operational blueprint** designed to identify ideal customers and systematically convert them into qualified business opportunities."
 extraido_em: "2026-06-30T16:17:08Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # [DATA] PROTOCOLO DE PROSPECÇÃO - RESPONSÁVEL .docx

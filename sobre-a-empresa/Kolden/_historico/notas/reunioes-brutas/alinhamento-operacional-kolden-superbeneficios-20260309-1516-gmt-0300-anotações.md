@@ -9,6 +9,9 @@ keywords: "('Operational realignment strategy', 'Commercial team restructuring',
 summary: "This transcript documents a strategic meeting between **Leandro Palmeira** and his management partners to launch a **\"War Plan\"** for immediate business survival. Following the **total dismissal of the sales team** due to a critical lack of operational routine and management, Palmeira has temporarily reassigned four high-performing employees from non-sales departments to maintain a **direct sales pilot**. The discussion emphasizes a shift toward **rigorous process control**, including the replacement of basic automation with a robust **CRM system** to monitor vital metrics like **ROI and CAC**. This restructuring serves as a tactical bridge to stabilize the company and refine sales approaches before a new team is recruited, all while navigating a **tightening regulatory landscape** in the vehicle protection industry."
 extraido_em: "2026-06-30T16:10:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Alinhamento Operacional | Kolden & SuperBeneficios - 2026/03/09 15:16 GMT-03:00 - Anotações do Gemini

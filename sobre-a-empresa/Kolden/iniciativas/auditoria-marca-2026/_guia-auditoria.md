@@ -4,6 +4,14 @@ status: vigente
 data: 2026-06-23
 squads: [Aglaia, Harmonia]
 uso: rubrica e formato de saída para o fan-out da Fase 1 (auditoria conjunta integrada)
+tipo: nota
+area: iniciativas
+up: "[[sobre-a-empresa/Kolden/iniciativas/_MOC-iniciativas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/00-sumario-executivo|00-sumario-executivo]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/01-auditoria-integrada|01-auditoria-integrada]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/02-roadmap-de-marca|02-roadmap-de-marca]]"
+  - "[[sobre-a-empresa/Kolden/iniciativas/auditoria-marca-2026/brandbook-v2|brandbook-v2]]"
 ---
 
 # Guia compartilhado — Auditoria de Marca Kolden (2026)

@@ -9,6 +9,9 @@ keywords: "('Fraud prevention tips', 'Banking service packages', 'Transaction se
 summary: "This document serves as a **consolidated monthly bank statement** for a Santander client, outlining personal account details and a specific **university service package** from October 2022. Beyond showing administrative data and financial indices, the text functions as a comprehensive guide for **fraud prevention**, offering rigorous warnings against social engineering and digital scams. It highlights the **Esfera rewards program**, which allows users to earn points and cashback through various retail partnerships. Ultimately, the source aims to balance account transparency with a strong emphasis on **transactional security** and the promotion of specialized banking benefits."
 extraido_em: "2026-06-30T16:26:30Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (58).pdf

@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Railway — Referência de Uso
 
 Railway é uma plataforma de infraestrutura/deploy (PaaS) que permite provisionar, fazer deploy e escalar aplicações, bancos de dados e serviços a partir de repositórios Git ou imagens, com gerenciamento via dashboard, CLI e API pública. Categoria: Infra/Deploy.

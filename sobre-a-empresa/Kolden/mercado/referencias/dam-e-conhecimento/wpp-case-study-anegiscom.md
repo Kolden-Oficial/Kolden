@@ -9,6 +9,10 @@ keywords: "('Microsoft Dynamics 365', 'ERP implementation', 'Business process op
 summary: "This case study highlights how the technology firm ANEGIS modernized the **financial infrastructure** for WPP, the world’s largest communications services group. By implementing and optimizing **Microsoft Dynamics AX and 365 Finance**, the project streamlined essential business operations including **budgeting, automated invoicing, and auditing**. ANEGIS improved the system’s overall **stability and performance**, ensuring that custom code met industry best practices and global deployment standards. Ultimately, the partnership provided WPP with **enhanced data reliability and reporting efficiency**, allowing the massive organization to manage its global financial processes with greater precision."
 extraido_em: "2026-06-30T16:16:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # WPP | Case study | anegis.com

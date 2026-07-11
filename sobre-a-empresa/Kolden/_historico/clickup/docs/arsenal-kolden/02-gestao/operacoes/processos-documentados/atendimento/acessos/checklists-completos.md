@@ -4,6 +4,11 @@ clickup_page_ids: [8cdvxek-4283, 8cdvxek-4243, 8cdvxek-4263, 8cdvxek-4363, 8cdvx
 path_clickup: "Kolden/.../Atendimento/Acessos/{Checklists}"
 extracted_at: 2026-06-30
 nota: "Consolidação dos 5 checklists irmãos para reduzir fragmentação — todos sob /Acessos/."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-documentados/atendimento/acessos/acessos-processo|acessos-processo]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-documentados/atendimento/acessos/script-de-mensagem|script-de-mensagem]]"
 ---
 
 # Checklists de Acessos — consolidado (5 documentos)

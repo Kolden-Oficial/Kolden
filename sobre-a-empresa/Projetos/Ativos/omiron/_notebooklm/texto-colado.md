@@ -9,6 +9,10 @@ keywords: "('Dr. Ariosto Rodrigues', 'Psychiatric treatment', 'Belo Horizonte', 
 summary: "This source provides essential business profile details for a **psychiatric medical practice** located in Belo Horizonte, Brazil. It outlines the professional identity of Dr. Ariosto Rodrigues, highlighting his **specialized and compassionate approach** to treating complex mental health conditions such as depression and anxiety. By detailing his clinical expertise and providing a **direct link for patient engagement**, the text serves as a formal digital introduction to his healthcare services. Ultimately, the information is structured to establish **professional credibility** while ensuring that individuals seeking psychiatric care can easily access the doctor's specialized support."
 extraido_em: "2026-06-30T16:07:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

@@ -6,6 +6,11 @@ categoria: projeto
 status: oficial
 atualizado-em: 2026-07-05
 relacionados: [00-indice, 01-posicionamento, 02-voz-da-marca, 04-aplicacoes, 05-manual-operacional, ativos/manifesto/v2-definicoes-finais, ativos/logo/nutrios-pro-6-variantes]
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/brandbook/00-indice|00-indice]]"
 ---
 
 # Identidade Visual (v3)

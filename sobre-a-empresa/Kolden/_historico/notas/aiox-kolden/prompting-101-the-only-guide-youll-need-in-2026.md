@@ -9,6 +9,9 @@ keywords: "('Attention Mechanism', 'Context Placement', 'XML Tagging', 'Inhibiti
 summary: "Udit Goenka’s guide argues that successful AI interaction in 2026 requires **understanding fundamental architectural principles** rather than memorizing fleeting \"hacks\" or templates. The text shifts the focus from superficial word choice to **strategic information placement**, highlighting how the \"attention tax\" causes models to lose data buried in the middle of long prompts. By utilizing **structural components like XML tags** and the \"Inhibition Principle\"—which suggests that telling a model what not to do is often more effective than positive instruction—users can better navigate the **literal interpretation and reasoning capabilities** of modern transformers. Ultimately, the source provides a **standardized architectural framework** for prompting that emphasizes clarity, context quality over quantity, and the mastery of a few specialized tools to achieve consistent, high-level results."
 extraido_em: "2026-06-30T16:21:48Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Prompting 101: The Only Guide You'll Need in 2026

@@ -10,6 +10,11 @@ data: "2026-07-09"
 status: "laudo-diagnostico v1 (espelho do laudo Google 2026-07-01, adaptado ao stack Meta)"
 proxima_acao: "aprovação Ronan → execução Onda 1 Frente B"
 espelha: "diagnostico-tracking-2026-07-01.md"
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/meta-ads/conversion-events|conversion-events]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/meta-ads/qa-checklist|qa-checklist]]"
 ---
 
 # Laudo Peitho — Rastreamento Meta Ads (Pixel + CAPI) da Vilela Construction

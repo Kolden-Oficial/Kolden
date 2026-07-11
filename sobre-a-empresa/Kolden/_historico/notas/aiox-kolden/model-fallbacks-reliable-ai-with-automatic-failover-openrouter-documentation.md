@@ -9,6 +9,9 @@ keywords: "('Model Fallbacks', 'Automatic Failover', 'Provider Routing', 'Reliab
 summary: "OpenRouter provides a safety net for developers through a feature called **model fallbacks**, which ensures that an application remains functional even if a primary AI provider fails. By submitting a **prioritized list of model IDs**, users can trigger an **automatic failover** process that instantly tries the next available option if the initial request encounters downtime, rate limits, or moderation filters. This architectural redundancy is designed for **reliability**, charging the user only for the specific model that successfully fulfills the request. Ultimately, this system allows for **seamless transitions** between different large language models, maintaining a consistent user experience regardless of individual server errors or service interruptions."
 extraido_em: "2026-06-30T16:20:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Model Fallbacks | Reliable AI with Automatic Failover | OpenRouter | Documentation

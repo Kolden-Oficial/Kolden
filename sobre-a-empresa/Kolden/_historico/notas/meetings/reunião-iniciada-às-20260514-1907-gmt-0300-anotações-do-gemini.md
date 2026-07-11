@@ -9,6 +9,9 @@ keywords: "('Bras Hub USA', 'GoHighLevel Platform Implementation', 'Brazilian En
 summary: "The provided source details a strategic planning session for the launch of **Bras Hub USA**, a comprehensive digital management platform specifically tailored for **Brazilian entrepreneurs living in the United States**. By utilizing the **GoHighLevel infrastructure**, the founders aim to provide an all-in-one solution that integrates **CRM tools, dynamic scheduling, and financial management** with a primary focus on overcoming **linguistic and cultural barriers**. A central innovation of the product is its **real-time bilingual communication** feature, which translates technical industry terms to help users interact with American clients more professionally. The meeting concludes by outlining a **three-tier subscription model** and a marketing strategy that prioritizes **mobile accessibility** and personalized support in Portuguese to foster a sense of community and trust."
 extraido_em: "2026-06-30T16:25:25Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/05/14 19:07 GMT-03:00 - Anotações do Gemini

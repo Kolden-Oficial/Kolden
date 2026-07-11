@@ -9,6 +9,11 @@ autor: "Claude Code (encarnando Peitho/pixel-specialist)"
 data: "2026-07-09"
 status: "checklist ativo — usar em cada release + gate D+7 pré go-live"
 espelha: "../google-ads/conversion-actions.md §4 (QA end-to-end Google)"
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/meta-ads/conversion-events|conversion-events]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/meta-ads/diagnostico-meta-pixel-2026-07|diagnostico-meta-pixel-2026-07]]"
 ---
 
 # QA end-to-end — Meta Pixel + CAPI Vilela Construction

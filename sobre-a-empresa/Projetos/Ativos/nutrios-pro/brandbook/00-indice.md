@@ -6,6 +6,15 @@ categoria: projeto
 status: oficial
 atualizado-em: 2026-07-05
 relacionados: [01-posicionamento, 02-voz-da-marca, 03-identidade-visual, 04-aplicacoes, 05-manual-operacional, ../leia-me, ../prd]
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/brandbook/01-posicionamento|01-posicionamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/brandbook/02-voz-da-marca|02-voz-da-marca]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/brandbook/03-identidade-visual|03-identidade-visual]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/brandbook/04-aplicacoes|04-aplicacoes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/brandbook/05-manual-operacional|05-manual-operacional]]"
 ---
 
 # Brandbook NutriOS Pro

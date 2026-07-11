@@ -9,6 +9,9 @@ keywords: "('Aesthetic surgery volume', 'US economic performance', 'Financial in
 summary: "This study investigates the historical relationship between **national economic health** and the demand for cosmetic procedures in the United States over a sixteen-year period. By comparing aesthetic surgery volumes against major financial markers like **Gross Domestic Product (GDP)** and stock market indices, researchers found that plastic surgery trends generally mirror the country's broader financial cycles. While surgical demand often dips during recessions, certain **nonsurgical interventions** like dermal fillers have shown unique resilience during downturns, further influenced by the modern rise of **social media and cultural trends**. Ultimately, the text serves as a guide for practitioners to use **macroeconomic indicators** as a bellwether to anticipate and protect their practices against future market volatility."
 extraido_em: "2026-06-30T16:27:29Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # A 16-Year Analysis of Aesthetic Surgery Volume and Its Association With US Economic Performance - PMC

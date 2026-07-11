@@ -2,6 +2,14 @@
 name: External Integrations
 description: Credentials management for Meta CAPI, GHL, Telegram, Sendflow, Google Ads, GA4, GTM, Telegram Ads, TikTok + Advanced Matching pipeline (track-conversion → conversions → identities enrichment → sync-outbound) + identities-upsert HMAC webhook + browser-side Pixel/GTM dedup + outbound to Meta CAPI, GHL, TikTok Events API, GA4 Measurement Protocol
 type: feature
+tipo: projeto
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/architecture-overview|architecture-overview]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/database-schema|database-schema]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/security-constraints|security-constraints]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/technical-debt|technical-debt]]"
 ---
 
 ## Schema

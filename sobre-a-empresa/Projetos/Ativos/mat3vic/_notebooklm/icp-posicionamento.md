@@ -9,6 +9,10 @@ keywords: "('Construction service niches', 'Local SEO strategy', 'Paid traffic c
 summary: "This document serves as a **strategic roadmap** for Mat3vic Construction, outlining a specialized marketing plan designed to scale a boutique construction firm into a **local authority**. To maximize efficiency, the agency has narrowed the company's operational scope to focus exclusively on **Decks, Roofing, and Siding** within a specific geographic radius that intentionally excludes high-friction areas like Boston. The three-month contract integrates **digital infrastructure**—including SEO-optimized sites and targeted paid traffic—with essential **financial management tools** to stabilize the young company’s internal operations. Ultimately, the text defines a holistic growth strategy that combines **professional online positioning** with rigorous cost controls to transform a small three-person team into a highly visible, profitable service provider."
 extraido_em: "2026-06-30T16:07:42Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: mat3vic
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/mat3vic/_notebooklm/_indice|_indice]]"
 ---
 
 # ICP & Posicionamento

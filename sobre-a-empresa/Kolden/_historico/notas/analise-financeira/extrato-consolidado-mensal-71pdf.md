@@ -9,6 +9,9 @@ keywords: "('Bank Contact Information', 'Service Package Summary', 'Economic Ind
 summary: "This document is a **consolidated monthly bank statement** from Santander Brazil for November 2023, specifically detailing the account activity of a **university student profile**. It provides a comprehensive overview of the client's **contracted services**, such as monthly maintenance fees, withdrawal limits, and statement requests, while also tracking broader **economic indicators** including inflation rates and currency values. Beyond transaction summaries, the text serves an important **educational and security purpose** by offering clear protocols to help users identify and **prevent fraudulent activity**. Ultimately, the source functions as a formal record that balances individual **financial management** with essential institutional contact information and consumer protection advice."
 extraido_em: "2026-06-30T16:26:39Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (71).pdf

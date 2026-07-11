@@ -9,6 +9,9 @@ keywords: "('AI model selection', 'OpenRouter configuration', 'Provider setup in
 summary: "This guide provides specific instructions for navigating a software setup phase where the user must **designate a service provider** for artificial intelligence models. To ensure the system functions smoothly and maintains operational consistency, the text directs the user to **select OpenRouter** as the primary source. By highlighting the correct menu options and emphasizing the choice of the **\"openrouter/auto\" configuration**, the source serves as a practical roadmap to help users successfully integrate their **intelligent processing core**."
 extraido_em: "2026-06-30T16:21:59Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Selecionando o Provedor de Modelos de IA

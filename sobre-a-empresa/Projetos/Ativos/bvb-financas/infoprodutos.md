@@ -7,6 +7,11 @@ palavras-chave: [infoprodutos, curso, ebook, metodo-raiz-da-riqueza, pro-labore]
 status: rascunho
 atualizado-em: 2026-07-06
 relacionados: [posicionamento, conteudo, sistema]
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/dossie|dossie]]"
 ---
 
 # Infoprodutos — BVB Finanças

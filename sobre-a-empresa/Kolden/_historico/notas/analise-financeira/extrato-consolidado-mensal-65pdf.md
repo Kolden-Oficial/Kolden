@@ -9,6 +9,9 @@ keywords: "('Banking services', 'Insurance coverage', 'Fraud prevention', 'Month
 summary: "This document serves as a **monthly consolidated statement** for a Santander bank customer, providing a detailed summary of account activity and available financial services for May 2023. Beyond reporting on a **university service package** and its associated monthly fees, the text functions as a safety guide by offering **fraud prevention tips** specifically focused on verifying legitimate bank slips and protecting digital transactions. The source also includes an extensive directory of **customer support channels** and a comprehensive table of **economic indicators**, such as inflation rates and currency values, to help the user track the broader financial climate. Overall, the record balances **account-specific administration** with essential educational resources regarding **security protocols** and market performance."
 extraido_em: "2026-06-30T16:26:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (65).pdf

@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Prometeu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/agents/architect|architect]]"
+---
+
 # Memória do Agente Architect (Aria)
 
 ## Padrões Ativos

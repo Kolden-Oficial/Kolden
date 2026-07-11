@@ -6,6 +6,9 @@ segmento: "Construção civil e reformas / Deck, Roofing e Siding (EUA)"
 status: "ativo"
 drive_folder_id: "14cQgGtYzdxMJWpUgyUQ6cRlFvHCCgTiy"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: mat3vic
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Mat3vic

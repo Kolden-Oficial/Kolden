@@ -9,6 +9,9 @@ keywords: "('Marketing for Lawyers', 'Lead Generation Funnel', 'Sales Strategic 
 summary: "This presentation outlines a strategic framework designed to help legal professionals move beyond a reliance on luck by implementing a structured **growth funnel**. To overcome high competition and rising lead costs, the text emphasizes a synergistic approach involving **marketing, positioning, and sales management** rather than just simple advertising. By utilizing **segmented campaigns, automated lead qualification, and CRM systems**, law firms can achieve a predictable flow of potential clients. Ultimately, the methodology offers tiered service plans, such as **Octus Light and Octus Pro**, to provide attorneys with the tools and specialized consultancy needed to **scale their practice and secure more contracts**."
 extraido_em: "2026-06-30T16:11:11Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/_indice|_indice]]"
 ---
 
 # Apresentação Sessão Estratégica.pdf

@@ -9,6 +9,9 @@ keywords: "('Business Growth Ecosystem', 'Performance Marketing Strategy', 'Stra
 summary: "This transcript details a strategic consultation between the performance advisory firm **Coden** and business owner Arthur Joia regarding the growth of his optical stores. The service providers, Bernardo Vicenzo Pereira, Ronan Sersil, and Mateus Felipe, distinguish their **performance ecosystem** from traditional marketing by offering an integrated approach involving **business management, sales automation, and diversified marketing channels**. Their proposed four-phase roadmap emphasizes **sustainable and predictable growth**, moving from initial process optimization to intensive commercial monitoring and data-driven scaling. Ultimately, the meeting concludes with a **tailored investment proposal** of R$ 4,900 monthly, which Arthur received positively while deferring a final decision to consult with his business partners and family."
 extraido_em: "2026-06-30T16:24:15Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/15 19:23 GMT-03:00 - Anotações do Gemini

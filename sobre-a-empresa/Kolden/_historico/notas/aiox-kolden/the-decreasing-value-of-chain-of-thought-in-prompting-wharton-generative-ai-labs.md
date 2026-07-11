@@ -9,6 +9,9 @@ keywords: "('Chain-of-Thought prompting', 'Model performance variation', 'Reason
 summary: "This technical report from the Wharton Generative AI Labs examines the **diminishing returns of Chain-of-Thought (CoT) prompting**, a technique that asks AI to solve problems step by step. While older models benefitted significantly from this approach, the researchers found that **modern reasoning models gain only marginal improvements** that rarely justify the substantial increases in processing time and token costs. For non-reasoning models, the method can boost average performance but often introduces **unreliable variability**, sometimes causing errors on simpler tasks that a direct answer would have avoided. Ultimately, the study concludes that CoT is **no longer a universal best practice**, urging users to weigh the trade-offs between accuracy, consistency, and speed based on their specific model and goals."
 extraido_em: "2026-06-30T16:22:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # The Decreasing Value of Chain of Thought in Prompting - Wharton Generative AI Labs

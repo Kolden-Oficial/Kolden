@@ -9,6 +9,9 @@ keywords: "('Operational restructuring strategy', 'CRM implementation plan', 'Te
 summary: "In this operational meeting, leadership outlines a drastic **strategic reset** involving the termination of the entire sales department due to a systemic **lack of routine and management**. To stabilize the business, the company is implementing a **\"War Plan\"** that temporarily reassigns four high-performing employees from non-sales roles to handle immediate commercial needs. A central theme of the discussion is the shift toward **data-driven management**, which includes replacing basic automation tools with a **robust CRM** to gain full control over communication and accurately measure **ROI and CAC**. This restructuring serves as a vital survival tactic to prepare the organization for a **rigorous regulatory environment** that is expected to eliminate the majority of competitors by 2028. Moving forward, the management team will assume direct oversight of sales operations to ensure that new hiring processes, supported by external HR firms, result in a **disciplined and scalable culture**."
 extraido_em: "2026-06-30T16:23:20Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Alinhamento Operacional | Kolden & SuperBeneficios - 2026/03/09 15:16 GMT-03:00 - Anotações do Gemini

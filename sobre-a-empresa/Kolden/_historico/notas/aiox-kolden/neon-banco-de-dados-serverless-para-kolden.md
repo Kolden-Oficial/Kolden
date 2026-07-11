@@ -9,6 +9,9 @@ keywords: "('Serverless Database Architecture', 'Neon and PostgreSQL', 'Data Sto
 summary: "This source evaluates **Neon**, a modern **serverless database** solution, as a high-performance foundation for a multi-agent autonomous agency called Kolden. The text highlights how Neon's architecture **decouples storage from compute**, allowing the system to scale instantly while remaining cost-effective by only charging for active usage. Key functionalities such as **database branching** for safe testing and its seamless integration with infrastructure giants like **Vercel** establish it as a robust choice for managing chat histories and user configurations. While the author notes that specialized **vector databases** are still needed for long-term AI memory, Neon is presented as a reliable, high-tier \"engine\" that handles the essential relational data for the entire ecosystem."
 extraido_em: "2026-06-30T16:21:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Neon: Banco de Dados Serverless para Kolden

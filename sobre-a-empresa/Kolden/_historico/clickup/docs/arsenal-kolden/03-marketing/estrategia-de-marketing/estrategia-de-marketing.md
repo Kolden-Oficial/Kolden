@@ -9,6 +9,10 @@ author_ids: [60963240]
 edited_by: 60963240
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-14473
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/03-marketing/estrategia-de-marketing/definicao-da-estrategia-de-midias-sociais|definicao-da-estrategia-de-midias-sociais]]"
 ---
 
 # Estratégia de Marketing — checklist macro

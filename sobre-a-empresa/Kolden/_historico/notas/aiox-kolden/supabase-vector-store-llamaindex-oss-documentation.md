@@ -9,6 +9,9 @@ keywords: "('Supabase Vector Store', 'Database Setup', 'pgvector Extension', 'Ll
 summary: "This documentation serves as a comprehensive guide for integrating the **Supabase Vector Store** within the **LlamaIndex framework** to manage high-dimensional data. It outlines a structured workflow that begins with **database preparation**, requiring users to activate the **pgvector extension** and establish specialized tables and search functions. The text further explains how to initialize the index and perform **similarity searches**, highlighting the ability to refine results through **metadata filtering**. Ultimately, the resource provides a technical roadmap for developers to build efficient, **vector-based search capabilities** using a combination of Supabase’s infrastructure and LlamaIndex’s orchestration tools."
 extraido_em: "2026-06-30T16:22:05Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Supabase Vector Store | LlamaIndex OSS Documentation

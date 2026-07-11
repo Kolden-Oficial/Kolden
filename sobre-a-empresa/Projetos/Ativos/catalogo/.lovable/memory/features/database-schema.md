@@ -1,7 +1,15 @@
 ---
 name: Database Schema
-description: Schema completo do PostgreSQL (Supabase): 8 tabelas, RLS policies, 5 funções SQL e constraints críticas. Padrão de acesso: frontend usa anon key + RLS; Edge Functions usam SUPABASE_SERVICE_ROLE_KEY.
+description: "Schema completo do PostgreSQL (Supabase): 8 tabelas, RLS policies, 5 funções SQL e constraints críticas. Padrão de acesso: frontend usa anon key + RLS; Edge Functions usam SUPABASE_SERVICE_ROLE_KEY."
 type: feature
+tipo: projeto
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/architecture-overview|architecture-overview]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/external-integrations|external-integrations]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/security-constraints|security-constraints]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/technical-debt|technical-debt]]"
 ---
 
 ## Padrão de acesso ao banco

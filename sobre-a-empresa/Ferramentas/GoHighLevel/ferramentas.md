@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/GoHighLevel/gohighlevel|gohighlevel]]"
+---
+
 # GoHighLevel — Referência de Uso
 
 CRM e plataforma de automação de marketing. Usado no Kolden para gestão de pipelines,

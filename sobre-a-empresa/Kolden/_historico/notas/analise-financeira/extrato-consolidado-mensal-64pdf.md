@@ -9,6 +9,9 @@ keywords: "('Cybersecurity best practices', 'Digital fraud prevention', 'Banking
 summary: "This document serves as a consolidated monthly bank statement from Santander Brazil for April 2023, specifically tailored for a student account holder named Ronan Sergio Silva. The text functions primarily as a **comprehensive security guide**, alerting the user to prevalent digital threats like **WhatsApp cloning** and **Pix payment fraud** while offering specific preventative steps such as enabling two-step verification. Beyond safety protocols, the source outlines **account-specific financial data**, including a summary of services used, monthly fees, and a detailed table of **national economic indices** like inflation and exchange rates. Ultimately, the document balances administrative reporting with a strong emphasis on **consumer protection**, providing multiple contact channels for reporting suspicious activity to the bank's official support network."
 extraido_em: "2026-06-30T16:26:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (64).pdf

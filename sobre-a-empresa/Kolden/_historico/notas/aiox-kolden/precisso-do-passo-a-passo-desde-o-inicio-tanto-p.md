@@ -9,6 +9,9 @@ keywords: "('WSL Ubuntu operation', 'OpenClaw server setup', 'Command line acces
 summary: "This guide serves as a practical manual for users who need to **reactivate a Linux-based server** environment hosted on Windows via WSL. The text outlines a systematic process for **re-establishing a connection** to the Ubuntu terminal, initializing the software’s background services, and generating a **secure access token** for the web dashboard. By framing the technical steps as an architectural \"survival manual,\" the source aims to demystify the command-line interface and provide a **clear bridge between the terminal and the visual browser interface**. Ultimately, its purpose is to empower beginners to navigate their local server infrastructure independently after a system reboot or closure."
 extraido_em: "2026-06-30T16:21:39Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Precisso do passo a passo desde o inicio, tanto p...

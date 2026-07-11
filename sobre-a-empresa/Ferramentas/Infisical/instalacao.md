@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/Infisical/ferramentas|ferramentas]]"
+---
+
 # Infisical — Instalação e Configuração
 
 Passo a passo para reinstalar e configurar o Infisical do zero.

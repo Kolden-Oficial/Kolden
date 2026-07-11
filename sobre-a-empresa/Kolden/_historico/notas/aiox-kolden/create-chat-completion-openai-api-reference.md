@@ -9,6 +9,9 @@ keywords: "('Chat Completions API', 'Model Parameters', 'Structured Outputs', 'F
 summary: "The documentation outlines the technical specifications for the **Chat Completions API**, a foundational tool used to generate intelligent responses from various **AI models**. It details a structured request system where developers provide a **list of messages** categorized by roles—such as developer, system, or user—to guide the model’s behavior across **multiple modalities** like text, image, and audio. The text highlights advanced features including **structured outputs** for precise data formatting, **tool calling** for external function integration, and specialized parameters for controlling **reasoning effort** and deterministic sampling. Ultimately, this reference serves as a comprehensive guide for developers to **configure and scale** model interactions while managing performance through settings like **streaming**, token limits, and service tiers."
 extraido_em: "2026-06-30T16:19:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Create chat completion | OpenAI API Reference

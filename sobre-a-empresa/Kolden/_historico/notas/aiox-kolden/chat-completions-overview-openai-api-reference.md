@@ -9,6 +9,9 @@ keywords: "('Chat Completions API', 'OpenAI API Reference', 'AI Model Optimizati
 summary: "This comprehensive technical reference outlines the extensive ecosystem of the **OpenAI API**, detailing the tools and endpoints available for developers to build sophisticated artificial intelligence applications. The documentation covers a vast spectrum of capabilities, ranging from **multimodal generation** involving text, audio, and video to advanced **agentic workflows** and real-time communication protocols. Central to the text is the **Chat Completions API**, which facilitates interactive dialogue by generating model responses based on conversation history. Ultimately, the source serves as a structural roadmap for **model optimization**, administrative governance, and the deployment of AI-driven products using the latest **GPT-5.4** framework and specialized developer tools."
 extraido_em: "2026-06-30T16:18:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Chat Completions Overview | OpenAI API Reference

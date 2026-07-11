@@ -1,3 +1,15 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/docs/pesquisa-referencias/canva-deck-referencias-visuais|canva-deck-referencias-visuais]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/docs/pesquisa-referencias/decisoes-consolidadas-brand|decisoes-consolidadas-brand]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/docs/pesquisa-referencias/mapa-mental-consolidado|mapa-mental-consolidado]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/docs/pesquisa-referencias/paleta-hex-extraida|paleta-hex-extraida]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/docs/pesquisa-referencias/reuniao-2026-07-01-transcricao-e-decisoes|reuniao-2026-07-01-transcricao-e-decisoes]]"
+---
+
 # Pesquisa de Referências — Omiron
 
 Dossiê consolidado em 06/07/2026 pelo Hermes a partir de 3 fontes externas + 1 mapa mental compartilhado pelo Ronan.

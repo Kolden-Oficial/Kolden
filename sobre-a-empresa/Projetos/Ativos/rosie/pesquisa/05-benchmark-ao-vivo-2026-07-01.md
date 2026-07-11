@@ -7,6 +7,11 @@ palavras-chave: [pesquisa, rosie, benchmark, firecrawl, basico, insider, catarin
 status: rascunho
 atualizado-em: 2026-06-30
 relacionados: [00-indice, 01-mercado-e-concorrentes]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/pesquisa/00-indice|00-indice]]"
 ---
 
 # Benchmark ao vivo — 2026-07-01

@@ -9,6 +9,10 @@ keywords: "('Affordable Insulation', 'Lowell, Massachusetts', 'Insulation servic
 summary: "This digital snapshot displays a **business profile** for a company called Affordable Insulation, which specializes in **weatherproofing services** within the Lowell, Massachusetts area. The layout serves as a **functional directory**, providing potential clients with essential contact details, geographical mapping, and operational hours to facilitate easy communication. A significant portion of the entry focuses on **social proof**, highlighting a perfect five-star rating across multiple platforms to establish **professional credibility**. By consolidating visual evidence of their work with verified customer feedback, the profile acts as a **comprehensive digital storefront** designed to build trust and drive local consumer engagement."
 extraido_em: "2026-06-30T16:06:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Captura de tela 2026-02-05 185041.png

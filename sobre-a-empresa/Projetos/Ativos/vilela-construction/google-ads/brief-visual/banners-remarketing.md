@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/brief-visual/_INDEX|_INDEX]]"
+---
+
 # Briefing — Banners Display Remarketing
 
 > **Origem:** Onda 3 Phase 1 do `google-ads/ROADMAP.md` — campanha `US_Remkt_All_LP-view_v1`.

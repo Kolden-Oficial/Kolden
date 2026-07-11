@@ -9,6 +9,10 @@ keywords: "('Affiliate Marketing Strategy', 'Sales Funnel Construction', 'Advanc
 summary: "This comprehensive document outlines a structured **action plan** for building a high-performance **affiliate marketing business** from scratch, specifically targeting the **Shopee ecosystem**. The strategy is divided into sequential phases that move from **strategic foundation** and exhaustive **competitor benchmarking** to the technical deployment of **conversion funnels** on platforms like Telegram and WhatsApp. A major emphasis is placed on **advanced tracking and data integrity**, utilizing tools like **Cloudflare, Stape, and Meta’s Conversion API** to ensure every lead is captured from the first click to the final sale. The plan concludes with a clear **division of labor** and a focus on **iterative testing**, aiming to validate a single niche before scaling toward a significant revenue goal."
 extraido_em: "2026-06-30T16:08:38Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # Plano de ação

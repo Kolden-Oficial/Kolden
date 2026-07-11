@@ -9,6 +9,9 @@ keywords: "('Neon Postgres Integration', 'Vercel Deployment Platform', 'Next.js 
 summary: "This technical guide introduces a **streamlined starter template** designed for developers building full-stack applications using the **Next.js framework** and **Neon’s serverless Postgres database**. By integrating essential tools like **Drizzle ORM** for type-safe data management and **Shadcn UI** for modern interface design, the source provides a comprehensive architectural foundation for scalable web projects. The documentation emphasizes a **seamless deployment workflow** on the Vercel platform, offering clear instructions on environment configuration, local development, and the use of **AI-assisted coding tools**. Ultimately, the text serves as a roadmap for efficiently bridging frontend interactivity with robust backend storage through a **cloud-native ecosystem**."
 extraido_em: "2026-06-30T16:22:30Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Vercel with Neon Postgres

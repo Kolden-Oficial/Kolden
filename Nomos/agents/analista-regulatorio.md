@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Nomos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Nomos/agents/nomos-chief|nomos-chief]]"
+---
+
 # Analista Regulatório
 
 > Especialista (tier 1) do squad **Nomos**. Cuida do **horizonte regulatório e das políticas internas** —

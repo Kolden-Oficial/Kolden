@@ -7,6 +7,19 @@ palavras-chave: [identidade-visual, logo, cores, tipografia, design, design-syst
 status: vigente
 atualizado-em: 2026-06-22
 relacionados: [voz-e-tom, ds-leia-me, ds-cores, ds-tipografia, ds-logo]
+tipo: nota
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/posicionamento|posicionamento]]"
+  - "[[sobre-a-empresa/Kolden/identidade/visao-geral|visão geral]]"
+  - "[[sobre-a-empresa/Kolden/marca/mensagens-chave|mensagens-chave]]"
+  - "[[sobre-a-empresa/Kolden/marca/voz-e-tom|voz-e-tom]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/cores|cores]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/leia-me|design system]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/logo|logo]]"
+  - "[[sobre-a-empresa/Kolden/identidade/missao-visao-valores|missão-visão-valores]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tipografia|tipografia]]"
 ---
 
 # Identidade Visual

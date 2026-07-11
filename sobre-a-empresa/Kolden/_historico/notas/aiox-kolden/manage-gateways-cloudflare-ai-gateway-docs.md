@@ -9,6 +9,9 @@ keywords: "('AI Gateway management', 'Gateway creation', 'Retry requests', 'Requ
 summary: "Cloudflare AI Gateway serves as a central hub for managing interactions with various large language models, offering tools to **create, modify, and monitor** these connections through either a manual dashboard or an automated API. Users can initiate a **default gateway** simply by sending an authenticated request, or they can fine-tune specific settings like **caching, rate limiting, and log collection** to optimize performance. A critical reliability feature is the ability to configure **automatic retry logic**, which allows the system to handle upstream provider failures using custom backoff strategies and delay intervals. Ultimately, the platform provides a unified interface to ensure that AI-driven applications remain **observable and resilient** by centralizing the administration of multiple backend providers into one scalable environment."
 extraido_em: "2026-06-30T16:20:51Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Manage gateways · Cloudflare AI Gateway docs

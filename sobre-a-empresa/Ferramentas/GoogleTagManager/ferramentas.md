@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Google Tag Manager (GTM) — Referência de Uso
 
 Acesso ao Google Tag Manager — contas, containers, tags, triggers, variáveis, versões. Categoria: Analytics / Tracking. **Uso direto via API com ADC** (escopo `tagmanager.readonly`); MCP comunitário é opção futura.

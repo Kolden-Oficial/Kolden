@@ -9,6 +9,9 @@ keywords: "('Responsibility allocation', 'Operational structure', 'Strategic bus
 summary: "This document serves as a strategic blueprint designed to **eliminate operational ambiguity** by clearly partitioning a service-based company into three distinct functional blocks: Management, Marketing, and Sales. By defining specific missions, deliverables, and boundaries for each sector, the framework aims to **reduce internal friction** and replace emotional finger-pointing with a logical system of accountability. The overarching philosophy dictates that **unallocated tasks lead to conflict**, ensuring that every responsibility has a designated owner who possesses the authority to execute it. Ultimately, this evolving guide functions as a **repeatable organizational engine** that aligns expectations and streamlines decision-making to foster a predictable and scalable business environment."
 extraido_em: "2026-06-30T16:12:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Documento de Balizamento de Responsabilidades

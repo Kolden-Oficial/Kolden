@@ -9,6 +9,10 @@ keywords: "('Affiliate Marketing', 'E-commerce Social', 'Telegram Sales Funnel',
 summary: "This document functions as a comprehensive **operational roadmap and management dashboard** for an affiliate marketing venture, specifically targeting the **e-commerce \"deals\" niche** on platforms like Shopee and TikTok. It meticulously organizes data into various control modules, ranging from a **curated archive of viral product videos** and keyword dictionaries to a detailed **competitive analysis** of major Brazilian affiliate networks and individual social media rivals. The structure reveals a sophisticated **sales funnel strategy** that leverages paid and organic traffic to drive users toward **automated Telegram and WhatsApp groups** for conversion. Furthermore, the source includes a **centralized inventory of tracked products** and a secure registry of **technical tools and access credentials**, ensuring a streamlined workflow for scaling digital sales."
 extraido_em: "2026-06-30T16:08:39Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # Radar_Telegram

@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Meta (Ads / Conversions API) — Referência de Uso
 
 A Conversions API (CAPI) da Meta cria uma conexão servidor-a-servidor entre os dados de marketing do anunciante (eventos de site, app, mensagens e conversões offline) e os sistemas da Meta, melhorando otimização, mensuração e redução de custo por resultado dos anúncios no Facebook/Instagram. Categoria: Marketing.

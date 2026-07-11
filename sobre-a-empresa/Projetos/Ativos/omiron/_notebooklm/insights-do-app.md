@@ -9,6 +9,10 @@ keywords: "('Patient monitoring system', 'Personalized health tracking', 'Clinic
 summary: "The Omiron 1 project outlines a sophisticated **holistic health management platform** designed to bridge the gap between clinical diagnosis and daily patient adherence. By monitoring seven distinct pillars—ranging from **biochemical factors like medication** to lifestyle metrics such as **stress management and social connection**—the system provides a 360-degree view of a patient's recovery journey. The application facilitates **real-time data transparency** between the user and the practitioner, ensuring that treatment plans are dynamically adjusted based on documented daily patterns. Beyond its functional utility, the project is distinguished by a **classical and artistic design aesthetic** and a modern technological stack, aiming to transform a standard medical tool into a **personalized, high-end therapeutic experience**."
 extraido_em: "2026-06-30T16:08:20Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Insights do APP

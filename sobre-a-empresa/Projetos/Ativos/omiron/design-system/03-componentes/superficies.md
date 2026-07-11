@@ -13,6 +13,11 @@ relacionados:
   - 02-tokens/tokens.json
   - 02-tokens/tokens.css
   - 03-componentes/leia-me.md
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/design-system/03-componentes/leia-me|leia-me]]"
 ---
 
 # Superfícies — Omiron

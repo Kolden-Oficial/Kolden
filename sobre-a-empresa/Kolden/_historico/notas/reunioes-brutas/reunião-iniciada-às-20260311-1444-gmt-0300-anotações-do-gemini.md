@@ -9,6 +9,9 @@ keywords: "('Spreadsheet structure review', 'Material calculation methodology', 
 summary: "This document summarizes a technical meeting between Ronan Sersil and Kaylon Teixeira regarding the finalization of a specialized **spreadsheet system designed for material and labor estimation**. The discussion focuses on the \"**Matrix**\" tab, a centralized database where product data automatically flows into calculation sheets, provided users only edit specific yellow-highlighted fields. A significant portion of the dialogue involves troubleshooting the methodology for calculating **Board Feet**, ultimately requiring manual entry for thickness adjustments to ensure the **Open Cell Foam** and other materials are quantified correctly. Beyond material procurement, the system introduces rigorous tracking for **mobilization costs**, a **3% waste tax**, and specific labor roles to provide a comprehensive **total project cost and profit margin**. Ultimately, the purpose of this tool is to transition the business from informal notes to a precise, automated environment that compares **estimated versus real costs** to maximize financial clarity."
 extraido_em: "2026-06-30T16:15:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/11 14:44 GMT-03:00 - Anotações do Gemini

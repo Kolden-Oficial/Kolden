@@ -9,6 +9,10 @@ keywords: "('Patient Registration', 'Data Collection Fields', 'Form Customizatio
 summary: "This document serves as a functional blueprint for a **customizable patient registration system** designed to streamline the initial intake process in a clinical setting. It outlines a modular framework where users can **drag and drop diverse data fields**, ranging from basic contact details to complex conditional inputs like foreign identification and file attachments. By offering **automated validation and specific formatting** for elements such as emails and phone numbers, the interface ensures data integrity and administrative efficiency. Ultimately, the tool aims to provide healthcare providers with a **flexible, structured approach** to gathering essential medical and personal information tailored to their specific practice needs."
 extraido_em: "2026-06-30T16:08:46Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # Cadastro de pacientes _ Cauly.pdf

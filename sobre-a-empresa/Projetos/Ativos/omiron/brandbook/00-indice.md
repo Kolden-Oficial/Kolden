@@ -8,6 +8,18 @@ atualizado-em: 2026-07-06
 autor: Aglaia (brand-chief) — Kolden
 missao: m-20260706-193013-omiron-brandbook-completo
 relacionados: [01-posicionamento, 02-voz-da-marca, 03-identidade-visual, 04-aplicacoes, 05-manual-operacional, narrativa/manifesto, narrativa/pilares, ../design-system/01-fundamentos/cores]
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/01-posicionamento|01-posicionamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/02-voz-da-marca|02-voz-da-marca]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/03-identidade-visual|03-identidade-visual]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/04-aplicacoes|04-aplicacoes]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/05-manual-operacional|05-manual-operacional]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/compliance-checklist|compliance-checklist]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/direcoes-logo|direcoes-logo]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/gaps-reconciliacao|gaps-reconciliacao]]"
 ---
 
 # Brandbook Omiron

@@ -12,6 +12,11 @@ agente_dono: emporos-chief
 heranca_historica: [gainsight, successhackeresses]
 fonte_upstream: msitarzewski--agency-agents@a597cb6 (G1)
 status: semente
+tipo: agente
+squad: Emporos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Emporos/agents/emporos-chief|emporos-chief]]"
 ---
 
 # Gestor de Contas Estratégicas

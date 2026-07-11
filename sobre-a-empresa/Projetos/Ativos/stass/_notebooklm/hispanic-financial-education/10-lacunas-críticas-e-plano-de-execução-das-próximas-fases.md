@@ -9,6 +9,10 @@ keywords: "('Critical Project Gaps', 'Execution Timeline', 'Expert Brand Identit
 summary: "This strategic document serves as a **critical roadmap for a marketing launch**, outlining the necessary steps to transition from planning to the active execution of an educational financial seminar. The text identifies **blocking gaps**—such as the expert’s legal identity, professional credentials, and regulatory compliance—that must be resolved to prevent costly revisions of the promotional materials. It establishes a rigorous **twenty-two-day execution timeline** that covers everything from audience definition and narrative positioning to the technical setup of the sales funnel. By prioritizing a **discovery interview** with the expert, the plan ensures that the final campaign is anchored in authentic storytelling and a unique \"origin story.\" Ultimately, the source highlights a **risk-management approach** to brand shielding and logistical readiness, requiring immediate decisions on operational modes and language preferences before the project can proceed."
 extraido_em: "2026-06-30T16:28:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/_indice|_indice]]"
 ---
 
 # 10 — Lacunas Críticas e Plano de Execução das Próximas Fases

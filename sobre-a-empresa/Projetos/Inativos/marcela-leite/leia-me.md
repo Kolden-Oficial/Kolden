@@ -6,6 +6,9 @@ segmento: "App de conteúdo / Plataforma de assinatura (conteúdo sensual afroce
 status: "inativo"
 drive_folder_id: "1gwxFmoI6RybT44xeDg-4cTeTVzmoHogd"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: marcela-leite
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Marcela Leite

@@ -7,6 +7,12 @@ status: "ativo"
 drive_folder_id: "1gLjXxMYWPub-Vzemeb8F4N-t0oNaafyN"
 workspace_projeto: "Projetos/CataLogo"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/README|README]]"
 ---
 
 # Dossiê — CataLogo

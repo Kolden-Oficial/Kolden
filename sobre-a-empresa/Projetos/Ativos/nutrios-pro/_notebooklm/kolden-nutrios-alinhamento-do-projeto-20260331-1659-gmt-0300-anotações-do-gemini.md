@@ -9,6 +9,10 @@ keywords: "('Project Naming Decisions', 'Domain Registration Process', 'Meta Pla
 summary: "This meeting transcript details a **technical alignment session** between Ronan Sersil and Vinicius Abdon as they formalize the digital infrastructure for their project, **Nutrios Pro**. After resolving initial connectivity issues, the partners officially rebranded the venture to avoid high domain costs, successfully **registering the new domain** and integrating **Cloudflare for application security**. A significant portion of the discussion focuses on leveraging a **legacy Facebook account** to establish a robust **Business Manager and ad accounts**, which are essential for future scaling and traffic. The session concludes with the successful setup of **payment methods** and a plan to meet with a branding expert to finalize the project's **visual identity and market launch strategy**."
 extraido_em: "2026-06-30T16:08:52Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # Kolden & NutriOS | Alinhamento do Projeto - 2026/03/31 16:59 GMT-03:00 - Anotações do Gemini

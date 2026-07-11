@@ -9,6 +9,9 @@ keywords: "('Chatbot Arena', 'Elo rating system', 'LLM benchmarking', 'Crowdsour
 summary: "The **Chatbot Arena** is a crowdsourced benchmarking platform designed to evaluate **large language models** (LLMs) through anonymous, competitive \"battles.\" By having users engage with two hidden models simultaneously and vote on the superior response, the project captures **authentic human preferences** for open-ended tasks that automated programs struggle to measure. To organize these results, the developers utilize the **Elo rating system**, a classic ranking method borrowed from chess, which provides a scalable and statistically sound way to track model performance over time. This approach aims to solve the industry’s need for an **incremental and transparent leaderboard** as the field of open-source and proprietary AI continues to expand rapidly."
 extraido_em: "2026-06-30T16:18:48Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Chatbot Arena: Benchmarking LLMs in the Wild with Elo Ratings - LMSYS Blog

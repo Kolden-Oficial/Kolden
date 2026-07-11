@@ -9,6 +9,9 @@ keywords: "('Feature flag management', 'Vercel Toolbar', 'Workflow optimization'
 summary: "Vercel has introduced a new capability that allows developers to **manage and override feature flags directly within the Vercel Toolbar**, eliminating the need to toggle between different browser tabs and external provider dashboards. This integration supports major industry providers and custom setups, streamlining the development cycle by enabling **real-time adjustments and testing** within the local or production environment. By utilizing API routes and script tags to communicate flag metadata, teams can create **session-specific overrides** that simplify quality assurance and collaborative feedback. Ultimately, this workflow enhancement aims to **accelerate iteration speed** and ensure that only high-quality, performant features are delivered to the end user."
 extraido_em: "2026-06-30T16:20:20Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Introducing feature flag management from the Vercel Toolbar

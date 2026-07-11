@@ -9,6 +9,9 @@ keywords: "('Growth Consultancy Proposal', 'Operational Bottleneck Identificatio
 summary: "This meeting transcript documents a **strategic growth proposal** presented to a high-ticket real estate professional to address operational bottlenecks and low sales conversions. The service provider outlines a **four-pillar methodology**—consisting of lead acquisition, qualification, automation, and scaling—designed to transition the client from a manual workflow to a **systematized sales funnel**. By implementing **CRM automation** and eventually integrating an **artificial intelligence agent**, the plan aims to triple conversion rates from 0.5% to over 1.5% while freeing the client from repetitive tasks. The discussion concludes with a detailed **investment breakdown** totaling R$ 5,500, with the client requesting time to evaluate the **feasibility and priority** of these improvements relative to his current business volume."
 extraido_em: "2026-06-30T16:25:05Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/31 09:30 GMT-03:00 - Anotações do Gemini

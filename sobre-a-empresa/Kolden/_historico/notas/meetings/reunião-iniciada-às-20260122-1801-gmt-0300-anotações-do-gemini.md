@@ -9,6 +9,9 @@ keywords: "('Nutritional Software SAAS', 'Nutritionist Target Audience', 'Automa
 summary: "This source documents a collaborative meeting between Vinicius Abdon and Ronan Sersil regarding the evolution of **nutritional calculation spreadsheets** into a professional software product. Vinicius has successfully validated the market by selling these tools—which automate complex tasks like **body fat estimations and meal planning**—to nutritionists and students without any active marketing. Recognizing the potential for **recurring revenue and scalability**, the pair agrees to a partnership to transform the static spreadsheets into a **Software as a Service (SaaS)** platform. The discussion concludes with a strategic **profit-sharing agreement** and a roadmap focused on market research, branding, and long-term **business valuation** within the fitness industry."
 extraido_em: "2026-06-30T16:24:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/22 18:01 GMT-03:00 - Anotações do Gemini

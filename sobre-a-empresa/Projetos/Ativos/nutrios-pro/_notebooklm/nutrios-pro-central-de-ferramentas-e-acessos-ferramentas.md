@@ -9,6 +9,10 @@ keywords: "('Meta Advertising Tools', 'Google Services Management', 'Digital Sys
 summary: "This document serves as a **centralized credential directory** for NutriOS Pro, meticulously organizing the digital infrastructure required to manage their operations. The catalog is structured into seven distinct categories, including **social media marketing**, **data analytics**, and **financial payment systems**, distinguishing between active and inactive accounts. By providing a unified overview of **logins, passwords, and direct access links**, the source ensures seamless technical coordination across platforms like Meta, Google, and various automation tools. Ultimately, this registry functions as a **strategic access hub** designed to streamline administrative workflows and maintain secure oversight of the brand’s **extensive software ecosystem**."
 extraido_em: "2026-06-30T16:08:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # [NutriOS Pro] Central de Ferramentas e Acessos - Ferramentas

@@ -9,6 +9,9 @@ keywords: "('Delivery Performance Strategies', 'Brand Recognition Goals', 'Traff
 summary: "This meeting transcript documents a strategic **reorientation for Let’s Go Burger**, a two-unit hamburger chain seeking to overcome past marketing failures and stagnant growth. A new consultancy team led by Ronan Sersil identifies a critical **shift from generic social media presence to delivery-focused advertising**, aiming to stabilize weekday revenue and boost brand recognition in new locations. The dialogue reveals a pivot toward **data-driven customer retention**, utilizing CRM systems and the \"Cyplos\" delivery tool to convert existing followers into recurring buyers through automated messaging. Ultimately, the session serves as a **professional alignment and recovery plan**, establishing clear accountability for traffic investment and setting a roadmap for concrete financial returns rather than abstract metrics."
 extraido_em: "2026-06-30T16:24:55Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/18 13:00 GMT-03:00 - Anotações do Gemini

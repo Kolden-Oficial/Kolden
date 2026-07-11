@@ -9,6 +9,9 @@ keywords: "('OpenClaw Tool Categories', 'Skill Integration Guide', 'AI Agent Aut
 summary: "This comprehensive guide by WenHao Yu serves as a technical manual for configuring **OpenClaw**, an AI agent system distinguished by its ability to perform autonomous actions rather than just generating text. The author establishes a critical distinction between **Tools**, which represent the physical **capabilities or \"organs\"** of the software, and **Skills**, which act as **instructional \"textbooks\"** teaching the agent how to utilize those tools for specific platforms like Google or GitHub. By organizing these features into **concentric layers** ranging from core file operations to advanced automation, the text provides a strategic framework for **balancing functionality with security**. Ultimately, the guide illustrates how users can transform a standard chatbot into a proactive **personal assistant** through the use of scheduled tasks and automated notifications, provided they maintain strict **manual control over irreversible actions**."
 extraido_em: "2026-06-30T16:21:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # OpenClaw Setup Guide: 26 Tools + 53 Skills Explained | WenHao Yu

@@ -9,6 +9,9 @@ keywords: "('SupabaseVectorStore integration', 'LangChain JavaScript', 'PostgreS
 summary: "This documentation details the integration of **Supabase** as a robust **vector store** within the LangChain JavaScript ecosystem, leveraging the **pgvector extension** on a PostgreSQL foundation. It provides developers with a roadmap for **setting up credentials**, managing document storage, and performing **similarity searches** to power intelligent applications. By transforming the database into a **retriever**, the guide illustrates how to effectively implement **retrieval-augmented generation (RAG)** for AI agents and chains. Ultimately, the text serves as a technical blueprint for combining **open-source database management** with advanced language model workflows."
 extraido_em: "2026-06-30T16:22:05Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # SupabaseVectorStore integration - Docs by LangChain

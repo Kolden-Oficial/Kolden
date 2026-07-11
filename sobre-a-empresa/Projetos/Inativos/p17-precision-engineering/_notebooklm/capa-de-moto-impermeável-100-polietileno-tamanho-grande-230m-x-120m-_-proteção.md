@@ -9,6 +9,10 @@ keywords: "('Waterproof motorcycle cover', 'Weather protection', 'Product specif
 summary: "This document is a product listing from the Amazon Brazil marketplace for a **universal, waterproof motorcycle cover** made entirely of polyethylene. The source details the item's primary function as a **protective barrier against environmental hazards** like UV rays, rain, and dust, emphasizing its large dimensions and budget-friendly pricing. Beyond the specific product features, the text captures a **snapshot of the digital shopping experience**, including shipping estimates, customer star ratings, and \"frequently bought together\" suggestions. Despite the functional promises of the description, the included **user reviews offer a critical perspective**, with some buyers warning about the material's fragility and overall quality."
 extraido_em: "2026-06-30T16:09:40Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa de Moto Impermeável 100% Polietileno Tamanho Grande 2,30m x 1,20m _ Proteção UV, Chuva e Poeira _ Cobre Moto Universal _ Amazon.com.br.pdf

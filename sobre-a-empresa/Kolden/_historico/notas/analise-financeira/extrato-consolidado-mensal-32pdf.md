@@ -9,6 +9,9 @@ keywords: "('Fraud prevention', 'Bank statement summary', 'Private pension plans
 summary: "This bank statement serves as a comprehensive monthly summary for a Santander account holder, blending personal financial data with **critical security warnings** and promotional investment opportunities. The document opens with a high-priority alert regarding the **\"false courier\" scam**, explicitly stating that the bank will never request passwords or send representatives to collect physical cards from a customer's home. Beyond security, the text outlines long-term **private pension plans** designed for children’s futures, detailing the tax advantages of both VGBL and PGBL structures. Finally, the statement provides a formal breakdown of the user’s **university service package** fees and a detailed table of **economic indices**, such as inflation and currency rates, to help the client track the broader financial market."
 extraido_em: "2026-06-30T16:26:04Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (32).pdf

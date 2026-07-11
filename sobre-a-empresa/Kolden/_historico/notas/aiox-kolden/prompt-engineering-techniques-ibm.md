@@ -9,6 +9,9 @@ keywords: "('Prompt engineering techniques', 'Large language models', 'Prompt op
 summary: "This IBM technical guide serves as a comprehensive primer on **prompt engineering techniques**, which are strategic methods used to refine the way humans communicate with **generative AI models**. The text categorizes various instructional styles—ranging from **direct and open-ended commands** to complex reasoning frameworks like **chain of thought and tree of thoughts**—to show how specific inputs can drastically improve the accuracy and relevance of machine outputs. By exploring advanced concepts such as **retrieval augmented generation (RAG)** and **agentic prompting**, the source illustrates how to overcome common obstacles like **AI hallucinations** while maximizing the model's performance. Ultimately, the guide functions as an educational roadmap for users to **optimize AI interactions** across diverse industries, ensuring that large language models are tailored effectively to meet specialized professional needs."
 extraido_em: "2026-06-30T16:21:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Prompt Engineering Techniques | IBM

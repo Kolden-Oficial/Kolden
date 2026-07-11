@@ -9,6 +9,9 @@ keywords: "('API Key Configuration', 'Terminal Setup', 'OpenRouter Integration',
 summary: "This tutorial provides practical instructions for activating an autonomous agent by **integrating an OpenRouter API key** into a Linux terminal environment. The text guides the user through the specific mechanics of **pasting credentials securely**, noting that sensitive keys often remain invisible to protect the user's privacy during the setup. Once the connection is validated, the process moves into a **QuickStart configuration phase** where the user defines the agent’s \"brain\" by selecting specific AI models and naming their virtual assistant. Ultimately, the source serves as a bridge between abstract architecture and a **functional local deployment**, ensuring the agent is properly powered and ready to communicate."
 extraido_em: "2026-06-30T16:19:04Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Configurando Agente com API Key

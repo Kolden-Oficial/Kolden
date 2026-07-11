@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # v0 (Vercel v0) — Referência de Uso
 
 v0 é o sistema de geração de UI da Vercel: a partir de linguagem natural (ou imagens) gera apps web full stack e componentes React baseados em shadcn/ui + Tailwind CSS. Categoria: IA/Dev. A Platform API permite gerar e gerenciar esses apps programaticamente.

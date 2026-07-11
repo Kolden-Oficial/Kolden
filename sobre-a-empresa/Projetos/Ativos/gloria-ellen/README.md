@@ -1,3 +1,9 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+---
+
 # Projeto Glória Ellen — Estreia no Vale (12 dias, R$7.000)
 
 **Data de abertura:** 2026-07-02

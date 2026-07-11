@@ -9,6 +9,9 @@ keywords: "('Plastic surgery trends', 'GLP-1 weight loss', 'Natural breast enhan
 summary: "The 2025 Real Talk Report from RealSelf analyzes current shifts in the aesthetic industry, emphasizing a significant move toward **natural, balanced results** and **regenerative treatments**. A primary driver of these trends is the **\"GLP-1 effect,\"** which has caused a massive surge in demand for **body contouring** and **skin tightening** procedures following significant weight loss. The report also highlights a preference for **smaller breast implants** and **minimally invasive facial optimization**, illustrating a broader cultural lean toward **subtle, functional enhancements** over dramatic changes. Ultimately, the text serves to inform both consumers and professionals about how **evolving patient priorities** and new medical technologies are redefining the landscape of modern plastic surgery."
 extraido_em: "2026-06-30T16:27:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # RealSelf Reveals the Top Plastic Surgery Trends of 2025 in Latest Trend Report

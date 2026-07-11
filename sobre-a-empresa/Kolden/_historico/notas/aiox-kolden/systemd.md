@@ -9,6 +9,9 @@ keywords: "('Server backend installation', 'Telegram bot connection', 'Web contr
 summary: "This text serves as a celebratory guide for a user who has successfully deployed a **backend server and Telegram bot** through the OpenClaw platform. It outlines the transition from a technical installation to an operational phase, highlighting the **Web UI control panel** which allows for visual monitoring and customization of the robot's personality. The primary purpose of the message is to instruct the user on **\"hatching\" the bot** via the Text User Interface to initiate its first spark of life. By focusing on the final steps of connectivity, the source transforms a complex coding task into a **user-friendly milestone** that concludes with a live interaction on the Telegram app."
 extraido_em: "2026-06-30T16:22:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # ◇  Systemd ──────────────────────────────────────...

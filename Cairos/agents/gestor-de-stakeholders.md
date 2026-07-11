@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Cairos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Cairos/agents/cairos-chief|cairos-chief]]"
+---
+
 # Gestor de Stakeholders
 
 > Especialista tier 1 do squad Cairós. Dono do **mapa de stakeholders, do plano de comunicação e do

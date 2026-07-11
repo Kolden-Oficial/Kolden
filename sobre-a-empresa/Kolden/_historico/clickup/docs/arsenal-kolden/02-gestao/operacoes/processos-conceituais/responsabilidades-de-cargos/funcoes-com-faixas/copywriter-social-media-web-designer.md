@@ -9,6 +9,13 @@ archived: true
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-13273/
 extracted_at: 2026-06-30
 nota: "4 funções (não 'cargos Sr/Pl/Jr' isoladas) — cada uma com Jr/Pl/Sr + remuneração + KPIs."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/funcoes-com-faixas/analista-de-marketing|analista-de-marketing]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/funcoes-com-faixas/atendimento|atendimento]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/funcoes-com-faixas/gerente-operacional|gerente-operacional]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/funcoes-com-faixas/gestor-de-trafego|gestor-de-trafego]]"
 ---
 
 # 4 Funções com Faixas Jr/Pl/Sr — Copywriter, Social Media, Web, Designer

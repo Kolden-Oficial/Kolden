@@ -9,6 +9,9 @@ keywords: "('Marketing Strategy Rebalancing', 'Lead Qualification Process', 'Man
 summary: "In this meeting transcript, consultants Ronan Sersil and Bernardo Vicenzo Pereira present a **four-phase strategic proposal** to business owner Kaylon Teixeira to overhaul his company's failing marketing and operational systems. The discussion identifies critical pain points, including **inefficient advertising spend** on Google and Meta, a lack of lead qualification, and the absence of a **digital management system** for pricing and financial tracking. To address these issues, the consultants offer a comprehensive solution involving **professional copywriting**, video editing, and the creation of custom landing pages, alongside a commitment to provide **managerial spreadsheets** as a value-added bonus. The negotiation concludes with a tentative agreement on a **monthly investment of $1,875**, split between active media traffic and specialized labor, pending final approval from Teixeira’s business partner."
 extraido_em: "2026-06-30T16:24:24Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/24 14:04 GMT-03:00 - Anotações do Gemini

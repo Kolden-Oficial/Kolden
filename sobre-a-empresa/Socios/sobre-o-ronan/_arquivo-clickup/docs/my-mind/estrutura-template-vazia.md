@@ -4,6 +4,11 @@ clickup_doc_nome: "My Mind"
 path_clickup: "My Mind/(estrutura completa)"
 extracted_at: 2026-06-30
 nota: "Mapa das ~40 páginas do My Mind que foram criadas como estrutura template (jan/2024) mas NUNCA preenchidas com conteúdo. Listadas aqui em bloco para evitar criar 40 .md vazios."
+tipo: nota
+area: socios
+up: "[[sobre-a-empresa/Socios/_MOC-socios]]"
+relacionado:
+  - "[[sobre-a-empresa/Socios/sobre-o-ronan/_arquivo-clickup/docs/central/estrutura-template-vazia|estrutura-template-vazia]]"
 ---
 
 # My Mind — Estrutura template vazia (mapa)

@@ -6,6 +6,11 @@ categoria: operacao
 status: executada-parcial-2026-06-25
 atualizado-em: 2026-06-25
 relacionados: [dossie-mae]
+tipo: nota
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/leia-me|leia-me]]"
 ---
 
 # Proposta de Reorganização do Drive Compartilhado

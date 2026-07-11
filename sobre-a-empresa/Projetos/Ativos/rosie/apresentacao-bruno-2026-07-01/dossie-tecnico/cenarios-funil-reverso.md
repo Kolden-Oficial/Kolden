@@ -1,3 +1,11 @@
+---
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/README|README]]"
+---
+
 # Cenários e Funil Reverso — Rosie 90 dias — **v2**
 
 > **v2 — recalculado com M1=R$80k em 2026-07-01 (sobrescreve v1).**

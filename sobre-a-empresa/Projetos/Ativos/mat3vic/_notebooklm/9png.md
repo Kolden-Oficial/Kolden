@@ -9,6 +9,10 @@ keywords: "('Mat3vic Construction', 'Residential building', 'Corporate branding'
 summary: "This image serves as a **professional visual identity** for a building firm named Mat3vic Construction. The design cleverly integrates **architectural iconography**, such as a stylized roofline and a four-pane window, directly into the typography to signal its industry focus. By utilizing a **modern color palette** of slate gray and forest green, the logo communicates a sense of stability and environmental consciousness. Overall, the composition uses **geometric lettering and clean lines** to establish a brand image rooted in precision and contemporary craftsmanship."
 extraido_em: "2026-06-30T16:07:42Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: mat3vic
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/mat3vic/_notebooklm/_indice|_indice]]"
 ---
 
 # 9.png

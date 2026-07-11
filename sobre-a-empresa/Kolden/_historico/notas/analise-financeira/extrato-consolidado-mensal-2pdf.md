@@ -9,6 +9,9 @@ keywords: "('Bank account statement', 'Digital banking channels', 'Financial tra
 summary: "This document is a **comprehensive monthly consolidated statement** from May 2018 for a Santander bank account tailored for university students. It begins by outlining **digital banking tools and security protocols**, such as the ID Santander, while providing essential contact information for customer support. The core of the text provides a detailed **financial summary and transaction ledger**, tracking deposits, withdrawals, and service fees that ultimately result in a small negative balance. Furthermore, the source highlights **value-added opportunities** including credit limit details, professional internship programs, and credit card rewards promotions to encourage active account management."
 extraido_em: "2026-06-30T16:25:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (2).pdf

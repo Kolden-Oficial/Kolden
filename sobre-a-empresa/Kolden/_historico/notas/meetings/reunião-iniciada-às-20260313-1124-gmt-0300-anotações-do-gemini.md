@@ -9,6 +9,9 @@ keywords: "('Squad recruitment strategy', 'Commission-based compensation model',
 summary: "The provided source consists of meeting notes and a transcript detailing a strategic decision to hire a **dedicated \"Pleno\" level squad** to handle design, copywriting, and traffic management for an agency. The primary objective is to **decentralize operational tasks** from the founding members, allowing them to focus on high-level growth and a separate \"messaging\" venture that will provide the **initial capital for payroll**. To incentivize high performance, the new team will operate under a **hybrid compensation model** featuring a fixed salary plus a substantial **50% commission on the first monthly fee** of any client they bring in. Strategically, the agency plans to replicate a **proven high-conversion funnel** while maintaining strict **confidentiality regarding their internal financials** and proprietary partnerships. Ultimately, the leadership aims to achieve a **significant return on investment** and build business equity by transitioning into a formal corporate structure."
 extraido_em: "2026-06-30T16:24:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/13 11:24 GMT-03:00 - Anotações do Gemini

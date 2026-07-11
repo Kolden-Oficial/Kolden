@@ -9,6 +9,9 @@ keywords: "('Workflow Automation', 'API Integration', 'Identity Management', 'No
 summary: "The documentation for Eden AI within the qibb ecosystem outlines a **comprehensive framework for integrating advanced artificial intelligence** into automated workflows. The text serves as a technical guide for using a **centralized platform** that connects diverse AI services, such as computer vision and natural language processing, through a unified interface. By utilizing a **node-based Flow Editor**, developers can bridge various third-party applications and manage **identity and access protocols** to ensure secure data handling. Ultimately, the source provides a roadmap for **streamlining AI deployment**, offering step-by-step instructions on authentication via API keys and the use of pre-configured **example flows for rapid development**."
 extraido_em: "2026-06-30T16:19:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Eden AI - Documentation

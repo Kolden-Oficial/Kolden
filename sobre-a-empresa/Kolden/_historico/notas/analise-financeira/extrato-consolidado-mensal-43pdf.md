@@ -9,6 +9,9 @@ keywords: "('Consolidated monthly statement', 'Digital sustainability initiative
 summary: "This document serves as a **monthly consolidated bank statement** for a Santander Universities account holder, providing a comprehensive overview of their financial activity for August 2021. The primary purpose of the text is to announce a **transition to digital-only reporting**, informing the client that paper statements will be discontinued in October to promote **environmental sustainability**. Beyond financial figures and credit limits, the document functions as a security guide, featuring a prominent warning against the **\"false motoboy\" scam** and advising customers on how to protect their personal data and physical cards. Structurally, it balances account-specific data, such as **service package fees** and economic indices, with instructional content on how to navigate the bank’s **internet and mobile banking** platforms."
 extraido_em: "2026-06-30T16:26:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (43).pdf

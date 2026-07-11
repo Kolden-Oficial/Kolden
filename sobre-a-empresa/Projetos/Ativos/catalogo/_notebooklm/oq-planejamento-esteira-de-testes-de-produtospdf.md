@@ -9,6 +9,10 @@ keywords: "('Product Selection Criteria', 'Visual Narrative Strategy', 'Consumer
 summary: "The provided text outlines a strategic framework for **OqComprei**, a content-driven commerce platform that shifts the focus from selling items to providing **cognitive and financial relief** through trusted product curation. The strategy hinges on **brutal selection criteria**, prioritizing products with immediate visual impact, recurring utility, and \"impulse\" price points that can be easily replicated across multiple video formats. By categorizing content into distinct pillars—such as **solving obvious pains** or comparing budget alternatives to premium brands—the plan builds **accumulative authority** rather than relying on aggressive sales tactics. Ultimately, the document details a sophisticated **conversion funnel** that transitions from organic discovery to scalable paid traffic, transforming a simple affiliate profile into a powerful **media asset** built on a database of winning creative patterns."
 extraido_em: "2026-06-30T16:08:39Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # [OQ] Planejamento Esteira de Testes de produtos.pdf

@@ -9,6 +9,9 @@ keywords: "('AI Benchmarking', 'Reasoning Models', 'AI Agents', 'Model Intellige
 summary: "This report serves as a comprehensive **market intelligence guide** summarizing the state of the artificial intelligence industry at the end of 2025. Produced by **Artificial Analysis**, an independent benchmarking firm, the text outlines a landscape defined by the transition from simple queries to **autonomous agents** and the emergence of **reasoning models** as the new standard for high-level intelligence. The document categorizes the sector into key pillars including **language models, multimedia generation, and hardware accelerators**, while tracking the fierce competition between global leaders like OpenAI, Google, Anthropic, and rising labs in China. Ultimately, the publication aims to provide **strategic decision support** for engineers and executives by documenting how rapid architectural shifts and hardware efficiency have permanently altered professional workflows."
 extraido_em: "2026-06-30T16:18:30Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Artificial Analysis State of AI: 2025 Year-End Edition

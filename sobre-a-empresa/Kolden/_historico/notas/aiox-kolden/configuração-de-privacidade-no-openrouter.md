@@ -9,6 +9,9 @@ keywords: "('OpenRouter privacy settings', 'Guardrails definition', 'Zero Data R
 summary: "This text serves as a technical guide for securing corporate data when using the OpenRouter platform, specifically correcting a previous misconception about the **Guardrails** setting. Rather than acting as a content filter, this feature functions as a **privacy shield** to prevent sensitive information from being utilized for model training. The author emphasizes the necessity of disabling the option for **free endpoints** that harvest input data and strongly recommends enabling **Zero Data Retention (ZDR)** to ensure a secure, \"armored tunnel\" for communications. Ultimately, the purpose of the instructions is to transition the user toward a **professional security architecture** where confidential company information remains strictly private and legally protected."
 extraido_em: "2026-06-30T16:19:16Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Configuração de Privacidade no OpenRouter

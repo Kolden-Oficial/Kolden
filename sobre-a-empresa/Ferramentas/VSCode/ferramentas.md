@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # VSCode — Referência de Uso
 
 Visual Studio Code é o editor de código da Microsoft e, no contexto Kolden, atua também como **host/cliente de servidores MCP** (Model Context Protocol) através do agent mode do Copilot Chat — o lado oposto do Claude Code. Categoria: IDE / Ambiente de Dev.

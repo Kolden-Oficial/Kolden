@@ -9,6 +9,9 @@ keywords: "('ClickUp Pricing Plans', 'Plan Feature Limits', 'Automation Capabili
 summary: "This document provides a comprehensive overview of the **five pricing tiers** available for the project management software ClickUp, ranging from basic personal use to complex corporate systems. It functions as a strategic guide to help users select a plan based on **team size and functional requirements**, highlighting how features like storage, security, and support scale with cost. A significant portion of the text focuses on **automation limits**, explaining the difference between active automation slots and the monthly volume of executed actions. Furthermore, the source clarifies that **advanced connectivity**, such as webhooks and specialized integrations, is exclusively reserved for higher-tier business and enterprise users."
 extraido_em: "2026-06-30T16:28:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/treinamento-clickup/_indice|_indice]]"
 ---
 
 # Qualoplanoidealparaomomentoatualdaminhaempresa-2025120116194331.pdf

@@ -8,6 +8,13 @@ status: vigente
 atualizado-em: 2026-06-25
 relacionados: [processos, governanca, financas]
 fontes: drive--00-gestao-empresarial
+tipo: nota
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Kolden/areas/governanca|governança]]"
+  - "[[sobre-a-empresa/Kolden/operacao/planejamento-estrategico|planejamento estratégico]]"
 ---
 
 # Jurídico e Compliance

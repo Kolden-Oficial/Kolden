@@ -7,6 +7,17 @@ palavras-chave: [design-system, cores, paleta, scarlet, contraste, wcag, acessib
 status: vigente
 atualizado-em: 2026-06-22
 relacionados: [ds-leia-me, identidade-visual, ds-tipografia, ds-tokens]
+tipo: nota
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/grafismos-e-auxiliares|grafismos-e-auxiliares]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/03-componentes/leia-me|componentes]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/leia-me|design system]]"
+  - "[[sobre-a-empresa/Kolden/marca/identidade-visual|identidade visual]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/logo|logo]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tipografia|tipografia]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/tom-visual|tom visual]]"
 ---
 
 # Cores

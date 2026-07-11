@@ -9,6 +9,9 @@ keywords: "('LlamaIndex', 'LangChain', 'Retrieval-augmented generation', 'AI app
 summary: "This technical guide serves as a comparative analysis of **LlamaIndex and LangChain**, two prominent frameworks used to build **retrieval-augmented generation (RAG)** systems that enhance large language models with specific, private data. The text clarifies that **LlamaIndex** is a specialized tool optimized for **efficient data indexing and retrieval**, making it the superior choice for high-precision search and document management. In contrast, **LangChain** is presented as a **versatile, modular ecosystem** designed for creating complex \"agentic\" workflows by chaining together various models and external tools. Ultimately, the source functions as a **decision-making resource**, helping developers choose between LlamaIndex's streamlined, data-centric approach and LangChain's broader, customizable framework for diverse AI applications."
 extraido_em: "2026-06-30T16:20:46Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Llamaindex vs Langchain: What's the difference? - IBM

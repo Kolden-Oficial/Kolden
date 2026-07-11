@@ -8,6 +8,14 @@ author_ids: [60963240]
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-3183/
 extracted_at: 2026-06-30
 nota: "Semana decisiva: nasce HISET (empresa nova ao lado da Kolden). Primeira menção a Gabriel Lara (SDR/Closer), Rafa Marques (curso), planejamento de rebranding COMUNIDADE."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-abril|atas-2023-abril]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-julho-novembro|atas-2023-julho-novembro]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-junho|atas-2023-junho]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-maio|atas-2023-maio]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-maio-completo|atas-2023-maio-completo]]"
 ---
 
 # Atas Daily — Novembro 2023 Semana 2 (20-25/11)

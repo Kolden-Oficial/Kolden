@@ -9,6 +9,10 @@ keywords: "('Login credentials', 'Account passwords', 'Social media access', 'Go
 summary: "This text serves as a concise **digital directory of administrative credentials** used for managing a specific business’s online presence. It organizes **access information and passwords** for essential platforms, including professional email accounts, social media profiles, and corporate pages linked to a personal account. By centralizing these details, the document functions as a **functional log for authentication**, ensuring that the user can maintain and update their **integrated marketing and communication channels** effectively."
 extraido_em: "2026-06-30T16:07:11Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

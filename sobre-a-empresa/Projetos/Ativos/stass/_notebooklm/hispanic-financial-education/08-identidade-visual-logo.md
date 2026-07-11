@@ -9,6 +9,10 @@ keywords: "('Visual identity strategy', 'Color palette justification', 'Editoria
 summary: "This document outlines a **comprehensive visual identity and branding strategy** for a financial educator, specifically designed to bridge the gap between **Latin American warmth** and **Canadian financial authority**. The framework prioritizes a **minimal viable system** over complex rebranding, utilizing a refined color palette of **night-blue and earthy gold** to project stability without the coldness of traditional banking. By pairing **editorial-style serif typography** with realistic, sun-lit photography, the plan aims to cultivate an atmosphere of **community and personal dignity**. Ultimately, the guide provides practical tools—including **logo concepts, SVG code, and social media templates**—to ensure a cohesive, non-corporate presence that feels both **trustworthy and culturally resonant**."
 extraido_em: "2026-06-30T16:28:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/_indice|_indice]]"
 ---
 
 # 08 — Identidade Visual + Logo

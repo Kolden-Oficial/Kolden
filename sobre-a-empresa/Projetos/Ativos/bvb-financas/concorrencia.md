@@ -8,6 +8,11 @@ status: rascunho
 atualizado-em: 2026-07-06
 relacionados: [posicionamento, personas, dossie]
 versao_original: "concorrencia.docx / Doc Estratégico 03 (junho/2026) — Bruno Vilas Boas"
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/dossie|dossie]]"
 ---
 
 # Concorrência — BVB Finanças

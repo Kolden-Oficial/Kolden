@@ -9,6 +9,9 @@ keywords: "('Vercel Toolbar', 'Preview Deployments', 'Team Collaboration', 'Feed
 summary: "This documentation outlines Vercel’s **collaborative feedback system**, which enables teams to communicate directly on top of web deployments. By utilizing the **Vercel Toolbar**, users can leave precisely placed notes on any part of a user interface to streamline the review process across all subscription tiers. The text details how these **discussion threads** integrate with external tools like Slack and provide **real-time notifications** to keep project stakeholders informed of new activity. Ultimately, the resource serves as a guide for managing **preview environment critiques**, ensuring that developers and invited participants can iterate quickly on live software."
 extraido_em: "2026-06-30T16:19:00Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Comments Overview - Vercel

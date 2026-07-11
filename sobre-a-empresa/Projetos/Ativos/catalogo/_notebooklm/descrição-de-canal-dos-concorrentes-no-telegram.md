@@ -9,6 +9,10 @@ keywords: "('Online shopping deals', 'E-commerce affiliate marketing', 'Discount
 summary: "These excerpts outline various Telegram channels dedicated to the **dissemination of digital coupons and flash sales** across major e-commerce platforms like Shopee, Amazon, and Mercado Livre. The content is structured around **niche-specific curation**, ranging from broad lifestyle discounts and fashion \"finds\" to specialized sectors like **electronics, gaming hardware, and automotive supplies**. Many of these hubs function as part of **affiliate marketing networks**, where creators build trust through personal recommendations and \"treasure hunting\" for the lowest prices. To ensure consumer success, these channels emphasize the **urgency of real-time notifications**, as the most significant price drops often expire shortly after being posted."
 extraido_em: "2026-06-30T16:08:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # Descrição de Canal dos Concorrentes no Telegram

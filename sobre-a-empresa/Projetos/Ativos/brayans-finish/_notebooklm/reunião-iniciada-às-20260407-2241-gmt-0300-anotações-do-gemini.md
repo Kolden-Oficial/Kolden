@@ -9,6 +9,10 @@ keywords: "('Online Presence Improvement', 'Operational Automation Implementatio
 summary: "This document summarizes a strategic meeting held to overhaul the business operations and **online presence of Brayan’s Finish**, a company currently generating $30,000 in monthly revenue but struggling with **operational bottlenecks and poor search engine visibility**. The consultants propose a three-pillar solution involving the creation of an **SEO-optimized website**, the implementation of a **customized CRM** for lead management, and the development of automated pricing tools to eliminate costly manual errors. A significant portion of the text details a successful **financial negotiation** where, due to the client's recent budget constraints, the parties agreed to a **four-month installment plan** totaling $1,500. Ultimately, the source serves as a roadmap for transitioning the business from a chaotic manual state into a structured **growth phase** characterized by professional branding and predictable digital marketing results."
 extraido_em: "2026-06-30T16:07:22Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/04/07 22:41 GMT-03:00 - Anotações do Gemini

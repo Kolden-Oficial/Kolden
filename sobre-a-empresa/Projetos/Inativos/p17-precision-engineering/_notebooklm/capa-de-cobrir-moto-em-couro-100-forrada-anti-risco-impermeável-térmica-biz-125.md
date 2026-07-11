@@ -9,6 +9,10 @@ keywords: "('Motorcycle protective covers', 'Waterproof leather material', 'Vehi
 summary: "This document is a digital snapshot of an Amazon Brazil product listing for a **heavy-duty motorcycle cover** designed specifically for the Biz 125 CC model. The source highlights the item’s **protective features**, such as its waterproof leather construction, thermal lining to prevent scratches, and specialized **UV and anti-oxidant coatings** for outdoor durability. Beyond the primary product, the text catalogs a wide ecosystem of **security accessories and related gear**, including disc locks and alarm systems frequently purchased by bikers. Finally, the page serves as a repository for **consumer feedback and market data**, providing star ratings, shipping details, and verified reviews that evaluate the cover’s fit and material quality."
 extraido_em: "2026-06-30T16:09:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa de Cobrir Moto em Couro 100% Forrada Anti Risco Impermeável Térmica (BIZ 125 CC) _ Amazon.com.br.pdf

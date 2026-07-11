@@ -2,6 +2,11 @@
 name: redator-de-prompts
 description: Escreve o system prompt final de um agente a partir do PRD aprovado e do blueprint. Delegue na fase 5 do Ritual de Criação. Especialista nos cinco blocos obrigatórios e em prompts agnósticos de modelo. Retorna o caminho do arquivo gerado.
 tools: Read, Write, Glob
+tipo: agente
+squad: Caos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Caos/.claude/agents/_indice|_indice]]"
 ---
 
 # Persona

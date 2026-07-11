@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Google Ads API — Referência de Uso
 
 Acesso à Google Ads API (campanhas, métricas de performance, keywords, gestão de anúncios) via o **MCP oficial do Google** (`google-ads-mcp`). Categoria: Marketing / Ads. **Status: aguardando developer token** (aprovação do Google).

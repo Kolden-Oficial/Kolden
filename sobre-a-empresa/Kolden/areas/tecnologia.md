@@ -7,6 +7,12 @@ palavras-chave: [area, departamento, tecnologia]
 status: rascunho
 atualizado-em: 2026-06-19
 relacionados: [areas-leia-me, organograma]
+tipo: nota
+area: areas
+up: "[[sobre-a-empresa/Kolden/areas/_MOC-areas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/identidade/arquitetura/leia-me|arquitetura visual]]"
+  - "[[sobre-a-empresa/Kolden/areas/leia-me|leia-me]]"
 ---
 
 # Área: Tecnologia

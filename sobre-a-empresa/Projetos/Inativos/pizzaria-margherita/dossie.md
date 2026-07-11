@@ -6,6 +6,9 @@ segmento: "Food service / Pizzaria (delivery + salão)"
 status: "inativo"
 drive_folder_id: "1Gz1721bJK34ZWs-PjvgQf4oAHqJLL6k0"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Pizzaria Margherita

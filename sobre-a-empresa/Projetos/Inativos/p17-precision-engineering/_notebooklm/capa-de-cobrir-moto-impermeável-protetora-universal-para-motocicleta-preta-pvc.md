@@ -9,6 +9,10 @@ keywords: "('Waterproof motorcycle cover', 'Universal fit adjustment', 'PVC prot
 summary: "This text is a detailed **Amazon product listing** for a **universal waterproof motorcycle cover** designed to shield vehicles from environmental damage. The source outlines the item’s primary functions, specifically emphasizing its **PVC construction** which provides a **protective barrier against rain, dust, and UV rays**. Beyond the technical specifications and **universal fit** for various bike sizes, the page includes logistical consumer data such as **pricing, shipping options, and customer ratings**. Ultimately, the document serves as a commercial interface intended to inform potential buyers of the product's **durability and ease of use** while facilitating a direct purchase."
 extraido_em: "2026-06-30T16:09:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa de Cobrir Moto Impermeável Protetora Universal para Motocicleta, Preta, PVC Proteção UV Capa de Chuva e Sol Fácil Colocação _ Amazon.com.br_ Automotivo.pdf

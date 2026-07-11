@@ -9,6 +9,9 @@ keywords: "('Digital solutions', 'Landing page design', 'Premium software licens
 summary: "This document outlines a professional **digital marketing proposal** focused on building high-conversion infrastructure for a client named Ronan. The core offering is a **comprehensive lead generation system**, which includes the creation of a landing page, thank-you pages, and optimized contact forms. Beyond the initial build, the package guarantees high performance through **premium software licenses and a month of dedicated technical support**. Finally, the text presents a structured **investment plan** that highlights a limited-time discount and flexible payment options to facilitate the partnership."
 extraido_em: "2026-06-30T16:14:28Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # Proposta Ronan - Landing Page.pdf

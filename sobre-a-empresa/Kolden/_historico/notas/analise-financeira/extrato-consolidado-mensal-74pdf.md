@@ -9,6 +9,9 @@ keywords: "('Fraud prevention tips', 'Bank account summary', 'Customer service c
 summary: "This document serves as a **monthly consolidated bank statement** for February 2024, issued by **Santander Brazil** to a client named Ronan Sergio Silva. Beyond detailing the specific **university account services** and a summary of **national economic indices**, the text functions as a critical **fraud prevention guide** to protect users from financial scams. The bank provides detailed **security protocols** and warnings against the \"gift scam,\" emphasizing that customers should never share **security tokens or passwords** through unofficial channels. Ultimately, the source combines **personal financial reporting** with essential **educational outreach** to ensure the client can identify and report suspicious activities to the institution's official support lines."
 extraido_em: "2026-06-30T16:26:41Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (74).pdf

@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Emporos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Emporos/agents/emporos-chief|emporos-chief]]"
+---
+
 # Redator de Propostas
 
 > Especialista tier 1 do Êmporos. Transforma um deal qualificado em **proposta comercial**, **orçamento**

@@ -9,6 +9,9 @@ keywords: "('AI Model Intelligence', 'Real-world Performance Metrics', 'Model Co
 summary: "This 2026 industry report serves as a comprehensive guide to the competitive landscape of large language models by evaluating them across **intelligence, speed, latency, cost, and context capacity**. Based on independent data from Artificial Analysis, the text identifies **Gemini 3.1 Pro** as the current leader in reasoning, while highlighting specialized models like **IBM Granite** for throughput and **Llama 4 Scout** for massive document processing. The author moves from explaining a rigorous, multi-dimensional evaluation framework to offering **strategic advice for developers**, emphasizing that model selection depends entirely on specific project needs rather than raw rankings. Ultimately, the source illustrates a maturing AI market where the **trade-offs between performance and price** are becoming more transparent and extreme."
 extraido_em: "2026-06-30T16:18:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # AI Model Leaderboard 2026: Intelligence, Speed, Price & Context — A Complete Ranking Guide - VERTU® Official Site

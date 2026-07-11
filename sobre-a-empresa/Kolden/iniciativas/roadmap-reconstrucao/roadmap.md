@@ -1,3 +1,11 @@
+---
+tipo: nota
+area: iniciativas
+up: "[[sobre-a-empresa/Kolden/iniciativas/_MOC-iniciativas]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/iniciativas/roadmap-reconstrucao/workflow-captura-conteudo|workflow-captura-conteudo]]"
+---
+
 # Roadmap Kolden — Reconstrução de Ponta a Ponta
 **Versão:** 1.0  
 **Data:** 2026-06-25  

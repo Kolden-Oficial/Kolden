@@ -9,6 +9,10 @@ keywords: "('Affordable Insulation', 'Lowell Massachusetts', 'Energy efficiency'
 summary: "This document serves as a comprehensive **contact and information portal** for **Affordable Insulation**, a company based in **Lowell, Massachusetts**, dedicated to enhancing **energy efficiency and comfort** for various clients. The source features essential **geographic details**, including a physical office on Varney Street and a mailing unit on Maple Street, alongside multiple ways to engage with the team via **phone, email, and social media**. Structurally, the page prioritizes **customer outreach** by providing an interactive **request form for free quotes** and clear maps of their service area. Ultimately, the text functions as a professional bridge to help homeowners and businesses achieve **sustainable and cost-effective** building solutions."
 extraido_em: "2026-06-30T16:07:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # Contact US – Affordable Insulation.pdf

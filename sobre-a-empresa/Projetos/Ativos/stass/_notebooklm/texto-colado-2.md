@@ -9,6 +9,10 @@ keywords: "('Event schedule', 'Performance dates', 'Location address', 'Stoney C
 summary: "This document serves as a formal announcement regarding the **relocation and scheduling** of an organization or series of events. By detailing specific **weekend dates and time slots** throughout late May, the text provides a clear framework for when guests can attend various sessions. The primary objective is to direct patrons to a **new physical destination** in Stoney Creek, Ontario, ensuring they have the precise location and timing needed for a successful visit. This brief notification acts as a functional guide to coordinate **public attendance** at a designated facility."
 extraido_em: "2026-06-30T16:09:04Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/_indice|_indice]]"
 ---
 
 # Texto colado

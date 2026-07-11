@@ -15,6 +15,9 @@ nota_extracao: |
   (1) "Pessoal" — agenda íntima do Ronan (psiquiatra, casamento, IPVA, presentes, contabilidade, custos)
   (2) "All-In" — operação de apostas/tipsters com Edu, Iguinho, Sandro, Pedro, Bruno da Whobots, Zanny, Caio, Babi, Diogo, Renato, Rayan, Bruna Lara, Davi.
   Esta página revela uma **frente operacional autônoma** ("ALL-IN") rodando em paralelo à Kolden em 2024-2025 — provavelmente cliente high-ticket ou sócio.
+tipo: nota
+area: socios
+up: "[[sobre-a-empresa/Socios/_MOC-socios]]"
 ---
 
 # Projetos e Realizações

@@ -13,6 +13,20 @@ aspiration_criteria_ref: "Prometeu/prd-de-ia.md (frontmatter — 5 AC)"
 uncertainty_statement_ref: "Prometeu/CLAUDE.md §3"
 predictions_scorecard: false
 loop_pattern: ReAct
+tipo: agente
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/aiox-analyst|aiox-analyst]]"
+  - "[[Prometeu/.claude/agents/aiox-architect|aiox-architect]]"
+  - "[[Prometeu/.claude/agents/aiox-data-engineer|aiox-data-engineer]]"
+  - "[[Prometeu/.claude/agents/aiox-dev|aiox-dev]]"
+  - "[[Prometeu/.claude/agents/aiox-devops|aiox-devops]]"
+  - "[[Prometeu/.claude/agents/aiox-master|aiox-master]]"
+  - "[[Prometeu/.claude/agents/aiox-pm|aiox-pm]]"
+  - "[[Prometeu/.claude/agents/aiox-po|aiox-po]]"
+  - "[[Prometeu/.claude/agents/aiox-qa|aiox-qa]]"
+  - "[[Prometeu/.claude/agents/aiox-sm|aiox-sm]]"
+  - "[[Prometeu/.claude/agents/aiox-ux|aiox-ux]]"
 ---
 
 # prometeu-chief — Orquestrador Kolden externo do Squad Prometeu

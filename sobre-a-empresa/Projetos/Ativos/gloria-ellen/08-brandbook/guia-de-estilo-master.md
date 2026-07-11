@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/08-brandbook/dossie-verbal|dossie-verbal]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/08-brandbook/perguntas-para-call|perguntas-para-call]]"
+---
+
 # Guia de Estilo Master — Glória Ellen
 
 > Documento canônico para toda peça escrita. Se um trecho ferir este guia, ele é reescrito ou deletado. Sem exceção.

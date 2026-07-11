@@ -9,6 +9,10 @@ keywords: "('Digital Marketing Services', 'Service Provider Responsibilities', '
 summary: "This document serves as a **formal service agreement** between a digital agency and a client, establishing a professional framework for a variety of **online marketing activities** such as data intelligence and paid media management. It outlines essential **operational boundaries**, including the specific duration of the partnership, monthly payment procedures via PIX, and a short seven-day notice period for contract termination. Beyond administrative details, the text emphasizes **legal protections** by ensuring the client retains intellectual property rights and requiring both parties to maintain strict confidentiality regarding private business information. Ultimately, the contract functions as a **structured roadmap for collaboration**, defining the mutual responsibilities and legal jurisdiction necessary to ensure a transparent and secure professional relationship."
 extraido_em: "2026-06-30T16:11:46Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Contrato de Prestação de Serviços

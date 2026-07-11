@@ -9,6 +9,10 @@ keywords: "('Shamanic Medicine Experiences', 'Nutrition Software Development', '
 summary: "The provided source documents a collaborative meeting between Ronan Sersil and Mayan Leao focused on **aligning a new digital health system** for nutritional and lifestyle management. The conversation transitions from personal updates regarding **shamanic medicines** and spiritual practices to a detailed technical presentation of a **beta-version application** designed to help nutritionists track patient progress through bio-metrics, dietary data, and AI-driven meal analysis. A central theme is Leao’s advocacy for **integral and behavioral nutrition**, which prioritizes **metabolic health and dopamine regulation** over traditional calorie counting. Consequently, the project’s purpose has evolved into a **partnership and mentorship** where Leao will guide Sersil in incorporating advanced features like **circadian rhythm tracking**, behavioral checklists, and summaries of clinical trials. Ultimately, the text outlines a roadmap for transforming a standard clinical tool into a **holistic health platform** that addresses the physiological and psychological roots of human performance and chronic inflammation."
 extraido_em: "2026-06-30T16:08:48Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # 04 | Kolden & NutriCalc | Alinhamento do Projeto

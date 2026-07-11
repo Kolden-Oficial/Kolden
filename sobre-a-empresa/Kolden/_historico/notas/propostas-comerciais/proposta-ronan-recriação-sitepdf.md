@@ -9,6 +9,9 @@ keywords: "('Website Recreation', 'Digital Solutions', 'Performance Optimization
 summary: "This document outlines a professional **web development proposal** aimed at modernizing a brand's digital presence through a comprehensive site overhaul. The package includes the **reconstruction of six core pages** along with integrated conversion tools like pop-up forms and a dedicated thank-you page. To ensure long-term value, the offer features **complete optimization**, premium software licenses, and a month of technical maintenance. Finally, the proposal incentivizes a partnership by offering a **discounted investment rate** with flexible installment options for the client."
 extraido_em: "2026-06-30T16:14:36Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # Proposta Ronan - Recriação Site.pdf

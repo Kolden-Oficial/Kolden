@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Emporos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Emporos/agents/emporos-chief|emporos-chief]]"
+---
+
 # Gestor de CRM
 
 > Especialista tier 1 do Êmporos. Mantém o **pipeline no GHL** como espelho fiel da realidade: cria/move

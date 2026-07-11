@@ -6,6 +6,9 @@ segmento: "Saúde / Fisioterapia (clínica — coluna e palmilhas)"
 status: "inativo"
 drive_folder_id: "sem registro no Drive (documento solto, sem pasta própria)"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: therafit
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Therafit (Terafite)

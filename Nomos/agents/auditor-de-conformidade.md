@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Nomos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Nomos/agents/nomos-chief|nomos-chief]]"
+---
+
 # Auditor de Conformidade
 
 > Especialista (tier 1) do squad **Nomos**. Cuida de **auditoria de normas e certificações** —

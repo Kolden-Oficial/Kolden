@@ -9,6 +9,9 @@ keywords: "('Telegram access authorization', 'OpenRouter billing error', 'User a
 summary: "This guide serves as a troubleshooting manual for users of the **OpenClaw automation system**, explaining that encountering specific errors is actually a sign that the software's **security and connection layers** are functioning correctly. The author identifies two primary hurdles: a **pairing restriction** that requires the user to manually authorize their Telegram ID for administrative access, and a **billing limitation** within the OpenRouter API. To resolve these, the text outlines a clear structural path, offering the user a choice between **funding their account** for high-performance models or **reconfiguring the system** to utilize free alternative \"brains.\" Ultimately, the source aims to transform a technical setback into a **validation of the installation's success**, guiding the user through the final steps of system activation."
 extraido_em: "2026-06-30T16:19:51Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Erros de OpenRouter e Telegram Resolvidos

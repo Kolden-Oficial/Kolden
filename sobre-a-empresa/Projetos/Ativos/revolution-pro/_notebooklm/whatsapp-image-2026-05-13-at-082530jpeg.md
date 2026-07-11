@@ -9,6 +9,10 @@ keywords: "('American patriotism', 'Patriotic eagle logo', 'Home service industr
 summary: "This logo serves as a bold visual identity for a brand named **Revolution Pro**, utilizing a composition that fuses **industrial strength** with **nationalistic pride**. At the heart of the design is a majestic bald eagle with outstretched wings, integrated with imagery of a residential home to suggest **protection and domestic excellence**. The entire emblem is framed by a **mechanical gear** and a red, white, and blue color palette, which emphasizes a commitment to **American craftsmanship** and labor. By combining these icons, the graphic conveys a message of **professional reliability** and transformative progress within the home service or manufacturing sectors."
 extraido_em: "2026-06-30T16:07:36Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: revolution-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/revolution-pro/_notebooklm/_indice|_indice]]"
 ---
 
 # WhatsApp Image 2026-05-13 at 08.25.30.jpeg

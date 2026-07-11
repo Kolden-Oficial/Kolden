@@ -9,6 +9,9 @@ keywords: "('Paid Traffic Management', 'Marketing Strategy', 'Sales Funnel Optim
 summary: "Zei Digital is a specialized marketing consultancy that focuses on **strategic paid traffic management** and sales acceleration through a specialized \"Squad\" model of professionals. Led by strategist Misael Maramaldo, the agency utilizes a **three-phase \"RVD\" method**—Recognition, Validation, and Domination—to scale revenue for local and digital businesses. The proposal highlights impressive **case studies across diverse industries**, demonstrating their ability to multiply monthly earnings and manage high-volume ad spend on platforms like Meta and Google. Beyond simple ad placement, their service provides a **comprehensive eight-pillar support system** that includes competitive market analysis, sales script optimization, and team training. Ultimately, the document serves as a **professional partnership invitation**, outlining a structured onboarding process and a quarterly management plan designed to convert digital engagement into sustainable financial growth."
 extraido_em: "2026-06-30T16:14:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # Proposta Nova (2).pdf

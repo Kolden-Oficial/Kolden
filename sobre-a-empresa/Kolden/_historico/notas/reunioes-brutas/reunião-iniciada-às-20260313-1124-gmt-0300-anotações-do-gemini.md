@@ -9,6 +9,9 @@ keywords: "('New Squad Recruitment', 'Compensation Structure', 'V4 Funnel Strate
 summary: "The provided text documents a strategic business meeting where agency leadership decided to recruit a **specialized Pleno-level squad** to centralize operations in design, copywriting, and paid traffic. To incentivize high performance, the new team will operate under a **performance-based compensation model** featuring a fixed salary complemented by a **50% commission on the first monthly fee** for each new client they acquire. Strategically, the founders intend to use revenue from a separate messaging venture to **absorb initial overhead costs**, allowing the core leadership to focus on high-level growth while the new squad handles fulfillment and client acquisition via a **proven sales funnel**. The discussion emphasizes long-term financial health through **projected LTV and ROAS gains**, while mandating strict operational confidentiality and a transition toward a more formal **corporate legal structure**."
 extraido_em: "2026-06-30T16:16:11Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/03/13 11:24 GMT-03:00 - Anotações do Gemini

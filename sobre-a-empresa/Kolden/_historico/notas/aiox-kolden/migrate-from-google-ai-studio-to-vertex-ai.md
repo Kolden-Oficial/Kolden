@@ -9,6 +9,9 @@ keywords: "('Vertex AI Migration', 'Gemini API Differences', 'Prompt Management'
 summary: "This technical guide outlines the transition from the experimental Google AI Studio to the more robust **Vertex AI** platform, which is designed for scaling generative AI applications within an **enterprise-grade ecosystem**. The documentation highlights that while AI Studio is ideal for rapid prototyping, Vertex AI offers advanced **MLOps tools**, superior security through **IAM and VPC integration**, and compliance with industry standards like HIPAA. To facilitate this shift, the text details a **three-step migration process** involving the transfer of prompts, the relocation of training data to Cloud Storage, and the decommissioning of legacy API keys. Ultimately, the purpose of the text is to help developers choose the right environment for their needs while providing a clear roadmap for achieving **greater operational reliability** and access to a broader library of third-party models."
 extraido_em: "2026-06-30T16:20:59Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Migrate from Google AI Studio to Vertex AI

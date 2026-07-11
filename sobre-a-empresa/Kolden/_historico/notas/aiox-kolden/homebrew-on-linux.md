@@ -9,6 +9,9 @@ keywords: "('Homebrew on Linux', 'Package manager installation', 'Binary bottles
 summary: "The provided documentation outlines how the **Homebrew package manager** functions as a cross-platform solution for Linux and Windows Subsystem for Linux users. Its primary purpose is to allow for the **installation of up-to-date software** that may be missing from older host distributions, utilizing a system that remains independent of most host libraries. A central theme is the importance of using the **default installation path**, which enables the use of **precompiled binary packages** to ensure efficiency and stability. Ultimately, the text serves as a technical guide that balances **installation requirements** with the benefit of maintaining a consistent environment across different operating systems."
 extraido_em: "2026-06-30T16:20:03Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Homebrew on Linux

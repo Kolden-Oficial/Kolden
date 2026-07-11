@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Liceu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Liceu/agents/liceu-chief|liceu-chief]]"
+---
+
 # Memória do Agente liceu-chief
 
 > Memória persistente deste agente. Atualizada pelo Ritual de Encerramento

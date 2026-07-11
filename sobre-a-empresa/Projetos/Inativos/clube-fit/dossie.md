@@ -6,6 +6,9 @@ segmento: "Academia / Fitness (musculação + aulas coletivas)"
 status: "inativo"
 drive_folder_id: "1GVaIykAc__7NBiy-ZurIBPniBSc88s0j"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: clube-fit
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — Clube Fit Academia

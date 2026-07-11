@@ -9,6 +9,9 @@ keywords: "('Context Engineering', 'Model-Specific Tactics', 'Prompt Version Con
 summary: "This professional guide argues that modern **context engineering** has superseded traditional prompt engineering by focusing on the precise management of information within an AI's memory. The author advocates for a **lean, iterative workflow** that prioritizes brevity and specific placement, noting that critical instructions must be positioned at the **beginning or end** of a prompt to avoid performance degradation. By detailing **model-specific strategies** for platforms like Claude and GPT-5, the text illustrates how specialized formatting and a **positive instructional tone** yield superior results compared to aggressive or lengthy commands. Ultimately, the source frames prompts as **production-grade code** that requires rigorous version control and systematic testing to achieve compounding returns in professional AI deployments."
 extraido_em: "2026-06-30T16:21:41Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Prompt Engineering Best Practices 2026 | Thomas Wiegold Blog

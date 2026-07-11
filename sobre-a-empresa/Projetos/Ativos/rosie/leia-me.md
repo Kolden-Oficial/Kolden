@@ -8,6 +8,11 @@ status: oficial
 atualizado-em: 2026-06-23
 relacionados: [status, brandbook/00-indice, pesquisa/00-indice]
 dossie_cliente: "sobre-a-empresa/clientes/ativos/rosie.md"
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/dossie|dossie]]"
 ---
 
 # Rosie — I Adore You

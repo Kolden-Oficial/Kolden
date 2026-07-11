@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Synter — Referência de Uso
 
 Synter ("Cursor for Ads") é uma plataforma de orquestração por agentes de IA que executa campanhas de mídia paga via linguagem natural em 9+ plataformas (Google Ads, Meta, LinkedIn, Microsoft Ads, Reddit, TikTok, The Trade Desk, StackAdapt). Categoria: Marketing.

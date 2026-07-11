@@ -9,6 +9,9 @@ keywords: "('LangChain', 'LlamaIndex', 'RAG Capabilities', 'AI Agent Workflows',
 summary: "This comprehensive guide evaluates the primary strengths of **LangChain** and **LlamaIndex** to help developers choose the ideal framework for their artificial intelligence projects. While **LangChain** is celebrated for its **versatile agent workflows** and extensive third-party integrations, **LlamaIndex** is presented as the superior choice for **Retrieval-Augmented Generation (RAG)** due to its specialized indexing and high search accuracy. The text further introduces **Draft’n Run** as a comprehensive solution that bridges both worlds by offering a **visual development environment** with production-ready monitoring. Ultimately, the source serves as a strategic decision-making tool, contrasting technical metrics like **query speed and memory usage** to match specific software needs with the most efficient AI architecture."
 extraido_em: "2026-06-30T16:20:34Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # LangChain vs LlamaIndex: Best Framework for AI - Draft'n run

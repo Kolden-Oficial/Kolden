@@ -9,6 +9,10 @@ keywords: "('Dieting methodologies', 'Mental mapping structure', 'Weight loss jo
 summary: "The provided document outlines a pedagogical framework for a health and weight loss course designed to move a student from a state of dissatisfaction to one of personal fulfillment. The methodology relies on a recurring **four-step structural loop** for every phase of the program—including detox, ketogenic, and low-carb cycles—which focuses on defining the task, justifying its necessity, explaining the mechanics, and providing actionable steps. A central theme is the use of **storytelling and emotional connection** to establish the \"why\" behind each action, emphasizing the consequences of inaction and the transformative power of the results. Ultimately, the text serves as a **strategic blueprint for habit change**, guiding a specific persona through a structured timeline to achieve a significant physical and emotional evolution."
 extraido_em: "2026-06-30T16:13:28Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/geral/_indice|_indice]]"
 ---
 
 # METODOLOGIA NO MAPA MENTAL.pdf

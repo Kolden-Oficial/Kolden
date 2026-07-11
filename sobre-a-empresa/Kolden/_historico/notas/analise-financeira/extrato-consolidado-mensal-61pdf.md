@@ -9,6 +9,9 @@ keywords: "('Fraud prevention tips', 'Santander bank services', 'Esfera rewards 
 summary: "This document serves as a **consolidated monthly bank statement** from Santander for January 2023, combining account management details with essential **security education**. The text primarily warns the client about the **\"false courier\" scam**, emphasizing that the bank will never request passwords or physical collection of bank cards. Beyond security protocols and **fraud prevention tips** for digital payments, the statement outlines the user's specific **banking service package** and associated monthly fees. Additionally, it promotes the **Esfera loyalty program**, detailing how customers can earn points, cashback, and discounts through various retail partnerships."
 extraido_em: "2026-06-30T16:26:33Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (61).pdf

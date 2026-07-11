@@ -9,6 +9,9 @@ keywords: "('Fraud prevention tips', 'Bank account services', 'Personal credit l
 summary: "This document is a **comprehensive monthly consolidated statement** from Santander Brazil issued in May 2022 to a client named Ronan Sergio Silva. The text functions as both a **financial report and a security guide**, detailing the transition from physical to **digital-only bank statements** to promote environmental sustainability and data safety. Beyond account specifics like **service packages and credit limits**, the document provides vital **anti-fraud instructions** regarding suspicious links and identity protection. Furthermore, it serves a promotional purpose by outlining **loyalty program benefits** through the Esfera platform, including point accumulation and cashback opportunities at various retailers."
 extraido_em: "2026-06-30T16:26:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (52).pdf

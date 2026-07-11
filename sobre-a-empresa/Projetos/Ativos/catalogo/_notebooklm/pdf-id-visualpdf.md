@@ -9,6 +9,10 @@ keywords: "('Visual Identity Manual', 'Brand Logo Guidelines', 'Social Media Met
 summary: "This document serves as a comprehensive **brand identity manual** for CataLogo, a digital platform dedicated to curating affordable, high-quality consumer products. The project functions as a **curated shopping radar**, utilizing social media influence and affiliate links to connect a large following with discounted items on major marketplaces like Shopee and Amazon. By blending **visual design guidelines**—such as specific color palettes and logos—with **performance metrics and e-commerce strategies**, the source outlines how the brand maintains a consistent presence while maximizing commissions. Ultimately, the text illustrates a professional framework for a **modern affiliate marketing business** that prides itself on finding value for its community."
 extraido_em: "2026-06-30T16:08:34Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/_notebooklm/_indice|_indice]]"
 ---
 
 # PDF ID Visual.pdf

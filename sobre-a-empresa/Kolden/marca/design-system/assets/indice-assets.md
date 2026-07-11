@@ -7,6 +7,14 @@ palavras-chave: [design-system, assets, logo, arquivos, catalogo, svg, png]
 status: vigente
 atualizado-em: 2026-06-22
 relacionados: [ds-leia-me, ds-logo, ds-grafismos]
+tipo: nota
+area: marca
+up: "[[sobre-a-empresa/Kolden/marca/_MOC-marca]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/marca/design-system/assets/originais/LEIA-ME-ANTES-DE-BAIXAR|assets — leia-me]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/leia-me|design system]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/grafismos-e-auxiliares|grafismos]]"
+  - "[[sobre-a-empresa/Kolden/marca/design-system/01-fundamentos/logo|logo]]"
 ---
 
 # Índice de assets

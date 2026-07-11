@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Eden AI — Referência de Uso
 
 Eden AI é um gateway/agregador único de IA: uma só API (compatível com OpenAI) que dá acesso a 500+ modelos e provedores (LLMs, OCR, visão, áudio, tradução, etc.) com roteamento, fallback e cost tracking embutidos. Categoria: IA/LLM.

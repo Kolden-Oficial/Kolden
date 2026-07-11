@@ -9,6 +9,9 @@ keywords: "('University scholarships', 'Monthly bank statement', 'Financial educ
 summary: "This document serves as a **consolidated monthly bank statement** for a student account holder, providing a comprehensive overview of financial activity and institutional opportunities from November 2019. The text is structured to balance **personal transaction history**, including balance summaries and service fees, with promotional information regarding **educational scholarships** and specialized financing for medical students. Key themes include the bank's focus on **academic support** through international study programs and financial tools like **consortiums and savings incentives** designed to foster long-term fiscal planning. Ultimately, the source functions as both a **regulatory financial record** and a marketing vehicle to engage the user with the bank’s broader **university-aligned ecosystem**."
 extraido_em: "2026-06-30T16:25:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (22).pdf

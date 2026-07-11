@@ -9,6 +9,10 @@ keywords: "('Mentorship and Consulting', 'Traffic Strategy', 'Project Diagnosis'
 summary: "The provided document outlines a comprehensive **mentorship and consultancy program** designed to help businesses launch and scale their digital marketing efforts through a **fully practical approach**. The curriculum is structured into **four distinct video conference calls** that guide the participant from initial project diagnosis and goal setting to the active execution of **traffic strategies and sales training**. By leveraging **proven methodologies** from the consulting team, the service aims to protect clients from unqualified professionals while ensuring their ad campaigns are built on a foundation of **correct metrics and optimized creative materials**. To incentivize immediate enrollment, the program offers **bonus support and Instagram consulting**, providing a high-value path for those ready to reach the **next level** of project performance."
 extraido_em: "2026-06-30T16:16:58Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]"
 ---
 
 # [APOLLO] MODELO Consultoria - P3.pptx

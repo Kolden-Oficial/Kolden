@@ -1,3 +1,12 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/docs/examples/squads/multi-agent-squad/agents/researcher-agent|researcher-agent]]"
+  - "[[Prometeu/docs/examples/squads/multi-agent-squad/agents/writer-agent|writer-agent]]"
+---
+
 # team-lead
 
 ACTIVATION-NOTICE: Team coordinator agent.

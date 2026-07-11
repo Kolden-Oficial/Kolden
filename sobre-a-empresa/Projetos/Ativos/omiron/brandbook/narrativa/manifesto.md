@@ -1,3 +1,14 @@
+---
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/alternativa-marco-aurelio|alternativa-marco-aurelio]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/mentor-quiron|mentor-quiron]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/onboarding-copy|onboarding-copy]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/narrativa/pilares|pilares]]"
+---
+
 # Manifesto Omiron
 
 > Voz da marca: Sábio. Cadência para leitura em Garamond, com titulação em Great Vibes.

@@ -3,6 +3,13 @@ notebook_id: "72fa6086-ccad-46fa-92e8-7cb21852825e"
 notebook_titulo: "Acordo de Transição Profissional e Gestão Estratégica de Ativos Digitais"
 total_fontes: 3
 extraido_em: "2026-06-30T16:07:12Z"
+tipo: nota
+area: socios
+up: "[[sobre-a-empresa/Socios/_MOC-socios]]"
+relacionado:
+  - "[[sobre-a-empresa/Socios/sobre-o-ronan/acordo-transicao-profissional/reunião-iniciada-às-20260416-1602-gmt-0300-anotações-do-gemini|reunião-iniciada-às-20260416-1602-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Socios/sobre-o-ronan/acordo-transicao-profissional/texto-colado|texto-colado]]"
+  - "[[sobre-a-empresa/Socios/sobre-o-ronan/acordo-transicao-profissional/texto-colado-1|texto-colado-1]]"
 ---
 
 # Índice — Acordo de Transição Profissional e Gestão Estratégica de Ativos Digitais

@@ -9,6 +9,10 @@ keywords: "('Multichannel Marketing Strategy', 'Pricing and Estimation', 'Growth
 summary: "This document records a business consultation between **Coda**, a strategic agency, and **Brayan’s Finish**, a residential renovation company seeking to scale its operations in the United States. The conversation identifies that while the business has seen rapid growth, it faces significant **operational bottlenecks**, specifically regarding **improper cost estimation** and a lack of **centralized lead management**. To address these issues, the consultants propose a transition from a singular focus on Meta Ads to a **multichannel marketing strategy** including **SEO and Google Local positioning**, alongside the implementation of a **CRM system** and an automated **pricing spreadsheet**. Ultimately, the meeting serves as a diagnostic session intended to pivot the owner away from administrative tasks toward a more **scalable, executive role** with a target monthly revenue of $100,000."
 extraido_em: "2026-06-30T16:07:23Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/04/02 20:51 GMT-03:00 - Anotações do Gemini

@@ -3,6 +3,19 @@ notebook_id: "02b48020-b3de-402a-9aee-59f4cc239a2d"
 notebook_titulo: "Stass"
 total_fontes: 9
 extraido_em: "2026-06-30T16:06:07Z"
+tipo: projeto
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hyperlocal-strategy-briefing-financial-education-seminars-for-the-hispanic|hyperlocal-strategy-briefing-financial-education-seminars-for-the-hispanic]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/pesquisa-hiperlocal-seminário-english|pesquisa-hiperlocal-seminário-english]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/pesquisa-hiperlocal-seminário-financeiro-latino-brasil|pesquisa-hiperlocal-seminário-financeiro-latino-brasil]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/texto-colado|texto-colado]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/texto-colado-1|texto-colado-1]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/texto-colado-2|texto-colado-2]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/texto-colado-3|texto-colado-3]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/texto-colado-4|texto-colado-4]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/texto-colado-5|texto-colado-5]]"
 ---
 
 # Índice — Stass

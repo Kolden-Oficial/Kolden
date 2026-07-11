@@ -9,6 +9,9 @@ keywords: "('Facial plastic surgery', 'Cosmetic industry trends', 'GLP-1 weight 
 summary: "The 2024 Annual Trends Survey by the AAFPRS outlines a shifting landscape in aesthetic medicine, primarily driven by the side effects of **weight-loss medications** like GLP-1s that cause facial volume loss. This phenomenon has spurred a significant rise in **fat grafting** and younger demographics seeking **facelifts** to restore skin elasticity and contour. The report also highlights a growing demand for **\"MAN-esthetics\"** and menopause-related rejuvenation, alongside a forward-looking focus on **regenerative medicine** such as exosome-based therapies. Ultimately, the text serves to document these evolving cultural shifts while emphasizing the necessity of choosing **board-certified experts** for complex facial procedures."
 extraido_em: "2026-06-30T16:27:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # 2024 Annual Trends Survey

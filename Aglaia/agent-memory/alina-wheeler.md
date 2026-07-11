@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Aglaia
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Aglaia/agent-memory/brand-chief|brand-chief]]"
+---
+
 # Memória do Agente alina-wheeler (Aglaia)
 
 > Memória persistente deste agente. Atualizada pelo Ritual de Encerramento

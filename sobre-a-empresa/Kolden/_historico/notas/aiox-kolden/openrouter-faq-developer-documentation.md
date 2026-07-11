@@ -9,6 +9,9 @@ keywords: "('Unified API Access', 'Model Provider Selection', 'Pricing and Credi
 summary: "OpenRouter serves as a **unified interface** that allows developers to access a vast array of artificial intelligence models through a **single API**, simplifying the process of switching between different providers while maintaining **competitive pricing**. The platform operates on a **prepaid credit system**, where users deposit funds to cover inference costs that mirror the rates of underlying providers, plus a small **transaction fee**. Key technical features highlighted include **automated model fallbacks** to ensure high uptime, flexible routing options through **model variants**, and a strong commitment to **data privacy** by avoiding prompt logging by default. Ultimately, this documentation functions as a comprehensive manual for **account management and integration**, offering guidance on everything from billing and rate limits to utilizing the service as a drop-in replacement for existing AI frameworks."
 extraido_em: "2026-06-30T16:21:24Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # OpenRouter FAQ | Developer Documentation

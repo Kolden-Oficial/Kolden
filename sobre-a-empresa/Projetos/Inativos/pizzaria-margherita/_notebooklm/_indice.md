@@ -3,6 +3,21 @@ notebook_id: "87379a9f-21f8-4184-8b5f-281c0f4bef9e"
 notebook_titulo: "Pizzaria Margherita - Forno a Lenha"
 total_fontes: 11
 extraido_em: "2026-06-30T16:06:10Z"
+tipo: projeto
+projeto: pizzaria-margherita
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/1-ropre-margherita|1-ropre-margherita]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/1-ropre-margherita-20260220-1500-gmt-0300-anotações-do-gemini|1-ropre-margherita-20260220-1500-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/análise-estratégica-pizzaria-margherita|análise-estratégica-pizzaria-margherita]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/contexto-estratégico-pizzaria|contexto-estratégico-pizzaria]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/contrato-atualizado-prestação-de-serviços-1pdf|contrato-atualizado-prestação-de-serviços-1pdf]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/k-kick-off-qnp|k-kick-off-qnp]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/kolden-margherita-kick-off-20260206-0803-gmt-0300-anotações-do-gemini|kolden-margherita-kick-off-20260206-0803-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/kolden-margherita-kick-off-20260206-0803-gmt-0300-anotações-do-gemini-1|kolden-margherita-kick-off-20260206-0803-gmt-0300-anotações-do-gemini-1]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/reunião-iniciada-às-20260119-1351-gmt-0300-anotações-do-gemini|reunião-iniciada-às-20260119-1351-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/reunião-iniciada-às-20260129-1258-gmt-0300-anotações-do-gemini|reunião-iniciada-às-20260129-1258-gmt-0300-anotações-do-gemini]]"
+  - "[[sobre-a-empresa/Projetos/Inativos/pizzaria-margherita/_notebooklm/texto-colado|texto-colado]]"
 ---
 
 # Índice — Pizzaria Margherita - Forno a Lenha

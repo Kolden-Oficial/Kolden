@@ -9,6 +9,9 @@ keywords: "('LLM Application Observability', 'AI Engineering Platforms', 'Machin
 summary: "This comparative overview evaluates three prominent tools—**LangSmith, Langfuse, and Weights & Biases**—designed to streamline the development and monitoring of **Large Language Model (LLM) applications**. While the text provides detailed specifications on pricing, supported platforms, and integrations, its primary focus is on how these platforms facilitate **mission-critical observability**, experiment tracking, and **performance measurement**. The source serves as a technical guide for developers and engineers, highlighting unique functionalities such as **prompt management**, dataset curation, and **automated evaluation** to ensure software reliability. Ultimately, the document aims to assist teams in choosing a framework that best supports the **debugging and iteration** of complex AI workflows."
 extraido_em: "2026-06-30T16:20:37Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # LangSmith vs. Langfuse vs. Weights & Biases Comparison - SourceForge

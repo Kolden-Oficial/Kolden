@@ -9,6 +9,10 @@ keywords: "('Insulation Services', 'Strategic Marketing Planning', 'Paid Media T
 summary: "This document serves as a **strategic blueprint** for Affordable Insulation, a Massachusetts-based contractor specializing in high-performance thermal and acoustic solutions for residential and commercial clients. It details a comprehensive **marketing and management partnership** designed to transition the business toward high-value B2B contracts and government-subsidized projects. By leveraging **targeted digital advertising** and automated lead qualification funnels, the initiative aims to replace manual administrative tasks with efficient, scalable systems. Ultimately, the plan focuses on **geographic dominance** in specific local markets while implementing sophisticated tracking and follow-up tools to maximize long-term growth."
 extraido_em: "2026-06-30T16:07:07Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: affordable-insulation
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/affordable-insulation/_notebooklm/_indice|_indice]]"
 ---
 
 # ICP & Posicionamento

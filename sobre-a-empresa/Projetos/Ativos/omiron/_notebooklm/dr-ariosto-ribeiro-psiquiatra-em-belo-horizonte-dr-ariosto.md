@@ -9,6 +9,10 @@ keywords: "('Psychiatric medical services', 'Mental health treatments', 'Dr. Ari
 summary: "Dr. Ariosto Ribeiro is a specialized psychiatrist based in Belo Horizonte who provides **science-based, individualized mental health care** for a wide array of complex conditions, including mood disorders, ADHD, and chemical dependency. His practice emphasizes a **humanistic and integrated approach**, combining high-level technical expertise with a welcoming environment designed to ensure patient comfort and safety. The text highlights his extensive clinical background and modern treatment options, such as **telemedicine and medicinal cannabis**, to facilitate a rapid and effective recovery. Ultimately, this professional profile serves to connect patients with **comprehensive psychiatric support** tailored to unique psychological needs and modern diagnostic standards."
 extraido_em: "2026-06-30T16:07:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Dr Ariosto Ribeiro Psiquiatra em Belo Horizonte – Dr. Ariosto

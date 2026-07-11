@@ -9,6 +9,9 @@ keywords: "('Fraud prevention', 'Bank account summary', 'Service package fees', 
 summary: "This document functions as a **consolidated monthly bank statement** for a customer, providing a summary of account activity, service fees, and broader economic indicators for July 2024. Beyond the financial data, the text serves as a vital **security advisory** designed to protect users from common fraudulent schemes, such as the \"gift scam\" involving manipulated payment terminals. It explicitly outlines **safe banking practices**, emphasizing that the institution will never request passwords or security tokens through unofficial links or telephone calls. Ultimately, the source combines **personal financial reporting** with essential **consumer protection guidelines** to ensure the account holder remains informed and secure."
 extraido_em: "2026-06-30T16:26:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (79).pdf

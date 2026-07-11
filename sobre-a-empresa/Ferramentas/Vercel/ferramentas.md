@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Vercel — Referência de Uso
 
 Vercel é uma plataforma de cloud para deploy e hospedagem de aplicações front-end e serverless (Next.js, funções, sites estáticos), com previews automáticos por commit e CI/CD integrado ao Git. Categoria: Infra/Deploy.

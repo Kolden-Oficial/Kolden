@@ -2,6 +2,11 @@
 name: auditor-de-seguranca
 description: Gatekeeper de segurança da absorção de repositórios. Delegue na Fase 2 do pipeline de ingestão, SEMPRE, antes de qualquer leitura profunda ou absorção de um repo de terceiro. Faz análise 100% ESTÁTICA do código em quarentena (segredos, CVE, padrões perigosos, supply-chain), delega o conhecimento pesado ao squad Egide e emite o veredito SAFE / QUARENTENA / REJEITAR. Nunca executa o código analisado.
 tools: Read, Grep, Glob, Bash
+tipo: agente
+squad: Caos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Caos/.claude/agents/_indice|_indice]]"
 ---
 
 # Persona

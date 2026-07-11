@@ -7,6 +7,11 @@ palavras-chave: [brandbook, rosie, tipografia, fontes, marcellus, dm-sans, arial
 status: oficial
 atualizado-em: 2026-06-23
 relacionados: [01-cores, 03-composicao, 06-gap-site-vs-manual]
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/brandbook/00-indice|00-indice]]"
 ---
 
 # Tipografia

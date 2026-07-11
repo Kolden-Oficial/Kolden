@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/02-copy-oferta/criativos-meta-ads|criativos-meta-ads]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/02-copy-oferta/pdf-apresentacao|pdf-apresentacao]]"
+---
+
 # Copy da oferta-âncora — "Estreia no Vale"
 
 Elemento central da estreia. Usada em site, IG bio, ad, WhatsApp e vídeo.

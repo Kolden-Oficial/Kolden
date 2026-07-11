@@ -9,6 +9,9 @@ keywords: "('Sales prospecting techniques', 'Prospect information collection', '
 summary: "This document outlines a **strategic sales framework** designed to guide a professional through a high-stakes discovery meeting with potential clients. The process begins by establishing **immediate authority** through curated personal presentation and a confident introduction, followed by a rigorous **needs-assessment phase** where the consultant uncovers the lead's specific pain points and financial goals. Once the problem is identified, the seller presents a **tailored value proposition** that promises direct results, using psychology to navigate hesitation through **objection-handling techniques** and limited-time scarcity. Ultimately, the methodology aims to minimize risk for the buyer while securing a commitment, concluding with a **referral request** to expand the consultant's network of qualified opportunities."
 extraido_em: "2026-06-30T16:14:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # REUNIÃO DE PROSPECÇÃO - END.docx.pdf

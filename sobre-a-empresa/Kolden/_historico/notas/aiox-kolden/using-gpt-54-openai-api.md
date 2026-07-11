@@ -9,6 +9,9 @@ keywords: "('GPT-5.4 Model Features', 'API Migration Guidance', 'Agentic Tool Us
 summary: "This technical documentation outlines the capabilities and implementation of **GPT-5.4**, a versatile frontier model designed to excel at **complex reasoning, production-grade coding, and autonomous agent workflows**. The text highlights major architectural advancements, such as a **1M token context window**, native **computer-use functionality**, and a sophisticated **Responses API** that optimizes performance by preserving chain-of-thought data between interactions. Developers are provided with a comprehensive framework for **model optimization**, including granular controls for **reasoning effort and output verbosity** to balance latency against task depth. Ultimately, the guide serves as a strategic roadmap for migrating to this new ecosystem, emphasizing **agentic tool integration** and refined prompting techniques to leverage the model’s superior document synthesis and software engineering skills."
 extraido_em: "2026-06-30T16:22:30Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Using GPT-5.4 | OpenAI API

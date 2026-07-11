@@ -9,6 +9,10 @@ keywords: "('Medical appointments scheduling', 'Belo Horizonte specialists', 'Fo
 summary: "The provided text is a digital directory from **Doctoralia**, a healthcare platform designed to facilitate **follow-up appointments** with medical specialists in **Belo Horizonte**. It features a structured list of diverse professionals—including pediatricians, psychiatrists, and neurologists—detailing their **qualifications, pricing, and patient reviews** to assist users in making informed choices. Beyond individual listings, the source highlights modern healthcare conveniences such as **telemedicine options**, online scheduling, and compatibility with various **private insurance plans**. Ultimately, the text serves as a comprehensive tool for patients to navigate the local medical landscape and maintain **continuity of care** through a centralized, user-friendly interface."
 extraido_em: "2026-06-30T16:07:54Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Consulta de seguimento em Belo Horizonte: clínicas e especialistas - Doctoralia

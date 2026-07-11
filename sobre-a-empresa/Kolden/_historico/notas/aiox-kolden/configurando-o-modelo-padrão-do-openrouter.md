@@ -9,6 +9,9 @@ keywords: "('OpenRouter configuration', 'Default model selection', 'OpenClaw set
 summary: "This guide serves as a practical manual for **initializing the default brain** of an AI agent using the OpenRouter integration. The text outlines a strategic choice between **automated model selection**, which ensures immediate functionality through a \"no-friction\" path, and **manual configuration** for users seeking granular control over specific high-performance architectures like Claude or DeepSeek. Ultimately, the documentation aims to **streamline the setup process** by encouraging the default setting, allowing the user to bypass complex technical decisions and quickly reach the final stages of deployment."
 extraido_em: "2026-06-30T16:19:12Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Configurando o Modelo Padrão do OpenRouter

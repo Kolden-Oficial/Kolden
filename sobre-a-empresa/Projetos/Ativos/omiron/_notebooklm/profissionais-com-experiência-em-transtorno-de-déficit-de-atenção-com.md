@@ -9,6 +9,10 @@ keywords: "('ADHD Specialists', 'Belo Horizonte', 'Healthcare Appointments', 'Pr
 summary: "This webpage serves as a comprehensive **healthcare directory** designed to connect patients with **medical specialists** who treat **ADHD** in the city of **Belo Horizonte**. Through an organized digital platform, users can browse diverse professional profiles—including **psychologists, psychiatrists, and neurologists**—while viewing critical details such as **consultation fees, therapeutic approaches, and patient reviews**. The source functions as a **centralized booking tool** that facilitates both in-person and **telemedicine appointments**, emphasizing accessibility and user-guided selection within the Brazilian mental health landscape."
 extraido_em: "2026-06-30T16:07:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Profissionais com experiência em Transtorno de déficit de atenção com hiperatividade (TDAH) em Belo Horizonte - Marque uma consulta - Doctoralia

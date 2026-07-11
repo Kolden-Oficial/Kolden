@@ -9,6 +9,9 @@ keywords: "('Real estate financing', 'Monthly bank statement', 'Credit line limi
 summary: "This document is a **consolidated monthly bank statement** from February 2020, issued by **Santander** to a customer named Ronan Sergio Silva. The text serves a dual purpose: it provides a detailed **financial summary** of account activities—including a negative balance, service fees, and interest charges—while also acting as a marketing catalog for various **credit products**. Key themes include **real estate financing** with up to 90% coverage, a special agricultural award program for producers, and specific loans for **sustainable urban mobility**, such as bicycle financing. Ultimately, the document functions as both a record of personal **banking transactions** and a promotional tool designed to encourage the use of the bank's **lending services** and credit limits."
 extraido_em: "2026-06-30T16:26:00Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (25).pdf

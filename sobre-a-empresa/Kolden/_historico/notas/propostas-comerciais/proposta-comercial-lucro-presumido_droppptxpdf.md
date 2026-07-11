@@ -9,6 +9,9 @@ keywords: "('Digital accounting services', 'Financial management support', 'Tax 
 summary: "Atlantis Contabilidade Online presents a comprehensive service proposal designed to modernize fiscal management for small and medium-sized enterprises through a **digital and automated accounting framework**. The document outlines a tiered subscription model—ranging from Ouro to Platinum—that scales based on a company's monthly revenue and includes **integrated tax, labor, and financial reporting** solutions. Beyond basic compliance, the firm positions itself as a **strategic business consultant** by offering implementation support for management software like Conta Azul to streamline data flow. Ultimately, the proposal aims to alleviate administrative burdens, allowing entrepreneurs to shift their focus from paperwork to **core business growth and operational management**."
 extraido_em: "2026-06-30T16:14:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # Proposta Comercial Lucro Presumido_Drop.pptx.pdf

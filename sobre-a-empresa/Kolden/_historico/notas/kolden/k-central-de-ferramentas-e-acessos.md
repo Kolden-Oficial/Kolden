@@ -9,6 +9,9 @@ keywords: "('Tool Access Management', 'Infrastructure and Hosting', 'Database an
 summary: "The document functions as a **centralized administrative directory** designed to organize technical infrastructure, client credentials, and operational expenses for a digital business. It begins by listing an extensive **internal toolkit** categorized into sectors such as cloud hosting, backend databases, AI-driven content creation, and CRM systems, detailing specific logins and service statuses. The second portion serves as a **client access repository**, meticulously archiving the social media, email, and management platform credentials for various partnered companies and individuals. Finally, the source includes a **financial overview** of recurring costs, highlighting the monthly investments required for high-level software, artificial intelligence models, and professional services."
 extraido_em: "2026-06-30T16:17:23Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # [K] Central de Ferramentas e Acessos

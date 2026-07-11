@@ -12,6 +12,9 @@ importado-por: Claude Code (sessão Ronan)
 fidelidade: literal — texto preservado 1:1 do export markdown do Google Drive MCP, sem reescrita
 status: rascunho
 categoria: mercado
+tipo: nota
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
 ---
 
 <!-- Texto abaixo: cópia integral do Google Doc original, sem alterações. -->

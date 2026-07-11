@@ -9,6 +9,9 @@ keywords: "('AI Model Benchmarking', 'Frontier Model Leaderboards', 'Arena Elo S
 summary: "The **Arena Leaderboard** serves as a comprehensive **benchmarking platform** that ranks the world's most advanced **AI models** across a diverse range of functional categories. By utilizing performance data in areas such as **coding, vision, and creative writing**, the site organizes these systems into a structured hierarchy based on their specialized capabilities. The data emphasizes the dominance of specific model families, like **Claude, Gemini, and GPT**, while providing granular insights into how they handle complex tasks like **reasoning and instruction following**. Ultimately, this resource provides a **real-time snapshot** of the competitive landscape in artificial intelligence, allowing users to identify which technologies currently lead the industry in **textual, visual, and multimodal** processing."
 extraido_em: "2026-06-30T16:18:23Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Arena Leaderboard | Compare & Benchmark the Best Frontier AI Models

@@ -8,6 +8,14 @@ author_ids: [60963240]
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-3183/
 extracted_at: 2026-06-30
 nota: "Daily 03/07 está vazia (template). Novembro retoma em 14/11 com projeto COMUNIDADE (Ronan + Hiago, clientes Danielle e Roberto). Gap de ~3 meses entre julho e novembro 2023."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-abril|atas-2023-abril]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-junho|atas-2023-junho]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-maio|atas-2023-maio]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-maio-completo|atas-2023-maio-completo]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-novembro-semana-2|atas-2023-novembro-semana-2]]"
 ---
 
 # Atas Daily — Julho a Novembro 2023

@@ -8,6 +8,11 @@ atualizado-em: 2026-07-06
 autor: Aglaia (brand-chief) — Kolden
 missao: m-20260706-193013-omiron-brandbook-completo
 relacionados: [00-indice, 02-voz-da-marca, 03-identidade-visual, narrativa/manifesto, narrativa/pilares, narrativa/alternativa-marco-aurelio]
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/brandbook/00-indice|00-indice]]"
 ---
 
 # Posicionamento

@@ -9,6 +9,9 @@ keywords: "('Income Reports', 'Digital Account Statements', 'Banking Service Pac
 summary: "This document serves as a **consolidated monthly statement** from Santander Brazil for April 2022, primarily notifying the customer, Ronan, of a transition toward **digital-only banking records** to enhance data security and environmental sustainability. Beyond this administrative shift, the text functions as a comprehensive guide for **tax season preparation**, providing specific instructions for accessing the 2021 financial income reports required for government declarations. The source also details the user’s **current service package**, lists various contact channels for support, and provides a broader financial context through a table of **economic indices** such as inflation and currency rates. Finally, it acts as a promotional and educational tool by highlighting the **Esfera rewards program** and offering critical **security tips** to help the client identify and prevent common fraudulent activities."
 extraido_em: "2026-06-30T16:26:25Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (51).pdf

@@ -9,6 +9,9 @@ keywords: "('Monthly bank statement', 'International money transfers', 'Student 
 summary: "This document is a **consolidated monthly bank statement** from April 2019, issued by Santander Brasil to a client named Ronan Sergio Silva. Beyond detailing specific **transactional data** such as salary deposits, withdrawals, and account balances, the text serves as a **comprehensive service guide** highlighting modern banking features like blockchain-powered international transfers and flexible credit options. It also functions as a **promotional resource** tailored for students, offering information on university-focused internship programs, financial literacy tips, and incentives for building a savings reserve. Ultimately, the source integrates **personal financial accounting** with a marketing overview of the bank’s digital tools, interest rates, and institutional support for **professional development**."
 extraido_em: "2026-06-30T16:25:52Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (15).pdf

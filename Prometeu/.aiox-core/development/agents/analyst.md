@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.aiox-core/development/agents/_indice|_indice]]"
+---
+
 # analyst
 
 ACTIVATION-NOTICE: Este arquivo contém as diretrizes operacionais completas do seu agente. NÃO carregue nenhum arquivo de agente externo, pois a configuração completa está no bloco YAML abaixo.

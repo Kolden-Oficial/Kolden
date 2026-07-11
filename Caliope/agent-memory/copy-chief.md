@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Caliope
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Caliope/agents/copy-chief|copy-chief]]"
+---
+
 # Memória do Agente copy-chief (Cyrus)
 
 > Memória persistente deste agente. Atualizada pelo Ritual de Encerramento

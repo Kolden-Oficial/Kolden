@@ -9,6 +9,9 @@ keywords: "('TypeScript error', 'Lexical Editor', 'Excessive stack depth', 'Vers
 summary: "This Stack Overflow thread addresses a common **TypeScript transpilation error** that occurs when developers attempt to integrate the Lexical rich text editor. Users reported an **\"Excessive stack depth\"** message, which stems from a **version mismatch** between the core Lexical library and its specific plugin packages. The discussion reveals that the issue is often caused by **inconsistent type declarations** across different software versions, specifically highlighting problems in releases 0.20.0 and 0.22.0. To resolve this, developers must ensure that the **core library and plugins are synchronized** to the same version to allow for a clean, non-recursive type comparison during the build process."
 extraido_em: "2026-06-30T16:22:25Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # TypeScript error when using registerRichText with Lexical Editor: "Excessive stack depth comparing types 'LexicalEditor' and 'LexicalEditor'" - Stack Overflow

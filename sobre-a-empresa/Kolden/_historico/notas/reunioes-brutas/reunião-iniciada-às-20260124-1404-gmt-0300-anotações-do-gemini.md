@@ -9,6 +9,9 @@ keywords: "('Marketing Strategy Proposal', 'Lead Qualification Process', 'Budget
 summary: "This meeting transcript details a strategic sales presentation where consultants Ronan Sersil and Bernardo Vicenzo Pereira propose a **four-phase marketing and operational recovery plan** to Kaylon Teixeira, a business owner struggling with inefficient advertising spend and disorganized lead management. The discussion focuses on transitioning from a failing weekly investment of $4,000 to a more sustainable **monthly budget of $1,875**, which covers specialized ad management, copywriting, and video editing aimed at **qualifying leads** through targeted funnels and landing pages. Central to the negotiation is Kaylon’s need for better **business intelligence and time management**, leading the consultants to offer a **customized management spreadsheet** as a bonus to automate pricing and expense tracking. The dialogue reveals a pivot from high-cost, low-return tactics toward an **80/20 growth strategy** centered on paid traffic and operational efficiency, concluding with a tentative agreement pending final approval from Kaylon’s business partner."
 extraido_em: "2026-06-30T16:15:31Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/24 14:04 GMT-03:00 - Anotações do Gemini

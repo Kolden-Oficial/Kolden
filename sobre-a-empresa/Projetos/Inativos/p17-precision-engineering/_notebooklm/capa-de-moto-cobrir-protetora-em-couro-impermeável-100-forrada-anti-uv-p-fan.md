@@ -9,6 +9,10 @@ keywords: "('Motorcycle protective covers', 'Waterproof synthetic leather', 'UV 
 summary: "This source consists of a comprehensive **product listing on Amazon Brazil** for a high-quality, **waterproof motorcycle cover** manufactured by Shop-Vision. The documentation emphasizes the item’s **durable synthetic leather construction**, featuring a **soft internal lining** designed to prevent scratches and provide **full UV protection** against sun damage. Key sections of the text outline **specific size compatibility** categories—Small, Medium, and Large—to ensure a proper fit for a vast range of bike models from brands like Honda, Yamaha, and Kawasaki. Additionally, the page displays **customer feedback and technical specifications**, serving as a functional guide to help riders maintain their vehicles' integrity against harsh environmental elements."
 extraido_em: "2026-06-30T16:09:40Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa de Moto Cobrir Protetora em Couro Impermeável 100% Forrada Anti-Uv (P - Fan Titan Pop Factor; etc) _ Amazon.com.br_ Automotivo.pdf

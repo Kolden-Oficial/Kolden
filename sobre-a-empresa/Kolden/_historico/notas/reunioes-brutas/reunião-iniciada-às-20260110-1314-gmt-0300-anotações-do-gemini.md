@@ -9,6 +9,9 @@ keywords: "('Copywriting Challenges', 'Digital Presence Analysis', 'Strategic Bu
 summary: "This meeting transcript outlines a strategic planning session between Mateus Felipe, Bernardo Pereira, Ronan Sersil, and Bernardo Vicenzo Pereira as they prepare a high-level business proposal for **Ótica Tradição**. The team identifies critical failures in the client's current digital presence, specifically noting a **lack of brand standardization**, an **absent website domain**, and **outdated social media profiles** that fail to leverage the company’s twenty-year authority. To address these gaps, they propose shifting their own positioning from a standard marketing agency to a more sophisticated **\"executive business management\"** model, which justifies a higher price point by focusing on overall growth rather than just advertising. Key tactical objectives include implementing a **segmented sales funnel** (top, middle, and bottom), creating a centralized **landing page with regional filters** for their six locations, and utilizing **high-volume creative testing** rooted in the emotional state of the target audience. Ultimately, the team aims to present a comprehensive **value proposition** that includes CRM integration and potential revenue-sharing, moving away from simple tasks toward a holistic **consultative partnership**."
 extraido_em: "2026-06-30T16:15:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/10 13:14 GMT-03:00 - Anotações do Gemini

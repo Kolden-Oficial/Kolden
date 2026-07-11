@@ -9,6 +9,9 @@ keywords: "('Business Model Strategy', 'Market Research Automation', 'Competitor
 summary: "This transcript documents a strategic meeting regarding **Coden**, a digital marketing venture aiming to build a business \"empire\" by merging **aggressive market research** with **professional operational processes**. Led by Ronan Sersil and Bernardo Pereira, the team details a \"third way\" strategy that identifies **validated offers** in international markets—often through technical \"mining\" and breaking security codes—to improve and relaunch them with higher-quality deliverables. However, advisor Gilvan Coelho Jr. delivers a blunt critique of their **technical-heavy pitch**, urging them to shift their focus from the \"how\" to the **delivery of value** and clear **business logic**. He emphasizes the necessity of mapping the **cost of idea acquisition** against potential markups, ultimately steering the group toward a **low-hanging fruit** strategy that prioritizes high-profit, low-complexity products while avoiding premature outside investment."
 extraido_em: "2026-06-30T16:24:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2025/12/02 17:57 GMT-03:00 - Anotações do Gemini

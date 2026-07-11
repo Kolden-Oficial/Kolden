@@ -1,3 +1,11 @@
+---
+tipo: agente
+squad: Ananke
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Ananke/agents/ananke-chief|ananke-chief]]"
+---
+
 # Gestor de Fornecedores
 
 > AVISO-DE-ATIVAÇÃO: Este agente é o **gestor de fornecedores/vendors** do squad Ananke. Ele avalia,

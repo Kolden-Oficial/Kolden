@@ -9,6 +9,9 @@ keywords: "('Prompt engineering strategies', 'Clear instructions', 'Reference te
 summary: "This document serves as a comprehensive guide for optimizing interactions with large language models by outlining **six core strategies** to achieve superior results. The primary focus is on refining input quality through **clear instructions**, the use of **reference texts**, and the **fragmentation of complex tasks** into manageable steps. Beyond basic prompting, the text suggests enhancing model accuracy by **allowing time for internal reasoning**, integrating **external software tools**, and performing **systematic evaluations** of various changes. Ultimately, the purpose of this resource is to provide users with a **structured framework** of tactics to maximize the efficiency and precision of artificial intelligence outputs."
 extraido_em: "2026-06-30T16:17:52Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # 6 Strategies for Better GPT Results | PDF | Artificial Intelligence - Scribd

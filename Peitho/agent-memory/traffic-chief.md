@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Peitho
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Peitho/agent-memory/kasim-aslam|kasim-aslam]]"
+---
+
 # Memória do Agente traffic-chief
 
 > Memória persistente deste agente. Atualizada pelo Ritual de Encerramento

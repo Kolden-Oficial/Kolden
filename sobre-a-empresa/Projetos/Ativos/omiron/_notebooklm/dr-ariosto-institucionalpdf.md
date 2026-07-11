@@ -9,6 +9,10 @@ keywords: "('Psychiatric medical care', 'Mental health disorders', 'Individualiz
 summary: "This document serves as a professional profile for Dr. Ariosto Rodrigues, a **specialized psychiatrist** based in Belo Horizonte who offers a **humanistic and comprehensive approach** to mental health. The text outlines his extensive background in treating complex conditions such as **bipolar disorder, chemical dependency, and OCD**, emphasizing his commitment to achieving **rapid and effective recovery** through precise diagnostics. By integrating modern pharmaceutical treatments with **individualized care plans**, he addresses a wide spectrum of issues including depression, ADHD, and anxiety. Ultimately, the source promotes a philosophy of **integrated wellness**, where the medical practitioner looks beyond mere symptoms to understand the full context of a patient's life."
 extraido_em: "2026-06-30T16:07:54Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/_notebooklm/_indice|_indice]]"
 ---
 
 # Dr. Ariosto – Institucional.pdf

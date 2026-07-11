@@ -25,6 +25,11 @@ skills:
   - coderabbit-review
   - checklist-runner
 color: green
+tipo: agente
+squad: Prometeu
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/prometeu-chief|prometeu-chief]]"
 ---
 
 # AIOX Developer - Agente Autônomo

@@ -9,6 +9,10 @@ keywords: "('Motorcycle protective covers', 'Waterproof leather material', 'UV p
 summary: "This text is a product listing from the Amazon Brazil marketplace featuring a **heavy-duty protective motorcycle cover** designed for various bike models. The source details the item's technical specifications, highlighting its **waterproof synthetic leather** construction, **UV protection**, and a soft inner lining to prevent scratches. Beyond the primary product description, the page includes **customer ratings and reviews**, logistical details like pricing and shipping, and a comprehensive **compatibility list** categorized by bike size. Ultimately, the document serves as a digital storefront intended to inform consumers about the **durability and weather-resistant features** of this automotive accessory."
 extraido_em: "2026-06-30T16:09:40Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa de Moto Cobrir Protetora em Couro Impermeável 100% Forrada Anti-Uv (G - Bros Falcon Lander Xtz etc) _ Amazon.com.br_ Automotivo.pdf

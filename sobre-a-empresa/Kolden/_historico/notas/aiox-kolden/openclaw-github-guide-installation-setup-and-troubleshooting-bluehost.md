@@ -9,6 +9,9 @@ keywords: "('OpenClaw GitHub installation', 'System prerequisites', 'Troubleshoo
 summary: "This guide serves as a comprehensive technical manual for **OpenClaw**, an open-source platform designed for hosting **self-managed AI agents** and automated workflows. The text outlines a systematic transition from local development to **VPS deployment**, emphasizing that users can maintain **total data sovereignty** by avoiding external cloud services. Key instructional themes include the **prerequisites for installation**, such as Node.js and the pnpm manager, alongside a detailed **troubleshooting framework** for resolving common configuration errors. Ultimately, the source functions as both a tutorial and a security manifesto, offering **best practices for protecting sensitive API keys** and dashboard access while promoting the scalability of private AI infrastructure."
 extraido_em: "2026-06-30T16:21:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # OpenClaw GitHub Guide: Installation, Setup and Troubleshooting - Bluehost

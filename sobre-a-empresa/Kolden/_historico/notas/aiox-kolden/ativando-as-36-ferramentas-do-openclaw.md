@@ -9,6 +9,9 @@ keywords: "('OpenClaw tools activation', 'System scope review', 'Intelligence ro
 summary: "This guide serves as a technical roadmap for transitioning the **OpenClaw engineering project** from its foundational setup into a high-performance functional phase. By moving beyond basic safety limits and interface configurations, the user is instructed to initiate the **\"Arsenal\" of thirty-six specialized skills**, which include advanced capabilities like OCR and mathematical processing. The procedure utilizes an **automated onboarding command** within a Linux environment, requiring the user to navigate an installation wizard to integrate these complex software dependencies. Ultimately, this process aims to **unlock the system's full utility** by evolving the tool from a simple web interface into a sophisticated, multi-capable assistant."
 extraido_em: "2026-06-30T16:18:30Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Ativando as 36 Ferramentas do OpenClaw

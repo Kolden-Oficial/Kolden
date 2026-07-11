@@ -9,6 +9,10 @@ keywords: "('Recurring Customer Profit', 'Revenue Generation Models', 'Lifetime 
 summary: "This source outlines a strategic framework for maximizing business profitability by focusing on the **recurrent customer**, who represents the highest growth opportunity due to a **customer acquisition cost (CAC) of zero** and a pre-existing foundation of trust. The text distinguishes between three primary revenue models—**perpetual funnels, launches, and recurrence**—arguing that while the first two are essential for initial acquisition, long-term wealth is built by the **Commercial 2 department** through repeated sales and increasing the **Lifetime Value (LTV)**. Central to this strategy is the identification of the **\"good-fit\" customer** through data-driven research, allowing marketing efforts to attract leads that mirror the profiles of the most loyal, high-spending clients. To foster this ongoing relationship, the author emphasizes creating a **relationship ruler** based on \"reasons to open a conversation\" (MAC) and establishing **exclusive communities** that provide a sense of belonging. Finally, the text advocates for **overdelivery and \"instagrammable\" rewards** to drive engagement, suggesting that a business’s longevity depends on moving customers up a **value ladder** where they purchase more frequently and at higher price points."
 extraido_em: "2026-06-30T16:10:18Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/black-book/_indice|_indice]]"
 ---
 
 # 4 The Black Book. Capítulo 4. Cliente Reco.pdf

@@ -8,6 +8,11 @@ status: em-producao
 atualizado-em: 2026-07-03
 relacionados: [prd, arquitetura, decisoes, status]
 dossie_cliente: "sobre-a-empresa/clientes/ativos/nutrios-pro.md"
+tipo: projeto
+projeto: nutrios-pro
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/nutrios-pro/dossie|dossie]]"
 ---
 
 # NutriOS Pro

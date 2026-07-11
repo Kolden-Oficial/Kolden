@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # n8n-MCP — Referência de Uso (vendor inerte)
 
 **n8n-MCP** (czlonkowski) é um **servidor MCP que ensina e permite a uma IA construir, validar e fazer

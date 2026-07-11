@@ -9,6 +9,9 @@ keywords: "('Performance Ecosystem Presentation', 'Business Management Strategie
 summary: "This meeting transcript outlines a strategic partnership proposal between **Coden**, a performance-driven business consultancy, and **Arthur Joia**, the owner of a regional eyewear retail chain. Rather than offering basic marketing services, the Coden team introduces a **comprehensive business ecosystem** designed to foster sustainable growth through a rigorous **four-phase implementation process** involving operational auditing, channel diversification, and data-driven scaling. The discussion highlights a shift toward **entrepreneurial management**, emphasizing the use of integrated CRM tools and specialized sales tracking to solve faturamento inconsistencies, particularly within the client's Barreiro location. Ultimately, the text serves as a **formal project pitch** that details a specific investment structure while prioritizing a \"owner’s mindset\" to transition the client's optical stores from traditional advertising to a **predictable and scalable revenue model**."
 extraido_em: "2026-06-30T16:15:24Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/15 19:23 GMT-03:00 - Anotações do Gemini

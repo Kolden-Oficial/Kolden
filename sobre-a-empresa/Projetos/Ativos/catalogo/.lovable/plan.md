@@ -1,3 +1,9 @@
+---
+tipo: projeto
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+---
+
 ## Problema
 A logo está com `-my-6` (margin negativa) somada a `h-20/h-24` dentro de um header com `py-3.5`. Resultado: ela estoura visualmente o header e/ou parece desproporcional em relação ao botão "Entrar grátis no grupo" (que é bem menor).
 

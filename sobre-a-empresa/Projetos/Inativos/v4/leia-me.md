@@ -6,6 +6,9 @@ segmento: "Marketing digital / assessoria de performance (multi-nicho)"
 status: "inativo"
 drive_folder_id: "1bhTmJdcQTW87YmPus8IURWGYrxl10mAb"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: v4
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
 ---
 
 # Dossiê — V4

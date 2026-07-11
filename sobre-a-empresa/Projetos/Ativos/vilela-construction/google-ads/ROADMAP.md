@@ -1,3 +1,13 @@
+---
+tipo: projeto
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/conversion-actions|conversion-actions]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/estrategia-vilela-2026-07|estrategia-vilela-2026-07]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/google-ads/ghl-shadow-integration|ghl-shadow-integration]]"
+---
+
 # Roadmap Google Ads — Vilela Construction
 
 > **Origem:** `@Hermes` roteando pedido do Ronan para o squad **Peitho** (tráfego pago).

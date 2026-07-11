@@ -9,6 +9,10 @@ keywords: "('Status of V4', 'Paid traffic strategy', 'Investment budget requirem
 summary: "This document provides a detailed summary and transcript of a late-night professional meeting held on May 4, 2026, primarily involving **Bernardo Vicenzo Pereira and Mateus Felipe**. The discussion is structured around **strategic business planning**, focusing on the launch of digital traffic services for high-ticket B2B niches and the necessity of maintaining a **minimum investment budget** to ensure client results. Interwoven with these professional updates are **esoteric and personal reflections**, specifically regarding Kabbalistic angels, spiritual \"shadow\" sides, and the psychological importance of **perceived availability** in maintaining a high-level consultant status. Ultimately, the text serves as a record of both **operational next steps** for their agency and a broader philosophical exchange on how personal identity and mysticism intersect with professional branding."
 extraido_em: "2026-06-30T16:07:21Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: brayans-finish
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/05/04 21:56 GMT-03:00 - Anotações do Gemini

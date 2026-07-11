@@ -9,6 +9,11 @@ archived: true
 url_base: https://app.clickup.com/9007134163/docs/8cdvxek-13273/
 extracted_at: 2026-06-30
 nota: "Consolidação dos 5 cargos Junior em 1 arquivo. NOTA: as páginas '8cdvxek-9423 Gestor de tráfego' e '8cdvxek-9403 Suporte' retornaram conteúdo IDÊNTICO no ClickUp — provável erro de cópia no ClickUp original. Marcado abaixo."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/descritivo-de-cargos/pleno/cargos-pleno-consolidado|cargos-pleno-consolidado]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/02-gestao/operacoes/processos-conceituais/responsabilidades-de-cargos/descritivo-de-cargos/senior/cargos-senior-consolidado|cargos-senior-consolidado]]"
 ---
 
 # Descritivo de Cargos — JÚNIOR (consolidado)

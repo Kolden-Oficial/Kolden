@@ -5,10 +5,16 @@ resumo: "Fonte markdown do deck de apresentação do brandbook Omiron para a reu
 categoria: projeto
 status: oficial
 atualizado-em: 2026-07-06
-autor: Aglaia + Harmonia + Orfeu + Nomos (consolidação: Onda 4 da missão)
+autor: "Aglaia + Harmonia + Orfeu + Nomos (consolidação: Onda 4 da missão)"
 missao: m-20260706-193013-omiron-brandbook-completo
 onda: 4
 relacionados: [../brandbook/00-indice, ../brandbook/narrativa/manifesto, ../brandbook/narrativa/pilares, ../brandbook/narrativa/mentor-quiron, ../brandbook/narrativa/alternativa-marco-aurelio, ../brandbook/compliance-checklist, ../design-system/01-fundamentos/cores]
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/deck-conteudo|deck-conteudo]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/conteudo|conteudo]]"
 ---
 
 # Deck de apresentação — Omiron

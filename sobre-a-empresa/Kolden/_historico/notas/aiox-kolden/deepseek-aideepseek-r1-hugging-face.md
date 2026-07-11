@@ -9,6 +9,9 @@ keywords: "('Reasoning model development', 'Reinforcement learning', 'Model dist
 summary: "DeepSeek-R1 is a sophisticated artificial intelligence model designed to master complex logic and problem-solving through **large-scale reinforcement learning**. By utilizing a specialized training pipeline that avoids traditional supervised fine-tuning initially, the researchers successfully incentivized **autonomous reasoning behaviors** such as self-correction and reflection. The project also emphasizes accessibility by providing **distilled smaller models** that transfer high-level logic to more efficient architectures, often outperforming much larger competitors. Beyond technical specifications, the documentation serves as a comprehensive guide for the research community, offering **optimal configuration settings** and open-source licenses to encourage further innovation in text generation."
 extraido_em: "2026-06-30T16:22:39Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # deepseek-ai/DeepSeek-R1 - Hugging Face

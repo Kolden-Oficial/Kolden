@@ -9,6 +9,14 @@ author_ids: [60963240, 42950139]
 url: https://app.clickup.com/9007134163/docs/8cdvxek-3183/8cdvxek-8823
 extracted_at: 2026-06-30
 nota: "Apenas Daily 02/06 disponível em Junho (template das outras semanas vazio)."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-abril|atas-2023-abril]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-julho-novembro|atas-2023-julho-novembro]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-maio|atas-2023-maio]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-maio-completo|atas-2023-maio-completo]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-novembro-semana-2|atas-2023-novembro-semana-2]]"
 ---
 
 # Atas Daily — Junho 2023 (Daily 02/06)

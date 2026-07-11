@@ -1,3 +1,12 @@
+---
+tipo: projeto
+projeto: gloria-ellen
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/04-videos/bio-link-unificado|bio-link-unificado]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/gloria-ellen/04-videos/estrategia-youtube|estrategia-youtube]]"
+---
+
 # 12 pautas de vídeo diárias — Estreia no Vale
 
 Formato principal: **Reels 15-30s** postado no IG + YouTube Shorts + TikTok.

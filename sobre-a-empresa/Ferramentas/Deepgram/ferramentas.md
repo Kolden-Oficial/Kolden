@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Deepgram — Referência de Uso
 
 Deepgram é uma plataforma de Voice AI (Áudio/Vídeo) que oferece APIs de Speech-to-Text (transcrição de áudio pré-gravado e em tempo real), Text-to-Speech, Voice Agent e inteligência de texto/áudio, com suporte a 50+ idiomas.

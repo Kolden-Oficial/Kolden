@@ -7,6 +7,12 @@ status: "ativo"
 drive_folder_id: "1ap5666RlBEenXUwGHl65dBZFFVL09TZx"
 workspace_projeto: "Projetos/Omiron"
 atualizado_em: "2026-06-25"
+tipo: projeto
+projeto: omiron
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/omiron/README|README]]"
 ---
 
 # Dossiê — Clinica Omiron

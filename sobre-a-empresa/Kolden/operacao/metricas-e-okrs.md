@@ -7,6 +7,14 @@ palavras-chave: [metricas, kpi, okr, indicadores, metas]
 status: rascunho
 atualizado-em: 2026-06-18
 relacionados: [ofertas-e-produtos, processos]
+tipo: nota
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/leia-me|leia-me]]"
+  - "[[sobre-a-empresa/Kolden/operacao/kolden-budget-dre-tracker|budget & DRE]]"
+  - "[[sobre-a-empresa/Kolden/areas/financas|finanças]]"
+  - "[[sobre-a-empresa/Kolden/operacao/planejamento-estrategico|planejamento estratégico]]"
 ---
 
 # Métricas e OKRs

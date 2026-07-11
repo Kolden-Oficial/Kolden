@@ -13,6 +13,10 @@ idioma_entrevista: "Inglês (clientes finais nos EUA — MA/NH)"
 consentimento: "obrigatório e escrito antes de publicar (FTC/BBB nos EUA)"
 criado_em: "2026-07-09"
 autor: "Aletheia (rob-fitzpatrick + tony-ulwick)"
+tipo: projeto
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/README|README]]"
 ---
 
 # Roteiro de entrevista — Testimonials Vilela Construction

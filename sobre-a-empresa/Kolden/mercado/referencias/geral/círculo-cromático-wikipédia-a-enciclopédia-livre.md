@@ -9,6 +9,10 @@ keywords: "('Color wheel creation', 'Isaac Newton', 'Harmonic color combinations
 summary: "Originally developed by **Isaac Newton**, the color wheel serves as a **systematic visual guide** that organizes twelve distinct hues into a circular diagram to illustrate their natural relationships. By categorizing colors into **primary, secondary, and tertiary** groups, the resource provides a framework for understanding how different shades interact to create balance or tension. The text outlines specific **harmonic schemes**, such as complementary, analogous, and triadic combinations, which allow artists and designers to achieve either **vibrant contrast** or **subtle cohesion**. Ultimately, this tool functions as a fundamental reference for **color theory**, helping users navigate the complexities of saturation and tone to master aesthetic composition."
 extraido_em: "2026-06-30T16:11:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: mercado
+up: "[[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/mercado/referencias/geral/_indice|_indice]]"
 ---
 
 # Círculo cromático – Wikipédia, a enciclopédia livre

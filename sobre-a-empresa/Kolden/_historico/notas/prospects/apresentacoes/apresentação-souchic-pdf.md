@@ -9,6 +9,9 @@ keywords: "('Brand Identity', 'Typography', 'Color Palette', 'Visual Design', 'S
 summary: "This document functions as a foundational **visual identity guide** for a brand named Souchick, detailing the aesthetic components that define its public image. It establishes a consistent **typographic framework** by showcasing specific font styles alongside a curated **color palette** featuring muted, earthy tones and soft neutrals. By organizing these graphic elements and exploring various **logo iterations**, the source provides a cohesive **branding blueprint** intended to maintain stylistic harmony across all professional materials."
 extraido_em: "2026-06-30T16:10:39Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/_indice|_indice]]"
 ---
 
 # APRESENTAÇÃO SOUCHIC .pdf

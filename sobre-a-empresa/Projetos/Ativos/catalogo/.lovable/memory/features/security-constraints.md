@@ -2,6 +2,14 @@
 name: Security Constraints
 description: Restrições de segurança que devem ser respeitadas em qualquer alteração no projeto. Lista do que NUNCA fazer e padrões obrigatórios para novos endpoints, RLS e tratamento de PII.
 type: feature
+tipo: projeto
+projeto: catalogo
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/architecture-overview|architecture-overview]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/database-schema|database-schema]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/external-integrations|external-integrations]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/catalogo/.lovable/memory/features/technical-debt|technical-debt]]"
 ---
 
 ## Regras absolutas (nunca violar)

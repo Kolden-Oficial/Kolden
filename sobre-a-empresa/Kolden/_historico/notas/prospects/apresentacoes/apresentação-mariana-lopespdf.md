@@ -9,6 +9,9 @@ keywords: "('Social Media Management', 'Content Strategy', 'Visual Identity Desi
 summary: "This business proposal outlines a comprehensive **social media management and design service** tailored for Mariana Lopes by Studio LPX. The document detail a structured **five-step operational workflow**, which transitions from initial administrative onboarding and market research into high-level **strategic communication planning** and creative content production. Beyond mere aesthetics, the agency emphasizes a **data-driven approach** by including performance tracking and monthly reporting to ensure the client’s goals of increased authority and conversion are met. The presentation concludes with a clear breakdown of **deliverables, pricing, and logistical terms**, highlighting a commitment to visual harmony and agile professional support throughout the partnership."
 extraido_em: "2026-06-30T16:11:11Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/_indice|_indice]]"
 ---
 
 # Apresentação Mariana Lopes.pdf

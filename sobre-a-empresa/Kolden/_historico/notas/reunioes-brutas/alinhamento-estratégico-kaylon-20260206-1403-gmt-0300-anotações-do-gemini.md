@@ -9,6 +9,9 @@ keywords: "('Strategic Marketing Plan', 'Lead Qualification Funnels', 'Insulatio
 summary: "This meeting summary outlines a **strategic alignment** between Kaylon Teixeira, a residential and commercial insulation business owner in the United States, and the marketing agency Coden. The primary objective is to establish a **predictable acquisition system** by integrating localized paid traffic, organic content creation, and a specialized sales funnel focused on **construction companies** and high-income homeowners. Key themes include overcoming the industry's low service recurrence by targeting the **mandatory nature of insulation** in building codes and leveraging Teixeira’s operational strengths, such as site cleanliness and professional organization, as **competitive differentiators**. The partnership aims to lower lead costs through **growth hacking and testing**, transitioning from informal Facebook Messenger inquiries to a more professional, automated workflow that builds **local authority and trust**."
 extraido_em: "2026-06-30T16:10:42Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Alinhamento Estratégico Kaylon - 2026/02/06 14:03 GMT-03:00 - Anotações do Gemini

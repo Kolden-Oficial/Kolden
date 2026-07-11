@@ -9,6 +9,9 @@ keywords: "('Fraud prevention tips', 'Bank account statement', 'Credit limit inf
 summary: "This monthly bank statement from **Santander Universities** serves as a dual-purpose document providing both personalized financial data and critical **security education** for the account holder. The administrative section outlines the client's **credit limits**, monthly service package fees, and various economic indices, while the footer includes comprehensive contact information for **customer support and fraud reporting**. Most notably, the document prominently features **anti-fraud guides** designed to protect users from common scams, such as **WhatsApp impersonation**, the \"fake courier\" trick involving physical credit cards, and the alteration of payment slips. By combining these operational details with **preventative warnings**, the text aims to empower the customer with the **information as a primary defense** against financial exploitation."
 extraido_em: "2026-06-30T16:26:16Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (44).pdf

@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Supabase — Referência de Uso
 
 Supabase é a plataforma open source de desenvolvimento sobre Postgres ("alternativa ao Firebase"): banco de dados Postgres dedicado, Auth, APIs REST/GraphQL automáticas, Realtime, Storage e Edge Functions. Categoria: Banco/Backend.

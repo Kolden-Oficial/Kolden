@@ -5,6 +5,11 @@ verificador: Dike (delta v2.2, independente)
 data: 2026-07-01
 versao: v3 (pós-Solomon)
 sucessor_de: dike-laudo-v2.md
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/README|README]]"
 ---
 
 # LAUDO DIKE v3 — deck Rosie pós-Solomon 30d

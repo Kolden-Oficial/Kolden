@@ -9,6 +9,10 @@ keywords: "('Professional career transition', 'Operational management strategy',
 summary: "This document details a strategic meeting between Ronan Sersil and Bruno Vilas Boas regarding a **professional transition** and the formation of a **centralized marketing and operational hub** for a group of four companies. The text outlines Ronan’s departure from his current role to provide **exclusive dedication** to Bruno’s business ecosystem, specifically prioritizing the brand \"Rose\" through advanced **traffic management, CRM implementation, and sales automation**. Key themes include the formalization of a **remuneration structure** involving fixed fees and performance-based percentages, as well as the immediate need to **reclaim administrative control** over digital assets currently held by third parties. Ultimately, the source serves as a roadmap for **business scaling**, defining specific priorities for each corporate entity while establishing a collaborative framework for **long-term growth and technical organization**."
 extraido_em: "2026-06-30T16:28:49Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: socios
+up: "[[sobre-a-empresa/Socios/_MOC-socios]]"
+relacionado:
+  - "[[sobre-a-empresa/Socios/sobre-o-ronan/acordo-transicao-profissional/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/04/16 16:02 GMT-03:00 - Anotações do Gemini

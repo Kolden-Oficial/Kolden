@@ -1,3 +1,12 @@
+---
+tipo: nota
+area: socios
+up: "[[sobre-a-empresa/Socios/_MOC-socios]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/areas/ceo-topo|CEO / topo]]"
+  - "[[sobre-a-empresa/Kolden/identidade/visao-geral|visão geral]]"
+---
+
 # Sobre o Ronan
 
 > Pasta inaugurada em 2026-06-30 como destino paralelo a `sobre-a-empresa/`.

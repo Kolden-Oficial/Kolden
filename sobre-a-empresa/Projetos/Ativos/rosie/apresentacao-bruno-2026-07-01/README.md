@@ -6,6 +6,21 @@ skills_aplicadas: [julgamento-estetico-anti-slop, sistema-de-design, tokens-de-d
 data: 2026-07-01
 contrato: "Olimpo/contratos/missoes/m-20260701-112935-rosie-90d.yaml"
 status: v1 — pronto para revisão do Ronan antes de envio ao Bruno
+tipo: projeto
+projeto: rosie
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/dossie-tecnico/auditoria-site-vs-marca|auditoria-site-vs-marca]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/dossie-tecnico/cenarios-funil-reverso|cenarios-funil-reverso]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/dossie-tecnico/cronograma-90d|cronograma-90d]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/dossie-tecnico/estrutura-midia-paga|estrutura-midia-paga]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/dossie-tecnico/fluxo-comercial-crm|fluxo-comercial-crm]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/dossie-tecnico/fluxos-email|fluxos-email]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/dossie-tecnico/spec-rastreamento|spec-rastreamento]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/deck-conteudo|deck-conteudo]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/dike-laudo|dike-laudo]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/dike-laudo-v2|dike-laudo-v2]]"
+  - "[[sobre-a-empresa/Projetos/Ativos/rosie/apresentacao-bruno-2026-07-01/dike-laudo-v3|dike-laudo-v3]]"
 ---
 
 # Rosie · Plano estratégico 90 dias · Bruno · 2026-07-01

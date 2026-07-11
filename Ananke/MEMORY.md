@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Ananke
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Ananke/agents/ananke-chief|ananke-chief]]"
+---
+
 # MEMORY — Ananke (Operações & BizOps)
 
 > Memória persistente do squad. Esquema em três zonas. Promoção de Candidato → Padrão Ativo exige

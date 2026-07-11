@@ -9,6 +9,9 @@ keywords: "('Frontend Development', 'LobeChat Implementation', 'Vercel Deploymen
 summary: "This guide outlines a strategic approach to building a professional web presence for the Kolden agency by prioritizing the **frontend development** as a \"glass facade\" that transforms abstract code into a tangible product. By leveraging high-quality **open-source frameworks** like LobeChat and hosting them on **Vercel**, the author presents a streamlined workflow designed to launch a sophisticated AI interface in minutes. The process focuses on the seamless integration of **GitHub repositories** and **API variables**, ensuring that the backend intelligence is securely connected to a customized, branded user experience. Ultimately, the text serves as a **step-by-step deployment roadmap** that empowers the architect to transition from technical configuration to a live, client-ready digital headquarters."
 extraido_em: "2026-06-30T16:21:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Opção A

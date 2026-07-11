@@ -7,6 +7,11 @@ palavras-chave: [prd, requisitos]
 status: rascunho
 atualizado-em: 2026-06-18
 relacionados: [leia-me, arquitetura]
+tipo: projeto
+projeto: prd.md
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/_modelo/dossie|dossie]]"
 ---
 
 # PRD — <Nome do Projeto>

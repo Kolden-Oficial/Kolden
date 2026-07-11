@@ -23,6 +23,12 @@ roteamento-interno:
     - "Robert Cialdini — prova, autoridade, escassez ética (só se couber com honestidade)"
   salvaguarda-de-tom:
     - "David Ogilvy — verificador de sobriedade em todos os blocos"
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/kolden-vettory-alinhamento-estratégico-20260209-1558-gmt-0300-anotações-do|kolden-vettory-alinhamento-estratégico-20260209-1558-gmt-0300-anotações-do]]"
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/check-in-kolden-vilela-construction-20260612-0900-gmt-0300-anotações-do-gemini|check-in-kolden-vilela-construction-20260612-0900-gmt-0300-anotações-do-gemini]]"
 ---
 
 ## Sumário-executivo

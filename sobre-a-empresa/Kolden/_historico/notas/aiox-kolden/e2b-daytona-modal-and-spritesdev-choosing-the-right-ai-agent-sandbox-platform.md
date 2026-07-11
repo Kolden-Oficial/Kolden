@@ -9,6 +9,9 @@ keywords: "('AI Agent Sandboxes', 'Sandbox Isolation Technologies', 'Cold Start 
 summary: "This article serves as a technical guide for developers and businesses to evaluate the leading **sandbox platforms** used for running **untrusted AI agent code** in secure, isolated environments. The author categorizes these services by their specific strengths, highlighting **E2B** for its superior developer experience, **Daytona** for industry-leading startup speeds, **Modal** for high-performance **GPU workloads**, and **Sprites.dev** for maintaining **long-running session state**. By examining core technologies like **microVMs and containers**, the text provides a strategic framework to help users balance the trade-offs between **security isolation, latency, and operational compliance**. Ultimately, the source functions as a decision-making tool for aligning a project's unique infrastructure requirements with the most suitable **execution environment**."
 extraido_em: "2026-06-30T16:19:44Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # E2B, Daytona, Modal, and Sprites.dev - Choosing the Right AI Agent Sandbox Platform

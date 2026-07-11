@@ -9,6 +9,9 @@ keywords: "('Project Name Revision', 'Affiliation Business Model', 'AI Feature I
 summary: "This meeting transcript documents a strategic alignment session for the **NutriOS project**, an AI-powered health platform designed to streamline clinical management for nutritionists. The partners focused on **refining the business model**, shifting toward a monthly affiliation system similar to service marketplaces to reduce bureaucracy and simplify revenue. Technical progress was a primary theme, as the team reviewed the integration of **biodependency data** and resolved critical system bugs related to PDF generation and navigation. A significant portion of the discussion addressed **brand identity and legal protections**, leading to the rejection of the current name due to domain unavailability and a commitment to formalizing the company as a legal entity. Ultimately, the project is moving toward a **comprehensive visual identity rollout** and further expansion of its food and clinical databases to enhance user engagement."
 extraido_em: "2026-06-30T16:23:52Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Kolden & NutriCalc | Alinhamento do Projeto - 2026/03/24 17:02 GMT-03:00 - Anotações do Gemini

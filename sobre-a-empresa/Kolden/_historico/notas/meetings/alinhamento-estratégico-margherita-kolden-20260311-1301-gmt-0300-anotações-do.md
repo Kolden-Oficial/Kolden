@@ -9,6 +9,9 @@ keywords: "('Midweek delivery strategy', 'Profit margin analysis', 'Promotional 
 summary: "The provided source documents a strategic meeting between the Margherita & Kolden team and consultants to establish a **midweek promotional calendar** aimed at boosting revenue from Tuesday to Thursday. To avoid the high overhead of extra service staff, the participants decided to **pivot away from in-person dining** and instead **centralize their strategy on delivery services**. The team analyzed product margins to determine that **traditional \"podrão\" burgers** and specific pizza deals offer the most flexibility for discounts compared to gourmet options. To track the effectiveness of these efforts, the group proposed using **targeted digital coupons** and specific incentives, such as free beverages, to drive order volume without eroding profits. The meeting concluded with a commitment to **formalize a rotating daily offer**—such as a dedicated burger day—to be implemented by the following Tuesday."
 extraido_em: "2026-06-30T16:23:20Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/meetings/_indice|_indice]]"
 ---
 
 # Alinhamento Estratégico | Margherita & Kolden - 2026/03/11 13:01 GMT-03:00 - Anotações do Gemini

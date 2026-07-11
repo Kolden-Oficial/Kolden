@@ -8,6 +8,11 @@ status: rascunho
 atualizado-em: 2026-07-06
 relacionados: [posicionamento, tom-de-voz, decisoes]
 versao_original: "Manual de Identidade Visual 2.0 / Doc Estratégico 06 (junho/2026) — Bruno Vilas Boas"
+tipo: projeto
+projeto: bvb-financas
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/bvb-financas/dossie|dossie]]"
 ---
 
 # Identidade Visual — BVB Finanças (v2 "Tempo & Método")

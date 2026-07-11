@@ -1,3 +1,11 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+relacionado:
+  - "[[sobre-a-empresa/Ferramentas/Solomon/docs/README|README]]"
+---
+
 # 08 — API: enviar produto
 
 Fonte: https://docs.solomon.com.br/api-reference/ingestion/create-product

@@ -9,6 +9,9 @@ keywords: "('Vercel Toolbar', 'Production Environment', 'Browser Extension', 'Pa
 summary: "This documentation provides a comprehensive guide on how to integrate the **Vercel Toolbar** into a **production environment** to facilitate team collaboration and site auditing. To maintain a professional user experience, the guide outlines two primary implementation methods: using a **browser extension** for a seamless setup or installing a **dedicated software package** for more granular, conditional control. Beyond technical installation, the text explains how to **manage visibility settings** via the project dashboard and highlights essential features like **commenting integrations** and accessibility tools. Ultimately, the source serves as a practical manual for developers to safely bridge the gap between **development feedback** and live site performance."
 extraido_em: "2026-06-30T16:18:05Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Add the Vercel Toolbar to your production environment

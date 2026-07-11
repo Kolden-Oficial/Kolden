@@ -9,6 +9,10 @@ keywords: "('Confidentiality Obligations', 'Marketing Services Contract', 'Data 
 summary: "This legal addendum serves as a binding **non-disclosure agreement** between a marketing agency and its client, establishing a rigorous framework to protect sensitive business, technical, and strategic data. The document defines the scope of **confidential information** broadly to include proprietary secrets and third-party data, while outlining specific security protocols like encryption and restricted access to prevent leaks. For a duration of **five years following the contract's end**, both parties are prohibited from sharing this private knowledge unless legally compelled or granted written permission. To ensure compliance, the text institutes a **fixed financial penalty** for breaches and designates Brazilian law and the courts of Vespasiano to resolve any future disputes."
 extraido_em: "2026-06-30T16:10:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Anexo I - Confidencialidade.docx

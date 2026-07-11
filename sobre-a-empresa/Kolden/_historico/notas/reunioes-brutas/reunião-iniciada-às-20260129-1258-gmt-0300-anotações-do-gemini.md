@@ -9,6 +9,9 @@ keywords: "('Advertising access recovery', '90-day action plan', 'Multi-channel 
 summary: "This document summarizes a strategic **kickoff meeting** between marketing consultant Ronan Sersil and business owners Marcia Lima and Leidiane Gonçalves to revitalize their **pizzeria’s digital presence**. The primary focus is the **initial action plan**, which begins with consolidating access to platforms like Instagram, Google, and iFood to create a centralized **\"password hub\"** for future diagnostics. A significant portion of the discussion addresses **technical hurdles**, specifically the need to recover a personal Facebook profile to bypass the restrictions of creating new advertising accounts. Beyond logistics, the team brainstorms **growth strategies** such as influencer partnerships, automated **birthday rewards**, and loyalty programs to increase the average ticket price. Finally, the text highlights the goal of **audience filtering**, aiming to attract high-value customers from the \"Class A/B\" demographic while mitigating the impact of disruptive patrons to preserve the establishment’s atmosphere."
 extraido_em: "2026-06-30T16:15:32Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]"
 ---
 
 # Reunião iniciada às 2026/01/29 12:58 GMT-03:00 - Anotações do Gemini

@@ -9,6 +9,10 @@ keywords: "('Marketing alignment strategy', 'Social media access', 'Target audie
 summary: "This meeting transcript outlines a **strategic alignment session** between the marketing team at Kolden and VF Construction to launch a new digital advertising initiative. The primary objective was to facilitate the **transfer of digital credentials** and administrative access for social media and hosting platforms to begin data-driven outreach. Strategically, the parties agreed to **target homeowners aged 30 to 65** with a specific focus on **kitchen and bathroom remodeling** during the summer season. To ensure operational efficiency, the campaigns will be **geographically restricted to Northern Boston**, avoiding areas with high traffic congestion to improve project logistics. The session concluded with a commitment to **produce original video content** and a scheduled follow-up to finalize the upcoming traffic plan."
 extraido_em: "2026-06-30T16:07:48Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: vilela-construction
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/vilela-construction/_notebooklm/_indice|_indice]]"
 ---
 
 # Reunião de alinhamento com Vilela Construction  - 2026_05_29 10_56 GMT-03_00 - Anotações do Gemini.docx

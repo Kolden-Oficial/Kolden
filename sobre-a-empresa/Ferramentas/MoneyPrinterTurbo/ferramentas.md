@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # MoneyPrinterTurbo — Referência de Uso (vendor inerte, self-host)
 
 **MoneyPrinterTurbo** é um app Python (MVC) que, a partir de um **tópico/keyword**, gera

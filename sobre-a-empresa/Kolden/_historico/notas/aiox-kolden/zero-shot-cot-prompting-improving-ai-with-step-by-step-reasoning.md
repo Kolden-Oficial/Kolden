@@ -9,6 +9,9 @@ keywords: "('Zero-Shot CoT', 'Prompt Engineering', 'Step-by-Step Reasoning', 'La
 summary: "This source provides a comprehensive overview of **Zero-Shot Chain-of-Thought (Zero-Shot CoT)**, a prompting technique designed to elicit logical reasoning from AI models without the need for specific examples. By simply adding the phrase **\"Let’s think step by step\"** to a query, users can significantly improve the accuracy of model outputs for tasks involving **arithmetic, logic, and commonsense reasoning**. The text serves as an educational guide, contrasting this simple method with more complex **Few-Shot** approaches and outlining a two-stage process for generating and then extracting final answers. Ultimately, the material functions as a **learning module** within a larger curriculum on prompt engineering, highlighting how minor linguistic adjustments can unlock sophisticated problem-solving capabilities in large language models."
 extraido_em: "2026-06-30T16:22:41Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Zero-Shot CoT Prompting: Improving AI with Step-by-Step Reasoning

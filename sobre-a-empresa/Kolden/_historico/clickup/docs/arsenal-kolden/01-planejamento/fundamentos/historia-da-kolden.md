@@ -11,6 +11,13 @@ edited_by: 60963240
 avatar: emoji::📃
 url: https://app.clickup.com/9007134163/docs/8cdvxek-13273/8cdvxek-14693
 extracted_at: 2026-06-30
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/01-planejamento/fundamentos/cultura|cultura]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/01-planejamento/fundamentos/missao|missao]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/01-planejamento/fundamentos/valores|valores]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/01-planejamento/fundamentos/visao|visao]]"
 ---
 
 # História da Kolden

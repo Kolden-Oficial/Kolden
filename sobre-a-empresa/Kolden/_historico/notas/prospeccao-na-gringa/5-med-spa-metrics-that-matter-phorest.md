@@ -9,6 +9,9 @@ keywords: "('Client Lifetime Value', 'Consultation Conversion Rate', 'Average Cl
 summary: "This educational guide explores how aesthetic clinics can achieve sustainable growth by tracking **five essential performance metrics**: client lifetime value, consultation conversion rates, average revenue per client, schedule utilization, and marketing return on investment. The text emphasizes that long-term success requires moving beyond basic treatments to offer **comprehensive, evolving care plans** that address changing patient needs over time. By utilizing data-driven tools like **Phorest’s management software**, business owners can set clear benchmarks for their staff, such as a **75% conversion target** for consultations or a **$350 average spend** per visit. Ultimately, the source serves as a strategic roadmap for med spa owners to optimize their operations, enhance **team accountability**, and cultivate deeper loyalty through personalized client experiences and automated referral programs."
 extraido_em: "2026-06-30T16:27:26Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/_indice|_indice]]"
 ---
 
 # 5 Med Spa Metrics That Matter | Phorest

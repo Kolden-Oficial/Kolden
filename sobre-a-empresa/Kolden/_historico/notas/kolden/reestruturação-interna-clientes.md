@@ -9,6 +9,9 @@ keywords: "('Internal restructuring', 'Strategic campaign planning', 'Sales and 
 summary: "This document outlines a **comprehensive internal reorganization** aimed at optimizing digital marketing strategies for three distinct business accounts. The primary objective is to execute a **strategic restructuring of active campaigns** to drive specific outcomes, such as boosting food delivery sales or generating high-quality B2B leads. Across all clients, the focus remains on **aligning performance expectations** and refining the internal journey of potential customers to ensure better conversion rates. Ultimately, this plan serves as a roadmap for **operational improvement and revenue growth** through more targeted outreach and potential service expansions."
 extraido_em: "2026-06-30T16:14:57Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/kolden/_indice|_indice]]"
 ---
 
 # Reestruturação Interna - Clientes

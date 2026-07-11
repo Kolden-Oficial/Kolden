@@ -9,6 +9,10 @@ keywords: "('Hispanic Community Literacy', 'Canadian Financial Education', 'Pers
 summary: "This document serves as a **strategic knowledge map** designed to launch a financial education initiative led by Amparo Camacho for the **Hispanic immigrant community in Southern Ontario**. It meticulously organizes project data into eighteen dimensions, distinguishing between **verified facts, logical inferences, and hypotheses** that require further validation to build a credible brand narrative. The primary objective is to transition the target audience from a state of **financial survival to generational wealth** by teaching essential Canadian fiscal concepts like the \"Rule of 72\" and specialized savings accounts in their native language. Ultimately, the text identifies **critical information gaps**, such as the need for biographical details and social proof, which must be addressed to transform Amparo from a corporate affiliate into a **trusted community authority**."
 extraido_em: "2026-06-30T16:28:17Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: stass
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Ativos/stass/_notebooklm/hispanic-financial-education/_indice|_indice]]"
 ---
 
 # 01b — Mapa de Conhecimento do Lançamento

@@ -9,6 +9,9 @@ keywords: "('Consortium membership proposal', 'Yamaha motorcycle financing', 'Pe
 summary: "This document is a formal **membership proposal** for an individual named Ronan Sergio Silva to join a **Yamaha motorcycle consortium**, specifically for a Factor 125i ED model. It functions as a legal contract that outlines the financial structure of the **Plan Max Mega**, detailing a 48-month payment term and the specific **credit value** assigned for the vehicle purchase. Beyond the purchase agreement, the text integrates a secondary **credit life insurance proposal** designed to clear the debt in the event of the policyholder’s death or total disability. By signing, the participant acknowledges strict **eligibility requirements**, such as income stability and health declarations, while agreeing to the regulatory framework of the **Central Bank of Brazil**."
 extraido_em: "2026-06-30T16:13:50Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]"
 ---
 
 # PROPOSTA RONAN SERGIO SILVA.pdf

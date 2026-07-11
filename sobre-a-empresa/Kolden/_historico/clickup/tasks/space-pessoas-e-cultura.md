@@ -5,6 +5,10 @@ clickup_space_nome: "Pessoas & Cultura"
 total_tasks: 6
 extracted_at: 2026-06-30
 nota: "Time atual da Kolden — 6 membros em 'integração' na lista 'Batalhão de Operações Especiais'."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/INDEX|INDEX]]"
 ---
 
 # Tasks — Space Pessoas & Cultura

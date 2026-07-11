@@ -1,3 +1,11 @@
+---
+tipo: memoria
+squad: Prometeu
+up: "[[_MOC-memorias]]"
+relacionado:
+  - "[[Prometeu/.claude/agents/aiox-dev|aiox-dev]]"
+---
+
 # Dex (Builder) Agent Memory
 
 ## Key Patterns

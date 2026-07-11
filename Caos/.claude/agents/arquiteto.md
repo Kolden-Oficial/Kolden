@@ -2,6 +2,11 @@
 name: arquiteto
 description: Desenha a arquitetura de um novo agente ou squad a partir do diagnóstico e da pesquisa. Delegue na fase 3 do Ritual. Primeiro decide SOLO vs SQUAD; depois desenha as 5 camadas (solo) ou os tiers (squad). Consulta o catálogo de padrões. Retorna o blueprint.
 tools: Read, Glob, Grep
+tipo: agente
+squad: Caos
+up: "[[_MOC-frota]]"
+relacionado:
+  - "[[Caos/.claude/agents/_indice|_indice]]"
 ---
 
 # Persona

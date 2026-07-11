@@ -9,6 +9,9 @@ keywords: "('W&B Weave', 'LLM tracing', 'Model monitoring', 'Tracking inputs out
 summary: "The provided documentation introduces **W&B Weave**, a developer tool designed to **monitor and debug** Large Language Model (LLM) applications through a streamlined setup process. By integrating a specific **library and decorator**, developers can capture detailed **traces** of their model interactions, including critical data such as inputs, outputs, and token usage. The text serves as a practical guide for **tracking application performance** within a centralized dashboard, allowing users to analyze latency and experiment with prompts. Ultimately, the resource aims to simplify the **evaluation and optimization** of AI-driven projects by providing clear visibility into how code and models interact in real-time."
 extraido_em: "2026-06-30T16:21:53Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # Quickstart: Track LLM inputs & outputs - Weights & Biases Documentation - Wandb

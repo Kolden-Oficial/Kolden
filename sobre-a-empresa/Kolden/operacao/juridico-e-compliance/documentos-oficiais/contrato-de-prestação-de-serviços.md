@@ -9,6 +9,10 @@ keywords: "('Digital Marketing Services', 'Service Agreement Terms', 'Payment an
 summary: "This formal agreement outlines a professional partnership where a company named Kolden provides a comprehensive suite of **digital marketing services** to an individual client, Leandro Rubim. The document establishes a **three-month commitment** involving monthly payments of R$1,500 for specialized tasks such as paid traffic management, copywriting, and data intelligence. Beyond defining the financial terms, the text secures the **intellectual property rights** for the client and mandates a strict **confidentiality policy** for both participating parties. Ultimately, this contract serves as a legal framework to ensure **mutual accountability** and clear communication regarding project scope, termination notice, and jurisdictional authority."
 extraido_em: "2026-06-30T16:11:43Z"
 extraido_por: "notebooklm-py-0.7.3"
+area: operacao
+up: "[[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]"
 ---
 
 # Contrato de Prestação de Serviços

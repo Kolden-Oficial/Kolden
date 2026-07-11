@@ -9,6 +9,9 @@ keywords: "('Tax reporting documents', 'Digital statement transition', 'Personal
 summary: "This monthly consolidated statement from Santander serves as a comprehensive financial update for the client, Ronan Sergio Silva, while signaling a transition toward **digital-only documentation** to enhance data security and environmental sustainability. The document provides critical tax preparation guidance by announcing the availability of the **2021 income report** via internet and mobile banking, alongside details on personal credit limits and current service package fees. Beyond administrative data, the text functions as a customer engagement tool, highlighting **loyalty rewards and cashback** opportunities through the Esfera program. Finally, it emphasizes **fraud prevention**, specifically warning against \"false courier\" scams by reminding users that the bank will never request physical card collection or sensitive passwords."
 extraido_em: "2026-06-30T16:26:23Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/analise-financeira/_indice|_indice]]"
 ---
 
 # Extrato consolidado mensal (50).pdf

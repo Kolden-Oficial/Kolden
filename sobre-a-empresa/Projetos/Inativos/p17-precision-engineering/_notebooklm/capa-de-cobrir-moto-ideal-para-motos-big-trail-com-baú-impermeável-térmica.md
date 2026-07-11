@@ -9,6 +9,10 @@ keywords: "('Motorcycle covers', 'Big Trail bikes', 'Waterproof thermal protecti
 summary: "This document presents a digital storefront listing for a high-end **protective motorcycle cover** specifically engineered for large \"Big Trail\" bikes equipped with storage trunks. The product is distinguished by its **all-weather durability**, featuring a heat-resistant synthetic leather exterior and a soft inner lining designed to prevent scratches while shielding against rain, sun, and dust. Beyond basic specifications, the text serves as a **comprehensive consumer guide**, displaying pricing, technical dimensions, and high customer satisfaction ratings to validate the item's quality. Ultimately, the source illustrates a specialized **automotive accessory** intended to offer total physical protection for a motorcycle, even when the engine is still hot."
 extraido_em: "2026-06-30T16:09:35Z"
 extraido_por: "notebooklm-py-0.7.3"
+projeto: p17-precision-engineering
+up: "[[sobre-a-empresa/Projetos/_MOC-projetos]]"
+relacionado:
+  - "[[sobre-a-empresa/Projetos/Inativos/p17-precision-engineering/_notebooklm/_indice|_indice]]"
 ---
 
 # Capa de Cobrir Moto Ideal Para Motos Big Trail com Baú Impermeável Térmica Totalmente Forrada na parte Interna, de Couro Anti Risco, Chuva, Sol, Unha de Gato e Poeira Pode Usar com Moto Quente _ Amazon.com.br_ Auto.pdf

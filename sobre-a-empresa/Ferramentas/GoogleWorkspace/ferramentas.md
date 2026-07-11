@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Google Workspace (Drive / Docs / Sheets / Slides / Calendar) — Referência de Uso
 
 MCP que dá aos agentes acesso ao Google Workspace pessoal da Kolden — Drive (arquivos/pastas/permissões), Docs, Sheets, Slides e Calendar. Implementação em uso: **`@piotr-agier/google-drive-mcp`** (stdio, comunidade), rodando via `npx` na config global do Claude Code. Categoria: Produtividade / Workspace.

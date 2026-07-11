@@ -9,6 +9,9 @@ keywords: "('Claude 3.7 Sonnet', 'API Integration', 'Extended Thinking', 'Budget
 summary: "This developer guide introduces Anthropic’s Claude 3.7 Sonnet, a versatile model characterized by its unique **hybrid reasoning** that merges rapid responses with deep analytical thought. The text highlights how engineers can now utilize **budget-controlled thinking** to regulate processing power, ensuring a precise balance between cost-efficiency and performance in complex fields like **software development and mathematics**. Beyond exploring these technical capabilities, the source provides a practical roadmap for integration, offering **step-by-step setup instructions** and code examples for popular programming environments. Ultimately, the guide serves as a comprehensive manual for leveraging this new architecture to enhance **logic-driven workflows** without increasing financial overhead."
 extraido_em: "2026-06-30T16:20:09Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # How to Use the Claude 3.7 Sonnet API: Developer Guide - ApX Machine Learning

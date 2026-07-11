@@ -9,6 +9,9 @@ keywords: "('AI Model IDs', 'Text Generation Models', 'Multimedia AI Models', 'A
 summary: "This documentation acts as a comprehensive directory for the **AI/ML API**, providing developers with the specific **Model IDs** required to integrate various artificial intelligence technologies into their applications. The source organizes a vast array of tools into distinct categories based on their output, including **text, image, video, speech, and 3D generation**, while also detailing technical specifications like **context window limits** and developer origins. By offering a structured list of both **live and deprecated models**, the text serves as a functional guide for selecting the right engine for diverse use cases such as **semantic search, code generation, and automated reasoning**. Ultimately, it functions as a bridge between high-level AI capabilities and the **technical implementation** needed to call these services through an API."
 extraido_em: "2026-06-30T16:18:15Z"
 extraido_por: "notebooklm-py-0.7.3"
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/_indice|_indice]]"
 ---
 
 # All Model IDs | AI/ML API Documentation

@@ -1,3 +1,9 @@
+---
+tipo: ferramenta
+area: ferramentas
+up: "[[sobre-a-empresa/Ferramentas/_MOC-ferramentas]]"
+---
+
 # Apify — Referência de Uso
 
 Apify é uma plataforma de web scraping e automação de navegador baseada em **Actors** — programas

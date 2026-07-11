@@ -9,6 +9,14 @@ url_base: https://app.clickup.com/9007134163/docs/8cdvxek-3183/
 extracted_at: 2026-06-30
 status: parcial
 nota: "Sessões 4 do template Maio (Semana 4) ainda a extrair. Já temos Semanas 1-3."
+tipo: historico
+up: "[[sobre-a-empresa/Kolden/_historico/_MOC-historico]]"
+relacionado:
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-abril|atas-2023-abril]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-julho-novembro|atas-2023-julho-novembro]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-junho|atas-2023-junho]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-maio-completo|atas-2023-maio-completo]]"
+  - "[[sobre-a-empresa/Kolden/_historico/clickup/docs/atas-daily-2023/atas-2023-novembro-semana-2|atas-2023-novembro-semana-2]]"
 ---
 
 # Atas Daily — Maio 2023 (Semanas 1-3, parcial)
