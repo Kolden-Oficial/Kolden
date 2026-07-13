@@ -6,10 +6,11 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 
 # 🗺️ MOC — operacao
 
-> Mapa de conteúdo da área **operacao** (40 notas).
+> Mapa de conteúdo da área **operacao** (42 notas).
 
 - [[sobre-a-empresa/Kolden/operacao/inteligencia-e-referencias|inteligencia-e-referencias]]
 - [[sobre-a-empresa/Kolden/operacao/juridico-e-compliance|juridico-e-compliance]]
+- [[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/_indice|_indice]]
 - [[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/anexo-i-confidencialidade-1|anexo-i-confidencialidade-1]]
 - [[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/anexo-i-confidencialidade|anexo-i-confidencialidade]]
 - [[sobre-a-empresa/Kolden/operacao/juridico-e-compliance/documentos-oficiais/anexo-i-confidencialidadedocx|anexo-i-confidencialidadedocx]]
@@ -43,6 +44,7 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 - [[sobre-a-empresa/Kolden/operacao/planejamento-estrategico|planejamento-estrategico]]
 - [[sobre-a-empresa/Kolden/operacao/processos|processos]]
 - [[sobre-a-empresa/Kolden/operacao/proposta-reorganizacao-drive|proposta-reorganizacao-drive]]
+- [[sobre-a-empresa/Kolden/operacao/roadmap-padronizacao-squads|roadmap-padronizacao-squads]]
 - [[sobre-a-empresa/Kolden/operacao/tarefas/README|README]]
 - [[sobre-a-empresa/Kolden/operacao/tarefas/importacoes/2026-06-30_planilha-tarefas-pessoais|2026-06-30_planilha-tarefas-pessoais]]
 - [[sobre-a-empresa/Kolden/operacao/tarefas/playbooks/cerebro-notebooklm|cerebro-notebooklm]]
