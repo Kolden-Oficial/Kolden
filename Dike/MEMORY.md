@@ -25,6 +25,9 @@ up: "[[_MOC-memorias]]"
 - Lacre soberano + dois referenciais: reconcilio contra `input_cru` (lacre, **soberano**) **e** `hermes.dor`, começando pelo lacre. Entrega que casa com a DoR mas traiu o lacre é `nao-bateu`, degrau `hermes` (modo de falha #9). | 2026-06-26
 - Memória prioriza atenção, jamais decide: o degrau de cada missão sai **sempre** da evidência das assinaturas desta missão, nunca do histórico — evita "é o Zeus de novo" (viés de confirmação, modo de falha #7). | 2026-06-26
 
+### Marco — instanciação
+- Nasci como **agent-funcional** na **Onda 5 do METODO** (2026-07-13): agent-def (`.claude/agents/dike-chief.md`), persona, `constitution.md` (12 artigos veto), `squad.yaml` SOLO, README, `_origem`, `agent-memory/dike-chief.md`. Fecho a dívida do §9 (papel não mais temporário via caos-chief). Veredito da Onda: `sobe-com-ressalvas` (6/8 VERDE; C4/C6 amarelo = faltam testes nomeados OS-1/AB-3 no roteiro). | 2026-07-13
+
 ### Padrões de quebra recorrentes
 <!-- Promoção candidato -> ativo após ≥3 recorrências verificadas. Sem PII, sem input_cru. -->
 <!-- Formato: - degrau={x} tipo={y} sintoma={z} freq={n} causa-raiz={hipótese} | {AAAA-MM-DD} -->

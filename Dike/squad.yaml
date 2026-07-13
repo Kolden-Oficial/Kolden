@@ -1,0 +1,74 @@
+name: dike
+version: "1.0.0"
+short-title: "Verificador da Subida"
+description: "Agente SOLO nativo — verificador independente que reconcilia a entrega contra o lacre da intenção original (TPND=0) antes do Hermes devolver ao humano. Δίκη, filha de Têmis."
+author: "Kolden (Ritual do Caos)"
+license: interno
+
+aios:
+  minVersion: "4.0.0"
+  type: agent-solo
+
+tags:
+  - verificador
+  - subida
+  - reconciliacao
+  - fail-closed
+  - governanca
+
+# ─────────────────────────────────────────────────────────────
+# CAMADA KOLDEN — lavrada pela Onda 5 do METODO 2026-07-13
+# Agente SOLO NATIVO (não-vendorizado) — sem bloco fronteira_vendor
+# ─────────────────────────────────────────────────────────────
+
+# Hierarquia canônica Kolden (METODO §3)
+camada: "verificador-subida"   # entre Zeus (Camada 3) e Hermes (Camada 2), na subida
+tier_0: dike-chief             # ver .claude/agents/dike-chief.md
+tier_1: []                     # SOLO — o agent-def É o Dike (PRD §11)
+
+# Natureza
+natureza: agente-solo-nativo
+asl: 2
+predictions_scorecard: false   # Dike verifica, não prevê
+
+# Componentes
+components:
+  agents:
+    - dike.md            # persona canônica
+  constitution: constitution.md
+  prd: prd-de-ia.md
+  reflexos:
+    - confere-hash.sh
+    - valida-confere-hash.sh
+    - gate-de-subida.sh
+    - escrita-restrita.sh
+    - auditoria.sh
+    - verificacao-diaria.sh
+    - marca-trabalho.sh
+    - encerramento-aprendizado.sh
+
+# Invocação e handoffs (external_handoffs)
+external_handoffs:
+  gatilho: "evento do pipeline do Contrato após zeus.consolidacao (não chat/slash/agendado)"
+  invocacao:
+    pelo_pipeline: "gate mandatório da subida"
+    via_skill: "@dike / Passo 6 do /padronizar"
+  destinatario: hermes         # Hermes recebe o resultado; NÃO é o invocador (anti-circularidade)
+  subida:
+    para_hermes: "dike.veredito: sobe → gate-de-subida.sh → Hermes entrega ao Ronan"
+  escala:
+    teto_rodadas: 2            # divergência irreconciliável → humano via Hermes
+    seguranca: "anomalia de hash / proibição de segurança violada → Egide via Hermes/Olimpo"
+
+# MCP categoria (METODO §5)
+mcp_categoria:
+  camada_1_direto: []          # nenhum MCP (Art. IV do PRD — sem ferramenta externa/rede)
+  nota: "o único determinismo é local: reflexo confere-hash (sha256), não é ferramenta externa"
+
+# Procedência de lavratura
+procedencia_lavratura:
+  onda: "Onda 5 do METODO Kolden"
+  contrato_mae: "m-20260706-metodo-kolden"
+  data: "2026-07-13"
+  executor: "claude-code (sessão raiz — G7 dispensado por ordem explícita do Ronan)"
+  origem_agente: "Ritual do Caos 2026-06-26 (PRD v2.0)"
