@@ -12,6 +12,9 @@ up: "[[_MOC-memorias]]"
 ## Padrões Ativos
 <!-- Padrões atuais e verificados usados por este squad -->
 
+### Marco — padronização (Onda 6, 2026-07-13)
+- Camada Kolden lavrada na **Onda 6 do METODO** por envelopamento sobre o vendor advisory-board preservado (INVÓLUCRO sobre MUTAÇÃO, 6ª aplicação). **8/8 VERDE, veredito `sobe`.** ASL 2 (aconselha, o fundador decide). Ver `registros/metodo-onda-6/`. | 2026-07-13
+
 ### Governança, jurídico e compliance (absorção do Drive 2026-06-25)
 - Compliance gira em torno do app **Performance Brain** (consome APIs Meta): Política de Privacidade + Termos de Serviço (últ. 12/03/2026), Instruções de Exclusão de Dados (≤7 dias úteis), NDA/Anexo de Confidencialidade, Contrato de Prestação de Serviços. Fonte: `sobre-a-empresa/operacao/juridico-e-compliance.md`. | 2026-06-25
 - ⚠️ INCONSISTÊNCIA societária: contrato-modelo diz "S.A.", registro é MEI/SIMEI — revisar antes de uso com cliente. | 2026-06-25

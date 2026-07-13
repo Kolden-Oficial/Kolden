@@ -59,3 +59,68 @@ cross_cutting:
 
 config:
   extends: extend
+
+# ─────────────────────────────────────────────────────────────
+# CAMADA KOLDEN — APPENDado pela Onda 6 do METODO 2026-07-13
+# NÃO ALTERAR SEM CONTRATO DE MISSÃO PRÓPRIO
+# ─────────────────────────────────────────────────────────────
+
+# Hierarquia canônica Kolden (METODO §3)
+camada: "5"  # squad operacional consultivo; colabora com @Olimpo
+tier_0: themis-chief  # ver .claude/agents/themis-chief.md
+tier_1:
+  - ray-dalio
+  - charlie-munger
+  - naval-ravikant
+  - peter-thiel
+  - reid-hoffman
+  - simon-sinek
+  - brene-brown
+  - patrick-lencioni
+  - derek-sivers
+  - yvon-chouinard
+  - analista-de-compliance-regulatorio  # add Kolden 2026-07-02
+
+asl: 2  # aconselha; o fundador decide — sem canal externo irreversível
+predictions_scorecard: false
+
+# Fronteira vendor xquads-squads (INTOCÁVEL — E1 canonizada METODO v1.1)
+fronteira_vendor_xquads:
+  origem: "ohmyjahh/xquads-squads"
+  pasta_original: "advisory-board"
+  commit: "dcb32f35bfeab23913233c8aafe5ee5e7fd2f149"
+  licenca: MIT
+  intocaveis:
+    - agents/*.md      # board-chair + 11 conselheiros
+    - tasks/*.md       # 7 tasks
+    - workflows/*.yaml # 2 workflows
+    - data/*.yaml      # mental-models-catalog + routing-catalog
+    - checklists/*.md  # output-quality
+    - config/config.yaml
+    - _origem.md
+  regra: "INVÓLUCRO sobre MUTAÇÃO — camada Kolden PT-BR envelopa via CLAUDE.md + prd-de-ia.md + constitution.md + ferramentas.md + roteiro-de-teste.md + .claude/agents/themis-chief.md; mudança em vendor exige Contrato próprio (Fase 3 residual)"
+
+# Handoffs externos (external_handoffs)
+external_handoffs:
+  colaboracao:
+    com_olimpo: "@Olimpo (Zeus) consulta o board em decisões nível conselho consultivo — ver Olimpo/squad.yaml external_handoffs.colaboracao.zeus"
+  conselheiro_direto: "@advisory-board:<conselheiro> dispara um conselheiro específico do vendor"
+  subida:
+    para_dike: "dike.assinatura no Contrato → gate-de-subida"
+    para_hermes: "Hermes entrega ao Ronan pós-Dike"
+
+# MCP categoria (METODO §5)
+mcp_categoria:
+  camada_1_direto: []  # Camada 5 consultivo não consome MCP direto
+  skills_como_tools: 3  # framework-gdpr-lgpd, gerador-politica-privacidade, revisao-contratos-risco (ver ferramentas.md)
+
+# Regra de precedência (E6)
+precedencia: "Kolden constitution.md (13 artigos) prevalece sobre os 5 vetos operacionais vendor de cross_cutting.veto acima"
+
+# Procedência de lavratura
+procedencia_lavratura:
+  onda: "Onda 6 do METODO Kolden"
+  contrato_mae: "m-20260706-metodo-kolden"
+  data: "2026-07-13"
+  executor: "themis-chief (via claude-code sessão raiz — G7 dispensado 2ª vez por ordem do Ronan)"
+  padrao: "INVÓLUCRO sobre MUTAÇÃO — 6ª aplicação (Hermes + Prometeu 3× + Olimpo + Themis)"

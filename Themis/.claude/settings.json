@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "_procedencia": "Publicado pela Onda 6 do METODO Kolden 2026-07-13. Contrato-mãe m-20260706-metodo-kolden.",
+  "_regra_e1": "Vendor xquads-squads (advisory-board) INTOCÁVEL sem Contrato próprio (Fase 3 residual). Deny cirúrgico abaixo.",
+
+  "permissions": {
+    "deny": [
+      "Write(agents/**)",
+      "Edit(agents/**)",
+      "Write(tasks/**)",
+      "Edit(tasks/**)",
+      "Write(workflows/**)",
+      "Edit(workflows/**)",
+      "Write(data/**)",
+      "Edit(data/**)",
+      "Write(checklists/**)",
+      "Edit(checklists/**)",
+      "Write(config/**)",
+      "Edit(config/**)",
+      "Write(_origem.md)",
+      "Edit(_origem.md)"
+    ]
+  },
+
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/reflexos/interrupt-before-mutation.sh",
+            "description": "Reflexo Themis ASL-2: intercepta ação em categoria sensível (decidir pelo fundador / adquirir escopo-autoridade / tocar vendor)"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Invoque skill ritual-de-encerramento antes de fechar a sessão (regra global Kolden)'",
+            "description": "Lembrete de ritual de encerramento — auto-aprendizado obrigatório em Themis/agent-memory/themis-chief.md + Themis/MEMORY.md"
+          }
+        ]
+      }
+    ]
+  }
+}
