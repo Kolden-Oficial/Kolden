@@ -1,6 +1,7 @@
 ---
 tipo: indice
 up: [[sobre-a-empresa/Projetos/_MOC-projetos]]
+projeto: omiron
 ---
 
 # 🗂️ Índice — stories

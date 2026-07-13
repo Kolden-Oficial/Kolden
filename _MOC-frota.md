@@ -5,7 +5,7 @@ up: "[[_MOC]]"
 
 # 🤖 MOC — Frota de agentes
 
-> 324 agentes por squad. Índice de leitura canônico: [[AGENTS]].
+> 331 agentes por squad. Índice de leitura canônico: [[AGENTS]].
 
 ## Aglaia (15)
 - [[Aglaia/agents/al-ries|al-ries]]
@@ -110,7 +110,8 @@ up: "[[_MOC]]"
 - [[Caliope/agents/stefan-georgi|stefan-georgi]]
 - [[Caliope/agents/todd-brown|todd-brown]]
 
-## Caos (9)
+## Caos (10)
+- [[Caos/.claude/agents/_indice|_indice]]
 - [[Caos/.claude/agents/arquiteto|arquiteto]]
 - [[Caos/.claude/agents/auditor-de-seguranca|auditor-de-seguranca]]
 - [[Caos/.claude/agents/curador|curador]]
@@ -215,8 +216,9 @@ up: "[[_MOC]]"
 - [[Nomos/agents/nomos-chief|nomos-chief]]
 - [[Nomos/agents/privacidade-de-dados|privacidade-de-dados]]
 
-## Olimpo (9)
+## Olimpo (10)
 - [[Olimpo/.claude/agents/olimpo-chief|olimpo-chief]]
+- [[Olimpo/agents/_indice|_indice]]
 - [[Olimpo/agents/afrodite|afrodite]]
 - [[Olimpo/agents/apolo|apolo]]
 - [[Olimpo/agents/atena|atena]]
@@ -295,7 +297,8 @@ up: "[[_MOC]]"
 - [[Pluto/agents/hormozi-scale|hormozi-scale]]
 - [[Pluto/agents/hormozi-workshop|hormozi-workshop]]
 
-## Prometeu (72)
+## Prometeu (76)
+- [[Prometeu/.aiox-core/development/agents/_indice|_indice]]
 - [[Prometeu/.aiox-core/development/agents/aiox-master|aiox-master]]
 - [[Prometeu/.aiox-core/development/agents/analyst|analyst]]
 - [[Prometeu/.aiox-core/development/agents/architect|architect]]
@@ -320,6 +323,7 @@ up: "[[_MOC]]"
 - [[Prometeu/.claude/agents/aiox-sm|aiox-sm]]
 - [[Prometeu/.claude/agents/aiox-ux|aiox-ux]]
 - [[Prometeu/.claude/agents/prometeu-chief|prometeu-chief]]
+- [[Prometeu/.claude/commands/AIOX/agents/_indice|_indice]]
 - [[Prometeu/.claude/commands/AIOX/agents/aiox-master|aiox-master]]
 - [[Prometeu/.claude/commands/AIOX/agents/analyst|analyst]]
 - [[Prometeu/.claude/commands/AIOX/agents/architect|architect]]
@@ -332,6 +336,7 @@ up: "[[_MOC]]"
 - [[Prometeu/.claude/commands/AIOX/agents/sm|sm]]
 - [[Prometeu/.claude/commands/AIOX/agents/squad-creator|squad-creator]]
 - [[Prometeu/.claude/commands/AIOX/agents/ux-design-expert|ux-design-expert]]
+- [[Prometeu/.github/agents/_indice|_indice]]
 - [[Prometeu/.github/agents/aiox-master.agent|aiox-master.agent]]
 - [[Prometeu/.github/agents/analyst.agent|analyst.agent]]
 - [[Prometeu/.github/agents/architect.agent|architect.agent]]
@@ -360,6 +365,7 @@ up: "[[_MOC]]"
 - [[Prometeu/docs/guides/agents/SM-SYSTEM|SM-SYSTEM]]
 - [[Prometeu/docs/guides/agents/SQUAD-CREATOR-SYSTEM|SQUAD-CREATOR-SYSTEM]]
 - [[Prometeu/docs/guides/agents/UX-DESIGN-EXPERT-SYSTEM|UX-DESIGN-EXPERT-SYSTEM]]
+- [[Prometeu/docs/guides/agents/_indice|_indice]]
 - [[Prometeu/docs/pt/agents/archetype-rationale|archetype-rationale]]
 - [[Prometeu/docs/pt/agents/persona-definitions|persona-definitions]]
 - [[Prometeu/tests/unit/squad/fixtures/analyze-test-squad/agents/helper-agent|helper-agent]]
@@ -369,7 +375,8 @@ up: "[[_MOC]]"
 - [[Prometeu/tests/unit/squad/fixtures/invalid-agent-squad/agents/bad-agent|bad-agent]]
 - [[Prometeu/tests/unit/squad/fixtures/invalid-naming-squad/agents/BadAgentName|BadAgentName]]
 
-## Themis (12)
+## Themis (13)
+- [[Themis/agents/_indice|_indice]]
 - [[Themis/agents/analista-de-compliance-regulatorio|analista-de-compliance-regulatorio]]
 - [[Themis/agents/board-chair|board-chair]]
 - [[Themis/agents/brene-brown|brene-brown]]

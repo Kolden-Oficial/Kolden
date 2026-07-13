@@ -1,6 +1,7 @@
 ---
 tipo: indice
 up: [[sobre-a-empresa/Kolden/operacao/_MOC-operacao]]
+area: operacao
 ---
 
 # 🗂️ Índice — documentos-oficiais

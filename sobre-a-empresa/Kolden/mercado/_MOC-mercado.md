@@ -6,7 +6,7 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 
 # 🗺️ MOC — mercado
 
-> Mapa de conteúdo da área **mercado** (55 notas).
+> Mapa de conteúdo da área **mercado** (58 notas).
 
 - [[sobre-a-empresa/Kolden/mercado/briefings/2026-06-30--brefing-foda-geracao-demanda-brasileiros-eua|2026-06-30--brefing-foda-geracao-demanda-brasileiros-eua]]
 - [[sobre-a-empresa/Kolden/mercado/concorrencia|concorrencia]]
@@ -21,6 +21,8 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 - [[sobre-a-empresa/Kolden/mercado/referencias/black-book/6-the-black-book-captulo-6-pdf|6-the-black-book-captulo-6-pdf]]
 - [[sobre-a-empresa/Kolden/mercado/referencias/black-book/7-e-8-tbb-capt-7-e-8pdf|7-e-8-tbb-capt-7-e-8pdf]]
 - [[sobre-a-empresa/Kolden/mercado/referencias/black-book/9-a-111-tbb-captulo-9-11pdf|9-a-111-tbb-captulo-9-11pdf]]
+- [[sobre-a-empresa/Kolden/mercado/referencias/black-book/_indice|_indice]]
+- [[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/_indice|_indice]]
 - [[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/adobe-experience-manager-and-creative-cloud-integration-best-practices|adobe-experience-manager-and-creative-cloud-integration-best-practices]]
 - [[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/apollo-modelo-consultoria-p3pptx|apollo-modelo-consultoria-p3pptx]]
 - [[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/best-practices-and-tips-for-shared-drives-google-workspace-learning-center|best-practices-and-tips-for-shared-drives-google-workspace-learning-center]]
@@ -49,6 +51,7 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 - [[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/what-is-the-best-way-to-auto-create-a-folder-structure-in-google-drive-with|what-is-the-best-way-to-auto-create-a-folder-structure-in-google-drive-with]]
 - [[sobre-a-empresa/Kolden/mercado/referencias/dam-e-conhecimento/wpp-case-study-anegiscom|wpp-case-study-anegiscom]]
 - [[sobre-a-empresa/Kolden/mercado/referencias/geral/8-important-digital-asset-management-best-practices-for-success-photoshelter|8-important-digital-asset-management-best-practices-for-success-photoshelter]]
+- [[sobre-a-empresa/Kolden/mercado/referencias/geral/_indice|_indice]]
 - [[sobre-a-empresa/Kolden/mercado/referencias/geral/círculo-cromático-wikipédia-a-enciclopédia-livre|círculo-cromático-wikipédia-a-enciclopédia-livre]]
 - [[sobre-a-empresa/Kolden/mercado/referencias/geral/e-book-psicologia-das-cores-printi|e-book-psicologia-das-cores-printi]]
 - [[sobre-a-empresa/Kolden/mercado/referencias/geral/ebook-cora-conta-digital-pj-gestão-de-cobrançaspdf|ebook-cora-conta-digital-pj-gestão-de-cobrançaspdf]]

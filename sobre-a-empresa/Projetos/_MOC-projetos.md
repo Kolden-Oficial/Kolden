@@ -6,7 +6,7 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 
 # 🗺️ MOC — Projetos
 
-> Dossiês de cliente (455 notas).
+> Dossiês de cliente (456 notas).
 
 ## Ativos/brayans-finish (16)
 - [[sobre-a-empresa/Projetos/Ativos/brayans-finish/_notebooklm/_indice|_indice]]
@@ -192,7 +192,7 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 - [[sobre-a-empresa/Projetos/Ativos/nutrios-pro/prd|prd]]
 - [[sobre-a-empresa/Projetos/Ativos/nutrios-pro/status|status]]
 
-## Ativos/omiron (68)
+## Ativos/omiron (69)
 - [[sobre-a-empresa/Projetos/Ativos/omiron/AGENTS|AGENTS]]
 - [[sobre-a-empresa/Projetos/Ativos/omiron/CLAUDE|CLAUDE]]
 - [[sobre-a-empresa/Projetos/Ativos/omiron/README|README]]
@@ -259,6 +259,7 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 - [[sobre-a-empresa/Projetos/Ativos/omiron/docs/stories/1.6.story|1.6.story]]
 - [[sobre-a-empresa/Projetos/Ativos/omiron/docs/stories/1.7.story|1.7.story]]
 - [[sobre-a-empresa/Projetos/Ativos/omiron/docs/stories/1.8.story|1.8.story]]
+- [[sobre-a-empresa/Projetos/Ativos/omiron/docs/stories/_indice|_indice]]
 - [[sobre-a-empresa/Projetos/Ativos/omiron/dossie|dossie]]
 - [[sobre-a-empresa/Projetos/Ativos/omiron/leia-me|leia-me]]
 

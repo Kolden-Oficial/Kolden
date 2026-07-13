@@ -6,7 +6,7 @@ up: "[[_MOC]]"
 
 # 🧠 MOC — Cérebro da Kolden
 
-> Hub das áreas de conhecimento da empresa. Bússola geral: [[sobre-a-empresa/Kolden/leia-me|leia-me]].
+> Hub das áreas de conhecimento da empresa.
 
 - [[sobre-a-empresa/Kolden/marca/_MOC-marca|marca]]
 - [[sobre-a-empresa/Kolden/mercado/_MOC-mercado|mercado]]

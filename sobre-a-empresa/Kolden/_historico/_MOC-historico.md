@@ -6,9 +6,9 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 
 # 🗄️ MOC — Histórico (arquivo)
 
-> 822 notas arquivadas, agrupadas por subpasta. Material histórico — fora da rede densa.
+> 826 notas arquivadas, agrupadas por subpasta. Material histórico — fora da rede densa.
 
-## clickup (97)
+## clickup (98)
 - [[sobre-a-empresa/Kolden/_historico/clickup/INDEX|INDEX]]
 - [[sobre-a-empresa/Kolden/_historico/clickup/chats/_overview|_overview]]
 - [[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden-v0-gestao-empresarial-duplicada/_principal|_principal]]
@@ -22,6 +22,7 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 - [[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/01-planejamento/fundamentos/nichos/medicina-saude/dados-do-nicho/pci/pci-resumido|pci-resumido]]
 - [[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/01-planejamento/fundamentos/nichos/medicina-saude/dados-do-nicho/potencial|potencial]]
 - [[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/01-planejamento/fundamentos/nichos/medicina-saude/dados-do-nicho/publico-alvo|publico-alvo]]
+- [[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/01-planejamento/fundamentos/nichos/medicina-saude/estudo-do-nicho/_indice|_indice]]
 - [[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/01-planejamento/fundamentos/nichos/medicina-saude/estudo-do-nicho/apresentacao-do-produto|apresentacao-do-produto]]
 - [[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/01-planejamento/fundamentos/nichos/medicina-saude/estudo-do-nicho/checklist-diagnostico-mkt|checklist-diagnostico-mkt]]
 - [[sobre-a-empresa/Kolden/_historico/clickup/docs/arsenal-kolden/01-planejamento/fundamentos/nichos/medicina-saude/estudo-do-nicho/execucao-14-semanas|execucao-14-semanas]]
@@ -107,7 +108,7 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 - [[sobre-a-empresa/Kolden/_historico/clickup/tasks/space-produtos|space-produtos]]
 - [[sobre-a-empresa/Kolden/_historico/clickup/tasks/space-projetos|space-projetos]]
 
-## notas (725)
+## notas (728)
 - [[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/10-best-llms-of-april-2026-performance-pricing-use-cases-azumo|10-best-llms-of-april-2026-performance-pricing-use-cases-azumo]]
 - [[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/10-best-open-source-llm-models-2025-updated-llama-4-qwen-3-and-deepseek-r1|10-best-open-source-llm-models-2025-updated-llama-4-qwen-3-and-deepseek-r1]]
 - [[sobre-a-empresa/Kolden/_historico/notas/aiox-kolden/11-best-sandbox-runners-in-2026-better-stack-community|11-best-sandbox-runners-in-2026-better-stack-community]]
@@ -666,6 +667,7 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 - [[sobre-a-empresa/Kolden/_historico/notas/nutricalc/kolden-nutricalc-alinhamento-do-projeto-20260318-1601-gmt-0300-anotações-do|kolden-nutricalc-alinhamento-do-projeto-20260318-1601-gmt-0300-anotações-do]]
 - [[sobre-a-empresa/Kolden/_historico/notas/oye/_indice|_indice]]
 - [[sobre-a-empresa/Kolden/_historico/notas/oye/reunião-iniciada-às-20260326-2027-gmt-0300-anotações-do-gemini|reunião-iniciada-às-20260326-2027-gmt-0300-anotações-do-gemini]]
+- [[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/_indice|_indice]]
 - [[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/copy-proposta-comercialdocx|copy-proposta-comercialdocx]]
 - [[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/cópia-de-modelo-proposta-comercial-victorco|cópia-de-modelo-proposta-comercial-victorco]]
 - [[sobre-a-empresa/Kolden/_historico/notas/propostas-comerciais/modelo-proposta-comercial-kolden|modelo-proposta-comercial-kolden]]
@@ -774,6 +776,7 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 - [[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/uncover-high-value-med-spa-lead-generation-tactics-growth99|uncover-high-value-med-spa-lead-generation-tactics-growth99]]
 - [[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/what-is-med-spa-marketing-roi-return-on-investment-patientgain|what-is-med-spa-marketing-roi-return-on-investment-patientgain]]
 - [[sobre-a-empresa/Kolden/_historico/notas/prospeccao-na-gringa/which-wins-the-national-average-no-show-rate-or-yours-solutionreach|which-wins-the-national-average-no-show-rate-or-yours-solutionreach]]
+- [[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/_indice|_indice]]
 - [[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/apresentacao_googlepdf|apresentacao_googlepdf]]
 - [[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/apresentação-arnaldo-patrus-clientepdf|apresentação-arnaldo-patrus-clientepdf]]
 - [[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/apresentação-eliel-dourado-arquiteturapdf|apresentação-eliel-dourado-arquiteturapdf]]
@@ -785,6 +788,7 @@ up: "[[sobre-a-empresa/_MOC-cerebro]]"
 - [[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/dih-santana-planejamento-de-mídia-2023pdf|dih-santana-planejamento-de-mídia-2023pdf]]
 - [[sobre-a-empresa/Kolden/_historico/notas/prospects/apresentacoes/fq11-clínica-estética-sessão-estratégica_leads_2024-02-27_2024-07-14|fq11-clínica-estética-sessão-estratégica_leads_2024-02-27_2024-07-14]]
 - [[sobre-a-empresa/Kolden/_historico/notas/prospects/kaylon/plano-de-crescimento-kaylon|plano-de-crescimento-kaylon]]
+- [[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/_indice|_indice]]
 - [[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/alinhamento-estratégico-kaylon-20260206-1403-gmt-0300-anotações-do-gemini|alinhamento-estratégico-kaylon-20260206-1403-gmt-0300-anotações-do-gemini]]
 - [[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/alinhamento-operacional-kolden-superbeneficios-20260309-1516-gmt-0300-anotações|alinhamento-operacional-kolden-superbeneficios-20260309-1516-gmt-0300-anotações]]
 - [[sobre-a-empresa/Kolden/_historico/notas/reunioes-brutas/amq-obra-jqc-2026-03-17-1235-gmt-3-transcrição-do-chat|amq-obra-jqc-2026-03-17-1235-gmt-3-transcrição-do-chat]]

@@ -1,6 +1,7 @@
 ---
 tipo: indice
 up: [[_MOC-frota]]
+squad: Olimpo
 ---
 
 # 🗂️ Índice — agents

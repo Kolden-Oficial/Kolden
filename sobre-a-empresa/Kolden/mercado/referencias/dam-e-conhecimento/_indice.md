@@ -1,6 +1,7 @@
 ---
 tipo: indice
 up: [[sobre-a-empresa/Kolden/mercado/_MOC-mercado]]
+area: mercado
 ---
 
 # 🗂️ Índice — dam-e-conhecimento

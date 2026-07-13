@@ -1,6 +1,7 @@
 ---
 tipo: indice
 up: [[_MOC-frota]]
+squad: Caos
 ---
 
 # 🗂️ Índice — agents
