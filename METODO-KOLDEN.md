@@ -301,9 +301,9 @@ Ordem revisitável em qualquer momento. Recomendação técnica para Onda 2 em �
 - **Localiza o degrau da quebra** — quando falha, aponta camada + agent responsável.
 - **NÃO executa; NÃO produz** — só verifica. Independência absoluta do produtor.
 
-### Estado atual (2026-07-06)
+### Estado atual (2026-07-13) — INSTANCIADO na Onda 5
 
-- **Dike existe** como conceito canônico + `Caos/checklists/CAOS-CL-002.md` (checklist — promovido de draft na Sub-onda 1.6) + esqueleto de squad-solo em `C:\Kolden\Dike\` (CLAUDE.md + MEMORY.md + PRD + reflexos + settings.json) + entrada no AGENTS.md, mas **não tem arquivo de agent próprio** (`Dike/agents/*.md` está vazio).
+- **Dike é agent-funcional** desde a **Onda 5 do METODO (2026-07-13)**: agent-def `Dike/.claude/agents/dike-chief.md` + persona `Dike/agents/dike.md` + `Dike/constitution.md` (12 artigos veto) + `Dike/squad.yaml` (SOLO nativo) + README + `_origem.md` + `agent-memory/dike-chief.md`, sobre o esqueleto pré-existente (CLAUDE + PRD v2.0 + MEMORY + 8 reflexos + settings) e o checklist `Caos/checklists/CAOS-CL-002.md`. Veredito da Onda: `sobe-com-ressalvas` (6/8 VERDE; C4/C6 amarelo — testes nomeados OS-1/AB-3 pendentes no roteiro). Fecha o "padrão Dike temporário confirmado 10x".
 - **Nas sub-ondas 1.1-1.5**, o papel de Dike foi **executado temporariamente pelo caos-chief** (declarado explicitamente em `verificacao-dike.md` de cada sub-onda) com 3 salvaguardas:
   - (a) ordem serial smoke ANTES da verificação;
   - (b) evidência textual verbatim por checkbox;
@@ -430,6 +430,14 @@ Tabela em `procedencia.md` §"Procedência dos 8 Critérios de Safety+Quality":
 - **NOTA §3 — Camada 3-4 combinada como caso especial documentado:** Olimpo é o único squad Kolden que reúne Camada 3 (decompõe + roteia) e Camada 4 (traduz na disciplina) dentro do mesmo squad. Registrado em §3 como caso especial; promoção a categoria estrutural própria condicionada a 2ª ocorrência futura.
 
 **Score Onda 4:** 8/8 VERDE, delta absoluto +7 pontos (1/8 baseline → 8/8), empatado com Hermes Onda 2 (2º maior delta após Salgueiro +8). Padrão E1 INVÓLUCRO sobre MUTAÇÃO na **5ª aplicação empírica** (Hermes + Prometeu 3× + Olimpo). Regra E6 co-existência de vetos na 2ª aplicação (Prometeu 3.1 + Olimpo). Grupo A meta-squads COMPLETO; Grupo B Governance INICIADO. Próxima Onda: Dike (nascimento como agent-funcional — fecha o padrão Dike temporário confirmado 10x). Sem commit até ordem explícita.
+
+### Onda 5 — 2026-07-13 (Dike instanciado como agent-funcional)
+
+**Grupo B Governance — Dike nasce como agente.** Lavrados 7 artefatos em `Dike/` (agent-def `dike-chief` + persona + `constitution.md` 12 artigos + `squad.yaml` SOLO nativo + README + `_origem` + `agent-memory/dike-chief`), todos derivados 1:1 do PRD v2.0. **Natureza: agente SOLO nativo** (1ª ocorrência de padronização de agente não-vendorizado por nascimento — distinto do envelopamento vendor de Hermes/Prometeu/Olimpo). **Score:** 6/8 VERDE + 2 AMARELO (C4/C6 — testes nomeados OS-1/AB-3 pendentes no `Dike/roteiro-de-teste.md`; comportamento coberto por reflexos + constituição + modos de falha). **Veredito: `sobe-com-ressalvas`.** Fecha o §9 (papel Dike não mais temporário). **Divergência declarada:** G7 dispensado por ordem explícita do Ronan (Onda rodou em sessão-raiz). Próxima Onda: **Themis (Onda 6, Grupo B)**. Detalhes em `Dike/registros/metodo-onda-5/`. Sem commit até ordem explícita.
+
+### Onda 6 — 2026-07-13 (Themis padronizado — conselho consultivo)
+
+**Grupo B Governance — Themis (vendorizado advisory-board) padronizado por envelopamento.** 9 artefatos Kolden CRIADOS + 1 APPEND no `squad.yaml`, sobre o vendor xquads-squads **preservado byte-idêntico** — padrão **INVÓLUCRO sobre MUTAÇÃO na 6ª aplicação** (Hermes + Prometeu 3× + Olimpo + Themis). **ASL 2** (aconselha, o fundador decide — 1ª ocorrência ASL-2 num squad de governança; distinto do Olimpo ASL-3). **Score: 8/8 VERDE, veredito `sobe`** — o roteiro nasceu com **OS-1 + AB-3 nomeados**, fechando a ressalva C4/C6 que ficou amarela no Dike (aprendizado da Onda 5 aplicado imediatamente; candidato a promoção: "roteiro-de-teste nasce com OS-1+AB-3"). **Grupo B Governance COMPLETO** (Olimpo + Dike + Themis). **Divergência declarada:** G7 dispensado 2ª vez por ordem do Ronan — Ondas 5 e 6 na mesma sessão. Próxima Onda: **Grupo C (Onda 7 = Aletheia)**. Detalhes em `Themis/registros/metodo-onda-6/`. Sem commit até ordem explícita.
 
 <!-- ratificado pela Onda 4 do Método (m-20260706, 2026-07-09) -->
 
