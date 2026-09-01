@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Prospecção Bahia</title>
+<style>
+  @page { size: A4; margin: 22mm 20mm 22mm 20mm; }
+  :root {
+    --marinho:#1A3D7E; --marinho-esc:#122C5C;
+    --ocre:#C1741D; --borgonha:#7B1B1A;
+    --tinta:#17181C; --chumbo:#5A5E63;
+    --papel:#FBFAF6; --offwhite:#F5F3EC;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Century Gothic','Futura','Trebuchet MS',system-ui,-apple-system,sans-serif;
+    color: var(--tinta);
+    background: var(--papel);
+    line-height: 1.55;
+    font-size: 11pt;
+    max-width: 170mm;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Century Gothic','Futura',system-ui,sans-serif;
+    color: var(--marinho);
+    line-height: 1.25;
+    page-break-after: avoid;
+  }
+  h1 {
+    font-size: 26pt;
+    letter-spacing: -0.5px;
+    border-bottom: 3px solid var(--ocre);
+    padding-bottom: 8pt;
+    margin: 0 0 20pt 0;
+  }
+  h2 {
+    font-size: 18pt;
+    color: var(--marinho-esc);
+    margin: 24pt 0 10pt 0;
+    border-bottom: 1px solid #d8d3c4;
+    padding-bottom: 4pt;
+  }
+  h3 { font-size: 14pt; color: var(--borgonha); margin: 18pt 0 6pt; }
+  h4 { font-size: 12pt; color: var(--chumbo); margin: 14pt 0 4pt; text-transform: uppercase; letter-spacing: 0.4px; }
+  p { margin: 0 0 10pt 0; }
+  strong { color: var(--marinho-esc); }
+  em { color: var(--borgonha); }
+  a { color: var(--marinho); text-decoration: underline; }
+  ul, ol { margin: 6pt 0 14pt 22pt; padding: 0; }
+  li { margin: 3pt 0; }
+  li > ul, li > ol { margin: 3pt 0 3pt 18pt; }
+  blockquote {
+    margin: 12pt 0;
+    padding: 8pt 14pt;
+    border-left: 3px solid var(--ocre);
+    background: var(--offwhite);
+    color: var(--chumbo);
+    font-style: italic;
+    page-break-inside: avoid;
+  }
+  code {
+    font-family: 'Consolas','Menlo',monospace;
+    font-size: 10pt;
+    background: #eeeae0;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: var(--marinho-esc);
+  }
+  pre {
+    background: #f0ecdd;
+    padding: 10pt 12pt;
+    border-radius: 4px;
+    border-left: 3px solid var(--marinho);
+    overflow-x: auto;
+    page-break-inside: avoid;
+  }
+  pre code { background: transparent; padding: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12pt 0;
+    font-size: 10pt;
+    page-break-inside: avoid;
+  }
+  th, td {
+    border: 1px solid #d8d3c4;
+    padding: 6pt 8pt;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: var(--marinho);
+    color: var(--papel);
+    font-weight: bold;
+  }
+  tr:nth-child(even) td { background: var(--offwhite); }
+  hr { border: none; border-top: 1px solid #d8d3c4; margin: 20pt 0; }
+  img { max-width: 100%; height: auto; }
+  .header-brand {
+    color: var(--ocre);
+    font-size: 9pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 20pt;
+    border-bottom: 1px solid #e0dcc9;
+    padding-bottom: 6pt;
+  }
+</style>
+</head>
+<body>
+<div class="header-brand">BRW Movelaria · Kolden</div>
+<h1>BRW Movelaria — Prospecção Bahia: Sumário Executivo Cruzado</h1>
+<hr>
+<h2>Como ler este pacote</h2>
+<p>Este arquivo é o <strong>ponto de entrada</strong>. O detalhe vive em 3 documentos irmãos na mesma pasta:</p>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th>Conteúdo</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="dossie-concorrentes.md"><code>dossie-concorrentes.md</code></a></td>
+<td>17 players (3 anéis), matriz, mapa de posicionamento, espaço em branco da BRW</td>
+</tr>
+<tr>
+<td><a href="prospeccao-hotelaria-bahia.md"><code>prospeccao-hotelaria-bahia.md</code></a></td>
+<td>15+ alvos hoteleiros por polo turístico, com sinal de compra e gancho</td>
+</tr>
+<tr>
+<td><a href="prospeccao-studios-bahia.md"><code>prospeccao-studios-bahia.md</code></a></td>
+<td>15+ alvos de incorporadoras/empreendimentos de studios + gestoras short-stay</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>Contexto de mercado — a maré está a favor</h2>
+<ul>
+<li><strong>Studios/compactos = 48% das vendas de Salvador</strong> em jan/2026; lançamentos de studio saltaram de 18% (2024) para 34–50%; VGV da capital ~R$5,3 bi/12m (fonte: ADEMI-BA). <strong>A tese &quot;mobiliário como ativo&quot; tem lastro estrutural</strong> — o risco que resta é de <em>canal</em> (chegar ao decisor), não de mercado.</li>
+<li><strong>Boom hoteleiro:</strong> ~178 hotéis / R$13,6 bi em investimento no Brasil até 2030, 66% no interior/litoral; a Bahia lidera a <strong>multipropriedade do Nordeste</strong> (~20 empreendimentos, VGV ~R$30,3 bi).</li>
+<li><strong>Retrofit hoteleiro</strong> (troca total de FF&amp;E) é o vetor de maior aderência ao case-book da BRW (Iberostar 8 anos, Accor, Fera): Pestana→Salvador 220, Othon→Infinity, ciclo Aviva/Costa do Sauípe.</li>
+</ul>
+<p><em>(Números completos e URLs nos arquivos detalhados, com selo de confiança.)</em></p>
+<hr>
+<h2>Top 10 oportunidades cruzadas (hotelaria + studios)</h2>
+<p>Rankeadas por <strong>sinal de compra × volume × fit com os PODs da BRW × acessibilidade</strong>. Trilha (H = hotelaria · S = studios/investidor).</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Alvo</th>
+<th align="center">Trilha</th>
+<th>Sinal de compra</th>
+<th>Volume estimado</th>
+<th>Por que é fit BRW</th>
+<th>Fonte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>Village Itaparica</strong> (Baía de Todos os Santos)</td>
+<td align="center">H/S</td>
+<td>Multipropriedade em entrega fim/2026–1º sem/2027</td>
+<td>~400 unidades</td>
+<td>Fit-ouro: modelo Alphaville/Singulari (padronização replicável em lote)</td>
+<td>hotelaria §Top</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Moura Dubeux — portfólio BA</strong> (Beach Class, Salvador 220, Infinity)</td>
+<td align="center">S/H</td>
+<td>Retrofit Pestana (438 un.) + studios em obra</td>
+<td>centenas de un., 24–36 meses</td>
+<td>Retrofit hoteleiro + studios: dobra de case-book e volume na capital</td>
+<td>studios §Top</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Aviva — Terra Resort / Costa do Sauípe</strong></td>
+<td align="center">H</td>
+<td>Retrofit de 404 apts em 2027-2028, +R$100 mi (ciclo R$1,4 bi)</td>
+<td>404 apts</td>
+<td>O modelo Iberostar na MESMA vizinhança — prova social direta</td>
+<td>hotelaria §Top</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>VCA — Kahakai Beach House</strong> (Ilhéus + Porto Seguro)</td>
+<td align="center">S</td>
+<td>Studios/quarto-e-sala formato resort em obra</td>
+<td>550+ unidades</td>
+<td>Maior volume litorâneo; padronização de investidor</td>
+<td>studios §Top</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>MGA-E — ONE Rio Vermelho</strong> (Salvador)</td>
+<td align="center">S</td>
+<td>126 studios idênticos (21–31m²) em construção</td>
+<td>126 unidades</td>
+<td>Caso perfeito de curadoria replicável (SKU único × 126)</td>
+<td>studios §Top</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Marangatú Luxury Hotel</strong> (Serra Grande)</td>
+<td align="center">H</td>
+<td>Em construção, FF&amp;E completo do zero, 2027</td>
+<td>76 unidades, R$120 mi</td>
+<td>Curadoria end-to-end (POD 2) num hotel de luxo do zero</td>
+<td>hotelaria §Top</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>ABL Prime / WAM — Ondas Praia Resort</strong> (Porto Seguro)</td>
+<td align="center">S/H</td>
+<td>Multipropriedade em obra; operador decide mobília em lote</td>
+<td>484 apts</td>
+<td>Comprador B2B único de mobília em lote</td>
+<td>studios §Top</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Gestoras de short-stay</strong> (Seazone, BemVindo, 535 Homes, Beehost)</td>
+<td align="center">S</td>
+<td>Carteiras ativas + indicação aos investidores</td>
+<td>~500 un. sob gestão</td>
+<td>Canal de maior alavancagem — entrada rápida, recorrente</td>
+<td>studios §Top</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Nanö Beach Hotel</strong> (Subaúma, Linha Verde)</td>
+<td align="center">H</td>
+<td>Inauguração nov/2026, mobília iminente</td>
+<td>30 bangalôs de luxo</td>
+<td>Quick win: investidor independente = decisor acessível</td>
+<td>hotelaria §Top</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Alma Aramis</strong> (Península de Maraú)</td>
+<td align="center">H</td>
+<td>Branded residence, operação 1º sem/2026</td>
+<td>22 casas alto padrão</td>
+<td>Consistência multi-unidade = job da Persona A</td>
+<td>hotelaria §Top</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>Todos os itens acima estão marcados <code>[verificado]</code> nos arquivos detalhados. Volumes de alvos menores e alguns VGV ficaram <code>[indício]</code> — ver seção de confiança de cada arquivo.</p>
+</blockquote>
+<hr>
+<h2>Como priorizar a abordagem (leitura do runtime Kolden)</h2>
+<p>Duas velocidades, para não afogar a operação (lembrar da crise de montagem de 2025, pré-morte P8):</p>
+<ul>
+<li><strong>Quick wins (decisor acessível, volume médio, ciclo curto):</strong> Nanö Beach (#9), Alma Aramis (#10), gestoras short-stay (#8). Servem para provar entrega e gerar case novo antes de atacar as grandes contas.</li>
+<li><strong>Grandes contas (volume alto, ciclo longo, decisão institucional):</strong> Village Itaparica (#1), Moura Dubeux (#2), Aviva (#3), VCA (#4). Exigem chegar ao <strong>decisor/arquiteto de especificação de FF&amp;E</strong> — que hoje é a lacuna nº 1 (ver abaixo).</li>
+<li><strong>Padronização-vitrine:</strong> ONE Rio Vermelho (#5) é o pitch demonstrativo perfeito (126 unidades idênticas) para materializar &quot;curadoria que rende&quot; em número.</li>
+</ul>
+<hr>
+<h2>Alerta competitivo (do dossiê de concorrentes)</h2>
+<ul>
+<li><strong>A 3M Projetos e Reformas (Salvador) já disputa o nicho Airbnb/ROI</strong> com pitch chave-na-mão e prazo de 45 dias. <strong>Isso contradiz parcialmente a premissa do posicionamento</strong> de que &quot;ninguém local articula o pitch investidor&quot;. O oceano é azul-esverdeado, não azul — a BRW precisa correr. (Sinalizado no <code>posicionamento.md</code> como aposta a verificar.)</li>
+<li><strong>Anel nacional</strong> (ESSANTO, Artdville, Dellavita) tem custo de fábrica e público hoteleiro conquistado — pode entrar/crescer na BA.</li>
+<li><strong>Risco de fornecedor cativo:</strong> as grandes contas (Moura Dubeux, Aviva) podem já ter fornecedor nacional. Verificar antes de investir esforço comercial.</li>
+</ul>
+<hr>
+<h2>Confiança &amp; lacunas (não pular)</h2>
+<ul>
+<li><strong>Este é mapa de prospecção FRIA</strong> — sinaliza <em>onde bater</em>, não valida que vão comprar. <strong>Não fecha H1</strong> (demanda real replicável), que segue aberta na pré-morte da marca.</li>
+<li><strong>Lacuna nº 1:</strong> o <strong>decisor/arquiteto de FF&amp;E por conta grande</strong> não é público — exige LinkedIn/contato (fora do escopo desta coleta fria). É o próximo passo natural.</li>
+<li>Presença paga por marca (Meta/Google Ad Library) ficou <code>[não-confirmada]</code> — busca por keyword é ruidosa; exige coletar <code>page_id</code> de cada player.</li>
+<li>Morro de São Paulo/Boipeba e Imbassaí tiveram baixa sinalização de projetos novos — revisitar numa 2ª onda.</li>
+</ul>
+<hr>
+<h2>Próximos passos possíveis (não executados — sua decisão)</h2>
+<ol>
+<li><strong>Enriquecer os top-10 com decisor/arquiteto</strong> (LinkedIn/contato) para virar lista de abordagem real.</li>
+<li><strong>Ad Library por <code>page_id</code></strong> dos 3 concorrentes mais perigosos (3M, Home Design, ESSANTO) para ler a comunicação paga deles.</li>
+<li><strong>Handoff a time de copy Kolden/time de vendas Kolden:</strong> transformar os ganchos de pitch em sequência de outreach B2B por trilha.</li>
+<li><strong>Validar H1</strong> com 3-5 conversas reais (time de discovery Kolden) antes de escalar a operação comercial.</li>
+</ol>
+<p><em>Compilado por runtime Kolden a partir das duas trilhas time de pesquisa Kolden + dossiê de concorrentes. v1 — não usar para abordagem sem o gate humano do Ronan.</em></p>
+
+</body>
+</html>

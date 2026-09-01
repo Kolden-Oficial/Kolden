@@ -1,0 +1,408 @@
+<html><body><h1>BRW Movelaria — Plano de Teste &amp; Métricas Instagram (agosto/2026)</h1>
+<hr>
+<h2>0. Baseline agregada (últimos ~6 meses)</h2>
+<p>Extraído de <code>coleta bruta/instagram-top-20-posts-2026-07-06.md</code> (20 posts, janela 2026-01-15 → 2026-07-01):</p>
+<table>
+<thead>
+<tr>
+<th>Indicador</th>
+<th align="right">Valor observado</th>
+<th>Observação</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Base de seguidores</td>
+<td align="right">541</td>
+<td>pequena — variância estatística alta por post</td>
+</tr>
+<tr>
+<td>Média de likes</td>
+<td align="right">7,5</td>
+<td>dataset dos 20 posts do período</td>
+</tr>
+<tr>
+<td>Máximo de likes</td>
+<td align="right">18</td>
+<td><code>DWHg-I4iX04</code> (studio integrado)</td>
+</tr>
+<tr>
+<td>Segundo maior</td>
+<td align="right">17</td>
+<td><code>DUJmQ5MD9oW</code> (visita técnica Singulari, Reel)</td>
+</tr>
+<tr>
+<td>Total de comentários (20 posts)</td>
+<td align="right">~12</td>
+<td>15/20 posts com 0 comentários</td>
+</tr>
+<tr>
+<td>Engajamento médio estimado</td>
+<td align="right">~1,4%</td>
+<td>(likes+comments)/seguidores, aproximação scraping</td>
+</tr>
+<tr>
+<td>Mix de formato observado</td>
+<td align="right">12 carrosséis · 4 Reels · 4 feed image</td>
+<td>Reels são raros mas puxam engajamento (2º maior é Reel)</td>
+</tr>
+<tr>
+<td>Vertical B2B mais forte</td>
+<td align="right">Singulari (6 posts) + Iberostar (1)</td>
+<td>prova social já circulante</td>
+</tr>
+<tr>
+<td>Vertical nichado com discurso próprio</td>
+<td align="right">Airbnb / short-stay</td>
+<td>3 posts explícitos com discurso de ROI</td>
+</tr>
+</tbody></table>
+<p><strong>O que o dataset NÃO cobre</strong> (scraping não retorna estes campos publicamente):</p>
+<ul>
+<li>Alcance de não-seguidores (accounts reached fora da base)</li>
+<li>Salvos (saves)</li>
+<li>Compartilhamentos (shares)</li>
+<li>Cliques em perfil</li>
+<li>DMs originadas de post específico</li>
+<li>Retenção de Reel (% que viu até o fim)</li>
+</ul>
+<p>Para essas métricas o baseline sai <strong>do próprio Meta Business Suite / Instagram Insights</strong> — precisa ser puxado manualmente no dia 01/08 (D-3 do primeiro post). Marcado como <code>[BASELINE PENDENTE]</code> em cada seção abaixo. <strong>Isso é pré-requisito para medir a semana 1</strong>.</p>
+<hr>
+<h2>1. Métrica-norte por semana</h2>
+<h3>S1 (04–10/ago) — Autoridade B2B · métrica-norte: <strong>SALVOS</strong></h3>
+<p><strong>Por que salvos:</strong> o conteúdo da semana é técnico/analítico (por que R$300k é preço de canal; curadoria vs. compra direta; cadeira que aguenta hotel). Investidor sênior/hoteleiro (persona A) não curte — arquiva. Salvo é o único sinal orgânico que separa &quot;consumo passivo&quot; de &quot;vou voltar aqui quando decidir mobiliar&quot;. É o proxy mais barato de intenção B2B numa base sem tráfego pago.</p>
+<p><strong>Baseline:</strong> <code>[BASELINE PENDENTE]</code> — puxar em 01/08 no Meta Business Suite → <em>Insights</em> → <em>Conteúdo</em> → filtro últimos 90 dias → coluna &quot;Salvamentos&quot; → calcular média por post e por formato (carrossel vs. Reel vs. feed).</p>
+<p><strong>Meta agosto:</strong> <strong>duplicar a média por post-âncora</strong> (2 âncoras na S1: post #1 carrossel-analítico e post #3 Reel-Iberostar). Racional: são as duas peças com maior valor de arquivamento óbvio da semana (uma tem números, outra tem case). Para os 2 templates da S1, meta = manter baseline. Se baseline chegar em zero, meta absoluta = mínimo 3 salvos por âncora (rule of thumb: 0,5% da base).</p>
+<p><strong>Como medir:</strong></p>
+<ul>
+<li>Postiz: aba <em>Analytics</em> → post individual → coluna <em>Saves</em> (Postiz puxa via Graph API).</li>
+<li>Meta Business Suite (fallback + validação cruzada): <em>Insights</em> → <em>Conteúdo</em> → post individual → <em>Interações</em> → <em>Salvamentos</em>.</li>
+<li>Sempre validar Postiz contra Meta na primeira semana (Postiz atrasa 12–24h vs. Meta nativo).</li>
+</ul>
+<hr>
+<h3>S2 (11–17/ago) — Alcance / quebrar bolha · métrica-norte: <strong>ALCANCE DE NÃO-SEGUIDORES</strong></h3>
+<p><strong>Por que alcance de não-seguidores:</strong> a semana é desenhada para escapar da bolha de 541 seguidores (P3×contrário &quot;móvel bonito é o pior investimento&quot;, P4×contrário &quot;a coragem de deixar o vazio&quot;, Reel-resposta ao 3M com &quot;prazo curto&quot;). O objetivo estrutural é ganhar impressão fora da base. Ganho de seguidor é consequência distante; o sinal direto é <em>quantas contas fora da base viram o conteúdo</em>.</p>
+<p><strong>Baseline:</strong> <code>[BASELINE PENDENTE]</code> — puxar em 01/08. Meta Business Suite → <em>Insights</em> → <em>Conteúdo</em> → post individual → <em>Alcance</em> → filtro &quot;Não-seguidores&quot; (%). Se o campo não aparecer no post-a-post, usar <em>Overview</em> → <em>Alcance</em> → <em>Tipo de público</em> nos últimos 90 dias como proxy de baseline agregado. Registrar tanto valor absoluto quanto %.</p>
+<p><strong>Meta agosto:</strong> para os 2 posts de gancho contrário da S2 (posts #5 e #7 — os mais propensos a viralizar por atrito narrativo), meta = <strong>% de não-seguidores no alcance ≥ 40%</strong> (num post normal de conta pequena orgânica sem push, o número tende a ser 15-25%; 40% indica que o conteúdo saiu da bolha). Para os 2 posts template, meta = manter baseline. Não perseguir número absoluto (alcance total depende de sorte algorítmica), perseguir <strong>proporção</strong>.</p>
+<p><strong>Como medir:</strong></p>
+<ul>
+<li>Meta Business Suite (fonte primária, mais granular): <em>Insights</em> → <em>Conteúdo</em> → post individual → <em>Alcance</em> → gráfico &quot;Seguidores vs. Não-seguidores&quot;.</li>
+<li>Postiz (fallback): aba <em>Analytics</em> → <em>Reach</em> — mas Postiz não separa seguidor vs. não-seguidor com fidelidade. Usar só para triangulação de tendência.</li>
+<li>Registrar em planilha semanal: <code>post_id | reach_total | reach_nao_seguidor_abs | reach_nao_seguidor_pct</code>.</li>
+</ul>
+<hr>
+<h3>S3 (18–24/ago) — Prova social / case-book · métrica-norte: <strong>MENSAGENS NO WHATSAPP</strong></h3>
+<p><strong>Por que DMs no WhatsApp:</strong> semana desenhada para converter — case-book (Hotel do Flamengo, jornada da planta à chave, canteiro real, curador vs. fornecedor). É a única semana com CTA de negócio direto. Como o site está fora do ar (3 URLs DNS-off), o CTA universal em todos os posts é <code>+55 71 99902-7171</code>. A métrica que fecha o loop é <strong>inbound no WhatsApp com atribuição a Instagram</strong>.</p>
+<p><strong>Baseline:</strong> <code>[BASELINE PENDENTE]</code> — mais difícil de estabelecer. Duas opções:</p>
+<ol>
+<li><strong>Preferida:</strong> perguntar à Robinsom/comercial quantos leads chegaram por WhatsApp nos últimos 30 dias e quantos declararam &quot;vim pelo Instagram&quot; (mesmo sem instrumentação técnica, humano recebendo pode registrar). Marcar linha de base retroativa.</li>
+<li><strong>Se opção 1 não for viável:</strong> criar um link <code>wa.me/5571999027171?text=Vim%20pelo%20Instagram</code> e usar SÓ nos 4 posts da S3 (link na bio + primeiro comentário). Todo inbound com essa mensagem pré-preenchida = atribuível.</li>
+</ol>
+<p><strong>Meta agosto:</strong> <strong>≥ 3 mensagens no WhatsApp originadas dos 4 posts da S3, com pelo menos 1 lead qualificado B2B</strong> (incorporadora, hotel, gestor de Airbnb multi-unidade). Racional: com 541 seguidores e sem paid, 3 DMs bem qualificadas é resultado real; se vier acima disso, ótimo — se vier menos, o gargalo não é conteúdo, é distribuição (voltamos ao gate paid).</p>
+<p><strong>Como medir:</strong></p>
+<ul>
+<li>Link atribuível <code>wa.me/…?text=…</code> (método técnico limpo).</li>
+<li>Registro humano: pedir para quem responde o WhatsApp anotar origem declarada.</li>
+<li>Consolidar em <code>s3-conversao.md</code> no final da semana: <code>data | contato | origem_declarada | origem_tecnica | qualificacao (B2B/residencial/lixo)</code>.</li>
+<li>Bonus (soft signal): comparar cliques no link da bio nos períodos S1–S2 (baseline) vs. S3 (via Meta Business Suite → <em>Insights</em> → <em>Interações</em> → <em>Cliques em link</em>).</li>
+</ul>
+<hr>
+<h3>S4 (25–31/ago) — Lifestyle / residencial premium · métrica-norte: <strong>ENGAJAMENTO (curtidas + salvos)</strong></h3>
+<p><strong>Por que engajamento agregado:</strong> semana C (residencial premium) tem baixa densidade de intenção comercial imediata — a conversa é estética/atemporal (Megan em 3 revestimentos, proporção certa, TRAMA, rattan que dura). Ninguém compra sofá porque viu um post; a métrica correta é <strong>afinidade da audiência com a linha autoral</strong>. Combinar likes + salvos vira o proxy dessa afinidade — likes medem ressonância imediata, salvos medem &quot;quero lembrar disso&quot;. Aqui vale a métrica composta.</p>
+<p><strong>Baseline:</strong> média de likes por post no período = <strong>7,5</strong> (dataset scraping, confirmado). Salvos = <code>[BASELINE PENDENTE]</code> (mesmo procedimento da S1). Baseline composto = 7,5 + <code>[SALVOS_BASELINE]</code> = valor a completar em 01/08.</p>
+<p><strong>Meta agosto:</strong> para os 2 posts-âncora da S4 (Megan carrossel + TRAMA Reel), meta = <strong>engajamento (likes+salvos) 50% acima do baseline composto</strong>. Racional: são as peças mais fotografáveis do mês e falam direto com a persona C, que curte e arquiva. Para os 2 templates, meta = <strong>manter baseline</strong>. Se o carrossel Megan bater 15+ likes, é sinal forte — é o formato âncora da linha autoral (empatando com o topo histórico de 18).</p>
+<p><strong>Como medir:</strong></p>
+<ul>
+<li>Postiz: aba <em>Analytics</em> → <em>Engagement</em> (likes + comments + saves + shares consolidado — sim, Postiz agrega tudo em &quot;engagement&quot;; para separar likes+salvos como definido aqui, extrair manualmente cada componente).</li>
+<li>Meta Business Suite: post individual → <em>Interações</em> → somar <em>Curtidas</em> + <em>Salvamentos</em>.</li>
+<li>Registrar em planilha: <code>post_id | likes | saves | soma | delta_vs_baseline_composto</code>.</li>
+</ul>
+<hr>
+<h2>2. Um teste A/B por semana</h2>
+<p>Base: 541 seguidores. Cada teste tem N pequeno — resultado é <strong>direcional, não estatisticamente conclusivo</strong>. Servem para reduzir incerteza qualitativa, não para &quot;provar&quot; nada.</p>
+<hr>
+<h3>S1 · A/B — Gancho de abertura do carrossel-âncora (post #1)</h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Detalhe</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Variável</strong></td>
+<td>Primeiro slide (capa) do carrossel <code>Por que R$300k por unidade não é preço de móvel — é preço de canal</code>.</td>
+</tr>
+<tr>
+<td><strong>Variante A</strong></td>
+<td>Título como manchete pura + fundo neutro: <strong>&quot;R$300k por unidade. R$176k por unidade. A diferença não estava no móvel.&quot;</strong></td>
+</tr>
+<tr>
+<td><strong>Variante B</strong></td>
+<td>Título com número em destaque tipográfico gigante + foto do ambiente Singulari por trás com overlay: <strong>&quot;R$300k → R$176k · por unidade · Alphaville, 24 casas&quot;</strong>.</td>
+</tr>
+<tr>
+<td><strong>Hipótese</strong></td>
+<td>Se a capa for número puro (A), então o alcance de não-seguidores será maior, porque provoca curiosidade sem contexto; se for número + ambiente (B), então salvos serão maiores, porque o investidor B2B reconhece o cenário e arquiva.</td>
+</tr>
+<tr>
+<td><strong>Critério de aprendizado</strong></td>
+<td>Comparar, 72h após publicação: (a) % não-seguidores no alcance de A vs. B; (b) salvos absolutos de A vs. B. Vencedor por métrica-norte (salvos).</td>
+</tr>
+<tr>
+<td><strong>Como isolar</strong></td>
+<td>Postar <strong>apenas uma variante</strong> no post #1 (seg 04/08). A outra variante fica engatilhada para o post #2 do dia 06/08, com o <strong>mesmo esqueleto de carrossel</strong> (versão reduzida do #1 adaptada ao contrário) — troca só a capa. Mesma janela horária (proposta: 20h). Mesmas hashtags-âncora. Se logística não permitir manter o esqueleto no post #2, o teste vira &quot;capa A vs. capa B em stories&quot; no mesmo dia (menos limpo, mas viável).</td>
+</tr>
+<tr>
+<td><strong>Registro</strong></td>
+<td><code>s1-ab-capa.md</code>: variante_publicada, saves_72h, reach_nao_seguidor_72h, decisão.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>S2 · A/B — Horário de publicação do Reel-âncora (post #7, sex 15/08)</h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Detalhe</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Variável</strong></td>
+<td>Horário de publicação do Reel <code>Prazo curto não é o melhor prazo</code>.</td>
+</tr>
+<tr>
+<td><strong>Variante A</strong></td>
+<td><strong>Sexta 15/08, 10h</strong> (janela da manhã — investidor B2B em rotina de trabalho, feed limpo).</td>
+</tr>
+<tr>
+<td><strong>Variante B</strong></td>
+<td><strong>Sexta 15/08, 20h</strong> (janela noturna — comportamento consumidor, feed cheio mas maior tempo de tela).</td>
+</tr>
+<tr>
+<td><strong>Hipótese</strong></td>
+<td>Se o público-alvo (persona B, investidor de Airbnb, decisor jovem) consome IG à noite (20h), então o alcance de não-seguidores será maior à noite pela densidade de sessões; mas o <strong>engajamento por impressão</strong> pode ser maior de manhã (feed menos competitivo).</td>
+</tr>
+<tr>
+<td><strong>Critério de aprendizado</strong></td>
+<td>Comparar, 72h após publicação, entre este Reel e o Reel-âncora da S1 (post #3 sex 08/08, Iberostar) — mesma faixa de formato/duração, publicado em horário diferente. Comparação Reel vs. Reel, não Reel vs. carrossel. Vencedor pela métrica-norte da S2 (alcance de não-seguidores).</td>
+</tr>
+<tr>
+<td><strong>Como isolar</strong></td>
+<td>Escolher horário do post #3 (S1, Iberostar) como o <strong>oposto</strong> do post #7 (S2, prazo curto): se post #3 sai 10h, post #7 sai 20h — e vice-versa. Documentar decisão de horário do post #3 antes de 08/08 (não improvisar). Não misturar variável de dia (ambos em sexta) nem de formato (ambos Reel-âncora).</td>
+</tr>
+<tr>
+<td><strong>Registro</strong></td>
+<td><code>s2-ab-horario.md</code>: horario_publicacao, alcance_total_72h, alcance_nao_seguidor_pct_72h, retencao_reel_pct, decisão.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>S3 · A/B — CTA final do carrossel-âncora (post #10)</h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Detalhe</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Variável</strong></td>
+<td>Último slide (CTA) do carrossel <code>Da planta à chave: 6 momentos onde um interlocutor único te economiza duas semanas</code>.</td>
+</tr>
+<tr>
+<td><strong>Variante A</strong></td>
+<td>CTA direto e transacional: <strong>&quot;Precisa mobiliar um projeto? WhatsApp <code>+55 71 99902-7171</code> — respondemos hoje.&quot;</strong></td>
+</tr>
+<tr>
+<td><strong>Variante B</strong></td>
+<td>CTA por convite consultivo: <strong>&quot;Está no meio de um projeto? Mandamos, em 24h, o mapa dos 6 momentos aplicado ao seu caso — sem obrigação. WhatsApp <code>+55 71 99902-7171</code>.&quot;</strong></td>
+</tr>
+<tr>
+<td><strong>Hipótese</strong></td>
+<td>Se o CTA for direto (A), então o volume de DMs será menor mas a qualificação será maior (só entra quem tem projeto quente); se for consultivo (B), então volume será maior mas qualificação menor (curioso pede &quot;o mapa&quot; sem intenção real).</td>
+</tr>
+<tr>
+<td><strong>Critério de aprendizado</strong></td>
+<td>Comparar, 72h após publicação: (a) DMs absolutas por post; (b) % qualificadas como B2B (incorporadora/hotel/gestor Airbnb multi-unidade). Vencedor pela <strong>métrica composta</strong> (DMs qualificadas), não por volume bruto.</td>
+</tr>
+<tr>
+<td><strong>Como isolar</strong></td>
+<td>Publicar A no post #10 (qua 20/08). Postar B no post #12 (dom 24/08, listicle &quot;5 perguntas que separam fornecedor de curador&quot;) com o mesmo CTA-B no último slide. Mesmo <code>wa.me/…?text=…</code> para atribuição limpa mas com sufixos distintos (<code>?text=Mapa</code> para B, <code>?text=Projeto</code> para A) — o texto pré-preenchido identifica variante.</td>
+</tr>
+<tr>
+<td><strong>Registro</strong></td>
+<td><code>s3-ab-cta.md</code>: variante, dms_72h, qualif_b2b, decisão.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>S4 · A/B — Ganchos de legenda do carrossel-âncora (post #13, Megan)</h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Detalhe</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Variável</strong></td>
+<td>Primeira linha da legenda (hook de scroll-stop). Estética idêntica no visual.</td>
+</tr>
+<tr>
+<td><strong>Variante A</strong></td>
+<td>Ganho autoral/orgulho de linha: <strong>&quot;A Megan atravessou três projetos sem repetir. Isso não é catálogo — é curadoria.&quot;</strong></td>
+</tr>
+<tr>
+<td><strong>Variante B</strong></td>
+<td>Convite ao leitor/pergunta: <strong>&quot;Uma cadeira em três casas, três anos, três revestimentos. Você reconheceria como a mesma peça?&quot;</strong></td>
+</tr>
+<tr>
+<td><strong>Hipótese</strong></td>
+<td>Se o hook for declarativo autoral (A), então salvos serão maiores (quem se identifica com &quot;curadoria&quot; arquiva); se for pergunta ao leitor (B), então comentários e compartilhamentos serão maiores (pergunta convida resposta).</td>
+</tr>
+<tr>
+<td><strong>Critério de aprendizado</strong></td>
+<td>Comparar, 72h após publicação: (a) salvos; (b) comentários; (c) compartilhamentos. Vencedor pela métrica-norte da S4 (engajamento composto likes+salvos), com nota qualitativa sobre comentários (proxy de resposta emocional).</td>
+</tr>
+<tr>
+<td><strong>Como isolar</strong></td>
+<td>Publicar A no post #13 (seg 25/08). Publicar B no post #15 (sex 29/08, Reel TRAMA — adaptar B para narração do primeiro segundo do Reel: &quot;Uma coleção em três projetos… você reconheceria como a mesma linha?&quot;). Formato diferente (carrossel vs. Reel) é uma variável parasita — documentar essa limitação. Alternativa mais limpa se logística permitir: usar A e B em dois carrosséis do mesmo dia via feed principal + stories.</td>
+</tr>
+<tr>
+<td><strong>Registro</strong></td>
+<td><code>s4-ab-hook.md</code>: variante, likes, saves, comments, shares, decisão.</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>3. Riscos analíticos</h2>
+<ol>
+<li><p><strong>Base minúscula (541 seguidores) → variância estatística é ruído.</strong> Um post que bate 15 likes vs. um que bate 8 pode ser diferença real de conteúdo ou pode ser 20 pessoas que abriram o app naquele minuto. Regra: <strong>nenhuma decisão de ferro por 1 post</strong>. Padrão vale quando repete 3× no mesmo formato (mês 1, mês 2, mês 3). Este plano de agosto é <em>ondulação</em>, não <em>veredito</em>.</p>
+</li>
+<li><p><strong>Sazonalidade de agosto.</strong> Semana 1 tem 5/8 (feriado de nada, mas férias escolares BA terminam por volta de 04/08) — feed mais cheio, competição por atenção maior. Semana 3 tem 24/8 (final de semana longo em algumas regiões dependendo de calendário municipal Salvador). Ajuste: no A/B de horário da S2, comparar sábado vs. domingo se algum feriado empurrar consumo.</p>
+</li>
+<li><p><strong>Site quebrado bloqueia rastreio de conversão orgânica.</strong> Sem UTM em landing próprio, o único CTA rastreável é WhatsApp com <code>wa.me/…?text=…</code>. Isso limita:</p>
+<ul>
+<li>Não dá para medir &quot;leitor→visita→lead&quot; (funil quebrado no meio).</li>
+<li>Não dá para retargetar (Pixel Meta sem site instalado é inútil, mas de qualquer forma o gate paid impede).</li>
+<li><strong>Impacto:</strong> todas as DMs de agosto contam como conversão porque não há alternativa. Se site voltar em setembro, redesenhar CTA por semana.</li>
+</ul>
+</li>
+<li><p><strong>Sem paid campaign (gate time de discovery Kolden H2/H3/H5 aberto, teto R$5k/mês).</strong> Consequências:</p>
+<ul>
+<li>Alcance orgânico depende exclusivamente do algoritmo — sem plano B para viralização deliberada.</li>
+<li>&quot;Alcance de não-seguidores&quot; (métrica-norte S2) é 90% sorte + 10% conteúdo. Se conteúdo bater 40%+ organicamente, é sinal forte de que o formato tem tração e justifica reabrir gate paid.</li>
+<li><strong>Isso torna S2 diagnóstica</strong>: se S2 não sair da bolha, orgânico não escala BRW — precisa de mídia. É o teste mais estratégico do mês, ainda que a métrica em si tenha ruído alto.</li>
+</ul>
+</li>
+<li><p><strong>Concorrência de atenção interna Kolden.</strong> Se o esforço de produção das 4 âncoras não for cumprido no prazo (fan-out <code>carousel-architect</code> × 4 + <code>short-video-architect</code> × 4 previsto na matriz), os A/Bs comparam esforços desiguais. Risco de produção, não de métrica — mas afeta a leitura.</p>
+</li>
+<li><p><strong>A/B da S3 (CTA) tem viés de composição.</strong> Variante B é mais longa e informa mais — pode &quot;ganhar&quot; por qualidade de copy, não por formato de CTA. Registrar como limitação; se possível, refazer a comparação em setembro com CTAs de mesmo comprimento.</p>
+</li>
+<li><p><strong>Métricas de Postiz atrasam contra Meta Business Suite.</strong> Não confiar em Postiz nas primeiras 48h. Verdade oficial nos primeiros 3 dias é sempre Meta nativo.</p>
+</li>
+</ol>
+<hr>
+<h2>4. Cadência de leitura</h2>
+<h3>Ritmo de checagem</h3>
+<table>
+<thead>
+<tr>
+<th>Momento</th>
+<th>Checagem</th>
+<th>Responsável</th>
+<th>Ferramenta</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>T+0</strong> (dia do post, 2h após publicação)</td>
+<td>Sanidade: post publicado, sem quebra técnica, primeiros comentários (spam? dúvida?)</td>
+<td>Publisher (Postiz + humano operando @brwmovelaria)</td>
+<td>Meta app + Postiz</td>
+</tr>
+<tr>
+<td><strong>T+24h</strong></td>
+<td>Snapshot inicial: reach, likes, primeiros salvos. Não decidir nada. Só registrar.</td>
+<td>growth-analyst (assíncrono)</td>
+<td>Meta Business Suite</td>
+</tr>
+<tr>
+<td><strong>T+72h</strong></td>
+<td>Leitura da métrica-norte + fechamento do A/B da semana. Este é o momento de decisão.</td>
+<td>growth-analyst</td>
+<td>Meta Business Suite (fonte primária) + Postiz (validação cruzada)</td>
+</tr>
+<tr>
+<td><strong>Fim de semana (dom 23h)</strong></td>
+<td>Consolidação semanal em <code>sem-N-fechamento.md</code>.</td>
+<td>growth-analyst</td>
+<td>planilha própria + Meta</td>
+</tr>
+<tr>
+<td><strong>Segunda-feira 09h</strong></td>
+<td>Handoff ao social-chief com veredito e ajustes para a próxima semana.</td>
+<td>growth-analyst → social-chief</td>
+<td>markdown no repo do projeto</td>
+</tr>
+</tbody></table>
+<p><strong>Regra dura:</strong> decisão de mudar plano da semana N+1 baseada em resultado da semana N precisa <strong>fechar até domingo 23h</strong>. Segunda de manhã já é tarde — o carrossel da segunda precisa ir para o Postiz na sexta anterior.</p>
+<h3>Handoff enxuto (fluxo semana a semana)</h3>
+<pre><code>publisher (Postiz + humano) → posta
+       ↓
+growth-analyst → lê T+72h, fecha A/B, escreve sem-N-fechamento.md
+       ↓
+social-chief → aprova ou desvia o plano da semana N+1
+       ↓
+carousel-architect / short-video-architect → produzem N+1
+</code></pre>
+<p>Sem cerimônia, sem call recorrente. Tudo em markdown no repo.</p>
+<h3>Formato do report semanal</h3>
+<p><strong>Um parágrafo + uma tabela.</strong> Nada mais.</p>
+<p><strong>Modelo (usar em <code>sem-N-fechamento.md</code>):</strong></p>
+<pre><code class="language-md"># BRW · Fechamento Semana N (datas)
+
+**Métrica-norte da semana:** [salvos / alcance não-seguidores / DMs / engajamento composto]
+**Baseline:** X · **Meta:** Y · **Real:** Z · **Veredito:** [bateu / não bateu / inconclusivo]
+
+**Parágrafo (3-5 linhas):** [O que funcionou, o que não funcionou, o que vamos fazer diferente na semana N+1. Sem hedging. Se inconclusivo, dizer inconclusivo.]
+
+| # | Data | Formato | Métrica-norte | Meta | Real | Hipótese A/B | Resultado A/B |
+|---|---|---|---|---:|---:|---|---|
+| 1 | seg | carrossel-âncora | salvos | 6 | 4 | capa número puro | ganhou em reach |
+| 2 | qua | feed | salvos | 3 | 5 | — | — |
+| 3 | sex | Reel-âncora | salvos | 6 | 9 | horário 10h | manhã ganhou |
+| 4 | dom | feed | salvos | 3 | 2 | — | — |
+</code></pre>
+<p>Total: ≤ 250 palavras + tabela. Se o report passar de uma tela, está errado.</p>
+<hr>
+<h2>5. Handoff setembro</h2>
+<h3>5 perguntas a responder até 31/ago</h3>
+<ol>
+<li><strong>Qual formato tem maior salvos-por-visualização?</strong> Carrossel vs. Reel vs. feed. Dado real após 16 posts.</li>
+<li><strong>Alcance de não-seguidores só sobe com gancho contrário, ou também com case-book (S3)?</strong> Se S3 também escapar da bolha, prova social é motor de alcance — não só de conversão.</li>
+<li><strong>DMs qualificadas vêm mais de post analítico (S1) ou de case social (S3)?</strong> Redesenha a intenção de cada semana em setembro.</li>
+<li><strong>Persona A, B ou C traciona mais?</strong> Contar likes + salvos por persona dominante dos 16 posts e ver onde o algoritmo entrega melhor.</li>
+<li><strong>A base de seguidores cresceu ou ficou parada?</strong> Se cresceu &lt;5% (541 → ~570) com 16 posts, orgânico puro é ineficaz para escala. Reabre gate paid.</li>
+</ol>
+<h3>1 hipótese estrutural a validar em setembro</h3>
+<blockquote>
+<p><strong>&quot;Reel curto (15-25s) com gancho contrário é o único formato que escapa da bolha de 541 seguidores organicamente. Todos os outros formatos servem para conversão (DM/salvos), não para alcance.&quot;</strong></p>
+</blockquote>
+<p>Validação: setembro roda <strong>5 Reels contrários vs. 5 outros formatos</strong> (mesmo mês, mesma cadência). Se Reel-contrário ganhar em alcance de não-seguidores em ≥ 4/5 comparações pareadas, hipótese confirmada — setembro/outubro viram um mês de 60% Reels-contrários para tentar romper 1000 seguidores.</p>
+<h3>Sinalização &quot;matar / repetir / escalar&quot; por formato</h3>
+<p>Regra objetiva aplicada no fechamento de 31/ago (para cada um dos 3 formatos: carrossel, Reel, feed):</p>
+<ul>
+<li><strong>Matar</strong> (não usar mais em setembro): se o formato ficou ≥ 30% abaixo da meta em <strong>≥ 3 dos 4 posts</strong> do mês.</li>
+<li><strong>Repetir</strong> (manter no mix): se ficou dentro de ±20% da meta na maioria (≥ 2/4).</li>
+<li><strong>Escalar</strong> (aumentar peso em setembro): se superou a meta em ≥ 30% em <strong>≥ 2 posts</strong> e escapou da bolha (alcance não-seguidor ≥ 40%) em pelo menos 1 post.</li>
+</ul>
+<p>Adicional específico: se <strong>Reel-âncora bater as duas metas</strong> (alcance não-seguidor + engajamento) em pelo menos 2 dos 4 Reels do mês, setembro dobra a cadência de Reel (de 4 para 8) mesmo mantendo 16 posts totais — reduz feed simples de 5 para 1.</p>
+<hr>
+<h2>Fecho</h2>
+<p>Este plano é para <strong>agosto</strong>, base 541 seguidores, orgânico puro. Trocar cada uma dessas condições muda o desenho:</p>
+<ul>
+<li>Se a base dobrar → repriorizar salvos como métrica-norte de S2 também (bolha maior justifica mais afinidade e menos alcance-primeiro).</li>
+<li>Se o gate paid abrir → S2 vira teste de custo por alcance qualificado, não teste de escape orgânico.</li>
+<li>Se o site voltar → CTA e rastreio se reorganizam em cima de UTMs próprios; WhatsApp deixa de ser único canal atribuível.</li>
+</ul>
+<p>Enquanto essas três condições persistirem, o plano acima é o teto do que dá para aprender com o que se tem.</p>
+<hr>
+<p><em>Gerado por time de social Kolden via agente <code>growth-analyst</code> · plano de teste + métrica de agosto/2026 · 2026-07-15.</em></p>
+</body></html>

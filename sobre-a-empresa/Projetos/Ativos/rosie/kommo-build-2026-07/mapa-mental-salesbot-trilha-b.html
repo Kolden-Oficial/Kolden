@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Mapa Mental — Salesbot Rosie · Trilha A+B (cowork)</title>
+<meta name="generator" content="Kolden — auditoria de fluxo Kommo">
+<style>
+  :root {
+    --scarlet: #FF3D22;
+    --ink: #110E0F;
+    --off: #E8E6F1;
+    --paper: #FAFAFA;
+    --border: #E0DFE8;
+    --muted: #706A6C;
+    --blue: #3B82F6;
+    --blue-l: #DBEAFE;
+    --purple: #8B5CF6;
+    --purple-l: #EDE9FE;
+    --yellow: #F59E0B;
+    --yellow-l: #FEF3C7;
+    --gray: #6B7280;
+    --gray-l: #E5E7EB;
+    --red: #DC2626;
+    --red-l: #FEE2E2;
+    --orange: #EA580C;
+    --orange-l: #FFEDD5;
+    --green: #16A34A;
+    --green-l: #DCFCE7;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { padding: 20px 32px; background: var(--ink); color: var(--off); }
+  header h1 { margin: 0 0 4px; font-size: 22px; }
+  header .meta { font-size: 13px; opacity: 0.7; }
+  header .meta a { color: var(--scarlet); text-decoration: none; }
+  section.strip { padding: 16px 32px; background: #fff; border-bottom: 1px solid var(--border); }
+  section.strip h2 { margin: 0 0 12px; font-size: 16px; }
+
+  /* Bugs */
+  #bugs details { background: var(--red-l); border-left: 4px solid var(--red); padding: 12px 16px; border-radius: 4px; }
+  #bugs summary { cursor: pointer; font-weight: 600; color: var(--red); font-size: 15px; }
+  .bug-group { margin-top: 12px; }
+  .bug-group h3 { margin: 8px 0 4px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .bug-item { display: flex; gap: 8px; padding: 6px 0; border-bottom: 1px dashed rgba(0,0,0,0.1); font-size: 13px; }
+  .bug-item .sev { font-weight: 700; min-width: 24px; }
+  .bug-item .ref { font-family: Menlo, monospace; background: rgba(0,0,0,0.06); padding: 1px 6px; border-radius: 3px; }
+  .bug-item .txt { flex: 1; }
+  .bug-critical .sev { color: var(--red); }
+  .bug-warn .sev { color: var(--orange); }
+  .bug-info .sev { color: var(--yellow); }
+
+  /* Legend */
+  #legend .legend-row { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; }
+  .lg { display: inline-flex; align-items: center; gap: 6px; }
+  .lg .sw { width: 16px; height: 16px; border: 1px solid var(--border); border-radius: 3px; }
+
+  /* Main */
+  main { display: flex; height: calc(100vh - 240px); min-height: 500px; }
+  #diagram-wrap { flex: 1; overflow: auto; padding: 16px; background: #fff; border-right: 1px solid var(--border); }
+  #diagram-wrap .mermaid { min-width: 900px; }
+  aside#detail { width: 420px; overflow-y: auto; padding: 16px 20px; background: var(--off); }
+  aside#detail h2 { margin: 0 0 8px; font-size: 15px; }
+  aside#detail .hint { color: var(--muted); font-size: 13px; }
+  aside#detail .field { margin: 12px 0; }
+  aside#detail .field .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 4px; }
+  aside#detail .field .val { font-size: 13px; }
+  aside#detail pre { background: #fff; padding: 8px 12px; border-radius: 4px; overflow-x: auto; font-size: 12px; line-height: 1.5; border: 1px solid var(--border); white-space: pre-wrap; word-break: break-word; }
+  aside#detail .msg-text { background: var(--blue-l); padding: 10px 12px; border-radius: 4px; white-space: pre-wrap; font-size: 13px; line-height: 1.5; border-left: 3px solid var(--blue); }
+  aside#detail .btn-list li { padding: 4px 0; }
+  aside#detail .btn-list .arrow { color: var(--muted); }
+  aside#detail .btn-list .goto { font-family: Menlo, monospace; background: var(--gray-l); padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+  aside#detail .goto-broken { background: var(--red-l); color: var(--red); }
+  aside#detail details { margin-top: 12px; }
+  aside#detail details summary { cursor: pointer; font-size: 12px; color: var(--muted); }
+
+  /* Mermaid custom classes */
+  .mermaid .node.orphan rect,
+  .mermaid .node.orphan polygon,
+  .mermaid .node.orphan circle { stroke: var(--red) !important; stroke-width: 2px !important; stroke-dasharray: 5,3 !important; }
+  .mermaid .edgePath.broken path { stroke: var(--red) !important; stroke-width: 2px !important; }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Mapa mental — Salesbot Rosie · Trilha A + Trilha B</h1>
+  <div class="meta">
+    Gerado em <span id="ts"></span> · Fonte: JSON exportado do cowork (Kommo rosie.kommo.com) ·
+    <a href="https://docs.google.com/document/d/1_lm8SHlEGpOyRb7Jhyxin4rWRGQNJNQmFpIE2Ye9BX8/edit" target="_blank">Google Doc de referência</a> ·
+    <a href="https://www.figma.com/board/GkVpv2kBD9S1JHdf0BPFHV" target="_blank">FigJam</a>
+  </div>
+</header>
+
+<section class="strip" id="bugs">
+  <details open>
+    <summary>🐛 <span id="bug-count">0</span> problemas detectados no fluxo</summary>
+    <div id="bugs-list"></div>
+  </details>
+</section>
+
+<section class="strip" id="legend">
+  <h2>Legenda</h2>
+  <div class="legend-row">
+    <span class="lg"><span class="sw" style="background:var(--blue-l);border-color:var(--blue)"></span> send_message (com botões)</span>
+    <span class="lg"><span class="sw" style="background:#F0F7FF;border-color:var(--blue)"></span> send_message (só texto)</span>
+    <span class="lg"><span class="sw" style="background:var(--purple-l);border-color:var(--purple)"></span> action</span>
+    <span class="lg"><span class="sw" style="background:var(--yellow-l);border-color:var(--yellow);transform:rotate(45deg)"></span> conditions</span>
+    <span class="lg"><span class="sw" style="background:var(--gray-l);border-color:var(--gray);border-radius:50%"></span> waits</span>
+    <span class="lg"><span class="sw" style="background:var(--green-l);border-color:var(--green)"></span> finish</span>
+    <span class="lg"><span class="sw" style="border:2px dashed var(--red)"></span> órfão (sem entrada)</span>
+    <span class="lg"><span style="color:var(--red);font-weight:700">━━</span> edge quebrada (goto para step inexistente)</span>
+  </div>
+</section>
+
+<main>
+  <div id="diagram-wrap"><pre class="mermaid" id="mermaid-src">flowchart TD
+    loading[Carregando...]</pre></div>
+  <aside id="detail">
+    <h2>Detalhes do bloco</h2>
+    <p class="hint">Clique em qualquer node do diagrama para ver o texto exato, botões, ações e JSON bruto.</p>
+    <div id="detail-content"></div>
+  </aside>
+</main>
+
+<script>
+/* ============================================================ */
+/* BLOCO 2 — SALESBOT_DATA (JSON exato como colado pelo Ronan)  */
+/* ============================================================ */
+const SALESBOT_DATA = {"0":{"block_uuid":"791341c6-38c0-47fd-885f-91ca52d8b1a2","question":[{"handler":"send_message","params":{"tag":"","text":"Oi, {{lead.name}}!","type":"external","recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":true,"send_to_all_chat_sources":true,"on_error":null}},{"handler":"goto","params":{"type":"question","step":1}}]},"1":{"block_uuid":"44850bb0-864c-4368-a8c6-a91c6611b113","question":[{"handler":"send_message","params":{"tag":"","text":"Me diz o que você precisa que eu te ajude rapidinho:","type":"external","buttons":[{"type":"inline","text":"1 - Quero comprar"},{"type":"inline","text":"2 - Ajuda com pedido"},{"type":"inline","text":"3 - Outro assunto"}],"recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":null}}],"answer":[{"handler":"buttons","params":[{"value":"1 - Quero comprar","params":[{"handler":"goto","params":{"type":"question","step":2}}],"synonyms":["1","1.","01","quero","quero comprar","comprar"]},{"value":"2 - Ajuda com pedido","params":[{"handler":"goto","params":{"type":"question","step":47}}],"synonyms":["2","2.","02","ja comprei","pedido","ajuda"]},{"value":"3 - Outro assunto","params":[{"handler":"goto","params":{"type":"question","step":49}}],"synonyms":["3","3.","03","outro","outro assunto"]}]}]},"2":{"block_uuid":"53ec18be-1a6e-4722-ab6b-b348356a042c","question":[{"handler":"action","params":{"name":"set_tag","params":{"type":1,"value":["venda"],"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"question","step":3}}]},"3":{"block_uuid":"e4f92c69-e019-45b5-aaf6-e2937c63c90d","question":[{"handler":"action","params":{"name":"change_status","params":{"value":108316687,"pipeline_id":14033351}}},{"handler":"goto","params":{"type":"question","step":4}}]},"4":{"block_uuid":"76a541b9-bb92-472e-bf26-853b604549fa","question":[{"handler":"conditions","params":{"logic":"and","result":[{"handler":"goto","params":{"type":"question","step":5}}],"conditions":[{"term1":"{{messenger}}","term2":"30392","operation":"=","value_type":"value"}]}},{"handler":"conditions","params":{"logic":"and","result":[{"handler":"goto","params":{"type":"question","step":35}}],"conditions":[{"term1":"{{messenger}}","term2":"19602","operation":"=","value_type":"value"}]}},{"handler":"conditions","params":{"logic":"and","result":[{"handler":"goto","params":{"type":"question","step":36}}],"conditions":[{"term1":"{{messenger}}","term2":"19604","operation":"=","value_type":"value"}]}},{"handler":"conditions","params":{"logic":"and","result":[{"handler":"goto","params":{"type":"question","step":37}}],"conditions":[{"term1":"{{messenger}}","term2":"19606","operation":"=","value_type":"value"}]}},{"handler":"conditions","params":{"logic":"and","result":[{"handler":"goto","params":{"type":"question","step":38}}],"conditions":[{"term1":"{{messenger}}","term2":"19608","operation":"=","value_type":"value"}]}},{"handler":"conditions","params":{"logic":"and","result":[{"handler":"goto","params":{"type":"question","step":6}}],"conditions":[{"term1":"{{messenger}}","term2":"19610","operation":"=","value_type":"value"}]}},{"handler":"conditions","params":{"logic":"and","result":[{"handler":"goto","params":{"type":"question","step":40}}],"conditions":[{"term1":"{{messenger}}","term2":"19612","operation":"=","value_type":"value"}]}},{"handler":"conditions","params":{"logic":"and","result":[{"handler":"goto","params":{"type":"question","step":41}}],"conditions":[{"term1":"{{messenger}}","term2":"19624","operation":"=","value_type":"value"}]}},{"handler":"conditions","params":{"logic":"and","result":[{"handler":"goto","params":{"type":"question","step":39}}],"conditions":[{"term1":"{{messenger}}","term2":"19628","operation":"=","value_type":"value"}]}},{"handler":"goto","params":{"type":"question","step":42}}]},"5":{"block_uuid":"beeb95ff-ef38-41d9-b51f-0ca37e6c4340","question":[{"handler":"action","params":{"name":"set_tag","params":{"type":1,"value":["canal-whatsapp"],"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"question","step":7}}]},"6":{"block_uuid":"832e1c33-43f8-4d56-beba-41c268515e30","question":[{"handler":"action","params":{"name":"set_tag","params":{"type":1,"value":["canal-instagram"],"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"question","step":7}}]},"7":{"block_uuid":"ab082a67-af72-40b5-b4fc-1049fe2657e1","question":[{"handler":"send_message","params":{"tag":"","text":"Perfeito! Antes, me passa seu e-mail? É por ele que eu te mando o carrinho e aviso das novidades ✨","type":"external","recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":null}},{"handler":"goto","params":{"type":"question","step":8}}]},"8":{"block_uuid":"ccee92d3-da9c-4efd-b2cc-3a57af459ac5","question":[{"handler":"waits","params":{"logic":"or","conditions":[{"event":{"source":"message","action":"received"},"action":{"type":"question","step":9}}]}}]},"9":{"block_uuid":"399a15cb-2c2c-4120-bbbb-3a5b7a7e8969","question":[{"handler":"action","params":{"name":"set_custom_fields","params":{"value":"{{message_text}}","value_type":"value","custom_field":"{{lead.cf.2053246}}"}}},{"handler":"goto","params":{"type":"question","step":10}}]},"10":{"block_uuid":"24828899-3663-44ba-93ac-669d5c8fdc6a","question":[{"handler":"send_message","params":{"tag":"","text":"Anotado! ✓\n\nE me conta: como você conheceu a Rosie?","type":"external","buttons":[{"type":"inline","text":"Instagram"},{"type":"inline","text":"TikTok"},{"type":"inline","text":"Indicação"},{"type":"inline","text":"Google"},{"type":"inline","text":"Outro"}],"recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":null}}],"answer":[{"handler":"buttons","params":[{"value":"Instagram","params":[{"handler":"goto","params":{"type":"question","step":43}}],"synonyms":[]},{"value":"TikTok","params":[{"handler":"goto","params":{"type":"question","step":12}}],"synonyms":[]},{"value":"Indicação","params":[{"handler":"goto","params":{"type":"question","step":17}}],"synonyms":[]},{"value":"Google","params":[{"handler":"goto","params":{"type":"question","step":14}}],"synonyms":[]},{"value":"Outro","params":[{"handler":"goto","params":{"type":"question","step":18}}],"synonyms":[]},{"type":"else","params":[{"handler":"goto","params":{"type":"question","step":18}}]}]}]},"12":{"block_uuid":"e2d5bdfc-0a87-461b-9bd8-b87a13f69432","question":[{"handler":"action","params":{"name":"set_custom_fields","params":{"type":"lead","value":"{{lead.cf.2053248.1593158}}","value_type":"value","custom_field":"{{lead.cf.2053248}}"}}},{"handler":"goto","params":{"type":"question","step":16}}]},"14":{"block_uuid":"b8e562cf-2eb7-4965-830e-f833c35ca494","question":[{"handler":"action","params":{"name":"set_custom_fields","params":{"type":"lead","value":"{{lead.cf.2053248.1593162}}","value_type":"value","custom_field":"{{lead.cf.2053248}}"}}},{"handler":"goto","params":{"type":"question","step":16}}]},"16":{"block_uuid":"2c27bcfb-9ced-4185-8de3-3e92fa2bcd30","question":[{"handler":"send_message","params":{"tag":"","text":"Show. Sobre o que e a sua duvida?","type":"external","buttons":[{"text":"1 - Tamanho","type":"inline"},{"text":"2 - Disponibilidade","type":"inline"},{"text":"3 - Pagamento","type":"inline"},{"text":"4 - Indicacao look","type":"inline"}],"recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":null}}],"answer":[{"handler":"buttons","params":[{"value":"1 - Tamanho","params":[{"handler":"goto","params":{"type":"question","step":44}}],"synonyms":["1","tamanho"]},{"value":"2 - Disponibilidade","params":[{"handler":"goto","params":{"type":"question","step":24}}],"synonyms":["2","disponibilidade"]},{"value":"3 - Pagamento","params":[{"handler":"goto","params":{"type":"question","step":31}}],"synonyms":["3","pagamento"]},{"value":"4 - Indicacao look","params":[{"handler":"goto","params":{"type":"question","step":32}}],"synonyms":["4","indicacao"]}]}]},"17":{"block_uuid":"dac934cc-39f0-4d57-97b5-c4e47bb0c5ee","question":[{"handler":"action","params":{"name":"set_custom_fields","params":{"type":"lead","value":"{{lead.cf.2053248.1593160}}","value_type":"value","custom_field":"{{lead.cf.2053248}}"}}},{"handler":"goto","params":{"type":"question","step":16}}]},"18":{"block_uuid":"0f0ab80e-bf9b-4d45-8e94-7cffeeee75ef","question":[{"handler":"action","params":{"name":"set_custom_fields","params":{"type":"lead","value":"{{lead.cf.2053248.1593164}}","value_type":"value","custom_field":"{{lead.cf.2053248}}"}}},{"handler":"goto","params":{"type":"question","step":16}}]},"19":{"block_uuid":"2ccdb72c-f05d-43f1-8e11-1806e56310c0","question":[{"handler":"send_message","params":{"tag":"","text":"A gente tem provador virtual no site 👉\nVocê escolhe a peça, coloca suas medidas e vê o caimento antes de comprar - sem chute.\n👉 https://rosieladoreyou.com/provador\nDá uma olhada e me diz se resolveu!","type":"external","buttons":[{"type":"inline","text":"Resolveu!"},{"type":"inline","text":"Ainda tô na dúvida"}],"recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":null}}],"answer":[{"handler":"buttons","params":[{"value":"Resolveu!","params":[{"handler":"goto","params":{"type":"question","step":20}}],"synonyms":["resolveu","resolvi"]}]}]},"20":{"block_uuid":"56e8c8a7-bd57-4901-8201-3cf7f3de6ff6","question":[{"handler":"send_message","params":{"tag":"","text":"Que ótimo ✨ Quer que eu já monte seu carrinho?","type":"external","buttons":[{"type":"inline","text":"Sim, monta pra mim"},{"type":"inline","text":"Ainda não"}],"recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":null}}],"answer":[{"handler":"buttons","params":[{"value":"Sim, monta pra mim","params":[{"handler":"goto","params":{"type":"question","step":21}}],"synonyms":["sim","monta"]}]}]},"21":{"block_uuid":"084bf915-9216-4e7b-bf3f-98566a3d6e46","question":[{"handler":"action","params":{"name":"change_status","params":{"value":108316691,"pipeline_id":14033351}}},{"handler":"goto","params":{"type":"question","step":22}}]},"22":{"block_uuid":"4ad6b1b3-04ee-4614-959e-de135ae3c547","question":[{"handler":"send_message","params":{"tag":"","text":"Montei seu carrinho 👉\nÉ só finalizar por aqui:\n👉 {link_carrinho}\nQualquer dúvida, me chama.","type":"external","recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":null}},{"handler":"goto","params":{"type":"question","step":23}}]},"23":{"block_uuid":"45e86a88-e651-48cd-a0af-e5720a30d6ef","question":[{"handler":"action","params":{"name":"add_note","params":{"text":"Preencher Valor aprox. carrinho (campo 2053260) quando o cliente confirmar a compra na Nuvemshop.","note_type":4,"element_type":1,"type":1,"contact_type":"main"}}}]},"24":{"block_uuid":"408d961f-77f5-4264-98d5-7824f04af6e6","question":[{"handler":"send_message","params":{"tag":"","text":"Me manda o link ou o print da peça que você quer 👉\nE me diz: qual tamanho e qual cor?","type":"external","recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":{"handler":"goto","params":{"step":44,"type":"question"}}}},{"handler":"goto","params":{"type":"question","step":44}}]},"26":{"block_uuid":"7a46f8a2-1089-498b-bb57-1b47d501d1d3","question":[{"handler":"action","params":{"name":"set_custom_fields","params":{"type":"lead","value":"{{message_text}}","custom_field":"{{lead.cf.2053250}}"}}},{"handler":"goto","params":{"type":"question","step":27}}]},"27":{"block_uuid":"bf57a479-af1c-4dd4-9500-c4edc337ef30","question":[{"handler":"waits","params":{"logic":"or","conditions":[{"event":{"source":"message","action":"received"},"action":{"type":"question","step":28}}]}}]},"28":{"block_uuid":"b526478b-d8f9-4945-bf42-2617fd04b708","question":[{"handler":"action","params":{"name":"set_custom_fields","params":{"type":"lead","value":"{{message_text}}","value_type":"value","custom_field":"{{lead.cf.2053252}}"}}},{"handler":"goto","params":{"type":"question","step":29}}]},"29":{"block_uuid":"bb621d6b-6216-48bf-9553-3c26a3c10089","question":[{"handler":"waits","params":{"logic":"or","conditions":[{"event":{"action":"received","source":"message"},"action":{"type":"question","step":30}}]}}]},"30":{"block_uuid":"c77a21f4-4be4-4660-8007-8f0cfb9421b2","question":[{"handler":"action","params":{"name":"set_custom_fields","params":{"type":"lead","value":"{{message_text}}","value_type":"value","custom_field":"{{lead.cf.2053254}}"}}}]},"31":{"block_uuid":"bf050f36-06e9-43ee-a80c-5d1644cabfe1","question":[{"handler":"send_message","params":{"tag":"","text":"Claro! Você quer saber sobre parcelamento, desconto ou tem um cupom pra usar? Me diz qual é a sua dúvida que já te passo pra uma consultora resolver 🧡","type":"external","recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":{"handler":"goto","params":{"step":44,"type":"question"}}}},{"handler":"goto","params":{"type":"question","step":44}}]},"32":{"block_uuid":"377bb8eb-f784-4c92-93a6-0b4ec73e8f6d","question":[{"handler":"send_message","params":{"tag":"","text":"Adoro essa missão 🧡 Me conta:\n• Qual a ocasião?\n• Que estilo você curte?\n• Qual sua faixa de preço?\n• Qual seu tamanho?","type":"external","recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":{"handler":"goto","params":{"step":44,"type":"question"}}}},{"handler":"goto","params":{"type":"question","step":44}}]},"35":{"block_uuid":"3ea7c682-dc10-467c-a3a5-2b7cd36a99ab","question":[{"handler":"action","params":{"name":"set_tag","params":{"type":1,"value":["canal-facebook"],"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"question","step":7}}]},"36":{"block_uuid":"d48bfd3a-c678-47f1-8a9a-e060d8d4a5cf","question":[{"handler":"action","params":{"name":"set_tag","params":{"type":1,"value":["canal-facebook-comentarios"],"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"question","step":7}}]},"37":{"block_uuid":"59106935-e696-4a9b-a4e2-06089509e5c0","question":[{"handler":"action","params":{"name":"set_tag","params":{"type":1,"value":["canal-facebook-messenger2"],"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"question","step":7}}]},"38":{"block_uuid":"5af45b9d-021f-4b01-af0d-28af87d13604","question":[{"handler":"action","params":{"name":"set_tag","params":{"type":1,"value":["canal-facebook-comentarios2"],"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"question","step":7}}]},"39":{"block_uuid":"99acb17b-e690-411d-950f-c0f0996e6f6c","question":[{"handler":"action","params":{"name":"set_tag","params":{"type":1,"value":["canal-onlinechat"],"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"question","step":7}}]},"40":{"block_uuid":"e6a36f1a-4112-48f7-b2f7-93a1ab34b218","question":[{"handler":"action","params":{"name":"set_tag","params":{"type":1,"value":["canal-instagram-comentarios"],"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"question","step":7}}]},"41":{"block_uuid":"1e5e3152-d38c-43aa-9a12-c9045d903b9b","question":[{"handler":"action","params":{"name":"set_tag","params":{"type":1,"value":["canal-tiktok"],"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"question","step":7}}]},"42":{"block_uuid":"32c03fa1-5f96-4d0c-8647-06c24b2149c2","question":[{"handler":"action","params":{"name":"set_tag","params":{"type":1,"value":["outros"],"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"question","step":7}}]},"43":{"block_uuid":"b14b373c-eea6-4f79-a5f8-c9e050fbfd00","question":[{"handler":"action","params":{"name":"set_custom_fields","params":{"type":"lead","value":"{{lead.cf.2053248.1593156}}","value_type":"value","custom_field":"{{lead.cf.2053248}}"}}},{"handler":"goto","params":{"type":"question","step":16}}]},"44":{"block_uuid":"a4518f11-2922-41e8-a4f7-ea47f6a3db5d","question":[{"handler":"action","params":{"name":"change_responsible_user","params":{"type":1,"value":15509887,"element_type":1,"contact_type":"current"}}},{"handler":"goto","params":{"type":"question","step":56}}]},"45":{"block_uuid":"0983a4b4-7ef6-4801-8320-19f43932b58f","question":[{"handler":"action","params":{"name":"change_responsible_user","params":{"type":1,"value":15509887,"element_type":1,"contact_type":"current"}}},{"handler":"goto","params":{"type":"finish","step":46}}]},"47":{"block_uuid":"1d7ef028-0448-4b5a-b9bb-e901dbf5fab5","question":[{"handler":"action","params":{"name":"set_tag","params":{"type":1,"value":["pos-venda"],"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"question","step":48}}]},"48":{"block_uuid":"c2760d33-b238-4724-9032-35253a64e31e","question":[{"handler":"action","params":{"name":"change_status","params":{"value":109409503,"pipeline_id":14171615}}},{"handler":"goto","params":{"type":"question","step":50}}]},"49":{"block_uuid":"c26693cf-41c0-4777-ae2a-b3fc13f4cc5b","question":[{"handler":"send_message","params":{"tag":"","text":"Me conta rapidinho o que você precisa 💛","type":"external","recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":null}},{"handler":"goto","params":{"type":"question","step":61}}]},"50":{"block_uuid":"d61eec3e-e7c7-4c24-a106-116331ce932b","question":[{"handler":"send_message","params":{"tag":"","text":"Você tem o número do pedido em mãos?","type":"external","buttons":[{"type":"inline","text":"Não achei o número"},{"type":"inline","text":"Aqui está o número"}],"recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":null}}],"answer":[{"handler":"buttons","params":[{"value":"Não achei o número","params":[{"handler":"goto","params":{"type":"question","step":57}}],"synonyms":[]},{"value":"Aqui está o número","params":[{"handler":"goto","params":{"type":"question","step":52}}],"synonyms":[]}]}]},"52":{"block_uuid":"b5aa0256-d997-4c40-8742-a60e41573939","question":[{"handler":"send_message","params":{"tag":"","text":"Perfeito! Pode me mandar o número do pedido.","type":"external","recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":null}},{"handler":"goto","params":{"type":"question","step":62}}]},"55":{"block_uuid":"b86f89fd-b545-40d3-859a-ede35fb1d0ea","question":[{"handler":"action","params":{"name":"set_custom_fields","params":{"type":"lead","value":"{{message_text}}","custom_field":"{{lead.cf.2053238}}"}}},{"handler":"goto","params":{"type":"question","step":56}}]},"56":{"block_uuid":"06737e7a-5499-41e7-8c98-e2133d13ca22","question":[{"handler":"send_message","params":{"tag":"","text":"Perfeito, já anotei! Me conta rapidinho o motivo do seu contato:","type":"external","buttons":[{"type":"inline","text":"Rastreio do pedido"},{"type":"inline","text":"Atraso na entrega"},{"type":"inline","text":"Item errado ou falta"},{"type":"inline","text":"Defeito no produto"},{"type":"inline","text":"Quero trocar o produ"},{"type":"inline","text":"Quero devolver"},{"type":"inline","text":"Quero cancelar"}],"recipient":{"type":"all_contacts","way_of_communication":"over_all"},"is_in_starting_block":false,"send_to_all_chat_sources":true,"on_error":{"handler":"goto","params":{"step":59,"type":"question"}}}}],"answer":[{"handler":"buttons","params":[{"value":"Rastreio do pedido","params":[{"handler":"goto","params":{"type":"question","step":59}}],"synonyms":[]},{"value":"Atraso na entrega","params":[{"handler":"goto","params":{"type":"question","step":59}}],"synonyms":[]},{"value":"Item errado ou falta","params":[{"handler":"goto","params":{"type":"question","step":59}}],"synonyms":[]},{"value":"Defeito no produto","params":[{"handler":"goto","params":{"type":"question","step":59}}],"synonyms":[]},{"value":"Quero trocar o produ","params":[{"handler":"goto","params":{"type":"question","step":59}}],"synonyms":[]},{"value":"Quero devolver","params":[{"handler":"goto","params":{"type":"question","step":59}}],"synonyms":[]},{"value":"Quero cancelar","params":[{"handler":"goto","params":{"type":"question","step":59}}],"synonyms":[]},{"type":"else","params":[{"handler":"goto","params":{"type":"question","step":59}}]}]}]},"57":{"question":[{"handler":"action","params":{"name":"change_responsible_user","params":{"type":1,"value":15509887,"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"finish","step":58}}]},"59":{"question":[{"handler":"action","params":{"name":"change_responsible_user","params":{"type":1,"value":15509887,"element_type":1,"contact_type":"main"}}},{"handler":"goto","params":{"type":"finish","step":60}}]},"61":{"question":[{"handler":"action","params":{"name":"change_status","params":{"value":109409503,"pipeline_id":14171615}}},{"handler":"goto","params":{"type":"question","step":45}}]},"62":{"question":[{"handler":"waits","params":{"logic":"or","conditions":[{"event":{"source":"message","action":"received"},"action":{"type":"question","step":55}}]}}]},"conversation":false};
+
+/* ============================================================ */
+/* BLOCO 3 — RENDERIZAÇÃO + INTERATIVIDADE                      */
+/* ============================================================ */
+
+// Mapeamento de messenger IDs → nome amigável (para labels de edges)
+const MESSENGER_NAMES = {
+  "30392": "WhatsApp", "19602": "FB", "19604": "FB coment",
+  "19606": "FB msn2", "19608": "FB com2", "19610": "Instagram",
+  "19612": "IG coment", "19624": "TikTok", "19628": "Onlinechat"
+};
+
+function esc(s) {
+  return String(s).replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+}
+function mermaidEsc(s) {
+  // Mermaid dentro de "..." — precisa escapar " e quebras de linha
+  return String(s).replace(/"/g, '&quot;').replace(/\n/g, ' ').replace(/[<>]/g, '');
+}
+
+function extractGotos(block) {
+  // Extrai todos os destinos que este bloco pode alcançar
+  // Retorna [{to, label, type: 'goto'|'button'|'condition'|'else'|'wait'|'onerror', broken: bool}]
+  const out = [];
+  const all = [...(block.question || []), ...(block.answer || [])];
+
+  function walk(items, ctx) {
+    if (!items) return;
+    const arr = Array.isArray(items) ? items : [items];
+    arr.forEach(item => {
+      if (!item || typeof item !== 'object') return;
+      if (item.handler === 'goto' && item.params) {
+        const to = item.params.step;
+        const type = item.params.type || 'question';
+        out.push({ to: String(to), label: ctx.label || '', kind: ctx.kind || 'goto', finish: type === 'finish' });
+      }
+      if (item.handler === 'buttons' && item.params) {
+        item.params.forEach(btn => {
+          const lbl = btn.type === 'else' ? '(else)' : (btn.value || '');
+          walk(btn.params, { label: lbl, kind: 'button' });
+        });
+      }
+      if (item.handler === 'conditions' && item.params) {
+        const c = item.params.conditions?.[0];
+        let lbl = '(cond)';
+        if (c) {
+          const t2 = c.term2;
+          const msg = MESSENGER_NAMES[t2];
+          lbl = msg ? msg : `${c.term1} ${c.operation} ${t2}`;
+        }
+        walk(item.params.result, { label: lbl, kind: 'condition' });
+      }
+      if (item.handler === 'waits' && item.params) {
+        item.params.conditions?.forEach(w => {
+          if (w.action?.step) {
+            out.push({ to: String(w.action.step), label: '(wait msg)', kind: 'wait', finish: w.action.type === 'finish' });
+          }
+        });
+      }
+      if (item.handler === 'send_message' && item.params?.on_error?.handler === 'goto') {
+        out.push({ to: String(item.params.on_error.params.step), label: '(on_error)', kind: 'onerror', finish: false });
+      }
+    });
+  }
+  walk(all, {});
+  return out;
+}
+
+function nodeMeta(id, block) {
+  // Determina forma + classe visual do node
+  const q = block.question?.[0];
+  const hasButtons = (block.question || []).some(h => h.handler === 'send_message' && h.params?.buttons);
+  const hasMsg = (block.question || []).some(h => h.handler === 'send_message');
+  const hasCond = (block.question || []).some(h => h.handler === 'conditions');
+  const hasWait = (block.question || []).some(h => h.handler === 'waits');
+  const hasAction = (block.question || []).some(h => h.handler === 'action');
+
+  let handlerLabel = 'goto';
+  if (hasButtons) handlerLabel = 'msg+btn';
+  else if (hasMsg) handlerLabel = 'msg';
+  else if (hasCond) handlerLabel = 'cond';
+  else if (hasWait) handlerLabel = 'wait';
+  else if (hasAction) {
+    const act = (block.question || []).find(h => h.handler === 'action');
+    handlerLabel = 'act:' + (act.params?.name || '?').replace('set_custom_fields', 'setCF').replace('change_responsible_user', 'chgResp').replace('change_status', 'chgStatus');
+  }
+
+  let shape = ['[', ']']; // rect default
+  let cssClass = 'act';
+  if (hasButtons) { shape = ['{{', '}}']; cssClass = 'msgb'; }
+  else if (hasMsg) { shape = ['(', ')']; cssClass = 'msg'; }
+  else if (hasCond) { shape = ['{', '}']; cssClass = 'cond'; }
+  else if (hasWait) { shape = ['((', '))']; cssClass = 'wait'; }
+
+  return { handlerLabel, shape, cssClass };
+}
+
+function analyzeGraph() {
+  const nodes = {};
+  const edges = [];
+  const incoming = {}; // id -> count
+  const definedIds = new Set(Object.keys(SALESBOT_DATA).filter(k => k !== 'conversation'));
+
+  Object.entries(SALESBOT_DATA).forEach(([id, block]) => {
+    if (id === 'conversation') return;
+    nodes[id] = block;
+    const gotos = extractGotos(block);
+    gotos.forEach(g => {
+      const brokenTarget = !definedIds.has(g.to);
+      // Refs para finish sempre são "fim de fluxo" — só quebra se o ID final não existir
+      // Aqui: se o step de destino não é definido, marca como broken (mesmo que finish)
+      edges.push({ from: id, to: g.to, label: g.label, kind: g.kind, finish: g.finish, broken: brokenTarget });
+      if (definedIds.has(g.to)) incoming[g.to] = (incoming[g.to] || 0) + 1;
+    });
+  });
+
+  // Órfãos = definidos, sem incoming (exceto step 0 que é entrada)
+  const orphans = [];
+  definedIds.forEach(id => {
+    if (id === '0') return;
+    if (!(incoming[id] > 0)) orphans.push(id);
+  });
+
+  return { nodes, edges, incoming, orphans, definedIds };
+}
+
+function buildMermaid(g) {
+  const lines = ['flowchart TD'];
+  const classDefs = [
+    'classDef msgb fill:#DBEAFE,stroke:#3B82F6,color:#111',
+    'classDef msg fill:#F0F7FF,stroke:#3B82F6,color:#111',
+    'classDef act fill:#EDE9FE,stroke:#8B5CF6,color:#111',
+    'classDef cond fill:#FEF3C7,stroke:#F59E0B,color:#111',
+    'classDef wait fill:#E5E7EB,stroke:#6B7280,color:#111',
+    'classDef finish fill:#DCFCE7,stroke:#16A34A,color:#111',
+    'classDef broken fill:#FEE2E2,stroke:#DC2626,color:#DC2626,stroke-dasharray: 3 3',
+    'classDef orphan stroke-dasharray: 5 3,stroke:#DC2626,stroke-width:2px'
+  ];
+
+  // Node entry
+  lines.push('  ENTRY([▶ Entrada]):::finish');
+
+  // Nodes definidos
+  const nodeClasses = {};
+  Object.entries(g.nodes).forEach(([id, block]) => {
+    const m = nodeMeta(id, block);
+    // Preview do texto (só send_message)
+    let preview = '';
+    const msg = (block.question || []).find(h => h.handler === 'send_message');
+    if (msg?.params?.text) {
+      preview = ' · ' + msg.params.text.substring(0, 30).replace(/\n/g, ' ');
+      if (msg.params.text.length > 30) preview += '…';
+    } else {
+      const act = (block.question || []).find(h => h.handler === 'action');
+      if (act?.params?.name === 'set_tag') {
+        preview = ' · ' + (act.params.params?.value?.[0] || '');
+      } else if (act?.params?.name === 'change_status') {
+        preview = ' · pipe ' + act.params.params?.pipeline_id;
+      } else if (act?.params?.name === 'set_custom_fields') {
+        preview = ' · cf';
+      } else if (act?.params?.name === 'change_responsible_user') {
+        preview = ' · resp';
+      }
+    }
+    const label = `${id} · ${m.handlerLabel}${preview}`;
+    lines.push(`  n${id}${m.shape[0]}"${mermaidEsc(label)}"${m.shape[1]}`);
+    nodeClasses[id] = m.cssClass;
+  });
+
+  // Nodes de finish "quebrados" (steps que só aparecem como destino inexistente)
+  const brokenTargets = new Set();
+  g.edges.forEach(e => { if (e.broken) brokenTargets.add(e.to); });
+  brokenTargets.forEach(id => {
+    lines.push(`  n${id}(["${id} · MISSING"]):::broken`);
+  });
+
+  // Entry edge
+  lines.push('  ENTRY --> n0');
+
+  // Edges
+  g.edges.forEach((e, i) => {
+    const arrow = e.finish ? '==>' : '-->';
+    const lbl = e.label ? `|"${mermaidEsc(e.label)}"|` : '';
+    lines.push(`  n${e.from} ${arrow}${lbl} n${e.to}`);
+  });
+
+  // Class assignments
+  Object.entries(nodeClasses).forEach(([id, cls]) => {
+    lines.push(`  class n${id} ${cls}`);
+  });
+  // Órfãos
+  g.orphans.forEach(id => lines.push(`  class n${id} orphan`));
+
+  // ClassDefs
+  classDefs.forEach(d => lines.push('  ' + d));
+
+  // Click handlers
+  Object.keys(g.nodes).forEach(id => {
+    lines.push(`  click n${id} call showDetail("${id}")`);
+  });
+
+  return lines.join('\n');
+}
+
+function buildBugs(g) {
+  const bugs = { critical: [], warn: [], info: [] };
+  const brokenRefs = g.edges.filter(e => e.broken);
+  brokenRefs.forEach(e => {
+    bugs.critical.push({
+      ref: `${e.from} → ${e.to}`,
+      txt: `Step <b>${e.from}</b> aponta para step <b>${e.to}</b>, que não está definido no JSON (${e.finish ? 'finish' : 'goto'})`
+    });
+  });
+  // Bug de rota específico: 44 → 56 (contexto vendas → menu pós-venda)
+  const bug44 = g.edges.find(e => e.from === '44' && e.to === '56');
+  if (bug44) {
+    bugs.critical.push({
+      ref: '44 → 56',
+      txt: 'Step <b>44</b> (handoff para consultora, alcançado a partir de <code>16 (Tamanho)</code>, <code>24 (Disponibilidade)</code>, <code>31 (Pagamento)</code>, <code>32 (Look)</code>) vai para <b>56</b>, que é o <b>menu de pós-venda</b>. Cliente perguntando sobre tamanho de peça cai em "Rastreio/Defeito/Devolução".'
+    });
+  }
+  // Loop 56 → 59 (todos os botões idênticos)
+  const menu56 = SALESBOT_DATA['56'];
+  const buttons56 = menu56?.answer?.[0]?.params || [];
+  const targets56 = new Set();
+  buttons56.forEach(b => (b.params || []).forEach(p => { if (p.handler === 'goto') targets56.add(p.params.step); }));
+  if (targets56.size === 1 && buttons56.length >= 5) {
+    bugs.warn.push({
+      ref: '56 → 59',
+      txt: `Menu <b>56</b> tem <b>${buttons56.length} botões</b> (Rastreio, Atraso, Item errado, Defeito, Troca, Devolução, Cancelar) e <b>todos caem no mesmo step 59</b>. Perde a segmentação — a tag/tratamento por motivo não está sendo feita.`
+    });
+  }
+  // Órfãos
+  g.orphans.forEach(id => {
+    bugs.info.push({
+      ref: id,
+      txt: `Step <b>${id}</b> está definido no JSON mas <b>nenhum outro step aponta para ele</b> — código morto.`
+    });
+  });
+
+  return bugs;
+}
+
+function renderBugs(bugs) {
+  const total = bugs.critical.length + bugs.warn.length + bugs.info.length;
+  document.getElementById('bug-count').textContent = total;
+  const container = document.getElementById('bugs-list');
+  const groups = [
+    ['critical', '🔴 Crítico (bloqueia deploy)', 'bug-critical'],
+    ['warn', '🟡 Suspeito (validar com PO)', 'bug-warn'],
+    ['info', '🟠 Código órfão (sem entrada)', 'bug-info']
+  ];
+  container.innerHTML = groups.map(([k, title, cls]) => {
+    if (bugs[k].length === 0) return '';
+    return `<div class="bug-group"><h3>${title} (${bugs[k].length})</h3>${bugs[k].map(b => `<div class="bug-item ${cls}"><span class="sev">•</span><span class="ref">${esc(b.ref)}</span><span class="txt">${b.txt}</span></div>`).join('')}</div>`;
+  }).join('');
+}
+
+function showDetail(id) {
+  const block = SALESBOT_DATA[id];
+  const container = document.getElementById('detail-content');
+  if (!block) {
+    container.innerHTML = `<p><b>Step ${esc(id)}</b> — não definido no JSON.</p>`;
+    return;
+  }
+  const uuid = block.block_uuid || '(sem uuid)';
+  let html = `<div class="field"><div class="label">Step / UUID</div><div class="val"><b>${esc(id)}</b> · <code style="font-size:11px">${esc(uuid)}</code></div></div>`;
+
+  // Mensagem
+  const msg = (block.question || []).find(h => h.handler === 'send_message');
+  if (msg) {
+    html += `<div class="field"><div class="label">Mensagem</div><div class="msg-text">${esc(msg.params.text || '')}</div></div>`;
+    if (msg.params.buttons) {
+      html += `<div class="field"><div class="label">Botões</div><ul class="btn-list">`;
+      // pega os destinos correspondentes do answer
+      const answers = block.answer?.[0]?.params || [];
+      msg.params.buttons.forEach(btn => {
+        const match = answers.find(a => a.value === btn.text);
+        const dest = match?.params?.[0]?.params?.step;
+        const destExists = dest && SALESBOT_DATA[String(dest)];
+        html += `<li>${esc(btn.text)} <span class="arrow">→</span> <span class="goto ${destExists ? '' : 'goto-broken'}">${dest || '?'}</span></li>`;
+      });
+      // else
+      const elseBtn = answers.find(a => a.type === 'else');
+      if (elseBtn) {
+        const dest = elseBtn.params?.[0]?.params?.step;
+        html += `<li><i>(qualquer outra resposta)</i> <span class="arrow">→</span> <span class="goto">${dest || '?'}</span></li>`;
+      }
+      html += '</ul></div>';
+    }
+  }
+
+  // Actions
+  const actions = (block.question || []).filter(h => h.handler === 'action');
+  if (actions.length) {
+    html += `<div class="field"><div class="label">Ações</div><ul class="btn-list">`;
+    actions.forEach(a => {
+      let desc = a.params?.name || '?';
+      const p = a.params?.params;
+      if (p) {
+        if (a.params.name === 'set_tag') desc += ` → tag: <b>${esc((p.value || []).join(', '))}</b>`;
+        else if (a.params.name === 'change_status') desc += ` → pipeline <b>${p.pipeline_id}</b>, status <b>${p.value}</b>`;
+        else if (a.params.name === 'change_responsible_user') desc += ` → usuário <b>${p.value}</b>`;
+        else if (a.params.name === 'set_custom_fields') desc += ` → cf <code>${esc(p.custom_field)}</code> = <code>${esc(p.value)}</code>`;
+        else if (a.params.name === 'add_note') desc += `: "${esc(p.text)}"`;
+      }
+      html += `<li>${desc}</li>`;
+    });
+    html += '</ul></div>';
+  }
+
+  // Conditions
+  const conds = (block.question || []).filter(h => h.handler === 'conditions');
+  if (conds.length) {
+    html += `<div class="field"><div class="label">Condições</div><ul class="btn-list">`;
+    conds.forEach(c => {
+      const cond = c.params?.conditions?.[0];
+      const t2 = cond?.term2;
+      const msgN = MESSENGER_NAMES[t2] ? ` (${MESSENGER_NAMES[t2]})` : '';
+      const dest = c.params?.result?.[0]?.params?.step;
+      html += `<li><code>${esc(cond?.term1)} ${esc(cond?.operation)} ${esc(t2)}</code>${msgN} <span class="arrow">→</span> <span class="goto">${dest}</span></li>`;
+    });
+    html += '</ul></div>';
+  }
+
+  // Waits
+  const waits = (block.question || []).filter(h => h.handler === 'waits');
+  if (waits.length) {
+    html += `<div class="field"><div class="label">Espera</div><ul class="btn-list">`;
+    waits.forEach(w => {
+      const c = w.params?.conditions?.[0];
+      html += `<li>Aguarda <b>${esc(c?.event?.action)}</b> em <b>${esc(c?.event?.source)}</b> <span class="arrow">→</span> <span class="goto">${c?.action?.step}</span> (${esc(c?.action?.type || 'question')})</li>`;
+    });
+    html += '</ul></div>';
+  }
+
+  // Goto direto (fora de buttons/conditions)
+  const directGoto = (block.question || []).filter(h => h.handler === 'goto');
+  if (directGoto.length) {
+    html += `<div class="field"><div class="label">Goto direto</div><ul class="btn-list">`;
+    directGoto.forEach(g => {
+      const dest = g.params?.step;
+      const type = g.params?.type || 'question';
+      const destExists = SALESBOT_DATA[String(dest)];
+      html += `<li>${type} <span class="arrow">→</span> <span class="goto ${destExists || type === 'finish' ? '' : 'goto-broken'}">${dest}</span></li>`;
+    });
+    html += '</ul></div>';
+  }
+
+  // Raw JSON
+  html += `<details><summary>Ver JSON bruto do bloco</summary><pre>${esc(JSON.stringify(block, null, 2))}</pre></details>`;
+
+  container.innerHTML = html;
+}
+window.showDetail = showDetail;
+
+// Boot
+document.getElementById('ts').textContent = new Date().toLocaleString('pt-BR');
+const graph = analyzeGraph();
+renderBugs(buildBugs(graph));
+document.getElementById('mermaid-src').textContent = buildMermaid(graph);
+mermaid.initialize({ startOnLoad: false, theme: 'default', flowchart: { curve: 'basis', htmlLabels: true }, maxTextSize: 200000, maxEdges: 500 });
+mermaid.run({ querySelector: '.mermaid' }).catch(err => {
+  console.error('Mermaid error:', err);
+  document.getElementById('mermaid-src').textContent = 'Erro ao renderizar diagrama: ' + err.message;
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Roteiro Reunião Sócios</title>
+<style>
+  @page { size: A4; margin: 22mm 20mm 22mm 20mm; }
+  :root {
+    --marinho:#1A3D7E; --marinho-esc:#122C5C;
+    --ocre:#C1741D; --borgonha:#7B1B1A;
+    --tinta:#17181C; --chumbo:#5A5E63;
+    --papel:#FBFAF6; --offwhite:#F5F3EC;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Century Gothic','Futura','Trebuchet MS',system-ui,-apple-system,sans-serif;
+    color: var(--tinta);
+    background: var(--papel);
+    line-height: 1.55;
+    font-size: 11pt;
+    max-width: 170mm;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Century Gothic','Futura',system-ui,sans-serif;
+    color: var(--marinho);
+    line-height: 1.25;
+    page-break-after: avoid;
+  }
+  h1 {
+    font-size: 26pt;
+    letter-spacing: -0.5px;
+    border-bottom: 3px solid var(--ocre);
+    padding-bottom: 8pt;
+    margin: 0 0 20pt 0;
+  }
+  h2 {
+    font-size: 18pt;
+    color: var(--marinho-esc);
+    margin: 24pt 0 10pt 0;
+    border-bottom: 1px solid #d8d3c4;
+    padding-bottom: 4pt;
+  }
+  h3 { font-size: 14pt; color: var(--borgonha); margin: 18pt 0 6pt; }
+  h4 { font-size: 12pt; color: var(--chumbo); margin: 14pt 0 4pt; text-transform: uppercase; letter-spacing: 0.4px; }
+  p { margin: 0 0 10pt 0; }
+  strong { color: var(--marinho-esc); }
+  em { color: var(--borgonha); }
+  a { color: var(--marinho); text-decoration: underline; }
+  ul, ol { margin: 6pt 0 14pt 22pt; padding: 0; }
+  li { margin: 3pt 0; }
+  li > ul, li > ol { margin: 3pt 0 3pt 18pt; }
+  blockquote {
+    margin: 12pt 0;
+    padding: 8pt 14pt;
+    border-left: 3px solid var(--ocre);
+    background: var(--offwhite);
+    color: var(--chumbo);
+    font-style: italic;
+    page-break-inside: avoid;
+  }
+  code {
+    font-family: 'Consolas','Menlo',monospace;
+    font-size: 10pt;
+    background: #eeeae0;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: var(--marinho-esc);
+  }
+  pre {
+    background: #f0ecdd;
+    padding: 10pt 12pt;
+    border-radius: 4px;
+    border-left: 3px solid var(--marinho);
+    overflow-x: auto;
+    page-break-inside: avoid;
+  }
+  pre code { background: transparent; padding: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12pt 0;
+    font-size: 10pt;
+    page-break-inside: avoid;
+  }
+  th, td {
+    border: 1px solid #d8d3c4;
+    padding: 6pt 8pt;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: var(--marinho);
+    color: var(--papel);
+    font-weight: bold;
+  }
+  tr:nth-child(even) td { background: var(--offwhite); }
+  hr { border: none; border-top: 1px solid #d8d3c4; margin: 20pt 0; }
+  img { max-width: 100%; height: auto; }
+  .header-brand {
+    color: var(--ocre);
+    font-size: 9pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 20pt;
+    border-bottom: 1px solid #e0dcc9;
+    padding-bottom: 6pt;
+  }
+</style>
+</head>
+<body>
+<div class="header-brand">BRW Movelaria · Kolden</div>
+<h1>ROTEIRO — Reunião de descoberta com sócios da BRW Movelaria</h1>
+<hr>
+<h2>0. Objetivo desta reunião (para o Ronan ler antes de entrar)</h2>
+<p>Extrair, em 60 minutos com 3 sócios, a matéria-prima crua que a Kolden precisa para desenhar depois: brandbook, identidade visual, tráfego pago, SEO, orgânico, comercial e posicionamento. Sair da reunião com <strong>respostas verificáveis</strong> para 5 perguntas-âncora do dossiê (Bloco 10 do <code>dossie.md</code>):</p>
+<ol>
+<li><p>Qual é o segmento pagante real hoje (residencial × investidor Airbnb × incorporadora × hoteleiro × corporativo)?</p>
+</li>
+<li><p>Qual é a natureza da receita histórica — venda, revenda ou consultoria/comissão? (destrava H5)</p>
+</li>
+<li><p>Como o lead chega e o que ele pergunta antes de fechar? (destrava H1 e H3)</p>
+</li>
+<li><p>Que promessa a marca faz internamente (na cabeça dos sócios) — o que ela É e o que ela NÃO É?</p>
+</li>
+<li><p>Em 12 meses, qual é o número real que define sucesso (faturamento, projetos entregues, segmento novo)?</p>
+</li>
+</ol>
+<p><strong>Se sair da reunião sem resposta para 1, 2, 3, 4 e 5 acima, a Kolden fica cega para o setup. Tudo o mais é bônus.</strong></p>
+<hr>
+<h2>Participantes</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Nome</th>
+<th>Papel na reunião</th>
+<th>Código no roteiro</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Bruno Felice Vilas Boas</td>
+<td>Sócio-administrador. Detém a operação diária. Ficha jovem, ainda em graduação.</td>
+<td><code>[BRUNO]</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Catarina Quireza Leite Agareno</td>
+<td>Sócia jovem com PJ próprio desde 2022. Visão de gestão da geração dela.</td>
+<td><code>[CATARINA]</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Sócio histórico (hipótese primária: Joyce; alternativos: Janinne / David)</td>
+<td>Porta a história da marca pré-2022 e a relação com a LLC americana / capital reputacional.</td>
+<td><code>[SÓCIO-HISTÓRICO]</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td>Perguntas abertas ao trio</td>
+<td>Qualquer um responde</td>
+<td><code>[TODOS]</code> / <code>[QUEM SOUBER]</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>Materiais que o Ronan deve levar (impresso ou aberto em tela)</h2>
+<ol>
+<li><strong>Uma folha só com o cheat-sheet do Anexo A</strong> (contradições narrativas + como puxar sem constranger).</li>
+<li><strong>Impresso do post <code>DWq5-4xlgUr</code> (2026-04-07)</strong> — o pitch de &quot;studios como estratégia / ROI / ferramenta de retorno&quot;. É a frase mais bem escrita da marca — usar como <strong>âncora de reconhecimento</strong> (mostra que a Kolden leu).</li>
+<li><strong>Print do Bloco 7 do dossiê</strong> (tabela de concorrentes locais) — para eventualmente mostrar Alfa Planejados (17,6 K IG) e discutir posicionamento sem constranger.</li>
+<li><strong>Bloco de anotação com as 5 perguntas-âncora do §0</strong> no topo, para o Ronan riscar à medida que forem respondidas.</li>
+<li><strong>Uma folha em branco por sócio</strong> para captura literal de frases (voz do cliente).</li>
+<li><strong>NÃO levar</strong> protótipo, mockup, brandbook rascunho, ou proposta de identidade — nada disso ainda. Levar isso mata o Mom Test.</li>
+</ol>
+<hr>
+<h2>Estrutura da hora (blocos e tempos)</h2>
+<table>
+<thead>
+<tr>
+<th>Bloco</th>
+<th>Título</th>
+<th align="right">Tempo</th>
+<th>Objetivo</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Abertura + fatos duros da história</td>
+<td align="right">10 min</td>
+<td>Alinhar quem faz o quê, extrair a história real, desarmar contradições narrativas</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Produto real</td>
+<td align="right">10 min</td>
+<td>O que a BRW vende de fato hoje — peças, coleções, curadoria, terceirização</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Cliente pagante</td>
+<td align="right">10 min</td>
+<td>Quem paga mais e como chega — desvelar segmento real vs. discurso</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Marca e comunicação</td>
+<td align="right">10 min</td>
+<td>Voz, valores, promessa, arquétipo, concorrentes vistos com respeito/desprezo</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Digital e operação</td>
+<td align="right">10 min</td>
+<td>Site fora do ar, quem posta, verba, ferramentas, WhatsApp comercial</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Unit economics</td>
+<td align="right">5 min</td>
+<td>Faturamento, sazonalidade, margem, ticket médio, prazo de recebimento</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Visão 12/24 meses + pedido explícito à Kolden</td>
+<td align="right">5 min</td>
+<td>Meta, deal-breaker, o que já testaram e falhou</td>
+</tr>
+</tbody></table>
+<p><strong>Distribuição real do tempo:</strong> ~1 min por pergunta principal (com follow-up). Aproveitando as sobreposições entre sócios, dá para caber ~44 perguntas. Se algum bloco acabar antes: usar Anexo B (bank de reserva). Se atrasar: <strong>cortar de 5 e 6 primeiro</strong>, nunca de 1, 3 ou 4.</p>
+<hr>
+<h2>Bloco 1 — Abertura + fatos duros da história (10 min)</h2>
+<p><strong>Objetivo:</strong> aterrar o tom (parceiro que já pesquisou, não vendedor), alinhar quem faz o quê hoje, extrair a linha do tempo real e desarmar as contradições narrativas do dossiê <strong>sem</strong> deixar ninguém sem graça.</p>
+<p><strong>Abertura falada pelo Ronan (30 segundos, dizer literalmente):</strong></p>
+<blockquote>
+<p>&quot;Antes de qualquer coisa — obrigado pela hora. A Kolden fez a lição de casa antes de vir: li o Instagram de vocês do começo ao fim, mapeei os projetos que apareceram no ano (Iberostar, Singulari, Faculdade Baiana), separei o pitch de ROI para investidor de short-stay que vocês estão escrevendo. Então a minha meta hoje é <strong>não</strong> vender proposta. É entender, do jeito de vocês, três coisas: como a empresa chegou aqui, quem é o cliente que mais paga, e onde vocês querem chegar. Vou perguntar bastante e falar pouco. Podem me interromper à vontade.&quot;</p>
+</blockquote>
+<h3>Perguntas</h3>
+<p><strong>Q1.</strong> <code>[TODOS]</code> Me conta rapidamente — hoje, no dia a dia, quem faz o quê aqui na BRW? Quem atende cliente, quem desenha, quem cuida da fábrica, quem cuida do dinheiro?</p>
+<ul>
+<li>→ se responderem por papel formal (CEO/CFO), siga com: &quot;e no operacional mesmo — quem responde WhatsApp do cliente hoje?&quot;</li>
+<li>💡 anotar literalmente quem falou &quot;eu cuido de X&quot; e quem ficou em silêncio.</li>
+</ul>
+<p><strong>Q2.</strong> <code>[SÓCIO-HISTÓRICO]</code> A BRW como marca não nasceu em março de 2026 quando o CNPJ atual foi aberto — vi post de vocês em 2022, referência à CASACOR Bahia 2013. Me conta, na sua palavra, a história de verdade da marca: quando ela começou de fato, quem começou, e o que aconteceu para o CNPJ atual sair em 2026? </p>
+<ul>
+<li>→ se responderem &quot;sempre fui eu&quot; → siga com: &quot;e antes de 2026, juridicamente, o que existia? Você emitia nota por outra empresa?&quot;</li>
+<li>→ se disserem &quot;a marca é mais antiga que o CNPJ&quot; → siga com: &quot;quantos anos vocês contam de operação real, de porta aberta?&quot;</li>
+<li>⚠️ NÃO dizer &quot;vi que vocês assinam &#39;desde 1998&#39;, mas o CNPJ é de 2026&quot;. Deixar eles próprios explicarem a diferença.</li>
+<li>💡 anotar as datas e os anos que forem ditos — comparar com o cheat-sheet do Anexo A depois.</li>
+</ul>
+<p><strong>Q3.</strong> <code>[SÓCIO-HISTÓRICO]</code> Em que ano vocês começaram a assinar projetos como &quot;BRW&quot;?</p>
+<ul>
+<li>→ se disserem 2012/2013 → confirmar com: &quot;esse foi o primeiro projeto BRW, então? E o que existia antes desse nome?&quot;</li>
+<li>💡 é a pergunta que separa &quot;marca herdada de família&quot; de &quot;marca de 2012 sem herança&quot;.</li>
+</ul>
+<p><strong>Q4.</strong> <code>[TODOS]</code> Antes do CNPJ atual (março de 2026), a BRW faturava por qual empresa? Vocês emitiam nota por PJ de qual dos sócios, ou por outra empresa?</p>
+<ul>
+<li>→ se responderem &quot;por PJ de fulano&quot; → siga com: &quot;e essa PJ continua ativa ou foi encerrada?&quot;</li>
+<li>→ se dificultar → siga com: &quot;sem entrar no valor, só a natureza — era venda de móvel, revenda ou serviço de consultoria/projeto?&quot;</li>
+<li>⚠️ pergunta técnica-fiscal. Ronan deve entregar sem tom de auditor. Tom: &quot;quero desenhar a comunicação certa, então preciso entender o que a Receita registra&quot;.</li>
+</ul>
+<p><strong>Q5.</strong> <code>[BRUNO]</code> Como a Strategy Business &amp; Solutions LLC entra nessa foto? O que ela aporta operacionalmente — capital, tecnologia, atendimento internacional, ou algo mais?</p>
+<ul>
+<li>→ se responderem &quot;é do investidor&quot; → siga com: &quot;esse investidor é ativo no dia a dia ou é sócio silencioso?&quot;</li>
+<li>⚠️ é um dos pontos mais sensíveis. Se o Bruno travar, <strong>não insistir</strong> — pular para Q6 e voltar por outra via em Q37 (Bloco 5).</li>
+</ul>
+<p><strong>Q6.</strong> <code>[SÓCIO-HISTÓRICO ou BRUNO]</code> Vocês têm três telefones diferentes hoje — o do WhatsApp comercial, o que aparece no Facebook, e o do contador. O do WhatsApp comercial (99902-7171) é o que os leads mais usam? Quem responde?</p>
+<ul>
+<li>→ se disserem &quot;eu respondo&quot; → 💡 tomar nota do nome, é uma peça-chave para H3 (leitura do WhatsApp).</li>
+<li>→ se disserem &quot;temos um vendedor&quot; → siga com: &quot;esse vendedor é CLT, sócio, freelancer, ou terceirizado?&quot;</li>
+</ul>
+<p><strong>Q7.</strong> <code>[SÓCIO-HISTÓRICO]</code> Vou perguntar de outra forma para não confundir: se eu perguntar &quot;a BRW tem quantos anos&quot;, qual é a resposta que vocês, aqui dentro, contam entre si?</p>
+<ul>
+<li>→ se der número diferente do que aparece na comunicação pública (30 / &quot;desde 1998&quot; / 10) → 💡 anotar literalmente. Esse é o número interno real, que a Kolden vai usar de base para reescrever a narrativa em vez das quatro versões conflitantes.</li>
+</ul>
+<p><strong>Q8.</strong> <code>[TODOS]</code> Rápida, uma frase cada um: se um cliente novo perguntasse hoje na sua frente &quot;vocês são movelaria, marcenaria, consultoria de curadoria, arquitetura de interiores ou o quê?&quot;, como cada um de vocês responderia numa frase só?</p>
+<ul>
+<li>💡 esta é a pergunta que separa o mesmo negócio na cabeça dos 3 sócios OU negócios diferentes na cabeça dos 3 sócios. <strong>Registre as três respostas literais lado a lado</strong>. Se divergirem, é o achado do Bloco.</li>
+</ul>
+<hr>
+<h2>Bloco 2 — Produto real (10 min)</h2>
+<p><strong>Objetivo:</strong> entender o que a BRW <strong>vende de fato hoje</strong> — não o que ela diz que vende. Peças autorais, coleções, quem desenha, quem fabrica, quem monta, terceirização.</p>
+<h3>Perguntas</h3>
+<p><strong>Q9.</strong> <code>[BRUNO]</code> Me conta, do último projeto que vocês entregaram (pode ser o mais recente que estiver na memória) — o que foi vendido? Foi um pacote de peças da linha da BRW, foram peças sob medida projetadas do zero, foi uma consultoria de curadoria com peças de terceiros, ou uma combinação?</p>
+<ul>
+<li>→ se responderem &quot;combinação&quot; → siga com: &quot;quebra o valor para mim — do total, quanto foi peça própria, quanto foi terceiro, quanto foi projeto/consultoria?&quot;</li>
+<li>💡 esta é a pergunta que resolve H5 (comércio × consultoria × fábrica).</li>
+</ul>
+<p><strong>Q10.</strong> <code>[BRUNO]</code> As peças com nome próprio — Megan, Flora, Aresta, Chamonix, TRAMA — quem desenha? Vocês têm designer interno, contratam por peça, ou são adaptações de referências que vocês curam?</p>
+<ul>
+<li>→ se responderem &quot;designer interno&quot; → siga com: &quot;quantos, e trabalham CLT ou por projeto?&quot;</li>
+<li>→ se disserem &quot;curadoria de fabricante&quot; → siga com: &quot;de que fabricante — dá para me contar o parque produtor de vocês?&quot;</li>
+</ul>
+<p><strong>Q11.</strong> <code>[BRUNO]</code> A sede fiscal fica no Polo Industrial de Camaçari, mas o CNAE é comércio varejista. Isso significa que vocês têm chão de fábrica próprio lá em Camaçari, ou é endereço fiscal e a produção real é terceirizada em fábricas do polo?</p>
+<ul>
+<li>→ se responderem &quot;temos chão&quot; → siga com: &quot;quantas pessoas trabalham no chão? E as máquinas — CNC, cortadora de MDF, prensa — são de vocês?&quot;</li>
+<li>→ se responderem &quot;terceirizamos&quot; → siga com: &quot;com quantos fabricantes vocês têm relação hoje? E o contrato com eles — exclusividade, per project, comissão?&quot;</li>
+</ul>
+<p><strong>Q12.</strong> <code>[BRUNO]</code> A coleção TRAMA — foi lançamento de maio de 2026 pelo Instagram. Ela é uma coleção-catálogo (o cliente escolhe a peça pronta) ou uma linha de referências que vira sob medida?</p>
+<ul>
+<li>💡 este ponto define se a BRW é catálogo (movelaria clássica) ou atelier (agência autoral). Muda a narrativa toda.</li>
+</ul>
+<p><strong>Q13.</strong> <code>[SÓCIO-HISTÓRICO]</code> Voltando ao histórico: em 2013, quando fizeram o projeto na CASACOR Bahia, quem desenhou aquelas peças? Foi a BRW, foi um arquiteto convidado, ou foi uma parceria?</p>
+<ul>
+<li>→ se responderem &quot;nós&quot; → 💡 é uma pista forte de que a marca tem competência de design desde a origem, não é adorno recente.</li>
+<li>⚠️ se o sócio-histórico não for Joyce e ninguém souber → mudar o destinatário para <code>[QUEM SOUBER]</code> e não insistir.</li>
+</ul>
+<p><strong>Q14.</strong> <code>[TODOS]</code> Quando um cliente da Singulari, do Iberostar ou da Faculdade Baiana escolheu vocês, ele contratou &quot;a peça&quot; ou contratou &quot;o projeto/curadoria completa&quot;? Como o serviço foi cobrado — por peça vendida, por m² projetado, por comissão sobre fornecedor, ou pacote fechado?</p>
+<ul>
+<li>💡 padrão de cobrança revela modelo real. Se vier &quot;pacote fechado com curadoria + peças + montagem&quot; — a marca é agência, não movelaria.</li>
+</ul>
+<hr>
+<h2>Bloco 3 — Cliente pagante (10 min)</h2>
+<p><strong>Objetivo:</strong> desvelar o segmento real que paga o boleto — e distinguir do segmento que aparece no Instagram. É o bloco mais importante do dossiê.</p>
+<h3>Perguntas</h3>
+<p><strong>Q15.</strong> <code>[BRUNO]</code> Pega os últimos 5 projetos que vocês fecharam (não que estão em orçamento — fechados). Sem falar de valor: um por um, quem é o cliente e qual foi o pedido? Pessoa física para casa própria, investidor de temporada, hotel, incorporadora, empresa/corporativo, ou outro?</p>
+<ul>
+<li>→ se travar → simplifica: &quot;só me diz os 3 mais recentes&quot;.</li>
+<li>💡 esta pergunta responde à pergunta-âncora #1 do §0. Se sair da reunião sem essa lista, <strong>a Kolden fica cega</strong>.</li>
+<li>⚠️ NÃO sugerir categorias antes do Bruno responder. Ele tem que enumerar sem prompt.</li>
+</ul>
+<p><strong>Q16.</strong> <code>[BRUNO]</code> Desses 5 (ou 3): quem gastou mais? Sem número exato — só a ordem: o cliente 1 pagou mais que o cliente 2, que pagou mais que o cliente 3?</p>
+<ul>
+<li>→ se pedir para não falar valor → concordar imediatamente: &quot;só ordem, ninguém precisa cravar número&quot;.</li>
+</ul>
+<p><strong>Q17.</strong> <code>[BRUNO]</code> O maior cliente que vocês já fecharam nos últimos 24 meses — o que foi vendido, e como esse cliente chegou até a BRW? Foi Instagram, indicação, evento, feira, arquiteto que trouxe, um sócio conhecia direto?</p>
+<ul>
+<li>→ se responderem &quot;arquiteto&quot; → siga com: &quot;vocês têm carteira de arquitetos que indica, ou foi caso a caso?&quot;</li>
+<li>→ se responderem &quot;indicação&quot; → siga com: &quot;de quem? A pessoa era cliente anterior, sócio de outro projeto, ou conhecido pessoal?&quot;</li>
+</ul>
+<p><strong>Q18.</strong> <code>[TODOS]</code> Quando um cliente novo chega no WhatsApp, qual é a primeira pergunta que ele faz na maioria das vezes? &quot;Quanto custa?&quot;, &quot;vocês fazem sob medida?&quot;, &quot;atendem o meu bairro?&quot;, &quot;vocês têm show room?&quot;, outra?</p>
+<ul>
+<li>💡 é a <strong>objeção-gatilho</strong> — vai virar copy de LP, de anúncio e de reply automático.</li>
+</ul>
+<p><strong>Q19.</strong> <code>[BRUNO]</code> Depois que o cliente pede orçamento, quanto tempo em média até ele fechar (ou dizer não)? Uma semana, um mês, três meses, seis meses?</p>
+<ul>
+<li>→ se responderem &quot;depende&quot; → simplifica: &quot;pega os 3 últimos que fecharam — quanto foi entre o primeiro contato e a assinatura?&quot;</li>
+<li>💡 esta é a duração real do ciclo de venda. Sem esse número, time de vendas Kolden não calibra janela de conversão do Google Ads.</li>
+</ul>
+<p><strong>Q20.</strong> <code>[BRUNO]</code> Nos últimos 6 meses, quantos leads chegaram no WhatsApp? Não precisa ser exato — dá um chute do volume mensal. 20? 50? 100? 300?</p>
+<ul>
+<li>→ se responderem número → siga com: &quot;e desses, quantos por mês viram orçamento formal? E quantos fecham?&quot;</li>
+<li>💡 taxas WhatsApp→orçamento e orçamento→fechado. Métrica que hoje <strong>não existe em canto nenhum</strong> do dossiê.</li>
+</ul>
+<p><strong>Q21.</strong> <code>[TODOS]</code> Vocês estão publicando bastante sobre investidor Airbnb e studios para short-stay — de 2026 pra cá vi 3 posts explícitos. <strong>Alguém já fechou</strong> um projeto assim, ou por enquanto é aposta de conteúdo para atrair esse cliente?</p>
+<ul>
+<li>→ se disserem &quot;fechamos X&quot; → siga com: &quot;conta esse projeto — quantos m², quantos apartamentos, e como o investidor achou vocês?&quot;</li>
+<li>→ se disserem &quot;ainda não fechamos&quot; → siga com: &quot;por que decidiram escrever sobre esse cliente antes de ele existir na carteira?&quot;</li>
+<li>💡 esta é a <strong>pergunta-chave para H1</strong> (nicho pagante × discurso de marketing).</li>
+</ul>
+<p><strong>Q22.</strong> <code>[TODOS]</code> Quando o cliente desiste (não fecha), qual é a razão mais comum que vocês escutam? Preço, prazo, &quot;vou pensar&quot;, &quot;prefiro fábrica de móvel pronto&quot;, &quot;achei mais barato em outra&quot;, ou outra?</p>
+<ul>
+<li>💡 top-1 objeção real. Sem isso, time de copy Kolden não escreve FAQ nem página de vendas.</li>
+</ul>
+<hr>
+<h2>Bloco 4 — Marca e comunicação (10 min)</h2>
+<p><strong>Objetivo:</strong> capturar a <strong>voz literal</strong> dos sócios sobre valores, promessa e concorrentes. Este é o insumo para brandbook, arquétipo e tom de voz. Anotar literalmente.</p>
+<h3>Perguntas</h3>
+<p><strong>Q23.</strong> <code>[TODOS]</code> Em uma frase (uma frase só, cada um): para quem a BRW existe? Não a resposta bonita — a resposta funcional. &quot;Existimos para o cara que precisa de X e não encontra em Y.&quot; Preencham no seu jeito.</p>
+<ul>
+<li>💡 <strong>frase-âncora</strong>. Anotar as 3 respostas literais. Se convergirem, é ouro. Se divergirem, o Bloco 8 (Q8) já anunciou.</li>
+</ul>
+<p><strong>Q24.</strong> <code>[TODOS]</code> Qual é a coisa que a BRW faz e que ninguém mais na Bahia faz do mesmo jeito?</p>
+<ul>
+<li>→ se responderem &quot;atendimento&quot; → siga com: &quot;mais concreto — o que exatamente do atendimento? Prazo, escuta, pós-venda?&quot;</li>
+<li>→ se responderem &quot;qualidade&quot; → não aceitar: &quot;qualidade em quê especificamente — acabamento, madeira, design, montagem?&quot;</li>
+<li>💡 é o <strong>único onlyness real</strong>. Se ninguém souber articular, você tem um problema de branding sem posicionamento verbal.</li>
+</ul>
+<p><strong>Q25.</strong> <code>[TODOS]</code> E o oposto: em uma frase, o que a BRW <strong>não é</strong> e o cliente às vezes confunde? &quot;Não somos ______.&quot;</p>
+<ul>
+<li>💡 defensiva, mas potente. &quot;Não somos Todeschini&quot; ou &quot;Não somos ItatiaiaLine&quot; já revela o mapa de posicionamento na cabeça deles.</li>
+</ul>
+<p><strong>Q26.</strong> <code>[CATARINA ou SÓCIO-HISTÓRICO]</code> Cita 3 concorrentes que vocês <strong>respeitam</strong> — não precisa ser da Bahia — que fazem algo que vocês gostariam de fazer melhor.</p>
+<ul>
+<li>→ se responderem &quot;Breton&quot;, &quot;Frattini&quot;, &quot;Ornare&quot; → confirma posicionamento premium autoral.</li>
+<li>→ se responderem &quot;Alfa&quot; ou &quot;Bahia Closet&quot; → confirma que a briga real deles é local, no médio-alto.</li>
+<li>⚠️ NÃO dizer que a Kolden mapeou 12 concorrentes locais — deixa eles enumerarem sem viés.</li>
+</ul>
+<p><strong>Q27.</strong> <code>[TODOS]</code> E 3 concorrentes que vocês <strong>não respeitam</strong> — que fazem tudo o que vocês tentam não fazer.</p>
+<ul>
+<li>💡 o que vocês desprezam <strong>é o que a BRW é anti</strong>. Esse anti-x compõe a metade escondida do posicionamento.</li>
+</ul>
+<p><strong>Q28.</strong> <code>[SÓCIO-HISTÓRICO]</code> Se a BRW fosse uma pessoa, qual é a idade dela? Homem ou mulher? Onde ela mora? O que ela lê?</p>
+<ul>
+<li>→ aceitar qualquer resposta e devolver com: &quot;por quê?&quot;</li>
+<li>💡 pergunta clássica de arquétipo. Sabe-Idoso/Criador/Governante/Sereno — cada resposta vira uma pista de arquétipo. Não interpretar na hora; anotar e devolver ao time de branding Kolden.</li>
+</ul>
+<p><strong>Q29.</strong> <code>[TODOS]</code> A frase &quot;curadoria que permanece&quot; apareceu em cinco posts. &quot;Curadoria&quot; apareceu em doze. Foi vocês que decidiram cravar &quot;curadoria&quot; ou foi o copywriter/agência? E quando dizem &quot;curadoria&quot; — vocês querem dizer o quê exatamente?</p>
+<ul>
+<li>💡 esta pergunta revela se o tom de voz de vocês é <strong>próprio</strong> ou <strong>emprestado de fornecedor</strong>. Se emprestado, o brandbook precisa refundar. Se próprio, preservar.</li>
+</ul>
+<p><strong>Q30.</strong> <code>[TODOS]</code> &quot;Preço de fábrica&quot; também aparece na bio. Vocês vendem por preço de fábrica ou é uma promessa de comunicação? Sem julgamento — só quero entender o que vocês entregam de fato quando o cliente cobra a promessa.</p>
+<ul>
+<li>⚠️ delicadíssima. Se travar, aceitar &quot;é comunicação&quot; e mudar para Q31. Não insistir.</li>
+<li>💡 se responderem honestamente que é aspiracional, a Kolden <strong>precisa</strong> trocar o claim antes de rodar Meta Ads (é passivo reputacional).</li>
+</ul>
+<hr>
+<h2>Bloco 5 — Digital e operação (10 min)</h2>
+<p><strong>Objetivo:</strong> desvelar site fora do ar (revelação a fazer com cuidado), quem cuida do Instagram, verba de marketing, ferramentas, WhatsApp comercial. Este bloco tem uma revelação chata (URLs mortas).</p>
+<h3>Perguntas</h3>
+<p><strong>Q31.</strong> <code>[TODOS]</code> Quem cuida do Instagram de vocês hoje? É alguém interno, uma social media terceirizada, uma agência, um freelancer?</p>
+<ul>
+<li>→ se responderem &quot;agência&quot; → siga com: &quot;que agência, e há quanto tempo? Vocês estão satisfeitos?&quot;</li>
+<li>→ se responderem &quot;eu mesmo&quot; → siga com: &quot;e quanto tempo por semana isso consome?&quot;</li>
+</ul>
+<p><strong>Q32.</strong> <code>[TODOS]</code> A copy dos posts recentes — &quot;silêncio e intenção&quot;, &quot;curadoria que permanece&quot;, os pitches de investidor Airbnb — quem escreve isso? Um copywriter, a agência, vocês, chatGPT?</p>
+<ul>
+<li>💡 já anunciada em Q29. Aqui é a confirmação <strong>de quem</strong> é a voz. Se for a agência, a agência é ativo — vale a pena preservar essa parceria ou absorver o processo.</li>
+</ul>
+<p><strong>Q33.</strong> <code>[BRUNO]</code> <strong>Revelação delicada, cuidado:</strong> quando eu tentei entrar em <code>brwmovelaria.com.br</code> esta semana, o site não carregou. Fui em <code>brwmovelaria.com</code> (o do Facebook) — mesma coisa. O YouTube da BRW retorna erro 404. Vocês sabiam disso?</p>
+<ul>
+<li>→ se responderem &quot;não sabíamos&quot; → siga com: &quot;vocês têm um site que já existiu, ou nunca chegou a subir?&quot;</li>
+<li>→ se responderem &quot;sabíamos, estamos entre providers&quot; → siga com: &quot;há quanto tempo está assim? E as bio do IG e do FB apontam para páginas mortas — vocês têm ideia de quantos cliques por mês vão para lá?&quot;</li>
+<li>⚠️ tom NÃO acusatório. É um bug operacional que qualquer negócio comete. A Kolden traz como <strong>oportunidade de altíssima alavancagem</strong>, não como falha.</li>
+<li>💡 esta é a pergunta que abre a hipótese H2 (vazamento de leads). Anotar reação.</li>
+</ul>
+<p><strong>Q34.</strong> <code>[BRUNO]</code> Qual é a verba mensal que vocês gastam hoje com marketing? Somando anúncio pago, agência, ferramenta, freelancer. Faixa serve — R$ 500, R$ 2 mil, R$ 5 mil, R$ 10 mil, mais?</p>
+<ul>
+<li>→ se responderem que não gastam nada → siga com: &quot;nunca rodaram Meta Ads ou Google Ads? Nem vocês, nem agência?&quot;</li>
+<li>→ se responderem que sim → siga com: &quot;que resultado deu? Custo por lead, número de venda vinda de ad — vocês têm essa conta?&quot;</li>
+</ul>
+<p><strong>Q35.</strong> <code>[BRUNO]</code> Ferramentas: hoje vocês trabalham com quê? Planilha, CRM, WhatsApp Business normal, WhatsApp API, algum sistema de ERP para o depósito, algum de orçamento? Só o essencial — nomes.</p>
+<ul>
+<li>💡 se responderem &quot;só WhatsApp + planilha&quot;, a Kolden entra em campo aberto. Se responderem &quot;temos Bling + WhatsApp Business + Pipefy&quot;, já existe cadeia — Kolden herda.</li>
+</ul>
+<p><strong>Q36.</strong> <code>[BRUNO]</code> Vocês já rodaram Meta Ads ou Google Ads em algum momento nos últimos 24 meses? Mesmo que curtinho — R$ 200 para experimentar?</p>
+<ul>
+<li>→ se sim → siga com: &quot;com que objetivo? Vender direto, gerar seguidor, gerar lead?&quot;</li>
+<li>→ se sim → siga com: &quot;e vocês têm acesso ao gerenciador ainda? Pixel Meta instalado em algum lugar?&quot;</li>
+</ul>
+<p><strong>Q37.</strong> <code>[SÓCIO-HISTÓRICO]</code> A LLC americana — Strategy Business &amp; Solutions — é um veículo de investimento externo ou é a estrutura que vocês pretendem usar para vender fora do Brasil? A intro do Facebook fala em &quot;mercado mundial&quot; — isso é meta real?</p>
+<ul>
+<li>⚠️ segunda tentativa da Q5 por outra via. Se ainda travar, aceitar &quot;assunto sensível&quot; e passar. Anotar.</li>
+<li>💡 se responderem &quot;é para mercado internacional&quot; → a Kolden precisa incluir SEO/site em inglês no plano.</li>
+</ul>
+<p><strong>Q38.</strong> <code>[TODOS]</code> Vocês estão à vontade para me contar sobre o edital SEFAZ-BA número 09/2026 que cita a BRW? Sem julgamento — só para eu saber se é uma pendência conhecida em andamento ou surpresa.</p>
+<ul>
+<li>⚠️ MUITO delicada. Ronan só pergunta se houver rapport firme (últimos 15 min). Se sentir constrangimento, pular. Se responderem — anotar factual, sem reação.</li>
+<li>💡 sinal de compliance. Nomos precisa saber; a Kolden não pode montar campanha sobre CNPJ com pendência aguda desconhecida.</li>
+</ul>
+<hr>
+<h2>Bloco 6 — Unit economics (5 min)</h2>
+<p><strong>Objetivo:</strong> entender faixa de faturamento, sazonalidade, margem, ticket médio, prazo de recebimento. É onde os sócios podem travar — o Ronan aceita respostas em faixa, nunca insiste em número exato.</p>
+<h3>Perguntas</h3>
+<p><strong>Q39.</strong> <code>[BRUNO]</code> Sem número exato — faixa serve. Nos meses melhores dos últimos 12, o faturamento de vocês foi da ordem de R$ 100 mil, R$ 300 mil, R$ 500 mil, mais de R$ 1 milhão? Não precisa cravar — só me dá a ordem de grandeza.</p>
+<ul>
+<li>→ se travar → passar para Q40 sem forçar.</li>
+<li>⚠️ Ronan não pode reagir a nenhum número. Face pokerchapa.</li>
+</ul>
+<p><strong>Q40.</strong> <code>[BRUNO]</code> Tem sazonalidade? Que meses do ano são pico e que meses são baixa?</p>
+<ul>
+<li>→ se responderem &quot;novembro-dezembro-janeiro é alta&quot; → siga com: &quot;e o baixo é qual — junho-julho?&quot;</li>
+<li>💡 sazonalidade define o calendário de mídia paga.</li>
+</ul>
+<p><strong>Q41.</strong> <code>[BRUNO]</code> Ticket médio do cliente residencial — casa da pessoa física — hoje está em que faixa? R$ 10 mil, R$ 30 mil, R$ 80 mil, R$ 150 mil, mais?</p>
+<ul>
+<li>💡 se tiver dois pontos de ancoragem (residencial + B2B Singulari-like), Pactolo consegue triangular.</li>
+</ul>
+<p><strong>Q42.</strong> <code>[BRUNO]</code> E o ticket de um projeto B2B tipo Singulari — ordem de grandeza — está em que faixa? R$ 100 mil, R$ 500 mil, R$ 1 milhão, mais?</p>
+<ul>
+<li>💡 gap entre B2C e B2B revela onde a receita real vem de.</li>
+</ul>
+<p><strong>Q43.</strong> <code>[BRUNO]</code> Prazo de recebimento típico — o cliente paga à vista, parcela em 3, parcela em 10x com fábrica financiando, ou tem entrada + saldo na entrega?</p>
+<ul>
+<li>💡 fluxo de caixa. Se o cliente parcela em 10x, a BRW banca capital de giro — muda estratégia de crescimento.</li>
+</ul>
+<hr>
+<h2>Bloco 7 — Visão 12/24 meses + pedido explícito à Kolden (5 min)</h2>
+<p><strong>Objetivo:</strong> capturar o número que define sucesso e o que os sócios esperam da Kolden — sem deixar o Ronan vender proposta. Fechamento silencioso.</p>
+<h3>Perguntas</h3>
+<p><strong>Q44.</strong> <code>[TODOS]</code> Daqui a 12 meses — julho de 2027 — quando vocês sentam de novo comigo e falam &quot;foi um sucesso&quot;, o que mudou? Faturamento dobrou, entraram em 3 hotéis novos, fecharam 20 apartamentos de investidor, entraram em outra capital? Não precisa concordar — cada um diz o seu.</p>
+<ul>
+<li>💡 dispersão entre os 3 sócios aqui = alinhamento societário frágil. Convergência = sinal saudável.</li>
+</ul>
+<p><strong>Q45.</strong> <code>[BRUNO]</code> Nos últimos 12 meses, o que vocês já tentaram fazer para crescer que <strong>não deu certo</strong>? Uma campanha, um vendedor, um showroom novo, um parceiro, uma feira?</p>
+<ul>
+<li>💡 anotar sem interromper. Cada &quot;não deu certo&quot; é uma hipótese enterrada — a Kolden não deve ressuscitar sem entender por que morreu.</li>
+</ul>
+<p><strong>Q46.</strong> <code>[TODOS]</code> Última pergunta — se vocês pudessem esquecer todas as ideias que já discutiram, e testar <strong>UMA COISA nova</strong> nos próximos 30 dias com R$ 5 mil de investimento, o que seria?</p>
+<ul>
+<li>💡 pergunta-âncora clássica de Fitzpatrick para descolar do &quot;quero tudo&quot;. A resposta revela a prioridade real que eles não estão conseguindo executar sozinhos.</li>
+<li>💡 <strong>anotar literalmente as três respostas</strong>. Se convergirem, você tem a Onda 1 da Kolden pronta.</li>
+</ul>
+<p><strong>Fechamento falado pelo Ronan (30 segundos, dizer literalmente):</strong></p>
+<blockquote>
+<p>&quot;Ótimo. Anotei tudo aqui. Meu compromisso agora é: em até 5 dias, mando um resumo do que ouvi de vocês, para vocês corrigirem o que eu tiver entendido errado. Depois disso, a Kolden desenha uma proposta de trabalho baseada no que vocês contaram — não no que a Kolden acha que vocês precisam. Se fizer sentido, seguimos. Se não fizer, foi um bom papo. Combina?&quot;</p>
+</blockquote>
+<p><strong>Combinar os próximos passos:</strong></p>
+<ol>
+<li>Ronan envia resumo escrito por e-mail em 5 dias úteis.</li>
+<li>Kolden pede autorização para <strong>auditar histórico do WhatsApp comercial</strong> (últimos 6 meses, LGPD-compliant) — condição para diagnóstico real (Hipótese H3 do dossiê).</li>
+<li>Se autorização positiva, agenda-se follow-up de discovery com <strong>5 clientes reais</strong> da BRW (2 residenciais, 2 B2B, 1 vertical short-stay).</li>
+<li>Ronan pergunta se pode ligar de volta para um dos sócios sozinho para tirar dúvidas curtas nos próximos 15 dias.</li>
+</ol>
+<hr>
+<h2>Anexo A — Cheat-sheet de contradições narrativas (Ronan consulta durante a reunião, discretamente)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Contradição</th>
+<th>Como puxar na reunião (sem constranger)</th>
+<th>O que NÃO dizer</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>CNPJ tem 3 meses, bio IG diz &quot;30 anos&quot;, posts assinam &quot;Desde 1998&quot;, FB about diz &quot;há mais de 10 anos&quot;</td>
+<td>Q2, Q3, Q7 — deixar o sócio-histórico contar a linha do tempo dele. Depois: &quot;então, resumindo, o número que a gente pode contar com confiança é ______, certo?&quot;</td>
+<td>&quot;vocês estão se contradizendo em quatro canais&quot; · &quot;o 30 anos não fecha&quot; · &quot;de onde saiu o 1998?&quot;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>CNAE é comércio varejista + sede em Polo Industrial de Camaçari, mas comunicam &quot;preço de fábrica&quot;</td>
+<td>Q9, Q11 — perguntar chão de fábrica e cadeia de produção. Depois: &quot;então preço de fábrica é comunicação de posicionamento ou é literal?&quot;</td>
+<td>&quot;vocês são revenda, não fábrica&quot; · &quot;o CNAE não bate com a promessa&quot;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Categoria FB original é &quot;Consulting agency&quot;, não &quot;Furniture maker&quot;</td>
+<td>Q8 (a pergunta &quot;vocês são o quê?&quot;) — não trazer FB à tona; deixar eles próprios enunciarem se veem BRW como consultoria ou como movelaria</td>
+<td>&quot;seu Facebook diz que vocês são consultoria&quot;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3 telefones distintos vivos (fiscal, WhatsApp GMB, FB)</td>
+<td>Q6 — perguntar naturalmente qual é o telefone que os leads mais usam</td>
+<td>&quot;vocês têm 3 números diferentes na internet, é confuso&quot;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>LLC americana como sócia + família Maltez + sócio-administrador jovem em graduação</td>
+<td>Q5 primeiro, Q37 como segunda tentativa se travar. Aceitar recuo.</td>
+<td>&quot;quem é o dono de verdade?&quot; · &quot;vocês são fachada de outra coisa?&quot;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>SEFAZ-BA edital 09/2026 cita a BRW</td>
+<td>Q38 — só se rapport estiver firme e sobrar tempo. Sem tom de fiscal.</td>
+<td>&quot;vi que vocês estão devendo à Receita&quot; · &quot;sabemos que tem pendência&quot;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Três URLs de site mortas simultaneamente</td>
+<td>Q33 — revelação factual, tom de &quot;notei, achei estranho, queria confirmar&quot;</td>
+<td>&quot;o site de vocês está caído&quot; (dito com ar de julgamento) · &quot;isso é básico, como não sabem?&quot;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>541 IG followers depois de 10+ anos de marca, versus concorrente Alfa com 17,6 K</td>
+<td>NÃO puxar. É insight para a Kolden, não pauta para a reunião. Se o próprio sócio abrir &quot;temos poucos seguidores&quot;, validar sem julgar.</td>
+<td>&quot;vocês têm 32× menos seguidores que Alfa&quot;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Cadência conflitante de assinaturas (&quot;Desde 1998&quot; × &quot;Curadoria que permanece&quot; × &quot;Design que permanece&quot;)</td>
+<td>Q29 — perguntar quem escreve a copy e o que &quot;curadoria&quot; significa</td>
+<td>&quot;o Instagram de vocês não tem tagline consistente&quot;</td>
+</tr>
+</tbody></table>
+<p><strong>Regra de ouro:</strong> quando algum sócio-explicar-espontaneamente uma contradição, o Ronan <strong>agradece a explicação e passa adiante</strong>, sem &quot;vitória&quot; nem &quot;eu já sabia&quot;. A energia da reunião é parceria, não interrogatório.</p>
+<hr>
+<h2>Anexo B — Bank de perguntas de reserva (usar se sobrar tempo em qualquer bloco)</h2>
+<p><strong>B1.</strong> <code>[BRUNO]</code> Qual é a peça da linha atual (Megan, Flora, Chamonix, TRAMA…) que vende mais e por quê?</p>
+<p><strong>B2.</strong> <code>[BRUNO]</code> A visita técnica ao Singulari Alphaville Guarajuba — quem foi? Você foi presencial ou foi arquiteto parceiro que representou vocês?</p>
+<p><strong>B3.</strong> <code>[TODOS]</code> Se pudessem ter feito UM projeto que não fecharam nos últimos 24 meses, qual foi e por que caiu?</p>
+<p><strong>B4.</strong> <code>[SÓCIO-HISTÓRICO]</code> Como vocês entraram no radar da Iberostar em 2022? Foi licitação, foi indicação, foi trabalho anterior com um arquiteto?</p>
+<p><strong>B5.</strong> <code>[BRUNO]</code> Vocês participam da CASACOR Bahia (edições recentes)? Se sim, com que peça? Se não, por quê?</p>
+<p><strong>B6.</strong> <code>[TODOS]</code> Quando um cliente elogia vocês num WhatsApp depois da entrega, o que ele elogia — acabamento, prazo, atendimento, design, preço?</p>
+<p><strong>B7.</strong> <code>[BRUNO]</code> Quanto tempo em média entre &quot;vou fazer&quot; e &quot;entreguei&quot; para um projeto residencial médio? E para B2B?</p>
+<p><strong>B8.</strong> <code>[TODOS]</code> Se tivessem que dobrar a operação em 12 meses, qual é o gargalo interno hoje? Não é dinheiro para marketing — é gente, é fornecedor, é showroom, é sistema, é o quê?</p>
+<p><strong>B9.</strong> <code>[CATARINA]</code> Você tem PJ próprio desde 2022 — o que você aprendeu como empreendedora antes que trouxe para dentro da BRW? Onde vocês conversam mais sobre &quot;como profissionalizar&quot;?</p>
+<p><strong>B10.</strong> <code>[SÓCIO-HISTÓRICO]</code> Você teve outra empresa antes da BRW ou este é o primeiro negócio autoral?</p>
+<p><strong>B11.</strong> <code>[TODOS]</code> Ainda existe alguém que vocês respeitam como mentor no setor moveleiro (nacional ou local)?</p>
+<p><strong>B12.</strong> <code>[BRUNO]</code> Se pudessem contratar UMA pessoa amanhã com dinheiro sobrando, quem seria? Vendedor B2B, designer, arquiteto, financeiro, montador, marketing?</p>
+<p><strong>B13.</strong> <code>[TODOS]</code> A palavra &quot;atemporal&quot; apareceu 4 vezes na copy do IG — o que atemporal significa para vocês na prática, no chão do projeto?</p>
+<p><strong>B14.</strong> <code>[TODOS]</code> Uma última: o que vocês têm certeza absoluta de que a BRW <strong>nunca</strong> vai virar?</p>
+<p><strong>B15.</strong> <code>[BRUNO]</code> Se um cliente ligar amanhã pedindo um projeto de R$ 3 milhões que vocês nunca fizeram antes — o que precisa acontecer aqui dentro para vocês aceitarem?</p>
+<hr>
+<h2>Anexo C — Checklist de captura pós-reunião (Ronan preenche nas 2 horas após a reunião)</h2>
+<p>Prazo: até 2 horas depois do encerramento, ainda com a memória viva. Se deixar para o dia seguinte, o Ronan perde 50% dos detalhes.</p>
+<h3>Frases-âncora capturadas (voz literal do cliente)</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Resposta literal de cada sócio à Q8 (&quot;vocês são o quê?&quot;) — três frases lado a lado.</li>
+<li><input disabled="" type="checkbox"> Resposta literal de cada sócio à Q23 (&quot;para quem a BRW existe?&quot;) — três frases lado a lado.</li>
+<li><input disabled="" type="checkbox"> Resposta literal à Q24 (&quot;o que a BRW faz e ninguém mais faz?&quot;) — a frase de onlyness.</li>
+<li><input disabled="" type="checkbox"> Resposta literal à Q25 (&quot;o que a BRW não é?&quot;) — a frase de anti-posicionamento.</li>
+<li><input disabled="" type="checkbox"> Resposta literal à Q29 sobre o que &quot;curadoria&quot; significa para eles.</li>
+<li><input disabled="" type="checkbox"> Resposta literal à Q46 (&quot;o que testariam com R$ 5 mil em 30 dias?&quot;) — três respostas.</li>
+</ul>
+<h3>Fatos duros a transcrever</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Número interno de &quot;anos de BRW&quot; (Q7).</li>
+<li><input disabled="" type="checkbox"> Estrutura de produção real (chão próprio × terceirização × híbrido) e nome dos fabricantes se citados (Q11).</li>
+<li><input disabled="" type="checkbox"> Modelo de cobrança (venda × comissão × pacote fechado) por tipo de cliente (Q14).</li>
+<li><input disabled="" type="checkbox"> Lista dos últimos 3-5 clientes fechados (Q15) — nome, segmento, ordem de valor.</li>
+<li><input disabled="" type="checkbox"> Origem do maior cliente 24m (Q17) — canal e intermediário se houver.</li>
+<li><input disabled="" type="checkbox"> Objeção-gatilho no WhatsApp (Q18).</li>
+<li><input disabled="" type="checkbox"> Ciclo de venda médio em semanas/meses (Q19).</li>
+<li><input disabled="" type="checkbox"> Volume mensal de leads WhatsApp + taxas de conversão estimadas (Q20).</li>
+<li><input disabled="" type="checkbox"> Fechamento real (ou não) do vertical Airbnb (Q21).</li>
+<li><input disabled="" type="checkbox"> Top-1 razão de desistência (Q22).</li>
+<li><input disabled="" type="checkbox"> Quem cuida do IG (interno × agência × freelancer) e nome/preço se dito (Q31).</li>
+<li><input disabled="" type="checkbox"> Quem escreve a copy (Q32).</li>
+<li><input disabled="" type="checkbox"> Reação factual à revelação das URLs mortas (Q33) — surpresa, conhecimento, indiferença?</li>
+<li><input disabled="" type="checkbox"> Verba mensal atual de marketing em faixa (Q34).</li>
+<li><input disabled="" type="checkbox"> Ferramentas em uso (Q35).</li>
+<li><input disabled="" type="checkbox"> Histórico de Meta/Google Ads e acesso a gerenciador/pixel (Q36).</li>
+<li><input disabled="" type="checkbox"> Papel real da LLC americana (Q37), se destravou.</li>
+<li><input disabled="" type="checkbox"> Estado do SEFAZ 09/2026 (Q38), se destravou.</li>
+<li><input disabled="" type="checkbox"> Faixa de faturamento em mês bom (Q39).</li>
+<li><input disabled="" type="checkbox"> Sazonalidade (Q40).</li>
+<li><input disabled="" type="checkbox"> Ticket residencial médio (Q41).</li>
+<li><input disabled="" type="checkbox"> Ticket B2B típico (Q42).</li>
+<li><input disabled="" type="checkbox"> Prazo de recebimento (Q43).</li>
+</ul>
+<h3>Sinais interpessoais / linguagem corporal (Ronan anota impressões)</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Quem falou mais e quem falou menos.</li>
+<li><input disabled="" type="checkbox"> Alguém desviou olhar ou hesitou em pergunta específica? Qual? Anotar como flag para Nomos/time de discovery Kolden.</li>
+<li><input disabled="" type="checkbox"> Sinais de tensão entre sócios em algum tópico (LLC, SEFAZ, &quot;quem cuida do quê&quot;) — anotar como flag para time de discovery Kolden H5.</li>
+<li><input disabled="" type="checkbox"> Nível de energia geral dos sócios ao falar do vertical Airbnb (Q21) — animação ou constrangimento?</li>
+<li><input disabled="" type="checkbox"> O sócio-histórico realmente foi o portador da narrativa 2012-2013, ou outro sócio contou por ele?</li>
+</ul>
+<h3>Handoff imediato após transcrição</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Enviar transcrição + preenchimento deste checklist para <strong>time de discovery Kolden</strong> cruzar com Hipóteses H1-H5 do dossiê.</li>
+<li><input disabled="" type="checkbox"> Enviar frases-âncora para <strong>time de branding Kolden (brand-chief)</strong> iniciar rascunho de posicionamento e arquétipo.</li>
+<li><input disabled="" type="checkbox"> Enviar top-1 objeção + top-1 razão de desistência para <strong>time de copy Kolden</strong> iniciar rascunho de FAQ e resposta ao WhatsApp.</li>
+<li><input disabled="" type="checkbox"> Enviar ciclo de venda + volume de leads + verba para <strong>time de vendas Kolden (traffic-chief + kasim-aslam)</strong> dimensionar plano de mídia.</li>
+<li><input disabled="" type="checkbox"> Enviar estado das URLs para <strong>time de produto Kolden/time de web Kolden</strong> — briefing de LP mínima em 72h (H2 do dossiê).</li>
+<li><input disabled="" type="checkbox"> Enviar SEFAZ + LLC + CNAE para <strong>Nomos</strong> — due diligence de compliance como pré-requisito.</li>
+<li><input disabled="" type="checkbox"> Enviar faixa de faturamento + ticket médio + sazonalidade para <strong>Pactolo</strong> — unit economics de base.</li>
+<li><input disabled="" type="checkbox"> Marcar no radar de tarefas Kolden: pedido de autorização para auditar WhatsApp comercial (H3).</li>
+</ul>
+<h3>Ordem de escrita do resumo para o cliente (o que Ronan manda em 5 dias)</h3>
+<ol>
+<li>Uma frase de agradecimento (não bajulação).</li>
+<li>As <strong>3 frases-âncora</strong> de Q8 e Q23 devolvidas literalmente, com a devolutiva: &quot;foi assim que eu ouvi — se algo aqui não bate, me corrige&quot;.</li>
+<li>Um <strong>resumo de 5 bullets</strong> dos fatos duros mais importantes (número de anos, produção, ticket, ciclo, canal).</li>
+<li>Uma <strong>lista de 3 hipóteses</strong> que a Kolden vai testar antes de propor solução — sem prometer entrega, só descrever caminho.</li>
+<li>Combinar próximo encontro em 15 dias.</li>
+</ol>
+<hr>
+<p><strong>Assinado:</strong> time de discovery Kolden — da Kolden Validation da Kolden.
+<em>&quot;A verdade do mercado antes do custo de construir.&quot;</em></p>
+
+</body>
+</html>

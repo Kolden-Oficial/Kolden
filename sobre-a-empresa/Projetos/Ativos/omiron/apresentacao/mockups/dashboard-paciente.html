@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Omiron — Dashboard do paciente. Mockup visual fiel ao brandbook (Great Vibes + EB Garamond, dark-mode canônico, paleta dourado antigo sobre fundo profundo).">
+<title>Omiron · Dashboard · Camila Almeida</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================================
+   OMIRON — Tokens canônicos (fonte de verdade: design-system/02-tokens/tokens.css)
+   Dark-mode é identidade, não preferência. #FFF e #000 puros banidos.
+   ============================================================================ */
+:root {
+  /* Primitivas */
+  --omiron-fundo-profundo:    #141010;
+  --omiron-fundo-elevado:     #1E1712;
+  --omiron-fundo-marfim:      #EDE2CE;
+  --omiron-dourado-antigo:    #A88148;
+  --omiron-dourado-alto:      #C8A46C;
+  --omiron-marfim:            #EDE2CE;
+  --omiron-marfim-suave:      #B8AC93;
+  --omiron-ambar-crepusculo:  #C67A3E;
+  --omiron-ambar-terra:       #9E5528;
+  --omiron-marrom-couro:      #4A2E1A;
+  --omiron-verde-planta:      #5C7A3E;
+
+  /* Semânticas */
+  --omiron-background:            var(--omiron-fundo-profundo);
+  --omiron-foreground:            var(--omiron-marfim);
+  --omiron-card:                  var(--omiron-fundo-elevado);
+  --omiron-border:                rgb(168 129 72 / 0.3);
+  --omiron-border-forte:          rgb(168 129 72 / 0.55);
+  --omiron-primary:               var(--omiron-ambar-crepusculo);
+  --omiron-primary-hover:         #B96A2E;
+  --omiron-primary-foreground:    var(--omiron-marfim);
+  --omiron-accent:                var(--omiron-dourado-antigo);
+  --omiron-accent-alto:           var(--omiron-dourado-alto);
+  --omiron-muted-foreground:      var(--omiron-marfim-suave);
+  --omiron-destructive:           var(--omiron-ambar-terra);
+  --omiron-papiro:                var(--omiron-fundo-marfim);
+  --omiron-papiro-foreground:     var(--omiron-marrom-couro);
+
+  /* Superfície papiro — fallback linear-gradient (texturas WebP oficiais pendentes) */
+  --omiron-superficie-papiro:
+    radial-gradient(ellipse at 20% 15%, rgba(168, 129, 72, 0.10) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 85%, rgba(74, 46, 26, 0.12) 0%, transparent 60%),
+    linear-gradient(180deg, #EDE2CE 0%, #D4C4A0 100%);
+
+  /* Spacing — base 4px */
+  --sp-1:  0.25rem;
+  --sp-2:  0.5rem;
+  --sp-3:  0.75rem;
+  --sp-4:  1rem;
+  --sp-6:  1.5rem;
+  --sp-8:  2rem;
+  --sp-12: 3rem;
+
+  /* Radius contido */
+  --r-sm:   4px;
+  --r-md:   8px;
+  --r-lg:   12px;
+  --r-xl:   16px;
+  --r-full: 9999px;
+
+  /* Sombras */
+  --shadow-suave:
+    0 4px 12px rgb(0 0 0 / 0.4),
+    0 1px 3px rgb(0 0 0 / 0.3);
+  --shadow-imperial:
+    0 0 0 1px rgb(168 129 72 / 0.4),
+    0 8px 24px rgb(0 0 0 / 0.5),
+    0 2px 6px rgb(168 129 72 / 0.15);
+
+  /* Motion (mais lento que apps modernos) */
+  --dur-rapida: 120ms;
+  --dur-media:  200ms;
+  --dur-lenta:  320ms;
+  --ease:       cubic-bezier(0.4, 0.0, 0.2, 1.0);
+  --ease-solene: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+
+  /* Tipografia */
+  --font-titulo: "Great Vibes", "Snell Roundhand", "Apple Chancery", cursive;
+  --font-corpo:  "EB Garamond", "Garamond", "Cormorant Garamond", "Georgia", "Palatino Linotype", serif;
+
+  /* Escala (terça maior 1.250) */
+  --fs-caption:  0.75rem;
+  --fs-body-sm:  0.875rem;
+  --fs-body:     1rem;
+  --fs-body-lg:  1.125rem;
+  --fs-h5:       1.25rem;
+  --fs-h4:       1.563rem;
+  --fs-h3:       1.953rem;
+  --fs-h2:       2.441rem;
+  --fs-h1:       3.052rem;
+  --fs-display:  3.815rem;
+
+  --lh-hero:  1.05;
+  --lh-h:     1.2;
+  --lh-body:  1.65;
+}
+
+/* Reset contido */
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  color-scheme: dark;
+  background-color: var(--omiron-background);
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--omiron-background);
+  color: var(--omiron-foreground);
+  font-family: var(--font-corpo);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+h1, h2, h3, h4, h5 { margin: 0; font-family: var(--font-corpo); font-weight: 500; line-height: var(--lh-h); }
+p { margin: 0; }
+ul { list-style: none; margin: 0; padding: 0; }
+:focus-visible {
+  outline: 2px solid var(--omiron-accent);
+  outline-offset: 3px;
+  border-radius: var(--r-sm);
+}
+
+/* Helpers de marca */
+.tabular { font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1; }
+.hero-cursivo { font-family: var(--font-titulo); font-weight: 400; font-style: normal; letter-spacing: 0.01em; }
+.citacao {
+  font-family: var(--font-corpo);
+  font-style: italic;
+  font-weight: 400;
+}
+.enfase-clinica { font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* ============================================================================
+   LAYOUT — Container principal
+   ============================================================================ */
+.app {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 var(--sp-4);
+}
+
+@media (min-width: 768px) {
+  .app { padding: 0 var(--sp-8); }
+}
+
+/* ============================================================================
+   HEADER
+   ============================================================================ */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(20, 16, 16, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--omiron-border);
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-4) 0;
+  gap: var(--sp-4);
+}
+.brasao {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  color: var(--omiron-accent);
+}
+.brasao__mark {
+  width: 36px;
+  height: 36px;
+  color: var(--omiron-accent-alto);
+}
+.brasao__nome {
+  font-family: var(--font-titulo);
+  font-size: 1.75rem;
+  line-height: 1;
+  color: var(--omiron-accent-alto);
+  padding-top: 4px;
+}
+.brasao__clinica {
+  font-size: var(--fs-caption);
+  color: var(--omiron-muted-foreground);
+  letter-spacing: 0.02em;
+  display: none;
+}
+@media (min-width: 640px) {
+  .brasao__clinica { display: inline; margin-left: var(--sp-2); border-left: 1px solid var(--omiron-border); padding-left: var(--sp-3); }
+}
+.header__acoes {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+.icon-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--r-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--omiron-marfim-suave);
+  transition: color var(--dur-media) var(--ease), background var(--dur-media) var(--ease);
+}
+.icon-btn:hover { color: var(--omiron-accent-alto); background: rgba(168, 129, 72, 0.08); }
+.icon-btn__badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  background: var(--omiron-ambar-crepusculo);
+  border-radius: var(--r-full);
+  box-shadow: 0 0 0 2px var(--omiron-fundo-profundo);
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--r-full);
+  border: 1.5px solid var(--omiron-accent);
+  padding: 2px;
+  background: var(--omiron-fundo-elevado);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.avatar__foto {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--r-full);
+  background: linear-gradient(135deg, #3a2820 0%, #6b4a2e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-corpo);
+  font-weight: 500;
+  color: var(--omiron-marfim);
+  font-size: var(--fs-body-sm);
+  letter-spacing: 0.05em;
+}
+
+/* ============================================================================
+   HERO — Frase do dia sobre papiro
+   ============================================================================ */
+.hero {
+  padding: var(--sp-8) 0 var(--sp-6);
+}
+.hero__saudacao {
+  color: var(--omiron-accent-alto);
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  line-height: var(--lh-hero);
+  margin-bottom: var(--sp-2);
+}
+.hero__meta {
+  font-size: var(--fs-body-sm);
+  color: var(--omiron-muted-foreground);
+  letter-spacing: 0.02em;
+  margin-bottom: var(--sp-6);
+}
+.papiro {
+  position: relative;
+  background: var(--omiron-superficie-papiro);
+  color: var(--omiron-papiro-foreground);
+  border-radius: var(--r-xl);
+  padding: var(--sp-8) var(--sp-6);
+  box-shadow: var(--shadow-imperial);
+  overflow: hidden;
+}
+.papiro::before,
+.papiro::after {
+  content: "";
+  position: absolute;
+  color: rgba(74, 46, 26, 0.35);
+  font-family: var(--font-corpo);
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.papiro::before { top: var(--sp-4); left: var(--sp-6); }
+.papiro::after  { bottom: var(--sp-2); right: var(--sp-6); transform: rotate(180deg); }
+.papiro__quote {
+  font-family: var(--font-corpo);
+  font-style: italic;
+  font-size: var(--fs-h5);
+  line-height: 1.55;
+  max-width: 62ch;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--omiron-papiro-foreground);
+}
+.papiro__autor {
+  text-align: center;
+  margin-top: var(--sp-4);
+  font-size: var(--fs-body-sm);
+  color: rgba(74, 46, 26, 0.75);
+  letter-spacing: 0.03em;
+}
+.papiro__autor strong { font-weight: 600; }
+.papiro__contador {
+  position: absolute;
+  top: var(--sp-4);
+  right: var(--sp-6);
+  font-size: var(--fs-caption);
+  color: rgba(74, 46, 26, 0.55);
+  letter-spacing: 0.05em;
+}
+
+/* ============================================================================
+   SEÇÕES — título de seção
+   ============================================================================ */
+.secao {
+  padding: var(--sp-8) 0 var(--sp-4);
+}
+.secao__titulo {
+  font-size: var(--fs-h4);
+  color: var(--omiron-marfim);
+  margin-bottom: var(--sp-2);
+  font-weight: 500;
+}
+.secao__sub {
+  font-size: var(--fs-body-sm);
+  color: var(--omiron-muted-foreground);
+  margin-bottom: var(--sp-6);
+  max-width: 60ch;
+}
+
+/* ============================================================================
+   PLANTA + STREAK
+   ============================================================================ */
+.jardim {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-6);
+  padding: var(--sp-6);
+  background: var(--omiron-card);
+  border: 1px solid var(--omiron-border);
+  border-radius: var(--r-lg);
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .jardim { grid-template-columns: 220px 1fr; gap: var(--sp-8); padding: var(--sp-8); }
+}
+.planta {
+  background: radial-gradient(circle at 50% 60%, rgba(92, 122, 62, 0.10) 0%, transparent 70%);
+  border-radius: var(--r-lg);
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform var(--dur-lenta) var(--ease-solene);
+  user-select: none;
+}
+.planta:hover { transform: translateY(-2px); }
+.planta svg { width: 100%; max-width: 180px; height: auto; }
+.planta__estagio {
+  margin-top: var(--sp-3);
+  font-size: var(--fs-body-sm);
+  color: var(--omiron-accent-alto);
+  letter-spacing: 0.05em;
+}
+.planta__hint {
+  font-size: var(--fs-caption);
+  color: var(--omiron-muted-foreground);
+  margin-top: var(--sp-1);
+  opacity: 0.7;
+}
+.streak__label {
+  font-size: var(--fs-body-sm);
+  color: var(--omiron-muted-foreground);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--sp-2);
+}
+.streak__valor {
+  font-size: clamp(3.2rem, 8vw, 4.5rem);
+  color: var(--omiron-accent-alto);
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: var(--sp-1);
+}
+.streak__dias {
+  font-size: var(--fs-body);
+  color: var(--omiron-marfim-suave);
+  margin-bottom: var(--sp-6);
+}
+.streak__progresso-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-caption);
+  color: var(--omiron-muted-foreground);
+  margin-bottom: var(--sp-2);
+  letter-spacing: 0.03em;
+}
+.progresso-barra {
+  height: 6px;
+  background: rgba(168, 129, 72, 0.15);
+  border-radius: var(--r-full);
+  overflow: hidden;
+  position: relative;
+}
+.progresso-barra__preenchido {
+  height: 100%;
+  background: linear-gradient(90deg, var(--omiron-accent) 0%, var(--omiron-accent-alto) 100%);
+  border-radius: var(--r-full);
+  transition: width var(--dur-lenta) var(--ease-solene);
+}
+
+/* ============================================================================
+   7 ÁREAS DE MONITORAMENTO
+   ============================================================================ */
+.areas {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--sp-3);
+}
+@media (min-width: 480px) { .areas { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 768px) { .areas { grid-template-columns: repeat(3, 1fr); gap: var(--sp-4); } }
+@media (min-width: 1024px) { .areas { grid-template-columns: repeat(4, 1fr); } }
+
+.area {
+  position: relative;
+  background: var(--omiron-card);
+  border: 1px solid var(--omiron-border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  transition: border-color var(--dur-media) var(--ease), transform var(--dur-media) var(--ease);
+  text-align: left;
+  width: 100%;
+  min-height: 168px;
+}
+.area:hover { border-color: var(--omiron-border-forte); transform: translateY(-1px); }
+.area--concluida { border-color: var(--omiron-accent); }
+.area--concluida::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(168, 129, 72, 0.06) 100%);
+  border-radius: var(--r-lg);
+  pointer-events: none;
+}
+.area__topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+.area__icone {
+  width: 40px;
+  height: 40px;
+  color: var(--omiron-accent-alto);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.area__icone svg { width: 100%; height: 100%; }
+.area__check {
+  width: 24px;
+  height: 24px;
+  border: 1.5px solid var(--omiron-border-forte);
+  border-radius: var(--r-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--omiron-marfim);
+  transition: all var(--dur-media) var(--ease);
+}
+.area--concluida .area__check {
+  background: var(--omiron-accent);
+  border-color: var(--omiron-accent);
+}
+.area__check svg { width: 14px; height: 14px; opacity: 0; transition: opacity var(--dur-media) var(--ease); }
+.area--concluida .area__check svg { opacity: 1; }
+.area__nome {
+  font-size: var(--fs-body-lg);
+  color: var(--omiron-marfim);
+  font-weight: 500;
+  margin-top: var(--sp-2);
+}
+.area__meta {
+  font-size: var(--fs-body-sm);
+  color: var(--omiron-muted-foreground);
+  margin-top: auto;
+}
+.area__nota {
+  color: var(--omiron-accent-alto);
+  font-weight: 500;
+}
+.area__cta {
+  font-size: var(--fs-body-sm);
+  color: var(--omiron-primary);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+}
+.area--concluida .area__cta { display: none; }
+.area__contador {
+  font-size: var(--fs-h5);
+  color: var(--omiron-accent-alto);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  margin-top: var(--sp-2);
+}
+.area__contador small {
+  font-size: var(--fs-body-sm);
+  color: var(--omiron-muted-foreground);
+  font-weight: 400;
+}
+
+/* ============================================================================
+   MÉTRICAS DA SEMANA
+   ============================================================================ */
+.metricas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+}
+@media (min-width: 768px) { .metricas { grid-template-columns: repeat(3, 1fr); } }
+
+.metrica {
+  background: var(--omiron-card);
+  border: 1px solid var(--omiron-border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  min-height: 200px;
+}
+.metrica__label {
+  font-size: var(--fs-caption);
+  color: var(--omiron-muted-foreground);
+  letter-spacing: 0.08em;
+}
+.metrica__valor {
+  font-size: var(--fs-h2);
+  color: var(--omiron-marfim);
+  font-weight: 500;
+  line-height: 1;
+}
+.metrica__sub {
+  font-size: var(--fs-body-sm);
+  color: var(--omiron-muted-foreground);
+  margin-top: auto;
+}
+.metrica__evolucao svg {
+  width: 100%;
+  height: 80px;
+  display: block;
+  margin-top: var(--sp-2);
+}
+.metrica__consulta-titulo {
+  font-size: var(--fs-body-lg);
+  color: var(--omiron-marfim);
+  font-weight: 500;
+}
+.metrica__consulta-meta {
+  font-size: var(--fs-body-sm);
+  color: var(--omiron-muted-foreground);
+}
+
+/* Anel circular de progresso */
+.ring {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  margin-top: var(--sp-2);
+}
+.ring svg { transform: rotate(-90deg); }
+.ring__track  { fill: none; stroke: rgba(168, 129, 72, 0.15); stroke-width: 8; }
+.ring__valor  { fill: none; stroke: var(--omiron-accent); stroke-width: 8; stroke-linecap: round; transition: stroke-dashoffset var(--dur-lenta) var(--ease-solene); }
+.ring__label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-h4);
+  color: var(--omiron-accent-alto);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============================================================================
+   BOTÕES CANÔNICOS
+   ============================================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  padding: var(--sp-3) var(--sp-6);
+  border-radius: var(--r-md);
+  font-family: var(--font-corpo);
+  font-size: var(--fs-body-lg);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: background var(--dur-media) var(--ease), transform var(--dur-rapida) var(--ease);
+  text-decoration: none;
+  min-height: 44px;
+}
+.btn:active { transform: translateY(1px); }
+.btn--primary {
+  background: var(--omiron-primary);
+  color: var(--omiron-primary-foreground);
+}
+.btn--primary:hover { background: var(--omiron-primary-hover); }
+.btn--ghost {
+  background: transparent;
+  color: var(--omiron-accent-alto);
+  border: 1px solid var(--omiron-border-forte);
+}
+.btn--ghost:hover { background: rgba(168, 129, 72, 0.08); }
+.btn--sm { padding: var(--sp-2) var(--sp-4); font-size: var(--fs-body); min-height: 36px; }
+
+/* ============================================================================
+   PRÓXIMA AÇÃO SUGERIDA
+   ============================================================================ */
+.destaque {
+  margin-top: var(--sp-6);
+  background: linear-gradient(135deg, rgba(198, 122, 62, 0.15) 0%, rgba(168, 129, 72, 0.08) 100%);
+  border: 1px solid rgba(198, 122, 62, 0.35);
+  border-radius: var(--r-xl);
+  padding: var(--sp-8) var(--sp-6);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-6);
+  align-items: center;
+}
+@media (min-width: 768px) { .destaque { grid-template-columns: 1fr auto; padding: var(--sp-8); } }
+.destaque__label {
+  font-size: var(--fs-caption);
+  color: var(--omiron-ambar-crepusculo);
+  letter-spacing: 0.08em;
+  margin-bottom: var(--sp-2);
+  font-weight: 600;
+}
+.destaque__titulo {
+  font-size: var(--fs-h3);
+  color: var(--omiron-marfim);
+  margin-bottom: var(--sp-2);
+  font-weight: 500;
+  line-height: 1.25;
+}
+.destaque__sub {
+  font-size: var(--fs-body);
+  color: var(--omiron-marfim-suave);
+  max-width: 55ch;
+}
+
+/* ============================================================================
+   RODAPÉ — Navegação secundária
+   ============================================================================ */
+.rodape {
+  margin-top: var(--sp-12);
+  padding: var(--sp-8) 0 var(--sp-12);
+  border-top: 1px solid var(--omiron-border);
+}
+.rodape__nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-2);
+}
+@media (min-width: 640px) { .rodape__nav { grid-template-columns: repeat(4, 1fr); } }
+.rodape__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-4);
+  border-radius: var(--r-md);
+  color: var(--omiron-marfim-suave);
+  transition: color var(--dur-media) var(--ease), background var(--dur-media) var(--ease);
+  text-align: center;
+}
+.rodape__link:hover { color: var(--omiron-accent-alto); background: rgba(168, 129, 72, 0.05); }
+.rodape__link svg { width: 28px; height: 28px; }
+.rodape__link span { font-size: var(--fs-body-sm); }
+.rodape__assinatura {
+  margin-top: var(--sp-8);
+  text-align: center;
+  font-size: var(--fs-caption);
+  color: var(--omiron-muted-foreground);
+  letter-spacing: 0.05em;
+}
+.rodape__assinatura em {
+  font-family: var(--font-titulo);
+  font-style: normal;
+  font-size: var(--fs-body-lg);
+  color: var(--omiron-accent-alto);
+  vertical-align: -3px;
+  margin: 0 var(--sp-1);
+}
+
+/* ============================================================================
+   MODAL — placeholder
+   ============================================================================ */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 16, 16, 0.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 40;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-4);
+  animation: fade-in var(--dur-media) var(--ease);
+}
+.modal-overlay.aberto { display: flex; }
+.modal {
+  background: var(--omiron-card);
+  border: 1px solid var(--omiron-border);
+  border-radius: var(--r-xl);
+  padding: var(--sp-8);
+  max-width: 460px;
+  width: 100%;
+  box-shadow: var(--shadow-imperial);
+}
+.modal__titulo {
+  font-family: var(--font-titulo);
+  font-size: var(--fs-h2);
+  color: var(--omiron-accent-alto);
+  margin-bottom: var(--sp-4);
+  line-height: 1;
+}
+.modal__texto {
+  font-size: var(--fs-body);
+  color: var(--omiron-marfim-suave);
+  margin-bottom: var(--sp-6);
+}
+.modal__acoes { display: flex; justify-content: flex-end; }
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Screen-reader only */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- =============================================================
+     HEADER
+     ============================================================= -->
+<header class="header" role="banner">
+  <div class="app header__inner">
+    <div class="brasao" aria-label="Omiron — Clínica Ariosto Filho">
+      <svg class="brasao__mark" viewBox="0 0 48 48" aria-hidden="true" fill="none">
+        <!-- Ornamento coríntio estilizado + Ω central -->
+        <path d="M6 40 Q6 30 12 26 Q6 20 8 12 Q16 8 24 12 Q32 8 40 12 Q42 20 36 26 Q42 30 42 40" stroke="currentColor" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.4"/>
+        <path d="M14 34 Q14 22 24 22 Q34 22 34 34 L30 34 Q30 26 24 26 Q18 26 18 34 Z" fill="currentColor"/>
+        <path d="M10 34 L18 34 M30 34 L38 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="24" cy="14" r="1.5" fill="currentColor" opacity="0.7"/>
+      </svg>
+      <span class="brasao__nome">Omiron</span>
+      <span class="brasao__clinica">Clínica Ariosto Filho</span>
+    </div>
+
+    <div class="header__acoes">
+      <button class="icon-btn" type="button" aria-label="Notificações">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3a6 6 0 0 0-6 6c0 4-2 6-2 6h16s-2-2-2-6a6 6 0 0 0-6-6Z"/>
+          <path d="M10 20a2 2 0 0 0 4 0"/>
+        </svg>
+        <span class="icon-btn__badge" aria-hidden="true"></span>
+        <span class="sr-only">2 notificações não lidas</span>
+      </button>
+
+      <button class="icon-btn" type="button" aria-label="Configurações">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/>
+        </svg>
+      </button>
+
+      <button class="avatar" type="button" aria-label="Perfil de Camila Almeida">
+        <span class="avatar__foto" aria-hidden="true">CA</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="app" role="main">
+
+  <!-- =============================================================
+       HERO — Saudação + Frase do dia
+       ============================================================= -->
+  <section class="hero" aria-labelledby="hero-saudacao">
+    <h1 class="hero-cursivo hero__saudacao" id="hero-saudacao">Bom dia, Camila</h1>
+    <p class="hero__meta"><span class="tabular">Quinta-feira, 11 de agosto</span> · Dia 42 da sua jornada</p>
+
+    <article class="papiro" aria-labelledby="frase-dia">
+      <span class="papiro__contador tabular">Dia 11 · Frase 11 de 31</span>
+      <p class="papiro__quote citacao" id="frase-dia">
+        Não é o que nos acontece, mas o que fazemos com o que nos acontece
+        que determina a qualidade das nossas vidas.
+      </p>
+      <p class="papiro__autor"><strong>Epicteto</strong> · <em>Discursos</em>, séc. II d.C.</p>
+    </article>
+  </section>
+
+  <!-- =============================================================
+       PLANTA VIRTUAL + STREAK
+       ============================================================= -->
+  <section class="secao" aria-labelledby="secao-jardim">
+    <h2 class="secao__titulo" id="secao-jardim">Sua jornada</h2>
+    <p class="secao__sub">Cada dia com check-in nutre sua planta. Continue e ela crescerá até se tornar árvore.</p>
+
+    <div class="jardim">
+      <button class="planta" id="planta" type="button" data-estagio="1" aria-label="Planta em estágio Muda — clique para ver os outros estágios">
+        <svg viewBox="0 0 160 200" aria-hidden="true">
+          <!-- Vaso (marrom couro) -->
+          <path d="M40 165 L120 165 L112 195 L48 195 Z" fill="#4A2E1A"/>
+          <rect x="36" y="160" width="88" height="8" fill="#3a2416" rx="1"/>
+          <!-- Terra -->
+          <ellipse cx="80" cy="162" rx="42" ry="4" fill="#2a1810"/>
+          <!-- Planta — SVG dinâmico injetado por JS -->
+          <g id="planta-arte"></g>
+        </svg>
+        <span class="planta__estagio" id="planta-estagio">Muda · 30 dias</span>
+        <span class="planta__hint">Clique para prever estágios</span>
+      </button>
+
+      <div class="streak">
+        <p class="streak__label">Sequência atual</p>
+        <p class="streak__valor tabular"><span id="streak-numero">42</span></p>
+        <p class="streak__dias">dias consecutivos de cuidado</p>
+
+        <div class="streak__progresso-label">
+          <span>Próximo marco</span>
+          <span class="tabular"><strong>60 dias</strong> · 18 restantes</span>
+        </div>
+        <div class="progresso-barra" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="70% até o próximo marco">
+          <div class="progresso-barra__preenchido" style="width: 70%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       7 ÁREAS DE MONITORAMENTO
+       ============================================================= -->
+  <section class="secao" aria-labelledby="secao-areas">
+    <h2 class="secao__titulo" id="secao-areas">Check-in de hoje</h2>
+    <p class="secao__sub">5 de 7 áreas registradas. Toque em uma área pendente para completar seu check-in do dia.</p>
+
+    <div class="areas" id="areas-lista">
+      <!-- Cards injetados por JS -->
+    </div>
+  </section>
+
+  <!-- =============================================================
+       MÉTRICAS DA SEMANA
+       ============================================================= -->
+  <section class="secao" aria-labelledby="secao-metricas">
+    <h2 class="secao__titulo" id="secao-metricas">Sua semana</h2>
+    <p class="secao__sub">Como você está se cuidando nos últimos 7 dias.</p>
+
+    <div class="metricas">
+      <article class="metrica" aria-labelledby="m1-label">
+        <span class="metrica__label" id="m1-label">Taxa de check-in</span>
+        <div class="ring" role="img" aria-label="76% de check-ins completos">
+          <svg viewBox="0 0 100 100" width="96" height="96">
+            <circle class="ring__track" cx="50" cy="50" r="42"/>
+            <circle class="ring__valor" cx="50" cy="50" r="42"
+                    stroke-dasharray="263.9"
+                    stroke-dashoffset="63.3"/>
+          </svg>
+          <span class="ring__label tabular">76%</span>
+        </div>
+        <p class="metrica__sub">37 de 49 check-ins possíveis na semana.</p>
+      </article>
+
+      <article class="metrica" aria-labelledby="m2-label">
+        <span class="metrica__label" id="m2-label">Evolução do humor · 30 dias</span>
+        <p class="metrica__valor tabular">7,2</p>
+        <div class="metrica__evolucao" role="img" aria-label="Gráfico de humor dos últimos 30 dias — tendência de melhora">
+          <svg viewBox="0 0 320 80" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="grad-humor" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#A88148" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#A88148" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <!-- Sparkline pontos: 30 dias, escala 1-10 (invertido) -->
+            <path d="M0,60 L11,55 L22,58 L33,52 L44,48 L55,50 L66,45 L77,42 L88,44 L99,38 L110,40 L121,35 L132,32 L143,36 L154,30 L165,28 L176,32 L187,25 L198,22 L209,26 L220,20 L231,24 L242,18 L253,15 L264,20 L275,14 L286,12 L297,16 L308,10 L320,8 L320,80 L0,80 Z"
+                  fill="url(#grad-humor)"/>
+            <path d="M0,60 L11,55 L22,58 L33,52 L44,48 L55,50 L66,45 L77,42 L88,44 L99,38 L110,40 L121,35 L132,32 L143,36 L154,30 L165,28 L176,32 L187,25 L198,22 L209,26 L220,20 L231,24 L242,18 L253,15 L264,20 L275,14 L286,12 L297,16 L308,10 L320,8"
+                  fill="none" stroke="#C8A46C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="320" cy="8" r="3.5" fill="#C8A46C"/>
+          </svg>
+        </div>
+        <p class="metrica__sub"><span class="enfase-clinica">+1,4</span> em relação ao mês anterior (5,8 → 7,2).</p>
+      </article>
+
+      <article class="metrica" aria-labelledby="m3-label">
+        <span class="metrica__label" id="m3-label">Próximo retorno</span>
+        <p class="metrica__consulta-titulo tabular">Sexta, 14 de agosto</p>
+        <p class="metrica__consulta-meta"><span class="tabular">15h30</span> · Dr. Ariosto Filho</p>
+        <button class="btn btn--ghost btn--sm" type="button" data-modal="escala" style="margin-top: auto; align-self: flex-start;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+            <path d="M14 2v6h6M9 15h6M9 11h6"/>
+          </svg>
+          Preencher escala HAM-A
+        </button>
+      </article>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       PRÓXIMA AÇÃO SUGERIDA (CTA principal)
+       ============================================================= -->
+  <section aria-labelledby="acao-titulo">
+    <div class="destaque">
+      <div>
+        <p class="destaque__label">Sugestão de hoje · Gestão de estresse</p>
+        <h3 class="destaque__titulo hero-cursivo" style="font-size: clamp(2rem, 4vw, 2.4rem);" id="acao-titulo">
+          Respiração 4-7-8, cinco minutos
+        </h3>
+        <p class="destaque__sub">
+          Uma prática breve e discreta, gravada pelo Dr. Ariosto. Boa para o intervalo do trabalho — ou antes de dormir, quando o pensamento acelera.
+        </p>
+      </div>
+      <button class="btn btn--primary" type="button" data-modal="meditacao">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <path d="M6 4l14 8-14 8V4z"/>
+        </svg>
+        Ouvir agora
+      </button>
+    </div>
+  </section>
+
+  <!-- =============================================================
+       RODAPÉ
+       ============================================================= -->
+  <footer class="rodape" role="contentinfo">
+    <nav class="rodape__nav" aria-label="Acessos secundários">
+      <a class="rodape__link" href="#" data-modal="stub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        <span>Conversar com o médico</span>
+      </a>
+      <a class="rodape__link" href="#" data-modal="stub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+          <line x1="8"  y1="2" x2="8"  y2="6"/>
+          <line x1="3"  y1="10" x2="21" y2="10"/>
+        </svg>
+        <span>Calendário e retornos</span>
+      </a>
+      <a class="rodape__link" href="#" data-modal="stub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 22s-8-4.5-8-11.5A5.5 5.5 0 0 1 12 5a5.5 5.5 0 0 1 8 5.5C20 17.5 12 22 12 22z" fill="none"/>
+          <circle cx="12" cy="10" r="2.5"/>
+        </svg>
+        <span>Jardim coletivo</span>
+      </a>
+      <a class="rodape__link" href="#" data-modal="stub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+        </svg>
+        <span>Biblioteca do Dr. Ariosto</span>
+      </a>
+    </nav>
+
+    <p class="rodape__assinatura">
+      Omiron <em>·</em> Monitoramento próximo. Tratamento real. <em>·</em> Clínica Ariosto Filho
+    </p>
+  </footer>
+</main>
+
+<!-- =============================================================
+     MODAL — placeholder
+     ============================================================= -->
+<div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+  <div class="modal">
+    <h2 class="modal__titulo" id="modal-titulo">Em breve</h2>
+    <p class="modal__texto" id="modal-texto">
+      Esta é uma pré-visualização visual do Omiron. A funcionalidade real está sendo construída pela equipe da Kolden — em Next.js, Prisma e Supabase.
+    </p>
+    <div class="modal__acoes">
+      <button class="btn btn--ghost btn--sm" type="button" id="modal-fechar">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================================
+   Dados fictícios do paciente Camila Almeida
+   Mockup — não persiste, não integra a banco.
+   ============================================================================ */
+const AREAS = [
+  { id: 'medicacao',     nome: 'Medicação',          concluida: true,  nota: 9, sub: 'Escitalopram 10mg · 07h12' },
+  { id: 'alimentacao',   nome: 'Alimentação',        concluida: true,  nota: 7, sub: 'Três refeições · sem beliscar' },
+  { id: 'movimento',     nome: 'Movimento',          concluida: true,  nota: 8, sub: 'Caminhada 32 minutos' },
+  { id: 'conexoes',      nome: 'Conexões sociais',   concluida: true,  nota: 8, sub: 'Almoço com a irmã' },
+  { id: 'estresse',      nome: 'Gestão de estresse', concluida: false, sub:  'Meditação sugerida disponível' },
+  { id: 'produtividade', nome: 'Produtividade',      concluida: true,  nota: 6, sub: 'Fechou 2 de 3 blocos do dia' },
+  { id: 'toxicos',       nome: 'Tóxicos',            concluida: false, contador: 87, contadorLabel: 'dias sem álcool' }
+];
+
+/* ---------------------------------------------------------------
+   Ícones SVG autorais (traço fino, sem emoji)
+   --------------------------------------------------------------- */
+const ICONES = {
+  medicacao:   '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="12" width="24" height="10" rx="5"/><line x1="16" y1="12" x2="16" y2="22"/></svg>',
+  alimentacao: '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4v14"/><path d="M9 4v6a3 3 0 0 0 3 3h0"/><path d="M13 4v6"/><path d="M23 4c-2 0-4 3-4 8s2 6 4 6v10"/></svg>',
+  movimento:   '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="6" r="2.5"/><path d="M12 28l4-8 4 4 6-2"/><path d="M8 18l6-4 2 6"/></svg>',
+  conexoes:    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="3.5"/><circle cx="22" cy="12" r="3"/><path d="M4 26c0-4 3-7 7-7s7 3 7 7"/><path d="M17 22c1-2 3-3.5 5.5-3.5S27 20 28 22"/></svg>',
+  estresse:    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22c2 0 3-2 5-2s3 2 5 2 3-2 5-2 3 2 5 2"/><path d="M6 16c2 0 3-2 5-2s3 2 5 2 3-2 5-2 3 2 5 2"/><path d="M6 10c2 0 3-2 5-2s3 2 5 2 3-2 5-2 3 2 5 2"/></svg>',
+  produtividade:'<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="20" height="18" rx="2"/><path d="M11 4v6M21 4v6"/><path d="M11 16h6M11 20h10"/></svg>',
+  toxicos:     '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4h8v6l4 12a3 3 0 0 1-3 4H11a3 3 0 0 1-3-4l4-12z"/><line x1="10" y1="16" x2="22" y2="16"/></svg>',
+  check:       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"/></svg>',
+  seta:        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>'
+};
+
+/* ---------------------------------------------------------------
+   Renderização dos cards das 7 áreas
+   --------------------------------------------------------------- */
+function renderAreas() {
+  const lista = document.getElementById('areas-lista');
+  lista.innerHTML = AREAS.map(area => {
+    const meta = area.contador
+      ? `<p class="area__contador tabular">${area.contador} <small>${area.contadorLabel}</small></p>`
+      : area.concluida
+        ? `<p class="area__meta">${area.sub || ''} · <span class="area__nota tabular">${area.nota}/10</span></p>`
+        : `<p class="area__meta">${area.sub || ''}</p><span class="area__cta">Fazer check-in ${ICONES.seta}</span>`;
+
+    return `
+      <button class="area ${area.concluida ? 'area--concluida' : ''}" type="button" data-area="${area.id}" aria-pressed="${area.concluida}">
+        <div class="area__topo">
+          <span class="area__icone" aria-hidden="true">${ICONES[area.id]}</span>
+          <span class="area__check" aria-hidden="true">${ICONES.check}</span>
+        </div>
+        <p class="area__nome">${area.nome}</p>
+        ${meta}
+      </button>
+    `;
+  }).join('');
+
+  lista.querySelectorAll('.area').forEach(el => {
+    el.addEventListener('click', () => {
+      const id = el.dataset.area;
+      const area = AREAS.find(a => a.id === id);
+      if (!area) return;
+      // Área "Tóxicos" abre modal (não é toggle simples).
+      if (area.contador !== undefined) { abrirModal('toxicos'); return; }
+      area.concluida = !area.concluida;
+      if (area.concluida && !area.nota) area.nota = 7;
+      renderAreas();
+    });
+  });
+}
+
+/* ---------------------------------------------------------------
+   Planta virtual — 4 estágios (broto, muda, adulta, árvore)
+   Verde-planta #5C7A3E — uso RESTRITO à gamificação.
+   --------------------------------------------------------------- */
+const ESTAGIOS = [
+  {
+    nome: 'Broto · 7 dias',
+    svg: `
+      <path d="M80 160 Q80 140 80 128" stroke="#5C7A3E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M80 138 Q72 128 64 130 Q68 138 80 138 Z" fill="#5C7A3E"/>
+      <path d="M80 132 Q88 122 96 124 Q92 132 80 132 Z" fill="#6d8f48"/>
+    `
+  },
+  {
+    nome: 'Muda · 30 dias',
+    svg: `
+      <path d="M80 160 Q80 130 80 100" stroke="#5C7A3E" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M80 138 Q64 128 52 132 Q60 144 80 140 Z" fill="#5C7A3E"/>
+      <path d="M80 128 Q96 118 108 122 Q100 134 80 130 Z" fill="#6d8f48"/>
+      <path d="M80 112 Q68 102 58 106 Q64 118 80 114 Z" fill="#5C7A3E"/>
+      <path d="M80 100 Q92 90 102 94 Q96 106 80 102 Z" fill="#6d8f48"/>
+    `
+  },
+  {
+    nome: 'Adulta · 60 dias',
+    svg: `
+      <path d="M80 160 Q80 120 80 78" stroke="#4A2E1A" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M80 148 Q60 140 46 146" stroke="#4A2E1A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M80 130 Q98 122 114 128" stroke="#4A2E1A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="46" cy="140" rx="16" ry="10" fill="#5C7A3E"/>
+      <ellipse cx="114" cy="122" rx="18" ry="11" fill="#6d8f48"/>
+      <ellipse cx="80" cy="70" rx="30" ry="22" fill="#5C7A3E"/>
+      <ellipse cx="80" cy="68" rx="24" ry="16" fill="#6d8f48"/>
+    `
+  },
+  {
+    nome: 'Árvore · 90 dias',
+    svg: `
+      <path d="M80 160 L80 90" stroke="#4A2E1A" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M80 140 Q56 130 40 138" stroke="#4A2E1A" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M80 118 Q108 108 124 116" stroke="#4A2E1A" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M80 96 Q64 84 52 90" stroke="#4A2E1A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <circle cx="40" cy="132" r="20" fill="#5C7A3E"/>
+      <circle cx="124" cy="110" r="22" fill="#6d8f48"/>
+      <circle cx="52" cy="86" r="18" fill="#5C7A3E"/>
+      <circle cx="80" cy="54" r="30" fill="#6d8f48"/>
+      <circle cx="102" cy="70" r="18" fill="#5C7A3E"/>
+      <circle cx="58" cy="68" r="14" fill="#5C7A3E"/>
+      <circle cx="112" cy="42" r="10" fill="#C8A46C" opacity="0.6"/>
+      <circle cx="60" cy="34" r="7" fill="#C8A46C" opacity="0.5"/>
+    `
+  }
+];
+
+function renderPlanta(indice) {
+  const arte = document.getElementById('planta-arte');
+  const legenda = document.getElementById('planta-estagio');
+  arte.innerHTML = ESTAGIOS[indice].svg;
+  legenda.textContent = ESTAGIOS[indice].nome;
+}
+
+document.getElementById('planta').addEventListener('click', function () {
+  let indice = parseInt(this.dataset.estagio, 10);
+  indice = (indice + 1) % ESTAGIOS.length;
+  this.dataset.estagio = indice;
+  renderPlanta(indice);
+});
+
+/* ---------------------------------------------------------------
+   Modal — placeholder didático
+   --------------------------------------------------------------- */
+const CONTEUDOS_MODAL = {
+  meditacao: {
+    titulo: 'Respiração 4-7-8',
+    texto:  'A gravação real será entregue pelo Dr. Ariosto no marco M5 do projeto (Epic E5 — Conteúdo Clínico). Este mockup demonstra apenas o CTA.'
+  },
+  escala: {
+    titulo: 'Escala HAM-A',
+    texto:  'A escala Hamilton de Ansiedade é enviada automaticamente 24h antes da consulta. Ela é preenchida pergunta por pergunta, com score calculado ao final e enviado ao Dr. Ariosto.'
+  },
+  toxicos: {
+    titulo: 'Área Tóxicos',
+    texto:  'Você está em 87 dias de abstinência — seu maior recorde. O check-in de hoje pergunta como você está lidando com gatilhos e se houve situação de risco nas últimas 24h.'
+  },
+  stub: {
+    titulo: 'Em breve',
+    texto:  'Esta seção do app está sendo construída pela equipe da Kolden. O código real vive em Next.js, Prisma e Supabase.'
+  }
+};
+
+const modal = document.getElementById('modal');
+const modalTitulo = document.getElementById('modal-titulo');
+const modalTexto = document.getElementById('modal-texto');
+const modalFechar = document.getElementById('modal-fechar');
+
+function abrirModal(chave) {
+  const conteudo = CONTEUDOS_MODAL[chave] || CONTEUDOS_MODAL.stub;
+  modalTitulo.textContent = conteudo.titulo;
+  modalTexto.textContent  = conteudo.texto;
+  modal.classList.add('aberto');
+  modalFechar.focus();
+}
+function fecharModal() { modal.classList.remove('aberto'); }
+
+document.querySelectorAll('[data-modal]').forEach(el => {
+  el.addEventListener('click', (ev) => {
+    ev.preventDefault();
+    abrirModal(el.dataset.modal);
+  });
+});
+modalFechar.addEventListener('click', fecharModal);
+modal.addEventListener('click', (ev) => { if (ev.target === modal) fecharModal(); });
+document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape') fecharModal(); });
+
+/* ---------------------------------------------------------------
+   Boot
+   --------------------------------------------------------------- */
+renderPlanta(1);
+renderAreas();
+</script>
+
+</body>
+</html>

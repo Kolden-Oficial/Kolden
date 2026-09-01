@@ -23,6 +23,14 @@ secrets*
 *.p12
 *.pfx
 *.ppk
+.nuvem
+**/.nuvem
+
+# ===== Temas Nuvemshop puxados via CLI (rebaixar quando precisar via `nuvemshop theme ftp pull`) =====
+sobre-a-empresa/Projetos/Ativos/*/tema-*/
+sobre-a-empresa/Projetos/Ativos/*/_tema-*/
+!sobre-a-empresa/Projetos/Ativos/*/_tema-*/README.md
+!sobre-a-empresa/Projetos/Ativos/*/_tema-*/_backup/
 
 # Supabase CLI temp
 **/supabase/.temp/

@@ -13,6 +13,18 @@ contatos, workflows e conversas via API v2.
 
 ---
 
+## Método de implementação Kolden (canônico)
+
+Roteiro obrigatório para todos os 7 clientes da agência — 13 fases sequenciais + smoke
+test de aceitação + governança de padrão. Ancorado 100% em documentação oficial GHL.
+
+- **[metodo-implementacao.md](metodo-implementacao.md)** — checklist replicável para os 7 clientes (v1.0)
+
+Nenhum cliente entra em produção sem 9/9 no smoke test final. Auditoria mensal
+obrigatória rodando o checklist inteiro como QA.
+
+---
+
 ## Credenciais (Infisical)
 
 | Credencial | Caminho Infisical |

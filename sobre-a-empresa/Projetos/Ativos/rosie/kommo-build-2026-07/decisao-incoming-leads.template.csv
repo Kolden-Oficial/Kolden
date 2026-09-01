@@ -1,0 +1,7 @@
+id,destino,motivo
+# Coluna destino aceita: novo-lead | qualificado | perdido | pular
+# Coluna motivo é opcional — se preenchida vira tag no lead
+# Exemplo:
+# 12637798,novo-lead,pedido-nuvemshop-recente
+# 4616088,perdido,legado-morto
+# 7684652,qualificado,pedido-quente

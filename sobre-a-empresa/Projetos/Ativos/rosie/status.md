@@ -5,7 +5,7 @@ resumo: "Situação atual, próximos passos e bloqueios do projeto Rosie."
 categoria: projeto
 palavras-chave: [status, progresso, roadmap, rosie, solomon, deck-v3.1]
 status: oficial
-atualizado-em: 2026-07-01
+atualizado-em: 2026-08-18
 relacionados: [leia-me, apresentacao-bruno-2026-07-01/README]
 tipo: projeto
 projeto: rosie
@@ -30,6 +30,10 @@ relacionado:
   - `[BLOQUEIA PACTOLO v3]` F0.2 (margem por SKU) + F0.4 (frequência recompra) — Bruno mandar em 3 dias.
 - **Fase atual do funil (Solomon 30d):** anúncios pagos 41% (R$ 22.667 · ROAS pago médio 4,17x) · orgânico + direto 57% (R$ 31.636) · e-mail 2% (R$ 1.103 · conv 7,69% mostrando alavanca subutilizada).
 - **Última atualização:** 2026-07-01
+
+## Incidentes abertos
+
+- **2026-08-18 — Deep-link de carrinho não funciona (tema Recife).** Descoberto durante teste de link para anúncios/WhatsApp: todas as URLs de carrinho/checkout retornam HTTP 404 (`/carrinho`, `/carrinho/agregar?variant_id=X`, `/comprar/{id}`, `/checkout`). Causa raiz: **o tema Recife da Nuvemshop implementa carrinho 100% client-side (JS + drawer AJAX)** — não há rota server-side. Botão "Comprar" da PDP dispara `POST /comprar/` interceptado por JS (`js-ajax-cart-panel`). Consequência: **impossível gerar link estático que pré-adicione produto ao carrinho** com o tema atual. Impacto em: anúncios pagos, WhatsApp outbound, fluxo carrinho abandonado RD, salesbot Kommo (revisar). Diagnóstico completo + evidências + recomendações em `_crawl-2026-08-18/DIAGNOSTICO-CARRINHO.md` e `_crawl-2026-08-18/RECOMENDACOES.md`. Crawl completo da loja (42 páginas) em `_crawl-2026-08-18/paginas/`. **Ação imediata pendente:** Ronan testar `?add_to_cart=1501722537` em navegador real — única URL que retornou 200 nos testes.
 
 ## Histórico
 

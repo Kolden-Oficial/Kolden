@@ -53,7 +53,10 @@ Estado final dos servidores MCP (`claude mcp list`). Atualizado em 2026-06-24.
 |-----|-----|-----------|
 | **solomon (oficial)** | prod | `claude mcp add solomon --scope user --transport http https://mcp-solomon-685646918301.us-east1.run.app/mcp` — MCP oficial da Solomon (Cloud Run us-east1, mantido pela Solomon). OAuth via login e-mail+senha; 1 sessão = 1 conta. Cobre LEITURA (faturamento, campanhas, funil, atribuição). Tutorial: https://intercom.help/solomon-d7e33f0728c8/pt-BR/articles/13860266. Complementa o MCP Íris (write). |
 
-**Conectores claude.ai — 2:** Apollo.io ✔, Canva ✔
+**Conectores claude.ai — 3:** Apollo.io ✔, Canva ✔, **HoopCRM ✔** (`https://mcp.hoopcompany.com/mcp` — conectado 2026-08-13; conta Kolden ativa; complementado por API REST direta via `HOOP_API_KEY` em Infisical `dev` — padrão "MCP + API para edição máxima" documentado em [`Hoop/api.md` §16-B](Hoop/api.md))
+
+**MCPs oficiais remote HTTP — pendentes de conexão:**
+- **RD Station** (3 conectores separados, OAuth 2.0 nativo) — `mcp.rdstationmentor.com/marketing` ⚠ (exige plano **Pro+** do RDSM), `/crm` ⚠ (todos os planos), `/conversas` ⚠ (todos). Zero custo adicional além do plano. Rosie é candidata a piloto Kolden em 2026-08. Complementado por API REST em `api.rd.services` (OAuth2 sem scopes granulares — refresh_token não expira, tratar como chave-mestra). Vinculação MCP+API para edição máxima documentada em [`RDStation/api.md` §15](RDStation/api.md). Manual: [RDStation/mcp-status.md](RDStation/mcp-status.md).
 
 **OAuth desktop local — 1:** google-drive ✔ (`@piotr-agier/google-drive-mcp`, stdio via `npx`).
 Cobre Drive/Docs/Sheets/Slides/Calendar (~150 tools), 8 escopos concedidos. **Não usa Infisical** —
@@ -96,7 +99,15 @@ O mesmo ADC dá acesso direto (API REST, sem MCP) a **GTM** (`tagmanager.readonl
 
 ➡️ **Ação:** `/mcp` → *Authenticate* nos 8. Reabilitar o GoHighLevel se aparecer desabilitado.
 
-## 3. Follow-up ⏳ (bloqueio externo)
+## 3. MCPs identificados sem intenção imediata de conectar
+
+| Ferramenta | Situação | Referência |
+|------------|----------|------------|
+| **Kommo CRM (Rosie)** | ❌ **Sem MCP oficial** (verificado 2026-07-23 em `developers.kommo.com`/changelog/support). Conta Rosie **ATIVA em produção** desde 2026-06-30 (subdomain `rosie.kommo.com`, account_id `36679659`, Long-Lived Token válido até 2031). Smoke via curl passou (7 endpoints). Credenciais a cadastrar como `KOMMO_ROSIE_*` no path raiz prod (padrão Solomon). MCP comunidade `Miguelgbastos/Kommo-MCP` (TS/Docker, MIT, 25 tools) disponível para fork. Composio Kommo existe mas viola soberania. | [`Kommo/mcp-ai.md`](Kommo/mcp-ai.md) |
+
+➡️ **Ação futura Kommo:** quando/se cadastrarmos conta Kommo, forkar `Miguelgbastos/Kommo-MCP` para `Kolden-Oficial/kolden-kommo-mcp`, estender com tools de AI/Chats/Salesbot/Webhooks ausentes, rodar via Docker + Infisical (padrão MCP Íris).
+
+## 4. Follow-up ⏳ (bloqueio externo)
 
 | Ferramenta | Bloqueio | Como concluir |
 |------------|----------|---------------|
@@ -109,7 +120,7 @@ O mesmo ADC dá acesso direto (API REST, sem MCP) a **GTM** (`tagmanager.readonl
 
 > **Upstash:** ✅ resolvido — conectado em user scope com `--email adm@kolden.com.br` (key lida do env, sem `bash`).
 
-## 4. Chaves a corrigir (de api-validation.md)
+## 5. Chaves a corrigir (de api-validation.md)
 
 - **Glama** 🔴 — `401 unrecognized API key prefix`: reemitir/conferir `GLAMA_API_KEY`.
 - **v0** 🔴 — `401`: reemitir `V0_API_TOKEN` (o MCP conecta no handshake, mas chamadas reais falham).

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Dossiê Concorrentes</title>
+<style>
+  @page { size: A4; margin: 22mm 20mm 22mm 20mm; }
+  :root {
+    --marinho:#1A3D7E; --marinho-esc:#122C5C;
+    --ocre:#C1741D; --borgonha:#7B1B1A;
+    --tinta:#17181C; --chumbo:#5A5E63;
+    --papel:#FBFAF6; --offwhite:#F5F3EC;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Century Gothic','Futura','Trebuchet MS',system-ui,-apple-system,sans-serif;
+    color: var(--tinta);
+    background: var(--papel);
+    line-height: 1.55;
+    font-size: 11pt;
+    max-width: 170mm;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Century Gothic','Futura',system-ui,sans-serif;
+    color: var(--marinho);
+    line-height: 1.25;
+    page-break-after: avoid;
+  }
+  h1 {
+    font-size: 26pt;
+    letter-spacing: -0.5px;
+    border-bottom: 3px solid var(--ocre);
+    padding-bottom: 8pt;
+    margin: 0 0 20pt 0;
+  }
+  h2 {
+    font-size: 18pt;
+    color: var(--marinho-esc);
+    margin: 24pt 0 10pt 0;
+    border-bottom: 1px solid #d8d3c4;
+    padding-bottom: 4pt;
+  }
+  h3 { font-size: 14pt; color: var(--borgonha); margin: 18pt 0 6pt; }
+  h4 { font-size: 12pt; color: var(--chumbo); margin: 14pt 0 4pt; text-transform: uppercase; letter-spacing: 0.4px; }
+  p { margin: 0 0 10pt 0; }
+  strong { color: var(--marinho-esc); }
+  em { color: var(--borgonha); }
+  a { color: var(--marinho); text-decoration: underline; }
+  ul, ol { margin: 6pt 0 14pt 22pt; padding: 0; }
+  li { margin: 3pt 0; }
+  li > ul, li > ol { margin: 3pt 0 3pt 18pt; }
+  blockquote {
+    margin: 12pt 0;
+    padding: 8pt 14pt;
+    border-left: 3px solid var(--ocre);
+    background: var(--offwhite);
+    color: var(--chumbo);
+    font-style: italic;
+    page-break-inside: avoid;
+  }
+  code {
+    font-family: 'Consolas','Menlo',monospace;
+    font-size: 10pt;
+    background: #eeeae0;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: var(--marinho-esc);
+  }
+  pre {
+    background: #f0ecdd;
+    padding: 10pt 12pt;
+    border-radius: 4px;
+    border-left: 3px solid var(--marinho);
+    overflow-x: auto;
+    page-break-inside: avoid;
+  }
+  pre code { background: transparent; padding: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12pt 0;
+    font-size: 10pt;
+    page-break-inside: avoid;
+  }
+  th, td {
+    border: 1px solid #d8d3c4;
+    padding: 6pt 8pt;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: var(--marinho);
+    color: var(--papel);
+    font-weight: bold;
+  }
+  tr:nth-child(even) td { background: var(--offwhite); }
+  hr { border: none; border-top: 1px solid #d8d3c4; margin: 20pt 0; }
+  img { max-width: 100%; height: auto; }
+  .header-brand {
+    color: var(--ocre);
+    font-size: 9pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 20pt;
+    border-bottom: 1px solid #e0dcc9;
+    padding-bottom: 6pt;
+  }
+</style>
+</head>
+<body>
+<div class="header-brand">BRW Movelaria · Kolden</div>
+<h1>BRW Movelaria — Dossiê de Concorrentes</h1>
+<hr>
+<h2>1. Nota de confiança e método</h2>
+<ul>
+<li><strong>Verificado (URL):</strong> o que foi lido direto no site/perfil do player, com link.</li>
+<li><strong>[indício]:</strong> sinal indireto (ex.: linguagem de promoção sugere mídia paga; nº de seguidores sugere presença digital) sem confirmação dura.</li>
+<li><strong>[estimativa]:</strong> faixa deduzida por contexto (ex.: nível de preço por categoria de marca representada).</li>
+<li><strong>[não-confirmado]:</strong> afirmação plausível que a coleta não conseguiu provar nesta rodada.</li>
+</ul>
+<p><strong>Limitação declarada de presença paga (§7):</strong> a checagem de &quot;está anunciando na Meta?&quot; por keyword na Ad Library retorna ruído massivo (103 resultados não-relacionados para &quot;Básica Home&quot;, incluindo uma marca homônima de colchões &quot;Cama Básica Home&quot;); a confirmação dura exige <code>page_id</code> exato de cada marca, não coletado nesta rodada, e o scraper Solomon deu timeout. Portanto <strong>presença paga está marcada [indício]/[não-confirmado]</strong> salvo onde há sinal textual claro. É a lacuna prioritária para uma Onda 2 (ver §7).</p>
+<p><strong>Correção material ao pressuposto de marca (lida contra o <code>posicionamento.md</code>):</strong> a tese de &quot;oceano azul por <em>ausência de concorrência articulada</em> — ninguém local tem linguagem de ROI/Airbnb&quot; (posicionamento §1, §3.2) <strong>é parcialmente contestada pela coleta</strong>. Existe hoje, em Salvador, pelo menos um player (<strong>3M Projetos e Reformas</strong>) que articula exatamente o pitch de ROI / redução de vacância / chave-na-mão para Airbnb — por um modelo diferente (reforma+marcenaria turnkey, não curadoria de móvel solto), mas disputando o mesmo investidor com a mesma promessa. Ver §2 anel (c) e §6.</p>
+<hr>
+<h2>2. Universo competitivo — 3 anéis</h2>
+<p>O mercado que cerca a BRW não é um bloco; são três anéis com lógicas distintas. A ameaça mais perigosa <strong>não</strong> está no anel (a), e sim no (c).</p>
+<h3>Anel (a) — Diretos core B2B em Salvador/BA (alta decoração / curadoria de móvel solto)</h3>
+<p>Os que o próprio fundador nomeou (C7) e seus vizinhos de categoria. Disputam o mesmo cliente corporativo/premium em Salvador, com <strong>modelo de curadoria/representação de marcas</strong> — o mais parecido com a BRW.</p>
+<ol>
+<li><strong>Básica Home</strong> — verificado: <a href="https://basicahome.com.br/">https://basicahome.com.br/</a></li>
+<li><strong>Home Design</strong> — verificado: <a href="https://www.homedesign.com.br/">https://www.homedesign.com.br/</a></li>
+<li><strong>Efeito Home</strong> — verificado (site principal caído): <a href="https://efeitohome.com.br/">https://efeitohome.com.br/</a></li>
+<li><strong>Cluster corporativo de Salvador</strong> (adjacentes): Gabinette, Mobili, Corporação Innova, Evo Design — foco escritório/corporativo, não hotelaria/Airbnb.</li>
+</ol>
+<h3>Anel (b) — Nacionais que atendem hotelaria/corporativo (chegam à BA via especificação de arquiteto)</h3>
+<p>Marcas/fábricas nacionais de <em>contract &amp; hospitality</em>. Competem menos pelo cliente-relação local e mais pela <strong>especificação</strong> (o arquiteto do hotel escolhe a marca). A BRW compete com eles como <em>intermediária que dá acesso a eles</em>, não como par.
+5. <strong>SYMM Ambientes Corporativos</strong> — [indício] IG ativo
+6. <strong>Rudnick</strong> — verificado: <a href="https://rudnick.com.br/">https://rudnick.com.br/</a>
+7. <strong>Breton</strong> — verificado: <a href="https://www.breton.co/">https://www.breton.co/</a>
+8. <strong>ESSANTO (Grupo Officina, PB)</strong> — verificado: <a href="https://essanto.com/">https://essanto.com/</a>
+9. <strong>Artdville</strong> — verificado: <a href="https://www.artdville.com.br/corporativo">https://www.artdville.com.br/corporativo</a>
+10. <strong>Dellavita Móveis</strong> — verificado (via imprensa): JBN Bahia
+11. <em>(menção)</em> SYMM/Sancapel/Venture e casas de <strong>FF&amp;E procurement</strong> (ex.: projeto Radisson SP) — camada de compras hoteleiras.</p>
+<h3>Anel (c) — Substitutos (resolvem o mesmo job por outro caminho) — <strong>o anel que mais ameaça o eixo escolhido</strong></h3>
+<p>Quem entrega ao investidor Airbnb o resultado &quot;imóvel pronto para render&quot; <strong>sem</strong> ser uma movelaria de curadoria.
+12. <strong>3M Projetos e Reformas (Salvador)</strong> — turnkey Airbnb. ⚠️ <strong>concorrente direto do nicho-alvo da BRW</strong>
+13. <strong>Casa Pietra</strong> — reforma turnkey alto padrão / short stay
+14. <strong>Homee (São Paulo)</strong> — montagem completa de apartamentos/studios para short stay (modelo-espelho, outra praça)
+15. <strong>Gestoras de short stay com ambientação</strong> (Salvador): 535 Homes, Beehost
+16. <strong>Marcenaria planejada residencial</strong> (não-core, já mapeado): Alfa Planejados, Bahia Closet + long-tail (Móveis Planejados Salvador etc.)
+17. <strong>Arquiteto-curador de hotelaria</strong> (substituto de serviço): DECORarqui / Alexandre Bueno</p>
+<p><strong>Total coberto: 17 players nomeados</strong> (11 com ficha detalhada abaixo; os demais em cluster/menção).</p>
+<hr>
+<h2>3. Fichas por concorrente</h2>
+<h3>ANEL (A) — DIRETOS CORE B2B SALVADOR</h3>
+<hr>
+<h4>3.1 Básica Home ⭐ (concorrente nomeado pelo fundador)</h4>
+<ul>
+<li><strong>Site / IG:</strong> <a href="https://basicahome.com.br/">https://basicahome.com.br/</a> · <a href="https://www.instagram.com/basicahome/">https://www.instagram.com/basicahome/</a> · FB <a href="https://www.facebook.com/basica.home/">https://www.facebook.com/basica.home/</a></li>
+<li><strong>Endereço:</strong> Alameda das Espatódeas 206, Caminho das Árvores, Salvador/BA. Tel. +55 71 3342-9177 (fonte: Herman Miller dealer locator).</li>
+<li><strong>O que faz:</strong> loja de alto design; <strong>revendedora/dealer autorizada MillerKnoll (Herman Miller)</strong> — cadeiras Aeron, Mirra, Sayl (verificado no site). Comercializa ícones do design brasileiro (Sergio Rodrigues, Ricardo Fasanello, Carlos Motta, Guilherme Wentz). Setor <strong>corporativo</strong> ativo (&quot;visite nosso setor corporativo&quot;, IG) + linha <strong>Outdoor</strong> (2024-2025).</li>
+<li><strong>Posicionamento/tagline:</strong> <em>&quot;O melhor do Design Brasileiro&quot;</em> / <em>&quot;Escolhemos o que há de melhor no mercado&quot;</em>. &quot;Lançada em 1998&quot; (verificado, meta do site) — ~30 anos, presença em Casa Cor Bahia 2024.</li>
+<li><strong>Portfólio/segmento:</strong> premium design residencial + corporativo (escritório/cadeiraria ergonômica de marca). Não comunica hotelaria/Airbnb.</li>
+<li><strong>Presença paga:</strong> [não-confirmado] — keyword Ad Library poluída por homônimo &quot;Cama Básica Home&quot; (colchões, page_id 961985773669759, esse sim anunciando). Presença <strong>orgânica forte e curada</strong>; site WooCommerce com e-commerce.</li>
+<li><strong>Nível de preço:</strong> [estimativa] <strong>alto</strong> — ser dealer MillerKnoll/Herman Miller e vender autorais icônicos coloca o ticket no topo do mercado local.</li>
+<li><strong>Força:</strong> autoridade de marca (30 anos, dealer de marca global premium, Casa Cor); showroom em endereço nobre; setor corporativo consolidado; e-commerce funcional.</li>
+<li><strong>Fraqueza:</strong> é <strong>revenda de marca de alto padrão</strong>, não curadoria end-to-end de obra; ticket alto a limita ao topo; <strong>não fala a língua de ROI/investidor nem hotelaria de volume</strong> — vende peça de design, não &quot;ambiente que rende&quot;.</li>
+<li><strong>BRW ganha / perde:</strong><ul>
+<li><strong>Ganha em:</strong> curadoria end-to-end &quot;além do móvel&quot; (POD 2) — Básica vende cadeira; BRW resolve o ambiente inteiro coordenado. Acesso industrial/atacado (POD 1) contra ticket de dealer premium → BRW pode entregar volume multi-unidade a custo que a Básica não alcança. Linguagem de ROI-Airbnb (POD 3): Básica não a tem.</li>
+<li><strong>Perde em:</strong> autoridade de marca instalada, prova social (30 anos, Casa Cor, marca global), showroom, e-commerce vivo (a BRW tem <strong>3 URLs mortas</strong> — passivo P7). Percepção de &quot;design premium legítimo&quot;: Básica <strong>é</strong> a referência de design que a BRW ainda precisa provar.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4>3.2 Home Design ⭐ (concorrente nomeado pelo fundador)</h4>
+<ul>
+<li><strong>Site / IG:</strong> <a href="https://www.homedesign.com.br/">https://www.homedesign.com.br/</a> · <a href="https://www.instagram.com/homedesignmoveis/">https://www.instagram.com/homedesignmoveis/</a> (<strong>27K seguidores</strong>, verificado) · LinkedIn <a href="https://br.linkedin.com/company/home-design">https://br.linkedin.com/company/home-design</a></li>
+<li><strong>Endereço:</strong> Av. Paulo VI, 1186, Salvador/BA (tel. 71 3503-5959) + loja em Aracaju/SE (fonte: Yelp, IG, LinkedIn).</li>
+<li><strong>O que faz:</strong> grande loja/plataforma de mobiliário e decoração de marcas brasileiras; catálogo por <strong>indoor / outdoor / corporativo / produtos / projetos / designers</strong> (verificado no site — é praticamente um marketplace curado com login e orçamento online). Pronta-entrega + condições &quot;até 50% OFF&quot; (FB).</li>
+<li><strong>Posicionamento/tagline:</strong> <em>&quot;Desde 1994 uma das marcas de decoração mais atuantes do mercado brasileiro&quot;</em> (IG) / <em>&quot;Design brasileiro, curadoria&quot;</em> (FB). ~26-32 anos de operação.</li>
+<li><strong>Portfólio/segmento:</strong> residencial premium + <strong>corporativo</strong> (linha própria no site) + outdoor. Multi-praça (BA+SE). Não comunica hotelaria/Airbnb como vertical.</li>
+<li><strong>Presença paga:</strong> [indício] <strong>provável</strong> — linguagem &quot;até 50% OFF / pronta-entrega / condições especiais&quot; é típica de varejo que roda mídia de conversão; 27K seguidores e e-commerce reforçam. [não-confirmado] na Ad Library (page_id não coletado).</li>
+<li><strong>Nível de preço:</strong> [estimativa] <strong>médio-alto</strong> — varejo de design de marca com promoções; mais acessível que a Básica, acima de planejados de bairro.</li>
+<li><strong>Força:</strong> <strong>maior presença digital do anel</strong> (27K IG, e-commerce robusto com projetos/designers), duas praças, curadoria de marcas ampla, pronta-entrega. É o mais &quot;escalável digitalmente&quot; dos locais.</li>
+<li><strong>Fraqueza:</strong> modelo de <strong>loja/varejo de decoração</strong>, não de coordenação de obra B2B; foco no gosto/produto, não no ROI do ativo; hotelaria/Airbnb ausente do discurso.</li>
+<li><strong>BRW ganha / perde:</strong><ul>
+<li><strong>Ganha em:</strong> foco B2B-hotelaria e case-book recorrente (POD 4 — Iberostar/Singulari) que a Home Design não exibe; curadoria de obra completa vs. venda de produto; pitch de investidor/ROI.</li>
+<li><strong>Perde em:</strong> <strong>presença digital e prova social</strong> de forma gritante (27K vs. 541 seguidores da BRW; e-commerce vivo vs. site morto). Se o investidor pesquisar &quot;móveis de design Salvador&quot;, encontra Home Design, não a BRW. Também perde em variedade de catálogo pronto-entrega.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4>3.3 Efeito Home</h4>
+<ul>
+<li><strong>Site / IG:</strong> <a href="https://efeitohome.com.br/">https://efeitohome.com.br/</a> (⚠️ <strong>site principal fora do ar</strong> — redireciona para página de erro &quot;monetizer/offer unavailable&quot;, verificado 2026-07-10) · <a href="https://www.instagram.com/efeitohome/">https://www.instagram.com/efeitohome/</a> · loja física Baixa dos Sapateiros (IG Reel).</li>
+<li><strong>O que faz:</strong> <strong>móveis de design autoral brasileiro</strong>, madeira maciça; catálogo amplo de móvel solto (poltronas, chaises, aparadores, mesas, espreguiçadeiras). Realiza <strong>Mostra de decoração</strong> com visitas guiadas a ambientes assinados por profissionais do mercado baiano. Contato: (71) 3267-1034 / WhatsApp (71) 99146-8398 (fonte: cache Exa do site).</li>
+<li><strong>Posicionamento/tagline:</strong> <em>&quot;Móveis de design autoral brasileiro com tecnologia e cultura&quot;</em> / <em>&quot;produtos atemporais... seja residencial ou corporativo&quot;</em>. Auto-declara <strong>18-20 anos</strong> de experiência (dois números no próprio site — [indício] de inconsistência).</li>
+<li><strong>Portfólio/segmento:</strong> residencial + corporativo, design autoral. Sem vertical de hotelaria/Airbnb.</li>
+<li><strong>Presença paga:</strong> [não-confirmado]. Sinal negativo: <strong>site institucional quebrado</strong> sugere baixa manutenção de canal digital/conversão.</li>
+<li><strong>Nível de preço:</strong> [estimativa] <strong>médio-alto</strong> (design autoral, madeira maciça).</li>
+<li><strong>Força:</strong> design autoral próprio (mais &quot;assinatura&quot; que revenda pura), tradição local, Mostra como ativo de relacionamento.</li>
+<li><strong>Fraqueza:</strong> <strong>infraestrutura digital frágil</strong> (site caído — mesma doença da BRW); &quot;atemporal/autoral&quot; é vocabulário de gosto, não de retorno; sem discurso B2B de volume.</li>
+<li><strong>BRW ganha / perde:</strong><ul>
+<li><strong>Ganha em:</strong> eixo B2B/hotelaria e ROI (Efeito é residencial-autoral); acesso industrial/atacado para volume; case-book hoteleiro.</li>
+<li><strong>Perde em:</strong> design <strong>autoral próprio</strong> (Efeito produz assinatura; a BRW é curadora/intermediária — pode ser lida como &quot;menos autoral&quot;); tempo de mercado local. Empatam no ponto fraco de <strong>site/conversão digital</strong>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4>3.4 Cluster corporativo de Salvador (adjacentes — menção)</h4>
+<p>Foco em escritório/corporativo, não hotelaria/Airbnb; concorrem com a BRW só quando o job é <em>mobiliar empresa</em>.</p>
+<ul>
+<li><strong>Gabinette</strong> — <a href="https://gabinette.com.br/">https://gabinette.com.br/</a> — mobiliário corporativo de alto padrão, Caminho das Árvores (Rua do Jaracatiá 1048). Representa Cavaletti.</li>
+<li><strong>Mobili Ambientes</strong> — <a href="https://mobiliambientes.com.br/">https://mobiliambientes.com.br/</a> — <strong>foco exclusivo corporativo/hospitalar</strong>, atendimento consultivo, representa Cavaletti/Avantti/ADesign; case UniFTC (arquiteta Diana Cabral). Linguagem &quot;o foco deles é resolver / tiro um peso da consciência&quot; ≈ arquétipo Cuidador que a BRW também quer.</li>
+<li><strong>Corporação Innova</strong> — <a href="https://corporacaoinnova.com.br/">https://corporacaoinnova.com.br/</a> — soluções corporativas 360º + coworking, forte no <strong>mercado público</strong> baiano.</li>
+<li><strong>Evo Design</strong> — mobiliário corporativo baiano (fundada 2023 por Paula Risério + Tabajara Fetal), showroom Horto Office; representa Cavaletti/Avantti/Gebbwork; auto-descreve como &quot;consultoria completa em mobiliário corporativo&quot; (fonte: Let&#39;s Go Bahia).</li>
+<li><strong>Leitura:</strong> este cluster prova que o discurso &quot;consultoria/curadoria em mobiliário&quot; <strong>já é commodity retórica</strong> no corporativo de Salvador — mas <strong>nenhum deles ataca hotelaria de volume nem investidor Airbnb</strong>. Reforça que o diferencial defensável da BRW não é &quot;ser consultora&quot; (todo mundo diz), e sim <strong>hotelaria + acesso industrial + ROI-Airbnb</strong>.</li>
+</ul>
+<hr>
+<h3>ANEL (B) — NACIONAIS HOTELARIA/CORPORATIVO</h3>
+<hr>
+<h4>3.5 SYMM Ambientes Corporativos</h4>
+<ul>
+<li><strong>IG:</strong> <a href="https://www.instagram.com/">https://www.instagram.com/</a> (perfil &quot;SYMM Ambientes Corporativos&quot;, ativo 2026) — projetos hoteleiros verificados via posts: <strong>Hotel Vogue Square</strong> (áreas comuns + suítes de luxo), presença na feira <strong>DECORHOTEL 2025</strong>.</li>
+<li><strong>O que faz:</strong> ambientes corporativos + <strong>hotelaria</strong> (contract). Atua por projeto.</li>
+<li><strong>Posicionamento:</strong> <em>&quot;Por trás de cada grande projeto existem detalhes...&quot;</em> — tom de execução premium de contract.</li>
+<li><strong>Presença paga:</strong> [não-confirmado]; presença orgânica/feiras ativa.</li>
+<li><strong>Nível de preço:</strong> [estimativa] alto (contract hoteleiro).</li>
+<li><strong>BRW ganha / perde:</strong> <strong>Ganha em</strong> relação local/proximidade baiana e case-book regional recorrente (se SYMM for de fora da BA — praça a confirmar). <strong>Perde em</strong> foco declarado em hotelaria de luxo com projetos-vitrine (Vogue Square) e presença em feira setorial (DECORHOTEL), palco que a BRW não ocupa. <strong>Lacuna:</strong> praça/sede da SYMM não confirmada nesta rodada — verificar se disputa Salvador diretamente.</li>
+</ul>
+<hr>
+<h4>3.6 Rudnick</h4>
+<ul>
+<li><strong>Site / IG:</strong> <a href="https://rudnick.com.br/">https://rudnick.com.br/</a> · <a href="https://www.instagram.com/moveisrudnick/">https://www.instagram.com/moveisrudnick/</a></li>
+<li><strong>O que faz:</strong> <strong>um dos maiores complexos moveleiros do país</strong> (Santa Catarina, fabricante). Frentes: móveis prontos, <strong>sob medida, corporativo e exportação</strong>; atende &quot;desde residências até <strong>hotelaria, franquias</strong>&quot; (verificado, IG/site). Finalista do Prêmio Top Móbile 2026 (categoria Salas).</li>
+<li><strong>Posicionamento:</strong> escala industrial + know-how; marca lembrada nacionalmente.</li>
+<li><strong>Nível de preço:</strong> [estimativa] médio (fabricante de escala; ganha em custo por volume).</li>
+<li><strong>BRW ganha / perde:</strong> <strong>Ganha em</strong> curadoria multimarca e ambiente completo coordenado (Rudnick empurra o próprio catálogo de fábrica; BRW mixa fornecedores). Relação/execução local baiana com equipe de montagem própria. <strong>Perde em</strong> capacidade fabril e credibilidade de escala — ironicamente, o <strong>próprio fundador Robinsom é ex-Móveis Rudinique</strong> (premissas N4); Rudnick é exatamente o tipo de fábrica-de-grande-porte cujo <em>acesso</em> a BRW reivindica como POD. Se o cliente pode comprar direto da fábrica, a BRW precisa justificar a camada de curadoria.</li>
+</ul>
+<hr>
+<h4>3.7 Breton</h4>
+<ul>
+<li><strong>Site / IG:</strong> <a href="https://www.breton.co/">https://www.breton.co/</a> · IG @breton (lojas Brasília, Fortaleza, etc.)</li>
+<li><strong>O que faz:</strong> <strong>design original e móveis de alto padrão</strong>, marca nacional premium com <strong>+30 anos</strong>; curadoria &quot;exclusiva de móveis e objetos Breton Casa&quot;; iniciativa <strong>Breton Signature</strong> (arquitetos reinterpretam peças ícone) e <strong>economia circular</strong> (plataforma de revenda de seminovos Breton). Rede de lojas próprias.</li>
+<li><strong>Posicionamento:</strong> luxo de design autoral consolidado, nacional.</li>
+<li><strong>Nível de preço:</strong> [estimativa] <strong>muito alto</strong> (marca de luxo nacional).</li>
+<li><strong>BRW ganha / perde:</strong> <strong>Ganha em</strong> custo/acesso industrial (Breton é premium-de-marca, caríssimo) e em solução B2B multi-unidade de custo controlado — a BRW pode mobiliar 24 casas a R$176k/unidade (case Alphaville), território que a Breton não disputa por preço. <strong>Perde em</strong> desejo de marca e autoridade de design absolutos: Breton é aspiração; a BRW é execução. Breton pode aparecer como <em>marca que a BRW revende/especifica</em>, não como par direto.</li>
+</ul>
+<hr>
+<h4>3.8 ESSANTO (Grupo Officina) ⭐ (concorrente estrutural mais parecido, no Nordeste)</h4>
+<ul>
+<li><strong>Site / IG / FB:</strong> <a href="https://essanto.com/">https://essanto.com/</a> · <a href="https://www.facebook.com/essantofabricademoveis/">https://www.facebook.com/essantofabricademoveis/</a> (Santa Rita/PB) · IG @essanto</li>
+<li><strong>O que faz:</strong> <strong>fábrica</strong> do Grupo Officina, ~3 décadas, <strong>móveis sob medida para lojistas, incorporadoras e empresas em todo o Nordeste</strong>; projetos corporativos + rede de lojistas parceiros. Case hoteleiro verificado: <strong>mobiliário do Park Hotel, Boa Viagem/Recife</strong> (IG Reel).</li>
+<li><strong>Posicionamento:</strong> <em>&quot;soluções sob medida que aliam design, funcionalidade e alto padrão&quot;</em> — fábrica que atende B2B regional.</li>
+<li><strong>Nível de preço:</strong> [estimativa] médio (fábrica própria → custo competitivo em volume).</li>
+<li><strong>BRW ganha / perde:</strong> <strong>Este é o espelho mais próximo do modelo BRW no Nordeste</strong>, com uma diferença-chave invertida: ESSANTO <strong>é fábrica</strong> (produz), a BRW <strong>é curadoria</strong> (intermedia 100+ fábricas). <strong>Ganha em</strong> flexibilidade multimarca/multi-fornecedor e curadoria de ambiente completo (pedra+marcenaria+móvel+decor) vs. catálogo de uma fábrica; foco Bahia vs. PB/Pernambuco. <strong>Perde em</strong> margem estrutural (fábrica própria tem custo menor que intermediário) e em já ter <strong>incorporadoras + hotelaria</strong> como público declarado há 30 anos. Se ESSANTO expandir para a BA, é o concorrente mais perigoso do anel (b).</li>
+</ul>
+<hr>
+<h4>3.9 Artdville</h4>
+<ul>
+<li><strong>Site:</strong> <a href="https://www.artdville.com.br/corporativo">https://www.artdville.com.br/corporativo</a></li>
+<li><strong>O que faz:</strong> <strong>móveis personalizados para resorts, hotéis de luxo, pousadas, restaurantes, condomínios e clubes</strong> no Brasil; &quot;maior variedade de cores do mercado&quot;, reposição de peças a qualquer momento, <strong>desconto para compra corporativa</strong>. Atende arquitetos/designers/paisagistas. Case em Salvador: <strong>Restaurante Lotti</strong>; também Hotel Royal Tulip Brasília.</li>
+<li><strong>Posicionamento:</strong> <em>&quot;crie espaços personalizados e únicos&quot;</em> — mobiliário customizável para hospitalidade/lazer.</li>
+<li><strong>Nível de preço:</strong> [estimativa] médio-alto; desconto B2B explícito.</li>
+<li><strong>BRW ganha / perde:</strong> <strong>Ganha em</strong> curadoria de ambiente completo (Artdville foca mobiliário de área externa/lazer e assentos, não o pacote pedra+marcenaria+decor) e relação local de obra. <strong>Perde em</strong> especialização declarada em hotelaria/resort com portfólio nacional e política de reposição — Artdville já <em>é</em> fornecedor recorrente de hotel, exatamente o que a BRW quer ser.</li>
+</ul>
+<hr>
+<h4>3.10 Dellavita Móveis</h4>
+<ul>
+<li><strong>Fonte:</strong> <a href="https://www.jbnbahia.com.br/noticia/dellavita-moveis-assina-mobiliario-dos-quartos-tematicos-infantis-do-costa-do-sauipe">https://www.jbnbahia.com.br/noticia/dellavita-moveis-assina-mobiliario-dos-quartos-tematicos-infantis-do-costa-do-sauipe</a> (imprensa BA, 2026-05).</li>
+<li><strong>O que faz:</strong> <strong>móveis soltos de alto padrão</strong>, residencial → <strong>hotelaria</strong> (assinou mobiliário de quarto infantil do <strong>Costa do Sauípe</strong>, complexo hoteleiro top da BA) + projetos especiais (Hospital da Obesidade). Diferenciais declarados: <strong>consultoria personalizada, acompanhamento técnico próximo e compromisso com prazos</strong>.</li>
+<li><strong>Posicionamento:</strong> premium, &quot;mais do que móveis, projetos com intenção&quot;.</li>
+<li><strong>Nível de preço:</strong> [estimativa] alto.</li>
+<li><strong>BRW ganha / perde:</strong> <strong>Ganha em</strong> acesso industrial/volume e case-book multi-unidade (Dellavita comunica peças/sofás premium, não coordenação de obra de 30-80 pessoas). <strong>Perde em</strong> um flanco sensível: Dellavita ataca hotelaria de alto padrão na BA (Costa do Sauípe) <strong>e</strong> faz da &quot;consultoria + prazo confiável&quot; seu discurso — justamente a paridade (prazo/pós-venda) que a BRW ainda <strong>reconstrói</strong> após a crise de 2025 (premissas C9/P8). Concorrente baiano a monitorar de perto.</li>
+</ul>
+<hr>
+<h4>3.11 FF&amp;E procurement / contract (menção — Sancapel, Venture e afins)</h4>
+<ul>
+<li><strong>Indício:</strong> projeto <strong>Core Hotel Radisson (SP), 152 keys — FF&amp;E + OS&amp;E procurement</strong> (IG, fonte da coleta). Camada de <em>compras hoteleiras</em> (procurement) que grandes hotéis/redes usam em vez de uma movelaria local.</li>
+<li><strong>BRW ganha / perde:</strong> <strong>Ganha em</strong> proximidade e custo para hotel independente/regional (procurement nacional serve rede grande). <strong>Perde</strong> o segmento de rede hoteleira nacional (Accor/Radisson), que compra por procurement estruturado — território fora do alcance da BRW v1. <em>Nota: nomes exatos &quot;Sancapel/Venture/Sular&quot; não confirmados individualmente nesta rodada (queries retornaram contract internacional genérico) — lacuna §7.</em></li>
+</ul>
+<hr>
+<h3>ANEL (C) — SUBSTITUTOS (o anel mais ameaçador ao eixo escolhido)</h3>
+<hr>
+<h4>3.12 3M Projetos e Reformas (Salvador) 🚨 — o achado que contesta o &quot;oceano azul&quot;</h4>
+<ul>
+<li><strong>Fonte:</strong> <a href="https://www.industrianews.com.br/2026/05/do-imovel-vazio-ao-apartamento-pronto-3m-cresce-com-avanco-das-reformas-turnkey-em-salvador/">https://www.industrianews.com.br/2026/05/do-imovel-vazio-ao-apartamento-pronto-3m-cresce-com-avanco-das-reformas-turnkey-em-salvador/</a> (imprensa, 2026-05).</li>
+<li><strong>O que faz:</strong> empresa <strong>soteropolitana</strong>, ~2 anos, <strong>especializada em reformas turnkey de apartamentos compactos, studios e imóveis para Airbnb em Salvador</strong>. Já entregou <strong>40+ obras</strong> em Caminho das Árvores, Pituba, Itaigara, Vitória, Alphaville, Lauro de Freitas, Estrada do Coco. <strong>Prazo médio 45 dias.</strong> Assume toda a cadeia: projeto arquitetônico, gestão de obra, <strong>fabricação de móveis planejados</strong>, execução completa, limpeza pós-obra. Formato de <strong>acompanhamento remoto</strong> (relatórios foto/vídeo) para investidor que mora fora.</li>
+<li><strong>Posicionamento/linguagem:</strong> <em>&quot;do imóvel vazio ao apartamento pronto&quot;</em>, <em>&quot;reduzir custos de vacância e acelerar o retorno do ativo&quot;</em>, <em>&quot;o proprietário não precisa comprar um parafuso&quot;</em> — <strong>é literalmente o pitch da Persona B da BRW</strong> (liberação do processo, chave-na-mão) <strong>e</strong> o discurso de ROI/vacância da Persona A.</li>
+<li><strong>Presença paga:</strong> [não-confirmado]; tração e cobertura de imprensa indicam player em crescimento.</li>
+<li><strong>Nível de preço:</strong> [estimativa] médio (reforma turnkey de compacto/studio).</li>
+<li><strong>BRW ganha / perde:</strong><ul>
+<li><strong>Ganha em:</strong> ticket de <strong>alto padrão e volume hoteleiro</strong> (3M foca compacto/studio residencial, não retrofit de hotel de 8 anos como Iberostar); acesso industrial para mobília de qualidade superior; case-book B2B corporativo que a 3M não tem.</li>
+<li><strong>Perde em:</strong> <strong>posse do território mental que a BRW queria &quot;ocupar por ausência&quot;</strong>. A 3M já articula ROI-Airbnb-turnkey em Salvador, com <strong>prazo de 45 dias</strong> (a BRW vem de uma crise de prazo/montagem), modelo remoto para investidor de fora, e resolve <strong>obra + marcenaria</strong> (a BRW não faz obra civil — faz curadoria de móvel). Para o investidor que quer &quot;virar a chave&quot;, a 3M entrega <strong>mais</strong> da cadeia que a BRW. <strong>É o concorrente mais perigoso do dossiê para o eixo investidor-Airbnb.</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4>3.13 Casa Pietra</h4>
+<ul>
+<li><strong>Fonte:</strong> <a href="https://casapietra.com.br/">https://casapietra.com.br/</a> (múltiplas páginas verificadas).</li>
+<li><strong>O que faz:</strong> <strong>reformas de alto padrão turnkey</strong> (&quot;do contrapiso à chave na mão — projeto, obra, marcenaria e decoração&quot;) para studios/apartamentos/casas, <strong>foco em investidores e short stay</strong>. Pacote inclui marcenaria planejada, eletros, iluminação/automação, <strong>decoração e enxoval completo</strong>, + soluções Short Stay (fotografia profissional, kit amenidades, manual do hóspede, parceiros de gestão).</li>
+<li><strong>Posicionamento:</strong> <em>&quot;une rapidez, custo-benefício e personalização&quot;</em> — turnkey de investidor.</li>
+<li><strong>Nível de preço:</strong> [estimativa] médio-alto. Praça: [não-confirmado] (provável SP/Sudeste ou multi-praça).</li>
+<li><strong>BRW ganha / perde:</strong> <strong>Ganha em</strong> curadoria de mobília de padrão superior + acesso industrial + hotelaria de volume. <strong>Perde em</strong> completude da cadeia turnkey (obra+marcenaria+enxoval+gestão) e em já falar &quot;short stay/Airbnb&quot; nativamente. Mesmo padrão de ameaça que a 3M, outra praça.</li>
+</ul>
+<hr>
+<h4>3.14 Homee (São Paulo) — modelo-espelho, outra praça</h4>
+<ul>
+<li><strong>Fonte:</strong> <a href="https://homeestyle.com/">https://homeestyle.com/</a></li>
+<li><strong>O que faz (desde 2024):</strong> <strong>monta apartamentos e studios completos</strong> — &quot;obra, marcenaria, instalações, mobiliário, eletros e enxoval, tudo coordenado pela Homee&quot; — para morar ou <strong>rentabilizar (short stay/Airbnb)</strong>. Pacotes escalonados <strong>Prata / Ouro</strong> (&quot;curadoria que sustenta diária mais alta e melhor avaliação&quot;), integração com administradoras de temporada. Atua nos principais empreendimentos de SP.</li>
+<li><strong>Posicionamento:</strong> <em>&quot;seu apartamento pronto para morar — ou transformado em ativo que gera renda&quot;</em>; <em>&quot;a Homee monta o imóvel pensando no retorno&quot;</em>.</li>
+<li><strong>BRW ganha / perde:</strong> relevância = <strong>benchmark de modelo, não concorrente de praça</strong>. A Homee prova que o modelo &quot;curadoria de ambiente completo com pacotes fechados por nível de percepção de valor + integração com gestão de temporada&quot; <strong>funciona e escala em SP</strong>. É o playbook que a BRW poderia adaptar para Salvador — e um sinal de que, se a BRW não ocupar rápido, um player assim pode descer para a BA. <strong>Ganha em</strong> acesso industrial baiano e case-book hoteleiro local; <strong>perde em</strong> produtização (pacotes Prata/Ouro nomeados) e sistema digital.</li>
+</ul>
+<hr>
+<h4>3.15 Gestoras de short stay com ambientação (Salvador)</h4>
+<ul>
+<li><strong>535 Homes</strong> — <a href="https://535homes.com.br/">https://535homes.com.br/</a> — gestão completa de temporada em Salvador + <strong>curadoria estética, auditoria de ambientação, enxoval premium</strong>; orienta o proprietário sobre &quot;o que é essencial para mobiliar&quot; ao &quot;Padrão 535&quot;.</li>
+<li><strong>Beehost</strong> — <a href="https://beehost.com.br/">https://beehost.com.br/</a> — inteligência imobiliária / gestão de short stay em Salvador e RMS.</li>
+<li><strong>BRW ganha / perde:</strong> não competem em móvel — mas <strong>influenciam a decisão de mobiliar</strong> e podem ser <strong>canal/parceiro</strong> (indicam quem mobilia) <em>ou</em> concorrente se internalizarem ambientação. <strong>Oportunidade de handoff:</strong> a BRW deveria ser a fornecedora-preferencial de mobília dessas gestoras (a 535 já admite que o imóvel &quot;precisa de ambientação estratégica&quot;). Parceria &gt; rivalidade.</li>
+</ul>
+<hr>
+<h4>3.16 Substitutos residenciais planejados + arquiteto-curador (não-core — menção)</h4>
+<ul>
+<li><strong>Alfa Planejados / Bahia Closet</strong> — marcenaria planejada residencial (já mapeados como não-core no dossiê BRW; Alfa com 48 anos e base social ~32× a da BRW, per posicionamento §1). Long-tail: Móveis Planejados Salvador (2012), Salvador Móveis (varejo pronta-entrega), Gabinette residencial. <strong>Commodity</strong> — competem por preço/gosto, não por ROI.</li>
+<li><strong>DECORarqui / Alexandre Bueno</strong> — <a href="https://decorarqui.com.br/">https://decorarqui.com.br/</a> — <strong>arquiteto especialista em mobiliário para hotelaria</strong> (hotéis, motéis, pousadas + residência alto padrão), &quot;curadoria de design que eleva seu empreendimento&quot;, +2 décadas. Substituto de <strong>serviço</strong>: o hotel pode contratar um arquiteto-curador em vez de uma movelaria. <strong>BRW ganha em</strong> execução/acesso industrial+montagem (arquiteto especifica, não entrega obra); <strong>perde em</strong> autoridade de curadoria-de-design pessoal e foco hoteleiro declarado.</li>
+</ul>
+<hr>
+<h2>4. Matriz comparativa</h2>
+<p>Escala: ●●● forte · ●● médio · ○ fraco/ausente · — n/a. (Avaliações [indício] a partir da coleta; presença paga não-confirmada — §7.)</p>
+<table>
+<thead>
+<tr>
+<th>Player</th>
+<th align="center">Curadoria end-to-end (obra completa)</th>
+<th align="center">Foco B2B hotelaria</th>
+<th align="center">Foco investidor/Airbnb</th>
+<th align="center">Acesso industrial / custo</th>
+<th align="center">Presença digital</th>
+<th align="center">Prova social</th>
+<th align="center">Preço [estim.]</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>BRW (alvo)</strong></td>
+<td align="center">●●● (pretende)</td>
+<td align="center">●● (case real)</td>
+<td align="center">●● (discurso)</td>
+<td align="center">●● (hipótese Rimo)</td>
+<td align="center">○ (site morto, 541 IG)</td>
+<td align="center">●● (Iberostar/Singulari)</td>
+<td align="center">médio-alto</td>
+</tr>
+<tr>
+<td>Básica Home</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">○ (dealer premium)</td>
+<td align="center">●●●</td>
+<td align="center">●●●</td>
+<td align="center">alto</td>
+</tr>
+<tr>
+<td>Home Design</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">●●● (27K)</td>
+<td align="center">●●●</td>
+<td align="center">médio-alto</td>
+</tr>
+<tr>
+<td>Efeito Home</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">○ (site caído)</td>
+<td align="center">●●</td>
+<td align="center">médio-alto</td>
+</tr>
+<tr>
+<td>SYMM</td>
+<td align="center">●●</td>
+<td align="center">●●●</td>
+<td align="center">○</td>
+<td align="center">●●</td>
+<td align="center">●●</td>
+<td align="center">●●</td>
+<td align="center">alto</td>
+</tr>
+<tr>
+<td>Rudnick</td>
+<td align="center">●●</td>
+<td align="center">●●</td>
+<td align="center">○</td>
+<td align="center">●●● (fábrica)</td>
+<td align="center">●●●</td>
+<td align="center">●●●</td>
+<td align="center">médio</td>
+</tr>
+<tr>
+<td>Breton</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">○ (luxo)</td>
+<td align="center">●●●</td>
+<td align="center">●●●</td>
+<td align="center">muito alto</td>
+</tr>
+<tr>
+<td>ESSANTO</td>
+<td align="center">●●</td>
+<td align="center">●●</td>
+<td align="center">● (incorporadora)</td>
+<td align="center">●●● (fábrica)</td>
+<td align="center">●●</td>
+<td align="center">●●</td>
+<td align="center">médio</td>
+</tr>
+<tr>
+<td>Artdville</td>
+<td align="center">●●</td>
+<td align="center">●●● (resort)</td>
+<td align="center">○</td>
+<td align="center">●●</td>
+<td align="center">●●</td>
+<td align="center">●●●</td>
+<td align="center">médio-alto</td>
+</tr>
+<tr>
+<td>Dellavita</td>
+<td align="center">●●</td>
+<td align="center">●● (Sauípe)</td>
+<td align="center">○</td>
+<td align="center">●●</td>
+<td align="center">●●</td>
+<td align="center">●●</td>
+<td align="center">alto</td>
+</tr>
+<tr>
+<td><strong>3M Reformas</strong> 🚨</td>
+<td align="center">●●● (obra+marcenaria)</td>
+<td align="center">○</td>
+<td align="center">●●●</td>
+<td align="center">●●</td>
+<td align="center">●●</td>
+<td align="center">●● (40 obras)</td>
+<td align="center">médio</td>
+</tr>
+<tr>
+<td>Casa Pietra</td>
+<td align="center">●●●</td>
+<td align="center">○</td>
+<td align="center">●●●</td>
+<td align="center">●●</td>
+<td align="center">●●</td>
+<td align="center">●●</td>
+<td align="center">médio-alto</td>
+</tr>
+<tr>
+<td>Homee (SP)</td>
+<td align="center">●●●</td>
+<td align="center">○</td>
+<td align="center">●●●</td>
+<td align="center">●●</td>
+<td align="center">●●●</td>
+<td align="center">●●</td>
+<td align="center">médio-alto</td>
+</tr>
+<tr>
+<td>535 / Beehost</td>
+<td align="center">● (ambientação)</td>
+<td align="center">○</td>
+<td align="center">●●● (gestão)</td>
+<td align="center">○</td>
+<td align="center">●●</td>
+<td align="center">●●</td>
+<td align="center">—</td>
+</tr>
+</tbody></table>
+<p><strong>Leitura da matriz:</strong> ninguém preenche <strong>as três colunas de meio ao mesmo tempo</strong> — &quot;hotelaria B2B&quot; <strong>e</strong> &quot;investidor/Airbnb&quot; <strong>e</strong> &quot;acesso industrial&quot;. O anel (a) é forte em digital/prova mas zero em hotelaria/ROI. O anel (b) é forte em hotelaria/fábrica mas zero em investidor-Airbnb e sem relação local. O anel (c) é forte em investidor-Airbnb mas faz <strong>obra/gestão</strong>, não curadoria de mobília premium multimarca. <strong>A interseção vazia é o espaço da BRW</strong> — mas está sendo cercada pelo anel (c) por baixo (3M/turnkey) e poderia ser pelo (b) por cima (ESSANTO/Artdville).</p>
+<hr>
+<h2>5. Mapa de posicionamento</h2>
+<p><strong>Eixo X — Commodity ↔ Curadoria</strong> (o quanto o player resolve <em>gosto/decisão/ambiente inteiro</em> vs. só vende/entrega produto ou obra).
+<strong>Eixo Y — B2C residencial ↔ B2B ativo-que-rende</strong> (o cliente e o job: casa para morar vs. imóvel/empreendimento tratado como retorno).</p>
+<pre><code>        B2B / ATIVO-QUE-RENDE (hotelaria, investidor, incorporadora)
+                              ▲
+        SYMM ●   Artdville ●  |  ● ESSANTO        ⟵ nacionais contract/fábrica
+        Dellavita ●          |                       (curadoria média, sem ROI-Airbnb)
+                             |   ◇ ESPAÇO BRW ◇
+     3M Reformas ●───────────|   (curadoria end-to-end + hotelaria
+     Casa Pietra ●  Homee ●  |    + ROI-Airbnb + acesso industrial)
+     (turnkey Airbnb,        |
+      forte em ROI mas       |   Rudnick ●  (fábrica, catálogo próprio)
+      é obra, não mobília)   |
+   ──────────────────────────┼──────────────────────────▶
+   COMMODITY / PRODUTO-OBRA  |            CURADORIA / AMBIENTE-DECISÃO
+                             |
+     535/Beehost ●(gestão)   |   ● Efeito Home
+     Móveis planejados ●     |   ● Home Design      ● Básica Home
+     Salvador Móveis ●       |   ● Breton
+                             |   (curadoria/design premium, mas B2C residencial)
+                              ▼
+                    B2C / RESIDENCIAL (casa para morar)
+</code></pre>
+<p><strong>Espaço em branco da BRW = quadrante superior-direito (alto B2B-ativo × alta curadoria).</strong> É genuinamente pouco povoado: o que chega perto por cima (ESSANTO, Artdville) é <strong>fábrica/produto</strong> sem linguagem de investidor-Airbnb; o que chega perto pela esquerda (3M, Homee, Casa Pietra) tem o <strong>ROI-Airbnb</strong> mas entrega <strong>obra/marcenaria/gestão</strong>, não curadoria de mobília premium multimarca com acesso industrial. <strong>A BRW pode ser a única que cruza &quot;curadoria de mobília de padrão premium (multimarca, acesso de fábrica)&quot; com &quot;cliente que trata mobília como ativo (hotel + investidor)&quot;.</strong> O risco é que o quadrante está sendo <em>estreitado por invasão lateral</em> — os turnkey (3M) sobem em curadoria à medida que amadurecem.</p>
+<hr>
+<h2>6. Ameaças e brechas</h2>
+<h3>Quem pode reagir (ameaças ordenadas por perigo)</h3>
+<ol>
+<li><strong>🚨 3M Projetos e Reformas (e a categoria turnkey-Airbnb local).</strong> Já ocupa em Salvador o discurso de ROI/vacância/chave-na-mão que a BRW quer como POD 3. Vantagem estrutural: entrega <strong>mais da cadeia</strong> (obra+marcenaria+limpeza) e prazo declarado de <strong>45 dias</strong> — contra uma BRW que vem de crise de prazo. <strong>Reação provável:</strong> subir de padrão de mobília e capturar o investidor de ticket médio antes da BRW. <em>Contra-ataque BRW:</em> não competir na obra; posicionar-se como <strong>a camada de mobília/ambiente premium</strong> que a 3M (e as gestoras) não têm — inclusive como <strong>fornecedora dos turnkey e das gestoras</strong> (535/Beehost) em vez de rival.</li>
+<li><strong>ESSANTO / Artdville / Dellavita (anel b entrando na BA).</strong> ESSANTO (fábrica NE, incorporadora+hotel, 30 anos) e Artdville (resort/hotel nacional) já têm o público que a BRW persegue e <strong>custo de fábrica</strong>. Dellavita já está na hotelaria alto-padrão baiana (Sauípe) com discurso de &quot;consultoria + prazo&quot;. <strong>Reação provável:</strong> capturar o retrofit hoteleiro de médio porte. <em>Contra-ataque:</em> case-book local recorrente + curadoria de ambiente completo (não só móvel de fábrica).</li>
+<li><strong>Home Design (anel a) pela via digital.</strong> Não fala hotelaria, mas domina a busca (&quot;móveis design Salvador&quot;) com 27K IG e e-commerce. Se decidir abrir vertical corporativa/hoteleira com o alcance que já tem, larga na frente de audiência. <em>Contra-ataque:</em> a BRW <strong>precisa</strong> resolver o passivo de site/conversão (P7) antes de qualquer disputa de demanda.</li>
+</ol>
+<h3>A oportunidade competitiva mais clara</h3>
+<p><strong>O quadrante superior-direito ainda não tem dono — mas a janela está encolhendo.</strong> A brecha nítida e defensável no curto prazo é ser <strong>&quot;a curadoria de mobília premium que faz o ativo render&quot;, como camada B2B que se pluga tanto no hotel (retrofit) quanto no ecossistema de investidor-Airbnb (turnkey + gestoras)</strong> — posicionando-se <strong>acima da commodity de obra (3M/planejados)</strong> e <strong>com relação/execução local que o nacional (ESSANTO/Artdville) não tem</strong>. Duas jogadas concretas:</p>
+<ul>
+<li><strong>Parceria em vez de rivalidade com o anel (c):</strong> ser fornecedora-de-mobília preferencial de 3M-likes e gestoras (535/Beehost) — elas admitem que a ambientação vende diária. Vira canal, não inimigo.</li>
+<li><strong>Case-book hoteleiro como ativo único:</strong> Iberostar (8 anos) e Costa-do-Sauípe-adjacência é prova que 3M/Casa Pietra/Homee não têm e demoram anos para construir. É o fosso mais real da BRW hoje — mais do que o &quot;acesso Rimo&quot; (que é hipótese e replicável).</li>
+</ul>
+<hr>
+<h2>7. Confiança &amp; lacunas</h2>
+<h3>Verificado (com URL, lido na fonte)</h3>
+<ul>
+<li>Existência, site/IG, categoria e discurso de: Básica Home, Home Design, Efeito Home (+ site caído), Rudnick, Breton, ESSANTO, Artdville, Dellavita (via imprensa), 3M Reformas (via imprensa), Casa Pietra, Homee, 535 Homes, Beehost, cluster corporativo Salvador (Gabinette/Mobili/Innova/Evo), DECORarqui.</li>
+<li>Básica Home dealer MillerKnoll/Herman Miller; Home Design 27K IG + 2 praças; ESSANTO fábrica NE atendendo Park Hotel Recife; 3M turnkey-Airbnb Salvador com 40+ obras e prazo 45 dias.</li>
+</ul>
+<h3>[indício] (sinal, não prova)</h3>
+<ul>
+<li>Presença paga da Home Design (linguagem de promoção &quot;até 50% OFF&quot;); níveis de preço (deduzidos por categoria de marca/modelo); inconsistência de idade da Efeito (18 vs. 20 anos no próprio site).</li>
+</ul>
+<h3>[não-confirmado] — <strong>lacunas prioritárias para uma Onda 2</strong></h3>
+<ol>
+<li><strong>Presença paga real (Meta/Google Ad Library) por marca.</strong> Não confirmada — exige coletar o <code>page_id</code> de cada player e rodar a Ad Library por página (a busca por keyword é inutilizável por ruído/homônimos; Solomon deu timeout). <strong>É a lacuna nº 1</strong> — sem ela não se sabe quem investe em aquisição.</li>
+<li><strong>Praça/sede e raio de atuação da SYMM</strong> (disputa Salvador diretamente?) e <strong>identidade exata de &quot;Sancapel / Venture / Sular&quot;</strong> (queries retornaram contract internacional genérico — nomes podem estar imprecisos no briefing original).</li>
+<li><strong>Preços absolutos</strong> — nenhum player publica tabela; todos os níveis são [estimativa]. Exigiria mystery-shopping (orçamento-fantasma).</li>
+<li><strong>SEO/SERP head-to-head</strong> (&quot;móveis hotelaria Salvador&quot;, &quot;mobiliar apartamento Airbnb Salvador&quot;) — quem rankeia — não mapeado nesta rodada; recomendável para dimensionar a disputa de demanda orgânica.</li>
+<li><strong>Volume/porte</strong> (faturamento, headcount) de qualquer player — <strong>não coletado e não estimado</strong> (regra de ouro: não inventar).</li>
+</ol>
+<hr>
+<p><em>Assinado: time de pesquisa Kolden — squad de Inteligência de Mercado &amp; Scraping da Kolden. &quot;Nada de provimento sem proveniência.&quot; Onda 1, contrato de trabalho, 2026-07-10.</em></p>
+
+</body>
+</html>

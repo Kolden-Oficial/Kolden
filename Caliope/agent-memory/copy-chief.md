@@ -23,6 +23,23 @@ relacionado:
 - Antes de qualquer linha de copy longa, ler nesta ordem: brandbook (voz + posicionamento + arquétipo) → PRD (features + números clínicos) → decisões (o que virou oficial vs. deprecado) → memória do projeto (mudanças recentes). ~30 min de compilação economiza 3× isso em revisão | 2026-07-06
 - Se o brandbook já tem "brand idea" / frase-mãe pronta, a headline principal DERIVA dela — não competir com o próprio brandbook. Ex.: "Sua prática clínica merece um sistema operacional" (NutriOS) vira "A sua prática clínica merece um sistema operacional — não mais uma planilha" (LP) | 2026-07-06
 - Lista de palavras "sempre usar / nunca usar" do brandbook substitui o auto-policiamento palavra a palavra do gate de qualidade — se existe, aplicar a lista; se não existe, pedir ao Aglaia antes de escrever | 2026-07-06
+- Brandbook oficial > guia operacional derivado. Quando o projeto tem `brandbook/` (manual oficial, versionado) E `pesquisa/tom-de-voz.md` (derivado do site atual), o oficial é fonte de verdade. O derivado pode arrastar traços do site legado (ex.: assinatura antiga) mesmo estando "reconciliado". Ler ambos e priorizar o oficial evita reproduzir vícios que o próprio brandbook já corrige | 2026-07-14
+
+### Rewrite de voz (v→v+1)
+- Quando o pedido é "trocar a voz sem mexer no resto", cirurgia mínima: só a 1ª pessoa e a assinatura mudam; gatilhos, timings, assuntos A/B, previews, CTAs, P.S., tokens dinâmicos, cupons, frameworks (Chaperon/Settle/Schwartz/Brunson/Todd Brown) ficam intactos. Preservar estrutura acelera aprovação porque o time reconhece o v2 abaixo do v3 | 2026-07-14
+- Cabeçalho do arquivo v+1 deve trazer "Diff v→v+1" explícito: o que mudou, o que ficou. Facilita revisão do cliente em minutos em vez de leitura completa | 2026-07-14
+- Voz de marca ≠ voz de fundadora. Quando o cliente pede "que a marca fale, não eu", substituir toda referência pessoal (backstory da fundadora, sócios nominais, amigas específicas) por versão institucional ("o time", "uma cliente-teste") mantendo o calor emocional. Assinatura muda de nome pessoal → nome da marca (ex.: `xo, cat` → `xo, Rosie`). Não confundir com formalização — a voz continua próxima, só o "eu" muda de referente | 2026-07-14
+
+### Deploy / e-mail marketing (RD Station, ActiveCampaign, Mailchimp)
+- Nomenclatura de campanha em CRM de e-mail: `{marca}-{NN-fluxo}-{NN-posicao}-{tema-curto}` (kebab-case). NN numérico com zero à esquerda dá ordenação natural no explorador; prefixo `{marca}-{NN-fluxo}-` permite filtrar todo o fluxo com um wildcard; tema curto é legível em listas longas. Nome do arquivo HTML = nome da campanha no CRM (1:1) | 2026-07-14
+- Para ≥5 HTMLs do mesmo template, gerar via script Node (`_gerar-htmls.mjs` com objeto por e-mail + `_template.html` com `{{PLACEHOLDERS}}`) é mais robusto que N Writes manuais: consistência automática, idempotente, regenerável quando a copy mudar. Colocar script + template + `_index.md` na mesma pasta dos HTMLs gerados | 2026-07-14
+- HTML email-safe: `<table role="presentation">` com `border="0" cellpadding="0" cellspacing="0"` (não flexbox/grid), styles **inline** nos elementos + `<style>` no head como reforço, `.preheader` invisível (`display:none;visibility:hidden;opacity:0;`) para o preview text que aparece ao lado do assunto, fallback obrigatório de fonte de sistema (Georgia p/ serifada, Arial p/ sans). Google Fonts via `@import` funciona em Gmail/Apple Mail; Outlook cai em fallback — comportamento esperado, não é bug | 2026-07-14
+- Placeholders `{{URL_*}}` / `{{TOKEN_*}}` no HTML devem ser mapeados em tabela no `_index.md` da pasta de deploy, dizendo qual token dinâmico do CRM substitui cada um. Sem esse mapa, o time de operação erra na hora de colar | 2026-07-14
+
+### Voz Rosie (marca)
+- Bilíngue PT+EN é PILAR OFICIAL (Manual da Marca p. 20-26, pilar Acessível) — não é gosto pessoal. Termos-âncora do brandbook: `Effortless chic`, `Wear it, dress it and be you`, `Just for fun`, `Make it yours`, `Simply Rosie`, `Always Rosie`, `Own your style`, `Peachy cheeks`, `Sinta o frescor. Rosie's essence, pure & eternal`, `That's the Rosie experience`. Sprinkles pontuais no fim de blocos/e-mails; não usar em cada frase | 2026-07-14
+- Assinatura oficial da marca (não da Cat pessoa): `xo, Rosie`. O padrão `xo,` foi preservado do site legado porque a audiência já reconhece, mas o nome é o da marca. Header/footer dos e-mails usa "Effortless chic" e "Wear it, dress it and be you" como microcopy institucional | 2026-07-14
+- Paleta e tipografia oficiais para HTML: Rose #E6D2DC (faixa/detalhes), Black #14100C (texto/CTA — atenção: preto quente, não #000), White #FFFFFF (fundo), Grey #EBEBEB (wrapper externo), Light pink #F8E3E8 (box de destaque interno). Marcellus (títulos, via Google Fonts, fallback Georgia) + DM Sans (corpo, via Google Fonts, fallback Arial) | 2026-07-14
 
 ### Voz NutriOS Pro
 - Arquétipo Cuidador (primário) + Mago (secundário). Tom: Formal↔Casual 6 (colega experiente, não professor), Sério↔Brincalhão 4 (leve quando acolhe, sério em dado clínico), Respeitoso↔Irreverente 3, Entusiasmado↔Factual 5 | 2026-07-06
@@ -56,6 +73,8 @@ relacionado:
 <!-- Formato: - **{padrão}** | Origem: {agentes} | Detectado: {AAAA-MM-DD} -->
 - **Ordem canônica de leitura pré-produção (brandbook → PRD → decisões → memória do projeto)** — vale para copywriter, designer, PM e qualquer agente que produza artefato de projeto documentado | Origem: copy-chief (NutriOS Pro) | Detectado: 2026-07-06
 - **Kit de derivações curtas anexo à peça principal** como padrão de resposta a pedido aberto — vale para Caliope, Pheme (social), Peitho (ads), Aglaia (marca) | Origem: copy-chief (NutriOS Pro) | Detectado: 2026-07-06
+- **Cirurgia mínima em rewrite de versão + diff explícito no cabeçalho** — trocar SÓ o que foi pedido (voz, tom, formato) e listar o diff v→v+1 no topo do artefato para acelerar aprovação. Vale para Caliope (copy), Aglaia (brand), Pheme (social), escrita técnica em geral | Origem: copy-chief (Rosie v3) | Detectado: 2026-07-14
+- **Nomenclatura `{projeto}-{NN-fase}-{NN-item}-{tema-curto}` para artefatos em série** — dá ordenação, filtragem por prefixo e legibilidade em qualquer explorador (CRM, filesystem, Notion). Vale para Caliope (campanhas de e-mail), Pheme (calendário social), Peitho (variações de ad), Prometeu (versões de spec) | Origem: copy-chief (Rosie v3) | Detectado: 2026-07-14
 
 ## Arquivado
 <!-- Padrões não mais relevantes — mantidos para histórico -->

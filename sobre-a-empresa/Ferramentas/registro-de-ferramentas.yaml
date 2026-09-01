@@ -384,6 +384,18 @@ ferramentas:
     credencial: "/kolden/dev/WINDSOR_API_KEY"
     mcp: oficial
     status: ativo
+  rdstation:
+    categoria: marketing-crm
+    proposito: "Automação de marketing brasileira nº1 (subsidiária TOTVS) — e-mail, fluxos, formulários, LP, lead scoring/tracking, IA nativa (LYNN + Mentor IA). Rosie é cliente-piloto Kolden."
+    gatilhos: [rd-station, rdstation, marketing-automation, email-marketing, fluxo-automacao, nurture, lead-scoring, lead-tracking, formulario, landing-page, pop-up, ecommerce-marketing, carrinho-abandonado, mentor-ia, lynn]
+    acesso: [api, mcp]
+    credencial:  # env=dev, path raiz (convenção adotada 2026-08-18)
+      - "RD_CLIENT_ID"       # dev, ✅ cadastrado, público (03b72f6d-ce7d-4111-b7be-45933b0e3c10)
+      - "RD_CLIENT_SECRET"   # dev, ✅ cadastrado, presume-se válido
+      - "RD_API_KEY"         # dev, ✅ cadastrado + validado 2026-08-18 (evento CONVERSION 200 OK)
+      # - "RD_REFRESH_TOKEN"  # pendente — bloqueia OAuth2 completo (leitura contatos, insert em fluxo, ECOMMERCE_*, webhooks)
+    mcp: oficial  # 3 endpoints separados em mcp.rdstationmentor.com/{marketing,crm,conversas} — pendente conexão
+    status: ativo-parcial-cliente-rosie  # API Key funcional; OAuth2 full pendente refresh_token
   aigrow:
     categoria: marketing-crm
     proposito: "Growth de Instagram (sem API pública)."

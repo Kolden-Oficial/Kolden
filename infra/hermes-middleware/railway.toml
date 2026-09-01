@@ -1,0 +1,28 @@
+# Configuração Railway para o Hermes middleware Rosie.
+# Doc: docs.railway.app/reference/config-as-code
+
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "node dist/index.js"
+healthcheckPath = "/health"
+healthcheckTimeout = 30
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+
+# Variáveis obrigatórias (setar via `railway variables set` ou UI):
+#   KOLDEN_TOKEN                — proteção /kommo/horario e /kommo/schedule/*
+#   ROSIE_TZ                    — America/Sao_Paulo (default no config.ts)
+#
+# Variáveis opcionais (habilitam features v0.2):
+#   KOMMO_ROSIE_SUBDOMAIN       — rosie
+#   KOMMO_ROSIE_ACCESS_TOKEN    — JWT novo pós-rotação
+#   KOMMO_ROSIE_ACCOUNT_ID      — 36679659
+#   KOMMO_ROSIE_AMOJO_ID        — 141890a7-286c-4bf2-af0f-49f317014fba
+#   KOMMO_ROSIE_CHANNEL_SCOPE_ID (só se registrar canal custom)
+#   KOMMO_ROSIE_CHANNEL_SECRET  (só se registrar canal custom)
+#   KOMMO_WEBHOOK_SECRET        — protege /kommo/webhook e /kommo/dispatch
+#   UPSTASH_REDIS_REST_URL      — Upstash Redis (só se ativar scheduler)
+#   UPSTASH_REDIS_REST_TOKEN

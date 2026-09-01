@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BRW Movelaria · Linha Editorial Instagram · agosto/2026</title>
+<meta name="description" content="Sistema editorial de 30 dias para @brwmovelaria — Curadoria que rende." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --marinho: #1A3D7E;
+    --ocre: #C1741D;
+    --borgonha: #7B1B1A;
+    --cafe: #3E2917;
+    --oliva: #3D4E1E;
+    --off-white: #F5F3EC;
+    --cinza-chumbo: #4A4E52;
+    --cinza-suave: rgba(74, 78, 82, 0.4);
+    --font-display: 'Montserrat', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    --ls-tight: 0.02em;
+    --ls-mid: 0.14em;
+    --ls-wide: 0.28em;
+    --ls-huge: 0.4em;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-snap-type: y mandatory; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-display);
+    background: var(--off-white);
+    color: var(--marinho);
+    font-weight: 300;
+    line-height: 1.5;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  section.slide {
+    min-height: 100vh;
+    height: 100vh;
+    scroll-snap-align: start;
+    padding: 6vh 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  section.marinho { background: var(--marinho); color: var(--off-white); }
+  section.marinho h1, section.marinho h2, section.marinho h3 { color: var(--off-white); }
+  section.off { background: var(--off-white); color: var(--marinho); }
+  section.off h1, section.off h2, section.off h3 { color: var(--marinho); }
+
+  /* Tipografia */
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: var(--ls-huge);
+    font-size: clamp(0.65rem, 0.85vw, 0.85rem);
+    font-weight: 400;
+    color: var(--ocre);
+    margin-bottom: 2rem;
+  }
+  section.marinho .eyebrow { color: var(--ocre); }
+  h1.hero {
+    font-size: clamp(2.5rem, 6vw, 5.5rem);
+    font-weight: 200;
+    letter-spacing: var(--ls-tight);
+    line-height: 1.05;
+    margin-bottom: 2rem;
+  }
+  h1.hero b, h1.hero strong { font-weight: 500; color: var(--ocre); }
+  h2 {
+    font-size: clamp(1.6rem, 3.6vw, 3rem);
+    font-weight: 300;
+    letter-spacing: var(--ls-tight);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    max-width: 22ch;
+  }
+  h2.wide { max-width: 32ch; }
+  h3 {
+    font-size: clamp(1rem, 1.4vw, 1.25rem);
+    font-weight: 500;
+    letter-spacing: var(--ls-mid);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  p.lead {
+    font-size: clamp(0.95rem, 1.35vw, 1.2rem);
+    font-weight: 300;
+    line-height: 1.55;
+    max-width: 62ch;
+    color: var(--cinza-chumbo);
+  }
+  section.marinho p.lead { color: rgba(245, 243, 236, 0.75); }
+  p.mono {
+    font-family: 'Montserrat', monospace;
+    font-size: 0.85rem;
+    letter-spacing: var(--ls-mid);
+    text-transform: uppercase;
+  }
+  .tagline {
+    font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+    font-weight: 300;
+    letter-spacing: var(--ls-wide);
+    text-transform: uppercase;
+    color: var(--ocre);
+    margin-top: 3rem;
+  }
+  hr.rule {
+    border: none;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.2;
+    margin: 2rem 0;
+    width: 4rem;
+  }
+  section.marinho hr.rule { opacity: 0.35; }
+
+  /* Numerador dos slides */
+  .slide-num {
+    position: absolute;
+    top: 4vh;
+    right: 4vw;
+    font-size: 0.75rem;
+    letter-spacing: var(--ls-huge);
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+  .slide-brand {
+    position: absolute;
+    top: 4vh;
+    left: 4vw;
+    font-size: 0.75rem;
+    letter-spacing: var(--ls-huge);
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  /* Selo circular */
+  .selo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.55rem;
+    letter-spacing: var(--ls-huge);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .selo::before {
+    content: "★★★★★";
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* Capa */
+  .capa-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 4vh 0;
+  }
+  .capa-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .capa-logo {
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: var(--ls-wide);
+    text-transform: uppercase;
+    border-left: 2px solid var(--ocre);
+    padding-left: 0.85rem;
+  }
+  .capa-logo b { font-weight: 500; }
+  .capa-logo span { opacity: 0.6; font-weight: 300; }
+  .capa-title {
+    font-size: clamp(2.5rem, 7.5vw, 6.5rem);
+    font-weight: 200;
+    letter-spacing: 0;
+    line-height: 0.95;
+    margin: 2rem 0;
+  }
+  .capa-title em {
+    font-style: normal;
+    color: var(--ocre);
+    font-weight: 500;
+  }
+  .capa-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.75rem;
+    letter-spacing: var(--ls-huge);
+    text-transform: uppercase;
+    opacity: 0.7;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  /* Grid principal (para conteúdo) */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  /* Cards */
+  .card {
+    border: 1px solid currentColor;
+    padding: 1.75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    background: transparent;
+  }
+  .card.filled { background: rgba(26, 61, 126, 0.04); }
+  section.marinho .card.filled { background: rgba(245, 243, 236, 0.06); }
+  .card-num {
+    font-size: 2.4rem;
+    font-weight: 200;
+    color: var(--ocre);
+    letter-spacing: 0;
+    line-height: 1;
+  }
+  .card-title {
+    font-size: 0.85rem;
+    letter-spacing: var(--ls-mid);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .card-body {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.55;
+    opacity: 0.85;
+  }
+  .card-tag {
+    font-size: 0.65rem;
+    letter-spacing: var(--ls-huge);
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    border-top: 1px solid currentColor;
+    opacity: 0.55;
+  }
+
+  /* Semana — bloco */
+  .semana {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  .semana-header {
+    border-left: 2px solid var(--ocre);
+    padding-left: 1.5rem;
+  }
+  .semana-header .n {
+    font-size: 4.5rem;
+    font-weight: 200;
+    line-height: 1;
+    color: var(--ocre);
+  }
+  .semana-header .datas {
+    font-size: 0.75rem;
+    letter-spacing: var(--ls-huge);
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-top: 0.75rem;
+  }
+  .semana-header .titulo {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: var(--ls-tight);
+    margin-top: 1rem;
+    line-height: 1.25;
+  }
+  .semana-header .metrica {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    letter-spacing: var(--ls-mid);
+    text-transform: uppercase;
+    color: var(--ocre);
+  }
+  .semana-header .persona {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: var(--ls-mid);
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .post-mini {
+    border: 1px solid currentColor;
+    padding: 1.2rem;
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .post-mini.ancora { background: var(--ocre); color: var(--off-white); border-color: var(--ocre); }
+  section.marinho .post-mini.ancora { background: var(--ocre); color: var(--off-white); }
+  .post-mini .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.65rem;
+    letter-spacing: var(--ls-huge);
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+  .post-mini .titulo {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: var(--ls-tight);
+  }
+  .post-mini.ancora .titulo { font-weight: 500; }
+  .post-mini .foot {
+    margin-top: auto;
+    font-size: 0.6rem;
+    letter-spacing: var(--ls-huge);
+    text-transform: uppercase;
+    opacity: 0.65;
+  }
+
+  /* Âncora — apresentação de peça */
+  .peca-wrap {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .peca-badge {
+    font-size: 0.7rem;
+    letter-spacing: var(--ls-huge);
+    text-transform: uppercase;
+    color: var(--ocre);
+    margin-bottom: 1rem;
+  }
+  .peca-title {
+    font-size: clamp(1.4rem, 2.6vw, 2.2rem);
+    font-weight: 300;
+    letter-spacing: var(--ls-tight);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  .peca-gancho {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.55;
+    padding: 1.25rem 1.5rem;
+    border-left: 3px solid var(--ocre);
+    background: rgba(193, 116, 29, 0.06);
+    margin-bottom: 2rem;
+  }
+  section.marinho .peca-gancho { background: rgba(193, 116, 29, 0.12); }
+  .peca-detalhes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2.5rem;
+    font-size: 0.85rem;
+  }
+  .peca-detalhes dt {
+    font-size: 0.65rem;
+    letter-spacing: var(--ls-huge);
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-bottom: 0.35rem;
+  }
+  .peca-detalhes dd { font-weight: 400; line-height: 1.4; }
+
+  /* Números / hero-stats */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--cinza-suave);
+  }
+  .stat .n {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 200;
+    line-height: 1;
+    color: var(--ocre);
+  }
+  .stat .label {
+    font-size: 0.7rem;
+    letter-spacing: var(--ls-huge);
+    text-transform: uppercase;
+    opacity: 0.65;
+    margin-top: 0.75rem;
+  }
+
+  /* Tagline de fecho */
+  .fecho {
+    text-align: center;
+    padding: 8vh 4vw;
+  }
+  .fecho .selo {
+    margin: 0 auto 3rem;
+    width: 120px;
+    height: 120px;
+    font-size: 0.65rem;
+  }
+  .fecho h2 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 200;
+    max-width: none;
+    margin: 0 auto 2rem;
+  }
+  .fecho .tagline { margin-top: 2rem; }
+
+  /* Lista de vetos */
+  .vetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 3rem;
+    margin-top: 2.5rem;
+  }
+  .vetos li {
+    list-style: none;
+    padding: 1rem 0;
+    border-top: 1px solid var(--cinza-suave);
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: baseline;
+    font-weight: 300;
+  }
+  .vetos li::before {
+    content: "×";
+    color: var(--borgonha);
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1;
+  }
+  section.marinho .vetos li::before { color: var(--ocre); }
+  .vetos li b { font-weight: 500; letter-spacing: var(--ls-tight); }
+  section.marinho .vetos li { border-top-color: rgba(245, 243, 236, 0.15); }
+
+  /* Léxico */
+  .lexico {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    max-width: 60ch;
+  }
+  .lexico span {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid currentColor;
+    font-size: 0.75rem;
+    letter-spacing: var(--ls-mid);
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.85;
+  }
+
+  /* Navegação (dots à direita) */
+  nav.dots {
+    position: fixed;
+    right: 2vw;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    z-index: 100;
+  }
+  nav.dots a {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--cinza-chumbo);
+    opacity: 0.35;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  nav.dots a:hover { opacity: 1; transform: scale(1.3); }
+  nav.dots a.active { background: var(--ocre); opacity: 1; transform: scale(1.5); }
+
+  /* Setas de navegação */
+  .nav-hint {
+    position: fixed;
+    bottom: 2.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.65rem;
+    letter-spacing: var(--ls-huge);
+    text-transform: uppercase;
+    opacity: 0.5;
+    z-index: 100;
+    color: var(--cinza-chumbo);
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .nav-hint .arrow { display: inline-block; opacity: 0.7; }
+  section.marinho ~ .nav-hint { color: var(--off-white); }
+
+  /* Handoff — perguntas */
+  .perguntas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 2rem;
+  }
+  .perguntas li {
+    list-style: none;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--cinza-suave);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .perguntas li:last-child { border-bottom: 1px solid var(--cinza-suave); }
+  .perguntas li .num {
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--ocre);
+    letter-spacing: var(--ls-tight);
+  }
+  section.marinho .perguntas li { border-top-color: rgba(245, 243, 236, 0.15); }
+  section.marinho .perguntas li:last-child { border-bottom-color: rgba(245, 243, 236, 0.15); }
+
+  /* Ferramentas de responsividade */
+  @media (max-width: 900px) {
+    section.slide { padding: 5vh 6vw; }
+    .grid-2, .semana, .peca-wrap { grid-template-columns: 1fr; gap: 2rem; }
+    .grid-4 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: 1fr; }
+    .vetos { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+    .posts-grid { grid-template-columns: 1fr; }
+    nav.dots { right: 1vw; }
+    nav.dots a { width: 6px; height: 6px; }
+    .capa-title { font-size: clamp(2.2rem, 12vw, 4rem); }
+    .capa-meta { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    h1.hero { font-size: clamp(2rem, 8vw, 3rem); }
+    h2 { font-size: clamp(1.5rem, 6vw, 2.2rem); max-width: none; }
+    section.slide { min-height: auto; height: auto; padding: 8vh 6vw; }
+    html, body { scroll-snap-type: none; }
+  }
+
+  @media print {
+    section.slide { min-height: 0; page-break-after: always; }
+    nav.dots, .nav-hint { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="dots" id="dots"></nav>
+
+<div class="nav-hint">
+  <span class="arrow">↑ ↓</span>
+  <span>Navegue com setas ou role a página</span>
+</div>
+
+<!-- SLIDE 1 — CAPA -->
+<section class="slide off" id="s1">
+  <div class="capa-wrap">
+    <div class="capa-top">
+      <div class="capa-logo"><b>BRW</b><span>.movelaria</span></div>
+      <div class="selo">Movelaria<br/>BR.W</div>
+    </div>
+    <div>
+      <div class="eyebrow">Linha editorial · Instagram · agosto/2026</div>
+      <h1 class="capa-title">
+        Curadoria<br/>
+        <em>que rende.</em>
+      </h1>
+      <p class="lead">Um mês de conteúdo desenhado para transformar 541 seguidores em decisões de mobiliário — hotelaria, investidor Airbnb, residencial premium.</p>
+    </div>
+    <div class="capa-meta">
+      <span>Salvador · Bahia</span>
+      <span>16 posts · 4 semanas · 3 personas</span>
+      <span>versão 1 · 2026-07-15</span>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 2 — CONTEXTO -->
+<section class="slide marinho" id="s2">
+  <span class="slide-num">02</span>
+  <span class="slide-brand">BRW · CONTEXTO</span>
+  <div class="grid-2">
+    <div>
+      <div class="eyebrow">O momento</div>
+      <h2 class="wide">A marca já foi lavrada. Falta o sistema editorial.</h2>
+    </div>
+    <div>
+      <p class="lead">Em 10/07/2026, a Kolden fechou a marca básica da BRW: posicionamento, voz-e-tom, mensagens-chave, brandbook. A conta @brwmovelaria vive há mais de dez anos — mas com cinco taglines competindo no mesmo feed, quinze de vinte posts sem comentário, TikTok abandonado e o site próprio fora do ar.</p>
+      <p class="lead" style="margin-top: 1.25rem;">Este documento é o próximo passo: um mês inteiro de Instagram desenhado sobre a marca lavrada, com pilar por semana, persona declarada e métrica-norte objetiva.</p>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="n">541</div><div class="label">Seguidores base</div></div>
+    <div class="stat"><div class="n">~1,4%</div><div class="label">Engajamento médio</div></div>
+    <div class="stat"><div class="n">16</div><div class="label">Posts programados</div></div>
+    <div class="stat"><div class="n">4</div><div class="label">Semanas · 4 pilares</div></div>
+  </div>
+</section>
+
+<!-- SLIDE 3 — DECISÕES DO RONAN -->
+<section class="slide off" id="s3">
+  <span class="slide-num">03</span>
+  <span class="slide-brand">DECISÕES TRAVADAS</span>
+  <div class="eyebrow">O que foi escolhido antes de escrever</div>
+  <h2 class="wide">Três decisões definem o mês.</h2>
+  <div class="grid-3" style="margin-top: 3rem;">
+    <div class="card filled">
+      <div class="card-num">01</div>
+      <div class="card-title">Objetivo</div>
+      <div class="card-body">Mix balanceado. Um pilar por semana. O mês inteiro serve para aprender qual formato traciona antes de estreitar.</div>
+      <div class="card-tag">Métrica muda toda semana</div>
+    </div>
+    <div class="card filled">
+      <div class="card-num">02</div>
+      <div class="card-title">Persona</div>
+      <div class="card-body">Trio A + B + C. Hoteleiro sênior, investidor Airbnb jovem e residencial premium — cada um dominando uma semana.</div>
+      <div class="card-tag">3 públicos, 1 marca</div>
+    </div>
+    <div class="card filled">
+      <div class="card-num">03</div>
+      <div class="card-title">Time</div>
+      <div class="card-body">Formato híbrido. Skill-lite desenha o esqueleto, fan-out só nas 8 peças-âncora. Templates ficam no arquivo mestre.</div>
+      <div class="card-tag">Enxuto por escolha</div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 4 — ARQUITETURA SEMANAL -->
+<section class="slide marinho" id="s4">
+  <span class="slide-num">04</span>
+  <span class="slide-brand">ARQUITETURA</span>
+  <div class="eyebrow">Quatro semanas, quatro pilares</div>
+  <h2 class="wide">Cada semana tem persona, métrica e pilar próprios.</h2>
+  <div class="grid-4">
+    <div class="card">
+      <div class="card-num" style="color: var(--off-white); opacity: 0.4;">S1</div>
+      <div class="card-title" style="color: var(--ocre);">Autoridade B2B</div>
+      <div class="card-body">04 → 10/ago<br/>Persona A · Hoteleiro<br/>Pilares 1 + 3</div>
+      <div class="card-tag">Métrica: salvamentos</div>
+    </div>
+    <div class="card">
+      <div class="card-num" style="color: var(--off-white); opacity: 0.4;">S2</div>
+      <div class="card-title" style="color: var(--ocre);">Alcance</div>
+      <div class="card-body">11 → 17/ago<br/>Persona B · Investidor<br/>Pilar 4 (contrário)</div>
+      <div class="card-tag">Métrica: não-seguidores</div>
+    </div>
+    <div class="card">
+      <div class="card-num" style="color: var(--off-white); opacity: 0.4;">S3</div>
+      <div class="card-title" style="color: var(--ocre);">Prova social</div>
+      <div class="card-body">18 → 24/ago<br/>Personas A + B<br/>Pilar 2 (ponta a ponta)</div>
+      <div class="card-tag">Métrica: DMs WhatsApp</div>
+    </div>
+    <div class="card">
+      <div class="card-num" style="color: var(--off-white); opacity: 0.4;">S4</div>
+      <div class="card-title" style="color: var(--ocre);">Lifestyle</div>
+      <div class="card-body">25 → 31/ago<br/>Persona C · Residencial<br/>Pilar 4 (critério)</div>
+      <div class="card-tag">Métrica: engajamento</div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 5 — 4 PILARES -->
+<section class="slide off" id="s5">
+  <span class="slide-num">05</span>
+  <span class="slide-brand">OS PILARES</span>
+  <div class="eyebrow">Toda peça responde a um dos quatro</div>
+  <h2 class="wide">Quatro pilares, quatro promessas verificáveis.</h2>
+  <div class="grid-4" style="margin-top: 3rem;">
+    <div class="card">
+      <div class="card-num">01</div>
+      <div class="card-title">Acesso industrial</div>
+      <div class="card-body">Compra na origem, sem repassar risco. Nunca "somos fábrica" — sempre "acesso de fábrica".</div>
+    </div>
+    <div class="card">
+      <div class="card-num">02</div>
+      <div class="card-title">Ponta a ponta</div>
+      <div class="card-body">Curadoria + projeto + execução + pós-venda. Um interlocutor, não seis fornecedores.</div>
+    </div>
+    <div class="card">
+      <div class="card-num">03</div>
+      <div class="card-title">Mobília que rende</div>
+      <div class="card-body">Ativo, não gasto. Reduz vacância. Sustenta o valor da diária. Consistência multi-unidade.</div>
+    </div>
+    <div class="card">
+      <div class="card-num">04</div>
+      <div class="card-title">Critério atemporal</div>
+      <div class="card-body">Proporção. Silêncio. Permanência. Lastro de gosto — não o topo do argumento comercial.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 6 — SEMANA 1 -->
+<section class="slide marinho" id="s6">
+  <span class="slide-num">06</span>
+  <span class="slide-brand">SEMANA 1 · AUTORIDADE B2B</span>
+  <div class="semana">
+    <div class="semana-header">
+      <div class="n">S1</div>
+      <div class="datas">04 → 10 de agosto</div>
+      <div class="titulo">Conteúdo técnico e analítico que o investidor B2B arquiva antes de decidir mobiliar.</div>
+      <div class="metrica">Métrica-norte: Salvamentos</div>
+      <div class="persona">Persona A · hoteleiro</div>
+    </div>
+    <div class="posts-grid">
+      <div class="post-mini ancora">
+        <div class="head"><span>Seg 04/08</span><span>★ ÂNCORA</span></div>
+        <div class="titulo">R$300k por unidade não é preço de móvel — é preço de canal</div>
+        <div class="foot">Carrossel · 10 slides</div>
+      </div>
+      <div class="post-mini">
+        <div class="head"><span>Qua 06/08</span><span>Template</span></div>
+        <div class="titulo">Comprar direto da fábrica quase sempre sai mais caro</div>
+        <div class="foot">Feed · contrário</div>
+      </div>
+      <div class="post-mini ancora">
+        <div class="head"><span>Sex 08/08</span><span>★ ÂNCORA</span></div>
+        <div class="titulo">Iberostar: 8 anos de curadoria contínua sem apagão</div>
+        <div class="foot">Reel · 25-35s</div>
+      </div>
+      <div class="post-mini">
+        <div class="head"><span>Dom 10/08</span><span>Template</span></div>
+        <div class="titulo">Cadeira que aguenta hotel vale duas do residencial</div>
+        <div class="foot">Feed · analítico</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 7 — S1 ÂNCORA CARROSSEL -->
+<section class="slide off" id="s7">
+  <span class="slide-num">07</span>
+  <span class="slide-brand">S1 · CARROSSEL-ÂNCORA</span>
+  <div class="peca-wrap">
+    <div>
+      <div class="peca-badge">Semana 1 · Carrossel · 10 slides</div>
+      <div class="peca-title">R$300k por unidade não é preço de móvel — é preço de canal.</div>
+      <div class="peca-gancho">"Alphaville, 24 casas. Custo de mercado por unidade: R$300k. O que fizemos por R$176k. E por que a diferença não estava no móvel."</div>
+    </div>
+    <dl class="peca-detalhes">
+      <div><dt>Pilar</dt><dd>Acesso industrial com critério</dd></div>
+      <div><dt>Persona</dt><dd>A · investidor sênior / hoteleiro</dd></div>
+      <div><dt>Objetivo</dt><dd>Salvos — arquivo de raciocínio B2B</dd></div>
+      <div><dt>Case-base</dt><dd>Alphaville · 24 casas · R$300k → R$176k</dd></div>
+      <div><dt>Cor dominante</dt><dd>Marinho · #1A3D7E</dd></div>
+      <div><dt>Cor de acento</dt><dd>Ocre · #C1741D nos números</dd></div>
+      <div><dt>Ativos</dt><dd>Studio-por-BRW · Planta Singulari</dd></div>
+      <div><dt>CTA</dt><dd>WhatsApp +55 71 99902-7171</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- SLIDE 8 — S1 ÂNCORA REEL -->
+<section class="slide marinho" id="s8">
+  <span class="slide-num">08</span>
+  <span class="slide-brand">S1 · REEL-ÂNCORA</span>
+  <div class="peca-wrap">
+    <div>
+      <div class="peca-badge">Semana 1 · Reel · 25-35s</div>
+      <div class="peca-title">Iberostar Praia do Forte:<br/>8 anos de curadoria contínua sem apagão de operação.</div>
+      <div class="peca-gancho">"Oito anos. Duas fases de retrofit. Um hotel que nunca fechou pra trocar mobília. Isso é curadoria contínua."</div>
+    </div>
+    <dl class="peca-detalhes">
+      <div><dt>Pilar</dt><dd>Processo ponta a ponta</dd></div>
+      <div><dt>Persona</dt><dd>A · hoteleiro / gestor de rede</dd></div>
+      <div><dt>Formato</dt><dd>VO sereno · legendas queimadas</dd></div>
+      <div><dt>Trilha</dt><dd>Cinematic minimal · piano solo · BPM 68-72</dd></div>
+      <div><dt>Ativos</dt><dd>BRW-Cortes.mp4 · BRW-IBEROSTAR-CAPA</dd></div>
+      <div><dt>Aprovação</dt><dd>Courtesy Iberostar antes de publicar</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- SLIDE 9 — SEMANA 2 -->
+<section class="slide off" id="s9">
+  <span class="slide-num">09</span>
+  <span class="slide-brand">SEMANA 2 · ALCANCE / QUEBRAR BOLHA</span>
+  <div class="semana">
+    <div class="semana-header">
+      <div class="n">S2</div>
+      <div class="datas">11 → 17 de agosto</div>
+      <div class="titulo">Ganchos contrários e observação para escapar da bolha de 541 seguidores.</div>
+      <div class="metrica">Métrica-norte: Alcance de não-seguidores</div>
+      <div class="persona">Persona B · investidor Airbnb</div>
+    </div>
+    <div class="posts-grid">
+      <div class="post-mini ancora">
+        <div class="head"><span>Seg 11/08</span><span>★ ÂNCORA</span></div>
+        <div class="titulo">Móvel bonito é o pior investimento para Airbnb</div>
+        <div class="foot">Carrossel · 8 slides</div>
+      </div>
+      <div class="post-mini">
+        <div class="head"><span>Qua 13/08</span><span>Template</span></div>
+        <div class="titulo">A tendência mais forte de 2026 é a coragem de deixar o vazio</div>
+        <div class="foot">Feed · contrário</div>
+      </div>
+      <div class="post-mini ancora">
+        <div class="head"><span>Sex 15/08</span><span>★ ÂNCORA</span></div>
+        <div class="titulo">Prazo curto não é o melhor prazo. É o que a operação sustenta.</div>
+        <div class="foot">Reel · 15-25s · sem VO</div>
+      </div>
+      <div class="post-mini">
+        <div class="head"><span>Dom 17/08</span><span>Template</span></div>
+        <div class="titulo">3 escolhas que reduzem o tempo médio entre reservas</div>
+        <div class="foot">Carrossel · acionável</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 10 — S2 REEL ÂNCORA (resposta 3M) -->
+<section class="slide marinho" id="s10">
+  <span class="slide-num">10</span>
+  <span class="slide-brand">S2 · REEL-ÂNCORA</span>
+  <div class="peca-wrap">
+    <div>
+      <div class="peca-badge">Semana 2 · Reel · 22s · resposta indireta ao concorrente #1</div>
+      <div class="peca-title">Prazo curto não é o melhor prazo.<br/>É o prazo que a operação sustenta.</div>
+      <div class="peca-gancho">"Tem gente entregando em 45 dias. A gente prefere entregar no dia combinado."</div>
+    </div>
+    <dl class="peca-detalhes">
+      <div><dt>Pilar</dt><dd>Processo ponta a ponta</dd></div>
+      <div><dt>Alvo real</dt><dd>3M Reformas (nunca nominal)</dd></div>
+      <div><dt>Formato</dt><dd>Sem VO · letreiros grandes · silêncio comentado</dd></div>
+      <div><dt>Trilha</dt><dd>Ambient drone · sem BPM percussivo</dd></div>
+      <div><dt>Estratégia</dt><dd>Opinião gera share · foco em própria força</dd></div>
+      <div><dt>Objetivo</dt><dd>Escapar da bolha · % não-seguidor ≥ 40%</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- SLIDE 11 — SEMANA 3 -->
+<section class="slide off" id="s11">
+  <span class="slide-num">11</span>
+  <span class="slide-brand">SEMANA 3 · PROVA SOCIAL</span>
+  <div class="semana">
+    <div class="semana-header">
+      <div class="n">S3</div>
+      <div class="datas">18 → 24 de agosto</div>
+      <div class="titulo">Case-book real convertido em conversa — a semana da conversão.</div>
+      <div class="metrica">Métrica-norte: Mensagens WhatsApp qualificadas</div>
+      <div class="persona">Personas A + B</div>
+    </div>
+    <div class="posts-grid">
+      <div class="post-mini ancora">
+        <div class="head"><span>Seg 18/08</span><span>★ ÂNCORA</span></div>
+        <div class="titulo">Hotel do Flamengo: curadoria substituiu 10 anos de fornecedor</div>
+        <div class="foot">Reel · 25-35s</div>
+      </div>
+      <div class="post-mini ancora">
+        <div class="head"><span>Qua 20/08</span><span>★ ÂNCORA</span></div>
+        <div class="titulo">Da planta à chave: 6 momentos, duas semanas economizadas</div>
+        <div class="foot">Carrossel · 10 slides</div>
+      </div>
+      <div class="post-mini">
+        <div class="head"><span>Sex 22/08</span><span>Template</span></div>
+        <div class="titulo">O barulho do canteiro que ninguém filma</div>
+        <div class="foot">Reel · 15-20s</div>
+      </div>
+      <div class="post-mini">
+        <div class="head"><span>Dom 24/08</span><span>Template</span></div>
+        <div class="titulo">5 perguntas que separam um fornecedor de um curador</div>
+        <div class="foot">Carrossel · listicle</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 12 — S3 CARROSSEL ÂNCORA (funil) -->
+<section class="slide marinho" id="s12">
+  <span class="slide-num">12</span>
+  <span class="slide-brand">S3 · CARROSSEL-ÂNCORA</span>
+  <div class="peca-wrap">
+    <div>
+      <div class="peca-badge">Semana 3 · Carrossel · 10 slides · funil de conversão</div>
+      <div class="peca-title">Da planta à chave:<br/>6 momentos onde um interlocutor único te economiza duas semanas.</div>
+      <div class="peca-gancho">"Coordenar seis fornecedores é um trabalho. Ninguém te paga por ele."</div>
+    </div>
+    <dl class="peca-detalhes">
+      <div><dt>Pilar</dt><dd>Processo ponta a ponta</dd></div>
+      <div><dt>Persona</dt><dd>B · investidor jovem (sub-A · sênior valida)</dd></div>
+      <div><dt>Estrutura</dt><dd>Planta → Curadoria → Orçamento → Fabricação → Montagem → Pós-obra</dd></div>
+      <div><dt>Objetivo</dt><dd>DMs no WhatsApp — "manda a planta"</dd></div>
+      <div><dt>Link atribuível</dt><dd>wa.me/…?text=Projeto</dd></div>
+      <div><dt>Slide-chave</dt><dd>Slide 8 · -14 dias · resposta assimétrica à 3M</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- SLIDE 13 — SEMANA 4 -->
+<section class="slide off" id="s13">
+  <span class="slide-num">13</span>
+  <span class="slide-brand">SEMANA 4 · LIFESTYLE / RESIDENCIAL</span>
+  <div class="semana">
+    <div class="semana-header">
+      <div class="n">S4</div>
+      <div class="datas">25 → 31 de agosto</div>
+      <div class="titulo">Autoralidade da linha própria — o lastro estético que sustenta o resto.</div>
+      <div class="metrica">Métrica-norte: Engajamento composto</div>
+      <div class="persona">Persona C · residencial premium</div>
+    </div>
+    <div class="posts-grid">
+      <div class="post-mini ancora">
+        <div class="head"><span>Seg 25/08</span><span>★ ÂNCORA</span></div>
+        <div class="titulo">Cadeira Megan em 3 revestimentos, 3 projetos, 3 anos</div>
+        <div class="foot">Carrossel · 9 slides</div>
+      </div>
+      <div class="post-mini">
+        <div class="head"><span>Qua 27/08</span><span>Template</span></div>
+        <div class="titulo">Proporção certa entre mesa e ambiente: 3 medidas</div>
+        <div class="foot">Feed · acionável</div>
+      </div>
+      <div class="post-mini ancora">
+        <div class="head"><span>Sex 29/08</span><span>★ ÂNCORA</span></div>
+        <div class="titulo">TRAMA: coleção que nasceu de um retrofit</div>
+        <div class="foot">Reel · 20-30s</div>
+      </div>
+      <div class="post-mini">
+        <div class="head"><span>Dom 31/08</span><span>Template</span></div>
+        <div class="titulo">Rattan de critério dura duas décadas</div>
+        <div class="foot">Feed · presente vs futuro</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 14 — S4 CARROSSEL ÂNCORA (Megan) -->
+<section class="slide marinho" id="s14">
+  <span class="slide-num">14</span>
+  <span class="slide-brand">S4 · CARROSSEL-ÂNCORA</span>
+  <div class="peca-wrap">
+    <div>
+      <div class="peca-badge">Semana 4 · Carrossel · 9 slides · autoralidade</div>
+      <div class="peca-title">A cadeira Megan em 3 revestimentos, 3 projetos, 3 anos:<br/>o que a mesma peça diz em contextos diferentes.</div>
+      <div class="peca-gancho">"Uma peça que atravessa três projetos sem repetir é curadoria. Não é catálogo."</div>
+    </div>
+    <dl class="peca-detalhes">
+      <div><dt>Pilar</dt><dd>Critério estético atemporal</dd></div>
+      <div><dt>Persona</dt><dd>C · residencial premium</dd></div>
+      <div><dt>Estrutura</dt><dd>Capa → apresentação → 3 blocos (couro / linho / bouclé) → moral → assinatura de coleção</dd></div>
+      <div><dt>Objetivo</dt><dd>Afirmar autoralidade da linha própria</dd></div>
+      <div><dt>Sistema de nomes</dt><dd>Megan · Flora · Aresta · TRAMA · Milano · Torres · Notte</dd></div>
+      <div><dt>Ativo raro</dt><dd>Nomenclatura autoral no varejo baiano</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- SLIDE 15 — VOZ + LÉXICO -->
+<section class="slide off" id="s15">
+  <span class="slide-num">15</span>
+  <span class="slide-brand">VOZ · TOM · LÉXICO</span>
+  <div class="grid-2">
+    <div>
+      <div class="eyebrow">Três adjetivos</div>
+      <h2>Criteriosa. Serena. Pragmática.</h2>
+      <p class="lead">Fala com discernimento em vez de adjetivo. Confiança que não levanta a voz. Aterrissa sempre no resultado. É a postura de quem já viu chão de fábrica e sala de hotel — e por isso pode dizer, com calma, o que vale a pena.</p>
+      <hr class="rule" />
+      <p class="mono" style="color: var(--ocre);">"Curadoria que rende."</p>
+    </div>
+    <div>
+      <div class="eyebrow">Léxico oficial</div>
+      <h3>Palavras que a marca usa</h3>
+      <div class="lexico">
+        <span>curadoria</span>
+        <span>com critério</span>
+        <span>proporção</span>
+        <span>silêncio</span>
+        <span>atemporal</span>
+        <span>presença silenciosa</span>
+        <span>ativo</span>
+        <span>rende</span>
+        <span>ROI</span>
+        <span>ponta a ponta</span>
+        <span>acesso de fábrica</span>
+        <span>multi-unidade</span>
+        <span>pronto para operar</span>
+        <span>quem pensa grande</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 16 — VETOS ABSOLUTOS -->
+<section class="slide marinho" id="s16">
+  <span class="slide-num">16</span>
+  <span class="slide-brand">GATE · VETOS</span>
+  <div class="eyebrow">Palavras que nenhum post do mês pode dizer</div>
+  <h2 class="wide">Dez vetos que valem para todas as 16 peças.</h2>
+  <ul class="vetos">
+    <li><b>"Desde 1998"</b> — a entidade jurídica é de 2026. O legado é do Robinsom, não da marca.</li>
+    <li><b>"30 anos da BRW"</b> — a bagagem é do fundador, não da empresa.</li>
+    <li><b>"Preço de fábrica"</b> — CNAE é comércio. Usar "acesso de fábrica".</li>
+    <li><b>"Transformando espaços em experiências"</b> — chavão B2C sem diferenciação.</li>
+    <li><b>"Sonho / realizar sonhos"</b> — registro residencial popular, fora do eixo B2B.</li>
+    <li><b>Superlativo vazio</b> — "o melhor", "incrível", "exclusivo" sem prova.</li>
+    <li><b>Exclamação para fabricar entusiasmo</b> — serenidade não grita.</li>
+    <li><b>Promessa de volume</b> — a operação ainda reconstrói a montagem.</li>
+    <li><b>"Acesso Rimo" como fato</b> — hipótese não verificada até o gate.</li>
+    <li><b>Nomear concorrente ou fornecedor deslocado</b> — a diferenciação é sempre indireta.</li>
+  </ul>
+</section>
+
+<!-- SLIDE 17 — MÉTRICAS -->
+<section class="slide off" id="s17">
+  <span class="slide-num">17</span>
+  <span class="slide-brand">MÉTRICAS · A/BS · CADÊNCIA</span>
+  <div class="eyebrow">Uma métrica por semana, um teste por semana</div>
+  <h2 class="wide">Priorização brutal. Nada de dashboard com dez colunas.</h2>
+  <div class="grid-4" style="margin-top: 3rem;">
+    <div class="card">
+      <div class="card-num">S1</div>
+      <div class="card-title">Salvos por post</div>
+      <div class="card-body">Meta: dobrar a média nos 2 âncoras. Baseline nos 90 dias anteriores.</div>
+      <div class="card-tag">A/B: capa · número puro vs. ambiente</div>
+    </div>
+    <div class="card">
+      <div class="card-num">S2</div>
+      <div class="card-title">Não-seguidores</div>
+      <div class="card-body">Meta: ≥ 40% do alcance fora da base. Sinal diagnóstico do teto orgânico.</div>
+      <div class="card-tag">A/B: horário · 10h vs. 20h</div>
+    </div>
+    <div class="card">
+      <div class="card-num">S3</div>
+      <div class="card-title">DMs qualificadas</div>
+      <div class="card-body">Meta: ≥ 3 DMs originadas dos 4 posts, ≥ 1 lead B2B qualificado.</div>
+      <div class="card-tag">A/B: CTA · direto vs. consultivo</div>
+    </div>
+    <div class="card">
+      <div class="card-num">S4</div>
+      <div class="card-title">Engajamento composto</div>
+      <div class="card-body">Meta: likes+salvos 50% acima do baseline nos 2 âncoras.</div>
+      <div class="card-tag">A/B: hook · afirmativo vs. pergunta</div>
+    </div>
+  </div>
+  <p class="lead" style="margin-top: 2.5rem;">Report fecha domingo 23h. Cada semana ajusta a próxima. Uma tela, um parágrafo, uma tabela — sem cerimônia.</p>
+</section>
+
+<!-- SLIDE 18 — BLOQUEIOS -->
+<section class="slide marinho" id="s18">
+  <span class="slide-num">18</span>
+  <span class="slide-brand">BLOQUEIOS · SINALIZAR</span>
+  <div class="grid-2">
+    <div>
+      <div class="eyebrow">O que precisa andar em paralelo</div>
+      <h2 class="wide">Seis bloqueios que não são deste escopo — mas afetam agosto.</h2>
+      <p class="lead">Cada item abaixo é responsabilidade de outra onda ou de decisão externa. Nenhum trava a linha editorial de agosto, mas cada um afeta o teto do que ela pode entregar.</p>
+    </div>
+    <div>
+      <ul class="perguntas">
+        <li><span class="num">01</span><span>Site próprio quebrado — três URLs DNS-off. Recomendar LP básica em 72h.</span></li>
+        <li><span class="num">02</span><span>150 conversas de WhatsApp nunca lidas. Recalibrar voz antes de setembro.</span></li>
+        <li><span class="num">03</span><span>Gate Aletheia H2+H3+H5 aberto. Teto de paga R$5k/mês. Orgânico liberado.</span></li>
+        <li><span class="num">04</span><span>Selo circular sem "1998". Correção lavrada, execução com Harmonia.</span></li>
+        <li><span class="num">05</span><span>Captação nova da TRAMA (Reel S4) e autorização Iberostar/Flamengo.</span></li>
+        <li><span class="num">06</span><span>Robinsom fora do CNPJ. Copy ancora em "35 anos de bagagem do Robinsom", nunca em idade da marca.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 19 — HANDOFF SETEMBRO -->
+<section class="slide off" id="s19">
+  <span class="slide-num">19</span>
+  <span class="slide-brand">HANDOFF · SETEMBRO</span>
+  <div class="eyebrow">O que este mês precisa responder até 31/ago</div>
+  <h2 class="wide">Cinco perguntas destravam o próximo mês.</h2>
+  <ul class="perguntas">
+    <li><span class="num">01</span><span>Qual formato tem maior salvos-por-visualização — carrossel, Reel ou feed?</span></li>
+    <li><span class="num">02</span><span>Alcance de não-seguidores só sobe com gancho contrário (S2), ou também com case-book (S3)?</span></li>
+    <li><span class="num">03</span><span>DMs qualificadas vêm mais de post analítico (S1) ou de case social (S3)?</span></li>
+    <li><span class="num">04</span><span>Persona A, B ou C traciona mais no algoritmo do Instagram?</span></li>
+    <li><span class="num">05</span><span>A base cresceu ou ficou parada? Se cresceu menos de 5%, orgânico puro é ineficaz para escala.</span></li>
+  </ul>
+  <hr class="rule" style="margin-top: 3rem;" />
+  <p class="mono" style="color: var(--ocre); margin-top: 1.5rem;">Hipótese estrutural a validar em setembro</p>
+  <p class="lead" style="margin-top: 0.75rem; font-style: italic;">"Reel curto (15-25s) com gancho contrário é o único formato que escapa da bolha de 541 seguidores organicamente. Todos os outros formatos servem para conversão — não para alcance."</p>
+</section>
+
+<!-- SLIDE 20 — FECHO -->
+<section class="slide marinho" id="s20">
+  <span class="slide-num">20</span>
+  <span class="slide-brand">FECHO</span>
+  <div class="fecho">
+    <div class="selo">Movelaria<br/>BR.W</div>
+    <h2>Não é sobre entregar móvel.<br/>É sobre resolver o ambiente<br/>que vai operar.</h2>
+    <hr class="rule" style="margin: 3rem auto; opacity: 0.4;" />
+    <p class="tagline">Curadoria que rende.</p>
+    <p class="mono" style="margin-top: 3rem; opacity: 0.6;">WhatsApp · +55 71 99902-7171</p>
+    <p class="mono" style="margin-top: 0.5rem; opacity: 0.4;">v1 · hipótese-de-trabalho · 2026-07-15</p>
+  </div>
+</section>
+
+<script>
+  // Gerar dots de navegação
+  const slides = document.querySelectorAll('section.slide');
+  const dotsContainer = document.getElementById('dots');
+  slides.forEach((slide, i) => {
+    const dot = document.createElement('a');
+    dot.href = '#' + slide.id;
+    dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll('nav.dots a');
+
+  // Marcar dot ativo com IntersectionObserver
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const idx = Array.from(slides).indexOf(entry.target);
+        dots.forEach(d => d.classList.remove('active'));
+        if (dots[idx]) dots[idx].classList.add('active');
+      }
+    });
+  }, { threshold: 0.5 });
+  slides.forEach(s => observer.observe(s));
+
+  // Navegação por teclado
+  let currentIdx = 0;
+  document.addEventListener('keydown', (e) => {
+    const activeSlideIdx = Array.from(dots).findIndex(d => d.classList.contains('active'));
+    if (activeSlideIdx >= 0) currentIdx = activeSlideIdx;
+
+    if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      if (currentIdx < slides.length - 1) slides[currentIdx + 1].scrollIntoView({ behavior: 'smooth' });
+    } else if (e.key === 'ArrowUp' || e.key === 'PageUp' || e.key === 'ArrowLeft') {
+      e.preventDefault();
+      if (currentIdx > 0) slides[currentIdx - 1].scrollIntoView({ behavior: 'smooth' });
+    } else if (e.key === 'Home') {
+      slides[0].scrollIntoView({ behavior: 'smooth' });
+    } else if (e.key === 'End') {
+      slides[slides.length - 1].scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+</script>
+
+</body>
+</html>

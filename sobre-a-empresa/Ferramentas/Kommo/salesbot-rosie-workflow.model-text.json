@@ -1,0 +1,2738 @@
+{
+    "0": {
+        "block_uuid": "47009d5d-6e5c-42f8-8a55-44e7f73bc8e7",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Oi, {{lead.name}}! Aqui e a Rosie 💛\nMe diz o que voce precisa que eu te ajudo rapidinho:\n1 - Quero comprar / tenho duvida sobre uma peca\n2 - Ja comprei e preciso de ajuda com meu pedido\n3 - Outro assunto",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": true,
+                    "buttons": [
+                        {
+                            "text": "1 - Quero comprar",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "2 - Ajuda pedido",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "3 - Outro assunto",
+                            "type": "inline"
+                        }
+                    ],
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            }
+        ],
+        "answer": [
+            {
+                "params": [
+                    {
+                        "value": "1 - Quero comprar",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 1,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "2 - Ajuda pedido",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 24,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "3 - Outro assunto",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 84,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    }
+                ],
+                "handler": "buttons"
+            }
+        ]
+    },
+    "1": {
+        "block_uuid": "1eb4d7fd-d508-46f5-99c3-2af7e7c20a86",
+        "question": [
+            {
+                "params": {
+                    "value": "canal-{{message.chat_source_id}}"
+                },
+                "handler": "add_tag"
+            },
+            {
+                "params": {
+                    "status_id": 108316687,
+                    "pipeline_id": 14033351
+                },
+                "handler": "change_status"
+            },
+            {
+                "params": {
+                    "step": 2,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "2": {
+        "block_uuid": "36624693-5d8b-4125-8665-b2fed5b4cff0",
+        "question": [
+            {
+                "params": {
+                    "value": "venda"
+                },
+                "handler": "add_tag"
+            },
+            {
+                "params": {
+                    "step": 3,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "3": {
+        "block_uuid": "e638b217-8de1-4c65-a40b-564e11978d03",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Perfeito! Antes, me passa seu e-mail? E por ele que eu te mando o carrinho e aviso das novidades ✨",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "handler": "wait_answer",
+                "params": {
+                    "type": "question",
+                    "step": 4
+                }
+            }
+        ]
+    },
+    "4": {
+        "block_uuid": "6cabf57d-99da-4f4b-b58a-cf2a1593989b",
+        "question": [
+            {
+                "handler": "action",
+                "params": {
+                    "name": "set_custom_fields",
+                    "params": {
+                        "custom_fields": [
+                            {
+                                "id": 2053246,
+                                "values": [
+                                    {
+                                        "value": "{{message_text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "params": {
+                    "step": 5,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "5": {
+        "block_uuid": "ded8b6f8-cf80-4870-8544-38af5d5e7ff5",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Anotado! ✓\n\nE me conta: como voce conheceu a Rosie?",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "buttons": [
+                        {
+                            "text": "Instagram",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "TikTok",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "Indicacao",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "Google",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "Outro",
+                            "type": "inline"
+                        }
+                    ],
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            }
+        ],
+        "answer": [
+            {
+                "params": [
+                    {
+                        "value": "Instagram",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 6,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "TikTok",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 7,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "Indicacao",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 8,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "Google",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 9,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "Outro",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 10,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    }
+                ],
+                "handler": "buttons"
+            }
+        ]
+    },
+    "6": {
+        "block_uuid": "30079b63-d3a5-497b-a1f8-fa8b023385b4",
+        "question": [
+            {
+                "params": {
+                    "field_id": 2053248,
+                    "entity_type": "lead",
+                    "value": "Instagram"
+                },
+                "handler": "save_data"
+            },
+            {
+                "params": {
+                    "step": 11,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "7": {
+        "block_uuid": "f42a129e-9a43-4562-b842-23b6bebc7cbd",
+        "question": [
+            {
+                "params": {
+                    "field_id": 2053248,
+                    "entity_type": "lead",
+                    "value": "TikTok"
+                },
+                "handler": "save_data"
+            },
+            {
+                "params": {
+                    "step": 11,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "8": {
+        "block_uuid": "470b8661-4450-4190-9983-177086f56b67",
+        "question": [
+            {
+                "params": {
+                    "field_id": 2053248,
+                    "entity_type": "lead",
+                    "value": "Indicacao"
+                },
+                "handler": "save_data"
+            },
+            {
+                "params": {
+                    "step": 11,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "9": {
+        "block_uuid": "a4a79385-6e5e-4f28-b2ff-705f49282727",
+        "question": [
+            {
+                "params": {
+                    "field_id": 2053248,
+                    "entity_type": "lead",
+                    "value": "Google"
+                },
+                "handler": "save_data"
+            },
+            {
+                "params": {
+                    "step": 11,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "10": {
+        "block_uuid": "32283b7f-913a-4959-92eb-2a56afc8f593",
+        "question": [
+            {
+                "params": {
+                    "field_id": 2053248,
+                    "entity_type": "lead",
+                    "value": "Outro"
+                },
+                "handler": "save_data"
+            },
+            {
+                "params": {
+                    "step": 11,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "11": {
+        "block_uuid": "a6916f43-2504-41b2-a00e-ce4db31011b0",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Show. Sobre o que e a sua duvida?\n1 - Tamanho e caimento\n2 - Disponibilidade, cor ou reposicao de uma peca\n3 - Pagamento, parcelamento ou cupom\n4 - Nao sei o que levar, quero uma indicacao",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "buttons": [
+                        {
+                            "text": "1 - Tamanho",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "2 - Disponibilidade",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "3 - Pagamento",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "4 - Indicação look",
+                            "type": "inline"
+                        }
+                    ],
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            }
+        ],
+        "answer": [
+            {
+                "params": [
+                    {
+                        "value": "1 - Tamanho",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 12,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "2 - Disponibilidade",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 14,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "3 - Pagamento",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 18,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "4 - Indicação look",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 19,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    }
+                ],
+                "handler": "buttons"
+            }
+        ]
+    },
+    "12": {
+        "block_uuid": "b210b162-e2d8-4b9f-8f7a-aaba0f0882e9",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "A gente tem provador virtual no site 👉\nVoce escolhe a peca, coloca suas medidas e ve o caimento antes de comprar - sem chute.\n👉 https://rosieiadoreyou.com/provador\nDa uma olhada e me diz se resolveu!",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "buttons": [
+                        {
+                            "text": "Resolveu!",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "Ainda to na duvida",
+                            "type": "inline"
+                        }
+                    ],
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            }
+        ],
+        "answer": [
+            {
+                "params": [
+                    {
+                        "value": "Resolveu!",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 13,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "Ainda to na duvida",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 57,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    }
+                ],
+                "handler": "buttons"
+            }
+        ]
+    },
+    "13": {
+        "block_uuid": "750f1180-e650-46bb-ad26-3632f88b9676",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Que otimo ✨ Quer que eu ja monte seu carrinho?",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "buttons": [
+                        {
+                            "text": "Sim, monta pra mim",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "Ainda nao",
+                            "type": "inline"
+                        }
+                    ],
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            }
+        ],
+        "answer": [
+            {
+                "params": [
+                    {
+                        "value": "Sim, monta pra mim",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 21,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "Ainda nao",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 53,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    }
+                ],
+                "handler": "buttons"
+            }
+        ]
+    },
+    "14": {
+        "block_uuid": "be5629c7-8e29-4dc1-95dc-91e7a3e3ce94",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Me manda o link ou o print da peca que voce quer 👉\nE me diz: qual tamanho e qual cor?",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "handler": "wait_answer",
+                "params": {
+                    "type": "question",
+                    "step": 15
+                }
+            }
+        ]
+    },
+    "15": {
+        "block_uuid": "79f6bf1f-25fa-4b15-a46a-147f3e3f2b92",
+        "question": [
+            {
+                "handler": "action",
+                "params": {
+                    "name": "set_custom_fields",
+                    "params": {
+                        "custom_fields": [
+                            {
+                                "id": 2053250,
+                                "values": [
+                                    {
+                                        "value": "{{message_text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "handler": "wait_answer",
+                "params": {
+                    "type": "question",
+                    "step": 16
+                }
+            }
+        ]
+    },
+    "16": {
+        "block_uuid": "139d1281-5039-4a87-8a8f-a9eb2d998784",
+        "question": [
+            {
+                "handler": "action",
+                "params": {
+                    "name": "set_custom_fields",
+                    "params": {
+                        "custom_fields": [
+                            {
+                                "id": 2053252,
+                                "values": [
+                                    {
+                                        "value": "{{message_text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "handler": "wait_answer",
+                "params": {
+                    "type": "question",
+                    "step": 17
+                }
+            }
+        ]
+    },
+    "17": {
+        "block_uuid": "97f92135-342f-4815-801a-d87fdf6266d8",
+        "question": [
+            {
+                "handler": "action",
+                "params": {
+                    "name": "set_custom_fields",
+                    "params": {
+                        "custom_fields": [
+                            {
+                                "id": 2053254,
+                                "values": [
+                                    {
+                                        "value": "{{message_text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "params": {
+                    "step": 61,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "18": {
+        "block_uuid": "1b53dd10-52e3-4b83-aec9-99ad67e63379",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Claro! Voce quer saber sobre parcelamento, desconto ou tem um cupom pra usar? Me diz qual e a sua duvida que ja te passo pra uma consultora resolver 💛",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 66,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "19": {
+        "block_uuid": "77898084-3182-4855-928a-b1bfd5ff7e20",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Adoro essa missao 💛 Me conta:\n• Qual a ocasiao?\n• Que estilo voce curte?\n• Qual sua faixa de preco?\n• Qual seu tamanho?",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "handler": "wait_answer",
+                "params": {
+                    "type": "question",
+                    "step": 20
+                }
+            }
+        ]
+    },
+    "20": {
+        "block_uuid": "3eb76376-8985-4ec3-9e8d-e2fdca2e946b",
+        "question": [
+            {
+                "handler": "action",
+                "params": {
+                    "name": "set_custom_fields",
+                    "params": {
+                        "custom_fields": [
+                            {
+                                "id": 2053252,
+                                "values": [
+                                    {
+                                        "value": "{{message_text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "params": {
+                    "step": 70,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "21": {
+        "block_uuid": "86c56c33-3b38-415f-a82c-1bea483a8113",
+        "question": [
+            {
+                "params": {
+                    "status_id": 108316691,
+                    "pipeline_id": 14033351
+                },
+                "handler": "change_status"
+            },
+            {
+                "params": {
+                    "step": 22,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "22": {
+        "block_uuid": "ca681643-20db-4649-a651-1f6164cc064f",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Montei seu carrinho 👉\nE so finalizar por aqui:\n👉 {link_carrinho}\nQualquer duvida, me chama.",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "text": "Preencher Valor aprox. carrinho (field 2053260) quando o cliente confirmar a compra na Nuvemshop."
+                },
+                "handler": "create_note"
+            },
+            {
+                "params": {
+                    "step": 23,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "23": {
+        "block_uuid": "c0fcc46f-d8ce-4220-8a79-8776c8ab3843",
+        "question": [
+            {
+                "handler": "goto",
+                "params": {
+                    "type": "finish",
+                    "step": 999
+                }
+            }
+        ]
+    },
+    "24": {
+        "block_uuid": "d8a54d44-648e-43bb-87a3-e003a2eb9338",
+        "question": [
+            {
+                "params": {
+                    "value": "canal-{{message.chat_source_id}}"
+                },
+                "handler": "add_tag"
+            },
+            {
+                "params": {
+                    "status_id": 109409503,
+                    "pipeline_id": 14171615
+                },
+                "handler": "change_status"
+            },
+            {
+                "params": {
+                    "step": 25,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "25": {
+        "block_uuid": "3b1db05c-6048-48e4-b9ab-5af64fbbcfd4",
+        "question": [
+            {
+                "params": {
+                    "value": "pos-venda"
+                },
+                "handler": "add_tag"
+            },
+            {
+                "params": {
+                    "step": 26,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "26": {
+        "block_uuid": "593be7e1-ef4a-466b-bee9-86907605faf6",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Poxa, vamos resolver isso 💛\nMe manda o numero do seu pedido? Ele esta no e-mail de confirmacao, no formato #1234.",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "buttons": [
+                        {
+                            "text": "Aqui esta",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "Nao achei o numero",
+                            "type": "inline"
+                        }
+                    ],
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            }
+        ],
+        "answer": [
+            {
+                "params": [
+                    {
+                        "value": "Aqui esta",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 27,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "Nao achei o numero",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 29,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    }
+                ],
+                "handler": "buttons"
+            }
+        ]
+    },
+    "27": {
+        "block_uuid": "fd5b1b75-a3ab-4018-be21-923b8b4392f9",
+        "question": [
+            {
+                "handler": "wait_answer",
+                "params": {
+                    "type": "question",
+                    "step": 28
+                }
+            }
+        ]
+    },
+    "28": {
+        "block_uuid": "ec18a0ed-b0cb-48f0-89d7-55183d96f9cd",
+        "question": [
+            {
+                "handler": "action",
+                "params": {
+                    "name": "set_custom_fields",
+                    "params": {
+                        "custom_fields": [
+                            {
+                                "id": 2053238,
+                                "values": [
+                                    {
+                                        "value": "{{message_text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "params": {
+                    "step": 33,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "29": {
+        "block_uuid": "753a6c11-92a7-44d7-b947-2c0e4b41b9e6",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Sem problema! Me manda o e-mail que voce usou na compra:",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "handler": "wait_answer",
+                "params": {
+                    "type": "question",
+                    "step": 30
+                }
+            }
+        ]
+    },
+    "30": {
+        "block_uuid": "6b4b02ae-aa3f-4dfc-9c8b-c4f986882320",
+        "question": [
+            {
+                "handler": "action",
+                "params": {
+                    "name": "set_custom_fields",
+                    "params": {
+                        "custom_fields": [
+                            {
+                                "id": 2053242,
+                                "values": [
+                                    {
+                                        "value": "{{message_text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "E o CPF que voce usou (se tiver mao):",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "handler": "wait_answer",
+                "params": {
+                    "type": "question",
+                    "step": 31
+                }
+            }
+        ]
+    },
+    "31": {
+        "block_uuid": "5cfae57d-58a5-4c40-8a8c-70e01d6a2305",
+        "question": [
+            {
+                "handler": "action",
+                "params": {
+                    "name": "set_custom_fields",
+                    "params": {
+                        "custom_fields": [
+                            {
+                                "id": 2053240,
+                                "values": [
+                                    {
+                                        "value": "{{message_text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Por ultimo, mais ou menos que data voce comprou?",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "handler": "wait_answer",
+                "params": {
+                    "type": "question",
+                    "step": 32
+                }
+            }
+        ]
+    },
+    "32": {
+        "block_uuid": "1249db86-07b4-4dd6-ac0b-97b588b14f23",
+        "question": [
+            {
+                "handler": "action",
+                "params": {
+                    "name": "set_custom_fields",
+                    "params": {
+                        "custom_fields": [
+                            {
+                                "id": 2053244,
+                                "values": [
+                                    {
+                                        "value": "{{message_text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "params": {
+                    "step": 33,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "33": {
+        "block_uuid": "3a4bfe21-8f10-43ce-86a8-5a5344438036",
+        "question": [
+            {
+                "params": {
+                    "text": "Bot coletou identificacao. Consultora, verificar Nuvemshop no card."
+                },
+                "handler": "create_note"
+            },
+            {
+                "params": {
+                    "step": 34,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "34": {
+        "block_uuid": "2b1a7671-bbbb-49ac-a44d-0d00f765afd7",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Anotei aqui ✓\nMe conta o que aconteceu:\n1 - Quero saber onde esta meu pedido\n2 - Meu pedido esta atrasado\n3 - Veio item errado ou faltando\n4 - Produto com defeito\n5 - Quero trocar\n6 - Quero devolver\n7 - Quero cancelar",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "buttons": [
+                        {
+                            "text": "1 - Rastreio",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "2 - Atraso",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "3 - Item errado",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "4 - Defeito",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "5 - Troca",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "6 - Devolucao",
+                            "type": "inline"
+                        },
+                        {
+                            "text": "7 - Cancelamento",
+                            "type": "inline"
+                        }
+                    ],
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            }
+        ],
+        "answer": [
+            {
+                "params": [
+                    {
+                        "value": "1 - Rastreio",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 35,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "2 - Atraso",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 36,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "3 - Item errado",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 37,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "4 - Defeito",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 40,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "5 - Troca",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 43,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "6 - Devolucao",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 47,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    },
+                    {
+                        "value": "7 - Cancelamento",
+                        "params": [
+                            {
+                                "params": {
+                                    "step": 51,
+                                    "type": "question"
+                                },
+                                "handler": "goto"
+                            }
+                        ],
+                        "synonyms": []
+                    }
+                ],
+                "handler": "buttons"
+            }
+        ]
+    },
+    "35": {
+        "block_uuid": "98ee7d22-626c-4977-9e46-077d30affc05",
+        "question": [
+            {
+                "params": {
+                    "field_id": 2053256,
+                    "entity_type": "lead",
+                    "value": "Rastreio"
+                },
+                "handler": "save_data"
+            },
+            {
+                "params": {
+                    "step": 79,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "36": {
+        "block_uuid": "1049f599-048d-4ee4-8fdc-a8bffba57b1b",
+        "question": [
+            {
+                "params": {
+                    "field_id": 2053256,
+                    "entity_type": "lead",
+                    "value": "Atraso"
+                },
+                "handler": "save_data"
+            },
+            {
+                "params": {
+                    "step": 79,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "37": {
+        "block_uuid": "0a2100f5-f558-4bee-9f8c-d1e4ec533e71",
+        "question": [
+            {
+                "params": {
+                    "field_id": 2053256,
+                    "entity_type": "lead",
+                    "value": "Item errado ou faltando"
+                },
+                "handler": "save_data"
+            },
+            {
+                "params": {
+                    "step": 38,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "38": {
+        "block_uuid": "183d7995-a69f-4a82-9a0d-943708ff49d1",
+        "question": [
+            {
+                "params": {
+                    "value": "troca"
+                },
+                "handler": "add_tag"
+            },
+            {
+                "params": {
+                    "step": 39,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "39": {
+        "block_uuid": "e2e112e3-753b-42fb-86e4-35be35c16142",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Que chato, {{lead.name}}. Vamos resolver 👉\nPra agilizar, me manda:\n• uma foto do que chegou\n• uma foto da etiqueta ou da nota que veio na embalagem",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 74,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "40": {
+        "block_uuid": "e0e98cae-4e5d-4f8e-aae7-3ca75617694c",
+        "question": [
+            {
+                "params": {
+                    "field_id": 2053256,
+                    "entity_type": "lead",
+                    "value": "Defeito"
+                },
+                "handler": "save_data"
+            },
+            {
+                "params": {
+                    "step": 41,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "41": {
+        "block_uuid": "ff468180-39ba-4e23-aac2-50ca60a21b49",
+        "question": [
+            {
+                "params": {
+                    "value": "defeito"
+                },
+                "handler": "add_tag"
+            },
+            {
+                "params": {
+                    "step": 42,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "42": {
+        "block_uuid": "6441d8b3-ac7b-43ec-a4f9-9f694fac5f2b",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Poxa, sinto muito 💛 Vamos resolver isso.\nMe manda uma foto ou um video mostrando o defeito e me conta rapidinho o que aconteceu.",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 74,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "43": {
+        "block_uuid": "e308b01e-f0d8-4b33-b01e-a3570dbcf45d",
+        "question": [
+            {
+                "params": {
+                    "field_id": 2053256,
+                    "entity_type": "lead",
+                    "value": "Troca"
+                },
+                "handler": "save_data"
+            },
+            {
+                "params": {
+                    "step": 44,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "44": {
+        "block_uuid": "553c9f78-c8b8-43da-a8f3-62ea69754db2",
+        "question": [
+            {
+                "params": {
+                    "value": "troca"
+                },
+                "handler": "add_tag"
+            },
+            {
+                "params": {
+                    "step": 45,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "45": {
+        "block_uuid": "f58fe8da-9974-4064-afc9-34bfd4b86e3a",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Claro 💛 Me diz:\n• Qual peca voce quer trocar?\n• Por qual tamanho ou modelo?\n• A peca esta sem uso e com a etiqueta?",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "So mais uma coisa: a compra foi feita no seu nome ou no de outra pessoa?",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "handler": "wait_answer",
+                "params": {
+                    "type": "question",
+                    "step": 46
+                }
+            }
+        ]
+    },
+    "46": {
+        "block_uuid": "4f936004-43fb-4e00-8e9c-68529d7ddf13",
+        "question": [
+            {
+                "handler": "action",
+                "params": {
+                    "name": "set_custom_fields",
+                    "params": {
+                        "custom_fields": [
+                            {
+                                "id": 2053258,
+                                "values": [
+                                    {
+                                        "value": "{{message_text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "params": {
+                    "step": 74,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "47": {
+        "block_uuid": "5e829c54-e1a2-4a9d-b4d1-69d67c383884",
+        "question": [
+            {
+                "params": {
+                    "field_id": 2053256,
+                    "entity_type": "lead",
+                    "value": "Devolucao"
+                },
+                "handler": "save_data"
+            },
+            {
+                "params": {
+                    "step": 48,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "48": {
+        "block_uuid": "6d642e7c-e9cc-4b8a-9ebc-08407fed090d",
+        "question": [
+            {
+                "params": {
+                    "value": "devolucao"
+                },
+                "handler": "add_tag"
+            },
+            {
+                "params": {
+                    "step": 49,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "49": {
+        "block_uuid": "2b6ce831-8489-43f3-869d-985e4f7c52f8",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Sem problema, {{lead.name}}. Voce tem 7 dias corridos depois de receber pra desistir da compra - e seu direito.\nMe conta:\n• Qual o motivo?\n• Em que dia voce recebeu o pedido?",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "So mais uma coisa: a compra foi feita no seu nome ou no de outra pessoa?",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "handler": "wait_answer",
+                "params": {
+                    "type": "question",
+                    "step": 50
+                }
+            }
+        ]
+    },
+    "50": {
+        "block_uuid": "788372f3-829b-411e-9af3-f6ceed3e3f21",
+        "question": [
+            {
+                "handler": "action",
+                "params": {
+                    "name": "set_custom_fields",
+                    "params": {
+                        "custom_fields": [
+                            {
+                                "id": 2053258,
+                                "values": [
+                                    {
+                                        "value": "{{message_text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "params": {
+                    "step": 74,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "51": {
+        "block_uuid": "c627db43-ea15-48ae-b145-bec5bf64b76a",
+        "question": [
+            {
+                "params": {
+                    "field_id": 2053256,
+                    "entity_type": "lead",
+                    "value": "Cancelamento"
+                },
+                "handler": "save_data"
+            },
+            {
+                "params": {
+                    "step": 52,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "52": {
+        "block_uuid": "7c716b13-b46d-4c5b-9a93-69ba038268b7",
+        "question": [
+            {
+                "params": {
+                    "value": "cancelamento"
+                },
+                "handler": "add_tag"
+            },
+            {
+                "params": {
+                    "step": 74,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "53": {
+        "block_uuid": "80bb9809-2f15-4fb7-a4b9-d734647b7d7d",
+        "question": [
+            {
+                "params": {
+                    "url": "https://HERMES_MW_URL.substituir/kommo/horario",
+                    "method": "POST",
+                    "headers": {
+                        "X-Kolden-Token": "SUBSTITUIR_KOLDEN_TOKEN"
+                    },
+                    "body": "{}",
+                    "target": "horario"
+                },
+                "handler": "widget_request"
+            },
+            {
+                "params": {
+                    "step": 54,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "54": {
+        "block_uuid": "b36b8c83-4369-491a-ade3-3a4789f31231",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "true",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Uma consultora assume seu atendimento agora 💛",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 55,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "55": {
+        "block_uuid": "be895478-4962-4374-a000-75c1d4ca45cf",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "false",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Ja deixei tudo registrado aqui 💛 A gente nao esta em atendimento agora, mas assim que abrir uma consultora te responde por aqui - pode ficar tranquila.",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 56,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "56": {
+        "block_uuid": "13f013b0-16b2-42b7-8ea9-aacb2000e074",
+        "question": [
+            {
+                "handler": "goto",
+                "params": {
+                    "type": "finish",
+                    "step": 999
+                }
+            }
+        ]
+    },
+    "57": {
+        "block_uuid": "ad5e1e2f-dc97-4102-94c3-56af5c51e942",
+        "question": [
+            {
+                "params": {
+                    "url": "https://HERMES_MW_URL.substituir/kommo/horario",
+                    "method": "POST",
+                    "headers": {
+                        "X-Kolden-Token": "SUBSTITUIR_KOLDEN_TOKEN"
+                    },
+                    "body": "{}",
+                    "target": "horario"
+                },
+                "handler": "widget_request"
+            },
+            {
+                "params": {
+                    "step": 58,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "58": {
+        "block_uuid": "3c2c3608-0a63-4c3d-831d-5f9f0c41aa4b",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "true",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Sem problema. Vou te passar agora pra uma consultora que vai te ajudar a escolher o tamanho certo. Um minutinho 💛",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 59,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "59": {
+        "block_uuid": "bc4c7fce-a1cf-4ff1-beec-fc6df322a6aa",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "false",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Sem problema! Anotei tudo aqui 💛 A gente nao esta em atendimento agora, mas assim que abrir uma consultora te ajuda a escolher o tamanho certo.",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 60,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "60": {
+        "block_uuid": "dbad5e11-b233-42b0-a211-0176de9e5dbf",
+        "question": [
+            {
+                "handler": "goto",
+                "params": {
+                    "type": "finish",
+                    "step": 999
+                }
+            }
+        ]
+    },
+    "61": {
+        "block_uuid": "79f8b899-9498-48e2-903f-d8182ebf5d95",
+        "question": [
+            {
+                "params": {
+                    "value": "lista-reposicao"
+                },
+                "handler": "add_tag"
+            },
+            {
+                "params": {
+                    "step": 62,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "62": {
+        "block_uuid": "d2a9ca26-7d6e-42ef-ace2-9aee12287eb4",
+        "question": [
+            {
+                "params": {
+                    "url": "https://HERMES_MW_URL.substituir/kommo/horario",
+                    "method": "POST",
+                    "headers": {
+                        "X-Kolden-Token": "SUBSTITUIR_KOLDEN_TOKEN"
+                    },
+                    "body": "{}",
+                    "target": "horario"
+                },
+                "handler": "widget_request"
+            },
+            {
+                "params": {
+                    "step": 63,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "63": {
+        "block_uuid": "4db07e88-ef39-4513-b108-0c5736cfd196",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "true",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Anotei aqui 💛 Uma consultora ja vai verificar disponibilidade/cor e te responder. Um minutinho.",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 64,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "64": {
+        "block_uuid": "fb6a6a05-e844-434b-8e5e-617ed0b8501c",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "false",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Anotei aqui 💛 A gente nao esta em atendimento agora, mas assim que abrir uma consultora verifica disponibilidade/cor e te responde por aqui.",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 65,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "65": {
+        "block_uuid": "689bf0ee-c054-4d28-95ea-39f65583f0d1",
+        "question": [
+            {
+                "handler": "goto",
+                "params": {
+                    "type": "finish",
+                    "step": 999
+                }
+            }
+        ]
+    },
+    "66": {
+        "block_uuid": "a90e8311-a471-4d0a-a70f-4286d612a5aa",
+        "question": [
+            {
+                "params": {
+                    "url": "https://HERMES_MW_URL.substituir/kommo/horario",
+                    "method": "POST",
+                    "headers": {
+                        "X-Kolden-Token": "SUBSTITUIR_KOLDEN_TOKEN"
+                    },
+                    "body": "{}",
+                    "target": "horario"
+                },
+                "handler": "widget_request"
+            },
+            {
+                "params": {
+                    "step": 67,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "67": {
+        "block_uuid": "6983accb-fc12-4c05-a8fb-88e6f4eb009c",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "true",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Claro! Voce quer saber sobre parcelamento, desconto ou tem um cupom pra usar? Me diz qual e a sua duvida que ja te passo pra uma consultora resolver 💛",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 68,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "68": {
+        "block_uuid": "2cfa504f-f1ec-45ec-b3ec-8e420d1e184a",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "false",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Claro! Voce quer saber sobre parcelamento, desconto ou tem um cupom pra usar? Me conta aqui que ja deixo registrado 💛 A gente nao esta em atendimento agora, mas assim que abrir uma consultora te responde.",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 69,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "69": {
+        "block_uuid": "2e73a4d4-d99d-4e9f-9fe6-43ac75bd148d",
+        "question": [
+            {
+                "handler": "goto",
+                "params": {
+                    "type": "finish",
+                    "step": 999
+                }
+            }
+        ]
+    },
+    "70": {
+        "block_uuid": "024a34c3-7ae4-4fd2-810a-b9fa641cd3fe",
+        "question": [
+            {
+                "params": {
+                    "url": "https://HERMES_MW_URL.substituir/kommo/horario",
+                    "method": "POST",
+                    "headers": {
+                        "X-Kolden-Token": "SUBSTITUIR_KOLDEN_TOKEN"
+                    },
+                    "body": "{}",
+                    "target": "horario"
+                },
+                "handler": "widget_request"
+            },
+            {
+                "params": {
+                    "step": 71,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "71": {
+        "block_uuid": "2c3c6c95-dd39-4ebf-aebd-24a6448e9f76",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "true",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Perfeito, ja tenho tudo ✨ Vou te passar pra uma consultora que vai montar um look pensado so pra voce. Um minutinho.",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 72,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "72": {
+        "block_uuid": "7a973e44-8ed3-4939-9637-e198f51cc123",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "false",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Perfeito, ja tenho tudo ✨ A gente nao esta em atendimento agora, mas assim que abrir uma consultora monta um look pensado so pra voce 💛",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 73,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "73": {
+        "block_uuid": "9eacfd19-57ee-4126-9f31-f316b5f91c20",
+        "question": [
+            {
+                "handler": "goto",
+                "params": {
+                    "type": "finish",
+                    "step": 999
+                }
+            }
+        ]
+    },
+    "74": {
+        "block_uuid": "5df385c5-dde9-423b-a4bc-5bb28c83f75c",
+        "question": [
+            {
+                "params": {
+                    "status_id": 109409507,
+                    "pipeline_id": 14171615
+                },
+                "handler": "change_status"
+            },
+            {
+                "params": {
+                    "step": 75,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "75": {
+        "block_uuid": "75904b34-c56a-4973-bf4a-caca1ffc2fcc",
+        "question": [
+            {
+                "params": {
+                    "url": "https://HERMES_MW_URL.substituir/kommo/horario",
+                    "method": "POST",
+                    "headers": {
+                        "X-Kolden-Token": "SUBSTITUIR_KOLDEN_TOKEN"
+                    },
+                    "body": "{}",
+                    "target": "horario"
+                },
+                "handler": "widget_request"
+            },
+            {
+                "params": {
+                    "step": 76,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "76": {
+        "block_uuid": "bb0bf36a-b441-407b-a57c-f90f4ce13910",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "true",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Uma consultora assume agora e ja te responde 💛",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 77,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "77": {
+        "block_uuid": "f6ae1f9e-6e6b-4e18-ac6d-bb3d08ad7398",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "false",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Esta tudo registrado aqui 💛 A gente nao esta em atendimento agora, mas assim que abrir uma consultora assume seu caso e te responde.",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 78,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "78": {
+        "block_uuid": "be3c0990-a229-4295-9eea-0d76683a5c7f",
+        "question": [
+            {
+                "handler": "goto",
+                "params": {
+                    "type": "finish",
+                    "step": 999
+                }
+            }
+        ]
+    },
+    "79": {
+        "block_uuid": "cf677296-a0fe-4307-a1fc-249ff92823d7",
+        "question": [
+            {
+                "params": {
+                    "status_id": 109409507,
+                    "pipeline_id": 14171615
+                },
+                "handler": "change_status"
+            },
+            {
+                "params": {
+                    "step": 80,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "80": {
+        "block_uuid": "0a357e86-3762-4a1f-b174-318e5b7746a7",
+        "question": [
+            {
+                "params": {
+                    "url": "https://HERMES_MW_URL.substituir/kommo/horario",
+                    "method": "POST",
+                    "headers": {
+                        "X-Kolden-Token": "SUBSTITUIR_KOLDEN_TOKEN"
+                    },
+                    "body": "{}",
+                    "target": "horario"
+                },
+                "handler": "widget_request"
+            },
+            {
+                "params": {
+                    "step": 81,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "81": {
+        "block_uuid": "812fb76f-455b-4887-8c82-77b7def24211",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "true",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Uma consultora ja vai puxar essa informacao pra voce e te manda por aqui. Um minutinho 💛",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 82,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "82": {
+        "block_uuid": "3228198e-c27f-469d-b217-37b2df065ed5",
+        "question": [
+            {
+                "params": {
+                    "logic": "and",
+                    "conditions": [
+                        {
+                            "term1": "{{json.horario.in_hours}}",
+                            "term2": "false",
+                            "value_type": "custom_value",
+                            "operation": "contains"
+                        }
+                    ]
+                },
+                "handler": "conditions"
+            },
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Anotei aqui 💛 A gente nao esta em atendimento agora, mas assim que abrir uma consultora puxa essa informacao e te manda por aqui.",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "params": {
+                    "step": 83,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "83": {
+        "block_uuid": "7842c6ac-a592-4743-95a0-013091d25b73",
+        "question": [
+            {
+                "handler": "goto",
+                "params": {
+                    "type": "finish",
+                    "step": 999
+                }
+            }
+        ]
+    },
+    "84": {
+        "block_uuid": "64e7a0df-7052-4a7c-b36c-e65e83758941",
+        "question": [
+            {
+                "params": {
+                    "tag": "",
+                    "text": "Claro! Me conta rapidinho o que voce precisa 💛",
+                    "type": "external",
+                    "on_error": null,
+                    "recipient": {
+                        "type": "all_contacts",
+                        "way_of_communication": "over_all"
+                    },
+                    "is_in_starting_block": false,
+                    "send_to_all_chat_sources": true
+                },
+                "handler": "send_message"
+            },
+            {
+                "handler": "wait_answer",
+                "params": {
+                    "type": "question",
+                    "step": 85
+                }
+            }
+        ]
+    },
+    "85": {
+        "block_uuid": "cea2f8f5-00a0-412a-aa10-7bb514f51800",
+        "question": [
+            {
+                "handler": "action",
+                "params": {
+                    "name": "set_custom_fields",
+                    "params": {
+                        "custom_fields": [
+                            {
+                                "id": 2053256,
+                                "values": [
+                                    {
+                                        "value": "{{message_text}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "params": {
+                    "step": 86,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "86": {
+        "block_uuid": "8f33ddb1-4bf9-4137-8c17-c215c56f8998",
+        "question": [
+            {
+                "params": {
+                    "value": "canal-{{message.chat_source_id}}"
+                },
+                "handler": "add_tag"
+            },
+            {
+                "params": {
+                    "status_id": 108316683,
+                    "pipeline_id": 14033351
+                },
+                "handler": "change_status"
+            },
+            {
+                "params": {
+                    "step": 53,
+                    "type": "question"
+                },
+                "handler": "goto"
+            }
+        ]
+    },
+    "conversation": false
+}
