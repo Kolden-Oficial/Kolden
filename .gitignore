@@ -28,7 +28,8 @@ secrets*
 
 # ===== Temas Nuvemshop puxados via CLI (rebaixar quando precisar via `nuvemshop theme ftp pull`) =====
 sobre-a-empresa/Projetos/Ativos/*/tema-*/
-sobre-a-empresa/Projetos/Ativos/*/_tema-*/
+# `_tema-*/*` (e não `_tema-*/`): git não reinclui arquivo dentro de diretório ignorado
+sobre-a-empresa/Projetos/Ativos/*/_tema-*/*
 !sobre-a-empresa/Projetos/Ativos/*/_tema-*/README.md
 !sobre-a-empresa/Projetos/Ativos/*/_tema-*/_backup/
 
