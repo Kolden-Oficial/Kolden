@@ -31,6 +31,7 @@ Fonte versionada em `../customizacoes-tema/` (fora de `codigo/`, que é cópia d
 |---|---|---|
 | Atribuição de WhatsApp Solomon (cliques em `wa.me`/`api.whatsapp.com` passam pelo redirecionador da Solomon com UTMs + `sol_id`) | `snipplets/rosie-whatsapp-solomon.tpl` + include antes do `</body>` em `layouts/layout.tpl` | `node sobre-a-empresa/Projetos/Ativos/rosie/customizacoes-tema/aplicar-whatsapp-solomon.cjs` → `diff` → `push` |
 | Pop-up "10% pra tua primeira" (RD Station) fora da página de produto — pedido do Bruno em 2026-10-13 (atrito na PDP). Continua nas demais páginas; newsletter do rodapé intacta | include de `snipplets/rosie-popup-primeira.tpl` envolvido em `{% if template != 'product' %}` | `node sobre-a-empresa/Projetos/Ativos/rosie/customizacoes-tema/aplicar-popup-fora-do-produto.cjs` → `diff` → `push` |
+| Botões pretos "Comprar" (PDP, compra rápida dos cards e texto que o JS reescreve após adicionar) passam a "Adicionar ao carrinho" | chaves `'Comprar' \| translate` nos `.tpl` | `node …/aplicar-botao-adicionar-carrinho.cjs` (simulação) → `--aplicar` → `diff` → `push` |
 
 Pendência: o redirecionador da Solomon está em `test-whatsapp-…run.app` — confirmar com a Solomon se é o endpoint definitivo.
 
