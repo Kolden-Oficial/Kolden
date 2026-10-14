@@ -7,6 +7,10 @@
  * do dicionário de textos do botão (`{% set texts = {...} %}` em snipplets/grid/item.tpl). O script troca
  * só essas duas formas — não mexe em "Comprar em Loja Rosie" (título SEO da plataforma) nem em outros textos.
  *
+ * O value="..." dos botões pretos (PDP e cards) usa `{{ texts[state] | translate }}` com a chave em espanhol
+ * "Agregar al carrito"; o texto em português vem do bloco dessa chave em config/translations.txt
+ * (`pt "Comprar"`). O script troca só a linha `pt` desse bloco.
+ *
  * Mexe só na cópia local (`_tema-recife/codigo/`); nada vai para a loja até rodar `diff` + `push`.
  *   - sem argumentos: só lista o que mudaria (simulação), não altera nada
  *   - --aplicar: faz a troca, com backup de cada arquivo em _tema-recife/_backup/ (só na primeira vez)
@@ -31,6 +35,9 @@ const CHAVE_RE = /(["'])Comprar\1(\s*\|\s*translate)/g;
 const CART_RE = /(["']cart["']\s*:\s*)(["'])Comprar\2/g;
 // "Comprar" solto (sem translate) — só listado para revisão, nunca trocado
 const SOLTO_RE = /(["'>])Comprar(["'<])/g;
+
+// Bloco de config/translations.txt: es "Agregar al carrito" … pt "Comprar" (até a linha em branco)
+const TRAD_RE = /(^es "Agregar al carrito"\s*$(?:\r?\n(?!\s*\r?$).*)*?\r?\n)pt "Comprar"(\s*)$/m;
 
 function falhar(msg) {
   console.error(`[aplicar-botao-adicionar-carrinho] ${msg}`);
@@ -61,11 +68,13 @@ for (const arquivo of listarArquivos(CODIGO)) {
     CHAVE_RE.lastIndex = 0;
     CART_RE.lastIndex = 0;
     if (alvo) console.log(`  trocar  ${relativo}:${i + 1}  ${linha.trim().slice(0, 140)}`);
-    else if (SOLTO_RE.test(linha)) soltos.push(`${relativo}:${i + 1}  ${linha.trim().slice(0, 140)}`);
+    else if (!/translations\.txt$/.test(relativo) && SOLTO_RE.test(linha)) soltos.push(`${relativo}:${i + 1}  ${linha.trim().slice(0, 140)}`);
     SOLTO_RE.lastIndex = 0;
   });
 
-  const trocas = (conteudo.match(CHAVE_RE) || []).length + (conteudo.match(CART_RE) || []).length;
+  const tradAlvo = relativo.replace(/\\/g, '/') === 'config/translations.txt' && TRAD_RE.test(conteudo);
+  if (tradAlvo) console.log(`  trocar  ${relativo}  bloco "Agregar al carrito": pt "Comprar" → pt "${NOVO}"`);
+  const trocas = (conteudo.match(CHAVE_RE) || []).length + (conteudo.match(CART_RE) || []).length + (tradAlvo ? 1 : 0);
   if (!trocas) continue;
   totalTrocas += trocas;
 
@@ -76,7 +85,9 @@ for (const arquivo of listarArquivos(CODIGO)) {
       fs.mkdirSync(path.dirname(backup), { recursive: true });
       fs.writeFileSync(backup, conteudo);
     }
-    fs.writeFileSync(arquivo, conteudo.replace(CHAVE_RE, `$1${NOVO}$1$2`).replace(CART_RE, `$1$2${NOVO}$2`));
+    let novo = conteudo.replace(CHAVE_RE, `$1${NOVO}$1$2`).replace(CART_RE, `$1$2${NOVO}$2`);
+    if (tradAlvo) novo = novo.replace(TRAD_RE, `$1pt "${NOVO}"$2`);
+    fs.writeFileSync(arquivo, novo);
   }
 }
 
