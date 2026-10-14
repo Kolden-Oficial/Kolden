@@ -3,8 +3,9 @@
  * aplicar-botao-adicionar-carrinho.cjs — troca o texto dos botões pretos "Comprar" por "Adicionar ao carrinho".
  *
  * Os botões (PDP, compra rápida dos cards e o texto que o JS reescreve depois de adicionar ao
- * carrinho) usam a chave de tradução do tema `{{ 'Comprar' | translate }}`. O script troca só
- * essas chaves — não mexe em "Comprar em Loja Rosie" (título SEO da plataforma) nem em outros textos.
+ * carrinho) usam a chave de tradução do tema `{{ 'Comprar' | translate }}` e a entrada `'cart': "Comprar"`
+ * do dicionário de textos do botão (`{% set texts = {...} %}` em snipplets/grid/item.tpl). O script troca
+ * só essas duas formas — não mexe em "Comprar em Loja Rosie" (título SEO da plataforma) nem em outros textos.
  *
  * Mexe só na cópia local (`_tema-recife/codigo/`); nada vai para a loja até rodar `diff` + `push`.
  *   - sem argumentos: só lista o que mudaria (simulação), não altera nada
@@ -26,6 +27,8 @@ const CODIGO = path.join(TEMA, 'codigo');
 const APLICAR = process.argv.includes('--aplicar');
 // {{ 'Comprar' | translate }}, {{"Comprar"|translate}}, com ou sem espaços
 const CHAVE_RE = /(["'])Comprar\1(\s*\|\s*translate)/g;
+// {% set texts = {'cart': "Comprar", ...} %} — texto do value="..." dos botões pretos
+const CART_RE = /(["']cart["']\s*:\s*)(["'])Comprar\2/g;
 // "Comprar" solto (sem translate) — só listado para revisão, nunca trocado
 const SOLTO_RE = /(["'>])Comprar(["'<])/g;
 
@@ -54,14 +57,15 @@ for (const arquivo of listarArquivos(CODIGO)) {
   const relativo = path.relative(CODIGO, arquivo);
 
   conteudo.split(/\r?\n/).forEach((linha, i) => {
-    if (CHAVE_RE.test(linha)) console.log(`  trocar  ${relativo}:${i + 1}  ${linha.trim().slice(0, 140)}`);
+    const alvo = CHAVE_RE.test(linha) || CART_RE.test(linha);
     CHAVE_RE.lastIndex = 0;
-    if (!CHAVE_RE.test(linha) && SOLTO_RE.test(linha)) soltos.push(`${relativo}:${i + 1}  ${linha.trim().slice(0, 140)}`);
-    CHAVE_RE.lastIndex = 0;
+    CART_RE.lastIndex = 0;
+    if (alvo) console.log(`  trocar  ${relativo}:${i + 1}  ${linha.trim().slice(0, 140)}`);
+    else if (SOLTO_RE.test(linha)) soltos.push(`${relativo}:${i + 1}  ${linha.trim().slice(0, 140)}`);
     SOLTO_RE.lastIndex = 0;
   });
 
-  const trocas = (conteudo.match(CHAVE_RE) || []).length;
+  const trocas = (conteudo.match(CHAVE_RE) || []).length + (conteudo.match(CART_RE) || []).length;
   if (!trocas) continue;
   totalTrocas += trocas;
 
@@ -72,7 +76,7 @@ for (const arquivo of listarArquivos(CODIGO)) {
       fs.mkdirSync(path.dirname(backup), { recursive: true });
       fs.writeFileSync(backup, conteudo);
     }
-    fs.writeFileSync(arquivo, conteudo.replace(CHAVE_RE, `$1${NOVO}$1$2`));
+    fs.writeFileSync(arquivo, conteudo.replace(CHAVE_RE, `$1${NOVO}$1$2`).replace(CART_RE, `$1$2${NOVO}$2`));
   }
 }
 
